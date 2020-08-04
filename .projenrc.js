@@ -1,5 +1,5 @@
 const { CdktfProviderProject } = require('cdktf-provider');
-const { PROJEN_VERSION } = require('projen')
+const PROJEN_VERSION = '0.3.23'
 
 const project = new CdktfProviderProject({
   name: "@skorfmann/cdktf-provider-aws",
