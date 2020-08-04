@@ -7,7 +7,7 @@ const project = new CdktfProviderProject({
   authorEmail: "sebastian@korfmann.net",
   repository: "https://github.com/skorfmann/cdktf-provider-aws.git",
   terraformProvider: "aws@~> 2.0",
-  workflowBootstrapSteps: [{ run: `npm install cdktf-project && npx projen${PROJEN_VERSION}` }, { run: 'yarn install --frozen-lockfile' }]
+  workflowBootstrapSteps: [{ run: `npm install cdktf-provider` }, { run: `npx projen${PROJEN_VERSION}` }, { run: 'yarn install --frozen-lockfile' }]
 });
 
 project.synth();
