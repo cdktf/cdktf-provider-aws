@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 10.17.0
       - run: npm install cdktf-provider
-      - run: npx projen0.3.23
+      - run: npx projen@0.3.23
       - run: yarn install --frozen-lockfile
       - name: Anti-tamper check after bootstrapping
         run: git diff --exit-code
