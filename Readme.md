@@ -38,4 +38,4 @@ There's a custom [project builder](https://github.com/skorfmann/cdktf-provider-p
 
 ## provider version
 
-The provider version can be adjusted in [./.projenrc.js](./.projenrc.js)
+The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
