@@ -1167,10 +1167,10 @@ cdktf-cli@^0.0.13:
     sscaff "^1.2.0"
     yargs "^15.1.0"
 
-cdktf-provider@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/cdktf-provider/-/cdktf-provider-0.0.8.tgz#3e266a0f7a97be8fb1229250e2f0e9239faf86c7"
-  integrity sha512-mI+tVoptyZpVXiLNn/Y09FrLyB5AA5/PxYHI+65Ac5EPKOm7iKNHPr2KZ4krsflCYxl3vSkAYazWq/a0nNQBBA==
+cdktf-provider@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/cdktf-provider/-/cdktf-provider-0.0.9.tgz#6b090b2b51145c9647684e8a012b16d705f6afb9"
+  integrity sha512-HNknxLMUf5XjaB/1gQH3BkjKBcJrBPeMrEDLoD0AeMpkp1MqpDA31b/SqYrVwjfj/CBqCOKoU2ypkGu1XiDXHw==
 
 cdktf@0.0.13, cdktf@^0.0.13:
   version "0.0.13"
