@@ -92,7 +92,12 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {},
+    "targets": {
+      "python": {
+        "distName": "skorfmann-cdktf-provider-aws",
+        "module": "skorfmann_cdktf_provider_aws"
+      }
+    },
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"

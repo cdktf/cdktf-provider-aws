@@ -5,7 +5,11 @@ const project = new CdktfProviderProject({
   authorName: "Sebastian Korfmann",
   authorEmail: "sebastian@korfmann.net",
   repository: "https://github.com/skorfmann/cdktf-provider-aws.git",
-  terraformProvider: "aws@~> 2.0"
+  terraformProvider: "aws@~> 2.0",
+  python: {
+    distName: 'skorfmann-cdktf-provider-aws',
+    module: 'skorfmann_cdktf_provider_aws'
+  }
 });
 
 project.synth();
