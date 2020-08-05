@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.17.0
-      - run: npm install cdktf-provider
+      - run: npm install cdktf-provider@latest
       - run: npx projen@0.3.23
       - run: yarn install --frozen-lockfile
       - name: Anti-tamper check

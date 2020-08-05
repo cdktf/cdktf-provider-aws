@@ -32,7 +32,7 @@
     "organization": false
   },
   "devDependencies": {
-    "cdktf-provider": "^0.0.6",
+    "cdktf-provider": "^0.0.8",
     "projen": "^0.3.23",
     "standard-version": "^8.0.1",
     "typescript": "^3.9.5",
