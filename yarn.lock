@@ -1167,7 +1167,7 @@ cdktf-cli@^0.0.13:
     sscaff "^1.2.0"
     yargs "^15.1.0"
 
-cdktf-provider@0.0.8:
+cdktf-provider@^0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/cdktf-provider/-/cdktf-provider-0.0.8.tgz#3e266a0f7a97be8fb1229250e2f0e9239faf86c7"
   integrity sha512-mI+tVoptyZpVXiLNn/Y09FrLyB5AA5/PxYHI+65Ac5EPKOm7iKNHPr2KZ4krsflCYxl3vSkAYazWq/a0nNQBBA==
