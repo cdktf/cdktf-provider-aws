@@ -25,7 +25,8 @@
     "compat": "npx jsii-diff npm:$(node -p \"require('./package.json').name\") -k --ignore-file .compatignore || (echo \"\nUNEXPECTED BREAKING CHANGES: add keys such as 'removed:constructs.Node.of' to .compatignore to skip.\n\" && exit 1)",
     "docgen": "jsii-docgen",
     "fetch": "rm -rf ./src/* && cdktf get && cp -R .gen/providers/aws/* ./src/",
-    "commit": "git add -A && git commit -am \"Update provider\" || echo \"No changes to commit\""
+    "commit": "git add -A && git commit -am \"Update provider\" || echo \"No changes to commit\"",
+    "prebump": "yarn fetch && yarn compile && yarn run commit"
   },
   "author": {
     "name": "Sebastian Korfmann",
