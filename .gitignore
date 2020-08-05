@@ -43,6 +43,7 @@ tsconfig.json
 # ignore cdktf builds
 .gen
 .terraform
+package-lock.json
 !# synthesized by projen, (do not modify by hand)
 !/package.json
 !# synthesized by projen, (do not modify by hand)
