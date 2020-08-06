@@ -13,19 +13,13 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.17.0
-      - run: npm install cdktf-provider@latest
-      - run: npx projen@0.3.23
       - run: yarn install --frozen-lockfile
-      - name: Anti-tamper check
-        run: git diff --exit-code
       - name: Set git identity
         run: |-
           git config user.name "Auto-bump"
           git config user.email "github-actions@github.com"
       - run: yarn bump
       - run: yarn build
-      - name: Anti-tamper check
-        run: git diff --exit-code
       - run: git push --follow-tags origin $GITHUB_REF
       - name: Upload artifact
         uses: actions/upload-artifact@v2.1.1
@@ -62,7 +56,9 @@ jobs:
         with:
           name: dist
       - name: Release
-        run: npx -p jsii-release jsii-release-pypi
+        run: |-
+          python3 -m pip install --user --upgrade twine
+          python3 -m twine upload --verbose --skip-existing *
         env:
           TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
