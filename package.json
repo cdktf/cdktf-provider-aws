@@ -75,7 +75,7 @@
     "node": ">= 10.17.0"
   },
   "license": "MPL-2.0",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "types": "lib/index.d.ts",
   "jest": {
     "clearMocks": true,
