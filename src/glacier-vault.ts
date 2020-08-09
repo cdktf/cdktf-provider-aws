@@ -1,63 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/glacier_vault.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "access_policy": {
-        "type": "string",
-        "optional": true
-      },
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "location": {
-        "type": "string",
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    },
-    "block_types": {
-      "notification": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "events": {
-              "type": [
-                "set",
-                "string"
-              ],
-              "required": true
-            },
-            "sns_topic": {
-              "type": "string",
-              "required": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/pinpoint_email_channel.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "application_id": {
-        "type": "string",
-        "required": true
-      },
-      "enabled": {
-        "type": "bool",
-        "optional": true
-      },
-      "from_address": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "identity": {
-        "type": "string",
-        "required": true
-      },
-      "messages_per_second": {
-        "type": "number",
-        "computed": true
-      },
-      "role_arn": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

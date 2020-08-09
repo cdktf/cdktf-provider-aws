@@ -1,57 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/lambda_permission.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "action": {
-        "type": "string",
-        "required": true
-      },
-      "event_source_token": {
-        "type": "string",
-        "optional": true
-      },
-      "function_name": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "principal": {
-        "type": "string",
-        "required": true
-      },
-      "qualifier": {
-        "type": "string",
-        "optional": true
-      },
-      "source_account": {
-        "type": "string",
-        "optional": true
-      },
-      "source_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "statement_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "statement_id_prefix": {
-        "type": "string",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

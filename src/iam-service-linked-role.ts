@@ -1,52 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_service_linked_role.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "aws_service_name": {
-        "type": "string",
-        "required": true
-      },
-      "create_date": {
-        "type": "string",
-        "computed": true
-      },
-      "custom_suffix": {
-        "type": "string",
-        "optional": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "computed": true
-      },
-      "path": {
-        "type": "string",
-        "computed": true
-      },
-      "unique_id": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

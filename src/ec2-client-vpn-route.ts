@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_route.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "client_vpn_endpoint_id": {
-        "type": "string",
-        "required": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "destination_cidr_block": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "origin": {
-        "type": "string",
-        "computed": true
-      },
-      "target_vpc_subnet_id": {
-        "type": "string",
-        "required": true
-      },
-      "type": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

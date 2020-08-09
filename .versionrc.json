@@ -11,8 +11,5 @@
       "type": "json"
     }
   ],
-  "commitAll": true,
-  "scripts": {
-    "postbump": "yarn projen && git add ."
-  }
+  "commitAll": true
 }

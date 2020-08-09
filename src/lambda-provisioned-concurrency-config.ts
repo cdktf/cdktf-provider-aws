@@ -1,49 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/lambda_provisioned_concurrency_config.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "function_name": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "provisioned_concurrent_executions": {
-        "type": "number",
-        "required": true
-      },
-      "qualifier": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "timeouts": {
-        "nesting_mode": "single",
-        "block": {
-          "attributes": {
-            "create": {
-              "type": "string",
-              "optional": true
-            },
-            "update": {
-              "type": "string",
-              "optional": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

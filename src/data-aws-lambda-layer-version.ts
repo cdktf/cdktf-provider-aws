@@ -1,68 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_lambda_layer_version.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "compatible_runtime": {
-        "type": "string",
-        "optional": true
-      },
-      "compatible_runtimes": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "computed": true
-      },
-      "created_date": {
-        "type": "string",
-        "computed": true
-      },
-      "description": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "layer_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "layer_name": {
-        "type": "string",
-        "required": true
-      },
-      "license_info": {
-        "type": "string",
-        "computed": true
-      },
-      "source_code_hash": {
-        "type": "string",
-        "computed": true
-      },
-      "source_code_size": {
-        "type": "number",
-        "computed": true
-      },
-      "version": {
-        "type": "number",
-        "optional": true,
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

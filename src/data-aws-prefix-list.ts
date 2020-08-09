@@ -1,56 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_prefix_list.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "cidr_blocks": {
-        "type": [
-          "list",
-          "string"
-        ],
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "prefix_list_id": {
-        "type": "string",
-        "optional": true
-      }
-    },
-    "block_types": {
-      "filter": {
-        "nesting_mode": "set",
-        "block": {
-          "attributes": {
-            "name": {
-              "type": "string",
-              "required": true
-            },
-            "values": {
-              "type": [
-                "list",
-                "string"
-              ],
-              "required": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

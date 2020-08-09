@@ -1,38 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/dms_certificate.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "certificate_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "certificate_id": {
-        "type": "string",
-        "required": true
-      },
-      "certificate_pem": {
-        "type": "string",
-        "optional": true,
-        "sensitive": true
-      },
-      "certificate_wallet": {
-        "type": "string",
-        "optional": true,
-        "sensitive": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

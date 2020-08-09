@@ -1,41 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/s3_account_public_access_block.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "account_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "block_public_acls": {
-        "type": "bool",
-        "optional": true
-      },
-      "block_public_policy": {
-        "type": "bool",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "ignore_public_acls": {
-        "type": "bool",
-        "optional": true
-      },
-      "restrict_public_buckets": {
-        "type": "bool",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

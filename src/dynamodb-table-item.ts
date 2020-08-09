@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/dynamodb_table_item.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "hash_key": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "item": {
-        "type": "string",
-        "required": true
-      },
-      "range_key": {
-        "type": "string",
-        "optional": true
-      },
-      "table_name": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,59 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "log_group_name": {
-        "type": "string",
-        "required": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "pattern": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "metric_transformation": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "default_value": {
-              "type": "string",
-              "optional": true
-            },
-            "name": {
-              "type": "string",
-              "required": true
-            },
-            "namespace": {
-              "type": "string",
-              "required": true
-            },
-            "value": {
-              "type": "string",
-              "required": true
-            }
-          }
-        },
-        "min_items": 1,
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

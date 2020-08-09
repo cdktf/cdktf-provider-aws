@@ -1,38 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_organizations_organizational_units.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "children": {
-        "type": [
-          "list",
-          [
-            "object",
-            {
-              "arn": "string",
-              "id": "string",
-              "name": "string"
-            }
-          ]
-        ],
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "parent_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

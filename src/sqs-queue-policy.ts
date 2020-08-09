@@ -1,28 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 1,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "policy": {
-        "type": "string",
-        "required": true
-      },
-      "queue_url": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

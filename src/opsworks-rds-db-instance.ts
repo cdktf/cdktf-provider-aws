@@ -1,37 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/opsworks_rds_db_instance.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "db_password": {
-        "type": "string",
-        "required": true,
-        "sensitive": true
-      },
-      "db_user": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "rds_db_instance_arn": {
-        "type": "string",
-        "required": true
-      },
-      "stack_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

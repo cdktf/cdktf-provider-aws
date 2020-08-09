@@ -1,46 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_pricing_product.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "result": {
-        "type": "string",
-        "computed": true
-      },
-      "service_code": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "filters": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "field": {
-              "type": "string",
-              "required": true
-            },
-            "value": {
-              "type": "string",
-              "required": true
-            }
-          }
-        },
-        "min_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

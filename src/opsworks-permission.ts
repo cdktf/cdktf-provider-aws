@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/opsworks_permission.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "allow_ssh": {
-        "type": "bool",
-        "optional": true,
-        "computed": true
-      },
-      "allow_sudo": {
-        "type": "bool",
-        "optional": true,
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "level": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "stack_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "user_arn": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

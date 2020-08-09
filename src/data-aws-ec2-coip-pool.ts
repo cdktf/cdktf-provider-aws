@@ -1,65 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_coip_pool.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "local_gateway_route_table_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "pool_cidrs": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "computed": true
-      },
-      "pool_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true,
-        "computed": true
-      }
-    },
-    "block_types": {
-      "filter": {
-        "nesting_mode": "set",
-        "block": {
-          "attributes": {
-            "name": {
-              "type": "string",
-              "required": true
-            },
-            "values": {
-              "type": [
-                "set",
-                "string"
-              ],
-              "required": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

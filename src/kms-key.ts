@@ -1,65 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/kms_key.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "customer_master_key_spec": {
-        "type": "string",
-        "optional": true
-      },
-      "deletion_window_in_days": {
-        "type": "number",
-        "optional": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "enable_key_rotation": {
-        "type": "bool",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "is_enabled": {
-        "type": "bool",
-        "optional": true
-      },
-      "key_id": {
-        "type": "string",
-        "computed": true
-      },
-      "key_usage": {
-        "type": "string",
-        "optional": true
-      },
-      "policy": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

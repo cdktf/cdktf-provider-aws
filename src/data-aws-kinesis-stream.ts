@@ -1,69 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_kinesis_stream.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 1,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "closed_shards": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "computed": true
-      },
-      "creation_timestamp": {
-        "type": "number",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "open_shards": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "computed": true
-      },
-      "retention_period": {
-        "type": "number",
-        "computed": true
-      },
-      "shard_level_metrics": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "computed": true
-      },
-      "status": {
-        "type": "string",
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true,
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

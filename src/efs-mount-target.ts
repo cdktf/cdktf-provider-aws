@@ -1,69 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/efs_mount_target.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "availability_zone_id": {
-        "type": "string",
-        "computed": true
-      },
-      "availability_zone_name": {
-        "type": "string",
-        "computed": true
-      },
-      "dns_name": {
-        "type": "string",
-        "computed": true
-      },
-      "file_system_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "file_system_id": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "ip_address": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "mount_target_dns_name": {
-        "type": "string",
-        "computed": true
-      },
-      "network_interface_id": {
-        "type": "string",
-        "computed": true
-      },
-      "owner_id": {
-        "type": "string",
-        "computed": true
-      },
-      "security_groups": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "optional": true,
-        "computed": true
-      },
-      "subnet_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

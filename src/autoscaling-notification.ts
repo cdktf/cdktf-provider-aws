@@ -1,38 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/autoscaling_notification.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "group_names": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "notifications": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "required": true
-      },
-      "topic_arn": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

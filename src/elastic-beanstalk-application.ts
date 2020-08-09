@@ -1,65 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    },
-    "block_types": {
-      "appversion_lifecycle": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "delete_source_from_s3": {
-              "type": "bool",
-              "optional": true
-            },
-            "max_age_in_days": {
-              "type": "number",
-              "optional": true
-            },
-            "max_count": {
-              "type": "number",
-              "optional": true
-            },
-            "service_role": {
-              "type": "string",
-              "required": true
-            }
-          }
-        },
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

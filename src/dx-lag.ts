@@ -1,60 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/dx_lag.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "connections_bandwidth": {
-        "type": "string",
-        "required": true
-      },
-      "force_destroy": {
-        "type": "bool",
-        "optional": true
-      },
-      "has_logical_redundancy": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "jumbo_frame_capable": {
-        "type": "bool",
-        "computed": true
-      },
-      "location": {
-        "type": "string",
-        "required": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "number_of_connections": {
-        "type": "number",
-        "optional": true,
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,32 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudwatch_dashboard.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "dashboard_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "dashboard_body": {
-        "type": "string",
-        "required": true
-      },
-      "dashboard_name": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

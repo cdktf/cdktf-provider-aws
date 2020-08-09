@@ -1,48 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_domain.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "aws_account_id": {
-        "type": "string",
-        "computed": true
-      },
-      "certificate_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "cloudfront_distribution_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "domain": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "s3_bucket": {
-        "type": "string",
-        "computed": true
-      },
-      "user_pool_id": {
-        "type": "string",
-        "required": true
-      },
-      "version": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

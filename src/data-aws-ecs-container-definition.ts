@@ -1,66 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ecs_container_definition.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "container_name": {
-        "type": "string",
-        "required": true
-      },
-      "cpu": {
-        "type": "number",
-        "computed": true
-      },
-      "disable_networking": {
-        "type": "bool",
-        "computed": true
-      },
-      "docker_labels": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "computed": true
-      },
-      "environment": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "image": {
-        "type": "string",
-        "computed": true
-      },
-      "image_digest": {
-        "type": "string",
-        "computed": true
-      },
-      "memory": {
-        "type": "number",
-        "computed": true
-      },
-      "memory_reservation": {
-        "type": "number",
-        "computed": true
-      },
-      "task_definition": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

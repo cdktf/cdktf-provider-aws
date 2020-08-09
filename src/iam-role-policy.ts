@@ -1,37 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_role_policy.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name_prefix": {
-        "type": "string",
-        "optional": true
-      },
-      "policy": {
-        "type": "string",
-        "required": true
-      },
-      "role": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

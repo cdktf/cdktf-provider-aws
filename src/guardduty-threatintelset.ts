@@ -1,51 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/guardduty_threatintelset.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "activate": {
-        "type": "bool",
-        "required": true
-      },
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "detector_id": {
-        "type": "string",
-        "required": true
-      },
-      "format": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "location": {
-        "type": "string",
-        "required": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

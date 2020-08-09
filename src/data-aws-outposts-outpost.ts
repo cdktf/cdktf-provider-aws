@@ -1,49 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_outposts_outpost.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "availability_zone": {
-        "type": "string",
-        "computed": true
-      },
-      "availability_zone_id": {
-        "type": "string",
-        "computed": true
-      },
-      "description": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "owner_id": {
-        "type": "string",
-        "computed": true
-      },
-      "site_id": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

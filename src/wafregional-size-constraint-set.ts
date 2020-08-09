@@ -1,68 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/wafregional_size_constraint_set.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "size_constraints": {
-        "nesting_mode": "set",
-        "block": {
-          "attributes": {
-            "comparison_operator": {
-              "type": "string",
-              "required": true
-            },
-            "size": {
-              "type": "number",
-              "required": true
-            },
-            "text_transformation": {
-              "type": "string",
-              "required": true
-            }
-          },
-          "block_types": {
-            "field_to_match": {
-              "nesting_mode": "list",
-              "block": {
-                "attributes": {
-                  "data": {
-                    "type": "string",
-                    "optional": true
-                  },
-                  "type": {
-                    "type": "string",
-                    "required": true
-                  }
-                }
-              },
-              "min_items": 1,
-              "max_items": 1
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

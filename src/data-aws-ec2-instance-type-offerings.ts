@@ -1,51 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_instance_type_offerings.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "instance_types": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "computed": true
-      },
-      "location_type": {
-        "type": "string",
-        "optional": true
-      }
-    },
-    "block_types": {
-      "filter": {
-        "nesting_mode": "set",
-        "block": {
-          "attributes": {
-            "name": {
-              "type": "string",
-              "required": true
-            },
-            "values": {
-              "type": [
-                "list",
-                "string"
-              ],
-              "required": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

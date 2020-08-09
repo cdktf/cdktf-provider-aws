@@ -1,69 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_secretsmanager_secret.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "description": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "kms_key_id": {
-        "type": "string",
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "policy": {
-        "type": "string",
-        "computed": true
-      },
-      "rotation_enabled": {
-        "type": "bool",
-        "computed": true
-      },
-      "rotation_lambda_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "rotation_rules": {
-        "type": [
-          "list",
-          [
-            "object",
-            {
-              "automatically_after_days": "number"
-            }
-          ]
-        ],
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

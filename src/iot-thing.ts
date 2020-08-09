@@ -1,47 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/iot_thing.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "attributes": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "default_client_id": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "thing_type_name": {
-        "type": "string",
-        "optional": true
-      },
-      "version": {
-        "type": "number",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,45 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/appautoscaling_target.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "max_capacity": {
-        "type": "number",
-        "required": true
-      },
-      "min_capacity": {
-        "type": "number",
-        "required": true
-      },
-      "resource_id": {
-        "type": "string",
-        "required": true
-      },
-      "role_arn": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "scalable_dimension": {
-        "type": "string",
-        "required": true
-      },
-      "service_namespace": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

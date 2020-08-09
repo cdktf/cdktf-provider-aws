@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api_mapping.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "api_id": {
-        "type": "string",
-        "required": true
-      },
-      "api_mapping_key": {
-        "type": "string",
-        "optional": true
-      },
-      "domain_name": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "stage": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/glacier_vault_lock.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "complete_lock": {
-        "type": "bool",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "ignore_deletion_error": {
-        "type": "bool",
-        "optional": true
-      },
-      "policy": {
-        "type": "string",
-        "required": true
-      },
-      "vault_name": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,35 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/load_balancer_backend_server_policy.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "instance_port": {
-        "type": "number",
-        "required": true
-      },
-      "load_balancer_name": {
-        "type": "string",
-        "required": true
-      },
-      "policy_names": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

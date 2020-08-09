@@ -1,58 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/lightsail_key_pair.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "encrypted_fingerprint": {
-        "type": "string",
-        "computed": true
-      },
-      "encrypted_private_key": {
-        "type": "string",
-        "computed": true
-      },
-      "fingerprint": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name_prefix": {
-        "type": "string",
-        "optional": true
-      },
-      "pgp_key": {
-        "type": "string",
-        "optional": true
-      },
-      "private_key": {
-        "type": "string",
-        "computed": true
-      },
-      "public_key": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

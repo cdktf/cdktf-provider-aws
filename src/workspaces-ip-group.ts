@@ -1,52 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/workspaces_ip_group.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    },
-    "block_types": {
-      "rules": {
-        "nesting_mode": "set",
-        "block": {
-          "attributes": {
-            "description": {
-              "type": "string",
-              "optional": true
-            },
-            "source": {
-              "type": "string",
-              "required": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

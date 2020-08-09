@@ -1,61 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/datasync_location_nfs.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "server_hostname": {
-        "type": "string",
-        "required": true
-      },
-      "subdirectory": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "uri": {
-        "type": "string",
-        "computed": true
-      }
-    },
-    "block_types": {
-      "on_prem_config": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "agent_arns": {
-              "type": [
-                "set",
-                "string"
-              ],
-              "required": true
-            }
-          }
-        },
-        "min_items": 1,
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

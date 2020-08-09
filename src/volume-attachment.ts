@@ -1,40 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/volume_attachment.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "device_name": {
-        "type": "string",
-        "required": true
-      },
-      "force_detach": {
-        "type": "bool",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "instance_id": {
-        "type": "string",
-        "required": true
-      },
-      "skip_destroy": {
-        "type": "bool",
-        "optional": true
-      },
-      "volume_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';
