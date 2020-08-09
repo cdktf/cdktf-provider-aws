@@ -4,12 +4,12 @@ This repo builds and publishes the Terraform AWS Provider bindings for [cdktf](h
 
 Current build targets are:
 
-- [npm]()
-- [Pypi]()
+- [npm](https://cdk.tf)
+- [Pypi](https://cdk.tf)
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform AWS Provider version 1:1. In fact, it always tracks `latest` of `~> 2.0` with every release. If there scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually]().
+This project is explicitly not tracking the Terraform AWS Provider version 1:1. In fact, it always tracks `latest` of `~> 2.0` with every release. If there scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf).
 
 These are the upstream dependencies:
 
