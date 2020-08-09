@@ -1,65 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/datasync_location_efs.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "efs_file_system_arn": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "subdirectory": {
-        "type": "string",
-        "optional": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "uri": {
-        "type": "string",
-        "computed": true
-      }
-    },
-    "block_types": {
-      "ec2_config": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "security_group_arns": {
-              "type": [
-                "set",
-                "string"
-              ],
-              "required": true
-            },
-            "subnet_arn": {
-              "type": "string",
-              "required": true
-            }
-          }
-        },
-        "min_items": 1,
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

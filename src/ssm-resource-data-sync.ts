@@ -1,55 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "s3_destination": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "bucket_name": {
-              "type": "string",
-              "required": true
-            },
-            "kms_key_arn": {
-              "type": "string",
-              "optional": true
-            },
-            "prefix": {
-              "type": "string",
-              "optional": true
-            },
-            "region": {
-              "type": "string",
-              "required": true
-            },
-            "sync_format": {
-              "type": "string",
-              "optional": true
-            }
-          }
-        },
-        "min_items": 1,
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

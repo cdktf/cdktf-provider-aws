@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "blackhole": {
-        "type": "bool",
-        "optional": true
-      },
-      "destination_cidr_block": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "transit_gateway_attachment_id": {
-        "type": "string",
-        "optional": true
-      },
-      "transit_gateway_route_table_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

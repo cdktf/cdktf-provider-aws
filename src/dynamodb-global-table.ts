@@ -1,61 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "replica": {
-        "nesting_mode": "set",
-        "block": {
-          "attributes": {
-            "region_name": {
-              "type": "string",
-              "required": true
-            }
-          }
-        },
-        "min_items": 1
-      },
-      "timeouts": {
-        "nesting_mode": "single",
-        "block": {
-          "attributes": {
-            "create": {
-              "type": "string",
-              "optional": true
-            },
-            "delete": {
-              "type": "string",
-              "optional": true
-            },
-            "update": {
-              "type": "string",
-              "optional": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

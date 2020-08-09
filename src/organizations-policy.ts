@@ -1,40 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/organizations_policy.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "content": {
-        "type": "string",
-        "required": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "type": {
-        "type": "string",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

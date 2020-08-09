@@ -1,53 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ecr_image.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "image_digest": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "image_pushed_at": {
-        "type": "number",
-        "computed": true
-      },
-      "image_size_in_bytes": {
-        "type": "number",
-        "computed": true
-      },
-      "image_tag": {
-        "type": "string",
-        "optional": true
-      },
-      "image_tags": {
-        "type": [
-          "list",
-          "string"
-        ],
-        "computed": true
-      },
-      "registry_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "repository_name": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

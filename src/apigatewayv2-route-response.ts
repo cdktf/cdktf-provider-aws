@@ -1,43 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "api_id": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "model_selection_expression": {
-        "type": "string",
-        "optional": true
-      },
-      "response_models": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "route_id": {
-        "type": "string",
-        "required": true
-      },
-      "route_response_key": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

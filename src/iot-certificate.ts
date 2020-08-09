@@ -1,47 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/iot_certificate.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "active": {
-        "type": "bool",
-        "required": true
-      },
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "certificate_pem": {
-        "type": "string",
-        "computed": true,
-        "sensitive": true
-      },
-      "csr": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "private_key": {
-        "type": "string",
-        "computed": true,
-        "sensitive": true
-      },
-      "public_key": {
-        "type": "string",
-        "computed": true,
-        "sensitive": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

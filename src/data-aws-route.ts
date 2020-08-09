@@ -1,69 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_route.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "destination_cidr_block": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "destination_ipv6_cidr_block": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "egress_only_gateway_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "gateway_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "instance_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "nat_gateway_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "network_interface_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "route_table_id": {
-        "type": "string",
-        "required": true
-      },
-      "transit_gateway_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "vpc_peering_connection_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

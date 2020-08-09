@@ -1,31 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/egress_only_internet_gateway.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "vpc_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

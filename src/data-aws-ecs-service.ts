@@ -1,48 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ecs_service.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "cluster_arn": {
-        "type": "string",
-        "required": true
-      },
-      "desired_count": {
-        "type": "number",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "launch_type": {
-        "type": "string",
-        "computed": true
-      },
-      "scheduling_strategy": {
-        "type": "string",
-        "computed": true
-      },
-      "service_name": {
-        "type": "string",
-        "required": true
-      },
-      "task_definition": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

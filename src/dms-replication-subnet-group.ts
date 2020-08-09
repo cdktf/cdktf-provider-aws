@@ -1,50 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/dms_replication_subnet_group.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "replication_subnet_group_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "replication_subnet_group_description": {
-        "type": "string",
-        "required": true
-      },
-      "replication_subnet_group_id": {
-        "type": "string",
-        "required": true
-      },
-      "subnet_ids": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "vpc_id": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

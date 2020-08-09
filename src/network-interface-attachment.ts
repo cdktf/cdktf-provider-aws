@@ -1,40 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/network_interface_attachment_a.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "attachment_id": {
-        "type": "string",
-        "computed": true
-      },
-      "device_index": {
-        "type": "number",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "instance_id": {
-        "type": "string",
-        "required": true
-      },
-      "network_interface_id": {
-        "type": "string",
-        "required": true
-      },
-      "status": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

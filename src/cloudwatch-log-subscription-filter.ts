@@ -1,45 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_subscription_filter.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "destination_arn": {
-        "type": "string",
-        "required": true
-      },
-      "distribution": {
-        "type": "string",
-        "optional": true
-      },
-      "filter_pattern": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "log_group_name": {
-        "type": "string",
-        "required": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "role_arn": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

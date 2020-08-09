@@ -1,28 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/vpc_dhcp_options_association.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "dhcp_options_id": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "vpc_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

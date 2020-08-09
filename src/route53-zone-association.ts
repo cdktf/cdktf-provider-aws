@@ -1,33 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "vpc_id": {
-        "type": "string",
-        "required": true
-      },
-      "vpc_region": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "zone_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

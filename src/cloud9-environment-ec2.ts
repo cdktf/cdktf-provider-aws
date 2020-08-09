@@ -1,60 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/cloud9_environment_ec2.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "automatic_stop_time_minutes": {
-        "type": "number",
-        "optional": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "instance_type": {
-        "type": "string",
-        "required": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "owner_arn": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "subnet_id": {
-        "type": "string",
-        "optional": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "type": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

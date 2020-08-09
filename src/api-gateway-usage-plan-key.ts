@@ -1,40 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan_key.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "key_id": {
-        "type": "string",
-        "required": true
-      },
-      "key_type": {
-        "type": "string",
-        "required": true
-      },
-      "name": {
-        "type": "string",
-        "computed": true
-      },
-      "usage_plan_id": {
-        "type": "string",
-        "required": true
-      },
-      "value": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

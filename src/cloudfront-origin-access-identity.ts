@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_access_identity.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "caller_reference": {
-        "type": "string",
-        "computed": true
-      },
-      "cloudfront_access_identity_path": {
-        "type": "string",
-        "computed": true
-      },
-      "comment": {
-        "type": "string",
-        "optional": true
-      },
-      "etag": {
-        "type": "string",
-        "computed": true
-      },
-      "iam_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "s3_canonical_user_id": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

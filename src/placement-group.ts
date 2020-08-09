@@ -1,43 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/placement_group.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "placement_group_id": {
-        "type": "string",
-        "computed": true
-      },
-      "strategy": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

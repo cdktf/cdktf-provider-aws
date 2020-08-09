@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/iot_role_alias.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "alias": {
-        "type": "string",
-        "required": true
-      },
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "credential_duration": {
-        "type": "number",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "role_arn": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,48 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_transfer_server.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "endpoint": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "identity_provider_type": {
-        "type": "string",
-        "computed": true
-      },
-      "invocation_role": {
-        "type": "string",
-        "computed": true
-      },
-      "logging_role": {
-        "type": "string",
-        "computed": true
-      },
-      "server_id": {
-        "type": "string",
-        "required": true
-      },
-      "url": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

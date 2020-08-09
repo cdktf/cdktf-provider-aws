@@ -1,37 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_account.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "cloudwatch_role_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "throttle_settings": {
-        "type": [
-          "list",
-          [
-            "object",
-            {
-              "burst_limit": "number",
-              "rate_limit": "number"
-            }
-          ]
-        ],
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

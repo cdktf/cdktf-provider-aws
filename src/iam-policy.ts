@@ -1,45 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_policy.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name_prefix": {
-        "type": "string",
-        "optional": true
-      },
-      "path": {
-        "type": "string",
-        "optional": true
-      },
-      "policy": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

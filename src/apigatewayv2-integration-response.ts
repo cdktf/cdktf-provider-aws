@@ -1,47 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration_response.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "api_id": {
-        "type": "string",
-        "required": true
-      },
-      "content_handling_strategy": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "integration_id": {
-        "type": "string",
-        "required": true
-      },
-      "integration_response_key": {
-        "type": "string",
-        "required": true
-      },
-      "response_templates": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "template_selection_expression": {
-        "type": "string",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

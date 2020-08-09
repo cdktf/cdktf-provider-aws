@@ -1,56 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "definitions": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "required": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "force_destroy": {
-        "type": "bool",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "identifier": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "identifier_prefix": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

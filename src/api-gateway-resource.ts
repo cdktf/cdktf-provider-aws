@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_resource.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "parent_id": {
-        "type": "string",
-        "required": true
-      },
-      "path": {
-        "type": "string",
-        "computed": true
-      },
-      "path_part": {
-        "type": "string",
-        "required": true
-      },
-      "rest_api_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

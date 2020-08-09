@@ -1,32 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_local_gateway_route.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "destination_cidr_block": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "local_gateway_route_table_id": {
-        "type": "string",
-        "required": true
-      },
-      "local_gateway_virtual_interface_group_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

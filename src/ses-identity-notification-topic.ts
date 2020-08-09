@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/ses_identity_notification_topic.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "identity": {
-        "type": "string",
-        "required": true
-      },
-      "include_original_headers": {
-        "type": "bool",
-        "optional": true
-      },
-      "notification_type": {
-        "type": "string",
-        "required": true
-      },
-      "topic_arn": {
-        "type": "string",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

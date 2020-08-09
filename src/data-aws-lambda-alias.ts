@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_lambda_alias.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "description": {
-        "type": "string",
-        "computed": true
-      },
-      "function_name": {
-        "type": "string",
-        "required": true
-      },
-      "function_version": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "invoke_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

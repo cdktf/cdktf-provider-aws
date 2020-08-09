@@ -1,53 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "autoscaling_group_name": {
-        "type": "string",
-        "required": true
-      },
-      "default_result": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "heartbeat_timeout": {
-        "type": "number",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "lifecycle_transition": {
-        "type": "string",
-        "required": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "notification_metadata": {
-        "type": "string",
-        "optional": true
-      },
-      "notification_target_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "role_arn": {
-        "type": "string",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

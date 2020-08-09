@@ -1,40 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/securityhub_member.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "account_id": {
-        "type": "string",
-        "required": true
-      },
-      "email": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "invite": {
-        "type": "bool",
-        "optional": true
-      },
-      "master_id": {
-        "type": "string",
-        "computed": true
-      },
-      "member_status": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ssm_document.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "content": {
-        "type": "string",
-        "computed": true
-      },
-      "document_format": {
-        "type": "string",
-        "optional": true
-      },
-      "document_type": {
-        "type": "string",
-        "computed": true
-      },
-      "document_version": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

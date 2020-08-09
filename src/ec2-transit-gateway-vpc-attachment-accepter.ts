@@ -1,66 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment_accepter.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "dns_support": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "ipv6_support": {
-        "type": "string",
-        "computed": true
-      },
-      "subnet_ids": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "transit_gateway_attachment_id": {
-        "type": "string",
-        "required": true
-      },
-      "transit_gateway_default_route_table_association": {
-        "type": "bool",
-        "optional": true
-      },
-      "transit_gateway_default_route_table_propagation": {
-        "type": "bool",
-        "optional": true
-      },
-      "transit_gateway_id": {
-        "type": "string",
-        "computed": true
-      },
-      "vpc_id": {
-        "type": "string",
-        "computed": true
-      },
-      "vpc_owner_id": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,63 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/gamelift_game_session_queue.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "destinations": {
-        "type": [
-          "list",
-          "string"
-        ],
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "timeout_in_seconds": {
-        "type": "number",
-        "optional": true
-      }
-    },
-    "block_types": {
-      "player_latency_policy": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "maximum_individual_player_latency_milliseconds": {
-              "type": "number",
-              "required": true
-            },
-            "policy_duration_seconds": {
-              "type": "number",
-              "optional": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

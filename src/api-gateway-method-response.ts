@@ -1,54 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_method_response.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "http_method": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "resource_id": {
-        "type": "string",
-        "required": true
-      },
-      "response_models": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      },
-      "response_parameters": {
-        "type": [
-          "map",
-          "bool"
-        ],
-        "optional": true
-      },
-      "response_parameters_in_json": {
-        "type": "string",
-        "optional": true
-      },
-      "rest_api_id": {
-        "type": "string",
-        "required": true
-      },
-      "status_code": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

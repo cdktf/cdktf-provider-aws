@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/pinpoint_sms_channel.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "application_id": {
-        "type": "string",
-        "required": true
-      },
-      "enabled": {
-        "type": "bool",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "promotional_messages_per_second": {
-        "type": "number",
-        "computed": true
-      },
-      "sender_id": {
-        "type": "string",
-        "optional": true
-      },
-      "short_code": {
-        "type": "string",
-        "optional": true
-      },
-      "transactional_messages_per_second": {
-        "type": "number",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

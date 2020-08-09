@@ -1,54 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_permission.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "action": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "principal": {
-        "type": "string",
-        "required": true
-      },
-      "statement_id": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "condition": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "key": {
-              "type": "string",
-              "required": true
-            },
-            "type": {
-              "type": "string",
-              "required": true
-            },
-            "value": {
-              "type": "string",
-              "required": true
-            }
-          }
-        },
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

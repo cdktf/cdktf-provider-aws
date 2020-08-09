@@ -1,54 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "attribute_mapping": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true,
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "idp_identifiers": {
-        "type": [
-          "list",
-          "string"
-        ],
-        "optional": true
-      },
-      "provider_details": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "required": true
-      },
-      "provider_name": {
-        "type": "string",
-        "required": true
-      },
-      "provider_type": {
-        "type": "string",
-        "required": true
-      },
-      "user_pool_id": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

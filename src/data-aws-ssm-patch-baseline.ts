@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ssm_patch_baseline.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "default_baseline": {
-        "type": "bool",
-        "optional": true
-      },
-      "description": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "computed": true
-      },
-      "name_prefix": {
-        "type": "string",
-        "optional": true
-      },
-      "operating_system": {
-        "type": "string",
-        "optional": true
-      },
-      "owner": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

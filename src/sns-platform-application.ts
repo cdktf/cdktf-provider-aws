@@ -1,68 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/sns_platform_application.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "event_delivery_failure_topic_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "event_endpoint_created_topic_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "event_endpoint_deleted_topic_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "event_endpoint_updated_topic_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "failure_feedback_role_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "platform": {
-        "type": "string",
-        "required": true
-      },
-      "platform_credential": {
-        "type": "string",
-        "required": true
-      },
-      "platform_principal": {
-        "type": "string",
-        "optional": true
-      },
-      "success_feedback_role_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "success_feedback_sample_rate": {
-        "type": "string",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

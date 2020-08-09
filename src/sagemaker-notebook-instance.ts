@@ -1,67 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "direct_internet_access": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "instance_type": {
-        "type": "string",
-        "required": true
-      },
-      "kms_key_id": {
-        "type": "string",
-        "optional": true
-      },
-      "lifecycle_config_name": {
-        "type": "string",
-        "optional": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "role_arn": {
-        "type": "string",
-        "required": true
-      },
-      "security_groups": {
-        "type": [
-          "set",
-          "string"
-        ],
-        "optional": true,
-        "computed": true
-      },
-      "subnet_id": {
-        "type": "string",
-        "optional": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

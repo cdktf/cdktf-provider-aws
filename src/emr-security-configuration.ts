@@ -1,37 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/emr_security_configuration.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "configuration": {
-        "type": "string",
-        "required": true
-      },
-      "creation_date": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name_prefix": {
-        "type": "string",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

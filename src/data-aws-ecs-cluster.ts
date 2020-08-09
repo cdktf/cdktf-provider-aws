@@ -1,57 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ecs_cluster.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "cluster_name": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "pending_tasks_count": {
-        "type": "number",
-        "computed": true
-      },
-      "registered_container_instances_count": {
-        "type": "number",
-        "computed": true
-      },
-      "running_tasks_count": {
-        "type": "number",
-        "computed": true
-      },
-      "setting": {
-        "type": [
-          "set",
-          [
-            "object",
-            {
-              "name": "string",
-              "value": "string"
-            }
-          ]
-        ],
-        "computed": true
-      },
-      "status": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

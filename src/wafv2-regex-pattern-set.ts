@@ -1,61 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "lock_token": {
-        "type": "string",
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "scope": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    },
-    "block_types": {
-      "regular_expression": {
-        "nesting_mode": "set",
-        "block": {
-          "attributes": {
-            "regex_string": {
-              "type": "string",
-              "required": true
-            }
-          }
-        },
-        "max_items": 10
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

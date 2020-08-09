@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/sns_sms_preferences.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "default_sender_id": {
-        "type": "string",
-        "optional": true
-      },
-      "default_sms_type": {
-        "type": "string",
-        "optional": true
-      },
-      "delivery_status_iam_role_arn": {
-        "type": "string",
-        "optional": true
-      },
-      "delivery_status_success_sampling_rate": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "monthly_spend_limit": {
-        "type": "string",
-        "optional": true
-      },
-      "usage_report_s3_bucket": {
-        "type": "string",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

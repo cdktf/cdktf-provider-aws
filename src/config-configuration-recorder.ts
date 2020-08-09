@@ -1,53 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true
-      },
-      "role_arn": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "recording_group": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "all_supported": {
-              "type": "bool",
-              "optional": true
-            },
-            "include_global_resource_types": {
-              "type": "bool",
-              "optional": true
-            },
-            "resource_types": {
-              "type": [
-                "set",
-                "string"
-              ],
-              "optional": true
-            }
-          }
-        },
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

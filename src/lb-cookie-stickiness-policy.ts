@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/lb_cookie_stickiness_policy.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "cookie_expiration_period": {
-        "type": "number",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "lb_port": {
-        "type": "number",
-        "required": true
-      },
-      "load_balancer": {
-        "type": "string",
-        "required": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,36 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_request_validator.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "rest_api_id": {
-        "type": "string",
-        "required": true
-      },
-      "validate_request_body": {
-        "type": "bool",
-        "optional": true
-      },
-      "validate_request_parameters": {
-        "type": "bool",
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

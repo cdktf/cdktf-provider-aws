@@ -1,50 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/config_delivery_channel.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true
-      },
-      "s3_bucket_name": {
-        "type": "string",
-        "required": true
-      },
-      "s3_key_prefix": {
-        "type": "string",
-        "optional": true
-      },
-      "sns_topic_arn": {
-        "type": "string",
-        "optional": true
-      }
-    },
-    "block_types": {
-      "snapshot_delivery_properties": {
-        "nesting_mode": "list",
-        "block": {
-          "attributes": {
-            "delivery_frequency": {
-              "type": "string",
-              "optional": true
-            }
-          }
-        },
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

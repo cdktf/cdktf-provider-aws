@@ -1,43 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_lambda_invocation.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "function_name": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "input": {
-        "type": "string",
-        "required": true
-      },
-      "qualifier": {
-        "type": "string",
-        "optional": true
-      },
-      "result": {
-        "type": "string",
-        "computed": true
-      },
-      "result_map": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

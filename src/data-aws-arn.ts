@@ -1,44 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_arn.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "account": {
-        "type": "string",
-        "computed": true
-      },
-      "arn": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "partition": {
-        "type": "string",
-        "computed": true
-      },
-      "region": {
-        "type": "string",
-        "computed": true
-      },
-      "resource": {
-        "type": "string",
-        "computed": true
-      },
-      "service": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,65 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "created_date": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "last_updated_date": {
-        "type": "string",
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    },
-    "block_types": {
-      "spec": {
-        "nesting_mode": "list",
-        "block": {
-          "block_types": {
-            "egress_filter": {
-              "nesting_mode": "list",
-              "block": {
-                "attributes": {
-                  "type": {
-                    "type": "string",
-                    "optional": true
-                  }
-                }
-              },
-              "max_items": 1
-            }
-          }
-        },
-        "max_items": 1
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

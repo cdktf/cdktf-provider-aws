@@ -1,49 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/eip_association.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "allocation_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "allow_reassociation": {
-        "type": "bool",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "instance_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "network_interface_id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "private_ip_address": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "public_ip": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

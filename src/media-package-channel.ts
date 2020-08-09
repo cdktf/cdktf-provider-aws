@@ -1,61 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/media_package_channel.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "channel_id": {
-        "type": "string",
-        "required": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "hls_ingest": {
-        "type": [
-          "list",
-          [
-            "object",
-            {
-              "ingest_endpoints": [
-                "list",
-                [
-                  "object",
-                  {
-                    "password": "string",
-                    "url": "string",
-                    "username": "string"
-                  }
-                ]
-              ]
-            }
-          ]
-        ],
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

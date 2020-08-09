@@ -1,65 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/guardduty_member.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "account_id": {
-        "type": "string",
-        "required": true
-      },
-      "detector_id": {
-        "type": "string",
-        "required": true
-      },
-      "disable_email_notification": {
-        "type": "bool",
-        "optional": true
-      },
-      "email": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "invitation_message": {
-        "type": "string",
-        "optional": true
-      },
-      "invite": {
-        "type": "bool",
-        "optional": true
-      },
-      "relationship_status": {
-        "type": "string",
-        "computed": true
-      }
-    },
-    "block_types": {
-      "timeouts": {
-        "nesting_mode": "single",
-        "block": {
-          "attributes": {
-            "create": {
-              "type": "string",
-              "optional": true
-            },
-            "update": {
-              "type": "string",
-              "optional": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

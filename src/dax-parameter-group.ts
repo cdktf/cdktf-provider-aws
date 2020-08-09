@@ -1,45 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/dax_parameter_group.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      }
-    },
-    "block_types": {
-      "parameters": {
-        "nesting_mode": "set",
-        "block": {
-          "attributes": {
-            "name": {
-              "type": "string",
-              "required": true
-            },
-            "value": {
-              "type": "string",
-              "required": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

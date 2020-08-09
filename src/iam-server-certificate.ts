@@ -1,51 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "certificate_body": {
-        "type": "string",
-        "required": true
-      },
-      "certificate_chain": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name_prefix": {
-        "type": "string",
-        "optional": true
-      },
-      "path": {
-        "type": "string",
-        "optional": true
-      },
-      "private_key": {
-        "type": "string",
-        "required": true,
-        "sensitive": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

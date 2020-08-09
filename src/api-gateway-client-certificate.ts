@@ -1,47 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_client_certificate.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "arn": {
-        "type": "string",
-        "computed": true
-      },
-      "created_date": {
-        "type": "string",
-        "computed": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "expiration_date": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "pem_encoded_certificate": {
-        "type": "string",
-        "computed": true
-      },
-      "tags": {
-        "type": [
-          "map",
-          "string"
-        ],
-        "optional": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

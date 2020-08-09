@@ -1,40 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/apigatewayv2_model.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "api_id": {
-        "type": "string",
-        "required": true
-      },
-      "content_type": {
-        "type": "string",
-        "required": true
-      },
-      "description": {
-        "type": "string",
-        "optional": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "schema": {
-        "type": "string",
-        "required": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

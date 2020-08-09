@@ -1,31 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_guardduty_detector.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "finding_publishing_frequency": {
-        "type": "string",
-        "computed": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true
-      },
-      "service_role_arn": {
-        "type": "string",
-        "computed": true
-      },
-      "status": {
-        "type": "string",
-        "computed": true
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

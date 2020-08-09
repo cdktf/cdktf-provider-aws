@@ -1,49 +1,6 @@
 // https://www.terraform.io/docs/providers/aws/r/dx_gateway.html
 // generated from terraform resource schema
 
-/*
-{
-  "version": 0,
-  "block": {
-    "attributes": {
-      "amazon_side_asn": {
-        "type": "string",
-        "required": true
-      },
-      "id": {
-        "type": "string",
-        "optional": true,
-        "computed": true
-      },
-      "name": {
-        "type": "string",
-        "required": true
-      },
-      "owner_account_id": {
-        "type": "string",
-        "computed": true
-      }
-    },
-    "block_types": {
-      "timeouts": {
-        "nesting_mode": "single",
-        "block": {
-          "attributes": {
-            "create": {
-              "type": "string",
-              "optional": true
-            },
-            "delete": {
-              "type": "string",
-              "optional": true
-            }
-          }
-        }
-      }
-    }
-  }
-}
-*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';
