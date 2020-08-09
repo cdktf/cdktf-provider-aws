@@ -59,7 +59,7 @@
     "typescript": "^3.9.5"
   },
   "peerDependencies": {
-    "cdktf": "^0.0.13",
+    "cdktf": "^0.0.14",
     "constructs": "^3.0.4"
   },
   "dependencies": {},
