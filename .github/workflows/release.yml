@@ -57,6 +57,7 @@ jobs:
           name: dist
       - name: Release
         run: |-
+          cd dist/python
           python3 -m pip install --user --upgrade twine
           python3 -m twine upload --verbose --skip-existing *
         env:
