@@ -1,6 +1,47 @@
 // https://www.terraform.io/docs/providers/aws/r/nat_gateway.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allocation_id": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "network_interface_id": {
+        "type": "string",
+        "computed": true
+      },
+      "private_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "public_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

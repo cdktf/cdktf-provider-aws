@@ -1,6 +1,41 @@
 // https://www.terraform.io/docs/providers/aws/r/guardduty_invite_accepter.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "detector_id": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "master_account_id": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

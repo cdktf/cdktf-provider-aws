@@ -1,6 +1,218 @@
 // https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "certificate_arn": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "database_name": {
+        "type": "string",
+        "optional": true
+      },
+      "endpoint_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "endpoint_id": {
+        "type": "string",
+        "required": true
+      },
+      "endpoint_type": {
+        "type": "string",
+        "required": true
+      },
+      "engine_name": {
+        "type": "string",
+        "required": true
+      },
+      "extra_connection_attributes": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kms_key_arn": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "password": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "port": {
+        "type": "number",
+        "optional": true
+      },
+      "server_name": {
+        "type": "string",
+        "optional": true
+      },
+      "service_access_role": {
+        "type": "string",
+        "optional": true
+      },
+      "ssl_mode": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "username": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "elasticsearch_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "endpoint_uri": {
+              "type": "string",
+              "required": true
+            },
+            "error_retry_duration": {
+              "type": "number",
+              "optional": true
+            },
+            "full_load_error_percentage": {
+              "type": "number",
+              "optional": true
+            },
+            "service_access_role_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "kafka_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "broker": {
+              "type": "string",
+              "required": true
+            },
+            "topic": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "kinesis_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "message_format": {
+              "type": "string",
+              "optional": true
+            },
+            "service_access_role_arn": {
+              "type": "string",
+              "optional": true
+            },
+            "stream_arn": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "mongodb_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "auth_mechanism": {
+              "type": "string",
+              "optional": true
+            },
+            "auth_source": {
+              "type": "string",
+              "optional": true
+            },
+            "auth_type": {
+              "type": "string",
+              "optional": true
+            },
+            "docs_to_investigate": {
+              "type": "string",
+              "optional": true
+            },
+            "extract_doc_id": {
+              "type": "string",
+              "optional": true
+            },
+            "nesting_level": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "s3_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket_folder": {
+              "type": "string",
+              "optional": true
+            },
+            "bucket_name": {
+              "type": "string",
+              "optional": true
+            },
+            "compression_type": {
+              "type": "string",
+              "optional": true
+            },
+            "csv_delimiter": {
+              "type": "string",
+              "optional": true
+            },
+            "csv_row_delimiter": {
+              "type": "string",
+              "optional": true
+            },
+            "external_table_definition": {
+              "type": "string",
+              "optional": true
+            },
+            "service_access_role_arn": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

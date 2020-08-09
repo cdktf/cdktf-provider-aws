@@ -1,6 +1,58 @@
 // https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "addresses": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ip_address_version": {
+        "type": "string",
+        "required": true
+      },
+      "lock_token": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "scope": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

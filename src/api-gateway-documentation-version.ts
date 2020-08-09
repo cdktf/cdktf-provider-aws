@@ -1,6 +1,32 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_version.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "rest_api_id": {
+        "type": "string",
+        "required": true
+      },
+      "version": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

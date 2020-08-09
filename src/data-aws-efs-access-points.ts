@@ -1,6 +1,38 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_efs_access_points.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arns": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "file_system_id": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

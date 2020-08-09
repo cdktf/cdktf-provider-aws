@@ -1,6 +1,172 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_mq_broker.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "auto_minor_version_upgrade": {
+        "type": "bool",
+        "computed": true
+      },
+      "broker_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "broker_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "configuration": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "id": "string",
+              "revision": "number"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "deployment_mode": {
+        "type": "string",
+        "computed": true
+      },
+      "encryption_options": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "kms_key_id": "string",
+              "use_aws_owned_key": "bool"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "engine_type": {
+        "type": "string",
+        "computed": true
+      },
+      "engine_version": {
+        "type": "string",
+        "computed": true
+      },
+      "host_instance_type": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instances": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "console_url": "string",
+              "endpoints": [
+                "list",
+                "string"
+              ],
+              "ip_address": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "maintenance_window_start_time": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "day_of_week": "string",
+              "time_of_day": "string",
+              "time_zone": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "publicly_accessible": {
+        "type": "bool",
+        "computed": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "subnet_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "user": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "console_access": "bool",
+              "groups": [
+                "set",
+                "string"
+              ],
+              "username": "string"
+            }
+          ]
+        ],
+        "computed": true
+      }
+    },
+    "block_types": {
+      "logs": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "audit": {
+              "type": "bool",
+              "computed": true
+            },
+            "general": {
+              "type": "bool",
+              "computed": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

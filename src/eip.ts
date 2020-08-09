@@ -1,6 +1,108 @@
 // https://www.terraform.io/docs/providers/aws/r/eip.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allocation_id": {
+        "type": "string",
+        "computed": true
+      },
+      "associate_with_private_ip": {
+        "type": "string",
+        "optional": true
+      },
+      "association_id": {
+        "type": "string",
+        "computed": true
+      },
+      "customer_owned_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "customer_owned_ipv4_pool": {
+        "type": "string",
+        "optional": true
+      },
+      "domain": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "network_interface": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "private_dns": {
+        "type": "string",
+        "computed": true
+      },
+      "private_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "public_dns": {
+        "type": "string",
+        "computed": true
+      },
+      "public_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "public_ipv4_pool": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "read": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

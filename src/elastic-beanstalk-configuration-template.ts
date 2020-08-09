@@ -1,6 +1,65 @@
 // https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "application": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "environment_id": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "solution_stack_name": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "setting": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "namespace": {
+              "type": "string",
+              "required": true
+            },
+            "resource": {
+              "type": "string",
+              "optional": true
+            },
+            "value": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

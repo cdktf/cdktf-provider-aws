@@ -1,6 +1,37 @@
 // https://www.terraform.io/docs/providers/aws/r/appsync_api_key.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_id": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "expires": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

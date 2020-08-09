@@ -1,6 +1,27 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_outposts_sites.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

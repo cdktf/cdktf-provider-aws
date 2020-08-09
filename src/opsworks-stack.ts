@@ -1,6 +1,154 @@
 // https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "agent_version": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "berkshelf_version": {
+        "type": "string",
+        "optional": true
+      },
+      "color": {
+        "type": "string",
+        "optional": true
+      },
+      "configuration_manager_name": {
+        "type": "string",
+        "optional": true
+      },
+      "configuration_manager_version": {
+        "type": "string",
+        "optional": true
+      },
+      "custom_json": {
+        "type": "string",
+        "optional": true
+      },
+      "default_availability_zone": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "default_instance_profile_arn": {
+        "type": "string",
+        "required": true
+      },
+      "default_os": {
+        "type": "string",
+        "optional": true
+      },
+      "default_root_device_type": {
+        "type": "string",
+        "optional": true
+      },
+      "default_ssh_key_name": {
+        "type": "string",
+        "optional": true
+      },
+      "default_subnet_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "hostname_theme": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "manage_berkshelf": {
+        "type": "bool",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "region": {
+        "type": "string",
+        "required": true
+      },
+      "service_role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "stack_endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "use_custom_cookbooks": {
+        "type": "bool",
+        "optional": true
+      },
+      "use_opsworks_security_groups": {
+        "type": "bool",
+        "optional": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "custom_cookbooks_source": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "password": {
+              "type": "string",
+              "optional": true,
+              "sensitive": true
+            },
+            "revision": {
+              "type": "string",
+              "optional": true
+            },
+            "ssh_key": {
+              "type": "string",
+              "optional": true,
+              "sensitive": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            },
+            "url": {
+              "type": "string",
+              "required": true
+            },
+            "username": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

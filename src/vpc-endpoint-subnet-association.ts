@@ -1,6 +1,45 @@
 // https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_subnet_association.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "required": true
+      },
+      "vpc_endpoint_id": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

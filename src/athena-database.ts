@@ -1,6 +1,50 @@
 // https://www.terraform.io/docs/providers/aws/r/athena_database.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "bucket": {
+        "type": "string",
+        "required": true
+      },
+      "force_destroy": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "encryption_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "encryption_option": {
+              "type": "string",
+              "required": true
+            },
+            "kms_key": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

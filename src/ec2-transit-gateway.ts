@@ -1,6 +1,71 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "amazon_side_asn": {
+        "type": "number",
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "association_default_route_table_id": {
+        "type": "string",
+        "computed": true
+      },
+      "auto_accept_shared_attachments": {
+        "type": "string",
+        "optional": true
+      },
+      "default_route_table_association": {
+        "type": "string",
+        "optional": true
+      },
+      "default_route_table_propagation": {
+        "type": "string",
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "dns_support": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "propagation_default_route_table_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpn_ecmp_support": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

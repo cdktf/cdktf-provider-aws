@@ -1,6 +1,40 @@
 // https://www.terraform.io/docs/providers/aws/r/kms_alias.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "target_key_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "target_key_id": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

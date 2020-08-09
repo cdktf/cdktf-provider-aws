@@ -1,6 +1,226 @@
 // https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "created_date": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "last_updated_date": {
+        "type": "string",
+        "computed": true
+      },
+      "mesh_name": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "spec": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "backends": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true,
+              "computed": true
+            }
+          },
+          "block_types": {
+            "backend": {
+              "nesting_mode": "set",
+              "block": {
+                "block_types": {
+                  "virtual_service": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "virtual_service_name": {
+                          "type": "string",
+                          "required": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  }
+                }
+              },
+              "max_items": 25
+            },
+            "listener": {
+              "nesting_mode": "list",
+              "block": {
+                "block_types": {
+                  "health_check": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "healthy_threshold": {
+                          "type": "number",
+                          "required": true
+                        },
+                        "interval_millis": {
+                          "type": "number",
+                          "required": true
+                        },
+                        "path": {
+                          "type": "string",
+                          "optional": true
+                        },
+                        "port": {
+                          "type": "number",
+                          "optional": true,
+                          "computed": true
+                        },
+                        "protocol": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "timeout_millis": {
+                          "type": "number",
+                          "required": true
+                        },
+                        "unhealthy_threshold": {
+                          "type": "number",
+                          "required": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  },
+                  "port_mapping": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "port": {
+                          "type": "number",
+                          "required": true
+                        },
+                        "protocol": {
+                          "type": "string",
+                          "required": true
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "logging": {
+              "nesting_mode": "list",
+              "block": {
+                "block_types": {
+                  "access_log": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "block_types": {
+                        "file": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "attributes": {
+                              "path": {
+                                "type": "string",
+                                "required": true
+                              }
+                            }
+                          },
+                          "max_items": 1
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "service_discovery": {
+              "nesting_mode": "list",
+              "block": {
+                "block_types": {
+                  "aws_cloud_map": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "attributes": {
+                          "type": [
+                            "map",
+                            "string"
+                          ],
+                          "optional": true
+                        },
+                        "namespace_name": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "service_name": {
+                          "type": "string",
+                          "required": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  },
+                  "dns": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "hostname": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "service_name": {
+                          "type": "string",
+                          "optional": true,
+                          "computed": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

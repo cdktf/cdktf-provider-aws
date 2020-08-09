@@ -1,6 +1,72 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_workspaces_bundle.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "bundle_id": {
+        "type": "string",
+        "optional": true
+      },
+      "compute_type": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "name": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true
+      },
+      "owner": {
+        "type": "string",
+        "optional": true
+      },
+      "root_storage": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "capacity": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "user_storage": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "capacity": "string"
+            }
+          ]
+        ],
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

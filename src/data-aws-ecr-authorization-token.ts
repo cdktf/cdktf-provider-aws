@@ -1,6 +1,46 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ecr_authorization_token.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "authorization_token": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      },
+      "expires_at": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "password": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      },
+      "proxy_endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "registry_id": {
+        "type": "string",
+        "optional": true
+      },
+      "user_name": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

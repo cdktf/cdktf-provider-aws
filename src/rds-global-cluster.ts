@@ -1,6 +1,53 @@
 // https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "database_name": {
+        "type": "string",
+        "optional": true
+      },
+      "deletion_protection": {
+        "type": "bool",
+        "optional": true
+      },
+      "engine": {
+        "type": "string",
+        "optional": true
+      },
+      "engine_version": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "global_cluster_identifier": {
+        "type": "string",
+        "required": true
+      },
+      "global_cluster_resource_id": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "storage_encrypted": {
+        "type": "bool",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

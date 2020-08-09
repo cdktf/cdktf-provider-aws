@@ -1,6 +1,72 @@
 // https://www.terraform.io/docs/providers/aws/r/ram_resource_share_accepter.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "invitation_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "receiver_account_id": {
+        "type": "string",
+        "computed": true
+      },
+      "resources": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "sender_account_id": {
+        "type": "string",
+        "computed": true
+      },
+      "share_arn": {
+        "type": "string",
+        "required": true
+      },
+      "share_id": {
+        "type": "string",
+        "computed": true
+      },
+      "share_name": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

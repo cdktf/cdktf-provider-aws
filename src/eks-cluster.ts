@@ -1,6 +1,197 @@
 // https://www.terraform.io/docs/providers/aws/r/eks_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "certificate_authority": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "data": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "created_at": {
+        "type": "string",
+        "computed": true
+      },
+      "enabled_cluster_log_types": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "identity": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "oidc": [
+                "list",
+                [
+                  "object",
+                  {
+                    "issuer": "string"
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "platform_version": {
+        "type": "string",
+        "computed": true
+      },
+      "role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "version": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "encryption_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "resources": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            }
+          },
+          "block_types": {
+            "provider": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "key_arn": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "min_items": 1,
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "vpc_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "cluster_security_group_id": {
+              "type": "string",
+              "computed": true
+            },
+            "endpoint_private_access": {
+              "type": "bool",
+              "optional": true
+            },
+            "endpoint_public_access": {
+              "type": "bool",
+              "optional": true
+            },
+            "public_access_cidrs": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true,
+              "computed": true
+            },
+            "security_group_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "subnet_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "vpc_id": {
+              "type": "string",
+              "computed": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

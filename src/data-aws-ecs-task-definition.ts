@@ -1,6 +1,44 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ecs_task_definition.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "family": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "network_mode": {
+        "type": "string",
+        "computed": true
+      },
+      "revision": {
+        "type": "number",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "task_definition": {
+        "type": "string",
+        "required": true
+      },
+      "task_role_arn": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

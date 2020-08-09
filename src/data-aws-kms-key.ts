@@ -1,6 +1,83 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_kms_key.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "aws_account_id": {
+        "type": "string",
+        "computed": true
+      },
+      "creation_date": {
+        "type": "string",
+        "computed": true
+      },
+      "customer_master_key_spec": {
+        "type": "string",
+        "computed": true
+      },
+      "deletion_date": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "computed": true
+      },
+      "enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "expiration_model": {
+        "type": "string",
+        "computed": true
+      },
+      "grant_tokens": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key_id": {
+        "type": "string",
+        "required": true
+      },
+      "key_manager": {
+        "type": "string",
+        "computed": true
+      },
+      "key_state": {
+        "type": "string",
+        "computed": true
+      },
+      "key_usage": {
+        "type": "string",
+        "computed": true
+      },
+      "origin": {
+        "type": "string",
+        "computed": true
+      },
+      "valid_to": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

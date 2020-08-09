@@ -1,6 +1,119 @@
 // https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "bucket": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "lambda_function": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "events": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "filter_prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "filter_suffix": {
+              "type": "string",
+              "optional": true
+            },
+            "id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "lambda_function_arn": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "queue": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "events": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "filter_prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "filter_suffix": {
+              "type": "string",
+              "optional": true
+            },
+            "id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "queue_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "topic": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "events": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "filter_prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "filter_suffix": {
+              "type": "string",
+              "optional": true
+            },
+            "id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "topic_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

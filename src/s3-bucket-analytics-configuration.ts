@@ -1,6 +1,106 @@
 // https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "bucket": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "tags": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "storage_class_analysis": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "data_export": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "output_schema_version": {
+                    "type": "string",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "destination": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "block_types": {
+                        "s3_bucket_destination": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "attributes": {
+                              "bucket_account_id": {
+                                "type": "string",
+                                "optional": true
+                              },
+                              "bucket_arn": {
+                                "type": "string",
+                                "required": true
+                              },
+                              "format": {
+                                "type": "string",
+                                "optional": true
+                              },
+                              "prefix": {
+                                "type": "string",
+                                "optional": true
+                              }
+                            }
+                          },
+                          "min_items": 1,
+                          "max_items": 1
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  }
+                }
+              },
+              "min_items": 1,
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

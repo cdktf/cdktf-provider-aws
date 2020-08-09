@@ -1,6 +1,72 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_role.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "assume_role_policy": {
+        "type": "string",
+        "required": true
+      },
+      "create_date": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "force_detach_policies": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "max_session_duration": {
+        "type": "number",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "path": {
+        "type": "string",
+        "optional": true
+      },
+      "permissions_boundary": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "unique_id": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

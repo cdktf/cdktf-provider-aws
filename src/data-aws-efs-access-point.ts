@@ -1,6 +1,87 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_efs_access_point.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "access_point_id": {
+        "type": "string",
+        "required": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "file_system_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "file_system_id": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "posix_user": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "gid": "number",
+              "secondary_gids": [
+                "set",
+                "number"
+              ],
+              "uid": "number"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "root_directory": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "creation_info": [
+                "list",
+                [
+                  "object",
+                  {
+                    "owner_gid": "number",
+                    "owner_uid": "number",
+                    "permissions": "string"
+                  }
+                ]
+              ],
+              "path": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

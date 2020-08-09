@@ -1,6 +1,43 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_route53_resolver_rules.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "optional": true
+      },
+      "resolver_endpoint_id": {
+        "type": "string",
+        "optional": true
+      },
+      "resolver_rule_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "rule_type": {
+        "type": "string",
+        "optional": true
+      },
+      "share_status": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

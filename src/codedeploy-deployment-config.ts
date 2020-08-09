@@ -1,6 +1,96 @@
 // https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_config.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "compute_platform": {
+        "type": "string",
+        "optional": true
+      },
+      "deployment_config_id": {
+        "type": "string",
+        "computed": true
+      },
+      "deployment_config_name": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "minimum_healthy_hosts": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "type": {
+              "type": "string",
+              "optional": true
+            },
+            "value": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "traffic_routing_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "type": {
+              "type": "string",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "time_based_canary": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "interval": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "percentage": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "time_based_linear": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "interval": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "percentage": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

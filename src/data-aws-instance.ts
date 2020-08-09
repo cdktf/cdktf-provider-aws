@@ -1,6 +1,261 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_instance.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "ami": {
+        "type": "string",
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "associate_public_ip_address": {
+        "type": "bool",
+        "computed": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "computed": true
+      },
+      "credit_specification": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "cpu_credits": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "disable_api_termination": {
+        "type": "bool",
+        "computed": true
+      },
+      "ebs_block_device": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "delete_on_termination": "bool",
+              "device_name": "string",
+              "encrypted": "bool",
+              "iops": "number",
+              "kms_key_id": "string",
+              "snapshot_id": "string",
+              "volume_id": "string",
+              "volume_size": "number",
+              "volume_type": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "ebs_optimized": {
+        "type": "bool",
+        "computed": true
+      },
+      "ephemeral_block_device": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "device_name": "string",
+              "no_device": "bool",
+              "virtual_name": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "get_password_data": {
+        "type": "bool",
+        "optional": true
+      },
+      "get_user_data": {
+        "type": "bool",
+        "optional": true
+      },
+      "host_id": {
+        "type": "string",
+        "computed": true
+      },
+      "iam_instance_profile": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_id": {
+        "type": "string",
+        "optional": true
+      },
+      "instance_state": {
+        "type": "string",
+        "computed": true
+      },
+      "instance_tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "instance_type": {
+        "type": "string",
+        "computed": true
+      },
+      "key_name": {
+        "type": "string",
+        "computed": true
+      },
+      "metadata_options": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "http_endpoint": "string",
+              "http_put_response_hop_limit": "number",
+              "http_tokens": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "monitoring": {
+        "type": "bool",
+        "computed": true
+      },
+      "network_interface_id": {
+        "type": "string",
+        "computed": true
+      },
+      "outpost_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "password_data": {
+        "type": "string",
+        "computed": true
+      },
+      "placement_group": {
+        "type": "string",
+        "computed": true
+      },
+      "private_dns": {
+        "type": "string",
+        "computed": true
+      },
+      "private_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "public_dns": {
+        "type": "string",
+        "computed": true
+      },
+      "public_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "root_block_device": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "delete_on_termination": "bool",
+              "device_name": "string",
+              "encrypted": "bool",
+              "iops": "number",
+              "kms_key_id": "string",
+              "volume_id": "string",
+              "volume_size": "number",
+              "volume_type": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "source_dest_check": {
+        "type": "bool",
+        "computed": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "tenancy": {
+        "type": "string",
+        "computed": true
+      },
+      "user_data": {
+        "type": "string",
+        "computed": true
+      },
+      "user_data_base64": {
+        "type": "string",
+        "computed": true
+      },
+      "vpc_security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

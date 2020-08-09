@@ -1,6 +1,57 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_batch_job_queue.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "compute_environment_order": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "compute_environment": "string",
+              "order": "number"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "priority": {
+        "type": "number",
+        "computed": true
+      },
+      "state": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "status_reason": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

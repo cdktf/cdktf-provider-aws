@@ -1,6 +1,69 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_s3_bucket_objects.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "bucket": {
+        "type": "string",
+        "required": true
+      },
+      "common_prefixes": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "delimiter": {
+        "type": "string",
+        "optional": true
+      },
+      "encoding_type": {
+        "type": "string",
+        "optional": true
+      },
+      "fetch_owner": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "keys": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "max_keys": {
+        "type": "number",
+        "optional": true
+      },
+      "owners": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "start_after": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

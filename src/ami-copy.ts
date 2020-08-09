@@ -1,6 +1,167 @@
 // https://www.terraform.io/docs/providers/aws/r/ami_copy.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "architecture": {
+        "type": "string",
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "ena_support": {
+        "type": "bool",
+        "computed": true
+      },
+      "encrypted": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "image_location": {
+        "type": "string",
+        "computed": true
+      },
+      "kernel_id": {
+        "type": "string",
+        "computed": true
+      },
+      "kms_key_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "manage_ebs_snapshots": {
+        "type": "bool",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "ramdisk_id": {
+        "type": "string",
+        "computed": true
+      },
+      "root_device_name": {
+        "type": "string",
+        "computed": true
+      },
+      "root_snapshot_id": {
+        "type": "string",
+        "computed": true
+      },
+      "source_ami_id": {
+        "type": "string",
+        "required": true
+      },
+      "source_ami_region": {
+        "type": "string",
+        "required": true
+      },
+      "sriov_net_support": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "virtualization_type": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "ebs_block_device": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "delete_on_termination": {
+              "type": "bool",
+              "computed": true
+            },
+            "device_name": {
+              "type": "string",
+              "computed": true
+            },
+            "encrypted": {
+              "type": "bool",
+              "computed": true
+            },
+            "iops": {
+              "type": "number",
+              "computed": true
+            },
+            "snapshot_id": {
+              "type": "string",
+              "computed": true
+            },
+            "volume_size": {
+              "type": "number",
+              "computed": true
+            },
+            "volume_type": {
+              "type": "string",
+              "computed": true
+            }
+          }
+        }
+      },
+      "ephemeral_block_device": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "device_name": {
+              "type": "string",
+              "computed": true
+            },
+            "virtual_name": {
+              "type": "string",
+              "computed": true
+            }
+          }
+        }
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,86 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_api_gateway_rest_api.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_key_source": {
+        "type": "string",
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "binary_media_types": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "computed": true
+      },
+      "endpoint_configuration": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "types": [
+                "list",
+                "string"
+              ],
+              "vpc_endpoint_ids": [
+                "set",
+                "string"
+              ]
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "execution_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "minimum_compression_size": {
+        "type": "number",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "policy": {
+        "type": "string",
+        "computed": true
+      },
+      "root_resource_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

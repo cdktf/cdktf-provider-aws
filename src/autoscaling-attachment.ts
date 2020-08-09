@@ -1,6 +1,32 @@
 // https://www.terraform.io/docs/providers/aws/r/autoscaling_attachment.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "alb_target_group_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "autoscaling_group_name": {
+        "type": "string",
+        "required": true
+      },
+      "elb": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

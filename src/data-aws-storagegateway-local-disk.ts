@@ -1,6 +1,36 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_storagegateway_local_disk.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "disk_id": {
+        "type": "string",
+        "computed": true
+      },
+      "disk_node": {
+        "type": "string",
+        "optional": true
+      },
+      "disk_path": {
+        "type": "string",
+        "optional": true
+      },
+      "gateway_arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

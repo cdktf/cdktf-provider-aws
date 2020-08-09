@@ -1,6 +1,41 @@
 // https://www.terraform.io/docs/providers/aws/r/codebuild_source_credential.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "auth_type": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "server_type": {
+        "type": "string",
+        "required": true
+      },
+      "token": {
+        "type": "string",
+        "required": true,
+        "sensitive": true
+      },
+      "user_name": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

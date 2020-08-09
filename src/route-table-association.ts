@@ -1,6 +1,32 @@
 // https://www.terraform.io/docs/providers/aws/r/route_table_association.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "gateway_id": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "route_table_id": {
+        "type": "string",
+        "required": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

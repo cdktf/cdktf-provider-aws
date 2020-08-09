@@ -1,6 +1,95 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudhsm_v2_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "cluster_certificates": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "aws_hardware_certificate": "string",
+              "cluster_certificate": "string",
+              "cluster_csr": "string",
+              "hsm_certificate": "string",
+              "manufacturer_hardware_certificate": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "cluster_id": {
+        "type": "string",
+        "computed": true
+      },
+      "cluster_state": {
+        "type": "string",
+        "computed": true
+      },
+      "hsm_type": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "security_group_id": {
+        "type": "string",
+        "computed": true
+      },
+      "source_backup_identifier": {
+        "type": "string",
+        "optional": true
+      },
+      "subnet_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,60 @@
 // https://www.terraform.io/docs/providers/aws/r/ssm_activation.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "activation_code": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "expiration_date": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "expired": {
+        "type": "bool",
+        "computed": true
+      },
+      "iam_role": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true
+      },
+      "registration_count": {
+        "type": "number",
+        "computed": true
+      },
+      "registration_limit": {
+        "type": "number",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

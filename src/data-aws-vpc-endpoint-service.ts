@@ -1,6 +1,103 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_vpc_endpoint_service.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "acceptance_required": {
+        "type": "bool",
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zones": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "base_endpoint_dns_names": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "manages_vpc_endpoints": {
+        "type": "bool",
+        "computed": true
+      },
+      "owner": {
+        "type": "string",
+        "computed": true
+      },
+      "private_dns_name": {
+        "type": "string",
+        "computed": true
+      },
+      "service": {
+        "type": "string",
+        "optional": true
+      },
+      "service_id": {
+        "type": "string",
+        "computed": true
+      },
+      "service_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "service_type": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_endpoint_policy_supported": {
+        "type": "bool",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

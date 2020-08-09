@@ -1,6 +1,86 @@
 // https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "account_aggregation_source": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "account_ids": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            },
+            "all_regions": {
+              "type": "bool",
+              "optional": true
+            },
+            "regions": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "organization_aggregation_source": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "all_regions": {
+              "type": "bool",
+              "optional": true
+            },
+            "regions": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "role_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

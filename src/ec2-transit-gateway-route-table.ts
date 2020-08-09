@@ -1,6 +1,39 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "default_association_route_table": {
+        "type": "bool",
+        "computed": true
+      },
+      "default_propagation_route_table": {
+        "type": "bool",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "transit_gateway_id": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

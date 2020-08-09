@@ -1,6 +1,94 @@
 // https://www.terraform.io/docs/providers/aws/r/default_vpc.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "assign_generated_ipv6_cidr_block": {
+        "type": "bool",
+        "computed": true
+      },
+      "cidr_block": {
+        "type": "string",
+        "computed": true
+      },
+      "default_network_acl_id": {
+        "type": "string",
+        "computed": true
+      },
+      "default_route_table_id": {
+        "type": "string",
+        "computed": true
+      },
+      "default_security_group_id": {
+        "type": "string",
+        "computed": true
+      },
+      "dhcp_options_id": {
+        "type": "string",
+        "computed": true
+      },
+      "enable_classiclink": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "enable_classiclink_dns_support": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "enable_dns_hostnames": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "enable_dns_support": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_tenancy": {
+        "type": "string",
+        "computed": true
+      },
+      "ipv6_association_id": {
+        "type": "string",
+        "computed": true
+      },
+      "ipv6_cidr_block": {
+        "type": "string",
+        "computed": true
+      },
+      "main_route_table_id": {
+        "type": "string",
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

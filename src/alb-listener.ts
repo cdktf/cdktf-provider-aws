@@ -1,6 +1,282 @@
 // https://www.terraform.io/docs/providers/aws/r/alb_listener.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "certificate_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "load_balancer_arn": {
+        "type": "string",
+        "required": true
+      },
+      "port": {
+        "type": "number",
+        "required": true
+      },
+      "protocol": {
+        "type": "string",
+        "optional": true
+      },
+      "ssl_policy": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "default_action": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "order": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "target_group_arn": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "authenticate_cognito": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "authentication_request_extra_params": {
+                    "type": [
+                      "map",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "on_unauthenticated_request": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "scope": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "session_cookie_name": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "session_timeout": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "user_pool_arn": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "user_pool_client_id": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "user_pool_domain": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "authenticate_oidc": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "authentication_request_extra_params": {
+                    "type": [
+                      "map",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "authorization_endpoint": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "client_id": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "client_secret": {
+                    "type": "string",
+                    "required": true,
+                    "sensitive": true
+                  },
+                  "issuer": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "on_unauthenticated_request": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "scope": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "session_cookie_name": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "session_timeout": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "token_endpoint": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "user_info_endpoint": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "fixed_response": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "content_type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "message_body": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "status_code": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "forward": {
+              "nesting_mode": "list",
+              "block": {
+                "block_types": {
+                  "stickiness": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "duration": {
+                          "type": "number",
+                          "required": true
+                        },
+                        "enabled": {
+                          "type": "bool",
+                          "optional": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  },
+                  "target_group": {
+                    "nesting_mode": "set",
+                    "block": {
+                      "attributes": {
+                        "arn": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "weight": {
+                          "type": "number",
+                          "optional": true
+                        }
+                      }
+                    },
+                    "min_items": 2,
+                    "max_items": 5
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "redirect": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "host": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "path": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "port": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "protocol": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "query": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "status_code": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "read": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

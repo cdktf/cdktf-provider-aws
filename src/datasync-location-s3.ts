@@ -1,6 +1,58 @@
 // https://www.terraform.io/docs/providers/aws/r/datasync_location_s3.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "s3_bucket_arn": {
+        "type": "string",
+        "required": true
+      },
+      "subdirectory": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "uri": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "s3_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket_access_role_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,75 @@
 // https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kms_key_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "production_variants": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "accelerator_type": {
+              "type": "string",
+              "optional": true
+            },
+            "initial_instance_count": {
+              "type": "number",
+              "required": true
+            },
+            "initial_variant_weight": {
+              "type": "number",
+              "optional": true
+            },
+            "instance_type": {
+              "type": "string",
+              "required": true
+            },
+            "model_name": {
+              "type": "string",
+              "required": true
+            },
+            "variant_name": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        },
+        "min_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

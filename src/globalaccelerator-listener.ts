@@ -1,6 +1,51 @@
 // https://www.terraform.io/docs/providers/aws/r/globalaccelerator_listener.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "accelerator_arn": {
+        "type": "string",
+        "required": true
+      },
+      "client_affinity": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "protocol": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "port_range": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "from_port": {
+              "type": "number",
+              "optional": true
+            },
+            "to_port": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 10
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

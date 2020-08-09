@@ -1,6 +1,39 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_region.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "current": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "computed": true
+      },
+      "endpoint": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

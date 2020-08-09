@@ -1,6 +1,28 @@
 // https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_policy.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "access_policies": {
+        "type": "string",
+        "required": true
+      },
+      "domain_name": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

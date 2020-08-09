@@ -1,6 +1,173 @@
 // https://www.terraform.io/docs/providers/aws/r/gamelift_fleet.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "build_id": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "ec2_instance_type": {
+        "type": "string",
+        "required": true
+      },
+      "fleet_type": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "log_paths": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "metric_groups": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "new_game_session_protection_policy": {
+        "type": "string",
+        "optional": true
+      },
+      "operating_system": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "ec2_inbound_permission": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "from_port": {
+              "type": "number",
+              "required": true
+            },
+            "ip_range": {
+              "type": "string",
+              "required": true
+            },
+            "protocol": {
+              "type": "string",
+              "required": true
+            },
+            "to_port": {
+              "type": "number",
+              "required": true
+            }
+          }
+        },
+        "max_items": 50
+      },
+      "resource_creation_limit_policy": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "new_game_sessions_per_creator": {
+              "type": "number",
+              "optional": true
+            },
+            "policy_period_in_minutes": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "runtime_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "game_session_activation_timeout_seconds": {
+              "type": "number",
+              "optional": true
+            },
+            "max_concurrent_game_session_activations": {
+              "type": "number",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "server_process": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "concurrent_executions": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "launch_path": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "parameters": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 50
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

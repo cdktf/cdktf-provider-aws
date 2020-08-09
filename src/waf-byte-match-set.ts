@@ -1,6 +1,64 @@
 // https://www.terraform.io/docs/providers/aws/r/waf_byte_match_set.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "byte_match_tuples": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "positional_constraint": {
+              "type": "string",
+              "required": true
+            },
+            "target_string": {
+              "type": "string",
+              "optional": true
+            },
+            "text_transformation": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "field_to_match": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "data": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "min_items": 1,
+              "max_items": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

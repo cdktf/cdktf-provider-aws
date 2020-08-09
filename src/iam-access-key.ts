@@ -1,6 +1,56 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_access_key.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "encrypted_secret": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key_fingerprint": {
+        "type": "string",
+        "computed": true
+      },
+      "pgp_key": {
+        "type": "string",
+        "optional": true
+      },
+      "secret": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      },
+      "ses_smtp_password": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      },
+      "ses_smtp_password_v4": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      },
+      "status": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "user": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

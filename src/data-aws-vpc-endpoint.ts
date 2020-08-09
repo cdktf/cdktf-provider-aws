@@ -1,6 +1,139 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_vpc_endpoint.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "cidr_blocks": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "dns_entry": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "dns_name": "string",
+              "hosted_zone_id": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "network_interface_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "policy": {
+        "type": "string",
+        "computed": true
+      },
+      "prefix_list_id": {
+        "type": "string",
+        "computed": true
+      },
+      "private_dns_enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "requester_managed": {
+        "type": "bool",
+        "computed": true
+      },
+      "route_table_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "service_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "state": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "subnet_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_endpoint_type": {
+        "type": "string",
+        "computed": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

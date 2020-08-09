@@ -1,6 +1,43 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_network_association.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "client_vpn_endpoint_id": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "required": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

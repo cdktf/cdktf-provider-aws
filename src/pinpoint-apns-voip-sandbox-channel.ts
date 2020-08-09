@@ -1,6 +1,62 @@
 // https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_voip_sandbox_channel.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "application_id": {
+        "type": "string",
+        "required": true
+      },
+      "bundle_id": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "certificate": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "default_authentication_method": {
+        "type": "string",
+        "optional": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "private_key": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "team_id": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "token_key": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "token_key_id": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

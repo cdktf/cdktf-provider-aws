@@ -1,6 +1,46 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudfront_public_key.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "caller_reference": {
+        "type": "string",
+        "computed": true
+      },
+      "comment": {
+        "type": "string",
+        "optional": true
+      },
+      "encoded_key": {
+        "type": "string",
+        "required": true
+      },
+      "etag": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

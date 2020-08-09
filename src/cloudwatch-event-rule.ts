@@ -1,6 +1,60 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_rule.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "event_pattern": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "is_enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "schedule_expression": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

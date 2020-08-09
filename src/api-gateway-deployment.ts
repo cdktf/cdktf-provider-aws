@@ -1,6 +1,62 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "created_date": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "execution_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "invoke_url": {
+        "type": "string",
+        "computed": true
+      },
+      "rest_api_id": {
+        "type": "string",
+        "required": true
+      },
+      "stage_description": {
+        "type": "string",
+        "optional": true
+      },
+      "stage_name": {
+        "type": "string",
+        "optional": true
+      },
+      "triggers": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "variables": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

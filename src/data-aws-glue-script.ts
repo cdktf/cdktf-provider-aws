@@ -1,6 +1,96 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_glue_script.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "language": {
+        "type": "string",
+        "optional": true
+      },
+      "python_script": {
+        "type": "string",
+        "computed": true
+      },
+      "scala_code": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "dag_edge": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "source": {
+              "type": "string",
+              "required": true
+            },
+            "target": {
+              "type": "string",
+              "required": true
+            },
+            "target_parameter": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "min_items": 1
+      },
+      "dag_node": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "id": {
+              "type": "string",
+              "required": true
+            },
+            "line_number": {
+              "type": "number",
+              "optional": true
+            },
+            "node_type": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "args": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "name": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "param": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "min_items": 1
+            }
+          }
+        },
+        "min_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

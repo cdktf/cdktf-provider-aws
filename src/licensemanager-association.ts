@@ -1,6 +1,28 @@
 // https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "license_configuration_arn": {
+        "type": "string",
+        "required": true
+      },
+      "resource_arn": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

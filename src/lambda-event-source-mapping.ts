@@ -1,6 +1,113 @@
 // https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "batch_size": {
+        "type": "number",
+        "optional": true
+      },
+      "bisect_batch_on_function_error": {
+        "type": "bool",
+        "optional": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "event_source_arn": {
+        "type": "string",
+        "required": true
+      },
+      "function_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "function_name": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "last_modified": {
+        "type": "string",
+        "computed": true
+      },
+      "last_processing_result": {
+        "type": "string",
+        "computed": true
+      },
+      "maximum_batching_window_in_seconds": {
+        "type": "number",
+        "optional": true
+      },
+      "maximum_record_age_in_seconds": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "maximum_retry_attempts": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "parallelization_factor": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "starting_position": {
+        "type": "string",
+        "optional": true
+      },
+      "starting_position_timestamp": {
+        "type": "string",
+        "optional": true
+      },
+      "state": {
+        "type": "string",
+        "computed": true
+      },
+      "state_transition_reason": {
+        "type": "string",
+        "computed": true
+      },
+      "uuid": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "destination_config": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "on_failure": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "destination_arn": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

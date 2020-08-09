@@ -1,6 +1,131 @@
 // https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "bucket": {
+        "type": "string",
+        "required": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "included_object_versions": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "optional_fields": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "destination": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "bucket": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "account_id": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "bucket_arn": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "format": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "prefix": {
+                    "type": "string",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "encryption": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "block_types": {
+                        "sse_kms": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "attributes": {
+                              "key_id": {
+                                "type": "string",
+                                "required": true
+                              }
+                            }
+                          },
+                          "max_items": 1
+                        },
+                        "sse_s3": {
+                          "nesting_mode": "list",
+                          "block": {},
+                          "max_items": 1
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  }
+                }
+              },
+              "min_items": 1,
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      },
+      "filter": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "prefix": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "schedule": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "frequency": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

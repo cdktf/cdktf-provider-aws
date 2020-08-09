@@ -1,6 +1,83 @@
 // https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_id": {
+        "type": "string",
+        "required": true
+      },
+      "connection_id": {
+        "type": "string",
+        "optional": true
+      },
+      "connection_type": {
+        "type": "string",
+        "optional": true
+      },
+      "content_handling_strategy": {
+        "type": "string",
+        "optional": true
+      },
+      "credentials_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "integration_method": {
+        "type": "string",
+        "optional": true
+      },
+      "integration_response_selection_expression": {
+        "type": "string",
+        "computed": true
+      },
+      "integration_type": {
+        "type": "string",
+        "required": true
+      },
+      "integration_uri": {
+        "type": "string",
+        "optional": true
+      },
+      "passthrough_behavior": {
+        "type": "string",
+        "optional": true
+      },
+      "payload_format_version": {
+        "type": "string",
+        "optional": true
+      },
+      "request_templates": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "template_selection_expression": {
+        "type": "string",
+        "optional": true
+      },
+      "timeout_milliseconds": {
+        "type": "number",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

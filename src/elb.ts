@@ -1,6 +1,192 @@
 // https://www.terraform.io/docs/providers/aws/r/elb.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zones": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "connection_draining": {
+        "type": "bool",
+        "optional": true
+      },
+      "connection_draining_timeout": {
+        "type": "number",
+        "optional": true
+      },
+      "cross_zone_load_balancing": {
+        "type": "bool",
+        "optional": true
+      },
+      "dns_name": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "idle_timeout": {
+        "type": "number",
+        "optional": true
+      },
+      "instances": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "internal": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "source_security_group": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "source_security_group_id": {
+        "type": "string",
+        "computed": true
+      },
+      "subnets": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "zone_id": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "access_logs": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket": {
+              "type": "string",
+              "required": true
+            },
+            "bucket_prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "enabled": {
+              "type": "bool",
+              "optional": true
+            },
+            "interval": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "health_check": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "healthy_threshold": {
+              "type": "number",
+              "required": true
+            },
+            "interval": {
+              "type": "number",
+              "required": true
+            },
+            "target": {
+              "type": "string",
+              "required": true
+            },
+            "timeout": {
+              "type": "number",
+              "required": true
+            },
+            "unhealthy_threshold": {
+              "type": "number",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "listener": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "instance_port": {
+              "type": "number",
+              "required": true
+            },
+            "instance_protocol": {
+              "type": "string",
+              "required": true
+            },
+            "lb_port": {
+              "type": "number",
+              "required": true
+            },
+            "lb_protocol": {
+              "type": "string",
+              "required": true
+            },
+            "ssl_certificate_id": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "min_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

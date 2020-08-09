@@ -1,6 +1,145 @@
 // https://www.terraform.io/docs/providers/aws/r/dax_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zones": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "cluster_address": {
+        "type": "string",
+        "computed": true
+      },
+      "cluster_name": {
+        "type": "string",
+        "required": true
+      },
+      "configuration_endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "iam_role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "maintenance_window": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "node_type": {
+        "type": "string",
+        "required": true
+      },
+      "nodes": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "address": "string",
+              "availability_zone": "string",
+              "id": "string",
+              "port": "number"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "notification_topic_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "parameter_group_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "port": {
+        "type": "number",
+        "computed": true
+      },
+      "replication_factor": {
+        "type": "number",
+        "required": true
+      },
+      "security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "subnet_group_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "server_side_encryption": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "enabled": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

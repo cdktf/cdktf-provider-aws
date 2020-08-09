@@ -1,6 +1,65 @@
 // https://www.terraform.io/docs/providers/aws/r/codecommit_trigger.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "configuration_id": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "repository_name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "trigger": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "branches": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "custom_data": {
+              "type": "string",
+              "optional": true
+            },
+            "destination_arn": {
+              "type": "string",
+              "required": true
+            },
+            "events": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            },
+            "name": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 10
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

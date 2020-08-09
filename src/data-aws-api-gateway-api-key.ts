@@ -1,6 +1,52 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_api_gateway_api_key.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "created_date": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "computed": true
+      },
+      "enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "required": true
+      },
+      "last_updated_date": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "value": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

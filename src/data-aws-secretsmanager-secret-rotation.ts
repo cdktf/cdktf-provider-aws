@@ -1,6 +1,44 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_secretsmanager_secret_rotation.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "rotation_enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "rotation_lambda_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "rotation_rules": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "automatically_after_days": "number"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "secret_id": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

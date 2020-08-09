@@ -1,6 +1,104 @@
 // https://www.terraform.io/docs/providers/aws/r/datasync_task.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "cloudwatch_log_group_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "destination_location_arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true
+      },
+      "source_location_arn": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "options": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "atime": {
+              "type": "string",
+              "optional": true
+            },
+            "bytes_per_second": {
+              "type": "number",
+              "optional": true
+            },
+            "gid": {
+              "type": "string",
+              "optional": true
+            },
+            "mtime": {
+              "type": "string",
+              "optional": true
+            },
+            "posix_permissions": {
+              "type": "string",
+              "optional": true
+            },
+            "preserve_deleted_files": {
+              "type": "string",
+              "optional": true
+            },
+            "preserve_devices": {
+              "type": "string",
+              "optional": true
+            },
+            "uid": {
+              "type": "string",
+              "optional": true
+            },
+            "verify_mode": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

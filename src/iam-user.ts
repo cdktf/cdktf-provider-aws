@@ -1,6 +1,52 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_user.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "force_destroy": {
+        "type": "bool",
+        "description": "Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "path": {
+        "type": "string",
+        "optional": true
+      },
+      "permissions_boundary": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "unique_id": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,28 @@
 // https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder_status.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "is_enabled": {
+        "type": "bool",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

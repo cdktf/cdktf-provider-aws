@@ -1,6 +1,48 @@
 // https://www.terraform.io/docs/providers/aws/r/glue_catalog_database.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "catalog_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "location_uri": {
+        "type": "string",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "parameters": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

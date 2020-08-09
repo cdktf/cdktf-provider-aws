@@ -1,6 +1,36 @@
 // https://www.terraform.io/docs/providers/aws/r/worklink_website_certificate_authority_association.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "certificate": {
+        "type": "string",
+        "required": true
+      },
+      "display_name": {
+        "type": "string",
+        "optional": true
+      },
+      "fleet_arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "website_ca_id": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

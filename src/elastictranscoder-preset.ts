@@ -1,6 +1,250 @@
 // https://www.terraform.io/docs/providers/aws/r/elastictranscoder_preset.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "container": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "video_codec_options": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "audio": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "audio_packing_mode": {
+              "type": "string",
+              "optional": true
+            },
+            "bit_rate": {
+              "type": "string",
+              "optional": true
+            },
+            "channels": {
+              "type": "string",
+              "optional": true
+            },
+            "codec": {
+              "type": "string",
+              "optional": true
+            },
+            "sample_rate": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "audio_codec_options": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bit_depth": {
+              "type": "string",
+              "optional": true
+            },
+            "bit_order": {
+              "type": "string",
+              "optional": true
+            },
+            "profile": {
+              "type": "string",
+              "optional": true
+            },
+            "signed": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "thumbnails": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "aspect_ratio": {
+              "type": "string",
+              "optional": true
+            },
+            "format": {
+              "type": "string",
+              "optional": true
+            },
+            "interval": {
+              "type": "string",
+              "optional": true
+            },
+            "max_height": {
+              "type": "string",
+              "optional": true
+            },
+            "max_width": {
+              "type": "string",
+              "optional": true
+            },
+            "padding_policy": {
+              "type": "string",
+              "optional": true
+            },
+            "resolution": {
+              "type": "string",
+              "optional": true
+            },
+            "sizing_policy": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "video": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "aspect_ratio": {
+              "type": "string",
+              "optional": true
+            },
+            "bit_rate": {
+              "type": "string",
+              "optional": true
+            },
+            "codec": {
+              "type": "string",
+              "optional": true
+            },
+            "display_aspect_ratio": {
+              "type": "string",
+              "optional": true
+            },
+            "fixed_gop": {
+              "type": "string",
+              "optional": true
+            },
+            "frame_rate": {
+              "type": "string",
+              "optional": true
+            },
+            "keyframes_max_dist": {
+              "type": "string",
+              "optional": true
+            },
+            "max_frame_rate": {
+              "type": "string",
+              "optional": true
+            },
+            "max_height": {
+              "type": "string",
+              "optional": true
+            },
+            "max_width": {
+              "type": "string",
+              "optional": true
+            },
+            "padding_policy": {
+              "type": "string",
+              "optional": true
+            },
+            "resolution": {
+              "type": "string",
+              "optional": true
+            },
+            "sizing_policy": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "video_watermarks": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "horizontal_align": {
+              "type": "string",
+              "optional": true
+            },
+            "horizontal_offset": {
+              "type": "string",
+              "optional": true
+            },
+            "id": {
+              "type": "string",
+              "optional": true
+            },
+            "max_height": {
+              "type": "string",
+              "optional": true
+            },
+            "max_width": {
+              "type": "string",
+              "optional": true
+            },
+            "opacity": {
+              "type": "string",
+              "optional": true
+            },
+            "sizing_policy": {
+              "type": "string",
+              "optional": true
+            },
+            "target": {
+              "type": "string",
+              "optional": true
+            },
+            "vertical_align": {
+              "type": "string",
+              "optional": true
+            },
+            "vertical_offset": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

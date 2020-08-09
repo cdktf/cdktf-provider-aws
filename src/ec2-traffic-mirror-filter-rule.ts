@@ -1,6 +1,86 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "destination_cidr_block": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "protocol": {
+        "type": "number",
+        "optional": true
+      },
+      "rule_action": {
+        "type": "string",
+        "required": true
+      },
+      "rule_number": {
+        "type": "number",
+        "required": true
+      },
+      "source_cidr_block": {
+        "type": "string",
+        "required": true
+      },
+      "traffic_direction": {
+        "type": "string",
+        "required": true
+      },
+      "traffic_mirror_filter_id": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "destination_port_range": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "from_port": {
+              "type": "number",
+              "optional": true
+            },
+            "to_port": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "source_port_range": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "from_port": {
+              "type": "number",
+              "optional": true
+            },
+            "to_port": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

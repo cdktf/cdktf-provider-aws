@@ -1,6 +1,156 @@
 // https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "active_directory_id": {
+        "type": "string",
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "automatic_backup_retention_days": {
+        "type": "number",
+        "optional": true
+      },
+      "copy_tags_to_backups": {
+        "type": "bool",
+        "optional": true
+      },
+      "daily_automatic_backup_start_time": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "dns_name": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kms_key_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "network_interface_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "skip_final_backup": {
+        "type": "bool",
+        "optional": true
+      },
+      "storage_capacity": {
+        "type": "number",
+        "required": true
+      },
+      "subnet_ids": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "throughput_capacity": {
+        "type": "number",
+        "required": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "computed": true
+      },
+      "weekly_maintenance_start_time": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "self_managed_active_directory": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "dns_ips": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "domain_name": {
+              "type": "string",
+              "required": true
+            },
+            "file_system_administrators_group": {
+              "type": "string",
+              "optional": true
+            },
+            "organizational_unit_distinguished_name": {
+              "type": "string",
+              "optional": true
+            },
+            "password": {
+              "type": "string",
+              "required": true,
+              "sensitive": true
+            },
+            "username": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

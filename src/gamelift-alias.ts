@@ -1,6 +1,62 @@
 // https://www.terraform.io/docs/providers/aws/r/gamelift_alias.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "routing_strategy": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "fleet_id": {
+              "type": "string",
+              "optional": true
+            },
+            "message": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

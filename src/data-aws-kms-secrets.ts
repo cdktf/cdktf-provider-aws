@@ -1,6 +1,59 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_kms_secrets.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "plaintext": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "computed": true
+      }
+    },
+    "block_types": {
+      "secret": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "context": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true
+            },
+            "grant_tokens": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "payload": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

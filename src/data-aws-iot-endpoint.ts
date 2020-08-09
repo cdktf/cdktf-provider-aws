@@ -1,6 +1,28 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_iot_endpoint.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "endpoint_address": {
+        "type": "string",
+        "computed": true
+      },
+      "endpoint_type": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

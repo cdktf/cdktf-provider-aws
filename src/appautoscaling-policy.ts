@@ -1,6 +1,209 @@
 // https://www.terraform.io/docs/providers/aws/r/appautoscaling_policy.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "adjustment_type": {
+        "type": "string",
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "cooldown": {
+        "type": "number",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "metric_aggregation_type": {
+        "type": "string",
+        "optional": true
+      },
+      "min_adjustment_magnitude": {
+        "type": "number",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "policy_type": {
+        "type": "string",
+        "optional": true
+      },
+      "resource_id": {
+        "type": "string",
+        "required": true
+      },
+      "scalable_dimension": {
+        "type": "string",
+        "required": true
+      },
+      "service_namespace": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "step_adjustment": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "metric_interval_lower_bound": {
+              "type": "string",
+              "optional": true
+            },
+            "metric_interval_upper_bound": {
+              "type": "string",
+              "optional": true
+            },
+            "scaling_adjustment": {
+              "type": "number",
+              "required": true
+            }
+          }
+        }
+      },
+      "step_scaling_policy_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "adjustment_type": {
+              "type": "string",
+              "optional": true
+            },
+            "cooldown": {
+              "type": "number",
+              "optional": true
+            },
+            "metric_aggregation_type": {
+              "type": "string",
+              "optional": true
+            },
+            "min_adjustment_magnitude": {
+              "type": "number",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "step_adjustment": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "metric_interval_lower_bound": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "metric_interval_upper_bound": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "scaling_adjustment": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "target_tracking_scaling_policy_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "disable_scale_in": {
+              "type": "bool",
+              "optional": true
+            },
+            "scale_in_cooldown": {
+              "type": "number",
+              "optional": true
+            },
+            "scale_out_cooldown": {
+              "type": "number",
+              "optional": true
+            },
+            "target_value": {
+              "type": "number",
+              "required": true
+            }
+          },
+          "block_types": {
+            "customized_metric_specification": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "metric_name": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "namespace": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "statistic": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "unit": {
+                    "type": "string",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "dimensions": {
+                    "nesting_mode": "set",
+                    "block": {
+                      "attributes": {
+                        "name": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "value": {
+                          "type": "string",
+                          "required": true
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "predefined_metric_specification": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "predefined_metric_type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "resource_label": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

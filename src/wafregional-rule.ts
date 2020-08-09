@@ -1,6 +1,60 @@
 // https://www.terraform.io/docs/providers/aws/r/wafregional_rule.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "metric_name": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "predicate": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "data_id": {
+              "type": "string",
+              "required": true
+            },
+            "negated": {
+              "type": "bool",
+              "required": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

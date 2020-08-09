@@ -1,6 +1,172 @@
 // https://www.terraform.io/docs/providers/aws/r/elasticache_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "apply_immediately": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "availability_zones": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "az_mode": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cache_nodes": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "address": "string",
+              "availability_zone": "string",
+              "id": "string",
+              "port": "number"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "cluster_address": {
+        "type": "string",
+        "computed": true
+      },
+      "cluster_id": {
+        "type": "string",
+        "required": true
+      },
+      "configuration_endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "engine": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "engine_version": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "maintenance_window": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "node_type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "notification_topic_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "num_cache_nodes": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "parameter_group_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "port": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "preferred_availability_zones": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "replication_group_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "security_group_names": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "snapshot_arns": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "snapshot_name": {
+        "type": "string",
+        "optional": true
+      },
+      "snapshot_retention_limit": {
+        "type": "number",
+        "optional": true
+      },
+      "snapshot_window": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "subnet_group_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

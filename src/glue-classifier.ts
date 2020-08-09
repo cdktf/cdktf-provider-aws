@@ -1,6 +1,109 @@
 // https://www.terraform.io/docs/providers/aws/r/glue_classifier.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "csv_classifier": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allow_single_column": {
+              "type": "bool",
+              "optional": true
+            },
+            "contains_header": {
+              "type": "string",
+              "optional": true
+            },
+            "delimiter": {
+              "type": "string",
+              "optional": true
+            },
+            "disable_value_trimming": {
+              "type": "bool",
+              "optional": true
+            },
+            "header": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "quote_symbol": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "grok_classifier": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "classification": {
+              "type": "string",
+              "required": true
+            },
+            "custom_patterns": {
+              "type": "string",
+              "optional": true
+            },
+            "grok_pattern": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "json_classifier": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "json_path": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "xml_classifier": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "classification": {
+              "type": "string",
+              "required": true
+            },
+            "row_tag": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

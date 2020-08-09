@@ -1,6 +1,133 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_launch_configuration.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "associate_public_ip_address": {
+        "type": "bool",
+        "computed": true
+      },
+      "ebs_block_device": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "delete_on_termination": "bool",
+              "device_name": "string",
+              "encrypted": "bool",
+              "iops": "number",
+              "snapshot_id": "string",
+              "volume_size": "number",
+              "volume_type": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "ebs_optimized": {
+        "type": "bool",
+        "computed": true
+      },
+      "enable_monitoring": {
+        "type": "bool",
+        "computed": true
+      },
+      "ephemeral_block_device": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "device_name": "string",
+              "virtual_name": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "iam_instance_profile": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "image_id": {
+        "type": "string",
+        "computed": true
+      },
+      "instance_type": {
+        "type": "string",
+        "computed": true
+      },
+      "key_name": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "placement_tenancy": {
+        "type": "string",
+        "computed": true
+      },
+      "root_block_device": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "delete_on_termination": "bool",
+              "encrypted": "bool",
+              "iops": "number",
+              "volume_size": "number",
+              "volume_type": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "spot_price": {
+        "type": "string",
+        "computed": true
+      },
+      "user_data": {
+        "type": "string",
+        "computed": true
+      },
+      "vpc_classic_link_id": {
+        "type": "string",
+        "computed": true
+      },
+      "vpc_classic_link_security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

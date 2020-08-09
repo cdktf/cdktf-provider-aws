@@ -1,6 +1,196 @@
 // https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "certificate": {
+        "type": "string",
+        "computed": true
+      },
+      "certificate_chain": {
+        "type": "string",
+        "computed": true
+      },
+      "certificate_signing_request": {
+        "type": "string",
+        "computed": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "not_after": {
+        "type": "string",
+        "computed": true
+      },
+      "not_before": {
+        "type": "string",
+        "computed": true
+      },
+      "permanent_deletion_time_in_days": {
+        "type": "number",
+        "optional": true
+      },
+      "serial": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "type": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "certificate_authority_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "key_algorithm": {
+              "type": "string",
+              "required": true
+            },
+            "signing_algorithm": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "subject": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "common_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "country": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "distinguished_name_qualifier": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "generation_qualifier": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "given_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "initials": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "locality": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "organization": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "organizational_unit": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "pseudonym": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "state": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "surname": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "title": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "min_items": 1,
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      },
+      "revocation_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "crl_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "custom_cname": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "expiration_in_days": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "s3_bucket_name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,63 @@
 // https://www.terraform.io/docs/providers/aws/r/dms_replication_task.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "cdc_start_time": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "migration_type": {
+        "type": "string",
+        "required": true
+      },
+      "replication_instance_arn": {
+        "type": "string",
+        "required": true
+      },
+      "replication_task_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "replication_task_id": {
+        "type": "string",
+        "required": true
+      },
+      "replication_task_settings": {
+        "type": "string",
+        "optional": true
+      },
+      "source_endpoint_arn": {
+        "type": "string",
+        "required": true
+      },
+      "table_mappings": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "target_endpoint_arn": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

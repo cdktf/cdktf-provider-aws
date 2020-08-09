@@ -1,6 +1,121 @@
 // https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "api_key_selection_expression": {
+        "type": "string",
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "credentials_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "execution_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "protocol_type": {
+        "type": "string",
+        "required": true
+      },
+      "route_key": {
+        "type": "string",
+        "optional": true
+      },
+      "route_selection_expression": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "target": {
+        "type": "string",
+        "optional": true
+      },
+      "version": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "cors_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allow_credentials": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_headers": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "allow_methods": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "allow_origins": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "expose_headers": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "max_age": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

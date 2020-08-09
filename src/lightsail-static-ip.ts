@@ -1,6 +1,36 @@
 // https://www.terraform.io/docs/providers/aws/r/lightsail_static_ip.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ip_address": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "support_code": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

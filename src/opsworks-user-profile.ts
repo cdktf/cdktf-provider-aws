@@ -1,6 +1,36 @@
 // https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allow_self_management": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ssh_public_key": {
+        "type": "string",
+        "optional": true
+      },
+      "ssh_username": {
+        "type": "string",
+        "required": true
+      },
+      "user_arn": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

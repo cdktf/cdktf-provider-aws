@@ -1,6 +1,74 @@
 // https://www.terraform.io/docs/providers/aws/r/flow_log.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "eni_id": {
+        "type": "string",
+        "optional": true
+      },
+      "iam_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "log_destination": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "log_destination_type": {
+        "type": "string",
+        "optional": true
+      },
+      "log_format": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "log_group_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "max_aggregation_interval": {
+        "type": "number",
+        "optional": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "traffic_type": {
+        "type": "string",
+        "required": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

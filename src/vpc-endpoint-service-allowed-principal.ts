@@ -1,6 +1,28 @@
 // https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service_allowed_principal.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "principal_arn": {
+        "type": "string",
+        "required": true
+      },
+      "vpc_endpoint_service_id": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

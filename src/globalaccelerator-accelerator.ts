@@ -1,6 +1,85 @@
 // https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "dns_name": {
+        "type": "string",
+        "computed": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "hosted_zone_id": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ip_address_type": {
+        "type": "string",
+        "optional": true
+      },
+      "ip_sets": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "ip_addresses": [
+                "list",
+                "string"
+              ],
+              "ip_family": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "attributes": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "flow_logs_enabled": {
+              "type": "bool",
+              "optional": true
+            },
+            "flow_logs_s3_bucket": {
+              "type": "string",
+              "optional": true
+            },
+            "flow_logs_s3_prefix": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

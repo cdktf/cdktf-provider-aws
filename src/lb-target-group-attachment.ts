@@ -1,6 +1,36 @@
 // https://www.terraform.io/docs/providers/aws/r/lb_target_group_attachment.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "availability_zone": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "port": {
+        "type": "number",
+        "optional": true
+      },
+      "target_group_arn": {
+        "type": "string",
+        "required": true
+      },
+      "target_id": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

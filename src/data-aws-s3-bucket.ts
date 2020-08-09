@@ -1,6 +1,52 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_s3_bucket.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "bucket": {
+        "type": "string",
+        "required": true
+      },
+      "bucket_domain_name": {
+        "type": "string",
+        "computed": true
+      },
+      "bucket_regional_domain_name": {
+        "type": "string",
+        "computed": true
+      },
+      "hosted_zone_id": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "region": {
+        "type": "string",
+        "computed": true
+      },
+      "website_domain": {
+        "type": "string",
+        "computed": true
+      },
+      "website_endpoint": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

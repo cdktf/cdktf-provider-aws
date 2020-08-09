@@ -1,6 +1,103 @@
 // https://www.terraform.io/docs/providers/aws/r/db_cluster_snapshot.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allocated_storage": {
+        "type": "number",
+        "computed": true
+      },
+      "availability_zones": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "db_cluster_identifier": {
+        "type": "string",
+        "required": true
+      },
+      "db_cluster_snapshot_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "db_cluster_snapshot_identifier": {
+        "type": "string",
+        "required": true
+      },
+      "engine": {
+        "type": "string",
+        "computed": true
+      },
+      "engine_version": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kms_key_id": {
+        "type": "string",
+        "computed": true
+      },
+      "license_model": {
+        "type": "string",
+        "computed": true
+      },
+      "port": {
+        "type": "number",
+        "computed": true
+      },
+      "snapshot_type": {
+        "type": "string",
+        "computed": true
+      },
+      "source_db_cluster_snapshot_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "storage_encrypted": {
+        "type": "bool",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

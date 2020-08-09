@@ -1,6 +1,52 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_batch_compute_environment.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "compute_environment_name": {
+        "type": "string",
+        "required": true
+      },
+      "ecs_cluster_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "service_role": {
+        "type": "string",
+        "computed": true
+      },
+      "state": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "status_reason": {
+        "type": "string",
+        "computed": true
+      },
+      "type": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

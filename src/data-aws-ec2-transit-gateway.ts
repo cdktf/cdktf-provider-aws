@@ -1,6 +1,91 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_transit_gateway.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "amazon_side_asn": {
+        "type": "number",
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "association_default_route_table_id": {
+        "type": "string",
+        "computed": true
+      },
+      "auto_accept_shared_attachments": {
+        "type": "string",
+        "computed": true
+      },
+      "default_route_table_association": {
+        "type": "string",
+        "computed": true
+      },
+      "default_route_table_propagation": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "computed": true
+      },
+      "dns_support": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "propagation_default_route_table_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpn_ecmp_support": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

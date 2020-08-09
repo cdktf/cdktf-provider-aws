@@ -1,6 +1,32 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_tag.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key": {
+        "type": "string",
+        "required": true
+      },
+      "resource_id": {
+        "type": "string",
+        "required": true
+      },
+      "value": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

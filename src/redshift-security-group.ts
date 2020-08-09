@@ -1,6 +1,52 @@
 // https://www.terraform.io/docs/providers/aws/r/redshift_security_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "ingress": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "cidr": {
+              "type": "string",
+              "optional": true
+            },
+            "security_group_name": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "security_group_owner_id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        },
+        "min_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

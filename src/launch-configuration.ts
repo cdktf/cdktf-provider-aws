@@ -1,6 +1,190 @@
 // https://www.terraform.io/docs/providers/aws/r/launch_configuration.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "associate_public_ip_address": {
+        "type": "bool",
+        "optional": true
+      },
+      "ebs_optimized": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "enable_monitoring": {
+        "type": "bool",
+        "optional": true
+      },
+      "iam_instance_profile": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "image_id": {
+        "type": "string",
+        "required": true
+      },
+      "instance_type": {
+        "type": "string",
+        "required": true
+      },
+      "key_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "placement_tenancy": {
+        "type": "string",
+        "optional": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "spot_price": {
+        "type": "string",
+        "optional": true
+      },
+      "user_data": {
+        "type": "string",
+        "optional": true
+      },
+      "user_data_base64": {
+        "type": "string",
+        "optional": true
+      },
+      "vpc_classic_link_id": {
+        "type": "string",
+        "optional": true
+      },
+      "vpc_classic_link_security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "ebs_block_device": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "delete_on_termination": {
+              "type": "bool",
+              "optional": true
+            },
+            "device_name": {
+              "type": "string",
+              "required": true
+            },
+            "encrypted": {
+              "type": "bool",
+              "optional": true,
+              "computed": true
+            },
+            "iops": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "no_device": {
+              "type": "bool",
+              "optional": true
+            },
+            "snapshot_id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "volume_size": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "volume_type": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        }
+      },
+      "ephemeral_block_device": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "device_name": {
+              "type": "string",
+              "required": true
+            },
+            "virtual_name": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "root_block_device": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "delete_on_termination": {
+              "type": "bool",
+              "optional": true
+            },
+            "encrypted": {
+              "type": "bool",
+              "optional": true,
+              "computed": true
+            },
+            "iops": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "volume_size": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "volume_type": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

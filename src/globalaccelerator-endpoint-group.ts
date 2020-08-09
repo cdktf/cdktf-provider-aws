@@ -1,6 +1,71 @@
 // https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "endpoint_group_region": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "health_check_interval_seconds": {
+        "type": "number",
+        "optional": true
+      },
+      "health_check_path": {
+        "type": "string",
+        "optional": true
+      },
+      "health_check_port": {
+        "type": "number",
+        "optional": true
+      },
+      "health_check_protocol": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "listener_arn": {
+        "type": "string",
+        "required": true
+      },
+      "threshold_count": {
+        "type": "number",
+        "optional": true
+      },
+      "traffic_dial_percentage": {
+        "type": "number",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "endpoint_configuration": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "endpoint_id": {
+              "type": "string",
+              "optional": true
+            },
+            "weight": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 10
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

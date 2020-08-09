@@ -1,6 +1,69 @@
 // https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "branch_filter": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "payload_url": {
+        "type": "string",
+        "computed": true
+      },
+      "project_name": {
+        "type": "string",
+        "required": true
+      },
+      "secret": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      },
+      "url": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter_group": {
+        "nesting_mode": "set",
+        "block": {
+          "block_types": {
+            "filter": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "exclude_matched_pattern": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "pattern": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

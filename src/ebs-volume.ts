@@ -1,6 +1,73 @@
 // https://www.terraform.io/docs/providers/aws/r/ebs_volume.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "required": true
+      },
+      "encrypted": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "iops": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "kms_key_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "multi_attach_enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "outpost_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "size": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "snapshot_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

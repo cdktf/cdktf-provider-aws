@@ -1,6 +1,31 @@
 // https://www.terraform.io/docs/providers/aws/r/route53_delegation_set.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_servers": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "reference_name": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,60 @@
 // https://www.terraform.io/docs/providers/aws/r/backup_selection.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "iam_role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "plan_id": {
+        "type": "string",
+        "required": true
+      },
+      "resources": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "selection_tag": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "required": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            },
+            "value": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

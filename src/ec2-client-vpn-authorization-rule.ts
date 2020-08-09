@@ -1,6 +1,40 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_authorization_rule.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "access_group_id": {
+        "type": "string",
+        "optional": true
+      },
+      "authorize_all_groups": {
+        "type": "bool",
+        "optional": true
+      },
+      "client_vpn_endpoint_id": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "target_network_cidr": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

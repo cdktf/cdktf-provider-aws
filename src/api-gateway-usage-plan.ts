@@ -1,6 +1,96 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "product_code": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "api_stages": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "api_id": {
+              "type": "string",
+              "required": true
+            },
+            "stage": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "quota_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "limit": {
+              "type": "number",
+              "required": true
+            },
+            "offset": {
+              "type": "number",
+              "optional": true
+            },
+            "period": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "throttle_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "burst_limit": {
+              "type": "number",
+              "optional": true
+            },
+            "rate_limit": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

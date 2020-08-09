@@ -1,6 +1,49 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_policy_attachment.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "policy_arn": {
+        "type": "string",
+        "required": true
+      },
+      "roles": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "users": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,126 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_eks_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "certificate_authority": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "data": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "created_at": {
+        "type": "string",
+        "computed": true
+      },
+      "enabled_cluster_log_types": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "identity": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "oidc": [
+                "list",
+                [
+                  "object",
+                  {
+                    "issuer": "string"
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "platform_version": {
+        "type": "string",
+        "computed": true
+      },
+      "role_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "version": {
+        "type": "string",
+        "computed": true
+      },
+      "vpc_config": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "cluster_security_group_id": "string",
+              "endpoint_private_access": "bool",
+              "endpoint_public_access": "bool",
+              "public_access_cidrs": [
+                "set",
+                "string"
+              ],
+              "security_group_ids": [
+                "set",
+                "string"
+              ],
+              "subnet_ids": [
+                "set",
+                "string"
+              ],
+              "vpc_id": "string"
+            }
+          ]
+        ],
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

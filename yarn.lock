@@ -1141,14 +1141,14 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cdktf-cli@^0.0.13-pre.47d844904cda52c6ffe423a539ddc2324bcd1fc5:
-  version "0.0.13-pre.47d844904cda52c6ffe423a539ddc2324bcd1fc5"
-  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.0.13-pre.47d844904cda52c6ffe423a539ddc2324bcd1fc5.tgz#51fd0080b05db263c9fbbb882ae8078410626e37"
-  integrity sha512-8OIH/bgXXM9zSaU9V/e5+UEDKBSNfjwZEMtpzP1ksD29Kw/Eyb+MK2OBCYFreczN2Gsu4nEbD+AECYAXjU+Riw==
+cdktf-cli@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.0.13.tgz#64067d0bd03c23ca242725eb99bf6dd344dbc12b"
+  integrity sha512-fBNmxhyTFMtMGFglM0MZHNTr9oIZ0f4wi/UM3z/+QLU8q5+x27LMsmFeG1jtGLCSPkC50OVFlSFuhqfprVne/w==
   dependencies:
     "@types/node" "^14.0.26"
     "@types/readline-sync" "^1.4.3"
-    cdktf "0.0.13-pre.47d844904cda52c6ffe423a539ddc2324bcd1fc5"
+    cdktf "0.0.13"
     chalk "^4.1.0"
     codemaker "^0.22.0"
     constructs "^3.0.0"
@@ -1172,10 +1172,10 @@ cdktf-provider@^0.0.12:
   resolved "https://registry.yarnpkg.com/cdktf-provider/-/cdktf-provider-0.0.12.tgz#0ada63ee1ea52865b029052e5f8afa05bdfa3829"
   integrity sha512-E5s6JuUr1zuurO6z1QoNJ7gVeq1QPIBYNKDn9P0dp2EJFDRPoBOja+mBQcI3/KVEeP95KRkCzdbYQDckdPy0vA==
 
-cdktf@0.0.13-pre.47d844904cda52c6ffe423a539ddc2324bcd1fc5, cdktf@^0.0.13-pre.47d844904cda52c6ffe423a539ddc2324bcd1fc5:
-  version "0.0.13-pre.47d844904cda52c6ffe423a539ddc2324bcd1fc5"
-  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.0.13-pre.47d844904cda52c6ffe423a539ddc2324bcd1fc5.tgz#687c604e35f9968c14f0b9cca5900993e23f27a5"
-  integrity sha512-VY2u7TuVq4hA/yKxCtuShDQgjI9vKddAoovMSHcrA3hp+bac5Ep2iQ+I6LxaBza8z7+uU7DJwewivBnOPlsbmQ==
+cdktf@0.0.13, cdktf@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.0.13.tgz#a0cfda5172a4f7d64cc170baa8cf1b12181a018b"
+  integrity sha512-ROg4kVNxJG7hiZkFeUz+6nCov8aDYjfb2qcItx/+0hqUOtfiOMPn9QyPrJIUPJKxjPFp5ywMKtY382mtwzxb8A==
   dependencies:
     json-stable-stringify "^1.0.1"
 

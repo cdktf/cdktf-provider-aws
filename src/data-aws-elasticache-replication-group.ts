@@ -1,6 +1,71 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_elasticache_replication_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "auth_token_enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "automatic_failover_enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "configuration_endpoint_address": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "member_clusters": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "node_type": {
+        "type": "string",
+        "computed": true
+      },
+      "number_cache_clusters": {
+        "type": "number",
+        "computed": true
+      },
+      "port": {
+        "type": "number",
+        "computed": true
+      },
+      "primary_endpoint_address": {
+        "type": "string",
+        "computed": true
+      },
+      "replication_group_description": {
+        "type": "string",
+        "computed": true
+      },
+      "replication_group_id": {
+        "type": "string",
+        "required": true
+      },
+      "snapshot_retention_limit": {
+        "type": "number",
+        "computed": true
+      },
+      "snapshot_window": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

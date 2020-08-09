@@ -1,6 +1,150 @@
 // https://www.terraform.io/docs/providers/aws/r/lb_target_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "arn_suffix": {
+        "type": "string",
+        "computed": true
+      },
+      "deregistration_delay": {
+        "type": "number",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "lambda_multi_value_headers_enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "load_balancing_algorithm_type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "port": {
+        "type": "number",
+        "optional": true
+      },
+      "protocol": {
+        "type": "string",
+        "optional": true
+      },
+      "proxy_protocol_v2": {
+        "type": "bool",
+        "optional": true
+      },
+      "slow_start": {
+        "type": "number",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "target_type": {
+        "type": "string",
+        "optional": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "health_check": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "enabled": {
+              "type": "bool",
+              "optional": true
+            },
+            "healthy_threshold": {
+              "type": "number",
+              "optional": true
+            },
+            "interval": {
+              "type": "number",
+              "optional": true
+            },
+            "matcher": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "path": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "port": {
+              "type": "string",
+              "optional": true
+            },
+            "protocol": {
+              "type": "string",
+              "optional": true
+            },
+            "timeout": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "unhealthy_threshold": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "stickiness": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "cookie_duration": {
+              "type": "number",
+              "optional": true
+            },
+            "enabled": {
+              "type": "bool",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

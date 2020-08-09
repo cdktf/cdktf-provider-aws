@@ -1,6 +1,75 @@
 // https://www.terraform.io/docs/providers/aws/r/security_group_rule.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 2,
+  "block": {
+    "attributes": {
+      "cidr_blocks": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "from_port": {
+        "type": "number",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ipv6_cidr_blocks": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "prefix_list_ids": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "protocol": {
+        "type": "string",
+        "required": true
+      },
+      "security_group_id": {
+        "type": "string",
+        "required": true
+      },
+      "self": {
+        "type": "bool",
+        "optional": true
+      },
+      "source_security_group_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "to_port": {
+        "type": "number",
+        "required": true
+      },
+      "type": {
+        "type": "string",
+        "description": "Type of rule, ingress (inbound) or egress (outbound).",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

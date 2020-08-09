@@ -1,6 +1,67 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_account_password_policy.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allow_users_to_change_password": {
+        "type": "bool",
+        "optional": true
+      },
+      "expire_passwords": {
+        "type": "bool",
+        "computed": true
+      },
+      "hard_expiry": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "max_password_age": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "minimum_password_length": {
+        "type": "number",
+        "optional": true
+      },
+      "password_reuse_prevention": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "require_lowercase_characters": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "require_numbers": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "require_symbols": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "require_uppercase_characters": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,64 @@
 // https://www.terraform.io/docs/providers/aws/r/route_table.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "propagating_vgws": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "route": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "cidr_block": "string",
+              "egress_only_gateway_id": "string",
+              "gateway_id": "string",
+              "instance_id": "string",
+              "ipv6_cidr_block": "string",
+              "nat_gateway_id": "string",
+              "network_interface_id": "string",
+              "transit_gateway_id": "string",
+              "vpc_peering_connection_id": "string"
+            }
+          ]
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,881 @@
 // https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "destination": {
+        "type": "string",
+        "required": true
+      },
+      "destination_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "version_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "elasticsearch_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "buffering_interval": {
+              "type": "number",
+              "optional": true
+            },
+            "buffering_size": {
+              "type": "number",
+              "optional": true
+            },
+            "domain_arn": {
+              "type": "string",
+              "required": true
+            },
+            "index_name": {
+              "type": "string",
+              "required": true
+            },
+            "index_rotation_period": {
+              "type": "string",
+              "optional": true
+            },
+            "retry_duration": {
+              "type": "number",
+              "optional": true
+            },
+            "role_arn": {
+              "type": "string",
+              "required": true
+            },
+            "s3_backup_mode": {
+              "type": "string",
+              "optional": true
+            },
+            "type_name": {
+              "type": "string",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "cloudwatch_logging_options": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "log_group_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "log_stream_name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "processing_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "processors": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "type": {
+                          "type": "string",
+                          "required": true
+                        }
+                      },
+                      "block_types": {
+                        "parameters": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "attributes": {
+                              "parameter_name": {
+                                "type": "string",
+                                "required": true
+                              },
+                              "parameter_value": {
+                                "type": "string",
+                                "required": true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "extended_s3_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket_arn": {
+              "type": "string",
+              "required": true
+            },
+            "buffer_interval": {
+              "type": "number",
+              "optional": true
+            },
+            "buffer_size": {
+              "type": "number",
+              "optional": true
+            },
+            "compression_format": {
+              "type": "string",
+              "optional": true
+            },
+            "error_output_prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "kms_key_arn": {
+              "type": "string",
+              "optional": true
+            },
+            "prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "role_arn": {
+              "type": "string",
+              "required": true
+            },
+            "s3_backup_mode": {
+              "type": "string",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "cloudwatch_logging_options": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "log_group_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "log_stream_name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "data_format_conversion_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "input_format_configuration": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "block_types": {
+                        "deserializer": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "block_types": {
+                              "hive_json_ser_de": {
+                                "nesting_mode": "list",
+                                "block": {
+                                  "attributes": {
+                                    "timestamp_formats": {
+                                      "type": [
+                                        "list",
+                                        "string"
+                                      ],
+                                      "optional": true
+                                    }
+                                  }
+                                },
+                                "max_items": 1
+                              },
+                              "open_x_json_ser_de": {
+                                "nesting_mode": "list",
+                                "block": {
+                                  "attributes": {
+                                    "case_insensitive": {
+                                      "type": "bool",
+                                      "optional": true
+                                    },
+                                    "column_to_json_key_mappings": {
+                                      "type": [
+                                        "map",
+                                        "string"
+                                      ],
+                                      "optional": true
+                                    },
+                                    "convert_dots_in_json_keys_to_underscores": {
+                                      "type": "bool",
+                                      "optional": true
+                                    }
+                                  }
+                                },
+                                "max_items": 1
+                              }
+                            }
+                          },
+                          "min_items": 1,
+                          "max_items": 1
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  },
+                  "output_format_configuration": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "block_types": {
+                        "serializer": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "block_types": {
+                              "orc_ser_de": {
+                                "nesting_mode": "list",
+                                "block": {
+                                  "attributes": {
+                                    "block_size_bytes": {
+                                      "type": "number",
+                                      "optional": true
+                                    },
+                                    "bloom_filter_columns": {
+                                      "type": [
+                                        "list",
+                                        "string"
+                                      ],
+                                      "optional": true
+                                    },
+                                    "bloom_filter_false_positive_probability": {
+                                      "type": "number",
+                                      "optional": true
+                                    },
+                                    "compression": {
+                                      "type": "string",
+                                      "optional": true
+                                    },
+                                    "dictionary_key_threshold": {
+                                      "type": "number",
+                                      "optional": true
+                                    },
+                                    "enable_padding": {
+                                      "type": "bool",
+                                      "optional": true
+                                    },
+                                    "format_version": {
+                                      "type": "string",
+                                      "optional": true
+                                    },
+                                    "padding_tolerance": {
+                                      "type": "number",
+                                      "optional": true
+                                    },
+                                    "row_index_stride": {
+                                      "type": "number",
+                                      "optional": true
+                                    },
+                                    "stripe_size_bytes": {
+                                      "type": "number",
+                                      "optional": true
+                                    }
+                                  }
+                                },
+                                "max_items": 1
+                              },
+                              "parquet_ser_de": {
+                                "nesting_mode": "list",
+                                "block": {
+                                  "attributes": {
+                                    "block_size_bytes": {
+                                      "type": "number",
+                                      "optional": true
+                                    },
+                                    "compression": {
+                                      "type": "string",
+                                      "optional": true
+                                    },
+                                    "enable_dictionary_compression": {
+                                      "type": "bool",
+                                      "optional": true
+                                    },
+                                    "max_padding_bytes": {
+                                      "type": "number",
+                                      "optional": true
+                                    },
+                                    "page_size_bytes": {
+                                      "type": "number",
+                                      "optional": true
+                                    },
+                                    "writer_version": {
+                                      "type": "string",
+                                      "optional": true
+                                    }
+                                  }
+                                },
+                                "max_items": 1
+                              }
+                            }
+                          },
+                          "min_items": 1,
+                          "max_items": 1
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  },
+                  "schema_configuration": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "catalog_id": {
+                          "type": "string",
+                          "optional": true,
+                          "computed": true
+                        },
+                        "database_name": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "region": {
+                          "type": "string",
+                          "optional": true,
+                          "computed": true
+                        },
+                        "role_arn": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "table_name": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "version_id": {
+                          "type": "string",
+                          "optional": true
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "processing_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "processors": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "type": {
+                          "type": "string",
+                          "required": true
+                        }
+                      },
+                      "block_types": {
+                        "parameters": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "attributes": {
+                              "parameter_name": {
+                                "type": "string",
+                                "required": true
+                              },
+                              "parameter_value": {
+                                "type": "string",
+                                "required": true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "s3_backup_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "bucket_arn": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "buffer_interval": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "buffer_size": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "compression_format": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "kms_key_arn": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "prefix": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "role_arn": {
+                    "type": "string",
+                    "required": true
+                  }
+                },
+                "block_types": {
+                  "cloudwatch_logging_options": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "enabled": {
+                          "type": "bool",
+                          "optional": true
+                        },
+                        "log_group_name": {
+                          "type": "string",
+                          "optional": true
+                        },
+                        "log_stream_name": {
+                          "type": "string",
+                          "optional": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "kinesis_source_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "kinesis_stream_arn": {
+              "type": "string",
+              "required": true
+            },
+            "role_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "redshift_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "cluster_jdbcurl": {
+              "type": "string",
+              "required": true
+            },
+            "copy_options": {
+              "type": "string",
+              "optional": true
+            },
+            "data_table_columns": {
+              "type": "string",
+              "optional": true
+            },
+            "data_table_name": {
+              "type": "string",
+              "required": true
+            },
+            "password": {
+              "type": "string",
+              "required": true,
+              "sensitive": true
+            },
+            "retry_duration": {
+              "type": "number",
+              "optional": true
+            },
+            "role_arn": {
+              "type": "string",
+              "required": true
+            },
+            "s3_backup_mode": {
+              "type": "string",
+              "optional": true
+            },
+            "username": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "cloudwatch_logging_options": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "log_group_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "log_stream_name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "processing_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "processors": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "type": {
+                          "type": "string",
+                          "required": true
+                        }
+                      },
+                      "block_types": {
+                        "parameters": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "attributes": {
+                              "parameter_name": {
+                                "type": "string",
+                                "required": true
+                              },
+                              "parameter_value": {
+                                "type": "string",
+                                "required": true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "s3_backup_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "bucket_arn": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "buffer_interval": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "buffer_size": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "compression_format": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "kms_key_arn": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "prefix": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "role_arn": {
+                    "type": "string",
+                    "required": true
+                  }
+                },
+                "block_types": {
+                  "cloudwatch_logging_options": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "enabled": {
+                          "type": "bool",
+                          "optional": true
+                        },
+                        "log_group_name": {
+                          "type": "string",
+                          "optional": true
+                        },
+                        "log_stream_name": {
+                          "type": "string",
+                          "optional": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "s3_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket_arn": {
+              "type": "string",
+              "required": true
+            },
+            "buffer_interval": {
+              "type": "number",
+              "optional": true
+            },
+            "buffer_size": {
+              "type": "number",
+              "optional": true
+            },
+            "compression_format": {
+              "type": "string",
+              "optional": true
+            },
+            "kms_key_arn": {
+              "type": "string",
+              "optional": true
+            },
+            "prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "role_arn": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "cloudwatch_logging_options": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "log_group_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "log_stream_name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "server_side_encryption": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "enabled": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "splunk_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "hec_acknowledgment_timeout": {
+              "type": "number",
+              "optional": true
+            },
+            "hec_endpoint": {
+              "type": "string",
+              "required": true
+            },
+            "hec_endpoint_type": {
+              "type": "string",
+              "optional": true
+            },
+            "hec_token": {
+              "type": "string",
+              "required": true
+            },
+            "retry_duration": {
+              "type": "number",
+              "optional": true
+            },
+            "s3_backup_mode": {
+              "type": "string",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "cloudwatch_logging_options": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "log_group_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "log_stream_name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "processing_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "enabled": {
+                    "type": "bool",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "processors": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "type": {
+                          "type": "string",
+                          "required": true
+                        }
+                      },
+                      "block_types": {
+                        "parameters": {
+                          "nesting_mode": "list",
+                          "block": {
+                            "attributes": {
+                              "parameter_name": {
+                                "type": "string",
+                                "required": true
+                              },
+                              "parameter_value": {
+                                "type": "string",
+                                "required": true
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

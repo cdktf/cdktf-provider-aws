@@ -1,6 +1,62 @@
 // https://www.terraform.io/docs/providers/aws/r/cur_report_definition.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "additional_artifacts": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "additional_schema_elements": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "required": true
+      },
+      "compression": {
+        "type": "string",
+        "required": true
+      },
+      "format": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "report_name": {
+        "type": "string",
+        "required": true
+      },
+      "s3_bucket": {
+        "type": "string",
+        "required": true
+      },
+      "s3_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "s3_region": {
+        "type": "string",
+        "required": true
+      },
+      "time_unit": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

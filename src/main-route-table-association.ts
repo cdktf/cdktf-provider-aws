@@ -1,6 +1,32 @@
 // https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "original_route_table_id": {
+        "type": "string",
+        "computed": true
+      },
+      "route_table_id": {
+        "type": "string",
+        "required": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

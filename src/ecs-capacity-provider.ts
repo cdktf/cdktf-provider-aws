@@ -1,6 +1,85 @@
 // https://www.terraform.io/docs/providers/aws/r/ecs_capacity_provider.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "auto_scaling_group_provider": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "auto_scaling_group_arn": {
+              "type": "string",
+              "required": true
+            },
+            "managed_termination_protection": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          },
+          "block_types": {
+            "managed_scaling": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "maximum_scaling_step_size": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "minimum_scaling_step_size": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "status": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "target_capacity": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

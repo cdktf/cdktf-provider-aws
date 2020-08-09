@@ -1,6 +1,100 @@
 // https://www.terraform.io/docs/providers/aws/r/worklink_fleet.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "audit_stream_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "company_code": {
+        "type": "string",
+        "computed": true
+      },
+      "created_time": {
+        "type": "string",
+        "computed": true
+      },
+      "device_ca_certificate": {
+        "type": "string",
+        "optional": true
+      },
+      "display_name": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "last_updated_time": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "optimize_for_end_user_location": {
+        "type": "bool",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "identity_provider": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "saml_metadata": {
+              "type": "string",
+              "required": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "network": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "security_group_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "subnet_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "vpc_id": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

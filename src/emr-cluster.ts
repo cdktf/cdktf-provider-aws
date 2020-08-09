@@ -1,6 +1,428 @@
 // https://www.terraform.io/docs/providers/aws/r/emr_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "additional_info": {
+        "type": "string",
+        "optional": true
+      },
+      "applications": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "autoscaling_role": {
+        "type": "string",
+        "optional": true
+      },
+      "cluster_state": {
+        "type": "string",
+        "computed": true
+      },
+      "configurations": {
+        "type": "string",
+        "optional": true
+      },
+      "configurations_json": {
+        "type": "string",
+        "optional": true
+      },
+      "core_instance_count": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "core_instance_type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "custom_ami_id": {
+        "type": "string",
+        "optional": true
+      },
+      "ebs_root_volume_size": {
+        "type": "number",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "keep_job_flow_alive_when_no_steps": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "log_uri": {
+        "type": "string",
+        "optional": true
+      },
+      "master_instance_type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "master_public_dns": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "release_label": {
+        "type": "string",
+        "required": true
+      },
+      "scale_down_behavior": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "security_configuration": {
+        "type": "string",
+        "optional": true
+      },
+      "service_role": {
+        "type": "string",
+        "required": true
+      },
+      "step": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "action_on_failure": "string",
+              "hadoop_jar_step": [
+                "list",
+                [
+                  "object",
+                  {
+                    "args": [
+                      "list",
+                      "string"
+                    ],
+                    "jar": "string",
+                    "main_class": "string",
+                    "properties": [
+                      "map",
+                      "string"
+                    ]
+                  }
+                ]
+              ],
+              "name": "string"
+            }
+          ]
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "step_concurrency_level": {
+        "type": "number",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "termination_protection": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "visible_to_all_users": {
+        "type": "bool",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "bootstrap_action": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "args": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "path": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "core_instance_group": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "autoscaling_policy": {
+              "type": "string",
+              "optional": true
+            },
+            "bid_price": {
+              "type": "string",
+              "optional": true
+            },
+            "id": {
+              "type": "string",
+              "computed": true
+            },
+            "instance_count": {
+              "type": "number",
+              "optional": true
+            },
+            "instance_type": {
+              "type": "string",
+              "required": true
+            },
+            "name": {
+              "type": "string",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "ebs_config": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "iops": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "size": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "volumes_per_instance": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "ec2_attributes": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "additional_master_security_groups": {
+              "type": "string",
+              "optional": true
+            },
+            "additional_slave_security_groups": {
+              "type": "string",
+              "optional": true
+            },
+            "emr_managed_master_security_group": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "emr_managed_slave_security_group": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "instance_profile": {
+              "type": "string",
+              "required": true
+            },
+            "key_name": {
+              "type": "string",
+              "optional": true
+            },
+            "service_access_security_group": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "subnet_id": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "instance_group": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "autoscaling_policy": {
+              "type": "string",
+              "optional": true
+            },
+            "bid_price": {
+              "type": "string",
+              "optional": true
+            },
+            "id": {
+              "type": "string",
+              "computed": true
+            },
+            "instance_count": {
+              "type": "number",
+              "optional": true
+            },
+            "instance_role": {
+              "type": "string",
+              "required": true
+            },
+            "instance_type": {
+              "type": "string",
+              "required": true
+            },
+            "name": {
+              "type": "string",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "ebs_config": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "iops": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "size": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "volumes_per_instance": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "kerberos_attributes": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "ad_domain_join_password": {
+              "type": "string",
+              "optional": true,
+              "sensitive": true
+            },
+            "ad_domain_join_user": {
+              "type": "string",
+              "optional": true
+            },
+            "cross_realm_trust_principal_password": {
+              "type": "string",
+              "optional": true,
+              "sensitive": true
+            },
+            "kdc_admin_password": {
+              "type": "string",
+              "required": true,
+              "sensitive": true
+            },
+            "realm": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "master_instance_group": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bid_price": {
+              "type": "string",
+              "optional": true
+            },
+            "id": {
+              "type": "string",
+              "computed": true
+            },
+            "instance_count": {
+              "type": "number",
+              "optional": true
+            },
+            "instance_type": {
+              "type": "string",
+              "required": true
+            },
+            "name": {
+              "type": "string",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "ebs_config": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "iops": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "size": {
+                    "type": "number",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "volumes_per_instance": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

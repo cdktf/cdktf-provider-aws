@@ -1,6 +1,162 @@
 // https://www.terraform.io/docs/providers/aws/r/batch_compute_environment.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "compute_environment_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "compute_environment_name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "ecc_cluster_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "ecs_cluster_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "service_role": {
+        "type": "string",
+        "required": true
+      },
+      "state": {
+        "type": "string",
+        "optional": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "status_reason": {
+        "type": "string",
+        "computed": true
+      },
+      "type": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "compute_resources": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allocation_strategy": {
+              "type": "string",
+              "optional": true
+            },
+            "bid_percentage": {
+              "type": "number",
+              "optional": true
+            },
+            "desired_vcpus": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "ec2_key_pair": {
+              "type": "string",
+              "optional": true
+            },
+            "image_id": {
+              "type": "string",
+              "optional": true
+            },
+            "instance_role": {
+              "type": "string",
+              "required": true
+            },
+            "instance_type": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "max_vcpus": {
+              "type": "number",
+              "required": true
+            },
+            "min_vcpus": {
+              "type": "number",
+              "required": true
+            },
+            "security_group_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "spot_iam_fleet_role": {
+              "type": "string",
+              "optional": true
+            },
+            "subnets": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "tags": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "launch_template": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "launch_template_id": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "launch_template_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "version": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

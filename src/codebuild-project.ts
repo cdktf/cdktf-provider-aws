@@ -1,6 +1,456 @@
 // https://www.terraform.io/docs/providers/aws/r/codebuild_project.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "badge_enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "badge_url": {
+        "type": "string",
+        "computed": true
+      },
+      "build_timeout": {
+        "type": "number",
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "encryption_key": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "queued_timeout": {
+        "type": "number",
+        "optional": true
+      },
+      "service_role": {
+        "type": "string",
+        "required": true
+      },
+      "source_version": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "artifacts": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "artifact_identifier": {
+              "type": "string",
+              "optional": true
+            },
+            "encryption_disabled": {
+              "type": "bool",
+              "optional": true
+            },
+            "location": {
+              "type": "string",
+              "optional": true
+            },
+            "name": {
+              "type": "string",
+              "optional": true
+            },
+            "namespace_type": {
+              "type": "string",
+              "optional": true
+            },
+            "override_artifact_name": {
+              "type": "bool",
+              "optional": true
+            },
+            "packaging": {
+              "type": "string",
+              "optional": true
+            },
+            "path": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      },
+      "cache": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "location": {
+              "type": "string",
+              "optional": true
+            },
+            "modes": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "environment": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "certificate": {
+              "type": "string",
+              "optional": true
+            },
+            "compute_type": {
+              "type": "string",
+              "required": true
+            },
+            "image": {
+              "type": "string",
+              "required": true
+            },
+            "image_pull_credentials_type": {
+              "type": "string",
+              "optional": true
+            },
+            "privileged_mode": {
+              "type": "bool",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "environment_variable": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "name": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              }
+            },
+            "registry_credential": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "credential": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "credential_provider": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      },
+      "logs_config": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "cloudwatch_logs": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "group_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "status": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "stream_name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "s3_logs": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "encryption_disabled": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "location": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "status": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "secondary_artifacts": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "artifact_identifier": {
+              "type": "string",
+              "required": true
+            },
+            "encryption_disabled": {
+              "type": "bool",
+              "optional": true
+            },
+            "location": {
+              "type": "string",
+              "optional": true
+            },
+            "name": {
+              "type": "string",
+              "optional": true
+            },
+            "namespace_type": {
+              "type": "string",
+              "optional": true
+            },
+            "override_artifact_name": {
+              "type": "bool",
+              "optional": true
+            },
+            "packaging": {
+              "type": "string",
+              "optional": true
+            },
+            "path": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "secondary_sources": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "buildspec": {
+              "type": "string",
+              "optional": true
+            },
+            "git_clone_depth": {
+              "type": "number",
+              "optional": true
+            },
+            "insecure_ssl": {
+              "type": "bool",
+              "optional": true
+            },
+            "location": {
+              "type": "string",
+              "optional": true
+            },
+            "report_build_status": {
+              "type": "bool",
+              "optional": true
+            },
+            "source_identifier": {
+              "type": "string",
+              "required": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "auth": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "resource": {
+                    "type": "string",
+                    "optional": true,
+                    "sensitive": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "git_submodules_config": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "fetch_submodules": {
+                    "type": "bool",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        }
+      },
+      "source": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "buildspec": {
+              "type": "string",
+              "optional": true
+            },
+            "git_clone_depth": {
+              "type": "number",
+              "optional": true
+            },
+            "insecure_ssl": {
+              "type": "bool",
+              "optional": true
+            },
+            "location": {
+              "type": "string",
+              "optional": true
+            },
+            "report_build_status": {
+              "type": "bool",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "auth": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "resource": {
+                    "type": "string",
+                    "optional": true,
+                    "sensitive": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "git_submodules_config": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "fetch_submodules": {
+                    "type": "bool",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      },
+      "vpc_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "security_group_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "subnets": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "vpc_id": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

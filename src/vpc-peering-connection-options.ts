@@ -1,6 +1,66 @@
 // https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "vpc_peering_connection_id": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "accepter": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allow_classic_link_to_remote_vpc": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_remote_vpc_dns_resolution": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_vpc_to_remote_classic_link": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "requester": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allow_classic_link_to_remote_vpc": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_remote_vpc_dns_resolution": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_vpc_to_remote_classic_link": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

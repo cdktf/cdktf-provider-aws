@@ -1,6 +1,45 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_user_ssh_key.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "encoding": {
+        "type": "string",
+        "required": true
+      },
+      "fingerprint": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "public_key": {
+        "type": "string",
+        "required": true
+      },
+      "ssh_public_key_id": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "username": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,56 @@
 // https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "confirmation_timeout_in_minutes": {
+        "type": "number",
+        "optional": true
+      },
+      "delivery_policy": {
+        "type": "string",
+        "optional": true
+      },
+      "endpoint": {
+        "type": "string",
+        "required": true
+      },
+      "endpoint_auto_confirms": {
+        "type": "bool",
+        "optional": true
+      },
+      "filter_policy": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "protocol": {
+        "type": "string",
+        "required": true
+      },
+      "raw_message_delivery": {
+        "type": "bool",
+        "optional": true
+      },
+      "topic_arn": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,40 @@
 // https://www.terraform.io/docs/providers/aws/r/kms_ciphertext.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "ciphertext_blob": {
+        "type": "string",
+        "computed": true
+      },
+      "context": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key_id": {
+        "type": "string",
+        "required": true
+      },
+      "plaintext": {
+        "type": "string",
+        "required": true,
+        "sensitive": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

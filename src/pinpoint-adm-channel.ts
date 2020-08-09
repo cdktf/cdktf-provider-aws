@@ -1,6 +1,38 @@
 // https://www.terraform.io/docs/providers/aws/r/pinpoint_adm_channel.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "application_id": {
+        "type": "string",
+        "required": true
+      },
+      "client_id": {
+        "type": "string",
+        "required": true,
+        "sensitive": true
+      },
+      "client_secret": {
+        "type": "string",
+        "required": true,
+        "sensitive": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

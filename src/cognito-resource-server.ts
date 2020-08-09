@@ -1,6 +1,57 @@
 // https://www.terraform.io/docs/providers/aws/r/cognito_resource_server.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "identifier": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "scope_identifiers": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "user_pool_id": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "scope": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "scope_description": {
+              "type": "string",
+              "required": true
+            },
+            "scope_name": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 100
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

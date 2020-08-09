@@ -1,6 +1,60 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_cloudhsm_v2_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "cluster_certificates": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "aws_hardware_certificate": "string",
+              "cluster_certificate": "string",
+              "cluster_csr": "string",
+              "hsm_certificate": "string",
+              "manufacturer_hardware_certificate": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "cluster_id": {
+        "type": "string",
+        "required": true
+      },
+      "cluster_state": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "security_group_id": {
+        "type": "string",
+        "computed": true
+      },
+      "subnet_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

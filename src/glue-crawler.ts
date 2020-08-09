@@ -1,6 +1,157 @@
 // https://www.terraform.io/docs/providers/aws/r/glue_crawler.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "classifiers": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "configuration": {
+        "type": "string",
+        "optional": true
+      },
+      "database_name": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "role": {
+        "type": "string",
+        "required": true
+      },
+      "schedule": {
+        "type": "string",
+        "optional": true
+      },
+      "security_configuration": {
+        "type": "string",
+        "optional": true
+      },
+      "table_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "catalog_target": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "database_name": {
+              "type": "string",
+              "required": true
+            },
+            "tables": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      },
+      "dynamodb_target": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "path": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "jdbc_target": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "connection_name": {
+              "type": "string",
+              "required": true
+            },
+            "exclusions": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "path": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "s3_target": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "exclusions": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "path": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "schema_change_policy": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "delete_behavior": {
+              "type": "string",
+              "optional": true
+            },
+            "update_behavior": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

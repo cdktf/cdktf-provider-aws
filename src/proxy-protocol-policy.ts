@@ -1,6 +1,31 @@
 // https://www.terraform.io/docs/providers/aws/r/proxy_protocol_policy.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_ports": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "required": true
+      },
+      "load_balancer": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

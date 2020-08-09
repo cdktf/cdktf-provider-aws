@@ -1,6 +1,63 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_transit_gateway_peering_attachment.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true
+      },
+      "peer_account_id": {
+        "type": "string",
+        "computed": true
+      },
+      "peer_region": {
+        "type": "string",
+        "computed": true
+      },
+      "peer_transit_gateway_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "transit_gateway_id": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

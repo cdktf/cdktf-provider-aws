@@ -1,6 +1,71 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_capacity_reservation.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "required": true
+      },
+      "ebs_optimized": {
+        "type": "bool",
+        "optional": true
+      },
+      "end_date": {
+        "type": "string",
+        "optional": true
+      },
+      "end_date_type": {
+        "type": "string",
+        "optional": true
+      },
+      "ephemeral_storage": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_count": {
+        "type": "number",
+        "required": true
+      },
+      "instance_match_criteria": {
+        "type": "string",
+        "optional": true
+      },
+      "instance_platform": {
+        "type": "string",
+        "required": true
+      },
+      "instance_type": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "tenancy": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

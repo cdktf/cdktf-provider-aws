@@ -1,6 +1,183 @@
 // https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "authentication_type": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "schema": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "uris": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "computed": true
+      },
+      "xray_enabled": {
+        "type": "bool",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "additional_authentication_provider": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "authentication_type": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "openid_connect_config": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "auth_ttl": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "client_id": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "iat_ttl": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "issuer": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "user_pool_config": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "app_id_client_regex": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "aws_region": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "user_pool_id": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        }
+      },
+      "log_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "cloudwatch_logs_role_arn": {
+              "type": "string",
+              "required": true
+            },
+            "exclude_verbose_content": {
+              "type": "bool",
+              "optional": true
+            },
+            "field_log_level": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "openid_connect_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "auth_ttl": {
+              "type": "number",
+              "optional": true
+            },
+            "client_id": {
+              "type": "string",
+              "optional": true
+            },
+            "iat_ttl": {
+              "type": "number",
+              "optional": true
+            },
+            "issuer": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "user_pool_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "app_id_client_regex": {
+              "type": "string",
+              "optional": true
+            },
+            "aws_region": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "default_action": {
+              "type": "string",
+              "required": true
+            },
+            "user_pool_id": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

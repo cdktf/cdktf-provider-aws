@@ -1,6 +1,61 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_acm_certificate.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "domain": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key_types": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "most_recent": {
+        "type": "bool",
+        "optional": true
+      },
+      "statuses": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "types": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

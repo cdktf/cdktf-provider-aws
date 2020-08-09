@@ -1,6 +1,69 @@
 // https://www.terraform.io/docs/providers/aws/r/media_convert_queue.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "pricing_plan": {
+        "type": "string",
+        "optional": true
+      },
+      "status": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "reservation_plan_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "commitment": {
+              "type": "string",
+              "required": true
+            },
+            "renewal_type": {
+              "type": "string",
+              "required": true
+            },
+            "reserved_slots": {
+              "type": "number",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

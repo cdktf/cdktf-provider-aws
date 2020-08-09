@@ -1,6 +1,142 @@
 // https://www.terraform.io/docs/providers/aws/r/docdb_cluster_instance.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "apply_immediately": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "auto_minor_version_upgrade": {
+        "type": "bool",
+        "optional": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ca_cert_identifier": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cluster_identifier": {
+        "type": "string",
+        "required": true
+      },
+      "db_subnet_group_name": {
+        "type": "string",
+        "computed": true
+      },
+      "dbi_resource_id": {
+        "type": "string",
+        "computed": true
+      },
+      "endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "engine": {
+        "type": "string",
+        "optional": true
+      },
+      "engine_version": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "identifier": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "identifier_prefix": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_class": {
+        "type": "string",
+        "required": true
+      },
+      "kms_key_id": {
+        "type": "string",
+        "computed": true
+      },
+      "port": {
+        "type": "number",
+        "computed": true
+      },
+      "preferred_backup_window": {
+        "type": "string",
+        "computed": true
+      },
+      "preferred_maintenance_window": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "promotion_tier": {
+        "type": "number",
+        "optional": true
+      },
+      "publicly_accessible": {
+        "type": "bool",
+        "computed": true
+      },
+      "storage_encrypted": {
+        "type": "bool",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "writer": {
+        "type": "bool",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,386 @@
 // https://www.terraform.io/docs/providers/aws/r/instance.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "ami": {
+        "type": "string",
+        "required": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "associate_public_ip_address": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cpu_core_count": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "cpu_threads_per_core": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "disable_api_termination": {
+        "type": "bool",
+        "optional": true
+      },
+      "ebs_optimized": {
+        "type": "bool",
+        "optional": true
+      },
+      "get_password_data": {
+        "type": "bool",
+        "optional": true
+      },
+      "hibernation": {
+        "type": "bool",
+        "optional": true
+      },
+      "host_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "iam_instance_profile": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_initiated_shutdown_behavior": {
+        "type": "string",
+        "optional": true
+      },
+      "instance_state": {
+        "type": "string",
+        "computed": true
+      },
+      "instance_type": {
+        "type": "string",
+        "required": true
+      },
+      "ipv6_address_count": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "ipv6_addresses": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "key_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "monitoring": {
+        "type": "bool",
+        "optional": true
+      },
+      "network_interface_id": {
+        "type": "string",
+        "computed": true
+      },
+      "outpost_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "password_data": {
+        "type": "string",
+        "computed": true
+      },
+      "placement_group": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "primary_network_interface_id": {
+        "type": "string",
+        "computed": true
+      },
+      "private_dns": {
+        "type": "string",
+        "computed": true
+      },
+      "private_ip": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "public_dns": {
+        "type": "string",
+        "computed": true
+      },
+      "public_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "source_dest_check": {
+        "type": "bool",
+        "optional": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "tenancy": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "user_data": {
+        "type": "string",
+        "optional": true
+      },
+      "user_data_base64": {
+        "type": "string",
+        "optional": true
+      },
+      "volume_tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "credit_specification": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "cpu_credits": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "ebs_block_device": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "delete_on_termination": {
+              "type": "bool",
+              "optional": true
+            },
+            "device_name": {
+              "type": "string",
+              "required": true
+            },
+            "encrypted": {
+              "type": "bool",
+              "optional": true,
+              "computed": true
+            },
+            "iops": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "kms_key_id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "snapshot_id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "volume_id": {
+              "type": "string",
+              "computed": true
+            },
+            "volume_size": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "volume_type": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        }
+      },
+      "ephemeral_block_device": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "device_name": {
+              "type": "string",
+              "required": true
+            },
+            "no_device": {
+              "type": "bool",
+              "optional": true
+            },
+            "virtual_name": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "metadata_options": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "http_endpoint": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "http_put_response_hop_limit": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "http_tokens": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "network_interface": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "delete_on_termination": {
+              "type": "bool",
+              "optional": true
+            },
+            "device_index": {
+              "type": "number",
+              "required": true
+            },
+            "network_interface_id": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "root_block_device": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "delete_on_termination": {
+              "type": "bool",
+              "optional": true
+            },
+            "device_name": {
+              "type": "string",
+              "computed": true
+            },
+            "encrypted": {
+              "type": "bool",
+              "optional": true,
+              "computed": true
+            },
+            "iops": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "kms_key_id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "volume_id": {
+              "type": "string",
+              "computed": true
+            },
+            "volume_size": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            },
+            "volume_type": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,98 @@
 // https://www.terraform.io/docs/providers/aws/r/network_interface.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "mac_address": {
+        "type": "string",
+        "computed": true
+      },
+      "outpost_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "private_dns_name": {
+        "type": "string",
+        "computed": true
+      },
+      "private_ip": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "private_ips": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "private_ips_count": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "source_dest_check": {
+        "type": "bool",
+        "optional": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "attachment": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "attachment_id": {
+              "type": "string",
+              "computed": true
+            },
+            "device_index": {
+              "type": "number",
+              "required": true
+            },
+            "instance": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

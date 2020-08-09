@@ -1,6 +1,81 @@
 // https://www.terraform.io/docs/providers/aws/r/glue_connection.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "catalog_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "connection_properties": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "required": true,
+        "sensitive": true
+      },
+      "connection_type": {
+        "type": "string",
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "match_criteria": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "physical_connection_requirements": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "availability_zone": {
+              "type": "string",
+              "optional": true
+            },
+            "security_group_id_list": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "subnet_id": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,68 @@
 // https://www.terraform.io/docs/providers/aws/r/apigatewayv2_authorizer.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_id": {
+        "type": "string",
+        "required": true
+      },
+      "authorizer_credentials_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "authorizer_type": {
+        "type": "string",
+        "required": true
+      },
+      "authorizer_uri": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "identity_sources": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "jwt_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "audience": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "issuer": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,52 @@
 // https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allowed_prefixes": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "associated_gateway_id": {
+        "type": "string",
+        "optional": true
+      },
+      "associated_gateway_owner_account_id": {
+        "type": "string",
+        "computed": true
+      },
+      "associated_gateway_type": {
+        "type": "string",
+        "computed": true
+      },
+      "dx_gateway_id": {
+        "type": "string",
+        "required": true
+      },
+      "dx_gateway_owner_account_id": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "vpn_gateway_id": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,261 @@
 // https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allow_version_upgrade": {
+        "type": "bool",
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "automated_snapshot_retention_period": {
+        "type": "number",
+        "optional": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "bucket_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cluster_identifier": {
+        "type": "string",
+        "required": true
+      },
+      "cluster_parameter_group_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cluster_public_key": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cluster_revision_number": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cluster_security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "cluster_subnet_group_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cluster_type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "cluster_version": {
+        "type": "string",
+        "optional": true
+      },
+      "database_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "dns_name": {
+        "type": "string",
+        "computed": true
+      },
+      "elastic_ip": {
+        "type": "string",
+        "optional": true
+      },
+      "enable_logging": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "encrypted": {
+        "type": "bool",
+        "optional": true
+      },
+      "endpoint": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "enhanced_vpc_routing": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "final_snapshot_identifier": {
+        "type": "string",
+        "optional": true
+      },
+      "iam_roles": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kms_key_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "master_password": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "master_username": {
+        "type": "string",
+        "optional": true
+      },
+      "node_type": {
+        "type": "string",
+        "required": true
+      },
+      "number_of_nodes": {
+        "type": "number",
+        "optional": true
+      },
+      "owner_account": {
+        "type": "string",
+        "optional": true
+      },
+      "port": {
+        "type": "number",
+        "optional": true
+      },
+      "preferred_maintenance_window": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "publicly_accessible": {
+        "type": "bool",
+        "optional": true
+      },
+      "s3_key_prefix": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "skip_final_snapshot": {
+        "type": "bool",
+        "optional": true
+      },
+      "snapshot_cluster_identifier": {
+        "type": "string",
+        "optional": true
+      },
+      "snapshot_identifier": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc_security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "logging": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket_name": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "enable": {
+              "type": "bool",
+              "required": true
+            },
+            "s3_key_prefix": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "snapshot_copy": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "destination_region": {
+              "type": "string",
+              "required": true
+            },
+            "grant_name": {
+              "type": "string",
+              "optional": true
+            },
+            "retention_period": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

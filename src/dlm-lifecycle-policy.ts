@@ -1,6 +1,134 @@
 // https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "required": true
+      },
+      "execution_role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "state": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "policy_details": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "resource_types": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            },
+            "target_tags": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "required": true
+            }
+          },
+          "block_types": {
+            "schedule": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "copy_tags": {
+                    "type": "bool",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "name": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "tags_to_add": {
+                    "type": [
+                      "map",
+                      "string"
+                    ],
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "create_rule": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "interval": {
+                          "type": "number",
+                          "required": true
+                        },
+                        "interval_unit": {
+                          "type": "string",
+                          "optional": true
+                        },
+                        "times": {
+                          "type": [
+                            "list",
+                            "string"
+                          ],
+                          "optional": true,
+                          "computed": true
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  },
+                  "retain_rule": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "count": {
+                          "type": "number",
+                          "required": true
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  }
+                }
+              },
+              "min_items": 1
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,106 @@
 // https://www.terraform.io/docs/providers/aws/r/route53_health_check.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "child_health_threshold": {
+        "type": "number",
+        "optional": true
+      },
+      "child_healthchecks": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "cloudwatch_alarm_name": {
+        "type": "string",
+        "optional": true
+      },
+      "cloudwatch_alarm_region": {
+        "type": "string",
+        "optional": true
+      },
+      "enable_sni": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "failure_threshold": {
+        "type": "number",
+        "optional": true
+      },
+      "fqdn": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "insufficient_data_health_status": {
+        "type": "string",
+        "optional": true
+      },
+      "invert_healthcheck": {
+        "type": "bool",
+        "optional": true
+      },
+      "ip_address": {
+        "type": "string",
+        "optional": true
+      },
+      "measure_latency": {
+        "type": "bool",
+        "optional": true
+      },
+      "port": {
+        "type": "number",
+        "optional": true
+      },
+      "reference_name": {
+        "type": "string",
+        "optional": true
+      },
+      "regions": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "request_interval": {
+        "type": "number",
+        "optional": true
+      },
+      "resource_path": {
+        "type": "string",
+        "optional": true
+      },
+      "search_string": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "type": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

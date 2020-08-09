@@ -1,6 +1,54 @@
 // https://www.terraform.io/docs/providers/aws/r/licensemanager_license_configuration.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "license_count": {
+        "type": "number",
+        "optional": true
+      },
+      "license_count_hard_limit": {
+        "type": "bool",
+        "optional": true
+      },
+      "license_counting_type": {
+        "type": "string",
+        "required": true
+      },
+      "license_rules": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

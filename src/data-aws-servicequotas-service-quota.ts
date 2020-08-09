@@ -1,6 +1,58 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_servicequotas_service_quota.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "adjustable": {
+        "type": "bool",
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "default_value": {
+        "type": "number",
+        "computed": true
+      },
+      "global_quota": {
+        "type": "bool",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "quota_code": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "quota_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "service_code": {
+        "type": "string",
+        "required": true
+      },
+      "service_name": {
+        "type": "string",
+        "computed": true
+      },
+      "value": {
+        "type": "number",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

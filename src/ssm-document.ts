@@ -1,6 +1,144 @@
 // https://www.terraform.io/docs/providers/aws/r/ssm_document.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "content": {
+        "type": "string",
+        "required": true
+      },
+      "created_date": {
+        "type": "string",
+        "computed": true
+      },
+      "default_version": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "computed": true
+      },
+      "document_format": {
+        "type": "string",
+        "optional": true
+      },
+      "document_type": {
+        "type": "string",
+        "required": true
+      },
+      "document_version": {
+        "type": "string",
+        "computed": true
+      },
+      "hash": {
+        "type": "string",
+        "computed": true
+      },
+      "hash_type": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "latest_version": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "owner": {
+        "type": "string",
+        "computed": true
+      },
+      "parameter": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "default_value": "string",
+              "description": "string",
+              "name": "string",
+              "type": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "permissions": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "platform_types": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "schema_version": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "target_type": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "attachments_source": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "required": true
+            },
+            "name": {
+              "type": "string",
+              "optional": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

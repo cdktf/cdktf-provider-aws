@@ -1,6 +1,96 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_acmpca_certificate_authority.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "required": true
+      },
+      "certificate": {
+        "type": "string",
+        "computed": true
+      },
+      "certificate_chain": {
+        "type": "string",
+        "computed": true
+      },
+      "certificate_signing_request": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "not_after": {
+        "type": "string",
+        "computed": true
+      },
+      "not_before": {
+        "type": "string",
+        "computed": true
+      },
+      "serial": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "type": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "revocation_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "crl_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "custom_cname": {
+                    "type": "string",
+                    "computed": true
+                  },
+                  "enabled": {
+                    "type": "bool",
+                    "computed": true
+                  },
+                  "expiration_in_days": {
+                    "type": "number",
+                    "computed": true
+                  },
+                  "s3_bucket_name": {
+                    "type": "string",
+                    "computed": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

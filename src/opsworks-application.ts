@@ -1,6 +1,154 @@
 // https://www.terraform.io/docs/providers/aws/r/opsworks_application.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "auto_bundle_on_deploy": {
+        "type": "string",
+        "optional": true
+      },
+      "aws_flow_ruby_settings": {
+        "type": "string",
+        "optional": true
+      },
+      "data_source_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "data_source_database_name": {
+        "type": "string",
+        "optional": true
+      },
+      "data_source_type": {
+        "type": "string",
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "document_root": {
+        "type": "string",
+        "optional": true
+      },
+      "domains": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "enable_ssl": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "rails_env": {
+        "type": "string",
+        "optional": true
+      },
+      "short_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "stack_id": {
+        "type": "string",
+        "required": true
+      },
+      "type": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "app_source": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "password": {
+              "type": "string",
+              "optional": true,
+              "sensitive": true
+            },
+            "revision": {
+              "type": "string",
+              "optional": true
+            },
+            "ssh_key": {
+              "type": "string",
+              "optional": true,
+              "sensitive": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            },
+            "url": {
+              "type": "string",
+              "optional": true
+            },
+            "username": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "environment": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "required": true
+            },
+            "secure": {
+              "type": "bool",
+              "optional": true
+            },
+            "value": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "ssl_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "certificate": {
+              "type": "string",
+              "required": true
+            },
+            "chain": {
+              "type": "string",
+              "optional": true
+            },
+            "private_key": {
+              "type": "string",
+              "required": true,
+              "sensitive": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

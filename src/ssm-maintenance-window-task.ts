@@ -1,6 +1,272 @@
 // https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "max_concurrency": {
+        "type": "string",
+        "required": true
+      },
+      "max_errors": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true
+      },
+      "priority": {
+        "type": "number",
+        "optional": true
+      },
+      "service_role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "task_arn": {
+        "type": "string",
+        "required": true
+      },
+      "task_type": {
+        "type": "string",
+        "required": true
+      },
+      "window_id": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "logging_info": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "s3_bucket_name": {
+              "type": "string",
+              "required": true
+            },
+            "s3_bucket_prefix": {
+              "type": "string",
+              "optional": true
+            },
+            "s3_region": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "targets": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        },
+        "min_items": 1
+      },
+      "task_invocation_parameters": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "automation_parameters": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "document_version": {
+                    "type": "string",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "parameter": {
+                    "nesting_mode": "set",
+                    "block": {
+                      "attributes": {
+                        "name": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "values": {
+                          "type": [
+                            "list",
+                            "string"
+                          ],
+                          "required": true
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "lambda_parameters": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "client_context": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "payload": {
+                    "type": "string",
+                    "optional": true,
+                    "sensitive": true
+                  },
+                  "qualifier": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "run_command_parameters": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "comment": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "document_hash": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "document_hash_type": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "output_s3_bucket": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "output_s3_key_prefix": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "service_role_arn": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "timeout_seconds": {
+                    "type": "number",
+                    "optional": true
+                  }
+                },
+                "block_types": {
+                  "notification_config": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "notification_arn": {
+                          "type": "string",
+                          "optional": true
+                        },
+                        "notification_events": {
+                          "type": [
+                            "list",
+                            "string"
+                          ],
+                          "optional": true
+                        },
+                        "notification_type": {
+                          "type": "string",
+                          "optional": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  },
+                  "parameter": {
+                    "nesting_mode": "set",
+                    "block": {
+                      "attributes": {
+                        "name": {
+                          "type": "string",
+                          "required": true
+                        },
+                        "values": {
+                          "type": [
+                            "list",
+                            "string"
+                          ],
+                          "required": true
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "step_functions_parameters": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "input": {
+                    "type": "string",
+                    "optional": true,
+                    "sensitive": true
+                  },
+                  "name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "task_parameters": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

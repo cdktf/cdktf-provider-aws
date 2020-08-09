@@ -1,6 +1,64 @@
 // https://www.terraform.io/docs/providers/aws/r/network_acl_rule.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "cidr_block": {
+        "type": "string",
+        "optional": true
+      },
+      "egress": {
+        "type": "bool",
+        "optional": true
+      },
+      "from_port": {
+        "type": "number",
+        "optional": true
+      },
+      "icmp_code": {
+        "type": "string",
+        "optional": true
+      },
+      "icmp_type": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ipv6_cidr_block": {
+        "type": "string",
+        "optional": true
+      },
+      "network_acl_id": {
+        "type": "string",
+        "required": true
+      },
+      "protocol": {
+        "type": "string",
+        "required": true
+      },
+      "rule_action": {
+        "type": "string",
+        "required": true
+      },
+      "rule_number": {
+        "type": "number",
+        "required": true
+      },
+      "to_port": {
+        "type": "number",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

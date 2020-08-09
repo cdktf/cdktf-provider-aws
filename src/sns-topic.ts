@@ -1,6 +1,105 @@
 // https://www.terraform.io/docs/providers/aws/r/sns_topic.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "application_failure_feedback_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "application_success_feedback_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "application_success_feedback_sample_rate": {
+        "type": "number",
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "delivery_policy": {
+        "type": "string",
+        "optional": true
+      },
+      "display_name": {
+        "type": "string",
+        "optional": true
+      },
+      "http_failure_feedback_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "http_success_feedback_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "http_success_feedback_sample_rate": {
+        "type": "number",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kms_master_key_id": {
+        "type": "string",
+        "optional": true
+      },
+      "lambda_failure_feedback_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "lambda_success_feedback_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "lambda_success_feedback_sample_rate": {
+        "type": "number",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "policy": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "sqs_failure_feedback_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "sqs_success_feedback_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "sqs_success_feedback_sample_rate": {
+        "type": "number",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

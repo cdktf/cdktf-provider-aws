@@ -1,6 +1,49 @@
 // https://www.terraform.io/docs/providers/aws/r/load_balancer_policy.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "load_balancer_name": {
+        "type": "string",
+        "required": true
+      },
+      "policy_name": {
+        "type": "string",
+        "required": true
+      },
+      "policy_type_name": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "policy_attribute": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "optional": true
+            },
+            "value": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,114 @@
 // https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "accept_status": {
+        "type": "string",
+        "computed": true
+      },
+      "auto_accept": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "peer_owner_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "peer_region": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "peer_vpc_id": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "accepter": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allow_classic_link_to_remote_vpc": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_remote_vpc_dns_resolution": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_vpc_to_remote_classic_link": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "requester": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allow_classic_link_to_remote_vpc": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_remote_vpc_dns_resolution": {
+              "type": "bool",
+              "optional": true
+            },
+            "allow_vpc_to_remote_classic_link": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

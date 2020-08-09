@@ -1,6 +1,222 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_elasticsearch_domain.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "access_policies": {
+        "type": "string",
+        "computed": true
+      },
+      "advanced_options": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "computed": true
+      },
+      "advanced_security_options": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "enabled": "bool",
+              "internal_user_database_enabled": "bool"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "cluster_config": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "dedicated_master_count": "number",
+              "dedicated_master_enabled": "bool",
+              "dedicated_master_type": "string",
+              "instance_count": "number",
+              "instance_type": "string",
+              "warm_count": "number",
+              "warm_enabled": "bool",
+              "warm_type": "string",
+              "zone_awareness_config": [
+                "list",
+                [
+                  "object",
+                  {
+                    "availability_zone_count": "number"
+                  }
+                ]
+              ],
+              "zone_awareness_enabled": "bool"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "cognito_options": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "enabled": "bool",
+              "identity_pool_id": "string",
+              "role_arn": "string",
+              "user_pool_id": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "created": {
+        "type": "bool",
+        "computed": true
+      },
+      "deleted": {
+        "type": "bool",
+        "computed": true
+      },
+      "domain_id": {
+        "type": "string",
+        "computed": true
+      },
+      "domain_name": {
+        "type": "string",
+        "required": true
+      },
+      "ebs_options": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "ebs_enabled": "bool",
+              "iops": "number",
+              "volume_size": "number",
+              "volume_type": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "elasticsearch_version": {
+        "type": "string",
+        "computed": true
+      },
+      "encryption_at_rest": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "enabled": "bool",
+              "kms_key_id": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kibana_endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "log_publishing_options": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "cloudwatch_log_group_arn": "string",
+              "enabled": "bool",
+              "log_type": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "node_to_node_encryption": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "enabled": "bool"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "processing": {
+        "type": "bool",
+        "computed": true
+      },
+      "snapshot_options": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "automated_snapshot_start_hour": "number"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_options": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "availability_zones": [
+                "set",
+                "string"
+              ],
+              "security_group_ids": [
+                "set",
+                "string"
+              ],
+              "subnet_ids": [
+                "set",
+                "string"
+              ],
+              "vpc_id": "string"
+            }
+          ]
+        ],
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

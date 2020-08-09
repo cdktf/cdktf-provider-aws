@@ -1,6 +1,56 @@
 // https://www.terraform.io/docs/providers/aws/r/appsync_function.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_id": {
+        "type": "string",
+        "required": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "data_source": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "function_id": {
+        "type": "string",
+        "computed": true
+      },
+      "function_version": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "request_mapping_template": {
+        "type": "string",
+        "required": true
+      },
+      "response_mapping_template": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

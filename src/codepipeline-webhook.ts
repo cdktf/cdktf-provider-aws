@@ -1,6 +1,82 @@
 // https://www.terraform.io/docs/providers/aws/r/codepipeline_webhook.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "authentication": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "target_action": {
+        "type": "string",
+        "required": true
+      },
+      "target_pipeline": {
+        "type": "string",
+        "required": true
+      },
+      "url": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "authentication_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allowed_ip_range": {
+              "type": "string",
+              "optional": true
+            },
+            "secret_token": {
+              "type": "string",
+              "optional": true,
+              "sensitive": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "json_path": {
+              "type": "string",
+              "required": true
+            },
+            "match_equals": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

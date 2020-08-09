@@ -1,6 +1,56 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_msk_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "bootstrap_brokers": {
+        "type": "string",
+        "computed": true
+      },
+      "bootstrap_brokers_tls": {
+        "type": "string",
+        "computed": true
+      },
+      "cluster_name": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kafka_version": {
+        "type": "string",
+        "computed": true
+      },
+      "number_of_broker_nodes": {
+        "type": "number",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "zookeeper_connect_string": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

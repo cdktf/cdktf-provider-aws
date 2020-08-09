@@ -1,6 +1,223 @@
 // https://www.terraform.io/docs/providers/aws/r/glue_catalog_table.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "catalog_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "database_name": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "owner": {
+        "type": "string",
+        "optional": true
+      },
+      "parameters": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "retention": {
+        "type": "number",
+        "optional": true
+      },
+      "table_type": {
+        "type": "string",
+        "optional": true
+      },
+      "view_expanded_text": {
+        "type": "string",
+        "optional": true
+      },
+      "view_original_text": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "partition_keys": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "comment": {
+              "type": "string",
+              "optional": true
+            },
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "type": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "storage_descriptor": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket_columns": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "compressed": {
+              "type": "bool",
+              "optional": true
+            },
+            "input_format": {
+              "type": "string",
+              "optional": true
+            },
+            "location": {
+              "type": "string",
+              "optional": true
+            },
+            "number_of_buckets": {
+              "type": "number",
+              "optional": true
+            },
+            "output_format": {
+              "type": "string",
+              "optional": true
+            },
+            "parameters": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true
+            },
+            "stored_as_sub_directories": {
+              "type": "bool",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "columns": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "comment": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "name": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              }
+            },
+            "ser_de_info": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "parameters": {
+                    "type": [
+                      "map",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "serialization_library": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "skewed_info": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "skewed_column_names": {
+                    "type": [
+                      "list",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "skewed_column_value_location_maps": {
+                    "type": [
+                      "map",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "skewed_column_values": {
+                    "type": [
+                      "list",
+                      "string"
+                    ],
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "sort_columns": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "column": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "sort_order": {
+                    "type": "number",
+                    "required": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

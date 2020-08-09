@@ -1,6 +1,28 @@
 // https://www.terraform.io/docs/providers/aws/r/iot_thing_principal_attachment.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "principal": {
+        "type": "string",
+        "required": true
+      },
+      "thing": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

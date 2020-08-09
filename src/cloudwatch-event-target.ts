@@ -1,6 +1,189 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "input": {
+        "type": "string",
+        "optional": true
+      },
+      "input_path": {
+        "type": "string",
+        "optional": true
+      },
+      "role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "rule": {
+        "type": "string",
+        "required": true
+      },
+      "target_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "batch_target": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "array_size": {
+              "type": "number",
+              "optional": true
+            },
+            "job_attempts": {
+              "type": "number",
+              "optional": true
+            },
+            "job_definition": {
+              "type": "string",
+              "required": true
+            },
+            "job_name": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "ecs_target": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "group": {
+              "type": "string",
+              "optional": true
+            },
+            "launch_type": {
+              "type": "string",
+              "optional": true
+            },
+            "platform_version": {
+              "type": "string",
+              "optional": true
+            },
+            "task_count": {
+              "type": "number",
+              "optional": true
+            },
+            "task_definition_arn": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "network_configuration": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "assign_public_ip": {
+                    "type": "bool",
+                    "optional": true
+                  },
+                  "security_groups": {
+                    "type": [
+                      "set",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "subnets": {
+                    "type": [
+                      "set",
+                      "string"
+                    ],
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "input_transformer": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "input_paths": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true
+            },
+            "input_template": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "kinesis_target": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "partition_key_path": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "run_command_targets": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        },
+        "max_items": 5
+      },
+      "sqs_target": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "message_group_id": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

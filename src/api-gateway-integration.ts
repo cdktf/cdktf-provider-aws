@@ -1,6 +1,99 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "cache_key_parameters": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "cache_namespace": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "connection_id": {
+        "type": "string",
+        "optional": true
+      },
+      "connection_type": {
+        "type": "string",
+        "optional": true
+      },
+      "content_handling": {
+        "type": "string",
+        "optional": true
+      },
+      "credentials": {
+        "type": "string",
+        "optional": true
+      },
+      "http_method": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "integration_http_method": {
+        "type": "string",
+        "optional": true
+      },
+      "passthrough_behavior": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "request_parameters": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "request_parameters_in_json": {
+        "type": "string",
+        "optional": true
+      },
+      "request_templates": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "resource_id": {
+        "type": "string",
+        "required": true
+      },
+      "rest_api_id": {
+        "type": "string",
+        "required": true
+      },
+      "timeout_milliseconds": {
+        "type": "number",
+        "optional": true
+      },
+      "type": {
+        "type": "string",
+        "required": true
+      },
+      "uri": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

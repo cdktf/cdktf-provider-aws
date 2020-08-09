@@ -1,6 +1,89 @@
 // https://www.terraform.io/docs/providers/aws/r/default_subnet.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "assign_ipv6_address_on_creation": {
+        "type": "bool",
+        "computed": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "required": true
+      },
+      "availability_zone_id": {
+        "type": "string",
+        "computed": true
+      },
+      "cidr_block": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ipv6_cidr_block": {
+        "type": "string",
+        "computed": true
+      },
+      "ipv6_cidr_block_association_id": {
+        "type": "string",
+        "computed": true
+      },
+      "map_public_ip_on_launch": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "outpost_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

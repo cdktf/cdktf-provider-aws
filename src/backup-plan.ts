@@ -1,6 +1,123 @@
 // https://www.terraform.io/docs/providers/aws/r/backup_plan.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "version": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "rule": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "completion_window": {
+              "type": "number",
+              "optional": true
+            },
+            "recovery_point_tags": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true
+            },
+            "rule_name": {
+              "type": "string",
+              "required": true
+            },
+            "schedule": {
+              "type": "string",
+              "optional": true
+            },
+            "start_window": {
+              "type": "number",
+              "optional": true
+            },
+            "target_vault_name": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "copy_action": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "destination_vault_arn": {
+                    "type": "string",
+                    "required": true
+                  }
+                },
+                "block_types": {
+                  "lifecycle": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "cold_storage_after": {
+                          "type": "number",
+                          "optional": true
+                        },
+                        "delete_after": {
+                          "type": "number",
+                          "optional": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  }
+                }
+              }
+            },
+            "lifecycle": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "cold_storage_after": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "delete_after": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

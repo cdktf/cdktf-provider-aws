@@ -1,6 +1,88 @@
 // https://www.terraform.io/docs/providers/aws/r/appsync_resolver.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_id": {
+        "type": "string",
+        "required": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "data_source": {
+        "type": "string",
+        "optional": true
+      },
+      "field": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kind": {
+        "type": "string",
+        "optional": true
+      },
+      "request_template": {
+        "type": "string",
+        "required": true
+      },
+      "response_template": {
+        "type": "string",
+        "required": true
+      },
+      "type": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "caching_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "caching_keys": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "ttl": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "pipeline_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "functions": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

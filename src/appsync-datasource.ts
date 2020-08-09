@@ -1,6 +1,108 @@
 // https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_id": {
+        "type": "string",
+        "required": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "service_role_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "type": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "dynamodb_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "region": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "table_name": {
+              "type": "string",
+              "required": true
+            },
+            "use_caller_credentials": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "elasticsearch_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "endpoint": {
+              "type": "string",
+              "required": true
+            },
+            "region": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "http_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "endpoint": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "lambda_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "function_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

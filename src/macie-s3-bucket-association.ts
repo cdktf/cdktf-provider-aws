@@ -1,6 +1,50 @@
 // https://www.terraform.io/docs/providers/aws/r/macie_s3_bucket_association.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "bucket_name": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "member_account_id": {
+        "type": "string",
+        "optional": true
+      },
+      "prefix": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "classification_type": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "continuous": {
+              "type": "string",
+              "optional": true
+            },
+            "one_time": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

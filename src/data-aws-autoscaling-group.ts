@@ -1,6 +1,104 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_autoscaling_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zones": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "default_cooldown": {
+        "type": "number",
+        "computed": true
+      },
+      "desired_capacity": {
+        "type": "number",
+        "computed": true
+      },
+      "health_check_grace_period": {
+        "type": "number",
+        "computed": true
+      },
+      "health_check_type": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "launch_configuration": {
+        "type": "string",
+        "computed": true
+      },
+      "load_balancers": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "max_size": {
+        "type": "number",
+        "computed": true
+      },
+      "min_size": {
+        "type": "number",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "new_instances_protected_from_scale_in": {
+        "type": "bool",
+        "computed": true
+      },
+      "placement_group": {
+        "type": "string",
+        "computed": true
+      },
+      "service_linked_role_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "target_group_arns": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "termination_policies": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "vpc_zone_identifier": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

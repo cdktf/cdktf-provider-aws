@@ -1,6 +1,50 @@
 // https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_version.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "secret_binary": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "secret_id": {
+        "type": "string",
+        "required": true
+      },
+      "secret_string": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "version_id": {
+        "type": "string",
+        "computed": true
+      },
+      "version_stages": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,85 @@
 // https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "autoscaling_policy": {
+        "type": "string",
+        "optional": true
+      },
+      "bid_price": {
+        "type": "string",
+        "optional": true
+      },
+      "cluster_id": {
+        "type": "string",
+        "required": true
+      },
+      "configurations_json": {
+        "type": "string",
+        "optional": true
+      },
+      "ebs_optimized": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_count": {
+        "type": "number",
+        "optional": true
+      },
+      "instance_type": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true
+      },
+      "running_instance_count": {
+        "type": "number",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "ebs_config": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "iops": {
+              "type": "number",
+              "optional": true
+            },
+            "size": {
+              "type": "number",
+              "required": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            },
+            "volumes_per_instance": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

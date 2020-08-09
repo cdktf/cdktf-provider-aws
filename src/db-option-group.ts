@@ -1,6 +1,116 @@
 // https://www.terraform.io/docs/providers/aws/r/db_option_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "engine_name": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "major_engine_version": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "option_group_description": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "option": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "db_security_group_memberships": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "option_name": {
+              "type": "string",
+              "required": true
+            },
+            "port": {
+              "type": "number",
+              "optional": true
+            },
+            "version": {
+              "type": "string",
+              "optional": true
+            },
+            "vpc_security_group_memberships": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            }
+          },
+          "block_types": {
+            "option_settings": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "name": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

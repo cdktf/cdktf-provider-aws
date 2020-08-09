@@ -1,6 +1,47 @@
 // https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_notification.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "connection_events": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "required": true
+      },
+      "connection_notification_arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "notification_type": {
+        "type": "string",
+        "computed": true
+      },
+      "state": {
+        "type": "string",
+        "computed": true
+      },
+      "vpc_endpoint_id": {
+        "type": "string",
+        "optional": true
+      },
+      "vpc_endpoint_service_id": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

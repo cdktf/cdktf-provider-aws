@@ -1,6 +1,339 @@
 // https://www.terraform.io/docs/providers/aws/r/codedeploy_deployment_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "app_name": {
+        "type": "string",
+        "required": true
+      },
+      "autoscaling_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "deployment_config_name": {
+        "type": "string",
+        "optional": true
+      },
+      "deployment_group_name": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "service_role_arn": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "alarm_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "alarms": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "enabled": {
+              "type": "bool",
+              "optional": true
+            },
+            "ignore_poll_alarm_failure": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "auto_rollback_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "enabled": {
+              "type": "bool",
+              "optional": true
+            },
+            "events": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "blue_green_deployment_config": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "deployment_ready_option": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "action_on_timeout": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "wait_time_in_minutes": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "green_fleet_provisioning_option": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "action": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "terminate_blue_instances_on_deployment_success": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "action": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "termination_wait_time_in_minutes": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "deployment_style": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "deployment_option": {
+              "type": "string",
+              "optional": true
+            },
+            "deployment_type": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "ec2_tag_filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "optional": true
+            },
+            "value": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "ec2_tag_set": {
+        "nesting_mode": "set",
+        "block": {
+          "block_types": {
+            "ec2_tag_filter": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "key": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "value": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ecs_service": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "cluster_name": {
+              "type": "string",
+              "required": true
+            },
+            "service_name": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "load_balancer_info": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "elb_info": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              }
+            },
+            "target_group_info": {
+              "nesting_mode": "set",
+              "block": {
+                "attributes": {
+                  "name": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              }
+            },
+            "target_group_pair_info": {
+              "nesting_mode": "list",
+              "block": {
+                "block_types": {
+                  "prod_traffic_route": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "listener_arns": {
+                          "type": [
+                            "set",
+                            "string"
+                          ],
+                          "required": true
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  },
+                  "target_group": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "name": {
+                          "type": "string",
+                          "required": true
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 2
+                  },
+                  "test_traffic_route": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "listener_arns": {
+                          "type": [
+                            "set",
+                            "string"
+                          ],
+                          "required": true
+                        }
+                      }
+                    },
+                    "max_items": 1
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "on_premises_instance_tag_filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "optional": true
+            },
+            "value": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "trigger_configuration": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "trigger_events": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "trigger_name": {
+              "type": "string",
+              "required": true
+            },
+            "trigger_target_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

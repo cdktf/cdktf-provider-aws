@@ -1,6 +1,58 @@
 // https://www.terraform.io/docs/providers/aws/r/default_vpc_dhcp_options.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "domain_name": {
+        "type": "string",
+        "computed": true
+      },
+      "domain_name_servers": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "netbios_name_servers": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "netbios_node_type": {
+        "type": "string",
+        "optional": true
+      },
+      "ntp_servers": {
+        "type": "string",
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

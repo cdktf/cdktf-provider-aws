@@ -1,6 +1,93 @@
 // https://www.terraform.io/docs/providers/aws/r/network_acl.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "egress": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "action": "string",
+              "cidr_block": "string",
+              "from_port": "number",
+              "icmp_code": "number",
+              "icmp_type": "number",
+              "ipv6_cidr_block": "string",
+              "protocol": "string",
+              "rule_no": "number",
+              "to_port": "number"
+            }
+          ]
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ingress": {
+        "type": [
+          "set",
+          [
+            "object",
+            {
+              "action": "string",
+              "cidr_block": "string",
+              "from_port": "number",
+              "icmp_code": "number",
+              "icmp_type": "number",
+              "ipv6_cidr_block": "string",
+              "protocol": "string",
+              "rule_no": "number",
+              "to_port": "number"
+            }
+          ]
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "optional": true
+      },
+      "subnet_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

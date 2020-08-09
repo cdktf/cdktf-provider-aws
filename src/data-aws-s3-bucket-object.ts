@@ -1,6 +1,124 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_s3_bucket_object.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "body": {
+        "type": "string",
+        "computed": true
+      },
+      "bucket": {
+        "type": "string",
+        "required": true
+      },
+      "cache_control": {
+        "type": "string",
+        "computed": true
+      },
+      "content_disposition": {
+        "type": "string",
+        "computed": true
+      },
+      "content_encoding": {
+        "type": "string",
+        "computed": true
+      },
+      "content_language": {
+        "type": "string",
+        "computed": true
+      },
+      "content_length": {
+        "type": "number",
+        "computed": true
+      },
+      "content_type": {
+        "type": "string",
+        "computed": true
+      },
+      "etag": {
+        "type": "string",
+        "computed": true
+      },
+      "expiration": {
+        "type": "string",
+        "computed": true
+      },
+      "expires": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key": {
+        "type": "string",
+        "required": true
+      },
+      "last_modified": {
+        "type": "string",
+        "computed": true
+      },
+      "metadata": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "computed": true
+      },
+      "object_lock_legal_hold_status": {
+        "type": "string",
+        "computed": true
+      },
+      "object_lock_mode": {
+        "type": "string",
+        "computed": true
+      },
+      "object_lock_retain_until_date": {
+        "type": "string",
+        "computed": true
+      },
+      "range": {
+        "type": "string",
+        "optional": true
+      },
+      "server_side_encryption": {
+        "type": "string",
+        "computed": true
+      },
+      "sse_kms_key_id": {
+        "type": "string",
+        "computed": true
+      },
+      "storage_class": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "version_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "website_redirect_location": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

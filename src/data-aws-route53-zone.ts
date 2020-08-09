@@ -1,6 +1,75 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_route53_zone.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "caller_reference": {
+        "type": "string",
+        "computed": true
+      },
+      "comment": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "linked_service_description": {
+        "type": "string",
+        "computed": true
+      },
+      "linked_service_principal": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_servers": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "private_zone": {
+        "type": "bool",
+        "optional": true
+      },
+      "resource_record_set_count": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "zone_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

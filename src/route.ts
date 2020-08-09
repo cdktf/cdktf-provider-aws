@@ -1,6 +1,98 @@
 // https://www.terraform.io/docs/providers/aws/r/route.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "destination_cidr_block": {
+        "type": "string",
+        "optional": true
+      },
+      "destination_ipv6_cidr_block": {
+        "type": "string",
+        "optional": true
+      },
+      "destination_prefix_list_id": {
+        "type": "string",
+        "computed": true
+      },
+      "egress_only_gateway_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "gateway_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instance_owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "nat_gateway_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "network_interface_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "origin": {
+        "type": "string",
+        "computed": true
+      },
+      "route_table_id": {
+        "type": "string",
+        "required": true
+      },
+      "state": {
+        "type": "string",
+        "computed": true
+      },
+      "transit_gateway_id": {
+        "type": "string",
+        "optional": true
+      },
+      "vpc_peering_connection_id": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

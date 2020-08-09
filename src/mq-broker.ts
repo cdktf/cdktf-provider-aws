@@ -1,6 +1,196 @@
 // https://www.terraform.io/docs/providers/aws/r/mq_broker.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "apply_immediately": {
+        "type": "bool",
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "auto_minor_version_upgrade": {
+        "type": "bool",
+        "optional": true
+      },
+      "broker_name": {
+        "type": "string",
+        "required": true
+      },
+      "deployment_mode": {
+        "type": "string",
+        "optional": true
+      },
+      "engine_type": {
+        "type": "string",
+        "required": true
+      },
+      "engine_version": {
+        "type": "string",
+        "required": true
+      },
+      "host_instance_type": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "instances": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "console_url": "string",
+              "endpoints": [
+                "list",
+                "string"
+              ],
+              "ip_address": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "publicly_accessible": {
+        "type": "bool",
+        "optional": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "required": true
+      },
+      "subnet_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "revision": {
+              "type": "number",
+              "optional": true,
+              "computed": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "encryption_options": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "kms_key_id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "use_aws_owned_key": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "logs": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "audit": {
+              "type": "bool",
+              "optional": true
+            },
+            "general": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "maintenance_window_start_time": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "day_of_week": {
+              "type": "string",
+              "required": true
+            },
+            "time_of_day": {
+              "type": "string",
+              "required": true
+            },
+            "time_zone": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "user": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "console_access": {
+              "type": "bool",
+              "optional": true
+            },
+            "groups": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "password": {
+              "type": "string",
+              "required": true,
+              "sensitive": true
+            },
+            "username": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

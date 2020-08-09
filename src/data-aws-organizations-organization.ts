@@ -1,6 +1,110 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_organizations_organization.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "accounts": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "arn": "string",
+              "email": "string",
+              "id": "string",
+              "name": "string",
+              "status": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "aws_service_access_principals": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "enabled_policy_types": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "feature_set": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "master_account_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "master_account_email": {
+        "type": "string",
+        "computed": true
+      },
+      "master_account_id": {
+        "type": "string",
+        "computed": true
+      },
+      "non_master_accounts": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "arn": "string",
+              "email": "string",
+              "id": "string",
+              "name": "string",
+              "status": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "roots": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "arn": "string",
+              "id": "string",
+              "name": "string",
+              "policy_types": [
+                "list",
+                [
+                  "object",
+                  {
+                    "status": "string",
+                    "type": "string"
+                  }
+                ]
+              ]
+            }
+          ]
+        ],
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

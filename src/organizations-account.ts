@@ -1,6 +1,64 @@
 // https://www.terraform.io/docs/providers/aws/r/organizations_account.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "email": {
+        "type": "string",
+        "required": true
+      },
+      "iam_user_access_to_billing": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "joined_method": {
+        "type": "string",
+        "computed": true
+      },
+      "joined_timestamp": {
+        "type": "string",
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "parent_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "role_name": {
+        "type": "string",
+        "optional": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

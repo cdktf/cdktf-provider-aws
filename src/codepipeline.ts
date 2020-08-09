@@ -1,6 +1,161 @@
 // https://www.terraform.io/docs/providers/aws/r/codepipeline.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "artifact_store": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "location": {
+              "type": "string",
+              "required": true
+            },
+            "region": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "encryption_key": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "id": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "type": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "max_items": 1
+            }
+          }
+        },
+        "min_items": 1
+      },
+      "stage": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            }
+          },
+          "block_types": {
+            "action": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "category": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "configuration": {
+                    "type": [
+                      "map",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "input_artifacts": {
+                    "type": [
+                      "list",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "name": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "namespace": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "output_artifacts": {
+                    "type": [
+                      "list",
+                      "string"
+                    ],
+                    "optional": true
+                  },
+                  "owner": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "provider": {
+                    "type": "string",
+                    "required": true
+                  },
+                  "region": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "role_arn": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "run_order": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "version": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "min_items": 1
+            }
+          }
+        },
+        "min_items": 2
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

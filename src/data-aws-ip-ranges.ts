@@ -1,6 +1,60 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_ip_ranges.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "cidr_blocks": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "create_date": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "ipv6_cidr_blocks": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "regions": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "services": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "required": true
+      },
+      "sync_token": {
+        "type": "number",
+        "computed": true
+      },
+      "url": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

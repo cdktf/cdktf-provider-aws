@@ -1,6 +1,112 @@
 // https://www.terraform.io/docs/providers/aws/r/storagegateway_gateway.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "activation_key": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "cloudwatch_log_group_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "gateway_id": {
+        "type": "string",
+        "computed": true
+      },
+      "gateway_ip_address": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "gateway_name": {
+        "type": "string",
+        "required": true
+      },
+      "gateway_timezone": {
+        "type": "string",
+        "required": true
+      },
+      "gateway_type": {
+        "type": "string",
+        "optional": true
+      },
+      "gateway_vpc_endpoint": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "medium_changer_type": {
+        "type": "string",
+        "optional": true
+      },
+      "smb_guest_password": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "tape_drive_type": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "smb_active_directory_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "domain_name": {
+              "type": "string",
+              "required": true
+            },
+            "password": {
+              "type": "string",
+              "required": true,
+              "sensitive": true
+            },
+            "username": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

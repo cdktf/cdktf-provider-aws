@@ -1,6 +1,70 @@
 // https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_id": {
+        "type": "string",
+        "required": true
+      },
+      "api_key_required": {
+        "type": "bool",
+        "optional": true
+      },
+      "authorization_scopes": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "authorization_type": {
+        "type": "string",
+        "optional": true
+      },
+      "authorizer_id": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "model_selection_expression": {
+        "type": "string",
+        "optional": true
+      },
+      "operation_name": {
+        "type": "string",
+        "optional": true
+      },
+      "request_models": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "route_key": {
+        "type": "string",
+        "required": true
+      },
+      "route_response_selection_expression": {
+        "type": "string",
+        "optional": true
+      },
+      "target": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

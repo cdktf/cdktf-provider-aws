@@ -1,6 +1,44 @@
 // https://www.terraform.io/docs/providers/aws/r/iam_user_login_profile.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "encrypted_password": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key_fingerprint": {
+        "type": "string",
+        "computed": true
+      },
+      "password_length": {
+        "type": "number",
+        "optional": true
+      },
+      "password_reset_required": {
+        "type": "bool",
+        "optional": true
+      },
+      "pgp_key": {
+        "type": "string",
+        "required": true
+      },
+      "user": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

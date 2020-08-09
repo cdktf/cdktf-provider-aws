@@ -1,6 +1,213 @@
 // https://www.terraform.io/docs/providers/aws/r/lambda_function.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "filename": {
+        "type": "string",
+        "optional": true
+      },
+      "function_name": {
+        "type": "string",
+        "required": true
+      },
+      "handler": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "invoke_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "kms_key_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "last_modified": {
+        "type": "string",
+        "computed": true
+      },
+      "layers": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "memory_size": {
+        "type": "number",
+        "optional": true
+      },
+      "publish": {
+        "type": "bool",
+        "optional": true
+      },
+      "qualified_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "reserved_concurrent_executions": {
+        "type": "number",
+        "optional": true
+      },
+      "role": {
+        "type": "string",
+        "required": true
+      },
+      "runtime": {
+        "type": "string",
+        "required": true
+      },
+      "s3_bucket": {
+        "type": "string",
+        "optional": true
+      },
+      "s3_key": {
+        "type": "string",
+        "optional": true
+      },
+      "s3_object_version": {
+        "type": "string",
+        "optional": true
+      },
+      "source_code_hash": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "source_code_size": {
+        "type": "number",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "timeout": {
+        "type": "number",
+        "optional": true
+      },
+      "version": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "dead_letter_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "target_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "environment": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "variables": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "file_system_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "arn": {
+              "type": "string",
+              "required": true
+            },
+            "local_mount_path": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "tracing_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "mode": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "vpc_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "security_group_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "subnet_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "vpc_id": {
+              "type": "string",
+              "computed": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

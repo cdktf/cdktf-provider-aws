@@ -1,6 +1,151 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_rds_cluster.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zones": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "backtrack_window": {
+        "type": "number",
+        "computed": true
+      },
+      "backup_retention_period": {
+        "type": "number",
+        "computed": true
+      },
+      "cluster_identifier": {
+        "type": "string",
+        "required": true
+      },
+      "cluster_members": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "cluster_resource_id": {
+        "type": "string",
+        "computed": true
+      },
+      "database_name": {
+        "type": "string",
+        "computed": true
+      },
+      "db_cluster_parameter_group_name": {
+        "type": "string",
+        "computed": true
+      },
+      "db_subnet_group_name": {
+        "type": "string",
+        "computed": true
+      },
+      "enabled_cloudwatch_logs_exports": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "engine": {
+        "type": "string",
+        "computed": true
+      },
+      "engine_version": {
+        "type": "string",
+        "computed": true
+      },
+      "final_snapshot_identifier": {
+        "type": "string",
+        "computed": true
+      },
+      "hosted_zone_id": {
+        "type": "string",
+        "computed": true
+      },
+      "iam_database_authentication_enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "iam_roles": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kms_key_id": {
+        "type": "string",
+        "computed": true
+      },
+      "master_username": {
+        "type": "string",
+        "computed": true
+      },
+      "port": {
+        "type": "number",
+        "computed": true
+      },
+      "preferred_backup_window": {
+        "type": "string",
+        "computed": true
+      },
+      "preferred_maintenance_window": {
+        "type": "string",
+        "computed": true
+      },
+      "reader_endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "replication_source_identifier": {
+        "type": "string",
+        "computed": true
+      },
+      "storage_encrypted": {
+        "type": "bool",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

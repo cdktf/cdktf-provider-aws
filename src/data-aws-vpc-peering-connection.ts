@@ -1,6 +1,107 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_vpc_peering_connection.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "accepter": {
+        "type": [
+          "map",
+          "bool"
+        ],
+        "computed": true
+      },
+      "cidr_block": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "peer_cidr_block": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "peer_owner_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "peer_region": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "peer_vpc_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "region": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "requester": {
+        "type": [
+          "map",
+          "bool"
+        ],
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

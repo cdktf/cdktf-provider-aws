@@ -1,6 +1,118 @@
 // https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "authentication": {
+        "type": "string",
+        "optional": true
+      },
+      "default_storage_class": {
+        "type": "string",
+        "optional": true
+      },
+      "fileshare_id": {
+        "type": "string",
+        "computed": true
+      },
+      "gateway_arn": {
+        "type": "string",
+        "required": true
+      },
+      "guess_mime_type_enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "invalid_user_list": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "kms_encrypted": {
+        "type": "bool",
+        "optional": true
+      },
+      "kms_key_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "location_arn": {
+        "type": "string",
+        "required": true
+      },
+      "object_acl": {
+        "type": "string",
+        "optional": true
+      },
+      "path": {
+        "type": "string",
+        "computed": true
+      },
+      "read_only": {
+        "type": "bool",
+        "optional": true
+      },
+      "requester_pays": {
+        "type": "bool",
+        "optional": true
+      },
+      "role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "valid_user_list": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

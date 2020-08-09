@@ -1,6 +1,79 @@
 // https://www.terraform.io/docs/providers/aws/r/storagegateway_cached_iscsi_volume.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "chap_enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "gateway_arn": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "lun_number": {
+        "type": "number",
+        "computed": true
+      },
+      "network_interface_id": {
+        "type": "string",
+        "required": true
+      },
+      "network_interface_port": {
+        "type": "number",
+        "computed": true
+      },
+      "snapshot_id": {
+        "type": "string",
+        "optional": true
+      },
+      "source_volume_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "target_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "target_name": {
+        "type": "string",
+        "required": true
+      },
+      "volume_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "volume_id": {
+        "type": "string",
+        "computed": true
+      },
+      "volume_size_in_bytes": {
+        "type": "number",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

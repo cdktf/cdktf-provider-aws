@@ -1,6 +1,91 @@
 // https://www.terraform.io/docs/providers/aws/r/s3_access_point.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "account_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "bucket": {
+        "type": "string",
+        "required": true
+      },
+      "domain_name": {
+        "type": "string",
+        "computed": true
+      },
+      "has_public_access_policy": {
+        "type": "bool",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "network_origin": {
+        "type": "string",
+        "computed": true
+      },
+      "policy": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "public_access_block_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "block_public_acls": {
+              "type": "bool",
+              "optional": true
+            },
+            "block_public_policy": {
+              "type": "bool",
+              "optional": true
+            },
+            "ignore_public_acls": {
+              "type": "bool",
+              "optional": true
+            },
+            "restrict_public_buckets": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "vpc_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "vpc_id": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

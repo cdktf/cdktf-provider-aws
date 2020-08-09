@@ -1,6 +1,62 @@
 // https://www.terraform.io/docs/providers/aws/r/autoscaling_schedule.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "autoscaling_group_name": {
+        "type": "string",
+        "required": true
+      },
+      "desired_capacity": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "end_time": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "max_size": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "min_size": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "recurrence": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "scheduled_action_name": {
+        "type": "string",
+        "required": true
+      },
+      "start_time": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

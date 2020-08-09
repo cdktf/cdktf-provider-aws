@@ -1,6 +1,80 @@
 // https://www.terraform.io/docs/providers/aws/r/lambda_layer_version.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "compatible_runtimes": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "created_date": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "filename": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "layer_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "layer_name": {
+        "type": "string",
+        "required": true
+      },
+      "license_info": {
+        "type": "string",
+        "optional": true
+      },
+      "s3_bucket": {
+        "type": "string",
+        "optional": true
+      },
+      "s3_key": {
+        "type": "string",
+        "optional": true
+      },
+      "s3_object_version": {
+        "type": "string",
+        "optional": true
+      },
+      "source_code_hash": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "source_code_size": {
+        "type": "number",
+        "computed": true
+      },
+      "version": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

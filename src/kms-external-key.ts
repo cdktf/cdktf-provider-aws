@@ -1,6 +1,70 @@
 // https://www.terraform.io/docs/providers/aws/r/kms_external_key.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "deletion_window_in_days": {
+        "type": "number",
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "expiration_model": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key_material_base64": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "key_state": {
+        "type": "string",
+        "computed": true
+      },
+      "key_usage": {
+        "type": "string",
+        "computed": true
+      },
+      "policy": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "valid_to": {
+        "type": "string",
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

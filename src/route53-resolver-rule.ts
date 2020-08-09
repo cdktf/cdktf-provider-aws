@@ -1,6 +1,91 @@
 // https://www.terraform.io/docs/providers/aws/r/route53_resolver_rule.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "domain_name": {
+        "type": "string",
+        "required": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "resolver_endpoint_id": {
+        "type": "string",
+        "optional": true
+      },
+      "rule_type": {
+        "type": "string",
+        "required": true
+      },
+      "share_status": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "target_ip": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "ip": {
+              "type": "string",
+              "required": true
+            },
+            "port": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        }
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

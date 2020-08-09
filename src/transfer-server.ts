@@ -1,6 +1,82 @@
 // https://www.terraform.io/docs/providers/aws/r/transfer_server.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "endpoint_type": {
+        "type": "string",
+        "optional": true
+      },
+      "force_destroy": {
+        "type": "bool",
+        "optional": true
+      },
+      "host_key": {
+        "type": "string",
+        "optional": true,
+        "sensitive": true
+      },
+      "host_key_fingerprint": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "identity_provider_type": {
+        "type": "string",
+        "optional": true
+      },
+      "invocation_role": {
+        "type": "string",
+        "optional": true
+      },
+      "logging_role": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "url": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "endpoint_details": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "vpc_endpoint_id": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

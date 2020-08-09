@@ -1,6 +1,52 @@
 // https://www.terraform.io/docs/providers/aws/r/key_pair.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "fingerprint": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "key_name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "key_pair_id": {
+        "type": "string",
+        "computed": true
+      },
+      "public_key": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

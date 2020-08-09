@@ -1,6 +1,47 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_peering_attachment_accepter.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "peer_account_id": {
+        "type": "string",
+        "computed": true
+      },
+      "peer_region": {
+        "type": "string",
+        "computed": true
+      },
+      "peer_transit_gateway_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "transit_gateway_attachment_id": {
+        "type": "string",
+        "required": true
+      },
+      "transit_gateway_id": {
+        "type": "string",
+        "computed": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

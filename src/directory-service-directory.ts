@@ -1,6 +1,155 @@
 // https://www.terraform.io/docs/providers/aws/r/directory_service_directory.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "access_url": {
+        "type": "string",
+        "computed": true
+      },
+      "alias": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "dns_ip_addresses": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "edition": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "enable_sso": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "password": {
+        "type": "string",
+        "required": true,
+        "sensitive": true
+      },
+      "security_group_id": {
+        "type": "string",
+        "computed": true
+      },
+      "short_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "size": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "type": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "connect_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "availability_zones": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "computed": true
+            },
+            "connect_ips": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "computed": true
+            },
+            "customer_dns_ips": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "customer_username": {
+              "type": "string",
+              "required": true
+            },
+            "subnet_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "vpc_id": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "vpc_settings": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "availability_zones": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "computed": true
+            },
+            "subnet_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            },
+            "vpc_id": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

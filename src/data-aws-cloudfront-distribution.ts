@@ -1,6 +1,58 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_cloudfront_distribution.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 1,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "domain_name": {
+        "type": "string",
+        "computed": true
+      },
+      "enabled": {
+        "type": "bool",
+        "computed": true
+      },
+      "etag": {
+        "type": "string",
+        "computed": true
+      },
+      "hosted_zone_id": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "required": true
+      },
+      "in_progress_validation_batches": {
+        "type": "number",
+        "computed": true
+      },
+      "last_modified_time": {
+        "type": "string",
+        "computed": true
+      },
+      "status": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

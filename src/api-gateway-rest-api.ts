@@ -1,6 +1,98 @@
 // https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "api_key_source": {
+        "type": "string",
+        "optional": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "binary_media_types": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "body": {
+        "type": "string",
+        "optional": true
+      },
+      "created_date": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "execution_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "minimum_compression_size": {
+        "type": "number",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "policy": {
+        "type": "string",
+        "optional": true
+      },
+      "root_resource_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "endpoint_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "types": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            },
+            "vpc_endpoint_ids": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

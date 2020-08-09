@@ -1,6 +1,82 @@
 // https://www.terraform.io/docs/providers/aws/r/efs_file_system.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "creation_token": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "dns_name": {
+        "type": "string",
+        "computed": true
+      },
+      "encrypted": {
+        "type": "bool",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "kms_key_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "performance_mode": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "provisioned_throughput_in_mibps": {
+        "type": "number",
+        "optional": true
+      },
+      "reference_name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "throughput_mode": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "lifecycle_policy": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "transition_to_ia": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

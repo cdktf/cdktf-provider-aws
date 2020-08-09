@@ -1,6 +1,108 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_route_table.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "associations": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "gateway_id": "string",
+              "main": "bool",
+              "route_table_association_id": "string",
+              "route_table_id": "string",
+              "subnet_id": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "gateway_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "route_table_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "routes": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "cidr_block": "string",
+              "egress_only_gateway_id": "string",
+              "gateway_id": "string",
+              "instance_id": "string",
+              "ipv6_cidr_block": "string",
+              "nat_gateway_id": "string",
+              "network_interface_id": "string",
+              "transit_gateway_id": "string",
+              "vpc_peering_connection_id": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

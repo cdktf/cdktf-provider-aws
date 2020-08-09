@@ -1,6 +1,150 @@
 // https://www.terraform.io/docs/providers/aws/r/elastictranscoder_pipeline.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "aws_kms_key_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "input_bucket": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "output_bucket": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "role": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "content_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "storage_class": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "content_config_permissions": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "access": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "grantee": {
+              "type": "string",
+              "optional": true
+            },
+            "grantee_type": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "notifications": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "completed": {
+              "type": "string",
+              "optional": true
+            },
+            "error": {
+              "type": "string",
+              "optional": true
+            },
+            "progressing": {
+              "type": "string",
+              "optional": true
+            },
+            "warning": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "thumbnail_config": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "bucket": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "storage_class": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "thumbnail_config_permissions": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "access": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "optional": true
+            },
+            "grantee": {
+              "type": "string",
+              "optional": true
+            },
+            "grantee_type": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

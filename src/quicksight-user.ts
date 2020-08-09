@@ -1,6 +1,57 @@
 // https://www.terraform.io/docs/providers/aws/r/quicksight_user.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "aws_account_id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "email": {
+        "type": "string",
+        "required": true
+      },
+      "iam_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "identity_type": {
+        "type": "string",
+        "required": true
+      },
+      "namespace": {
+        "type": "string",
+        "optional": true
+      },
+      "session_name": {
+        "type": "string",
+        "optional": true
+      },
+      "user_name": {
+        "type": "string",
+        "optional": true
+      },
+      "user_role": {
+        "type": "string",
+        "required": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

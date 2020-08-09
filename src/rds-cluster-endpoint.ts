@@ -1,6 +1,61 @@
 // https://www.terraform.io/docs/providers/aws/r/rds_cluster_endpoint.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "cluster_endpoint_identifier": {
+        "type": "string",
+        "required": true
+      },
+      "cluster_identifier": {
+        "type": "string",
+        "required": true
+      },
+      "custom_endpoint_type": {
+        "type": "string",
+        "required": true
+      },
+      "endpoint": {
+        "type": "string",
+        "computed": true
+      },
+      "excluded_members": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "static_members": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

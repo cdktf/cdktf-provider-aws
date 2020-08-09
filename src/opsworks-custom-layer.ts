@@ -1,6 +1,169 @@
 // https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "auto_assign_elastic_ips": {
+        "type": "bool",
+        "optional": true
+      },
+      "auto_assign_public_ips": {
+        "type": "bool",
+        "optional": true
+      },
+      "auto_healing": {
+        "type": "bool",
+        "optional": true
+      },
+      "custom_configure_recipes": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "custom_deploy_recipes": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "custom_instance_profile_arn": {
+        "type": "string",
+        "optional": true
+      },
+      "custom_json": {
+        "type": "string",
+        "optional": true
+      },
+      "custom_security_group_ids": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "custom_setup_recipes": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "custom_shutdown_recipes": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "custom_undeploy_recipes": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "drain_elb_on_shutdown": {
+        "type": "bool",
+        "optional": true
+      },
+      "elastic_load_balancer": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "install_updates_on_boot": {
+        "type": "bool",
+        "optional": true
+      },
+      "instance_shutdown_timeout": {
+        "type": "number",
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "short_name": {
+        "type": "string",
+        "required": true
+      },
+      "stack_id": {
+        "type": "string",
+        "required": true
+      },
+      "system_packages": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "use_ebs_optimized_instances": {
+        "type": "bool",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "ebs_volume": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "encrypted": {
+              "type": "bool",
+              "optional": true
+            },
+            "iops": {
+              "type": "number",
+              "optional": true
+            },
+            "mount_point": {
+              "type": "string",
+              "required": true
+            },
+            "number_of_disks": {
+              "type": "number",
+              "required": true
+            },
+            "raid_level": {
+              "type": "string",
+              "optional": true
+            },
+            "size": {
+              "type": "number",
+              "required": true
+            },
+            "type": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

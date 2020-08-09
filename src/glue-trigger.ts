@@ -1,6 +1,141 @@
 // https://www.terraform.io/docs/providers/aws/r/glue_trigger.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "schedule": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "type": {
+        "type": "string",
+        "required": true
+      },
+      "workflow_name": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "actions": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "arguments": {
+              "type": [
+                "map",
+                "string"
+              ],
+              "optional": true
+            },
+            "crawler_name": {
+              "type": "string",
+              "optional": true
+            },
+            "job_name": {
+              "type": "string",
+              "optional": true
+            },
+            "timeout": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "min_items": 1
+      },
+      "predicate": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "logical": {
+              "type": "string",
+              "optional": true
+            }
+          },
+          "block_types": {
+            "conditions": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "crawl_state": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "crawler_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "job_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "logical_operator": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "state": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "min_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

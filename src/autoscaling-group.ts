@@ -1,6 +1,346 @@
 // https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "availability_zones": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "default_cooldown": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "desired_capacity": {
+        "type": "number",
+        "optional": true,
+        "computed": true
+      },
+      "enabled_metrics": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "force_delete": {
+        "type": "bool",
+        "optional": true
+      },
+      "health_check_grace_period": {
+        "type": "number",
+        "optional": true
+      },
+      "health_check_type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "launch_configuration": {
+        "type": "string",
+        "optional": true
+      },
+      "load_balancers": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "max_instance_lifetime": {
+        "type": "number",
+        "optional": true
+      },
+      "max_size": {
+        "type": "number",
+        "required": true
+      },
+      "metrics_granularity": {
+        "type": "string",
+        "optional": true
+      },
+      "min_elb_capacity": {
+        "type": "number",
+        "optional": true
+      },
+      "min_size": {
+        "type": "number",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name_prefix": {
+        "type": "string",
+        "optional": true
+      },
+      "placement_group": {
+        "type": "string",
+        "optional": true
+      },
+      "protect_from_scale_in": {
+        "type": "bool",
+        "optional": true
+      },
+      "service_linked_role_arn": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "suspended_processes": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "set",
+          [
+            "map",
+            "string"
+          ]
+        ],
+        "optional": true
+      },
+      "target_group_arns": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "termination_policies": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "optional": true
+      },
+      "vpc_zone_identifier": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "wait_for_capacity_timeout": {
+        "type": "string",
+        "optional": true
+      },
+      "wait_for_elb_capacity": {
+        "type": "number",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "initial_lifecycle_hook": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "default_result": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "heartbeat_timeout": {
+              "type": "number",
+              "optional": true
+            },
+            "lifecycle_transition": {
+              "type": "string",
+              "required": true
+            },
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "notification_metadata": {
+              "type": "string",
+              "optional": true
+            },
+            "notification_target_arn": {
+              "type": "string",
+              "optional": true
+            },
+            "role_arn": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "launch_template": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "id": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "name": {
+              "type": "string",
+              "optional": true,
+              "computed": true
+            },
+            "version": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "mixed_instances_policy": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "instances_distribution": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "on_demand_allocation_strategy": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "on_demand_base_capacity": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "on_demand_percentage_above_base_capacity": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "spot_allocation_strategy": {
+                    "type": "string",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "spot_instance_pools": {
+                    "type": "number",
+                    "optional": true,
+                    "computed": true
+                  },
+                  "spot_max_price": {
+                    "type": "string",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 1
+            },
+            "launch_template": {
+              "nesting_mode": "list",
+              "block": {
+                "block_types": {
+                  "launch_template_specification": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "launch_template_id": {
+                          "type": "string",
+                          "optional": true,
+                          "computed": true
+                        },
+                        "launch_template_name": {
+                          "type": "string",
+                          "optional": true,
+                          "computed": true
+                        },
+                        "version": {
+                          "type": "string",
+                          "optional": true
+                        }
+                      }
+                    },
+                    "min_items": 1,
+                    "max_items": 1
+                  },
+                  "override": {
+                    "nesting_mode": "list",
+                    "block": {
+                      "attributes": {
+                        "instance_type": {
+                          "type": "string",
+                          "optional": true
+                        },
+                        "weighted_capacity": {
+                          "type": "string",
+                          "optional": true
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "min_items": 1,
+              "max_items": 1
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "tag": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "required": true
+            },
+            "propagate_at_launch": {
+              "type": "bool",
+              "required": true
+            },
+            "value": {
+              "type": "string",
+              "required": true
+            }
+          }
+        }
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

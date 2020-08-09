@@ -1,6 +1,87 @@
 // https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "administration_role_arn": {
+        "type": "string",
+        "required": true
+      },
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "capabilities": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "execution_role_name": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "parameters": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "stack_set_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "template_body": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "template_url": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

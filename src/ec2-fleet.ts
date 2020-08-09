@@ -1,6 +1,187 @@
 // https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "excess_capacity_termination_policy": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "replace_unhealthy_instances": {
+        "type": "bool",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "terminate_instances": {
+        "type": "bool",
+        "optional": true
+      },
+      "terminate_instances_with_expiration": {
+        "type": "bool",
+        "optional": true
+      },
+      "type": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "launch_template_config": {
+        "nesting_mode": "list",
+        "block": {
+          "block_types": {
+            "launch_template_specification": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "launch_template_id": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "launch_template_name": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "version": {
+                    "type": "string",
+                    "required": true
+                  }
+                }
+              },
+              "min_items": 1,
+              "max_items": 1
+            },
+            "override": {
+              "nesting_mode": "list",
+              "block": {
+                "attributes": {
+                  "availability_zone": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "instance_type": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "max_price": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "priority": {
+                    "type": "number",
+                    "optional": true
+                  },
+                  "subnet_id": {
+                    "type": "string",
+                    "optional": true
+                  },
+                  "weighted_capacity": {
+                    "type": "number",
+                    "optional": true
+                  }
+                }
+              },
+              "max_items": 50
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      },
+      "on_demand_options": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allocation_strategy": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "spot_options": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "allocation_strategy": {
+              "type": "string",
+              "optional": true
+            },
+            "instance_interruption_behavior": {
+              "type": "string",
+              "optional": true
+            },
+            "instance_pools_to_use_count": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "target_capacity_specification": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "default_target_capacity_type": {
+              "type": "string",
+              "required": true
+            },
+            "on_demand_target_capacity": {
+              "type": "number",
+              "optional": true
+            },
+            "spot_target_capacity": {
+              "type": "number",
+              "optional": true
+            },
+            "total_target_capacity": {
+              "type": "number",
+              "required": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "create": {
+              "type": "string",
+              "optional": true
+            },
+            "delete": {
+              "type": "string",
+              "optional": true
+            },
+            "update": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

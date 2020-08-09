@@ -1,6 +1,62 @@
 // https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_target.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "optional": true
+      },
+      "owner_information": {
+        "type": "string",
+        "optional": true
+      },
+      "resource_type": {
+        "type": "string",
+        "required": true
+      },
+      "window_id": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "block_types": {
+      "targets": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "key": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        },
+        "min_items": 1,
+        "max_items": 5
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

@@ -1,6 +1,67 @@
 // https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allow_unassociated_targets": {
+        "type": "bool",
+        "optional": true
+      },
+      "cutoff": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "optional": true
+      },
+      "duration": {
+        "type": "number",
+        "required": true
+      },
+      "enabled": {
+        "type": "bool",
+        "optional": true
+      },
+      "end_date": {
+        "type": "string",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "schedule": {
+        "type": "string",
+        "required": true
+      },
+      "schedule_timezone": {
+        "type": "string",
+        "optional": true
+      },
+      "start_date": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

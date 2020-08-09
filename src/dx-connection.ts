@@ -1,6 +1,55 @@
 // https://www.terraform.io/docs/providers/aws/r/dx_connection.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "arn": {
+        "type": "string",
+        "computed": true
+      },
+      "aws_device": {
+        "type": "string",
+        "computed": true
+      },
+      "bandwidth": {
+        "type": "string",
+        "required": true
+      },
+      "has_logical_redundancy": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "jumbo_frame_capable": {
+        "type": "bool",
+        "computed": true
+      },
+      "location": {
+        "type": "string",
+        "required": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

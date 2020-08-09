@@ -1,6 +1,136 @@
 // https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "allowed_oauth_flows": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "allowed_oauth_flows_user_pool_client": {
+        "type": "bool",
+        "optional": true
+      },
+      "allowed_oauth_scopes": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "callback_urls": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "client_secret": {
+        "type": "string",
+        "computed": true,
+        "sensitive": true
+      },
+      "default_redirect_uri": {
+        "type": "string",
+        "optional": true
+      },
+      "explicit_auth_flows": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "generate_secret": {
+        "type": "bool",
+        "optional": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "logout_urls": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "prevent_user_existence_errors": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "read_attributes": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "refresh_token_validity": {
+        "type": "number",
+        "optional": true
+      },
+      "supported_identity_providers": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      },
+      "user_pool_id": {
+        "type": "string",
+        "required": true
+      },
+      "write_attributes": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "optional": true
+      }
+    },
+    "block_types": {
+      "analytics_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "application_id": {
+              "type": "string",
+              "required": true
+            },
+            "external_id": {
+              "type": "string",
+              "required": true
+            },
+            "role_arn": {
+              "type": "string",
+              "required": true
+            },
+            "user_data_shared": {
+              "type": "bool",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

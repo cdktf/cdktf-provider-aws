@@ -1,6 +1,144 @@
 // https://www.terraform.io/docs/providers/aws/r/data_aws_network_interface.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "association": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "allocation_id": "string",
+              "association_id": "string",
+              "ip_owner_id": "string",
+              "public_dns_name": "string",
+              "public_ip": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "attachment": {
+        "type": [
+          "list",
+          [
+            "object",
+            {
+              "attachment_id": "string",
+              "device_index": "number",
+              "instance_id": "string",
+              "instance_owner_id": "string"
+            }
+          ]
+        ],
+        "computed": true
+      },
+      "availability_zone": {
+        "type": "string",
+        "computed": true
+      },
+      "description": {
+        "type": "string",
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "interface_type": {
+        "type": "string",
+        "computed": true
+      },
+      "ipv6_addresses": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "mac_address": {
+        "type": "string",
+        "computed": true
+      },
+      "outpost_arn": {
+        "type": "string",
+        "computed": true
+      },
+      "owner_id": {
+        "type": "string",
+        "computed": true
+      },
+      "private_dns_name": {
+        "type": "string",
+        "computed": true
+      },
+      "private_ip": {
+        "type": "string",
+        "computed": true
+      },
+      "private_ips": {
+        "type": [
+          "list",
+          "string"
+        ],
+        "computed": true
+      },
+      "requester_id": {
+        "type": "string",
+        "computed": true
+      },
+      "security_groups": {
+        "type": [
+          "set",
+          "string"
+        ],
+        "computed": true
+      },
+      "subnet_id": {
+        "type": "string",
+        "computed": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true,
+        "computed": true
+      },
+      "vpc_id": {
+        "type": "string",
+        "computed": true
+      }
+    },
+    "block_types": {
+      "filter": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "name": {
+              "type": "string",
+              "required": true
+            },
+            "values": {
+              "type": [
+                "list",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformDataSource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';

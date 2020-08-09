@@ -1,6 +1,252 @@
 // https://www.terraform.io/docs/providers/aws/r/ecs_service.html
 // generated from terraform resource schema
 
+/*
+{
+  "version": 0,
+  "block": {
+    "attributes": {
+      "cluster": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "deployment_maximum_percent": {
+        "type": "number",
+        "optional": true
+      },
+      "deployment_minimum_healthy_percent": {
+        "type": "number",
+        "optional": true
+      },
+      "desired_count": {
+        "type": "number",
+        "optional": true
+      },
+      "enable_ecs_managed_tags": {
+        "type": "bool",
+        "optional": true
+      },
+      "force_new_deployment": {
+        "type": "bool",
+        "optional": true
+      },
+      "health_check_grace_period_seconds": {
+        "type": "number",
+        "optional": true
+      },
+      "iam_role": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "id": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "launch_type": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "name": {
+        "type": "string",
+        "required": true
+      },
+      "platform_version": {
+        "type": "string",
+        "optional": true,
+        "computed": true
+      },
+      "propagate_tags": {
+        "type": "string",
+        "optional": true
+      },
+      "scheduling_strategy": {
+        "type": "string",
+        "optional": true
+      },
+      "tags": {
+        "type": [
+          "map",
+          "string"
+        ],
+        "optional": true
+      },
+      "task_definition": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "block_types": {
+      "capacity_provider_strategy": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "base": {
+              "type": "number",
+              "optional": true
+            },
+            "capacity_provider": {
+              "type": "string",
+              "required": true
+            },
+            "weight": {
+              "type": "number",
+              "optional": true
+            }
+          }
+        }
+      },
+      "deployment_controller": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "type": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "load_balancer": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "container_name": {
+              "type": "string",
+              "required": true
+            },
+            "container_port": {
+              "type": "number",
+              "required": true
+            },
+            "elb_name": {
+              "type": "string",
+              "optional": true
+            },
+            "target_group_arn": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      },
+      "network_configuration": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "assign_public_ip": {
+              "type": "bool",
+              "optional": true
+            },
+            "security_groups": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "optional": true
+            },
+            "subnets": {
+              "type": [
+                "set",
+                "string"
+              ],
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "ordered_placement_strategy": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "field": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 5
+      },
+      "placement_constraints": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "expression": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 10
+      },
+      "placement_strategy": {
+        "nesting_mode": "set",
+        "block": {
+          "attributes": {
+            "field": {
+              "type": "string",
+              "optional": true
+            },
+            "type": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 5
+      },
+      "service_registries": {
+        "nesting_mode": "list",
+        "block": {
+          "attributes": {
+            "container_name": {
+              "type": "string",
+              "optional": true
+            },
+            "container_port": {
+              "type": "number",
+              "optional": true
+            },
+            "port": {
+              "type": "number",
+              "optional": true
+            },
+            "registry_arn": {
+              "type": "string",
+              "required": true
+            }
+          }
+        },
+        "max_items": 1
+      },
+      "timeouts": {
+        "nesting_mode": "single",
+        "block": {
+          "attributes": {
+            "delete": {
+              "type": "string",
+              "optional": true
+            }
+          }
+        }
+      }
+    }
+  }
+}
+*/
 import { Construct } from 'constructs';
 import { TerraformResource } from 'cdktf';
 import { TerraformMetaArguments } from 'cdktf';
