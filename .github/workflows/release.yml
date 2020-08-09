@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TERRAFORM_BINARY_NAME: "terraform0.12.29"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
