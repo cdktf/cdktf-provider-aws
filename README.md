@@ -1,23 +1,24 @@
-# Terraform CDK AWS Provider
 
-This repo builds and publishes the Terraform AWS Provider bindings for [cdktf](https://cdk.tf).
+# Terraform CDK aws Provider ~> 2.0
+
+This repo builds and publishes the Terraform aws Provider bindings for [cdktf](https://cdk.tf).
 
 Current build targets are:
 
-- [npm](https://cdk.tf)
-- [Pypi](https://cdk.tf)
+- npm
+- Pypi
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform AWS Provider version 1:1. In fact, it always tracks `latest` of `~> 2.0` with every release. If there scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf).
+This project is explicitly not tracking the Terraform aws Provider version 1:1. In fact, it always tracks `latest` of `~> 2.0` with every release. If there scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform AWS Provider](https://cdk.tf/provider/aws-native)
-- [Terraform Engine](https://cdk.tf/terraform)
+- [Terraform aws Provider](https://github.com/terraform-providers/terraform-provider-aws)
+- [Terraform Engine](https://terraform.io)
 
-If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped. While the Terraform Engine and the Terraform AWS Provider are relatively stable, the Terraform CDK is in an early stage. Therefore, it's likely that there will be breaking changes.
+If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped. While the Terraform Engine and the Terraform aws Provider are relatively stable, the Terraform CDK is in an early stage. Therefore, it's likely that there will be breaking changes.
 
 ## Features / Issues / Bugs
 
@@ -39,3 +40,4 @@ There's a custom [project builder](https://github.com/skorfmann/cdktf-provider-p
 ## provider version
 
 The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
+

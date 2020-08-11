@@ -263,6 +263,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@cdktf/provider-project@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.0.19.tgz#8c7b0c4a1f3346851164d39dd94c667c62f77ef6"
+  integrity sha512-8hbtflpYNN6aGZJInR/Wj6foPtKebBu/+hxNVYfT1+Hff7Ye0j9AkN5eZ5IX+wMQ6yc6AXZkEQd8WPf7614AXg==
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -1167,11 +1172,6 @@ cdktf-cli@^0.0.14:
     sscaff "^1.2.0"
     yargs "^15.1.0"
 
-cdktf-provider@^0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/cdktf-provider/-/cdktf-provider-0.0.13.tgz#38fec5e49669adaeebfe8aa526d6baf69fe8b04d"
-  integrity sha512-ywPnB8Zlw26vtuTh7coJcIQkpd3SSdfzjE8E72XF+H/nJ1FJ8242jbNjgiWzk3Kd/CP+iVduJsvOJ/mjSsx1Jg==
-
 cdktf@0.0.14, cdktf@^0.0.14:
   version "0.0.14"
   resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.0.14.tgz#088fa5ca8d9e939d6e603c32ab0ef527984479e3"
@@ -1831,6 +1831,13 @@ dot-prop@^3.0.0:
   integrity sha1-G3CK8JSknJoOfbyteQq6U52sEXc=
   dependencies:
     is-obj "^1.0.0"
+
+dot-prop@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-5.2.0.tgz#c34ecc29556dc45f1f4c22697b6f4904e0cc4fcb"
+  integrity sha512-uEUyaDKoSQ1M4Oq8l45hSE26SnTxL6snNnqvK/VWx5wJhmff5z0FUVJDKDanor/6w3kzE3i7XZOk+7wC0EXr1A==
+  dependencies:
+    is-obj "^2.0.0"
 
 dotgitignore@^2.1.0:
   version "2.1.0"
@@ -2978,6 +2985,11 @@ is-obj@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
   integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
+
+is-obj@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-2.0.0.tgz#473fb05d973705e3fd9620545018ca8e22ef4982"
+  integrity sha512-drqDG3cbczxxEJRoOXcOjtdp1J/lyp1mNn0xaznRs8+muBhgQcrnbspox5X5fOw0HnMnbfDzvnEMEtqDEJEo8w==
 
 is-plain-obj@^1.1.0:
   version "1.1.0"
