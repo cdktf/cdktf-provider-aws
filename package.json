@@ -35,7 +35,7 @@
   "devDependencies": {
     "@cdktf/provider-project": "^0.0.19",
     "dot-prop": "^5.2.0",
-    "projen": "^0.3.23",
+    "projen": "^0.3.28",
     "standard-version": "^8.0.1",
     "typescript": "^3.9.5",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
