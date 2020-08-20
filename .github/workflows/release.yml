@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.17.0
-      - run: npm install @cdktf/provider-project@0.0.34
-      - run: npx projen@0.3.37
+      - run: npm install @cdktf/provider-project@0.0.35
+      - run: npx projen@0.3.38
       - run: yarn install --frozen-lockfile
       - name: Anti-tamper check
         run: git diff --exit-code
