@@ -102,7 +102,7 @@ export class CognitoResourceServer extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       identifier: this._identifier,
       name: this._name,

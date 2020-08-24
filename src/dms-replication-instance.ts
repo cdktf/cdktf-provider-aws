@@ -234,7 +234,7 @@ export class DmsReplicationInstance extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allocated_storage: this._allocatedStorage,
       apply_immediately: this._applyImmediately,

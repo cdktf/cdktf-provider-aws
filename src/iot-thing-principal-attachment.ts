@@ -70,7 +70,7 @@ export class IotThingPrincipalAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       principal: this._principal,
       thing: this._thing,

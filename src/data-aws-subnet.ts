@@ -182,7 +182,7 @@ export class DataAwsSubnet extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zone: this._availabilityZone,
       availability_zone_id: this._availabilityZoneId,

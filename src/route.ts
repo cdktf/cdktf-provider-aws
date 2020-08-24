@@ -194,7 +194,7 @@ export class Route extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destination_cidr_block: this._destinationCidrBlock,
       destination_ipv6_cidr_block: this._destinationIpv6CidrBlock,

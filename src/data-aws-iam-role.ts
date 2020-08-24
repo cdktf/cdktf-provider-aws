@@ -131,7 +131,7 @@ export class DataAwsIamRole extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       role_name: this._roleName,

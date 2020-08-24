@@ -255,7 +255,7 @@ export class DataAwsDbInstance extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       db_instance_identifier: this._dbInstanceIdentifier,
       tags: this._tags,

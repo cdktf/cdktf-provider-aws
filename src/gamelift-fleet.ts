@@ -235,7 +235,7 @@ export class GameliftFleet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       build_id: this._buildId,
       description: this._description,

@@ -145,7 +145,7 @@ export class WorkspacesDirectory extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_id: this._directoryId,
       subnet_ids: this._subnetIds,

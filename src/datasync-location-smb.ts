@@ -150,7 +150,7 @@ export class DatasyncLocationSmb extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       agent_arns: this._agentArns,
       domain: this._domain,

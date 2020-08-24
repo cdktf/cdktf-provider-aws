@@ -106,7 +106,7 @@ export class DatasyncLocationNfs extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       server_hostname: this._serverHostname,
       subdirectory: this._subdirectory,

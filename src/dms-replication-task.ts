@@ -152,7 +152,7 @@ export class DmsReplicationTask extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cdc_start_time: this._cdcStartTime,
       migration_type: this._migrationType,

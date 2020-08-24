@@ -116,7 +116,7 @@ export class MediaPackageChannel extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       channel_id: this._channelId,
       description: this._description,

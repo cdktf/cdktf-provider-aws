@@ -431,7 +431,7 @@ export class S3Bucket extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       acceleration_status: this._accelerationStatus,
       acl: this._acl,

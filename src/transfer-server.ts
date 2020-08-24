@@ -166,7 +166,7 @@ export class TransferServer extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint_type: this._endpointType,
       force_destroy: this._forceDestroy,

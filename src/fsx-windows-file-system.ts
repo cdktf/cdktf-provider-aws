@@ -241,7 +241,7 @@ export class FsxWindowsFileSystem extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       active_directory_id: this._activeDirectoryId,
       automatic_backup_retention_days: this._automaticBackupRetentionDays,

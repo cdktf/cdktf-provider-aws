@@ -119,7 +119,7 @@ export class GuarddutyThreatintelset extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       activate: this._activate,
       detector_id: this._detectorId,

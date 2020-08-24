@@ -105,7 +105,7 @@ export class WafregionalByteMatchSet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       byte_match_tuple: this._byteMatchTuple,

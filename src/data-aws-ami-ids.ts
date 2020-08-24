@@ -113,7 +113,7 @@ export class DataAwsAmiIds extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       executable_users: this._executableUsers,
       name_regex: this._nameRegex,

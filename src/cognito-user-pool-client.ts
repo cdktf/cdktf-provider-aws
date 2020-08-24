@@ -236,7 +236,7 @@ export class CognitoUserPoolClient extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allowed_oauth_flows: this._allowedOauthFlows,
       allowed_oauth_flows_user_pool_client: this._allowedOauthFlowsUserPoolClient,

@@ -262,7 +262,7 @@ export class SnsTopic extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_failure_feedback_role_arn: this._applicationFailureFeedbackRoleArn,
       application_success_feedback_role_arn: this._applicationSuccessFeedbackRoleArn,

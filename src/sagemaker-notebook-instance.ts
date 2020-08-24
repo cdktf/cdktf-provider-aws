@@ -152,7 +152,7 @@ export class SagemakerNotebookInstance extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       direct_internet_access: this._directInternetAccess,
       instance_type: this._instanceType,

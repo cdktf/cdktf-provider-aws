@@ -70,7 +70,7 @@ export class RedshiftSnapshotScheduleAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_identifier: this._clusterIdentifier,
       schedule_identifier: this._scheduleIdentifier,

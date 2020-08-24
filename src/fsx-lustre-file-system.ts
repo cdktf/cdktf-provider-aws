@@ -177,7 +177,7 @@ export class FsxLustreFileSystem extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       export_path: this._exportPath,
       import_path: this._importPath,

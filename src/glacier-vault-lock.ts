@@ -92,7 +92,7 @@ export class GlacierVaultLock extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       complete_lock: this._completeLock,
       ignore_deletion_error: this._ignoreDeletionError,

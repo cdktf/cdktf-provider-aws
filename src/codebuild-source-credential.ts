@@ -97,7 +97,7 @@ export class CodebuildSourceCredential extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auth_type: this._authType,
       server_type: this._serverType,

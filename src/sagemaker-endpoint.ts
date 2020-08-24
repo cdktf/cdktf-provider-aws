@@ -86,7 +86,7 @@ export class SagemakerEndpoint extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint_config_name: this._endpointConfigName,
       name: this._name,

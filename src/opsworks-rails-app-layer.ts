@@ -360,7 +360,7 @@ export class OpsworksRailsAppLayer extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       app_server: this._appServer,
       auto_assign_elastic_ips: this._autoAssignElasticIps,

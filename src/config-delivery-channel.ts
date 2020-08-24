@@ -107,7 +107,7 @@ export class ConfigDeliveryChannel extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       s3_bucket_name: this._s3BucketName,

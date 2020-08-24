@@ -86,7 +86,7 @@ export class Ec2LocalGatewayRouteTableVpcAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       local_gateway_route_table_id: this._localGatewayRouteTableId,
       tags: this._tags,

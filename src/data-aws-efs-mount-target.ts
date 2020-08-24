@@ -114,7 +114,7 @@ export class DataAwsEfsMountTarget extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       mount_target_id: this._mountTargetId,
     };

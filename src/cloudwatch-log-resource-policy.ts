@@ -70,7 +70,7 @@ export class CloudwatchLogResourcePolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       policy_document: this._policyDocument,
       policy_name: this._policyName,

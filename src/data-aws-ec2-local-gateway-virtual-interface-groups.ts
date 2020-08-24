@@ -85,7 +85,7 @@ export class DataAwsEc2LocalGatewayVirtualInterfaceGroups extends TerraformDataS
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       tags: this._tags,
       filter: this._filter,

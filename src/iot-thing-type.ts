@@ -91,7 +91,7 @@ export class IotThingType extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       deprecated: this._deprecated,
       name: this._name,

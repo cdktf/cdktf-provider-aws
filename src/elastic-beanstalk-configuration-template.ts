@@ -121,7 +121,7 @@ export class ElasticBeanstalkConfigurationTemplate extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application: this._application,
       description: this._description,

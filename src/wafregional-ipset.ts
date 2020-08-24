@@ -80,7 +80,7 @@ export class WafregionalIpset extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       ip_set_descriptor: this._ipSetDescriptor,

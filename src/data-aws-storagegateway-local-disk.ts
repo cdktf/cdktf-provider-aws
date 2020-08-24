@@ -86,7 +86,7 @@ export class DataAwsStoragegatewayLocalDisk extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       disk_node: this._diskNode,
       disk_path: this._diskPath,

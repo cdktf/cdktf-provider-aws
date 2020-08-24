@@ -141,7 +141,7 @@ export class CloudwatchEventRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: this._description,
       event_pattern: this._eventPattern,

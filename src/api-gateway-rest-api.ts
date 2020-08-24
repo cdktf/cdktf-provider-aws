@@ -172,7 +172,7 @@ export class ApiGatewayRestApi extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_key_source: this._apiKeySource,
       binary_media_types: this._binaryMediaTypes,

@@ -85,7 +85,7 @@ export class Ec2ClientVpnNetworkAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       client_vpn_endpoint_id: this._clientVpnEndpointId,
       subnet_id: this._subnetId,

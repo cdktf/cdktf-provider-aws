@@ -59,7 +59,7 @@ export class MacieMemberAccountAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       member_account_id: this._memberAccountId,
     };

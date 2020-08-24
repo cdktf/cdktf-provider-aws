@@ -114,7 +114,7 @@ export class Apigatewayv2IntegrationResponse extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: this._apiId,
       content_handling_strategy: this._contentHandlingStrategy,

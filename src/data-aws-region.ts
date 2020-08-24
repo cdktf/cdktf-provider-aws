@@ -86,7 +86,7 @@ export class DataAwsRegion extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       current: this._current,
       endpoint: this._endpoint,

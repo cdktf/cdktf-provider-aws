@@ -361,7 +361,7 @@ export class EcsService extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster: this._cluster,
       deployment_maximum_percent: this._deploymentMaximumPercent,

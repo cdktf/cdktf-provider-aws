@@ -241,7 +241,7 @@ export class DataAwsMqBroker extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       broker_id: this._brokerId,
       broker_name: this._brokerName,

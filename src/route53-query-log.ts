@@ -70,7 +70,7 @@ export class Route53QueryLog extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cloudwatch_log_group_arn: this._cloudwatchLogGroupArn,
       zone_id: this._zoneId,

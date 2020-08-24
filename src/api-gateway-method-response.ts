@@ -125,7 +125,7 @@ export class ApiGatewayMethodResponse extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       http_method: this._httpMethod,
       resource_id: this._resourceId,

@@ -113,7 +113,7 @@ export class DxGatewayAssociationProposal extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allowed_prefixes: this._allowedPrefixes,
       associated_gateway_id: this._associatedGatewayId,

@@ -86,7 +86,7 @@ export class SagemakerNotebookInstanceLifecycleConfiguration extends TerraformRe
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       on_create: this._onCreate,

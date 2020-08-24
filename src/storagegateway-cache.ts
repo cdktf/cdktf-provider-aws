@@ -70,7 +70,7 @@ export class StoragegatewayCache extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       disk_id: this._diskId,
       gateway_arn: this._gatewayArn,

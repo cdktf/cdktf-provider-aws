@@ -97,7 +97,7 @@ export class Apigatewayv2VpcLink extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       security_group_ids: this._securityGroupIds,

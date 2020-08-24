@@ -129,7 +129,7 @@ export class DxLag extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       connections_bandwidth: this._connectionsBandwidth,
       force_destroy: this._forceDestroy,

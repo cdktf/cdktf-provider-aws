@@ -92,7 +92,7 @@ export class LbCookieStickinessPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cookie_expiration_period: this._cookieExpirationPeriod,
       lb_port: this._lbPort,

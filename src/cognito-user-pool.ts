@@ -391,7 +391,7 @@ export class CognitoUserPool extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       alias_attributes: this._aliasAttributes,
       auto_verified_attributes: this._autoVerifiedAttributes,

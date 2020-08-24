@@ -309,7 +309,7 @@ export class OpsworksStack extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       agent_version: this._agentVersion,
       berkshelf_version: this._berkshelfVersion,

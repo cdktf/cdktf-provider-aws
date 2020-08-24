@@ -92,7 +92,7 @@ export class OpsworksUserProfile extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_self_management: this._allowSelfManagement,
       ssh_public_key: this._sshPublicKey,

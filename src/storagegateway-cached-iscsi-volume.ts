@@ -160,7 +160,7 @@ export class StoragegatewayCachedIscsiVolume extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       gateway_arn: this._gatewayArn,
       network_interface_id: this._networkInterfaceId,

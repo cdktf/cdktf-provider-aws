@@ -64,7 +64,7 @@ export class DataAwsCloudtrailServiceAccount extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       region: this._region,
     };

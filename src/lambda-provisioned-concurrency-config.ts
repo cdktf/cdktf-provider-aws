@@ -97,7 +97,7 @@ export class LambdaProvisionedConcurrencyConfig extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       function_name: this._functionName,
       provisioned_concurrent_executions: this._provisionedConcurrentExecutions,

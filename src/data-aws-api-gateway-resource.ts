@@ -80,7 +80,7 @@ export class DataAwsApiGatewayResource extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       path: this._path,
       rest_api_id: this._restApiId,

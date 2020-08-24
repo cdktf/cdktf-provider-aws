@@ -185,7 +185,7 @@ export class XraySamplingRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       attributes: this._attributes,
       fixed_rate: this._fixedRate,

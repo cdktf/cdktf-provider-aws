@@ -234,7 +234,7 @@ export class StoragegatewaySmbFileShare extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       authentication: this._authentication,
       default_storage_class: this._defaultStorageClass,

@@ -80,7 +80,7 @@ export class DataAwsWafv2WebAcl extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       scope: this._scope,

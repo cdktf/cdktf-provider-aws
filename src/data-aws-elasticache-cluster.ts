@@ -188,7 +188,7 @@ export class DataAwsElasticacheCluster extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: this._clusterId,
       tags: this._tags,

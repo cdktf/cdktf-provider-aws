@@ -102,7 +102,7 @@ export class VpcEndpointConnectionNotification extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       connection_events: this._connectionEvents,
       connection_notification_arn: this._connectionNotificationArn,

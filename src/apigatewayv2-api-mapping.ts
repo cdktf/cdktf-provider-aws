@@ -92,7 +92,7 @@ export class Apigatewayv2ApiMapping extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: this._apiId,
       api_mapping_key: this._apiMappingKey,

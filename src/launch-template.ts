@@ -519,7 +519,7 @@ export class LaunchTemplate extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_version: this._defaultVersion,
       description: this._description,

@@ -231,7 +231,7 @@ export class Route53Record extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_overwrite: this._allowOverwrite,
       health_check_id: this._healthCheckId,

@@ -169,7 +169,7 @@ export class SsmMaintenanceWindow extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_unassociated_targets: this._allowUnassociatedTargets,
       cutoff: this._cutoff,

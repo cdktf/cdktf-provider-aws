@@ -97,7 +97,7 @@ export class Route53ResolverRuleAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       resolver_rule_id: this._resolverRuleId,

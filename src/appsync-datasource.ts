@@ -171,7 +171,7 @@ export class AppsyncDatasource extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: this._apiId,
       description: this._description,

@@ -110,7 +110,7 @@ export class DataAwsEc2LocalGatewayVirtualInterface extends TerraformDataSource 
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       tags: this._tags,
       filter: this._filter,

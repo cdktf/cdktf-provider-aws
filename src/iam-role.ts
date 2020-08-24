@@ -162,7 +162,7 @@ export class IamRole extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       assume_role_policy: this._assumeRolePolicy,
       description: this._description,

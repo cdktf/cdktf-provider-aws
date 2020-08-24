@@ -84,7 +84,7 @@ export class DataAwsEcsTaskDefinition extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       task_definition: this._taskDefinition,
     };

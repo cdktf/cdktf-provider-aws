@@ -103,7 +103,7 @@ export class OpsworksPermission extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_ssh: this._allowSsh,
       allow_sudo: this._allowSudo,

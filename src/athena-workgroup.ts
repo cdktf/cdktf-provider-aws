@@ -136,7 +136,7 @@ export class AthenaWorkgroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: this._description,
       force_destroy: this._forceDestroy,

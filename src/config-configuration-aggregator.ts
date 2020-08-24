@@ -109,7 +109,7 @@ export class ConfigConfigurationAggregator extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       tags: this._tags,

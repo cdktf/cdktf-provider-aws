@@ -312,7 +312,7 @@ export class CloudwatchMetricAlarm extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       actions_enabled: this._actionsEnabled,
       alarm_actions: this._alarmActions,

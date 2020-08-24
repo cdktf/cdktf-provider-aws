@@ -97,7 +97,7 @@ export class BatchJobQueue extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       compute_environments: this._computeEnvironments,
       name: this._name,

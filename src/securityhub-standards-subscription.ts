@@ -59,7 +59,7 @@ export class SecurityhubStandardsSubscription extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       standards_arn: this._standardsArn,
     };

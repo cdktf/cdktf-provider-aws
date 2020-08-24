@@ -151,7 +151,7 @@ export class Route53Zone extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       comment: this._comment,
       delegation_set_id: this._delegationSetId,

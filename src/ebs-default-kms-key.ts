@@ -59,7 +59,7 @@ export class EbsDefaultKmsKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       key_arn: this._keyArn,
     };

@@ -455,7 +455,7 @@ export class EmrCluster extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       additional_info: this._additionalInfo,
       applications: this._applications,

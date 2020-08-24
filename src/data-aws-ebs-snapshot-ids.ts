@@ -91,7 +91,7 @@ export class DataAwsEbsSnapshotIds extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       owners: this._owners,
       restorable_by_user_ids: this._restorableByUserIds,

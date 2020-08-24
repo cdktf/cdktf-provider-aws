@@ -130,7 +130,7 @@ export class ElasticBeanstalkApplicationVersion extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application: this._application,
       bucket: this._bucket,

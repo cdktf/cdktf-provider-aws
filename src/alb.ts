@@ -266,7 +266,7 @@ export class Alb extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       drop_invalid_header_fields: this._dropInvalidHeaderFields,
       enable_cross_zone_load_balancing: this._enableCrossZoneLoadBalancing,

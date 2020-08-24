@@ -174,7 +174,7 @@ export class DataAwsEbsSnapshot extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       most_recent: this._mostRecent,
       owners: this._owners,

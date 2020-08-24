@@ -174,7 +174,7 @@ export class Ec2ClientVpnEndpoint extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       client_cidr_block: this._clientCidrBlock,
       description: this._description,

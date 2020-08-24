@@ -91,7 +91,7 @@ export class GuarddutyDetector extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enable: this._enable,
       finding_publishing_frequency: this._findingPublishingFrequency,

@@ -193,7 +193,7 @@ export class Apigatewayv2Api extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_key_selection_expression: this._apiKeySelectionExpression,
       credentials_arn: this._credentialsArn,

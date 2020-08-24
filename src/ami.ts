@@ -238,7 +238,7 @@ export class Ami extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       architecture: this._architecture,
       description: this._description,

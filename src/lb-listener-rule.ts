@@ -200,7 +200,7 @@ export class LbListenerRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       listener_arn: this._listenerArn,
       priority: this._priority,

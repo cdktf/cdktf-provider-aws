@@ -101,7 +101,7 @@ export class DataAwsIpRanges extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       regions: this._regions,
       services: this._services,

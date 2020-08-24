@@ -81,7 +81,7 @@ export class PinpointEventStream extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_id: this._applicationId,
       destination_stream_arn: this._destinationStreamArn,

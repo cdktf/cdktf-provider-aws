@@ -102,7 +102,7 @@ export class CloudfrontPublicKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       comment: this._comment,
       encoded_key: this._encodedKey,

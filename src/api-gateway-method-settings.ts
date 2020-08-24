@@ -105,7 +105,7 @@ export class ApiGatewayMethodSettings extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       method_path: this._methodPath,
       rest_api_id: this._restApiId,

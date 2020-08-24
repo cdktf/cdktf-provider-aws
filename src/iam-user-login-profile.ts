@@ -102,7 +102,7 @@ export class IamUserLoginProfile extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       password_length: this._passwordLength,
       password_reset_required: this._passwordResetRequired,

@@ -102,7 +102,7 @@ export class DmsReplicationSubnetGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       replication_subnet_group_description: this._replicationSubnetGroupDescription,
       replication_subnet_group_id: this._replicationSubnetGroupId,

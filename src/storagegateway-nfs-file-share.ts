@@ -241,7 +241,7 @@ export class StoragegatewayNfsFileShare extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       client_list: this._clientList,
       default_storage_class: this._defaultStorageClass,

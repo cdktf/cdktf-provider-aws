@@ -119,7 +119,7 @@ export class DataAwsEc2LocalGatewayRouteTable extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       local_gateway_id: this._localGatewayId,
       local_gateway_route_table_id: this._localGatewayRouteTableId,

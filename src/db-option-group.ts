@@ -159,7 +159,7 @@ export class DbOptionGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       engine_name: this._engineName,
       major_engine_version: this._majorEngineVersion,

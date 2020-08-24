@@ -181,7 +181,7 @@ export class Vpc extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       assign_generated_ipv6_cidr_block: this._assignGeneratedIpv6CidrBlock,
       cidr_block: this._cidrBlock,

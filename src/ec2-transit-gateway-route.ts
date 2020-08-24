@@ -92,7 +92,7 @@ export class Ec2TransitGatewayRoute extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       blackhole: this._blackhole,
       destination_cidr_block: this._destinationCidrBlock,

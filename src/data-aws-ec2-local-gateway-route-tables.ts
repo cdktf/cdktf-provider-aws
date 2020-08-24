@@ -80,7 +80,7 @@ export class DataAwsEc2LocalGatewayRouteTables extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       tags: this._tags,
       filter: this._filter,

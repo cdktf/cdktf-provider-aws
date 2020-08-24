@@ -125,7 +125,7 @@ export class CloudformationStackSetInstance extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: this._accountId,
       parameter_overrides: this._parameterOverrides,

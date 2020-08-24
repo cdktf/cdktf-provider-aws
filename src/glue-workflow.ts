@@ -81,7 +81,7 @@ export class GlueWorkflow extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_run_properties: this._defaultRunProperties,
       description: this._description,

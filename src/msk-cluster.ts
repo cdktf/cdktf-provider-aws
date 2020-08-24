@@ -268,7 +268,7 @@ export class MskCluster extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_name: this._clusterName,
       enhanced_monitoring: this._enhancedMonitoring,

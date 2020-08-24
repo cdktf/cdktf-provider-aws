@@ -93,7 +93,7 @@ export class DataAwsWafv2RegexPatternSet extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       scope: this._scope,

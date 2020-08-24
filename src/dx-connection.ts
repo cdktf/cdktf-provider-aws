@@ -112,7 +112,7 @@ export class DxConnection extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bandwidth: this._bandwidth,
       location: this._location,

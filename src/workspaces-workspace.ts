@@ -159,7 +159,7 @@ export class WorkspacesWorkspace extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bundle_id: this._bundleId,
       directory_id: this._directoryId,

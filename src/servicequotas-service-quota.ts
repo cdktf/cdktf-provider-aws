@@ -116,7 +116,7 @@ export class ServicequotasServiceQuota extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       quota_code: this._quotaCode,
       service_code: this._serviceCode,

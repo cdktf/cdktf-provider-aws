@@ -60,7 +60,7 @@ export class DataAwsRoute53DelegationSet extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: this._id,
     };

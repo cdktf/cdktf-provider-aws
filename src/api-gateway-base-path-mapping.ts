@@ -92,7 +92,7 @@ export class ApiGatewayBasePathMapping extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: this._apiId,
       base_path: this._basePath,

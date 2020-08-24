@@ -101,7 +101,7 @@ export class SecretsmanagerSecretRotation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       rotation_lambda_arn: this._rotationLambdaArn,
       secret_id: this._secretId,

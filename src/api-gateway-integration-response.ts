@@ -147,7 +147,7 @@ export class ApiGatewayIntegrationResponse extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       content_handling: this._contentHandling,
       http_method: this._httpMethod,

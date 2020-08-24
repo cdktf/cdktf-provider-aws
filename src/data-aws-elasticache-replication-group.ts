@@ -114,7 +114,7 @@ export class DataAwsElasticacheReplicationGroup extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       replication_group_id: this._replicationGroupId,
     };

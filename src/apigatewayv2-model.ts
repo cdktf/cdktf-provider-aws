@@ -103,7 +103,7 @@ export class Apigatewayv2Model extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: this._apiId,
       content_type: this._contentType,

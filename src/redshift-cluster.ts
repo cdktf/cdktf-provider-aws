@@ -494,7 +494,7 @@ export class RedshiftCluster extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_version_upgrade: this._allowVersionUpgrade,
       automated_snapshot_retention_period: this._automatedSnapshotRetentionPeriod,

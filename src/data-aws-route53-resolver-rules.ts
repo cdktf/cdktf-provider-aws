@@ -97,7 +97,7 @@ export class DataAwsRoute53ResolverRules extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       owner_id: this._ownerId,
       resolver_endpoint_id: this._resolverEndpointId,

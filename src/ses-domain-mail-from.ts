@@ -81,7 +81,7 @@ export class SesDomainMailFrom extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       behavior_on_mx_failure: this._behaviorOnMxFailure,
       domain: this._domain,

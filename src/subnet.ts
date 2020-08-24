@@ -178,7 +178,7 @@ export class Subnet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       assign_ipv6_address_on_creation: this._assignIpv6AddressOnCreation,
       availability_zone: this._availabilityZone,

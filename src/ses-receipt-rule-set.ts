@@ -59,7 +59,7 @@ export class SesReceiptRuleSet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       rule_set_name: this._ruleSetName,
     };

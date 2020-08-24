@@ -140,7 +140,7 @@ export class CodepipelineWebhook extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       authentication: this._authentication,
       name: this._name,

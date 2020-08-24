@@ -212,7 +212,7 @@ export class Ec2Fleet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       excess_capacity_termination_policy: this._excessCapacityTerminationPolicy,
       replace_unhealthy_instances: this._replaceUnhealthyInstances,

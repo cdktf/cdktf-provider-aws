@@ -147,7 +147,7 @@ export class LambdaPermission extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       action: this._action,
       event_source_token: this._eventSourceToken,

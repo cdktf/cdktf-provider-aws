@@ -97,7 +97,7 @@ export class GlobalacceleratorListener extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       accelerator_arn: this._acceleratorArn,
       client_affinity: this._clientAffinity,

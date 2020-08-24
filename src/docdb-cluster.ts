@@ -354,7 +354,7 @@ export class DocdbCluster extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       apply_immediately: this._applyImmediately,
       availability_zones: this._availabilityZones,

@@ -86,7 +86,7 @@ export class DataAwsKmsCiphertext extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       context: this._context,
       key_id: this._keyId,

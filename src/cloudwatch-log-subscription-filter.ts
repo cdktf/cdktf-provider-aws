@@ -114,7 +114,7 @@ export class CloudwatchLogSubscriptionFilter extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destination_arn: this._destinationArn,
       distribution: this._distribution,

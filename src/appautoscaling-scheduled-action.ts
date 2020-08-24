@@ -146,7 +146,7 @@ export class AppautoscalingScheduledAction extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       end_time: this._endTime,
       name: this._name,

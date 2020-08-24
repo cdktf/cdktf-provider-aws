@@ -70,7 +70,7 @@ export class RamResourceAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       resource_arn: this._resourceArn,
       resource_share_arn: this._resourceShareArn,

@@ -235,7 +235,7 @@ export class ApiGatewayIntegration extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cache_key_parameters: this._cacheKeyParameters,
       cache_namespace: this._cacheNamespace,

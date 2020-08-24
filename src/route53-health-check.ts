@@ -257,7 +257,7 @@ export class Route53HealthCheck extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       child_health_threshold: this._childHealthThreshold,
       child_healthchecks: this._childHealthchecks,

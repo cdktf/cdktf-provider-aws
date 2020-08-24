@@ -123,7 +123,7 @@ export class IamServerCertificate extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate_body: this._certificateBody,
       certificate_chain: this._certificateChain,

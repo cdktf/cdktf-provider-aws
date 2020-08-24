@@ -92,7 +92,7 @@ export class DataAwsLambdaInvocation extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       function_name: this._functionName,
       input: this._input,

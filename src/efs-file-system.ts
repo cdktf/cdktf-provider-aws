@@ -161,7 +161,7 @@ export class EfsFileSystem extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       creation_token: this._creationToken,
       encrypted: this._encrypted,

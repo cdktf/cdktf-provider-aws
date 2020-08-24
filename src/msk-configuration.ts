@@ -102,7 +102,7 @@ export class MskConfiguration extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: this._description,
       kafka_versions: this._kafkaVersions,

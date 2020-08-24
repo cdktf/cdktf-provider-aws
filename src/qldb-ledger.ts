@@ -86,7 +86,7 @@ export class QldbLedger extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       deletion_protection: this._deletionProtection,
       name: this._name,

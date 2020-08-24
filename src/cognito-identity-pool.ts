@@ -147,7 +147,7 @@ export class CognitoIdentityPool extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_unauthenticated_identities: this._allowUnauthenticatedIdentities,
       developer_provider_name: this._developerProviderName,

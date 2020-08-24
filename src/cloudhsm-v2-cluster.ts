@@ -162,7 +162,7 @@ export class CloudhsmV2Cluster extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       hsm_type: this._hsmType,
       source_backup_identifier: this._sourceBackupIdentifier,

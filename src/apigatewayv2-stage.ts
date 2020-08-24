@@ -206,7 +206,7 @@ export class Apigatewayv2Stage extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: this._apiId,
       auto_deploy: this._autoDeploy,

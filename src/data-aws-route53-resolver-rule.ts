@@ -129,7 +129,7 @@ export class DataAwsRoute53ResolverRule extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain_name: this._domainName,
       name: this._name,

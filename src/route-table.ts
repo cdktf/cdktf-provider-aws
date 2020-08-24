@@ -108,7 +108,7 @@ export class RouteTable extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       propagating_vgws: this._propagatingVgws,
       route: this._route,

@@ -410,7 +410,7 @@ export class DataAwsInstance extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       get_password_data: this._getPasswordData,
       get_user_data: this._getUserData,

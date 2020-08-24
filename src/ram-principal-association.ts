@@ -70,7 +70,7 @@ export class RamPrincipalAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       principal: this._principal,
       resource_share_arn: this._resourceShareArn,

@@ -286,7 +286,7 @@ export class LaunchConfiguration extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       associate_public_ip_address: this._associatePublicIpAddress,
       ebs_optimized: this._ebsOptimized,

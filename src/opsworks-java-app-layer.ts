@@ -349,7 +349,7 @@ export class OpsworksJavaAppLayer extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       app_server: this._appServer,
       app_server_version: this._appServerVersion,

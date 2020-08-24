@@ -70,7 +70,7 @@ export class LicensemanagerAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       license_configuration_arn: this._licenseConfigurationArn,
       resource_arn: this._resourceArn,

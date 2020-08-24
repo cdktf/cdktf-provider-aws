@@ -102,7 +102,7 @@ export class RamResourceShare extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_external_principals: this._allowExternalPrincipals,
       name: this._name,

@@ -59,7 +59,7 @@ export class GuarddutyOrganizationAdminAccount extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       admin_account_id: this._adminAccountId,
     };

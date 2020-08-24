@@ -86,7 +86,7 @@ export class AccessanalyzerAnalyzer extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       analyzer_name: this._analyzerName,
       tags: this._tags,

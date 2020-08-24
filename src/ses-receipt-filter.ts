@@ -86,7 +86,7 @@ export class SesReceiptFilter extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cidr: this._cidr,
       name: this._name,

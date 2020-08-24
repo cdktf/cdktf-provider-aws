@@ -91,7 +91,7 @@ export class NetworkInterfaceAttachmentA extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       device_index: this._deviceIndex,
       instance_id: this._instanceId,

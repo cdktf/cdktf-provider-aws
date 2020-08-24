@@ -141,7 +141,7 @@ export class DataAwsEbsVolume extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       most_recent: this._mostRecent,
       tags: this._tags,

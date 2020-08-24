@@ -116,7 +116,7 @@ export class LambdaFunctionEventInvokeConfig extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       function_name: this._functionName,
       maximum_event_age_in_seconds: this._maximumEventAgeInSeconds,

@@ -107,7 +107,7 @@ export class KeyPair extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       key_name: this._keyName,
       key_name_prefix: this._keyNamePrefix,

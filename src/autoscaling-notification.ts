@@ -81,7 +81,7 @@ export class AutoscalingNotification extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group_names: this._groupNames,
       notifications: this._notifications,

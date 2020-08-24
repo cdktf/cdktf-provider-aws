@@ -216,7 +216,7 @@ export class AutoscalingPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       adjustment_type: this._adjustmentType,
       autoscaling_group_name: this._autoscalingGroupName,

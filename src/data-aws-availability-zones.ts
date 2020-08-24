@@ -151,7 +151,7 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       all_availability_zones: this._allAvailabilityZones,
       blacklisted_names: this._blacklistedNames,

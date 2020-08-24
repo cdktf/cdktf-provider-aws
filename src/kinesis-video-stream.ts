@@ -146,7 +146,7 @@ export class KinesisVideoStream extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       data_retention_in_hours: this._dataRetentionInHours,
       device_name: this._deviceName,

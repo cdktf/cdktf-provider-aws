@@ -124,7 +124,7 @@ export class Wafv2IpSet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       addresses: this._addresses,
       description: this._description,

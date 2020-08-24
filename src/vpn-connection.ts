@@ -278,7 +278,7 @@ export class VpnConnection extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       customer_gateway_id: this._customerGatewayId,
       static_routes_only: this._staticRoutesOnly,

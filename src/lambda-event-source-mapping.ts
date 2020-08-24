@@ -218,7 +218,7 @@ export class LambdaEventSourceMapping extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       batch_size: this._batchSize,
       bisect_batch_on_function_error: this._bisectBatchOnFunctionError,

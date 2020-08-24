@@ -114,7 +114,7 @@ export class CognitoIdentityProvider extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       attribute_mapping: this._attributeMapping,
       idp_identifiers: this._idpIdentifiers,

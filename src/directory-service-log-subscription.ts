@@ -70,7 +70,7 @@ export class DirectoryServiceLogSubscription extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_id: this._directoryId,
       log_group_name: this._logGroupName,

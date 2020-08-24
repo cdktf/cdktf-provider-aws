@@ -70,7 +70,7 @@ export class IamUserGroupMembership extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       groups: this._groups,
       user: this._user,

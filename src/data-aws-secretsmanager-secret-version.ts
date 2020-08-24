@@ -101,7 +101,7 @@ export class DataAwsSecretsmanagerSecretVersion extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       secret_id: this._secretId,
       version_id: this._versionId,

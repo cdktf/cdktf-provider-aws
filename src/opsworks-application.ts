@@ -256,7 +256,7 @@ export class OpsworksApplication extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_bundle_on_deploy: this._autoBundleOnDeploy,
       aws_flow_ruby_settings: this._awsFlowRubySettings,

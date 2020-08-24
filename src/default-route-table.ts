@@ -113,7 +113,7 @@ export class DefaultRouteTable extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_route_table_id: this._defaultRouteTableId,
       propagating_vgws: this._propagatingVgws,

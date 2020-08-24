@@ -103,7 +103,7 @@ export class OrganizationsOrganizationalUnit extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       parent_id: this._parentId,

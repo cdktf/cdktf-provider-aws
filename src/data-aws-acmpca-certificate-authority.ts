@@ -128,7 +128,7 @@ export class DataAwsAcmpcaCertificateAuthority extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: this._arn,
       tags: this._tags,

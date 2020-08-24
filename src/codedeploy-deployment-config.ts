@@ -118,7 +118,7 @@ export class CodedeployDeploymentConfig extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       compute_platform: this._computePlatform,
       deployment_config_name: this._deploymentConfigName,

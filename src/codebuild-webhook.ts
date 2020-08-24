@@ -106,7 +106,7 @@ export class CodebuildWebhook extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       branch_filter: this._branchFilter,
       project_name: this._projectName,

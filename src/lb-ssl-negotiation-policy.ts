@@ -97,7 +97,7 @@ export class LbSslNegotiationPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       lb_port: this._lbPort,
       load_balancer: this._loadBalancer,

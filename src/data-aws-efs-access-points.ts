@@ -69,7 +69,7 @@ export class DataAwsEfsAccessPoints extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       file_system_id: this._fileSystemId,
     };

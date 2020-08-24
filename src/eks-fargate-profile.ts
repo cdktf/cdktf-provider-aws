@@ -145,7 +145,7 @@ export class EksFargateProfile extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_name: this._clusterName,
       fargate_profile_name: this._fargateProfileName,

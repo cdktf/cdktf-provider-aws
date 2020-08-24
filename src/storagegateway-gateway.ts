@@ -211,7 +211,7 @@ export class StoragegatewayGateway extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       activation_key: this._activationKey,
       cloudwatch_log_group_arn: this._cloudwatchLogGroupArn,

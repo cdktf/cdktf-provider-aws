@@ -285,7 +285,7 @@ export class DataAwsLbListener extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       load_balancer_arn: this._loadBalancerArn,
       port: this._port,

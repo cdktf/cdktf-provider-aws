@@ -347,7 +347,7 @@ export class DataAwsElasticsearchDomain extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain_name: this._domainName,
       tags: this._tags,

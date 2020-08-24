@@ -100,7 +100,7 @@ export class DataAwsMskCluster extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_name: this._clusterName,
       tags: this._tags,

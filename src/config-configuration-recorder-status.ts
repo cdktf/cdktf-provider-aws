@@ -70,7 +70,7 @@ export class ConfigConfigurationRecorderStatus extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       is_enabled: this._isEnabled,
       name: this._name,

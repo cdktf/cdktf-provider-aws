@@ -216,7 +216,7 @@ export class EksCluster extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled_cluster_log_types: this._enabledClusterLogTypes,
       name: this._name,

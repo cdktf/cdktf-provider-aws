@@ -112,7 +112,7 @@ export class DataAwsRamResourceShare extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       resource_owner: this._resourceOwner,

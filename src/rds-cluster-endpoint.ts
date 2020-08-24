@@ -124,7 +124,7 @@ export class RdsClusterEndpoint extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_endpoint_identifier: this._clusterEndpointIdentifier,
       cluster_identifier: this._clusterIdentifier,

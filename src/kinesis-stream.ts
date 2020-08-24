@@ -162,7 +162,7 @@ export class KinesisStream extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       encryption_type: this._encryptionType,
       enforce_consumer_deletion: this._enforceConsumerDeletion,

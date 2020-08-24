@@ -70,7 +70,7 @@ export class MediaStoreContainerPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       container_name: this._containerName,
       policy: this._policy,

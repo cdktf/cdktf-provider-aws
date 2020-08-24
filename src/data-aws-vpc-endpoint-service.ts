@@ -147,7 +147,7 @@ export class DataAwsVpcEndpointService extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       service: this._service,
       service_name: this._serviceName,

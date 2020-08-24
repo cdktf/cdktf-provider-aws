@@ -81,7 +81,7 @@ export class RouteTableAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       gateway_id: this._gatewayId,
       route_table_id: this._routeTableId,

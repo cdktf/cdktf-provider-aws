@@ -86,7 +86,7 @@ export class RedshiftSnapshotCopyGrant extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       kms_key_id: this._kmsKeyId,
       snapshot_copy_grant_name: this._snapshotCopyGrantName,

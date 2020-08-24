@@ -123,7 +123,7 @@ export class DataAwsWorkspacesBundle extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bundle_id: this._bundleId,
       name: this._name,

@@ -135,7 +135,7 @@ export class CodestarnotificationsNotificationRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       detail_type: this._detailType,
       event_type_ids: this._eventTypeIds,

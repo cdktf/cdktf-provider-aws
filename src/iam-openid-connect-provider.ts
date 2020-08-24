@@ -86,7 +86,7 @@ export class IamOpenidConnectProvider extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       client_id_list: this._clientIdList,
       thumbprint_list: this._thumbprintList,

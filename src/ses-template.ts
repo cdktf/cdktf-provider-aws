@@ -92,7 +92,7 @@ export class SesTemplate extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       html: this._html,
       name: this._name,

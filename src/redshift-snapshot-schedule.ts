@@ -119,7 +119,7 @@ export class RedshiftSnapshotSchedule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       definitions: this._definitions,
       description: this._description,

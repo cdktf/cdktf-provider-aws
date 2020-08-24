@@ -86,7 +86,7 @@ export class DmsCertificate extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate_id: this._certificateId,
       certificate_pem: this._certificatePem,

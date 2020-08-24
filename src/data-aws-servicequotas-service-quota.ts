@@ -111,7 +111,7 @@ export class DataAwsServicequotasServiceQuota extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       quota_code: this._quotaCode,
       quota_name: this._quotaName,

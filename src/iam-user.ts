@@ -114,7 +114,7 @@ export class IamUser extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       force_destroy: this._forceDestroy,
       name: this._name,

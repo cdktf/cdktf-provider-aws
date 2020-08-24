@@ -75,7 +75,7 @@ export class WafregionalGeoMatchSet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       geo_match_constraint: this._geoMatchConstraint,

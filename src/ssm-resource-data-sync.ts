@@ -78,7 +78,7 @@ export class SsmResourceDataSync extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       s3_destination: this._s3Destination,

@@ -327,7 +327,7 @@ export class OpsworksGangliaLayer extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_assign_elastic_ips: this._autoAssignElasticIps,
       auto_assign_public_ips: this._autoAssignPublicIps,

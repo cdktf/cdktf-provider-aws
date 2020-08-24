@@ -103,7 +103,7 @@ export class Ec2ClientVpnAuthorizationRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_group_id: this._accessGroupId,
       authorize_all_groups: this._authorizeAllGroups,

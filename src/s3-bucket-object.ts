@@ -295,7 +295,7 @@ export class S3BucketObject extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       acl: this._acl,
       bucket: this._bucket,

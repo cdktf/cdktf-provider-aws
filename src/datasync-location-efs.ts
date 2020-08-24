@@ -107,7 +107,7 @@ export class DatasyncLocationEfs extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       efs_file_system_arn: this._efsFileSystemArn,
       subdirectory: this._subdirectory,

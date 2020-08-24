@@ -70,7 +70,7 @@ export class Ec2AvailabilityZoneGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group_name: this._groupName,
       opt_in_status: this._optInStatus,

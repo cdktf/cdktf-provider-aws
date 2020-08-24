@@ -81,7 +81,7 @@ export class Ec2LocalGatewayRoute extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destination_cidr_block: this._destinationCidrBlock,
       local_gateway_route_table_id: this._localGatewayRouteTableId,

@@ -168,7 +168,7 @@ export class Ec2TrafficMirrorFilterRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: this._description,
       destination_cidr_block: this._destinationCidrBlock,

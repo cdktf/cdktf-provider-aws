@@ -205,7 +205,7 @@ export class DataAwsNetworkInterface extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       tags: this._tags,
       filter: this._filter,

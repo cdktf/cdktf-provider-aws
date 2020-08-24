@@ -265,7 +265,7 @@ export class EksNodeGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       ami_type: this._amiType,
       cluster_name: this._clusterName,

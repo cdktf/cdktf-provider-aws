@@ -117,7 +117,7 @@ export class S3BucketAnalyticsConfiguration extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket: this._bucket,
       name: this._name,

@@ -110,7 +110,7 @@ export class DataAwsGlueScript extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       language: this._language,
       dag_edge: this._dagEdge,

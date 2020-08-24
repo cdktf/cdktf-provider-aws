@@ -84,7 +84,7 @@ export class DataAwsEcrAuthorizationToken extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       registry_id: this._registryId,
     };

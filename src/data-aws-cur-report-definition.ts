@@ -99,7 +99,7 @@ export class DataAwsCurReportDefinition extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       report_name: this._reportName,
     };

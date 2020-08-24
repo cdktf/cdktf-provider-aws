@@ -122,7 +122,7 @@ export class DataAwsIamServerCertificate extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       latest: this._latest,
       name: this._name,

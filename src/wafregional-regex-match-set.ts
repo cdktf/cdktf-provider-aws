@@ -81,7 +81,7 @@ export class WafregionalRegexMatchSet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       regex_match_tuple: this._regexMatchTuple,

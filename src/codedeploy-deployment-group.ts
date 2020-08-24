@@ -314,7 +314,7 @@ export class CodedeployDeploymentGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       app_name: this._appName,
       autoscaling_groups: this._autoscalingGroups,

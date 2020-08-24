@@ -170,7 +170,7 @@ export class LightsailInstance extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zone: this._availabilityZone,
       blueprint_id: this._blueprintId,

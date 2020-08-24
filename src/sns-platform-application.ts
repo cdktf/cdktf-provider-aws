@@ -174,7 +174,7 @@ export class SnsPlatformApplication extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       event_delivery_failure_topic_arn: this._eventDeliveryFailureTopicArn,
       event_endpoint_created_topic_arn: this._eventEndpointCreatedTopicArn,

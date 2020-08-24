@@ -149,7 +149,7 @@ export class SagemakerModel extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enable_network_isolation: this._enableNetworkIsolation,
       execution_role_arn: this._executionRoleArn,

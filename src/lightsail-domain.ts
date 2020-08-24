@@ -64,7 +64,7 @@ export class LightsailDomain extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain_name: this._domainName,
     };

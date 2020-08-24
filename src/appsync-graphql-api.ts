@@ -197,7 +197,7 @@ export class AppsyncGraphqlApi extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       authentication_type: this._authenticationType,
       name: this._name,

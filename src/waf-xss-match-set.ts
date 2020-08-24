@@ -85,7 +85,7 @@ export class WafXssMatchSet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       xss_match_tuples: this._xssMatchTuples,

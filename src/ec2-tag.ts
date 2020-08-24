@@ -81,7 +81,7 @@ export class Ec2Tag extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       key: this._key,
       resource_id: this._resourceId,

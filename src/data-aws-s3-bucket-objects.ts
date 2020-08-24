@@ -140,7 +140,7 @@ export class DataAwsS3BucketObjects extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket: this._bucket,
       delimiter: this._delimiter,

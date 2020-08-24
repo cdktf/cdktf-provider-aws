@@ -200,7 +200,7 @@ export class ApiGatewayStage extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cache_cluster_enabled: this._cacheClusterEnabled,
       cache_cluster_size: this._cacheClusterSize,

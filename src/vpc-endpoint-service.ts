@@ -132,7 +132,7 @@ export class VpcEndpointService extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       acceptance_required: this._acceptanceRequired,
       allowed_principals: this._allowedPrincipals,

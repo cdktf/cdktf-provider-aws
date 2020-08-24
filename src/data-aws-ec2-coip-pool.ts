@@ -102,7 +102,7 @@ export class DataAwsEc2CoipPool extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       local_gateway_route_table_id: this._localGatewayRouteTableId,
       pool_id: this._poolId,

@@ -296,7 +296,7 @@ export class DynamodbTable extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       billing_mode: this._billingMode,
       hash_key: this._hashKey,

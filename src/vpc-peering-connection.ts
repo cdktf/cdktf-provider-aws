@@ -170,7 +170,7 @@ export class VpcPeeringConnection extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_accept: this._autoAccept,
       peer_owner_id: this._peerOwnerId,

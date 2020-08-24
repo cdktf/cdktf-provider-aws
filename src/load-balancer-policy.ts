@@ -97,7 +97,7 @@ export class LoadBalancerPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       load_balancer_name: this._loadBalancerName,
       policy_name: this._policyName,

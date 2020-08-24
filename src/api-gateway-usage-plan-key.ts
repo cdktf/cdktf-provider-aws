@@ -91,7 +91,7 @@ export class ApiGatewayUsagePlanKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       key_id: this._keyId,
       key_type: this._keyType,

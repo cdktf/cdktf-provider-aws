@@ -92,7 +92,7 @@ export class AppCookieStickinessPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cookie_name: this._cookieName,
       lb_port: this._lbPort,

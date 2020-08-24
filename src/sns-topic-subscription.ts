@@ -141,7 +141,7 @@ export class SnsTopicSubscription extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       confirmation_timeout_in_minutes: this._confirmationTimeoutInMinutes,
       delivery_policy: this._deliveryPolicy,

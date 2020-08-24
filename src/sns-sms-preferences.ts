@@ -114,7 +114,7 @@ export class SnsSmsPreferences extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_sender_id: this._defaultSenderId,
       default_sms_type: this._defaultSmsType,

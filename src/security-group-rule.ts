@@ -170,7 +170,7 @@ export class SecurityGroupRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cidr_blocks: this._cidrBlocks,
       description: this._description,

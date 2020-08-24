@@ -90,7 +90,7 @@ export class DataAwsLambdaAlias extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       function_name: this._functionName,
       name: this._name,

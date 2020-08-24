@@ -70,7 +70,7 @@ export class DxConnectionAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       connection_id: this._connectionId,
       lag_id: this._lagId,

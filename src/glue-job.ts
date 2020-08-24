@@ -254,7 +254,7 @@ export class GlueJob extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allocated_capacity: this._allocatedCapacity,
       connections: this._connections,

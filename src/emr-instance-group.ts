@@ -164,7 +164,7 @@ export class EmrInstanceGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       autoscaling_policy: this._autoscalingPolicy,
       bid_price: this._bidPrice,

@@ -156,7 +156,7 @@ export class WorklinkFleet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       audit_stream_arn: this._auditStreamArn,
       device_ca_certificate: this._deviceCaCertificate,

@@ -97,7 +97,7 @@ export class DataAwsEc2TransitGatewayDxGatewayAttachment extends TerraformDataSo
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dx_gateway_id: this._dxGatewayId,
       tags: this._tags,

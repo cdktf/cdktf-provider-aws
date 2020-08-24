@@ -135,7 +135,7 @@ export class Route53ResolverEndpoint extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       direction: this._direction,
       name: this._name,

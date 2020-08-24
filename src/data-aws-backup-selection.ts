@@ -85,7 +85,7 @@ export class DataAwsBackupSelection extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       plan_id: this._planId,
       selection_id: this._selectionId,

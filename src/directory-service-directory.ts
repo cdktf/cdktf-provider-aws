@@ -207,7 +207,7 @@ export class DirectoryServiceDirectory extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       alias: this._alias,
       description: this._description,

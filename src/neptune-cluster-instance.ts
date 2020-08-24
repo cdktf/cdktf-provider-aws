@@ -287,7 +287,7 @@ export class NeptuneClusterInstance extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       apply_immediately: this._applyImmediately,
       auto_minor_version_upgrade: this._autoMinorVersionUpgrade,

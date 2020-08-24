@@ -75,7 +75,7 @@ export class MainRouteTableAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       route_table_id: this._routeTableId,
       vpc_id: this._vpcId,

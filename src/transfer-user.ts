@@ -119,7 +119,7 @@ export class TransferUser extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       home_directory: this._homeDirectory,
       policy: this._policy,

@@ -77,7 +77,7 @@ export class ApiGatewayAccount extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cloudwatch_role_arn: this._cloudwatchRoleArn,
     };

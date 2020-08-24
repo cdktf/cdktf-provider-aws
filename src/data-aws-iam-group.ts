@@ -102,7 +102,7 @@ export class DataAwsIamGroup extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group_name: this._groupName,
     };

@@ -147,7 +147,7 @@ export class ApiGatewayAuthorizer extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       authorizer_credentials: this._authorizerCredentials,
       authorizer_result_ttl_in_seconds: this._authorizerResultTtlInSeconds,

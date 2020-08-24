@@ -75,7 +75,7 @@ export class CloudwatchDashboard extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dashboard_body: this._dashboardBody,
       dashboard_name: this._dashboardName,

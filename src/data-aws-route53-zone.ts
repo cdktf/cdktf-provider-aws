@@ -139,7 +139,7 @@ export class DataAwsRoute53Zone extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       private_zone: this._privateZone,

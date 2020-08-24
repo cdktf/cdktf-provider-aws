@@ -169,7 +169,7 @@ export class Apigatewayv2Route extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: this._apiId,
       api_key_required: this._apiKeyRequired,

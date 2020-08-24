@@ -202,7 +202,7 @@ export class AcmpcaCertificateAuthority extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: this._enabled,
       permanent_deletion_time_in_days: this._permanentDeletionTimeInDays,

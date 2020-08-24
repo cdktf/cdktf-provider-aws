@@ -92,7 +92,7 @@ export class DynamodbTableItem extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       hash_key: this._hashKey,
       item: this._item,

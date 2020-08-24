@@ -64,7 +64,7 @@ export class SecurityhubProductSubscription extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       product_arn: this._productArn,
     };

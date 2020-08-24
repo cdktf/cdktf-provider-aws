@@ -134,7 +134,7 @@ export class OrganizationsAccount extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       email: this._email,
       iam_user_access_to_billing: this._iamUserAccessToBilling,

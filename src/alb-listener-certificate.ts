@@ -70,7 +70,7 @@ export class AlbListenerCertificate extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate_arn: this._certificateArn,
       listener_arn: this._listenerArn,

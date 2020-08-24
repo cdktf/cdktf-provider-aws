@@ -75,7 +75,7 @@ export class CloudwatchLogStream extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       log_group_name: this._logGroupName,
       name: this._name,

@@ -135,7 +135,7 @@ export class DataAwsKmsKey extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       grant_tokens: this._grantTokens,
       key_id: this._keyId,

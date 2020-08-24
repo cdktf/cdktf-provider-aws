@@ -86,7 +86,7 @@ export class WorklinkWebsiteCertificateAuthorityAssociation extends TerraformRes
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate: this._certificate,
       display_name: this._displayName,

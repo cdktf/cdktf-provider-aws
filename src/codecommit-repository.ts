@@ -112,7 +112,7 @@ export class CodecommitRepository extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_branch: this._defaultBranch,
       description: this._description,

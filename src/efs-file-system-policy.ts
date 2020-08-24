@@ -70,7 +70,7 @@ export class EfsFileSystemPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       file_system_id: this._fileSystemId,
       policy: this._policy,

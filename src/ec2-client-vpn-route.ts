@@ -102,7 +102,7 @@ export class Ec2ClientVpnRoute extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       client_vpn_endpoint_id: this._clientVpnEndpointId,
       description: this._description,

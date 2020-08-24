@@ -122,7 +122,7 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       tags: this._tags,
       transit_gateway_attachment_id: this._transitGatewayAttachmentId,

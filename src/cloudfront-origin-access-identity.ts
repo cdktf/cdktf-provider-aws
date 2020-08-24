@@ -84,7 +84,7 @@ export class CloudfrontOriginAccessIdentity extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       comment: this._comment,
     };

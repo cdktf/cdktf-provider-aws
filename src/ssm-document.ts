@@ -230,7 +230,7 @@ export class SsmDocument extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       content: this._content,
       document_format: this._documentFormat,

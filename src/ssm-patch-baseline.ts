@@ -164,7 +164,7 @@ export class SsmPatchBaseline extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       approved_patches: this._approvedPatches,
       approved_patches_compliance_level: this._approvedPatchesComplianceLevel,

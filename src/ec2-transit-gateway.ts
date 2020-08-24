@@ -156,7 +156,7 @@ export class Ec2TransitGateway extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       amazon_side_asn: this._amazonSideAsn,
       auto_accept_shared_attachments: this._autoAcceptSharedAttachments,

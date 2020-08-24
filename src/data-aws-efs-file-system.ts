@@ -134,7 +134,7 @@ export class DataAwsEfsFileSystem extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       creation_token: this._creationToken,
       file_system_id: this._fileSystemId,

@@ -174,7 +174,7 @@ export class FlowLog extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       eni_id: this._eniId,
       iam_role_arn: this._iamRoleArn,

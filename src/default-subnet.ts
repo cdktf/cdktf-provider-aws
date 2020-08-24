@@ -148,7 +148,7 @@ export class DefaultSubnet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zone: this._availabilityZone,
       map_public_ip_on_launch: this._mapPublicIpOnLaunch,

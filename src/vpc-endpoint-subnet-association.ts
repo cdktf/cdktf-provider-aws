@@ -86,7 +86,7 @@ export class VpcEndpointSubnetAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       subnet_id: this._subnetId,
       vpc_endpoint_id: this._vpcEndpointId,

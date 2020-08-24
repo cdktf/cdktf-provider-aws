@@ -223,7 +223,7 @@ export class Cloudtrail extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cloud_watch_logs_group_arn: this._cloudWatchLogsGroupArn,
       cloud_watch_logs_role_arn: this._cloudWatchLogsRoleArn,

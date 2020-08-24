@@ -69,7 +69,7 @@ export class SesDomainIdentity extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain: this._domain,
     };

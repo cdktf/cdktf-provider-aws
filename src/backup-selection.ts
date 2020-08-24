@@ -109,7 +109,7 @@ export class BackupSelection extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       iam_role_arn: this._iamRoleArn,
       name: this._name,

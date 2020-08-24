@@ -110,7 +110,7 @@ export class RamResourceShareAccepter extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       share_arn: this._shareArn,
       timeouts: this._timeouts,

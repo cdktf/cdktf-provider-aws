@@ -237,7 +237,7 @@ export class DataAwsLambdaFunction extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       function_name: this._functionName,
       qualifier: this._qualifier,

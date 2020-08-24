@@ -205,7 +205,7 @@ export class OrganizationsOrganization extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       aws_service_access_principals: this._awsServiceAccessPrincipals,
       enabled_policy_types: this._enabledPolicyTypes,

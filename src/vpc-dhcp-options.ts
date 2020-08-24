@@ -124,7 +124,7 @@ export class VpcDhcpOptions extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain_name: this._domainName,
       domain_name_servers: this._domainNameServers,

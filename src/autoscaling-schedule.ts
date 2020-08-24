@@ -141,7 +141,7 @@ export class AutoscalingSchedule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       autoscaling_group_name: this._autoscalingGroupName,
       desired_capacity: this._desiredCapacity,

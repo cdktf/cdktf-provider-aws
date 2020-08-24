@@ -195,7 +195,7 @@ export class SsmAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       association_name: this._associationName,
       automation_target_parameter_name: this._automationTargetParameterName,

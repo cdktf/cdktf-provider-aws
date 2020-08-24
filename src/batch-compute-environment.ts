@@ -163,7 +163,7 @@ export class BatchComputeEnvironment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       compute_environment_name: this._computeEnvironmentName,
       compute_environment_name_prefix: this._computeEnvironmentNamePrefix,

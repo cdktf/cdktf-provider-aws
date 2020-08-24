@@ -97,7 +97,7 @@ export class OrganizationsPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       content: this._content,
       description: this._description,

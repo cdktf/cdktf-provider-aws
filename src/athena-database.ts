@@ -97,7 +97,7 @@ export class AthenaDatabase extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket: this._bucket,
       force_destroy: this._forceDestroy,

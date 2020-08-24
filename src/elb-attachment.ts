@@ -70,7 +70,7 @@ export class ElbAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       elb: this._elb,
       instance: this._instance,

@@ -141,7 +141,7 @@ export class DataAwsEip extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       public_ip: this._publicIp,
       tags: this._tags,

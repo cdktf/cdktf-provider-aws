@@ -81,7 +81,7 @@ export class SesIdentityPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       identity: this._identity,
       name: this._name,

@@ -97,7 +97,7 @@ export class CustomerGateway extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bgp_asn: this._bgpAsn,
       ip_address: this._ipAddress,

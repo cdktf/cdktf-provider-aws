@@ -106,7 +106,7 @@ export class DatasyncLocationS3 extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       s3_bucket_arn: this._s3BucketArn,
       subdirectory: this._subdirectory,

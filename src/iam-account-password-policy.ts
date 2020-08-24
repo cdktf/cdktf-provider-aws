@@ -152,7 +152,7 @@ export class IamAccountPasswordPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_users_to_change_password: this._allowUsersToChangePassword,
       hard_expiry: this._hardExpiry,

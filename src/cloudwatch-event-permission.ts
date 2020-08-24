@@ -98,7 +98,7 @@ export class CloudwatchEventPermission extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       action: this._action,
       principal: this._principal,

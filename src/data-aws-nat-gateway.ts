@@ -128,7 +128,7 @@ export class DataAwsNatGateway extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       state: this._state,
       subnet_id: this._subnetId,

@@ -124,7 +124,7 @@ export class CloudhsmV2Hsm extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zone: this._availabilityZone,
       cluster_id: this._clusterId,

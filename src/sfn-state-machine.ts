@@ -107,7 +107,7 @@ export class SfnStateMachine extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       definition: this._definition,
       name: this._name,

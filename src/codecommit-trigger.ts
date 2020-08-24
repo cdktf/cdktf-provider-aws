@@ -83,7 +83,7 @@ export class CodecommitTrigger extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       repository_name: this._repositoryName,
       trigger: this._trigger,

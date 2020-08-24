@@ -146,7 +146,7 @@ export class DatasyncTask extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cloudwatch_log_group_arn: this._cloudwatchLogGroupArn,
       destination_location_arn: this._destinationLocationArn,

@@ -95,7 +95,7 @@ export class CognitoIdentityPoolRolesAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       identity_pool_id: this._identityPoolId,
       roles: this._roles,

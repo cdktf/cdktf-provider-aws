@@ -116,7 +116,7 @@ export class Wafv2WebAclLoggingConfiguration extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       log_destination_configs: this._logDestinationConfigs,
       resource_arn: this._resourceArn,

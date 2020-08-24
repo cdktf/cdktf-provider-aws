@@ -152,7 +152,7 @@ export class GlobalacceleratorEndpointGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint_group_region: this._endpointGroupRegion,
       health_check_interval_seconds: this._healthCheckIntervalSeconds,

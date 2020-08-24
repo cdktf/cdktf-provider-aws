@@ -75,7 +75,7 @@ export class DataAwsElasticBeanstalkSolutionStack extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       most_recent: this._mostRecent,
       name_regex: this._nameRegex,

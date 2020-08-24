@@ -146,7 +146,7 @@ export class KmsKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       customer_master_key_spec: this._customerMasterKeySpec,
       deletion_window_in_days: this._deletionWindowInDays,

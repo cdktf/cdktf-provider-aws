@@ -628,7 +628,7 @@ export class SpotInstanceRequest extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       ami: this._ami,
       associate_public_ip_address: this._associatePublicIpAddress,

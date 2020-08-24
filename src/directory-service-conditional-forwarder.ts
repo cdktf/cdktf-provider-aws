@@ -81,7 +81,7 @@ export class DirectoryServiceConditionalForwarder extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_id: this._directoryId,
       dns_ips: this._dnsIps,

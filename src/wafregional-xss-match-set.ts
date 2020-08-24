@@ -80,7 +80,7 @@ export class WafregionalXssMatchSet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       xss_match_tuple: this._xssMatchTuple,

@@ -70,7 +70,7 @@ export class IamGroupPolicyAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       group: this._group,
       policy_arn: this._policyArn,

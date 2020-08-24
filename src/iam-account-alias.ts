@@ -59,7 +59,7 @@ export class IamAccountAlias extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_alias: this._accountAlias,
     };

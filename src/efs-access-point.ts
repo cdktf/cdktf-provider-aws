@@ -124,7 +124,7 @@ export class EfsAccessPoint extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       file_system_id: this._fileSystemId,
       tags: this._tags,

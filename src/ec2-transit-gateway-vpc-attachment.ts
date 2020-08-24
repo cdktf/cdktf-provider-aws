@@ -141,7 +141,7 @@ export class Ec2TransitGatewayVpcAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dns_support: this._dnsSupport,
       ipv6_support: this._ipv6Support,

@@ -136,7 +136,7 @@ export class AutoscalingLifecycleHook extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       autoscaling_group_name: this._autoscalingGroupName,
       default_result: this._defaultResult,

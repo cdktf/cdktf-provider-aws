@@ -108,7 +108,7 @@ export class InspectorAssessmentTemplate extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       duration: this._duration,
       name: this._name,

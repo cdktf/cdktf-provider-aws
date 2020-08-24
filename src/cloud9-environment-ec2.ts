@@ -135,7 +135,7 @@ export class Cloud9EnvironmentEc2 extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       automatic_stop_time_minutes: this._automaticStopTimeMinutes,
       description: this._description,

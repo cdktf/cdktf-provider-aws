@@ -80,7 +80,7 @@ export class Ec2TransitGatewayRouteTable extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       tags: this._tags,
       transit_gateway_id: this._transitGatewayId,

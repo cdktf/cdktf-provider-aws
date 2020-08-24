@@ -92,7 +92,7 @@ export class AlbTargetGroupAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zone: this._availabilityZone,
       port: this._port,

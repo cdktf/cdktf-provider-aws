@@ -258,7 +258,7 @@ export class SsmMaintenanceWindowTask extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: this._description,
       max_concurrency: this._maxConcurrency,

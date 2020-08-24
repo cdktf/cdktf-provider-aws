@@ -101,7 +101,7 @@ export class DataAwsCloudfrontDistribution extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: this._id,
       tags: this._tags,

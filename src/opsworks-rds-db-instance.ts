@@ -92,7 +92,7 @@ export class OpsworksRdsDbInstance extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       db_password: this._dbPassword,
       db_user: this._dbUser,

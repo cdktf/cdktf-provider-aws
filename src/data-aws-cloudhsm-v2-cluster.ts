@@ -118,7 +118,7 @@ export class DataAwsCloudhsmV2Cluster extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: this._clusterId,
       cluster_state: this._clusterState,

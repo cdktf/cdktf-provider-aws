@@ -106,7 +106,7 @@ export class DefaultVpcDhcpOptions extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       netbios_name_servers: this._netbiosNameServers,
       netbios_node_type: this._netbiosNodeType,

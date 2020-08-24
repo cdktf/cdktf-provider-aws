@@ -111,7 +111,7 @@ export class DataAwsEcsContainerDefinition extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       container_name: this._containerName,
       task_definition: this._taskDefinition,

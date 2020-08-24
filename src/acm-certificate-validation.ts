@@ -85,7 +85,7 @@ export class AcmCertificateValidation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate_arn: this._certificateArn,
       validation_record_fqdns: this._validationRecordFqdns,

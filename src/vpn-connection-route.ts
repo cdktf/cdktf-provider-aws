@@ -70,7 +70,7 @@ export class VpnConnectionRoute extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destination_cidr_block: this._destinationCidrBlock,
       vpn_connection_id: this._vpnConnectionId,

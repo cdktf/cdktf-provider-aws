@@ -87,7 +87,7 @@ export class ConfigConfigurationRecorder extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       role_arn: this._roleArn,

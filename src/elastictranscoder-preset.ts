@@ -218,7 +218,7 @@ export class ElastictranscoderPreset extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       container: this._container,
       description: this._description,

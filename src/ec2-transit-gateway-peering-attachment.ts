@@ -103,7 +103,7 @@ export class Ec2TransitGatewayPeeringAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       peer_account_id: this._peerAccountId,
       peer_region: this._peerRegion,

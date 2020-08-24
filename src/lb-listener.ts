@@ -200,7 +200,7 @@ export class LbListener extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate_arn: this._certificateArn,
       load_balancer_arn: this._loadBalancerArn,

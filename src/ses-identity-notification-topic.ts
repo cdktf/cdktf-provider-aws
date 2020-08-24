@@ -92,7 +92,7 @@ export class SesIdentityNotificationTopic extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       identity: this._identity,
       include_original_headers: this._includeOriginalHeaders,

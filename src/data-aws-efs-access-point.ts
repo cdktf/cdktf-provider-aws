@@ -147,7 +147,7 @@ export class DataAwsEfsAccessPoint extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_point_id: this._accessPointId,
       tags: this._tags,

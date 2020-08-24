@@ -185,7 +185,7 @@ export class DataAwsDirectoryServiceDirectory extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_id: this._directoryId,
       tags: this._tags,

@@ -70,7 +70,7 @@ export class ElasticsearchDomainPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_policies: this._accessPolicies,
       domain_name: this._domainName,

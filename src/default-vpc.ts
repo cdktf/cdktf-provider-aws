@@ -163,7 +163,7 @@ export class DefaultVpc extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enable_classiclink: this._enableClassiclink,
       enable_classiclink_dns_support: this._enableClassiclinkDnsSupport,

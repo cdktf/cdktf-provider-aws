@@ -91,7 +91,7 @@ export class DxHostedPublicVirtualInterfaceAccepter extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       tags: this._tags,
       virtual_interface_id: this._virtualInterfaceId,

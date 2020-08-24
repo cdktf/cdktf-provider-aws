@@ -137,7 +137,7 @@ export class GlobalacceleratorAccelerator extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: this._enabled,
       ip_address_type: this._ipAddressType,

@@ -182,7 +182,7 @@ export class DataAwsVpc extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cidr_block: this._cidrBlock,
       default: this._default,

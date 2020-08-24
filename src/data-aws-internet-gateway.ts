@@ -114,7 +114,7 @@ export class DataAwsInternetGateway extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       internet_gateway_id: this._internetGatewayId,
       tags: this._tags,

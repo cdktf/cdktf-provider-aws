@@ -146,7 +146,7 @@ export class NetworkAcl extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       egress: this._egress,
       ingress: this._ingress,

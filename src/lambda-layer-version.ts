@@ -172,7 +172,7 @@ export class LambdaLayerVersion extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       compatible_runtimes: this._compatibleRuntimes,
       description: this._description,

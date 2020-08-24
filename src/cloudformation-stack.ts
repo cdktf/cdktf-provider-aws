@@ -214,7 +214,7 @@ export class CloudformationStack extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       capabilities: this._capabilities,
       disable_rollback: this._disableRollback,

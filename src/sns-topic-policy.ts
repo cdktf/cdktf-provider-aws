@@ -70,7 +70,7 @@ export class SnsTopicPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: this._arn,
       policy: this._policy,

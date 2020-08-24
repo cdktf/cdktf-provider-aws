@@ -86,7 +86,7 @@ export class ApiGatewayResource extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       parent_id: this._parentId,
       path_part: this._pathPart,

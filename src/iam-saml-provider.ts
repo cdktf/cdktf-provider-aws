@@ -80,7 +80,7 @@ export class IamSamlProvider extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       saml_metadata_document: this._samlMetadataDocument,

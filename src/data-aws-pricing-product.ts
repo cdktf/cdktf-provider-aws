@@ -80,7 +80,7 @@ export class DataAwsPricingProduct extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       service_code: this._serviceCode,
       filters: this._filters,

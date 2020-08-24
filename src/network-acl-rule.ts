@@ -169,7 +169,7 @@ export class NetworkAclRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cidr_block: this._cidrBlock,
       egress: this._egress,

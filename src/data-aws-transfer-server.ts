@@ -89,7 +89,7 @@ export class DataAwsTransferServer extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       server_id: this._serverId,
     };

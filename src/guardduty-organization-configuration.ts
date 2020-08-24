@@ -70,7 +70,7 @@ export class GuarddutyOrganizationConfiguration extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auto_enable: this._autoEnable,
       detector_id: this._detectorId,

@@ -154,7 +154,7 @@ export class ConfigConfigRule extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: this._description,
       input_parameters: this._inputParameters,

@@ -229,7 +229,7 @@ export class GlueCatalogTable extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       catalog_id: this._catalogId,
       database_name: this._databaseName,

@@ -112,7 +112,7 @@ export class DatasyncAgent extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       activation_key: this._activationKey,
       ip_address: this._ipAddress,

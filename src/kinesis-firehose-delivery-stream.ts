@@ -455,7 +455,7 @@ export class KinesisFirehoseDeliveryStream extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destination: this._destination,
       destination_id: this._destinationId,

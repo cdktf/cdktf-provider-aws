@@ -107,7 +107,7 @@ export class DataAwsEcrImage extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       image_digest: this._imageDigest,
       image_tag: this._imageTag,

@@ -230,7 +230,7 @@ export class AlbTargetGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       deregistration_delay: this._deregistrationDelay,
       lambda_multi_value_headers_enabled: this._lambdaMultiValueHeadersEnabled,

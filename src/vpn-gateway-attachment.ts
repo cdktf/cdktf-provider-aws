@@ -70,7 +70,7 @@ export class VpnGatewayAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       vpc_id: this._vpcId,
       vpn_gateway_id: this._vpnGatewayId,

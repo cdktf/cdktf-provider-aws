@@ -101,7 +101,7 @@ export class DataAwsInstances extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       instance_state_names: this._instanceStateNames,
       instance_tags: this._instanceTags,

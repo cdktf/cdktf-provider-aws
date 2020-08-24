@@ -70,7 +70,7 @@ export class NetworkInterfaceSgAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       network_interface_id: this._networkInterfaceId,
       security_group_id: this._securityGroupId,

@@ -81,7 +81,7 @@ export class Route53ZoneAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       vpc_id: this._vpcId,
       vpc_region: this._vpcRegion,

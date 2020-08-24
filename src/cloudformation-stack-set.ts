@@ -172,7 +172,7 @@ export class CloudformationStackSet extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       administration_role_arn: this._administrationRoleArn,
       capabilities: this._capabilities,

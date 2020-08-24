@@ -145,7 +145,7 @@ export class KmsExternalKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       deletion_window_in_days: this._deletionWindowInDays,
       description: this._description,

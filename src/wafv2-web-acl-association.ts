@@ -70,7 +70,7 @@ export class Wafv2WebAclAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       resource_arn: this._resourceArn,
       web_acl_arn: this._webAclArn,

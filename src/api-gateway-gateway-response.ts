@@ -103,7 +103,7 @@ export class ApiGatewayGatewayResponse extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       response_parameters: this._responseParameters,
       response_templates: this._responseTemplates,

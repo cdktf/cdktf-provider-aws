@@ -174,7 +174,7 @@ export class Ec2CapacityReservation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zone: this._availabilityZone,
       ebs_optimized: this._ebsOptimized,

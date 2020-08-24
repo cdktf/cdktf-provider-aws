@@ -96,7 +96,7 @@ export class DataAwsSsmDocument extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       document_format: this._documentFormat,
       document_version: this._documentVersion,

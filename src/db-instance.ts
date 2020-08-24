@@ -669,7 +669,7 @@ export class DbInstance extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allocated_storage: this._allocatedStorage,
       allow_major_version_upgrade: this._allowMajorVersionUpgrade,

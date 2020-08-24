@@ -106,7 +106,7 @@ export class IamAccessKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       pgp_key: this._pgpKey,
       status: this._status,

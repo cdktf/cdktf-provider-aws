@@ -79,7 +79,7 @@ export class DataAwsCodecommitRepository extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       repository_name: this._repositoryName,
     };

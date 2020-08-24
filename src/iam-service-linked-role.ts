@@ -106,7 +106,7 @@ export class IamServiceLinkedRole extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       aws_service_name: this._awsServiceName,
       custom_suffix: this._customSuffix,

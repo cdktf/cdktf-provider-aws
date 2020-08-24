@@ -102,7 +102,7 @@ export class SecretsmanagerSecretVersion extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       secret_binary: this._secretBinary,
       secret_id: this._secretId,

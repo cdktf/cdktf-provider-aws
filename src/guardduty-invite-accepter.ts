@@ -85,7 +85,7 @@ export class GuarddutyInviteAccepter extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       detector_id: this._detectorId,
       master_account_id: this._masterAccountId,

@@ -130,7 +130,7 @@ export class Apigatewayv2Authorizer extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_id: this._apiId,
       authorizer_credentials_arn: this._authorizerCredentialsArn,

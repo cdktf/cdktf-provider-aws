@@ -107,7 +107,7 @@ export class GlacierVault extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_policy: this._accessPolicy,
       name: this._name,

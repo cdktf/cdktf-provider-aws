@@ -91,7 +91,7 @@ export class DataAwsEc2InstanceTypeOffering extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       location_type: this._locationType,
       preferred_instance_types: this._preferredInstanceTypes,

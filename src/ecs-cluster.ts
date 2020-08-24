@@ -119,7 +119,7 @@ export class EcsCluster extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       capacity_providers: this._capacityProviders,
       name: this._name,

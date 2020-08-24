@@ -114,7 +114,7 @@ export class AppautoscalingTarget extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       max_capacity: this._maxCapacity,
       min_capacity: this._minCapacity,

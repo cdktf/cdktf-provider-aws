@@ -70,7 +70,7 @@ export class IamRolePolicyAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       policy_arn: this._policyArn,
       role: this._role,

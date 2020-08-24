@@ -90,7 +90,7 @@ export class IotCertificate extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       active: this._active,
       csr: this._csr,

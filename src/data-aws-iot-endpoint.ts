@@ -64,7 +64,7 @@ export class DataAwsIotEndpoint extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       endpoint_type: this._endpointType,
     };

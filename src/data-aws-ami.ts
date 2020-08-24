@@ -275,7 +275,7 @@ export class DataAwsAmi extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       executable_users: this._executableUsers,
       most_recent: this._mostRecent,

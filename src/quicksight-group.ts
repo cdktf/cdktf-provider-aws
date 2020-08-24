@@ -97,7 +97,7 @@ export class QuicksightGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       aws_account_id: this._awsAccountId,
       description: this._description,

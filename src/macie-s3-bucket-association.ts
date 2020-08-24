@@ -97,7 +97,7 @@ export class MacieS3BucketAssociation extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket_name: this._bucketName,
       member_account_id: this._memberAccountId,

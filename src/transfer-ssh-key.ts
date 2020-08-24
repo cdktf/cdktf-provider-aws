@@ -81,7 +81,7 @@ export class TransferSshKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       body: this._body,
       server_id: this._serverId,

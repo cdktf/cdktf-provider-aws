@@ -75,7 +75,7 @@ export class LightsailStaticIpAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       instance_name: this._instanceName,
       static_ip_name: this._staticIpName,

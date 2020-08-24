@@ -124,7 +124,7 @@ export class DataAwsVpnGateway extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       amazon_side_asn: this._amazonSideAsn,
       attached_vpc_id: this._attachedVpcId,

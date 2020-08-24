@@ -182,7 +182,7 @@ export class Eip extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       associate_with_private_ip: this._associateWithPrivateIp,
       customer_owned_ipv4_pool: this._customerOwnedIpv4Pool,

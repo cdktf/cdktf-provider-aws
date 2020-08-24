@@ -151,7 +151,7 @@ export class KmsGrant extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       grant_creation_tokens: this._grantCreationTokens,
       grantee_principal: this._granteePrincipal,

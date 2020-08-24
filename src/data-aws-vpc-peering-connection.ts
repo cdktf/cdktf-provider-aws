@@ -185,7 +185,7 @@ export class DataAwsVpcPeeringConnection extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cidr_block: this._cidrBlock,
       owner_id: this._ownerId,

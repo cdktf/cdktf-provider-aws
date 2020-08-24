@@ -121,7 +121,7 @@ export class DataAwsLambdaLayerVersion extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       compatible_runtime: this._compatibleRuntime,
       layer_name: this._layerName,

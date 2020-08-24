@@ -94,7 +94,7 @@ export class DataAwsBatchComputeEnvironment extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       compute_environment_name: this._computeEnvironmentName,
     };

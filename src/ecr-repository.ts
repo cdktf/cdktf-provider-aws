@@ -126,7 +126,7 @@ export class EcrRepository extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       image_tag_mutability: this._imageTagMutability,
       name: this._name,

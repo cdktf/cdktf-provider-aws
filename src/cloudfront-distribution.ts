@@ -489,7 +489,7 @@ export class CloudfrontDistribution extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       aliases: this._aliases,
       comment: this._comment,

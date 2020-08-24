@@ -70,7 +70,7 @@ export class VpcEndpointServiceAllowedPrincipal extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       principal_arn: this._principalArn,
       vpc_endpoint_service_id: this._vpcEndpointServiceId,

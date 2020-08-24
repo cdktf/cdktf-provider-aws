@@ -70,7 +70,7 @@ export class OrganizationsPolicyAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       policy_id: this._policyId,
       target_id: this._targetId,

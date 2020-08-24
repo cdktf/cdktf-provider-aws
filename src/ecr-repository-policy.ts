@@ -75,7 +75,7 @@ export class EcrRepositoryPolicy extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       policy: this._policy,
       repository: this._repository,

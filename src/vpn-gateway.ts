@@ -97,7 +97,7 @@ export class VpnGateway extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       amazon_side_asn: this._amazonSideAsn,
       availability_zone: this._availabilityZone,

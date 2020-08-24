@@ -102,7 +102,7 @@ export class IamUserSshKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       encoding: this._encoding,
       public_key: this._publicKey,

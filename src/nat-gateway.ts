@@ -96,7 +96,7 @@ export class NatGateway extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allocation_id: this._allocationId,
       subnet_id: this._subnetId,

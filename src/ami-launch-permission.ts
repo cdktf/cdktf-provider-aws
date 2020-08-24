@@ -70,7 +70,7 @@ export class AmiLaunchPermission extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: this._accountId,
       image_id: this._imageId,

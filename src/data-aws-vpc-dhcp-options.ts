@@ -121,7 +121,7 @@ export class DataAwsVpcDhcpOptions extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dhcp_options_id: this._dhcpOptionsId,
       tags: this._tags,

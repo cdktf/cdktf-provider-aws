@@ -80,7 +80,7 @@ export class DataAwsRegions extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       all_regions: this._allRegions,
       filter: this._filter,

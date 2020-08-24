@@ -299,7 +299,7 @@ export class DmsEndpoint extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate_arn: this._certificateArn,
       database_name: this._databaseName,

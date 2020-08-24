@@ -91,7 +91,7 @@ export class GlueSecurityConfiguration extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: this._name,
       encryption_configuration: this._encryptionConfiguration,

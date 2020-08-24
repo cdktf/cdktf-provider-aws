@@ -103,7 +103,7 @@ export class S3AccountPublicAccessBlock extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: this._accountId,
       block_public_acls: this._blockPublicAcls,

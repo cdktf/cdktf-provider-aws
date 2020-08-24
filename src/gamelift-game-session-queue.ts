@@ -113,7 +113,7 @@ export class GameliftGameSessionQueue extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destinations: this._destinations,
       name: this._name,

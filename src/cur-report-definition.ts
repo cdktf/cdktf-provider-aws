@@ -147,7 +147,7 @@ export class CurReportDefinition extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       additional_artifacts: this._additionalArtifacts,
       additional_schema_elements: this._additionalSchemaElements,

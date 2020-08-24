@@ -102,7 +102,7 @@ export class DataAwsSsmPatchBaseline extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_baseline: this._defaultBaseline,
       name_prefix: this._namePrefix,

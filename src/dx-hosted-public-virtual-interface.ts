@@ -189,7 +189,7 @@ export class DxHostedPublicVirtualInterface extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       address_family: this._addressFamily,
       amazon_address: this._amazonAddress,

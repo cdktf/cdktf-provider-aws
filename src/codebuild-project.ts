@@ -361,7 +361,7 @@ export class CodebuildProject extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       badge_enabled: this._badgeEnabled,
       build_timeout: this._buildTimeout,

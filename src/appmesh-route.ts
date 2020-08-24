@@ -177,7 +177,7 @@ export class AppmeshRoute extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       mesh_name: this._meshName,
       name: this._name,

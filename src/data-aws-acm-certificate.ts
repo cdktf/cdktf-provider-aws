@@ -119,7 +119,7 @@ export class DataAwsAcmCertificate extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       domain: this._domain,
       key_types: this._keyTypes,

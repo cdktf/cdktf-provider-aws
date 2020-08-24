@@ -95,7 +95,7 @@ export class DataAwsEcsService extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_arn: this._clusterArn,
       service_name: this._serviceName,

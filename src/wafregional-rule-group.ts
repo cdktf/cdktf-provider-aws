@@ -108,7 +108,7 @@ export class WafregionalRuleGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       metric_name: this._metricName,
       name: this._name,

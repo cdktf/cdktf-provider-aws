@@ -70,7 +70,7 @@ export class SnapshotCreateVolumePermission extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: this._accountId,
       snapshot_id: this._snapshotId,

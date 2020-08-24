@@ -81,7 +81,7 @@ export class AutoscalingAttachment extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       alb_target_group_arn: this._albTargetGroupArn,
       autoscaling_group_name: this._autoscalingGroupName,

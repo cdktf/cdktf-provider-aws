@@ -203,7 +203,7 @@ export class ApiGatewayDomainName extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate_arn: this._certificateArn,
       certificate_body: this._certificateBody,

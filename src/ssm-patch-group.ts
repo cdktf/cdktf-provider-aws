@@ -70,7 +70,7 @@ export class SsmPatchGroup extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       baseline_id: this._baselineId,
       patch_group: this._patchGroup,

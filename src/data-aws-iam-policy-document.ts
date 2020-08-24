@@ -136,7 +136,7 @@ export class DataAwsIamPolicyDocument extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       override_json: this._overrideJson,
       policy_id: this._policyId,

@@ -85,7 +85,7 @@ export class DataAwsBackupPlan extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       plan_id: this._planId,
       tags: this._tags,
