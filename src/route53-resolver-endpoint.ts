@@ -58,7 +58,7 @@ export class Route53ResolverEndpoint extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -66,69 +66,98 @@ export class Route53ResolverEndpoint extends TerraformResource {
   // direction - computed: false, optional: false, required: true
   private _direction: string;
   public get direction() {
-    return this._direction;
+    return this.getStringAttribute('direction');
   }
   public set direction(value: string) {
     this._direction = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction
+  }
 
-  // host_vpc_id - computed: true, optional: false, required: true
+  // host_vpc_id - computed: true, optional: false, required: false
   public get hostVpcId() {
     return this.getStringAttribute('host_vpc_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string ) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds: string[];
   public get securityGroupIds() {
-    return this._securityGroupIds;
+    return this.getListAttribute('security_group_ids');
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // ip_address - computed: false, optional: false, required: true
   private _ipAddress: Route53ResolverEndpointIpAddress[];
   public get ipAddress() {
-    return this._ipAddress;
+    return this.interpolationForAttribute('ip_address') as any;
   }
   public set ipAddress(value: Route53ResolverEndpointIpAddress[]) {
     this._ipAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: Route53ResolverEndpointTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: Route53ResolverEndpointTimeouts | undefined) {
+  public set timeouts(value: Route53ResolverEndpointTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

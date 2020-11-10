@@ -48,55 +48,80 @@ export class CognitoUserGroup extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // precedence - computed: false, optional: true, required: false
   private _precedence?: number;
   public get precedence() {
-    return this._precedence;
+    return this.getNumberAttribute('precedence');
   }
-  public set precedence(value: number | undefined) {
+  public set precedence(value: number ) {
     this._precedence = value;
+  }
+  public resetPrecedence() {
+    this._precedence = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get precedenceInput() {
+    return this._precedence
   }
 
   // role_arn - computed: false, optional: true, required: false
   private _roleArn?: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string ) {
     this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // user_pool_id - computed: false, optional: false, required: true
   private _userPoolId: string;
   public get userPoolId() {
-    return this._userPoolId;
+    return this.getStringAttribute('user_pool_id');
   }
   public set userPoolId(value: string) {
     this._userPoolId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userPoolIdInput() {
+    return this._userPoolId
   }
 
   // =========

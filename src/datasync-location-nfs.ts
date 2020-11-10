@@ -47,48 +47,59 @@ export class DatasyncLocationNfs extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // server_hostname - computed: false, optional: false, required: true
   private _serverHostname: string;
   public get serverHostname() {
-    return this._serverHostname;
+    return this.getStringAttribute('server_hostname');
   }
   public set serverHostname(value: string) {
     this._serverHostname = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverHostnameInput() {
+    return this._serverHostname
   }
 
   // subdirectory - computed: false, optional: false, required: true
   private _subdirectory: string;
   public get subdirectory() {
-    return this._subdirectory;
+    return this.getStringAttribute('subdirectory');
   }
   public set subdirectory(value: string) {
     this._subdirectory = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subdirectoryInput() {
+    return this._subdirectory
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // uri - computed: true, optional: false, required: true
+  // uri - computed: true, optional: false, required: false
   public get uri() {
     return this.getStringAttribute('uri');
   }
@@ -96,10 +107,14 @@ export class DatasyncLocationNfs extends TerraformResource {
   // on_prem_config - computed: false, optional: false, required: true
   private _onPremConfig: DatasyncLocationNfsOnPremConfig[];
   public get onPremConfig() {
-    return this._onPremConfig;
+    return this.interpolationForAttribute('on_prem_config') as any;
   }
   public set onPremConfig(value: DatasyncLocationNfsOnPremConfig[]) {
     this._onPremConfig = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onPremConfigInput() {
+    return this._onPremConfig
   }
 
   // =========

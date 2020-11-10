@@ -50,30 +50,37 @@ export class WafSqlInjectionMatchSet extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // sql_injection_match_tuples - computed: false, optional: true, required: false
   private _sqlInjectionMatchTuples?: WafSqlInjectionMatchSetSqlInjectionMatchTuples[];
   public get sqlInjectionMatchTuples() {
-    return this._sqlInjectionMatchTuples;
+    return this.interpolationForAttribute('sql_injection_match_tuples') as any;
   }
-  public set sqlInjectionMatchTuples(value: WafSqlInjectionMatchSetSqlInjectionMatchTuples[] | undefined) {
+  public set sqlInjectionMatchTuples(value: WafSqlInjectionMatchSetSqlInjectionMatchTuples[] ) {
     this._sqlInjectionMatchTuples = value;
+  }
+  public resetSqlInjectionMatchTuples() {
+    this._sqlInjectionMatchTuples = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlInjectionMatchTuplesInput() {
+    return this._sqlInjectionMatchTuples
   }
 
   // =========

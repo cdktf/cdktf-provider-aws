@@ -44,42 +44,56 @@ export class AccessanalyzerAnalyzer extends TerraformResource {
   // analyzer_name - computed: false, optional: false, required: true
   private _analyzerName: string;
   public get analyzerName() {
-    return this._analyzerName;
+    return this.getStringAttribute('analyzer_name');
   }
   public set analyzerName(value: string) {
     this._analyzerName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get analyzerNameInput() {
+    return this._analyzerName
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // type - computed: false, optional: true, required: false
   private _type?: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string ) {
     this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // =========

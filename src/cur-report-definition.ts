@@ -56,91 +56,129 @@ export class CurReportDefinition extends TerraformResource {
   // additional_artifacts - computed: false, optional: true, required: false
   private _additionalArtifacts?: string[];
   public get additionalArtifacts() {
-    return this._additionalArtifacts;
+    return this.getListAttribute('additional_artifacts');
   }
-  public set additionalArtifacts(value: string[] | undefined) {
+  public set additionalArtifacts(value: string[] ) {
     this._additionalArtifacts = value;
+  }
+  public resetAdditionalArtifacts() {
+    this._additionalArtifacts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalArtifactsInput() {
+    return this._additionalArtifacts
   }
 
   // additional_schema_elements - computed: false, optional: false, required: true
   private _additionalSchemaElements: string[];
   public get additionalSchemaElements() {
-    return this._additionalSchemaElements;
+    return this.getListAttribute('additional_schema_elements');
   }
   public set additionalSchemaElements(value: string[]) {
     this._additionalSchemaElements = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalSchemaElementsInput() {
+    return this._additionalSchemaElements
   }
 
   // compression - computed: false, optional: false, required: true
   private _compression: string;
   public get compression() {
-    return this._compression;
+    return this.getStringAttribute('compression');
   }
   public set compression(value: string) {
     this._compression = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compressionInput() {
+    return this._compression
   }
 
   // format - computed: false, optional: false, required: true
   private _format: string;
   public get format() {
-    return this._format;
+    return this.getStringAttribute('format');
   }
   public set format(value: string) {
     this._format = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get formatInput() {
+    return this._format
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // report_name - computed: false, optional: false, required: true
   private _reportName: string;
   public get reportName() {
-    return this._reportName;
+    return this.getStringAttribute('report_name');
   }
   public set reportName(value: string) {
     this._reportName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reportNameInput() {
+    return this._reportName
   }
 
   // s3_bucket - computed: false, optional: false, required: true
   private _s3Bucket: string;
   public get s3Bucket() {
-    return this._s3Bucket;
+    return this.getStringAttribute('s3_bucket');
   }
   public set s3Bucket(value: string) {
     this._s3Bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3BucketInput() {
+    return this._s3Bucket
   }
 
   // s3_prefix - computed: false, optional: true, required: false
   private _s3Prefix?: string;
   public get s3Prefix() {
-    return this._s3Prefix;
+    return this.getStringAttribute('s3_prefix');
   }
-  public set s3Prefix(value: string | undefined) {
+  public set s3Prefix(value: string ) {
     this._s3Prefix = value;
+  }
+  public resetS3Prefix() {
+    this._s3Prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3PrefixInput() {
+    return this._s3Prefix
   }
 
   // s3_region - computed: false, optional: false, required: true
   private _s3Region: string;
   public get s3Region() {
-    return this._s3Region;
+    return this.getStringAttribute('s3_region');
   }
   public set s3Region(value: string) {
     this._s3Region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3RegionInput() {
+    return this._s3Region
   }
 
   // time_unit - computed: false, optional: false, required: true
   private _timeUnit: string;
   public get timeUnit() {
-    return this._timeUnit;
+    return this.getStringAttribute('time_unit');
   }
   public set timeUnit(value: string) {
     this._timeUnit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeUnitInput() {
+    return this._timeUnit
   }
 
   // =========

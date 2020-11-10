@@ -8,6 +8,7 @@ import { TerraformMetaArguments } from 'cdktf';
 // Configuration
 
 export interface DataAwsGuarddutyDetectorConfig extends TerraformMetaArguments {
+  readonly id?: string;
 }
 
 // Resource
@@ -29,13 +30,14 @@ export class DataAwsGuarddutyDetector extends TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // finding_publishing_frequency - computed: true, optional: false, required: true
+  // finding_publishing_frequency - computed: true, optional: false, required: false
   public get findingPublishingFrequency() {
     return this.getStringAttribute('finding_publishing_frequency');
   }
@@ -43,18 +45,25 @@ export class DataAwsGuarddutyDetector extends TerraformDataSource {
   // id - computed: false, optional: true, required: false
   private _id?: string;
   public get id() {
-    return this._id;
+    return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string ) {
     this._id = value;
   }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id
+  }
 
-  // service_role_arn - computed: true, optional: false, required: true
+  // service_role_arn - computed: true, optional: false, required: false
   public get serviceRoleArn() {
     return this.getStringAttribute('service_role_arn');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -65,6 +74,7 @@ export class DataAwsGuarddutyDetector extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: this._id,
     };
   }
 }

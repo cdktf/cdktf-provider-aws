@@ -51,46 +51,64 @@ export class AthenaDatabase extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
   }
 
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this._forceDestroy;
+    return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | undefined) {
+  public set forceDestroy(value: boolean ) {
     this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // encryption_configuration - computed: false, optional: true, required: false
   private _encryptionConfiguration?: AthenaDatabaseEncryptionConfiguration[];
   public get encryptionConfiguration() {
-    return this._encryptionConfiguration;
+    return this.interpolationForAttribute('encryption_configuration') as any;
   }
-  public set encryptionConfiguration(value: AthenaDatabaseEncryptionConfiguration[] | undefined) {
+  public set encryptionConfiguration(value: AthenaDatabaseEncryptionConfiguration[] ) {
     this._encryptionConfiguration = value;
+  }
+  public resetEncryptionConfiguration() {
+    this._encryptionConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionConfigurationInput() {
+    return this._encryptionConfiguration
   }
 
   // =========

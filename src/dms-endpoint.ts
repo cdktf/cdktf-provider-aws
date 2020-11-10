@@ -113,22 +113,36 @@ export class DmsEndpoint extends TerraformResource {
   // certificate_arn - computed: true, optional: true, required: false
   private _certificateArn?: string;
   public get certificateArn() {
-    return this._certificateArn ?? this.getStringAttribute('certificate_arn');
+    return this.getStringAttribute('certificate_arn');
   }
-  public set certificateArn(value: string | undefined) {
+  public set certificateArn(value: string) {
     this._certificateArn = value;
+  }
+  public resetCertificateArn() {
+    this._certificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateArnInput() {
+    return this._certificateArn
   }
 
   // database_name - computed: false, optional: true, required: false
   private _databaseName?: string;
   public get databaseName() {
-    return this._databaseName;
+    return this.getStringAttribute('database_name');
   }
-  public set databaseName(value: string | undefined) {
+  public set databaseName(value: string ) {
     this._databaseName = value;
   }
+  public resetDatabaseName() {
+    this._databaseName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName
+  }
 
-  // endpoint_arn - computed: true, optional: false, required: true
+  // endpoint_arn - computed: true, optional: false, required: false
   public get endpointArn() {
     return this.getStringAttribute('endpoint_arn');
   }
@@ -136,163 +150,269 @@ export class DmsEndpoint extends TerraformResource {
   // endpoint_id - computed: false, optional: false, required: true
   private _endpointId: string;
   public get endpointId() {
-    return this._endpointId;
+    return this.getStringAttribute('endpoint_id');
   }
   public set endpointId(value: string) {
     this._endpointId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointIdInput() {
+    return this._endpointId
   }
 
   // endpoint_type - computed: false, optional: false, required: true
   private _endpointType: string;
   public get endpointType() {
-    return this._endpointType;
+    return this.getStringAttribute('endpoint_type');
   }
   public set endpointType(value: string) {
     this._endpointType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointTypeInput() {
+    return this._endpointType
   }
 
   // engine_name - computed: false, optional: false, required: true
   private _engineName: string;
   public get engineName() {
-    return this._engineName;
+    return this.getStringAttribute('engine_name');
   }
   public set engineName(value: string) {
     this._engineName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineNameInput() {
+    return this._engineName
   }
 
   // extra_connection_attributes - computed: true, optional: true, required: false
   private _extraConnectionAttributes?: string;
   public get extraConnectionAttributes() {
-    return this._extraConnectionAttributes ?? this.getStringAttribute('extra_connection_attributes');
+    return this.getStringAttribute('extra_connection_attributes');
   }
-  public set extraConnectionAttributes(value: string | undefined) {
+  public set extraConnectionAttributes(value: string) {
     this._extraConnectionAttributes = value;
+  }
+  public resetExtraConnectionAttributes() {
+    this._extraConnectionAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraConnectionAttributesInput() {
+    return this._extraConnectionAttributes
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_arn - computed: true, optional: true, required: false
   private _kmsKeyArn?: string;
   public get kmsKeyArn() {
-    return this._kmsKeyArn ?? this.getStringAttribute('kms_key_arn');
+    return this.getStringAttribute('kms_key_arn');
   }
-  public set kmsKeyArn(value: string | undefined) {
+  public set kmsKeyArn(value: string) {
     this._kmsKeyArn = value;
+  }
+  public resetKmsKeyArn() {
+    this._kmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn
   }
 
   // password - computed: false, optional: true, required: false
   private _password?: string;
   public get password() {
-    return this._password;
+    return this.getStringAttribute('password');
   }
-  public set password(value: string | undefined) {
+  public set password(value: string ) {
     this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password
   }
 
   // port - computed: false, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this._port;
+    return this.getNumberAttribute('port');
   }
-  public set port(value: number | undefined) {
+  public set port(value: number ) {
     this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port
   }
 
   // server_name - computed: false, optional: true, required: false
   private _serverName?: string;
   public get serverName() {
-    return this._serverName;
+    return this.getStringAttribute('server_name');
   }
-  public set serverName(value: string | undefined) {
+  public set serverName(value: string ) {
     this._serverName = value;
+  }
+  public resetServerName() {
+    this._serverName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverNameInput() {
+    return this._serverName
   }
 
   // service_access_role - computed: false, optional: true, required: false
   private _serviceAccessRole?: string;
   public get serviceAccessRole() {
-    return this._serviceAccessRole;
+    return this.getStringAttribute('service_access_role');
   }
-  public set serviceAccessRole(value: string | undefined) {
+  public set serviceAccessRole(value: string ) {
     this._serviceAccessRole = value;
+  }
+  public resetServiceAccessRole() {
+    this._serviceAccessRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAccessRoleInput() {
+    return this._serviceAccessRole
   }
 
   // ssl_mode - computed: true, optional: true, required: false
   private _sslMode?: string;
   public get sslMode() {
-    return this._sslMode ?? this.getStringAttribute('ssl_mode');
+    return this.getStringAttribute('ssl_mode');
   }
-  public set sslMode(value: string | undefined) {
+  public set sslMode(value: string) {
     this._sslMode = value;
+  }
+  public resetSslMode() {
+    this._sslMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslModeInput() {
+    return this._sslMode
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // username - computed: false, optional: true, required: false
   private _username?: string;
   public get username() {
-    return this._username;
+    return this.getStringAttribute('username');
   }
-  public set username(value: string | undefined) {
+  public set username(value: string ) {
     this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username
   }
 
   // elasticsearch_settings - computed: false, optional: true, required: false
   private _elasticsearchSettings?: DmsEndpointElasticsearchSettings[];
   public get elasticsearchSettings() {
-    return this._elasticsearchSettings;
+    return this.interpolationForAttribute('elasticsearch_settings') as any;
   }
-  public set elasticsearchSettings(value: DmsEndpointElasticsearchSettings[] | undefined) {
+  public set elasticsearchSettings(value: DmsEndpointElasticsearchSettings[] ) {
     this._elasticsearchSettings = value;
+  }
+  public resetElasticsearchSettings() {
+    this._elasticsearchSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elasticsearchSettingsInput() {
+    return this._elasticsearchSettings
   }
 
   // kafka_settings - computed: false, optional: true, required: false
   private _kafkaSettings?: DmsEndpointKafkaSettings[];
   public get kafkaSettings() {
-    return this._kafkaSettings;
+    return this.interpolationForAttribute('kafka_settings') as any;
   }
-  public set kafkaSettings(value: DmsEndpointKafkaSettings[] | undefined) {
+  public set kafkaSettings(value: DmsEndpointKafkaSettings[] ) {
     this._kafkaSettings = value;
+  }
+  public resetKafkaSettings() {
+    this._kafkaSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kafkaSettingsInput() {
+    return this._kafkaSettings
   }
 
   // kinesis_settings - computed: false, optional: true, required: false
   private _kinesisSettings?: DmsEndpointKinesisSettings[];
   public get kinesisSettings() {
-    return this._kinesisSettings;
+    return this.interpolationForAttribute('kinesis_settings') as any;
   }
-  public set kinesisSettings(value: DmsEndpointKinesisSettings[] | undefined) {
+  public set kinesisSettings(value: DmsEndpointKinesisSettings[] ) {
     this._kinesisSettings = value;
+  }
+  public resetKinesisSettings() {
+    this._kinesisSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kinesisSettingsInput() {
+    return this._kinesisSettings
   }
 
   // mongodb_settings - computed: false, optional: true, required: false
   private _mongodbSettings?: DmsEndpointMongodbSettings[];
   public get mongodbSettings() {
-    return this._mongodbSettings;
+    return this.interpolationForAttribute('mongodb_settings') as any;
   }
-  public set mongodbSettings(value: DmsEndpointMongodbSettings[] | undefined) {
+  public set mongodbSettings(value: DmsEndpointMongodbSettings[] ) {
     this._mongodbSettings = value;
+  }
+  public resetMongodbSettings() {
+    this._mongodbSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mongodbSettingsInput() {
+    return this._mongodbSettings
   }
 
   // s3_settings - computed: false, optional: true, required: false
   private _s3Settings?: DmsEndpointS3Settings[];
   public get s3Settings() {
-    return this._s3Settings;
+    return this.interpolationForAttribute('s3_settings') as any;
   }
-  public set s3Settings(value: DmsEndpointS3Settings[] | undefined) {
+  public set s3Settings(value: DmsEndpointS3Settings[] ) {
     this._s3Settings = value;
+  }
+  public resetS3Settings() {
+    this._s3Settings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3SettingsInput() {
+    return this._s3Settings
   }
 
   // =========

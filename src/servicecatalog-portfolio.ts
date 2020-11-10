@@ -51,12 +51,12 @@ export class ServicecatalogPortfolio extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // created_time - computed: true, optional: false, required: true
+  // created_time - computed: true, optional: false, required: false
   public get createdTime() {
     return this.getStringAttribute('created_time');
   }
@@ -64,55 +64,83 @@ export class ServicecatalogPortfolio extends TerraformResource {
   // description - computed: true, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description ?? this.getStringAttribute('description');
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // provider_name - computed: false, optional: true, required: false
   private _providerName?: string;
   public get providerName() {
-    return this._providerName;
+    return this.getStringAttribute('provider_name');
   }
-  public set providerName(value: string | undefined) {
+  public set providerName(value: string ) {
     this._providerName = value;
+  }
+  public resetProviderName() {
+    this._providerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerNameInput() {
+    return this._providerName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: ServicecatalogPortfolioTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: ServicecatalogPortfolioTimeouts | undefined) {
+  public set timeouts(value: ServicecatalogPortfolioTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

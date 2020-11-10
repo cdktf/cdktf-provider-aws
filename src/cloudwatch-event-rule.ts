@@ -51,7 +51,7 @@ export class CloudwatchEventRule extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -59,82 +59,134 @@ export class CloudwatchEventRule extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // event_pattern - computed: false, optional: true, required: false
   private _eventPattern?: string;
   public get eventPattern() {
-    return this._eventPattern;
+    return this.getStringAttribute('event_pattern');
   }
-  public set eventPattern(value: string | undefined) {
+  public set eventPattern(value: string ) {
     this._eventPattern = value;
+  }
+  public resetEventPattern() {
+    this._eventPattern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventPatternInput() {
+    return this._eventPattern
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // is_enabled - computed: false, optional: true, required: false
   private _isEnabled?: boolean;
   public get isEnabled() {
-    return this._isEnabled;
+    return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | undefined) {
+  public set isEnabled(value: boolean ) {
     this._isEnabled = value;
+  }
+  public resetIsEnabled() {
+    this._isEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isEnabledInput() {
+    return this._isEnabled
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // role_arn - computed: false, optional: true, required: false
   private _roleArn?: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string ) {
     this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // schedule_expression - computed: false, optional: true, required: false
   private _scheduleExpression?: string;
   public get scheduleExpression() {
-    return this._scheduleExpression;
+    return this.getStringAttribute('schedule_expression');
   }
-  public set scheduleExpression(value: string | undefined) {
+  public set scheduleExpression(value: string ) {
     this._scheduleExpression = value;
+  }
+  public resetScheduleExpression() {
+    this._scheduleExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleExpressionInput() {
+    return this._scheduleExpression
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

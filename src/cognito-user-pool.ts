@@ -172,13 +172,20 @@ export class CognitoUserPool extends TerraformResource {
   // alias_attributes - computed: false, optional: true, required: false
   private _aliasAttributes?: string[];
   public get aliasAttributes() {
-    return this._aliasAttributes;
+    return this.getListAttribute('alias_attributes');
   }
-  public set aliasAttributes(value: string[] | undefined) {
+  public set aliasAttributes(value: string[] ) {
     this._aliasAttributes = value;
   }
+  public resetAliasAttributes() {
+    this._aliasAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasAttributesInput() {
+    return this._aliasAttributes
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -186,13 +193,20 @@ export class CognitoUserPool extends TerraformResource {
   // auto_verified_attributes - computed: false, optional: true, required: false
   private _autoVerifiedAttributes?: string[];
   public get autoVerifiedAttributes() {
-    return this._autoVerifiedAttributes;
+    return this.getListAttribute('auto_verified_attributes');
   }
-  public set autoVerifiedAttributes(value: string[] | undefined) {
+  public set autoVerifiedAttributes(value: string[] ) {
     this._autoVerifiedAttributes = value;
   }
+  public resetAutoVerifiedAttributes() {
+    this._autoVerifiedAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoVerifiedAttributesInput() {
+    return this._autoVerifiedAttributes
+  }
 
-  // creation_date - computed: true, optional: false, required: true
+  // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
@@ -200,36 +214,46 @@ export class CognitoUserPool extends TerraformResource {
   // email_verification_message - computed: true, optional: true, required: false
   private _emailVerificationMessage?: string;
   public get emailVerificationMessage() {
-    return this._emailVerificationMessage ?? this.getStringAttribute('email_verification_message');
+    return this.getStringAttribute('email_verification_message');
   }
-  public set emailVerificationMessage(value: string | undefined) {
+  public set emailVerificationMessage(value: string) {
     this._emailVerificationMessage = value;
+  }
+  public resetEmailVerificationMessage() {
+    this._emailVerificationMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailVerificationMessageInput() {
+    return this._emailVerificationMessage
   }
 
   // email_verification_subject - computed: true, optional: true, required: false
   private _emailVerificationSubject?: string;
   public get emailVerificationSubject() {
-    return this._emailVerificationSubject ?? this.getStringAttribute('email_verification_subject');
+    return this.getStringAttribute('email_verification_subject');
   }
-  public set emailVerificationSubject(value: string | undefined) {
+  public set emailVerificationSubject(value: string) {
     this._emailVerificationSubject = value;
   }
+  public resetEmailVerificationSubject() {
+    this._emailVerificationSubject = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailVerificationSubjectInput() {
+    return this._emailVerificationSubject
+  }
 
-  // endpoint - computed: true, optional: false, required: true
+  // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_modified_date - computed: true, optional: false, required: true
+  // last_modified_date - computed: true, optional: false, required: false
   public get lastModifiedDate() {
     return this.getStringAttribute('last_modified_date');
   }
@@ -237,154 +261,270 @@ export class CognitoUserPool extends TerraformResource {
   // mfa_configuration - computed: false, optional: true, required: false
   private _mfaConfiguration?: string;
   public get mfaConfiguration() {
-    return this._mfaConfiguration;
+    return this.getStringAttribute('mfa_configuration');
   }
-  public set mfaConfiguration(value: string | undefined) {
+  public set mfaConfiguration(value: string ) {
     this._mfaConfiguration = value;
+  }
+  public resetMfaConfiguration() {
+    this._mfaConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mfaConfigurationInput() {
+    return this._mfaConfiguration
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // sms_authentication_message - computed: false, optional: true, required: false
   private _smsAuthenticationMessage?: string;
   public get smsAuthenticationMessage() {
-    return this._smsAuthenticationMessage;
+    return this.getStringAttribute('sms_authentication_message');
   }
-  public set smsAuthenticationMessage(value: string | undefined) {
+  public set smsAuthenticationMessage(value: string ) {
     this._smsAuthenticationMessage = value;
+  }
+  public resetSmsAuthenticationMessage() {
+    this._smsAuthenticationMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get smsAuthenticationMessageInput() {
+    return this._smsAuthenticationMessage
   }
 
   // sms_verification_message - computed: true, optional: true, required: false
   private _smsVerificationMessage?: string;
   public get smsVerificationMessage() {
-    return this._smsVerificationMessage ?? this.getStringAttribute('sms_verification_message');
+    return this.getStringAttribute('sms_verification_message');
   }
-  public set smsVerificationMessage(value: string | undefined) {
+  public set smsVerificationMessage(value: string) {
     this._smsVerificationMessage = value;
+  }
+  public resetSmsVerificationMessage() {
+    this._smsVerificationMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get smsVerificationMessageInput() {
+    return this._smsVerificationMessage
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // username_attributes - computed: false, optional: true, required: false
   private _usernameAttributes?: string[];
   public get usernameAttributes() {
-    return this._usernameAttributes;
+    return this.getListAttribute('username_attributes');
   }
-  public set usernameAttributes(value: string[] | undefined) {
+  public set usernameAttributes(value: string[] ) {
     this._usernameAttributes = value;
+  }
+  public resetUsernameAttributes() {
+    this._usernameAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameAttributesInput() {
+    return this._usernameAttributes
   }
 
   // admin_create_user_config - computed: false, optional: true, required: false
   private _adminCreateUserConfig?: CognitoUserPoolAdminCreateUserConfig[];
   public get adminCreateUserConfig() {
-    return this._adminCreateUserConfig;
+    return this.interpolationForAttribute('admin_create_user_config') as any;
   }
-  public set adminCreateUserConfig(value: CognitoUserPoolAdminCreateUserConfig[] | undefined) {
+  public set adminCreateUserConfig(value: CognitoUserPoolAdminCreateUserConfig[] ) {
     this._adminCreateUserConfig = value;
+  }
+  public resetAdminCreateUserConfig() {
+    this._adminCreateUserConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminCreateUserConfigInput() {
+    return this._adminCreateUserConfig
   }
 
   // device_configuration - computed: false, optional: true, required: false
   private _deviceConfiguration?: CognitoUserPoolDeviceConfiguration[];
   public get deviceConfiguration() {
-    return this._deviceConfiguration;
+    return this.interpolationForAttribute('device_configuration') as any;
   }
-  public set deviceConfiguration(value: CognitoUserPoolDeviceConfiguration[] | undefined) {
+  public set deviceConfiguration(value: CognitoUserPoolDeviceConfiguration[] ) {
     this._deviceConfiguration = value;
+  }
+  public resetDeviceConfiguration() {
+    this._deviceConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceConfigurationInput() {
+    return this._deviceConfiguration
   }
 
   // email_configuration - computed: false, optional: true, required: false
   private _emailConfiguration?: CognitoUserPoolEmailConfiguration[];
   public get emailConfiguration() {
-    return this._emailConfiguration;
+    return this.interpolationForAttribute('email_configuration') as any;
   }
-  public set emailConfiguration(value: CognitoUserPoolEmailConfiguration[] | undefined) {
+  public set emailConfiguration(value: CognitoUserPoolEmailConfiguration[] ) {
     this._emailConfiguration = value;
+  }
+  public resetEmailConfiguration() {
+    this._emailConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailConfigurationInput() {
+    return this._emailConfiguration
   }
 
   // lambda_config - computed: false, optional: true, required: false
   private _lambdaConfig?: CognitoUserPoolLambdaConfig[];
   public get lambdaConfig() {
-    return this._lambdaConfig;
+    return this.interpolationForAttribute('lambda_config') as any;
   }
-  public set lambdaConfig(value: CognitoUserPoolLambdaConfig[] | undefined) {
+  public set lambdaConfig(value: CognitoUserPoolLambdaConfig[] ) {
     this._lambdaConfig = value;
+  }
+  public resetLambdaConfig() {
+    this._lambdaConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaConfigInput() {
+    return this._lambdaConfig
   }
 
   // password_policy - computed: false, optional: true, required: false
   private _passwordPolicy?: CognitoUserPoolPasswordPolicy[];
   public get passwordPolicy() {
-    return this._passwordPolicy;
+    return this.interpolationForAttribute('password_policy') as any;
   }
-  public set passwordPolicy(value: CognitoUserPoolPasswordPolicy[] | undefined) {
+  public set passwordPolicy(value: CognitoUserPoolPasswordPolicy[] ) {
     this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy
   }
 
   // schema - computed: false, optional: true, required: false
   private _schema?: CognitoUserPoolSchema[];
   public get schema() {
-    return this._schema;
+    return this.interpolationForAttribute('schema') as any;
   }
-  public set schema(value: CognitoUserPoolSchema[] | undefined) {
+  public set schema(value: CognitoUserPoolSchema[] ) {
     this._schema = value;
+  }
+  public resetSchema() {
+    this._schema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema
   }
 
   // sms_configuration - computed: false, optional: true, required: false
   private _smsConfiguration?: CognitoUserPoolSmsConfiguration[];
   public get smsConfiguration() {
-    return this._smsConfiguration;
+    return this.interpolationForAttribute('sms_configuration') as any;
   }
-  public set smsConfiguration(value: CognitoUserPoolSmsConfiguration[] | undefined) {
+  public set smsConfiguration(value: CognitoUserPoolSmsConfiguration[] ) {
     this._smsConfiguration = value;
+  }
+  public resetSmsConfiguration() {
+    this._smsConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get smsConfigurationInput() {
+    return this._smsConfiguration
   }
 
   // software_token_mfa_configuration - computed: false, optional: true, required: false
   private _softwareTokenMfaConfiguration?: CognitoUserPoolSoftwareTokenMfaConfiguration[];
   public get softwareTokenMfaConfiguration() {
-    return this._softwareTokenMfaConfiguration;
+    return this.interpolationForAttribute('software_token_mfa_configuration') as any;
   }
-  public set softwareTokenMfaConfiguration(value: CognitoUserPoolSoftwareTokenMfaConfiguration[] | undefined) {
+  public set softwareTokenMfaConfiguration(value: CognitoUserPoolSoftwareTokenMfaConfiguration[] ) {
     this._softwareTokenMfaConfiguration = value;
+  }
+  public resetSoftwareTokenMfaConfiguration() {
+    this._softwareTokenMfaConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get softwareTokenMfaConfigurationInput() {
+    return this._softwareTokenMfaConfiguration
   }
 
   // user_pool_add_ons - computed: false, optional: true, required: false
   private _userPoolAddOns?: CognitoUserPoolUserPoolAddOns[];
   public get userPoolAddOns() {
-    return this._userPoolAddOns;
+    return this.interpolationForAttribute('user_pool_add_ons') as any;
   }
-  public set userPoolAddOns(value: CognitoUserPoolUserPoolAddOns[] | undefined) {
+  public set userPoolAddOns(value: CognitoUserPoolUserPoolAddOns[] ) {
     this._userPoolAddOns = value;
+  }
+  public resetUserPoolAddOns() {
+    this._userPoolAddOns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userPoolAddOnsInput() {
+    return this._userPoolAddOns
   }
 
   // username_configuration - computed: false, optional: true, required: false
   private _usernameConfiguration?: CognitoUserPoolUsernameConfiguration[];
   public get usernameConfiguration() {
-    return this._usernameConfiguration;
+    return this.interpolationForAttribute('username_configuration') as any;
   }
-  public set usernameConfiguration(value: CognitoUserPoolUsernameConfiguration[] | undefined) {
+  public set usernameConfiguration(value: CognitoUserPoolUsernameConfiguration[] ) {
     this._usernameConfiguration = value;
+  }
+  public resetUsernameConfiguration() {
+    this._usernameConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameConfigurationInput() {
+    return this._usernameConfiguration
   }
 
   // verification_message_template - computed: false, optional: true, required: false
   private _verificationMessageTemplate?: CognitoUserPoolVerificationMessageTemplate[];
   public get verificationMessageTemplate() {
-    return this._verificationMessageTemplate;
+    return this.interpolationForAttribute('verification_message_template') as any;
   }
-  public set verificationMessageTemplate(value: CognitoUserPoolVerificationMessageTemplate[] | undefined) {
+  public set verificationMessageTemplate(value: CognitoUserPoolVerificationMessageTemplate[] ) {
     this._verificationMessageTemplate = value;
+  }
+  public resetVerificationMessageTemplate() {
+    this._verificationMessageTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get verificationMessageTemplateInput() {
+    return this._verificationMessageTemplate
   }
 
   // =========

@@ -38,21 +38,21 @@ export class EbsDefaultKmsKey extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key_arn - computed: false, optional: false, required: true
   private _keyArn: string;
   public get keyArn() {
-    return this._keyArn;
+    return this.getStringAttribute('key_arn');
   }
   public set keyArn(value: string) {
     this._keyArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyArnInput() {
+    return this._keyArn
   }
 
   // =========

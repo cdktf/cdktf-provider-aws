@@ -57,7 +57,7 @@ export class SecretsmanagerSecret extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -65,67 +65,105 @@ export class SecretsmanagerSecret extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId;
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string ) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix ?? this.getStringAttribute('name_prefix');
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // policy - computed: false, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
-  public set policy(value: string | undefined) {
+  public set policy(value: string ) {
     this._policy = value;
+  }
+  public resetPolicy() {
+    this._policy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // recovery_window_in_days - computed: false, optional: true, required: false
   private _recoveryWindowInDays?: number;
   public get recoveryWindowInDays() {
-    return this._recoveryWindowInDays;
+    return this.getNumberAttribute('recovery_window_in_days');
   }
-  public set recoveryWindowInDays(value: number | undefined) {
+  public set recoveryWindowInDays(value: number ) {
     this._recoveryWindowInDays = value;
   }
+  public resetRecoveryWindowInDays() {
+    this._recoveryWindowInDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recoveryWindowInDaysInput() {
+    return this._recoveryWindowInDays
+  }
 
-  // rotation_enabled - computed: true, optional: false, required: true
+  // rotation_enabled - computed: true, optional: false, required: false
   public get rotationEnabled() {
     return this.getBooleanAttribute('rotation_enabled');
   }
@@ -133,28 +171,49 @@ export class SecretsmanagerSecret extends TerraformResource {
   // rotation_lambda_arn - computed: true, optional: true, required: false
   private _rotationLambdaArn?: string;
   public get rotationLambdaArn() {
-    return this._rotationLambdaArn ?? this.getStringAttribute('rotation_lambda_arn');
+    return this.getStringAttribute('rotation_lambda_arn');
   }
-  public set rotationLambdaArn(value: string | undefined) {
+  public set rotationLambdaArn(value: string) {
     this._rotationLambdaArn = value;
+  }
+  public resetRotationLambdaArn() {
+    this._rotationLambdaArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationLambdaArnInput() {
+    return this._rotationLambdaArn
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // rotation_rules - computed: false, optional: true, required: false
   private _rotationRules?: SecretsmanagerSecretRotationRules[];
   public get rotationRules() {
-    return this._rotationRules;
+    return this.interpolationForAttribute('rotation_rules') as any;
   }
-  public set rotationRules(value: SecretsmanagerSecretRotationRules[] | undefined) {
+  public set rotationRules(value: SecretsmanagerSecretRotationRules[] ) {
     this._rotationRules = value;
+  }
+  public resetRotationRules() {
+    this._rotationRules = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationRulesInput() {
+    return this._rotationRules
   }
 
   // =========

@@ -37,7 +37,7 @@ export class DataAwsRoute53DelegationSet extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // caller_reference - computed: true, optional: false, required: true
+  // caller_reference - computed: true, optional: false, required: false
   public get callerReference() {
     return this.getStringAttribute('caller_reference');
   }
@@ -45,13 +45,17 @@ export class DataAwsRoute53DelegationSet extends TerraformDataSource {
   // id - computed: false, optional: false, required: true
   private _id: string;
   public get id() {
-    return this._id;
+    return this.getStringAttribute('id');
   }
   public set id(value: string) {
     this._id = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id
+  }
 
-  // name_servers - computed: true, optional: false, required: true
+  // name_servers - computed: true, optional: false, required: false
   public get nameServers() {
     return this.getListAttribute('name_servers');
   }

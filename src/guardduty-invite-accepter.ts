@@ -48,37 +48,48 @@ export class GuarddutyInviteAccepter extends TerraformResource {
   // detector_id - computed: false, optional: false, required: true
   private _detectorId: string;
   public get detectorId() {
-    return this._detectorId;
+    return this.getStringAttribute('detector_id');
   }
   public set detectorId(value: string) {
     this._detectorId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get detectorIdInput() {
+    return this._detectorId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // master_account_id - computed: false, optional: false, required: true
   private _masterAccountId: string;
   public get masterAccountId() {
-    return this._masterAccountId;
+    return this.getStringAttribute('master_account_id');
   }
   public set masterAccountId(value: string) {
     this._masterAccountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get masterAccountIdInput() {
+    return this._masterAccountId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: GuarddutyInviteAccepterTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: GuarddutyInviteAccepterTimeouts | undefined) {
+  public set timeouts(value: GuarddutyInviteAccepterTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

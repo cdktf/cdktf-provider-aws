@@ -61,13 +61,20 @@ export class S3AccessPoint extends TerraformResource {
   // account_id - computed: true, optional: true, required: false
   private _accountId?: string;
   public get accountId() {
-    return this._accountId ?? this.getStringAttribute('account_id');
+    return this.getStringAttribute('account_id');
   }
-  public set accountId(value: string | undefined) {
+  public set accountId(value: string) {
     this._accountId = value;
   }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -75,41 +82,45 @@ export class S3AccessPoint extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
+  }
 
-  // domain_name - computed: true, optional: false, required: true
+  // domain_name - computed: true, optional: false, required: false
   public get domainName() {
     return this.getStringAttribute('domain_name');
   }
 
-  // has_public_access_policy - computed: true, optional: false, required: true
+  // has_public_access_policy - computed: true, optional: false, required: false
   public get hasPublicAccessPolicy() {
     return this.getBooleanAttribute('has_public_access_policy');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // network_origin - computed: true, optional: false, required: true
+  // network_origin - computed: true, optional: false, required: false
   public get networkOrigin() {
     return this.getStringAttribute('network_origin');
   }
@@ -117,28 +128,49 @@ export class S3AccessPoint extends TerraformResource {
   // policy - computed: false, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
-  public set policy(value: string | undefined) {
+  public set policy(value: string ) {
     this._policy = value;
+  }
+  public resetPolicy() {
+    this._policy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // public_access_block_configuration - computed: false, optional: true, required: false
   private _publicAccessBlockConfiguration?: S3AccessPointPublicAccessBlockConfiguration[];
   public get publicAccessBlockConfiguration() {
-    return this._publicAccessBlockConfiguration;
+    return this.interpolationForAttribute('public_access_block_configuration') as any;
   }
-  public set publicAccessBlockConfiguration(value: S3AccessPointPublicAccessBlockConfiguration[] | undefined) {
+  public set publicAccessBlockConfiguration(value: S3AccessPointPublicAccessBlockConfiguration[] ) {
     this._publicAccessBlockConfiguration = value;
+  }
+  public resetPublicAccessBlockConfiguration() {
+    this._publicAccessBlockConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicAccessBlockConfigurationInput() {
+    return this._publicAccessBlockConfiguration
   }
 
   // vpc_configuration - computed: false, optional: true, required: false
   private _vpcConfiguration?: S3AccessPointVpcConfiguration[];
   public get vpcConfiguration() {
-    return this._vpcConfiguration;
+    return this.interpolationForAttribute('vpc_configuration') as any;
   }
-  public set vpcConfiguration(value: S3AccessPointVpcConfiguration[] | undefined) {
+  public set vpcConfiguration(value: S3AccessPointVpcConfiguration[] ) {
     this._vpcConfiguration = value;
+  }
+  public resetVpcConfiguration() {
+    this._vpcConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcConfigurationInput() {
+    return this._vpcConfiguration
   }
 
   // =========

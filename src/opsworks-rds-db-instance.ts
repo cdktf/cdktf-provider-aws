@@ -46,46 +46,58 @@ export class OpsworksRdsDbInstance extends TerraformResource {
   // db_password - computed: false, optional: false, required: true
   private _dbPassword: string;
   public get dbPassword() {
-    return this._dbPassword;
+    return this.getStringAttribute('db_password');
   }
   public set dbPassword(value: string) {
     this._dbPassword = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbPasswordInput() {
+    return this._dbPassword
   }
 
   // db_user - computed: false, optional: false, required: true
   private _dbUser: string;
   public get dbUser() {
-    return this._dbUser;
+    return this.getStringAttribute('db_user');
   }
   public set dbUser(value: string) {
     this._dbUser = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get dbUserInput() {
+    return this._dbUser
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // rds_db_instance_arn - computed: false, optional: false, required: true
   private _rdsDbInstanceArn: string;
   public get rdsDbInstanceArn() {
-    return this._rdsDbInstanceArn;
+    return this.getStringAttribute('rds_db_instance_arn');
   }
   public set rdsDbInstanceArn(value: string) {
     this._rdsDbInstanceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rdsDbInstanceArnInput() {
+    return this._rdsDbInstanceArn
   }
 
   // stack_id - computed: false, optional: false, required: true
   private _stackId: string;
   public get stackId() {
-    return this._stackId;
+    return this.getStringAttribute('stack_id');
   }
   public set stackId(value: string) {
     this._stackId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stackIdInput() {
+    return this._stackId
   }
 
   // =========

@@ -55,7 +55,7 @@ export class BatchJobDefinition extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -63,40 +63,54 @@ export class BatchJobDefinition extends TerraformResource {
   // container_properties - computed: false, optional: true, required: false
   private _containerProperties?: string;
   public get containerProperties() {
-    return this._containerProperties;
+    return this.getStringAttribute('container_properties');
   }
-  public set containerProperties(value: string | undefined) {
+  public set containerProperties(value: string ) {
     this._containerProperties = value;
+  }
+  public resetContainerProperties() {
+    this._containerProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerPropertiesInput() {
+    return this._containerProperties
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // parameters - computed: false, optional: true, required: false
   private _parameters?: { [key: string]: string };
   public get parameters() {
-    return this._parameters;
+    return this.interpolationForAttribute('parameters') as any;
   }
-  public set parameters(value: { [key: string]: string } | undefined) {
+  public set parameters(value: { [key: string]: string } ) {
     this._parameters = value;
   }
+  public resetParameters() {
+    this._parameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters
+  }
 
-  // revision - computed: true, optional: false, required: true
+  // revision - computed: true, optional: false, required: false
   public get revision() {
     return this.getNumberAttribute('revision');
   }
@@ -104,28 +118,46 @@ export class BatchJobDefinition extends TerraformResource {
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // retry_strategy - computed: false, optional: true, required: false
   private _retryStrategy?: BatchJobDefinitionRetryStrategy[];
   public get retryStrategy() {
-    return this._retryStrategy;
+    return this.interpolationForAttribute('retry_strategy') as any;
   }
-  public set retryStrategy(value: BatchJobDefinitionRetryStrategy[] | undefined) {
+  public set retryStrategy(value: BatchJobDefinitionRetryStrategy[] ) {
     this._retryStrategy = value;
+  }
+  public resetRetryStrategy() {
+    this._retryStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryStrategyInput() {
+    return this._retryStrategy
   }
 
   // timeout - computed: false, optional: true, required: false
   private _timeout?: BatchJobDefinitionTimeout[];
   public get timeout() {
-    return this._timeout;
+    return this.interpolationForAttribute('timeout') as any;
   }
-  public set timeout(value: BatchJobDefinitionTimeout[] | undefined) {
+  public set timeout(value: BatchJobDefinitionTimeout[] ) {
     this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout
   }
 
   // =========

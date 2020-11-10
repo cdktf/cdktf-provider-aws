@@ -49,65 +49,91 @@ export class CognitoIdentityProvider extends TerraformResource {
 
   // attribute_mapping - computed: true, optional: true, required: false
   private _attributeMapping?: { [key: string]: string }
-  public get attributeMapping(): { [key: string]: string } | undefined {
-    return this._attributeMapping; // Getting the computed value is not yet implemented
+  public get attributeMapping(): { [key: string]: string } {
+    return this.interpolationForAttribute('attribute_mapping') as any; // Getting the computed value is not yet implemented
   }
-  public set attributeMapping(value: { [key: string]: string } | undefined) {
+  public set attributeMapping(value: { [key: string]: string }) {
     this._attributeMapping = value;
+  }
+  public resetAttributeMapping() {
+    this._attributeMapping = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeMappingInput() {
+    return this._attributeMapping
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // idp_identifiers - computed: false, optional: true, required: false
   private _idpIdentifiers?: string[];
   public get idpIdentifiers() {
-    return this._idpIdentifiers;
+    return this.getListAttribute('idp_identifiers');
   }
-  public set idpIdentifiers(value: string[] | undefined) {
+  public set idpIdentifiers(value: string[] ) {
     this._idpIdentifiers = value;
+  }
+  public resetIdpIdentifiers() {
+    this._idpIdentifiers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idpIdentifiersInput() {
+    return this._idpIdentifiers
   }
 
   // provider_details - computed: false, optional: false, required: true
   private _providerDetails: { [key: string]: string };
   public get providerDetails() {
-    return this._providerDetails;
+    return this.interpolationForAttribute('provider_details') as any;
   }
   public set providerDetails(value: { [key: string]: string }) {
     this._providerDetails = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerDetailsInput() {
+    return this._providerDetails
   }
 
   // provider_name - computed: false, optional: false, required: true
   private _providerName: string;
   public get providerName() {
-    return this._providerName;
+    return this.getStringAttribute('provider_name');
   }
   public set providerName(value: string) {
     this._providerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerNameInput() {
+    return this._providerName
   }
 
   // provider_type - computed: false, optional: false, required: true
   private _providerType: string;
   public get providerType() {
-    return this._providerType;
+    return this.getStringAttribute('provider_type');
   }
   public set providerType(value: string) {
     this._providerType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerTypeInput() {
+    return this._providerType
   }
 
   // user_pool_id - computed: false, optional: false, required: true
   private _userPoolId: string;
   public get userPoolId() {
-    return this._userPoolId;
+    return this.getStringAttribute('user_pool_id');
   }
   public set userPoolId(value: string) {
     this._userPoolId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userPoolIdInput() {
+    return this._userPoolId
   }
 
   // =========

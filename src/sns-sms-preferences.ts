@@ -50,64 +50,102 @@ export class SnsSmsPreferences extends TerraformResource {
   // default_sender_id - computed: false, optional: true, required: false
   private _defaultSenderId?: string;
   public get defaultSenderId() {
-    return this._defaultSenderId;
+    return this.getStringAttribute('default_sender_id');
   }
-  public set defaultSenderId(value: string | undefined) {
+  public set defaultSenderId(value: string ) {
     this._defaultSenderId = value;
+  }
+  public resetDefaultSenderId() {
+    this._defaultSenderId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultSenderIdInput() {
+    return this._defaultSenderId
   }
 
   // default_sms_type - computed: false, optional: true, required: false
   private _defaultSmsType?: string;
   public get defaultSmsType() {
-    return this._defaultSmsType;
+    return this.getStringAttribute('default_sms_type');
   }
-  public set defaultSmsType(value: string | undefined) {
+  public set defaultSmsType(value: string ) {
     this._defaultSmsType = value;
+  }
+  public resetDefaultSmsType() {
+    this._defaultSmsType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultSmsTypeInput() {
+    return this._defaultSmsType
   }
 
   // delivery_status_iam_role_arn - computed: false, optional: true, required: false
   private _deliveryStatusIamRoleArn?: string;
   public get deliveryStatusIamRoleArn() {
-    return this._deliveryStatusIamRoleArn;
+    return this.getStringAttribute('delivery_status_iam_role_arn');
   }
-  public set deliveryStatusIamRoleArn(value: string | undefined) {
+  public set deliveryStatusIamRoleArn(value: string ) {
     this._deliveryStatusIamRoleArn = value;
+  }
+  public resetDeliveryStatusIamRoleArn() {
+    this._deliveryStatusIamRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deliveryStatusIamRoleArnInput() {
+    return this._deliveryStatusIamRoleArn
   }
 
   // delivery_status_success_sampling_rate - computed: false, optional: true, required: false
   private _deliveryStatusSuccessSamplingRate?: string;
   public get deliveryStatusSuccessSamplingRate() {
-    return this._deliveryStatusSuccessSamplingRate;
+    return this.getStringAttribute('delivery_status_success_sampling_rate');
   }
-  public set deliveryStatusSuccessSamplingRate(value: string | undefined) {
+  public set deliveryStatusSuccessSamplingRate(value: string ) {
     this._deliveryStatusSuccessSamplingRate = value;
+  }
+  public resetDeliveryStatusSuccessSamplingRate() {
+    this._deliveryStatusSuccessSamplingRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deliveryStatusSuccessSamplingRateInput() {
+    return this._deliveryStatusSuccessSamplingRate
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // monthly_spend_limit - computed: false, optional: true, required: false
   private _monthlySpendLimit?: string;
   public get monthlySpendLimit() {
-    return this._monthlySpendLimit;
+    return this.getStringAttribute('monthly_spend_limit');
   }
-  public set monthlySpendLimit(value: string | undefined) {
+  public set monthlySpendLimit(value: string ) {
     this._monthlySpendLimit = value;
+  }
+  public resetMonthlySpendLimit() {
+    this._monthlySpendLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monthlySpendLimitInput() {
+    return this._monthlySpendLimit
   }
 
   // usage_report_s3_bucket - computed: false, optional: true, required: false
   private _usageReportS3Bucket?: string;
   public get usageReportS3Bucket() {
-    return this._usageReportS3Bucket;
+    return this.getStringAttribute('usage_report_s3_bucket');
   }
-  public set usageReportS3Bucket(value: string | undefined) {
+  public set usageReportS3Bucket(value: string ) {
     this._usageReportS3Bucket = value;
+  }
+  public resetUsageReportS3Bucket() {
+    this._usageReportS3Bucket = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usageReportS3BucketInput() {
+    return this._usageReportS3Bucket
   }
 
   // =========

@@ -43,7 +43,7 @@ export class Ec2TrafficMirrorTarget extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -51,46 +51,70 @@ export class Ec2TrafficMirrorTarget extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // network_interface_id - computed: false, optional: true, required: false
   private _networkInterfaceId?: string;
   public get networkInterfaceId() {
-    return this._networkInterfaceId;
+    return this.getStringAttribute('network_interface_id');
   }
-  public set networkInterfaceId(value: string | undefined) {
+  public set networkInterfaceId(value: string ) {
     this._networkInterfaceId = value;
+  }
+  public resetNetworkInterfaceId() {
+    this._networkInterfaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceIdInput() {
+    return this._networkInterfaceId
   }
 
   // network_load_balancer_arn - computed: false, optional: true, required: false
   private _networkLoadBalancerArn?: string;
   public get networkLoadBalancerArn() {
-    return this._networkLoadBalancerArn;
+    return this.getStringAttribute('network_load_balancer_arn');
   }
-  public set networkLoadBalancerArn(value: string | undefined) {
+  public set networkLoadBalancerArn(value: string ) {
     this._networkLoadBalancerArn = value;
+  }
+  public resetNetworkLoadBalancerArn() {
+    this._networkLoadBalancerArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkLoadBalancerArnInput() {
+    return this._networkLoadBalancerArn
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

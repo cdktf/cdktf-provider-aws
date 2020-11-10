@@ -43,17 +43,17 @@ export class CodecommitRepository extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // clone_url_http - computed: true, optional: false, required: true
+  // clone_url_http - computed: true, optional: false, required: false
   public get cloneUrlHttp() {
     return this.getStringAttribute('clone_url_http');
   }
 
-  // clone_url_ssh - computed: true, optional: false, required: true
+  // clone_url_ssh - computed: true, optional: false, required: false
   public get cloneUrlSsh() {
     return this.getStringAttribute('clone_url_ssh');
   }
@@ -61,31 +61,41 @@ export class CodecommitRepository extends TerraformResource {
   // default_branch - computed: false, optional: true, required: false
   private _defaultBranch?: string;
   public get defaultBranch() {
-    return this._defaultBranch;
+    return this.getStringAttribute('default_branch');
   }
-  public set defaultBranch(value: string | undefined) {
+  public set defaultBranch(value: string ) {
     this._defaultBranch = value;
+  }
+  public resetDefaultBranch() {
+    this._defaultBranch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultBranchInput() {
+    return this._defaultBranch
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // repository_id - computed: true, optional: false, required: true
+  // repository_id - computed: true, optional: false, required: false
   public get repositoryId() {
     return this.getStringAttribute('repository_id');
   }
@@ -93,19 +103,30 @@ export class CodecommitRepository extends TerraformResource {
   // repository_name - computed: false, optional: false, required: true
   private _repositoryName: string;
   public get repositoryName() {
-    return this._repositoryName;
+    return this.getStringAttribute('repository_name');
   }
   public set repositoryName(value: string) {
     this._repositoryName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryNameInput() {
+    return this._repositoryName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

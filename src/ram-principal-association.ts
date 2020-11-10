@@ -40,30 +40,34 @@ export class RamPrincipalAssociation extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // principal - computed: false, optional: false, required: true
   private _principal: string;
   public get principal() {
-    return this._principal;
+    return this.getStringAttribute('principal');
   }
   public set principal(value: string) {
     this._principal = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal
   }
 
   // resource_share_arn - computed: false, optional: false, required: true
   private _resourceShareArn: string;
   public get resourceShareArn() {
-    return this._resourceShareArn;
+    return this.getStringAttribute('resource_share_arn');
   }
   public set resourceShareArn(value: string) {
     this._resourceShareArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceShareArnInput() {
+    return this._resourceShareArn
   }
 
   // =========

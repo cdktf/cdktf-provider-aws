@@ -60,7 +60,7 @@ export class Route53ResolverRule extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -68,31 +68,38 @@ export class Route53ResolverRule extends TerraformResource {
   // domain_name - computed: false, optional: false, required: true
   private _domainName: string;
   public get domainName() {
-    return this._domainName;
+    return this.getStringAttribute('domain_name');
   }
   public set domainName(value: string) {
     this._domainName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainNameInput() {
+    return this._domainName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string ) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -100,22 +107,33 @@ export class Route53ResolverRule extends TerraformResource {
   // resolver_endpoint_id - computed: false, optional: true, required: false
   private _resolverEndpointId?: string;
   public get resolverEndpointId() {
-    return this._resolverEndpointId;
+    return this.getStringAttribute('resolver_endpoint_id');
   }
-  public set resolverEndpointId(value: string | undefined) {
+  public set resolverEndpointId(value: string ) {
     this._resolverEndpointId = value;
+  }
+  public resetResolverEndpointId() {
+    this._resolverEndpointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resolverEndpointIdInput() {
+    return this._resolverEndpointId
   }
 
   // rule_type - computed: false, optional: false, required: true
   private _ruleType: string;
   public get ruleType() {
-    return this._ruleType;
+    return this.getStringAttribute('rule_type');
   }
   public set ruleType(value: string) {
     this._ruleType = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get ruleTypeInput() {
+    return this._ruleType
+  }
 
-  // share_status - computed: true, optional: false, required: true
+  // share_status - computed: true, optional: false, required: false
   public get shareStatus() {
     return this.getStringAttribute('share_status');
   }
@@ -123,28 +141,49 @@ export class Route53ResolverRule extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // target_ip - computed: false, optional: true, required: false
   private _targetIp?: Route53ResolverRuleTargetIp[];
   public get targetIp() {
-    return this._targetIp;
+    return this.interpolationForAttribute('target_ip') as any;
   }
-  public set targetIp(value: Route53ResolverRuleTargetIp[] | undefined) {
+  public set targetIp(value: Route53ResolverRuleTargetIp[] ) {
     this._targetIp = value;
+  }
+  public resetTargetIp() {
+    this._targetIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetIpInput() {
+    return this._targetIp
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: Route53ResolverRuleTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: Route53ResolverRuleTimeouts | undefined) {
+  public set timeouts(value: Route53ResolverRuleTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

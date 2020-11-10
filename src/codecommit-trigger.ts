@@ -47,36 +47,40 @@ export class CodecommitTrigger extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // configuration_id - computed: true, optional: false, required: true
+  // configuration_id - computed: true, optional: false, required: false
   public get configurationId() {
     return this.getStringAttribute('configuration_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // repository_name - computed: false, optional: false, required: true
   private _repositoryName: string;
   public get repositoryName() {
-    return this._repositoryName;
+    return this.getStringAttribute('repository_name');
   }
   public set repositoryName(value: string) {
     this._repositoryName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryNameInput() {
+    return this._repositoryName
   }
 
   // trigger - computed: false, optional: false, required: true
   private _trigger: CodecommitTriggerTrigger[];
   public get trigger() {
-    return this._trigger;
+    return this.interpolationForAttribute('trigger') as any;
   }
   public set trigger(value: CodecommitTriggerTrigger[]) {
     this._trigger = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerInput() {
+    return this._trigger
   }
 
   // =========

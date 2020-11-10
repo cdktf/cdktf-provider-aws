@@ -39,40 +39,40 @@ export class DataAwsSsmParameter extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
 
-  // value - computed: true, optional: false, required: true
+  // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
   }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getNumberAttribute('version');
   }
@@ -80,10 +80,17 @@ export class DataAwsSsmParameter extends TerraformDataSource {
   // with_decryption - computed: false, optional: true, required: false
   private _withDecryption?: boolean;
   public get withDecryption() {
-    return this._withDecryption;
+    return this.getBooleanAttribute('with_decryption');
   }
-  public set withDecryption(value: boolean | undefined) {
+  public set withDecryption(value: boolean ) {
     this._withDecryption = value;
+  }
+  public resetWithDecryption() {
+    this._withDecryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get withDecryptionInput() {
+    return this._withDecryption
   }
 
   // =========

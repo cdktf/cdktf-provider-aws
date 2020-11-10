@@ -65,7 +65,7 @@ export class Ec2ClientVpnEndpoint extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -73,22 +73,33 @@ export class Ec2ClientVpnEndpoint extends TerraformResource {
   // client_cidr_block - computed: false, optional: false, required: true
   private _clientCidrBlock: string;
   public get clientCidrBlock() {
-    return this._clientCidrBlock;
+    return this.getStringAttribute('client_cidr_block');
   }
   public set clientCidrBlock(value: string) {
     this._clientCidrBlock = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientCidrBlockInput() {
+    return this._clientCidrBlock
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
   }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
+  }
 
-  // dns_name - computed: true, optional: false, required: true
+  // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
@@ -96,40 +107,54 @@ export class Ec2ClientVpnEndpoint extends TerraformResource {
   // dns_servers - computed: false, optional: true, required: false
   private _dnsServers?: string[];
   public get dnsServers() {
-    return this._dnsServers;
+    return this.getListAttribute('dns_servers');
   }
-  public set dnsServers(value: string[] | undefined) {
+  public set dnsServers(value: string[] ) {
     this._dnsServers = value;
+  }
+  public resetDnsServers() {
+    this._dnsServers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsServersInput() {
+    return this._dnsServers
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // server_certificate_arn - computed: false, optional: false, required: true
   private _serverCertificateArn: string;
   public get serverCertificateArn() {
-    return this._serverCertificateArn;
+    return this.getStringAttribute('server_certificate_arn');
   }
   public set serverCertificateArn(value: string) {
     this._serverCertificateArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverCertificateArnInput() {
+    return this._serverCertificateArn
   }
 
   // split_tunnel - computed: false, optional: true, required: false
   private _splitTunnel?: boolean;
   public get splitTunnel() {
-    return this._splitTunnel;
+    return this.getBooleanAttribute('split_tunnel');
   }
-  public set splitTunnel(value: boolean | undefined) {
+  public set splitTunnel(value: boolean ) {
     this._splitTunnel = value;
   }
+  public resetSplitTunnel() {
+    this._splitTunnel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get splitTunnelInput() {
+    return this._splitTunnel
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -137,37 +162,59 @@ export class Ec2ClientVpnEndpoint extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // transport_protocol - computed: false, optional: true, required: false
   private _transportProtocol?: string;
   public get transportProtocol() {
-    return this._transportProtocol;
+    return this.getStringAttribute('transport_protocol');
   }
-  public set transportProtocol(value: string | undefined) {
+  public set transportProtocol(value: string ) {
     this._transportProtocol = value;
+  }
+  public resetTransportProtocol() {
+    this._transportProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transportProtocolInput() {
+    return this._transportProtocol
   }
 
   // authentication_options - computed: false, optional: false, required: true
   private _authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[];
   public get authenticationOptions() {
-    return this._authenticationOptions;
+    return this.interpolationForAttribute('authentication_options') as any;
   }
   public set authenticationOptions(value: Ec2ClientVpnEndpointAuthenticationOptions[]) {
     this._authenticationOptions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationOptionsInput() {
+    return this._authenticationOptions
   }
 
   // connection_log_options - computed: false, optional: false, required: true
   private _connectionLogOptions: Ec2ClientVpnEndpointConnectionLogOptions[];
   public get connectionLogOptions() {
-    return this._connectionLogOptions;
+    return this.interpolationForAttribute('connection_log_options') as any;
   }
   public set connectionLogOptions(value: Ec2ClientVpnEndpointConnectionLogOptions[]) {
     this._connectionLogOptions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionLogOptionsInput() {
+    return this._connectionLogOptions
   }
 
   // =========

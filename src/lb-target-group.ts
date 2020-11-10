@@ -81,12 +81,12 @@ export class LbTargetGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // arn_suffix - computed: true, optional: false, required: true
+  // arn_suffix - computed: true, optional: false, required: false
   public get arnSuffix() {
     return this.getStringAttribute('arn_suffix');
   }
@@ -94,136 +94,230 @@ export class LbTargetGroup extends TerraformResource {
   // deregistration_delay - computed: false, optional: true, required: false
   private _deregistrationDelay?: number;
   public get deregistrationDelay() {
-    return this._deregistrationDelay;
+    return this.getNumberAttribute('deregistration_delay');
   }
-  public set deregistrationDelay(value: number | undefined) {
+  public set deregistrationDelay(value: number ) {
     this._deregistrationDelay = value;
+  }
+  public resetDeregistrationDelay() {
+    this._deregistrationDelay = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deregistrationDelayInput() {
+    return this._deregistrationDelay
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // lambda_multi_value_headers_enabled - computed: false, optional: true, required: false
   private _lambdaMultiValueHeadersEnabled?: boolean;
   public get lambdaMultiValueHeadersEnabled() {
-    return this._lambdaMultiValueHeadersEnabled;
+    return this.getBooleanAttribute('lambda_multi_value_headers_enabled');
   }
-  public set lambdaMultiValueHeadersEnabled(value: boolean | undefined) {
+  public set lambdaMultiValueHeadersEnabled(value: boolean ) {
     this._lambdaMultiValueHeadersEnabled = value;
+  }
+  public resetLambdaMultiValueHeadersEnabled() {
+    this._lambdaMultiValueHeadersEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaMultiValueHeadersEnabledInput() {
+    return this._lambdaMultiValueHeadersEnabled
   }
 
   // load_balancing_algorithm_type - computed: true, optional: true, required: false
   private _loadBalancingAlgorithmType?: string;
   public get loadBalancingAlgorithmType() {
-    return this._loadBalancingAlgorithmType ?? this.getStringAttribute('load_balancing_algorithm_type');
+    return this.getStringAttribute('load_balancing_algorithm_type');
   }
-  public set loadBalancingAlgorithmType(value: string | undefined) {
+  public set loadBalancingAlgorithmType(value: string) {
     this._loadBalancingAlgorithmType = value;
+  }
+  public resetLoadBalancingAlgorithmType() {
+    this._loadBalancingAlgorithmType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancingAlgorithmTypeInput() {
+    return this._loadBalancingAlgorithmType
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // port - computed: false, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this._port;
+    return this.getNumberAttribute('port');
   }
-  public set port(value: number | undefined) {
+  public set port(value: number ) {
     this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port
   }
 
   // protocol - computed: false, optional: true, required: false
   private _protocol?: string;
   public get protocol() {
-    return this._protocol;
+    return this.getStringAttribute('protocol');
   }
-  public set protocol(value: string | undefined) {
+  public set protocol(value: string ) {
     this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol
   }
 
   // proxy_protocol_v2 - computed: false, optional: true, required: false
   private _proxyProtocolV2?: boolean;
   public get proxyProtocolV2() {
-    return this._proxyProtocolV2;
+    return this.getBooleanAttribute('proxy_protocol_v2');
   }
-  public set proxyProtocolV2(value: boolean | undefined) {
+  public set proxyProtocolV2(value: boolean ) {
     this._proxyProtocolV2 = value;
+  }
+  public resetProxyProtocolV2() {
+    this._proxyProtocolV2 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyProtocolV2Input() {
+    return this._proxyProtocolV2
   }
 
   // slow_start - computed: false, optional: true, required: false
   private _slowStart?: number;
   public get slowStart() {
-    return this._slowStart;
+    return this.getNumberAttribute('slow_start');
   }
-  public set slowStart(value: number | undefined) {
+  public set slowStart(value: number ) {
     this._slowStart = value;
+  }
+  public resetSlowStart() {
+    this._slowStart = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slowStartInput() {
+    return this._slowStart
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // target_type - computed: false, optional: true, required: false
   private _targetType?: string;
   public get targetType() {
-    return this._targetType;
+    return this.getStringAttribute('target_type');
   }
-  public set targetType(value: string | undefined) {
+  public set targetType(value: string ) {
     this._targetType = value;
+  }
+  public resetTargetType() {
+    this._targetType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetTypeInput() {
+    return this._targetType
   }
 
   // vpc_id - computed: false, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string | undefined) {
+  public set vpcId(value: string ) {
     this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // health_check - computed: false, optional: true, required: false
   private _healthCheck?: LbTargetGroupHealthCheck[];
   public get healthCheck() {
-    return this._healthCheck;
+    return this.interpolationForAttribute('health_check') as any;
   }
-  public set healthCheck(value: LbTargetGroupHealthCheck[] | undefined) {
+  public set healthCheck(value: LbTargetGroupHealthCheck[] ) {
     this._healthCheck = value;
+  }
+  public resetHealthCheck() {
+    this._healthCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckInput() {
+    return this._healthCheck
   }
 
   // stickiness - computed: false, optional: true, required: false
   private _stickiness?: LbTargetGroupStickiness[];
   public get stickiness() {
-    return this._stickiness;
+    return this.interpolationForAttribute('stickiness') as any;
   }
-  public set stickiness(value: LbTargetGroupStickiness[] | undefined) {
+  public set stickiness(value: LbTargetGroupStickiness[] ) {
     this._stickiness = value;
+  }
+  public resetStickiness() {
+    this._stickiness = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stickinessInput() {
+    return this._stickiness
   }
 
   // =========

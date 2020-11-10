@@ -47,44 +47,61 @@ export class DataAwsEc2LocalGatewayVirtualInterfaceGroup extends TerraformDataSo
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // local_gateway_id - computed: true, optional: true, required: false
   private _localGatewayId?: string;
   public get localGatewayId() {
-    return this._localGatewayId ?? this.getStringAttribute('local_gateway_id');
+    return this.getStringAttribute('local_gateway_id');
   }
-  public set localGatewayId(value: string | undefined) {
+  public set localGatewayId(value: string) {
     this._localGatewayId = value;
   }
+  public resetLocalGatewayId() {
+    this._localGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayIdInput() {
+    return this._localGatewayId
+  }
 
-  // local_gateway_virtual_interface_ids - computed: true, optional: false, required: true
+  // local_gateway_virtual_interface_ids - computed: true, optional: false, required: false
   public get localGatewayVirtualInterfaceIds() {
     return this.getListAttribute('local_gateway_virtual_interface_ids');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2LocalGatewayVirtualInterfaceGroupFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2LocalGatewayVirtualInterfaceGroupFilter[] | undefined) {
+  public set filter(value: DataAwsEc2LocalGatewayVirtualInterfaceGroupFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

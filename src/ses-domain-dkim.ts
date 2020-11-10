@@ -37,7 +37,7 @@ export class SesDomainDkim extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // dkim_tokens - computed: true, optional: false, required: true
+  // dkim_tokens - computed: true, optional: false, required: false
   public get dkimTokens() {
     return this.getListAttribute('dkim_tokens');
   }
@@ -45,19 +45,19 @@ export class SesDomainDkim extends TerraformResource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

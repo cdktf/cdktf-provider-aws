@@ -61,55 +61,83 @@ export class LambdaFunctionEventInvokeConfig extends TerraformResource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this._functionName;
+    return this.getStringAttribute('function_name');
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get functionNameInput() {
+    return this._functionName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // maximum_event_age_in_seconds - computed: false, optional: true, required: false
   private _maximumEventAgeInSeconds?: number;
   public get maximumEventAgeInSeconds() {
-    return this._maximumEventAgeInSeconds;
+    return this.getNumberAttribute('maximum_event_age_in_seconds');
   }
-  public set maximumEventAgeInSeconds(value: number | undefined) {
+  public set maximumEventAgeInSeconds(value: number ) {
     this._maximumEventAgeInSeconds = value;
+  }
+  public resetMaximumEventAgeInSeconds() {
+    this._maximumEventAgeInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumEventAgeInSecondsInput() {
+    return this._maximumEventAgeInSeconds
   }
 
   // maximum_retry_attempts - computed: false, optional: true, required: false
   private _maximumRetryAttempts?: number;
   public get maximumRetryAttempts() {
-    return this._maximumRetryAttempts;
+    return this.getNumberAttribute('maximum_retry_attempts');
   }
-  public set maximumRetryAttempts(value: number | undefined) {
+  public set maximumRetryAttempts(value: number ) {
     this._maximumRetryAttempts = value;
+  }
+  public resetMaximumRetryAttempts() {
+    this._maximumRetryAttempts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumRetryAttemptsInput() {
+    return this._maximumRetryAttempts
   }
 
   // qualifier - computed: false, optional: true, required: false
   private _qualifier?: string;
   public get qualifier() {
-    return this._qualifier;
+    return this.getStringAttribute('qualifier');
   }
-  public set qualifier(value: string | undefined) {
+  public set qualifier(value: string ) {
     this._qualifier = value;
+  }
+  public resetQualifier() {
+    this._qualifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get qualifierInput() {
+    return this._qualifier
   }
 
   // destination_config - computed: false, optional: true, required: false
   private _destinationConfig?: LambdaFunctionEventInvokeConfigDestinationConfig[];
   public get destinationConfig() {
-    return this._destinationConfig;
+    return this.interpolationForAttribute('destination_config') as any;
   }
-  public set destinationConfig(value: LambdaFunctionEventInvokeConfigDestinationConfig[] | undefined) {
+  public set destinationConfig(value: LambdaFunctionEventInvokeConfigDestinationConfig[] ) {
     this._destinationConfig = value;
+  }
+  public resetDestinationConfig() {
+    this._destinationConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationConfigInput() {
+    return this._destinationConfig
   }
 
   // =========

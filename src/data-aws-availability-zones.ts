@@ -59,67 +59,105 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
   // all_availability_zones - computed: false, optional: true, required: false
   private _allAvailabilityZones?: boolean;
   public get allAvailabilityZones() {
-    return this._allAvailabilityZones;
+    return this.getBooleanAttribute('all_availability_zones');
   }
-  public set allAvailabilityZones(value: boolean | undefined) {
+  public set allAvailabilityZones(value: boolean ) {
     this._allAvailabilityZones = value;
+  }
+  public resetAllAvailabilityZones() {
+    this._allAvailabilityZones = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allAvailabilityZonesInput() {
+    return this._allAvailabilityZones
   }
 
   // blacklisted_names - computed: false, optional: true, required: false
   private _blacklistedNames?: string[];
   public get blacklistedNames() {
-    return this._blacklistedNames;
+    return this.getListAttribute('blacklisted_names');
   }
-  public set blacklistedNames(value: string[] | undefined) {
+  public set blacklistedNames(value: string[] ) {
     this._blacklistedNames = value;
+  }
+  public resetBlacklistedNames() {
+    this._blacklistedNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blacklistedNamesInput() {
+    return this._blacklistedNames
   }
 
   // blacklisted_zone_ids - computed: false, optional: true, required: false
   private _blacklistedZoneIds?: string[];
   public get blacklistedZoneIds() {
-    return this._blacklistedZoneIds;
+    return this.getListAttribute('blacklisted_zone_ids');
   }
-  public set blacklistedZoneIds(value: string[] | undefined) {
+  public set blacklistedZoneIds(value: string[] ) {
     this._blacklistedZoneIds = value;
+  }
+  public resetBlacklistedZoneIds() {
+    this._blacklistedZoneIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blacklistedZoneIdsInput() {
+    return this._blacklistedZoneIds
   }
 
   // exclude_names - computed: false, optional: true, required: false
   private _excludeNames?: string[];
   public get excludeNames() {
-    return this._excludeNames;
+    return this.getListAttribute('exclude_names');
   }
-  public set excludeNames(value: string[] | undefined) {
+  public set excludeNames(value: string[] ) {
     this._excludeNames = value;
+  }
+  public resetExcludeNames() {
+    this._excludeNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeNamesInput() {
+    return this._excludeNames
   }
 
   // exclude_zone_ids - computed: false, optional: true, required: false
   private _excludeZoneIds?: string[];
   public get excludeZoneIds() {
-    return this._excludeZoneIds;
+    return this.getListAttribute('exclude_zone_ids');
   }
-  public set excludeZoneIds(value: string[] | undefined) {
+  public set excludeZoneIds(value: string[] ) {
     this._excludeZoneIds = value;
+  }
+  public resetExcludeZoneIds() {
+    this._excludeZoneIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeZoneIdsInput() {
+    return this._excludeZoneIds
   }
 
   // group_names - computed: false, optional: true, required: false
   private _groupNames?: string[];
   public get groupNames() {
-    return this._groupNames;
+    return this.getListAttribute('group_names');
   }
-  public set groupNames(value: string[] | undefined) {
+  public set groupNames(value: string[] ) {
     this._groupNames = value;
+  }
+  public resetGroupNames() {
+    this._groupNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNamesInput() {
+    return this._groupNames
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // names - computed: true, optional: false, required: true
+  // names - computed: true, optional: false, required: false
   public get names() {
     return this.getListAttribute('names');
   }
@@ -127,13 +165,20 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
   // state - computed: false, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this._state;
+    return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string ) {
     this._state = value;
   }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state
+  }
 
-  // zone_ids - computed: true, optional: false, required: true
+  // zone_ids - computed: true, optional: false, required: false
   public get zoneIds() {
     return this.getListAttribute('zone_ids');
   }
@@ -141,10 +186,17 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsAvailabilityZonesFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsAvailabilityZonesFilter[] | undefined) {
+  public set filter(value: DataAwsAvailabilityZonesFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

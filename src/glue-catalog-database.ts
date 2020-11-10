@@ -45,7 +45,7 @@ export class GlueCatalogDatabase extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -53,55 +53,83 @@ export class GlueCatalogDatabase extends TerraformResource {
   // catalog_id - computed: true, optional: true, required: false
   private _catalogId?: string;
   public get catalogId() {
-    return this._catalogId ?? this.getStringAttribute('catalog_id');
+    return this.getStringAttribute('catalog_id');
   }
-  public set catalogId(value: string | undefined) {
+  public set catalogId(value: string) {
     this._catalogId = value;
+  }
+  public resetCatalogId() {
+    this._catalogId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogIdInput() {
+    return this._catalogId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // location_uri - computed: false, optional: true, required: false
   private _locationUri?: string;
   public get locationUri() {
-    return this._locationUri;
+    return this.getStringAttribute('location_uri');
   }
-  public set locationUri(value: string | undefined) {
+  public set locationUri(value: string ) {
     this._locationUri = value;
+  }
+  public resetLocationUri() {
+    this._locationUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationUriInput() {
+    return this._locationUri
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // parameters - computed: false, optional: true, required: false
   private _parameters?: { [key: string]: string };
   public get parameters() {
-    return this._parameters;
+    return this.interpolationForAttribute('parameters') as any;
   }
-  public set parameters(value: { [key: string]: string } | undefined) {
+  public set parameters(value: { [key: string]: string } ) {
     this._parameters = value;
+  }
+  public resetParameters() {
+    this._parameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters
   }
 
   // =========

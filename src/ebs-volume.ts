@@ -55,7 +55,7 @@ export class EbsVolume extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -63,100 +63,163 @@ export class EbsVolume extends TerraformResource {
   // availability_zone - computed: false, optional: false, required: true
   private _availabilityZone: string;
   public get availabilityZone() {
-    return this._availabilityZone;
+    return this.getStringAttribute('availability_zone');
   }
   public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // encrypted - computed: true, optional: true, required: false
   private _encrypted?: boolean;
   public get encrypted() {
-    return this._encrypted ?? this.getBooleanAttribute('encrypted');
+    return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | undefined) {
+  public set encrypted(value: boolean) {
     this._encrypted = value;
+  }
+  public resetEncrypted() {
+    this._encrypted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptedInput() {
+    return this._encrypted
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // iops - computed: true, optional: true, required: false
   private _iops?: number;
   public get iops() {
-    return this._iops ?? this.getNumberAttribute('iops');
+    return this.getNumberAttribute('iops');
   }
-  public set iops(value: number | undefined) {
+  public set iops(value: number) {
     this._iops = value;
+  }
+  public resetIops() {
+    this._iops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iopsInput() {
+    return this._iops
   }
 
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // multi_attach_enabled - computed: false, optional: true, required: false
   private _multiAttachEnabled?: boolean;
   public get multiAttachEnabled() {
-    return this._multiAttachEnabled;
+    return this.getBooleanAttribute('multi_attach_enabled');
   }
-  public set multiAttachEnabled(value: boolean | undefined) {
+  public set multiAttachEnabled(value: boolean ) {
     this._multiAttachEnabled = value;
+  }
+  public resetMultiAttachEnabled() {
+    this._multiAttachEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multiAttachEnabledInput() {
+    return this._multiAttachEnabled
   }
 
   // outpost_arn - computed: false, optional: true, required: false
   private _outpostArn?: string;
   public get outpostArn() {
-    return this._outpostArn;
+    return this.getStringAttribute('outpost_arn');
   }
-  public set outpostArn(value: string | undefined) {
+  public set outpostArn(value: string ) {
     this._outpostArn = value;
+  }
+  public resetOutpostArn() {
+    this._outpostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outpostArnInput() {
+    return this._outpostArn
   }
 
   // size - computed: true, optional: true, required: false
   private _size?: number;
   public get size() {
-    return this._size ?? this.getNumberAttribute('size');
+    return this.getNumberAttribute('size');
   }
-  public set size(value: number | undefined) {
+  public set size(value: number) {
     this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size
   }
 
   // snapshot_id - computed: true, optional: true, required: false
   private _snapshotId?: string;
   public get snapshotId() {
-    return this._snapshotId ?? this.getStringAttribute('snapshot_id');
+    return this.getStringAttribute('snapshot_id');
   }
-  public set snapshotId(value: string | undefined) {
+  public set snapshotId(value: string) {
     this._snapshotId = value;
+  }
+  public resetSnapshotId() {
+    this._snapshotId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotIdInput() {
+    return this._snapshotId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // type - computed: true, optional: true, required: false
   private _type?: string;
   public get type() {
-    return this._type ?? this.getStringAttribute('type');
+    return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // =========

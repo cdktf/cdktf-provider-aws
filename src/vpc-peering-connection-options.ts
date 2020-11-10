@@ -54,39 +54,53 @@ export class VpcPeeringConnectionOptions extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // vpc_peering_connection_id - computed: false, optional: false, required: true
   private _vpcPeeringConnectionId: string;
   public get vpcPeeringConnectionId() {
-    return this._vpcPeeringConnectionId;
+    return this.getStringAttribute('vpc_peering_connection_id');
   }
   public set vpcPeeringConnectionId(value: string) {
     this._vpcPeeringConnectionId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcPeeringConnectionIdInput() {
+    return this._vpcPeeringConnectionId
   }
 
   // accepter - computed: false, optional: true, required: false
   private _accepter?: VpcPeeringConnectionOptionsAccepter[];
   public get accepter() {
-    return this._accepter;
+    return this.interpolationForAttribute('accepter') as any;
   }
-  public set accepter(value: VpcPeeringConnectionOptionsAccepter[] | undefined) {
+  public set accepter(value: VpcPeeringConnectionOptionsAccepter[] ) {
     this._accepter = value;
+  }
+  public resetAccepter() {
+    this._accepter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accepterInput() {
+    return this._accepter
   }
 
   // requester - computed: false, optional: true, required: false
   private _requester?: VpcPeeringConnectionOptionsRequester[];
   public get requester() {
-    return this._requester;
+    return this.interpolationForAttribute('requester') as any;
   }
-  public set requester(value: VpcPeeringConnectionOptionsRequester[] | undefined) {
+  public set requester(value: VpcPeeringConnectionOptionsRequester[] ) {
     this._requester = value;
+  }
+  public resetRequester() {
+    this._requester = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requesterInput() {
+    return this._requester
   }
 
   // =========

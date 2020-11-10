@@ -41,45 +41,53 @@ export class CloudwatchLogDestination extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // target_arn - computed: false, optional: false, required: true
   private _targetArn: string;
   public get targetArn() {
-    return this._targetArn;
+    return this.getStringAttribute('target_arn');
   }
   public set targetArn(value: string) {
     this._targetArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetArnInput() {
+    return this._targetArn
   }
 
   // =========

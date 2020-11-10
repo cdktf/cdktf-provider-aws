@@ -110,7 +110,7 @@ export class ElastictranscoderPreset extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -118,100 +118,163 @@ export class ElastictranscoderPreset extends TerraformResource {
   // container - computed: false, optional: false, required: true
   private _container: string;
   public get container() {
-    return this._container;
+    return this.getStringAttribute('container');
   }
   public set container(value: string) {
     this._container = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerInput() {
+    return this._container
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // type - computed: true, optional: true, required: false
   private _type?: string;
   public get type() {
-    return this._type ?? this.getStringAttribute('type');
+    return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // video_codec_options - computed: false, optional: true, required: false
   private _videoCodecOptions?: { [key: string]: string };
   public get videoCodecOptions() {
-    return this._videoCodecOptions;
+    return this.interpolationForAttribute('video_codec_options') as any;
   }
-  public set videoCodecOptions(value: { [key: string]: string } | undefined) {
+  public set videoCodecOptions(value: { [key: string]: string } ) {
     this._videoCodecOptions = value;
+  }
+  public resetVideoCodecOptions() {
+    this._videoCodecOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get videoCodecOptionsInput() {
+    return this._videoCodecOptions
   }
 
   // audio - computed: false, optional: true, required: false
   private _audio?: ElastictranscoderPresetAudio[];
   public get audio() {
-    return this._audio;
+    return this.interpolationForAttribute('audio') as any;
   }
-  public set audio(value: ElastictranscoderPresetAudio[] | undefined) {
+  public set audio(value: ElastictranscoderPresetAudio[] ) {
     this._audio = value;
+  }
+  public resetAudio() {
+    this._audio = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get audioInput() {
+    return this._audio
   }
 
   // audio_codec_options - computed: false, optional: true, required: false
   private _audioCodecOptions?: ElastictranscoderPresetAudioCodecOptions[];
   public get audioCodecOptions() {
-    return this._audioCodecOptions;
+    return this.interpolationForAttribute('audio_codec_options') as any;
   }
-  public set audioCodecOptions(value: ElastictranscoderPresetAudioCodecOptions[] | undefined) {
+  public set audioCodecOptions(value: ElastictranscoderPresetAudioCodecOptions[] ) {
     this._audioCodecOptions = value;
+  }
+  public resetAudioCodecOptions() {
+    this._audioCodecOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get audioCodecOptionsInput() {
+    return this._audioCodecOptions
   }
 
   // thumbnails - computed: false, optional: true, required: false
   private _thumbnails?: ElastictranscoderPresetThumbnails[];
   public get thumbnails() {
-    return this._thumbnails;
+    return this.interpolationForAttribute('thumbnails') as any;
   }
-  public set thumbnails(value: ElastictranscoderPresetThumbnails[] | undefined) {
+  public set thumbnails(value: ElastictranscoderPresetThumbnails[] ) {
     this._thumbnails = value;
+  }
+  public resetThumbnails() {
+    this._thumbnails = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thumbnailsInput() {
+    return this._thumbnails
   }
 
   // video - computed: false, optional: true, required: false
   private _video?: ElastictranscoderPresetVideo[];
   public get video() {
-    return this._video;
+    return this.interpolationForAttribute('video') as any;
   }
-  public set video(value: ElastictranscoderPresetVideo[] | undefined) {
+  public set video(value: ElastictranscoderPresetVideo[] ) {
     this._video = value;
+  }
+  public resetVideo() {
+    this._video = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get videoInput() {
+    return this._video
   }
 
   // video_watermarks - computed: false, optional: true, required: false
   private _videoWatermarks?: ElastictranscoderPresetVideoWatermarks[];
   public get videoWatermarks() {
-    return this._videoWatermarks;
+    return this.interpolationForAttribute('video_watermarks') as any;
   }
-  public set videoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] | undefined) {
+  public set videoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] ) {
     this._videoWatermarks = value;
+  }
+  public resetVideoWatermarks() {
+    this._videoWatermarks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get videoWatermarksInput() {
+    return this._videoWatermarks
   }
 
   // =========

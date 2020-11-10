@@ -56,103 +56,149 @@ export class SsmParameter extends TerraformResource {
   // allowed_pattern - computed: false, optional: true, required: false
   private _allowedPattern?: string;
   public get allowedPattern() {
-    return this._allowedPattern;
+    return this.getStringAttribute('allowed_pattern');
   }
-  public set allowedPattern(value: string | undefined) {
+  public set allowedPattern(value: string ) {
     this._allowedPattern = value;
+  }
+  public resetAllowedPattern() {
+    this._allowedPattern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedPatternInput() {
+    return this._allowedPattern
   }
 
   // arn - computed: true, optional: true, required: false
-  private _arn?: string;
   public get arn() {
-    return this._arn ?? this.getStringAttribute('arn');
-  }
-  public set arn(value: string | undefined) {
-    this._arn = value;
+    return this.getStringAttribute('arn');
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key_id - computed: true, optional: true, required: false
   private _keyId?: string;
   public get keyId() {
-    return this._keyId ?? this.getStringAttribute('key_id');
+    return this.getStringAttribute('key_id');
   }
-  public set keyId(value: string | undefined) {
+  public set keyId(value: string) {
     this._keyId = value;
+  }
+  public resetKeyId() {
+    this._keyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // overwrite - computed: false, optional: true, required: false
   private _overwrite?: boolean;
   public get overwrite() {
-    return this._overwrite;
+    return this.getBooleanAttribute('overwrite');
   }
-  public set overwrite(value: boolean | undefined) {
+  public set overwrite(value: boolean ) {
     this._overwrite = value;
+  }
+  public resetOverwrite() {
+    this._overwrite = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overwriteInput() {
+    return this._overwrite
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // tier - computed: false, optional: true, required: false
   private _tier?: string;
   public get tier() {
-    return this._tier;
+    return this.getStringAttribute('tier');
   }
-  public set tier(value: string | undefined) {
+  public set tier(value: string ) {
     this._tier = value;
+  }
+  public resetTier() {
+    this._tier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tierInput() {
+    return this._tier
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // value - computed: false, optional: false, required: true
   private _value: string;
   public get value() {
-    return this._value;
+    return this.getStringAttribute('value');
   }
   public set value(value: string) {
     this._value = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value
+  }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getNumberAttribute('version');
   }

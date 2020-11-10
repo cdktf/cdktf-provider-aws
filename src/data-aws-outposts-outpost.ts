@@ -37,50 +37,53 @@ export class DataAwsOutpostsOutpost extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zone - computed: true, optional: false, required: true
+  // availability_zone - computed: true, optional: false, required: false
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
 
-  // availability_zone_id - computed: true, optional: false, required: true
+  // availability_zone_id - computed: true, optional: false, required: false
   public get availabilityZoneId() {
     return this.getStringAttribute('availability_zone_id');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
 
-  // site_id - computed: true, optional: false, required: true
+  // site_id - computed: true, optional: false, required: false
   public get siteId() {
     return this.getStringAttribute('site_id');
   }

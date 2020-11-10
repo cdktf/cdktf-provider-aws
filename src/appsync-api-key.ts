@@ -44,40 +44,54 @@ export class AppsyncApiKey extends TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this._apiId;
+    return this.getStringAttribute('api_id');
   }
   public set apiId(value: string) {
     this._apiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // expires - computed: false, optional: true, required: false
   private _expires?: string;
   public get expires() {
-    return this._expires;
+    return this.getStringAttribute('expires');
   }
-  public set expires(value: string | undefined) {
+  public set expires(value: string ) {
     this._expires = value;
+  }
+  public resetExpires() {
+    this._expires = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expiresInput() {
+    return this._expires
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // key - computed: true, optional: false, required: true
+  // key - computed: true, optional: false, required: false
   public get key() {
     return this.getStringAttribute('key');
   }

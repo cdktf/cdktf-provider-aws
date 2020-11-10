@@ -71,7 +71,7 @@ export class VpcPeeringConnection extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // accept_status - computed: true, optional: false, required: true
+  // accept_status - computed: true, optional: false, required: false
   public get acceptStatus() {
     return this.getStringAttribute('accept_status');
   }
@@ -79,91 +79,144 @@ export class VpcPeeringConnection extends TerraformResource {
   // auto_accept - computed: false, optional: true, required: false
   private _autoAccept?: boolean;
   public get autoAccept() {
-    return this._autoAccept;
+    return this.getBooleanAttribute('auto_accept');
   }
-  public set autoAccept(value: boolean | undefined) {
+  public set autoAccept(value: boolean ) {
     this._autoAccept = value;
+  }
+  public resetAutoAccept() {
+    this._autoAccept = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoAcceptInput() {
+    return this._autoAccept
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // peer_owner_id - computed: true, optional: true, required: false
   private _peerOwnerId?: string;
   public get peerOwnerId() {
-    return this._peerOwnerId ?? this.getStringAttribute('peer_owner_id');
+    return this.getStringAttribute('peer_owner_id');
   }
-  public set peerOwnerId(value: string | undefined) {
+  public set peerOwnerId(value: string) {
     this._peerOwnerId = value;
+  }
+  public resetPeerOwnerId() {
+    this._peerOwnerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get peerOwnerIdInput() {
+    return this._peerOwnerId
   }
 
   // peer_region - computed: true, optional: true, required: false
   private _peerRegion?: string;
   public get peerRegion() {
-    return this._peerRegion ?? this.getStringAttribute('peer_region');
+    return this.getStringAttribute('peer_region');
   }
-  public set peerRegion(value: string | undefined) {
+  public set peerRegion(value: string) {
     this._peerRegion = value;
+  }
+  public resetPeerRegion() {
+    this._peerRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get peerRegionInput() {
+    return this._peerRegion
   }
 
   // peer_vpc_id - computed: false, optional: false, required: true
   private _peerVpcId: string;
   public get peerVpcId() {
-    return this._peerVpcId;
+    return this.getStringAttribute('peer_vpc_id');
   }
   public set peerVpcId(value: string) {
     this._peerVpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get peerVpcIdInput() {
+    return this._peerVpcId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // accepter - computed: false, optional: true, required: false
   private _accepter?: VpcPeeringConnectionAccepter[];
   public get accepter() {
-    return this._accepter;
+    return this.interpolationForAttribute('accepter') as any;
   }
-  public set accepter(value: VpcPeeringConnectionAccepter[] | undefined) {
+  public set accepter(value: VpcPeeringConnectionAccepter[] ) {
     this._accepter = value;
+  }
+  public resetAccepter() {
+    this._accepter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accepterInput() {
+    return this._accepter
   }
 
   // requester - computed: false, optional: true, required: false
   private _requester?: VpcPeeringConnectionRequester[];
   public get requester() {
-    return this._requester;
+    return this.interpolationForAttribute('requester') as any;
   }
-  public set requester(value: VpcPeeringConnectionRequester[] | undefined) {
+  public set requester(value: VpcPeeringConnectionRequester[] ) {
     this._requester = value;
+  }
+  public resetRequester() {
+    this._requester = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requesterInput() {
+    return this._requester
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: VpcPeeringConnectionTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: VpcPeeringConnectionTimeouts | undefined) {
+  public set timeouts(value: VpcPeeringConnectionTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

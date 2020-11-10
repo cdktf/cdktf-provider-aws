@@ -56,7 +56,7 @@ export class EcsCluster extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -64,55 +64,83 @@ export class EcsCluster extends TerraformResource {
   // capacity_providers - computed: false, optional: true, required: false
   private _capacityProviders?: string[];
   public get capacityProviders() {
-    return this._capacityProviders;
+    return this.getListAttribute('capacity_providers');
   }
-  public set capacityProviders(value: string[] | undefined) {
+  public set capacityProviders(value: string[] ) {
     this._capacityProviders = value;
+  }
+  public resetCapacityProviders() {
+    this._capacityProviders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityProvidersInput() {
+    return this._capacityProviders
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // default_capacity_provider_strategy - computed: false, optional: true, required: false
   private _defaultCapacityProviderStrategy?: EcsClusterDefaultCapacityProviderStrategy[];
   public get defaultCapacityProviderStrategy() {
-    return this._defaultCapacityProviderStrategy;
+    return this.interpolationForAttribute('default_capacity_provider_strategy') as any;
   }
-  public set defaultCapacityProviderStrategy(value: EcsClusterDefaultCapacityProviderStrategy[] | undefined) {
+  public set defaultCapacityProviderStrategy(value: EcsClusterDefaultCapacityProviderStrategy[] ) {
     this._defaultCapacityProviderStrategy = value;
+  }
+  public resetDefaultCapacityProviderStrategy() {
+    this._defaultCapacityProviderStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultCapacityProviderStrategyInput() {
+    return this._defaultCapacityProviderStrategy
   }
 
   // setting - computed: false, optional: true, required: false
   private _setting?: EcsClusterSetting[];
   public get setting() {
-    return this._setting;
+    return this.interpolationForAttribute('setting') as any;
   }
-  public set setting(value: EcsClusterSetting[] | undefined) {
+  public set setting(value: EcsClusterSetting[] ) {
     this._setting = value;
+  }
+  public resetSetting() {
+    this._setting = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get settingInput() {
+    return this._setting
   }
 
   // =========

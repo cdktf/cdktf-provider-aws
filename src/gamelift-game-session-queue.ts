@@ -50,7 +50,7 @@ export class GameliftGameSessionQueue extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,55 +58,83 @@ export class GameliftGameSessionQueue extends TerraformResource {
   // destinations - computed: false, optional: true, required: false
   private _destinations?: string[];
   public get destinations() {
-    return this._destinations;
+    return this.getListAttribute('destinations');
   }
-  public set destinations(value: string[] | undefined) {
+  public set destinations(value: string[] ) {
     this._destinations = value;
+  }
+  public resetDestinations() {
+    this._destinations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationsInput() {
+    return this._destinations
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // timeout_in_seconds - computed: false, optional: true, required: false
   private _timeoutInSeconds?: number;
   public get timeoutInSeconds() {
-    return this._timeoutInSeconds;
+    return this.getNumberAttribute('timeout_in_seconds');
   }
-  public set timeoutInSeconds(value: number | undefined) {
+  public set timeoutInSeconds(value: number ) {
     this._timeoutInSeconds = value;
+  }
+  public resetTimeoutInSeconds() {
+    this._timeoutInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInSecondsInput() {
+    return this._timeoutInSeconds
   }
 
   // player_latency_policy - computed: false, optional: true, required: false
   private _playerLatencyPolicy?: GameliftGameSessionQueuePlayerLatencyPolicy[];
   public get playerLatencyPolicy() {
-    return this._playerLatencyPolicy;
+    return this.interpolationForAttribute('player_latency_policy') as any;
   }
-  public set playerLatencyPolicy(value: GameliftGameSessionQueuePlayerLatencyPolicy[] | undefined) {
+  public set playerLatencyPolicy(value: GameliftGameSessionQueuePlayerLatencyPolicy[] ) {
     this._playerLatencyPolicy = value;
+  }
+  public resetPlayerLatencyPolicy() {
+    this._playerLatencyPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get playerLatencyPolicyInput() {
+    return this._playerLatencyPolicy
   }
 
   // =========

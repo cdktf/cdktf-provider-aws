@@ -41,54 +41,64 @@ export class DefaultVpcDhcpOptions extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // domain_name - computed: true, optional: false, required: true
+  // domain_name - computed: true, optional: false, required: false
   public get domainName() {
     return this.getStringAttribute('domain_name');
   }
 
-  // domain_name_servers - computed: true, optional: false, required: true
+  // domain_name_servers - computed: true, optional: false, required: false
   public get domainNameServers() {
     return this.getStringAttribute('domain_name_servers');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // netbios_name_servers - computed: false, optional: true, required: false
   private _netbiosNameServers?: string[];
   public get netbiosNameServers() {
-    return this._netbiosNameServers;
+    return this.getListAttribute('netbios_name_servers');
   }
-  public set netbiosNameServers(value: string[] | undefined) {
+  public set netbiosNameServers(value: string[] ) {
     this._netbiosNameServers = value;
+  }
+  public resetNetbiosNameServers() {
+    this._netbiosNameServers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get netbiosNameServersInput() {
+    return this._netbiosNameServers
   }
 
   // netbios_node_type - computed: false, optional: true, required: false
   private _netbiosNodeType?: string;
   public get netbiosNodeType() {
-    return this._netbiosNodeType;
+    return this.getStringAttribute('netbios_node_type');
   }
-  public set netbiosNodeType(value: string | undefined) {
+  public set netbiosNodeType(value: string ) {
     this._netbiosNodeType = value;
   }
+  public resetNetbiosNodeType() {
+    this._netbiosNodeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get netbiosNodeTypeInput() {
+    return this._netbiosNodeType
+  }
 
-  // ntp_servers - computed: true, optional: false, required: true
+  // ntp_servers - computed: true, optional: false, required: false
   public get ntpServers() {
     return this.getStringAttribute('ntp_servers');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -96,10 +106,17 @@ export class DefaultVpcDhcpOptions extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

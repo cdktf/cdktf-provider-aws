@@ -49,26 +49,22 @@ export class AppmeshMesh extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_updated_date - computed: true, optional: false, required: true
+  // last_updated_date - computed: true, optional: false, required: false
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -76,28 +72,46 @@ export class AppmeshMesh extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // spec - computed: false, optional: true, required: false
   private _spec?: AppmeshMeshSpec[];
   public get spec() {
-    return this._spec;
+    return this.interpolationForAttribute('spec') as any;
   }
-  public set spec(value: AppmeshMeshSpec[] | undefined) {
+  public set spec(value: AppmeshMeshSpec[] ) {
     this._spec = value;
+  }
+  public resetSpec() {
+    this._spec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get specInput() {
+    return this._spec
   }
 
   // =========

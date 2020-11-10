@@ -59,18 +59,25 @@ export class KmsGrant extends TerraformResource {
   // grant_creation_tokens - computed: false, optional: true, required: false
   private _grantCreationTokens?: string[];
   public get grantCreationTokens() {
-    return this._grantCreationTokens;
+    return this.getListAttribute('grant_creation_tokens');
   }
-  public set grantCreationTokens(value: string[] | undefined) {
+  public set grantCreationTokens(value: string[] ) {
     this._grantCreationTokens = value;
   }
+  public resetGrantCreationTokens() {
+    this._grantCreationTokens = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grantCreationTokensInput() {
+    return this._grantCreationTokens
+  }
 
-  // grant_id - computed: true, optional: false, required: true
+  // grant_id - computed: true, optional: false, required: false
   public get grantId() {
     return this.getStringAttribute('grant_id');
   }
 
-  // grant_token - computed: true, optional: false, required: true
+  // grant_token - computed: true, optional: false, required: false
   public get grantToken() {
     return this.getStringAttribute('grant_token');
   }
@@ -78,73 +85,109 @@ export class KmsGrant extends TerraformResource {
   // grantee_principal - computed: false, optional: false, required: true
   private _granteePrincipal: string;
   public get granteePrincipal() {
-    return this._granteePrincipal;
+    return this.getStringAttribute('grantee_principal');
   }
   public set granteePrincipal(value: string) {
     this._granteePrincipal = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get granteePrincipalInput() {
+    return this._granteePrincipal
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key_id - computed: false, optional: false, required: true
   private _keyId: string;
   public get keyId() {
-    return this._keyId;
+    return this.getStringAttribute('key_id');
   }
   public set keyId(value: string) {
     this._keyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string ) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // operations - computed: false, optional: false, required: true
   private _operations: string[];
   public get operations() {
-    return this._operations;
+    return this.getListAttribute('operations');
   }
   public set operations(value: string[]) {
     this._operations = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationsInput() {
+    return this._operations
   }
 
   // retire_on_delete - computed: false, optional: true, required: false
   private _retireOnDelete?: boolean;
   public get retireOnDelete() {
-    return this._retireOnDelete;
+    return this.getBooleanAttribute('retire_on_delete');
   }
-  public set retireOnDelete(value: boolean | undefined) {
+  public set retireOnDelete(value: boolean ) {
     this._retireOnDelete = value;
+  }
+  public resetRetireOnDelete() {
+    this._retireOnDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retireOnDeleteInput() {
+    return this._retireOnDelete
   }
 
   // retiring_principal - computed: false, optional: true, required: false
   private _retiringPrincipal?: string;
   public get retiringPrincipal() {
-    return this._retiringPrincipal;
+    return this.getStringAttribute('retiring_principal');
   }
-  public set retiringPrincipal(value: string | undefined) {
+  public set retiringPrincipal(value: string ) {
     this._retiringPrincipal = value;
+  }
+  public resetRetiringPrincipal() {
+    this._retiringPrincipal = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retiringPrincipalInput() {
+    return this._retiringPrincipal
   }
 
   // constraints - computed: false, optional: true, required: false
   private _constraints?: KmsGrantConstraints[];
   public get constraints() {
-    return this._constraints;
+    return this.interpolationForAttribute('constraints') as any;
   }
-  public set constraints(value: KmsGrantConstraints[] | undefined) {
+  public set constraints(value: KmsGrantConstraints[] ) {
     this._constraints = value;
+  }
+  public resetConstraints() {
+    this._constraints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get constraintsInput() {
+    return this._constraints
   }
 
   // =========

@@ -60,12 +60,12 @@ export class EfsAccessPoint extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // file_system_arn - computed: true, optional: false, required: true
+  // file_system_arn - computed: true, optional: false, required: false
   public get fileSystemArn() {
     return this.getStringAttribute('file_system_arn');
   }
@@ -73,22 +73,22 @@ export class EfsAccessPoint extends TerraformResource {
   // file_system_id - computed: false, optional: false, required: true
   private _fileSystemId: string;
   public get fileSystemId() {
-    return this._fileSystemId;
+    return this.getStringAttribute('file_system_id');
   }
   public set fileSystemId(value: string) {
     this._fileSystemId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdInput() {
+    return this._fileSystemId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -96,28 +96,49 @@ export class EfsAccessPoint extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // posix_user - computed: false, optional: true, required: false
   private _posixUser?: EfsAccessPointPosixUser[];
   public get posixUser() {
-    return this._posixUser;
+    return this.interpolationForAttribute('posix_user') as any;
   }
-  public set posixUser(value: EfsAccessPointPosixUser[] | undefined) {
+  public set posixUser(value: EfsAccessPointPosixUser[] ) {
     this._posixUser = value;
+  }
+  public resetPosixUser() {
+    this._posixUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get posixUserInput() {
+    return this._posixUser
   }
 
   // root_directory - computed: false, optional: true, required: false
   private _rootDirectory?: EfsAccessPointRootDirectory[];
   public get rootDirectory() {
-    return this._rootDirectory;
+    return this.interpolationForAttribute('root_directory') as any;
   }
-  public set rootDirectory(value: EfsAccessPointRootDirectory[] | undefined) {
+  public set rootDirectory(value: EfsAccessPointRootDirectory[] ) {
     this._rootDirectory = value;
+  }
+  public resetRootDirectory() {
+    this._rootDirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rootDirectoryInput() {
+    return this._rootDirectory
   }
 
   // =========

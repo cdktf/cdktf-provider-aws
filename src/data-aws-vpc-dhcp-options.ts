@@ -46,7 +46,7 @@ export class DataAwsVpcDhcpOptions extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -54,67 +54,84 @@ export class DataAwsVpcDhcpOptions extends TerraformDataSource {
   // dhcp_options_id - computed: true, optional: true, required: false
   private _dhcpOptionsId?: string;
   public get dhcpOptionsId() {
-    return this._dhcpOptionsId ?? this.getStringAttribute('dhcp_options_id');
+    return this.getStringAttribute('dhcp_options_id');
   }
-  public set dhcpOptionsId(value: string | undefined) {
+  public set dhcpOptionsId(value: string) {
     this._dhcpOptionsId = value;
   }
+  public resetDhcpOptionsId() {
+    this._dhcpOptionsId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpOptionsIdInput() {
+    return this._dhcpOptionsId
+  }
 
-  // domain_name - computed: true, optional: false, required: true
+  // domain_name - computed: true, optional: false, required: false
   public get domainName() {
     return this.getStringAttribute('domain_name');
   }
 
-  // domain_name_servers - computed: true, optional: false, required: true
+  // domain_name_servers - computed: true, optional: false, required: false
   public get domainNameServers() {
     return this.getListAttribute('domain_name_servers');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // netbios_name_servers - computed: true, optional: false, required: true
+  // netbios_name_servers - computed: true, optional: false, required: false
   public get netbiosNameServers() {
     return this.getListAttribute('netbios_name_servers');
   }
 
-  // netbios_node_type - computed: true, optional: false, required: true
+  // netbios_node_type - computed: true, optional: false, required: false
   public get netbiosNodeType() {
     return this.getStringAttribute('netbios_node_type');
   }
 
-  // ntp_servers - computed: true, optional: false, required: true
+  // ntp_servers - computed: true, optional: false, required: false
   public get ntpServers() {
     return this.getListAttribute('ntp_servers');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsVpcDhcpOptionsFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsVpcDhcpOptionsFilter[] | undefined) {
+  public set filter(value: DataAwsVpcDhcpOptionsFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

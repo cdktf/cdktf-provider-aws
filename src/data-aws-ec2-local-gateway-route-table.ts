@@ -53,66 +53,104 @@ export class DataAwsEc2LocalGatewayRouteTable extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // local_gateway_id - computed: true, optional: true, required: false
   private _localGatewayId?: string;
   public get localGatewayId() {
-    return this._localGatewayId ?? this.getStringAttribute('local_gateway_id');
+    return this.getStringAttribute('local_gateway_id');
   }
-  public set localGatewayId(value: string | undefined) {
+  public set localGatewayId(value: string) {
     this._localGatewayId = value;
+  }
+  public resetLocalGatewayId() {
+    this._localGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayIdInput() {
+    return this._localGatewayId
   }
 
   // local_gateway_route_table_id - computed: true, optional: true, required: false
   private _localGatewayRouteTableId?: string;
   public get localGatewayRouteTableId() {
-    return this._localGatewayRouteTableId ?? this.getStringAttribute('local_gateway_route_table_id');
+    return this.getStringAttribute('local_gateway_route_table_id');
   }
-  public set localGatewayRouteTableId(value: string | undefined) {
+  public set localGatewayRouteTableId(value: string) {
     this._localGatewayRouteTableId = value;
+  }
+  public resetLocalGatewayRouteTableId() {
+    this._localGatewayRouteTableId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayRouteTableIdInput() {
+    return this._localGatewayRouteTableId
   }
 
   // outpost_arn - computed: true, optional: true, required: false
   private _outpostArn?: string;
   public get outpostArn() {
-    return this._outpostArn ?? this.getStringAttribute('outpost_arn');
+    return this.getStringAttribute('outpost_arn');
   }
-  public set outpostArn(value: string | undefined) {
+  public set outpostArn(value: string) {
     this._outpostArn = value;
+  }
+  public resetOutpostArn() {
+    this._outpostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outpostArnInput() {
+    return this._outpostArn
   }
 
   // state - computed: true, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this._state ?? this.getStringAttribute('state');
+    return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string) {
     this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2LocalGatewayRouteTableFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2LocalGatewayRouteTableFilter[] | undefined) {
+  public set filter(value: DataAwsEc2LocalGatewayRouteTableFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

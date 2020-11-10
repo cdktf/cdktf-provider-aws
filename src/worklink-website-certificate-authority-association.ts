@@ -44,40 +44,51 @@ export class WorklinkWebsiteCertificateAuthorityAssociation extends TerraformRes
   // certificate - computed: false, optional: false, required: true
   private _certificate: string;
   public get certificate() {
-    return this._certificate;
+    return this.getStringAttribute('certificate');
   }
   public set certificate(value: string) {
     this._certificate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate
   }
 
   // display_name - computed: false, optional: true, required: false
   private _displayName?: string;
   public get displayName() {
-    return this._displayName;
+    return this.getStringAttribute('display_name');
   }
-  public set displayName(value: string | undefined) {
+  public set displayName(value: string ) {
     this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName
   }
 
   // fleet_arn - computed: false, optional: false, required: true
   private _fleetArn: string;
   public get fleetArn() {
-    return this._fleetArn;
+    return this.getStringAttribute('fleet_arn');
   }
   public set fleetArn(value: string) {
     this._fleetArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fleetArnInput() {
+    return this._fleetArn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // website_ca_id - computed: true, optional: false, required: true
+  // website_ca_id - computed: true, optional: false, required: false
   public get websiteCaId() {
     return this.getStringAttribute('website_ca_id');
   }

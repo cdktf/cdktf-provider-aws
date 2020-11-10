@@ -37,31 +37,27 @@ export class DataAwsIamUser extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // permissions_boundary - computed: true, optional: false, required: true
+  // permissions_boundary - computed: true, optional: false, required: false
   public get permissionsBoundary() {
     return this.getStringAttribute('permissions_boundary');
   }
 
-  // user_id - computed: true, optional: false, required: true
+  // user_id - computed: true, optional: false, required: false
   public get userId() {
     return this.getStringAttribute('user_id');
   }
@@ -69,10 +65,14 @@ export class DataAwsIamUser extends TerraformDataSource {
   // user_name - computed: false, optional: false, required: true
   private _userName: string;
   public get userName() {
-    return this._userName;
+    return this.getStringAttribute('user_name');
   }
   public set userName(value: string) {
     this._userName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userNameInput() {
+    return this._userName
   }
 
   // =========

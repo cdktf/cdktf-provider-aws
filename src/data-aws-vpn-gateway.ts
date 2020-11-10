@@ -55,13 +55,20 @@ export class DataAwsVpnGateway extends TerraformDataSource {
   // amazon_side_asn - computed: true, optional: true, required: false
   private _amazonSideAsn?: string;
   public get amazonSideAsn() {
-    return this._amazonSideAsn ?? this.getStringAttribute('amazon_side_asn');
+    return this.getStringAttribute('amazon_side_asn');
   }
-  public set amazonSideAsn(value: string | undefined) {
+  public set amazonSideAsn(value: string) {
     this._amazonSideAsn = value;
   }
+  public resetAmazonSideAsn() {
+    this._amazonSideAsn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amazonSideAsnInput() {
+    return this._amazonSideAsn
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -69,55 +76,86 @@ export class DataAwsVpnGateway extends TerraformDataSource {
   // attached_vpc_id - computed: true, optional: true, required: false
   private _attachedVpcId?: string;
   public get attachedVpcId() {
-    return this._attachedVpcId ?? this.getStringAttribute('attached_vpc_id');
+    return this.getStringAttribute('attached_vpc_id');
   }
-  public set attachedVpcId(value: string | undefined) {
+  public set attachedVpcId(value: string) {
     this._attachedVpcId = value;
+  }
+  public resetAttachedVpcId() {
+    this._attachedVpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attachedVpcIdInput() {
+    return this._attachedVpcId
   }
 
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
+    return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // state - computed: true, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this._state ?? this.getStringAttribute('state');
+    return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string) {
     this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsVpnGatewayFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsVpnGatewayFilter[] | undefined) {
+  public set filter(value: DataAwsVpnGatewayFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

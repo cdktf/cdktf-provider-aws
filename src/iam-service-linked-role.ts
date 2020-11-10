@@ -41,7 +41,7 @@ export class IamServiceLinkedRole extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -49,13 +49,17 @@ export class IamServiceLinkedRole extends TerraformResource {
   // aws_service_name - computed: false, optional: false, required: true
   private _awsServiceName: string;
   public get awsServiceName() {
-    return this._awsServiceName;
+    return this.getStringAttribute('aws_service_name');
   }
   public set awsServiceName(value: string) {
     this._awsServiceName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get awsServiceNameInput() {
+    return this._awsServiceName
+  }
 
-  // create_date - computed: true, optional: false, required: true
+  // create_date - computed: true, optional: false, required: false
   public get createDate() {
     return this.getStringAttribute('create_date');
   }
@@ -63,41 +67,51 @@ export class IamServiceLinkedRole extends TerraformResource {
   // custom_suffix - computed: false, optional: true, required: false
   private _customSuffix?: string;
   public get customSuffix() {
-    return this._customSuffix;
+    return this.getStringAttribute('custom_suffix');
   }
-  public set customSuffix(value: string | undefined) {
+  public set customSuffix(value: string ) {
     this._customSuffix = value;
+  }
+  public resetCustomSuffix() {
+    this._customSuffix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customSuffixInput() {
+    return this._customSuffix
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // unique_id - computed: true, optional: false, required: true
+  // unique_id - computed: true, optional: false, required: false
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
   }

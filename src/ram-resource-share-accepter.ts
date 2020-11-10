@@ -45,30 +45,26 @@ export class RamResourceShareAccepter extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // invitation_arn - computed: true, optional: false, required: true
+  // invitation_arn - computed: true, optional: false, required: false
   public get invitationArn() {
     return this.getStringAttribute('invitation_arn');
   }
 
-  // receiver_account_id - computed: true, optional: false, required: true
+  // receiver_account_id - computed: true, optional: false, required: false
   public get receiverAccountId() {
     return this.getStringAttribute('receiver_account_id');
   }
 
-  // resources - computed: true, optional: false, required: true
+  // resources - computed: true, optional: false, required: false
   public get resources() {
     return this.getListAttribute('resources');
   }
 
-  // sender_account_id - computed: true, optional: false, required: true
+  // sender_account_id - computed: true, optional: false, required: false
   public get senderAccountId() {
     return this.getStringAttribute('sender_account_id');
   }
@@ -76,23 +72,27 @@ export class RamResourceShareAccepter extends TerraformResource {
   // share_arn - computed: false, optional: false, required: true
   private _shareArn: string;
   public get shareArn() {
-    return this._shareArn;
+    return this.getStringAttribute('share_arn');
   }
   public set shareArn(value: string) {
     this._shareArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get shareArnInput() {
+    return this._shareArn
+  }
 
-  // share_id - computed: true, optional: false, required: true
+  // share_id - computed: true, optional: false, required: false
   public get shareId() {
     return this.getStringAttribute('share_id');
   }
 
-  // share_name - computed: true, optional: false, required: true
+  // share_name - computed: true, optional: false, required: false
   public get shareName() {
     return this.getStringAttribute('share_name');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -100,10 +100,17 @@ export class RamResourceShareAccepter extends TerraformResource {
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: RamResourceShareAccepterTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: RamResourceShareAccepterTimeouts | undefined) {
+  public set timeouts(value: RamResourceShareAccepterTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

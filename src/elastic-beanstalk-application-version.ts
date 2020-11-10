@@ -52,13 +52,17 @@ export class ElasticBeanstalkApplicationVersion extends TerraformResource {
   // application - computed: false, optional: false, required: true
   private _application: string;
   public get application() {
-    return this._application;
+    return this.getStringAttribute('application');
   }
   public set application(value: string) {
     this._application = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get applicationInput() {
+    return this._application
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -66,64 +70,93 @@ export class ElasticBeanstalkApplicationVersion extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // force_delete - computed: false, optional: true, required: false
   private _forceDelete?: boolean;
   public get forceDelete() {
-    return this._forceDelete;
+    return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean | undefined) {
+  public set forceDelete(value: boolean ) {
     this._forceDelete = value;
+  }
+  public resetForceDelete() {
+    this._forceDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDeleteInput() {
+    return this._forceDelete
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key - computed: false, optional: false, required: true
   private _key: string;
   public get key() {
-    return this._key;
+    return this.getStringAttribute('key');
   }
   public set key(value: string) {
     this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

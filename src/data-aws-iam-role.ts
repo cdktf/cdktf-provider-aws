@@ -41,41 +41,37 @@ export class DataAwsIamRole extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // assume_role_policy - computed: true, optional: false, required: true
+  // assume_role_policy - computed: true, optional: false, required: false
   public get assumeRolePolicy() {
     return this.getStringAttribute('assume_role_policy');
   }
 
-  // assume_role_policy_document - computed: true, optional: false, required: true
+  // assume_role_policy_document - computed: true, optional: false, required: false
   public get assumeRolePolicyDocument() {
     return this.getStringAttribute('assume_role_policy_document');
   }
 
-  // create_date - computed: true, optional: false, required: true
+  // create_date - computed: true, optional: false, required: false
   public get createDate() {
     return this.getStringAttribute('create_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // max_session_duration - computed: true, optional: false, required: true
+  // max_session_duration - computed: true, optional: false, required: false
   public get maxSessionDuration() {
     return this.getNumberAttribute('max_session_duration');
   }
@@ -83,23 +79,27 @@ export class DataAwsIamRole extends TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // permissions_boundary - computed: true, optional: false, required: true
+  // permissions_boundary - computed: true, optional: false, required: false
   public get permissionsBoundary() {
     return this.getStringAttribute('permissions_boundary');
   }
 
-  // role_id - computed: true, optional: false, required: true
+  // role_id - computed: true, optional: false, required: false
   public get roleId() {
     return this.getStringAttribute('role_id');
   }
@@ -107,22 +107,36 @@ export class DataAwsIamRole extends TerraformDataSource {
   // role_name - computed: false, optional: true, required: false
   private _roleName?: string;
   public get roleName() {
-    return this._roleName;
+    return this.getStringAttribute('role_name');
   }
-  public set roleName(value: string | undefined) {
+  public set roleName(value: string ) {
     this._roleName = value;
+  }
+  public resetRoleName() {
+    this._roleName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleNameInput() {
+    return this._roleName
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // unique_id - computed: true, optional: false, required: true
+  // unique_id - computed: true, optional: false, required: false
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
   }

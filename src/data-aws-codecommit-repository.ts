@@ -37,31 +37,27 @@ export class DataAwsCodecommitRepository extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // clone_url_http - computed: true, optional: false, required: true
+  // clone_url_http - computed: true, optional: false, required: false
   public get cloneUrlHttp() {
     return this.getStringAttribute('clone_url_http');
   }
 
-  // clone_url_ssh - computed: true, optional: false, required: true
+  // clone_url_ssh - computed: true, optional: false, required: false
   public get cloneUrlSsh() {
     return this.getStringAttribute('clone_url_ssh');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // repository_id - computed: true, optional: false, required: true
+  // repository_id - computed: true, optional: false, required: false
   public get repositoryId() {
     return this.getStringAttribute('repository_id');
   }
@@ -69,10 +65,14 @@ export class DataAwsCodecommitRepository extends TerraformDataSource {
   // repository_name - computed: false, optional: false, required: true
   private _repositoryName: string;
   public get repositoryName() {
-    return this._repositoryName;
+    return this.getStringAttribute('repository_name');
   }
   public set repositoryName(value: string) {
     this._repositoryName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryNameInput() {
+    return this._repositoryName
   }
 
   // =========

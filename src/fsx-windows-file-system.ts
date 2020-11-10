@@ -80,13 +80,20 @@ export class FsxWindowsFileSystem extends TerraformResource {
   // active_directory_id - computed: false, optional: true, required: false
   private _activeDirectoryId?: string;
   public get activeDirectoryId() {
-    return this._activeDirectoryId;
+    return this.getStringAttribute('active_directory_id');
   }
-  public set activeDirectoryId(value: string | undefined) {
+  public set activeDirectoryId(value: string ) {
     this._activeDirectoryId = value;
   }
+  public resetActiveDirectoryId() {
+    this._activeDirectoryId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeDirectoryIdInput() {
+    return this._activeDirectoryId
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -94,59 +101,83 @@ export class FsxWindowsFileSystem extends TerraformResource {
   // automatic_backup_retention_days - computed: false, optional: true, required: false
   private _automaticBackupRetentionDays?: number;
   public get automaticBackupRetentionDays() {
-    return this._automaticBackupRetentionDays;
+    return this.getNumberAttribute('automatic_backup_retention_days');
   }
-  public set automaticBackupRetentionDays(value: number | undefined) {
+  public set automaticBackupRetentionDays(value: number ) {
     this._automaticBackupRetentionDays = value;
+  }
+  public resetAutomaticBackupRetentionDays() {
+    this._automaticBackupRetentionDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get automaticBackupRetentionDaysInput() {
+    return this._automaticBackupRetentionDays
   }
 
   // copy_tags_to_backups - computed: false, optional: true, required: false
   private _copyTagsToBackups?: boolean;
   public get copyTagsToBackups() {
-    return this._copyTagsToBackups;
+    return this.getBooleanAttribute('copy_tags_to_backups');
   }
-  public set copyTagsToBackups(value: boolean | undefined) {
+  public set copyTagsToBackups(value: boolean ) {
     this._copyTagsToBackups = value;
+  }
+  public resetCopyTagsToBackups() {
+    this._copyTagsToBackups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyTagsToBackupsInput() {
+    return this._copyTagsToBackups
   }
 
   // daily_automatic_backup_start_time - computed: true, optional: true, required: false
   private _dailyAutomaticBackupStartTime?: string;
   public get dailyAutomaticBackupStartTime() {
-    return this._dailyAutomaticBackupStartTime ?? this.getStringAttribute('daily_automatic_backup_start_time');
+    return this.getStringAttribute('daily_automatic_backup_start_time');
   }
-  public set dailyAutomaticBackupStartTime(value: string | undefined) {
+  public set dailyAutomaticBackupStartTime(value: string) {
     this._dailyAutomaticBackupStartTime = value;
   }
+  public resetDailyAutomaticBackupStartTime() {
+    this._dailyAutomaticBackupStartTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dailyAutomaticBackupStartTimeInput() {
+    return this._dailyAutomaticBackupStartTime
+  }
 
-  // dns_name - computed: true, optional: false, required: true
+  // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string) {
     this._kmsKeyId = value;
   }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
+  }
 
-  // network_interface_ids - computed: true, optional: false, required: true
+  // network_interface_ids - computed: true, optional: false, required: false
   public get networkInterfaceIds() {
     return this.getListAttribute('network_interface_ids');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -154,58 +185,91 @@ export class FsxWindowsFileSystem extends TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[];
   public get securityGroupIds() {
-    return this._securityGroupIds;
+    return this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[] | undefined) {
+  public set securityGroupIds(value: string[] ) {
     this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds
   }
 
   // skip_final_backup - computed: false, optional: true, required: false
   private _skipFinalBackup?: boolean;
   public get skipFinalBackup() {
-    return this._skipFinalBackup;
+    return this.getBooleanAttribute('skip_final_backup');
   }
-  public set skipFinalBackup(value: boolean | undefined) {
+  public set skipFinalBackup(value: boolean ) {
     this._skipFinalBackup = value;
+  }
+  public resetSkipFinalBackup() {
+    this._skipFinalBackup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipFinalBackupInput() {
+    return this._skipFinalBackup
   }
 
   // storage_capacity - computed: false, optional: false, required: true
   private _storageCapacity: number;
   public get storageCapacity() {
-    return this._storageCapacity;
+    return this.getNumberAttribute('storage_capacity');
   }
   public set storageCapacity(value: number) {
     this._storageCapacity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageCapacityInput() {
+    return this._storageCapacity
   }
 
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds: string[];
   public get subnetIds() {
-    return this._subnetIds;
+    return this.getListAttribute('subnet_ids');
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // throughput_capacity - computed: false, optional: false, required: true
   private _throughputCapacity: number;
   public get throughputCapacity() {
-    return this._throughputCapacity;
+    return this.getNumberAttribute('throughput_capacity');
   }
   public set throughputCapacity(value: number) {
     this._throughputCapacity = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get throughputCapacityInput() {
+    return this._throughputCapacity
+  }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -213,28 +277,49 @@ export class FsxWindowsFileSystem extends TerraformResource {
   // weekly_maintenance_start_time - computed: true, optional: true, required: false
   private _weeklyMaintenanceStartTime?: string;
   public get weeklyMaintenanceStartTime() {
-    return this._weeklyMaintenanceStartTime ?? this.getStringAttribute('weekly_maintenance_start_time');
+    return this.getStringAttribute('weekly_maintenance_start_time');
   }
-  public set weeklyMaintenanceStartTime(value: string | undefined) {
+  public set weeklyMaintenanceStartTime(value: string) {
     this._weeklyMaintenanceStartTime = value;
+  }
+  public resetWeeklyMaintenanceStartTime() {
+    this._weeklyMaintenanceStartTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weeklyMaintenanceStartTimeInput() {
+    return this._weeklyMaintenanceStartTime
   }
 
   // self_managed_active_directory - computed: false, optional: true, required: false
   private _selfManagedActiveDirectory?: FsxWindowsFileSystemSelfManagedActiveDirectory[];
   public get selfManagedActiveDirectory() {
-    return this._selfManagedActiveDirectory;
+    return this.interpolationForAttribute('self_managed_active_directory') as any;
   }
-  public set selfManagedActiveDirectory(value: FsxWindowsFileSystemSelfManagedActiveDirectory[] | undefined) {
+  public set selfManagedActiveDirectory(value: FsxWindowsFileSystemSelfManagedActiveDirectory[] ) {
     this._selfManagedActiveDirectory = value;
+  }
+  public resetSelfManagedActiveDirectory() {
+    this._selfManagedActiveDirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfManagedActiveDirectoryInput() {
+    return this._selfManagedActiveDirectory
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: FsxWindowsFileSystemTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: FsxWindowsFileSystemTimeouts | undefined) {
+  public set timeouts(value: FsxWindowsFileSystemTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

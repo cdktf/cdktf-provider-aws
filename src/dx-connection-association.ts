@@ -42,28 +42,32 @@ export class DxConnectionAssociation extends TerraformResource {
   // connection_id - computed: false, optional: false, required: true
   private _connectionId: string;
   public get connectionId() {
-    return this._connectionId;
+    return this.getStringAttribute('connection_id');
   }
   public set connectionId(value: string) {
     this._connectionId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get connectionIdInput() {
+    return this._connectionId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // lag_id - computed: false, optional: false, required: true
   private _lagId: string;
   public get lagId() {
-    return this._lagId;
+    return this.getStringAttribute('lag_id');
   }
   public set lagId(value: string) {
     this._lagId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lagIdInput() {
+    return this._lagId
   }
 
   // =========

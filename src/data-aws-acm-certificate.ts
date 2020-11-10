@@ -47,7 +47,7 @@ export class DataAwsAcmCertificate extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -55,64 +55,99 @@ export class DataAwsAcmCertificate extends TerraformDataSource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key_types - computed: false, optional: true, required: false
   private _keyTypes?: string[];
   public get keyTypes() {
-    return this._keyTypes;
+    return this.getListAttribute('key_types');
   }
-  public set keyTypes(value: string[] | undefined) {
+  public set keyTypes(value: string[] ) {
     this._keyTypes = value;
+  }
+  public resetKeyTypes() {
+    this._keyTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyTypesInput() {
+    return this._keyTypes
   }
 
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean;
   public get mostRecent() {
-    return this._mostRecent;
+    return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | undefined) {
+  public set mostRecent(value: boolean ) {
     this._mostRecent = value;
+  }
+  public resetMostRecent() {
+    this._mostRecent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mostRecentInput() {
+    return this._mostRecent
   }
 
   // statuses - computed: false, optional: true, required: false
   private _statuses?: string[];
   public get statuses() {
-    return this._statuses;
+    return this.getListAttribute('statuses');
   }
-  public set statuses(value: string[] | undefined) {
+  public set statuses(value: string[] ) {
     this._statuses = value;
+  }
+  public resetStatuses() {
+    this._statuses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusesInput() {
+    return this._statuses
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // types - computed: false, optional: true, required: false
   private _types?: string[];
   public get types() {
-    return this._types;
+    return this.getListAttribute('types');
   }
-  public set types(value: string[] | undefined) {
+  public set types(value: string[] ) {
     this._types = value;
+  }
+  public resetTypes() {
+    this._types = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typesInput() {
+    return this._types
   }
 
   // =========

@@ -56,49 +56,73 @@ export class CloudformationStackSetInstance extends TerraformResource {
   // account_id - computed: true, optional: true, required: false
   private _accountId?: string;
   public get accountId() {
-    return this._accountId ?? this.getStringAttribute('account_id');
+    return this.getStringAttribute('account_id');
   }
-  public set accountId(value: string | undefined) {
+  public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // parameter_overrides - computed: false, optional: true, required: false
   private _parameterOverrides?: { [key: string]: string };
   public get parameterOverrides() {
-    return this._parameterOverrides;
+    return this.interpolationForAttribute('parameter_overrides') as any;
   }
-  public set parameterOverrides(value: { [key: string]: string } | undefined) {
+  public set parameterOverrides(value: { [key: string]: string } ) {
     this._parameterOverrides = value;
+  }
+  public resetParameterOverrides() {
+    this._parameterOverrides = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterOverridesInput() {
+    return this._parameterOverrides
   }
 
   // region - computed: true, optional: true, required: false
   private _region?: string;
   public get region() {
-    return this._region ?? this.getStringAttribute('region');
+    return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region
   }
 
   // retain_stack - computed: false, optional: true, required: false
   private _retainStack?: boolean;
   public get retainStack() {
-    return this._retainStack;
+    return this.getBooleanAttribute('retain_stack');
   }
-  public set retainStack(value: boolean | undefined) {
+  public set retainStack(value: boolean ) {
     this._retainStack = value;
   }
+  public resetRetainStack() {
+    this._retainStack = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retainStackInput() {
+    return this._retainStack
+  }
 
-  // stack_id - computed: true, optional: false, required: true
+  // stack_id - computed: true, optional: false, required: false
   public get stackId() {
     return this.getStringAttribute('stack_id');
   }
@@ -106,19 +130,30 @@ export class CloudformationStackSetInstance extends TerraformResource {
   // stack_set_name - computed: false, optional: false, required: true
   private _stackSetName: string;
   public get stackSetName() {
-    return this._stackSetName;
+    return this.getStringAttribute('stack_set_name');
   }
   public set stackSetName(value: string) {
     this._stackSetName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stackSetNameInput() {
+    return this._stackSetName
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: CloudformationStackSetInstanceTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: CloudformationStackSetInstanceTimeouts | undefined) {
+  public set timeouts(value: CloudformationStackSetInstanceTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

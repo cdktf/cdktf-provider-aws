@@ -42,27 +42,27 @@ export class Ec2ClientVpnNetworkAssociation extends TerraformResource {
   // client_vpn_endpoint_id - computed: false, optional: false, required: true
   private _clientVpnEndpointId: string;
   public get clientVpnEndpointId() {
-    return this._clientVpnEndpointId;
+    return this.getStringAttribute('client_vpn_endpoint_id');
   }
   public set clientVpnEndpointId(value: string) {
     this._clientVpnEndpointId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get clientVpnEndpointIdInput() {
+    return this._clientVpnEndpointId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // security_groups - computed: true, optional: false, required: true
+  // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
     return this.getListAttribute('security_groups');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -70,13 +70,17 @@ export class Ec2ClientVpnNetworkAssociation extends TerraformResource {
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
   public set subnetId(value: string) {
     this._subnetId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
+  }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }

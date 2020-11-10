@@ -36,15 +36,11 @@ export class DataAwsOutpostsSites extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ids - computed: true, optional: false, required: true
+  // ids - computed: true, optional: false, required: false
   public get ids() {
     return this.getListAttribute('ids');
   }

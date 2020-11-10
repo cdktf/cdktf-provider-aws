@@ -42,28 +42,32 @@ export class ElasticsearchDomainPolicy extends TerraformResource {
   // access_policies - computed: false, optional: false, required: true
   private _accessPolicies: string;
   public get accessPolicies() {
-    return this._accessPolicies;
+    return this.getStringAttribute('access_policies');
   }
   public set accessPolicies(value: string) {
     this._accessPolicies = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessPoliciesInput() {
+    return this._accessPolicies
   }
 
   // domain_name - computed: false, optional: false, required: true
   private _domainName: string;
   public get domainName() {
-    return this._domainName;
+    return this.getStringAttribute('domain_name');
   }
   public set domainName(value: string) {
     this._domainName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainNameInput() {
+    return this._domainName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

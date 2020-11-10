@@ -60,109 +60,176 @@ export class Apigatewayv2Route extends TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this._apiId;
+    return this.getStringAttribute('api_id');
   }
   public set apiId(value: string) {
     this._apiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId
   }
 
   // api_key_required - computed: false, optional: true, required: false
   private _apiKeyRequired?: boolean;
   public get apiKeyRequired() {
-    return this._apiKeyRequired;
+    return this.getBooleanAttribute('api_key_required');
   }
-  public set apiKeyRequired(value: boolean | undefined) {
+  public set apiKeyRequired(value: boolean ) {
     this._apiKeyRequired = value;
+  }
+  public resetApiKeyRequired() {
+    this._apiKeyRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeyRequiredInput() {
+    return this._apiKeyRequired
   }
 
   // authorization_scopes - computed: false, optional: true, required: false
   private _authorizationScopes?: string[];
   public get authorizationScopes() {
-    return this._authorizationScopes;
+    return this.getListAttribute('authorization_scopes');
   }
-  public set authorizationScopes(value: string[] | undefined) {
+  public set authorizationScopes(value: string[] ) {
     this._authorizationScopes = value;
+  }
+  public resetAuthorizationScopes() {
+    this._authorizationScopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationScopesInput() {
+    return this._authorizationScopes
   }
 
   // authorization_type - computed: false, optional: true, required: false
   private _authorizationType?: string;
   public get authorizationType() {
-    return this._authorizationType;
+    return this.getStringAttribute('authorization_type');
   }
-  public set authorizationType(value: string | undefined) {
+  public set authorizationType(value: string ) {
     this._authorizationType = value;
+  }
+  public resetAuthorizationType() {
+    this._authorizationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationTypeInput() {
+    return this._authorizationType
   }
 
   // authorizer_id - computed: false, optional: true, required: false
   private _authorizerId?: string;
   public get authorizerId() {
-    return this._authorizerId;
+    return this.getStringAttribute('authorizer_id');
   }
-  public set authorizerId(value: string | undefined) {
+  public set authorizerId(value: string ) {
     this._authorizerId = value;
+  }
+  public resetAuthorizerId() {
+    this._authorizerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerIdInput() {
+    return this._authorizerId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // model_selection_expression - computed: false, optional: true, required: false
   private _modelSelectionExpression?: string;
   public get modelSelectionExpression() {
-    return this._modelSelectionExpression;
+    return this.getStringAttribute('model_selection_expression');
   }
-  public set modelSelectionExpression(value: string | undefined) {
+  public set modelSelectionExpression(value: string ) {
     this._modelSelectionExpression = value;
+  }
+  public resetModelSelectionExpression() {
+    this._modelSelectionExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelSelectionExpressionInput() {
+    return this._modelSelectionExpression
   }
 
   // operation_name - computed: false, optional: true, required: false
   private _operationName?: string;
   public get operationName() {
-    return this._operationName;
+    return this.getStringAttribute('operation_name');
   }
-  public set operationName(value: string | undefined) {
+  public set operationName(value: string ) {
     this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
   }
 
   // request_models - computed: false, optional: true, required: false
   private _requestModels?: { [key: string]: string };
   public get requestModels() {
-    return this._requestModels;
+    return this.interpolationForAttribute('request_models') as any;
   }
-  public set requestModels(value: { [key: string]: string } | undefined) {
+  public set requestModels(value: { [key: string]: string } ) {
     this._requestModels = value;
+  }
+  public resetRequestModels() {
+    this._requestModels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestModelsInput() {
+    return this._requestModels
   }
 
   // route_key - computed: false, optional: false, required: true
   private _routeKey: string;
   public get routeKey() {
-    return this._routeKey;
+    return this.getStringAttribute('route_key');
   }
   public set routeKey(value: string) {
     this._routeKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeKeyInput() {
+    return this._routeKey
   }
 
   // route_response_selection_expression - computed: false, optional: true, required: false
   private _routeResponseSelectionExpression?: string;
   public get routeResponseSelectionExpression() {
-    return this._routeResponseSelectionExpression;
+    return this.getStringAttribute('route_response_selection_expression');
   }
-  public set routeResponseSelectionExpression(value: string | undefined) {
+  public set routeResponseSelectionExpression(value: string ) {
     this._routeResponseSelectionExpression = value;
+  }
+  public resetRouteResponseSelectionExpression() {
+    this._routeResponseSelectionExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeResponseSelectionExpressionInput() {
+    return this._routeResponseSelectionExpression
   }
 
   // target - computed: false, optional: true, required: false
   private _target?: string;
   public get target() {
-    return this._target;
+    return this.getStringAttribute('target');
   }
-  public set target(value: string | undefined) {
+  public set target(value: string ) {
     this._target = value;
+  }
+  public resetTarget() {
+    this._target = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target
   }
 
   // =========

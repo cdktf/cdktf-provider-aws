@@ -42,28 +42,32 @@ export class VpnConnectionRoute extends TerraformResource {
   // destination_cidr_block - computed: false, optional: false, required: true
   private _destinationCidrBlock: string;
   public get destinationCidrBlock() {
-    return this._destinationCidrBlock;
+    return this.getStringAttribute('destination_cidr_block');
   }
   public set destinationCidrBlock(value: string) {
     this._destinationCidrBlock = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get destinationCidrBlockInput() {
+    return this._destinationCidrBlock
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // vpn_connection_id - computed: false, optional: false, required: true
   private _vpnConnectionId: string;
   public get vpnConnectionId() {
-    return this._vpnConnectionId;
+    return this.getStringAttribute('vpn_connection_id');
   }
   public set vpnConnectionId(value: string) {
     this._vpnConnectionId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpnConnectionIdInput() {
+    return this._vpnConnectionId
   }
 
   // =========

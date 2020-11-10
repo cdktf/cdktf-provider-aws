@@ -44,29 +44,32 @@ export class DataAwsEcrImage extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // image_digest - computed: true, optional: true, required: false
   private _imageDigest?: string;
   public get imageDigest() {
-    return this._imageDigest ?? this.getStringAttribute('image_digest');
+    return this.getStringAttribute('image_digest');
   }
-  public set imageDigest(value: string | undefined) {
+  public set imageDigest(value: string) {
     this._imageDigest = value;
   }
+  public resetImageDigest() {
+    this._imageDigest = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageDigestInput() {
+    return this._imageDigest
+  }
 
-  // image_pushed_at - computed: true, optional: false, required: true
+  // image_pushed_at - computed: true, optional: false, required: false
   public get imagePushedAt() {
     return this.getNumberAttribute('image_pushed_at');
   }
 
-  // image_size_in_bytes - computed: true, optional: false, required: true
+  // image_size_in_bytes - computed: true, optional: false, required: false
   public get imageSizeInBytes() {
     return this.getNumberAttribute('image_size_in_bytes');
   }
@@ -74,13 +77,20 @@ export class DataAwsEcrImage extends TerraformDataSource {
   // image_tag - computed: false, optional: true, required: false
   private _imageTag?: string;
   public get imageTag() {
-    return this._imageTag;
+    return this.getStringAttribute('image_tag');
   }
-  public set imageTag(value: string | undefined) {
+  public set imageTag(value: string ) {
     this._imageTag = value;
   }
+  public resetImageTag() {
+    this._imageTag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageTagInput() {
+    return this._imageTag
+  }
 
-  // image_tags - computed: true, optional: false, required: true
+  // image_tags - computed: true, optional: false, required: false
   public get imageTags() {
     return this.getListAttribute('image_tags');
   }
@@ -88,19 +98,30 @@ export class DataAwsEcrImage extends TerraformDataSource {
   // registry_id - computed: true, optional: true, required: false
   private _registryId?: string;
   public get registryId() {
-    return this._registryId ?? this.getStringAttribute('registry_id');
+    return this.getStringAttribute('registry_id');
   }
-  public set registryId(value: string | undefined) {
+  public set registryId(value: string) {
     this._registryId = value;
+  }
+  public resetRegistryId() {
+    this._registryId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get registryIdInput() {
+    return this._registryId
   }
 
   // repository_name - computed: false, optional: false, required: true
   private _repositoryName: string;
   public get repositoryName() {
-    return this._repositoryName;
+    return this.getStringAttribute('repository_name');
   }
   public set repositoryName(value: string) {
     this._repositoryName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryNameInput() {
+    return this._repositoryName
   }
 
   // =========

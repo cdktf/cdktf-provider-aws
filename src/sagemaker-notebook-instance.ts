@@ -53,7 +53,7 @@ export class SagemakerNotebookInstance extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -61,91 +61,141 @@ export class SagemakerNotebookInstance extends TerraformResource {
   // direct_internet_access - computed: false, optional: true, required: false
   private _directInternetAccess?: string;
   public get directInternetAccess() {
-    return this._directInternetAccess;
+    return this.getStringAttribute('direct_internet_access');
   }
-  public set directInternetAccess(value: string | undefined) {
+  public set directInternetAccess(value: string ) {
     this._directInternetAccess = value;
+  }
+  public resetDirectInternetAccess() {
+    this._directInternetAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directInternetAccessInput() {
+    return this._directInternetAccess
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_type - computed: false, optional: false, required: true
   private _instanceType: string;
   public get instanceType() {
-    return this._instanceType;
+    return this.getStringAttribute('instance_type');
   }
   public set instanceType(value: string) {
     this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId;
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string ) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // lifecycle_config_name - computed: false, optional: true, required: false
   private _lifecycleConfigName?: string;
   public get lifecycleConfigName() {
-    return this._lifecycleConfigName;
+    return this.getStringAttribute('lifecycle_config_name');
   }
-  public set lifecycleConfigName(value: string | undefined) {
+  public set lifecycleConfigName(value: string ) {
     this._lifecycleConfigName = value;
+  }
+  public resetLifecycleConfigName() {
+    this._lifecycleConfigName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecycleConfigNameInput() {
+    return this._lifecycleConfigName
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[];
   public get securityGroups() {
-    return this._securityGroups ?? this.getListAttribute('security_groups');
+    return this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[] | undefined) {
+  public set securityGroups(value: string[]) {
     this._securityGroups = value;
+  }
+  public resetSecurityGroups() {
+    this._securityGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupsInput() {
+    return this._securityGroups
   }
 
   // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string ) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

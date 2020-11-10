@@ -13,7 +13,7 @@ export interface DataAwsSecretsmanagerSecretRotationConfig extends TerraformMeta
 }
 export class DataAwsSecretsmanagerSecretRotationRotationRules extends ComplexComputedList {
 
-  // automatically_after_days - computed: true, optional: false, required: true
+  // automatically_after_days - computed: true, optional: false, required: false
   public get automaticallyAfterDays() {
     return this.getNumberAttribute('automatically_after_days');
   }
@@ -46,25 +46,21 @@ export class DataAwsSecretsmanagerSecretRotation extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // rotation_enabled - computed: true, optional: false, required: true
+  // rotation_enabled - computed: true, optional: false, required: false
   public get rotationEnabled() {
     return this.getBooleanAttribute('rotation_enabled');
   }
 
-  // rotation_lambda_arn - computed: true, optional: false, required: true
+  // rotation_lambda_arn - computed: true, optional: false, required: false
   public get rotationLambdaArn() {
     return this.getStringAttribute('rotation_lambda_arn');
   }
 
-  // rotation_rules - computed: true, optional: false, required: true
+  // rotation_rules - computed: true, optional: false, required: false
   public rotationRules(index: string) {
     return new DataAwsSecretsmanagerSecretRotationRotationRules(this, 'rotation_rules', index);
   }
@@ -72,10 +68,14 @@ export class DataAwsSecretsmanagerSecretRotation extends TerraformDataSource {
   // secret_id - computed: false, optional: false, required: true
   private _secretId: string;
   public get secretId() {
-    return this._secretId;
+    return this.getStringAttribute('secret_id');
   }
   public set secretId(value: string) {
     this._secretId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretIdInput() {
+    return this._secretId
   }
 
   // =========

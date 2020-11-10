@@ -40,25 +40,21 @@ export class Ec2TransitGatewayPeeringAttachmentAccepter extends TerraformResourc
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // peer_account_id - computed: true, optional: false, required: true
+  // peer_account_id - computed: true, optional: false, required: false
   public get peerAccountId() {
     return this.getStringAttribute('peer_account_id');
   }
 
-  // peer_region - computed: true, optional: false, required: true
+  // peer_region - computed: true, optional: false, required: false
   public get peerRegion() {
     return this.getStringAttribute('peer_region');
   }
 
-  // peer_transit_gateway_id - computed: true, optional: false, required: true
+  // peer_transit_gateway_id - computed: true, optional: false, required: false
   public get peerTransitGatewayId() {
     return this.getStringAttribute('peer_transit_gateway_id');
   }
@@ -66,22 +62,33 @@ export class Ec2TransitGatewayPeeringAttachmentAccepter extends TerraformResourc
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // transit_gateway_attachment_id - computed: false, optional: false, required: true
   private _transitGatewayAttachmentId: string;
   public get transitGatewayAttachmentId() {
-    return this._transitGatewayAttachmentId;
+    return this.getStringAttribute('transit_gateway_attachment_id');
   }
   public set transitGatewayAttachmentId(value: string) {
     this._transitGatewayAttachmentId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayAttachmentIdInput() {
+    return this._transitGatewayAttachmentId
+  }
 
-  // transit_gateway_id - computed: true, optional: false, required: true
+  // transit_gateway_id - computed: true, optional: false, required: false
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
   }

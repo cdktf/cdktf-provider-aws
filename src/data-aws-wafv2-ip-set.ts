@@ -39,31 +39,27 @@ export class DataAwsWafv2IpSet extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // addresses - computed: true, optional: false, required: true
+  // addresses - computed: true, optional: false, required: false
   public get addresses() {
     return this.getListAttribute('addresses');
   }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ip_address_version - computed: true, optional: false, required: true
+  // ip_address_version - computed: true, optional: false, required: false
   public get ipAddressVersion() {
     return this.getStringAttribute('ip_address_version');
   }
@@ -71,19 +67,27 @@ export class DataAwsWafv2IpSet extends TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // scope - computed: false, optional: false, required: true
   private _scope: string;
   public get scope() {
-    return this._scope;
+    return this.getStringAttribute('scope');
   }
   public set scope(value: string) {
     this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope
   }
 
   // =========

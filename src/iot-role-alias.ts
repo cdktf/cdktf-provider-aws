@@ -44,13 +44,17 @@ export class IotRoleAlias extends TerraformResource {
   // alias - computed: false, optional: false, required: true
   private _alias: string;
   public get alias() {
-    return this._alias;
+    return this.getStringAttribute('alias');
   }
   public set alias(value: string) {
     this._alias = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get aliasInput() {
+    return this._alias
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,28 +62,35 @@ export class IotRoleAlias extends TerraformResource {
   // credential_duration - computed: false, optional: true, required: false
   private _credentialDuration?: number;
   public get credentialDuration() {
-    return this._credentialDuration;
+    return this.getNumberAttribute('credential_duration');
   }
-  public set credentialDuration(value: number | undefined) {
+  public set credentialDuration(value: number ) {
     this._credentialDuration = value;
+  }
+  public resetCredentialDuration() {
+    this._credentialDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get credentialDurationInput() {
+    return this._credentialDuration
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // =========

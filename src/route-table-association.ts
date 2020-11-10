@@ -44,37 +44,51 @@ export class RouteTableAssociation extends TerraformResource {
   // gateway_id - computed: false, optional: true, required: false
   private _gatewayId?: string;
   public get gatewayId() {
-    return this._gatewayId;
+    return this.getStringAttribute('gateway_id');
   }
-  public set gatewayId(value: string | undefined) {
+  public set gatewayId(value: string ) {
     this._gatewayId = value;
+  }
+  public resetGatewayId() {
+    this._gatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayIdInput() {
+    return this._gatewayId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // route_table_id - computed: false, optional: false, required: true
   private _routeTableId: string;
   public get routeTableId() {
-    return this._routeTableId;
+    return this.getStringAttribute('route_table_id');
   }
   public set routeTableId(value: string) {
     this._routeTableId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeTableIdInput() {
+    return this._routeTableId
   }
 
   // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string ) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // =========

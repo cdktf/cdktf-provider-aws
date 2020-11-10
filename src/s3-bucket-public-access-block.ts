@@ -48,55 +48,83 @@ export class S3BucketPublicAccessBlock extends TerraformResource {
   // block_public_acls - computed: false, optional: true, required: false
   private _blockPublicAcls?: boolean;
   public get blockPublicAcls() {
-    return this._blockPublicAcls;
+    return this.getBooleanAttribute('block_public_acls');
   }
-  public set blockPublicAcls(value: boolean | undefined) {
+  public set blockPublicAcls(value: boolean ) {
     this._blockPublicAcls = value;
+  }
+  public resetBlockPublicAcls() {
+    this._blockPublicAcls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blockPublicAclsInput() {
+    return this._blockPublicAcls
   }
 
   // block_public_policy - computed: false, optional: true, required: false
   private _blockPublicPolicy?: boolean;
   public get blockPublicPolicy() {
-    return this._blockPublicPolicy;
+    return this.getBooleanAttribute('block_public_policy');
   }
-  public set blockPublicPolicy(value: boolean | undefined) {
+  public set blockPublicPolicy(value: boolean ) {
     this._blockPublicPolicy = value;
+  }
+  public resetBlockPublicPolicy() {
+    this._blockPublicPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blockPublicPolicyInput() {
+    return this._blockPublicPolicy
   }
 
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ignore_public_acls - computed: false, optional: true, required: false
   private _ignorePublicAcls?: boolean;
   public get ignorePublicAcls() {
-    return this._ignorePublicAcls;
+    return this.getBooleanAttribute('ignore_public_acls');
   }
-  public set ignorePublicAcls(value: boolean | undefined) {
+  public set ignorePublicAcls(value: boolean ) {
     this._ignorePublicAcls = value;
+  }
+  public resetIgnorePublicAcls() {
+    this._ignorePublicAcls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignorePublicAclsInput() {
+    return this._ignorePublicAcls
   }
 
   // restrict_public_buckets - computed: false, optional: true, required: false
   private _restrictPublicBuckets?: boolean;
   public get restrictPublicBuckets() {
-    return this._restrictPublicBuckets;
+    return this.getBooleanAttribute('restrict_public_buckets');
   }
-  public set restrictPublicBuckets(value: boolean | undefined) {
+  public set restrictPublicBuckets(value: boolean ) {
     this._restrictPublicBuckets = value;
+  }
+  public resetRestrictPublicBuckets() {
+    this._restrictPublicBuckets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictPublicBucketsInput() {
+    return this._restrictPublicBuckets
   }
 
   // =========

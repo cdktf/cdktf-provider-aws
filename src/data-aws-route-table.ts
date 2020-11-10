@@ -19,74 +19,74 @@ export interface DataAwsRouteTableConfig extends TerraformMetaArguments {
 }
 export class DataAwsRouteTableAssociations extends ComplexComputedList {
 
-  // gateway_id - computed: true, optional: false, required: true
+  // gateway_id - computed: true, optional: false, required: false
   public get gatewayId() {
     return this.getStringAttribute('gateway_id');
   }
 
-  // main - computed: true, optional: false, required: true
+  // main - computed: true, optional: false, required: false
   public get main() {
     return this.getBooleanAttribute('main');
   }
 
-  // route_table_association_id - computed: true, optional: false, required: true
+  // route_table_association_id - computed: true, optional: false, required: false
   public get routeTableAssociationId() {
     return this.getStringAttribute('route_table_association_id');
   }
 
-  // route_table_id - computed: true, optional: false, required: true
+  // route_table_id - computed: true, optional: false, required: false
   public get routeTableId() {
     return this.getStringAttribute('route_table_id');
   }
 
-  // subnet_id - computed: true, optional: false, required: true
+  // subnet_id - computed: true, optional: false, required: false
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
 }
 export class DataAwsRouteTableRoutes extends ComplexComputedList {
 
-  // cidr_block - computed: true, optional: false, required: true
+  // cidr_block - computed: true, optional: false, required: false
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
 
-  // egress_only_gateway_id - computed: true, optional: false, required: true
+  // egress_only_gateway_id - computed: true, optional: false, required: false
   public get egressOnlyGatewayId() {
     return this.getStringAttribute('egress_only_gateway_id');
   }
 
-  // gateway_id - computed: true, optional: false, required: true
+  // gateway_id - computed: true, optional: false, required: false
   public get gatewayId() {
     return this.getStringAttribute('gateway_id');
   }
 
-  // instance_id - computed: true, optional: false, required: true
+  // instance_id - computed: true, optional: false, required: false
   public get instanceId() {
     return this.getStringAttribute('instance_id');
   }
 
-  // ipv6_cidr_block - computed: true, optional: false, required: true
+  // ipv6_cidr_block - computed: true, optional: false, required: false
   public get ipv6CidrBlock() {
     return this.getStringAttribute('ipv6_cidr_block');
   }
 
-  // nat_gateway_id - computed: true, optional: false, required: true
+  // nat_gateway_id - computed: true, optional: false, required: false
   public get natGatewayId() {
     return this.getStringAttribute('nat_gateway_id');
   }
 
-  // network_interface_id - computed: true, optional: false, required: true
+  // network_interface_id - computed: true, optional: false, required: false
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
   }
 
-  // transit_gateway_id - computed: true, optional: false, required: true
+  // transit_gateway_id - computed: true, optional: false, required: false
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
   }
 
-  // vpc_peering_connection_id - computed: true, optional: false, required: true
+  // vpc_peering_connection_id - computed: true, optional: false, required: false
   public get vpcPeeringConnectionId() {
     return this.getStringAttribute('vpc_peering_connection_id');
   }
@@ -127,7 +127,7 @@ export class DataAwsRouteTable extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // associations - computed: true, optional: false, required: true
+  // associations - computed: true, optional: false, required: false
   public associations(index: string) {
     return new DataAwsRouteTableAssociations(this, 'associations', index);
   }
@@ -135,22 +135,25 @@ export class DataAwsRouteTable extends TerraformDataSource {
   // gateway_id - computed: true, optional: true, required: false
   private _gatewayId?: string;
   public get gatewayId() {
-    return this._gatewayId ?? this.getStringAttribute('gateway_id');
+    return this.getStringAttribute('gateway_id');
   }
-  public set gatewayId(value: string | undefined) {
+  public set gatewayId(value: string) {
     this._gatewayId = value;
+  }
+  public resetGatewayId() {
+    this._gatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayIdInput() {
+    return this._gatewayId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -158,13 +161,20 @@ export class DataAwsRouteTable extends TerraformDataSource {
   // route_table_id - computed: true, optional: true, required: false
   private _routeTableId?: string;
   public get routeTableId() {
-    return this._routeTableId ?? this.getStringAttribute('route_table_id');
+    return this.getStringAttribute('route_table_id');
   }
-  public set routeTableId(value: string | undefined) {
+  public set routeTableId(value: string) {
     this._routeTableId = value;
   }
+  public resetRouteTableId() {
+    this._routeTableId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeTableIdInput() {
+    return this._routeTableId
+  }
 
-  // routes - computed: true, optional: false, required: true
+  // routes - computed: true, optional: false, required: false
   public routes(index: string) {
     return new DataAwsRouteTableRoutes(this, 'routes', index);
   }
@@ -172,37 +182,65 @@ export class DataAwsRouteTable extends TerraformDataSource {
   // subnet_id - computed: true, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this._subnetId ?? this.getStringAttribute('subnet_id');
+    return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_id - computed: true, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this._vpcId ?? this.getStringAttribute('vpc_id');
+    return this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string | undefined) {
+  public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsRouteTableFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsRouteTableFilter[] | undefined) {
+  public set filter(value: DataAwsRouteTableFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

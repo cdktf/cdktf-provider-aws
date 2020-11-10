@@ -131,17 +131,17 @@ export class MskCluster extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // bootstrap_brokers - computed: true, optional: false, required: true
+  // bootstrap_brokers - computed: true, optional: false, required: false
   public get bootstrapBrokers() {
     return this.getStringAttribute('bootstrap_brokers');
   }
 
-  // bootstrap_brokers_tls - computed: true, optional: false, required: true
+  // bootstrap_brokers_tls - computed: true, optional: false, required: false
   public get bootstrapBrokersTls() {
     return this.getStringAttribute('bootstrap_brokers_tls');
   }
@@ -149,13 +149,17 @@ export class MskCluster extends TerraformResource {
   // cluster_name - computed: false, optional: false, required: true
   private _clusterName: string;
   public get clusterName() {
-    return this._clusterName;
+    return this.getStringAttribute('cluster_name');
   }
   public set clusterName(value: string) {
     this._clusterName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get clusterNameInput() {
+    return this._clusterName
+  }
 
-  // current_version - computed: true, optional: false, required: true
+  // current_version - computed: true, optional: false, required: false
   public get currentVersion() {
     return this.getStringAttribute('current_version');
   }
@@ -163,49 +167,67 @@ export class MskCluster extends TerraformResource {
   // enhanced_monitoring - computed: false, optional: true, required: false
   private _enhancedMonitoring?: string;
   public get enhancedMonitoring() {
-    return this._enhancedMonitoring;
+    return this.getStringAttribute('enhanced_monitoring');
   }
-  public set enhancedMonitoring(value: string | undefined) {
+  public set enhancedMonitoring(value: string ) {
     this._enhancedMonitoring = value;
+  }
+  public resetEnhancedMonitoring() {
+    this._enhancedMonitoring = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enhancedMonitoringInput() {
+    return this._enhancedMonitoring
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kafka_version - computed: false, optional: false, required: true
   private _kafkaVersion: string;
   public get kafkaVersion() {
-    return this._kafkaVersion;
+    return this.getStringAttribute('kafka_version');
   }
   public set kafkaVersion(value: string) {
     this._kafkaVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kafkaVersionInput() {
+    return this._kafkaVersion
   }
 
   // number_of_broker_nodes - computed: false, optional: false, required: true
   private _numberOfBrokerNodes: number;
   public get numberOfBrokerNodes() {
-    return this._numberOfBrokerNodes;
+    return this.getNumberAttribute('number_of_broker_nodes');
   }
   public set numberOfBrokerNodes(value: number) {
     this._numberOfBrokerNodes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfBrokerNodesInput() {
+    return this._numberOfBrokerNodes
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // zookeeper_connect_string - computed: true, optional: false, required: true
+  // zookeeper_connect_string - computed: true, optional: false, required: false
   public get zookeeperConnectString() {
     return this.getStringAttribute('zookeeper_connect_string');
   }
@@ -213,55 +235,94 @@ export class MskCluster extends TerraformResource {
   // broker_node_group_info - computed: false, optional: false, required: true
   private _brokerNodeGroupInfo: MskClusterBrokerNodeGroupInfo[];
   public get brokerNodeGroupInfo() {
-    return this._brokerNodeGroupInfo;
+    return this.interpolationForAttribute('broker_node_group_info') as any;
   }
   public set brokerNodeGroupInfo(value: MskClusterBrokerNodeGroupInfo[]) {
     this._brokerNodeGroupInfo = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get brokerNodeGroupInfoInput() {
+    return this._brokerNodeGroupInfo
   }
 
   // client_authentication - computed: false, optional: true, required: false
   private _clientAuthentication?: MskClusterClientAuthentication[];
   public get clientAuthentication() {
-    return this._clientAuthentication;
+    return this.interpolationForAttribute('client_authentication') as any;
   }
-  public set clientAuthentication(value: MskClusterClientAuthentication[] | undefined) {
+  public set clientAuthentication(value: MskClusterClientAuthentication[] ) {
     this._clientAuthentication = value;
+  }
+  public resetClientAuthentication() {
+    this._clientAuthentication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientAuthenticationInput() {
+    return this._clientAuthentication
   }
 
   // configuration_info - computed: false, optional: true, required: false
   private _configurationInfo?: MskClusterConfigurationInfo[];
   public get configurationInfo() {
-    return this._configurationInfo;
+    return this.interpolationForAttribute('configuration_info') as any;
   }
-  public set configurationInfo(value: MskClusterConfigurationInfo[] | undefined) {
+  public set configurationInfo(value: MskClusterConfigurationInfo[] ) {
     this._configurationInfo = value;
+  }
+  public resetConfigurationInfo() {
+    this._configurationInfo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInfoInput() {
+    return this._configurationInfo
   }
 
   // encryption_info - computed: false, optional: true, required: false
   private _encryptionInfo?: MskClusterEncryptionInfo[];
   public get encryptionInfo() {
-    return this._encryptionInfo;
+    return this.interpolationForAttribute('encryption_info') as any;
   }
-  public set encryptionInfo(value: MskClusterEncryptionInfo[] | undefined) {
+  public set encryptionInfo(value: MskClusterEncryptionInfo[] ) {
     this._encryptionInfo = value;
+  }
+  public resetEncryptionInfo() {
+    this._encryptionInfo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionInfoInput() {
+    return this._encryptionInfo
   }
 
   // logging_info - computed: false, optional: true, required: false
   private _loggingInfo?: MskClusterLoggingInfo[];
   public get loggingInfo() {
-    return this._loggingInfo;
+    return this.interpolationForAttribute('logging_info') as any;
   }
-  public set loggingInfo(value: MskClusterLoggingInfo[] | undefined) {
+  public set loggingInfo(value: MskClusterLoggingInfo[] ) {
     this._loggingInfo = value;
+  }
+  public resetLoggingInfo() {
+    this._loggingInfo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loggingInfoInput() {
+    return this._loggingInfo
   }
 
   // open_monitoring - computed: false, optional: true, required: false
   private _openMonitoring?: MskClusterOpenMonitoring[];
   public get openMonitoring() {
-    return this._openMonitoring;
+    return this.interpolationForAttribute('open_monitoring') as any;
   }
-  public set openMonitoring(value: MskClusterOpenMonitoring[] | undefined) {
+  public set openMonitoring(value: MskClusterOpenMonitoring[] ) {
     this._openMonitoring = value;
+  }
+  public resetOpenMonitoring() {
+    this._openMonitoring = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openMonitoringInput() {
+    return this._openMonitoring
   }
 
   // =========

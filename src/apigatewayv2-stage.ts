@@ -82,13 +82,17 @@ export class Apigatewayv2Stage extends TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this._apiId;
+    return this.getStringAttribute('api_id');
   }
   public set apiId(value: string) {
     this._apiId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -96,54 +100,78 @@ export class Apigatewayv2Stage extends TerraformResource {
   // auto_deploy - computed: false, optional: true, required: false
   private _autoDeploy?: boolean;
   public get autoDeploy() {
-    return this._autoDeploy;
+    return this.getBooleanAttribute('auto_deploy');
   }
-  public set autoDeploy(value: boolean | undefined) {
+  public set autoDeploy(value: boolean ) {
     this._autoDeploy = value;
+  }
+  public resetAutoDeploy() {
+    this._autoDeploy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoDeployInput() {
+    return this._autoDeploy
   }
 
   // client_certificate_id - computed: false, optional: true, required: false
   private _clientCertificateId?: string;
   public get clientCertificateId() {
-    return this._clientCertificateId;
+    return this.getStringAttribute('client_certificate_id');
   }
-  public set clientCertificateId(value: string | undefined) {
+  public set clientCertificateId(value: string ) {
     this._clientCertificateId = value;
+  }
+  public resetClientCertificateId() {
+    this._clientCertificateId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientCertificateIdInput() {
+    return this._clientCertificateId
   }
 
   // deployment_id - computed: false, optional: true, required: false
   private _deploymentId?: string;
   public get deploymentId() {
-    return this._deploymentId;
+    return this.getStringAttribute('deployment_id');
   }
-  public set deploymentId(value: string | undefined) {
+  public set deploymentId(value: string ) {
     this._deploymentId = value;
+  }
+  public resetDeploymentId() {
+    this._deploymentId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentIdInput() {
+    return this._deploymentId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
   }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
+  }
 
-  // execution_arn - computed: true, optional: false, required: true
+  // execution_arn - computed: true, optional: false, required: false
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // invoke_url - computed: true, optional: false, required: true
+  // invoke_url - computed: true, optional: false, required: false
   public get invokeUrl() {
     return this.getStringAttribute('invoke_url');
   }
@@ -151,55 +179,94 @@ export class Apigatewayv2Stage extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // stage_variables - computed: false, optional: true, required: false
   private _stageVariables?: { [key: string]: string };
   public get stageVariables() {
-    return this._stageVariables;
+    return this.interpolationForAttribute('stage_variables') as any;
   }
-  public set stageVariables(value: { [key: string]: string } | undefined) {
+  public set stageVariables(value: { [key: string]: string } ) {
     this._stageVariables = value;
+  }
+  public resetStageVariables() {
+    this._stageVariables = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stageVariablesInput() {
+    return this._stageVariables
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // access_log_settings - computed: false, optional: true, required: false
   private _accessLogSettings?: Apigatewayv2StageAccessLogSettings[];
   public get accessLogSettings() {
-    return this._accessLogSettings;
+    return this.interpolationForAttribute('access_log_settings') as any;
   }
-  public set accessLogSettings(value: Apigatewayv2StageAccessLogSettings[] | undefined) {
+  public set accessLogSettings(value: Apigatewayv2StageAccessLogSettings[] ) {
     this._accessLogSettings = value;
+  }
+  public resetAccessLogSettings() {
+    this._accessLogSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessLogSettingsInput() {
+    return this._accessLogSettings
   }
 
   // default_route_settings - computed: false, optional: true, required: false
   private _defaultRouteSettings?: Apigatewayv2StageDefaultRouteSettings[];
   public get defaultRouteSettings() {
-    return this._defaultRouteSettings;
+    return this.interpolationForAttribute('default_route_settings') as any;
   }
-  public set defaultRouteSettings(value: Apigatewayv2StageDefaultRouteSettings[] | undefined) {
+  public set defaultRouteSettings(value: Apigatewayv2StageDefaultRouteSettings[] ) {
     this._defaultRouteSettings = value;
+  }
+  public resetDefaultRouteSettings() {
+    this._defaultRouteSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultRouteSettingsInput() {
+    return this._defaultRouteSettings
   }
 
   // route_settings - computed: false, optional: true, required: false
   private _routeSettings?: Apigatewayv2StageRouteSettings[];
   public get routeSettings() {
-    return this._routeSettings;
+    return this.interpolationForAttribute('route_settings') as any;
   }
-  public set routeSettings(value: Apigatewayv2StageRouteSettings[] | undefined) {
+  public set routeSettings(value: Apigatewayv2StageRouteSettings[] ) {
     this._routeSettings = value;
+  }
+  public resetRouteSettings() {
+    this._routeSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeSettingsInput() {
+    return this._routeSettings
   }
 
   // =========

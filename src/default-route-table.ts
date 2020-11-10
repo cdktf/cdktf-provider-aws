@@ -57,22 +57,22 @@ export class DefaultRouteTable extends TerraformResource {
   // default_route_table_id - computed: false, optional: false, required: true
   private _defaultRouteTableId: string;
   public get defaultRouteTableId() {
-    return this._defaultRouteTableId;
+    return this.getStringAttribute('default_route_table_id');
   }
   public set defaultRouteTableId(value: string) {
     this._defaultRouteTableId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get defaultRouteTableIdInput() {
+    return this._defaultRouteTableId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -80,31 +80,52 @@ export class DefaultRouteTable extends TerraformResource {
   // propagating_vgws - computed: false, optional: true, required: false
   private _propagatingVgws?: string[];
   public get propagatingVgws() {
-    return this._propagatingVgws;
+    return this.getListAttribute('propagating_vgws');
   }
-  public set propagatingVgws(value: string[] | undefined) {
+  public set propagatingVgws(value: string[] ) {
     this._propagatingVgws = value;
+  }
+  public resetPropagatingVgws() {
+    this._propagatingVgws = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propagatingVgwsInput() {
+    return this._propagatingVgws
   }
 
   // route - computed: true, optional: true, required: false
   private _route?: DefaultRouteTableRoute[]
-  public get route(): DefaultRouteTableRoute[] | undefined {
-    return this._route; // Getting the computed value is not yet implemented
+  public get route(): DefaultRouteTableRoute[] {
+    return this.interpolationForAttribute('route') as any; // Getting the computed value is not yet implemented
   }
-  public set route(value: DefaultRouteTableRoute[] | undefined) {
+  public set route(value: DefaultRouteTableRoute[]) {
     this._route = value;
+  }
+  public resetRoute() {
+    this._route = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeInput() {
+    return this._route
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }

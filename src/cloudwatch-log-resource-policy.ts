@@ -40,30 +40,34 @@ export class CloudwatchLogResourcePolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy_document - computed: false, optional: false, required: true
   private _policyDocument: string;
   public get policyDocument() {
-    return this._policyDocument;
+    return this.getStringAttribute('policy_document');
   }
   public set policyDocument(value: string) {
     this._policyDocument = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyDocumentInput() {
+    return this._policyDocument
   }
 
   // policy_name - computed: false, optional: false, required: true
   private _policyName: string;
   public get policyName() {
-    return this._policyName;
+    return this.getStringAttribute('policy_name');
   }
   public set policyName(value: string) {
     this._policyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyNameInput() {
+    return this._policyName
   }
 
   // =========

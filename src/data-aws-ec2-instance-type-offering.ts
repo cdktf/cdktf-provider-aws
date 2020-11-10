@@ -47,15 +47,11 @@ export class DataAwsEc2InstanceTypeOffering extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // instance_type - computed: true, optional: false, required: true
+  // instance_type - computed: true, optional: false, required: false
   public get instanceType() {
     return this.getStringAttribute('instance_type');
   }
@@ -63,28 +59,49 @@ export class DataAwsEc2InstanceTypeOffering extends TerraformDataSource {
   // location_type - computed: false, optional: true, required: false
   private _locationType?: string;
   public get locationType() {
-    return this._locationType;
+    return this.getStringAttribute('location_type');
   }
-  public set locationType(value: string | undefined) {
+  public set locationType(value: string ) {
     this._locationType = value;
+  }
+  public resetLocationType() {
+    this._locationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationTypeInput() {
+    return this._locationType
   }
 
   // preferred_instance_types - computed: false, optional: true, required: false
   private _preferredInstanceTypes?: string[];
   public get preferredInstanceTypes() {
-    return this._preferredInstanceTypes;
+    return this.getListAttribute('preferred_instance_types');
   }
-  public set preferredInstanceTypes(value: string[] | undefined) {
+  public set preferredInstanceTypes(value: string[] ) {
     this._preferredInstanceTypes = value;
+  }
+  public resetPreferredInstanceTypes() {
+    this._preferredInstanceTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredInstanceTypesInput() {
+    return this._preferredInstanceTypes
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2InstanceTypeOfferingFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2InstanceTypeOfferingFilter[] | undefined) {
+  public set filter(value: DataAwsEc2InstanceTypeOfferingFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

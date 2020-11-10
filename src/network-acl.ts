@@ -69,39 +69,49 @@ export class NetworkAcl extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // egress - computed: true, optional: true, required: false
   private _egress?: NetworkAclEgress[]
-  public get egress(): NetworkAclEgress[] | undefined {
-    return this._egress; // Getting the computed value is not yet implemented
+  public get egress(): NetworkAclEgress[] {
+    return this.interpolationForAttribute('egress') as any; // Getting the computed value is not yet implemented
   }
-  public set egress(value: NetworkAclEgress[] | undefined) {
+  public set egress(value: NetworkAclEgress[]) {
     this._egress = value;
+  }
+  public resetEgress() {
+    this._egress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressInput() {
+    return this._egress
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ingress - computed: true, optional: true, required: false
   private _ingress?: NetworkAclIngress[]
-  public get ingress(): NetworkAclIngress[] | undefined {
-    return this._ingress; // Getting the computed value is not yet implemented
+  public get ingress(): NetworkAclIngress[] {
+    return this.interpolationForAttribute('ingress') as any; // Getting the computed value is not yet implemented
   }
-  public set ingress(value: NetworkAclIngress[] | undefined) {
+  public set ingress(value: NetworkAclIngress[]) {
     this._ingress = value;
   }
+  public resetIngress() {
+    this._ingress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ingressInput() {
+    return this._ingress
+  }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -109,37 +119,62 @@ export class NetworkAcl extends TerraformResource {
   // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string ) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[];
   public get subnetIds() {
-    return this._subnetIds ?? this.getListAttribute('subnet_ids');
+    return this.getListAttribute('subnet_ids');
   }
-  public set subnetIds(value: string[] | undefined) {
+  public set subnetIds(value: string[]) {
     this._subnetIds = value;
+  }
+  public resetSubnetIds() {
+    this._subnetIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // =========

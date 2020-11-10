@@ -51,46 +51,67 @@ export class MacieS3BucketAssociation extends TerraformResource {
   // bucket_name - computed: false, optional: false, required: true
   private _bucketName: string;
   public get bucketName() {
-    return this._bucketName;
+    return this.getStringAttribute('bucket_name');
   }
   public set bucketName(value: string) {
     this._bucketName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bucketNameInput() {
+    return this._bucketName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // member_account_id - computed: false, optional: true, required: false
   private _memberAccountId?: string;
   public get memberAccountId() {
-    return this._memberAccountId;
+    return this.getStringAttribute('member_account_id');
   }
-  public set memberAccountId(value: string | undefined) {
+  public set memberAccountId(value: string ) {
     this._memberAccountId = value;
+  }
+  public resetMemberAccountId() {
+    this._memberAccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memberAccountIdInput() {
+    return this._memberAccountId
   }
 
   // prefix - computed: false, optional: true, required: false
   private _prefix?: string;
   public get prefix() {
-    return this._prefix;
+    return this.getStringAttribute('prefix');
   }
-  public set prefix(value: string | undefined) {
+  public set prefix(value: string ) {
     this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix
   }
 
   // classification_type - computed: false, optional: true, required: false
   private _classificationType?: MacieS3BucketAssociationClassificationType[];
   public get classificationType() {
-    return this._classificationType;
+    return this.interpolationForAttribute('classification_type') as any;
   }
-  public set classificationType(value: MacieS3BucketAssociationClassificationType[] | undefined) {
+  public set classificationType(value: MacieS3BucketAssociationClassificationType[] ) {
     this._classificationType = value;
+  }
+  public resetClassificationType() {
+    this._classificationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get classificationTypeInput() {
+    return this._classificationType
   }
 
   // =========

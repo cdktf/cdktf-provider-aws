@@ -58,12 +58,12 @@ export class FsxLustreFileSystem extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // dns_name - computed: true, optional: false, required: true
+  // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
@@ -71,45 +71,62 @@ export class FsxLustreFileSystem extends TerraformResource {
   // export_path - computed: true, optional: true, required: false
   private _exportPath?: string;
   public get exportPath() {
-    return this._exportPath ?? this.getStringAttribute('export_path');
+    return this.getStringAttribute('export_path');
   }
-  public set exportPath(value: string | undefined) {
+  public set exportPath(value: string) {
     this._exportPath = value;
+  }
+  public resetExportPath() {
+    this._exportPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exportPathInput() {
+    return this._exportPath
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // import_path - computed: false, optional: true, required: false
   private _importPath?: string;
   public get importPath() {
-    return this._importPath;
+    return this.getStringAttribute('import_path');
   }
-  public set importPath(value: string | undefined) {
+  public set importPath(value: string ) {
     this._importPath = value;
+  }
+  public resetImportPath() {
+    this._importPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importPathInput() {
+    return this._importPath
   }
 
   // imported_file_chunk_size - computed: true, optional: true, required: false
   private _importedFileChunkSize?: number;
   public get importedFileChunkSize() {
-    return this._importedFileChunkSize ?? this.getNumberAttribute('imported_file_chunk_size');
+    return this.getNumberAttribute('imported_file_chunk_size');
   }
-  public set importedFileChunkSize(value: number | undefined) {
+  public set importedFileChunkSize(value: number) {
     this._importedFileChunkSize = value;
   }
+  public resetImportedFileChunkSize() {
+    this._importedFileChunkSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importedFileChunkSizeInput() {
+    return this._importedFileChunkSize
+  }
 
-  // network_interface_ids - computed: true, optional: false, required: true
+  // network_interface_ids - computed: true, optional: false, required: false
   public get networkInterfaceIds() {
     return this.getListAttribute('network_interface_ids');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -117,40 +134,62 @@ export class FsxLustreFileSystem extends TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[];
   public get securityGroupIds() {
-    return this._securityGroupIds;
+    return this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[] | undefined) {
+  public set securityGroupIds(value: string[] ) {
     this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds
   }
 
   // storage_capacity - computed: false, optional: false, required: true
   private _storageCapacity: number;
   public get storageCapacity() {
-    return this._storageCapacity;
+    return this.getNumberAttribute('storage_capacity');
   }
   public set storageCapacity(value: number) {
     this._storageCapacity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageCapacityInput() {
+    return this._storageCapacity
   }
 
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds: string[];
   public get subnetIds() {
-    return this._subnetIds;
+    return this.getListAttribute('subnet_ids');
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -158,19 +197,33 @@ export class FsxLustreFileSystem extends TerraformResource {
   // weekly_maintenance_start_time - computed: true, optional: true, required: false
   private _weeklyMaintenanceStartTime?: string;
   public get weeklyMaintenanceStartTime() {
-    return this._weeklyMaintenanceStartTime ?? this.getStringAttribute('weekly_maintenance_start_time');
+    return this.getStringAttribute('weekly_maintenance_start_time');
   }
-  public set weeklyMaintenanceStartTime(value: string | undefined) {
+  public set weeklyMaintenanceStartTime(value: string) {
     this._weeklyMaintenanceStartTime = value;
+  }
+  public resetWeeklyMaintenanceStartTime() {
+    this._weeklyMaintenanceStartTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weeklyMaintenanceStartTimeInput() {
+    return this._weeklyMaintenanceStartTime
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: FsxLustreFileSystemTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: FsxLustreFileSystemTimeouts | undefined) {
+  public set timeouts(value: FsxLustreFileSystemTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

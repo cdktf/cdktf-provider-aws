@@ -77,63 +77,82 @@ export class Codepipeline extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // artifact_store - computed: false, optional: false, required: true
   private _artifactStore: CodepipelineArtifactStore[];
   public get artifactStore() {
-    return this._artifactStore;
+    return this.interpolationForAttribute('artifact_store') as any;
   }
   public set artifactStore(value: CodepipelineArtifactStore[]) {
     this._artifactStore = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get artifactStoreInput() {
+    return this._artifactStore
   }
 
   // stage - computed: false, optional: false, required: true
   private _stage: CodepipelineStage[];
   public get stage() {
-    return this._stage;
+    return this.interpolationForAttribute('stage') as any;
   }
   public set stage(value: CodepipelineStage[]) {
     this._stage = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stageInput() {
+    return this._stage
   }
 
   // =========

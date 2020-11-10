@@ -109,13 +109,20 @@ export class AppautoscalingPolicy extends TerraformResource {
   // adjustment_type - computed: false, optional: true, required: false
   private _adjustmentType?: string;
   public get adjustmentType() {
-    return this._adjustmentType;
+    return this.getStringAttribute('adjustment_type');
   }
-  public set adjustmentType(value: string | undefined) {
+  public set adjustmentType(value: string ) {
     this._adjustmentType = value;
   }
+  public resetAdjustmentType() {
+    this._adjustmentType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adjustmentTypeInput() {
+    return this._adjustmentType
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -123,109 +130,170 @@ export class AppautoscalingPolicy extends TerraformResource {
   // cooldown - computed: false, optional: true, required: false
   private _cooldown?: number;
   public get cooldown() {
-    return this._cooldown;
+    return this.getNumberAttribute('cooldown');
   }
-  public set cooldown(value: number | undefined) {
+  public set cooldown(value: number ) {
     this._cooldown = value;
+  }
+  public resetCooldown() {
+    this._cooldown = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cooldownInput() {
+    return this._cooldown
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // metric_aggregation_type - computed: false, optional: true, required: false
   private _metricAggregationType?: string;
   public get metricAggregationType() {
-    return this._metricAggregationType;
+    return this.getStringAttribute('metric_aggregation_type');
   }
-  public set metricAggregationType(value: string | undefined) {
+  public set metricAggregationType(value: string ) {
     this._metricAggregationType = value;
+  }
+  public resetMetricAggregationType() {
+    this._metricAggregationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricAggregationTypeInput() {
+    return this._metricAggregationType
   }
 
   // min_adjustment_magnitude - computed: false, optional: true, required: false
   private _minAdjustmentMagnitude?: number;
   public get minAdjustmentMagnitude() {
-    return this._minAdjustmentMagnitude;
+    return this.getNumberAttribute('min_adjustment_magnitude');
   }
-  public set minAdjustmentMagnitude(value: number | undefined) {
+  public set minAdjustmentMagnitude(value: number ) {
     this._minAdjustmentMagnitude = value;
+  }
+  public resetMinAdjustmentMagnitude() {
+    this._minAdjustmentMagnitude = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minAdjustmentMagnitudeInput() {
+    return this._minAdjustmentMagnitude
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // policy_type - computed: false, optional: true, required: false
   private _policyType?: string;
   public get policyType() {
-    return this._policyType;
+    return this.getStringAttribute('policy_type');
   }
-  public set policyType(value: string | undefined) {
+  public set policyType(value: string ) {
     this._policyType = value;
+  }
+  public resetPolicyType() {
+    this._policyType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyTypeInput() {
+    return this._policyType
   }
 
   // resource_id - computed: false, optional: false, required: true
   private _resourceId: string;
   public get resourceId() {
-    return this._resourceId;
+    return this.getStringAttribute('resource_id');
   }
   public set resourceId(value: string) {
     this._resourceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceIdInput() {
+    return this._resourceId
   }
 
   // scalable_dimension - computed: false, optional: false, required: true
   private _scalableDimension: string;
   public get scalableDimension() {
-    return this._scalableDimension;
+    return this.getStringAttribute('scalable_dimension');
   }
   public set scalableDimension(value: string) {
     this._scalableDimension = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalableDimensionInput() {
+    return this._scalableDimension
   }
 
   // service_namespace - computed: false, optional: false, required: true
   private _serviceNamespace: string;
   public get serviceNamespace() {
-    return this._serviceNamespace;
+    return this.getStringAttribute('service_namespace');
   }
   public set serviceNamespace(value: string) {
     this._serviceNamespace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNamespaceInput() {
+    return this._serviceNamespace
   }
 
   // step_adjustment - computed: false, optional: true, required: false
   private _stepAdjustment?: AppautoscalingPolicyStepAdjustment[];
   public get stepAdjustment() {
-    return this._stepAdjustment;
+    return this.interpolationForAttribute('step_adjustment') as any;
   }
-  public set stepAdjustment(value: AppautoscalingPolicyStepAdjustment[] | undefined) {
+  public set stepAdjustment(value: AppautoscalingPolicyStepAdjustment[] ) {
     this._stepAdjustment = value;
+  }
+  public resetStepAdjustment() {
+    this._stepAdjustment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stepAdjustmentInput() {
+    return this._stepAdjustment
   }
 
   // step_scaling_policy_configuration - computed: false, optional: true, required: false
   private _stepScalingPolicyConfiguration?: AppautoscalingPolicyStepScalingPolicyConfiguration[];
   public get stepScalingPolicyConfiguration() {
-    return this._stepScalingPolicyConfiguration;
+    return this.interpolationForAttribute('step_scaling_policy_configuration') as any;
   }
-  public set stepScalingPolicyConfiguration(value: AppautoscalingPolicyStepScalingPolicyConfiguration[] | undefined) {
+  public set stepScalingPolicyConfiguration(value: AppautoscalingPolicyStepScalingPolicyConfiguration[] ) {
     this._stepScalingPolicyConfiguration = value;
+  }
+  public resetStepScalingPolicyConfiguration() {
+    this._stepScalingPolicyConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stepScalingPolicyConfigurationInput() {
+    return this._stepScalingPolicyConfiguration
   }
 
   // target_tracking_scaling_policy_configuration - computed: false, optional: true, required: false
   private _targetTrackingScalingPolicyConfiguration?: AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration[];
   public get targetTrackingScalingPolicyConfiguration() {
-    return this._targetTrackingScalingPolicyConfiguration;
+    return this.interpolationForAttribute('target_tracking_scaling_policy_configuration') as any;
   }
-  public set targetTrackingScalingPolicyConfiguration(value: AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration[] | undefined) {
+  public set targetTrackingScalingPolicyConfiguration(value: AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration[] ) {
     this._targetTrackingScalingPolicyConfiguration = value;
+  }
+  public resetTargetTrackingScalingPolicyConfiguration() {
+    this._targetTrackingScalingPolicyConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetTrackingScalingPolicyConfigurationInput() {
+    return this._targetTrackingScalingPolicyConfiguration
   }
 
   // =========

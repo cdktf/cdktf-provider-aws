@@ -40,30 +40,34 @@ export class LicensemanagerAssociation extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // license_configuration_arn - computed: false, optional: false, required: true
   private _licenseConfigurationArn: string;
   public get licenseConfigurationArn() {
-    return this._licenseConfigurationArn;
+    return this.getStringAttribute('license_configuration_arn');
   }
   public set licenseConfigurationArn(value: string) {
     this._licenseConfigurationArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseConfigurationArnInput() {
+    return this._licenseConfigurationArn
   }
 
   // resource_arn - computed: false, optional: false, required: true
   private _resourceArn: string;
   public get resourceArn() {
-    return this._resourceArn;
+    return this.getStringAttribute('resource_arn');
   }
   public set resourceArn(value: string) {
     this._resourceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn
   }
 
   // =========

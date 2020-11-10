@@ -43,7 +43,7 @@ export class CloudfrontPublicKey extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // caller_reference - computed: true, optional: false, required: true
+  // caller_reference - computed: true, optional: false, required: false
   public get callerReference() {
     return this.getStringAttribute('caller_reference');
   }
@@ -51,51 +51,72 @@ export class CloudfrontPublicKey extends TerraformResource {
   // comment - computed: false, optional: true, required: false
   private _comment?: string;
   public get comment() {
-    return this._comment;
+    return this.getStringAttribute('comment');
   }
-  public set comment(value: string | undefined) {
+  public set comment(value: string ) {
     this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment
   }
 
   // encoded_key - computed: false, optional: false, required: true
   private _encodedKey: string;
   public get encodedKey() {
-    return this._encodedKey;
+    return this.getStringAttribute('encoded_key');
   }
   public set encodedKey(value: string) {
     this._encodedKey = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get encodedKeyInput() {
+    return this._encodedKey
+  }
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix ?? this.getStringAttribute('name_prefix');
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // =========

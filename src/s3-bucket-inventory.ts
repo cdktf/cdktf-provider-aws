@@ -86,82 +86,119 @@ export class S3BucketInventory extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this._enabled;
+    return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | undefined) {
+  public set enabled(value: boolean ) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // included_object_versions - computed: false, optional: false, required: true
   private _includedObjectVersions: string;
   public get includedObjectVersions() {
-    return this._includedObjectVersions;
+    return this.getStringAttribute('included_object_versions');
   }
   public set includedObjectVersions(value: string) {
     this._includedObjectVersions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includedObjectVersionsInput() {
+    return this._includedObjectVersions
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // optional_fields - computed: false, optional: true, required: false
   private _optionalFields?: string[];
   public get optionalFields() {
-    return this._optionalFields;
+    return this.getListAttribute('optional_fields');
   }
-  public set optionalFields(value: string[] | undefined) {
+  public set optionalFields(value: string[] ) {
     this._optionalFields = value;
+  }
+  public resetOptionalFields() {
+    this._optionalFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionalFieldsInput() {
+    return this._optionalFields
   }
 
   // destination - computed: false, optional: false, required: true
   private _destination: S3BucketInventoryDestination[];
   public get destination() {
-    return this._destination;
+    return this.interpolationForAttribute('destination') as any;
   }
   public set destination(value: S3BucketInventoryDestination[]) {
     this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: S3BucketInventoryFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: S3BucketInventoryFilter[] | undefined) {
+  public set filter(value: S3BucketInventoryFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // schedule - computed: false, optional: false, required: true
   private _schedule: S3BucketInventorySchedule[];
   public get schedule() {
-    return this._schedule;
+    return this.interpolationForAttribute('schedule') as any;
   }
   public set schedule(value: S3BucketInventorySchedule[]) {
     this._schedule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleInput() {
+    return this._schedule
   }
 
   // =========

@@ -49,54 +49,72 @@ export class WafregionalRule extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // metric_name - computed: false, optional: false, required: true
   private _metricName: string;
   public get metricName() {
-    return this._metricName;
+    return this.getStringAttribute('metric_name');
   }
   public set metricName(value: string) {
     this._metricName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricNameInput() {
+    return this._metricName
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // predicate - computed: false, optional: true, required: false
   private _predicate?: WafregionalRulePredicate[];
   public get predicate() {
-    return this._predicate;
+    return this.interpolationForAttribute('predicate') as any;
   }
-  public set predicate(value: WafregionalRulePredicate[] | undefined) {
+  public set predicate(value: WafregionalRulePredicate[] ) {
     this._predicate = value;
+  }
+  public resetPredicate() {
+    this._predicate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predicateInput() {
+    return this._predicate
   }
 
   // =========

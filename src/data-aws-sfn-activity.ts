@@ -38,35 +38,34 @@ export class DataAwsSfnActivity extends TerraformDataSource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
-  private _arn?: string;
   public get arn() {
-    return this._arn ?? this.getStringAttribute('arn');
-  }
-  public set arn(value: string | undefined) {
-    this._arn = value;
+    return this.getStringAttribute('arn');
   }
 
-  // creation_date - computed: true, optional: false, required: true
+  // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // =========

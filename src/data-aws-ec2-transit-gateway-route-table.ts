@@ -8,6 +8,7 @@ import { TerraformMetaArguments } from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2TransitGatewayRouteTableConfig extends TerraformMetaArguments {
+  readonly id?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsEc2TransitGatewayRouteTableFilter[];
@@ -36,6 +37,7 @@ export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._tags = config.tags;
     this._filter = config.filter;
   }
@@ -44,12 +46,12 @@ export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // default_association_route_table - computed: true, optional: false, required: true
+  // default_association_route_table - computed: true, optional: false, required: false
   public get defaultAssociationRouteTable() {
     return this.getBooleanAttribute('default_association_route_table');
   }
 
-  // default_propagation_route_table - computed: true, optional: false, required: true
+  // default_propagation_route_table - computed: true, optional: false, required: false
   public get defaultPropagationRouteTable() {
     return this.getBooleanAttribute('default_propagation_route_table');
   }
@@ -57,22 +59,36 @@ export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
   // id - computed: false, optional: true, required: false
   private _id?: string;
   public get id() {
-    return this._id;
+    return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string ) {
     this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // transit_gateway_id - computed: true, optional: false, required: true
+  // transit_gateway_id - computed: true, optional: false, required: false
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
   }
@@ -80,10 +96,17 @@ export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2TransitGatewayRouteTableFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2TransitGatewayRouteTableFilter[] | undefined) {
+  public set filter(value: DataAwsEc2TransitGatewayRouteTableFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -92,6 +115,7 @@ export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: this._id,
       tags: this._tags,
       filter: this._filter,
     };

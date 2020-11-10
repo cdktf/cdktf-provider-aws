@@ -57,73 +57,106 @@ export class Apigatewayv2Authorizer extends TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this._apiId;
+    return this.getStringAttribute('api_id');
   }
   public set apiId(value: string) {
     this._apiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId
   }
 
   // authorizer_credentials_arn - computed: false, optional: true, required: false
   private _authorizerCredentialsArn?: string;
   public get authorizerCredentialsArn() {
-    return this._authorizerCredentialsArn;
+    return this.getStringAttribute('authorizer_credentials_arn');
   }
-  public set authorizerCredentialsArn(value: string | undefined) {
+  public set authorizerCredentialsArn(value: string ) {
     this._authorizerCredentialsArn = value;
+  }
+  public resetAuthorizerCredentialsArn() {
+    this._authorizerCredentialsArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerCredentialsArnInput() {
+    return this._authorizerCredentialsArn
   }
 
   // authorizer_type - computed: false, optional: false, required: true
   private _authorizerType: string;
   public get authorizerType() {
-    return this._authorizerType;
+    return this.getStringAttribute('authorizer_type');
   }
   public set authorizerType(value: string) {
     this._authorizerType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerTypeInput() {
+    return this._authorizerType
   }
 
   // authorizer_uri - computed: false, optional: true, required: false
   private _authorizerUri?: string;
   public get authorizerUri() {
-    return this._authorizerUri;
+    return this.getStringAttribute('authorizer_uri');
   }
-  public set authorizerUri(value: string | undefined) {
+  public set authorizerUri(value: string ) {
     this._authorizerUri = value;
+  }
+  public resetAuthorizerUri() {
+    this._authorizerUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerUriInput() {
+    return this._authorizerUri
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identity_sources - computed: false, optional: false, required: true
   private _identitySources: string[];
   public get identitySources() {
-    return this._identitySources;
+    return this.getListAttribute('identity_sources');
   }
   public set identitySources(value: string[]) {
     this._identitySources = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identitySourcesInput() {
+    return this._identitySources
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // jwt_configuration - computed: false, optional: true, required: false
   private _jwtConfiguration?: Apigatewayv2AuthorizerJwtConfiguration[];
   public get jwtConfiguration() {
-    return this._jwtConfiguration;
+    return this.interpolationForAttribute('jwt_configuration') as any;
   }
-  public set jwtConfiguration(value: Apigatewayv2AuthorizerJwtConfiguration[] | undefined) {
+  public set jwtConfiguration(value: Apigatewayv2AuthorizerJwtConfiguration[] ) {
     this._jwtConfiguration = value;
+  }
+  public resetJwtConfiguration() {
+    this._jwtConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jwtConfigurationInput() {
+    return this._jwtConfiguration
   }
 
   // =========

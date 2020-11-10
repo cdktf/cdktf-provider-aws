@@ -43,7 +43,7 @@ export class MskConfiguration extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -51,31 +51,38 @@ export class MskConfiguration extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kafka_versions - computed: false, optional: false, required: true
   private _kafkaVersions: string[];
   public get kafkaVersions() {
-    return this._kafkaVersions;
+    return this.getListAttribute('kafka_versions');
   }
   public set kafkaVersions(value: string[]) {
     this._kafkaVersions = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get kafkaVersionsInput() {
+    return this._kafkaVersions
+  }
 
-  // latest_revision - computed: true, optional: false, required: true
+  // latest_revision - computed: true, optional: false, required: false
   public get latestRevision() {
     return this.getNumberAttribute('latest_revision');
   }
@@ -83,19 +90,27 @@ export class MskConfiguration extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // server_properties - computed: false, optional: false, required: true
   private _serverProperties: string;
   public get serverProperties() {
-    return this._serverProperties;
+    return this.getStringAttribute('server_properties');
   }
   public set serverProperties(value: string) {
     this._serverProperties = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverPropertiesInput() {
+    return this._serverProperties
   }
 
   // =========

@@ -13004,12 +13004,12 @@ export class Wafv2WebAcl extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // capacity - computed: true, optional: false, required: true
+  // capacity - computed: true, optional: false, required: false
   public get capacity() {
     return this.getNumberAttribute('capacity');
   }
@@ -13017,22 +13017,25 @@ export class Wafv2WebAcl extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // lock_token - computed: true, optional: false, required: true
+  // lock_token - computed: true, optional: false, required: false
   public get lockToken() {
     return this.getStringAttribute('lock_token');
   }
@@ -13040,55 +13043,85 @@ export class Wafv2WebAcl extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // scope - computed: false, optional: false, required: true
   private _scope: string;
   public get scope() {
-    return this._scope;
+    return this.getStringAttribute('scope');
   }
   public set scope(value: string) {
     this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // default_action - computed: false, optional: false, required: true
   private _defaultAction: Wafv2WebAclDefaultAction[];
   public get defaultAction() {
-    return this._defaultAction;
+    return this.interpolationForAttribute('default_action') as any;
   }
   public set defaultAction(value: Wafv2WebAclDefaultAction[]) {
     this._defaultAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultActionInput() {
+    return this._defaultAction
   }
 
   // rule - computed: false, optional: true, required: false
   private _rule?: Wafv2WebAclRule[];
   public get rule() {
-    return this._rule;
+    return this.interpolationForAttribute('rule') as any;
   }
-  public set rule(value: Wafv2WebAclRule[] | undefined) {
+  public set rule(value: Wafv2WebAclRule[] ) {
     this._rule = value;
+  }
+  public resetRule() {
+    this._rule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule
   }
 
   // visibility_config - computed: false, optional: false, required: true
   private _visibilityConfig: Wafv2WebAclVisibilityConfig[];
   public get visibilityConfig() {
-    return this._visibilityConfig;
+    return this.interpolationForAttribute('visibility_config') as any;
   }
   public set visibilityConfig(value: Wafv2WebAclVisibilityConfig[]) {
     this._visibilityConfig = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get visibilityConfigInput() {
+    return this._visibilityConfig
   }
 
   // =========

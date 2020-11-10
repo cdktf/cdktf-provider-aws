@@ -81,72 +81,101 @@ export class WafWebAcl extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // metric_name - computed: false, optional: false, required: true
   private _metricName: string;
   public get metricName() {
-    return this._metricName;
+    return this.getStringAttribute('metric_name');
   }
   public set metricName(value: string) {
     this._metricName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricNameInput() {
+    return this._metricName
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // default_action - computed: false, optional: false, required: true
   private _defaultAction: WafWebAclDefaultAction[];
   public get defaultAction() {
-    return this._defaultAction;
+    return this.interpolationForAttribute('default_action') as any;
   }
   public set defaultAction(value: WafWebAclDefaultAction[]) {
     this._defaultAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultActionInput() {
+    return this._defaultAction
   }
 
   // logging_configuration - computed: false, optional: true, required: false
   private _loggingConfiguration?: WafWebAclLoggingConfiguration[];
   public get loggingConfiguration() {
-    return this._loggingConfiguration;
+    return this.interpolationForAttribute('logging_configuration') as any;
   }
-  public set loggingConfiguration(value: WafWebAclLoggingConfiguration[] | undefined) {
+  public set loggingConfiguration(value: WafWebAclLoggingConfiguration[] ) {
     this._loggingConfiguration = value;
+  }
+  public resetLoggingConfiguration() {
+    this._loggingConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loggingConfigurationInput() {
+    return this._loggingConfiguration
   }
 
   // rules - computed: false, optional: true, required: false
   private _rules?: WafWebAclRules[];
   public get rules() {
-    return this._rules;
+    return this.interpolationForAttribute('rules') as any;
   }
-  public set rules(value: WafWebAclRules[] | undefined) {
+  public set rules(value: WafWebAclRules[] ) {
     this._rules = value;
+  }
+  public resetRules() {
+    this._rules = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rulesInput() {
+    return this._rules
   }
 
   // =========

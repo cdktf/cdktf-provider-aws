@@ -37,31 +37,27 @@ export class DataAwsEcsTaskDefinition extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // family - computed: true, optional: false, required: true
+  // family - computed: true, optional: false, required: false
   public get family() {
     return this.getStringAttribute('family');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // network_mode - computed: true, optional: false, required: true
+  // network_mode - computed: true, optional: false, required: false
   public get networkMode() {
     return this.getStringAttribute('network_mode');
   }
 
-  // revision - computed: true, optional: false, required: true
+  // revision - computed: true, optional: false, required: false
   public get revision() {
     return this.getNumberAttribute('revision');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -69,13 +65,17 @@ export class DataAwsEcsTaskDefinition extends TerraformDataSource {
   // task_definition - computed: false, optional: false, required: true
   private _taskDefinition: string;
   public get taskDefinition() {
-    return this._taskDefinition;
+    return this.getStringAttribute('task_definition');
   }
   public set taskDefinition(value: string) {
     this._taskDefinition = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get taskDefinitionInput() {
+    return this._taskDefinition
+  }
 
-  // task_role_arn - computed: true, optional: false, required: true
+  // task_role_arn - computed: true, optional: false, required: false
   public get taskRoleArn() {
     return this.getStringAttribute('task_role_arn');
   }

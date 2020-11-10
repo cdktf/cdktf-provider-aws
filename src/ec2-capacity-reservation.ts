@@ -57,7 +57,7 @@ export class Ec2CapacityReservation extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -65,109 +65,170 @@ export class Ec2CapacityReservation extends TerraformResource {
   // availability_zone - computed: false, optional: false, required: true
   private _availabilityZone: string;
   public get availabilityZone() {
-    return this._availabilityZone;
+    return this.getStringAttribute('availability_zone');
   }
   public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // ebs_optimized - computed: false, optional: true, required: false
   private _ebsOptimized?: boolean;
   public get ebsOptimized() {
-    return this._ebsOptimized;
+    return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean | undefined) {
+  public set ebsOptimized(value: boolean ) {
     this._ebsOptimized = value;
+  }
+  public resetEbsOptimized() {
+    this._ebsOptimized = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsOptimizedInput() {
+    return this._ebsOptimized
   }
 
   // end_date - computed: false, optional: true, required: false
   private _endDate?: string;
   public get endDate() {
-    return this._endDate;
+    return this.getStringAttribute('end_date');
   }
-  public set endDate(value: string | undefined) {
+  public set endDate(value: string ) {
     this._endDate = value;
+  }
+  public resetEndDate() {
+    this._endDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endDateInput() {
+    return this._endDate
   }
 
   // end_date_type - computed: false, optional: true, required: false
   private _endDateType?: string;
   public get endDateType() {
-    return this._endDateType;
+    return this.getStringAttribute('end_date_type');
   }
-  public set endDateType(value: string | undefined) {
+  public set endDateType(value: string ) {
     this._endDateType = value;
+  }
+  public resetEndDateType() {
+    this._endDateType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endDateTypeInput() {
+    return this._endDateType
   }
 
   // ephemeral_storage - computed: false, optional: true, required: false
   private _ephemeralStorage?: boolean;
   public get ephemeralStorage() {
-    return this._ephemeralStorage;
+    return this.getBooleanAttribute('ephemeral_storage');
   }
-  public set ephemeralStorage(value: boolean | undefined) {
+  public set ephemeralStorage(value: boolean ) {
     this._ephemeralStorage = value;
+  }
+  public resetEphemeralStorage() {
+    this._ephemeralStorage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ephemeralStorageInput() {
+    return this._ephemeralStorage
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_count - computed: false, optional: false, required: true
   private _instanceCount: number;
   public get instanceCount() {
-    return this._instanceCount;
+    return this.getNumberAttribute('instance_count');
   }
   public set instanceCount(value: number) {
     this._instanceCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceCountInput() {
+    return this._instanceCount
   }
 
   // instance_match_criteria - computed: false, optional: true, required: false
   private _instanceMatchCriteria?: string;
   public get instanceMatchCriteria() {
-    return this._instanceMatchCriteria;
+    return this.getStringAttribute('instance_match_criteria');
   }
-  public set instanceMatchCriteria(value: string | undefined) {
+  public set instanceMatchCriteria(value: string ) {
     this._instanceMatchCriteria = value;
+  }
+  public resetInstanceMatchCriteria() {
+    this._instanceMatchCriteria = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceMatchCriteriaInput() {
+    return this._instanceMatchCriteria
   }
 
   // instance_platform - computed: false, optional: false, required: true
   private _instancePlatform: string;
   public get instancePlatform() {
-    return this._instancePlatform;
+    return this.getStringAttribute('instance_platform');
   }
   public set instancePlatform(value: string) {
     this._instancePlatform = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePlatformInput() {
+    return this._instancePlatform
   }
 
   // instance_type - computed: false, optional: false, required: true
   private _instanceType: string;
   public get instanceType() {
-    return this._instanceType;
+    return this.getStringAttribute('instance_type');
   }
   public set instanceType(value: string) {
     this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // tenancy - computed: false, optional: true, required: false
   private _tenancy?: string;
   public get tenancy() {
-    return this._tenancy;
+    return this.getStringAttribute('tenancy');
   }
-  public set tenancy(value: string | undefined) {
+  public set tenancy(value: string ) {
     this._tenancy = value;
+  }
+  public resetTenancy() {
+    this._tenancy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenancyInput() {
+    return this._tenancy
   }
 
   // =========

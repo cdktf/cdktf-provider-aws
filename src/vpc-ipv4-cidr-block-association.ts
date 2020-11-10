@@ -49,37 +49,48 @@ export class VpcIpv4CidrBlockAssociation extends TerraformResource {
   // cidr_block - computed: false, optional: false, required: true
   private _cidrBlock: string;
   public get cidrBlock() {
-    return this._cidrBlock;
+    return this.getStringAttribute('cidr_block');
   }
   public set cidrBlock(value: string) {
     this._cidrBlock = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get cidrBlockInput() {
+    return this._cidrBlock
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: VpcIpv4CidrBlockAssociationTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: VpcIpv4CidrBlockAssociationTimeouts | undefined) {
+  public set timeouts(value: VpcIpv4CidrBlockAssociationTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

@@ -53,51 +53,61 @@ export class DataAwsAvailabilityZone extends TerraformDataSource {
   // all_availability_zones - computed: false, optional: true, required: false
   private _allAvailabilityZones?: boolean;
   public get allAvailabilityZones() {
-    return this._allAvailabilityZones;
+    return this.getBooleanAttribute('all_availability_zones');
   }
-  public set allAvailabilityZones(value: boolean | undefined) {
+  public set allAvailabilityZones(value: boolean ) {
     this._allAvailabilityZones = value;
   }
+  public resetAllAvailabilityZones() {
+    this._allAvailabilityZones = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allAvailabilityZonesInput() {
+    return this._allAvailabilityZones
+  }
 
-  // group_name - computed: true, optional: false, required: true
+  // group_name - computed: true, optional: false, required: false
   public get groupName() {
     return this.getStringAttribute('group_name');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // name_suffix - computed: true, optional: false, required: true
+  // name_suffix - computed: true, optional: false, required: false
   public get nameSuffix() {
     return this.getStringAttribute('name_suffix');
   }
 
-  // network_border_group - computed: true, optional: false, required: true
+  // network_border_group - computed: true, optional: false, required: false
   public get networkBorderGroup() {
     return this.getStringAttribute('network_border_group');
   }
 
-  // opt_in_status - computed: true, optional: false, required: true
+  // opt_in_status - computed: true, optional: false, required: false
   public get optInStatus() {
     return this.getStringAttribute('opt_in_status');
   }
 
-  // region - computed: true, optional: false, required: true
+  // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
   }
@@ -105,28 +115,49 @@ export class DataAwsAvailabilityZone extends TerraformDataSource {
   // state - computed: true, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this._state ?? this.getStringAttribute('state');
+    return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string) {
     this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state
   }
 
   // zone_id - computed: true, optional: true, required: false
   private _zoneId?: string;
   public get zoneId() {
-    return this._zoneId ?? this.getStringAttribute('zone_id');
+    return this.getStringAttribute('zone_id');
   }
-  public set zoneId(value: string | undefined) {
+  public set zoneId(value: string) {
     this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zoneIdInput() {
+    return this._zoneId
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsAvailabilityZoneFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsAvailabilityZoneFilter[] | undefined) {
+  public set filter(value: DataAwsAvailabilityZoneFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

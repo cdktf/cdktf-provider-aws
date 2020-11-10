@@ -50,36 +50,43 @@ export class WafRegexMatchSet extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // regex_match_tuple - computed: false, optional: true, required: false
   private _regexMatchTuple?: WafRegexMatchSetRegexMatchTuple[];
   public get regexMatchTuple() {
-    return this._regexMatchTuple;
+    return this.interpolationForAttribute('regex_match_tuple') as any;
   }
-  public set regexMatchTuple(value: WafRegexMatchSetRegexMatchTuple[] | undefined) {
+  public set regexMatchTuple(value: WafRegexMatchSetRegexMatchTuple[] ) {
     this._regexMatchTuple = value;
+  }
+  public resetRegexMatchTuple() {
+    this._regexMatchTuple = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexMatchTupleInput() {
+    return this._regexMatchTuple
   }
 
   // =========

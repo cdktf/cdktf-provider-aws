@@ -43,7 +43,7 @@ export class QuicksightGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -51,46 +51,67 @@ export class QuicksightGroup extends TerraformResource {
   // aws_account_id - computed: true, optional: true, required: false
   private _awsAccountId?: string;
   public get awsAccountId() {
-    return this._awsAccountId ?? this.getStringAttribute('aws_account_id');
+    return this.getStringAttribute('aws_account_id');
   }
-  public set awsAccountId(value: string | undefined) {
+  public set awsAccountId(value: string) {
     this._awsAccountId = value;
+  }
+  public resetAwsAccountId() {
+    this._awsAccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsAccountIdInput() {
+    return this._awsAccountId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // group_name - computed: false, optional: false, required: true
   private _groupName: string;
   public get groupName() {
-    return this._groupName;
+    return this.getStringAttribute('group_name');
   }
   public set groupName(value: string) {
     this._groupName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get groupNameInput() {
+    return this._groupName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string;
   public get namespace() {
-    return this._namespace;
+    return this.getStringAttribute('namespace');
   }
-  public set namespace(value: string | undefined) {
+  public set namespace(value: string ) {
     this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace
   }
 
   // =========

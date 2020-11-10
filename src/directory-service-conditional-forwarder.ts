@@ -44,37 +44,45 @@ export class DirectoryServiceConditionalForwarder extends TerraformResource {
   // directory_id - computed: false, optional: false, required: true
   private _directoryId: string;
   public get directoryId() {
-    return this._directoryId;
+    return this.getStringAttribute('directory_id');
   }
   public set directoryId(value: string) {
     this._directoryId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryIdInput() {
+    return this._directoryId
   }
 
   // dns_ips - computed: false, optional: false, required: true
   private _dnsIps: string[];
   public get dnsIps() {
-    return this._dnsIps;
+    return this.getListAttribute('dns_ips');
   }
   public set dnsIps(value: string[]) {
     this._dnsIps = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get dnsIpsInput() {
+    return this._dnsIps
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // remote_domain_name - computed: false, optional: false, required: true
   private _remoteDomainName: string;
   public get remoteDomainName() {
-    return this._remoteDomainName;
+    return this.getStringAttribute('remote_domain_name');
   }
   public set remoteDomainName(value: string) {
     this._remoteDomainName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteDomainNameInput() {
+    return this._remoteDomainName
   }
 
   // =========

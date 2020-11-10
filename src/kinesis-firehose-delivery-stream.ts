@@ -326,129 +326,199 @@ export class KinesisFirehoseDeliveryStream extends TerraformResource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
-  private _arn?: string;
   public get arn() {
-    return this._arn ?? this.getStringAttribute('arn');
-  }
-  public set arn(value: string | undefined) {
-    this._arn = value;
+    return this.getStringAttribute('arn');
   }
 
   // destination - computed: false, optional: false, required: true
   private _destination: string;
   public get destination() {
-    return this._destination;
+    return this.getStringAttribute('destination');
   }
   public set destination(value: string) {
     this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination
   }
 
   // destination_id - computed: true, optional: true, required: false
   private _destinationId?: string;
   public get destinationId() {
-    return this._destinationId ?? this.getStringAttribute('destination_id');
+    return this.getStringAttribute('destination_id');
   }
-  public set destinationId(value: string | undefined) {
+  public set destinationId(value: string) {
     this._destinationId = value;
+  }
+  public resetDestinationId() {
+    this._destinationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationIdInput() {
+    return this._destinationId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // version_id - computed: true, optional: true, required: false
   private _versionId?: string;
   public get versionId() {
-    return this._versionId ?? this.getStringAttribute('version_id');
+    return this.getStringAttribute('version_id');
   }
-  public set versionId(value: string | undefined) {
+  public set versionId(value: string) {
     this._versionId = value;
+  }
+  public resetVersionId() {
+    this._versionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionIdInput() {
+    return this._versionId
   }
 
   // elasticsearch_configuration - computed: false, optional: true, required: false
   private _elasticsearchConfiguration?: KinesisFirehoseDeliveryStreamElasticsearchConfiguration[];
   public get elasticsearchConfiguration() {
-    return this._elasticsearchConfiguration;
+    return this.interpolationForAttribute('elasticsearch_configuration') as any;
   }
-  public set elasticsearchConfiguration(value: KinesisFirehoseDeliveryStreamElasticsearchConfiguration[] | undefined) {
+  public set elasticsearchConfiguration(value: KinesisFirehoseDeliveryStreamElasticsearchConfiguration[] ) {
     this._elasticsearchConfiguration = value;
+  }
+  public resetElasticsearchConfiguration() {
+    this._elasticsearchConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elasticsearchConfigurationInput() {
+    return this._elasticsearchConfiguration
   }
 
   // extended_s3_configuration - computed: false, optional: true, required: false
   private _extendedS3Configuration?: KinesisFirehoseDeliveryStreamExtendedS3Configuration[];
   public get extendedS3Configuration() {
-    return this._extendedS3Configuration;
+    return this.interpolationForAttribute('extended_s3_configuration') as any;
   }
-  public set extendedS3Configuration(value: KinesisFirehoseDeliveryStreamExtendedS3Configuration[] | undefined) {
+  public set extendedS3Configuration(value: KinesisFirehoseDeliveryStreamExtendedS3Configuration[] ) {
     this._extendedS3Configuration = value;
+  }
+  public resetExtendedS3Configuration() {
+    this._extendedS3Configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extendedS3ConfigurationInput() {
+    return this._extendedS3Configuration
   }
 
   // kinesis_source_configuration - computed: false, optional: true, required: false
   private _kinesisSourceConfiguration?: KinesisFirehoseDeliveryStreamKinesisSourceConfiguration[];
   public get kinesisSourceConfiguration() {
-    return this._kinesisSourceConfiguration;
+    return this.interpolationForAttribute('kinesis_source_configuration') as any;
   }
-  public set kinesisSourceConfiguration(value: KinesisFirehoseDeliveryStreamKinesisSourceConfiguration[] | undefined) {
+  public set kinesisSourceConfiguration(value: KinesisFirehoseDeliveryStreamKinesisSourceConfiguration[] ) {
     this._kinesisSourceConfiguration = value;
+  }
+  public resetKinesisSourceConfiguration() {
+    this._kinesisSourceConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kinesisSourceConfigurationInput() {
+    return this._kinesisSourceConfiguration
   }
 
   // redshift_configuration - computed: false, optional: true, required: false
   private _redshiftConfiguration?: KinesisFirehoseDeliveryStreamRedshiftConfiguration[];
   public get redshiftConfiguration() {
-    return this._redshiftConfiguration;
+    return this.interpolationForAttribute('redshift_configuration') as any;
   }
-  public set redshiftConfiguration(value: KinesisFirehoseDeliveryStreamRedshiftConfiguration[] | undefined) {
+  public set redshiftConfiguration(value: KinesisFirehoseDeliveryStreamRedshiftConfiguration[] ) {
     this._redshiftConfiguration = value;
+  }
+  public resetRedshiftConfiguration() {
+    this._redshiftConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redshiftConfigurationInput() {
+    return this._redshiftConfiguration
   }
 
   // s3_configuration - computed: false, optional: true, required: false
   private _s3Configuration?: KinesisFirehoseDeliveryStreamS3Configuration[];
   public get s3Configuration() {
-    return this._s3Configuration;
+    return this.interpolationForAttribute('s3_configuration') as any;
   }
-  public set s3Configuration(value: KinesisFirehoseDeliveryStreamS3Configuration[] | undefined) {
+  public set s3Configuration(value: KinesisFirehoseDeliveryStreamS3Configuration[] ) {
     this._s3Configuration = value;
+  }
+  public resetS3Configuration() {
+    this._s3Configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3ConfigurationInput() {
+    return this._s3Configuration
   }
 
   // server_side_encryption - computed: false, optional: true, required: false
   private _serverSideEncryption?: KinesisFirehoseDeliveryStreamServerSideEncryption[];
   public get serverSideEncryption() {
-    return this._serverSideEncryption;
+    return this.interpolationForAttribute('server_side_encryption') as any;
   }
-  public set serverSideEncryption(value: KinesisFirehoseDeliveryStreamServerSideEncryption[] | undefined) {
+  public set serverSideEncryption(value: KinesisFirehoseDeliveryStreamServerSideEncryption[] ) {
     this._serverSideEncryption = value;
+  }
+  public resetServerSideEncryption() {
+    this._serverSideEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverSideEncryptionInput() {
+    return this._serverSideEncryption
   }
 
   // splunk_configuration - computed: false, optional: true, required: false
   private _splunkConfiguration?: KinesisFirehoseDeliveryStreamSplunkConfiguration[];
   public get splunkConfiguration() {
-    return this._splunkConfiguration;
+    return this.interpolationForAttribute('splunk_configuration') as any;
   }
-  public set splunkConfiguration(value: KinesisFirehoseDeliveryStreamSplunkConfiguration[] | undefined) {
+  public set splunkConfiguration(value: KinesisFirehoseDeliveryStreamSplunkConfiguration[] ) {
     this._splunkConfiguration = value;
+  }
+  public resetSplunkConfiguration() {
+    this._splunkConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get splunkConfigurationInput() {
+    return this._splunkConfiguration
   }
 
   // =========

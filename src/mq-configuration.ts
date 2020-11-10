@@ -47,7 +47,7 @@ export class MqConfiguration extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -55,49 +55,64 @@ export class MqConfiguration extends TerraformResource {
   // data - computed: false, optional: false, required: true
   private _data: string;
   public get data() {
-    return this._data;
+    return this.getStringAttribute('data');
   }
   public set data(value: string) {
     this._data = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataInput() {
+    return this._data
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // engine_type - computed: false, optional: false, required: true
   private _engineType: string;
   public get engineType() {
-    return this._engineType;
+    return this.getStringAttribute('engine_type');
   }
   public set engineType(value: string) {
     this._engineType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineTypeInput() {
+    return this._engineType
   }
 
   // engine_version - computed: false, optional: false, required: true
   private _engineVersion: string;
   public get engineVersion() {
-    return this._engineVersion;
+    return this.getStringAttribute('engine_version');
   }
   public set engineVersion(value: string) {
     this._engineVersion = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // latest_revision - computed: true, optional: false, required: true
+  // latest_revision - computed: true, optional: false, required: false
   public get latestRevision() {
     return this.getNumberAttribute('latest_revision');
   }
@@ -105,19 +120,30 @@ export class MqConfiguration extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

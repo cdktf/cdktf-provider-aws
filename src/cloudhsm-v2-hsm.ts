@@ -54,70 +54,98 @@ export class CloudhsmV2Hsm extends TerraformResource {
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
+    return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // cluster_id - computed: false, optional: false, required: true
   private _clusterId: string;
   public get clusterId() {
-    return this._clusterId;
+    return this.getStringAttribute('cluster_id');
   }
   public set clusterId(value: string) {
     this._clusterId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdInput() {
+    return this._clusterId
+  }
 
-  // hsm_eni_id - computed: true, optional: false, required: true
+  // hsm_eni_id - computed: true, optional: false, required: false
   public get hsmEniId() {
     return this.getStringAttribute('hsm_eni_id');
   }
 
-  // hsm_id - computed: true, optional: false, required: true
+  // hsm_id - computed: true, optional: false, required: false
   public get hsmId() {
     return this.getStringAttribute('hsm_id');
   }
 
-  // hsm_state - computed: true, optional: false, required: true
+  // hsm_state - computed: true, optional: false, required: false
   public get hsmState() {
     return this.getStringAttribute('hsm_state');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ip_address - computed: true, optional: true, required: false
   private _ipAddress?: string;
   public get ipAddress() {
-    return this._ipAddress ?? this.getStringAttribute('ip_address');
+    return this.getStringAttribute('ip_address');
   }
-  public set ipAddress(value: string | undefined) {
+  public set ipAddress(value: string) {
     this._ipAddress = value;
+  }
+  public resetIpAddress() {
+    this._ipAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress
   }
 
   // subnet_id - computed: true, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this._subnetId ?? this.getStringAttribute('subnet_id');
+    return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: CloudhsmV2HsmTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: CloudhsmV2HsmTimeouts | undefined) {
+  public set timeouts(value: CloudhsmV2HsmTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

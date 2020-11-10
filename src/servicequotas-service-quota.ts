@@ -41,50 +41,50 @@ export class ServicequotasServiceQuota extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // adjustable - computed: true, optional: false, required: true
+  // adjustable - computed: true, optional: false, required: false
   public get adjustable() {
     return this.getBooleanAttribute('adjustable');
   }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // default_value - computed: true, optional: false, required: true
+  // default_value - computed: true, optional: false, required: false
   public get defaultValue() {
     return this.getNumberAttribute('default_value');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // quota_code - computed: false, optional: false, required: true
   private _quotaCode: string;
   public get quotaCode() {
-    return this._quotaCode;
+    return this.getStringAttribute('quota_code');
   }
   public set quotaCode(value: string) {
     this._quotaCode = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get quotaCodeInput() {
+    return this._quotaCode
+  }
 
-  // quota_name - computed: true, optional: false, required: true
+  // quota_name - computed: true, optional: false, required: false
   public get quotaName() {
     return this.getStringAttribute('quota_name');
   }
 
-  // request_id - computed: true, optional: false, required: true
+  // request_id - computed: true, optional: false, required: false
   public get requestId() {
     return this.getStringAttribute('request_id');
   }
 
-  // request_status - computed: true, optional: false, required: true
+  // request_status - computed: true, optional: false, required: false
   public get requestStatus() {
     return this.getStringAttribute('request_status');
   }
@@ -92,13 +92,17 @@ export class ServicequotasServiceQuota extends TerraformResource {
   // service_code - computed: false, optional: false, required: true
   private _serviceCode: string;
   public get serviceCode() {
-    return this._serviceCode;
+    return this.getStringAttribute('service_code');
   }
   public set serviceCode(value: string) {
     this._serviceCode = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get serviceCodeInput() {
+    return this._serviceCode
+  }
 
-  // service_name - computed: true, optional: false, required: true
+  // service_name - computed: true, optional: false, required: false
   public get serviceName() {
     return this.getStringAttribute('service_name');
   }
@@ -106,10 +110,14 @@ export class ServicequotasServiceQuota extends TerraformResource {
   // value - computed: false, optional: false, required: true
   private _value: number;
   public get value() {
-    return this._value;
+    return this.getNumberAttribute('value');
   }
   public set value(value: number) {
     this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value
   }
 
   // =========

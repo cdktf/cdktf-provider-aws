@@ -70,7 +70,7 @@ export class ServiceDiscoveryService extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -78,73 +78,115 @@ export class ServiceDiscoveryService extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // namespace_id - computed: true, optional: true, required: false
   private _namespaceId?: string;
   public get namespaceId() {
-    return this._namespaceId ?? this.getStringAttribute('namespace_id');
+    return this.getStringAttribute('namespace_id');
   }
-  public set namespaceId(value: string | undefined) {
+  public set namespaceId(value: string) {
     this._namespaceId = value;
+  }
+  public resetNamespaceId() {
+    this._namespaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceIdInput() {
+    return this._namespaceId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // dns_config - computed: false, optional: true, required: false
   private _dnsConfig?: ServiceDiscoveryServiceDnsConfig[];
   public get dnsConfig() {
-    return this._dnsConfig;
+    return this.interpolationForAttribute('dns_config') as any;
   }
-  public set dnsConfig(value: ServiceDiscoveryServiceDnsConfig[] | undefined) {
+  public set dnsConfig(value: ServiceDiscoveryServiceDnsConfig[] ) {
     this._dnsConfig = value;
+  }
+  public resetDnsConfig() {
+    this._dnsConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsConfigInput() {
+    return this._dnsConfig
   }
 
   // health_check_config - computed: false, optional: true, required: false
   private _healthCheckConfig?: ServiceDiscoveryServiceHealthCheckConfig[];
   public get healthCheckConfig() {
-    return this._healthCheckConfig;
+    return this.interpolationForAttribute('health_check_config') as any;
   }
-  public set healthCheckConfig(value: ServiceDiscoveryServiceHealthCheckConfig[] | undefined) {
+  public set healthCheckConfig(value: ServiceDiscoveryServiceHealthCheckConfig[] ) {
     this._healthCheckConfig = value;
+  }
+  public resetHealthCheckConfig() {
+    this._healthCheckConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckConfigInput() {
+    return this._healthCheckConfig
   }
 
   // health_check_custom_config - computed: false, optional: true, required: false
   private _healthCheckCustomConfig?: ServiceDiscoveryServiceHealthCheckCustomConfig[];
   public get healthCheckCustomConfig() {
-    return this._healthCheckCustomConfig;
+    return this.interpolationForAttribute('health_check_custom_config') as any;
   }
-  public set healthCheckCustomConfig(value: ServiceDiscoveryServiceHealthCheckCustomConfig[] | undefined) {
+  public set healthCheckCustomConfig(value: ServiceDiscoveryServiceHealthCheckCustomConfig[] ) {
     this._healthCheckCustomConfig = value;
+  }
+  public resetHealthCheckCustomConfig() {
+    this._healthCheckCustomConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckCustomConfigInput() {
+    return this._healthCheckCustomConfig
   }
 
   // =========

@@ -50,64 +50,102 @@ export class EipAssociation extends TerraformResource {
   // allocation_id - computed: true, optional: true, required: false
   private _allocationId?: string;
   public get allocationId() {
-    return this._allocationId ?? this.getStringAttribute('allocation_id');
+    return this.getStringAttribute('allocation_id');
   }
-  public set allocationId(value: string | undefined) {
+  public set allocationId(value: string) {
     this._allocationId = value;
+  }
+  public resetAllocationId() {
+    this._allocationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocationIdInput() {
+    return this._allocationId
   }
 
   // allow_reassociation - computed: false, optional: true, required: false
   private _allowReassociation?: boolean;
   public get allowReassociation() {
-    return this._allowReassociation;
+    return this.getBooleanAttribute('allow_reassociation');
   }
-  public set allowReassociation(value: boolean | undefined) {
+  public set allowReassociation(value: boolean ) {
     this._allowReassociation = value;
+  }
+  public resetAllowReassociation() {
+    this._allowReassociation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowReassociationInput() {
+    return this._allowReassociation
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_id - computed: true, optional: true, required: false
   private _instanceId?: string;
   public get instanceId() {
-    return this._instanceId ?? this.getStringAttribute('instance_id');
+    return this.getStringAttribute('instance_id');
   }
-  public set instanceId(value: string | undefined) {
+  public set instanceId(value: string) {
     this._instanceId = value;
+  }
+  public resetInstanceId() {
+    this._instanceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceIdInput() {
+    return this._instanceId
   }
 
   // network_interface_id - computed: true, optional: true, required: false
   private _networkInterfaceId?: string;
   public get networkInterfaceId() {
-    return this._networkInterfaceId ?? this.getStringAttribute('network_interface_id');
+    return this.getStringAttribute('network_interface_id');
   }
-  public set networkInterfaceId(value: string | undefined) {
+  public set networkInterfaceId(value: string) {
     this._networkInterfaceId = value;
+  }
+  public resetNetworkInterfaceId() {
+    this._networkInterfaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceIdInput() {
+    return this._networkInterfaceId
   }
 
   // private_ip_address - computed: true, optional: true, required: false
   private _privateIpAddress?: string;
   public get privateIpAddress() {
-    return this._privateIpAddress ?? this.getStringAttribute('private_ip_address');
+    return this.getStringAttribute('private_ip_address');
   }
-  public set privateIpAddress(value: string | undefined) {
+  public set privateIpAddress(value: string) {
     this._privateIpAddress = value;
+  }
+  public resetPrivateIpAddress() {
+    this._privateIpAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpAddressInput() {
+    return this._privateIpAddress
   }
 
   // public_ip - computed: true, optional: true, required: false
   private _publicIp?: string;
   public get publicIp() {
-    return this._publicIp ?? this.getStringAttribute('public_ip');
+    return this.getStringAttribute('public_ip');
   }
-  public set publicIp(value: string | undefined) {
+  public set publicIp(value: string) {
     this._publicIp = value;
+  }
+  public resetPublicIp() {
+    this._publicIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicIpInput() {
+    return this._publicIp
   }
 
   // =========

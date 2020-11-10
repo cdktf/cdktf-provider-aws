@@ -49,12 +49,12 @@ export class StoragegatewayCachedIscsiVolume extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // chap_enabled - computed: true, optional: false, required: true
+  // chap_enabled - computed: true, optional: false, required: false
   public get chapEnabled() {
     return this.getBooleanAttribute('chap_enabled');
   }
@@ -62,22 +62,22 @@ export class StoragegatewayCachedIscsiVolume extends TerraformResource {
   // gateway_arn - computed: false, optional: false, required: true
   private _gatewayArn: string;
   public get gatewayArn() {
-    return this._gatewayArn;
+    return this.getStringAttribute('gateway_arn');
   }
   public set gatewayArn(value: string) {
     this._gatewayArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayArnInput() {
+    return this._gatewayArn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // lun_number - computed: true, optional: false, required: true
+  // lun_number - computed: true, optional: false, required: false
   public get lunNumber() {
     return this.getNumberAttribute('lun_number');
   }
@@ -85,13 +85,17 @@ export class StoragegatewayCachedIscsiVolume extends TerraformResource {
   // network_interface_id - computed: false, optional: false, required: true
   private _networkInterfaceId: string;
   public get networkInterfaceId() {
-    return this._networkInterfaceId;
+    return this.getStringAttribute('network_interface_id');
   }
   public set networkInterfaceId(value: string) {
     this._networkInterfaceId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceIdInput() {
+    return this._networkInterfaceId
+  }
 
-  // network_interface_port - computed: true, optional: false, required: true
+  // network_interface_port - computed: true, optional: false, required: false
   public get networkInterfacePort() {
     return this.getNumberAttribute('network_interface_port');
   }
@@ -99,31 +103,52 @@ export class StoragegatewayCachedIscsiVolume extends TerraformResource {
   // snapshot_id - computed: false, optional: true, required: false
   private _snapshotId?: string;
   public get snapshotId() {
-    return this._snapshotId;
+    return this.getStringAttribute('snapshot_id');
   }
-  public set snapshotId(value: string | undefined) {
+  public set snapshotId(value: string ) {
     this._snapshotId = value;
+  }
+  public resetSnapshotId() {
+    this._snapshotId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotIdInput() {
+    return this._snapshotId
   }
 
   // source_volume_arn - computed: false, optional: true, required: false
   private _sourceVolumeArn?: string;
   public get sourceVolumeArn() {
-    return this._sourceVolumeArn;
+    return this.getStringAttribute('source_volume_arn');
   }
-  public set sourceVolumeArn(value: string | undefined) {
+  public set sourceVolumeArn(value: string ) {
     this._sourceVolumeArn = value;
+  }
+  public resetSourceVolumeArn() {
+    this._sourceVolumeArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceVolumeArnInput() {
+    return this._sourceVolumeArn
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // target_arn - computed: true, optional: false, required: true
+  // target_arn - computed: true, optional: false, required: false
   public get targetArn() {
     return this.getStringAttribute('target_arn');
   }
@@ -131,18 +156,22 @@ export class StoragegatewayCachedIscsiVolume extends TerraformResource {
   // target_name - computed: false, optional: false, required: true
   private _targetName: string;
   public get targetName() {
-    return this._targetName;
+    return this.getStringAttribute('target_name');
   }
   public set targetName(value: string) {
     this._targetName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get targetNameInput() {
+    return this._targetName
+  }
 
-  // volume_arn - computed: true, optional: false, required: true
+  // volume_arn - computed: true, optional: false, required: false
   public get volumeArn() {
     return this.getStringAttribute('volume_arn');
   }
 
-  // volume_id - computed: true, optional: false, required: true
+  // volume_id - computed: true, optional: false, required: false
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
@@ -150,10 +179,14 @@ export class StoragegatewayCachedIscsiVolume extends TerraformResource {
   // volume_size_in_bytes - computed: false, optional: false, required: true
   private _volumeSizeInBytes: number;
   public get volumeSizeInBytes() {
-    return this._volumeSizeInBytes;
+    return this.getNumberAttribute('volume_size_in_bytes');
   }
   public set volumeSizeInBytes(value: number) {
     this._volumeSizeInBytes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeSizeInBytesInput() {
+    return this._volumeSizeInBytes
   }
 
   // =========

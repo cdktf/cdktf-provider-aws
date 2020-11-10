@@ -303,7 +303,7 @@ export class IotTopicRule extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -311,208 +311,346 @@ export class IotTopicRule extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // enabled - computed: false, optional: false, required: true
   private _enabled: boolean;
   public get enabled() {
-    return this._enabled;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean) {
     this._enabled = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // sql - computed: false, optional: false, required: true
   private _sql: string;
   public get sql() {
-    return this._sql;
+    return this.getStringAttribute('sql');
   }
   public set sql(value: string) {
     this._sql = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlInput() {
+    return this._sql
   }
 
   // sql_version - computed: false, optional: false, required: true
   private _sqlVersion: string;
   public get sqlVersion() {
-    return this._sqlVersion;
+    return this.getStringAttribute('sql_version');
   }
   public set sqlVersion(value: string) {
     this._sqlVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlVersionInput() {
+    return this._sqlVersion
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // cloudwatch_alarm - computed: false, optional: true, required: false
   private _cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[];
   public get cloudwatchAlarm() {
-    return this._cloudwatchAlarm;
+    return this.interpolationForAttribute('cloudwatch_alarm') as any;
   }
-  public set cloudwatchAlarm(value: IotTopicRuleCloudwatchAlarm[] | undefined) {
+  public set cloudwatchAlarm(value: IotTopicRuleCloudwatchAlarm[] ) {
     this._cloudwatchAlarm = value;
+  }
+  public resetCloudwatchAlarm() {
+    this._cloudwatchAlarm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchAlarmInput() {
+    return this._cloudwatchAlarm
   }
 
   // cloudwatch_metric - computed: false, optional: true, required: false
   private _cloudwatchMetric?: IotTopicRuleCloudwatchMetric[];
   public get cloudwatchMetric() {
-    return this._cloudwatchMetric;
+    return this.interpolationForAttribute('cloudwatch_metric') as any;
   }
-  public set cloudwatchMetric(value: IotTopicRuleCloudwatchMetric[] | undefined) {
+  public set cloudwatchMetric(value: IotTopicRuleCloudwatchMetric[] ) {
     this._cloudwatchMetric = value;
+  }
+  public resetCloudwatchMetric() {
+    this._cloudwatchMetric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchMetricInput() {
+    return this._cloudwatchMetric
   }
 
   // dynamodb - computed: false, optional: true, required: false
   private _dynamodb?: IotTopicRuleDynamodb[];
   public get dynamodb() {
-    return this._dynamodb;
+    return this.interpolationForAttribute('dynamodb') as any;
   }
-  public set dynamodb(value: IotTopicRuleDynamodb[] | undefined) {
+  public set dynamodb(value: IotTopicRuleDynamodb[] ) {
     this._dynamodb = value;
+  }
+  public resetDynamodb() {
+    this._dynamodb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamodbInput() {
+    return this._dynamodb
   }
 
   // dynamodbv2 - computed: false, optional: true, required: false
   private _dynamodbv2?: IotTopicRuleDynamodbv2[];
   public get dynamodbv2() {
-    return this._dynamodbv2;
+    return this.interpolationForAttribute('dynamodbv2') as any;
   }
-  public set dynamodbv2(value: IotTopicRuleDynamodbv2[] | undefined) {
+  public set dynamodbv2(value: IotTopicRuleDynamodbv2[] ) {
     this._dynamodbv2 = value;
+  }
+  public resetDynamodbv2() {
+    this._dynamodbv2 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamodbv2Input() {
+    return this._dynamodbv2
   }
 
   // elasticsearch - computed: false, optional: true, required: false
   private _elasticsearch?: IotTopicRuleElasticsearch[];
   public get elasticsearch() {
-    return this._elasticsearch;
+    return this.interpolationForAttribute('elasticsearch') as any;
   }
-  public set elasticsearch(value: IotTopicRuleElasticsearch[] | undefined) {
+  public set elasticsearch(value: IotTopicRuleElasticsearch[] ) {
     this._elasticsearch = value;
+  }
+  public resetElasticsearch() {
+    this._elasticsearch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elasticsearchInput() {
+    return this._elasticsearch
   }
 
   // error_action - computed: false, optional: true, required: false
   private _errorAction?: IotTopicRuleErrorAction[];
   public get errorAction() {
-    return this._errorAction;
+    return this.interpolationForAttribute('error_action') as any;
   }
-  public set errorAction(value: IotTopicRuleErrorAction[] | undefined) {
+  public set errorAction(value: IotTopicRuleErrorAction[] ) {
     this._errorAction = value;
+  }
+  public resetErrorAction() {
+    this._errorAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get errorActionInput() {
+    return this._errorAction
   }
 
   // firehose - computed: false, optional: true, required: false
   private _firehose?: IotTopicRuleFirehose[];
   public get firehose() {
-    return this._firehose;
+    return this.interpolationForAttribute('firehose') as any;
   }
-  public set firehose(value: IotTopicRuleFirehose[] | undefined) {
+  public set firehose(value: IotTopicRuleFirehose[] ) {
     this._firehose = value;
+  }
+  public resetFirehose() {
+    this._firehose = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firehoseInput() {
+    return this._firehose
   }
 
   // iot_analytics - computed: false, optional: true, required: false
   private _iotAnalytics?: IotTopicRuleIotAnalytics[];
   public get iotAnalytics() {
-    return this._iotAnalytics;
+    return this.interpolationForAttribute('iot_analytics') as any;
   }
-  public set iotAnalytics(value: IotTopicRuleIotAnalytics[] | undefined) {
+  public set iotAnalytics(value: IotTopicRuleIotAnalytics[] ) {
     this._iotAnalytics = value;
+  }
+  public resetIotAnalytics() {
+    this._iotAnalytics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iotAnalyticsInput() {
+    return this._iotAnalytics
   }
 
   // iot_events - computed: false, optional: true, required: false
   private _iotEvents?: IotTopicRuleIotEvents[];
   public get iotEvents() {
-    return this._iotEvents;
+    return this.interpolationForAttribute('iot_events') as any;
   }
-  public set iotEvents(value: IotTopicRuleIotEvents[] | undefined) {
+  public set iotEvents(value: IotTopicRuleIotEvents[] ) {
     this._iotEvents = value;
+  }
+  public resetIotEvents() {
+    this._iotEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iotEventsInput() {
+    return this._iotEvents
   }
 
   // kinesis - computed: false, optional: true, required: false
   private _kinesis?: IotTopicRuleKinesis[];
   public get kinesis() {
-    return this._kinesis;
+    return this.interpolationForAttribute('kinesis') as any;
   }
-  public set kinesis(value: IotTopicRuleKinesis[] | undefined) {
+  public set kinesis(value: IotTopicRuleKinesis[] ) {
     this._kinesis = value;
+  }
+  public resetKinesis() {
+    this._kinesis = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kinesisInput() {
+    return this._kinesis
   }
 
   // lambda - computed: false, optional: true, required: false
   private _lambda?: IotTopicRuleLambda[];
   public get lambda() {
-    return this._lambda;
+    return this.interpolationForAttribute('lambda') as any;
   }
-  public set lambda(value: IotTopicRuleLambda[] | undefined) {
+  public set lambda(value: IotTopicRuleLambda[] ) {
     this._lambda = value;
+  }
+  public resetLambda() {
+    this._lambda = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaInput() {
+    return this._lambda
   }
 
   // republish - computed: false, optional: true, required: false
   private _republish?: IotTopicRuleRepublish[];
   public get republish() {
-    return this._republish;
+    return this.interpolationForAttribute('republish') as any;
   }
-  public set republish(value: IotTopicRuleRepublish[] | undefined) {
+  public set republish(value: IotTopicRuleRepublish[] ) {
     this._republish = value;
+  }
+  public resetRepublish() {
+    this._republish = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get republishInput() {
+    return this._republish
   }
 
   // s3 - computed: false, optional: true, required: false
   private _s3?: IotTopicRuleS3[];
   public get s3() {
-    return this._s3;
+    return this.interpolationForAttribute('s3') as any;
   }
-  public set s3(value: IotTopicRuleS3[] | undefined) {
+  public set s3(value: IotTopicRuleS3[] ) {
     this._s3 = value;
+  }
+  public resetS3() {
+    this._s3 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3
   }
 
   // sns - computed: false, optional: true, required: false
   private _sns?: IotTopicRuleSns[];
   public get sns() {
-    return this._sns;
+    return this.interpolationForAttribute('sns') as any;
   }
-  public set sns(value: IotTopicRuleSns[] | undefined) {
+  public set sns(value: IotTopicRuleSns[] ) {
     this._sns = value;
+  }
+  public resetSns() {
+    this._sns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snsInput() {
+    return this._sns
   }
 
   // sqs - computed: false, optional: true, required: false
   private _sqs?: IotTopicRuleSqs[];
   public get sqs() {
-    return this._sqs;
+    return this.interpolationForAttribute('sqs') as any;
   }
-  public set sqs(value: IotTopicRuleSqs[] | undefined) {
+  public set sqs(value: IotTopicRuleSqs[] ) {
     this._sqs = value;
+  }
+  public resetSqs() {
+    this._sqs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqsInput() {
+    return this._sqs
   }
 
   // step_functions - computed: false, optional: true, required: false
   private _stepFunctions?: IotTopicRuleStepFunctions[];
   public get stepFunctions() {
-    return this._stepFunctions;
+    return this.interpolationForAttribute('step_functions') as any;
   }
-  public set stepFunctions(value: IotTopicRuleStepFunctions[] | undefined) {
+  public set stepFunctions(value: IotTopicRuleStepFunctions[] ) {
     this._stepFunctions = value;
+  }
+  public resetStepFunctions() {
+    this._stepFunctions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stepFunctionsInput() {
+    return this._stepFunctions
   }
 
   // =========

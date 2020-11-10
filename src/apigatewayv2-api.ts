@@ -66,7 +66,7 @@ export class Apigatewayv2Api extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // api_endpoint - computed: true, optional: false, required: true
+  // api_endpoint - computed: true, optional: false, required: false
   public get apiEndpoint() {
     return this.getStringAttribute('api_endpoint');
   }
@@ -74,13 +74,20 @@ export class Apigatewayv2Api extends TerraformResource {
   // api_key_selection_expression - computed: false, optional: true, required: false
   private _apiKeySelectionExpression?: string;
   public get apiKeySelectionExpression() {
-    return this._apiKeySelectionExpression;
+    return this.getStringAttribute('api_key_selection_expression');
   }
-  public set apiKeySelectionExpression(value: string | undefined) {
+  public set apiKeySelectionExpression(value: string ) {
     this._apiKeySelectionExpression = value;
   }
+  public resetApiKeySelectionExpression() {
+    this._apiKeySelectionExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeySelectionExpressionInput() {
+    return this._apiKeySelectionExpression
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -88,105 +95,165 @@ export class Apigatewayv2Api extends TerraformResource {
   // credentials_arn - computed: false, optional: true, required: false
   private _credentialsArn?: string;
   public get credentialsArn() {
-    return this._credentialsArn;
+    return this.getStringAttribute('credentials_arn');
   }
-  public set credentialsArn(value: string | undefined) {
+  public set credentialsArn(value: string ) {
     this._credentialsArn = value;
+  }
+  public resetCredentialsArn() {
+    this._credentialsArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get credentialsArnInput() {
+    return this._credentialsArn
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
   }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
+  }
 
-  // execution_arn - computed: true, optional: false, required: true
+  // execution_arn - computed: true, optional: false, required: false
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // protocol_type - computed: false, optional: false, required: true
   private _protocolType: string;
   public get protocolType() {
-    return this._protocolType;
+    return this.getStringAttribute('protocol_type');
   }
   public set protocolType(value: string) {
     this._protocolType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolTypeInput() {
+    return this._protocolType
   }
 
   // route_key - computed: false, optional: true, required: false
   private _routeKey?: string;
   public get routeKey() {
-    return this._routeKey;
+    return this.getStringAttribute('route_key');
   }
-  public set routeKey(value: string | undefined) {
+  public set routeKey(value: string ) {
     this._routeKey = value;
+  }
+  public resetRouteKey() {
+    this._routeKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeKeyInput() {
+    return this._routeKey
   }
 
   // route_selection_expression - computed: false, optional: true, required: false
   private _routeSelectionExpression?: string;
   public get routeSelectionExpression() {
-    return this._routeSelectionExpression;
+    return this.getStringAttribute('route_selection_expression');
   }
-  public set routeSelectionExpression(value: string | undefined) {
+  public set routeSelectionExpression(value: string ) {
     this._routeSelectionExpression = value;
+  }
+  public resetRouteSelectionExpression() {
+    this._routeSelectionExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeSelectionExpressionInput() {
+    return this._routeSelectionExpression
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // target - computed: false, optional: true, required: false
   private _target?: string;
   public get target() {
-    return this._target;
+    return this.getStringAttribute('target');
   }
-  public set target(value: string | undefined) {
+  public set target(value: string ) {
     this._target = value;
+  }
+  public resetTarget() {
+    this._target = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target
   }
 
   // version - computed: false, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this._version;
+    return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string ) {
     this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // cors_configuration - computed: false, optional: true, required: false
   private _corsConfiguration?: Apigatewayv2ApiCorsConfiguration[];
   public get corsConfiguration() {
-    return this._corsConfiguration;
+    return this.interpolationForAttribute('cors_configuration') as any;
   }
-  public set corsConfiguration(value: Apigatewayv2ApiCorsConfiguration[] | undefined) {
+  public set corsConfiguration(value: Apigatewayv2ApiCorsConfiguration[] ) {
     this._corsConfiguration = value;
+  }
+  public resetCorsConfiguration() {
+    this._corsConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get corsConfigurationInput() {
+    return this._corsConfiguration
   }
 
   // =========

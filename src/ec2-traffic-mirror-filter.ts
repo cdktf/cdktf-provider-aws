@@ -44,37 +44,54 @@ export class Ec2TrafficMirrorFilter extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // network_services - computed: false, optional: true, required: false
   private _networkServices?: string[];
   public get networkServices() {
-    return this._networkServices;
+    return this.getListAttribute('network_services');
   }
-  public set networkServices(value: string[] | undefined) {
+  public set networkServices(value: string[] ) {
     this._networkServices = value;
+  }
+  public resetNetworkServices() {
+    this._networkServices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkServicesInput() {
+    return this._networkServices
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

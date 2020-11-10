@@ -86,13 +86,20 @@ export class GlueJob extends TerraformResource {
   // allocated_capacity - computed: true, optional: true, required: false
   private _allocatedCapacity?: number;
   public get allocatedCapacity() {
-    return this._allocatedCapacity ?? this.getNumberAttribute('allocated_capacity');
+    return this.getNumberAttribute('allocated_capacity');
   }
-  public set allocatedCapacity(value: number | undefined) {
+  public set allocatedCapacity(value: number) {
     this._allocatedCapacity = value;
   }
+  public resetAllocatedCapacity() {
+    this._allocatedCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocatedCapacityInput() {
+    return this._allocatedCapacity
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -100,154 +107,253 @@ export class GlueJob extends TerraformResource {
   // connections - computed: false, optional: true, required: false
   private _connections?: string[];
   public get connections() {
-    return this._connections;
+    return this.getListAttribute('connections');
   }
-  public set connections(value: string[] | undefined) {
+  public set connections(value: string[] ) {
     this._connections = value;
+  }
+  public resetConnections() {
+    this._connections = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionsInput() {
+    return this._connections
   }
 
   // default_arguments - computed: false, optional: true, required: false
   private _defaultArguments?: { [key: string]: string };
   public get defaultArguments() {
-    return this._defaultArguments;
+    return this.interpolationForAttribute('default_arguments') as any;
   }
-  public set defaultArguments(value: { [key: string]: string } | undefined) {
+  public set defaultArguments(value: { [key: string]: string } ) {
     this._defaultArguments = value;
+  }
+  public resetDefaultArguments() {
+    this._defaultArguments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultArgumentsInput() {
+    return this._defaultArguments
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // glue_version - computed: true, optional: true, required: false
   private _glueVersion?: string;
   public get glueVersion() {
-    return this._glueVersion ?? this.getStringAttribute('glue_version');
+    return this.getStringAttribute('glue_version');
   }
-  public set glueVersion(value: string | undefined) {
+  public set glueVersion(value: string) {
     this._glueVersion = value;
+  }
+  public resetGlueVersion() {
+    this._glueVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get glueVersionInput() {
+    return this._glueVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // max_capacity - computed: true, optional: true, required: false
   private _maxCapacity?: number;
   public get maxCapacity() {
-    return this._maxCapacity ?? this.getNumberAttribute('max_capacity');
+    return this.getNumberAttribute('max_capacity');
   }
-  public set maxCapacity(value: number | undefined) {
+  public set maxCapacity(value: number) {
     this._maxCapacity = value;
+  }
+  public resetMaxCapacity() {
+    this._maxCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxCapacityInput() {
+    return this._maxCapacity
   }
 
   // max_retries - computed: false, optional: true, required: false
   private _maxRetries?: number;
   public get maxRetries() {
-    return this._maxRetries;
+    return this.getNumberAttribute('max_retries');
   }
-  public set maxRetries(value: number | undefined) {
+  public set maxRetries(value: number ) {
     this._maxRetries = value;
+  }
+  public resetMaxRetries() {
+    this._maxRetries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxRetriesInput() {
+    return this._maxRetries
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // number_of_workers - computed: false, optional: true, required: false
   private _numberOfWorkers?: number;
   public get numberOfWorkers() {
-    return this._numberOfWorkers;
+    return this.getNumberAttribute('number_of_workers');
   }
-  public set numberOfWorkers(value: number | undefined) {
+  public set numberOfWorkers(value: number ) {
     this._numberOfWorkers = value;
+  }
+  public resetNumberOfWorkers() {
+    this._numberOfWorkers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfWorkersInput() {
+    return this._numberOfWorkers
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // security_configuration - computed: false, optional: true, required: false
   private _securityConfiguration?: string;
   public get securityConfiguration() {
-    return this._securityConfiguration;
+    return this.getStringAttribute('security_configuration');
   }
-  public set securityConfiguration(value: string | undefined) {
+  public set securityConfiguration(value: string ) {
     this._securityConfiguration = value;
+  }
+  public resetSecurityConfiguration() {
+    this._securityConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityConfigurationInput() {
+    return this._securityConfiguration
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // timeout - computed: false, optional: true, required: false
   private _timeout?: number;
   public get timeout() {
-    return this._timeout;
+    return this.getNumberAttribute('timeout');
   }
-  public set timeout(value: number | undefined) {
+  public set timeout(value: number ) {
     this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout
   }
 
   // worker_type - computed: false, optional: true, required: false
   private _workerType?: string;
   public get workerType() {
-    return this._workerType;
+    return this.getStringAttribute('worker_type');
   }
-  public set workerType(value: string | undefined) {
+  public set workerType(value: string ) {
     this._workerType = value;
+  }
+  public resetWorkerType() {
+    this._workerType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workerTypeInput() {
+    return this._workerType
   }
 
   // command - computed: false, optional: false, required: true
   private _command: GlueJobCommand[];
   public get command() {
-    return this._command;
+    return this.interpolationForAttribute('command') as any;
   }
   public set command(value: GlueJobCommand[]) {
     this._command = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commandInput() {
+    return this._command
   }
 
   // execution_property - computed: false, optional: true, required: false
   private _executionProperty?: GlueJobExecutionProperty[];
   public get executionProperty() {
-    return this._executionProperty;
+    return this.interpolationForAttribute('execution_property') as any;
   }
-  public set executionProperty(value: GlueJobExecutionProperty[] | undefined) {
+  public set executionProperty(value: GlueJobExecutionProperty[] ) {
     this._executionProperty = value;
+  }
+  public resetExecutionProperty() {
+    this._executionProperty = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionPropertyInput() {
+    return this._executionProperty
   }
 
   // notification_property - computed: false, optional: true, required: false
   private _notificationProperty?: GlueJobNotificationProperty[];
   public get notificationProperty() {
-    return this._notificationProperty;
+    return this.interpolationForAttribute('notification_property') as any;
   }
-  public set notificationProperty(value: GlueJobNotificationProperty[] | undefined) {
+  public set notificationProperty(value: GlueJobNotificationProperty[] ) {
     this._notificationProperty = value;
+  }
+  public resetNotificationProperty() {
+    this._notificationProperty = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationPropertyInput() {
+    return this._notificationProperty
   }
 
   // =========

@@ -74,13 +74,20 @@ export class StoragegatewayGateway extends TerraformResource {
   // activation_key - computed: true, optional: true, required: false
   private _activationKey?: string;
   public get activationKey() {
-    return this._activationKey ?? this.getStringAttribute('activation_key');
+    return this.getStringAttribute('activation_key');
   }
-  public set activationKey(value: string | undefined) {
+  public set activationKey(value: string) {
     this._activationKey = value;
   }
+  public resetActivationKey() {
+    this._activationKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activationKeyInput() {
+    return this._activationKey
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -88,13 +95,20 @@ export class StoragegatewayGateway extends TerraformResource {
   // cloudwatch_log_group_arn - computed: false, optional: true, required: false
   private _cloudwatchLogGroupArn?: string;
   public get cloudwatchLogGroupArn() {
-    return this._cloudwatchLogGroupArn;
+    return this.getStringAttribute('cloudwatch_log_group_arn');
   }
-  public set cloudwatchLogGroupArn(value: string | undefined) {
+  public set cloudwatchLogGroupArn(value: string ) {
     this._cloudwatchLogGroupArn = value;
   }
+  public resetCloudwatchLogGroupArn() {
+    this._cloudwatchLogGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchLogGroupArnInput() {
+    return this._cloudwatchLogGroupArn
+  }
 
-  // gateway_id - computed: true, optional: false, required: true
+  // gateway_id - computed: true, optional: false, required: false
   public get gatewayId() {
     return this.getStringAttribute('gateway_id');
   }
@@ -102,109 +116,176 @@ export class StoragegatewayGateway extends TerraformResource {
   // gateway_ip_address - computed: true, optional: true, required: false
   private _gatewayIpAddress?: string;
   public get gatewayIpAddress() {
-    return this._gatewayIpAddress ?? this.getStringAttribute('gateway_ip_address');
+    return this.getStringAttribute('gateway_ip_address');
   }
-  public set gatewayIpAddress(value: string | undefined) {
+  public set gatewayIpAddress(value: string) {
     this._gatewayIpAddress = value;
+  }
+  public resetGatewayIpAddress() {
+    this._gatewayIpAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayIpAddressInput() {
+    return this._gatewayIpAddress
   }
 
   // gateway_name - computed: false, optional: false, required: true
   private _gatewayName: string;
   public get gatewayName() {
-    return this._gatewayName;
+    return this.getStringAttribute('gateway_name');
   }
   public set gatewayName(value: string) {
     this._gatewayName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayNameInput() {
+    return this._gatewayName
   }
 
   // gateway_timezone - computed: false, optional: false, required: true
   private _gatewayTimezone: string;
   public get gatewayTimezone() {
-    return this._gatewayTimezone;
+    return this.getStringAttribute('gateway_timezone');
   }
   public set gatewayTimezone(value: string) {
     this._gatewayTimezone = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayTimezoneInput() {
+    return this._gatewayTimezone
   }
 
   // gateway_type - computed: false, optional: true, required: false
   private _gatewayType?: string;
   public get gatewayType() {
-    return this._gatewayType;
+    return this.getStringAttribute('gateway_type');
   }
-  public set gatewayType(value: string | undefined) {
+  public set gatewayType(value: string ) {
     this._gatewayType = value;
+  }
+  public resetGatewayType() {
+    this._gatewayType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayTypeInput() {
+    return this._gatewayType
   }
 
   // gateway_vpc_endpoint - computed: false, optional: true, required: false
   private _gatewayVpcEndpoint?: string;
   public get gatewayVpcEndpoint() {
-    return this._gatewayVpcEndpoint;
+    return this.getStringAttribute('gateway_vpc_endpoint');
   }
-  public set gatewayVpcEndpoint(value: string | undefined) {
+  public set gatewayVpcEndpoint(value: string ) {
     this._gatewayVpcEndpoint = value;
+  }
+  public resetGatewayVpcEndpoint() {
+    this._gatewayVpcEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayVpcEndpointInput() {
+    return this._gatewayVpcEndpoint
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // medium_changer_type - computed: false, optional: true, required: false
   private _mediumChangerType?: string;
   public get mediumChangerType() {
-    return this._mediumChangerType;
+    return this.getStringAttribute('medium_changer_type');
   }
-  public set mediumChangerType(value: string | undefined) {
+  public set mediumChangerType(value: string ) {
     this._mediumChangerType = value;
+  }
+  public resetMediumChangerType() {
+    this._mediumChangerType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mediumChangerTypeInput() {
+    return this._mediumChangerType
   }
 
   // smb_guest_password - computed: false, optional: true, required: false
   private _smbGuestPassword?: string;
   public get smbGuestPassword() {
-    return this._smbGuestPassword;
+    return this.getStringAttribute('smb_guest_password');
   }
-  public set smbGuestPassword(value: string | undefined) {
+  public set smbGuestPassword(value: string ) {
     this._smbGuestPassword = value;
+  }
+  public resetSmbGuestPassword() {
+    this._smbGuestPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get smbGuestPasswordInput() {
+    return this._smbGuestPassword
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // tape_drive_type - computed: false, optional: true, required: false
   private _tapeDriveType?: string;
   public get tapeDriveType() {
-    return this._tapeDriveType;
+    return this.getStringAttribute('tape_drive_type');
   }
-  public set tapeDriveType(value: string | undefined) {
+  public set tapeDriveType(value: string ) {
     this._tapeDriveType = value;
+  }
+  public resetTapeDriveType() {
+    this._tapeDriveType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tapeDriveTypeInput() {
+    return this._tapeDriveType
   }
 
   // smb_active_directory_settings - computed: false, optional: true, required: false
   private _smbActiveDirectorySettings?: StoragegatewayGatewaySmbActiveDirectorySettings[];
   public get smbActiveDirectorySettings() {
-    return this._smbActiveDirectorySettings;
+    return this.interpolationForAttribute('smb_active_directory_settings') as any;
   }
-  public set smbActiveDirectorySettings(value: StoragegatewayGatewaySmbActiveDirectorySettings[] | undefined) {
+  public set smbActiveDirectorySettings(value: StoragegatewayGatewaySmbActiveDirectorySettings[] ) {
     this._smbActiveDirectorySettings = value;
+  }
+  public resetSmbActiveDirectorySettings() {
+    this._smbActiveDirectorySettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get smbActiveDirectorySettingsInput() {
+    return this._smbActiveDirectorySettings
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: StoragegatewayGatewayTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: StoragegatewayGatewayTimeouts | undefined) {
+  public set timeouts(value: StoragegatewayGatewayTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

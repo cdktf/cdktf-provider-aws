@@ -48,66 +48,89 @@ export class AppautoscalingTarget extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // max_capacity - computed: false, optional: false, required: true
   private _maxCapacity: number;
   public get maxCapacity() {
-    return this._maxCapacity;
+    return this.getNumberAttribute('max_capacity');
   }
   public set maxCapacity(value: number) {
     this._maxCapacity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxCapacityInput() {
+    return this._maxCapacity
   }
 
   // min_capacity - computed: false, optional: false, required: true
   private _minCapacity: number;
   public get minCapacity() {
-    return this._minCapacity;
+    return this.getNumberAttribute('min_capacity');
   }
   public set minCapacity(value: number) {
     this._minCapacity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minCapacityInput() {
+    return this._minCapacity
   }
 
   // resource_id - computed: false, optional: false, required: true
   private _resourceId: string;
   public get resourceId() {
-    return this._resourceId;
+    return this.getStringAttribute('resource_id');
   }
   public set resourceId(value: string) {
     this._resourceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceIdInput() {
+    return this._resourceId
   }
 
   // role_arn - computed: true, optional: true, required: false
   private _roleArn?: string;
   public get roleArn() {
-    return this._roleArn ?? this.getStringAttribute('role_arn');
+    return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // scalable_dimension - computed: false, optional: false, required: true
   private _scalableDimension: string;
   public get scalableDimension() {
-    return this._scalableDimension;
+    return this.getStringAttribute('scalable_dimension');
   }
   public set scalableDimension(value: string) {
     this._scalableDimension = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalableDimensionInput() {
+    return this._scalableDimension
   }
 
   // service_namespace - computed: false, optional: false, required: true
   private _serviceNamespace: string;
   public get serviceNamespace() {
-    return this._serviceNamespace;
+    return this.getStringAttribute('service_namespace');
   }
   public set serviceNamespace(value: string) {
     this._serviceNamespace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNamespaceInput() {
+    return this._serviceNamespace
   }
 
   // =========

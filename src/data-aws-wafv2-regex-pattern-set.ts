@@ -14,7 +14,7 @@ export interface DataAwsWafv2RegexPatternSetConfig extends TerraformMetaArgument
 }
 export class DataAwsWafv2RegexPatternSetRegularExpression extends ComplexComputedList {
 
-  // regex_string - computed: true, optional: false, required: true
+  // regex_string - computed: true, optional: false, required: false
   public get regexString() {
     return this.getStringAttribute('regex_string');
   }
@@ -47,35 +47,35 @@ export class DataAwsWafv2RegexPatternSet extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // regular_expression - computed: true, optional: false, required: true
+  // regular_expression - computed: true, optional: false, required: false
   public regularExpression(index: string) {
     return new DataAwsWafv2RegexPatternSetRegularExpression(this, 'regular_expression', index);
   }
@@ -83,10 +83,14 @@ export class DataAwsWafv2RegexPatternSet extends TerraformDataSource {
   // scope - computed: false, optional: false, required: true
   private _scope: string;
   public get scope() {
-    return this._scope;
+    return this.getStringAttribute('scope');
   }
   public set scope(value: string) {
     this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope
   }
 
   // =========

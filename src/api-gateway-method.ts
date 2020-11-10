@@ -60,109 +60,170 @@ export class ApiGatewayMethod extends TerraformResource {
   // api_key_required - computed: false, optional: true, required: false
   private _apiKeyRequired?: boolean;
   public get apiKeyRequired() {
-    return this._apiKeyRequired;
+    return this.getBooleanAttribute('api_key_required');
   }
-  public set apiKeyRequired(value: boolean | undefined) {
+  public set apiKeyRequired(value: boolean ) {
     this._apiKeyRequired = value;
+  }
+  public resetApiKeyRequired() {
+    this._apiKeyRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeyRequiredInput() {
+    return this._apiKeyRequired
   }
 
   // authorization - computed: false, optional: false, required: true
   private _authorization: string;
   public get authorization() {
-    return this._authorization;
+    return this.getStringAttribute('authorization');
   }
   public set authorization(value: string) {
     this._authorization = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationInput() {
+    return this._authorization
   }
 
   // authorization_scopes - computed: false, optional: true, required: false
   private _authorizationScopes?: string[];
   public get authorizationScopes() {
-    return this._authorizationScopes;
+    return this.getListAttribute('authorization_scopes');
   }
-  public set authorizationScopes(value: string[] | undefined) {
+  public set authorizationScopes(value: string[] ) {
     this._authorizationScopes = value;
+  }
+  public resetAuthorizationScopes() {
+    this._authorizationScopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationScopesInput() {
+    return this._authorizationScopes
   }
 
   // authorizer_id - computed: false, optional: true, required: false
   private _authorizerId?: string;
   public get authorizerId() {
-    return this._authorizerId;
+    return this.getStringAttribute('authorizer_id');
   }
-  public set authorizerId(value: string | undefined) {
+  public set authorizerId(value: string ) {
     this._authorizerId = value;
+  }
+  public resetAuthorizerId() {
+    this._authorizerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerIdInput() {
+    return this._authorizerId
   }
 
   // http_method - computed: false, optional: false, required: true
   private _httpMethod: string;
   public get httpMethod() {
-    return this._httpMethod;
+    return this.getStringAttribute('http_method');
   }
   public set httpMethod(value: string) {
     this._httpMethod = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get httpMethodInput() {
+    return this._httpMethod
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // request_models - computed: false, optional: true, required: false
   private _requestModels?: { [key: string]: string };
   public get requestModels() {
-    return this._requestModels;
+    return this.interpolationForAttribute('request_models') as any;
   }
-  public set requestModels(value: { [key: string]: string } | undefined) {
+  public set requestModels(value: { [key: string]: string } ) {
     this._requestModels = value;
+  }
+  public resetRequestModels() {
+    this._requestModels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestModelsInput() {
+    return this._requestModels
   }
 
   // request_parameters - computed: false, optional: true, required: false
   private _requestParameters?: { [key: string]: boolean };
   public get requestParameters() {
-    return this._requestParameters;
+    return this.interpolationForAttribute('request_parameters') as any;
   }
-  public set requestParameters(value: { [key: string]: boolean } | undefined) {
+  public set requestParameters(value: { [key: string]: boolean } ) {
     this._requestParameters = value;
+  }
+  public resetRequestParameters() {
+    this._requestParameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestParametersInput() {
+    return this._requestParameters
   }
 
   // request_parameters_in_json - computed: false, optional: true, required: false
   private _requestParametersInJson?: string;
   public get requestParametersInJson() {
-    return this._requestParametersInJson;
+    return this.getStringAttribute('request_parameters_in_json');
   }
-  public set requestParametersInJson(value: string | undefined) {
+  public set requestParametersInJson(value: string ) {
     this._requestParametersInJson = value;
+  }
+  public resetRequestParametersInJson() {
+    this._requestParametersInJson = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestParametersInJsonInput() {
+    return this._requestParametersInJson
   }
 
   // request_validator_id - computed: false, optional: true, required: false
   private _requestValidatorId?: string;
   public get requestValidatorId() {
-    return this._requestValidatorId;
+    return this.getStringAttribute('request_validator_id');
   }
-  public set requestValidatorId(value: string | undefined) {
+  public set requestValidatorId(value: string ) {
     this._requestValidatorId = value;
+  }
+  public resetRequestValidatorId() {
+    this._requestValidatorId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestValidatorIdInput() {
+    return this._requestValidatorId
   }
 
   // resource_id - computed: false, optional: false, required: true
   private _resourceId: string;
   public get resourceId() {
-    return this._resourceId;
+    return this.getStringAttribute('resource_id');
   }
   public set resourceId(value: string) {
     this._resourceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceIdInput() {
+    return this._resourceId
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this._restApiId;
+    return this.getStringAttribute('rest_api_id');
   }
   public set restApiId(value: string) {
     this._restApiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restApiIdInput() {
+    return this._restApiId
   }
 
   // =========

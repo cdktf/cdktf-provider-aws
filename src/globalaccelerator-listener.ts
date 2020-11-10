@@ -51,46 +51,61 @@ export class GlobalacceleratorListener extends TerraformResource {
   // accelerator_arn - computed: false, optional: false, required: true
   private _acceleratorArn: string;
   public get acceleratorArn() {
-    return this._acceleratorArn;
+    return this.getStringAttribute('accelerator_arn');
   }
   public set acceleratorArn(value: string) {
     this._acceleratorArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorArnInput() {
+    return this._acceleratorArn
   }
 
   // client_affinity - computed: false, optional: true, required: false
   private _clientAffinity?: string;
   public get clientAffinity() {
-    return this._clientAffinity;
+    return this.getStringAttribute('client_affinity');
   }
-  public set clientAffinity(value: string | undefined) {
+  public set clientAffinity(value: string ) {
     this._clientAffinity = value;
+  }
+  public resetClientAffinity() {
+    this._clientAffinity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientAffinityInput() {
+    return this._clientAffinity
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // protocol - computed: false, optional: false, required: true
   private _protocol: string;
   public get protocol() {
-    return this._protocol;
+    return this.getStringAttribute('protocol');
   }
   public set protocol(value: string) {
     this._protocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol
   }
 
   // port_range - computed: false, optional: false, required: true
   private _portRange: GlobalacceleratorListenerPortRange[];
   public get portRange() {
-    return this._portRange;
+    return this.interpolationForAttribute('port_range') as any;
   }
   public set portRange(value: GlobalacceleratorListenerPortRange[]) {
     this._portRange = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portRangeInput() {
+    return this._portRange
   }
 
   // =========

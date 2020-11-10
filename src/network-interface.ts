@@ -61,32 +61,35 @@ export class NetworkInterface extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // mac_address - computed: true, optional: false, required: true
+  // mac_address - computed: true, optional: false, required: false
   public get macAddress() {
     return this.getStringAttribute('mac_address');
   }
 
-  // outpost_arn - computed: true, optional: false, required: true
+  // outpost_arn - computed: true, optional: false, required: false
   public get outpostArn() {
     return this.getStringAttribute('outpost_arn');
   }
 
-  // private_dns_name - computed: true, optional: false, required: true
+  // private_dns_name - computed: true, optional: false, required: false
   public get privateDnsName() {
     return this.getStringAttribute('private_dns_name');
   }
@@ -94,73 +97,126 @@ export class NetworkInterface extends TerraformResource {
   // private_ip - computed: true, optional: true, required: false
   private _privateIp?: string;
   public get privateIp() {
-    return this._privateIp ?? this.getStringAttribute('private_ip');
+    return this.getStringAttribute('private_ip');
   }
-  public set privateIp(value: string | undefined) {
+  public set privateIp(value: string) {
     this._privateIp = value;
+  }
+  public resetPrivateIp() {
+    this._privateIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpInput() {
+    return this._privateIp
   }
 
   // private_ips - computed: true, optional: true, required: false
   private _privateIps?: string[];
   public get privateIps() {
-    return this._privateIps ?? this.getListAttribute('private_ips');
+    return this.getListAttribute('private_ips');
   }
-  public set privateIps(value: string[] | undefined) {
+  public set privateIps(value: string[]) {
     this._privateIps = value;
+  }
+  public resetPrivateIps() {
+    this._privateIps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpsInput() {
+    return this._privateIps
   }
 
   // private_ips_count - computed: true, optional: true, required: false
   private _privateIpsCount?: number;
   public get privateIpsCount() {
-    return this._privateIpsCount ?? this.getNumberAttribute('private_ips_count');
+    return this.getNumberAttribute('private_ips_count');
   }
-  public set privateIpsCount(value: number | undefined) {
+  public set privateIpsCount(value: number) {
     this._privateIpsCount = value;
+  }
+  public resetPrivateIpsCount() {
+    this._privateIpsCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateIpsCountInput() {
+    return this._privateIpsCount
   }
 
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[];
   public get securityGroups() {
-    return this._securityGroups ?? this.getListAttribute('security_groups');
+    return this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[] | undefined) {
+  public set securityGroups(value: string[]) {
     this._securityGroups = value;
+  }
+  public resetSecurityGroups() {
+    this._securityGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupsInput() {
+    return this._securityGroups
   }
 
   // source_dest_check - computed: false, optional: true, required: false
   private _sourceDestCheck?: boolean;
   public get sourceDestCheck() {
-    return this._sourceDestCheck;
+    return this.getBooleanAttribute('source_dest_check');
   }
-  public set sourceDestCheck(value: boolean | undefined) {
+  public set sourceDestCheck(value: boolean ) {
     this._sourceDestCheck = value;
+  }
+  public resetSourceDestCheck() {
+    this._sourceDestCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceDestCheckInput() {
+    return this._sourceDestCheck
   }
 
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
   public set subnetId(value: string) {
     this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // attachment - computed: false, optional: true, required: false
   private _attachment?: NetworkInterfaceAttachment[];
   public get attachment() {
-    return this._attachment;
+    return this.interpolationForAttribute('attachment') as any;
   }
-  public set attachment(value: NetworkInterfaceAttachment[] | undefined) {
+  public set attachment(value: NetworkInterfaceAttachment[] ) {
     this._attachment = value;
+  }
+  public resetAttachment() {
+    this._attachment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attachmentInput() {
+    return this._attachment
   }
 
   // =========

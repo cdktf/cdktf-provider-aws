@@ -134,13 +134,20 @@ export class RdsCluster extends TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this._applyImmediately ?? this.getBooleanAttribute('apply_immediately');
+    return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | undefined) {
+  public set applyImmediately(value: boolean) {
     this._applyImmediately = value;
   }
+  public resetApplyImmediately() {
+    this._applyImmediately = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyImmediatelyInput() {
+    return this._applyImmediately
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -148,58 +155,100 @@ export class RdsCluster extends TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[];
   public get availabilityZones() {
-    return this._availabilityZones ?? this.getListAttribute('availability_zones');
+    return this.getListAttribute('availability_zones');
   }
-  public set availabilityZones(value: string[] | undefined) {
+  public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
+  }
+  public resetAvailabilityZones() {
+    this._availabilityZones = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZonesInput() {
+    return this._availabilityZones
   }
 
   // backtrack_window - computed: false, optional: true, required: false
   private _backtrackWindow?: number;
   public get backtrackWindow() {
-    return this._backtrackWindow;
+    return this.getNumberAttribute('backtrack_window');
   }
-  public set backtrackWindow(value: number | undefined) {
+  public set backtrackWindow(value: number ) {
     this._backtrackWindow = value;
+  }
+  public resetBacktrackWindow() {
+    this._backtrackWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backtrackWindowInput() {
+    return this._backtrackWindow
   }
 
   // backup_retention_period - computed: false, optional: true, required: false
   private _backupRetentionPeriod?: number;
   public get backupRetentionPeriod() {
-    return this._backupRetentionPeriod;
+    return this.getNumberAttribute('backup_retention_period');
   }
-  public set backupRetentionPeriod(value: number | undefined) {
+  public set backupRetentionPeriod(value: number ) {
     this._backupRetentionPeriod = value;
+  }
+  public resetBackupRetentionPeriod() {
+    this._backupRetentionPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupRetentionPeriodInput() {
+    return this._backupRetentionPeriod
   }
 
   // cluster_identifier - computed: true, optional: true, required: false
   private _clusterIdentifier?: string;
   public get clusterIdentifier() {
-    return this._clusterIdentifier ?? this.getStringAttribute('cluster_identifier');
+    return this.getStringAttribute('cluster_identifier');
   }
-  public set clusterIdentifier(value: string | undefined) {
+  public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
+  }
+  public resetClusterIdentifier() {
+    this._clusterIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdentifierInput() {
+    return this._clusterIdentifier
   }
 
   // cluster_identifier_prefix - computed: true, optional: true, required: false
   private _clusterIdentifierPrefix?: string;
   public get clusterIdentifierPrefix() {
-    return this._clusterIdentifierPrefix ?? this.getStringAttribute('cluster_identifier_prefix');
+    return this.getStringAttribute('cluster_identifier_prefix');
   }
-  public set clusterIdentifierPrefix(value: string | undefined) {
+  public set clusterIdentifierPrefix(value: string) {
     this._clusterIdentifierPrefix = value;
+  }
+  public resetClusterIdentifierPrefix() {
+    this._clusterIdentifierPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdentifierPrefixInput() {
+    return this._clusterIdentifierPrefix
   }
 
   // cluster_members - computed: true, optional: true, required: false
   private _clusterMembers?: string[];
   public get clusterMembers() {
-    return this._clusterMembers ?? this.getListAttribute('cluster_members');
+    return this.getListAttribute('cluster_members');
   }
-  public set clusterMembers(value: string[] | undefined) {
+  public set clusterMembers(value: string[]) {
     this._clusterMembers = value;
   }
+  public resetClusterMembers() {
+    this._clusterMembers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterMembersInput() {
+    return this._clusterMembers
+  }
 
-  // cluster_resource_id - computed: true, optional: false, required: true
+  // cluster_resource_id - computed: true, optional: false, required: false
   public get clusterResourceId() {
     return this.getStringAttribute('cluster_resource_id');
   }
@@ -207,67 +256,116 @@ export class RdsCluster extends TerraformResource {
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
   private _copyTagsToSnapshot?: boolean;
   public get copyTagsToSnapshot() {
-    return this._copyTagsToSnapshot;
+    return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
-  public set copyTagsToSnapshot(value: boolean | undefined) {
+  public set copyTagsToSnapshot(value: boolean ) {
     this._copyTagsToSnapshot = value;
+  }
+  public resetCopyTagsToSnapshot() {
+    this._copyTagsToSnapshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyTagsToSnapshotInput() {
+    return this._copyTagsToSnapshot
   }
 
   // database_name - computed: true, optional: true, required: false
   private _databaseName?: string;
   public get databaseName() {
-    return this._databaseName ?? this.getStringAttribute('database_name');
+    return this.getStringAttribute('database_name');
   }
-  public set databaseName(value: string | undefined) {
+  public set databaseName(value: string) {
     this._databaseName = value;
+  }
+  public resetDatabaseName() {
+    this._databaseName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName
   }
 
   // db_cluster_parameter_group_name - computed: true, optional: true, required: false
   private _dbClusterParameterGroupName?: string;
   public get dbClusterParameterGroupName() {
-    return this._dbClusterParameterGroupName ?? this.getStringAttribute('db_cluster_parameter_group_name');
+    return this.getStringAttribute('db_cluster_parameter_group_name');
   }
-  public set dbClusterParameterGroupName(value: string | undefined) {
+  public set dbClusterParameterGroupName(value: string) {
     this._dbClusterParameterGroupName = value;
+  }
+  public resetDbClusterParameterGroupName() {
+    this._dbClusterParameterGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbClusterParameterGroupNameInput() {
+    return this._dbClusterParameterGroupName
   }
 
   // db_subnet_group_name - computed: true, optional: true, required: false
   private _dbSubnetGroupName?: string;
   public get dbSubnetGroupName() {
-    return this._dbSubnetGroupName ?? this.getStringAttribute('db_subnet_group_name');
+    return this.getStringAttribute('db_subnet_group_name');
   }
-  public set dbSubnetGroupName(value: string | undefined) {
+  public set dbSubnetGroupName(value: string) {
     this._dbSubnetGroupName = value;
+  }
+  public resetDbSubnetGroupName() {
+    this._dbSubnetGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbSubnetGroupNameInput() {
+    return this._dbSubnetGroupName
   }
 
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean;
   public get deletionProtection() {
-    return this._deletionProtection;
+    return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | undefined) {
+  public set deletionProtection(value: boolean ) {
     this._deletionProtection = value;
+  }
+  public resetDeletionProtection() {
+    this._deletionProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionInput() {
+    return this._deletionProtection
   }
 
   // enable_http_endpoint - computed: false, optional: true, required: false
   private _enableHttpEndpoint?: boolean;
   public get enableHttpEndpoint() {
-    return this._enableHttpEndpoint;
+    return this.getBooleanAttribute('enable_http_endpoint');
   }
-  public set enableHttpEndpoint(value: boolean | undefined) {
+  public set enableHttpEndpoint(value: boolean ) {
     this._enableHttpEndpoint = value;
+  }
+  public resetEnableHttpEndpoint() {
+    this._enableHttpEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableHttpEndpointInput() {
+    return this._enableHttpEndpoint
   }
 
   // enabled_cloudwatch_logs_exports - computed: false, optional: true, required: false
   private _enabledCloudwatchLogsExports?: string[];
   public get enabledCloudwatchLogsExports() {
-    return this._enabledCloudwatchLogsExports;
+    return this.getListAttribute('enabled_cloudwatch_logs_exports');
   }
-  public set enabledCloudwatchLogsExports(value: string[] | undefined) {
+  public set enabledCloudwatchLogsExports(value: string[] ) {
     this._enabledCloudwatchLogsExports = value;
   }
+  public resetEnabledCloudwatchLogsExports() {
+    this._enabledCloudwatchLogsExports = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledCloudwatchLogsExportsInput() {
+    return this._enabledCloudwatchLogsExports
+  }
 
-  // endpoint - computed: true, optional: false, required: true
+  // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -275,49 +373,84 @@ export class RdsCluster extends TerraformResource {
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this._engine;
+    return this.getStringAttribute('engine');
   }
-  public set engine(value: string | undefined) {
+  public set engine(value: string ) {
     this._engine = value;
+  }
+  public resetEngine() {
+    this._engine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
   }
 
   // engine_mode - computed: false, optional: true, required: false
   private _engineMode?: string;
   public get engineMode() {
-    return this._engineMode;
+    return this.getStringAttribute('engine_mode');
   }
-  public set engineMode(value: string | undefined) {
+  public set engineMode(value: string ) {
     this._engineMode = value;
+  }
+  public resetEngineMode() {
+    this._engineMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineModeInput() {
+    return this._engineMode
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this._engineVersion ?? this.getStringAttribute('engine_version');
+    return this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string | undefined) {
+  public set engineVersion(value: string) {
     this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion
   }
 
   // final_snapshot_identifier - computed: false, optional: true, required: false
   private _finalSnapshotIdentifier?: string;
   public get finalSnapshotIdentifier() {
-    return this._finalSnapshotIdentifier;
+    return this.getStringAttribute('final_snapshot_identifier');
   }
-  public set finalSnapshotIdentifier(value: string | undefined) {
+  public set finalSnapshotIdentifier(value: string ) {
     this._finalSnapshotIdentifier = value;
+  }
+  public resetFinalSnapshotIdentifier() {
+    this._finalSnapshotIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get finalSnapshotIdentifierInput() {
+    return this._finalSnapshotIdentifier
   }
 
   // global_cluster_identifier - computed: false, optional: true, required: false
   private _globalClusterIdentifier?: string;
   public get globalClusterIdentifier() {
-    return this._globalClusterIdentifier;
+    return this.getStringAttribute('global_cluster_identifier');
   }
-  public set globalClusterIdentifier(value: string | undefined) {
+  public set globalClusterIdentifier(value: string ) {
     this._globalClusterIdentifier = value;
   }
+  public resetGlobalClusterIdentifier() {
+    this._globalClusterIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier
+  }
 
-  // hosted_zone_id - computed: true, optional: false, required: true
+  // hosted_zone_id - computed: true, optional: false, required: false
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
@@ -325,85 +458,137 @@ export class RdsCluster extends TerraformResource {
   // iam_database_authentication_enabled - computed: false, optional: true, required: false
   private _iamDatabaseAuthenticationEnabled?: boolean;
   public get iamDatabaseAuthenticationEnabled() {
-    return this._iamDatabaseAuthenticationEnabled;
+    return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
-  public set iamDatabaseAuthenticationEnabled(value: boolean | undefined) {
+  public set iamDatabaseAuthenticationEnabled(value: boolean ) {
     this._iamDatabaseAuthenticationEnabled = value;
+  }
+  public resetIamDatabaseAuthenticationEnabled() {
+    this._iamDatabaseAuthenticationEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamDatabaseAuthenticationEnabledInput() {
+    return this._iamDatabaseAuthenticationEnabled
   }
 
   // iam_roles - computed: false, optional: true, required: false
   private _iamRoles?: string[];
   public get iamRoles() {
-    return this._iamRoles;
+    return this.getListAttribute('iam_roles');
   }
-  public set iamRoles(value: string[] | undefined) {
+  public set iamRoles(value: string[] ) {
     this._iamRoles = value;
+  }
+  public resetIamRoles() {
+    this._iamRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamRolesInput() {
+    return this._iamRoles
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // master_password - computed: false, optional: true, required: false
   private _masterPassword?: string;
   public get masterPassword() {
-    return this._masterPassword;
+    return this.getStringAttribute('master_password');
   }
-  public set masterPassword(value: string | undefined) {
+  public set masterPassword(value: string ) {
     this._masterPassword = value;
+  }
+  public resetMasterPassword() {
+    this._masterPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get masterPasswordInput() {
+    return this._masterPassword
   }
 
   // master_username - computed: true, optional: true, required: false
   private _masterUsername?: string;
   public get masterUsername() {
-    return this._masterUsername ?? this.getStringAttribute('master_username');
+    return this.getStringAttribute('master_username');
   }
-  public set masterUsername(value: string | undefined) {
+  public set masterUsername(value: string) {
     this._masterUsername = value;
+  }
+  public resetMasterUsername() {
+    this._masterUsername = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get masterUsernameInput() {
+    return this._masterUsername
   }
 
   // port - computed: true, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this._port ?? this.getNumberAttribute('port');
+    return this.getNumberAttribute('port');
   }
-  public set port(value: number | undefined) {
+  public set port(value: number) {
     this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port
   }
 
   // preferred_backup_window - computed: true, optional: true, required: false
   private _preferredBackupWindow?: string;
   public get preferredBackupWindow() {
-    return this._preferredBackupWindow ?? this.getStringAttribute('preferred_backup_window');
+    return this.getStringAttribute('preferred_backup_window');
   }
-  public set preferredBackupWindow(value: string | undefined) {
+  public set preferredBackupWindow(value: string) {
     this._preferredBackupWindow = value;
+  }
+  public resetPreferredBackupWindow() {
+    this._preferredBackupWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredBackupWindowInput() {
+    return this._preferredBackupWindow
   }
 
   // preferred_maintenance_window - computed: true, optional: true, required: false
   private _preferredMaintenanceWindow?: string;
   public get preferredMaintenanceWindow() {
-    return this._preferredMaintenanceWindow ?? this.getStringAttribute('preferred_maintenance_window');
+    return this.getStringAttribute('preferred_maintenance_window');
   }
-  public set preferredMaintenanceWindow(value: string | undefined) {
+  public set preferredMaintenanceWindow(value: string) {
     this._preferredMaintenanceWindow = value;
   }
+  public resetPreferredMaintenanceWindow() {
+    this._preferredMaintenanceWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredMaintenanceWindowInput() {
+    return this._preferredMaintenanceWindow
+  }
 
-  // reader_endpoint - computed: true, optional: false, required: true
+  // reader_endpoint - computed: true, optional: false, required: false
   public get readerEndpoint() {
     return this.getStringAttribute('reader_endpoint');
   }
@@ -411,91 +596,161 @@ export class RdsCluster extends TerraformResource {
   // replication_source_identifier - computed: false, optional: true, required: false
   private _replicationSourceIdentifier?: string;
   public get replicationSourceIdentifier() {
-    return this._replicationSourceIdentifier;
+    return this.getStringAttribute('replication_source_identifier');
   }
-  public set replicationSourceIdentifier(value: string | undefined) {
+  public set replicationSourceIdentifier(value: string ) {
     this._replicationSourceIdentifier = value;
+  }
+  public resetReplicationSourceIdentifier() {
+    this._replicationSourceIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationSourceIdentifierInput() {
+    return this._replicationSourceIdentifier
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
   private _skipFinalSnapshot?: boolean;
   public get skipFinalSnapshot() {
-    return this._skipFinalSnapshot;
+    return this.getBooleanAttribute('skip_final_snapshot');
   }
-  public set skipFinalSnapshot(value: boolean | undefined) {
+  public set skipFinalSnapshot(value: boolean ) {
     this._skipFinalSnapshot = value;
+  }
+  public resetSkipFinalSnapshot() {
+    this._skipFinalSnapshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipFinalSnapshotInput() {
+    return this._skipFinalSnapshot
   }
 
   // snapshot_identifier - computed: false, optional: true, required: false
   private _snapshotIdentifier?: string;
   public get snapshotIdentifier() {
-    return this._snapshotIdentifier;
+    return this.getStringAttribute('snapshot_identifier');
   }
-  public set snapshotIdentifier(value: string | undefined) {
+  public set snapshotIdentifier(value: string ) {
     this._snapshotIdentifier = value;
+  }
+  public resetSnapshotIdentifier() {
+    this._snapshotIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotIdentifierInput() {
+    return this._snapshotIdentifier
   }
 
   // source_region - computed: false, optional: true, required: false
   private _sourceRegion?: string;
   public get sourceRegion() {
-    return this._sourceRegion;
+    return this.getStringAttribute('source_region');
   }
-  public set sourceRegion(value: string | undefined) {
+  public set sourceRegion(value: string ) {
     this._sourceRegion = value;
+  }
+  public resetSourceRegion() {
+    this._sourceRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceRegionInput() {
+    return this._sourceRegion
   }
 
   // storage_encrypted - computed: false, optional: true, required: false
   private _storageEncrypted?: boolean;
   public get storageEncrypted() {
-    return this._storageEncrypted;
+    return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean | undefined) {
+  public set storageEncrypted(value: boolean ) {
     this._storageEncrypted = value;
+  }
+  public resetStorageEncrypted() {
+    this._storageEncrypted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageEncryptedInput() {
+    return this._storageEncrypted
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
-    return this._vpcSecurityGroupIds ?? this.getListAttribute('vpc_security_group_ids');
+    return this.getListAttribute('vpc_security_group_ids');
   }
-  public set vpcSecurityGroupIds(value: string[] | undefined) {
+  public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
+  }
+  public resetVpcSecurityGroupIds() {
+    this._vpcSecurityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcSecurityGroupIdsInput() {
+    return this._vpcSecurityGroupIds
   }
 
   // s3_import - computed: false, optional: true, required: false
   private _s3Import?: RdsClusterS3Import[];
   public get s3Import() {
-    return this._s3Import;
+    return this.interpolationForAttribute('s3_import') as any;
   }
-  public set s3Import(value: RdsClusterS3Import[] | undefined) {
+  public set s3Import(value: RdsClusterS3Import[] ) {
     this._s3Import = value;
+  }
+  public resetS3Import() {
+    this._s3Import = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3ImportInput() {
+    return this._s3Import
   }
 
   // scaling_configuration - computed: false, optional: true, required: false
   private _scalingConfiguration?: RdsClusterScalingConfiguration[];
   public get scalingConfiguration() {
-    return this._scalingConfiguration;
+    return this.interpolationForAttribute('scaling_configuration') as any;
   }
-  public set scalingConfiguration(value: RdsClusterScalingConfiguration[] | undefined) {
+  public set scalingConfiguration(value: RdsClusterScalingConfiguration[] ) {
     this._scalingConfiguration = value;
+  }
+  public resetScalingConfiguration() {
+    this._scalingConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingConfigurationInput() {
+    return this._scalingConfiguration
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: RdsClusterTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: RdsClusterTimeouts | undefined) {
+  public set timeouts(value: RdsClusterTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

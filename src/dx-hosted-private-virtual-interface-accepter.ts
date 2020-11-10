@@ -50,7 +50,7 @@ export class DxHostedPrivateVirtualInterfaceAccepter extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,55 +58,83 @@ export class DxHostedPrivateVirtualInterfaceAccepter extends TerraformResource {
   // dx_gateway_id - computed: false, optional: true, required: false
   private _dxGatewayId?: string;
   public get dxGatewayId() {
-    return this._dxGatewayId;
+    return this.getStringAttribute('dx_gateway_id');
   }
-  public set dxGatewayId(value: string | undefined) {
+  public set dxGatewayId(value: string ) {
     this._dxGatewayId = value;
+  }
+  public resetDxGatewayId() {
+    this._dxGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dxGatewayIdInput() {
+    return this._dxGatewayId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // virtual_interface_id - computed: false, optional: false, required: true
   private _virtualInterfaceId: string;
   public get virtualInterfaceId() {
-    return this._virtualInterfaceId;
+    return this.getStringAttribute('virtual_interface_id');
   }
   public set virtualInterfaceId(value: string) {
     this._virtualInterfaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualInterfaceIdInput() {
+    return this._virtualInterfaceId
   }
 
   // vpn_gateway_id - computed: false, optional: true, required: false
   private _vpnGatewayId?: string;
   public get vpnGatewayId() {
-    return this._vpnGatewayId;
+    return this.getStringAttribute('vpn_gateway_id');
   }
-  public set vpnGatewayId(value: string | undefined) {
+  public set vpnGatewayId(value: string ) {
     this._vpnGatewayId = value;
+  }
+  public resetVpnGatewayId() {
+    this._vpnGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpnGatewayIdInput() {
+    return this._vpnGatewayId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DxHostedPrivateVirtualInterfaceAccepterTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: DxHostedPrivateVirtualInterfaceAccepterTimeouts | undefined) {
+  public set timeouts(value: DxHostedPrivateVirtualInterfaceAccepterTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

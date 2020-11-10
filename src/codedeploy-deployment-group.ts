@@ -169,145 +169,237 @@ export class CodedeployDeploymentGroup extends TerraformResource {
   // app_name - computed: false, optional: false, required: true
   private _appName: string;
   public get appName() {
-    return this._appName;
+    return this.getStringAttribute('app_name');
   }
   public set appName(value: string) {
     this._appName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appNameInput() {
+    return this._appName
   }
 
   // autoscaling_groups - computed: false, optional: true, required: false
   private _autoscalingGroups?: string[];
   public get autoscalingGroups() {
-    return this._autoscalingGroups;
+    return this.getListAttribute('autoscaling_groups');
   }
-  public set autoscalingGroups(value: string[] | undefined) {
+  public set autoscalingGroups(value: string[] ) {
     this._autoscalingGroups = value;
+  }
+  public resetAutoscalingGroups() {
+    this._autoscalingGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingGroupsInput() {
+    return this._autoscalingGroups
   }
 
   // deployment_config_name - computed: false, optional: true, required: false
   private _deploymentConfigName?: string;
   public get deploymentConfigName() {
-    return this._deploymentConfigName;
+    return this.getStringAttribute('deployment_config_name');
   }
-  public set deploymentConfigName(value: string | undefined) {
+  public set deploymentConfigName(value: string ) {
     this._deploymentConfigName = value;
+  }
+  public resetDeploymentConfigName() {
+    this._deploymentConfigName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentConfigNameInput() {
+    return this._deploymentConfigName
   }
 
   // deployment_group_name - computed: false, optional: false, required: true
   private _deploymentGroupName: string;
   public get deploymentGroupName() {
-    return this._deploymentGroupName;
+    return this.getStringAttribute('deployment_group_name');
   }
   public set deploymentGroupName(value: string) {
     this._deploymentGroupName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentGroupNameInput() {
+    return this._deploymentGroupName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // service_role_arn - computed: false, optional: false, required: true
   private _serviceRoleArn: string;
   public get serviceRoleArn() {
-    return this._serviceRoleArn;
+    return this.getStringAttribute('service_role_arn');
   }
   public set serviceRoleArn(value: string) {
     this._serviceRoleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRoleArnInput() {
+    return this._serviceRoleArn
   }
 
   // alarm_configuration - computed: false, optional: true, required: false
   private _alarmConfiguration?: CodedeployDeploymentGroupAlarmConfiguration[];
   public get alarmConfiguration() {
-    return this._alarmConfiguration;
+    return this.interpolationForAttribute('alarm_configuration') as any;
   }
-  public set alarmConfiguration(value: CodedeployDeploymentGroupAlarmConfiguration[] | undefined) {
+  public set alarmConfiguration(value: CodedeployDeploymentGroupAlarmConfiguration[] ) {
     this._alarmConfiguration = value;
+  }
+  public resetAlarmConfiguration() {
+    this._alarmConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alarmConfigurationInput() {
+    return this._alarmConfiguration
   }
 
   // auto_rollback_configuration - computed: false, optional: true, required: false
   private _autoRollbackConfiguration?: CodedeployDeploymentGroupAutoRollbackConfiguration[];
   public get autoRollbackConfiguration() {
-    return this._autoRollbackConfiguration;
+    return this.interpolationForAttribute('auto_rollback_configuration') as any;
   }
-  public set autoRollbackConfiguration(value: CodedeployDeploymentGroupAutoRollbackConfiguration[] | undefined) {
+  public set autoRollbackConfiguration(value: CodedeployDeploymentGroupAutoRollbackConfiguration[] ) {
     this._autoRollbackConfiguration = value;
+  }
+  public resetAutoRollbackConfiguration() {
+    this._autoRollbackConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoRollbackConfigurationInput() {
+    return this._autoRollbackConfiguration
   }
 
   // blue_green_deployment_config - computed: false, optional: true, required: false
   private _blueGreenDeploymentConfig?: CodedeployDeploymentGroupBlueGreenDeploymentConfig[];
   public get blueGreenDeploymentConfig() {
-    return this._blueGreenDeploymentConfig;
+    return this.interpolationForAttribute('blue_green_deployment_config') as any;
   }
-  public set blueGreenDeploymentConfig(value: CodedeployDeploymentGroupBlueGreenDeploymentConfig[] | undefined) {
+  public set blueGreenDeploymentConfig(value: CodedeployDeploymentGroupBlueGreenDeploymentConfig[] ) {
     this._blueGreenDeploymentConfig = value;
+  }
+  public resetBlueGreenDeploymentConfig() {
+    this._blueGreenDeploymentConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blueGreenDeploymentConfigInput() {
+    return this._blueGreenDeploymentConfig
   }
 
   // deployment_style - computed: false, optional: true, required: false
   private _deploymentStyle?: CodedeployDeploymentGroupDeploymentStyle[];
   public get deploymentStyle() {
-    return this._deploymentStyle;
+    return this.interpolationForAttribute('deployment_style') as any;
   }
-  public set deploymentStyle(value: CodedeployDeploymentGroupDeploymentStyle[] | undefined) {
+  public set deploymentStyle(value: CodedeployDeploymentGroupDeploymentStyle[] ) {
     this._deploymentStyle = value;
+  }
+  public resetDeploymentStyle() {
+    this._deploymentStyle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentStyleInput() {
+    return this._deploymentStyle
   }
 
   // ec2_tag_filter - computed: false, optional: true, required: false
   private _ec2TagFilter?: CodedeployDeploymentGroupEc2TagFilter[];
   public get ec2TagFilter() {
-    return this._ec2TagFilter;
+    return this.interpolationForAttribute('ec2_tag_filter') as any;
   }
-  public set ec2TagFilter(value: CodedeployDeploymentGroupEc2TagFilter[] | undefined) {
+  public set ec2TagFilter(value: CodedeployDeploymentGroupEc2TagFilter[] ) {
     this._ec2TagFilter = value;
+  }
+  public resetEc2TagFilter() {
+    this._ec2TagFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ec2TagFilterInput() {
+    return this._ec2TagFilter
   }
 
   // ec2_tag_set - computed: false, optional: true, required: false
   private _ec2TagSet?: CodedeployDeploymentGroupEc2TagSet[];
   public get ec2TagSet() {
-    return this._ec2TagSet;
+    return this.interpolationForAttribute('ec2_tag_set') as any;
   }
-  public set ec2TagSet(value: CodedeployDeploymentGroupEc2TagSet[] | undefined) {
+  public set ec2TagSet(value: CodedeployDeploymentGroupEc2TagSet[] ) {
     this._ec2TagSet = value;
+  }
+  public resetEc2TagSet() {
+    this._ec2TagSet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ec2TagSetInput() {
+    return this._ec2TagSet
   }
 
   // ecs_service - computed: false, optional: true, required: false
   private _ecsService?: CodedeployDeploymentGroupEcsService[];
   public get ecsService() {
-    return this._ecsService;
+    return this.interpolationForAttribute('ecs_service') as any;
   }
-  public set ecsService(value: CodedeployDeploymentGroupEcsService[] | undefined) {
+  public set ecsService(value: CodedeployDeploymentGroupEcsService[] ) {
     this._ecsService = value;
+  }
+  public resetEcsService() {
+    this._ecsService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ecsServiceInput() {
+    return this._ecsService
   }
 
   // load_balancer_info - computed: false, optional: true, required: false
   private _loadBalancerInfo?: CodedeployDeploymentGroupLoadBalancerInfo[];
   public get loadBalancerInfo() {
-    return this._loadBalancerInfo;
+    return this.interpolationForAttribute('load_balancer_info') as any;
   }
-  public set loadBalancerInfo(value: CodedeployDeploymentGroupLoadBalancerInfo[] | undefined) {
+  public set loadBalancerInfo(value: CodedeployDeploymentGroupLoadBalancerInfo[] ) {
     this._loadBalancerInfo = value;
+  }
+  public resetLoadBalancerInfo() {
+    this._loadBalancerInfo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerInfoInput() {
+    return this._loadBalancerInfo
   }
 
   // on_premises_instance_tag_filter - computed: false, optional: true, required: false
   private _onPremisesInstanceTagFilter?: CodedeployDeploymentGroupOnPremisesInstanceTagFilter[];
   public get onPremisesInstanceTagFilter() {
-    return this._onPremisesInstanceTagFilter;
+    return this.interpolationForAttribute('on_premises_instance_tag_filter') as any;
   }
-  public set onPremisesInstanceTagFilter(value: CodedeployDeploymentGroupOnPremisesInstanceTagFilter[] | undefined) {
+  public set onPremisesInstanceTagFilter(value: CodedeployDeploymentGroupOnPremisesInstanceTagFilter[] ) {
     this._onPremisesInstanceTagFilter = value;
+  }
+  public resetOnPremisesInstanceTagFilter() {
+    this._onPremisesInstanceTagFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onPremisesInstanceTagFilterInput() {
+    return this._onPremisesInstanceTagFilter
   }
 
   // trigger_configuration - computed: false, optional: true, required: false
   private _triggerConfiguration?: CodedeployDeploymentGroupTriggerConfiguration[];
   public get triggerConfiguration() {
-    return this._triggerConfiguration;
+    return this.interpolationForAttribute('trigger_configuration') as any;
   }
-  public set triggerConfiguration(value: CodedeployDeploymentGroupTriggerConfiguration[] | undefined) {
+  public set triggerConfiguration(value: CodedeployDeploymentGroupTriggerConfiguration[] ) {
     this._triggerConfiguration = value;
+  }
+  public resetTriggerConfiguration() {
+    this._triggerConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerConfigurationInput() {
+    return this._triggerConfiguration
   }
 
   // =========

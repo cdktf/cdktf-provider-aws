@@ -35,18 +35,14 @@ export class DataAwsIamAccountAlias extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_alias - computed: true, optional: false, required: true
+  // account_alias - computed: true, optional: false, required: false
   public get accountAlias() {
     return this.getStringAttribute('account_alias');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

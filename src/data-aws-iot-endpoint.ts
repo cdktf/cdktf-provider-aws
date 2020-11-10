@@ -37,7 +37,7 @@ export class DataAwsIotEndpoint extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // endpoint_address - computed: true, optional: false, required: true
+  // endpoint_address - computed: true, optional: false, required: false
   public get endpointAddress() {
     return this.getStringAttribute('endpoint_address');
   }
@@ -45,19 +45,22 @@ export class DataAwsIotEndpoint extends TerraformDataSource {
   // endpoint_type - computed: false, optional: true, required: false
   private _endpointType?: string;
   public get endpointType() {
-    return this._endpointType;
+    return this.getStringAttribute('endpoint_type');
   }
-  public set endpointType(value: string | undefined) {
+  public set endpointType(value: string ) {
     this._endpointType = value;
+  }
+  public resetEndpointType() {
+    this._endpointType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointTypeInput() {
+    return this._endpointType
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

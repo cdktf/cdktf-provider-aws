@@ -42,33 +42,37 @@ export class ApiGatewayUsagePlanKey extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key_id - computed: false, optional: false, required: true
   private _keyId: string;
   public get keyId() {
-    return this._keyId;
+    return this.getStringAttribute('key_id');
   }
   public set keyId(value: string) {
     this._keyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId
   }
 
   // key_type - computed: false, optional: false, required: true
   private _keyType: string;
   public get keyType() {
-    return this._keyType;
+    return this.getStringAttribute('key_type');
   }
   public set keyType(value: string) {
     this._keyType = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get keyTypeInput() {
+    return this._keyType
+  }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -76,13 +80,17 @@ export class ApiGatewayUsagePlanKey extends TerraformResource {
   // usage_plan_id - computed: false, optional: false, required: true
   private _usagePlanId: string;
   public get usagePlanId() {
-    return this._usagePlanId;
+    return this.getStringAttribute('usage_plan_id');
   }
   public set usagePlanId(value: string) {
     this._usagePlanId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get usagePlanIdInput() {
+    return this._usagePlanId
+  }
 
-  // value - computed: true, optional: false, required: true
+  // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
   }

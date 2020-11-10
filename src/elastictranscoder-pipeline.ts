@@ -84,7 +84,7 @@ export class ElastictranscoderPipeline extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -92,100 +92,160 @@ export class ElastictranscoderPipeline extends TerraformResource {
   // aws_kms_key_arn - computed: false, optional: true, required: false
   private _awsKmsKeyArn?: string;
   public get awsKmsKeyArn() {
-    return this._awsKmsKeyArn;
+    return this.getStringAttribute('aws_kms_key_arn');
   }
-  public set awsKmsKeyArn(value: string | undefined) {
+  public set awsKmsKeyArn(value: string ) {
     this._awsKmsKeyArn = value;
+  }
+  public resetAwsKmsKeyArn() {
+    this._awsKmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsKmsKeyArnInput() {
+    return this._awsKmsKeyArn
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // input_bucket - computed: false, optional: false, required: true
   private _inputBucket: string;
   public get inputBucket() {
-    return this._inputBucket;
+    return this.getStringAttribute('input_bucket');
   }
   public set inputBucket(value: string) {
     this._inputBucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputBucketInput() {
+    return this._inputBucket
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // output_bucket - computed: true, optional: true, required: false
   private _outputBucket?: string;
   public get outputBucket() {
-    return this._outputBucket ?? this.getStringAttribute('output_bucket');
+    return this.getStringAttribute('output_bucket');
   }
-  public set outputBucket(value: string | undefined) {
+  public set outputBucket(value: string) {
     this._outputBucket = value;
+  }
+  public resetOutputBucket() {
+    this._outputBucket = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputBucketInput() {
+    return this._outputBucket
   }
 
   // role - computed: false, optional: false, required: true
   private _role: string;
   public get role() {
-    return this._role;
+    return this.getStringAttribute('role');
   }
   public set role(value: string) {
     this._role = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleInput() {
+    return this._role
   }
 
   // content_config - computed: false, optional: true, required: false
   private _contentConfig?: ElastictranscoderPipelineContentConfig[];
   public get contentConfig() {
-    return this._contentConfig;
+    return this.interpolationForAttribute('content_config') as any;
   }
-  public set contentConfig(value: ElastictranscoderPipelineContentConfig[] | undefined) {
+  public set contentConfig(value: ElastictranscoderPipelineContentConfig[] ) {
     this._contentConfig = value;
+  }
+  public resetContentConfig() {
+    this._contentConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentConfigInput() {
+    return this._contentConfig
   }
 
   // content_config_permissions - computed: false, optional: true, required: false
   private _contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[];
   public get contentConfigPermissions() {
-    return this._contentConfigPermissions;
+    return this.interpolationForAttribute('content_config_permissions') as any;
   }
-  public set contentConfigPermissions(value: ElastictranscoderPipelineContentConfigPermissions[] | undefined) {
+  public set contentConfigPermissions(value: ElastictranscoderPipelineContentConfigPermissions[] ) {
     this._contentConfigPermissions = value;
+  }
+  public resetContentConfigPermissions() {
+    this._contentConfigPermissions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentConfigPermissionsInput() {
+    return this._contentConfigPermissions
   }
 
   // notifications - computed: false, optional: true, required: false
   private _notifications?: ElastictranscoderPipelineNotifications[];
   public get notifications() {
-    return this._notifications;
+    return this.interpolationForAttribute('notifications') as any;
   }
-  public set notifications(value: ElastictranscoderPipelineNotifications[] | undefined) {
+  public set notifications(value: ElastictranscoderPipelineNotifications[] ) {
     this._notifications = value;
+  }
+  public resetNotifications() {
+    this._notifications = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationsInput() {
+    return this._notifications
   }
 
   // thumbnail_config - computed: false, optional: true, required: false
   private _thumbnailConfig?: ElastictranscoderPipelineThumbnailConfig[];
   public get thumbnailConfig() {
-    return this._thumbnailConfig;
+    return this.interpolationForAttribute('thumbnail_config') as any;
   }
-  public set thumbnailConfig(value: ElastictranscoderPipelineThumbnailConfig[] | undefined) {
+  public set thumbnailConfig(value: ElastictranscoderPipelineThumbnailConfig[] ) {
     this._thumbnailConfig = value;
+  }
+  public resetThumbnailConfig() {
+    this._thumbnailConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thumbnailConfigInput() {
+    return this._thumbnailConfig
   }
 
   // thumbnail_config_permissions - computed: false, optional: true, required: false
   private _thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[];
   public get thumbnailConfigPermissions() {
-    return this._thumbnailConfigPermissions;
+    return this.interpolationForAttribute('thumbnail_config_permissions') as any;
   }
-  public set thumbnailConfigPermissions(value: ElastictranscoderPipelineThumbnailConfigPermissions[] | undefined) {
+  public set thumbnailConfigPermissions(value: ElastictranscoderPipelineThumbnailConfigPermissions[] ) {
     this._thumbnailConfigPermissions = value;
+  }
+  public resetThumbnailConfigPermissions() {
+    this._thumbnailConfigPermissions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thumbnailConfigPermissionsInput() {
+    return this._thumbnailConfigPermissions
   }
 
   // =========
