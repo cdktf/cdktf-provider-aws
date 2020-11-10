@@ -1182,14 +1182,14 @@ caseless@~0.12.0:
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
 cdktf-cli@^0.0:
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.0.17.tgz#a0890c084c41168993924b94cda852176ae48aca"
-  integrity sha512-R/N4dUUMRoKWqso6S4kLAGeRHO3DtwhD3vsMcm/hFIOfzX1/uWqpM62Mc101xSyVwWaRuDfq1wrcg1ZmfnrABQ==
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.0.18.tgz#3ff1b32469d01e4e00ef692a24f0efdb040bd056"
+  integrity sha512-EiNP+NErcV89YapgsWUO1SHeRy4dRuTvry1yMn3KwMgyTYeE6dTHyPhzHRTPaSHx5CJUcq0EyzkALy5GhIjQPg==
   dependencies:
     "@types/node" "^14.0.26"
     "@types/readline-sync" "^1.4.3"
     "@types/uuid" "^8.3.0"
-    cdktf "0.0.17"
+    cdktf "0.0.18"
     chalk "^4.1.0"
     codemaker "^0.22.0"
     constructs "^3.0.0"
@@ -1208,10 +1208,10 @@ cdktf-cli@^0.0:
     uuid "^8.3.0"
     yargs "^15.1.0"
 
-cdktf@0.0.17, cdktf@^0.0:
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.0.17.tgz#9fae8203447ff5d7421d70d639b7f0aec9e2ee2d"
-  integrity sha512-01SDFLHu19S7ZFGkDKQ60pMe4jzWyHeUE7R8ujyOppT8SYrP+yJtw7Fr0/Kk3qfuFOGxicT8220MKXdp1iJJyA==
+cdktf@0.0.18, cdktf@^0.0:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.0.18.tgz#be27db0482c4a4a27098f7c25c4d7fdf2146cc11"
+  integrity sha512-9rlHrY392s05livQ63nYUlPof7jgJ4gMxwkqCv3oSHP+QrCugCSb1Q2r4Zo9UmgkAwV4Gmma9auNy1wYyorWCg==
   dependencies:
     json-stable-stringify "^1.0.1"
 
