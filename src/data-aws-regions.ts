@@ -47,22 +47,25 @@ export class DataAwsRegions extends TerraformDataSource {
   // all_regions - computed: false, optional: true, required: false
   private _allRegions?: boolean;
   public get allRegions() {
-    return this._allRegions;
+    return this.getBooleanAttribute('all_regions');
   }
-  public set allRegions(value: boolean | undefined) {
+  public set allRegions(value: boolean ) {
     this._allRegions = value;
+  }
+  public resetAllRegions() {
+    this._allRegions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allRegionsInput() {
+    return this._allRegions
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // names - computed: true, optional: false, required: true
+  // names - computed: true, optional: false, required: false
   public get names() {
     return this.getListAttribute('names');
   }
@@ -70,10 +73,17 @@ export class DataAwsRegions extends TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsRegionsFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsRegionsFilter[] | undefined) {
+  public set filter(value: DataAwsRegionsFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

@@ -39,21 +39,17 @@ export class DataAwsBackupSelection extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // iam_role_arn - computed: true, optional: false, required: true
+  // iam_role_arn - computed: true, optional: false, required: false
   public get iamRoleArn() {
     return this.getStringAttribute('iam_role_arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -61,13 +57,17 @@ export class DataAwsBackupSelection extends TerraformDataSource {
   // plan_id - computed: false, optional: false, required: true
   private _planId: string;
   public get planId() {
-    return this._planId;
+    return this.getStringAttribute('plan_id');
   }
   public set planId(value: string) {
     this._planId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get planIdInput() {
+    return this._planId
+  }
 
-  // resources - computed: true, optional: false, required: true
+  // resources - computed: true, optional: false, required: false
   public get resources() {
     return this.getListAttribute('resources');
   }
@@ -75,10 +75,14 @@ export class DataAwsBackupSelection extends TerraformDataSource {
   // selection_id - computed: false, optional: false, required: true
   private _selectionId: string;
   public get selectionId() {
-    return this._selectionId;
+    return this.getStringAttribute('selection_id');
   }
   public set selectionId(value: string) {
     this._selectionId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selectionIdInput() {
+    return this._selectionId
   }
 
   // =========

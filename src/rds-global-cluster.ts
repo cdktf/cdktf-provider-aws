@@ -47,7 +47,7 @@ export class RdsGlobalCluster extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -55,69 +55,104 @@ export class RdsGlobalCluster extends TerraformResource {
   // database_name - computed: false, optional: true, required: false
   private _databaseName?: string;
   public get databaseName() {
-    return this._databaseName;
+    return this.getStringAttribute('database_name');
   }
-  public set databaseName(value: string | undefined) {
+  public set databaseName(value: string ) {
     this._databaseName = value;
+  }
+  public resetDatabaseName() {
+    this._databaseName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName
   }
 
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean;
   public get deletionProtection() {
-    return this._deletionProtection;
+    return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | undefined) {
+  public set deletionProtection(value: boolean ) {
     this._deletionProtection = value;
+  }
+  public resetDeletionProtection() {
+    this._deletionProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionInput() {
+    return this._deletionProtection
   }
 
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this._engine;
+    return this.getStringAttribute('engine');
   }
-  public set engine(value: string | undefined) {
+  public set engine(value: string ) {
     this._engine = value;
+  }
+  public resetEngine() {
+    this._engine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this._engineVersion ?? this.getStringAttribute('engine_version');
+    return this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string | undefined) {
+  public set engineVersion(value: string) {
     this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion
   }
 
   // global_cluster_identifier - computed: false, optional: false, required: true
   private _globalClusterIdentifier: string;
   public get globalClusterIdentifier() {
-    return this._globalClusterIdentifier;
+    return this.getStringAttribute('global_cluster_identifier');
   }
   public set globalClusterIdentifier(value: string) {
     this._globalClusterIdentifier = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier
+  }
 
-  // global_cluster_resource_id - computed: true, optional: false, required: true
+  // global_cluster_resource_id - computed: true, optional: false, required: false
   public get globalClusterResourceId() {
     return this.getStringAttribute('global_cluster_resource_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // storage_encrypted - computed: false, optional: true, required: false
   private _storageEncrypted?: boolean;
   public get storageEncrypted() {
-    return this._storageEncrypted;
+    return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean | undefined) {
+  public set storageEncrypted(value: boolean ) {
     this._storageEncrypted = value;
+  }
+  public resetStorageEncrypted() {
+    this._storageEncrypted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageEncryptedInput() {
+    return this._storageEncrypted
   }
 
   // =========

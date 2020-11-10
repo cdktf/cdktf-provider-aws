@@ -45,21 +45,21 @@ export class DataAwsKmsSecret extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // secret - computed: false, optional: false, required: true
   private _secret: DataAwsKmsSecretSecret[];
   public get secret() {
-    return this._secret;
+    return this.interpolationForAttribute('secret') as any;
   }
   public set secret(value: DataAwsKmsSecretSecret[]) {
     this._secret = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretInput() {
+    return this._secret
   }
 
   // =========

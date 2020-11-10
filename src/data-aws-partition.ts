@@ -35,21 +35,17 @@ export class DataAwsPartition extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // dns_suffix - computed: true, optional: false, required: true
+  // dns_suffix - computed: true, optional: false, required: false
   public get dnsSuffix() {
     return this.getStringAttribute('dns_suffix');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // partition - computed: true, optional: false, required: true
+  // partition - computed: true, optional: false, required: false
   public get partition() {
     return this.getStringAttribute('partition');
   }

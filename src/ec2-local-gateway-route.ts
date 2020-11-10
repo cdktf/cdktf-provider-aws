@@ -44,37 +44,45 @@ export class Ec2LocalGatewayRoute extends TerraformResource {
   // destination_cidr_block - computed: false, optional: false, required: true
   private _destinationCidrBlock: string;
   public get destinationCidrBlock() {
-    return this._destinationCidrBlock;
+    return this.getStringAttribute('destination_cidr_block');
   }
   public set destinationCidrBlock(value: string) {
     this._destinationCidrBlock = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get destinationCidrBlockInput() {
+    return this._destinationCidrBlock
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // local_gateway_route_table_id - computed: false, optional: false, required: true
   private _localGatewayRouteTableId: string;
   public get localGatewayRouteTableId() {
-    return this._localGatewayRouteTableId;
+    return this.getStringAttribute('local_gateway_route_table_id');
   }
   public set localGatewayRouteTableId(value: string) {
     this._localGatewayRouteTableId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayRouteTableIdInput() {
+    return this._localGatewayRouteTableId
   }
 
   // local_gateway_virtual_interface_group_id - computed: false, optional: false, required: true
   private _localGatewayVirtualInterfaceGroupId: string;
   public get localGatewayVirtualInterfaceGroupId() {
-    return this._localGatewayVirtualInterfaceGroupId;
+    return this.getStringAttribute('local_gateway_virtual_interface_group_id');
   }
   public set localGatewayVirtualInterfaceGroupId(value: string) {
     this._localGatewayVirtualInterfaceGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayVirtualInterfaceGroupIdInput() {
+    return this._localGatewayVirtualInterfaceGroupId
   }
 
   // =========

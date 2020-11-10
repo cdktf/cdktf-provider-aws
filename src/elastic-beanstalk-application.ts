@@ -50,7 +50,7 @@ export class ElasticBeanstalkApplication extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,46 +58,67 @@ export class ElasticBeanstalkApplication extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // appversion_lifecycle - computed: false, optional: true, required: false
   private _appversionLifecycle?: ElasticBeanstalkApplicationAppversionLifecycle[];
   public get appversionLifecycle() {
-    return this._appversionLifecycle;
+    return this.interpolationForAttribute('appversion_lifecycle') as any;
   }
-  public set appversionLifecycle(value: ElasticBeanstalkApplicationAppversionLifecycle[] | undefined) {
+  public set appversionLifecycle(value: ElasticBeanstalkApplicationAppversionLifecycle[] ) {
     this._appversionLifecycle = value;
+  }
+  public resetAppversionLifecycle() {
+    this._appversionLifecycle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appversionLifecycleInput() {
+    return this._appversionLifecycle
   }
 
   // =========

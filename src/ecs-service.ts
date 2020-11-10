@@ -135,226 +135,387 @@ export class EcsService extends TerraformResource {
   // cluster - computed: true, optional: true, required: false
   private _cluster?: string;
   public get cluster() {
-    return this._cluster ?? this.getStringAttribute('cluster');
+    return this.getStringAttribute('cluster');
   }
-  public set cluster(value: string | undefined) {
+  public set cluster(value: string) {
     this._cluster = value;
+  }
+  public resetCluster() {
+    this._cluster = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterInput() {
+    return this._cluster
   }
 
   // deployment_maximum_percent - computed: false, optional: true, required: false
   private _deploymentMaximumPercent?: number;
   public get deploymentMaximumPercent() {
-    return this._deploymentMaximumPercent;
+    return this.getNumberAttribute('deployment_maximum_percent');
   }
-  public set deploymentMaximumPercent(value: number | undefined) {
+  public set deploymentMaximumPercent(value: number ) {
     this._deploymentMaximumPercent = value;
+  }
+  public resetDeploymentMaximumPercent() {
+    this._deploymentMaximumPercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentMaximumPercentInput() {
+    return this._deploymentMaximumPercent
   }
 
   // deployment_minimum_healthy_percent - computed: false, optional: true, required: false
   private _deploymentMinimumHealthyPercent?: number;
   public get deploymentMinimumHealthyPercent() {
-    return this._deploymentMinimumHealthyPercent;
+    return this.getNumberAttribute('deployment_minimum_healthy_percent');
   }
-  public set deploymentMinimumHealthyPercent(value: number | undefined) {
+  public set deploymentMinimumHealthyPercent(value: number ) {
     this._deploymentMinimumHealthyPercent = value;
+  }
+  public resetDeploymentMinimumHealthyPercent() {
+    this._deploymentMinimumHealthyPercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentMinimumHealthyPercentInput() {
+    return this._deploymentMinimumHealthyPercent
   }
 
   // desired_count - computed: false, optional: true, required: false
   private _desiredCount?: number;
   public get desiredCount() {
-    return this._desiredCount;
+    return this.getNumberAttribute('desired_count');
   }
-  public set desiredCount(value: number | undefined) {
+  public set desiredCount(value: number ) {
     this._desiredCount = value;
+  }
+  public resetDesiredCount() {
+    this._desiredCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredCountInput() {
+    return this._desiredCount
   }
 
   // enable_ecs_managed_tags - computed: false, optional: true, required: false
   private _enableEcsManagedTags?: boolean;
   public get enableEcsManagedTags() {
-    return this._enableEcsManagedTags;
+    return this.getBooleanAttribute('enable_ecs_managed_tags');
   }
-  public set enableEcsManagedTags(value: boolean | undefined) {
+  public set enableEcsManagedTags(value: boolean ) {
     this._enableEcsManagedTags = value;
+  }
+  public resetEnableEcsManagedTags() {
+    this._enableEcsManagedTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableEcsManagedTagsInput() {
+    return this._enableEcsManagedTags
   }
 
   // force_new_deployment - computed: false, optional: true, required: false
   private _forceNewDeployment?: boolean;
   public get forceNewDeployment() {
-    return this._forceNewDeployment;
+    return this.getBooleanAttribute('force_new_deployment');
   }
-  public set forceNewDeployment(value: boolean | undefined) {
+  public set forceNewDeployment(value: boolean ) {
     this._forceNewDeployment = value;
+  }
+  public resetForceNewDeployment() {
+    this._forceNewDeployment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceNewDeploymentInput() {
+    return this._forceNewDeployment
   }
 
   // health_check_grace_period_seconds - computed: false, optional: true, required: false
   private _healthCheckGracePeriodSeconds?: number;
   public get healthCheckGracePeriodSeconds() {
-    return this._healthCheckGracePeriodSeconds;
+    return this.getNumberAttribute('health_check_grace_period_seconds');
   }
-  public set healthCheckGracePeriodSeconds(value: number | undefined) {
+  public set healthCheckGracePeriodSeconds(value: number ) {
     this._healthCheckGracePeriodSeconds = value;
+  }
+  public resetHealthCheckGracePeriodSeconds() {
+    this._healthCheckGracePeriodSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckGracePeriodSecondsInput() {
+    return this._healthCheckGracePeriodSeconds
   }
 
   // iam_role - computed: true, optional: true, required: false
   private _iamRole?: string;
   public get iamRole() {
-    return this._iamRole ?? this.getStringAttribute('iam_role');
+    return this.getStringAttribute('iam_role');
   }
-  public set iamRole(value: string | undefined) {
+  public set iamRole(value: string) {
     this._iamRole = value;
+  }
+  public resetIamRole() {
+    this._iamRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamRoleInput() {
+    return this._iamRole
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // launch_type - computed: true, optional: true, required: false
   private _launchType?: string;
   public get launchType() {
-    return this._launchType ?? this.getStringAttribute('launch_type');
+    return this.getStringAttribute('launch_type');
   }
-  public set launchType(value: string | undefined) {
+  public set launchType(value: string) {
     this._launchType = value;
+  }
+  public resetLaunchType() {
+    this._launchType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchTypeInput() {
+    return this._launchType
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // platform_version - computed: true, optional: true, required: false
   private _platformVersion?: string;
   public get platformVersion() {
-    return this._platformVersion ?? this.getStringAttribute('platform_version');
+    return this.getStringAttribute('platform_version');
   }
-  public set platformVersion(value: string | undefined) {
+  public set platformVersion(value: string) {
     this._platformVersion = value;
+  }
+  public resetPlatformVersion() {
+    this._platformVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get platformVersionInput() {
+    return this._platformVersion
   }
 
   // propagate_tags - computed: false, optional: true, required: false
   private _propagateTags?: string;
   public get propagateTags() {
-    return this._propagateTags;
+    return this.getStringAttribute('propagate_tags');
   }
-  public set propagateTags(value: string | undefined) {
+  public set propagateTags(value: string ) {
     this._propagateTags = value;
+  }
+  public resetPropagateTags() {
+    this._propagateTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propagateTagsInput() {
+    return this._propagateTags
   }
 
   // scheduling_strategy - computed: false, optional: true, required: false
   private _schedulingStrategy?: string;
   public get schedulingStrategy() {
-    return this._schedulingStrategy;
+    return this.getStringAttribute('scheduling_strategy');
   }
-  public set schedulingStrategy(value: string | undefined) {
+  public set schedulingStrategy(value: string ) {
     this._schedulingStrategy = value;
+  }
+  public resetSchedulingStrategy() {
+    this._schedulingStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulingStrategyInput() {
+    return this._schedulingStrategy
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // task_definition - computed: false, optional: true, required: false
   private _taskDefinition?: string;
   public get taskDefinition() {
-    return this._taskDefinition;
+    return this.getStringAttribute('task_definition');
   }
-  public set taskDefinition(value: string | undefined) {
+  public set taskDefinition(value: string ) {
     this._taskDefinition = value;
+  }
+  public resetTaskDefinition() {
+    this._taskDefinition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get taskDefinitionInput() {
+    return this._taskDefinition
   }
 
   // capacity_provider_strategy - computed: false, optional: true, required: false
   private _capacityProviderStrategy?: EcsServiceCapacityProviderStrategy[];
   public get capacityProviderStrategy() {
-    return this._capacityProviderStrategy;
+    return this.interpolationForAttribute('capacity_provider_strategy') as any;
   }
-  public set capacityProviderStrategy(value: EcsServiceCapacityProviderStrategy[] | undefined) {
+  public set capacityProviderStrategy(value: EcsServiceCapacityProviderStrategy[] ) {
     this._capacityProviderStrategy = value;
+  }
+  public resetCapacityProviderStrategy() {
+    this._capacityProviderStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityProviderStrategyInput() {
+    return this._capacityProviderStrategy
   }
 
   // deployment_controller - computed: false, optional: true, required: false
   private _deploymentController?: EcsServiceDeploymentController[];
   public get deploymentController() {
-    return this._deploymentController;
+    return this.interpolationForAttribute('deployment_controller') as any;
   }
-  public set deploymentController(value: EcsServiceDeploymentController[] | undefined) {
+  public set deploymentController(value: EcsServiceDeploymentController[] ) {
     this._deploymentController = value;
+  }
+  public resetDeploymentController() {
+    this._deploymentController = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentControllerInput() {
+    return this._deploymentController
   }
 
   // load_balancer - computed: false, optional: true, required: false
   private _loadBalancer?: EcsServiceLoadBalancer[];
   public get loadBalancer() {
-    return this._loadBalancer;
+    return this.interpolationForAttribute('load_balancer') as any;
   }
-  public set loadBalancer(value: EcsServiceLoadBalancer[] | undefined) {
+  public set loadBalancer(value: EcsServiceLoadBalancer[] ) {
     this._loadBalancer = value;
+  }
+  public resetLoadBalancer() {
+    this._loadBalancer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerInput() {
+    return this._loadBalancer
   }
 
   // network_configuration - computed: false, optional: true, required: false
   private _networkConfiguration?: EcsServiceNetworkConfiguration[];
   public get networkConfiguration() {
-    return this._networkConfiguration;
+    return this.interpolationForAttribute('network_configuration') as any;
   }
-  public set networkConfiguration(value: EcsServiceNetworkConfiguration[] | undefined) {
+  public set networkConfiguration(value: EcsServiceNetworkConfiguration[] ) {
     this._networkConfiguration = value;
+  }
+  public resetNetworkConfiguration() {
+    this._networkConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkConfigurationInput() {
+    return this._networkConfiguration
   }
 
   // ordered_placement_strategy - computed: false, optional: true, required: false
   private _orderedPlacementStrategy?: EcsServiceOrderedPlacementStrategy[];
   public get orderedPlacementStrategy() {
-    return this._orderedPlacementStrategy;
+    return this.interpolationForAttribute('ordered_placement_strategy') as any;
   }
-  public set orderedPlacementStrategy(value: EcsServiceOrderedPlacementStrategy[] | undefined) {
+  public set orderedPlacementStrategy(value: EcsServiceOrderedPlacementStrategy[] ) {
     this._orderedPlacementStrategy = value;
+  }
+  public resetOrderedPlacementStrategy() {
+    this._orderedPlacementStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orderedPlacementStrategyInput() {
+    return this._orderedPlacementStrategy
   }
 
   // placement_constraints - computed: false, optional: true, required: false
   private _placementConstraints?: EcsServicePlacementConstraints[];
   public get placementConstraints() {
-    return this._placementConstraints;
+    return this.interpolationForAttribute('placement_constraints') as any;
   }
-  public set placementConstraints(value: EcsServicePlacementConstraints[] | undefined) {
+  public set placementConstraints(value: EcsServicePlacementConstraints[] ) {
     this._placementConstraints = value;
+  }
+  public resetPlacementConstraints() {
+    this._placementConstraints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementConstraintsInput() {
+    return this._placementConstraints
   }
 
   // placement_strategy - computed: false, optional: true, required: false
   private _placementStrategy?: EcsServicePlacementStrategy[];
   public get placementStrategy() {
-    return this._placementStrategy;
+    return this.interpolationForAttribute('placement_strategy') as any;
   }
-  public set placementStrategy(value: EcsServicePlacementStrategy[] | undefined) {
+  public set placementStrategy(value: EcsServicePlacementStrategy[] ) {
     this._placementStrategy = value;
+  }
+  public resetPlacementStrategy() {
+    this._placementStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementStrategyInput() {
+    return this._placementStrategy
   }
 
   // service_registries - computed: false, optional: true, required: false
   private _serviceRegistries?: EcsServiceServiceRegistries[];
   public get serviceRegistries() {
-    return this._serviceRegistries;
+    return this.interpolationForAttribute('service_registries') as any;
   }
-  public set serviceRegistries(value: EcsServiceServiceRegistries[] | undefined) {
+  public set serviceRegistries(value: EcsServiceServiceRegistries[] ) {
     this._serviceRegistries = value;
+  }
+  public resetServiceRegistries() {
+    this._serviceRegistries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRegistriesInput() {
+    return this._serviceRegistries
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EcsServiceTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: EcsServiceTimeouts | undefined) {
+  public set timeouts(value: EcsServiceTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

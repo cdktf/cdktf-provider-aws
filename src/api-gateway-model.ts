@@ -48,55 +48,77 @@ export class ApiGatewayModel extends TerraformResource {
   // content_type - computed: false, optional: false, required: true
   private _contentType: string;
   public get contentType() {
-    return this._contentType;
+    return this.getStringAttribute('content_type');
   }
   public set contentType(value: string) {
     this._contentType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this._restApiId;
+    return this.getStringAttribute('rest_api_id');
   }
   public set restApiId(value: string) {
     this._restApiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restApiIdInput() {
+    return this._restApiId
   }
 
   // schema - computed: false, optional: true, required: false
   private _schema?: string;
   public get schema() {
-    return this._schema;
+    return this.getStringAttribute('schema');
   }
-  public set schema(value: string | undefined) {
+  public set schema(value: string ) {
     this._schema = value;
+  }
+  public resetSchema() {
+    this._schema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema
   }
 
   // =========

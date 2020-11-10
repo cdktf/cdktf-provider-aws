@@ -45,15 +45,11 @@ export class DataAwsEc2InstanceTypeOfferings extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // instance_types - computed: true, optional: false, required: true
+  // instance_types - computed: true, optional: false, required: false
   public get instanceTypes() {
     return this.getListAttribute('instance_types');
   }
@@ -61,19 +57,33 @@ export class DataAwsEc2InstanceTypeOfferings extends TerraformDataSource {
   // location_type - computed: false, optional: true, required: false
   private _locationType?: string;
   public get locationType() {
-    return this._locationType;
+    return this.getStringAttribute('location_type');
   }
-  public set locationType(value: string | undefined) {
+  public set locationType(value: string ) {
     this._locationType = value;
+  }
+  public resetLocationType() {
+    this._locationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationTypeInput() {
+    return this._locationType
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2InstanceTypeOfferingsFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2InstanceTypeOfferingsFilter[] | undefined) {
+  public set filter(value: DataAwsEc2InstanceTypeOfferingsFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

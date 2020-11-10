@@ -46,46 +46,53 @@ export class VpcEndpointService extends TerraformResource {
   // acceptance_required - computed: false, optional: false, required: true
   private _acceptanceRequired: boolean;
   public get acceptanceRequired() {
-    return this._acceptanceRequired;
+    return this.getBooleanAttribute('acceptance_required');
   }
   public set acceptanceRequired(value: boolean) {
     this._acceptanceRequired = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceptanceRequiredInput() {
+    return this._acceptanceRequired
   }
 
   // allowed_principals - computed: true, optional: true, required: false
   private _allowedPrincipals?: string[];
   public get allowedPrincipals() {
-    return this._allowedPrincipals ?? this.getListAttribute('allowed_principals');
+    return this.getListAttribute('allowed_principals');
   }
-  public set allowedPrincipals(value: string[] | undefined) {
+  public set allowedPrincipals(value: string[]) {
     this._allowedPrincipals = value;
   }
+  public resetAllowedPrincipals() {
+    this._allowedPrincipals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedPrincipalsInput() {
+    return this._allowedPrincipals
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zones - computed: true, optional: false, required: true
+  // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
 
-  // base_endpoint_dns_names - computed: true, optional: false, required: true
+  // base_endpoint_dns_names - computed: true, optional: false, required: false
   public get baseEndpointDnsNames() {
     return this.getListAttribute('base_endpoint_dns_names');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // manages_vpc_endpoints - computed: true, optional: false, required: true
+  // manages_vpc_endpoints - computed: true, optional: false, required: false
   public get managesVpcEndpoints() {
     return this.getBooleanAttribute('manages_vpc_endpoints');
   }
@@ -93,28 +100,32 @@ export class VpcEndpointService extends TerraformResource {
   // network_load_balancer_arns - computed: false, optional: false, required: true
   private _networkLoadBalancerArns: string[];
   public get networkLoadBalancerArns() {
-    return this._networkLoadBalancerArns;
+    return this.getListAttribute('network_load_balancer_arns');
   }
   public set networkLoadBalancerArns(value: string[]) {
     this._networkLoadBalancerArns = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get networkLoadBalancerArnsInput() {
+    return this._networkLoadBalancerArns
+  }
 
-  // private_dns_name - computed: true, optional: false, required: true
+  // private_dns_name - computed: true, optional: false, required: false
   public get privateDnsName() {
     return this.getStringAttribute('private_dns_name');
   }
 
-  // service_name - computed: true, optional: false, required: true
+  // service_name - computed: true, optional: false, required: false
   public get serviceName() {
     return this.getStringAttribute('service_name');
   }
 
-  // service_type - computed: true, optional: false, required: true
+  // service_type - computed: true, optional: false, required: false
   public get serviceType() {
     return this.getStringAttribute('service_type');
   }
 
-  // state - computed: true, optional: false, required: true
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
@@ -122,10 +133,17 @@ export class VpcEndpointService extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

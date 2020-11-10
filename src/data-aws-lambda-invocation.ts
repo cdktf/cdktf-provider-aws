@@ -45,45 +45,56 @@ export class DataAwsLambdaInvocation extends TerraformDataSource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this._functionName;
+    return this.getStringAttribute('function_name');
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get functionNameInput() {
+    return this._functionName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // input - computed: false, optional: false, required: true
   private _input: string;
   public get input() {
-    return this._input;
+    return this.getStringAttribute('input');
   }
   public set input(value: string) {
     this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input
   }
 
   // qualifier - computed: false, optional: true, required: false
   private _qualifier?: string;
   public get qualifier() {
-    return this._qualifier;
+    return this.getStringAttribute('qualifier');
   }
-  public set qualifier(value: string | undefined) {
+  public set qualifier(value: string ) {
     this._qualifier = value;
   }
+  public resetQualifier() {
+    this._qualifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get qualifierInput() {
+    return this._qualifier
+  }
 
-  // result - computed: true, optional: false, required: true
+  // result - computed: true, optional: false, required: false
   public get result() {
     return this.getStringAttribute('result');
   }
 
-  // result_map - computed: true, optional: false, required: true
+  // result_map - computed: true, optional: false, required: false
   public resultMap(key: string): string {
     return new StringMap(this, 'result_map').lookup(key);
   }

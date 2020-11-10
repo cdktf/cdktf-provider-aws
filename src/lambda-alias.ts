@@ -49,7 +49,7 @@ export class LambdaAlias extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -57,40 +57,51 @@ export class LambdaAlias extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this._functionName;
+    return this.getStringAttribute('function_name');
   }
   public set functionName(value: string) {
     this._functionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionNameInput() {
+    return this._functionName
   }
 
   // function_version - computed: false, optional: false, required: true
   private _functionVersion: string;
   public get functionVersion() {
-    return this._functionVersion;
+    return this.getStringAttribute('function_version');
   }
   public set functionVersion(value: string) {
     this._functionVersion = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get functionVersionInput() {
+    return this._functionVersion
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // invoke_arn - computed: true, optional: false, required: true
+  // invoke_arn - computed: true, optional: false, required: false
   public get invokeArn() {
     return this.getStringAttribute('invoke_arn');
   }
@@ -98,19 +109,30 @@ export class LambdaAlias extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // routing_config - computed: false, optional: true, required: false
   private _routingConfig?: LambdaAliasRoutingConfig[];
   public get routingConfig() {
-    return this._routingConfig;
+    return this.interpolationForAttribute('routing_config') as any;
   }
-  public set routingConfig(value: LambdaAliasRoutingConfig[] | undefined) {
+  public set routingConfig(value: LambdaAliasRoutingConfig[] ) {
     this._routingConfig = value;
+  }
+  public resetRoutingConfig() {
+    this._routingConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routingConfigInput() {
+    return this._routingConfig
   }
 
   // =========

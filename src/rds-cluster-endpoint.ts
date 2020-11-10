@@ -47,7 +47,7 @@ export class RdsClusterEndpoint extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -55,31 +55,43 @@ export class RdsClusterEndpoint extends TerraformResource {
   // cluster_endpoint_identifier - computed: false, optional: false, required: true
   private _clusterEndpointIdentifier: string;
   public get clusterEndpointIdentifier() {
-    return this._clusterEndpointIdentifier;
+    return this.getStringAttribute('cluster_endpoint_identifier');
   }
   public set clusterEndpointIdentifier(value: string) {
     this._clusterEndpointIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterEndpointIdentifierInput() {
+    return this._clusterEndpointIdentifier
   }
 
   // cluster_identifier - computed: false, optional: false, required: true
   private _clusterIdentifier: string;
   public get clusterIdentifier() {
-    return this._clusterIdentifier;
+    return this.getStringAttribute('cluster_identifier');
   }
   public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdentifierInput() {
+    return this._clusterIdentifier
   }
 
   // custom_endpoint_type - computed: false, optional: false, required: true
   private _customEndpointType: string;
   public get customEndpointType() {
-    return this._customEndpointType;
+    return this.getStringAttribute('custom_endpoint_type');
   }
   public set customEndpointType(value: string) {
     this._customEndpointType = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get customEndpointTypeInput() {
+    return this._customEndpointType
+  }
 
-  // endpoint - computed: true, optional: false, required: true
+  // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -87,37 +99,54 @@ export class RdsClusterEndpoint extends TerraformResource {
   // excluded_members - computed: false, optional: true, required: false
   private _excludedMembers?: string[];
   public get excludedMembers() {
-    return this._excludedMembers;
+    return this.getListAttribute('excluded_members');
   }
-  public set excludedMembers(value: string[] | undefined) {
+  public set excludedMembers(value: string[] ) {
     this._excludedMembers = value;
+  }
+  public resetExcludedMembers() {
+    this._excludedMembers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedMembersInput() {
+    return this._excludedMembers
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // static_members - computed: false, optional: true, required: false
   private _staticMembers?: string[];
   public get staticMembers() {
-    return this._staticMembers;
+    return this.getListAttribute('static_members');
   }
-  public set staticMembers(value: string[] | undefined) {
+  public set staticMembers(value: string[] ) {
     this._staticMembers = value;
+  }
+  public resetStaticMembers() {
+    this._staticMembers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticMembersInput() {
+    return this._staticMembers
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

@@ -13,22 +13,22 @@ export interface DataAwsIamGroupConfig extends TerraformMetaArguments {
 }
 export class DataAwsIamGroupUsers extends ComplexComputedList {
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // user_id - computed: true, optional: false, required: true
+  // user_id - computed: true, optional: false, required: false
   public get userId() {
     return this.getStringAttribute('user_id');
   }
 
-  // user_name - computed: true, optional: false, required: true
+  // user_name - computed: true, optional: false, required: false
   public get userName() {
     return this.getStringAttribute('user_name');
   }
@@ -60,12 +60,12 @@ export class DataAwsIamGroup extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // group_id - computed: true, optional: false, required: true
+  // group_id - computed: true, optional: false, required: false
   public get groupId() {
     return this.getStringAttribute('group_id');
   }
@@ -73,27 +73,27 @@ export class DataAwsIamGroup extends TerraformDataSource {
   // group_name - computed: false, optional: false, required: true
   private _groupName: string;
   public get groupName() {
-    return this._groupName;
+    return this.getStringAttribute('group_name');
   }
   public set groupName(value: string) {
     this._groupName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get groupNameInput() {
+    return this._groupName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // users - computed: true, optional: false, required: true
+  // users - computed: true, optional: false, required: false
   public users(index: string) {
     return new DataAwsIamGroupUsers(this, 'users', index);
   }

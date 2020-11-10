@@ -59,7 +59,7 @@ export class EksFargateProfile extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -67,40 +67,48 @@ export class EksFargateProfile extends TerraformResource {
   // cluster_name - computed: false, optional: false, required: true
   private _clusterName: string;
   public get clusterName() {
-    return this._clusterName;
+    return this.getStringAttribute('cluster_name');
   }
   public set clusterName(value: string) {
     this._clusterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterNameInput() {
+    return this._clusterName
   }
 
   // fargate_profile_name - computed: false, optional: false, required: true
   private _fargateProfileName: string;
   public get fargateProfileName() {
-    return this._fargateProfileName;
+    return this.getStringAttribute('fargate_profile_name');
   }
   public set fargateProfileName(value: string) {
     this._fargateProfileName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fargateProfileNameInput() {
+    return this._fargateProfileName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // pod_execution_role_arn - computed: false, optional: false, required: true
   private _podExecutionRoleArn: string;
   public get podExecutionRoleArn() {
-    return this._podExecutionRoleArn;
+    return this.getStringAttribute('pod_execution_role_arn');
   }
   public set podExecutionRoleArn(value: string) {
     this._podExecutionRoleArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get podExecutionRoleArnInput() {
+    return this._podExecutionRoleArn
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -108,37 +116,62 @@ export class EksFargateProfile extends TerraformResource {
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[];
   public get subnetIds() {
-    return this._subnetIds;
+    return this.getListAttribute('subnet_ids');
   }
-  public set subnetIds(value: string[] | undefined) {
+  public set subnetIds(value: string[] ) {
     this._subnetIds = value;
+  }
+  public resetSubnetIds() {
+    this._subnetIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // selector - computed: false, optional: false, required: true
   private _selector: EksFargateProfileSelector[];
   public get selector() {
-    return this._selector;
+    return this.interpolationForAttribute('selector') as any;
   }
   public set selector(value: EksFargateProfileSelector[]) {
     this._selector = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selectorInput() {
+    return this._selector
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EksFargateProfileTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: EksFargateProfileTimeouts | undefined) {
+  public set timeouts(value: EksFargateProfileTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

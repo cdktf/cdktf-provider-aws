@@ -43,7 +43,7 @@ export class OrganizationsPolicy extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -51,46 +51,64 @@ export class OrganizationsPolicy extends TerraformResource {
   // content - computed: false, optional: false, required: true
   private _content: string;
   public get content() {
-    return this._content;
+    return this.getStringAttribute('content');
   }
   public set content(value: string) {
     this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // type - computed: false, optional: true, required: false
   private _type?: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string ) {
     this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // =========

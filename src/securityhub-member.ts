@@ -44,45 +44,56 @@ export class SecurityhubMember extends TerraformResource {
   // account_id - computed: false, optional: false, required: true
   private _accountId: string;
   public get accountId() {
-    return this._accountId;
+    return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId
   }
 
   // email - computed: false, optional: false, required: true
   private _email: string;
   public get email() {
-    return this._email;
+    return this.getStringAttribute('email');
   }
   public set email(value: string) {
     this._email = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // invite - computed: false, optional: true, required: false
   private _invite?: boolean;
   public get invite() {
-    return this._invite;
+    return this.getBooleanAttribute('invite');
   }
-  public set invite(value: boolean | undefined) {
+  public set invite(value: boolean ) {
     this._invite = value;
   }
+  public resetInvite() {
+    this._invite = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inviteInput() {
+    return this._invite
+  }
 
-  // master_id - computed: true, optional: false, required: true
+  // master_id - computed: true, optional: false, required: false
   public get masterId() {
     return this.getStringAttribute('master_id');
   }
 
-  // member_status - computed: true, optional: false, required: true
+  // member_status - computed: true, optional: false, required: false
   public get memberStatus() {
     return this.getStringAttribute('member_status');
   }

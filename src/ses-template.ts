@@ -46,46 +46,67 @@ export class SesTemplate extends TerraformResource {
   // html - computed: false, optional: true, required: false
   private _html?: string;
   public get html() {
-    return this._html;
+    return this.getStringAttribute('html');
   }
-  public set html(value: string | undefined) {
+  public set html(value: string ) {
     this._html = value;
+  }
+  public resetHtml() {
+    this._html = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get htmlInput() {
+    return this._html
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // subject - computed: false, optional: true, required: false
   private _subject?: string;
   public get subject() {
-    return this._subject;
+    return this.getStringAttribute('subject');
   }
-  public set subject(value: string | undefined) {
+  public set subject(value: string ) {
     this._subject = value;
+  }
+  public resetSubject() {
+    this._subject = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subjectInput() {
+    return this._subject
   }
 
   // text - computed: false, optional: true, required: false
   private _text?: string;
   public get text() {
-    return this._text;
+    return this.getStringAttribute('text');
   }
-  public set text(value: string | undefined) {
+  public set text(value: string ) {
     this._text = value;
+  }
+  public resetText() {
+    this._text = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textInput() {
+    return this._text
   }
 
   // =========

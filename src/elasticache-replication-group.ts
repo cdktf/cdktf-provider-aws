@@ -105,58 +105,100 @@ export class ElasticacheReplicationGroup extends TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this._applyImmediately ?? this.getBooleanAttribute('apply_immediately');
+    return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | undefined) {
+  public set applyImmediately(value: boolean) {
     this._applyImmediately = value;
+  }
+  public resetApplyImmediately() {
+    this._applyImmediately = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyImmediatelyInput() {
+    return this._applyImmediately
   }
 
   // at_rest_encryption_enabled - computed: false, optional: true, required: false
   private _atRestEncryptionEnabled?: boolean;
   public get atRestEncryptionEnabled() {
-    return this._atRestEncryptionEnabled;
+    return this.getBooleanAttribute('at_rest_encryption_enabled');
   }
-  public set atRestEncryptionEnabled(value: boolean | undefined) {
+  public set atRestEncryptionEnabled(value: boolean ) {
     this._atRestEncryptionEnabled = value;
+  }
+  public resetAtRestEncryptionEnabled() {
+    this._atRestEncryptionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get atRestEncryptionEnabledInput() {
+    return this._atRestEncryptionEnabled
   }
 
   // auth_token - computed: false, optional: true, required: false
   private _authToken?: string;
   public get authToken() {
-    return this._authToken;
+    return this.getStringAttribute('auth_token');
   }
-  public set authToken(value: string | undefined) {
+  public set authToken(value: string ) {
     this._authToken = value;
+  }
+  public resetAuthToken() {
+    this._authToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authTokenInput() {
+    return this._authToken
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
   private _autoMinorVersionUpgrade?: boolean;
   public get autoMinorVersionUpgrade() {
-    return this._autoMinorVersionUpgrade;
+    return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | undefined) {
+  public set autoMinorVersionUpgrade(value: boolean ) {
     this._autoMinorVersionUpgrade = value;
+  }
+  public resetAutoMinorVersionUpgrade() {
+    this._autoMinorVersionUpgrade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoMinorVersionUpgradeInput() {
+    return this._autoMinorVersionUpgrade
   }
 
   // automatic_failover_enabled - computed: false, optional: true, required: false
   private _automaticFailoverEnabled?: boolean;
   public get automaticFailoverEnabled() {
-    return this._automaticFailoverEnabled;
+    return this.getBooleanAttribute('automatic_failover_enabled');
   }
-  public set automaticFailoverEnabled(value: boolean | undefined) {
+  public set automaticFailoverEnabled(value: boolean ) {
     this._automaticFailoverEnabled = value;
+  }
+  public resetAutomaticFailoverEnabled() {
+    this._automaticFailoverEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get automaticFailoverEnabledInput() {
+    return this._automaticFailoverEnabled
   }
 
   // availability_zones - computed: false, optional: true, required: false
   private _availabilityZones?: string[];
   public get availabilityZones() {
-    return this._availabilityZones;
+    return this.getListAttribute('availability_zones');
   }
-  public set availabilityZones(value: string[] | undefined) {
+  public set availabilityZones(value: string[] ) {
     this._availabilityZones = value;
   }
+  public resetAvailabilityZones() {
+    this._availabilityZones = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZonesInput() {
+    return this._availabilityZones
+  }
 
-  // configuration_endpoint_address - computed: true, optional: false, required: true
+  // configuration_endpoint_address - computed: true, optional: false, required: false
   public get configurationEndpointAddress() {
     return this.getStringAttribute('configuration_endpoint_address');
   }
@@ -164,49 +206,73 @@ export class ElasticacheReplicationGroup extends TerraformResource {
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this._engine;
+    return this.getStringAttribute('engine');
   }
-  public set engine(value: string | undefined) {
+  public set engine(value: string ) {
     this._engine = value;
+  }
+  public resetEngine() {
+    this._engine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this._engineVersion ?? this.getStringAttribute('engine_version');
+    return this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string | undefined) {
+  public set engineVersion(value: string) {
     this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId;
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string ) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // maintenance_window - computed: true, optional: true, required: false
   private _maintenanceWindow?: string;
   public get maintenanceWindow() {
-    return this._maintenanceWindow ?? this.getStringAttribute('maintenance_window');
+    return this.getStringAttribute('maintenance_window');
   }
-  public set maintenanceWindow(value: string | undefined) {
+  public set maintenanceWindow(value: string) {
     this._maintenanceWindow = value;
   }
+  public resetMaintenanceWindow() {
+    this._maintenanceWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceWindowInput() {
+    return this._maintenanceWindow
+  }
 
-  // member_clusters - computed: true, optional: false, required: true
+  // member_clusters - computed: true, optional: false, required: false
   public get memberClusters() {
     return this.getListAttribute('member_clusters');
   }
@@ -214,49 +280,84 @@ export class ElasticacheReplicationGroup extends TerraformResource {
   // node_type - computed: true, optional: true, required: false
   private _nodeType?: string;
   public get nodeType() {
-    return this._nodeType ?? this.getStringAttribute('node_type');
+    return this.getStringAttribute('node_type');
   }
-  public set nodeType(value: string | undefined) {
+  public set nodeType(value: string) {
     this._nodeType = value;
+  }
+  public resetNodeType() {
+    this._nodeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeTypeInput() {
+    return this._nodeType
   }
 
   // notification_topic_arn - computed: false, optional: true, required: false
   private _notificationTopicArn?: string;
   public get notificationTopicArn() {
-    return this._notificationTopicArn;
+    return this.getStringAttribute('notification_topic_arn');
   }
-  public set notificationTopicArn(value: string | undefined) {
+  public set notificationTopicArn(value: string ) {
     this._notificationTopicArn = value;
+  }
+  public resetNotificationTopicArn() {
+    this._notificationTopicArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationTopicArnInput() {
+    return this._notificationTopicArn
   }
 
   // number_cache_clusters - computed: true, optional: true, required: false
   private _numberCacheClusters?: number;
   public get numberCacheClusters() {
-    return this._numberCacheClusters ?? this.getNumberAttribute('number_cache_clusters');
+    return this.getNumberAttribute('number_cache_clusters');
   }
-  public set numberCacheClusters(value: number | undefined) {
+  public set numberCacheClusters(value: number) {
     this._numberCacheClusters = value;
+  }
+  public resetNumberCacheClusters() {
+    this._numberCacheClusters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberCacheClustersInput() {
+    return this._numberCacheClusters
   }
 
   // parameter_group_name - computed: true, optional: true, required: false
   private _parameterGroupName?: string;
   public get parameterGroupName() {
-    return this._parameterGroupName ?? this.getStringAttribute('parameter_group_name');
+    return this.getStringAttribute('parameter_group_name');
   }
-  public set parameterGroupName(value: string | undefined) {
+  public set parameterGroupName(value: string) {
     this._parameterGroupName = value;
+  }
+  public resetParameterGroupName() {
+    this._parameterGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterGroupNameInput() {
+    return this._parameterGroupName
   }
 
   // port - computed: false, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this._port;
+    return this.getNumberAttribute('port');
   }
-  public set port(value: number | undefined) {
+  public set port(value: number ) {
     this._port = value;
   }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port
+  }
 
-  // primary_endpoint_address - computed: true, optional: false, required: true
+  // primary_endpoint_address - computed: true, optional: false, required: false
   public get primaryEndpointAddress() {
     return this.getStringAttribute('primary_endpoint_address');
   }
@@ -264,118 +365,203 @@ export class ElasticacheReplicationGroup extends TerraformResource {
   // replication_group_description - computed: false, optional: false, required: true
   private _replicationGroupDescription: string;
   public get replicationGroupDescription() {
-    return this._replicationGroupDescription;
+    return this.getStringAttribute('replication_group_description');
   }
   public set replicationGroupDescription(value: string) {
     this._replicationGroupDescription = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationGroupDescriptionInput() {
+    return this._replicationGroupDescription
   }
 
   // replication_group_id - computed: false, optional: false, required: true
   private _replicationGroupId: string;
   public get replicationGroupId() {
-    return this._replicationGroupId;
+    return this.getStringAttribute('replication_group_id');
   }
   public set replicationGroupId(value: string) {
     this._replicationGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationGroupIdInput() {
+    return this._replicationGroupId
   }
 
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[];
   public get securityGroupIds() {
-    return this._securityGroupIds ?? this.getListAttribute('security_group_ids');
+    return this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[] | undefined) {
+  public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds
   }
 
   // security_group_names - computed: true, optional: true, required: false
   private _securityGroupNames?: string[];
   public get securityGroupNames() {
-    return this._securityGroupNames ?? this.getListAttribute('security_group_names');
+    return this.getListAttribute('security_group_names');
   }
-  public set securityGroupNames(value: string[] | undefined) {
+  public set securityGroupNames(value: string[]) {
     this._securityGroupNames = value;
+  }
+  public resetSecurityGroupNames() {
+    this._securityGroupNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupNamesInput() {
+    return this._securityGroupNames
   }
 
   // snapshot_arns - computed: false, optional: true, required: false
   private _snapshotArns?: string[];
   public get snapshotArns() {
-    return this._snapshotArns;
+    return this.getListAttribute('snapshot_arns');
   }
-  public set snapshotArns(value: string[] | undefined) {
+  public set snapshotArns(value: string[] ) {
     this._snapshotArns = value;
+  }
+  public resetSnapshotArns() {
+    this._snapshotArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotArnsInput() {
+    return this._snapshotArns
   }
 
   // snapshot_name - computed: false, optional: true, required: false
   private _snapshotName?: string;
   public get snapshotName() {
-    return this._snapshotName;
+    return this.getStringAttribute('snapshot_name');
   }
-  public set snapshotName(value: string | undefined) {
+  public set snapshotName(value: string ) {
     this._snapshotName = value;
+  }
+  public resetSnapshotName() {
+    this._snapshotName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotNameInput() {
+    return this._snapshotName
   }
 
   // snapshot_retention_limit - computed: false, optional: true, required: false
   private _snapshotRetentionLimit?: number;
   public get snapshotRetentionLimit() {
-    return this._snapshotRetentionLimit;
+    return this.getNumberAttribute('snapshot_retention_limit');
   }
-  public set snapshotRetentionLimit(value: number | undefined) {
+  public set snapshotRetentionLimit(value: number ) {
     this._snapshotRetentionLimit = value;
+  }
+  public resetSnapshotRetentionLimit() {
+    this._snapshotRetentionLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotRetentionLimitInput() {
+    return this._snapshotRetentionLimit
   }
 
   // snapshot_window - computed: true, optional: true, required: false
   private _snapshotWindow?: string;
   public get snapshotWindow() {
-    return this._snapshotWindow ?? this.getStringAttribute('snapshot_window');
+    return this.getStringAttribute('snapshot_window');
   }
-  public set snapshotWindow(value: string | undefined) {
+  public set snapshotWindow(value: string) {
     this._snapshotWindow = value;
+  }
+  public resetSnapshotWindow() {
+    this._snapshotWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotWindowInput() {
+    return this._snapshotWindow
   }
 
   // subnet_group_name - computed: true, optional: true, required: false
   private _subnetGroupName?: string;
   public get subnetGroupName() {
-    return this._subnetGroupName ?? this.getStringAttribute('subnet_group_name');
+    return this.getStringAttribute('subnet_group_name');
   }
-  public set subnetGroupName(value: string | undefined) {
+  public set subnetGroupName(value: string) {
     this._subnetGroupName = value;
+  }
+  public resetSubnetGroupName() {
+    this._subnetGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetGroupNameInput() {
+    return this._subnetGroupName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // transit_encryption_enabled - computed: false, optional: true, required: false
   private _transitEncryptionEnabled?: boolean;
   public get transitEncryptionEnabled() {
-    return this._transitEncryptionEnabled;
+    return this.getBooleanAttribute('transit_encryption_enabled');
   }
-  public set transitEncryptionEnabled(value: boolean | undefined) {
+  public set transitEncryptionEnabled(value: boolean ) {
     this._transitEncryptionEnabled = value;
+  }
+  public resetTransitEncryptionEnabled() {
+    this._transitEncryptionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitEncryptionEnabledInput() {
+    return this._transitEncryptionEnabled
   }
 
   // cluster_mode - computed: false, optional: true, required: false
   private _clusterMode?: ElasticacheReplicationGroupClusterMode[];
   public get clusterMode() {
-    return this._clusterMode;
+    return this.interpolationForAttribute('cluster_mode') as any;
   }
-  public set clusterMode(value: ElasticacheReplicationGroupClusterMode[] | undefined) {
+  public set clusterMode(value: ElasticacheReplicationGroupClusterMode[] ) {
     this._clusterMode = value;
+  }
+  public resetClusterMode() {
+    this._clusterMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterModeInput() {
+    return this._clusterMode
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: ElasticacheReplicationGroupTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: ElasticacheReplicationGroupTimeouts | undefined) {
+  public set timeouts(value: ElasticacheReplicationGroupTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

@@ -68,7 +68,7 @@ export class SagemakerModel extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -76,73 +76,115 @@ export class SagemakerModel extends TerraformResource {
   // enable_network_isolation - computed: false, optional: true, required: false
   private _enableNetworkIsolation?: boolean;
   public get enableNetworkIsolation() {
-    return this._enableNetworkIsolation;
+    return this.getBooleanAttribute('enable_network_isolation');
   }
-  public set enableNetworkIsolation(value: boolean | undefined) {
+  public set enableNetworkIsolation(value: boolean ) {
     this._enableNetworkIsolation = value;
+  }
+  public resetEnableNetworkIsolation() {
+    this._enableNetworkIsolation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableNetworkIsolationInput() {
+    return this._enableNetworkIsolation
   }
 
   // execution_role_arn - computed: false, optional: false, required: true
   private _executionRoleArn: string;
   public get executionRoleArn() {
-    return this._executionRoleArn;
+    return this.getStringAttribute('execution_role_arn');
   }
   public set executionRoleArn(value: string) {
     this._executionRoleArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get executionRoleArnInput() {
+    return this._executionRoleArn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // container - computed: false, optional: true, required: false
   private _container?: SagemakerModelContainer[];
   public get container() {
-    return this._container;
+    return this.interpolationForAttribute('container') as any;
   }
-  public set container(value: SagemakerModelContainer[] | undefined) {
+  public set container(value: SagemakerModelContainer[] ) {
     this._container = value;
+  }
+  public resetContainer() {
+    this._container = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerInput() {
+    return this._container
   }
 
   // primary_container - computed: false, optional: true, required: false
   private _primaryContainer?: SagemakerModelPrimaryContainer[];
   public get primaryContainer() {
-    return this._primaryContainer;
+    return this.interpolationForAttribute('primary_container') as any;
   }
-  public set primaryContainer(value: SagemakerModelPrimaryContainer[] | undefined) {
+  public set primaryContainer(value: SagemakerModelPrimaryContainer[] ) {
     this._primaryContainer = value;
+  }
+  public resetPrimaryContainer() {
+    this._primaryContainer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryContainerInput() {
+    return this._primaryContainer
   }
 
   // vpc_config - computed: false, optional: true, required: false
   private _vpcConfig?: SagemakerModelVpcConfig[];
   public get vpcConfig() {
-    return this._vpcConfig;
+    return this.interpolationForAttribute('vpc_config') as any;
   }
-  public set vpcConfig(value: SagemakerModelVpcConfig[] | undefined) {
+  public set vpcConfig(value: SagemakerModelVpcConfig[] ) {
     this._vpcConfig = value;
+  }
+  public resetVpcConfig() {
+    this._vpcConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcConfigInput() {
+    return this._vpcConfig
   }
 
   // =========

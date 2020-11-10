@@ -47,7 +47,7 @@ export class TransferUser extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -55,64 +55,93 @@ export class TransferUser extends TerraformResource {
   // home_directory - computed: false, optional: true, required: false
   private _homeDirectory?: string;
   public get homeDirectory() {
-    return this._homeDirectory;
+    return this.getStringAttribute('home_directory');
   }
-  public set homeDirectory(value: string | undefined) {
+  public set homeDirectory(value: string ) {
     this._homeDirectory = value;
+  }
+  public resetHomeDirectory() {
+    this._homeDirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get homeDirectoryInput() {
+    return this._homeDirectory
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy - computed: false, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
-  public set policy(value: string | undefined) {
+  public set policy(value: string ) {
     this._policy = value;
+  }
+  public resetPolicy() {
+    this._policy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // role - computed: false, optional: false, required: true
   private _role: string;
   public get role() {
-    return this._role;
+    return this.getStringAttribute('role');
   }
   public set role(value: string) {
     this._role = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleInput() {
+    return this._role
   }
 
   // server_id - computed: false, optional: false, required: true
   private _serverId: string;
   public get serverId() {
-    return this._serverId;
+    return this.getStringAttribute('server_id');
   }
   public set serverId(value: string) {
     this._serverId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverIdInput() {
+    return this._serverId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // user_name - computed: false, optional: false, required: true
   private _userName: string;
   public get userName() {
-    return this._userName;
+    return this.getStringAttribute('user_name');
   }
   public set userName(value: string) {
     this._userName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userNameInput() {
+    return this._userName
   }
 
   // =========

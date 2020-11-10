@@ -61,7 +61,7 @@ export class ApiGatewayDomainName extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -69,59 +69,94 @@ export class ApiGatewayDomainName extends TerraformResource {
   // certificate_arn - computed: false, optional: true, required: false
   private _certificateArn?: string;
   public get certificateArn() {
-    return this._certificateArn;
+    return this.getStringAttribute('certificate_arn');
   }
-  public set certificateArn(value: string | undefined) {
+  public set certificateArn(value: string ) {
     this._certificateArn = value;
+  }
+  public resetCertificateArn() {
+    this._certificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateArnInput() {
+    return this._certificateArn
   }
 
   // certificate_body - computed: false, optional: true, required: false
   private _certificateBody?: string;
   public get certificateBody() {
-    return this._certificateBody;
+    return this.getStringAttribute('certificate_body');
   }
-  public set certificateBody(value: string | undefined) {
+  public set certificateBody(value: string ) {
     this._certificateBody = value;
+  }
+  public resetCertificateBody() {
+    this._certificateBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateBodyInput() {
+    return this._certificateBody
   }
 
   // certificate_chain - computed: false, optional: true, required: false
   private _certificateChain?: string;
   public get certificateChain() {
-    return this._certificateChain;
+    return this.getStringAttribute('certificate_chain');
   }
-  public set certificateChain(value: string | undefined) {
+  public set certificateChain(value: string ) {
     this._certificateChain = value;
+  }
+  public resetCertificateChain() {
+    this._certificateChain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateChainInput() {
+    return this._certificateChain
   }
 
   // certificate_name - computed: false, optional: true, required: false
   private _certificateName?: string;
   public get certificateName() {
-    return this._certificateName;
+    return this.getStringAttribute('certificate_name');
   }
-  public set certificateName(value: string | undefined) {
+  public set certificateName(value: string ) {
     this._certificateName = value;
+  }
+  public resetCertificateName() {
+    this._certificateName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateNameInput() {
+    return this._certificateName
   }
 
   // certificate_private_key - computed: false, optional: true, required: false
   private _certificatePrivateKey?: string;
   public get certificatePrivateKey() {
-    return this._certificatePrivateKey;
+    return this.getStringAttribute('certificate_private_key');
   }
-  public set certificatePrivateKey(value: string | undefined) {
+  public set certificatePrivateKey(value: string ) {
     this._certificatePrivateKey = value;
   }
+  public resetCertificatePrivateKey() {
+    this._certificatePrivateKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificatePrivateKeyInput() {
+    return this._certificatePrivateKey
+  }
 
-  // certificate_upload_date - computed: true, optional: false, required: true
+  // certificate_upload_date - computed: true, optional: false, required: false
   public get certificateUploadDate() {
     return this.getStringAttribute('certificate_upload_date');
   }
 
-  // cloudfront_domain_name - computed: true, optional: false, required: true
+  // cloudfront_domain_name - computed: true, optional: false, required: false
   public get cloudfrontDomainName() {
     return this.getStringAttribute('cloudfront_domain_name');
   }
 
-  // cloudfront_zone_id - computed: true, optional: false, required: true
+  // cloudfront_zone_id - computed: true, optional: false, required: false
   public get cloudfrontZoneId() {
     return this.getStringAttribute('cloudfront_zone_id');
   }
@@ -129,45 +164,59 @@ export class ApiGatewayDomainName extends TerraformResource {
   // domain_name - computed: false, optional: false, required: true
   private _domainName: string;
   public get domainName() {
-    return this._domainName;
+    return this.getStringAttribute('domain_name');
   }
   public set domainName(value: string) {
     this._domainName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainNameInput() {
+    return this._domainName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // regional_certificate_arn - computed: false, optional: true, required: false
   private _regionalCertificateArn?: string;
   public get regionalCertificateArn() {
-    return this._regionalCertificateArn;
+    return this.getStringAttribute('regional_certificate_arn');
   }
-  public set regionalCertificateArn(value: string | undefined) {
+  public set regionalCertificateArn(value: string ) {
     this._regionalCertificateArn = value;
+  }
+  public resetRegionalCertificateArn() {
+    this._regionalCertificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionalCertificateArnInput() {
+    return this._regionalCertificateArn
   }
 
   // regional_certificate_name - computed: false, optional: true, required: false
   private _regionalCertificateName?: string;
   public get regionalCertificateName() {
-    return this._regionalCertificateName;
+    return this.getStringAttribute('regional_certificate_name');
   }
-  public set regionalCertificateName(value: string | undefined) {
+  public set regionalCertificateName(value: string ) {
     this._regionalCertificateName = value;
   }
+  public resetRegionalCertificateName() {
+    this._regionalCertificateName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionalCertificateNameInput() {
+    return this._regionalCertificateName
+  }
 
-  // regional_domain_name - computed: true, optional: false, required: true
+  // regional_domain_name - computed: true, optional: false, required: false
   public get regionalDomainName() {
     return this.getStringAttribute('regional_domain_name');
   }
 
-  // regional_zone_id - computed: true, optional: false, required: true
+  // regional_zone_id - computed: true, optional: false, required: false
   public get regionalZoneId() {
     return this.getStringAttribute('regional_zone_id');
   }
@@ -175,28 +224,49 @@ export class ApiGatewayDomainName extends TerraformResource {
   // security_policy - computed: true, optional: true, required: false
   private _securityPolicy?: string;
   public get securityPolicy() {
-    return this._securityPolicy ?? this.getStringAttribute('security_policy');
+    return this.getStringAttribute('security_policy');
   }
-  public set securityPolicy(value: string | undefined) {
+  public set securityPolicy(value: string) {
     this._securityPolicy = value;
+  }
+  public resetSecurityPolicy() {
+    this._securityPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityPolicyInput() {
+    return this._securityPolicy
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // endpoint_configuration - computed: false, optional: true, required: false
   private _endpointConfiguration?: ApiGatewayDomainNameEndpointConfiguration[];
   public get endpointConfiguration() {
-    return this._endpointConfiguration;
+    return this.interpolationForAttribute('endpoint_configuration') as any;
   }
-  public set endpointConfiguration(value: ApiGatewayDomainNameEndpointConfiguration[] | undefined) {
+  public set endpointConfiguration(value: ApiGatewayDomainNameEndpointConfiguration[] ) {
     this._endpointConfiguration = value;
+  }
+  public resetEndpointConfiguration() {
+    this._endpointConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointConfigurationInput() {
+    return this._endpointConfiguration
   }
 
   // =========

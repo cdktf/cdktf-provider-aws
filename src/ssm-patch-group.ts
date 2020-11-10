@@ -42,28 +42,32 @@ export class SsmPatchGroup extends TerraformResource {
   // baseline_id - computed: false, optional: false, required: true
   private _baselineId: string;
   public get baselineId() {
-    return this._baselineId;
+    return this.getStringAttribute('baseline_id');
   }
   public set baselineId(value: string) {
     this._baselineId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get baselineIdInput() {
+    return this._baselineId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // patch_group - computed: false, optional: false, required: true
   private _patchGroup: string;
   public get patchGroup() {
-    return this._patchGroup;
+    return this.getStringAttribute('patch_group');
   }
   public set patchGroup(value: string) {
     this._patchGroup = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patchGroupInput() {
+    return this._patchGroup
   }
 
   // =========

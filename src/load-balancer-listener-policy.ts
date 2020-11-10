@@ -42,39 +42,50 @@ export class LoadBalancerListenerPolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // load_balancer_name - computed: false, optional: false, required: true
   private _loadBalancerName: string;
   public get loadBalancerName() {
-    return this._loadBalancerName;
+    return this.getStringAttribute('load_balancer_name');
   }
   public set loadBalancerName(value: string) {
     this._loadBalancerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerNameInput() {
+    return this._loadBalancerName
   }
 
   // load_balancer_port - computed: false, optional: false, required: true
   private _loadBalancerPort: number;
   public get loadBalancerPort() {
-    return this._loadBalancerPort;
+    return this.getNumberAttribute('load_balancer_port');
   }
   public set loadBalancerPort(value: number) {
     this._loadBalancerPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerPortInput() {
+    return this._loadBalancerPort
   }
 
   // policy_names - computed: false, optional: true, required: false
   private _policyNames?: string[];
   public get policyNames() {
-    return this._policyNames;
+    return this.getListAttribute('policy_names');
   }
-  public set policyNames(value: string[] | undefined) {
+  public set policyNames(value: string[] ) {
     this._policyNames = value;
+  }
+  public resetPolicyNames() {
+    this._policyNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyNamesInput() {
+    return this._policyNames
   }
 
   // =========

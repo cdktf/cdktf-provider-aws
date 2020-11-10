@@ -59,7 +59,7 @@ export class XraySamplingRule extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -67,118 +67,168 @@ export class XraySamplingRule extends TerraformResource {
   // attributes - computed: false, optional: true, required: false
   private _attributes?: { [key: string]: string };
   public get attributes() {
-    return this._attributes;
+    return this.interpolationForAttribute('attributes') as any;
   }
-  public set attributes(value: { [key: string]: string } | undefined) {
+  public set attributes(value: { [key: string]: string } ) {
     this._attributes = value;
+  }
+  public resetAttributes() {
+    this._attributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributesInput() {
+    return this._attributes
   }
 
   // fixed_rate - computed: false, optional: false, required: true
   private _fixedRate: number;
   public get fixedRate() {
-    return this._fixedRate;
+    return this.getNumberAttribute('fixed_rate');
   }
   public set fixedRate(value: number) {
     this._fixedRate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fixedRateInput() {
+    return this._fixedRate
   }
 
   // host - computed: false, optional: false, required: true
   private _host: string;
   public get host() {
-    return this._host;
+    return this.getStringAttribute('host');
   }
   public set host(value: string) {
     this._host = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host
   }
 
   // http_method - computed: false, optional: false, required: true
   private _httpMethod: string;
   public get httpMethod() {
-    return this._httpMethod;
+    return this.getStringAttribute('http_method');
   }
   public set httpMethod(value: string) {
     this._httpMethod = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get httpMethodInput() {
+    return this._httpMethod
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // priority - computed: false, optional: false, required: true
   private _priority: number;
   public get priority() {
-    return this._priority;
+    return this.getNumberAttribute('priority');
   }
   public set priority(value: number) {
     this._priority = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority
   }
 
   // reservoir_size - computed: false, optional: false, required: true
   private _reservoirSize: number;
   public get reservoirSize() {
-    return this._reservoirSize;
+    return this.getNumberAttribute('reservoir_size');
   }
   public set reservoirSize(value: number) {
     this._reservoirSize = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reservoirSizeInput() {
+    return this._reservoirSize
   }
 
   // resource_arn - computed: false, optional: false, required: true
   private _resourceArn: string;
   public get resourceArn() {
-    return this._resourceArn;
+    return this.getStringAttribute('resource_arn');
   }
   public set resourceArn(value: string) {
     this._resourceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn
   }
 
   // rule_name - computed: false, optional: true, required: false
   private _ruleName?: string;
   public get ruleName() {
-    return this._ruleName;
+    return this.getStringAttribute('rule_name');
   }
-  public set ruleName(value: string | undefined) {
+  public set ruleName(value: string ) {
     this._ruleName = value;
+  }
+  public resetRuleName() {
+    this._ruleName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleNameInput() {
+    return this._ruleName
   }
 
   // service_name - computed: false, optional: false, required: true
   private _serviceName: string;
   public get serviceName() {
-    return this._serviceName;
+    return this.getStringAttribute('service_name');
   }
   public set serviceName(value: string) {
     this._serviceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNameInput() {
+    return this._serviceName
   }
 
   // service_type - computed: false, optional: false, required: true
   private _serviceType: string;
   public get serviceType() {
-    return this._serviceType;
+    return this.getStringAttribute('service_type');
   }
   public set serviceType(value: string) {
     this._serviceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceTypeInput() {
+    return this._serviceType
   }
 
   // url_path - computed: false, optional: false, required: true
   private _urlPath: string;
   public get urlPath() {
-    return this._urlPath;
+    return this.getStringAttribute('url_path');
   }
   public set urlPath(value: string) {
     this._urlPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlPathInput() {
+    return this._urlPath
   }
 
   // version - computed: false, optional: false, required: true
   private _version: number;
   public get version() {
-    return this._version;
+    return this.getNumberAttribute('version');
   }
   public set version(value: number) {
     this._version = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // =========

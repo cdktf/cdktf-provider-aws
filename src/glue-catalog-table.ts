@@ -103,7 +103,7 @@ export class GlueCatalogTable extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -111,118 +111,192 @@ export class GlueCatalogTable extends TerraformResource {
   // catalog_id - computed: true, optional: true, required: false
   private _catalogId?: string;
   public get catalogId() {
-    return this._catalogId ?? this.getStringAttribute('catalog_id');
+    return this.getStringAttribute('catalog_id');
   }
-  public set catalogId(value: string | undefined) {
+  public set catalogId(value: string) {
     this._catalogId = value;
+  }
+  public resetCatalogId() {
+    this._catalogId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogIdInput() {
+    return this._catalogId
   }
 
   // database_name - computed: false, optional: false, required: true
   private _databaseName: string;
   public get databaseName() {
-    return this._databaseName;
+    return this.getStringAttribute('database_name');
   }
   public set databaseName(value: string) {
     this._databaseName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // owner - computed: false, optional: true, required: false
   private _owner?: string;
   public get owner() {
-    return this._owner;
+    return this.getStringAttribute('owner');
   }
-  public set owner(value: string | undefined) {
+  public set owner(value: string ) {
     this._owner = value;
+  }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner
   }
 
   // parameters - computed: false, optional: true, required: false
   private _parameters?: { [key: string]: string };
   public get parameters() {
-    return this._parameters;
+    return this.interpolationForAttribute('parameters') as any;
   }
-  public set parameters(value: { [key: string]: string } | undefined) {
+  public set parameters(value: { [key: string]: string } ) {
     this._parameters = value;
+  }
+  public resetParameters() {
+    this._parameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters
   }
 
   // retention - computed: false, optional: true, required: false
   private _retention?: number;
   public get retention() {
-    return this._retention;
+    return this.getNumberAttribute('retention');
   }
-  public set retention(value: number | undefined) {
+  public set retention(value: number ) {
     this._retention = value;
+  }
+  public resetRetention() {
+    this._retention = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionInput() {
+    return this._retention
   }
 
   // table_type - computed: false, optional: true, required: false
   private _tableType?: string;
   public get tableType() {
-    return this._tableType;
+    return this.getStringAttribute('table_type');
   }
-  public set tableType(value: string | undefined) {
+  public set tableType(value: string ) {
     this._tableType = value;
+  }
+  public resetTableType() {
+    this._tableType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableTypeInput() {
+    return this._tableType
   }
 
   // view_expanded_text - computed: false, optional: true, required: false
   private _viewExpandedText?: string;
   public get viewExpandedText() {
-    return this._viewExpandedText;
+    return this.getStringAttribute('view_expanded_text');
   }
-  public set viewExpandedText(value: string | undefined) {
+  public set viewExpandedText(value: string ) {
     this._viewExpandedText = value;
+  }
+  public resetViewExpandedText() {
+    this._viewExpandedText = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get viewExpandedTextInput() {
+    return this._viewExpandedText
   }
 
   // view_original_text - computed: false, optional: true, required: false
   private _viewOriginalText?: string;
   public get viewOriginalText() {
-    return this._viewOriginalText;
+    return this.getStringAttribute('view_original_text');
   }
-  public set viewOriginalText(value: string | undefined) {
+  public set viewOriginalText(value: string ) {
     this._viewOriginalText = value;
+  }
+  public resetViewOriginalText() {
+    this._viewOriginalText = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get viewOriginalTextInput() {
+    return this._viewOriginalText
   }
 
   // partition_keys - computed: false, optional: true, required: false
   private _partitionKeys?: GlueCatalogTablePartitionKeys[];
   public get partitionKeys() {
-    return this._partitionKeys;
+    return this.interpolationForAttribute('partition_keys') as any;
   }
-  public set partitionKeys(value: GlueCatalogTablePartitionKeys[] | undefined) {
+  public set partitionKeys(value: GlueCatalogTablePartitionKeys[] ) {
     this._partitionKeys = value;
+  }
+  public resetPartitionKeys() {
+    this._partitionKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionKeysInput() {
+    return this._partitionKeys
   }
 
   // storage_descriptor - computed: false, optional: true, required: false
   private _storageDescriptor?: GlueCatalogTableStorageDescriptor[];
   public get storageDescriptor() {
-    return this._storageDescriptor;
+    return this.interpolationForAttribute('storage_descriptor') as any;
   }
-  public set storageDescriptor(value: GlueCatalogTableStorageDescriptor[] | undefined) {
+  public set storageDescriptor(value: GlueCatalogTableStorageDescriptor[] ) {
     this._storageDescriptor = value;
+  }
+  public resetStorageDescriptor() {
+    this._storageDescriptor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageDescriptorInput() {
+    return this._storageDescriptor
   }
 
   // =========

@@ -55,7 +55,7 @@ export class GlueConnection extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -63,73 +63,112 @@ export class GlueConnection extends TerraformResource {
   // catalog_id - computed: true, optional: true, required: false
   private _catalogId?: string;
   public get catalogId() {
-    return this._catalogId ?? this.getStringAttribute('catalog_id');
+    return this.getStringAttribute('catalog_id');
   }
-  public set catalogId(value: string | undefined) {
+  public set catalogId(value: string) {
     this._catalogId = value;
+  }
+  public resetCatalogId() {
+    this._catalogId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogIdInput() {
+    return this._catalogId
   }
 
   // connection_properties - computed: false, optional: false, required: true
   private _connectionProperties: { [key: string]: string };
   public get connectionProperties() {
-    return this._connectionProperties;
+    return this.interpolationForAttribute('connection_properties') as any;
   }
   public set connectionProperties(value: { [key: string]: string }) {
     this._connectionProperties = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionPropertiesInput() {
+    return this._connectionProperties
   }
 
   // connection_type - computed: false, optional: true, required: false
   private _connectionType?: string;
   public get connectionType() {
-    return this._connectionType;
+    return this.getStringAttribute('connection_type');
   }
-  public set connectionType(value: string | undefined) {
+  public set connectionType(value: string ) {
     this._connectionType = value;
+  }
+  public resetConnectionType() {
+    this._connectionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionTypeInput() {
+    return this._connectionType
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // match_criteria - computed: false, optional: true, required: false
   private _matchCriteria?: string[];
   public get matchCriteria() {
-    return this._matchCriteria;
+    return this.getListAttribute('match_criteria');
   }
-  public set matchCriteria(value: string[] | undefined) {
+  public set matchCriteria(value: string[] ) {
     this._matchCriteria = value;
+  }
+  public resetMatchCriteria() {
+    this._matchCriteria = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchCriteriaInput() {
+    return this._matchCriteria
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // physical_connection_requirements - computed: false, optional: true, required: false
   private _physicalConnectionRequirements?: GlueConnectionPhysicalConnectionRequirements[];
   public get physicalConnectionRequirements() {
-    return this._physicalConnectionRequirements;
+    return this.interpolationForAttribute('physical_connection_requirements') as any;
   }
-  public set physicalConnectionRequirements(value: GlueConnectionPhysicalConnectionRequirements[] | undefined) {
+  public set physicalConnectionRequirements(value: GlueConnectionPhysicalConnectionRequirements[] ) {
     this._physicalConnectionRequirements = value;
+  }
+  public resetPhysicalConnectionRequirements() {
+    this._physicalConnectionRequirements = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get physicalConnectionRequirementsInput() {
+    return this._physicalConnectionRequirements
   }
 
   // =========

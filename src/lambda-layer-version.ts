@@ -53,7 +53,7 @@ export class LambdaLayerVersion extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -61,13 +61,20 @@ export class LambdaLayerVersion extends TerraformResource {
   // compatible_runtimes - computed: false, optional: true, required: false
   private _compatibleRuntimes?: string[];
   public get compatibleRuntimes() {
-    return this._compatibleRuntimes;
+    return this.getListAttribute('compatible_runtimes');
   }
-  public set compatibleRuntimes(value: string[] | undefined) {
+  public set compatibleRuntimes(value: string[] ) {
     this._compatibleRuntimes = value;
   }
+  public resetCompatibleRuntimes() {
+    this._compatibleRuntimes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compatibleRuntimesInput() {
+    return this._compatibleRuntimes
+  }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
@@ -75,31 +82,41 @@ export class LambdaLayerVersion extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // filename - computed: false, optional: true, required: false
   private _filename?: string;
   public get filename() {
-    return this._filename;
+    return this.getStringAttribute('filename');
   }
-  public set filename(value: string | undefined) {
+  public set filename(value: string ) {
     this._filename = value;
+  }
+  public resetFilename() {
+    this._filename = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filenameInput() {
+    return this._filename
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // layer_arn - computed: true, optional: false, required: true
+  // layer_arn - computed: true, optional: false, required: false
   public get layerArn() {
     return this.getStringAttribute('layer_arn');
   }
@@ -107,63 +124,102 @@ export class LambdaLayerVersion extends TerraformResource {
   // layer_name - computed: false, optional: false, required: true
   private _layerName: string;
   public get layerName() {
-    return this._layerName;
+    return this.getStringAttribute('layer_name');
   }
   public set layerName(value: string) {
     this._layerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get layerNameInput() {
+    return this._layerName
   }
 
   // license_info - computed: false, optional: true, required: false
   private _licenseInfo?: string;
   public get licenseInfo() {
-    return this._licenseInfo;
+    return this.getStringAttribute('license_info');
   }
-  public set licenseInfo(value: string | undefined) {
+  public set licenseInfo(value: string ) {
     this._licenseInfo = value;
+  }
+  public resetLicenseInfo() {
+    this._licenseInfo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseInfoInput() {
+    return this._licenseInfo
   }
 
   // s3_bucket - computed: false, optional: true, required: false
   private _s3Bucket?: string;
   public get s3Bucket() {
-    return this._s3Bucket;
+    return this.getStringAttribute('s3_bucket');
   }
-  public set s3Bucket(value: string | undefined) {
+  public set s3Bucket(value: string ) {
     this._s3Bucket = value;
+  }
+  public resetS3Bucket() {
+    this._s3Bucket = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3BucketInput() {
+    return this._s3Bucket
   }
 
   // s3_key - computed: false, optional: true, required: false
   private _s3Key?: string;
   public get s3Key() {
-    return this._s3Key;
+    return this.getStringAttribute('s3_key');
   }
-  public set s3Key(value: string | undefined) {
+  public set s3Key(value: string ) {
     this._s3Key = value;
+  }
+  public resetS3Key() {
+    this._s3Key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3KeyInput() {
+    return this._s3Key
   }
 
   // s3_object_version - computed: false, optional: true, required: false
   private _s3ObjectVersion?: string;
   public get s3ObjectVersion() {
-    return this._s3ObjectVersion;
+    return this.getStringAttribute('s3_object_version');
   }
-  public set s3ObjectVersion(value: string | undefined) {
+  public set s3ObjectVersion(value: string ) {
     this._s3ObjectVersion = value;
+  }
+  public resetS3ObjectVersion() {
+    this._s3ObjectVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3ObjectVersionInput() {
+    return this._s3ObjectVersion
   }
 
   // source_code_hash - computed: true, optional: true, required: false
   private _sourceCodeHash?: string;
   public get sourceCodeHash() {
-    return this._sourceCodeHash ?? this.getStringAttribute('source_code_hash');
+    return this.getStringAttribute('source_code_hash');
   }
-  public set sourceCodeHash(value: string | undefined) {
+  public set sourceCodeHash(value: string) {
     this._sourceCodeHash = value;
   }
+  public resetSourceCodeHash() {
+    this._sourceCodeHash = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceCodeHashInput() {
+    return this._sourceCodeHash
+  }
 
-  // source_code_size - computed: true, optional: false, required: true
+  // source_code_size - computed: true, optional: false, required: false
   public get sourceCodeSize() {
     return this.getNumberAttribute('source_code_size');
   }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
   }

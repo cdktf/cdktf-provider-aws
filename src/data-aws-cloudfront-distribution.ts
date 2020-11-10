@@ -39,27 +39,27 @@ export class DataAwsCloudfrontDistribution extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // domain_name - computed: true, optional: false, required: true
+  // domain_name - computed: true, optional: false, required: false
   public get domainName() {
     return this.getStringAttribute('domain_name');
   }
 
-  // enabled - computed: true, optional: false, required: true
+  // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
-  // hosted_zone_id - computed: true, optional: false, required: true
+  // hosted_zone_id - computed: true, optional: false, required: false
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
@@ -67,23 +67,27 @@ export class DataAwsCloudfrontDistribution extends TerraformDataSource {
   // id - computed: false, optional: false, required: true
   private _id: string;
   public get id() {
-    return this._id;
+    return this.getStringAttribute('id');
   }
   public set id(value: string) {
     this._id = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id
+  }
 
-  // in_progress_validation_batches - computed: true, optional: false, required: true
+  // in_progress_validation_batches - computed: true, optional: false, required: false
   public get inProgressValidationBatches() {
     return this.getNumberAttribute('in_progress_validation_batches');
   }
 
-  // last_modified_time - computed: true, optional: false, required: true
+  // last_modified_time - computed: true, optional: false, required: false
   public get lastModifiedTime() {
     return this.getStringAttribute('last_modified_time');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -91,10 +95,17 @@ export class DataAwsCloudfrontDistribution extends TerraformDataSource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

@@ -20,34 +20,34 @@ export interface DataAwsAmiConfig extends TerraformMetaArguments {
 }
 export class DataAwsAmiBlockDeviceMappings extends ComplexComputedList {
 
-  // device_name - computed: true, optional: false, required: true
+  // device_name - computed: true, optional: false, required: false
   public get deviceName() {
     return this.getStringAttribute('device_name');
   }
 
-  // ebs - computed: true, optional: false, required: true
+  // ebs - computed: true, optional: false, required: false
   public get ebs() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('ebs') as any;
   }
 
-  // no_device - computed: true, optional: false, required: true
+  // no_device - computed: true, optional: false, required: false
   public get noDevice() {
     return this.getStringAttribute('no_device');
   }
 
-  // virtual_name - computed: true, optional: false, required: true
+  // virtual_name - computed: true, optional: false, required: false
   public get virtualName() {
     return this.getStringAttribute('virtual_name');
   }
 }
 export class DataAwsAmiProductCodes extends ComplexComputedList {
 
-  // product_code_id - computed: true, optional: false, required: true
+  // product_code_id - computed: true, optional: false, required: false
   public get productCodeId() {
     return this.getStringAttribute('product_code_id');
   }
 
-  // product_code_type - computed: true, optional: false, required: true
+  // product_code_type - computed: true, optional: false, required: false
   public get productCodeType() {
     return this.getStringAttribute('product_code_type');
   }
@@ -88,27 +88,27 @@ export class DataAwsAmi extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // architecture - computed: true, optional: false, required: true
+  // architecture - computed: true, optional: false, required: false
   public get architecture() {
     return this.getStringAttribute('architecture');
   }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // block_device_mappings - computed: true, optional: false, required: true
+  // block_device_mappings - computed: true, optional: false, required: false
   public blockDeviceMappings(index: string) {
     return new DataAwsAmiBlockDeviceMappings(this, 'block_device_mappings', index);
   }
 
-  // creation_date - computed: true, optional: false, required: true
+  // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
@@ -116,47 +116,50 @@ export class DataAwsAmi extends TerraformDataSource {
   // executable_users - computed: false, optional: true, required: false
   private _executableUsers?: string[];
   public get executableUsers() {
-    return this._executableUsers;
+    return this.getListAttribute('executable_users');
   }
-  public set executableUsers(value: string[] | undefined) {
+  public set executableUsers(value: string[] ) {
     this._executableUsers = value;
   }
+  public resetExecutableUsers() {
+    this._executableUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executableUsersInput() {
+    return this._executableUsers
+  }
 
-  // hypervisor - computed: true, optional: false, required: true
+  // hypervisor - computed: true, optional: false, required: false
   public get hypervisor() {
     return this.getStringAttribute('hypervisor');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // image_id - computed: true, optional: false, required: true
+  // image_id - computed: true, optional: false, required: false
   public get imageId() {
     return this.getStringAttribute('image_id');
   }
 
-  // image_location - computed: true, optional: false, required: true
+  // image_location - computed: true, optional: false, required: false
   public get imageLocation() {
     return this.getStringAttribute('image_location');
   }
 
-  // image_owner_alias - computed: true, optional: false, required: true
+  // image_owner_alias - computed: true, optional: false, required: false
   public get imageOwnerAlias() {
     return this.getStringAttribute('image_owner_alias');
   }
 
-  // image_type - computed: true, optional: false, required: true
+  // image_type - computed: true, optional: false, required: false
   public get imageType() {
     return this.getStringAttribute('image_type');
   }
 
-  // kernel_id - computed: true, optional: false, required: true
+  // kernel_id - computed: true, optional: false, required: false
   public get kernelId() {
     return this.getStringAttribute('kernel_id');
   }
@@ -164,13 +167,20 @@ export class DataAwsAmi extends TerraformDataSource {
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean;
   public get mostRecent() {
-    return this._mostRecent;
+    return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | undefined) {
+  public set mostRecent(value: boolean ) {
     this._mostRecent = value;
   }
+  public resetMostRecent() {
+    this._mostRecent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mostRecentInput() {
+    return this._mostRecent
+  }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -178,13 +188,20 @@ export class DataAwsAmi extends TerraformDataSource {
   // name_regex - computed: false, optional: true, required: false
   private _nameRegex?: string;
   public get nameRegex() {
-    return this._nameRegex;
+    return this.getStringAttribute('name_regex');
   }
-  public set nameRegex(value: string | undefined) {
+  public set nameRegex(value: string ) {
     this._nameRegex = value;
   }
+  public resetNameRegex() {
+    this._nameRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameRegexInput() {
+    return this._nameRegex
+  }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -192,72 +209,83 @@ export class DataAwsAmi extends TerraformDataSource {
   // owners - computed: false, optional: false, required: true
   private _owners: string[];
   public get owners() {
-    return this._owners;
+    return this.getListAttribute('owners');
   }
   public set owners(value: string[]) {
     this._owners = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get ownersInput() {
+    return this._owners
+  }
 
-  // platform - computed: true, optional: false, required: true
+  // platform - computed: true, optional: false, required: false
   public get platform() {
     return this.getStringAttribute('platform');
   }
 
-  // product_codes - computed: true, optional: false, required: true
+  // product_codes - computed: true, optional: false, required: false
   public productCodes(index: string) {
     return new DataAwsAmiProductCodes(this, 'product_codes', index);
   }
 
-  // public - computed: true, optional: false, required: true
+  // public - computed: true, optional: false, required: false
   public get public() {
     return this.getBooleanAttribute('public');
   }
 
-  // ramdisk_id - computed: true, optional: false, required: true
+  // ramdisk_id - computed: true, optional: false, required: false
   public get ramdiskId() {
     return this.getStringAttribute('ramdisk_id');
   }
 
-  // root_device_name - computed: true, optional: false, required: true
+  // root_device_name - computed: true, optional: false, required: false
   public get rootDeviceName() {
     return this.getStringAttribute('root_device_name');
   }
 
-  // root_device_type - computed: true, optional: false, required: true
+  // root_device_type - computed: true, optional: false, required: false
   public get rootDeviceType() {
     return this.getStringAttribute('root_device_type');
   }
 
-  // root_snapshot_id - computed: true, optional: false, required: true
+  // root_snapshot_id - computed: true, optional: false, required: false
   public get rootSnapshotId() {
     return this.getStringAttribute('root_snapshot_id');
   }
 
-  // sriov_net_support - computed: true, optional: false, required: true
+  // sriov_net_support - computed: true, optional: false, required: false
   public get sriovNetSupport() {
     return this.getStringAttribute('sriov_net_support');
   }
 
-  // state - computed: true, optional: false, required: true
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
 
-  // state_reason - computed: true, optional: false, required: true
+  // state_reason - computed: true, optional: false, required: false
   public stateReason(key: string): string {
     return new StringMap(this, 'state_reason').lookup(key);
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // virtualization_type - computed: true, optional: false, required: true
+  // virtualization_type - computed: true, optional: false, required: false
   public get virtualizationType() {
     return this.getStringAttribute('virtualization_type');
   }
@@ -265,10 +293,17 @@ export class DataAwsAmi extends TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsAmiFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsAmiFilter[] | undefined) {
+  public set filter(value: DataAwsAmiFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

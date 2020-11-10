@@ -45,15 +45,11 @@ export class DataAwsPricingProduct extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // result - computed: true, optional: false, required: true
+  // result - computed: true, optional: false, required: false
   public get result() {
     return this.getStringAttribute('result');
   }
@@ -61,19 +57,27 @@ export class DataAwsPricingProduct extends TerraformDataSource {
   // service_code - computed: false, optional: false, required: true
   private _serviceCode: string;
   public get serviceCode() {
-    return this._serviceCode;
+    return this.getStringAttribute('service_code');
   }
   public set serviceCode(value: string) {
     this._serviceCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceCodeInput() {
+    return this._serviceCode
   }
 
   // filters - computed: false, optional: false, required: true
   private _filters: DataAwsPricingProductFilters[];
   public get filters() {
-    return this._filters;
+    return this.interpolationForAttribute('filters') as any;
   }
   public set filters(value: DataAwsPricingProductFilters[]) {
     this._filters = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filtersInput() {
+    return this._filters
   }
 
   // =========

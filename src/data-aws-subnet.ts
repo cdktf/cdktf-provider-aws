@@ -58,12 +58,12 @@ export class DataAwsSubnet extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // assign_ipv6_address_on_creation - computed: true, optional: false, required: true
+  // assign_ipv6_address_on_creation - computed: true, optional: false, required: false
   public get assignIpv6AddressOnCreation() {
     return this.getBooleanAttribute('assign_ipv6_address_on_creation');
   }
@@ -71,73 +71,104 @@ export class DataAwsSubnet extends TerraformDataSource {
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
+    return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // availability_zone_id - computed: true, optional: true, required: false
   private _availabilityZoneId?: string;
   public get availabilityZoneId() {
-    return this._availabilityZoneId ?? this.getStringAttribute('availability_zone_id');
+    return this.getStringAttribute('availability_zone_id');
   }
-  public set availabilityZoneId(value: string | undefined) {
+  public set availabilityZoneId(value: string) {
     this._availabilityZoneId = value;
+  }
+  public resetAvailabilityZoneId() {
+    this._availabilityZoneId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneIdInput() {
+    return this._availabilityZoneId
   }
 
   // cidr_block - computed: true, optional: true, required: false
   private _cidrBlock?: string;
   public get cidrBlock() {
-    return this._cidrBlock ?? this.getStringAttribute('cidr_block');
+    return this.getStringAttribute('cidr_block');
   }
-  public set cidrBlock(value: string | undefined) {
+  public set cidrBlock(value: string) {
     this._cidrBlock = value;
+  }
+  public resetCidrBlock() {
+    this._cidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrBlockInput() {
+    return this._cidrBlock
   }
 
   // default_for_az - computed: true, optional: true, required: false
   private _defaultForAz?: boolean;
   public get defaultForAz() {
-    return this._defaultForAz ?? this.getBooleanAttribute('default_for_az');
+    return this.getBooleanAttribute('default_for_az');
   }
-  public set defaultForAz(value: boolean | undefined) {
+  public set defaultForAz(value: boolean) {
     this._defaultForAz = value;
+  }
+  public resetDefaultForAz() {
+    this._defaultForAz = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultForAzInput() {
+    return this._defaultForAz
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ipv6_cidr_block - computed: true, optional: true, required: false
   private _ipv6CidrBlock?: string;
   public get ipv6CidrBlock() {
-    return this._ipv6CidrBlock ?? this.getStringAttribute('ipv6_cidr_block');
+    return this.getStringAttribute('ipv6_cidr_block');
   }
-  public set ipv6CidrBlock(value: string | undefined) {
+  public set ipv6CidrBlock(value: string) {
     this._ipv6CidrBlock = value;
   }
+  public resetIpv6CidrBlock() {
+    this._ipv6CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrBlockInput() {
+    return this._ipv6CidrBlock
+  }
 
-  // ipv6_cidr_block_association_id - computed: true, optional: false, required: true
+  // ipv6_cidr_block_association_id - computed: true, optional: false, required: false
   public get ipv6CidrBlockAssociationId() {
     return this.getStringAttribute('ipv6_cidr_block_association_id');
   }
 
-  // map_public_ip_on_launch - computed: true, optional: false, required: true
+  // map_public_ip_on_launch - computed: true, optional: false, required: false
   public get mapPublicIpOnLaunch() {
     return this.getBooleanAttribute('map_public_ip_on_launch');
   }
 
-  // outpost_arn - computed: true, optional: false, required: true
+  // outpost_arn - computed: true, optional: false, required: false
   public get outpostArn() {
     return this.getStringAttribute('outpost_arn');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -145,37 +176,65 @@ export class DataAwsSubnet extends TerraformDataSource {
   // state - computed: true, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this._state ?? this.getStringAttribute('state');
+    return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string) {
     this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_id - computed: true, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this._vpcId ?? this.getStringAttribute('vpc_id');
+    return this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string | undefined) {
+  public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsSubnetFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsSubnetFilter[] | undefined) {
+  public set filter(value: DataAwsSubnetFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

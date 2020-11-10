@@ -90,7 +90,7 @@ export class GlueCrawler extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -98,145 +98,237 @@ export class GlueCrawler extends TerraformResource {
   // classifiers - computed: false, optional: true, required: false
   private _classifiers?: string[];
   public get classifiers() {
-    return this._classifiers;
+    return this.getListAttribute('classifiers');
   }
-  public set classifiers(value: string[] | undefined) {
+  public set classifiers(value: string[] ) {
     this._classifiers = value;
+  }
+  public resetClassifiers() {
+    this._classifiers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get classifiersInput() {
+    return this._classifiers
   }
 
   // configuration - computed: false, optional: true, required: false
   private _configuration?: string;
   public get configuration() {
-    return this._configuration;
+    return this.getStringAttribute('configuration');
   }
-  public set configuration(value: string | undefined) {
+  public set configuration(value: string ) {
     this._configuration = value;
+  }
+  public resetConfiguration() {
+    this._configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInput() {
+    return this._configuration
   }
 
   // database_name - computed: false, optional: false, required: true
   private _databaseName: string;
   public get databaseName() {
-    return this._databaseName;
+    return this.getStringAttribute('database_name');
   }
   public set databaseName(value: string) {
     this._databaseName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // role - computed: false, optional: false, required: true
   private _role: string;
   public get role() {
-    return this._role;
+    return this.getStringAttribute('role');
   }
   public set role(value: string) {
     this._role = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleInput() {
+    return this._role
   }
 
   // schedule - computed: false, optional: true, required: false
   private _schedule?: string;
   public get schedule() {
-    return this._schedule;
+    return this.getStringAttribute('schedule');
   }
-  public set schedule(value: string | undefined) {
+  public set schedule(value: string ) {
     this._schedule = value;
+  }
+  public resetSchedule() {
+    this._schedule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleInput() {
+    return this._schedule
   }
 
   // security_configuration - computed: false, optional: true, required: false
   private _securityConfiguration?: string;
   public get securityConfiguration() {
-    return this._securityConfiguration;
+    return this.getStringAttribute('security_configuration');
   }
-  public set securityConfiguration(value: string | undefined) {
+  public set securityConfiguration(value: string ) {
     this._securityConfiguration = value;
+  }
+  public resetSecurityConfiguration() {
+    this._securityConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityConfigurationInput() {
+    return this._securityConfiguration
   }
 
   // table_prefix - computed: false, optional: true, required: false
   private _tablePrefix?: string;
   public get tablePrefix() {
-    return this._tablePrefix;
+    return this.getStringAttribute('table_prefix');
   }
-  public set tablePrefix(value: string | undefined) {
+  public set tablePrefix(value: string ) {
     this._tablePrefix = value;
+  }
+  public resetTablePrefix() {
+    this._tablePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tablePrefixInput() {
+    return this._tablePrefix
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // catalog_target - computed: false, optional: true, required: false
   private _catalogTarget?: GlueCrawlerCatalogTarget[];
   public get catalogTarget() {
-    return this._catalogTarget;
+    return this.interpolationForAttribute('catalog_target') as any;
   }
-  public set catalogTarget(value: GlueCrawlerCatalogTarget[] | undefined) {
+  public set catalogTarget(value: GlueCrawlerCatalogTarget[] ) {
     this._catalogTarget = value;
+  }
+  public resetCatalogTarget() {
+    this._catalogTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogTargetInput() {
+    return this._catalogTarget
   }
 
   // dynamodb_target - computed: false, optional: true, required: false
   private _dynamodbTarget?: GlueCrawlerDynamodbTarget[];
   public get dynamodbTarget() {
-    return this._dynamodbTarget;
+    return this.interpolationForAttribute('dynamodb_target') as any;
   }
-  public set dynamodbTarget(value: GlueCrawlerDynamodbTarget[] | undefined) {
+  public set dynamodbTarget(value: GlueCrawlerDynamodbTarget[] ) {
     this._dynamodbTarget = value;
+  }
+  public resetDynamodbTarget() {
+    this._dynamodbTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamodbTargetInput() {
+    return this._dynamodbTarget
   }
 
   // jdbc_target - computed: false, optional: true, required: false
   private _jdbcTarget?: GlueCrawlerJdbcTarget[];
   public get jdbcTarget() {
-    return this._jdbcTarget;
+    return this.interpolationForAttribute('jdbc_target') as any;
   }
-  public set jdbcTarget(value: GlueCrawlerJdbcTarget[] | undefined) {
+  public set jdbcTarget(value: GlueCrawlerJdbcTarget[] ) {
     this._jdbcTarget = value;
+  }
+  public resetJdbcTarget() {
+    this._jdbcTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jdbcTargetInput() {
+    return this._jdbcTarget
   }
 
   // s3_target - computed: false, optional: true, required: false
   private _s3Target?: GlueCrawlerS3Target[];
   public get s3Target() {
-    return this._s3Target;
+    return this.interpolationForAttribute('s3_target') as any;
   }
-  public set s3Target(value: GlueCrawlerS3Target[] | undefined) {
+  public set s3Target(value: GlueCrawlerS3Target[] ) {
     this._s3Target = value;
+  }
+  public resetS3Target() {
+    this._s3Target = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3TargetInput() {
+    return this._s3Target
   }
 
   // schema_change_policy - computed: false, optional: true, required: false
   private _schemaChangePolicy?: GlueCrawlerSchemaChangePolicy[];
   public get schemaChangePolicy() {
-    return this._schemaChangePolicy;
+    return this.interpolationForAttribute('schema_change_policy') as any;
   }
-  public set schemaChangePolicy(value: GlueCrawlerSchemaChangePolicy[] | undefined) {
+  public set schemaChangePolicy(value: GlueCrawlerSchemaChangePolicy[] ) {
     this._schemaChangePolicy = value;
+  }
+  public resetSchemaChangePolicy() {
+    this._schemaChangePolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaChangePolicyInput() {
+    return this._schemaChangePolicy
   }
 
   // =========

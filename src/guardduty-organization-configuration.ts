@@ -42,28 +42,32 @@ export class GuarddutyOrganizationConfiguration extends TerraformResource {
   // auto_enable - computed: false, optional: false, required: true
   private _autoEnable: boolean;
   public get autoEnable() {
-    return this._autoEnable;
+    return this.getBooleanAttribute('auto_enable');
   }
   public set autoEnable(value: boolean) {
     this._autoEnable = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoEnableInput() {
+    return this._autoEnable
   }
 
   // detector_id - computed: false, optional: false, required: true
   private _detectorId: string;
   public get detectorId() {
-    return this._detectorId;
+    return this.getStringAttribute('detector_id');
   }
   public set detectorId(value: string) {
     this._detectorId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get detectorIdInput() {
+    return this._detectorId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

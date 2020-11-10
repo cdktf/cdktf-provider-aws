@@ -87,13 +87,20 @@ export class Ami extends TerraformResource {
   // architecture - computed: false, optional: true, required: false
   private _architecture?: string;
   public get architecture() {
-    return this._architecture;
+    return this.getStringAttribute('architecture');
   }
-  public set architecture(value: string | undefined) {
+  public set architecture(value: string ) {
     this._architecture = value;
   }
+  public resetArchitecture() {
+    this._architecture = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get architectureInput() {
+    return this._architecture
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -101,49 +108,73 @@ export class Ami extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // ena_support - computed: false, optional: true, required: false
   private _enaSupport?: boolean;
   public get enaSupport() {
-    return this._enaSupport;
+    return this.getBooleanAttribute('ena_support');
   }
-  public set enaSupport(value: boolean | undefined) {
+  public set enaSupport(value: boolean ) {
     this._enaSupport = value;
+  }
+  public resetEnaSupport() {
+    this._enaSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enaSupportInput() {
+    return this._enaSupport
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // image_location - computed: true, optional: true, required: false
   private _imageLocation?: string;
   public get imageLocation() {
-    return this._imageLocation ?? this.getStringAttribute('image_location');
+    return this.getStringAttribute('image_location');
   }
-  public set imageLocation(value: string | undefined) {
+  public set imageLocation(value: string) {
     this._imageLocation = value;
+  }
+  public resetImageLocation() {
+    this._imageLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageLocationInput() {
+    return this._imageLocation
   }
 
   // kernel_id - computed: false, optional: true, required: false
   private _kernelId?: string;
   public get kernelId() {
-    return this._kernelId;
+    return this.getStringAttribute('kernel_id');
   }
-  public set kernelId(value: string | undefined) {
+  public set kernelId(value: string ) {
     this._kernelId = value;
   }
+  public resetKernelId() {
+    this._kernelId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kernelIdInput() {
+    return this._kernelId
+  }
 
-  // manage_ebs_snapshots - computed: true, optional: false, required: true
+  // manage_ebs_snapshots - computed: true, optional: false, required: false
   public get manageEbsSnapshots() {
     return this.getBooleanAttribute('manage_ebs_snapshots');
   }
@@ -151,31 +182,49 @@ export class Ami extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // ramdisk_id - computed: false, optional: true, required: false
   private _ramdiskId?: string;
   public get ramdiskId() {
-    return this._ramdiskId;
+    return this.getStringAttribute('ramdisk_id');
   }
-  public set ramdiskId(value: string | undefined) {
+  public set ramdiskId(value: string ) {
     this._ramdiskId = value;
+  }
+  public resetRamdiskId() {
+    this._ramdiskId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ramdiskIdInput() {
+    return this._ramdiskId
   }
 
   // root_device_name - computed: false, optional: true, required: false
   private _rootDeviceName?: string;
   public get rootDeviceName() {
-    return this._rootDeviceName;
+    return this.getStringAttribute('root_device_name');
   }
-  public set rootDeviceName(value: string | undefined) {
+  public set rootDeviceName(value: string ) {
     this._rootDeviceName = value;
   }
+  public resetRootDeviceName() {
+    this._rootDeviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rootDeviceNameInput() {
+    return this._rootDeviceName
+  }
 
-  // root_snapshot_id - computed: true, optional: false, required: true
+  // root_snapshot_id - computed: true, optional: false, required: false
   public get rootSnapshotId() {
     return this.getStringAttribute('root_snapshot_id');
   }
@@ -183,55 +232,97 @@ export class Ami extends TerraformResource {
   // sriov_net_support - computed: false, optional: true, required: false
   private _sriovNetSupport?: string;
   public get sriovNetSupport() {
-    return this._sriovNetSupport;
+    return this.getStringAttribute('sriov_net_support');
   }
-  public set sriovNetSupport(value: string | undefined) {
+  public set sriovNetSupport(value: string ) {
     this._sriovNetSupport = value;
+  }
+  public resetSriovNetSupport() {
+    this._sriovNetSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sriovNetSupportInput() {
+    return this._sriovNetSupport
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // virtualization_type - computed: false, optional: true, required: false
   private _virtualizationType?: string;
   public get virtualizationType() {
-    return this._virtualizationType;
+    return this.getStringAttribute('virtualization_type');
   }
-  public set virtualizationType(value: string | undefined) {
+  public set virtualizationType(value: string ) {
     this._virtualizationType = value;
+  }
+  public resetVirtualizationType() {
+    this._virtualizationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualizationTypeInput() {
+    return this._virtualizationType
   }
 
   // ebs_block_device - computed: false, optional: true, required: false
   private _ebsBlockDevice?: AmiEbsBlockDevice[];
   public get ebsBlockDevice() {
-    return this._ebsBlockDevice;
+    return this.interpolationForAttribute('ebs_block_device') as any;
   }
-  public set ebsBlockDevice(value: AmiEbsBlockDevice[] | undefined) {
+  public set ebsBlockDevice(value: AmiEbsBlockDevice[] ) {
     this._ebsBlockDevice = value;
+  }
+  public resetEbsBlockDevice() {
+    this._ebsBlockDevice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsBlockDeviceInput() {
+    return this._ebsBlockDevice
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
   private _ephemeralBlockDevice?: AmiEphemeralBlockDevice[];
   public get ephemeralBlockDevice() {
-    return this._ephemeralBlockDevice;
+    return this.interpolationForAttribute('ephemeral_block_device') as any;
   }
-  public set ephemeralBlockDevice(value: AmiEphemeralBlockDevice[] | undefined) {
+  public set ephemeralBlockDevice(value: AmiEphemeralBlockDevice[] ) {
     this._ephemeralBlockDevice = value;
+  }
+  public resetEphemeralBlockDevice() {
+    this._ephemeralBlockDevice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ephemeralBlockDeviceInput() {
+    return this._ephemeralBlockDevice
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: AmiTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: AmiTimeouts | undefined) {
+  public set timeouts(value: AmiTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

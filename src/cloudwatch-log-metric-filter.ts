@@ -51,48 +51,60 @@ export class CloudwatchLogMetricFilter extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // log_group_name - computed: false, optional: false, required: true
   private _logGroupName: string;
   public get logGroupName() {
-    return this._logGroupName;
+    return this.getStringAttribute('log_group_name');
   }
   public set logGroupName(value: string) {
     this._logGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logGroupNameInput() {
+    return this._logGroupName
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // pattern - computed: false, optional: false, required: true
   private _pattern: string;
   public get pattern() {
-    return this._pattern;
+    return this.getStringAttribute('pattern');
   }
   public set pattern(value: string) {
     this._pattern = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patternInput() {
+    return this._pattern
   }
 
   // metric_transformation - computed: false, optional: false, required: true
   private _metricTransformation: CloudwatchLogMetricFilterMetricTransformation[];
   public get metricTransformation() {
-    return this._metricTransformation;
+    return this.interpolationForAttribute('metric_transformation') as any;
   }
   public set metricTransformation(value: CloudwatchLogMetricFilterMetricTransformation[]) {
     this._metricTransformation = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricTransformationInput() {
+    return this._metricTransformation
   }
 
   // =========

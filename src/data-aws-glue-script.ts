@@ -61,29 +61,32 @@ export class DataAwsGlueScript extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // language - computed: false, optional: true, required: false
   private _language?: string;
   public get language() {
-    return this._language;
+    return this.getStringAttribute('language');
   }
-  public set language(value: string | undefined) {
+  public set language(value: string ) {
     this._language = value;
   }
+  public resetLanguage() {
+    this._language = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get languageInput() {
+    return this._language
+  }
 
-  // python_script - computed: true, optional: false, required: true
+  // python_script - computed: true, optional: false, required: false
   public get pythonScript() {
     return this.getStringAttribute('python_script');
   }
 
-  // scala_code - computed: true, optional: false, required: true
+  // scala_code - computed: true, optional: false, required: false
   public get scalaCode() {
     return this.getStringAttribute('scala_code');
   }
@@ -91,19 +94,27 @@ export class DataAwsGlueScript extends TerraformDataSource {
   // dag_edge - computed: false, optional: false, required: true
   private _dagEdge: DataAwsGlueScriptDagEdge[];
   public get dagEdge() {
-    return this._dagEdge;
+    return this.interpolationForAttribute('dag_edge') as any;
   }
   public set dagEdge(value: DataAwsGlueScriptDagEdge[]) {
     this._dagEdge = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dagEdgeInput() {
+    return this._dagEdge
   }
 
   // dag_node - computed: false, optional: false, required: true
   private _dagNode: DataAwsGlueScriptDagNode[];
   public get dagNode() {
-    return this._dagNode;
+    return this.interpolationForAttribute('dag_node') as any;
   }
   public set dagNode(value: DataAwsGlueScriptDagNode[]) {
     this._dagNode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dagNodeInput() {
+    return this._dagNode
   }
 
   // =========

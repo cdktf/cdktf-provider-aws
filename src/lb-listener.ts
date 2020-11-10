@@ -119,7 +119,7 @@ export class LbListener extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -127,73 +127,109 @@ export class LbListener extends TerraformResource {
   // certificate_arn - computed: false, optional: true, required: false
   private _certificateArn?: string;
   public get certificateArn() {
-    return this._certificateArn;
+    return this.getStringAttribute('certificate_arn');
   }
-  public set certificateArn(value: string | undefined) {
+  public set certificateArn(value: string ) {
     this._certificateArn = value;
+  }
+  public resetCertificateArn() {
+    this._certificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateArnInput() {
+    return this._certificateArn
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // load_balancer_arn - computed: false, optional: false, required: true
   private _loadBalancerArn: string;
   public get loadBalancerArn() {
-    return this._loadBalancerArn;
+    return this.getStringAttribute('load_balancer_arn');
   }
   public set loadBalancerArn(value: string) {
     this._loadBalancerArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerArnInput() {
+    return this._loadBalancerArn
   }
 
   // port - computed: false, optional: false, required: true
   private _port: number;
   public get port() {
-    return this._port;
+    return this.getNumberAttribute('port');
   }
   public set port(value: number) {
     this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port
   }
 
   // protocol - computed: false, optional: true, required: false
   private _protocol?: string;
   public get protocol() {
-    return this._protocol;
+    return this.getStringAttribute('protocol');
   }
-  public set protocol(value: string | undefined) {
+  public set protocol(value: string ) {
     this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol
   }
 
   // ssl_policy - computed: true, optional: true, required: false
   private _sslPolicy?: string;
   public get sslPolicy() {
-    return this._sslPolicy ?? this.getStringAttribute('ssl_policy');
+    return this.getStringAttribute('ssl_policy');
   }
-  public set sslPolicy(value: string | undefined) {
+  public set sslPolicy(value: string) {
     this._sslPolicy = value;
+  }
+  public resetSslPolicy() {
+    this._sslPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslPolicyInput() {
+    return this._sslPolicy
   }
 
   // default_action - computed: false, optional: false, required: true
   private _defaultAction: LbListenerDefaultAction[];
   public get defaultAction() {
-    return this._defaultAction;
+    return this.interpolationForAttribute('default_action') as any;
   }
   public set defaultAction(value: LbListenerDefaultAction[]) {
     this._defaultAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultActionInput() {
+    return this._defaultAction
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: LbListenerTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: LbListenerTimeouts | undefined) {
+  public set timeouts(value: LbListenerTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

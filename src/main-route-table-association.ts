@@ -40,15 +40,11 @@ export class MainRouteTableAssociation extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // original_route_table_id - computed: true, optional: false, required: true
+  // original_route_table_id - computed: true, optional: false, required: false
   public get originalRouteTableId() {
     return this.getStringAttribute('original_route_table_id');
   }
@@ -56,19 +52,27 @@ export class MainRouteTableAssociation extends TerraformResource {
   // route_table_id - computed: false, optional: false, required: true
   private _routeTableId: string;
   public get routeTableId() {
-    return this._routeTableId;
+    return this.getStringAttribute('route_table_id');
   }
   public set routeTableId(value: string) {
     this._routeTableId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeTableIdInput() {
+    return this._routeTableId
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // =========

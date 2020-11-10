@@ -40,37 +40,37 @@ export class DataAwsIamPolicy extends TerraformDataSource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this._arn;
+    return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn
+  }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // policy - computed: true, optional: false, required: true
+  // policy - computed: true, optional: false, required: false
   public get policy() {
     return this.getStringAttribute('policy');
   }

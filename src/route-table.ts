@@ -55,15 +55,11 @@ export class RouteTable extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -71,37 +67,62 @@ export class RouteTable extends TerraformResource {
   // propagating_vgws - computed: true, optional: true, required: false
   private _propagatingVgws?: string[];
   public get propagatingVgws() {
-    return this._propagatingVgws ?? this.getListAttribute('propagating_vgws');
+    return this.getListAttribute('propagating_vgws');
   }
-  public set propagatingVgws(value: string[] | undefined) {
+  public set propagatingVgws(value: string[]) {
     this._propagatingVgws = value;
+  }
+  public resetPropagatingVgws() {
+    this._propagatingVgws = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propagatingVgwsInput() {
+    return this._propagatingVgws
   }
 
   // route - computed: true, optional: true, required: false
   private _route?: RouteTableRoute[]
-  public get route(): RouteTableRoute[] | undefined {
-    return this._route; // Getting the computed value is not yet implemented
+  public get route(): RouteTableRoute[] {
+    return this.interpolationForAttribute('route') as any; // Getting the computed value is not yet implemented
   }
-  public set route(value: RouteTableRoute[] | undefined) {
+  public set route(value: RouteTableRoute[]) {
     this._route = value;
+  }
+  public resetRoute() {
+    this._route = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeInput() {
+    return this._route
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // =========

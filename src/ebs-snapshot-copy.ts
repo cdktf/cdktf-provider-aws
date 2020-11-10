@@ -47,12 +47,12 @@ export class EbsSnapshotCopy extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // data_encryption_key_id - computed: true, optional: false, required: true
+  // data_encryption_key_id - computed: true, optional: false, required: false
   public get dataEncryptionKeyId() {
     return this.getStringAttribute('data_encryption_key_id');
   }
@@ -60,45 +60,62 @@ export class EbsSnapshotCopy extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // encrypted - computed: false, optional: true, required: false
   private _encrypted?: boolean;
   public get encrypted() {
-    return this._encrypted;
+    return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | undefined) {
+  public set encrypted(value: boolean ) {
     this._encrypted = value;
+  }
+  public resetEncrypted() {
+    this._encrypted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptedInput() {
+    return this._encrypted
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId;
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string ) {
     this._kmsKeyId = value;
   }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
+  }
 
-  // owner_alias - computed: true, optional: false, required: true
+  // owner_alias - computed: true, optional: false, required: false
   public get ownerAlias() {
     return this.getStringAttribute('owner_alias');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -106,36 +123,51 @@ export class EbsSnapshotCopy extends TerraformResource {
   // source_region - computed: false, optional: false, required: true
   private _sourceRegion: string;
   public get sourceRegion() {
-    return this._sourceRegion;
+    return this.getStringAttribute('source_region');
   }
   public set sourceRegion(value: string) {
     this._sourceRegion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceRegionInput() {
+    return this._sourceRegion
   }
 
   // source_snapshot_id - computed: false, optional: false, required: true
   private _sourceSnapshotId: string;
   public get sourceSnapshotId() {
-    return this._sourceSnapshotId;
+    return this.getStringAttribute('source_snapshot_id');
   }
   public set sourceSnapshotId(value: string) {
     this._sourceSnapshotId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceSnapshotIdInput() {
+    return this._sourceSnapshotId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // volume_id - computed: true, optional: false, required: true
+  // volume_id - computed: true, optional: false, required: false
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
 
-  // volume_size - computed: true, optional: false, required: true
+  // volume_size - computed: true, optional: false, required: false
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }

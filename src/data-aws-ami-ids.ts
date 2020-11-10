@@ -53,22 +53,25 @@ export class DataAwsAmiIds extends TerraformDataSource {
   // executable_users - computed: false, optional: true, required: false
   private _executableUsers?: string[];
   public get executableUsers() {
-    return this._executableUsers;
+    return this.getListAttribute('executable_users');
   }
-  public set executableUsers(value: string[] | undefined) {
+  public set executableUsers(value: string[] ) {
     this._executableUsers = value;
+  }
+  public resetExecutableUsers() {
+    this._executableUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executableUsersInput() {
+    return this._executableUsers
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ids - computed: true, optional: false, required: true
+  // ids - computed: true, optional: false, required: false
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -76,37 +79,62 @@ export class DataAwsAmiIds extends TerraformDataSource {
   // name_regex - computed: false, optional: true, required: false
   private _nameRegex?: string;
   public get nameRegex() {
-    return this._nameRegex;
+    return this.getStringAttribute('name_regex');
   }
-  public set nameRegex(value: string | undefined) {
+  public set nameRegex(value: string ) {
     this._nameRegex = value;
+  }
+  public resetNameRegex() {
+    this._nameRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameRegexInput() {
+    return this._nameRegex
   }
 
   // owners - computed: false, optional: false, required: true
   private _owners: string[];
   public get owners() {
-    return this._owners;
+    return this.getListAttribute('owners');
   }
   public set owners(value: string[]) {
     this._owners = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownersInput() {
+    return this._owners
   }
 
   // sort_ascending - computed: false, optional: true, required: false
   private _sortAscending?: boolean;
   public get sortAscending() {
-    return this._sortAscending;
+    return this.getBooleanAttribute('sort_ascending');
   }
-  public set sortAscending(value: boolean | undefined) {
+  public set sortAscending(value: boolean ) {
     this._sortAscending = value;
+  }
+  public resetSortAscending() {
+    this._sortAscending = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortAscendingInput() {
+    return this._sortAscending
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsAmiIdsFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsAmiIdsFilter[] | undefined) {
+  public set filter(value: DataAwsAmiIdsFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

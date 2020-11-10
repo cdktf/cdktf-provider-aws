@@ -51,36 +51,43 @@ export class WafSizeConstraintSet extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // size_constraints - computed: false, optional: true, required: false
   private _sizeConstraints?: WafSizeConstraintSetSizeConstraints[];
   public get sizeConstraints() {
-    return this._sizeConstraints;
+    return this.interpolationForAttribute('size_constraints') as any;
   }
-  public set sizeConstraints(value: WafSizeConstraintSetSizeConstraints[] | undefined) {
+  public set sizeConstraints(value: WafSizeConstraintSetSizeConstraints[] ) {
     this._sizeConstraints = value;
+  }
+  public resetSizeConstraints() {
+    this._sizeConstraints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeConstraintsInput() {
+    return this._sizeConstraints
   }
 
   // =========

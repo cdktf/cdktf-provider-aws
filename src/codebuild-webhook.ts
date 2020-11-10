@@ -54,22 +54,25 @@ export class CodebuildWebhook extends TerraformResource {
   // branch_filter - computed: false, optional: true, required: false
   private _branchFilter?: string;
   public get branchFilter() {
-    return this._branchFilter;
+    return this.getStringAttribute('branch_filter');
   }
-  public set branchFilter(value: string | undefined) {
+  public set branchFilter(value: string ) {
     this._branchFilter = value;
+  }
+  public resetBranchFilter() {
+    this._branchFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchFilterInput() {
+    return this._branchFilter
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // payload_url - computed: true, optional: false, required: true
+  // payload_url - computed: true, optional: false, required: false
   public get payloadUrl() {
     return this.getStringAttribute('payload_url');
   }
@@ -77,18 +80,22 @@ export class CodebuildWebhook extends TerraformResource {
   // project_name - computed: false, optional: false, required: true
   private _projectName: string;
   public get projectName() {
-    return this._projectName;
+    return this.getStringAttribute('project_name');
   }
   public set projectName(value: string) {
     this._projectName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get projectNameInput() {
+    return this._projectName
+  }
 
-  // secret - computed: true, optional: false, required: true
+  // secret - computed: true, optional: false, required: false
   public get secret() {
     return this.getStringAttribute('secret');
   }
 
-  // url - computed: true, optional: false, required: true
+  // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
   }
@@ -96,10 +103,17 @@ export class CodebuildWebhook extends TerraformResource {
   // filter_group - computed: false, optional: true, required: false
   private _filterGroup?: CodebuildWebhookFilterGroup[];
   public get filterGroup() {
-    return this._filterGroup;
+    return this.interpolationForAttribute('filter_group') as any;
   }
-  public set filterGroup(value: CodebuildWebhookFilterGroup[] | undefined) {
+  public set filterGroup(value: CodebuildWebhookFilterGroup[] ) {
     this._filterGroup = value;
+  }
+  public resetFilterGroup() {
+    this._filterGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterGroupInput() {
+    return this._filterGroup
   }
 
   // =========

@@ -39,22 +39,22 @@ export class DataAwsRdsCluster extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zones - computed: true, optional: false, required: true
+  // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
 
-  // backtrack_window - computed: true, optional: false, required: true
+  // backtrack_window - computed: true, optional: false, required: false
   public get backtrackWindow() {
     return this.getNumberAttribute('backtrack_window');
   }
 
-  // backup_retention_period - computed: true, optional: false, required: true
+  // backup_retention_period - computed: true, optional: false, required: false
   public get backupRetentionPeriod() {
     return this.getNumberAttribute('backup_retention_period');
   }
@@ -62,136 +62,143 @@ export class DataAwsRdsCluster extends TerraformDataSource {
   // cluster_identifier - computed: false, optional: false, required: true
   private _clusterIdentifier: string;
   public get clusterIdentifier() {
-    return this._clusterIdentifier;
+    return this.getStringAttribute('cluster_identifier');
   }
   public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdentifierInput() {
+    return this._clusterIdentifier
+  }
 
-  // cluster_members - computed: true, optional: false, required: true
+  // cluster_members - computed: true, optional: false, required: false
   public get clusterMembers() {
     return this.getListAttribute('cluster_members');
   }
 
-  // cluster_resource_id - computed: true, optional: false, required: true
+  // cluster_resource_id - computed: true, optional: false, required: false
   public get clusterResourceId() {
     return this.getStringAttribute('cluster_resource_id');
   }
 
-  // database_name - computed: true, optional: false, required: true
+  // database_name - computed: true, optional: false, required: false
   public get databaseName() {
     return this.getStringAttribute('database_name');
   }
 
-  // db_cluster_parameter_group_name - computed: true, optional: false, required: true
+  // db_cluster_parameter_group_name - computed: true, optional: false, required: false
   public get dbClusterParameterGroupName() {
     return this.getStringAttribute('db_cluster_parameter_group_name');
   }
 
-  // db_subnet_group_name - computed: true, optional: false, required: true
+  // db_subnet_group_name - computed: true, optional: false, required: false
   public get dbSubnetGroupName() {
     return this.getStringAttribute('db_subnet_group_name');
   }
 
-  // enabled_cloudwatch_logs_exports - computed: true, optional: false, required: true
+  // enabled_cloudwatch_logs_exports - computed: true, optional: false, required: false
   public get enabledCloudwatchLogsExports() {
     return this.getListAttribute('enabled_cloudwatch_logs_exports');
   }
 
-  // endpoint - computed: true, optional: false, required: true
+  // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
 
-  // engine - computed: true, optional: false, required: true
+  // engine - computed: true, optional: false, required: false
   public get engine() {
     return this.getStringAttribute('engine');
   }
 
-  // engine_version - computed: true, optional: false, required: true
+  // engine_version - computed: true, optional: false, required: false
   public get engineVersion() {
     return this.getStringAttribute('engine_version');
   }
 
-  // final_snapshot_identifier - computed: true, optional: false, required: true
+  // final_snapshot_identifier - computed: true, optional: false, required: false
   public get finalSnapshotIdentifier() {
     return this.getStringAttribute('final_snapshot_identifier');
   }
 
-  // hosted_zone_id - computed: true, optional: false, required: true
+  // hosted_zone_id - computed: true, optional: false, required: false
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
 
-  // iam_database_authentication_enabled - computed: true, optional: false, required: true
+  // iam_database_authentication_enabled - computed: true, optional: false, required: false
   public get iamDatabaseAuthenticationEnabled() {
     return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
 
-  // iam_roles - computed: true, optional: false, required: true
+  // iam_roles - computed: true, optional: false, required: false
   public get iamRoles() {
     return this.getListAttribute('iam_roles');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // kms_key_id - computed: true, optional: false, required: true
+  // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // master_username - computed: true, optional: false, required: true
+  // master_username - computed: true, optional: false, required: false
   public get masterUsername() {
     return this.getStringAttribute('master_username');
   }
 
-  // port - computed: true, optional: false, required: true
+  // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
   }
 
-  // preferred_backup_window - computed: true, optional: false, required: true
+  // preferred_backup_window - computed: true, optional: false, required: false
   public get preferredBackupWindow() {
     return this.getStringAttribute('preferred_backup_window');
   }
 
-  // preferred_maintenance_window - computed: true, optional: false, required: true
+  // preferred_maintenance_window - computed: true, optional: false, required: false
   public get preferredMaintenanceWindow() {
     return this.getStringAttribute('preferred_maintenance_window');
   }
 
-  // reader_endpoint - computed: true, optional: false, required: true
+  // reader_endpoint - computed: true, optional: false, required: false
   public get readerEndpoint() {
     return this.getStringAttribute('reader_endpoint');
   }
 
-  // replication_source_identifier - computed: true, optional: false, required: true
+  // replication_source_identifier - computed: true, optional: false, required: false
   public get replicationSourceIdentifier() {
     return this.getStringAttribute('replication_source_identifier');
   }
 
-  // storage_encrypted - computed: true, optional: false, required: true
+  // storage_encrypted - computed: true, optional: false, required: false
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // vpc_security_group_ids - computed: true, optional: false, required: true
+  // vpc_security_group_ids - computed: true, optional: false, required: false
   public get vpcSecurityGroupIds() {
     return this.getListAttribute('vpc_security_group_ids');
   }

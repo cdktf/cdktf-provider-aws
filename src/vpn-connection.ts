@@ -22,44 +22,44 @@ export interface VpnConnectionConfig extends TerraformMetaArguments {
 }
 export class VpnConnectionRoutes extends ComplexComputedList {
 
-  // destination_cidr_block - computed: true, optional: false, required: true
+  // destination_cidr_block - computed: true, optional: false, required: false
   public get destinationCidrBlock() {
     return this.getStringAttribute('destination_cidr_block');
   }
 
-  // source - computed: true, optional: false, required: true
+  // source - computed: true, optional: false, required: false
   public get source() {
     return this.getStringAttribute('source');
   }
 
-  // state - computed: true, optional: false, required: true
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
 }
 export class VpnConnectionVgwTelemetry extends ComplexComputedList {
 
-  // accepted_route_count - computed: true, optional: false, required: true
+  // accepted_route_count - computed: true, optional: false, required: false
   public get acceptedRouteCount() {
     return this.getNumberAttribute('accepted_route_count');
   }
 
-  // last_status_change - computed: true, optional: false, required: true
+  // last_status_change - computed: true, optional: false, required: false
   public get lastStatusChange() {
     return this.getStringAttribute('last_status_change');
   }
 
-  // outside_ip_address - computed: true, optional: false, required: true
+  // outside_ip_address - computed: true, optional: false, required: false
   public get outsideIpAddress() {
     return this.getStringAttribute('outside_ip_address');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // status_message - computed: true, optional: false, required: true
+  // status_message - computed: true, optional: false, required: false
   public get statusMessage() {
     return this.getStringAttribute('status_message');
   }
@@ -100,12 +100,12 @@ export class VpnConnection extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // customer_gateway_configuration - computed: true, optional: false, required: true
+  // customer_gateway_configuration - computed: true, optional: false, required: false
   public get customerGatewayConfiguration() {
     return this.getStringAttribute('customer_gateway_configuration');
   }
@@ -113,22 +113,22 @@ export class VpnConnection extends TerraformResource {
   // customer_gateway_id - computed: false, optional: false, required: true
   private _customerGatewayId: string;
   public get customerGatewayId() {
-    return this._customerGatewayId;
+    return this.getStringAttribute('customer_gateway_id');
   }
   public set customerGatewayId(value: string) {
     this._customerGatewayId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get customerGatewayIdInput() {
+    return this._customerGatewayId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // routes - computed: true, optional: false, required: true
+  // routes - computed: true, optional: false, required: false
   public routes(index: string) {
     return new VpnConnectionRoutes(this, 'routes', index);
   }
@@ -136,22 +136,36 @@ export class VpnConnection extends TerraformResource {
   // static_routes_only - computed: true, optional: true, required: false
   private _staticRoutesOnly?: boolean;
   public get staticRoutesOnly() {
-    return this._staticRoutesOnly ?? this.getBooleanAttribute('static_routes_only');
+    return this.getBooleanAttribute('static_routes_only');
   }
-  public set staticRoutesOnly(value: boolean | undefined) {
+  public set staticRoutesOnly(value: boolean) {
     this._staticRoutesOnly = value;
+  }
+  public resetStaticRoutesOnly() {
+    this._staticRoutesOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get staticRoutesOnlyInput() {
+    return this._staticRoutesOnly
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // transit_gateway_attachment_id - computed: true, optional: false, required: true
+  // transit_gateway_attachment_id - computed: true, optional: false, required: false
   public get transitGatewayAttachmentId() {
     return this.getStringAttribute('transit_gateway_attachment_id');
   }
@@ -159,28 +173,35 @@ export class VpnConnection extends TerraformResource {
   // transit_gateway_id - computed: false, optional: true, required: false
   private _transitGatewayId?: string;
   public get transitGatewayId() {
-    return this._transitGatewayId;
+    return this.getStringAttribute('transit_gateway_id');
   }
-  public set transitGatewayId(value: string | undefined) {
+  public set transitGatewayId(value: string ) {
     this._transitGatewayId = value;
   }
+  public resetTransitGatewayId() {
+    this._transitGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayIdInput() {
+    return this._transitGatewayId
+  }
 
-  // tunnel1_address - computed: true, optional: false, required: true
+  // tunnel1_address - computed: true, optional: false, required: false
   public get tunnel1Address() {
     return this.getStringAttribute('tunnel1_address');
   }
 
-  // tunnel1_bgp_asn - computed: true, optional: false, required: true
+  // tunnel1_bgp_asn - computed: true, optional: false, required: false
   public get tunnel1BgpAsn() {
     return this.getStringAttribute('tunnel1_bgp_asn');
   }
 
-  // tunnel1_bgp_holdtime - computed: true, optional: false, required: true
+  // tunnel1_bgp_holdtime - computed: true, optional: false, required: false
   public get tunnel1BgpHoldtime() {
     return this.getNumberAttribute('tunnel1_bgp_holdtime');
   }
 
-  // tunnel1_cgw_inside_address - computed: true, optional: false, required: true
+  // tunnel1_cgw_inside_address - computed: true, optional: false, required: false
   public get tunnel1CgwInsideAddress() {
     return this.getStringAttribute('tunnel1_cgw_inside_address');
   }
@@ -188,42 +209,56 @@ export class VpnConnection extends TerraformResource {
   // tunnel1_inside_cidr - computed: true, optional: true, required: false
   private _tunnel1InsideCidr?: string;
   public get tunnel1InsideCidr() {
-    return this._tunnel1InsideCidr ?? this.getStringAttribute('tunnel1_inside_cidr');
+    return this.getStringAttribute('tunnel1_inside_cidr');
   }
-  public set tunnel1InsideCidr(value: string | undefined) {
+  public set tunnel1InsideCidr(value: string) {
     this._tunnel1InsideCidr = value;
+  }
+  public resetTunnel1InsideCidr() {
+    this._tunnel1InsideCidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1InsideCidrInput() {
+    return this._tunnel1InsideCidr
   }
 
   // tunnel1_preshared_key - computed: true, optional: true, required: false
   private _tunnel1PresharedKey?: string;
   public get tunnel1PresharedKey() {
-    return this._tunnel1PresharedKey ?? this.getStringAttribute('tunnel1_preshared_key');
+    return this.getStringAttribute('tunnel1_preshared_key');
   }
-  public set tunnel1PresharedKey(value: string | undefined) {
+  public set tunnel1PresharedKey(value: string) {
     this._tunnel1PresharedKey = value;
   }
+  public resetTunnel1PresharedKey() {
+    this._tunnel1PresharedKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1PresharedKeyInput() {
+    return this._tunnel1PresharedKey
+  }
 
-  // tunnel1_vgw_inside_address - computed: true, optional: false, required: true
+  // tunnel1_vgw_inside_address - computed: true, optional: false, required: false
   public get tunnel1VgwInsideAddress() {
     return this.getStringAttribute('tunnel1_vgw_inside_address');
   }
 
-  // tunnel2_address - computed: true, optional: false, required: true
+  // tunnel2_address - computed: true, optional: false, required: false
   public get tunnel2Address() {
     return this.getStringAttribute('tunnel2_address');
   }
 
-  // tunnel2_bgp_asn - computed: true, optional: false, required: true
+  // tunnel2_bgp_asn - computed: true, optional: false, required: false
   public get tunnel2BgpAsn() {
     return this.getStringAttribute('tunnel2_bgp_asn');
   }
 
-  // tunnel2_bgp_holdtime - computed: true, optional: false, required: true
+  // tunnel2_bgp_holdtime - computed: true, optional: false, required: false
   public get tunnel2BgpHoldtime() {
     return this.getNumberAttribute('tunnel2_bgp_holdtime');
   }
 
-  // tunnel2_cgw_inside_address - computed: true, optional: false, required: true
+  // tunnel2_cgw_inside_address - computed: true, optional: false, required: false
   public get tunnel2CgwInsideAddress() {
     return this.getStringAttribute('tunnel2_cgw_inside_address');
   }
@@ -231,22 +266,36 @@ export class VpnConnection extends TerraformResource {
   // tunnel2_inside_cidr - computed: true, optional: true, required: false
   private _tunnel2InsideCidr?: string;
   public get tunnel2InsideCidr() {
-    return this._tunnel2InsideCidr ?? this.getStringAttribute('tunnel2_inside_cidr');
+    return this.getStringAttribute('tunnel2_inside_cidr');
   }
-  public set tunnel2InsideCidr(value: string | undefined) {
+  public set tunnel2InsideCidr(value: string) {
     this._tunnel2InsideCidr = value;
+  }
+  public resetTunnel2InsideCidr() {
+    this._tunnel2InsideCidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2InsideCidrInput() {
+    return this._tunnel2InsideCidr
   }
 
   // tunnel2_preshared_key - computed: true, optional: true, required: false
   private _tunnel2PresharedKey?: string;
   public get tunnel2PresharedKey() {
-    return this._tunnel2PresharedKey ?? this.getStringAttribute('tunnel2_preshared_key');
+    return this.getStringAttribute('tunnel2_preshared_key');
   }
-  public set tunnel2PresharedKey(value: string | undefined) {
+  public set tunnel2PresharedKey(value: string) {
     this._tunnel2PresharedKey = value;
   }
+  public resetTunnel2PresharedKey() {
+    this._tunnel2PresharedKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2PresharedKeyInput() {
+    return this._tunnel2PresharedKey
+  }
 
-  // tunnel2_vgw_inside_address - computed: true, optional: false, required: true
+  // tunnel2_vgw_inside_address - computed: true, optional: false, required: false
   public get tunnel2VgwInsideAddress() {
     return this.getStringAttribute('tunnel2_vgw_inside_address');
   }
@@ -254,13 +303,17 @@ export class VpnConnection extends TerraformResource {
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
+  }
 
-  // vgw_telemetry - computed: true, optional: false, required: true
+  // vgw_telemetry - computed: true, optional: false, required: false
   public vgwTelemetry(index: string) {
     return new VpnConnectionVgwTelemetry(this, 'vgw_telemetry', index);
   }
@@ -268,10 +321,17 @@ export class VpnConnection extends TerraformResource {
   // vpn_gateway_id - computed: false, optional: true, required: false
   private _vpnGatewayId?: string;
   public get vpnGatewayId() {
-    return this._vpnGatewayId;
+    return this.getStringAttribute('vpn_gateway_id');
   }
-  public set vpnGatewayId(value: string | undefined) {
+  public set vpnGatewayId(value: string ) {
     this._vpnGatewayId = value;
+  }
+  public resetVpnGatewayId() {
+    this._vpnGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpnGatewayIdInput() {
+    return this._vpnGatewayId
   }
 
   // =========

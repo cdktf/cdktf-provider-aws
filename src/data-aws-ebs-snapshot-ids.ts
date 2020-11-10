@@ -47,15 +47,11 @@ export class DataAwsEbsSnapshotIds extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ids - computed: true, optional: false, required: true
+  // ids - computed: true, optional: false, required: false
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -63,28 +59,49 @@ export class DataAwsEbsSnapshotIds extends TerraformDataSource {
   // owners - computed: false, optional: true, required: false
   private _owners?: string[];
   public get owners() {
-    return this._owners;
+    return this.getListAttribute('owners');
   }
-  public set owners(value: string[] | undefined) {
+  public set owners(value: string[] ) {
     this._owners = value;
+  }
+  public resetOwners() {
+    this._owners = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownersInput() {
+    return this._owners
   }
 
   // restorable_by_user_ids - computed: false, optional: true, required: false
   private _restorableByUserIds?: string[];
   public get restorableByUserIds() {
-    return this._restorableByUserIds;
+    return this.getListAttribute('restorable_by_user_ids');
   }
-  public set restorableByUserIds(value: string[] | undefined) {
+  public set restorableByUserIds(value: string[] ) {
     this._restorableByUserIds = value;
+  }
+  public resetRestorableByUserIds() {
+    this._restorableByUserIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restorableByUserIdsInput() {
+    return this._restorableByUserIds
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEbsSnapshotIdsFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEbsSnapshotIdsFilter[] | undefined) {
+  public set filter(value: DataAwsEbsSnapshotIdsFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

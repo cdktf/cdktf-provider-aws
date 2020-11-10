@@ -13,17 +13,17 @@ export interface DataAwsOrganizationsOrganizationalUnitsConfig extends Terraform
 }
 export class DataAwsOrganizationsOrganizationalUnitsChildren extends ComplexComputedList {
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // id - computed: true, optional: false, required: true
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -55,27 +55,27 @@ export class DataAwsOrganizationsOrganizationalUnits extends TerraformDataSource
   // ATTRIBUTES
   // ==========
 
-  // children - computed: true, optional: false, required: true
+  // children - computed: true, optional: false, required: false
   public children(index: string) {
     return new DataAwsOrganizationsOrganizationalUnitsChildren(this, 'children', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // parent_id - computed: false, optional: false, required: true
   private _parentId: string;
   public get parentId() {
-    return this._parentId;
+    return this.getStringAttribute('parent_id');
   }
   public set parentId(value: string) {
     this._parentId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentIdInput() {
+    return this._parentId
   }
 
   // =========

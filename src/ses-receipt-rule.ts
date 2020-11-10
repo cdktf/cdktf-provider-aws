@@ -113,136 +113,224 @@ export class SesReceiptRule extends TerraformResource {
   // after - computed: false, optional: true, required: false
   private _after?: string;
   public get after() {
-    return this._after;
+    return this.getStringAttribute('after');
   }
-  public set after(value: string | undefined) {
+  public set after(value: string ) {
     this._after = value;
+  }
+  public resetAfter() {
+    this._after = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get afterInput() {
+    return this._after
   }
 
   // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this._enabled ?? this.getBooleanAttribute('enabled');
+    return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | undefined) {
+  public set enabled(value: boolean) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // recipients - computed: false, optional: true, required: false
   private _recipients?: string[];
   public get recipients() {
-    return this._recipients;
+    return this.getListAttribute('recipients');
   }
-  public set recipients(value: string[] | undefined) {
+  public set recipients(value: string[] ) {
     this._recipients = value;
+  }
+  public resetRecipients() {
+    this._recipients = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recipientsInput() {
+    return this._recipients
   }
 
   // rule_set_name - computed: false, optional: false, required: true
   private _ruleSetName: string;
   public get ruleSetName() {
-    return this._ruleSetName;
+    return this.getStringAttribute('rule_set_name');
   }
   public set ruleSetName(value: string) {
     this._ruleSetName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleSetNameInput() {
+    return this._ruleSetName
   }
 
   // scan_enabled - computed: true, optional: true, required: false
   private _scanEnabled?: boolean;
   public get scanEnabled() {
-    return this._scanEnabled ?? this.getBooleanAttribute('scan_enabled');
+    return this.getBooleanAttribute('scan_enabled');
   }
-  public set scanEnabled(value: boolean | undefined) {
+  public set scanEnabled(value: boolean) {
     this._scanEnabled = value;
+  }
+  public resetScanEnabled() {
+    this._scanEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scanEnabledInput() {
+    return this._scanEnabled
   }
 
   // tls_policy - computed: true, optional: true, required: false
   private _tlsPolicy?: string;
   public get tlsPolicy() {
-    return this._tlsPolicy ?? this.getStringAttribute('tls_policy');
+    return this.getStringAttribute('tls_policy');
   }
-  public set tlsPolicy(value: string | undefined) {
+  public set tlsPolicy(value: string) {
     this._tlsPolicy = value;
+  }
+  public resetTlsPolicy() {
+    this._tlsPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsPolicyInput() {
+    return this._tlsPolicy
   }
 
   // add_header_action - computed: false, optional: true, required: false
   private _addHeaderAction?: SesReceiptRuleAddHeaderAction[];
   public get addHeaderAction() {
-    return this._addHeaderAction;
+    return this.interpolationForAttribute('add_header_action') as any;
   }
-  public set addHeaderAction(value: SesReceiptRuleAddHeaderAction[] | undefined) {
+  public set addHeaderAction(value: SesReceiptRuleAddHeaderAction[] ) {
     this._addHeaderAction = value;
+  }
+  public resetAddHeaderAction() {
+    this._addHeaderAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addHeaderActionInput() {
+    return this._addHeaderAction
   }
 
   // bounce_action - computed: false, optional: true, required: false
   private _bounceAction?: SesReceiptRuleBounceAction[];
   public get bounceAction() {
-    return this._bounceAction;
+    return this.interpolationForAttribute('bounce_action') as any;
   }
-  public set bounceAction(value: SesReceiptRuleBounceAction[] | undefined) {
+  public set bounceAction(value: SesReceiptRuleBounceAction[] ) {
     this._bounceAction = value;
+  }
+  public resetBounceAction() {
+    this._bounceAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bounceActionInput() {
+    return this._bounceAction
   }
 
   // lambda_action - computed: false, optional: true, required: false
   private _lambdaAction?: SesReceiptRuleLambdaAction[];
   public get lambdaAction() {
-    return this._lambdaAction;
+    return this.interpolationForAttribute('lambda_action') as any;
   }
-  public set lambdaAction(value: SesReceiptRuleLambdaAction[] | undefined) {
+  public set lambdaAction(value: SesReceiptRuleLambdaAction[] ) {
     this._lambdaAction = value;
+  }
+  public resetLambdaAction() {
+    this._lambdaAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaActionInput() {
+    return this._lambdaAction
   }
 
   // s3_action - computed: false, optional: true, required: false
   private _s3Action?: SesReceiptRuleS3Action[];
   public get s3Action() {
-    return this._s3Action;
+    return this.interpolationForAttribute('s3_action') as any;
   }
-  public set s3Action(value: SesReceiptRuleS3Action[] | undefined) {
+  public set s3Action(value: SesReceiptRuleS3Action[] ) {
     this._s3Action = value;
+  }
+  public resetS3Action() {
+    this._s3Action = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3ActionInput() {
+    return this._s3Action
   }
 
   // sns_action - computed: false, optional: true, required: false
   private _snsAction?: SesReceiptRuleSnsAction[];
   public get snsAction() {
-    return this._snsAction;
+    return this.interpolationForAttribute('sns_action') as any;
   }
-  public set snsAction(value: SesReceiptRuleSnsAction[] | undefined) {
+  public set snsAction(value: SesReceiptRuleSnsAction[] ) {
     this._snsAction = value;
+  }
+  public resetSnsAction() {
+    this._snsAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snsActionInput() {
+    return this._snsAction
   }
 
   // stop_action - computed: false, optional: true, required: false
   private _stopAction?: SesReceiptRuleStopAction[];
   public get stopAction() {
-    return this._stopAction;
+    return this.interpolationForAttribute('stop_action') as any;
   }
-  public set stopAction(value: SesReceiptRuleStopAction[] | undefined) {
+  public set stopAction(value: SesReceiptRuleStopAction[] ) {
     this._stopAction = value;
+  }
+  public resetStopAction() {
+    this._stopAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stopActionInput() {
+    return this._stopAction
   }
 
   // workmail_action - computed: false, optional: true, required: false
   private _workmailAction?: SesReceiptRuleWorkmailAction[];
   public get workmailAction() {
-    return this._workmailAction;
+    return this.interpolationForAttribute('workmail_action') as any;
   }
-  public set workmailAction(value: SesReceiptRuleWorkmailAction[] | undefined) {
+  public set workmailAction(value: SesReceiptRuleWorkmailAction[] ) {
     this._workmailAction = value;
+  }
+  public resetWorkmailAction() {
+    this._workmailAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workmailActionInput() {
+    return this._workmailAction
   }
 
   // =========

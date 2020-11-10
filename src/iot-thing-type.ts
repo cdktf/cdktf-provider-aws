@@ -46,7 +46,7 @@ export class IotThingType extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -54,37 +54,51 @@ export class IotThingType extends TerraformResource {
   // deprecated - computed: false, optional: true, required: false
   private _deprecated?: boolean;
   public get deprecated() {
-    return this._deprecated;
+    return this.getBooleanAttribute('deprecated');
   }
-  public set deprecated(value: boolean | undefined) {
+  public set deprecated(value: boolean ) {
     this._deprecated = value;
+  }
+  public resetDeprecated() {
+    this._deprecated = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deprecatedInput() {
+    return this._deprecated
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // properties - computed: false, optional: true, required: false
   private _properties?: IotThingTypeProperties[];
   public get properties() {
-    return this._properties;
+    return this.interpolationForAttribute('properties') as any;
   }
-  public set properties(value: IotThingTypeProperties[] | undefined) {
+  public set properties(value: IotThingTypeProperties[] ) {
     this._properties = value;
+  }
+  public resetProperties() {
+    this._properties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties
   }
 
   // =========

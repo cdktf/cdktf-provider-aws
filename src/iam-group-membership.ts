@@ -44,37 +44,45 @@ export class IamGroupMembership extends TerraformResource {
   // group - computed: false, optional: false, required: true
   private _group: string;
   public get group() {
-    return this._group;
+    return this.getStringAttribute('group');
   }
   public set group(value: string) {
     this._group = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // users - computed: false, optional: false, required: true
   private _users: string[];
   public get users() {
-    return this._users;
+    return this.getListAttribute('users');
   }
   public set users(value: string[]) {
     this._users = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersInput() {
+    return this._users
   }
 
   // =========

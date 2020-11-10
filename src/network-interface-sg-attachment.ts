@@ -40,30 +40,34 @@ export class NetworkInterfaceSgAttachment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // network_interface_id - computed: false, optional: false, required: true
   private _networkInterfaceId: string;
   public get networkInterfaceId() {
-    return this._networkInterfaceId;
+    return this.getStringAttribute('network_interface_id');
   }
   public set networkInterfaceId(value: string) {
     this._networkInterfaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceIdInput() {
+    return this._networkInterfaceId
   }
 
   // security_group_id - computed: false, optional: false, required: true
   private _securityGroupId: string;
   public get securityGroupId() {
-    return this._securityGroupId;
+    return this.getStringAttribute('security_group_id');
   }
   public set securityGroupId(value: string) {
     this._securityGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdInput() {
+    return this._securityGroupId
   }
 
   // =========

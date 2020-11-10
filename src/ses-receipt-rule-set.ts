@@ -38,21 +38,21 @@ export class SesReceiptRuleSet extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // rule_set_name - computed: false, optional: false, required: true
   private _ruleSetName: string;
   public get ruleSetName() {
-    return this._ruleSetName;
+    return this.getStringAttribute('rule_set_name');
   }
   public set ruleSetName(value: string) {
     this._ruleSetName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleSetNameInput() {
+    return this._ruleSetName
   }
 
   // =========

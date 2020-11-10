@@ -41,7 +41,7 @@ export class IamOpenidConnectProvider extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -49,37 +49,45 @@ export class IamOpenidConnectProvider extends TerraformResource {
   // client_id_list - computed: false, optional: false, required: true
   private _clientIdList: string[];
   public get clientIdList() {
-    return this._clientIdList;
+    return this.getListAttribute('client_id_list');
   }
   public set clientIdList(value: string[]) {
     this._clientIdList = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdListInput() {
+    return this._clientIdList
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // thumbprint_list - computed: false, optional: false, required: true
   private _thumbprintList: string[];
   public get thumbprintList() {
-    return this._thumbprintList;
+    return this.getListAttribute('thumbprint_list');
   }
   public set thumbprintList(value: string[]) {
     this._thumbprintList = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thumbprintListInput() {
+    return this._thumbprintList
   }
 
   // url - computed: false, optional: false, required: true
   private _url: string;
   public get url() {
-    return this._url;
+    return this.getStringAttribute('url');
   }
   public set url(value: string) {
     this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url
   }
 
   // =========

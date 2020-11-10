@@ -40,20 +40,16 @@ export class Ec2TransitGatewayRouteTablePropagation extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // resource_id - computed: true, optional: false, required: true
+  // resource_id - computed: true, optional: false, required: false
   public get resourceId() {
     return this.getStringAttribute('resource_id');
   }
 
-  // resource_type - computed: true, optional: false, required: true
+  // resource_type - computed: true, optional: false, required: false
   public get resourceType() {
     return this.getStringAttribute('resource_type');
   }
@@ -61,19 +57,27 @@ export class Ec2TransitGatewayRouteTablePropagation extends TerraformResource {
   // transit_gateway_attachment_id - computed: false, optional: false, required: true
   private _transitGatewayAttachmentId: string;
   public get transitGatewayAttachmentId() {
-    return this._transitGatewayAttachmentId;
+    return this.getStringAttribute('transit_gateway_attachment_id');
   }
   public set transitGatewayAttachmentId(value: string) {
     this._transitGatewayAttachmentId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayAttachmentIdInput() {
+    return this._transitGatewayAttachmentId
   }
 
   // transit_gateway_route_table_id - computed: false, optional: false, required: true
   private _transitGatewayRouteTableId: string;
   public get transitGatewayRouteTableId() {
-    return this._transitGatewayRouteTableId;
+    return this.getStringAttribute('transit_gateway_route_table_id');
   }
   public set transitGatewayRouteTableId(value: string) {
     this._transitGatewayRouteTableId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayRouteTableIdInput() {
+    return this._transitGatewayRouteTableId
   }
 
   // =========

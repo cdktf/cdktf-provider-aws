@@ -18,27 +18,27 @@ export interface CloudhsmV2ClusterConfig extends TerraformMetaArguments {
 }
 export class CloudhsmV2ClusterClusterCertificates extends ComplexComputedList {
 
-  // aws_hardware_certificate - computed: true, optional: false, required: true
+  // aws_hardware_certificate - computed: true, optional: false, required: false
   public get awsHardwareCertificate() {
     return this.getStringAttribute('aws_hardware_certificate');
   }
 
-  // cluster_certificate - computed: true, optional: false, required: true
+  // cluster_certificate - computed: true, optional: false, required: false
   public get clusterCertificate() {
     return this.getStringAttribute('cluster_certificate');
   }
 
-  // cluster_csr - computed: true, optional: false, required: true
+  // cluster_csr - computed: true, optional: false, required: false
   public get clusterCsr() {
     return this.getStringAttribute('cluster_csr');
   }
 
-  // hsm_certificate - computed: true, optional: false, required: true
+  // hsm_certificate - computed: true, optional: false, required: false
   public get hsmCertificate() {
     return this.getStringAttribute('hsm_certificate');
   }
 
-  // manufacturer_hardware_certificate - computed: true, optional: false, required: true
+  // manufacturer_hardware_certificate - computed: true, optional: false, required: false
   public get manufacturerHardwareCertificate() {
     return this.getStringAttribute('manufacturer_hardware_certificate');
   }
@@ -79,17 +79,17 @@ export class CloudhsmV2Cluster extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // cluster_certificates - computed: true, optional: false, required: true
+  // cluster_certificates - computed: true, optional: false, required: false
   public clusterCertificates(index: string) {
     return new CloudhsmV2ClusterClusterCertificates(this, 'cluster_certificates', index);
   }
 
-  // cluster_id - computed: true, optional: false, required: true
+  // cluster_id - computed: true, optional: false, required: false
   public get clusterId() {
     return this.getStringAttribute('cluster_id');
   }
 
-  // cluster_state - computed: true, optional: false, required: true
+  // cluster_state - computed: true, optional: false, required: false
   public get clusterState() {
     return this.getStringAttribute('cluster_state');
   }
@@ -97,22 +97,22 @@ export class CloudhsmV2Cluster extends TerraformResource {
   // hsm_type - computed: false, optional: false, required: true
   private _hsmType: string;
   public get hsmType() {
-    return this._hsmType;
+    return this.getStringAttribute('hsm_type');
   }
   public set hsmType(value: string) {
     this._hsmType = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get hsmTypeInput() {
+    return this._hsmType
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // security_group_id - computed: true, optional: false, required: true
+  // security_group_id - computed: true, optional: false, required: false
   public get securityGroupId() {
     return this.getStringAttribute('security_group_id');
   }
@@ -120,31 +120,49 @@ export class CloudhsmV2Cluster extends TerraformResource {
   // source_backup_identifier - computed: false, optional: true, required: false
   private _sourceBackupIdentifier?: string;
   public get sourceBackupIdentifier() {
-    return this._sourceBackupIdentifier;
+    return this.getStringAttribute('source_backup_identifier');
   }
-  public set sourceBackupIdentifier(value: string | undefined) {
+  public set sourceBackupIdentifier(value: string ) {
     this._sourceBackupIdentifier = value;
+  }
+  public resetSourceBackupIdentifier() {
+    this._sourceBackupIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceBackupIdentifierInput() {
+    return this._sourceBackupIdentifier
   }
 
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds: string[];
   public get subnetIds() {
-    return this._subnetIds;
+    return this.getListAttribute('subnet_ids');
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -152,10 +170,17 @@ export class CloudhsmV2Cluster extends TerraformResource {
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: CloudhsmV2ClusterTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: CloudhsmV2ClusterTimeouts | undefined) {
+  public set timeouts(value: CloudhsmV2ClusterTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

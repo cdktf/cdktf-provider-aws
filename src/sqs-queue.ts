@@ -63,7 +63,7 @@ export class SqsQueue extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -71,136 +71,230 @@ export class SqsQueue extends TerraformResource {
   // content_based_deduplication - computed: false, optional: true, required: false
   private _contentBasedDeduplication?: boolean;
   public get contentBasedDeduplication() {
-    return this._contentBasedDeduplication;
+    return this.getBooleanAttribute('content_based_deduplication');
   }
-  public set contentBasedDeduplication(value: boolean | undefined) {
+  public set contentBasedDeduplication(value: boolean ) {
     this._contentBasedDeduplication = value;
+  }
+  public resetContentBasedDeduplication() {
+    this._contentBasedDeduplication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentBasedDeduplicationInput() {
+    return this._contentBasedDeduplication
   }
 
   // delay_seconds - computed: false, optional: true, required: false
   private _delaySeconds?: number;
   public get delaySeconds() {
-    return this._delaySeconds;
+    return this.getNumberAttribute('delay_seconds');
   }
-  public set delaySeconds(value: number | undefined) {
+  public set delaySeconds(value: number ) {
     this._delaySeconds = value;
+  }
+  public resetDelaySeconds() {
+    this._delaySeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delaySecondsInput() {
+    return this._delaySeconds
   }
 
   // fifo_queue - computed: false, optional: true, required: false
   private _fifoQueue?: boolean;
   public get fifoQueue() {
-    return this._fifoQueue;
+    return this.getBooleanAttribute('fifo_queue');
   }
-  public set fifoQueue(value: boolean | undefined) {
+  public set fifoQueue(value: boolean ) {
     this._fifoQueue = value;
+  }
+  public resetFifoQueue() {
+    this._fifoQueue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fifoQueueInput() {
+    return this._fifoQueue
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_data_key_reuse_period_seconds - computed: true, optional: true, required: false
   private _kmsDataKeyReusePeriodSeconds?: number;
   public get kmsDataKeyReusePeriodSeconds() {
-    return this._kmsDataKeyReusePeriodSeconds ?? this.getNumberAttribute('kms_data_key_reuse_period_seconds');
+    return this.getNumberAttribute('kms_data_key_reuse_period_seconds');
   }
-  public set kmsDataKeyReusePeriodSeconds(value: number | undefined) {
+  public set kmsDataKeyReusePeriodSeconds(value: number) {
     this._kmsDataKeyReusePeriodSeconds = value;
+  }
+  public resetKmsDataKeyReusePeriodSeconds() {
+    this._kmsDataKeyReusePeriodSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsDataKeyReusePeriodSecondsInput() {
+    return this._kmsDataKeyReusePeriodSeconds
   }
 
   // kms_master_key_id - computed: false, optional: true, required: false
   private _kmsMasterKeyId?: string;
   public get kmsMasterKeyId() {
-    return this._kmsMasterKeyId;
+    return this.getStringAttribute('kms_master_key_id');
   }
-  public set kmsMasterKeyId(value: string | undefined) {
+  public set kmsMasterKeyId(value: string ) {
     this._kmsMasterKeyId = value;
+  }
+  public resetKmsMasterKeyId() {
+    this._kmsMasterKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsMasterKeyIdInput() {
+    return this._kmsMasterKeyId
   }
 
   // max_message_size - computed: false, optional: true, required: false
   private _maxMessageSize?: number;
   public get maxMessageSize() {
-    return this._maxMessageSize;
+    return this.getNumberAttribute('max_message_size');
   }
-  public set maxMessageSize(value: number | undefined) {
+  public set maxMessageSize(value: number ) {
     this._maxMessageSize = value;
+  }
+  public resetMaxMessageSize() {
+    this._maxMessageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxMessageSizeInput() {
+    return this._maxMessageSize
   }
 
   // message_retention_seconds - computed: false, optional: true, required: false
   private _messageRetentionSeconds?: number;
   public get messageRetentionSeconds() {
-    return this._messageRetentionSeconds;
+    return this.getNumberAttribute('message_retention_seconds');
   }
-  public set messageRetentionSeconds(value: number | undefined) {
+  public set messageRetentionSeconds(value: number ) {
     this._messageRetentionSeconds = value;
+  }
+  public resetMessageRetentionSeconds() {
+    this._messageRetentionSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageRetentionSecondsInput() {
+    return this._messageRetentionSeconds
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this._policy ?? this.getStringAttribute('policy');
+    return this.getStringAttribute('policy');
   }
-  public set policy(value: string | undefined) {
+  public set policy(value: string) {
     this._policy = value;
+  }
+  public resetPolicy() {
+    this._policy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // receive_wait_time_seconds - computed: false, optional: true, required: false
   private _receiveWaitTimeSeconds?: number;
   public get receiveWaitTimeSeconds() {
-    return this._receiveWaitTimeSeconds;
+    return this.getNumberAttribute('receive_wait_time_seconds');
   }
-  public set receiveWaitTimeSeconds(value: number | undefined) {
+  public set receiveWaitTimeSeconds(value: number ) {
     this._receiveWaitTimeSeconds = value;
+  }
+  public resetReceiveWaitTimeSeconds() {
+    this._receiveWaitTimeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get receiveWaitTimeSecondsInput() {
+    return this._receiveWaitTimeSeconds
   }
 
   // redrive_policy - computed: false, optional: true, required: false
   private _redrivePolicy?: string;
   public get redrivePolicy() {
-    return this._redrivePolicy;
+    return this.getStringAttribute('redrive_policy');
   }
-  public set redrivePolicy(value: string | undefined) {
+  public set redrivePolicy(value: string ) {
     this._redrivePolicy = value;
+  }
+  public resetRedrivePolicy() {
+    this._redrivePolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redrivePolicyInput() {
+    return this._redrivePolicy
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // visibility_timeout_seconds - computed: false, optional: true, required: false
   private _visibilityTimeoutSeconds?: number;
   public get visibilityTimeoutSeconds() {
-    return this._visibilityTimeoutSeconds;
+    return this.getNumberAttribute('visibility_timeout_seconds');
   }
-  public set visibilityTimeoutSeconds(value: number | undefined) {
+  public set visibilityTimeoutSeconds(value: number ) {
     this._visibilityTimeoutSeconds = value;
+  }
+  public resetVisibilityTimeoutSeconds() {
+    this._visibilityTimeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get visibilityTimeoutSecondsInput() {
+    return this._visibilityTimeoutSeconds
   }
 
   // =========

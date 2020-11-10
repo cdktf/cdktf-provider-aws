@@ -52,46 +52,64 @@ export class CloudwatchEventPermission extends TerraformResource {
   // action - computed: false, optional: true, required: false
   private _action?: string;
   public get action() {
-    return this._action;
+    return this.getStringAttribute('action');
   }
-  public set action(value: string | undefined) {
+  public set action(value: string ) {
     this._action = value;
+  }
+  public resetAction() {
+    this._action = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // principal - computed: false, optional: false, required: true
   private _principal: string;
   public get principal() {
-    return this._principal;
+    return this.getStringAttribute('principal');
   }
   public set principal(value: string) {
     this._principal = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal
   }
 
   // statement_id - computed: false, optional: false, required: true
   private _statementId: string;
   public get statementId() {
-    return this._statementId;
+    return this.getStringAttribute('statement_id');
   }
   public set statementId(value: string) {
     this._statementId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statementIdInput() {
+    return this._statementId
   }
 
   // condition - computed: false, optional: true, required: false
   private _condition?: CloudwatchEventPermissionCondition[];
   public get condition() {
-    return this._condition;
+    return this.interpolationForAttribute('condition') as any;
   }
-  public set condition(value: CloudwatchEventPermissionCondition[] | undefined) {
+  public set condition(value: CloudwatchEventPermissionCondition[] ) {
     this._condition = value;
+  }
+  public resetCondition() {
+    this._condition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition
   }
 
   // =========

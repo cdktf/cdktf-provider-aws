@@ -57,7 +57,7 @@ export class EfsFileSystem extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -65,13 +65,20 @@ export class EfsFileSystem extends TerraformResource {
   // creation_token - computed: true, optional: true, required: false
   private _creationToken?: string;
   public get creationToken() {
-    return this._creationToken ?? this.getStringAttribute('creation_token');
+    return this.getStringAttribute('creation_token');
   }
-  public set creationToken(value: string | undefined) {
+  public set creationToken(value: string) {
     this._creationToken = value;
   }
+  public resetCreationToken() {
+    this._creationToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get creationTokenInput() {
+    return this._creationToken
+  }
 
-  // dns_name - computed: true, optional: false, required: true
+  // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
@@ -79,82 +86,134 @@ export class EfsFileSystem extends TerraformResource {
   // encrypted - computed: true, optional: true, required: false
   private _encrypted?: boolean;
   public get encrypted() {
-    return this._encrypted ?? this.getBooleanAttribute('encrypted');
+    return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | undefined) {
+  public set encrypted(value: boolean) {
     this._encrypted = value;
+  }
+  public resetEncrypted() {
+    this._encrypted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptedInput() {
+    return this._encrypted
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // performance_mode - computed: true, optional: true, required: false
   private _performanceMode?: string;
   public get performanceMode() {
-    return this._performanceMode ?? this.getStringAttribute('performance_mode');
+    return this.getStringAttribute('performance_mode');
   }
-  public set performanceMode(value: string | undefined) {
+  public set performanceMode(value: string) {
     this._performanceMode = value;
+  }
+  public resetPerformanceMode() {
+    this._performanceMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get performanceModeInput() {
+    return this._performanceMode
   }
 
   // provisioned_throughput_in_mibps - computed: false, optional: true, required: false
   private _provisionedThroughputInMibps?: number;
   public get provisionedThroughputInMibps() {
-    return this._provisionedThroughputInMibps;
+    return this.getNumberAttribute('provisioned_throughput_in_mibps');
   }
-  public set provisionedThroughputInMibps(value: number | undefined) {
+  public set provisionedThroughputInMibps(value: number ) {
     this._provisionedThroughputInMibps = value;
+  }
+  public resetProvisionedThroughputInMibps() {
+    this._provisionedThroughputInMibps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get provisionedThroughputInMibpsInput() {
+    return this._provisionedThroughputInMibps
   }
 
   // reference_name - computed: true, optional: true, required: false
   private _referenceName?: string;
   public get referenceName() {
-    return this._referenceName ?? this.getStringAttribute('reference_name');
+    return this.getStringAttribute('reference_name');
   }
-  public set referenceName(value: string | undefined) {
+  public set referenceName(value: string) {
     this._referenceName = value;
+  }
+  public resetReferenceName() {
+    this._referenceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referenceNameInput() {
+    return this._referenceName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // throughput_mode - computed: false, optional: true, required: false
   private _throughputMode?: string;
   public get throughputMode() {
-    return this._throughputMode;
+    return this.getStringAttribute('throughput_mode');
   }
-  public set throughputMode(value: string | undefined) {
+  public set throughputMode(value: string ) {
     this._throughputMode = value;
+  }
+  public resetThroughputMode() {
+    this._throughputMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get throughputModeInput() {
+    return this._throughputMode
   }
 
   // lifecycle_policy - computed: false, optional: true, required: false
   private _lifecyclePolicy?: EfsFileSystemLifecyclePolicy[];
   public get lifecyclePolicy() {
-    return this._lifecyclePolicy;
+    return this.interpolationForAttribute('lifecycle_policy') as any;
   }
-  public set lifecyclePolicy(value: EfsFileSystemLifecyclePolicy[] | undefined) {
+  public set lifecyclePolicy(value: EfsFileSystemLifecyclePolicy[] ) {
     this._lifecyclePolicy = value;
+  }
+  public resetLifecyclePolicy() {
+    this._lifecyclePolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecyclePolicyInput() {
+    return this._lifecyclePolicy
   }
 
   // =========

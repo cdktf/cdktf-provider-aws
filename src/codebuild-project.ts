@@ -185,7 +185,7 @@ export class CodebuildProject extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -193,13 +193,20 @@ export class CodebuildProject extends TerraformResource {
   // badge_enabled - computed: false, optional: true, required: false
   private _badgeEnabled?: boolean;
   public get badgeEnabled() {
-    return this._badgeEnabled;
+    return this.getBooleanAttribute('badge_enabled');
   }
-  public set badgeEnabled(value: boolean | undefined) {
+  public set badgeEnabled(value: boolean ) {
     this._badgeEnabled = value;
   }
+  public resetBadgeEnabled() {
+    this._badgeEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get badgeEnabledInput() {
+    return this._badgeEnabled
+  }
 
-  // badge_url - computed: true, optional: false, required: true
+  // badge_url - computed: true, optional: false, required: false
   public get badgeUrl() {
     return this.getStringAttribute('badge_url');
   }
@@ -207,154 +214,247 @@ export class CodebuildProject extends TerraformResource {
   // build_timeout - computed: false, optional: true, required: false
   private _buildTimeout?: number;
   public get buildTimeout() {
-    return this._buildTimeout;
+    return this.getNumberAttribute('build_timeout');
   }
-  public set buildTimeout(value: number | undefined) {
+  public set buildTimeout(value: number ) {
     this._buildTimeout = value;
+  }
+  public resetBuildTimeout() {
+    this._buildTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get buildTimeoutInput() {
+    return this._buildTimeout
   }
 
   // description - computed: true, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description ?? this.getStringAttribute('description');
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // encryption_key - computed: true, optional: true, required: false
   private _encryptionKey?: string;
   public get encryptionKey() {
-    return this._encryptionKey ?? this.getStringAttribute('encryption_key');
+    return this.getStringAttribute('encryption_key');
   }
-  public set encryptionKey(value: string | undefined) {
+  public set encryptionKey(value: string) {
     this._encryptionKey = value;
+  }
+  public resetEncryptionKey() {
+    this._encryptionKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionKeyInput() {
+    return this._encryptionKey
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // queued_timeout - computed: false, optional: true, required: false
   private _queuedTimeout?: number;
   public get queuedTimeout() {
-    return this._queuedTimeout;
+    return this.getNumberAttribute('queued_timeout');
   }
-  public set queuedTimeout(value: number | undefined) {
+  public set queuedTimeout(value: number ) {
     this._queuedTimeout = value;
+  }
+  public resetQueuedTimeout() {
+    this._queuedTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queuedTimeoutInput() {
+    return this._queuedTimeout
   }
 
   // service_role - computed: false, optional: false, required: true
   private _serviceRole: string;
   public get serviceRole() {
-    return this._serviceRole;
+    return this.getStringAttribute('service_role');
   }
   public set serviceRole(value: string) {
     this._serviceRole = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRoleInput() {
+    return this._serviceRole
   }
 
   // source_version - computed: false, optional: true, required: false
   private _sourceVersion?: string;
   public get sourceVersion() {
-    return this._sourceVersion;
+    return this.getStringAttribute('source_version');
   }
-  public set sourceVersion(value: string | undefined) {
+  public set sourceVersion(value: string ) {
     this._sourceVersion = value;
+  }
+  public resetSourceVersion() {
+    this._sourceVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceVersionInput() {
+    return this._sourceVersion
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // artifacts - computed: false, optional: false, required: true
   private _artifacts: CodebuildProjectArtifacts[];
   public get artifacts() {
-    return this._artifacts;
+    return this.interpolationForAttribute('artifacts') as any;
   }
   public set artifacts(value: CodebuildProjectArtifacts[]) {
     this._artifacts = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get artifactsInput() {
+    return this._artifacts
   }
 
   // cache - computed: false, optional: true, required: false
   private _cache?: CodebuildProjectCache[];
   public get cache() {
-    return this._cache;
+    return this.interpolationForAttribute('cache') as any;
   }
-  public set cache(value: CodebuildProjectCache[] | undefined) {
+  public set cache(value: CodebuildProjectCache[] ) {
     this._cache = value;
+  }
+  public resetCache() {
+    this._cache = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cacheInput() {
+    return this._cache
   }
 
   // environment - computed: false, optional: false, required: true
   private _environment: CodebuildProjectEnvironment[];
   public get environment() {
-    return this._environment;
+    return this.interpolationForAttribute('environment') as any;
   }
   public set environment(value: CodebuildProjectEnvironment[]) {
     this._environment = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentInput() {
+    return this._environment
   }
 
   // logs_config - computed: false, optional: true, required: false
   private _logsConfig?: CodebuildProjectLogsConfig[];
   public get logsConfig() {
-    return this._logsConfig;
+    return this.interpolationForAttribute('logs_config') as any;
   }
-  public set logsConfig(value: CodebuildProjectLogsConfig[] | undefined) {
+  public set logsConfig(value: CodebuildProjectLogsConfig[] ) {
     this._logsConfig = value;
+  }
+  public resetLogsConfig() {
+    this._logsConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logsConfigInput() {
+    return this._logsConfig
   }
 
   // secondary_artifacts - computed: false, optional: true, required: false
   private _secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[];
   public get secondaryArtifacts() {
-    return this._secondaryArtifacts;
+    return this.interpolationForAttribute('secondary_artifacts') as any;
   }
-  public set secondaryArtifacts(value: CodebuildProjectSecondaryArtifacts[] | undefined) {
+  public set secondaryArtifacts(value: CodebuildProjectSecondaryArtifacts[] ) {
     this._secondaryArtifacts = value;
+  }
+  public resetSecondaryArtifacts() {
+    this._secondaryArtifacts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryArtifactsInput() {
+    return this._secondaryArtifacts
   }
 
   // secondary_sources - computed: false, optional: true, required: false
   private _secondarySources?: CodebuildProjectSecondarySources[];
   public get secondarySources() {
-    return this._secondarySources;
+    return this.interpolationForAttribute('secondary_sources') as any;
   }
-  public set secondarySources(value: CodebuildProjectSecondarySources[] | undefined) {
+  public set secondarySources(value: CodebuildProjectSecondarySources[] ) {
     this._secondarySources = value;
+  }
+  public resetSecondarySources() {
+    this._secondarySources = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondarySourcesInput() {
+    return this._secondarySources
   }
 
   // source - computed: false, optional: false, required: true
   private _source: CodebuildProjectSource[];
   public get source() {
-    return this._source;
+    return this.interpolationForAttribute('source') as any;
   }
   public set source(value: CodebuildProjectSource[]) {
     this._source = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source
   }
 
   // vpc_config - computed: false, optional: true, required: false
   private _vpcConfig?: CodebuildProjectVpcConfig[];
   public get vpcConfig() {
-    return this._vpcConfig;
+    return this.interpolationForAttribute('vpc_config') as any;
   }
-  public set vpcConfig(value: CodebuildProjectVpcConfig[] | undefined) {
+  public set vpcConfig(value: CodebuildProjectVpcConfig[] ) {
     this._vpcConfig = value;
+  }
+  public resetVpcConfig() {
+    this._vpcConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcConfigInput() {
+    return this._vpcConfig
   }
 
   // =========

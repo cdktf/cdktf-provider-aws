@@ -48,55 +48,77 @@ export class AthenaNamedQuery extends TerraformResource {
   // database - computed: false, optional: false, required: true
   private _database: string;
   public get database() {
-    return this._database;
+    return this.getStringAttribute('database');
   }
   public set database(value: string) {
     this._database = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // query - computed: false, optional: false, required: true
   private _query: string;
   public get query() {
-    return this._query;
+    return this.getStringAttribute('query');
   }
   public set query(value: string) {
     this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query
   }
 
   // workgroup - computed: false, optional: true, required: false
   private _workgroup?: string;
   public get workgroup() {
-    return this._workgroup;
+    return this.getStringAttribute('workgroup');
   }
-  public set workgroup(value: string | undefined) {
+  public set workgroup(value: string ) {
     this._workgroup = value;
+  }
+  public resetWorkgroup() {
+    this._workgroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workgroupInput() {
+    return this._workgroup
   }
 
   // =========

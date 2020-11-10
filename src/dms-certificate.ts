@@ -41,7 +41,7 @@ export class DmsCertificate extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // certificate_arn - computed: true, optional: false, required: true
+  // certificate_arn - computed: true, optional: false, required: false
   public get certificateArn() {
     return this.getStringAttribute('certificate_arn');
   }
@@ -49,37 +49,51 @@ export class DmsCertificate extends TerraformResource {
   // certificate_id - computed: false, optional: false, required: true
   private _certificateId: string;
   public get certificateId() {
-    return this._certificateId;
+    return this.getStringAttribute('certificate_id');
   }
   public set certificateId(value: string) {
     this._certificateId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateIdInput() {
+    return this._certificateId
   }
 
   // certificate_pem - computed: false, optional: true, required: false
   private _certificatePem?: string;
   public get certificatePem() {
-    return this._certificatePem;
+    return this.getStringAttribute('certificate_pem');
   }
-  public set certificatePem(value: string | undefined) {
+  public set certificatePem(value: string ) {
     this._certificatePem = value;
+  }
+  public resetCertificatePem() {
+    this._certificatePem = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificatePemInput() {
+    return this._certificatePem
   }
 
   // certificate_wallet - computed: false, optional: true, required: false
   private _certificateWallet?: string;
   public get certificateWallet() {
-    return this._certificateWallet;
+    return this.getStringAttribute('certificate_wallet');
   }
-  public set certificateWallet(value: string | undefined) {
+  public set certificateWallet(value: string ) {
     this._certificateWallet = value;
+  }
+  public resetCertificateWallet() {
+    this._certificateWallet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateWalletInput() {
+    return this._certificateWallet
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

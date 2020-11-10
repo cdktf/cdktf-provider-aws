@@ -43,7 +43,7 @@ export class SesDomainIdentityVerification extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -51,28 +51,35 @@ export class SesDomainIdentityVerification extends TerraformResource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: SesDomainIdentityVerificationTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: SesDomainIdentityVerificationTimeouts | undefined) {
+  public set timeouts(value: SesDomainIdentityVerificationTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

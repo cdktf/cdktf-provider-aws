@@ -46,46 +46,61 @@ export class PinpointBaiduChannel extends TerraformResource {
   // api_key - computed: false, optional: false, required: true
   private _apiKey: string;
   public get apiKey() {
-    return this._apiKey;
+    return this.getStringAttribute('api_key');
   }
   public set apiKey(value: string) {
     this._apiKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeyInput() {
+    return this._apiKey
   }
 
   // application_id - computed: false, optional: false, required: true
   private _applicationId: string;
   public get applicationId() {
-    return this._applicationId;
+    return this.getStringAttribute('application_id');
   }
   public set applicationId(value: string) {
     this._applicationId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationIdInput() {
+    return this._applicationId
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this._enabled;
+    return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | undefined) {
+  public set enabled(value: boolean ) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // secret_key - computed: false, optional: false, required: true
   private _secretKey: string;
   public get secretKey() {
-    return this._secretKey;
+    return this.getStringAttribute('secret_key');
   }
   public set secretKey(value: string) {
     this._secretKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretKeyInput() {
+    return this._secretKey
   }
 
   // =========

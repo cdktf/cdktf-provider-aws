@@ -90,7 +90,7 @@ export class Elb extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -98,117 +98,190 @@ export class Elb extends TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[];
   public get availabilityZones() {
-    return this._availabilityZones ?? this.getListAttribute('availability_zones');
+    return this.getListAttribute('availability_zones');
   }
-  public set availabilityZones(value: string[] | undefined) {
+  public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
+  }
+  public resetAvailabilityZones() {
+    this._availabilityZones = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZonesInput() {
+    return this._availabilityZones
   }
 
   // connection_draining - computed: false, optional: true, required: false
   private _connectionDraining?: boolean;
   public get connectionDraining() {
-    return this._connectionDraining;
+    return this.getBooleanAttribute('connection_draining');
   }
-  public set connectionDraining(value: boolean | undefined) {
+  public set connectionDraining(value: boolean ) {
     this._connectionDraining = value;
+  }
+  public resetConnectionDraining() {
+    this._connectionDraining = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionDrainingInput() {
+    return this._connectionDraining
   }
 
   // connection_draining_timeout - computed: false, optional: true, required: false
   private _connectionDrainingTimeout?: number;
   public get connectionDrainingTimeout() {
-    return this._connectionDrainingTimeout;
+    return this.getNumberAttribute('connection_draining_timeout');
   }
-  public set connectionDrainingTimeout(value: number | undefined) {
+  public set connectionDrainingTimeout(value: number ) {
     this._connectionDrainingTimeout = value;
+  }
+  public resetConnectionDrainingTimeout() {
+    this._connectionDrainingTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionDrainingTimeoutInput() {
+    return this._connectionDrainingTimeout
   }
 
   // cross_zone_load_balancing - computed: false, optional: true, required: false
   private _crossZoneLoadBalancing?: boolean;
   public get crossZoneLoadBalancing() {
-    return this._crossZoneLoadBalancing;
+    return this.getBooleanAttribute('cross_zone_load_balancing');
   }
-  public set crossZoneLoadBalancing(value: boolean | undefined) {
+  public set crossZoneLoadBalancing(value: boolean ) {
     this._crossZoneLoadBalancing = value;
   }
+  public resetCrossZoneLoadBalancing() {
+    this._crossZoneLoadBalancing = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crossZoneLoadBalancingInput() {
+    return this._crossZoneLoadBalancing
+  }
 
-  // dns_name - computed: true, optional: false, required: true
+  // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // idle_timeout - computed: false, optional: true, required: false
   private _idleTimeout?: number;
   public get idleTimeout() {
-    return this._idleTimeout;
+    return this.getNumberAttribute('idle_timeout');
   }
-  public set idleTimeout(value: number | undefined) {
+  public set idleTimeout(value: number ) {
     this._idleTimeout = value;
+  }
+  public resetIdleTimeout() {
+    this._idleTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idleTimeoutInput() {
+    return this._idleTimeout
   }
 
   // instances - computed: true, optional: true, required: false
   private _instances?: string[];
   public get instances() {
-    return this._instances ?? this.getListAttribute('instances');
+    return this.getListAttribute('instances');
   }
-  public set instances(value: string[] | undefined) {
+  public set instances(value: string[]) {
     this._instances = value;
+  }
+  public resetInstances() {
+    this._instances = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancesInput() {
+    return this._instances
   }
 
   // internal - computed: true, optional: true, required: false
   private _internal?: boolean;
   public get internal() {
-    return this._internal ?? this.getBooleanAttribute('internal');
+    return this.getBooleanAttribute('internal');
   }
-  public set internal(value: boolean | undefined) {
+  public set internal(value: boolean) {
     this._internal = value;
+  }
+  public resetInternal() {
+    this._internal = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalInput() {
+    return this._internal
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[];
   public get securityGroups() {
-    return this._securityGroups ?? this.getListAttribute('security_groups');
+    return this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[] | undefined) {
+  public set securityGroups(value: string[]) {
     this._securityGroups = value;
+  }
+  public resetSecurityGroups() {
+    this._securityGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupsInput() {
+    return this._securityGroups
   }
 
   // source_security_group - computed: true, optional: true, required: false
   private _sourceSecurityGroup?: string;
   public get sourceSecurityGroup() {
-    return this._sourceSecurityGroup ?? this.getStringAttribute('source_security_group');
+    return this.getStringAttribute('source_security_group');
   }
-  public set sourceSecurityGroup(value: string | undefined) {
+  public set sourceSecurityGroup(value: string) {
     this._sourceSecurityGroup = value;
   }
+  public resetSourceSecurityGroup() {
+    this._sourceSecurityGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceSecurityGroupInput() {
+    return this._sourceSecurityGroup
+  }
 
-  // source_security_group_id - computed: true, optional: false, required: true
+  // source_security_group_id - computed: true, optional: false, required: false
   public get sourceSecurityGroupId() {
     return this.getStringAttribute('source_security_group_id');
   }
@@ -216,22 +289,36 @@ export class Elb extends TerraformResource {
   // subnets - computed: true, optional: true, required: false
   private _subnets?: string[];
   public get subnets() {
-    return this._subnets ?? this.getListAttribute('subnets');
+    return this.getListAttribute('subnets');
   }
-  public set subnets(value: string[] | undefined) {
+  public set subnets(value: string[]) {
     this._subnets = value;
+  }
+  public resetSubnets() {
+    this._subnets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetsInput() {
+    return this._subnets
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // zone_id - computed: true, optional: false, required: true
+  // zone_id - computed: true, optional: false, required: false
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
@@ -239,28 +326,46 @@ export class Elb extends TerraformResource {
   // access_logs - computed: false, optional: true, required: false
   private _accessLogs?: ElbAccessLogs[];
   public get accessLogs() {
-    return this._accessLogs;
+    return this.interpolationForAttribute('access_logs') as any;
   }
-  public set accessLogs(value: ElbAccessLogs[] | undefined) {
+  public set accessLogs(value: ElbAccessLogs[] ) {
     this._accessLogs = value;
+  }
+  public resetAccessLogs() {
+    this._accessLogs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessLogsInput() {
+    return this._accessLogs
   }
 
   // health_check - computed: false, optional: true, required: false
   private _healthCheck?: ElbHealthCheck[];
   public get healthCheck() {
-    return this._healthCheck;
+    return this.interpolationForAttribute('health_check') as any;
   }
-  public set healthCheck(value: ElbHealthCheck[] | undefined) {
+  public set healthCheck(value: ElbHealthCheck[] ) {
     this._healthCheck = value;
+  }
+  public resetHealthCheck() {
+    this._healthCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckInput() {
+    return this._healthCheck
   }
 
   // listener - computed: false, optional: false, required: true
   private _listener: ElbListener[];
   public get listener() {
-    return this._listener;
+    return this.interpolationForAttribute('listener') as any;
   }
   public set listener(value: ElbListener[]) {
     this._listener = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listenerInput() {
+    return this._listener
   }
 
   // =========

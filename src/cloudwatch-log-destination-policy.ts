@@ -42,28 +42,32 @@ export class CloudwatchLogDestinationPolicy extends TerraformResource {
   // access_policy - computed: false, optional: false, required: true
   private _accessPolicy: string;
   public get accessPolicy() {
-    return this._accessPolicy;
+    return this.getStringAttribute('access_policy');
   }
   public set accessPolicy(value: string) {
     this._accessPolicy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessPolicyInput() {
+    return this._accessPolicy
   }
 
   // destination_name - computed: false, optional: false, required: true
   private _destinationName: string;
   public get destinationName() {
-    return this._destinationName;
+    return this.getStringAttribute('destination_name');
   }
   public set destinationName(value: string) {
     this._destinationName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get destinationNameInput() {
+    return this._destinationName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

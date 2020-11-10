@@ -39,17 +39,17 @@ export class DataAwsApiGatewayApiKey extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // enabled - computed: true, optional: false, required: true
+  // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
@@ -57,32 +57,43 @@ export class DataAwsApiGatewayApiKey extends TerraformDataSource {
   // id - computed: false, optional: false, required: true
   private _id: string;
   public get id() {
-    return this._id;
+    return this.getStringAttribute('id');
   }
   public set id(value: string) {
     this._id = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id
+  }
 
-  // last_updated_date - computed: true, optional: false, required: true
+  // last_updated_date - computed: true, optional: false, required: false
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // value - computed: true, optional: false, required: true
+  // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
   }

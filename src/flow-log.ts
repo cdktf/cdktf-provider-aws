@@ -57,7 +57,7 @@ export class FlowLog extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -65,109 +65,179 @@ export class FlowLog extends TerraformResource {
   // eni_id - computed: false, optional: true, required: false
   private _eniId?: string;
   public get eniId() {
-    return this._eniId;
+    return this.getStringAttribute('eni_id');
   }
-  public set eniId(value: string | undefined) {
+  public set eniId(value: string ) {
     this._eniId = value;
+  }
+  public resetEniId() {
+    this._eniId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eniIdInput() {
+    return this._eniId
   }
 
   // iam_role_arn - computed: false, optional: true, required: false
   private _iamRoleArn?: string;
   public get iamRoleArn() {
-    return this._iamRoleArn;
+    return this.getStringAttribute('iam_role_arn');
   }
-  public set iamRoleArn(value: string | undefined) {
+  public set iamRoleArn(value: string ) {
     this._iamRoleArn = value;
+  }
+  public resetIamRoleArn() {
+    this._iamRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamRoleArnInput() {
+    return this._iamRoleArn
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // log_destination - computed: true, optional: true, required: false
   private _logDestination?: string;
   public get logDestination() {
-    return this._logDestination ?? this.getStringAttribute('log_destination');
+    return this.getStringAttribute('log_destination');
   }
-  public set logDestination(value: string | undefined) {
+  public set logDestination(value: string) {
     this._logDestination = value;
+  }
+  public resetLogDestination() {
+    this._logDestination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logDestinationInput() {
+    return this._logDestination
   }
 
   // log_destination_type - computed: false, optional: true, required: false
   private _logDestinationType?: string;
   public get logDestinationType() {
-    return this._logDestinationType;
+    return this.getStringAttribute('log_destination_type');
   }
-  public set logDestinationType(value: string | undefined) {
+  public set logDestinationType(value: string ) {
     this._logDestinationType = value;
+  }
+  public resetLogDestinationType() {
+    this._logDestinationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logDestinationTypeInput() {
+    return this._logDestinationType
   }
 
   // log_format - computed: true, optional: true, required: false
   private _logFormat?: string;
   public get logFormat() {
-    return this._logFormat ?? this.getStringAttribute('log_format');
+    return this.getStringAttribute('log_format');
   }
-  public set logFormat(value: string | undefined) {
+  public set logFormat(value: string) {
     this._logFormat = value;
+  }
+  public resetLogFormat() {
+    this._logFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logFormatInput() {
+    return this._logFormat
   }
 
   // log_group_name - computed: true, optional: true, required: false
   private _logGroupName?: string;
   public get logGroupName() {
-    return this._logGroupName ?? this.getStringAttribute('log_group_name');
+    return this.getStringAttribute('log_group_name');
   }
-  public set logGroupName(value: string | undefined) {
+  public set logGroupName(value: string) {
     this._logGroupName = value;
+  }
+  public resetLogGroupName() {
+    this._logGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logGroupNameInput() {
+    return this._logGroupName
   }
 
   // max_aggregation_interval - computed: false, optional: true, required: false
   private _maxAggregationInterval?: number;
   public get maxAggregationInterval() {
-    return this._maxAggregationInterval;
+    return this.getNumberAttribute('max_aggregation_interval');
   }
-  public set maxAggregationInterval(value: number | undefined) {
+  public set maxAggregationInterval(value: number ) {
     this._maxAggregationInterval = value;
+  }
+  public resetMaxAggregationInterval() {
+    this._maxAggregationInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxAggregationIntervalInput() {
+    return this._maxAggregationInterval
   }
 
   // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string ) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // traffic_type - computed: false, optional: false, required: true
   private _trafficType: string;
   public get trafficType() {
-    return this._trafficType;
+    return this.getStringAttribute('traffic_type');
   }
   public set trafficType(value: string) {
     this._trafficType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trafficTypeInput() {
+    return this._trafficType
   }
 
   // vpc_id - computed: false, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string | undefined) {
+  public set vpcId(value: string ) {
     this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // =========

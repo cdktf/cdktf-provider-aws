@@ -37,56 +37,52 @@ export class DataAwsElasticacheReplicationGroup extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // auth_token_enabled - computed: true, optional: false, required: true
+  // auth_token_enabled - computed: true, optional: false, required: false
   public get authTokenEnabled() {
     return this.getBooleanAttribute('auth_token_enabled');
   }
 
-  // automatic_failover_enabled - computed: true, optional: false, required: true
+  // automatic_failover_enabled - computed: true, optional: false, required: false
   public get automaticFailoverEnabled() {
     return this.getBooleanAttribute('automatic_failover_enabled');
   }
 
-  // configuration_endpoint_address - computed: true, optional: false, required: true
+  // configuration_endpoint_address - computed: true, optional: false, required: false
   public get configurationEndpointAddress() {
     return this.getStringAttribute('configuration_endpoint_address');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // member_clusters - computed: true, optional: false, required: true
+  // member_clusters - computed: true, optional: false, required: false
   public get memberClusters() {
     return this.getListAttribute('member_clusters');
   }
 
-  // node_type - computed: true, optional: false, required: true
+  // node_type - computed: true, optional: false, required: false
   public get nodeType() {
     return this.getStringAttribute('node_type');
   }
 
-  // number_cache_clusters - computed: true, optional: false, required: true
+  // number_cache_clusters - computed: true, optional: false, required: false
   public get numberCacheClusters() {
     return this.getNumberAttribute('number_cache_clusters');
   }
 
-  // port - computed: true, optional: false, required: true
+  // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
   }
 
-  // primary_endpoint_address - computed: true, optional: false, required: true
+  // primary_endpoint_address - computed: true, optional: false, required: false
   public get primaryEndpointAddress() {
     return this.getStringAttribute('primary_endpoint_address');
   }
 
-  // replication_group_description - computed: true, optional: false, required: true
+  // replication_group_description - computed: true, optional: false, required: false
   public get replicationGroupDescription() {
     return this.getStringAttribute('replication_group_description');
   }
@@ -94,18 +90,22 @@ export class DataAwsElasticacheReplicationGroup extends TerraformDataSource {
   // replication_group_id - computed: false, optional: false, required: true
   private _replicationGroupId: string;
   public get replicationGroupId() {
-    return this._replicationGroupId;
+    return this.getStringAttribute('replication_group_id');
   }
   public set replicationGroupId(value: string) {
     this._replicationGroupId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get replicationGroupIdInput() {
+    return this._replicationGroupId
+  }
 
-  // snapshot_retention_limit - computed: true, optional: false, required: true
+  // snapshot_retention_limit - computed: true, optional: false, required: false
   public get snapshotRetentionLimit() {
     return this.getNumberAttribute('snapshot_retention_limit');
   }
 
-  // snapshot_window - computed: true, optional: false, required: true
+  // snapshot_window - computed: true, optional: false, required: false
   public get snapshotWindow() {
     return this.getStringAttribute('snapshot_window');
   }

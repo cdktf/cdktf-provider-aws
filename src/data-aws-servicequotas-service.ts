@@ -38,15 +38,11 @@ export class DataAwsServicequotasService extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // service_code - computed: true, optional: false, required: true
+  // service_code - computed: true, optional: false, required: false
   public get serviceCode() {
     return this.getStringAttribute('service_code');
   }
@@ -54,10 +50,14 @@ export class DataAwsServicequotasService extends TerraformDataSource {
   // service_name - computed: false, optional: false, required: true
   private _serviceName: string;
   public get serviceName() {
-    return this._serviceName;
+    return this.getStringAttribute('service_name');
   }
   public set serviceName(value: string) {
     this._serviceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNameInput() {
+    return this._serviceName
   }
 
   // =========

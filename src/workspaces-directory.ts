@@ -51,12 +51,12 @@ export class WorkspacesDirectory extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // alias - computed: true, optional: false, required: true
+  // alias - computed: true, optional: false, required: false
   public get alias() {
     return this.getStringAttribute('alias');
   }
 
-  // customer_user_name - computed: true, optional: false, required: true
+  // customer_user_name - computed: true, optional: false, required: false
   public get customerUserName() {
     return this.getStringAttribute('customer_user_name');
   }
@@ -64,47 +64,47 @@ export class WorkspacesDirectory extends TerraformResource {
   // directory_id - computed: false, optional: false, required: true
   private _directoryId: string;
   public get directoryId() {
-    return this._directoryId;
+    return this.getStringAttribute('directory_id');
   }
   public set directoryId(value: string) {
     this._directoryId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get directoryIdInput() {
+    return this._directoryId
+  }
 
-  // directory_name - computed: true, optional: false, required: true
+  // directory_name - computed: true, optional: false, required: false
   public get directoryName() {
     return this.getStringAttribute('directory_name');
   }
 
-  // directory_type - computed: true, optional: false, required: true
+  // directory_type - computed: true, optional: false, required: false
   public get directoryType() {
     return this.getStringAttribute('directory_type');
   }
 
-  // dns_ip_addresses - computed: true, optional: false, required: true
+  // dns_ip_addresses - computed: true, optional: false, required: false
   public get dnsIpAddresses() {
     return this.getListAttribute('dns_ip_addresses');
   }
 
-  // iam_role_id - computed: true, optional: false, required: true
+  // iam_role_id - computed: true, optional: false, required: false
   public get iamRoleId() {
     return this.getStringAttribute('iam_role_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ip_group_ids - computed: true, optional: false, required: true
+  // ip_group_ids - computed: true, optional: false, required: false
   public get ipGroupIds() {
     return this.getListAttribute('ip_group_ids');
   }
 
-  // registration_code - computed: true, optional: false, required: true
+  // registration_code - computed: true, optional: false, required: false
   public get registrationCode() {
     return this.getStringAttribute('registration_code');
   }
@@ -112,22 +112,36 @@ export class WorkspacesDirectory extends TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[];
   public get subnetIds() {
-    return this._subnetIds ?? this.getListAttribute('subnet_ids');
+    return this.getListAttribute('subnet_ids');
   }
-  public set subnetIds(value: string[] | undefined) {
+  public set subnetIds(value: string[]) {
     this._subnetIds = value;
+  }
+  public resetSubnetIds() {
+    this._subnetIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // workspace_security_group_id - computed: true, optional: false, required: true
+  // workspace_security_group_id - computed: true, optional: false, required: false
   public get workspaceSecurityGroupId() {
     return this.getStringAttribute('workspace_security_group_id');
   }
@@ -135,10 +149,17 @@ export class WorkspacesDirectory extends TerraformResource {
   // self_service_permissions - computed: false, optional: true, required: false
   private _selfServicePermissions?: WorkspacesDirectorySelfServicePermissions[];
   public get selfServicePermissions() {
-    return this._selfServicePermissions;
+    return this.interpolationForAttribute('self_service_permissions') as any;
   }
-  public set selfServicePermissions(value: WorkspacesDirectorySelfServicePermissions[] | undefined) {
+  public set selfServicePermissions(value: WorkspacesDirectorySelfServicePermissions[] ) {
     this._selfServicePermissions = value;
+  }
+  public resetSelfServicePermissions() {
+    this._selfServicePermissions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfServicePermissionsInput() {
+    return this._selfServicePermissions
   }
 
   // =========

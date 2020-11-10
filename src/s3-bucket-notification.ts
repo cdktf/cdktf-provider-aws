@@ -70,46 +70,67 @@ export class S3BucketNotification extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // lambda_function - computed: false, optional: true, required: false
   private _lambdaFunction?: S3BucketNotificationLambdaFunction[];
   public get lambdaFunction() {
-    return this._lambdaFunction;
+    return this.interpolationForAttribute('lambda_function') as any;
   }
-  public set lambdaFunction(value: S3BucketNotificationLambdaFunction[] | undefined) {
+  public set lambdaFunction(value: S3BucketNotificationLambdaFunction[] ) {
     this._lambdaFunction = value;
+  }
+  public resetLambdaFunction() {
+    this._lambdaFunction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaFunctionInput() {
+    return this._lambdaFunction
   }
 
   // queue - computed: false, optional: true, required: false
   private _queue?: S3BucketNotificationQueue[];
   public get queue() {
-    return this._queue;
+    return this.interpolationForAttribute('queue') as any;
   }
-  public set queue(value: S3BucketNotificationQueue[] | undefined) {
+  public set queue(value: S3BucketNotificationQueue[] ) {
     this._queue = value;
+  }
+  public resetQueue() {
+    this._queue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueInput() {
+    return this._queue
   }
 
   // topic - computed: false, optional: true, required: false
   private _topic?: S3BucketNotificationTopic[];
   public get topic() {
-    return this._topic;
+    return this.interpolationForAttribute('topic') as any;
   }
-  public set topic(value: S3BucketNotificationTopic[] | undefined) {
+  public set topic(value: S3BucketNotificationTopic[] ) {
     this._topic = value;
+  }
+  public resetTopic() {
+    this._topic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicInput() {
+    return this._topic
   }
 
   // =========

@@ -44,13 +44,20 @@ export class DataAwsRegion extends TerraformDataSource {
   // current - computed: true, optional: true, required: false
   private _current?: boolean;
   public get current() {
-    return this._current ?? this.getBooleanAttribute('current');
+    return this.getBooleanAttribute('current');
   }
-  public set current(value: boolean | undefined) {
+  public set current(value: boolean) {
     this._current = value;
   }
+  public resetCurrent() {
+    this._current = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get currentInput() {
+    return this._current
+  }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
@@ -58,28 +65,38 @@ export class DataAwsRegion extends TerraformDataSource {
   // endpoint - computed: true, optional: true, required: false
   private _endpoint?: string;
   public get endpoint() {
-    return this._endpoint ?? this.getStringAttribute('endpoint');
+    return this.getStringAttribute('endpoint');
   }
-  public set endpoint(value: string | undefined) {
+  public set endpoint(value: string) {
     this._endpoint = value;
+  }
+  public resetEndpoint() {
+    this._endpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // =========

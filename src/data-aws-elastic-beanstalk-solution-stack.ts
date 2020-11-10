@@ -40,24 +40,27 @@ export class DataAwsElasticBeanstalkSolutionStack extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean;
   public get mostRecent() {
-    return this._mostRecent;
+    return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | undefined) {
+  public set mostRecent(value: boolean ) {
     this._mostRecent = value;
   }
+  public resetMostRecent() {
+    this._mostRecent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mostRecentInput() {
+    return this._mostRecent
+  }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -65,10 +68,14 @@ export class DataAwsElasticBeanstalkSolutionStack extends TerraformDataSource {
   // name_regex - computed: false, optional: false, required: true
   private _nameRegex: string;
   public get nameRegex() {
-    return this._nameRegex;
+    return this.getStringAttribute('name_regex');
   }
   public set nameRegex(value: string) {
     this._nameRegex = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameRegexInput() {
+    return this._nameRegex
   }
 
   // =========

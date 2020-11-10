@@ -48,30 +48,30 @@ export class DataAwsRamResourceShare extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // owning_account_id - computed: true, optional: false, required: true
+  // owning_account_id - computed: true, optional: false, required: false
   public get owningAccountId() {
     return this.getStringAttribute('owning_account_id');
   }
@@ -79,33 +79,51 @@ export class DataAwsRamResourceShare extends TerraformDataSource {
   // resource_owner - computed: false, optional: false, required: true
   private _resourceOwner: string;
   public get resourceOwner() {
-    return this._resourceOwner;
+    return this.getStringAttribute('resource_owner');
   }
   public set resourceOwner(value: string) {
     this._resourceOwner = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get resourceOwnerInput() {
+    return this._resourceOwner
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsRamResourceShareFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsRamResourceShareFilter[] | undefined) {
+  public set filter(value: DataAwsRamResourceShareFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

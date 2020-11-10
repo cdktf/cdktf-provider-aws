@@ -44,48 +44,66 @@ export class IamRolePolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
   public set policy(value: string) {
     this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // role - computed: false, optional: false, required: true
   private _role: string;
   public get role() {
-    return this._role;
+    return this.getStringAttribute('role');
   }
   public set role(value: string) {
     this._role = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleInput() {
+    return this._role
   }
 
   // =========

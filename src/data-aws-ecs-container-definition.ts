@@ -43,57 +43,57 @@ export class DataAwsEcsContainerDefinition extends TerraformDataSource {
   // container_name - computed: false, optional: false, required: true
   private _containerName: string;
   public get containerName() {
-    return this._containerName;
+    return this.getStringAttribute('container_name');
   }
   public set containerName(value: string) {
     this._containerName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get containerNameInput() {
+    return this._containerName
+  }
 
-  // cpu - computed: true, optional: false, required: true
+  // cpu - computed: true, optional: false, required: false
   public get cpu() {
     return this.getNumberAttribute('cpu');
   }
 
-  // disable_networking - computed: true, optional: false, required: true
+  // disable_networking - computed: true, optional: false, required: false
   public get disableNetworking() {
     return this.getBooleanAttribute('disable_networking');
   }
 
-  // docker_labels - computed: true, optional: false, required: true
+  // docker_labels - computed: true, optional: false, required: false
   public dockerLabels(key: string): string {
     return new StringMap(this, 'docker_labels').lookup(key);
   }
 
-  // environment - computed: true, optional: false, required: true
+  // environment - computed: true, optional: false, required: false
   public environment(key: string): string {
     return new StringMap(this, 'environment').lookup(key);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // image - computed: true, optional: false, required: true
+  // image - computed: true, optional: false, required: false
   public get image() {
     return this.getStringAttribute('image');
   }
 
-  // image_digest - computed: true, optional: false, required: true
+  // image_digest - computed: true, optional: false, required: false
   public get imageDigest() {
     return this.getStringAttribute('image_digest');
   }
 
-  // memory - computed: true, optional: false, required: true
+  // memory - computed: true, optional: false, required: false
   public get memory() {
     return this.getNumberAttribute('memory');
   }
 
-  // memory_reservation - computed: true, optional: false, required: true
+  // memory_reservation - computed: true, optional: false, required: false
   public get memoryReservation() {
     return this.getNumberAttribute('memory_reservation');
   }
@@ -101,10 +101,14 @@ export class DataAwsEcsContainerDefinition extends TerraformDataSource {
   // task_definition - computed: false, optional: false, required: true
   private _taskDefinition: string;
   public get taskDefinition() {
-    return this._taskDefinition;
+    return this.getStringAttribute('task_definition');
   }
   public set taskDefinition(value: string) {
     this._taskDefinition = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get taskDefinitionInput() {
+    return this._taskDefinition
   }
 
   // =========

@@ -49,48 +49,63 @@ export class LoadBalancerPolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // load_balancer_name - computed: false, optional: false, required: true
   private _loadBalancerName: string;
   public get loadBalancerName() {
-    return this._loadBalancerName;
+    return this.getStringAttribute('load_balancer_name');
   }
   public set loadBalancerName(value: string) {
     this._loadBalancerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerNameInput() {
+    return this._loadBalancerName
   }
 
   // policy_name - computed: false, optional: false, required: true
   private _policyName: string;
   public get policyName() {
-    return this._policyName;
+    return this.getStringAttribute('policy_name');
   }
   public set policyName(value: string) {
     this._policyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyNameInput() {
+    return this._policyName
   }
 
   // policy_type_name - computed: false, optional: false, required: true
   private _policyTypeName: string;
   public get policyTypeName() {
-    return this._policyTypeName;
+    return this.getStringAttribute('policy_type_name');
   }
   public set policyTypeName(value: string) {
     this._policyTypeName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyTypeNameInput() {
+    return this._policyTypeName
   }
 
   // policy_attribute - computed: false, optional: true, required: false
   private _policyAttribute?: LoadBalancerPolicyPolicyAttribute[];
   public get policyAttribute() {
-    return this._policyAttribute;
+    return this.interpolationForAttribute('policy_attribute') as any;
   }
-  public set policyAttribute(value: LoadBalancerPolicyPolicyAttribute[] | undefined) {
+  public set policyAttribute(value: LoadBalancerPolicyPolicyAttribute[] ) {
     this._policyAttribute = value;
+  }
+  public resetPolicyAttribute() {
+    this._policyAttribute = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyAttributeInput() {
+    return this._policyAttribute
   }
 
   // =========

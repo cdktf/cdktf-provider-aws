@@ -41,7 +41,7 @@ export class DataAwsLambdaLayerVersion extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -49,37 +49,40 @@ export class DataAwsLambdaLayerVersion extends TerraformDataSource {
   // compatible_runtime - computed: false, optional: true, required: false
   private _compatibleRuntime?: string;
   public get compatibleRuntime() {
-    return this._compatibleRuntime;
+    return this.getStringAttribute('compatible_runtime');
   }
-  public set compatibleRuntime(value: string | undefined) {
+  public set compatibleRuntime(value: string ) {
     this._compatibleRuntime = value;
   }
+  public resetCompatibleRuntime() {
+    this._compatibleRuntime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compatibleRuntimeInput() {
+    return this._compatibleRuntime
+  }
 
-  // compatible_runtimes - computed: true, optional: false, required: true
+  // compatible_runtimes - computed: true, optional: false, required: false
   public get compatibleRuntimes() {
     return this.getListAttribute('compatible_runtimes');
   }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // layer_arn - computed: true, optional: false, required: true
+  // layer_arn - computed: true, optional: false, required: false
   public get layerArn() {
     return this.getStringAttribute('layer_arn');
   }
@@ -87,23 +90,27 @@ export class DataAwsLambdaLayerVersion extends TerraformDataSource {
   // layer_name - computed: false, optional: false, required: true
   private _layerName: string;
   public get layerName() {
-    return this._layerName;
+    return this.getStringAttribute('layer_name');
   }
   public set layerName(value: string) {
     this._layerName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get layerNameInput() {
+    return this._layerName
+  }
 
-  // license_info - computed: true, optional: false, required: true
+  // license_info - computed: true, optional: false, required: false
   public get licenseInfo() {
     return this.getStringAttribute('license_info');
   }
 
-  // source_code_hash - computed: true, optional: false, required: true
+  // source_code_hash - computed: true, optional: false, required: false
   public get sourceCodeHash() {
     return this.getStringAttribute('source_code_hash');
   }
 
-  // source_code_size - computed: true, optional: false, required: true
+  // source_code_size - computed: true, optional: false, required: false
   public get sourceCodeSize() {
     return this.getNumberAttribute('source_code_size');
   }
@@ -111,10 +118,17 @@ export class DataAwsLambdaLayerVersion extends TerraformDataSource {
   // version - computed: true, optional: true, required: false
   private _version?: number;
   public get version() {
-    return this._version ?? this.getNumberAttribute('version');
+    return this.getNumberAttribute('version');
   }
-  public set version(value: number | undefined) {
+  public set version(value: number) {
     this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // =========

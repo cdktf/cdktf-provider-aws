@@ -47,7 +47,7 @@ export class DxLag extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -55,36 +55,43 @@ export class DxLag extends TerraformResource {
   // connections_bandwidth - computed: false, optional: false, required: true
   private _connectionsBandwidth: string;
   public get connectionsBandwidth() {
-    return this._connectionsBandwidth;
+    return this.getStringAttribute('connections_bandwidth');
   }
   public set connectionsBandwidth(value: string) {
     this._connectionsBandwidth = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionsBandwidthInput() {
+    return this._connectionsBandwidth
   }
 
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this._forceDestroy;
+    return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | undefined) {
+  public set forceDestroy(value: boolean ) {
     this._forceDestroy = value;
   }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy
+  }
 
-  // has_logical_redundancy - computed: true, optional: false, required: true
+  // has_logical_redundancy - computed: true, optional: false, required: false
   public get hasLogicalRedundancy() {
     return this.getStringAttribute('has_logical_redundancy');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // jumbo_frame_capable - computed: true, optional: false, required: true
+  // jumbo_frame_capable - computed: true, optional: false, required: false
   public get jumboFrameCapable() {
     return this.getBooleanAttribute('jumbo_frame_capable');
   }
@@ -92,37 +99,59 @@ export class DxLag extends TerraformResource {
   // location - computed: false, optional: false, required: true
   private _location: string;
   public get location() {
-    return this._location;
+    return this.getStringAttribute('location');
   }
   public set location(value: string) {
     this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // number_of_connections - computed: true, optional: true, required: false
   private _numberOfConnections?: number;
   public get numberOfConnections() {
-    return this._numberOfConnections ?? this.getNumberAttribute('number_of_connections');
+    return this.getNumberAttribute('number_of_connections');
   }
-  public set numberOfConnections(value: number | undefined) {
+  public set numberOfConnections(value: number) {
     this._numberOfConnections = value;
+  }
+  public resetNumberOfConnections() {
+    this._numberOfConnections = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfConnectionsInput() {
+    return this._numberOfConnections
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

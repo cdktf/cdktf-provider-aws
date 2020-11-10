@@ -70,57 +70,85 @@ export class GlueClassifier extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // csv_classifier - computed: false, optional: true, required: false
   private _csvClassifier?: GlueClassifierCsvClassifier[];
   public get csvClassifier() {
-    return this._csvClassifier;
+    return this.interpolationForAttribute('csv_classifier') as any;
   }
-  public set csvClassifier(value: GlueClassifierCsvClassifier[] | undefined) {
+  public set csvClassifier(value: GlueClassifierCsvClassifier[] ) {
     this._csvClassifier = value;
+  }
+  public resetCsvClassifier() {
+    this._csvClassifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get csvClassifierInput() {
+    return this._csvClassifier
   }
 
   // grok_classifier - computed: false, optional: true, required: false
   private _grokClassifier?: GlueClassifierGrokClassifier[];
   public get grokClassifier() {
-    return this._grokClassifier;
+    return this.interpolationForAttribute('grok_classifier') as any;
   }
-  public set grokClassifier(value: GlueClassifierGrokClassifier[] | undefined) {
+  public set grokClassifier(value: GlueClassifierGrokClassifier[] ) {
     this._grokClassifier = value;
+  }
+  public resetGrokClassifier() {
+    this._grokClassifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grokClassifierInput() {
+    return this._grokClassifier
   }
 
   // json_classifier - computed: false, optional: true, required: false
   private _jsonClassifier?: GlueClassifierJsonClassifier[];
   public get jsonClassifier() {
-    return this._jsonClassifier;
+    return this.interpolationForAttribute('json_classifier') as any;
   }
-  public set jsonClassifier(value: GlueClassifierJsonClassifier[] | undefined) {
+  public set jsonClassifier(value: GlueClassifierJsonClassifier[] ) {
     this._jsonClassifier = value;
+  }
+  public resetJsonClassifier() {
+    this._jsonClassifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsonClassifierInput() {
+    return this._jsonClassifier
   }
 
   // xml_classifier - computed: false, optional: true, required: false
   private _xmlClassifier?: GlueClassifierXmlClassifier[];
   public get xmlClassifier() {
-    return this._xmlClassifier;
+    return this.interpolationForAttribute('xml_classifier') as any;
   }
-  public set xmlClassifier(value: GlueClassifierXmlClassifier[] | undefined) {
+  public set xmlClassifier(value: GlueClassifierXmlClassifier[] ) {
     this._xmlClassifier = value;
+  }
+  public resetXmlClassifier() {
+    this._xmlClassifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get xmlClassifierInput() {
+    return this._xmlClassifier
   }
 
   // =========

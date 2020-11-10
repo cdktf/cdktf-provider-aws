@@ -42,28 +42,32 @@ export class LbListenerCertificate extends TerraformResource {
   // certificate_arn - computed: false, optional: false, required: true
   private _certificateArn: string;
   public get certificateArn() {
-    return this._certificateArn;
+    return this.getStringAttribute('certificate_arn');
   }
   public set certificateArn(value: string) {
     this._certificateArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get certificateArnInput() {
+    return this._certificateArn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // listener_arn - computed: false, optional: false, required: true
   private _listenerArn: string;
   public get listenerArn() {
-    return this._listenerArn;
+    return this.getStringAttribute('listener_arn');
   }
   public set listenerArn(value: string) {
     this._listenerArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listenerArnInput() {
+    return this._listenerArn
   }
 
   // =========

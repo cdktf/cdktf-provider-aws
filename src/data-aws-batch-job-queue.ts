@@ -13,12 +13,12 @@ export interface DataAwsBatchJobQueueConfig extends TerraformMetaArguments {
 }
 export class DataAwsBatchJobQueueComputeEnvironmentOrder extends ComplexComputedList {
 
-  // compute_environment - computed: true, optional: false, required: true
+  // compute_environment - computed: true, optional: false, required: false
   public get computeEnvironment() {
     return this.getStringAttribute('compute_environment');
   }
 
-  // order - computed: true, optional: false, required: true
+  // order - computed: true, optional: false, required: false
   public get order() {
     return this.getNumberAttribute('order');
   }
@@ -50,50 +50,50 @@ export class DataAwsBatchJobQueue extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // compute_environment_order - computed: true, optional: false, required: true
+  // compute_environment_order - computed: true, optional: false, required: false
   public computeEnvironmentOrder(index: string) {
     return new DataAwsBatchJobQueueComputeEnvironmentOrder(this, 'compute_environment_order', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // priority - computed: true, optional: false, required: true
+  // priority - computed: true, optional: false, required: false
   public get priority() {
     return this.getNumberAttribute('priority');
   }
 
-  // state - computed: true, optional: false, required: true
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // status_reason - computed: true, optional: false, required: true
+  // status_reason - computed: true, optional: false, required: false
   public get statusReason() {
     return this.getStringAttribute('status_reason');
   }

@@ -61,91 +61,147 @@ export class GlobalacceleratorEndpointGroup extends TerraformResource {
   // endpoint_group_region - computed: true, optional: true, required: false
   private _endpointGroupRegion?: string;
   public get endpointGroupRegion() {
-    return this._endpointGroupRegion ?? this.getStringAttribute('endpoint_group_region');
+    return this.getStringAttribute('endpoint_group_region');
   }
-  public set endpointGroupRegion(value: string | undefined) {
+  public set endpointGroupRegion(value: string) {
     this._endpointGroupRegion = value;
+  }
+  public resetEndpointGroupRegion() {
+    this._endpointGroupRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointGroupRegionInput() {
+    return this._endpointGroupRegion
   }
 
   // health_check_interval_seconds - computed: false, optional: true, required: false
   private _healthCheckIntervalSeconds?: number;
   public get healthCheckIntervalSeconds() {
-    return this._healthCheckIntervalSeconds;
+    return this.getNumberAttribute('health_check_interval_seconds');
   }
-  public set healthCheckIntervalSeconds(value: number | undefined) {
+  public set healthCheckIntervalSeconds(value: number ) {
     this._healthCheckIntervalSeconds = value;
+  }
+  public resetHealthCheckIntervalSeconds() {
+    this._healthCheckIntervalSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckIntervalSecondsInput() {
+    return this._healthCheckIntervalSeconds
   }
 
   // health_check_path - computed: false, optional: true, required: false
   private _healthCheckPath?: string;
   public get healthCheckPath() {
-    return this._healthCheckPath;
+    return this.getStringAttribute('health_check_path');
   }
-  public set healthCheckPath(value: string | undefined) {
+  public set healthCheckPath(value: string ) {
     this._healthCheckPath = value;
+  }
+  public resetHealthCheckPath() {
+    this._healthCheckPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckPathInput() {
+    return this._healthCheckPath
   }
 
   // health_check_port - computed: false, optional: true, required: false
   private _healthCheckPort?: number;
   public get healthCheckPort() {
-    return this._healthCheckPort;
+    return this.getNumberAttribute('health_check_port');
   }
-  public set healthCheckPort(value: number | undefined) {
+  public set healthCheckPort(value: number ) {
     this._healthCheckPort = value;
+  }
+  public resetHealthCheckPort() {
+    this._healthCheckPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckPortInput() {
+    return this._healthCheckPort
   }
 
   // health_check_protocol - computed: false, optional: true, required: false
   private _healthCheckProtocol?: string;
   public get healthCheckProtocol() {
-    return this._healthCheckProtocol;
+    return this.getStringAttribute('health_check_protocol');
   }
-  public set healthCheckProtocol(value: string | undefined) {
+  public set healthCheckProtocol(value: string ) {
     this._healthCheckProtocol = value;
+  }
+  public resetHealthCheckProtocol() {
+    this._healthCheckProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckProtocolInput() {
+    return this._healthCheckProtocol
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // listener_arn - computed: false, optional: false, required: true
   private _listenerArn: string;
   public get listenerArn() {
-    return this._listenerArn;
+    return this.getStringAttribute('listener_arn');
   }
   public set listenerArn(value: string) {
     this._listenerArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listenerArnInput() {
+    return this._listenerArn
   }
 
   // threshold_count - computed: false, optional: true, required: false
   private _thresholdCount?: number;
   public get thresholdCount() {
-    return this._thresholdCount;
+    return this.getNumberAttribute('threshold_count');
   }
-  public set thresholdCount(value: number | undefined) {
+  public set thresholdCount(value: number ) {
     this._thresholdCount = value;
+  }
+  public resetThresholdCount() {
+    this._thresholdCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thresholdCountInput() {
+    return this._thresholdCount
   }
 
   // traffic_dial_percentage - computed: false, optional: true, required: false
   private _trafficDialPercentage?: number;
   public get trafficDialPercentage() {
-    return this._trafficDialPercentage;
+    return this.getNumberAttribute('traffic_dial_percentage');
   }
-  public set trafficDialPercentage(value: number | undefined) {
+  public set trafficDialPercentage(value: number ) {
     this._trafficDialPercentage = value;
+  }
+  public resetTrafficDialPercentage() {
+    this._trafficDialPercentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trafficDialPercentageInput() {
+    return this._trafficDialPercentage
   }
 
   // endpoint_configuration - computed: false, optional: true, required: false
   private _endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[];
   public get endpointConfiguration() {
-    return this._endpointConfiguration;
+    return this.interpolationForAttribute('endpoint_configuration') as any;
   }
-  public set endpointConfiguration(value: GlobalacceleratorEndpointGroupEndpointConfiguration[] | undefined) {
+  public set endpointConfiguration(value: GlobalacceleratorEndpointGroupEndpointConfiguration[] ) {
     this._endpointConfiguration = value;
+  }
+  public resetEndpointConfiguration() {
+    this._endpointConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointConfigurationInput() {
+    return this._endpointConfiguration
   }
 
   // =========

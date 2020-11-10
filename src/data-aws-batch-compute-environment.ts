@@ -37,7 +37,7 @@ export class DataAwsBatchComputeEnvironment extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -45,47 +45,47 @@ export class DataAwsBatchComputeEnvironment extends TerraformDataSource {
   // compute_environment_name - computed: false, optional: false, required: true
   private _computeEnvironmentName: string;
   public get computeEnvironmentName() {
-    return this._computeEnvironmentName;
+    return this.getStringAttribute('compute_environment_name');
   }
   public set computeEnvironmentName(value: string) {
     this._computeEnvironmentName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get computeEnvironmentNameInput() {
+    return this._computeEnvironmentName
+  }
 
-  // ecs_cluster_arn - computed: true, optional: false, required: true
+  // ecs_cluster_arn - computed: true, optional: false, required: false
   public get ecsClusterArn() {
     return this.getStringAttribute('ecs_cluster_arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // service_role - computed: true, optional: false, required: true
+  // service_role - computed: true, optional: false, required: false
   public get serviceRole() {
     return this.getStringAttribute('service_role');
   }
 
-  // state - computed: true, optional: false, required: true
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // status_reason - computed: true, optional: false, required: true
+  // status_reason - computed: true, optional: false, required: false
   public get statusReason() {
     return this.getStringAttribute('status_reason');
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }

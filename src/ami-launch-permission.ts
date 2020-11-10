@@ -42,28 +42,32 @@ export class AmiLaunchPermission extends TerraformResource {
   // account_id - computed: false, optional: false, required: true
   private _accountId: string;
   public get accountId() {
-    return this._accountId;
+    return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // image_id - computed: false, optional: false, required: true
   private _imageId: string;
   public get imageId() {
-    return this._imageId;
+    return this.getStringAttribute('image_id');
   }
   public set imageId(value: string) {
     this._imageId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageIdInput() {
+    return this._imageId
   }
 
   // =========

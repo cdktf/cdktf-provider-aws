@@ -50,7 +50,7 @@ export class RedshiftParameterGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,55 +58,80 @@ export class RedshiftParameterGroup extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // family - computed: false, optional: false, required: true
   private _family: string;
   public get family() {
-    return this._family;
+    return this.getStringAttribute('family');
   }
   public set family(value: string) {
     this._family = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get familyInput() {
+    return this._family
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // parameter - computed: false, optional: true, required: false
   private _parameter?: RedshiftParameterGroupParameter[];
   public get parameter() {
-    return this._parameter;
+    return this.interpolationForAttribute('parameter') as any;
   }
-  public set parameter(value: RedshiftParameterGroupParameter[] | undefined) {
+  public set parameter(value: RedshiftParameterGroupParameter[] ) {
     this._parameter = value;
+  }
+  public resetParameter() {
+    this._parameter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterInput() {
+    return this._parameter
   }
 
   // =========

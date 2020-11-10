@@ -85,118 +85,183 @@ export class BudgetsBudget extends TerraformResource {
   // account_id - computed: true, optional: true, required: false
   private _accountId?: string;
   public get accountId() {
-    return this._accountId ?? this.getStringAttribute('account_id');
+    return this.getStringAttribute('account_id');
   }
-  public set accountId(value: string | undefined) {
+  public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId
   }
 
   // budget_type - computed: false, optional: false, required: true
   private _budgetType: string;
   public get budgetType() {
-    return this._budgetType;
+    return this.getStringAttribute('budget_type');
   }
   public set budgetType(value: string) {
     this._budgetType = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get budgetTypeInput() {
+    return this._budgetType
+  }
 
   // cost_filters - computed: true, optional: true, required: false
   private _costFilters?: { [key: string]: string }
-  public get costFilters(): { [key: string]: string } | undefined {
-    return this._costFilters; // Getting the computed value is not yet implemented
+  public get costFilters(): { [key: string]: string } {
+    return this.interpolationForAttribute('cost_filters') as any; // Getting the computed value is not yet implemented
   }
-  public set costFilters(value: { [key: string]: string } | undefined) {
+  public set costFilters(value: { [key: string]: string }) {
     this._costFilters = value;
+  }
+  public resetCostFilters() {
+    this._costFilters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costFiltersInput() {
+    return this._costFilters
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // limit_amount - computed: false, optional: false, required: true
   private _limitAmount: string;
   public get limitAmount() {
-    return this._limitAmount;
+    return this.getStringAttribute('limit_amount');
   }
   public set limitAmount(value: string) {
     this._limitAmount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitAmountInput() {
+    return this._limitAmount
   }
 
   // limit_unit - computed: false, optional: false, required: true
   private _limitUnit: string;
   public get limitUnit() {
-    return this._limitUnit;
+    return this.getStringAttribute('limit_unit');
   }
   public set limitUnit(value: string) {
     this._limitUnit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitUnitInput() {
+    return this._limitUnit
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix ?? this.getStringAttribute('name_prefix');
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // time_period_end - computed: false, optional: true, required: false
   private _timePeriodEnd?: string;
   public get timePeriodEnd() {
-    return this._timePeriodEnd;
+    return this.getStringAttribute('time_period_end');
   }
-  public set timePeriodEnd(value: string | undefined) {
+  public set timePeriodEnd(value: string ) {
     this._timePeriodEnd = value;
+  }
+  public resetTimePeriodEnd() {
+    this._timePeriodEnd = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timePeriodEndInput() {
+    return this._timePeriodEnd
   }
 
   // time_period_start - computed: false, optional: false, required: true
   private _timePeriodStart: string;
   public get timePeriodStart() {
-    return this._timePeriodStart;
+    return this.getStringAttribute('time_period_start');
   }
   public set timePeriodStart(value: string) {
     this._timePeriodStart = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timePeriodStartInput() {
+    return this._timePeriodStart
   }
 
   // time_unit - computed: false, optional: false, required: true
   private _timeUnit: string;
   public get timeUnit() {
-    return this._timeUnit;
+    return this.getStringAttribute('time_unit');
   }
   public set timeUnit(value: string) {
     this._timeUnit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeUnitInput() {
+    return this._timeUnit
   }
 
   // cost_types - computed: false, optional: true, required: false
   private _costTypes?: BudgetsBudgetCostTypes[];
   public get costTypes() {
-    return this._costTypes;
+    return this.interpolationForAttribute('cost_types') as any;
   }
-  public set costTypes(value: BudgetsBudgetCostTypes[] | undefined) {
+  public set costTypes(value: BudgetsBudgetCostTypes[] ) {
     this._costTypes = value;
+  }
+  public resetCostTypes() {
+    this._costTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costTypesInput() {
+    return this._costTypes
   }
 
   // notification - computed: false, optional: true, required: false
   private _notification?: BudgetsBudgetNotification[];
   public get notification() {
-    return this._notification;
+    return this.interpolationForAttribute('notification') as any;
   }
-  public set notification(value: BudgetsBudgetNotification[] | undefined) {
+  public set notification(value: BudgetsBudgetNotification[] ) {
     this._notification = value;
+  }
+  public resetNotification() {
+    this._notification = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationInput() {
+    return this._notification
   }
 
   // =========

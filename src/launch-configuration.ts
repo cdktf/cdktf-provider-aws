@@ -97,7 +97,7 @@ export class LaunchConfiguration extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -105,181 +105,304 @@ export class LaunchConfiguration extends TerraformResource {
   // associate_public_ip_address - computed: false, optional: true, required: false
   private _associatePublicIpAddress?: boolean;
   public get associatePublicIpAddress() {
-    return this._associatePublicIpAddress;
+    return this.getBooleanAttribute('associate_public_ip_address');
   }
-  public set associatePublicIpAddress(value: boolean | undefined) {
+  public set associatePublicIpAddress(value: boolean ) {
     this._associatePublicIpAddress = value;
+  }
+  public resetAssociatePublicIpAddress() {
+    this._associatePublicIpAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get associatePublicIpAddressInput() {
+    return this._associatePublicIpAddress
   }
 
   // ebs_optimized - computed: true, optional: true, required: false
   private _ebsOptimized?: boolean;
   public get ebsOptimized() {
-    return this._ebsOptimized ?? this.getBooleanAttribute('ebs_optimized');
+    return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean | undefined) {
+  public set ebsOptimized(value: boolean) {
     this._ebsOptimized = value;
+  }
+  public resetEbsOptimized() {
+    this._ebsOptimized = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsOptimizedInput() {
+    return this._ebsOptimized
   }
 
   // enable_monitoring - computed: false, optional: true, required: false
   private _enableMonitoring?: boolean;
   public get enableMonitoring() {
-    return this._enableMonitoring;
+    return this.getBooleanAttribute('enable_monitoring');
   }
-  public set enableMonitoring(value: boolean | undefined) {
+  public set enableMonitoring(value: boolean ) {
     this._enableMonitoring = value;
+  }
+  public resetEnableMonitoring() {
+    this._enableMonitoring = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableMonitoringInput() {
+    return this._enableMonitoring
   }
 
   // iam_instance_profile - computed: false, optional: true, required: false
   private _iamInstanceProfile?: string;
   public get iamInstanceProfile() {
-    return this._iamInstanceProfile;
+    return this.getStringAttribute('iam_instance_profile');
   }
-  public set iamInstanceProfile(value: string | undefined) {
+  public set iamInstanceProfile(value: string ) {
     this._iamInstanceProfile = value;
+  }
+  public resetIamInstanceProfile() {
+    this._iamInstanceProfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamInstanceProfileInput() {
+    return this._iamInstanceProfile
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // image_id - computed: false, optional: false, required: true
   private _imageId: string;
   public get imageId() {
-    return this._imageId;
+    return this.getStringAttribute('image_id');
   }
   public set imageId(value: string) {
     this._imageId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageIdInput() {
+    return this._imageId
   }
 
   // instance_type - computed: false, optional: false, required: true
   private _instanceType: string;
   public get instanceType() {
-    return this._instanceType;
+    return this.getStringAttribute('instance_type');
   }
   public set instanceType(value: string) {
     this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType
   }
 
   // key_name - computed: true, optional: true, required: false
   private _keyName?: string;
   public get keyName() {
-    return this._keyName ?? this.getStringAttribute('key_name');
+    return this.getStringAttribute('key_name');
   }
-  public set keyName(value: string | undefined) {
+  public set keyName(value: string) {
     this._keyName = value;
+  }
+  public resetKeyName() {
+    this._keyName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyNameInput() {
+    return this._keyName
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // placement_tenancy - computed: false, optional: true, required: false
   private _placementTenancy?: string;
   public get placementTenancy() {
-    return this._placementTenancy;
+    return this.getStringAttribute('placement_tenancy');
   }
-  public set placementTenancy(value: string | undefined) {
+  public set placementTenancy(value: string ) {
     this._placementTenancy = value;
+  }
+  public resetPlacementTenancy() {
+    this._placementTenancy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementTenancyInput() {
+    return this._placementTenancy
   }
 
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[];
   public get securityGroups() {
-    return this._securityGroups;
+    return this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[] | undefined) {
+  public set securityGroups(value: string[] ) {
     this._securityGroups = value;
+  }
+  public resetSecurityGroups() {
+    this._securityGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupsInput() {
+    return this._securityGroups
   }
 
   // spot_price - computed: false, optional: true, required: false
   private _spotPrice?: string;
   public get spotPrice() {
-    return this._spotPrice;
+    return this.getStringAttribute('spot_price');
   }
-  public set spotPrice(value: string | undefined) {
+  public set spotPrice(value: string ) {
     this._spotPrice = value;
+  }
+  public resetSpotPrice() {
+    this._spotPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotPriceInput() {
+    return this._spotPrice
   }
 
   // user_data - computed: false, optional: true, required: false
   private _userData?: string;
   public get userData() {
-    return this._userData;
+    return this.getStringAttribute('user_data');
   }
-  public set userData(value: string | undefined) {
+  public set userData(value: string ) {
     this._userData = value;
+  }
+  public resetUserData() {
+    this._userData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDataInput() {
+    return this._userData
   }
 
   // user_data_base64 - computed: false, optional: true, required: false
   private _userDataBase64?: string;
   public get userDataBase64() {
-    return this._userDataBase64;
+    return this.getStringAttribute('user_data_base64');
   }
-  public set userDataBase64(value: string | undefined) {
+  public set userDataBase64(value: string ) {
     this._userDataBase64 = value;
+  }
+  public resetUserDataBase64() {
+    this._userDataBase64 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDataBase64Input() {
+    return this._userDataBase64
   }
 
   // vpc_classic_link_id - computed: false, optional: true, required: false
   private _vpcClassicLinkId?: string;
   public get vpcClassicLinkId() {
-    return this._vpcClassicLinkId;
+    return this.getStringAttribute('vpc_classic_link_id');
   }
-  public set vpcClassicLinkId(value: string | undefined) {
+  public set vpcClassicLinkId(value: string ) {
     this._vpcClassicLinkId = value;
+  }
+  public resetVpcClassicLinkId() {
+    this._vpcClassicLinkId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcClassicLinkIdInput() {
+    return this._vpcClassicLinkId
   }
 
   // vpc_classic_link_security_groups - computed: false, optional: true, required: false
   private _vpcClassicLinkSecurityGroups?: string[];
   public get vpcClassicLinkSecurityGroups() {
-    return this._vpcClassicLinkSecurityGroups;
+    return this.getListAttribute('vpc_classic_link_security_groups');
   }
-  public set vpcClassicLinkSecurityGroups(value: string[] | undefined) {
+  public set vpcClassicLinkSecurityGroups(value: string[] ) {
     this._vpcClassicLinkSecurityGroups = value;
+  }
+  public resetVpcClassicLinkSecurityGroups() {
+    this._vpcClassicLinkSecurityGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcClassicLinkSecurityGroupsInput() {
+    return this._vpcClassicLinkSecurityGroups
   }
 
   // ebs_block_device - computed: false, optional: true, required: false
   private _ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[];
   public get ebsBlockDevice() {
-    return this._ebsBlockDevice;
+    return this.interpolationForAttribute('ebs_block_device') as any;
   }
-  public set ebsBlockDevice(value: LaunchConfigurationEbsBlockDevice[] | undefined) {
+  public set ebsBlockDevice(value: LaunchConfigurationEbsBlockDevice[] ) {
     this._ebsBlockDevice = value;
+  }
+  public resetEbsBlockDevice() {
+    this._ebsBlockDevice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsBlockDeviceInput() {
+    return this._ebsBlockDevice
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
   private _ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[];
   public get ephemeralBlockDevice() {
-    return this._ephemeralBlockDevice;
+    return this.interpolationForAttribute('ephemeral_block_device') as any;
   }
-  public set ephemeralBlockDevice(value: LaunchConfigurationEphemeralBlockDevice[] | undefined) {
+  public set ephemeralBlockDevice(value: LaunchConfigurationEphemeralBlockDevice[] ) {
     this._ephemeralBlockDevice = value;
+  }
+  public resetEphemeralBlockDevice() {
+    this._ephemeralBlockDevice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ephemeralBlockDeviceInput() {
+    return this._ephemeralBlockDevice
   }
 
   // root_block_device - computed: false, optional: true, required: false
   private _rootBlockDevice?: LaunchConfigurationRootBlockDevice[];
   public get rootBlockDevice() {
-    return this._rootBlockDevice;
+    return this.interpolationForAttribute('root_block_device') as any;
   }
-  public set rootBlockDevice(value: LaunchConfigurationRootBlockDevice[] | undefined) {
+  public set rootBlockDevice(value: LaunchConfigurationRootBlockDevice[] ) {
     this._rootBlockDevice = value;
+  }
+  public resetRootBlockDevice() {
+    this._rootBlockDevice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rootBlockDeviceInput() {
+    return this._rootBlockDevice
   }
 
   // =========

@@ -60,13 +60,20 @@ export class CognitoIdentityPool extends TerraformResource {
   // allow_unauthenticated_identities - computed: false, optional: true, required: false
   private _allowUnauthenticatedIdentities?: boolean;
   public get allowUnauthenticatedIdentities() {
-    return this._allowUnauthenticatedIdentities;
+    return this.getBooleanAttribute('allow_unauthenticated_identities');
   }
-  public set allowUnauthenticatedIdentities(value: boolean | undefined) {
+  public set allowUnauthenticatedIdentities(value: boolean ) {
     this._allowUnauthenticatedIdentities = value;
   }
+  public resetAllowUnauthenticatedIdentities() {
+    this._allowUnauthenticatedIdentities = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowUnauthenticatedIdentitiesInput() {
+    return this._allowUnauthenticatedIdentities
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -74,73 +81,115 @@ export class CognitoIdentityPool extends TerraformResource {
   // developer_provider_name - computed: false, optional: true, required: false
   private _developerProviderName?: string;
   public get developerProviderName() {
-    return this._developerProviderName;
+    return this.getStringAttribute('developer_provider_name');
   }
-  public set developerProviderName(value: string | undefined) {
+  public set developerProviderName(value: string ) {
     this._developerProviderName = value;
+  }
+  public resetDeveloperProviderName() {
+    this._developerProviderName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get developerProviderNameInput() {
+    return this._developerProviderName
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identity_pool_name - computed: false, optional: false, required: true
   private _identityPoolName: string;
   public get identityPoolName() {
-    return this._identityPoolName;
+    return this.getStringAttribute('identity_pool_name');
   }
   public set identityPoolName(value: string) {
     this._identityPoolName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityPoolNameInput() {
+    return this._identityPoolName
   }
 
   // openid_connect_provider_arns - computed: false, optional: true, required: false
   private _openidConnectProviderArns?: string[];
   public get openidConnectProviderArns() {
-    return this._openidConnectProviderArns;
+    return this.getListAttribute('openid_connect_provider_arns');
   }
-  public set openidConnectProviderArns(value: string[] | undefined) {
+  public set openidConnectProviderArns(value: string[] ) {
     this._openidConnectProviderArns = value;
+  }
+  public resetOpenidConnectProviderArns() {
+    this._openidConnectProviderArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get openidConnectProviderArnsInput() {
+    return this._openidConnectProviderArns
   }
 
   // saml_provider_arns - computed: false, optional: true, required: false
   private _samlProviderArns?: string[];
   public get samlProviderArns() {
-    return this._samlProviderArns;
+    return this.getListAttribute('saml_provider_arns');
   }
-  public set samlProviderArns(value: string[] | undefined) {
+  public set samlProviderArns(value: string[] ) {
     this._samlProviderArns = value;
+  }
+  public resetSamlProviderArns() {
+    this._samlProviderArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samlProviderArnsInput() {
+    return this._samlProviderArns
   }
 
   // supported_login_providers - computed: false, optional: true, required: false
   private _supportedLoginProviders?: { [key: string]: string };
   public get supportedLoginProviders() {
-    return this._supportedLoginProviders;
+    return this.interpolationForAttribute('supported_login_providers') as any;
   }
-  public set supportedLoginProviders(value: { [key: string]: string } | undefined) {
+  public set supportedLoginProviders(value: { [key: string]: string } ) {
     this._supportedLoginProviders = value;
+  }
+  public resetSupportedLoginProviders() {
+    this._supportedLoginProviders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportedLoginProvidersInput() {
+    return this._supportedLoginProviders
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // cognito_identity_providers - computed: false, optional: true, required: false
   private _cognitoIdentityProviders?: CognitoIdentityPoolCognitoIdentityProviders[];
   public get cognitoIdentityProviders() {
-    return this._cognitoIdentityProviders;
+    return this.interpolationForAttribute('cognito_identity_providers') as any;
   }
-  public set cognitoIdentityProviders(value: CognitoIdentityPoolCognitoIdentityProviders[] | undefined) {
+  public set cognitoIdentityProviders(value: CognitoIdentityPoolCognitoIdentityProviders[] ) {
     this._cognitoIdentityProviders = value;
+  }
+  public resetCognitoIdentityProviders() {
+    this._cognitoIdentityProviders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cognitoIdentityProvidersInput() {
+    return this._cognitoIdentityProviders
   }
 
   // =========

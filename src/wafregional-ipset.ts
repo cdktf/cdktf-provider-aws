@@ -44,36 +44,43 @@ export class WafregionalIpset extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // ip_set_descriptor - computed: false, optional: true, required: false
   private _ipSetDescriptor?: WafregionalIpsetIpSetDescriptor[];
   public get ipSetDescriptor() {
-    return this._ipSetDescriptor;
+    return this.interpolationForAttribute('ip_set_descriptor') as any;
   }
-  public set ipSetDescriptor(value: WafregionalIpsetIpSetDescriptor[] | undefined) {
+  public set ipSetDescriptor(value: WafregionalIpsetIpSetDescriptor[] ) {
     this._ipSetDescriptor = value;
+  }
+  public resetIpSetDescriptor() {
+    this._ipSetDescriptor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipSetDescriptorInput() {
+    return this._ipSetDescriptor
   }
 
   // =========

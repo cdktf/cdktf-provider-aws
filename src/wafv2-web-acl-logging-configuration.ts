@@ -77,39 +77,50 @@ export class Wafv2WebAclLoggingConfiguration extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // log_destination_configs - computed: false, optional: false, required: true
   private _logDestinationConfigs: string[];
   public get logDestinationConfigs() {
-    return this._logDestinationConfigs;
+    return this.getListAttribute('log_destination_configs');
   }
   public set logDestinationConfigs(value: string[]) {
     this._logDestinationConfigs = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logDestinationConfigsInput() {
+    return this._logDestinationConfigs
   }
 
   // resource_arn - computed: false, optional: false, required: true
   private _resourceArn: string;
   public get resourceArn() {
-    return this._resourceArn;
+    return this.getStringAttribute('resource_arn');
   }
   public set resourceArn(value: string) {
     this._resourceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn
   }
 
   // redacted_fields - computed: false, optional: true, required: false
   private _redactedFields?: Wafv2WebAclLoggingConfigurationRedactedFields[];
   public get redactedFields() {
-    return this._redactedFields;
+    return this.interpolationForAttribute('redacted_fields') as any;
   }
-  public set redactedFields(value: Wafv2WebAclLoggingConfigurationRedactedFields[] | undefined) {
+  public set redactedFields(value: Wafv2WebAclLoggingConfigurationRedactedFields[] ) {
     this._redactedFields = value;
+  }
+  public resetRedactedFields() {
+    this._redactedFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redactedFieldsInput() {
+    return this._redactedFields
   }
 
   // =========

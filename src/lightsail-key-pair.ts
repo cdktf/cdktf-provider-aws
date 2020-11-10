@@ -43,63 +43,80 @@ export class LightsailKeyPair extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // encrypted_fingerprint - computed: true, optional: false, required: true
+  // encrypted_fingerprint - computed: true, optional: false, required: false
   public get encryptedFingerprint() {
     return this.getStringAttribute('encrypted_fingerprint');
   }
 
-  // encrypted_private_key - computed: true, optional: false, required: true
+  // encrypted_private_key - computed: true, optional: false, required: false
   public get encryptedPrivateKey() {
     return this.getStringAttribute('encrypted_private_key');
   }
 
-  // fingerprint - computed: true, optional: false, required: true
+  // fingerprint - computed: true, optional: false, required: false
   public get fingerprint() {
     return this.getStringAttribute('fingerprint');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // pgp_key - computed: false, optional: true, required: false
   private _pgpKey?: string;
   public get pgpKey() {
-    return this._pgpKey;
+    return this.getStringAttribute('pgp_key');
   }
-  public set pgpKey(value: string | undefined) {
+  public set pgpKey(value: string ) {
     this._pgpKey = value;
   }
+  public resetPgpKey() {
+    this._pgpKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pgpKeyInput() {
+    return this._pgpKey
+  }
 
-  // private_key - computed: true, optional: false, required: true
+  // private_key - computed: true, optional: false, required: false
   public get privateKey() {
     return this.getStringAttribute('private_key');
   }
@@ -107,10 +124,17 @@ export class LightsailKeyPair extends TerraformResource {
   // public_key - computed: true, optional: true, required: false
   private _publicKey?: string;
   public get publicKey() {
-    return this._publicKey ?? this.getStringAttribute('public_key');
+    return this.getStringAttribute('public_key');
   }
-  public set publicKey(value: string | undefined) {
+  public set publicKey(value: string) {
     this._publicKey = value;
+  }
+  public resetPublicKey() {
+    this._publicKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicKeyInput() {
+    return this._publicKey
   }
 
   // =========

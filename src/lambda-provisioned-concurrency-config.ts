@@ -51,46 +51,61 @@ export class LambdaProvisionedConcurrencyConfig extends TerraformResource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this._functionName;
+    return this.getStringAttribute('function_name');
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get functionNameInput() {
+    return this._functionName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // provisioned_concurrent_executions - computed: false, optional: false, required: true
   private _provisionedConcurrentExecutions: number;
   public get provisionedConcurrentExecutions() {
-    return this._provisionedConcurrentExecutions;
+    return this.getNumberAttribute('provisioned_concurrent_executions');
   }
   public set provisionedConcurrentExecutions(value: number) {
     this._provisionedConcurrentExecutions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get provisionedConcurrentExecutionsInput() {
+    return this._provisionedConcurrentExecutions
   }
 
   // qualifier - computed: false, optional: false, required: true
   private _qualifier: string;
   public get qualifier() {
-    return this._qualifier;
+    return this.getStringAttribute('qualifier');
   }
   public set qualifier(value: string) {
     this._qualifier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get qualifierInput() {
+    return this._qualifier
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: LambdaProvisionedConcurrencyConfigTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: LambdaProvisionedConcurrencyConfigTimeouts | undefined) {
+  public set timeouts(value: LambdaProvisionedConcurrencyConfigTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

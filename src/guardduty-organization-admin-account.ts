@@ -40,19 +40,19 @@ export class GuarddutyOrganizationAdminAccount extends TerraformResource {
   // admin_account_id - computed: false, optional: false, required: true
   private _adminAccountId: string;
   public get adminAccountId() {
-    return this._adminAccountId;
+    return this.getStringAttribute('admin_account_id');
   }
   public set adminAccountId(value: string) {
     this._adminAccountId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get adminAccountIdInput() {
+    return this._adminAccountId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

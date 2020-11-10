@@ -69,7 +69,7 @@ export class DbOptionGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -77,82 +77,128 @@ export class DbOptionGroup extends TerraformResource {
   // engine_name - computed: false, optional: false, required: true
   private _engineName: string;
   public get engineName() {
-    return this._engineName;
+    return this.getStringAttribute('engine_name');
   }
   public set engineName(value: string) {
     this._engineName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get engineNameInput() {
+    return this._engineName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // major_engine_version - computed: false, optional: false, required: true
   private _majorEngineVersion: string;
   public get majorEngineVersion() {
-    return this._majorEngineVersion;
+    return this.getStringAttribute('major_engine_version');
   }
   public set majorEngineVersion(value: string) {
     this._majorEngineVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get majorEngineVersionInput() {
+    return this._majorEngineVersion
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix ?? this.getStringAttribute('name_prefix');
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // option_group_description - computed: false, optional: true, required: false
   private _optionGroupDescription?: string;
   public get optionGroupDescription() {
-    return this._optionGroupDescription;
+    return this.getStringAttribute('option_group_description');
   }
-  public set optionGroupDescription(value: string | undefined) {
+  public set optionGroupDescription(value: string ) {
     this._optionGroupDescription = value;
+  }
+  public resetOptionGroupDescription() {
+    this._optionGroupDescription = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionGroupDescriptionInput() {
+    return this._optionGroupDescription
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // option - computed: false, optional: true, required: false
   private _option?: DbOptionGroupOption[];
   public get option() {
-    return this._option;
+    return this.interpolationForAttribute('option') as any;
   }
-  public set option(value: DbOptionGroupOption[] | undefined) {
+  public set option(value: DbOptionGroupOption[] ) {
     this._option = value;
+  }
+  public resetOption() {
+    this._option = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionInput() {
+    return this._option
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DbOptionGroupTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: DbOptionGroupTimeouts | undefined) {
+  public set timeouts(value: DbOptionGroupTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

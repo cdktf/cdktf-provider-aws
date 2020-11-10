@@ -69,7 +69,7 @@ export class DlmLifecyclePolicy extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -77,55 +77,77 @@ export class DlmLifecyclePolicy extends TerraformResource {
   // description - computed: false, optional: false, required: true
   private _description: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
   public set description(value: string) {
     this._description = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // execution_role_arn - computed: false, optional: false, required: true
   private _executionRoleArn: string;
   public get executionRoleArn() {
-    return this._executionRoleArn;
+    return this.getStringAttribute('execution_role_arn');
   }
   public set executionRoleArn(value: string) {
     this._executionRoleArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get executionRoleArnInput() {
+    return this._executionRoleArn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // state - computed: false, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this._state;
+    return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string ) {
     this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // policy_details - computed: false, optional: false, required: true
   private _policyDetails: DlmLifecyclePolicyPolicyDetails[];
   public get policyDetails() {
-    return this._policyDetails;
+    return this.interpolationForAttribute('policy_details') as any;
   }
   public set policyDetails(value: DlmLifecyclePolicyPolicyDetails[]) {
     this._policyDetails = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyDetailsInput() {
+    return this._policyDetails
   }
 
   // =========

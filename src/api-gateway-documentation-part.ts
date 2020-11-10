@@ -50,39 +50,47 @@ export class ApiGatewayDocumentationPart extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // properties - computed: false, optional: false, required: true
   private _properties: string;
   public get properties() {
-    return this._properties;
+    return this.getStringAttribute('properties');
   }
   public set properties(value: string) {
     this._properties = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this._restApiId;
+    return this.getStringAttribute('rest_api_id');
   }
   public set restApiId(value: string) {
     this._restApiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restApiIdInput() {
+    return this._restApiId
   }
 
   // location - computed: false, optional: false, required: true
   private _location: ApiGatewayDocumentationPartLocation[];
   public get location() {
-    return this._location;
+    return this.interpolationForAttribute('location') as any;
   }
   public set location(value: ApiGatewayDocumentationPartLocation[]) {
     this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location
   }
 
   // =========

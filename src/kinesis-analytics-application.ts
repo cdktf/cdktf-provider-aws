@@ -187,7 +187,7 @@ export class KinesisAnalyticsApplication extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -195,13 +195,20 @@ export class KinesisAnalyticsApplication extends TerraformResource {
   // code - computed: false, optional: true, required: false
   private _code?: string;
   public get code() {
-    return this._code;
+    return this.getStringAttribute('code');
   }
-  public set code(value: string | undefined) {
+  public set code(value: string ) {
     this._code = value;
   }
+  public resetCode() {
+    this._code = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeInput() {
+    return this._code
+  }
 
-  // create_timestamp - computed: true, optional: false, required: true
+  // create_timestamp - computed: true, optional: false, required: false
   public get createTimestamp() {
     return this.getStringAttribute('create_timestamp');
   }
@@ -209,22 +216,25 @@ export class KinesisAnalyticsApplication extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_update_timestamp - computed: true, optional: false, required: true
+  // last_update_timestamp - computed: true, optional: false, required: false
   public get lastUpdateTimestamp() {
     return this.getStringAttribute('last_update_timestamp');
   }
@@ -232,13 +242,17 @@ export class KinesisAnalyticsApplication extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -246,13 +260,20 @@ export class KinesisAnalyticsApplication extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getNumberAttribute('version');
   }
@@ -260,37 +281,65 @@ export class KinesisAnalyticsApplication extends TerraformResource {
   // cloudwatch_logging_options - computed: false, optional: true, required: false
   private _cloudwatchLoggingOptions?: KinesisAnalyticsApplicationCloudwatchLoggingOptions[];
   public get cloudwatchLoggingOptions() {
-    return this._cloudwatchLoggingOptions;
+    return this.interpolationForAttribute('cloudwatch_logging_options') as any;
   }
-  public set cloudwatchLoggingOptions(value: KinesisAnalyticsApplicationCloudwatchLoggingOptions[] | undefined) {
+  public set cloudwatchLoggingOptions(value: KinesisAnalyticsApplicationCloudwatchLoggingOptions[] ) {
     this._cloudwatchLoggingOptions = value;
+  }
+  public resetCloudwatchLoggingOptions() {
+    this._cloudwatchLoggingOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchLoggingOptionsInput() {
+    return this._cloudwatchLoggingOptions
   }
 
   // inputs - computed: false, optional: true, required: false
   private _inputs?: KinesisAnalyticsApplicationInputs[];
   public get inputs() {
-    return this._inputs;
+    return this.interpolationForAttribute('inputs') as any;
   }
-  public set inputs(value: KinesisAnalyticsApplicationInputs[] | undefined) {
+  public set inputs(value: KinesisAnalyticsApplicationInputs[] ) {
     this._inputs = value;
+  }
+  public resetInputs() {
+    this._inputs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputsInput() {
+    return this._inputs
   }
 
   // outputs - computed: false, optional: true, required: false
   private _outputs?: KinesisAnalyticsApplicationOutputs[];
   public get outputs() {
-    return this._outputs;
+    return this.interpolationForAttribute('outputs') as any;
   }
-  public set outputs(value: KinesisAnalyticsApplicationOutputs[] | undefined) {
+  public set outputs(value: KinesisAnalyticsApplicationOutputs[] ) {
     this._outputs = value;
+  }
+  public resetOutputs() {
+    this._outputs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputsInput() {
+    return this._outputs
   }
 
   // reference_data_sources - computed: false, optional: true, required: false
   private _referenceDataSources?: KinesisAnalyticsApplicationReferenceDataSources[];
   public get referenceDataSources() {
-    return this._referenceDataSources;
+    return this.interpolationForAttribute('reference_data_sources') as any;
   }
-  public set referenceDataSources(value: KinesisAnalyticsApplicationReferenceDataSources[] | undefined) {
+  public set referenceDataSources(value: KinesisAnalyticsApplicationReferenceDataSources[] ) {
     this._referenceDataSources = value;
+  }
+  public resetReferenceDataSources() {
+    this._referenceDataSources = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referenceDataSourcesInput() {
+    return this._referenceDataSources
   }
 
   // =========

@@ -56,39 +56,50 @@ export class CognitoIdentityPoolRolesAttachment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identity_pool_id - computed: false, optional: false, required: true
   private _identityPoolId: string;
   public get identityPoolId() {
-    return this._identityPoolId;
+    return this.getStringAttribute('identity_pool_id');
   }
   public set identityPoolId(value: string) {
     this._identityPoolId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityPoolIdInput() {
+    return this._identityPoolId
   }
 
   // roles - computed: false, optional: false, required: true
   private _roles: { [key: string]: string };
   public get roles() {
-    return this._roles;
+    return this.interpolationForAttribute('roles') as any;
   }
   public set roles(value: { [key: string]: string }) {
     this._roles = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rolesInput() {
+    return this._roles
   }
 
   // role_mapping - computed: false, optional: true, required: false
   private _roleMapping?: CognitoIdentityPoolRolesAttachmentRoleMapping[];
   public get roleMapping() {
-    return this._roleMapping;
+    return this.interpolationForAttribute('role_mapping') as any;
   }
-  public set roleMapping(value: CognitoIdentityPoolRolesAttachmentRoleMapping[] | undefined) {
+  public set roleMapping(value: CognitoIdentityPoolRolesAttachmentRoleMapping[] ) {
     this._roleMapping = value;
+  }
+  public resetRoleMapping() {
+    this._roleMapping = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleMappingInput() {
+    return this._roleMapping
   }
 
   // =========

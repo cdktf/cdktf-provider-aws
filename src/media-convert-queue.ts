@@ -53,7 +53,7 @@ export class MediaConvertQueue extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -61,64 +61,99 @@ export class MediaConvertQueue extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // pricing_plan - computed: false, optional: true, required: false
   private _pricingPlan?: string;
   public get pricingPlan() {
-    return this._pricingPlan;
+    return this.getStringAttribute('pricing_plan');
   }
-  public set pricingPlan(value: string | undefined) {
+  public set pricingPlan(value: string ) {
     this._pricingPlan = value;
+  }
+  public resetPricingPlan() {
+    this._pricingPlan = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pricingPlanInput() {
+    return this._pricingPlan
   }
 
   // status - computed: false, optional: true, required: false
   private _status?: string;
   public get status() {
-    return this._status;
+    return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string ) {
     this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // reservation_plan_settings - computed: false, optional: true, required: false
   private _reservationPlanSettings?: MediaConvertQueueReservationPlanSettings[];
   public get reservationPlanSettings() {
-    return this._reservationPlanSettings;
+    return this.interpolationForAttribute('reservation_plan_settings') as any;
   }
-  public set reservationPlanSettings(value: MediaConvertQueueReservationPlanSettings[] | undefined) {
+  public set reservationPlanSettings(value: MediaConvertQueueReservationPlanSettings[] ) {
     this._reservationPlanSettings = value;
+  }
+  public resetReservationPlanSettings() {
+    this._reservationPlanSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reservationPlanSettingsInput() {
+    return this._reservationPlanSettings
   }
 
   // =========

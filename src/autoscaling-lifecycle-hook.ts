@@ -54,82 +54,125 @@ export class AutoscalingLifecycleHook extends TerraformResource {
   // autoscaling_group_name - computed: false, optional: false, required: true
   private _autoscalingGroupName: string;
   public get autoscalingGroupName() {
-    return this._autoscalingGroupName;
+    return this.getStringAttribute('autoscaling_group_name');
   }
   public set autoscalingGroupName(value: string) {
     this._autoscalingGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingGroupNameInput() {
+    return this._autoscalingGroupName
   }
 
   // default_result - computed: true, optional: true, required: false
   private _defaultResult?: string;
   public get defaultResult() {
-    return this._defaultResult ?? this.getStringAttribute('default_result');
+    return this.getStringAttribute('default_result');
   }
-  public set defaultResult(value: string | undefined) {
+  public set defaultResult(value: string) {
     this._defaultResult = value;
+  }
+  public resetDefaultResult() {
+    this._defaultResult = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultResultInput() {
+    return this._defaultResult
   }
 
   // heartbeat_timeout - computed: false, optional: true, required: false
   private _heartbeatTimeout?: number;
   public get heartbeatTimeout() {
-    return this._heartbeatTimeout;
+    return this.getNumberAttribute('heartbeat_timeout');
   }
-  public set heartbeatTimeout(value: number | undefined) {
+  public set heartbeatTimeout(value: number ) {
     this._heartbeatTimeout = value;
+  }
+  public resetHeartbeatTimeout() {
+    this._heartbeatTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get heartbeatTimeoutInput() {
+    return this._heartbeatTimeout
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // lifecycle_transition - computed: false, optional: false, required: true
   private _lifecycleTransition: string;
   public get lifecycleTransition() {
-    return this._lifecycleTransition;
+    return this.getStringAttribute('lifecycle_transition');
   }
   public set lifecycleTransition(value: string) {
     this._lifecycleTransition = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lifecycleTransitionInput() {
+    return this._lifecycleTransition
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // notification_metadata - computed: false, optional: true, required: false
   private _notificationMetadata?: string;
   public get notificationMetadata() {
-    return this._notificationMetadata;
+    return this.getStringAttribute('notification_metadata');
   }
-  public set notificationMetadata(value: string | undefined) {
+  public set notificationMetadata(value: string ) {
     this._notificationMetadata = value;
+  }
+  public resetNotificationMetadata() {
+    this._notificationMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationMetadataInput() {
+    return this._notificationMetadata
   }
 
   // notification_target_arn - computed: false, optional: true, required: false
   private _notificationTargetArn?: string;
   public get notificationTargetArn() {
-    return this._notificationTargetArn;
+    return this.getStringAttribute('notification_target_arn');
   }
-  public set notificationTargetArn(value: string | undefined) {
+  public set notificationTargetArn(value: string ) {
     this._notificationTargetArn = value;
+  }
+  public resetNotificationTargetArn() {
+    this._notificationTargetArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationTargetArnInput() {
+    return this._notificationTargetArn
   }
 
   // role_arn - computed: false, optional: true, required: false
   private _roleArn?: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string ) {
     this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // =========

@@ -37,21 +37,17 @@ export class DataAwsCognitoUserPools extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arns - computed: true, optional: false, required: true
+  // arns - computed: true, optional: false, required: false
   public get arns() {
     return this.getListAttribute('arns');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ids - computed: true, optional: false, required: true
+  // ids - computed: true, optional: false, required: false
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -59,10 +55,14 @@ export class DataAwsCognitoUserPools extends TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // =========

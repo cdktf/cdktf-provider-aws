@@ -21,22 +21,22 @@ export interface SsmDocumentConfig extends TerraformMetaArguments {
 }
 export class SsmDocumentParameter extends ComplexComputedList {
 
-  // default_value - computed: true, optional: false, required: true
+  // default_value - computed: true, optional: false, required: false
   public get defaultValue() {
     return this.getStringAttribute('default_value');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -80,7 +80,7 @@ export class SsmDocument extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -88,23 +88,27 @@ export class SsmDocument extends TerraformResource {
   // content - computed: false, optional: false, required: true
   private _content: string;
   public get content() {
-    return this._content;
+    return this.getStringAttribute('content');
   }
   public set content(value: string) {
     this._content = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content
+  }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // default_version - computed: true, optional: false, required: true
+  // default_version - computed: true, optional: false, required: false
   public get defaultVersion() {
     return this.getStringAttribute('default_version');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
@@ -112,46 +116,53 @@ export class SsmDocument extends TerraformResource {
   // document_format - computed: false, optional: true, required: false
   private _documentFormat?: string;
   public get documentFormat() {
-    return this._documentFormat;
+    return this.getStringAttribute('document_format');
   }
-  public set documentFormat(value: string | undefined) {
+  public set documentFormat(value: string ) {
     this._documentFormat = value;
+  }
+  public resetDocumentFormat() {
+    this._documentFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get documentFormatInput() {
+    return this._documentFormat
   }
 
   // document_type - computed: false, optional: false, required: true
   private _documentType: string;
   public get documentType() {
-    return this._documentType;
+    return this.getStringAttribute('document_type');
   }
   public set documentType(value: string) {
     this._documentType = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get documentTypeInput() {
+    return this._documentType
+  }
 
-  // document_version - computed: true, optional: false, required: true
+  // document_version - computed: true, optional: false, required: false
   public get documentVersion() {
     return this.getStringAttribute('document_version');
   }
 
-  // hash - computed: true, optional: false, required: true
+  // hash - computed: true, optional: false, required: false
   public get hash() {
     return this.getStringAttribute('hash');
   }
 
-  // hash_type - computed: true, optional: false, required: true
+  // hash_type - computed: true, optional: false, required: false
   public get hashType() {
     return this.getStringAttribute('hash_type');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // latest_version - computed: true, optional: false, required: true
+  // latest_version - computed: true, optional: false, required: false
   public get latestVersion() {
     return this.getStringAttribute('latest_version');
   }
@@ -159,18 +170,22 @@ export class SsmDocument extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // owner - computed: true, optional: false, required: true
+  // owner - computed: true, optional: false, required: false
   public get owner() {
     return this.getStringAttribute('owner');
   }
 
-  // parameter - computed: true, optional: false, required: true
+  // parameter - computed: true, optional: false, required: false
   public parameter(index: string) {
     return new SsmDocumentParameter(this, 'parameter', index);
   }
@@ -178,23 +193,30 @@ export class SsmDocument extends TerraformResource {
   // permissions - computed: false, optional: true, required: false
   private _permissions?: { [key: string]: string };
   public get permissions() {
-    return this._permissions;
+    return this.interpolationForAttribute('permissions') as any;
   }
-  public set permissions(value: { [key: string]: string } | undefined) {
+  public set permissions(value: { [key: string]: string } ) {
     this._permissions = value;
   }
+  public resetPermissions() {
+    this._permissions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionsInput() {
+    return this._permissions
+  }
 
-  // platform_types - computed: true, optional: false, required: true
+  // platform_types - computed: true, optional: false, required: false
   public get platformTypes() {
     return this.getListAttribute('platform_types');
   }
 
-  // schema_version - computed: true, optional: false, required: true
+  // schema_version - computed: true, optional: false, required: false
   public get schemaVersion() {
     return this.getStringAttribute('schema_version');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -202,28 +224,49 @@ export class SsmDocument extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // target_type - computed: false, optional: true, required: false
   private _targetType?: string;
   public get targetType() {
-    return this._targetType;
+    return this.getStringAttribute('target_type');
   }
-  public set targetType(value: string | undefined) {
+  public set targetType(value: string ) {
     this._targetType = value;
+  }
+  public resetTargetType() {
+    this._targetType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetTypeInput() {
+    return this._targetType
   }
 
   // attachments_source - computed: false, optional: true, required: false
   private _attachmentsSource?: SsmDocumentAttachmentsSource[];
   public get attachmentsSource() {
-    return this._attachmentsSource;
+    return this.interpolationForAttribute('attachments_source') as any;
   }
-  public set attachmentsSource(value: SsmDocumentAttachmentsSource[] | undefined) {
+  public set attachmentsSource(value: SsmDocumentAttachmentsSource[] ) {
     this._attachmentsSource = value;
+  }
+  public resetAttachmentsSource() {
+    this._attachmentsSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attachmentsSourceInput() {
+    return this._attachmentsSource
   }
 
   // =========

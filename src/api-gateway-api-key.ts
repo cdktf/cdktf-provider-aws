@@ -52,12 +52,12 @@ export class ApiGatewayApiKey extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
@@ -65,31 +65,41 @@ export class ApiGatewayApiKey extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this._enabled;
+    return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | undefined) {
+  public set enabled(value: boolean ) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_updated_date - computed: true, optional: false, required: true
+  // last_updated_date - computed: true, optional: false, required: false
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -97,37 +107,62 @@ export class ApiGatewayApiKey extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // value - computed: true, optional: true, required: false
   private _value?: string;
   public get value() {
-    return this._value ?? this.getStringAttribute('value');
+    return this.getStringAttribute('value');
   }
-  public set value(value: string | undefined) {
+  public set value(value: string) {
     this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value
   }
 
   // stage_key - computed: false, optional: true, required: false
   private _stageKey?: ApiGatewayApiKeyStageKey[];
   public get stageKey() {
-    return this._stageKey;
+    return this.interpolationForAttribute('stage_key') as any;
   }
-  public set stageKey(value: ApiGatewayApiKeyStageKey[] | undefined) {
+  public set stageKey(value: ApiGatewayApiKeyStageKey[] ) {
     this._stageKey = value;
+  }
+  public resetStageKey() {
+    this._stageKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stageKeyInput() {
+    return this._stageKey
   }
 
   // =========

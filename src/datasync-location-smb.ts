@@ -58,13 +58,17 @@ export class DatasyncLocationSmb extends TerraformResource {
   // agent_arns - computed: false, optional: false, required: true
   private _agentArns: string[];
   public get agentArns() {
-    return this._agentArns;
+    return this.getListAttribute('agent_arns');
   }
   public set agentArns(value: string[]) {
     this._agentArns = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get agentArnsInput() {
+    return this._agentArns
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -72,58 +76,80 @@ export class DatasyncLocationSmb extends TerraformResource {
   // domain - computed: true, optional: true, required: false
   private _domain?: string;
   public get domain() {
-    return this._domain ?? this.getStringAttribute('domain');
+    return this.getStringAttribute('domain');
   }
-  public set domain(value: string | undefined) {
+  public set domain(value: string) {
     this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // password - computed: false, optional: false, required: true
   private _password: string;
   public get password() {
-    return this._password;
+    return this.getStringAttribute('password');
   }
   public set password(value: string) {
     this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password
   }
 
   // server_hostname - computed: false, optional: false, required: true
   private _serverHostname: string;
   public get serverHostname() {
-    return this._serverHostname;
+    return this.getStringAttribute('server_hostname');
   }
   public set serverHostname(value: string) {
     this._serverHostname = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverHostnameInput() {
+    return this._serverHostname
   }
 
   // subdirectory - computed: false, optional: false, required: true
   private _subdirectory: string;
   public get subdirectory() {
-    return this._subdirectory;
+    return this.getStringAttribute('subdirectory');
   }
   public set subdirectory(value: string) {
     this._subdirectory = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subdirectoryInput() {
+    return this._subdirectory
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // uri - computed: true, optional: false, required: true
+  // uri - computed: true, optional: false, required: false
   public get uri() {
     return this.getStringAttribute('uri');
   }
@@ -131,19 +157,30 @@ export class DatasyncLocationSmb extends TerraformResource {
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this._user;
+    return this.getStringAttribute('user');
   }
   public set user(value: string) {
     this._user = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user
   }
 
   // mount_options - computed: false, optional: true, required: false
   private _mountOptions?: DatasyncLocationSmbMountOptions[];
   public get mountOptions() {
-    return this._mountOptions;
+    return this.interpolationForAttribute('mount_options') as any;
   }
-  public set mountOptions(value: DatasyncLocationSmbMountOptions[] | undefined) {
+  public set mountOptions(value: DatasyncLocationSmbMountOptions[] ) {
     this._mountOptions = value;
+  }
+  public resetMountOptions() {
+    this._mountOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mountOptionsInput() {
+    return this._mountOptions
   }
 
   // =========

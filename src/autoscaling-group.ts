@@ -153,7 +153,7 @@ export class AutoscalingGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -161,289 +161,496 @@ export class AutoscalingGroup extends TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[];
   public get availabilityZones() {
-    return this._availabilityZones ?? this.getListAttribute('availability_zones');
+    return this.getListAttribute('availability_zones');
   }
-  public set availabilityZones(value: string[] | undefined) {
+  public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
+  }
+  public resetAvailabilityZones() {
+    this._availabilityZones = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZonesInput() {
+    return this._availabilityZones
   }
 
   // default_cooldown - computed: true, optional: true, required: false
   private _defaultCooldown?: number;
   public get defaultCooldown() {
-    return this._defaultCooldown ?? this.getNumberAttribute('default_cooldown');
+    return this.getNumberAttribute('default_cooldown');
   }
-  public set defaultCooldown(value: number | undefined) {
+  public set defaultCooldown(value: number) {
     this._defaultCooldown = value;
+  }
+  public resetDefaultCooldown() {
+    this._defaultCooldown = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultCooldownInput() {
+    return this._defaultCooldown
   }
 
   // desired_capacity - computed: true, optional: true, required: false
   private _desiredCapacity?: number;
   public get desiredCapacity() {
-    return this._desiredCapacity ?? this.getNumberAttribute('desired_capacity');
+    return this.getNumberAttribute('desired_capacity');
   }
-  public set desiredCapacity(value: number | undefined) {
+  public set desiredCapacity(value: number) {
     this._desiredCapacity = value;
+  }
+  public resetDesiredCapacity() {
+    this._desiredCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredCapacityInput() {
+    return this._desiredCapacity
   }
 
   // enabled_metrics - computed: false, optional: true, required: false
   private _enabledMetrics?: string[];
   public get enabledMetrics() {
-    return this._enabledMetrics;
+    return this.getListAttribute('enabled_metrics');
   }
-  public set enabledMetrics(value: string[] | undefined) {
+  public set enabledMetrics(value: string[] ) {
     this._enabledMetrics = value;
+  }
+  public resetEnabledMetrics() {
+    this._enabledMetrics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledMetricsInput() {
+    return this._enabledMetrics
   }
 
   // force_delete - computed: false, optional: true, required: false
   private _forceDelete?: boolean;
   public get forceDelete() {
-    return this._forceDelete;
+    return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean | undefined) {
+  public set forceDelete(value: boolean ) {
     this._forceDelete = value;
+  }
+  public resetForceDelete() {
+    this._forceDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDeleteInput() {
+    return this._forceDelete
   }
 
   // health_check_grace_period - computed: false, optional: true, required: false
   private _healthCheckGracePeriod?: number;
   public get healthCheckGracePeriod() {
-    return this._healthCheckGracePeriod;
+    return this.getNumberAttribute('health_check_grace_period');
   }
-  public set healthCheckGracePeriod(value: number | undefined) {
+  public set healthCheckGracePeriod(value: number ) {
     this._healthCheckGracePeriod = value;
+  }
+  public resetHealthCheckGracePeriod() {
+    this._healthCheckGracePeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckGracePeriodInput() {
+    return this._healthCheckGracePeriod
   }
 
   // health_check_type - computed: true, optional: true, required: false
   private _healthCheckType?: string;
   public get healthCheckType() {
-    return this._healthCheckType ?? this.getStringAttribute('health_check_type');
+    return this.getStringAttribute('health_check_type');
   }
-  public set healthCheckType(value: string | undefined) {
+  public set healthCheckType(value: string) {
     this._healthCheckType = value;
+  }
+  public resetHealthCheckType() {
+    this._healthCheckType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckTypeInput() {
+    return this._healthCheckType
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // launch_configuration - computed: false, optional: true, required: false
   private _launchConfiguration?: string;
   public get launchConfiguration() {
-    return this._launchConfiguration;
+    return this.getStringAttribute('launch_configuration');
   }
-  public set launchConfiguration(value: string | undefined) {
+  public set launchConfiguration(value: string ) {
     this._launchConfiguration = value;
+  }
+  public resetLaunchConfiguration() {
+    this._launchConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchConfigurationInput() {
+    return this._launchConfiguration
   }
 
   // load_balancers - computed: true, optional: true, required: false
   private _loadBalancers?: string[];
   public get loadBalancers() {
-    return this._loadBalancers ?? this.getListAttribute('load_balancers');
+    return this.getListAttribute('load_balancers');
   }
-  public set loadBalancers(value: string[] | undefined) {
+  public set loadBalancers(value: string[]) {
     this._loadBalancers = value;
+  }
+  public resetLoadBalancers() {
+    this._loadBalancers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancersInput() {
+    return this._loadBalancers
   }
 
   // max_instance_lifetime - computed: false, optional: true, required: false
   private _maxInstanceLifetime?: number;
   public get maxInstanceLifetime() {
-    return this._maxInstanceLifetime;
+    return this.getNumberAttribute('max_instance_lifetime');
   }
-  public set maxInstanceLifetime(value: number | undefined) {
+  public set maxInstanceLifetime(value: number ) {
     this._maxInstanceLifetime = value;
+  }
+  public resetMaxInstanceLifetime() {
+    this._maxInstanceLifetime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInstanceLifetimeInput() {
+    return this._maxInstanceLifetime
   }
 
   // max_size - computed: false, optional: false, required: true
   private _maxSize: number;
   public get maxSize() {
-    return this._maxSize;
+    return this.getNumberAttribute('max_size');
   }
   public set maxSize(value: number) {
     this._maxSize = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxSizeInput() {
+    return this._maxSize
   }
 
   // metrics_granularity - computed: false, optional: true, required: false
   private _metricsGranularity?: string;
   public get metricsGranularity() {
-    return this._metricsGranularity;
+    return this.getStringAttribute('metrics_granularity');
   }
-  public set metricsGranularity(value: string | undefined) {
+  public set metricsGranularity(value: string ) {
     this._metricsGranularity = value;
+  }
+  public resetMetricsGranularity() {
+    this._metricsGranularity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsGranularityInput() {
+    return this._metricsGranularity
   }
 
   // min_elb_capacity - computed: false, optional: true, required: false
   private _minElbCapacity?: number;
   public get minElbCapacity() {
-    return this._minElbCapacity;
+    return this.getNumberAttribute('min_elb_capacity');
   }
-  public set minElbCapacity(value: number | undefined) {
+  public set minElbCapacity(value: number ) {
     this._minElbCapacity = value;
+  }
+  public resetMinElbCapacity() {
+    this._minElbCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minElbCapacityInput() {
+    return this._minElbCapacity
   }
 
   // min_size - computed: false, optional: false, required: true
   private _minSize: number;
   public get minSize() {
-    return this._minSize;
+    return this.getNumberAttribute('min_size');
   }
   public set minSize(value: number) {
     this._minSize = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minSizeInput() {
+    return this._minSize
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // placement_group - computed: false, optional: true, required: false
   private _placementGroup?: string;
   public get placementGroup() {
-    return this._placementGroup;
+    return this.getStringAttribute('placement_group');
   }
-  public set placementGroup(value: string | undefined) {
+  public set placementGroup(value: string ) {
     this._placementGroup = value;
+  }
+  public resetPlacementGroup() {
+    this._placementGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementGroupInput() {
+    return this._placementGroup
   }
 
   // protect_from_scale_in - computed: false, optional: true, required: false
   private _protectFromScaleIn?: boolean;
   public get protectFromScaleIn() {
-    return this._protectFromScaleIn;
+    return this.getBooleanAttribute('protect_from_scale_in');
   }
-  public set protectFromScaleIn(value: boolean | undefined) {
+  public set protectFromScaleIn(value: boolean ) {
     this._protectFromScaleIn = value;
+  }
+  public resetProtectFromScaleIn() {
+    this._protectFromScaleIn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protectFromScaleInInput() {
+    return this._protectFromScaleIn
   }
 
   // service_linked_role_arn - computed: true, optional: true, required: false
   private _serviceLinkedRoleArn?: string;
   public get serviceLinkedRoleArn() {
-    return this._serviceLinkedRoleArn ?? this.getStringAttribute('service_linked_role_arn');
+    return this.getStringAttribute('service_linked_role_arn');
   }
-  public set serviceLinkedRoleArn(value: string | undefined) {
+  public set serviceLinkedRoleArn(value: string) {
     this._serviceLinkedRoleArn = value;
+  }
+  public resetServiceLinkedRoleArn() {
+    this._serviceLinkedRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceLinkedRoleArnInput() {
+    return this._serviceLinkedRoleArn
   }
 
   // suspended_processes - computed: false, optional: true, required: false
   private _suspendedProcesses?: string[];
   public get suspendedProcesses() {
-    return this._suspendedProcesses;
+    return this.getListAttribute('suspended_processes');
   }
-  public set suspendedProcesses(value: string[] | undefined) {
+  public set suspendedProcesses(value: string[] ) {
     this._suspendedProcesses = value;
+  }
+  public resetSuspendedProcesses() {
+    this._suspendedProcesses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suspendedProcessesInput() {
+    return this._suspendedProcesses
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // target_group_arns - computed: true, optional: true, required: false
   private _targetGroupArns?: string[];
   public get targetGroupArns() {
-    return this._targetGroupArns ?? this.getListAttribute('target_group_arns');
+    return this.getListAttribute('target_group_arns');
   }
-  public set targetGroupArns(value: string[] | undefined) {
+  public set targetGroupArns(value: string[]) {
     this._targetGroupArns = value;
+  }
+  public resetTargetGroupArns() {
+    this._targetGroupArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetGroupArnsInput() {
+    return this._targetGroupArns
   }
 
   // termination_policies - computed: false, optional: true, required: false
   private _terminationPolicies?: string[];
   public get terminationPolicies() {
-    return this._terminationPolicies;
+    return this.getListAttribute('termination_policies');
   }
-  public set terminationPolicies(value: string[] | undefined) {
+  public set terminationPolicies(value: string[] ) {
     this._terminationPolicies = value;
+  }
+  public resetTerminationPolicies() {
+    this._terminationPolicies = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get terminationPoliciesInput() {
+    return this._terminationPolicies
   }
 
   // vpc_zone_identifier - computed: true, optional: true, required: false
   private _vpcZoneIdentifier?: string[];
   public get vpcZoneIdentifier() {
-    return this._vpcZoneIdentifier ?? this.getListAttribute('vpc_zone_identifier');
+    return this.getListAttribute('vpc_zone_identifier');
   }
-  public set vpcZoneIdentifier(value: string[] | undefined) {
+  public set vpcZoneIdentifier(value: string[]) {
     this._vpcZoneIdentifier = value;
+  }
+  public resetVpcZoneIdentifier() {
+    this._vpcZoneIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcZoneIdentifierInput() {
+    return this._vpcZoneIdentifier
   }
 
   // wait_for_capacity_timeout - computed: false, optional: true, required: false
   private _waitForCapacityTimeout?: string;
   public get waitForCapacityTimeout() {
-    return this._waitForCapacityTimeout;
+    return this.getStringAttribute('wait_for_capacity_timeout');
   }
-  public set waitForCapacityTimeout(value: string | undefined) {
+  public set waitForCapacityTimeout(value: string ) {
     this._waitForCapacityTimeout = value;
+  }
+  public resetWaitForCapacityTimeout() {
+    this._waitForCapacityTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get waitForCapacityTimeoutInput() {
+    return this._waitForCapacityTimeout
   }
 
   // wait_for_elb_capacity - computed: false, optional: true, required: false
   private _waitForElbCapacity?: number;
   public get waitForElbCapacity() {
-    return this._waitForElbCapacity;
+    return this.getNumberAttribute('wait_for_elb_capacity');
   }
-  public set waitForElbCapacity(value: number | undefined) {
+  public set waitForElbCapacity(value: number ) {
     this._waitForElbCapacity = value;
+  }
+  public resetWaitForElbCapacity() {
+    this._waitForElbCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get waitForElbCapacityInput() {
+    return this._waitForElbCapacity
   }
 
   // initial_lifecycle_hook - computed: false, optional: true, required: false
   private _initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[];
   public get initialLifecycleHook() {
-    return this._initialLifecycleHook;
+    return this.interpolationForAttribute('initial_lifecycle_hook') as any;
   }
-  public set initialLifecycleHook(value: AutoscalingGroupInitialLifecycleHook[] | undefined) {
+  public set initialLifecycleHook(value: AutoscalingGroupInitialLifecycleHook[] ) {
     this._initialLifecycleHook = value;
+  }
+  public resetInitialLifecycleHook() {
+    this._initialLifecycleHook = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialLifecycleHookInput() {
+    return this._initialLifecycleHook
   }
 
   // launch_template - computed: false, optional: true, required: false
   private _launchTemplate?: AutoscalingGroupLaunchTemplate[];
   public get launchTemplate() {
-    return this._launchTemplate;
+    return this.interpolationForAttribute('launch_template') as any;
   }
-  public set launchTemplate(value: AutoscalingGroupLaunchTemplate[] | undefined) {
+  public set launchTemplate(value: AutoscalingGroupLaunchTemplate[] ) {
     this._launchTemplate = value;
+  }
+  public resetLaunchTemplate() {
+    this._launchTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchTemplateInput() {
+    return this._launchTemplate
   }
 
   // mixed_instances_policy - computed: false, optional: true, required: false
   private _mixedInstancesPolicy?: AutoscalingGroupMixedInstancesPolicy[];
   public get mixedInstancesPolicy() {
-    return this._mixedInstancesPolicy;
+    return this.interpolationForAttribute('mixed_instances_policy') as any;
   }
-  public set mixedInstancesPolicy(value: AutoscalingGroupMixedInstancesPolicy[] | undefined) {
+  public set mixedInstancesPolicy(value: AutoscalingGroupMixedInstancesPolicy[] ) {
     this._mixedInstancesPolicy = value;
+  }
+  public resetMixedInstancesPolicy() {
+    this._mixedInstancesPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mixedInstancesPolicyInput() {
+    return this._mixedInstancesPolicy
   }
 
   // tag - computed: false, optional: true, required: false
   private _tag?: AutoscalingGroupTag[];
   public get tag() {
-    return this._tag;
+    return this.interpolationForAttribute('tag') as any;
   }
-  public set tag(value: AutoscalingGroupTag[] | undefined) {
+  public set tag(value: AutoscalingGroupTag[] ) {
     this._tag = value;
+  }
+  public resetTag() {
+    this._tag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagInput() {
+    return this._tag
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: AutoscalingGroupTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: AutoscalingGroupTimeouts | undefined) {
+  public set timeouts(value: AutoscalingGroupTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

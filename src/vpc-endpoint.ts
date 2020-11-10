@@ -24,12 +24,12 @@ export interface VpcEndpointConfig extends TerraformMetaArguments {
 }
 export class VpcEndpointDnsEntry extends ComplexComputedList {
 
-  // dns_name - computed: true, optional: false, required: true
+  // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
 
-  // hosted_zone_id - computed: true, optional: false, required: true
+  // hosted_zone_id - computed: true, optional: false, required: false
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
@@ -76,7 +76,7 @@ export class VpcEndpoint extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -84,37 +84,40 @@ export class VpcEndpoint extends TerraformResource {
   // auto_accept - computed: false, optional: true, required: false
   private _autoAccept?: boolean;
   public get autoAccept() {
-    return this._autoAccept;
+    return this.getBooleanAttribute('auto_accept');
   }
-  public set autoAccept(value: boolean | undefined) {
+  public set autoAccept(value: boolean ) {
     this._autoAccept = value;
   }
+  public resetAutoAccept() {
+    this._autoAccept = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoAcceptInput() {
+    return this._autoAccept
+  }
 
-  // cidr_blocks - computed: true, optional: false, required: true
+  // cidr_blocks - computed: true, optional: false, required: false
   public get cidrBlocks() {
     return this.getListAttribute('cidr_blocks');
   }
 
-  // dns_entry - computed: true, optional: false, required: true
+  // dns_entry - computed: true, optional: false, required: false
   public dnsEntry(index: string) {
     return new VpcEndpointDnsEntry(this, 'dns_entry', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // network_interface_ids - computed: true, optional: false, required: true
+  // network_interface_ids - computed: true, optional: false, required: false
   public get networkInterfaceIds() {
     return this.getListAttribute('network_interface_ids');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -122,13 +125,20 @@ export class VpcEndpoint extends TerraformResource {
   // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this._policy ?? this.getStringAttribute('policy');
+    return this.getStringAttribute('policy');
   }
-  public set policy(value: string | undefined) {
+  public set policy(value: string) {
     this._policy = value;
   }
+  public resetPolicy() {
+    this._policy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
+  }
 
-  // prefix_list_id - computed: true, optional: false, required: true
+  // prefix_list_id - computed: true, optional: false, required: false
   public get prefixListId() {
     return this.getStringAttribute('prefix_list_id');
   }
@@ -136,13 +146,20 @@ export class VpcEndpoint extends TerraformResource {
   // private_dns_enabled - computed: false, optional: true, required: false
   private _privateDnsEnabled?: boolean;
   public get privateDnsEnabled() {
-    return this._privateDnsEnabled;
+    return this.getBooleanAttribute('private_dns_enabled');
   }
-  public set privateDnsEnabled(value: boolean | undefined) {
+  public set privateDnsEnabled(value: boolean ) {
     this._privateDnsEnabled = value;
   }
+  public resetPrivateDnsEnabled() {
+    this._privateDnsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateDnsEnabledInput() {
+    return this._privateDnsEnabled
+  }
 
-  // requester_managed - computed: true, optional: false, required: true
+  // requester_managed - computed: true, optional: false, required: false
   public get requesterManaged() {
     return this.getBooleanAttribute('requester_managed');
   }
@@ -150,31 +167,49 @@ export class VpcEndpoint extends TerraformResource {
   // route_table_ids - computed: true, optional: true, required: false
   private _routeTableIds?: string[];
   public get routeTableIds() {
-    return this._routeTableIds ?? this.getListAttribute('route_table_ids');
+    return this.getListAttribute('route_table_ids');
   }
-  public set routeTableIds(value: string[] | undefined) {
+  public set routeTableIds(value: string[]) {
     this._routeTableIds = value;
+  }
+  public resetRouteTableIds() {
+    this._routeTableIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeTableIdsInput() {
+    return this._routeTableIds
   }
 
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[];
   public get securityGroupIds() {
-    return this._securityGroupIds ?? this.getListAttribute('security_group_ids');
+    return this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[] | undefined) {
+  public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds
   }
 
   // service_name - computed: false, optional: false, required: true
   private _serviceName: string;
   public get serviceName() {
-    return this._serviceName;
+    return this.getStringAttribute('service_name');
   }
   public set serviceName(value: string) {
     this._serviceName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNameInput() {
+    return this._serviceName
+  }
 
-  // state - computed: true, optional: false, required: true
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
@@ -182,46 +217,78 @@ export class VpcEndpoint extends TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[];
   public get subnetIds() {
-    return this._subnetIds ?? this.getListAttribute('subnet_ids');
+    return this.getListAttribute('subnet_ids');
   }
-  public set subnetIds(value: string[] | undefined) {
+  public set subnetIds(value: string[]) {
     this._subnetIds = value;
+  }
+  public resetSubnetIds() {
+    this._subnetIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_endpoint_type - computed: false, optional: true, required: false
   private _vpcEndpointType?: string;
   public get vpcEndpointType() {
-    return this._vpcEndpointType;
+    return this.getStringAttribute('vpc_endpoint_type');
   }
-  public set vpcEndpointType(value: string | undefined) {
+  public set vpcEndpointType(value: string ) {
     this._vpcEndpointType = value;
+  }
+  public resetVpcEndpointType() {
+    this._vpcEndpointType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEndpointTypeInput() {
+    return this._vpcEndpointType
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: VpcEndpointTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: VpcEndpointTimeouts | undefined) {
+  public set timeouts(value: VpcEndpointTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========

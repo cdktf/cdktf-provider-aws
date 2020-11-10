@@ -49,24 +49,27 @@ export class DataAwsEc2CoipPool extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // local_gateway_route_table_id - computed: true, optional: true, required: false
   private _localGatewayRouteTableId?: string;
   public get localGatewayRouteTableId() {
-    return this._localGatewayRouteTableId ?? this.getStringAttribute('local_gateway_route_table_id');
+    return this.getStringAttribute('local_gateway_route_table_id');
   }
-  public set localGatewayRouteTableId(value: string | undefined) {
+  public set localGatewayRouteTableId(value: string) {
     this._localGatewayRouteTableId = value;
   }
+  public resetLocalGatewayRouteTableId() {
+    this._localGatewayRouteTableId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayRouteTableIdInput() {
+    return this._localGatewayRouteTableId
+  }
 
-  // pool_cidrs - computed: true, optional: false, required: true
+  // pool_cidrs - computed: true, optional: false, required: false
   public get poolCidrs() {
     return this.getListAttribute('pool_cidrs');
   }
@@ -74,28 +77,49 @@ export class DataAwsEc2CoipPool extends TerraformDataSource {
   // pool_id - computed: true, optional: true, required: false
   private _poolId?: string;
   public get poolId() {
-    return this._poolId ?? this.getStringAttribute('pool_id');
+    return this.getStringAttribute('pool_id');
   }
-  public set poolId(value: string | undefined) {
+  public set poolId(value: string) {
     this._poolId = value;
+  }
+  public resetPoolId() {
+    this._poolId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdInput() {
+    return this._poolId
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2CoipPoolFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2CoipPoolFilter[] | undefined) {
+  public set filter(value: DataAwsEc2CoipPoolFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========

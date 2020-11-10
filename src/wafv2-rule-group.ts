@@ -3238,7 +3238,7 @@ export class Wafv2RuleGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -3246,31 +3246,38 @@ export class Wafv2RuleGroup extends TerraformResource {
   // capacity - computed: false, optional: false, required: true
   private _capacity: number;
   public get capacity() {
-    return this._capacity;
+    return this.getNumberAttribute('capacity');
   }
   public set capacity(value: number) {
     this._capacity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityInput() {
+    return this._capacity
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // lock_token - computed: true, optional: false, required: true
+  // lock_token - computed: true, optional: false, required: false
   public get lockToken() {
     return this.getStringAttribute('lock_token');
   }
@@ -3278,46 +3285,72 @@ export class Wafv2RuleGroup extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // scope - computed: false, optional: false, required: true
   private _scope: string;
   public get scope() {
-    return this._scope;
+    return this.getStringAttribute('scope');
   }
   public set scope(value: string) {
     this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // rule - computed: false, optional: true, required: false
   private _rule?: Wafv2RuleGroupRule[];
   public get rule() {
-    return this._rule;
+    return this.interpolationForAttribute('rule') as any;
   }
-  public set rule(value: Wafv2RuleGroupRule[] | undefined) {
+  public set rule(value: Wafv2RuleGroupRule[] ) {
     this._rule = value;
+  }
+  public resetRule() {
+    this._rule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule
   }
 
   // visibility_config - computed: false, optional: false, required: true
   private _visibilityConfig: Wafv2RuleGroupVisibilityConfig[];
   public get visibilityConfig() {
-    return this._visibilityConfig;
+    return this.interpolationForAttribute('visibility_config') as any;
   }
   public set visibilityConfig(value: Wafv2RuleGroupVisibilityConfig[]) {
     this._visibilityConfig = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get visibilityConfigInput() {
+    return this._visibilityConfig
   }
 
   // =========

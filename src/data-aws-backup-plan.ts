@@ -39,21 +39,17 @@ export class DataAwsBackupPlan extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -61,22 +57,33 @@ export class DataAwsBackupPlan extends TerraformDataSource {
   // plan_id - computed: false, optional: false, required: true
   private _planId: string;
   public get planId() {
-    return this._planId;
+    return this.getStringAttribute('plan_id');
   }
   public set planId(value: string) {
     this._planId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get planIdInput() {
+    return this._planId
+  }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
   }

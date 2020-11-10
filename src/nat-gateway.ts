@@ -44,32 +44,32 @@ export class NatGateway extends TerraformResource {
   // allocation_id - computed: false, optional: false, required: true
   private _allocationId: string;
   public get allocationId() {
-    return this._allocationId;
+    return this.getStringAttribute('allocation_id');
   }
   public set allocationId(value: string) {
     this._allocationId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get allocationIdInput() {
+    return this._allocationId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // network_interface_id - computed: true, optional: false, required: true
+  // network_interface_id - computed: true, optional: false, required: false
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
   }
 
-  // private_ip - computed: true, optional: false, required: true
+  // private_ip - computed: true, optional: false, required: false
   public get privateIp() {
     return this.getStringAttribute('private_ip');
   }
 
-  // public_ip - computed: true, optional: false, required: true
+  // public_ip - computed: true, optional: false, required: false
   public get publicIp() {
     return this.getStringAttribute('public_ip');
   }
@@ -77,19 +77,30 @@ export class NatGateway extends TerraformResource {
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
   public set subnetId(value: string) {
     this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========

@@ -44,13 +44,17 @@ export class Apigatewayv2Deployment extends TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this._apiId;
+    return this.getStringAttribute('api_id');
   }
   public set apiId(value: string) {
     this._apiId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId
+  }
 
-  // auto_deployed - computed: true, optional: false, required: true
+  // auto_deployed - computed: true, optional: false, required: false
   public get autoDeployed() {
     return this.getBooleanAttribute('auto_deployed');
   }
@@ -58,28 +62,38 @@ export class Apigatewayv2Deployment extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // triggers - computed: false, optional: true, required: false
   private _triggers?: { [key: string]: string };
   public get triggers() {
-    return this._triggers;
+    return this.interpolationForAttribute('triggers') as any;
   }
-  public set triggers(value: { [key: string]: string } | undefined) {
+  public set triggers(value: { [key: string]: string } ) {
     this._triggers = value;
+  }
+  public resetTriggers() {
+    this._triggers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggersInput() {
+    return this._triggers
   }
 
   // =========

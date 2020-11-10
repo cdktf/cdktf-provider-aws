@@ -44,37 +44,45 @@ export class AutoscalingNotification extends TerraformResource {
   // group_names - computed: false, optional: false, required: true
   private _groupNames: string[];
   public get groupNames() {
-    return this._groupNames;
+    return this.getListAttribute('group_names');
   }
   public set groupNames(value: string[]) {
     this._groupNames = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get groupNamesInput() {
+    return this._groupNames
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // notifications - computed: false, optional: false, required: true
   private _notifications: string[];
   public get notifications() {
-    return this._notifications;
+    return this.getListAttribute('notifications');
   }
   public set notifications(value: string[]) {
     this._notifications = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationsInput() {
+    return this._notifications
   }
 
   // topic_arn - computed: false, optional: false, required: true
   private _topicArn: string;
   public get topicArn() {
-    return this._topicArn;
+    return this.getStringAttribute('topic_arn');
   }
   public set topicArn(value: string) {
     this._topicArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicArnInput() {
+    return this._topicArn
   }
 
   // =========
