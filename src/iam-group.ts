@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamGroupConfig extends TerraformMetaArguments {
+export interface IamGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly path?: string;
 }
 
 // Resource
 
-export class IamGroup extends TerraformResource {
+export class IamGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,8 +88,8 @@ export class IamGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      path: this._path,
+      name: cdktf.stringToTerraform(this._name),
+      path: cdktf.stringToTerraform(this._path),
     };
   }
 }

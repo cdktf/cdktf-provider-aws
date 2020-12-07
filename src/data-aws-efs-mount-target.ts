@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEfsMountTargetConfig extends TerraformMetaArguments {
+export interface DataAwsEfsMountTargetConfig extends cdktf.TerraformMetaArguments {
   readonly mountTargetId: string;
 }
 
 // Resource
 
-export class DataAwsEfsMountTarget extends TerraformDataSource {
+export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -116,7 +115,7 @@ export class DataAwsEfsMountTarget extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mount_target_id: this._mountTargetId,
+      mount_target_id: cdktf.stringToTerraform(this._mountTargetId),
     };
   }
 }

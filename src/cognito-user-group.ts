@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CognitoUserGroupConfig extends TerraformMetaArguments {
+export interface CognitoUserGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly precedence?: number;
@@ -17,7 +16,7 @@ export interface CognitoUserGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CognitoUserGroup extends TerraformResource {
+export class CognitoUserGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -130,11 +129,11 @@ export class CognitoUserGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      precedence: this._precedence,
-      role_arn: this._roleArn,
-      user_pool_id: this._userPoolId,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      precedence: cdktf.numberToTerraform(this._precedence),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
     };
   }
 }

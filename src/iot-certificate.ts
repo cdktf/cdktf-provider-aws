@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IotCertificateConfig extends TerraformMetaArguments {
+export interface IotCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly active: boolean;
   readonly csr?: string;
 }
 
 // Resource
 
-export class IotCertificate extends TerraformResource {
+export class IotCertificate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,8 +98,8 @@ export class IotCertificate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: this._active,
-      csr: this._csr,
+      active: cdktf.booleanToTerraform(this._active),
+      csr: cdktf.stringToTerraform(this._csr),
     };
   }
 }

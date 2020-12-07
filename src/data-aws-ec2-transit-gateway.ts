@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2TransitGatewayConfig extends TerraformMetaArguments {
+export interface DataAwsEc2TransitGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsEc2TransitGatewayFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2TransitGatewayFilterToTerraform(struct?: DataAwsEc2TransitGatewayFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2TransitGateway extends TerraformDataSource {
+export class DataAwsEc2TransitGateway extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -155,9 +163,9 @@ export class DataAwsEc2TransitGateway extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: this._id,
-      tags: this._tags,
-      filter: this._filter,
+      id: cdktf.stringToTerraform(this._id),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEc2TransitGatewayFilterToTerraform)(this._filter),
     };
   }
 }

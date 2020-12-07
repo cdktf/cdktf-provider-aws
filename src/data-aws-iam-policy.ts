@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamPolicyConfig extends TerraformMetaArguments {
+export interface DataAwsIamPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
 }
 
 // Resource
 
-export class DataAwsIamPolicy extends TerraformDataSource {
+export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -81,7 +80,7 @@ export class DataAwsIamPolicy extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
+      arn: cdktf.stringToTerraform(this._arn),
     };
   }
 }

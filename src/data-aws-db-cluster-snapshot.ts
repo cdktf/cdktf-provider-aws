@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDbClusterSnapshotConfig extends TerraformMetaArguments {
+export interface DataAwsDbClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly dbClusterIdentifier?: string;
   readonly dbClusterSnapshotIdentifier?: string;
   readonly includePublic?: boolean;
@@ -19,7 +18,7 @@ export interface DataAwsDbClusterSnapshotConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsDbClusterSnapshot extends TerraformDataSource {
+export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -237,13 +236,13 @@ export class DataAwsDbClusterSnapshot extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_cluster_identifier: this._dbClusterIdentifier,
-      db_cluster_snapshot_identifier: this._dbClusterSnapshotIdentifier,
-      include_public: this._includePublic,
-      include_shared: this._includeShared,
-      most_recent: this._mostRecent,
-      snapshot_type: this._snapshotType,
-      tags: this._tags,
+      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
+      db_cluster_snapshot_identifier: cdktf.stringToTerraform(this._dbClusterSnapshotIdentifier),
+      include_public: cdktf.booleanToTerraform(this._includePublic),
+      include_shared: cdktf.booleanToTerraform(this._includeShared),
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      snapshot_type: cdktf.stringToTerraform(this._snapshotType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

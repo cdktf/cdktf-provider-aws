@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElasticacheClusterConfig extends TerraformMetaArguments {
+export interface DataAwsElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   readonly clusterId: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsElasticacheClusterCacheNodes extends ComplexComputedList {
+export class DataAwsElasticacheClusterCacheNodes extends cdktf.ComplexComputedList {
 
   // address - computed: true, optional: false, required: false
   public get address() {
@@ -37,7 +35,7 @@ export class DataAwsElasticacheClusterCacheNodes extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsElasticacheCluster extends TerraformDataSource {
+export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -197,8 +195,8 @@ export class DataAwsElasticacheCluster extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: this._clusterId,
-      tags: this._tags,
+      cluster_id: cdktf.stringToTerraform(this._clusterId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KinesisAnalyticsApplicationConfig extends TerraformMetaArguments {
+export interface KinesisAnalyticsApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly code?: string;
   readonly description?: string;
   readonly name: string;
@@ -25,47 +24,143 @@ export interface KinesisAnalyticsApplicationCloudwatchLoggingOptions {
   readonly logStreamArn: string;
   readonly roleArn: string;
 }
+
+function kinesisAnalyticsApplicationCloudwatchLoggingOptionsToTerraform(struct?: KinesisAnalyticsApplicationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    log_stream_arn: cdktf.stringToTerraform(struct!.logStreamArn),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsKinesisFirehose {
   readonly resourceArn: string;
   readonly roleArn: string;
 }
+
+function kinesisAnalyticsApplicationInputsKinesisFirehoseToTerraform(struct?: KinesisAnalyticsApplicationInputsKinesisFirehose): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsKinesisStream {
   readonly resourceArn: string;
   readonly roleArn: string;
 }
+
+function kinesisAnalyticsApplicationInputsKinesisStreamToTerraform(struct?: KinesisAnalyticsApplicationInputsKinesisStream): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsParallelism {
   readonly count: number;
 }
+
+function kinesisAnalyticsApplicationInputsParallelismToTerraform(struct?: KinesisAnalyticsApplicationInputsParallelism): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    count: cdktf.numberToTerraform(struct!.count),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsProcessingConfigurationLambda {
   readonly resourceArn: string;
   readonly roleArn: string;
 }
+
+function kinesisAnalyticsApplicationInputsProcessingConfigurationLambdaToTerraform(struct?: KinesisAnalyticsApplicationInputsProcessingConfigurationLambda): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsProcessingConfiguration {
   /** lambda block */
   readonly lambda: KinesisAnalyticsApplicationInputsProcessingConfigurationLambda[];
 }
+
+function kinesisAnalyticsApplicationInputsProcessingConfigurationToTerraform(struct?: KinesisAnalyticsApplicationInputsProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    lambda: cdktf.listMapper(kinesisAnalyticsApplicationInputsProcessingConfigurationLambdaToTerraform)(struct!.lambda),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsSchemaRecordColumns {
   readonly mapping?: string;
   readonly name: string;
   readonly sqlType: string;
 }
+
+function kinesisAnalyticsApplicationInputsSchemaRecordColumnsToTerraform(struct?: KinesisAnalyticsApplicationInputsSchemaRecordColumns): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    mapping: cdktf.stringToTerraform(struct!.mapping),
+    name: cdktf.stringToTerraform(struct!.name),
+    sql_type: cdktf.stringToTerraform(struct!.sqlType),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv {
   readonly recordColumnDelimiter: string;
   readonly recordRowDelimiter: string;
 }
+
+function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvToTerraform(struct?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    record_column_delimiter: cdktf.stringToTerraform(struct!.recordColumnDelimiter),
+    record_row_delimiter: cdktf.stringToTerraform(struct!.recordRowDelimiter),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson {
   readonly recordRowPath: string;
 }
+
+function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonToTerraform(struct?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    record_row_path: cdktf.stringToTerraform(struct!.recordRowPath),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters {
   /** csv block */
   readonly csv?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv[];
   /** json block */
   readonly json?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson[];
 }
+
+function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersToTerraform(struct?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    csv: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvToTerraform)(struct!.csv),
+    json: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJsonToTerraform)(struct!.json),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormat {
   /** mapping_parameters block */
   readonly mappingParameters?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters[];
 }
+
+function kinesisAnalyticsApplicationInputsSchemaRecordFormatToTerraform(struct?: KinesisAnalyticsApplicationInputsSchemaRecordFormat): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    mapping_parameters: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersToTerraform)(struct!.mappingParameters),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputsSchema {
   readonly recordEncoding?: string;
   /** record_columns block */
@@ -73,6 +168,16 @@ export interface KinesisAnalyticsApplicationInputsSchema {
   /** record_format block */
   readonly recordFormat: KinesisAnalyticsApplicationInputsSchemaRecordFormat[];
 }
+
+function kinesisAnalyticsApplicationInputsSchemaToTerraform(struct?: KinesisAnalyticsApplicationInputsSchema): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    record_encoding: cdktf.stringToTerraform(struct!.recordEncoding),
+    record_columns: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaRecordColumnsToTerraform)(struct!.recordColumns),
+    record_format: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaRecordFormatToTerraform)(struct!.recordFormat),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputs {
   readonly namePrefix: string;
   /** kinesis_firehose block */
@@ -86,21 +191,69 @@ export interface KinesisAnalyticsApplicationInputs {
   /** schema block */
   readonly schema: KinesisAnalyticsApplicationInputsSchema[];
 }
+
+function kinesisAnalyticsApplicationInputsToTerraform(struct?: KinesisAnalyticsApplicationInputs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name_prefix: cdktf.stringToTerraform(struct!.namePrefix),
+    kinesis_firehose: cdktf.listMapper(kinesisAnalyticsApplicationInputsKinesisFirehoseToTerraform)(struct!.kinesisFirehose),
+    kinesis_stream: cdktf.listMapper(kinesisAnalyticsApplicationInputsKinesisStreamToTerraform)(struct!.kinesisStream),
+    parallelism: cdktf.listMapper(kinesisAnalyticsApplicationInputsParallelismToTerraform)(struct!.parallelism),
+    processing_configuration: cdktf.listMapper(kinesisAnalyticsApplicationInputsProcessingConfigurationToTerraform)(struct!.processingConfiguration),
+    schema: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaToTerraform)(struct!.schema),
+  }
+}
+
 export interface KinesisAnalyticsApplicationOutputsKinesisFirehose {
   readonly resourceArn: string;
   readonly roleArn: string;
 }
+
+function kinesisAnalyticsApplicationOutputsKinesisFirehoseToTerraform(struct?: KinesisAnalyticsApplicationOutputsKinesisFirehose): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface KinesisAnalyticsApplicationOutputsKinesisStream {
   readonly resourceArn: string;
   readonly roleArn: string;
 }
+
+function kinesisAnalyticsApplicationOutputsKinesisStreamToTerraform(struct?: KinesisAnalyticsApplicationOutputsKinesisStream): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface KinesisAnalyticsApplicationOutputsLambda {
   readonly resourceArn: string;
   readonly roleArn: string;
 }
+
+function kinesisAnalyticsApplicationOutputsLambdaToTerraform(struct?: KinesisAnalyticsApplicationOutputsLambda): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    resource_arn: cdktf.stringToTerraform(struct!.resourceArn),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface KinesisAnalyticsApplicationOutputsSchema {
   readonly recordFormatType?: string;
 }
+
+function kinesisAnalyticsApplicationOutputsSchemaToTerraform(struct?: KinesisAnalyticsApplicationOutputsSchema): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    record_format_type: cdktf.stringToTerraform(struct!.recordFormatType),
+  }
+}
+
 export interface KinesisAnalyticsApplicationOutputs {
   readonly name: string;
   /** kinesis_firehose block */
@@ -112,33 +265,99 @@ export interface KinesisAnalyticsApplicationOutputs {
   /** schema block */
   readonly schema: KinesisAnalyticsApplicationOutputsSchema[];
 }
+
+function kinesisAnalyticsApplicationOutputsToTerraform(struct?: KinesisAnalyticsApplicationOutputs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    kinesis_firehose: cdktf.listMapper(kinesisAnalyticsApplicationOutputsKinesisFirehoseToTerraform)(struct!.kinesisFirehose),
+    kinesis_stream: cdktf.listMapper(kinesisAnalyticsApplicationOutputsKinesisStreamToTerraform)(struct!.kinesisStream),
+    lambda: cdktf.listMapper(kinesisAnalyticsApplicationOutputsLambdaToTerraform)(struct!.lambda),
+    schema: cdktf.listMapper(kinesisAnalyticsApplicationOutputsSchemaToTerraform)(struct!.schema),
+  }
+}
+
 export interface KinesisAnalyticsApplicationReferenceDataSourcesS3 {
   readonly bucketArn: string;
   readonly fileKey: string;
   readonly roleArn: string;
 }
+
+function kinesisAnalyticsApplicationReferenceDataSourcesS3ToTerraform(struct?: KinesisAnalyticsApplicationReferenceDataSourcesS3): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
+    file_key: cdktf.stringToTerraform(struct!.fileKey),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns {
   readonly mapping?: string;
   readonly name: string;
   readonly sqlType: string;
 }
+
+function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsToTerraform(struct?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    mapping: cdktf.stringToTerraform(struct!.mapping),
+    name: cdktf.stringToTerraform(struct!.name),
+    sql_type: cdktf.stringToTerraform(struct!.sqlType),
+  }
+}
+
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv {
   readonly recordColumnDelimiter: string;
   readonly recordRowDelimiter: string;
 }
+
+function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvToTerraform(struct?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    record_column_delimiter: cdktf.stringToTerraform(struct!.recordColumnDelimiter),
+    record_row_delimiter: cdktf.stringToTerraform(struct!.recordRowDelimiter),
+  }
+}
+
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson {
   readonly recordRowPath: string;
 }
+
+function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonToTerraform(struct?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    record_row_path: cdktf.stringToTerraform(struct!.recordRowPath),
+  }
+}
+
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters {
   /** csv block */
   readonly csv?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv[];
   /** json block */
   readonly json?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson[];
 }
+
+function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersToTerraform(struct?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    csv: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsvToTerraform)(struct!.csv),
+    json: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJsonToTerraform)(struct!.json),
+  }
+}
+
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat {
   /** mapping_parameters block */
   readonly mappingParameters?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters[];
 }
+
+function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatToTerraform(struct?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    mapping_parameters: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersToTerraform)(struct!.mappingParameters),
+  }
+}
+
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchema {
   readonly recordEncoding?: string;
   /** record_columns block */
@@ -146,6 +365,16 @@ export interface KinesisAnalyticsApplicationReferenceDataSourcesSchema {
   /** record_format block */
   readonly recordFormat: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat[];
 }
+
+function kinesisAnalyticsApplicationReferenceDataSourcesSchemaToTerraform(struct?: KinesisAnalyticsApplicationReferenceDataSourcesSchema): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    record_encoding: cdktf.stringToTerraform(struct!.recordEncoding),
+    record_columns: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsToTerraform)(struct!.recordColumns),
+    record_format: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatToTerraform)(struct!.recordFormat),
+  }
+}
+
 export interface KinesisAnalyticsApplicationReferenceDataSources {
   readonly tableName: string;
   /** s3 block */
@@ -154,9 +383,19 @@ export interface KinesisAnalyticsApplicationReferenceDataSources {
   readonly schema: KinesisAnalyticsApplicationReferenceDataSourcesSchema[];
 }
 
+function kinesisAnalyticsApplicationReferenceDataSourcesToTerraform(struct?: KinesisAnalyticsApplicationReferenceDataSources): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    table_name: cdktf.stringToTerraform(struct!.tableName),
+    s3: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesS3ToTerraform)(struct!.s3),
+    schema: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesSchemaToTerraform)(struct!.schema),
+  }
+}
+
+
 // Resource
 
-export class KinesisAnalyticsApplication extends TerraformResource {
+export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -348,14 +587,14 @@ export class KinesisAnalyticsApplication extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      code: this._code,
-      description: this._description,
-      name: this._name,
-      tags: this._tags,
-      cloudwatch_logging_options: this._cloudwatchLoggingOptions,
-      inputs: this._inputs,
-      outputs: this._outputs,
-      reference_data_sources: this._referenceDataSources,
+      code: cdktf.stringToTerraform(this._code),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      cloudwatch_logging_options: cdktf.listMapper(kinesisAnalyticsApplicationCloudwatchLoggingOptionsToTerraform)(this._cloudwatchLoggingOptions),
+      inputs: cdktf.listMapper(kinesisAnalyticsApplicationInputsToTerraform)(this._inputs),
+      outputs: cdktf.listMapper(kinesisAnalyticsApplicationOutputsToTerraform)(this._outputs),
+      reference_data_sources: cdktf.listMapper(kinesisAnalyticsApplicationReferenceDataSourcesToTerraform)(this._referenceDataSources),
     };
   }
 }

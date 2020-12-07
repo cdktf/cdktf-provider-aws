@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2DeploymentConfig extends TerraformMetaArguments {
+export interface Apigatewayv2DeploymentConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly description?: string;
   readonly triggers?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface Apigatewayv2DeploymentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Apigatewayv2Deployment extends TerraformResource {
+export class Apigatewayv2Deployment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +101,9 @@ export class Apigatewayv2Deployment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      description: this._description,
-      triggers: this._triggers,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      description: cdktf.stringToTerraform(this._description),
+      triggers: cdktf.hashMapper(cdktf.anyToTerraform)(this._triggers),
     };
   }
 }

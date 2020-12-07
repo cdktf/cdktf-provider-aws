@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayRouteConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayRouteConfig extends cdktf.TerraformMetaArguments {
   readonly blackhole?: boolean;
   readonly destinationCidrBlock: string;
   readonly transitGatewayAttachmentId?: string;
@@ -16,7 +15,7 @@ export interface Ec2TransitGatewayRouteConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2TransitGatewayRoute extends TerraformResource {
+export class Ec2TransitGatewayRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,10 +111,10 @@ export class Ec2TransitGatewayRoute extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      blackhole: this._blackhole,
-      destination_cidr_block: this._destinationCidrBlock,
-      transit_gateway_attachment_id: this._transitGatewayAttachmentId,
-      transit_gateway_route_table_id: this._transitGatewayRouteTableId,
+      blackhole: cdktf.booleanToTerraform(this._blackhole),
+      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_route_table_id: cdktf.stringToTerraform(this._transitGatewayRouteTableId),
     };
   }
 }

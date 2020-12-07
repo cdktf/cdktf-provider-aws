@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface FsxWindowsFileSystemConfig extends TerraformMetaArguments {
+export interface FsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly activeDirectoryId?: string;
   readonly automaticBackupRetentionDays?: number;
   readonly copyTagsToBackups?: boolean;
@@ -33,14 +32,36 @@ export interface FsxWindowsFileSystemSelfManagedActiveDirectory {
   readonly password: string;
   readonly username: string;
 }
+
+function fsxWindowsFileSystemSelfManagedActiveDirectoryToTerraform(struct?: FsxWindowsFileSystemSelfManagedActiveDirectory): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    dns_ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dnsIps),
+    domain_name: cdktf.stringToTerraform(struct!.domainName),
+    file_system_administrators_group: cdktf.stringToTerraform(struct!.fileSystemAdministratorsGroup),
+    organizational_unit_distinguished_name: cdktf.stringToTerraform(struct!.organizationalUnitDistinguishedName),
+    password: cdktf.stringToTerraform(struct!.password),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
 export interface FsxWindowsFileSystemTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
+function fsxWindowsFileSystemTimeoutsToTerraform(struct?: FsxWindowsFileSystemTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class FsxWindowsFileSystem extends TerraformResource {
+export class FsxWindowsFileSystem extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -328,20 +349,20 @@ export class FsxWindowsFileSystem extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active_directory_id: this._activeDirectoryId,
-      automatic_backup_retention_days: this._automaticBackupRetentionDays,
-      copy_tags_to_backups: this._copyTagsToBackups,
-      daily_automatic_backup_start_time: this._dailyAutomaticBackupStartTime,
-      kms_key_id: this._kmsKeyId,
-      security_group_ids: this._securityGroupIds,
-      skip_final_backup: this._skipFinalBackup,
-      storage_capacity: this._storageCapacity,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      throughput_capacity: this._throughputCapacity,
-      weekly_maintenance_start_time: this._weeklyMaintenanceStartTime,
-      self_managed_active_directory: this._selfManagedActiveDirectory,
-      timeouts: this._timeouts,
+      active_directory_id: cdktf.stringToTerraform(this._activeDirectoryId),
+      automatic_backup_retention_days: cdktf.numberToTerraform(this._automaticBackupRetentionDays),
+      copy_tags_to_backups: cdktf.booleanToTerraform(this._copyTagsToBackups),
+      daily_automatic_backup_start_time: cdktf.stringToTerraform(this._dailyAutomaticBackupStartTime),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      skip_final_backup: cdktf.booleanToTerraform(this._skipFinalBackup),
+      storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      throughput_capacity: cdktf.numberToTerraform(this._throughputCapacity),
+      weekly_maintenance_start_time: cdktf.stringToTerraform(this._weeklyMaintenanceStartTime),
+      self_managed_active_directory: cdktf.listMapper(fsxWindowsFileSystemSelfManagedActiveDirectoryToTerraform)(this._selfManagedActiveDirectory),
+      timeouts: fsxWindowsFileSystemTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudformationStackSetInstanceConfig extends TerraformMetaArguments {
+export interface CloudformationStackSetInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly accountId?: string;
   readonly parameterOverrides?: { [key: string]: string };
   readonly region?: string;
@@ -22,9 +21,19 @@ export interface CloudformationStackSetInstanceTimeouts {
   readonly update?: string;
 }
 
+function cloudformationStackSetInstanceTimeoutsToTerraform(struct?: CloudformationStackSetInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class CloudformationStackSetInstance extends TerraformResource {
+export class CloudformationStackSetInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -162,12 +171,12 @@ export class CloudformationStackSetInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      parameter_overrides: this._parameterOverrides,
-      region: this._region,
-      retain_stack: this._retainStack,
-      stack_set_name: this._stackSetName,
-      timeouts: this._timeouts,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      parameter_overrides: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameterOverrides),
+      region: cdktf.stringToTerraform(this._region),
+      retain_stack: cdktf.booleanToTerraform(this._retainStack),
+      stack_set_name: cdktf.stringToTerraform(this._stackSetName),
+      timeouts: cloudformationStackSetInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

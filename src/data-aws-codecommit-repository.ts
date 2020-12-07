@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCodecommitRepositoryConfig extends TerraformMetaArguments {
+export interface DataAwsCodecommitRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly repositoryName: string;
 }
 
 // Resource
 
-export class DataAwsCodecommitRepository extends TerraformDataSource {
+export class DataAwsCodecommitRepository extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -81,7 +80,7 @@ export class DataAwsCodecommitRepository extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      repository_name: this._repositoryName,
+      repository_name: cdktf.stringToTerraform(this._repositoryName),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SwfDomainConfig extends TerraformMetaArguments {
+export interface SwfDomainConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -17,7 +16,7 @@ export interface SwfDomainConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SwfDomain extends TerraformResource {
+export class SwfDomain extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -138,11 +137,11 @@ export class SwfDomain extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      tags: this._tags,
-      workflow_execution_retention_period_in_days: this._workflowExecutionRetentionPeriodInDays,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      workflow_execution_retention_period_in_days: cdktf.stringToTerraform(this._workflowExecutionRetentionPeriodInDays),
     };
   }
 }

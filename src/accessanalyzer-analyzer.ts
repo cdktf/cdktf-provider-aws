@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AccessanalyzerAnalyzerConfig extends TerraformMetaArguments {
+export interface AccessanalyzerAnalyzerConfig extends cdktf.TerraformMetaArguments {
   readonly analyzerName: string;
   readonly tags?: { [key: string]: string };
   readonly type?: string;
@@ -15,7 +14,7 @@ export interface AccessanalyzerAnalyzerConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AccessanalyzerAnalyzer extends TerraformResource {
+export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +101,9 @@ export class AccessanalyzerAnalyzer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analyzer_name: this._analyzerName,
-      tags: this._tags,
-      type: this._type,
+      analyzer_name: cdktf.stringToTerraform(this._analyzerName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

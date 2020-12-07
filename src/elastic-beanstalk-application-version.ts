@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticBeanstalkApplicationVersionConfig extends TerraformMetaArguments {
+export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.TerraformMetaArguments {
   readonly application: string;
   readonly bucket: string;
   readonly description?: string;
@@ -19,7 +18,7 @@ export interface ElasticBeanstalkApplicationVersionConfig extends TerraformMetaA
 
 // Resource
 
-export class ElasticBeanstalkApplicationVersion extends TerraformResource {
+export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -165,13 +164,13 @@ export class ElasticBeanstalkApplicationVersion extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application: this._application,
-      bucket: this._bucket,
-      description: this._description,
-      force_delete: this._forceDelete,
-      key: this._key,
-      name: this._name,
-      tags: this._tags,
+      application: cdktf.stringToTerraform(this._application),
+      bucket: cdktf.stringToTerraform(this._bucket),
+      description: cdktf.stringToTerraform(this._description),
+      force_delete: cdktf.booleanToTerraform(this._forceDelete),
+      key: cdktf.stringToTerraform(this._key),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

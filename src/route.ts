@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RouteConfig extends TerraformMetaArguments {
+export interface RouteConfig extends cdktf.TerraformMetaArguments {
   readonly destinationCidrBlock?: string;
   readonly destinationIpv6CidrBlock?: string;
   readonly egressOnlyGatewayId?: string;
@@ -26,9 +25,18 @@ export interface RouteTimeouts {
   readonly delete?: string;
 }
 
+function routeTimeoutsToTerraform(struct?: RouteTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class Route extends TerraformResource {
+export class Route extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -266,17 +274,17 @@ export class Route extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_cidr_block: this._destinationCidrBlock,
-      destination_ipv6_cidr_block: this._destinationIpv6CidrBlock,
-      egress_only_gateway_id: this._egressOnlyGatewayId,
-      gateway_id: this._gatewayId,
-      instance_id: this._instanceId,
-      nat_gateway_id: this._natGatewayId,
-      network_interface_id: this._networkInterfaceId,
-      route_table_id: this._routeTableId,
-      transit_gateway_id: this._transitGatewayId,
-      vpc_peering_connection_id: this._vpcPeeringConnectionId,
-      timeouts: this._timeouts,
+      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      destination_ipv6_cidr_block: cdktf.stringToTerraform(this._destinationIpv6CidrBlock),
+      egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
+      gateway_id: cdktf.stringToTerraform(this._gatewayId),
+      instance_id: cdktf.stringToTerraform(this._instanceId),
+      nat_gateway_id: cdktf.stringToTerraform(this._natGatewayId),
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      route_table_id: cdktf.stringToTerraform(this._routeTableId),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
+      timeouts: routeTimeoutsToTerraform(this._timeouts),
     };
   }
 }

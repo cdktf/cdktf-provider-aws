@@ -2,19 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsInternetGatewayConfig extends TerraformMetaArguments {
+export interface DataAwsInternetGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly internetGatewayId?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsInternetGatewayFilter[];
 }
-export class DataAwsInternetGatewayAttachments extends ComplexComputedList {
+export class DataAwsInternetGatewayAttachments extends cdktf.ComplexComputedList {
 
   // state - computed: true, optional: false, required: false
   public get state() {
@@ -31,9 +29,18 @@ export interface DataAwsInternetGatewayFilter {
   readonly values: string[];
 }
 
+function dataAwsInternetGatewayFilterToTerraform(struct?: DataAwsInternetGatewayFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsInternetGateway extends TerraformDataSource {
+export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -133,9 +140,9 @@ export class DataAwsInternetGateway extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      internet_gateway_id: this._internetGatewayId,
-      tags: this._tags,
-      filter: this._filter,
+      internet_gateway_id: cdktf.stringToTerraform(this._internetGatewayId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsInternetGatewayFilterToTerraform)(this._filter),
     };
   }
 }

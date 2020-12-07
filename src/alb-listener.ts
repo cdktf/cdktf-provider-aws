@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AlbListenerConfig extends TerraformMetaArguments {
+export interface AlbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly certificateArn?: string;
   readonly loadBalancerArn: string;
   readonly port: number;
@@ -28,6 +27,21 @@ export interface AlbListenerDefaultActionAuthenticateCognito {
   readonly userPoolClientId: string;
   readonly userPoolDomain: string;
 }
+
+function albListenerDefaultActionAuthenticateCognitoToTerraform(struct?: AlbListenerDefaultActionAuthenticateCognito): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    authentication_request_extra_params: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.authenticationRequestExtraParams),
+    on_unauthenticated_request: cdktf.stringToTerraform(struct!.onUnauthenticatedRequest),
+    scope: cdktf.stringToTerraform(struct!.scope),
+    session_cookie_name: cdktf.stringToTerraform(struct!.sessionCookieName),
+    session_timeout: cdktf.numberToTerraform(struct!.sessionTimeout),
+    user_pool_arn: cdktf.stringToTerraform(struct!.userPoolArn),
+    user_pool_client_id: cdktf.stringToTerraform(struct!.userPoolClientId),
+    user_pool_domain: cdktf.stringToTerraform(struct!.userPoolDomain),
+  }
+}
+
 export interface AlbListenerDefaultActionAuthenticateOidc {
   readonly authenticationRequestExtraParams?: { [key: string]: string };
   readonly authorizationEndpoint: string;
@@ -41,25 +55,80 @@ export interface AlbListenerDefaultActionAuthenticateOidc {
   readonly tokenEndpoint: string;
   readonly userInfoEndpoint: string;
 }
+
+function albListenerDefaultActionAuthenticateOidcToTerraform(struct?: AlbListenerDefaultActionAuthenticateOidc): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    authentication_request_extra_params: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.authenticationRequestExtraParams),
+    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    issuer: cdktf.stringToTerraform(struct!.issuer),
+    on_unauthenticated_request: cdktf.stringToTerraform(struct!.onUnauthenticatedRequest),
+    scope: cdktf.stringToTerraform(struct!.scope),
+    session_cookie_name: cdktf.stringToTerraform(struct!.sessionCookieName),
+    session_timeout: cdktf.numberToTerraform(struct!.sessionTimeout),
+    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+    user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
+  }
+}
+
 export interface AlbListenerDefaultActionFixedResponse {
   readonly contentType: string;
   readonly messageBody?: string;
   readonly statusCode?: string;
 }
+
+function albListenerDefaultActionFixedResponseToTerraform(struct?: AlbListenerDefaultActionFixedResponse): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    content_type: cdktf.stringToTerraform(struct!.contentType),
+    message_body: cdktf.stringToTerraform(struct!.messageBody),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+  }
+}
+
 export interface AlbListenerDefaultActionForwardStickiness {
   readonly duration: number;
   readonly enabled?: boolean;
 }
+
+function albListenerDefaultActionForwardStickinessToTerraform(struct?: AlbListenerDefaultActionForwardStickiness): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    duration: cdktf.numberToTerraform(struct!.duration),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface AlbListenerDefaultActionForwardTargetGroup {
   readonly arn: string;
   readonly weight?: number;
 }
+
+function albListenerDefaultActionForwardTargetGroupToTerraform(struct?: AlbListenerDefaultActionForwardTargetGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    arn: cdktf.stringToTerraform(struct!.arn),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
 export interface AlbListenerDefaultActionForward {
   /** stickiness block */
   readonly stickiness?: AlbListenerDefaultActionForwardStickiness[];
   /** target_group block */
   readonly targetGroup: AlbListenerDefaultActionForwardTargetGroup[];
 }
+
+function albListenerDefaultActionForwardToTerraform(struct?: AlbListenerDefaultActionForward): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    stickiness: cdktf.listMapper(albListenerDefaultActionForwardStickinessToTerraform)(struct!.stickiness),
+    target_group: cdktf.listMapper(albListenerDefaultActionForwardTargetGroupToTerraform)(struct!.targetGroup),
+  }
+}
+
 export interface AlbListenerDefaultActionRedirect {
   readonly host?: string;
   readonly path?: string;
@@ -68,6 +137,19 @@ export interface AlbListenerDefaultActionRedirect {
   readonly query?: string;
   readonly statusCode: string;
 }
+
+function albListenerDefaultActionRedirectToTerraform(struct?: AlbListenerDefaultActionRedirect): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    host: cdktf.stringToTerraform(struct!.host),
+    path: cdktf.stringToTerraform(struct!.path),
+    port: cdktf.stringToTerraform(struct!.port),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    query: cdktf.stringToTerraform(struct!.query),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+  }
+}
+
 export interface AlbListenerDefaultAction {
   readonly order?: number;
   readonly targetGroupArn?: string;
@@ -83,13 +165,36 @@ export interface AlbListenerDefaultAction {
   /** redirect block */
   readonly redirect?: AlbListenerDefaultActionRedirect[];
 }
+
+function albListenerDefaultActionToTerraform(struct?: AlbListenerDefaultAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    order: cdktf.numberToTerraform(struct!.order),
+    target_group_arn: cdktf.stringToTerraform(struct!.targetGroupArn),
+    type: cdktf.stringToTerraform(struct!.type),
+    authenticate_cognito: cdktf.listMapper(albListenerDefaultActionAuthenticateCognitoToTerraform)(struct!.authenticateCognito),
+    authenticate_oidc: cdktf.listMapper(albListenerDefaultActionAuthenticateOidcToTerraform)(struct!.authenticateOidc),
+    fixed_response: cdktf.listMapper(albListenerDefaultActionFixedResponseToTerraform)(struct!.fixedResponse),
+    forward: cdktf.listMapper(albListenerDefaultActionForwardToTerraform)(struct!.forward),
+    redirect: cdktf.listMapper(albListenerDefaultActionRedirectToTerraform)(struct!.redirect),
+  }
+}
+
 export interface AlbListenerTimeouts {
   readonly read?: string;
 }
 
+function albListenerTimeoutsToTerraform(struct?: AlbListenerTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+
 // Resource
 
-export class AlbListener extends TerraformResource {
+export class AlbListener extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -238,13 +343,13 @@ export class AlbListener extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: this._certificateArn,
-      load_balancer_arn: this._loadBalancerArn,
-      port: this._port,
-      protocol: this._protocol,
-      ssl_policy: this._sslPolicy,
-      default_action: this._defaultAction,
-      timeouts: this._timeouts,
+      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
+      load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
+      port: cdktf.numberToTerraform(this._port),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      ssl_policy: cdktf.stringToTerraform(this._sslPolicy),
+      default_action: cdktf.listMapper(albListenerDefaultActionToTerraform)(this._defaultAction),
+      timeouts: albListenerTimeoutsToTerraform(this._timeouts),
     };
   }
 }

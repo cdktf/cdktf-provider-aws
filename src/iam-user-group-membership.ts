@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamUserGroupMembershipConfig extends TerraformMetaArguments {
+export interface IamUserGroupMembershipConfig extends cdktf.TerraformMetaArguments {
   readonly groups: string[];
   readonly user: string;
 }
 
 // Resource
 
-export class IamUserGroupMembership extends TerraformResource {
+export class IamUserGroupMembership extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class IamUserGroupMembership extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      groups: this._groups,
-      user: this._user,
+      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PlacementGroupConfig extends TerraformMetaArguments {
+export interface PlacementGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly strategy: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface PlacementGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PlacementGroup extends TerraformResource {
+export class PlacementGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -104,9 +103,9 @@ export class PlacementGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      strategy: this._strategy,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      strategy: cdktf.stringToTerraform(this._strategy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

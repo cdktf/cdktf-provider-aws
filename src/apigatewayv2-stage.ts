@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2StageConfig extends TerraformMetaArguments {
+export interface Apigatewayv2StageConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly autoDeploy?: boolean;
   readonly clientCertificateId?: string;
@@ -27,6 +26,15 @@ export interface Apigatewayv2StageAccessLogSettings {
   readonly destinationArn: string;
   readonly format: string;
 }
+
+function apigatewayv2StageAccessLogSettingsToTerraform(struct?: Apigatewayv2StageAccessLogSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
+    format: cdktf.stringToTerraform(struct!.format),
+  }
+}
+
 export interface Apigatewayv2StageDefaultRouteSettings {
   readonly dataTraceEnabled?: boolean;
   readonly detailedMetricsEnabled?: boolean;
@@ -34,6 +42,18 @@ export interface Apigatewayv2StageDefaultRouteSettings {
   readonly throttlingBurstLimit?: number;
   readonly throttlingRateLimit?: number;
 }
+
+function apigatewayv2StageDefaultRouteSettingsToTerraform(struct?: Apigatewayv2StageDefaultRouteSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data_trace_enabled: cdktf.booleanToTerraform(struct!.dataTraceEnabled),
+    detailed_metrics_enabled: cdktf.booleanToTerraform(struct!.detailedMetricsEnabled),
+    logging_level: cdktf.stringToTerraform(struct!.loggingLevel),
+    throttling_burst_limit: cdktf.numberToTerraform(struct!.throttlingBurstLimit),
+    throttling_rate_limit: cdktf.numberToTerraform(struct!.throttlingRateLimit),
+  }
+}
+
 export interface Apigatewayv2StageRouteSettings {
   readonly dataTraceEnabled?: boolean;
   readonly detailedMetricsEnabled?: boolean;
@@ -43,9 +63,22 @@ export interface Apigatewayv2StageRouteSettings {
   readonly throttlingRateLimit?: number;
 }
 
+function apigatewayv2StageRouteSettingsToTerraform(struct?: Apigatewayv2StageRouteSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data_trace_enabled: cdktf.booleanToTerraform(struct!.dataTraceEnabled),
+    detailed_metrics_enabled: cdktf.booleanToTerraform(struct!.detailedMetricsEnabled),
+    logging_level: cdktf.stringToTerraform(struct!.loggingLevel),
+    route_key: cdktf.stringToTerraform(struct!.routeKey),
+    throttling_burst_limit: cdktf.numberToTerraform(struct!.throttlingBurstLimit),
+    throttling_rate_limit: cdktf.numberToTerraform(struct!.throttlingRateLimit),
+  }
+}
+
+
 // Resource
 
-export class Apigatewayv2Stage extends TerraformResource {
+export class Apigatewayv2Stage extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -275,17 +308,17 @@ export class Apigatewayv2Stage extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      auto_deploy: this._autoDeploy,
-      client_certificate_id: this._clientCertificateId,
-      deployment_id: this._deploymentId,
-      description: this._description,
-      name: this._name,
-      stage_variables: this._stageVariables,
-      tags: this._tags,
-      access_log_settings: this._accessLogSettings,
-      default_route_settings: this._defaultRouteSettings,
-      route_settings: this._routeSettings,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      auto_deploy: cdktf.booleanToTerraform(this._autoDeploy),
+      client_certificate_id: cdktf.stringToTerraform(this._clientCertificateId),
+      deployment_id: cdktf.stringToTerraform(this._deploymentId),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      stage_variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._stageVariables),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      access_log_settings: cdktf.listMapper(apigatewayv2StageAccessLogSettingsToTerraform)(this._accessLogSettings),
+      default_route_settings: cdktf.listMapper(apigatewayv2StageDefaultRouteSettingsToTerraform)(this._defaultRouteSettings),
+      route_settings: cdktf.listMapper(apigatewayv2StageRouteSettingsToTerraform)(this._routeSettings),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53QueryLogConfig extends TerraformMetaArguments {
+export interface Route53QueryLogConfig extends cdktf.TerraformMetaArguments {
   readonly cloudwatchLogGroupArn: string;
   readonly zoneId: string;
 }
 
 // Resource
 
-export class Route53QueryLog extends TerraformResource {
+export class Route53QueryLog extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class Route53QueryLog extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloudwatch_log_group_arn: this._cloudwatchLogGroupArn,
-      zone_id: this._zoneId,
+      cloudwatch_log_group_arn: cdktf.stringToTerraform(this._cloudwatchLogGroupArn),
+      zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbOptionGroupConfig extends TerraformMetaArguments {
+export interface DbOptionGroupConfig extends cdktf.TerraformMetaArguments {
   readonly engineName: string;
   readonly majorEngineVersion: string;
   readonly name?: string;
@@ -23,6 +22,15 @@ export interface DbOptionGroupOptionOptionSettings {
   readonly name: string;
   readonly value: string;
 }
+
+function dbOptionGroupOptionOptionSettingsToTerraform(struct?: DbOptionGroupOptionOptionSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface DbOptionGroupOption {
   readonly dbSecurityGroupMemberships?: string[];
   readonly optionName: string;
@@ -32,13 +40,34 @@ export interface DbOptionGroupOption {
   /** option_settings block */
   readonly optionSettings?: DbOptionGroupOptionOptionSettings[];
 }
+
+function dbOptionGroupOptionToTerraform(struct?: DbOptionGroupOption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    db_security_group_memberships: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dbSecurityGroupMemberships),
+    option_name: cdktf.stringToTerraform(struct!.optionName),
+    port: cdktf.numberToTerraform(struct!.port),
+    version: cdktf.stringToTerraform(struct!.version),
+    vpc_security_group_memberships: cdktf.listMapper(cdktf.stringToTerraform)(struct!.vpcSecurityGroupMemberships),
+    option_settings: cdktf.listMapper(dbOptionGroupOptionOptionSettingsToTerraform)(struct!.optionSettings),
+  }
+}
+
 export interface DbOptionGroupTimeouts {
   readonly delete?: string;
 }
 
+function dbOptionGroupTimeoutsToTerraform(struct?: DbOptionGroupTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DbOptionGroup extends TerraformResource {
+export class DbOptionGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -207,14 +236,14 @@ export class DbOptionGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine_name: this._engineName,
-      major_engine_version: this._majorEngineVersion,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      option_group_description: this._optionGroupDescription,
-      tags: this._tags,
-      option: this._option,
-      timeouts: this._timeouts,
+      engine_name: cdktf.stringToTerraform(this._engineName),
+      major_engine_version: cdktf.stringToTerraform(this._majorEngineVersion),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      option_group_description: cdktf.stringToTerraform(this._optionGroupDescription),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      option: cdktf.listMapper(dbOptionGroupOptionToTerraform)(this._option),
+      timeouts: dbOptionGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

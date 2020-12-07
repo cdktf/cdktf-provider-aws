@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RedshiftClusterConfig extends TerraformMetaArguments {
+export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   readonly allowVersionUpgrade?: boolean;
   readonly automatedSnapshotRetentionPeriod?: number;
   readonly availabilityZone?: string;
@@ -55,20 +54,50 @@ export interface RedshiftClusterLogging {
   readonly enable: boolean;
   readonly s3KeyPrefix?: string;
 }
+
+function redshiftClusterLoggingToTerraform(struct?: RedshiftClusterLogging): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    enable: cdktf.booleanToTerraform(struct!.enable),
+    s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
+  }
+}
+
 export interface RedshiftClusterSnapshotCopy {
   readonly destinationRegion: string;
   readonly grantName?: string;
   readonly retentionPeriod?: number;
 }
+
+function redshiftClusterSnapshotCopyToTerraform(struct?: RedshiftClusterSnapshotCopy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    destination_region: cdktf.stringToTerraform(struct!.destinationRegion),
+    grant_name: cdktf.stringToTerraform(struct!.grantName),
+    retention_period: cdktf.numberToTerraform(struct!.retentionPeriod),
+  }
+}
+
 export interface RedshiftClusterTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function redshiftClusterTimeoutsToTerraform(struct?: RedshiftClusterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class RedshiftCluster extends TerraformResource {
+export class RedshiftCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -752,44 +781,44 @@ export class RedshiftCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_version_upgrade: this._allowVersionUpgrade,
-      automated_snapshot_retention_period: this._automatedSnapshotRetentionPeriod,
-      availability_zone: this._availabilityZone,
-      bucket_name: this._bucketName,
-      cluster_identifier: this._clusterIdentifier,
-      cluster_parameter_group_name: this._clusterParameterGroupName,
-      cluster_public_key: this._clusterPublicKey,
-      cluster_revision_number: this._clusterRevisionNumber,
-      cluster_security_groups: this._clusterSecurityGroups,
-      cluster_subnet_group_name: this._clusterSubnetGroupName,
-      cluster_type: this._clusterType,
-      cluster_version: this._clusterVersion,
-      database_name: this._databaseName,
-      elastic_ip: this._elasticIp,
-      enable_logging: this._enableLogging,
-      encrypted: this._encrypted,
-      endpoint: this._endpoint,
-      enhanced_vpc_routing: this._enhancedVpcRouting,
-      final_snapshot_identifier: this._finalSnapshotIdentifier,
-      iam_roles: this._iamRoles,
-      kms_key_id: this._kmsKeyId,
-      master_password: this._masterPassword,
-      master_username: this._masterUsername,
-      node_type: this._nodeType,
-      number_of_nodes: this._numberOfNodes,
-      owner_account: this._ownerAccount,
-      port: this._port,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      publicly_accessible: this._publiclyAccessible,
-      s3_key_prefix: this._s3KeyPrefix,
-      skip_final_snapshot: this._skipFinalSnapshot,
-      snapshot_cluster_identifier: this._snapshotClusterIdentifier,
-      snapshot_identifier: this._snapshotIdentifier,
-      tags: this._tags,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      logging: this._logging,
-      snapshot_copy: this._snapshotCopy,
-      timeouts: this._timeouts,
+      allow_version_upgrade: cdktf.booleanToTerraform(this._allowVersionUpgrade),
+      automated_snapshot_retention_period: cdktf.numberToTerraform(this._automatedSnapshotRetentionPeriod),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      bucket_name: cdktf.stringToTerraform(this._bucketName),
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      cluster_parameter_group_name: cdktf.stringToTerraform(this._clusterParameterGroupName),
+      cluster_public_key: cdktf.stringToTerraform(this._clusterPublicKey),
+      cluster_revision_number: cdktf.stringToTerraform(this._clusterRevisionNumber),
+      cluster_security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._clusterSecurityGroups),
+      cluster_subnet_group_name: cdktf.stringToTerraform(this._clusterSubnetGroupName),
+      cluster_type: cdktf.stringToTerraform(this._clusterType),
+      cluster_version: cdktf.stringToTerraform(this._clusterVersion),
+      database_name: cdktf.stringToTerraform(this._databaseName),
+      elastic_ip: cdktf.stringToTerraform(this._elasticIp),
+      enable_logging: cdktf.booleanToTerraform(this._enableLogging),
+      encrypted: cdktf.booleanToTerraform(this._encrypted),
+      endpoint: cdktf.stringToTerraform(this._endpoint),
+      enhanced_vpc_routing: cdktf.booleanToTerraform(this._enhancedVpcRouting),
+      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
+      iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      master_password: cdktf.stringToTerraform(this._masterPassword),
+      master_username: cdktf.stringToTerraform(this._masterUsername),
+      node_type: cdktf.stringToTerraform(this._nodeType),
+      number_of_nodes: cdktf.numberToTerraform(this._numberOfNodes),
+      owner_account: cdktf.stringToTerraform(this._ownerAccount),
+      port: cdktf.numberToTerraform(this._port),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
+      s3_key_prefix: cdktf.stringToTerraform(this._s3KeyPrefix),
+      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
+      snapshot_cluster_identifier: cdktf.stringToTerraform(this._snapshotClusterIdentifier),
+      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      logging: cdktf.listMapper(redshiftClusterLoggingToTerraform)(this._logging),
+      snapshot_copy: cdktf.listMapper(redshiftClusterSnapshotCopyToTerraform)(this._snapshotCopy),
+      timeouts: redshiftClusterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCloudtrailServiceAccountConfig extends TerraformMetaArguments {
+export interface DataAwsCloudtrailServiceAccountConfig extends cdktf.TerraformMetaArguments {
   readonly region?: string;
 }
 
 // Resource
 
-export class DataAwsCloudtrailServiceAccount extends TerraformDataSource {
+export class DataAwsCloudtrailServiceAccount extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -69,7 +68,7 @@ export class DataAwsCloudtrailServiceAccount extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: this._region,
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 }

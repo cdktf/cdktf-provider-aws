@@ -2,18 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsNetworkInterfaceConfig extends TerraformMetaArguments {
+export interface DataAwsNetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsNetworkInterfaceFilter[];
 }
-export class DataAwsNetworkInterfaceAssociation extends ComplexComputedList {
+export class DataAwsNetworkInterfaceAssociation extends cdktf.ComplexComputedList {
 
   // allocation_id - computed: true, optional: false, required: false
   public get allocationId() {
@@ -40,7 +38,7 @@ export class DataAwsNetworkInterfaceAssociation extends ComplexComputedList {
     return this.getStringAttribute('public_ip');
   }
 }
-export class DataAwsNetworkInterfaceAttachment extends ComplexComputedList {
+export class DataAwsNetworkInterfaceAttachment extends cdktf.ComplexComputedList {
 
   // attachment_id - computed: true, optional: false, required: false
   public get attachmentId() {
@@ -67,9 +65,18 @@ export interface DataAwsNetworkInterfaceFilter {
   readonly values: string[];
 }
 
+function dataAwsNetworkInterfaceFilterToTerraform(struct?: DataAwsNetworkInterfaceFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsNetworkInterface extends TerraformDataSource {
+export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -217,8 +224,8 @@ export class DataAwsNetworkInterface extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      filter: this._filter,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsNetworkInterfaceFilterToTerraform)(this._filter),
     };
   }
 }

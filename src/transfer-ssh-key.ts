@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TransferSshKeyConfig extends TerraformMetaArguments {
+export interface TransferSshKeyConfig extends cdktf.TerraformMetaArguments {
   readonly body: string;
   readonly serverId: string;
   readonly userName: string;
@@ -15,7 +14,7 @@ export interface TransferSshKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class TransferSshKey extends TerraformResource {
+export class TransferSshKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,9 +90,9 @@ export class TransferSshKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      body: this._body,
-      server_id: this._serverId,
-      user_name: this._userName,
+      body: cdktf.stringToTerraform(this._body),
+      server_id: cdktf.stringToTerraform(this._serverId),
+      user_name: cdktf.stringToTerraform(this._userName),
     };
   }
 }

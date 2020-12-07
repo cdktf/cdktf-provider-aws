@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EcsCapacityProviderConfig extends TerraformMetaArguments {
+export interface EcsCapacityProviderConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** auto_scaling_group_provider block */
@@ -19,6 +18,17 @@ export interface EcsCapacityProviderAutoScalingGroupProviderManagedScaling {
   readonly status?: string;
   readonly targetCapacity?: number;
 }
+
+function ecsCapacityProviderAutoScalingGroupProviderManagedScalingToTerraform(struct?: EcsCapacityProviderAutoScalingGroupProviderManagedScaling): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    maximum_scaling_step_size: cdktf.numberToTerraform(struct!.maximumScalingStepSize),
+    minimum_scaling_step_size: cdktf.numberToTerraform(struct!.minimumScalingStepSize),
+    status: cdktf.stringToTerraform(struct!.status),
+    target_capacity: cdktf.numberToTerraform(struct!.targetCapacity),
+  }
+}
+
 export interface EcsCapacityProviderAutoScalingGroupProvider {
   readonly autoScalingGroupArn: string;
   readonly managedTerminationProtection?: string;
@@ -26,9 +36,19 @@ export interface EcsCapacityProviderAutoScalingGroupProvider {
   readonly managedScaling?: EcsCapacityProviderAutoScalingGroupProviderManagedScaling[];
 }
 
+function ecsCapacityProviderAutoScalingGroupProviderToTerraform(struct?: EcsCapacityProviderAutoScalingGroupProvider): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    auto_scaling_group_arn: cdktf.stringToTerraform(struct!.autoScalingGroupArn),
+    managed_termination_protection: cdktf.stringToTerraform(struct!.managedTerminationProtection),
+    managed_scaling: cdktf.listMapper(ecsCapacityProviderAutoScalingGroupProviderManagedScalingToTerraform)(struct!.managedScaling),
+  }
+}
+
+
 // Resource
 
-export class EcsCapacityProvider extends TerraformResource {
+export class EcsCapacityProvider extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,9 +132,9 @@ export class EcsCapacityProvider extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
-      auto_scaling_group_provider: this._autoScalingGroupProvider,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      auto_scaling_group_provider: cdktf.listMapper(ecsCapacityProviderAutoScalingGroupProviderToTerraform)(this._autoScalingGroupProvider),
     };
   }
 }

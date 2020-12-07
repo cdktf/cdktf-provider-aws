@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BackupVaultConfig extends TerraformMetaArguments {
+export interface BackupVaultConfig extends cdktf.TerraformMetaArguments {
   readonly kmsKeyArn?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface BackupVaultConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class BackupVault extends TerraformResource {
+export class BackupVault extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -107,9 +106,9 @@ export class BackupVault extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_arn: this._kmsKeyArn,
-      name: this._name,
-      tags: this._tags,
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

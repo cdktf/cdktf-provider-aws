@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WorklinkFleetConfig extends TerraformMetaArguments {
+export interface WorklinkFleetConfig extends cdktf.TerraformMetaArguments {
   readonly auditStreamArn?: string;
   readonly deviceCaCertificate?: string;
   readonly displayName?: string;
@@ -22,15 +21,34 @@ export interface WorklinkFleetIdentityProvider {
   readonly samlMetadata: string;
   readonly type: string;
 }
+
+function worklinkFleetIdentityProviderToTerraform(struct?: WorklinkFleetIdentityProvider): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    saml_metadata: cdktf.stringToTerraform(struct!.samlMetadata),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WorklinkFleetNetwork {
   readonly securityGroupIds: string[];
   readonly subnetIds: string[];
   readonly vpcId: string;
 }
 
+function worklinkFleetNetworkToTerraform(struct?: WorklinkFleetNetwork): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+  }
+}
+
+
 // Resource
 
-export class WorklinkFleet extends TerraformResource {
+export class WorklinkFleet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -200,13 +218,13 @@ export class WorklinkFleet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      audit_stream_arn: this._auditStreamArn,
-      device_ca_certificate: this._deviceCaCertificate,
-      display_name: this._displayName,
-      name: this._name,
-      optimize_for_end_user_location: this._optimizeForEndUserLocation,
-      identity_provider: this._identityProvider,
-      network: this._network,
+      audit_stream_arn: cdktf.stringToTerraform(this._auditStreamArn),
+      device_ca_certificate: cdktf.stringToTerraform(this._deviceCaCertificate),
+      display_name: cdktf.stringToTerraform(this._displayName),
+      name: cdktf.stringToTerraform(this._name),
+      optimize_for_end_user_location: cdktf.booleanToTerraform(this._optimizeForEndUserLocation),
+      identity_provider: cdktf.listMapper(worklinkFleetIdentityProviderToTerraform)(this._identityProvider),
+      network: cdktf.listMapper(worklinkFleetNetworkToTerraform)(this._network),
     };
   }
 }

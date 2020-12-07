@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LoadBalancerPolicyConfig extends TerraformMetaArguments {
+export interface LoadBalancerPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly loadBalancerName: string;
   readonly policyName: string;
   readonly policyTypeName: string;
@@ -19,9 +18,18 @@ export interface LoadBalancerPolicyPolicyAttribute {
   readonly value?: string;
 }
 
+function loadBalancerPolicyPolicyAttributeToTerraform(struct?: LoadBalancerPolicyPolicyAttribute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class LoadBalancerPolicy extends TerraformResource {
+export class LoadBalancerPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -114,10 +122,10 @@ export class LoadBalancerPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      load_balancer_name: this._loadBalancerName,
-      policy_name: this._policyName,
-      policy_type_name: this._policyTypeName,
-      policy_attribute: this._policyAttribute,
+      load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
+      policy_name: cdktf.stringToTerraform(this._policyName),
+      policy_type_name: cdktf.stringToTerraform(this._policyTypeName),
+      policy_attribute: cdktf.listMapper(loadBalancerPolicyPolicyAttributeToTerraform)(this._policyAttribute),
     };
   }
 }

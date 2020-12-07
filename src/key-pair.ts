@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KeyPairConfig extends TerraformMetaArguments {
+export interface KeyPairConfig extends cdktf.TerraformMetaArguments {
   readonly keyName?: string;
   readonly keyNamePrefix?: string;
   readonly publicKey: string;
@@ -16,7 +15,7 @@ export interface KeyPairConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class KeyPair extends TerraformResource {
+export class KeyPair extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -130,10 +129,10 @@ export class KeyPair extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      key_name: this._keyName,
-      key_name_prefix: this._keyNamePrefix,
-      public_key: this._publicKey,
-      tags: this._tags,
+      key_name: cdktf.stringToTerraform(this._keyName),
+      key_name_prefix: cdktf.stringToTerraform(this._keyNamePrefix),
+      public_key: cdktf.stringToTerraform(this._publicKey),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

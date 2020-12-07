@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LambdaProvisionedConcurrencyConfigConfig extends TerraformMetaArguments {
+export interface LambdaProvisionedConcurrencyConfigConfig extends cdktf.TerraformMetaArguments {
   readonly functionName: string;
   readonly provisionedConcurrentExecutions: number;
   readonly qualifier: string;
@@ -19,9 +18,18 @@ export interface LambdaProvisionedConcurrencyConfigTimeouts {
   readonly update?: string;
 }
 
+function lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(struct?: LambdaProvisionedConcurrencyConfigTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class LambdaProvisionedConcurrencyConfig extends TerraformResource {
+export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -114,10 +122,10 @@ export class LambdaProvisionedConcurrencyConfig extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: this._functionName,
-      provisioned_concurrent_executions: this._provisionedConcurrentExecutions,
-      qualifier: this._qualifier,
-      timeouts: this._timeouts,
+      function_name: cdktf.stringToTerraform(this._functionName),
+      provisioned_concurrent_executions: cdktf.numberToTerraform(this._provisionedConcurrentExecutions),
+      qualifier: cdktf.stringToTerraform(this._qualifier),
+      timeouts: lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(this._timeouts),
     };
   }
 }

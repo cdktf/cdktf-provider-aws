@@ -2,18 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEfsFileSystemConfig extends TerraformMetaArguments {
+export interface DataAwsEfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly creationToken?: string;
   readonly fileSystemId?: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsEfsFileSystemLifecyclePolicy extends ComplexComputedList {
+export class DataAwsEfsFileSystemLifecyclePolicy extends cdktf.ComplexComputedList {
 
   // transition_to_ia - computed: true, optional: false, required: false
   public get transitionToIa() {
@@ -23,7 +21,7 @@ export class DataAwsEfsFileSystemLifecyclePolicy extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsEfsFileSystem extends TerraformDataSource {
+export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -153,9 +151,9 @@ export class DataAwsEfsFileSystem extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      creation_token: this._creationToken,
-      file_system_id: this._fileSystemId,
-      tags: this._tags,
+      creation_token: cdktf.stringToTerraform(this._creationToken),
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

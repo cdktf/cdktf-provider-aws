@@ -2,19 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLaunchTemplateConfig extends TerraformMetaArguments {
+export interface DataAwsLaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsLaunchTemplateFilter[];
 }
-export class DataAwsLaunchTemplateBlockDeviceMappingsEbs extends ComplexComputedList {
+export class DataAwsLaunchTemplateBlockDeviceMappingsEbs extends cdktf.ComplexComputedList {
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
@@ -51,7 +49,7 @@ export class DataAwsLaunchTemplateBlockDeviceMappingsEbs extends ComplexComputed
     return this.getStringAttribute('volume_type');
   }
 }
-export class DataAwsLaunchTemplateBlockDeviceMappings extends ComplexComputedList {
+export class DataAwsLaunchTemplateBlockDeviceMappings extends cdktf.ComplexComputedList {
 
   // device_name - computed: true, optional: false, required: false
   public get deviceName() {
@@ -73,28 +71,28 @@ export class DataAwsLaunchTemplateBlockDeviceMappings extends ComplexComputedLis
     return this.getStringAttribute('virtual_name');
   }
 }
-export class DataAwsLaunchTemplateCreditSpecification extends ComplexComputedList {
+export class DataAwsLaunchTemplateCreditSpecification extends cdktf.ComplexComputedList {
 
   // cpu_credits - computed: true, optional: false, required: false
   public get cpuCredits() {
     return this.getStringAttribute('cpu_credits');
   }
 }
-export class DataAwsLaunchTemplateElasticGpuSpecifications extends ComplexComputedList {
+export class DataAwsLaunchTemplateElasticGpuSpecifications extends cdktf.ComplexComputedList {
 
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsLaunchTemplateHibernationOptions extends ComplexComputedList {
+export class DataAwsLaunchTemplateHibernationOptions extends cdktf.ComplexComputedList {
 
   // configured - computed: true, optional: false, required: false
   public get configured() {
     return this.getBooleanAttribute('configured');
   }
 }
-export class DataAwsLaunchTemplateIamInstanceProfile extends ComplexComputedList {
+export class DataAwsLaunchTemplateIamInstanceProfile extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -106,7 +104,7 @@ export class DataAwsLaunchTemplateIamInstanceProfile extends ComplexComputedList
     return this.getStringAttribute('name');
   }
 }
-export class DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions extends ComplexComputedList {
+export class DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions extends cdktf.ComplexComputedList {
 
   // block_duration_minutes - computed: true, optional: false, required: false
   public get blockDurationMinutes() {
@@ -133,7 +131,7 @@ export class DataAwsLaunchTemplateInstanceMarketOptionsSpotOptions extends Compl
     return this.getStringAttribute('valid_until');
   }
 }
-export class DataAwsLaunchTemplateInstanceMarketOptions extends ComplexComputedList {
+export class DataAwsLaunchTemplateInstanceMarketOptions extends cdktf.ComplexComputedList {
 
   // market_type - computed: true, optional: false, required: false
   public get marketType() {
@@ -145,7 +143,7 @@ export class DataAwsLaunchTemplateInstanceMarketOptions extends ComplexComputedL
     return this.interpolationForAttribute('spot_options') as any;
   }
 }
-export class DataAwsLaunchTemplateMetadataOptions extends ComplexComputedList {
+export class DataAwsLaunchTemplateMetadataOptions extends cdktf.ComplexComputedList {
 
   // http_endpoint - computed: true, optional: false, required: false
   public get httpEndpoint() {
@@ -162,14 +160,14 @@ export class DataAwsLaunchTemplateMetadataOptions extends ComplexComputedList {
     return this.getStringAttribute('http_tokens');
   }
 }
-export class DataAwsLaunchTemplateMonitoring extends ComplexComputedList {
+export class DataAwsLaunchTemplateMonitoring extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsLaunchTemplateNetworkInterfaces extends ComplexComputedList {
+export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexComputedList {
 
   // associate_public_ip_address - computed: true, optional: false, required: false
   public get associatePublicIpAddress() {
@@ -231,7 +229,7 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends ComplexComputedList 
     return this.getStringAttribute('subnet_id');
   }
 }
-export class DataAwsLaunchTemplatePlacement extends ComplexComputedList {
+export class DataAwsLaunchTemplatePlacement extends cdktf.ComplexComputedList {
 
   // affinity - computed: true, optional: false, required: false
   public get affinity() {
@@ -268,7 +266,7 @@ export class DataAwsLaunchTemplatePlacement extends ComplexComputedList {
     return this.getStringAttribute('tenancy');
   }
 }
-export class DataAwsLaunchTemplateTagSpecifications extends ComplexComputedList {
+export class DataAwsLaunchTemplateTagSpecifications extends cdktf.ComplexComputedList {
 
   // resource_type - computed: true, optional: false, required: false
   public get resourceType() {
@@ -285,9 +283,18 @@ export interface DataAwsLaunchTemplateFilter {
   readonly values: string[];
 }
 
+function dataAwsLaunchTemplateFilterToTerraform(struct?: DataAwsLaunchTemplateFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsLaunchTemplate extends TerraformDataSource {
+export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -502,9 +509,9 @@ export class DataAwsLaunchTemplate extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
-      filter: this._filter,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsLaunchTemplateFilterToTerraform)(this._filter),
     };
   }
 }

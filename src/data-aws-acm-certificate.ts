@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAcmCertificateConfig extends TerraformMetaArguments {
+export interface DataAwsAcmCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
   readonly keyTypes?: string[];
   readonly mostRecent?: boolean;
@@ -18,7 +17,7 @@ export interface DataAwsAcmCertificateConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsAcmCertificate extends TerraformDataSource {
+export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -156,12 +155,12 @@ export class DataAwsAcmCertificate extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
-      key_types: this._keyTypes,
-      most_recent: this._mostRecent,
-      statuses: this._statuses,
-      tags: this._tags,
-      types: this._types,
+      domain: cdktf.stringToTerraform(this._domain),
+      key_types: cdktf.listMapper(cdktf.stringToTerraform)(this._keyTypes),
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      statuses: cdktf.listMapper(cdktf.stringToTerraform)(this._statuses),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      types: cdktf.listMapper(cdktf.stringToTerraform)(this._types),
     };
   }
 }

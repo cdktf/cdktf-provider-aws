@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DaxParameterGroupConfig extends TerraformMetaArguments {
+export interface DaxParameterGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   /** parameters block */
@@ -18,9 +17,18 @@ export interface DaxParameterGroupParameters {
   readonly value: string;
 }
 
+function daxParameterGroupParametersToTerraform(struct?: DaxParameterGroupParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class DaxParameterGroup extends TerraformResource {
+export class DaxParameterGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +110,9 @@ export class DaxParameterGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      parameters: this._parameters,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      parameters: cdktf.listMapper(daxParameterGroupParametersToTerraform)(this._parameters),
     };
   }
 }

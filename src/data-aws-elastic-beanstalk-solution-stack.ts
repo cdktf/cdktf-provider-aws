@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElasticBeanstalkSolutionStackConfig extends TerraformMetaArguments {
+export interface DataAwsElasticBeanstalkSolutionStackConfig extends cdktf.TerraformMetaArguments {
   readonly mostRecent?: boolean;
   readonly nameRegex: string;
 }
 
 // Resource
 
-export class DataAwsElasticBeanstalkSolutionStack extends TerraformDataSource {
+export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -84,8 +83,8 @@ export class DataAwsElasticBeanstalkSolutionStack extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      most_recent: this._mostRecent,
-      name_regex: this._nameRegex,
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      name_regex: cdktf.stringToTerraform(this._nameRegex),
     };
   }
 }

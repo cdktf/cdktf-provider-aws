@@ -2,16 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayAccountConfig extends TerraformMetaArguments {
+export interface ApiGatewayAccountConfig extends cdktf.TerraformMetaArguments {
   readonly cloudwatchRoleArn?: string;
 }
-export class ApiGatewayAccountThrottleSettings extends ComplexComputedList {
+export class ApiGatewayAccountThrottleSettings extends cdktf.ComplexComputedList {
 
   // burst_limit - computed: true, optional: false, required: false
   public get burstLimit() {
@@ -26,7 +24,7 @@ export class ApiGatewayAccountThrottleSettings extends ComplexComputedList {
 
 // Resource
 
-export class ApiGatewayAccount extends TerraformResource {
+export class ApiGatewayAccount extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -82,7 +80,7 @@ export class ApiGatewayAccount extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloudwatch_role_arn: this._cloudwatchRoleArn,
+      cloudwatch_role_arn: cdktf.stringToTerraform(this._cloudwatchRoleArn),
     };
   }
 }

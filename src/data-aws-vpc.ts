@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpcConfig extends TerraformMetaArguments {
+export interface DataAwsVpcConfig extends cdktf.TerraformMetaArguments {
   readonly cidrBlock?: string;
   readonly default?: boolean;
   readonly dhcpOptionsId?: string;
@@ -17,7 +15,7 @@ export interface DataAwsVpcConfig extends TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsVpcFilter[];
 }
-export class DataAwsVpcCidrBlockAssociations extends ComplexComputedList {
+export class DataAwsVpcCidrBlockAssociations extends cdktf.ComplexComputedList {
 
   // association_id - computed: true, optional: false, required: false
   public get associationId() {
@@ -39,9 +37,18 @@ export interface DataAwsVpcFilter {
   readonly values: string[];
 }
 
+function dataAwsVpcFilterToTerraform(struct?: DataAwsVpcFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsVpc extends TerraformDataSource {
+export class DataAwsVpc extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -222,12 +229,12 @@ export class DataAwsVpc extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_block: this._cidrBlock,
-      default: this._default,
-      dhcp_options_id: this._dhcpOptionsId,
-      state: this._state,
-      tags: this._tags,
-      filter: this._filter,
+      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+      default: cdktf.booleanToTerraform(this._default),
+      dhcp_options_id: cdktf.stringToTerraform(this._dhcpOptionsId),
+      state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsVpcFilterToTerraform)(this._filter),
     };
   }
 }

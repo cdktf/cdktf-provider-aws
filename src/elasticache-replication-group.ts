@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticacheReplicationGroupConfig extends TerraformMetaArguments {
+export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly atRestEncryptionEnabled?: boolean;
   readonly authToken?: string;
@@ -43,15 +42,34 @@ export interface ElasticacheReplicationGroupClusterMode {
   readonly numNodeGroups: number;
   readonly replicasPerNodeGroup: number;
 }
+
+function elasticacheReplicationGroupClusterModeToTerraform(struct?: ElasticacheReplicationGroupClusterMode): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    num_node_groups: cdktf.numberToTerraform(struct!.numNodeGroups),
+    replicas_per_node_group: cdktf.numberToTerraform(struct!.replicasPerNodeGroup),
+  }
+}
+
 export interface ElasticacheReplicationGroupTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function elasticacheReplicationGroupTimeoutsToTerraform(struct?: ElasticacheReplicationGroupTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class ElasticacheReplicationGroup extends TerraformResource {
+export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -570,34 +588,34 @@ export class ElasticacheReplicationGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      at_rest_encryption_enabled: this._atRestEncryptionEnabled,
-      auth_token: this._authToken,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      automatic_failover_enabled: this._automaticFailoverEnabled,
-      availability_zones: this._availabilityZones,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      kms_key_id: this._kmsKeyId,
-      maintenance_window: this._maintenanceWindow,
-      node_type: this._nodeType,
-      notification_topic_arn: this._notificationTopicArn,
-      number_cache_clusters: this._numberCacheClusters,
-      parameter_group_name: this._parameterGroupName,
-      port: this._port,
-      replication_group_description: this._replicationGroupDescription,
-      replication_group_id: this._replicationGroupId,
-      security_group_ids: this._securityGroupIds,
-      security_group_names: this._securityGroupNames,
-      snapshot_arns: this._snapshotArns,
-      snapshot_name: this._snapshotName,
-      snapshot_retention_limit: this._snapshotRetentionLimit,
-      snapshot_window: this._snapshotWindow,
-      subnet_group_name: this._subnetGroupName,
-      tags: this._tags,
-      transit_encryption_enabled: this._transitEncryptionEnabled,
-      cluster_mode: this._clusterMode,
-      timeouts: this._timeouts,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      at_rest_encryption_enabled: cdktf.booleanToTerraform(this._atRestEncryptionEnabled),
+      auth_token: cdktf.stringToTerraform(this._authToken),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      automatic_failover_enabled: cdktf.booleanToTerraform(this._automaticFailoverEnabled),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
+      node_type: cdktf.stringToTerraform(this._nodeType),
+      notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
+      number_cache_clusters: cdktf.numberToTerraform(this._numberCacheClusters),
+      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
+      port: cdktf.numberToTerraform(this._port),
+      replication_group_description: cdktf.stringToTerraform(this._replicationGroupDescription),
+      replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
+      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotArns),
+      snapshot_name: cdktf.stringToTerraform(this._snapshotName),
+      snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
+      snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
+      subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
+      cluster_mode: cdktf.listMapper(elasticacheReplicationGroupClusterModeToTerraform)(this._clusterMode),
+      timeouts: elasticacheReplicationGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

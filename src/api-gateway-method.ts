@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayMethodConfig extends TerraformMetaArguments {
+export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
   readonly apiKeyRequired?: boolean;
   readonly authorization: string;
   readonly authorizationScopes?: string[];
@@ -23,7 +22,7 @@ export interface ApiGatewayMethodConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayMethod extends TerraformResource {
+export class ApiGatewayMethod extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -232,17 +231,17 @@ export class ApiGatewayMethod extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key_required: this._apiKeyRequired,
-      authorization: this._authorization,
-      authorization_scopes: this._authorizationScopes,
-      authorizer_id: this._authorizerId,
-      http_method: this._httpMethod,
-      request_models: this._requestModels,
-      request_parameters: this._requestParameters,
-      request_parameters_in_json: this._requestParametersInJson,
-      request_validator_id: this._requestValidatorId,
-      resource_id: this._resourceId,
-      rest_api_id: this._restApiId,
+      api_key_required: cdktf.booleanToTerraform(this._apiKeyRequired),
+      authorization: cdktf.stringToTerraform(this._authorization),
+      authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
+      authorizer_id: cdktf.stringToTerraform(this._authorizerId),
+      http_method: cdktf.stringToTerraform(this._httpMethod),
+      request_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestModels),
+      request_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestParameters),
+      request_parameters_in_json: cdktf.stringToTerraform(this._requestParametersInJson),
+      request_validator_id: cdktf.stringToTerraform(this._requestValidatorId),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
     };
   }
 }

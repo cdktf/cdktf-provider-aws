@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EipAssociationConfig extends TerraformMetaArguments {
+export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly allocationId?: string;
   readonly allowReassociation?: boolean;
   readonly instanceId?: string;
@@ -18,7 +17,7 @@ export interface EipAssociationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class EipAssociation extends TerraformResource {
+export class EipAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -154,12 +153,12 @@ export class EipAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_id: this._allocationId,
-      allow_reassociation: this._allowReassociation,
-      instance_id: this._instanceId,
-      network_interface_id: this._networkInterfaceId,
-      private_ip_address: this._privateIpAddress,
-      public_ip: this._publicIp,
+      allocation_id: cdktf.stringToTerraform(this._allocationId),
+      allow_reassociation: cdktf.booleanToTerraform(this._allowReassociation),
+      instance_id: cdktf.stringToTerraform(this._instanceId),
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      private_ip_address: cdktf.stringToTerraform(this._privateIpAddress),
+      public_ip: cdktf.stringToTerraform(this._publicIp),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EcrLifecyclePolicyConfig extends TerraformMetaArguments {
+export interface EcrLifecyclePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly policy: string;
   readonly repository: string;
 }
 
 // Resource
 
-export class EcrLifecyclePolicy extends TerraformResource {
+export class EcrLifecyclePolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -81,8 +80,8 @@ export class EcrLifecyclePolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy: this._policy,
-      repository: this._repository,
+      policy: cdktf.stringToTerraform(this._policy),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

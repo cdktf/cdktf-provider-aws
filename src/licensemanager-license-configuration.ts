@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LicensemanagerLicenseConfigurationConfig extends TerraformMetaArguments {
+export interface LicensemanagerLicenseConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly licenseCount?: number;
   readonly licenseCountHardLimit?: boolean;
@@ -19,7 +18,7 @@ export interface LicensemanagerLicenseConfigurationConfig extends TerraformMetaA
 
 // Resource
 
-export class LicensemanagerLicenseConfiguration extends TerraformResource {
+export class LicensemanagerLicenseConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -166,13 +165,13 @@ export class LicensemanagerLicenseConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      license_count: this._licenseCount,
-      license_count_hard_limit: this._licenseCountHardLimit,
-      license_counting_type: this._licenseCountingType,
-      license_rules: this._licenseRules,
-      name: this._name,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      license_count: cdktf.numberToTerraform(this._licenseCount),
+      license_count_hard_limit: cdktf.booleanToTerraform(this._licenseCountHardLimit),
+      license_counting_type: cdktf.stringToTerraform(this._licenseCountingType),
+      license_rules: cdktf.listMapper(cdktf.stringToTerraform)(this._licenseRules),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamOpenidConnectProviderConfig extends TerraformMetaArguments {
+export interface IamOpenidConnectProviderConfig extends cdktf.TerraformMetaArguments {
   readonly clientIdList: string[];
   readonly thumbprintList: string[];
   readonly url: string;
@@ -15,7 +14,7 @@ export interface IamOpenidConnectProviderConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamOpenidConnectProvider extends TerraformResource {
+export class IamOpenidConnectProvider extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -96,9 +95,9 @@ export class IamOpenidConnectProvider extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id_list: this._clientIdList,
-      thumbprint_list: this._thumbprintList,
-      url: this._url,
+      client_id_list: cdktf.listMapper(cdktf.stringToTerraform)(this._clientIdList),
+      thumbprint_list: cdktf.listMapper(cdktf.stringToTerraform)(this._thumbprintList),
+      url: cdktf.stringToTerraform(this._url),
     };
   }
 }

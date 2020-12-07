@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NetworkAclRuleConfig extends TerraformMetaArguments {
+export interface NetworkAclRuleConfig extends cdktf.TerraformMetaArguments {
   readonly cidrBlock?: string;
   readonly egress?: boolean;
   readonly fromPort?: number;
@@ -23,7 +22,7 @@ export interface NetworkAclRuleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class NetworkAclRule extends TerraformResource {
+export class NetworkAclRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -232,17 +231,17 @@ export class NetworkAclRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_block: this._cidrBlock,
-      egress: this._egress,
-      from_port: this._fromPort,
-      icmp_code: this._icmpCode,
-      icmp_type: this._icmpType,
-      ipv6_cidr_block: this._ipv6CidrBlock,
-      network_acl_id: this._networkAclId,
-      protocol: this._protocol,
-      rule_action: this._ruleAction,
-      rule_number: this._ruleNumber,
-      to_port: this._toPort,
+      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+      egress: cdktf.booleanToTerraform(this._egress),
+      from_port: cdktf.numberToTerraform(this._fromPort),
+      icmp_code: cdktf.stringToTerraform(this._icmpCode),
+      icmp_type: cdktf.stringToTerraform(this._icmpType),
+      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+      network_acl_id: cdktf.stringToTerraform(this._networkAclId),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      rule_action: cdktf.stringToTerraform(this._ruleAction),
+      rule_number: cdktf.numberToTerraform(this._ruleNumber),
+      to_port: cdktf.numberToTerraform(this._toPort),
     };
   }
 }

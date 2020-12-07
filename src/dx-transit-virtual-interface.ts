@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxTransitVirtualInterfaceConfig extends TerraformMetaArguments {
+export interface DxTransitVirtualInterfaceConfig extends cdktf.TerraformMetaArguments {
   readonly addressFamily: string;
   readonly amazonAddress?: string;
   readonly bgpAsn: number;
@@ -28,9 +27,19 @@ export interface DxTransitVirtualInterfaceTimeouts {
   readonly update?: string;
 }
 
+function dxTransitVirtualInterfaceTimeoutsToTerraform(struct?: DxTransitVirtualInterfaceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DxTransitVirtualInterface extends TerraformResource {
+export class DxTransitVirtualInterface extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -270,18 +279,18 @@ export class DxTransitVirtualInterface extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_family: this._addressFamily,
-      amazon_address: this._amazonAddress,
-      bgp_asn: this._bgpAsn,
-      bgp_auth_key: this._bgpAuthKey,
-      connection_id: this._connectionId,
-      customer_address: this._customerAddress,
-      dx_gateway_id: this._dxGatewayId,
-      mtu: this._mtu,
-      name: this._name,
-      tags: this._tags,
-      vlan: this._vlan,
-      timeouts: this._timeouts,
+      address_family: cdktf.stringToTerraform(this._addressFamily),
+      amazon_address: cdktf.stringToTerraform(this._amazonAddress),
+      bgp_asn: cdktf.numberToTerraform(this._bgpAsn),
+      bgp_auth_key: cdktf.stringToTerraform(this._bgpAuthKey),
+      connection_id: cdktf.stringToTerraform(this._connectionId),
+      customer_address: cdktf.stringToTerraform(this._customerAddress),
+      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
+      mtu: cdktf.numberToTerraform(this._mtu),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vlan: cdktf.numberToTerraform(this._vlan),
+      timeouts: dxTransitVirtualInterfaceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

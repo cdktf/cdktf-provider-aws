@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesReceiptRuleConfig extends TerraformMetaArguments {
+export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
   readonly after?: string;
   readonly enabled?: boolean;
   readonly name: string;
@@ -35,6 +34,16 @@ export interface SesReceiptRuleAddHeaderAction {
   readonly headerValue: string;
   readonly position: number;
 }
+
+function sesReceiptRuleAddHeaderActionToTerraform(struct?: SesReceiptRuleAddHeaderAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    header_value: cdktf.stringToTerraform(struct!.headerValue),
+    position: cdktf.numberToTerraform(struct!.position),
+  }
+}
+
 export interface SesReceiptRuleBounceAction {
   readonly message: string;
   readonly position: number;
@@ -43,12 +52,36 @@ export interface SesReceiptRuleBounceAction {
   readonly statusCode?: string;
   readonly topicArn?: string;
 }
+
+function sesReceiptRuleBounceActionToTerraform(struct?: SesReceiptRuleBounceAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    message: cdktf.stringToTerraform(struct!.message),
+    position: cdktf.numberToTerraform(struct!.position),
+    sender: cdktf.stringToTerraform(struct!.sender),
+    smtp_reply_code: cdktf.stringToTerraform(struct!.smtpReplyCode),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+  }
+}
+
 export interface SesReceiptRuleLambdaAction {
   readonly functionArn: string;
   readonly invocationType?: string;
   readonly position: number;
   readonly topicArn?: string;
 }
+
+function sesReceiptRuleLambdaActionToTerraform(struct?: SesReceiptRuleLambdaAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    function_arn: cdktf.stringToTerraform(struct!.functionArn),
+    invocation_type: cdktf.stringToTerraform(struct!.invocationType),
+    position: cdktf.numberToTerraform(struct!.position),
+    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+  }
+}
+
 export interface SesReceiptRuleS3Action {
   readonly bucketName: string;
   readonly kmsKeyArn?: string;
@@ -56,24 +89,65 @@ export interface SesReceiptRuleS3Action {
   readonly position: number;
   readonly topicArn?: string;
 }
+
+function sesReceiptRuleS3ActionToTerraform(struct?: SesReceiptRuleS3Action): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    object_key_prefix: cdktf.stringToTerraform(struct!.objectKeyPrefix),
+    position: cdktf.numberToTerraform(struct!.position),
+    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+  }
+}
+
 export interface SesReceiptRuleSnsAction {
   readonly position: number;
   readonly topicArn: string;
 }
+
+function sesReceiptRuleSnsActionToTerraform(struct?: SesReceiptRuleSnsAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    position: cdktf.numberToTerraform(struct!.position),
+    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+  }
+}
+
 export interface SesReceiptRuleStopAction {
   readonly position: number;
   readonly scope: string;
   readonly topicArn?: string;
 }
+
+function sesReceiptRuleStopActionToTerraform(struct?: SesReceiptRuleStopAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    position: cdktf.numberToTerraform(struct!.position),
+    scope: cdktf.stringToTerraform(struct!.scope),
+    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+  }
+}
+
 export interface SesReceiptRuleWorkmailAction {
   readonly organizationArn: string;
   readonly position: number;
   readonly topicArn?: string;
 }
 
+function sesReceiptRuleWorkmailActionToTerraform(struct?: SesReceiptRuleWorkmailAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    organization_arn: cdktf.stringToTerraform(struct!.organizationArn),
+    position: cdktf.numberToTerraform(struct!.position),
+    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+  }
+}
+
+
 // Resource
 
-export class SesReceiptRule extends TerraformResource {
+export class SesReceiptRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -339,20 +413,20 @@ export class SesReceiptRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      after: this._after,
-      enabled: this._enabled,
-      name: this._name,
-      recipients: this._recipients,
-      rule_set_name: this._ruleSetName,
-      scan_enabled: this._scanEnabled,
-      tls_policy: this._tlsPolicy,
-      add_header_action: this._addHeaderAction,
-      bounce_action: this._bounceAction,
-      lambda_action: this._lambdaAction,
-      s3_action: this._s3Action,
-      sns_action: this._snsAction,
-      stop_action: this._stopAction,
-      workmail_action: this._workmailAction,
+      after: cdktf.stringToTerraform(this._after),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      name: cdktf.stringToTerraform(this._name),
+      recipients: cdktf.listMapper(cdktf.stringToTerraform)(this._recipients),
+      rule_set_name: cdktf.stringToTerraform(this._ruleSetName),
+      scan_enabled: cdktf.booleanToTerraform(this._scanEnabled),
+      tls_policy: cdktf.stringToTerraform(this._tlsPolicy),
+      add_header_action: cdktf.listMapper(sesReceiptRuleAddHeaderActionToTerraform)(this._addHeaderAction),
+      bounce_action: cdktf.listMapper(sesReceiptRuleBounceActionToTerraform)(this._bounceAction),
+      lambda_action: cdktf.listMapper(sesReceiptRuleLambdaActionToTerraform)(this._lambdaAction),
+      s3_action: cdktf.listMapper(sesReceiptRuleS3ActionToTerraform)(this._s3Action),
+      sns_action: cdktf.listMapper(sesReceiptRuleSnsActionToTerraform)(this._snsAction),
+      stop_action: cdktf.listMapper(sesReceiptRuleStopActionToTerraform)(this._stopAction),
+      workmail_action: cdktf.listMapper(sesReceiptRuleWorkmailActionToTerraform)(this._workmailAction),
     };
   }
 }

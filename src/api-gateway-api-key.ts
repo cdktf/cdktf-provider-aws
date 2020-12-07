@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayApiKeyConfig extends TerraformMetaArguments {
+export interface ApiGatewayApiKeyConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly enabled?: boolean;
   readonly name: string;
@@ -21,9 +20,18 @@ export interface ApiGatewayApiKeyStageKey {
   readonly stageName: string;
 }
 
+function apiGatewayApiKeyStageKeyToTerraform(struct?: ApiGatewayApiKeyStageKey): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    rest_api_id: cdktf.stringToTerraform(struct!.restApiId),
+    stage_name: cdktf.stringToTerraform(struct!.stageName),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayApiKey extends TerraformResource {
+export class ApiGatewayApiKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -171,12 +179,12 @@ export class ApiGatewayApiKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      enabled: this._enabled,
-      name: this._name,
-      tags: this._tags,
-      value: this._value,
-      stage_key: this._stageKey,
+      description: cdktf.stringToTerraform(this._description),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      value: cdktf.stringToTerraform(this._value),
+      stage_key: cdktf.listMapper(apiGatewayApiKeyStageKeyToTerraform)(this._stageKey),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxBgpPeerConfig extends TerraformMetaArguments {
+export interface DxBgpPeerConfig extends cdktf.TerraformMetaArguments {
   readonly addressFamily: string;
   readonly amazonAddress?: string;
   readonly bgpAsn: number;
@@ -22,9 +21,18 @@ export interface DxBgpPeerTimeouts {
   readonly delete?: string;
 }
 
+function dxBgpPeerTimeoutsToTerraform(struct?: DxBgpPeerTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DxBgpPeer extends TerraformResource {
+export class DxBgpPeer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -183,13 +191,13 @@ export class DxBgpPeer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_family: this._addressFamily,
-      amazon_address: this._amazonAddress,
-      bgp_asn: this._bgpAsn,
-      bgp_auth_key: this._bgpAuthKey,
-      customer_address: this._customerAddress,
-      virtual_interface_id: this._virtualInterfaceId,
-      timeouts: this._timeouts,
+      address_family: cdktf.stringToTerraform(this._addressFamily),
+      amazon_address: cdktf.stringToTerraform(this._amazonAddress),
+      bgp_asn: cdktf.numberToTerraform(this._bgpAsn),
+      bgp_auth_key: cdktf.stringToTerraform(this._bgpAuthKey),
+      customer_address: cdktf.stringToTerraform(this._customerAddress),
+      virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
+      timeouts: dxBgpPeerTimeoutsToTerraform(this._timeouts),
     };
   }
 }

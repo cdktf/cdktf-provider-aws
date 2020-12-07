@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AutoscalingAttachmentConfig extends TerraformMetaArguments {
+export interface AutoscalingAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly albTargetGroupArn?: string;
   readonly autoscalingGroupName: string;
   readonly elb?: string;
@@ -15,7 +14,7 @@ export interface AutoscalingAttachmentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AutoscalingAttachment extends TerraformResource {
+export class AutoscalingAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -97,9 +96,9 @@ export class AutoscalingAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alb_target_group_arn: this._albTargetGroupArn,
-      autoscaling_group_name: this._autoscalingGroupName,
-      elb: this._elb,
+      alb_target_group_arn: cdktf.stringToTerraform(this._albTargetGroupArn),
+      autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
+      elb: cdktf.stringToTerraform(this._elb),
     };
   }
 }

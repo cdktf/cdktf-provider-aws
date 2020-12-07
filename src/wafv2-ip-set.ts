@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Wafv2IpSetConfig extends TerraformMetaArguments {
+export interface Wafv2IpSetConfig extends cdktf.TerraformMetaArguments {
   readonly addresses?: string[];
   readonly description?: string;
   readonly ipAddressVersion: string;
@@ -18,7 +17,7 @@ export interface Wafv2IpSetConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Wafv2IpSet extends TerraformResource {
+export class Wafv2IpSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -155,12 +154,12 @@ export class Wafv2IpSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      addresses: this._addresses,
-      description: this._description,
-      ip_address_version: this._ipAddressVersion,
-      name: this._name,
-      scope: this._scope,
-      tags: this._tags,
+      addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._addresses),
+      description: cdktf.stringToTerraform(this._description),
+      ip_address_version: cdktf.stringToTerraform(this._ipAddressVersion),
+      name: cdktf.stringToTerraform(this._name),
+      scope: cdktf.stringToTerraform(this._scope),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

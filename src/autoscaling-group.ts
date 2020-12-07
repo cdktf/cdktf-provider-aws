@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AutoscalingGroupConfig extends TerraformMetaArguments {
+export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZones?: string[];
   readonly defaultCooldown?: number;
   readonly desiredCapacity?: number;
@@ -54,11 +53,35 @@ export interface AutoscalingGroupInitialLifecycleHook {
   readonly notificationTargetArn?: string;
   readonly roleArn?: string;
 }
+
+function autoscalingGroupInitialLifecycleHookToTerraform(struct?: AutoscalingGroupInitialLifecycleHook): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    default_result: cdktf.stringToTerraform(struct!.defaultResult),
+    heartbeat_timeout: cdktf.numberToTerraform(struct!.heartbeatTimeout),
+    lifecycle_transition: cdktf.stringToTerraform(struct!.lifecycleTransition),
+    name: cdktf.stringToTerraform(struct!.name),
+    notification_metadata: cdktf.stringToTerraform(struct!.notificationMetadata),
+    notification_target_arn: cdktf.stringToTerraform(struct!.notificationTargetArn),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
 export interface AutoscalingGroupLaunchTemplate {
   readonly id?: string;
   readonly name?: string;
   readonly version?: string;
 }
+
+function autoscalingGroupLaunchTemplateToTerraform(struct?: AutoscalingGroupLaunchTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface AutoscalingGroupMixedInstancesPolicyInstancesDistribution {
   readonly onDemandAllocationStrategy?: string;
   readonly onDemandBaseCapacity?: number;
@@ -67,39 +90,107 @@ export interface AutoscalingGroupMixedInstancesPolicyInstancesDistribution {
   readonly spotInstancePools?: number;
   readonly spotMaxPrice?: string;
 }
+
+function autoscalingGroupMixedInstancesPolicyInstancesDistributionToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyInstancesDistribution): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    on_demand_allocation_strategy: cdktf.stringToTerraform(struct!.onDemandAllocationStrategy),
+    on_demand_base_capacity: cdktf.numberToTerraform(struct!.onDemandBaseCapacity),
+    on_demand_percentage_above_base_capacity: cdktf.numberToTerraform(struct!.onDemandPercentageAboveBaseCapacity),
+    spot_allocation_strategy: cdktf.stringToTerraform(struct!.spotAllocationStrategy),
+    spot_instance_pools: cdktf.numberToTerraform(struct!.spotInstancePools),
+    spot_max_price: cdktf.stringToTerraform(struct!.spotMaxPrice),
+  }
+}
+
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification {
   readonly launchTemplateId?: string;
   readonly launchTemplateName?: string;
   readonly version?: string;
 }
+
+function autoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
+    launch_template_name: cdktf.stringToTerraform(struct!.launchTemplateName),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride {
   readonly instanceType?: string;
   readonly weightedCapacity?: string;
 }
+
+function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    weighted_capacity: cdktf.stringToTerraform(struct!.weightedCapacity),
+  }
+}
+
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplate {
   /** launch_template_specification block */
   readonly launchTemplateSpecification: AutoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification[];
   /** override block */
   readonly override?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride[];
 }
+
+function autoscalingGroupMixedInstancesPolicyLaunchTemplateToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    launch_template_specification: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationToTerraform)(struct!.launchTemplateSpecification),
+    override: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerraform)(struct!.override),
+  }
+}
+
 export interface AutoscalingGroupMixedInstancesPolicy {
   /** instances_distribution block */
   readonly instancesDistribution?: AutoscalingGroupMixedInstancesPolicyInstancesDistribution[];
   /** launch_template block */
   readonly launchTemplate: AutoscalingGroupMixedInstancesPolicyLaunchTemplate[];
 }
+
+function autoscalingGroupMixedInstancesPolicyToTerraform(struct?: AutoscalingGroupMixedInstancesPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    instances_distribution: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyInstancesDistributionToTerraform)(struct!.instancesDistribution),
+    launch_template: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyLaunchTemplateToTerraform)(struct!.launchTemplate),
+  }
+}
+
 export interface AutoscalingGroupTag {
   readonly key: string;
   readonly propagateAtLaunch: boolean;
   readonly value: string;
 }
+
+function autoscalingGroupTagToTerraform(struct?: AutoscalingGroupTag): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    propagate_at_launch: cdktf.booleanToTerraform(struct!.propagateAtLaunch),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface AutoscalingGroupTimeouts {
   readonly delete?: string;
 }
 
+function autoscalingGroupTimeoutsToTerraform(struct?: AutoscalingGroupTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class AutoscalingGroup extends TerraformResource {
+export class AutoscalingGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -659,37 +750,37 @@ export class AutoscalingGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones: this._availabilityZones,
-      default_cooldown: this._defaultCooldown,
-      desired_capacity: this._desiredCapacity,
-      enabled_metrics: this._enabledMetrics,
-      force_delete: this._forceDelete,
-      health_check_grace_period: this._healthCheckGracePeriod,
-      health_check_type: this._healthCheckType,
-      launch_configuration: this._launchConfiguration,
-      load_balancers: this._loadBalancers,
-      max_instance_lifetime: this._maxInstanceLifetime,
-      max_size: this._maxSize,
-      metrics_granularity: this._metricsGranularity,
-      min_elb_capacity: this._minElbCapacity,
-      min_size: this._minSize,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      placement_group: this._placementGroup,
-      protect_from_scale_in: this._protectFromScaleIn,
-      service_linked_role_arn: this._serviceLinkedRoleArn,
-      suspended_processes: this._suspendedProcesses,
-      tags: this._tags,
-      target_group_arns: this._targetGroupArns,
-      termination_policies: this._terminationPolicies,
-      vpc_zone_identifier: this._vpcZoneIdentifier,
-      wait_for_capacity_timeout: this._waitForCapacityTimeout,
-      wait_for_elb_capacity: this._waitForElbCapacity,
-      initial_lifecycle_hook: this._initialLifecycleHook,
-      launch_template: this._launchTemplate,
-      mixed_instances_policy: this._mixedInstancesPolicy,
-      tag: this._tag,
-      timeouts: this._timeouts,
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      default_cooldown: cdktf.numberToTerraform(this._defaultCooldown),
+      desired_capacity: cdktf.numberToTerraform(this._desiredCapacity),
+      enabled_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledMetrics),
+      force_delete: cdktf.booleanToTerraform(this._forceDelete),
+      health_check_grace_period: cdktf.numberToTerraform(this._healthCheckGracePeriod),
+      health_check_type: cdktf.stringToTerraform(this._healthCheckType),
+      launch_configuration: cdktf.stringToTerraform(this._launchConfiguration),
+      load_balancers: cdktf.listMapper(cdktf.stringToTerraform)(this._loadBalancers),
+      max_instance_lifetime: cdktf.numberToTerraform(this._maxInstanceLifetime),
+      max_size: cdktf.numberToTerraform(this._maxSize),
+      metrics_granularity: cdktf.stringToTerraform(this._metricsGranularity),
+      min_elb_capacity: cdktf.numberToTerraform(this._minElbCapacity),
+      min_size: cdktf.numberToTerraform(this._minSize),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      placement_group: cdktf.stringToTerraform(this._placementGroup),
+      protect_from_scale_in: cdktf.booleanToTerraform(this._protectFromScaleIn),
+      service_linked_role_arn: cdktf.stringToTerraform(this._serviceLinkedRoleArn),
+      suspended_processes: cdktf.listMapper(cdktf.stringToTerraform)(this._suspendedProcesses),
+      tags: cdktf.listMapper(cdktf.hashMapper(cdktf.anyToTerraform))(this._tags),
+      target_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupArns),
+      termination_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._terminationPolicies),
+      vpc_zone_identifier: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcZoneIdentifier),
+      wait_for_capacity_timeout: cdktf.stringToTerraform(this._waitForCapacityTimeout),
+      wait_for_elb_capacity: cdktf.numberToTerraform(this._waitForElbCapacity),
+      initial_lifecycle_hook: cdktf.listMapper(autoscalingGroupInitialLifecycleHookToTerraform)(this._initialLifecycleHook),
+      launch_template: cdktf.listMapper(autoscalingGroupLaunchTemplateToTerraform)(this._launchTemplate),
+      mixed_instances_policy: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyToTerraform)(this._mixedInstancesPolicy),
+      tag: cdktf.listMapper(autoscalingGroupTagToTerraform)(this._tag),
+      timeouts: autoscalingGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

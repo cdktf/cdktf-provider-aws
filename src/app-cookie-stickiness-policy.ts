@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppCookieStickinessPolicyConfig extends TerraformMetaArguments {
+export interface AppCookieStickinessPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly cookieName: string;
   readonly lbPort: number;
   readonly loadBalancer: string;
@@ -16,7 +15,7 @@ export interface AppCookieStickinessPolicyConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class AppCookieStickinessPolicy extends TerraformResource {
+export class AppCookieStickinessPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -106,10 +105,10 @@ export class AppCookieStickinessPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cookie_name: this._cookieName,
-      lb_port: this._lbPort,
-      load_balancer: this._loadBalancer,
-      name: this._name,
+      cookie_name: cdktf.stringToTerraform(this._cookieName),
+      lb_port: cdktf.numberToTerraform(this._lbPort),
+      load_balancer: cdktf.stringToTerraform(this._loadBalancer),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

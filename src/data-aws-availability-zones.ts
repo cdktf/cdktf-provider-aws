@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAvailabilityZonesConfig extends TerraformMetaArguments {
+export interface DataAwsAvailabilityZonesConfig extends cdktf.TerraformMetaArguments {
   readonly allAvailabilityZones?: boolean;
   readonly blacklistedNames?: string[];
   readonly blacklistedZoneIds?: string[];
@@ -23,9 +22,18 @@ export interface DataAwsAvailabilityZonesFilter {
   readonly values: string[];
 }
 
+function dataAwsAvailabilityZonesFilterToTerraform(struct?: DataAwsAvailabilityZonesFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsAvailabilityZones extends TerraformDataSource {
+export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -205,14 +213,14 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_availability_zones: this._allAvailabilityZones,
-      blacklisted_names: this._blacklistedNames,
-      blacklisted_zone_ids: this._blacklistedZoneIds,
-      exclude_names: this._excludeNames,
-      exclude_zone_ids: this._excludeZoneIds,
-      group_names: this._groupNames,
-      state: this._state,
-      filter: this._filter,
+      all_availability_zones: cdktf.booleanToTerraform(this._allAvailabilityZones),
+      blacklisted_names: cdktf.listMapper(cdktf.stringToTerraform)(this._blacklistedNames),
+      blacklisted_zone_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._blacklistedZoneIds),
+      exclude_names: cdktf.listMapper(cdktf.stringToTerraform)(this._excludeNames),
+      exclude_zone_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._excludeZoneIds),
+      group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._groupNames),
+      state: cdktf.stringToTerraform(this._state),
+      filter: cdktf.listMapper(dataAwsAvailabilityZonesFilterToTerraform)(this._filter),
     };
   }
 }

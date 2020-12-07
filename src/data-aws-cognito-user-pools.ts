@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCognitoUserPoolsConfig extends TerraformMetaArguments {
+export interface DataAwsCognitoUserPoolsConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsCognitoUserPools extends TerraformDataSource {
+export class DataAwsCognitoUserPools extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -71,7 +70,7 @@ export class DataAwsCognitoUserPools extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

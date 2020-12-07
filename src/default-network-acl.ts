@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultNetworkAclConfig extends TerraformMetaArguments {
+export interface DefaultNetworkAclConfig extends cdktf.TerraformMetaArguments {
   readonly defaultNetworkAclId: string;
   readonly subnetIds?: string[];
   readonly tags?: { [key: string]: string };
@@ -27,6 +26,22 @@ export interface DefaultNetworkAclEgress {
   readonly ruleNo: number;
   readonly toPort: number;
 }
+
+function defaultNetworkAclEgressToTerraform(struct?: DefaultNetworkAclEgress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.stringToTerraform(struct!.action),
+    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    icmp_code: cdktf.numberToTerraform(struct!.icmpCode),
+    icmp_type: cdktf.numberToTerraform(struct!.icmpType),
+    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    rule_no: cdktf.numberToTerraform(struct!.ruleNo),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface DefaultNetworkAclIngress {
   readonly action: string;
   readonly cidrBlock?: string;
@@ -39,9 +54,25 @@ export interface DefaultNetworkAclIngress {
   readonly toPort: number;
 }
 
+function defaultNetworkAclIngressToTerraform(struct?: DefaultNetworkAclIngress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.stringToTerraform(struct!.action),
+    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    icmp_code: cdktf.numberToTerraform(struct!.icmpCode),
+    icmp_type: cdktf.numberToTerraform(struct!.icmpType),
+    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    rule_no: cdktf.numberToTerraform(struct!.ruleNo),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+
 // Resource
 
-export class DefaultNetworkAcl extends TerraformResource {
+export class DefaultNetworkAcl extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -172,11 +203,11 @@ export class DefaultNetworkAcl extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_network_acl_id: this._defaultNetworkAclId,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      egress: this._egress,
-      ingress: this._ingress,
+      default_network_acl_id: cdktf.stringToTerraform(this._defaultNetworkAclId),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      egress: cdktf.listMapper(defaultNetworkAclEgressToTerraform)(this._egress),
+      ingress: cdktf.listMapper(defaultNetworkAclIngressToTerraform)(this._ingress),
     };
   }
 }

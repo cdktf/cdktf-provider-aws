@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppsyncApiKeyConfig extends TerraformMetaArguments {
+export interface AppsyncApiKeyConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly description?: string;
   readonly expires?: string;
@@ -15,7 +14,7 @@ export interface AppsyncApiKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AppsyncApiKey extends TerraformResource {
+export class AppsyncApiKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +101,9 @@ export class AppsyncApiKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      description: this._description,
-      expires: this._expires,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      description: cdktf.stringToTerraform(this._description),
+      expires: cdktf.stringToTerraform(this._expires),
     };
   }
 }

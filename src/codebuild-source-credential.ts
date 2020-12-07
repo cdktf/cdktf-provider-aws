@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodebuildSourceCredentialConfig extends TerraformMetaArguments {
+export interface CodebuildSourceCredentialConfig extends cdktf.TerraformMetaArguments {
   readonly authType: string;
   readonly serverType: string;
   readonly token: string;
@@ -16,7 +15,7 @@ export interface CodebuildSourceCredentialConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class CodebuildSourceCredential extends TerraformResource {
+export class CodebuildSourceCredential extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -114,10 +113,10 @@ export class CodebuildSourceCredential extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auth_type: this._authType,
-      server_type: this._serverType,
-      token: this._token,
-      user_name: this._userName,
+      auth_type: cdktf.stringToTerraform(this._authType),
+      server_type: cdktf.stringToTerraform(this._serverType),
+      token: cdktf.stringToTerraform(this._token),
+      user_name: cdktf.stringToTerraform(this._userName),
     };
   }
 }

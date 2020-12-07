@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecurityGroupRuleConfig extends TerraformMetaArguments {
+export interface SecurityGroupRuleConfig extends cdktf.TerraformMetaArguments {
   readonly cidrBlocks?: string[];
   readonly description?: string;
   readonly fromPort: number;
@@ -24,7 +23,7 @@ export interface SecurityGroupRuleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SecurityGroupRule extends TerraformResource {
+export class SecurityGroupRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -230,17 +229,17 @@ export class SecurityGroupRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_blocks: this._cidrBlocks,
-      description: this._description,
-      from_port: this._fromPort,
-      ipv6_cidr_blocks: this._ipv6CidrBlocks,
-      prefix_list_ids: this._prefixListIds,
-      protocol: this._protocol,
-      security_group_id: this._securityGroupId,
-      self: this._self,
-      source_security_group_id: this._sourceSecurityGroupId,
-      to_port: this._toPort,
-      type: this._type,
+      cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._cidrBlocks),
+      description: cdktf.stringToTerraform(this._description),
+      from_port: cdktf.numberToTerraform(this._fromPort),
+      ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6CidrBlocks),
+      prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._prefixListIds),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
+      self: cdktf.booleanToTerraform(this._self),
+      source_security_group_id: cdktf.stringToTerraform(this._sourceSecurityGroupId),
+      to_port: cdktf.numberToTerraform(this._toPort),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

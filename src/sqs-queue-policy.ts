@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SqsQueuePolicyConfig extends TerraformMetaArguments {
+export interface SqsQueuePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly policy: string;
   readonly queueUrl: string;
 }
 
 // Resource
 
-export class SqsQueuePolicy extends TerraformResource {
+export class SqsQueuePolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class SqsQueuePolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy: this._policy,
-      queue_url: this._queueUrl,
+      policy: cdktf.stringToTerraform(this._policy),
+      queue_url: cdktf.stringToTerraform(this._queueUrl),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WorkspacesDirectoryConfig extends TerraformMetaArguments {
+export interface WorkspacesDirectoryConfig extends cdktf.TerraformMetaArguments {
   readonly directoryId: string;
   readonly subnetIds?: string[];
   readonly tags?: { [key: string]: string };
@@ -22,9 +21,21 @@ export interface WorkspacesDirectorySelfServicePermissions {
   readonly switchRunningMode?: boolean;
 }
 
+function workspacesDirectorySelfServicePermissionsToTerraform(struct?: WorkspacesDirectorySelfServicePermissions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    change_compute_type: cdktf.booleanToTerraform(struct!.changeComputeType),
+    increase_volume_size: cdktf.booleanToTerraform(struct!.increaseVolumeSize),
+    rebuild_workspace: cdktf.booleanToTerraform(struct!.rebuildWorkspace),
+    restart_workspace: cdktf.booleanToTerraform(struct!.restartWorkspace),
+    switch_running_mode: cdktf.booleanToTerraform(struct!.switchRunningMode),
+  }
+}
+
+
 // Resource
 
-export class WorkspacesDirectory extends TerraformResource {
+export class WorkspacesDirectory extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -168,10 +179,10 @@ export class WorkspacesDirectory extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: this._directoryId,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      self_service_permissions: this._selfServicePermissions,
+      directory_id: cdktf.stringToTerraform(this._directoryId),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      self_service_permissions: cdktf.listMapper(workspacesDirectorySelfServicePermissionsToTerraform)(this._selfServicePermissions),
     };
   }
 }

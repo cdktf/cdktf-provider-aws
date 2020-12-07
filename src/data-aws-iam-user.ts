@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamUserConfig extends TerraformMetaArguments {
+export interface DataAwsIamUserConfig extends cdktf.TerraformMetaArguments {
   readonly userName: string;
 }
 
 // Resource
 
-export class DataAwsIamUser extends TerraformDataSource {
+export class DataAwsIamUser extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -81,7 +80,7 @@ export class DataAwsIamUser extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      user_name: this._userName,
+      user_name: cdktf.stringToTerraform(this._userName),
     };
   }
 }

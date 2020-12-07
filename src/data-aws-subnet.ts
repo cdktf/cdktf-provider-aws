@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSubnetConfig extends TerraformMetaArguments {
+export interface DataAwsSubnetConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly availabilityZoneId?: string;
   readonly cidrBlock?: string;
@@ -24,9 +23,18 @@ export interface DataAwsSubnetFilter {
   readonly values: string[];
 }
 
+function dataAwsSubnetFilterToTerraform(struct?: DataAwsSubnetFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsSubnet extends TerraformDataSource {
+export class DataAwsSubnet extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -243,15 +251,15 @@ export class DataAwsSubnet extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      availability_zone_id: this._availabilityZoneId,
-      cidr_block: this._cidrBlock,
-      default_for_az: this._defaultForAz,
-      ipv6_cidr_block: this._ipv6CidrBlock,
-      state: this._state,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      filter: this._filter,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
+      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+      default_for_az: cdktf.booleanToTerraform(this._defaultForAz),
+      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+      state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      filter: cdktf.listMapper(dataAwsSubnetFilterToTerraform)(this._filter),
     };
   }
 }

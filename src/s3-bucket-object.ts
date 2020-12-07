@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3BucketObjectConfig extends TerraformMetaArguments {
+export interface S3BucketObjectConfig extends cdktf.TerraformMetaArguments {
   readonly acl?: string;
   readonly bucket: string;
   readonly cacheControl?: string;
@@ -34,7 +33,7 @@ export interface S3BucketObjectConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class S3BucketObject extends TerraformResource {
+export class S3BucketObject extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -441,28 +440,28 @@ export class S3BucketObject extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acl: this._acl,
-      bucket: this._bucket,
-      cache_control: this._cacheControl,
-      content: this._content,
-      content_base64: this._contentBase64,
-      content_disposition: this._contentDisposition,
-      content_encoding: this._contentEncoding,
-      content_language: this._contentLanguage,
-      content_type: this._contentType,
-      etag: this._etag,
-      force_destroy: this._forceDestroy,
-      key: this._key,
-      kms_key_id: this._kmsKeyId,
-      metadata: this._metadata,
-      object_lock_legal_hold_status: this._objectLockLegalHoldStatus,
-      object_lock_mode: this._objectLockMode,
-      object_lock_retain_until_date: this._objectLockRetainUntilDate,
-      server_side_encryption: this._serverSideEncryption,
-      source: this._source,
-      storage_class: this._storageClass,
-      tags: this._tags,
-      website_redirect: this._websiteRedirect,
+      acl: cdktf.stringToTerraform(this._acl),
+      bucket: cdktf.stringToTerraform(this._bucket),
+      cache_control: cdktf.stringToTerraform(this._cacheControl),
+      content: cdktf.stringToTerraform(this._content),
+      content_base64: cdktf.stringToTerraform(this._contentBase64),
+      content_disposition: cdktf.stringToTerraform(this._contentDisposition),
+      content_encoding: cdktf.stringToTerraform(this._contentEncoding),
+      content_language: cdktf.stringToTerraform(this._contentLanguage),
+      content_type: cdktf.stringToTerraform(this._contentType),
+      etag: cdktf.stringToTerraform(this._etag),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      key: cdktf.stringToTerraform(this._key),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      metadata: cdktf.hashMapper(cdktf.anyToTerraform)(this._metadata),
+      object_lock_legal_hold_status: cdktf.stringToTerraform(this._objectLockLegalHoldStatus),
+      object_lock_mode: cdktf.stringToTerraform(this._objectLockMode),
+      object_lock_retain_until_date: cdktf.stringToTerraform(this._objectLockRetainUntilDate),
+      server_side_encryption: cdktf.stringToTerraform(this._serverSideEncryption),
+      source: cdktf.stringToTerraform(this._source),
+      storage_class: cdktf.stringToTerraform(this._storageClass),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      website_redirect: cdktf.stringToTerraform(this._websiteRedirect),
     };
   }
 }

@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlobalacceleratorAcceleratorConfig extends TerraformMetaArguments {
+export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaArguments {
   readonly enabled?: boolean;
   readonly ipAddressType?: string;
   readonly name: string;
@@ -16,7 +14,7 @@ export interface GlobalacceleratorAcceleratorConfig extends TerraformMetaArgumen
   /** attributes block */
   readonly attributes?: GlobalacceleratorAcceleratorAttributes[];
 }
-export class GlobalacceleratorAcceleratorIpSets extends ComplexComputedList {
+export class GlobalacceleratorAcceleratorIpSets extends cdktf.ComplexComputedList {
 
   // ip_addresses - computed: true, optional: false, required: false
   public get ipAddresses() {
@@ -34,9 +32,19 @@ export interface GlobalacceleratorAcceleratorAttributes {
   readonly flowLogsS3Prefix?: string;
 }
 
+function globalacceleratorAcceleratorAttributesToTerraform(struct?: GlobalacceleratorAcceleratorAttributes): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    flow_logs_enabled: cdktf.booleanToTerraform(struct!.flowLogsEnabled),
+    flow_logs_s3_bucket: cdktf.stringToTerraform(struct!.flowLogsS3Bucket),
+    flow_logs_s3_prefix: cdktf.stringToTerraform(struct!.flowLogsS3Prefix),
+  }
+}
+
+
 // Resource
 
-export class GlobalacceleratorAccelerator extends TerraformResource {
+export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -167,11 +175,11 @@ export class GlobalacceleratorAccelerator extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: this._enabled,
-      ip_address_type: this._ipAddressType,
-      name: this._name,
-      tags: this._tags,
-      attributes: this._attributes,
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      attributes: cdktf.listMapper(globalacceleratorAcceleratorAttributesToTerraform)(this._attributes),
     };
   }
 }

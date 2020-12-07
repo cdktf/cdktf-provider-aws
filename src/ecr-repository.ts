@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EcrRepositoryConfig extends TerraformMetaArguments {
+export interface EcrRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly imageTagMutability?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -19,13 +18,29 @@ export interface EcrRepositoryConfig extends TerraformMetaArguments {
 export interface EcrRepositoryImageScanningConfiguration {
   readonly scanOnPush: boolean;
 }
+
+function ecrRepositoryImageScanningConfigurationToTerraform(struct?: EcrRepositoryImageScanningConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    scan_on_push: cdktf.booleanToTerraform(struct!.scanOnPush),
+  }
+}
+
 export interface EcrRepositoryTimeouts {
   readonly delete?: string;
 }
 
+function ecrRepositoryTimeoutsToTerraform(struct?: EcrRepositoryTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class EcrRepository extends TerraformResource {
+export class EcrRepository extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -156,11 +171,11 @@ export class EcrRepository extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      image_tag_mutability: this._imageTagMutability,
-      name: this._name,
-      tags: this._tags,
-      image_scanning_configuration: this._imageScanningConfiguration,
-      timeouts: this._timeouts,
+      image_tag_mutability: cdktf.stringToTerraform(this._imageTagMutability),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      image_scanning_configuration: cdktf.listMapper(ecrRepositoryImageScanningConfigurationToTerraform)(this._imageScanningConfiguration),
+      timeouts: ecrRepositoryTimeoutsToTerraform(this._timeouts),
     };
   }
 }

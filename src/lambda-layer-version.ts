@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LambdaLayerVersionConfig extends TerraformMetaArguments {
+export interface LambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
   readonly compatibleRuntimes?: string[];
   readonly description?: string;
   readonly filename?: string;
@@ -21,7 +20,7 @@ export interface LambdaLayerVersionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class LambdaLayerVersion extends TerraformResource {
+export class LambdaLayerVersion extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -230,15 +229,15 @@ export class LambdaLayerVersion extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compatible_runtimes: this._compatibleRuntimes,
-      description: this._description,
-      filename: this._filename,
-      layer_name: this._layerName,
-      license_info: this._licenseInfo,
-      s3_bucket: this._s3Bucket,
-      s3_key: this._s3Key,
-      s3_object_version: this._s3ObjectVersion,
-      source_code_hash: this._sourceCodeHash,
+      compatible_runtimes: cdktf.listMapper(cdktf.stringToTerraform)(this._compatibleRuntimes),
+      description: cdktf.stringToTerraform(this._description),
+      filename: cdktf.stringToTerraform(this._filename),
+      layer_name: cdktf.stringToTerraform(this._layerName),
+      license_info: cdktf.stringToTerraform(this._licenseInfo),
+      s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
+      s3_key: cdktf.stringToTerraform(this._s3Key),
+      s3_object_version: cdktf.stringToTerraform(this._s3ObjectVersion),
+      source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
     };
   }
 }

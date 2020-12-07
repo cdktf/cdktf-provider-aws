@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksInstanceConfig extends TerraformMetaArguments {
+export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly agentVersion?: string;
   readonly amiId?: string;
   readonly architecture?: string;
@@ -66,25 +65,68 @@ export interface OpsworksInstanceEbsBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function opsworksInstanceEbsBlockDeviceToTerraform(struct?: OpsworksInstanceEbsBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface OpsworksInstanceEphemeralBlockDevice {
   readonly deviceName: string;
   readonly virtualName: string;
 }
+
+function opsworksInstanceEphemeralBlockDeviceToTerraform(struct?: OpsworksInstanceEphemeralBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+  }
+}
+
 export interface OpsworksInstanceRootBlockDevice {
   readonly deleteOnTermination?: boolean;
   readonly iops?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function opsworksInstanceRootBlockDeviceToTerraform(struct?: OpsworksInstanceRootBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface OpsworksInstanceTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function opsworksInstanceTimeoutsToTerraform(struct?: OpsworksInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class OpsworksInstance extends TerraformResource {
+export class OpsworksInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -882,51 +924,51 @@ export class OpsworksInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_version: this._agentVersion,
-      ami_id: this._amiId,
-      architecture: this._architecture,
-      auto_scaling_type: this._autoScalingType,
-      availability_zone: this._availabilityZone,
-      created_at: this._createdAt,
-      delete_ebs: this._deleteEbs,
-      delete_eip: this._deleteEip,
-      ebs_optimized: this._ebsOptimized,
-      ecs_cluster_arn: this._ecsClusterArn,
-      elastic_ip: this._elasticIp,
-      hostname: this._hostname,
-      infrastructure_class: this._infrastructureClass,
-      install_updates_on_boot: this._installUpdatesOnBoot,
-      instance_profile_arn: this._instanceProfileArn,
-      instance_type: this._instanceType,
-      last_service_error_id: this._lastServiceErrorId,
-      layer_ids: this._layerIds,
-      os: this._os,
-      platform: this._platform,
-      private_dns: this._privateDns,
-      private_ip: this._privateIp,
-      public_dns: this._publicDns,
-      public_ip: this._publicIp,
-      registered_by: this._registeredBy,
-      reported_agent_version: this._reportedAgentVersion,
-      reported_os_family: this._reportedOsFamily,
-      reported_os_name: this._reportedOsName,
-      reported_os_version: this._reportedOsVersion,
-      root_device_type: this._rootDeviceType,
-      root_device_volume_id: this._rootDeviceVolumeId,
-      security_group_ids: this._securityGroupIds,
-      ssh_host_dsa_key_fingerprint: this._sshHostDsaKeyFingerprint,
-      ssh_host_rsa_key_fingerprint: this._sshHostRsaKeyFingerprint,
-      ssh_key_name: this._sshKeyName,
-      stack_id: this._stackId,
-      state: this._state,
-      status: this._status,
-      subnet_id: this._subnetId,
-      tenancy: this._tenancy,
-      virtualization_type: this._virtualizationType,
-      ebs_block_device: this._ebsBlockDevice,
-      ephemeral_block_device: this._ephemeralBlockDevice,
-      root_block_device: this._rootBlockDevice,
-      timeouts: this._timeouts,
+      agent_version: cdktf.stringToTerraform(this._agentVersion),
+      ami_id: cdktf.stringToTerraform(this._amiId),
+      architecture: cdktf.stringToTerraform(this._architecture),
+      auto_scaling_type: cdktf.stringToTerraform(this._autoScalingType),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      created_at: cdktf.stringToTerraform(this._createdAt),
+      delete_ebs: cdktf.booleanToTerraform(this._deleteEbs),
+      delete_eip: cdktf.booleanToTerraform(this._deleteEip),
+      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
+      ecs_cluster_arn: cdktf.stringToTerraform(this._ecsClusterArn),
+      elastic_ip: cdktf.stringToTerraform(this._elasticIp),
+      hostname: cdktf.stringToTerraform(this._hostname),
+      infrastructure_class: cdktf.stringToTerraform(this._infrastructureClass),
+      install_updates_on_boot: cdktf.booleanToTerraform(this._installUpdatesOnBoot),
+      instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      last_service_error_id: cdktf.stringToTerraform(this._lastServiceErrorId),
+      layer_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._layerIds),
+      os: cdktf.stringToTerraform(this._os),
+      platform: cdktf.stringToTerraform(this._platform),
+      private_dns: cdktf.stringToTerraform(this._privateDns),
+      private_ip: cdktf.stringToTerraform(this._privateIp),
+      public_dns: cdktf.stringToTerraform(this._publicDns),
+      public_ip: cdktf.stringToTerraform(this._publicIp),
+      registered_by: cdktf.stringToTerraform(this._registeredBy),
+      reported_agent_version: cdktf.stringToTerraform(this._reportedAgentVersion),
+      reported_os_family: cdktf.stringToTerraform(this._reportedOsFamily),
+      reported_os_name: cdktf.stringToTerraform(this._reportedOsName),
+      reported_os_version: cdktf.stringToTerraform(this._reportedOsVersion),
+      root_device_type: cdktf.stringToTerraform(this._rootDeviceType),
+      root_device_volume_id: cdktf.stringToTerraform(this._rootDeviceVolumeId),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      ssh_host_dsa_key_fingerprint: cdktf.stringToTerraform(this._sshHostDsaKeyFingerprint),
+      ssh_host_rsa_key_fingerprint: cdktf.stringToTerraform(this._sshHostRsaKeyFingerprint),
+      ssh_key_name: cdktf.stringToTerraform(this._sshKeyName),
+      stack_id: cdktf.stringToTerraform(this._stackId),
+      state: cdktf.stringToTerraform(this._state),
+      status: cdktf.stringToTerraform(this._status),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tenancy: cdktf.stringToTerraform(this._tenancy),
+      virtualization_type: cdktf.stringToTerraform(this._virtualizationType),
+      ebs_block_device: cdktf.listMapper(opsworksInstanceEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
+      ephemeral_block_device: cdktf.listMapper(opsworksInstanceEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      root_block_device: cdktf.listMapper(opsworksInstanceRootBlockDeviceToTerraform)(this._rootBlockDevice),
+      timeouts: opsworksInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

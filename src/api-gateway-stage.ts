@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayStageConfig extends TerraformMetaArguments {
+export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
   readonly cacheClusterEnabled?: boolean;
   readonly cacheClusterSize?: string;
   readonly clientCertificateId?: string;
@@ -27,9 +26,18 @@ export interface ApiGatewayStageAccessLogSettings {
   readonly format: string;
 }
 
+function apiGatewayStageAccessLogSettingsToTerraform(struct?: ApiGatewayStageAccessLogSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
+    format: cdktf.stringToTerraform(struct!.format),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayStage extends TerraformResource {
+export class ApiGatewayStage extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -273,18 +281,18 @@ export class ApiGatewayStage extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_cluster_enabled: this._cacheClusterEnabled,
-      cache_cluster_size: this._cacheClusterSize,
-      client_certificate_id: this._clientCertificateId,
-      deployment_id: this._deploymentId,
-      description: this._description,
-      documentation_version: this._documentationVersion,
-      rest_api_id: this._restApiId,
-      stage_name: this._stageName,
-      tags: this._tags,
-      variables: this._variables,
-      xray_tracing_enabled: this._xrayTracingEnabled,
-      access_log_settings: this._accessLogSettings,
+      cache_cluster_enabled: cdktf.booleanToTerraform(this._cacheClusterEnabled),
+      cache_cluster_size: cdktf.stringToTerraform(this._cacheClusterSize),
+      client_certificate_id: cdktf.stringToTerraform(this._clientCertificateId),
+      deployment_id: cdktf.stringToTerraform(this._deploymentId),
+      description: cdktf.stringToTerraform(this._description),
+      documentation_version: cdktf.stringToTerraform(this._documentationVersion),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      stage_name: cdktf.stringToTerraform(this._stageName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._variables),
+      xray_tracing_enabled: cdktf.booleanToTerraform(this._xrayTracingEnabled),
+      access_log_settings: cdktf.listMapper(apiGatewayStageAccessLogSettingsToTerraform)(this._accessLogSettings),
     };
   }
 }

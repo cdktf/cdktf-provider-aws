@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsGuarddutyDetectorConfig extends TerraformMetaArguments {
+export interface DataAwsGuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
 }
 
 // Resource
 
-export class DataAwsGuarddutyDetector extends TerraformDataSource {
+export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -74,7 +73,7 @@ export class DataAwsGuarddutyDetector extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: this._id,
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

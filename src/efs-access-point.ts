@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EfsAccessPointConfig extends TerraformMetaArguments {
+export interface EfsAccessPointConfig extends cdktf.TerraformMetaArguments {
   readonly fileSystemId: string;
   readonly tags?: { [key: string]: string };
   /** posix_user block */
@@ -20,20 +19,49 @@ export interface EfsAccessPointPosixUser {
   readonly secondaryGids?: number[];
   readonly uid: number;
 }
+
+function efsAccessPointPosixUserToTerraform(struct?: EfsAccessPointPosixUser): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    gid: cdktf.numberToTerraform(struct!.gid),
+    secondary_gids: cdktf.listMapper(cdktf.numberToTerraform)(struct!.secondaryGids),
+    uid: cdktf.numberToTerraform(struct!.uid),
+  }
+}
+
 export interface EfsAccessPointRootDirectoryCreationInfo {
   readonly ownerGid: number;
   readonly ownerUid: number;
   readonly permissions: string;
 }
+
+function efsAccessPointRootDirectoryCreationInfoToTerraform(struct?: EfsAccessPointRootDirectoryCreationInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    owner_gid: cdktf.numberToTerraform(struct!.ownerGid),
+    owner_uid: cdktf.numberToTerraform(struct!.ownerUid),
+    permissions: cdktf.stringToTerraform(struct!.permissions),
+  }
+}
+
 export interface EfsAccessPointRootDirectory {
   readonly path?: string;
   /** creation_info block */
   readonly creationInfo?: EfsAccessPointRootDirectoryCreationInfo[];
 }
 
+function efsAccessPointRootDirectoryToTerraform(struct?: EfsAccessPointRootDirectory): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+    creation_info: cdktf.listMapper(efsAccessPointRootDirectoryCreationInfoToTerraform)(struct!.creationInfo),
+  }
+}
+
+
 // Resource
 
-export class EfsAccessPoint extends TerraformResource {
+export class EfsAccessPoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -147,10 +175,10 @@ export class EfsAccessPoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      file_system_id: this._fileSystemId,
-      tags: this._tags,
-      posix_user: this._posixUser,
-      root_directory: this._rootDirectory,
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      posix_user: cdktf.listMapper(efsAccessPointPosixUserToTerraform)(this._posixUser),
+      root_directory: cdktf.listMapper(efsAccessPointRootDirectoryToTerraform)(this._rootDirectory),
     };
   }
 }

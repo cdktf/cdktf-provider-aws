@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SfnStateMachineConfig extends TerraformMetaArguments {
+export interface SfnStateMachineConfig extends cdktf.TerraformMetaArguments {
   readonly definition: string;
   readonly name: string;
   readonly roleArn: string;
@@ -16,7 +15,7 @@ export interface SfnStateMachineConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SfnStateMachine extends TerraformResource {
+export class SfnStateMachine extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -124,10 +123,10 @@ export class SfnStateMachine extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      definition: this._definition,
-      name: this._name,
-      role_arn: this._roleArn,
-      tags: this._tags,
+      definition: cdktf.stringToTerraform(this._definition),
+      name: cdktf.stringToTerraform(this._name),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchEventRuleConfig extends TerraformMetaArguments {
+export interface CloudwatchEventRuleConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly eventPattern?: string;
   readonly isEnabled?: boolean;
@@ -20,7 +19,7 @@ export interface CloudwatchEventRuleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CloudwatchEventRule extends TerraformResource {
+export class CloudwatchEventRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -195,14 +194,14 @@ export class CloudwatchEventRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      event_pattern: this._eventPattern,
-      is_enabled: this._isEnabled,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      role_arn: this._roleArn,
-      schedule_expression: this._scheduleExpression,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      event_pattern: cdktf.stringToTerraform(this._eventPattern),
+      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      schedule_expression: cdktf.stringToTerraform(this._scheduleExpression),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

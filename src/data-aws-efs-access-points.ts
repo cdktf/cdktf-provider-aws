@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEfsAccessPointsConfig extends TerraformMetaArguments {
+export interface DataAwsEfsAccessPointsConfig extends cdktf.TerraformMetaArguments {
   readonly fileSystemId: string;
 }
 
 // Resource
 
-export class DataAwsEfsAccessPoints extends TerraformDataSource {
+export class DataAwsEfsAccessPoints extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -71,7 +70,7 @@ export class DataAwsEfsAccessPoints extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      file_system_id: this._fileSystemId,
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
     };
   }
 }

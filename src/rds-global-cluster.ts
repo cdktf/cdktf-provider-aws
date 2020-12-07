@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RdsGlobalClusterConfig extends TerraformMetaArguments {
+export interface RdsGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   readonly databaseName?: string;
   readonly deletionProtection?: boolean;
   readonly engine?: string;
@@ -18,7 +17,7 @@ export interface RdsGlobalClusterConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class RdsGlobalCluster extends TerraformResource {
+export class RdsGlobalCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -161,12 +160,12 @@ export class RdsGlobalCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_name: this._databaseName,
-      deletion_protection: this._deletionProtection,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      global_cluster_identifier: this._globalClusterIdentifier,
-      storage_encrypted: this._storageEncrypted,
+      database_name: cdktf.stringToTerraform(this._databaseName),
+      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
+      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
     };
   }
 }

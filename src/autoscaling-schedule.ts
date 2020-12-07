@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AutoscalingScheduleConfig extends TerraformMetaArguments {
+export interface AutoscalingScheduleConfig extends cdktf.TerraformMetaArguments {
   readonly autoscalingGroupName: string;
   readonly desiredCapacity?: number;
   readonly endTime?: string;
@@ -20,7 +19,7 @@ export interface AutoscalingScheduleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AutoscalingSchedule extends TerraformResource {
+export class AutoscalingSchedule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -189,14 +188,14 @@ export class AutoscalingSchedule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autoscaling_group_name: this._autoscalingGroupName,
-      desired_capacity: this._desiredCapacity,
-      end_time: this._endTime,
-      max_size: this._maxSize,
-      min_size: this._minSize,
-      recurrence: this._recurrence,
-      scheduled_action_name: this._scheduledActionName,
-      start_time: this._startTime,
+      autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
+      desired_capacity: cdktf.numberToTerraform(this._desiredCapacity),
+      end_time: cdktf.stringToTerraform(this._endTime),
+      max_size: cdktf.numberToTerraform(this._maxSize),
+      min_size: cdktf.numberToTerraform(this._minSize),
+      recurrence: cdktf.stringToTerraform(this._recurrence),
+      scheduled_action_name: cdktf.stringToTerraform(this._scheduledActionName),
+      start_time: cdktf.stringToTerraform(this._startTime),
     };
   }
 }

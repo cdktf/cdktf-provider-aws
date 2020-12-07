@@ -2,16 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsBatchJobQueueConfig extends TerraformMetaArguments {
+export interface DataAwsBatchJobQueueConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
-export class DataAwsBatchJobQueueComputeEnvironmentOrder extends ComplexComputedList {
+export class DataAwsBatchJobQueueComputeEnvironmentOrder extends cdktf.ComplexComputedList {
 
   // compute_environment - computed: true, optional: false, required: false
   public get computeEnvironment() {
@@ -26,7 +24,7 @@ export class DataAwsBatchJobQueueComputeEnvironmentOrder extends ComplexComputed
 
 // Resource
 
-export class DataAwsBatchJobQueue extends TerraformDataSource {
+export class DataAwsBatchJobQueue extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -104,7 +102,7 @@ export class DataAwsBatchJobQueue extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

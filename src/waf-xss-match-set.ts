@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafXssMatchSetConfig extends TerraformMetaArguments {
+export interface WafXssMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** xss_match_tuples block */
   readonly xssMatchTuples?: WafXssMatchSetXssMatchTuples[];
@@ -16,15 +15,33 @@ export interface WafXssMatchSetXssMatchTuplesFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafXssMatchSetXssMatchTuplesFieldToMatchToTerraform(struct?: WafXssMatchSetXssMatchTuplesFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafXssMatchSetXssMatchTuples {
   readonly textTransformation: string;
   /** field_to_match block */
   readonly fieldToMatch: WafXssMatchSetXssMatchTuplesFieldToMatch[];
 }
 
+function wafXssMatchSetXssMatchTuplesToTerraform(struct?: WafXssMatchSetXssMatchTuples): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafXssMatchSetXssMatchTuplesFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafXssMatchSet extends TerraformResource {
+export class WafXssMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -94,8 +111,8 @@ export class WafXssMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      xss_match_tuples: this._xssMatchTuples,
+      name: cdktf.stringToTerraform(this._name),
+      xss_match_tuples: cdktf.listMapper(wafXssMatchSetXssMatchTuplesToTerraform)(this._xssMatchTuples),
     };
   }
 }

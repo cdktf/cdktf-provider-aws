@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppsyncGraphqlApiConfig extends TerraformMetaArguments {
+export interface AppsyncGraphqlApiConfig extends cdktf.TerraformMetaArguments {
   readonly authenticationType: string;
   readonly name: string;
   readonly schema?: string;
@@ -29,11 +27,32 @@ export interface AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectC
   readonly iatTtl?: number;
   readonly issuer: string;
 }
+
+function appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    auth_ttl: cdktf.numberToTerraform(struct!.authTtl),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    iat_ttl: cdktf.numberToTerraform(struct!.iatTtl),
+    issuer: cdktf.stringToTerraform(struct!.issuer),
+  }
+}
+
 export interface AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig {
   readonly appIdClientRegex?: string;
   readonly awsRegion?: string;
   readonly userPoolId: string;
 }
+
+function appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    app_id_client_regex: cdktf.stringToTerraform(struct!.appIdClientRegex),
+    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
+    user_pool_id: cdktf.stringToTerraform(struct!.userPoolId),
+  }
+}
+
 export interface AppsyncGraphqlApiAdditionalAuthenticationProvider {
   readonly authenticationType: string;
   /** openid_connect_config block */
@@ -41,17 +60,48 @@ export interface AppsyncGraphqlApiAdditionalAuthenticationProvider {
   /** user_pool_config block */
   readonly userPoolConfig?: AppsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfig[];
 }
+
+function appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform(struct?: AppsyncGraphqlApiAdditionalAuthenticationProvider): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    authentication_type: cdktf.stringToTerraform(struct!.authenticationType),
+    openid_connect_config: cdktf.listMapper(appsyncGraphqlApiAdditionalAuthenticationProviderOpenidConnectConfigToTerraform)(struct!.openidConnectConfig),
+    user_pool_config: cdktf.listMapper(appsyncGraphqlApiAdditionalAuthenticationProviderUserPoolConfigToTerraform)(struct!.userPoolConfig),
+  }
+}
+
 export interface AppsyncGraphqlApiLogConfig {
   readonly cloudwatchLogsRoleArn: string;
   readonly excludeVerboseContent?: boolean;
   readonly fieldLogLevel: string;
 }
+
+function appsyncGraphqlApiLogConfigToTerraform(struct?: AppsyncGraphqlApiLogConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cloudwatch_logs_role_arn: cdktf.stringToTerraform(struct!.cloudwatchLogsRoleArn),
+    exclude_verbose_content: cdktf.booleanToTerraform(struct!.excludeVerboseContent),
+    field_log_level: cdktf.stringToTerraform(struct!.fieldLogLevel),
+  }
+}
+
 export interface AppsyncGraphqlApiOpenidConnectConfig {
   readonly authTtl?: number;
   readonly clientId?: string;
   readonly iatTtl?: number;
   readonly issuer: string;
 }
+
+function appsyncGraphqlApiOpenidConnectConfigToTerraform(struct?: AppsyncGraphqlApiOpenidConnectConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    auth_ttl: cdktf.numberToTerraform(struct!.authTtl),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    iat_ttl: cdktf.numberToTerraform(struct!.iatTtl),
+    issuer: cdktf.stringToTerraform(struct!.issuer),
+  }
+}
+
 export interface AppsyncGraphqlApiUserPoolConfig {
   readonly appIdClientRegex?: string;
   readonly awsRegion?: string;
@@ -59,9 +109,20 @@ export interface AppsyncGraphqlApiUserPoolConfig {
   readonly userPoolId: string;
 }
 
+function appsyncGraphqlApiUserPoolConfigToTerraform(struct?: AppsyncGraphqlApiUserPoolConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    app_id_client_regex: cdktf.stringToTerraform(struct!.appIdClientRegex),
+    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
+    default_action: cdktf.stringToTerraform(struct!.defaultAction),
+    user_pool_id: cdktf.stringToTerraform(struct!.userPoolId),
+  }
+}
+
+
 // Resource
 
-export class AppsyncGraphqlApi extends TerraformResource {
+export class AppsyncGraphqlApi extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -163,7 +224,7 @@ export class AppsyncGraphqlApi extends TerraformResource {
 
   // uris - computed: true, optional: false, required: false
   public uris(key: string): string {
-    return new StringMap(this, 'uris').lookup(key);
+    return new cdktf.StringMap(this, 'uris').lookup(key);
   }
 
   // xray_enabled - computed: false, optional: true, required: false
@@ -252,15 +313,15 @@ export class AppsyncGraphqlApi extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_type: this._authenticationType,
-      name: this._name,
-      schema: this._schema,
-      tags: this._tags,
-      xray_enabled: this._xrayEnabled,
-      additional_authentication_provider: this._additionalAuthenticationProvider,
-      log_config: this._logConfig,
-      openid_connect_config: this._openidConnectConfig,
-      user_pool_config: this._userPoolConfig,
+      authentication_type: cdktf.stringToTerraform(this._authenticationType),
+      name: cdktf.stringToTerraform(this._name),
+      schema: cdktf.stringToTerraform(this._schema),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      xray_enabled: cdktf.booleanToTerraform(this._xrayEnabled),
+      additional_authentication_provider: cdktf.listMapper(appsyncGraphqlApiAdditionalAuthenticationProviderToTerraform)(this._additionalAuthenticationProvider),
+      log_config: cdktf.listMapper(appsyncGraphqlApiLogConfigToTerraform)(this._logConfig),
+      openid_connect_config: cdktf.listMapper(appsyncGraphqlApiOpenidConnectConfigToTerraform)(this._openidConnectConfig),
+      user_pool_config: cdktf.listMapper(appsyncGraphqlApiUserPoolConfigToTerraform)(this._userPoolConfig),
     };
   }
 }

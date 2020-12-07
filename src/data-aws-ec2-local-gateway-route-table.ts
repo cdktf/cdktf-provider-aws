@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2LocalGatewayRouteTableConfig extends TerraformMetaArguments {
+export interface DataAwsEc2LocalGatewayRouteTableConfig extends cdktf.TerraformMetaArguments {
   readonly localGatewayId?: string;
   readonly localGatewayRouteTableId?: string;
   readonly outpostArn?: string;
@@ -21,9 +20,18 @@ export interface DataAwsEc2LocalGatewayRouteTableFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2LocalGatewayRouteTableFilterToTerraform(struct?: DataAwsEc2LocalGatewayRouteTableFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2LocalGatewayRouteTable extends TerraformDataSource {
+export class DataAwsEc2LocalGatewayRouteTable extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -159,12 +167,12 @@ export class DataAwsEc2LocalGatewayRouteTable extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      local_gateway_id: this._localGatewayId,
-      local_gateway_route_table_id: this._localGatewayRouteTableId,
-      outpost_arn: this._outpostArn,
-      state: this._state,
-      tags: this._tags,
-      filter: this._filter,
+      local_gateway_id: cdktf.stringToTerraform(this._localGatewayId),
+      local_gateway_route_table_id: cdktf.stringToTerraform(this._localGatewayRouteTableId),
+      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
+      state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEc2LocalGatewayRouteTableFilterToTerraform)(this._filter),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamAccessKeyConfig extends TerraformMetaArguments {
+export interface IamAccessKeyConfig extends cdktf.TerraformMetaArguments {
   readonly pgpKey?: string;
   readonly status?: string;
   readonly user: string;
@@ -15,7 +14,7 @@ export interface IamAccessKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamAccessKey extends TerraformResource {
+export class IamAccessKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -122,9 +121,9 @@ export class IamAccessKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      pgp_key: this._pgpKey,
-      status: this._status,
-      user: this._user,
+      pgp_key: cdktf.stringToTerraform(this._pgpKey),
+      status: cdktf.stringToTerraform(this._status),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

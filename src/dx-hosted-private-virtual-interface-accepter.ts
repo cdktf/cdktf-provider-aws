@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxHostedPrivateVirtualInterfaceAccepterConfig extends TerraformMetaArguments {
+export interface DxHostedPrivateVirtualInterfaceAccepterConfig extends cdktf.TerraformMetaArguments {
   readonly dxGatewayId?: string;
   readonly tags?: { [key: string]: string };
   readonly virtualInterfaceId: string;
@@ -20,9 +19,18 @@ export interface DxHostedPrivateVirtualInterfaceAccepterTimeouts {
   readonly delete?: string;
 }
 
+function dxHostedPrivateVirtualInterfaceAccepterTimeoutsToTerraform(struct?: DxHostedPrivateVirtualInterfaceAccepterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DxHostedPrivateVirtualInterfaceAccepter extends TerraformResource {
+export class DxHostedPrivateVirtualInterfaceAccepter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -143,11 +151,11 @@ export class DxHostedPrivateVirtualInterfaceAccepter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dx_gateway_id: this._dxGatewayId,
-      tags: this._tags,
-      virtual_interface_id: this._virtualInterfaceId,
-      vpn_gateway_id: this._vpnGatewayId,
-      timeouts: this._timeouts,
+      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
+      timeouts: dxHostedPrivateVirtualInterfaceAccepterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

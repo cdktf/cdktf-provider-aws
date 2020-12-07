@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamPolicyAttachmentConfig extends TerraformMetaArguments {
+export interface IamPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly groups?: string[];
   readonly name: string;
   readonly policyArn: string;
@@ -17,7 +16,7 @@ export interface IamPolicyAttachmentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamPolicyAttachment extends TerraformResource {
+export class IamPolicyAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -130,11 +129,11 @@ export class IamPolicyAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      groups: this._groups,
-      name: this._name,
-      policy_arn: this._policyArn,
-      roles: this._roles,
-      users: this._users,
+      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      name: cdktf.stringToTerraform(this._name),
+      policy_arn: cdktf.stringToTerraform(this._policyArn),
+      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
+      users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
     };
   }
 }

@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointConfig extends TerraformMetaArguments {
+export interface VpcEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly autoAccept?: boolean;
   readonly policy?: string;
   readonly privateDnsEnabled?: boolean;
@@ -22,7 +20,7 @@ export interface VpcEndpointConfig extends TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: VpcEndpointTimeouts;
 }
-export class VpcEndpointDnsEntry extends ComplexComputedList {
+export class VpcEndpointDnsEntry extends cdktf.ComplexComputedList {
 
   // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
@@ -40,9 +38,19 @@ export interface VpcEndpointTimeouts {
   readonly update?: string;
 }
 
+function vpcEndpointTimeoutsToTerraform(struct?: VpcEndpointTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class VpcEndpoint extends TerraformResource {
+export class VpcEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -297,17 +305,17 @@ export class VpcEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_accept: this._autoAccept,
-      policy: this._policy,
-      private_dns_enabled: this._privateDnsEnabled,
-      route_table_ids: this._routeTableIds,
-      security_group_ids: this._securityGroupIds,
-      service_name: this._serviceName,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      vpc_endpoint_type: this._vpcEndpointType,
-      vpc_id: this._vpcId,
-      timeouts: this._timeouts,
+      auto_accept: cdktf.booleanToTerraform(this._autoAccept),
+      policy: cdktf.stringToTerraform(this._policy),
+      private_dns_enabled: cdktf.booleanToTerraform(this._privateDnsEnabled),
+      route_table_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._routeTableIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      service_name: cdktf.stringToTerraform(this._serviceName),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_endpoint_type: cdktf.stringToTerraform(this._vpcEndpointType),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      timeouts: vpcEndpointTimeoutsToTerraform(this._timeouts),
     };
   }
 }

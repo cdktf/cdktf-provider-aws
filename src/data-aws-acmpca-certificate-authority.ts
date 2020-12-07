@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAcmpcaCertificateAuthorityConfig extends TerraformMetaArguments {
+export interface DataAwsAcmpcaCertificateAuthorityConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly tags?: { [key: string]: string };
   /** revocation_configuration block */
@@ -15,14 +14,29 @@ export interface DataAwsAcmpcaCertificateAuthorityConfig extends TerraformMetaAr
 }
 export interface DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration {
 }
+
+function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform(struct?: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+  }
+}
+
 export interface DataAwsAcmpcaCertificateAuthorityRevocationConfiguration {
   /** crl_configuration block */
   readonly crlConfiguration?: DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration[];
 }
 
+function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraform(struct?: DataAwsAcmpcaCertificateAuthorityRevocationConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    crl_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform)(struct!.crlConfiguration),
+  }
+}
+
+
 // Resource
 
-export class DataAwsAcmpcaCertificateAuthority extends TerraformDataSource {
+export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -144,9 +158,9 @@ export class DataAwsAcmpcaCertificateAuthority extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
-      tags: this._tags,
-      revocation_configuration: this._revocationConfiguration,
+      arn: cdktf.stringToTerraform(this._arn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      revocation_configuration: cdktf.listMapper(dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraform)(this._revocationConfiguration),
     };
   }
 }

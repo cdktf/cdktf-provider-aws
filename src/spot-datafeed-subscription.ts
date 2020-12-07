@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SpotDatafeedSubscriptionConfig extends TerraformMetaArguments {
+export interface SpotDatafeedSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly prefix?: string;
 }
 
 // Resource
 
-export class SpotDatafeedSubscription extends TerraformResource {
+export class SpotDatafeedSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -79,8 +78,8 @@ export class SpotDatafeedSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      prefix: this._prefix,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      prefix: cdktf.stringToTerraform(this._prefix),
     };
   }
 }

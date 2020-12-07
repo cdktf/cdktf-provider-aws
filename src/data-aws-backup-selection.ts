@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsBackupSelectionConfig extends TerraformMetaArguments {
+export interface DataAwsBackupSelectionConfig extends cdktf.TerraformMetaArguments {
   readonly planId: string;
   readonly selectionId: string;
 }
 
 // Resource
 
-export class DataAwsBackupSelection extends TerraformDataSource {
+export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -91,8 +90,8 @@ export class DataAwsBackupSelection extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      plan_id: this._planId,
-      selection_id: this._selectionId,
+      plan_id: cdktf.stringToTerraform(this._planId),
+      selection_id: cdktf.stringToTerraform(this._selectionId),
     };
   }
 }

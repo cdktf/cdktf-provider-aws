@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalXssMatchSetConfig extends TerraformMetaArguments {
+export interface WafregionalXssMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** xss_match_tuple block */
   readonly xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[];
@@ -16,15 +15,33 @@ export interface WafregionalXssMatchSetXssMatchTupleFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafregionalXssMatchSetXssMatchTupleFieldToMatchToTerraform(struct?: WafregionalXssMatchSetXssMatchTupleFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalXssMatchSetXssMatchTuple {
   readonly textTransformation: string;
   /** field_to_match block */
   readonly fieldToMatch: WafregionalXssMatchSetXssMatchTupleFieldToMatch[];
 }
 
+function wafregionalXssMatchSetXssMatchTupleToTerraform(struct?: WafregionalXssMatchSetXssMatchTuple): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafregionalXssMatchSetXssMatchTupleFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafregionalXssMatchSet extends TerraformResource {
+export class WafregionalXssMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,8 +106,8 @@ export class WafregionalXssMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      xss_match_tuple: this._xssMatchTuple,
+      name: cdktf.stringToTerraform(this._name),
+      xss_match_tuple: cdktf.listMapper(wafregionalXssMatchSetXssMatchTupleToTerraform)(this._xssMatchTuple),
     };
   }
 }

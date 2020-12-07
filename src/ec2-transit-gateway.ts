@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly amazonSideAsn?: number;
   readonly autoAcceptSharedAttachments?: string;
   readonly defaultRouteTableAssociation?: string;
@@ -20,7 +19,7 @@ export interface Ec2TransitGatewayConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2TransitGateway extends TerraformResource {
+export class Ec2TransitGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -210,14 +209,14 @@ export class Ec2TransitGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amazon_side_asn: this._amazonSideAsn,
-      auto_accept_shared_attachments: this._autoAcceptSharedAttachments,
-      default_route_table_association: this._defaultRouteTableAssociation,
-      default_route_table_propagation: this._defaultRouteTablePropagation,
-      description: this._description,
-      dns_support: this._dnsSupport,
-      tags: this._tags,
-      vpn_ecmp_support: this._vpnEcmpSupport,
+      amazon_side_asn: cdktf.numberToTerraform(this._amazonSideAsn),
+      auto_accept_shared_attachments: cdktf.stringToTerraform(this._autoAcceptSharedAttachments),
+      default_route_table_association: cdktf.stringToTerraform(this._defaultRouteTableAssociation),
+      default_route_table_propagation: cdktf.stringToTerraform(this._defaultRouteTablePropagation),
+      description: cdktf.stringToTerraform(this._description),
+      dns_support: cdktf.stringToTerraform(this._dnsSupport),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpn_ecmp_support: cdktf.stringToTerraform(this._vpnEcmpSupport),
     };
   }
 }

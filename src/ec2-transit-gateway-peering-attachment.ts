@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayPeeringAttachmentConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayPeeringAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly peerAccountId?: string;
   readonly peerRegion: string;
   readonly peerTransitGatewayId: string;
@@ -17,7 +16,7 @@ export interface Ec2TransitGatewayPeeringAttachmentConfig extends TerraformMetaA
 
 // Resource
 
-export class Ec2TransitGatewayPeeringAttachment extends TerraformResource {
+export class Ec2TransitGatewayPeeringAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -127,11 +126,11 @@ export class Ec2TransitGatewayPeeringAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      peer_account_id: this._peerAccountId,
-      peer_region: this._peerRegion,
-      peer_transit_gateway_id: this._peerTransitGatewayId,
-      tags: this._tags,
-      transit_gateway_id: this._transitGatewayId,
+      peer_account_id: cdktf.stringToTerraform(this._peerAccountId),
+      peer_region: cdktf.stringToTerraform(this._peerRegion),
+      peer_transit_gateway_id: cdktf.stringToTerraform(this._peerTransitGatewayId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
     };
   }
 }

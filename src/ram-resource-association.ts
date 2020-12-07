@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RamResourceAssociationConfig extends TerraformMetaArguments {
+export interface RamResourceAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly resourceArn: string;
   readonly resourceShareArn: string;
 }
 
 // Resource
 
-export class RamResourceAssociation extends TerraformResource {
+export class RamResourceAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class RamResourceAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_arn: this._resourceArn,
-      resource_share_arn: this._resourceShareArn,
+      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      resource_share_arn: cdktf.stringToTerraform(this._resourceShareArn),
     };
   }
 }

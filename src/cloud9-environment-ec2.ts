@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Cloud9EnvironmentEc2Config extends TerraformMetaArguments {
+export interface Cloud9EnvironmentEc2Config extends cdktf.TerraformMetaArguments {
   readonly automaticStopTimeMinutes?: number;
   readonly description?: string;
   readonly instanceType: string;
@@ -19,7 +18,7 @@ export interface Cloud9EnvironmentEc2Config extends TerraformMetaArguments {
 
 // Resource
 
-export class Cloud9EnvironmentEc2 extends TerraformResource {
+export class Cloud9EnvironmentEc2 extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -176,13 +175,13 @@ export class Cloud9EnvironmentEc2 extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automatic_stop_time_minutes: this._automaticStopTimeMinutes,
-      description: this._description,
-      instance_type: this._instanceType,
-      name: this._name,
-      owner_arn: this._ownerArn,
-      subnet_id: this._subnetId,
-      tags: this._tags,
+      automatic_stop_time_minutes: cdktf.numberToTerraform(this._automaticStopTimeMinutes),
+      description: cdktf.stringToTerraform(this._description),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      name: cdktf.stringToTerraform(this._name),
+      owner_arn: cdktf.stringToTerraform(this._ownerArn),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BatchJobQueueConfig extends TerraformMetaArguments {
+export interface BatchJobQueueConfig extends cdktf.TerraformMetaArguments {
   readonly computeEnvironments: string[];
   readonly name: string;
   readonly priority: number;
@@ -16,7 +15,7 @@ export interface BatchJobQueueConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class BatchJobQueue extends TerraformResource {
+export class BatchJobQueue extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -111,10 +110,10 @@ export class BatchJobQueue extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_environments: this._computeEnvironments,
-      name: this._name,
-      priority: this._priority,
-      state: this._state,
+      compute_environments: cdktf.listMapper(cdktf.stringToTerraform)(this._computeEnvironments),
+      name: cdktf.stringToTerraform(this._name),
+      priority: cdktf.numberToTerraform(this._priority),
+      state: cdktf.stringToTerraform(this._state),
     };
   }
 }

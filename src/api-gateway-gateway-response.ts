@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayGatewayResponseConfig extends TerraformMetaArguments {
+export interface ApiGatewayGatewayResponseConfig extends cdktf.TerraformMetaArguments {
   readonly responseParameters?: { [key: string]: string };
   readonly responseTemplates?: { [key: string]: string };
   readonly responseType: string;
@@ -17,7 +16,7 @@ export interface ApiGatewayGatewayResponseConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class ApiGatewayGatewayResponse extends TerraformResource {
+export class ApiGatewayGatewayResponse extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -130,11 +129,11 @@ export class ApiGatewayGatewayResponse extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      response_parameters: this._responseParameters,
-      response_templates: this._responseTemplates,
-      response_type: this._responseType,
-      rest_api_id: this._restApiId,
-      status_code: this._statusCode,
+      response_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseParameters),
+      response_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseTemplates),
+      response_type: cdktf.stringToTerraform(this._responseType),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      status_code: cdktf.stringToTerraform(this._statusCode),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CognitoResourceServerConfig extends TerraformMetaArguments {
+export interface CognitoResourceServerConfig extends cdktf.TerraformMetaArguments {
   readonly identifier: string;
   readonly name: string;
   readonly userPoolId: string;
@@ -19,9 +18,18 @@ export interface CognitoResourceServerScope {
   readonly scopeName: string;
 }
 
+function cognitoResourceServerScopeToTerraform(struct?: CognitoResourceServerScope): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    scope_description: cdktf.stringToTerraform(struct!.scopeDescription),
+    scope_name: cdktf.stringToTerraform(struct!.scopeName),
+  }
+}
+
+
 // Resource
 
-export class CognitoResourceServer extends TerraformResource {
+export class CognitoResourceServer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,10 +127,10 @@ export class CognitoResourceServer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identifier: this._identifier,
-      name: this._name,
-      user_pool_id: this._userPoolId,
-      scope: this._scope,
+      identifier: cdktf.stringToTerraform(this._identifier),
+      name: cdktf.stringToTerraform(this._name),
+      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
+      scope: cdktf.listMapper(cognitoResourceServerScopeToTerraform)(this._scope),
     };
   }
 }

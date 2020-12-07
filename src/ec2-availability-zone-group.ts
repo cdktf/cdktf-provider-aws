@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2AvailabilityZoneGroupConfig extends TerraformMetaArguments {
+export interface Ec2AvailabilityZoneGroupConfig extends cdktf.TerraformMetaArguments {
   readonly groupName: string;
   readonly optInStatus: string;
 }
 
 // Resource
 
-export class Ec2AvailabilityZoneGroup extends TerraformResource {
+export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class Ec2AvailabilityZoneGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_name: this._groupName,
-      opt_in_status: this._optInStatus,
+      group_name: cdktf.stringToTerraform(this._groupName),
+      opt_in_status: cdktf.stringToTerraform(this._optInStatus),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MediaConvertQueueConfig extends TerraformMetaArguments {
+export interface MediaConvertQueueConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly pricingPlan?: string;
@@ -22,9 +21,19 @@ export interface MediaConvertQueueReservationPlanSettings {
   readonly reservedSlots: number;
 }
 
+function mediaConvertQueueReservationPlanSettingsToTerraform(struct?: MediaConvertQueueReservationPlanSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    commitment: cdktf.stringToTerraform(struct!.commitment),
+    renewal_type: cdktf.stringToTerraform(struct!.renewalType),
+    reserved_slots: cdktf.numberToTerraform(struct!.reservedSlots),
+  }
+}
+
+
 // Resource
 
-export class MediaConvertQueue extends TerraformResource {
+export class MediaConvertQueue extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -162,12 +171,12 @@ export class MediaConvertQueue extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      pricing_plan: this._pricingPlan,
-      status: this._status,
-      tags: this._tags,
-      reservation_plan_settings: this._reservationPlanSettings,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      pricing_plan: cdktf.stringToTerraform(this._pricingPlan),
+      status: cdktf.stringToTerraform(this._status),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      reservation_plan_settings: cdktf.listMapper(mediaConvertQueueReservationPlanSettingsToTerraform)(this._reservationPlanSettings),
     };
   }
 }

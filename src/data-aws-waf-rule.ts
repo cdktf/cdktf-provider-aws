@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsWafRuleConfig extends TerraformMetaArguments {
+export interface DataAwsWafRuleConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsWafRule extends TerraformDataSource {
+export class DataAwsWafRule extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -61,7 +60,7 @@ export class DataAwsWafRule extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

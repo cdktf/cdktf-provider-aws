@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticBeanstalkConfigurationTemplateConfig extends TerraformMetaArguments {
+export interface ElasticBeanstalkConfigurationTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly application: string;
   readonly description?: string;
   readonly environmentId?: string;
@@ -23,9 +22,20 @@ export interface ElasticBeanstalkConfigurationTemplateSetting {
   readonly value: string;
 }
 
+function elasticBeanstalkConfigurationTemplateSettingToTerraform(struct?: ElasticBeanstalkConfigurationTemplateSetting): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    namespace: cdktf.stringToTerraform(struct!.namespace),
+    resource: cdktf.stringToTerraform(struct!.resource),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class ElasticBeanstalkConfigurationTemplate extends TerraformResource {
+export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -155,12 +165,12 @@ export class ElasticBeanstalkConfigurationTemplate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application: this._application,
-      description: this._description,
-      environment_id: this._environmentId,
-      name: this._name,
-      solution_stack_name: this._solutionStackName,
-      setting: this._setting,
+      application: cdktf.stringToTerraform(this._application),
+      description: cdktf.stringToTerraform(this._description),
+      environment_id: cdktf.stringToTerraform(this._environmentId),
+      name: cdktf.stringToTerraform(this._name),
+      solution_stack_name: cdktf.stringToTerraform(this._solutionStackName),
+      setting: cdktf.listMapper(elasticBeanstalkConfigurationTemplateSettingToTerraform)(this._setting),
     };
   }
 }

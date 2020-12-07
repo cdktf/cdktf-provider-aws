@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatasyncTaskConfig extends TerraformMetaArguments {
+export interface DatasyncTaskConfig extends cdktf.TerraformMetaArguments {
   readonly cloudwatchLogGroupArn?: string;
   readonly destinationLocationArn: string;
   readonly name?: string;
@@ -29,13 +28,37 @@ export interface DatasyncTaskOptions {
   readonly uid?: string;
   readonly verifyMode?: string;
 }
+
+function datasyncTaskOptionsToTerraform(struct?: DatasyncTaskOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    atime: cdktf.stringToTerraform(struct!.atime),
+    bytes_per_second: cdktf.numberToTerraform(struct!.bytesPerSecond),
+    gid: cdktf.stringToTerraform(struct!.gid),
+    mtime: cdktf.stringToTerraform(struct!.mtime),
+    posix_permissions: cdktf.stringToTerraform(struct!.posixPermissions),
+    preserve_deleted_files: cdktf.stringToTerraform(struct!.preserveDeletedFiles),
+    preserve_devices: cdktf.stringToTerraform(struct!.preserveDevices),
+    uid: cdktf.stringToTerraform(struct!.uid),
+    verify_mode: cdktf.stringToTerraform(struct!.verifyMode),
+  }
+}
+
 export interface DatasyncTaskTimeouts {
   readonly create?: string;
 }
 
+function datasyncTaskTimeoutsToTerraform(struct?: DatasyncTaskTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class DatasyncTask extends TerraformResource {
+export class DatasyncTask extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -187,13 +210,13 @@ export class DatasyncTask extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloudwatch_log_group_arn: this._cloudwatchLogGroupArn,
-      destination_location_arn: this._destinationLocationArn,
-      name: this._name,
-      source_location_arn: this._sourceLocationArn,
-      tags: this._tags,
-      options: this._options,
-      timeouts: this._timeouts,
+      cloudwatch_log_group_arn: cdktf.stringToTerraform(this._cloudwatchLogGroupArn),
+      destination_location_arn: cdktf.stringToTerraform(this._destinationLocationArn),
+      name: cdktf.stringToTerraform(this._name),
+      source_location_arn: cdktf.stringToTerraform(this._sourceLocationArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      options: cdktf.listMapper(datasyncTaskOptionsToTerraform)(this._options),
+      timeouts: datasyncTaskTimeoutsToTerraform(this._timeouts),
     };
   }
 }

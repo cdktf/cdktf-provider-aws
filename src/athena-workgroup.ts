@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AthenaWorkgroupConfig extends TerraformMetaArguments {
+export interface AthenaWorkgroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly forceDestroy?: boolean;
   readonly name: string;
@@ -20,11 +19,29 @@ export interface AthenaWorkgroupConfigurationResultConfigurationEncryptionConfig
   readonly encryptionOption?: string;
   readonly kmsKeyArn?: string;
 }
+
+function athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+  }
+}
+
 export interface AthenaWorkgroupConfigurationResultConfiguration {
   readonly outputLocation?: string;
   /** encryption_configuration block */
   readonly encryptionConfiguration?: AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration[];
 }
+
+function athenaWorkgroupConfigurationResultConfigurationToTerraform(struct?: AthenaWorkgroupConfigurationResultConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    output_location: cdktf.stringToTerraform(struct!.outputLocation),
+    encryption_configuration: cdktf.listMapper(athenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationToTerraform)(struct!.encryptionConfiguration),
+  }
+}
+
 export interface AthenaWorkgroupConfiguration {
   readonly bytesScannedCutoffPerQuery?: number;
   readonly enforceWorkgroupConfiguration?: boolean;
@@ -33,9 +50,20 @@ export interface AthenaWorkgroupConfiguration {
   readonly resultConfiguration?: AthenaWorkgroupConfigurationResultConfiguration[];
 }
 
+function athenaWorkgroupConfigurationToTerraform(struct?: AthenaWorkgroupConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bytes_scanned_cutoff_per_query: cdktf.numberToTerraform(struct!.bytesScannedCutoffPerQuery),
+    enforce_workgroup_configuration: cdktf.booleanToTerraform(struct!.enforceWorkgroupConfiguration),
+    publish_cloudwatch_metrics_enabled: cdktf.booleanToTerraform(struct!.publishCloudwatchMetricsEnabled),
+    result_configuration: cdktf.listMapper(athenaWorkgroupConfigurationResultConfigurationToTerraform)(struct!.resultConfiguration),
+  }
+}
+
+
 // Resource
 
-export class AthenaWorkgroup extends TerraformResource {
+export class AthenaWorkgroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -173,12 +201,12 @@ export class AthenaWorkgroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      force_destroy: this._forceDestroy,
-      name: this._name,
-      state: this._state,
-      tags: this._tags,
-      configuration: this._configuration,
+      description: cdktf.stringToTerraform(this._description),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      name: cdktf.stringToTerraform(this._name),
+      state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      configuration: cdktf.listMapper(athenaWorkgroupConfigurationToTerraform)(this._configuration),
     };
   }
 }

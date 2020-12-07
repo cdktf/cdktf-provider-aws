@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DynamodbGlobalTableConfig extends TerraformMetaArguments {
+export interface DynamodbGlobalTableConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** replica block */
   readonly replica: DynamodbGlobalTableReplica[];
@@ -17,15 +16,33 @@ export interface DynamodbGlobalTableConfig extends TerraformMetaArguments {
 export interface DynamodbGlobalTableReplica {
   readonly regionName: string;
 }
+
+function dynamodbGlobalTableReplicaToTerraform(struct?: DynamodbGlobalTableReplica): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    region_name: cdktf.stringToTerraform(struct!.regionName),
+  }
+}
+
 export interface DynamodbGlobalTableTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function dynamodbGlobalTableTimeoutsToTerraform(struct?: DynamodbGlobalTableTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DynamodbGlobalTable extends TerraformResource {
+export class DynamodbGlobalTable extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -109,9 +126,9 @@ export class DynamodbGlobalTable extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      replica: this._replica,
-      timeouts: this._timeouts,
+      name: cdktf.stringToTerraform(this._name),
+      replica: cdktf.listMapper(dynamodbGlobalTableReplicaToTerraform)(this._replica),
+      timeouts: dynamodbGlobalTableTimeoutsToTerraform(this._timeouts),
     };
   }
 }

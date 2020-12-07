@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppautoscalingPolicyConfig extends TerraformMetaArguments {
+export interface AppautoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly adjustmentType?: string;
   readonly cooldown?: number;
   readonly metricAggregationType?: string;
@@ -29,11 +28,31 @@ export interface AppautoscalingPolicyStepAdjustment {
   readonly metricIntervalUpperBound?: string;
   readonly scalingAdjustment: number;
 }
+
+function appautoscalingPolicyStepAdjustmentToTerraform(struct?: AppautoscalingPolicyStepAdjustment): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    metric_interval_lower_bound: cdktf.stringToTerraform(struct!.metricIntervalLowerBound),
+    metric_interval_upper_bound: cdktf.stringToTerraform(struct!.metricIntervalUpperBound),
+    scaling_adjustment: cdktf.numberToTerraform(struct!.scalingAdjustment),
+  }
+}
+
 export interface AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustment {
   readonly metricIntervalLowerBound?: string;
   readonly metricIntervalUpperBound?: string;
   readonly scalingAdjustment: number;
 }
+
+function appautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentToTerraform(struct?: AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustment): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    metric_interval_lower_bound: cdktf.stringToTerraform(struct!.metricIntervalLowerBound),
+    metric_interval_upper_bound: cdktf.stringToTerraform(struct!.metricIntervalUpperBound),
+    scaling_adjustment: cdktf.numberToTerraform(struct!.scalingAdjustment),
+  }
+}
+
 export interface AppautoscalingPolicyStepScalingPolicyConfiguration {
   readonly adjustmentType?: string;
   readonly cooldown?: number;
@@ -42,10 +61,31 @@ export interface AppautoscalingPolicyStepScalingPolicyConfiguration {
   /** step_adjustment block */
   readonly stepAdjustment?: AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustment[];
 }
+
+function appautoscalingPolicyStepScalingPolicyConfigurationToTerraform(struct?: AppautoscalingPolicyStepScalingPolicyConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    adjustment_type: cdktf.stringToTerraform(struct!.adjustmentType),
+    cooldown: cdktf.numberToTerraform(struct!.cooldown),
+    metric_aggregation_type: cdktf.stringToTerraform(struct!.metricAggregationType),
+    min_adjustment_magnitude: cdktf.numberToTerraform(struct!.minAdjustmentMagnitude),
+    step_adjustment: cdktf.listMapper(appautoscalingPolicyStepScalingPolicyConfigurationStepAdjustmentToTerraform)(struct!.stepAdjustment),
+  }
+}
+
 export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions {
   readonly name: string;
   readonly value: string;
 }
+
+function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsToTerraform(struct?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification {
   readonly metricName: string;
   readonly namespace: string;
@@ -54,10 +94,31 @@ export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCus
   /** dimensions block */
   readonly dimensions?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensions[];
 }
+
+function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationToTerraform(struct?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    metric_name: cdktf.stringToTerraform(struct!.metricName),
+    namespace: cdktf.stringToTerraform(struct!.namespace),
+    statistic: cdktf.stringToTerraform(struct!.statistic),
+    unit: cdktf.stringToTerraform(struct!.unit),
+    dimensions: cdktf.listMapper(appautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsToTerraform)(struct!.dimensions),
+  }
+}
+
 export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification {
   readonly predefinedMetricType: string;
   readonly resourceLabel?: string;
 }
+
+function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationToTerraform(struct?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    predefined_metric_type: cdktf.stringToTerraform(struct!.predefinedMetricType),
+    resource_label: cdktf.stringToTerraform(struct!.resourceLabel),
+  }
+}
+
 export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration {
   readonly disableScaleIn?: boolean;
   readonly scaleInCooldown?: number;
@@ -69,9 +130,22 @@ export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration {
   readonly predefinedMetricSpecification?: AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification[];
 }
 
+function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationToTerraform(struct?: AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    disable_scale_in: cdktf.booleanToTerraform(struct!.disableScaleIn),
+    scale_in_cooldown: cdktf.numberToTerraform(struct!.scaleInCooldown),
+    scale_out_cooldown: cdktf.numberToTerraform(struct!.scaleOutCooldown),
+    target_value: cdktf.numberToTerraform(struct!.targetValue),
+    customized_metric_specification: cdktf.listMapper(appautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationToTerraform)(struct!.customizedMetricSpecification),
+    predefined_metric_specification: cdktf.listMapper(appautoscalingPolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationToTerraform)(struct!.predefinedMetricSpecification),
+  }
+}
+
+
 // Resource
 
-export class AppautoscalingPolicy extends TerraformResource {
+export class AppautoscalingPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -302,18 +376,18 @@ export class AppautoscalingPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      adjustment_type: this._adjustmentType,
-      cooldown: this._cooldown,
-      metric_aggregation_type: this._metricAggregationType,
-      min_adjustment_magnitude: this._minAdjustmentMagnitude,
-      name: this._name,
-      policy_type: this._policyType,
-      resource_id: this._resourceId,
-      scalable_dimension: this._scalableDimension,
-      service_namespace: this._serviceNamespace,
-      step_adjustment: this._stepAdjustment,
-      step_scaling_policy_configuration: this._stepScalingPolicyConfiguration,
-      target_tracking_scaling_policy_configuration: this._targetTrackingScalingPolicyConfiguration,
+      adjustment_type: cdktf.stringToTerraform(this._adjustmentType),
+      cooldown: cdktf.numberToTerraform(this._cooldown),
+      metric_aggregation_type: cdktf.stringToTerraform(this._metricAggregationType),
+      min_adjustment_magnitude: cdktf.numberToTerraform(this._minAdjustmentMagnitude),
+      name: cdktf.stringToTerraform(this._name),
+      policy_type: cdktf.stringToTerraform(this._policyType),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
+      scalable_dimension: cdktf.stringToTerraform(this._scalableDimension),
+      service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
+      step_adjustment: cdktf.listMapper(appautoscalingPolicyStepAdjustmentToTerraform)(this._stepAdjustment),
+      step_scaling_policy_configuration: cdktf.listMapper(appautoscalingPolicyStepScalingPolicyConfigurationToTerraform)(this._stepScalingPolicyConfiguration),
+      target_tracking_scaling_policy_configuration: cdktf.listMapper(appautoscalingPolicyTargetTrackingScalingPolicyConfigurationToTerraform)(this._targetTrackingScalingPolicyConfiguration),
     };
   }
 }

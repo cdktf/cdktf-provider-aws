@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DirectoryServiceLogSubscriptionConfig extends TerraformMetaArguments {
+export interface DirectoryServiceLogSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly directoryId: string;
   readonly logGroupName: string;
 }
 
 // Resource
 
-export class DirectoryServiceLogSubscription extends TerraformResource {
+export class DirectoryServiceLogSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class DirectoryServiceLogSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: this._directoryId,
-      log_group_name: this._logGroupName,
+      directory_id: cdktf.stringToTerraform(this._directoryId),
+      log_group_name: cdktf.stringToTerraform(this._logGroupName),
     };
   }
 }

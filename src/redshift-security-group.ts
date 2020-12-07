@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RedshiftSecurityGroupConfig extends TerraformMetaArguments {
+export interface RedshiftSecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   /** ingress block */
@@ -19,9 +18,19 @@ export interface RedshiftSecurityGroupIngress {
   readonly securityGroupOwnerId?: string;
 }
 
+function redshiftSecurityGroupIngressToTerraform(struct?: RedshiftSecurityGroupIngress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr: cdktf.stringToTerraform(struct!.cidr),
+    security_group_name: cdktf.stringToTerraform(struct!.securityGroupName),
+    security_group_owner_id: cdktf.stringToTerraform(struct!.securityGroupOwnerId),
+  }
+}
+
+
 // Resource
 
-export class RedshiftSecurityGroup extends TerraformResource {
+export class RedshiftSecurityGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -100,9 +109,9 @@ export class RedshiftSecurityGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      ingress: this._ingress,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      ingress: cdktf.listMapper(redshiftSecurityGroupIngressToTerraform)(this._ingress),
     };
   }
 }

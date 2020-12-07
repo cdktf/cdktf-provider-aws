@@ -2,18 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MediaPackageChannelConfig extends TerraformMetaArguments {
+export interface MediaPackageChannelConfig extends cdktf.TerraformMetaArguments {
   readonly channelId: string;
   readonly description?: string;
   readonly tags?: { [key: string]: string };
 }
-export class MediaPackageChannelHlsIngestIngestEndpoints extends ComplexComputedList {
+export class MediaPackageChannelHlsIngestIngestEndpoints extends cdktf.ComplexComputedList {
 
   // password - computed: true, optional: false, required: false
   public get password() {
@@ -30,7 +28,7 @@ export class MediaPackageChannelHlsIngestIngestEndpoints extends ComplexComputed
     return this.getStringAttribute('username');
   }
 }
-export class MediaPackageChannelHlsIngest extends ComplexComputedList {
+export class MediaPackageChannelHlsIngest extends cdktf.ComplexComputedList {
 
   // ingest_endpoints - computed: true, optional: false, required: false
   public get ingestEndpoints() {
@@ -40,7 +38,7 @@ export class MediaPackageChannelHlsIngest extends ComplexComputedList {
 
 // Resource
 
-export class MediaPackageChannel extends TerraformResource {
+export class MediaPackageChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -132,9 +130,9 @@ export class MediaPackageChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      channel_id: this._channelId,
-      description: this._description,
-      tags: this._tags,
+      channel_id: cdktf.stringToTerraform(this._channelId),
+      description: cdktf.stringToTerraform(this._description),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

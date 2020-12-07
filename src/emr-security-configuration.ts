@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EmrSecurityConfigurationConfig extends TerraformMetaArguments {
+export interface EmrSecurityConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly configuration: string;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -15,7 +14,7 @@ export interface EmrSecurityConfigurationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class EmrSecurityConfiguration extends TerraformResource {
+export class EmrSecurityConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +101,9 @@ export class EmrSecurityConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      configuration: this._configuration,
-      name: this._name,
-      name_prefix: this._namePrefix,
+      configuration: cdktf.stringToTerraform(this._configuration),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
     };
   }
 }

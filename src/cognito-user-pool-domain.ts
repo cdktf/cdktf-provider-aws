@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CognitoUserPoolDomainConfig extends TerraformMetaArguments {
+export interface CognitoUserPoolDomainConfig extends cdktf.TerraformMetaArguments {
   readonly certificateArn?: string;
   readonly domain: string;
   readonly userPoolId: string;
@@ -15,7 +14,7 @@ export interface CognitoUserPoolDomainConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CognitoUserPoolDomain extends TerraformResource {
+export class CognitoUserPoolDomain extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -114,9 +113,9 @@ export class CognitoUserPoolDomain extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: this._certificateArn,
-      domain: this._domain,
-      user_pool_id: this._userPoolId,
+      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
+      domain: cdktf.stringToTerraform(this._domain),
+      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
     };
   }
 }

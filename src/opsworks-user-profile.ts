@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksUserProfileConfig extends TerraformMetaArguments {
+export interface OpsworksUserProfileConfig extends cdktf.TerraformMetaArguments {
   readonly allowSelfManagement?: boolean;
   readonly sshPublicKey?: string;
   readonly sshUsername: string;
@@ -16,7 +15,7 @@ export interface OpsworksUserProfileConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class OpsworksUserProfile extends TerraformResource {
+export class OpsworksUserProfile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,10 +111,10 @@ export class OpsworksUserProfile extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_self_management: this._allowSelfManagement,
-      ssh_public_key: this._sshPublicKey,
-      ssh_username: this._sshUsername,
-      user_arn: this._userArn,
+      allow_self_management: cdktf.booleanToTerraform(this._allowSelfManagement),
+      ssh_public_key: cdktf.stringToTerraform(this._sshPublicKey),
+      ssh_username: cdktf.stringToTerraform(this._sshUsername),
+      user_arn: cdktf.stringToTerraform(this._userArn),
     };
   }
 }

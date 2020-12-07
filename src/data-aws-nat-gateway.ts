@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsNatGatewayConfig extends TerraformMetaArguments {
+export interface DataAwsNatGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly state?: string;
   readonly subnetId?: string;
   readonly tags?: { [key: string]: string };
@@ -20,9 +19,18 @@ export interface DataAwsNatGatewayFilter {
   readonly values: string[];
 }
 
+function dataAwsNatGatewayFilterToTerraform(struct?: DataAwsNatGatewayFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsNatGateway extends TerraformDataSource {
+export class DataAwsNatGateway extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -161,11 +169,11 @@ export class DataAwsNatGateway extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      state: this._state,
-      subnet_id: this._subnetId,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      filter: this._filter,
+      state: cdktf.stringToTerraform(this._state),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      filter: cdktf.listMapper(dataAwsNatGatewayFilterToTerraform)(this._filter),
     };
   }
 }

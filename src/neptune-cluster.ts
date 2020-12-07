@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NeptuneClusterConfig extends TerraformMetaArguments {
+export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly availabilityZones?: string[];
   readonly backupRetentionPeriod?: number;
@@ -41,9 +40,19 @@ export interface NeptuneClusterTimeouts {
   readonly update?: string;
 }
 
+function neptuneClusterTimeoutsToTerraform(struct?: NeptuneClusterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class NeptuneCluster extends TerraformResource {
+export class NeptuneCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -532,31 +541,31 @@ export class NeptuneCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      availability_zones: this._availabilityZones,
-      backup_retention_period: this._backupRetentionPeriod,
-      cluster_identifier: this._clusterIdentifier,
-      cluster_identifier_prefix: this._clusterIdentifierPrefix,
-      deletion_protection: this._deletionProtection,
-      enable_cloudwatch_logs_exports: this._enableCloudwatchLogsExports,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      final_snapshot_identifier: this._finalSnapshotIdentifier,
-      iam_database_authentication_enabled: this._iamDatabaseAuthenticationEnabled,
-      iam_roles: this._iamRoles,
-      kms_key_arn: this._kmsKeyArn,
-      neptune_cluster_parameter_group_name: this._neptuneClusterParameterGroupName,
-      neptune_subnet_group_name: this._neptuneSubnetGroupName,
-      port: this._port,
-      preferred_backup_window: this._preferredBackupWindow,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      replication_source_identifier: this._replicationSourceIdentifier,
-      skip_final_snapshot: this._skipFinalSnapshot,
-      snapshot_identifier: this._snapshotIdentifier,
-      storage_encrypted: this._storageEncrypted,
-      tags: this._tags,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      timeouts: this._timeouts,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      cluster_identifier_prefix: cdktf.stringToTerraform(this._clusterIdentifierPrefix),
+      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      enable_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enableCloudwatchLogsExports),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
+      iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
+      iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
+      neptune_cluster_parameter_group_name: cdktf.stringToTerraform(this._neptuneClusterParameterGroupName),
+      neptune_subnet_group_name: cdktf.stringToTerraform(this._neptuneSubnetGroupName),
+      port: cdktf.numberToTerraform(this._port),
+      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      replication_source_identifier: cdktf.stringToTerraform(this._replicationSourceIdentifier),
+      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
+      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
+      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      timeouts: neptuneClusterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

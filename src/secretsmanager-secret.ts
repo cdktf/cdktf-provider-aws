@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecretsmanagerSecretConfig extends TerraformMetaArguments {
+export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly kmsKeyId?: string;
   readonly name?: string;
@@ -23,9 +22,17 @@ export interface SecretsmanagerSecretRotationRules {
   readonly automaticallyAfterDays: number;
 }
 
+function secretsmanagerSecretRotationRulesToTerraform(struct?: SecretsmanagerSecretRotationRules): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    automatically_after_days: cdktf.numberToTerraform(struct!.automaticallyAfterDays),
+  }
+}
+
+
 // Resource
 
-export class SecretsmanagerSecret extends TerraformResource {
+export class SecretsmanagerSecret extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -222,15 +229,15 @@ export class SecretsmanagerSecret extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      kms_key_id: this._kmsKeyId,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      policy: this._policy,
-      recovery_window_in_days: this._recoveryWindowInDays,
-      rotation_lambda_arn: this._rotationLambdaArn,
-      tags: this._tags,
-      rotation_rules: this._rotationRules,
+      description: cdktf.stringToTerraform(this._description),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      policy: cdktf.stringToTerraform(this._policy),
+      recovery_window_in_days: cdktf.numberToTerraform(this._recoveryWindowInDays),
+      rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      rotation_rules: cdktf.listMapper(secretsmanagerSecretRotationRulesToTerraform)(this._rotationRules),
     };
   }
 }

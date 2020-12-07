@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppsyncFunctionConfig extends TerraformMetaArguments {
+export interface AppsyncFunctionConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly dataSource: string;
   readonly description?: string;
@@ -19,7 +18,7 @@ export interface AppsyncFunctionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AppsyncFunction extends TerraformResource {
+export class AppsyncFunction extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -167,13 +166,13 @@ export class AppsyncFunction extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      data_source: this._dataSource,
-      description: this._description,
-      function_version: this._functionVersion,
-      name: this._name,
-      request_mapping_template: this._requestMappingTemplate,
-      response_mapping_template: this._responseMappingTemplate,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      data_source: cdktf.stringToTerraform(this._dataSource),
+      description: cdktf.stringToTerraform(this._description),
+      function_version: cdktf.stringToTerraform(this._functionVersion),
+      name: cdktf.stringToTerraform(this._name),
+      request_mapping_template: cdktf.stringToTerraform(this._requestMappingTemplate),
+      response_mapping_template: cdktf.stringToTerraform(this._responseMappingTemplate),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyMemberConfig extends TerraformMetaArguments {
+export interface GuarddutyMemberConfig extends cdktf.TerraformMetaArguments {
   readonly accountId: string;
   readonly detectorId: string;
   readonly disableEmailNotification?: boolean;
@@ -22,9 +21,18 @@ export interface GuarddutyMemberTimeouts {
   readonly update?: string;
 }
 
+function guarddutyMemberTimeoutsToTerraform(struct?: GuarddutyMemberTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class GuarddutyMember extends TerraformResource {
+export class GuarddutyMember extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -173,13 +181,13 @@ export class GuarddutyMember extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      detector_id: this._detectorId,
-      disable_email_notification: this._disableEmailNotification,
-      email: this._email,
-      invitation_message: this._invitationMessage,
-      invite: this._invite,
-      timeouts: this._timeouts,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      detector_id: cdktf.stringToTerraform(this._detectorId),
+      disable_email_notification: cdktf.booleanToTerraform(this._disableEmailNotification),
+      email: cdktf.stringToTerraform(this._email),
+      invitation_message: cdktf.stringToTerraform(this._invitationMessage),
+      invite: cdktf.booleanToTerraform(this._invite),
+      timeouts: guarddutyMemberTimeoutsToTerraform(this._timeouts),
     };
   }
 }

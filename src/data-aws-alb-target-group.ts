@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAlbTargetGroupConfig extends TerraformMetaArguments {
+export interface DataAwsAlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsAlbTargetGroupHealthCheck extends ComplexComputedList {
+export class DataAwsAlbTargetGroupHealthCheck extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
@@ -59,7 +57,7 @@ export class DataAwsAlbTargetGroupHealthCheck extends ComplexComputedList {
     return this.getNumberAttribute('unhealthy_threshold');
   }
 }
-export class DataAwsAlbTargetGroupStickiness extends ComplexComputedList {
+export class DataAwsAlbTargetGroupStickiness extends cdktf.ComplexComputedList {
 
   // cookie_duration - computed: true, optional: false, required: false
   public get cookieDuration() {
@@ -79,7 +77,7 @@ export class DataAwsAlbTargetGroupStickiness extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsAlbTargetGroup extends TerraformDataSource {
+export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -212,8 +210,8 @@ export class DataAwsAlbTargetGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

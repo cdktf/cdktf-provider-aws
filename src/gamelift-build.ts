@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GameliftBuildConfig extends TerraformMetaArguments {
+export interface GameliftBuildConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly operatingSystem: string;
   readonly tags?: { [key: string]: string };
@@ -21,9 +20,19 @@ export interface GameliftBuildStorageLocation {
   readonly roleArn: string;
 }
 
+function gameliftBuildStorageLocationToTerraform(struct?: GameliftBuildStorageLocation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    key: cdktf.stringToTerraform(struct!.key),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
+
 // Resource
 
-export class GameliftBuild extends TerraformResource {
+export class GameliftBuild extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -138,11 +147,11 @@ export class GameliftBuild extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      operating_system: this._operatingSystem,
-      tags: this._tags,
-      version: this._version,
-      storage_location: this._storageLocation,
+      name: cdktf.stringToTerraform(this._name),
+      operating_system: cdktf.stringToTerraform(this._operatingSystem),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      version: cdktf.stringToTerraform(this._version),
+      storage_location: cdktf.listMapper(gameliftBuildStorageLocationToTerraform)(this._storageLocation),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCustomerGatewayConfig extends TerraformMetaArguments {
+export interface DataAwsCustomerGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsCustomerGatewayFilter {
   readonly values: string[];
 }
 
+function dataAwsCustomerGatewayFilterToTerraform(struct?: DataAwsCustomerGatewayFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsCustomerGateway extends TerraformDataSource {
+export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -120,9 +128,9 @@ export class DataAwsCustomerGateway extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: this._id,
-      tags: this._tags,
-      filter: this._filter,
+      id: cdktf.stringToTerraform(this._id),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsCustomerGatewayFilterToTerraform)(this._filter),
     };
   }
 }

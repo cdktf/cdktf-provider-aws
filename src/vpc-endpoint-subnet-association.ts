@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointSubnetAssociationConfig extends TerraformMetaArguments {
+export interface VpcEndpointSubnetAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly subnetId: string;
   readonly vpcEndpointId: string;
   /** timeouts block */
@@ -18,9 +17,18 @@ export interface VpcEndpointSubnetAssociationTimeouts {
   readonly delete?: string;
 }
 
+function vpcEndpointSubnetAssociationTimeoutsToTerraform(struct?: VpcEndpointSubnetAssociationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class VpcEndpointSubnetAssociation extends TerraformResource {
+export class VpcEndpointSubnetAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +107,9 @@ export class VpcEndpointSubnetAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      subnet_id: this._subnetId,
-      vpc_endpoint_id: this._vpcEndpointId,
-      timeouts: this._timeouts,
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      timeouts: vpcEndpointSubnetAssociationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

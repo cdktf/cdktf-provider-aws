@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueCatalogTableConfig extends TerraformMetaArguments {
+export interface GlueCatalogTableConfig extends cdktf.TerraformMetaArguments {
   readonly catalogId?: string;
   readonly databaseName: string;
   readonly description?: string;
@@ -28,25 +27,74 @@ export interface GlueCatalogTablePartitionKeys {
   readonly name: string;
   readonly type?: string;
 }
+
+function glueCatalogTablePartitionKeysToTerraform(struct?: GlueCatalogTablePartitionKeys): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    comment: cdktf.stringToTerraform(struct!.comment),
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface GlueCatalogTableStorageDescriptorColumns {
   readonly comment?: string;
   readonly name: string;
   readonly type?: string;
 }
+
+function glueCatalogTableStorageDescriptorColumnsToTerraform(struct?: GlueCatalogTableStorageDescriptorColumns): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    comment: cdktf.stringToTerraform(struct!.comment),
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface GlueCatalogTableStorageDescriptorSerDeInfo {
   readonly name?: string;
   readonly parameters?: { [key: string]: string };
   readonly serializationLibrary?: string;
 }
+
+function glueCatalogTableStorageDescriptorSerDeInfoToTerraform(struct?: GlueCatalogTableStorageDescriptorSerDeInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    parameters: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.parameters),
+    serialization_library: cdktf.stringToTerraform(struct!.serializationLibrary),
+  }
+}
+
 export interface GlueCatalogTableStorageDescriptorSkewedInfo {
   readonly skewedColumnNames?: string[];
   readonly skewedColumnValueLocationMaps?: { [key: string]: string };
   readonly skewedColumnValues?: string[];
 }
+
+function glueCatalogTableStorageDescriptorSkewedInfoToTerraform(struct?: GlueCatalogTableStorageDescriptorSkewedInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    skewed_column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.skewedColumnNames),
+    skewed_column_value_location_maps: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.skewedColumnValueLocationMaps),
+    skewed_column_values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.skewedColumnValues),
+  }
+}
+
 export interface GlueCatalogTableStorageDescriptorSortColumns {
   readonly column: string;
   readonly sortOrder: number;
 }
+
+function glueCatalogTableStorageDescriptorSortColumnsToTerraform(struct?: GlueCatalogTableStorageDescriptorSortColumns): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    column: cdktf.stringToTerraform(struct!.column),
+    sort_order: cdktf.numberToTerraform(struct!.sortOrder),
+  }
+}
+
 export interface GlueCatalogTableStorageDescriptor {
   readonly bucketColumns?: string[];
   readonly compressed?: boolean;
@@ -66,9 +114,28 @@ export interface GlueCatalogTableStorageDescriptor {
   readonly sortColumns?: GlueCatalogTableStorageDescriptorSortColumns[];
 }
 
+function glueCatalogTableStorageDescriptorToTerraform(struct?: GlueCatalogTableStorageDescriptor): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_columns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.bucketColumns),
+    compressed: cdktf.booleanToTerraform(struct!.compressed),
+    input_format: cdktf.stringToTerraform(struct!.inputFormat),
+    location: cdktf.stringToTerraform(struct!.location),
+    number_of_buckets: cdktf.numberToTerraform(struct!.numberOfBuckets),
+    output_format: cdktf.stringToTerraform(struct!.outputFormat),
+    parameters: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.parameters),
+    stored_as_sub_directories: cdktf.booleanToTerraform(struct!.storedAsSubDirectories),
+    columns: cdktf.listMapper(glueCatalogTableStorageDescriptorColumnsToTerraform)(struct!.columns),
+    ser_de_info: cdktf.listMapper(glueCatalogTableStorageDescriptorSerDeInfoToTerraform)(struct!.serDeInfo),
+    skewed_info: cdktf.listMapper(glueCatalogTableStorageDescriptorSkewedInfoToTerraform)(struct!.skewedInfo),
+    sort_columns: cdktf.listMapper(glueCatalogTableStorageDescriptorSortColumnsToTerraform)(struct!.sortColumns),
+  }
+}
+
+
 // Resource
 
-export class GlueCatalogTable extends TerraformResource {
+export class GlueCatalogTable extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -305,18 +372,18 @@ export class GlueCatalogTable extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: this._catalogId,
-      database_name: this._databaseName,
-      description: this._description,
-      name: this._name,
-      owner: this._owner,
-      parameters: this._parameters,
-      retention: this._retention,
-      table_type: this._tableType,
-      view_expanded_text: this._viewExpandedText,
-      view_original_text: this._viewOriginalText,
-      partition_keys: this._partitionKeys,
-      storage_descriptor: this._storageDescriptor,
+      catalog_id: cdktf.stringToTerraform(this._catalogId),
+      database_name: cdktf.stringToTerraform(this._databaseName),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      owner: cdktf.stringToTerraform(this._owner),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      retention: cdktf.numberToTerraform(this._retention),
+      table_type: cdktf.stringToTerraform(this._tableType),
+      view_expanded_text: cdktf.stringToTerraform(this._viewExpandedText),
+      view_original_text: cdktf.stringToTerraform(this._viewOriginalText),
+      partition_keys: cdktf.listMapper(glueCatalogTablePartitionKeysToTerraform)(this._partitionKeys),
+      storage_descriptor: cdktf.listMapper(glueCatalogTableStorageDescriptorToTerraform)(this._storageDescriptor),
     };
   }
 }

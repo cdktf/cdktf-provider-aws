@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcrImageConfig extends TerraformMetaArguments {
+export interface DataAwsEcrImageConfig extends cdktf.TerraformMetaArguments {
   readonly imageDigest?: string;
   readonly imageTag?: string;
   readonly registryId?: string;
@@ -16,7 +15,7 @@ export interface DataAwsEcrImageConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsEcrImage extends TerraformDataSource {
+export class DataAwsEcrImage extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -130,10 +129,10 @@ export class DataAwsEcrImage extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      image_digest: this._imageDigest,
-      image_tag: this._imageTag,
-      registry_id: this._registryId,
-      repository_name: this._repositoryName,
+      image_digest: cdktf.stringToTerraform(this._imageDigest),
+      image_tag: cdktf.stringToTerraform(this._imageTag),
+      registry_id: cdktf.stringToTerraform(this._registryId),
+      repository_name: cdktf.stringToTerraform(this._repositoryName),
     };
   }
 }

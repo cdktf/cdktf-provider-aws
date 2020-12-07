@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LbSslNegotiationPolicyConfig extends TerraformMetaArguments {
+export interface LbSslNegotiationPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly lbPort: number;
   readonly loadBalancer: string;
   readonly name: string;
@@ -19,9 +18,18 @@ export interface LbSslNegotiationPolicyAttribute {
   readonly value: string;
 }
 
+function lbSslNegotiationPolicyAttributeToTerraform(struct?: LbSslNegotiationPolicyAttribute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class LbSslNegotiationPolicy extends TerraformResource {
+export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -114,10 +122,10 @@ export class LbSslNegotiationPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      lb_port: this._lbPort,
-      load_balancer: this._loadBalancer,
-      name: this._name,
-      attribute: this._attribute,
+      lb_port: cdktf.numberToTerraform(this._lbPort),
+      load_balancer: cdktf.stringToTerraform(this._loadBalancer),
+      name: cdktf.stringToTerraform(this._name),
+      attribute: cdktf.listMapper(lbSslNegotiationPolicyAttributeToTerraform)(this._attribute),
     };
   }
 }

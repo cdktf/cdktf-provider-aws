@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmDocumentConfig extends TerraformMetaArguments {
+export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   readonly content: string;
   readonly documentFormat?: string;
   readonly documentType: string;
@@ -19,7 +17,7 @@ export interface SsmDocumentConfig extends TerraformMetaArguments {
   /** attachments_source block */
   readonly attachmentsSource?: SsmDocumentAttachmentsSource[];
 }
-export class SsmDocumentParameter extends ComplexComputedList {
+export class SsmDocumentParameter extends cdktf.ComplexComputedList {
 
   // default_value - computed: true, optional: false, required: false
   public get defaultValue() {
@@ -47,9 +45,19 @@ export interface SsmDocumentAttachmentsSource {
   readonly values: string[];
 }
 
+function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAttachmentsSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class SsmDocument extends TerraformResource {
+export class SsmDocument extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -275,14 +283,14 @@ export class SsmDocument extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content: this._content,
-      document_format: this._documentFormat,
-      document_type: this._documentType,
-      name: this._name,
-      permissions: this._permissions,
-      tags: this._tags,
-      target_type: this._targetType,
-      attachments_source: this._attachmentsSource,
+      content: cdktf.stringToTerraform(this._content),
+      document_format: cdktf.stringToTerraform(this._documentFormat),
+      document_type: cdktf.stringToTerraform(this._documentType),
+      name: cdktf.stringToTerraform(this._name),
+      permissions: cdktf.hashMapper(cdktf.anyToTerraform)(this._permissions),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_type: cdktf.stringToTerraform(this._targetType),
+      attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform)(this._attachmentsSource),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LbConfig extends TerraformMetaArguments {
+export interface LbConfig extends cdktf.TerraformMetaArguments {
   readonly dropInvalidHeaderFields?: boolean;
   readonly enableCrossZoneLoadBalancing?: boolean;
   readonly enableDeletionProtection?: boolean;
@@ -33,19 +32,48 @@ export interface LbAccessLogs {
   readonly enabled?: boolean;
   readonly prefix?: string;
 }
+
+function lbAccessLogsToTerraform(struct?: LbAccessLogs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+  }
+}
+
 export interface LbSubnetMapping {
   readonly allocationId?: string;
   readonly subnetId: string;
 }
+
+function lbSubnetMappingToTerraform(struct?: LbSubnetMapping): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allocation_id: cdktf.stringToTerraform(struct!.allocationId),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+  }
+}
+
 export interface LbTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function lbTimeoutsToTerraform(struct?: LbTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class Lb extends TerraformResource {
+export class Lb extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -376,22 +404,22 @@ export class Lb extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      drop_invalid_header_fields: this._dropInvalidHeaderFields,
-      enable_cross_zone_load_balancing: this._enableCrossZoneLoadBalancing,
-      enable_deletion_protection: this._enableDeletionProtection,
-      enable_http2: this._enableHttp2,
-      idle_timeout: this._idleTimeout,
-      internal: this._internal,
-      ip_address_type: this._ipAddressType,
-      load_balancer_type: this._loadBalancerType,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      security_groups: this._securityGroups,
-      subnets: this._subnets,
-      tags: this._tags,
-      access_logs: this._accessLogs,
-      subnet_mapping: this._subnetMapping,
-      timeouts: this._timeouts,
+      drop_invalid_header_fields: cdktf.booleanToTerraform(this._dropInvalidHeaderFields),
+      enable_cross_zone_load_balancing: cdktf.booleanToTerraform(this._enableCrossZoneLoadBalancing),
+      enable_deletion_protection: cdktf.booleanToTerraform(this._enableDeletionProtection),
+      enable_http2: cdktf.booleanToTerraform(this._enableHttp2),
+      idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
+      internal: cdktf.booleanToTerraform(this._internal),
+      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
+      load_balancer_type: cdktf.stringToTerraform(this._loadBalancerType),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      access_logs: cdktf.listMapper(lbAccessLogsToTerraform)(this._accessLogs),
+      subnet_mapping: cdktf.listMapper(lbSubnetMappingToTerraform)(this._subnetMapping),
+      timeouts: lbTimeoutsToTerraform(this._timeouts),
     };
   }
 }

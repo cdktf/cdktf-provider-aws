@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MqConfigurationConfig extends TerraformMetaArguments {
+export interface MqConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly data: string;
   readonly description?: string;
   readonly engineType: string;
@@ -18,7 +17,7 @@ export interface MqConfigurationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class MqConfiguration extends TerraformResource {
+export class MqConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -152,12 +151,12 @@ export class MqConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data: this._data,
-      description: this._description,
-      engine_type: this._engineType,
-      engine_version: this._engineVersion,
-      name: this._name,
-      tags: this._tags,
+      data: cdktf.stringToTerraform(this._data),
+      description: cdktf.stringToTerraform(this._description),
+      engine_type: cdktf.stringToTerraform(this._engineType),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

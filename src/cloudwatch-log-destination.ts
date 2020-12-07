@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogDestinationConfig extends TerraformMetaArguments {
+export interface CloudwatchLogDestinationConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly roleArn: string;
   readonly targetArn: string;
@@ -15,7 +14,7 @@ export interface CloudwatchLogDestinationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CloudwatchLogDestination extends TerraformResource {
+export class CloudwatchLogDestination extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -96,9 +95,9 @@ export class CloudwatchLogDestination extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      role_arn: this._roleArn,
-      target_arn: this._targetArn,
+      name: cdktf.stringToTerraform(this._name),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      target_arn: cdktf.stringToTerraform(this._targetArn),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DmsEndpointConfig extends TerraformMetaArguments {
+export interface DmsEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly certificateArn?: string;
   readonly databaseName?: string;
   readonly endpointId: string;
@@ -39,15 +38,45 @@ export interface DmsEndpointElasticsearchSettings {
   readonly fullLoadErrorPercentage?: number;
   readonly serviceAccessRoleArn: string;
 }
+
+function dmsEndpointElasticsearchSettingsToTerraform(struct?: DmsEndpointElasticsearchSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    endpoint_uri: cdktf.stringToTerraform(struct!.endpointUri),
+    error_retry_duration: cdktf.numberToTerraform(struct!.errorRetryDuration),
+    full_load_error_percentage: cdktf.numberToTerraform(struct!.fullLoadErrorPercentage),
+    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
+  }
+}
+
 export interface DmsEndpointKafkaSettings {
   readonly broker: string;
   readonly topic?: string;
 }
+
+function dmsEndpointKafkaSettingsToTerraform(struct?: DmsEndpointKafkaSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    broker: cdktf.stringToTerraform(struct!.broker),
+    topic: cdktf.stringToTerraform(struct!.topic),
+  }
+}
+
 export interface DmsEndpointKinesisSettings {
   readonly messageFormat?: string;
   readonly serviceAccessRoleArn?: string;
   readonly streamArn?: string;
 }
+
+function dmsEndpointKinesisSettingsToTerraform(struct?: DmsEndpointKinesisSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    message_format: cdktf.stringToTerraform(struct!.messageFormat),
+    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
+    stream_arn: cdktf.stringToTerraform(struct!.streamArn),
+  }
+}
+
 export interface DmsEndpointMongodbSettings {
   readonly authMechanism?: string;
   readonly authSource?: string;
@@ -56,6 +85,19 @@ export interface DmsEndpointMongodbSettings {
   readonly extractDocId?: string;
   readonly nestingLevel?: string;
 }
+
+function dmsEndpointMongodbSettingsToTerraform(struct?: DmsEndpointMongodbSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    auth_mechanism: cdktf.stringToTerraform(struct!.authMechanism),
+    auth_source: cdktf.stringToTerraform(struct!.authSource),
+    auth_type: cdktf.stringToTerraform(struct!.authType),
+    docs_to_investigate: cdktf.stringToTerraform(struct!.docsToInvestigate),
+    extract_doc_id: cdktf.stringToTerraform(struct!.extractDocId),
+    nesting_level: cdktf.stringToTerraform(struct!.nestingLevel),
+  }
+}
+
 export interface DmsEndpointS3Settings {
   readonly bucketFolder?: string;
   readonly bucketName?: string;
@@ -66,9 +108,23 @@ export interface DmsEndpointS3Settings {
   readonly serviceAccessRoleArn?: string;
 }
 
+function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3Settings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_folder: cdktf.stringToTerraform(struct!.bucketFolder),
+    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    compression_type: cdktf.stringToTerraform(struct!.compressionType),
+    csv_delimiter: cdktf.stringToTerraform(struct!.csvDelimiter),
+    csv_row_delimiter: cdktf.stringToTerraform(struct!.csvRowDelimiter),
+    external_table_definition: cdktf.stringToTerraform(struct!.externalTableDefinition),
+    service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
+  }
+}
+
+
 // Resource
 
-export class DmsEndpoint extends TerraformResource {
+export class DmsEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -421,25 +477,25 @@ export class DmsEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: this._certificateArn,
-      database_name: this._databaseName,
-      endpoint_id: this._endpointId,
-      endpoint_type: this._endpointType,
-      engine_name: this._engineName,
-      extra_connection_attributes: this._extraConnectionAttributes,
-      kms_key_arn: this._kmsKeyArn,
-      password: this._password,
-      port: this._port,
-      server_name: this._serverName,
-      service_access_role: this._serviceAccessRole,
-      ssl_mode: this._sslMode,
-      tags: this._tags,
-      username: this._username,
-      elasticsearch_settings: this._elasticsearchSettings,
-      kafka_settings: this._kafkaSettings,
-      kinesis_settings: this._kinesisSettings,
-      mongodb_settings: this._mongodbSettings,
-      s3_settings: this._s3Settings,
+      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
+      database_name: cdktf.stringToTerraform(this._databaseName),
+      endpoint_id: cdktf.stringToTerraform(this._endpointId),
+      endpoint_type: cdktf.stringToTerraform(this._endpointType),
+      engine_name: cdktf.stringToTerraform(this._engineName),
+      extra_connection_attributes: cdktf.stringToTerraform(this._extraConnectionAttributes),
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
+      password: cdktf.stringToTerraform(this._password),
+      port: cdktf.numberToTerraform(this._port),
+      server_name: cdktf.stringToTerraform(this._serverName),
+      service_access_role: cdktf.stringToTerraform(this._serviceAccessRole),
+      ssl_mode: cdktf.stringToTerraform(this._sslMode),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      username: cdktf.stringToTerraform(this._username),
+      elasticsearch_settings: cdktf.listMapper(dmsEndpointElasticsearchSettingsToTerraform)(this._elasticsearchSettings),
+      kafka_settings: cdktf.listMapper(dmsEndpointKafkaSettingsToTerraform)(this._kafkaSettings),
+      kinesis_settings: cdktf.listMapper(dmsEndpointKinesisSettingsToTerraform)(this._kinesisSettings),
+      mongodb_settings: cdktf.listMapper(dmsEndpointMongodbSettingsToTerraform)(this._mongodbSettings),
+      s3_settings: cdktf.listMapper(dmsEndpointS3SettingsToTerraform)(this._s3Settings),
     };
   }
 }

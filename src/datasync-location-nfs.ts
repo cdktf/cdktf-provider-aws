@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatasyncLocationNfsConfig extends TerraformMetaArguments {
+export interface DatasyncLocationNfsConfig extends cdktf.TerraformMetaArguments {
   readonly serverHostname: string;
   readonly subdirectory: string;
   readonly tags?: { [key: string]: string };
@@ -18,9 +17,17 @@ export interface DatasyncLocationNfsOnPremConfig {
   readonly agentArns: string[];
 }
 
+function datasyncLocationNfsOnPremConfigToTerraform(struct?: DatasyncLocationNfsOnPremConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    agent_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.agentArns),
+  }
+}
+
+
 // Resource
 
-export class DatasyncLocationNfs extends TerraformResource {
+export class DatasyncLocationNfs extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +130,10 @@ export class DatasyncLocationNfs extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      server_hostname: this._serverHostname,
-      subdirectory: this._subdirectory,
-      tags: this._tags,
-      on_prem_config: this._onPremConfig,
+      server_hostname: cdktf.stringToTerraform(this._serverHostname),
+      subdirectory: cdktf.stringToTerraform(this._subdirectory),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      on_prem_config: cdktf.listMapper(datasyncLocationNfsOnPremConfigToTerraform)(this._onPremConfig),
     };
   }
 }

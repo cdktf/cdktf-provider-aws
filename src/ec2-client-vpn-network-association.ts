@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2ClientVpnNetworkAssociationConfig extends TerraformMetaArguments {
+export interface Ec2ClientVpnNetworkAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly clientVpnEndpointId: string;
   readonly subnetId: string;
 }
 
 // Resource
 
-export class Ec2ClientVpnNetworkAssociation extends TerraformResource {
+export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,8 +90,8 @@ export class Ec2ClientVpnNetworkAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_vpn_endpoint_id: this._clientVpnEndpointId,
-      subnet_id: this._subnetId,
+      client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
     };
   }
 }

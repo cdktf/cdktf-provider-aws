@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LightsailKeyPairConfig extends TerraformMetaArguments {
+export interface LightsailKeyPairConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly pgpKey?: string;
@@ -16,7 +15,7 @@ export interface LightsailKeyPairConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class LightsailKeyPair extends TerraformResource {
+export class LightsailKeyPair extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -143,10 +142,10 @@ export class LightsailKeyPair extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      name_prefix: this._namePrefix,
-      pgp_key: this._pgpKey,
-      public_key: this._publicKey,
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      pgp_key: cdktf.stringToTerraform(this._pgpKey),
+      public_key: cdktf.stringToTerraform(this._publicKey),
     };
   }
 }

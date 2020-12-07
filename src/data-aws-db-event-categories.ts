@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDbEventCategoriesConfig extends TerraformMetaArguments {
+export interface DataAwsDbEventCategoriesConfig extends cdktf.TerraformMetaArguments {
   readonly sourceType?: string;
 }
 
 // Resource
 
-export class DataAwsDbEventCategories extends TerraformDataSource {
+export class DataAwsDbEventCategories extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -69,7 +68,7 @@ export class DataAwsDbEventCategories extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      source_type: this._sourceType,
+      source_type: cdktf.stringToTerraform(this._sourceType),
     };
   }
 }

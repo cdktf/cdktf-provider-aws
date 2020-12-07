@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppmeshMeshConfig extends TerraformMetaArguments {
+export interface AppmeshMeshConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** spec block */
@@ -16,14 +15,30 @@ export interface AppmeshMeshConfig extends TerraformMetaArguments {
 export interface AppmeshMeshSpecEgressFilter {
   readonly type?: string;
 }
+
+function appmeshMeshSpecEgressFilterToTerraform(struct?: AppmeshMeshSpecEgressFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface AppmeshMeshSpec {
   /** egress_filter block */
   readonly egressFilter?: AppmeshMeshSpecEgressFilter[];
 }
 
+function appmeshMeshSpecToTerraform(struct?: AppmeshMeshSpec): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    egress_filter: cdktf.listMapper(appmeshMeshSpecEgressFilterToTerraform)(struct!.egressFilter),
+  }
+}
+
+
 // Resource
 
-export class AppmeshMesh extends TerraformResource {
+export class AppmeshMesh extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -120,9 +135,9 @@ export class AppmeshMesh extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
-      spec: this._spec,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      spec: cdktf.listMapper(appmeshMeshSpecToTerraform)(this._spec),
     };
   }
 }

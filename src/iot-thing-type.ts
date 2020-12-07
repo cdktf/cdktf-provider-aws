@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IotThingTypeConfig extends TerraformMetaArguments {
+export interface IotThingTypeConfig extends cdktf.TerraformMetaArguments {
   readonly deprecated?: boolean;
   readonly name: string;
   /** properties block */
@@ -18,9 +17,18 @@ export interface IotThingTypeProperties {
   readonly searchableAttributes?: string[];
 }
 
+function iotThingTypePropertiesToTerraform(struct?: IotThingTypeProperties): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    searchable_attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.searchableAttributes),
+  }
+}
+
+
 // Resource
 
-export class IotThingType extends TerraformResource {
+export class IotThingType extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -107,9 +115,9 @@ export class IotThingType extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deprecated: this._deprecated,
-      name: this._name,
-      properties: this._properties,
+      deprecated: cdktf.booleanToTerraform(this._deprecated),
+      name: cdktf.stringToTerraform(this._name),
+      properties: cdktf.listMapper(iotThingTypePropertiesToTerraform)(this._properties),
     };
   }
 }

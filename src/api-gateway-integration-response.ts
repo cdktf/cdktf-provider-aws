@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayIntegrationResponseConfig extends TerraformMetaArguments {
+export interface ApiGatewayIntegrationResponseConfig extends cdktf.TerraformMetaArguments {
   readonly contentHandling?: string;
   readonly httpMethod: string;
   readonly resourceId: string;
@@ -21,7 +20,7 @@ export interface ApiGatewayIntegrationResponseConfig extends TerraformMetaArgume
 
 // Resource
 
-export class ApiGatewayIntegrationResponse extends TerraformResource {
+export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -196,15 +195,15 @@ export class ApiGatewayIntegrationResponse extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_handling: this._contentHandling,
-      http_method: this._httpMethod,
-      resource_id: this._resourceId,
-      response_parameters: this._responseParameters,
-      response_parameters_in_json: this._responseParametersInJson,
-      response_templates: this._responseTemplates,
-      rest_api_id: this._restApiId,
-      selection_pattern: this._selectionPattern,
-      status_code: this._statusCode,
+      content_handling: cdktf.stringToTerraform(this._contentHandling),
+      http_method: cdktf.stringToTerraform(this._httpMethod),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
+      response_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseParameters),
+      response_parameters_in_json: cdktf.stringToTerraform(this._responseParametersInJson),
+      response_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseTemplates),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      selection_pattern: cdktf.stringToTerraform(this._selectionPattern),
+      status_code: cdktf.stringToTerraform(this._statusCode),
     };
   }
 }

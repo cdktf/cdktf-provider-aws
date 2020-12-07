@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueCatalogDatabaseConfig extends TerraformMetaArguments {
+export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments {
   readonly catalogId?: string;
   readonly description?: string;
   readonly locationUri?: string;
@@ -17,7 +16,7 @@ export interface GlueCatalogDatabaseConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GlueCatalogDatabase extends TerraformResource {
+export class GlueCatalogDatabase extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -138,11 +137,11 @@ export class GlueCatalogDatabase extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: this._catalogId,
-      description: this._description,
-      location_uri: this._locationUri,
-      name: this._name,
-      parameters: this._parameters,
+      catalog_id: cdktf.stringToTerraform(this._catalogId),
+      description: cdktf.stringToTerraform(this._description),
+      location_uri: cdktf.stringToTerraform(this._locationUri),
+      name: cdktf.stringToTerraform(this._name),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
     };
   }
 }

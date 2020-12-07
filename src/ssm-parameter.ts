@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmParameterConfig extends TerraformMetaArguments {
+export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
   readonly allowedPattern?: string;
   readonly description?: string;
   readonly keyId?: string;
@@ -21,7 +20,7 @@ export interface SsmParameterConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SsmParameter extends TerraformResource {
+export class SsmParameter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -209,15 +208,15 @@ export class SsmParameter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_pattern: this._allowedPattern,
-      description: this._description,
-      key_id: this._keyId,
-      name: this._name,
-      overwrite: this._overwrite,
-      tags: this._tags,
-      tier: this._tier,
-      type: this._type,
-      value: this._value,
+      allowed_pattern: cdktf.stringToTerraform(this._allowedPattern),
+      description: cdktf.stringToTerraform(this._description),
+      key_id: cdktf.stringToTerraform(this._keyId),
+      name: cdktf.stringToTerraform(this._name),
+      overwrite: cdktf.booleanToTerraform(this._overwrite),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tier: cdktf.stringToTerraform(this._tier),
+      type: cdktf.stringToTerraform(this._type),
+      value: cdktf.stringToTerraform(this._value),
     };
   }
 }

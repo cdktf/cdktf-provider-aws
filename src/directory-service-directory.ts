@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DirectoryServiceDirectoryConfig extends TerraformMetaArguments {
+export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArguments {
   readonly alias?: string;
   readonly description?: string;
   readonly edition?: string;
@@ -29,14 +28,34 @@ export interface DirectoryServiceDirectoryConnectSettings {
   readonly subnetIds: string[];
   readonly vpcId: string;
 }
+
+function directoryServiceDirectoryConnectSettingsToTerraform(struct?: DirectoryServiceDirectoryConnectSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    customer_dns_ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.customerDnsIps),
+    customer_username: cdktf.stringToTerraform(struct!.customerUsername),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+  }
+}
+
 export interface DirectoryServiceDirectoryVpcSettings {
   readonly subnetIds: string[];
   readonly vpcId: string;
 }
 
+function directoryServiceDirectoryVpcSettingsToTerraform(struct?: DirectoryServiceDirectoryVpcSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+  }
+}
+
+
 // Resource
 
-export class DirectoryServiceDirectory extends TerraformResource {
+export class DirectoryServiceDirectory extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -283,18 +302,18 @@ export class DirectoryServiceDirectory extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: this._alias,
-      description: this._description,
-      edition: this._edition,
-      enable_sso: this._enableSso,
-      name: this._name,
-      password: this._password,
-      short_name: this._shortName,
-      size: this._size,
-      tags: this._tags,
-      type: this._type,
-      connect_settings: this._connectSettings,
-      vpc_settings: this._vpcSettings,
+      alias: cdktf.stringToTerraform(this._alias),
+      description: cdktf.stringToTerraform(this._description),
+      edition: cdktf.stringToTerraform(this._edition),
+      enable_sso: cdktf.booleanToTerraform(this._enableSso),
+      name: cdktf.stringToTerraform(this._name),
+      password: cdktf.stringToTerraform(this._password),
+      short_name: cdktf.stringToTerraform(this._shortName),
+      size: cdktf.stringToTerraform(this._size),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      type: cdktf.stringToTerraform(this._type),
+      connect_settings: cdktf.listMapper(directoryServiceDirectoryConnectSettingsToTerraform)(this._connectSettings),
+      vpc_settings: cdktf.listMapper(directoryServiceDirectoryVpcSettingsToTerraform)(this._vpcSettings),
     };
   }
 }

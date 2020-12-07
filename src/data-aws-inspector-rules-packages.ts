@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsInspectorRulesPackagesConfig extends TerraformMetaArguments {
+export interface DataAwsInspectorRulesPackagesConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsInspectorRulesPackages extends TerraformDataSource {
+export class DataAwsInspectorRulesPackages extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

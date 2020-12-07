@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53ZoneAssociationConfig extends TerraformMetaArguments {
+export interface Route53ZoneAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   readonly vpcRegion?: string;
   readonly zoneId: string;
@@ -15,7 +14,7 @@ export interface Route53ZoneAssociationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Route53ZoneAssociation extends TerraformResource {
+export class Route53ZoneAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -94,9 +93,9 @@ export class Route53ZoneAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      vpc_id: this._vpcId,
-      vpc_region: this._vpcRegion,
-      zone_id: this._zoneId,
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      vpc_region: cdktf.stringToTerraform(this._vpcRegion),
+      zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2ClientVpnEndpointConfig extends TerraformMetaArguments {
+export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly clientCidrBlock: string;
   readonly description?: string;
   readonly dnsServers?: string[];
@@ -25,15 +24,35 @@ export interface Ec2ClientVpnEndpointAuthenticationOptions {
   readonly rootCertificateChainArn?: string;
   readonly type: string;
 }
+
+function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    active_directory_id: cdktf.stringToTerraform(struct!.activeDirectoryId),
+    root_certificate_chain_arn: cdktf.stringToTerraform(struct!.rootCertificateChainArn),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface Ec2ClientVpnEndpointConnectionLogOptions {
   readonly cloudwatchLogGroup?: string;
   readonly cloudwatchLogStream?: string;
   readonly enabled: boolean;
 }
 
+function ec2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: Ec2ClientVpnEndpointConnectionLogOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cloudwatch_log_group: cdktf.stringToTerraform(struct!.cloudwatchLogGroup),
+    cloudwatch_log_stream: cdktf.stringToTerraform(struct!.cloudwatchLogStream),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+
 // Resource
 
-export class Ec2ClientVpnEndpoint extends TerraformResource {
+export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -223,15 +242,15 @@ export class Ec2ClientVpnEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_cidr_block: this._clientCidrBlock,
-      description: this._description,
-      dns_servers: this._dnsServers,
-      server_certificate_arn: this._serverCertificateArn,
-      split_tunnel: this._splitTunnel,
-      tags: this._tags,
-      transport_protocol: this._transportProtocol,
-      authentication_options: this._authenticationOptions,
-      connection_log_options: this._connectionLogOptions,
+      client_cidr_block: cdktf.stringToTerraform(this._clientCidrBlock),
+      description: cdktf.stringToTerraform(this._description),
+      dns_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsServers),
+      server_certificate_arn: cdktf.stringToTerraform(this._serverCertificateArn),
+      split_tunnel: cdktf.booleanToTerraform(this._splitTunnel),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transport_protocol: cdktf.stringToTerraform(this._transportProtocol),
+      authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform)(this._authenticationOptions),
+      connection_log_options: cdktf.listMapper(ec2ClientVpnEndpointConnectionLogOptionsToTerraform)(this._connectionLogOptions),
     };
   }
 }

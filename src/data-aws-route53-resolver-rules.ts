@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRoute53ResolverRulesConfig extends TerraformMetaArguments {
+export interface DataAwsRoute53ResolverRulesConfig extends cdktf.TerraformMetaArguments {
   readonly ownerId?: string;
   readonly resolverEndpointId?: string;
   readonly ruleType?: string;
@@ -16,7 +15,7 @@ export interface DataAwsRoute53ResolverRulesConfig extends TerraformMetaArgument
 
 // Resource
 
-export class DataAwsRoute53ResolverRules extends TerraformDataSource {
+export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +122,10 @@ export class DataAwsRoute53ResolverRules extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      owner_id: this._ownerId,
-      resolver_endpoint_id: this._resolverEndpointId,
-      rule_type: this._ruleType,
-      share_status: this._shareStatus,
+      owner_id: cdktf.stringToTerraform(this._ownerId),
+      resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
+      rule_type: cdktf.stringToTerraform(this._ruleType),
+      share_status: cdktf.stringToTerraform(this._shareStatus),
     };
   }
 }

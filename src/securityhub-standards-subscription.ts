@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecurityhubStandardsSubscriptionConfig extends TerraformMetaArguments {
+export interface SecurityhubStandardsSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly standardsArn: string;
 }
 
 // Resource
 
-export class SecurityhubStandardsSubscription extends TerraformResource {
+export class SecurityhubStandardsSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,7 +60,7 @@ export class SecurityhubStandardsSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      standards_arn: this._standardsArn,
+      standards_arn: cdktf.stringToTerraform(this._standardsArn),
     };
   }
 }

@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LightsailStaticIpConfig extends TerraformMetaArguments {
+export interface LightsailStaticIpConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class LightsailStaticIp extends TerraformResource {
+export class LightsailStaticIp extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,7 +75,7 @@ export class LightsailStaticIp extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

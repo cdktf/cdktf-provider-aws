@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RouteTableAssociationConfig extends TerraformMetaArguments {
+export interface RouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly gatewayId?: string;
   readonly routeTableId: string;
   readonly subnetId?: string;
@@ -15,7 +14,7 @@ export interface RouteTableAssociationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class RouteTableAssociation extends TerraformResource {
+export class RouteTableAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -97,9 +96,9 @@ export class RouteTableAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      gateway_id: this._gatewayId,
-      route_table_id: this._routeTableId,
-      subnet_id: this._subnetId,
+      gateway_id: cdktf.stringToTerraform(this._gatewayId),
+      route_table_id: cdktf.stringToTerraform(this._routeTableId),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LbTargetGroupAttachmentConfig extends TerraformMetaArguments {
+export interface LbTargetGroupAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly port?: number;
   readonly targetGroupArn: string;
@@ -16,7 +15,7 @@ export interface LbTargetGroupAttachmentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class LbTargetGroupAttachment extends TerraformResource {
+export class LbTargetGroupAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,10 +111,10 @@ export class LbTargetGroupAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      port: this._port,
-      target_group_arn: this._targetGroupArn,
-      target_id: this._targetId,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      port: cdktf.numberToTerraform(this._port),
+      target_group_arn: cdktf.stringToTerraform(this._targetGroupArn),
+      target_id: cdktf.stringToTerraform(this._targetId),
     };
   }
 }

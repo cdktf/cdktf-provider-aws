@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksRdsDbInstanceConfig extends TerraformMetaArguments {
+export interface OpsworksRdsDbInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly dbPassword: string;
   readonly dbUser: string;
   readonly rdsDbInstanceArn: string;
@@ -16,7 +15,7 @@ export interface OpsworksRdsDbInstanceConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class OpsworksRdsDbInstance extends TerraformResource {
+export class OpsworksRdsDbInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -106,10 +105,10 @@ export class OpsworksRdsDbInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_password: this._dbPassword,
-      db_user: this._dbUser,
-      rds_db_instance_arn: this._rdsDbInstanceArn,
-      stack_id: this._stackId,
+      db_password: cdktf.stringToTerraform(this._dbPassword),
+      db_user: cdktf.stringToTerraform(this._dbUser),
+      rds_db_instance_arn: cdktf.stringToTerraform(this._rdsDbInstanceArn),
+      stack_id: cdktf.stringToTerraform(this._stackId),
     };
   }
 }

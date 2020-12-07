@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafGeoMatchSetConfig extends TerraformMetaArguments {
+export interface WafGeoMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** geo_match_constraint block */
   readonly geoMatchConstraint?: WafGeoMatchSetGeoMatchConstraint[];
@@ -17,9 +16,18 @@ export interface WafGeoMatchSetGeoMatchConstraint {
   readonly value: string;
 }
 
+function wafGeoMatchSetGeoMatchConstraintToTerraform(struct?: WafGeoMatchSetGeoMatchConstraint): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class WafGeoMatchSet extends TerraformResource {
+export class WafGeoMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,8 +97,8 @@ export class WafGeoMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      geo_match_constraint: this._geoMatchConstraint,
+      name: cdktf.stringToTerraform(this._name),
+      geo_match_constraint: cdktf.listMapper(wafGeoMatchSetGeoMatchConstraintToTerraform)(this._geoMatchConstraint),
     };
   }
 }

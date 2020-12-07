@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AutoscalingLifecycleHookConfig extends TerraformMetaArguments {
+export interface AutoscalingLifecycleHookConfig extends cdktf.TerraformMetaArguments {
   readonly autoscalingGroupName: string;
   readonly defaultResult?: string;
   readonly heartbeatTimeout?: number;
@@ -20,7 +19,7 @@ export interface AutoscalingLifecycleHookConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AutoscalingLifecycleHook extends TerraformResource {
+export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -181,14 +180,14 @@ export class AutoscalingLifecycleHook extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autoscaling_group_name: this._autoscalingGroupName,
-      default_result: this._defaultResult,
-      heartbeat_timeout: this._heartbeatTimeout,
-      lifecycle_transition: this._lifecycleTransition,
-      name: this._name,
-      notification_metadata: this._notificationMetadata,
-      notification_target_arn: this._notificationTargetArn,
-      role_arn: this._roleArn,
+      autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
+      default_result: cdktf.stringToTerraform(this._defaultResult),
+      heartbeat_timeout: cdktf.numberToTerraform(this._heartbeatTimeout),
+      lifecycle_transition: cdktf.stringToTerraform(this._lifecycleTransition),
+      name: cdktf.stringToTerraform(this._name),
+      notification_metadata: cdktf.stringToTerraform(this._notificationMetadata),
+      notification_target_arn: cdktf.stringToTerraform(this._notificationTargetArn),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

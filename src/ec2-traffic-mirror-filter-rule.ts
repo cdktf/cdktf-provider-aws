@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TrafficMirrorFilterRuleConfig extends TerraformMetaArguments {
+export interface Ec2TrafficMirrorFilterRuleConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly destinationCidrBlock: string;
   readonly protocol?: number;
@@ -25,14 +24,32 @@ export interface Ec2TrafficMirrorFilterRuleDestinationPortRange {
   readonly fromPort?: number;
   readonly toPort?: number;
 }
+
+function ec2TrafficMirrorFilterRuleDestinationPortRangeToTerraform(struct?: Ec2TrafficMirrorFilterRuleDestinationPortRange): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface Ec2TrafficMirrorFilterRuleSourcePortRange {
   readonly fromPort?: number;
   readonly toPort?: number;
 }
 
+function ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform(struct?: Ec2TrafficMirrorFilterRuleSourcePortRange): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+
 // Resource
 
-export class Ec2TrafficMirrorFilterRule extends TerraformResource {
+export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -218,16 +235,16 @@ export class Ec2TrafficMirrorFilterRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      destination_cidr_block: this._destinationCidrBlock,
-      protocol: this._protocol,
-      rule_action: this._ruleAction,
-      rule_number: this._ruleNumber,
-      source_cidr_block: this._sourceCidrBlock,
-      traffic_direction: this._trafficDirection,
-      traffic_mirror_filter_id: this._trafficMirrorFilterId,
-      destination_port_range: this._destinationPortRange,
-      source_port_range: this._sourcePortRange,
+      description: cdktf.stringToTerraform(this._description),
+      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      protocol: cdktf.numberToTerraform(this._protocol),
+      rule_action: cdktf.stringToTerraform(this._ruleAction),
+      rule_number: cdktf.numberToTerraform(this._ruleNumber),
+      source_cidr_block: cdktf.stringToTerraform(this._sourceCidrBlock),
+      traffic_direction: cdktf.stringToTerraform(this._trafficDirection),
+      traffic_mirror_filter_id: cdktf.stringToTerraform(this._trafficMirrorFilterId),
+      destination_port_range: cdktf.listMapper(ec2TrafficMirrorFilterRuleDestinationPortRangeToTerraform)(this._destinationPortRange),
+      source_port_range: cdktf.listMapper(ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform)(this._sourcePortRange),
     };
   }
 }

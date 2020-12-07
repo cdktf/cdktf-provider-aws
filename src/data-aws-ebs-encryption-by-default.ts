@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsEncryptionByDefaultConfig extends TerraformMetaArguments {
+export interface DataAwsEbsEncryptionByDefaultConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsEbsEncryptionByDefault extends TerraformDataSource {
+export class DataAwsEbsEncryptionByDefault extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayRestApiConfig extends TerraformMetaArguments {
+export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   readonly apiKeySource?: string;
   readonly binaryMediaTypes?: string[];
   readonly body?: string;
@@ -24,9 +23,18 @@ export interface ApiGatewayRestApiEndpointConfiguration {
   readonly vpcEndpointIds?: string[];
 }
 
+function apiGatewayRestApiEndpointConfigurationToTerraform(struct?: ApiGatewayRestApiEndpointConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.types),
+    vpc_endpoint_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.vpcEndpointIds),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayRestApi extends TerraformResource {
+export class ApiGatewayRestApi extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -230,15 +238,15 @@ export class ApiGatewayRestApi extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key_source: this._apiKeySource,
-      binary_media_types: this._binaryMediaTypes,
-      body: this._body,
-      description: this._description,
-      minimum_compression_size: this._minimumCompressionSize,
-      name: this._name,
-      policy: this._policy,
-      tags: this._tags,
-      endpoint_configuration: this._endpointConfiguration,
+      api_key_source: cdktf.stringToTerraform(this._apiKeySource),
+      binary_media_types: cdktf.listMapper(cdktf.stringToTerraform)(this._binaryMediaTypes),
+      body: cdktf.stringToTerraform(this._body),
+      description: cdktf.stringToTerraform(this._description),
+      minimum_compression_size: cdktf.numberToTerraform(this._minimumCompressionSize),
+      name: cdktf.stringToTerraform(this._name),
+      policy: cdktf.stringToTerraform(this._policy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      endpoint_configuration: cdktf.listMapper(apiGatewayRestApiEndpointConfigurationToTerraform)(this._endpointConfiguration),
     };
   }
 }

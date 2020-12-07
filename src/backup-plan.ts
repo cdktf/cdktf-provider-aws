@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BackupPlanConfig extends TerraformMetaArguments {
+export interface BackupPlanConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** rule block */
@@ -17,15 +16,42 @@ export interface BackupPlanRuleCopyActionLifecycle {
   readonly coldStorageAfter?: number;
   readonly deleteAfter?: number;
 }
+
+function backupPlanRuleCopyActionLifecycleToTerraform(struct?: BackupPlanRuleCopyActionLifecycle): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cold_storage_after: cdktf.numberToTerraform(struct!.coldStorageAfter),
+    delete_after: cdktf.numberToTerraform(struct!.deleteAfter),
+  }
+}
+
 export interface BackupPlanRuleCopyAction {
   readonly destinationVaultArn: string;
   /** lifecycle block */
   readonly lifecycle?: BackupPlanRuleCopyActionLifecycle[];
 }
+
+function backupPlanRuleCopyActionToTerraform(struct?: BackupPlanRuleCopyAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    destination_vault_arn: cdktf.stringToTerraform(struct!.destinationVaultArn),
+    lifecycle: cdktf.listMapper(backupPlanRuleCopyActionLifecycleToTerraform)(struct!.lifecycle),
+  }
+}
+
 export interface BackupPlanRuleLifecycle {
   readonly coldStorageAfter?: number;
   readonly deleteAfter?: number;
 }
+
+function backupPlanRuleLifecycleToTerraform(struct?: BackupPlanRuleLifecycle): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cold_storage_after: cdktf.numberToTerraform(struct!.coldStorageAfter),
+    delete_after: cdktf.numberToTerraform(struct!.deleteAfter),
+  }
+}
+
 export interface BackupPlanRule {
   readonly completionWindow?: number;
   readonly recoveryPointTags?: { [key: string]: string };
@@ -39,9 +65,24 @@ export interface BackupPlanRule {
   readonly lifecycle?: BackupPlanRuleLifecycle[];
 }
 
+function backupPlanRuleToTerraform(struct?: BackupPlanRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    completion_window: cdktf.numberToTerraform(struct!.completionWindow),
+    recovery_point_tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.recoveryPointTags),
+    rule_name: cdktf.stringToTerraform(struct!.ruleName),
+    schedule: cdktf.stringToTerraform(struct!.schedule),
+    start_window: cdktf.numberToTerraform(struct!.startWindow),
+    target_vault_name: cdktf.stringToTerraform(struct!.targetVaultName),
+    copy_action: cdktf.listMapper(backupPlanRuleCopyActionToTerraform)(struct!.copyAction),
+    lifecycle: cdktf.listMapper(backupPlanRuleLifecycleToTerraform)(struct!.lifecycle),
+  }
+}
+
+
 // Resource
 
-export class BackupPlan extends TerraformResource {
+export class BackupPlan extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -130,9 +171,9 @@ export class BackupPlan extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
-      rule: this._rule,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      rule: cdktf.listMapper(backupPlanRuleToTerraform)(this._rule),
     };
   }
 }

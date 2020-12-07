@@ -2,19 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDynamodbTableConfig extends TerraformMetaArguments {
+export interface DataAwsDynamodbTableConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** server_side_encryption block */
   readonly serverSideEncryption?: DataAwsDynamodbTableServerSideEncryption[];
 }
-export class DataAwsDynamodbTableAttribute extends ComplexComputedList {
+export class DataAwsDynamodbTableAttribute extends cdktf.ComplexComputedList {
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -26,7 +24,7 @@ export class DataAwsDynamodbTableAttribute extends ComplexComputedList {
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsDynamodbTableGlobalSecondaryIndex extends ComplexComputedList {
+export class DataAwsDynamodbTableGlobalSecondaryIndex extends cdktf.ComplexComputedList {
 
   // hash_key - computed: true, optional: false, required: false
   public get hashKey() {
@@ -63,7 +61,7 @@ export class DataAwsDynamodbTableGlobalSecondaryIndex extends ComplexComputedLis
     return this.getNumberAttribute('write_capacity');
   }
 }
-export class DataAwsDynamodbTableLocalSecondaryIndex extends ComplexComputedList {
+export class DataAwsDynamodbTableLocalSecondaryIndex extends cdktf.ComplexComputedList {
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -85,21 +83,21 @@ export class DataAwsDynamodbTableLocalSecondaryIndex extends ComplexComputedList
     return this.getStringAttribute('range_key');
   }
 }
-export class DataAwsDynamodbTablePointInTimeRecovery extends ComplexComputedList {
+export class DataAwsDynamodbTablePointInTimeRecovery extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsDynamodbTableReplica extends ComplexComputedList {
+export class DataAwsDynamodbTableReplica extends cdktf.ComplexComputedList {
 
   // region_name - computed: true, optional: false, required: false
   public get regionName() {
     return this.getStringAttribute('region_name');
   }
 }
-export class DataAwsDynamodbTableTtl extends ComplexComputedList {
+export class DataAwsDynamodbTableTtl extends cdktf.ComplexComputedList {
 
   // attribute_name - computed: true, optional: false, required: false
   public get attributeName() {
@@ -114,9 +112,16 @@ export class DataAwsDynamodbTableTtl extends ComplexComputedList {
 export interface DataAwsDynamodbTableServerSideEncryption {
 }
 
+function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: DataAwsDynamodbTableServerSideEncryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+  }
+}
+
+
 // Resource
 
-export class DataAwsDynamodbTable extends TerraformDataSource {
+export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -278,9 +283,9 @@ export class DataAwsDynamodbTable extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
-      server_side_encryption: this._serverSideEncryption,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      server_side_encryption: cdktf.listMapper(dataAwsDynamodbTableServerSideEncryptionToTerraform)(this._serverSideEncryption),
     };
   }
 }

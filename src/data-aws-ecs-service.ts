@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcsServiceConfig extends TerraformMetaArguments {
+export interface DataAwsEcsServiceConfig extends cdktf.TerraformMetaArguments {
   readonly clusterArn: string;
   readonly serviceName: string;
 }
 
 // Resource
 
-export class DataAwsEcsService extends TerraformDataSource {
+export class DataAwsEcsService extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -101,8 +100,8 @@ export class DataAwsEcsService extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_arn: this._clusterArn,
-      service_name: this._serviceName,
+      cluster_arn: cdktf.stringToTerraform(this._clusterArn),
+      service_name: cdktf.stringToTerraform(this._serviceName),
     };
   }
 }

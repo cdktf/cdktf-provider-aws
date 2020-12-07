@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamServiceLinkedRoleConfig extends TerraformMetaArguments {
+export interface IamServiceLinkedRoleConfig extends cdktf.TerraformMetaArguments {
   readonly awsServiceName: string;
   readonly customSuffix?: string;
   readonly description?: string;
@@ -15,7 +14,7 @@ export interface IamServiceLinkedRoleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamServiceLinkedRole extends TerraformResource {
+export class IamServiceLinkedRole extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -122,9 +121,9 @@ export class IamServiceLinkedRole extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_service_name: this._awsServiceName,
-      custom_suffix: this._customSuffix,
-      description: this._description,
+      aws_service_name: cdktf.stringToTerraform(this._awsServiceName),
+      custom_suffix: cdktf.stringToTerraform(this._customSuffix),
+      description: cdktf.stringToTerraform(this._description),
     };
   }
 }

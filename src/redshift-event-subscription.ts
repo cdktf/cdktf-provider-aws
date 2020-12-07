@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RedshiftEventSubscriptionConfig extends TerraformMetaArguments {
+export interface RedshiftEventSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly enabled?: boolean;
   readonly eventCategories?: string[];
   readonly name: string;
@@ -25,9 +24,19 @@ export interface RedshiftEventSubscriptionTimeouts {
   readonly update?: string;
 }
 
+function redshiftEventSubscriptionTimeoutsToTerraform(struct?: RedshiftEventSubscriptionTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class RedshiftEventSubscription extends TerraformResource {
+export class RedshiftEventSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -223,15 +232,15 @@ export class RedshiftEventSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: this._enabled,
-      event_categories: this._eventCategories,
-      name: this._name,
-      severity: this._severity,
-      sns_topic_arn: this._snsTopicArn,
-      source_ids: this._sourceIds,
-      source_type: this._sourceType,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      event_categories: cdktf.listMapper(cdktf.stringToTerraform)(this._eventCategories),
+      name: cdktf.stringToTerraform(this._name),
+      severity: cdktf.stringToTerraform(this._severity),
+      sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
+      source_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._sourceIds),
+      source_type: cdktf.stringToTerraform(this._sourceType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: redshiftEventSubscriptionTimeoutsToTerraform(this._timeouts),
     };
   }
 }

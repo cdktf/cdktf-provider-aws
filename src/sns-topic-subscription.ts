@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SnsTopicSubscriptionConfig extends TerraformMetaArguments {
+export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly confirmationTimeoutInMinutes?: number;
   readonly deliveryPolicy?: string;
   readonly endpoint: string;
@@ -20,7 +19,7 @@ export interface SnsTopicSubscriptionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SnsTopicSubscription extends TerraformResource {
+export class SnsTopicSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -186,14 +185,14 @@ export class SnsTopicSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      confirmation_timeout_in_minutes: this._confirmationTimeoutInMinutes,
-      delivery_policy: this._deliveryPolicy,
-      endpoint: this._endpoint,
-      endpoint_auto_confirms: this._endpointAutoConfirms,
-      filter_policy: this._filterPolicy,
-      protocol: this._protocol,
-      raw_message_delivery: this._rawMessageDelivery,
-      topic_arn: this._topicArn,
+      confirmation_timeout_in_minutes: cdktf.numberToTerraform(this._confirmationTimeoutInMinutes),
+      delivery_policy: cdktf.stringToTerraform(this._deliveryPolicy),
+      endpoint: cdktf.stringToTerraform(this._endpoint),
+      endpoint_auto_confirms: cdktf.booleanToTerraform(this._endpointAutoConfirms),
+      filter_policy: cdktf.stringToTerraform(this._filterPolicy),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      raw_message_delivery: cdktf.booleanToTerraform(this._rawMessageDelivery),
+      topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }
 }

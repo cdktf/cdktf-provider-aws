@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpnGatewayConfig extends TerraformMetaArguments {
+export interface DataAwsVpnGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly amazonSideAsn?: string;
   readonly attachedVpcId?: string;
   readonly availabilityZone?: string;
@@ -21,9 +20,18 @@ export interface DataAwsVpnGatewayFilter {
   readonly values: string[];
 }
 
+function dataAwsVpnGatewayFilterToTerraform(struct?: DataAwsVpnGatewayFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsVpnGateway extends TerraformDataSource {
+export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -164,12 +172,12 @@ export class DataAwsVpnGateway extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amazon_side_asn: this._amazonSideAsn,
-      attached_vpc_id: this._attachedVpcId,
-      availability_zone: this._availabilityZone,
-      state: this._state,
-      tags: this._tags,
-      filter: this._filter,
+      amazon_side_asn: cdktf.stringToTerraform(this._amazonSideAsn),
+      attached_vpc_id: cdktf.stringToTerraform(this._attachedVpcId),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsVpnGatewayFilterToTerraform)(this._filter),
     };
   }
 }

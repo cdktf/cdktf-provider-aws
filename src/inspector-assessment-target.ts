@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface InspectorAssessmentTargetConfig extends TerraformMetaArguments {
+export interface InspectorAssessmentTargetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly resourceGroupArn?: string;
 }
 
 // Resource
 
-export class InspectorAssessmentTarget extends TerraformResource {
+export class InspectorAssessmentTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -84,8 +83,8 @@ export class InspectorAssessmentTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      resource_group_arn: this._resourceGroupArn,
+      name: cdktf.stringToTerraform(this._name),
+      resource_group_arn: cdktf.stringToTerraform(this._resourceGroupArn),
     };
   }
 }

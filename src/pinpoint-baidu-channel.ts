@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointBaiduChannelConfig extends TerraformMetaArguments {
+export interface PinpointBaiduChannelConfig extends cdktf.TerraformMetaArguments {
   readonly apiKey: string;
   readonly applicationId: string;
   readonly enabled?: boolean;
@@ -16,7 +15,7 @@ export interface PinpointBaiduChannelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PinpointBaiduChannel extends TerraformResource {
+export class PinpointBaiduChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -109,10 +108,10 @@ export class PinpointBaiduChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: this._apiKey,
-      application_id: this._applicationId,
-      enabled: this._enabled,
-      secret_key: this._secretKey,
+      api_key: cdktf.stringToTerraform(this._apiKey),
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      secret_key: cdktf.stringToTerraform(this._secretKey),
     };
   }
 }

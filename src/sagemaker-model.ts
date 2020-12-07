@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SagemakerModelConfig extends TerraformMetaArguments {
+export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   readonly enableNetworkIsolation?: boolean;
   readonly executionRoleArn: string;
   readonly name?: string;
@@ -25,20 +24,51 @@ export interface SagemakerModelContainer {
   readonly image: string;
   readonly modelDataUrl?: string;
 }
+
+function sagemakerModelContainerToTerraform(struct?: SagemakerModelContainer): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    container_hostname: cdktf.stringToTerraform(struct!.containerHostname),
+    environment: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.environment),
+    image: cdktf.stringToTerraform(struct!.image),
+    model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
+  }
+}
+
 export interface SagemakerModelPrimaryContainer {
   readonly containerHostname?: string;
   readonly environment?: { [key: string]: string };
   readonly image: string;
   readonly modelDataUrl?: string;
 }
+
+function sagemakerModelPrimaryContainerToTerraform(struct?: SagemakerModelPrimaryContainer): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    container_hostname: cdktf.stringToTerraform(struct!.containerHostname),
+    environment: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.environment),
+    image: cdktf.stringToTerraform(struct!.image),
+    model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
+  }
+}
+
 export interface SagemakerModelVpcConfig {
   readonly securityGroupIds: string[];
   readonly subnets: string[];
 }
 
+function sagemakerModelVpcConfigToTerraform(struct?: SagemakerModelVpcConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+  }
+}
+
+
 // Resource
 
-export class SagemakerModel extends TerraformResource {
+export class SagemakerModel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -193,13 +223,13 @@ export class SagemakerModel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable_network_isolation: this._enableNetworkIsolation,
-      execution_role_arn: this._executionRoleArn,
-      name: this._name,
-      tags: this._tags,
-      container: this._container,
-      primary_container: this._primaryContainer,
-      vpc_config: this._vpcConfig,
+      enable_network_isolation: cdktf.booleanToTerraform(this._enableNetworkIsolation),
+      execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      container: cdktf.listMapper(sagemakerModelContainerToTerraform)(this._container),
+      primary_container: cdktf.listMapper(sagemakerModelPrimaryContainerToTerraform)(this._primaryContainer),
+      vpc_config: cdktf.listMapper(sagemakerModelVpcConfigToTerraform)(this._vpcConfig),
     };
   }
 }

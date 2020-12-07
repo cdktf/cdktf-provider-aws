@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SqsQueueConfig extends TerraformMetaArguments {
+export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   readonly contentBasedDeduplication?: boolean;
   readonly delaySeconds?: number;
   readonly fifoQueue?: boolean;
@@ -26,7 +25,7 @@ export interface SqsQueueConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SqsQueue extends TerraformResource {
+export class SqsQueue extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -303,20 +302,20 @@ export class SqsQueue extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_based_deduplication: this._contentBasedDeduplication,
-      delay_seconds: this._delaySeconds,
-      fifo_queue: this._fifoQueue,
-      kms_data_key_reuse_period_seconds: this._kmsDataKeyReusePeriodSeconds,
-      kms_master_key_id: this._kmsMasterKeyId,
-      max_message_size: this._maxMessageSize,
-      message_retention_seconds: this._messageRetentionSeconds,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      policy: this._policy,
-      receive_wait_time_seconds: this._receiveWaitTimeSeconds,
-      redrive_policy: this._redrivePolicy,
-      tags: this._tags,
-      visibility_timeout_seconds: this._visibilityTimeoutSeconds,
+      content_based_deduplication: cdktf.booleanToTerraform(this._contentBasedDeduplication),
+      delay_seconds: cdktf.numberToTerraform(this._delaySeconds),
+      fifo_queue: cdktf.booleanToTerraform(this._fifoQueue),
+      kms_data_key_reuse_period_seconds: cdktf.numberToTerraform(this._kmsDataKeyReusePeriodSeconds),
+      kms_master_key_id: cdktf.stringToTerraform(this._kmsMasterKeyId),
+      max_message_size: cdktf.numberToTerraform(this._maxMessageSize),
+      message_retention_seconds: cdktf.numberToTerraform(this._messageRetentionSeconds),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      policy: cdktf.stringToTerraform(this._policy),
+      receive_wait_time_seconds: cdktf.numberToTerraform(this._receiveWaitTimeSeconds),
+      redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      visibility_timeout_seconds: cdktf.numberToTerraform(this._visibilityTimeoutSeconds),
     };
   }
 }

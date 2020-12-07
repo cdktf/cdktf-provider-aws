@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2IntegrationResponseConfig extends TerraformMetaArguments {
+export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly contentHandlingStrategy?: string;
   readonly integrationId: string;
@@ -18,7 +17,7 @@ export interface Apigatewayv2IntegrationResponseConfig extends TerraformMetaArgu
 
 // Resource
 
-export class Apigatewayv2IntegrationResponse extends TerraformResource {
+export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -145,12 +144,12 @@ export class Apigatewayv2IntegrationResponse extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      content_handling_strategy: this._contentHandlingStrategy,
-      integration_id: this._integrationId,
-      integration_response_key: this._integrationResponseKey,
-      response_templates: this._responseTemplates,
-      template_selection_expression: this._templateSelectionExpression,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
+      integration_id: cdktf.stringToTerraform(this._integrationId),
+      integration_response_key: cdktf.stringToTerraform(this._integrationResponseKey),
+      response_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseTemplates),
+      template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
     };
   }
 }

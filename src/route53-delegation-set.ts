@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53DelegationSetConfig extends TerraformMetaArguments {
+export interface Route53DelegationSetConfig extends cdktf.TerraformMetaArguments {
   readonly referenceName?: string;
 }
 
 // Resource
 
-export class Route53DelegationSet extends TerraformResource {
+export class Route53DelegationSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -69,7 +68,7 @@ export class Route53DelegationSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      reference_name: this._referenceName,
+      reference_name: cdktf.stringToTerraform(this._referenceName),
     };
   }
 }

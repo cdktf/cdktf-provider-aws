@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KinesisVideoStreamConfig extends TerraformMetaArguments {
+export interface KinesisVideoStreamConfig extends cdktf.TerraformMetaArguments {
   readonly dataRetentionInHours?: number;
   readonly deviceName?: string;
   readonly kmsKeyId?: string;
@@ -23,9 +22,19 @@ export interface KinesisVideoStreamTimeouts {
   readonly update?: string;
 }
 
+function kinesisVideoStreamTimeoutsToTerraform(struct?: KinesisVideoStreamTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class KinesisVideoStream extends TerraformResource {
+export class KinesisVideoStream extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -190,13 +199,13 @@ export class KinesisVideoStream extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_retention_in_hours: this._dataRetentionInHours,
-      device_name: this._deviceName,
-      kms_key_id: this._kmsKeyId,
-      media_type: this._mediaType,
-      name: this._name,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      data_retention_in_hours: cdktf.numberToTerraform(this._dataRetentionInHours),
+      device_name: cdktf.stringToTerraform(this._deviceName),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      media_type: cdktf.stringToTerraform(this._mediaType),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: kinesisVideoStreamTimeoutsToTerraform(this._timeouts),
     };
   }
 }

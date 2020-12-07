@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEksClusterAuthConfig extends TerraformMetaArguments {
+export interface DataAwsEksClusterAuthConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsEksClusterAuth extends TerraformDataSource {
+export class DataAwsEksClusterAuth extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -66,7 +65,7 @@ export class DataAwsEksClusterAuth extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

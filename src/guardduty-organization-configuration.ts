@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyOrganizationConfigurationConfig extends TerraformMetaArguments {
+export interface GuarddutyOrganizationConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly autoEnable: boolean;
   readonly detectorId: string;
 }
 
 // Resource
 
-export class GuarddutyOrganizationConfiguration extends TerraformResource {
+export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class GuarddutyOrganizationConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_enable: this._autoEnable,
-      detector_id: this._detectorId,
+      auto_enable: cdktf.booleanToTerraform(this._autoEnable),
+      detector_id: cdktf.stringToTerraform(this._detectorId),
     };
   }
 }

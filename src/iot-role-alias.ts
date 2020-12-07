@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IotRoleAliasConfig extends TerraformMetaArguments {
+export interface IotRoleAliasConfig extends cdktf.TerraformMetaArguments {
   readonly alias: string;
   readonly credentialDuration?: number;
   readonly roleArn: string;
@@ -15,7 +14,7 @@ export interface IotRoleAliasConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IotRoleAlias extends TerraformResource {
+export class IotRoleAlias extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +98,9 @@ export class IotRoleAlias extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: this._alias,
-      credential_duration: this._credentialDuration,
-      role_arn: this._roleArn,
+      alias: cdktf.stringToTerraform(this._alias),
+      credential_duration: cdktf.numberToTerraform(this._credentialDuration),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

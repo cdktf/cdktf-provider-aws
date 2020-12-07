@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TagConfig extends TerraformMetaArguments {
+export interface Ec2TagConfig extends cdktf.TerraformMetaArguments {
   readonly key: string;
   readonly resourceId: string;
   readonly value: string;
@@ -15,7 +14,7 @@ export interface Ec2TagConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2Tag extends TerraformResource {
+export class Ec2Tag extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,9 +90,9 @@ export class Ec2Tag extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      key: this._key,
-      resource_id: this._resourceId,
-      value: this._value,
+      key: cdktf.stringToTerraform(this._key),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
+      value: cdktf.stringToTerraform(this._value),
     };
   }
 }

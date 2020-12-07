@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3BucketPolicyConfig extends TerraformMetaArguments {
+export interface S3BucketPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class S3BucketPolicy extends TerraformResource {
+export class S3BucketPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class S3BucketPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      policy: this._policy,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

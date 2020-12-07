@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSecurityGroupConfig extends TerraformMetaArguments {
+export interface DataAwsSecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly tags?: { [key: string]: string };
   readonly vpcId?: string;
@@ -19,9 +18,18 @@ export interface DataAwsSecurityGroupFilter {
   readonly values: string[];
 }
 
+function dataAwsSecurityGroupFilterToTerraform(struct?: DataAwsSecurityGroupFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsSecurityGroup extends TerraformDataSource {
+export class DataAwsSecurityGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -133,10 +141,10 @@ export class DataAwsSecurityGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      filter: this._filter,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      filter: cdktf.listMapper(dataAwsSecurityGroupFilterToTerraform)(this._filter),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MacieS3BucketAssociationConfig extends TerraformMetaArguments {
+export interface MacieS3BucketAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly bucketName: string;
   readonly memberAccountId?: string;
   readonly prefix?: string;
@@ -19,9 +18,18 @@ export interface MacieS3BucketAssociationClassificationType {
   readonly oneTime?: string;
 }
 
+function macieS3BucketAssociationClassificationTypeToTerraform(struct?: MacieS3BucketAssociationClassificationType): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    continuous: cdktf.stringToTerraform(struct!.continuous),
+    one_time: cdktf.stringToTerraform(struct!.oneTime),
+  }
+}
+
+
 // Resource
 
-export class MacieS3BucketAssociation extends TerraformResource {
+export class MacieS3BucketAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -120,10 +128,10 @@ export class MacieS3BucketAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_name: this._bucketName,
-      member_account_id: this._memberAccountId,
-      prefix: this._prefix,
-      classification_type: this._classificationType,
+      bucket_name: cdktf.stringToTerraform(this._bucketName),
+      member_account_id: cdktf.stringToTerraform(this._memberAccountId),
+      prefix: cdktf.stringToTerraform(this._prefix),
+      classification_type: cdktf.listMapper(macieS3BucketAssociationClassificationTypeToTerraform)(this._classificationType),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AmiCopyConfig extends TerraformMetaArguments {
+export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly encrypted?: boolean;
   readonly kmsKeyId?: string;
@@ -24,17 +23,41 @@ export interface AmiCopyConfig extends TerraformMetaArguments {
 }
 export interface AmiCopyEbsBlockDevice {
 }
+
+function amiCopyEbsBlockDeviceToTerraform(struct?: AmiCopyEbsBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+  }
+}
+
 export interface AmiCopyEphemeralBlockDevice {
 }
+
+function amiCopyEphemeralBlockDeviceToTerraform(struct?: AmiCopyEphemeralBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+  }
+}
+
 export interface AmiCopyTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function amiCopyTimeoutsToTerraform(struct?: AmiCopyTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class AmiCopy extends TerraformResource {
+export class AmiCopy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -284,16 +307,16 @@ export class AmiCopy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      encrypted: this._encrypted,
-      kms_key_id: this._kmsKeyId,
-      name: this._name,
-      source_ami_id: this._sourceAmiId,
-      source_ami_region: this._sourceAmiRegion,
-      tags: this._tags,
-      ebs_block_device: this._ebsBlockDevice,
-      ephemeral_block_device: this._ephemeralBlockDevice,
-      timeouts: this._timeouts,
+      description: cdktf.stringToTerraform(this._description),
+      encrypted: cdktf.booleanToTerraform(this._encrypted),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      name: cdktf.stringToTerraform(this._name),
+      source_ami_id: cdktf.stringToTerraform(this._sourceAmiId),
+      source_ami_region: cdktf.stringToTerraform(this._sourceAmiRegion),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      ebs_block_device: cdktf.listMapper(amiCopyEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
+      ephemeral_block_device: cdktf.listMapper(amiCopyEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      timeouts: amiCopyTimeoutsToTerraform(this._timeouts),
     };
   }
 }

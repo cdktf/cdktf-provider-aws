@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SagemakerNotebookInstanceConfig extends TerraformMetaArguments {
+export interface SagemakerNotebookInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly directInternetAccess?: string;
   readonly instanceType: string;
   readonly kmsKeyId?: string;
@@ -21,7 +20,7 @@ export interface SagemakerNotebookInstanceConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class SagemakerNotebookInstance extends TerraformResource {
+export class SagemakerNotebookInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -204,15 +203,15 @@ export class SagemakerNotebookInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      direct_internet_access: this._directInternetAccess,
-      instance_type: this._instanceType,
-      kms_key_id: this._kmsKeyId,
-      lifecycle_config_name: this._lifecycleConfigName,
-      name: this._name,
-      role_arn: this._roleArn,
-      security_groups: this._securityGroups,
-      subnet_id: this._subnetId,
-      tags: this._tags,
+      direct_internet_access: cdktf.stringToTerraform(this._directInternetAccess),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      lifecycle_config_name: cdktf.stringToTerraform(this._lifecycleConfigName),
+      name: cdktf.stringToTerraform(this._name),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

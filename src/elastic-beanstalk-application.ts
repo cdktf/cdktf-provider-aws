@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticBeanstalkApplicationConfig extends TerraformMetaArguments {
+export interface ElasticBeanstalkApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -21,9 +20,20 @@ export interface ElasticBeanstalkApplicationAppversionLifecycle {
   readonly serviceRole: string;
 }
 
+function elasticBeanstalkApplicationAppversionLifecycleToTerraform(struct?: ElasticBeanstalkApplicationAppversionLifecycle): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_source_from_s3: cdktf.booleanToTerraform(struct!.deleteSourceFromS3),
+    max_age_in_days: cdktf.numberToTerraform(struct!.maxAgeInDays),
+    max_count: cdktf.numberToTerraform(struct!.maxCount),
+    service_role: cdktf.stringToTerraform(struct!.serviceRole),
+  }
+}
+
+
 // Resource
 
-export class ElasticBeanstalkApplication extends TerraformResource {
+export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -127,10 +137,10 @@ export class ElasticBeanstalkApplication extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      tags: this._tags,
-      appversion_lifecycle: this._appversionLifecycle,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      appversion_lifecycle: cdktf.listMapper(elasticBeanstalkApplicationAppversionLifecycleToTerraform)(this._appversionLifecycle),
     };
   }
 }

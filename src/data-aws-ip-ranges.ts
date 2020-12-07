@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIpRangesConfig extends TerraformMetaArguments {
+export interface DataAwsIpRangesConfig extends cdktf.TerraformMetaArguments {
   readonly regions?: string[];
   readonly services: string[];
   readonly url?: string;
@@ -15,7 +14,7 @@ export interface DataAwsIpRangesConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsIpRanges extends TerraformDataSource {
+export class DataAwsIpRanges extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -117,9 +116,9 @@ export class DataAwsIpRanges extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      regions: this._regions,
-      services: this._services,
-      url: this._url,
+      regions: cdktf.listMapper(cdktf.stringToTerraform)(this._regions),
+      services: cdktf.listMapper(cdktf.stringToTerraform)(this._services),
+      url: cdktf.stringToTerraform(this._url),
     };
   }
 }

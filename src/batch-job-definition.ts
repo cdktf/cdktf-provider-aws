@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BatchJobDefinitionConfig extends TerraformMetaArguments {
+export interface BatchJobDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly containerProperties?: string;
   readonly name: string;
   readonly parameters?: { [key: string]: string };
@@ -20,13 +19,29 @@ export interface BatchJobDefinitionConfig extends TerraformMetaArguments {
 export interface BatchJobDefinitionRetryStrategy {
   readonly attempts?: number;
 }
+
+function batchJobDefinitionRetryStrategyToTerraform(struct?: BatchJobDefinitionRetryStrategy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    attempts: cdktf.numberToTerraform(struct!.attempts),
+  }
+}
+
 export interface BatchJobDefinitionTimeout {
   readonly attemptDurationSeconds?: number;
 }
 
+function batchJobDefinitionTimeoutToTerraform(struct?: BatchJobDefinitionTimeout): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    attempt_duration_seconds: cdktf.numberToTerraform(struct!.attemptDurationSeconds),
+  }
+}
+
+
 // Resource
 
-export class BatchJobDefinition extends TerraformResource {
+export class BatchJobDefinition extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -166,12 +181,12 @@ export class BatchJobDefinition extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container_properties: this._containerProperties,
-      name: this._name,
-      parameters: this._parameters,
-      type: this._type,
-      retry_strategy: this._retryStrategy,
-      timeout: this._timeout,
+      container_properties: cdktf.stringToTerraform(this._containerProperties),
+      name: cdktf.stringToTerraform(this._name),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      type: cdktf.stringToTerraform(this._type),
+      retry_strategy: cdktf.listMapper(batchJobDefinitionRetryStrategyToTerraform)(this._retryStrategy),
+      timeout: cdktf.listMapper(batchJobDefinitionTimeoutToTerraform)(this._timeout),
     };
   }
 }

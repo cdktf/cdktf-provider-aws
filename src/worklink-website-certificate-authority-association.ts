@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WorklinkWebsiteCertificateAuthorityAssociationConfig extends TerraformMetaArguments {
+export interface WorklinkWebsiteCertificateAuthorityAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly certificate: string;
   readonly displayName?: string;
   readonly fleetArn: string;
@@ -15,7 +14,7 @@ export interface WorklinkWebsiteCertificateAuthorityAssociationConfig extends Te
 
 // Resource
 
-export class WorklinkWebsiteCertificateAuthorityAssociation extends TerraformResource {
+export class WorklinkWebsiteCertificateAuthorityAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +98,9 @@ export class WorklinkWebsiteCertificateAuthorityAssociation extends TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate: this._certificate,
-      display_name: this._displayName,
-      fleet_arn: this._fleetArn,
+      certificate: cdktf.stringToTerraform(this._certificate),
+      display_name: cdktf.stringToTerraform(this._displayName),
+      fleet_arn: cdktf.stringToTerraform(this._fleetArn),
     };
   }
 }

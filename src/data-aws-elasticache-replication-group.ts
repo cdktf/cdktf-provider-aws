@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElasticacheReplicationGroupConfig extends TerraformMetaArguments {
+export interface DataAwsElasticacheReplicationGroupConfig extends cdktf.TerraformMetaArguments {
   readonly replicationGroupId: string;
 }
 
 // Resource
 
-export class DataAwsElasticacheReplicationGroup extends TerraformDataSource {
+export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -116,7 +115,7 @@ export class DataAwsElasticacheReplicationGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      replication_group_id: this._replicationGroupId,
+      replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
     };
   }
 }

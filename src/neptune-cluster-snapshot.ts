@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NeptuneClusterSnapshotConfig extends TerraformMetaArguments {
+export interface NeptuneClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly dbClusterIdentifier: string;
   readonly dbClusterSnapshotIdentifier: string;
   /** timeouts block */
@@ -17,9 +16,17 @@ export interface NeptuneClusterSnapshotTimeouts {
   readonly create?: string;
 }
 
+function neptuneClusterSnapshotTimeoutsToTerraform(struct?: NeptuneClusterSnapshotTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class NeptuneClusterSnapshot extends TerraformResource {
+export class NeptuneClusterSnapshot extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -163,9 +170,9 @@ export class NeptuneClusterSnapshot extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_cluster_identifier: this._dbClusterIdentifier,
-      db_cluster_snapshot_identifier: this._dbClusterSnapshotIdentifier,
-      timeouts: this._timeouts,
+      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
+      db_cluster_snapshot_identifier: cdktf.stringToTerraform(this._dbClusterSnapshotIdentifier),
+      timeouts: neptuneClusterSnapshotTimeoutsToTerraform(this._timeouts),
     };
   }
 }

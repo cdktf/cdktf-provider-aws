@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbInstanceRoleAssociationConfig extends TerraformMetaArguments {
+export interface DbInstanceRoleAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly dbInstanceIdentifier: string;
   readonly featureName: string;
   readonly roleArn: string;
@@ -15,7 +14,7 @@ export interface DbInstanceRoleAssociationConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class DbInstanceRoleAssociation extends TerraformResource {
+export class DbInstanceRoleAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,9 +90,9 @@ export class DbInstanceRoleAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_instance_identifier: this._dbInstanceIdentifier,
-      feature_name: this._featureName,
-      role_arn: this._roleArn,
+      db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
+      feature_name: cdktf.stringToTerraform(this._featureName),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

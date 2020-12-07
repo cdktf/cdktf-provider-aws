@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultRouteTableConfig extends TerraformMetaArguments {
+export interface DefaultRouteTableConfig extends cdktf.TerraformMetaArguments {
   readonly defaultRouteTableId: string;
   readonly propagatingVgws?: string[];
   readonly route?: DefaultRouteTableRoute[];
@@ -25,9 +24,25 @@ export interface DefaultRouteTableRoute {
   readonly vpcPeeringConnectionId?: string;
 }
 
+function defaultRouteTableRouteToTerraform(struct?: DefaultRouteTableRoute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
+    egress_only_gateway_id: cdktf.stringToTerraform(struct!.egressOnlyGatewayId),
+    gateway_id: cdktf.stringToTerraform(struct!.gatewayId),
+    instance_id: cdktf.stringToTerraform(struct!.instanceId),
+    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    nat_gateway_id: cdktf.stringToTerraform(struct!.natGatewayId),
+    network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
+    transit_gateway_id: cdktf.stringToTerraform(struct!.transitGatewayId),
+    vpc_peering_connection_id: cdktf.stringToTerraform(struct!.vpcPeeringConnectionId),
+  }
+}
+
+
 // Resource
 
-export class DefaultRouteTable extends TerraformResource {
+export class DefaultRouteTable extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -136,10 +151,10 @@ export class DefaultRouteTable extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_route_table_id: this._defaultRouteTableId,
-      propagating_vgws: this._propagatingVgws,
-      route: this._route,
-      tags: this._tags,
+      default_route_table_id: cdktf.stringToTerraform(this._defaultRouteTableId),
+      propagating_vgws: cdktf.listMapper(cdktf.stringToTerraform)(this._propagatingVgws),
+      route: cdktf.listMapper(defaultRouteTableRouteToTerraform)(this._route),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

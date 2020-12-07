@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticacheParameterGroupConfig extends TerraformMetaArguments {
+export interface ElasticacheParameterGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly family: string;
   readonly name: string;
@@ -19,9 +18,18 @@ export interface ElasticacheParameterGroupParameter {
   readonly value: string;
 }
 
+function elasticacheParameterGroupParameterToTerraform(struct?: ElasticacheParameterGroupParameter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class ElasticacheParameterGroup extends TerraformResource {
+export class ElasticacheParameterGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -117,10 +125,10 @@ export class ElasticacheParameterGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      family: this._family,
-      name: this._name,
-      parameter: this._parameter,
+      description: cdktf.stringToTerraform(this._description),
+      family: cdktf.stringToTerraform(this._family),
+      name: cdktf.stringToTerraform(this._name),
+      parameter: cdktf.listMapper(elasticacheParameterGroupParameterToTerraform)(this._parameter),
     };
   }
 }

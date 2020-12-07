@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogMetricFilterConfig extends TerraformMetaArguments {
+export interface CloudwatchLogMetricFilterConfig extends cdktf.TerraformMetaArguments {
   readonly logGroupName: string;
   readonly name: string;
   readonly pattern: string;
@@ -21,9 +20,20 @@ export interface CloudwatchLogMetricFilterMetricTransformation {
   readonly value: string;
 }
 
+function cloudwatchLogMetricFilterMetricTransformationToTerraform(struct?: CloudwatchLogMetricFilterMetricTransformation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    default_value: cdktf.stringToTerraform(struct!.defaultValue),
+    name: cdktf.stringToTerraform(struct!.name),
+    namespace: cdktf.stringToTerraform(struct!.namespace),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class CloudwatchLogMetricFilter extends TerraformResource {
+export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -113,10 +123,10 @@ export class CloudwatchLogMetricFilter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      log_group_name: this._logGroupName,
-      name: this._name,
-      pattern: this._pattern,
-      metric_transformation: this._metricTransformation,
+      log_group_name: cdktf.stringToTerraform(this._logGroupName),
+      name: cdktf.stringToTerraform(this._name),
+      pattern: cdktf.stringToTerraform(this._pattern),
+      metric_transformation: cdktf.listMapper(cloudwatchLogMetricFilterMetricTransformationToTerraform)(this._metricTransformation),
     };
   }
 }

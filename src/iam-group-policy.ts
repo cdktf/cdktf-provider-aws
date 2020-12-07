@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamGroupPolicyConfig extends TerraformMetaArguments {
+export interface IamGroupPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly group: string;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -16,7 +15,7 @@ export interface IamGroupPolicyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamGroupPolicy extends TerraformResource {
+export class IamGroupPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,10 +111,10 @@ export class IamGroupPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group: this._group,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      policy: this._policy,
+      group: cdktf.stringToTerraform(this._group),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

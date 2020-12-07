@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EcsServiceConfig extends TerraformMetaArguments {
+export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   readonly cluster?: string;
   readonly deploymentMaximumPercent?: number;
   readonly deploymentMinimumHealthyPercent?: number;
@@ -47,45 +46,130 @@ export interface EcsServiceCapacityProviderStrategy {
   readonly capacityProvider: string;
   readonly weight?: number;
 }
+
+function ecsServiceCapacityProviderStrategyToTerraform(struct?: EcsServiceCapacityProviderStrategy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    base: cdktf.numberToTerraform(struct!.base),
+    capacity_provider: cdktf.stringToTerraform(struct!.capacityProvider),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
 export interface EcsServiceDeploymentController {
   readonly type?: string;
 }
+
+function ecsServiceDeploymentControllerToTerraform(struct?: EcsServiceDeploymentController): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface EcsServiceLoadBalancer {
   readonly containerName: string;
   readonly containerPort: number;
   readonly elbName?: string;
   readonly targetGroupArn?: string;
 }
+
+function ecsServiceLoadBalancerToTerraform(struct?: EcsServiceLoadBalancer): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    container_name: cdktf.stringToTerraform(struct!.containerName),
+    container_port: cdktf.numberToTerraform(struct!.containerPort),
+    elb_name: cdktf.stringToTerraform(struct!.elbName),
+    target_group_arn: cdktf.stringToTerraform(struct!.targetGroupArn),
+  }
+}
+
 export interface EcsServiceNetworkConfiguration {
   readonly assignPublicIp?: boolean;
   readonly securityGroups?: string[];
   readonly subnets: string[];
 }
+
+function ecsServiceNetworkConfigurationToTerraform(struct?: EcsServiceNetworkConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    assign_public_ip: cdktf.booleanToTerraform(struct!.assignPublicIp),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+  }
+}
+
 export interface EcsServiceOrderedPlacementStrategy {
   readonly field?: string;
   readonly type: string;
 }
+
+function ecsServiceOrderedPlacementStrategyToTerraform(struct?: EcsServiceOrderedPlacementStrategy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    field: cdktf.stringToTerraform(struct!.field),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface EcsServicePlacementConstraints {
   readonly expression?: string;
   readonly type: string;
 }
+
+function ecsServicePlacementConstraintsToTerraform(struct?: EcsServicePlacementConstraints): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    expression: cdktf.stringToTerraform(struct!.expression),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface EcsServicePlacementStrategy {
   readonly field?: string;
   readonly type: string;
 }
+
+function ecsServicePlacementStrategyToTerraform(struct?: EcsServicePlacementStrategy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    field: cdktf.stringToTerraform(struct!.field),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface EcsServiceServiceRegistries {
   readonly containerName?: string;
   readonly containerPort?: number;
   readonly port?: number;
   readonly registryArn: string;
 }
+
+function ecsServiceServiceRegistriesToTerraform(struct?: EcsServiceServiceRegistries): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    container_name: cdktf.stringToTerraform(struct!.containerName),
+    container_port: cdktf.numberToTerraform(struct!.containerPort),
+    port: cdktf.numberToTerraform(struct!.port),
+    registry_arn: cdktf.stringToTerraform(struct!.registryArn),
+  }
+}
+
 export interface EcsServiceTimeouts {
   readonly delete?: string;
 }
 
+function ecsServiceTimeoutsToTerraform(struct?: EcsServiceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class EcsService extends TerraformResource {
+export class EcsService extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -524,30 +608,30 @@ export class EcsService extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster: this._cluster,
-      deployment_maximum_percent: this._deploymentMaximumPercent,
-      deployment_minimum_healthy_percent: this._deploymentMinimumHealthyPercent,
-      desired_count: this._desiredCount,
-      enable_ecs_managed_tags: this._enableEcsManagedTags,
-      force_new_deployment: this._forceNewDeployment,
-      health_check_grace_period_seconds: this._healthCheckGracePeriodSeconds,
-      iam_role: this._iamRole,
-      launch_type: this._launchType,
-      name: this._name,
-      platform_version: this._platformVersion,
-      propagate_tags: this._propagateTags,
-      scheduling_strategy: this._schedulingStrategy,
-      tags: this._tags,
-      task_definition: this._taskDefinition,
-      capacity_provider_strategy: this._capacityProviderStrategy,
-      deployment_controller: this._deploymentController,
-      load_balancer: this._loadBalancer,
-      network_configuration: this._networkConfiguration,
-      ordered_placement_strategy: this._orderedPlacementStrategy,
-      placement_constraints: this._placementConstraints,
-      placement_strategy: this._placementStrategy,
-      service_registries: this._serviceRegistries,
-      timeouts: this._timeouts,
+      cluster: cdktf.stringToTerraform(this._cluster),
+      deployment_maximum_percent: cdktf.numberToTerraform(this._deploymentMaximumPercent),
+      deployment_minimum_healthy_percent: cdktf.numberToTerraform(this._deploymentMinimumHealthyPercent),
+      desired_count: cdktf.numberToTerraform(this._desiredCount),
+      enable_ecs_managed_tags: cdktf.booleanToTerraform(this._enableEcsManagedTags),
+      force_new_deployment: cdktf.booleanToTerraform(this._forceNewDeployment),
+      health_check_grace_period_seconds: cdktf.numberToTerraform(this._healthCheckGracePeriodSeconds),
+      iam_role: cdktf.stringToTerraform(this._iamRole),
+      launch_type: cdktf.stringToTerraform(this._launchType),
+      name: cdktf.stringToTerraform(this._name),
+      platform_version: cdktf.stringToTerraform(this._platformVersion),
+      propagate_tags: cdktf.stringToTerraform(this._propagateTags),
+      scheduling_strategy: cdktf.stringToTerraform(this._schedulingStrategy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      task_definition: cdktf.stringToTerraform(this._taskDefinition),
+      capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform)(this._capacityProviderStrategy),
+      deployment_controller: cdktf.listMapper(ecsServiceDeploymentControllerToTerraform)(this._deploymentController),
+      load_balancer: cdktf.listMapper(ecsServiceLoadBalancerToTerraform)(this._loadBalancer),
+      network_configuration: cdktf.listMapper(ecsServiceNetworkConfigurationToTerraform)(this._networkConfiguration),
+      ordered_placement_strategy: cdktf.listMapper(ecsServiceOrderedPlacementStrategyToTerraform)(this._orderedPlacementStrategy),
+      placement_constraints: cdktf.listMapper(ecsServicePlacementConstraintsToTerraform)(this._placementConstraints),
+      placement_strategy: cdktf.listMapper(ecsServicePlacementStrategyToTerraform)(this._placementStrategy),
+      service_registries: cdktf.listMapper(ecsServiceServiceRegistriesToTerraform)(this._serviceRegistries),
+      timeouts: ecsServiceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

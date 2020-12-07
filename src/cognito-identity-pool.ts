@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CognitoIdentityPoolConfig extends TerraformMetaArguments {
+export interface CognitoIdentityPoolConfig extends cdktf.TerraformMetaArguments {
   readonly allowUnauthenticatedIdentities?: boolean;
   readonly developerProviderName?: string;
   readonly identityPoolName: string;
@@ -24,9 +23,19 @@ export interface CognitoIdentityPoolCognitoIdentityProviders {
   readonly serverSideTokenCheck?: boolean;
 }
 
+function cognitoIdentityPoolCognitoIdentityProvidersToTerraform(struct?: CognitoIdentityPoolCognitoIdentityProviders): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    provider_name: cdktf.stringToTerraform(struct!.providerName),
+    server_side_token_check: cdktf.booleanToTerraform(struct!.serverSideTokenCheck),
+  }
+}
+
+
 // Resource
 
-export class CognitoIdentityPool extends TerraformResource {
+export class CognitoIdentityPool extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -198,14 +207,14 @@ export class CognitoIdentityPool extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_unauthenticated_identities: this._allowUnauthenticatedIdentities,
-      developer_provider_name: this._developerProviderName,
-      identity_pool_name: this._identityPoolName,
-      openid_connect_provider_arns: this._openidConnectProviderArns,
-      saml_provider_arns: this._samlProviderArns,
-      supported_login_providers: this._supportedLoginProviders,
-      tags: this._tags,
-      cognito_identity_providers: this._cognitoIdentityProviders,
+      allow_unauthenticated_identities: cdktf.booleanToTerraform(this._allowUnauthenticatedIdentities),
+      developer_provider_name: cdktf.stringToTerraform(this._developerProviderName),
+      identity_pool_name: cdktf.stringToTerraform(this._identityPoolName),
+      openid_connect_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._openidConnectProviderArns),
+      saml_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._samlProviderArns),
+      supported_login_providers: cdktf.hashMapper(cdktf.anyToTerraform)(this._supportedLoginProviders),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      cognito_identity_providers: cdktf.listMapper(cognitoIdentityPoolCognitoIdentityProvidersToTerraform)(this._cognitoIdentityProviders),
     };
   }
 }

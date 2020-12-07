@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2TransitGatewayDxGatewayAttachmentConfig extends TerraformMetaArguments {
+export interface DataAwsEc2TransitGatewayDxGatewayAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly dxGatewayId?: string;
   readonly tags?: { [key: string]: string };
   readonly transitGatewayId?: string;
@@ -19,9 +18,18 @@ export interface DataAwsEc2TransitGatewayDxGatewayAttachmentFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform(struct?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2TransitGatewayDxGatewayAttachment extends TerraformDataSource {
+export class DataAwsEc2TransitGatewayDxGatewayAttachment extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +131,10 @@ export class DataAwsEc2TransitGatewayDxGatewayAttachment extends TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dx_gateway_id: this._dxGatewayId,
-      tags: this._tags,
-      transit_gateway_id: this._transitGatewayId,
-      filter: this._filter,
+      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      filter: cdktf.listMapper(dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform)(this._filter),
     };
   }
 }

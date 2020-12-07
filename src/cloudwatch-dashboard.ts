@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchDashboardConfig extends TerraformMetaArguments {
+export interface CloudwatchDashboardConfig extends cdktf.TerraformMetaArguments {
   readonly dashboardBody: string;
   readonly dashboardName: string;
 }
 
 // Resource
 
-export class CloudwatchDashboard extends TerraformResource {
+export class CloudwatchDashboard extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -81,8 +80,8 @@ export class CloudwatchDashboard extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dashboard_body: this._dashboardBody,
-      dashboard_name: this._dashboardName,
+      dashboard_body: cdktf.stringToTerraform(this._dashboardBody),
+      dashboard_name: cdktf.stringToTerraform(this._dashboardName),
     };
   }
 }

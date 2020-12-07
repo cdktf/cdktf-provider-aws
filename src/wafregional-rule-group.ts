@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalRuleGroupConfig extends TerraformMetaArguments {
+export interface WafregionalRuleGroupConfig extends cdktf.TerraformMetaArguments {
   readonly metricName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -17,6 +16,14 @@ export interface WafregionalRuleGroupConfig extends TerraformMetaArguments {
 export interface WafregionalRuleGroupActivatedRuleAction {
   readonly type: string;
 }
+
+function wafregionalRuleGroupActivatedRuleActionToTerraform(struct?: WafregionalRuleGroupActivatedRuleAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalRuleGroupActivatedRule {
   readonly priority: number;
   readonly ruleId: string;
@@ -25,9 +32,20 @@ export interface WafregionalRuleGroupActivatedRule {
   readonly action: WafregionalRuleGroupActivatedRuleAction[];
 }
 
+function wafregionalRuleGroupActivatedRuleToTerraform(struct?: WafregionalRuleGroupActivatedRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    priority: cdktf.numberToTerraform(struct!.priority),
+    rule_id: cdktf.stringToTerraform(struct!.ruleId),
+    type: cdktf.stringToTerraform(struct!.type),
+    action: cdktf.listMapper(wafregionalRuleGroupActivatedRuleActionToTerraform)(struct!.action),
+  }
+}
+
+
 // Resource
 
-export class WafregionalRuleGroup extends TerraformResource {
+export class WafregionalRuleGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -128,10 +146,10 @@ export class WafregionalRuleGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      metric_name: this._metricName,
-      name: this._name,
-      tags: this._tags,
-      activated_rule: this._activatedRule,
+      metric_name: cdktf.stringToTerraform(this._metricName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      activated_rule: cdktf.listMapper(wafregionalRuleGroupActivatedRuleToTerraform)(this._activatedRule),
     };
   }
 }

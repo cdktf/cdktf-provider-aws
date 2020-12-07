@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodecommitTriggerConfig extends TerraformMetaArguments {
+export interface CodecommitTriggerConfig extends cdktf.TerraformMetaArguments {
   readonly repositoryName: string;
   /** trigger block */
   readonly trigger: CodecommitTriggerTrigger[];
@@ -20,9 +19,21 @@ export interface CodecommitTriggerTrigger {
   readonly name: string;
 }
 
+function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTrigger): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    branches: cdktf.listMapper(cdktf.stringToTerraform)(struct!.branches),
+    custom_data: cdktf.stringToTerraform(struct!.customData),
+    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
+    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+
 // Resource
 
-export class CodecommitTrigger extends TerraformResource {
+export class CodecommitTrigger extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,8 +100,8 @@ export class CodecommitTrigger extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      repository_name: this._repositoryName,
-      trigger: this._trigger,
+      repository_name: cdktf.stringToTerraform(this._repositoryName),
+      trigger: cdktf.listMapper(codecommitTriggerTriggerToTerraform)(this._trigger),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpnConnectionRouteConfig extends TerraformMetaArguments {
+export interface VpnConnectionRouteConfig extends cdktf.TerraformMetaArguments {
   readonly destinationCidrBlock: string;
   readonly vpnConnectionId: string;
 }
 
 // Resource
 
-export class VpnConnectionRoute extends TerraformResource {
+export class VpnConnectionRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class VpnConnectionRoute extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_cidr_block: this._destinationCidrBlock,
-      vpn_connection_id: this._vpnConnectionId,
+      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      vpn_connection_id: cdktf.stringToTerraform(this._vpnConnectionId),
     };
   }
 }

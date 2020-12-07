@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2VpcLinkConfig extends TerraformMetaArguments {
+export interface Apigatewayv2VpcLinkConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly securityGroupIds: string[];
   readonly subnetIds: string[];
@@ -16,7 +15,7 @@ export interface Apigatewayv2VpcLinkConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Apigatewayv2VpcLink extends TerraformResource {
+export class Apigatewayv2VpcLink extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -114,10 +113,10 @@ export class Apigatewayv2VpcLink extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      security_group_ids: this._securityGroupIds,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

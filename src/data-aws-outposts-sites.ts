@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsSitesConfig extends TerraformMetaArguments {
+export interface DataAwsOutpostsSitesConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsOutpostsSites extends TerraformDataSource {
+export class DataAwsOutpostsSites extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

@@ -2,20 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsMqBrokerConfig extends TerraformMetaArguments {
+export interface DataAwsMqBrokerConfig extends cdktf.TerraformMetaArguments {
   readonly brokerId?: string;
   readonly brokerName?: string;
   readonly tags?: { [key: string]: string };
   /** logs block */
   readonly logs?: DataAwsMqBrokerLogs[];
 }
-export class DataAwsMqBrokerConfiguration extends ComplexComputedList {
+export class DataAwsMqBrokerConfiguration extends cdktf.ComplexComputedList {
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -27,7 +25,7 @@ export class DataAwsMqBrokerConfiguration extends ComplexComputedList {
     return this.getNumberAttribute('revision');
   }
 }
-export class DataAwsMqBrokerEncryptionOptions extends ComplexComputedList {
+export class DataAwsMqBrokerEncryptionOptions extends cdktf.ComplexComputedList {
 
   // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
@@ -39,7 +37,7 @@ export class DataAwsMqBrokerEncryptionOptions extends ComplexComputedList {
     return this.getBooleanAttribute('use_aws_owned_key');
   }
 }
-export class DataAwsMqBrokerInstances extends ComplexComputedList {
+export class DataAwsMqBrokerInstances extends cdktf.ComplexComputedList {
 
   // console_url - computed: true, optional: false, required: false
   public get consoleUrl() {
@@ -56,7 +54,7 @@ export class DataAwsMqBrokerInstances extends ComplexComputedList {
     return this.getStringAttribute('ip_address');
   }
 }
-export class DataAwsMqBrokerMaintenanceWindowStartTime extends ComplexComputedList {
+export class DataAwsMqBrokerMaintenanceWindowStartTime extends cdktf.ComplexComputedList {
 
   // day_of_week - computed: true, optional: false, required: false
   public get dayOfWeek() {
@@ -73,7 +71,7 @@ export class DataAwsMqBrokerMaintenanceWindowStartTime extends ComplexComputedLi
     return this.getStringAttribute('time_zone');
   }
 }
-export class DataAwsMqBrokerUser extends ComplexComputedList {
+export class DataAwsMqBrokerUser extends cdktf.ComplexComputedList {
 
   // console_access - computed: true, optional: false, required: false
   public get consoleAccess() {
@@ -93,9 +91,16 @@ export class DataAwsMqBrokerUser extends ComplexComputedList {
 export interface DataAwsMqBrokerLogs {
 }
 
+function dataAwsMqBrokerLogsToTerraform(struct?: DataAwsMqBrokerLogs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+  }
+}
+
+
 // Resource
 
-export class DataAwsMqBroker extends TerraformDataSource {
+export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -267,10 +272,10 @@ export class DataAwsMqBroker extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      broker_id: this._brokerId,
-      broker_name: this._brokerName,
-      tags: this._tags,
-      logs: this._logs,
+      broker_id: cdktf.stringToTerraform(this._brokerId),
+      broker_name: cdktf.stringToTerraform(this._brokerName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      logs: cdktf.listMapper(dataAwsMqBrokerLogsToTerraform)(this._logs),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayDeploymentConfig extends TerraformMetaArguments {
+export interface ApiGatewayDeploymentConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly restApiId: string;
   readonly stageDescription?: string;
@@ -18,7 +17,7 @@ export interface ApiGatewayDeploymentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayDeployment extends TerraformResource {
+export class ApiGatewayDeployment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -166,12 +165,12 @@ export class ApiGatewayDeployment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      rest_api_id: this._restApiId,
-      stage_description: this._stageDescription,
-      stage_name: this._stageName,
-      triggers: this._triggers,
-      variables: this._variables,
+      description: cdktf.stringToTerraform(this._description),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      stage_description: cdktf.stringToTerraform(this._stageDescription),
+      stage_name: cdktf.stringToTerraform(this._stageName),
+      triggers: cdktf.hashMapper(cdktf.anyToTerraform)(this._triggers),
+      variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._variables),
     };
   }
 }

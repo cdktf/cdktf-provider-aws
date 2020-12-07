@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KmsKeyConfig extends TerraformMetaArguments {
+export interface KmsKeyConfig extends cdktf.TerraformMetaArguments {
   readonly customerMasterKeySpec?: string;
   readonly deletionWindowInDays?: number;
   readonly description?: string;
@@ -20,7 +19,7 @@ export interface KmsKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class KmsKey extends TerraformResource {
+export class KmsKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -200,14 +199,14 @@ export class KmsKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      customer_master_key_spec: this._customerMasterKeySpec,
-      deletion_window_in_days: this._deletionWindowInDays,
-      description: this._description,
-      enable_key_rotation: this._enableKeyRotation,
-      is_enabled: this._isEnabled,
-      key_usage: this._keyUsage,
-      policy: this._policy,
-      tags: this._tags,
+      customer_master_key_spec: cdktf.stringToTerraform(this._customerMasterKeySpec),
+      deletion_window_in_days: cdktf.numberToTerraform(this._deletionWindowInDays),
+      description: cdktf.stringToTerraform(this._description),
+      enable_key_rotation: cdktf.booleanToTerraform(this._enableKeyRotation),
+      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
+      key_usage: cdktf.stringToTerraform(this._keyUsage),
+      policy: cdktf.stringToTerraform(this._policy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

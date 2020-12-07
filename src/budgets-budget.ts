@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BudgetsBudgetConfig extends TerraformMetaArguments {
+export interface BudgetsBudgetConfig extends cdktf.TerraformMetaArguments {
   readonly accountId?: string;
   readonly budgetType: string;
   readonly costFilters?: { [key: string]: string };
@@ -36,6 +35,24 @@ export interface BudgetsBudgetCostTypes {
   readonly useAmortized?: boolean;
   readonly useBlended?: boolean;
 }
+
+function budgetsBudgetCostTypesToTerraform(struct?: BudgetsBudgetCostTypes): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    include_credit: cdktf.booleanToTerraform(struct!.includeCredit),
+    include_discount: cdktf.booleanToTerraform(struct!.includeDiscount),
+    include_other_subscription: cdktf.booleanToTerraform(struct!.includeOtherSubscription),
+    include_recurring: cdktf.booleanToTerraform(struct!.includeRecurring),
+    include_refund: cdktf.booleanToTerraform(struct!.includeRefund),
+    include_subscription: cdktf.booleanToTerraform(struct!.includeSubscription),
+    include_support: cdktf.booleanToTerraform(struct!.includeSupport),
+    include_tax: cdktf.booleanToTerraform(struct!.includeTax),
+    include_upfront: cdktf.booleanToTerraform(struct!.includeUpfront),
+    use_amortized: cdktf.booleanToTerraform(struct!.useAmortized),
+    use_blended: cdktf.booleanToTerraform(struct!.useBlended),
+  }
+}
+
 export interface BudgetsBudgetNotification {
   readonly comparisonOperator: string;
   readonly notificationType: string;
@@ -45,9 +62,22 @@ export interface BudgetsBudgetNotification {
   readonly thresholdType: string;
 }
 
+function budgetsBudgetNotificationToTerraform(struct?: BudgetsBudgetNotification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    comparison_operator: cdktf.stringToTerraform(struct!.comparisonOperator),
+    notification_type: cdktf.stringToTerraform(struct!.notificationType),
+    subscriber_email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subscriberEmailAddresses),
+    subscriber_sns_topic_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subscriberSnsTopicArns),
+    threshold: cdktf.numberToTerraform(struct!.threshold),
+    threshold_type: cdktf.stringToTerraform(struct!.thresholdType),
+  }
+}
+
+
 // Resource
 
-export class BudgetsBudget extends TerraformResource {
+export class BudgetsBudget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -270,18 +300,18 @@ export class BudgetsBudget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      budget_type: this._budgetType,
-      cost_filters: this._costFilters,
-      limit_amount: this._limitAmount,
-      limit_unit: this._limitUnit,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      time_period_end: this._timePeriodEnd,
-      time_period_start: this._timePeriodStart,
-      time_unit: this._timeUnit,
-      cost_types: this._costTypes,
-      notification: this._notification,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      budget_type: cdktf.stringToTerraform(this._budgetType),
+      cost_filters: cdktf.hashMapper(cdktf.anyToTerraform)(this._costFilters),
+      limit_amount: cdktf.stringToTerraform(this._limitAmount),
+      limit_unit: cdktf.stringToTerraform(this._limitUnit),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      time_period_end: cdktf.stringToTerraform(this._timePeriodEnd),
+      time_period_start: cdktf.stringToTerraform(this._timePeriodStart),
+      time_unit: cdktf.stringToTerraform(this._timeUnit),
+      cost_types: cdktf.listMapper(budgetsBudgetCostTypesToTerraform)(this._costTypes),
+      notification: cdktf.listMapper(budgetsBudgetNotificationToTerraform)(this._notification),
     };
   }
 }

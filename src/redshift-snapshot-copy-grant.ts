@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RedshiftSnapshotCopyGrantConfig extends TerraformMetaArguments {
+export interface RedshiftSnapshotCopyGrantConfig extends cdktf.TerraformMetaArguments {
   readonly kmsKeyId?: string;
   readonly snapshotCopyGrantName: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface RedshiftSnapshotCopyGrantConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class RedshiftSnapshotCopyGrant extends TerraformResource {
+export class RedshiftSnapshotCopyGrant extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +101,9 @@ export class RedshiftSnapshotCopyGrant extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_id: this._kmsKeyId,
-      snapshot_copy_grant_name: this._snapshotCopyGrantName,
-      tags: this._tags,
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      snapshot_copy_grant_name: cdktf.stringToTerraform(this._snapshotCopyGrantName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticsearchDomainConfig extends TerraformMetaArguments {
+export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments {
   readonly accessPolicies?: string;
   readonly advancedOptions?: { [key: string]: string };
   readonly domainName: string;
@@ -41,15 +40,43 @@ export interface ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions {
   readonly masterUserName?: string;
   readonly masterUserPassword?: string;
 }
+
+function elasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsToTerraform(struct?: ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    master_user_arn: cdktf.stringToTerraform(struct!.masterUserArn),
+    master_user_name: cdktf.stringToTerraform(struct!.masterUserName),
+    master_user_password: cdktf.stringToTerraform(struct!.masterUserPassword),
+  }
+}
+
 export interface ElasticsearchDomainAdvancedSecurityOptions {
   readonly enabled: boolean;
   readonly internalUserDatabaseEnabled?: boolean;
   /** master_user_options block */
   readonly masterUserOptions?: ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions[];
 }
+
+function elasticsearchDomainAdvancedSecurityOptionsToTerraform(struct?: ElasticsearchDomainAdvancedSecurityOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    internal_user_database_enabled: cdktf.booleanToTerraform(struct!.internalUserDatabaseEnabled),
+    master_user_options: cdktf.listMapper(elasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsToTerraform)(struct!.masterUserOptions),
+  }
+}
+
 export interface ElasticsearchDomainClusterConfigZoneAwarenessConfig {
   readonly availabilityZoneCount?: number;
 }
+
+function elasticsearchDomainClusterConfigZoneAwarenessConfigToTerraform(struct?: ElasticsearchDomainClusterConfigZoneAwarenessConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    availability_zone_count: cdktf.numberToTerraform(struct!.availabilityZoneCount),
+  }
+}
+
 export interface ElasticsearchDomainClusterConfig {
   readonly dedicatedMasterCount?: number;
   readonly dedicatedMasterEnabled?: boolean;
@@ -63,48 +90,148 @@ export interface ElasticsearchDomainClusterConfig {
   /** zone_awareness_config block */
   readonly zoneAwarenessConfig?: ElasticsearchDomainClusterConfigZoneAwarenessConfig[];
 }
+
+function elasticsearchDomainClusterConfigToTerraform(struct?: ElasticsearchDomainClusterConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    dedicated_master_count: cdktf.numberToTerraform(struct!.dedicatedMasterCount),
+    dedicated_master_enabled: cdktf.booleanToTerraform(struct!.dedicatedMasterEnabled),
+    dedicated_master_type: cdktf.stringToTerraform(struct!.dedicatedMasterType),
+    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    warm_count: cdktf.numberToTerraform(struct!.warmCount),
+    warm_enabled: cdktf.booleanToTerraform(struct!.warmEnabled),
+    warm_type: cdktf.stringToTerraform(struct!.warmType),
+    zone_awareness_enabled: cdktf.booleanToTerraform(struct!.zoneAwarenessEnabled),
+    zone_awareness_config: cdktf.listMapper(elasticsearchDomainClusterConfigZoneAwarenessConfigToTerraform)(struct!.zoneAwarenessConfig),
+  }
+}
+
 export interface ElasticsearchDomainCognitoOptions {
   readonly enabled?: boolean;
   readonly identityPoolId: string;
   readonly roleArn: string;
   readonly userPoolId: string;
 }
+
+function elasticsearchDomainCognitoOptionsToTerraform(struct?: ElasticsearchDomainCognitoOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    identity_pool_id: cdktf.stringToTerraform(struct!.identityPoolId),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    user_pool_id: cdktf.stringToTerraform(struct!.userPoolId),
+  }
+}
+
 export interface ElasticsearchDomainDomainEndpointOptions {
   readonly enforceHttps: boolean;
   readonly tlsSecurityPolicy?: string;
 }
+
+function elasticsearchDomainDomainEndpointOptionsToTerraform(struct?: ElasticsearchDomainDomainEndpointOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enforce_https: cdktf.booleanToTerraform(struct!.enforceHttps),
+    tls_security_policy: cdktf.stringToTerraform(struct!.tlsSecurityPolicy),
+  }
+}
+
 export interface ElasticsearchDomainEbsOptions {
   readonly ebsEnabled: boolean;
   readonly iops?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function elasticsearchDomainEbsOptionsToTerraform(struct?: ElasticsearchDomainEbsOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ebs_enabled: cdktf.booleanToTerraform(struct!.ebsEnabled),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface ElasticsearchDomainEncryptAtRest {
   readonly enabled: boolean;
   readonly kmsKeyId?: string;
 }
+
+function elasticsearchDomainEncryptAtRestToTerraform(struct?: ElasticsearchDomainEncryptAtRest): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+  }
+}
+
 export interface ElasticsearchDomainLogPublishingOptions {
   readonly cloudwatchLogGroupArn: string;
   readonly enabled?: boolean;
   readonly logType: string;
 }
+
+function elasticsearchDomainLogPublishingOptionsToTerraform(struct?: ElasticsearchDomainLogPublishingOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cloudwatch_log_group_arn: cdktf.stringToTerraform(struct!.cloudwatchLogGroupArn),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    log_type: cdktf.stringToTerraform(struct!.logType),
+  }
+}
+
 export interface ElasticsearchDomainNodeToNodeEncryption {
   readonly enabled: boolean;
 }
+
+function elasticsearchDomainNodeToNodeEncryptionToTerraform(struct?: ElasticsearchDomainNodeToNodeEncryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface ElasticsearchDomainSnapshotOptions {
   readonly automatedSnapshotStartHour: number;
 }
+
+function elasticsearchDomainSnapshotOptionsToTerraform(struct?: ElasticsearchDomainSnapshotOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    automated_snapshot_start_hour: cdktf.numberToTerraform(struct!.automatedSnapshotStartHour),
+  }
+}
+
 export interface ElasticsearchDomainTimeouts {
   readonly update?: string;
 }
+
+function elasticsearchDomainTimeoutsToTerraform(struct?: ElasticsearchDomainTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
 export interface ElasticsearchDomainVpcOptions {
   readonly securityGroupIds?: string[];
   readonly subnetIds?: string[];
 }
 
+function elasticsearchDomainVpcOptionsToTerraform(struct?: ElasticsearchDomainVpcOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+  }
+}
+
+
 // Resource
 
-export class ElasticsearchDomain extends TerraformResource {
+export class ElasticsearchDomain extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -427,22 +554,22 @@ export class ElasticsearchDomain extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policies: this._accessPolicies,
-      advanced_options: this._advancedOptions,
-      domain_name: this._domainName,
-      elasticsearch_version: this._elasticsearchVersion,
-      tags: this._tags,
-      advanced_security_options: this._advancedSecurityOptions,
-      cluster_config: this._clusterConfig,
-      cognito_options: this._cognitoOptions,
-      domain_endpoint_options: this._domainEndpointOptions,
-      ebs_options: this._ebsOptions,
-      encrypt_at_rest: this._encryptAtRest,
-      log_publishing_options: this._logPublishingOptions,
-      node_to_node_encryption: this._nodeToNodeEncryption,
-      snapshot_options: this._snapshotOptions,
-      timeouts: this._timeouts,
-      vpc_options: this._vpcOptions,
+      access_policies: cdktf.stringToTerraform(this._accessPolicies),
+      advanced_options: cdktf.hashMapper(cdktf.anyToTerraform)(this._advancedOptions),
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      elasticsearch_version: cdktf.stringToTerraform(this._elasticsearchVersion),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      advanced_security_options: cdktf.listMapper(elasticsearchDomainAdvancedSecurityOptionsToTerraform)(this._advancedSecurityOptions),
+      cluster_config: cdktf.listMapper(elasticsearchDomainClusterConfigToTerraform)(this._clusterConfig),
+      cognito_options: cdktf.listMapper(elasticsearchDomainCognitoOptionsToTerraform)(this._cognitoOptions),
+      domain_endpoint_options: cdktf.listMapper(elasticsearchDomainDomainEndpointOptionsToTerraform)(this._domainEndpointOptions),
+      ebs_options: cdktf.listMapper(elasticsearchDomainEbsOptionsToTerraform)(this._ebsOptions),
+      encrypt_at_rest: cdktf.listMapper(elasticsearchDomainEncryptAtRestToTerraform)(this._encryptAtRest),
+      log_publishing_options: cdktf.listMapper(elasticsearchDomainLogPublishingOptionsToTerraform)(this._logPublishingOptions),
+      node_to_node_encryption: cdktf.listMapper(elasticsearchDomainNodeToNodeEncryptionToTerraform)(this._nodeToNodeEncryption),
+      snapshot_options: cdktf.listMapper(elasticsearchDomainSnapshotOptionsToTerraform)(this._snapshotOptions),
+      timeouts: elasticsearchDomainTimeoutsToTerraform(this._timeouts),
+      vpc_options: cdktf.listMapper(elasticsearchDomainVpcOptionsToTerraform)(this._vpcOptions),
     };
   }
 }

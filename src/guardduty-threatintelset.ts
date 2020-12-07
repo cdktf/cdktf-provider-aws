@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyThreatintelsetConfig extends TerraformMetaArguments {
+export interface GuarddutyThreatintelsetConfig extends cdktf.TerraformMetaArguments {
   readonly activate: boolean;
   readonly detectorId: string;
   readonly format: string;
@@ -18,7 +17,7 @@ export interface GuarddutyThreatintelsetConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GuarddutyThreatintelset extends TerraformResource {
+export class GuarddutyThreatintelset extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -144,12 +143,12 @@ export class GuarddutyThreatintelset extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activate: this._activate,
-      detector_id: this._detectorId,
-      format: this._format,
-      location: this._location,
-      name: this._name,
-      tags: this._tags,
+      activate: cdktf.booleanToTerraform(this._activate),
+      detector_id: cdktf.stringToTerraform(this._detectorId),
+      format: cdktf.stringToTerraform(this._format),
+      location: cdktf.stringToTerraform(this._location),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

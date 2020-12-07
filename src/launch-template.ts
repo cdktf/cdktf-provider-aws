@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LaunchTemplateConfig extends TerraformMetaArguments {
+export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly defaultVersion?: number;
   readonly description?: string;
   readonly disableApiTermination?: boolean;
@@ -65,6 +64,20 @@ export interface LaunchTemplateBlockDeviceMappingsEbs {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function launchTemplateBlockDeviceMappingsEbsToTerraform(struct?: LaunchTemplateBlockDeviceMappingsEbs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.stringToTerraform(struct!.deleteOnTermination),
+    encrypted: cdktf.stringToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface LaunchTemplateBlockDeviceMappings {
   readonly deviceName?: string;
   readonly noDevice?: string;
@@ -72,34 +85,112 @@ export interface LaunchTemplateBlockDeviceMappings {
   /** ebs block */
   readonly ebs?: LaunchTemplateBlockDeviceMappingsEbs[];
 }
+
+function launchTemplateBlockDeviceMappingsToTerraform(struct?: LaunchTemplateBlockDeviceMappings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    no_device: cdktf.stringToTerraform(struct!.noDevice),
+    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+    ebs: cdktf.listMapper(launchTemplateBlockDeviceMappingsEbsToTerraform)(struct!.ebs),
+  }
+}
+
 export interface LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
   readonly capacityReservationId?: string;
 }
+
+function launchTemplateCapacityReservationSpecificationCapacityReservationTargetToTerraform(struct?: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    capacity_reservation_id: cdktf.stringToTerraform(struct!.capacityReservationId),
+  }
+}
+
 export interface LaunchTemplateCapacityReservationSpecification {
   readonly capacityReservationPreference?: string;
   /** capacity_reservation_target block */
   readonly capacityReservationTarget?: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget[];
 }
+
+function launchTemplateCapacityReservationSpecificationToTerraform(struct?: LaunchTemplateCapacityReservationSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    capacity_reservation_preference: cdktf.stringToTerraform(struct!.capacityReservationPreference),
+    capacity_reservation_target: cdktf.listMapper(launchTemplateCapacityReservationSpecificationCapacityReservationTargetToTerraform)(struct!.capacityReservationTarget),
+  }
+}
+
 export interface LaunchTemplateCpuOptions {
   readonly coreCount?: number;
   readonly threadsPerCore?: number;
 }
+
+function launchTemplateCpuOptionsToTerraform(struct?: LaunchTemplateCpuOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    core_count: cdktf.numberToTerraform(struct!.coreCount),
+    threads_per_core: cdktf.numberToTerraform(struct!.threadsPerCore),
+  }
+}
+
 export interface LaunchTemplateCreditSpecification {
   readonly cpuCredits?: string;
 }
+
+function launchTemplateCreditSpecificationToTerraform(struct?: LaunchTemplateCreditSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cpu_credits: cdktf.stringToTerraform(struct!.cpuCredits),
+  }
+}
+
 export interface LaunchTemplateElasticGpuSpecifications {
   readonly type: string;
 }
+
+function launchTemplateElasticGpuSpecificationsToTerraform(struct?: LaunchTemplateElasticGpuSpecifications): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface LaunchTemplateElasticInferenceAccelerator {
   readonly type: string;
 }
+
+function launchTemplateElasticInferenceAcceleratorToTerraform(struct?: LaunchTemplateElasticInferenceAccelerator): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface LaunchTemplateHibernationOptions {
   readonly configured: boolean;
 }
+
+function launchTemplateHibernationOptionsToTerraform(struct?: LaunchTemplateHibernationOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    configured: cdktf.booleanToTerraform(struct!.configured),
+  }
+}
+
 export interface LaunchTemplateIamInstanceProfile {
   readonly arn?: string;
   readonly name?: string;
 }
+
+function launchTemplateIamInstanceProfileToTerraform(struct?: LaunchTemplateIamInstanceProfile): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    arn: cdktf.stringToTerraform(struct!.arn),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
 export interface LaunchTemplateInstanceMarketOptionsSpotOptions {
   readonly blockDurationMinutes?: number;
   readonly instanceInterruptionBehavior?: string;
@@ -107,22 +198,69 @@ export interface LaunchTemplateInstanceMarketOptionsSpotOptions {
   readonly spotInstanceType?: string;
   readonly validUntil?: string;
 }
+
+function launchTemplateInstanceMarketOptionsSpotOptionsToTerraform(struct?: LaunchTemplateInstanceMarketOptionsSpotOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    block_duration_minutes: cdktf.numberToTerraform(struct!.blockDurationMinutes),
+    instance_interruption_behavior: cdktf.stringToTerraform(struct!.instanceInterruptionBehavior),
+    max_price: cdktf.stringToTerraform(struct!.maxPrice),
+    spot_instance_type: cdktf.stringToTerraform(struct!.spotInstanceType),
+    valid_until: cdktf.stringToTerraform(struct!.validUntil),
+  }
+}
+
 export interface LaunchTemplateInstanceMarketOptions {
   readonly marketType?: string;
   /** spot_options block */
   readonly spotOptions?: LaunchTemplateInstanceMarketOptionsSpotOptions[];
 }
+
+function launchTemplateInstanceMarketOptionsToTerraform(struct?: LaunchTemplateInstanceMarketOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    market_type: cdktf.stringToTerraform(struct!.marketType),
+    spot_options: cdktf.listMapper(launchTemplateInstanceMarketOptionsSpotOptionsToTerraform)(struct!.spotOptions),
+  }
+}
+
 export interface LaunchTemplateLicenseSpecification {
   readonly licenseConfigurationArn: string;
 }
+
+function launchTemplateLicenseSpecificationToTerraform(struct?: LaunchTemplateLicenseSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    license_configuration_arn: cdktf.stringToTerraform(struct!.licenseConfigurationArn),
+  }
+}
+
 export interface LaunchTemplateMetadataOptions {
   readonly httpEndpoint?: string;
   readonly httpPutResponseHopLimit?: number;
   readonly httpTokens?: string;
 }
+
+function launchTemplateMetadataOptionsToTerraform(struct?: LaunchTemplateMetadataOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    http_endpoint: cdktf.stringToTerraform(struct!.httpEndpoint),
+    http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
+    http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
+  }
+}
+
 export interface LaunchTemplateMonitoring {
   readonly enabled?: boolean;
 }
+
+function launchTemplateMonitoringToTerraform(struct?: LaunchTemplateMonitoring): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface LaunchTemplateNetworkInterfaces {
   readonly associatePublicIpAddress?: string;
   readonly deleteOnTermination?: boolean;
@@ -137,6 +275,25 @@ export interface LaunchTemplateNetworkInterfaces {
   readonly securityGroups?: string[];
   readonly subnetId?: string;
 }
+
+function launchTemplateNetworkInterfacesToTerraform(struct?: LaunchTemplateNetworkInterfaces): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    associate_public_ip_address: cdktf.stringToTerraform(struct!.associatePublicIpAddress),
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    description: cdktf.stringToTerraform(struct!.description),
+    device_index: cdktf.numberToTerraform(struct!.deviceIndex),
+    ipv4_address_count: cdktf.numberToTerraform(struct!.ipv4AddressCount),
+    ipv4_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv4Addresses),
+    ipv6_address_count: cdktf.numberToTerraform(struct!.ipv6AddressCount),
+    ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6Addresses),
+    network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
+    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+  }
+}
+
 export interface LaunchTemplatePlacement {
   readonly affinity?: string;
   readonly availabilityZone?: string;
@@ -146,14 +303,37 @@ export interface LaunchTemplatePlacement {
   readonly spreadDomain?: string;
   readonly tenancy?: string;
 }
+
+function launchTemplatePlacementToTerraform(struct?: LaunchTemplatePlacement): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    affinity: cdktf.stringToTerraform(struct!.affinity),
+    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
+    group_name: cdktf.stringToTerraform(struct!.groupName),
+    host_id: cdktf.stringToTerraform(struct!.hostId),
+    partition_number: cdktf.numberToTerraform(struct!.partitionNumber),
+    spread_domain: cdktf.stringToTerraform(struct!.spreadDomain),
+    tenancy: cdktf.stringToTerraform(struct!.tenancy),
+  }
+}
+
 export interface LaunchTemplateTagSpecifications {
   readonly resourceType?: string;
   readonly tags?: { [key: string]: string };
 }
 
+function launchTemplateTagSpecificationsToTerraform(struct?: LaunchTemplateTagSpecifications): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    resource_type: cdktf.stringToTerraform(struct!.resourceType),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+  }
+}
+
+
 // Resource
 
-export class LaunchTemplate extends TerraformResource {
+export class LaunchTemplate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -741,38 +921,38 @@ export class LaunchTemplate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_version: this._defaultVersion,
-      description: this._description,
-      disable_api_termination: this._disableApiTermination,
-      ebs_optimized: this._ebsOptimized,
-      image_id: this._imageId,
-      instance_initiated_shutdown_behavior: this._instanceInitiatedShutdownBehavior,
-      instance_type: this._instanceType,
-      kernel_id: this._kernelId,
-      key_name: this._keyName,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      ram_disk_id: this._ramDiskId,
-      security_group_names: this._securityGroupNames,
-      tags: this._tags,
-      update_default_version: this._updateDefaultVersion,
-      user_data: this._userData,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      block_device_mappings: this._blockDeviceMappings,
-      capacity_reservation_specification: this._capacityReservationSpecification,
-      cpu_options: this._cpuOptions,
-      credit_specification: this._creditSpecification,
-      elastic_gpu_specifications: this._elasticGpuSpecifications,
-      elastic_inference_accelerator: this._elasticInferenceAccelerator,
-      hibernation_options: this._hibernationOptions,
-      iam_instance_profile: this._iamInstanceProfile,
-      instance_market_options: this._instanceMarketOptions,
-      license_specification: this._licenseSpecification,
-      metadata_options: this._metadataOptions,
-      monitoring: this._monitoring,
-      network_interfaces: this._networkInterfaces,
-      placement: this._placement,
-      tag_specifications: this._tagSpecifications,
+      default_version: cdktf.numberToTerraform(this._defaultVersion),
+      description: cdktf.stringToTerraform(this._description),
+      disable_api_termination: cdktf.booleanToTerraform(this._disableApiTermination),
+      ebs_optimized: cdktf.stringToTerraform(this._ebsOptimized),
+      image_id: cdktf.stringToTerraform(this._imageId),
+      instance_initiated_shutdown_behavior: cdktf.stringToTerraform(this._instanceInitiatedShutdownBehavior),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      kernel_id: cdktf.stringToTerraform(this._kernelId),
+      key_name: cdktf.stringToTerraform(this._keyName),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      ram_disk_id: cdktf.stringToTerraform(this._ramDiskId),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      update_default_version: cdktf.booleanToTerraform(this._updateDefaultVersion),
+      user_data: cdktf.stringToTerraform(this._userData),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      block_device_mappings: cdktf.listMapper(launchTemplateBlockDeviceMappingsToTerraform)(this._blockDeviceMappings),
+      capacity_reservation_specification: cdktf.listMapper(launchTemplateCapacityReservationSpecificationToTerraform)(this._capacityReservationSpecification),
+      cpu_options: cdktf.listMapper(launchTemplateCpuOptionsToTerraform)(this._cpuOptions),
+      credit_specification: cdktf.listMapper(launchTemplateCreditSpecificationToTerraform)(this._creditSpecification),
+      elastic_gpu_specifications: cdktf.listMapper(launchTemplateElasticGpuSpecificationsToTerraform)(this._elasticGpuSpecifications),
+      elastic_inference_accelerator: cdktf.listMapper(launchTemplateElasticInferenceAcceleratorToTerraform)(this._elasticInferenceAccelerator),
+      hibernation_options: cdktf.listMapper(launchTemplateHibernationOptionsToTerraform)(this._hibernationOptions),
+      iam_instance_profile: cdktf.listMapper(launchTemplateIamInstanceProfileToTerraform)(this._iamInstanceProfile),
+      instance_market_options: cdktf.listMapper(launchTemplateInstanceMarketOptionsToTerraform)(this._instanceMarketOptions),
+      license_specification: cdktf.listMapper(launchTemplateLicenseSpecificationToTerraform)(this._licenseSpecification),
+      metadata_options: cdktf.listMapper(launchTemplateMetadataOptionsToTerraform)(this._metadataOptions),
+      monitoring: cdktf.listMapper(launchTemplateMonitoringToTerraform)(this._monitoring),
+      network_interfaces: cdktf.listMapper(launchTemplateNetworkInterfacesToTerraform)(this._networkInterfaces),
+      placement: cdktf.listMapper(launchTemplatePlacementToTerraform)(this._placement),
+      tag_specifications: cdktf.listMapper(launchTemplateTagSpecificationsToTerraform)(this._tagSpecifications),
     };
   }
 }

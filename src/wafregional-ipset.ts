@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalIpsetConfig extends TerraformMetaArguments {
+export interface WafregionalIpsetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** ip_set_descriptor block */
   readonly ipSetDescriptor?: WafregionalIpsetIpSetDescriptor[];
@@ -17,9 +16,18 @@ export interface WafregionalIpsetIpSetDescriptor {
   readonly value: string;
 }
 
+function wafregionalIpsetIpSetDescriptorToTerraform(struct?: WafregionalIpsetIpSetDescriptor): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class WafregionalIpset extends TerraformResource {
+export class WafregionalIpset extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,8 +97,8 @@ export class WafregionalIpset extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      ip_set_descriptor: this._ipSetDescriptor,
+      name: cdktf.stringToTerraform(this._name),
+      ip_set_descriptor: cdktf.listMapper(wafregionalIpsetIpSetDescriptorToTerraform)(this._ipSetDescriptor),
     };
   }
 }

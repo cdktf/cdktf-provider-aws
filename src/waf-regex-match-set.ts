@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafRegexMatchSetConfig extends TerraformMetaArguments {
+export interface WafRegexMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** regex_match_tuple block */
   readonly regexMatchTuple?: WafRegexMatchSetRegexMatchTuple[];
@@ -16,6 +15,15 @@ export interface WafRegexMatchSetRegexMatchTupleFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(struct?: WafRegexMatchSetRegexMatchTupleFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafRegexMatchSetRegexMatchTuple {
   readonly regexPatternSetId: string;
   readonly textTransformation: string;
@@ -23,9 +31,19 @@ export interface WafRegexMatchSetRegexMatchTuple {
   readonly fieldToMatch: WafRegexMatchSetRegexMatchTupleFieldToMatch[];
 }
 
+function wafRegexMatchSetRegexMatchTupleToTerraform(struct?: WafRegexMatchSetRegexMatchTuple): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    regex_pattern_set_id: cdktf.stringToTerraform(struct!.regexPatternSetId),
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafRegexMatchSet extends TerraformResource {
+export class WafRegexMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -95,8 +113,8 @@ export class WafRegexMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      regex_match_tuple: this._regexMatchTuple,
+      name: cdktf.stringToTerraform(this._name),
+      regex_match_tuple: cdktf.listMapper(wafRegexMatchSetRegexMatchTupleToTerraform)(this._regexMatchTuple),
     };
   }
 }

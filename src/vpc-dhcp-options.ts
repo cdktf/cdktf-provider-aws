@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcDhcpOptionsConfig extends TerraformMetaArguments {
+export interface VpcDhcpOptionsConfig extends cdktf.TerraformMetaArguments {
   readonly domainName?: string;
   readonly domainNameServers?: string[];
   readonly netbiosNameServers?: string[];
@@ -18,7 +17,7 @@ export interface VpcDhcpOptionsConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class VpcDhcpOptions extends TerraformResource {
+export class VpcDhcpOptions extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -164,12 +163,12 @@ export class VpcDhcpOptions extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: this._domainName,
-      domain_name_servers: this._domainNameServers,
-      netbios_name_servers: this._netbiosNameServers,
-      netbios_node_type: this._netbiosNodeType,
-      ntp_servers: this._ntpServers,
-      tags: this._tags,
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      domain_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._domainNameServers),
+      netbios_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._netbiosNameServers),
+      netbios_node_type: cdktf.stringToTerraform(this._netbiosNodeType),
+      ntp_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._ntpServers),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

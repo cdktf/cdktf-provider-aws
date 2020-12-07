@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OrganizationsAccountConfig extends TerraformMetaArguments {
+export interface OrganizationsAccountConfig extends cdktf.TerraformMetaArguments {
   readonly email: string;
   readonly iamUserAccessToBilling?: string;
   readonly name: string;
@@ -18,7 +17,7 @@ export interface OrganizationsAccountConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class OrganizationsAccount extends TerraformResource {
+export class OrganizationsAccount extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -168,12 +167,12 @@ export class OrganizationsAccount extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email: this._email,
-      iam_user_access_to_billing: this._iamUserAccessToBilling,
-      name: this._name,
-      parent_id: this._parentId,
-      role_name: this._roleName,
-      tags: this._tags,
+      email: cdktf.stringToTerraform(this._email),
+      iam_user_access_to_billing: cdktf.stringToTerraform(this._iamUserAccessToBilling),
+      name: cdktf.stringToTerraform(this._name),
+      parent_id: cdktf.stringToTerraform(this._parentId),
+      role_name: cdktf.stringToTerraform(this._roleName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

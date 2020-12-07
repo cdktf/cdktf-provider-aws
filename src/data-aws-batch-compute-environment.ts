@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsBatchComputeEnvironmentConfig extends TerraformMetaArguments {
+export interface DataAwsBatchComputeEnvironmentConfig extends cdktf.TerraformMetaArguments {
   readonly computeEnvironmentName: string;
 }
 
 // Resource
 
-export class DataAwsBatchComputeEnvironment extends TerraformDataSource {
+export class DataAwsBatchComputeEnvironment extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -96,7 +95,7 @@ export class DataAwsBatchComputeEnvironment extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_environment_name: this._computeEnvironmentName,
+      compute_environment_name: cdktf.stringToTerraform(this._computeEnvironmentName),
     };
   }
 }

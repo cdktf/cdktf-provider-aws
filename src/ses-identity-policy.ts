@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesIdentityPolicyConfig extends TerraformMetaArguments {
+export interface SesIdentityPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly identity: string;
   readonly name: string;
   readonly policy: string;
@@ -15,7 +14,7 @@ export interface SesIdentityPolicyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SesIdentityPolicy extends TerraformResource {
+export class SesIdentityPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,9 +90,9 @@ export class SesIdentityPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identity: this._identity,
-      name: this._name,
-      policy: this._policy,
+      identity: cdktf.stringToTerraform(this._identity),
+      name: cdktf.stringToTerraform(this._name),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

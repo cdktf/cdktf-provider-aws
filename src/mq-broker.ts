@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MqBrokerConfig extends TerraformMetaArguments {
+export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly autoMinorVersionUpgrade?: boolean;
   readonly brokerName: string;
@@ -31,7 +29,7 @@ export interface MqBrokerConfig extends TerraformMetaArguments {
   /** user block */
   readonly user: MqBrokerUser[];
 }
-export class MqBrokerInstances extends ComplexComputedList {
+export class MqBrokerInstances extends cdktf.ComplexComputedList {
 
   // console_url - computed: true, optional: false, required: false
   public get consoleUrl() {
@@ -52,19 +50,56 @@ export interface MqBrokerConfiguration {
   readonly id?: string;
   readonly revision?: number;
 }
+
+function mqBrokerConfigurationToTerraform(struct?: MqBrokerConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    revision: cdktf.numberToTerraform(struct!.revision),
+  }
+}
+
 export interface MqBrokerEncryptionOptions {
   readonly kmsKeyId?: string;
   readonly useAwsOwnedKey?: boolean;
 }
+
+function mqBrokerEncryptionOptionsToTerraform(struct?: MqBrokerEncryptionOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    use_aws_owned_key: cdktf.booleanToTerraform(struct!.useAwsOwnedKey),
+  }
+}
+
 export interface MqBrokerLogs {
   readonly audit?: boolean;
   readonly general?: boolean;
 }
+
+function mqBrokerLogsToTerraform(struct?: MqBrokerLogs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    audit: cdktf.booleanToTerraform(struct!.audit),
+    general: cdktf.booleanToTerraform(struct!.general),
+  }
+}
+
 export interface MqBrokerMaintenanceWindowStartTime {
   readonly dayOfWeek: string;
   readonly timeOfDay: string;
   readonly timeZone: string;
 }
+
+function mqBrokerMaintenanceWindowStartTimeToTerraform(struct?: MqBrokerMaintenanceWindowStartTime): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
+    time_of_day: cdktf.stringToTerraform(struct!.timeOfDay),
+    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+  }
+}
+
 export interface MqBrokerUser {
   readonly consoleAccess?: boolean;
   readonly groups?: string[];
@@ -72,9 +107,20 @@ export interface MqBrokerUser {
   readonly username: string;
 }
 
+function mqBrokerUserToTerraform(struct?: MqBrokerUser): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    console_access: cdktf.booleanToTerraform(struct!.consoleAccess),
+    groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.groups),
+    password: cdktf.stringToTerraform(struct!.password),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+
 // Resource
 
-export class MqBroker extends TerraformResource {
+export class MqBroker extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -372,22 +418,22 @@ export class MqBroker extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      broker_name: this._brokerName,
-      deployment_mode: this._deploymentMode,
-      engine_type: this._engineType,
-      engine_version: this._engineVersion,
-      host_instance_type: this._hostInstanceType,
-      publicly_accessible: this._publiclyAccessible,
-      security_groups: this._securityGroups,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      configuration: this._configuration,
-      encryption_options: this._encryptionOptions,
-      logs: this._logs,
-      maintenance_window_start_time: this._maintenanceWindowStartTime,
-      user: this._user,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      broker_name: cdktf.stringToTerraform(this._brokerName),
+      deployment_mode: cdktf.stringToTerraform(this._deploymentMode),
+      engine_type: cdktf.stringToTerraform(this._engineType),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      host_instance_type: cdktf.stringToTerraform(this._hostInstanceType),
+      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      configuration: cdktf.listMapper(mqBrokerConfigurationToTerraform)(this._configuration),
+      encryption_options: cdktf.listMapper(mqBrokerEncryptionOptionsToTerraform)(this._encryptionOptions),
+      logs: cdktf.listMapper(mqBrokerLogsToTerraform)(this._logs),
+      maintenance_window_start_time: cdktf.listMapper(mqBrokerMaintenanceWindowStartTimeToTerraform)(this._maintenanceWindowStartTime),
+      user: cdktf.listMapper(mqBrokerUserToTerraform)(this._user),
     };
   }
 }

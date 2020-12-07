@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRoute53ZoneConfig extends TerraformMetaArguments {
+export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly privateZone?: boolean;
   readonly resourceRecordSetCount?: number;
@@ -18,7 +17,7 @@ export interface DataAwsRoute53ZoneConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsRoute53Zone extends TerraformDataSource {
+export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -179,12 +178,12 @@ export class DataAwsRoute53Zone extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      private_zone: this._privateZone,
-      resource_record_set_count: this._resourceRecordSetCount,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      zone_id: this._zoneId,
+      name: cdktf.stringToTerraform(this._name),
+      private_zone: cdktf.booleanToTerraform(this._privateZone),
+      resource_record_set_count: cdktf.numberToTerraform(this._resourceRecordSetCount),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      zone_id: cdktf.stringToTerraform(this._zoneId),
     };
   }
 }

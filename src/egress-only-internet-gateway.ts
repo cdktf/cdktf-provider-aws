@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EgressOnlyInternetGatewayConfig extends TerraformMetaArguments {
+export interface EgressOnlyInternetGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly vpcId: string;
 }
 
 // Resource
 
-export class EgressOnlyInternetGateway extends TerraformResource {
+export class EgressOnlyInternetGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -79,8 +78,8 @@ export class EgressOnlyInternetGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      vpc_id: this._vpcId,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53ZoneConfig extends TerraformMetaArguments {
+export interface Route53ZoneConfig extends cdktf.TerraformMetaArguments {
   readonly comment?: string;
   readonly delegationSetId?: string;
   readonly forceDestroy?: boolean;
@@ -23,9 +22,18 @@ export interface Route53ZoneVpc {
   readonly vpcRegion?: string;
 }
 
+function route53ZoneVpcToTerraform(struct?: Route53ZoneVpc): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    vpc_region: cdktf.stringToTerraform(struct!.vpcRegion),
+  }
+}
+
+
 // Resource
 
-export class Route53Zone extends TerraformResource {
+export class Route53Zone extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -202,14 +210,14 @@ export class Route53Zone extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: this._comment,
-      delegation_set_id: this._delegationSetId,
-      force_destroy: this._forceDestroy,
-      name: this._name,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      vpc_region: this._vpcRegion,
-      vpc: this._vpc,
+      comment: cdktf.stringToTerraform(this._comment),
+      delegation_set_id: cdktf.stringToTerraform(this._delegationSetId),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      vpc_region: cdktf.stringToTerraform(this._vpcRegion),
+      vpc: cdktf.listMapper(route53ZoneVpcToTerraform)(this._vpc),
     };
   }
 }

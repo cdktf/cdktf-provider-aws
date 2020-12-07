@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyOrganizationAdminAccountConfig extends TerraformMetaArguments {
+export interface GuarddutyOrganizationAdminAccountConfig extends cdktf.TerraformMetaArguments {
   readonly adminAccountId: string;
 }
 
 // Resource
 
-export class GuarddutyOrganizationAdminAccount extends TerraformResource {
+export class GuarddutyOrganizationAdminAccount extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,7 +60,7 @@ export class GuarddutyOrganizationAdminAccount extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_account_id: this._adminAccountId,
+      admin_account_id: cdktf.stringToTerraform(this._adminAccountId),
     };
   }
 }

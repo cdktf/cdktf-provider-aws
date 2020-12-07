@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppsyncResolverConfig extends TerraformMetaArguments {
+export interface AppsyncResolverConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly dataSource?: string;
   readonly field: string;
@@ -24,13 +23,30 @@ export interface AppsyncResolverCachingConfig {
   readonly cachingKeys?: string[];
   readonly ttl?: number;
 }
+
+function appsyncResolverCachingConfigToTerraform(struct?: AppsyncResolverCachingConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    caching_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachingKeys),
+    ttl: cdktf.numberToTerraform(struct!.ttl),
+  }
+}
+
 export interface AppsyncResolverPipelineConfig {
   readonly functions?: string[];
 }
 
+function appsyncResolverPipelineConfigToTerraform(struct?: AppsyncResolverPipelineConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    functions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.functions),
+  }
+}
+
+
 // Resource
 
-export class AppsyncResolver extends TerraformResource {
+export class AppsyncResolver extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -207,15 +223,15 @@ export class AppsyncResolver extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      data_source: this._dataSource,
-      field: this._field,
-      kind: this._kind,
-      request_template: this._requestTemplate,
-      response_template: this._responseTemplate,
-      type: this._type,
-      caching_config: this._cachingConfig,
-      pipeline_config: this._pipelineConfig,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      data_source: cdktf.stringToTerraform(this._dataSource),
+      field: cdktf.stringToTerraform(this._field),
+      kind: cdktf.stringToTerraform(this._kind),
+      request_template: cdktf.stringToTerraform(this._requestTemplate),
+      response_template: cdktf.stringToTerraform(this._responseTemplate),
+      type: cdktf.stringToTerraform(this._type),
+      caching_config: cdktf.listMapper(appsyncResolverCachingConfigToTerraform)(this._cachingConfig),
+      pipeline_config: cdktf.listMapper(appsyncResolverPipelineConfigToTerraform)(this._pipelineConfig),
     };
   }
 }

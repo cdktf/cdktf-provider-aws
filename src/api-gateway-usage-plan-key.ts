@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayUsagePlanKeyConfig extends TerraformMetaArguments {
+export interface ApiGatewayUsagePlanKeyConfig extends cdktf.TerraformMetaArguments {
   readonly keyId: string;
   readonly keyType: string;
   readonly usagePlanId: string;
@@ -15,7 +14,7 @@ export interface ApiGatewayUsagePlanKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayUsagePlanKey extends TerraformResource {
+export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -101,9 +100,9 @@ export class ApiGatewayUsagePlanKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      key_id: this._keyId,
-      key_type: this._keyType,
-      usage_plan_id: this._usagePlanId,
+      key_id: cdktf.stringToTerraform(this._keyId),
+      key_type: cdktf.stringToTerraform(this._keyType),
+      usage_plan_id: cdktf.stringToTerraform(this._usagePlanId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointGcmChannelConfig extends TerraformMetaArguments {
+export interface PinpointGcmChannelConfig extends cdktf.TerraformMetaArguments {
   readonly apiKey: string;
   readonly applicationId: string;
   readonly enabled?: boolean;
@@ -15,7 +14,7 @@ export interface PinpointGcmChannelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PinpointGcmChannel extends TerraformResource {
+export class PinpointGcmChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -94,9 +93,9 @@ export class PinpointGcmChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: this._apiKey,
-      application_id: this._applicationId,
-      enabled: this._enabled,
+      api_key: cdktf.stringToTerraform(this._apiKey),
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      enabled: cdktf.booleanToTerraform(this._enabled),
     };
   }
 }

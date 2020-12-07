@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AmiFromInstanceConfig extends TerraformMetaArguments {
+export interface AmiFromInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly snapshotWithoutReboot?: boolean;
@@ -22,17 +21,41 @@ export interface AmiFromInstanceConfig extends TerraformMetaArguments {
 }
 export interface AmiFromInstanceEbsBlockDevice {
 }
+
+function amiFromInstanceEbsBlockDeviceToTerraform(struct?: AmiFromInstanceEbsBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+  }
+}
+
 export interface AmiFromInstanceEphemeralBlockDevice {
 }
+
+function amiFromInstanceEphemeralBlockDeviceToTerraform(struct?: AmiFromInstanceEphemeralBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+  }
+}
+
 export interface AmiFromInstanceTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function amiFromInstanceTimeoutsToTerraform(struct?: AmiFromInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class AmiFromInstance extends TerraformResource {
+export class AmiFromInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -251,14 +274,14 @@ export class AmiFromInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      snapshot_without_reboot: this._snapshotWithoutReboot,
-      source_instance_id: this._sourceInstanceId,
-      tags: this._tags,
-      ebs_block_device: this._ebsBlockDevice,
-      ephemeral_block_device: this._ephemeralBlockDevice,
-      timeouts: this._timeouts,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      snapshot_without_reboot: cdktf.booleanToTerraform(this._snapshotWithoutReboot),
+      source_instance_id: cdktf.stringToTerraform(this._sourceInstanceId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      ebs_block_device: cdktf.listMapper(amiFromInstanceEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
+      ephemeral_block_device: cdktf.listMapper(amiFromInstanceEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      timeouts: amiFromInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogSubscriptionFilterConfig extends TerraformMetaArguments {
+export interface CloudwatchLogSubscriptionFilterConfig extends cdktf.TerraformMetaArguments {
   readonly destinationArn: string;
   readonly distribution?: string;
   readonly filterPattern: string;
@@ -18,7 +17,7 @@ export interface CloudwatchLogSubscriptionFilterConfig extends TerraformMetaArgu
 
 // Resource
 
-export class CloudwatchLogSubscriptionFilter extends TerraformResource {
+export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -142,12 +141,12 @@ export class CloudwatchLogSubscriptionFilter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_arn: this._destinationArn,
-      distribution: this._distribution,
-      filter_pattern: this._filterPattern,
-      log_group_name: this._logGroupName,
-      name: this._name,
-      role_arn: this._roleArn,
+      destination_arn: cdktf.stringToTerraform(this._destinationArn),
+      distribution: cdktf.stringToTerraform(this._distribution),
+      filter_pattern: cdktf.stringToTerraform(this._filterPattern),
+      log_group_name: cdktf.stringToTerraform(this._logGroupName),
+      name: cdktf.stringToTerraform(this._name),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

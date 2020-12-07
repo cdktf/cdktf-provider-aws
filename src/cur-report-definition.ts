@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CurReportDefinitionConfig extends TerraformMetaArguments {
+export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly additionalArtifacts?: string[];
   readonly additionalSchemaElements: string[];
   readonly compression: string;
@@ -21,7 +20,7 @@ export interface CurReportDefinitionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CurReportDefinition extends TerraformResource {
+export class CurReportDefinition extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -187,15 +186,15 @@ export class CurReportDefinition extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_artifacts: this._additionalArtifacts,
-      additional_schema_elements: this._additionalSchemaElements,
-      compression: this._compression,
-      format: this._format,
-      report_name: this._reportName,
-      s3_bucket: this._s3Bucket,
-      s3_prefix: this._s3Prefix,
-      s3_region: this._s3Region,
-      time_unit: this._timeUnit,
+      additional_artifacts: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalArtifacts),
+      additional_schema_elements: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalSchemaElements),
+      compression: cdktf.stringToTerraform(this._compression),
+      format: cdktf.stringToTerraform(this._format),
+      report_name: cdktf.stringToTerraform(this._reportName),
+      s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
+      s3_prefix: cdktf.stringToTerraform(this._s3Prefix),
+      s3_region: cdktf.stringToTerraform(this._s3Region),
+      time_unit: cdktf.stringToTerraform(this._timeUnit),
     };
   }
 }

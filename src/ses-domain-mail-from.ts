@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesDomainMailFromConfig extends TerraformMetaArguments {
+export interface SesDomainMailFromConfig extends cdktf.TerraformMetaArguments {
   readonly behaviorOnMxFailure?: string;
   readonly domain: string;
   readonly mailFromDomain: string;
@@ -15,7 +14,7 @@ export interface SesDomainMailFromConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SesDomainMailFrom extends TerraformResource {
+export class SesDomainMailFrom extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -94,9 +93,9 @@ export class SesDomainMailFrom extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      behavior_on_mx_failure: this._behaviorOnMxFailure,
-      domain: this._domain,
-      mail_from_domain: this._mailFromDomain,
+      behavior_on_mx_failure: cdktf.stringToTerraform(this._behaviorOnMxFailure),
+      domain: cdktf.stringToTerraform(this._domain),
+      mail_from_domain: cdktf.stringToTerraform(this._mailFromDomain),
     };
   }
 }

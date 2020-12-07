@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxLagConfig extends TerraformMetaArguments {
+export interface DxLagConfig extends cdktf.TerraformMetaArguments {
   readonly connectionsBandwidth: string;
   readonly forceDestroy?: boolean;
   readonly location: string;
@@ -18,7 +17,7 @@ export interface DxLagConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DxLag extends TerraformResource {
+export class DxLag extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -160,12 +159,12 @@ export class DxLag extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connections_bandwidth: this._connectionsBandwidth,
-      force_destroy: this._forceDestroy,
-      location: this._location,
-      name: this._name,
-      number_of_connections: this._numberOfConnections,
-      tags: this._tags,
+      connections_bandwidth: cdktf.stringToTerraform(this._connectionsBandwidth),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      location: cdktf.stringToTerraform(this._location),
+      name: cdktf.stringToTerraform(this._name),
+      number_of_connections: cdktf.numberToTerraform(this._numberOfConnections),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

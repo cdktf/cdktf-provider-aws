@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAutoscalingGroupConfig extends TerraformMetaArguments {
+export interface DataAwsAutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsAutoscalingGroup extends TerraformDataSource {
+export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -146,7 +145,7 @@ export class DataAwsAutoscalingGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

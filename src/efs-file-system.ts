@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EfsFileSystemConfig extends TerraformMetaArguments {
+export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly creationToken?: string;
   readonly encrypted?: boolean;
   readonly kmsKeyId?: string;
@@ -23,9 +22,17 @@ export interface EfsFileSystemLifecyclePolicy {
   readonly transitionToIa: string;
 }
 
+function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLifecyclePolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    transition_to_ia: cdktf.stringToTerraform(struct!.transitionToIa),
+  }
+}
+
+
 // Resource
 
-export class EfsFileSystem extends TerraformResource {
+export class EfsFileSystem extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -222,15 +229,15 @@ export class EfsFileSystem extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      creation_token: this._creationToken,
-      encrypted: this._encrypted,
-      kms_key_id: this._kmsKeyId,
-      performance_mode: this._performanceMode,
-      provisioned_throughput_in_mibps: this._provisionedThroughputInMibps,
-      reference_name: this._referenceName,
-      tags: this._tags,
-      throughput_mode: this._throughputMode,
-      lifecycle_policy: this._lifecyclePolicy,
+      creation_token: cdktf.stringToTerraform(this._creationToken),
+      encrypted: cdktf.booleanToTerraform(this._encrypted),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      performance_mode: cdktf.stringToTerraform(this._performanceMode),
+      provisioned_throughput_in_mibps: cdktf.numberToTerraform(this._provisionedThroughputInMibps),
+      reference_name: cdktf.stringToTerraform(this._referenceName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      throughput_mode: cdktf.stringToTerraform(this._throughputMode),
+      lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform)(this._lifecyclePolicy),
     };
   }
 }

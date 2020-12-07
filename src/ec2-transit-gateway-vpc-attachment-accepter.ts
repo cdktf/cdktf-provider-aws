@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayVpcAttachmentAccepterConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayVpcAttachmentAccepterConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly transitGatewayAttachmentId: string;
   readonly transitGatewayDefaultRouteTableAssociation?: boolean;
@@ -16,7 +15,7 @@ export interface Ec2TransitGatewayVpcAttachmentAccepterConfig extends TerraformM
 
 // Resource
 
-export class Ec2TransitGatewayVpcAttachmentAccepter extends TerraformResource {
+export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -145,10 +144,10 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      transit_gateway_attachment_id: this._transitGatewayAttachmentId,
-      transit_gateway_default_route_table_association: this._transitGatewayDefaultRouteTableAssociation,
-      transit_gateway_default_route_table_propagation: this._transitGatewayDefaultRouteTablePropagation,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_default_route_table_association: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTableAssociation),
+      transit_gateway_default_route_table_propagation: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTablePropagation),
     };
   }
 }

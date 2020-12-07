@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayClientCertificateConfig extends TerraformMetaArguments {
+export interface ApiGatewayClientCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class ApiGatewayClientCertificate extends TerraformResource {
+export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,8 +101,8 @@ export class ApiGatewayClientCertificate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

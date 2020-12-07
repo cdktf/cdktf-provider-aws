@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WorkspacesIpGroupConfig extends TerraformMetaArguments {
+export interface WorkspacesIpGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface WorkspacesIpGroupRules {
   readonly source: string;
 }
 
+function workspacesIpGroupRulesToTerraform(struct?: WorkspacesIpGroupRules): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    source: cdktf.stringToTerraform(struct!.source),
+  }
+}
+
+
 // Resource
 
-export class WorkspacesIpGroup extends TerraformResource {
+export class WorkspacesIpGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -120,10 +128,10 @@ export class WorkspacesIpGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      tags: this._tags,
-      rules: this._rules,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      rules: cdktf.listMapper(workspacesIpGroupRulesToTerraform)(this._rules),
     };
   }
 }

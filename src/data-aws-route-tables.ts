@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRouteTablesConfig extends TerraformMetaArguments {
+export interface DataAwsRouteTablesConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly vpcId?: string;
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsRouteTablesFilter {
   readonly values: string[];
 }
 
+function dataAwsRouteTablesFilterToTerraform(struct?: DataAwsRouteTablesFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsRouteTables extends TerraformDataSource {
+export class DataAwsRouteTables extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -110,9 +118,9 @@ export class DataAwsRouteTables extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      filter: this._filter,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      filter: cdktf.listMapper(dataAwsRouteTablesFilterToTerraform)(this._filter),
     };
   }
 }

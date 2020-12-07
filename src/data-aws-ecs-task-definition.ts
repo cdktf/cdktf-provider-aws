@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcsTaskDefinitionConfig extends TerraformMetaArguments {
+export interface DataAwsEcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly taskDefinition: string;
 }
 
 // Resource
 
-export class DataAwsEcsTaskDefinition extends TerraformDataSource {
+export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -86,7 +85,7 @@ export class DataAwsEcsTaskDefinition extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      task_definition: this._taskDefinition,
+      task_definition: cdktf.stringToTerraform(this._taskDefinition),
     };
   }
 }

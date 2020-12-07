@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface InspectorAssessmentTemplateConfig extends TerraformMetaArguments {
+export interface InspectorAssessmentTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly duration: number;
   readonly name: string;
   readonly rulesPackageArns: string[];
@@ -17,7 +16,7 @@ export interface InspectorAssessmentTemplateConfig extends TerraformMetaArgument
 
 // Resource
 
-export class InspectorAssessmentTemplate extends TerraformResource {
+export class InspectorAssessmentTemplate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -129,11 +128,11 @@ export class InspectorAssessmentTemplate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      duration: this._duration,
-      name: this._name,
-      rules_package_arns: this._rulesPackageArns,
-      tags: this._tags,
-      target_arn: this._targetArn,
+      duration: cdktf.numberToTerraform(this._duration),
+      name: cdktf.stringToTerraform(this._name),
+      rules_package_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._rulesPackageArns),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_arn: cdktf.stringToTerraform(this._targetArn),
     };
   }
 }

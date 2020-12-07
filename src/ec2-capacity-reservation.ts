@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2CapacityReservationConfig extends TerraformMetaArguments {
+export interface Ec2CapacityReservationConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone: string;
   readonly ebsOptimized?: boolean;
   readonly endDate?: string;
@@ -23,7 +22,7 @@ export interface Ec2CapacityReservationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2CapacityReservation extends TerraformResource {
+export class Ec2CapacityReservation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -237,17 +236,17 @@ export class Ec2CapacityReservation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      ebs_optimized: this._ebsOptimized,
-      end_date: this._endDate,
-      end_date_type: this._endDateType,
-      ephemeral_storage: this._ephemeralStorage,
-      instance_count: this._instanceCount,
-      instance_match_criteria: this._instanceMatchCriteria,
-      instance_platform: this._instancePlatform,
-      instance_type: this._instanceType,
-      tags: this._tags,
-      tenancy: this._tenancy,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
+      end_date: cdktf.stringToTerraform(this._endDate),
+      end_date_type: cdktf.stringToTerraform(this._endDateType),
+      ephemeral_storage: cdktf.booleanToTerraform(this._ephemeralStorage),
+      instance_count: cdktf.numberToTerraform(this._instanceCount),
+      instance_match_criteria: cdktf.stringToTerraform(this._instanceMatchCriteria),
+      instance_platform: cdktf.stringToTerraform(this._instancePlatform),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tenancy: cdktf.stringToTerraform(this._tenancy),
     };
   }
 }

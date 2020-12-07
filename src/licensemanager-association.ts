@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LicensemanagerAssociationConfig extends TerraformMetaArguments {
+export interface LicensemanagerAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly licenseConfigurationArn: string;
   readonly resourceArn: string;
 }
 
 // Resource
 
-export class LicensemanagerAssociation extends TerraformResource {
+export class LicensemanagerAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class LicensemanagerAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      license_configuration_arn: this._licenseConfigurationArn,
-      resource_arn: this._resourceArn,
+      license_configuration_arn: cdktf.stringToTerraform(this._licenseConfigurationArn),
+      resource_arn: cdktf.stringToTerraform(this._resourceArn),
     };
   }
 }

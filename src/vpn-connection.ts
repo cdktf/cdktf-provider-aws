@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpnConnectionConfig extends TerraformMetaArguments {
+export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly customerGatewayId: string;
   readonly staticRoutesOnly?: boolean;
   readonly tags?: { [key: string]: string };
@@ -20,7 +18,7 @@ export interface VpnConnectionConfig extends TerraformMetaArguments {
   readonly type: string;
   readonly vpnGatewayId?: string;
 }
-export class VpnConnectionRoutes extends ComplexComputedList {
+export class VpnConnectionRoutes extends cdktf.ComplexComputedList {
 
   // destination_cidr_block - computed: true, optional: false, required: false
   public get destinationCidrBlock() {
@@ -37,7 +35,7 @@ export class VpnConnectionRoutes extends ComplexComputedList {
     return this.getStringAttribute('state');
   }
 }
-export class VpnConnectionVgwTelemetry extends ComplexComputedList {
+export class VpnConnectionVgwTelemetry extends cdktf.ComplexComputedList {
 
   // accepted_route_count - computed: true, optional: false, required: false
   public get acceptedRouteCount() {
@@ -67,7 +65,7 @@ export class VpnConnectionVgwTelemetry extends ComplexComputedList {
 
 // Resource
 
-export class VpnConnection extends TerraformResource {
+export class VpnConnection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -340,16 +338,16 @@ export class VpnConnection extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      customer_gateway_id: this._customerGatewayId,
-      static_routes_only: this._staticRoutesOnly,
-      tags: this._tags,
-      transit_gateway_id: this._transitGatewayId,
-      tunnel1_inside_cidr: this._tunnel1InsideCidr,
-      tunnel1_preshared_key: this._tunnel1PresharedKey,
-      tunnel2_inside_cidr: this._tunnel2InsideCidr,
-      tunnel2_preshared_key: this._tunnel2PresharedKey,
-      type: this._type,
-      vpn_gateway_id: this._vpnGatewayId,
+      customer_gateway_id: cdktf.stringToTerraform(this._customerGatewayId),
+      static_routes_only: cdktf.booleanToTerraform(this._staticRoutesOnly),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      tunnel1_inside_cidr: cdktf.stringToTerraform(this._tunnel1InsideCidr),
+      tunnel1_preshared_key: cdktf.stringToTerraform(this._tunnel1PresharedKey),
+      tunnel2_inside_cidr: cdktf.stringToTerraform(this._tunnel2InsideCidr),
+      tunnel2_preshared_key: cdktf.stringToTerraform(this._tunnel2PresharedKey),
+      type: cdktf.stringToTerraform(this._type),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
     };
   }
 }

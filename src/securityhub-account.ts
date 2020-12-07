@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecurityhubAccountConfig extends TerraformMetaArguments {
+export interface SecurityhubAccountConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class SecurityhubAccount extends TerraformResource {
+export class SecurityhubAccount extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER

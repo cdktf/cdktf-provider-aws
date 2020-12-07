@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LoadBalancerBackendServerPolicyConfig extends TerraformMetaArguments {
+export interface LoadBalancerBackendServerPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly instancePort: number;
   readonly loadBalancerName: string;
   readonly policyNames?: string[];
@@ -15,7 +14,7 @@ export interface LoadBalancerBackendServerPolicyConfig extends TerraformMetaArgu
 
 // Resource
 
-export class LoadBalancerBackendServerPolicy extends TerraformResource {
+export class LoadBalancerBackendServerPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -94,9 +93,9 @@ export class LoadBalancerBackendServerPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_port: this._instancePort,
-      load_balancer_name: this._loadBalancerName,
-      policy_names: this._policyNames,
+      instance_port: cdktf.numberToTerraform(this._instancePort),
+      load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
+      policy_names: cdktf.listMapper(cdktf.stringToTerraform)(this._policyNames),
     };
   }
 }

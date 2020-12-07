@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface FlowLogConfig extends TerraformMetaArguments {
+export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
   readonly eniId?: string;
   readonly iamRoleArn?: string;
   readonly logDestination?: string;
@@ -23,7 +22,7 @@ export interface FlowLogConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class FlowLog extends TerraformResource {
+export class FlowLog extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -246,17 +245,17 @@ export class FlowLog extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      eni_id: this._eniId,
-      iam_role_arn: this._iamRoleArn,
-      log_destination: this._logDestination,
-      log_destination_type: this._logDestinationType,
-      log_format: this._logFormat,
-      log_group_name: this._logGroupName,
-      max_aggregation_interval: this._maxAggregationInterval,
-      subnet_id: this._subnetId,
-      tags: this._tags,
-      traffic_type: this._trafficType,
-      vpc_id: this._vpcId,
+      eni_id: cdktf.stringToTerraform(this._eniId),
+      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      log_destination: cdktf.stringToTerraform(this._logDestination),
+      log_destination_type: cdktf.stringToTerraform(this._logDestinationType),
+      log_format: cdktf.stringToTerraform(this._logFormat),
+      log_group_name: cdktf.stringToTerraform(this._logGroupName),
+      max_aggregation_interval: cdktf.numberToTerraform(this._maxAggregationInterval),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      traffic_type: cdktf.stringToTerraform(this._trafficType),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

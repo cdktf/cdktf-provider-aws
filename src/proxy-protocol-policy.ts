@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ProxyProtocolPolicyConfig extends TerraformMetaArguments {
+export interface ProxyProtocolPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly instancePorts: string[];
   readonly loadBalancer: string;
 }
 
 // Resource
 
-export class ProxyProtocolPolicy extends TerraformResource {
+export class ProxyProtocolPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class ProxyProtocolPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_ports: this._instancePorts,
-      load_balancer: this._loadBalancer,
+      instance_ports: cdktf.listMapper(cdktf.stringToTerraform)(this._instancePorts),
+      load_balancer: cdktf.stringToTerraform(this._loadBalancer),
     };
   }
 }

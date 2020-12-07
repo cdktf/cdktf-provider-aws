@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NatGatewayConfig extends TerraformMetaArguments {
+export interface NatGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly allocationId: string;
   readonly subnetId: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface NatGatewayConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class NatGateway extends TerraformResource {
+export class NatGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -109,9 +108,9 @@ export class NatGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_id: this._allocationId,
-      subnet_id: this._subnetId,
-      tags: this._tags,
+      allocation_id: cdktf.stringToTerraform(this._allocationId),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

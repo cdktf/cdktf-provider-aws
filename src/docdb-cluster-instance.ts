@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DocdbClusterInstanceConfig extends TerraformMetaArguments {
+export interface DocdbClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly autoMinorVersionUpgrade?: boolean;
   readonly availabilityZone?: string;
@@ -29,9 +28,19 @@ export interface DocdbClusterInstanceTimeouts {
   readonly update?: string;
 }
 
+function docdbClusterInstanceTimeoutsToTerraform(struct?: DocdbClusterInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DocdbClusterInstance extends TerraformResource {
+export class DocdbClusterInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -335,19 +344,19 @@ export class DocdbClusterInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      availability_zone: this._availabilityZone,
-      ca_cert_identifier: this._caCertIdentifier,
-      cluster_identifier: this._clusterIdentifier,
-      engine: this._engine,
-      identifier: this._identifier,
-      identifier_prefix: this._identifierPrefix,
-      instance_class: this._instanceClass,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      promotion_tier: this._promotionTier,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      engine: cdktf.stringToTerraform(this._engine),
+      identifier: cdktf.stringToTerraform(this._identifier),
+      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
+      instance_class: cdktf.stringToTerraform(this._instanceClass),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      promotion_tier: cdktf.numberToTerraform(this._promotionTier),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: docdbClusterInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

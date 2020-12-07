@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3AccountPublicAccessBlockConfig extends TerraformMetaArguments {
+export interface S3AccountPublicAccessBlockConfig extends cdktf.TerraformMetaArguments {
   readonly accountId?: string;
   readonly blockPublicAcls?: boolean;
   readonly blockPublicPolicy?: boolean;
@@ -17,7 +16,7 @@ export interface S3AccountPublicAccessBlockConfig extends TerraformMetaArguments
 
 // Resource
 
-export class S3AccountPublicAccessBlock extends TerraformResource {
+export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -136,11 +135,11 @@ export class S3AccountPublicAccessBlock extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      block_public_acls: this._blockPublicAcls,
-      block_public_policy: this._blockPublicPolicy,
-      ignore_public_acls: this._ignorePublicAcls,
-      restrict_public_buckets: this._restrictPublicBuckets,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      block_public_acls: cdktf.booleanToTerraform(this._blockPublicAcls),
+      block_public_policy: cdktf.booleanToTerraform(this._blockPublicPolicy),
+      ignore_public_acls: cdktf.booleanToTerraform(this._ignorePublicAcls),
+      restrict_public_buckets: cdktf.booleanToTerraform(this._restrictPublicBuckets),
     };
   }
 }

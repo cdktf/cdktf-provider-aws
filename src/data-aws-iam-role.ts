@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamRoleConfig extends TerraformMetaArguments {
+export interface DataAwsIamRoleConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly roleName?: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface DataAwsIamRoleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsIamRole extends TerraformDataSource {
+export class DataAwsIamRole extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -147,9 +146,9 @@ export class DataAwsIamRole extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      role_name: this._roleName,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      role_name: cdktf.stringToTerraform(this._roleName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

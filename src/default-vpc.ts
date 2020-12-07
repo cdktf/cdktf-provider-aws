@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultVpcConfig extends TerraformMetaArguments {
+export interface DefaultVpcConfig extends cdktf.TerraformMetaArguments {
   readonly enableClassiclink?: boolean;
   readonly enableClassiclinkDnsSupport?: boolean;
   readonly enableDnsHostnames?: boolean;
@@ -17,7 +16,7 @@ export interface DefaultVpcConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DefaultVpc extends TerraformResource {
+export class DefaultVpc extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -196,11 +195,11 @@ export class DefaultVpc extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable_classiclink: this._enableClassiclink,
-      enable_classiclink_dns_support: this._enableClassiclinkDnsSupport,
-      enable_dns_hostnames: this._enableDnsHostnames,
-      enable_dns_support: this._enableDnsSupport,
-      tags: this._tags,
+      enable_classiclink: cdktf.booleanToTerraform(this._enableClassiclink),
+      enable_classiclink_dns_support: cdktf.booleanToTerraform(this._enableClassiclinkDnsSupport),
+      enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
+      enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

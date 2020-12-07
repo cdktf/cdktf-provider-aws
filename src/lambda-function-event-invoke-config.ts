@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LambdaFunctionEventInvokeConfigConfig extends TerraformMetaArguments {
+export interface LambdaFunctionEventInvokeConfigConfig extends cdktf.TerraformMetaArguments {
   readonly functionName: string;
   readonly maximumEventAgeInSeconds?: number;
   readonly maximumRetryAttempts?: number;
@@ -18,9 +17,25 @@ export interface LambdaFunctionEventInvokeConfigConfig extends TerraformMetaArgu
 export interface LambdaFunctionEventInvokeConfigDestinationConfigOnFailure {
   readonly destination: string;
 }
+
+function lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailure): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+  }
+}
+
 export interface LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess {
   readonly destination: string;
 }
+
+function lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    destination: cdktf.stringToTerraform(struct!.destination),
+  }
+}
+
 export interface LambdaFunctionEventInvokeConfigDestinationConfig {
   /** on_failure block */
   readonly onFailure?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailure[];
@@ -28,9 +43,18 @@ export interface LambdaFunctionEventInvokeConfigDestinationConfig {
   readonly onSuccess?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess[];
 }
 
+function lambdaFunctionEventInvokeConfigDestinationConfigToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    on_failure: cdktf.listMapper(lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerraform)(struct!.onFailure),
+    on_success: cdktf.listMapper(lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerraform)(struct!.onSuccess),
+  }
+}
+
+
 // Resource
 
-export class LambdaFunctionEventInvokeConfig extends TerraformResource {
+export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -146,11 +170,11 @@ export class LambdaFunctionEventInvokeConfig extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: this._functionName,
-      maximum_event_age_in_seconds: this._maximumEventAgeInSeconds,
-      maximum_retry_attempts: this._maximumRetryAttempts,
-      qualifier: this._qualifier,
-      destination_config: this._destinationConfig,
+      function_name: cdktf.stringToTerraform(this._functionName),
+      maximum_event_age_in_seconds: cdktf.numberToTerraform(this._maximumEventAgeInSeconds),
+      maximum_retry_attempts: cdktf.numberToTerraform(this._maximumRetryAttempts),
+      qualifier: cdktf.stringToTerraform(this._qualifier),
+      destination_config: cdktf.listMapper(lambdaFunctionEventInvokeConfigDestinationConfigToTerraform)(this._destinationConfig),
     };
   }
 }

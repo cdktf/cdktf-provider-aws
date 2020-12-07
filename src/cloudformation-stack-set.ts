@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudformationStackSetConfig extends TerraformMetaArguments {
+export interface CloudformationStackSetConfig extends cdktf.TerraformMetaArguments {
   readonly administrationRoleArn: string;
   readonly capabilities?: string[];
   readonly description?: string;
@@ -24,9 +23,17 @@ export interface CloudformationStackSetTimeouts {
   readonly update?: string;
 }
 
+function cloudformationStackSetTimeoutsToTerraform(struct?: CloudformationStackSetTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class CloudformationStackSet extends TerraformResource {
+export class CloudformationStackSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -234,16 +241,16 @@ export class CloudformationStackSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administration_role_arn: this._administrationRoleArn,
-      capabilities: this._capabilities,
-      description: this._description,
-      execution_role_name: this._executionRoleName,
-      name: this._name,
-      parameters: this._parameters,
-      tags: this._tags,
-      template_body: this._templateBody,
-      template_url: this._templateUrl,
-      timeouts: this._timeouts,
+      administration_role_arn: cdktf.stringToTerraform(this._administrationRoleArn),
+      capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._capabilities),
+      description: cdktf.stringToTerraform(this._description),
+      execution_role_name: cdktf.stringToTerraform(this._executionRoleName),
+      name: cdktf.stringToTerraform(this._name),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      template_body: cdktf.stringToTerraform(this._templateBody),
+      template_url: cdktf.stringToTerraform(this._templateUrl),
+      timeouts: cloudformationStackSetTimeoutsToTerraform(this._timeouts),
     };
   }
 }

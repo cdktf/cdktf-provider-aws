@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogDestinationPolicyConfig extends TerraformMetaArguments {
+export interface CloudwatchLogDestinationPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly accessPolicy: string;
   readonly destinationName: string;
 }
 
 // Resource
 
-export class CloudwatchLogDestinationPolicy extends TerraformResource {
+export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class CloudwatchLogDestinationPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policy: this._accessPolicy,
-      destination_name: this._destinationName,
+      access_policy: cdktf.stringToTerraform(this._accessPolicy),
+      destination_name: cdktf.stringToTerraform(this._destinationName),
     };
   }
 }

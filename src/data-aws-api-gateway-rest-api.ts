@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsApiGatewayRestApiConfig extends TerraformMetaArguments {
+export interface DataAwsApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsApiGatewayRestApiEndpointConfiguration extends ComplexComputedList {
+export class DataAwsApiGatewayRestApiEndpointConfiguration extends cdktf.ComplexComputedList {
 
   // types - computed: true, optional: false, required: false
   public get types() {
@@ -27,7 +25,7 @@ export class DataAwsApiGatewayRestApiEndpointConfiguration extends ComplexComput
 
 // Resource
 
-export class DataAwsApiGatewayRestApi extends TerraformDataSource {
+export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -137,8 +135,8 @@ export class DataAwsApiGatewayRestApi extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

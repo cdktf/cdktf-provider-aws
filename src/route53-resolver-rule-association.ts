@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53ResolverRuleAssociationConfig extends TerraformMetaArguments {
+export interface Route53ResolverRuleAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly resolverRuleId: string;
   readonly vpcId: string;
@@ -19,9 +18,18 @@ export interface Route53ResolverRuleAssociationTimeouts {
   readonly delete?: string;
 }
 
+function route53ResolverRuleAssociationTimeoutsToTerraform(struct?: Route53ResolverRuleAssociationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class Route53ResolverRuleAssociation extends TerraformResource {
+export class Route53ResolverRuleAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -117,10 +125,10 @@ export class Route53ResolverRuleAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      resolver_rule_id: this._resolverRuleId,
-      vpc_id: this._vpcId,
-      timeouts: this._timeouts,
+      name: cdktf.stringToTerraform(this._name),
+      resolver_rule_id: cdktf.stringToTerraform(this._resolverRuleId),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      timeouts: route53ResolverRuleAssociationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

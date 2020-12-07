@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodedeployAppConfig extends TerraformMetaArguments {
+export interface CodedeployAppConfig extends cdktf.TerraformMetaArguments {
   readonly computePlatform?: string;
   readonly name: string;
   readonly uniqueId?: string;
@@ -15,7 +14,7 @@ export interface CodedeployAppConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CodedeployApp extends TerraformResource {
+export class CodedeployApp extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -97,9 +96,9 @@ export class CodedeployApp extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_platform: this._computePlatform,
-      name: this._name,
-      unique_id: this._uniqueId,
+      compute_platform: cdktf.stringToTerraform(this._computePlatform),
+      name: cdktf.stringToTerraform(this._name),
+      unique_id: cdktf.stringToTerraform(this._uniqueId),
     };
   }
 }

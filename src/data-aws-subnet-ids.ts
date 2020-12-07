@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSubnetIdsConfig extends TerraformMetaArguments {
+export interface DataAwsSubnetIdsConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly vpcId: string;
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsSubnetIdsFilter {
   readonly values: string[];
 }
 
+function dataAwsSubnetIdsFilterToTerraform(struct?: DataAwsSubnetIdsFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsSubnetIds extends TerraformDataSource {
+export class DataAwsSubnetIds extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -107,9 +115,9 @@ export class DataAwsSubnetIds extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      filter: this._filter,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      filter: cdktf.listMapper(dataAwsSubnetIdsFilterToTerraform)(this._filter),
     };
   }
 }

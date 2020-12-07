@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecretsmanagerSecretRotationConfig extends TerraformMetaArguments {
+export interface SecretsmanagerSecretRotationConfig extends cdktf.TerraformMetaArguments {
   readonly rotationLambdaArn: string;
   readonly secretId: string;
   readonly tags?: { [key: string]: string };
@@ -18,9 +17,17 @@ export interface SecretsmanagerSecretRotationRotationRules {
   readonly automaticallyAfterDays: number;
 }
 
+function secretsmanagerSecretRotationRotationRulesToTerraform(struct?: SecretsmanagerSecretRotationRotationRules): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    automatically_after_days: cdktf.numberToTerraform(struct!.automaticallyAfterDays),
+  }
+}
+
+
 // Resource
 
-export class SecretsmanagerSecretRotation extends TerraformResource {
+export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -118,10 +125,10 @@ export class SecretsmanagerSecretRotation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      rotation_lambda_arn: this._rotationLambdaArn,
-      secret_id: this._secretId,
-      tags: this._tags,
-      rotation_rules: this._rotationRules,
+      rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
+      secret_id: cdktf.stringToTerraform(this._secretId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      rotation_rules: cdktf.listMapper(secretsmanagerSecretRotationRotationRulesToTerraform)(this._rotationRules),
     };
   }
 }

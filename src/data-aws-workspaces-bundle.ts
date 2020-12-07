@@ -2,32 +2,30 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsWorkspacesBundleConfig extends TerraformMetaArguments {
+export interface DataAwsWorkspacesBundleConfig extends cdktf.TerraformMetaArguments {
   readonly bundleId?: string;
   readonly name?: string;
   readonly owner?: string;
 }
-export class DataAwsWorkspacesBundleComputeType extends ComplexComputedList {
+export class DataAwsWorkspacesBundleComputeType extends cdktf.ComplexComputedList {
 
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 }
-export class DataAwsWorkspacesBundleRootStorage extends ComplexComputedList {
+export class DataAwsWorkspacesBundleRootStorage extends cdktf.ComplexComputedList {
 
   // capacity - computed: true, optional: false, required: false
   public get capacity() {
     return this.getStringAttribute('capacity');
   }
 }
-export class DataAwsWorkspacesBundleUserStorage extends ComplexComputedList {
+export class DataAwsWorkspacesBundleUserStorage extends cdktf.ComplexComputedList {
 
   // capacity - computed: true, optional: false, required: false
   public get capacity() {
@@ -37,7 +35,7 @@ export class DataAwsWorkspacesBundleUserStorage extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsWorkspacesBundle extends TerraformDataSource {
+export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -142,9 +140,9 @@ export class DataAwsWorkspacesBundle extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_id: this._bundleId,
-      name: this._name,
-      owner: this._owner,
+      bundle_id: cdktf.stringToTerraform(this._bundleId),
+      name: cdktf.stringToTerraform(this._name),
+      owner: cdktf.stringToTerraform(this._owner),
     };
   }
 }

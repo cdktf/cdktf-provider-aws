@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointSmsChannelConfig extends TerraformMetaArguments {
+export interface PinpointSmsChannelConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
   readonly enabled?: boolean;
   readonly senderId?: string;
@@ -16,7 +15,7 @@ export interface PinpointSmsChannelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PinpointSmsChannel extends TerraformResource {
+export class PinpointSmsChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -125,10 +124,10 @@ export class PinpointSmsChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: this._applicationId,
-      enabled: this._enabled,
-      sender_id: this._senderId,
-      short_code: this._shortCode,
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      sender_id: cdktf.stringToTerraform(this._senderId),
+      short_code: cdktf.stringToTerraform(this._shortCode),
     };
   }
 }

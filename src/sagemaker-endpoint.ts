@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SagemakerEndpointConfig extends TerraformMetaArguments {
+export interface SagemakerEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly endpointConfigName: string;
   readonly name?: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface SagemakerEndpointConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SagemakerEndpoint extends TerraformResource {
+export class SagemakerEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +101,9 @@ export class SagemakerEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_config_name: this._endpointConfigName,
-      name: this._name,
-      tags: this._tags,
+      endpoint_config_name: cdktf.stringToTerraform(this._endpointConfigName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

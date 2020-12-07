@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AlbListenerCertificateConfig extends TerraformMetaArguments {
+export interface AlbListenerCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly certificateArn: string;
   readonly listenerArn: string;
 }
 
 // Resource
 
-export class AlbListenerCertificate extends TerraformResource {
+export class AlbListenerCertificate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class AlbListenerCertificate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: this._certificateArn,
-      listener_arn: this._listenerArn,
+      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
+      listener_arn: cdktf.stringToTerraform(this._listenerArn),
     };
   }
 }

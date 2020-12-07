@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRoute53ResolverRuleConfig extends TerraformMetaArguments {
+export interface DataAwsRoute53ResolverRuleConfig extends cdktf.TerraformMetaArguments {
   readonly domainName?: string;
   readonly name?: string;
   readonly resolverEndpointId?: string;
@@ -18,7 +17,7 @@ export interface DataAwsRoute53ResolverRuleConfig extends TerraformMetaArguments
 
 // Resource
 
-export class DataAwsRoute53ResolverRule extends TerraformDataSource {
+export class DataAwsRoute53ResolverRule extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -169,12 +168,12 @@ export class DataAwsRoute53ResolverRule extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: this._domainName,
-      name: this._name,
-      resolver_endpoint_id: this._resolverEndpointId,
-      resolver_rule_id: this._resolverRuleId,
-      rule_type: this._ruleType,
-      tags: this._tags,
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      name: cdktf.stringToTerraform(this._name),
+      resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
+      resolver_rule_id: cdktf.stringToTerraform(this._resolverRuleId),
+      rule_type: cdktf.stringToTerraform(this._ruleType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

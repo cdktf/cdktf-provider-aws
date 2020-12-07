@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppautoscalingTargetConfig extends TerraformMetaArguments {
+export interface AppautoscalingTargetConfig extends cdktf.TerraformMetaArguments {
   readonly maxCapacity: number;
   readonly minCapacity: number;
   readonly resourceId: string;
@@ -18,7 +17,7 @@ export interface AppautoscalingTargetConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AppautoscalingTarget extends TerraformResource {
+export class AppautoscalingTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -139,12 +138,12 @@ export class AppautoscalingTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      max_capacity: this._maxCapacity,
-      min_capacity: this._minCapacity,
-      resource_id: this._resourceId,
-      role_arn: this._roleArn,
-      scalable_dimension: this._scalableDimension,
-      service_namespace: this._serviceNamespace,
+      max_capacity: cdktf.numberToTerraform(this._maxCapacity),
+      min_capacity: cdktf.numberToTerraform(this._minCapacity),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      scalable_dimension: cdktf.stringToTerraform(this._scalableDimension),
+      service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
     };
   }
 }

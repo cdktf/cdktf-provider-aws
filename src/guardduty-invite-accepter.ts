@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyInviteAccepterConfig extends TerraformMetaArguments {
+export interface GuarddutyInviteAccepterConfig extends cdktf.TerraformMetaArguments {
   readonly detectorId: string;
   readonly masterAccountId: string;
   /** timeouts block */
@@ -17,9 +16,17 @@ export interface GuarddutyInviteAccepterTimeouts {
   readonly create?: string;
 }
 
+function guarddutyInviteAccepterTimeoutsToTerraform(struct?: GuarddutyInviteAccepterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class GuarddutyInviteAccepter extends TerraformResource {
+export class GuarddutyInviteAccepter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -98,9 +105,9 @@ export class GuarddutyInviteAccepter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      detector_id: this._detectorId,
-      master_account_id: this._masterAccountId,
-      timeouts: this._timeouts,
+      detector_id: cdktf.stringToTerraform(this._detectorId),
+      master_account_id: cdktf.stringToTerraform(this._masterAccountId),
+      timeouts: guarddutyInviteAccepterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

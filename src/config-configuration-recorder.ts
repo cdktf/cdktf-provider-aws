@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigConfigurationRecorderConfig extends TerraformMetaArguments {
+export interface ConfigConfigurationRecorderConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly roleArn: string;
   /** recording_group block */
@@ -19,9 +18,19 @@ export interface ConfigConfigurationRecorderRecordingGroup {
   readonly resourceTypes?: string[];
 }
 
+function configConfigurationRecorderRecordingGroupToTerraform(struct?: ConfigConfigurationRecorderRecordingGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    all_supported: cdktf.booleanToTerraform(struct!.allSupported),
+    include_global_resource_types: cdktf.booleanToTerraform(struct!.includeGlobalResourceTypes),
+    resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceTypes),
+  }
+}
+
+
 // Resource
 
-export class ConfigConfigurationRecorder extends TerraformResource {
+export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -103,9 +112,9 @@ export class ConfigConfigurationRecorder extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      role_arn: this._roleArn,
-      recording_group: this._recordingGroup,
+      name: cdktf.stringToTerraform(this._name),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      recording_group: cdktf.listMapper(configConfigurationRecorderRecordingGroupToTerraform)(this._recordingGroup),
     };
   }
 }

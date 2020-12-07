@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SnsSmsPreferencesConfig extends TerraformMetaArguments {
+export interface SnsSmsPreferencesConfig extends cdktf.TerraformMetaArguments {
   readonly defaultSenderId?: string;
   readonly defaultSmsType?: string;
   readonly deliveryStatusIamRoleArn?: string;
@@ -18,7 +17,7 @@ export interface SnsSmsPreferencesConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SnsSmsPreferences extends TerraformResource {
+export class SnsSmsPreferences extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -154,12 +153,12 @@ export class SnsSmsPreferences extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_sender_id: this._defaultSenderId,
-      default_sms_type: this._defaultSmsType,
-      delivery_status_iam_role_arn: this._deliveryStatusIamRoleArn,
-      delivery_status_success_sampling_rate: this._deliveryStatusSuccessSamplingRate,
-      monthly_spend_limit: this._monthlySpendLimit,
-      usage_report_s3_bucket: this._usageReportS3Bucket,
+      default_sender_id: cdktf.stringToTerraform(this._defaultSenderId),
+      default_sms_type: cdktf.stringToTerraform(this._defaultSmsType),
+      delivery_status_iam_role_arn: cdktf.stringToTerraform(this._deliveryStatusIamRoleArn),
+      delivery_status_success_sampling_rate: cdktf.stringToTerraform(this._deliveryStatusSuccessSamplingRate),
+      monthly_spend_limit: cdktf.stringToTerraform(this._monthlySpendLimit),
+      usage_report_s3_bucket: cdktf.stringToTerraform(this._usageReportS3Bucket),
     };
   }
 }

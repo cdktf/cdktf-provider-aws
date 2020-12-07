@@ -2,15 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOrganizationsOrganizationConfig extends TerraformMetaArguments {
+export interface DataAwsOrganizationsOrganizationConfig extends cdktf.TerraformMetaArguments {
 }
-export class DataAwsOrganizationsOrganizationAccounts extends ComplexComputedList {
+export class DataAwsOrganizationsOrganizationAccounts extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -37,7 +35,7 @@ export class DataAwsOrganizationsOrganizationAccounts extends ComplexComputedLis
     return this.getStringAttribute('status');
   }
 }
-export class DataAwsOrganizationsOrganizationNonMasterAccounts extends ComplexComputedList {
+export class DataAwsOrganizationsOrganizationNonMasterAccounts extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -64,7 +62,7 @@ export class DataAwsOrganizationsOrganizationNonMasterAccounts extends ComplexCo
     return this.getStringAttribute('status');
   }
 }
-export class DataAwsOrganizationsOrganizationRootsPolicyTypes extends ComplexComputedList {
+export class DataAwsOrganizationsOrganizationRootsPolicyTypes extends cdktf.ComplexComputedList {
 
   // status - computed: true, optional: false, required: false
   public get status() {
@@ -76,7 +74,7 @@ export class DataAwsOrganizationsOrganizationRootsPolicyTypes extends ComplexCom
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsOrganizationsOrganizationRoots extends ComplexComputedList {
+export class DataAwsOrganizationsOrganizationRoots extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -101,7 +99,7 @@ export class DataAwsOrganizationsOrganizationRoots extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsOrganizationsOrganization extends TerraformDataSource {
+export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

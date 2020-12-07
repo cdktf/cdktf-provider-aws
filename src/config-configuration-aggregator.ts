@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigConfigurationAggregatorConfig extends TerraformMetaArguments {
+export interface ConfigConfigurationAggregatorConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** account_aggregation_source block */
@@ -20,15 +19,35 @@ export interface ConfigConfigurationAggregatorAccountAggregationSource {
   readonly allRegions?: boolean;
   readonly regions?: string[];
 }
+
+function configConfigurationAggregatorAccountAggregationSourceToTerraform(struct?: ConfigConfigurationAggregatorAccountAggregationSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    account_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.accountIds),
+    all_regions: cdktf.booleanToTerraform(struct!.allRegions),
+    regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regions),
+  }
+}
+
 export interface ConfigConfigurationAggregatorOrganizationAggregationSource {
   readonly allRegions?: boolean;
   readonly regions?: string[];
   readonly roleArn: string;
 }
 
+function configConfigurationAggregatorOrganizationAggregationSourceToTerraform(struct?: ConfigConfigurationAggregatorOrganizationAggregationSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    all_regions: cdktf.booleanToTerraform(struct!.allRegions),
+    regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regions),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
+
 // Resource
 
-export class ConfigConfigurationAggregator extends TerraformResource {
+export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -132,10 +151,10 @@ export class ConfigConfigurationAggregator extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
-      account_aggregation_source: this._accountAggregationSource,
-      organization_aggregation_source: this._organizationAggregationSource,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      account_aggregation_source: cdktf.listMapper(configConfigurationAggregatorAccountAggregationSourceToTerraform)(this._accountAggregationSource),
+      organization_aggregation_source: cdktf.listMapper(configConfigurationAggregatorOrganizationAggregationSourceToTerraform)(this._organizationAggregationSource),
     };
   }
 }

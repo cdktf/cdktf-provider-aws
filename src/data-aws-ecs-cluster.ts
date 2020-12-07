@@ -2,16 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcsClusterConfig extends TerraformMetaArguments {
+export interface DataAwsEcsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly clusterName: string;
 }
-export class DataAwsEcsClusterSetting extends ComplexComputedList {
+export class DataAwsEcsClusterSetting extends cdktf.ComplexComputedList {
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -26,7 +24,7 @@ export class DataAwsEcsClusterSetting extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsEcsCluster extends TerraformDataSource {
+export class DataAwsEcsCluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -104,7 +102,7 @@ export class DataAwsEcsCluster extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: this._clusterName,
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
     };
   }
 }

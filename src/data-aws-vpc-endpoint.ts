@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpcEndpointConfig extends TerraformMetaArguments {
+export interface DataAwsVpcEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly serviceName?: string;
   readonly state?: string;
   readonly tags?: { [key: string]: string };
@@ -16,7 +14,7 @@ export interface DataAwsVpcEndpointConfig extends TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsVpcEndpointFilter[];
 }
-export class DataAwsVpcEndpointDnsEntry extends ComplexComputedList {
+export class DataAwsVpcEndpointDnsEntry extends cdktf.ComplexComputedList {
 
   // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
@@ -33,9 +31,18 @@ export interface DataAwsVpcEndpointFilter {
   readonly values: string[];
 }
 
+function dataAwsVpcEndpointFilterToTerraform(struct?: DataAwsVpcEndpointFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsVpcEndpoint extends TerraformDataSource {
+export class DataAwsVpcEndpoint extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -219,11 +226,11 @@ export class DataAwsVpcEndpoint extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      service_name: this._serviceName,
-      state: this._state,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      filter: this._filter,
+      service_name: cdktf.stringToTerraform(this._serviceName),
+      state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      filter: cdktf.listMapper(dataAwsVpcEndpointFilterToTerraform)(this._filter),
     };
   }
 }

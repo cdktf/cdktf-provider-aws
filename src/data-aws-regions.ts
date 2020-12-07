@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRegionsConfig extends TerraformMetaArguments {
+export interface DataAwsRegionsConfig extends cdktf.TerraformMetaArguments {
   readonly allRegions?: boolean;
   /** filter block */
   readonly filter?: DataAwsRegionsFilter[];
@@ -17,9 +16,18 @@ export interface DataAwsRegionsFilter {
   readonly values: string[];
 }
 
+function dataAwsRegionsFilterToTerraform(struct?: DataAwsRegionsFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsRegions extends TerraformDataSource {
+export class DataAwsRegions extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -92,8 +100,8 @@ export class DataAwsRegions extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_regions: this._allRegions,
-      filter: this._filter,
+      all_regions: cdktf.booleanToTerraform(this._allRegions),
+      filter: cdktf.listMapper(dataAwsRegionsFilterToTerraform)(this._filter),
     };
   }
 }

@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticBeanstalkEnvironmentConfig extends TerraformMetaArguments {
+export interface ElasticBeanstalkEnvironmentConfig extends cdktf.TerraformMetaArguments {
   readonly application: string;
   readonly cnamePrefix?: string;
   readonly description?: string;
@@ -24,7 +22,7 @@ export interface ElasticBeanstalkEnvironmentConfig extends TerraformMetaArgument
   /** setting block */
   readonly setting?: ElasticBeanstalkEnvironmentSetting[];
 }
-export class ElasticBeanstalkEnvironmentAllSettings extends ComplexComputedList {
+export class ElasticBeanstalkEnvironmentAllSettings extends cdktf.ComplexComputedList {
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -53,9 +51,20 @@ export interface ElasticBeanstalkEnvironmentSetting {
   readonly value: string;
 }
 
+function elasticBeanstalkEnvironmentSettingToTerraform(struct?: ElasticBeanstalkEnvironmentSetting): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    namespace: cdktf.stringToTerraform(struct!.namespace),
+    resource: cdktf.stringToTerraform(struct!.resource),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class ElasticBeanstalkEnvironment extends TerraformResource {
+export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -354,19 +363,19 @@ export class ElasticBeanstalkEnvironment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application: this._application,
-      cname_prefix: this._cnamePrefix,
-      description: this._description,
-      name: this._name,
-      platform_arn: this._platformArn,
-      poll_interval: this._pollInterval,
-      solution_stack_name: this._solutionStackName,
-      tags: this._tags,
-      template_name: this._templateName,
-      tier: this._tier,
-      version_label: this._versionLabel,
-      wait_for_ready_timeout: this._waitForReadyTimeout,
-      setting: this._setting,
+      application: cdktf.stringToTerraform(this._application),
+      cname_prefix: cdktf.stringToTerraform(this._cnamePrefix),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      platform_arn: cdktf.stringToTerraform(this._platformArn),
+      poll_interval: cdktf.stringToTerraform(this._pollInterval),
+      solution_stack_name: cdktf.stringToTerraform(this._solutionStackName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      template_name: cdktf.stringToTerraform(this._templateName),
+      tier: cdktf.stringToTerraform(this._tier),
+      version_label: cdktf.stringToTerraform(this._versionLabel),
+      wait_for_ready_timeout: cdktf.stringToTerraform(this._waitForReadyTimeout),
+      setting: cdktf.listMapper(elasticBeanstalkEnvironmentSettingToTerraform)(this._setting),
     };
   }
 }

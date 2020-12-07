@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmResourceDataSyncConfig extends TerraformMetaArguments {
+export interface SsmResourceDataSyncConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** s3_destination block */
   readonly s3Destination: SsmResourceDataSyncS3Destination[];
@@ -20,9 +19,21 @@ export interface SsmResourceDataSyncS3Destination {
   readonly syncFormat?: string;
 }
 
+function ssmResourceDataSyncS3DestinationToTerraform(struct?: SsmResourceDataSyncS3Destination): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    region: cdktf.stringToTerraform(struct!.region),
+    sync_format: cdktf.stringToTerraform(struct!.syncFormat),
+  }
+}
+
+
 // Resource
 
-export class SsmResourceDataSync extends TerraformResource {
+export class SsmResourceDataSync extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -84,8 +95,8 @@ export class SsmResourceDataSync extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      s3_destination: this._s3Destination,
+      name: cdktf.stringToTerraform(this._name),
+      s3_destination: cdktf.listMapper(ssmResourceDataSyncS3DestinationToTerraform)(this._s3Destination),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GameliftGameSessionQueueConfig extends TerraformMetaArguments {
+export interface GameliftGameSessionQueueConfig extends cdktf.TerraformMetaArguments {
   readonly destinations?: string[];
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -20,9 +19,18 @@ export interface GameliftGameSessionQueuePlayerLatencyPolicy {
   readonly policyDurationSeconds?: number;
 }
 
+function gameliftGameSessionQueuePlayerLatencyPolicyToTerraform(struct?: GameliftGameSessionQueuePlayerLatencyPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    maximum_individual_player_latency_milliseconds: cdktf.numberToTerraform(struct!.maximumIndividualPlayerLatencyMilliseconds),
+    policy_duration_seconds: cdktf.numberToTerraform(struct!.policyDurationSeconds),
+  }
+}
+
+
 // Resource
 
-export class GameliftGameSessionQueue extends TerraformResource {
+export class GameliftGameSessionQueue extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -143,11 +151,11 @@ export class GameliftGameSessionQueue extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destinations: this._destinations,
-      name: this._name,
-      tags: this._tags,
-      timeout_in_seconds: this._timeoutInSeconds,
-      player_latency_policy: this._playerLatencyPolicy,
+      destinations: cdktf.listMapper(cdktf.stringToTerraform)(this._destinations),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeout_in_seconds: cdktf.numberToTerraform(this._timeoutInSeconds),
+      player_latency_policy: cdktf.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform)(this._playerLatencyPolicy),
     };
   }
 }

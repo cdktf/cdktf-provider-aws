@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RedshiftSnapshotScheduleAssociationConfig extends TerraformMetaArguments {
+export interface RedshiftSnapshotScheduleAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly clusterIdentifier: string;
   readonly scheduleIdentifier: string;
 }
 
 // Resource
 
-export class RedshiftSnapshotScheduleAssociation extends TerraformResource {
+export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class RedshiftSnapshotScheduleAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_identifier: this._clusterIdentifier,
-      schedule_identifier: this._scheduleIdentifier,
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      schedule_identifier: cdktf.stringToTerraform(this._scheduleIdentifier),
     };
   }
 }

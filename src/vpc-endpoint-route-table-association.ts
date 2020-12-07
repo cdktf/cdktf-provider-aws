@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointRouteTableAssociationConfig extends TerraformMetaArguments {
+export interface VpcEndpointRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly routeTableId: string;
   readonly vpcEndpointId: string;
 }
 
 // Resource
 
-export class VpcEndpointRouteTableAssociation extends TerraformResource {
+export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class VpcEndpointRouteTableAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      route_table_id: this._routeTableId,
-      vpc_endpoint_id: this._vpcEndpointId,
+      route_table_id: cdktf.stringToTerraform(this._routeTableId),
+      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
     };
   }
 }

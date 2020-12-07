@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsServicequotasServiceConfig extends TerraformMetaArguments {
+export interface DataAwsServicequotasServiceConfig extends cdktf.TerraformMetaArguments {
   readonly serviceName: string;
 }
 
 // Resource
 
-export class DataAwsServicequotasService extends TerraformDataSource {
+export class DataAwsServicequotasService extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -66,7 +65,7 @@ export class DataAwsServicequotasService extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      service_name: this._serviceName,
+      service_name: cdktf.stringToTerraform(this._serviceName),
     };
   }
 }

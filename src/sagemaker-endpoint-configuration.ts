@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SagemakerEndpointConfigurationConfig extends TerraformMetaArguments {
+export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly kmsKeyArn?: string;
   readonly name?: string;
   readonly tags?: { [key: string]: string };
@@ -23,9 +22,22 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   readonly variantName?: string;
 }
 
+function sagemakerEndpointConfigurationProductionVariantsToTerraform(struct?: SagemakerEndpointConfigurationProductionVariants): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
+    initial_instance_count: cdktf.numberToTerraform(struct!.initialInstanceCount),
+    initial_variant_weight: cdktf.numberToTerraform(struct!.initialVariantWeight),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    model_name: cdktf.stringToTerraform(struct!.modelName),
+    variant_name: cdktf.stringToTerraform(struct!.variantName),
+  }
+}
+
+
 // Resource
 
-export class SagemakerEndpointConfiguration extends TerraformResource {
+export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -129,10 +141,10 @@ export class SagemakerEndpointConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_arn: this._kmsKeyArn,
-      name: this._name,
-      tags: this._tags,
-      production_variants: this._productionVariants,
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform)(this._productionVariants),
     };
   }
 }

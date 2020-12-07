@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppmeshVirtualServiceConfig extends TerraformMetaArguments {
+export interface AppmeshVirtualServiceConfig extends cdktf.TerraformMetaArguments {
   readonly meshName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -17,23 +16,56 @@ export interface AppmeshVirtualServiceConfig extends TerraformMetaArguments {
 export interface AppmeshVirtualServiceSpecProviderVirtualNode {
   readonly virtualNodeName: string;
 }
+
+function appmeshVirtualServiceSpecProviderVirtualNodeToTerraform(struct?: AppmeshVirtualServiceSpecProviderVirtualNode): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    virtual_node_name: cdktf.stringToTerraform(struct!.virtualNodeName),
+  }
+}
+
 export interface AppmeshVirtualServiceSpecProviderVirtualRouter {
   readonly virtualRouterName: string;
 }
+
+function appmeshVirtualServiceSpecProviderVirtualRouterToTerraform(struct?: AppmeshVirtualServiceSpecProviderVirtualRouter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    virtual_router_name: cdktf.stringToTerraform(struct!.virtualRouterName),
+  }
+}
+
 export interface AppmeshVirtualServiceSpecProvider {
   /** virtual_node block */
   readonly virtualNode?: AppmeshVirtualServiceSpecProviderVirtualNode[];
   /** virtual_router block */
   readonly virtualRouter?: AppmeshVirtualServiceSpecProviderVirtualRouter[];
 }
+
+function appmeshVirtualServiceSpecProviderToTerraform(struct?: AppmeshVirtualServiceSpecProvider): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    virtual_node: cdktf.listMapper(appmeshVirtualServiceSpecProviderVirtualNodeToTerraform)(struct!.virtualNode),
+    virtual_router: cdktf.listMapper(appmeshVirtualServiceSpecProviderVirtualRouterToTerraform)(struct!.virtualRouter),
+  }
+}
+
 export interface AppmeshVirtualServiceSpec {
   /** provider block */
   readonly provider?: AppmeshVirtualServiceSpecProvider[];
 }
 
+function appmeshVirtualServiceSpecToTerraform(struct?: AppmeshVirtualServiceSpec): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    provider: cdktf.listMapper(appmeshVirtualServiceSpecProviderToTerraform)(struct!.provider),
+  }
+}
+
+
 // Resource
 
-export class AppmeshVirtualService extends TerraformResource {
+export class AppmeshVirtualService extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -141,10 +173,10 @@ export class AppmeshVirtualService extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mesh_name: this._meshName,
-      name: this._name,
-      tags: this._tags,
-      spec: this._spec,
+      mesh_name: cdktf.stringToTerraform(this._meshName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      spec: cdktf.listMapper(appmeshVirtualServiceSpecToTerraform)(this._spec),
     };
   }
 }

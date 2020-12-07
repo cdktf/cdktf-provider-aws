@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface QldbLedgerConfig extends TerraformMetaArguments {
+export interface QldbLedgerConfig extends cdktf.TerraformMetaArguments {
   readonly deletionProtection?: boolean;
   readonly name?: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface QldbLedgerConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class QldbLedger extends TerraformResource {
+export class QldbLedger extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -105,9 +104,9 @@ export class QldbLedger extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection: this._deletionProtection,
-      name: this._name,
-      tags: this._tags,
+      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

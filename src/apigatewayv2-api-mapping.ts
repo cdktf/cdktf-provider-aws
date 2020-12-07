@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2ApiMappingConfig extends TerraformMetaArguments {
+export interface Apigatewayv2ApiMappingConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly apiMappingKey?: string;
   readonly domainName: string;
@@ -16,7 +15,7 @@ export interface Apigatewayv2ApiMappingConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Apigatewayv2ApiMapping extends TerraformResource {
+export class Apigatewayv2ApiMapping extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -109,10 +108,10 @@ export class Apigatewayv2ApiMapping extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      api_mapping_key: this._apiMappingKey,
-      domain_name: this._domainName,
-      stage: this._stage,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      api_mapping_key: cdktf.stringToTerraform(this._apiMappingKey),
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      stage: cdktf.stringToTerraform(this._stage),
     };
   }
 }

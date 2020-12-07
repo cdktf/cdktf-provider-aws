@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAutoscalingGroupsConfig extends TerraformMetaArguments {
+export interface DataAwsAutoscalingGroupsConfig extends cdktf.TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsAutoscalingGroupsFilter[];
 }
@@ -16,9 +15,18 @@ export interface DataAwsAutoscalingGroupsFilter {
   readonly values: string[];
 }
 
+function dataAwsAutoscalingGroupsFilterToTerraform(struct?: DataAwsAutoscalingGroupsFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsAutoscalingGroups extends TerraformDataSource {
+export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -79,7 +87,7 @@ export class DataAwsAutoscalingGroups extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter: this._filter,
+      filter: cdktf.listMapper(dataAwsAutoscalingGroupsFilterToTerraform)(this._filter),
     };
   }
 }

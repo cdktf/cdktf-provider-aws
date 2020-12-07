@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DmsReplicationSubnetGroupConfig extends TerraformMetaArguments {
+export interface DmsReplicationSubnetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly replicationSubnetGroupDescription: string;
   readonly replicationSubnetGroupId: string;
   readonly subnetIds: string[];
@@ -16,7 +15,7 @@ export interface DmsReplicationSubnetGroupConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class DmsReplicationSubnetGroup extends TerraformResource {
+export class DmsReplicationSubnetGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,10 +118,10 @@ export class DmsReplicationSubnetGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      replication_subnet_group_description: this._replicationSubnetGroupDescription,
-      replication_subnet_group_id: this._replicationSubnetGroupId,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
+      replication_subnet_group_description: cdktf.stringToTerraform(this._replicationSubnetGroupDescription),
+      replication_subnet_group_id: cdktf.stringToTerraform(this._replicationSubnetGroupId),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElasticBeanstalkHostedZoneConfig extends TerraformMetaArguments {
+export interface DataAwsElasticBeanstalkHostedZoneConfig extends cdktf.TerraformMetaArguments {
   readonly region?: string;
 }
 
 // Resource
 
-export class DataAwsElasticBeanstalkHostedZone extends TerraformDataSource {
+export class DataAwsElasticBeanstalkHostedZone extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -64,7 +63,7 @@ export class DataAwsElasticBeanstalkHostedZone extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: this._region,
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 }

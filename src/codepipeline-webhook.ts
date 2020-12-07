@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodepipelineWebhookConfig extends TerraformMetaArguments {
+export interface CodepipelineWebhookConfig extends cdktf.TerraformMetaArguments {
   readonly authentication: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -22,14 +21,32 @@ export interface CodepipelineWebhookAuthenticationConfiguration {
   readonly allowedIpRange?: string;
   readonly secretToken?: string;
 }
+
+function codepipelineWebhookAuthenticationConfigurationToTerraform(struct?: CodepipelineWebhookAuthenticationConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allowed_ip_range: cdktf.stringToTerraform(struct!.allowedIpRange),
+    secret_token: cdktf.stringToTerraform(struct!.secretToken),
+  }
+}
+
 export interface CodepipelineWebhookFilter {
   readonly jsonPath: string;
   readonly matchEquals: string;
 }
 
+function codepipelineWebhookFilterToTerraform(struct?: CodepipelineWebhookFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    json_path: cdktf.stringToTerraform(struct!.jsonPath),
+    match_equals: cdktf.stringToTerraform(struct!.matchEquals),
+  }
+}
+
+
 // Resource
 
-export class CodepipelineWebhook extends TerraformResource {
+export class CodepipelineWebhook extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -172,13 +189,13 @@ export class CodepipelineWebhook extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication: this._authentication,
-      name: this._name,
-      tags: this._tags,
-      target_action: this._targetAction,
-      target_pipeline: this._targetPipeline,
-      authentication_configuration: this._authenticationConfiguration,
-      filter: this._filter,
+      authentication: cdktf.stringToTerraform(this._authentication),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_action: cdktf.stringToTerraform(this._targetAction),
+      target_pipeline: cdktf.stringToTerraform(this._targetPipeline),
+      authentication_configuration: cdktf.listMapper(codepipelineWebhookAuthenticationConfigurationToTerraform)(this._authenticationConfiguration),
+      filter: cdktf.listMapper(codepipelineWebhookFilterToTerraform)(this._filter),
     };
   }
 }

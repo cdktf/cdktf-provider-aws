@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueSecurityConfigurationConfig extends TerraformMetaArguments {
+export interface GlueSecurityConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** encryption_configuration block */
   readonly encryptionConfiguration: GlueSecurityConfigurationEncryptionConfiguration[];
@@ -16,14 +15,41 @@ export interface GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncry
   readonly cloudwatchEncryptionMode?: string;
   readonly kmsKeyArn?: string;
 }
+
+function glueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionToTerraform(struct?: GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cloudwatch_encryption_mode: cdktf.stringToTerraform(struct!.cloudwatchEncryptionMode),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+  }
+}
+
 export interface GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption {
   readonly jobBookmarksEncryptionMode?: string;
   readonly kmsKeyArn?: string;
 }
+
+function glueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionToTerraform(struct?: GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    job_bookmarks_encryption_mode: cdktf.stringToTerraform(struct!.jobBookmarksEncryptionMode),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+  }
+}
+
 export interface GlueSecurityConfigurationEncryptionConfigurationS3Encryption {
   readonly kmsKeyArn?: string;
   readonly s3EncryptionMode?: string;
 }
+
+function glueSecurityConfigurationEncryptionConfigurationS3EncryptionToTerraform(struct?: GlueSecurityConfigurationEncryptionConfigurationS3Encryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+    s3_encryption_mode: cdktf.stringToTerraform(struct!.s3EncryptionMode),
+  }
+}
+
 export interface GlueSecurityConfigurationEncryptionConfiguration {
   /** cloudwatch_encryption block */
   readonly cloudwatchEncryption: GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption[];
@@ -33,9 +59,19 @@ export interface GlueSecurityConfigurationEncryptionConfiguration {
   readonly s3Encryption: GlueSecurityConfigurationEncryptionConfigurationS3Encryption[];
 }
 
+function glueSecurityConfigurationEncryptionConfigurationToTerraform(struct?: GlueSecurityConfigurationEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cloudwatch_encryption: cdktf.listMapper(glueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionToTerraform)(struct!.cloudwatchEncryption),
+    job_bookmarks_encryption: cdktf.listMapper(glueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionToTerraform)(struct!.jobBookmarksEncryption),
+    s3_encryption: cdktf.listMapper(glueSecurityConfigurationEncryptionConfigurationS3EncryptionToTerraform)(struct!.s3Encryption),
+  }
+}
+
+
 // Resource
 
-export class GlueSecurityConfiguration extends TerraformResource {
+export class GlueSecurityConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -97,8 +133,8 @@ export class GlueSecurityConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      encryption_configuration: this._encryptionConfiguration,
+      name: cdktf.stringToTerraform(this._name),
+      encryption_configuration: cdktf.listMapper(glueSecurityConfigurationEncryptionConfigurationToTerraform)(this._encryptionConfiguration),
     };
   }
 }

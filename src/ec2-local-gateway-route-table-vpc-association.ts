@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2LocalGatewayRouteTableVpcAssociationConfig extends TerraformMetaArguments {
+export interface Ec2LocalGatewayRouteTableVpcAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly localGatewayRouteTableId: string;
   readonly tags?: { [key: string]: string };
   readonly vpcId: string;
@@ -15,7 +14,7 @@ export interface Ec2LocalGatewayRouteTableVpcAssociationConfig extends Terraform
 
 // Resource
 
-export class Ec2LocalGatewayRouteTableVpcAssociation extends TerraformResource {
+export class Ec2LocalGatewayRouteTableVpcAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +98,9 @@ export class Ec2LocalGatewayRouteTableVpcAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      local_gateway_route_table_id: this._localGatewayRouteTableId,
-      tags: this._tags,
-      vpc_id: this._vpcId,
+      local_gateway_route_table_id: cdktf.stringToTerraform(this._localGatewayRouteTableId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TransferUserConfig extends TerraformMetaArguments {
+export interface TransferUserConfig extends cdktf.TerraformMetaArguments {
   readonly homeDirectory?: string;
   readonly policy?: string;
   readonly role: string;
@@ -18,7 +17,7 @@ export interface TransferUserConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class TransferUser extends TerraformResource {
+export class TransferUser extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -150,12 +149,12 @@ export class TransferUser extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      home_directory: this._homeDirectory,
-      policy: this._policy,
-      role: this._role,
-      server_id: this._serverId,
-      tags: this._tags,
-      user_name: this._userName,
+      home_directory: cdktf.stringToTerraform(this._homeDirectory),
+      policy: cdktf.stringToTerraform(this._policy),
+      role: cdktf.stringToTerraform(this._role),
+      server_id: cdktf.stringToTerraform(this._serverId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      user_name: cdktf.stringToTerraform(this._userName),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalWebAclConfig extends TerraformMetaArguments {
+export interface WafregionalWebAclConfig extends cdktf.TerraformMetaArguments {
   readonly metricName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -21,25 +20,75 @@ export interface WafregionalWebAclConfig extends TerraformMetaArguments {
 export interface WafregionalWebAclDefaultAction {
   readonly type: string;
 }
+
+function wafregionalWebAclDefaultActionToTerraform(struct?: WafregionalWebAclDefaultAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform(struct?: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalWebAclLoggingConfigurationRedactedFields {
   /** field_to_match block */
   readonly fieldToMatch: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[];
 }
+
+function wafregionalWebAclLoggingConfigurationRedactedFieldsToTerraform(struct?: WafregionalWebAclLoggingConfigurationRedactedFields): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    field_to_match: cdktf.listMapper(wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
 export interface WafregionalWebAclLoggingConfiguration {
   readonly logDestination: string;
   /** redacted_fields block */
   readonly redactedFields?: WafregionalWebAclLoggingConfigurationRedactedFields[];
 }
+
+function wafregionalWebAclLoggingConfigurationToTerraform(struct?: WafregionalWebAclLoggingConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    log_destination: cdktf.stringToTerraform(struct!.logDestination),
+    redacted_fields: cdktf.listMapper(wafregionalWebAclLoggingConfigurationRedactedFieldsToTerraform)(struct!.redactedFields),
+  }
+}
+
 export interface WafregionalWebAclRuleAction {
   readonly type: string;
 }
+
+function wafregionalWebAclRuleActionToTerraform(struct?: WafregionalWebAclRuleAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalWebAclRuleOverrideAction {
   readonly type: string;
 }
+
+function wafregionalWebAclRuleOverrideActionToTerraform(struct?: WafregionalWebAclRuleOverrideAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalWebAclRule {
   readonly priority: number;
   readonly ruleId: string;
@@ -50,9 +99,21 @@ export interface WafregionalWebAclRule {
   readonly overrideAction?: WafregionalWebAclRuleOverrideAction[];
 }
 
+function wafregionalWebAclRuleToTerraform(struct?: WafregionalWebAclRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    priority: cdktf.numberToTerraform(struct!.priority),
+    rule_id: cdktf.stringToTerraform(struct!.ruleId),
+    type: cdktf.stringToTerraform(struct!.type),
+    action: cdktf.listMapper(wafregionalWebAclRuleActionToTerraform)(struct!.action),
+    override_action: cdktf.listMapper(wafregionalWebAclRuleOverrideActionToTerraform)(struct!.overrideAction),
+  }
+}
+
+
 // Resource
 
-export class WafregionalWebAcl extends TerraformResource {
+export class WafregionalWebAcl extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -184,12 +245,12 @@ export class WafregionalWebAcl extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      metric_name: this._metricName,
-      name: this._name,
-      tags: this._tags,
-      default_action: this._defaultAction,
-      logging_configuration: this._loggingConfiguration,
-      rule: this._rule,
+      metric_name: cdktf.stringToTerraform(this._metricName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      default_action: cdktf.listMapper(wafregionalWebAclDefaultActionToTerraform)(this._defaultAction),
+      logging_configuration: cdktf.listMapper(wafregionalWebAclLoggingConfigurationToTerraform)(this._loggingConfiguration),
+      rule: cdktf.listMapper(wafregionalWebAclRuleToTerraform)(this._rule),
     };
   }
 }

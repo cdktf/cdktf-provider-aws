@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsVolumeConfig extends TerraformMetaArguments {
+export interface DataAwsEbsVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly mostRecent?: boolean;
   readonly tags?: { [key: string]: string };
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsEbsVolumeFilter {
   readonly values: string[];
 }
 
+function dataAwsEbsVolumeFilterToTerraform(struct?: DataAwsEbsVolumeFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEbsVolume extends TerraformDataSource {
+export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -160,9 +168,9 @@ export class DataAwsEbsVolume extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      most_recent: this._mostRecent,
-      tags: this._tags,
-      filter: this._filter,
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEbsVolumeFilterToTerraform)(this._filter),
     };
   }
 }

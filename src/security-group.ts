@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecurityGroupConfig extends TerraformMetaArguments {
+export interface SecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly egress?: SecurityGroupEgress[];
   readonly ingress?: SecurityGroupIngress[];
@@ -30,6 +29,22 @@ export interface SecurityGroupEgress {
   readonly selfAttribute?: boolean;
   readonly toPort?: number;
 }
+
+function securityGroupEgressToTerraform(struct?: SecurityGroupEgress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrBlocks),
+    description: cdktf.stringToTerraform(struct!.description),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.prefixListIds),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    self: cdktf.booleanToTerraform(struct!.selfAttribute),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface SecurityGroupIngress {
   readonly cidrBlocks?: string[];
   readonly description?: string;
@@ -41,14 +56,39 @@ export interface SecurityGroupIngress {
   readonly selfAttribute?: boolean;
   readonly toPort?: number;
 }
+
+function securityGroupIngressToTerraform(struct?: SecurityGroupIngress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrBlocks),
+    description: cdktf.stringToTerraform(struct!.description),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.prefixListIds),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    self: cdktf.booleanToTerraform(struct!.selfAttribute),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface SecurityGroupTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
+function securityGroupTimeoutsToTerraform(struct?: SecurityGroupTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class SecurityGroup extends TerraformResource {
+export class SecurityGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -245,15 +285,15 @@ export class SecurityGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      egress: this._egress,
-      ingress: this._ingress,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      revoke_rules_on_delete: this._revokeRulesOnDelete,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      timeouts: this._timeouts,
+      description: cdktf.stringToTerraform(this._description),
+      egress: cdktf.listMapper(securityGroupEgressToTerraform)(this._egress),
+      ingress: cdktf.listMapper(securityGroupIngressToTerraform)(this._ingress),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      revoke_rules_on_delete: cdktf.booleanToTerraform(this._revokeRulesOnDelete),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      timeouts: securityGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

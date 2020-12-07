@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamUserConfig extends TerraformMetaArguments {
+export interface IamUserConfig extends cdktf.TerraformMetaArguments {
   /** Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices */
   readonly forceDestroy?: boolean;
   readonly name: string;
@@ -18,7 +17,7 @@ export interface IamUserConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamUser extends TerraformResource {
+export class IamUser extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -144,11 +143,11 @@ export class IamUser extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      force_destroy: this._forceDestroy,
-      name: this._name,
-      path: this._path,
-      permissions_boundary: this._permissionsBoundary,
-      tags: this._tags,
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      name: cdktf.stringToTerraform(this._name),
+      path: cdktf.stringToTerraform(this._path),
+      permissions_boundary: cdktf.stringToTerraform(this._permissionsBoundary),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

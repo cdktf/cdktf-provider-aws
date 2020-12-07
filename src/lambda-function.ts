@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LambdaFunctionConfig extends TerraformMetaArguments {
+export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly filename?: string;
   readonly functionName: string;
@@ -41,27 +40,77 @@ export interface LambdaFunctionConfig extends TerraformMetaArguments {
 export interface LambdaFunctionDeadLetterConfig {
   readonly targetArn: string;
 }
+
+function lambdaFunctionDeadLetterConfigToTerraform(struct?: LambdaFunctionDeadLetterConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    target_arn: cdktf.stringToTerraform(struct!.targetArn),
+  }
+}
+
 export interface LambdaFunctionEnvironment {
   readonly variables?: { [key: string]: string };
 }
+
+function lambdaFunctionEnvironmentToTerraform(struct?: LambdaFunctionEnvironment): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    variables: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.variables),
+  }
+}
+
 export interface LambdaFunctionFileSystemConfig {
   readonly arn: string;
   readonly localMountPath: string;
 }
+
+function lambdaFunctionFileSystemConfigToTerraform(struct?: LambdaFunctionFileSystemConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    arn: cdktf.stringToTerraform(struct!.arn),
+    local_mount_path: cdktf.stringToTerraform(struct!.localMountPath),
+  }
+}
+
 export interface LambdaFunctionTimeouts {
   readonly create?: string;
 }
+
+function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
 export interface LambdaFunctionTracingConfig {
   readonly mode: string;
 }
+
+function lambdaFunctionTracingConfigToTerraform(struct?: LambdaFunctionTracingConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    mode: cdktf.stringToTerraform(struct!.mode),
+  }
+}
+
 export interface LambdaFunctionVpcConfig {
   readonly securityGroupIds: string[];
   readonly subnetIds: string[];
 }
 
+function lambdaFunctionVpcConfigToTerraform(struct?: LambdaFunctionVpcConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+  }
+}
+
+
 // Resource
 
-export class LambdaFunction extends TerraformResource {
+export class LambdaFunction extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -504,29 +553,29 @@ export class LambdaFunction extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      filename: this._filename,
-      function_name: this._functionName,
-      handler: this._handler,
-      kms_key_arn: this._kmsKeyArn,
-      layers: this._layers,
-      memory_size: this._memorySize,
-      publish: this._publish,
-      reserved_concurrent_executions: this._reservedConcurrentExecutions,
-      role: this._role,
-      runtime: this._runtime,
-      s3_bucket: this._s3Bucket,
-      s3_key: this._s3Key,
-      s3_object_version: this._s3ObjectVersion,
-      source_code_hash: this._sourceCodeHash,
-      tags: this._tags,
-      timeout: this._timeout,
-      dead_letter_config: this._deadLetterConfig,
-      environment: this._environment,
-      file_system_config: this._fileSystemConfig,
-      timeouts: this._timeouts,
-      tracing_config: this._tracingConfig,
-      vpc_config: this._vpcConfig,
+      description: cdktf.stringToTerraform(this._description),
+      filename: cdktf.stringToTerraform(this._filename),
+      function_name: cdktf.stringToTerraform(this._functionName),
+      handler: cdktf.stringToTerraform(this._handler),
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
+      layers: cdktf.listMapper(cdktf.stringToTerraform)(this._layers),
+      memory_size: cdktf.numberToTerraform(this._memorySize),
+      publish: cdktf.booleanToTerraform(this._publish),
+      reserved_concurrent_executions: cdktf.numberToTerraform(this._reservedConcurrentExecutions),
+      role: cdktf.stringToTerraform(this._role),
+      runtime: cdktf.stringToTerraform(this._runtime),
+      s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
+      s3_key: cdktf.stringToTerraform(this._s3Key),
+      s3_object_version: cdktf.stringToTerraform(this._s3ObjectVersion),
+      source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeout: cdktf.numberToTerraform(this._timeout),
+      dead_letter_config: cdktf.listMapper(lambdaFunctionDeadLetterConfigToTerraform)(this._deadLetterConfig),
+      environment: cdktf.listMapper(lambdaFunctionEnvironmentToTerraform)(this._environment),
+      file_system_config: cdktf.listMapper(lambdaFunctionFileSystemConfigToTerraform)(this._fileSystemConfig),
+      timeouts: lambdaFunctionTimeoutsToTerraform(this._timeouts),
+      tracing_config: cdktf.listMapper(lambdaFunctionTracingConfigToTerraform)(this._tracingConfig),
+      vpc_config: cdktf.listMapper(lambdaFunctionVpcConfigToTerraform)(this._vpcConfig),
     };
   }
 }

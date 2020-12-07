@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudfrontOriginAccessIdentityConfig extends TerraformMetaArguments {
+export interface CloudfrontOriginAccessIdentityConfig extends cdktf.TerraformMetaArguments {
   readonly comment?: string;
 }
 
 // Resource
 
-export class CloudfrontOriginAccessIdentity extends TerraformResource {
+export class CloudfrontOriginAccessIdentity extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,7 +88,7 @@ export class CloudfrontOriginAccessIdentity extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: this._comment,
+      comment: cdktf.stringToTerraform(this._comment),
     };
   }
 }

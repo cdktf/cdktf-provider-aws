@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LambdaEventSourceMappingConfig extends TerraformMetaArguments {
+export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArguments {
   readonly batchSize?: number;
   readonly bisectBatchOnFunctionError?: boolean;
   readonly enabled?: boolean;
@@ -25,14 +24,30 @@ export interface LambdaEventSourceMappingConfig extends TerraformMetaArguments {
 export interface LambdaEventSourceMappingDestinationConfigOnFailure {
   readonly destinationArn: string;
 }
+
+function lambdaEventSourceMappingDestinationConfigOnFailureToTerraform(struct?: LambdaEventSourceMappingDestinationConfigOnFailure): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
+  }
+}
+
 export interface LambdaEventSourceMappingDestinationConfig {
   /** on_failure block */
   readonly onFailure?: LambdaEventSourceMappingDestinationConfigOnFailure[];
 }
 
+function lambdaEventSourceMappingDestinationConfigToTerraform(struct?: LambdaEventSourceMappingDestinationConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    on_failure: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigOnFailureToTerraform)(struct!.onFailure),
+  }
+}
+
+
 // Resource
 
-export class LambdaEventSourceMapping extends TerraformResource {
+export class LambdaEventSourceMapping extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -294,18 +309,18 @@ export class LambdaEventSourceMapping extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_size: this._batchSize,
-      bisect_batch_on_function_error: this._bisectBatchOnFunctionError,
-      enabled: this._enabled,
-      event_source_arn: this._eventSourceArn,
-      function_name: this._functionName,
-      maximum_batching_window_in_seconds: this._maximumBatchingWindowInSeconds,
-      maximum_record_age_in_seconds: this._maximumRecordAgeInSeconds,
-      maximum_retry_attempts: this._maximumRetryAttempts,
-      parallelization_factor: this._parallelizationFactor,
-      starting_position: this._startingPosition,
-      starting_position_timestamp: this._startingPositionTimestamp,
-      destination_config: this._destinationConfig,
+      batch_size: cdktf.numberToTerraform(this._batchSize),
+      bisect_batch_on_function_error: cdktf.booleanToTerraform(this._bisectBatchOnFunctionError),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      event_source_arn: cdktf.stringToTerraform(this._eventSourceArn),
+      function_name: cdktf.stringToTerraform(this._functionName),
+      maximum_batching_window_in_seconds: cdktf.numberToTerraform(this._maximumBatchingWindowInSeconds),
+      maximum_record_age_in_seconds: cdktf.numberToTerraform(this._maximumRecordAgeInSeconds),
+      maximum_retry_attempts: cdktf.numberToTerraform(this._maximumRetryAttempts),
+      parallelization_factor: cdktf.numberToTerraform(this._parallelizationFactor),
+      starting_position: cdktf.stringToTerraform(this._startingPosition),
+      starting_position_timestamp: cdktf.stringToTerraform(this._startingPositionTimestamp),
+      destination_config: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigToTerraform)(this._destinationConfig),
     };
   }
 }

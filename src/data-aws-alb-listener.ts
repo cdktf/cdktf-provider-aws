@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAlbListenerConfig extends TerraformMetaArguments {
+export interface DataAwsAlbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly loadBalancerArn?: string;
   readonly port?: number;
 }
-export class DataAwsAlbListenerDefaultActionAuthenticateCognito extends ComplexComputedList {
+export class DataAwsAlbListenerDefaultActionAuthenticateCognito extends cdktf.ComplexComputedList {
 
   // authentication_request_extra_params - computed: true, optional: false, required: false
   public get authenticationRequestExtraParams() {
@@ -54,7 +52,7 @@ export class DataAwsAlbListenerDefaultActionAuthenticateCognito extends ComplexC
     return this.getStringAttribute('user_pool_domain');
   }
 }
-export class DataAwsAlbListenerDefaultActionAuthenticateOidc extends ComplexComputedList {
+export class DataAwsAlbListenerDefaultActionAuthenticateOidc extends cdktf.ComplexComputedList {
 
   // authentication_request_extra_params - computed: true, optional: false, required: false
   public get authenticationRequestExtraParams() {
@@ -111,7 +109,7 @@ export class DataAwsAlbListenerDefaultActionAuthenticateOidc extends ComplexComp
     return this.getStringAttribute('user_info_endpoint');
   }
 }
-export class DataAwsAlbListenerDefaultActionFixedResponse extends ComplexComputedList {
+export class DataAwsAlbListenerDefaultActionFixedResponse extends cdktf.ComplexComputedList {
 
   // content_type - computed: true, optional: false, required: false
   public get contentType() {
@@ -128,7 +126,7 @@ export class DataAwsAlbListenerDefaultActionFixedResponse extends ComplexCompute
     return this.getStringAttribute('status_code');
   }
 }
-export class DataAwsAlbListenerDefaultActionRedirect extends ComplexComputedList {
+export class DataAwsAlbListenerDefaultActionRedirect extends cdktf.ComplexComputedList {
 
   // host - computed: true, optional: false, required: false
   public get host() {
@@ -160,7 +158,7 @@ export class DataAwsAlbListenerDefaultActionRedirect extends ComplexComputedList
     return this.getStringAttribute('status_code');
   }
 }
-export class DataAwsAlbListenerDefaultAction extends ComplexComputedList {
+export class DataAwsAlbListenerDefaultAction extends cdktf.ComplexComputedList {
 
   // authenticate_cognito - computed: true, optional: false, required: false
   public get authenticateCognito() {
@@ -200,7 +198,7 @@ export class DataAwsAlbListenerDefaultAction extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsAlbListener extends TerraformDataSource {
+export class DataAwsAlbListener extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -293,8 +291,8 @@ export class DataAwsAlbListener extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      load_balancer_arn: this._loadBalancerArn,
-      port: this._port,
+      load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
+      port: cdktf.numberToTerraform(this._port),
     };
   }
 }

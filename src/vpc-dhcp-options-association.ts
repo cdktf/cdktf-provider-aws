@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcDhcpOptionsAssociationConfig extends TerraformMetaArguments {
+export interface VpcDhcpOptionsAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly dhcpOptionsId: string;
   readonly vpcId: string;
 }
 
 // Resource
 
-export class VpcDhcpOptionsAssociation extends TerraformResource {
+export class VpcDhcpOptionsAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class VpcDhcpOptionsAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dhcp_options_id: this._dhcpOptionsId,
-      vpc_id: this._vpcId,
+      dhcp_options_id: cdktf.stringToTerraform(this._dhcpOptionsId),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface StoragegatewayCachedIscsiVolumeConfig extends TerraformMetaArguments {
+export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly gatewayArn: string;
   readonly networkInterfaceId: string;
   readonly snapshotId?: string;
@@ -19,7 +18,7 @@ export interface StoragegatewayCachedIscsiVolumeConfig extends TerraformMetaArgu
 
 // Resource
 
-export class StoragegatewayCachedIscsiVolume extends TerraformResource {
+export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -195,13 +194,13 @@ export class StoragegatewayCachedIscsiVolume extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      gateway_arn: this._gatewayArn,
-      network_interface_id: this._networkInterfaceId,
-      snapshot_id: this._snapshotId,
-      source_volume_arn: this._sourceVolumeArn,
-      tags: this._tags,
-      target_name: this._targetName,
-      volume_size_in_bytes: this._volumeSizeInBytes,
+      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      snapshot_id: cdktf.stringToTerraform(this._snapshotId),
+      source_volume_arn: cdktf.stringToTerraform(this._sourceVolumeArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_name: cdktf.stringToTerraform(this._targetName),
+      volume_size_in_bytes: cdktf.numberToTerraform(this._volumeSizeInBytes),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ServiceDiscoveryServiceConfig extends TerraformMetaArguments {
+export interface ServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly namespaceId?: string;
@@ -23,24 +22,61 @@ export interface ServiceDiscoveryServiceDnsConfigDnsRecords {
   readonly ttl: number;
   readonly type: string;
 }
+
+function serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform(struct?: ServiceDiscoveryServiceDnsConfigDnsRecords): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ttl: cdktf.numberToTerraform(struct!.ttl),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface ServiceDiscoveryServiceDnsConfig {
   readonly namespaceId: string;
   readonly routingPolicy?: string;
   /** dns_records block */
   readonly dnsRecords: ServiceDiscoveryServiceDnsConfigDnsRecords[];
 }
+
+function serviceDiscoveryServiceDnsConfigToTerraform(struct?: ServiceDiscoveryServiceDnsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
+    routing_policy: cdktf.stringToTerraform(struct!.routingPolicy),
+    dns_records: cdktf.listMapper(serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform)(struct!.dnsRecords),
+  }
+}
+
 export interface ServiceDiscoveryServiceHealthCheckConfig {
   readonly failureThreshold?: number;
   readonly resourcePath?: string;
   readonly type?: string;
 }
+
+function serviceDiscoveryServiceHealthCheckConfigToTerraform(struct?: ServiceDiscoveryServiceHealthCheckConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
+    resource_path: cdktf.stringToTerraform(struct!.resourcePath),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface ServiceDiscoveryServiceHealthCheckCustomConfig {
   readonly failureThreshold?: number;
 }
 
+function serviceDiscoveryServiceHealthCheckCustomConfigToTerraform(struct?: ServiceDiscoveryServiceHealthCheckCustomConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
+  }
+}
+
+
 // Resource
 
-export class ServiceDiscoveryService extends TerraformResource {
+export class ServiceDiscoveryService extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -195,13 +231,13 @@ export class ServiceDiscoveryService extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      namespace_id: this._namespaceId,
-      tags: this._tags,
-      dns_config: this._dnsConfig,
-      health_check_config: this._healthCheckConfig,
-      health_check_custom_config: this._healthCheckCustomConfig,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      namespace_id: cdktf.stringToTerraform(this._namespaceId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      dns_config: cdktf.listMapper(serviceDiscoveryServiceDnsConfigToTerraform)(this._dnsConfig),
+      health_check_config: cdktf.listMapper(serviceDiscoveryServiceHealthCheckConfigToTerraform)(this._healthCheckConfig),
+      health_check_custom_config: cdktf.listMapper(serviceDiscoveryServiceHealthCheckCustomConfigToTerraform)(this._healthCheckCustomConfig),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultSubnetConfig extends TerraformMetaArguments {
+export interface DefaultSubnetConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone: string;
   readonly mapPublicIpOnLaunch?: boolean;
   readonly outpostArn?: string;
@@ -20,9 +19,18 @@ export interface DefaultSubnetTimeouts {
   readonly delete?: string;
 }
 
+function defaultSubnetTimeoutsToTerraform(struct?: DefaultSubnetTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DefaultSubnet extends TerraformResource {
+export class DefaultSubnet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -178,11 +186,11 @@ export class DefaultSubnet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      map_public_ip_on_launch: this._mapPublicIpOnLaunch,
-      outpost_arn: this._outpostArn,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      map_public_ip_on_launch: cdktf.booleanToTerraform(this._mapPublicIpOnLaunch),
+      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: defaultSubnetTimeoutsToTerraform(this._timeouts),
     };
   }
 }

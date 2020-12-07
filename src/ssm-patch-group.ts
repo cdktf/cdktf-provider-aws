@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmPatchGroupConfig extends TerraformMetaArguments {
+export interface SsmPatchGroupConfig extends cdktf.TerraformMetaArguments {
   readonly baselineId: string;
   readonly patchGroup: string;
 }
 
 // Resource
 
-export class SsmPatchGroup extends TerraformResource {
+export class SsmPatchGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class SsmPatchGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      baseline_id: this._baselineId,
-      patch_group: this._patchGroup,
+      baseline_id: cdktf.stringToTerraform(this._baselineId),
+      patch_group: cdktf.stringToTerraform(this._patchGroup),
     };
   }
 }

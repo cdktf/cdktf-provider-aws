@@ -2,20 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCloudformationStackConfig extends TerraformMetaArguments {
+export interface DataAwsCloudformationStackConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsCloudformationStack extends TerraformDataSource {
+export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -85,12 +83,12 @@ export class DataAwsCloudformationStack extends TerraformDataSource {
 
   // outputs - computed: true, optional: false, required: false
   public outputs(key: string): string {
-    return new StringMap(this, 'outputs').lookup(key);
+    return new cdktf.StringMap(this, 'outputs').lookup(key);
   }
 
   // parameters - computed: true, optional: false, required: false
   public parameters(key: string): string {
-    return new StringMap(this, 'parameters').lookup(key);
+    return new cdktf.StringMap(this, 'parameters').lookup(key);
   }
 
   // tags - computed: true, optional: true, required: false
@@ -125,8 +123,8 @@ export class DataAwsCloudformationStack extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

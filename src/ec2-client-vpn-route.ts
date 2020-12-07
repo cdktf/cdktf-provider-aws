@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2ClientVpnRouteConfig extends TerraformMetaArguments {
+export interface Ec2ClientVpnRouteConfig extends cdktf.TerraformMetaArguments {
   readonly clientVpnEndpointId: string;
   readonly description?: string;
   readonly destinationCidrBlock: string;
@@ -16,7 +15,7 @@ export interface Ec2ClientVpnRouteConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2ClientVpnRoute extends TerraformResource {
+export class Ec2ClientVpnRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,10 +118,10 @@ export class Ec2ClientVpnRoute extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_vpn_endpoint_id: this._clientVpnEndpointId,
-      description: this._description,
-      destination_cidr_block: this._destinationCidrBlock,
-      target_vpc_subnet_id: this._targetVpcSubnetId,
+      client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
+      description: cdktf.stringToTerraform(this._description),
+      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      target_vpc_subnet_id: cdktf.stringToTerraform(this._targetVpcSubnetId),
     };
   }
 }

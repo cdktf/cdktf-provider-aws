@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbSubnetGroupConfig extends TerraformMetaArguments {
+export interface DbSubnetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -17,7 +16,7 @@ export interface DbSubnetGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DbSubnetGroup extends TerraformResource {
+export class DbSubnetGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -138,11 +137,11 @@ export class DbSubnetGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

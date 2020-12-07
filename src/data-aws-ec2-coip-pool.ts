@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2CoipPoolConfig extends TerraformMetaArguments {
+export interface DataAwsEc2CoipPoolConfig extends cdktf.TerraformMetaArguments {
   readonly localGatewayRouteTableId?: string;
   readonly poolId?: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface DataAwsEc2CoipPoolFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2CoipPoolFilterToTerraform(struct?: DataAwsEc2CoipPoolFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2CoipPool extends TerraformDataSource {
+export class DataAwsEc2CoipPool extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -128,10 +136,10 @@ export class DataAwsEc2CoipPool extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      local_gateway_route_table_id: this._localGatewayRouteTableId,
-      pool_id: this._poolId,
-      tags: this._tags,
-      filter: this._filter,
+      local_gateway_route_table_id: cdktf.stringToTerraform(this._localGatewayRouteTableId),
+      pool_id: cdktf.stringToTerraform(this._poolId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEc2CoipPoolFilterToTerraform)(this._filter),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmMaintenanceWindowConfig extends TerraformMetaArguments {
+export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
   readonly allowUnassociatedTargets?: boolean;
   readonly cutoff: number;
   readonly description?: string;
@@ -23,7 +22,7 @@ export interface SsmMaintenanceWindowConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SsmMaintenanceWindow extends TerraformResource {
+export class SsmMaintenanceWindow extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -232,17 +231,17 @@ export class SsmMaintenanceWindow extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_unassociated_targets: this._allowUnassociatedTargets,
-      cutoff: this._cutoff,
-      description: this._description,
-      duration: this._duration,
-      enabled: this._enabled,
-      end_date: this._endDate,
-      name: this._name,
-      schedule: this._schedule,
-      schedule_timezone: this._scheduleTimezone,
-      start_date: this._startDate,
-      tags: this._tags,
+      allow_unassociated_targets: cdktf.booleanToTerraform(this._allowUnassociatedTargets),
+      cutoff: cdktf.numberToTerraform(this._cutoff),
+      description: cdktf.stringToTerraform(this._description),
+      duration: cdktf.numberToTerraform(this._duration),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      end_date: cdktf.stringToTerraform(this._endDate),
+      name: cdktf.stringToTerraform(this._name),
+      schedule: cdktf.stringToTerraform(this._schedule),
+      schedule_timezone: cdktf.stringToTerraform(this._scheduleTimezone),
+      start_date: cdktf.stringToTerraform(this._startDate),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

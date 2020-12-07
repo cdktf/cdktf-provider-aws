@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamAccountAliasConfig extends TerraformMetaArguments {
+export interface DataAwsIamAccountAliasConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsIamAccountAlias extends TerraformDataSource {
+export class DataAwsIamAccountAlias extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2InstanceTypeOfferingConfig extends TerraformMetaArguments {
+export interface DataAwsEc2InstanceTypeOfferingConfig extends cdktf.TerraformMetaArguments {
   readonly locationType?: string;
   readonly preferredInstanceTypes?: string[];
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsEc2InstanceTypeOfferingFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2InstanceTypeOfferingFilterToTerraform(struct?: DataAwsEc2InstanceTypeOfferingFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2InstanceTypeOffering extends TerraformDataSource {
+export class DataAwsEc2InstanceTypeOffering extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -110,9 +118,9 @@ export class DataAwsEc2InstanceTypeOffering extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      location_type: this._locationType,
-      preferred_instance_types: this._preferredInstanceTypes,
-      filter: this._filter,
+      location_type: cdktf.stringToTerraform(this._locationType),
+      preferred_instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceTypes),
+      filter: cdktf.listMapper(dataAwsEc2InstanceTypeOfferingFilterToTerraform)(this._filter),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IotThingConfig extends TerraformMetaArguments {
+export interface IotThingConfig extends cdktf.TerraformMetaArguments {
   readonly attributes?: { [key: string]: string };
   readonly name: string;
   readonly thingTypeName?: string;
@@ -15,7 +14,7 @@ export interface IotThingConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IotThing extends TerraformResource {
+export class IotThing extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,9 +111,9 @@ export class IotThing extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attributes: this._attributes,
-      name: this._name,
-      thing_type_name: this._thingTypeName,
+      attributes: cdktf.hashMapper(cdktf.anyToTerraform)(this._attributes),
+      name: cdktf.stringToTerraform(this._name),
+      thing_type_name: cdktf.stringToTerraform(this._thingTypeName),
     };
   }
 }

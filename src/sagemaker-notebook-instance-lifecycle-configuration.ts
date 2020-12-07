@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SagemakerNotebookInstanceLifecycleConfigurationConfig extends TerraformMetaArguments {
+export interface SagemakerNotebookInstanceLifecycleConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly onCreate?: string;
   readonly onStart?: string;
@@ -15,7 +14,7 @@ export interface SagemakerNotebookInstanceLifecycleConfigurationConfig extends T
 
 // Resource
 
-export class SagemakerNotebookInstanceLifecycleConfiguration extends TerraformResource {
+export class SagemakerNotebookInstanceLifecycleConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -105,9 +104,9 @@ export class SagemakerNotebookInstanceLifecycleConfiguration extends TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      on_create: this._onCreate,
-      on_start: this._onStart,
+      name: cdktf.stringToTerraform(this._name),
+      on_create: cdktf.stringToTerraform(this._onCreate),
+      on_start: cdktf.stringToTerraform(this._onStart),
     };
   }
 }

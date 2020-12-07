@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatasyncLocationSmbConfig extends TerraformMetaArguments {
+export interface DatasyncLocationSmbConfig extends cdktf.TerraformMetaArguments {
   readonly agentArns: string[];
   readonly domain?: string;
   readonly password: string;
@@ -22,9 +21,17 @@ export interface DatasyncLocationSmbMountOptions {
   readonly version?: string;
 }
 
+function datasyncLocationSmbMountOptionsToTerraform(struct?: DatasyncLocationSmbMountOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
+
 // Resource
 
-export class DatasyncLocationSmb extends TerraformResource {
+export class DatasyncLocationSmb extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -189,14 +196,14 @@ export class DatasyncLocationSmb extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_arns: this._agentArns,
-      domain: this._domain,
-      password: this._password,
-      server_hostname: this._serverHostname,
-      subdirectory: this._subdirectory,
-      tags: this._tags,
-      user: this._user,
-      mount_options: this._mountOptions,
+      agent_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._agentArns),
+      domain: cdktf.stringToTerraform(this._domain),
+      password: cdktf.stringToTerraform(this._password),
+      server_hostname: cdktf.stringToTerraform(this._serverHostname),
+      subdirectory: cdktf.stringToTerraform(this._subdirectory),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      user: cdktf.stringToTerraform(this._user),
+      mount_options: cdktf.listMapper(datasyncLocationSmbMountOptionsToTerraform)(this._mountOptions),
     };
   }
 }

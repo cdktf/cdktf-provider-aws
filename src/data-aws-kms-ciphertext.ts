@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsKmsCiphertextConfig extends TerraformMetaArguments {
+export interface DataAwsKmsCiphertextConfig extends cdktf.TerraformMetaArguments {
   readonly context?: { [key: string]: string };
   readonly keyId: string;
   readonly plaintext: string;
@@ -15,7 +14,7 @@ export interface DataAwsKmsCiphertextConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsKmsCiphertext extends TerraformDataSource {
+export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +98,9 @@ export class DataAwsKmsCiphertext extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      context: this._context,
-      key_id: this._keyId,
-      plaintext: this._plaintext,
+      context: cdktf.hashMapper(cdktf.anyToTerraform)(this._context),
+      key_id: cdktf.stringToTerraform(this._keyId),
+      plaintext: cdktf.stringToTerraform(this._plaintext),
     };
   }
 }

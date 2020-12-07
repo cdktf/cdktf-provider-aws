@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueTriggerConfig extends TerraformMetaArguments {
+export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly enabled?: boolean;
   readonly name: string;
@@ -28,6 +27,17 @@ export interface GlueTriggerActions {
   readonly jobName?: string;
   readonly timeout?: number;
 }
+
+function glueTriggerActionsToTerraform(struct?: GlueTriggerActions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    arguments: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.arguments),
+    crawler_name: cdktf.stringToTerraform(struct!.crawlerName),
+    job_name: cdktf.stringToTerraform(struct!.jobName),
+    timeout: cdktf.numberToTerraform(struct!.timeout),
+  }
+}
+
 export interface GlueTriggerPredicateConditions {
   readonly crawlState?: string;
   readonly crawlerName?: string;
@@ -35,19 +45,49 @@ export interface GlueTriggerPredicateConditions {
   readonly logicalOperator?: string;
   readonly state?: string;
 }
+
+function glueTriggerPredicateConditionsToTerraform(struct?: GlueTriggerPredicateConditions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    crawl_state: cdktf.stringToTerraform(struct!.crawlState),
+    crawler_name: cdktf.stringToTerraform(struct!.crawlerName),
+    job_name: cdktf.stringToTerraform(struct!.jobName),
+    logical_operator: cdktf.stringToTerraform(struct!.logicalOperator),
+    state: cdktf.stringToTerraform(struct!.state),
+  }
+}
+
 export interface GlueTriggerPredicate {
   readonly logical?: string;
   /** conditions block */
   readonly conditions: GlueTriggerPredicateConditions[];
 }
+
+function glueTriggerPredicateToTerraform(struct?: GlueTriggerPredicate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    logical: cdktf.stringToTerraform(struct!.logical),
+    conditions: cdktf.listMapper(glueTriggerPredicateConditionsToTerraform)(struct!.conditions),
+  }
+}
+
 export interface GlueTriggerTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
+function glueTriggerTimeoutsToTerraform(struct?: GlueTriggerTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class GlueTrigger extends TerraformResource {
+export class GlueTrigger extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -247,16 +287,16 @@ export class GlueTrigger extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      enabled: this._enabled,
-      name: this._name,
-      schedule: this._schedule,
-      tags: this._tags,
-      type: this._type,
-      workflow_name: this._workflowName,
-      actions: this._actions,
-      predicate: this._predicate,
-      timeouts: this._timeouts,
+      description: cdktf.stringToTerraform(this._description),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      name: cdktf.stringToTerraform(this._name),
+      schedule: cdktf.stringToTerraform(this._schedule),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      type: cdktf.stringToTerraform(this._type),
+      workflow_name: cdktf.stringToTerraform(this._workflowName),
+      actions: cdktf.listMapper(glueTriggerActionsToTerraform)(this._actions),
+      predicate: cdktf.listMapper(glueTriggerPredicateToTerraform)(this._predicate),
+      timeouts: glueTriggerTimeoutsToTerraform(this._timeouts),
     };
   }
 }

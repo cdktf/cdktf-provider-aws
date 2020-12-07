@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatasyncAgentConfig extends TerraformMetaArguments {
+export interface DatasyncAgentConfig extends cdktf.TerraformMetaArguments {
   readonly activationKey?: string;
   readonly ipAddress?: string;
   readonly name?: string;
@@ -19,9 +18,17 @@ export interface DatasyncAgentTimeouts {
   readonly create?: string;
 }
 
+function datasyncAgentTimeoutsToTerraform(struct?: DatasyncAgentTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class DatasyncAgent extends TerraformResource {
+export class DatasyncAgent extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -145,11 +152,11 @@ export class DatasyncAgent extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activation_key: this._activationKey,
-      ip_address: this._ipAddress,
-      name: this._name,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      activation_key: cdktf.stringToTerraform(this._activationKey),
+      ip_address: cdktf.stringToTerraform(this._ipAddress),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: datasyncAgentTimeoutsToTerraform(this._timeouts),
     };
   }
 }

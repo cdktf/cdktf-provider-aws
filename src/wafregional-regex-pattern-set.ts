@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalRegexPatternSetConfig extends TerraformMetaArguments {
+export interface WafregionalRegexPatternSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly regexPatternStrings?: string[];
 }
 
 // Resource
 
-export class WafregionalRegexPatternSet extends TerraformResource {
+export class WafregionalRegexPatternSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -79,8 +78,8 @@ export class WafregionalRegexPatternSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      regex_pattern_strings: this._regexPatternStrings,
+      name: cdktf.stringToTerraform(this._name),
+      regex_pattern_strings: cdktf.listMapper(cdktf.stringToTerraform)(this._regexPatternStrings),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlobalacceleratorListenerConfig extends TerraformMetaArguments {
+export interface GlobalacceleratorListenerConfig extends cdktf.TerraformMetaArguments {
   readonly acceleratorArn: string;
   readonly clientAffinity?: string;
   readonly protocol: string;
@@ -19,9 +18,18 @@ export interface GlobalacceleratorListenerPortRange {
   readonly toPort?: number;
 }
 
+function globalacceleratorListenerPortRangeToTerraform(struct?: GlobalacceleratorListenerPortRange): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+
 // Resource
 
-export class GlobalacceleratorListener extends TerraformResource {
+export class GlobalacceleratorListener extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -114,10 +122,10 @@ export class GlobalacceleratorListener extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accelerator_arn: this._acceleratorArn,
-      client_affinity: this._clientAffinity,
-      protocol: this._protocol,
-      port_range: this._portRange,
+      accelerator_arn: cdktf.stringToTerraform(this._acceleratorArn),
+      client_affinity: cdktf.stringToTerraform(this._clientAffinity),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      port_range: cdktf.listMapper(globalacceleratorListenerPortRangeToTerraform)(this._portRange),
     };
   }
 }

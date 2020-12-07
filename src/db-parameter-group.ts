@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbParameterGroupConfig extends TerraformMetaArguments {
+export interface DbParameterGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly family: string;
   readonly name?: string;
@@ -22,9 +21,19 @@ export interface DbParameterGroupParameter {
   readonly value: string;
 }
 
+function dbParameterGroupParameterToTerraform(struct?: DbParameterGroupParameter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    apply_method: cdktf.stringToTerraform(struct!.applyMethod),
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class DbParameterGroup extends TerraformResource {
+export class DbParameterGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -162,12 +171,12 @@ export class DbParameterGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      family: this._family,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      tags: this._tags,
-      parameter: this._parameter,
+      description: cdktf.stringToTerraform(this._description),
+      family: cdktf.stringToTerraform(this._family),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      parameter: cdktf.listMapper(dbParameterGroupParameterToTerraform)(this._parameter),
     };
   }
 }

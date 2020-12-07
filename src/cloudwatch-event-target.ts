@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchEventTargetConfig extends TerraformMetaArguments {
+export interface CloudwatchEventTargetConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly input?: string;
   readonly inputPath?: string;
@@ -33,11 +32,32 @@ export interface CloudwatchEventTargetBatchTarget {
   readonly jobDefinition: string;
   readonly jobName: string;
 }
+
+function cloudwatchEventTargetBatchTargetToTerraform(struct?: CloudwatchEventTargetBatchTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    array_size: cdktf.numberToTerraform(struct!.arraySize),
+    job_attempts: cdktf.numberToTerraform(struct!.jobAttempts),
+    job_definition: cdktf.stringToTerraform(struct!.jobDefinition),
+    job_name: cdktf.stringToTerraform(struct!.jobName),
+  }
+}
+
 export interface CloudwatchEventTargetEcsTargetNetworkConfiguration {
   readonly assignPublicIp?: boolean;
   readonly securityGroups?: string[];
   readonly subnets: string[];
 }
+
+function cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform(struct?: CloudwatchEventTargetEcsTargetNetworkConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    assign_public_ip: cdktf.booleanToTerraform(struct!.assignPublicIp),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+  }
+}
+
 export interface CloudwatchEventTargetEcsTarget {
   readonly group?: string;
   readonly launchType?: string;
@@ -47,24 +67,71 @@ export interface CloudwatchEventTargetEcsTarget {
   /** network_configuration block */
   readonly networkConfiguration?: CloudwatchEventTargetEcsTargetNetworkConfiguration[];
 }
+
+function cloudwatchEventTargetEcsTargetToTerraform(struct?: CloudwatchEventTargetEcsTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    group: cdktf.stringToTerraform(struct!.group),
+    launch_type: cdktf.stringToTerraform(struct!.launchType),
+    platform_version: cdktf.stringToTerraform(struct!.platformVersion),
+    task_count: cdktf.numberToTerraform(struct!.taskCount),
+    task_definition_arn: cdktf.stringToTerraform(struct!.taskDefinitionArn),
+    network_configuration: cdktf.listMapper(cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform)(struct!.networkConfiguration),
+  }
+}
+
 export interface CloudwatchEventTargetInputTransformer {
   readonly inputPaths?: { [key: string]: string };
   readonly inputTemplate: string;
 }
+
+function cloudwatchEventTargetInputTransformerToTerraform(struct?: CloudwatchEventTargetInputTransformer): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    input_paths: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.inputPaths),
+    input_template: cdktf.stringToTerraform(struct!.inputTemplate),
+  }
+}
+
 export interface CloudwatchEventTargetKinesisTarget {
   readonly partitionKeyPath?: string;
 }
+
+function cloudwatchEventTargetKinesisTargetToTerraform(struct?: CloudwatchEventTargetKinesisTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    partition_key_path: cdktf.stringToTerraform(struct!.partitionKeyPath),
+  }
+}
+
 export interface CloudwatchEventTargetRunCommandTargets {
   readonly key: string;
   readonly values: string[];
 }
+
+function cloudwatchEventTargetRunCommandTargetsToTerraform(struct?: CloudwatchEventTargetRunCommandTargets): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
 export interface CloudwatchEventTargetSqsTarget {
   readonly messageGroupId?: string;
 }
 
+function cloudwatchEventTargetSqsTargetToTerraform(struct?: CloudwatchEventTargetSqsTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    message_group_id: cdktf.stringToTerraform(struct!.messageGroupId),
+  }
+}
+
+
 // Resource
 
-export class CloudwatchEventTarget extends TerraformResource {
+export class CloudwatchEventTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -296,18 +363,18 @@ export class CloudwatchEventTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
-      input: this._input,
-      input_path: this._inputPath,
-      role_arn: this._roleArn,
-      rule: this._rule,
-      target_id: this._targetId,
-      batch_target: this._batchTarget,
-      ecs_target: this._ecsTarget,
-      input_transformer: this._inputTransformer,
-      kinesis_target: this._kinesisTarget,
-      run_command_targets: this._runCommandTargets,
-      sqs_target: this._sqsTarget,
+      arn: cdktf.stringToTerraform(this._arn),
+      input: cdktf.stringToTerraform(this._input),
+      input_path: cdktf.stringToTerraform(this._inputPath),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      rule: cdktf.stringToTerraform(this._rule),
+      target_id: cdktf.stringToTerraform(this._targetId),
+      batch_target: cdktf.listMapper(cloudwatchEventTargetBatchTargetToTerraform)(this._batchTarget),
+      ecs_target: cdktf.listMapper(cloudwatchEventTargetEcsTargetToTerraform)(this._ecsTarget),
+      input_transformer: cdktf.listMapper(cloudwatchEventTargetInputTransformerToTerraform)(this._inputTransformer),
+      kinesis_target: cdktf.listMapper(cloudwatchEventTargetKinesisTargetToTerraform)(this._kinesisTarget),
+      run_command_targets: cdktf.listMapper(cloudwatchEventTargetRunCommandTargetsToTerraform)(this._runCommandTargets),
+      sqs_target: cdktf.listMapper(cloudwatchEventTargetSqsTargetToTerraform)(this._sqsTarget),
     };
   }
 }

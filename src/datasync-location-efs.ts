@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatasyncLocationEfsConfig extends TerraformMetaArguments {
+export interface DatasyncLocationEfsConfig extends cdktf.TerraformMetaArguments {
   readonly efsFileSystemArn: string;
   readonly subdirectory?: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface DatasyncLocationEfsEc2Config {
   readonly subnetArn: string;
 }
 
+function datasyncLocationEfsEc2ConfigToTerraform(struct?: DatasyncLocationEfsEc2Config): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupArns),
+    subnet_arn: cdktf.stringToTerraform(struct!.subnetArn),
+  }
+}
+
+
 // Resource
 
-export class DatasyncLocationEfs extends TerraformResource {
+export class DatasyncLocationEfs extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -127,10 +135,10 @@ export class DatasyncLocationEfs extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      efs_file_system_arn: this._efsFileSystemArn,
-      subdirectory: this._subdirectory,
-      tags: this._tags,
-      ec2_config: this._ec2Config,
+      efs_file_system_arn: cdktf.stringToTerraform(this._efsFileSystemArn),
+      subdirectory: cdktf.stringToTerraform(this._subdirectory),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      ec2_config: cdktf.listMapper(datasyncLocationEfsEc2ConfigToTerraform)(this._ec2Config),
     };
   }
 }

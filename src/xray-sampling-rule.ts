@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface XraySamplingRuleConfig extends TerraformMetaArguments {
+export interface XraySamplingRuleConfig extends cdktf.TerraformMetaArguments {
   readonly attributes?: { [key: string]: string };
   readonly fixedRate: number;
   readonly host: string;
@@ -24,7 +23,7 @@ export interface XraySamplingRuleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class XraySamplingRule extends TerraformResource {
+export class XraySamplingRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -237,18 +236,18 @@ export class XraySamplingRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attributes: this._attributes,
-      fixed_rate: this._fixedRate,
-      host: this._host,
-      http_method: this._httpMethod,
-      priority: this._priority,
-      reservoir_size: this._reservoirSize,
-      resource_arn: this._resourceArn,
-      rule_name: this._ruleName,
-      service_name: this._serviceName,
-      service_type: this._serviceType,
-      url_path: this._urlPath,
-      version: this._version,
+      attributes: cdktf.hashMapper(cdktf.anyToTerraform)(this._attributes),
+      fixed_rate: cdktf.numberToTerraform(this._fixedRate),
+      host: cdktf.stringToTerraform(this._host),
+      http_method: cdktf.stringToTerraform(this._httpMethod),
+      priority: cdktf.numberToTerraform(this._priority),
+      reservoir_size: cdktf.numberToTerraform(this._reservoirSize),
+      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      rule_name: cdktf.stringToTerraform(this._ruleName),
+      service_name: cdktf.stringToTerraform(this._serviceName),
+      service_type: cdktf.stringToTerraform(this._serviceType),
+      url_path: cdktf.stringToTerraform(this._urlPath),
+      version: cdktf.numberToTerraform(this._version),
     };
   }
 }

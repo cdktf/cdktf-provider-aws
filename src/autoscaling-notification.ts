@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AutoscalingNotificationConfig extends TerraformMetaArguments {
+export interface AutoscalingNotificationConfig extends cdktf.TerraformMetaArguments {
   readonly groupNames: string[];
   readonly notifications: string[];
   readonly topicArn: string;
@@ -15,7 +14,7 @@ export interface AutoscalingNotificationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AutoscalingNotification extends TerraformResource {
+export class AutoscalingNotification extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,9 +90,9 @@ export class AutoscalingNotification extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_names: this._groupNames,
-      notifications: this._notifications,
-      topic_arn: this._topicArn,
+      group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._groupNames),
+      notifications: cdktf.listMapper(cdktf.stringToTerraform)(this._notifications),
+      topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }
 }

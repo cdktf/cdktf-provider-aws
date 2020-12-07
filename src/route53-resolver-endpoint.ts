@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53ResolverEndpointConfig extends TerraformMetaArguments {
+export interface Route53ResolverEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly direction: string;
   readonly name?: string;
   readonly securityGroupIds: string[];
@@ -21,15 +20,34 @@ export interface Route53ResolverEndpointIpAddress {
   readonly ip?: string;
   readonly subnetId: string;
 }
+
+function route53ResolverEndpointIpAddressToTerraform(struct?: Route53ResolverEndpointIpAddress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ip: cdktf.stringToTerraform(struct!.ip),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+  }
+}
+
 export interface Route53ResolverEndpointTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function route53ResolverEndpointTimeoutsToTerraform(struct?: Route53ResolverEndpointTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class Route53ResolverEndpoint extends TerraformResource {
+export class Route53ResolverEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -166,12 +184,12 @@ export class Route53ResolverEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      direction: this._direction,
-      name: this._name,
-      security_group_ids: this._securityGroupIds,
-      tags: this._tags,
-      ip_address: this._ipAddress,
-      timeouts: this._timeouts,
+      direction: cdktf.stringToTerraform(this._direction),
+      name: cdktf.stringToTerraform(this._name),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      ip_address: cdktf.listMapper(route53ResolverEndpointIpAddressToTerraform)(this._ipAddress),
+      timeouts: route53ResolverEndpointTimeoutsToTerraform(this._timeouts),
     };
   }
 }

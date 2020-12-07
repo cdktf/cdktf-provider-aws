@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamServerCertificateConfig extends TerraformMetaArguments {
+export interface IamServerCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly certificateBody: string;
   readonly certificateChain?: string;
   readonly name?: string;
@@ -18,7 +17,7 @@ export interface IamServerCertificateConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamServerCertificate extends TerraformResource {
+export class IamServerCertificate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -153,12 +152,12 @@ export class IamServerCertificate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_body: this._certificateBody,
-      certificate_chain: this._certificateChain,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      path: this._path,
-      private_key: this._privateKey,
+      certificate_body: cdktf.stringToTerraform(this._certificateBody),
+      certificate_chain: cdktf.stringToTerraform(this._certificateChain),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      path: cdktf.stringToTerraform(this._path),
+      private_key: cdktf.stringToTerraform(this._privateKey),
     };
   }
 }

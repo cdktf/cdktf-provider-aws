@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayDomainNameConfig extends TerraformMetaArguments {
+export interface ApiGatewayDomainNameConfig extends cdktf.TerraformMetaArguments {
   readonly certificateArn?: string;
   readonly certificateBody?: string;
   readonly certificateChain?: string;
@@ -25,9 +24,17 @@ export interface ApiGatewayDomainNameEndpointConfiguration {
   readonly types: string[];
 }
 
+function apiGatewayDomainNameEndpointConfigurationToTerraform(struct?: ApiGatewayDomainNameEndpointConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.types),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayDomainName extends TerraformResource {
+export class ApiGatewayDomainName extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -275,17 +282,17 @@ export class ApiGatewayDomainName extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: this._certificateArn,
-      certificate_body: this._certificateBody,
-      certificate_chain: this._certificateChain,
-      certificate_name: this._certificateName,
-      certificate_private_key: this._certificatePrivateKey,
-      domain_name: this._domainName,
-      regional_certificate_arn: this._regionalCertificateArn,
-      regional_certificate_name: this._regionalCertificateName,
-      security_policy: this._securityPolicy,
-      tags: this._tags,
-      endpoint_configuration: this._endpointConfiguration,
+      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
+      certificate_body: cdktf.stringToTerraform(this._certificateBody),
+      certificate_chain: cdktf.stringToTerraform(this._certificateChain),
+      certificate_name: cdktf.stringToTerraform(this._certificateName),
+      certificate_private_key: cdktf.stringToTerraform(this._certificatePrivateKey),
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      regional_certificate_arn: cdktf.stringToTerraform(this._regionalCertificateArn),
+      regional_certificate_name: cdktf.stringToTerraform(this._regionalCertificateName),
+      security_policy: cdktf.stringToTerraform(this._securityPolicy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      endpoint_configuration: cdktf.listMapper(apiGatewayDomainNameEndpointConfigurationToTerraform)(this._endpointConfiguration),
     };
   }
 }

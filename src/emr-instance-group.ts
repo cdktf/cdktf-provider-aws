@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EmrInstanceGroupConfig extends TerraformMetaArguments {
+export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
   readonly autoscalingPolicy?: string;
   readonly bidPrice?: string;
   readonly clusterId: string;
@@ -26,9 +25,20 @@ export interface EmrInstanceGroupEbsConfig {
   readonly volumesPerInstance?: number;
 }
 
+function emrInstanceGroupEbsConfigToTerraform(struct?: EmrInstanceGroupEbsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    iops: cdktf.numberToTerraform(struct!.iops),
+    size: cdktf.numberToTerraform(struct!.size),
+    type: cdktf.stringToTerraform(struct!.type),
+    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
+  }
+}
+
+
 // Resource
 
-export class EmrInstanceGroup extends TerraformResource {
+export class EmrInstanceGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -219,15 +229,15 @@ export class EmrInstanceGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autoscaling_policy: this._autoscalingPolicy,
-      bid_price: this._bidPrice,
-      cluster_id: this._clusterId,
-      configurations_json: this._configurationsJson,
-      ebs_optimized: this._ebsOptimized,
-      instance_count: this._instanceCount,
-      instance_type: this._instanceType,
-      name: this._name,
-      ebs_config: this._ebsConfig,
+      autoscaling_policy: cdktf.stringToTerraform(this._autoscalingPolicy),
+      bid_price: cdktf.stringToTerraform(this._bidPrice),
+      cluster_id: cdktf.stringToTerraform(this._clusterId),
+      configurations_json: cdktf.stringToTerraform(this._configurationsJson),
+      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
+      instance_count: cdktf.numberToTerraform(this._instanceCount),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      name: cdktf.stringToTerraform(this._name),
+      ebs_config: cdktf.listMapper(emrInstanceGroupEbsConfigToTerraform)(this._ebsConfig),
     };
   }
 }

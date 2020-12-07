@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DmsReplicationInstanceConfig extends TerraformMetaArguments {
+export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly allocatedStorage?: number;
   readonly applyImmediately?: boolean;
   readonly autoMinorVersionUpgrade?: boolean;
@@ -31,9 +30,19 @@ export interface DmsReplicationInstanceTimeouts {
   readonly update?: string;
 }
 
+function dmsReplicationInstanceTimeoutsToTerraform(struct?: DmsReplicationInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DmsReplicationInstance extends TerraformResource {
+export class DmsReplicationInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -331,21 +340,21 @@ export class DmsReplicationInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_storage: this._allocatedStorage,
-      apply_immediately: this._applyImmediately,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      availability_zone: this._availabilityZone,
-      engine_version: this._engineVersion,
-      kms_key_arn: this._kmsKeyArn,
-      multi_az: this._multiAz,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      publicly_accessible: this._publiclyAccessible,
-      replication_instance_class: this._replicationInstanceClass,
-      replication_instance_id: this._replicationInstanceId,
-      replication_subnet_group_id: this._replicationSubnetGroupId,
-      tags: this._tags,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      timeouts: this._timeouts,
+      allocated_storage: cdktf.numberToTerraform(this._allocatedStorage),
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
+      multi_az: cdktf.booleanToTerraform(this._multiAz),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
+      replication_instance_class: cdktf.stringToTerraform(this._replicationInstanceClass),
+      replication_instance_id: cdktf.stringToTerraform(this._replicationInstanceId),
+      replication_subnet_group_id: cdktf.stringToTerraform(this._replicationSubnetGroupId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      timeouts: dmsReplicationInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

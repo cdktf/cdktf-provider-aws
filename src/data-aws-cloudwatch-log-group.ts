@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCloudwatchLogGroupConfig extends TerraformMetaArguments {
+export interface DataAwsCloudwatchLogGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsCloudwatchLogGroup extends TerraformDataSource {
+export class DataAwsCloudwatchLogGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -99,8 +98,8 @@ export class DataAwsCloudwatchLogGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

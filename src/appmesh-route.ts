@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppmeshRouteConfig extends TerraformMetaArguments {
+export interface AppmeshRouteConfig extends cdktf.TerraformMetaArguments {
   readonly meshName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -19,14 +18,40 @@ export interface AppmeshRouteSpecHttpRouteActionWeightedTarget {
   readonly virtualNode: string;
   readonly weight: number;
 }
+
+function appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(struct?: AppmeshRouteSpecHttpRouteActionWeightedTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    virtual_node: cdktf.stringToTerraform(struct!.virtualNode),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
 export interface AppmeshRouteSpecHttpRouteAction {
   /** weighted_target block */
   readonly weightedTarget: AppmeshRouteSpecHttpRouteActionWeightedTarget[];
 }
+
+function appmeshRouteSpecHttpRouteActionToTerraform(struct?: AppmeshRouteSpecHttpRouteAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    weighted_target: cdktf.listMapper(appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform)(struct!.weightedTarget),
+  }
+}
+
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatchRange {
   readonly end: number;
   readonly start: number;
 }
+
+function appmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeaderMatchRange): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    end: cdktf.numberToTerraform(struct!.end),
+    start: cdktf.numberToTerraform(struct!.start),
+  }
+}
+
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatch {
   readonly exact?: string;
   readonly prefix?: string;
@@ -35,12 +60,34 @@ export interface AppmeshRouteSpecHttpRouteMatchHeaderMatch {
   /** range block */
   readonly range?: AppmeshRouteSpecHttpRouteMatchHeaderMatchRange[];
 }
+
+function appmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeaderMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    exact: cdktf.stringToTerraform(struct!.exact),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    regex: cdktf.stringToTerraform(struct!.regex),
+    suffix: cdktf.stringToTerraform(struct!.suffix),
+    range: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform)(struct!.range),
+  }
+}
+
 export interface AppmeshRouteSpecHttpRouteMatchHeader {
   readonly invert?: boolean;
   readonly name: string;
   /** match block */
   readonly match?: AppmeshRouteSpecHttpRouteMatchHeaderMatch[];
 }
+
+function appmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: AppmeshRouteSpecHttpRouteMatchHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    invert: cdktf.booleanToTerraform(struct!.invert),
+    name: cdktf.stringToTerraform(struct!.name),
+    match: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform)(struct!.match),
+  }
+}
+
 export interface AppmeshRouteSpecHttpRouteMatch {
   readonly method?: string;
   readonly prefix: string;
@@ -48,24 +95,69 @@ export interface AppmeshRouteSpecHttpRouteMatch {
   /** header block */
   readonly header?: AppmeshRouteSpecHttpRouteMatchHeader[];
 }
+
+function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteSpecHttpRouteMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    method: cdktf.stringToTerraform(struct!.method),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    scheme: cdktf.stringToTerraform(struct!.scheme),
+    header: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchHeaderToTerraform)(struct!.header),
+  }
+}
+
 export interface AppmeshRouteSpecHttpRoute {
   /** action block */
   readonly action: AppmeshRouteSpecHttpRouteAction[];
   /** match block */
   readonly match: AppmeshRouteSpecHttpRouteMatch[];
 }
+
+function appmeshRouteSpecHttpRouteToTerraform(struct?: AppmeshRouteSpecHttpRoute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.listMapper(appmeshRouteSpecHttpRouteActionToTerraform)(struct!.action),
+    match: cdktf.listMapper(appmeshRouteSpecHttpRouteMatchToTerraform)(struct!.match),
+  }
+}
+
 export interface AppmeshRouteSpecTcpRouteActionWeightedTarget {
   readonly virtualNode: string;
   readonly weight: number;
 }
+
+function appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(struct?: AppmeshRouteSpecTcpRouteActionWeightedTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    virtual_node: cdktf.stringToTerraform(struct!.virtualNode),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
 export interface AppmeshRouteSpecTcpRouteAction {
   /** weighted_target block */
   readonly weightedTarget: AppmeshRouteSpecTcpRouteActionWeightedTarget[];
 }
+
+function appmeshRouteSpecTcpRouteActionToTerraform(struct?: AppmeshRouteSpecTcpRouteAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    weighted_target: cdktf.listMapper(appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform)(struct!.weightedTarget),
+  }
+}
+
 export interface AppmeshRouteSpecTcpRoute {
   /** action block */
   readonly action: AppmeshRouteSpecTcpRouteAction[];
 }
+
+function appmeshRouteSpecTcpRouteToTerraform(struct?: AppmeshRouteSpecTcpRoute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.listMapper(appmeshRouteSpecTcpRouteActionToTerraform)(struct!.action),
+  }
+}
+
 export interface AppmeshRouteSpec {
   readonly priority?: number;
   /** http_route block */
@@ -74,9 +166,19 @@ export interface AppmeshRouteSpec {
   readonly tcpRoute?: AppmeshRouteSpecTcpRoute[];
 }
 
+function appmeshRouteSpecToTerraform(struct?: AppmeshRouteSpec): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    priority: cdktf.numberToTerraform(struct!.priority),
+    http_route: cdktf.listMapper(appmeshRouteSpecHttpRouteToTerraform)(struct!.httpRoute),
+    tcp_route: cdktf.listMapper(appmeshRouteSpecTcpRouteToTerraform)(struct!.tcpRoute),
+  }
+}
+
+
 // Resource
 
-export class AppmeshRoute extends TerraformResource {
+export class AppmeshRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -198,11 +300,11 @@ export class AppmeshRoute extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mesh_name: this._meshName,
-      name: this._name,
-      tags: this._tags,
-      virtual_router_name: this._virtualRouterName,
-      spec: this._spec,
+      mesh_name: cdktf.stringToTerraform(this._meshName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      virtual_router_name: cdktf.stringToTerraform(this._virtualRouterName),
+      spec: cdktf.listMapper(appmeshRouteSpecToTerraform)(this._spec),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KmsGrantConfig extends TerraformMetaArguments {
+export interface KmsGrantConfig extends cdktf.TerraformMetaArguments {
   readonly grantCreationTokens?: string[];
   readonly granteePrincipal: string;
   readonly keyId: string;
@@ -23,9 +22,18 @@ export interface KmsGrantConstraints {
   readonly encryptionContextSubset?: { [key: string]: string };
 }
 
+function kmsGrantConstraintsToTerraform(struct?: KmsGrantConstraints): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    encryption_context_equals: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.encryptionContextEquals),
+    encryption_context_subset: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.encryptionContextSubset),
+  }
+}
+
+
 // Resource
 
-export class KmsGrant extends TerraformResource {
+export class KmsGrant extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -196,14 +204,14 @@ export class KmsGrant extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_creation_tokens: this._grantCreationTokens,
-      grantee_principal: this._granteePrincipal,
-      key_id: this._keyId,
-      name: this._name,
-      operations: this._operations,
-      retire_on_delete: this._retireOnDelete,
-      retiring_principal: this._retiringPrincipal,
-      constraints: this._constraints,
+      grant_creation_tokens: cdktf.listMapper(cdktf.stringToTerraform)(this._grantCreationTokens),
+      grantee_principal: cdktf.stringToTerraform(this._granteePrincipal),
+      key_id: cdktf.stringToTerraform(this._keyId),
+      name: cdktf.stringToTerraform(this._name),
+      operations: cdktf.listMapper(cdktf.stringToTerraform)(this._operations),
+      retire_on_delete: cdktf.booleanToTerraform(this._retireOnDelete),
+      retiring_principal: cdktf.stringToTerraform(this._retiringPrincipal),
+      constraints: cdktf.listMapper(kmsGrantConstraintsToTerraform)(this._constraints),
     };
   }
 }

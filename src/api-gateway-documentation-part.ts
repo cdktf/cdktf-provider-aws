@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayDocumentationPartConfig extends TerraformMetaArguments {
+export interface ApiGatewayDocumentationPartConfig extends cdktf.TerraformMetaArguments {
   readonly properties: string;
   readonly restApiId: string;
   /** location block */
@@ -21,9 +20,21 @@ export interface ApiGatewayDocumentationPartLocation {
   readonly type: string;
 }
 
+function apiGatewayDocumentationPartLocationToTerraform(struct?: ApiGatewayDocumentationPartLocation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    method: cdktf.stringToTerraform(struct!.method),
+    name: cdktf.stringToTerraform(struct!.name),
+    path: cdktf.stringToTerraform(struct!.path),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayDocumentationPart extends TerraformResource {
+export class ApiGatewayDocumentationPart extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +110,9 @@ export class ApiGatewayDocumentationPart extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      properties: this._properties,
-      rest_api_id: this._restApiId,
-      location: this._location,
+      properties: cdktf.stringToTerraform(this._properties),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      location: cdktf.listMapper(apiGatewayDocumentationPartLocationToTerraform)(this._location),
     };
   }
 }

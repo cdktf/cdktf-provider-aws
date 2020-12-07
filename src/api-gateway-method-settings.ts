@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayMethodSettingsConfig extends TerraformMetaArguments {
+export interface ApiGatewayMethodSettingsConfig extends cdktf.TerraformMetaArguments {
   readonly methodPath: string;
   readonly restApiId: string;
   readonly stageName: string;
@@ -27,9 +26,26 @@ export interface ApiGatewayMethodSettingsSettings {
   readonly unauthorizedCacheControlHeaderStrategy?: string;
 }
 
+function apiGatewayMethodSettingsSettingsToTerraform(struct?: ApiGatewayMethodSettingsSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cache_data_encrypted: cdktf.booleanToTerraform(struct!.cacheDataEncrypted),
+    cache_ttl_in_seconds: cdktf.numberToTerraform(struct!.cacheTtlInSeconds),
+    caching_enabled: cdktf.booleanToTerraform(struct!.cachingEnabled),
+    data_trace_enabled: cdktf.booleanToTerraform(struct!.dataTraceEnabled),
+    logging_level: cdktf.stringToTerraform(struct!.loggingLevel),
+    metrics_enabled: cdktf.booleanToTerraform(struct!.metricsEnabled),
+    require_authorization_for_cache_control: cdktf.booleanToTerraform(struct!.requireAuthorizationForCacheControl),
+    throttling_burst_limit: cdktf.numberToTerraform(struct!.throttlingBurstLimit),
+    throttling_rate_limit: cdktf.numberToTerraform(struct!.throttlingRateLimit),
+    unauthorized_cache_control_header_strategy: cdktf.stringToTerraform(struct!.unauthorizedCacheControlHeaderStrategy),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayMethodSettings extends TerraformResource {
+export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,10 +135,10 @@ export class ApiGatewayMethodSettings extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      method_path: this._methodPath,
-      rest_api_id: this._restApiId,
-      stage_name: this._stageName,
-      settings: this._settings,
+      method_path: cdktf.stringToTerraform(this._methodPath),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      stage_name: cdktf.stringToTerraform(this._stageName),
+      settings: cdktf.listMapper(apiGatewayMethodSettingsSettingsToTerraform)(this._settings),
     };
   }
 }

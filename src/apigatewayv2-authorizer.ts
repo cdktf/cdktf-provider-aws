@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2AuthorizerConfig extends TerraformMetaArguments {
+export interface Apigatewayv2AuthorizerConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly authorizerCredentialsArn?: string;
   readonly authorizerType: string;
@@ -22,9 +21,18 @@ export interface Apigatewayv2AuthorizerJwtConfiguration {
   readonly issuer?: string;
 }
 
+function apigatewayv2AuthorizerJwtConfigurationToTerraform(struct?: Apigatewayv2AuthorizerJwtConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    audience: cdktf.listMapper(cdktf.stringToTerraform)(struct!.audience),
+    issuer: cdktf.stringToTerraform(struct!.issuer),
+  }
+}
+
+
 // Resource
 
-export class Apigatewayv2Authorizer extends TerraformResource {
+export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -165,13 +173,13 @@ export class Apigatewayv2Authorizer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      authorizer_credentials_arn: this._authorizerCredentialsArn,
-      authorizer_type: this._authorizerType,
-      authorizer_uri: this._authorizerUri,
-      identity_sources: this._identitySources,
-      name: this._name,
-      jwt_configuration: this._jwtConfiguration,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      authorizer_credentials_arn: cdktf.stringToTerraform(this._authorizerCredentialsArn),
+      authorizer_type: cdktf.stringToTerraform(this._authorizerType),
+      authorizer_uri: cdktf.stringToTerraform(this._authorizerUri),
+      identity_sources: cdktf.listMapper(cdktf.stringToTerraform)(this._identitySources),
+      name: cdktf.stringToTerraform(this._name),
+      jwt_configuration: cdktf.listMapper(apigatewayv2AuthorizerJwtConfigurationToTerraform)(this._jwtConfiguration),
     };
   }
 }

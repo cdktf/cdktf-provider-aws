@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudtrailConfig extends TerraformMetaArguments {
+export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   readonly cloudWatchLogsGroupArn?: string;
   readonly cloudWatchLogsRoleArn?: string;
   readonly enableLogFileValidation?: boolean;
@@ -28,6 +27,15 @@ export interface CloudtrailEventSelectorDataResource {
   readonly type: string;
   readonly values: string[];
 }
+
+function cloudtrailEventSelectorDataResourceToTerraform(struct?: CloudtrailEventSelectorDataResource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
 export interface CloudtrailEventSelector {
   readonly includeManagementEvents?: boolean;
   readonly readWriteType?: string;
@@ -35,9 +43,19 @@ export interface CloudtrailEventSelector {
   readonly dataResource?: CloudtrailEventSelectorDataResource[];
 }
 
+function cloudtrailEventSelectorToTerraform(struct?: CloudtrailEventSelector): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    include_management_events: cdktf.booleanToTerraform(struct!.includeManagementEvents),
+    read_write_type: cdktf.stringToTerraform(struct!.readWriteType),
+    data_resource: cdktf.listMapper(cloudtrailEventSelectorDataResourceToTerraform)(struct!.dataResource),
+  }
+}
+
+
 // Resource
 
-export class Cloudtrail extends TerraformResource {
+export class Cloudtrail extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -313,20 +331,20 @@ export class Cloudtrail extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloud_watch_logs_group_arn: this._cloudWatchLogsGroupArn,
-      cloud_watch_logs_role_arn: this._cloudWatchLogsRoleArn,
-      enable_log_file_validation: this._enableLogFileValidation,
-      enable_logging: this._enableLogging,
-      include_global_service_events: this._includeGlobalServiceEvents,
-      is_multi_region_trail: this._isMultiRegionTrail,
-      is_organization_trail: this._isOrganizationTrail,
-      kms_key_id: this._kmsKeyId,
-      name: this._name,
-      s3_bucket_name: this._s3BucketName,
-      s3_key_prefix: this._s3KeyPrefix,
-      sns_topic_name: this._snsTopicName,
-      tags: this._tags,
-      event_selector: this._eventSelector,
+      cloud_watch_logs_group_arn: cdktf.stringToTerraform(this._cloudWatchLogsGroupArn),
+      cloud_watch_logs_role_arn: cdktf.stringToTerraform(this._cloudWatchLogsRoleArn),
+      enable_log_file_validation: cdktf.booleanToTerraform(this._enableLogFileValidation),
+      enable_logging: cdktf.booleanToTerraform(this._enableLogging),
+      include_global_service_events: cdktf.booleanToTerraform(this._includeGlobalServiceEvents),
+      is_multi_region_trail: cdktf.booleanToTerraform(this._isMultiRegionTrail),
+      is_organization_trail: cdktf.booleanToTerraform(this._isOrganizationTrail),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      name: cdktf.stringToTerraform(this._name),
+      s3_bucket_name: cdktf.stringToTerraform(this._s3BucketName),
+      s3_key_prefix: cdktf.stringToTerraform(this._s3KeyPrefix),
+      sns_topic_name: cdktf.stringToTerraform(this._snsTopicName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      event_selector: cdktf.listMapper(cloudtrailEventSelectorToTerraform)(this._eventSelector),
     };
   }
 }

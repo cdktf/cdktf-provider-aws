@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayVpcAttachmentConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly dnsSupport?: string;
   readonly ipv6Support?: string;
   readonly subnetIds: string[];
@@ -20,7 +19,7 @@ export interface Ec2TransitGatewayVpcAttachmentConfig extends TerraformMetaArgum
 
 // Resource
 
-export class Ec2TransitGatewayVpcAttachment extends TerraformResource {
+export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -186,14 +185,14 @@ export class Ec2TransitGatewayVpcAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dns_support: this._dnsSupport,
-      ipv6_support: this._ipv6Support,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      transit_gateway_default_route_table_association: this._transitGatewayDefaultRouteTableAssociation,
-      transit_gateway_default_route_table_propagation: this._transitGatewayDefaultRouteTablePropagation,
-      transit_gateway_id: this._transitGatewayId,
-      vpc_id: this._vpcId,
+      dns_support: cdktf.stringToTerraform(this._dnsSupport),
+      ipv6_support: cdktf.stringToTerraform(this._ipv6Support),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transit_gateway_default_route_table_association: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTableAssociation),
+      transit_gateway_default_route_table_propagation: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTablePropagation),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

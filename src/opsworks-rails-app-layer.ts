@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksRailsAppLayerConfig extends TerraformMetaArguments {
+export interface OpsworksRailsAppLayerConfig extends cdktf.TerraformMetaArguments {
   readonly appServer?: string;
   readonly autoAssignElasticIps?: boolean;
   readonly autoAssignPublicIps?: boolean;
@@ -47,9 +46,23 @@ export interface OpsworksRailsAppLayerEbsVolume {
   readonly type?: string;
 }
 
+function opsworksRailsAppLayerEbsVolumeToTerraform(struct?: OpsworksRailsAppLayerEbsVolume): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    mount_point: cdktf.stringToTerraform(struct!.mountPoint),
+    number_of_disks: cdktf.numberToTerraform(struct!.numberOfDisks),
+    raid_level: cdktf.stringToTerraform(struct!.raidLevel),
+    size: cdktf.numberToTerraform(struct!.size),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class OpsworksRailsAppLayer extends TerraformResource {
+export class OpsworksRailsAppLayer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -544,33 +557,33 @@ export class OpsworksRailsAppLayer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_server: this._appServer,
-      auto_assign_elastic_ips: this._autoAssignElasticIps,
-      auto_assign_public_ips: this._autoAssignPublicIps,
-      auto_healing: this._autoHealing,
-      bundler_version: this._bundlerVersion,
-      custom_configure_recipes: this._customConfigureRecipes,
-      custom_deploy_recipes: this._customDeployRecipes,
-      custom_instance_profile_arn: this._customInstanceProfileArn,
-      custom_json: this._customJson,
-      custom_security_group_ids: this._customSecurityGroupIds,
-      custom_setup_recipes: this._customSetupRecipes,
-      custom_shutdown_recipes: this._customShutdownRecipes,
-      custom_undeploy_recipes: this._customUndeployRecipes,
-      drain_elb_on_shutdown: this._drainElbOnShutdown,
-      elastic_load_balancer: this._elasticLoadBalancer,
-      install_updates_on_boot: this._installUpdatesOnBoot,
-      instance_shutdown_timeout: this._instanceShutdownTimeout,
-      manage_bundler: this._manageBundler,
-      name: this._name,
-      passenger_version: this._passengerVersion,
-      ruby_version: this._rubyVersion,
-      rubygems_version: this._rubygemsVersion,
-      stack_id: this._stackId,
-      system_packages: this._systemPackages,
-      tags: this._tags,
-      use_ebs_optimized_instances: this._useEbsOptimizedInstances,
-      ebs_volume: this._ebsVolume,
+      app_server: cdktf.stringToTerraform(this._appServer),
+      auto_assign_elastic_ips: cdktf.booleanToTerraform(this._autoAssignElasticIps),
+      auto_assign_public_ips: cdktf.booleanToTerraform(this._autoAssignPublicIps),
+      auto_healing: cdktf.booleanToTerraform(this._autoHealing),
+      bundler_version: cdktf.stringToTerraform(this._bundlerVersion),
+      custom_configure_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customConfigureRecipes),
+      custom_deploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customDeployRecipes),
+      custom_instance_profile_arn: cdktf.stringToTerraform(this._customInstanceProfileArn),
+      custom_json: cdktf.stringToTerraform(this._customJson),
+      custom_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._customSecurityGroupIds),
+      custom_setup_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customSetupRecipes),
+      custom_shutdown_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customShutdownRecipes),
+      custom_undeploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customUndeployRecipes),
+      drain_elb_on_shutdown: cdktf.booleanToTerraform(this._drainElbOnShutdown),
+      elastic_load_balancer: cdktf.stringToTerraform(this._elasticLoadBalancer),
+      install_updates_on_boot: cdktf.booleanToTerraform(this._installUpdatesOnBoot),
+      instance_shutdown_timeout: cdktf.numberToTerraform(this._instanceShutdownTimeout),
+      manage_bundler: cdktf.booleanToTerraform(this._manageBundler),
+      name: cdktf.stringToTerraform(this._name),
+      passenger_version: cdktf.stringToTerraform(this._passengerVersion),
+      ruby_version: cdktf.stringToTerraform(this._rubyVersion),
+      rubygems_version: cdktf.stringToTerraform(this._rubygemsVersion),
+      stack_id: cdktf.stringToTerraform(this._stackId),
+      system_packages: cdktf.listMapper(cdktf.stringToTerraform)(this._systemPackages),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
+      ebs_volume: cdktf.listMapper(opsworksRailsAppLayerEbsVolumeToTerraform)(this._ebsVolume),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface StoragegatewayCacheConfig extends TerraformMetaArguments {
+export interface StoragegatewayCacheConfig extends cdktf.TerraformMetaArguments {
   readonly diskId: string;
   readonly gatewayArn: string;
 }
 
 // Resource
 
-export class StoragegatewayCache extends TerraformResource {
+export class StoragegatewayCache extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class StoragegatewayCache extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disk_id: this._diskId,
-      gateway_arn: this._gatewayArn,
+      disk_id: cdktf.stringToTerraform(this._diskId),
+      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
     };
   }
 }

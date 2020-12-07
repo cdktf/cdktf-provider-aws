@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamAccountAliasConfig extends TerraformMetaArguments {
+export interface IamAccountAliasConfig extends cdktf.TerraformMetaArguments {
   readonly accountAlias: string;
 }
 
 // Resource
 
-export class IamAccountAlias extends TerraformResource {
+export class IamAccountAlias extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,7 +60,7 @@ export class IamAccountAlias extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_alias: this._accountAlias,
+      account_alias: cdktf.stringToTerraform(this._accountAlias),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3AccessPointConfig extends TerraformMetaArguments {
+export interface S3AccessPointConfig extends cdktf.TerraformMetaArguments {
   readonly accountId?: string;
   readonly bucket: string;
   readonly name: string;
@@ -23,13 +22,32 @@ export interface S3AccessPointPublicAccessBlockConfiguration {
   readonly ignorePublicAcls?: boolean;
   readonly restrictPublicBuckets?: boolean;
 }
+
+function s3AccessPointPublicAccessBlockConfigurationToTerraform(struct?: S3AccessPointPublicAccessBlockConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    block_public_acls: cdktf.booleanToTerraform(struct!.blockPublicAcls),
+    block_public_policy: cdktf.booleanToTerraform(struct!.blockPublicPolicy),
+    ignore_public_acls: cdktf.booleanToTerraform(struct!.ignorePublicAcls),
+    restrict_public_buckets: cdktf.booleanToTerraform(struct!.restrictPublicBuckets),
+  }
+}
+
 export interface S3AccessPointVpcConfiguration {
   readonly vpcId: string;
 }
 
+function s3AccessPointVpcConfigurationToTerraform(struct?: S3AccessPointVpcConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+  }
+}
+
+
 // Resource
 
-export class S3AccessPoint extends TerraformResource {
+export class S3AccessPoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -179,12 +197,12 @@ export class S3AccessPoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      bucket: this._bucket,
-      name: this._name,
-      policy: this._policy,
-      public_access_block_configuration: this._publicAccessBlockConfiguration,
-      vpc_configuration: this._vpcConfiguration,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      bucket: cdktf.stringToTerraform(this._bucket),
+      name: cdktf.stringToTerraform(this._name),
+      policy: cdktf.stringToTerraform(this._policy),
+      public_access_block_configuration: cdktf.listMapper(s3AccessPointPublicAccessBlockConfigurationToTerraform)(this._publicAccessBlockConfiguration),
+      vpc_configuration: cdktf.listMapper(s3AccessPointVpcConfigurationToTerraform)(this._vpcConfiguration),
     };
   }
 }

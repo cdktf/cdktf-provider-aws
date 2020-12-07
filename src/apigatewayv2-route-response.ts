@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2RouteResponseConfig extends TerraformMetaArguments {
+export interface Apigatewayv2RouteResponseConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly modelSelectionExpression?: string;
   readonly responseModels?: { [key: string]: string };
@@ -17,7 +16,7 @@ export interface Apigatewayv2RouteResponseConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class Apigatewayv2RouteResponse extends TerraformResource {
+export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -127,11 +126,11 @@ export class Apigatewayv2RouteResponse extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      model_selection_expression: this._modelSelectionExpression,
-      response_models: this._responseModels,
-      route_id: this._routeId,
-      route_response_key: this._routeResponseKey,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      model_selection_expression: cdktf.stringToTerraform(this._modelSelectionExpression),
+      response_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseModels),
+      route_id: cdktf.stringToTerraform(this._routeId),
+      route_response_key: cdktf.stringToTerraform(this._routeResponseKey),
     };
   }
 }

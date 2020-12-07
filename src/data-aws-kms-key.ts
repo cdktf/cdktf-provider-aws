@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsKmsKeyConfig extends TerraformMetaArguments {
+export interface DataAwsKmsKeyConfig extends cdktf.TerraformMetaArguments {
   readonly grantTokens?: string[];
   readonly keyId: string;
 }
 
 // Resource
 
-export class DataAwsKmsKey extends TerraformDataSource {
+export class DataAwsKmsKey extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -144,8 +143,8 @@ export class DataAwsKmsKey extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_tokens: this._grantTokens,
-      key_id: this._keyId,
+      grant_tokens: cdktf.listMapper(cdktf.stringToTerraform)(this._grantTokens),
+      key_id: cdktf.stringToTerraform(this._keyId),
     };
   }
 }

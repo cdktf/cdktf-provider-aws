@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodestarnotificationsNotificationRuleConfig extends TerraformMetaArguments {
+export interface CodestarnotificationsNotificationRuleConfig extends cdktf.TerraformMetaArguments {
   readonly detailType: string;
   readonly eventTypeIds: string[];
   readonly name: string;
@@ -22,9 +21,18 @@ export interface CodestarnotificationsNotificationRuleTarget {
   readonly type?: string;
 }
 
+function codestarnotificationsNotificationRuleTargetToTerraform(struct?: CodestarnotificationsNotificationRuleTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    address: cdktf.stringToTerraform(struct!.address),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class CodestarnotificationsNotificationRule extends TerraformResource {
+export class CodestarnotificationsNotificationRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -170,13 +178,13 @@ export class CodestarnotificationsNotificationRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      detail_type: this._detailType,
-      event_type_ids: this._eventTypeIds,
-      name: this._name,
-      resource: this._resource,
-      status: this._status,
-      tags: this._tags,
-      target: this._target,
+      detail_type: cdktf.stringToTerraform(this._detailType),
+      event_type_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._eventTypeIds),
+      name: cdktf.stringToTerraform(this._name),
+      resource: cdktf.stringToTerraform(this._resource),
+      status: cdktf.stringToTerraform(this._status),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target: cdktf.listMapper(codestarnotificationsNotificationRuleTargetToTerraform)(this._target),
     };
   }
 }

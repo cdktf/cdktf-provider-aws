@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AlbTargetGroupConfig extends TerraformMetaArguments {
+export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly deregistrationDelay?: number;
   readonly lambdaMultiValueHeadersEnabled?: boolean;
   readonly loadBalancingAlgorithmType?: string;
@@ -36,15 +35,41 @@ export interface AlbTargetGroupHealthCheck {
   readonly timeout?: number;
   readonly unhealthyThreshold?: number;
 }
+
+function albTargetGroupHealthCheckToTerraform(struct?: AlbTargetGroupHealthCheck): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    healthy_threshold: cdktf.numberToTerraform(struct!.healthyThreshold),
+    interval: cdktf.numberToTerraform(struct!.interval),
+    matcher: cdktf.stringToTerraform(struct!.matcher),
+    path: cdktf.stringToTerraform(struct!.path),
+    port: cdktf.stringToTerraform(struct!.port),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    timeout: cdktf.numberToTerraform(struct!.timeout),
+    unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
+  }
+}
+
 export interface AlbTargetGroupStickiness {
   readonly cookieDuration?: number;
   readonly enabled?: boolean;
   readonly type: string;
 }
 
+function albTargetGroupStickinessToTerraform(struct?: AlbTargetGroupStickiness): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cookie_duration: cdktf.numberToTerraform(struct!.cookieDuration),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class AlbTargetGroup extends TerraformResource {
+export class AlbTargetGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -326,20 +351,20 @@ export class AlbTargetGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deregistration_delay: this._deregistrationDelay,
-      lambda_multi_value_headers_enabled: this._lambdaMultiValueHeadersEnabled,
-      load_balancing_algorithm_type: this._loadBalancingAlgorithmType,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      port: this._port,
-      protocol: this._protocol,
-      proxy_protocol_v2: this._proxyProtocolV2,
-      slow_start: this._slowStart,
-      tags: this._tags,
-      target_type: this._targetType,
-      vpc_id: this._vpcId,
-      health_check: this._healthCheck,
-      stickiness: this._stickiness,
+      deregistration_delay: cdktf.numberToTerraform(this._deregistrationDelay),
+      lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
+      load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      port: cdktf.numberToTerraform(this._port),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      proxy_protocol_v2: cdktf.booleanToTerraform(this._proxyProtocolV2),
+      slow_start: cdktf.numberToTerraform(this._slowStart),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_type: cdktf.stringToTerraform(this._targetType),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      health_check: cdktf.listMapper(albTargetGroupHealthCheckToTerraform)(this._healthCheck),
+      stickiness: cdktf.listMapper(albTargetGroupStickinessToTerraform)(this._stickiness),
     };
   }
 }

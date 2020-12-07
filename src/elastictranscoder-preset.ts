@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElastictranscoderPresetConfig extends TerraformMetaArguments {
+export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArguments {
   readonly container: string;
   readonly description?: string;
   readonly name?: string;
@@ -31,12 +30,35 @@ export interface ElastictranscoderPresetAudio {
   readonly codec?: string;
   readonly sampleRate?: string;
 }
+
+function elastictranscoderPresetAudioToTerraform(struct?: ElastictranscoderPresetAudio): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    audio_packing_mode: cdktf.stringToTerraform(struct!.audioPackingMode),
+    bit_rate: cdktf.stringToTerraform(struct!.bitRate),
+    channels: cdktf.stringToTerraform(struct!.channels),
+    codec: cdktf.stringToTerraform(struct!.codec),
+    sample_rate: cdktf.stringToTerraform(struct!.sampleRate),
+  }
+}
+
 export interface ElastictranscoderPresetAudioCodecOptions {
   readonly bitDepth?: string;
   readonly bitOrder?: string;
   readonly profile?: string;
   readonly signed?: string;
 }
+
+function elastictranscoderPresetAudioCodecOptionsToTerraform(struct?: ElastictranscoderPresetAudioCodecOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bit_depth: cdktf.stringToTerraform(struct!.bitDepth),
+    bit_order: cdktf.stringToTerraform(struct!.bitOrder),
+    profile: cdktf.stringToTerraform(struct!.profile),
+    signed: cdktf.stringToTerraform(struct!.signed),
+  }
+}
+
 export interface ElastictranscoderPresetThumbnails {
   readonly aspectRatio?: string;
   readonly format?: string;
@@ -47,6 +69,21 @@ export interface ElastictranscoderPresetThumbnails {
   readonly resolution?: string;
   readonly sizingPolicy?: string;
 }
+
+function elastictranscoderPresetThumbnailsToTerraform(struct?: ElastictranscoderPresetThumbnails): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    aspect_ratio: cdktf.stringToTerraform(struct!.aspectRatio),
+    format: cdktf.stringToTerraform(struct!.format),
+    interval: cdktf.stringToTerraform(struct!.interval),
+    max_height: cdktf.stringToTerraform(struct!.maxHeight),
+    max_width: cdktf.stringToTerraform(struct!.maxWidth),
+    padding_policy: cdktf.stringToTerraform(struct!.paddingPolicy),
+    resolution: cdktf.stringToTerraform(struct!.resolution),
+    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
+  }
+}
+
 export interface ElastictranscoderPresetVideo {
   readonly aspectRatio?: string;
   readonly bitRate?: string;
@@ -62,6 +99,26 @@ export interface ElastictranscoderPresetVideo {
   readonly resolution?: string;
   readonly sizingPolicy?: string;
 }
+
+function elastictranscoderPresetVideoToTerraform(struct?: ElastictranscoderPresetVideo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    aspect_ratio: cdktf.stringToTerraform(struct!.aspectRatio),
+    bit_rate: cdktf.stringToTerraform(struct!.bitRate),
+    codec: cdktf.stringToTerraform(struct!.codec),
+    display_aspect_ratio: cdktf.stringToTerraform(struct!.displayAspectRatio),
+    fixed_gop: cdktf.stringToTerraform(struct!.fixedGop),
+    frame_rate: cdktf.stringToTerraform(struct!.frameRate),
+    keyframes_max_dist: cdktf.stringToTerraform(struct!.keyframesMaxDist),
+    max_frame_rate: cdktf.stringToTerraform(struct!.maxFrameRate),
+    max_height: cdktf.stringToTerraform(struct!.maxHeight),
+    max_width: cdktf.stringToTerraform(struct!.maxWidth),
+    padding_policy: cdktf.stringToTerraform(struct!.paddingPolicy),
+    resolution: cdktf.stringToTerraform(struct!.resolution),
+    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
+  }
+}
+
 export interface ElastictranscoderPresetVideoWatermarks {
   readonly horizontalAlign?: string;
   readonly horizontalOffset?: string;
@@ -75,9 +132,26 @@ export interface ElastictranscoderPresetVideoWatermarks {
   readonly verticalOffset?: string;
 }
 
+function elastictranscoderPresetVideoWatermarksToTerraform(struct?: ElastictranscoderPresetVideoWatermarks): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    horizontal_align: cdktf.stringToTerraform(struct!.horizontalAlign),
+    horizontal_offset: cdktf.stringToTerraform(struct!.horizontalOffset),
+    id: cdktf.stringToTerraform(struct!.id),
+    max_height: cdktf.stringToTerraform(struct!.maxHeight),
+    max_width: cdktf.stringToTerraform(struct!.maxWidth),
+    opacity: cdktf.stringToTerraform(struct!.opacity),
+    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
+    target: cdktf.stringToTerraform(struct!.target),
+    vertical_align: cdktf.stringToTerraform(struct!.verticalAlign),
+    vertical_offset: cdktf.stringToTerraform(struct!.verticalOffset),
+  }
+}
+
+
 // Resource
 
-export class ElastictranscoderPreset extends TerraformResource {
+export class ElastictranscoderPreset extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -283,16 +357,16 @@ export class ElastictranscoderPreset extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container: this._container,
-      description: this._description,
-      name: this._name,
-      type: this._type,
-      video_codec_options: this._videoCodecOptions,
-      audio: this._audio,
-      audio_codec_options: this._audioCodecOptions,
-      thumbnails: this._thumbnails,
-      video: this._video,
-      video_watermarks: this._videoWatermarks,
+      container: cdktf.stringToTerraform(this._container),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      type: cdktf.stringToTerraform(this._type),
+      video_codec_options: cdktf.hashMapper(cdktf.anyToTerraform)(this._videoCodecOptions),
+      audio: cdktf.listMapper(elastictranscoderPresetAudioToTerraform)(this._audio),
+      audio_codec_options: cdktf.listMapper(elastictranscoderPresetAudioCodecOptionsToTerraform)(this._audioCodecOptions),
+      thumbnails: cdktf.listMapper(elastictranscoderPresetThumbnailsToTerraform)(this._thumbnails),
+      video: cdktf.listMapper(elastictranscoderPresetVideoToTerraform)(this._video),
+      video_watermarks: cdktf.listMapper(elastictranscoderPresetVideoWatermarksToTerraform)(this._videoWatermarks),
     };
   }
 }

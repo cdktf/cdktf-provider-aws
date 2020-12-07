@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LaunchConfigurationConfig extends TerraformMetaArguments {
+export interface LaunchConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly associatePublicIpAddress?: boolean;
   readonly ebsOptimized?: boolean;
   readonly enableMonitoring?: boolean;
@@ -41,10 +40,34 @@ export interface LaunchConfigurationEbsBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function launchConfigurationEbsBlockDeviceToTerraform(struct?: LaunchConfigurationEbsBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    no_device: cdktf.booleanToTerraform(struct!.noDevice),
+    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface LaunchConfigurationEphemeralBlockDevice {
   readonly deviceName: string;
   readonly virtualName: string;
 }
+
+function launchConfigurationEphemeralBlockDeviceToTerraform(struct?: LaunchConfigurationEphemeralBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+  }
+}
+
 export interface LaunchConfigurationRootBlockDevice {
   readonly deleteOnTermination?: boolean;
   readonly encrypted?: boolean;
@@ -53,9 +76,21 @@ export interface LaunchConfigurationRootBlockDevice {
   readonly volumeType?: string;
 }
 
+function launchConfigurationRootBlockDeviceToTerraform(struct?: LaunchConfigurationRootBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
+
 // Resource
 
-export class LaunchConfiguration extends TerraformResource {
+export class LaunchConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -411,25 +446,25 @@ export class LaunchConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      associate_public_ip_address: this._associatePublicIpAddress,
-      ebs_optimized: this._ebsOptimized,
-      enable_monitoring: this._enableMonitoring,
-      iam_instance_profile: this._iamInstanceProfile,
-      image_id: this._imageId,
-      instance_type: this._instanceType,
-      key_name: this._keyName,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      placement_tenancy: this._placementTenancy,
-      security_groups: this._securityGroups,
-      spot_price: this._spotPrice,
-      user_data: this._userData,
-      user_data_base64: this._userDataBase64,
-      vpc_classic_link_id: this._vpcClassicLinkId,
-      vpc_classic_link_security_groups: this._vpcClassicLinkSecurityGroups,
-      ebs_block_device: this._ebsBlockDevice,
-      ephemeral_block_device: this._ephemeralBlockDevice,
-      root_block_device: this._rootBlockDevice,
+      associate_public_ip_address: cdktf.booleanToTerraform(this._associatePublicIpAddress),
+      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
+      enable_monitoring: cdktf.booleanToTerraform(this._enableMonitoring),
+      iam_instance_profile: cdktf.stringToTerraform(this._iamInstanceProfile),
+      image_id: cdktf.stringToTerraform(this._imageId),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      key_name: cdktf.stringToTerraform(this._keyName),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      placement_tenancy: cdktf.stringToTerraform(this._placementTenancy),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      spot_price: cdktf.stringToTerraform(this._spotPrice),
+      user_data: cdktf.stringToTerraform(this._userData),
+      user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
+      vpc_classic_link_id: cdktf.stringToTerraform(this._vpcClassicLinkId),
+      vpc_classic_link_security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcClassicLinkSecurityGroups),
+      ebs_block_device: cdktf.listMapper(launchConfigurationEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
+      ephemeral_block_device: cdktf.listMapper(launchConfigurationEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      root_block_device: cdktf.listMapper(launchConfigurationRootBlockDeviceToTerraform)(this._rootBlockDevice),
     };
   }
 }

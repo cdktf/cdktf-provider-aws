@@ -2,14 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAmiConfig extends TerraformMetaArguments {
+export interface DataAwsAmiConfig extends cdktf.TerraformMetaArguments {
   readonly executableUsers?: string[];
   readonly mostRecent?: boolean;
   readonly nameRegex?: string;
@@ -18,7 +15,7 @@ export interface DataAwsAmiConfig extends TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsAmiFilter[];
 }
-export class DataAwsAmiBlockDeviceMappings extends ComplexComputedList {
+export class DataAwsAmiBlockDeviceMappings extends cdktf.ComplexComputedList {
 
   // device_name - computed: true, optional: false, required: false
   public get deviceName() {
@@ -40,7 +37,7 @@ export class DataAwsAmiBlockDeviceMappings extends ComplexComputedList {
     return this.getStringAttribute('virtual_name');
   }
 }
-export class DataAwsAmiProductCodes extends ComplexComputedList {
+export class DataAwsAmiProductCodes extends cdktf.ComplexComputedList {
 
   // product_code_id - computed: true, optional: false, required: false
   public get productCodeId() {
@@ -57,9 +54,18 @@ export interface DataAwsAmiFilter {
   readonly values: string[];
 }
 
+function dataAwsAmiFilterToTerraform(struct?: DataAwsAmiFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsAmi extends TerraformDataSource {
+export class DataAwsAmi extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -266,7 +272,7 @@ export class DataAwsAmi extends TerraformDataSource {
 
   // state_reason - computed: true, optional: false, required: false
   public stateReason(key: string): string {
-    return new StringMap(this, 'state_reason').lookup(key);
+    return new cdktf.StringMap(this, 'state_reason').lookup(key);
   }
 
   // tags - computed: true, optional: true, required: false
@@ -312,12 +318,12 @@ export class DataAwsAmi extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      executable_users: this._executableUsers,
-      most_recent: this._mostRecent,
-      name_regex: this._nameRegex,
-      owners: this._owners,
-      tags: this._tags,
-      filter: this._filter,
+      executable_users: cdktf.listMapper(cdktf.stringToTerraform)(this._executableUsers),
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      name_regex: cdktf.stringToTerraform(this._nameRegex),
+      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsAmiFilterToTerraform)(this._filter),
     };
   }
 }

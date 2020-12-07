@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafSizeConstraintSetConfig extends TerraformMetaArguments {
+export interface WafSizeConstraintSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** size_constraints block */
   readonly sizeConstraints?: WafSizeConstraintSetSizeConstraints[];
@@ -16,6 +15,15 @@ export interface WafSizeConstraintSetSizeConstraintsFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafSizeConstraintSetSizeConstraintsFieldToMatchToTerraform(struct?: WafSizeConstraintSetSizeConstraintsFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafSizeConstraintSetSizeConstraints {
   readonly comparisonOperator: string;
   readonly size: number;
@@ -24,9 +32,20 @@ export interface WafSizeConstraintSetSizeConstraints {
   readonly fieldToMatch: WafSizeConstraintSetSizeConstraintsFieldToMatch[];
 }
 
+function wafSizeConstraintSetSizeConstraintsToTerraform(struct?: WafSizeConstraintSetSizeConstraints): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    comparison_operator: cdktf.stringToTerraform(struct!.comparisonOperator),
+    size: cdktf.numberToTerraform(struct!.size),
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafSizeConstraintSetSizeConstraintsFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafSizeConstraintSet extends TerraformResource {
+export class WafSizeConstraintSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -96,8 +115,8 @@ export class WafSizeConstraintSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      size_constraints: this._sizeConstraints,
+      name: cdktf.stringToTerraform(this._name),
+      size_constraints: cdktf.listMapper(wafSizeConstraintSetSizeConstraintsToTerraform)(this._sizeConstraints),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayPeeringAttachmentAccepterConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayPeeringAttachmentAccepterConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly transitGatewayAttachmentId: string;
 }
 
 // Resource
 
-export class Ec2TransitGatewayPeeringAttachmentAccepter extends TerraformResource {
+export class Ec2TransitGatewayPeeringAttachmentAccepter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,8 +98,8 @@ export class Ec2TransitGatewayPeeringAttachmentAccepter extends TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      transit_gateway_attachment_id: this._transitGatewayAttachmentId,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalWebAclAssociationConfig extends TerraformMetaArguments {
+export interface WafregionalWebAclAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly resourceArn: string;
   readonly webAclId: string;
 }
 
 // Resource
 
-export class WafregionalWebAclAssociation extends TerraformResource {
+export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class WafregionalWebAclAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_arn: this._resourceArn,
-      web_acl_id: this._webAclId,
+      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      web_acl_id: cdktf.stringToTerraform(this._webAclId),
     };
   }
 }

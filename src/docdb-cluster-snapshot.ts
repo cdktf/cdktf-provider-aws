@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DocdbClusterSnapshotConfig extends TerraformMetaArguments {
+export interface DocdbClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly dbClusterIdentifier: string;
   readonly dbClusterSnapshotIdentifier: string;
   /** timeouts block */
@@ -17,9 +16,17 @@ export interface DocdbClusterSnapshotTimeouts {
   readonly create?: string;
 }
 
+function docdbClusterSnapshotTimeoutsToTerraform(struct?: DocdbClusterSnapshotTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class DocdbClusterSnapshot extends TerraformResource {
+export class DocdbClusterSnapshot extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -153,9 +160,9 @@ export class DocdbClusterSnapshot extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_cluster_identifier: this._dbClusterIdentifier,
-      db_cluster_snapshot_identifier: this._dbClusterSnapshotIdentifier,
-      timeouts: this._timeouts,
+      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
+      db_cluster_snapshot_identifier: cdktf.stringToTerraform(this._dbClusterSnapshotIdentifier),
+      timeouts: docdbClusterSnapshotTimeoutsToTerraform(this._timeouts),
     };
   }
 }

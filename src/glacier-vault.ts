@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlacierVaultConfig extends TerraformMetaArguments {
+export interface GlacierVaultConfig extends cdktf.TerraformMetaArguments {
   readonly accessPolicy?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface GlacierVaultNotification {
   readonly snsTopic: string;
 }
 
+function glacierVaultNotificationToTerraform(struct?: GlacierVaultNotification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    sns_topic: cdktf.stringToTerraform(struct!.snsTopic),
+  }
+}
+
+
 // Resource
 
-export class GlacierVault extends TerraformResource {
+export class GlacierVault extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -130,10 +138,10 @@ export class GlacierVault extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policy: this._accessPolicy,
-      name: this._name,
-      tags: this._tags,
-      notification: this._notification,
+      access_policy: cdktf.stringToTerraform(this._accessPolicy),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      notification: cdktf.listMapper(glacierVaultNotificationToTerraform)(this._notification),
     };
   }
 }

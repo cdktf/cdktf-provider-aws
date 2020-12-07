@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAvailabilityZoneConfig extends TerraformMetaArguments {
+export interface DataAwsAvailabilityZoneConfig extends cdktf.TerraformMetaArguments {
   readonly allAvailabilityZones?: boolean;
   readonly name?: string;
   readonly state?: string;
@@ -20,9 +19,18 @@ export interface DataAwsAvailabilityZoneFilter {
   readonly values: string[];
 }
 
+function dataAwsAvailabilityZoneFilterToTerraform(struct?: DataAwsAvailabilityZoneFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsAvailabilityZone extends TerraformDataSource {
+export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -166,11 +174,11 @@ export class DataAwsAvailabilityZone extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_availability_zones: this._allAvailabilityZones,
-      name: this._name,
-      state: this._state,
-      zone_id: this._zoneId,
-      filter: this._filter,
+      all_availability_zones: cdktf.booleanToTerraform(this._allAvailabilityZones),
+      name: cdktf.stringToTerraform(this._name),
+      state: cdktf.stringToTerraform(this._state),
+      zone_id: cdktf.stringToTerraform(this._zoneId),
+      filter: cdktf.listMapper(dataAwsAvailabilityZoneFilterToTerraform)(this._filter),
     };
   }
 }

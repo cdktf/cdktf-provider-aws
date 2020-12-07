@@ -2,18 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElasticsearchDomainConfig extends TerraformMetaArguments {
+export interface DataAwsElasticsearchDomainConfig extends cdktf.TerraformMetaArguments {
   readonly domainName: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsElasticsearchDomainAdvancedSecurityOptions extends ComplexComputedList {
+export class DataAwsElasticsearchDomainAdvancedSecurityOptions extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
@@ -25,14 +22,14 @@ export class DataAwsElasticsearchDomainAdvancedSecurityOptions extends ComplexCo
     return this.getBooleanAttribute('internal_user_database_enabled');
   }
 }
-export class DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig extends ComplexComputedList {
+export class DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig extends cdktf.ComplexComputedList {
 
   // availability_zone_count - computed: true, optional: false, required: false
   public get availabilityZoneCount() {
     return this.getNumberAttribute('availability_zone_count');
   }
 }
-export class DataAwsElasticsearchDomainClusterConfig extends ComplexComputedList {
+export class DataAwsElasticsearchDomainClusterConfig extends cdktf.ComplexComputedList {
 
   // dedicated_master_count - computed: true, optional: false, required: false
   public get dedicatedMasterCount() {
@@ -84,7 +81,7 @@ export class DataAwsElasticsearchDomainClusterConfig extends ComplexComputedList
     return this.getBooleanAttribute('zone_awareness_enabled');
   }
 }
-export class DataAwsElasticsearchDomainCognitoOptions extends ComplexComputedList {
+export class DataAwsElasticsearchDomainCognitoOptions extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
@@ -106,7 +103,7 @@ export class DataAwsElasticsearchDomainCognitoOptions extends ComplexComputedLis
     return this.getStringAttribute('user_pool_id');
   }
 }
-export class DataAwsElasticsearchDomainEbsOptions extends ComplexComputedList {
+export class DataAwsElasticsearchDomainEbsOptions extends cdktf.ComplexComputedList {
 
   // ebs_enabled - computed: true, optional: false, required: false
   public get ebsEnabled() {
@@ -128,7 +125,7 @@ export class DataAwsElasticsearchDomainEbsOptions extends ComplexComputedList {
     return this.getStringAttribute('volume_type');
   }
 }
-export class DataAwsElasticsearchDomainEncryptionAtRest extends ComplexComputedList {
+export class DataAwsElasticsearchDomainEncryptionAtRest extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
@@ -140,7 +137,7 @@ export class DataAwsElasticsearchDomainEncryptionAtRest extends ComplexComputedL
     return this.getStringAttribute('kms_key_id');
   }
 }
-export class DataAwsElasticsearchDomainLogPublishingOptions extends ComplexComputedList {
+export class DataAwsElasticsearchDomainLogPublishingOptions extends cdktf.ComplexComputedList {
 
   // cloudwatch_log_group_arn - computed: true, optional: false, required: false
   public get cloudwatchLogGroupArn() {
@@ -157,21 +154,21 @@ export class DataAwsElasticsearchDomainLogPublishingOptions extends ComplexCompu
     return this.getStringAttribute('log_type');
   }
 }
-export class DataAwsElasticsearchDomainNodeToNodeEncryption extends ComplexComputedList {
+export class DataAwsElasticsearchDomainNodeToNodeEncryption extends cdktf.ComplexComputedList {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsElasticsearchDomainSnapshotOptions extends ComplexComputedList {
+export class DataAwsElasticsearchDomainSnapshotOptions extends cdktf.ComplexComputedList {
 
   // automated_snapshot_start_hour - computed: true, optional: false, required: false
   public get automatedSnapshotStartHour() {
     return this.getNumberAttribute('automated_snapshot_start_hour');
   }
 }
-export class DataAwsElasticsearchDomainVpcOptions extends ComplexComputedList {
+export class DataAwsElasticsearchDomainVpcOptions extends cdktf.ComplexComputedList {
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
@@ -196,7 +193,7 @@ export class DataAwsElasticsearchDomainVpcOptions extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsElasticsearchDomain extends TerraformDataSource {
+export class DataAwsElasticsearchDomain extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -228,7 +225,7 @@ export class DataAwsElasticsearchDomain extends TerraformDataSource {
 
   // advanced_options - computed: true, optional: false, required: false
   public advancedOptions(key: string): string {
-    return new StringMap(this, 'advanced_options').lookup(key);
+    return new cdktf.StringMap(this, 'advanced_options').lookup(key);
   }
 
   // advanced_security_options - computed: true, optional: false, required: false
@@ -356,8 +353,8 @@ export class DataAwsElasticsearchDomain extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: this._domainName,
-      tags: this._tags,
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

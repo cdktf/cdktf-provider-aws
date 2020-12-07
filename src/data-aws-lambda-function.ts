@@ -2,32 +2,30 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLambdaFunctionConfig extends TerraformMetaArguments {
+export interface DataAwsLambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   readonly functionName: string;
   readonly qualifier?: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsLambdaFunctionDeadLetterConfig extends ComplexComputedList {
+export class DataAwsLambdaFunctionDeadLetterConfig extends cdktf.ComplexComputedList {
 
   // target_arn - computed: true, optional: false, required: false
   public get targetArn() {
     return this.getStringAttribute('target_arn');
   }
 }
-export class DataAwsLambdaFunctionEnvironment extends ComplexComputedList {
+export class DataAwsLambdaFunctionEnvironment extends cdktf.ComplexComputedList {
 
   // variables - computed: true, optional: false, required: false
   public get variables() {
     return this.interpolationForAttribute('variables') as any;
   }
 }
-export class DataAwsLambdaFunctionFileSystemConfig extends ComplexComputedList {
+export class DataAwsLambdaFunctionFileSystemConfig extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -39,14 +37,14 @@ export class DataAwsLambdaFunctionFileSystemConfig extends ComplexComputedList {
     return this.getStringAttribute('local_mount_path');
   }
 }
-export class DataAwsLambdaFunctionTracingConfig extends ComplexComputedList {
+export class DataAwsLambdaFunctionTracingConfig extends cdktf.ComplexComputedList {
 
   // mode - computed: true, optional: false, required: false
   public get mode() {
     return this.getStringAttribute('mode');
   }
 }
-export class DataAwsLambdaFunctionVpcConfig extends ComplexComputedList {
+export class DataAwsLambdaFunctionVpcConfig extends cdktf.ComplexComputedList {
 
   // security_group_ids - computed: true, optional: false, required: false
   public get securityGroupIds() {
@@ -66,7 +64,7 @@ export class DataAwsLambdaFunctionVpcConfig extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsLambdaFunction extends TerraformDataSource {
+export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -253,9 +251,9 @@ export class DataAwsLambdaFunction extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: this._functionName,
-      qualifier: this._qualifier,
-      tags: this._tags,
+      function_name: cdktf.stringToTerraform(this._functionName),
+      qualifier: cdktf.stringToTerraform(this._qualifier),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

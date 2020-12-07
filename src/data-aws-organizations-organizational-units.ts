@@ -2,16 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOrganizationsOrganizationalUnitsConfig extends TerraformMetaArguments {
+export interface DataAwsOrganizationsOrganizationalUnitsConfig extends cdktf.TerraformMetaArguments {
   readonly parentId: string;
 }
-export class DataAwsOrganizationsOrganizationalUnitsChildren extends ComplexComputedList {
+export class DataAwsOrganizationsOrganizationalUnitsChildren extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -31,7 +29,7 @@ export class DataAwsOrganizationsOrganizationalUnitsChildren extends ComplexComp
 
 // Resource
 
-export class DataAwsOrganizationsOrganizationalUnits extends TerraformDataSource {
+export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -84,7 +82,7 @@ export class DataAwsOrganizationsOrganizationalUnits extends TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      parent_id: this._parentId,
+      parent_id: cdktf.stringToTerraform(this._parentId),
     };
   }
 }

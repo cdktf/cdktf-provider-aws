@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NetworkInterfaceConfig extends TerraformMetaArguments {
+export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly privateIp?: string;
   readonly privateIps?: string[];
@@ -24,9 +23,18 @@ export interface NetworkInterfaceAttachment {
   readonly instance: string;
 }
 
+function networkInterfaceAttachmentToTerraform(struct?: NetworkInterfaceAttachment): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_index: cdktf.numberToTerraform(struct!.deviceIndex),
+    instance: cdktf.stringToTerraform(struct!.instance),
+  }
+}
+
+
 // Resource
 
-export class NetworkInterface extends TerraformResource {
+export class NetworkInterface extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -225,15 +233,15 @@ export class NetworkInterface extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      private_ip: this._privateIp,
-      private_ips: this._privateIps,
-      private_ips_count: this._privateIpsCount,
-      security_groups: this._securityGroups,
-      source_dest_check: this._sourceDestCheck,
-      subnet_id: this._subnetId,
-      tags: this._tags,
-      attachment: this._attachment,
+      description: cdktf.stringToTerraform(this._description),
+      private_ip: cdktf.stringToTerraform(this._privateIp),
+      private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIps),
+      private_ips_count: cdktf.numberToTerraform(this._privateIpsCount),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform)(this._attachment),
     };
   }
 }

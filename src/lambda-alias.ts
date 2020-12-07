@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LambdaAliasConfig extends TerraformMetaArguments {
+export interface LambdaAliasConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly functionName: string;
   readonly functionVersion: string;
@@ -19,9 +18,17 @@ export interface LambdaAliasRoutingConfig {
   readonly additionalVersionWeights?: { [key: string]: number };
 }
 
+function lambdaAliasRoutingConfigToTerraform(struct?: LambdaAliasRoutingConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    additional_version_weights: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.additionalVersionWeights),
+  }
+}
+
+
 // Resource
 
-export class LambdaAlias extends TerraformResource {
+export class LambdaAlias extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -141,11 +148,11 @@ export class LambdaAlias extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      function_name: this._functionName,
-      function_version: this._functionVersion,
-      name: this._name,
-      routing_config: this._routingConfig,
+      description: cdktf.stringToTerraform(this._description),
+      function_name: cdktf.stringToTerraform(this._functionName),
+      function_version: cdktf.stringToTerraform(this._functionVersion),
+      name: cdktf.stringToTerraform(this._name),
+      routing_config: cdktf.listMapper(lambdaAliasRoutingConfigToTerraform)(this._routingConfig),
     };
   }
 }

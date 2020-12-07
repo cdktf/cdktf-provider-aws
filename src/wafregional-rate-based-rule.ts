@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalRateBasedRuleConfig extends TerraformMetaArguments {
+export interface WafregionalRateBasedRuleConfig extends cdktf.TerraformMetaArguments {
   readonly metricName: string;
   readonly name: string;
   readonly rateKey: string;
@@ -22,9 +21,19 @@ export interface WafregionalRateBasedRulePredicate {
   readonly type: string;
 }
 
+function wafregionalRateBasedRulePredicateToTerraform(struct?: WafregionalRateBasedRulePredicate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data_id: cdktf.stringToTerraform(struct!.dataId),
+    negated: cdktf.booleanToTerraform(struct!.negated),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class WafregionalRateBasedRule extends TerraformResource {
+export class WafregionalRateBasedRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -153,12 +162,12 @@ export class WafregionalRateBasedRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      metric_name: this._metricName,
-      name: this._name,
-      rate_key: this._rateKey,
-      rate_limit: this._rateLimit,
-      tags: this._tags,
-      predicate: this._predicate,
+      metric_name: cdktf.stringToTerraform(this._metricName),
+      name: cdktf.stringToTerraform(this._name),
+      rate_key: cdktf.stringToTerraform(this._rateKey),
+      rate_limit: cdktf.numberToTerraform(this._rateLimit),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      predicate: cdktf.listMapper(wafregionalRateBasedRulePredicateToTerraform)(this._predicate),
     };
   }
 }

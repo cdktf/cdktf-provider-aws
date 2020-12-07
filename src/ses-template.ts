@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesTemplateConfig extends TerraformMetaArguments {
+export interface SesTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly html?: string;
   readonly name: string;
   readonly subject?: string;
@@ -16,7 +15,7 @@ export interface SesTemplateConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SesTemplate extends TerraformResource {
+export class SesTemplate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -115,10 +114,10 @@ export class SesTemplate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      html: this._html,
-      name: this._name,
-      subject: this._subject,
-      text: this._text,
+      html: cdktf.stringToTerraform(this._html),
+      name: cdktf.stringToTerraform(this._name),
+      subject: cdktf.stringToTerraform(this._subject),
+      text: cdktf.stringToTerraform(this._text),
     };
   }
 }

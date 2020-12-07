@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SnsPlatformApplicationConfig extends TerraformMetaArguments {
+export interface SnsPlatformApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly eventDeliveryFailureTopicArn?: string;
   readonly eventEndpointCreatedTopicArn?: string;
   readonly eventEndpointDeletedTopicArn?: string;
@@ -23,7 +22,7 @@ export interface SnsPlatformApplicationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SnsPlatformApplication extends TerraformResource {
+export class SnsPlatformApplication extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -240,17 +239,17 @@ export class SnsPlatformApplication extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      event_delivery_failure_topic_arn: this._eventDeliveryFailureTopicArn,
-      event_endpoint_created_topic_arn: this._eventEndpointCreatedTopicArn,
-      event_endpoint_deleted_topic_arn: this._eventEndpointDeletedTopicArn,
-      event_endpoint_updated_topic_arn: this._eventEndpointUpdatedTopicArn,
-      failure_feedback_role_arn: this._failureFeedbackRoleArn,
-      name: this._name,
-      platform: this._platform,
-      platform_credential: this._platformCredential,
-      platform_principal: this._platformPrincipal,
-      success_feedback_role_arn: this._successFeedbackRoleArn,
-      success_feedback_sample_rate: this._successFeedbackSampleRate,
+      event_delivery_failure_topic_arn: cdktf.stringToTerraform(this._eventDeliveryFailureTopicArn),
+      event_endpoint_created_topic_arn: cdktf.stringToTerraform(this._eventEndpointCreatedTopicArn),
+      event_endpoint_deleted_topic_arn: cdktf.stringToTerraform(this._eventEndpointDeletedTopicArn),
+      event_endpoint_updated_topic_arn: cdktf.stringToTerraform(this._eventEndpointUpdatedTopicArn),
+      failure_feedback_role_arn: cdktf.stringToTerraform(this._failureFeedbackRoleArn),
+      name: cdktf.stringToTerraform(this._name),
+      platform: cdktf.stringToTerraform(this._platform),
+      platform_credential: cdktf.stringToTerraform(this._platformCredential),
+      platform_principal: cdktf.stringToTerraform(this._platformPrincipal),
+      success_feedback_role_arn: cdktf.stringToTerraform(this._successFeedbackRoleArn),
+      success_feedback_sample_rate: cdktf.stringToTerraform(this._successFeedbackSampleRate),
     };
   }
 }

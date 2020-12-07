@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodebuildWebhookConfig extends TerraformMetaArguments {
+export interface CodebuildWebhookConfig extends cdktf.TerraformMetaArguments {
   readonly branchFilter?: string;
   readonly projectName: string;
   /** filter_group block */
@@ -18,14 +17,32 @@ export interface CodebuildWebhookFilterGroupFilter {
   readonly pattern: string;
   readonly type: string;
 }
+
+function codebuildWebhookFilterGroupFilterToTerraform(struct?: CodebuildWebhookFilterGroupFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    exclude_matched_pattern: cdktf.booleanToTerraform(struct!.excludeMatchedPattern),
+    pattern: cdktf.stringToTerraform(struct!.pattern),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface CodebuildWebhookFilterGroup {
   /** filter block */
   readonly filter?: CodebuildWebhookFilterGroupFilter[];
 }
 
+function codebuildWebhookFilterGroupToTerraform(struct?: CodebuildWebhookFilterGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    filter: cdktf.listMapper(codebuildWebhookFilterGroupFilterToTerraform)(struct!.filter),
+  }
+}
+
+
 // Resource
 
-export class CodebuildWebhook extends TerraformResource {
+export class CodebuildWebhook extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -122,9 +139,9 @@ export class CodebuildWebhook extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch_filter: this._branchFilter,
-      project_name: this._projectName,
-      filter_group: this._filterGroup,
+      branch_filter: cdktf.stringToTerraform(this._branchFilter),
+      project_name: cdktf.stringToTerraform(this._projectName),
+      filter_group: cdktf.listMapper(codebuildWebhookFilterGroupToTerraform)(this._filterGroup),
     };
   }
 }

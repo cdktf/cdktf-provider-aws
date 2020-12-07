@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultSecurityGroupConfig extends TerraformMetaArguments {
+export interface DefaultSecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly egress?: DefaultSecurityGroupEgress[];
   readonly ingress?: DefaultSecurityGroupIngress[];
   readonly revokeRulesOnDelete?: boolean;
@@ -27,6 +26,22 @@ export interface DefaultSecurityGroupEgress {
   readonly selfAttribute?: boolean;
   readonly toPort?: number;
 }
+
+function defaultSecurityGroupEgressToTerraform(struct?: DefaultSecurityGroupEgress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrBlocks),
+    description: cdktf.stringToTerraform(struct!.description),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.prefixListIds),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    self: cdktf.booleanToTerraform(struct!.selfAttribute),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface DefaultSecurityGroupIngress {
   readonly cidrBlocks?: string[];
   readonly description?: string;
@@ -38,14 +53,39 @@ export interface DefaultSecurityGroupIngress {
   readonly selfAttribute?: boolean;
   readonly toPort?: number;
 }
+
+function defaultSecurityGroupIngressToTerraform(struct?: DefaultSecurityGroupIngress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrBlocks),
+    description: cdktf.stringToTerraform(struct!.description),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.prefixListIds),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    self: cdktf.booleanToTerraform(struct!.selfAttribute),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface DefaultSecurityGroupTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
+function defaultSecurityGroupTimeoutsToTerraform(struct?: DefaultSecurityGroupTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DefaultSecurityGroup extends TerraformResource {
+export class DefaultSecurityGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -201,12 +241,12 @@ export class DefaultSecurityGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      egress: this._egress,
-      ingress: this._ingress,
-      revoke_rules_on_delete: this._revokeRulesOnDelete,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      timeouts: this._timeouts,
+      egress: cdktf.listMapper(defaultSecurityGroupEgressToTerraform)(this._egress),
+      ingress: cdktf.listMapper(defaultSecurityGroupIngressToTerraform)(this._ingress),
+      revoke_rules_on_delete: cdktf.booleanToTerraform(this._revokeRulesOnDelete),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      timeouts: defaultSecurityGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

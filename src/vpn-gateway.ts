@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpnGatewayConfig extends TerraformMetaArguments {
+export interface VpnGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly amazonSideAsn?: string;
   readonly availabilityZone?: string;
   readonly tags?: { [key: string]: string };
@@ -16,7 +15,7 @@ export interface VpnGatewayConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class VpnGateway extends TerraformResource {
+export class VpnGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +122,10 @@ export class VpnGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amazon_side_asn: this._amazonSideAsn,
-      availability_zone: this._availabilityZone,
-      tags: this._tags,
-      vpc_id: this._vpcId,
+      amazon_side_asn: cdktf.stringToTerraform(this._amazonSideAsn),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

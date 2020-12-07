@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IotThingPrincipalAttachmentConfig extends TerraformMetaArguments {
+export interface IotThingPrincipalAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly principal: string;
   readonly thing: string;
 }
 
 // Resource
 
-export class IotThingPrincipalAttachment extends TerraformResource {
+export class IotThingPrincipalAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class IotThingPrincipalAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      principal: this._principal,
-      thing: this._thing,
+      principal: cdktf.stringToTerraform(this._principal),
+      thing: cdktf.stringToTerraform(this._thing),
     };
   }
 }

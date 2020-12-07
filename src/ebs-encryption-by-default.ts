@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EbsEncryptionByDefaultConfig extends TerraformMetaArguments {
+export interface EbsEncryptionByDefaultConfig extends cdktf.TerraformMetaArguments {
   readonly enabled?: boolean;
 }
 
 // Resource
 
-export class EbsEncryptionByDefault extends TerraformResource {
+export class EbsEncryptionByDefault extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -64,7 +63,7 @@ export class EbsEncryptionByDefault extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: this._enabled,
+      enabled: cdktf.booleanToTerraform(this._enabled),
     };
   }
 }

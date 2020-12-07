@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2DomainNameConfig extends TerraformMetaArguments {
+export interface Apigatewayv2DomainNameConfig extends cdktf.TerraformMetaArguments {
   readonly domainName: string;
   readonly tags?: { [key: string]: string };
   /** domain_name_configuration block */
@@ -20,13 +19,31 @@ export interface Apigatewayv2DomainNameDomainNameConfiguration {
   readonly endpointType: string;
   readonly securityPolicy: string;
 }
+
+function apigatewayv2DomainNameDomainNameConfigurationToTerraform(struct?: Apigatewayv2DomainNameDomainNameConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    certificate_arn: cdktf.stringToTerraform(struct!.certificateArn),
+    endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
+    security_policy: cdktf.stringToTerraform(struct!.securityPolicy),
+  }
+}
+
 export interface Apigatewayv2DomainNameTimeouts {
   readonly update?: string;
 }
 
+function apigatewayv2DomainNameTimeoutsToTerraform(struct?: Apigatewayv2DomainNameTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class Apigatewayv2DomainName extends TerraformResource {
+export class Apigatewayv2DomainName extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -132,10 +149,10 @@ export class Apigatewayv2DomainName extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: this._domainName,
-      tags: this._tags,
-      domain_name_configuration: this._domainNameConfiguration,
-      timeouts: this._timeouts,
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      domain_name_configuration: cdktf.listMapper(apigatewayv2DomainNameDomainNameConfigurationToTerraform)(this._domainNameConfiguration),
+      timeouts: apigatewayv2DomainNameTimeoutsToTerraform(this._timeouts),
     };
   }
 }

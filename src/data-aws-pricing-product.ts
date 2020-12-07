@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsPricingProductConfig extends TerraformMetaArguments {
+export interface DataAwsPricingProductConfig extends cdktf.TerraformMetaArguments {
   readonly serviceCode: string;
   /** filters block */
   readonly filters: DataAwsPricingProductFilters[];
@@ -17,9 +16,18 @@ export interface DataAwsPricingProductFilters {
   readonly value: string;
 }
 
+function dataAwsPricingProductFiltersToTerraform(struct?: DataAwsPricingProductFilters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    field: cdktf.stringToTerraform(struct!.field),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class DataAwsPricingProduct extends TerraformDataSource {
+export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -86,8 +94,8 @@ export class DataAwsPricingProduct extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      service_code: this._serviceCode,
-      filters: this._filters,
+      service_code: cdktf.stringToTerraform(this._serviceCode),
+      filters: cdktf.listMapper(dataAwsPricingProductFiltersToTerraform)(this._filters),
     };
   }
 }

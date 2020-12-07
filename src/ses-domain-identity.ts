@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesDomainIdentityConfig extends TerraformMetaArguments {
+export interface SesDomainIdentityConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
 }
 
 // Resource
 
-export class SesDomainIdentity extends TerraformResource {
+export class SesDomainIdentity extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -71,7 +70,7 @@ export class SesDomainIdentity extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
+      domain: cdktf.stringToTerraform(this._domain),
     };
   }
 }

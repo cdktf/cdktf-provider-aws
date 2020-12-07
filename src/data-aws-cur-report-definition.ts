@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCurReportDefinitionConfig extends TerraformMetaArguments {
+export interface DataAwsCurReportDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly reportName: string;
 }
 
 // Resource
 
-export class DataAwsCurReportDefinition extends TerraformDataSource {
+export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -101,7 +100,7 @@ export class DataAwsCurReportDefinition extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      report_name: this._reportName,
+      report_name: cdktf.stringToTerraform(this._reportName),
     };
   }
 }

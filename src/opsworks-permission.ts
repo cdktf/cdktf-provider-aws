@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksPermissionConfig extends TerraformMetaArguments {
+export interface OpsworksPermissionConfig extends cdktf.TerraformMetaArguments {
   readonly allowSsh?: boolean;
   readonly allowSudo?: boolean;
   readonly level?: string;
@@ -17,7 +16,7 @@ export interface OpsworksPermissionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class OpsworksPermission extends TerraformResource {
+export class OpsworksPermission extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -133,11 +132,11 @@ export class OpsworksPermission extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_ssh: this._allowSsh,
-      allow_sudo: this._allowSudo,
-      level: this._level,
-      stack_id: this._stackId,
-      user_arn: this._userArn,
+      allow_ssh: cdktf.booleanToTerraform(this._allowSsh),
+      allow_sudo: cdktf.booleanToTerraform(this._allowSudo),
+      level: cdktf.stringToTerraform(this._level),
+      stack_id: cdktf.stringToTerraform(this._stackId),
+      user_arn: cdktf.stringToTerraform(this._userArn),
     };
   }
 }

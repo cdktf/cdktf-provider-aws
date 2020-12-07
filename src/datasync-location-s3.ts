@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatasyncLocationS3Config extends TerraformMetaArguments {
+export interface DatasyncLocationS3Config extends cdktf.TerraformMetaArguments {
   readonly s3BucketArn: string;
   readonly subdirectory: string;
   readonly tags?: { [key: string]: string };
@@ -18,9 +17,17 @@ export interface DatasyncLocationS3S3Config {
   readonly bucketAccessRoleArn: string;
 }
 
+function datasyncLocationS3S3ConfigToTerraform(struct?: DatasyncLocationS3S3Config): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_access_role_arn: cdktf.stringToTerraform(struct!.bucketAccessRoleArn),
+  }
+}
+
+
 // Resource
 
-export class DatasyncLocationS3 extends TerraformResource {
+export class DatasyncLocationS3 extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +130,10 @@ export class DatasyncLocationS3 extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      s3_bucket_arn: this._s3BucketArn,
-      subdirectory: this._subdirectory,
-      tags: this._tags,
-      s3_config: this._s3Config,
+      s3_bucket_arn: cdktf.stringToTerraform(this._s3BucketArn),
+      subdirectory: cdktf.stringToTerraform(this._subdirectory),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      s3_config: cdktf.listMapper(datasyncLocationS3S3ConfigToTerraform)(this._s3Config),
     };
   }
 }

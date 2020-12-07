@@ -2,18 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OrganizationsOrganizationConfig extends TerraformMetaArguments {
+export interface OrganizationsOrganizationConfig extends cdktf.TerraformMetaArguments {
   readonly awsServiceAccessPrincipals?: string[];
   readonly enabledPolicyTypes?: string[];
   readonly featureSet?: string;
 }
-export class OrganizationsOrganizationAccounts extends ComplexComputedList {
+export class OrganizationsOrganizationAccounts extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -40,7 +38,7 @@ export class OrganizationsOrganizationAccounts extends ComplexComputedList {
     return this.getStringAttribute('status');
   }
 }
-export class OrganizationsOrganizationNonMasterAccounts extends ComplexComputedList {
+export class OrganizationsOrganizationNonMasterAccounts extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -67,7 +65,7 @@ export class OrganizationsOrganizationNonMasterAccounts extends ComplexComputedL
     return this.getStringAttribute('status');
   }
 }
-export class OrganizationsOrganizationRootsPolicyTypes extends ComplexComputedList {
+export class OrganizationsOrganizationRootsPolicyTypes extends cdktf.ComplexComputedList {
 
   // status - computed: true, optional: false, required: false
   public get status() {
@@ -79,7 +77,7 @@ export class OrganizationsOrganizationRootsPolicyTypes extends ComplexComputedLi
     return this.getStringAttribute('type');
   }
 }
-export class OrganizationsOrganizationRoots extends ComplexComputedList {
+export class OrganizationsOrganizationRoots extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -104,7 +102,7 @@ export class OrganizationsOrganizationRoots extends ComplexComputedList {
 
 // Resource
 
-export class OrganizationsOrganization extends TerraformResource {
+export class OrganizationsOrganization extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -224,9 +222,9 @@ export class OrganizationsOrganization extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_service_access_principals: this._awsServiceAccessPrincipals,
-      enabled_policy_types: this._enabledPolicyTypes,
-      feature_set: this._featureSet,
+      aws_service_access_principals: cdktf.listMapper(cdktf.stringToTerraform)(this._awsServiceAccessPrincipals),
+      enabled_policy_types: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledPolicyTypes),
+      feature_set: cdktf.stringToTerraform(this._featureSet),
     };
   }
 }

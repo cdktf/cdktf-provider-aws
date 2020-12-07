@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticacheSubnetGroupConfig extends TerraformMetaArguments {
+export interface ElasticacheSubnetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly subnetIds: string[];
@@ -15,7 +14,7 @@ export interface ElasticacheSubnetGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ElasticacheSubnetGroup extends TerraformResource {
+export class ElasticacheSubnetGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -94,9 +93,9 @@ export class ElasticacheSubnetGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      subnet_ids: this._subnetIds,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSsmParameterConfig extends TerraformMetaArguments {
+export interface DataAwsSsmParameterConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly withDecryption?: boolean;
 }
 
 // Resource
 
-export class DataAwsSsmParameter extends TerraformDataSource {
+export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -99,8 +98,8 @@ export class DataAwsSsmParameter extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      with_decryption: this._withDecryption,
+      name: cdktf.stringToTerraform(this._name),
+      with_decryption: cdktf.booleanToTerraform(this._withDecryption),
     };
   }
 }

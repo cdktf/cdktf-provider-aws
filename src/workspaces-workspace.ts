@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WorkspacesWorkspaceConfig extends TerraformMetaArguments {
+export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments {
   readonly bundleId: string;
   readonly directoryId: string;
   readonly rootVolumeEncryptionEnabled?: boolean;
@@ -26,9 +25,21 @@ export interface WorkspacesWorkspaceWorkspaceProperties {
   readonly userVolumeSizeGib?: number;
 }
 
+function workspacesWorkspaceWorkspacePropertiesToTerraform(struct?: WorkspacesWorkspaceWorkspaceProperties): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    compute_type_name: cdktf.stringToTerraform(struct!.computeTypeName),
+    root_volume_size_gib: cdktf.numberToTerraform(struct!.rootVolumeSizeGib),
+    running_mode: cdktf.stringToTerraform(struct!.runningMode),
+    running_mode_auto_stop_timeout_in_minutes: cdktf.numberToTerraform(struct!.runningModeAutoStopTimeoutInMinutes),
+    user_volume_size_gib: cdktf.numberToTerraform(struct!.userVolumeSizeGib),
+  }
+}
+
+
 // Resource
 
-export class WorkspacesWorkspace extends TerraformResource {
+export class WorkspacesWorkspace extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -204,14 +215,14 @@ export class WorkspacesWorkspace extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_id: this._bundleId,
-      directory_id: this._directoryId,
-      root_volume_encryption_enabled: this._rootVolumeEncryptionEnabled,
-      tags: this._tags,
-      user_name: this._userName,
-      user_volume_encryption_enabled: this._userVolumeEncryptionEnabled,
-      volume_encryption_key: this._volumeEncryptionKey,
-      workspace_properties: this._workspaceProperties,
+      bundle_id: cdktf.stringToTerraform(this._bundleId),
+      directory_id: cdktf.stringToTerraform(this._directoryId),
+      root_volume_encryption_enabled: cdktf.booleanToTerraform(this._rootVolumeEncryptionEnabled),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      user_name: cdktf.stringToTerraform(this._userName),
+      user_volume_encryption_enabled: cdktf.booleanToTerraform(this._userVolumeEncryptionEnabled),
+      volume_encryption_key: cdktf.stringToTerraform(this._volumeEncryptionKey),
+      workspace_properties: cdktf.listMapper(workspacesWorkspaceWorkspacePropertiesToTerraform)(this._workspaceProperties),
     };
   }
 }

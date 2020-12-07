@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RedshiftSnapshotScheduleConfig extends TerraformMetaArguments {
+export interface RedshiftSnapshotScheduleConfig extends cdktf.TerraformMetaArguments {
   readonly definitions: string[];
   readonly description?: string;
   readonly forceDestroy?: boolean;
@@ -18,7 +17,7 @@ export interface RedshiftSnapshotScheduleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class RedshiftSnapshotSchedule extends TerraformResource {
+export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -156,12 +155,12 @@ export class RedshiftSnapshotSchedule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      definitions: this._definitions,
-      description: this._description,
-      force_destroy: this._forceDestroy,
-      identifier: this._identifier,
-      identifier_prefix: this._identifierPrefix,
-      tags: this._tags,
+      definitions: cdktf.listMapper(cdktf.stringToTerraform)(this._definitions),
+      description: cdktf.stringToTerraform(this._description),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      identifier: cdktf.stringToTerraform(this._identifier),
+      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

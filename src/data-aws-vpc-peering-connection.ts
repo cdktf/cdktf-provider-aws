@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { BooleanMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpcPeeringConnectionConfig extends TerraformMetaArguments {
+export interface DataAwsVpcPeeringConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly cidrBlock?: string;
   readonly ownerId?: string;
   readonly peerCidrBlock?: string;
@@ -27,9 +25,18 @@ export interface DataAwsVpcPeeringConnectionFilter {
   readonly values: string[];
 }
 
+function dataAwsVpcPeeringConnectionFilterToTerraform(struct?: DataAwsVpcPeeringConnectionFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsVpcPeeringConnection extends TerraformDataSource {
+export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -65,7 +72,7 @@ export class DataAwsVpcPeeringConnection extends TerraformDataSource {
 
   // accepter - computed: true, optional: false, required: false
   public accepter(key: string): boolean {
-    return new BooleanMap(this, 'accepter').lookup(key);
+    return new cdktf.BooleanMap(this, 'accepter').lookup(key);
   }
 
   // cidr_block - computed: true, optional: true, required: false
@@ -187,7 +194,7 @@ export class DataAwsVpcPeeringConnection extends TerraformDataSource {
 
   // requester - computed: true, optional: false, required: false
   public requester(key: string): boolean {
-    return new BooleanMap(this, 'requester').lookup(key);
+    return new cdktf.BooleanMap(this, 'requester').lookup(key);
   }
 
   // status - computed: true, optional: true, required: false
@@ -260,17 +267,17 @@ export class DataAwsVpcPeeringConnection extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_block: this._cidrBlock,
-      owner_id: this._ownerId,
-      peer_cidr_block: this._peerCidrBlock,
-      peer_owner_id: this._peerOwnerId,
-      peer_region: this._peerRegion,
-      peer_vpc_id: this._peerVpcId,
-      region: this._region,
-      status: this._status,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      filter: this._filter,
+      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+      owner_id: cdktf.stringToTerraform(this._ownerId),
+      peer_cidr_block: cdktf.stringToTerraform(this._peerCidrBlock),
+      peer_owner_id: cdktf.stringToTerraform(this._peerOwnerId),
+      peer_region: cdktf.stringToTerraform(this._peerRegion),
+      peer_vpc_id: cdktf.stringToTerraform(this._peerVpcId),
+      region: cdktf.stringToTerraform(this._region),
+      status: cdktf.stringToTerraform(this._status),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      filter: cdktf.listMapper(dataAwsVpcPeeringConnectionFilterToTerraform)(this._filter),
     };
   }
 }

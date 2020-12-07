@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SubnetConfig extends TerraformMetaArguments {
+export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   readonly assignIpv6AddressOnCreation?: boolean;
   readonly availabilityZone?: string;
   readonly availabilityZoneId?: string;
@@ -25,9 +24,18 @@ export interface SubnetTimeouts {
   readonly delete?: string;
 }
 
+function subnetTimeoutsToTerraform(struct?: SubnetTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class Subnet extends TerraformResource {
+export class Subnet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -240,16 +248,16 @@ export class Subnet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assign_ipv6_address_on_creation: this._assignIpv6AddressOnCreation,
-      availability_zone: this._availabilityZone,
-      availability_zone_id: this._availabilityZoneId,
-      cidr_block: this._cidrBlock,
-      ipv6_cidr_block: this._ipv6CidrBlock,
-      map_public_ip_on_launch: this._mapPublicIpOnLaunch,
-      outpost_arn: this._outpostArn,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      timeouts: this._timeouts,
+      assign_ipv6_address_on_creation: cdktf.booleanToTerraform(this._assignIpv6AddressOnCreation),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
+      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+      map_public_ip_on_launch: cdktf.booleanToTerraform(this._mapPublicIpOnLaunch),
+      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      timeouts: subnetTimeoutsToTerraform(this._timeouts),
     };
   }
 }

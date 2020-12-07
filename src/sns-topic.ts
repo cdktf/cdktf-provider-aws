@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SnsTopicConfig extends TerraformMetaArguments {
+export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   readonly applicationFailureFeedbackRoleArn?: string;
   readonly applicationSuccessFeedbackRoleArn?: string;
   readonly applicationSuccessFeedbackSampleRate?: number;
@@ -31,7 +30,7 @@ export interface SnsTopicConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SnsTopic extends TerraformResource {
+export class SnsTopic extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -393,25 +392,25 @@ export class SnsTopic extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_failure_feedback_role_arn: this._applicationFailureFeedbackRoleArn,
-      application_success_feedback_role_arn: this._applicationSuccessFeedbackRoleArn,
-      application_success_feedback_sample_rate: this._applicationSuccessFeedbackSampleRate,
-      delivery_policy: this._deliveryPolicy,
-      display_name: this._displayName,
-      http_failure_feedback_role_arn: this._httpFailureFeedbackRoleArn,
-      http_success_feedback_role_arn: this._httpSuccessFeedbackRoleArn,
-      http_success_feedback_sample_rate: this._httpSuccessFeedbackSampleRate,
-      kms_master_key_id: this._kmsMasterKeyId,
-      lambda_failure_feedback_role_arn: this._lambdaFailureFeedbackRoleArn,
-      lambda_success_feedback_role_arn: this._lambdaSuccessFeedbackRoleArn,
-      lambda_success_feedback_sample_rate: this._lambdaSuccessFeedbackSampleRate,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      policy: this._policy,
-      sqs_failure_feedback_role_arn: this._sqsFailureFeedbackRoleArn,
-      sqs_success_feedback_role_arn: this._sqsSuccessFeedbackRoleArn,
-      sqs_success_feedback_sample_rate: this._sqsSuccessFeedbackSampleRate,
-      tags: this._tags,
+      application_failure_feedback_role_arn: cdktf.stringToTerraform(this._applicationFailureFeedbackRoleArn),
+      application_success_feedback_role_arn: cdktf.stringToTerraform(this._applicationSuccessFeedbackRoleArn),
+      application_success_feedback_sample_rate: cdktf.numberToTerraform(this._applicationSuccessFeedbackSampleRate),
+      delivery_policy: cdktf.stringToTerraform(this._deliveryPolicy),
+      display_name: cdktf.stringToTerraform(this._displayName),
+      http_failure_feedback_role_arn: cdktf.stringToTerraform(this._httpFailureFeedbackRoleArn),
+      http_success_feedback_role_arn: cdktf.stringToTerraform(this._httpSuccessFeedbackRoleArn),
+      http_success_feedback_sample_rate: cdktf.numberToTerraform(this._httpSuccessFeedbackSampleRate),
+      kms_master_key_id: cdktf.stringToTerraform(this._kmsMasterKeyId),
+      lambda_failure_feedback_role_arn: cdktf.stringToTerraform(this._lambdaFailureFeedbackRoleArn),
+      lambda_success_feedback_role_arn: cdktf.stringToTerraform(this._lambdaSuccessFeedbackRoleArn),
+      lambda_success_feedback_sample_rate: cdktf.numberToTerraform(this._lambdaSuccessFeedbackSampleRate),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      policy: cdktf.stringToTerraform(this._policy),
+      sqs_failure_feedback_role_arn: cdktf.stringToTerraform(this._sqsFailureFeedbackRoleArn),
+      sqs_success_feedback_role_arn: cdktf.stringToTerraform(this._sqsSuccessFeedbackRoleArn),
+      sqs_success_feedback_sample_rate: cdktf.numberToTerraform(this._sqsSuccessFeedbackSampleRate),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

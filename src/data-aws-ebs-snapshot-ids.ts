@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsSnapshotIdsConfig extends TerraformMetaArguments {
+export interface DataAwsEbsSnapshotIdsConfig extends cdktf.TerraformMetaArguments {
   readonly owners?: string[];
   readonly restorableByUserIds?: string[];
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsEbsSnapshotIdsFilter {
   readonly values: string[];
 }
 
+function dataAwsEbsSnapshotIdsFilterToTerraform(struct?: DataAwsEbsSnapshotIdsFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEbsSnapshotIds extends TerraformDataSource {
+export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -110,9 +118,9 @@ export class DataAwsEbsSnapshotIds extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      owners: this._owners,
-      restorable_by_user_ids: this._restorableByUserIds,
-      filter: this._filter,
+      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
+      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._restorableByUserIds),
+      filter: cdktf.listMapper(dataAwsEbsSnapshotIdsFilterToTerraform)(this._filter),
     };
   }
 }

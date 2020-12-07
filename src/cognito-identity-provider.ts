@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CognitoIdentityProviderConfig extends TerraformMetaArguments {
+export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArguments {
   readonly attributeMapping?: { [key: string]: string };
   readonly idpIdentifiers?: string[];
   readonly providerDetails: { [key: string]: string };
@@ -18,7 +17,7 @@ export interface CognitoIdentityProviderConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CognitoIdentityProvider extends TerraformResource {
+export class CognitoIdentityProvider extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -142,12 +141,12 @@ export class CognitoIdentityProvider extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attribute_mapping: this._attributeMapping,
-      idp_identifiers: this._idpIdentifiers,
-      provider_details: this._providerDetails,
-      provider_name: this._providerName,
-      provider_type: this._providerType,
-      user_pool_id: this._userPoolId,
+      attribute_mapping: cdktf.hashMapper(cdktf.anyToTerraform)(this._attributeMapping),
+      idp_identifiers: cdktf.listMapper(cdktf.stringToTerraform)(this._idpIdentifiers),
+      provider_details: cdktf.hashMapper(cdktf.anyToTerraform)(this._providerDetails),
+      provider_name: cdktf.stringToTerraform(this._providerName),
+      provider_type: cdktf.stringToTerraform(this._providerType),
+      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
     };
   }
 }

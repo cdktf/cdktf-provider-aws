@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface StoragegatewayUploadBufferConfig extends TerraformMetaArguments {
+export interface StoragegatewayUploadBufferConfig extends cdktf.TerraformMetaArguments {
   readonly diskId: string;
   readonly gatewayArn: string;
 }
 
 // Resource
 
-export class StoragegatewayUploadBuffer extends TerraformResource {
+export class StoragegatewayUploadBuffer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class StoragegatewayUploadBuffer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disk_id: this._diskId,
-      gateway_arn: this._gatewayArn,
+      disk_id: cdktf.stringToTerraform(this._diskId),
+      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayMethodResponseConfig extends TerraformMetaArguments {
+export interface ApiGatewayMethodResponseConfig extends cdktf.TerraformMetaArguments {
   readonly httpMethod: string;
   readonly resourceId: string;
   readonly responseModels?: { [key: string]: string };
@@ -19,7 +18,7 @@ export interface ApiGatewayMethodResponseConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayMethodResponse extends TerraformResource {
+export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -160,13 +159,13 @@ export class ApiGatewayMethodResponse extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      http_method: this._httpMethod,
-      resource_id: this._resourceId,
-      response_models: this._responseModels,
-      response_parameters: this._responseParameters,
-      response_parameters_in_json: this._responseParametersInJson,
-      rest_api_id: this._restApiId,
-      status_code: this._statusCode,
+      http_method: cdktf.stringToTerraform(this._httpMethod),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
+      response_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseModels),
+      response_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseParameters),
+      response_parameters_in_json: cdktf.stringToTerraform(this._responseParametersInJson),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      status_code: cdktf.stringToTerraform(this._statusCode),
     };
   }
 }

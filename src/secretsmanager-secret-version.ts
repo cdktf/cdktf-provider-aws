@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecretsmanagerSecretVersionConfig extends TerraformMetaArguments {
+export interface SecretsmanagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
   readonly secretBinary?: string;
   readonly secretId: string;
   readonly secretString?: string;
@@ -16,7 +15,7 @@ export interface SecretsmanagerSecretVersionConfig extends TerraformMetaArgument
 
 // Resource
 
-export class SecretsmanagerSecretVersion extends TerraformResource {
+export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -125,10 +124,10 @@ export class SecretsmanagerSecretVersion extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      secret_binary: this._secretBinary,
-      secret_id: this._secretId,
-      secret_string: this._secretString,
-      version_stages: this._versionStages,
+      secret_binary: cdktf.stringToTerraform(this._secretBinary),
+      secret_id: cdktf.stringToTerraform(this._secretId),
+      secret_string: cdktf.stringToTerraform(this._secretString),
+      version_stages: cdktf.listMapper(cdktf.stringToTerraform)(this._versionStages),
     };
   }
 }

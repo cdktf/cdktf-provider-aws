@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodedeployDeploymentConfigConfig extends TerraformMetaArguments {
+export interface CodedeployDeploymentConfigConfig extends cdktf.TerraformMetaArguments {
   readonly computePlatform?: string;
   readonly deploymentConfigName: string;
   /** minimum_healthy_hosts block */
@@ -19,14 +18,41 @@ export interface CodedeployDeploymentConfigMinimumHealthyHosts {
   readonly type?: string;
   readonly value?: number;
 }
+
+function codedeployDeploymentConfigMinimumHealthyHostsToTerraform(struct?: CodedeployDeploymentConfigMinimumHealthyHosts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.numberToTerraform(struct!.value),
+  }
+}
+
 export interface CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary {
   readonly interval?: number;
   readonly percentage?: number;
 }
+
+function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    interval: cdktf.numberToTerraform(struct!.interval),
+    percentage: cdktf.numberToTerraform(struct!.percentage),
+  }
+}
+
 export interface CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear {
   readonly interval?: number;
   readonly percentage?: number;
 }
+
+function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    interval: cdktf.numberToTerraform(struct!.interval),
+    percentage: cdktf.numberToTerraform(struct!.percentage),
+  }
+}
+
 export interface CodedeployDeploymentConfigTrafficRoutingConfig {
   readonly type?: string;
   /** time_based_canary block */
@@ -35,9 +61,19 @@ export interface CodedeployDeploymentConfigTrafficRoutingConfig {
   readonly timeBasedLinear?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear[];
 }
 
+function codedeployDeploymentConfigTrafficRoutingConfigToTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    time_based_canary: cdktf.listMapper(codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToTerraform)(struct!.timeBasedCanary),
+    time_based_linear: cdktf.listMapper(codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToTerraform)(struct!.timeBasedLinear),
+  }
+}
+
+
 // Resource
 
-export class CodedeployDeploymentConfig extends TerraformResource {
+export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -141,10 +177,10 @@ export class CodedeployDeploymentConfig extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_platform: this._computePlatform,
-      deployment_config_name: this._deploymentConfigName,
-      minimum_healthy_hosts: this._minimumHealthyHosts,
-      traffic_routing_config: this._trafficRoutingConfig,
+      compute_platform: cdktf.stringToTerraform(this._computePlatform),
+      deployment_config_name: cdktf.stringToTerraform(this._deploymentConfigName),
+      minimum_healthy_hosts: cdktf.listMapper(codedeployDeploymentConfigMinimumHealthyHostsToTerraform)(this._minimumHealthyHosts),
+      traffic_routing_config: cdktf.listMapper(codedeployDeploymentConfigTrafficRoutingConfigToTerraform)(this._trafficRoutingConfig),
     };
   }
 }

@@ -2,16 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLaunchConfigurationConfig extends TerraformMetaArguments {
+export interface DataAwsLaunchConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
-export class DataAwsLaunchConfigurationEbsBlockDevice extends ComplexComputedList {
+export class DataAwsLaunchConfigurationEbsBlockDevice extends cdktf.ComplexComputedList {
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
@@ -48,7 +46,7 @@ export class DataAwsLaunchConfigurationEbsBlockDevice extends ComplexComputedLis
     return this.getStringAttribute('volume_type');
   }
 }
-export class DataAwsLaunchConfigurationEphemeralBlockDevice extends ComplexComputedList {
+export class DataAwsLaunchConfigurationEphemeralBlockDevice extends cdktf.ComplexComputedList {
 
   // device_name - computed: true, optional: false, required: false
   public get deviceName() {
@@ -60,7 +58,7 @@ export class DataAwsLaunchConfigurationEphemeralBlockDevice extends ComplexCompu
     return this.getStringAttribute('virtual_name');
   }
 }
-export class DataAwsLaunchConfigurationRootBlockDevice extends ComplexComputedList {
+export class DataAwsLaunchConfigurationRootBlockDevice extends cdktf.ComplexComputedList {
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
@@ -90,7 +88,7 @@ export class DataAwsLaunchConfigurationRootBlockDevice extends ComplexComputedLi
 
 // Resource
 
-export class DataAwsLaunchConfiguration extends TerraformDataSource {
+export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -223,7 +221,7 @@ export class DataAwsLaunchConfiguration extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

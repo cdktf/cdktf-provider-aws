@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsInstancesConfig extends TerraformMetaArguments {
+export interface DataAwsInstancesConfig extends cdktf.TerraformMetaArguments {
   readonly instanceStateNames?: string[];
   readonly instanceTags?: { [key: string]: string };
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsInstancesFilter {
   readonly values: string[];
 }
 
+function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsInstances extends TerraformDataSource {
+export class DataAwsInstances extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -120,9 +128,9 @@ export class DataAwsInstances extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_state_names: this._instanceStateNames,
-      instance_tags: this._instanceTags,
-      filter: this._filter,
+      instance_state_names: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceStateNames),
+      instance_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._instanceTags),
+      filter: cdktf.listMapper(dataAwsInstancesFilterToTerraform)(this._filter),
     };
   }
 }

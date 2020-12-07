@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpcDhcpOptionsConfig extends TerraformMetaArguments {
+export interface DataAwsVpcDhcpOptionsConfig extends cdktf.TerraformMetaArguments {
   readonly dhcpOptionsId?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsVpcDhcpOptionsFilter {
   readonly values: string[];
 }
 
+function dataAwsVpcDhcpOptionsFilterToTerraform(struct?: DataAwsVpcDhcpOptionsFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsVpcDhcpOptions extends TerraformDataSource {
+export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -140,9 +148,9 @@ export class DataAwsVpcDhcpOptions extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dhcp_options_id: this._dhcpOptionsId,
-      tags: this._tags,
-      filter: this._filter,
+      dhcp_options_id: cdktf.stringToTerraform(this._dhcpOptionsId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsVpcDhcpOptionsFilterToTerraform)(this._filter),
     };
   }
 }

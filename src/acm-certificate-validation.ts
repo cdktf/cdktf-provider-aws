@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AcmCertificateValidationConfig extends TerraformMetaArguments {
+export interface AcmCertificateValidationConfig extends cdktf.TerraformMetaArguments {
   readonly certificateArn: string;
   readonly validationRecordFqdns?: string[];
   /** timeouts block */
@@ -17,9 +16,17 @@ export interface AcmCertificateValidationTimeouts {
   readonly create?: string;
 }
 
+function acmCertificateValidationTimeoutsToTerraform(struct?: AcmCertificateValidationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class AcmCertificateValidation extends TerraformResource {
+export class AcmCertificateValidation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -101,9 +108,9 @@ export class AcmCertificateValidation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: this._certificateArn,
-      validation_record_fqdns: this._validationRecordFqdns,
-      timeouts: this._timeouts,
+      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
+      validation_record_fqdns: cdktf.listMapper(cdktf.stringToTerraform)(this._validationRecordFqdns),
+      timeouts: acmCertificateValidationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

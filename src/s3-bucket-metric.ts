@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3BucketMetricConfig extends TerraformMetaArguments {
+export interface S3BucketMetricConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly name: string;
   /** filter block */
@@ -18,9 +17,18 @@ export interface S3BucketMetricFilter {
   readonly tags?: { [key: string]: string };
 }
 
+function s3BucketMetricFilterToTerraform(struct?: S3BucketMetricFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+  }
+}
+
+
 // Resource
 
-export class S3BucketMetric extends TerraformResource {
+export class S3BucketMetric extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +107,9 @@ export class S3BucketMetric extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      name: this._name,
-      filter: this._filter,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      name: cdktf.stringToTerraform(this._name),
+      filter: cdktf.listMapper(s3BucketMetricFilterToTerraform)(this._filter),
     };
   }
 }

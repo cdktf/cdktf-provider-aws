@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CustomerGatewayConfig extends TerraformMetaArguments {
+export interface CustomerGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly bgpAsn: string;
   readonly ipAddress: string;
   readonly tags?: { [key: string]: string };
@@ -16,7 +15,7 @@ export interface CustomerGatewayConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CustomerGateway extends TerraformResource {
+export class CustomerGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -114,10 +113,10 @@ export class CustomerGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bgp_asn: this._bgpAsn,
-      ip_address: this._ipAddress,
-      tags: this._tags,
-      type: this._type,
+      bgp_asn: cdktf.stringToTerraform(this._bgpAsn),
+      ip_address: cdktf.stringToTerraform(this._ipAddress),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

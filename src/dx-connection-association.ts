@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxConnectionAssociationConfig extends TerraformMetaArguments {
+export interface DxConnectionAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly connectionId: string;
   readonly lagId: string;
 }
 
 // Resource
 
-export class DxConnectionAssociation extends TerraformResource {
+export class DxConnectionAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class DxConnectionAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_id: this._connectionId,
-      lag_id: this._lagId,
+      connection_id: cdktf.stringToTerraform(this._connectionId),
+      lag_id: cdktf.stringToTerraform(this._lagId),
     };
   }
 }

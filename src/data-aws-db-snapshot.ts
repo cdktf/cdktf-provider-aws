@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDbSnapshotConfig extends TerraformMetaArguments {
+export interface DataAwsDbSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly dbInstanceIdentifier?: string;
   readonly dbSnapshotIdentifier?: string;
   readonly includePublic?: boolean;
@@ -18,7 +17,7 @@ export interface DataAwsDbSnapshotConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsDbSnapshot extends TerraformDataSource {
+export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -239,12 +238,12 @@ export class DataAwsDbSnapshot extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_instance_identifier: this._dbInstanceIdentifier,
-      db_snapshot_identifier: this._dbSnapshotIdentifier,
-      include_public: this._includePublic,
-      include_shared: this._includeShared,
-      most_recent: this._mostRecent,
-      snapshot_type: this._snapshotType,
+      db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
+      db_snapshot_identifier: cdktf.stringToTerraform(this._dbSnapshotIdentifier),
+      include_public: cdktf.booleanToTerraform(this._includePublic),
+      include_shared: cdktf.booleanToTerraform(this._includeShared),
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      snapshot_type: cdktf.stringToTerraform(this._snapshotType),
     };
   }
 }

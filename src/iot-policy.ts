@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IotPolicyConfig extends TerraformMetaArguments {
+export interface IotPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class IotPolicy extends TerraformResource {
+export class IotPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -86,8 +85,8 @@ export class IotPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      policy: this._policy,
+      name: cdktf.stringToTerraform(this._name),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

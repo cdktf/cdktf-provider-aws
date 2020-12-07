@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EbsDefaultKmsKeyConfig extends TerraformMetaArguments {
+export interface EbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArguments {
   readonly keyArn: string;
 }
 
 // Resource
 
-export class EbsDefaultKmsKey extends TerraformResource {
+export class EbsDefaultKmsKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,7 +60,7 @@ export class EbsDefaultKmsKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      key_arn: this._keyArn,
+      key_arn: cdktf.stringToTerraform(this._keyArn),
     };
   }
 }

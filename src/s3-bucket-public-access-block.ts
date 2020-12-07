@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3BucketPublicAccessBlockConfig extends TerraformMetaArguments {
+export interface S3BucketPublicAccessBlockConfig extends cdktf.TerraformMetaArguments {
   readonly blockPublicAcls?: boolean;
   readonly blockPublicPolicy?: boolean;
   readonly bucket: string;
@@ -17,7 +16,7 @@ export interface S3BucketPublicAccessBlockConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class S3BucketPublicAccessBlock extends TerraformResource {
+export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -133,11 +132,11 @@ export class S3BucketPublicAccessBlock extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      block_public_acls: this._blockPublicAcls,
-      block_public_policy: this._blockPublicPolicy,
-      bucket: this._bucket,
-      ignore_public_acls: this._ignorePublicAcls,
-      restrict_public_buckets: this._restrictPublicBuckets,
+      block_public_acls: cdktf.booleanToTerraform(this._blockPublicAcls),
+      block_public_policy: cdktf.booleanToTerraform(this._blockPublicPolicy),
+      bucket: cdktf.stringToTerraform(this._bucket),
+      ignore_public_acls: cdktf.booleanToTerraform(this._ignorePublicAcls),
+      restrict_public_buckets: cdktf.booleanToTerraform(this._restrictPublicBuckets),
     };
   }
 }

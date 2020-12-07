@@ -2,16 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElasticBeanstalkApplicationConfig extends TerraformMetaArguments {
+export interface DataAwsElasticBeanstalkApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
-export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends ComplexComputedList {
+export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends cdktf.ComplexComputedList {
 
   // delete_source_from_s3 - computed: true, optional: false, required: false
   public get deleteSourceFromS3() {
@@ -36,7 +34,7 @@ export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends Compl
 
 // Resource
 
-export class DataAwsElasticBeanstalkApplication extends TerraformDataSource {
+export class DataAwsElasticBeanstalkApplication extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -99,7 +97,7 @@ export class DataAwsElasticBeanstalkApplication extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

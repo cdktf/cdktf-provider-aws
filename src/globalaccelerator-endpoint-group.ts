@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlobalacceleratorEndpointGroupConfig extends TerraformMetaArguments {
+export interface GlobalacceleratorEndpointGroupConfig extends cdktf.TerraformMetaArguments {
   readonly endpointGroupRegion?: string;
   readonly healthCheckIntervalSeconds?: number;
   readonly healthCheckPath?: string;
@@ -24,9 +23,18 @@ export interface GlobalacceleratorEndpointGroupEndpointConfiguration {
   readonly weight?: number;
 }
 
+function globalacceleratorEndpointGroupEndpointConfigurationToTerraform(struct?: GlobalacceleratorEndpointGroupEndpointConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    endpoint_id: cdktf.stringToTerraform(struct!.endpointId),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
+
 // Resource
 
-export class GlobalacceleratorEndpointGroup extends TerraformResource {
+export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -210,15 +218,15 @@ export class GlobalacceleratorEndpointGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_group_region: this._endpointGroupRegion,
-      health_check_interval_seconds: this._healthCheckIntervalSeconds,
-      health_check_path: this._healthCheckPath,
-      health_check_port: this._healthCheckPort,
-      health_check_protocol: this._healthCheckProtocol,
-      listener_arn: this._listenerArn,
-      threshold_count: this._thresholdCount,
-      traffic_dial_percentage: this._trafficDialPercentage,
-      endpoint_configuration: this._endpointConfiguration,
+      endpoint_group_region: cdktf.stringToTerraform(this._endpointGroupRegion),
+      health_check_interval_seconds: cdktf.numberToTerraform(this._healthCheckIntervalSeconds),
+      health_check_path: cdktf.stringToTerraform(this._healthCheckPath),
+      health_check_port: cdktf.numberToTerraform(this._healthCheckPort),
+      health_check_protocol: cdktf.stringToTerraform(this._healthCheckProtocol),
+      listener_arn: cdktf.stringToTerraform(this._listenerArn),
+      threshold_count: cdktf.numberToTerraform(this._thresholdCount),
+      traffic_dial_percentage: cdktf.numberToTerraform(this._trafficDialPercentage),
+      endpoint_configuration: cdktf.listMapper(globalacceleratorEndpointGroupEndpointConfigurationToTerraform)(this._endpointConfiguration),
     };
   }
 }

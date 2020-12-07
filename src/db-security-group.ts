@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbSecurityGroupConfig extends TerraformMetaArguments {
+export interface DbSecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -21,9 +20,20 @@ export interface DbSecurityGroupIngress {
   readonly securityGroupOwnerId?: string;
 }
 
+function dbSecurityGroupIngressToTerraform(struct?: DbSecurityGroupIngress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr: cdktf.stringToTerraform(struct!.cidr),
+    security_group_id: cdktf.stringToTerraform(struct!.securityGroupId),
+    security_group_name: cdktf.stringToTerraform(struct!.securityGroupName),
+    security_group_owner_id: cdktf.stringToTerraform(struct!.securityGroupOwnerId),
+  }
+}
+
+
 // Resource
 
-export class DbSecurityGroup extends TerraformResource {
+export class DbSecurityGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -124,10 +134,10 @@ export class DbSecurityGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      tags: this._tags,
-      ingress: this._ingress,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      ingress: cdktf.listMapper(dbSecurityGroupIngressToTerraform)(this._ingress),
     };
   }
 }

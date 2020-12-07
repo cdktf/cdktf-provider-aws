@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayBasePathMappingConfig extends TerraformMetaArguments {
+export interface ApiGatewayBasePathMappingConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly basePath?: string;
   readonly domainName: string;
@@ -16,7 +15,7 @@ export interface ApiGatewayBasePathMappingConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class ApiGatewayBasePathMapping extends TerraformResource {
+export class ApiGatewayBasePathMapping extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,10 +111,10 @@ export class ApiGatewayBasePathMapping extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      base_path: this._basePath,
-      domain_name: this._domainName,
-      stage_name: this._stageName,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      base_path: cdktf.stringToTerraform(this._basePath),
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      stage_name: cdktf.stringToTerraform(this._stageName),
     };
   }
 }

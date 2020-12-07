@@ -2,17 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSecretsmanagerSecretConfig extends TerraformMetaArguments {
+export interface DataAwsSecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
 }
-export class DataAwsSecretsmanagerSecretRotationRules extends ComplexComputedList {
+export class DataAwsSecretsmanagerSecretRotationRules extends cdktf.ComplexComputedList {
 
   // automatically_after_days - computed: true, optional: false, required: false
   public get automaticallyAfterDays() {
@@ -22,7 +19,7 @@ export class DataAwsSecretsmanagerSecretRotationRules extends ComplexComputedLis
 
 // Resource
 
-export class DataAwsSecretsmanagerSecret extends TerraformDataSource {
+export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -104,7 +101,7 @@ export class DataAwsSecretsmanagerSecret extends TerraformDataSource {
 
   // tags - computed: true, optional: false, required: false
   public tags(key: string): string {
-    return new StringMap(this, 'tags').lookup(key);
+    return new cdktf.StringMap(this, 'tags').lookup(key);
   }
 
   // =========
@@ -113,7 +110,7 @@ export class DataAwsSecretsmanagerSecret extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointEmailChannelConfig extends TerraformMetaArguments {
+export interface PinpointEmailChannelConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
   readonly enabled?: boolean;
   readonly fromAddress: string;
@@ -17,7 +16,7 @@ export interface PinpointEmailChannelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PinpointEmailChannel extends TerraformResource {
+export class PinpointEmailChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -129,11 +128,11 @@ export class PinpointEmailChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: this._applicationId,
-      enabled: this._enabled,
-      from_address: this._fromAddress,
-      identity: this._identity,
-      role_arn: this._roleArn,
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      from_address: cdktf.stringToTerraform(this._fromAddress),
+      identity: cdktf.stringToTerraform(this._identity),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

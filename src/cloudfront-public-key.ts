@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudfrontPublicKeyConfig extends TerraformMetaArguments {
+export interface CloudfrontPublicKeyConfig extends cdktf.TerraformMetaArguments {
   readonly comment?: string;
   readonly encodedKey: string;
   readonly name?: string;
@@ -16,7 +15,7 @@ export interface CloudfrontPublicKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CloudfrontPublicKey extends TerraformResource {
+export class CloudfrontPublicKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -125,10 +124,10 @@ export class CloudfrontPublicKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: this._comment,
-      encoded_key: this._encodedKey,
-      name: this._name,
-      name_prefix: this._namePrefix,
+      comment: cdktf.stringToTerraform(this._comment),
+      encoded_key: cdktf.stringToTerraform(this._encodedKey),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
     };
   }
 }

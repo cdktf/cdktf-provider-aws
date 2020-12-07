@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NetworkAclConfig extends TerraformMetaArguments {
+export interface NetworkAclConfig extends cdktf.TerraformMetaArguments {
   readonly egress?: NetworkAclEgress[];
   readonly ingress?: NetworkAclIngress[];
   readonly subnetId?: string;
@@ -26,6 +25,22 @@ export interface NetworkAclEgress {
   readonly ruleNo?: number;
   readonly toPort?: number;
 }
+
+function networkAclEgressToTerraform(struct?: NetworkAclEgress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.stringToTerraform(struct!.action),
+    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    icmp_code: cdktf.numberToTerraform(struct!.icmpCode),
+    icmp_type: cdktf.numberToTerraform(struct!.icmpType),
+    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    rule_no: cdktf.numberToTerraform(struct!.ruleNo),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface NetworkAclIngress {
   readonly action?: string;
   readonly cidrBlock?: string;
@@ -38,9 +53,25 @@ export interface NetworkAclIngress {
   readonly toPort?: number;
 }
 
+function networkAclIngressToTerraform(struct?: NetworkAclIngress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.stringToTerraform(struct!.action),
+    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    icmp_code: cdktf.numberToTerraform(struct!.icmpCode),
+    icmp_type: cdktf.numberToTerraform(struct!.icmpType),
+    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    rule_no: cdktf.numberToTerraform(struct!.ruleNo),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+
 // Resource
 
-export class NetworkAcl extends TerraformResource {
+export class NetworkAcl extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -183,12 +214,12 @@ export class NetworkAcl extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      egress: this._egress,
-      ingress: this._ingress,
-      subnet_id: this._subnetId,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      vpc_id: this._vpcId,
+      egress: cdktf.listMapper(networkAclEgressToTerraform)(this._egress),
+      ingress: cdktf.listMapper(networkAclIngressToTerraform)(this._ingress),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcPeeringConnectionConfig extends TerraformMetaArguments {
+export interface VpcPeeringConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly autoAccept?: boolean;
   readonly peerOwnerId?: string;
   readonly peerRegion?: string;
@@ -26,20 +25,50 @@ export interface VpcPeeringConnectionAccepter {
   readonly allowRemoteVpcDnsResolution?: boolean;
   readonly allowVpcToRemoteClassicLink?: boolean;
 }
+
+function vpcPeeringConnectionAccepterToTerraform(struct?: VpcPeeringConnectionAccepter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_classic_link_to_remote_vpc: cdktf.booleanToTerraform(struct!.allowClassicLinkToRemoteVpc),
+    allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
+    allow_vpc_to_remote_classic_link: cdktf.booleanToTerraform(struct!.allowVpcToRemoteClassicLink),
+  }
+}
+
 export interface VpcPeeringConnectionRequester {
   readonly allowClassicLinkToRemoteVpc?: boolean;
   readonly allowRemoteVpcDnsResolution?: boolean;
   readonly allowVpcToRemoteClassicLink?: boolean;
 }
+
+function vpcPeeringConnectionRequesterToTerraform(struct?: VpcPeeringConnectionRequester): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_classic_link_to_remote_vpc: cdktf.booleanToTerraform(struct!.allowClassicLinkToRemoteVpc),
+    allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
+    allow_vpc_to_remote_classic_link: cdktf.booleanToTerraform(struct!.allowVpcToRemoteClassicLink),
+  }
+}
+
 export interface VpcPeeringConnectionTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function vpcPeeringConnectionTimeoutsToTerraform(struct?: VpcPeeringConnectionTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class VpcPeeringConnection extends TerraformResource {
+export class VpcPeeringConnection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -225,15 +254,15 @@ export class VpcPeeringConnection extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_accept: this._autoAccept,
-      peer_owner_id: this._peerOwnerId,
-      peer_region: this._peerRegion,
-      peer_vpc_id: this._peerVpcId,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      accepter: this._accepter,
-      requester: this._requester,
-      timeouts: this._timeouts,
+      auto_accept: cdktf.booleanToTerraform(this._autoAccept),
+      peer_owner_id: cdktf.stringToTerraform(this._peerOwnerId),
+      peer_region: cdktf.stringToTerraform(this._peerRegion),
+      peer_vpc_id: cdktf.stringToTerraform(this._peerVpcId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      accepter: cdktf.listMapper(vpcPeeringConnectionAccepterToTerraform)(this._accepter),
+      requester: cdktf.listMapper(vpcPeeringConnectionRequesterToTerraform)(this._requester),
+      timeouts: vpcPeeringConnectionTimeoutsToTerraform(this._timeouts),
     };
   }
 }

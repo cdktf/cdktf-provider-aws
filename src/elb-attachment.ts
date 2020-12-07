@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElbAttachmentConfig extends TerraformMetaArguments {
+export interface ElbAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly elb: string;
   readonly instance: string;
 }
 
 // Resource
 
-export class ElbAttachment extends TerraformResource {
+export class ElbAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class ElbAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      elb: this._elb,
-      instance: this._instance,
+      elb: cdktf.stringToTerraform(this._elb),
+      instance: cdktf.stringToTerraform(this._instance),
     };
   }
 }

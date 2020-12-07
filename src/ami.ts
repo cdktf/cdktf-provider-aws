@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AmiConfig extends TerraformMetaArguments {
+export interface AmiConfig extends cdktf.TerraformMetaArguments {
   readonly architecture?: string;
   readonly description?: string;
   readonly enaSupport?: boolean;
@@ -35,19 +34,52 @@ export interface AmiEbsBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function amiEbsBlockDeviceToTerraform(struct?: AmiEbsBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface AmiEphemeralBlockDevice {
   readonly deviceName: string;
   readonly virtualName: string;
 }
+
+function amiEphemeralBlockDeviceToTerraform(struct?: AmiEphemeralBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+  }
+}
+
 export interface AmiTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function amiTimeoutsToTerraform(struct?: AmiTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class Ami extends TerraformResource {
+export class Ami extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -331,20 +363,20 @@ export class Ami extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      architecture: this._architecture,
-      description: this._description,
-      ena_support: this._enaSupport,
-      image_location: this._imageLocation,
-      kernel_id: this._kernelId,
-      name: this._name,
-      ramdisk_id: this._ramdiskId,
-      root_device_name: this._rootDeviceName,
-      sriov_net_support: this._sriovNetSupport,
-      tags: this._tags,
-      virtualization_type: this._virtualizationType,
-      ebs_block_device: this._ebsBlockDevice,
-      ephemeral_block_device: this._ephemeralBlockDevice,
-      timeouts: this._timeouts,
+      architecture: cdktf.stringToTerraform(this._architecture),
+      description: cdktf.stringToTerraform(this._description),
+      ena_support: cdktf.booleanToTerraform(this._enaSupport),
+      image_location: cdktf.stringToTerraform(this._imageLocation),
+      kernel_id: cdktf.stringToTerraform(this._kernelId),
+      name: cdktf.stringToTerraform(this._name),
+      ramdisk_id: cdktf.stringToTerraform(this._ramdiskId),
+      root_device_name: cdktf.stringToTerraform(this._rootDeviceName),
+      sriov_net_support: cdktf.stringToTerraform(this._sriovNetSupport),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      virtualization_type: cdktf.stringToTerraform(this._virtualizationType),
+      ebs_block_device: cdktf.listMapper(amiEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
+      ephemeral_block_device: cdktf.listMapper(amiEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      timeouts: amiTimeoutsToTerraform(this._timeouts),
     };
   }
 }

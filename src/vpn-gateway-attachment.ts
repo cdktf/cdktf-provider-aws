@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpnGatewayAttachmentConfig extends TerraformMetaArguments {
+export interface VpnGatewayAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   readonly vpnGatewayId: string;
 }
 
 // Resource
 
-export class VpnGatewayAttachment extends TerraformResource {
+export class VpnGatewayAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class VpnGatewayAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      vpc_id: this._vpcId,
-      vpn_gateway_id: this._vpnGatewayId,
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodecommitRepositoryConfig extends TerraformMetaArguments {
+export interface CodecommitRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly defaultBranch?: string;
   readonly description?: string;
   readonly repositoryName: string;
@@ -16,7 +15,7 @@ export interface CodecommitRepositoryConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CodecommitRepository extends TerraformResource {
+export class CodecommitRepository extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -135,10 +134,10 @@ export class CodecommitRepository extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_branch: this._defaultBranch,
-      description: this._description,
-      repository_name: this._repositoryName,
-      tags: this._tags,
+      default_branch: cdktf.stringToTerraform(this._defaultBranch),
+      description: cdktf.stringToTerraform(this._description),
+      repository_name: cdktf.stringToTerraform(this._repositoryName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

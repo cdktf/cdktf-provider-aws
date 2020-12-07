@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudformationStackConfig extends TerraformMetaArguments {
+export interface CloudformationStackConfig extends cdktf.TerraformMetaArguments {
   readonly capabilities?: string[];
   readonly disableRollback?: boolean;
   readonly iamRoleArn?: string;
@@ -31,9 +29,19 @@ export interface CloudformationStackTimeouts {
   readonly update?: string;
 }
 
+function cloudformationStackTimeoutsToTerraform(struct?: CloudformationStackTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class CloudformationStack extends TerraformResource {
+export class CloudformationStack extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -170,7 +178,7 @@ export class CloudformationStack extends TerraformResource {
 
   // outputs - computed: true, optional: false, required: false
   public outputs(key: string): string {
-    return new StringMap(this, 'outputs').lookup(key);
+    return new cdktf.StringMap(this, 'outputs').lookup(key);
   }
 
   // parameters - computed: true, optional: true, required: false
@@ -307,20 +315,20 @@ export class CloudformationStack extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capabilities: this._capabilities,
-      disable_rollback: this._disableRollback,
-      iam_role_arn: this._iamRoleArn,
-      name: this._name,
-      notification_arns: this._notificationArns,
-      on_failure: this._onFailure,
-      parameters: this._parameters,
-      policy_body: this._policyBody,
-      policy_url: this._policyUrl,
-      tags: this._tags,
-      template_body: this._templateBody,
-      template_url: this._templateUrl,
-      timeout_in_minutes: this._timeoutInMinutes,
-      timeouts: this._timeouts,
+      capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._capabilities),
+      disable_rollback: cdktf.booleanToTerraform(this._disableRollback),
+      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      name: cdktf.stringToTerraform(this._name),
+      notification_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationArns),
+      on_failure: cdktf.stringToTerraform(this._onFailure),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      policy_body: cdktf.stringToTerraform(this._policyBody),
+      policy_url: cdktf.stringToTerraform(this._policyUrl),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      template_body: cdktf.stringToTerraform(this._templateBody),
+      template_url: cdktf.stringToTerraform(this._templateUrl),
+      timeout_in_minutes: cdktf.numberToTerraform(this._timeoutInMinutes),
+      timeouts: cloudformationStackTimeoutsToTerraform(this._timeouts),
     };
   }
 }

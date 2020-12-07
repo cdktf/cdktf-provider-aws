@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueClassifierConfig extends TerraformMetaArguments {
+export interface GlueClassifierConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** csv_classifier block */
   readonly csvClassifier?: GlueClassifierCsvClassifier[];
@@ -26,22 +25,62 @@ export interface GlueClassifierCsvClassifier {
   readonly header?: string[];
   readonly quoteSymbol?: string;
 }
+
+function glueClassifierCsvClassifierToTerraform(struct?: GlueClassifierCsvClassifier): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_single_column: cdktf.booleanToTerraform(struct!.allowSingleColumn),
+    contains_header: cdktf.stringToTerraform(struct!.containsHeader),
+    delimiter: cdktf.stringToTerraform(struct!.delimiter),
+    disable_value_trimming: cdktf.booleanToTerraform(struct!.disableValueTrimming),
+    header: cdktf.listMapper(cdktf.stringToTerraform)(struct!.header),
+    quote_symbol: cdktf.stringToTerraform(struct!.quoteSymbol),
+  }
+}
+
 export interface GlueClassifierGrokClassifier {
   readonly classification: string;
   readonly customPatterns?: string;
   readonly grokPattern: string;
 }
+
+function glueClassifierGrokClassifierToTerraform(struct?: GlueClassifierGrokClassifier): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    classification: cdktf.stringToTerraform(struct!.classification),
+    custom_patterns: cdktf.stringToTerraform(struct!.customPatterns),
+    grok_pattern: cdktf.stringToTerraform(struct!.grokPattern),
+  }
+}
+
 export interface GlueClassifierJsonClassifier {
   readonly jsonPath: string;
 }
+
+function glueClassifierJsonClassifierToTerraform(struct?: GlueClassifierJsonClassifier): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    json_path: cdktf.stringToTerraform(struct!.jsonPath),
+  }
+}
+
 export interface GlueClassifierXmlClassifier {
   readonly classification: string;
   readonly rowTag: string;
 }
 
+function glueClassifierXmlClassifierToTerraform(struct?: GlueClassifierXmlClassifier): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    classification: cdktf.stringToTerraform(struct!.classification),
+    row_tag: cdktf.stringToTerraform(struct!.rowTag),
+  }
+}
+
+
 // Resource
 
-export class GlueClassifier extends TerraformResource {
+export class GlueClassifier extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -157,11 +196,11 @@ export class GlueClassifier extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      csv_classifier: this._csvClassifier,
-      grok_classifier: this._grokClassifier,
-      json_classifier: this._jsonClassifier,
-      xml_classifier: this._xmlClassifier,
+      name: cdktf.stringToTerraform(this._name),
+      csv_classifier: cdktf.listMapper(glueClassifierCsvClassifierToTerraform)(this._csvClassifier),
+      grok_classifier: cdktf.listMapper(glueClassifierGrokClassifierToTerraform)(this._grokClassifier),
+      json_classifier: cdktf.listMapper(glueClassifierJsonClassifierToTerraform)(this._jsonClassifier),
+      xml_classifier: cdktf.listMapper(glueClassifierXmlClassifierToTerraform)(this._xmlClassifier),
     };
   }
 }

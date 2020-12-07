@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksStackConfig extends TerraformMetaArguments {
+export interface OpsworksStackConfig extends cdktf.TerraformMetaArguments {
   readonly agentVersion?: string;
   readonly berkshelfVersion?: string;
   readonly color?: string;
@@ -41,9 +40,22 @@ export interface OpsworksStackCustomCookbooksSource {
   readonly username?: string;
 }
 
+function opsworksStackCustomCookbooksSourceToTerraform(struct?: OpsworksStackCustomCookbooksSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    password: cdktf.stringToTerraform(struct!.password),
+    revision: cdktf.stringToTerraform(struct!.revision),
+    ssh_key: cdktf.stringToTerraform(struct!.sshKey),
+    type: cdktf.stringToTerraform(struct!.type),
+    url: cdktf.stringToTerraform(struct!.url),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
+
 // Resource
 
-export class OpsworksStack extends TerraformResource {
+export class OpsworksStack extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -449,28 +461,28 @@ export class OpsworksStack extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_version: this._agentVersion,
-      berkshelf_version: this._berkshelfVersion,
-      color: this._color,
-      configuration_manager_name: this._configurationManagerName,
-      configuration_manager_version: this._configurationManagerVersion,
-      custom_json: this._customJson,
-      default_availability_zone: this._defaultAvailabilityZone,
-      default_instance_profile_arn: this._defaultInstanceProfileArn,
-      default_os: this._defaultOs,
-      default_root_device_type: this._defaultRootDeviceType,
-      default_ssh_key_name: this._defaultSshKeyName,
-      default_subnet_id: this._defaultSubnetId,
-      hostname_theme: this._hostnameTheme,
-      manage_berkshelf: this._manageBerkshelf,
-      name: this._name,
-      region: this._region,
-      service_role_arn: this._serviceRoleArn,
-      tags: this._tags,
-      use_custom_cookbooks: this._useCustomCookbooks,
-      use_opsworks_security_groups: this._useOpsworksSecurityGroups,
-      vpc_id: this._vpcId,
-      custom_cookbooks_source: this._customCookbooksSource,
+      agent_version: cdktf.stringToTerraform(this._agentVersion),
+      berkshelf_version: cdktf.stringToTerraform(this._berkshelfVersion),
+      color: cdktf.stringToTerraform(this._color),
+      configuration_manager_name: cdktf.stringToTerraform(this._configurationManagerName),
+      configuration_manager_version: cdktf.stringToTerraform(this._configurationManagerVersion),
+      custom_json: cdktf.stringToTerraform(this._customJson),
+      default_availability_zone: cdktf.stringToTerraform(this._defaultAvailabilityZone),
+      default_instance_profile_arn: cdktf.stringToTerraform(this._defaultInstanceProfileArn),
+      default_os: cdktf.stringToTerraform(this._defaultOs),
+      default_root_device_type: cdktf.stringToTerraform(this._defaultRootDeviceType),
+      default_ssh_key_name: cdktf.stringToTerraform(this._defaultSshKeyName),
+      default_subnet_id: cdktf.stringToTerraform(this._defaultSubnetId),
+      hostname_theme: cdktf.stringToTerraform(this._hostnameTheme),
+      manage_berkshelf: cdktf.booleanToTerraform(this._manageBerkshelf),
+      name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
+      service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      use_custom_cookbooks: cdktf.booleanToTerraform(this._useCustomCookbooks),
+      use_opsworks_security_groups: cdktf.booleanToTerraform(this._useOpsworksSecurityGroups),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      custom_cookbooks_source: cdktf.listMapper(opsworksStackCustomCookbooksSourceToTerraform)(this._customCookbooksSource),
     };
   }
 }

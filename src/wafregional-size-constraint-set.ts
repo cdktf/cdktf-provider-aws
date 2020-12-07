@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalSizeConstraintSetConfig extends TerraformMetaArguments {
+export interface WafregionalSizeConstraintSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** size_constraints block */
   readonly sizeConstraints?: WafregionalSizeConstraintSetSizeConstraints[];
@@ -16,6 +15,15 @@ export interface WafregionalSizeConstraintSetSizeConstraintsFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafregionalSizeConstraintSetSizeConstraintsFieldToMatchToTerraform(struct?: WafregionalSizeConstraintSetSizeConstraintsFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalSizeConstraintSetSizeConstraints {
   readonly comparisonOperator: string;
   readonly size: number;
@@ -24,9 +32,20 @@ export interface WafregionalSizeConstraintSetSizeConstraints {
   readonly fieldToMatch: WafregionalSizeConstraintSetSizeConstraintsFieldToMatch[];
 }
 
+function wafregionalSizeConstraintSetSizeConstraintsToTerraform(struct?: WafregionalSizeConstraintSetSizeConstraints): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    comparison_operator: cdktf.stringToTerraform(struct!.comparisonOperator),
+    size: cdktf.numberToTerraform(struct!.size),
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafregionalSizeConstraintSetSizeConstraintsFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafregionalSizeConstraintSet extends TerraformResource {
+export class WafregionalSizeConstraintSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -96,8 +115,8 @@ export class WafregionalSizeConstraintSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      size_constraints: this._sizeConstraints,
+      name: cdktf.stringToTerraform(this._name),
+      size_constraints: cdktf.listMapper(wafregionalSizeConstraintSetSizeConstraintsToTerraform)(this._sizeConstraints),
     };
   }
 }

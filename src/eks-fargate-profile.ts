@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EksFargateProfileConfig extends TerraformMetaArguments {
+export interface EksFargateProfileConfig extends cdktf.TerraformMetaArguments {
   readonly clusterName: string;
   readonly fargateProfileName: string;
   readonly podExecutionRoleArn: string;
@@ -22,14 +21,32 @@ export interface EksFargateProfileSelector {
   readonly labels?: { [key: string]: string };
   readonly namespace: string;
 }
+
+function eksFargateProfileSelectorToTerraform(struct?: EksFargateProfileSelector): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    labels: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.labels),
+    namespace: cdktf.stringToTerraform(struct!.namespace),
+  }
+}
+
 export interface EksFargateProfileTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
+function eksFargateProfileTimeoutsToTerraform(struct?: EksFargateProfileTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class EksFargateProfile extends TerraformResource {
+export class EksFargateProfile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -180,13 +197,13 @@ export class EksFargateProfile extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: this._clusterName,
-      fargate_profile_name: this._fargateProfileName,
-      pod_execution_role_arn: this._podExecutionRoleArn,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      selector: this._selector,
-      timeouts: this._timeouts,
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
+      fargate_profile_name: cdktf.stringToTerraform(this._fargateProfileName),
+      pod_execution_role_arn: cdktf.stringToTerraform(this._podExecutionRoleArn),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      selector: cdktf.listMapper(eksFargateProfileSelectorToTerraform)(this._selector),
+      timeouts: eksFargateProfileTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayRouteTableAssociationConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly transitGatewayAttachmentId: string;
   readonly transitGatewayRouteTableId: string;
 }
 
 // Resource
 
-export class Ec2TransitGatewayRouteTableAssociation extends TerraformResource {
+export class Ec2TransitGatewayRouteTableAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -86,8 +85,8 @@ export class Ec2TransitGatewayRouteTableAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      transit_gateway_attachment_id: this._transitGatewayAttachmentId,
-      transit_gateway_route_table_id: this._transitGatewayRouteTableId,
+      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_route_table_id: cdktf.stringToTerraform(this._transitGatewayRouteTableId),
     };
   }
 }

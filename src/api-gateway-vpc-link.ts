@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayVpcLinkConfig extends TerraformMetaArguments {
+export interface ApiGatewayVpcLinkConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -16,7 +15,7 @@ export interface ApiGatewayVpcLinkConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayVpcLink extends TerraformResource {
+export class ApiGatewayVpcLink extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -117,10 +116,10 @@ export class ApiGatewayVpcLink extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      tags: this._tags,
-      target_arns: this._targetArns,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetArns),
     };
   }
 }

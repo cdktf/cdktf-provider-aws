@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksApplicationConfig extends TerraformMetaArguments {
+export interface OpsworksApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly autoBundleOnDeploy?: string;
   readonly awsFlowRubySettings?: string;
   readonly dataSourceArn?: string;
@@ -37,20 +36,53 @@ export interface OpsworksApplicationAppSource {
   readonly url?: string;
   readonly username?: string;
 }
+
+function opsworksApplicationAppSourceToTerraform(struct?: OpsworksApplicationAppSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    password: cdktf.stringToTerraform(struct!.password),
+    revision: cdktf.stringToTerraform(struct!.revision),
+    ssh_key: cdktf.stringToTerraform(struct!.sshKey),
+    type: cdktf.stringToTerraform(struct!.type),
+    url: cdktf.stringToTerraform(struct!.url),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
 export interface OpsworksApplicationEnvironment {
   readonly key: string;
   readonly secure?: boolean;
   readonly value: string;
 }
+
+function opsworksApplicationEnvironmentToTerraform(struct?: OpsworksApplicationEnvironment): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    secure: cdktf.booleanToTerraform(struct!.secure),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface OpsworksApplicationSslConfiguration {
   readonly certificate: string;
   readonly chain?: string;
   readonly privateKey: string;
 }
 
+function opsworksApplicationSslConfigurationToTerraform(struct?: OpsworksApplicationSslConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    certificate: cdktf.stringToTerraform(struct!.certificate),
+    chain: cdktf.stringToTerraform(struct!.chain),
+    private_key: cdktf.stringToTerraform(struct!.privateKey),
+  }
+}
+
+
 // Resource
 
-export class OpsworksApplication extends TerraformResource {
+export class OpsworksApplication extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -364,23 +396,23 @@ export class OpsworksApplication extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_bundle_on_deploy: this._autoBundleOnDeploy,
-      aws_flow_ruby_settings: this._awsFlowRubySettings,
-      data_source_arn: this._dataSourceArn,
-      data_source_database_name: this._dataSourceDatabaseName,
-      data_source_type: this._dataSourceType,
-      description: this._description,
-      document_root: this._documentRoot,
-      domains: this._domains,
-      enable_ssl: this._enableSsl,
-      name: this._name,
-      rails_env: this._railsEnv,
-      short_name: this._shortName,
-      stack_id: this._stackId,
-      type: this._type,
-      app_source: this._appSource,
-      environment: this._environment,
-      ssl_configuration: this._sslConfiguration,
+      auto_bundle_on_deploy: cdktf.stringToTerraform(this._autoBundleOnDeploy),
+      aws_flow_ruby_settings: cdktf.stringToTerraform(this._awsFlowRubySettings),
+      data_source_arn: cdktf.stringToTerraform(this._dataSourceArn),
+      data_source_database_name: cdktf.stringToTerraform(this._dataSourceDatabaseName),
+      data_source_type: cdktf.stringToTerraform(this._dataSourceType),
+      description: cdktf.stringToTerraform(this._description),
+      document_root: cdktf.stringToTerraform(this._documentRoot),
+      domains: cdktf.listMapper(cdktf.stringToTerraform)(this._domains),
+      enable_ssl: cdktf.booleanToTerraform(this._enableSsl),
+      name: cdktf.stringToTerraform(this._name),
+      rails_env: cdktf.stringToTerraform(this._railsEnv),
+      short_name: cdktf.stringToTerraform(this._shortName),
+      stack_id: cdktf.stringToTerraform(this._stackId),
+      type: cdktf.stringToTerraform(this._type),
+      app_source: cdktf.listMapper(opsworksApplicationAppSourceToTerraform)(this._appSource),
+      environment: cdktf.listMapper(opsworksApplicationEnvironmentToTerraform)(this._environment),
+      ssl_configuration: cdktf.listMapper(opsworksApplicationSslConfigurationToTerraform)(this._sslConfiguration),
     };
   }
 }

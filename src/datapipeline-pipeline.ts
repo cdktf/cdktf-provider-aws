@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatapipelinePipelineConfig extends TerraformMetaArguments {
+export interface DatapipelinePipelineConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface DatapipelinePipelineConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DatapipelinePipeline extends TerraformResource {
+export class DatapipelinePipeline extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -97,9 +96,9 @@ export class DatapipelinePipeline extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

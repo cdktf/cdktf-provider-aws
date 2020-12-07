@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCloudhsmV2ClusterConfig extends TerraformMetaArguments {
+export interface DataAwsCloudhsmV2ClusterConfig extends cdktf.TerraformMetaArguments {
   readonly clusterId: string;
   readonly clusterState?: string;
 }
-export class DataAwsCloudhsmV2ClusterClusterCertificates extends ComplexComputedList {
+export class DataAwsCloudhsmV2ClusterClusterCertificates extends cdktf.ComplexComputedList {
 
   // aws_hardware_certificate - computed: true, optional: false, required: false
   public get awsHardwareCertificate() {
@@ -42,7 +40,7 @@ export class DataAwsCloudhsmV2ClusterClusterCertificates extends ComplexComputed
 
 // Resource
 
-export class DataAwsCloudhsmV2Cluster extends TerraformDataSource {
+export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -127,8 +125,8 @@ export class DataAwsCloudhsmV2Cluster extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: this._clusterId,
-      cluster_state: this._clusterState,
+      cluster_id: cdktf.stringToTerraform(this._clusterId),
+      cluster_state: cdktf.stringToTerraform(this._clusterState),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SnsTopicPolicyConfig extends TerraformMetaArguments {
+export interface SnsTopicPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class SnsTopicPolicy extends TerraformResource {
+export class SnsTopicPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class SnsTopicPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
-      policy: this._policy,
+      arn: cdktf.stringToTerraform(this._arn),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

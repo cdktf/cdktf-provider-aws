@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsTransferServerConfig extends TerraformMetaArguments {
+export interface DataAwsTransferServerConfig extends cdktf.TerraformMetaArguments {
   readonly serverId: string;
 }
 
 // Resource
 
-export class DataAwsTransferServer extends TerraformDataSource {
+export class DataAwsTransferServer extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -91,7 +90,7 @@ export class DataAwsTransferServer extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      server_id: this._serverId,
+      server_id: cdktf.stringToTerraform(this._serverId),
     };
   }
 }

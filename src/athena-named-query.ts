@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AthenaNamedQueryConfig extends TerraformMetaArguments {
+export interface AthenaNamedQueryConfig extends cdktf.TerraformMetaArguments {
   readonly database: string;
   readonly description?: string;
   readonly name: string;
@@ -17,7 +16,7 @@ export interface AthenaNamedQueryConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AthenaNamedQuery extends TerraformResource {
+export class AthenaNamedQuery extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -127,11 +126,11 @@ export class AthenaNamedQuery extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database: this._database,
-      description: this._description,
-      name: this._name,
-      query: this._query,
-      workgroup: this._workgroup,
+      database: cdktf.stringToTerraform(this._database),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      query: cdktf.stringToTerraform(this._query),
+      workgroup: cdktf.stringToTerraform(this._workgroup),
     };
   }
 }

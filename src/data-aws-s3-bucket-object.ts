@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsS3BucketObjectConfig extends TerraformMetaArguments {
+export interface DataAwsS3BucketObjectConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly key: string;
   readonly range?: string;
@@ -18,7 +16,7 @@ export interface DataAwsS3BucketObjectConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsS3BucketObject extends TerraformDataSource {
+export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -134,7 +132,7 @@ export class DataAwsS3BucketObject extends TerraformDataSource {
 
   // metadata - computed: true, optional: false, required: false
   public metadata(key: string): string {
-    return new StringMap(this, 'metadata').lookup(key);
+    return new cdktf.StringMap(this, 'metadata').lookup(key);
   }
 
   // object_lock_legal_hold_status - computed: true, optional: false, required: false
@@ -226,11 +224,11 @@ export class DataAwsS3BucketObject extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      key: this._key,
-      range: this._range,
-      tags: this._tags,
-      version_id: this._versionId,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      key: cdktf.stringToTerraform(this._key),
+      range: cdktf.stringToTerraform(this._range),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      version_id: cdktf.stringToTerraform(this._versionId),
     };
   }
 }

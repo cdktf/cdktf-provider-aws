@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53HealthCheckConfig extends TerraformMetaArguments {
+export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   readonly childHealthThreshold?: number;
   readonly childHealthchecks?: string[];
   readonly cloudwatchAlarmName?: string;
@@ -31,7 +30,7 @@ export interface Route53HealthCheckConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Route53HealthCheck extends TerraformResource {
+export class Route53HealthCheck extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -385,25 +384,25 @@ export class Route53HealthCheck extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      child_health_threshold: this._childHealthThreshold,
-      child_healthchecks: this._childHealthchecks,
-      cloudwatch_alarm_name: this._cloudwatchAlarmName,
-      cloudwatch_alarm_region: this._cloudwatchAlarmRegion,
-      enable_sni: this._enableSni,
-      failure_threshold: this._failureThreshold,
-      fqdn: this._fqdn,
-      insufficient_data_health_status: this._insufficientDataHealthStatus,
-      invert_healthcheck: this._invertHealthcheck,
-      ip_address: this._ipAddress,
-      measure_latency: this._measureLatency,
-      port: this._port,
-      reference_name: this._referenceName,
-      regions: this._regions,
-      request_interval: this._requestInterval,
-      resource_path: this._resourcePath,
-      search_string: this._searchString,
-      tags: this._tags,
-      type: this._type,
+      child_health_threshold: cdktf.numberToTerraform(this._childHealthThreshold),
+      child_healthchecks: cdktf.listMapper(cdktf.stringToTerraform)(this._childHealthchecks),
+      cloudwatch_alarm_name: cdktf.stringToTerraform(this._cloudwatchAlarmName),
+      cloudwatch_alarm_region: cdktf.stringToTerraform(this._cloudwatchAlarmRegion),
+      enable_sni: cdktf.booleanToTerraform(this._enableSni),
+      failure_threshold: cdktf.numberToTerraform(this._failureThreshold),
+      fqdn: cdktf.stringToTerraform(this._fqdn),
+      insufficient_data_health_status: cdktf.stringToTerraform(this._insufficientDataHealthStatus),
+      invert_healthcheck: cdktf.booleanToTerraform(this._invertHealthcheck),
+      ip_address: cdktf.stringToTerraform(this._ipAddress),
+      measure_latency: cdktf.booleanToTerraform(this._measureLatency),
+      port: cdktf.numberToTerraform(this._port),
+      reference_name: cdktf.stringToTerraform(this._referenceName),
+      regions: cdktf.listMapper(cdktf.stringToTerraform)(this._regions),
+      request_interval: cdktf.numberToTerraform(this._requestInterval),
+      resource_path: cdktf.stringToTerraform(this._resourcePath),
+      search_string: cdktf.stringToTerraform(this._searchString),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

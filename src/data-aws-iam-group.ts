@@ -2,16 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamGroupConfig extends TerraformMetaArguments {
+export interface DataAwsIamGroupConfig extends cdktf.TerraformMetaArguments {
   readonly groupName: string;
 }
-export class DataAwsIamGroupUsers extends ComplexComputedList {
+export class DataAwsIamGroupUsers extends cdktf.ComplexComputedList {
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -36,7 +34,7 @@ export class DataAwsIamGroupUsers extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsIamGroup extends TerraformDataSource {
+export class DataAwsIamGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -104,7 +102,7 @@ export class DataAwsIamGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_name: this._groupName,
+      group_name: cdktf.stringToTerraform(this._groupName),
     };
   }
 }

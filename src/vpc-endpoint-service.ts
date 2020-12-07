@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointServiceConfig extends TerraformMetaArguments {
+export interface VpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   readonly acceptanceRequired: boolean;
   readonly allowedPrincipals?: string[];
   readonly networkLoadBalancerArns: string[];
@@ -16,7 +15,7 @@ export interface VpcEndpointServiceConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class VpcEndpointService extends TerraformResource {
+export class VpcEndpointService extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -152,10 +151,10 @@ export class VpcEndpointService extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acceptance_required: this._acceptanceRequired,
-      allowed_principals: this._allowedPrincipals,
-      network_load_balancer_arns: this._networkLoadBalancerArns,
-      tags: this._tags,
+      acceptance_required: cdktf.booleanToTerraform(this._acceptanceRequired),
+      allowed_principals: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedPrincipals),
+      network_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._networkLoadBalancerArns),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxGatewayAssociationProposalConfig extends TerraformMetaArguments {
+export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaArguments {
   readonly allowedPrefixes?: string[];
   readonly associatedGatewayId?: string;
   readonly dxGatewayId: string;
@@ -17,7 +16,7 @@ export interface DxGatewayAssociationProposalConfig extends TerraformMetaArgumen
 
 // Resource
 
-export class DxGatewayAssociationProposal extends TerraformResource {
+export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -140,11 +139,11 @@ export class DxGatewayAssociationProposal extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_prefixes: this._allowedPrefixes,
-      associated_gateway_id: this._associatedGatewayId,
-      dx_gateway_id: this._dxGatewayId,
-      dx_gateway_owner_account_id: this._dxGatewayOwnerAccountId,
-      vpn_gateway_id: this._vpnGatewayId,
+      allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedPrefixes),
+      associated_gateway_id: cdktf.stringToTerraform(this._associatedGatewayId),
+      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
+      dx_gateway_owner_account_id: cdktf.stringToTerraform(this._dxGatewayOwnerAccountId),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayRequestValidatorConfig extends TerraformMetaArguments {
+export interface ApiGatewayRequestValidatorConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly restApiId: string;
   readonly validateRequestBody?: boolean;
@@ -16,7 +15,7 @@ export interface ApiGatewayRequestValidatorConfig extends TerraformMetaArguments
 
 // Resource
 
-export class ApiGatewayRequestValidator extends TerraformResource {
+export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,10 +111,10 @@ export class ApiGatewayRequestValidator extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      rest_api_id: this._restApiId,
-      validate_request_body: this._validateRequestBody,
-      validate_request_parameters: this._validateRequestParameters,
+      name: cdktf.stringToTerraform(this._name),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      validate_request_body: cdktf.booleanToTerraform(this._validateRequestBody),
+      validate_request_parameters: cdktf.booleanToTerraform(this._validateRequestParameters),
     };
   }
 }

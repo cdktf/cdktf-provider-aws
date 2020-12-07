@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRouteTableConfig extends TerraformMetaArguments {
+export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
   readonly gatewayId?: string;
   readonly routeTableId?: string;
   readonly subnetId?: string;
@@ -17,7 +15,7 @@ export interface DataAwsRouteTableConfig extends TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsRouteTableFilter[];
 }
-export class DataAwsRouteTableAssociations extends ComplexComputedList {
+export class DataAwsRouteTableAssociations extends cdktf.ComplexComputedList {
 
   // gateway_id - computed: true, optional: false, required: false
   public get gatewayId() {
@@ -44,7 +42,7 @@ export class DataAwsRouteTableAssociations extends ComplexComputedList {
     return this.getStringAttribute('subnet_id');
   }
 }
-export class DataAwsRouteTableRoutes extends ComplexComputedList {
+export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
 
   // cidr_block - computed: true, optional: false, required: false
   public get cidrBlock() {
@@ -96,9 +94,18 @@ export interface DataAwsRouteTableFilter {
   readonly values: string[];
 }
 
+function dataAwsRouteTableFilterToTerraform(struct?: DataAwsRouteTableFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsRouteTable extends TerraformDataSource {
+export class DataAwsRouteTable extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -249,12 +256,12 @@ export class DataAwsRouteTable extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      gateway_id: this._gatewayId,
-      route_table_id: this._routeTableId,
-      subnet_id: this._subnetId,
-      tags: this._tags,
-      vpc_id: this._vpcId,
-      filter: this._filter,
+      gateway_id: cdktf.stringToTerraform(this._gatewayId),
+      route_table_id: cdktf.stringToTerraform(this._routeTableId),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      filter: cdktf.listMapper(dataAwsRouteTableFilterToTerraform)(this._filter),
     };
   }
 }

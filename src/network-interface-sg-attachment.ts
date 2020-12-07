@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NetworkInterfaceSgAttachmentConfig extends TerraformMetaArguments {
+export interface NetworkInterfaceSgAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly networkInterfaceId: string;
   readonly securityGroupId: string;
 }
 
 // Resource
 
-export class NetworkInterfaceSgAttachment extends TerraformResource {
+export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class NetworkInterfaceSgAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      network_interface_id: this._networkInterfaceId,
-      security_group_id: this._securityGroupId,
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
     };
   }
 }

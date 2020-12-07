@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRegionConfig extends TerraformMetaArguments {
+export interface DataAwsRegionConfig extends cdktf.TerraformMetaArguments {
   readonly current?: boolean;
   readonly endpoint?: string;
   readonly name?: string;
@@ -15,7 +14,7 @@ export interface DataAwsRegionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsRegion extends TerraformDataSource {
+export class DataAwsRegion extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -105,9 +104,9 @@ export class DataAwsRegion extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      current: this._current,
-      endpoint: this._endpoint,
-      name: this._name,
+      current: cdktf.booleanToTerraform(this._current),
+      endpoint: cdktf.stringToTerraform(this._endpoint),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

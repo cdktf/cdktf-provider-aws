@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamServerCertificateConfig extends TerraformMetaArguments {
+export interface DataAwsIamServerCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly latest?: boolean;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -16,7 +15,7 @@ export interface DataAwsIamServerCertificateConfig extends TerraformMetaArgument
 
 // Resource
 
-export class DataAwsIamServerCertificate extends TerraformDataSource {
+export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -148,10 +147,10 @@ export class DataAwsIamServerCertificate extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      latest: this._latest,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      path_prefix: this._pathPrefix,
+      latest: cdktf.booleanToTerraform(this._latest),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      path_prefix: cdktf.stringToTerraform(this._pathPrefix),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DynamodbTableConfig extends TerraformMetaArguments {
+export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   readonly billingMode?: string;
   readonly hashKey: string;
   readonly name: string;
@@ -38,6 +37,15 @@ export interface DynamodbTableAttribute {
   readonly name: string;
   readonly type: string;
 }
+
+function dynamodbTableAttributeToTerraform(struct?: DynamodbTableAttribute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface DynamodbTableGlobalSecondaryIndex {
   readonly hashKey: string;
   readonly name: string;
@@ -47,35 +55,104 @@ export interface DynamodbTableGlobalSecondaryIndex {
   readonly readCapacity?: number;
   readonly writeCapacity?: number;
 }
+
+function dynamodbTableGlobalSecondaryIndexToTerraform(struct?: DynamodbTableGlobalSecondaryIndex): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    hash_key: cdktf.stringToTerraform(struct!.hashKey),
+    name: cdktf.stringToTerraform(struct!.name),
+    non_key_attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.nonKeyAttributes),
+    projection_type: cdktf.stringToTerraform(struct!.projectionType),
+    range_key: cdktf.stringToTerraform(struct!.rangeKey),
+    read_capacity: cdktf.numberToTerraform(struct!.readCapacity),
+    write_capacity: cdktf.numberToTerraform(struct!.writeCapacity),
+  }
+}
+
 export interface DynamodbTableLocalSecondaryIndex {
   readonly name: string;
   readonly nonKeyAttributes?: string[];
   readonly projectionType: string;
   readonly rangeKey: string;
 }
+
+function dynamodbTableLocalSecondaryIndexToTerraform(struct?: DynamodbTableLocalSecondaryIndex): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    non_key_attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.nonKeyAttributes),
+    projection_type: cdktf.stringToTerraform(struct!.projectionType),
+    range_key: cdktf.stringToTerraform(struct!.rangeKey),
+  }
+}
+
 export interface DynamodbTablePointInTimeRecovery {
   readonly enabled: boolean;
 }
+
+function dynamodbTablePointInTimeRecoveryToTerraform(struct?: DynamodbTablePointInTimeRecovery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface DynamodbTableReplica {
   readonly regionName: string;
 }
+
+function dynamodbTableReplicaToTerraform(struct?: DynamodbTableReplica): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    region_name: cdktf.stringToTerraform(struct!.regionName),
+  }
+}
+
 export interface DynamodbTableServerSideEncryption {
   readonly enabled: boolean;
   readonly kmsKeyArn?: string;
 }
+
+function dynamodbTableServerSideEncryptionToTerraform(struct?: DynamodbTableServerSideEncryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
+  }
+}
+
 export interface DynamodbTableTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
+
+function dynamodbTableTimeoutsToTerraform(struct?: DynamodbTableTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
 export interface DynamodbTableTtl {
   readonly attributeName: string;
   readonly enabled?: boolean;
 }
 
+function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtl): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    attribute_name: cdktf.stringToTerraform(struct!.attributeName),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+
 // Resource
 
-export class DynamodbTable extends TerraformResource {
+export class DynamodbTable extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -404,23 +481,23 @@ export class DynamodbTable extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_mode: this._billingMode,
-      hash_key: this._hashKey,
-      name: this._name,
-      range_key: this._rangeKey,
-      read_capacity: this._readCapacity,
-      stream_enabled: this._streamEnabled,
-      stream_view_type: this._streamViewType,
-      tags: this._tags,
-      write_capacity: this._writeCapacity,
-      attribute: this._attribute,
-      global_secondary_index: this._globalSecondaryIndex,
-      local_secondary_index: this._localSecondaryIndex,
-      point_in_time_recovery: this._pointInTimeRecovery,
-      replica: this._replica,
-      server_side_encryption: this._serverSideEncryption,
-      timeouts: this._timeouts,
-      ttl: this._ttl,
+      billing_mode: cdktf.stringToTerraform(this._billingMode),
+      hash_key: cdktf.stringToTerraform(this._hashKey),
+      name: cdktf.stringToTerraform(this._name),
+      range_key: cdktf.stringToTerraform(this._rangeKey),
+      read_capacity: cdktf.numberToTerraform(this._readCapacity),
+      stream_enabled: cdktf.booleanToTerraform(this._streamEnabled),
+      stream_view_type: cdktf.stringToTerraform(this._streamViewType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      write_capacity: cdktf.numberToTerraform(this._writeCapacity),
+      attribute: cdktf.listMapper(dynamodbTableAttributeToTerraform)(this._attribute),
+      global_secondary_index: cdktf.listMapper(dynamodbTableGlobalSecondaryIndexToTerraform)(this._globalSecondaryIndex),
+      local_secondary_index: cdktf.listMapper(dynamodbTableLocalSecondaryIndexToTerraform)(this._localSecondaryIndex),
+      point_in_time_recovery: cdktf.listMapper(dynamodbTablePointInTimeRecoveryToTerraform)(this._pointInTimeRecovery),
+      replica: cdktf.listMapper(dynamodbTableReplicaToTerraform)(this._replica),
+      server_side_encryption: cdktf.listMapper(dynamodbTableServerSideEncryptionToTerraform)(this._serverSideEncryption),
+      timeouts: dynamodbTableTimeoutsToTerraform(this._timeouts),
+      ttl: cdktf.listMapper(dynamodbTableTtlToTerraform)(this._ttl),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface FsxLustreFileSystemConfig extends TerraformMetaArguments {
+export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly exportPath?: string;
   readonly importPath?: string;
   readonly importedFileChunkSize?: number;
@@ -24,9 +23,18 @@ export interface FsxLustreFileSystemTimeouts {
   readonly delete?: string;
 }
 
+function fsxLustreFileSystemTimeoutsToTerraform(struct?: FsxLustreFileSystemTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class FsxLustreFileSystem extends TerraformResource {
+export class FsxLustreFileSystem extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -232,15 +240,15 @@ export class FsxLustreFileSystem extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      export_path: this._exportPath,
-      import_path: this._importPath,
-      imported_file_chunk_size: this._importedFileChunkSize,
-      security_group_ids: this._securityGroupIds,
-      storage_capacity: this._storageCapacity,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      weekly_maintenance_start_time: this._weeklyMaintenanceStartTime,
-      timeouts: this._timeouts,
+      export_path: cdktf.stringToTerraform(this._exportPath),
+      import_path: cdktf.stringToTerraform(this._importPath),
+      imported_file_chunk_size: cdktf.numberToTerraform(this._importedFileChunkSize),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      weekly_maintenance_start_time: cdktf.stringToTerraform(this._weeklyMaintenanceStartTime),
+      timeouts: fsxLustreFileSystemTimeoutsToTerraform(this._timeouts),
     };
   }
 }

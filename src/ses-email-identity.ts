@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesEmailIdentityConfig extends TerraformMetaArguments {
+export interface SesEmailIdentityConfig extends cdktf.TerraformMetaArguments {
   readonly email: string;
 }
 
 // Resource
 
-export class SesEmailIdentity extends TerraformResource {
+export class SesEmailIdentity extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -66,7 +65,7 @@ export class SesEmailIdentity extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email: this._email,
+      email: cdktf.stringToTerraform(this._email),
     };
   }
 }

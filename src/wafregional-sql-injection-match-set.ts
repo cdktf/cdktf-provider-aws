@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalSqlInjectionMatchSetConfig extends TerraformMetaArguments {
+export interface WafregionalSqlInjectionMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** sql_injection_match_tuple block */
   readonly sqlInjectionMatchTuple?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[];
@@ -16,15 +15,33 @@ export interface WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMat
   readonly data?: string;
   readonly type: string;
 }
+
+function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchToTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple {
   readonly textTransformation: string;
   /** field_to_match block */
   readonly fieldToMatch: WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch[];
 }
 
+function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafregionalSqlInjectionMatchSet extends TerraformResource {
+export class WafregionalSqlInjectionMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,8 +106,8 @@ export class WafregionalSqlInjectionMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      sql_injection_match_tuple: this._sqlInjectionMatchTuple,
+      name: cdktf.stringToTerraform(this._name),
+      sql_injection_match_tuple: cdktf.listMapper(wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform)(this._sqlInjectionMatchTuple),
     };
   }
 }

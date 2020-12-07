@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmActivationConfig extends TerraformMetaArguments {
+export interface SsmActivationConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly expirationDate?: string;
   readonly iamRole: string;
@@ -18,7 +17,7 @@ export interface SsmActivationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SsmActivation extends TerraformResource {
+export class SsmActivation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -166,12 +165,12 @@ export class SsmActivation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      expiration_date: this._expirationDate,
-      iam_role: this._iamRole,
-      name: this._name,
-      registration_limit: this._registrationLimit,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      expiration_date: cdktf.stringToTerraform(this._expirationDate),
+      iam_role: cdktf.stringToTerraform(this._iamRole),
+      name: cdktf.stringToTerraform(this._name),
+      registration_limit: cdktf.numberToTerraform(this._registrationLimit),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

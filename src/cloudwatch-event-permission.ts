@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchEventPermissionConfig extends TerraformMetaArguments {
+export interface CloudwatchEventPermissionConfig extends cdktf.TerraformMetaArguments {
   readonly action?: string;
   readonly principal: string;
   readonly statementId: string;
@@ -20,9 +19,19 @@ export interface CloudwatchEventPermissionCondition {
   readonly value: string;
 }
 
+function cloudwatchEventPermissionConditionToTerraform(struct?: CloudwatchEventPermissionCondition): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class CloudwatchEventPermission extends TerraformResource {
+export class CloudwatchEventPermission extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -118,10 +127,10 @@ export class CloudwatchEventPermission extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: this._action,
-      principal: this._principal,
-      statement_id: this._statementId,
-      condition: this._condition,
+      action: cdktf.stringToTerraform(this._action),
+      principal: cdktf.stringToTerraform(this._principal),
+      statement_id: cdktf.stringToTerraform(this._statementId),
+      condition: cdktf.listMapper(cloudwatchEventPermissionConditionToTerraform)(this._condition),
     };
   }
 }

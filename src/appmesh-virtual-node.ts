@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppmeshVirtualNodeConfig extends TerraformMetaArguments {
+export interface AppmeshVirtualNodeConfig extends cdktf.TerraformMetaArguments {
   readonly meshName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -17,10 +16,26 @@ export interface AppmeshVirtualNodeConfig extends TerraformMetaArguments {
 export interface AppmeshVirtualNodeSpecBackendVirtualService {
   readonly virtualServiceName: string;
 }
+
+function appmeshVirtualNodeSpecBackendVirtualServiceToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualService): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    virtual_service_name: cdktf.stringToTerraform(struct!.virtualServiceName),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecBackend {
   /** virtual_service block */
   readonly virtualService?: AppmeshVirtualNodeSpecBackendVirtualService[];
 }
+
+function appmeshVirtualNodeSpecBackendToTerraform(struct?: AppmeshVirtualNodeSpecBackend): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    virtual_service: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceToTerraform)(struct!.virtualService),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecListenerHealthCheck {
   readonly healthyThreshold: number;
   readonly intervalMillis: number;
@@ -30,42 +45,126 @@ export interface AppmeshVirtualNodeSpecListenerHealthCheck {
   readonly timeoutMillis: number;
   readonly unhealthyThreshold: number;
 }
+
+function appmeshVirtualNodeSpecListenerHealthCheckToTerraform(struct?: AppmeshVirtualNodeSpecListenerHealthCheck): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    healthy_threshold: cdktf.numberToTerraform(struct!.healthyThreshold),
+    interval_millis: cdktf.numberToTerraform(struct!.intervalMillis),
+    path: cdktf.stringToTerraform(struct!.path),
+    port: cdktf.numberToTerraform(struct!.port),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    timeout_millis: cdktf.numberToTerraform(struct!.timeoutMillis),
+    unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecListenerPortMapping {
   readonly port: number;
   readonly protocol: string;
 }
+
+function appmeshVirtualNodeSpecListenerPortMappingToTerraform(struct?: AppmeshVirtualNodeSpecListenerPortMapping): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    port: cdktf.numberToTerraform(struct!.port),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecListener {
   /** health_check block */
   readonly healthCheck?: AppmeshVirtualNodeSpecListenerHealthCheck[];
   /** port_mapping block */
   readonly portMapping: AppmeshVirtualNodeSpecListenerPortMapping[];
 }
+
+function appmeshVirtualNodeSpecListenerToTerraform(struct?: AppmeshVirtualNodeSpecListener): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    health_check: cdktf.listMapper(appmeshVirtualNodeSpecListenerHealthCheckToTerraform)(struct!.healthCheck),
+    port_mapping: cdktf.listMapper(appmeshVirtualNodeSpecListenerPortMappingToTerraform)(struct!.portMapping),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecLoggingAccessLogFile {
   readonly path: string;
 }
+
+function appmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLogFile): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecLoggingAccessLog {
   /** file block */
   readonly file?: AppmeshVirtualNodeSpecLoggingAccessLogFile[];
 }
+
+function appmeshVirtualNodeSpecLoggingAccessLogToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLog): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    file: cdktf.listMapper(appmeshVirtualNodeSpecLoggingAccessLogFileToTerraform)(struct!.file),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecLogging {
   /** access_log block */
   readonly accessLog?: AppmeshVirtualNodeSpecLoggingAccessLog[];
 }
+
+function appmeshVirtualNodeSpecLoggingToTerraform(struct?: AppmeshVirtualNodeSpecLogging): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    access_log: cdktf.listMapper(appmeshVirtualNodeSpecLoggingAccessLogToTerraform)(struct!.accessLog),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap {
   readonly attributes?: { [key: string]: string };
   readonly namespaceName: string;
   readonly serviceName: string;
 }
+
+function appmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    attributes: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.attributes),
+    namespace_name: cdktf.stringToTerraform(struct!.namespaceName),
+    service_name: cdktf.stringToTerraform(struct!.serviceName),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecServiceDiscoveryDns {
   readonly hostname: string;
   readonly serviceName?: string;
 }
+
+function appmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscoveryDns): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    hostname: cdktf.stringToTerraform(struct!.hostname),
+    service_name: cdktf.stringToTerraform(struct!.serviceName),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecServiceDiscovery {
   /** aws_cloud_map block */
   readonly awsCloudMap?: AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap[];
   /** dns block */
   readonly dns?: AppmeshVirtualNodeSpecServiceDiscoveryDns[];
 }
+
+function appmeshVirtualNodeSpecServiceDiscoveryToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscovery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    aws_cloud_map: cdktf.listMapper(appmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraform)(struct!.awsCloudMap),
+    dns: cdktf.listMapper(appmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform)(struct!.dns),
+  }
+}
+
 export interface AppmeshVirtualNodeSpec {
   readonly backends?: string[];
   /** backend block */
@@ -78,9 +177,21 @@ export interface AppmeshVirtualNodeSpec {
   readonly serviceDiscovery?: AppmeshVirtualNodeSpecServiceDiscovery[];
 }
 
+function appmeshVirtualNodeSpecToTerraform(struct?: AppmeshVirtualNodeSpec): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    backends: cdktf.listMapper(cdktf.stringToTerraform)(struct!.backends),
+    backend: cdktf.listMapper(appmeshVirtualNodeSpecBackendToTerraform)(struct!.backend),
+    listener: cdktf.listMapper(appmeshVirtualNodeSpecListenerToTerraform)(struct!.listener),
+    logging: cdktf.listMapper(appmeshVirtualNodeSpecLoggingToTerraform)(struct!.logging),
+    service_discovery: cdktf.listMapper(appmeshVirtualNodeSpecServiceDiscoveryToTerraform)(struct!.serviceDiscovery),
+  }
+}
+
+
 // Resource
 
-export class AppmeshVirtualNode extends TerraformResource {
+export class AppmeshVirtualNode extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -188,10 +299,10 @@ export class AppmeshVirtualNode extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mesh_name: this._meshName,
-      name: this._name,
-      tags: this._tags,
-      spec: this._spec,
+      mesh_name: cdktf.stringToTerraform(this._meshName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      spec: cdktf.listMapper(appmeshVirtualNodeSpecToTerraform)(this._spec),
     };
   }
 }

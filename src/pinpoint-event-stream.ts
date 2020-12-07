@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointEventStreamConfig extends TerraformMetaArguments {
+export interface PinpointEventStreamConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
   readonly destinationStreamArn: string;
   readonly roleArn: string;
@@ -15,7 +14,7 @@ export interface PinpointEventStreamConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PinpointEventStream extends TerraformResource {
+export class PinpointEventStream extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,9 +90,9 @@ export class PinpointEventStream extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: this._applicationId,
-      destination_stream_arn: this._destinationStreamArn,
-      role_arn: this._roleArn,
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      destination_stream_arn: cdktf.stringToTerraform(this._destinationStreamArn),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

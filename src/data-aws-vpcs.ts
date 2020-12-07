@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpcsConfig extends TerraformMetaArguments {
+export interface DataAwsVpcsConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsVpcsFilter[];
@@ -17,9 +16,18 @@ export interface DataAwsVpcsFilter {
   readonly values: string[];
 }
 
+function dataAwsVpcsFilterToTerraform(struct?: DataAwsVpcsFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsVpcs extends TerraformDataSource {
+export class DataAwsVpcs extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -92,8 +100,8 @@ export class DataAwsVpcs extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      filter: this._filter,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsVpcsFilterToTerraform)(this._filter),
     };
   }
 }

@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLambdaInvocationConfig extends TerraformMetaArguments {
+export interface DataAwsLambdaInvocationConfig extends cdktf.TerraformMetaArguments {
   readonly functionName: string;
   readonly input: string;
   readonly qualifier?: string;
@@ -16,7 +14,7 @@ export interface DataAwsLambdaInvocationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsLambdaInvocation extends TerraformDataSource {
+export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -96,7 +94,7 @@ export class DataAwsLambdaInvocation extends TerraformDataSource {
 
   // result_map - computed: true, optional: false, required: false
   public resultMap(key: string): string {
-    return new StringMap(this, 'result_map').lookup(key);
+    return new cdktf.StringMap(this, 'result_map').lookup(key);
   }
 
   // =========
@@ -105,9 +103,9 @@ export class DataAwsLambdaInvocation extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: this._functionName,
-      input: this._input,
-      qualifier: this._qualifier,
+      function_name: cdktf.stringToTerraform(this._functionName),
+      input: cdktf.stringToTerraform(this._input),
+      qualifier: cdktf.stringToTerraform(this._qualifier),
     };
   }
 }

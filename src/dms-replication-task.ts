@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DmsReplicationTaskConfig extends TerraformMetaArguments {
+export interface DmsReplicationTaskConfig extends cdktf.TerraformMetaArguments {
   readonly cdcStartTime?: string;
   readonly migrationType: string;
   readonly replicationInstanceArn: string;
@@ -21,7 +20,7 @@ export interface DmsReplicationTaskConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DmsReplicationTask extends TerraformResource {
+export class DmsReplicationTask extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -195,15 +194,15 @@ export class DmsReplicationTask extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cdc_start_time: this._cdcStartTime,
-      migration_type: this._migrationType,
-      replication_instance_arn: this._replicationInstanceArn,
-      replication_task_id: this._replicationTaskId,
-      replication_task_settings: this._replicationTaskSettings,
-      source_endpoint_arn: this._sourceEndpointArn,
-      table_mappings: this._tableMappings,
-      tags: this._tags,
-      target_endpoint_arn: this._targetEndpointArn,
+      cdc_start_time: cdktf.stringToTerraform(this._cdcStartTime),
+      migration_type: cdktf.stringToTerraform(this._migrationType),
+      replication_instance_arn: cdktf.stringToTerraform(this._replicationInstanceArn),
+      replication_task_id: cdktf.stringToTerraform(this._replicationTaskId),
+      replication_task_settings: cdktf.stringToTerraform(this._replicationTaskSettings),
+      source_endpoint_arn: cdktf.stringToTerraform(this._sourceEndpointArn),
+      table_mappings: cdktf.stringToTerraform(this._tableMappings),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_endpoint_arn: cdktf.stringToTerraform(this._targetEndpointArn),
     };
   }
 }

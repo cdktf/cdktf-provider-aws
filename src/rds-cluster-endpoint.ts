@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RdsClusterEndpointConfig extends TerraformMetaArguments {
+export interface RdsClusterEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly clusterEndpointIdentifier: string;
   readonly clusterIdentifier: string;
   readonly customEndpointType: string;
@@ -18,7 +17,7 @@ export interface RdsClusterEndpointConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class RdsClusterEndpoint extends TerraformResource {
+export class RdsClusterEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -155,12 +154,12 @@ export class RdsClusterEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_endpoint_identifier: this._clusterEndpointIdentifier,
-      cluster_identifier: this._clusterIdentifier,
-      custom_endpoint_type: this._customEndpointType,
-      excluded_members: this._excludedMembers,
-      static_members: this._staticMembers,
-      tags: this._tags,
+      cluster_endpoint_identifier: cdktf.stringToTerraform(this._clusterEndpointIdentifier),
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      custom_endpoint_type: cdktf.stringToTerraform(this._customEndpointType),
+      excluded_members: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedMembers),
+      static_members: cdktf.listMapper(cdktf.stringToTerraform)(this._staticMembers),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

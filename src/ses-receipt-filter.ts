@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesReceiptFilterConfig extends TerraformMetaArguments {
+export interface SesReceiptFilterConfig extends cdktf.TerraformMetaArguments {
   readonly cidr: string;
   readonly name: string;
   readonly policy: string;
@@ -15,7 +14,7 @@ export interface SesReceiptFilterConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SesReceiptFilter extends TerraformResource {
+export class SesReceiptFilter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -96,9 +95,9 @@ export class SesReceiptFilter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr: this._cidr,
-      name: this._name,
-      policy: this._policy,
+      cidr: cdktf.stringToTerraform(this._cidr),
+      name: cdktf.stringToTerraform(this._name),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MacieMemberAccountAssociationConfig extends TerraformMetaArguments {
+export interface MacieMemberAccountAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly memberAccountId: string;
 }
 
 // Resource
 
-export class MacieMemberAccountAssociation extends TerraformResource {
+export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,7 +60,7 @@ export class MacieMemberAccountAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      member_account_id: this._memberAccountId,
+      member_account_id: cdktf.stringToTerraform(this._memberAccountId),
     };
   }
 }

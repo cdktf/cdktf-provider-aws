@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesIdentityNotificationTopicConfig extends TerraformMetaArguments {
+export interface SesIdentityNotificationTopicConfig extends cdktf.TerraformMetaArguments {
   readonly identity: string;
   readonly includeOriginalHeaders?: boolean;
   readonly notificationType: string;
@@ -16,7 +15,7 @@ export interface SesIdentityNotificationTopicConfig extends TerraformMetaArgumen
 
 // Resource
 
-export class SesIdentityNotificationTopic extends TerraformResource {
+export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -112,10 +111,10 @@ export class SesIdentityNotificationTopic extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identity: this._identity,
-      include_original_headers: this._includeOriginalHeaders,
-      notification_type: this._notificationType,
-      topic_arn: this._topicArn,
+      identity: cdktf.stringToTerraform(this._identity),
+      include_original_headers: cdktf.booleanToTerraform(this._includeOriginalHeaders),
+      notification_type: cdktf.stringToTerraform(this._notificationType),
+      topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }
 }

@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LightsailDomainConfig extends TerraformMetaArguments {
+export interface LightsailDomainConfig extends cdktf.TerraformMetaArguments {
   readonly domainName: string;
 }
 
 // Resource
 
-export class LightsailDomain extends TerraformResource {
+export class LightsailDomain extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -66,7 +65,7 @@ export class LightsailDomain extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: this._domainName,
+      domain_name: cdktf.stringToTerraform(this._domainName),
     };
   }
 }

@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesReceiptRuleSetConfig extends TerraformMetaArguments {
+export interface SesReceiptRuleSetConfig extends cdktf.TerraformMetaArguments {
   readonly ruleSetName: string;
 }
 
 // Resource
 
-export class SesReceiptRuleSet extends TerraformResource {
+export class SesReceiptRuleSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,7 +60,7 @@ export class SesReceiptRuleSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      rule_set_name: this._ruleSetName,
+      rule_set_name: cdktf.stringToTerraform(this._ruleSetName),
     };
   }
 }

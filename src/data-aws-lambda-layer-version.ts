@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLambdaLayerVersionConfig extends TerraformMetaArguments {
+export interface DataAwsLambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
   readonly compatibleRuntime?: string;
   readonly layerName: string;
   readonly version?: number;
@@ -15,7 +14,7 @@ export interface DataAwsLambdaLayerVersionConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class DataAwsLambdaLayerVersion extends TerraformDataSource {
+export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -137,9 +136,9 @@ export class DataAwsLambdaLayerVersion extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compatible_runtime: this._compatibleRuntime,
-      layer_name: this._layerName,
-      version: this._version,
+      compatible_runtime: cdktf.stringToTerraform(this._compatibleRuntime),
+      layer_name: cdktf.stringToTerraform(this._layerName),
+      version: cdktf.numberToTerraform(this._version),
     };
   }
 }

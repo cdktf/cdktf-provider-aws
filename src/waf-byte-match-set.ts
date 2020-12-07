@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafByteMatchSetConfig extends TerraformMetaArguments {
+export interface WafByteMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** byte_match_tuples block */
   readonly byteMatchTuples?: WafByteMatchSetByteMatchTuples[];
@@ -16,6 +15,15 @@ export interface WafByteMatchSetByteMatchTuplesFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafByteMatchSetByteMatchTuplesFieldToMatchToTerraform(struct?: WafByteMatchSetByteMatchTuplesFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafByteMatchSetByteMatchTuples {
   readonly positionalConstraint: string;
   readonly targetString?: string;
@@ -24,9 +32,20 @@ export interface WafByteMatchSetByteMatchTuples {
   readonly fieldToMatch: WafByteMatchSetByteMatchTuplesFieldToMatch[];
 }
 
+function wafByteMatchSetByteMatchTuplesToTerraform(struct?: WafByteMatchSetByteMatchTuples): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    positional_constraint: cdktf.stringToTerraform(struct!.positionalConstraint),
+    target_string: cdktf.stringToTerraform(struct!.targetString),
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafByteMatchSetByteMatchTuplesFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafByteMatchSet extends TerraformResource {
+export class WafByteMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,8 +110,8 @@ export class WafByteMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      byte_match_tuples: this._byteMatchTuples,
+      name: cdktf.stringToTerraform(this._name),
+      byte_match_tuples: cdktf.listMapper(wafByteMatchSetByteMatchTuplesToTerraform)(this._byteMatchTuples),
     };
   }
 }

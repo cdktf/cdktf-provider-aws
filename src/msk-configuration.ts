@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MskConfigurationConfig extends TerraformMetaArguments {
+export interface MskConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly kafkaVersions: string[];
   readonly name: string;
@@ -16,7 +15,7 @@ export interface MskConfigurationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class MskConfiguration extends TerraformResource {
+export class MskConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,10 +118,10 @@ export class MskConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      kafka_versions: this._kafkaVersions,
-      name: this._name,
-      server_properties: this._serverProperties,
+      description: cdktf.stringToTerraform(this._description),
+      kafka_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._kafkaVersions),
+      name: cdktf.stringToTerraform(this._name),
+      server_properties: cdktf.stringToTerraform(this._serverProperties),
     };
   }
 }

@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcrAuthorizationTokenConfig extends TerraformMetaArguments {
+export interface DataAwsEcrAuthorizationTokenConfig extends cdktf.TerraformMetaArguments {
   readonly registryId?: string;
 }
 
 // Resource
 
-export class DataAwsEcrAuthorizationToken extends TerraformDataSource {
+export class DataAwsEcrAuthorizationToken extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -89,7 +88,7 @@ export class DataAwsEcrAuthorizationToken extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      registry_id: this._registryId,
+      registry_id: cdktf.stringToTerraform(this._registryId),
     };
   }
 }

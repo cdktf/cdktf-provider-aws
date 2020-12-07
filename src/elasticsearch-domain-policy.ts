@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticsearchDomainPolicyConfig extends TerraformMetaArguments {
+export interface ElasticsearchDomainPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly accessPolicies: string;
   readonly domainName: string;
 }
 
 // Resource
 
-export class ElasticsearchDomainPolicy extends TerraformResource {
+export class ElasticsearchDomainPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class ElasticsearchDomainPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policies: this._accessPolicies,
-      domain_name: this._domainName,
+      access_policies: cdktf.stringToTerraform(this._accessPolicies),
+      domain_name: cdktf.stringToTerraform(this._domainName),
     };
   }
 }

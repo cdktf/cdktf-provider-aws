@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpcEndpointServiceConfig extends TerraformMetaArguments {
+export interface DataAwsVpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   readonly service?: string;
   readonly serviceName?: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface DataAwsVpcEndpointServiceFilter {
   readonly values: string[];
 }
 
+function dataAwsVpcEndpointServiceFilterToTerraform(struct?: DataAwsVpcEndpointServiceFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsVpcEndpointService extends TerraformDataSource {
+export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -173,10 +181,10 @@ export class DataAwsVpcEndpointService extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      service: this._service,
-      service_name: this._serviceName,
-      tags: this._tags,
-      filter: this._filter,
+      service: cdktf.stringToTerraform(this._service),
+      service_name: cdktf.stringToTerraform(this._serviceName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsVpcEndpointServiceFilterToTerraform)(this._filter),
     };
   }
 }

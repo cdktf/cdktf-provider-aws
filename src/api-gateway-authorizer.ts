@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayAuthorizerConfig extends TerraformMetaArguments {
+export interface ApiGatewayAuthorizerConfig extends cdktf.TerraformMetaArguments {
   readonly authorizerCredentials?: string;
   readonly authorizerResultTtlInSeconds?: number;
   readonly authorizerUri?: string;
@@ -21,7 +20,7 @@ export interface ApiGatewayAuthorizerConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayAuthorizer extends TerraformResource {
+export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -202,15 +201,15 @@ export class ApiGatewayAuthorizer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorizer_credentials: this._authorizerCredentials,
-      authorizer_result_ttl_in_seconds: this._authorizerResultTtlInSeconds,
-      authorizer_uri: this._authorizerUri,
-      identity_source: this._identitySource,
-      identity_validation_expression: this._identityValidationExpression,
-      name: this._name,
-      provider_arns: this._providerArns,
-      rest_api_id: this._restApiId,
-      type: this._type,
+      authorizer_credentials: cdktf.stringToTerraform(this._authorizerCredentials),
+      authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(this._authorizerResultTtlInSeconds),
+      authorizer_uri: cdktf.stringToTerraform(this._authorizerUri),
+      identity_source: cdktf.stringToTerraform(this._identitySource),
+      identity_validation_expression: cdktf.stringToTerraform(this._identityValidationExpression),
+      name: cdktf.stringToTerraform(this._name),
+      provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._providerArns),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

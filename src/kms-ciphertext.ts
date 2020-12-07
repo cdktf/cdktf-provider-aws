@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KmsCiphertextConfig extends TerraformMetaArguments {
+export interface KmsCiphertextConfig extends cdktf.TerraformMetaArguments {
   readonly context?: { [key: string]: string };
   readonly keyId: string;
   readonly plaintext: string;
@@ -15,7 +14,7 @@ export interface KmsCiphertextConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class KmsCiphertext extends TerraformResource {
+export class KmsCiphertext extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +98,9 @@ export class KmsCiphertext extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      context: this._context,
-      key_id: this._keyId,
-      plaintext: this._plaintext,
+      context: cdktf.hashMapper(cdktf.anyToTerraform)(this._context),
+      key_id: cdktf.stringToTerraform(this._keyId),
+      plaintext: cdktf.stringToTerraform(this._plaintext),
     };
   }
 }

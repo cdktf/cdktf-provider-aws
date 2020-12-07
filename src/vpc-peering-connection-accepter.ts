@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcPeeringConnectionAccepterAConfig extends TerraformMetaArguments {
+export interface VpcPeeringConnectionAccepterAConfig extends cdktf.TerraformMetaArguments {
   readonly autoAccept?: boolean;
   readonly tags?: { [key: string]: string };
   readonly vpcPeeringConnectionId: string;
@@ -21,15 +20,35 @@ export interface VpcPeeringConnectionAccepterAccepter {
   readonly allowRemoteVpcDnsResolution?: boolean;
   readonly allowVpcToRemoteClassicLink?: boolean;
 }
+
+function vpcPeeringConnectionAccepterAccepterToTerraform(struct?: VpcPeeringConnectionAccepterAccepter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_classic_link_to_remote_vpc: cdktf.booleanToTerraform(struct!.allowClassicLinkToRemoteVpc),
+    allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
+    allow_vpc_to_remote_classic_link: cdktf.booleanToTerraform(struct!.allowVpcToRemoteClassicLink),
+  }
+}
+
 export interface VpcPeeringConnectionAccepterRequester {
   readonly allowClassicLinkToRemoteVpc?: boolean;
   readonly allowRemoteVpcDnsResolution?: boolean;
   readonly allowVpcToRemoteClassicLink?: boolean;
 }
 
+function vpcPeeringConnectionAccepterRequesterToTerraform(struct?: VpcPeeringConnectionAccepterRequester): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_classic_link_to_remote_vpc: cdktf.booleanToTerraform(struct!.allowClassicLinkToRemoteVpc),
+    allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
+    allow_vpc_to_remote_classic_link: cdktf.booleanToTerraform(struct!.allowVpcToRemoteClassicLink),
+  }
+}
+
+
 // Resource
 
-export class VpcPeeringConnectionAccepterA extends TerraformResource {
+export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -170,11 +189,11 @@ export class VpcPeeringConnectionAccepterA extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_accept: this._autoAccept,
-      tags: this._tags,
-      vpc_peering_connection_id: this._vpcPeeringConnectionId,
-      accepter: this._accepter,
-      requester: this._requester,
+      auto_accept: cdktf.booleanToTerraform(this._autoAccept),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
+      accepter: cdktf.listMapper(vpcPeeringConnectionAccepterAccepterToTerraform)(this._accepter),
+      requester: cdktf.listMapper(vpcPeeringConnectionAccepterRequesterToTerraform)(this._requester),
     };
   }
 }

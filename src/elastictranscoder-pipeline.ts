@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElastictranscoderPipelineConfig extends TerraformMetaArguments {
+export interface ElastictranscoderPipelineConfig extends cdktf.TerraformMetaArguments {
   readonly awsKmsKeyArn?: string;
   readonly inputBucket: string;
   readonly name?: string;
@@ -28,30 +27,79 @@ export interface ElastictranscoderPipelineContentConfig {
   readonly bucket?: string;
   readonly storageClass?: string;
 }
+
+function elastictranscoderPipelineContentConfigToTerraform(struct?: ElastictranscoderPipelineContentConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+  }
+}
+
 export interface ElastictranscoderPipelineContentConfigPermissions {
   readonly access?: string[];
   readonly grantee?: string;
   readonly granteeType?: string;
 }
+
+function elastictranscoderPipelineContentConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    access: cdktf.listMapper(cdktf.stringToTerraform)(struct!.access),
+    grantee: cdktf.stringToTerraform(struct!.grantee),
+    grantee_type: cdktf.stringToTerraform(struct!.granteeType),
+  }
+}
+
 export interface ElastictranscoderPipelineNotifications {
   readonly completed?: string;
   readonly error?: string;
   readonly progressing?: string;
   readonly warning?: string;
 }
+
+function elastictranscoderPipelineNotificationsToTerraform(struct?: ElastictranscoderPipelineNotifications): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    completed: cdktf.stringToTerraform(struct!.completed),
+    error: cdktf.stringToTerraform(struct!.error),
+    progressing: cdktf.stringToTerraform(struct!.progressing),
+    warning: cdktf.stringToTerraform(struct!.warning),
+  }
+}
+
 export interface ElastictranscoderPipelineThumbnailConfig {
   readonly bucket?: string;
   readonly storageClass?: string;
 }
+
+function elastictranscoderPipelineThumbnailConfigToTerraform(struct?: ElastictranscoderPipelineThumbnailConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+  }
+}
+
 export interface ElastictranscoderPipelineThumbnailConfigPermissions {
   readonly access?: string[];
   readonly grantee?: string;
   readonly granteeType?: string;
 }
 
+function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    access: cdktf.listMapper(cdktf.stringToTerraform)(struct!.access),
+    grantee: cdktf.stringToTerraform(struct!.grantee),
+    grantee_type: cdktf.stringToTerraform(struct!.granteeType),
+  }
+}
+
+
 // Resource
 
-export class ElastictranscoderPipeline extends TerraformResource {
+export class ElastictranscoderPipeline extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -254,16 +302,16 @@ export class ElastictranscoderPipeline extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_kms_key_arn: this._awsKmsKeyArn,
-      input_bucket: this._inputBucket,
-      name: this._name,
-      output_bucket: this._outputBucket,
-      role: this._role,
-      content_config: this._contentConfig,
-      content_config_permissions: this._contentConfigPermissions,
-      notifications: this._notifications,
-      thumbnail_config: this._thumbnailConfig,
-      thumbnail_config_permissions: this._thumbnailConfigPermissions,
+      aws_kms_key_arn: cdktf.stringToTerraform(this._awsKmsKeyArn),
+      input_bucket: cdktf.stringToTerraform(this._inputBucket),
+      name: cdktf.stringToTerraform(this._name),
+      output_bucket: cdktf.stringToTerraform(this._outputBucket),
+      role: cdktf.stringToTerraform(this._role),
+      content_config: cdktf.listMapper(elastictranscoderPipelineContentConfigToTerraform)(this._contentConfig),
+      content_config_permissions: cdktf.listMapper(elastictranscoderPipelineContentConfigPermissionsToTerraform)(this._contentConfigPermissions),
+      notifications: cdktf.listMapper(elastictranscoderPipelineNotificationsToTerraform)(this._notifications),
+      thumbnail_config: cdktf.listMapper(elastictranscoderPipelineThumbnailConfigToTerraform)(this._thumbnailConfig),
+      thumbnail_config_permissions: cdktf.listMapper(elastictranscoderPipelineThumbnailConfigPermissionsToTerraform)(this._thumbnailConfigPermissions),
     };
   }
 }

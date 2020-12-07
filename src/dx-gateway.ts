@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxGatewayConfig extends TerraformMetaArguments {
+export interface DxGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly amazonSideAsn: string;
   readonly name: string;
   /** timeouts block */
@@ -18,9 +17,18 @@ export interface DxGatewayTimeouts {
   readonly delete?: string;
 }
 
+function dxGatewayTimeoutsToTerraform(struct?: DxGatewayTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DxGateway extends TerraformResource {
+export class DxGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -104,9 +112,9 @@ export class DxGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amazon_side_asn: this._amazonSideAsn,
-      name: this._name,
-      timeouts: this._timeouts,
+      amazon_side_asn: cdktf.stringToTerraform(this._amazonSideAsn),
+      name: cdktf.stringToTerraform(this._name),
+      timeouts: dxGatewayTimeoutsToTerraform(this._timeouts),
     };
   }
 }

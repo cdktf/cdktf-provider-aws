@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ShieldProtectionConfig extends TerraformMetaArguments {
+export interface ShieldProtectionConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly resourceArn: string;
 }
 
 // Resource
 
-export class ShieldProtection extends TerraformResource {
+export class ShieldProtection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class ShieldProtection extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      resource_arn: this._resourceArn,
+      name: cdktf.stringToTerraform(this._name),
+      resource_arn: cdktf.stringToTerraform(this._resourceArn),
     };
   }
 }

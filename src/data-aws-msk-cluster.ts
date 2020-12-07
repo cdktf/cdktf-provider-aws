@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsMskClusterConfig extends TerraformMetaArguments {
+export interface DataAwsMskClusterConfig extends cdktf.TerraformMetaArguments {
   readonly clusterName: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsMskCluster extends TerraformDataSource {
+export class DataAwsMskCluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -109,8 +108,8 @@ export class DataAwsMskCluster extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: this._clusterName,
-      tags: this._tags,
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

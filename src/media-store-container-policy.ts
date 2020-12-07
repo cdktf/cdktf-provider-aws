@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MediaStoreContainerPolicyConfig extends TerraformMetaArguments {
+export interface MediaStoreContainerPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly containerName: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class MediaStoreContainerPolicy extends TerraformResource {
+export class MediaStoreContainerPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class MediaStoreContainerPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container_name: this._containerName,
-      policy: this._policy,
+      container_name: cdktf.stringToTerraform(this._containerName),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

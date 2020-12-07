@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElbConfig extends TerraformMetaArguments {
+export interface ElbConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZones?: string[];
   readonly connectionDraining?: boolean;
   readonly connectionDrainingTimeout?: number;
@@ -34,6 +33,17 @@ export interface ElbAccessLogs {
   readonly enabled?: boolean;
   readonly interval?: number;
 }
+
+function elbAccessLogsToTerraform(struct?: ElbAccessLogs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    interval: cdktf.numberToTerraform(struct!.interval),
+  }
+}
+
 export interface ElbHealthCheck {
   readonly healthyThreshold: number;
   readonly interval: number;
@@ -41,6 +51,18 @@ export interface ElbHealthCheck {
   readonly timeout: number;
   readonly unhealthyThreshold: number;
 }
+
+function elbHealthCheckToTerraform(struct?: ElbHealthCheck): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    healthy_threshold: cdktf.numberToTerraform(struct!.healthyThreshold),
+    interval: cdktf.numberToTerraform(struct!.interval),
+    target: cdktf.stringToTerraform(struct!.target),
+    timeout: cdktf.numberToTerraform(struct!.timeout),
+    unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
+  }
+}
+
 export interface ElbListener {
   readonly instancePort: number;
   readonly instanceProtocol: string;
@@ -49,9 +71,21 @@ export interface ElbListener {
   readonly sslCertificateId?: string;
 }
 
+function elbListenerToTerraform(struct?: ElbListener): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    instance_port: cdktf.numberToTerraform(struct!.instancePort),
+    instance_protocol: cdktf.stringToTerraform(struct!.instanceProtocol),
+    lb_port: cdktf.numberToTerraform(struct!.lbPort),
+    lb_protocol: cdktf.stringToTerraform(struct!.lbProtocol),
+    ssl_certificate_id: cdktf.stringToTerraform(struct!.sslCertificateId),
+  }
+}
+
+
 // Resource
 
-export class Elb extends TerraformResource {
+export class Elb extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -374,22 +408,22 @@ export class Elb extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones: this._availabilityZones,
-      connection_draining: this._connectionDraining,
-      connection_draining_timeout: this._connectionDrainingTimeout,
-      cross_zone_load_balancing: this._crossZoneLoadBalancing,
-      idle_timeout: this._idleTimeout,
-      instances: this._instances,
-      internal: this._internal,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      security_groups: this._securityGroups,
-      source_security_group: this._sourceSecurityGroup,
-      subnets: this._subnets,
-      tags: this._tags,
-      access_logs: this._accessLogs,
-      health_check: this._healthCheck,
-      listener: this._listener,
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      connection_draining: cdktf.booleanToTerraform(this._connectionDraining),
+      connection_draining_timeout: cdktf.numberToTerraform(this._connectionDrainingTimeout),
+      cross_zone_load_balancing: cdktf.booleanToTerraform(this._crossZoneLoadBalancing),
+      idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
+      instances: cdktf.listMapper(cdktf.stringToTerraform)(this._instances),
+      internal: cdktf.booleanToTerraform(this._internal),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      source_security_group: cdktf.stringToTerraform(this._sourceSecurityGroup),
+      subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      access_logs: cdktf.listMapper(elbAccessLogsToTerraform)(this._accessLogs),
+      health_check: cdktf.listMapper(elbHealthCheckToTerraform)(this._healthCheck),
+      listener: cdktf.listMapper(elbListenerToTerraform)(this._listener),
     };
   }
 }

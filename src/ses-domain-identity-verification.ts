@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesDomainIdentityVerificationConfig extends TerraformMetaArguments {
+export interface SesDomainIdentityVerificationConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
   /** timeouts block */
   readonly timeouts?: SesDomainIdentityVerificationTimeouts;
@@ -16,9 +15,17 @@ export interface SesDomainIdentityVerificationTimeouts {
   readonly create?: string;
 }
 
+function sesDomainIdentityVerificationTimeoutsToTerraform(struct?: SesDomainIdentityVerificationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class SesDomainIdentityVerification extends TerraformResource {
+export class SesDomainIdentityVerification extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -88,8 +95,8 @@ export class SesDomainIdentityVerification extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
-      timeouts: this._timeouts,
+      domain: cdktf.stringToTerraform(this._domain),
+      timeouts: sesDomainIdentityVerificationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

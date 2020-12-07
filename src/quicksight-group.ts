@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface QuicksightGroupConfig extends TerraformMetaArguments {
+export interface QuicksightGroupConfig extends cdktf.TerraformMetaArguments {
   readonly awsAccountId?: string;
   readonly description?: string;
   readonly groupName: string;
@@ -16,7 +15,7 @@ export interface QuicksightGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class QuicksightGroup extends TerraformResource {
+export class QuicksightGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -120,10 +119,10 @@ export class QuicksightGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: this._awsAccountId,
-      description: this._description,
-      group_name: this._groupName,
-      namespace: this._namespace,
+      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
+      description: cdktf.stringToTerraform(this._description),
+      group_name: cdktf.stringToTerraform(this._groupName),
+      namespace: cdktf.stringToTerraform(this._namespace),
     };
   }
 }

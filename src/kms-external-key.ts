@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KmsExternalKeyConfig extends TerraformMetaArguments {
+export interface KmsExternalKeyConfig extends cdktf.TerraformMetaArguments {
   readonly deletionWindowInDays?: number;
   readonly description?: string;
   readonly enabled?: boolean;
@@ -19,7 +18,7 @@ export interface KmsExternalKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class KmsExternalKey extends TerraformResource {
+export class KmsExternalKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -192,13 +191,13 @@ export class KmsExternalKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_window_in_days: this._deletionWindowInDays,
-      description: this._description,
-      enabled: this._enabled,
-      key_material_base64: this._keyMaterialBase64,
-      policy: this._policy,
-      tags: this._tags,
-      valid_to: this._validTo,
+      deletion_window_in_days: cdktf.numberToTerraform(this._deletionWindowInDays),
+      description: cdktf.stringToTerraform(this._description),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      key_material_base64: cdktf.stringToTerraform(this._keyMaterialBase64),
+      policy: cdktf.stringToTerraform(this._policy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      valid_to: cdktf.stringToTerraform(this._validTo),
     };
   }
 }

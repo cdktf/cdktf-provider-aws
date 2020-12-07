@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayModelConfig extends TerraformMetaArguments {
+export interface ApiGatewayModelConfig extends cdktf.TerraformMetaArguments {
   readonly contentType: string;
   readonly description?: string;
   readonly name: string;
@@ -17,7 +16,7 @@ export interface ApiGatewayModelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayModel extends TerraformResource {
+export class ApiGatewayModel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -127,11 +126,11 @@ export class ApiGatewayModel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_type: this._contentType,
-      description: this._description,
-      name: this._name,
-      rest_api_id: this._restApiId,
-      schema: this._schema,
+      content_type: cdktf.stringToTerraform(this._contentType),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      schema: cdktf.stringToTerraform(this._schema),
     };
   }
 }

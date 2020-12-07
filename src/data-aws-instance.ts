@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsInstanceConfig extends TerraformMetaArguments {
+export interface DataAwsInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly fetchPasswordData?: boolean;
   readonly fetchUserData?: boolean;
   readonly instanceId?: string;
@@ -17,14 +15,14 @@ export interface DataAwsInstanceConfig extends TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsInstanceFilter[];
 }
-export class DataAwsInstanceCreditSpecification extends ComplexComputedList {
+export class DataAwsInstanceCreditSpecification extends cdktf.ComplexComputedList {
 
   // cpu_credits - computed: true, optional: false, required: false
   public get cpuCredits() {
     return this.getStringAttribute('cpu_credits');
   }
 }
-export class DataAwsInstanceEbsBlockDevice extends ComplexComputedList {
+export class DataAwsInstanceEbsBlockDevice extends cdktf.ComplexComputedList {
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
@@ -71,7 +69,7 @@ export class DataAwsInstanceEbsBlockDevice extends ComplexComputedList {
     return this.getStringAttribute('volume_type');
   }
 }
-export class DataAwsInstanceEphemeralBlockDevice extends ComplexComputedList {
+export class DataAwsInstanceEphemeralBlockDevice extends cdktf.ComplexComputedList {
 
   // device_name - computed: true, optional: false, required: false
   public get deviceName() {
@@ -88,7 +86,7 @@ export class DataAwsInstanceEphemeralBlockDevice extends ComplexComputedList {
     return this.getStringAttribute('virtual_name');
   }
 }
-export class DataAwsInstanceMetadataOptions extends ComplexComputedList {
+export class DataAwsInstanceMetadataOptions extends cdktf.ComplexComputedList {
 
   // http_endpoint - computed: true, optional: false, required: false
   public get httpEndpoint() {
@@ -105,7 +103,7 @@ export class DataAwsInstanceMetadataOptions extends ComplexComputedList {
     return this.getStringAttribute('http_tokens');
   }
 }
-export class DataAwsInstanceRootBlockDevice extends ComplexComputedList {
+export class DataAwsInstanceRootBlockDevice extends cdktf.ComplexComputedList {
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
@@ -152,9 +150,18 @@ export interface DataAwsInstanceFilter {
   readonly values: string[];
 }
 
+function dataAwsInstanceFilterToTerraform(struct?: DataAwsInstanceFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsInstance extends TerraformDataSource {
+export class DataAwsInstance extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -450,12 +457,12 @@ export class DataAwsInstance extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      get_password_data: this._getPasswordData,
-      get_user_data: this._getUserData,
-      instance_id: this._instanceId,
-      instance_tags: this._instanceTags,
-      tags: this._tags,
-      filter: this._filter,
+      get_password_data: cdktf.booleanToTerraform(this._getPasswordData),
+      get_user_data: cdktf.booleanToTerraform(this._getUserData),
+      instance_id: cdktf.stringToTerraform(this._instanceId),
+      instance_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._instanceTags),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsInstanceFilterToTerraform)(this._filter),
     };
   }
 }

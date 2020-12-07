@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RdsClusterInstanceConfig extends TerraformMetaArguments {
+export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly autoMinorVersionUpgrade?: boolean;
   readonly availabilityZone?: string;
@@ -39,9 +38,19 @@ export interface RdsClusterInstanceTimeouts {
   readonly update?: string;
 }
 
+function rdsClusterInstanceTimeoutsToTerraform(struct?: RdsClusterInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class RdsClusterInstance extends TerraformResource {
+export class RdsClusterInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -495,29 +504,29 @@ export class RdsClusterInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      availability_zone: this._availabilityZone,
-      ca_cert_identifier: this._caCertIdentifier,
-      cluster_identifier: this._clusterIdentifier,
-      copy_tags_to_snapshot: this._copyTagsToSnapshot,
-      db_parameter_group_name: this._dbParameterGroupName,
-      db_subnet_group_name: this._dbSubnetGroupName,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      identifier: this._identifier,
-      identifier_prefix: this._identifierPrefix,
-      instance_class: this._instanceClass,
-      monitoring_interval: this._monitoringInterval,
-      monitoring_role_arn: this._monitoringRoleArn,
-      performance_insights_enabled: this._performanceInsightsEnabled,
-      performance_insights_kms_key_id: this._performanceInsightsKmsKeyId,
-      preferred_backup_window: this._preferredBackupWindow,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      promotion_tier: this._promotionTier,
-      publicly_accessible: this._publiclyAccessible,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
+      db_parameter_group_name: cdktf.stringToTerraform(this._dbParameterGroupName),
+      db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      identifier: cdktf.stringToTerraform(this._identifier),
+      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
+      instance_class: cdktf.stringToTerraform(this._instanceClass),
+      monitoring_interval: cdktf.numberToTerraform(this._monitoringInterval),
+      monitoring_role_arn: cdktf.stringToTerraform(this._monitoringRoleArn),
+      performance_insights_enabled: cdktf.booleanToTerraform(this._performanceInsightsEnabled),
+      performance_insights_kms_key_id: cdktf.stringToTerraform(this._performanceInsightsKmsKeyId),
+      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      promotion_tier: cdktf.numberToTerraform(this._promotionTier),
+      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: rdsClusterInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

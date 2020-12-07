@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2FleetConfig extends TerraformMetaArguments {
+export interface Ec2FleetConfig extends cdktf.TerraformMetaArguments {
   readonly excessCapacityTerminationPolicy?: string;
   readonly replaceUnhealthyInstances?: boolean;
   readonly tags?: { [key: string]: string };
@@ -30,6 +29,16 @@ export interface Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification {
   readonly launchTemplateName?: string;
   readonly version: string;
 }
+
+function ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationToTerraform(struct?: Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
+    launch_template_name: cdktf.stringToTerraform(struct!.launchTemplateName),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface Ec2FleetLaunchTemplateConfigOverride {
   readonly availabilityZone?: string;
   readonly instanceType?: string;
@@ -38,35 +47,96 @@ export interface Ec2FleetLaunchTemplateConfigOverride {
   readonly subnetId?: string;
   readonly weightedCapacity?: number;
 }
+
+function ec2FleetLaunchTemplateConfigOverrideToTerraform(struct?: Ec2FleetLaunchTemplateConfigOverride): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    max_price: cdktf.stringToTerraform(struct!.maxPrice),
+    priority: cdktf.numberToTerraform(struct!.priority),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    weighted_capacity: cdktf.numberToTerraform(struct!.weightedCapacity),
+  }
+}
+
 export interface Ec2FleetLaunchTemplateConfig {
   /** launch_template_specification block */
   readonly launchTemplateSpecification: Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification[];
   /** override block */
   readonly override?: Ec2FleetLaunchTemplateConfigOverride[];
 }
+
+function ec2FleetLaunchTemplateConfigToTerraform(struct?: Ec2FleetLaunchTemplateConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    launch_template_specification: cdktf.listMapper(ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationToTerraform)(struct!.launchTemplateSpecification),
+    override: cdktf.listMapper(ec2FleetLaunchTemplateConfigOverrideToTerraform)(struct!.override),
+  }
+}
+
 export interface Ec2FleetOnDemandOptions {
   readonly allocationStrategy?: string;
 }
+
+function ec2FleetOnDemandOptionsToTerraform(struct?: Ec2FleetOnDemandOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+  }
+}
+
 export interface Ec2FleetSpotOptions {
   readonly allocationStrategy?: string;
   readonly instanceInterruptionBehavior?: string;
   readonly instancePoolsToUseCount?: number;
 }
+
+function ec2FleetSpotOptionsToTerraform(struct?: Ec2FleetSpotOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+    instance_interruption_behavior: cdktf.stringToTerraform(struct!.instanceInterruptionBehavior),
+    instance_pools_to_use_count: cdktf.numberToTerraform(struct!.instancePoolsToUseCount),
+  }
+}
+
 export interface Ec2FleetTargetCapacitySpecification {
   readonly defaultTargetCapacityType: string;
   readonly onDemandTargetCapacity?: number;
   readonly spotTargetCapacity?: number;
   readonly totalTargetCapacity: number;
 }
+
+function ec2FleetTargetCapacitySpecificationToTerraform(struct?: Ec2FleetTargetCapacitySpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    default_target_capacity_type: cdktf.stringToTerraform(struct!.defaultTargetCapacityType),
+    on_demand_target_capacity: cdktf.numberToTerraform(struct!.onDemandTargetCapacity),
+    spot_target_capacity: cdktf.numberToTerraform(struct!.spotTargetCapacity),
+    total_target_capacity: cdktf.numberToTerraform(struct!.totalTargetCapacity),
+  }
+}
+
 export interface Ec2FleetTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function ec2FleetTimeoutsToTerraform(struct?: Ec2FleetTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class Ec2Fleet extends TerraformResource {
+export class Ec2Fleet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -281,17 +351,17 @@ export class Ec2Fleet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      excess_capacity_termination_policy: this._excessCapacityTerminationPolicy,
-      replace_unhealthy_instances: this._replaceUnhealthyInstances,
-      tags: this._tags,
-      terminate_instances: this._terminateInstances,
-      terminate_instances_with_expiration: this._terminateInstancesWithExpiration,
-      type: this._type,
-      launch_template_config: this._launchTemplateConfig,
-      on_demand_options: this._onDemandOptions,
-      spot_options: this._spotOptions,
-      target_capacity_specification: this._targetCapacitySpecification,
-      timeouts: this._timeouts,
+      excess_capacity_termination_policy: cdktf.stringToTerraform(this._excessCapacityTerminationPolicy),
+      replace_unhealthy_instances: cdktf.booleanToTerraform(this._replaceUnhealthyInstances),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      terminate_instances: cdktf.booleanToTerraform(this._terminateInstances),
+      terminate_instances_with_expiration: cdktf.booleanToTerraform(this._terminateInstancesWithExpiration),
+      type: cdktf.stringToTerraform(this._type),
+      launch_template_config: cdktf.listMapper(ec2FleetLaunchTemplateConfigToTerraform)(this._launchTemplateConfig),
+      on_demand_options: cdktf.listMapper(ec2FleetOnDemandOptionsToTerraform)(this._onDemandOptions),
+      spot_options: cdktf.listMapper(ec2FleetSpotOptionsToTerraform)(this._spotOptions),
+      target_capacity_specification: cdktf.listMapper(ec2FleetTargetCapacitySpecificationToTerraform)(this._targetCapacitySpecification),
+      timeouts: ec2FleetTimeoutsToTerraform(this._timeouts),
     };
   }
 }

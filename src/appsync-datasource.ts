@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppsyncDatasourceConfig extends TerraformMetaArguments {
+export interface AppsyncDatasourceConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly description?: string;
   readonly name: string;
@@ -27,20 +26,55 @@ export interface AppsyncDatasourceDynamodbConfig {
   readonly tableName: string;
   readonly useCallerCredentials?: boolean;
 }
+
+function appsyncDatasourceDynamodbConfigToTerraform(struct?: AppsyncDatasourceDynamodbConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    region: cdktf.stringToTerraform(struct!.region),
+    table_name: cdktf.stringToTerraform(struct!.tableName),
+    use_caller_credentials: cdktf.booleanToTerraform(struct!.useCallerCredentials),
+  }
+}
+
 export interface AppsyncDatasourceElasticsearchConfig {
   readonly endpoint: string;
   readonly region?: string;
 }
+
+function appsyncDatasourceElasticsearchConfigToTerraform(struct?: AppsyncDatasourceElasticsearchConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+    region: cdktf.stringToTerraform(struct!.region),
+  }
+}
+
 export interface AppsyncDatasourceHttpConfig {
   readonly endpoint: string;
 }
+
+function appsyncDatasourceHttpConfigToTerraform(struct?: AppsyncDatasourceHttpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+  }
+}
+
 export interface AppsyncDatasourceLambdaConfig {
   readonly functionArn: string;
 }
 
+function appsyncDatasourceLambdaConfigToTerraform(struct?: AppsyncDatasourceLambdaConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    function_arn: cdktf.stringToTerraform(struct!.functionArn),
+  }
+}
+
+
 // Resource
 
-export class AppsyncDatasource extends TerraformResource {
+export class AppsyncDatasource extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -223,15 +257,15 @@ export class AppsyncDatasource extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      description: this._description,
-      name: this._name,
-      service_role_arn: this._serviceRoleArn,
-      type: this._type,
-      dynamodb_config: this._dynamodbConfig,
-      elasticsearch_config: this._elasticsearchConfig,
-      http_config: this._httpConfig,
-      lambda_config: this._lambdaConfig,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
+      type: cdktf.stringToTerraform(this._type),
+      dynamodb_config: cdktf.listMapper(appsyncDatasourceDynamodbConfigToTerraform)(this._dynamodbConfig),
+      elasticsearch_config: cdktf.listMapper(appsyncDatasourceElasticsearchConfigToTerraform)(this._elasticsearchConfig),
+      http_config: cdktf.listMapper(appsyncDatasourceHttpConfigToTerraform)(this._httpConfig),
+      lambda_config: cdktf.listMapper(appsyncDatasourceLambdaConfigToTerraform)(this._lambdaConfig),
     };
   }
 }

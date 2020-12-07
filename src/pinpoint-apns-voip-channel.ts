@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointApnsVoipChannelConfig extends TerraformMetaArguments {
+export interface PinpointApnsVoipChannelConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
   readonly bundleId?: string;
   readonly certificate?: string;
@@ -21,7 +20,7 @@ export interface PinpointApnsVoipChannelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PinpointApnsVoipChannel extends TerraformResource {
+export class PinpointApnsVoipChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -205,15 +204,15 @@ export class PinpointApnsVoipChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: this._applicationId,
-      bundle_id: this._bundleId,
-      certificate: this._certificate,
-      default_authentication_method: this._defaultAuthenticationMethod,
-      enabled: this._enabled,
-      private_key: this._privateKey,
-      team_id: this._teamId,
-      token_key: this._tokenKey,
-      token_key_id: this._tokenKeyId,
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      bundle_id: cdktf.stringToTerraform(this._bundleId),
+      certificate: cdktf.stringToTerraform(this._certificate),
+      default_authentication_method: cdktf.stringToTerraform(this._defaultAuthenticationMethod),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      private_key: cdktf.stringToTerraform(this._privateKey),
+      team_id: cdktf.stringToTerraform(this._teamId),
+      token_key: cdktf.stringToTerraform(this._tokenKey),
+      token_key_id: cdktf.stringToTerraform(this._tokenKeyId),
     };
   }
 }

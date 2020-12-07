@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EmrClusterConfig extends TerraformMetaArguments {
+export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
   readonly additionalInfo?: string;
   readonly applications?: string[];
   readonly autoscalingRole?: string;
@@ -49,22 +48,64 @@ export interface EmrClusterStepHadoopJarStep {
   readonly mainClass?: string;
   readonly properties?: { [key: string]: string };
 }
+
+function emrClusterStepHadoopJarStepToTerraform(struct?: EmrClusterStepHadoopJarStep): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
+    jar: cdktf.stringToTerraform(struct!.jar),
+    main_class: cdktf.stringToTerraform(struct!.mainClass),
+    properties: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.properties),
+  }
+}
+
 export interface EmrClusterStep {
   readonly actionOnFailure?: string;
   readonly hadoopJarStep?: EmrClusterStepHadoopJarStep[];
   readonly name?: string;
 }
+
+function emrClusterStepToTerraform(struct?: EmrClusterStep): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action_on_failure: cdktf.stringToTerraform(struct!.actionOnFailure),
+    hadoop_jar_step: cdktf.listMapper(emrClusterStepHadoopJarStepToTerraform)(struct!.hadoopJarStep),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
 export interface EmrClusterBootstrapAction {
   readonly args?: string[];
   readonly name: string;
   readonly path: string;
 }
+
+function emrClusterBootstrapActionToTerraform(struct?: EmrClusterBootstrapAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
+    name: cdktf.stringToTerraform(struct!.name),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
 export interface EmrClusterCoreInstanceGroupEbsConfig {
   readonly iops?: number;
   readonly size: number;
   readonly type: string;
   readonly volumesPerInstance?: number;
 }
+
+function emrClusterCoreInstanceGroupEbsConfigToTerraform(struct?: EmrClusterCoreInstanceGroupEbsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    iops: cdktf.numberToTerraform(struct!.iops),
+    size: cdktf.numberToTerraform(struct!.size),
+    type: cdktf.stringToTerraform(struct!.type),
+    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
+  }
+}
+
 export interface EmrClusterCoreInstanceGroup {
   readonly autoscalingPolicy?: string;
   readonly bidPrice?: string;
@@ -74,6 +115,19 @@ export interface EmrClusterCoreInstanceGroup {
   /** ebs_config block */
   readonly ebsConfig?: EmrClusterCoreInstanceGroupEbsConfig[];
 }
+
+function emrClusterCoreInstanceGroupToTerraform(struct?: EmrClusterCoreInstanceGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    autoscaling_policy: cdktf.stringToTerraform(struct!.autoscalingPolicy),
+    bid_price: cdktf.stringToTerraform(struct!.bidPrice),
+    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    name: cdktf.stringToTerraform(struct!.name),
+    ebs_config: cdktf.listMapper(emrClusterCoreInstanceGroupEbsConfigToTerraform)(struct!.ebsConfig),
+  }
+}
+
 export interface EmrClusterEc2Attributes {
   readonly additionalMasterSecurityGroups?: string;
   readonly additionalSlaveSecurityGroups?: string;
@@ -84,12 +138,38 @@ export interface EmrClusterEc2Attributes {
   readonly serviceAccessSecurityGroup?: string;
   readonly subnetId?: string;
 }
+
+function emrClusterEc2AttributesToTerraform(struct?: EmrClusterEc2Attributes): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    additional_master_security_groups: cdktf.stringToTerraform(struct!.additionalMasterSecurityGroups),
+    additional_slave_security_groups: cdktf.stringToTerraform(struct!.additionalSlaveSecurityGroups),
+    emr_managed_master_security_group: cdktf.stringToTerraform(struct!.emrManagedMasterSecurityGroup),
+    emr_managed_slave_security_group: cdktf.stringToTerraform(struct!.emrManagedSlaveSecurityGroup),
+    instance_profile: cdktf.stringToTerraform(struct!.instanceProfile),
+    key_name: cdktf.stringToTerraform(struct!.keyName),
+    service_access_security_group: cdktf.stringToTerraform(struct!.serviceAccessSecurityGroup),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+  }
+}
+
 export interface EmrClusterInstanceGroupEbsConfig {
   readonly iops?: number;
   readonly size: number;
   readonly type: string;
   readonly volumesPerInstance?: number;
 }
+
+function emrClusterInstanceGroupEbsConfigToTerraform(struct?: EmrClusterInstanceGroupEbsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    iops: cdktf.numberToTerraform(struct!.iops),
+    size: cdktf.numberToTerraform(struct!.size),
+    type: cdktf.stringToTerraform(struct!.type),
+    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
+  }
+}
+
 export interface EmrClusterInstanceGroup {
   readonly autoscalingPolicy?: string;
   readonly bidPrice?: string;
@@ -100,6 +180,20 @@ export interface EmrClusterInstanceGroup {
   /** ebs_config block */
   readonly ebsConfig?: EmrClusterInstanceGroupEbsConfig[];
 }
+
+function emrClusterInstanceGroupToTerraform(struct?: EmrClusterInstanceGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    autoscaling_policy: cdktf.stringToTerraform(struct!.autoscalingPolicy),
+    bid_price: cdktf.stringToTerraform(struct!.bidPrice),
+    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
+    instance_role: cdktf.stringToTerraform(struct!.instanceRole),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    name: cdktf.stringToTerraform(struct!.name),
+    ebs_config: cdktf.listMapper(emrClusterInstanceGroupEbsConfigToTerraform)(struct!.ebsConfig),
+  }
+}
+
 export interface EmrClusterKerberosAttributes {
   readonly adDomainJoinPassword?: string;
   readonly adDomainJoinUser?: string;
@@ -107,12 +201,35 @@ export interface EmrClusterKerberosAttributes {
   readonly kdcAdminPassword: string;
   readonly realm: string;
 }
+
+function emrClusterKerberosAttributesToTerraform(struct?: EmrClusterKerberosAttributes): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ad_domain_join_password: cdktf.stringToTerraform(struct!.adDomainJoinPassword),
+    ad_domain_join_user: cdktf.stringToTerraform(struct!.adDomainJoinUser),
+    cross_realm_trust_principal_password: cdktf.stringToTerraform(struct!.crossRealmTrustPrincipalPassword),
+    kdc_admin_password: cdktf.stringToTerraform(struct!.kdcAdminPassword),
+    realm: cdktf.stringToTerraform(struct!.realm),
+  }
+}
+
 export interface EmrClusterMasterInstanceGroupEbsConfig {
   readonly iops?: number;
   readonly size: number;
   readonly type: string;
   readonly volumesPerInstance?: number;
 }
+
+function emrClusterMasterInstanceGroupEbsConfigToTerraform(struct?: EmrClusterMasterInstanceGroupEbsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    iops: cdktf.numberToTerraform(struct!.iops),
+    size: cdktf.numberToTerraform(struct!.size),
+    type: cdktf.stringToTerraform(struct!.type),
+    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
+  }
+}
+
 export interface EmrClusterMasterInstanceGroup {
   readonly bidPrice?: string;
   readonly instanceCount?: number;
@@ -122,9 +239,21 @@ export interface EmrClusterMasterInstanceGroup {
   readonly ebsConfig?: EmrClusterMasterInstanceGroupEbsConfig[];
 }
 
+function emrClusterMasterInstanceGroupToTerraform(struct?: EmrClusterMasterInstanceGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bid_price: cdktf.stringToTerraform(struct!.bidPrice),
+    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    name: cdktf.stringToTerraform(struct!.name),
+    ebs_config: cdktf.listMapper(emrClusterMasterInstanceGroupEbsConfigToTerraform)(struct!.ebsConfig),
+  }
+}
+
+
 // Resource
 
-export class EmrCluster extends TerraformResource {
+export class EmrCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -640,34 +769,34 @@ export class EmrCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_info: this._additionalInfo,
-      applications: this._applications,
-      autoscaling_role: this._autoscalingRole,
-      configurations: this._configurations,
-      configurations_json: this._configurationsJson,
-      core_instance_count: this._coreInstanceCount,
-      core_instance_type: this._coreInstanceType,
-      custom_ami_id: this._customAmiId,
-      ebs_root_volume_size: this._ebsRootVolumeSize,
-      keep_job_flow_alive_when_no_steps: this._keepJobFlowAliveWhenNoSteps,
-      log_uri: this._logUri,
-      master_instance_type: this._masterInstanceType,
-      name: this._name,
-      release_label: this._releaseLabel,
-      scale_down_behavior: this._scaleDownBehavior,
-      security_configuration: this._securityConfiguration,
-      service_role: this._serviceRole,
-      step: this._step,
-      step_concurrency_level: this._stepConcurrencyLevel,
-      tags: this._tags,
-      termination_protection: this._terminationProtection,
-      visible_to_all_users: this._visibleToAllUsers,
-      bootstrap_action: this._bootstrapAction,
-      core_instance_group: this._coreInstanceGroup,
-      ec2_attributes: this._ec2Attributes,
-      instance_group: this._instanceGroup,
-      kerberos_attributes: this._kerberosAttributes,
-      master_instance_group: this._masterInstanceGroup,
+      additional_info: cdktf.stringToTerraform(this._additionalInfo),
+      applications: cdktf.listMapper(cdktf.stringToTerraform)(this._applications),
+      autoscaling_role: cdktf.stringToTerraform(this._autoscalingRole),
+      configurations: cdktf.stringToTerraform(this._configurations),
+      configurations_json: cdktf.stringToTerraform(this._configurationsJson),
+      core_instance_count: cdktf.numberToTerraform(this._coreInstanceCount),
+      core_instance_type: cdktf.stringToTerraform(this._coreInstanceType),
+      custom_ami_id: cdktf.stringToTerraform(this._customAmiId),
+      ebs_root_volume_size: cdktf.numberToTerraform(this._ebsRootVolumeSize),
+      keep_job_flow_alive_when_no_steps: cdktf.booleanToTerraform(this._keepJobFlowAliveWhenNoSteps),
+      log_uri: cdktf.stringToTerraform(this._logUri),
+      master_instance_type: cdktf.stringToTerraform(this._masterInstanceType),
+      name: cdktf.stringToTerraform(this._name),
+      release_label: cdktf.stringToTerraform(this._releaseLabel),
+      scale_down_behavior: cdktf.stringToTerraform(this._scaleDownBehavior),
+      security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
+      service_role: cdktf.stringToTerraform(this._serviceRole),
+      step: cdktf.listMapper(emrClusterStepToTerraform)(this._step),
+      step_concurrency_level: cdktf.numberToTerraform(this._stepConcurrencyLevel),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      termination_protection: cdktf.booleanToTerraform(this._terminationProtection),
+      visible_to_all_users: cdktf.booleanToTerraform(this._visibleToAllUsers),
+      bootstrap_action: cdktf.listMapper(emrClusterBootstrapActionToTerraform)(this._bootstrapAction),
+      core_instance_group: cdktf.listMapper(emrClusterCoreInstanceGroupToTerraform)(this._coreInstanceGroup),
+      ec2_attributes: cdktf.listMapper(emrClusterEc2AttributesToTerraform)(this._ec2Attributes),
+      instance_group: cdktf.listMapper(emrClusterInstanceGroupToTerraform)(this._instanceGroup),
+      kerberos_attributes: cdktf.listMapper(emrClusterKerberosAttributesToTerraform)(this._kerberosAttributes),
+      master_instance_group: cdktf.listMapper(emrClusterMasterInstanceGroupToTerraform)(this._masterInstanceGroup),
     };
   }
 }

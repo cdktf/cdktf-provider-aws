@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointAdmChannelConfig extends TerraformMetaArguments {
+export interface PinpointAdmChannelConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
   readonly clientId: string;
   readonly clientSecret: string;
@@ -16,7 +15,7 @@ export interface PinpointAdmChannelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PinpointAdmChannel extends TerraformResource {
+export class PinpointAdmChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -109,10 +108,10 @@ export class PinpointAdmChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: this._applicationId,
-      client_id: this._clientId,
-      client_secret: this._clientSecret,
-      enabled: this._enabled,
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      client_id: cdktf.stringToTerraform(this._clientId),
+      client_secret: cdktf.stringToTerraform(this._clientSecret),
+      enabled: cdktf.booleanToTerraform(this._enabled),
     };
   }
 }

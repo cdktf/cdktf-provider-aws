@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayUsagePlanConfig extends TerraformMetaArguments {
+export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly productCode?: string;
@@ -23,19 +22,47 @@ export interface ApiGatewayUsagePlanApiStages {
   readonly apiId: string;
   readonly stage: string;
 }
+
+function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsagePlanApiStages): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    api_id: cdktf.stringToTerraform(struct!.apiId),
+    stage: cdktf.stringToTerraform(struct!.stage),
+  }
+}
+
 export interface ApiGatewayUsagePlanQuotaSettings {
   readonly limit: number;
   readonly offset?: number;
   readonly period: string;
 }
+
+function apiGatewayUsagePlanQuotaSettingsToTerraform(struct?: ApiGatewayUsagePlanQuotaSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    limit: cdktf.numberToTerraform(struct!.limit),
+    offset: cdktf.numberToTerraform(struct!.offset),
+    period: cdktf.stringToTerraform(struct!.period),
+  }
+}
+
 export interface ApiGatewayUsagePlanThrottleSettings {
   readonly burstLimit?: number;
   readonly rateLimit?: number;
 }
 
+function apiGatewayUsagePlanThrottleSettingsToTerraform(struct?: ApiGatewayUsagePlanThrottleSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    burst_limit: cdktf.numberToTerraform(struct!.burstLimit),
+    rate_limit: cdktf.numberToTerraform(struct!.rateLimit),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayUsagePlan extends TerraformResource {
+export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -190,13 +217,13 @@ export class ApiGatewayUsagePlan extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      product_code: this._productCode,
-      tags: this._tags,
-      api_stages: this._apiStages,
-      quota_settings: this._quotaSettings,
-      throttle_settings: this._throttleSettings,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      product_code: cdktf.stringToTerraform(this._productCode),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform)(this._apiStages),
+      quota_settings: cdktf.listMapper(apiGatewayUsagePlanQuotaSettingsToTerraform)(this._quotaSettings),
+      throttle_settings: cdktf.listMapper(apiGatewayUsagePlanThrottleSettingsToTerraform)(this._throttleSettings),
     };
   }
 }

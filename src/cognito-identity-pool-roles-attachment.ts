@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CognitoIdentityPoolRolesAttachmentConfig extends TerraformMetaArguments {
+export interface CognitoIdentityPoolRolesAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly identityPoolId: string;
   readonly roles: { [key: string]: string };
   /** role_mapping block */
@@ -19,6 +18,17 @@ export interface CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule {
   readonly roleArn: string;
   readonly value: string;
 }
+
+function cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    claim: cdktf.stringToTerraform(struct!.claim),
+    match_type: cdktf.stringToTerraform(struct!.matchType),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface CognitoIdentityPoolRolesAttachmentRoleMapping {
   readonly ambiguousRoleResolution?: string;
   readonly identityProvider: string;
@@ -27,9 +37,20 @@ export interface CognitoIdentityPoolRolesAttachmentRoleMapping {
   readonly mappingRule?: CognitoIdentityPoolRolesAttachmentRoleMappingMappingRule[];
 }
 
+function cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform(struct?: CognitoIdentityPoolRolesAttachmentRoleMapping): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ambiguous_role_resolution: cdktf.stringToTerraform(struct!.ambiguousRoleResolution),
+    identity_provider: cdktf.stringToTerraform(struct!.identityProvider),
+    type: cdktf.stringToTerraform(struct!.type),
+    mapping_rule: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleToTerraform)(struct!.mappingRule),
+  }
+}
+
+
 // Resource
 
-export class CognitoIdentityPoolRolesAttachment extends TerraformResource {
+export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -108,9 +129,9 @@ export class CognitoIdentityPoolRolesAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identity_pool_id: this._identityPoolId,
-      roles: this._roles,
-      role_mapping: this._roleMapping,
+      identity_pool_id: cdktf.stringToTerraform(this._identityPoolId),
+      roles: cdktf.hashMapper(cdktf.anyToTerraform)(this._roles),
+      role_mapping: cdktf.listMapper(cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform)(this._roleMapping),
     };
   }
 }

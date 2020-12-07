@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DynamodbTableItemConfig extends TerraformMetaArguments {
+export interface DynamodbTableItemConfig extends cdktf.TerraformMetaArguments {
   readonly hashKey: string;
   readonly item: string;
   readonly rangeKey?: string;
@@ -16,7 +15,7 @@ export interface DynamodbTableItemConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DynamodbTableItem extends TerraformResource {
+export class DynamodbTableItem extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -109,10 +108,10 @@ export class DynamodbTableItem extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hash_key: this._hashKey,
-      item: this._item,
-      range_key: this._rangeKey,
-      table_name: this._tableName,
+      hash_key: cdktf.stringToTerraform(this._hashKey),
+      item: cdktf.stringToTerraform(this._item),
+      range_key: cdktf.stringToTerraform(this._rangeKey),
+      table_name: cdktf.stringToTerraform(this._tableName),
     };
   }
 }

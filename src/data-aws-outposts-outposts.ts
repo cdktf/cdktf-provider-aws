@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsOutpostsConfig extends TerraformMetaArguments {
+export interface DataAwsOutpostsOutpostsConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly availabilityZoneId?: string;
   readonly siteId?: string;
@@ -15,7 +14,7 @@ export interface DataAwsOutpostsOutpostsConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsOutpostsOutposts extends TerraformDataSource {
+export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -110,9 +109,9 @@ export class DataAwsOutpostsOutposts extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      availability_zone_id: this._availabilityZoneId,
-      site_id: this._siteId,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
+      site_id: cdktf.stringToTerraform(this._siteId),
     };
   }
 }

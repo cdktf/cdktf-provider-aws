@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointAppConfig extends TerraformMetaArguments {
+export interface PinpointAppConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly tags?: { [key: string]: string };
@@ -23,20 +22,50 @@ export interface PinpointAppCampaignHook {
   readonly mode?: string;
   readonly webUrl?: string;
 }
+
+function pinpointAppCampaignHookToTerraform(struct?: PinpointAppCampaignHook): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    lambda_function_name: cdktf.stringToTerraform(struct!.lambdaFunctionName),
+    mode: cdktf.stringToTerraform(struct!.mode),
+    web_url: cdktf.stringToTerraform(struct!.webUrl),
+  }
+}
+
 export interface PinpointAppLimits {
   readonly daily?: number;
   readonly maximumDuration?: number;
   readonly messagesPerSecond?: number;
   readonly total?: number;
 }
+
+function pinpointAppLimitsToTerraform(struct?: PinpointAppLimits): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    daily: cdktf.numberToTerraform(struct!.daily),
+    maximum_duration: cdktf.numberToTerraform(struct!.maximumDuration),
+    messages_per_second: cdktf.numberToTerraform(struct!.messagesPerSecond),
+    total: cdktf.numberToTerraform(struct!.total),
+  }
+}
+
 export interface PinpointAppQuietTime {
   readonly end?: string;
   readonly start?: string;
 }
 
+function pinpointAppQuietTimeToTerraform(struct?: PinpointAppQuietTime): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    end: cdktf.stringToTerraform(struct!.end),
+    start: cdktf.stringToTerraform(struct!.start),
+  }
+}
+
+
 // Resource
 
-export class PinpointApp extends TerraformResource {
+export class PinpointApp extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -182,12 +211,12 @@ export class PinpointApp extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      name_prefix: this._namePrefix,
-      tags: this._tags,
-      campaign_hook: this._campaignHook,
-      limits: this._limits,
-      quiet_time: this._quietTime,
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      campaign_hook: cdktf.listMapper(pinpointAppCampaignHookToTerraform)(this._campaignHook),
+      limits: cdktf.listMapper(pinpointAppLimitsToTerraform)(this._limits),
+      quiet_time: cdktf.listMapper(pinpointAppQuietTimeToTerraform)(this._quietTime),
     };
   }
 }

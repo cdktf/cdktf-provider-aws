@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsPrefixListConfig extends TerraformMetaArguments {
+export interface DataAwsPrefixListConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly prefixListId?: string;
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsPrefixListFilter {
   readonly values: string[];
 }
 
+function dataAwsPrefixListFilterToTerraform(struct?: DataAwsPrefixListFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsPrefixList extends TerraformDataSource {
+export class DataAwsPrefixList extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -110,9 +118,9 @@ export class DataAwsPrefixList extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      prefix_list_id: this._prefixListId,
-      filter: this._filter,
+      name: cdktf.stringToTerraform(this._name),
+      prefix_list_id: cdktf.stringToTerraform(this._prefixListId),
+      filter: cdktf.listMapper(dataAwsPrefixListFilterToTerraform)(this._filter),
     };
   }
 }

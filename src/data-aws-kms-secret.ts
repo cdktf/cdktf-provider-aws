@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsKmsSecretConfig extends TerraformMetaArguments {
+export interface DataAwsKmsSecretConfig extends cdktf.TerraformMetaArguments {
   /** secret block */
   readonly secret: DataAwsKmsSecretSecret[];
 }
@@ -18,9 +17,20 @@ export interface DataAwsKmsSecretSecret {
   readonly payload: string;
 }
 
+function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecret): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    context: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.context),
+    grant_tokens: cdktf.listMapper(cdktf.stringToTerraform)(struct!.grantTokens),
+    name: cdktf.stringToTerraform(struct!.name),
+    payload: cdktf.stringToTerraform(struct!.payload),
+  }
+}
+
+
 // Resource
 
-export class DataAwsKmsSecret extends TerraformDataSource {
+export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -68,7 +78,7 @@ export class DataAwsKmsSecret extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      secret: this._secret,
+      secret: cdktf.listMapper(dataAwsKmsSecretSecretToTerraform)(this._secret),
     };
   }
 }

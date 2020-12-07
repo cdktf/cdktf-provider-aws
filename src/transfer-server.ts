@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TransferServerConfig extends TerraformMetaArguments {
+export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   readonly endpointType?: string;
   readonly forceDestroy?: boolean;
   readonly hostKey?: string;
@@ -23,9 +22,17 @@ export interface TransferServerEndpointDetails {
   readonly vpcEndpointId: string;
 }
 
+function transferServerEndpointDetailsToTerraform(struct?: TransferServerEndpointDetails): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    vpc_endpoint_id: cdktf.stringToTerraform(struct!.vpcEndpointId),
+  }
+}
+
+
 // Resource
 
-export class TransferServer extends TerraformResource {
+export class TransferServer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -227,15 +234,15 @@ export class TransferServer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_type: this._endpointType,
-      force_destroy: this._forceDestroy,
-      host_key: this._hostKey,
-      identity_provider_type: this._identityProviderType,
-      invocation_role: this._invocationRole,
-      logging_role: this._loggingRole,
-      tags: this._tags,
-      url: this._url,
-      endpoint_details: this._endpointDetails,
+      endpoint_type: cdktf.stringToTerraform(this._endpointType),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      host_key: cdktf.stringToTerraform(this._hostKey),
+      identity_provider_type: cdktf.stringToTerraform(this._identityProviderType),
+      invocation_role: cdktf.stringToTerraform(this._invocationRole),
+      logging_role: cdktf.stringToTerraform(this._loggingRole),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      url: cdktf.stringToTerraform(this._url),
+      endpoint_details: cdktf.listMapper(transferServerEndpointDetailsToTerraform)(this._endpointDetails),
     };
   }
 }

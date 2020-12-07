@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EbsSnapshotConfig extends TerraformMetaArguments {
+export interface EbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly tags?: { [key: string]: string };
   readonly volumeId: string;
@@ -19,9 +18,18 @@ export interface EbsSnapshotTimeouts {
   readonly delete?: string;
 }
 
+function ebsSnapshotTimeoutsToTerraform(struct?: EbsSnapshotTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class EbsSnapshot extends TerraformResource {
+export class EbsSnapshot extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -155,10 +163,10 @@ export class EbsSnapshot extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      tags: this._tags,
-      volume_id: this._volumeId,
-      timeouts: this._timeouts,
+      description: cdktf.stringToTerraform(this._description),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      volume_id: cdktf.stringToTerraform(this._volumeId),
+      timeouts: ebsSnapshotTimeoutsToTerraform(this._timeouts),
     };
   }
 }

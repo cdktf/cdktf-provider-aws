@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultVpcDhcpOptionsConfig extends TerraformMetaArguments {
+export interface DefaultVpcDhcpOptionsConfig extends cdktf.TerraformMetaArguments {
   readonly netbiosNameServers?: string[];
   readonly netbiosNodeType?: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface DefaultVpcDhcpOptionsConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DefaultVpcDhcpOptions extends TerraformResource {
+export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -125,9 +124,9 @@ export class DefaultVpcDhcpOptions extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      netbios_name_servers: this._netbiosNameServers,
-      netbios_node_type: this._netbiosNodeType,
-      tags: this._tags,
+      netbios_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._netbiosNameServers),
+      netbios_node_type: cdktf.stringToTerraform(this._netbiosNodeType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

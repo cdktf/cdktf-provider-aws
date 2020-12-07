@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RdsClusterConfig extends TerraformMetaArguments {
+export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly availabilityZones?: string[];
   readonly backtrackWindow?: number;
@@ -56,6 +55,18 @@ export interface RdsClusterS3Import {
   readonly sourceEngine: string;
   readonly sourceEngineVersion: string;
 }
+
+function rdsClusterS3ImportToTerraform(struct?: RdsClusterS3Import): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
+    ingestion_role: cdktf.stringToTerraform(struct!.ingestionRole),
+    source_engine: cdktf.stringToTerraform(struct!.sourceEngine),
+    source_engine_version: cdktf.stringToTerraform(struct!.sourceEngineVersion),
+  }
+}
+
 export interface RdsClusterScalingConfiguration {
   readonly autoPause?: boolean;
   readonly maxCapacity?: number;
@@ -63,15 +74,37 @@ export interface RdsClusterScalingConfiguration {
   readonly secondsUntilAutoPause?: number;
   readonly timeoutAction?: string;
 }
+
+function rdsClusterScalingConfigurationToTerraform(struct?: RdsClusterScalingConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    auto_pause: cdktf.booleanToTerraform(struct!.autoPause),
+    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
+    min_capacity: cdktf.numberToTerraform(struct!.minCapacity),
+    seconds_until_auto_pause: cdktf.numberToTerraform(struct!.secondsUntilAutoPause),
+    timeout_action: cdktf.stringToTerraform(struct!.timeoutAction),
+  }
+}
+
 export interface RdsClusterTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function rdsClusterTimeoutsToTerraform(struct?: RdsClusterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class RdsCluster extends TerraformResource {
+export class RdsCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -759,43 +792,43 @@ export class RdsCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      availability_zones: this._availabilityZones,
-      backtrack_window: this._backtrackWindow,
-      backup_retention_period: this._backupRetentionPeriod,
-      cluster_identifier: this._clusterIdentifier,
-      cluster_identifier_prefix: this._clusterIdentifierPrefix,
-      cluster_members: this._clusterMembers,
-      copy_tags_to_snapshot: this._copyTagsToSnapshot,
-      database_name: this._databaseName,
-      db_cluster_parameter_group_name: this._dbClusterParameterGroupName,
-      db_subnet_group_name: this._dbSubnetGroupName,
-      deletion_protection: this._deletionProtection,
-      enable_http_endpoint: this._enableHttpEndpoint,
-      enabled_cloudwatch_logs_exports: this._enabledCloudwatchLogsExports,
-      engine: this._engine,
-      engine_mode: this._engineMode,
-      engine_version: this._engineVersion,
-      final_snapshot_identifier: this._finalSnapshotIdentifier,
-      global_cluster_identifier: this._globalClusterIdentifier,
-      iam_database_authentication_enabled: this._iamDatabaseAuthenticationEnabled,
-      iam_roles: this._iamRoles,
-      kms_key_id: this._kmsKeyId,
-      master_password: this._masterPassword,
-      master_username: this._masterUsername,
-      port: this._port,
-      preferred_backup_window: this._preferredBackupWindow,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      replication_source_identifier: this._replicationSourceIdentifier,
-      skip_final_snapshot: this._skipFinalSnapshot,
-      snapshot_identifier: this._snapshotIdentifier,
-      source_region: this._sourceRegion,
-      storage_encrypted: this._storageEncrypted,
-      tags: this._tags,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      s3_import: this._s3Import,
-      scaling_configuration: this._scalingConfiguration,
-      timeouts: this._timeouts,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      backtrack_window: cdktf.numberToTerraform(this._backtrackWindow),
+      backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      cluster_identifier_prefix: cdktf.stringToTerraform(this._clusterIdentifierPrefix),
+      cluster_members: cdktf.listMapper(cdktf.stringToTerraform)(this._clusterMembers),
+      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
+      database_name: cdktf.stringToTerraform(this._databaseName),
+      db_cluster_parameter_group_name: cdktf.stringToTerraform(this._dbClusterParameterGroupName),
+      db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
+      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      enable_http_endpoint: cdktf.booleanToTerraform(this._enableHttpEndpoint),
+      enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledCloudwatchLogsExports),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_mode: cdktf.stringToTerraform(this._engineMode),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
+      global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
+      iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
+      iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      master_password: cdktf.stringToTerraform(this._masterPassword),
+      master_username: cdktf.stringToTerraform(this._masterUsername),
+      port: cdktf.numberToTerraform(this._port),
+      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      replication_source_identifier: cdktf.stringToTerraform(this._replicationSourceIdentifier),
+      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
+      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
+      source_region: cdktf.stringToTerraform(this._sourceRegion),
+      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      s3_import: cdktf.listMapper(rdsClusterS3ImportToTerraform)(this._s3Import),
+      scaling_configuration: cdktf.listMapper(rdsClusterScalingConfigurationToTerraform)(this._scalingConfiguration),
+      timeouts: rdsClusterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

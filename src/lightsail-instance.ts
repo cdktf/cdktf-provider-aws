@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LightsailInstanceConfig extends TerraformMetaArguments {
+export interface LightsailInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone: string;
   readonly blueprintId: string;
   readonly bundleId: string;
@@ -19,7 +18,7 @@ export interface LightsailInstanceConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class LightsailInstance extends TerraformResource {
+export class LightsailInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -205,13 +204,13 @@ export class LightsailInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      blueprint_id: this._blueprintId,
-      bundle_id: this._bundleId,
-      key_pair_name: this._keyPairName,
-      name: this._name,
-      tags: this._tags,
-      user_data: this._userData,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      blueprint_id: cdktf.stringToTerraform(this._blueprintId),
+      bundle_id: cdktf.stringToTerraform(this._bundleId),
+      key_pair_name: cdktf.stringToTerraform(this._keyPairName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      user_data: cdktf.stringToTerraform(this._userData),
     };
   }
 }

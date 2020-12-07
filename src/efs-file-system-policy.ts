@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EfsFileSystemPolicyConfig extends TerraformMetaArguments {
+export interface EfsFileSystemPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly fileSystemId: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class EfsFileSystemPolicy extends TerraformResource {
+export class EfsFileSystemPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class EfsFileSystemPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      file_system_id: this._fileSystemId,
-      policy: this._policy,
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

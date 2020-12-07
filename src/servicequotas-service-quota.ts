@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ServicequotasServiceQuotaConfig extends TerraformMetaArguments {
+export interface ServicequotasServiceQuotaConfig extends cdktf.TerraformMetaArguments {
   readonly quotaCode: string;
   readonly serviceCode: string;
   readonly value: number;
@@ -15,7 +14,7 @@ export interface ServicequotasServiceQuotaConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class ServicequotasServiceQuota extends TerraformResource {
+export class ServicequotasServiceQuota extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -126,9 +125,9 @@ export class ServicequotasServiceQuota extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      quota_code: this._quotaCode,
-      service_code: this._serviceCode,
-      value: this._value,
+      quota_code: cdktf.stringToTerraform(this._quotaCode),
+      service_code: cdktf.stringToTerraform(this._serviceCode),
+      value: cdktf.numberToTerraform(this._value),
     };
   }
 }

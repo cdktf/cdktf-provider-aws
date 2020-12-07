@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAlbConfig extends TerraformMetaArguments {
+export interface DataAwsAlbConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsAlbAccessLogs extends ComplexComputedList {
+export class DataAwsAlbAccessLogs extends cdktf.ComplexComputedList {
 
   // bucket - computed: true, optional: false, required: false
   public get bucket() {
@@ -29,7 +27,7 @@ export class DataAwsAlbAccessLogs extends ComplexComputedList {
     return this.getStringAttribute('prefix');
   }
 }
-export class DataAwsAlbSubnetMapping extends ComplexComputedList {
+export class DataAwsAlbSubnetMapping extends cdktf.ComplexComputedList {
 
   // allocation_id - computed: true, optional: false, required: false
   public get allocationId() {
@@ -44,7 +42,7 @@ export class DataAwsAlbSubnetMapping extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsAlb extends TerraformDataSource {
+export class DataAwsAlb extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -187,8 +185,8 @@ export class DataAwsAlb extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

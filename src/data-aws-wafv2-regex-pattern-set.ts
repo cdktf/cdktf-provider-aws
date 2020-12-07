@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsWafv2RegexPatternSetConfig extends TerraformMetaArguments {
+export interface DataAwsWafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly scope: string;
 }
-export class DataAwsWafv2RegexPatternSetRegularExpression extends ComplexComputedList {
+export class DataAwsWafv2RegexPatternSetRegularExpression extends cdktf.ComplexComputedList {
 
   // regex_string - computed: true, optional: false, required: false
   public get regexString() {
@@ -22,7 +20,7 @@ export class DataAwsWafv2RegexPatternSetRegularExpression extends ComplexCompute
 
 // Resource
 
-export class DataAwsWafv2RegexPatternSet extends TerraformDataSource {
+export class DataAwsWafv2RegexPatternSet extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -99,8 +97,8 @@ export class DataAwsWafv2RegexPatternSet extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      scope: this._scope,
+      name: cdktf.stringToTerraform(this._name),
+      scope: cdktf.stringToTerraform(this._scope),
     };
   }
 }

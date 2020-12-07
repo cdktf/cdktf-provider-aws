@@ -2,38 +2,36 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEksClusterConfig extends TerraformMetaArguments {
+export interface DataAwsEksClusterConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsEksClusterCertificateAuthority extends ComplexComputedList {
+export class DataAwsEksClusterCertificateAuthority extends cdktf.ComplexComputedList {
 
   // data - computed: true, optional: false, required: false
   public get data() {
     return this.getStringAttribute('data');
   }
 }
-export class DataAwsEksClusterIdentityOidc extends ComplexComputedList {
+export class DataAwsEksClusterIdentityOidc extends cdktf.ComplexComputedList {
 
   // issuer - computed: true, optional: false, required: false
   public get issuer() {
     return this.getStringAttribute('issuer');
   }
 }
-export class DataAwsEksClusterIdentity extends ComplexComputedList {
+export class DataAwsEksClusterIdentity extends cdktf.ComplexComputedList {
 
   // oidc - computed: true, optional: false, required: false
   public get oidc() {
     return this.interpolationForAttribute('oidc') as any;
   }
 }
-export class DataAwsEksClusterVpcConfig extends ComplexComputedList {
+export class DataAwsEksClusterVpcConfig extends cdktf.ComplexComputedList {
 
   // cluster_security_group_id - computed: true, optional: false, required: false
   public get clusterSecurityGroupId() {
@@ -73,7 +71,7 @@ export class DataAwsEksClusterVpcConfig extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsEksCluster extends TerraformDataSource {
+export class DataAwsEksCluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -193,8 +191,8 @@ export class DataAwsEksCluster extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

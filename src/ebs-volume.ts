@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EbsVolumeConfig extends TerraformMetaArguments {
+export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone: string;
   readonly encrypted?: boolean;
   readonly iops?: number;
@@ -22,7 +21,7 @@ export interface EbsVolumeConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class EbsVolume extends TerraformResource {
+export class EbsVolume extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -228,16 +227,16 @@ export class EbsVolume extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      encrypted: this._encrypted,
-      iops: this._iops,
-      kms_key_id: this._kmsKeyId,
-      multi_attach_enabled: this._multiAttachEnabled,
-      outpost_arn: this._outpostArn,
-      size: this._size,
-      snapshot_id: this._snapshotId,
-      tags: this._tags,
-      type: this._type,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      encrypted: cdktf.booleanToTerraform(this._encrypted),
+      iops: cdktf.numberToTerraform(this._iops),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      multi_attach_enabled: cdktf.booleanToTerraform(this._multiAttachEnabled),
+      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
+      size: cdktf.numberToTerraform(this._size),
+      snapshot_id: cdktf.stringToTerraform(this._snapshotId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

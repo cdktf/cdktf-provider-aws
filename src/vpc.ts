@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcConfig extends TerraformMetaArguments {
+export interface VpcConfig extends cdktf.TerraformMetaArguments {
   readonly assignGeneratedIpv6CidrBlock?: boolean;
   readonly cidrBlock: string;
   readonly enableClassiclink?: boolean;
@@ -20,7 +19,7 @@ export interface VpcConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Vpc extends TerraformResource {
+export class Vpc extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -232,14 +231,14 @@ export class Vpc extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assign_generated_ipv6_cidr_block: this._assignGeneratedIpv6CidrBlock,
-      cidr_block: this._cidrBlock,
-      enable_classiclink: this._enableClassiclink,
-      enable_classiclink_dns_support: this._enableClassiclinkDnsSupport,
-      enable_dns_hostnames: this._enableDnsHostnames,
-      enable_dns_support: this._enableDnsSupport,
-      instance_tenancy: this._instanceTenancy,
-      tags: this._tags,
+      assign_generated_ipv6_cidr_block: cdktf.booleanToTerraform(this._assignGeneratedIpv6CidrBlock),
+      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+      enable_classiclink: cdktf.booleanToTerraform(this._enableClassiclink),
+      enable_classiclink_dns_support: cdktf.booleanToTerraform(this._enableClassiclinkDnsSupport),
+      enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
+      enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
+      instance_tenancy: cdktf.stringToTerraform(this._instanceTenancy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

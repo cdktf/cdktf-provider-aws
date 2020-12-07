@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsOutpostInstanceTypesConfig extends TerraformMetaArguments {
+export interface DataAwsOutpostsOutpostInstanceTypesConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
 }
 
 // Resource
 
-export class DataAwsOutpostsOutpostInstanceTypes extends TerraformDataSource {
+export class DataAwsOutpostsOutpostInstanceTypes extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -66,7 +65,7 @@ export class DataAwsOutpostsOutpostInstanceTypes extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
+      arn: cdktf.stringToTerraform(this._arn),
     };
   }
 }

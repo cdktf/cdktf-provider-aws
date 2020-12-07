@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SpotInstanceRequestConfig extends TerraformMetaArguments {
+export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments {
   readonly ami: string;
   readonly associatePublicIpAddress?: boolean;
   readonly availabilityZone?: string;
@@ -62,6 +61,14 @@ export interface SpotInstanceRequestConfig extends TerraformMetaArguments {
 export interface SpotInstanceRequestCreditSpecification {
   readonly cpuCredits?: string;
 }
+
+function spotInstanceRequestCreditSpecificationToTerraform(struct?: SpotInstanceRequestCreditSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cpu_credits: cdktf.stringToTerraform(struct!.cpuCredits),
+  }
+}
+
 export interface SpotInstanceRequestEbsBlockDevice {
   readonly deleteOnTermination?: boolean;
   readonly deviceName: string;
@@ -72,21 +79,66 @@ export interface SpotInstanceRequestEbsBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function spotInstanceRequestEbsBlockDeviceToTerraform(struct?: SpotInstanceRequestEbsBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface SpotInstanceRequestEphemeralBlockDevice {
   readonly deviceName: string;
   readonly noDevice?: boolean;
   readonly virtualName?: string;
 }
+
+function spotInstanceRequestEphemeralBlockDeviceToTerraform(struct?: SpotInstanceRequestEphemeralBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    no_device: cdktf.booleanToTerraform(struct!.noDevice),
+    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+  }
+}
+
 export interface SpotInstanceRequestMetadataOptions {
   readonly httpEndpoint?: string;
   readonly httpPutResponseHopLimit?: number;
   readonly httpTokens?: string;
 }
+
+function spotInstanceRequestMetadataOptionsToTerraform(struct?: SpotInstanceRequestMetadataOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    http_endpoint: cdktf.stringToTerraform(struct!.httpEndpoint),
+    http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
+    http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
+  }
+}
+
 export interface SpotInstanceRequestNetworkInterface {
   readonly deleteOnTermination?: boolean;
   readonly deviceIndex: number;
   readonly networkInterfaceId: string;
 }
+
+function spotInstanceRequestNetworkInterfaceToTerraform(struct?: SpotInstanceRequestNetworkInterface): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    device_index: cdktf.numberToTerraform(struct!.deviceIndex),
+    network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
+  }
+}
+
 export interface SpotInstanceRequestRootBlockDevice {
   readonly deleteOnTermination?: boolean;
   readonly encrypted?: boolean;
@@ -95,14 +147,36 @@ export interface SpotInstanceRequestRootBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function spotInstanceRequestRootBlockDeviceToTerraform(struct?: SpotInstanceRequestRootBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface SpotInstanceRequestTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
+function spotInstanceRequestTimeoutsToTerraform(struct?: SpotInstanceRequestTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class SpotInstanceRequest extends TerraformResource {
+export class SpotInstanceRequest extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -921,49 +995,49 @@ export class SpotInstanceRequest extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ami: this._ami,
-      associate_public_ip_address: this._associatePublicIpAddress,
-      availability_zone: this._availabilityZone,
-      block_duration_minutes: this._blockDurationMinutes,
-      cpu_core_count: this._cpuCoreCount,
-      cpu_threads_per_core: this._cpuThreadsPerCore,
-      disable_api_termination: this._disableApiTermination,
-      ebs_optimized: this._ebsOptimized,
-      get_password_data: this._getPasswordData,
-      hibernation: this._hibernation,
-      host_id: this._hostId,
-      iam_instance_profile: this._iamInstanceProfile,
-      instance_initiated_shutdown_behavior: this._instanceInitiatedShutdownBehavior,
-      instance_interruption_behaviour: this._instanceInterruptionBehaviour,
-      instance_type: this._instanceType,
-      ipv6_address_count: this._ipv6AddressCount,
-      ipv6_addresses: this._ipv6Addresses,
-      key_name: this._keyName,
-      launch_group: this._launchGroup,
-      monitoring: this._monitoring,
-      placement_group: this._placementGroup,
-      private_ip: this._privateIp,
-      security_groups: this._securityGroups,
-      source_dest_check: this._sourceDestCheck,
-      spot_price: this._spotPrice,
-      spot_type: this._spotType,
-      subnet_id: this._subnetId,
-      tags: this._tags,
-      tenancy: this._tenancy,
-      user_data: this._userData,
-      user_data_base64: this._userDataBase64,
-      valid_from: this._validFrom,
-      valid_until: this._validUntil,
-      volume_tags: this._volumeTags,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      wait_for_fulfillment: this._waitForFulfillment,
-      credit_specification: this._creditSpecification,
-      ebs_block_device: this._ebsBlockDevice,
-      ephemeral_block_device: this._ephemeralBlockDevice,
-      metadata_options: this._metadataOptions,
-      network_interface: this._networkInterface,
-      root_block_device: this._rootBlockDevice,
-      timeouts: this._timeouts,
+      ami: cdktf.stringToTerraform(this._ami),
+      associate_public_ip_address: cdktf.booleanToTerraform(this._associatePublicIpAddress),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      block_duration_minutes: cdktf.numberToTerraform(this._blockDurationMinutes),
+      cpu_core_count: cdktf.numberToTerraform(this._cpuCoreCount),
+      cpu_threads_per_core: cdktf.numberToTerraform(this._cpuThreadsPerCore),
+      disable_api_termination: cdktf.booleanToTerraform(this._disableApiTermination),
+      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
+      get_password_data: cdktf.booleanToTerraform(this._getPasswordData),
+      hibernation: cdktf.booleanToTerraform(this._hibernation),
+      host_id: cdktf.stringToTerraform(this._hostId),
+      iam_instance_profile: cdktf.stringToTerraform(this._iamInstanceProfile),
+      instance_initiated_shutdown_behavior: cdktf.stringToTerraform(this._instanceInitiatedShutdownBehavior),
+      instance_interruption_behaviour: cdktf.stringToTerraform(this._instanceInterruptionBehaviour),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
+      ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Addresses),
+      key_name: cdktf.stringToTerraform(this._keyName),
+      launch_group: cdktf.stringToTerraform(this._launchGroup),
+      monitoring: cdktf.booleanToTerraform(this._monitoring),
+      placement_group: cdktf.stringToTerraform(this._placementGroup),
+      private_ip: cdktf.stringToTerraform(this._privateIp),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
+      spot_price: cdktf.stringToTerraform(this._spotPrice),
+      spot_type: cdktf.stringToTerraform(this._spotType),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tenancy: cdktf.stringToTerraform(this._tenancy),
+      user_data: cdktf.stringToTerraform(this._userData),
+      user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
+      valid_from: cdktf.stringToTerraform(this._validFrom),
+      valid_until: cdktf.stringToTerraform(this._validUntil),
+      volume_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._volumeTags),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      wait_for_fulfillment: cdktf.booleanToTerraform(this._waitForFulfillment),
+      credit_specification: cdktf.listMapper(spotInstanceRequestCreditSpecificationToTerraform)(this._creditSpecification),
+      ebs_block_device: cdktf.listMapper(spotInstanceRequestEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
+      ephemeral_block_device: cdktf.listMapper(spotInstanceRequestEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      metadata_options: cdktf.listMapper(spotInstanceRequestMetadataOptionsToTerraform)(this._metadataOptions),
+      network_interface: cdktf.listMapper(spotInstanceRequestNetworkInterfaceToTerraform)(this._networkInterface),
+      root_block_device: cdktf.listMapper(spotInstanceRequestRootBlockDeviceToTerraform)(this._rootBlockDevice),
+      timeouts: spotInstanceRequestTimeoutsToTerraform(this._timeouts),
     };
   }
 }

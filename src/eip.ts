@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EipConfig extends TerraformMetaArguments {
+export interface EipConfig extends cdktf.TerraformMetaArguments {
   readonly associateWithPrivateIp?: string;
   readonly customerOwnedIpv4Pool?: string;
   readonly instance?: string;
@@ -24,9 +23,19 @@ export interface EipTimeouts {
   readonly update?: string;
 }
 
+function eipTimeoutsToTerraform(struct?: EipTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete: cdktf.stringToTerraform(struct!.delete),
+    read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class Eip extends TerraformResource {
+export class Eip extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -236,14 +245,14 @@ export class Eip extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      associate_with_private_ip: this._associateWithPrivateIp,
-      customer_owned_ipv4_pool: this._customerOwnedIpv4Pool,
-      instance: this._instance,
-      network_interface: this._networkInterface,
-      public_ipv4_pool: this._publicIpv4Pool,
-      tags: this._tags,
-      vpc: this._vpc,
-      timeouts: this._timeouts,
+      associate_with_private_ip: cdktf.stringToTerraform(this._associateWithPrivateIp),
+      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
+      instance: cdktf.stringToTerraform(this._instance),
+      network_interface: cdktf.stringToTerraform(this._networkInterface),
+      public_ipv4_pool: cdktf.stringToTerraform(this._publicIpv4Pool),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc: cdktf.booleanToTerraform(this._vpc),
+      timeouts: eipTimeoutsToTerraform(this._timeouts),
     };
   }
 }

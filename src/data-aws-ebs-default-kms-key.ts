@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsDefaultKmsKeyConfig extends TerraformMetaArguments {
+export interface DataAwsEbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsEbsDefaultKmsKey extends TerraformDataSource {
+export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NeptuneClusterInstanceConfig extends TerraformMetaArguments {
+export interface NeptuneClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly autoMinorVersionUpgrade?: boolean;
   readonly availabilityZone?: string;
@@ -34,9 +33,19 @@ export interface NeptuneClusterInstanceTimeouts {
   readonly update?: string;
 }
 
+function neptuneClusterInstanceTimeoutsToTerraform(struct?: NeptuneClusterInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class NeptuneClusterInstance extends TerraformResource {
+export class NeptuneClusterInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -405,24 +414,24 @@ export class NeptuneClusterInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      availability_zone: this._availabilityZone,
-      cluster_identifier: this._clusterIdentifier,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      identifier: this._identifier,
-      identifier_prefix: this._identifierPrefix,
-      instance_class: this._instanceClass,
-      neptune_parameter_group_name: this._neptuneParameterGroupName,
-      neptune_subnet_group_name: this._neptuneSubnetGroupName,
-      port: this._port,
-      preferred_backup_window: this._preferredBackupWindow,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      promotion_tier: this._promotionTier,
-      publicly_accessible: this._publiclyAccessible,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      identifier: cdktf.stringToTerraform(this._identifier),
+      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
+      instance_class: cdktf.stringToTerraform(this._instanceClass),
+      neptune_parameter_group_name: cdktf.stringToTerraform(this._neptuneParameterGroupName),
+      neptune_subnet_group_name: cdktf.stringToTerraform(this._neptuneSubnetGroupName),
+      port: cdktf.numberToTerraform(this._port),
+      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      promotion_tier: cdktf.numberToTerraform(this._promotionTier),
+      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: neptuneClusterInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

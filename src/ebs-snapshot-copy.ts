@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EbsSnapshotCopyConfig extends TerraformMetaArguments {
+export interface EbsSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly encrypted?: boolean;
   readonly kmsKeyId?: string;
@@ -18,7 +17,7 @@ export interface EbsSnapshotCopyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class EbsSnapshotCopy extends TerraformResource {
+export class EbsSnapshotCopy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -178,12 +177,12 @@ export class EbsSnapshotCopy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      encrypted: this._encrypted,
-      kms_key_id: this._kmsKeyId,
-      source_region: this._sourceRegion,
-      source_snapshot_id: this._sourceSnapshotId,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      encrypted: cdktf.booleanToTerraform(this._encrypted),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      source_region: cdktf.stringToTerraform(this._sourceRegion),
+      source_snapshot_id: cdktf.stringToTerraform(this._sourceSnapshotId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

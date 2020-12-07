@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53RecordConfig extends TerraformMetaArguments {
+export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
   readonly allowOverwrite?: boolean;
   readonly healthCheckId?: string;
   readonly multivalueAnswerRoutingPolicy?: boolean;
@@ -33,24 +32,68 @@ export interface Route53RecordAlias {
   readonly name: string;
   readonly zoneId: string;
 }
+
+function route53RecordAliasToTerraform(struct?: Route53RecordAlias): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    evaluate_target_health: cdktf.booleanToTerraform(struct!.evaluateTargetHealth),
+    name: cdktf.stringToTerraform(struct!.name),
+    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+  }
+}
+
 export interface Route53RecordFailoverRoutingPolicy {
   readonly type: string;
 }
+
+function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53RecordFailoverRoutingPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface Route53RecordGeolocationRoutingPolicy {
   readonly continent?: string;
   readonly country?: string;
   readonly subdivision?: string;
 }
+
+function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route53RecordGeolocationRoutingPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    continent: cdktf.stringToTerraform(struct!.continent),
+    country: cdktf.stringToTerraform(struct!.country),
+    subdivision: cdktf.stringToTerraform(struct!.subdivision),
+  }
+}
+
 export interface Route53RecordLatencyRoutingPolicy {
   readonly region: string;
 }
+
+function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53RecordLatencyRoutingPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    region: cdktf.stringToTerraform(struct!.region),
+  }
+}
+
 export interface Route53RecordWeightedRoutingPolicy {
   readonly weight: number;
 }
 
+function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWeightedRoutingPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
+
 // Resource
 
-export class Route53Record extends TerraformResource {
+export class Route53Record extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -318,20 +361,20 @@ export class Route53Record extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_overwrite: this._allowOverwrite,
-      health_check_id: this._healthCheckId,
-      multivalue_answer_routing_policy: this._multivalueAnswerRoutingPolicy,
-      name: this._name,
-      records: this._records,
-      set_identifier: this._setIdentifier,
-      ttl: this._ttl,
-      type: this._type,
-      zone_id: this._zoneId,
-      alias: this._alias,
-      failover_routing_policy: this._failoverRoutingPolicy,
-      geolocation_routing_policy: this._geolocationRoutingPolicy,
-      latency_routing_policy: this._latencyRoutingPolicy,
-      weighted_routing_policy: this._weightedRoutingPolicy,
+      allow_overwrite: cdktf.booleanToTerraform(this._allowOverwrite),
+      health_check_id: cdktf.stringToTerraform(this._healthCheckId),
+      multivalue_answer_routing_policy: cdktf.booleanToTerraform(this._multivalueAnswerRoutingPolicy),
+      name: cdktf.stringToTerraform(this._name),
+      records: cdktf.listMapper(cdktf.stringToTerraform)(this._records),
+      set_identifier: cdktf.stringToTerraform(this._setIdentifier),
+      ttl: cdktf.numberToTerraform(this._ttl),
+      type: cdktf.stringToTerraform(this._type),
+      zone_id: cdktf.stringToTerraform(this._zoneId),
+      alias: cdktf.listMapper(route53RecordAliasToTerraform)(this._alias),
+      failover_routing_policy: cdktf.listMapper(route53RecordFailoverRoutingPolicyToTerraform)(this._failoverRoutingPolicy),
+      geolocation_routing_policy: cdktf.listMapper(route53RecordGeolocationRoutingPolicyToTerraform)(this._geolocationRoutingPolicy),
+      latency_routing_policy: cdktf.listMapper(route53RecordLatencyRoutingPolicyToTerraform)(this._latencyRoutingPolicy),
+      weighted_routing_policy: cdktf.listMapper(route53RecordWeightedRoutingPolicyToTerraform)(this._weightedRoutingPolicy),
     };
   }
 }

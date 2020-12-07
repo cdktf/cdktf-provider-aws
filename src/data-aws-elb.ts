@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElbConfig extends TerraformMetaArguments {
+export interface DataAwsElbConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsElbAccessLogs extends ComplexComputedList {
+export class DataAwsElbAccessLogs extends cdktf.ComplexComputedList {
 
   // bucket - computed: true, optional: false, required: false
   public get bucket() {
@@ -34,7 +32,7 @@ export class DataAwsElbAccessLogs extends ComplexComputedList {
     return this.getNumberAttribute('interval');
   }
 }
-export class DataAwsElbHealthCheck extends ComplexComputedList {
+export class DataAwsElbHealthCheck extends cdktf.ComplexComputedList {
 
   // healthy_threshold - computed: true, optional: false, required: false
   public get healthyThreshold() {
@@ -61,7 +59,7 @@ export class DataAwsElbHealthCheck extends ComplexComputedList {
     return this.getNumberAttribute('unhealthy_threshold');
   }
 }
-export class DataAwsElbListener extends ComplexComputedList {
+export class DataAwsElbListener extends cdktf.ComplexComputedList {
 
   // instance_port - computed: true, optional: false, required: false
   public get instancePort() {
@@ -91,7 +89,7 @@ export class DataAwsElbListener extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsElb extends TerraformDataSource {
+export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -241,8 +239,8 @@ export class DataAwsElb extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

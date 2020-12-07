@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2IntegrationConfig extends TerraformMetaArguments {
+export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly connectionId?: string;
   readonly connectionType?: string;
@@ -26,7 +25,7 @@ export interface Apigatewayv2IntegrationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Apigatewayv2Integration extends TerraformResource {
+export class Apigatewayv2Integration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -297,20 +296,20 @@ export class Apigatewayv2Integration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      connection_id: this._connectionId,
-      connection_type: this._connectionType,
-      content_handling_strategy: this._contentHandlingStrategy,
-      credentials_arn: this._credentialsArn,
-      description: this._description,
-      integration_method: this._integrationMethod,
-      integration_type: this._integrationType,
-      integration_uri: this._integrationUri,
-      passthrough_behavior: this._passthroughBehavior,
-      payload_format_version: this._payloadFormatVersion,
-      request_templates: this._requestTemplates,
-      template_selection_expression: this._templateSelectionExpression,
-      timeout_milliseconds: this._timeoutMilliseconds,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      connection_id: cdktf.stringToTerraform(this._connectionId),
+      connection_type: cdktf.stringToTerraform(this._connectionType),
+      content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
+      credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
+      description: cdktf.stringToTerraform(this._description),
+      integration_method: cdktf.stringToTerraform(this._integrationMethod),
+      integration_type: cdktf.stringToTerraform(this._integrationType),
+      integration_uri: cdktf.stringToTerraform(this._integrationUri),
+      passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
+      payload_format_version: cdktf.stringToTerraform(this._payloadFormatVersion),
+      request_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestTemplates),
+      template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
+      timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecurityhubMemberConfig extends TerraformMetaArguments {
+export interface SecurityhubMemberConfig extends cdktf.TerraformMetaArguments {
   readonly accountId: string;
   readonly email: string;
   readonly invite?: boolean;
@@ -15,7 +14,7 @@ export interface SecurityhubMemberConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SecurityhubMember extends TerraformResource {
+export class SecurityhubMember extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -104,9 +103,9 @@ export class SecurityhubMember extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      email: this._email,
-      invite: this._invite,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      email: cdktf.stringToTerraform(this._email),
+      invite: cdktf.booleanToTerraform(this._invite),
     };
   }
 }

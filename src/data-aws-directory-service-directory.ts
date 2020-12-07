@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDirectoryServiceDirectoryConfig extends TerraformMetaArguments {
+export interface DataAwsDirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArguments {
   readonly directoryId: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsDirectoryServiceDirectoryConnectSettings extends ComplexComputedList {
+export class DataAwsDirectoryServiceDirectoryConnectSettings extends cdktf.ComplexComputedList {
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
@@ -44,7 +42,7 @@ export class DataAwsDirectoryServiceDirectoryConnectSettings extends ComplexComp
     return this.getStringAttribute('vpc_id');
   }
 }
-export class DataAwsDirectoryServiceDirectoryVpcSettings extends ComplexComputedList {
+export class DataAwsDirectoryServiceDirectoryVpcSettings extends cdktf.ComplexComputedList {
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
@@ -64,7 +62,7 @@ export class DataAwsDirectoryServiceDirectoryVpcSettings extends ComplexComputed
 
 // Resource
 
-export class DataAwsDirectoryServiceDirectory extends TerraformDataSource {
+export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -194,8 +192,8 @@ export class DataAwsDirectoryServiceDirectory extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: this._directoryId,
-      tags: this._tags,
+      directory_id: cdktf.stringToTerraform(this._directoryId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

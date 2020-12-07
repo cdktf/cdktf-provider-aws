@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigAggregateAuthorizationConfig extends TerraformMetaArguments {
+export interface ConfigAggregateAuthorizationConfig extends cdktf.TerraformMetaArguments {
   readonly accountId: string;
   readonly region: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface ConfigAggregateAuthorizationConfig extends TerraformMetaArgumen
 
 // Resource
 
-export class ConfigAggregateAuthorization extends TerraformResource {
+export class ConfigAggregateAuthorization extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +98,9 @@ export class ConfigAggregateAuthorization extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      region: this._region,
-      tags: this._tags,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      region: cdktf.stringToTerraform(this._region),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

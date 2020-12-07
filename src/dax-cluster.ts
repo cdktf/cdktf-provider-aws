@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DaxClusterConfig extends TerraformMetaArguments {
+export interface DaxClusterConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZones?: string[];
   readonly clusterName: string;
   readonly description?: string;
@@ -26,7 +24,7 @@ export interface DaxClusterConfig extends TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: DaxClusterTimeouts;
 }
-export class DaxClusterNodes extends ComplexComputedList {
+export class DaxClusterNodes extends cdktf.ComplexComputedList {
 
   // address - computed: true, optional: false, required: false
   public get address() {
@@ -51,15 +49,33 @@ export class DaxClusterNodes extends ComplexComputedList {
 export interface DaxClusterServerSideEncryption {
   readonly enabled?: boolean;
 }
+
+function daxClusterServerSideEncryptionToTerraform(struct?: DaxClusterServerSideEncryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface DaxClusterTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function daxClusterTimeoutsToTerraform(struct?: DaxClusterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DaxCluster extends TerraformResource {
+export class DaxCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -344,20 +360,20 @@ export class DaxCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones: this._availabilityZones,
-      cluster_name: this._clusterName,
-      description: this._description,
-      iam_role_arn: this._iamRoleArn,
-      maintenance_window: this._maintenanceWindow,
-      node_type: this._nodeType,
-      notification_topic_arn: this._notificationTopicArn,
-      parameter_group_name: this._parameterGroupName,
-      replication_factor: this._replicationFactor,
-      security_group_ids: this._securityGroupIds,
-      subnet_group_name: this._subnetGroupName,
-      tags: this._tags,
-      server_side_encryption: this._serverSideEncryption,
-      timeouts: this._timeouts,
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
+      description: cdktf.stringToTerraform(this._description),
+      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
+      node_type: cdktf.stringToTerraform(this._nodeType),
+      notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
+      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
+      replication_factor: cdktf.numberToTerraform(this._replicationFactor),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      server_side_encryption: cdktf.listMapper(daxClusterServerSideEncryptionToTerraform)(this._serverSideEncryption),
+      timeouts: daxClusterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

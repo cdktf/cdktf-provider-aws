@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigConfigurationRecorderStatusConfig extends TerraformMetaArguments {
+export interface ConfigConfigurationRecorderStatusConfig extends cdktf.TerraformMetaArguments {
   readonly isEnabled: boolean;
   readonly name: string;
 }
 
 // Resource
 
-export class ConfigConfigurationRecorderStatus extends TerraformResource {
+export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class ConfigConfigurationRecorderStatus extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      is_enabled: this._isEnabled,
-      name: this._name,
+      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

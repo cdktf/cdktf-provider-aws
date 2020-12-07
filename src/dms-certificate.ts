@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DmsCertificateConfig extends TerraformMetaArguments {
+export interface DmsCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly certificateId: string;
   readonly certificatePem?: string;
   readonly certificateWallet?: string;
@@ -15,7 +14,7 @@ export interface DmsCertificateConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DmsCertificate extends TerraformResource {
+export class DmsCertificate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +101,9 @@ export class DmsCertificate extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_id: this._certificateId,
-      certificate_pem: this._certificatePem,
-      certificate_wallet: this._certificateWallet,
+      certificate_id: cdktf.stringToTerraform(this._certificateId),
+      certificate_pem: cdktf.stringToTerraform(this._certificatePem),
+      certificate_wallet: cdktf.stringToTerraform(this._certificateWallet),
     };
   }
 }

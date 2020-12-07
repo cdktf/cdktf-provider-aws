@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIotEndpointConfig extends TerraformMetaArguments {
+export interface DataAwsIotEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly endpointType?: string;
 }
 
 // Resource
 
-export class DataAwsIotEndpoint extends TerraformDataSource {
+export class DataAwsIotEndpoint extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -69,7 +68,7 @@ export class DataAwsIotEndpoint extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_type: this._endpointType,
+      endpoint_type: cdktf.stringToTerraform(this._endpointType),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsS3BucketObjectsConfig extends TerraformMetaArguments {
+export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly delimiter?: string;
   readonly encodingType?: string;
@@ -19,7 +18,7 @@ export interface DataAwsS3BucketObjectsConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsS3BucketObjects extends TerraformDataSource {
+export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -184,13 +183,13 @@ export class DataAwsS3BucketObjects extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      delimiter: this._delimiter,
-      encoding_type: this._encodingType,
-      fetch_owner: this._fetchOwner,
-      max_keys: this._maxKeys,
-      prefix: this._prefix,
-      start_after: this._startAfter,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      delimiter: cdktf.stringToTerraform(this._delimiter),
+      encoding_type: cdktf.stringToTerraform(this._encodingType),
+      fetch_owner: cdktf.booleanToTerraform(this._fetchOwner),
+      max_keys: cdktf.numberToTerraform(this._maxKeys),
+      prefix: cdktf.stringToTerraform(this._prefix),
+      start_after: cdktf.stringToTerraform(this._startAfter),
     };
   }
 }

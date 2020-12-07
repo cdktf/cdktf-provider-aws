@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSsmDocumentConfig extends TerraformMetaArguments {
+export interface DataAwsSsmDocumentConfig extends cdktf.TerraformMetaArguments {
   readonly documentFormat?: string;
   readonly documentVersion?: string;
   readonly name: string;
@@ -15,7 +14,7 @@ export interface DataAwsSsmDocumentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsSsmDocument extends TerraformDataSource {
+export class DataAwsSsmDocument extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -112,9 +111,9 @@ export class DataAwsSsmDocument extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      document_format: this._documentFormat,
-      document_version: this._documentVersion,
-      name: this._name,
+      document_format: cdktf.stringToTerraform(this._documentFormat),
+      document_version: cdktf.stringToTerraform(this._documentVersion),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

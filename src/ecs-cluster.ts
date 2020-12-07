@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EcsClusterConfig extends TerraformMetaArguments {
+export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly capacityProviders?: string[];
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -21,14 +20,33 @@ export interface EcsClusterDefaultCapacityProviderStrategy {
   readonly capacityProvider: string;
   readonly weight?: number;
 }
+
+function ecsClusterDefaultCapacityProviderStrategyToTerraform(struct?: EcsClusterDefaultCapacityProviderStrategy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    base: cdktf.numberToTerraform(struct!.base),
+    capacity_provider: cdktf.stringToTerraform(struct!.capacityProvider),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
 export interface EcsClusterSetting {
   readonly name: string;
   readonly value: string;
 }
 
+function ecsClusterSettingToTerraform(struct?: EcsClusterSetting): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class EcsCluster extends TerraformResource {
+export class EcsCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -149,11 +167,11 @@ export class EcsCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_providers: this._capacityProviders,
-      name: this._name,
-      tags: this._tags,
-      default_capacity_provider_strategy: this._defaultCapacityProviderStrategy,
-      setting: this._setting,
+      capacity_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._capacityProviders),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform)(this._defaultCapacityProviderStrategy),
+      setting: cdktf.listMapper(ecsClusterSettingToTerraform)(this._setting),
     };
   }
 }

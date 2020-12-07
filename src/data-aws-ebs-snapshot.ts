@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsSnapshotConfig extends TerraformMetaArguments {
+export interface DataAwsEbsSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly mostRecent?: boolean;
   readonly owners?: string[];
   readonly restorableByUserIds?: string[];
@@ -21,9 +20,18 @@ export interface DataAwsEbsSnapshotFilter {
   readonly values: string[];
 }
 
+function dataAwsEbsSnapshotFilterToTerraform(struct?: DataAwsEbsSnapshotFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEbsSnapshot extends TerraformDataSource {
+export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -214,12 +222,12 @@ export class DataAwsEbsSnapshot extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      most_recent: this._mostRecent,
-      owners: this._owners,
-      restorable_by_user_ids: this._restorableByUserIds,
-      snapshot_ids: this._snapshotIds,
-      tags: this._tags,
-      filter: this._filter,
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
+      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._restorableByUserIds),
+      snapshot_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEbsSnapshotFilterToTerraform)(this._filter),
     };
   }
 }

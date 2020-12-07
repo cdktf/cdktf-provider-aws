@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppautoscalingScheduledActionConfig extends TerraformMetaArguments {
+export interface AppautoscalingScheduledActionConfig extends cdktf.TerraformMetaArguments {
   readonly endTime?: string;
   readonly name: string;
   readonly resourceId: string;
@@ -23,9 +22,18 @@ export interface AppautoscalingScheduledActionScalableTargetAction {
   readonly minCapacity?: number;
 }
 
+function appautoscalingScheduledActionScalableTargetActionToTerraform(struct?: AppautoscalingScheduledActionScalableTargetAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
+    min_capacity: cdktf.numberToTerraform(struct!.minCapacity),
+  }
+}
+
+
 // Resource
 
-export class AppautoscalingScheduledAction extends TerraformResource {
+export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -191,14 +199,14 @@ export class AppautoscalingScheduledAction extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      end_time: this._endTime,
-      name: this._name,
-      resource_id: this._resourceId,
-      scalable_dimension: this._scalableDimension,
-      schedule: this._schedule,
-      service_namespace: this._serviceNamespace,
-      start_time: this._startTime,
-      scalable_target_action: this._scalableTargetAction,
+      end_time: cdktf.stringToTerraform(this._endTime),
+      name: cdktf.stringToTerraform(this._name),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
+      scalable_dimension: cdktf.stringToTerraform(this._scalableDimension),
+      schedule: cdktf.stringToTerraform(this._schedule),
+      service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
+      start_time: cdktf.stringToTerraform(this._startTime),
+      scalable_target_action: cdktf.listMapper(appautoscalingScheduledActionScalableTargetActionToTerraform)(this._scalableTargetAction),
     };
   }
 }

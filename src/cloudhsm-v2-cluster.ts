@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudhsmV2ClusterConfig extends TerraformMetaArguments {
+export interface CloudhsmV2ClusterConfig extends cdktf.TerraformMetaArguments {
   readonly hsmType: string;
   readonly sourceBackupIdentifier?: string;
   readonly subnetIds: string[];
@@ -16,7 +14,7 @@ export interface CloudhsmV2ClusterConfig extends TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: CloudhsmV2ClusterTimeouts;
 }
-export class CloudhsmV2ClusterClusterCertificates extends ComplexComputedList {
+export class CloudhsmV2ClusterClusterCertificates extends cdktf.ComplexComputedList {
 
   // aws_hardware_certificate - computed: true, optional: false, required: false
   public get awsHardwareCertificate() {
@@ -49,9 +47,19 @@ export interface CloudhsmV2ClusterTimeouts {
   readonly update?: string;
 }
 
+function cloudhsmV2ClusterTimeoutsToTerraform(struct?: CloudhsmV2ClusterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class CloudhsmV2Cluster extends TerraformResource {
+export class CloudhsmV2Cluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -189,11 +197,11 @@ export class CloudhsmV2Cluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hsm_type: this._hsmType,
-      source_backup_identifier: this._sourceBackupIdentifier,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      hsm_type: cdktf.stringToTerraform(this._hsmType),
+      source_backup_identifier: cdktf.stringToTerraform(this._sourceBackupIdentifier),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: cloudhsmV2ClusterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

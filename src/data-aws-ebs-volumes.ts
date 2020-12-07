@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsVolumesConfig extends TerraformMetaArguments {
+export interface DataAwsEbsVolumesConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsEbsVolumesFilter[];
@@ -17,9 +16,18 @@ export interface DataAwsEbsVolumesFilter {
   readonly values: string[];
 }
 
+function dataAwsEbsVolumesFilterToTerraform(struct?: DataAwsEbsVolumesFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEbsVolumes extends TerraformDataSource {
+export class DataAwsEbsVolumes extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -92,8 +100,8 @@ export class DataAwsEbsVolumes extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      filter: this._filter,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEbsVolumesFilterToTerraform)(this._filter),
     };
   }
 }

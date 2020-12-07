@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmMaintenanceWindowTargetConfig extends TerraformMetaArguments {
+export interface SsmMaintenanceWindowTargetConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name?: string;
   readonly ownerInformation?: string;
@@ -21,9 +20,18 @@ export interface SsmMaintenanceWindowTargetTargets {
   readonly values: string[];
 }
 
+function ssmMaintenanceWindowTargetTargetsToTerraform(struct?: SsmMaintenanceWindowTargetTargets): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class SsmMaintenanceWindowTarget extends TerraformResource {
+export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -150,12 +158,12 @@ export class SsmMaintenanceWindowTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      owner_information: this._ownerInformation,
-      resource_type: this._resourceType,
-      window_id: this._windowId,
-      targets: this._targets,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      owner_information: cdktf.stringToTerraform(this._ownerInformation),
+      resource_type: cdktf.stringToTerraform(this._resourceType),
+      window_id: cdktf.stringToTerraform(this._windowId),
+      targets: cdktf.listMapper(ssmMaintenanceWindowTargetTargetsToTerraform)(this._targets),
     };
   }
 }

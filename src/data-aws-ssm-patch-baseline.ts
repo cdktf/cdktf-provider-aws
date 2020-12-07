@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSsmPatchBaselineConfig extends TerraformMetaArguments {
+export interface DataAwsSsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
   readonly defaultBaseline?: boolean;
   readonly namePrefix?: string;
   readonly operatingSystem?: string;
@@ -16,7 +15,7 @@ export interface DataAwsSsmPatchBaselineConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsSsmPatchBaseline extends TerraformDataSource {
+export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -125,10 +124,10 @@ export class DataAwsSsmPatchBaseline extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_baseline: this._defaultBaseline,
-      name_prefix: this._namePrefix,
-      operating_system: this._operatingSystem,
-      owner: this._owner,
+      default_baseline: cdktf.booleanToTerraform(this._defaultBaseline),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      operating_system: cdktf.stringToTerraform(this._operatingSystem),
+      owner: cdktf.stringToTerraform(this._owner),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KinesisStreamConfig extends TerraformMetaArguments {
+export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
   readonly encryptionType?: string;
   readonly enforceConsumerDeletion?: boolean;
   readonly kmsKeyId?: string;
@@ -25,9 +24,19 @@ export interface KinesisStreamTimeouts {
   readonly update?: string;
 }
 
+function kinesisStreamTimeoutsToTerraform(struct?: KinesisStreamTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class KinesisStream extends TerraformResource {
+export class KinesisStream extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -213,15 +222,15 @@ export class KinesisStream extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      encryption_type: this._encryptionType,
-      enforce_consumer_deletion: this._enforceConsumerDeletion,
-      kms_key_id: this._kmsKeyId,
-      name: this._name,
-      retention_period: this._retentionPeriod,
-      shard_count: this._shardCount,
-      shard_level_metrics: this._shardLevelMetrics,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      encryption_type: cdktf.stringToTerraform(this._encryptionType),
+      enforce_consumer_deletion: cdktf.booleanToTerraform(this._enforceConsumerDeletion),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      name: cdktf.stringToTerraform(this._name),
+      retention_period: cdktf.numberToTerraform(this._retentionPeriod),
+      shard_count: cdktf.numberToTerraform(this._shardCount),
+      shard_level_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._shardLevelMetrics),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: kinesisStreamTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TrafficMirrorSessionConfig extends TerraformMetaArguments {
+export interface Ec2TrafficMirrorSessionConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly networkInterfaceId: string;
   readonly packetLength?: number;
@@ -20,7 +19,7 @@ export interface Ec2TrafficMirrorSessionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2TrafficMirrorSession extends TerraformResource {
+export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -183,14 +182,14 @@ export class Ec2TrafficMirrorSession extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      network_interface_id: this._networkInterfaceId,
-      packet_length: this._packetLength,
-      session_number: this._sessionNumber,
-      tags: this._tags,
-      traffic_mirror_filter_id: this._trafficMirrorFilterId,
-      traffic_mirror_target_id: this._trafficMirrorTargetId,
-      virtual_network_id: this._virtualNetworkId,
+      description: cdktf.stringToTerraform(this._description),
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      packet_length: cdktf.numberToTerraform(this._packetLength),
+      session_number: cdktf.numberToTerraform(this._sessionNumber),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      traffic_mirror_filter_id: cdktf.stringToTerraform(this._trafficMirrorFilterId),
+      traffic_mirror_target_id: cdktf.stringToTerraform(this._trafficMirrorTargetId),
+      virtual_network_id: cdktf.numberToTerraform(this._virtualNetworkId),
     };
   }
 }

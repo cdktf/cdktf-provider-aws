@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NetworkInterfaceAttachmentAConfig extends TerraformMetaArguments {
+export interface NetworkInterfaceAttachmentAConfig extends cdktf.TerraformMetaArguments {
   readonly deviceIndex: number;
   readonly instanceId: string;
   readonly networkInterfaceId: string;
@@ -15,7 +14,7 @@ export interface NetworkInterfaceAttachmentAConfig extends TerraformMetaArgument
 
 // Resource
 
-export class NetworkInterfaceAttachmentA extends TerraformResource {
+export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -101,9 +100,9 @@ export class NetworkInterfaceAttachmentA extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      device_index: this._deviceIndex,
-      instance_id: this._instanceId,
-      network_interface_id: this._networkInterfaceId,
+      device_index: cdktf.numberToTerraform(this._deviceIndex),
+      instance_id: cdktf.stringToTerraform(this._instanceId),
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
     };
   }
 }

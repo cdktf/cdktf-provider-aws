@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DirectoryServiceConditionalForwarderConfig extends TerraformMetaArguments {
+export interface DirectoryServiceConditionalForwarderConfig extends cdktf.TerraformMetaArguments {
   readonly directoryId: string;
   readonly dnsIps: string[];
   readonly remoteDomainName: string;
@@ -15,7 +14,7 @@ export interface DirectoryServiceConditionalForwarderConfig extends TerraformMet
 
 // Resource
 
-export class DirectoryServiceConditionalForwarder extends TerraformResource {
+export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,9 +90,9 @@ export class DirectoryServiceConditionalForwarder extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: this._directoryId,
-      dns_ips: this._dnsIps,
-      remote_domain_name: this._remoteDomainName,
+      directory_id: cdktf.stringToTerraform(this._directoryId),
+      dns_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsIps),
+      remote_domain_name: cdktf.stringToTerraform(this._remoteDomainName),
     };
   }
 }

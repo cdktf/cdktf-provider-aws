@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CognitoUserPoolConfig extends TerraformMetaArguments {
+export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   readonly aliasAttributes?: string[];
   readonly autoVerifiedAttributes?: string[];
   readonly emailVerificationMessage?: string;
@@ -46,22 +45,62 @@ export interface CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate {
   readonly emailSubject?: string;
   readonly smsMessage?: string;
 }
+
+function cognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToTerraform(struct?: CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    email_message: cdktf.stringToTerraform(struct!.emailMessage),
+    email_subject: cdktf.stringToTerraform(struct!.emailSubject),
+    sms_message: cdktf.stringToTerraform(struct!.smsMessage),
+  }
+}
+
 export interface CognitoUserPoolAdminCreateUserConfig {
   readonly allowAdminCreateUserOnly?: boolean;
   readonly unusedAccountValidityDays?: number;
   /** invite_message_template block */
   readonly inviteMessageTemplate?: CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate[];
 }
+
+function cognitoUserPoolAdminCreateUserConfigToTerraform(struct?: CognitoUserPoolAdminCreateUserConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_admin_create_user_only: cdktf.booleanToTerraform(struct!.allowAdminCreateUserOnly),
+    unused_account_validity_days: cdktf.numberToTerraform(struct!.unusedAccountValidityDays),
+    invite_message_template: cdktf.listMapper(cognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToTerraform)(struct!.inviteMessageTemplate),
+  }
+}
+
 export interface CognitoUserPoolDeviceConfiguration {
   readonly challengeRequiredOnNewDevice?: boolean;
   readonly deviceOnlyRememberedOnUserPrompt?: boolean;
 }
+
+function cognitoUserPoolDeviceConfigurationToTerraform(struct?: CognitoUserPoolDeviceConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    challenge_required_on_new_device: cdktf.booleanToTerraform(struct!.challengeRequiredOnNewDevice),
+    device_only_remembered_on_user_prompt: cdktf.booleanToTerraform(struct!.deviceOnlyRememberedOnUserPrompt),
+  }
+}
+
 export interface CognitoUserPoolEmailConfiguration {
   readonly emailSendingAccount?: string;
   readonly fromEmailAddress?: string;
   readonly replyToEmailAddress?: string;
   readonly sourceArn?: string;
 }
+
+function cognitoUserPoolEmailConfigurationToTerraform(struct?: CognitoUserPoolEmailConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    email_sending_account: cdktf.stringToTerraform(struct!.emailSendingAccount),
+    from_email_address: cdktf.stringToTerraform(struct!.fromEmailAddress),
+    reply_to_email_address: cdktf.stringToTerraform(struct!.replyToEmailAddress),
+    source_arn: cdktf.stringToTerraform(struct!.sourceArn),
+  }
+}
+
 export interface CognitoUserPoolLambdaConfig {
   readonly createAuthChallenge?: string;
   readonly customMessage?: string;
@@ -74,6 +113,23 @@ export interface CognitoUserPoolLambdaConfig {
   readonly userMigration?: string;
   readonly verifyAuthChallengeResponse?: string;
 }
+
+function cognitoUserPoolLambdaConfigToTerraform(struct?: CognitoUserPoolLambdaConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create_auth_challenge: cdktf.stringToTerraform(struct!.createAuthChallenge),
+    custom_message: cdktf.stringToTerraform(struct!.customMessage),
+    define_auth_challenge: cdktf.stringToTerraform(struct!.defineAuthChallenge),
+    post_authentication: cdktf.stringToTerraform(struct!.postAuthentication),
+    post_confirmation: cdktf.stringToTerraform(struct!.postConfirmation),
+    pre_authentication: cdktf.stringToTerraform(struct!.preAuthentication),
+    pre_sign_up: cdktf.stringToTerraform(struct!.preSignUp),
+    pre_token_generation: cdktf.stringToTerraform(struct!.preTokenGeneration),
+    user_migration: cdktf.stringToTerraform(struct!.userMigration),
+    verify_auth_challenge_response: cdktf.stringToTerraform(struct!.verifyAuthChallengeResponse),
+  }
+}
+
 export interface CognitoUserPoolPasswordPolicy {
   readonly minimumLength?: number;
   readonly requireLowercase?: boolean;
@@ -82,14 +138,45 @@ export interface CognitoUserPoolPasswordPolicy {
   readonly requireUppercase?: boolean;
   readonly temporaryPasswordValidityDays?: number;
 }
+
+function cognitoUserPoolPasswordPolicyToTerraform(struct?: CognitoUserPoolPasswordPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    minimum_length: cdktf.numberToTerraform(struct!.minimumLength),
+    require_lowercase: cdktf.booleanToTerraform(struct!.requireLowercase),
+    require_numbers: cdktf.booleanToTerraform(struct!.requireNumbers),
+    require_symbols: cdktf.booleanToTerraform(struct!.requireSymbols),
+    require_uppercase: cdktf.booleanToTerraform(struct!.requireUppercase),
+    temporary_password_validity_days: cdktf.numberToTerraform(struct!.temporaryPasswordValidityDays),
+  }
+}
+
 export interface CognitoUserPoolSchemaNumberAttributeConstraints {
   readonly maxValue?: string;
   readonly minValue?: string;
 }
+
+function cognitoUserPoolSchemaNumberAttributeConstraintsToTerraform(struct?: CognitoUserPoolSchemaNumberAttributeConstraints): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_value: cdktf.stringToTerraform(struct!.maxValue),
+    min_value: cdktf.stringToTerraform(struct!.minValue),
+  }
+}
+
 export interface CognitoUserPoolSchemaStringAttributeConstraints {
   readonly maxLength?: string;
   readonly minLength?: string;
 }
+
+function cognitoUserPoolSchemaStringAttributeConstraintsToTerraform(struct?: CognitoUserPoolSchemaStringAttributeConstraints): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_length: cdktf.stringToTerraform(struct!.maxLength),
+    min_length: cdktf.stringToTerraform(struct!.minLength),
+  }
+}
+
 export interface CognitoUserPoolSchema {
   readonly attributeDataType: string;
   readonly developerOnlyAttribute?: boolean;
@@ -101,19 +188,66 @@ export interface CognitoUserPoolSchema {
   /** string_attribute_constraints block */
   readonly stringAttributeConstraints?: CognitoUserPoolSchemaStringAttributeConstraints[];
 }
+
+function cognitoUserPoolSchemaToTerraform(struct?: CognitoUserPoolSchema): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    attribute_data_type: cdktf.stringToTerraform(struct!.attributeDataType),
+    developer_only_attribute: cdktf.booleanToTerraform(struct!.developerOnlyAttribute),
+    mutable: cdktf.booleanToTerraform(struct!.mutable),
+    name: cdktf.stringToTerraform(struct!.name),
+    required: cdktf.booleanToTerraform(struct!.required),
+    number_attribute_constraints: cdktf.listMapper(cognitoUserPoolSchemaNumberAttributeConstraintsToTerraform)(struct!.numberAttributeConstraints),
+    string_attribute_constraints: cdktf.listMapper(cognitoUserPoolSchemaStringAttributeConstraintsToTerraform)(struct!.stringAttributeConstraints),
+  }
+}
+
 export interface CognitoUserPoolSmsConfiguration {
   readonly externalId: string;
   readonly snsCallerArn: string;
 }
+
+function cognitoUserPoolSmsConfigurationToTerraform(struct?: CognitoUserPoolSmsConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    external_id: cdktf.stringToTerraform(struct!.externalId),
+    sns_caller_arn: cdktf.stringToTerraform(struct!.snsCallerArn),
+  }
+}
+
 export interface CognitoUserPoolSoftwareTokenMfaConfiguration {
   readonly enabled: boolean;
 }
+
+function cognitoUserPoolSoftwareTokenMfaConfigurationToTerraform(struct?: CognitoUserPoolSoftwareTokenMfaConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface CognitoUserPoolUserPoolAddOns {
   readonly advancedSecurityMode: string;
 }
+
+function cognitoUserPoolUserPoolAddOnsToTerraform(struct?: CognitoUserPoolUserPoolAddOns): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    advanced_security_mode: cdktf.stringToTerraform(struct!.advancedSecurityMode),
+  }
+}
+
 export interface CognitoUserPoolUsernameConfiguration {
   readonly caseSensitive: boolean;
 }
+
+function cognitoUserPoolUsernameConfigurationToTerraform(struct?: CognitoUserPoolUsernameConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    case_sensitive: cdktf.booleanToTerraform(struct!.caseSensitive),
+  }
+}
+
 export interface CognitoUserPoolVerificationMessageTemplate {
   readonly defaultEmailOption?: string;
   readonly emailMessage?: string;
@@ -123,9 +257,22 @@ export interface CognitoUserPoolVerificationMessageTemplate {
   readonly smsMessage?: string;
 }
 
+function cognitoUserPoolVerificationMessageTemplateToTerraform(struct?: CognitoUserPoolVerificationMessageTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    default_email_option: cdktf.stringToTerraform(struct!.defaultEmailOption),
+    email_message: cdktf.stringToTerraform(struct!.emailMessage),
+    email_message_by_link: cdktf.stringToTerraform(struct!.emailMessageByLink),
+    email_subject: cdktf.stringToTerraform(struct!.emailSubject),
+    email_subject_by_link: cdktf.stringToTerraform(struct!.emailSubjectByLink),
+    sms_message: cdktf.stringToTerraform(struct!.smsMessage),
+  }
+}
+
+
 // Resource
 
-export class CognitoUserPool extends TerraformResource {
+export class CognitoUserPool extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -533,27 +680,27 @@ export class CognitoUserPool extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_attributes: this._aliasAttributes,
-      auto_verified_attributes: this._autoVerifiedAttributes,
-      email_verification_message: this._emailVerificationMessage,
-      email_verification_subject: this._emailVerificationSubject,
-      mfa_configuration: this._mfaConfiguration,
-      name: this._name,
-      sms_authentication_message: this._smsAuthenticationMessage,
-      sms_verification_message: this._smsVerificationMessage,
-      tags: this._tags,
-      username_attributes: this._usernameAttributes,
-      admin_create_user_config: this._adminCreateUserConfig,
-      device_configuration: this._deviceConfiguration,
-      email_configuration: this._emailConfiguration,
-      lambda_config: this._lambdaConfig,
-      password_policy: this._passwordPolicy,
-      schema: this._schema,
-      sms_configuration: this._smsConfiguration,
-      software_token_mfa_configuration: this._softwareTokenMfaConfiguration,
-      user_pool_add_ons: this._userPoolAddOns,
-      username_configuration: this._usernameConfiguration,
-      verification_message_template: this._verificationMessageTemplate,
+      alias_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._aliasAttributes),
+      auto_verified_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._autoVerifiedAttributes),
+      email_verification_message: cdktf.stringToTerraform(this._emailVerificationMessage),
+      email_verification_subject: cdktf.stringToTerraform(this._emailVerificationSubject),
+      mfa_configuration: cdktf.stringToTerraform(this._mfaConfiguration),
+      name: cdktf.stringToTerraform(this._name),
+      sms_authentication_message: cdktf.stringToTerraform(this._smsAuthenticationMessage),
+      sms_verification_message: cdktf.stringToTerraform(this._smsVerificationMessage),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      username_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._usernameAttributes),
+      admin_create_user_config: cdktf.listMapper(cognitoUserPoolAdminCreateUserConfigToTerraform)(this._adminCreateUserConfig),
+      device_configuration: cdktf.listMapper(cognitoUserPoolDeviceConfigurationToTerraform)(this._deviceConfiguration),
+      email_configuration: cdktf.listMapper(cognitoUserPoolEmailConfigurationToTerraform)(this._emailConfiguration),
+      lambda_config: cdktf.listMapper(cognitoUserPoolLambdaConfigToTerraform)(this._lambdaConfig),
+      password_policy: cdktf.listMapper(cognitoUserPoolPasswordPolicyToTerraform)(this._passwordPolicy),
+      schema: cdktf.listMapper(cognitoUserPoolSchemaToTerraform)(this._schema),
+      sms_configuration: cdktf.listMapper(cognitoUserPoolSmsConfigurationToTerraform)(this._smsConfiguration),
+      software_token_mfa_configuration: cdktf.listMapper(cognitoUserPoolSoftwareTokenMfaConfigurationToTerraform)(this._softwareTokenMfaConfiguration),
+      user_pool_add_ons: cdktf.listMapper(cognitoUserPoolUserPoolAddOnsToTerraform)(this._userPoolAddOns),
+      username_configuration: cdktf.listMapper(cognitoUserPoolUsernameConfigurationToTerraform)(this._usernameConfiguration),
+      verification_message_template: cdktf.listMapper(cognitoUserPoolVerificationMessageTemplateToTerraform)(this._verificationMessageTemplate),
     };
   }
 }

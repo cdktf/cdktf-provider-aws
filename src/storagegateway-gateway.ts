@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface StoragegatewayGatewayConfig extends TerraformMetaArguments {
+export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly activationKey?: string;
   readonly cloudwatchLogGroupArn?: string;
   readonly gatewayIpAddress?: string;
@@ -29,13 +28,31 @@ export interface StoragegatewayGatewaySmbActiveDirectorySettings {
   readonly password: string;
   readonly username: string;
 }
+
+function storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(struct?: StoragegatewayGatewaySmbActiveDirectorySettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    domain_name: cdktf.stringToTerraform(struct!.domainName),
+    password: cdktf.stringToTerraform(struct!.password),
+    username: cdktf.stringToTerraform(struct!.username),
+  }
+}
+
 export interface StoragegatewayGatewayTimeouts {
   readonly create?: string;
 }
 
+function storagegatewayGatewayTimeoutsToTerraform(struct?: StoragegatewayGatewayTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class StoragegatewayGateway extends TerraformResource {
+export class StoragegatewayGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -294,19 +311,19 @@ export class StoragegatewayGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activation_key: this._activationKey,
-      cloudwatch_log_group_arn: this._cloudwatchLogGroupArn,
-      gateway_ip_address: this._gatewayIpAddress,
-      gateway_name: this._gatewayName,
-      gateway_timezone: this._gatewayTimezone,
-      gateway_type: this._gatewayType,
-      gateway_vpc_endpoint: this._gatewayVpcEndpoint,
-      medium_changer_type: this._mediumChangerType,
-      smb_guest_password: this._smbGuestPassword,
-      tags: this._tags,
-      tape_drive_type: this._tapeDriveType,
-      smb_active_directory_settings: this._smbActiveDirectorySettings,
-      timeouts: this._timeouts,
+      activation_key: cdktf.stringToTerraform(this._activationKey),
+      cloudwatch_log_group_arn: cdktf.stringToTerraform(this._cloudwatchLogGroupArn),
+      gateway_ip_address: cdktf.stringToTerraform(this._gatewayIpAddress),
+      gateway_name: cdktf.stringToTerraform(this._gatewayName),
+      gateway_timezone: cdktf.stringToTerraform(this._gatewayTimezone),
+      gateway_type: cdktf.stringToTerraform(this._gatewayType),
+      gateway_vpc_endpoint: cdktf.stringToTerraform(this._gatewayVpcEndpoint),
+      medium_changer_type: cdktf.stringToTerraform(this._mediumChangerType),
+      smb_guest_password: cdktf.stringToTerraform(this._smbGuestPassword),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tape_drive_type: cdktf.stringToTerraform(this._tapeDriveType),
+      smb_active_directory_settings: cdktf.listMapper(storagegatewayGatewaySmbActiveDirectorySettingsToTerraform)(this._smbActiveDirectorySettings),
+      timeouts: storagegatewayGatewayTimeoutsToTerraform(this._timeouts),
     };
   }
 }

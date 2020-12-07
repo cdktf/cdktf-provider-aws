@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueConnectionConfig extends TerraformMetaArguments {
+export interface GlueConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly catalogId?: string;
   readonly connectionProperties: { [key: string]: string };
   readonly connectionType?: string;
@@ -23,9 +22,19 @@ export interface GlueConnectionPhysicalConnectionRequirements {
   readonly subnetId?: string;
 }
 
+function glueConnectionPhysicalConnectionRequirementsToTerraform(struct?: GlueConnectionPhysicalConnectionRequirements): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
+    security_group_id_list: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIdList),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+  }
+}
+
+
 // Resource
 
-export class GlueConnection extends TerraformResource {
+export class GlueConnection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -177,13 +186,13 @@ export class GlueConnection extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: this._catalogId,
-      connection_properties: this._connectionProperties,
-      connection_type: this._connectionType,
-      description: this._description,
-      match_criteria: this._matchCriteria,
-      name: this._name,
-      physical_connection_requirements: this._physicalConnectionRequirements,
+      catalog_id: cdktf.stringToTerraform(this._catalogId),
+      connection_properties: cdktf.hashMapper(cdktf.anyToTerraform)(this._connectionProperties),
+      connection_type: cdktf.stringToTerraform(this._connectionType),
+      description: cdktf.stringToTerraform(this._description),
+      match_criteria: cdktf.listMapper(cdktf.stringToTerraform)(this._matchCriteria),
+      name: cdktf.stringToTerraform(this._name),
+      physical_connection_requirements: cdktf.listMapper(glueConnectionPhysicalConnectionRequirementsToTerraform)(this._physicalConnectionRequirements),
     };
   }
 }

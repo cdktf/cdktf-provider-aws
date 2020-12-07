@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2ClientVpnAuthorizationRuleConfig extends TerraformMetaArguments {
+export interface Ec2ClientVpnAuthorizationRuleConfig extends cdktf.TerraformMetaArguments {
   readonly accessGroupId?: string;
   readonly authorizeAllGroups?: boolean;
   readonly clientVpnEndpointId: string;
@@ -17,7 +16,7 @@ export interface Ec2ClientVpnAuthorizationRuleConfig extends TerraformMetaArgume
 
 // Resource
 
-export class Ec2ClientVpnAuthorizationRule extends TerraformResource {
+export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -130,11 +129,11 @@ export class Ec2ClientVpnAuthorizationRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_group_id: this._accessGroupId,
-      authorize_all_groups: this._authorizeAllGroups,
-      client_vpn_endpoint_id: this._clientVpnEndpointId,
-      description: this._description,
-      target_network_cidr: this._targetNetworkCidr,
+      access_group_id: cdktf.stringToTerraform(this._accessGroupId),
+      authorize_all_groups: cdktf.booleanToTerraform(this._authorizeAllGroups),
+      client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
+      description: cdktf.stringToTerraform(this._description),
+      target_network_cidr: cdktf.stringToTerraform(this._targetNetworkCidr),
     };
   }
 }

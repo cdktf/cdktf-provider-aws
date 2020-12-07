@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSecretsmanagerSecretVersionConfig extends TerraformMetaArguments {
+export interface DataAwsSecretsmanagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
   readonly secretId: string;
   readonly versionId?: string;
   readonly versionStage?: string;
@@ -15,7 +14,7 @@ export interface DataAwsSecretsmanagerSecretVersionConfig extends TerraformMetaA
 
 // Resource
 
-export class DataAwsSecretsmanagerSecretVersion extends TerraformDataSource {
+export class DataAwsSecretsmanagerSecretVersion extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -117,9 +116,9 @@ export class DataAwsSecretsmanagerSecretVersion extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      secret_id: this._secretId,
-      version_id: this._versionId,
-      version_stage: this._versionStage,
+      secret_id: cdktf.stringToTerraform(this._secretId),
+      version_id: cdktf.stringToTerraform(this._versionId),
+      version_stage: cdktf.stringToTerraform(this._versionStage),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbSnapshotConfig extends TerraformMetaArguments {
+export interface DbSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly dbInstanceIdentifier: string;
   readonly dbSnapshotIdentifier: string;
   readonly tags?: { [key: string]: string };
@@ -18,9 +17,17 @@ export interface DbSnapshotTimeouts {
   readonly read?: string;
 }
 
+function dbSnapshotTimeoutsToTerraform(struct?: DbSnapshotTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+
 // Resource
 
-export class DbSnapshot extends TerraformResource {
+export class DbSnapshot extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -201,10 +208,10 @@ export class DbSnapshot extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_instance_identifier: this._dbInstanceIdentifier,
-      db_snapshot_identifier: this._dbSnapshotIdentifier,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
+      db_snapshot_identifier: cdktf.stringToTerraform(this._dbSnapshotIdentifier),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: dbSnapshotTimeoutsToTerraform(this._timeouts),
     };
   }
 }

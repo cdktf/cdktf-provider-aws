@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRamResourceShareConfig extends TerraformMetaArguments {
+export interface DataAwsRamResourceShareConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly resourceOwner: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface DataAwsRamResourceShareFilter {
   readonly values: string[];
 }
 
+function dataAwsRamResourceShareFilterToTerraform(struct?: DataAwsRamResourceShareFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsRamResourceShare extends TerraformDataSource {
+export class DataAwsRamResourceShare extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -132,10 +140,10 @@ export class DataAwsRamResourceShare extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      resource_owner: this._resourceOwner,
-      tags: this._tags,
-      filter: this._filter,
+      name: cdktf.stringToTerraform(this._name),
+      resource_owner: cdktf.stringToTerraform(this._resourceOwner),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsRamResourceShareFilterToTerraform)(this._filter),
     };
   }
 }

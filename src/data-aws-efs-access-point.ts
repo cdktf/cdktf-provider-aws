@@ -2,17 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEfsAccessPointConfig extends TerraformMetaArguments {
+export interface DataAwsEfsAccessPointConfig extends cdktf.TerraformMetaArguments {
   readonly accessPointId: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsEfsAccessPointPosixUser extends ComplexComputedList {
+export class DataAwsEfsAccessPointPosixUser extends cdktf.ComplexComputedList {
 
   // gid - computed: true, optional: false, required: false
   public get gid() {
@@ -29,7 +27,7 @@ export class DataAwsEfsAccessPointPosixUser extends ComplexComputedList {
     return this.getNumberAttribute('uid');
   }
 }
-export class DataAwsEfsAccessPointRootDirectoryCreationInfo extends ComplexComputedList {
+export class DataAwsEfsAccessPointRootDirectoryCreationInfo extends cdktf.ComplexComputedList {
 
   // owner_gid - computed: true, optional: false, required: false
   public get ownerGid() {
@@ -46,7 +44,7 @@ export class DataAwsEfsAccessPointRootDirectoryCreationInfo extends ComplexCompu
     return this.getStringAttribute('permissions');
   }
 }
-export class DataAwsEfsAccessPointRootDirectory extends ComplexComputedList {
+export class DataAwsEfsAccessPointRootDirectory extends cdktf.ComplexComputedList {
 
   // creation_info - computed: true, optional: false, required: false
   public get creationInfo() {
@@ -61,7 +59,7 @@ export class DataAwsEfsAccessPointRootDirectory extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsEfsAccessPoint extends TerraformDataSource {
+export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -156,8 +154,8 @@ export class DataAwsEfsAccessPoint extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_point_id: this._accessPointId,
-      tags: this._tags,
+      access_point_id: cdktf.stringToTerraform(this._accessPointId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

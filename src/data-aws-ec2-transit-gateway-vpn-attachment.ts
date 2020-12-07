@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2TransitGatewayVpnAttachmentConfig extends TerraformMetaArguments {
+export interface DataAwsEc2TransitGatewayVpnAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly transitGatewayId?: string;
   readonly vpnConnectionId?: string;
@@ -19,9 +18,18 @@ export interface DataAwsEc2TransitGatewayVpnAttachmentFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2TransitGatewayVpnAttachmentFilterToTerraform(struct?: DataAwsEc2TransitGatewayVpnAttachmentFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2TransitGatewayVpnAttachment extends TerraformDataSource {
+export class DataAwsEc2TransitGatewayVpnAttachment extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +131,10 @@ export class DataAwsEc2TransitGatewayVpnAttachment extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      transit_gateway_id: this._transitGatewayId,
-      vpn_connection_id: this._vpnConnectionId,
-      filter: this._filter,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      vpn_connection_id: cdktf.stringToTerraform(this._vpnConnectionId),
+      filter: cdktf.listMapper(dataAwsEc2TransitGatewayVpnAttachmentFilterToTerraform)(this._filter),
     };
   }
 }

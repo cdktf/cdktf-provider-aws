@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface QuicksightUserConfig extends TerraformMetaArguments {
+export interface QuicksightUserConfig extends cdktf.TerraformMetaArguments {
   readonly awsAccountId?: string;
   readonly email: string;
   readonly iamArn?: string;
@@ -20,7 +19,7 @@ export interface QuicksightUserConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class QuicksightUser extends TerraformResource {
+export class QuicksightUser extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -186,14 +185,14 @@ export class QuicksightUser extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: this._awsAccountId,
-      email: this._email,
-      iam_arn: this._iamArn,
-      identity_type: this._identityType,
-      namespace: this._namespace,
-      session_name: this._sessionName,
-      user_name: this._userName,
-      user_role: this._userRole,
+      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
+      email: cdktf.stringToTerraform(this._email),
+      iam_arn: cdktf.stringToTerraform(this._iamArn),
+      identity_type: cdktf.stringToTerraform(this._identityType),
+      namespace: cdktf.stringToTerraform(this._namespace),
+      session_name: cdktf.stringToTerraform(this._sessionName),
+      user_name: cdktf.stringToTerraform(this._userName),
+      user_role: cdktf.stringToTerraform(this._userRole),
     };
   }
 }

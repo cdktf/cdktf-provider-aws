@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AmiLaunchPermissionConfig extends TerraformMetaArguments {
+export interface AmiLaunchPermissionConfig extends cdktf.TerraformMetaArguments {
   readonly accountId: string;
   readonly imageId: string;
 }
 
 // Resource
 
-export class AmiLaunchPermission extends TerraformResource {
+export class AmiLaunchPermission extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class AmiLaunchPermission extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      image_id: this._imageId,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      image_id: cdktf.stringToTerraform(this._imageId),
     };
   }
 }

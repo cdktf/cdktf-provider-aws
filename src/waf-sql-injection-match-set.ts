@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafSqlInjectionMatchSetConfig extends TerraformMetaArguments {
+export interface WafSqlInjectionMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** sql_injection_match_tuples block */
   readonly sqlInjectionMatchTuples?: WafSqlInjectionMatchSetSqlInjectionMatchTuples[];
@@ -16,15 +15,33 @@ export interface WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchToTerraform(struct?: WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafSqlInjectionMatchSetSqlInjectionMatchTuples {
   readonly textTransformation: string;
   /** field_to_match block */
   readonly fieldToMatch: WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch[];
 }
 
+function wafSqlInjectionMatchSetSqlInjectionMatchTuplesToTerraform(struct?: WafSqlInjectionMatchSetSqlInjectionMatchTuples): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafSqlInjectionMatchSet extends TerraformResource {
+export class WafSqlInjectionMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,8 +106,8 @@ export class WafSqlInjectionMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      sql_injection_match_tuples: this._sqlInjectionMatchTuples,
+      name: cdktf.stringToTerraform(this._name),
+      sql_injection_match_tuples: cdktf.listMapper(wafSqlInjectionMatchSetSqlInjectionMatchTuplesToTerraform)(this._sqlInjectionMatchTuples),
     };
   }
 }

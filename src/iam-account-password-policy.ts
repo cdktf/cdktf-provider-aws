@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamAccountPasswordPolicyConfig extends TerraformMetaArguments {
+export interface IamAccountPasswordPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly allowUsersToChangePassword?: boolean;
   readonly hardExpiry?: boolean;
   readonly maxPasswordAge?: number;
@@ -21,7 +20,7 @@ export interface IamAccountPasswordPolicyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamAccountPasswordPolicy extends TerraformResource {
+export class IamAccountPasswordPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -213,15 +212,15 @@ export class IamAccountPasswordPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_users_to_change_password: this._allowUsersToChangePassword,
-      hard_expiry: this._hardExpiry,
-      max_password_age: this._maxPasswordAge,
-      minimum_password_length: this._minimumPasswordLength,
-      password_reuse_prevention: this._passwordReusePrevention,
-      require_lowercase_characters: this._requireLowercaseCharacters,
-      require_numbers: this._requireNumbers,
-      require_symbols: this._requireSymbols,
-      require_uppercase_characters: this._requireUppercaseCharacters,
+      allow_users_to_change_password: cdktf.booleanToTerraform(this._allowUsersToChangePassword),
+      hard_expiry: cdktf.booleanToTerraform(this._hardExpiry),
+      max_password_age: cdktf.numberToTerraform(this._maxPasswordAge),
+      minimum_password_length: cdktf.numberToTerraform(this._minimumPasswordLength),
+      password_reuse_prevention: cdktf.numberToTerraform(this._passwordReusePrevention),
+      require_lowercase_characters: cdktf.booleanToTerraform(this._requireLowercaseCharacters),
+      require_numbers: cdktf.booleanToTerraform(this._requireNumbers),
+      require_symbols: cdktf.booleanToTerraform(this._requireSymbols),
+      require_uppercase_characters: cdktf.booleanToTerraform(this._requireUppercaseCharacters),
     };
   }
 }

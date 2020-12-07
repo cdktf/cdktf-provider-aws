@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointServiceAllowedPrincipalConfig extends TerraformMetaArguments {
+export interface VpcEndpointServiceAllowedPrincipalConfig extends cdktf.TerraformMetaArguments {
   readonly principalArn: string;
   readonly vpcEndpointServiceId: string;
 }
 
 // Resource
 
-export class VpcEndpointServiceAllowedPrincipal extends TerraformResource {
+export class VpcEndpointServiceAllowedPrincipal extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,8 +75,8 @@ export class VpcEndpointServiceAllowedPrincipal extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      principal_arn: this._principalArn,
-      vpc_endpoint_service_id: this._vpcEndpointServiceId,
+      principal_arn: cdktf.stringToTerraform(this._principalArn),
+      vpc_endpoint_service_id: cdktf.stringToTerraform(this._vpcEndpointServiceId),
     };
   }
 }

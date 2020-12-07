@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BatchComputeEnvironmentConfig extends TerraformMetaArguments {
+export interface BatchComputeEnvironmentConfig extends cdktf.TerraformMetaArguments {
   readonly computeEnvironmentName?: string;
   readonly computeEnvironmentNamePrefix?: string;
   readonly serviceRole: string;
@@ -21,6 +20,16 @@ export interface BatchComputeEnvironmentComputeResourcesLaunchTemplate {
   readonly launchTemplateName?: string;
   readonly version?: string;
 }
+
+function batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform(struct?: BatchComputeEnvironmentComputeResourcesLaunchTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
+    launch_template_name: cdktf.stringToTerraform(struct!.launchTemplateName),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface BatchComputeEnvironmentComputeResources {
   readonly allocationStrategy?: string;
   readonly bidPercentage?: number;
@@ -40,9 +49,31 @@ export interface BatchComputeEnvironmentComputeResources {
   readonly launchTemplate?: BatchComputeEnvironmentComputeResourcesLaunchTemplate[];
 }
 
+function batchComputeEnvironmentComputeResourcesToTerraform(struct?: BatchComputeEnvironmentComputeResources): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+    bid_percentage: cdktf.numberToTerraform(struct!.bidPercentage),
+    desired_vcpus: cdktf.numberToTerraform(struct!.desiredVcpus),
+    ec2_key_pair: cdktf.stringToTerraform(struct!.ec2KeyPair),
+    image_id: cdktf.stringToTerraform(struct!.imageId),
+    instance_role: cdktf.stringToTerraform(struct!.instanceRole),
+    instance_type: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceType),
+    max_vcpus: cdktf.numberToTerraform(struct!.maxVcpus),
+    min_vcpus: cdktf.numberToTerraform(struct!.minVcpus),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
+    spot_iam_fleet_role: cdktf.stringToTerraform(struct!.spotIamFleetRole),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    type: cdktf.stringToTerraform(struct!.type),
+    launch_template: cdktf.listMapper(batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform)(struct!.launchTemplate),
+  }
+}
+
+
 // Resource
 
-export class BatchComputeEnvironment extends TerraformResource {
+export class BatchComputeEnvironment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -197,12 +228,12 @@ export class BatchComputeEnvironment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_environment_name: this._computeEnvironmentName,
-      compute_environment_name_prefix: this._computeEnvironmentNamePrefix,
-      service_role: this._serviceRole,
-      state: this._state,
-      type: this._type,
-      compute_resources: this._computeResources,
+      compute_environment_name: cdktf.stringToTerraform(this._computeEnvironmentName),
+      compute_environment_name_prefix: cdktf.stringToTerraform(this._computeEnvironmentNamePrefix),
+      service_role: cdktf.stringToTerraform(this._serviceRole),
+      state: cdktf.stringToTerraform(this._state),
+      type: cdktf.stringToTerraform(this._type),
+      compute_resources: cdktf.listMapper(batchComputeEnvironmentComputeResourcesToTerraform)(this._computeResources),
     };
   }
 }

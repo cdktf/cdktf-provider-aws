@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxHostedPublicVirtualInterfaceConfig extends TerraformMetaArguments {
+export interface DxHostedPublicVirtualInterfaceConfig extends cdktf.TerraformMetaArguments {
   readonly addressFamily: string;
   readonly amazonAddress?: string;
   readonly bgpAsn: number;
@@ -26,9 +25,18 @@ export interface DxHostedPublicVirtualInterfaceTimeouts {
   readonly delete?: string;
 }
 
+function dxHostedPublicVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedPublicVirtualInterfaceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DxHostedPublicVirtualInterface extends TerraformResource {
+export class DxHostedPublicVirtualInterface extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -243,17 +251,17 @@ export class DxHostedPublicVirtualInterface extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_family: this._addressFamily,
-      amazon_address: this._amazonAddress,
-      bgp_asn: this._bgpAsn,
-      bgp_auth_key: this._bgpAuthKey,
-      connection_id: this._connectionId,
-      customer_address: this._customerAddress,
-      name: this._name,
-      owner_account_id: this._ownerAccountId,
-      route_filter_prefixes: this._routeFilterPrefixes,
-      vlan: this._vlan,
-      timeouts: this._timeouts,
+      address_family: cdktf.stringToTerraform(this._addressFamily),
+      amazon_address: cdktf.stringToTerraform(this._amazonAddress),
+      bgp_asn: cdktf.numberToTerraform(this._bgpAsn),
+      bgp_auth_key: cdktf.stringToTerraform(this._bgpAuthKey),
+      connection_id: cdktf.stringToTerraform(this._connectionId),
+      customer_address: cdktf.stringToTerraform(this._customerAddress),
+      name: cdktf.stringToTerraform(this._name),
+      owner_account_id: cdktf.stringToTerraform(this._ownerAccountId),
+      route_filter_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._routeFilterPrefixes),
+      vlan: cdktf.numberToTerraform(this._vlan),
+      timeouts: dxHostedPublicVirtualInterfaceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EfsMountTargetConfig extends TerraformMetaArguments {
+export interface EfsMountTargetConfig extends cdktf.TerraformMetaArguments {
   readonly fileSystemId: string;
   readonly ipAddress?: string;
   readonly securityGroups?: string[];
@@ -16,7 +15,7 @@ export interface EfsMountTargetConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class EfsMountTarget extends TerraformResource {
+export class EfsMountTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -147,10 +146,10 @@ export class EfsMountTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      file_system_id: this._fileSystemId,
-      ip_address: this._ipAddress,
-      security_groups: this._securityGroups,
-      subnet_id: this._subnetId,
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
+      ip_address: cdktf.stringToTerraform(this._ipAddress),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
     };
   }
 }

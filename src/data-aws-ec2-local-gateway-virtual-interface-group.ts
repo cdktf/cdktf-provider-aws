@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2LocalGatewayVirtualInterfaceGroupConfig extends TerraformMetaArguments {
+export interface DataAwsEc2LocalGatewayVirtualInterfaceGroupConfig extends cdktf.TerraformMetaArguments {
   readonly localGatewayId?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsEc2LocalGatewayVirtualInterfaceGroupFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2LocalGatewayVirtualInterfaceGroupFilterToTerraform(struct?: DataAwsEc2LocalGatewayVirtualInterfaceGroupFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2LocalGatewayVirtualInterfaceGroup extends TerraformDataSource {
+export class DataAwsEc2LocalGatewayVirtualInterfaceGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -110,9 +118,9 @@ export class DataAwsEc2LocalGatewayVirtualInterfaceGroup extends TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      local_gateway_id: this._localGatewayId,
-      tags: this._tags,
-      filter: this._filter,
+      local_gateway_id: cdktf.stringToTerraform(this._localGatewayId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEc2LocalGatewayVirtualInterfaceGroupFilterToTerraform)(this._filter),
     };
   }
 }

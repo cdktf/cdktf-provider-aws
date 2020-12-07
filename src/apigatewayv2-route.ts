@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2RouteConfig extends TerraformMetaArguments {
+export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly apiKeyRequired?: boolean;
   readonly authorizationScopes?: string[];
@@ -23,7 +22,7 @@ export interface Apigatewayv2RouteConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Apigatewayv2Route extends TerraformResource {
+export class Apigatewayv2Route extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -238,17 +237,17 @@ export class Apigatewayv2Route extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      api_key_required: this._apiKeyRequired,
-      authorization_scopes: this._authorizationScopes,
-      authorization_type: this._authorizationType,
-      authorizer_id: this._authorizerId,
-      model_selection_expression: this._modelSelectionExpression,
-      operation_name: this._operationName,
-      request_models: this._requestModels,
-      route_key: this._routeKey,
-      route_response_selection_expression: this._routeResponseSelectionExpression,
-      target: this._target,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      api_key_required: cdktf.booleanToTerraform(this._apiKeyRequired),
+      authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
+      authorization_type: cdktf.stringToTerraform(this._authorizationType),
+      authorizer_id: cdktf.stringToTerraform(this._authorizerId),
+      model_selection_expression: cdktf.stringToTerraform(this._modelSelectionExpression),
+      operation_name: cdktf.stringToTerraform(this._operationName),
+      request_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestModels),
+      route_key: cdktf.stringToTerraform(this._routeKey),
+      route_response_selection_expression: cdktf.stringToTerraform(this._routeResponseSelectionExpression),
+      target: cdktf.stringToTerraform(this._target),
     };
   }
 }

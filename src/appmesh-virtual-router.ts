@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppmeshVirtualRouterConfig extends TerraformMetaArguments {
+export interface AppmeshVirtualRouterConfig extends cdktf.TerraformMetaArguments {
   readonly meshName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -18,19 +17,45 @@ export interface AppmeshVirtualRouterSpecListenerPortMapping {
   readonly port: number;
   readonly protocol: string;
 }
+
+function appmeshVirtualRouterSpecListenerPortMappingToTerraform(struct?: AppmeshVirtualRouterSpecListenerPortMapping): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    port: cdktf.numberToTerraform(struct!.port),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+  }
+}
+
 export interface AppmeshVirtualRouterSpecListener {
   /** port_mapping block */
   readonly portMapping: AppmeshVirtualRouterSpecListenerPortMapping[];
 }
+
+function appmeshVirtualRouterSpecListenerToTerraform(struct?: AppmeshVirtualRouterSpecListener): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    port_mapping: cdktf.listMapper(appmeshVirtualRouterSpecListenerPortMappingToTerraform)(struct!.portMapping),
+  }
+}
+
 export interface AppmeshVirtualRouterSpec {
   readonly serviceNames?: string[];
   /** listener block */
   readonly listener: AppmeshVirtualRouterSpecListener[];
 }
 
+function appmeshVirtualRouterSpecToTerraform(struct?: AppmeshVirtualRouterSpec): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    service_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceNames),
+    listener: cdktf.listMapper(appmeshVirtualRouterSpecListenerToTerraform)(struct!.listener),
+  }
+}
+
+
 // Resource
 
-export class AppmeshVirtualRouter extends TerraformResource {
+export class AppmeshVirtualRouter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -138,10 +163,10 @@ export class AppmeshVirtualRouter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mesh_name: this._meshName,
-      name: this._name,
-      tags: this._tags,
-      spec: this._spec,
+      mesh_name: cdktf.stringToTerraform(this._meshName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      spec: cdktf.listMapper(appmeshVirtualRouterSpecToTerraform)(this._spec),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxHostedTransitVirtualInterfaceAccepterConfig extends TerraformMetaArguments {
+export interface DxHostedTransitVirtualInterfaceAccepterConfig extends cdktf.TerraformMetaArguments {
   readonly dxGatewayId: string;
   readonly tags?: { [key: string]: string };
   readonly virtualInterfaceId: string;
@@ -19,9 +18,18 @@ export interface DxHostedTransitVirtualInterfaceAccepterTimeouts {
   readonly delete?: string;
 }
 
+function dxHostedTransitVirtualInterfaceAccepterTimeoutsToTerraform(struct?: DxHostedTransitVirtualInterfaceAccepterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DxHostedTransitVirtualInterfaceAccepter extends TerraformResource {
+export class DxHostedTransitVirtualInterfaceAccepter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -122,10 +130,10 @@ export class DxHostedTransitVirtualInterfaceAccepter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dx_gateway_id: this._dxGatewayId,
-      tags: this._tags,
-      virtual_interface_id: this._virtualInterfaceId,
-      timeouts: this._timeouts,
+      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
+      timeouts: dxHostedTransitVirtualInterfaceAccepterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamUserLoginProfileConfig extends TerraformMetaArguments {
+export interface IamUserLoginProfileConfig extends cdktf.TerraformMetaArguments {
   readonly passwordLength?: number;
   readonly passwordResetRequired?: boolean;
   readonly pgpKey: string;
@@ -16,7 +15,7 @@ export interface IamUserLoginProfileConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamUserLoginProfile extends TerraformResource {
+export class IamUserLoginProfile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -122,10 +121,10 @@ export class IamUserLoginProfile extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      password_length: this._passwordLength,
-      password_reset_required: this._passwordResetRequired,
-      pgp_key: this._pgpKey,
-      user: this._user,
+      password_length: cdktf.numberToTerraform(this._passwordLength),
+      password_reset_required: cdktf.booleanToTerraform(this._passwordResetRequired),
+      pgp_key: cdktf.stringToTerraform(this._pgpKey),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

@@ -2,20 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcsContainerDefinitionConfig extends TerraformMetaArguments {
+export interface DataAwsEcsContainerDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly containerName: string;
   readonly taskDefinition: string;
 }
 
 // Resource
 
-export class DataAwsEcsContainerDefinition extends TerraformDataSource {
+export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -65,12 +63,12 @@ export class DataAwsEcsContainerDefinition extends TerraformDataSource {
 
   // docker_labels - computed: true, optional: false, required: false
   public dockerLabels(key: string): string {
-    return new StringMap(this, 'docker_labels').lookup(key);
+    return new cdktf.StringMap(this, 'docker_labels').lookup(key);
   }
 
   // environment - computed: true, optional: false, required: false
   public environment(key: string): string {
-    return new StringMap(this, 'environment').lookup(key);
+    return new cdktf.StringMap(this, 'environment').lookup(key);
   }
 
   // id - computed: true, optional: true, required: false
@@ -117,8 +115,8 @@ export class DataAwsEcsContainerDefinition extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container_name: this._containerName,
-      task_definition: this._taskDefinition,
+      container_name: cdktf.stringToTerraform(this._containerName),
+      task_definition: cdktf.stringToTerraform(this._taskDefinition),
     };
   }
 }

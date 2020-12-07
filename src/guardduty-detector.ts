@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyDetectorConfig extends TerraformMetaArguments {
+export interface GuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   readonly enable?: boolean;
   readonly findingPublishingFrequency?: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface GuarddutyDetectorConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GuarddutyDetector extends TerraformResource {
+export class GuarddutyDetector extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -110,9 +109,9 @@ export class GuarddutyDetector extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable: this._enable,
-      finding_publishing_frequency: this._findingPublishingFrequency,
-      tags: this._tags,
+      enable: cdktf.booleanToTerraform(this._enable),
+      finding_publishing_frequency: cdktf.stringToTerraform(this._findingPublishingFrequency),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

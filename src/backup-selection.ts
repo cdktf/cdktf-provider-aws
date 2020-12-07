@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BackupSelectionConfig extends TerraformMetaArguments {
+export interface BackupSelectionConfig extends cdktf.TerraformMetaArguments {
   readonly iamRoleArn: string;
   readonly name: string;
   readonly planId: string;
@@ -21,9 +20,19 @@ export interface BackupSelectionSelectionTag {
   readonly value: string;
 }
 
+function backupSelectionSelectionTagToTerraform(struct?: BackupSelectionSelectionTag): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class BackupSelection extends TerraformResource {
+export class BackupSelection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -133,11 +142,11 @@ export class BackupSelection extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      iam_role_arn: this._iamRoleArn,
-      name: this._name,
-      plan_id: this._planId,
-      resources: this._resources,
-      selection_tag: this._selectionTag,
+      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
+      name: cdktf.stringToTerraform(this._name),
+      plan_id: cdktf.stringToTerraform(this._planId),
+      resources: cdktf.listMapper(cdktf.stringToTerraform)(this._resources),
+      selection_tag: cdktf.listMapper(backupSelectionSelectionTagToTerraform)(this._selectionTag),
     };
   }
 }

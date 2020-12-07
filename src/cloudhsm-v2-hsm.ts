@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudhsmV2HsmConfig extends TerraformMetaArguments {
+export interface CloudhsmV2HsmConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly clusterId: string;
   readonly ipAddress?: string;
@@ -21,9 +20,19 @@ export interface CloudhsmV2HsmTimeouts {
   readonly update?: string;
 }
 
+function cloudhsmV2HsmTimeoutsToTerraform(struct?: CloudhsmV2HsmTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class CloudhsmV2Hsm extends TerraformResource {
+export class CloudhsmV2Hsm extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -154,11 +163,11 @@ export class CloudhsmV2Hsm extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      cluster_id: this._clusterId,
-      ip_address: this._ipAddress,
-      subnet_id: this._subnetId,
-      timeouts: this._timeouts,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      cluster_id: cdktf.stringToTerraform(this._clusterId),
+      ip_address: cdktf.stringToTerraform(this._ipAddress),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      timeouts: cloudhsmV2HsmTimeoutsToTerraform(this._timeouts),
     };
   }
 }

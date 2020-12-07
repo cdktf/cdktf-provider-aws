@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsBillingServiceAccountConfig extends TerraformMetaArguments {
+export interface DataAwsBillingServiceAccountConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsBillingServiceAccount extends TerraformDataSource {
+export class DataAwsBillingServiceAccount extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

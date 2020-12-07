@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GameliftAliasConfig extends TerraformMetaArguments {
+export interface GameliftAliasConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -20,9 +19,19 @@ export interface GameliftAliasRoutingStrategy {
   readonly type: string;
 }
 
+function gameliftAliasRoutingStrategyToTerraform(struct?: GameliftAliasRoutingStrategy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fleet_id: cdktf.stringToTerraform(struct!.fleetId),
+    message: cdktf.stringToTerraform(struct!.message),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class GameliftAlias extends TerraformResource {
+export class GameliftAlias extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +132,10 @@ export class GameliftAlias extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      tags: this._tags,
-      routing_strategy: this._routingStrategy,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      routing_strategy: cdktf.listMapper(gameliftAliasRoutingStrategyToTerraform)(this._routingStrategy),
     };
   }
 }

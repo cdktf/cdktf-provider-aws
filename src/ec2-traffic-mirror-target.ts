@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TrafficMirrorTargetConfig extends TerraformMetaArguments {
+export interface Ec2TrafficMirrorTargetConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly networkInterfaceId?: string;
   readonly networkLoadBalancerArn?: string;
@@ -16,7 +15,7 @@ export interface Ec2TrafficMirrorTargetConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2TrafficMirrorTarget extends TerraformResource {
+export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +122,10 @@ export class Ec2TrafficMirrorTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      network_interface_id: this._networkInterfaceId,
-      network_load_balancer_arn: this._networkLoadBalancerArn,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      network_load_balancer_arn: cdktf.stringToTerraform(this._networkLoadBalancerArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

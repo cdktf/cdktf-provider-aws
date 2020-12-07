@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EksNodeGroupConfig extends TerraformMetaArguments {
+export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   readonly amiType?: string;
   readonly clusterName: string;
   readonly diskSize?: number;
@@ -28,14 +26,14 @@ export interface EksNodeGroupConfig extends TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: EksNodeGroupTimeouts;
 }
-export class EksNodeGroupResourcesAutoscalingGroups extends ComplexComputedList {
+export class EksNodeGroupResourcesAutoscalingGroups extends cdktf.ComplexComputedList {
 
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 }
-export class EksNodeGroupResources extends ComplexComputedList {
+export class EksNodeGroupResources extends cdktf.ComplexComputedList {
 
   // autoscaling_groups - computed: true, optional: false, required: false
   public get autoscalingGroups() {
@@ -51,20 +49,49 @@ export interface EksNodeGroupRemoteAccess {
   readonly ec2SshKey?: string;
   readonly sourceSecurityGroupIds?: string[];
 }
+
+function eksNodeGroupRemoteAccessToTerraform(struct?: EksNodeGroupRemoteAccess): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ec2_ssh_key: cdktf.stringToTerraform(struct!.ec2SshKey),
+    source_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sourceSecurityGroupIds),
+  }
+}
+
 export interface EksNodeGroupScalingConfig {
   readonly desiredSize: number;
   readonly maxSize: number;
   readonly minSize: number;
 }
+
+function eksNodeGroupScalingConfigToTerraform(struct?: EksNodeGroupScalingConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    desired_size: cdktf.numberToTerraform(struct!.desiredSize),
+    max_size: cdktf.numberToTerraform(struct!.maxSize),
+    min_size: cdktf.numberToTerraform(struct!.minSize),
+  }
+}
+
 export interface EksNodeGroupTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function eksNodeGroupTimeoutsToTerraform(struct?: EksNodeGroupTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class EksNodeGroup extends TerraformResource {
+export class EksNodeGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -353,21 +380,21 @@ export class EksNodeGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ami_type: this._amiType,
-      cluster_name: this._clusterName,
-      disk_size: this._diskSize,
-      force_update_version: this._forceUpdateVersion,
-      instance_types: this._instanceTypes,
-      labels: this._labels,
-      node_group_name: this._nodeGroupName,
-      node_role_arn: this._nodeRoleArn,
-      release_version: this._releaseVersion,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      version: this._version,
-      remote_access: this._remoteAccess,
-      scaling_config: this._scalingConfig,
-      timeouts: this._timeouts,
+      ami_type: cdktf.stringToTerraform(this._amiType),
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
+      disk_size: cdktf.numberToTerraform(this._diskSize),
+      force_update_version: cdktf.booleanToTerraform(this._forceUpdateVersion),
+      instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceTypes),
+      labels: cdktf.hashMapper(cdktf.anyToTerraform)(this._labels),
+      node_group_name: cdktf.stringToTerraform(this._nodeGroupName),
+      node_role_arn: cdktf.stringToTerraform(this._nodeRoleArn),
+      release_version: cdktf.stringToTerraform(this._releaseVersion),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      version: cdktf.stringToTerraform(this._version),
+      remote_access: cdktf.listMapper(eksNodeGroupRemoteAccessToTerraform)(this._remoteAccess),
+      scaling_config: cdktf.listMapper(eksNodeGroupScalingConfigToTerraform)(this._scalingConfig),
+      timeouts: eksNodeGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

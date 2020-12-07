@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodepipelineConfig extends TerraformMetaArguments {
+export interface CodepipelineConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly roleArn: string;
   readonly tags?: { [key: string]: string };
@@ -20,6 +19,15 @@ export interface CodepipelineArtifactStoreEncryptionKey {
   readonly id: string;
   readonly type: string;
 }
+
+function codepipelineArtifactStoreEncryptionKeyToTerraform(struct?: CodepipelineArtifactStoreEncryptionKey): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface CodepipelineArtifactStore {
   readonly location: string;
   readonly region?: string;
@@ -27,6 +35,17 @@ export interface CodepipelineArtifactStore {
   /** encryption_key block */
   readonly encryptionKey?: CodepipelineArtifactStoreEncryptionKey[];
 }
+
+function codepipelineArtifactStoreToTerraform(struct?: CodepipelineArtifactStore): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    location: cdktf.stringToTerraform(struct!.location),
+    region: cdktf.stringToTerraform(struct!.region),
+    type: cdktf.stringToTerraform(struct!.type),
+    encryption_key: cdktf.listMapper(codepipelineArtifactStoreEncryptionKeyToTerraform)(struct!.encryptionKey),
+  }
+}
+
 export interface CodepipelineStageAction {
   readonly category: string;
   readonly configuration?: { [key: string]: string };
@@ -41,15 +60,43 @@ export interface CodepipelineStageAction {
   readonly runOrder?: number;
   readonly version: string;
 }
+
+function codepipelineStageActionToTerraform(struct?: CodepipelineStageAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    category: cdktf.stringToTerraform(struct!.category),
+    configuration: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.configuration),
+    input_artifacts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.inputArtifacts),
+    name: cdktf.stringToTerraform(struct!.name),
+    namespace: cdktf.stringToTerraform(struct!.namespace),
+    output_artifacts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.outputArtifacts),
+    owner: cdktf.stringToTerraform(struct!.owner),
+    provider: cdktf.stringToTerraform(struct!.provider),
+    region: cdktf.stringToTerraform(struct!.region),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    run_order: cdktf.numberToTerraform(struct!.runOrder),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface CodepipelineStage {
   readonly name: string;
   /** action block */
   readonly action: CodepipelineStageAction[];
 }
 
+function codepipelineStageToTerraform(struct?: CodepipelineStage): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    action: cdktf.listMapper(codepipelineStageActionToTerraform)(struct!.action),
+  }
+}
+
+
 // Resource
 
-export class Codepipeline extends TerraformResource {
+export class Codepipeline extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -161,11 +208,11 @@ export class Codepipeline extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      role_arn: this._roleArn,
-      tags: this._tags,
-      artifact_store: this._artifactStore,
-      stage: this._stage,
+      name: cdktf.stringToTerraform(this._name),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      artifact_store: cdktf.listMapper(codepipelineArtifactStoreToTerraform)(this._artifactStore),
+      stage: cdktf.listMapper(codepipelineStageToTerraform)(this._stage),
     };
   }
 }

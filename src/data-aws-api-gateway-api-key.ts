@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsApiGatewayApiKeyConfig extends TerraformMetaArguments {
+export interface DataAwsApiGatewayApiKeyConfig extends cdktf.TerraformMetaArguments {
   readonly id: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsApiGatewayApiKey extends TerraformDataSource {
+export class DataAwsApiGatewayApiKey extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -104,8 +103,8 @@ export class DataAwsApiGatewayApiKey extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: this._id,
-      tags: this._tags,
+      id: cdktf.stringToTerraform(this._id),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

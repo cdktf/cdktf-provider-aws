@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Wafv2RegexPatternSetConfig extends TerraformMetaArguments {
+export interface Wafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly scope: string;
@@ -19,9 +18,17 @@ export interface Wafv2RegexPatternSetRegularExpression {
   readonly regexString: string;
 }
 
+function wafv2RegexPatternSetRegularExpressionToTerraform(struct?: Wafv2RegexPatternSetRegularExpression): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    regex_string: cdktf.stringToTerraform(struct!.regexString),
+  }
+}
+
+
 // Resource
 
-export class Wafv2RegexPatternSet extends TerraformResource {
+export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -144,11 +151,11 @@ export class Wafv2RegexPatternSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      scope: this._scope,
-      tags: this._tags,
-      regular_expression: this._regularExpression,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      scope: cdktf.stringToTerraform(this._scope),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      regular_expression: cdktf.listMapper(wafv2RegexPatternSetRegularExpressionToTerraform)(this._regularExpression),
     };
   }
 }

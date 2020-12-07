@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRedshiftServiceAccountConfig extends TerraformMetaArguments {
+export interface DataAwsRedshiftServiceAccountConfig extends cdktf.TerraformMetaArguments {
   readonly region?: string;
 }
 
 // Resource
 
-export class DataAwsRedshiftServiceAccount extends TerraformDataSource {
+export class DataAwsRedshiftServiceAccount extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -69,7 +68,7 @@ export class DataAwsRedshiftServiceAccount extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: this._region,
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 }

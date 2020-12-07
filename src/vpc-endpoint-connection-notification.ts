@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointConnectionNotificationConfig extends TerraformMetaArguments {
+export interface VpcEndpointConnectionNotificationConfig extends cdktf.TerraformMetaArguments {
   readonly connectionEvents: string[];
   readonly connectionNotificationArn: string;
   readonly vpcEndpointId?: string;
@@ -16,7 +15,7 @@ export interface VpcEndpointConnectionNotificationConfig extends TerraformMetaAr
 
 // Resource
 
-export class VpcEndpointConnectionNotification extends TerraformResource {
+export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -122,10 +121,10 @@ export class VpcEndpointConnectionNotification extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_events: this._connectionEvents,
-      connection_notification_arn: this._connectionNotificationArn,
-      vpc_endpoint_id: this._vpcEndpointId,
-      vpc_endpoint_service_id: this._vpcEndpointServiceId,
+      connection_events: cdktf.listMapper(cdktf.stringToTerraform)(this._connectionEvents),
+      connection_notification_arn: cdktf.stringToTerraform(this._connectionNotificationArn),
+      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      vpc_endpoint_service_id: cdktf.stringToTerraform(this._vpcEndpointServiceId),
     };
   }
 }

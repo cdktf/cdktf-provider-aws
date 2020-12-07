@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayIntegrationConfig extends TerraformMetaArguments {
+export interface ApiGatewayIntegrationConfig extends cdktf.TerraformMetaArguments {
   readonly cacheKeyParameters?: string[];
   readonly cacheNamespace?: string;
   readonly connectionId?: string;
@@ -29,7 +28,7 @@ export interface ApiGatewayIntegrationConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayIntegration extends TerraformResource {
+export class ApiGatewayIntegration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -340,23 +339,23 @@ export class ApiGatewayIntegration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_key_parameters: this._cacheKeyParameters,
-      cache_namespace: this._cacheNamespace,
-      connection_id: this._connectionId,
-      connection_type: this._connectionType,
-      content_handling: this._contentHandling,
-      credentials: this._credentials,
-      http_method: this._httpMethod,
-      integration_http_method: this._integrationHttpMethod,
-      passthrough_behavior: this._passthroughBehavior,
-      request_parameters: this._requestParameters,
-      request_parameters_in_json: this._requestParametersInJson,
-      request_templates: this._requestTemplates,
-      resource_id: this._resourceId,
-      rest_api_id: this._restApiId,
-      timeout_milliseconds: this._timeoutMilliseconds,
-      type: this._type,
-      uri: this._uri,
+      cache_key_parameters: cdktf.listMapper(cdktf.stringToTerraform)(this._cacheKeyParameters),
+      cache_namespace: cdktf.stringToTerraform(this._cacheNamespace),
+      connection_id: cdktf.stringToTerraform(this._connectionId),
+      connection_type: cdktf.stringToTerraform(this._connectionType),
+      content_handling: cdktf.stringToTerraform(this._contentHandling),
+      credentials: cdktf.stringToTerraform(this._credentials),
+      http_method: cdktf.stringToTerraform(this._httpMethod),
+      integration_http_method: cdktf.stringToTerraform(this._integrationHttpMethod),
+      passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
+      request_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestParameters),
+      request_parameters_in_json: cdktf.stringToTerraform(this._requestParametersInJson),
+      request_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestTemplates),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
+      type: cdktf.stringToTerraform(this._type),
+      uri: cdktf.stringToTerraform(this._uri),
     };
   }
 }

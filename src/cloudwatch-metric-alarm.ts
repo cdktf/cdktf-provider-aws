@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchMetricAlarmConfig extends TerraformMetaArguments {
+export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArguments {
   readonly actionsEnabled?: boolean;
   readonly alarmActions?: string[];
   readonly alarmDescription?: string;
@@ -40,6 +39,19 @@ export interface CloudwatchMetricAlarmMetricQueryMetric {
   readonly stat: string;
   readonly unit?: string;
 }
+
+function cloudwatchMetricAlarmMetricQueryMetricToTerraform(struct?: CloudwatchMetricAlarmMetricQueryMetric): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.dimensions),
+    metric_name: cdktf.stringToTerraform(struct!.metricName),
+    namespace: cdktf.stringToTerraform(struct!.namespace),
+    period: cdktf.numberToTerraform(struct!.period),
+    stat: cdktf.stringToTerraform(struct!.stat),
+    unit: cdktf.stringToTerraform(struct!.unit),
+  }
+}
+
 export interface CloudwatchMetricAlarmMetricQuery {
   readonly expression?: string;
   readonly id: string;
@@ -49,9 +61,21 @@ export interface CloudwatchMetricAlarmMetricQuery {
   readonly metric?: CloudwatchMetricAlarmMetricQueryMetric[];
 }
 
+function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchMetricAlarmMetricQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    expression: cdktf.stringToTerraform(struct!.expression),
+    id: cdktf.stringToTerraform(struct!.id),
+    label: cdktf.stringToTerraform(struct!.label),
+    return_data: cdktf.booleanToTerraform(struct!.returnData),
+    metric: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryMetricToTerraform)(struct!.metric),
+  }
+}
+
+
 // Resource
 
-export class CloudwatchMetricAlarm extends TerraformResource {
+export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -455,28 +479,28 @@ export class CloudwatchMetricAlarm extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      actions_enabled: this._actionsEnabled,
-      alarm_actions: this._alarmActions,
-      alarm_description: this._alarmDescription,
-      alarm_name: this._alarmName,
-      comparison_operator: this._comparisonOperator,
-      datapoints_to_alarm: this._datapointsToAlarm,
-      dimensions: this._dimensions,
-      evaluate_low_sample_count_percentiles: this._evaluateLowSampleCountPercentiles,
-      evaluation_periods: this._evaluationPeriods,
-      extended_statistic: this._extendedStatistic,
-      insufficient_data_actions: this._insufficientDataActions,
-      metric_name: this._metricName,
-      namespace: this._namespace,
-      ok_actions: this._okActions,
-      period: this._period,
-      statistic: this._statistic,
-      tags: this._tags,
-      threshold: this._threshold,
-      threshold_metric_id: this._thresholdMetricId,
-      treat_missing_data: this._treatMissingData,
-      unit: this._unit,
-      metric_query: this._metricQuery,
+      actions_enabled: cdktf.booleanToTerraform(this._actionsEnabled),
+      alarm_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._alarmActions),
+      alarm_description: cdktf.stringToTerraform(this._alarmDescription),
+      alarm_name: cdktf.stringToTerraform(this._alarmName),
+      comparison_operator: cdktf.stringToTerraform(this._comparisonOperator),
+      datapoints_to_alarm: cdktf.numberToTerraform(this._datapointsToAlarm),
+      dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(this._dimensions),
+      evaluate_low_sample_count_percentiles: cdktf.stringToTerraform(this._evaluateLowSampleCountPercentiles),
+      evaluation_periods: cdktf.numberToTerraform(this._evaluationPeriods),
+      extended_statistic: cdktf.stringToTerraform(this._extendedStatistic),
+      insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._insufficientDataActions),
+      metric_name: cdktf.stringToTerraform(this._metricName),
+      namespace: cdktf.stringToTerraform(this._namespace),
+      ok_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._okActions),
+      period: cdktf.numberToTerraform(this._period),
+      statistic: cdktf.stringToTerraform(this._statistic),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      threshold: cdktf.numberToTerraform(this._threshold),
+      threshold_metric_id: cdktf.stringToTerraform(this._thresholdMetricId),
+      treat_missing_data: cdktf.stringToTerraform(this._treatMissingData),
+      unit: cdktf.stringToTerraform(this._unit),
+      metric_query: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryToTerraform)(this._metricQuery),
     };
   }
 }

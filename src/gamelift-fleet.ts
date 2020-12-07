@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GameliftFleetConfig extends TerraformMetaArguments {
+export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
   readonly buildId: string;
   readonly description?: string;
   readonly ec2InstanceType: string;
@@ -32,29 +31,78 @@ export interface GameliftFleetEc2InboundPermission {
   readonly protocol: string;
   readonly toPort: number;
 }
+
+function gameliftFleetEc2InboundPermissionToTerraform(struct?: GameliftFleetEc2InboundPermission): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    ip_range: cdktf.stringToTerraform(struct!.ipRange),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface GameliftFleetResourceCreationLimitPolicy {
   readonly newGameSessionsPerCreator?: number;
   readonly policyPeriodInMinutes?: number;
 }
+
+function gameliftFleetResourceCreationLimitPolicyToTerraform(struct?: GameliftFleetResourceCreationLimitPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    new_game_sessions_per_creator: cdktf.numberToTerraform(struct!.newGameSessionsPerCreator),
+    policy_period_in_minutes: cdktf.numberToTerraform(struct!.policyPeriodInMinutes),
+  }
+}
+
 export interface GameliftFleetRuntimeConfigurationServerProcess {
   readonly concurrentExecutions: number;
   readonly launchPath: string;
   readonly parameters?: string;
 }
+
+function gameliftFleetRuntimeConfigurationServerProcessToTerraform(struct?: GameliftFleetRuntimeConfigurationServerProcess): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    concurrent_executions: cdktf.numberToTerraform(struct!.concurrentExecutions),
+    launch_path: cdktf.stringToTerraform(struct!.launchPath),
+    parameters: cdktf.stringToTerraform(struct!.parameters),
+  }
+}
+
 export interface GameliftFleetRuntimeConfiguration {
   readonly gameSessionActivationTimeoutSeconds?: number;
   readonly maxConcurrentGameSessionActivations?: number;
   /** server_process block */
   readonly serverProcess?: GameliftFleetRuntimeConfigurationServerProcess[];
 }
+
+function gameliftFleetRuntimeConfigurationToTerraform(struct?: GameliftFleetRuntimeConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    game_session_activation_timeout_seconds: cdktf.numberToTerraform(struct!.gameSessionActivationTimeoutSeconds),
+    max_concurrent_game_session_activations: cdktf.numberToTerraform(struct!.maxConcurrentGameSessionActivations),
+    server_process: cdktf.listMapper(gameliftFleetRuntimeConfigurationServerProcessToTerraform)(struct!.serverProcess),
+  }
+}
+
 export interface GameliftFleetTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
+function gameliftFleetTimeoutsToTerraform(struct?: GameliftFleetTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class GameliftFleet extends TerraformResource {
+export class GameliftFleet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -315,19 +363,19 @@ export class GameliftFleet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      build_id: this._buildId,
-      description: this._description,
-      ec2_instance_type: this._ec2InstanceType,
-      fleet_type: this._fleetType,
-      instance_role_arn: this._instanceRoleArn,
-      metric_groups: this._metricGroups,
-      name: this._name,
-      new_game_session_protection_policy: this._newGameSessionProtectionPolicy,
-      tags: this._tags,
-      ec2_inbound_permission: this._ec2InboundPermission,
-      resource_creation_limit_policy: this._resourceCreationLimitPolicy,
-      runtime_configuration: this._runtimeConfiguration,
-      timeouts: this._timeouts,
+      build_id: cdktf.stringToTerraform(this._buildId),
+      description: cdktf.stringToTerraform(this._description),
+      ec2_instance_type: cdktf.stringToTerraform(this._ec2InstanceType),
+      fleet_type: cdktf.stringToTerraform(this._fleetType),
+      instance_role_arn: cdktf.stringToTerraform(this._instanceRoleArn),
+      metric_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._metricGroups),
+      name: cdktf.stringToTerraform(this._name),
+      new_game_session_protection_policy: cdktf.stringToTerraform(this._newGameSessionProtectionPolicy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      ec2_inbound_permission: cdktf.listMapper(gameliftFleetEc2InboundPermissionToTerraform)(this._ec2InboundPermission),
+      resource_creation_limit_policy: cdktf.listMapper(gameliftFleetResourceCreationLimitPolicyToTerraform)(this._resourceCreationLimitPolicy),
+      runtime_configuration: cdktf.listMapper(gameliftFleetRuntimeConfigurationToTerraform)(this._runtimeConfiguration),
+      timeouts: gameliftFleetTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NeptuneParameterGroupConfig extends TerraformMetaArguments {
+export interface NeptuneParameterGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly family: string;
   readonly name: string;
@@ -21,9 +20,19 @@ export interface NeptuneParameterGroupParameter {
   readonly value: string;
 }
 
+function neptuneParameterGroupParameterToTerraform(struct?: NeptuneParameterGroupParameter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    apply_method: cdktf.stringToTerraform(struct!.applyMethod),
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class NeptuneParameterGroup extends TerraformResource {
+export class NeptuneParameterGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -141,11 +150,11 @@ export class NeptuneParameterGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      family: this._family,
-      name: this._name,
-      tags: this._tags,
-      parameter: this._parameter,
+      description: cdktf.stringToTerraform(this._description),
+      family: cdktf.stringToTerraform(this._family),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      parameter: cdktf.listMapper(neptuneParameterGroupParameterToTerraform)(this._parameter),
     };
   }
 }

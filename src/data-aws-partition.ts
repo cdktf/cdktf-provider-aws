@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsPartitionConfig extends TerraformMetaArguments {
+export interface DataAwsPartitionConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsPartition extends TerraformDataSource {
+export class DataAwsPartition extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

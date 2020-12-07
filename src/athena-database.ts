@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AthenaDatabaseConfig extends TerraformMetaArguments {
+export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly forceDestroy?: boolean;
   readonly name: string;
@@ -19,9 +18,18 @@ export interface AthenaDatabaseEncryptionConfiguration {
   readonly kmsKey?: string;
 }
 
+function athenaDatabaseEncryptionConfigurationToTerraform(struct?: AthenaDatabaseEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
+    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+  }
+}
+
+
 // Resource
 
-export class AthenaDatabase extends TerraformResource {
+export class AthenaDatabase extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -117,10 +125,10 @@ export class AthenaDatabase extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      force_destroy: this._forceDestroy,
-      name: this._name,
-      encryption_configuration: this._encryptionConfiguration,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      name: cdktf.stringToTerraform(this._name),
+      encryption_configuration: cdktf.listMapper(athenaDatabaseEncryptionConfigurationToTerraform)(this._encryptionConfiguration),
     };
   }
 }

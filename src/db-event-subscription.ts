@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbEventSubscriptionConfig extends TerraformMetaArguments {
+export interface DbEventSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly enabled?: boolean;
   readonly eventCategories?: string[];
   readonly name?: string;
@@ -25,9 +24,19 @@ export interface DbEventSubscriptionTimeouts {
   readonly update?: string;
 }
 
+function dbEventSubscriptionTimeoutsToTerraform(struct?: DbEventSubscriptionTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DbEventSubscription extends TerraformResource {
+export class DbEventSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -221,15 +230,15 @@ export class DbEventSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: this._enabled,
-      event_categories: this._eventCategories,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      sns_topic: this._snsTopic,
-      source_ids: this._sourceIds,
-      source_type: this._sourceType,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      event_categories: cdktf.listMapper(cdktf.stringToTerraform)(this._eventCategories),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      sns_topic: cdktf.stringToTerraform(this._snsTopic),
+      source_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._sourceIds),
+      source_type: cdktf.stringToTerraform(this._sourceType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: dbEventSubscriptionTimeoutsToTerraform(this._timeouts),
     };
   }
 }

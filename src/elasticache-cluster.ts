@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticacheClusterConfig extends TerraformMetaArguments {
+export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly availabilityZone?: string;
   readonly availabilityZones?: string[];
@@ -33,7 +31,7 @@ export interface ElasticacheClusterConfig extends TerraformMetaArguments {
   readonly subnetGroupName?: string;
   readonly tags?: { [key: string]: string };
 }
-export class ElasticacheClusterCacheNodes extends ComplexComputedList {
+export class ElasticacheClusterCacheNodes extends cdktf.ComplexComputedList {
 
   // address - computed: true, optional: false, required: false
   public get address() {
@@ -58,7 +56,7 @@ export class ElasticacheClusterCacheNodes extends ComplexComputedList {
 
 // Resource
 
-export class ElasticacheCluster extends TerraformResource {
+export class ElasticacheCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -500,29 +498,29 @@ export class ElasticacheCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      availability_zone: this._availabilityZone,
-      availability_zones: this._availabilityZones,
-      az_mode: this._azMode,
-      cluster_id: this._clusterId,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      maintenance_window: this._maintenanceWindow,
-      node_type: this._nodeType,
-      notification_topic_arn: this._notificationTopicArn,
-      num_cache_nodes: this._numCacheNodes,
-      parameter_group_name: this._parameterGroupName,
-      port: this._port,
-      preferred_availability_zones: this._preferredAvailabilityZones,
-      replication_group_id: this._replicationGroupId,
-      security_group_ids: this._securityGroupIds,
-      security_group_names: this._securityGroupNames,
-      snapshot_arns: this._snapshotArns,
-      snapshot_name: this._snapshotName,
-      snapshot_retention_limit: this._snapshotRetentionLimit,
-      snapshot_window: this._snapshotWindow,
-      subnet_group_name: this._subnetGroupName,
-      tags: this._tags,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      az_mode: cdktf.stringToTerraform(this._azMode),
+      cluster_id: cdktf.stringToTerraform(this._clusterId),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
+      node_type: cdktf.stringToTerraform(this._nodeType),
+      notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
+      num_cache_nodes: cdktf.numberToTerraform(this._numCacheNodes),
+      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
+      port: cdktf.numberToTerraform(this._port),
+      preferred_availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredAvailabilityZones),
+      replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
+      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotArns),
+      snapshot_name: cdktf.stringToTerraform(this._snapshotName),
+      snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
+      snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
+      subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

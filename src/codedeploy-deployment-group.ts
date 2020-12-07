@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodedeployDeploymentGroupConfig extends TerraformMetaArguments {
+export interface CodedeployDeploymentGroupConfig extends cdktf.TerraformMetaArguments {
   readonly appName: string;
   readonly autoscalingGroups?: string[];
   readonly deploymentConfigName?: string;
@@ -39,21 +38,66 @@ export interface CodedeployDeploymentGroupAlarmConfiguration {
   readonly enabled?: boolean;
   readonly ignorePollAlarmFailure?: boolean;
 }
+
+function codedeployDeploymentGroupAlarmConfigurationToTerraform(struct?: CodedeployDeploymentGroupAlarmConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    alarms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.alarms),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    ignore_poll_alarm_failure: cdktf.booleanToTerraform(struct!.ignorePollAlarmFailure),
+  }
+}
+
 export interface CodedeployDeploymentGroupAutoRollbackConfiguration {
   readonly enabled?: boolean;
   readonly events?: string[];
 }
+
+function codedeployDeploymentGroupAutoRollbackConfigurationToTerraform(struct?: CodedeployDeploymentGroupAutoRollbackConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+  }
+}
+
 export interface CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption {
   readonly actionOnTimeout?: string;
   readonly waitTimeInMinutes?: number;
 }
+
+function codedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionToTerraform(struct?: CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action_on_timeout: cdktf.stringToTerraform(struct!.actionOnTimeout),
+    wait_time_in_minutes: cdktf.numberToTerraform(struct!.waitTimeInMinutes),
+  }
+}
+
 export interface CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption {
   readonly action?: string;
 }
+
+function codedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionToTerraform(struct?: CodedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.stringToTerraform(struct!.action),
+  }
+}
+
 export interface CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess {
   readonly action?: string;
   readonly terminationWaitTimeInMinutes?: number;
 }
+
+function codedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessToTerraform(struct?: CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    action: cdktf.stringToTerraform(struct!.action),
+    termination_wait_time_in_minutes: cdktf.numberToTerraform(struct!.terminationWaitTimeInMinutes),
+  }
+}
+
 export interface CodedeployDeploymentGroupBlueGreenDeploymentConfig {
   /** deployment_ready_option block */
   readonly deploymentReadyOption?: CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption[];
@@ -62,43 +106,139 @@ export interface CodedeployDeploymentGroupBlueGreenDeploymentConfig {
   /** terminate_blue_instances_on_deployment_success block */
   readonly terminateBlueInstancesOnDeploymentSuccess?: CodedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess[];
 }
+
+function codedeployDeploymentGroupBlueGreenDeploymentConfigToTerraform(struct?: CodedeployDeploymentGroupBlueGreenDeploymentConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    deployment_ready_option: cdktf.listMapper(codedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionToTerraform)(struct!.deploymentReadyOption),
+    green_fleet_provisioning_option: cdktf.listMapper(codedeployDeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionToTerraform)(struct!.greenFleetProvisioningOption),
+    terminate_blue_instances_on_deployment_success: cdktf.listMapper(codedeployDeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccessToTerraform)(struct!.terminateBlueInstancesOnDeploymentSuccess),
+  }
+}
+
 export interface CodedeployDeploymentGroupDeploymentStyle {
   readonly deploymentOption?: string;
   readonly deploymentType?: string;
 }
+
+function codedeployDeploymentGroupDeploymentStyleToTerraform(struct?: CodedeployDeploymentGroupDeploymentStyle): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    deployment_option: cdktf.stringToTerraform(struct!.deploymentOption),
+    deployment_type: cdktf.stringToTerraform(struct!.deploymentType),
+  }
+}
+
 export interface CodedeployDeploymentGroupEc2TagFilter {
   readonly key?: string;
   readonly type?: string;
   readonly value?: string;
 }
+
+function codedeployDeploymentGroupEc2TagFilterToTerraform(struct?: CodedeployDeploymentGroupEc2TagFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface CodedeployDeploymentGroupEc2TagSetEc2TagFilter {
   readonly key?: string;
   readonly type?: string;
   readonly value?: string;
 }
+
+function codedeployDeploymentGroupEc2TagSetEc2TagFilterToTerraform(struct?: CodedeployDeploymentGroupEc2TagSetEc2TagFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface CodedeployDeploymentGroupEc2TagSet {
   /** ec2_tag_filter block */
   readonly ec2TagFilter?: CodedeployDeploymentGroupEc2TagSetEc2TagFilter[];
 }
+
+function codedeployDeploymentGroupEc2TagSetToTerraform(struct?: CodedeployDeploymentGroupEc2TagSet): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ec2_tag_filter: cdktf.listMapper(codedeployDeploymentGroupEc2TagSetEc2TagFilterToTerraform)(struct!.ec2TagFilter),
+  }
+}
+
 export interface CodedeployDeploymentGroupEcsService {
   readonly clusterName: string;
   readonly serviceName: string;
 }
+
+function codedeployDeploymentGroupEcsServiceToTerraform(struct?: CodedeployDeploymentGroupEcsService): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cluster_name: cdktf.stringToTerraform(struct!.clusterName),
+    service_name: cdktf.stringToTerraform(struct!.serviceName),
+  }
+}
+
 export interface CodedeployDeploymentGroupLoadBalancerInfoElbInfo {
   readonly name?: string;
 }
+
+function codedeployDeploymentGroupLoadBalancerInfoElbInfoToTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoElbInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo {
   readonly name?: string;
 }
+
+function codedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoToTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute {
   readonly listenerArns: string[];
 }
+
+function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteToTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    listener_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.listenerArns),
+  }
+}
+
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup {
   readonly name: string;
 }
+
+function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupToTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute {
   readonly listenerArns: string[];
 }
+
+function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteToTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    listener_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.listenerArns),
+  }
+}
+
 export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo {
   /** prod_traffic_route block */
   readonly prodTrafficRoute: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute[];
@@ -107,6 +247,16 @@ export interface CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo {
   /** test_traffic_route block */
   readonly testTrafficRoute?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute[];
 }
+
+function codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoToTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    prod_traffic_route: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteToTerraform)(struct!.prodTrafficRoute),
+    target_group: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroupToTerraform)(struct!.targetGroup),
+    test_traffic_route: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRouteToTerraform)(struct!.testTrafficRoute),
+  }
+}
+
 export interface CodedeployDeploymentGroupLoadBalancerInfo {
   /** elb_info block */
   readonly elbInfo?: CodedeployDeploymentGroupLoadBalancerInfoElbInfo[];
@@ -115,20 +265,50 @@ export interface CodedeployDeploymentGroupLoadBalancerInfo {
   /** target_group_pair_info block */
   readonly targetGroupPairInfo?: CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfo[];
 }
+
+function codedeployDeploymentGroupLoadBalancerInfoToTerraform(struct?: CodedeployDeploymentGroupLoadBalancerInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    elb_info: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoElbInfoToTerraform)(struct!.elbInfo),
+    target_group_info: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupInfoToTerraform)(struct!.targetGroupInfo),
+    target_group_pair_info: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoToTerraform)(struct!.targetGroupPairInfo),
+  }
+}
+
 export interface CodedeployDeploymentGroupOnPremisesInstanceTagFilter {
   readonly key?: string;
   readonly type?: string;
   readonly value?: string;
 }
+
+function codedeployDeploymentGroupOnPremisesInstanceTagFilterToTerraform(struct?: CodedeployDeploymentGroupOnPremisesInstanceTagFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    type: cdktf.stringToTerraform(struct!.type),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface CodedeployDeploymentGroupTriggerConfiguration {
   readonly triggerEvents: string[];
   readonly triggerName: string;
   readonly triggerTargetArn: string;
 }
 
+function codedeployDeploymentGroupTriggerConfigurationToTerraform(struct?: CodedeployDeploymentGroupTriggerConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    trigger_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.triggerEvents),
+    trigger_name: cdktf.stringToTerraform(struct!.triggerName),
+    trigger_target_arn: cdktf.stringToTerraform(struct!.triggerTargetArn),
+  }
+}
+
+
 // Resource
 
-export class CodedeployDeploymentGroup extends TerraformResource {
+export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -408,21 +588,21 @@ export class CodedeployDeploymentGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_name: this._appName,
-      autoscaling_groups: this._autoscalingGroups,
-      deployment_config_name: this._deploymentConfigName,
-      deployment_group_name: this._deploymentGroupName,
-      service_role_arn: this._serviceRoleArn,
-      alarm_configuration: this._alarmConfiguration,
-      auto_rollback_configuration: this._autoRollbackConfiguration,
-      blue_green_deployment_config: this._blueGreenDeploymentConfig,
-      deployment_style: this._deploymentStyle,
-      ec2_tag_filter: this._ec2TagFilter,
-      ec2_tag_set: this._ec2TagSet,
-      ecs_service: this._ecsService,
-      load_balancer_info: this._loadBalancerInfo,
-      on_premises_instance_tag_filter: this._onPremisesInstanceTagFilter,
-      trigger_configuration: this._triggerConfiguration,
+      app_name: cdktf.stringToTerraform(this._appName),
+      autoscaling_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._autoscalingGroups),
+      deployment_config_name: cdktf.stringToTerraform(this._deploymentConfigName),
+      deployment_group_name: cdktf.stringToTerraform(this._deploymentGroupName),
+      service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
+      alarm_configuration: cdktf.listMapper(codedeployDeploymentGroupAlarmConfigurationToTerraform)(this._alarmConfiguration),
+      auto_rollback_configuration: cdktf.listMapper(codedeployDeploymentGroupAutoRollbackConfigurationToTerraform)(this._autoRollbackConfiguration),
+      blue_green_deployment_config: cdktf.listMapper(codedeployDeploymentGroupBlueGreenDeploymentConfigToTerraform)(this._blueGreenDeploymentConfig),
+      deployment_style: cdktf.listMapper(codedeployDeploymentGroupDeploymentStyleToTerraform)(this._deploymentStyle),
+      ec2_tag_filter: cdktf.listMapper(codedeployDeploymentGroupEc2TagFilterToTerraform)(this._ec2TagFilter),
+      ec2_tag_set: cdktf.listMapper(codedeployDeploymentGroupEc2TagSetToTerraform)(this._ec2TagSet),
+      ecs_service: cdktf.listMapper(codedeployDeploymentGroupEcsServiceToTerraform)(this._ecsService),
+      load_balancer_info: cdktf.listMapper(codedeployDeploymentGroupLoadBalancerInfoToTerraform)(this._loadBalancerInfo),
+      on_premises_instance_tag_filter: cdktf.listMapper(codedeployDeploymentGroupOnPremisesInstanceTagFilterToTerraform)(this._onPremisesInstanceTagFilter),
+      trigger_configuration: cdktf.listMapper(codedeployDeploymentGroupTriggerConfigurationToTerraform)(this._triggerConfiguration),
     };
   }
 }

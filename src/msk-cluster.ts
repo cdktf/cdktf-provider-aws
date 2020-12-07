@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface MskClusterConfig extends TerraformMetaArguments {
+export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
   readonly clusterName: string;
   readonly enhancedMonitoring?: string;
   readonly kafkaVersion: string;
@@ -33,39 +32,122 @@ export interface MskClusterBrokerNodeGroupInfo {
   readonly instanceType: string;
   readonly securityGroups: string[];
 }
+
+function mskClusterBrokerNodeGroupInfoToTerraform(struct?: MskClusterBrokerNodeGroupInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    az_distribution: cdktf.stringToTerraform(struct!.azDistribution),
+    client_subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.clientSubnets),
+    ebs_volume_size: cdktf.numberToTerraform(struct!.ebsVolumeSize),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+  }
+}
+
 export interface MskClusterClientAuthenticationTls {
   readonly certificateAuthorityArns?: string[];
 }
+
+function mskClusterClientAuthenticationTlsToTerraform(struct?: MskClusterClientAuthenticationTls): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    certificate_authority_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.certificateAuthorityArns),
+  }
+}
+
 export interface MskClusterClientAuthentication {
   /** tls block */
   readonly tls?: MskClusterClientAuthenticationTls[];
 }
+
+function mskClusterClientAuthenticationToTerraform(struct?: MskClusterClientAuthentication): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    tls: cdktf.listMapper(mskClusterClientAuthenticationTlsToTerraform)(struct!.tls),
+  }
+}
+
 export interface MskClusterConfigurationInfo {
   readonly arn: string;
   readonly revision: number;
 }
+
+function mskClusterConfigurationInfoToTerraform(struct?: MskClusterConfigurationInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    arn: cdktf.stringToTerraform(struct!.arn),
+    revision: cdktf.numberToTerraform(struct!.revision),
+  }
+}
+
 export interface MskClusterEncryptionInfoEncryptionInTransit {
   readonly clientBroker?: string;
   readonly inCluster?: boolean;
 }
+
+function mskClusterEncryptionInfoEncryptionInTransitToTerraform(struct?: MskClusterEncryptionInfoEncryptionInTransit): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    client_broker: cdktf.stringToTerraform(struct!.clientBroker),
+    in_cluster: cdktf.booleanToTerraform(struct!.inCluster),
+  }
+}
+
 export interface MskClusterEncryptionInfo {
   readonly encryptionAtRestKmsKeyArn?: string;
   /** encryption_in_transit block */
   readonly encryptionInTransit?: MskClusterEncryptionInfoEncryptionInTransit[];
 }
+
+function mskClusterEncryptionInfoToTerraform(struct?: MskClusterEncryptionInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    encryption_at_rest_kms_key_arn: cdktf.stringToTerraform(struct!.encryptionAtRestKmsKeyArn),
+    encryption_in_transit: cdktf.listMapper(mskClusterEncryptionInfoEncryptionInTransitToTerraform)(struct!.encryptionInTransit),
+  }
+}
+
 export interface MskClusterLoggingInfoBrokerLogsCloudwatchLogs {
   readonly enabled: boolean;
   readonly logGroup?: string;
 }
+
+function mskClusterLoggingInfoBrokerLogsCloudwatchLogsToTerraform(struct?: MskClusterLoggingInfoBrokerLogsCloudwatchLogs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    log_group: cdktf.stringToTerraform(struct!.logGroup),
+  }
+}
+
 export interface MskClusterLoggingInfoBrokerLogsFirehose {
   readonly deliveryStream?: string;
   readonly enabled: boolean;
 }
+
+function mskClusterLoggingInfoBrokerLogsFirehoseToTerraform(struct?: MskClusterLoggingInfoBrokerLogsFirehose): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delivery_stream: cdktf.stringToTerraform(struct!.deliveryStream),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface MskClusterLoggingInfoBrokerLogsS3 {
   readonly bucket?: string;
   readonly enabled: boolean;
   readonly prefix?: string;
 }
+
+function mskClusterLoggingInfoBrokerLogsS3ToTerraform(struct?: MskClusterLoggingInfoBrokerLogsS3): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+  }
+}
+
 export interface MskClusterLoggingInfoBrokerLogs {
   /** cloudwatch_logs block */
   readonly cloudwatchLogs?: MskClusterLoggingInfoBrokerLogsCloudwatchLogs[];
@@ -74,30 +156,81 @@ export interface MskClusterLoggingInfoBrokerLogs {
   /** s3 block */
   readonly s3?: MskClusterLoggingInfoBrokerLogsS3[];
 }
+
+function mskClusterLoggingInfoBrokerLogsToTerraform(struct?: MskClusterLoggingInfoBrokerLogs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cloudwatch_logs: cdktf.listMapper(mskClusterLoggingInfoBrokerLogsCloudwatchLogsToTerraform)(struct!.cloudwatchLogs),
+    firehose: cdktf.listMapper(mskClusterLoggingInfoBrokerLogsFirehoseToTerraform)(struct!.firehose),
+    s3: cdktf.listMapper(mskClusterLoggingInfoBrokerLogsS3ToTerraform)(struct!.s3),
+  }
+}
+
 export interface MskClusterLoggingInfo {
   /** broker_logs block */
   readonly brokerLogs: MskClusterLoggingInfoBrokerLogs[];
 }
+
+function mskClusterLoggingInfoToTerraform(struct?: MskClusterLoggingInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    broker_logs: cdktf.listMapper(mskClusterLoggingInfoBrokerLogsToTerraform)(struct!.brokerLogs),
+  }
+}
+
 export interface MskClusterOpenMonitoringPrometheusJmxExporter {
   readonly enabledInBroker: boolean;
 }
+
+function mskClusterOpenMonitoringPrometheusJmxExporterToTerraform(struct?: MskClusterOpenMonitoringPrometheusJmxExporter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled_in_broker: cdktf.booleanToTerraform(struct!.enabledInBroker),
+  }
+}
+
 export interface MskClusterOpenMonitoringPrometheusNodeExporter {
   readonly enabledInBroker: boolean;
 }
+
+function mskClusterOpenMonitoringPrometheusNodeExporterToTerraform(struct?: MskClusterOpenMonitoringPrometheusNodeExporter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled_in_broker: cdktf.booleanToTerraform(struct!.enabledInBroker),
+  }
+}
+
 export interface MskClusterOpenMonitoringPrometheus {
   /** jmx_exporter block */
   readonly jmxExporter?: MskClusterOpenMonitoringPrometheusJmxExporter[];
   /** node_exporter block */
   readonly nodeExporter?: MskClusterOpenMonitoringPrometheusNodeExporter[];
 }
+
+function mskClusterOpenMonitoringPrometheusToTerraform(struct?: MskClusterOpenMonitoringPrometheus): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    jmx_exporter: cdktf.listMapper(mskClusterOpenMonitoringPrometheusJmxExporterToTerraform)(struct!.jmxExporter),
+    node_exporter: cdktf.listMapper(mskClusterOpenMonitoringPrometheusNodeExporterToTerraform)(struct!.nodeExporter),
+  }
+}
+
 export interface MskClusterOpenMonitoring {
   /** prometheus block */
   readonly prometheus: MskClusterOpenMonitoringPrometheus[];
 }
 
+function mskClusterOpenMonitoringToTerraform(struct?: MskClusterOpenMonitoring): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    prometheus: cdktf.listMapper(mskClusterOpenMonitoringPrometheusToTerraform)(struct!.prometheus),
+  }
+}
+
+
 // Resource
 
-export class MskCluster extends TerraformResource {
+export class MskCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -331,17 +464,17 @@ export class MskCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: this._clusterName,
-      enhanced_monitoring: this._enhancedMonitoring,
-      kafka_version: this._kafkaVersion,
-      number_of_broker_nodes: this._numberOfBrokerNodes,
-      tags: this._tags,
-      broker_node_group_info: this._brokerNodeGroupInfo,
-      client_authentication: this._clientAuthentication,
-      configuration_info: this._configurationInfo,
-      encryption_info: this._encryptionInfo,
-      logging_info: this._loggingInfo,
-      open_monitoring: this._openMonitoring,
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
+      enhanced_monitoring: cdktf.stringToTerraform(this._enhancedMonitoring),
+      kafka_version: cdktf.stringToTerraform(this._kafkaVersion),
+      number_of_broker_nodes: cdktf.numberToTerraform(this._numberOfBrokerNodes),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      broker_node_group_info: cdktf.listMapper(mskClusterBrokerNodeGroupInfoToTerraform)(this._brokerNodeGroupInfo),
+      client_authentication: cdktf.listMapper(mskClusterClientAuthenticationToTerraform)(this._clientAuthentication),
+      configuration_info: cdktf.listMapper(mskClusterConfigurationInfoToTerraform)(this._configurationInfo),
+      encryption_info: cdktf.listMapper(mskClusterEncryptionInfoToTerraform)(this._encryptionInfo),
+      logging_info: cdktf.listMapper(mskClusterLoggingInfoToTerraform)(this._loggingInfo),
+      open_monitoring: cdktf.listMapper(mskClusterOpenMonitoringToTerraform)(this._openMonitoring),
     };
   }
 }

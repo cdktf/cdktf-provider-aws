@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2LocalGatewayRouteConfig extends TerraformMetaArguments {
+export interface Ec2LocalGatewayRouteConfig extends cdktf.TerraformMetaArguments {
   readonly destinationCidrBlock: string;
   readonly localGatewayRouteTableId: string;
   readonly localGatewayVirtualInterfaceGroupId: string;
@@ -15,7 +14,7 @@ export interface Ec2LocalGatewayRouteConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2LocalGatewayRoute extends TerraformResource {
+export class Ec2LocalGatewayRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -91,9 +90,9 @@ export class Ec2LocalGatewayRoute extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_cidr_block: this._destinationCidrBlock,
-      local_gateway_route_table_id: this._localGatewayRouteTableId,
-      local_gateway_virtual_interface_group_id: this._localGatewayVirtualInterfaceGroupId,
+      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      local_gateway_route_table_id: cdktf.stringToTerraform(this._localGatewayRouteTableId),
+      local_gateway_virtual_interface_group_id: cdktf.stringToTerraform(this._localGatewayVirtualInterfaceGroupId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RamResourceShareAccepterConfig extends TerraformMetaArguments {
+export interface RamResourceShareAccepterConfig extends cdktf.TerraformMetaArguments {
   readonly shareArn: string;
   /** timeouts block */
   readonly timeouts?: RamResourceShareAccepterTimeouts;
@@ -17,9 +16,18 @@ export interface RamResourceShareAccepterTimeouts {
   readonly delete?: string;
 }
 
+function ramResourceShareAccepterTimeoutsToTerraform(struct?: RamResourceShareAccepterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class RamResourceShareAccepter extends TerraformResource {
+export class RamResourceShareAccepter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,8 +127,8 @@ export class RamResourceShareAccepter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      share_arn: this._shareArn,
-      timeouts: this._timeouts,
+      share_arn: cdktf.stringToTerraform(this._shareArn),
+      timeouts: ramResourceShareAccepterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

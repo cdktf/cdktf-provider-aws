@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RamResourceShareConfig extends TerraformMetaArguments {
+export interface RamResourceShareConfig extends cdktf.TerraformMetaArguments {
   readonly allowExternalPrincipals?: boolean;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface RamResourceShareTimeouts {
   readonly delete?: string;
 }
 
+function ramResourceShareTimeoutsToTerraform(struct?: RamResourceShareTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class RamResourceShare extends TerraformResource {
+export class RamResourceShare extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -125,10 +133,10 @@ export class RamResourceShare extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_external_principals: this._allowExternalPrincipals,
-      name: this._name,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      allow_external_principals: cdktf.booleanToTerraform(this._allowExternalPrincipals),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: ramResourceShareTimeoutsToTerraform(this._timeouts),
     };
   }
 }

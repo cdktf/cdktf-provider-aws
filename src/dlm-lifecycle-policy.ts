@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DlmLifecyclePolicyConfig extends TerraformMetaArguments {
+export interface DlmLifecyclePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly description: string;
   readonly executionRoleArn: string;
   readonly state?: string;
@@ -20,9 +19,27 @@ export interface DlmLifecyclePolicyPolicyDetailsScheduleCreateRule {
   readonly intervalUnit?: string;
   readonly times?: string[];
 }
+
+function dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCreateRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    interval: cdktf.numberToTerraform(struct!.interval),
+    interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    times: cdktf.listMapper(cdktf.stringToTerraform)(struct!.times),
+  }
+}
+
 export interface DlmLifecyclePolicyPolicyDetailsScheduleRetainRule {
   readonly count: number;
 }
+
+function dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleRetainRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    count: cdktf.numberToTerraform(struct!.count),
+  }
+}
+
 export interface DlmLifecyclePolicyPolicyDetailsSchedule {
   readonly copyTags?: boolean;
   readonly name: string;
@@ -32,6 +49,18 @@ export interface DlmLifecyclePolicyPolicyDetailsSchedule {
   /** retain_rule block */
   readonly retainRule: DlmLifecyclePolicyPolicyDetailsScheduleRetainRule[];
 }
+
+function dlmLifecyclePolicyPolicyDetailsScheduleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsSchedule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    copy_tags: cdktf.booleanToTerraform(struct!.copyTags),
+    name: cdktf.stringToTerraform(struct!.name),
+    tags_to_add: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tagsToAdd),
+    create_rule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform)(struct!.createRule),
+    retain_rule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform)(struct!.retainRule),
+  }
+}
+
 export interface DlmLifecyclePolicyPolicyDetails {
   readonly resourceTypes: string[];
   readonly targetTags: { [key: string]: string };
@@ -39,9 +68,19 @@ export interface DlmLifecyclePolicyPolicyDetails {
   readonly schedule: DlmLifecyclePolicyPolicyDetailsSchedule[];
 }
 
+function dlmLifecyclePolicyPolicyDetailsToTerraform(struct?: DlmLifecyclePolicyPolicyDetails): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceTypes),
+    target_tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.targetTags),
+    schedule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleToTerraform)(struct!.schedule),
+  }
+}
+
+
 // Resource
 
-export class DlmLifecyclePolicy extends TerraformResource {
+export class DlmLifecyclePolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -156,11 +195,11 @@ export class DlmLifecyclePolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      execution_role_arn: this._executionRoleArn,
-      state: this._state,
-      tags: this._tags,
-      policy_details: this._policyDetails,
+      description: cdktf.stringToTerraform(this._description),
+      execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
+      state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      policy_details: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsToTerraform)(this._policyDetails),
     };
   }
 }

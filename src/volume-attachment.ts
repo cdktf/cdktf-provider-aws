@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VolumeAttachmentConfig extends TerraformMetaArguments {
+export interface VolumeAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly deviceName: string;
   readonly forceDetach?: boolean;
   readonly instanceId: string;
@@ -17,7 +16,7 @@ export interface VolumeAttachmentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class VolumeAttachment extends TerraformResource {
+export class VolumeAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -127,11 +126,11 @@ export class VolumeAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      device_name: this._deviceName,
-      force_detach: this._forceDetach,
-      instance_id: this._instanceId,
-      skip_destroy: this._skipDestroy,
-      volume_id: this._volumeId,
+      device_name: cdktf.stringToTerraform(this._deviceName),
+      force_detach: cdktf.booleanToTerraform(this._forceDetach),
+      instance_id: cdktf.stringToTerraform(this._instanceId),
+      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
+      volume_id: cdktf.stringToTerraform(this._volumeId),
     };
   }
 }

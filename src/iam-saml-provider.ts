@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamSamlProviderConfig extends TerraformMetaArguments {
+export interface IamSamlProviderConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly samlMetadataDocument: string;
 }
 
 // Resource
 
-export class IamSamlProvider extends TerraformResource {
+export class IamSamlProvider extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -86,8 +85,8 @@ export class IamSamlProvider extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      saml_metadata_document: this._samlMetadataDocument,
+      name: cdktf.stringToTerraform(this._name),
+      saml_metadata_document: cdktf.stringToTerraform(this._samlMetadataDocument),
     };
   }
 }

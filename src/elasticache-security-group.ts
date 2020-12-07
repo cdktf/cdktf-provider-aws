@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticacheSecurityGroupConfig extends TerraformMetaArguments {
+export interface ElasticacheSecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly securityGroupNames: string[];
@@ -15,7 +14,7 @@ export interface ElasticacheSecurityGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ElasticacheSecurityGroup extends TerraformResource {
+export class ElasticacheSecurityGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -94,9 +93,9 @@ export class ElasticacheSecurityGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      security_group_names: this._securityGroupNames,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
     };
   }
 }

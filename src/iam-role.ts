@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamRoleConfig extends TerraformMetaArguments {
+export interface IamRoleConfig extends cdktf.TerraformMetaArguments {
   readonly assumeRolePolicy: string;
   readonly description?: string;
   readonly forceDetachPolicies?: boolean;
@@ -21,7 +20,7 @@ export interface IamRoleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamRole extends TerraformResource {
+export class IamRole extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -220,15 +219,15 @@ export class IamRole extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assume_role_policy: this._assumeRolePolicy,
-      description: this._description,
-      force_detach_policies: this._forceDetachPolicies,
-      max_session_duration: this._maxSessionDuration,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      path: this._path,
-      permissions_boundary: this._permissionsBoundary,
-      tags: this._tags,
+      assume_role_policy: cdktf.stringToTerraform(this._assumeRolePolicy),
+      description: cdktf.stringToTerraform(this._description),
+      force_detach_policies: cdktf.booleanToTerraform(this._forceDetachPolicies),
+      max_session_duration: cdktf.numberToTerraform(this._maxSessionDuration),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      path: cdktf.stringToTerraform(this._path),
+      permissions_boundary: cdktf.stringToTerraform(this._permissionsBoundary),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

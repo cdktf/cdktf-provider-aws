@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ResourcegroupsGroupConfig extends TerraformMetaArguments {
+export interface ResourcegroupsGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface ResourcegroupsGroupResourceQuery {
   readonly type?: string;
 }
 
+function resourcegroupsGroupResourceQueryToTerraform(struct?: ResourcegroupsGroupResourceQuery): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    query: cdktf.stringToTerraform(struct!.query),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class ResourcegroupsGroup extends TerraformResource {
+export class ResourcegroupsGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -122,10 +130,10 @@ export class ResourcegroupsGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      tags: this._tags,
-      resource_query: this._resourceQuery,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      resource_query: cdktf.listMapper(resourcegroupsGroupResourceQueryToTerraform)(this._resourceQuery),
     };
   }
 }

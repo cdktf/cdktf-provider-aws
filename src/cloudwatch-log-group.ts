@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogGroupConfig extends TerraformMetaArguments {
+export interface CloudwatchLogGroupConfig extends cdktf.TerraformMetaArguments {
   readonly kmsKeyId?: string;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -17,7 +16,7 @@ export interface CloudwatchLogGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CloudwatchLogGroup extends TerraformResource {
+export class CloudwatchLogGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -141,11 +140,11 @@ export class CloudwatchLogGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_id: this._kmsKeyId,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      retention_in_days: this._retentionInDays,
-      tags: this._tags,
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      retention_in_days: cdktf.numberToTerraform(this._retentionInDays),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

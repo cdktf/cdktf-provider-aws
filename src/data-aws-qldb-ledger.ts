@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsQldbLedgerConfig extends TerraformMetaArguments {
+export interface DataAwsQldbLedgerConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsQldbLedger extends TerraformDataSource {
+export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -71,7 +70,7 @@ export class DataAwsQldbLedger extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

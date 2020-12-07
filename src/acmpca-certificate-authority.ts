@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AcmpcaCertificateAuthorityConfig extends TerraformMetaArguments {
+export interface AcmpcaCertificateAuthorityConfig extends cdktf.TerraformMetaArguments {
   readonly enabled?: boolean;
   readonly permanentDeletionTimeInDays?: number;
   readonly tags?: { [key: string]: string };
@@ -34,29 +33,86 @@ export interface AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubj
   readonly surname?: string;
   readonly title?: string;
 }
+
+function acmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectToTerraform(struct?: AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    common_name: cdktf.stringToTerraform(struct!.commonName),
+    country: cdktf.stringToTerraform(struct!.country),
+    distinguished_name_qualifier: cdktf.stringToTerraform(struct!.distinguishedNameQualifier),
+    generation_qualifier: cdktf.stringToTerraform(struct!.generationQualifier),
+    given_name: cdktf.stringToTerraform(struct!.givenName),
+    initials: cdktf.stringToTerraform(struct!.initials),
+    locality: cdktf.stringToTerraform(struct!.locality),
+    organization: cdktf.stringToTerraform(struct!.organization),
+    organizational_unit: cdktf.stringToTerraform(struct!.organizationalUnit),
+    pseudonym: cdktf.stringToTerraform(struct!.pseudonym),
+    state: cdktf.stringToTerraform(struct!.state),
+    surname: cdktf.stringToTerraform(struct!.surname),
+    title: cdktf.stringToTerraform(struct!.title),
+  }
+}
+
 export interface AcmpcaCertificateAuthorityCertificateAuthorityConfiguration {
   readonly keyAlgorithm: string;
   readonly signingAlgorithm: string;
   /** subject block */
   readonly subject: AcmpcaCertificateAuthorityCertificateAuthorityConfigurationSubject[];
 }
+
+function acmpcaCertificateAuthorityCertificateAuthorityConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityCertificateAuthorityConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key_algorithm: cdktf.stringToTerraform(struct!.keyAlgorithm),
+    signing_algorithm: cdktf.stringToTerraform(struct!.signingAlgorithm),
+    subject: cdktf.listMapper(acmpcaCertificateAuthorityCertificateAuthorityConfigurationSubjectToTerraform)(struct!.subject),
+  }
+}
+
 export interface AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration {
   readonly customCname?: string;
   readonly enabled?: boolean;
   readonly expirationInDays: number;
   readonly s3BucketName?: string;
 }
+
+function acmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    custom_cname: cdktf.stringToTerraform(struct!.customCname),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    expiration_in_days: cdktf.numberToTerraform(struct!.expirationInDays),
+    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
+  }
+}
+
 export interface AcmpcaCertificateAuthorityRevocationConfiguration {
   /** crl_configuration block */
   readonly crlConfiguration?: AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration[];
 }
+
+function acmpcaCertificateAuthorityRevocationConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    crl_configuration: cdktf.listMapper(acmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform)(struct!.crlConfiguration),
+  }
+}
+
 export interface AcmpcaCertificateAuthorityTimeouts {
   readonly create?: string;
 }
 
+function acmpcaCertificateAuthorityTimeoutsToTerraform(struct?: AcmpcaCertificateAuthorityTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class AcmpcaCertificateAuthority extends TerraformResource {
+export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -246,13 +302,13 @@ export class AcmpcaCertificateAuthority extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: this._enabled,
-      permanent_deletion_time_in_days: this._permanentDeletionTimeInDays,
-      tags: this._tags,
-      type: this._type,
-      certificate_authority_configuration: this._certificateAuthorityConfiguration,
-      revocation_configuration: this._revocationConfiguration,
-      timeouts: this._timeouts,
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      permanent_deletion_time_in_days: cdktf.numberToTerraform(this._permanentDeletionTimeInDays),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      type: cdktf.stringToTerraform(this._type),
+      certificate_authority_configuration: cdktf.listMapper(acmpcaCertificateAuthorityCertificateAuthorityConfigurationToTerraform)(this._certificateAuthorityConfiguration),
+      revocation_configuration: cdktf.listMapper(acmpcaCertificateAuthorityRevocationConfigurationToTerraform)(this._revocationConfiguration),
+      timeouts: acmpcaCertificateAuthorityTimeoutsToTerraform(this._timeouts),
     };
   }
 }

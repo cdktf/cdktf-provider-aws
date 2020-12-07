@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3BucketInventoryConfig extends TerraformMetaArguments {
+export interface S3BucketInventoryConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly enabled?: boolean;
   readonly includedObjectVersions: string;
@@ -23,14 +22,38 @@ export interface S3BucketInventoryConfig extends TerraformMetaArguments {
 export interface S3BucketInventoryDestinationBucketEncryptionSseKms {
   readonly keyId: string;
 }
+
+function s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseKms): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key_id: cdktf.stringToTerraform(struct!.keyId),
+  }
+}
+
 export interface S3BucketInventoryDestinationBucketEncryptionSseS3 {
 }
+
+function s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform(struct?: S3BucketInventoryDestinationBucketEncryptionSseS3): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+  }
+}
+
 export interface S3BucketInventoryDestinationBucketEncryption {
   /** sse_kms block */
   readonly sseKms?: S3BucketInventoryDestinationBucketEncryptionSseKms[];
   /** sse_s3 block */
   readonly sseS3?: S3BucketInventoryDestinationBucketEncryptionSseS3[];
 }
+
+function s3BucketInventoryDestinationBucketEncryptionToTerraform(struct?: S3BucketInventoryDestinationBucketEncryption): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    sse_kms: cdktf.listMapper(s3BucketInventoryDestinationBucketEncryptionSseKmsToTerraform)(struct!.sseKms),
+    sse_s3: cdktf.listMapper(s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform)(struct!.sseS3),
+  }
+}
+
 export interface S3BucketInventoryDestinationBucket {
   readonly accountId?: string;
   readonly bucketArn: string;
@@ -39,20 +62,56 @@ export interface S3BucketInventoryDestinationBucket {
   /** encryption block */
   readonly encryption?: S3BucketInventoryDestinationBucketEncryption[];
 }
+
+function s3BucketInventoryDestinationBucketToTerraform(struct?: S3BucketInventoryDestinationBucket): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    account_id: cdktf.stringToTerraform(struct!.accountId),
+    bucket_arn: cdktf.stringToTerraform(struct!.bucketArn),
+    format: cdktf.stringToTerraform(struct!.format),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    encryption: cdktf.listMapper(s3BucketInventoryDestinationBucketEncryptionToTerraform)(struct!.encryption),
+  }
+}
+
 export interface S3BucketInventoryDestination {
   /** bucket block */
   readonly bucket: S3BucketInventoryDestinationBucket[];
 }
+
+function s3BucketInventoryDestinationToTerraform(struct?: S3BucketInventoryDestination): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket: cdktf.listMapper(s3BucketInventoryDestinationBucketToTerraform)(struct!.bucket),
+  }
+}
+
 export interface S3BucketInventoryFilter {
   readonly prefix?: string;
 }
+
+function s3BucketInventoryFilterToTerraform(struct?: S3BucketInventoryFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+  }
+}
+
 export interface S3BucketInventorySchedule {
   readonly frequency: string;
 }
 
+function s3BucketInventoryScheduleToTerraform(struct?: S3BucketInventorySchedule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    frequency: cdktf.stringToTerraform(struct!.frequency),
+  }
+}
+
+
 // Resource
 
-export class S3BucketInventory extends TerraformResource {
+export class S3BucketInventory extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -207,14 +266,14 @@ export class S3BucketInventory extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      enabled: this._enabled,
-      included_object_versions: this._includedObjectVersions,
-      name: this._name,
-      optional_fields: this._optionalFields,
-      destination: this._destination,
-      filter: this._filter,
-      schedule: this._schedule,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      included_object_versions: cdktf.stringToTerraform(this._includedObjectVersions),
+      name: cdktf.stringToTerraform(this._name),
+      optional_fields: cdktf.listMapper(cdktf.stringToTerraform)(this._optionalFields),
+      destination: cdktf.listMapper(s3BucketInventoryDestinationToTerraform)(this._destination),
+      filter: cdktf.listMapper(s3BucketInventoryFilterToTerraform)(this._filter),
+      schedule: cdktf.listMapper(s3BucketInventoryScheduleToTerraform)(this._schedule),
     };
   }
 }

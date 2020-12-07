@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxGatewayAssociationConfig extends TerraformMetaArguments {
+export interface DxGatewayAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly allowedPrefixes?: string[];
   readonly associatedGatewayId?: string;
   readonly associatedGatewayOwnerAccountId?: string;
@@ -23,9 +22,19 @@ export interface DxGatewayAssociationTimeouts {
   readonly update?: string;
 }
 
+function dxGatewayAssociationTimeoutsToTerraform(struct?: DxGatewayAssociationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DxGatewayAssociation extends TerraformResource {
+export class DxGatewayAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -190,13 +199,13 @@ export class DxGatewayAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_prefixes: this._allowedPrefixes,
-      associated_gateway_id: this._associatedGatewayId,
-      associated_gateway_owner_account_id: this._associatedGatewayOwnerAccountId,
-      dx_gateway_id: this._dxGatewayId,
-      proposal_id: this._proposalId,
-      vpn_gateway_id: this._vpnGatewayId,
-      timeouts: this._timeouts,
+      allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedPrefixes),
+      associated_gateway_id: cdktf.stringToTerraform(this._associatedGatewayId),
+      associated_gateway_owner_account_id: cdktf.stringToTerraform(this._associatedGatewayOwnerAccountId),
+      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
+      proposal_id: cdktf.stringToTerraform(this._proposalId),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
+      timeouts: dxGatewayAssociationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

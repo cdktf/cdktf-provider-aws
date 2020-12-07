@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3BucketConfig extends TerraformMetaArguments {
+export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   readonly accelerationStatus?: string;
   readonly acl?: string;
   readonly bucket?: string;
@@ -46,29 +45,89 @@ export interface S3BucketCorsRule {
   readonly exposeHeaders?: string[];
   readonly maxAgeSeconds?: number;
 }
+
+function s3BucketCorsRuleToTerraform(struct?: S3BucketCorsRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedHeaders),
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
+    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedOrigins),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
+  }
+}
+
 export interface S3BucketGrant {
   readonly id?: string;
   readonly permissions: string[];
   readonly type: string;
   readonly uri?: string;
 }
+
+function s3BucketGrantToTerraform(struct?: S3BucketGrant): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    type: cdktf.stringToTerraform(struct!.type),
+    uri: cdktf.stringToTerraform(struct!.uri),
+  }
+}
+
 export interface S3BucketLifecycleRuleExpiration {
   readonly date?: string;
   readonly days?: number;
   readonly expiredObjectDeleteMarker?: boolean;
 }
+
+function s3BucketLifecycleRuleExpirationToTerraform(struct?: S3BucketLifecycleRuleExpiration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    date: cdktf.stringToTerraform(struct!.date),
+    days: cdktf.numberToTerraform(struct!.days),
+    expired_object_delete_marker: cdktf.booleanToTerraform(struct!.expiredObjectDeleteMarker),
+  }
+}
+
 export interface S3BucketLifecycleRuleNoncurrentVersionExpiration {
   readonly days?: number;
 }
+
+function s3BucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: S3BucketLifecycleRuleNoncurrentVersionExpiration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    days: cdktf.numberToTerraform(struct!.days),
+  }
+}
+
 export interface S3BucketLifecycleRuleNoncurrentVersionTransition {
   readonly days?: number;
   readonly storageClass: string;
 }
+
+function s3BucketLifecycleRuleNoncurrentVersionTransitionToTerraform(struct?: S3BucketLifecycleRuleNoncurrentVersionTransition): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    days: cdktf.numberToTerraform(struct!.days),
+    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+  }
+}
+
 export interface S3BucketLifecycleRuleTransition {
   readonly date?: string;
   readonly days?: number;
   readonly storageClass: string;
 }
+
+function s3BucketLifecycleRuleTransitionToTerraform(struct?: S3BucketLifecycleRuleTransition): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    date: cdktf.stringToTerraform(struct!.date),
+    days: cdktf.numberToTerraform(struct!.days),
+    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+  }
+}
+
 export interface S3BucketLifecycleRule {
   readonly abortIncompleteMultipartUploadDays?: number;
   readonly enabled: boolean;
@@ -84,27 +143,87 @@ export interface S3BucketLifecycleRule {
   /** transition block */
   readonly transition?: S3BucketLifecycleRuleTransition[];
 }
+
+function s3BucketLifecycleRuleToTerraform(struct?: S3BucketLifecycleRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    abort_incomplete_multipart_upload_days: cdktf.numberToTerraform(struct!.abortIncompleteMultipartUploadDays),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    id: cdktf.stringToTerraform(struct!.id),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    expiration: cdktf.listMapper(s3BucketLifecycleRuleExpirationToTerraform)(struct!.expiration),
+    noncurrent_version_expiration: cdktf.listMapper(s3BucketLifecycleRuleNoncurrentVersionExpirationToTerraform)(struct!.noncurrentVersionExpiration),
+    noncurrent_version_transition: cdktf.listMapper(s3BucketLifecycleRuleNoncurrentVersionTransitionToTerraform)(struct!.noncurrentVersionTransition),
+    transition: cdktf.listMapper(s3BucketLifecycleRuleTransitionToTerraform)(struct!.transition),
+  }
+}
+
 export interface S3BucketLogging {
   readonly targetBucket: string;
   readonly targetPrefix?: string;
 }
+
+function s3BucketLoggingToTerraform(struct?: S3BucketLogging): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    target_bucket: cdktf.stringToTerraform(struct!.targetBucket),
+    target_prefix: cdktf.stringToTerraform(struct!.targetPrefix),
+  }
+}
+
 export interface S3BucketObjectLockConfigurationRuleDefaultRetention {
   readonly days?: number;
   readonly mode: string;
   readonly years?: number;
 }
+
+function s3BucketObjectLockConfigurationRuleDefaultRetentionToTerraform(struct?: S3BucketObjectLockConfigurationRuleDefaultRetention): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    days: cdktf.numberToTerraform(struct!.days),
+    mode: cdktf.stringToTerraform(struct!.mode),
+    years: cdktf.numberToTerraform(struct!.years),
+  }
+}
+
 export interface S3BucketObjectLockConfigurationRule {
   /** default_retention block */
   readonly defaultRetention: S3BucketObjectLockConfigurationRuleDefaultRetention[];
 }
+
+function s3BucketObjectLockConfigurationRuleToTerraform(struct?: S3BucketObjectLockConfigurationRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    default_retention: cdktf.listMapper(s3BucketObjectLockConfigurationRuleDefaultRetentionToTerraform)(struct!.defaultRetention),
+  }
+}
+
 export interface S3BucketObjectLockConfiguration {
   readonly objectLockEnabled: string;
   /** rule block */
   readonly rule?: S3BucketObjectLockConfigurationRule[];
 }
+
+function s3BucketObjectLockConfigurationToTerraform(struct?: S3BucketObjectLockConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    object_lock_enabled: cdktf.stringToTerraform(struct!.objectLockEnabled),
+    rule: cdktf.listMapper(s3BucketObjectLockConfigurationRuleToTerraform)(struct!.rule),
+  }
+}
+
 export interface S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation {
   readonly owner: string;
 }
+
+function s3BucketReplicationConfigurationRulesDestinationAccessControlTranslationToTerraform(struct?: S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    owner: cdktf.stringToTerraform(struct!.owner),
+  }
+}
+
 export interface S3BucketReplicationConfigurationRulesDestination {
   readonly accountId?: string;
   readonly bucket: string;
@@ -113,17 +232,54 @@ export interface S3BucketReplicationConfigurationRulesDestination {
   /** access_control_translation block */
   readonly accessControlTranslation?: S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation[];
 }
+
+function s3BucketReplicationConfigurationRulesDestinationToTerraform(struct?: S3BucketReplicationConfigurationRulesDestination): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    account_id: cdktf.stringToTerraform(struct!.accountId),
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    replica_kms_key_id: cdktf.stringToTerraform(struct!.replicaKmsKeyId),
+    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+    access_control_translation: cdktf.listMapper(s3BucketReplicationConfigurationRulesDestinationAccessControlTranslationToTerraform)(struct!.accessControlTranslation),
+  }
+}
+
 export interface S3BucketReplicationConfigurationRulesFilter {
   readonly prefix?: string;
   readonly tags?: { [key: string]: string };
 }
+
+function s3BucketReplicationConfigurationRulesFilterToTerraform(struct?: S3BucketReplicationConfigurationRulesFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+  }
+}
+
 export interface S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects {
   readonly enabled: boolean;
 }
+
+function s3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsToTerraform(struct?: S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface S3BucketReplicationConfigurationRulesSourceSelectionCriteria {
   /** sse_kms_encrypted_objects block */
   readonly sseKmsEncryptedObjects?: S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects[];
 }
+
+function s3BucketReplicationConfigurationRulesSourceSelectionCriteriaToTerraform(struct?: S3BucketReplicationConfigurationRulesSourceSelectionCriteria): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    sse_kms_encrypted_objects: cdktf.listMapper(s3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsToTerraform)(struct!.sseKmsEncryptedObjects),
+  }
+}
+
 export interface S3BucketReplicationConfigurationRules {
   readonly id?: string;
   readonly prefix?: string;
@@ -136,27 +292,84 @@ export interface S3BucketReplicationConfigurationRules {
   /** source_selection_criteria block */
   readonly sourceSelectionCriteria?: S3BucketReplicationConfigurationRulesSourceSelectionCriteria[];
 }
+
+function s3BucketReplicationConfigurationRulesToTerraform(struct?: S3BucketReplicationConfigurationRules): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    priority: cdktf.numberToTerraform(struct!.priority),
+    status: cdktf.stringToTerraform(struct!.status),
+    destination: cdktf.listMapper(s3BucketReplicationConfigurationRulesDestinationToTerraform)(struct!.destination),
+    filter: cdktf.listMapper(s3BucketReplicationConfigurationRulesFilterToTerraform)(struct!.filter),
+    source_selection_criteria: cdktf.listMapper(s3BucketReplicationConfigurationRulesSourceSelectionCriteriaToTerraform)(struct!.sourceSelectionCriteria),
+  }
+}
+
 export interface S3BucketReplicationConfiguration {
   readonly role: string;
   /** rules block */
   readonly rules: S3BucketReplicationConfigurationRules[];
 }
+
+function s3BucketReplicationConfigurationToTerraform(struct?: S3BucketReplicationConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    role: cdktf.stringToTerraform(struct!.role),
+    rules: cdktf.listMapper(s3BucketReplicationConfigurationRulesToTerraform)(struct!.rules),
+  }
+}
+
 export interface S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault {
   readonly kmsMasterKeyId?: string;
   readonly sseAlgorithm: string;
 }
+
+function s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultToTerraform(struct?: S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    kms_master_key_id: cdktf.stringToTerraform(struct!.kmsMasterKeyId),
+    sse_algorithm: cdktf.stringToTerraform(struct!.sseAlgorithm),
+  }
+}
+
 export interface S3BucketServerSideEncryptionConfigurationRule {
   /** apply_server_side_encryption_by_default block */
   readonly applyServerSideEncryptionByDefault: S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault[];
 }
+
+function s3BucketServerSideEncryptionConfigurationRuleToTerraform(struct?: S3BucketServerSideEncryptionConfigurationRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    apply_server_side_encryption_by_default: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultToTerraform)(struct!.applyServerSideEncryptionByDefault),
+  }
+}
+
 export interface S3BucketServerSideEncryptionConfiguration {
   /** rule block */
   readonly rule: S3BucketServerSideEncryptionConfigurationRule[];
 }
+
+function s3BucketServerSideEncryptionConfigurationToTerraform(struct?: S3BucketServerSideEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    rule: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleToTerraform)(struct!.rule),
+  }
+}
+
 export interface S3BucketVersioning {
   readonly enabled?: boolean;
   readonly mfaDelete?: boolean;
 }
+
+function s3BucketVersioningToTerraform(struct?: S3BucketVersioning): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    mfa_delete: cdktf.booleanToTerraform(struct!.mfaDelete),
+  }
+}
+
 export interface S3BucketWebsite {
   readonly errorDocument?: string;
   readonly indexDocument?: string;
@@ -164,9 +377,20 @@ export interface S3BucketWebsite {
   readonly routingRules?: string;
 }
 
+function s3BucketWebsiteToTerraform(struct?: S3BucketWebsite): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    error_document: cdktf.stringToTerraform(struct!.errorDocument),
+    index_document: cdktf.stringToTerraform(struct!.indexDocument),
+    redirect_all_requests_to: cdktf.stringToTerraform(struct!.redirectAllRequestsTo),
+    routing_rules: cdktf.stringToTerraform(struct!.routingRules),
+  }
+}
+
+
 // Resource
 
-export class S3Bucket extends TerraformResource {
+export class S3Bucket extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -572,27 +796,27 @@ export class S3Bucket extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acceleration_status: this._accelerationStatus,
-      acl: this._acl,
-      bucket: this._bucket,
-      bucket_prefix: this._bucketPrefix,
-      force_destroy: this._forceDestroy,
-      hosted_zone_id: this._hostedZoneId,
-      policy: this._policy,
-      region: this._region,
-      request_payer: this._requestPayer,
-      tags: this._tags,
-      website_domain: this._websiteDomain,
-      website_endpoint: this._websiteEndpoint,
-      cors_rule: this._corsRule,
-      grant: this._grant,
-      lifecycle_rule: this._lifecycleRule,
-      logging: this._logging,
-      object_lock_configuration: this._objectLockConfiguration,
-      replication_configuration: this._replicationConfiguration,
-      server_side_encryption_configuration: this._serverSideEncryptionConfiguration,
-      versioning: this._versioning,
-      website: this._website,
+      acceleration_status: cdktf.stringToTerraform(this._accelerationStatus),
+      acl: cdktf.stringToTerraform(this._acl),
+      bucket: cdktf.stringToTerraform(this._bucket),
+      bucket_prefix: cdktf.stringToTerraform(this._bucketPrefix),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
+      policy: cdktf.stringToTerraform(this._policy),
+      region: cdktf.stringToTerraform(this._region),
+      request_payer: cdktf.stringToTerraform(this._requestPayer),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      website_domain: cdktf.stringToTerraform(this._websiteDomain),
+      website_endpoint: cdktf.stringToTerraform(this._websiteEndpoint),
+      cors_rule: cdktf.listMapper(s3BucketCorsRuleToTerraform)(this._corsRule),
+      grant: cdktf.listMapper(s3BucketGrantToTerraform)(this._grant),
+      lifecycle_rule: cdktf.listMapper(s3BucketLifecycleRuleToTerraform)(this._lifecycleRule),
+      logging: cdktf.listMapper(s3BucketLoggingToTerraform)(this._logging),
+      object_lock_configuration: cdktf.listMapper(s3BucketObjectLockConfigurationToTerraform)(this._objectLockConfiguration),
+      replication_configuration: cdktf.listMapper(s3BucketReplicationConfigurationToTerraform)(this._replicationConfiguration),
+      server_side_encryption_configuration: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationToTerraform)(this._serverSideEncryptionConfiguration),
+      versioning: cdktf.listMapper(s3BucketVersioningToTerraform)(this._versioning),
+      website: cdktf.listMapper(s3BucketWebsiteToTerraform)(this._website),
     };
   }
 }

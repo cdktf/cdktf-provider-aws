@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OrganizationsPolicyConfig extends TerraformMetaArguments {
+export interface OrganizationsPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly content: string;
   readonly description?: string;
   readonly name: string;
@@ -16,7 +15,7 @@ export interface OrganizationsPolicyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class OrganizationsPolicy extends TerraformResource {
+export class OrganizationsPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -117,10 +116,10 @@ export class OrganizationsPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content: this._content,
-      description: this._description,
-      name: this._name,
-      type: this._type,
+      content: cdktf.stringToTerraform(this._content),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

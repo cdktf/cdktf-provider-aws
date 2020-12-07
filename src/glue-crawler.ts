@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueCrawlerConfig extends TerraformMetaArguments {
+export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
   readonly classifiers?: string[];
   readonly configuration?: string;
   readonly databaseName: string;
@@ -33,26 +32,71 @@ export interface GlueCrawlerCatalogTarget {
   readonly databaseName: string;
   readonly tables: string[];
 }
+
+function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    database_name: cdktf.stringToTerraform(struct!.databaseName),
+    tables: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tables),
+  }
+}
+
 export interface GlueCrawlerDynamodbTarget {
   readonly path: string;
 }
+
+function glueCrawlerDynamodbTargetToTerraform(struct?: GlueCrawlerDynamodbTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
 export interface GlueCrawlerJdbcTarget {
   readonly connectionName: string;
   readonly exclusions?: string[];
   readonly path: string;
 }
+
+function glueCrawlerJdbcTargetToTerraform(struct?: GlueCrawlerJdbcTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    connection_name: cdktf.stringToTerraform(struct!.connectionName),
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
 export interface GlueCrawlerS3Target {
   readonly exclusions?: string[];
   readonly path: string;
 }
+
+function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
 export interface GlueCrawlerSchemaChangePolicy {
   readonly deleteBehavior?: string;
   readonly updateBehavior?: string;
 }
 
+function glueCrawlerSchemaChangePolicyToTerraform(struct?: GlueCrawlerSchemaChangePolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_behavior: cdktf.stringToTerraform(struct!.deleteBehavior),
+    update_behavior: cdktf.stringToTerraform(struct!.updateBehavior),
+  }
+}
+
+
 // Resource
 
-export class GlueCrawler extends TerraformResource {
+export class GlueCrawler extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -337,21 +381,21 @@ export class GlueCrawler extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      classifiers: this._classifiers,
-      configuration: this._configuration,
-      database_name: this._databaseName,
-      description: this._description,
-      name: this._name,
-      role: this._role,
-      schedule: this._schedule,
-      security_configuration: this._securityConfiguration,
-      table_prefix: this._tablePrefix,
-      tags: this._tags,
-      catalog_target: this._catalogTarget,
-      dynamodb_target: this._dynamodbTarget,
-      jdbc_target: this._jdbcTarget,
-      s3_target: this._s3Target,
-      schema_change_policy: this._schemaChangePolicy,
+      classifiers: cdktf.listMapper(cdktf.stringToTerraform)(this._classifiers),
+      configuration: cdktf.stringToTerraform(this._configuration),
+      database_name: cdktf.stringToTerraform(this._databaseName),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      role: cdktf.stringToTerraform(this._role),
+      schedule: cdktf.stringToTerraform(this._schedule),
+      security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
+      table_prefix: cdktf.stringToTerraform(this._tablePrefix),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform)(this._catalogTarget),
+      dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform)(this._dynamodbTarget),
+      jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform)(this._jdbcTarget),
+      s3_target: cdktf.listMapper(glueCrawlerS3TargetToTerraform)(this._s3Target),
+      schema_change_policy: cdktf.listMapper(glueCrawlerSchemaChangePolicyToTerraform)(this._schemaChangePolicy),
     };
   }
 }

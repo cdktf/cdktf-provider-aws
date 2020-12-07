@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigDeliveryChannelConfig extends TerraformMetaArguments {
+export interface ConfigDeliveryChannelConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly s3BucketName: string;
   readonly s3KeyPrefix?: string;
@@ -19,9 +18,17 @@ export interface ConfigDeliveryChannelSnapshotDeliveryProperties {
   readonly deliveryFrequency?: string;
 }
 
+function configDeliveryChannelSnapshotDeliveryPropertiesToTerraform(struct?: ConfigDeliveryChannelSnapshotDeliveryProperties): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delivery_frequency: cdktf.stringToTerraform(struct!.deliveryFrequency),
+  }
+}
+
+
 // Resource
 
-export class ConfigDeliveryChannel extends TerraformResource {
+export class ConfigDeliveryChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -137,11 +144,11 @@ export class ConfigDeliveryChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      s3_bucket_name: this._s3BucketName,
-      s3_key_prefix: this._s3KeyPrefix,
-      sns_topic_arn: this._snsTopicArn,
-      snapshot_delivery_properties: this._snapshotDeliveryProperties,
+      name: cdktf.stringToTerraform(this._name),
+      s3_bucket_name: cdktf.stringToTerraform(this._s3BucketName),
+      s3_key_prefix: cdktf.stringToTerraform(this._s3KeyPrefix),
+      sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
+      snapshot_delivery_properties: cdktf.listMapper(configDeliveryChannelSnapshotDeliveryPropertiesToTerraform)(this._snapshotDeliveryProperties),
     };
   }
 }

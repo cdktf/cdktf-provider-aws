@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbInstanceConfig extends TerraformMetaArguments {
+export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly allocatedStorage?: number;
   readonly allowMajorVersionUpgrade?: boolean;
   readonly applyImmediately?: boolean;
@@ -70,15 +69,37 @@ export interface DbInstanceS3Import {
   readonly sourceEngine: string;
   readonly sourceEngineVersion: string;
 }
+
+function dbInstanceS3ImportToTerraform(struct?: DbInstanceS3Import): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
+    bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
+    ingestion_role: cdktf.stringToTerraform(struct!.ingestionRole),
+    source_engine: cdktf.stringToTerraform(struct!.sourceEngine),
+    source_engine_version: cdktf.stringToTerraform(struct!.sourceEngineVersion),
+  }
+}
+
 export interface DbInstanceTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function dbInstanceTimeoutsToTerraform(struct?: DbInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DbInstance extends TerraformResource {
+export class DbInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -1028,58 +1049,58 @@ export class DbInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_storage: this._allocatedStorage,
-      allow_major_version_upgrade: this._allowMajorVersionUpgrade,
-      apply_immediately: this._applyImmediately,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      availability_zone: this._availabilityZone,
-      backup_retention_period: this._backupRetentionPeriod,
-      backup_window: this._backupWindow,
-      ca_cert_identifier: this._caCertIdentifier,
-      character_set_name: this._characterSetName,
-      copy_tags_to_snapshot: this._copyTagsToSnapshot,
-      db_subnet_group_name: this._dbSubnetGroupName,
-      delete_automated_backups: this._deleteAutomatedBackups,
-      deletion_protection: this._deletionProtection,
-      domain: this._domain,
-      domain_iam_role_name: this._domainIamRoleName,
-      enabled_cloudwatch_logs_exports: this._enabledCloudwatchLogsExports,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      final_snapshot_identifier: this._finalSnapshotIdentifier,
-      iam_database_authentication_enabled: this._iamDatabaseAuthenticationEnabled,
-      identifier: this._identifier,
-      identifier_prefix: this._identifierPrefix,
-      instance_class: this._instanceClass,
-      iops: this._iops,
-      kms_key_id: this._kmsKeyId,
-      license_model: this._licenseModel,
-      maintenance_window: this._maintenanceWindow,
-      max_allocated_storage: this._maxAllocatedStorage,
-      monitoring_interval: this._monitoringInterval,
-      monitoring_role_arn: this._monitoringRoleArn,
-      multi_az: this._multiAz,
-      name: this._name,
-      option_group_name: this._optionGroupName,
-      parameter_group_name: this._parameterGroupName,
-      password: this._password,
-      performance_insights_enabled: this._performanceInsightsEnabled,
-      performance_insights_kms_key_id: this._performanceInsightsKmsKeyId,
-      performance_insights_retention_period: this._performanceInsightsRetentionPeriod,
-      port: this._port,
-      publicly_accessible: this._publiclyAccessible,
-      replicate_source_db: this._replicateSourceDb,
-      security_group_names: this._securityGroupNames,
-      skip_final_snapshot: this._skipFinalSnapshot,
-      snapshot_identifier: this._snapshotIdentifier,
-      storage_encrypted: this._storageEncrypted,
-      storage_type: this._storageType,
-      tags: this._tags,
-      timezone: this._timezone,
-      username: this._username,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      s3_import: this._s3Import,
-      timeouts: this._timeouts,
+      allocated_storage: cdktf.numberToTerraform(this._allocatedStorage),
+      allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
+      backup_window: cdktf.stringToTerraform(this._backupWindow),
+      ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
+      character_set_name: cdktf.stringToTerraform(this._characterSetName),
+      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
+      db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
+      delete_automated_backups: cdktf.booleanToTerraform(this._deleteAutomatedBackups),
+      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      domain: cdktf.stringToTerraform(this._domain),
+      domain_iam_role_name: cdktf.stringToTerraform(this._domainIamRoleName),
+      enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledCloudwatchLogsExports),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
+      iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
+      identifier: cdktf.stringToTerraform(this._identifier),
+      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
+      instance_class: cdktf.stringToTerraform(this._instanceClass),
+      iops: cdktf.numberToTerraform(this._iops),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      license_model: cdktf.stringToTerraform(this._licenseModel),
+      maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
+      max_allocated_storage: cdktf.numberToTerraform(this._maxAllocatedStorage),
+      monitoring_interval: cdktf.numberToTerraform(this._monitoringInterval),
+      monitoring_role_arn: cdktf.stringToTerraform(this._monitoringRoleArn),
+      multi_az: cdktf.booleanToTerraform(this._multiAz),
+      name: cdktf.stringToTerraform(this._name),
+      option_group_name: cdktf.stringToTerraform(this._optionGroupName),
+      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
+      password: cdktf.stringToTerraform(this._password),
+      performance_insights_enabled: cdktf.booleanToTerraform(this._performanceInsightsEnabled),
+      performance_insights_kms_key_id: cdktf.stringToTerraform(this._performanceInsightsKmsKeyId),
+      performance_insights_retention_period: cdktf.numberToTerraform(this._performanceInsightsRetentionPeriod),
+      port: cdktf.numberToTerraform(this._port),
+      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
+      replicate_source_db: cdktf.stringToTerraform(this._replicateSourceDb),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
+      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
+      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
+      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
+      storage_type: cdktf.stringToTerraform(this._storageType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timezone: cdktf.stringToTerraform(this._timezone),
+      username: cdktf.stringToTerraform(this._username),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      s3_import: cdktf.listMapper(dbInstanceS3ImportToTerraform)(this._s3Import),
+      timeouts: dbInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

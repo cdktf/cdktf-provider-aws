@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlacierVaultLockConfig extends TerraformMetaArguments {
+export interface GlacierVaultLockConfig extends cdktf.TerraformMetaArguments {
   readonly completeLock: boolean;
   readonly ignoreDeletionError?: boolean;
   readonly policy: string;
@@ -16,7 +15,7 @@ export interface GlacierVaultLockConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GlacierVaultLock extends TerraformResource {
+export class GlacierVaultLock extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -109,10 +108,10 @@ export class GlacierVaultLock extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      complete_lock: this._completeLock,
-      ignore_deletion_error: this._ignoreDeletionError,
-      policy: this._policy,
-      vault_name: this._vaultName,
+      complete_lock: cdktf.booleanToTerraform(this._completeLock),
+      ignore_deletion_error: cdktf.booleanToTerraform(this._ignoreDeletionError),
+      policy: cdktf.stringToTerraform(this._policy),
+      vault_name: cdktf.stringToTerraform(this._vaultName),
     };
   }
 }

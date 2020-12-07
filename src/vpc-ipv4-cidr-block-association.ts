@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcIpv4CidrBlockAssociationConfig extends TerraformMetaArguments {
+export interface VpcIpv4CidrBlockAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly cidrBlock: string;
   readonly vpcId: string;
   /** timeouts block */
@@ -18,9 +17,18 @@ export interface VpcIpv4CidrBlockAssociationTimeouts {
   readonly delete?: string;
 }
 
+function vpcIpv4CidrBlockAssociationTimeoutsToTerraform(struct?: VpcIpv4CidrBlockAssociationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class VpcIpv4CidrBlockAssociation extends TerraformResource {
+export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +107,9 @@ export class VpcIpv4CidrBlockAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_block: this._cidrBlock,
-      vpc_id: this._vpcId,
-      timeouts: this._timeouts,
+      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      timeouts: vpcIpv4CidrBlockAssociationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

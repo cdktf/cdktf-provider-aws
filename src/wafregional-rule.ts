@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalRuleConfig extends TerraformMetaArguments {
+export interface WafregionalRuleConfig extends cdktf.TerraformMetaArguments {
   readonly metricName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -20,9 +19,19 @@ export interface WafregionalRulePredicate {
   readonly type: string;
 }
 
+function wafregionalRulePredicateToTerraform(struct?: WafregionalRulePredicate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data_id: cdktf.stringToTerraform(struct!.dataId),
+    negated: cdktf.booleanToTerraform(struct!.negated),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class WafregionalRule extends TerraformResource {
+export class WafregionalRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -123,10 +132,10 @@ export class WafregionalRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      metric_name: this._metricName,
-      name: this._name,
-      tags: this._tags,
-      predicate: this._predicate,
+      metric_name: cdktf.stringToTerraform(this._metricName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      predicate: cdktf.listMapper(wafregionalRulePredicateToTerraform)(this._predicate),
     };
   }
 }

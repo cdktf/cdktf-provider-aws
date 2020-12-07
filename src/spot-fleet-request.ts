@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SpotFleetRequestConfig extends TerraformMetaArguments {
+export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   readonly allocationStrategy?: string;
   readonly excessCapacityTerminationPolicy?: string;
   readonly fleetType?: string;
@@ -41,10 +40,34 @@ export interface SpotFleetRequestLaunchSpecificationEbsBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function spotFleetRequestLaunchSpecificationEbsBlockDeviceToTerraform(struct?: SpotFleetRequestLaunchSpecificationEbsBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface SpotFleetRequestLaunchSpecificationEphemeralBlockDevice {
   readonly deviceName: string;
   readonly virtualName: string;
 }
+
+function spotFleetRequestLaunchSpecificationEphemeralBlockDeviceToTerraform(struct?: SpotFleetRequestLaunchSpecificationEphemeralBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+  }
+}
+
 export interface SpotFleetRequestLaunchSpecificationRootBlockDevice {
   readonly deleteOnTermination?: boolean;
   readonly encrypted?: boolean;
@@ -53,6 +76,19 @@ export interface SpotFleetRequestLaunchSpecificationRootBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function spotFleetRequestLaunchSpecificationRootBlockDeviceToTerraform(struct?: SpotFleetRequestLaunchSpecificationRootBlockDevice): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface SpotFleetRequestLaunchSpecification {
   readonly ami: string;
   readonly associatePublicIpAddress?: boolean;
@@ -78,11 +114,48 @@ export interface SpotFleetRequestLaunchSpecification {
   /** root_block_device block */
   readonly rootBlockDevice?: SpotFleetRequestLaunchSpecificationRootBlockDevice[];
 }
+
+function spotFleetRequestLaunchSpecificationToTerraform(struct?: SpotFleetRequestLaunchSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ami: cdktf.stringToTerraform(struct!.ami),
+    associate_public_ip_address: cdktf.booleanToTerraform(struct!.associatePublicIpAddress),
+    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
+    ebs_optimized: cdktf.booleanToTerraform(struct!.ebsOptimized),
+    iam_instance_profile: cdktf.stringToTerraform(struct!.iamInstanceProfile),
+    iam_instance_profile_arn: cdktf.stringToTerraform(struct!.iamInstanceProfileArn),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    key_name: cdktf.stringToTerraform(struct!.keyName),
+    monitoring: cdktf.booleanToTerraform(struct!.monitoring),
+    placement_group: cdktf.stringToTerraform(struct!.placementGroup),
+    placement_tenancy: cdktf.stringToTerraform(struct!.placementTenancy),
+    spot_price: cdktf.stringToTerraform(struct!.spotPrice),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    user_data: cdktf.stringToTerraform(struct!.userData),
+    vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.vpcSecurityGroupIds),
+    weighted_capacity: cdktf.stringToTerraform(struct!.weightedCapacity),
+    ebs_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationEbsBlockDeviceToTerraform)(struct!.ebsBlockDevice),
+    ephemeral_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationEphemeralBlockDeviceToTerraform)(struct!.ephemeralBlockDevice),
+    root_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationRootBlockDeviceToTerraform)(struct!.rootBlockDevice),
+  }
+}
+
 export interface SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification {
   readonly id?: string;
   readonly name?: string;
   readonly version?: string;
 }
+
+function spotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationToTerraform(struct?: SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface SpotFleetRequestLaunchTemplateConfigOverrides {
   readonly availabilityZone?: string;
   readonly instanceType?: string;
@@ -91,20 +164,51 @@ export interface SpotFleetRequestLaunchTemplateConfigOverrides {
   readonly subnetId?: string;
   readonly weightedCapacity?: number;
 }
+
+function spotFleetRequestLaunchTemplateConfigOverridesToTerraform(struct?: SpotFleetRequestLaunchTemplateConfigOverrides): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    priority: cdktf.numberToTerraform(struct!.priority),
+    spot_price: cdktf.stringToTerraform(struct!.spotPrice),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    weighted_capacity: cdktf.numberToTerraform(struct!.weightedCapacity),
+  }
+}
+
 export interface SpotFleetRequestLaunchTemplateConfig {
   /** launch_template_specification block */
   readonly launchTemplateSpecification: SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification[];
   /** overrides block */
   readonly overrides?: SpotFleetRequestLaunchTemplateConfigOverrides[];
 }
+
+function spotFleetRequestLaunchTemplateConfigToTerraform(struct?: SpotFleetRequestLaunchTemplateConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    launch_template_specification: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationToTerraform)(struct!.launchTemplateSpecification),
+    overrides: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigOverridesToTerraform)(struct!.overrides),
+  }
+}
+
 export interface SpotFleetRequestTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
+function spotFleetRequestTimeoutsToTerraform(struct?: SpotFleetRequestTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class SpotFleetRequest extends TerraformResource {
+export class SpotFleetRequest extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -465,25 +569,25 @@ export class SpotFleetRequest extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_strategy: this._allocationStrategy,
-      excess_capacity_termination_policy: this._excessCapacityTerminationPolicy,
-      fleet_type: this._fleetType,
-      iam_fleet_role: this._iamFleetRole,
-      instance_interruption_behaviour: this._instanceInterruptionBehaviour,
-      instance_pools_to_use_count: this._instancePoolsToUseCount,
-      load_balancers: this._loadBalancers,
-      replace_unhealthy_instances: this._replaceUnhealthyInstances,
-      spot_price: this._spotPrice,
-      tags: this._tags,
-      target_capacity: this._targetCapacity,
-      target_group_arns: this._targetGroupArns,
-      terminate_instances_with_expiration: this._terminateInstancesWithExpiration,
-      valid_from: this._validFrom,
-      valid_until: this._validUntil,
-      wait_for_fulfillment: this._waitForFulfillment,
-      launch_specification: this._launchSpecification,
-      launch_template_config: this._launchTemplateConfig,
-      timeouts: this._timeouts,
+      allocation_strategy: cdktf.stringToTerraform(this._allocationStrategy),
+      excess_capacity_termination_policy: cdktf.stringToTerraform(this._excessCapacityTerminationPolicy),
+      fleet_type: cdktf.stringToTerraform(this._fleetType),
+      iam_fleet_role: cdktf.stringToTerraform(this._iamFleetRole),
+      instance_interruption_behaviour: cdktf.stringToTerraform(this._instanceInterruptionBehaviour),
+      instance_pools_to_use_count: cdktf.numberToTerraform(this._instancePoolsToUseCount),
+      load_balancers: cdktf.listMapper(cdktf.stringToTerraform)(this._loadBalancers),
+      replace_unhealthy_instances: cdktf.booleanToTerraform(this._replaceUnhealthyInstances),
+      spot_price: cdktf.stringToTerraform(this._spotPrice),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_capacity: cdktf.numberToTerraform(this._targetCapacity),
+      target_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupArns),
+      terminate_instances_with_expiration: cdktf.booleanToTerraform(this._terminateInstancesWithExpiration),
+      valid_from: cdktf.stringToTerraform(this._validFrom),
+      valid_until: cdktf.stringToTerraform(this._validUntil),
+      wait_for_fulfillment: cdktf.booleanToTerraform(this._waitForFulfillment),
+      launch_specification: cdktf.listMapper(spotFleetRequestLaunchSpecificationToTerraform)(this._launchSpecification),
+      launch_template_config: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigToTerraform)(this._launchTemplateConfig),
+      timeouts: spotFleetRequestTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamPolicyDocumentConfig extends TerraformMetaArguments {
+export interface DataAwsIamPolicyDocumentConfig extends cdktf.TerraformMetaArguments {
   readonly overrideJson?: string;
   readonly policyId?: string;
   readonly sourceJson?: string;
@@ -20,14 +19,42 @@ export interface DataAwsIamPolicyDocumentStatementCondition {
   readonly values: string[];
   readonly variable: string;
 }
+
+function dataAwsIamPolicyDocumentStatementConditionToTerraform(struct?: DataAwsIamPolicyDocumentStatementCondition): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    test: cdktf.stringToTerraform(struct!.test),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    variable: cdktf.stringToTerraform(struct!.variable),
+  }
+}
+
 export interface DataAwsIamPolicyDocumentStatementNotPrincipals {
   readonly identifiers: string[];
   readonly type: string;
 }
+
+function dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform(struct?: DataAwsIamPolicyDocumentStatementNotPrincipals): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    identifiers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.identifiers),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface DataAwsIamPolicyDocumentStatementPrincipals {
   readonly identifiers: string[];
   readonly type: string;
 }
+
+function dataAwsIamPolicyDocumentStatementPrincipalsToTerraform(struct?: DataAwsIamPolicyDocumentStatementPrincipals): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    identifiers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.identifiers),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface DataAwsIamPolicyDocumentStatement {
   readonly actions?: string[];
   readonly effect?: string;
@@ -43,9 +70,25 @@ export interface DataAwsIamPolicyDocumentStatement {
   readonly principals?: DataAwsIamPolicyDocumentStatementPrincipals[];
 }
 
+function dataAwsIamPolicyDocumentStatementToTerraform(struct?: DataAwsIamPolicyDocumentStatement): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.actions),
+    effect: cdktf.stringToTerraform(struct!.effect),
+    not_actions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notActions),
+    not_resources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notResources),
+    resources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resources),
+    sid: cdktf.stringToTerraform(struct!.sid),
+    condition: cdktf.listMapper(dataAwsIamPolicyDocumentStatementConditionToTerraform)(struct!.condition),
+    not_principals: cdktf.listMapper(dataAwsIamPolicyDocumentStatementNotPrincipalsToTerraform)(struct!.notPrincipals),
+    principals: cdktf.listMapper(dataAwsIamPolicyDocumentStatementPrincipalsToTerraform)(struct!.principals),
+  }
+}
+
+
 // Resource
 
-export class DataAwsIamPolicyDocument extends TerraformDataSource {
+export class DataAwsIamPolicyDocument extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -169,11 +212,11 @@ export class DataAwsIamPolicyDocument extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      override_json: this._overrideJson,
-      policy_id: this._policyId,
-      source_json: this._sourceJson,
-      version: this._version,
-      statement: this._statement,
+      override_json: cdktf.stringToTerraform(this._overrideJson),
+      policy_id: cdktf.stringToTerraform(this._policyId),
+      source_json: cdktf.stringToTerraform(this._sourceJson),
+      version: cdktf.stringToTerraform(this._version),
+      statement: cdktf.listMapper(dataAwsIamPolicyDocumentStatementToTerraform)(this._statement),
     };
   }
 }

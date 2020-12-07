@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueJobConfig extends TerraformMetaArguments {
+export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   readonly allocatedCapacity?: number;
   readonly connections?: string[];
   readonly defaultArguments?: { [key: string]: string };
@@ -34,16 +33,42 @@ export interface GlueJobCommand {
   readonly pythonVersion?: string;
   readonly scriptLocation: string;
 }
+
+function glueJobCommandToTerraform(struct?: GlueJobCommand): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    python_version: cdktf.stringToTerraform(struct!.pythonVersion),
+    script_location: cdktf.stringToTerraform(struct!.scriptLocation),
+  }
+}
+
 export interface GlueJobExecutionProperty {
   readonly maxConcurrentRuns?: number;
 }
+
+function glueJobExecutionPropertyToTerraform(struct?: GlueJobExecutionProperty): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_concurrent_runs: cdktf.numberToTerraform(struct!.maxConcurrentRuns),
+  }
+}
+
 export interface GlueJobNotificationProperty {
   readonly notifyDelayAfter?: number;
 }
 
+function glueJobNotificationPropertyToTerraform(struct?: GlueJobNotificationProperty): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    notify_delay_after: cdktf.numberToTerraform(struct!.notifyDelayAfter),
+  }
+}
+
+
 // Resource
 
-export class GlueJob extends TerraformResource {
+export class GlueJob extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -362,23 +387,23 @@ export class GlueJob extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_capacity: this._allocatedCapacity,
-      connections: this._connections,
-      default_arguments: this._defaultArguments,
-      description: this._description,
-      glue_version: this._glueVersion,
-      max_capacity: this._maxCapacity,
-      max_retries: this._maxRetries,
-      name: this._name,
-      number_of_workers: this._numberOfWorkers,
-      role_arn: this._roleArn,
-      security_configuration: this._securityConfiguration,
-      tags: this._tags,
-      timeout: this._timeout,
-      worker_type: this._workerType,
-      command: this._command,
-      execution_property: this._executionProperty,
-      notification_property: this._notificationProperty,
+      allocated_capacity: cdktf.numberToTerraform(this._allocatedCapacity),
+      connections: cdktf.listMapper(cdktf.stringToTerraform)(this._connections),
+      default_arguments: cdktf.hashMapper(cdktf.anyToTerraform)(this._defaultArguments),
+      description: cdktf.stringToTerraform(this._description),
+      glue_version: cdktf.stringToTerraform(this._glueVersion),
+      max_capacity: cdktf.numberToTerraform(this._maxCapacity),
+      max_retries: cdktf.numberToTerraform(this._maxRetries),
+      name: cdktf.stringToTerraform(this._name),
+      number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeout: cdktf.numberToTerraform(this._timeout),
+      worker_type: cdktf.stringToTerraform(this._workerType),
+      command: cdktf.listMapper(glueJobCommandToTerraform)(this._command),
+      execution_property: cdktf.listMapper(glueJobExecutionPropertyToTerraform)(this._executionProperty),
+      notification_property: cdktf.listMapper(glueJobNotificationPropertyToTerraform)(this._notificationProperty),
     };
   }
 }

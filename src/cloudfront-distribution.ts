@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudfrontDistributionConfig extends TerraformMetaArguments {
+export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArguments {
   readonly aliases?: string[];
   readonly comment?: string;
   readonly defaultRootObject?: string;
@@ -43,6 +41,15 @@ export interface CloudfrontDistributionCacheBehaviorForwardedValuesCookies {
   readonly forward: string;
   readonly whitelistedNames?: string[];
 }
+
+function cloudfrontDistributionCacheBehaviorForwardedValuesCookiesToTerraform(struct?: CloudfrontDistributionCacheBehaviorForwardedValuesCookies): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    forward: cdktf.stringToTerraform(struct!.forward),
+    whitelisted_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.whitelistedNames),
+  }
+}
+
 export interface CloudfrontDistributionCacheBehaviorForwardedValues {
   readonly headers?: string[];
   readonly queryString: boolean;
@@ -50,11 +57,32 @@ export interface CloudfrontDistributionCacheBehaviorForwardedValues {
   /** cookies block */
   readonly cookies: CloudfrontDistributionCacheBehaviorForwardedValuesCookies[];
 }
+
+function cloudfrontDistributionCacheBehaviorForwardedValuesToTerraform(struct?: CloudfrontDistributionCacheBehaviorForwardedValues): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.headers),
+    query_string: cdktf.booleanToTerraform(struct!.queryString),
+    query_string_cache_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queryStringCacheKeys),
+    cookies: cdktf.listMapper(cloudfrontDistributionCacheBehaviorForwardedValuesCookiesToTerraform)(struct!.cookies),
+  }
+}
+
 export interface CloudfrontDistributionCacheBehaviorLambdaFunctionAssociation {
   readonly eventType: string;
   readonly includeBody?: boolean;
   readonly lambdaArn: string;
 }
+
+function cloudfrontDistributionCacheBehaviorLambdaFunctionAssociationToTerraform(struct?: CloudfrontDistributionCacheBehaviorLambdaFunctionAssociation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    event_type: cdktf.stringToTerraform(struct!.eventType),
+    include_body: cdktf.booleanToTerraform(struct!.includeBody),
+    lambda_arn: cdktf.stringToTerraform(struct!.lambdaArn),
+  }
+}
+
 export interface CloudfrontDistributionCacheBehavior {
   readonly allowedMethods: string[];
   readonly cachedMethods: string[];
@@ -73,16 +101,57 @@ export interface CloudfrontDistributionCacheBehavior {
   /** lambda_function_association block */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionCacheBehaviorLambdaFunctionAssociation[];
 }
+
+function cloudfrontDistributionCacheBehaviorToTerraform(struct?: CloudfrontDistributionCacheBehavior): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
+    cached_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachedMethods),
+    compress: cdktf.booleanToTerraform(struct!.compress),
+    default_ttl: cdktf.numberToTerraform(struct!.defaultTtl),
+    field_level_encryption_id: cdktf.stringToTerraform(struct!.fieldLevelEncryptionId),
+    max_ttl: cdktf.numberToTerraform(struct!.maxTtl),
+    min_ttl: cdktf.numberToTerraform(struct!.minTtl),
+    path_pattern: cdktf.stringToTerraform(struct!.pathPattern),
+    smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
+    target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
+    trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
+    viewer_protocol_policy: cdktf.stringToTerraform(struct!.viewerProtocolPolicy),
+    forwarded_values: cdktf.listMapper(cloudfrontDistributionCacheBehaviorForwardedValuesToTerraform)(struct!.forwardedValues),
+    lambda_function_association: cdktf.listMapper(cloudfrontDistributionCacheBehaviorLambdaFunctionAssociationToTerraform)(struct!.lambdaFunctionAssociation),
+  }
+}
+
 export interface CloudfrontDistributionCustomErrorResponse {
   readonly errorCachingMinTtl?: number;
   readonly errorCode: number;
   readonly responseCode?: number;
   readonly responsePagePath?: string;
 }
+
+function cloudfrontDistributionCustomErrorResponseToTerraform(struct?: CloudfrontDistributionCustomErrorResponse): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    error_caching_min_ttl: cdktf.numberToTerraform(struct!.errorCachingMinTtl),
+    error_code: cdktf.numberToTerraform(struct!.errorCode),
+    response_code: cdktf.numberToTerraform(struct!.responseCode),
+    response_page_path: cdktf.stringToTerraform(struct!.responsePagePath),
+  }
+}
+
 export interface CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies {
   readonly forward: string;
   readonly whitelistedNames?: string[];
 }
+
+function cloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesToTerraform(struct?: CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    forward: cdktf.stringToTerraform(struct!.forward),
+    whitelisted_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.whitelistedNames),
+  }
+}
+
 export interface CloudfrontDistributionDefaultCacheBehaviorForwardedValues {
   readonly headers?: string[];
   readonly queryString: boolean;
@@ -90,11 +159,32 @@ export interface CloudfrontDistributionDefaultCacheBehaviorForwardedValues {
   /** cookies block */
   readonly cookies: CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookies[];
 }
+
+function cloudfrontDistributionDefaultCacheBehaviorForwardedValuesToTerraform(struct?: CloudfrontDistributionDefaultCacheBehaviorForwardedValues): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.headers),
+    query_string: cdktf.booleanToTerraform(struct!.queryString),
+    query_string_cache_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queryStringCacheKeys),
+    cookies: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesToTerraform)(struct!.cookies),
+  }
+}
+
 export interface CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation {
   readonly eventType: string;
   readonly includeBody?: boolean;
   readonly lambdaArn: string;
 }
+
+function cloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationToTerraform(struct?: CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    event_type: cdktf.stringToTerraform(struct!.eventType),
+    include_body: cdktf.booleanToTerraform(struct!.includeBody),
+    lambda_arn: cdktf.stringToTerraform(struct!.lambdaArn),
+  }
+}
+
 export interface CloudfrontDistributionDefaultCacheBehavior {
   readonly allowedMethods: string[];
   readonly cachedMethods: string[];
@@ -112,15 +202,54 @@ export interface CloudfrontDistributionDefaultCacheBehavior {
   /** lambda_function_association block */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation[];
 }
+
+function cloudfrontDistributionDefaultCacheBehaviorToTerraform(struct?: CloudfrontDistributionDefaultCacheBehavior): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
+    cached_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachedMethods),
+    compress: cdktf.booleanToTerraform(struct!.compress),
+    default_ttl: cdktf.numberToTerraform(struct!.defaultTtl),
+    field_level_encryption_id: cdktf.stringToTerraform(struct!.fieldLevelEncryptionId),
+    max_ttl: cdktf.numberToTerraform(struct!.maxTtl),
+    min_ttl: cdktf.numberToTerraform(struct!.minTtl),
+    smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
+    target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
+    trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
+    viewer_protocol_policy: cdktf.stringToTerraform(struct!.viewerProtocolPolicy),
+    forwarded_values: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorForwardedValuesToTerraform)(struct!.forwardedValues),
+    lambda_function_association: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationToTerraform)(struct!.lambdaFunctionAssociation),
+  }
+}
+
 export interface CloudfrontDistributionLoggingConfig {
   readonly bucket: string;
   readonly includeCookies?: boolean;
   readonly prefix?: string;
 }
+
+function cloudfrontDistributionLoggingConfigToTerraform(struct?: CloudfrontDistributionLoggingConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    include_cookies: cdktf.booleanToTerraform(struct!.includeCookies),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+  }
+}
+
 export interface CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies {
   readonly forward: string;
   readonly whitelistedNames?: string[];
 }
+
+function cloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesToTerraform(struct?: CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    forward: cdktf.stringToTerraform(struct!.forward),
+    whitelisted_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.whitelistedNames),
+  }
+}
+
 export interface CloudfrontDistributionOrderedCacheBehaviorForwardedValues {
   readonly headers?: string[];
   readonly queryString: boolean;
@@ -128,11 +257,32 @@ export interface CloudfrontDistributionOrderedCacheBehaviorForwardedValues {
   /** cookies block */
   readonly cookies: CloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookies[];
 }
+
+function cloudfrontDistributionOrderedCacheBehaviorForwardedValuesToTerraform(struct?: CloudfrontDistributionOrderedCacheBehaviorForwardedValues): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.headers),
+    query_string: cdktf.booleanToTerraform(struct!.queryString),
+    query_string_cache_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queryStringCacheKeys),
+    cookies: cdktf.listMapper(cloudfrontDistributionOrderedCacheBehaviorForwardedValuesCookiesToTerraform)(struct!.cookies),
+  }
+}
+
 export interface CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation {
   readonly eventType: string;
   readonly includeBody?: boolean;
   readonly lambdaArn: string;
 }
+
+function cloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationToTerraform(struct?: CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    event_type: cdktf.stringToTerraform(struct!.eventType),
+    include_body: cdktf.booleanToTerraform(struct!.includeBody),
+    lambda_arn: cdktf.stringToTerraform(struct!.lambdaArn),
+  }
+}
+
 export interface CloudfrontDistributionOrderedCacheBehavior {
   readonly allowedMethods: string[];
   readonly cachedMethods: string[];
@@ -151,10 +301,40 @@ export interface CloudfrontDistributionOrderedCacheBehavior {
   /** lambda_function_association block */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation[];
 }
+
+function cloudfrontDistributionOrderedCacheBehaviorToTerraform(struct?: CloudfrontDistributionOrderedCacheBehavior): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
+    cached_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachedMethods),
+    compress: cdktf.booleanToTerraform(struct!.compress),
+    default_ttl: cdktf.numberToTerraform(struct!.defaultTtl),
+    field_level_encryption_id: cdktf.stringToTerraform(struct!.fieldLevelEncryptionId),
+    max_ttl: cdktf.numberToTerraform(struct!.maxTtl),
+    min_ttl: cdktf.numberToTerraform(struct!.minTtl),
+    path_pattern: cdktf.stringToTerraform(struct!.pathPattern),
+    smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
+    target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
+    trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
+    viewer_protocol_policy: cdktf.stringToTerraform(struct!.viewerProtocolPolicy),
+    forwarded_values: cdktf.listMapper(cloudfrontDistributionOrderedCacheBehaviorForwardedValuesToTerraform)(struct!.forwardedValues),
+    lambda_function_association: cdktf.listMapper(cloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationToTerraform)(struct!.lambdaFunctionAssociation),
+  }
+}
+
 export interface CloudfrontDistributionOriginCustomHeader {
   readonly name: string;
   readonly value: string;
 }
+
+function cloudfrontDistributionOriginCustomHeaderToTerraform(struct?: CloudfrontDistributionOriginCustomHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface CloudfrontDistributionOriginCustomOriginConfig {
   readonly httpPort: number;
   readonly httpsPort: number;
@@ -163,9 +343,30 @@ export interface CloudfrontDistributionOriginCustomOriginConfig {
   readonly originReadTimeout?: number;
   readonly originSslProtocols: string[];
 }
+
+function cloudfrontDistributionOriginCustomOriginConfigToTerraform(struct?: CloudfrontDistributionOriginCustomOriginConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    http_port: cdktf.numberToTerraform(struct!.httpPort),
+    https_port: cdktf.numberToTerraform(struct!.httpsPort),
+    origin_keepalive_timeout: cdktf.numberToTerraform(struct!.originKeepaliveTimeout),
+    origin_protocol_policy: cdktf.stringToTerraform(struct!.originProtocolPolicy),
+    origin_read_timeout: cdktf.numberToTerraform(struct!.originReadTimeout),
+    origin_ssl_protocols: cdktf.listMapper(cdktf.stringToTerraform)(struct!.originSslProtocols),
+  }
+}
+
 export interface CloudfrontDistributionOriginS3OriginConfig {
   readonly originAccessIdentity: string;
 }
+
+function cloudfrontDistributionOriginS3OriginConfigToTerraform(struct?: CloudfrontDistributionOriginS3OriginConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    origin_access_identity: cdktf.stringToTerraform(struct!.originAccessIdentity),
+  }
+}
+
 export interface CloudfrontDistributionOrigin {
   readonly domainName: string;
   readonly originId: string;
@@ -177,12 +378,41 @@ export interface CloudfrontDistributionOrigin {
   /** s3_origin_config block */
   readonly s3OriginConfig?: CloudfrontDistributionOriginS3OriginConfig[];
 }
+
+function cloudfrontDistributionOriginToTerraform(struct?: CloudfrontDistributionOrigin): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    domain_name: cdktf.stringToTerraform(struct!.domainName),
+    origin_id: cdktf.stringToTerraform(struct!.originId),
+    origin_path: cdktf.stringToTerraform(struct!.originPath),
+    custom_header: cdktf.listMapper(cloudfrontDistributionOriginCustomHeaderToTerraform)(struct!.customHeader),
+    custom_origin_config: cdktf.listMapper(cloudfrontDistributionOriginCustomOriginConfigToTerraform)(struct!.customOriginConfig),
+    s3_origin_config: cdktf.listMapper(cloudfrontDistributionOriginS3OriginConfigToTerraform)(struct!.s3OriginConfig),
+  }
+}
+
 export interface CloudfrontDistributionOriginGroupFailoverCriteria {
   readonly statusCodes: number[];
 }
+
+function cloudfrontDistributionOriginGroupFailoverCriteriaToTerraform(struct?: CloudfrontDistributionOriginGroupFailoverCriteria): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    status_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.statusCodes),
+  }
+}
+
 export interface CloudfrontDistributionOriginGroupMember {
   readonly originId: string;
 }
+
+function cloudfrontDistributionOriginGroupMemberToTerraform(struct?: CloudfrontDistributionOriginGroupMember): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    origin_id: cdktf.stringToTerraform(struct!.originId),
+  }
+}
+
 export interface CloudfrontDistributionOriginGroup {
   readonly originId: string;
   /** failover_criteria block */
@@ -190,14 +420,41 @@ export interface CloudfrontDistributionOriginGroup {
   /** member block */
   readonly member: CloudfrontDistributionOriginGroupMember[];
 }
+
+function cloudfrontDistributionOriginGroupToTerraform(struct?: CloudfrontDistributionOriginGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    origin_id: cdktf.stringToTerraform(struct!.originId),
+    failover_criteria: cdktf.listMapper(cloudfrontDistributionOriginGroupFailoverCriteriaToTerraform)(struct!.failoverCriteria),
+    member: cdktf.listMapper(cloudfrontDistributionOriginGroupMemberToTerraform)(struct!.member),
+  }
+}
+
 export interface CloudfrontDistributionRestrictionsGeoRestriction {
   readonly locations?: string[];
   readonly restrictionType: string;
 }
+
+function cloudfrontDistributionRestrictionsGeoRestrictionToTerraform(struct?: CloudfrontDistributionRestrictionsGeoRestriction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    locations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.locations),
+    restriction_type: cdktf.stringToTerraform(struct!.restrictionType),
+  }
+}
+
 export interface CloudfrontDistributionRestrictions {
   /** geo_restriction block */
   readonly geoRestriction: CloudfrontDistributionRestrictionsGeoRestriction[];
 }
+
+function cloudfrontDistributionRestrictionsToTerraform(struct?: CloudfrontDistributionRestrictions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    geo_restriction: cdktf.listMapper(cloudfrontDistributionRestrictionsGeoRestrictionToTerraform)(struct!.geoRestriction),
+  }
+}
+
 export interface CloudfrontDistributionViewerCertificate {
   readonly acmCertificateArn?: string;
   readonly cloudfrontDefaultCertificate?: boolean;
@@ -206,9 +463,21 @@ export interface CloudfrontDistributionViewerCertificate {
   readonly sslSupportMethod?: string;
 }
 
+function cloudfrontDistributionViewerCertificateToTerraform(struct?: CloudfrontDistributionViewerCertificate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    acm_certificate_arn: cdktf.stringToTerraform(struct!.acmCertificateArn),
+    cloudfront_default_certificate: cdktf.booleanToTerraform(struct!.cloudfrontDefaultCertificate),
+    iam_certificate_id: cdktf.stringToTerraform(struct!.iamCertificateId),
+    minimum_protocol_version: cdktf.stringToTerraform(struct!.minimumProtocolVersion),
+    ssl_support_method: cdktf.stringToTerraform(struct!.sslSupportMethod),
+  }
+}
+
+
 // Resource
 
-export class CloudfrontDistribution extends TerraformResource {
+export class CloudfrontDistribution extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -253,7 +522,7 @@ export class CloudfrontDistribution extends TerraformResource {
 
   // active_trusted_signers - computed: true, optional: false, required: false
   public activeTrustedSigners(key: string): string {
-    return new StringMap(this, 'active_trusted_signers').lookup(key);
+    return new cdktf.StringMap(this, 'active_trusted_signers').lookup(key);
   }
 
   // aliases - computed: false, optional: true, required: false
@@ -612,26 +881,26 @@ export class CloudfrontDistribution extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aliases: this._aliases,
-      comment: this._comment,
-      default_root_object: this._defaultRootObject,
-      enabled: this._enabled,
-      http_version: this._httpVersion,
-      is_ipv6_enabled: this._isIpv6Enabled,
-      price_class: this._priceClass,
-      retain_on_delete: this._retainOnDelete,
-      tags: this._tags,
-      wait_for_deployment: this._waitForDeployment,
-      web_acl_id: this._webAclId,
-      cache_behavior: this._cacheBehavior,
-      custom_error_response: this._customErrorResponse,
-      default_cache_behavior: this._defaultCacheBehavior,
-      logging_config: this._loggingConfig,
-      ordered_cache_behavior: this._orderedCacheBehavior,
-      origin: this._origin,
-      origin_group: this._originGroup,
-      restrictions: this._restrictions,
-      viewer_certificate: this._viewerCertificate,
+      aliases: cdktf.listMapper(cdktf.stringToTerraform)(this._aliases),
+      comment: cdktf.stringToTerraform(this._comment),
+      default_root_object: cdktf.stringToTerraform(this._defaultRootObject),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      http_version: cdktf.stringToTerraform(this._httpVersion),
+      is_ipv6_enabled: cdktf.booleanToTerraform(this._isIpv6Enabled),
+      price_class: cdktf.stringToTerraform(this._priceClass),
+      retain_on_delete: cdktf.booleanToTerraform(this._retainOnDelete),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      wait_for_deployment: cdktf.booleanToTerraform(this._waitForDeployment),
+      web_acl_id: cdktf.stringToTerraform(this._webAclId),
+      cache_behavior: cdktf.listMapper(cloudfrontDistributionCacheBehaviorToTerraform)(this._cacheBehavior),
+      custom_error_response: cdktf.listMapper(cloudfrontDistributionCustomErrorResponseToTerraform)(this._customErrorResponse),
+      default_cache_behavior: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorToTerraform)(this._defaultCacheBehavior),
+      logging_config: cdktf.listMapper(cloudfrontDistributionLoggingConfigToTerraform)(this._loggingConfig),
+      ordered_cache_behavior: cdktf.listMapper(cloudfrontDistributionOrderedCacheBehaviorToTerraform)(this._orderedCacheBehavior),
+      origin: cdktf.listMapper(cloudfrontDistributionOriginToTerraform)(this._origin),
+      origin_group: cdktf.listMapper(cloudfrontDistributionOriginGroupToTerraform)(this._originGroup),
+      restrictions: cdktf.listMapper(cloudfrontDistributionRestrictionsToTerraform)(this._restrictions),
+      viewer_certificate: cdktf.listMapper(cloudfrontDistributionViewerCertificateToTerraform)(this._viewerCertificate),
     };
   }
 }

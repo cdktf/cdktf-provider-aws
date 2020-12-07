@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamUserSshKeyConfig extends TerraformMetaArguments {
+export interface IamUserSshKeyConfig extends cdktf.TerraformMetaArguments {
   readonly encoding: string;
   readonly publicKey: string;
   readonly status?: string;
@@ -16,7 +15,7 @@ export interface IamUserSshKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamUserSshKey extends TerraformResource {
+export class IamUserSshKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,10 +118,10 @@ export class IamUserSshKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      encoding: this._encoding,
-      public_key: this._publicKey,
-      status: this._status,
-      username: this._username,
+      encoding: cdktf.stringToTerraform(this._encoding),
+      public_key: cdktf.stringToTerraform(this._publicKey),
+      status: cdktf.stringToTerraform(this._status),
+      username: cdktf.stringToTerraform(this._username),
     };
   }
 }

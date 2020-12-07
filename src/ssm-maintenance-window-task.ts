@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmMaintenanceWindowTaskConfig extends TerraformMetaArguments {
+export interface SsmMaintenanceWindowTaskConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly maxConcurrency: string;
   readonly maxErrors: string;
@@ -31,33 +30,99 @@ export interface SsmMaintenanceWindowTaskLoggingInfo {
   readonly s3BucketPrefix?: string;
   readonly s3Region: string;
 }
+
+function ssmMaintenanceWindowTaskLoggingInfoToTerraform(struct?: SsmMaintenanceWindowTaskLoggingInfo): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
+    s3_bucket_prefix: cdktf.stringToTerraform(struct!.s3BucketPrefix),
+    s3_region: cdktf.stringToTerraform(struct!.s3Region),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTargets {
   readonly key: string;
   readonly values: string[];
 }
+
+function ssmMaintenanceWindowTaskTargetsToTerraform(struct?: SsmMaintenanceWindowTaskTargets): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter {
   readonly name: string;
   readonly values: string[];
 }
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters {
   readonly documentVersion?: string;
   /** parameter block */
   readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter[];
 }
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    document_version: cdktf.stringToTerraform(struct!.documentVersion),
+    parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameterToTerraform)(struct!.parameter),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters {
   readonly clientContext?: string;
   readonly payload?: string;
   readonly qualifier?: string;
 }
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersLambdaParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    client_context: cdktf.stringToTerraform(struct!.clientContext),
+    payload: cdktf.stringToTerraform(struct!.payload),
+    qualifier: cdktf.stringToTerraform(struct!.qualifier),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig {
   readonly notificationArn?: string;
   readonly notificationEvents?: string[];
   readonly notificationType?: string;
 }
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    notification_arn: cdktf.stringToTerraform(struct!.notificationArn),
+    notification_events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notificationEvents),
+    notification_type: cdktf.stringToTerraform(struct!.notificationType),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter {
   readonly name: string;
   readonly values: string[];
 }
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters {
   readonly comment?: string;
   readonly documentHash?: string;
@@ -71,10 +136,35 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
   /** parameter block */
   readonly parameter?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter[];
 }
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    comment: cdktf.stringToTerraform(struct!.comment),
+    document_hash: cdktf.stringToTerraform(struct!.documentHash),
+    document_hash_type: cdktf.stringToTerraform(struct!.documentHashType),
+    output_s3_bucket: cdktf.stringToTerraform(struct!.outputS3Bucket),
+    output_s3_key_prefix: cdktf.stringToTerraform(struct!.outputS3KeyPrefix),
+    service_role_arn: cdktf.stringToTerraform(struct!.serviceRoleArn),
+    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    notification_config: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigToTerraform)(struct!.notificationConfig),
+    parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform)(struct!.parameter),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters {
   readonly input?: string;
   readonly name?: string;
 }
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    input: cdktf.stringToTerraform(struct!.input),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParameters {
   /** automation_parameters block */
   readonly automationParameters?: SsmMaintenanceWindowTaskTaskInvocationParametersAutomationParameters[];
@@ -85,14 +175,34 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParameters {
   /** step_functions_parameters block */
   readonly stepFunctionsParameters?: SsmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters[];
 }
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    automation_parameters: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersAutomationParametersToTerraform)(struct!.automationParameters),
+    lambda_parameters: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersToTerraform)(struct!.lambdaParameters),
+    run_command_parameters: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersToTerraform)(struct!.runCommandParameters),
+    step_functions_parameters: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersStepFunctionsParametersToTerraform)(struct!.stepFunctionsParameters),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskParameters {
   readonly name: string;
   readonly values: string[];
 }
 
+function ssmMaintenanceWindowTaskTaskParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class SsmMaintenanceWindowTask extends TerraformResource {
+export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -326,19 +436,19 @@ export class SsmMaintenanceWindowTask extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      max_concurrency: this._maxConcurrency,
-      max_errors: this._maxErrors,
-      name: this._name,
-      priority: this._priority,
-      service_role_arn: this._serviceRoleArn,
-      task_arn: this._taskArn,
-      task_type: this._taskType,
-      window_id: this._windowId,
-      logging_info: this._loggingInfo,
-      targets: this._targets,
-      task_invocation_parameters: this._taskInvocationParameters,
-      task_parameters: this._taskParameters,
+      description: cdktf.stringToTerraform(this._description),
+      max_concurrency: cdktf.stringToTerraform(this._maxConcurrency),
+      max_errors: cdktf.stringToTerraform(this._maxErrors),
+      name: cdktf.stringToTerraform(this._name),
+      priority: cdktf.numberToTerraform(this._priority),
+      service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
+      task_arn: cdktf.stringToTerraform(this._taskArn),
+      task_type: cdktf.stringToTerraform(this._taskType),
+      window_id: cdktf.stringToTerraform(this._windowId),
+      logging_info: cdktf.listMapper(ssmMaintenanceWindowTaskLoggingInfoToTerraform)(this._loggingInfo),
+      targets: cdktf.listMapper(ssmMaintenanceWindowTaskTargetsToTerraform)(this._targets),
+      task_invocation_parameters: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform)(this._taskInvocationParameters),
+      task_parameters: cdktf.listMapper(ssmMaintenanceWindowTaskTaskParametersToTerraform)(this._taskParameters),
     };
   }
 }

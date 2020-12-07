@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDbInstanceConfig extends TerraformMetaArguments {
+export interface DataAwsDbInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly dbInstanceIdentifier: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsDbInstance extends TerraformDataSource {
+export class DataAwsDbInstance extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -264,8 +263,8 @@ export class DataAwsDbInstance extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_instance_identifier: this._dbInstanceIdentifier,
-      tags: this._tags,
+      db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

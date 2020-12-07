@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamInstanceProfileConfig extends TerraformMetaArguments {
+export interface IamInstanceProfileConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly path?: string;
@@ -17,7 +16,7 @@ export interface IamInstanceProfileConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamInstanceProfile extends TerraformResource {
+export class IamInstanceProfile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -151,11 +150,11 @@ export class IamInstanceProfile extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      name_prefix: this._namePrefix,
-      path: this._path,
-      role: this._role,
-      roles: this._roles,
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      path: cdktf.stringToTerraform(this._path),
+      role: cdktf.stringToTerraform(this._role),
+      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
     };
   }
 }

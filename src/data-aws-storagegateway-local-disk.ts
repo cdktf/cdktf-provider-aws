@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsStoragegatewayLocalDiskConfig extends TerraformMetaArguments {
+export interface DataAwsStoragegatewayLocalDiskConfig extends cdktf.TerraformMetaArguments {
   readonly diskNode?: string;
   readonly diskPath?: string;
   readonly gatewayArn: string;
@@ -15,7 +14,7 @@ export interface DataAwsStoragegatewayLocalDiskConfig extends TerraformMetaArgum
 
 // Resource
 
-export class DataAwsStoragegatewayLocalDisk extends TerraformDataSource {
+export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -102,9 +101,9 @@ export class DataAwsStoragegatewayLocalDisk extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disk_node: this._diskNode,
-      disk_path: this._diskPath,
-      gateway_arn: this._gatewayArn,
+      disk_node: cdktf.stringToTerraform(this._diskNode),
+      disk_path: cdktf.stringToTerraform(this._diskPath),
+      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
     };
   }
 }

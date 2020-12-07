@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2ApiConfig extends TerraformMetaArguments {
+export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   readonly apiKeySelectionExpression?: string;
   readonly credentialsArn?: string;
   readonly description?: string;
@@ -30,9 +29,22 @@ export interface Apigatewayv2ApiCorsConfiguration {
   readonly maxAge?: number;
 }
 
+function apigatewayv2ApiCorsConfigurationToTerraform(struct?: Apigatewayv2ApiCorsConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowHeaders),
+    allow_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowMethods),
+    allow_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowOrigins),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    max_age: cdktf.numberToTerraform(struct!.maxAge),
+  }
+}
+
+
 // Resource
 
-export class Apigatewayv2Api extends TerraformResource {
+export class Apigatewayv2Api extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -262,17 +274,17 @@ export class Apigatewayv2Api extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key_selection_expression: this._apiKeySelectionExpression,
-      credentials_arn: this._credentialsArn,
-      description: this._description,
-      name: this._name,
-      protocol_type: this._protocolType,
-      route_key: this._routeKey,
-      route_selection_expression: this._routeSelectionExpression,
-      tags: this._tags,
-      target: this._target,
-      version: this._version,
-      cors_configuration: this._corsConfiguration,
+      api_key_selection_expression: cdktf.stringToTerraform(this._apiKeySelectionExpression),
+      credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      protocol_type: cdktf.stringToTerraform(this._protocolType),
+      route_key: cdktf.stringToTerraform(this._routeKey),
+      route_selection_expression: cdktf.stringToTerraform(this._routeSelectionExpression),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target: cdktf.stringToTerraform(this._target),
+      version: cdktf.stringToTerraform(this._version),
+      cors_configuration: cdktf.listMapper(apigatewayv2ApiCorsConfigurationToTerraform)(this._corsConfiguration),
     };
   }
 }

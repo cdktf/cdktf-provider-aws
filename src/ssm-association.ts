@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmAssociationConfig extends TerraformMetaArguments {
+export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly associationName?: string;
   readonly automationTargetParameterName?: string;
   readonly complianceSeverity?: string;
@@ -27,14 +26,32 @@ export interface SsmAssociationOutputLocation {
   readonly s3BucketName: string;
   readonly s3KeyPrefix?: string;
 }
+
+function ssmAssociationOutputLocationToTerraform(struct?: SsmAssociationOutputLocation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
+    s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
+  }
+}
+
 export interface SsmAssociationTargets {
   readonly key: string;
   readonly values: string[];
 }
 
+function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class SsmAssociation extends TerraformResource {
+export class SsmAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -274,18 +291,18 @@ export class SsmAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      association_name: this._associationName,
-      automation_target_parameter_name: this._automationTargetParameterName,
-      compliance_severity: this._complianceSeverity,
-      document_version: this._documentVersion,
-      instance_id: this._instanceId,
-      max_concurrency: this._maxConcurrency,
-      max_errors: this._maxErrors,
-      name: this._name,
-      parameters: this._parameters,
-      schedule_expression: this._scheduleExpression,
-      output_location: this._outputLocation,
-      targets: this._targets,
+      association_name: cdktf.stringToTerraform(this._associationName),
+      automation_target_parameter_name: cdktf.stringToTerraform(this._automationTargetParameterName),
+      compliance_severity: cdktf.stringToTerraform(this._complianceSeverity),
+      document_version: cdktf.stringToTerraform(this._documentVersion),
+      instance_id: cdktf.stringToTerraform(this._instanceId),
+      max_concurrency: cdktf.stringToTerraform(this._maxConcurrency),
+      max_errors: cdktf.stringToTerraform(this._maxErrors),
+      name: cdktf.stringToTerraform(this._name),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      schedule_expression: cdktf.stringToTerraform(this._scheduleExpression),
+      output_location: cdktf.listMapper(ssmAssociationOutputLocationToTerraform)(this._outputLocation),
+      targets: cdktf.listMapper(ssmAssociationTargetsToTerraform)(this._targets),
     };
   }
 }

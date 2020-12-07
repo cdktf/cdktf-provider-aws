@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsmPatchBaselineConfig extends TerraformMetaArguments {
+export interface SsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
   readonly approvedPatches?: string[];
   readonly approvedPatchesComplianceLevel?: string;
   readonly description?: string;
@@ -24,6 +23,15 @@ export interface SsmPatchBaselineApprovalRulePatchFilter {
   readonly key: string;
   readonly values: string[];
 }
+
+function ssmPatchBaselineApprovalRulePatchFilterToTerraform(struct?: SsmPatchBaselineApprovalRulePatchFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
 export interface SsmPatchBaselineApprovalRule {
   readonly approveAfterDays: number;
   readonly complianceLevel?: string;
@@ -31,14 +39,34 @@ export interface SsmPatchBaselineApprovalRule {
   /** patch_filter block */
   readonly patchFilter: SsmPatchBaselineApprovalRulePatchFilter[];
 }
+
+function ssmPatchBaselineApprovalRuleToTerraform(struct?: SsmPatchBaselineApprovalRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    approve_after_days: cdktf.numberToTerraform(struct!.approveAfterDays),
+    compliance_level: cdktf.stringToTerraform(struct!.complianceLevel),
+    enable_non_security: cdktf.booleanToTerraform(struct!.enableNonSecurity),
+    patch_filter: cdktf.listMapper(ssmPatchBaselineApprovalRulePatchFilterToTerraform)(struct!.patchFilter),
+  }
+}
+
 export interface SsmPatchBaselineGlobalFilter {
   readonly key: string;
   readonly values: string[];
 }
 
+function ssmPatchBaselineGlobalFilterToTerraform(struct?: SsmPatchBaselineGlobalFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class SsmPatchBaseline extends TerraformResource {
+export class SsmPatchBaseline extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -222,15 +250,15 @@ export class SsmPatchBaseline extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      approved_patches: this._approvedPatches,
-      approved_patches_compliance_level: this._approvedPatchesComplianceLevel,
-      description: this._description,
-      name: this._name,
-      operating_system: this._operatingSystem,
-      rejected_patches: this._rejectedPatches,
-      tags: this._tags,
-      approval_rule: this._approvalRule,
-      global_filter: this._globalFilter,
+      approved_patches: cdktf.listMapper(cdktf.stringToTerraform)(this._approvedPatches),
+      approved_patches_compliance_level: cdktf.stringToTerraform(this._approvedPatchesComplianceLevel),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      operating_system: cdktf.stringToTerraform(this._operatingSystem),
+      rejected_patches: cdktf.listMapper(cdktf.stringToTerraform)(this._rejectedPatches),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      approval_rule: cdktf.listMapper(ssmPatchBaselineApprovalRuleToTerraform)(this._approvalRule),
+      global_filter: cdktf.listMapper(ssmPatchBaselineGlobalFilterToTerraform)(this._globalFilter),
     };
   }
 }

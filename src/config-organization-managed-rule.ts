@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigOrganizationManagedRuleConfig extends TerraformMetaArguments {
+export interface ConfigOrganizationManagedRuleConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly excludedAccounts?: string[];
   readonly inputParameters?: string;
@@ -27,9 +26,19 @@ export interface ConfigOrganizationManagedRuleTimeouts {
   readonly update?: string;
 }
 
+function configOrganizationManagedRuleTimeoutsToTerraform(struct?: ConfigOrganizationManagedRuleTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class ConfigOrganizationManagedRule extends TerraformResource {
+export class ConfigOrganizationManagedRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -249,17 +258,17 @@ export class ConfigOrganizationManagedRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      excluded_accounts: this._excludedAccounts,
-      input_parameters: this._inputParameters,
-      maximum_execution_frequency: this._maximumExecutionFrequency,
-      name: this._name,
-      resource_id_scope: this._resourceIdScope,
-      resource_types_scope: this._resourceTypesScope,
-      rule_identifier: this._ruleIdentifier,
-      tag_key_scope: this._tagKeyScope,
-      tag_value_scope: this._tagValueScope,
-      timeouts: this._timeouts,
+      description: cdktf.stringToTerraform(this._description),
+      excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedAccounts),
+      input_parameters: cdktf.stringToTerraform(this._inputParameters),
+      maximum_execution_frequency: cdktf.stringToTerraform(this._maximumExecutionFrequency),
+      name: cdktf.stringToTerraform(this._name),
+      resource_id_scope: cdktf.stringToTerraform(this._resourceIdScope),
+      resource_types_scope: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceTypesScope),
+      rule_identifier: cdktf.stringToTerraform(this._ruleIdentifier),
+      tag_key_scope: cdktf.stringToTerraform(this._tagKeyScope),
+      tag_value_scope: cdktf.stringToTerraform(this._tagValueScope),
+      timeouts: configOrganizationManagedRuleTimeoutsToTerraform(this._timeouts),
     };
   }
 }

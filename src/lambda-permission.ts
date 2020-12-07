@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LambdaPermissionConfig extends TerraformMetaArguments {
+export interface LambdaPermissionConfig extends cdktf.TerraformMetaArguments {
   readonly action: string;
   readonly eventSourceToken?: string;
   readonly functionName: string;
@@ -21,7 +20,7 @@ export interface LambdaPermissionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class LambdaPermission extends TerraformResource {
+export class LambdaPermission extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -199,15 +198,15 @@ export class LambdaPermission extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: this._action,
-      event_source_token: this._eventSourceToken,
-      function_name: this._functionName,
-      principal: this._principal,
-      qualifier: this._qualifier,
-      source_account: this._sourceAccount,
-      source_arn: this._sourceArn,
-      statement_id: this._statementId,
-      statement_id_prefix: this._statementIdPrefix,
+      action: cdktf.stringToTerraform(this._action),
+      event_source_token: cdktf.stringToTerraform(this._eventSourceToken),
+      function_name: cdktf.stringToTerraform(this._functionName),
+      principal: cdktf.stringToTerraform(this._principal),
+      qualifier: cdktf.stringToTerraform(this._qualifier),
+      source_account: cdktf.stringToTerraform(this._sourceAccount),
+      source_arn: cdktf.stringToTerraform(this._sourceArn),
+      statement_id: cdktf.stringToTerraform(this._statementId),
+      statement_id_prefix: cdktf.stringToTerraform(this._statementIdPrefix),
     };
   }
 }

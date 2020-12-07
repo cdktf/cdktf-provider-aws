@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface StoragegatewaySmbFileShareConfig extends TerraformMetaArguments {
+export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArguments {
   readonly authentication?: string;
   readonly defaultStorageClass?: string;
   readonly gatewayArn: string;
@@ -31,9 +30,19 @@ export interface StoragegatewaySmbFileShareTimeouts {
   readonly update?: string;
 }
 
+function storagegatewaySmbFileShareTimeoutsToTerraform(struct?: StoragegatewaySmbFileShareTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class StoragegatewaySmbFileShare extends TerraformResource {
+export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -328,21 +337,21 @@ export class StoragegatewaySmbFileShare extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication: this._authentication,
-      default_storage_class: this._defaultStorageClass,
-      gateway_arn: this._gatewayArn,
-      guess_mime_type_enabled: this._guessMimeTypeEnabled,
-      invalid_user_list: this._invalidUserList,
-      kms_encrypted: this._kmsEncrypted,
-      kms_key_arn: this._kmsKeyArn,
-      location_arn: this._locationArn,
-      object_acl: this._objectAcl,
-      read_only: this._readOnly,
-      requester_pays: this._requesterPays,
-      role_arn: this._roleArn,
-      tags: this._tags,
-      valid_user_list: this._validUserList,
-      timeouts: this._timeouts,
+      authentication: cdktf.stringToTerraform(this._authentication),
+      default_storage_class: cdktf.stringToTerraform(this._defaultStorageClass),
+      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
+      guess_mime_type_enabled: cdktf.booleanToTerraform(this._guessMimeTypeEnabled),
+      invalid_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._invalidUserList),
+      kms_encrypted: cdktf.booleanToTerraform(this._kmsEncrypted),
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
+      location_arn: cdktf.stringToTerraform(this._locationArn),
+      object_acl: cdktf.stringToTerraform(this._objectAcl),
+      read_only: cdktf.booleanToTerraform(this._readOnly),
+      requester_pays: cdktf.booleanToTerraform(this._requesterPays),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      valid_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._validUserList),
+      timeouts: storagegatewaySmbFileShareTimeoutsToTerraform(this._timeouts),
     };
   }
 }

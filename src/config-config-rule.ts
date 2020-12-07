@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigConfigRuleConfig extends TerraformMetaArguments {
+export interface ConfigConfigRuleConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly inputParameters?: string;
   readonly maximumExecutionFrequency?: string;
@@ -24,11 +23,32 @@ export interface ConfigConfigRuleScope {
   readonly tagKey?: string;
   readonly tagValue?: string;
 }
+
+function configConfigRuleScopeToTerraform(struct?: ConfigConfigRuleScope): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    compliance_resource_id: cdktf.stringToTerraform(struct!.complianceResourceId),
+    compliance_resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.complianceResourceTypes),
+    tag_key: cdktf.stringToTerraform(struct!.tagKey),
+    tag_value: cdktf.stringToTerraform(struct!.tagValue),
+  }
+}
+
 export interface ConfigConfigRuleSourceSourceDetail {
   readonly eventSource?: string;
   readonly maximumExecutionFrequency?: string;
   readonly messageType?: string;
 }
+
+function configConfigRuleSourceSourceDetailToTerraform(struct?: ConfigConfigRuleSourceSourceDetail): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    event_source: cdktf.stringToTerraform(struct!.eventSource),
+    maximum_execution_frequency: cdktf.stringToTerraform(struct!.maximumExecutionFrequency),
+    message_type: cdktf.stringToTerraform(struct!.messageType),
+  }
+}
+
 export interface ConfigConfigRuleSource {
   readonly owner: string;
   readonly sourceIdentifier: string;
@@ -36,9 +56,19 @@ export interface ConfigConfigRuleSource {
   readonly sourceDetail?: ConfigConfigRuleSourceSourceDetail[];
 }
 
+function configConfigRuleSourceToTerraform(struct?: ConfigConfigRuleSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    owner: cdktf.stringToTerraform(struct!.owner),
+    source_identifier: cdktf.stringToTerraform(struct!.sourceIdentifier),
+    source_detail: cdktf.listMapper(configConfigRuleSourceSourceDetailToTerraform)(struct!.sourceDetail),
+  }
+}
+
+
 // Resource
 
-export class ConfigConfigRule extends TerraformResource {
+export class ConfigConfigRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -195,13 +225,13 @@ export class ConfigConfigRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      input_parameters: this._inputParameters,
-      maximum_execution_frequency: this._maximumExecutionFrequency,
-      name: this._name,
-      tags: this._tags,
-      scope: this._scope,
-      source: this._source,
+      description: cdktf.stringToTerraform(this._description),
+      input_parameters: cdktf.stringToTerraform(this._inputParameters),
+      maximum_execution_frequency: cdktf.stringToTerraform(this._maximumExecutionFrequency),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      scope: cdktf.listMapper(configConfigRuleScopeToTerraform)(this._scope),
+      source: cdktf.listMapper(configConfigRuleSourceToTerraform)(this._source),
     };
   }
 }
