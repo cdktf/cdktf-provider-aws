@@ -1197,10 +1197,17 @@ cdktf-cli@^0.0:
     uuid "^8.3.0"
     yargs "^15.1.0"
 
-cdktf@0.0.18, cdktf@^0.0:
+cdktf@0.0.18:
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.0.18.tgz#be27db0482c4a4a27098f7c25c4d7fdf2146cc11"
   integrity sha512-9rlHrY392s05livQ63nYUlPof7jgJ4gMxwkqCv3oSHP+QrCugCSb1Q2r4Zo9UmgkAwV4Gmma9auNy1wYyorWCg==
+  dependencies:
+    json-stable-stringify "^1.0.1"
+
+cdktf@^0.0:
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.0.19.tgz#511883387558b20aa6543dbb33f541d2b4798906"
+  integrity sha512-fBOl+yqMdMNRGNvLwAxOpE38PxHJG5Tdi/3J/Ag+KJwaDEXa/v5+ogwPxNtZ0dUdvZq2ovti9zbhdIPr59BvYQ==
   dependencies:
     json-stable-stringify "^1.0.1"
 
