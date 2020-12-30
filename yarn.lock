@@ -470,7 +470,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jsii/spec@^1.16.0", "@jsii/spec@^1.9.0":
+"@jsii/spec@^1.16.0":
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.16.0.tgz#6d7c657ca6b6219f1d36f77486c184724f768958"
   integrity sha512-DH3rDGa781UmRtg/ykFyxrfhjaz1SRz2BblNXDxwArhl0aUiN5HOdzi9icX8CFwdB9+ZxTtXuxap3BwvLa5xnA==
@@ -3729,14 +3729,14 @@ jsii-diff@^1.9.0:
     yargs "^16.1.1"
 
 jsii-docgen@^1.3.2:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-1.8.3.tgz#049122124109fa94e7bdfe002f7e401996c28aa9"
-  integrity sha512-j5MJY7KuKyV9GQUM74et9Qzy7LQCHqpJGqIt1ttvARx7xDh7oXiIfzr1pQmQSR750KMtZ1mAJHO344i8lBB80g==
+  version "1.8.5"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-1.8.5.tgz#0d014dc928f01a33f3b4e58a739539bf50bd6ffd"
+  integrity sha512-6RkeUYL62EyA8y+ETpUgniT76Vez36ZyTSPoFFBgOXrNANjZTxKMu7PZpUoZcbvnlsyFRJG0ZvEGEcWgm2n0Rg==
   dependencies:
-    "@jsii/spec" "^1.9.0"
-    fs-extra "^9.0.0"
-    jsii-reflect "^1.9.0"
-    yargs "^15.4.1"
+    "@jsii/spec" "^1.16.0"
+    fs-extra "^9.0.1"
+    jsii-reflect "^1.16.0"
+    yargs "^16.2.0"
 
 jsii-pacmak@^1.11.0, jsii-pacmak@^1.9.0:
   version "1.16.0"
@@ -3756,7 +3756,7 @@ jsii-pacmak@^1.11.0, jsii-pacmak@^1.9.0:
     xmlbuilder "^15.1.1"
     yargs "^16.1.1"
 
-jsii-reflect@^1.16.0, jsii-reflect@^1.9.0:
+jsii-reflect@^1.16.0:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/jsii-reflect/-/jsii-reflect-1.16.0.tgz#79e4d845078cf058524e560109d7cb01d3029b98"
   integrity sha512-1zxZwni5S9WUQrNJJA+fVVkd1s54u6fdxjuiHpkZUvxkcPUnsuurL8KWImMEvbdz5ykGHEmnjMOOiyRh/XEc2Q==
@@ -6542,10 +6542,10 @@ yargs@^15.1.0, yargs@^15.3.1, yargs@^15.4.0, yargs@^15.4.1:
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
 
-yargs@^16.1.1:
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-16.1.1.tgz#5a4a095bd1ca806b0a50d0c03611d38034d219a1"
-  integrity sha512-hAD1RcFP/wfgfxgMVswPE+z3tlPFtxG8/yWUrG2i17sTWGCGqWnxKcLTF4cUKDUK8fzokwsmO9H0TDkRbMHy8w==
+yargs@^16.1.1, yargs@^16.2.0:
+  version "16.2.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
+  integrity sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
   dependencies:
     cliui "^7.0.2"
     escalade "^3.1.1"
