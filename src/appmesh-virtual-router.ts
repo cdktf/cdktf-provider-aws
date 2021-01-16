@@ -2,12 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AppmeshVirtualRouterConfig extends cdktf.TerraformMetaArguments {
+export interface AppmeshVirtualRouterConfig extends TerraformMetaArguments {
   readonly meshName: string;
+  readonly meshOwner?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** spec block */
@@ -17,45 +19,18 @@ export interface AppmeshVirtualRouterSpecListenerPortMapping {
   readonly port: number;
   readonly protocol: string;
 }
-
-function appmeshVirtualRouterSpecListenerPortMappingToTerraform(struct?: AppmeshVirtualRouterSpecListenerPortMapping): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-  }
-}
-
 export interface AppmeshVirtualRouterSpecListener {
   /** port_mapping block */
   readonly portMapping: AppmeshVirtualRouterSpecListenerPortMapping[];
 }
-
-function appmeshVirtualRouterSpecListenerToTerraform(struct?: AppmeshVirtualRouterSpecListener): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    port_mapping: cdktf.listMapper(appmeshVirtualRouterSpecListenerPortMappingToTerraform)(struct!.portMapping),
-  }
-}
-
 export interface AppmeshVirtualRouterSpec {
-  readonly serviceNames?: string[];
   /** listener block */
   readonly listener: AppmeshVirtualRouterSpecListener[];
 }
 
-function appmeshVirtualRouterSpecToTerraform(struct?: AppmeshVirtualRouterSpec): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    service_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceNames),
-    listener: cdktf.listMapper(appmeshVirtualRouterSpecListenerToTerraform)(struct!.listener),
-  }
-}
-
-
 // Resource
 
-export class AppmeshVirtualRouter extends cdktf.TerraformResource {
+export class AppmeshVirtualRouter extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -73,6 +48,7 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._meshName = config.meshName;
+    this._meshOwner = config.meshOwner;
     this._name = config.name;
     this._tags = config.tags;
     this._spec = config.spec;
@@ -82,22 +58,26 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // created_date - computed: true, optional: false, required: false
+  // created_date - computed: true, optional: false, required: true
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // last_updated_date - computed: true, optional: false, required: false
+  // last_updated_date - computed: true, optional: false, required: true
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -105,56 +85,51 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
   // mesh_name - computed: false, optional: false, required: true
   private _meshName: string;
   public get meshName() {
-    return this.getStringAttribute('mesh_name');
+    return this._meshName;
   }
   public set meshName(value: string) {
     this._meshName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get meshNameInput() {
-    return this._meshName
+
+  // mesh_owner - computed: true, optional: true, required: false
+  private _meshOwner?: string;
+  public get meshOwner() {
+    return this._meshOwner ?? this.getStringAttribute('mesh_owner');
+  }
+  public set meshOwner(value: string | undefined) {
+    this._meshOwner = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
+
+  // resource_owner - computed: true, optional: false, required: true
+  public get resourceOwner() {
+    return this.getStringAttribute('resource_owner');
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // spec - computed: false, optional: false, required: true
   private _spec: AppmeshVirtualRouterSpec[];
   public get spec() {
-    return this.interpolationForAttribute('spec') as any;
+    return this._spec;
   }
   public set spec(value: AppmeshVirtualRouterSpec[]) {
     this._spec = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get specInput() {
-    return this._spec
   }
 
   // =========
@@ -163,10 +138,11 @@ export class AppmeshVirtualRouter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mesh_name: cdktf.stringToTerraform(this._meshName),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      spec: cdktf.listMapper(appmeshVirtualRouterSpecToTerraform)(this._spec),
+      mesh_name: this._meshName,
+      mesh_owner: this._meshOwner,
+      name: this._name,
+      tags: this._tags,
+      spec: this._spec,
     };
   }
 }

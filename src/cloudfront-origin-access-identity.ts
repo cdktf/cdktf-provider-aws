@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CloudfrontOriginAccessIdentityConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontOriginAccessIdentityConfig extends TerraformMetaArguments {
   readonly comment?: string;
 }
 
 // Resource
 
-export class CloudfrontOriginAccessIdentity extends cdktf.TerraformResource {
+export class CloudfrontOriginAccessIdentity extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -36,12 +37,12 @@ export class CloudfrontOriginAccessIdentity extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // caller_reference - computed: true, optional: false, required: false
+  // caller_reference - computed: true, optional: false, required: true
   public get callerReference() {
     return this.getStringAttribute('caller_reference');
   }
 
-  // cloudfront_access_identity_path - computed: true, optional: false, required: false
+  // cloudfront_access_identity_path - computed: true, optional: false, required: true
   public get cloudfrontAccessIdentityPath() {
     return this.getStringAttribute('cloudfront_access_identity_path');
   }
@@ -49,35 +50,32 @@ export class CloudfrontOriginAccessIdentity extends cdktf.TerraformResource {
   // comment - computed: false, optional: true, required: false
   private _comment?: string;
   public get comment() {
-    return this.getStringAttribute('comment');
+    return this._comment;
   }
-  public set comment(value: string ) {
+  public set comment(value: string | undefined) {
     this._comment = value;
   }
-  public resetComment() {
-    this._comment = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commentInput() {
-    return this._comment
-  }
 
-  // etag - computed: true, optional: false, required: false
+  // etag - computed: true, optional: false, required: true
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
-  // iam_arn - computed: true, optional: false, required: false
+  // iam_arn - computed: true, optional: false, required: true
   public get iamArn() {
     return this.getStringAttribute('iam_arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // s3_canonical_user_id - computed: true, optional: false, required: false
+  // s3_canonical_user_id - computed: true, optional: false, required: true
   public get s3CanonicalUserId() {
     return this.getStringAttribute('s3_canonical_user_id');
   }
@@ -88,7 +86,7 @@ export class CloudfrontOriginAccessIdentity extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
+      comment: this._comment,
     };
   }
 }

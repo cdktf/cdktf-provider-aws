@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsVpcConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsVpcConfig extends TerraformMetaArguments {
   readonly cidrBlock?: string;
   readonly default?: boolean;
   readonly dhcpOptionsId?: string;
@@ -15,19 +17,19 @@ export interface DataAwsVpcConfig extends cdktf.TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsVpcFilter[];
 }
-export class DataAwsVpcCidrBlockAssociations extends cdktf.ComplexComputedList {
+export class DataAwsVpcCidrBlockAssociations extends ComplexComputedList {
 
-  // association_id - computed: true, optional: false, required: false
+  // association_id - computed: true, optional: false, required: true
   public get associationId() {
     return this.getStringAttribute('association_id');
   }
 
-  // cidr_block - computed: true, optional: false, required: false
+  // cidr_block - computed: true, optional: false, required: true
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
 
-  // state - computed: true, optional: false, required: false
+  // state - computed: true, optional: false, required: true
   public get state() {
     return this.getStringAttribute('state');
   }
@@ -37,18 +39,9 @@ export interface DataAwsVpcFilter {
   readonly values: string[];
 }
 
-function dataAwsVpcFilterToTerraform(struct?: DataAwsVpcFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsVpc extends cdktf.TerraformDataSource {
+export class DataAwsVpc extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -77,7 +70,7 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -85,20 +78,13 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   // cidr_block - computed: true, optional: true, required: false
   private _cidrBlock?: string;
   public get cidrBlock() {
-    return this.getStringAttribute('cidr_block');
+    return this._cidrBlock ?? this.getStringAttribute('cidr_block');
   }
-  public set cidrBlock(value: string) {
+  public set cidrBlock(value: string | undefined) {
     this._cidrBlock = value;
   }
-  public resetCidrBlock() {
-    this._cidrBlock = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cidrBlockInput() {
-    return this._cidrBlock
-  }
 
-  // cidr_block_associations - computed: true, optional: false, required: false
+  // cidr_block_associations - computed: true, optional: false, required: true
   public cidrBlockAssociations(index: string) {
     return new DataAwsVpcCidrBlockAssociations(this, 'cidr_block_associations', index);
   }
@@ -106,71 +92,61 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   // default - computed: true, optional: true, required: false
   private _default?: boolean;
   public get default() {
-    return this.getBooleanAttribute('default');
+    return this._default ?? this.getBooleanAttribute('default');
   }
-  public set default(value: boolean) {
+  public set default(value: boolean | undefined) {
     this._default = value;
-  }
-  public resetDefault() {
-    this._default = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultInput() {
-    return this._default
   }
 
   // dhcp_options_id - computed: true, optional: true, required: false
   private _dhcpOptionsId?: string;
   public get dhcpOptionsId() {
-    return this.getStringAttribute('dhcp_options_id');
+    return this._dhcpOptionsId ?? this.getStringAttribute('dhcp_options_id');
   }
-  public set dhcpOptionsId(value: string) {
+  public set dhcpOptionsId(value: string | undefined) {
     this._dhcpOptionsId = value;
   }
-  public resetDhcpOptionsId() {
-    this._dhcpOptionsId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dhcpOptionsIdInput() {
-    return this._dhcpOptionsId
-  }
 
-  // enable_dns_hostnames - computed: true, optional: false, required: false
+  // enable_dns_hostnames - computed: true, optional: false, required: true
   public get enableDnsHostnames() {
     return this.getBooleanAttribute('enable_dns_hostnames');
   }
 
-  // enable_dns_support - computed: true, optional: false, required: false
+  // enable_dns_support - computed: true, optional: false, required: true
   public get enableDnsSupport() {
     return this.getBooleanAttribute('enable_dns_support');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // instance_tenancy - computed: true, optional: false, required: false
+  // instance_tenancy - computed: true, optional: false, required: true
   public get instanceTenancy() {
     return this.getStringAttribute('instance_tenancy');
   }
 
-  // ipv6_association_id - computed: true, optional: false, required: false
+  // ipv6_association_id - computed: true, optional: false, required: true
   public get ipv6AssociationId() {
     return this.getStringAttribute('ipv6_association_id');
   }
 
-  // ipv6_cidr_block - computed: true, optional: false, required: false
+  // ipv6_cidr_block - computed: true, optional: false, required: true
   public get ipv6CidrBlock() {
     return this.getStringAttribute('ipv6_cidr_block');
   }
 
-  // main_route_table_id - computed: true, optional: false, required: false
+  // main_route_table_id - computed: true, optional: false, required: true
   public get mainRouteTableId() {
     return this.getStringAttribute('main_route_table_id');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -178,49 +154,28 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   // state - computed: true, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this.getStringAttribute('state');
+    return this._state ?? this.getStringAttribute('state');
   }
-  public set state(value: string) {
+  public set state(value: string | undefined) {
     this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsVpcFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsVpcFilter[] ) {
+  public set filter(value: DataAwsVpcFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -229,12 +184,12 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
-      default: cdktf.booleanToTerraform(this._default),
-      dhcp_options_id: cdktf.stringToTerraform(this._dhcpOptionsId),
-      state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsVpcFilterToTerraform)(this._filter),
+      cidr_block: this._cidrBlock,
+      default: this._default,
+      dhcp_options_id: this._dhcpOptionsId,
+      state: this._state,
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

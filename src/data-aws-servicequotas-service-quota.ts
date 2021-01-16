@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsServicequotasServiceQuotaConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsServicequotasServiceQuotaConfig extends TerraformMetaArguments {
   readonly quotaCode?: string;
   readonly quotaName?: string;
   readonly serviceCode: string;
@@ -14,7 +15,7 @@ export interface DataAwsServicequotasServiceQuotaConfig extends cdktf.TerraformM
 
 // Resource
 
-export class DataAwsServicequotasServiceQuota extends cdktf.TerraformDataSource {
+export class DataAwsServicequotasServiceQuota extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -40,82 +41,68 @@ export class DataAwsServicequotasServiceQuota extends cdktf.TerraformDataSource 
   // ATTRIBUTES
   // ==========
 
-  // adjustable - computed: true, optional: false, required: false
+  // adjustable - computed: true, optional: false, required: true
   public get adjustable() {
     return this.getBooleanAttribute('adjustable');
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // default_value - computed: true, optional: false, required: false
+  // default_value - computed: true, optional: false, required: true
   public get defaultValue() {
     return this.getNumberAttribute('default_value');
   }
 
-  // global_quota - computed: true, optional: false, required: false
+  // global_quota - computed: true, optional: false, required: true
   public get globalQuota() {
     return this.getBooleanAttribute('global_quota');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // quota_code - computed: true, optional: true, required: false
   private _quotaCode?: string;
   public get quotaCode() {
-    return this.getStringAttribute('quota_code');
+    return this._quotaCode ?? this.getStringAttribute('quota_code');
   }
-  public set quotaCode(value: string) {
+  public set quotaCode(value: string | undefined) {
     this._quotaCode = value;
-  }
-  public resetQuotaCode() {
-    this._quotaCode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get quotaCodeInput() {
-    return this._quotaCode
   }
 
   // quota_name - computed: true, optional: true, required: false
   private _quotaName?: string;
   public get quotaName() {
-    return this.getStringAttribute('quota_name');
+    return this._quotaName ?? this.getStringAttribute('quota_name');
   }
-  public set quotaName(value: string) {
+  public set quotaName(value: string | undefined) {
     this._quotaName = value;
-  }
-  public resetQuotaName() {
-    this._quotaName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get quotaNameInput() {
-    return this._quotaName
   }
 
   // service_code - computed: false, optional: false, required: true
   private _serviceCode: string;
   public get serviceCode() {
-    return this.getStringAttribute('service_code');
+    return this._serviceCode;
   }
   public set serviceCode(value: string) {
     this._serviceCode = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get serviceCodeInput() {
-    return this._serviceCode
-  }
 
-  // service_name - computed: true, optional: false, required: false
+  // service_name - computed: true, optional: false, required: true
   public get serviceName() {
     return this.getStringAttribute('service_name');
   }
 
-  // value - computed: true, optional: false, required: false
+  // value - computed: true, optional: false, required: true
   public get value() {
     return this.getNumberAttribute('value');
   }
@@ -126,9 +113,9 @@ export class DataAwsServicequotasServiceQuota extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      quota_code: cdktf.stringToTerraform(this._quotaCode),
-      quota_name: cdktf.stringToTerraform(this._quotaName),
-      service_code: cdktf.stringToTerraform(this._serviceCode),
+      quota_code: this._quotaCode,
+      quota_name: this._quotaName,
+      service_code: this._serviceCode,
     };
   }
 }

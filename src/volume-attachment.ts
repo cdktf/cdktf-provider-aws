@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface VolumeAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface VolumeAttachmentConfig extends TerraformMetaArguments {
   readonly deviceName: string;
   readonly forceDetach?: boolean;
   readonly instanceId: string;
@@ -16,7 +17,7 @@ export interface VolumeAttachmentConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class VolumeAttachment extends cdktf.TerraformResource {
+export class VolumeAttachment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,77 +48,55 @@ export class VolumeAttachment extends cdktf.TerraformResource {
   // device_name - computed: false, optional: false, required: true
   private _deviceName: string;
   public get deviceName() {
-    return this.getStringAttribute('device_name');
+    return this._deviceName;
   }
   public set deviceName(value: string) {
     this._deviceName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deviceNameInput() {
-    return this._deviceName
   }
 
   // force_detach - computed: false, optional: true, required: false
   private _forceDetach?: boolean;
   public get forceDetach() {
-    return this.getBooleanAttribute('force_detach');
+    return this._forceDetach;
   }
-  public set forceDetach(value: boolean ) {
+  public set forceDetach(value: boolean | undefined) {
     this._forceDetach = value;
-  }
-  public resetForceDetach() {
-    this._forceDetach = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get forceDetachInput() {
-    return this._forceDetach
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance_id - computed: false, optional: false, required: true
   private _instanceId: string;
   public get instanceId() {
-    return this.getStringAttribute('instance_id');
+    return this._instanceId;
   }
   public set instanceId(value: string) {
     this._instanceId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceIdInput() {
-    return this._instanceId
   }
 
   // skip_destroy - computed: false, optional: true, required: false
   private _skipDestroy?: boolean;
   public get skipDestroy() {
-    return this.getBooleanAttribute('skip_destroy');
+    return this._skipDestroy;
   }
-  public set skipDestroy(value: boolean ) {
+  public set skipDestroy(value: boolean | undefined) {
     this._skipDestroy = value;
-  }
-  public resetSkipDestroy() {
-    this._skipDestroy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get skipDestroyInput() {
-    return this._skipDestroy
   }
 
   // volume_id - computed: false, optional: false, required: true
   private _volumeId: string;
   public get volumeId() {
-    return this.getStringAttribute('volume_id');
+    return this._volumeId;
   }
   public set volumeId(value: string) {
     this._volumeId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get volumeIdInput() {
-    return this._volumeId
   }
 
   // =========
@@ -126,11 +105,11 @@ export class VolumeAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      device_name: cdktf.stringToTerraform(this._deviceName),
-      force_detach: cdktf.booleanToTerraform(this._forceDetach),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
-      volume_id: cdktf.stringToTerraform(this._volumeId),
+      device_name: this._deviceName,
+      force_detach: this._forceDetach,
+      instance_id: this._instanceId,
+      skip_destroy: this._skipDestroy,
+      volume_id: this._volumeId,
     };
   }
 }

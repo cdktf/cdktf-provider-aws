@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface PinpointAppConfig extends cdktf.TerraformMetaArguments {
+export interface PinpointAppConfig extends TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly tags?: { [key: string]: string };
@@ -22,50 +23,20 @@ export interface PinpointAppCampaignHook {
   readonly mode?: string;
   readonly webUrl?: string;
 }
-
-function pinpointAppCampaignHookToTerraform(struct?: PinpointAppCampaignHook): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    lambda_function_name: cdktf.stringToTerraform(struct!.lambdaFunctionName),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    web_url: cdktf.stringToTerraform(struct!.webUrl),
-  }
-}
-
 export interface PinpointAppLimits {
   readonly daily?: number;
   readonly maximumDuration?: number;
   readonly messagesPerSecond?: number;
   readonly total?: number;
 }
-
-function pinpointAppLimitsToTerraform(struct?: PinpointAppLimits): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    daily: cdktf.numberToTerraform(struct!.daily),
-    maximum_duration: cdktf.numberToTerraform(struct!.maximumDuration),
-    messages_per_second: cdktf.numberToTerraform(struct!.messagesPerSecond),
-    total: cdktf.numberToTerraform(struct!.total),
-  }
-}
-
 export interface PinpointAppQuietTime {
   readonly end?: string;
   readonly start?: string;
 }
 
-function pinpointAppQuietTimeToTerraform(struct?: PinpointAppQuietTime): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
-  }
-}
-
-
 // Resource
 
-export class PinpointApp extends cdktf.TerraformResource {
+export class PinpointApp extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -94,115 +65,77 @@ export class PinpointApp extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // application_id - computed: true, optional: false, required: false
+  // application_id - computed: true, optional: false, required: true
   public get applicationId() {
     return this.getStringAttribute('application_id');
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // campaign_hook - computed: false, optional: true, required: false
   private _campaignHook?: PinpointAppCampaignHook[];
   public get campaignHook() {
-    return this.interpolationForAttribute('campaign_hook') as any;
+    return this._campaignHook;
   }
-  public set campaignHook(value: PinpointAppCampaignHook[] ) {
+  public set campaignHook(value: PinpointAppCampaignHook[] | undefined) {
     this._campaignHook = value;
-  }
-  public resetCampaignHook() {
-    this._campaignHook = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get campaignHookInput() {
-    return this._campaignHook
   }
 
   // limits - computed: false, optional: true, required: false
   private _limits?: PinpointAppLimits[];
   public get limits() {
-    return this.interpolationForAttribute('limits') as any;
+    return this._limits;
   }
-  public set limits(value: PinpointAppLimits[] ) {
+  public set limits(value: PinpointAppLimits[] | undefined) {
     this._limits = value;
-  }
-  public resetLimits() {
-    this._limits = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitsInput() {
-    return this._limits
   }
 
   // quiet_time - computed: false, optional: true, required: false
   private _quietTime?: PinpointAppQuietTime[];
   public get quietTime() {
-    return this.interpolationForAttribute('quiet_time') as any;
+    return this._quietTime;
   }
-  public set quietTime(value: PinpointAppQuietTime[] ) {
+  public set quietTime(value: PinpointAppQuietTime[] | undefined) {
     this._quietTime = value;
-  }
-  public resetQuietTime() {
-    this._quietTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get quietTimeInput() {
-    return this._quietTime
   }
 
   // =========
@@ -211,12 +144,12 @@ export class PinpointApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      campaign_hook: cdktf.listMapper(pinpointAppCampaignHookToTerraform)(this._campaignHook),
-      limits: cdktf.listMapper(pinpointAppLimitsToTerraform)(this._limits),
-      quiet_time: cdktf.listMapper(pinpointAppQuietTimeToTerraform)(this._quietTime),
+      name: this._name,
+      name_prefix: this._namePrefix,
+      tags: this._tags,
+      campaign_hook: this._campaignHook,
+      limits: this._limits,
+      quiet_time: this._quietTime,
     };
   }
 }

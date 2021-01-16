@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamGroupPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface IamGroupPolicyAttachmentConfig extends TerraformMetaArguments {
   readonly group: string;
   readonly policyArn: string;
 }
 
 // Resource
 
-export class IamGroupPolicyAttachment extends cdktf.TerraformResource {
+export class IamGroupPolicyAttachment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class IamGroupPolicyAttachment extends cdktf.TerraformResource {
   // group - computed: false, optional: false, required: true
   private _group: string;
   public get group() {
-    return this.getStringAttribute('group');
+    return this._group;
   }
   public set group(value: string) {
     this._group = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get groupInput() {
-    return this._group
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // policy_arn - computed: false, optional: false, required: true
   private _policyArn: string;
   public get policyArn() {
-    return this.getStringAttribute('policy_arn');
+    return this._policyArn;
   }
   public set policyArn(value: string) {
     this._policyArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyArnInput() {
-    return this._policyArn
   }
 
   // =========
@@ -75,8 +72,8 @@ export class IamGroupPolicyAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group: cdktf.stringToTerraform(this._group),
-      policy_arn: cdktf.stringToTerraform(this._policyArn),
+      group: this._group,
+      policy_arn: this._policyArn,
     };
   }
 }

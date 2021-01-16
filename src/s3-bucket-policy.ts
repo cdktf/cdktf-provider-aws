@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface S3BucketPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketPolicyConfig extends TerraformMetaArguments {
   readonly bucket: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class S3BucketPolicy extends cdktf.TerraformResource {
+export class S3BucketPolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class S3BucketPolicy extends cdktf.TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this.getStringAttribute('bucket');
+    return this._bucket;
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get bucketInput() {
-    return this._bucket
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy;
   }
   public set policy(value: string) {
     this._policy = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // =========
@@ -75,8 +72,8 @@ export class S3BucketPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      policy: cdktf.stringToTerraform(this._policy),
+      bucket: this._bucket,
+      policy: this._policy,
     };
   }
 }

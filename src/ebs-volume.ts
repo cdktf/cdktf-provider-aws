@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
+export interface EbsVolumeConfig extends TerraformMetaArguments {
   readonly availabilityZone: string;
   readonly encrypted?: boolean;
   readonly iops?: number;
@@ -21,7 +22,7 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class EbsVolume extends cdktf.TerraformResource {
+export class EbsVolume extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -54,7 +55,7 @@ export class EbsVolume extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -62,163 +63,100 @@ export class EbsVolume extends cdktf.TerraformResource {
   // availability_zone - computed: false, optional: false, required: true
   private _availabilityZone: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone;
   }
   public set availabilityZone(value: string) {
     this._availabilityZone = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
   }
 
   // encrypted - computed: true, optional: true, required: false
   private _encrypted?: boolean;
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted');
+    return this._encrypted ?? this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean) {
+  public set encrypted(value: boolean | undefined) {
     this._encrypted = value;
-  }
-  public resetEncrypted() {
-    this._encrypted = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get encryptedInput() {
-    return this._encrypted
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // iops - computed: true, optional: true, required: false
   private _iops?: number;
   public get iops() {
-    return this.getNumberAttribute('iops');
+    return this._iops ?? this.getNumberAttribute('iops');
   }
-  public set iops(value: number) {
+  public set iops(value: number | undefined) {
     this._iops = value;
-  }
-  public resetIops() {
-    this._iops = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iopsInput() {
-    return this._iops
   }
 
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this.getStringAttribute('kms_key_id');
+    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string) {
+  public set kmsKeyId(value: string | undefined) {
     this._kmsKeyId = value;
-  }
-  public resetKmsKeyId() {
-    this._kmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyIdInput() {
-    return this._kmsKeyId
   }
 
   // multi_attach_enabled - computed: false, optional: true, required: false
   private _multiAttachEnabled?: boolean;
   public get multiAttachEnabled() {
-    return this.getBooleanAttribute('multi_attach_enabled');
+    return this._multiAttachEnabled;
   }
-  public set multiAttachEnabled(value: boolean ) {
+  public set multiAttachEnabled(value: boolean | undefined) {
     this._multiAttachEnabled = value;
-  }
-  public resetMultiAttachEnabled() {
-    this._multiAttachEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get multiAttachEnabledInput() {
-    return this._multiAttachEnabled
   }
 
   // outpost_arn - computed: false, optional: true, required: false
   private _outpostArn?: string;
   public get outpostArn() {
-    return this.getStringAttribute('outpost_arn');
+    return this._outpostArn;
   }
-  public set outpostArn(value: string ) {
+  public set outpostArn(value: string | undefined) {
     this._outpostArn = value;
-  }
-  public resetOutpostArn() {
-    this._outpostArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get outpostArnInput() {
-    return this._outpostArn
   }
 
   // size - computed: true, optional: true, required: false
   private _size?: number;
   public get size() {
-    return this.getNumberAttribute('size');
+    return this._size ?? this.getNumberAttribute('size');
   }
-  public set size(value: number) {
+  public set size(value: number | undefined) {
     this._size = value;
-  }
-  public resetSize() {
-    this._size = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sizeInput() {
-    return this._size
   }
 
   // snapshot_id - computed: true, optional: true, required: false
   private _snapshotId?: string;
   public get snapshotId() {
-    return this.getStringAttribute('snapshot_id');
+    return this._snapshotId ?? this.getStringAttribute('snapshot_id');
   }
-  public set snapshotId(value: string) {
+  public set snapshotId(value: string | undefined) {
     this._snapshotId = value;
-  }
-  public resetSnapshotId() {
-    this._snapshotId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotIdInput() {
-    return this._snapshotId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // type - computed: true, optional: true, required: false
   private _type?: string;
   public get type() {
-    return this.getStringAttribute('type');
+    return this._type ?? this.getStringAttribute('type');
   }
-  public set type(value: string) {
+  public set type(value: string | undefined) {
     this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type
   }
 
   // =========
@@ -227,16 +165,16 @@ export class EbsVolume extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      encrypted: cdktf.booleanToTerraform(this._encrypted),
-      iops: cdktf.numberToTerraform(this._iops),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      multi_attach_enabled: cdktf.booleanToTerraform(this._multiAttachEnabled),
-      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
-      size: cdktf.numberToTerraform(this._size),
-      snapshot_id: cdktf.stringToTerraform(this._snapshotId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
+      availability_zone: this._availabilityZone,
+      encrypted: this._encrypted,
+      iops: this._iops,
+      kms_key_id: this._kmsKeyId,
+      multi_attach_enabled: this._multiAttachEnabled,
+      outpost_arn: this._outpostArn,
+      size: this._size,
+      snapshot_id: this._snapshotId,
+      tags: this._tags,
+      type: this._type,
     };
   }
 }

@@ -2,18 +2,20 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Ec2ClientVpnNetworkAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2ClientVpnNetworkAssociationConfig extends TerraformMetaArguments {
   readonly clientVpnEndpointId: string;
+  readonly securityGroups?: string[];
   readonly subnetId: string;
 }
 
 // Resource
 
-export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
+export class Ec2ClientVpnNetworkAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -31,6 +33,7 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._clientVpnEndpointId = config.clientVpnEndpointId;
+    this._securityGroups = config.securityGroups;
     this._subnetId = config.subnetId;
   }
 
@@ -38,30 +41,39 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // association_id - computed: true, optional: false, required: true
+  public get associationId() {
+    return this.getStringAttribute('association_id');
+  }
+
   // client_vpn_endpoint_id - computed: false, optional: false, required: true
   private _clientVpnEndpointId: string;
   public get clientVpnEndpointId() {
-    return this.getStringAttribute('client_vpn_endpoint_id');
+    return this._clientVpnEndpointId;
   }
   public set clientVpnEndpointId(value: string) {
     this._clientVpnEndpointId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get clientVpnEndpointIdInput() {
-    return this._clientVpnEndpointId
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // security_groups - computed: true, optional: false, required: false
+  // security_groups - computed: true, optional: true, required: false
+  private _securityGroups?: string[];
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return this._securityGroups ?? this.getListAttribute('security_groups');
+  }
+  public set securityGroups(value: string[] | undefined) {
+    this._securityGroups = value;
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -69,17 +81,13 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId: string;
   public get subnetId() {
-    return this.getStringAttribute('subnet_id');
+    return this._subnetId;
   }
   public set subnetId(value: string) {
     this._subnetId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId
-  }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -90,8 +98,9 @@ export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      client_vpn_endpoint_id: this._clientVpnEndpointId,
+      security_groups: this._securityGroups,
+      subnet_id: this._subnetId,
     };
   }
 }

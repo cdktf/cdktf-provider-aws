@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { StringMap } from "cdktf";
 
 // Configuration
 
-export interface DataAwsS3BucketObjectConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsS3BucketObjectConfig extends TerraformMetaArguments {
   readonly bucket: string;
   readonly key: string;
   readonly range?: string;
@@ -16,7 +18,7 @@ export interface DataAwsS3BucketObjectConfig extends cdktf.TerraformMetaArgument
 
 // Resource
 
-export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
+export class DataAwsS3BucketObject extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -44,7 +46,7 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // body - computed: true, optional: false, required: false
+  // body - computed: true, optional: false, required: true
   public get body() {
     return this.getStringAttribute('body');
   }
@@ -52,100 +54,96 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this.getStringAttribute('bucket');
+    return this._bucket;
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get bucketInput() {
-    return this._bucket
-  }
 
-  // cache_control - computed: true, optional: false, required: false
+  // cache_control - computed: true, optional: false, required: true
   public get cacheControl() {
     return this.getStringAttribute('cache_control');
   }
 
-  // content_disposition - computed: true, optional: false, required: false
+  // content_disposition - computed: true, optional: false, required: true
   public get contentDisposition() {
     return this.getStringAttribute('content_disposition');
   }
 
-  // content_encoding - computed: true, optional: false, required: false
+  // content_encoding - computed: true, optional: false, required: true
   public get contentEncoding() {
     return this.getStringAttribute('content_encoding');
   }
 
-  // content_language - computed: true, optional: false, required: false
+  // content_language - computed: true, optional: false, required: true
   public get contentLanguage() {
     return this.getStringAttribute('content_language');
   }
 
-  // content_length - computed: true, optional: false, required: false
+  // content_length - computed: true, optional: false, required: true
   public get contentLength() {
     return this.getNumberAttribute('content_length');
   }
 
-  // content_type - computed: true, optional: false, required: false
+  // content_type - computed: true, optional: false, required: true
   public get contentType() {
     return this.getStringAttribute('content_type');
   }
 
-  // etag - computed: true, optional: false, required: false
+  // etag - computed: true, optional: false, required: true
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
-  // expiration - computed: true, optional: false, required: false
+  // expiration - computed: true, optional: false, required: true
   public get expiration() {
     return this.getStringAttribute('expiration');
   }
 
-  // expires - computed: true, optional: false, required: false
+  // expires - computed: true, optional: false, required: true
   public get expires() {
     return this.getStringAttribute('expires');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // key - computed: false, optional: false, required: true
   private _key: string;
   public get key() {
-    return this.getStringAttribute('key');
+    return this._key;
   }
   public set key(value: string) {
     this._key = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get keyInput() {
-    return this._key
-  }
 
-  // last_modified - computed: true, optional: false, required: false
+  // last_modified - computed: true, optional: false, required: true
   public get lastModified() {
     return this.getStringAttribute('last_modified');
   }
 
-  // metadata - computed: true, optional: false, required: false
+  // metadata - computed: true, optional: false, required: true
   public metadata(key: string): string {
-    return new cdktf.StringMap(this, 'metadata').lookup(key);
+    return new StringMap(this, 'metadata').lookup(key);
   }
 
-  // object_lock_legal_hold_status - computed: true, optional: false, required: false
+  // object_lock_legal_hold_status - computed: true, optional: false, required: true
   public get objectLockLegalHoldStatus() {
     return this.getStringAttribute('object_lock_legal_hold_status');
   }
 
-  // object_lock_mode - computed: true, optional: false, required: false
+  // object_lock_mode - computed: true, optional: false, required: true
   public get objectLockMode() {
     return this.getStringAttribute('object_lock_mode');
   }
 
-  // object_lock_retain_until_date - computed: true, optional: false, required: false
+  // object_lock_retain_until_date - computed: true, optional: false, required: true
   public get objectLockRetainUntilDate() {
     return this.getStringAttribute('object_lock_retain_until_date');
   }
@@ -153,67 +151,46 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
   // range - computed: false, optional: true, required: false
   private _range?: string;
   public get range() {
-    return this.getStringAttribute('range');
+    return this._range;
   }
-  public set range(value: string ) {
+  public set range(value: string | undefined) {
     this._range = value;
   }
-  public resetRange() {
-    this._range = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rangeInput() {
-    return this._range
-  }
 
-  // server_side_encryption - computed: true, optional: false, required: false
+  // server_side_encryption - computed: true, optional: false, required: true
   public get serverSideEncryption() {
     return this.getStringAttribute('server_side_encryption');
   }
 
-  // sse_kms_key_id - computed: true, optional: false, required: false
+  // sse_kms_key_id - computed: true, optional: false, required: true
   public get sseKmsKeyId() {
     return this.getStringAttribute('sse_kms_key_id');
   }
 
-  // storage_class - computed: true, optional: false, required: false
+  // storage_class - computed: true, optional: false, required: true
   public get storageClass() {
     return this.getStringAttribute('storage_class');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // version_id - computed: true, optional: true, required: false
   private _versionId?: string;
   public get versionId() {
-    return this.getStringAttribute('version_id');
+    return this._versionId ?? this.getStringAttribute('version_id');
   }
-  public set versionId(value: string) {
+  public set versionId(value: string | undefined) {
     this._versionId = value;
   }
-  public resetVersionId() {
-    this._versionId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionIdInput() {
-    return this._versionId
-  }
 
-  // website_redirect_location - computed: true, optional: false, required: false
+  // website_redirect_location - computed: true, optional: false, required: true
   public get websiteRedirectLocation() {
     return this.getStringAttribute('website_redirect_location');
   }
@@ -224,11 +201,11 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      key: cdktf.stringToTerraform(this._key),
-      range: cdktf.stringToTerraform(this._range),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      version_id: cdktf.stringToTerraform(this._versionId),
+      bucket: this._bucket,
+      key: this._key,
+      range: this._range,
+      tags: this._tags,
+      version_id: this._versionId,
     };
   }
 }

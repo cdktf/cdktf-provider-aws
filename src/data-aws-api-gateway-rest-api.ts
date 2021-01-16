@@ -2,22 +2,24 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsApiGatewayRestApiConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsApiGatewayRestApiEndpointConfiguration extends cdktf.ComplexComputedList {
+export class DataAwsApiGatewayRestApiEndpointConfiguration extends ComplexComputedList {
 
-  // types - computed: true, optional: false, required: false
+  // types - computed: true, optional: false, required: true
   public get types() {
     return this.getListAttribute('types');
   }
 
-  // vpc_endpoint_ids - computed: true, optional: false, required: false
+  // vpc_endpoint_ids - computed: true, optional: false, required: true
   public get vpcEndpointIds() {
     return this.getListAttribute('vpc_endpoint_ids');
   }
@@ -25,7 +27,7 @@ export class DataAwsApiGatewayRestApiEndpointConfiguration extends cdktf.Complex
 
 // Resource
 
-export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
+export class DataAwsApiGatewayRestApi extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -50,42 +52,46 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // api_key_source - computed: true, optional: false, required: false
+  // api_key_source - computed: true, optional: false, required: true
   public get apiKeySource() {
     return this.getStringAttribute('api_key_source');
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // binary_media_types - computed: true, optional: false, required: false
+  // binary_media_types - computed: true, optional: false, required: true
   public get binaryMediaTypes() {
     return this.getListAttribute('binary_media_types');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // endpoint_configuration - computed: true, optional: false, required: false
+  // endpoint_configuration - computed: true, optional: false, required: true
   public endpointConfiguration(index: string) {
     return new DataAwsApiGatewayRestApiEndpointConfiguration(this, 'endpoint_configuration', index);
   }
 
-  // execution_arn - computed: true, optional: false, required: false
+  // execution_arn - computed: true, optional: false, required: true
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // minimum_compression_size - computed: true, optional: false, required: false
+  // minimum_compression_size - computed: true, optional: false, required: true
   public get minimumCompressionSize() {
     return this.getNumberAttribute('minimum_compression_size');
   }
@@ -93,40 +99,29 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // policy - computed: true, optional: false, required: false
+  // policy - computed: true, optional: false, required: true
   public get policy() {
     return this.getStringAttribute('policy');
   }
 
-  // root_resource_id - computed: true, optional: false, required: false
+  // root_resource_id - computed: true, optional: false, required: true
   public get rootResourceId() {
     return this.getStringAttribute('root_resource_id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -135,8 +130,8 @@ export class DataAwsApiGatewayRestApi extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      name: this._name,
+      tags: this._tags,
     };
   }
 }

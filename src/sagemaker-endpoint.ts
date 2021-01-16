@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SagemakerEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerEndpointConfig extends TerraformMetaArguments {
   readonly endpointConfigName: string;
   readonly name?: string;
   readonly tags?: { [key: string]: string };
@@ -14,7 +15,7 @@ export interface SagemakerEndpointConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class SagemakerEndpoint extends cdktf.TerraformResource {
+export class SagemakerEndpoint extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -48,51 +49,37 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
   // endpoint_config_name - computed: false, optional: false, required: true
   private _endpointConfigName: string;
   public get endpointConfigName() {
-    return this.getStringAttribute('endpoint_config_name');
+    return this._endpointConfigName;
   }
   public set endpointConfigName(value: string) {
     this._endpointConfigName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get endpointConfigNameInput() {
-    return this._endpointConfigName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -101,9 +88,9 @@ export class SagemakerEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_config_name: cdktf.stringToTerraform(this._endpointConfigName),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      endpoint_config_name: this._endpointConfigName,
+      name: this._name,
+      tags: this._tags,
     };
   }
 }

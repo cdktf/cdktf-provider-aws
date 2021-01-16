@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2RouteConfig extends TerraformMetaArguments {
   readonly apiId: string;
   readonly apiKeyRequired?: boolean;
   readonly authorizationScopes?: string[];
@@ -22,7 +23,7 @@ export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class Apigatewayv2Route extends cdktf.TerraformResource {
+export class Apigatewayv2Route extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,176 +60,109 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this.getStringAttribute('api_id');
+    return this._apiId;
   }
   public set apiId(value: string) {
     this._apiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiIdInput() {
-    return this._apiId
   }
 
   // api_key_required - computed: false, optional: true, required: false
   private _apiKeyRequired?: boolean;
   public get apiKeyRequired() {
-    return this.getBooleanAttribute('api_key_required');
+    return this._apiKeyRequired;
   }
-  public set apiKeyRequired(value: boolean ) {
+  public set apiKeyRequired(value: boolean | undefined) {
     this._apiKeyRequired = value;
-  }
-  public resetApiKeyRequired() {
-    this._apiKeyRequired = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiKeyRequiredInput() {
-    return this._apiKeyRequired
   }
 
   // authorization_scopes - computed: false, optional: true, required: false
   private _authorizationScopes?: string[];
   public get authorizationScopes() {
-    return this.getListAttribute('authorization_scopes');
+    return this._authorizationScopes;
   }
-  public set authorizationScopes(value: string[] ) {
+  public set authorizationScopes(value: string[] | undefined) {
     this._authorizationScopes = value;
-  }
-  public resetAuthorizationScopes() {
-    this._authorizationScopes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizationScopesInput() {
-    return this._authorizationScopes
   }
 
   // authorization_type - computed: false, optional: true, required: false
   private _authorizationType?: string;
   public get authorizationType() {
-    return this.getStringAttribute('authorization_type');
+    return this._authorizationType;
   }
-  public set authorizationType(value: string ) {
+  public set authorizationType(value: string | undefined) {
     this._authorizationType = value;
-  }
-  public resetAuthorizationType() {
-    this._authorizationType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizationTypeInput() {
-    return this._authorizationType
   }
 
   // authorizer_id - computed: false, optional: true, required: false
   private _authorizerId?: string;
   public get authorizerId() {
-    return this.getStringAttribute('authorizer_id');
+    return this._authorizerId;
   }
-  public set authorizerId(value: string ) {
+  public set authorizerId(value: string | undefined) {
     this._authorizerId = value;
-  }
-  public resetAuthorizerId() {
-    this._authorizerId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizerIdInput() {
-    return this._authorizerId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // model_selection_expression - computed: false, optional: true, required: false
   private _modelSelectionExpression?: string;
   public get modelSelectionExpression() {
-    return this.getStringAttribute('model_selection_expression');
+    return this._modelSelectionExpression;
   }
-  public set modelSelectionExpression(value: string ) {
+  public set modelSelectionExpression(value: string | undefined) {
     this._modelSelectionExpression = value;
-  }
-  public resetModelSelectionExpression() {
-    this._modelSelectionExpression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get modelSelectionExpressionInput() {
-    return this._modelSelectionExpression
   }
 
   // operation_name - computed: false, optional: true, required: false
   private _operationName?: string;
   public get operationName() {
-    return this.getStringAttribute('operation_name');
+    return this._operationName;
   }
-  public set operationName(value: string ) {
+  public set operationName(value: string | undefined) {
     this._operationName = value;
-  }
-  public resetOperationName() {
-    this._operationName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operationNameInput() {
-    return this._operationName
   }
 
   // request_models - computed: false, optional: true, required: false
   private _requestModels?: { [key: string]: string };
   public get requestModels() {
-    return this.interpolationForAttribute('request_models') as any;
+    return this._requestModels;
   }
-  public set requestModels(value: { [key: string]: string } ) {
+  public set requestModels(value: { [key: string]: string } | undefined) {
     this._requestModels = value;
-  }
-  public resetRequestModels() {
-    this._requestModels = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestModelsInput() {
-    return this._requestModels
   }
 
   // route_key - computed: false, optional: false, required: true
   private _routeKey: string;
   public get routeKey() {
-    return this.getStringAttribute('route_key');
+    return this._routeKey;
   }
   public set routeKey(value: string) {
     this._routeKey = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeKeyInput() {
-    return this._routeKey
   }
 
   // route_response_selection_expression - computed: false, optional: true, required: false
   private _routeResponseSelectionExpression?: string;
   public get routeResponseSelectionExpression() {
-    return this.getStringAttribute('route_response_selection_expression');
+    return this._routeResponseSelectionExpression;
   }
-  public set routeResponseSelectionExpression(value: string ) {
+  public set routeResponseSelectionExpression(value: string | undefined) {
     this._routeResponseSelectionExpression = value;
-  }
-  public resetRouteResponseSelectionExpression() {
-    this._routeResponseSelectionExpression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeResponseSelectionExpressionInput() {
-    return this._routeResponseSelectionExpression
   }
 
   // target - computed: false, optional: true, required: false
   private _target?: string;
   public get target() {
-    return this.getStringAttribute('target');
+    return this._target;
   }
-  public set target(value: string ) {
+  public set target(value: string | undefined) {
     this._target = value;
-  }
-  public resetTarget() {
-    this._target = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetInput() {
-    return this._target
   }
 
   // =========
@@ -237,17 +171,17 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      api_key_required: cdktf.booleanToTerraform(this._apiKeyRequired),
-      authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
-      authorization_type: cdktf.stringToTerraform(this._authorizationType),
-      authorizer_id: cdktf.stringToTerraform(this._authorizerId),
-      model_selection_expression: cdktf.stringToTerraform(this._modelSelectionExpression),
-      operation_name: cdktf.stringToTerraform(this._operationName),
-      request_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestModels),
-      route_key: cdktf.stringToTerraform(this._routeKey),
-      route_response_selection_expression: cdktf.stringToTerraform(this._routeResponseSelectionExpression),
-      target: cdktf.stringToTerraform(this._target),
+      api_id: this._apiId,
+      api_key_required: this._apiKeyRequired,
+      authorization_scopes: this._authorizationScopes,
+      authorization_type: this._authorizationType,
+      authorizer_id: this._authorizerId,
+      model_selection_expression: this._modelSelectionExpression,
+      operation_name: this._operationName,
+      request_models: this._requestModels,
+      route_key: this._routeKey,
+      route_response_selection_expression: this._routeResponseSelectionExpression,
+      target: this._target,
     };
   }
 }

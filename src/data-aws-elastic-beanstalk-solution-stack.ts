@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElasticBeanstalkSolutionStackConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsElasticBeanstalkSolutionStackConfig extends TerraformMetaArguments {
   readonly mostRecent?: boolean;
   readonly nameRegex: string;
 }
 
 // Resource
 
-export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSource {
+export class DataAwsElasticBeanstalkSolutionStack extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -39,27 +40,24 @@ export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSou
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean;
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent');
+    return this._mostRecent;
   }
-  public set mostRecent(value: boolean ) {
+  public set mostRecent(value: boolean | undefined) {
     this._mostRecent = value;
   }
-  public resetMostRecent() {
-    this._mostRecent = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mostRecentInput() {
-    return this._mostRecent
-  }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -67,14 +65,10 @@ export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSou
   // name_regex - computed: false, optional: false, required: true
   private _nameRegex: string;
   public get nameRegex() {
-    return this.getStringAttribute('name_regex');
+    return this._nameRegex;
   }
   public set nameRegex(value: string) {
     this._nameRegex = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameRegexInput() {
-    return this._nameRegex
   }
 
   // =========
@@ -83,8 +77,8 @@ export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      name_regex: cdktf.stringToTerraform(this._nameRegex),
+      most_recent: this._mostRecent,
+      name_regex: this._nameRegex,
     };
   }
 }

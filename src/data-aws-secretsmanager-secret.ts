@@ -2,16 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
+import { StringMap } from "cdktf";
 
 // Configuration
 
-export interface DataAwsSecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSecretsmanagerSecretConfig extends TerraformMetaArguments {
   readonly name?: string;
 }
-export class DataAwsSecretsmanagerSecretRotationRules extends cdktf.ComplexComputedList {
+export class DataAwsSecretsmanagerSecretRotationRules extends ComplexComputedList {
 
-  // automatically_after_days - computed: true, optional: false, required: false
+  // automatically_after_days - computed: true, optional: false, required: true
   public get automaticallyAfterDays() {
     return this.getNumberAttribute('automatically_after_days');
   }
@@ -19,7 +22,7 @@ export class DataAwsSecretsmanagerSecretRotationRules extends cdktf.ComplexCompu
 
 // Resource
 
-export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
+export class DataAwsSecretsmanagerSecret extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -44,21 +47,29 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn ?? this.getStringAttribute('arn');
+  }
+  public set arn(value: string | undefined) {
+    this._arn = value;
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
@@ -66,42 +77,35 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // policy - computed: true, optional: false, required: false
+  // policy - computed: true, optional: false, required: true
   public get policy() {
     return this.getStringAttribute('policy');
   }
 
-  // rotation_enabled - computed: true, optional: false, required: false
+  // rotation_enabled - computed: true, optional: false, required: true
   public get rotationEnabled() {
     return this.getBooleanAttribute('rotation_enabled');
   }
 
-  // rotation_lambda_arn - computed: true, optional: false, required: false
+  // rotation_lambda_arn - computed: true, optional: false, required: true
   public get rotationLambdaArn() {
     return this.getStringAttribute('rotation_lambda_arn');
   }
 
-  // rotation_rules - computed: true, optional: false, required: false
+  // rotation_rules - computed: true, optional: false, required: true
   public rotationRules(index: string) {
     return new DataAwsSecretsmanagerSecretRotationRules(this, 'rotation_rules', index);
   }
 
-  // tags - computed: true, optional: false, required: false
+  // tags - computed: true, optional: false, required: true
   public tags(key: string): string {
-    return new cdktf.StringMap(this, 'tags').lookup(key);
+    return new StringMap(this, 'tags').lookup(key);
   }
 
   // =========
@@ -110,7 +114,7 @@ export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

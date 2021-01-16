@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDxGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDxGatewayConfig extends TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsDxGateway extends cdktf.TerraformDataSource {
+export class DataAwsDxGateway extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,30 +37,30 @@ export class DataAwsDxGateway extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // amazon_side_asn - computed: true, optional: false, required: false
+  // amazon_side_asn - computed: true, optional: false, required: true
   public get amazonSideAsn() {
     return this.getStringAttribute('amazon_side_asn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // owner_account_id - computed: true, optional: false, required: false
+  // owner_account_id - computed: true, optional: false, required: true
   public get ownerAccountId() {
     return this.getStringAttribute('owner_account_id');
   }
@@ -70,7 +71,7 @@ export class DataAwsDxGateway extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

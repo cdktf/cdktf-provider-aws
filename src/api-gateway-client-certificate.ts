@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayClientCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayClientCertificateConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
+export class ApiGatewayClientCertificate extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,12 +39,12 @@ export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // created_date - computed: true, optional: false, required: false
+  // created_date - computed: true, optional: false, required: true
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
@@ -51,30 +52,27 @@ export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
-  }
 
-  // expiration_date - computed: true, optional: false, required: false
+  // expiration_date - computed: true, optional: false, required: true
   public get expirationDate() {
     return this.getStringAttribute('expiration_date');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // pem_encoded_certificate - computed: true, optional: false, required: false
+  // pem_encoded_certificate - computed: true, optional: false, required: true
   public get pemEncodedCertificate() {
     return this.getStringAttribute('pem_encoded_certificate');
   }
@@ -82,17 +80,10 @@ export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -101,8 +92,8 @@ export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      description: this._description,
+      tags: this._tags,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface GlueCatalogDatabaseConfig extends TerraformMetaArguments {
   readonly catalogId?: string;
   readonly description?: string;
   readonly locationUri?: string;
@@ -16,7 +17,7 @@ export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments 
 
 // Resource
 
-export class GlueCatalogDatabase extends cdktf.TerraformResource {
+export class GlueCatalogDatabase extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,7 +45,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -52,83 +53,55 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   // catalog_id - computed: true, optional: true, required: false
   private _catalogId?: string;
   public get catalogId() {
-    return this.getStringAttribute('catalog_id');
+    return this._catalogId ?? this.getStringAttribute('catalog_id');
   }
-  public set catalogId(value: string) {
+  public set catalogId(value: string | undefined) {
     this._catalogId = value;
-  }
-  public resetCatalogId() {
-    this._catalogId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get catalogIdInput() {
-    return this._catalogId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // location_uri - computed: false, optional: true, required: false
   private _locationUri?: string;
   public get locationUri() {
-    return this.getStringAttribute('location_uri');
+    return this._locationUri;
   }
-  public set locationUri(value: string ) {
+  public set locationUri(value: string | undefined) {
     this._locationUri = value;
-  }
-  public resetLocationUri() {
-    this._locationUri = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get locationUriInput() {
-    return this._locationUri
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // parameters - computed: false, optional: true, required: false
   private _parameters?: { [key: string]: string };
   public get parameters() {
-    return this.interpolationForAttribute('parameters') as any;
+    return this._parameters;
   }
-  public set parameters(value: { [key: string]: string } ) {
+  public set parameters(value: { [key: string]: string } | undefined) {
     this._parameters = value;
-  }
-  public resetParameters() {
-    this._parameters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parametersInput() {
-    return this._parameters
   }
 
   // =========
@@ -137,11 +110,11 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      description: cdktf.stringToTerraform(this._description),
-      location_uri: cdktf.stringToTerraform(this._locationUri),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      catalog_id: this._catalogId,
+      description: this._description,
+      location_uri: this._locationUri,
+      name: this._name,
+      parameters: this._parameters,
     };
   }
 }

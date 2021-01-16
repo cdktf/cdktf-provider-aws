@@ -2,18 +2,20 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { StringMap } from "cdktf";
 
 // Configuration
 
-export interface DataAwsEcsContainerDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcsContainerDefinitionConfig extends TerraformMetaArguments {
   readonly containerName: string;
   readonly taskDefinition: string;
 }
 
 // Resource
 
-export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
+export class DataAwsEcsContainerDefinition extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -41,57 +43,57 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
   // container_name - computed: false, optional: false, required: true
   private _containerName: string;
   public get containerName() {
-    return this.getStringAttribute('container_name');
+    return this._containerName;
   }
   public set containerName(value: string) {
     this._containerName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get containerNameInput() {
-    return this._containerName
-  }
 
-  // cpu - computed: true, optional: false, required: false
+  // cpu - computed: true, optional: false, required: true
   public get cpu() {
     return this.getNumberAttribute('cpu');
   }
 
-  // disable_networking - computed: true, optional: false, required: false
+  // disable_networking - computed: true, optional: false, required: true
   public get disableNetworking() {
     return this.getBooleanAttribute('disable_networking');
   }
 
-  // docker_labels - computed: true, optional: false, required: false
+  // docker_labels - computed: true, optional: false, required: true
   public dockerLabels(key: string): string {
-    return new cdktf.StringMap(this, 'docker_labels').lookup(key);
+    return new StringMap(this, 'docker_labels').lookup(key);
   }
 
-  // environment - computed: true, optional: false, required: false
+  // environment - computed: true, optional: false, required: true
   public environment(key: string): string {
-    return new cdktf.StringMap(this, 'environment').lookup(key);
+    return new StringMap(this, 'environment').lookup(key);
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // image - computed: true, optional: false, required: false
+  // image - computed: true, optional: false, required: true
   public get image() {
     return this.getStringAttribute('image');
   }
 
-  // image_digest - computed: true, optional: false, required: false
+  // image_digest - computed: true, optional: false, required: true
   public get imageDigest() {
     return this.getStringAttribute('image_digest');
   }
 
-  // memory - computed: true, optional: false, required: false
+  // memory - computed: true, optional: false, required: true
   public get memory() {
     return this.getNumberAttribute('memory');
   }
 
-  // memory_reservation - computed: true, optional: false, required: false
+  // memory_reservation - computed: true, optional: false, required: true
   public get memoryReservation() {
     return this.getNumberAttribute('memory_reservation');
   }
@@ -99,14 +101,10 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
   // task_definition - computed: false, optional: false, required: true
   private _taskDefinition: string;
   public get taskDefinition() {
-    return this.getStringAttribute('task_definition');
+    return this._taskDefinition;
   }
   public set taskDefinition(value: string) {
     this._taskDefinition = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get taskDefinitionInput() {
-    return this._taskDefinition
   }
 
   // =========
@@ -115,8 +113,8 @@ export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container_name: cdktf.stringToTerraform(this._containerName),
-      task_definition: cdktf.stringToTerraform(this._taskDefinition),
+      container_name: this._containerName,
+      task_definition: this._taskDefinition,
     };
   }
 }

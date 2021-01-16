@@ -2,12 +2,14 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchEventRuleConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchEventRuleConfig extends TerraformMetaArguments {
   readonly description?: string;
+  readonly eventBusName?: string;
   readonly eventPattern?: string;
   readonly isEnabled?: boolean;
   readonly name?: string;
@@ -19,7 +21,7 @@ export interface CloudwatchEventRuleConfig extends cdktf.TerraformMetaArguments 
 
 // Resource
 
-export class CloudwatchEventRule extends cdktf.TerraformResource {
+export class CloudwatchEventRule extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -37,6 +39,7 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._eventBusName = config.eventBusName;
     this._eventPattern = config.eventPattern;
     this._isEnabled = config.isEnabled;
     this._name = config.name;
@@ -50,7 +53,7 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,134 +61,91 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
-  public resetDescription() {
-    this._description = undefined;
+
+  // event_bus_name - computed: false, optional: true, required: false
+  private _eventBusName?: string;
+  public get eventBusName() {
+    return this._eventBusName;
   }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
+  public set eventBusName(value: string | undefined) {
+    this._eventBusName = value;
   }
 
   // event_pattern - computed: false, optional: true, required: false
   private _eventPattern?: string;
   public get eventPattern() {
-    return this.getStringAttribute('event_pattern');
+    return this._eventPattern;
   }
-  public set eventPattern(value: string ) {
+  public set eventPattern(value: string | undefined) {
     this._eventPattern = value;
-  }
-  public resetEventPattern() {
-    this._eventPattern = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get eventPatternInput() {
-    return this._eventPattern
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // is_enabled - computed: false, optional: true, required: false
   private _isEnabled?: boolean;
   public get isEnabled() {
-    return this.getBooleanAttribute('is_enabled');
+    return this._isEnabled;
   }
-  public set isEnabled(value: boolean ) {
+  public set isEnabled(value: boolean | undefined) {
     this._isEnabled = value;
-  }
-  public resetIsEnabled() {
-    this._isEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isEnabledInput() {
-    return this._isEnabled
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // role_arn - computed: false, optional: true, required: false
   private _roleArn?: string;
   public get roleArn() {
-    return this.getStringAttribute('role_arn');
+    return this._roleArn;
   }
-  public set roleArn(value: string ) {
+  public set roleArn(value: string | undefined) {
     this._roleArn = value;
-  }
-  public resetRoleArn() {
-    this._roleArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleArnInput() {
-    return this._roleArn
   }
 
   // schedule_expression - computed: false, optional: true, required: false
   private _scheduleExpression?: string;
   public get scheduleExpression() {
-    return this.getStringAttribute('schedule_expression');
+    return this._scheduleExpression;
   }
-  public set scheduleExpression(value: string ) {
+  public set scheduleExpression(value: string | undefined) {
     this._scheduleExpression = value;
-  }
-  public resetScheduleExpression() {
-    this._scheduleExpression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scheduleExpressionInput() {
-    return this._scheduleExpression
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -194,14 +154,15 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      event_pattern: cdktf.stringToTerraform(this._eventPattern),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      schedule_expression: cdktf.stringToTerraform(this._scheduleExpression),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      description: this._description,
+      event_bus_name: this._eventBusName,
+      event_pattern: this._eventPattern,
+      is_enabled: this._isEnabled,
+      name: this._name,
+      name_prefix: this._namePrefix,
+      role_arn: this._roleArn,
+      schedule_expression: this._scheduleExpression,
+      tags: this._tags,
     };
   }
 }

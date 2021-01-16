@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CloudhsmV2HsmConfig extends cdktf.TerraformMetaArguments {
+export interface CloudhsmV2HsmConfig extends TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly clusterId: string;
   readonly ipAddress?: string;
@@ -20,19 +21,9 @@ export interface CloudhsmV2HsmTimeouts {
   readonly update?: string;
 }
 
-function cloudhsmV2HsmTimeoutsToTerraform(struct?: CloudhsmV2HsmTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class CloudhsmV2Hsm extends cdktf.TerraformResource {
+export class CloudhsmV2Hsm extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -63,98 +54,70 @@ export class CloudhsmV2Hsm extends cdktf.TerraformResource {
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string) {
+  public set availabilityZone(value: string | undefined) {
     this._availabilityZone = value;
-  }
-  public resetAvailabilityZone() {
-    this._availabilityZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
   }
 
   // cluster_id - computed: false, optional: false, required: true
   private _clusterId: string;
   public get clusterId() {
-    return this.getStringAttribute('cluster_id');
+    return this._clusterId;
   }
   public set clusterId(value: string) {
     this._clusterId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdInput() {
-    return this._clusterId
-  }
 
-  // hsm_eni_id - computed: true, optional: false, required: false
+  // hsm_eni_id - computed: true, optional: false, required: true
   public get hsmEniId() {
     return this.getStringAttribute('hsm_eni_id');
   }
 
-  // hsm_id - computed: true, optional: false, required: false
+  // hsm_id - computed: true, optional: false, required: true
   public get hsmId() {
     return this.getStringAttribute('hsm_id');
   }
 
-  // hsm_state - computed: true, optional: false, required: false
+  // hsm_state - computed: true, optional: false, required: true
   public get hsmState() {
     return this.getStringAttribute('hsm_state');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // ip_address - computed: true, optional: true, required: false
   private _ipAddress?: string;
   public get ipAddress() {
-    return this.getStringAttribute('ip_address');
+    return this._ipAddress ?? this.getStringAttribute('ip_address');
   }
-  public set ipAddress(value: string) {
+  public set ipAddress(value: string | undefined) {
     this._ipAddress = value;
-  }
-  public resetIpAddress() {
-    this._ipAddress = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipAddressInput() {
-    return this._ipAddress
   }
 
   // subnet_id - computed: true, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this.getStringAttribute('subnet_id');
+    return this._subnetId ?? this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string) {
+  public set subnetId(value: string | undefined) {
     this._subnetId = value;
-  }
-  public resetSubnetId() {
-    this._subnetId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: CloudhsmV2HsmTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: CloudhsmV2HsmTimeouts ) {
+  public set timeouts(value: CloudhsmV2HsmTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -163,11 +126,11 @@ export class CloudhsmV2Hsm extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      timeouts: cloudhsmV2HsmTimeoutsToTerraform(this._timeouts),
+      availability_zone: this._availabilityZone,
+      cluster_id: this._clusterId,
+      ip_address: this._ipAddress,
+      subnet_id: this._subnetId,
+      timeouts: this._timeouts,
     };
   }
 }

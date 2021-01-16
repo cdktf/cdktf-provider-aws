@@ -2,37 +2,39 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsCloudhsmV2ClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCloudhsmV2ClusterConfig extends TerraformMetaArguments {
   readonly clusterId: string;
   readonly clusterState?: string;
 }
-export class DataAwsCloudhsmV2ClusterClusterCertificates extends cdktf.ComplexComputedList {
+export class DataAwsCloudhsmV2ClusterClusterCertificates extends ComplexComputedList {
 
-  // aws_hardware_certificate - computed: true, optional: false, required: false
+  // aws_hardware_certificate - computed: true, optional: false, required: true
   public get awsHardwareCertificate() {
     return this.getStringAttribute('aws_hardware_certificate');
   }
 
-  // cluster_certificate - computed: true, optional: false, required: false
+  // cluster_certificate - computed: true, optional: false, required: true
   public get clusterCertificate() {
     return this.getStringAttribute('cluster_certificate');
   }
 
-  // cluster_csr - computed: true, optional: false, required: false
+  // cluster_csr - computed: true, optional: false, required: true
   public get clusterCsr() {
     return this.getStringAttribute('cluster_csr');
   }
 
-  // hsm_certificate - computed: true, optional: false, required: false
+  // hsm_certificate - computed: true, optional: false, required: true
   public get hsmCertificate() {
     return this.getStringAttribute('hsm_certificate');
   }
 
-  // manufacturer_hardware_certificate - computed: true, optional: false, required: false
+  // manufacturer_hardware_certificate - computed: true, optional: false, required: true
   public get manufacturerHardwareCertificate() {
     return this.getStringAttribute('manufacturer_hardware_certificate');
   }
@@ -40,7 +42,7 @@ export class DataAwsCloudhsmV2ClusterClusterCertificates extends cdktf.ComplexCo
 
 // Resource
 
-export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
+export class DataAwsCloudhsmV2Cluster extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -65,7 +67,7 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // cluster_certificates - computed: true, optional: false, required: false
+  // cluster_certificates - computed: true, optional: false, required: true
   public clusterCertificates(index: string) {
     return new DataAwsCloudhsmV2ClusterClusterCertificates(this, 'cluster_certificates', index);
   }
@@ -73,48 +75,41 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
   // cluster_id - computed: false, optional: false, required: true
   private _clusterId: string;
   public get clusterId() {
-    return this.getStringAttribute('cluster_id');
+    return this._clusterId;
   }
   public set clusterId(value: string) {
     this._clusterId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdInput() {
-    return this._clusterId
   }
 
   // cluster_state - computed: true, optional: true, required: false
   private _clusterState?: string;
   public get clusterState() {
-    return this.getStringAttribute('cluster_state');
+    return this._clusterState ?? this.getStringAttribute('cluster_state');
   }
-  public set clusterState(value: string) {
+  public set clusterState(value: string | undefined) {
     this._clusterState = value;
-  }
-  public resetClusterState() {
-    this._clusterState = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterStateInput() {
-    return this._clusterState
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // security_group_id - computed: true, optional: false, required: false
+  // security_group_id - computed: true, optional: false, required: true
   public get securityGroupId() {
     return this.getStringAttribute('security_group_id');
   }
 
-  // subnet_ids - computed: true, optional: false, required: false
+  // subnet_ids - computed: true, optional: false, required: true
   public get subnetIds() {
     return this.getListAttribute('subnet_ids');
   }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -125,8 +120,8 @@ export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      cluster_state: cdktf.stringToTerraform(this._clusterState),
+      cluster_id: this._clusterId,
+      cluster_state: this._clusterState,
     };
   }
 }

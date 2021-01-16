@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCognitoUserPoolsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCognitoUserPoolsConfig extends TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsCognitoUserPools extends cdktf.TerraformDataSource {
+export class DataAwsCognitoUserPools extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,17 +37,21 @@ export class DataAwsCognitoUserPools extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arns - computed: true, optional: false, required: false
+  // arns - computed: true, optional: false, required: true
   public get arns() {
     return this.getListAttribute('arns');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ids - computed: true, optional: false, required: false
+  // ids - computed: true, optional: false, required: true
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -54,14 +59,10 @@ export class DataAwsCognitoUserPools extends cdktf.TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // =========
@@ -70,7 +71,7 @@ export class DataAwsCognitoUserPools extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

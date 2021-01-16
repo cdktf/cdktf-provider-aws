@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ConfigOrganizationCustomRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigOrganizationCustomRuleConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly excludedAccounts?: string[];
   readonly inputParameters?: string;
@@ -27,19 +28,9 @@ export interface ConfigOrganizationCustomRuleTimeouts {
   readonly update?: string;
 }
 
-function configOrganizationCustomRuleTimeoutsToTerraform(struct?: ConfigOrganizationCustomRuleTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
+export class ConfigOrganizationCustomRule extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -74,7 +65,7 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -82,189 +73,118 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // excluded_accounts - computed: false, optional: true, required: false
   private _excludedAccounts?: string[];
   public get excludedAccounts() {
-    return this.getListAttribute('excluded_accounts');
+    return this._excludedAccounts;
   }
-  public set excludedAccounts(value: string[] ) {
+  public set excludedAccounts(value: string[] | undefined) {
     this._excludedAccounts = value;
-  }
-  public resetExcludedAccounts() {
-    this._excludedAccounts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get excludedAccountsInput() {
-    return this._excludedAccounts
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // input_parameters - computed: false, optional: true, required: false
   private _inputParameters?: string;
   public get inputParameters() {
-    return this.getStringAttribute('input_parameters');
+    return this._inputParameters;
   }
-  public set inputParameters(value: string ) {
+  public set inputParameters(value: string | undefined) {
     this._inputParameters = value;
-  }
-  public resetInputParameters() {
-    this._inputParameters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputParametersInput() {
-    return this._inputParameters
   }
 
   // lambda_function_arn - computed: false, optional: false, required: true
   private _lambdaFunctionArn: string;
   public get lambdaFunctionArn() {
-    return this.getStringAttribute('lambda_function_arn');
+    return this._lambdaFunctionArn;
   }
   public set lambdaFunctionArn(value: string) {
     this._lambdaFunctionArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get lambdaFunctionArnInput() {
-    return this._lambdaFunctionArn
   }
 
   // maximum_execution_frequency - computed: false, optional: true, required: false
   private _maximumExecutionFrequency?: string;
   public get maximumExecutionFrequency() {
-    return this.getStringAttribute('maximum_execution_frequency');
+    return this._maximumExecutionFrequency;
   }
-  public set maximumExecutionFrequency(value: string ) {
+  public set maximumExecutionFrequency(value: string | undefined) {
     this._maximumExecutionFrequency = value;
-  }
-  public resetMaximumExecutionFrequency() {
-    this._maximumExecutionFrequency = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maximumExecutionFrequencyInput() {
-    return this._maximumExecutionFrequency
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // resource_id_scope - computed: false, optional: true, required: false
   private _resourceIdScope?: string;
   public get resourceIdScope() {
-    return this.getStringAttribute('resource_id_scope');
+    return this._resourceIdScope;
   }
-  public set resourceIdScope(value: string ) {
+  public set resourceIdScope(value: string | undefined) {
     this._resourceIdScope = value;
-  }
-  public resetResourceIdScope() {
-    this._resourceIdScope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceIdScopeInput() {
-    return this._resourceIdScope
   }
 
   // resource_types_scope - computed: false, optional: true, required: false
   private _resourceTypesScope?: string[];
   public get resourceTypesScope() {
-    return this.getListAttribute('resource_types_scope');
+    return this._resourceTypesScope;
   }
-  public set resourceTypesScope(value: string[] ) {
+  public set resourceTypesScope(value: string[] | undefined) {
     this._resourceTypesScope = value;
-  }
-  public resetResourceTypesScope() {
-    this._resourceTypesScope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceTypesScopeInput() {
-    return this._resourceTypesScope
   }
 
   // tag_key_scope - computed: false, optional: true, required: false
   private _tagKeyScope?: string;
   public get tagKeyScope() {
-    return this.getStringAttribute('tag_key_scope');
+    return this._tagKeyScope;
   }
-  public set tagKeyScope(value: string ) {
+  public set tagKeyScope(value: string | undefined) {
     this._tagKeyScope = value;
-  }
-  public resetTagKeyScope() {
-    this._tagKeyScope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagKeyScopeInput() {
-    return this._tagKeyScope
   }
 
   // tag_value_scope - computed: false, optional: true, required: false
   private _tagValueScope?: string;
   public get tagValueScope() {
-    return this.getStringAttribute('tag_value_scope');
+    return this._tagValueScope;
   }
-  public set tagValueScope(value: string ) {
+  public set tagValueScope(value: string | undefined) {
     this._tagValueScope = value;
-  }
-  public resetTagValueScope() {
-    this._tagValueScope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagValueScopeInput() {
-    return this._tagValueScope
   }
 
   // trigger_types - computed: false, optional: false, required: true
   private _triggerTypes: string[];
   public get triggerTypes() {
-    return this.getListAttribute('trigger_types');
+    return this._triggerTypes;
   }
   public set triggerTypes(value: string[]) {
     this._triggerTypes = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get triggerTypesInput() {
-    return this._triggerTypes
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: ConfigOrganizationCustomRuleTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: ConfigOrganizationCustomRuleTimeouts ) {
+  public set timeouts(value: ConfigOrganizationCustomRuleTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -273,18 +193,18 @@ export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedAccounts),
-      input_parameters: cdktf.stringToTerraform(this._inputParameters),
-      lambda_function_arn: cdktf.stringToTerraform(this._lambdaFunctionArn),
-      maximum_execution_frequency: cdktf.stringToTerraform(this._maximumExecutionFrequency),
-      name: cdktf.stringToTerraform(this._name),
-      resource_id_scope: cdktf.stringToTerraform(this._resourceIdScope),
-      resource_types_scope: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceTypesScope),
-      tag_key_scope: cdktf.stringToTerraform(this._tagKeyScope),
-      tag_value_scope: cdktf.stringToTerraform(this._tagValueScope),
-      trigger_types: cdktf.listMapper(cdktf.stringToTerraform)(this._triggerTypes),
-      timeouts: configOrganizationCustomRuleTimeoutsToTerraform(this._timeouts),
+      description: this._description,
+      excluded_accounts: this._excludedAccounts,
+      input_parameters: this._inputParameters,
+      lambda_function_arn: this._lambdaFunctionArn,
+      maximum_execution_frequency: this._maximumExecutionFrequency,
+      name: this._name,
+      resource_id_scope: this._resourceIdScope,
+      resource_types_scope: this._resourceTypesScope,
+      tag_key_scope: this._tagKeyScope,
+      tag_value_scope: this._tagValueScope,
+      trigger_types: this._triggerTypes,
+      timeouts: this._timeouts,
     };
   }
 }

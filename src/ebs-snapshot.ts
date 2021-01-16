@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EbsSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface EbsSnapshotConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly tags?: { [key: string]: string };
   readonly volumeId: string;
@@ -18,18 +19,9 @@ export interface EbsSnapshotTimeouts {
   readonly delete?: string;
 }
 
-function ebsSnapshotTimeoutsToTerraform(struct?: EbsSnapshotTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
-
 // Resource
 
-export class EbsSnapshot extends cdktf.TerraformResource {
+export class EbsSnapshot extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -56,12 +48,12 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // data_encryption_key_id - computed: true, optional: false, required: false
+  // data_encryption_key_id - computed: true, optional: false, required: true
   public get dataEncryptionKeyId() {
     return this.getStringAttribute('data_encryption_key_id');
   }
@@ -69,40 +61,37 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
-  }
 
-  // encrypted - computed: true, optional: false, required: false
+  // encrypted - computed: true, optional: false, required: true
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // owner_alias - computed: true, optional: false, required: false
+  // owner_alias - computed: true, optional: false, required: true
   public get ownerAlias() {
     return this.getStringAttribute('owner_alias');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -110,33 +99,22 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // volume_id - computed: false, optional: false, required: true
   private _volumeId: string;
   public get volumeId() {
-    return this.getStringAttribute('volume_id');
+    return this._volumeId;
   }
   public set volumeId(value: string) {
     this._volumeId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get volumeIdInput() {
-    return this._volumeId
-  }
 
-  // volume_size - computed: true, optional: false, required: false
+  // volume_size - computed: true, optional: false, required: true
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }
@@ -144,17 +122,10 @@ export class EbsSnapshot extends cdktf.TerraformResource {
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EbsSnapshotTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: EbsSnapshotTimeouts ) {
+  public set timeouts(value: EbsSnapshotTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -163,10 +134,10 @@ export class EbsSnapshot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      volume_id: cdktf.stringToTerraform(this._volumeId),
-      timeouts: ebsSnapshotTimeoutsToTerraform(this._timeouts),
+      description: this._description,
+      tags: this._tags,
+      volume_id: this._volumeId,
+      timeouts: this._timeouts,
     };
   }
 }

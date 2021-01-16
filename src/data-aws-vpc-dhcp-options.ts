@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpcDhcpOptionsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsVpcDhcpOptionsConfig extends TerraformMetaArguments {
   readonly dhcpOptionsId?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
@@ -17,18 +18,9 @@ export interface DataAwsVpcDhcpOptionsFilter {
   readonly values: string[];
 }
 
-function dataAwsVpcDhcpOptionsFilterToTerraform(struct?: DataAwsVpcDhcpOptionsFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
+export class DataAwsVpcDhcpOptions extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -54,7 +46,7 @@ export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -62,84 +54,67 @@ export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
   // dhcp_options_id - computed: true, optional: true, required: false
   private _dhcpOptionsId?: string;
   public get dhcpOptionsId() {
-    return this.getStringAttribute('dhcp_options_id');
+    return this._dhcpOptionsId ?? this.getStringAttribute('dhcp_options_id');
   }
-  public set dhcpOptionsId(value: string) {
+  public set dhcpOptionsId(value: string | undefined) {
     this._dhcpOptionsId = value;
   }
-  public resetDhcpOptionsId() {
-    this._dhcpOptionsId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dhcpOptionsIdInput() {
-    return this._dhcpOptionsId
-  }
 
-  // domain_name - computed: true, optional: false, required: false
+  // domain_name - computed: true, optional: false, required: true
   public get domainName() {
     return this.getStringAttribute('domain_name');
   }
 
-  // domain_name_servers - computed: true, optional: false, required: false
+  // domain_name_servers - computed: true, optional: false, required: true
   public get domainNameServers() {
     return this.getListAttribute('domain_name_servers');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // netbios_name_servers - computed: true, optional: false, required: false
+  // netbios_name_servers - computed: true, optional: false, required: true
   public get netbiosNameServers() {
     return this.getListAttribute('netbios_name_servers');
   }
 
-  // netbios_node_type - computed: true, optional: false, required: false
+  // netbios_node_type - computed: true, optional: false, required: true
   public get netbiosNodeType() {
     return this.getStringAttribute('netbios_node_type');
   }
 
-  // ntp_servers - computed: true, optional: false, required: false
+  // ntp_servers - computed: true, optional: false, required: true
   public get ntpServers() {
     return this.getListAttribute('ntp_servers');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsVpcDhcpOptionsFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsVpcDhcpOptionsFilter[] ) {
+  public set filter(value: DataAwsVpcDhcpOptionsFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -148,9 +123,9 @@ export class DataAwsVpcDhcpOptions extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dhcp_options_id: cdktf.stringToTerraform(this._dhcpOptionsId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsVpcDhcpOptionsFilterToTerraform)(this._filter),
+      dhcp_options_id: this._dhcpOptionsId,
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EbsSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
+export interface EbsSnapshotCopyConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly encrypted?: boolean;
   readonly kmsKeyId?: string;
@@ -17,7 +18,7 @@ export interface EbsSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class EbsSnapshotCopy extends cdktf.TerraformResource {
+export class EbsSnapshotCopy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,12 +47,12 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // data_encryption_key_id - computed: true, optional: false, required: false
+  // data_encryption_key_id - computed: true, optional: false, required: true
   public get dataEncryptionKeyId() {
     return this.getStringAttribute('data_encryption_key_id');
   }
@@ -59,62 +60,45 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // encrypted - computed: false, optional: true, required: false
   private _encrypted?: boolean;
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted');
+    return this._encrypted;
   }
-  public set encrypted(value: boolean ) {
+  public set encrypted(value: boolean | undefined) {
     this._encrypted = value;
-  }
-  public resetEncrypted() {
-    this._encrypted = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get encryptedInput() {
-    return this._encrypted
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this.getStringAttribute('kms_key_id');
+    return this._kmsKeyId;
   }
-  public set kmsKeyId(value: string ) {
+  public set kmsKeyId(value: string | undefined) {
     this._kmsKeyId = value;
   }
-  public resetKmsKeyId() {
-    this._kmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyIdInput() {
-    return this._kmsKeyId
-  }
 
-  // owner_alias - computed: true, optional: false, required: false
+  // owner_alias - computed: true, optional: false, required: true
   public get ownerAlias() {
     return this.getStringAttribute('owner_alias');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -122,51 +106,36 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
   // source_region - computed: false, optional: false, required: true
   private _sourceRegion: string;
   public get sourceRegion() {
-    return this.getStringAttribute('source_region');
+    return this._sourceRegion;
   }
   public set sourceRegion(value: string) {
     this._sourceRegion = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceRegionInput() {
-    return this._sourceRegion
   }
 
   // source_snapshot_id - computed: false, optional: false, required: true
   private _sourceSnapshotId: string;
   public get sourceSnapshotId() {
-    return this.getStringAttribute('source_snapshot_id');
+    return this._sourceSnapshotId;
   }
   public set sourceSnapshotId(value: string) {
     this._sourceSnapshotId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceSnapshotIdInput() {
-    return this._sourceSnapshotId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // volume_id - computed: true, optional: false, required: false
+  // volume_id - computed: true, optional: false, required: true
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
 
-  // volume_size - computed: true, optional: false, required: false
+  // volume_size - computed: true, optional: false, required: true
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }
@@ -177,12 +146,12 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      encrypted: cdktf.booleanToTerraform(this._encrypted),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      source_region: cdktf.stringToTerraform(this._sourceRegion),
-      source_snapshot_id: cdktf.stringToTerraform(this._sourceSnapshotId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      description: this._description,
+      encrypted: this._encrypted,
+      kms_key_id: this._kmsKeyId,
+      source_region: this._sourceRegion,
+      source_snapshot_id: this._sourceSnapshotId,
+      tags: this._tags,
     };
   }
 }

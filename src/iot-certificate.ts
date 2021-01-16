@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IotCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface IotCertificateConfig extends TerraformMetaArguments {
   readonly active: boolean;
   readonly csr?: string;
 }
 
 // Resource
 
-export class IotCertificate extends cdktf.TerraformResource {
+export class IotCertificate extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,22 +42,18 @@ export class IotCertificate extends cdktf.TerraformResource {
   // active - computed: false, optional: false, required: true
   private _active: boolean;
   public get active() {
-    return this.getBooleanAttribute('active');
+    return this._active;
   }
   public set active(value: boolean) {
     this._active = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get activeInput() {
-    return this._active
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // certificate_pem - computed: true, optional: false, required: false
+  // certificate_pem - computed: true, optional: false, required: true
   public get certificatePem() {
     return this.getStringAttribute('certificate_pem');
   }
@@ -64,30 +61,27 @@ export class IotCertificate extends cdktf.TerraformResource {
   // csr - computed: false, optional: true, required: false
   private _csr?: string;
   public get csr() {
-    return this.getStringAttribute('csr');
+    return this._csr;
   }
-  public set csr(value: string ) {
+  public set csr(value: string | undefined) {
     this._csr = value;
-  }
-  public resetCsr() {
-    this._csr = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get csrInput() {
-    return this._csr
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // private_key - computed: true, optional: false, required: false
+  // private_key - computed: true, optional: false, required: true
   public get privateKey() {
     return this.getStringAttribute('private_key');
   }
 
-  // public_key - computed: true, optional: false, required: false
+  // public_key - computed: true, optional: false, required: true
   public get publicKey() {
     return this.getStringAttribute('public_key');
   }
@@ -98,8 +92,8 @@ export class IotCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: cdktf.booleanToTerraform(this._active),
-      csr: cdktf.stringToTerraform(this._csr),
+      active: this._active,
+      csr: this._csr,
     };
   }
 }

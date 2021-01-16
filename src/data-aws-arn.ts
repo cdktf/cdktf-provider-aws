@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsArnConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsArnConfig extends TerraformMetaArguments {
   readonly arn: string;
 }
 
 // Resource
 
-export class DataAwsArn extends cdktf.TerraformDataSource {
+export class DataAwsArn extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,7 +37,7 @@ export class DataAwsArn extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account - computed: true, optional: false, required: false
+  // account - computed: true, optional: false, required: true
   public get account() {
     return this.getStringAttribute('account');
   }
@@ -44,37 +45,37 @@ export class DataAwsArn extends cdktf.TerraformDataSource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn;
   }
   public set arn(value: string) {
     this._arn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get arnInput() {
-    return this._arn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // partition - computed: true, optional: false, required: false
+  // partition - computed: true, optional: false, required: true
   public get partition() {
     return this.getStringAttribute('partition');
   }
 
-  // region - computed: true, optional: false, required: false
+  // region - computed: true, optional: false, required: true
   public get region() {
     return this.getStringAttribute('region');
   }
 
-  // resource - computed: true, optional: false, required: false
+  // resource - computed: true, optional: false, required: true
   public get resource() {
     return this.getStringAttribute('resource');
   }
 
-  // service - computed: true, optional: false, required: false
+  // service - computed: true, optional: false, required: true
   public get service() {
     return this.getStringAttribute('service');
   }
@@ -85,7 +86,7 @@ export class DataAwsArn extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
+      arn: this._arn,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface MqConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface MqConfigurationConfig extends TerraformMetaArguments {
   readonly data: string;
   readonly description?: string;
   readonly engineType: string;
@@ -17,7 +18,7 @@ export interface MqConfigurationConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class MqConfiguration extends cdktf.TerraformResource {
+export class MqConfiguration extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,7 +47,7 @@ export class MqConfiguration extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -54,64 +55,49 @@ export class MqConfiguration extends cdktf.TerraformResource {
   // data - computed: false, optional: false, required: true
   private _data: string;
   public get data() {
-    return this.getStringAttribute('data');
+    return this._data;
   }
   public set data(value: string) {
     this._data = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataInput() {
-    return this._data
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // engine_type - computed: false, optional: false, required: true
   private _engineType: string;
   public get engineType() {
-    return this.getStringAttribute('engine_type');
+    return this._engineType;
   }
   public set engineType(value: string) {
     this._engineType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineTypeInput() {
-    return this._engineType
   }
 
   // engine_version - computed: false, optional: false, required: true
   private _engineVersion: string;
   public get engineVersion() {
-    return this.getStringAttribute('engine_version');
+    return this._engineVersion;
   }
   public set engineVersion(value: string) {
     this._engineVersion = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get engineVersionInput() {
-    return this._engineVersion
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // latest_revision - computed: true, optional: false, required: false
+  // latest_revision - computed: true, optional: false, required: true
   public get latestRevision() {
     return this.getNumberAttribute('latest_revision');
   }
@@ -119,30 +105,19 @@ export class MqConfiguration extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -151,12 +126,12 @@ export class MqConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data: cdktf.stringToTerraform(this._data),
-      description: cdktf.stringToTerraform(this._description),
-      engine_type: cdktf.stringToTerraform(this._engineType),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      data: this._data,
+      description: this._description,
+      engine_type: this._engineType,
+      engine_version: this._engineVersion,
+      name: this._name,
+      tags: this._tags,
     };
   }
 }

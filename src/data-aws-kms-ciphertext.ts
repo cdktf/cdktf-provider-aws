@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsKmsCiphertextConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsKmsCiphertextConfig extends TerraformMetaArguments {
   readonly context?: { [key: string]: string };
   readonly keyId: string;
   readonly plaintext: string;
@@ -14,7 +15,7 @@ export interface DataAwsKmsCiphertextConfig extends cdktf.TerraformMetaArguments
 
 // Resource
 
-export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
+export class DataAwsKmsCiphertext extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // ciphertext_blob - computed: true, optional: false, required: false
+  // ciphertext_blob - computed: true, optional: false, required: true
   public get ciphertextBlob() {
     return this.getStringAttribute('ciphertext_blob');
   }
@@ -48,48 +49,37 @@ export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
   // context - computed: false, optional: true, required: false
   private _context?: { [key: string]: string };
   public get context() {
-    return this.interpolationForAttribute('context') as any;
+    return this._context;
   }
-  public set context(value: { [key: string]: string } ) {
+  public set context(value: { [key: string]: string } | undefined) {
     this._context = value;
-  }
-  public resetContext() {
-    this._context = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contextInput() {
-    return this._context
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // key_id - computed: false, optional: false, required: true
   private _keyId: string;
   public get keyId() {
-    return this.getStringAttribute('key_id');
+    return this._keyId;
   }
   public set keyId(value: string) {
     this._keyId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyIdInput() {
-    return this._keyId
   }
 
   // plaintext - computed: false, optional: false, required: true
   private _plaintext: string;
   public get plaintext() {
-    return this.getStringAttribute('plaintext');
+    return this._plaintext;
   }
   public set plaintext(value: string) {
     this._plaintext = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get plaintextInput() {
-    return this._plaintext
   }
 
   // =========
@@ -98,9 +88,9 @@ export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      context: cdktf.hashMapper(cdktf.anyToTerraform)(this._context),
-      key_id: cdktf.stringToTerraform(this._keyId),
-      plaintext: cdktf.stringToTerraform(this._plaintext),
+      context: this._context,
+      key_id: this._keyId,
+      plaintext: this._plaintext,
     };
   }
 }

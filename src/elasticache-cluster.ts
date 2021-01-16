@@ -2,18 +2,20 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticacheClusterConfig extends TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly availabilityZone?: string;
-  readonly availabilityZones?: string[];
   readonly azMode?: string;
   readonly clusterId: string;
   readonly engine?: string;
   readonly engineVersion?: string;
+  readonly finalSnapshotIdentifier?: string;
   readonly maintenanceWindow?: string;
   readonly nodeType?: string;
   readonly notificationTopicArn?: string;
@@ -31,24 +33,24 @@ export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   readonly subnetGroupName?: string;
   readonly tags?: { [key: string]: string };
 }
-export class ElasticacheClusterCacheNodes extends cdktf.ComplexComputedList {
+export class ElasticacheClusterCacheNodes extends ComplexComputedList {
 
-  // address - computed: true, optional: false, required: false
+  // address - computed: true, optional: false, required: true
   public get address() {
     return this.getStringAttribute('address');
   }
 
-  // availability_zone - computed: true, optional: false, required: false
+  // availability_zone - computed: true, optional: false, required: true
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: false, required: true
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // port - computed: true, optional: false, required: false
+  // port - computed: true, optional: false, required: true
   public get port() {
     return this.getNumberAttribute('port');
   }
@@ -56,7 +58,7 @@ export class ElasticacheClusterCacheNodes extends cdktf.ComplexComputedList {
 
 // Resource
 
-export class ElasticacheCluster extends cdktf.TerraformResource {
+export class ElasticacheCluster extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -75,11 +77,11 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     });
     this._applyImmediately = config.applyImmediately;
     this._availabilityZone = config.availabilityZone;
-    this._availabilityZones = config.availabilityZones;
     this._azMode = config.azMode;
     this._clusterId = config.clusterId;
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
+    this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
     this._maintenanceWindow = config.maintenanceWindow;
     this._nodeType = config.nodeType;
     this._notificationTopicArn = config.notificationTopicArn;
@@ -105,20 +107,13 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this.getBooleanAttribute('apply_immediately');
+    return this._applyImmediately ?? this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | undefined) {
     this._applyImmediately = value;
   }
-  public resetApplyImmediately() {
-    this._applyImmediately = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applyImmediatelyInput() {
-    return this._applyImmediately
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -126,57 +121,27 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string) {
+  public set availabilityZone(value: string | undefined) {
     this._availabilityZone = value;
-  }
-  public resetAvailabilityZone() {
-    this._availabilityZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
-  }
-
-  // availability_zones - computed: false, optional: true, required: false
-  private _availabilityZones?: string[];
-  public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
-  }
-  public set availabilityZones(value: string[] ) {
-    this._availabilityZones = value;
-  }
-  public resetAvailabilityZones() {
-    this._availabilityZones = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZonesInput() {
-    return this._availabilityZones
   }
 
   // az_mode - computed: true, optional: true, required: false
   private _azMode?: string;
   public get azMode() {
-    return this.getStringAttribute('az_mode');
+    return this._azMode ?? this.getStringAttribute('az_mode');
   }
-  public set azMode(value: string) {
+  public set azMode(value: string | undefined) {
     this._azMode = value;
   }
-  public resetAzMode() {
-    this._azMode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get azModeInput() {
-    return this._azMode
-  }
 
-  // cache_nodes - computed: true, optional: false, required: false
+  // cache_nodes - computed: true, optional: false, required: true
   public cacheNodes(index: string) {
     return new ElasticacheClusterCacheNodes(this, 'cache_nodes', index);
   }
 
-  // cluster_address - computed: true, optional: false, required: false
+  // cluster_address - computed: true, optional: false, required: true
   public get clusterAddress() {
     return this.getStringAttribute('cluster_address');
   }
@@ -184,17 +149,13 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // cluster_id - computed: false, optional: false, required: true
   private _clusterId: string;
   public get clusterId() {
-    return this.getStringAttribute('cluster_id');
+    return this._clusterId;
   }
   public set clusterId(value: string) {
     this._clusterId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdInput() {
-    return this._clusterId
-  }
 
-  // configuration_endpoint - computed: true, optional: false, required: false
+  // configuration_endpoint - computed: true, optional: false, required: true
   public get configurationEndpoint() {
     return this.getStringAttribute('configuration_endpoint');
   }
@@ -202,294 +163,181 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // engine - computed: true, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this.getStringAttribute('engine');
+    return this._engine ?? this.getStringAttribute('engine');
   }
-  public set engine(value: string) {
+  public set engine(value: string | undefined) {
     this._engine = value;
-  }
-  public resetEngine() {
-    this._engine = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineInput() {
-    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this.getStringAttribute('engine_version');
+    return this._engineVersion ?? this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string) {
+  public set engineVersion(value: string | undefined) {
     this._engineVersion = value;
   }
-  public resetEngineVersion() {
-    this._engineVersion = undefined;
+
+  // final_snapshot_identifier - computed: false, optional: true, required: false
+  private _finalSnapshotIdentifier?: string;
+  public get finalSnapshotIdentifier() {
+    return this._finalSnapshotIdentifier;
   }
-  // Temporarily expose input value. Use with caution.
-  public get engineVersionInput() {
-    return this._engineVersion
+  public set finalSnapshotIdentifier(value: string | undefined) {
+    this._finalSnapshotIdentifier = value;
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // maintenance_window - computed: true, optional: true, required: false
   private _maintenanceWindow?: string;
   public get maintenanceWindow() {
-    return this.getStringAttribute('maintenance_window');
+    return this._maintenanceWindow ?? this.getStringAttribute('maintenance_window');
   }
-  public set maintenanceWindow(value: string) {
+  public set maintenanceWindow(value: string | undefined) {
     this._maintenanceWindow = value;
-  }
-  public resetMaintenanceWindow() {
-    this._maintenanceWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maintenanceWindowInput() {
-    return this._maintenanceWindow
   }
 
   // node_type - computed: true, optional: true, required: false
   private _nodeType?: string;
   public get nodeType() {
-    return this.getStringAttribute('node_type');
+    return this._nodeType ?? this.getStringAttribute('node_type');
   }
-  public set nodeType(value: string) {
+  public set nodeType(value: string | undefined) {
     this._nodeType = value;
-  }
-  public resetNodeType() {
-    this._nodeType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nodeTypeInput() {
-    return this._nodeType
   }
 
   // notification_topic_arn - computed: false, optional: true, required: false
   private _notificationTopicArn?: string;
   public get notificationTopicArn() {
-    return this.getStringAttribute('notification_topic_arn');
+    return this._notificationTopicArn;
   }
-  public set notificationTopicArn(value: string ) {
+  public set notificationTopicArn(value: string | undefined) {
     this._notificationTopicArn = value;
-  }
-  public resetNotificationTopicArn() {
-    this._notificationTopicArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get notificationTopicArnInput() {
-    return this._notificationTopicArn
   }
 
   // num_cache_nodes - computed: true, optional: true, required: false
   private _numCacheNodes?: number;
   public get numCacheNodes() {
-    return this.getNumberAttribute('num_cache_nodes');
+    return this._numCacheNodes ?? this.getNumberAttribute('num_cache_nodes');
   }
-  public set numCacheNodes(value: number) {
+  public set numCacheNodes(value: number | undefined) {
     this._numCacheNodes = value;
-  }
-  public resetNumCacheNodes() {
-    this._numCacheNodes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get numCacheNodesInput() {
-    return this._numCacheNodes
   }
 
   // parameter_group_name - computed: true, optional: true, required: false
   private _parameterGroupName?: string;
   public get parameterGroupName() {
-    return this.getStringAttribute('parameter_group_name');
+    return this._parameterGroupName ?? this.getStringAttribute('parameter_group_name');
   }
-  public set parameterGroupName(value: string) {
+  public set parameterGroupName(value: string | undefined) {
     this._parameterGroupName = value;
-  }
-  public resetParameterGroupName() {
-    this._parameterGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parameterGroupNameInput() {
-    return this._parameterGroupName
   }
 
   // port - computed: true, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this.getNumberAttribute('port');
+    return this._port ?? this.getNumberAttribute('port');
   }
-  public set port(value: number) {
+  public set port(value: number | undefined) {
     this._port = value;
-  }
-  public resetPort() {
-    this._port = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get portInput() {
-    return this._port
   }
 
   // preferred_availability_zones - computed: false, optional: true, required: false
   private _preferredAvailabilityZones?: string[];
   public get preferredAvailabilityZones() {
-    return this.getListAttribute('preferred_availability_zones');
+    return this._preferredAvailabilityZones;
   }
-  public set preferredAvailabilityZones(value: string[] ) {
+  public set preferredAvailabilityZones(value: string[] | undefined) {
     this._preferredAvailabilityZones = value;
-  }
-  public resetPreferredAvailabilityZones() {
-    this._preferredAvailabilityZones = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preferredAvailabilityZonesInput() {
-    return this._preferredAvailabilityZones
   }
 
   // replication_group_id - computed: true, optional: true, required: false
   private _replicationGroupId?: string;
   public get replicationGroupId() {
-    return this.getStringAttribute('replication_group_id');
+    return this._replicationGroupId ?? this.getStringAttribute('replication_group_id');
   }
-  public set replicationGroupId(value: string) {
+  public set replicationGroupId(value: string | undefined) {
     this._replicationGroupId = value;
-  }
-  public resetReplicationGroupId() {
-    this._replicationGroupId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get replicationGroupIdInput() {
-    return this._replicationGroupId
   }
 
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[];
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return this._securityGroupIds ?? this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[]) {
+  public set securityGroupIds(value: string[] | undefined) {
     this._securityGroupIds = value;
-  }
-  public resetSecurityGroupIds() {
-    this._securityGroupIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupIdsInput() {
-    return this._securityGroupIds
   }
 
   // security_group_names - computed: true, optional: true, required: false
   private _securityGroupNames?: string[];
   public get securityGroupNames() {
-    return this.getListAttribute('security_group_names');
+    return this._securityGroupNames ?? this.getListAttribute('security_group_names');
   }
-  public set securityGroupNames(value: string[]) {
+  public set securityGroupNames(value: string[] | undefined) {
     this._securityGroupNames = value;
-  }
-  public resetSecurityGroupNames() {
-    this._securityGroupNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupNamesInput() {
-    return this._securityGroupNames
   }
 
   // snapshot_arns - computed: false, optional: true, required: false
   private _snapshotArns?: string[];
   public get snapshotArns() {
-    return this.getListAttribute('snapshot_arns');
+    return this._snapshotArns;
   }
-  public set snapshotArns(value: string[] ) {
+  public set snapshotArns(value: string[] | undefined) {
     this._snapshotArns = value;
-  }
-  public resetSnapshotArns() {
-    this._snapshotArns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotArnsInput() {
-    return this._snapshotArns
   }
 
   // snapshot_name - computed: false, optional: true, required: false
   private _snapshotName?: string;
   public get snapshotName() {
-    return this.getStringAttribute('snapshot_name');
+    return this._snapshotName;
   }
-  public set snapshotName(value: string ) {
+  public set snapshotName(value: string | undefined) {
     this._snapshotName = value;
-  }
-  public resetSnapshotName() {
-    this._snapshotName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotNameInput() {
-    return this._snapshotName
   }
 
   // snapshot_retention_limit - computed: false, optional: true, required: false
   private _snapshotRetentionLimit?: number;
   public get snapshotRetentionLimit() {
-    return this.getNumberAttribute('snapshot_retention_limit');
+    return this._snapshotRetentionLimit;
   }
-  public set snapshotRetentionLimit(value: number ) {
+  public set snapshotRetentionLimit(value: number | undefined) {
     this._snapshotRetentionLimit = value;
-  }
-  public resetSnapshotRetentionLimit() {
-    this._snapshotRetentionLimit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotRetentionLimitInput() {
-    return this._snapshotRetentionLimit
   }
 
   // snapshot_window - computed: true, optional: true, required: false
   private _snapshotWindow?: string;
   public get snapshotWindow() {
-    return this.getStringAttribute('snapshot_window');
+    return this._snapshotWindow ?? this.getStringAttribute('snapshot_window');
   }
-  public set snapshotWindow(value: string) {
+  public set snapshotWindow(value: string | undefined) {
     this._snapshotWindow = value;
-  }
-  public resetSnapshotWindow() {
-    this._snapshotWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotWindowInput() {
-    return this._snapshotWindow
   }
 
   // subnet_group_name - computed: true, optional: true, required: false
   private _subnetGroupName?: string;
   public get subnetGroupName() {
-    return this.getStringAttribute('subnet_group_name');
+    return this._subnetGroupName ?? this.getStringAttribute('subnet_group_name');
   }
-  public set subnetGroupName(value: string) {
+  public set subnetGroupName(value: string | undefined) {
     this._subnetGroupName = value;
-  }
-  public resetSubnetGroupName() {
-    this._subnetGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetGroupNameInput() {
-    return this._subnetGroupName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -498,29 +346,29 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
-      az_mode: cdktf.stringToTerraform(this._azMode),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
-      node_type: cdktf.stringToTerraform(this._nodeType),
-      notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
-      num_cache_nodes: cdktf.numberToTerraform(this._numCacheNodes),
-      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
-      port: cdktf.numberToTerraform(this._port),
-      preferred_availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredAvailabilityZones),
-      replication_group_id: cdktf.stringToTerraform(this._replicationGroupId),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
-      snapshot_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotArns),
-      snapshot_name: cdktf.stringToTerraform(this._snapshotName),
-      snapshot_retention_limit: cdktf.numberToTerraform(this._snapshotRetentionLimit),
-      snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
-      subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      apply_immediately: this._applyImmediately,
+      availability_zone: this._availabilityZone,
+      az_mode: this._azMode,
+      cluster_id: this._clusterId,
+      engine: this._engine,
+      engine_version: this._engineVersion,
+      final_snapshot_identifier: this._finalSnapshotIdentifier,
+      maintenance_window: this._maintenanceWindow,
+      node_type: this._nodeType,
+      notification_topic_arn: this._notificationTopicArn,
+      num_cache_nodes: this._numCacheNodes,
+      parameter_group_name: this._parameterGroupName,
+      port: this._port,
+      preferred_availability_zones: this._preferredAvailabilityZones,
+      replication_group_id: this._replicationGroupId,
+      security_group_ids: this._securityGroupIds,
+      security_group_names: this._securityGroupNames,
+      snapshot_arns: this._snapshotArns,
+      snapshot_name: this._snapshotName,
+      snapshot_retention_limit: this._snapshotRetentionLimit,
+      snapshot_window: this._snapshotWindow,
+      subnet_group_name: this._subnetGroupName,
+      tags: this._tags,
     };
   }
 }

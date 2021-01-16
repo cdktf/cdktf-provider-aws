@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogDestinationConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly roleArn: string;
   readonly targetArn: string;
@@ -14,7 +15,7 @@ export interface CloudwatchLogDestinationConfig extends cdktf.TerraformMetaArgum
 
 // Resource
 
-export class CloudwatchLogDestination extends cdktf.TerraformResource {
+export class CloudwatchLogDestination extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,53 +41,45 @@ export class CloudwatchLogDestination extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this.getStringAttribute('role_arn');
+    return this._roleArn;
   }
   public set roleArn(value: string) {
     this._roleArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleArnInput() {
-    return this._roleArn
   }
 
   // target_arn - computed: false, optional: false, required: true
   private _targetArn: string;
   public get targetArn() {
-    return this.getStringAttribute('target_arn');
+    return this._targetArn;
   }
   public set targetArn(value: string) {
     this._targetArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetArnInput() {
-    return this._targetArn
   }
 
   // =========
@@ -95,9 +88,9 @@ export class CloudwatchLogDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      target_arn: cdktf.stringToTerraform(this._targetArn),
+      name: this._name,
+      role_arn: this._roleArn,
+      target_arn: this._targetArn,
     };
   }
 }

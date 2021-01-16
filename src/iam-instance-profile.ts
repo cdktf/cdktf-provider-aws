@@ -2,21 +2,21 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamInstanceProfileConfig extends cdktf.TerraformMetaArguments {
+export interface IamInstanceProfileConfig extends TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly path?: string;
   readonly role?: string;
-  readonly roles?: string[];
 }
 
 // Resource
 
-export class IamInstanceProfile extends cdktf.TerraformResource {
+export class IamInstanceProfile extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -37,109 +37,68 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
     this._namePrefix = config.namePrefix;
     this._path = config.path;
     this._role = config.role;
-    this._roles = config.roles;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // create_date - computed: true, optional: false, required: false
+  // create_date - computed: true, optional: false, required: true
   public get createDate() {
     return this.getStringAttribute('create_date');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // path - computed: false, optional: true, required: false
   private _path?: string;
   public get path() {
-    return this.getStringAttribute('path');
+    return this._path;
   }
-  public set path(value: string ) {
+  public set path(value: string | undefined) {
     this._path = value;
   }
-  public resetPath() {
-    this._path = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pathInput() {
-    return this._path
-  }
 
-  // role - computed: true, optional: true, required: false
+  // role - computed: false, optional: true, required: false
   private _role?: string;
   public get role() {
-    return this.getStringAttribute('role');
+    return this._role;
   }
-  public set role(value: string) {
+  public set role(value: string | undefined) {
     this._role = value;
   }
-  public resetRole() {
-    this._role = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleInput() {
-    return this._role
-  }
 
-  // roles - computed: true, optional: true, required: false
-  private _roles?: string[];
-  public get roles() {
-    return this.getListAttribute('roles');
-  }
-  public set roles(value: string[]) {
-    this._roles = value;
-  }
-  public resetRoles() {
-    this._roles = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rolesInput() {
-    return this._roles
-  }
-
-  // unique_id - computed: true, optional: false, required: false
+  // unique_id - computed: true, optional: false, required: true
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
   }
@@ -150,11 +109,10 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      path: cdktf.stringToTerraform(this._path),
-      role: cdktf.stringToTerraform(this._role),
-      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
+      name: this._name,
+      name_prefix: this._namePrefix,
+      path: this._path,
+      role: this._role,
     };
   }
 }

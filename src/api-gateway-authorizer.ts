@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayAuthorizerConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayAuthorizerConfig extends TerraformMetaArguments {
   readonly authorizerCredentials?: string;
   readonly authorizerResultTtlInSeconds?: number;
   readonly authorizerUri?: string;
@@ -20,7 +21,7 @@ export interface ApiGatewayAuthorizerConfig extends cdktf.TerraformMetaArguments
 
 // Resource
 
-export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
+export class ApiGatewayAuthorizer extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -55,144 +56,91 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
   // authorizer_credentials - computed: false, optional: true, required: false
   private _authorizerCredentials?: string;
   public get authorizerCredentials() {
-    return this.getStringAttribute('authorizer_credentials');
+    return this._authorizerCredentials;
   }
-  public set authorizerCredentials(value: string ) {
+  public set authorizerCredentials(value: string | undefined) {
     this._authorizerCredentials = value;
-  }
-  public resetAuthorizerCredentials() {
-    this._authorizerCredentials = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizerCredentialsInput() {
-    return this._authorizerCredentials
   }
 
   // authorizer_result_ttl_in_seconds - computed: false, optional: true, required: false
   private _authorizerResultTtlInSeconds?: number;
   public get authorizerResultTtlInSeconds() {
-    return this.getNumberAttribute('authorizer_result_ttl_in_seconds');
+    return this._authorizerResultTtlInSeconds;
   }
-  public set authorizerResultTtlInSeconds(value: number ) {
+  public set authorizerResultTtlInSeconds(value: number | undefined) {
     this._authorizerResultTtlInSeconds = value;
-  }
-  public resetAuthorizerResultTtlInSeconds() {
-    this._authorizerResultTtlInSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizerResultTtlInSecondsInput() {
-    return this._authorizerResultTtlInSeconds
   }
 
   // authorizer_uri - computed: false, optional: true, required: false
   private _authorizerUri?: string;
   public get authorizerUri() {
-    return this.getStringAttribute('authorizer_uri');
+    return this._authorizerUri;
   }
-  public set authorizerUri(value: string ) {
+  public set authorizerUri(value: string | undefined) {
     this._authorizerUri = value;
-  }
-  public resetAuthorizerUri() {
-    this._authorizerUri = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizerUriInput() {
-    return this._authorizerUri
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // identity_source - computed: false, optional: true, required: false
   private _identitySource?: string;
   public get identitySource() {
-    return this.getStringAttribute('identity_source');
+    return this._identitySource;
   }
-  public set identitySource(value: string ) {
+  public set identitySource(value: string | undefined) {
     this._identitySource = value;
-  }
-  public resetIdentitySource() {
-    this._identitySource = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identitySourceInput() {
-    return this._identitySource
   }
 
   // identity_validation_expression - computed: false, optional: true, required: false
   private _identityValidationExpression?: string;
   public get identityValidationExpression() {
-    return this.getStringAttribute('identity_validation_expression');
+    return this._identityValidationExpression;
   }
-  public set identityValidationExpression(value: string ) {
+  public set identityValidationExpression(value: string | undefined) {
     this._identityValidationExpression = value;
-  }
-  public resetIdentityValidationExpression() {
-    this._identityValidationExpression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identityValidationExpressionInput() {
-    return this._identityValidationExpression
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // provider_arns - computed: false, optional: true, required: false
   private _providerArns?: string[];
   public get providerArns() {
-    return this.getListAttribute('provider_arns');
+    return this._providerArns;
   }
-  public set providerArns(value: string[] ) {
+  public set providerArns(value: string[] | undefined) {
     this._providerArns = value;
-  }
-  public resetProviderArns() {
-    this._providerArns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get providerArnsInput() {
-    return this._providerArns
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this.getStringAttribute('rest_api_id');
+    return this._restApiId;
   }
   public set restApiId(value: string) {
     this._restApiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restApiIdInput() {
-    return this._restApiId
   }
 
   // type - computed: false, optional: true, required: false
   private _type?: string;
   public get type() {
-    return this.getStringAttribute('type');
+    return this._type;
   }
-  public set type(value: string ) {
+  public set type(value: string | undefined) {
     this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type
   }
 
   // =========
@@ -201,15 +149,15 @@ export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorizer_credentials: cdktf.stringToTerraform(this._authorizerCredentials),
-      authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(this._authorizerResultTtlInSeconds),
-      authorizer_uri: cdktf.stringToTerraform(this._authorizerUri),
-      identity_source: cdktf.stringToTerraform(this._identitySource),
-      identity_validation_expression: cdktf.stringToTerraform(this._identityValidationExpression),
-      name: cdktf.stringToTerraform(this._name),
-      provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._providerArns),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      type: cdktf.stringToTerraform(this._type),
+      authorizer_credentials: this._authorizerCredentials,
+      authorizer_result_ttl_in_seconds: this._authorizerResultTtlInSeconds,
+      authorizer_uri: this._authorizerUri,
+      identity_source: this._identitySource,
+      identity_validation_expression: this._identityValidationExpression,
+      name: this._name,
+      provider_arns: this._providerArns,
+      rest_api_id: this._restApiId,
+      type: this._type,
     };
   }
 }

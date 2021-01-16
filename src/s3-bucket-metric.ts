@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface S3BucketMetricConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketMetricConfig extends TerraformMetaArguments {
   readonly bucket: string;
   readonly name: string;
   /** filter block */
@@ -17,18 +18,9 @@ export interface S3BucketMetricFilter {
   readonly tags?: { [key: string]: string };
 }
 
-function s3BucketMetricFilterToTerraform(struct?: S3BucketMetricFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
-  }
-}
-
-
 // Resource
 
-export class S3BucketMetric extends cdktf.TerraformResource {
+export class S3BucketMetric extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,48 +49,37 @@ export class S3BucketMetric extends cdktf.TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this.getStringAttribute('bucket');
+    return this._bucket;
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get bucketInput() {
-    return this._bucket
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: S3BucketMetricFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: S3BucketMetricFilter[] ) {
+  public set filter(value: S3BucketMetricFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -107,9 +88,9 @@ export class S3BucketMetric extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      name: cdktf.stringToTerraform(this._name),
-      filter: cdktf.listMapper(s3BucketMetricFilterToTerraform)(this._filter),
+      bucket: this._bucket,
+      name: this._name,
+      filter: this._filter,
     };
   }
 }

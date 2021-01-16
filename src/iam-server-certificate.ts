@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamServerCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface IamServerCertificateConfig extends TerraformMetaArguments {
   readonly certificateBody: string;
   readonly certificateChain?: string;
   readonly name?: string;
@@ -17,7 +18,7 @@ export interface IamServerCertificateConfig extends cdktf.TerraformMetaArguments
 
 // Resource
 
-export class IamServerCertificate extends cdktf.TerraformResource {
+export class IamServerCertificate extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,103 +48,75 @@ export class IamServerCertificate extends cdktf.TerraformResource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn ?? this.getStringAttribute('arn');
+  }
+  public set arn(value: string | undefined) {
+    this._arn = value;
   }
 
   // certificate_body - computed: false, optional: false, required: true
   private _certificateBody: string;
   public get certificateBody() {
-    return this.getStringAttribute('certificate_body');
+    return this._certificateBody;
   }
   public set certificateBody(value: string) {
     this._certificateBody = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificateBodyInput() {
-    return this._certificateBody
   }
 
   // certificate_chain - computed: false, optional: true, required: false
   private _certificateChain?: string;
   public get certificateChain() {
-    return this.getStringAttribute('certificate_chain');
+    return this._certificateChain;
   }
-  public set certificateChain(value: string ) {
+  public set certificateChain(value: string | undefined) {
     this._certificateChain = value;
-  }
-  public resetCertificateChain() {
-    this._certificateChain = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificateChainInput() {
-    return this._certificateChain
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // path - computed: false, optional: true, required: false
   private _path?: string;
   public get path() {
-    return this.getStringAttribute('path');
+    return this._path;
   }
-  public set path(value: string ) {
+  public set path(value: string | undefined) {
     this._path = value;
-  }
-  public resetPath() {
-    this._path = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pathInput() {
-    return this._path
   }
 
   // private_key - computed: false, optional: false, required: true
   private _privateKey: string;
   public get privateKey() {
-    return this.getStringAttribute('private_key');
+    return this._privateKey;
   }
   public set privateKey(value: string) {
     this._privateKey = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateKeyInput() {
-    return this._privateKey
   }
 
   // =========
@@ -152,12 +125,12 @@ export class IamServerCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_body: cdktf.stringToTerraform(this._certificateBody),
-      certificate_chain: cdktf.stringToTerraform(this._certificateChain),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      path: cdktf.stringToTerraform(this._path),
-      private_key: cdktf.stringToTerraform(this._privateKey),
+      certificate_body: this._certificateBody,
+      certificate_chain: this._certificateChain,
+      name: this._name,
+      name_prefix: this._namePrefix,
+      path: this._path,
+      private_key: this._privateKey,
     };
   }
 }

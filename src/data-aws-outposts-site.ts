@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsSiteConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOutpostsSiteConfig extends TerraformMetaArguments {
   readonly name?: string;
 }
 
 // Resource
 
-export class DataAwsOutpostsSite extends cdktf.TerraformDataSource {
+export class DataAwsOutpostsSite extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,35 +37,32 @@ export class DataAwsOutpostsSite extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: true, optional: false, required: false
+  // account_id - computed: true, optional: false, required: true
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // =========
@@ -73,7 +71,7 @@ export class DataAwsOutpostsSite extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

@@ -2,16 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsInspectorRulesPackagesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsInspectorRulesPackagesConfig extends TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsInspectorRulesPackages extends cdktf.TerraformDataSource {
+export class DataAwsInspectorRulesPackages extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -34,14 +35,18 @@ export class DataAwsInspectorRulesPackages extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arns - computed: true, optional: false, required: false
+  // arns - computed: true, optional: false, required: true
   public get arns() {
     return this.getListAttribute('arns');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========

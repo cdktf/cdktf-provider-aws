@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsInstancesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsInstancesConfig extends TerraformMetaArguments {
   readonly instanceStateNames?: string[];
   readonly instanceTags?: { [key: string]: string };
   /** filter block */
@@ -17,18 +18,9 @@ export interface DataAwsInstancesFilter {
   readonly values: string[];
 }
 
-function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsInstances extends cdktf.TerraformDataSource {
+export class DataAwsInstances extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -55,11 +47,15 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ids - computed: true, optional: false, required: false
+  // ids - computed: true, optional: false, required: true
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -67,41 +63,27 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   // instance_state_names - computed: false, optional: true, required: false
   private _instanceStateNames?: string[];
   public get instanceStateNames() {
-    return this.getListAttribute('instance_state_names');
+    return this._instanceStateNames;
   }
-  public set instanceStateNames(value: string[] ) {
+  public set instanceStateNames(value: string[] | undefined) {
     this._instanceStateNames = value;
-  }
-  public resetInstanceStateNames() {
-    this._instanceStateNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceStateNamesInput() {
-    return this._instanceStateNames
   }
 
   // instance_tags - computed: true, optional: true, required: false
   private _instanceTags?: { [key: string]: string }
-  public get instanceTags(): { [key: string]: string } {
-    return this.interpolationForAttribute('instance_tags') as any; // Getting the computed value is not yet implemented
+  public get instanceTags(): { [key: string]: string } | undefined {
+    return this._instanceTags; // Getting the computed value is not yet implemented
   }
-  public set instanceTags(value: { [key: string]: string }) {
+  public set instanceTags(value: { [key: string]: string } | undefined) {
     this._instanceTags = value;
   }
-  public resetInstanceTags() {
-    this._instanceTags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceTagsInput() {
-    return this._instanceTags
-  }
 
-  // private_ips - computed: true, optional: false, required: false
+  // private_ips - computed: true, optional: false, required: true
   public get privateIps() {
     return this.getListAttribute('private_ips');
   }
 
-  // public_ips - computed: true, optional: false, required: false
+  // public_ips - computed: true, optional: false, required: true
   public get publicIps() {
     return this.getListAttribute('public_ips');
   }
@@ -109,17 +91,10 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsInstancesFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsInstancesFilter[] ) {
+  public set filter(value: DataAwsInstancesFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -128,9 +103,9 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_state_names: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceStateNames),
-      instance_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._instanceTags),
-      filter: cdktf.listMapper(dataAwsInstancesFilterToTerraform)(this._filter),
+      instance_state_names: this._instanceStateNames,
+      instance_tags: this._instanceTags,
+      filter: this._filter,
     };
   }
 }

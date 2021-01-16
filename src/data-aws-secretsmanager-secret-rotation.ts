@@ -2,16 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsSecretsmanagerSecretRotationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSecretsmanagerSecretRotationConfig extends TerraformMetaArguments {
   readonly secretId: string;
 }
-export class DataAwsSecretsmanagerSecretRotationRotationRules extends cdktf.ComplexComputedList {
+export class DataAwsSecretsmanagerSecretRotationRotationRules extends ComplexComputedList {
 
-  // automatically_after_days - computed: true, optional: false, required: false
+  // automatically_after_days - computed: true, optional: false, required: true
   public get automaticallyAfterDays() {
     return this.getNumberAttribute('automatically_after_days');
   }
@@ -19,7 +21,7 @@ export class DataAwsSecretsmanagerSecretRotationRotationRules extends cdktf.Comp
 
 // Resource
 
-export class DataAwsSecretsmanagerSecretRotation extends cdktf.TerraformDataSource {
+export class DataAwsSecretsmanagerSecretRotation extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -44,21 +46,25 @@ export class DataAwsSecretsmanagerSecretRotation extends cdktf.TerraformDataSour
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // rotation_enabled - computed: true, optional: false, required: false
+  // rotation_enabled - computed: true, optional: false, required: true
   public get rotationEnabled() {
     return this.getBooleanAttribute('rotation_enabled');
   }
 
-  // rotation_lambda_arn - computed: true, optional: false, required: false
+  // rotation_lambda_arn - computed: true, optional: false, required: true
   public get rotationLambdaArn() {
     return this.getStringAttribute('rotation_lambda_arn');
   }
 
-  // rotation_rules - computed: true, optional: false, required: false
+  // rotation_rules - computed: true, optional: false, required: true
   public rotationRules(index: string) {
     return new DataAwsSecretsmanagerSecretRotationRotationRules(this, 'rotation_rules', index);
   }
@@ -66,14 +72,10 @@ export class DataAwsSecretsmanagerSecretRotation extends cdktf.TerraformDataSour
   // secret_id - computed: false, optional: false, required: true
   private _secretId: string;
   public get secretId() {
-    return this.getStringAttribute('secret_id');
+    return this._secretId;
   }
   public set secretId(value: string) {
     this._secretId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secretIdInput() {
-    return this._secretId
   }
 
   // =========
@@ -82,7 +84,7 @@ export class DataAwsSecretsmanagerSecretRotation extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      secret_id: cdktf.stringToTerraform(this._secretId),
+      secret_id: this._secretId,
     };
   }
 }

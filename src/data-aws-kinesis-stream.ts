@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsKinesisStreamConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsKinesisStreamConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
+export class DataAwsKinesisStream extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,73 +39,66 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // closed_shards - computed: true, optional: false, required: false
+  // closed_shards - computed: true, optional: false, required: true
   public get closedShards() {
     return this.getListAttribute('closed_shards');
   }
 
-  // creation_timestamp - computed: true, optional: false, required: false
+  // creation_timestamp - computed: true, optional: false, required: true
   public get creationTimestamp() {
     return this.getNumberAttribute('creation_timestamp');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // open_shards - computed: true, optional: false, required: false
+  // open_shards - computed: true, optional: false, required: true
   public get openShards() {
     return this.getListAttribute('open_shards');
   }
 
-  // retention_period - computed: true, optional: false, required: false
+  // retention_period - computed: true, optional: false, required: true
   public get retentionPeriod() {
     return this.getNumberAttribute('retention_period');
   }
 
-  // shard_level_metrics - computed: true, optional: false, required: false
+  // shard_level_metrics - computed: true, optional: false, required: true
   public get shardLevelMetrics() {
     return this.getListAttribute('shard_level_metrics');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -113,8 +107,8 @@ export class DataAwsKinesisStream extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      name: this._name,
+      tags: this._tags,
     };
   }
 }

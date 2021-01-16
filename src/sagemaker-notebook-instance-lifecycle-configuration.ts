@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SagemakerNotebookInstanceLifecycleConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerNotebookInstanceLifecycleConfigurationConfig extends TerraformMetaArguments {
   readonly name?: string;
   readonly onCreate?: string;
   readonly onStart?: string;
@@ -14,7 +15,7 @@ export interface SagemakerNotebookInstanceLifecycleConfigurationConfig extends c
 
 // Resource
 
-export class SagemakerNotebookInstanceLifecycleConfiguration extends cdktf.TerraformResource {
+export class SagemakerNotebookInstanceLifecycleConfiguration extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,62 +41,45 @@ export class SagemakerNotebookInstanceLifecycleConfiguration extends cdktf.Terra
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // on_create - computed: false, optional: true, required: false
   private _onCreate?: string;
   public get onCreate() {
-    return this.getStringAttribute('on_create');
+    return this._onCreate;
   }
-  public set onCreate(value: string ) {
+  public set onCreate(value: string | undefined) {
     this._onCreate = value;
-  }
-  public resetOnCreate() {
-    this._onCreate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get onCreateInput() {
-    return this._onCreate
   }
 
   // on_start - computed: false, optional: true, required: false
   private _onStart?: string;
   public get onStart() {
-    return this.getStringAttribute('on_start');
+    return this._onStart;
   }
-  public set onStart(value: string ) {
+  public set onStart(value: string | undefined) {
     this._onStart = value;
-  }
-  public resetOnStart() {
-    this._onStart = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get onStartInput() {
-    return this._onStart
   }
 
   // =========
@@ -104,9 +88,9 @@ export class SagemakerNotebookInstanceLifecycleConfiguration extends cdktf.Terra
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      on_create: cdktf.stringToTerraform(this._onCreate),
-      on_start: cdktf.stringToTerraform(this._onStart),
+      name: this._name,
+      on_create: this._onCreate,
+      on_start: this._onStart,
     };
   }
 }

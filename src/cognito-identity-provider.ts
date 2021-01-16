@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoIdentityProviderConfig extends TerraformMetaArguments {
   readonly attributeMapping?: { [key: string]: string };
   readonly idpIdentifiers?: string[];
   readonly providerDetails: { [key: string]: string };
@@ -17,7 +18,7 @@ export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArgume
 
 // Resource
 
-export class CognitoIdentityProvider extends cdktf.TerraformResource {
+export class CognitoIdentityProvider extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -48,91 +49,65 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
 
   // attribute_mapping - computed: true, optional: true, required: false
   private _attributeMapping?: { [key: string]: string }
-  public get attributeMapping(): { [key: string]: string } {
-    return this.interpolationForAttribute('attribute_mapping') as any; // Getting the computed value is not yet implemented
+  public get attributeMapping(): { [key: string]: string } | undefined {
+    return this._attributeMapping; // Getting the computed value is not yet implemented
   }
-  public set attributeMapping(value: { [key: string]: string }) {
+  public set attributeMapping(value: { [key: string]: string } | undefined) {
     this._attributeMapping = value;
-  }
-  public resetAttributeMapping() {
-    this._attributeMapping = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attributeMappingInput() {
-    return this._attributeMapping
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // idp_identifiers - computed: false, optional: true, required: false
   private _idpIdentifiers?: string[];
   public get idpIdentifiers() {
-    return this.getListAttribute('idp_identifiers');
+    return this._idpIdentifiers;
   }
-  public set idpIdentifiers(value: string[] ) {
+  public set idpIdentifiers(value: string[] | undefined) {
     this._idpIdentifiers = value;
-  }
-  public resetIdpIdentifiers() {
-    this._idpIdentifiers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idpIdentifiersInput() {
-    return this._idpIdentifiers
   }
 
   // provider_details - computed: false, optional: false, required: true
   private _providerDetails: { [key: string]: string };
   public get providerDetails() {
-    return this.interpolationForAttribute('provider_details') as any;
+    return this._providerDetails;
   }
   public set providerDetails(value: { [key: string]: string }) {
     this._providerDetails = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get providerDetailsInput() {
-    return this._providerDetails
   }
 
   // provider_name - computed: false, optional: false, required: true
   private _providerName: string;
   public get providerName() {
-    return this.getStringAttribute('provider_name');
+    return this._providerName;
   }
   public set providerName(value: string) {
     this._providerName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get providerNameInput() {
-    return this._providerName
   }
 
   // provider_type - computed: false, optional: false, required: true
   private _providerType: string;
   public get providerType() {
-    return this.getStringAttribute('provider_type');
+    return this._providerType;
   }
   public set providerType(value: string) {
     this._providerType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get providerTypeInput() {
-    return this._providerType
   }
 
   // user_pool_id - computed: false, optional: false, required: true
   private _userPoolId: string;
   public get userPoolId() {
-    return this.getStringAttribute('user_pool_id');
+    return this._userPoolId;
   }
   public set userPoolId(value: string) {
     this._userPoolId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userPoolIdInput() {
-    return this._userPoolId
   }
 
   // =========
@@ -141,12 +116,12 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attribute_mapping: cdktf.hashMapper(cdktf.anyToTerraform)(this._attributeMapping),
-      idp_identifiers: cdktf.listMapper(cdktf.stringToTerraform)(this._idpIdentifiers),
-      provider_details: cdktf.hashMapper(cdktf.anyToTerraform)(this._providerDetails),
-      provider_name: cdktf.stringToTerraform(this._providerName),
-      provider_type: cdktf.stringToTerraform(this._providerType),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
+      attribute_mapping: this._attributeMapping,
+      idp_identifiers: this._idpIdentifiers,
+      provider_details: this._providerDetails,
+      provider_name: this._providerName,
+      provider_type: this._providerType,
+      user_pool_id: this._userPoolId,
     };
   }
 }

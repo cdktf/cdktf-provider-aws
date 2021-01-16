@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface MediaConvertQueueConfig extends cdktf.TerraformMetaArguments {
+export interface MediaConvertQueueConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly pricingPlan?: string;
@@ -21,19 +22,9 @@ export interface MediaConvertQueueReservationPlanSettings {
   readonly reservedSlots: number;
 }
 
-function mediaConvertQueueReservationPlanSettingsToTerraform(struct?: MediaConvertQueueReservationPlanSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    commitment: cdktf.stringToTerraform(struct!.commitment),
-    renewal_type: cdktf.stringToTerraform(struct!.renewalType),
-    reserved_slots: cdktf.numberToTerraform(struct!.reservedSlots),
-  }
-}
-
-
 // Resource
 
-export class MediaConvertQueue extends cdktf.TerraformResource {
+export class MediaConvertQueue extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -62,7 +53,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -70,99 +61,64 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // pricing_plan - computed: false, optional: true, required: false
   private _pricingPlan?: string;
   public get pricingPlan() {
-    return this.getStringAttribute('pricing_plan');
+    return this._pricingPlan;
   }
-  public set pricingPlan(value: string ) {
+  public set pricingPlan(value: string | undefined) {
     this._pricingPlan = value;
-  }
-  public resetPricingPlan() {
-    this._pricingPlan = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pricingPlanInput() {
-    return this._pricingPlan
   }
 
   // status - computed: false, optional: true, required: false
   private _status?: string;
   public get status() {
-    return this.getStringAttribute('status');
+    return this._status;
   }
-  public set status(value: string ) {
+  public set status(value: string | undefined) {
     this._status = value;
-  }
-  public resetStatus() {
-    this._status = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // reservation_plan_settings - computed: false, optional: true, required: false
   private _reservationPlanSettings?: MediaConvertQueueReservationPlanSettings[];
   public get reservationPlanSettings() {
-    return this.interpolationForAttribute('reservation_plan_settings') as any;
+    return this._reservationPlanSettings;
   }
-  public set reservationPlanSettings(value: MediaConvertQueueReservationPlanSettings[] ) {
+  public set reservationPlanSettings(value: MediaConvertQueueReservationPlanSettings[] | undefined) {
     this._reservationPlanSettings = value;
-  }
-  public resetReservationPlanSettings() {
-    this._reservationPlanSettings = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reservationPlanSettingsInput() {
-    return this._reservationPlanSettings
   }
 
   // =========
@@ -171,12 +127,12 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      pricing_plan: cdktf.stringToTerraform(this._pricingPlan),
-      status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      reservation_plan_settings: cdktf.listMapper(mediaConvertQueueReservationPlanSettingsToTerraform)(this._reservationPlanSettings),
+      description: this._description,
+      name: this._name,
+      pricing_plan: this._pricingPlan,
+      status: this._status,
+      tags: this._tags,
+      reservation_plan_settings: this._reservationPlanSettings,
     };
   }
 }

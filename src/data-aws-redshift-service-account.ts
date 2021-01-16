@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRedshiftServiceAccountConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRedshiftServiceAccountConfig extends TerraformMetaArguments {
   readonly region?: string;
 }
 
 // Resource
 
-export class DataAwsRedshiftServiceAccount extends cdktf.TerraformDataSource {
+export class DataAwsRedshiftServiceAccount extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,30 +37,27 @@ export class DataAwsRedshiftServiceAccount extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // region - computed: false, optional: true, required: false
   private _region?: string;
   public get region() {
-    return this.getStringAttribute('region');
+    return this._region;
   }
-  public set region(value: string ) {
+  public set region(value: string | undefined) {
     this._region = value;
-  }
-  public resetRegion() {
-    this._region = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionInput() {
-    return this._region
   }
 
   // =========
@@ -68,7 +66,7 @@ export class DataAwsRedshiftServiceAccount extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: cdktf.stringToTerraform(this._region),
+      region: this._region,
     };
   }
 }

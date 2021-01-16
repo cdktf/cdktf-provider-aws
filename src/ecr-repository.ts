@@ -2,45 +2,36 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EcrRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface EcrRepositoryConfig extends TerraformMetaArguments {
   readonly imageTagMutability?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  /** encryption_configuration block */
+  readonly encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[];
   /** image_scanning_configuration block */
   readonly imageScanningConfiguration?: EcrRepositoryImageScanningConfiguration[];
   /** timeouts block */
   readonly timeouts?: EcrRepositoryTimeouts;
 }
+export interface EcrRepositoryEncryptionConfiguration {
+  readonly encryptionType?: string;
+  readonly kmsKey?: string;
+}
 export interface EcrRepositoryImageScanningConfiguration {
   readonly scanOnPush: boolean;
 }
-
-function ecrRepositoryImageScanningConfigurationToTerraform(struct?: EcrRepositoryImageScanningConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    scan_on_push: cdktf.booleanToTerraform(struct!.scanOnPush),
-  }
-}
-
 export interface EcrRepositoryTimeouts {
   readonly delete?: string;
 }
 
-function ecrRepositoryTimeoutsToTerraform(struct?: EcrRepositoryTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
-
 // Resource
 
-export class EcrRepository extends cdktf.TerraformResource {
+export class EcrRepository extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -60,6 +51,7 @@ export class EcrRepository extends cdktf.TerraformResource {
     this._imageTagMutability = config.imageTagMutability;
     this._name = config.name;
     this._tags = config.tags;
+    this._encryptionConfiguration = config.encryptionConfiguration;
     this._imageScanningConfiguration = config.imageScanningConfiguration;
     this._timeouts = config.timeouts;
   }
@@ -68,51 +60,44 @@ export class EcrRepository extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // image_tag_mutability - computed: false, optional: true, required: false
   private _imageTagMutability?: string;
   public get imageTagMutability() {
-    return this.getStringAttribute('image_tag_mutability');
+    return this._imageTagMutability;
   }
-  public set imageTagMutability(value: string ) {
+  public set imageTagMutability(value: string | undefined) {
     this._imageTagMutability = value;
-  }
-  public resetImageTagMutability() {
-    this._imageTagMutability = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get imageTagMutabilityInput() {
-    return this._imageTagMutability
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // registry_id - computed: true, optional: false, required: false
+  // registry_id - computed: true, optional: false, required: true
   public get registryId() {
     return this.getStringAttribute('registry_id');
   }
 
-  // repository_url - computed: true, optional: false, required: false
+  // repository_url - computed: true, optional: false, required: true
   public get repositoryUrl() {
     return this.getStringAttribute('repository_url');
   }
@@ -120,49 +105,37 @@ export class EcrRepository extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
+
+  // encryption_configuration - computed: false, optional: true, required: false
+  private _encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[];
+  public get encryptionConfiguration() {
+    return this._encryptionConfiguration;
   }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
+  public set encryptionConfiguration(value: EcrRepositoryEncryptionConfiguration[] | undefined) {
+    this._encryptionConfiguration = value;
   }
 
   // image_scanning_configuration - computed: false, optional: true, required: false
   private _imageScanningConfiguration?: EcrRepositoryImageScanningConfiguration[];
   public get imageScanningConfiguration() {
-    return this.interpolationForAttribute('image_scanning_configuration') as any;
+    return this._imageScanningConfiguration;
   }
-  public set imageScanningConfiguration(value: EcrRepositoryImageScanningConfiguration[] ) {
+  public set imageScanningConfiguration(value: EcrRepositoryImageScanningConfiguration[] | undefined) {
     this._imageScanningConfiguration = value;
-  }
-  public resetImageScanningConfiguration() {
-    this._imageScanningConfiguration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get imageScanningConfigurationInput() {
-    return this._imageScanningConfiguration
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EcrRepositoryTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: EcrRepositoryTimeouts ) {
+  public set timeouts(value: EcrRepositoryTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -171,11 +144,12 @@ export class EcrRepository extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      image_tag_mutability: cdktf.stringToTerraform(this._imageTagMutability),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      image_scanning_configuration: cdktf.listMapper(ecrRepositoryImageScanningConfigurationToTerraform)(this._imageScanningConfiguration),
-      timeouts: ecrRepositoryTimeoutsToTerraform(this._timeouts),
+      image_tag_mutability: this._imageTagMutability,
+      name: this._name,
+      tags: this._tags,
+      encryption_configuration: this._encryptionConfiguration,
+      image_scanning_configuration: this._imageScanningConfiguration,
+      timeouts: this._timeouts,
     };
   }
 }

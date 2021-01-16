@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments {
+export interface SecretsmanagerSecretConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly kmsKeyId?: string;
   readonly name?: string;
@@ -22,17 +23,9 @@ export interface SecretsmanagerSecretRotationRules {
   readonly automaticallyAfterDays: number;
 }
 
-function secretsmanagerSecretRotationRulesToTerraform(struct?: SecretsmanagerSecretRotationRules): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    automatically_after_days: cdktf.numberToTerraform(struct!.automaticallyAfterDays),
-  }
-}
-
-
 // Resource
 
-export class SecretsmanagerSecret extends cdktf.TerraformResource {
+export class SecretsmanagerSecret extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -64,7 +57,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -72,105 +65,67 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this.getStringAttribute('kms_key_id');
+    return this._kmsKeyId;
   }
-  public set kmsKeyId(value: string ) {
+  public set kmsKeyId(value: string | undefined) {
     this._kmsKeyId = value;
-  }
-  public resetKmsKeyId() {
-    this._kmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyIdInput() {
-    return this._kmsKeyId
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix ?? this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
   }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
-  }
 
-  // policy - computed: false, optional: true, required: false
+  // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy ?? this.getStringAttribute('policy');
   }
-  public set policy(value: string ) {
+  public set policy(value: string | undefined) {
     this._policy = value;
-  }
-  public resetPolicy() {
-    this._policy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // recovery_window_in_days - computed: false, optional: true, required: false
   private _recoveryWindowInDays?: number;
   public get recoveryWindowInDays() {
-    return this.getNumberAttribute('recovery_window_in_days');
+    return this._recoveryWindowInDays;
   }
-  public set recoveryWindowInDays(value: number ) {
+  public set recoveryWindowInDays(value: number | undefined) {
     this._recoveryWindowInDays = value;
   }
-  public resetRecoveryWindowInDays() {
-    this._recoveryWindowInDays = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get recoveryWindowInDaysInput() {
-    return this._recoveryWindowInDays
-  }
 
-  // rotation_enabled - computed: true, optional: false, required: false
+  // rotation_enabled - computed: true, optional: false, required: true
   public get rotationEnabled() {
     return this.getBooleanAttribute('rotation_enabled');
   }
@@ -178,49 +133,28 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   // rotation_lambda_arn - computed: true, optional: true, required: false
   private _rotationLambdaArn?: string;
   public get rotationLambdaArn() {
-    return this.getStringAttribute('rotation_lambda_arn');
+    return this._rotationLambdaArn ?? this.getStringAttribute('rotation_lambda_arn');
   }
-  public set rotationLambdaArn(value: string) {
+  public set rotationLambdaArn(value: string | undefined) {
     this._rotationLambdaArn = value;
-  }
-  public resetRotationLambdaArn() {
-    this._rotationLambdaArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rotationLambdaArnInput() {
-    return this._rotationLambdaArn
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // rotation_rules - computed: false, optional: true, required: false
   private _rotationRules?: SecretsmanagerSecretRotationRules[];
   public get rotationRules() {
-    return this.interpolationForAttribute('rotation_rules') as any;
+    return this._rotationRules;
   }
-  public set rotationRules(value: SecretsmanagerSecretRotationRules[] ) {
+  public set rotationRules(value: SecretsmanagerSecretRotationRules[] | undefined) {
     this._rotationRules = value;
-  }
-  public resetRotationRules() {
-    this._rotationRules = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rotationRulesInput() {
-    return this._rotationRules
   }
 
   // =========
@@ -229,15 +163,15 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      policy: cdktf.stringToTerraform(this._policy),
-      recovery_window_in_days: cdktf.numberToTerraform(this._recoveryWindowInDays),
-      rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      rotation_rules: cdktf.listMapper(secretsmanagerSecretRotationRulesToTerraform)(this._rotationRules),
+      description: this._description,
+      kms_key_id: this._kmsKeyId,
+      name: this._name,
+      name_prefix: this._namePrefix,
+      policy: this._policy,
+      recovery_window_in_days: this._recoveryWindowInDays,
+      rotation_lambda_arn: this._rotationLambdaArn,
+      tags: this._tags,
+      rotation_rules: this._rotationRules,
     };
   }
 }

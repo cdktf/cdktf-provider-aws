@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyIpsetConfig extends cdktf.TerraformMetaArguments {
+export interface GuarddutyIpsetConfig extends TerraformMetaArguments {
   readonly activate: boolean;
   readonly detectorId: string;
   readonly format: string;
@@ -17,7 +18,7 @@ export interface GuarddutyIpsetConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class GuarddutyIpset extends cdktf.TerraformResource {
+export class GuarddutyIpset extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,17 +50,13 @@ export class GuarddutyIpset extends cdktf.TerraformResource {
   // activate - computed: false, optional: false, required: true
   private _activate: boolean;
   public get activate() {
-    return this.getBooleanAttribute('activate');
+    return this._activate;
   }
   public set activate(value: boolean) {
     this._activate = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get activateInput() {
-    return this._activate
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -67,74 +64,55 @@ export class GuarddutyIpset extends cdktf.TerraformResource {
   // detector_id - computed: false, optional: false, required: true
   private _detectorId: string;
   public get detectorId() {
-    return this.getStringAttribute('detector_id');
+    return this._detectorId;
   }
   public set detectorId(value: string) {
     this._detectorId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get detectorIdInput() {
-    return this._detectorId
   }
 
   // format - computed: false, optional: false, required: true
   private _format: string;
   public get format() {
-    return this.getStringAttribute('format');
+    return this._format;
   }
   public set format(value: string) {
     this._format = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get formatInput() {
-    return this._format
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // location - computed: false, optional: false, required: true
   private _location: string;
   public get location() {
-    return this.getStringAttribute('location');
+    return this._location;
   }
   public set location(value: string) {
     this._location = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get locationInput() {
-    return this._location
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -143,12 +121,12 @@ export class GuarddutyIpset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activate: cdktf.booleanToTerraform(this._activate),
-      detector_id: cdktf.stringToTerraform(this._detectorId),
-      format: cdktf.stringToTerraform(this._format),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      activate: this._activate,
+      detector_id: this._detectorId,
+      format: this._format,
+      location: this._location,
+      name: this._name,
+      tags: this._tags,
     };
   }
 }

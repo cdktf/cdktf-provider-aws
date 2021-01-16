@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments {
+export interface SsmMaintenanceWindowConfig extends TerraformMetaArguments {
   readonly allowUnassociatedTargets?: boolean;
   readonly cutoff: number;
   readonly description?: string;
@@ -15,6 +16,7 @@ export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments
   readonly endDate?: string;
   readonly name: string;
   readonly schedule: string;
+  readonly scheduleOffset?: number;
   readonly scheduleTimezone?: string;
   readonly startDate?: string;
   readonly tags?: { [key: string]: string };
@@ -22,7 +24,7 @@ export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments
 
 // Resource
 
-export class SsmMaintenanceWindow extends cdktf.TerraformResource {
+export class SsmMaintenanceWindow extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,6 +49,7 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
     this._endDate = config.endDate;
     this._name = config.name;
     this._schedule = config.schedule;
+    this._scheduleOffset = config.scheduleOffset;
     this._scheduleTimezone = config.scheduleTimezone;
     this._startDate = config.startDate;
     this._tags = config.tags;
@@ -59,170 +62,118 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   // allow_unassociated_targets - computed: false, optional: true, required: false
   private _allowUnassociatedTargets?: boolean;
   public get allowUnassociatedTargets() {
-    return this.getBooleanAttribute('allow_unassociated_targets');
+    return this._allowUnassociatedTargets;
   }
-  public set allowUnassociatedTargets(value: boolean ) {
+  public set allowUnassociatedTargets(value: boolean | undefined) {
     this._allowUnassociatedTargets = value;
-  }
-  public resetAllowUnassociatedTargets() {
-    this._allowUnassociatedTargets = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowUnassociatedTargetsInput() {
-    return this._allowUnassociatedTargets
   }
 
   // cutoff - computed: false, optional: false, required: true
   private _cutoff: number;
   public get cutoff() {
-    return this.getNumberAttribute('cutoff');
+    return this._cutoff;
   }
   public set cutoff(value: number) {
     this._cutoff = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cutoffInput() {
-    return this._cutoff
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // duration - computed: false, optional: false, required: true
   private _duration: number;
   public get duration() {
-    return this.getNumberAttribute('duration');
+    return this._duration;
   }
   public set duration(value: number) {
     this._duration = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get durationInput() {
-    return this._duration
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this._enabled;
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | undefined) {
     this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled
   }
 
   // end_date - computed: false, optional: true, required: false
   private _endDate?: string;
   public get endDate() {
-    return this.getStringAttribute('end_date');
+    return this._endDate;
   }
-  public set endDate(value: string ) {
+  public set endDate(value: string | undefined) {
     this._endDate = value;
-  }
-  public resetEndDate() {
-    this._endDate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get endDateInput() {
-    return this._endDate
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // schedule - computed: false, optional: false, required: true
   private _schedule: string;
   public get schedule() {
-    return this.getStringAttribute('schedule');
+    return this._schedule;
   }
   public set schedule(value: string) {
     this._schedule = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get scheduleInput() {
-    return this._schedule
+
+  // schedule_offset - computed: false, optional: true, required: false
+  private _scheduleOffset?: number;
+  public get scheduleOffset() {
+    return this._scheduleOffset;
+  }
+  public set scheduleOffset(value: number | undefined) {
+    this._scheduleOffset = value;
   }
 
   // schedule_timezone - computed: false, optional: true, required: false
   private _scheduleTimezone?: string;
   public get scheduleTimezone() {
-    return this.getStringAttribute('schedule_timezone');
+    return this._scheduleTimezone;
   }
-  public set scheduleTimezone(value: string ) {
+  public set scheduleTimezone(value: string | undefined) {
     this._scheduleTimezone = value;
-  }
-  public resetScheduleTimezone() {
-    this._scheduleTimezone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scheduleTimezoneInput() {
-    return this._scheduleTimezone
   }
 
   // start_date - computed: false, optional: true, required: false
   private _startDate?: string;
   public get startDate() {
-    return this.getStringAttribute('start_date');
+    return this._startDate;
   }
-  public set startDate(value: string ) {
+  public set startDate(value: string | undefined) {
     this._startDate = value;
-  }
-  public resetStartDate() {
-    this._startDate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get startDateInput() {
-    return this._startDate
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -231,17 +182,18 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_unassociated_targets: cdktf.booleanToTerraform(this._allowUnassociatedTargets),
-      cutoff: cdktf.numberToTerraform(this._cutoff),
-      description: cdktf.stringToTerraform(this._description),
-      duration: cdktf.numberToTerraform(this._duration),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      end_date: cdktf.stringToTerraform(this._endDate),
-      name: cdktf.stringToTerraform(this._name),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      schedule_timezone: cdktf.stringToTerraform(this._scheduleTimezone),
-      start_date: cdktf.stringToTerraform(this._startDate),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      allow_unassociated_targets: this._allowUnassociatedTargets,
+      cutoff: this._cutoff,
+      description: this._description,
+      duration: this._duration,
+      enabled: this._enabled,
+      end_date: this._endDate,
+      name: this._name,
+      schedule: this._schedule,
+      schedule_offset: this._scheduleOffset,
+      schedule_timezone: this._scheduleTimezone,
+      start_date: this._startDate,
+      tags: this._tags,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AutoscalingNotificationConfig extends cdktf.TerraformMetaArguments {
+export interface AutoscalingNotificationConfig extends TerraformMetaArguments {
   readonly groupNames: string[];
   readonly notifications: string[];
   readonly topicArn: string;
@@ -14,7 +15,7 @@ export interface AutoscalingNotificationConfig extends cdktf.TerraformMetaArgume
 
 // Resource
 
-export class AutoscalingNotification extends cdktf.TerraformResource {
+export class AutoscalingNotification extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,45 +44,37 @@ export class AutoscalingNotification extends cdktf.TerraformResource {
   // group_names - computed: false, optional: false, required: true
   private _groupNames: string[];
   public get groupNames() {
-    return this.getListAttribute('group_names');
+    return this._groupNames;
   }
   public set groupNames(value: string[]) {
     this._groupNames = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get groupNamesInput() {
-    return this._groupNames
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // notifications - computed: false, optional: false, required: true
   private _notifications: string[];
   public get notifications() {
-    return this.getListAttribute('notifications');
+    return this._notifications;
   }
   public set notifications(value: string[]) {
     this._notifications = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get notificationsInput() {
-    return this._notifications
   }
 
   // topic_arn - computed: false, optional: false, required: true
   private _topicArn: string;
   public get topicArn() {
-    return this.getStringAttribute('topic_arn');
+    return this._topicArn;
   }
   public set topicArn(value: string) {
     this._topicArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get topicArnInput() {
-    return this._topicArn
   }
 
   // =========
@@ -90,9 +83,9 @@ export class AutoscalingNotification extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._groupNames),
-      notifications: cdktf.listMapper(cdktf.stringToTerraform)(this._notifications),
-      topic_arn: cdktf.stringToTerraform(this._topicArn),
+      group_names: this._groupNames,
+      notifications: this._notifications,
+      topic_arn: this._topicArn,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface KmsKeyConfig extends cdktf.TerraformMetaArguments {
+export interface KmsKeyConfig extends TerraformMetaArguments {
   readonly customerMasterKeySpec?: string;
   readonly deletionWindowInDays?: number;
   readonly description?: string;
@@ -19,7 +20,7 @@ export interface KmsKeyConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class KmsKey extends cdktf.TerraformResource {
+export class KmsKey extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,7 +51,7 @@ export class KmsKey extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,89 +59,58 @@ export class KmsKey extends cdktf.TerraformResource {
   // customer_master_key_spec - computed: false, optional: true, required: false
   private _customerMasterKeySpec?: string;
   public get customerMasterKeySpec() {
-    return this.getStringAttribute('customer_master_key_spec');
+    return this._customerMasterKeySpec;
   }
-  public set customerMasterKeySpec(value: string ) {
+  public set customerMasterKeySpec(value: string | undefined) {
     this._customerMasterKeySpec = value;
-  }
-  public resetCustomerMasterKeySpec() {
-    this._customerMasterKeySpec = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customerMasterKeySpecInput() {
-    return this._customerMasterKeySpec
   }
 
   // deletion_window_in_days - computed: false, optional: true, required: false
   private _deletionWindowInDays?: number;
   public get deletionWindowInDays() {
-    return this.getNumberAttribute('deletion_window_in_days');
+    return this._deletionWindowInDays;
   }
-  public set deletionWindowInDays(value: number ) {
+  public set deletionWindowInDays(value: number | undefined) {
     this._deletionWindowInDays = value;
-  }
-  public resetDeletionWindowInDays() {
-    this._deletionWindowInDays = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deletionWindowInDaysInput() {
-    return this._deletionWindowInDays
   }
 
   // description - computed: true, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description ?? this.getStringAttribute('description');
   }
-  public set description(value: string) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // enable_key_rotation - computed: false, optional: true, required: false
   private _enableKeyRotation?: boolean;
   public get enableKeyRotation() {
-    return this.getBooleanAttribute('enable_key_rotation');
+    return this._enableKeyRotation;
   }
-  public set enableKeyRotation(value: boolean ) {
+  public set enableKeyRotation(value: boolean | undefined) {
     this._enableKeyRotation = value;
-  }
-  public resetEnableKeyRotation() {
-    this._enableKeyRotation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableKeyRotationInput() {
-    return this._enableKeyRotation
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // is_enabled - computed: false, optional: true, required: false
   private _isEnabled?: boolean;
   public get isEnabled() {
-    return this.getBooleanAttribute('is_enabled');
+    return this._isEnabled;
   }
-  public set isEnabled(value: boolean ) {
+  public set isEnabled(value: boolean | undefined) {
     this._isEnabled = value;
   }
-  public resetIsEnabled() {
-    this._isEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isEnabledInput() {
-    return this._isEnabled
-  }
 
-  // key_id - computed: true, optional: false, required: false
+  // key_id - computed: true, optional: false, required: true
   public get keyId() {
     return this.getStringAttribute('key_id');
   }
@@ -148,49 +118,28 @@ export class KmsKey extends cdktf.TerraformResource {
   // key_usage - computed: false, optional: true, required: false
   private _keyUsage?: string;
   public get keyUsage() {
-    return this.getStringAttribute('key_usage');
+    return this._keyUsage;
   }
-  public set keyUsage(value: string ) {
+  public set keyUsage(value: string | undefined) {
     this._keyUsage = value;
-  }
-  public resetKeyUsage() {
-    this._keyUsage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyUsageInput() {
-    return this._keyUsage
   }
 
   // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy ?? this.getStringAttribute('policy');
   }
-  public set policy(value: string) {
+  public set policy(value: string | undefined) {
     this._policy = value;
-  }
-  public resetPolicy() {
-    this._policy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -199,14 +148,14 @@ export class KmsKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      customer_master_key_spec: cdktf.stringToTerraform(this._customerMasterKeySpec),
-      deletion_window_in_days: cdktf.numberToTerraform(this._deletionWindowInDays),
-      description: cdktf.stringToTerraform(this._description),
-      enable_key_rotation: cdktf.booleanToTerraform(this._enableKeyRotation),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      key_usage: cdktf.stringToTerraform(this._keyUsage),
-      policy: cdktf.stringToTerraform(this._policy),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      customer_master_key_spec: this._customerMasterKeySpec,
+      deletion_window_in_days: this._deletionWindowInDays,
+      description: this._description,
+      enable_key_rotation: this._enableKeyRotation,
+      is_enabled: this._isEnabled,
+      key_usage: this._keyUsage,
+      policy: this._policy,
+      tags: this._tags,
     };
   }
 }

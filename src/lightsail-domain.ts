@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LightsailDomainConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailDomainConfig extends TerraformMetaArguments {
   readonly domainName: string;
 }
 
 // Resource
 
-export class LightsailDomain extends cdktf.TerraformResource {
+export class LightsailDomain extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -36,7 +37,7 @@ export class LightsailDomain extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -44,19 +45,19 @@ export class LightsailDomain extends cdktf.TerraformResource {
   // domain_name - computed: false, optional: false, required: true
   private _domainName: string;
   public get domainName() {
-    return this.getStringAttribute('domain_name');
+    return this._domainName;
   }
   public set domainName(value: string) {
     this._domainName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get domainNameInput() {
-    return this._domainName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========
@@ -65,7 +66,7 @@ export class LightsailDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
+      domain_name: this._domainName,
     };
   }
 }

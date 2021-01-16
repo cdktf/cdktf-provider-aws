@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
+export interface AmiCopyConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly encrypted?: boolean;
   readonly kmsKeyId?: string;
@@ -23,41 +24,17 @@ export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
 }
 export interface AmiCopyEbsBlockDevice {
 }
-
-function amiCopyEbsBlockDeviceToTerraform(struct?: AmiCopyEbsBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-  }
-}
-
 export interface AmiCopyEphemeralBlockDevice {
 }
-
-function amiCopyEphemeralBlockDeviceToTerraform(struct?: AmiCopyEphemeralBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-  }
-}
-
 export interface AmiCopyTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
-function amiCopyTimeoutsToTerraform(struct?: AmiCopyTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class AmiCopy extends cdktf.TerraformResource {
+export class AmiCopy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -90,12 +67,12 @@ export class AmiCopy extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // architecture - computed: true, optional: false, required: false
+  // architecture - computed: true, optional: false, required: true
   public get architecture() {
     return this.getStringAttribute('architecture');
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -103,20 +80,13 @@ export class AmiCopy extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
-  }
 
-  // ena_support - computed: true, optional: false, required: false
+  // ena_support - computed: true, optional: false, required: true
   public get enaSupport() {
     return this.getBooleanAttribute('ena_support');
   }
@@ -124,30 +94,27 @@ export class AmiCopy extends cdktf.TerraformResource {
   // encrypted - computed: false, optional: true, required: false
   private _encrypted?: boolean;
   public get encrypted() {
-    return this.getBooleanAttribute('encrypted');
+    return this._encrypted;
   }
-  public set encrypted(value: boolean ) {
+  public set encrypted(value: boolean | undefined) {
     this._encrypted = value;
-  }
-  public resetEncrypted() {
-    this._encrypted = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get encryptedInput() {
-    return this._encrypted
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // image_location - computed: true, optional: false, required: false
+  // image_location - computed: true, optional: false, required: true
   public get imageLocation() {
     return this.getStringAttribute('image_location');
   }
 
-  // kernel_id - computed: true, optional: false, required: false
+  // kernel_id - computed: true, optional: false, required: true
   public get kernelId() {
     return this.getStringAttribute('kernel_id');
   }
@@ -155,20 +122,13 @@ export class AmiCopy extends cdktf.TerraformResource {
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this.getStringAttribute('kms_key_id');
+    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string) {
+  public set kmsKeyId(value: string | undefined) {
     this._kmsKeyId = value;
   }
-  public resetKmsKeyId() {
-    this._kmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyIdInput() {
-    return this._kmsKeyId
-  }
 
-  // manage_ebs_snapshots - computed: true, optional: false, required: false
+  // manage_ebs_snapshots - computed: true, optional: false, required: true
   public get manageEbsSnapshots() {
     return this.getBooleanAttribute('manage_ebs_snapshots');
   }
@@ -176,27 +136,23 @@ export class AmiCopy extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // ramdisk_id - computed: true, optional: false, required: false
+  // ramdisk_id - computed: true, optional: false, required: true
   public get ramdiskId() {
     return this.getStringAttribute('ramdisk_id');
   }
 
-  // root_device_name - computed: true, optional: false, required: false
+  // root_device_name - computed: true, optional: false, required: true
   public get rootDeviceName() {
     return this.getStringAttribute('root_device_name');
   }
 
-  // root_snapshot_id - computed: true, optional: false, required: false
+  // root_snapshot_id - computed: true, optional: false, required: true
   public get rootSnapshotId() {
     return this.getStringAttribute('root_snapshot_id');
   }
@@ -204,30 +160,22 @@ export class AmiCopy extends cdktf.TerraformResource {
   // source_ami_id - computed: false, optional: false, required: true
   private _sourceAmiId: string;
   public get sourceAmiId() {
-    return this.getStringAttribute('source_ami_id');
+    return this._sourceAmiId;
   }
   public set sourceAmiId(value: string) {
     this._sourceAmiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceAmiIdInput() {
-    return this._sourceAmiId
   }
 
   // source_ami_region - computed: false, optional: false, required: true
   private _sourceAmiRegion: string;
   public get sourceAmiRegion() {
-    return this.getStringAttribute('source_ami_region');
+    return this._sourceAmiRegion;
   }
   public set sourceAmiRegion(value: string) {
     this._sourceAmiRegion = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get sourceAmiRegionInput() {
-    return this._sourceAmiRegion
-  }
 
-  // sriov_net_support - computed: true, optional: false, required: false
+  // sriov_net_support - computed: true, optional: false, required: true
   public get sriovNetSupport() {
     return this.getStringAttribute('sriov_net_support');
   }
@@ -235,20 +183,13 @@ export class AmiCopy extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // virtualization_type - computed: true, optional: false, required: false
+  // virtualization_type - computed: true, optional: false, required: true
   public get virtualizationType() {
     return this.getStringAttribute('virtualization_type');
   }
@@ -256,49 +197,28 @@ export class AmiCopy extends cdktf.TerraformResource {
   // ebs_block_device - computed: false, optional: true, required: false
   private _ebsBlockDevice?: AmiCopyEbsBlockDevice[];
   public get ebsBlockDevice() {
-    return this.interpolationForAttribute('ebs_block_device') as any;
+    return this._ebsBlockDevice;
   }
-  public set ebsBlockDevice(value: AmiCopyEbsBlockDevice[] ) {
+  public set ebsBlockDevice(value: AmiCopyEbsBlockDevice[] | undefined) {
     this._ebsBlockDevice = value;
-  }
-  public resetEbsBlockDevice() {
-    this._ebsBlockDevice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ebsBlockDeviceInput() {
-    return this._ebsBlockDevice
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
   private _ephemeralBlockDevice?: AmiCopyEphemeralBlockDevice[];
   public get ephemeralBlockDevice() {
-    return this.interpolationForAttribute('ephemeral_block_device') as any;
+    return this._ephemeralBlockDevice;
   }
-  public set ephemeralBlockDevice(value: AmiCopyEphemeralBlockDevice[] ) {
+  public set ephemeralBlockDevice(value: AmiCopyEphemeralBlockDevice[] | undefined) {
     this._ephemeralBlockDevice = value;
-  }
-  public resetEphemeralBlockDevice() {
-    this._ephemeralBlockDevice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ephemeralBlockDeviceInput() {
-    return this._ephemeralBlockDevice
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: AmiCopyTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: AmiCopyTimeouts ) {
+  public set timeouts(value: AmiCopyTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -307,16 +227,16 @@ export class AmiCopy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      encrypted: cdktf.booleanToTerraform(this._encrypted),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      source_ami_id: cdktf.stringToTerraform(this._sourceAmiId),
-      source_ami_region: cdktf.stringToTerraform(this._sourceAmiRegion),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      ebs_block_device: cdktf.listMapper(amiCopyEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
-      ephemeral_block_device: cdktf.listMapper(amiCopyEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
-      timeouts: amiCopyTimeoutsToTerraform(this._timeouts),
+      description: this._description,
+      encrypted: this._encrypted,
+      kms_key_id: this._kmsKeyId,
+      name: this._name,
+      source_ami_id: this._sourceAmiId,
+      source_ami_region: this._sourceAmiRegion,
+      tags: this._tags,
+      ebs_block_device: this._ebsBlockDevice,
+      ephemeral_block_device: this._ephemeralBlockDevice,
+      timeouts: this._timeouts,
     };
   }
 }

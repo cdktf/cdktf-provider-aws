@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface MskConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface MskConfigurationConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly kafkaVersions: string[];
   readonly name: string;
@@ -15,7 +16,7 @@ export interface MskConfigurationConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class MskConfiguration extends cdktf.TerraformResource {
+export class MskConfiguration extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,7 +43,7 @@ export class MskConfiguration extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -50,38 +51,31 @@ export class MskConfiguration extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // kafka_versions - computed: false, optional: false, required: true
   private _kafkaVersions: string[];
   public get kafkaVersions() {
-    return this.getListAttribute('kafka_versions');
+    return this._kafkaVersions;
   }
   public set kafkaVersions(value: string[]) {
     this._kafkaVersions = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get kafkaVersionsInput() {
-    return this._kafkaVersions
-  }
 
-  // latest_revision - computed: true, optional: false, required: false
+  // latest_revision - computed: true, optional: false, required: true
   public get latestRevision() {
     return this.getNumberAttribute('latest_revision');
   }
@@ -89,27 +83,19 @@ export class MskConfiguration extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // server_properties - computed: false, optional: false, required: true
   private _serverProperties: string;
   public get serverProperties() {
-    return this.getStringAttribute('server_properties');
+    return this._serverProperties;
   }
   public set serverProperties(value: string) {
     this._serverProperties = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverPropertiesInput() {
-    return this._serverProperties
   }
 
   // =========
@@ -118,10 +104,10 @@ export class MskConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      kafka_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._kafkaVersions),
-      name: cdktf.stringToTerraform(this._name),
-      server_properties: cdktf.stringToTerraform(this._serverProperties),
+      description: this._description,
+      kafka_versions: this._kafkaVersions,
+      name: this._name,
+      server_properties: this._serverProperties,
     };
   }
 }

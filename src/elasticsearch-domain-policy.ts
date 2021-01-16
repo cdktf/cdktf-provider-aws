@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ElasticsearchDomainPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticsearchDomainPolicyConfig extends TerraformMetaArguments {
   readonly accessPolicies: string;
   readonly domainName: string;
 }
 
 // Resource
 
-export class ElasticsearchDomainPolicy extends cdktf.TerraformResource {
+export class ElasticsearchDomainPolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class ElasticsearchDomainPolicy extends cdktf.TerraformResource {
   // access_policies - computed: false, optional: false, required: true
   private _accessPolicies: string;
   public get accessPolicies() {
-    return this.getStringAttribute('access_policies');
+    return this._accessPolicies;
   }
   public set accessPolicies(value: string) {
     this._accessPolicies = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accessPoliciesInput() {
-    return this._accessPolicies
   }
 
   // domain_name - computed: false, optional: false, required: true
   private _domainName: string;
   public get domainName() {
-    return this.getStringAttribute('domain_name');
+    return this._domainName;
   }
   public set domainName(value: string) {
     this._domainName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get domainNameInput() {
-    return this._domainName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========
@@ -75,8 +72,8 @@ export class ElasticsearchDomainPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policies: cdktf.stringToTerraform(this._accessPolicies),
-      domain_name: cdktf.stringToTerraform(this._domainName),
+      access_policies: this._accessPolicies,
+      domain_name: this._domainName,
     };
   }
 }

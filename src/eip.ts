@@ -2,14 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EipConfig extends cdktf.TerraformMetaArguments {
+export interface EipConfig extends TerraformMetaArguments {
   readonly associateWithPrivateIp?: string;
   readonly customerOwnedIpv4Pool?: string;
   readonly instance?: string;
+  readonly networkBorderGroup?: string;
   readonly networkInterface?: string;
   readonly publicIpv4Pool?: string;
   readonly tags?: { [key: string]: string };
@@ -23,19 +25,9 @@ export interface EipTimeouts {
   readonly update?: string;
 }
 
-function eipTimeoutsToTerraform(struct?: EipTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class Eip extends cdktf.TerraformResource {
+export class Eip extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -55,6 +47,7 @@ export class Eip extends cdktf.TerraformResource {
     this._associateWithPrivateIp = config.associateWithPrivateIp;
     this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
     this._instance = config.instance;
+    this._networkBorderGroup = config.networkBorderGroup;
     this._networkInterface = config.networkInterface;
     this._publicIpv4Pool = config.publicIpv4Pool;
     this._tags = config.tags;
@@ -66,7 +59,7 @@ export class Eip extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // allocation_id - computed: true, optional: false, required: false
+  // allocation_id - computed: true, optional: false, required: true
   public get allocationId() {
     return this.getStringAttribute('allocation_id');
   }
@@ -74,25 +67,23 @@ export class Eip extends cdktf.TerraformResource {
   // associate_with_private_ip - computed: false, optional: true, required: false
   private _associateWithPrivateIp?: string;
   public get associateWithPrivateIp() {
-    return this.getStringAttribute('associate_with_private_ip');
+    return this._associateWithPrivateIp;
   }
-  public set associateWithPrivateIp(value: string ) {
+  public set associateWithPrivateIp(value: string | undefined) {
     this._associateWithPrivateIp = value;
   }
-  public resetAssociateWithPrivateIp() {
-    this._associateWithPrivateIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get associateWithPrivateIpInput() {
-    return this._associateWithPrivateIp
-  }
 
-  // association_id - computed: true, optional: false, required: false
+  // association_id - computed: true, optional: false, required: true
   public get associationId() {
     return this.getStringAttribute('association_id');
   }
 
-  // customer_owned_ip - computed: true, optional: false, required: false
+  // carrier_ip - computed: true, optional: false, required: true
+  public get carrierIp() {
+    return this.getStringAttribute('carrier_ip');
+  }
+
+  // customer_owned_ip - computed: true, optional: false, required: true
   public get customerOwnedIp() {
     return this.getStringAttribute('customer_owned_ip');
   }
@@ -100,77 +91,69 @@ export class Eip extends cdktf.TerraformResource {
   // customer_owned_ipv4_pool - computed: false, optional: true, required: false
   private _customerOwnedIpv4Pool?: string;
   public get customerOwnedIpv4Pool() {
-    return this.getStringAttribute('customer_owned_ipv4_pool');
+    return this._customerOwnedIpv4Pool;
   }
-  public set customerOwnedIpv4Pool(value: string ) {
+  public set customerOwnedIpv4Pool(value: string | undefined) {
     this._customerOwnedIpv4Pool = value;
   }
-  public resetCustomerOwnedIpv4Pool() {
-    this._customerOwnedIpv4Pool = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customerOwnedIpv4PoolInput() {
-    return this._customerOwnedIpv4Pool
-  }
 
-  // domain - computed: true, optional: false, required: false
+  // domain - computed: true, optional: false, required: true
   public get domain() {
     return this.getStringAttribute('domain');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance - computed: true, optional: true, required: false
   private _instance?: string;
   public get instance() {
-    return this.getStringAttribute('instance');
+    return this._instance ?? this.getStringAttribute('instance');
   }
-  public set instance(value: string) {
+  public set instance(value: string | undefined) {
     this._instance = value;
   }
-  public resetInstance() {
-    this._instance = undefined;
+
+  // network_border_group - computed: true, optional: true, required: false
+  private _networkBorderGroup?: string;
+  public get networkBorderGroup() {
+    return this._networkBorderGroup ?? this.getStringAttribute('network_border_group');
   }
-  // Temporarily expose input value. Use with caution.
-  public get instanceInput() {
-    return this._instance
+  public set networkBorderGroup(value: string | undefined) {
+    this._networkBorderGroup = value;
   }
 
   // network_interface - computed: true, optional: true, required: false
   private _networkInterface?: string;
   public get networkInterface() {
-    return this.getStringAttribute('network_interface');
+    return this._networkInterface ?? this.getStringAttribute('network_interface');
   }
-  public set networkInterface(value: string) {
+  public set networkInterface(value: string | undefined) {
     this._networkInterface = value;
   }
-  public resetNetworkInterface() {
-    this._networkInterface = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get networkInterfaceInput() {
-    return this._networkInterface
-  }
 
-  // private_dns - computed: true, optional: false, required: false
+  // private_dns - computed: true, optional: false, required: true
   public get privateDns() {
     return this.getStringAttribute('private_dns');
   }
 
-  // private_ip - computed: true, optional: false, required: false
+  // private_ip - computed: true, optional: false, required: true
   public get privateIp() {
     return this.getStringAttribute('private_ip');
   }
 
-  // public_dns - computed: true, optional: false, required: false
+  // public_dns - computed: true, optional: false, required: true
   public get publicDns() {
     return this.getStringAttribute('public_dns');
   }
 
-  // public_ip - computed: true, optional: false, required: false
+  // public_ip - computed: true, optional: false, required: true
   public get publicIp() {
     return this.getStringAttribute('public_ip');
   }
@@ -178,65 +161,37 @@ export class Eip extends cdktf.TerraformResource {
   // public_ipv4_pool - computed: true, optional: true, required: false
   private _publicIpv4Pool?: string;
   public get publicIpv4Pool() {
-    return this.getStringAttribute('public_ipv4_pool');
+    return this._publicIpv4Pool ?? this.getStringAttribute('public_ipv4_pool');
   }
-  public set publicIpv4Pool(value: string) {
+  public set publicIpv4Pool(value: string | undefined) {
     this._publicIpv4Pool = value;
-  }
-  public resetPublicIpv4Pool() {
-    this._publicIpv4Pool = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicIpv4PoolInput() {
-    return this._publicIpv4Pool
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // vpc - computed: true, optional: true, required: false
   private _vpc?: boolean;
   public get vpc() {
-    return this.getBooleanAttribute('vpc');
+    return this._vpc ?? this.getBooleanAttribute('vpc');
   }
-  public set vpc(value: boolean) {
+  public set vpc(value: boolean | undefined) {
     this._vpc = value;
-  }
-  public resetVpc() {
-    this._vpc = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcInput() {
-    return this._vpc
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EipTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: EipTimeouts ) {
+  public set timeouts(value: EipTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -245,14 +200,15 @@ export class Eip extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      associate_with_private_ip: cdktf.stringToTerraform(this._associateWithPrivateIp),
-      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
-      instance: cdktf.stringToTerraform(this._instance),
-      network_interface: cdktf.stringToTerraform(this._networkInterface),
-      public_ipv4_pool: cdktf.stringToTerraform(this._publicIpv4Pool),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc: cdktf.booleanToTerraform(this._vpc),
-      timeouts: eipTimeoutsToTerraform(this._timeouts),
+      associate_with_private_ip: this._associateWithPrivateIp,
+      customer_owned_ipv4_pool: this._customerOwnedIpv4Pool,
+      instance: this._instance,
+      network_border_group: this._networkBorderGroup,
+      network_interface: this._networkInterface,
+      public_ipv4_pool: this._publicIpv4Pool,
+      tags: this._tags,
+      vpc: this._vpc,
+      timeouts: this._timeouts,
     };
   }
 }

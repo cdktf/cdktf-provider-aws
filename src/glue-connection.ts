@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface GlueConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface GlueConnectionConfig extends TerraformMetaArguments {
   readonly catalogId?: string;
   readonly connectionProperties: { [key: string]: string };
   readonly connectionType?: string;
@@ -22,19 +23,9 @@ export interface GlueConnectionPhysicalConnectionRequirements {
   readonly subnetId?: string;
 }
 
-function glueConnectionPhysicalConnectionRequirementsToTerraform(struct?: GlueConnectionPhysicalConnectionRequirements): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    security_group_id_list: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIdList),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-  }
-}
-
-
 // Resource
 
-export class GlueConnection extends cdktf.TerraformResource {
+export class GlueConnection extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -64,7 +55,7 @@ export class GlueConnection extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -72,112 +63,73 @@ export class GlueConnection extends cdktf.TerraformResource {
   // catalog_id - computed: true, optional: true, required: false
   private _catalogId?: string;
   public get catalogId() {
-    return this.getStringAttribute('catalog_id');
+    return this._catalogId ?? this.getStringAttribute('catalog_id');
   }
-  public set catalogId(value: string) {
+  public set catalogId(value: string | undefined) {
     this._catalogId = value;
-  }
-  public resetCatalogId() {
-    this._catalogId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get catalogIdInput() {
-    return this._catalogId
   }
 
   // connection_properties - computed: false, optional: false, required: true
   private _connectionProperties: { [key: string]: string };
   public get connectionProperties() {
-    return this.interpolationForAttribute('connection_properties') as any;
+    return this._connectionProperties;
   }
   public set connectionProperties(value: { [key: string]: string }) {
     this._connectionProperties = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get connectionPropertiesInput() {
-    return this._connectionProperties
   }
 
   // connection_type - computed: false, optional: true, required: false
   private _connectionType?: string;
   public get connectionType() {
-    return this.getStringAttribute('connection_type');
+    return this._connectionType;
   }
-  public set connectionType(value: string ) {
+  public set connectionType(value: string | undefined) {
     this._connectionType = value;
-  }
-  public resetConnectionType() {
-    this._connectionType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get connectionTypeInput() {
-    return this._connectionType
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // match_criteria - computed: false, optional: true, required: false
   private _matchCriteria?: string[];
   public get matchCriteria() {
-    return this.getListAttribute('match_criteria');
+    return this._matchCriteria;
   }
-  public set matchCriteria(value: string[] ) {
+  public set matchCriteria(value: string[] | undefined) {
     this._matchCriteria = value;
-  }
-  public resetMatchCriteria() {
-    this._matchCriteria = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchCriteriaInput() {
-    return this._matchCriteria
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // physical_connection_requirements - computed: false, optional: true, required: false
   private _physicalConnectionRequirements?: GlueConnectionPhysicalConnectionRequirements[];
   public get physicalConnectionRequirements() {
-    return this.interpolationForAttribute('physical_connection_requirements') as any;
+    return this._physicalConnectionRequirements;
   }
-  public set physicalConnectionRequirements(value: GlueConnectionPhysicalConnectionRequirements[] ) {
+  public set physicalConnectionRequirements(value: GlueConnectionPhysicalConnectionRequirements[] | undefined) {
     this._physicalConnectionRequirements = value;
-  }
-  public resetPhysicalConnectionRequirements() {
-    this._physicalConnectionRequirements = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get physicalConnectionRequirementsInput() {
-    return this._physicalConnectionRequirements
   }
 
   // =========
@@ -186,13 +138,13 @@ export class GlueConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: cdktf.stringToTerraform(this._catalogId),
-      connection_properties: cdktf.hashMapper(cdktf.anyToTerraform)(this._connectionProperties),
-      connection_type: cdktf.stringToTerraform(this._connectionType),
-      description: cdktf.stringToTerraform(this._description),
-      match_criteria: cdktf.listMapper(cdktf.stringToTerraform)(this._matchCriteria),
-      name: cdktf.stringToTerraform(this._name),
-      physical_connection_requirements: cdktf.listMapper(glueConnectionPhysicalConnectionRequirementsToTerraform)(this._physicalConnectionRequirements),
+      catalog_id: this._catalogId,
+      connection_properties: this._connectionProperties,
+      connection_type: this._connectionType,
+      description: this._description,
+      match_criteria: this._matchCriteria,
+      name: this._name,
+      physical_connection_requirements: this._physicalConnectionRequirements,
     };
   }
 }

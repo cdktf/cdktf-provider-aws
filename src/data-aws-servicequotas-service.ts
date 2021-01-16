@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsServicequotasServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsServicequotasServiceConfig extends TerraformMetaArguments {
   readonly serviceName: string;
 }
 
 // Resource
 
-export class DataAwsServicequotasService extends cdktf.TerraformDataSource {
+export class DataAwsServicequotasService extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,11 +38,15 @@ export class DataAwsServicequotasService extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // service_code - computed: true, optional: false, required: false
+  // service_code - computed: true, optional: false, required: true
   public get serviceCode() {
     return this.getStringAttribute('service_code');
   }
@@ -49,14 +54,10 @@ export class DataAwsServicequotasService extends cdktf.TerraformDataSource {
   // service_name - computed: false, optional: false, required: true
   private _serviceName: string;
   public get serviceName() {
-    return this.getStringAttribute('service_name');
+    return this._serviceName;
   }
   public set serviceName(value: string) {
     this._serviceName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceNameInput() {
-    return this._serviceName
   }
 
   // =========
@@ -65,7 +66,7 @@ export class DataAwsServicequotasService extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      service_name: cdktf.stringToTerraform(this._serviceName),
+      service_name: this._serviceName,
     };
   }
 }

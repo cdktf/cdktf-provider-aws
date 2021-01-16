@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AppsyncApiKeyConfig extends cdktf.TerraformMetaArguments {
+export interface AppsyncApiKeyConfig extends TerraformMetaArguments {
   readonly apiId: string;
   readonly description?: string;
   readonly expires?: string;
@@ -14,7 +15,7 @@ export interface AppsyncApiKeyConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class AppsyncApiKey extends cdktf.TerraformResource {
+export class AppsyncApiKey extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,54 +44,40 @@ export class AppsyncApiKey extends cdktf.TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this.getStringAttribute('api_id');
+    return this._apiId;
   }
   public set apiId(value: string) {
     this._apiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiIdInput() {
-    return this._apiId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // expires - computed: false, optional: true, required: false
   private _expires?: string;
   public get expires() {
-    return this.getStringAttribute('expires');
+    return this._expires;
   }
-  public set expires(value: string ) {
+  public set expires(value: string | undefined) {
     this._expires = value;
-  }
-  public resetExpires() {
-    this._expires = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get expiresInput() {
-    return this._expires
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // key - computed: true, optional: false, required: false
+  // key - computed: true, optional: false, required: true
   public get key() {
     return this.getStringAttribute('key');
   }
@@ -101,9 +88,9 @@ export class AppsyncApiKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      description: cdktf.stringToTerraform(this._description),
-      expires: cdktf.stringToTerraform(this._expires),
+      api_id: this._apiId,
+      description: this._description,
+      expires: this._expires,
     };
   }
 }

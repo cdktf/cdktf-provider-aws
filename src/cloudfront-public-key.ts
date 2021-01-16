@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CloudfrontPublicKeyConfig extends cdktf.TerraformMetaArguments {
+export interface CloudfrontPublicKeyConfig extends TerraformMetaArguments {
   readonly comment?: string;
   readonly encodedKey: string;
   readonly name?: string;
@@ -15,7 +16,7 @@ export interface CloudfrontPublicKeyConfig extends cdktf.TerraformMetaArguments 
 
 // Resource
 
-export class CloudfrontPublicKey extends cdktf.TerraformResource {
+export class CloudfrontPublicKey extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,7 +43,7 @@ export class CloudfrontPublicKey extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // caller_reference - computed: true, optional: false, required: false
+  // caller_reference - computed: true, optional: false, required: true
   public get callerReference() {
     return this.getStringAttribute('caller_reference');
   }
@@ -50,72 +51,51 @@ export class CloudfrontPublicKey extends cdktf.TerraformResource {
   // comment - computed: false, optional: true, required: false
   private _comment?: string;
   public get comment() {
-    return this.getStringAttribute('comment');
+    return this._comment;
   }
-  public set comment(value: string ) {
+  public set comment(value: string | undefined) {
     this._comment = value;
-  }
-  public resetComment() {
-    this._comment = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get commentInput() {
-    return this._comment
   }
 
   // encoded_key - computed: false, optional: false, required: true
   private _encodedKey: string;
   public get encodedKey() {
-    return this.getStringAttribute('encoded_key');
+    return this._encodedKey;
   }
   public set encodedKey(value: string) {
     this._encodedKey = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get encodedKeyInput() {
-    return this._encodedKey
-  }
 
-  // etag - computed: true, optional: false, required: false
+  // etag - computed: true, optional: false, required: true
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix ?? this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // =========
@@ -124,10 +104,10 @@ export class CloudfrontPublicKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      encoded_key: cdktf.stringToTerraform(this._encodedKey),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      comment: this._comment,
+      encoded_key: this._encodedKey,
+      name: this._name,
+      name_prefix: this._namePrefix,
     };
   }
 }

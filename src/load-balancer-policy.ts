@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LoadBalancerPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface LoadBalancerPolicyConfig extends TerraformMetaArguments {
   readonly loadBalancerName: string;
   readonly policyName: string;
   readonly policyTypeName: string;
@@ -18,18 +19,9 @@ export interface LoadBalancerPolicyPolicyAttribute {
   readonly value?: string;
 }
 
-function loadBalancerPolicyPolicyAttributeToTerraform(struct?: LoadBalancerPolicyPolicyAttribute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
-
 // Resource
 
-export class LoadBalancerPolicy extends cdktf.TerraformResource {
+export class LoadBalancerPolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,63 +49,48 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // load_balancer_name - computed: false, optional: false, required: true
   private _loadBalancerName: string;
   public get loadBalancerName() {
-    return this.getStringAttribute('load_balancer_name');
+    return this._loadBalancerName;
   }
   public set loadBalancerName(value: string) {
     this._loadBalancerName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loadBalancerNameInput() {
-    return this._loadBalancerName
   }
 
   // policy_name - computed: false, optional: false, required: true
   private _policyName: string;
   public get policyName() {
-    return this.getStringAttribute('policy_name');
+    return this._policyName;
   }
   public set policyName(value: string) {
     this._policyName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyNameInput() {
-    return this._policyName
   }
 
   // policy_type_name - computed: false, optional: false, required: true
   private _policyTypeName: string;
   public get policyTypeName() {
-    return this.getStringAttribute('policy_type_name');
+    return this._policyTypeName;
   }
   public set policyTypeName(value: string) {
     this._policyTypeName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyTypeNameInput() {
-    return this._policyTypeName
   }
 
   // policy_attribute - computed: false, optional: true, required: false
   private _policyAttribute?: LoadBalancerPolicyPolicyAttribute[];
   public get policyAttribute() {
-    return this.interpolationForAttribute('policy_attribute') as any;
+    return this._policyAttribute;
   }
-  public set policyAttribute(value: LoadBalancerPolicyPolicyAttribute[] ) {
+  public set policyAttribute(value: LoadBalancerPolicyPolicyAttribute[] | undefined) {
     this._policyAttribute = value;
-  }
-  public resetPolicyAttribute() {
-    this._policyAttribute = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyAttributeInput() {
-    return this._policyAttribute
   }
 
   // =========
@@ -122,10 +99,10 @@ export class LoadBalancerPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
-      policy_name: cdktf.stringToTerraform(this._policyName),
-      policy_type_name: cdktf.stringToTerraform(this._policyTypeName),
-      policy_attribute: cdktf.listMapper(loadBalancerPolicyPolicyAttributeToTerraform)(this._policyAttribute),
+      load_balancer_name: this._loadBalancerName,
+      policy_name: this._policyName,
+      policy_type_name: this._policyTypeName,
+      policy_attribute: this._policyAttribute,
     };
   }
 }

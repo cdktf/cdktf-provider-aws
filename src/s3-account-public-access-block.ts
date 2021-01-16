@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface S3AccountPublicAccessBlockConfig extends cdktf.TerraformMetaArguments {
+export interface S3AccountPublicAccessBlockConfig extends TerraformMetaArguments {
   readonly accountId?: string;
   readonly blockPublicAcls?: boolean;
   readonly blockPublicPolicy?: boolean;
@@ -16,7 +17,7 @@ export interface S3AccountPublicAccessBlockConfig extends cdktf.TerraformMetaArg
 
 // Resource
 
-export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
+export class S3AccountPublicAccessBlock extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,86 +48,55 @@ export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
   // account_id - computed: true, optional: true, required: false
   private _accountId?: string;
   public get accountId() {
-    return this.getStringAttribute('account_id');
+    return this._accountId ?? this.getStringAttribute('account_id');
   }
-  public set accountId(value: string) {
+  public set accountId(value: string | undefined) {
     this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accountIdInput() {
-    return this._accountId
   }
 
   // block_public_acls - computed: false, optional: true, required: false
   private _blockPublicAcls?: boolean;
   public get blockPublicAcls() {
-    return this.getBooleanAttribute('block_public_acls');
+    return this._blockPublicAcls;
   }
-  public set blockPublicAcls(value: boolean ) {
+  public set blockPublicAcls(value: boolean | undefined) {
     this._blockPublicAcls = value;
-  }
-  public resetBlockPublicAcls() {
-    this._blockPublicAcls = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get blockPublicAclsInput() {
-    return this._blockPublicAcls
   }
 
   // block_public_policy - computed: false, optional: true, required: false
   private _blockPublicPolicy?: boolean;
   public get blockPublicPolicy() {
-    return this.getBooleanAttribute('block_public_policy');
+    return this._blockPublicPolicy;
   }
-  public set blockPublicPolicy(value: boolean ) {
+  public set blockPublicPolicy(value: boolean | undefined) {
     this._blockPublicPolicy = value;
-  }
-  public resetBlockPublicPolicy() {
-    this._blockPublicPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get blockPublicPolicyInput() {
-    return this._blockPublicPolicy
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // ignore_public_acls - computed: false, optional: true, required: false
   private _ignorePublicAcls?: boolean;
   public get ignorePublicAcls() {
-    return this.getBooleanAttribute('ignore_public_acls');
+    return this._ignorePublicAcls;
   }
-  public set ignorePublicAcls(value: boolean ) {
+  public set ignorePublicAcls(value: boolean | undefined) {
     this._ignorePublicAcls = value;
-  }
-  public resetIgnorePublicAcls() {
-    this._ignorePublicAcls = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ignorePublicAclsInput() {
-    return this._ignorePublicAcls
   }
 
   // restrict_public_buckets - computed: false, optional: true, required: false
   private _restrictPublicBuckets?: boolean;
   public get restrictPublicBuckets() {
-    return this.getBooleanAttribute('restrict_public_buckets');
+    return this._restrictPublicBuckets;
   }
-  public set restrictPublicBuckets(value: boolean ) {
+  public set restrictPublicBuckets(value: boolean | undefined) {
     this._restrictPublicBuckets = value;
-  }
-  public resetRestrictPublicBuckets() {
-    this._restrictPublicBuckets = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restrictPublicBucketsInput() {
-    return this._restrictPublicBuckets
   }
 
   // =========
@@ -135,11 +105,11 @@ export class S3AccountPublicAccessBlock extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      block_public_acls: cdktf.booleanToTerraform(this._blockPublicAcls),
-      block_public_policy: cdktf.booleanToTerraform(this._blockPublicPolicy),
-      ignore_public_acls: cdktf.booleanToTerraform(this._ignorePublicAcls),
-      restrict_public_buckets: cdktf.booleanToTerraform(this._restrictPublicBuckets),
+      account_id: this._accountId,
+      block_public_acls: this._blockPublicAcls,
+      block_public_policy: this._blockPublicPolicy,
+      ignore_public_acls: this._ignorePublicAcls,
+      restrict_public_buckets: this._restrictPublicBuckets,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DbClusterSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface DbClusterSnapshotConfig extends TerraformMetaArguments {
   readonly dbClusterIdentifier: string;
   readonly dbClusterSnapshotIdentifier: string;
   readonly tags?: { [key: string]: string };
@@ -17,17 +18,9 @@ export interface DbClusterSnapshotTimeouts {
   readonly create?: string;
 }
 
-function dbClusterSnapshotTimeoutsToTerraform(struct?: DbClusterSnapshotTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-  }
-}
-
-
 // Resource
 
-export class DbClusterSnapshot extends cdktf.TerraformResource {
+export class DbClusterSnapshot extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -54,12 +47,12 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // allocated_storage - computed: true, optional: false, required: false
+  // allocated_storage - computed: true, optional: false, required: true
   public get allocatedStorage() {
     return this.getNumberAttribute('allocated_storage');
   }
 
-  // availability_zones - computed: true, optional: false, required: false
+  // availability_zones - computed: true, optional: false, required: true
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
@@ -67,17 +60,13 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
   // db_cluster_identifier - computed: false, optional: false, required: true
   private _dbClusterIdentifier: string;
   public get dbClusterIdentifier() {
-    return this.getStringAttribute('db_cluster_identifier');
+    return this._dbClusterIdentifier;
   }
   public set dbClusterIdentifier(value: string) {
     this._dbClusterIdentifier = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get dbClusterIdentifierInput() {
-    return this._dbClusterIdentifier
-  }
 
-  // db_cluster_snapshot_arn - computed: true, optional: false, required: false
+  // db_cluster_snapshot_arn - computed: true, optional: false, required: true
   public get dbClusterSnapshotArn() {
     return this.getStringAttribute('db_cluster_snapshot_arn');
   }
@@ -85,62 +74,62 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
   // db_cluster_snapshot_identifier - computed: false, optional: false, required: true
   private _dbClusterSnapshotIdentifier: string;
   public get dbClusterSnapshotIdentifier() {
-    return this.getStringAttribute('db_cluster_snapshot_identifier');
+    return this._dbClusterSnapshotIdentifier;
   }
   public set dbClusterSnapshotIdentifier(value: string) {
     this._dbClusterSnapshotIdentifier = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get dbClusterSnapshotIdentifierInput() {
-    return this._dbClusterSnapshotIdentifier
-  }
 
-  // engine - computed: true, optional: false, required: false
+  // engine - computed: true, optional: false, required: true
   public get engine() {
     return this.getStringAttribute('engine');
   }
 
-  // engine_version - computed: true, optional: false, required: false
+  // engine_version - computed: true, optional: false, required: true
   public get engineVersion() {
     return this.getStringAttribute('engine_version');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // license_model - computed: true, optional: false, required: false
+  // license_model - computed: true, optional: false, required: true
   public get licenseModel() {
     return this.getStringAttribute('license_model');
   }
 
-  // port - computed: true, optional: false, required: false
+  // port - computed: true, optional: false, required: true
   public get port() {
     return this.getNumberAttribute('port');
   }
 
-  // snapshot_type - computed: true, optional: false, required: false
+  // snapshot_type - computed: true, optional: false, required: true
   public get snapshotType() {
     return this.getStringAttribute('snapshot_type');
   }
 
-  // source_db_cluster_snapshot_arn - computed: true, optional: false, required: false
+  // source_db_cluster_snapshot_arn - computed: true, optional: false, required: true
   public get sourceDbClusterSnapshotArn() {
     return this.getStringAttribute('source_db_cluster_snapshot_arn');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // storage_encrypted - computed: true, optional: false, required: false
+  // storage_encrypted - computed: true, optional: false, required: true
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
@@ -148,20 +137,13 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -169,17 +151,10 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DbClusterSnapshotTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: DbClusterSnapshotTimeouts ) {
+  public set timeouts(value: DbClusterSnapshotTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -188,10 +163,10 @@ export class DbClusterSnapshot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
-      db_cluster_snapshot_identifier: cdktf.stringToTerraform(this._dbClusterSnapshotIdentifier),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      timeouts: dbClusterSnapshotTimeoutsToTerraform(this._timeouts),
+      db_cluster_identifier: this._dbClusterIdentifier,
+      db_cluster_snapshot_identifier: this._dbClusterSnapshotIdentifier,
+      tags: this._tags,
+      timeouts: this._timeouts,
     };
   }
 }

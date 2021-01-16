@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DatasyncAgentConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncAgentConfig extends TerraformMetaArguments {
   readonly activationKey?: string;
   readonly ipAddress?: string;
   readonly name?: string;
@@ -18,17 +19,9 @@ export interface DatasyncAgentTimeouts {
   readonly create?: string;
 }
 
-function datasyncAgentTimeoutsToTerraform(struct?: DatasyncAgentTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-  }
-}
-
-
 // Resource
 
-export class DatasyncAgent extends cdktf.TerraformResource {
+export class DatasyncAgent extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,91 +52,60 @@ export class DatasyncAgent extends cdktf.TerraformResource {
   // activation_key - computed: true, optional: true, required: false
   private _activationKey?: string;
   public get activationKey() {
-    return this.getStringAttribute('activation_key');
+    return this._activationKey ?? this.getStringAttribute('activation_key');
   }
-  public set activationKey(value: string) {
+  public set activationKey(value: string | undefined) {
     this._activationKey = value;
   }
-  public resetActivationKey() {
-    this._activationKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get activationKeyInput() {
-    return this._activationKey
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // ip_address - computed: true, optional: true, required: false
   private _ipAddress?: string;
   public get ipAddress() {
-    return this.getStringAttribute('ip_address');
+    return this._ipAddress ?? this.getStringAttribute('ip_address');
   }
-  public set ipAddress(value: string) {
+  public set ipAddress(value: string | undefined) {
     this._ipAddress = value;
-  }
-  public resetIpAddress() {
-    this._ipAddress = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipAddressInput() {
-    return this._ipAddress
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DatasyncAgentTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: DatasyncAgentTimeouts ) {
+  public set timeouts(value: DatasyncAgentTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -152,11 +114,11 @@ export class DatasyncAgent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activation_key: cdktf.stringToTerraform(this._activationKey),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      timeouts: datasyncAgentTimeoutsToTerraform(this._timeouts),
+      activation_key: this._activationKey,
+      ip_address: this._ipAddress,
+      name: this._name,
+      tags: this._tags,
+      timeouts: this._timeouts,
     };
   }
 }

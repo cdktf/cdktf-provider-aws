@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayDocumentationVersionConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayDocumentationVersionConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly restApiId: string;
   readonly version: string;
@@ -14,7 +15,7 @@ export interface ApiGatewayDocumentationVersionConfig extends cdktf.TerraformMet
 
 // Resource
 
-export class ApiGatewayDocumentationVersion extends cdktf.TerraformResource {
+export class ApiGatewayDocumentationVersion extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,48 +44,37 @@ export class ApiGatewayDocumentationVersion extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this.getStringAttribute('rest_api_id');
+    return this._restApiId;
   }
   public set restApiId(value: string) {
     this._restApiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restApiIdInput() {
-    return this._restApiId
   }
 
   // version - computed: false, optional: false, required: true
   private _version: string;
   public get version() {
-    return this.getStringAttribute('version');
+    return this._version;
   }
   public set version(value: string) {
     this._version = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version
   }
 
   // =========
@@ -93,9 +83,9 @@ export class ApiGatewayDocumentationVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      version: cdktf.stringToTerraform(this._version),
+      description: this._description,
+      rest_api_id: this._restApiId,
+      version: this._version,
     };
   }
 }

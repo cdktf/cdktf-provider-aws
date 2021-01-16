@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface WafregionalXssMatchSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafregionalXssMatchSetConfig extends TerraformMetaArguments {
   readonly name: string;
   /** xss_match_tuple block */
   readonly xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[];
@@ -15,33 +16,15 @@ export interface WafregionalXssMatchSetXssMatchTupleFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
-
-function wafregionalXssMatchSetXssMatchTupleFieldToMatchToTerraform(struct?: WafregionalXssMatchSetXssMatchTupleFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    data: cdktf.stringToTerraform(struct!.data),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface WafregionalXssMatchSetXssMatchTuple {
   readonly textTransformation: string;
   /** field_to_match block */
   readonly fieldToMatch: WafregionalXssMatchSetXssMatchTupleFieldToMatch[];
 }
 
-function wafregionalXssMatchSetXssMatchTupleToTerraform(struct?: WafregionalXssMatchSetXssMatchTuple): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
-    field_to_match: cdktf.listMapper(wafregionalXssMatchSetXssMatchTupleFieldToMatchToTerraform)(struct!.fieldToMatch),
-  }
-}
-
-
 // Resource
 
-export class WafregionalXssMatchSet extends cdktf.TerraformResource {
+export class WafregionalXssMatchSet extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -67,37 +50,30 @@ export class WafregionalXssMatchSet extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // xss_match_tuple - computed: false, optional: true, required: false
   private _xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[];
   public get xssMatchTuple() {
-    return this.interpolationForAttribute('xss_match_tuple') as any;
+    return this._xssMatchTuple;
   }
-  public set xssMatchTuple(value: WafregionalXssMatchSetXssMatchTuple[] ) {
+  public set xssMatchTuple(value: WafregionalXssMatchSetXssMatchTuple[] | undefined) {
     this._xssMatchTuple = value;
-  }
-  public resetXssMatchTuple() {
-    this._xssMatchTuple = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get xssMatchTupleInput() {
-    return this._xssMatchTuple
   }
 
   // =========
@@ -106,8 +82,8 @@ export class WafregionalXssMatchSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      xss_match_tuple: cdktf.listMapper(wafregionalXssMatchSetXssMatchTupleToTerraform)(this._xssMatchTuple),
+      name: this._name,
+      xss_match_tuple: this._xssMatchTuple,
     };
   }
 }

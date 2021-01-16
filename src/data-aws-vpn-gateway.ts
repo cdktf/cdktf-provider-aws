@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsVpnGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsVpnGatewayConfig extends TerraformMetaArguments {
   readonly amazonSideAsn?: string;
   readonly attachedVpcId?: string;
   readonly availabilityZone?: string;
@@ -20,18 +21,9 @@ export interface DataAwsVpnGatewayFilter {
   readonly values: string[];
 }
 
-function dataAwsVpnGatewayFilterToTerraform(struct?: DataAwsVpnGatewayFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
+export class DataAwsVpnGateway extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -63,20 +55,13 @@ export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
   // amazon_side_asn - computed: true, optional: true, required: false
   private _amazonSideAsn?: string;
   public get amazonSideAsn() {
-    return this.getStringAttribute('amazon_side_asn');
+    return this._amazonSideAsn ?? this.getStringAttribute('amazon_side_asn');
   }
-  public set amazonSideAsn(value: string) {
+  public set amazonSideAsn(value: string | undefined) {
     this._amazonSideAsn = value;
   }
-  public resetAmazonSideAsn() {
-    this._amazonSideAsn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get amazonSideAsnInput() {
-    return this._amazonSideAsn
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -84,86 +69,55 @@ export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
   // attached_vpc_id - computed: true, optional: true, required: false
   private _attachedVpcId?: string;
   public get attachedVpcId() {
-    return this.getStringAttribute('attached_vpc_id');
+    return this._attachedVpcId ?? this.getStringAttribute('attached_vpc_id');
   }
-  public set attachedVpcId(value: string) {
+  public set attachedVpcId(value: string | undefined) {
     this._attachedVpcId = value;
-  }
-  public resetAttachedVpcId() {
-    this._attachedVpcId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attachedVpcIdInput() {
-    return this._attachedVpcId
   }
 
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string) {
+  public set availabilityZone(value: string | undefined) {
     this._availabilityZone = value;
-  }
-  public resetAvailabilityZone() {
-    this._availabilityZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // state - computed: true, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this.getStringAttribute('state');
+    return this._state ?? this.getStringAttribute('state');
   }
-  public set state(value: string) {
+  public set state(value: string | undefined) {
     this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsVpnGatewayFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsVpnGatewayFilter[] ) {
+  public set filter(value: DataAwsVpnGatewayFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -172,12 +126,12 @@ export class DataAwsVpnGateway extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amazon_side_asn: cdktf.stringToTerraform(this._amazonSideAsn),
-      attached_vpc_id: cdktf.stringToTerraform(this._attachedVpcId),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      state: cdktf.stringToTerraform(this._state),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsVpnGatewayFilterToTerraform)(this._filter),
+      amazon_side_asn: this._amazonSideAsn,
+      attached_vpc_id: this._attachedVpcId,
+      availability_zone: this._availabilityZone,
+      state: this._state,
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

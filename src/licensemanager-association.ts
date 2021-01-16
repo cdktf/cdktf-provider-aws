@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LicensemanagerAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface LicensemanagerAssociationConfig extends TerraformMetaArguments {
   readonly licenseConfigurationArn: string;
   readonly resourceArn: string;
 }
 
 // Resource
 
-export class LicensemanagerAssociation extends cdktf.TerraformResource {
+export class LicensemanagerAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,34 +40,30 @@ export class LicensemanagerAssociation extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // license_configuration_arn - computed: false, optional: false, required: true
   private _licenseConfigurationArn: string;
   public get licenseConfigurationArn() {
-    return this.getStringAttribute('license_configuration_arn');
+    return this._licenseConfigurationArn;
   }
   public set licenseConfigurationArn(value: string) {
     this._licenseConfigurationArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get licenseConfigurationArnInput() {
-    return this._licenseConfigurationArn
   }
 
   // resource_arn - computed: false, optional: false, required: true
   private _resourceArn: string;
   public get resourceArn() {
-    return this.getStringAttribute('resource_arn');
+    return this._resourceArn;
   }
   public set resourceArn(value: string) {
     this._resourceArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceArnInput() {
-    return this._resourceArn
   }
 
   // =========
@@ -75,8 +72,8 @@ export class LicensemanagerAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      license_configuration_arn: cdktf.stringToTerraform(this._licenseConfigurationArn),
-      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      license_configuration_arn: this._licenseConfigurationArn,
+      resource_arn: this._resourceArn,
     };
   }
 }

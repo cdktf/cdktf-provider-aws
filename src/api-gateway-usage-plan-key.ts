@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayUsagePlanKeyConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayUsagePlanKeyConfig extends TerraformMetaArguments {
   readonly keyId: string;
   readonly keyType: string;
   readonly usagePlanId: string;
@@ -14,7 +15,7 @@ export interface ApiGatewayUsagePlanKeyConfig extends cdktf.TerraformMetaArgumen
 
 // Resource
 
-export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
+export class ApiGatewayUsagePlanKey extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,37 +42,33 @@ export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // key_id - computed: false, optional: false, required: true
   private _keyId: string;
   public get keyId() {
-    return this.getStringAttribute('key_id');
+    return this._keyId;
   }
   public set keyId(value: string) {
     this._keyId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyIdInput() {
-    return this._keyId
   }
 
   // key_type - computed: false, optional: false, required: true
   private _keyType: string;
   public get keyType() {
-    return this.getStringAttribute('key_type');
+    return this._keyType;
   }
   public set keyType(value: string) {
     this._keyType = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get keyTypeInput() {
-    return this._keyType
-  }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -79,17 +76,13 @@ export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
   // usage_plan_id - computed: false, optional: false, required: true
   private _usagePlanId: string;
   public get usagePlanId() {
-    return this.getStringAttribute('usage_plan_id');
+    return this._usagePlanId;
   }
   public set usagePlanId(value: string) {
     this._usagePlanId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get usagePlanIdInput() {
-    return this._usagePlanId
-  }
 
-  // value - computed: true, optional: false, required: false
+  // value - computed: true, optional: false, required: true
   public get value() {
     return this.getStringAttribute('value');
   }
@@ -100,9 +93,9 @@ export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      key_id: cdktf.stringToTerraform(this._keyId),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      usage_plan_id: cdktf.stringToTerraform(this._usagePlanId),
+      key_id: this._keyId,
+      key_type: this._keyType,
+      usage_plan_id: this._usagePlanId,
     };
   }
 }

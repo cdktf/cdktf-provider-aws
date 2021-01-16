@@ -2,20 +2,22 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface OrganizationsPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationsPolicyConfig extends TerraformMetaArguments {
   readonly content: string;
   readonly description?: string;
   readonly name: string;
+  readonly tags?: { [key: string]: string };
   readonly type?: string;
 }
 
 // Resource
 
-export class OrganizationsPolicy extends cdktf.TerraformResource {
+export class OrganizationsPolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -35,6 +37,7 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
     this._content = config.content;
     this._description = config.description;
     this._name = config.name;
+    this._tags = config.tags;
     this._type = config.type;
   }
 
@@ -42,7 +45,7 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -50,64 +53,55 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
   // content - computed: false, optional: false, required: true
   private _content: string;
   public get content() {
-    return this.getStringAttribute('content');
+    return this._content;
   }
   public set content(value: string) {
     this._content = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contentInput() {
-    return this._content
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this._tags;
+  }
+  public set tags(value: { [key: string]: string } | undefined) {
+    this._tags = value;
   }
 
   // type - computed: false, optional: true, required: false
   private _type?: string;
   public get type() {
-    return this.getStringAttribute('type');
+    return this._type;
   }
-  public set type(value: string ) {
+  public set type(value: string | undefined) {
     this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type
   }
 
   // =========
@@ -116,10 +110,11 @@ export class OrganizationsPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content: cdktf.stringToTerraform(this._content),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      type: cdktf.stringToTerraform(this._type),
+      content: this._content,
+      description: this._description,
+      name: this._name,
+      tags: this._tags,
+      type: this._type,
     };
   }
 }

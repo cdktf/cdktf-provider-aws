@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface KmsAliasConfig extends cdktf.TerraformMetaArguments {
+export interface KmsAliasConfig extends TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly targetKeyId: string;
@@ -14,7 +15,7 @@ export interface KmsAliasConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class KmsAlias extends cdktf.TerraformResource {
+export class KmsAlias extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,49 +41,39 @@ export class KmsAlias extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
   }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
-  }
 
-  // target_key_arn - computed: true, optional: false, required: false
+  // target_key_arn - computed: true, optional: false, required: true
   public get targetKeyArn() {
     return this.getStringAttribute('target_key_arn');
   }
@@ -90,14 +81,10 @@ export class KmsAlias extends cdktf.TerraformResource {
   // target_key_id - computed: false, optional: false, required: true
   private _targetKeyId: string;
   public get targetKeyId() {
-    return this.getStringAttribute('target_key_id');
+    return this._targetKeyId;
   }
   public set targetKeyId(value: string) {
     this._targetKeyId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetKeyIdInput() {
-    return this._targetKeyId
   }
 
   // =========
@@ -106,9 +93,9 @@ export class KmsAlias extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      target_key_id: cdktf.stringToTerraform(this._targetKeyId),
+      name: this._name,
+      name_prefix: this._namePrefix,
+      target_key_id: this._targetKeyId,
     };
   }
 }

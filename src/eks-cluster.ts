@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface EksClusterConfig extends cdktf.TerraformMetaArguments {
+export interface EksClusterConfig extends TerraformMetaArguments {
   readonly enabledClusterLogTypes?: string[];
   readonly name: string;
   readonly roleArn: string;
@@ -14,72 +16,50 @@ export interface EksClusterConfig extends cdktf.TerraformMetaArguments {
   readonly version?: string;
   /** encryption_config block */
   readonly encryptionConfig?: EksClusterEncryptionConfig[];
+  /** kubernetes_network_config block */
+  readonly kubernetesNetworkConfig?: EksClusterKubernetesNetworkConfig[];
   /** timeouts block */
   readonly timeouts?: EksClusterTimeouts;
   /** vpc_config block */
   readonly vpcConfig: EksClusterVpcConfig[];
 }
-export class EksClusterCertificateAuthority extends cdktf.ComplexComputedList {
+export class EksClusterCertificateAuthority extends ComplexComputedList {
 
-  // data - computed: true, optional: false, required: false
+  // data - computed: true, optional: false, required: true
   public get data() {
     return this.getStringAttribute('data');
   }
 }
-export class EksClusterIdentityOidc extends cdktf.ComplexComputedList {
+export class EksClusterIdentityOidc extends ComplexComputedList {
 
-  // issuer - computed: true, optional: false, required: false
+  // issuer - computed: true, optional: false, required: true
   public get issuer() {
     return this.getStringAttribute('issuer');
   }
 }
-export class EksClusterIdentity extends cdktf.ComplexComputedList {
+export class EksClusterIdentity extends ComplexComputedList {
 
-  // oidc - computed: true, optional: false, required: false
+  // oidc - computed: true, optional: false, required: true
   public get oidc() {
-    return this.interpolationForAttribute('oidc') as any;
+    return 'not implemented' as any;
   }
 }
 export interface EksClusterEncryptionConfigProvider {
   readonly keyArn: string;
 }
-
-function eksClusterEncryptionConfigProviderToTerraform(struct?: EksClusterEncryptionConfigProvider): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    key_arn: cdktf.stringToTerraform(struct!.keyArn),
-  }
-}
-
 export interface EksClusterEncryptionConfig {
   readonly resources: string[];
   /** provider block */
   readonly provider: EksClusterEncryptionConfigProvider[];
 }
-
-function eksClusterEncryptionConfigToTerraform(struct?: EksClusterEncryptionConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    resources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resources),
-    provider: cdktf.listMapper(eksClusterEncryptionConfigProviderToTerraform)(struct!.provider),
-  }
+export interface EksClusterKubernetesNetworkConfig {
+  readonly serviceIpv4Cidr?: string;
 }
-
 export interface EksClusterTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
-
-function eksClusterTimeoutsToTerraform(struct?: EksClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
 export interface EksClusterVpcConfig {
   readonly endpointPrivateAccess?: boolean;
   readonly endpointPublicAccess?: boolean;
@@ -88,21 +68,9 @@ export interface EksClusterVpcConfig {
   readonly subnetIds: string[];
 }
 
-function eksClusterVpcConfigToTerraform(struct?: EksClusterVpcConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    endpoint_private_access: cdktf.booleanToTerraform(struct!.endpointPrivateAccess),
-    endpoint_public_access: cdktf.booleanToTerraform(struct!.endpointPublicAccess),
-    public_access_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(struct!.publicAccessCidrs),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
-  }
-}
-
-
 // Resource
 
-export class EksCluster extends cdktf.TerraformResource {
+export class EksCluster extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -125,6 +93,7 @@ export class EksCluster extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._version = config.version;
     this._encryptionConfig = config.encryptionConfig;
+    this._kubernetesNetworkConfig = config.kubernetesNetworkConfig;
     this._timeouts = config.timeouts;
     this._vpcConfig = config.vpcConfig;
   }
@@ -133,17 +102,17 @@ export class EksCluster extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // certificate_authority - computed: true, optional: false, required: false
+  // certificate_authority - computed: true, optional: false, required: true
   public certificateAuthority(index: string) {
     return new EksClusterCertificateAuthority(this, 'certificate_authority', index);
   }
 
-  // created_at - computed: true, optional: false, required: false
+  // created_at - computed: true, optional: false, required: true
   public get createdAt() {
     return this.getStringAttribute('created_at');
   }
@@ -151,30 +120,27 @@ export class EksCluster extends cdktf.TerraformResource {
   // enabled_cluster_log_types - computed: false, optional: true, required: false
   private _enabledClusterLogTypes?: string[];
   public get enabledClusterLogTypes() {
-    return this.getListAttribute('enabled_cluster_log_types');
+    return this._enabledClusterLogTypes;
   }
-  public set enabledClusterLogTypes(value: string[] ) {
+  public set enabledClusterLogTypes(value: string[] | undefined) {
     this._enabledClusterLogTypes = value;
   }
-  public resetEnabledClusterLogTypes() {
-    this._enabledClusterLogTypes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledClusterLogTypesInput() {
-    return this._enabledClusterLogTypes
-  }
 
-  // endpoint - computed: true, optional: false, required: false
+  // endpoint - computed: true, optional: false, required: true
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // identity - computed: true, optional: false, required: false
+  // identity - computed: true, optional: false, required: true
   public identity(index: string) {
     return new EksClusterIdentity(this, 'identity', index);
   }
@@ -182,17 +148,13 @@ export class EksCluster extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // platform_version - computed: true, optional: false, required: false
+  // platform_version - computed: true, optional: false, required: true
   public get platformVersion() {
     return this.getStringAttribute('platform_version');
   }
@@ -200,17 +162,13 @@ export class EksCluster extends cdktf.TerraformResource {
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this.getStringAttribute('role_arn');
+    return this._roleArn;
   }
   public set roleArn(value: string) {
     this._roleArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get roleArnInput() {
-    return this._roleArn
-  }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -218,78 +176,55 @@ export class EksCluster extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // version - computed: true, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this.getStringAttribute('version');
+    return this._version ?? this.getStringAttribute('version');
   }
-  public set version(value: string) {
+  public set version(value: string | undefined) {
     this._version = value;
-  }
-  public resetVersion() {
-    this._version = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version
   }
 
   // encryption_config - computed: false, optional: true, required: false
   private _encryptionConfig?: EksClusterEncryptionConfig[];
   public get encryptionConfig() {
-    return this.interpolationForAttribute('encryption_config') as any;
+    return this._encryptionConfig;
   }
-  public set encryptionConfig(value: EksClusterEncryptionConfig[] ) {
+  public set encryptionConfig(value: EksClusterEncryptionConfig[] | undefined) {
     this._encryptionConfig = value;
   }
-  public resetEncryptionConfig() {
-    this._encryptionConfig = undefined;
+
+  // kubernetes_network_config - computed: false, optional: true, required: false
+  private _kubernetesNetworkConfig?: EksClusterKubernetesNetworkConfig[];
+  public get kubernetesNetworkConfig() {
+    return this._kubernetesNetworkConfig;
   }
-  // Temporarily expose input value. Use with caution.
-  public get encryptionConfigInput() {
-    return this._encryptionConfig
+  public set kubernetesNetworkConfig(value: EksClusterKubernetesNetworkConfig[] | undefined) {
+    this._kubernetesNetworkConfig = value;
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EksClusterTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: EksClusterTimeouts ) {
+  public set timeouts(value: EksClusterTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // vpc_config - computed: false, optional: false, required: true
   private _vpcConfig: EksClusterVpcConfig[];
   public get vpcConfig() {
-    return this.interpolationForAttribute('vpc_config') as any;
+    return this._vpcConfig;
   }
   public set vpcConfig(value: EksClusterVpcConfig[]) {
     this._vpcConfig = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcConfigInput() {
-    return this._vpcConfig
   }
 
   // =========
@@ -298,14 +233,15 @@ export class EksCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled_cluster_log_types: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledClusterLogTypes),
-      name: cdktf.stringToTerraform(this._name),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      version: cdktf.stringToTerraform(this._version),
-      encryption_config: cdktf.listMapper(eksClusterEncryptionConfigToTerraform)(this._encryptionConfig),
-      timeouts: eksClusterTimeoutsToTerraform(this._timeouts),
-      vpc_config: cdktf.listMapper(eksClusterVpcConfigToTerraform)(this._vpcConfig),
+      enabled_cluster_log_types: this._enabledClusterLogTypes,
+      name: this._name,
+      role_arn: this._roleArn,
+      tags: this._tags,
+      version: this._version,
+      encryption_config: this._encryptionConfig,
+      kubernetes_network_config: this._kubernetesNetworkConfig,
+      timeouts: this._timeouts,
+      vpc_config: this._vpcConfig,
     };
   }
 }

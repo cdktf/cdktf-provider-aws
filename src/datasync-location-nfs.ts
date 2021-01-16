@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DatasyncLocationNfsConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncLocationNfsConfig extends TerraformMetaArguments {
   readonly serverHostname: string;
   readonly subdirectory: string;
   readonly tags?: { [key: string]: string };
@@ -17,17 +18,9 @@ export interface DatasyncLocationNfsOnPremConfig {
   readonly agentArns: string[];
 }
 
-function datasyncLocationNfsOnPremConfigToTerraform(struct?: DatasyncLocationNfsOnPremConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    agent_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.agentArns),
-  }
-}
-
-
 // Resource
 
-export class DatasyncLocationNfs extends cdktf.TerraformResource {
+export class DatasyncLocationNfs extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -54,59 +47,48 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // server_hostname - computed: false, optional: false, required: true
   private _serverHostname: string;
   public get serverHostname() {
-    return this.getStringAttribute('server_hostname');
+    return this._serverHostname;
   }
   public set serverHostname(value: string) {
     this._serverHostname = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverHostnameInput() {
-    return this._serverHostname
   }
 
   // subdirectory - computed: false, optional: false, required: true
   private _subdirectory: string;
   public get subdirectory() {
-    return this.getStringAttribute('subdirectory');
+    return this._subdirectory;
   }
   public set subdirectory(value: string) {
     this._subdirectory = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subdirectoryInput() {
-    return this._subdirectory
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // uri - computed: true, optional: false, required: false
+  // uri - computed: true, optional: false, required: true
   public get uri() {
     return this.getStringAttribute('uri');
   }
@@ -114,14 +96,10 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
   // on_prem_config - computed: false, optional: false, required: true
   private _onPremConfig: DatasyncLocationNfsOnPremConfig[];
   public get onPremConfig() {
-    return this.interpolationForAttribute('on_prem_config') as any;
+    return this._onPremConfig;
   }
   public set onPremConfig(value: DatasyncLocationNfsOnPremConfig[]) {
     this._onPremConfig = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get onPremConfigInput() {
-    return this._onPremConfig
   }
 
   // =========
@@ -130,10 +108,10 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      server_hostname: cdktf.stringToTerraform(this._serverHostname),
-      subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      on_prem_config: cdktf.listMapper(datasyncLocationNfsOnPremConfigToTerraform)(this._onPremConfig),
+      server_hostname: this._serverHostname,
+      subdirectory: this._subdirectory,
+      tags: this._tags,
+      on_prem_config: this._onPremConfig,
     };
   }
 }

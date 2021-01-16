@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRegionsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRegionsConfig extends TerraformMetaArguments {
   readonly allRegions?: boolean;
   /** filter block */
   readonly filter?: DataAwsRegionsFilter[];
@@ -16,18 +17,9 @@ export interface DataAwsRegionsFilter {
   readonly values: string[];
 }
 
-function dataAwsRegionsFilterToTerraform(struct?: DataAwsRegionsFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsRegions extends cdktf.TerraformDataSource {
+export class DataAwsRegions extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -55,25 +47,22 @@ export class DataAwsRegions extends cdktf.TerraformDataSource {
   // all_regions - computed: false, optional: true, required: false
   private _allRegions?: boolean;
   public get allRegions() {
-    return this.getBooleanAttribute('all_regions');
+    return this._allRegions;
   }
-  public set allRegions(value: boolean ) {
+  public set allRegions(value: boolean | undefined) {
     this._allRegions = value;
-  }
-  public resetAllRegions() {
-    this._allRegions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allRegionsInput() {
-    return this._allRegions
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // names - computed: true, optional: false, required: false
+  // names - computed: true, optional: false, required: true
   public get names() {
     return this.getListAttribute('names');
   }
@@ -81,17 +70,10 @@ export class DataAwsRegions extends cdktf.TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsRegionsFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsRegionsFilter[] ) {
+  public set filter(value: DataAwsRegionsFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -100,8 +82,8 @@ export class DataAwsRegions extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_regions: cdktf.booleanToTerraform(this._allRegions),
-      filter: cdktf.listMapper(dataAwsRegionsFilterToTerraform)(this._filter),
+      all_regions: this._allRegions,
+      filter: this._filter,
     };
   }
 }

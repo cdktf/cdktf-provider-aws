@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcrAuthorizationTokenConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcrAuthorizationTokenConfig extends TerraformMetaArguments {
   readonly registryId?: string;
 }
 
 // Resource
 
-export class DataAwsEcrAuthorizationToken extends cdktf.TerraformDataSource {
+export class DataAwsEcrAuthorizationToken extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,27 +37,31 @@ export class DataAwsEcrAuthorizationToken extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // authorization_token - computed: true, optional: false, required: false
+  // authorization_token - computed: true, optional: false, required: true
   public get authorizationToken() {
     return this.getStringAttribute('authorization_token');
   }
 
-  // expires_at - computed: true, optional: false, required: false
+  // expires_at - computed: true, optional: false, required: true
   public get expiresAt() {
     return this.getStringAttribute('expires_at');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // password - computed: true, optional: false, required: false
+  // password - computed: true, optional: false, required: true
   public get password() {
     return this.getStringAttribute('password');
   }
 
-  // proxy_endpoint - computed: true, optional: false, required: false
+  // proxy_endpoint - computed: true, optional: false, required: true
   public get proxyEndpoint() {
     return this.getStringAttribute('proxy_endpoint');
   }
@@ -64,20 +69,13 @@ export class DataAwsEcrAuthorizationToken extends cdktf.TerraformDataSource {
   // registry_id - computed: false, optional: true, required: false
   private _registryId?: string;
   public get registryId() {
-    return this.getStringAttribute('registry_id');
+    return this._registryId;
   }
-  public set registryId(value: string ) {
+  public set registryId(value: string | undefined) {
     this._registryId = value;
   }
-  public resetRegistryId() {
-    this._registryId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get registryIdInput() {
-    return this._registryId
-  }
 
-  // user_name - computed: true, optional: false, required: false
+  // user_name - computed: true, optional: false, required: true
   public get userName() {
     return this.getStringAttribute('user_name');
   }
@@ -88,7 +86,7 @@ export class DataAwsEcrAuthorizationToken extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      registry_id: cdktf.stringToTerraform(this._registryId),
+      registry_id: this._registryId,
     };
   }
 }

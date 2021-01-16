@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EmrSecurityConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface EmrSecurityConfigurationConfig extends TerraformMetaArguments {
   readonly configuration: string;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -14,7 +15,7 @@ export interface EmrSecurityConfigurationConfig extends cdktf.TerraformMetaArgum
 
 // Resource
 
-export class EmrSecurityConfiguration extends cdktf.TerraformResource {
+export class EmrSecurityConfiguration extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,56 +44,42 @@ export class EmrSecurityConfiguration extends cdktf.TerraformResource {
   // configuration - computed: false, optional: false, required: true
   private _configuration: string;
   public get configuration() {
-    return this.getStringAttribute('configuration');
+    return this._configuration;
   }
   public set configuration(value: string) {
     this._configuration = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get configurationInput() {
-    return this._configuration
-  }
 
-  // creation_date - computed: true, optional: false, required: false
+  // creation_date - computed: true, optional: false, required: true
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // =========
@@ -101,9 +88,9 @@ export class EmrSecurityConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      configuration: cdktf.stringToTerraform(this._configuration),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      configuration: this._configuration,
+      name: this._name,
+      name_prefix: this._namePrefix,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
+export interface CodebuildProjectConfig extends TerraformMetaArguments {
   readonly badgeEnabled?: boolean;
   readonly buildTimeout?: number;
   readonly description?: string;
@@ -44,65 +45,20 @@ export interface CodebuildProjectArtifacts {
   readonly path?: string;
   readonly type: string;
 }
-
-function codebuildProjectArtifactsToTerraform(struct?: CodebuildProjectArtifacts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    artifact_identifier: cdktf.stringToTerraform(struct!.artifactIdentifier),
-    encryption_disabled: cdktf.booleanToTerraform(struct!.encryptionDisabled),
-    location: cdktf.stringToTerraform(struct!.location),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace_type: cdktf.stringToTerraform(struct!.namespaceType),
-    override_artifact_name: cdktf.booleanToTerraform(struct!.overrideArtifactName),
-    packaging: cdktf.stringToTerraform(struct!.packaging),
-    path: cdktf.stringToTerraform(struct!.path),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface CodebuildProjectCache {
   readonly location?: string;
   readonly modes?: string[];
   readonly type?: string;
 }
-
-function codebuildProjectCacheToTerraform(struct?: CodebuildProjectCache): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    location: cdktf.stringToTerraform(struct!.location),
-    modes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.modes),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface CodebuildProjectEnvironmentEnvironmentVariable {
   readonly name: string;
   readonly type?: string;
   readonly value: string;
 }
-
-function codebuildProjectEnvironmentEnvironmentVariableToTerraform(struct?: CodebuildProjectEnvironmentEnvironmentVariable): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
 export interface CodebuildProjectEnvironmentRegistryCredential {
   readonly credential: string;
   readonly credentialProvider: string;
 }
-
-function codebuildProjectEnvironmentRegistryCredentialToTerraform(struct?: CodebuildProjectEnvironmentRegistryCredential): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    credential: cdktf.stringToTerraform(struct!.credential),
-    credential_provider: cdktf.stringToTerraform(struct!.credentialProvider),
-  }
-}
-
 export interface CodebuildProjectEnvironment {
   readonly certificate?: string;
   readonly computeType: string;
@@ -115,66 +71,22 @@ export interface CodebuildProjectEnvironment {
   /** registry_credential block */
   readonly registryCredential?: CodebuildProjectEnvironmentRegistryCredential[];
 }
-
-function codebuildProjectEnvironmentToTerraform(struct?: CodebuildProjectEnvironment): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    compute_type: cdktf.stringToTerraform(struct!.computeType),
-    image: cdktf.stringToTerraform(struct!.image),
-    image_pull_credentials_type: cdktf.stringToTerraform(struct!.imagePullCredentialsType),
-    privileged_mode: cdktf.booleanToTerraform(struct!.privilegedMode),
-    type: cdktf.stringToTerraform(struct!.type),
-    environment_variable: cdktf.listMapper(codebuildProjectEnvironmentEnvironmentVariableToTerraform)(struct!.environmentVariable),
-    registry_credential: cdktf.listMapper(codebuildProjectEnvironmentRegistryCredentialToTerraform)(struct!.registryCredential),
-  }
-}
-
 export interface CodebuildProjectLogsConfigCloudwatchLogs {
   readonly groupName?: string;
   readonly status?: string;
   readonly streamName?: string;
 }
-
-function codebuildProjectLogsConfigCloudwatchLogsToTerraform(struct?: CodebuildProjectLogsConfigCloudwatchLogs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    group_name: cdktf.stringToTerraform(struct!.groupName),
-    status: cdktf.stringToTerraform(struct!.status),
-    stream_name: cdktf.stringToTerraform(struct!.streamName),
-  }
-}
-
 export interface CodebuildProjectLogsConfigS3Logs {
   readonly encryptionDisabled?: boolean;
   readonly location?: string;
   readonly status?: string;
 }
-
-function codebuildProjectLogsConfigS3LogsToTerraform(struct?: CodebuildProjectLogsConfigS3Logs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    encryption_disabled: cdktf.booleanToTerraform(struct!.encryptionDisabled),
-    location: cdktf.stringToTerraform(struct!.location),
-    status: cdktf.stringToTerraform(struct!.status),
-  }
-}
-
 export interface CodebuildProjectLogsConfig {
   /** cloudwatch_logs block */
   readonly cloudwatchLogs?: CodebuildProjectLogsConfigCloudwatchLogs[];
   /** s3_logs block */
   readonly s3Logs?: CodebuildProjectLogsConfigS3Logs[];
 }
-
-function codebuildProjectLogsConfigToTerraform(struct?: CodebuildProjectLogsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    cloudwatch_logs: cdktf.listMapper(codebuildProjectLogsConfigCloudwatchLogsToTerraform)(struct!.cloudwatchLogs),
-    s3_logs: cdktf.listMapper(codebuildProjectLogsConfigS3LogsToTerraform)(struct!.s3Logs),
-  }
-}
-
 export interface CodebuildProjectSecondaryArtifacts {
   readonly artifactIdentifier: string;
   readonly encryptionDisabled?: boolean;
@@ -186,46 +98,13 @@ export interface CodebuildProjectSecondaryArtifacts {
   readonly path?: string;
   readonly type: string;
 }
-
-function codebuildProjectSecondaryArtifactsToTerraform(struct?: CodebuildProjectSecondaryArtifacts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    artifact_identifier: cdktf.stringToTerraform(struct!.artifactIdentifier),
-    encryption_disabled: cdktf.booleanToTerraform(struct!.encryptionDisabled),
-    location: cdktf.stringToTerraform(struct!.location),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace_type: cdktf.stringToTerraform(struct!.namespaceType),
-    override_artifact_name: cdktf.booleanToTerraform(struct!.overrideArtifactName),
-    packaging: cdktf.stringToTerraform(struct!.packaging),
-    path: cdktf.stringToTerraform(struct!.path),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface CodebuildProjectSecondarySourcesAuth {
   readonly resource?: string;
   readonly type: string;
 }
-
-function codebuildProjectSecondarySourcesAuthToTerraform(struct?: CodebuildProjectSecondarySourcesAuth): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    resource: cdktf.stringToTerraform(struct!.resource),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface CodebuildProjectSecondarySourcesGitSubmodulesConfig {
   readonly fetchSubmodules: boolean;
 }
-
-function codebuildProjectSecondarySourcesGitSubmodulesConfigToTerraform(struct?: CodebuildProjectSecondarySourcesGitSubmodulesConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    fetch_submodules: cdktf.booleanToTerraform(struct!.fetchSubmodules),
-  }
-}
-
 export interface CodebuildProjectSecondarySources {
   readonly buildspec?: string;
   readonly gitCloneDepth?: number;
@@ -239,46 +118,13 @@ export interface CodebuildProjectSecondarySources {
   /** git_submodules_config block */
   readonly gitSubmodulesConfig?: CodebuildProjectSecondarySourcesGitSubmodulesConfig[];
 }
-
-function codebuildProjectSecondarySourcesToTerraform(struct?: CodebuildProjectSecondarySources): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    buildspec: cdktf.stringToTerraform(struct!.buildspec),
-    git_clone_depth: cdktf.numberToTerraform(struct!.gitCloneDepth),
-    insecure_ssl: cdktf.booleanToTerraform(struct!.insecureSsl),
-    location: cdktf.stringToTerraform(struct!.location),
-    report_build_status: cdktf.booleanToTerraform(struct!.reportBuildStatus),
-    source_identifier: cdktf.stringToTerraform(struct!.sourceIdentifier),
-    type: cdktf.stringToTerraform(struct!.type),
-    auth: cdktf.listMapper(codebuildProjectSecondarySourcesAuthToTerraform)(struct!.auth),
-    git_submodules_config: cdktf.listMapper(codebuildProjectSecondarySourcesGitSubmodulesConfigToTerraform)(struct!.gitSubmodulesConfig),
-  }
-}
-
 export interface CodebuildProjectSourceAuth {
   readonly resource?: string;
   readonly type: string;
 }
-
-function codebuildProjectSourceAuthToTerraform(struct?: CodebuildProjectSourceAuth): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    resource: cdktf.stringToTerraform(struct!.resource),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface CodebuildProjectSourceGitSubmodulesConfig {
   readonly fetchSubmodules: boolean;
 }
-
-function codebuildProjectSourceGitSubmodulesConfigToTerraform(struct?: CodebuildProjectSourceGitSubmodulesConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    fetch_submodules: cdktf.booleanToTerraform(struct!.fetchSubmodules),
-  }
-}
-
 export interface CodebuildProjectSource {
   readonly buildspec?: string;
   readonly gitCloneDepth?: number;
@@ -291,40 +137,15 @@ export interface CodebuildProjectSource {
   /** git_submodules_config block */
   readonly gitSubmodulesConfig?: CodebuildProjectSourceGitSubmodulesConfig[];
 }
-
-function codebuildProjectSourceToTerraform(struct?: CodebuildProjectSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    buildspec: cdktf.stringToTerraform(struct!.buildspec),
-    git_clone_depth: cdktf.numberToTerraform(struct!.gitCloneDepth),
-    insecure_ssl: cdktf.booleanToTerraform(struct!.insecureSsl),
-    location: cdktf.stringToTerraform(struct!.location),
-    report_build_status: cdktf.booleanToTerraform(struct!.reportBuildStatus),
-    type: cdktf.stringToTerraform(struct!.type),
-    auth: cdktf.listMapper(codebuildProjectSourceAuthToTerraform)(struct!.auth),
-    git_submodules_config: cdktf.listMapper(codebuildProjectSourceGitSubmodulesConfigToTerraform)(struct!.gitSubmodulesConfig),
-  }
-}
-
 export interface CodebuildProjectVpcConfig {
   readonly securityGroupIds: string[];
   readonly subnets: string[];
   readonly vpcId: string;
 }
 
-function codebuildProjectVpcConfigToTerraform(struct?: CodebuildProjectVpcConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
-  }
-}
-
-
 // Resource
 
-export class CodebuildProject extends cdktf.TerraformResource {
+export class CodebuildProject extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -364,7 +185,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -372,20 +193,13 @@ export class CodebuildProject extends cdktf.TerraformResource {
   // badge_enabled - computed: false, optional: true, required: false
   private _badgeEnabled?: boolean;
   public get badgeEnabled() {
-    return this.getBooleanAttribute('badge_enabled');
+    return this._badgeEnabled;
   }
-  public set badgeEnabled(value: boolean ) {
+  public set badgeEnabled(value: boolean | undefined) {
     this._badgeEnabled = value;
   }
-  public resetBadgeEnabled() {
-    this._badgeEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get badgeEnabledInput() {
-    return this._badgeEnabled
-  }
 
-  // badge_url - computed: true, optional: false, required: false
+  // badge_url - computed: true, optional: false, required: true
   public get badgeUrl() {
     return this.getStringAttribute('badge_url');
   }
@@ -393,247 +207,154 @@ export class CodebuildProject extends cdktf.TerraformResource {
   // build_timeout - computed: false, optional: true, required: false
   private _buildTimeout?: number;
   public get buildTimeout() {
-    return this.getNumberAttribute('build_timeout');
+    return this._buildTimeout;
   }
-  public set buildTimeout(value: number ) {
+  public set buildTimeout(value: number | undefined) {
     this._buildTimeout = value;
-  }
-  public resetBuildTimeout() {
-    this._buildTimeout = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get buildTimeoutInput() {
-    return this._buildTimeout
   }
 
   // description - computed: true, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description ?? this.getStringAttribute('description');
   }
-  public set description(value: string) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // encryption_key - computed: true, optional: true, required: false
   private _encryptionKey?: string;
   public get encryptionKey() {
-    return this.getStringAttribute('encryption_key');
+    return this._encryptionKey ?? this.getStringAttribute('encryption_key');
   }
-  public set encryptionKey(value: string) {
+  public set encryptionKey(value: string | undefined) {
     this._encryptionKey = value;
-  }
-  public resetEncryptionKey() {
-    this._encryptionKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get encryptionKeyInput() {
-    return this._encryptionKey
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // queued_timeout - computed: false, optional: true, required: false
   private _queuedTimeout?: number;
   public get queuedTimeout() {
-    return this.getNumberAttribute('queued_timeout');
+    return this._queuedTimeout;
   }
-  public set queuedTimeout(value: number ) {
+  public set queuedTimeout(value: number | undefined) {
     this._queuedTimeout = value;
-  }
-  public resetQueuedTimeout() {
-    this._queuedTimeout = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get queuedTimeoutInput() {
-    return this._queuedTimeout
   }
 
   // service_role - computed: false, optional: false, required: true
   private _serviceRole: string;
   public get serviceRole() {
-    return this.getStringAttribute('service_role');
+    return this._serviceRole;
   }
   public set serviceRole(value: string) {
     this._serviceRole = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceRoleInput() {
-    return this._serviceRole
   }
 
   // source_version - computed: false, optional: true, required: false
   private _sourceVersion?: string;
   public get sourceVersion() {
-    return this.getStringAttribute('source_version');
+    return this._sourceVersion;
   }
-  public set sourceVersion(value: string ) {
+  public set sourceVersion(value: string | undefined) {
     this._sourceVersion = value;
-  }
-  public resetSourceVersion() {
-    this._sourceVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceVersionInput() {
-    return this._sourceVersion
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // artifacts - computed: false, optional: false, required: true
   private _artifacts: CodebuildProjectArtifacts[];
   public get artifacts() {
-    return this.interpolationForAttribute('artifacts') as any;
+    return this._artifacts;
   }
   public set artifacts(value: CodebuildProjectArtifacts[]) {
     this._artifacts = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get artifactsInput() {
-    return this._artifacts
   }
 
   // cache - computed: false, optional: true, required: false
   private _cache?: CodebuildProjectCache[];
   public get cache() {
-    return this.interpolationForAttribute('cache') as any;
+    return this._cache;
   }
-  public set cache(value: CodebuildProjectCache[] ) {
+  public set cache(value: CodebuildProjectCache[] | undefined) {
     this._cache = value;
-  }
-  public resetCache() {
-    this._cache = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cacheInput() {
-    return this._cache
   }
 
   // environment - computed: false, optional: false, required: true
   private _environment: CodebuildProjectEnvironment[];
   public get environment() {
-    return this.interpolationForAttribute('environment') as any;
+    return this._environment;
   }
   public set environment(value: CodebuildProjectEnvironment[]) {
     this._environment = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get environmentInput() {
-    return this._environment
   }
 
   // logs_config - computed: false, optional: true, required: false
   private _logsConfig?: CodebuildProjectLogsConfig[];
   public get logsConfig() {
-    return this.interpolationForAttribute('logs_config') as any;
+    return this._logsConfig;
   }
-  public set logsConfig(value: CodebuildProjectLogsConfig[] ) {
+  public set logsConfig(value: CodebuildProjectLogsConfig[] | undefined) {
     this._logsConfig = value;
-  }
-  public resetLogsConfig() {
-    this._logsConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logsConfigInput() {
-    return this._logsConfig
   }
 
   // secondary_artifacts - computed: false, optional: true, required: false
   private _secondaryArtifacts?: CodebuildProjectSecondaryArtifacts[];
   public get secondaryArtifacts() {
-    return this.interpolationForAttribute('secondary_artifacts') as any;
+    return this._secondaryArtifacts;
   }
-  public set secondaryArtifacts(value: CodebuildProjectSecondaryArtifacts[] ) {
+  public set secondaryArtifacts(value: CodebuildProjectSecondaryArtifacts[] | undefined) {
     this._secondaryArtifacts = value;
-  }
-  public resetSecondaryArtifacts() {
-    this._secondaryArtifacts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secondaryArtifactsInput() {
-    return this._secondaryArtifacts
   }
 
   // secondary_sources - computed: false, optional: true, required: false
   private _secondarySources?: CodebuildProjectSecondarySources[];
   public get secondarySources() {
-    return this.interpolationForAttribute('secondary_sources') as any;
+    return this._secondarySources;
   }
-  public set secondarySources(value: CodebuildProjectSecondarySources[] ) {
+  public set secondarySources(value: CodebuildProjectSecondarySources[] | undefined) {
     this._secondarySources = value;
-  }
-  public resetSecondarySources() {
-    this._secondarySources = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secondarySourcesInput() {
-    return this._secondarySources
   }
 
   // source - computed: false, optional: false, required: true
   private _source: CodebuildProjectSource[];
   public get source() {
-    return this.interpolationForAttribute('source') as any;
+    return this._source;
   }
   public set source(value: CodebuildProjectSource[]) {
     this._source = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceInput() {
-    return this._source
   }
 
   // vpc_config - computed: false, optional: true, required: false
   private _vpcConfig?: CodebuildProjectVpcConfig[];
   public get vpcConfig() {
-    return this.interpolationForAttribute('vpc_config') as any;
+    return this._vpcConfig;
   }
-  public set vpcConfig(value: CodebuildProjectVpcConfig[] ) {
+  public set vpcConfig(value: CodebuildProjectVpcConfig[] | undefined) {
     this._vpcConfig = value;
-  }
-  public resetVpcConfig() {
-    this._vpcConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcConfigInput() {
-    return this._vpcConfig
   }
 
   // =========
@@ -642,23 +363,23 @@ export class CodebuildProject extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      badge_enabled: cdktf.booleanToTerraform(this._badgeEnabled),
-      build_timeout: cdktf.numberToTerraform(this._buildTimeout),
-      description: cdktf.stringToTerraform(this._description),
-      encryption_key: cdktf.stringToTerraform(this._encryptionKey),
-      name: cdktf.stringToTerraform(this._name),
-      queued_timeout: cdktf.numberToTerraform(this._queuedTimeout),
-      service_role: cdktf.stringToTerraform(this._serviceRole),
-      source_version: cdktf.stringToTerraform(this._sourceVersion),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      artifacts: cdktf.listMapper(codebuildProjectArtifactsToTerraform)(this._artifacts),
-      cache: cdktf.listMapper(codebuildProjectCacheToTerraform)(this._cache),
-      environment: cdktf.listMapper(codebuildProjectEnvironmentToTerraform)(this._environment),
-      logs_config: cdktf.listMapper(codebuildProjectLogsConfigToTerraform)(this._logsConfig),
-      secondary_artifacts: cdktf.listMapper(codebuildProjectSecondaryArtifactsToTerraform)(this._secondaryArtifacts),
-      secondary_sources: cdktf.listMapper(codebuildProjectSecondarySourcesToTerraform)(this._secondarySources),
-      source: cdktf.listMapper(codebuildProjectSourceToTerraform)(this._source),
-      vpc_config: cdktf.listMapper(codebuildProjectVpcConfigToTerraform)(this._vpcConfig),
+      badge_enabled: this._badgeEnabled,
+      build_timeout: this._buildTimeout,
+      description: this._description,
+      encryption_key: this._encryptionKey,
+      name: this._name,
+      queued_timeout: this._queuedTimeout,
+      service_role: this._serviceRole,
+      source_version: this._sourceVersion,
+      tags: this._tags,
+      artifacts: this._artifacts,
+      cache: this._cache,
+      environment: this._environment,
+      logs_config: this._logsConfig,
+      secondary_artifacts: this._secondaryArtifacts,
+      secondary_sources: this._secondarySources,
+      source: this._source,
+      vpc_config: this._vpcConfig,
     };
   }
 }

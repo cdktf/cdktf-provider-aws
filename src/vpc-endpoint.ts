@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface VpcEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointConfig extends TerraformMetaArguments {
   readonly autoAccept?: boolean;
   readonly policy?: string;
   readonly privateDnsEnabled?: boolean;
@@ -20,14 +22,14 @@ export interface VpcEndpointConfig extends cdktf.TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: VpcEndpointTimeouts;
 }
-export class VpcEndpointDnsEntry extends cdktf.ComplexComputedList {
+export class VpcEndpointDnsEntry extends ComplexComputedList {
 
-  // dns_name - computed: true, optional: false, required: false
+  // dns_name - computed: true, optional: false, required: true
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
 
-  // hosted_zone_id - computed: true, optional: false, required: false
+  // hosted_zone_id - computed: true, optional: false, required: true
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
@@ -38,19 +40,9 @@ export interface VpcEndpointTimeouts {
   readonly update?: string;
 }
 
-function vpcEndpointTimeoutsToTerraform(struct?: VpcEndpointTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class VpcEndpoint extends cdktf.TerraformResource {
+export class VpcEndpoint extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -84,7 +76,7 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -92,40 +84,37 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // auto_accept - computed: false, optional: true, required: false
   private _autoAccept?: boolean;
   public get autoAccept() {
-    return this.getBooleanAttribute('auto_accept');
+    return this._autoAccept;
   }
-  public set autoAccept(value: boolean ) {
+  public set autoAccept(value: boolean | undefined) {
     this._autoAccept = value;
   }
-  public resetAutoAccept() {
-    this._autoAccept = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoAcceptInput() {
-    return this._autoAccept
-  }
 
-  // cidr_blocks - computed: true, optional: false, required: false
+  // cidr_blocks - computed: true, optional: false, required: true
   public get cidrBlocks() {
     return this.getListAttribute('cidr_blocks');
   }
 
-  // dns_entry - computed: true, optional: false, required: false
+  // dns_entry - computed: true, optional: false, required: true
   public dnsEntry(index: string) {
     return new VpcEndpointDnsEntry(this, 'dns_entry', index);
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // network_interface_ids - computed: true, optional: false, required: false
+  // network_interface_ids - computed: true, optional: false, required: true
   public get networkInterfaceIds() {
     return this.getListAttribute('network_interface_ids');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -133,20 +122,13 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy ?? this.getStringAttribute('policy');
   }
-  public set policy(value: string) {
+  public set policy(value: string | undefined) {
     this._policy = value;
   }
-  public resetPolicy() {
-    this._policy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
-  }
 
-  // prefix_list_id - computed: true, optional: false, required: false
+  // prefix_list_id - computed: true, optional: false, required: true
   public get prefixListId() {
     return this.getStringAttribute('prefix_list_id');
   }
@@ -154,20 +136,13 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // private_dns_enabled - computed: false, optional: true, required: false
   private _privateDnsEnabled?: boolean;
   public get privateDnsEnabled() {
-    return this.getBooleanAttribute('private_dns_enabled');
+    return this._privateDnsEnabled;
   }
-  public set privateDnsEnabled(value: boolean ) {
+  public set privateDnsEnabled(value: boolean | undefined) {
     this._privateDnsEnabled = value;
   }
-  public resetPrivateDnsEnabled() {
-    this._privateDnsEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateDnsEnabledInput() {
-    return this._privateDnsEnabled
-  }
 
-  // requester_managed - computed: true, optional: false, required: false
+  // requester_managed - computed: true, optional: false, required: true
   public get requesterManaged() {
     return this.getBooleanAttribute('requester_managed');
   }
@@ -175,49 +150,31 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // route_table_ids - computed: true, optional: true, required: false
   private _routeTableIds?: string[];
   public get routeTableIds() {
-    return this.getListAttribute('route_table_ids');
+    return this._routeTableIds ?? this.getListAttribute('route_table_ids');
   }
-  public set routeTableIds(value: string[]) {
+  public set routeTableIds(value: string[] | undefined) {
     this._routeTableIds = value;
-  }
-  public resetRouteTableIds() {
-    this._routeTableIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeTableIdsInput() {
-    return this._routeTableIds
   }
 
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[];
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return this._securityGroupIds ?? this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[]) {
+  public set securityGroupIds(value: string[] | undefined) {
     this._securityGroupIds = value;
-  }
-  public resetSecurityGroupIds() {
-    this._securityGroupIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupIdsInput() {
-    return this._securityGroupIds
   }
 
   // service_name - computed: false, optional: false, required: true
   private _serviceName: string;
   public get serviceName() {
-    return this.getStringAttribute('service_name');
+    return this._serviceName;
   }
   public set serviceName(value: string) {
     this._serviceName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get serviceNameInput() {
-    return this._serviceName
-  }
 
-  // state - computed: true, optional: false, required: false
+  // state - computed: true, optional: false, required: true
   public get state() {
     return this.getStringAttribute('state');
   }
@@ -225,78 +182,46 @@ export class VpcEndpoint extends cdktf.TerraformResource {
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[];
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return this._subnetIds ?? this.getListAttribute('subnet_ids');
   }
-  public set subnetIds(value: string[]) {
+  public set subnetIds(value: string[] | undefined) {
     this._subnetIds = value;
-  }
-  public resetSubnetIds() {
-    this._subnetIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdsInput() {
-    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // vpc_endpoint_type - computed: false, optional: true, required: false
   private _vpcEndpointType?: string;
   public get vpcEndpointType() {
-    return this.getStringAttribute('vpc_endpoint_type');
+    return this._vpcEndpointType;
   }
-  public set vpcEndpointType(value: string ) {
+  public set vpcEndpointType(value: string | undefined) {
     this._vpcEndpointType = value;
-  }
-  public resetVpcEndpointType() {
-    this._vpcEndpointType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcEndpointTypeInput() {
-    return this._vpcEndpointType
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this.getStringAttribute('vpc_id');
+    return this._vpcId;
   }
   public set vpcId(value: string) {
     this._vpcId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: VpcEndpointTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: VpcEndpointTimeouts ) {
+  public set timeouts(value: VpcEndpointTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -305,17 +230,17 @@ export class VpcEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_accept: cdktf.booleanToTerraform(this._autoAccept),
-      policy: cdktf.stringToTerraform(this._policy),
-      private_dns_enabled: cdktf.booleanToTerraform(this._privateDnsEnabled),
-      route_table_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._routeTableIds),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      service_name: cdktf.stringToTerraform(this._serviceName),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_endpoint_type: cdktf.stringToTerraform(this._vpcEndpointType),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      timeouts: vpcEndpointTimeoutsToTerraform(this._timeouts),
+      auto_accept: this._autoAccept,
+      policy: this._policy,
+      private_dns_enabled: this._privateDnsEnabled,
+      route_table_ids: this._routeTableIds,
+      security_group_ids: this._securityGroupIds,
+      service_name: this._serviceName,
+      subnet_ids: this._subnetIds,
+      tags: this._tags,
+      vpc_endpoint_type: this._vpcEndpointType,
+      vpc_id: this._vpcId,
+      timeouts: this._timeouts,
     };
   }
 }

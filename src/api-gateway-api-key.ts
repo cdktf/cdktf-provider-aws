@@ -2,36 +2,22 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayApiKeyConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayApiKeyConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly enabled?: boolean;
   readonly name: string;
   readonly tags?: { [key: string]: string };
   readonly value?: string;
-  /** stage_key block */
-  readonly stageKey?: ApiGatewayApiKeyStageKey[];
 }
-export interface ApiGatewayApiKeyStageKey {
-  readonly restApiId: string;
-  readonly stageName: string;
-}
-
-function apiGatewayApiKeyStageKeyToTerraform(struct?: ApiGatewayApiKeyStageKey): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    rest_api_id: cdktf.stringToTerraform(struct!.restApiId),
-    stage_name: cdktf.stringToTerraform(struct!.stageName),
-  }
-}
-
 
 // Resource
 
-export class ApiGatewayApiKey extends cdktf.TerraformResource {
+export class ApiGatewayApiKey extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -53,19 +39,18 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._value = config.value;
-    this._stageKey = config.stageKey;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // created_date - computed: true, optional: false, required: false
+  // created_date - computed: true, optional: false, required: true
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
@@ -73,41 +58,31 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this._enabled;
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | undefined) {
     this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // last_updated_date - computed: true, optional: false, required: false
+  // last_updated_date - computed: true, optional: false, required: true
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -115,62 +90,28 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // value - computed: true, optional: true, required: false
   private _value?: string;
   public get value() {
-    return this.getStringAttribute('value');
+    return this._value ?? this.getStringAttribute('value');
   }
-  public set value(value: string) {
+  public set value(value: string | undefined) {
     this._value = value;
-  }
-  public resetValue() {
-    this._value = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value
-  }
-
-  // stage_key - computed: false, optional: true, required: false
-  private _stageKey?: ApiGatewayApiKeyStageKey[];
-  public get stageKey() {
-    return this.interpolationForAttribute('stage_key') as any;
-  }
-  public set stageKey(value: ApiGatewayApiKeyStageKey[] ) {
-    this._stageKey = value;
-  }
-  public resetStageKey() {
-    this._stageKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stageKeyInput() {
-    return this._stageKey
   }
 
   // =========
@@ -179,12 +120,11 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      value: cdktf.stringToTerraform(this._value),
-      stage_key: cdktf.listMapper(apiGatewayApiKeyStageKeyToTerraform)(this._stageKey),
+      description: this._description,
+      enabled: this._enabled,
+      name: this._name,
+      tags: this._tags,
+      value: this._value,
     };
   }
 }

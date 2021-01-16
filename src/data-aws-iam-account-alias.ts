@@ -2,16 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamAccountAliasConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIamAccountAliasConfig extends TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsIamAccountAlias extends cdktf.TerraformDataSource {
+export class DataAwsIamAccountAlias extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -34,14 +35,18 @@ export class DataAwsIamAccountAlias extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_alias - computed: true, optional: false, required: false
+  // account_alias - computed: true, optional: false, required: true
   public get accountAlias() {
     return this.getStringAttribute('account_alias');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========

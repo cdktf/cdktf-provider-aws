@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IotPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface IotPolicyConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class IotPolicy extends cdktf.TerraformResource {
+export class IotPolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,45 +39,41 @@ export class IotPolicy extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // default_version_id - computed: true, optional: false, required: false
+  // default_version_id - computed: true, optional: false, required: true
   public get defaultVersionId() {
     return this.getStringAttribute('default_version_id');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy;
   }
   public set policy(value: string) {
     this._policy = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // =========
@@ -85,8 +82,8 @@ export class IotPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      policy: cdktf.stringToTerraform(this._policy),
+      name: this._name,
+      policy: this._policy,
     };
   }
 }

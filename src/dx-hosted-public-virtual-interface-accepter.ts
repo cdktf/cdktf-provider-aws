@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DxHostedPublicVirtualInterfaceAccepterConfig extends cdktf.TerraformMetaArguments {
+export interface DxHostedPublicVirtualInterfaceAccepterConfig extends TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly virtualInterfaceId: string;
   /** timeouts block */
@@ -17,18 +18,9 @@ export interface DxHostedPublicVirtualInterfaceAccepterTimeouts {
   readonly delete?: string;
 }
 
-function dxHostedPublicVirtualInterfaceAccepterTimeoutsToTerraform(struct?: DxHostedPublicVirtualInterfaceAccepterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
-
 // Resource
 
-export class DxHostedPublicVirtualInterfaceAccepter extends cdktf.TerraformResource {
+export class DxHostedPublicVirtualInterfaceAccepter extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -54,59 +46,45 @@ export class DxHostedPublicVirtualInterfaceAccepter extends cdktf.TerraformResou
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // virtual_interface_id - computed: false, optional: false, required: true
   private _virtualInterfaceId: string;
   public get virtualInterfaceId() {
-    return this.getStringAttribute('virtual_interface_id');
+    return this._virtualInterfaceId;
   }
   public set virtualInterfaceId(value: string) {
     this._virtualInterfaceId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get virtualInterfaceIdInput() {
-    return this._virtualInterfaceId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DxHostedPublicVirtualInterfaceAccepterTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: DxHostedPublicVirtualInterfaceAccepterTimeouts ) {
+  public set timeouts(value: DxHostedPublicVirtualInterfaceAccepterTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -115,9 +93,9 @@ export class DxHostedPublicVirtualInterfaceAccepter extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
-      timeouts: dxHostedPublicVirtualInterfaceAccepterTimeoutsToTerraform(this._timeouts),
+      tags: this._tags,
+      virtual_interface_id: this._virtualInterfaceId,
+      timeouts: this._timeouts,
     };
   }
 }

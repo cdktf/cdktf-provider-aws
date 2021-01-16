@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RedshiftSnapshotCopyGrantConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftSnapshotCopyGrantConfig extends TerraformMetaArguments {
   readonly kmsKeyId?: string;
   readonly snapshotCopyGrantName: string;
   readonly tags?: { [key: string]: string };
@@ -14,7 +15,7 @@ export interface RedshiftSnapshotCopyGrantConfig extends cdktf.TerraformMetaArgu
 
 // Resource
 
-export class RedshiftSnapshotCopyGrant extends cdktf.TerraformResource {
+export class RedshiftSnapshotCopyGrant extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,59 +41,45 @@ export class RedshiftSnapshotCopyGrant extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this.getStringAttribute('kms_key_id');
+    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string) {
+  public set kmsKeyId(value: string | undefined) {
     this._kmsKeyId = value;
-  }
-  public resetKmsKeyId() {
-    this._kmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyIdInput() {
-    return this._kmsKeyId
   }
 
   // snapshot_copy_grant_name - computed: false, optional: false, required: true
   private _snapshotCopyGrantName: string;
   public get snapshotCopyGrantName() {
-    return this.getStringAttribute('snapshot_copy_grant_name');
+    return this._snapshotCopyGrantName;
   }
   public set snapshotCopyGrantName(value: string) {
     this._snapshotCopyGrantName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotCopyGrantNameInput() {
-    return this._snapshotCopyGrantName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -101,9 +88,9 @@ export class RedshiftSnapshotCopyGrant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      snapshot_copy_grant_name: cdktf.stringToTerraform(this._snapshotCopyGrantName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      kms_key_id: this._kmsKeyId,
+      snapshot_copy_grant_name: this._snapshotCopyGrantName,
+      tags: this._tags,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface WafRegexMatchSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafRegexMatchSetConfig extends TerraformMetaArguments {
   readonly name: string;
   /** regex_match_tuple block */
   readonly regexMatchTuple?: WafRegexMatchSetRegexMatchTuple[];
@@ -15,15 +16,6 @@ export interface WafRegexMatchSetRegexMatchTupleFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
-
-function wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(struct?: WafRegexMatchSetRegexMatchTupleFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    data: cdktf.stringToTerraform(struct!.data),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface WafRegexMatchSetRegexMatchTuple {
   readonly regexPatternSetId: string;
   readonly textTransformation: string;
@@ -31,19 +23,9 @@ export interface WafRegexMatchSetRegexMatchTuple {
   readonly fieldToMatch: WafRegexMatchSetRegexMatchTupleFieldToMatch[];
 }
 
-function wafRegexMatchSetRegexMatchTupleToTerraform(struct?: WafRegexMatchSetRegexMatchTuple): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    regex_pattern_set_id: cdktf.stringToTerraform(struct!.regexPatternSetId),
-    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
-    field_to_match: cdktf.listMapper(wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform)(struct!.fieldToMatch),
-  }
-}
-
-
 // Resource
 
-export class WafRegexMatchSet extends cdktf.TerraformResource {
+export class WafRegexMatchSet extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -68,43 +50,36 @@ export class WafRegexMatchSet extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // regex_match_tuple - computed: false, optional: true, required: false
   private _regexMatchTuple?: WafRegexMatchSetRegexMatchTuple[];
   public get regexMatchTuple() {
-    return this.interpolationForAttribute('regex_match_tuple') as any;
+    return this._regexMatchTuple;
   }
-  public set regexMatchTuple(value: WafRegexMatchSetRegexMatchTuple[] ) {
+  public set regexMatchTuple(value: WafRegexMatchSetRegexMatchTuple[] | undefined) {
     this._regexMatchTuple = value;
-  }
-  public resetRegexMatchTuple() {
-    this._regexMatchTuple = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regexMatchTupleInput() {
-    return this._regexMatchTuple
   }
 
   // =========
@@ -113,8 +88,8 @@ export class WafRegexMatchSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      regex_match_tuple: cdktf.listMapper(wafRegexMatchSetRegexMatchTupleToTerraform)(this._regexMatchTuple),
+      name: this._name,
+      regex_match_tuple: this._regexMatchTuple,
     };
   }
 }

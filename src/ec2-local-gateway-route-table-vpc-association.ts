@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Ec2LocalGatewayRouteTableVpcAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2LocalGatewayRouteTableVpcAssociationConfig extends TerraformMetaArguments {
   readonly localGatewayRouteTableId: string;
   readonly tags?: { [key: string]: string };
   readonly vpcId: string;
@@ -14,7 +15,7 @@ export interface Ec2LocalGatewayRouteTableVpcAssociationConfig extends cdktf.Ter
 
 // Resource
 
-export class Ec2LocalGatewayRouteTableVpcAssociation extends cdktf.TerraformResource {
+export class Ec2LocalGatewayRouteTableVpcAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,11 +42,15 @@ export class Ec2LocalGatewayRouteTableVpcAssociation extends cdktf.TerraformReso
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // local_gateway_id - computed: true, optional: false, required: false
+  // local_gateway_id - computed: true, optional: false, required: true
   public get localGatewayId() {
     return this.getStringAttribute('local_gateway_id');
   }
@@ -53,43 +58,28 @@ export class Ec2LocalGatewayRouteTableVpcAssociation extends cdktf.TerraformReso
   // local_gateway_route_table_id - computed: false, optional: false, required: true
   private _localGatewayRouteTableId: string;
   public get localGatewayRouteTableId() {
-    return this.getStringAttribute('local_gateway_route_table_id');
+    return this._localGatewayRouteTableId;
   }
   public set localGatewayRouteTableId(value: string) {
     this._localGatewayRouteTableId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get localGatewayRouteTableIdInput() {
-    return this._localGatewayRouteTableId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this.getStringAttribute('vpc_id');
+    return this._vpcId;
   }
   public set vpcId(value: string) {
     this._vpcId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
   }
 
   // =========
@@ -98,9 +88,9 @@ export class Ec2LocalGatewayRouteTableVpcAssociation extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      local_gateway_route_table_id: cdktf.stringToTerraform(this._localGatewayRouteTableId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      local_gateway_route_table_id: this._localGatewayRouteTableId,
+      tags: this._tags,
+      vpc_id: this._vpcId,
     };
   }
 }

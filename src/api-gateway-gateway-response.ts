@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayGatewayResponseConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayGatewayResponseConfig extends TerraformMetaArguments {
   readonly responseParameters?: { [key: string]: string };
   readonly responseTemplates?: { [key: string]: string };
   readonly responseType: string;
@@ -16,7 +17,7 @@ export interface ApiGatewayGatewayResponseConfig extends cdktf.TerraformMetaArgu
 
 // Resource
 
-export class ApiGatewayGatewayResponse extends cdktf.TerraformResource {
+export class ApiGatewayGatewayResponse extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,82 +46,57 @@ export class ApiGatewayGatewayResponse extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // response_parameters - computed: false, optional: true, required: false
   private _responseParameters?: { [key: string]: string };
   public get responseParameters() {
-    return this.interpolationForAttribute('response_parameters') as any;
+    return this._responseParameters;
   }
-  public set responseParameters(value: { [key: string]: string } ) {
+  public set responseParameters(value: { [key: string]: string } | undefined) {
     this._responseParameters = value;
-  }
-  public resetResponseParameters() {
-    this._responseParameters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseParametersInput() {
-    return this._responseParameters
   }
 
   // response_templates - computed: false, optional: true, required: false
   private _responseTemplates?: { [key: string]: string };
   public get responseTemplates() {
-    return this.interpolationForAttribute('response_templates') as any;
+    return this._responseTemplates;
   }
-  public set responseTemplates(value: { [key: string]: string } ) {
+  public set responseTemplates(value: { [key: string]: string } | undefined) {
     this._responseTemplates = value;
-  }
-  public resetResponseTemplates() {
-    this._responseTemplates = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseTemplatesInput() {
-    return this._responseTemplates
   }
 
   // response_type - computed: false, optional: false, required: true
   private _responseType: string;
   public get responseType() {
-    return this.getStringAttribute('response_type');
+    return this._responseType;
   }
   public set responseType(value: string) {
     this._responseType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseTypeInput() {
-    return this._responseType
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this.getStringAttribute('rest_api_id');
+    return this._restApiId;
   }
   public set restApiId(value: string) {
     this._restApiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restApiIdInput() {
-    return this._restApiId
   }
 
   // status_code - computed: false, optional: true, required: false
   private _statusCode?: string;
   public get statusCode() {
-    return this.getStringAttribute('status_code');
+    return this._statusCode;
   }
-  public set statusCode(value: string ) {
+  public set statusCode(value: string | undefined) {
     this._statusCode = value;
-  }
-  public resetStatusCode() {
-    this._statusCode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusCodeInput() {
-    return this._statusCode
   }
 
   // =========
@@ -129,11 +105,11 @@ export class ApiGatewayGatewayResponse extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      response_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseParameters),
-      response_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseTemplates),
-      response_type: cdktf.stringToTerraform(this._responseType),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      status_code: cdktf.stringToTerraform(this._statusCode),
+      response_parameters: this._responseParameters,
+      response_templates: this._responseTemplates,
+      response_type: this._responseType,
+      rest_api_id: this._restApiId,
+      status_code: this._statusCode,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AcmCertificateValidationConfig extends cdktf.TerraformMetaArguments {
+export interface AcmCertificateValidationConfig extends TerraformMetaArguments {
   readonly certificateArn: string;
   readonly validationRecordFqdns?: string[];
   /** timeouts block */
@@ -16,17 +17,9 @@ export interface AcmCertificateValidationTimeouts {
   readonly create?: string;
 }
 
-function acmCertificateValidationTimeoutsToTerraform(struct?: AcmCertificateValidationTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-  }
-}
-
-
 // Resource
 
-export class AcmCertificateValidation extends cdktf.TerraformResource {
+export class AcmCertificateValidation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -55,51 +48,37 @@ export class AcmCertificateValidation extends cdktf.TerraformResource {
   // certificate_arn - computed: false, optional: false, required: true
   private _certificateArn: string;
   public get certificateArn() {
-    return this.getStringAttribute('certificate_arn');
+    return this._certificateArn;
   }
   public set certificateArn(value: string) {
     this._certificateArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get certificateArnInput() {
-    return this._certificateArn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // validation_record_fqdns - computed: false, optional: true, required: false
   private _validationRecordFqdns?: string[];
   public get validationRecordFqdns() {
-    return this.getListAttribute('validation_record_fqdns');
+    return this._validationRecordFqdns;
   }
-  public set validationRecordFqdns(value: string[] ) {
+  public set validationRecordFqdns(value: string[] | undefined) {
     this._validationRecordFqdns = value;
-  }
-  public resetValidationRecordFqdns() {
-    this._validationRecordFqdns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get validationRecordFqdnsInput() {
-    return this._validationRecordFqdns
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: AcmCertificateValidationTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: AcmCertificateValidationTimeouts ) {
+  public set timeouts(value: AcmCertificateValidationTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -108,9 +87,9 @@ export class AcmCertificateValidation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
-      validation_record_fqdns: cdktf.listMapper(cdktf.stringToTerraform)(this._validationRecordFqdns),
-      timeouts: acmCertificateValidationTimeoutsToTerraform(this._timeouts),
+      certificate_arn: this._certificateArn,
+      validation_record_fqdns: this._validationRecordFqdns,
+      timeouts: this._timeouts,
     };
   }
 }

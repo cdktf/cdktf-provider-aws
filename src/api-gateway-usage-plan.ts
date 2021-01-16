@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayUsagePlanConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly productCode?: string;
@@ -22,47 +23,19 @@ export interface ApiGatewayUsagePlanApiStages {
   readonly apiId: string;
   readonly stage: string;
 }
-
-function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsagePlanApiStages): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    api_id: cdktf.stringToTerraform(struct!.apiId),
-    stage: cdktf.stringToTerraform(struct!.stage),
-  }
-}
-
 export interface ApiGatewayUsagePlanQuotaSettings {
   readonly limit: number;
   readonly offset?: number;
   readonly period: string;
 }
-
-function apiGatewayUsagePlanQuotaSettingsToTerraform(struct?: ApiGatewayUsagePlanQuotaSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    limit: cdktf.numberToTerraform(struct!.limit),
-    offset: cdktf.numberToTerraform(struct!.offset),
-    period: cdktf.stringToTerraform(struct!.period),
-  }
-}
-
 export interface ApiGatewayUsagePlanThrottleSettings {
   readonly burstLimit?: number;
   readonly rateLimit?: number;
 }
 
-function apiGatewayUsagePlanThrottleSettingsToTerraform(struct?: ApiGatewayUsagePlanThrottleSettings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    burst_limit: cdktf.numberToTerraform(struct!.burstLimit),
-    rate_limit: cdktf.numberToTerraform(struct!.rateLimit),
-  }
-}
-
-
 // Resource
 
-export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
+export class ApiGatewayUsagePlan extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -92,7 +65,7 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -100,115 +73,73 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // product_code - computed: false, optional: true, required: false
   private _productCode?: string;
   public get productCode() {
-    return this.getStringAttribute('product_code');
+    return this._productCode;
   }
-  public set productCode(value: string ) {
+  public set productCode(value: string | undefined) {
     this._productCode = value;
-  }
-  public resetProductCode() {
-    this._productCode = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get productCodeInput() {
-    return this._productCode
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // api_stages - computed: false, optional: true, required: false
   private _apiStages?: ApiGatewayUsagePlanApiStages[];
   public get apiStages() {
-    return this.interpolationForAttribute('api_stages') as any;
+    return this._apiStages;
   }
-  public set apiStages(value: ApiGatewayUsagePlanApiStages[] ) {
+  public set apiStages(value: ApiGatewayUsagePlanApiStages[] | undefined) {
     this._apiStages = value;
-  }
-  public resetApiStages() {
-    this._apiStages = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiStagesInput() {
-    return this._apiStages
   }
 
   // quota_settings - computed: false, optional: true, required: false
   private _quotaSettings?: ApiGatewayUsagePlanQuotaSettings[];
   public get quotaSettings() {
-    return this.interpolationForAttribute('quota_settings') as any;
+    return this._quotaSettings;
   }
-  public set quotaSettings(value: ApiGatewayUsagePlanQuotaSettings[] ) {
+  public set quotaSettings(value: ApiGatewayUsagePlanQuotaSettings[] | undefined) {
     this._quotaSettings = value;
-  }
-  public resetQuotaSettings() {
-    this._quotaSettings = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get quotaSettingsInput() {
-    return this._quotaSettings
   }
 
   // throttle_settings - computed: false, optional: true, required: false
   private _throttleSettings?: ApiGatewayUsagePlanThrottleSettings[];
   public get throttleSettings() {
-    return this.interpolationForAttribute('throttle_settings') as any;
+    return this._throttleSettings;
   }
-  public set throttleSettings(value: ApiGatewayUsagePlanThrottleSettings[] ) {
+  public set throttleSettings(value: ApiGatewayUsagePlanThrottleSettings[] | undefined) {
     this._throttleSettings = value;
-  }
-  public resetThrottleSettings() {
-    this._throttleSettings = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get throttleSettingsInput() {
-    return this._throttleSettings
   }
 
   // =========
@@ -217,13 +148,13 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      product_code: cdktf.stringToTerraform(this._productCode),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform)(this._apiStages),
-      quota_settings: cdktf.listMapper(apiGatewayUsagePlanQuotaSettingsToTerraform)(this._quotaSettings),
-      throttle_settings: cdktf.listMapper(apiGatewayUsagePlanThrottleSettingsToTerraform)(this._throttleSettings),
+      description: this._description,
+      name: this._name,
+      product_code: this._productCode,
+      tags: this._tags,
+      api_stages: this._apiStages,
+      quota_settings: this._quotaSettings,
+      throttle_settings: this._throttleSettings,
     };
   }
 }

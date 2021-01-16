@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
+export interface GlueCrawlerConfig extends TerraformMetaArguments {
   readonly classifiers?: string[];
   readonly configuration?: string;
   readonly databaseName: string;
@@ -23,6 +24,12 @@ export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
   readonly dynamodbTarget?: GlueCrawlerDynamodbTarget[];
   /** jdbc_target block */
   readonly jdbcTarget?: GlueCrawlerJdbcTarget[];
+  /** lineage_configuration block */
+  readonly lineageConfiguration?: GlueCrawlerLineageConfiguration[];
+  /** mongodb_target block */
+  readonly mongodbTarget?: GlueCrawlerMongodbTarget[];
+  /** recrawl_policy block */
+  readonly recrawlPolicy?: GlueCrawlerRecrawlPolicy[];
   /** s3_target block */
   readonly s3Target?: GlueCrawlerS3Target[];
   /** schema_change_policy block */
@@ -32,71 +39,40 @@ export interface GlueCrawlerCatalogTarget {
   readonly databaseName: string;
   readonly tables: string[];
 }
-
-function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogTarget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    tables: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tables),
-  }
-}
-
 export interface GlueCrawlerDynamodbTarget {
   readonly path: string;
+  readonly scanAll?: boolean;
+  readonly scanRate?: number;
 }
-
-function glueCrawlerDynamodbTargetToTerraform(struct?: GlueCrawlerDynamodbTarget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    path: cdktf.stringToTerraform(struct!.path),
-  }
-}
-
 export interface GlueCrawlerJdbcTarget {
   readonly connectionName: string;
   readonly exclusions?: string[];
   readonly path: string;
 }
-
-function glueCrawlerJdbcTargetToTerraform(struct?: GlueCrawlerJdbcTarget): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    connection_name: cdktf.stringToTerraform(struct!.connectionName),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
-    path: cdktf.stringToTerraform(struct!.path),
-  }
+export interface GlueCrawlerLineageConfiguration {
+  readonly crawlerLineageSettings?: string;
 }
-
+export interface GlueCrawlerMongodbTarget {
+  readonly connectionName: string;
+  readonly path: string;
+  readonly scanAll?: boolean;
+}
+export interface GlueCrawlerRecrawlPolicy {
+  readonly recrawlBehavior?: string;
+}
 export interface GlueCrawlerS3Target {
+  readonly connectionName?: string;
   readonly exclusions?: string[];
   readonly path: string;
 }
-
-function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
-    path: cdktf.stringToTerraform(struct!.path),
-  }
-}
-
 export interface GlueCrawlerSchemaChangePolicy {
   readonly deleteBehavior?: string;
   readonly updateBehavior?: string;
 }
 
-function glueCrawlerSchemaChangePolicyToTerraform(struct?: GlueCrawlerSchemaChangePolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    delete_behavior: cdktf.stringToTerraform(struct!.deleteBehavior),
-    update_behavior: cdktf.stringToTerraform(struct!.updateBehavior),
-  }
-}
-
-
 // Resource
 
-export class GlueCrawler extends cdktf.TerraformResource {
+export class GlueCrawler extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -126,6 +102,9 @@ export class GlueCrawler extends cdktf.TerraformResource {
     this._catalogTarget = config.catalogTarget;
     this._dynamodbTarget = config.dynamodbTarget;
     this._jdbcTarget = config.jdbcTarget;
+    this._lineageConfiguration = config.lineageConfiguration;
+    this._mongodbTarget = config.mongodbTarget;
+    this._recrawlPolicy = config.recrawlPolicy;
     this._s3Target = config.s3Target;
     this._schemaChangePolicy = config.schemaChangePolicy;
   }
@@ -134,7 +113,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -142,237 +121,172 @@ export class GlueCrawler extends cdktf.TerraformResource {
   // classifiers - computed: false, optional: true, required: false
   private _classifiers?: string[];
   public get classifiers() {
-    return this.getListAttribute('classifiers');
+    return this._classifiers;
   }
-  public set classifiers(value: string[] ) {
+  public set classifiers(value: string[] | undefined) {
     this._classifiers = value;
-  }
-  public resetClassifiers() {
-    this._classifiers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get classifiersInput() {
-    return this._classifiers
   }
 
   // configuration - computed: false, optional: true, required: false
   private _configuration?: string;
   public get configuration() {
-    return this.getStringAttribute('configuration');
+    return this._configuration;
   }
-  public set configuration(value: string ) {
+  public set configuration(value: string | undefined) {
     this._configuration = value;
-  }
-  public resetConfiguration() {
-    this._configuration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get configurationInput() {
-    return this._configuration
   }
 
   // database_name - computed: false, optional: false, required: true
   private _databaseName: string;
   public get databaseName() {
-    return this.getStringAttribute('database_name');
+    return this._databaseName;
   }
   public set databaseName(value: string) {
     this._databaseName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseNameInput() {
-    return this._databaseName
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // role - computed: false, optional: false, required: true
   private _role: string;
   public get role() {
-    return this.getStringAttribute('role');
+    return this._role;
   }
   public set role(value: string) {
     this._role = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleInput() {
-    return this._role
   }
 
   // schedule - computed: false, optional: true, required: false
   private _schedule?: string;
   public get schedule() {
-    return this.getStringAttribute('schedule');
+    return this._schedule;
   }
-  public set schedule(value: string ) {
+  public set schedule(value: string | undefined) {
     this._schedule = value;
-  }
-  public resetSchedule() {
-    this._schedule = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scheduleInput() {
-    return this._schedule
   }
 
   // security_configuration - computed: false, optional: true, required: false
   private _securityConfiguration?: string;
   public get securityConfiguration() {
-    return this.getStringAttribute('security_configuration');
+    return this._securityConfiguration;
   }
-  public set securityConfiguration(value: string ) {
+  public set securityConfiguration(value: string | undefined) {
     this._securityConfiguration = value;
-  }
-  public resetSecurityConfiguration() {
-    this._securityConfiguration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityConfigurationInput() {
-    return this._securityConfiguration
   }
 
   // table_prefix - computed: false, optional: true, required: false
   private _tablePrefix?: string;
   public get tablePrefix() {
-    return this.getStringAttribute('table_prefix');
+    return this._tablePrefix;
   }
-  public set tablePrefix(value: string ) {
+  public set tablePrefix(value: string | undefined) {
     this._tablePrefix = value;
-  }
-  public resetTablePrefix() {
-    this._tablePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tablePrefixInput() {
-    return this._tablePrefix
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // catalog_target - computed: false, optional: true, required: false
   private _catalogTarget?: GlueCrawlerCatalogTarget[];
   public get catalogTarget() {
-    return this.interpolationForAttribute('catalog_target') as any;
+    return this._catalogTarget;
   }
-  public set catalogTarget(value: GlueCrawlerCatalogTarget[] ) {
+  public set catalogTarget(value: GlueCrawlerCatalogTarget[] | undefined) {
     this._catalogTarget = value;
-  }
-  public resetCatalogTarget() {
-    this._catalogTarget = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get catalogTargetInput() {
-    return this._catalogTarget
   }
 
   // dynamodb_target - computed: false, optional: true, required: false
   private _dynamodbTarget?: GlueCrawlerDynamodbTarget[];
   public get dynamodbTarget() {
-    return this.interpolationForAttribute('dynamodb_target') as any;
+    return this._dynamodbTarget;
   }
-  public set dynamodbTarget(value: GlueCrawlerDynamodbTarget[] ) {
+  public set dynamodbTarget(value: GlueCrawlerDynamodbTarget[] | undefined) {
     this._dynamodbTarget = value;
-  }
-  public resetDynamodbTarget() {
-    this._dynamodbTarget = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dynamodbTargetInput() {
-    return this._dynamodbTarget
   }
 
   // jdbc_target - computed: false, optional: true, required: false
   private _jdbcTarget?: GlueCrawlerJdbcTarget[];
   public get jdbcTarget() {
-    return this.interpolationForAttribute('jdbc_target') as any;
+    return this._jdbcTarget;
   }
-  public set jdbcTarget(value: GlueCrawlerJdbcTarget[] ) {
+  public set jdbcTarget(value: GlueCrawlerJdbcTarget[] | undefined) {
     this._jdbcTarget = value;
   }
-  public resetJdbcTarget() {
-    this._jdbcTarget = undefined;
+
+  // lineage_configuration - computed: false, optional: true, required: false
+  private _lineageConfiguration?: GlueCrawlerLineageConfiguration[];
+  public get lineageConfiguration() {
+    return this._lineageConfiguration;
   }
-  // Temporarily expose input value. Use with caution.
-  public get jdbcTargetInput() {
-    return this._jdbcTarget
+  public set lineageConfiguration(value: GlueCrawlerLineageConfiguration[] | undefined) {
+    this._lineageConfiguration = value;
+  }
+
+  // mongodb_target - computed: false, optional: true, required: false
+  private _mongodbTarget?: GlueCrawlerMongodbTarget[];
+  public get mongodbTarget() {
+    return this._mongodbTarget;
+  }
+  public set mongodbTarget(value: GlueCrawlerMongodbTarget[] | undefined) {
+    this._mongodbTarget = value;
+  }
+
+  // recrawl_policy - computed: false, optional: true, required: false
+  private _recrawlPolicy?: GlueCrawlerRecrawlPolicy[];
+  public get recrawlPolicy() {
+    return this._recrawlPolicy;
+  }
+  public set recrawlPolicy(value: GlueCrawlerRecrawlPolicy[] | undefined) {
+    this._recrawlPolicy = value;
   }
 
   // s3_target - computed: false, optional: true, required: false
   private _s3Target?: GlueCrawlerS3Target[];
   public get s3Target() {
-    return this.interpolationForAttribute('s3_target') as any;
+    return this._s3Target;
   }
-  public set s3Target(value: GlueCrawlerS3Target[] ) {
+  public set s3Target(value: GlueCrawlerS3Target[] | undefined) {
     this._s3Target = value;
-  }
-  public resetS3Target() {
-    this._s3Target = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get s3TargetInput() {
-    return this._s3Target
   }
 
   // schema_change_policy - computed: false, optional: true, required: false
   private _schemaChangePolicy?: GlueCrawlerSchemaChangePolicy[];
   public get schemaChangePolicy() {
-    return this.interpolationForAttribute('schema_change_policy') as any;
+    return this._schemaChangePolicy;
   }
-  public set schemaChangePolicy(value: GlueCrawlerSchemaChangePolicy[] ) {
+  public set schemaChangePolicy(value: GlueCrawlerSchemaChangePolicy[] | undefined) {
     this._schemaChangePolicy = value;
-  }
-  public resetSchemaChangePolicy() {
-    this._schemaChangePolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get schemaChangePolicyInput() {
-    return this._schemaChangePolicy
   }
 
   // =========
@@ -381,21 +295,24 @@ export class GlueCrawler extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      classifiers: cdktf.listMapper(cdktf.stringToTerraform)(this._classifiers),
-      configuration: cdktf.stringToTerraform(this._configuration),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      role: cdktf.stringToTerraform(this._role),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
-      table_prefix: cdktf.stringToTerraform(this._tablePrefix),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform)(this._catalogTarget),
-      dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform)(this._dynamodbTarget),
-      jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform)(this._jdbcTarget),
-      s3_target: cdktf.listMapper(glueCrawlerS3TargetToTerraform)(this._s3Target),
-      schema_change_policy: cdktf.listMapper(glueCrawlerSchemaChangePolicyToTerraform)(this._schemaChangePolicy),
+      classifiers: this._classifiers,
+      configuration: this._configuration,
+      database_name: this._databaseName,
+      description: this._description,
+      name: this._name,
+      role: this._role,
+      schedule: this._schedule,
+      security_configuration: this._securityConfiguration,
+      table_prefix: this._tablePrefix,
+      tags: this._tags,
+      catalog_target: this._catalogTarget,
+      dynamodb_target: this._dynamodbTarget,
+      jdbc_target: this._jdbcTarget,
+      lineage_configuration: this._lineageConfiguration,
+      mongodb_target: this._mongodbTarget,
+      recrawl_policy: this._recrawlPolicy,
+      s3_target: this._s3Target,
+      schema_change_policy: this._schemaChangePolicy,
     };
   }
 }

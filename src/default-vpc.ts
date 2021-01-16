@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DefaultVpcConfig extends cdktf.TerraformMetaArguments {
+export interface DefaultVpcConfig extends TerraformMetaArguments {
   readonly enableClassiclink?: boolean;
   readonly enableClassiclinkDnsSupport?: boolean;
   readonly enableDnsHostnames?: boolean;
@@ -16,7 +17,7 @@ export interface DefaultVpcConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class DefaultVpc extends cdktf.TerraformResource {
+export class DefaultVpc extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,37 +45,37 @@ export class DefaultVpc extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // assign_generated_ipv6_cidr_block - computed: true, optional: false, required: false
+  // assign_generated_ipv6_cidr_block - computed: true, optional: false, required: true
   public get assignGeneratedIpv6CidrBlock() {
     return this.getBooleanAttribute('assign_generated_ipv6_cidr_block');
   }
 
-  // cidr_block - computed: true, optional: false, required: false
+  // cidr_block - computed: true, optional: false, required: true
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
 
-  // default_network_acl_id - computed: true, optional: false, required: false
+  // default_network_acl_id - computed: true, optional: false, required: true
   public get defaultNetworkAclId() {
     return this.getStringAttribute('default_network_acl_id');
   }
 
-  // default_route_table_id - computed: true, optional: false, required: false
+  // default_route_table_id - computed: true, optional: false, required: true
   public get defaultRouteTableId() {
     return this.getStringAttribute('default_route_table_id');
   }
 
-  // default_security_group_id - computed: true, optional: false, required: false
+  // default_security_group_id - computed: true, optional: false, required: true
   public get defaultSecurityGroupId() {
     return this.getStringAttribute('default_security_group_id');
   }
 
-  // dhcp_options_id - computed: true, optional: false, required: false
+  // dhcp_options_id - computed: true, optional: false, required: true
   public get dhcpOptionsId() {
     return this.getStringAttribute('dhcp_options_id');
   }
@@ -82,93 +83,69 @@ export class DefaultVpc extends cdktf.TerraformResource {
   // enable_classiclink - computed: true, optional: true, required: false
   private _enableClassiclink?: boolean;
   public get enableClassiclink() {
-    return this.getBooleanAttribute('enable_classiclink');
+    return this._enableClassiclink ?? this.getBooleanAttribute('enable_classiclink');
   }
-  public set enableClassiclink(value: boolean) {
+  public set enableClassiclink(value: boolean | undefined) {
     this._enableClassiclink = value;
-  }
-  public resetEnableClassiclink() {
-    this._enableClassiclink = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableClassiclinkInput() {
-    return this._enableClassiclink
   }
 
   // enable_classiclink_dns_support - computed: true, optional: true, required: false
   private _enableClassiclinkDnsSupport?: boolean;
   public get enableClassiclinkDnsSupport() {
-    return this.getBooleanAttribute('enable_classiclink_dns_support');
+    return this._enableClassiclinkDnsSupport ?? this.getBooleanAttribute('enable_classiclink_dns_support');
   }
-  public set enableClassiclinkDnsSupport(value: boolean) {
+  public set enableClassiclinkDnsSupport(value: boolean | undefined) {
     this._enableClassiclinkDnsSupport = value;
-  }
-  public resetEnableClassiclinkDnsSupport() {
-    this._enableClassiclinkDnsSupport = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableClassiclinkDnsSupportInput() {
-    return this._enableClassiclinkDnsSupport
   }
 
   // enable_dns_hostnames - computed: true, optional: true, required: false
   private _enableDnsHostnames?: boolean;
   public get enableDnsHostnames() {
-    return this.getBooleanAttribute('enable_dns_hostnames');
+    return this._enableDnsHostnames ?? this.getBooleanAttribute('enable_dns_hostnames');
   }
-  public set enableDnsHostnames(value: boolean) {
+  public set enableDnsHostnames(value: boolean | undefined) {
     this._enableDnsHostnames = value;
-  }
-  public resetEnableDnsHostnames() {
-    this._enableDnsHostnames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableDnsHostnamesInput() {
-    return this._enableDnsHostnames
   }
 
   // enable_dns_support - computed: false, optional: true, required: false
   private _enableDnsSupport?: boolean;
   public get enableDnsSupport() {
-    return this.getBooleanAttribute('enable_dns_support');
+    return this._enableDnsSupport;
   }
-  public set enableDnsSupport(value: boolean ) {
+  public set enableDnsSupport(value: boolean | undefined) {
     this._enableDnsSupport = value;
-  }
-  public resetEnableDnsSupport() {
-    this._enableDnsSupport = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableDnsSupportInput() {
-    return this._enableDnsSupport
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // instance_tenancy - computed: true, optional: false, required: false
+  // instance_tenancy - computed: true, optional: false, required: true
   public get instanceTenancy() {
     return this.getStringAttribute('instance_tenancy');
   }
 
-  // ipv6_association_id - computed: true, optional: false, required: false
+  // ipv6_association_id - computed: true, optional: false, required: true
   public get ipv6AssociationId() {
     return this.getStringAttribute('ipv6_association_id');
   }
 
-  // ipv6_cidr_block - computed: true, optional: false, required: false
+  // ipv6_cidr_block - computed: true, optional: false, required: true
   public get ipv6CidrBlock() {
     return this.getStringAttribute('ipv6_cidr_block');
   }
 
-  // main_route_table_id - computed: true, optional: false, required: false
+  // main_route_table_id - computed: true, optional: false, required: true
   public get mainRouteTableId() {
     return this.getStringAttribute('main_route_table_id');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -176,17 +153,10 @@ export class DefaultVpc extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -195,11 +165,11 @@ export class DefaultVpc extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable_classiclink: cdktf.booleanToTerraform(this._enableClassiclink),
-      enable_classiclink_dns_support: cdktf.booleanToTerraform(this._enableClassiclinkDnsSupport),
-      enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
-      enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      enable_classiclink: this._enableClassiclink,
+      enable_classiclink_dns_support: this._enableClassiclinkDnsSupport,
+      enable_dns_hostnames: this._enableDnsHostnames,
+      enable_dns_support: this._enableDnsSupport,
+      tags: this._tags,
     };
   }
 }

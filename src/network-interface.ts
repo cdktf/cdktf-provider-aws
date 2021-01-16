@@ -2,12 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkInterfaceConfig extends TerraformMetaArguments {
   readonly description?: string;
+  readonly ipv6AddressCount?: number;
+  readonly ipv6Addresses?: string[];
   readonly privateIp?: string;
   readonly privateIps?: string[];
   readonly privateIpsCount?: number;
@@ -23,18 +26,9 @@ export interface NetworkInterfaceAttachment {
   readonly instance: string;
 }
 
-function networkInterfaceAttachmentToTerraform(struct?: NetworkInterfaceAttachment): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    device_index: cdktf.numberToTerraform(struct!.deviceIndex),
-    instance: cdktf.stringToTerraform(struct!.instance),
-  }
-}
-
-
 // Resource
 
-export class NetworkInterface extends cdktf.TerraformResource {
+export class NetworkInterface extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -52,6 +46,8 @@ export class NetworkInterface extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._ipv6AddressCount = config.ipv6AddressCount;
+    this._ipv6Addresses = config.ipv6Addresses;
     this._privateIp = config.privateIp;
     this._privateIps = config.privateIps;
     this._privateIpsCount = config.privateIpsCount;
@@ -69,35 +65,50 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // mac_address - computed: true, optional: false, required: false
+  // ipv6_address_count - computed: true, optional: true, required: false
+  private _ipv6AddressCount?: number;
+  public get ipv6AddressCount() {
+    return this._ipv6AddressCount ?? this.getNumberAttribute('ipv6_address_count');
+  }
+  public set ipv6AddressCount(value: number | undefined) {
+    this._ipv6AddressCount = value;
+  }
+
+  // ipv6_addresses - computed: true, optional: true, required: false
+  private _ipv6Addresses?: string[];
+  public get ipv6Addresses() {
+    return this._ipv6Addresses ?? this.getListAttribute('ipv6_addresses');
+  }
+  public set ipv6Addresses(value: string[] | undefined) {
+    this._ipv6Addresses = value;
+  }
+
+  // mac_address - computed: true, optional: false, required: true
   public get macAddress() {
     return this.getStringAttribute('mac_address');
   }
 
-  // outpost_arn - computed: true, optional: false, required: false
+  // outpost_arn - computed: true, optional: false, required: true
   public get outpostArn() {
     return this.getStringAttribute('outpost_arn');
   }
 
-  // private_dns_name - computed: true, optional: false, required: false
+  // private_dns_name - computed: true, optional: false, required: true
   public get privateDnsName() {
     return this.getStringAttribute('private_dns_name');
   }
@@ -105,126 +116,73 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // private_ip - computed: true, optional: true, required: false
   private _privateIp?: string;
   public get privateIp() {
-    return this.getStringAttribute('private_ip');
+    return this._privateIp ?? this.getStringAttribute('private_ip');
   }
-  public set privateIp(value: string) {
+  public set privateIp(value: string | undefined) {
     this._privateIp = value;
-  }
-  public resetPrivateIp() {
-    this._privateIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateIpInput() {
-    return this._privateIp
   }
 
   // private_ips - computed: true, optional: true, required: false
   private _privateIps?: string[];
   public get privateIps() {
-    return this.getListAttribute('private_ips');
+    return this._privateIps ?? this.getListAttribute('private_ips');
   }
-  public set privateIps(value: string[]) {
+  public set privateIps(value: string[] | undefined) {
     this._privateIps = value;
-  }
-  public resetPrivateIps() {
-    this._privateIps = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateIpsInput() {
-    return this._privateIps
   }
 
   // private_ips_count - computed: true, optional: true, required: false
   private _privateIpsCount?: number;
   public get privateIpsCount() {
-    return this.getNumberAttribute('private_ips_count');
+    return this._privateIpsCount ?? this.getNumberAttribute('private_ips_count');
   }
-  public set privateIpsCount(value: number) {
+  public set privateIpsCount(value: number | undefined) {
     this._privateIpsCount = value;
-  }
-  public resetPrivateIpsCount() {
-    this._privateIpsCount = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateIpsCountInput() {
-    return this._privateIpsCount
   }
 
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[];
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return this._securityGroups ?? this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[]) {
+  public set securityGroups(value: string[] | undefined) {
     this._securityGroups = value;
-  }
-  public resetSecurityGroups() {
-    this._securityGroups = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupsInput() {
-    return this._securityGroups
   }
 
   // source_dest_check - computed: false, optional: true, required: false
   private _sourceDestCheck?: boolean;
   public get sourceDestCheck() {
-    return this.getBooleanAttribute('source_dest_check');
+    return this._sourceDestCheck;
   }
-  public set sourceDestCheck(value: boolean ) {
+  public set sourceDestCheck(value: boolean | undefined) {
     this._sourceDestCheck = value;
-  }
-  public resetSourceDestCheck() {
-    this._sourceDestCheck = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceDestCheckInput() {
-    return this._sourceDestCheck
   }
 
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId: string;
   public get subnetId() {
-    return this.getStringAttribute('subnet_id');
+    return this._subnetId;
   }
   public set subnetId(value: string) {
     this._subnetId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // attachment - computed: false, optional: true, required: false
   private _attachment?: NetworkInterfaceAttachment[];
   public get attachment() {
-    return this.interpolationForAttribute('attachment') as any;
+    return this._attachment;
   }
-  public set attachment(value: NetworkInterfaceAttachment[] ) {
+  public set attachment(value: NetworkInterfaceAttachment[] | undefined) {
     this._attachment = value;
-  }
-  public resetAttachment() {
-    this._attachment = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attachmentInput() {
-    return this._attachment
   }
 
   // =========
@@ -233,15 +191,17 @@ export class NetworkInterface extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      private_ip: cdktf.stringToTerraform(this._privateIp),
-      private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIps),
-      private_ips_count: cdktf.numberToTerraform(this._privateIpsCount),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
-      source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform)(this._attachment),
+      description: this._description,
+      ipv6_address_count: this._ipv6AddressCount,
+      ipv6_addresses: this._ipv6Addresses,
+      private_ip: this._privateIp,
+      private_ips: this._privateIps,
+      private_ips_count: this._privateIpsCount,
+      security_groups: this._securityGroups,
+      source_dest_check: this._sourceDestCheck,
+      subnet_id: this._subnetId,
+      tags: this._tags,
+      attachment: this._attachment,
     };
   }
 }

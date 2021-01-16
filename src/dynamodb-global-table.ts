@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DynamodbGlobalTableConfig extends cdktf.TerraformMetaArguments {
+export interface DynamodbGlobalTableConfig extends TerraformMetaArguments {
   readonly name: string;
   /** replica block */
   readonly replica: DynamodbGlobalTableReplica[];
@@ -16,33 +17,15 @@ export interface DynamodbGlobalTableConfig extends cdktf.TerraformMetaArguments 
 export interface DynamodbGlobalTableReplica {
   readonly regionName: string;
 }
-
-function dynamodbGlobalTableReplicaToTerraform(struct?: DynamodbGlobalTableReplica): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    region_name: cdktf.stringToTerraform(struct!.regionName),
-  }
-}
-
 export interface DynamodbGlobalTableTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
-function dynamodbGlobalTableTimeoutsToTerraform(struct?: DynamodbGlobalTableTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class DynamodbGlobalTable extends cdktf.TerraformResource {
+export class DynamodbGlobalTable extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -68,56 +51,45 @@ export class DynamodbGlobalTable extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // replica - computed: false, optional: false, required: true
   private _replica: DynamodbGlobalTableReplica[];
   public get replica() {
-    return this.interpolationForAttribute('replica') as any;
+    return this._replica;
   }
   public set replica(value: DynamodbGlobalTableReplica[]) {
     this._replica = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get replicaInput() {
-    return this._replica
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DynamodbGlobalTableTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: DynamodbGlobalTableTimeouts ) {
+  public set timeouts(value: DynamodbGlobalTableTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -126,9 +98,9 @@ export class DynamodbGlobalTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      replica: cdktf.listMapper(dynamodbGlobalTableReplicaToTerraform)(this._replica),
-      timeouts: dynamodbGlobalTableTimeoutsToTerraform(this._timeouts),
+      name: this._name,
+      replica: this._replica,
+      timeouts: this._timeouts,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DirectoryServiceConditionalForwarderConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryServiceConditionalForwarderConfig extends TerraformMetaArguments {
   readonly directoryId: string;
   readonly dnsIps: string[];
   readonly remoteDomainName: string;
@@ -14,7 +15,7 @@ export interface DirectoryServiceConditionalForwarderConfig extends cdktf.Terraf
 
 // Resource
 
-export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResource {
+export class DirectoryServiceConditionalForwarder extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,45 +44,37 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
   // directory_id - computed: false, optional: false, required: true
   private _directoryId: string;
   public get directoryId() {
-    return this.getStringAttribute('directory_id');
+    return this._directoryId;
   }
   public set directoryId(value: string) {
     this._directoryId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get directoryIdInput() {
-    return this._directoryId
   }
 
   // dns_ips - computed: false, optional: false, required: true
   private _dnsIps: string[];
   public get dnsIps() {
-    return this.getListAttribute('dns_ips');
+    return this._dnsIps;
   }
   public set dnsIps(value: string[]) {
     this._dnsIps = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get dnsIpsInput() {
-    return this._dnsIps
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // remote_domain_name - computed: false, optional: false, required: true
   private _remoteDomainName: string;
   public get remoteDomainName() {
-    return this.getStringAttribute('remote_domain_name');
+    return this._remoteDomainName;
   }
   public set remoteDomainName(value: string) {
     this._remoteDomainName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get remoteDomainNameInput() {
-    return this._remoteDomainName
   }
 
   // =========
@@ -90,9 +83,9 @@ export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      dns_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsIps),
-      remote_domain_name: cdktf.stringToTerraform(this._remoteDomainName),
+      directory_id: this._directoryId,
+      dns_ips: this._dnsIps,
+      remote_domain_name: this._remoteDomainName,
     };
   }
 }

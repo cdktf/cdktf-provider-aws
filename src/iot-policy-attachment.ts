@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IotPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface IotPolicyAttachmentConfig extends TerraformMetaArguments {
   readonly policy: string;
   readonly target: string;
 }
 
 // Resource
 
-export class IotPolicyAttachment extends cdktf.TerraformResource {
+export class IotPolicyAttachment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,34 +40,30 @@ export class IotPolicyAttachment extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy;
   }
   public set policy(value: string) {
     this._policy = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // target - computed: false, optional: false, required: true
   private _target: string;
   public get target() {
-    return this.getStringAttribute('target');
+    return this._target;
   }
   public set target(value: string) {
     this._target = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetInput() {
-    return this._target
   }
 
   // =========
@@ -75,8 +72,8 @@ export class IotPolicyAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy: cdktf.stringToTerraform(this._policy),
-      target: cdktf.stringToTerraform(this._target),
+      policy: this._policy,
+      target: this._target,
     };
   }
 }

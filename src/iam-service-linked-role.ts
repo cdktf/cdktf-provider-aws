@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamServiceLinkedRoleConfig extends cdktf.TerraformMetaArguments {
+export interface IamServiceLinkedRoleConfig extends TerraformMetaArguments {
   readonly awsServiceName: string;
   readonly customSuffix?: string;
   readonly description?: string;
@@ -14,7 +15,7 @@ export interface IamServiceLinkedRoleConfig extends cdktf.TerraformMetaArguments
 
 // Resource
 
-export class IamServiceLinkedRole extends cdktf.TerraformResource {
+export class IamServiceLinkedRole extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -48,17 +49,13 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
   // aws_service_name - computed: false, optional: false, required: true
   private _awsServiceName: string;
   public get awsServiceName() {
-    return this.getStringAttribute('aws_service_name');
+    return this._awsServiceName;
   }
   public set awsServiceName(value: string) {
     this._awsServiceName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get awsServiceNameInput() {
-    return this._awsServiceName
-  }
 
-  // create_date - computed: true, optional: false, required: false
+  // create_date - computed: true, optional: false, required: true
   public get createDate() {
     return this.getStringAttribute('create_date');
   }
@@ -66,51 +63,41 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
   // custom_suffix - computed: false, optional: true, required: false
   private _customSuffix?: string;
   public get customSuffix() {
-    return this.getStringAttribute('custom_suffix');
+    return this._customSuffix;
   }
-  public set customSuffix(value: string ) {
+  public set customSuffix(value: string | undefined) {
     this._customSuffix = value;
-  }
-  public resetCustomSuffix() {
-    this._customSuffix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customSuffixInput() {
-    return this._customSuffix
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // path - computed: true, optional: false, required: false
+  // path - computed: true, optional: false, required: true
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // unique_id - computed: true, optional: false, required: false
+  // unique_id - computed: true, optional: false, required: true
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
   }
@@ -121,9 +108,9 @@ export class IamServiceLinkedRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_service_name: cdktf.stringToTerraform(this._awsServiceName),
-      custom_suffix: cdktf.stringToTerraform(this._customSuffix),
-      description: cdktf.stringToTerraform(this._description),
+      aws_service_name: this._awsServiceName,
+      custom_suffix: this._customSuffix,
+      description: this._description,
     };
   }
 }

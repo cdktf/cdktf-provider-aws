@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface GlueTriggerConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly enabled?: boolean;
   readonly name: string;
@@ -21,23 +22,18 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: GlueTriggerTimeouts;
 }
+export interface GlueTriggerActionsNotificationProperty {
+  readonly notifyDelayAfter?: number;
+}
 export interface GlueTriggerActions {
   readonly arguments?: { [key: string]: string };
   readonly crawlerName?: string;
   readonly jobName?: string;
+  readonly securityConfiguration?: string;
   readonly timeout?: number;
+  /** notification_property block */
+  readonly notificationProperty?: GlueTriggerActionsNotificationProperty[];
 }
-
-function glueTriggerActionsToTerraform(struct?: GlueTriggerActions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    arguments: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.arguments),
-    crawler_name: cdktf.stringToTerraform(struct!.crawlerName),
-    job_name: cdktf.stringToTerraform(struct!.jobName),
-    timeout: cdktf.numberToTerraform(struct!.timeout),
-  }
-}
-
 export interface GlueTriggerPredicateConditions {
   readonly crawlState?: string;
   readonly crawlerName?: string;
@@ -45,49 +41,19 @@ export interface GlueTriggerPredicateConditions {
   readonly logicalOperator?: string;
   readonly state?: string;
 }
-
-function glueTriggerPredicateConditionsToTerraform(struct?: GlueTriggerPredicateConditions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    crawl_state: cdktf.stringToTerraform(struct!.crawlState),
-    crawler_name: cdktf.stringToTerraform(struct!.crawlerName),
-    job_name: cdktf.stringToTerraform(struct!.jobName),
-    logical_operator: cdktf.stringToTerraform(struct!.logicalOperator),
-    state: cdktf.stringToTerraform(struct!.state),
-  }
-}
-
 export interface GlueTriggerPredicate {
   readonly logical?: string;
   /** conditions block */
   readonly conditions: GlueTriggerPredicateConditions[];
 }
-
-function glueTriggerPredicateToTerraform(struct?: GlueTriggerPredicate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    logical: cdktf.stringToTerraform(struct!.logical),
-    conditions: cdktf.listMapper(glueTriggerPredicateConditionsToTerraform)(struct!.conditions),
-  }
-}
-
 export interface GlueTriggerTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
-function glueTriggerTimeoutsToTerraform(struct?: GlueTriggerTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
-
 // Resource
 
-export class GlueTrigger extends cdktf.TerraformResource {
+export class GlueTrigger extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -120,7 +86,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -128,157 +94,100 @@ export class GlueTrigger extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this._enabled;
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | undefined) {
     this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // schedule - computed: false, optional: true, required: false
   private _schedule?: string;
   public get schedule() {
-    return this.getStringAttribute('schedule');
+    return this._schedule;
   }
-  public set schedule(value: string ) {
+  public set schedule(value: string | undefined) {
     this._schedule = value;
-  }
-  public resetSchedule() {
-    this._schedule = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scheduleInput() {
-    return this._schedule
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this.getStringAttribute('type');
+    return this._type;
   }
   public set type(value: string) {
     this._type = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type
   }
 
   // workflow_name - computed: false, optional: true, required: false
   private _workflowName?: string;
   public get workflowName() {
-    return this.getStringAttribute('workflow_name');
+    return this._workflowName;
   }
-  public set workflowName(value: string ) {
+  public set workflowName(value: string | undefined) {
     this._workflowName = value;
-  }
-  public resetWorkflowName() {
-    this._workflowName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workflowNameInput() {
-    return this._workflowName
   }
 
   // actions - computed: false, optional: false, required: true
   private _actions: GlueTriggerActions[];
   public get actions() {
-    return this.interpolationForAttribute('actions') as any;
+    return this._actions;
   }
   public set actions(value: GlueTriggerActions[]) {
     this._actions = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get actionsInput() {
-    return this._actions
   }
 
   // predicate - computed: false, optional: true, required: false
   private _predicate?: GlueTriggerPredicate[];
   public get predicate() {
-    return this.interpolationForAttribute('predicate') as any;
+    return this._predicate;
   }
-  public set predicate(value: GlueTriggerPredicate[] ) {
+  public set predicate(value: GlueTriggerPredicate[] | undefined) {
     this._predicate = value;
-  }
-  public resetPredicate() {
-    this._predicate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get predicateInput() {
-    return this._predicate
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: GlueTriggerTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: GlueTriggerTimeouts ) {
+  public set timeouts(value: GlueTriggerTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -287,16 +196,16 @@ export class GlueTrigger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      name: cdktf.stringToTerraform(this._name),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
-      workflow_name: cdktf.stringToTerraform(this._workflowName),
-      actions: cdktf.listMapper(glueTriggerActionsToTerraform)(this._actions),
-      predicate: cdktf.listMapper(glueTriggerPredicateToTerraform)(this._predicate),
-      timeouts: glueTriggerTimeoutsToTerraform(this._timeouts),
+      description: this._description,
+      enabled: this._enabled,
+      name: this._name,
+      schedule: this._schedule,
+      tags: this._tags,
+      type: this._type,
+      workflow_name: this._workflowName,
+      actions: this._actions,
+      predicate: this._predicate,
+      timeouts: this._timeouts,
     };
   }
 }

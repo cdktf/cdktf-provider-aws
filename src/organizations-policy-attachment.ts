@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface OrganizationsPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationsPolicyAttachmentConfig extends TerraformMetaArguments {
   readonly policyId: string;
   readonly targetId: string;
 }
 
 // Resource
 
-export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
+export class OrganizationsPolicyAttachment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,34 +40,30 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // policy_id - computed: false, optional: false, required: true
   private _policyId: string;
   public get policyId() {
-    return this.getStringAttribute('policy_id');
+    return this._policyId;
   }
   public set policyId(value: string) {
     this._policyId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyIdInput() {
-    return this._policyId
   }
 
   // target_id - computed: false, optional: false, required: true
   private _targetId: string;
   public get targetId() {
-    return this.getStringAttribute('target_id');
+    return this._targetId;
   }
   public set targetId(value: string) {
     this._targetId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetIdInput() {
-    return this._targetId
   }
 
   // =========
@@ -75,8 +72,8 @@ export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_id: cdktf.stringToTerraform(this._policyId),
-      target_id: cdktf.stringToTerraform(this._targetId),
+      policy_id: this._policyId,
+      target_id: this._targetId,
     };
   }
 }

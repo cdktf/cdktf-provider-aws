@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Ec2TrafficMirrorSessionConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TrafficMirrorSessionConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly networkInterfaceId: string;
   readonly packetLength?: number;
@@ -19,7 +20,7 @@ export interface Ec2TrafficMirrorSessionConfig extends cdktf.TerraformMetaArgume
 
 // Resource
 
-export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
+export class Ec2TrafficMirrorSession extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,7 +51,7 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,122 +59,82 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // network_interface_id - computed: false, optional: false, required: true
   private _networkInterfaceId: string;
   public get networkInterfaceId() {
-    return this.getStringAttribute('network_interface_id');
+    return this._networkInterfaceId;
   }
   public set networkInterfaceId(value: string) {
     this._networkInterfaceId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get networkInterfaceIdInput() {
-    return this._networkInterfaceId
   }
 
   // packet_length - computed: false, optional: true, required: false
   private _packetLength?: number;
   public get packetLength() {
-    return this.getNumberAttribute('packet_length');
+    return this._packetLength;
   }
-  public set packetLength(value: number ) {
+  public set packetLength(value: number | undefined) {
     this._packetLength = value;
-  }
-  public resetPacketLength() {
-    this._packetLength = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get packetLengthInput() {
-    return this._packetLength
   }
 
   // session_number - computed: false, optional: false, required: true
   private _sessionNumber: number;
   public get sessionNumber() {
-    return this.getNumberAttribute('session_number');
+    return this._sessionNumber;
   }
   public set sessionNumber(value: number) {
     this._sessionNumber = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sessionNumberInput() {
-    return this._sessionNumber
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // traffic_mirror_filter_id - computed: false, optional: false, required: true
   private _trafficMirrorFilterId: string;
   public get trafficMirrorFilterId() {
-    return this.getStringAttribute('traffic_mirror_filter_id');
+    return this._trafficMirrorFilterId;
   }
   public set trafficMirrorFilterId(value: string) {
     this._trafficMirrorFilterId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get trafficMirrorFilterIdInput() {
-    return this._trafficMirrorFilterId
   }
 
   // traffic_mirror_target_id - computed: false, optional: false, required: true
   private _trafficMirrorTargetId: string;
   public get trafficMirrorTargetId() {
-    return this.getStringAttribute('traffic_mirror_target_id');
+    return this._trafficMirrorTargetId;
   }
   public set trafficMirrorTargetId(value: string) {
     this._trafficMirrorTargetId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get trafficMirrorTargetIdInput() {
-    return this._trafficMirrorTargetId
   }
 
   // virtual_network_id - computed: true, optional: true, required: false
   private _virtualNetworkId?: number;
   public get virtualNetworkId() {
-    return this.getNumberAttribute('virtual_network_id');
+    return this._virtualNetworkId ?? this.getNumberAttribute('virtual_network_id');
   }
-  public set virtualNetworkId(value: number) {
+  public set virtualNetworkId(value: number | undefined) {
     this._virtualNetworkId = value;
-  }
-  public resetVirtualNetworkId() {
-    this._virtualNetworkId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get virtualNetworkIdInput() {
-    return this._virtualNetworkId
   }
 
   // =========
@@ -182,14 +143,14 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      packet_length: cdktf.numberToTerraform(this._packetLength),
-      session_number: cdktf.numberToTerraform(this._sessionNumber),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      traffic_mirror_filter_id: cdktf.stringToTerraform(this._trafficMirrorFilterId),
-      traffic_mirror_target_id: cdktf.stringToTerraform(this._trafficMirrorTargetId),
-      virtual_network_id: cdktf.numberToTerraform(this._virtualNetworkId),
+      description: this._description,
+      network_interface_id: this._networkInterfaceId,
+      packet_length: this._packetLength,
+      session_number: this._sessionNumber,
+      tags: this._tags,
+      traffic_mirror_filter_id: this._trafficMirrorFilterId,
+      traffic_mirror_target_id: this._trafficMirrorTargetId,
+      virtual_network_id: this._virtualNetworkId,
     };
   }
 }

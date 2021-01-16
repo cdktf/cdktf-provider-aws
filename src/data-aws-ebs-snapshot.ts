@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEbsSnapshotConfig extends TerraformMetaArguments {
   readonly mostRecent?: boolean;
   readonly owners?: string[];
   readonly restorableByUserIds?: string[];
@@ -20,18 +21,9 @@ export interface DataAwsEbsSnapshotFilter {
   readonly values: string[];
 }
 
-function dataAwsEbsSnapshotFilterToTerraform(struct?: DataAwsEbsSnapshotFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
+export class DataAwsEbsSnapshot extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -60,32 +52,36 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // data_encryption_key_id - computed: true, optional: false, required: false
+  // data_encryption_key_id - computed: true, optional: false, required: true
   public get dataEncryptionKeyId() {
     return this.getStringAttribute('data_encryption_key_id');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // encrypted - computed: true, optional: false, required: false
+  // encrypted - computed: true, optional: false, required: true
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
@@ -93,25 +89,18 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean;
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent');
+    return this._mostRecent;
   }
-  public set mostRecent(value: boolean ) {
+  public set mostRecent(value: boolean | undefined) {
     this._mostRecent = value;
   }
-  public resetMostRecent() {
-    this._mostRecent = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mostRecentInput() {
-    return this._mostRecent
-  }
 
-  // owner_alias - computed: true, optional: false, required: false
+  // owner_alias - computed: true, optional: false, required: true
   public get ownerAlias() {
     return this.getStringAttribute('owner_alias');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -119,36 +108,22 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   // owners - computed: false, optional: true, required: false
   private _owners?: string[];
   public get owners() {
-    return this.getListAttribute('owners');
+    return this._owners;
   }
-  public set owners(value: string[] ) {
+  public set owners(value: string[] | undefined) {
     this._owners = value;
-  }
-  public resetOwners() {
-    this._owners = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ownersInput() {
-    return this._owners
   }
 
   // restorable_by_user_ids - computed: false, optional: true, required: false
   private _restorableByUserIds?: string[];
   public get restorableByUserIds() {
-    return this.getListAttribute('restorable_by_user_ids');
+    return this._restorableByUserIds;
   }
-  public set restorableByUserIds(value: string[] ) {
+  public set restorableByUserIds(value: string[] | undefined) {
     this._restorableByUserIds = value;
   }
-  public resetRestorableByUserIds() {
-    this._restorableByUserIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restorableByUserIdsInput() {
-    return this._restorableByUserIds
-  }
 
-  // snapshot_id - computed: true, optional: false, required: false
+  // snapshot_id - computed: true, optional: false, required: true
   public get snapshotId() {
     return this.getStringAttribute('snapshot_id');
   }
@@ -156,46 +131,32 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   // snapshot_ids - computed: false, optional: true, required: false
   private _snapshotIds?: string[];
   public get snapshotIds() {
-    return this.getListAttribute('snapshot_ids');
+    return this._snapshotIds;
   }
-  public set snapshotIds(value: string[] ) {
+  public set snapshotIds(value: string[] | undefined) {
     this._snapshotIds = value;
   }
-  public resetSnapshotIds() {
-    this._snapshotIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotIdsInput() {
-    return this._snapshotIds
-  }
 
-  // state - computed: true, optional: false, required: false
+  // state - computed: true, optional: false, required: true
   public get state() {
     return this.getStringAttribute('state');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // volume_id - computed: true, optional: false, required: false
+  // volume_id - computed: true, optional: false, required: true
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
 
-  // volume_size - computed: true, optional: false, required: false
+  // volume_size - computed: true, optional: false, required: true
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }
@@ -203,17 +164,10 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEbsSnapshotFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsEbsSnapshotFilter[] ) {
+  public set filter(value: DataAwsEbsSnapshotFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -222,12 +176,12 @@ export class DataAwsEbsSnapshot extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
-      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._restorableByUserIds),
-      snapshot_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._snapshotIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsEbsSnapshotFilterToTerraform)(this._filter),
+      most_recent: this._mostRecent,
+      owners: this._owners,
+      restorable_by_user_ids: this._restorableByUserIds,
+      snapshot_ids: this._snapshotIds,
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

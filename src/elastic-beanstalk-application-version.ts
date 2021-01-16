@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticBeanstalkApplicationVersionConfig extends TerraformMetaArguments {
   readonly application: string;
   readonly bucket: string;
   readonly description?: string;
@@ -18,7 +19,7 @@ export interface ElasticBeanstalkApplicationVersionConfig extends cdktf.Terrafor
 
 // Resource
 
-export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource {
+export class ElasticBeanstalkApplicationVersion extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -51,17 +52,13 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
   // application - computed: false, optional: false, required: true
   private _application: string;
   public get application() {
-    return this.getStringAttribute('application');
+    return this._application;
   }
   public set application(value: string) {
     this._application = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get applicationInput() {
-    return this._application
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -69,93 +66,64 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this.getStringAttribute('bucket');
+    return this._bucket;
   }
   public set bucket(value: string) {
     this._bucket = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bucketInput() {
-    return this._bucket
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // force_delete - computed: false, optional: true, required: false
   private _forceDelete?: boolean;
   public get forceDelete() {
-    return this.getBooleanAttribute('force_delete');
+    return this._forceDelete;
   }
-  public set forceDelete(value: boolean ) {
+  public set forceDelete(value: boolean | undefined) {
     this._forceDelete = value;
-  }
-  public resetForceDelete() {
-    this._forceDelete = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get forceDeleteInput() {
-    return this._forceDelete
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // key - computed: false, optional: false, required: true
   private _key: string;
   public get key() {
-    return this.getStringAttribute('key');
+    return this._key;
   }
   public set key(value: string) {
     this._key = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyInput() {
-    return this._key
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -164,13 +132,13 @@ export class ElasticBeanstalkApplicationVersion extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application: cdktf.stringToTerraform(this._application),
-      bucket: cdktf.stringToTerraform(this._bucket),
-      description: cdktf.stringToTerraform(this._description),
-      force_delete: cdktf.booleanToTerraform(this._forceDelete),
-      key: cdktf.stringToTerraform(this._key),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      application: this._application,
+      bucket: this._bucket,
+      description: this._description,
+      force_delete: this._forceDelete,
+      key: this._key,
+      name: this._name,
+      tags: this._tags,
     };
   }
 }

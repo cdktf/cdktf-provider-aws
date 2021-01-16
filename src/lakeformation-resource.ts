@@ -1,0 +1,84 @@
+// https://www.terraform.io/docs/providers/aws/r/lakeformation_resource.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+
+// Configuration
+
+export interface LakeformationResourceConfig extends TerraformMetaArguments {
+  readonly arn: string;
+  readonly roleArn?: string;
+}
+
+// Resource
+
+export class LakeformationResource extends TerraformResource {
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  public constructor(scope: Construct, id: string, config: LakeformationResourceConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_lakeformation_resource',
+      terraformGeneratorMetadata: {
+        providerName: 'aws'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._arn = config.arn;
+    this._roleArn = config.roleArn;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // arn - computed: false, optional: false, required: true
+  private _arn: string;
+  public get arn() {
+    return this._arn;
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string;
+  public get id() {
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
+  }
+
+  // last_modified - computed: true, optional: false, required: true
+  public get lastModified() {
+    return this.getStringAttribute('last_modified');
+  }
+
+  // role_arn - computed: true, optional: true, required: false
+  private _roleArn?: string;
+  public get roleArn() {
+    return this._roleArn ?? this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string | undefined) {
+    this._roleArn = value;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      arn: this._arn,
+      role_arn: this._roleArn,
+    };
+  }
+}

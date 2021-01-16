@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2RouteResponseConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2RouteResponseConfig extends TerraformMetaArguments {
   readonly apiId: string;
   readonly modelSelectionExpression?: string;
   readonly responseModels?: { [key: string]: string };
@@ -16,7 +17,7 @@ export interface Apigatewayv2RouteResponseConfig extends cdktf.TerraformMetaArgu
 
 // Resource
 
-export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
+export class Apigatewayv2RouteResponse extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,77 +48,55 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this.getStringAttribute('api_id');
+    return this._apiId;
   }
   public set apiId(value: string) {
     this._apiId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get apiIdInput() {
-    return this._apiId
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // model_selection_expression - computed: false, optional: true, required: false
   private _modelSelectionExpression?: string;
   public get modelSelectionExpression() {
-    return this.getStringAttribute('model_selection_expression');
+    return this._modelSelectionExpression;
   }
-  public set modelSelectionExpression(value: string ) {
+  public set modelSelectionExpression(value: string | undefined) {
     this._modelSelectionExpression = value;
-  }
-  public resetModelSelectionExpression() {
-    this._modelSelectionExpression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get modelSelectionExpressionInput() {
-    return this._modelSelectionExpression
   }
 
   // response_models - computed: false, optional: true, required: false
   private _responseModels?: { [key: string]: string };
   public get responseModels() {
-    return this.interpolationForAttribute('response_models') as any;
+    return this._responseModels;
   }
-  public set responseModels(value: { [key: string]: string } ) {
+  public set responseModels(value: { [key: string]: string } | undefined) {
     this._responseModels = value;
-  }
-  public resetResponseModels() {
-    this._responseModels = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseModelsInput() {
-    return this._responseModels
   }
 
   // route_id - computed: false, optional: false, required: true
   private _routeId: string;
   public get routeId() {
-    return this.getStringAttribute('route_id');
+    return this._routeId;
   }
   public set routeId(value: string) {
     this._routeId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeIdInput() {
-    return this._routeId
   }
 
   // route_response_key - computed: false, optional: false, required: true
   private _routeResponseKey: string;
   public get routeResponseKey() {
-    return this.getStringAttribute('route_response_key');
+    return this._routeResponseKey;
   }
   public set routeResponseKey(value: string) {
     this._routeResponseKey = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeResponseKeyInput() {
-    return this._routeResponseKey
   }
 
   // =========
@@ -126,11 +105,11 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      model_selection_expression: cdktf.stringToTerraform(this._modelSelectionExpression),
-      response_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseModels),
-      route_id: cdktf.stringToTerraform(this._routeId),
-      route_response_key: cdktf.stringToTerraform(this._routeResponseKey),
+      api_id: this._apiId,
+      model_selection_expression: this._modelSelectionExpression,
+      response_models: this._responseModels,
+      route_id: this._routeId,
+      route_response_key: this._routeResponseKey,
     };
   }
 }

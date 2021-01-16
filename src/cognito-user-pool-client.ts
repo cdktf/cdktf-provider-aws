@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoUserPoolClientConfig extends TerraformMetaArguments {
   readonly allowedOauthFlows?: string[];
   readonly allowedOauthFlowsUserPoolClient?: boolean;
   readonly allowedOauthScopes?: string[];
@@ -32,20 +33,9 @@ export interface CognitoUserPoolClientAnalyticsConfiguration {
   readonly userDataShared?: boolean;
 }
 
-function cognitoUserPoolClientAnalyticsConfigurationToTerraform(struct?: CognitoUserPoolClientAnalyticsConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    application_id: cdktf.stringToTerraform(struct!.applicationId),
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    user_data_shared: cdktf.booleanToTerraform(struct!.userDataShared),
-  }
-}
-
-
 // Resource
 
-export class CognitoUserPoolClient extends cdktf.TerraformResource {
+export class CognitoUserPoolClient extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -87,68 +77,40 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   // allowed_oauth_flows - computed: false, optional: true, required: false
   private _allowedOauthFlows?: string[];
   public get allowedOauthFlows() {
-    return this.getListAttribute('allowed_oauth_flows');
+    return this._allowedOauthFlows;
   }
-  public set allowedOauthFlows(value: string[] ) {
+  public set allowedOauthFlows(value: string[] | undefined) {
     this._allowedOauthFlows = value;
-  }
-  public resetAllowedOauthFlows() {
-    this._allowedOauthFlows = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowedOauthFlowsInput() {
-    return this._allowedOauthFlows
   }
 
   // allowed_oauth_flows_user_pool_client - computed: false, optional: true, required: false
   private _allowedOauthFlowsUserPoolClient?: boolean;
   public get allowedOauthFlowsUserPoolClient() {
-    return this.getBooleanAttribute('allowed_oauth_flows_user_pool_client');
+    return this._allowedOauthFlowsUserPoolClient;
   }
-  public set allowedOauthFlowsUserPoolClient(value: boolean ) {
+  public set allowedOauthFlowsUserPoolClient(value: boolean | undefined) {
     this._allowedOauthFlowsUserPoolClient = value;
-  }
-  public resetAllowedOauthFlowsUserPoolClient() {
-    this._allowedOauthFlowsUserPoolClient = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowedOauthFlowsUserPoolClientInput() {
-    return this._allowedOauthFlowsUserPoolClient
   }
 
   // allowed_oauth_scopes - computed: false, optional: true, required: false
   private _allowedOauthScopes?: string[];
   public get allowedOauthScopes() {
-    return this.getListAttribute('allowed_oauth_scopes');
+    return this._allowedOauthScopes;
   }
-  public set allowedOauthScopes(value: string[] ) {
+  public set allowedOauthScopes(value: string[] | undefined) {
     this._allowedOauthScopes = value;
-  }
-  public resetAllowedOauthScopes() {
-    this._allowedOauthScopes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowedOauthScopesInput() {
-    return this._allowedOauthScopes
   }
 
   // callback_urls - computed: false, optional: true, required: false
   private _callbackUrls?: string[];
   public get callbackUrls() {
-    return this.getListAttribute('callback_urls');
+    return this._callbackUrls;
   }
-  public set callbackUrls(value: string[] ) {
+  public set callbackUrls(value: string[] | undefined) {
     this._callbackUrls = value;
   }
-  public resetCallbackUrls() {
-    this._callbackUrls = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get callbackUrlsInput() {
-    return this._callbackUrls
-  }
 
-  // client_secret - computed: true, optional: false, required: false
+  // client_secret - computed: true, optional: false, required: true
   public get clientSecret() {
     return this.getStringAttribute('client_secret');
   }
@@ -156,192 +118,118 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   // default_redirect_uri - computed: false, optional: true, required: false
   private _defaultRedirectUri?: string;
   public get defaultRedirectUri() {
-    return this.getStringAttribute('default_redirect_uri');
+    return this._defaultRedirectUri;
   }
-  public set defaultRedirectUri(value: string ) {
+  public set defaultRedirectUri(value: string | undefined) {
     this._defaultRedirectUri = value;
-  }
-  public resetDefaultRedirectUri() {
-    this._defaultRedirectUri = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultRedirectUriInput() {
-    return this._defaultRedirectUri
   }
 
   // explicit_auth_flows - computed: false, optional: true, required: false
   private _explicitAuthFlows?: string[];
   public get explicitAuthFlows() {
-    return this.getListAttribute('explicit_auth_flows');
+    return this._explicitAuthFlows;
   }
-  public set explicitAuthFlows(value: string[] ) {
+  public set explicitAuthFlows(value: string[] | undefined) {
     this._explicitAuthFlows = value;
-  }
-  public resetExplicitAuthFlows() {
-    this._explicitAuthFlows = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get explicitAuthFlowsInput() {
-    return this._explicitAuthFlows
   }
 
   // generate_secret - computed: false, optional: true, required: false
   private _generateSecret?: boolean;
   public get generateSecret() {
-    return this.getBooleanAttribute('generate_secret');
+    return this._generateSecret;
   }
-  public set generateSecret(value: boolean ) {
+  public set generateSecret(value: boolean | undefined) {
     this._generateSecret = value;
-  }
-  public resetGenerateSecret() {
-    this._generateSecret = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get generateSecretInput() {
-    return this._generateSecret
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // logout_urls - computed: false, optional: true, required: false
   private _logoutUrls?: string[];
   public get logoutUrls() {
-    return this.getListAttribute('logout_urls');
+    return this._logoutUrls;
   }
-  public set logoutUrls(value: string[] ) {
+  public set logoutUrls(value: string[] | undefined) {
     this._logoutUrls = value;
-  }
-  public resetLogoutUrls() {
-    this._logoutUrls = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logoutUrlsInput() {
-    return this._logoutUrls
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // prevent_user_existence_errors - computed: true, optional: true, required: false
   private _preventUserExistenceErrors?: string;
   public get preventUserExistenceErrors() {
-    return this.getStringAttribute('prevent_user_existence_errors');
+    return this._preventUserExistenceErrors ?? this.getStringAttribute('prevent_user_existence_errors');
   }
-  public set preventUserExistenceErrors(value: string) {
+  public set preventUserExistenceErrors(value: string | undefined) {
     this._preventUserExistenceErrors = value;
-  }
-  public resetPreventUserExistenceErrors() {
-    this._preventUserExistenceErrors = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preventUserExistenceErrorsInput() {
-    return this._preventUserExistenceErrors
   }
 
   // read_attributes - computed: false, optional: true, required: false
   private _readAttributes?: string[];
   public get readAttributes() {
-    return this.getListAttribute('read_attributes');
+    return this._readAttributes;
   }
-  public set readAttributes(value: string[] ) {
+  public set readAttributes(value: string[] | undefined) {
     this._readAttributes = value;
-  }
-  public resetReadAttributes() {
-    this._readAttributes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get readAttributesInput() {
-    return this._readAttributes
   }
 
   // refresh_token_validity - computed: false, optional: true, required: false
   private _refreshTokenValidity?: number;
   public get refreshTokenValidity() {
-    return this.getNumberAttribute('refresh_token_validity');
+    return this._refreshTokenValidity;
   }
-  public set refreshTokenValidity(value: number ) {
+  public set refreshTokenValidity(value: number | undefined) {
     this._refreshTokenValidity = value;
-  }
-  public resetRefreshTokenValidity() {
-    this._refreshTokenValidity = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get refreshTokenValidityInput() {
-    return this._refreshTokenValidity
   }
 
   // supported_identity_providers - computed: false, optional: true, required: false
   private _supportedIdentityProviders?: string[];
   public get supportedIdentityProviders() {
-    return this.getListAttribute('supported_identity_providers');
+    return this._supportedIdentityProviders;
   }
-  public set supportedIdentityProviders(value: string[] ) {
+  public set supportedIdentityProviders(value: string[] | undefined) {
     this._supportedIdentityProviders = value;
-  }
-  public resetSupportedIdentityProviders() {
-    this._supportedIdentityProviders = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get supportedIdentityProvidersInput() {
-    return this._supportedIdentityProviders
   }
 
   // user_pool_id - computed: false, optional: false, required: true
   private _userPoolId: string;
   public get userPoolId() {
-    return this.getStringAttribute('user_pool_id');
+    return this._userPoolId;
   }
   public set userPoolId(value: string) {
     this._userPoolId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userPoolIdInput() {
-    return this._userPoolId
   }
 
   // write_attributes - computed: false, optional: true, required: false
   private _writeAttributes?: string[];
   public get writeAttributes() {
-    return this.getListAttribute('write_attributes');
+    return this._writeAttributes;
   }
-  public set writeAttributes(value: string[] ) {
+  public set writeAttributes(value: string[] | undefined) {
     this._writeAttributes = value;
-  }
-  public resetWriteAttributes() {
-    this._writeAttributes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get writeAttributesInput() {
-    return this._writeAttributes
   }
 
   // analytics_configuration - computed: false, optional: true, required: false
   private _analyticsConfiguration?: CognitoUserPoolClientAnalyticsConfiguration[];
   public get analyticsConfiguration() {
-    return this.interpolationForAttribute('analytics_configuration') as any;
+    return this._analyticsConfiguration;
   }
-  public set analyticsConfiguration(value: CognitoUserPoolClientAnalyticsConfiguration[] ) {
+  public set analyticsConfiguration(value: CognitoUserPoolClientAnalyticsConfiguration[] | undefined) {
     this._analyticsConfiguration = value;
-  }
-  public resetAnalyticsConfiguration() {
-    this._analyticsConfiguration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get analyticsConfigurationInput() {
-    return this._analyticsConfiguration
   }
 
   // =========
@@ -350,22 +238,22 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_oauth_flows: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOauthFlows),
-      allowed_oauth_flows_user_pool_client: cdktf.booleanToTerraform(this._allowedOauthFlowsUserPoolClient),
-      allowed_oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOauthScopes),
-      callback_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._callbackUrls),
-      default_redirect_uri: cdktf.stringToTerraform(this._defaultRedirectUri),
-      explicit_auth_flows: cdktf.listMapper(cdktf.stringToTerraform)(this._explicitAuthFlows),
-      generate_secret: cdktf.booleanToTerraform(this._generateSecret),
-      logout_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._logoutUrls),
-      name: cdktf.stringToTerraform(this._name),
-      prevent_user_existence_errors: cdktf.stringToTerraform(this._preventUserExistenceErrors),
-      read_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._readAttributes),
-      refresh_token_validity: cdktf.numberToTerraform(this._refreshTokenValidity),
-      supported_identity_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._supportedIdentityProviders),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
-      write_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._writeAttributes),
-      analytics_configuration: cdktf.listMapper(cognitoUserPoolClientAnalyticsConfigurationToTerraform)(this._analyticsConfiguration),
+      allowed_oauth_flows: this._allowedOauthFlows,
+      allowed_oauth_flows_user_pool_client: this._allowedOauthFlowsUserPoolClient,
+      allowed_oauth_scopes: this._allowedOauthScopes,
+      callback_urls: this._callbackUrls,
+      default_redirect_uri: this._defaultRedirectUri,
+      explicit_auth_flows: this._explicitAuthFlows,
+      generate_secret: this._generateSecret,
+      logout_urls: this._logoutUrls,
+      name: this._name,
+      prevent_user_existence_errors: this._preventUserExistenceErrors,
+      read_attributes: this._readAttributes,
+      refresh_token_validity: this._refreshTokenValidity,
+      supported_identity_providers: this._supportedIdentityProviders,
+      user_pool_id: this._userPoolId,
+      write_attributes: this._writeAttributes,
+      analytics_configuration: this._analyticsConfiguration,
     };
   }
 }

@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LightsailStaticIpConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailStaticIpConfig extends TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class LightsailStaticIp extends cdktf.TerraformResource {
+export class LightsailStaticIp extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -36,17 +37,21 @@ export class LightsailStaticIp extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ip_address - computed: true, optional: false, required: false
+  // ip_address - computed: true, optional: false, required: true
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
   }
@@ -54,17 +59,13 @@ export class LightsailStaticIp extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // support_code - computed: true, optional: false, required: false
+  // support_code - computed: true, optional: false, required: true
   public get supportCode() {
     return this.getStringAttribute('support_code');
   }
@@ -75,7 +76,7 @@ export class LightsailStaticIp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

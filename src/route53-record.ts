@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
+export interface Route53RecordConfig extends TerraformMetaArguments {
   readonly allowOverwrite?: boolean;
   readonly healthCheckId?: string;
   readonly multivalueAnswerRoutingPolicy?: boolean;
@@ -32,68 +33,24 @@ export interface Route53RecordAlias {
   readonly name: string;
   readonly zoneId: string;
 }
-
-function route53RecordAliasToTerraform(struct?: Route53RecordAlias): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    evaluate_target_health: cdktf.booleanToTerraform(struct!.evaluateTargetHealth),
-    name: cdktf.stringToTerraform(struct!.name),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
-  }
-}
-
 export interface Route53RecordFailoverRoutingPolicy {
   readonly type: string;
 }
-
-function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53RecordFailoverRoutingPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface Route53RecordGeolocationRoutingPolicy {
   readonly continent?: string;
   readonly country?: string;
   readonly subdivision?: string;
 }
-
-function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route53RecordGeolocationRoutingPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    continent: cdktf.stringToTerraform(struct!.continent),
-    country: cdktf.stringToTerraform(struct!.country),
-    subdivision: cdktf.stringToTerraform(struct!.subdivision),
-  }
-}
-
 export interface Route53RecordLatencyRoutingPolicy {
   readonly region: string;
 }
-
-function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53RecordLatencyRoutingPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    region: cdktf.stringToTerraform(struct!.region),
-  }
-}
-
 export interface Route53RecordWeightedRoutingPolicy {
   readonly weight: number;
 }
 
-function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWeightedRoutingPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    weight: cdktf.numberToTerraform(struct!.weight),
-  }
-}
-
-
 // Resource
 
-export class Route53Record extends cdktf.TerraformResource {
+export class Route53Record extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -133,20 +90,13 @@ export class Route53Record extends cdktf.TerraformResource {
   // allow_overwrite - computed: true, optional: true, required: false
   private _allowOverwrite?: boolean;
   public get allowOverwrite() {
-    return this.getBooleanAttribute('allow_overwrite');
+    return this._allowOverwrite ?? this.getBooleanAttribute('allow_overwrite');
   }
-  public set allowOverwrite(value: boolean) {
+  public set allowOverwrite(value: boolean | undefined) {
     this._allowOverwrite = value;
   }
-  public resetAllowOverwrite() {
-    this._allowOverwrite = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowOverwriteInput() {
-    return this._allowOverwrite
-  }
 
-  // fqdn - computed: true, optional: false, required: false
+  // fqdn - computed: true, optional: false, required: true
   public get fqdn() {
     return this.getStringAttribute('fqdn');
   }
@@ -154,205 +104,127 @@ export class Route53Record extends cdktf.TerraformResource {
   // health_check_id - computed: false, optional: true, required: false
   private _healthCheckId?: string;
   public get healthCheckId() {
-    return this.getStringAttribute('health_check_id');
+    return this._healthCheckId;
   }
-  public set healthCheckId(value: string ) {
+  public set healthCheckId(value: string | undefined) {
     this._healthCheckId = value;
-  }
-  public resetHealthCheckId() {
-    this._healthCheckId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get healthCheckIdInput() {
-    return this._healthCheckId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // multivalue_answer_routing_policy - computed: false, optional: true, required: false
   private _multivalueAnswerRoutingPolicy?: boolean;
   public get multivalueAnswerRoutingPolicy() {
-    return this.getBooleanAttribute('multivalue_answer_routing_policy');
+    return this._multivalueAnswerRoutingPolicy;
   }
-  public set multivalueAnswerRoutingPolicy(value: boolean ) {
+  public set multivalueAnswerRoutingPolicy(value: boolean | undefined) {
     this._multivalueAnswerRoutingPolicy = value;
-  }
-  public resetMultivalueAnswerRoutingPolicy() {
-    this._multivalueAnswerRoutingPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get multivalueAnswerRoutingPolicyInput() {
-    return this._multivalueAnswerRoutingPolicy
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // records - computed: false, optional: true, required: false
   private _records?: string[];
   public get records() {
-    return this.getListAttribute('records');
+    return this._records;
   }
-  public set records(value: string[] ) {
+  public set records(value: string[] | undefined) {
     this._records = value;
-  }
-  public resetRecords() {
-    this._records = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get recordsInput() {
-    return this._records
   }
 
   // set_identifier - computed: false, optional: true, required: false
   private _setIdentifier?: string;
   public get setIdentifier() {
-    return this.getStringAttribute('set_identifier');
+    return this._setIdentifier;
   }
-  public set setIdentifier(value: string ) {
+  public set setIdentifier(value: string | undefined) {
     this._setIdentifier = value;
-  }
-  public resetSetIdentifier() {
-    this._setIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get setIdentifierInput() {
-    return this._setIdentifier
   }
 
   // ttl - computed: false, optional: true, required: false
   private _ttl?: number;
   public get ttl() {
-    return this.getNumberAttribute('ttl');
+    return this._ttl;
   }
-  public set ttl(value: number ) {
+  public set ttl(value: number | undefined) {
     this._ttl = value;
-  }
-  public resetTtl() {
-    this._ttl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ttlInput() {
-    return this._ttl
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this.getStringAttribute('type');
+    return this._type;
   }
   public set type(value: string) {
     this._type = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type
   }
 
   // zone_id - computed: false, optional: false, required: true
   private _zoneId: string;
   public get zoneId() {
-    return this.getStringAttribute('zone_id');
+    return this._zoneId;
   }
   public set zoneId(value: string) {
     this._zoneId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get zoneIdInput() {
-    return this._zoneId
   }
 
   // alias - computed: false, optional: true, required: false
   private _alias?: Route53RecordAlias[];
   public get alias() {
-    return this.interpolationForAttribute('alias') as any;
+    return this._alias;
   }
-  public set alias(value: Route53RecordAlias[] ) {
+  public set alias(value: Route53RecordAlias[] | undefined) {
     this._alias = value;
-  }
-  public resetAlias() {
-    this._alias = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aliasInput() {
-    return this._alias
   }
 
   // failover_routing_policy - computed: false, optional: true, required: false
   private _failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy[];
   public get failoverRoutingPolicy() {
-    return this.interpolationForAttribute('failover_routing_policy') as any;
+    return this._failoverRoutingPolicy;
   }
-  public set failoverRoutingPolicy(value: Route53RecordFailoverRoutingPolicy[] ) {
+  public set failoverRoutingPolicy(value: Route53RecordFailoverRoutingPolicy[] | undefined) {
     this._failoverRoutingPolicy = value;
-  }
-  public resetFailoverRoutingPolicy() {
-    this._failoverRoutingPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get failoverRoutingPolicyInput() {
-    return this._failoverRoutingPolicy
   }
 
   // geolocation_routing_policy - computed: false, optional: true, required: false
   private _geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy[];
   public get geolocationRoutingPolicy() {
-    return this.interpolationForAttribute('geolocation_routing_policy') as any;
+    return this._geolocationRoutingPolicy;
   }
-  public set geolocationRoutingPolicy(value: Route53RecordGeolocationRoutingPolicy[] ) {
+  public set geolocationRoutingPolicy(value: Route53RecordGeolocationRoutingPolicy[] | undefined) {
     this._geolocationRoutingPolicy = value;
-  }
-  public resetGeolocationRoutingPolicy() {
-    this._geolocationRoutingPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get geolocationRoutingPolicyInput() {
-    return this._geolocationRoutingPolicy
   }
 
   // latency_routing_policy - computed: false, optional: true, required: false
   private _latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy[];
   public get latencyRoutingPolicy() {
-    return this.interpolationForAttribute('latency_routing_policy') as any;
+    return this._latencyRoutingPolicy;
   }
-  public set latencyRoutingPolicy(value: Route53RecordLatencyRoutingPolicy[] ) {
+  public set latencyRoutingPolicy(value: Route53RecordLatencyRoutingPolicy[] | undefined) {
     this._latencyRoutingPolicy = value;
-  }
-  public resetLatencyRoutingPolicy() {
-    this._latencyRoutingPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get latencyRoutingPolicyInput() {
-    return this._latencyRoutingPolicy
   }
 
   // weighted_routing_policy - computed: false, optional: true, required: false
   private _weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy[];
   public get weightedRoutingPolicy() {
-    return this.interpolationForAttribute('weighted_routing_policy') as any;
+    return this._weightedRoutingPolicy;
   }
-  public set weightedRoutingPolicy(value: Route53RecordWeightedRoutingPolicy[] ) {
+  public set weightedRoutingPolicy(value: Route53RecordWeightedRoutingPolicy[] | undefined) {
     this._weightedRoutingPolicy = value;
-  }
-  public resetWeightedRoutingPolicy() {
-    this._weightedRoutingPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get weightedRoutingPolicyInput() {
-    return this._weightedRoutingPolicy
   }
 
   // =========
@@ -361,20 +233,20 @@ export class Route53Record extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_overwrite: cdktf.booleanToTerraform(this._allowOverwrite),
-      health_check_id: cdktf.stringToTerraform(this._healthCheckId),
-      multivalue_answer_routing_policy: cdktf.booleanToTerraform(this._multivalueAnswerRoutingPolicy),
-      name: cdktf.stringToTerraform(this._name),
-      records: cdktf.listMapper(cdktf.stringToTerraform)(this._records),
-      set_identifier: cdktf.stringToTerraform(this._setIdentifier),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      type: cdktf.stringToTerraform(this._type),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
-      alias: cdktf.listMapper(route53RecordAliasToTerraform)(this._alias),
-      failover_routing_policy: cdktf.listMapper(route53RecordFailoverRoutingPolicyToTerraform)(this._failoverRoutingPolicy),
-      geolocation_routing_policy: cdktf.listMapper(route53RecordGeolocationRoutingPolicyToTerraform)(this._geolocationRoutingPolicy),
-      latency_routing_policy: cdktf.listMapper(route53RecordLatencyRoutingPolicyToTerraform)(this._latencyRoutingPolicy),
-      weighted_routing_policy: cdktf.listMapper(route53RecordWeightedRoutingPolicyToTerraform)(this._weightedRoutingPolicy),
+      allow_overwrite: this._allowOverwrite,
+      health_check_id: this._healthCheckId,
+      multivalue_answer_routing_policy: this._multivalueAnswerRoutingPolicy,
+      name: this._name,
+      records: this._records,
+      set_identifier: this._setIdentifier,
+      ttl: this._ttl,
+      type: this._type,
+      zone_id: this._zoneId,
+      alias: this._alias,
+      failover_routing_policy: this._failoverRoutingPolicy,
+      geolocation_routing_policy: this._geolocationRoutingPolicy,
+      latency_routing_policy: this._latencyRoutingPolicy,
+      weighted_routing_policy: this._weightedRoutingPolicy,
     };
   }
 }

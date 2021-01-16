@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IotThingConfig extends cdktf.TerraformMetaArguments {
+export interface IotThingConfig extends TerraformMetaArguments {
   readonly attributes?: { [key: string]: string };
   readonly name: string;
   readonly thingTypeName?: string;
@@ -14,7 +15,7 @@ export interface IotThingConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class IotThing extends cdktf.TerraformResource {
+export class IotThing extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class IotThing extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -48,59 +49,45 @@ export class IotThing extends cdktf.TerraformResource {
   // attributes - computed: false, optional: true, required: false
   private _attributes?: { [key: string]: string };
   public get attributes() {
-    return this.interpolationForAttribute('attributes') as any;
+    return this._attributes;
   }
-  public set attributes(value: { [key: string]: string } ) {
+  public set attributes(value: { [key: string]: string } | undefined) {
     this._attributes = value;
   }
-  public resetAttributes() {
-    this._attributes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attributesInput() {
-    return this._attributes
-  }
 
-  // default_client_id - computed: true, optional: false, required: false
+  // default_client_id - computed: true, optional: false, required: true
   public get defaultClientId() {
     return this.getStringAttribute('default_client_id');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // thing_type_name - computed: false, optional: true, required: false
   private _thingTypeName?: string;
   public get thingTypeName() {
-    return this.getStringAttribute('thing_type_name');
+    return this._thingTypeName;
   }
-  public set thingTypeName(value: string ) {
+  public set thingTypeName(value: string | undefined) {
     this._thingTypeName = value;
   }
-  public resetThingTypeName() {
-    this._thingTypeName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thingTypeNameInput() {
-    return this._thingTypeName
-  }
 
-  // version - computed: true, optional: false, required: false
+  // version - computed: true, optional: false, required: true
   public get version() {
     return this.getNumberAttribute('version');
   }
@@ -111,9 +98,9 @@ export class IotThing extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attributes: cdktf.hashMapper(cdktf.anyToTerraform)(this._attributes),
-      name: cdktf.stringToTerraform(this._name),
-      thing_type_name: cdktf.stringToTerraform(this._thingTypeName),
+      attributes: this._attributes,
+      name: this._name,
+      thing_type_name: this._thingTypeName,
     };
   }
 }

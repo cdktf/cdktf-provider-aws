@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcsServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcsServiceConfig extends TerraformMetaArguments {
   readonly clusterArn: string;
   readonly serviceName: string;
 }
 
 // Resource
 
-export class DataAwsEcsService extends cdktf.TerraformDataSource {
+export class DataAwsEcsService extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,7 +39,7 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -46,32 +47,32 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
   // cluster_arn - computed: false, optional: false, required: true
   private _clusterArn: string;
   public get clusterArn() {
-    return this.getStringAttribute('cluster_arn');
+    return this._clusterArn;
   }
   public set clusterArn(value: string) {
     this._clusterArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get clusterArnInput() {
-    return this._clusterArn
-  }
 
-  // desired_count - computed: true, optional: false, required: false
+  // desired_count - computed: true, optional: false, required: true
   public get desiredCount() {
     return this.getNumberAttribute('desired_count');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // launch_type - computed: true, optional: false, required: false
+  // launch_type - computed: true, optional: false, required: true
   public get launchType() {
     return this.getStringAttribute('launch_type');
   }
 
-  // scheduling_strategy - computed: true, optional: false, required: false
+  // scheduling_strategy - computed: true, optional: false, required: true
   public get schedulingStrategy() {
     return this.getStringAttribute('scheduling_strategy');
   }
@@ -79,17 +80,13 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
   // service_name - computed: false, optional: false, required: true
   private _serviceName: string;
   public get serviceName() {
-    return this.getStringAttribute('service_name');
+    return this._serviceName;
   }
   public set serviceName(value: string) {
     this._serviceName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get serviceNameInput() {
-    return this._serviceName
-  }
 
-  // task_definition - computed: true, optional: false, required: false
+  // task_definition - computed: true, optional: false, required: true
   public get taskDefinition() {
     return this.getStringAttribute('task_definition');
   }
@@ -100,8 +97,8 @@ export class DataAwsEcsService extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_arn: cdktf.stringToTerraform(this._clusterArn),
-      service_name: cdktf.stringToTerraform(this._serviceName),
+      cluster_arn: this._clusterArn,
+      service_name: this._serviceName,
     };
   }
 }

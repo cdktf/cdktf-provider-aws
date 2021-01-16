@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DmsCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DmsCertificateConfig extends TerraformMetaArguments {
   readonly certificateId: string;
   readonly certificatePem?: string;
   readonly certificateWallet?: string;
@@ -14,7 +15,7 @@ export interface DmsCertificateConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class DmsCertificate extends cdktf.TerraformResource {
+export class DmsCertificate extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class DmsCertificate extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // certificate_arn - computed: true, optional: false, required: false
+  // certificate_arn - computed: true, optional: false, required: true
   public get certificateArn() {
     return this.getStringAttribute('certificate_arn');
   }
@@ -48,51 +49,37 @@ export class DmsCertificate extends cdktf.TerraformResource {
   // certificate_id - computed: false, optional: false, required: true
   private _certificateId: string;
   public get certificateId() {
-    return this.getStringAttribute('certificate_id');
+    return this._certificateId;
   }
   public set certificateId(value: string) {
     this._certificateId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificateIdInput() {
-    return this._certificateId
   }
 
   // certificate_pem - computed: false, optional: true, required: false
   private _certificatePem?: string;
   public get certificatePem() {
-    return this.getStringAttribute('certificate_pem');
+    return this._certificatePem;
   }
-  public set certificatePem(value: string ) {
+  public set certificatePem(value: string | undefined) {
     this._certificatePem = value;
-  }
-  public resetCertificatePem() {
-    this._certificatePem = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificatePemInput() {
-    return this._certificatePem
   }
 
   // certificate_wallet - computed: false, optional: true, required: false
   private _certificateWallet?: string;
   public get certificateWallet() {
-    return this.getStringAttribute('certificate_wallet');
+    return this._certificateWallet;
   }
-  public set certificateWallet(value: string ) {
+  public set certificateWallet(value: string | undefined) {
     this._certificateWallet = value;
-  }
-  public resetCertificateWallet() {
-    this._certificateWallet = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificateWalletInput() {
-    return this._certificateWallet
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========
@@ -101,9 +88,9 @@ export class DmsCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_id: cdktf.stringToTerraform(this._certificateId),
-      certificate_pem: cdktf.stringToTerraform(this._certificatePem),
-      certificate_wallet: cdktf.stringToTerraform(this._certificateWallet),
+      certificate_id: this._certificateId,
+      certificate_pem: this._certificatePem,
+      certificate_wallet: this._certificateWallet,
     };
   }
 }

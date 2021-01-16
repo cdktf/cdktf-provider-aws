@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface PinpointGcmChannelConfig extends cdktf.TerraformMetaArguments {
+export interface PinpointGcmChannelConfig extends TerraformMetaArguments {
   readonly apiKey: string;
   readonly applicationId: string;
   readonly enabled?: boolean;
@@ -14,7 +15,7 @@ export interface PinpointGcmChannelConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class PinpointGcmChannel extends cdktf.TerraformResource {
+export class PinpointGcmChannel extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,48 +44,37 @@ export class PinpointGcmChannel extends cdktf.TerraformResource {
   // api_key - computed: false, optional: false, required: true
   private _apiKey: string;
   public get apiKey() {
-    return this.getStringAttribute('api_key');
+    return this._apiKey;
   }
   public set apiKey(value: string) {
     this._apiKey = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiKeyInput() {
-    return this._apiKey
   }
 
   // application_id - computed: false, optional: false, required: true
   private _applicationId: string;
   public get applicationId() {
-    return this.getStringAttribute('application_id');
+    return this._applicationId;
   }
   public set applicationId(value: string) {
     this._applicationId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applicationIdInput() {
-    return this._applicationId
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this._enabled;
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | undefined) {
     this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========
@@ -93,9 +83,9 @@ export class PinpointGcmChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: cdktf.stringToTerraform(this._apiKey),
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      enabled: cdktf.booleanToTerraform(this._enabled),
+      api_key: this._apiKey,
+      application_id: this._applicationId,
+      enabled: this._enabled,
     };
   }
 }

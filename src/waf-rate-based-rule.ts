@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface WafRateBasedRuleConfig extends cdktf.TerraformMetaArguments {
+export interface WafRateBasedRuleConfig extends TerraformMetaArguments {
   readonly metricName: string;
   readonly name: string;
   readonly rateKey: string;
@@ -21,19 +22,9 @@ export interface WafRateBasedRulePredicates {
   readonly type: string;
 }
 
-function wafRateBasedRulePredicatesToTerraform(struct?: WafRateBasedRulePredicates): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    data_id: cdktf.stringToTerraform(struct!.dataId),
-    negated: cdktf.booleanToTerraform(struct!.negated),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
-
 // Resource
 
-export class WafRateBasedRule extends cdktf.TerraformResource {
+export class WafRateBasedRule extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -62,98 +53,72 @@ export class WafRateBasedRule extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // metric_name - computed: false, optional: false, required: true
   private _metricName: string;
   public get metricName() {
-    return this.getStringAttribute('metric_name');
+    return this._metricName;
   }
   public set metricName(value: string) {
     this._metricName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricNameInput() {
-    return this._metricName
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // rate_key - computed: false, optional: false, required: true
   private _rateKey: string;
   public get rateKey() {
-    return this.getStringAttribute('rate_key');
+    return this._rateKey;
   }
   public set rateKey(value: string) {
     this._rateKey = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rateKeyInput() {
-    return this._rateKey
   }
 
   // rate_limit - computed: false, optional: false, required: true
   private _rateLimit: number;
   public get rateLimit() {
-    return this.getNumberAttribute('rate_limit');
+    return this._rateLimit;
   }
   public set rateLimit(value: number) {
     this._rateLimit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rateLimitInput() {
-    return this._rateLimit
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // predicates - computed: false, optional: true, required: false
   private _predicates?: WafRateBasedRulePredicates[];
   public get predicates() {
-    return this.interpolationForAttribute('predicates') as any;
+    return this._predicates;
   }
-  public set predicates(value: WafRateBasedRulePredicates[] ) {
+  public set predicates(value: WafRateBasedRulePredicates[] | undefined) {
     this._predicates = value;
-  }
-  public resetPredicates() {
-    this._predicates = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get predicatesInput() {
-    return this._predicates
   }
 
   // =========
@@ -162,12 +127,12 @@ export class WafRateBasedRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      metric_name: cdktf.stringToTerraform(this._metricName),
-      name: cdktf.stringToTerraform(this._name),
-      rate_key: cdktf.stringToTerraform(this._rateKey),
-      rate_limit: cdktf.numberToTerraform(this._rateLimit),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      predicates: cdktf.listMapper(wafRateBasedRulePredicatesToTerraform)(this._predicates),
+      metric_name: this._metricName,
+      name: this._name,
+      rate_key: this._rateKey,
+      rate_limit: this._rateLimit,
+      tags: this._tags,
+      predicates: this._predicates,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointConnectionNotificationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointConnectionNotificationConfig extends TerraformMetaArguments {
   readonly connectionEvents: string[];
   readonly connectionNotificationArn: string;
   readonly vpcEndpointId?: string;
@@ -15,7 +16,7 @@ export interface VpcEndpointConnectionNotificationConfig extends cdktf.Terraform
 
 // Resource
 
-export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
+export class VpcEndpointConnectionNotification extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,40 +46,36 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
   // connection_events - computed: false, optional: false, required: true
   private _connectionEvents: string[];
   public get connectionEvents() {
-    return this.getListAttribute('connection_events');
+    return this._connectionEvents;
   }
   public set connectionEvents(value: string[]) {
     this._connectionEvents = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get connectionEventsInput() {
-    return this._connectionEvents
   }
 
   // connection_notification_arn - computed: false, optional: false, required: true
   private _connectionNotificationArn: string;
   public get connectionNotificationArn() {
-    return this.getStringAttribute('connection_notification_arn');
+    return this._connectionNotificationArn;
   }
   public set connectionNotificationArn(value: string) {
     this._connectionNotificationArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get connectionNotificationArnInput() {
-    return this._connectionNotificationArn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // notification_type - computed: true, optional: false, required: false
+  // notification_type - computed: true, optional: false, required: true
   public get notificationType() {
     return this.getStringAttribute('notification_type');
   }
 
-  // state - computed: true, optional: false, required: false
+  // state - computed: true, optional: false, required: true
   public get state() {
     return this.getStringAttribute('state');
   }
@@ -86,33 +83,19 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
   // vpc_endpoint_id - computed: false, optional: true, required: false
   private _vpcEndpointId?: string;
   public get vpcEndpointId() {
-    return this.getStringAttribute('vpc_endpoint_id');
+    return this._vpcEndpointId;
   }
-  public set vpcEndpointId(value: string ) {
+  public set vpcEndpointId(value: string | undefined) {
     this._vpcEndpointId = value;
-  }
-  public resetVpcEndpointId() {
-    this._vpcEndpointId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcEndpointIdInput() {
-    return this._vpcEndpointId
   }
 
   // vpc_endpoint_service_id - computed: false, optional: true, required: false
   private _vpcEndpointServiceId?: string;
   public get vpcEndpointServiceId() {
-    return this.getStringAttribute('vpc_endpoint_service_id');
+    return this._vpcEndpointServiceId;
   }
-  public set vpcEndpointServiceId(value: string ) {
+  public set vpcEndpointServiceId(value: string | undefined) {
     this._vpcEndpointServiceId = value;
-  }
-  public resetVpcEndpointServiceId() {
-    this._vpcEndpointServiceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcEndpointServiceIdInput() {
-    return this._vpcEndpointServiceId
   }
 
   // =========
@@ -121,10 +104,10 @@ export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_events: cdktf.listMapper(cdktf.stringToTerraform)(this._connectionEvents),
-      connection_notification_arn: cdktf.stringToTerraform(this._connectionNotificationArn),
-      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
-      vpc_endpoint_service_id: cdktf.stringToTerraform(this._vpcEndpointServiceId),
+      connection_events: this._connectionEvents,
+      connection_notification_arn: this._connectionNotificationArn,
+      vpc_endpoint_id: this._vpcEndpointId,
+      vpc_endpoint_service_id: this._vpcEndpointServiceId,
     };
   }
 }

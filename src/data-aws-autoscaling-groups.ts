@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAutoscalingGroupsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAutoscalingGroupsConfig extends TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsAutoscalingGroupsFilter[];
 }
@@ -15,18 +16,9 @@ export interface DataAwsAutoscalingGroupsFilter {
   readonly values: string[];
 }
 
-function dataAwsAutoscalingGroupsFilterToTerraform(struct?: DataAwsAutoscalingGroupsFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
+export class DataAwsAutoscalingGroups extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -50,17 +42,21 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arns - computed: true, optional: false, required: false
+  // arns - computed: true, optional: false, required: true
   public get arns() {
     return this.getListAttribute('arns');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // names - computed: true, optional: false, required: false
+  // names - computed: true, optional: false, required: true
   public get names() {
     return this.getListAttribute('names');
   }
@@ -68,17 +64,10 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsAutoscalingGroupsFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsAutoscalingGroupsFilter[] ) {
+  public set filter(value: DataAwsAutoscalingGroupsFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -87,7 +76,7 @@ export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter: cdktf.listMapper(dataAwsAutoscalingGroupsFilterToTerraform)(this._filter),
+      filter: this._filter,
     };
   }
 }

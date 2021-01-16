@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CustomerGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface CustomerGatewayConfig extends TerraformMetaArguments {
   readonly bgpAsn: string;
   readonly ipAddress: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +16,7 @@ export interface CustomerGatewayConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class CustomerGateway extends cdktf.TerraformResource {
+export class CustomerGateway extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,7 +43,7 @@ export class CustomerGateway extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -50,61 +51,46 @@ export class CustomerGateway extends cdktf.TerraformResource {
   // bgp_asn - computed: false, optional: false, required: true
   private _bgpAsn: string;
   public get bgpAsn() {
-    return this.getStringAttribute('bgp_asn');
+    return this._bgpAsn;
   }
   public set bgpAsn(value: string) {
     this._bgpAsn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get bgpAsnInput() {
-    return this._bgpAsn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // ip_address - computed: false, optional: false, required: true
   private _ipAddress: string;
   public get ipAddress() {
-    return this.getStringAttribute('ip_address');
+    return this._ipAddress;
   }
   public set ipAddress(value: string) {
     this._ipAddress = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipAddressInput() {
-    return this._ipAddress
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this.getStringAttribute('type');
+    return this._type;
   }
   public set type(value: string) {
     this._type = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type
   }
 
   // =========
@@ -113,10 +99,10 @@ export class CustomerGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bgp_asn: cdktf.stringToTerraform(this._bgpAsn),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
+      bgp_asn: this._bgpAsn,
+      ip_address: this._ipAddress,
+      tags: this._tags,
+      type: this._type,
     };
   }
 }

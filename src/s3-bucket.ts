@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
+export interface S3BucketConfig extends TerraformMetaArguments {
   readonly accelerationStatus?: string;
   readonly acl?: string;
   readonly bucket?: string;
@@ -14,7 +15,6 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   readonly forceDestroy?: boolean;
   readonly hostedZoneId?: string;
   readonly policy?: string;
-  readonly region?: string;
   readonly requestPayer?: string;
   readonly tags?: { [key: string]: string };
   readonly websiteDomain?: string;
@@ -45,89 +45,29 @@ export interface S3BucketCorsRule {
   readonly exposeHeaders?: string[];
   readonly maxAgeSeconds?: number;
 }
-
-function s3BucketCorsRuleToTerraform(struct?: S3BucketCorsRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedOrigins),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
-    max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
-  }
-}
-
 export interface S3BucketGrant {
   readonly id?: string;
   readonly permissions: string[];
   readonly type: string;
   readonly uri?: string;
 }
-
-function s3BucketGrantToTerraform(struct?: S3BucketGrant): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    id: cdktf.stringToTerraform(struct!.id),
-    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
-    type: cdktf.stringToTerraform(struct!.type),
-    uri: cdktf.stringToTerraform(struct!.uri),
-  }
-}
-
 export interface S3BucketLifecycleRuleExpiration {
   readonly date?: string;
   readonly days?: number;
   readonly expiredObjectDeleteMarker?: boolean;
 }
-
-function s3BucketLifecycleRuleExpirationToTerraform(struct?: S3BucketLifecycleRuleExpiration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    date: cdktf.stringToTerraform(struct!.date),
-    days: cdktf.numberToTerraform(struct!.days),
-    expired_object_delete_marker: cdktf.booleanToTerraform(struct!.expiredObjectDeleteMarker),
-  }
-}
-
 export interface S3BucketLifecycleRuleNoncurrentVersionExpiration {
   readonly days?: number;
 }
-
-function s3BucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: S3BucketLifecycleRuleNoncurrentVersionExpiration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    days: cdktf.numberToTerraform(struct!.days),
-  }
-}
-
 export interface S3BucketLifecycleRuleNoncurrentVersionTransition {
   readonly days?: number;
   readonly storageClass: string;
 }
-
-function s3BucketLifecycleRuleNoncurrentVersionTransitionToTerraform(struct?: S3BucketLifecycleRuleNoncurrentVersionTransition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    days: cdktf.numberToTerraform(struct!.days),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
-  }
-}
-
 export interface S3BucketLifecycleRuleTransition {
   readonly date?: string;
   readonly days?: number;
   readonly storageClass: string;
 }
-
-function s3BucketLifecycleRuleTransitionToTerraform(struct?: S3BucketLifecycleRuleTransition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    date: cdktf.stringToTerraform(struct!.date),
-    days: cdktf.numberToTerraform(struct!.days),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
-  }
-}
-
 export interface S3BucketLifecycleRule {
   readonly abortIncompleteMultipartUploadDays?: number;
   readonly enabled: boolean;
@@ -143,87 +83,27 @@ export interface S3BucketLifecycleRule {
   /** transition block */
   readonly transition?: S3BucketLifecycleRuleTransition[];
 }
-
-function s3BucketLifecycleRuleToTerraform(struct?: S3BucketLifecycleRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    abort_incomplete_multipart_upload_days: cdktf.numberToTerraform(struct!.abortIncompleteMultipartUploadDays),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    id: cdktf.stringToTerraform(struct!.id),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
-    expiration: cdktf.listMapper(s3BucketLifecycleRuleExpirationToTerraform)(struct!.expiration),
-    noncurrent_version_expiration: cdktf.listMapper(s3BucketLifecycleRuleNoncurrentVersionExpirationToTerraform)(struct!.noncurrentVersionExpiration),
-    noncurrent_version_transition: cdktf.listMapper(s3BucketLifecycleRuleNoncurrentVersionTransitionToTerraform)(struct!.noncurrentVersionTransition),
-    transition: cdktf.listMapper(s3BucketLifecycleRuleTransitionToTerraform)(struct!.transition),
-  }
-}
-
 export interface S3BucketLogging {
   readonly targetBucket: string;
   readonly targetPrefix?: string;
 }
-
-function s3BucketLoggingToTerraform(struct?: S3BucketLogging): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    target_bucket: cdktf.stringToTerraform(struct!.targetBucket),
-    target_prefix: cdktf.stringToTerraform(struct!.targetPrefix),
-  }
-}
-
 export interface S3BucketObjectLockConfigurationRuleDefaultRetention {
   readonly days?: number;
   readonly mode: string;
   readonly years?: number;
 }
-
-function s3BucketObjectLockConfigurationRuleDefaultRetentionToTerraform(struct?: S3BucketObjectLockConfigurationRuleDefaultRetention): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    days: cdktf.numberToTerraform(struct!.days),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    years: cdktf.numberToTerraform(struct!.years),
-  }
-}
-
 export interface S3BucketObjectLockConfigurationRule {
   /** default_retention block */
   readonly defaultRetention: S3BucketObjectLockConfigurationRuleDefaultRetention[];
 }
-
-function s3BucketObjectLockConfigurationRuleToTerraform(struct?: S3BucketObjectLockConfigurationRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    default_retention: cdktf.listMapper(s3BucketObjectLockConfigurationRuleDefaultRetentionToTerraform)(struct!.defaultRetention),
-  }
-}
-
 export interface S3BucketObjectLockConfiguration {
   readonly objectLockEnabled: string;
   /** rule block */
   readonly rule?: S3BucketObjectLockConfigurationRule[];
 }
-
-function s3BucketObjectLockConfigurationToTerraform(struct?: S3BucketObjectLockConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    object_lock_enabled: cdktf.stringToTerraform(struct!.objectLockEnabled),
-    rule: cdktf.listMapper(s3BucketObjectLockConfigurationRuleToTerraform)(struct!.rule),
-  }
-}
-
 export interface S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation {
   readonly owner: string;
 }
-
-function s3BucketReplicationConfigurationRulesDestinationAccessControlTranslationToTerraform(struct?: S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    owner: cdktf.stringToTerraform(struct!.owner),
-  }
-}
-
 export interface S3BucketReplicationConfigurationRulesDestination {
   readonly accountId?: string;
   readonly bucket: string;
@@ -232,54 +112,17 @@ export interface S3BucketReplicationConfigurationRulesDestination {
   /** access_control_translation block */
   readonly accessControlTranslation?: S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation[];
 }
-
-function s3BucketReplicationConfigurationRulesDestinationToTerraform(struct?: S3BucketReplicationConfigurationRulesDestination): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    replica_kms_key_id: cdktf.stringToTerraform(struct!.replicaKmsKeyId),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
-    access_control_translation: cdktf.listMapper(s3BucketReplicationConfigurationRulesDestinationAccessControlTranslationToTerraform)(struct!.accessControlTranslation),
-  }
-}
-
 export interface S3BucketReplicationConfigurationRulesFilter {
   readonly prefix?: string;
   readonly tags?: { [key: string]: string };
 }
-
-function s3BucketReplicationConfigurationRulesFilterToTerraform(struct?: S3BucketReplicationConfigurationRulesFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
-  }
-}
-
 export interface S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects {
   readonly enabled: boolean;
 }
-
-function s3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsToTerraform(struct?: S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-  }
-}
-
 export interface S3BucketReplicationConfigurationRulesSourceSelectionCriteria {
   /** sse_kms_encrypted_objects block */
   readonly sseKmsEncryptedObjects?: S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects[];
 }
-
-function s3BucketReplicationConfigurationRulesSourceSelectionCriteriaToTerraform(struct?: S3BucketReplicationConfigurationRulesSourceSelectionCriteria): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    sse_kms_encrypted_objects: cdktf.listMapper(s3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsToTerraform)(struct!.sseKmsEncryptedObjects),
-  }
-}
-
 export interface S3BucketReplicationConfigurationRules {
   readonly id?: string;
   readonly prefix?: string;
@@ -292,84 +135,27 @@ export interface S3BucketReplicationConfigurationRules {
   /** source_selection_criteria block */
   readonly sourceSelectionCriteria?: S3BucketReplicationConfigurationRulesSourceSelectionCriteria[];
 }
-
-function s3BucketReplicationConfigurationRulesToTerraform(struct?: S3BucketReplicationConfigurationRules): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    id: cdktf.stringToTerraform(struct!.id),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    status: cdktf.stringToTerraform(struct!.status),
-    destination: cdktf.listMapper(s3BucketReplicationConfigurationRulesDestinationToTerraform)(struct!.destination),
-    filter: cdktf.listMapper(s3BucketReplicationConfigurationRulesFilterToTerraform)(struct!.filter),
-    source_selection_criteria: cdktf.listMapper(s3BucketReplicationConfigurationRulesSourceSelectionCriteriaToTerraform)(struct!.sourceSelectionCriteria),
-  }
-}
-
 export interface S3BucketReplicationConfiguration {
   readonly role: string;
   /** rules block */
   readonly rules: S3BucketReplicationConfigurationRules[];
 }
-
-function s3BucketReplicationConfigurationToTerraform(struct?: S3BucketReplicationConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    role: cdktf.stringToTerraform(struct!.role),
-    rules: cdktf.listMapper(s3BucketReplicationConfigurationRulesToTerraform)(struct!.rules),
-  }
-}
-
 export interface S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault {
   readonly kmsMasterKeyId?: string;
   readonly sseAlgorithm: string;
 }
-
-function s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultToTerraform(struct?: S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    kms_master_key_id: cdktf.stringToTerraform(struct!.kmsMasterKeyId),
-    sse_algorithm: cdktf.stringToTerraform(struct!.sseAlgorithm),
-  }
-}
-
 export interface S3BucketServerSideEncryptionConfigurationRule {
   /** apply_server_side_encryption_by_default block */
   readonly applyServerSideEncryptionByDefault: S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault[];
 }
-
-function s3BucketServerSideEncryptionConfigurationRuleToTerraform(struct?: S3BucketServerSideEncryptionConfigurationRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    apply_server_side_encryption_by_default: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultToTerraform)(struct!.applyServerSideEncryptionByDefault),
-  }
-}
-
 export interface S3BucketServerSideEncryptionConfiguration {
   /** rule block */
   readonly rule: S3BucketServerSideEncryptionConfigurationRule[];
 }
-
-function s3BucketServerSideEncryptionConfigurationToTerraform(struct?: S3BucketServerSideEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    rule: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleToTerraform)(struct!.rule),
-  }
-}
-
 export interface S3BucketVersioning {
   readonly enabled?: boolean;
   readonly mfaDelete?: boolean;
 }
-
-function s3BucketVersioningToTerraform(struct?: S3BucketVersioning): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    mfa_delete: cdktf.booleanToTerraform(struct!.mfaDelete),
-  }
-}
-
 export interface S3BucketWebsite {
   readonly errorDocument?: string;
   readonly indexDocument?: string;
@@ -377,20 +163,9 @@ export interface S3BucketWebsite {
   readonly routingRules?: string;
 }
 
-function s3BucketWebsiteToTerraform(struct?: S3BucketWebsite): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    error_document: cdktf.stringToTerraform(struct!.errorDocument),
-    index_document: cdktf.stringToTerraform(struct!.indexDocument),
-    redirect_all_requests_to: cdktf.stringToTerraform(struct!.redirectAllRequestsTo),
-    routing_rules: cdktf.stringToTerraform(struct!.routingRules),
-  }
-}
-
-
 // Resource
 
-export class S3Bucket extends cdktf.TerraformResource {
+export class S3Bucket extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -414,7 +189,6 @@ export class S3Bucket extends cdktf.TerraformResource {
     this._forceDestroy = config.forceDestroy;
     this._hostedZoneId = config.hostedZoneId;
     this._policy = config.policy;
-    this._region = config.region;
     this._requestPayer = config.requestPayer;
     this._tags = config.tags;
     this._websiteDomain = config.websiteDomain;
@@ -437,57 +211,40 @@ export class S3Bucket extends cdktf.TerraformResource {
   // acceleration_status - computed: true, optional: true, required: false
   private _accelerationStatus?: string;
   public get accelerationStatus() {
-    return this.getStringAttribute('acceleration_status');
+    return this._accelerationStatus ?? this.getStringAttribute('acceleration_status');
   }
-  public set accelerationStatus(value: string) {
+  public set accelerationStatus(value: string | undefined) {
     this._accelerationStatus = value;
-  }
-  public resetAccelerationStatus() {
-    this._accelerationStatus = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accelerationStatusInput() {
-    return this._accelerationStatus
   }
 
   // acl - computed: false, optional: true, required: false
   private _acl?: string;
   public get acl() {
-    return this.getStringAttribute('acl');
+    return this._acl;
   }
-  public set acl(value: string ) {
+  public set acl(value: string | undefined) {
     this._acl = value;
-  }
-  public resetAcl() {
-    this._acl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aclInput() {
-    return this._acl
   }
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn ?? this.getStringAttribute('arn');
+  }
+  public set arn(value: string | undefined) {
+    this._arn = value;
   }
 
   // bucket - computed: true, optional: true, required: false
   private _bucket?: string;
   public get bucket() {
-    return this.getStringAttribute('bucket');
+    return this._bucket ?? this.getStringAttribute('bucket');
   }
-  public set bucket(value: string) {
+  public set bucket(value: string | undefined) {
     this._bucket = value;
   }
-  public resetBucket() {
-    this._bucket = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bucketInput() {
-    return this._bucket
-  }
 
-  // bucket_domain_name - computed: true, optional: false, required: false
+  // bucket_domain_name - computed: true, optional: false, required: true
   public get bucketDomainName() {
     return this.getStringAttribute('bucket_domain_name');
   }
@@ -495,20 +252,13 @@ export class S3Bucket extends cdktf.TerraformResource {
   // bucket_prefix - computed: false, optional: true, required: false
   private _bucketPrefix?: string;
   public get bucketPrefix() {
-    return this.getStringAttribute('bucket_prefix');
+    return this._bucketPrefix;
   }
-  public set bucketPrefix(value: string ) {
+  public set bucketPrefix(value: string | undefined) {
     this._bucketPrefix = value;
   }
-  public resetBucketPrefix() {
-    this._bucketPrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bucketPrefixInput() {
-    return this._bucketPrefix
-  }
 
-  // bucket_regional_domain_name - computed: true, optional: false, required: false
+  // bucket_regional_domain_name - computed: true, optional: false, required: true
   public get bucketRegionalDomainName() {
     return this.getStringAttribute('bucket_regional_domain_name');
   }
@@ -516,278 +266,159 @@ export class S3Bucket extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy');
+    return this._forceDestroy;
   }
-  public set forceDestroy(value: boolean ) {
+  public set forceDestroy(value: boolean | undefined) {
     this._forceDestroy = value;
-  }
-  public resetForceDestroy() {
-    this._forceDestroy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get forceDestroyInput() {
-    return this._forceDestroy
   }
 
   // hosted_zone_id - computed: true, optional: true, required: false
   private _hostedZoneId?: string;
   public get hostedZoneId() {
-    return this.getStringAttribute('hosted_zone_id');
+    return this._hostedZoneId ?? this.getStringAttribute('hosted_zone_id');
   }
-  public set hostedZoneId(value: string) {
+  public set hostedZoneId(value: string | undefined) {
     this._hostedZoneId = value;
-  }
-  public resetHostedZoneId() {
-    this._hostedZoneId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get hostedZoneIdInput() {
-    return this._hostedZoneId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // policy - computed: false, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy;
   }
-  public set policy(value: string ) {
+  public set policy(value: string | undefined) {
     this._policy = value;
   }
-  public resetPolicy() {
-    this._policy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
-  }
 
-  // region - computed: true, optional: true, required: false
-  private _region?: string;
+  // region - computed: true, optional: false, required: true
   public get region() {
     return this.getStringAttribute('region');
-  }
-  public set region(value: string) {
-    this._region = value;
-  }
-  public resetRegion() {
-    this._region = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionInput() {
-    return this._region
   }
 
   // request_payer - computed: true, optional: true, required: false
   private _requestPayer?: string;
   public get requestPayer() {
-    return this.getStringAttribute('request_payer');
+    return this._requestPayer ?? this.getStringAttribute('request_payer');
   }
-  public set requestPayer(value: string) {
+  public set requestPayer(value: string | undefined) {
     this._requestPayer = value;
-  }
-  public resetRequestPayer() {
-    this._requestPayer = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestPayerInput() {
-    return this._requestPayer
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // website_domain - computed: true, optional: true, required: false
   private _websiteDomain?: string;
   public get websiteDomain() {
-    return this.getStringAttribute('website_domain');
+    return this._websiteDomain ?? this.getStringAttribute('website_domain');
   }
-  public set websiteDomain(value: string) {
+  public set websiteDomain(value: string | undefined) {
     this._websiteDomain = value;
-  }
-  public resetWebsiteDomain() {
-    this._websiteDomain = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get websiteDomainInput() {
-    return this._websiteDomain
   }
 
   // website_endpoint - computed: true, optional: true, required: false
   private _websiteEndpoint?: string;
   public get websiteEndpoint() {
-    return this.getStringAttribute('website_endpoint');
+    return this._websiteEndpoint ?? this.getStringAttribute('website_endpoint');
   }
-  public set websiteEndpoint(value: string) {
+  public set websiteEndpoint(value: string | undefined) {
     this._websiteEndpoint = value;
-  }
-  public resetWebsiteEndpoint() {
-    this._websiteEndpoint = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get websiteEndpointInput() {
-    return this._websiteEndpoint
   }
 
   // cors_rule - computed: false, optional: true, required: false
   private _corsRule?: S3BucketCorsRule[];
   public get corsRule() {
-    return this.interpolationForAttribute('cors_rule') as any;
+    return this._corsRule;
   }
-  public set corsRule(value: S3BucketCorsRule[] ) {
+  public set corsRule(value: S3BucketCorsRule[] | undefined) {
     this._corsRule = value;
-  }
-  public resetCorsRule() {
-    this._corsRule = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get corsRuleInput() {
-    return this._corsRule
   }
 
   // grant - computed: false, optional: true, required: false
   private _grant?: S3BucketGrant[];
   public get grant() {
-    return this.interpolationForAttribute('grant') as any;
+    return this._grant;
   }
-  public set grant(value: S3BucketGrant[] ) {
+  public set grant(value: S3BucketGrant[] | undefined) {
     this._grant = value;
-  }
-  public resetGrant() {
-    this._grant = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get grantInput() {
-    return this._grant
   }
 
   // lifecycle_rule - computed: false, optional: true, required: false
   private _lifecycleRule?: S3BucketLifecycleRule[];
   public get lifecycleRule() {
-    return this.interpolationForAttribute('lifecycle_rule') as any;
+    return this._lifecycleRule;
   }
-  public set lifecycleRule(value: S3BucketLifecycleRule[] ) {
+  public set lifecycleRule(value: S3BucketLifecycleRule[] | undefined) {
     this._lifecycleRule = value;
-  }
-  public resetLifecycleRule() {
-    this._lifecycleRule = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get lifecycleRuleInput() {
-    return this._lifecycleRule
   }
 
   // logging - computed: false, optional: true, required: false
   private _logging?: S3BucketLogging[];
   public get logging() {
-    return this.interpolationForAttribute('logging') as any;
+    return this._logging;
   }
-  public set logging(value: S3BucketLogging[] ) {
+  public set logging(value: S3BucketLogging[] | undefined) {
     this._logging = value;
-  }
-  public resetLogging() {
-    this._logging = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loggingInput() {
-    return this._logging
   }
 
   // object_lock_configuration - computed: false, optional: true, required: false
   private _objectLockConfiguration?: S3BucketObjectLockConfiguration[];
   public get objectLockConfiguration() {
-    return this.interpolationForAttribute('object_lock_configuration') as any;
+    return this._objectLockConfiguration;
   }
-  public set objectLockConfiguration(value: S3BucketObjectLockConfiguration[] ) {
+  public set objectLockConfiguration(value: S3BucketObjectLockConfiguration[] | undefined) {
     this._objectLockConfiguration = value;
-  }
-  public resetObjectLockConfiguration() {
-    this._objectLockConfiguration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get objectLockConfigurationInput() {
-    return this._objectLockConfiguration
   }
 
   // replication_configuration - computed: false, optional: true, required: false
   private _replicationConfiguration?: S3BucketReplicationConfiguration[];
   public get replicationConfiguration() {
-    return this.interpolationForAttribute('replication_configuration') as any;
+    return this._replicationConfiguration;
   }
-  public set replicationConfiguration(value: S3BucketReplicationConfiguration[] ) {
+  public set replicationConfiguration(value: S3BucketReplicationConfiguration[] | undefined) {
     this._replicationConfiguration = value;
-  }
-  public resetReplicationConfiguration() {
-    this._replicationConfiguration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get replicationConfigurationInput() {
-    return this._replicationConfiguration
   }
 
   // server_side_encryption_configuration - computed: false, optional: true, required: false
   private _serverSideEncryptionConfiguration?: S3BucketServerSideEncryptionConfiguration[];
   public get serverSideEncryptionConfiguration() {
-    return this.interpolationForAttribute('server_side_encryption_configuration') as any;
+    return this._serverSideEncryptionConfiguration;
   }
-  public set serverSideEncryptionConfiguration(value: S3BucketServerSideEncryptionConfiguration[] ) {
+  public set serverSideEncryptionConfiguration(value: S3BucketServerSideEncryptionConfiguration[] | undefined) {
     this._serverSideEncryptionConfiguration = value;
-  }
-  public resetServerSideEncryptionConfiguration() {
-    this._serverSideEncryptionConfiguration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverSideEncryptionConfigurationInput() {
-    return this._serverSideEncryptionConfiguration
   }
 
   // versioning - computed: false, optional: true, required: false
   private _versioning?: S3BucketVersioning[];
   public get versioning() {
-    return this.interpolationForAttribute('versioning') as any;
+    return this._versioning;
   }
-  public set versioning(value: S3BucketVersioning[] ) {
+  public set versioning(value: S3BucketVersioning[] | undefined) {
     this._versioning = value;
-  }
-  public resetVersioning() {
-    this._versioning = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versioningInput() {
-    return this._versioning
   }
 
   // website - computed: false, optional: true, required: false
   private _website?: S3BucketWebsite[];
   public get website() {
-    return this.interpolationForAttribute('website') as any;
+    return this._website;
   }
-  public set website(value: S3BucketWebsite[] ) {
+  public set website(value: S3BucketWebsite[] | undefined) {
     this._website = value;
-  }
-  public resetWebsite() {
-    this._website = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get websiteInput() {
-    return this._website
   }
 
   // =========
@@ -796,27 +427,26 @@ export class S3Bucket extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acceleration_status: cdktf.stringToTerraform(this._accelerationStatus),
-      acl: cdktf.stringToTerraform(this._acl),
-      bucket: cdktf.stringToTerraform(this._bucket),
-      bucket_prefix: cdktf.stringToTerraform(this._bucketPrefix),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
-      policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
-      request_payer: cdktf.stringToTerraform(this._requestPayer),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      website_domain: cdktf.stringToTerraform(this._websiteDomain),
-      website_endpoint: cdktf.stringToTerraform(this._websiteEndpoint),
-      cors_rule: cdktf.listMapper(s3BucketCorsRuleToTerraform)(this._corsRule),
-      grant: cdktf.listMapper(s3BucketGrantToTerraform)(this._grant),
-      lifecycle_rule: cdktf.listMapper(s3BucketLifecycleRuleToTerraform)(this._lifecycleRule),
-      logging: cdktf.listMapper(s3BucketLoggingToTerraform)(this._logging),
-      object_lock_configuration: cdktf.listMapper(s3BucketObjectLockConfigurationToTerraform)(this._objectLockConfiguration),
-      replication_configuration: cdktf.listMapper(s3BucketReplicationConfigurationToTerraform)(this._replicationConfiguration),
-      server_side_encryption_configuration: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationToTerraform)(this._serverSideEncryptionConfiguration),
-      versioning: cdktf.listMapper(s3BucketVersioningToTerraform)(this._versioning),
-      website: cdktf.listMapper(s3BucketWebsiteToTerraform)(this._website),
+      acceleration_status: this._accelerationStatus,
+      acl: this._acl,
+      bucket: this._bucket,
+      bucket_prefix: this._bucketPrefix,
+      force_destroy: this._forceDestroy,
+      hosted_zone_id: this._hostedZoneId,
+      policy: this._policy,
+      request_payer: this._requestPayer,
+      tags: this._tags,
+      website_domain: this._websiteDomain,
+      website_endpoint: this._websiteEndpoint,
+      cors_rule: this._corsRule,
+      grant: this._grant,
+      lifecycle_rule: this._lifecycleRule,
+      logging: this._logging,
+      object_lock_configuration: this._objectLockConfiguration,
+      replication_configuration: this._replicationConfiguration,
+      server_side_encryption_configuration: this._serverSideEncryptionConfiguration,
+      versioning: this._versioning,
+      website: this._website,
     };
   }
 }

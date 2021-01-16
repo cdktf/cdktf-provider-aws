@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LbListenerCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface LbListenerCertificateConfig extends TerraformMetaArguments {
   readonly certificateArn: string;
   readonly listenerArn: string;
 }
 
 // Resource
 
-export class LbListenerCertificate extends cdktf.TerraformResource {
+export class LbListenerCertificate extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class LbListenerCertificate extends cdktf.TerraformResource {
   // certificate_arn - computed: false, optional: false, required: true
   private _certificateArn: string;
   public get certificateArn() {
-    return this.getStringAttribute('certificate_arn');
+    return this._certificateArn;
   }
   public set certificateArn(value: string) {
     this._certificateArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get certificateArnInput() {
-    return this._certificateArn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // listener_arn - computed: false, optional: false, required: true
   private _listenerArn: string;
   public get listenerArn() {
-    return this.getStringAttribute('listener_arn');
+    return this._listenerArn;
   }
   public set listenerArn(value: string) {
     this._listenerArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get listenerArnInput() {
-    return this._listenerArn
   }
 
   // =========
@@ -75,8 +72,8 @@ export class LbListenerCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
-      listener_arn: cdktf.stringToTerraform(this._listenerArn),
+      certificate_arn: this._certificateArn,
+      listener_arn: this._listenerArn,
     };
   }
 }

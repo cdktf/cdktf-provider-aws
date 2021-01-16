@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SecretsmanagerSecretRotationConfig extends cdktf.TerraformMetaArguments {
+export interface SecretsmanagerSecretRotationConfig extends TerraformMetaArguments {
   readonly rotationLambdaArn: string;
   readonly secretId: string;
   readonly tags?: { [key: string]: string };
@@ -17,17 +18,9 @@ export interface SecretsmanagerSecretRotationRotationRules {
   readonly automaticallyAfterDays: number;
 }
 
-function secretsmanagerSecretRotationRotationRulesToTerraform(struct?: SecretsmanagerSecretRotationRotationRules): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    automatically_after_days: cdktf.numberToTerraform(struct!.automaticallyAfterDays),
-  }
-}
-
-
 // Resource
 
-export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
+export class SecretsmanagerSecretRotation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -55,11 +48,15 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // rotation_enabled - computed: true, optional: false, required: false
+  // rotation_enabled - computed: true, optional: false, required: true
   public get rotationEnabled() {
     return this.getBooleanAttribute('rotation_enabled');
   }
@@ -67,56 +64,37 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
   // rotation_lambda_arn - computed: false, optional: false, required: true
   private _rotationLambdaArn: string;
   public get rotationLambdaArn() {
-    return this.getStringAttribute('rotation_lambda_arn');
+    return this._rotationLambdaArn;
   }
   public set rotationLambdaArn(value: string) {
     this._rotationLambdaArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rotationLambdaArnInput() {
-    return this._rotationLambdaArn
   }
 
   // secret_id - computed: false, optional: false, required: true
   private _secretId: string;
   public get secretId() {
-    return this.getStringAttribute('secret_id');
+    return this._secretId;
   }
   public set secretId(value: string) {
     this._secretId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secretIdInput() {
-    return this._secretId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // rotation_rules - computed: false, optional: false, required: true
   private _rotationRules: SecretsmanagerSecretRotationRotationRules[];
   public get rotationRules() {
-    return this.interpolationForAttribute('rotation_rules') as any;
+    return this._rotationRules;
   }
   public set rotationRules(value: SecretsmanagerSecretRotationRotationRules[]) {
     this._rotationRules = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rotationRulesInput() {
-    return this._rotationRules
   }
 
   // =========
@@ -125,10 +103,10 @@ export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
-      secret_id: cdktf.stringToTerraform(this._secretId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      rotation_rules: cdktf.listMapper(secretsmanagerSecretRotationRotationRulesToTerraform)(this._rotationRules),
+      rotation_lambda_arn: this._rotationLambdaArn,
+      secret_id: this._secretId,
+      tags: this._tags,
+      rotation_rules: this._rotationRules,
     };
   }
 }

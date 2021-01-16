@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface PinpointEventStreamConfig extends cdktf.TerraformMetaArguments {
+export interface PinpointEventStreamConfig extends TerraformMetaArguments {
   readonly applicationId: string;
   readonly destinationStreamArn: string;
   readonly roleArn: string;
@@ -14,7 +15,7 @@ export interface PinpointEventStreamConfig extends cdktf.TerraformMetaArguments 
 
 // Resource
 
-export class PinpointEventStream extends cdktf.TerraformResource {
+export class PinpointEventStream extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,45 +44,37 @@ export class PinpointEventStream extends cdktf.TerraformResource {
   // application_id - computed: false, optional: false, required: true
   private _applicationId: string;
   public get applicationId() {
-    return this.getStringAttribute('application_id');
+    return this._applicationId;
   }
   public set applicationId(value: string) {
     this._applicationId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applicationIdInput() {
-    return this._applicationId
   }
 
   // destination_stream_arn - computed: false, optional: false, required: true
   private _destinationStreamArn: string;
   public get destinationStreamArn() {
-    return this.getStringAttribute('destination_stream_arn');
+    return this._destinationStreamArn;
   }
   public set destinationStreamArn(value: string) {
     this._destinationStreamArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get destinationStreamArnInput() {
-    return this._destinationStreamArn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this.getStringAttribute('role_arn');
+    return this._roleArn;
   }
   public set roleArn(value: string) {
     this._roleArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleArnInput() {
-    return this._roleArn
   }
 
   // =========
@@ -90,9 +83,9 @@ export class PinpointEventStream extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      destination_stream_arn: cdktf.stringToTerraform(this._destinationStreamArn),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      application_id: this._applicationId,
+      destination_stream_arn: this._destinationStreamArn,
+      role_arn: this._roleArn,
     };
   }
 }

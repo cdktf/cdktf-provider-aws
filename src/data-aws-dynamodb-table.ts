@@ -2,109 +2,111 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsDynamodbTableConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsDynamodbTableConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** server_side_encryption block */
   readonly serverSideEncryption?: DataAwsDynamodbTableServerSideEncryption[];
 }
-export class DataAwsDynamodbTableAttribute extends cdktf.ComplexComputedList {
+export class DataAwsDynamodbTableAttribute extends ComplexComputedList {
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // type - computed: true, optional: false, required: false
+  // type - computed: true, optional: false, required: true
   public get type() {
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsDynamodbTableGlobalSecondaryIndex extends cdktf.ComplexComputedList {
+export class DataAwsDynamodbTableGlobalSecondaryIndex extends ComplexComputedList {
 
-  // hash_key - computed: true, optional: false, required: false
+  // hash_key - computed: true, optional: false, required: true
   public get hashKey() {
     return this.getStringAttribute('hash_key');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // non_key_attributes - computed: true, optional: false, required: false
+  // non_key_attributes - computed: true, optional: false, required: true
   public get nonKeyAttributes() {
     return this.getListAttribute('non_key_attributes');
   }
 
-  // projection_type - computed: true, optional: false, required: false
+  // projection_type - computed: true, optional: false, required: true
   public get projectionType() {
     return this.getStringAttribute('projection_type');
   }
 
-  // range_key - computed: true, optional: false, required: false
+  // range_key - computed: true, optional: false, required: true
   public get rangeKey() {
     return this.getStringAttribute('range_key');
   }
 
-  // read_capacity - computed: true, optional: false, required: false
+  // read_capacity - computed: true, optional: false, required: true
   public get readCapacity() {
     return this.getNumberAttribute('read_capacity');
   }
 
-  // write_capacity - computed: true, optional: false, required: false
+  // write_capacity - computed: true, optional: false, required: true
   public get writeCapacity() {
     return this.getNumberAttribute('write_capacity');
   }
 }
-export class DataAwsDynamodbTableLocalSecondaryIndex extends cdktf.ComplexComputedList {
+export class DataAwsDynamodbTableLocalSecondaryIndex extends ComplexComputedList {
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // non_key_attributes - computed: true, optional: false, required: false
+  // non_key_attributes - computed: true, optional: false, required: true
   public get nonKeyAttributes() {
     return this.getListAttribute('non_key_attributes');
   }
 
-  // projection_type - computed: true, optional: false, required: false
+  // projection_type - computed: true, optional: false, required: true
   public get projectionType() {
     return this.getStringAttribute('projection_type');
   }
 
-  // range_key - computed: true, optional: false, required: false
+  // range_key - computed: true, optional: false, required: true
   public get rangeKey() {
     return this.getStringAttribute('range_key');
   }
 }
-export class DataAwsDynamodbTablePointInTimeRecovery extends cdktf.ComplexComputedList {
+export class DataAwsDynamodbTablePointInTimeRecovery extends ComplexComputedList {
 
-  // enabled - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsDynamodbTableReplica extends cdktf.ComplexComputedList {
+export class DataAwsDynamodbTableReplica extends ComplexComputedList {
 
-  // region_name - computed: true, optional: false, required: false
+  // region_name - computed: true, optional: false, required: true
   public get regionName() {
     return this.getStringAttribute('region_name');
   }
 }
-export class DataAwsDynamodbTableTtl extends cdktf.ComplexComputedList {
+export class DataAwsDynamodbTableTtl extends ComplexComputedList {
 
-  // attribute_name - computed: true, optional: false, required: false
+  // attribute_name - computed: true, optional: false, required: true
   public get attributeName() {
     return this.getStringAttribute('attribute_name');
   }
 
-  // enabled - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
@@ -112,16 +114,9 @@ export class DataAwsDynamodbTableTtl extends cdktf.ComplexComputedList {
 export interface DataAwsDynamodbTableServerSideEncryption {
 }
 
-function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: DataAwsDynamodbTableServerSideEncryption): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-  }
-}
-
-
 // Resource
 
-export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
+export class DataAwsDynamodbTable extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -147,37 +142,41 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // attribute - computed: true, optional: false, required: false
+  // attribute - computed: true, optional: false, required: true
   public attribute(index: string) {
     return new DataAwsDynamodbTableAttribute(this, 'attribute', index);
   }
 
-  // billing_mode - computed: true, optional: false, required: false
+  // billing_mode - computed: true, optional: false, required: true
   public get billingMode() {
     return this.getStringAttribute('billing_mode');
   }
 
-  // global_secondary_index - computed: true, optional: false, required: false
+  // global_secondary_index - computed: true, optional: false, required: true
   public globalSecondaryIndex(index: string) {
     return new DataAwsDynamodbTableGlobalSecondaryIndex(this, 'global_secondary_index', index);
   }
 
-  // hash_key - computed: true, optional: false, required: false
+  // hash_key - computed: true, optional: false, required: true
   public get hashKey() {
     return this.getStringAttribute('hash_key');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // local_secondary_index - computed: true, optional: false, required: false
+  // local_secondary_index - computed: true, optional: false, required: true
   public localSecondaryIndex(index: string) {
     return new DataAwsDynamodbTableLocalSecondaryIndex(this, 'local_secondary_index', index);
   }
@@ -185,78 +184,67 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // point_in_time_recovery - computed: true, optional: false, required: false
+  // point_in_time_recovery - computed: true, optional: false, required: true
   public pointInTimeRecovery(index: string) {
     return new DataAwsDynamodbTablePointInTimeRecovery(this, 'point_in_time_recovery', index);
   }
 
-  // range_key - computed: true, optional: false, required: false
+  // range_key - computed: true, optional: false, required: true
   public get rangeKey() {
     return this.getStringAttribute('range_key');
   }
 
-  // read_capacity - computed: true, optional: false, required: false
+  // read_capacity - computed: true, optional: false, required: true
   public get readCapacity() {
     return this.getNumberAttribute('read_capacity');
   }
 
-  // replica - computed: true, optional: false, required: false
+  // replica - computed: true, optional: false, required: true
   public replica(index: string) {
     return new DataAwsDynamodbTableReplica(this, 'replica', index);
   }
 
-  // stream_arn - computed: true, optional: false, required: false
+  // stream_arn - computed: true, optional: false, required: true
   public get streamArn() {
     return this.getStringAttribute('stream_arn');
   }
 
-  // stream_enabled - computed: true, optional: false, required: false
+  // stream_enabled - computed: true, optional: false, required: true
   public get streamEnabled() {
     return this.getBooleanAttribute('stream_enabled');
   }
 
-  // stream_label - computed: true, optional: false, required: false
+  // stream_label - computed: true, optional: false, required: true
   public get streamLabel() {
     return this.getStringAttribute('stream_label');
   }
 
-  // stream_view_type - computed: true, optional: false, required: false
+  // stream_view_type - computed: true, optional: false, required: true
   public get streamViewType() {
     return this.getStringAttribute('stream_view_type');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // ttl - computed: true, optional: false, required: false
+  // ttl - computed: true, optional: false, required: true
   public ttl(index: string) {
     return new DataAwsDynamodbTableTtl(this, 'ttl', index);
   }
 
-  // write_capacity - computed: true, optional: false, required: false
+  // write_capacity - computed: true, optional: false, required: true
   public get writeCapacity() {
     return this.getNumberAttribute('write_capacity');
   }
@@ -264,17 +252,10 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   // server_side_encryption - computed: false, optional: true, required: false
   private _serverSideEncryption?: DataAwsDynamodbTableServerSideEncryption[];
   public get serverSideEncryption() {
-    return this.interpolationForAttribute('server_side_encryption') as any;
+    return this._serverSideEncryption;
   }
-  public set serverSideEncryption(value: DataAwsDynamodbTableServerSideEncryption[] ) {
+  public set serverSideEncryption(value: DataAwsDynamodbTableServerSideEncryption[] | undefined) {
     this._serverSideEncryption = value;
-  }
-  public resetServerSideEncryption() {
-    this._serverSideEncryption = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverSideEncryptionInput() {
-    return this._serverSideEncryption
   }
 
   // =========
@@ -283,9 +264,9 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      server_side_encryption: cdktf.listMapper(dataAwsDynamodbTableServerSideEncryptionToTerraform)(this._serverSideEncryption),
+      name: this._name,
+      tags: this._tags,
+      server_side_encryption: this._serverSideEncryption,
     };
   }
 }

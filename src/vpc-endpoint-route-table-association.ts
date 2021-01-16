@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcEndpointRouteTableAssociationConfig extends TerraformMetaArguments {
   readonly routeTableId: string;
   readonly vpcEndpointId: string;
 }
 
 // Resource
 
-export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
+export class VpcEndpointRouteTableAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,34 +40,30 @@ export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // route_table_id - computed: false, optional: false, required: true
   private _routeTableId: string;
   public get routeTableId() {
-    return this.getStringAttribute('route_table_id');
+    return this._routeTableId;
   }
   public set routeTableId(value: string) {
     this._routeTableId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeTableIdInput() {
-    return this._routeTableId
   }
 
   // vpc_endpoint_id - computed: false, optional: false, required: true
   private _vpcEndpointId: string;
   public get vpcEndpointId() {
-    return this.getStringAttribute('vpc_endpoint_id');
+    return this._vpcEndpointId;
   }
   public set vpcEndpointId(value: string) {
     this._vpcEndpointId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcEndpointIdInput() {
-    return this._vpcEndpointId
   }
 
   // =========
@@ -75,8 +72,8 @@ export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      route_table_id: cdktf.stringToTerraform(this._routeTableId),
-      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      route_table_id: this._routeTableId,
+      vpc_endpoint_id: this._vpcEndpointId,
     };
   }
 }

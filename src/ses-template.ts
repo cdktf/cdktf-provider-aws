@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SesTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface SesTemplateConfig extends TerraformMetaArguments {
   readonly html?: string;
   readonly name: string;
   readonly subject?: string;
@@ -15,7 +16,7 @@ export interface SesTemplateConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class SesTemplate extends cdktf.TerraformResource {
+export class SesTemplate extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,67 +46,46 @@ export class SesTemplate extends cdktf.TerraformResource {
   // html - computed: false, optional: true, required: false
   private _html?: string;
   public get html() {
-    return this.getStringAttribute('html');
+    return this._html;
   }
-  public set html(value: string ) {
+  public set html(value: string | undefined) {
     this._html = value;
-  }
-  public resetHtml() {
-    this._html = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get htmlInput() {
-    return this._html
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // subject - computed: false, optional: true, required: false
   private _subject?: string;
   public get subject() {
-    return this.getStringAttribute('subject');
+    return this._subject;
   }
-  public set subject(value: string ) {
+  public set subject(value: string | undefined) {
     this._subject = value;
-  }
-  public resetSubject() {
-    this._subject = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subjectInput() {
-    return this._subject
   }
 
   // text - computed: false, optional: true, required: false
   private _text?: string;
   public get text() {
-    return this.getStringAttribute('text');
+    return this._text;
   }
-  public set text(value: string ) {
+  public set text(value: string | undefined) {
     this._text = value;
-  }
-  public resetText() {
-    this._text = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get textInput() {
-    return this._text
   }
 
   // =========
@@ -114,10 +94,10 @@ export class SesTemplate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      html: cdktf.stringToTerraform(this._html),
-      name: cdktf.stringToTerraform(this._name),
-      subject: cdktf.stringToTerraform(this._subject),
-      text: cdktf.stringToTerraform(this._text),
+      html: this._html,
+      name: this._name,
+      subject: this._subject,
+      text: this._text,
     };
   }
 }

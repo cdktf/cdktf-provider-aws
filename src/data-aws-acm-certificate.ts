@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAcmCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAcmCertificateConfig extends TerraformMetaArguments {
   readonly domain: string;
   readonly keyTypes?: string[];
   readonly mostRecent?: boolean;
@@ -17,7 +18,7 @@ export interface DataAwsAcmCertificateConfig extends cdktf.TerraformMetaArgument
 
 // Resource
 
-export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
+export class DataAwsAcmCertificate extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,7 +47,7 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -54,99 +55,64 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this.getStringAttribute('domain');
+    return this._domain;
   }
   public set domain(value: string) {
     this._domain = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get domainInput() {
-    return this._domain
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // key_types - computed: false, optional: true, required: false
   private _keyTypes?: string[];
   public get keyTypes() {
-    return this.getListAttribute('key_types');
+    return this._keyTypes;
   }
-  public set keyTypes(value: string[] ) {
+  public set keyTypes(value: string[] | undefined) {
     this._keyTypes = value;
-  }
-  public resetKeyTypes() {
-    this._keyTypes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyTypesInput() {
-    return this._keyTypes
   }
 
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean;
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent');
+    return this._mostRecent;
   }
-  public set mostRecent(value: boolean ) {
+  public set mostRecent(value: boolean | undefined) {
     this._mostRecent = value;
-  }
-  public resetMostRecent() {
-    this._mostRecent = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mostRecentInput() {
-    return this._mostRecent
   }
 
   // statuses - computed: false, optional: true, required: false
   private _statuses?: string[];
   public get statuses() {
-    return this.getListAttribute('statuses');
+    return this._statuses;
   }
-  public set statuses(value: string[] ) {
+  public set statuses(value: string[] | undefined) {
     this._statuses = value;
-  }
-  public resetStatuses() {
-    this._statuses = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusesInput() {
-    return this._statuses
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // types - computed: false, optional: true, required: false
   private _types?: string[];
   public get types() {
-    return this.getListAttribute('types');
+    return this._types;
   }
-  public set types(value: string[] ) {
+  public set types(value: string[] | undefined) {
     this._types = value;
-  }
-  public resetTypes() {
-    this._types = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typesInput() {
-    return this._types
   }
 
   // =========
@@ -155,12 +121,12 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: cdktf.stringToTerraform(this._domain),
-      key_types: cdktf.listMapper(cdktf.stringToTerraform)(this._keyTypes),
-      most_recent: cdktf.booleanToTerraform(this._mostRecent),
-      statuses: cdktf.listMapper(cdktf.stringToTerraform)(this._statuses),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      types: cdktf.listMapper(cdktf.stringToTerraform)(this._types),
+      domain: this._domain,
+      key_types: this._keyTypes,
+      most_recent: this._mostRecent,
+      statuses: this._statuses,
+      tags: this._tags,
+      types: this._types,
     };
   }
 }

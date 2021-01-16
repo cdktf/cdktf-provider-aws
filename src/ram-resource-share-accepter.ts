@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RamResourceShareAccepterConfig extends cdktf.TerraformMetaArguments {
+export interface RamResourceShareAccepterConfig extends TerraformMetaArguments {
   readonly shareArn: string;
   /** timeouts block */
   readonly timeouts?: RamResourceShareAccepterTimeouts;
@@ -16,18 +17,9 @@ export interface RamResourceShareAccepterTimeouts {
   readonly delete?: string;
 }
 
-function ramResourceShareAccepterTimeoutsToTerraform(struct?: RamResourceShareAccepterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
-
 // Resource
 
-export class RamResourceShareAccepter extends cdktf.TerraformResource {
+export class RamResourceShareAccepter extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -53,26 +45,30 @@ export class RamResourceShareAccepter extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // invitation_arn - computed: true, optional: false, required: false
+  // invitation_arn - computed: true, optional: false, required: true
   public get invitationArn() {
     return this.getStringAttribute('invitation_arn');
   }
 
-  // receiver_account_id - computed: true, optional: false, required: false
+  // receiver_account_id - computed: true, optional: false, required: true
   public get receiverAccountId() {
     return this.getStringAttribute('receiver_account_id');
   }
 
-  // resources - computed: true, optional: false, required: false
+  // resources - computed: true, optional: false, required: true
   public get resources() {
     return this.getListAttribute('resources');
   }
 
-  // sender_account_id - computed: true, optional: false, required: false
+  // sender_account_id - computed: true, optional: false, required: true
   public get senderAccountId() {
     return this.getStringAttribute('sender_account_id');
   }
@@ -80,27 +76,23 @@ export class RamResourceShareAccepter extends cdktf.TerraformResource {
   // share_arn - computed: false, optional: false, required: true
   private _shareArn: string;
   public get shareArn() {
-    return this.getStringAttribute('share_arn');
+    return this._shareArn;
   }
   public set shareArn(value: string) {
     this._shareArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get shareArnInput() {
-    return this._shareArn
-  }
 
-  // share_id - computed: true, optional: false, required: false
+  // share_id - computed: true, optional: false, required: true
   public get shareId() {
     return this.getStringAttribute('share_id');
   }
 
-  // share_name - computed: true, optional: false, required: false
+  // share_name - computed: true, optional: false, required: true
   public get shareName() {
     return this.getStringAttribute('share_name');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -108,17 +100,10 @@ export class RamResourceShareAccepter extends cdktf.TerraformResource {
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: RamResourceShareAccepterTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: RamResourceShareAccepterTimeouts ) {
+  public set timeouts(value: RamResourceShareAccepterTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -127,8 +112,8 @@ export class RamResourceShareAccepter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      share_arn: cdktf.stringToTerraform(this._shareArn),
-      timeouts: ramResourceShareAccepterTimeoutsToTerraform(this._timeouts),
+      share_arn: this._shareArn,
+      timeouts: this._timeouts,
     };
   }
 }

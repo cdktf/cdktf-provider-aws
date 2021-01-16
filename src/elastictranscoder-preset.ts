@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArguments {
+export interface ElastictranscoderPresetConfig extends TerraformMetaArguments {
   readonly container: string;
   readonly description?: string;
   readonly name?: string;
@@ -30,35 +31,12 @@ export interface ElastictranscoderPresetAudio {
   readonly codec?: string;
   readonly sampleRate?: string;
 }
-
-function elastictranscoderPresetAudioToTerraform(struct?: ElastictranscoderPresetAudio): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    audio_packing_mode: cdktf.stringToTerraform(struct!.audioPackingMode),
-    bit_rate: cdktf.stringToTerraform(struct!.bitRate),
-    channels: cdktf.stringToTerraform(struct!.channels),
-    codec: cdktf.stringToTerraform(struct!.codec),
-    sample_rate: cdktf.stringToTerraform(struct!.sampleRate),
-  }
-}
-
 export interface ElastictranscoderPresetAudioCodecOptions {
   readonly bitDepth?: string;
   readonly bitOrder?: string;
   readonly profile?: string;
   readonly signed?: string;
 }
-
-function elastictranscoderPresetAudioCodecOptionsToTerraform(struct?: ElastictranscoderPresetAudioCodecOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    bit_depth: cdktf.stringToTerraform(struct!.bitDepth),
-    bit_order: cdktf.stringToTerraform(struct!.bitOrder),
-    profile: cdktf.stringToTerraform(struct!.profile),
-    signed: cdktf.stringToTerraform(struct!.signed),
-  }
-}
-
 export interface ElastictranscoderPresetThumbnails {
   readonly aspectRatio?: string;
   readonly format?: string;
@@ -69,21 +47,6 @@ export interface ElastictranscoderPresetThumbnails {
   readonly resolution?: string;
   readonly sizingPolicy?: string;
 }
-
-function elastictranscoderPresetThumbnailsToTerraform(struct?: ElastictranscoderPresetThumbnails): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    aspect_ratio: cdktf.stringToTerraform(struct!.aspectRatio),
-    format: cdktf.stringToTerraform(struct!.format),
-    interval: cdktf.stringToTerraform(struct!.interval),
-    max_height: cdktf.stringToTerraform(struct!.maxHeight),
-    max_width: cdktf.stringToTerraform(struct!.maxWidth),
-    padding_policy: cdktf.stringToTerraform(struct!.paddingPolicy),
-    resolution: cdktf.stringToTerraform(struct!.resolution),
-    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
-  }
-}
-
 export interface ElastictranscoderPresetVideo {
   readonly aspectRatio?: string;
   readonly bitRate?: string;
@@ -99,26 +62,6 @@ export interface ElastictranscoderPresetVideo {
   readonly resolution?: string;
   readonly sizingPolicy?: string;
 }
-
-function elastictranscoderPresetVideoToTerraform(struct?: ElastictranscoderPresetVideo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    aspect_ratio: cdktf.stringToTerraform(struct!.aspectRatio),
-    bit_rate: cdktf.stringToTerraform(struct!.bitRate),
-    codec: cdktf.stringToTerraform(struct!.codec),
-    display_aspect_ratio: cdktf.stringToTerraform(struct!.displayAspectRatio),
-    fixed_gop: cdktf.stringToTerraform(struct!.fixedGop),
-    frame_rate: cdktf.stringToTerraform(struct!.frameRate),
-    keyframes_max_dist: cdktf.stringToTerraform(struct!.keyframesMaxDist),
-    max_frame_rate: cdktf.stringToTerraform(struct!.maxFrameRate),
-    max_height: cdktf.stringToTerraform(struct!.maxHeight),
-    max_width: cdktf.stringToTerraform(struct!.maxWidth),
-    padding_policy: cdktf.stringToTerraform(struct!.paddingPolicy),
-    resolution: cdktf.stringToTerraform(struct!.resolution),
-    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
-  }
-}
-
 export interface ElastictranscoderPresetVideoWatermarks {
   readonly horizontalAlign?: string;
   readonly horizontalOffset?: string;
@@ -132,26 +75,9 @@ export interface ElastictranscoderPresetVideoWatermarks {
   readonly verticalOffset?: string;
 }
 
-function elastictranscoderPresetVideoWatermarksToTerraform(struct?: ElastictranscoderPresetVideoWatermarks): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    horizontal_align: cdktf.stringToTerraform(struct!.horizontalAlign),
-    horizontal_offset: cdktf.stringToTerraform(struct!.horizontalOffset),
-    id: cdktf.stringToTerraform(struct!.id),
-    max_height: cdktf.stringToTerraform(struct!.maxHeight),
-    max_width: cdktf.stringToTerraform(struct!.maxWidth),
-    opacity: cdktf.stringToTerraform(struct!.opacity),
-    sizing_policy: cdktf.stringToTerraform(struct!.sizingPolicy),
-    target: cdktf.stringToTerraform(struct!.target),
-    vertical_align: cdktf.stringToTerraform(struct!.verticalAlign),
-    vertical_offset: cdktf.stringToTerraform(struct!.verticalOffset),
-  }
-}
-
-
 // Resource
 
-export class ElastictranscoderPreset extends cdktf.TerraformResource {
+export class ElastictranscoderPreset extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -184,7 +110,7 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -192,163 +118,100 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   // container - computed: false, optional: false, required: true
   private _container: string;
   public get container() {
-    return this.getStringAttribute('container');
+    return this._container;
   }
   public set container(value: string) {
     this._container = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get containerInput() {
-    return this._container
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // type - computed: true, optional: true, required: false
   private _type?: string;
   public get type() {
-    return this.getStringAttribute('type');
+    return this._type ?? this.getStringAttribute('type');
   }
-  public set type(value: string) {
+  public set type(value: string | undefined) {
     this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type
   }
 
   // video_codec_options - computed: false, optional: true, required: false
   private _videoCodecOptions?: { [key: string]: string };
   public get videoCodecOptions() {
-    return this.interpolationForAttribute('video_codec_options') as any;
+    return this._videoCodecOptions;
   }
-  public set videoCodecOptions(value: { [key: string]: string } ) {
+  public set videoCodecOptions(value: { [key: string]: string } | undefined) {
     this._videoCodecOptions = value;
-  }
-  public resetVideoCodecOptions() {
-    this._videoCodecOptions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get videoCodecOptionsInput() {
-    return this._videoCodecOptions
   }
 
   // audio - computed: false, optional: true, required: false
   private _audio?: ElastictranscoderPresetAudio[];
   public get audio() {
-    return this.interpolationForAttribute('audio') as any;
+    return this._audio;
   }
-  public set audio(value: ElastictranscoderPresetAudio[] ) {
+  public set audio(value: ElastictranscoderPresetAudio[] | undefined) {
     this._audio = value;
-  }
-  public resetAudio() {
-    this._audio = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get audioInput() {
-    return this._audio
   }
 
   // audio_codec_options - computed: false, optional: true, required: false
   private _audioCodecOptions?: ElastictranscoderPresetAudioCodecOptions[];
   public get audioCodecOptions() {
-    return this.interpolationForAttribute('audio_codec_options') as any;
+    return this._audioCodecOptions;
   }
-  public set audioCodecOptions(value: ElastictranscoderPresetAudioCodecOptions[] ) {
+  public set audioCodecOptions(value: ElastictranscoderPresetAudioCodecOptions[] | undefined) {
     this._audioCodecOptions = value;
-  }
-  public resetAudioCodecOptions() {
-    this._audioCodecOptions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get audioCodecOptionsInput() {
-    return this._audioCodecOptions
   }
 
   // thumbnails - computed: false, optional: true, required: false
   private _thumbnails?: ElastictranscoderPresetThumbnails[];
   public get thumbnails() {
-    return this.interpolationForAttribute('thumbnails') as any;
+    return this._thumbnails;
   }
-  public set thumbnails(value: ElastictranscoderPresetThumbnails[] ) {
+  public set thumbnails(value: ElastictranscoderPresetThumbnails[] | undefined) {
     this._thumbnails = value;
-  }
-  public resetThumbnails() {
-    this._thumbnails = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thumbnailsInput() {
-    return this._thumbnails
   }
 
   // video - computed: false, optional: true, required: false
   private _video?: ElastictranscoderPresetVideo[];
   public get video() {
-    return this.interpolationForAttribute('video') as any;
+    return this._video;
   }
-  public set video(value: ElastictranscoderPresetVideo[] ) {
+  public set video(value: ElastictranscoderPresetVideo[] | undefined) {
     this._video = value;
-  }
-  public resetVideo() {
-    this._video = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get videoInput() {
-    return this._video
   }
 
   // video_watermarks - computed: false, optional: true, required: false
   private _videoWatermarks?: ElastictranscoderPresetVideoWatermarks[];
   public get videoWatermarks() {
-    return this.interpolationForAttribute('video_watermarks') as any;
+    return this._videoWatermarks;
   }
-  public set videoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] ) {
+  public set videoWatermarks(value: ElastictranscoderPresetVideoWatermarks[] | undefined) {
     this._videoWatermarks = value;
-  }
-  public resetVideoWatermarks() {
-    this._videoWatermarks = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get videoWatermarksInput() {
-    return this._videoWatermarks
   }
 
   // =========
@@ -357,16 +220,16 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container: cdktf.stringToTerraform(this._container),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      type: cdktf.stringToTerraform(this._type),
-      video_codec_options: cdktf.hashMapper(cdktf.anyToTerraform)(this._videoCodecOptions),
-      audio: cdktf.listMapper(elastictranscoderPresetAudioToTerraform)(this._audio),
-      audio_codec_options: cdktf.listMapper(elastictranscoderPresetAudioCodecOptionsToTerraform)(this._audioCodecOptions),
-      thumbnails: cdktf.listMapper(elastictranscoderPresetThumbnailsToTerraform)(this._thumbnails),
-      video: cdktf.listMapper(elastictranscoderPresetVideoToTerraform)(this._video),
-      video_watermarks: cdktf.listMapper(elastictranscoderPresetVideoWatermarksToTerraform)(this._videoWatermarks),
+      container: this._container,
+      description: this._description,
+      name: this._name,
+      type: this._type,
+      video_codec_options: this._videoCodecOptions,
+      audio: this._audio,
+      audio_codec_options: this._audioCodecOptions,
+      thumbnails: this._thumbnails,
+      video: this._video,
+      video_watermarks: this._videoWatermarks,
     };
   }
 }

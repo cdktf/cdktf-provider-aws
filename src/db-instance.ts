@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface DbInstanceConfig extends TerraformMetaArguments {
   readonly allocatedStorage?: number;
   readonly allowMajorVersionUpgrade?: boolean;
   readonly applyImmediately?: boolean;
@@ -57,10 +58,18 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly timezone?: string;
   readonly username?: string;
   readonly vpcSecurityGroupIds?: string[];
+  /** restore_to_point_in_time block */
+  readonly restoreToPointInTime?: DbInstanceRestoreToPointInTime[];
   /** s3_import block */
   readonly s3Import?: DbInstanceS3Import[];
   /** timeouts block */
   readonly timeouts?: DbInstanceTimeouts;
+}
+export interface DbInstanceRestoreToPointInTime {
+  readonly restoreTime?: string;
+  readonly sourceDbInstanceIdentifier?: string;
+  readonly sourceDbiResourceId?: string;
+  readonly useLatestRestorableTime?: boolean;
 }
 export interface DbInstanceS3Import {
   readonly bucketName: string;
@@ -69,37 +78,15 @@ export interface DbInstanceS3Import {
   readonly sourceEngine: string;
   readonly sourceEngineVersion: string;
 }
-
-function dbInstanceS3ImportToTerraform(struct?: DbInstanceS3Import): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    bucket_prefix: cdktf.stringToTerraform(struct!.bucketPrefix),
-    ingestion_role: cdktf.stringToTerraform(struct!.ingestionRole),
-    source_engine: cdktf.stringToTerraform(struct!.sourceEngine),
-    source_engine_version: cdktf.stringToTerraform(struct!.sourceEngineVersion),
-  }
-}
-
 export interface DbInstanceTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
-function dbInstanceTimeoutsToTerraform(struct?: DbInstanceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class DbInstance extends cdktf.TerraformResource {
+export class DbInstance extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -166,6 +153,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._timezone = config.timezone;
     this._username = config.username;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
+    this._restoreToPointInTime = config.restoreToPointInTime;
     this._s3Import = config.s3Import;
     this._timeouts = config.timeouts;
   }
@@ -174,7 +162,7 @@ export class DbInstance extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // address - computed: true, optional: false, required: false
+  // address - computed: true, optional: false, required: true
   public get address() {
     return this.getStringAttribute('address');
   }
@@ -182,52 +170,31 @@ export class DbInstance extends cdktf.TerraformResource {
   // allocated_storage - computed: true, optional: true, required: false
   private _allocatedStorage?: number;
   public get allocatedStorage() {
-    return this.getNumberAttribute('allocated_storage');
+    return this._allocatedStorage ?? this.getNumberAttribute('allocated_storage');
   }
-  public set allocatedStorage(value: number) {
+  public set allocatedStorage(value: number | undefined) {
     this._allocatedStorage = value;
-  }
-  public resetAllocatedStorage() {
-    this._allocatedStorage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allocatedStorageInput() {
-    return this._allocatedStorage
   }
 
   // allow_major_version_upgrade - computed: false, optional: true, required: false
   private _allowMajorVersionUpgrade?: boolean;
   public get allowMajorVersionUpgrade() {
-    return this.getBooleanAttribute('allow_major_version_upgrade');
+    return this._allowMajorVersionUpgrade;
   }
-  public set allowMajorVersionUpgrade(value: boolean ) {
+  public set allowMajorVersionUpgrade(value: boolean | undefined) {
     this._allowMajorVersionUpgrade = value;
-  }
-  public resetAllowMajorVersionUpgrade() {
-    this._allowMajorVersionUpgrade = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowMajorVersionUpgradeInput() {
-    return this._allowMajorVersionUpgrade
   }
 
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this.getBooleanAttribute('apply_immediately');
+    return this._applyImmediately ?? this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | undefined) {
     this._applyImmediately = value;
   }
-  public resetApplyImmediately() {
-    this._applyImmediately = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applyImmediatelyInput() {
-    return this._applyImmediately
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -235,212 +202,121 @@ export class DbInstance extends cdktf.TerraformResource {
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
   private _autoMinorVersionUpgrade?: boolean;
   public get autoMinorVersionUpgrade() {
-    return this.getBooleanAttribute('auto_minor_version_upgrade');
+    return this._autoMinorVersionUpgrade;
   }
-  public set autoMinorVersionUpgrade(value: boolean ) {
+  public set autoMinorVersionUpgrade(value: boolean | undefined) {
     this._autoMinorVersionUpgrade = value;
-  }
-  public resetAutoMinorVersionUpgrade() {
-    this._autoMinorVersionUpgrade = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoMinorVersionUpgradeInput() {
-    return this._autoMinorVersionUpgrade
   }
 
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string) {
+  public set availabilityZone(value: string | undefined) {
     this._availabilityZone = value;
-  }
-  public resetAvailabilityZone() {
-    this._availabilityZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
   }
 
   // backup_retention_period - computed: true, optional: true, required: false
   private _backupRetentionPeriod?: number;
   public get backupRetentionPeriod() {
-    return this.getNumberAttribute('backup_retention_period');
+    return this._backupRetentionPeriod ?? this.getNumberAttribute('backup_retention_period');
   }
-  public set backupRetentionPeriod(value: number) {
+  public set backupRetentionPeriod(value: number | undefined) {
     this._backupRetentionPeriod = value;
-  }
-  public resetBackupRetentionPeriod() {
-    this._backupRetentionPeriod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get backupRetentionPeriodInput() {
-    return this._backupRetentionPeriod
   }
 
   // backup_window - computed: true, optional: true, required: false
   private _backupWindow?: string;
   public get backupWindow() {
-    return this.getStringAttribute('backup_window');
+    return this._backupWindow ?? this.getStringAttribute('backup_window');
   }
-  public set backupWindow(value: string) {
+  public set backupWindow(value: string | undefined) {
     this._backupWindow = value;
-  }
-  public resetBackupWindow() {
-    this._backupWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get backupWindowInput() {
-    return this._backupWindow
   }
 
   // ca_cert_identifier - computed: true, optional: true, required: false
   private _caCertIdentifier?: string;
   public get caCertIdentifier() {
-    return this.getStringAttribute('ca_cert_identifier');
+    return this._caCertIdentifier ?? this.getStringAttribute('ca_cert_identifier');
   }
-  public set caCertIdentifier(value: string) {
+  public set caCertIdentifier(value: string | undefined) {
     this._caCertIdentifier = value;
-  }
-  public resetCaCertIdentifier() {
-    this._caCertIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get caCertIdentifierInput() {
-    return this._caCertIdentifier
   }
 
   // character_set_name - computed: true, optional: true, required: false
   private _characterSetName?: string;
   public get characterSetName() {
-    return this.getStringAttribute('character_set_name');
+    return this._characterSetName ?? this.getStringAttribute('character_set_name');
   }
-  public set characterSetName(value: string) {
+  public set characterSetName(value: string | undefined) {
     this._characterSetName = value;
-  }
-  public resetCharacterSetName() {
-    this._characterSetName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get characterSetNameInput() {
-    return this._characterSetName
   }
 
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
   private _copyTagsToSnapshot?: boolean;
   public get copyTagsToSnapshot() {
-    return this.getBooleanAttribute('copy_tags_to_snapshot');
+    return this._copyTagsToSnapshot;
   }
-  public set copyTagsToSnapshot(value: boolean ) {
+  public set copyTagsToSnapshot(value: boolean | undefined) {
     this._copyTagsToSnapshot = value;
-  }
-  public resetCopyTagsToSnapshot() {
-    this._copyTagsToSnapshot = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get copyTagsToSnapshotInput() {
-    return this._copyTagsToSnapshot
   }
 
   // db_subnet_group_name - computed: true, optional: true, required: false
   private _dbSubnetGroupName?: string;
   public get dbSubnetGroupName() {
-    return this.getStringAttribute('db_subnet_group_name');
+    return this._dbSubnetGroupName ?? this.getStringAttribute('db_subnet_group_name');
   }
-  public set dbSubnetGroupName(value: string) {
+  public set dbSubnetGroupName(value: string | undefined) {
     this._dbSubnetGroupName = value;
-  }
-  public resetDbSubnetGroupName() {
-    this._dbSubnetGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dbSubnetGroupNameInput() {
-    return this._dbSubnetGroupName
   }
 
   // delete_automated_backups - computed: false, optional: true, required: false
   private _deleteAutomatedBackups?: boolean;
   public get deleteAutomatedBackups() {
-    return this.getBooleanAttribute('delete_automated_backups');
+    return this._deleteAutomatedBackups;
   }
-  public set deleteAutomatedBackups(value: boolean ) {
+  public set deleteAutomatedBackups(value: boolean | undefined) {
     this._deleteAutomatedBackups = value;
-  }
-  public resetDeleteAutomatedBackups() {
-    this._deleteAutomatedBackups = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deleteAutomatedBackupsInput() {
-    return this._deleteAutomatedBackups
   }
 
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean;
   public get deletionProtection() {
-    return this.getBooleanAttribute('deletion_protection');
+    return this._deletionProtection;
   }
-  public set deletionProtection(value: boolean ) {
+  public set deletionProtection(value: boolean | undefined) {
     this._deletionProtection = value;
-  }
-  public resetDeletionProtection() {
-    this._deletionProtection = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deletionProtectionInput() {
-    return this._deletionProtection
   }
 
   // domain - computed: false, optional: true, required: false
   private _domain?: string;
   public get domain() {
-    return this.getStringAttribute('domain');
+    return this._domain;
   }
-  public set domain(value: string ) {
+  public set domain(value: string | undefined) {
     this._domain = value;
-  }
-  public resetDomain() {
-    this._domain = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get domainInput() {
-    return this._domain
   }
 
   // domain_iam_role_name - computed: false, optional: true, required: false
   private _domainIamRoleName?: string;
   public get domainIamRoleName() {
-    return this.getStringAttribute('domain_iam_role_name');
+    return this._domainIamRoleName;
   }
-  public set domainIamRoleName(value: string ) {
+  public set domainIamRoleName(value: string | undefined) {
     this._domainIamRoleName = value;
-  }
-  public resetDomainIamRoleName() {
-    this._domainIamRoleName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get domainIamRoleNameInput() {
-    return this._domainIamRoleName
   }
 
   // enabled_cloudwatch_logs_exports - computed: false, optional: true, required: false
   private _enabledCloudwatchLogsExports?: string[];
   public get enabledCloudwatchLogsExports() {
-    return this.getListAttribute('enabled_cloudwatch_logs_exports');
+    return this._enabledCloudwatchLogsExports;
   }
-  public set enabledCloudwatchLogsExports(value: string[] ) {
+  public set enabledCloudwatchLogsExports(value: string[] | undefined) {
     this._enabledCloudwatchLogsExports = value;
   }
-  public resetEnabledCloudwatchLogsExports() {
-    this._enabledCloudwatchLogsExports = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledCloudwatchLogsExportsInput() {
-    return this._enabledCloudwatchLogsExports
-  }
 
-  // endpoint - computed: true, optional: false, required: false
+  // endpoint - computed: true, optional: false, required: true
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -448,52 +324,31 @@ export class DbInstance extends cdktf.TerraformResource {
   // engine - computed: true, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this.getStringAttribute('engine');
+    return this._engine ?? this.getStringAttribute('engine');
   }
-  public set engine(value: string) {
+  public set engine(value: string | undefined) {
     this._engine = value;
-  }
-  public resetEngine() {
-    this._engine = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineInput() {
-    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this.getStringAttribute('engine_version');
+    return this._engineVersion ?? this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string) {
+  public set engineVersion(value: string | undefined) {
     this._engineVersion = value;
-  }
-  public resetEngineVersion() {
-    this._engineVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineVersionInput() {
-    return this._engineVersion
   }
 
   // final_snapshot_identifier - computed: false, optional: true, required: false
   private _finalSnapshotIdentifier?: string;
   public get finalSnapshotIdentifier() {
-    return this.getStringAttribute('final_snapshot_identifier');
+    return this._finalSnapshotIdentifier;
   }
-  public set finalSnapshotIdentifier(value: string ) {
+  public set finalSnapshotIdentifier(value: string | undefined) {
     this._finalSnapshotIdentifier = value;
   }
-  public resetFinalSnapshotIdentifier() {
-    this._finalSnapshotIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get finalSnapshotIdentifierInput() {
-    return this._finalSnapshotIdentifier
-  }
 
-  // hosted_zone_id - computed: true, optional: false, required: false
+  // hosted_zone_id - computed: true, optional: false, required: true
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
@@ -501,342 +356,207 @@ export class DbInstance extends cdktf.TerraformResource {
   // iam_database_authentication_enabled - computed: false, optional: true, required: false
   private _iamDatabaseAuthenticationEnabled?: boolean;
   public get iamDatabaseAuthenticationEnabled() {
-    return this.getBooleanAttribute('iam_database_authentication_enabled');
+    return this._iamDatabaseAuthenticationEnabled;
   }
-  public set iamDatabaseAuthenticationEnabled(value: boolean ) {
+  public set iamDatabaseAuthenticationEnabled(value: boolean | undefined) {
     this._iamDatabaseAuthenticationEnabled = value;
-  }
-  public resetIamDatabaseAuthenticationEnabled() {
-    this._iamDatabaseAuthenticationEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iamDatabaseAuthenticationEnabledInput() {
-    return this._iamDatabaseAuthenticationEnabled
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // identifier - computed: true, optional: true, required: false
   private _identifier?: string;
   public get identifier() {
-    return this.getStringAttribute('identifier');
+    return this._identifier ?? this.getStringAttribute('identifier');
   }
-  public set identifier(value: string) {
+  public set identifier(value: string | undefined) {
     this._identifier = value;
-  }
-  public resetIdentifier() {
-    this._identifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identifierInput() {
-    return this._identifier
   }
 
   // identifier_prefix - computed: true, optional: true, required: false
   private _identifierPrefix?: string;
   public get identifierPrefix() {
-    return this.getStringAttribute('identifier_prefix');
+    return this._identifierPrefix ?? this.getStringAttribute('identifier_prefix');
   }
-  public set identifierPrefix(value: string) {
+  public set identifierPrefix(value: string | undefined) {
     this._identifierPrefix = value;
-  }
-  public resetIdentifierPrefix() {
-    this._identifierPrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identifierPrefixInput() {
-    return this._identifierPrefix
   }
 
   // instance_class - computed: false, optional: false, required: true
   private _instanceClass: string;
   public get instanceClass() {
-    return this.getStringAttribute('instance_class');
+    return this._instanceClass;
   }
   public set instanceClass(value: string) {
     this._instanceClass = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceClassInput() {
-    return this._instanceClass
   }
 
   // iops - computed: false, optional: true, required: false
   private _iops?: number;
   public get iops() {
-    return this.getNumberAttribute('iops');
+    return this._iops;
   }
-  public set iops(value: number ) {
+  public set iops(value: number | undefined) {
     this._iops = value;
-  }
-  public resetIops() {
-    this._iops = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iopsInput() {
-    return this._iops
   }
 
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this.getStringAttribute('kms_key_id');
+    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string) {
+  public set kmsKeyId(value: string | undefined) {
     this._kmsKeyId = value;
   }
-  public resetKmsKeyId() {
-    this._kmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyIdInput() {
-    return this._kmsKeyId
+
+  // latest_restorable_time - computed: true, optional: false, required: true
+  public get latestRestorableTime() {
+    return this.getStringAttribute('latest_restorable_time');
   }
 
   // license_model - computed: true, optional: true, required: false
   private _licenseModel?: string;
   public get licenseModel() {
-    return this.getStringAttribute('license_model');
+    return this._licenseModel ?? this.getStringAttribute('license_model');
   }
-  public set licenseModel(value: string) {
+  public set licenseModel(value: string | undefined) {
     this._licenseModel = value;
-  }
-  public resetLicenseModel() {
-    this._licenseModel = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get licenseModelInput() {
-    return this._licenseModel
   }
 
   // maintenance_window - computed: true, optional: true, required: false
   private _maintenanceWindow?: string;
   public get maintenanceWindow() {
-    return this.getStringAttribute('maintenance_window');
+    return this._maintenanceWindow ?? this.getStringAttribute('maintenance_window');
   }
-  public set maintenanceWindow(value: string) {
+  public set maintenanceWindow(value: string | undefined) {
     this._maintenanceWindow = value;
-  }
-  public resetMaintenanceWindow() {
-    this._maintenanceWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maintenanceWindowInput() {
-    return this._maintenanceWindow
   }
 
   // max_allocated_storage - computed: false, optional: true, required: false
   private _maxAllocatedStorage?: number;
   public get maxAllocatedStorage() {
-    return this.getNumberAttribute('max_allocated_storage');
+    return this._maxAllocatedStorage;
   }
-  public set maxAllocatedStorage(value: number ) {
+  public set maxAllocatedStorage(value: number | undefined) {
     this._maxAllocatedStorage = value;
-  }
-  public resetMaxAllocatedStorage() {
-    this._maxAllocatedStorage = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxAllocatedStorageInput() {
-    return this._maxAllocatedStorage
   }
 
   // monitoring_interval - computed: false, optional: true, required: false
   private _monitoringInterval?: number;
   public get monitoringInterval() {
-    return this.getNumberAttribute('monitoring_interval');
+    return this._monitoringInterval;
   }
-  public set monitoringInterval(value: number ) {
+  public set monitoringInterval(value: number | undefined) {
     this._monitoringInterval = value;
-  }
-  public resetMonitoringInterval() {
-    this._monitoringInterval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get monitoringIntervalInput() {
-    return this._monitoringInterval
   }
 
   // monitoring_role_arn - computed: true, optional: true, required: false
   private _monitoringRoleArn?: string;
   public get monitoringRoleArn() {
-    return this.getStringAttribute('monitoring_role_arn');
+    return this._monitoringRoleArn ?? this.getStringAttribute('monitoring_role_arn');
   }
-  public set monitoringRoleArn(value: string) {
+  public set monitoringRoleArn(value: string | undefined) {
     this._monitoringRoleArn = value;
-  }
-  public resetMonitoringRoleArn() {
-    this._monitoringRoleArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get monitoringRoleArnInput() {
-    return this._monitoringRoleArn
   }
 
   // multi_az - computed: true, optional: true, required: false
   private _multiAz?: boolean;
   public get multiAz() {
-    return this.getBooleanAttribute('multi_az');
+    return this._multiAz ?? this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean) {
+  public set multiAz(value: boolean | undefined) {
     this._multiAz = value;
-  }
-  public resetMultiAz() {
-    this._multiAz = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get multiAzInput() {
-    return this._multiAz
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // option_group_name - computed: true, optional: true, required: false
   private _optionGroupName?: string;
   public get optionGroupName() {
-    return this.getStringAttribute('option_group_name');
+    return this._optionGroupName ?? this.getStringAttribute('option_group_name');
   }
-  public set optionGroupName(value: string) {
+  public set optionGroupName(value: string | undefined) {
     this._optionGroupName = value;
-  }
-  public resetOptionGroupName() {
-    this._optionGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get optionGroupNameInput() {
-    return this._optionGroupName
   }
 
   // parameter_group_name - computed: true, optional: true, required: false
   private _parameterGroupName?: string;
   public get parameterGroupName() {
-    return this.getStringAttribute('parameter_group_name');
+    return this._parameterGroupName ?? this.getStringAttribute('parameter_group_name');
   }
-  public set parameterGroupName(value: string) {
+  public set parameterGroupName(value: string | undefined) {
     this._parameterGroupName = value;
-  }
-  public resetParameterGroupName() {
-    this._parameterGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parameterGroupNameInput() {
-    return this._parameterGroupName
   }
 
   // password - computed: false, optional: true, required: false
   private _password?: string;
   public get password() {
-    return this.getStringAttribute('password');
+    return this._password;
   }
-  public set password(value: string ) {
+  public set password(value: string | undefined) {
     this._password = value;
-  }
-  public resetPassword() {
-    this._password = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get passwordInput() {
-    return this._password
   }
 
   // performance_insights_enabled - computed: false, optional: true, required: false
   private _performanceInsightsEnabled?: boolean;
   public get performanceInsightsEnabled() {
-    return this.getBooleanAttribute('performance_insights_enabled');
+    return this._performanceInsightsEnabled;
   }
-  public set performanceInsightsEnabled(value: boolean ) {
+  public set performanceInsightsEnabled(value: boolean | undefined) {
     this._performanceInsightsEnabled = value;
-  }
-  public resetPerformanceInsightsEnabled() {
-    this._performanceInsightsEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get performanceInsightsEnabledInput() {
-    return this._performanceInsightsEnabled
   }
 
   // performance_insights_kms_key_id - computed: true, optional: true, required: false
   private _performanceInsightsKmsKeyId?: string;
   public get performanceInsightsKmsKeyId() {
-    return this.getStringAttribute('performance_insights_kms_key_id');
+    return this._performanceInsightsKmsKeyId ?? this.getStringAttribute('performance_insights_kms_key_id');
   }
-  public set performanceInsightsKmsKeyId(value: string) {
+  public set performanceInsightsKmsKeyId(value: string | undefined) {
     this._performanceInsightsKmsKeyId = value;
-  }
-  public resetPerformanceInsightsKmsKeyId() {
-    this._performanceInsightsKmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get performanceInsightsKmsKeyIdInput() {
-    return this._performanceInsightsKmsKeyId
   }
 
   // performance_insights_retention_period - computed: true, optional: true, required: false
   private _performanceInsightsRetentionPeriod?: number;
   public get performanceInsightsRetentionPeriod() {
-    return this.getNumberAttribute('performance_insights_retention_period');
+    return this._performanceInsightsRetentionPeriod ?? this.getNumberAttribute('performance_insights_retention_period');
   }
-  public set performanceInsightsRetentionPeriod(value: number) {
+  public set performanceInsightsRetentionPeriod(value: number | undefined) {
     this._performanceInsightsRetentionPeriod = value;
-  }
-  public resetPerformanceInsightsRetentionPeriod() {
-    this._performanceInsightsRetentionPeriod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get performanceInsightsRetentionPeriodInput() {
-    return this._performanceInsightsRetentionPeriod
   }
 
   // port - computed: true, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this.getNumberAttribute('port');
+    return this._port ?? this.getNumberAttribute('port');
   }
-  public set port(value: number) {
+  public set port(value: number | undefined) {
     this._port = value;
-  }
-  public resetPort() {
-    this._port = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get portInput() {
-    return this._port
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
   private _publiclyAccessible?: boolean;
   public get publiclyAccessible() {
-    return this.getBooleanAttribute('publicly_accessible');
+    return this._publiclyAccessible;
   }
-  public set publiclyAccessible(value: boolean ) {
+  public set publiclyAccessible(value: boolean | undefined) {
     this._publiclyAccessible = value;
   }
-  public resetPubliclyAccessible() {
-    this._publiclyAccessible = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publiclyAccessibleInput() {
-    return this._publiclyAccessible
-  }
 
-  // replicas - computed: true, optional: false, required: false
+  // replicas - computed: true, optional: false, required: true
   public get replicas() {
     return this.getListAttribute('replicas');
   }
@@ -844,20 +564,13 @@ export class DbInstance extends cdktf.TerraformResource {
   // replicate_source_db - computed: false, optional: true, required: false
   private _replicateSourceDb?: string;
   public get replicateSourceDb() {
-    return this.getStringAttribute('replicate_source_db');
+    return this._replicateSourceDb;
   }
-  public set replicateSourceDb(value: string ) {
+  public set replicateSourceDb(value: string | undefined) {
     this._replicateSourceDb = value;
   }
-  public resetReplicateSourceDb() {
-    this._replicateSourceDb = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get replicateSourceDbInput() {
-    return this._replicateSourceDb
-  }
 
-  // resource_id - computed: true, optional: false, required: false
+  // resource_id - computed: true, optional: false, required: true
   public get resourceId() {
     return this.getStringAttribute('resource_id');
   }
@@ -865,52 +578,31 @@ export class DbInstance extends cdktf.TerraformResource {
   // security_group_names - computed: false, optional: true, required: false
   private _securityGroupNames?: string[];
   public get securityGroupNames() {
-    return this.getListAttribute('security_group_names');
+    return this._securityGroupNames;
   }
-  public set securityGroupNames(value: string[] ) {
+  public set securityGroupNames(value: string[] | undefined) {
     this._securityGroupNames = value;
-  }
-  public resetSecurityGroupNames() {
-    this._securityGroupNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupNamesInput() {
-    return this._securityGroupNames
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
   private _skipFinalSnapshot?: boolean;
   public get skipFinalSnapshot() {
-    return this.getBooleanAttribute('skip_final_snapshot');
+    return this._skipFinalSnapshot;
   }
-  public set skipFinalSnapshot(value: boolean ) {
+  public set skipFinalSnapshot(value: boolean | undefined) {
     this._skipFinalSnapshot = value;
-  }
-  public resetSkipFinalSnapshot() {
-    this._skipFinalSnapshot = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get skipFinalSnapshotInput() {
-    return this._skipFinalSnapshot
   }
 
   // snapshot_identifier - computed: false, optional: true, required: false
   private _snapshotIdentifier?: string;
   public get snapshotIdentifier() {
-    return this.getStringAttribute('snapshot_identifier');
+    return this._snapshotIdentifier;
   }
-  public set snapshotIdentifier(value: string ) {
+  public set snapshotIdentifier(value: string | undefined) {
     this._snapshotIdentifier = value;
   }
-  public resetSnapshotIdentifier() {
-    this._snapshotIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotIdentifierInput() {
-    return this._snapshotIdentifier
-  }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -918,129 +610,82 @@ export class DbInstance extends cdktf.TerraformResource {
   // storage_encrypted - computed: false, optional: true, required: false
   private _storageEncrypted?: boolean;
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted');
+    return this._storageEncrypted;
   }
-  public set storageEncrypted(value: boolean ) {
+  public set storageEncrypted(value: boolean | undefined) {
     this._storageEncrypted = value;
-  }
-  public resetStorageEncrypted() {
-    this._storageEncrypted = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get storageEncryptedInput() {
-    return this._storageEncrypted
   }
 
   // storage_type - computed: true, optional: true, required: false
   private _storageType?: string;
   public get storageType() {
-    return this.getStringAttribute('storage_type');
+    return this._storageType ?? this.getStringAttribute('storage_type');
   }
-  public set storageType(value: string) {
+  public set storageType(value: string | undefined) {
     this._storageType = value;
-  }
-  public resetStorageType() {
-    this._storageType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get storageTypeInput() {
-    return this._storageType
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // timezone - computed: true, optional: true, required: false
   private _timezone?: string;
   public get timezone() {
-    return this.getStringAttribute('timezone');
+    return this._timezone ?? this.getStringAttribute('timezone');
   }
-  public set timezone(value: string) {
+  public set timezone(value: string | undefined) {
     this._timezone = value;
-  }
-  public resetTimezone() {
-    this._timezone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timezoneInput() {
-    return this._timezone
   }
 
   // username - computed: true, optional: true, required: false
   private _username?: string;
   public get username() {
-    return this.getStringAttribute('username');
+    return this._username ?? this.getStringAttribute('username');
   }
-  public set username(value: string) {
+  public set username(value: string | undefined) {
     this._username = value;
-  }
-  public resetUsername() {
-    this._username = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usernameInput() {
-    return this._username
   }
 
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return this._vpcSecurityGroupIds ?? this.getListAttribute('vpc_security_group_ids');
   }
-  public set vpcSecurityGroupIds(value: string[]) {
+  public set vpcSecurityGroupIds(value: string[] | undefined) {
     this._vpcSecurityGroupIds = value;
   }
-  public resetVpcSecurityGroupIds() {
-    this._vpcSecurityGroupIds = undefined;
+
+  // restore_to_point_in_time - computed: false, optional: true, required: false
+  private _restoreToPointInTime?: DbInstanceRestoreToPointInTime[];
+  public get restoreToPointInTime() {
+    return this._restoreToPointInTime;
   }
-  // Temporarily expose input value. Use with caution.
-  public get vpcSecurityGroupIdsInput() {
-    return this._vpcSecurityGroupIds
+  public set restoreToPointInTime(value: DbInstanceRestoreToPointInTime[] | undefined) {
+    this._restoreToPointInTime = value;
   }
 
   // s3_import - computed: false, optional: true, required: false
   private _s3Import?: DbInstanceS3Import[];
   public get s3Import() {
-    return this.interpolationForAttribute('s3_import') as any;
+    return this._s3Import;
   }
-  public set s3Import(value: DbInstanceS3Import[] ) {
+  public set s3Import(value: DbInstanceS3Import[] | undefined) {
     this._s3Import = value;
-  }
-  public resetS3Import() {
-    this._s3Import = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get s3ImportInput() {
-    return this._s3Import
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DbInstanceTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: DbInstanceTimeouts ) {
+  public set timeouts(value: DbInstanceTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -1049,58 +694,59 @@ export class DbInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_storage: cdktf.numberToTerraform(this._allocatedStorage),
-      allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
-      backup_window: cdktf.stringToTerraform(this._backupWindow),
-      ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
-      character_set_name: cdktf.stringToTerraform(this._characterSetName),
-      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
-      db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
-      delete_automated_backups: cdktf.booleanToTerraform(this._deleteAutomatedBackups),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      domain: cdktf.stringToTerraform(this._domain),
-      domain_iam_role_name: cdktf.stringToTerraform(this._domainIamRoleName),
-      enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledCloudwatchLogsExports),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
-      iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
-      instance_class: cdktf.stringToTerraform(this._instanceClass),
-      iops: cdktf.numberToTerraform(this._iops),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      license_model: cdktf.stringToTerraform(this._licenseModel),
-      maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
-      max_allocated_storage: cdktf.numberToTerraform(this._maxAllocatedStorage),
-      monitoring_interval: cdktf.numberToTerraform(this._monitoringInterval),
-      monitoring_role_arn: cdktf.stringToTerraform(this._monitoringRoleArn),
-      multi_az: cdktf.booleanToTerraform(this._multiAz),
-      name: cdktf.stringToTerraform(this._name),
-      option_group_name: cdktf.stringToTerraform(this._optionGroupName),
-      parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
-      password: cdktf.stringToTerraform(this._password),
-      performance_insights_enabled: cdktf.booleanToTerraform(this._performanceInsightsEnabled),
-      performance_insights_kms_key_id: cdktf.stringToTerraform(this._performanceInsightsKmsKeyId),
-      performance_insights_retention_period: cdktf.numberToTerraform(this._performanceInsightsRetentionPeriod),
-      port: cdktf.numberToTerraform(this._port),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      replicate_source_db: cdktf.stringToTerraform(this._replicateSourceDb),
-      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
-      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
-      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
-      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
-      storage_type: cdktf.stringToTerraform(this._storageType),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      timezone: cdktf.stringToTerraform(this._timezone),
-      username: cdktf.stringToTerraform(this._username),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
-      s3_import: cdktf.listMapper(dbInstanceS3ImportToTerraform)(this._s3Import),
-      timeouts: dbInstanceTimeoutsToTerraform(this._timeouts),
+      allocated_storage: this._allocatedStorage,
+      allow_major_version_upgrade: this._allowMajorVersionUpgrade,
+      apply_immediately: this._applyImmediately,
+      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
+      availability_zone: this._availabilityZone,
+      backup_retention_period: this._backupRetentionPeriod,
+      backup_window: this._backupWindow,
+      ca_cert_identifier: this._caCertIdentifier,
+      character_set_name: this._characterSetName,
+      copy_tags_to_snapshot: this._copyTagsToSnapshot,
+      db_subnet_group_name: this._dbSubnetGroupName,
+      delete_automated_backups: this._deleteAutomatedBackups,
+      deletion_protection: this._deletionProtection,
+      domain: this._domain,
+      domain_iam_role_name: this._domainIamRoleName,
+      enabled_cloudwatch_logs_exports: this._enabledCloudwatchLogsExports,
+      engine: this._engine,
+      engine_version: this._engineVersion,
+      final_snapshot_identifier: this._finalSnapshotIdentifier,
+      iam_database_authentication_enabled: this._iamDatabaseAuthenticationEnabled,
+      identifier: this._identifier,
+      identifier_prefix: this._identifierPrefix,
+      instance_class: this._instanceClass,
+      iops: this._iops,
+      kms_key_id: this._kmsKeyId,
+      license_model: this._licenseModel,
+      maintenance_window: this._maintenanceWindow,
+      max_allocated_storage: this._maxAllocatedStorage,
+      monitoring_interval: this._monitoringInterval,
+      monitoring_role_arn: this._monitoringRoleArn,
+      multi_az: this._multiAz,
+      name: this._name,
+      option_group_name: this._optionGroupName,
+      parameter_group_name: this._parameterGroupName,
+      password: this._password,
+      performance_insights_enabled: this._performanceInsightsEnabled,
+      performance_insights_kms_key_id: this._performanceInsightsKmsKeyId,
+      performance_insights_retention_period: this._performanceInsightsRetentionPeriod,
+      port: this._port,
+      publicly_accessible: this._publiclyAccessible,
+      replicate_source_db: this._replicateSourceDb,
+      security_group_names: this._securityGroupNames,
+      skip_final_snapshot: this._skipFinalSnapshot,
+      snapshot_identifier: this._snapshotIdentifier,
+      storage_encrypted: this._storageEncrypted,
+      storage_type: this._storageType,
+      tags: this._tags,
+      timezone: this._timezone,
+      username: this._username,
+      vpc_security_group_ids: this._vpcSecurityGroupIds,
+      restore_to_point_in_time: this._restoreToPointInTime,
+      s3_import: this._s3Import,
+      timeouts: this._timeouts,
     };
   }
 }

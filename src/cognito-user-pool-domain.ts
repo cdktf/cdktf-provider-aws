@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CognitoUserPoolDomainConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoUserPoolDomainConfig extends TerraformMetaArguments {
   readonly certificateArn?: string;
   readonly domain: string;
   readonly userPoolId: string;
@@ -14,7 +15,7 @@ export interface CognitoUserPoolDomainConfig extends cdktf.TerraformMetaArgument
 
 // Resource
 
-export class CognitoUserPoolDomain extends cdktf.TerraformResource {
+export class CognitoUserPoolDomain extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // aws_account_id - computed: true, optional: false, required: false
+  // aws_account_id - computed: true, optional: false, required: true
   public get awsAccountId() {
     return this.getStringAttribute('aws_account_id');
   }
@@ -48,20 +49,13 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   // certificate_arn - computed: false, optional: true, required: false
   private _certificateArn?: string;
   public get certificateArn() {
-    return this.getStringAttribute('certificate_arn');
+    return this._certificateArn;
   }
-  public set certificateArn(value: string ) {
+  public set certificateArn(value: string | undefined) {
     this._certificateArn = value;
   }
-  public resetCertificateArn() {
-    this._certificateArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certificateArnInput() {
-    return this._certificateArn
-  }
 
-  // cloudfront_distribution_arn - computed: true, optional: false, required: false
+  // cloudfront_distribution_arn - computed: true, optional: false, required: true
   public get cloudfrontDistributionArn() {
     return this.getStringAttribute('cloudfront_distribution_arn');
   }
@@ -69,22 +63,22 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this.getStringAttribute('domain');
+    return this._domain;
   }
   public set domain(value: string) {
     this._domain = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get domainInput() {
-    return this._domain
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // s3_bucket - computed: true, optional: false, required: false
+  // s3_bucket - computed: true, optional: false, required: true
   public get s3Bucket() {
     return this.getStringAttribute('s3_bucket');
   }
@@ -92,17 +86,13 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
   // user_pool_id - computed: false, optional: false, required: true
   private _userPoolId: string;
   public get userPoolId() {
-    return this.getStringAttribute('user_pool_id');
+    return this._userPoolId;
   }
   public set userPoolId(value: string) {
     this._userPoolId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get userPoolIdInput() {
-    return this._userPoolId
-  }
 
-  // version - computed: true, optional: false, required: false
+  // version - computed: true, optional: false, required: true
   public get version() {
     return this.getStringAttribute('version');
   }
@@ -113,9 +103,9 @@ export class CognitoUserPoolDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
-      domain: cdktf.stringToTerraform(this._domain),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
+      certificate_arn: this._certificateArn,
+      domain: this._domain,
+      user_pool_id: this._userPoolId,
     };
   }
 }

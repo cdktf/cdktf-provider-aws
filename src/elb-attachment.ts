@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ElbAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface ElbAttachmentConfig extends TerraformMetaArguments {
   readonly elb: string;
   readonly instance: string;
 }
 
 // Resource
 
-export class ElbAttachment extends cdktf.TerraformResource {
+export class ElbAttachment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class ElbAttachment extends cdktf.TerraformResource {
   // elb - computed: false, optional: false, required: true
   private _elb: string;
   public get elb() {
-    return this.getStringAttribute('elb');
+    return this._elb;
   }
   public set elb(value: string) {
     this._elb = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get elbInput() {
-    return this._elb
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance - computed: false, optional: false, required: true
   private _instance: string;
   public get instance() {
-    return this.getStringAttribute('instance');
+    return this._instance;
   }
   public set instance(value: string) {
     this._instance = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceInput() {
-    return this._instance
   }
 
   // =========
@@ -75,8 +72,8 @@ export class ElbAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      elb: cdktf.stringToTerraform(this._elb),
-      instance: cdktf.stringToTerraform(this._instance),
+      elb: this._elb,
+      instance: this._instance,
     };
   }
 }

@@ -2,32 +2,34 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsElasticacheClusterConfig extends TerraformMetaArguments {
   readonly clusterId: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsElasticacheClusterCacheNodes extends cdktf.ComplexComputedList {
+export class DataAwsElasticacheClusterCacheNodes extends ComplexComputedList {
 
-  // address - computed: true, optional: false, required: false
+  // address - computed: true, optional: false, required: true
   public get address() {
     return this.getStringAttribute('address');
   }
 
-  // availability_zone - computed: true, optional: false, required: false
+  // availability_zone - computed: true, optional: false, required: true
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: false, required: true
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // port - computed: true, optional: false, required: false
+  // port - computed: true, optional: false, required: true
   public get port() {
     return this.getNumberAttribute('port');
   }
@@ -35,7 +37,7 @@ export class DataAwsElasticacheClusterCacheNodes extends cdktf.ComplexComputedLi
 
 // Resource
 
-export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
+export class DataAwsElasticacheCluster extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -60,22 +62,22 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zone - computed: true, optional: false, required: false
+  // availability_zone - computed: true, optional: false, required: true
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
 
-  // cache_nodes - computed: true, optional: false, required: false
+  // cache_nodes - computed: true, optional: false, required: true
   public cacheNodes(index: string) {
     return new DataAwsElasticacheClusterCacheNodes(this, 'cache_nodes', index);
   }
 
-  // cluster_address - computed: true, optional: false, required: false
+  // cluster_address - computed: true, optional: false, required: true
   public get clusterAddress() {
     return this.getStringAttribute('cluster_address');
   }
@@ -83,110 +85,103 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
   // cluster_id - computed: false, optional: false, required: true
   private _clusterId: string;
   public get clusterId() {
-    return this.getStringAttribute('cluster_id');
+    return this._clusterId;
   }
   public set clusterId(value: string) {
     this._clusterId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdInput() {
-    return this._clusterId
-  }
 
-  // configuration_endpoint - computed: true, optional: false, required: false
+  // configuration_endpoint - computed: true, optional: false, required: true
   public get configurationEndpoint() {
     return this.getStringAttribute('configuration_endpoint');
   }
 
-  // engine - computed: true, optional: false, required: false
+  // engine - computed: true, optional: false, required: true
   public get engine() {
     return this.getStringAttribute('engine');
   }
 
-  // engine_version - computed: true, optional: false, required: false
+  // engine_version - computed: true, optional: false, required: true
   public get engineVersion() {
     return this.getStringAttribute('engine_version');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // maintenance_window - computed: true, optional: false, required: false
+  // maintenance_window - computed: true, optional: false, required: true
   public get maintenanceWindow() {
     return this.getStringAttribute('maintenance_window');
   }
 
-  // node_type - computed: true, optional: false, required: false
+  // node_type - computed: true, optional: false, required: true
   public get nodeType() {
     return this.getStringAttribute('node_type');
   }
 
-  // notification_topic_arn - computed: true, optional: false, required: false
+  // notification_topic_arn - computed: true, optional: false, required: true
   public get notificationTopicArn() {
     return this.getStringAttribute('notification_topic_arn');
   }
 
-  // num_cache_nodes - computed: true, optional: false, required: false
+  // num_cache_nodes - computed: true, optional: false, required: true
   public get numCacheNodes() {
     return this.getNumberAttribute('num_cache_nodes');
   }
 
-  // parameter_group_name - computed: true, optional: false, required: false
+  // parameter_group_name - computed: true, optional: false, required: true
   public get parameterGroupName() {
     return this.getStringAttribute('parameter_group_name');
   }
 
-  // port - computed: true, optional: false, required: false
+  // port - computed: true, optional: false, required: true
   public get port() {
     return this.getNumberAttribute('port');
   }
 
-  // replication_group_id - computed: true, optional: false, required: false
+  // replication_group_id - computed: true, optional: false, required: true
   public get replicationGroupId() {
     return this.getStringAttribute('replication_group_id');
   }
 
-  // security_group_ids - computed: true, optional: false, required: false
+  // security_group_ids - computed: true, optional: false, required: true
   public get securityGroupIds() {
     return this.getListAttribute('security_group_ids');
   }
 
-  // security_group_names - computed: true, optional: false, required: false
+  // security_group_names - computed: true, optional: false, required: true
   public get securityGroupNames() {
     return this.getListAttribute('security_group_names');
   }
 
-  // snapshot_retention_limit - computed: true, optional: false, required: false
+  // snapshot_retention_limit - computed: true, optional: false, required: true
   public get snapshotRetentionLimit() {
     return this.getNumberAttribute('snapshot_retention_limit');
   }
 
-  // snapshot_window - computed: true, optional: false, required: false
+  // snapshot_window - computed: true, optional: false, required: true
   public get snapshotWindow() {
     return this.getStringAttribute('snapshot_window');
   }
 
-  // subnet_group_name - computed: true, optional: false, required: false
+  // subnet_group_name - computed: true, optional: false, required: true
   public get subnetGroupName() {
     return this.getStringAttribute('subnet_group_name');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -195,8 +190,8 @@ export class DataAwsElasticacheCluster extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      cluster_id: this._clusterId,
+      tags: this._tags,
     };
   }
 }

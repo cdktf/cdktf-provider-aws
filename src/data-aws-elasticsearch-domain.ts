@@ -2,190 +2,193 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { StringMap } from "cdktf";
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsElasticsearchDomainConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsElasticsearchDomainConfig extends TerraformMetaArguments {
   readonly domainName: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsElasticsearchDomainAdvancedSecurityOptions extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainAdvancedSecurityOptions extends ComplexComputedList {
 
-  // enabled - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // internal_user_database_enabled - computed: true, optional: false, required: false
+  // internal_user_database_enabled - computed: true, optional: false, required: true
   public get internalUserDatabaseEnabled() {
     return this.getBooleanAttribute('internal_user_database_enabled');
   }
 }
-export class DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfig extends ComplexComputedList {
 
-  // availability_zone_count - computed: true, optional: false, required: false
+  // availability_zone_count - computed: true, optional: false, required: true
   public get availabilityZoneCount() {
     return this.getNumberAttribute('availability_zone_count');
   }
 }
-export class DataAwsElasticsearchDomainClusterConfig extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainClusterConfig extends ComplexComputedList {
 
-  // dedicated_master_count - computed: true, optional: false, required: false
+  // dedicated_master_count - computed: true, optional: false, required: true
   public get dedicatedMasterCount() {
     return this.getNumberAttribute('dedicated_master_count');
   }
 
-  // dedicated_master_enabled - computed: true, optional: false, required: false
+  // dedicated_master_enabled - computed: true, optional: false, required: true
   public get dedicatedMasterEnabled() {
     return this.getBooleanAttribute('dedicated_master_enabled');
   }
 
-  // dedicated_master_type - computed: true, optional: false, required: false
+  // dedicated_master_type - computed: true, optional: false, required: true
   public get dedicatedMasterType() {
     return this.getStringAttribute('dedicated_master_type');
   }
 
-  // instance_count - computed: true, optional: false, required: false
+  // instance_count - computed: true, optional: false, required: true
   public get instanceCount() {
     return this.getNumberAttribute('instance_count');
   }
 
-  // instance_type - computed: true, optional: false, required: false
+  // instance_type - computed: true, optional: false, required: true
   public get instanceType() {
     return this.getStringAttribute('instance_type');
   }
 
-  // warm_count - computed: true, optional: false, required: false
+  // warm_count - computed: true, optional: false, required: true
   public get warmCount() {
     return this.getNumberAttribute('warm_count');
   }
 
-  // warm_enabled - computed: true, optional: false, required: false
+  // warm_enabled - computed: true, optional: false, required: true
   public get warmEnabled() {
     return this.getBooleanAttribute('warm_enabled');
   }
 
-  // warm_type - computed: true, optional: false, required: false
+  // warm_type - computed: true, optional: false, required: true
   public get warmType() {
     return this.getStringAttribute('warm_type');
   }
 
-  // zone_awareness_config - computed: true, optional: false, required: false
+  // zone_awareness_config - computed: true, optional: false, required: true
   public get zoneAwarenessConfig() {
-    return this.interpolationForAttribute('zone_awareness_config') as any;
+    return 'not implemented' as any;
   }
 
-  // zone_awareness_enabled - computed: true, optional: false, required: false
+  // zone_awareness_enabled - computed: true, optional: false, required: true
   public get zoneAwarenessEnabled() {
     return this.getBooleanAttribute('zone_awareness_enabled');
   }
 }
-export class DataAwsElasticsearchDomainCognitoOptions extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainCognitoOptions extends ComplexComputedList {
 
-  // enabled - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // identity_pool_id - computed: true, optional: false, required: false
+  // identity_pool_id - computed: true, optional: false, required: true
   public get identityPoolId() {
     return this.getStringAttribute('identity_pool_id');
   }
 
-  // role_arn - computed: true, optional: false, required: false
+  // role_arn - computed: true, optional: false, required: true
   public get roleArn() {
     return this.getStringAttribute('role_arn');
   }
 
-  // user_pool_id - computed: true, optional: false, required: false
+  // user_pool_id - computed: true, optional: false, required: true
   public get userPoolId() {
     return this.getStringAttribute('user_pool_id');
   }
 }
-export class DataAwsElasticsearchDomainEbsOptions extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainEbsOptions extends ComplexComputedList {
 
-  // ebs_enabled - computed: true, optional: false, required: false
+  // ebs_enabled - computed: true, optional: false, required: true
   public get ebsEnabled() {
     return this.getBooleanAttribute('ebs_enabled');
   }
 
-  // iops - computed: true, optional: false, required: false
+  // iops - computed: true, optional: false, required: true
   public get iops() {
     return this.getNumberAttribute('iops');
   }
 
-  // volume_size - computed: true, optional: false, required: false
+  // volume_size - computed: true, optional: false, required: true
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }
 
-  // volume_type - computed: true, optional: false, required: false
+  // volume_type - computed: true, optional: false, required: true
   public get volumeType() {
     return this.getStringAttribute('volume_type');
   }
 }
-export class DataAwsElasticsearchDomainEncryptionAtRest extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainEncryptionAtRest extends ComplexComputedList {
 
-  // enabled - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 }
-export class DataAwsElasticsearchDomainLogPublishingOptions extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainLogPublishingOptions extends ComplexComputedList {
 
-  // cloudwatch_log_group_arn - computed: true, optional: false, required: false
+  // cloudwatch_log_group_arn - computed: true, optional: false, required: true
   public get cloudwatchLogGroupArn() {
     return this.getStringAttribute('cloudwatch_log_group_arn');
   }
 
-  // enabled - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // log_type - computed: true, optional: false, required: false
+  // log_type - computed: true, optional: false, required: true
   public get logType() {
     return this.getStringAttribute('log_type');
   }
 }
-export class DataAwsElasticsearchDomainNodeToNodeEncryption extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainNodeToNodeEncryption extends ComplexComputedList {
 
-  // enabled - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 }
-export class DataAwsElasticsearchDomainSnapshotOptions extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainSnapshotOptions extends ComplexComputedList {
 
-  // automated_snapshot_start_hour - computed: true, optional: false, required: false
+  // automated_snapshot_start_hour - computed: true, optional: false, required: true
   public get automatedSnapshotStartHour() {
     return this.getNumberAttribute('automated_snapshot_start_hour');
   }
 }
-export class DataAwsElasticsearchDomainVpcOptions extends cdktf.ComplexComputedList {
+export class DataAwsElasticsearchDomainVpcOptions extends ComplexComputedList {
 
-  // availability_zones - computed: true, optional: false, required: false
+  // availability_zones - computed: true, optional: false, required: true
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
 
-  // security_group_ids - computed: true, optional: false, required: false
+  // security_group_ids - computed: true, optional: false, required: true
   public get securityGroupIds() {
     return this.getListAttribute('security_group_ids');
   }
 
-  // subnet_ids - computed: true, optional: false, required: false
+  // subnet_ids - computed: true, optional: false, required: true
   public get subnetIds() {
     return this.getListAttribute('subnet_ids');
   }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -193,7 +196,7 @@ export class DataAwsElasticsearchDomainVpcOptions extends cdktf.ComplexComputedL
 
 // Resource
 
-export class DataAwsElasticsearchDomain extends cdktf.TerraformDataSource {
+export class DataAwsElasticsearchDomain extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -218,47 +221,47 @@ export class DataAwsElasticsearchDomain extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // access_policies - computed: true, optional: false, required: false
+  // access_policies - computed: true, optional: false, required: true
   public get accessPolicies() {
     return this.getStringAttribute('access_policies');
   }
 
-  // advanced_options - computed: true, optional: false, required: false
+  // advanced_options - computed: true, optional: false, required: true
   public advancedOptions(key: string): string {
-    return new cdktf.StringMap(this, 'advanced_options').lookup(key);
+    return new StringMap(this, 'advanced_options').lookup(key);
   }
 
-  // advanced_security_options - computed: true, optional: false, required: false
+  // advanced_security_options - computed: true, optional: false, required: true
   public advancedSecurityOptions(index: string) {
     return new DataAwsElasticsearchDomainAdvancedSecurityOptions(this, 'advanced_security_options', index);
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // cluster_config - computed: true, optional: false, required: false
+  // cluster_config - computed: true, optional: false, required: true
   public clusterConfig(index: string) {
     return new DataAwsElasticsearchDomainClusterConfig(this, 'cluster_config', index);
   }
 
-  // cognito_options - computed: true, optional: false, required: false
+  // cognito_options - computed: true, optional: false, required: true
   public cognitoOptions(index: string) {
     return new DataAwsElasticsearchDomainCognitoOptions(this, 'cognito_options', index);
   }
 
-  // created - computed: true, optional: false, required: false
+  // created - computed: true, optional: false, required: true
   public get created() {
     return this.getBooleanAttribute('created');
   }
 
-  // deleted - computed: true, optional: false, required: false
+  // deleted - computed: true, optional: false, required: true
   public get deleted() {
     return this.getBooleanAttribute('deleted');
   }
 
-  // domain_id - computed: true, optional: false, required: false
+  // domain_id - computed: true, optional: false, required: true
   public get domainId() {
     return this.getStringAttribute('domain_id');
   }
@@ -266,83 +269,76 @@ export class DataAwsElasticsearchDomain extends cdktf.TerraformDataSource {
   // domain_name - computed: false, optional: false, required: true
   private _domainName: string;
   public get domainName() {
-    return this.getStringAttribute('domain_name');
+    return this._domainName;
   }
   public set domainName(value: string) {
     this._domainName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get domainNameInput() {
-    return this._domainName
-  }
 
-  // ebs_options - computed: true, optional: false, required: false
+  // ebs_options - computed: true, optional: false, required: true
   public ebsOptions(index: string) {
     return new DataAwsElasticsearchDomainEbsOptions(this, 'ebs_options', index);
   }
 
-  // elasticsearch_version - computed: true, optional: false, required: false
+  // elasticsearch_version - computed: true, optional: false, required: true
   public get elasticsearchVersion() {
     return this.getStringAttribute('elasticsearch_version');
   }
 
-  // encryption_at_rest - computed: true, optional: false, required: false
+  // encryption_at_rest - computed: true, optional: false, required: true
   public encryptionAtRest(index: string) {
     return new DataAwsElasticsearchDomainEncryptionAtRest(this, 'encryption_at_rest', index);
   }
 
-  // endpoint - computed: true, optional: false, required: false
+  // endpoint - computed: true, optional: false, required: true
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // kibana_endpoint - computed: true, optional: false, required: false
+  // kibana_endpoint - computed: true, optional: false, required: true
   public get kibanaEndpoint() {
     return this.getStringAttribute('kibana_endpoint');
   }
 
-  // log_publishing_options - computed: true, optional: false, required: false
+  // log_publishing_options - computed: true, optional: false, required: true
   public logPublishingOptions(index: string) {
     return new DataAwsElasticsearchDomainLogPublishingOptions(this, 'log_publishing_options', index);
   }
 
-  // node_to_node_encryption - computed: true, optional: false, required: false
+  // node_to_node_encryption - computed: true, optional: false, required: true
   public nodeToNodeEncryption(index: string) {
     return new DataAwsElasticsearchDomainNodeToNodeEncryption(this, 'node_to_node_encryption', index);
   }
 
-  // processing - computed: true, optional: false, required: false
+  // processing - computed: true, optional: false, required: true
   public get processing() {
     return this.getBooleanAttribute('processing');
   }
 
-  // snapshot_options - computed: true, optional: false, required: false
+  // snapshot_options - computed: true, optional: false, required: true
   public snapshotOptions(index: string) {
     return new DataAwsElasticsearchDomainSnapshotOptions(this, 'snapshot_options', index);
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // vpc_options - computed: true, optional: false, required: false
+  // vpc_options - computed: true, optional: false, required: true
   public vpcOptions(index: string) {
     return new DataAwsElasticsearchDomainVpcOptions(this, 'vpc_options', index);
   }
@@ -353,8 +349,8 @@ export class DataAwsElasticsearchDomain extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      domain_name: this._domainName,
+      tags: this._tags,
     };
   }
 }

@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RamPrincipalAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface RamPrincipalAssociationConfig extends TerraformMetaArguments {
   readonly principal: string;
   readonly resourceShareArn: string;
 }
 
 // Resource
 
-export class RamPrincipalAssociation extends cdktf.TerraformResource {
+export class RamPrincipalAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,34 +40,30 @@ export class RamPrincipalAssociation extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // principal - computed: false, optional: false, required: true
   private _principal: string;
   public get principal() {
-    return this.getStringAttribute('principal');
+    return this._principal;
   }
   public set principal(value: string) {
     this._principal = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get principalInput() {
-    return this._principal
   }
 
   // resource_share_arn - computed: false, optional: false, required: true
   private _resourceShareArn: string;
   public get resourceShareArn() {
-    return this.getStringAttribute('resource_share_arn');
+    return this._resourceShareArn;
   }
   public set resourceShareArn(value: string) {
     this._resourceShareArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceShareArnInput() {
-    return this._resourceShareArn
   }
 
   // =========
@@ -75,8 +72,8 @@ export class RamPrincipalAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      principal: cdktf.stringToTerraform(this._principal),
-      resource_share_arn: cdktf.stringToTerraform(this._resourceShareArn),
+      principal: this._principal,
+      resource_share_arn: this._resourceShareArn,
     };
   }
 }

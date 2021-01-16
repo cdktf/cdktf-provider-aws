@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ServicecatalogPortfolioConfig extends cdktf.TerraformMetaArguments {
+export interface ServicecatalogPortfolioConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly providerName?: string;
@@ -20,19 +21,9 @@ export interface ServicecatalogPortfolioTimeouts {
   readonly update?: string;
 }
 
-function servicecatalogPortfolioTimeoutsToTerraform(struct?: ServicecatalogPortfolioTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class ServicecatalogPortfolio extends cdktf.TerraformResource {
+export class ServicecatalogPortfolio extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -60,12 +51,12 @@ export class ServicecatalogPortfolio extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // created_time - computed: true, optional: false, required: false
+  // created_time - computed: true, optional: false, required: true
   public get createdTime() {
     return this.getStringAttribute('created_time');
   }
@@ -73,83 +64,55 @@ export class ServicecatalogPortfolio extends cdktf.TerraformResource {
   // description - computed: true, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description ?? this.getStringAttribute('description');
   }
-  public set description(value: string) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // provider_name - computed: false, optional: true, required: false
   private _providerName?: string;
   public get providerName() {
-    return this.getStringAttribute('provider_name');
+    return this._providerName;
   }
-  public set providerName(value: string ) {
+  public set providerName(value: string | undefined) {
     this._providerName = value;
-  }
-  public resetProviderName() {
-    this._providerName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get providerNameInput() {
-    return this._providerName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: ServicecatalogPortfolioTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: ServicecatalogPortfolioTimeouts ) {
+  public set timeouts(value: ServicecatalogPortfolioTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -158,11 +121,11 @@ export class ServicecatalogPortfolio extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      provider_name: cdktf.stringToTerraform(this._providerName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      timeouts: servicecatalogPortfolioTimeoutsToTerraform(this._timeouts),
+      description: this._description,
+      name: this._name,
+      provider_name: this._providerName,
+      tags: this._tags,
+      timeouts: this._timeouts,
     };
   }
 }

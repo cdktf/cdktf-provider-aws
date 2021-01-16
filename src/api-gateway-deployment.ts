@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayDeploymentConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly restApiId: string;
   readonly stageDescription?: string;
@@ -17,7 +18,7 @@ export interface ApiGatewayDeploymentConfig extends cdktf.TerraformMetaArguments
 
 // Resource
 
-export class ApiGatewayDeployment extends cdktf.TerraformResource {
+export class ApiGatewayDeployment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,7 +47,7 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // created_date - computed: true, optional: false, required: false
+  // created_date - computed: true, optional: false, required: true
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
@@ -54,30 +55,27 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
-  }
 
-  // execution_arn - computed: true, optional: false, required: false
+  // execution_arn - computed: true, optional: false, required: true
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // invoke_url - computed: true, optional: false, required: false
+  // invoke_url - computed: true, optional: false, required: true
   public get invokeUrl() {
     return this.getStringAttribute('invoke_url');
   }
@@ -85,78 +83,46 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this.getStringAttribute('rest_api_id');
+    return this._restApiId;
   }
   public set restApiId(value: string) {
     this._restApiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restApiIdInput() {
-    return this._restApiId
   }
 
   // stage_description - computed: false, optional: true, required: false
   private _stageDescription?: string;
   public get stageDescription() {
-    return this.getStringAttribute('stage_description');
+    return this._stageDescription;
   }
-  public set stageDescription(value: string ) {
+  public set stageDescription(value: string | undefined) {
     this._stageDescription = value;
-  }
-  public resetStageDescription() {
-    this._stageDescription = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stageDescriptionInput() {
-    return this._stageDescription
   }
 
   // stage_name - computed: false, optional: true, required: false
   private _stageName?: string;
   public get stageName() {
-    return this.getStringAttribute('stage_name');
+    return this._stageName;
   }
-  public set stageName(value: string ) {
+  public set stageName(value: string | undefined) {
     this._stageName = value;
-  }
-  public resetStageName() {
-    this._stageName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stageNameInput() {
-    return this._stageName
   }
 
   // triggers - computed: false, optional: true, required: false
   private _triggers?: { [key: string]: string };
   public get triggers() {
-    return this.interpolationForAttribute('triggers') as any;
+    return this._triggers;
   }
-  public set triggers(value: { [key: string]: string } ) {
+  public set triggers(value: { [key: string]: string } | undefined) {
     this._triggers = value;
-  }
-  public resetTriggers() {
-    this._triggers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get triggersInput() {
-    return this._triggers
   }
 
   // variables - computed: false, optional: true, required: false
   private _variables?: { [key: string]: string };
   public get variables() {
-    return this.interpolationForAttribute('variables') as any;
+    return this._variables;
   }
-  public set variables(value: { [key: string]: string } ) {
+  public set variables(value: { [key: string]: string } | undefined) {
     this._variables = value;
-  }
-  public resetVariables() {
-    this._variables = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get variablesInput() {
-    return this._variables
   }
 
   // =========
@@ -165,12 +131,12 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      stage_description: cdktf.stringToTerraform(this._stageDescription),
-      stage_name: cdktf.stringToTerraform(this._stageName),
-      triggers: cdktf.hashMapper(cdktf.anyToTerraform)(this._triggers),
-      variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._variables),
+      description: this._description,
+      rest_api_id: this._restApiId,
+      stage_description: this._stageDescription,
+      stage_name: this._stageName,
+      triggers: this._triggers,
+      variables: this._variables,
     };
   }
 }

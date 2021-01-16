@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayBasePathMappingConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayBasePathMappingConfig extends TerraformMetaArguments {
   readonly apiId: string;
   readonly basePath?: string;
   readonly domainName: string;
@@ -15,7 +16,7 @@ export interface ApiGatewayBasePathMappingConfig extends cdktf.TerraformMetaArgu
 
 // Resource
 
-export class ApiGatewayBasePathMapping extends cdktf.TerraformResource {
+export class ApiGatewayBasePathMapping extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,64 +46,46 @@ export class ApiGatewayBasePathMapping extends cdktf.TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this.getStringAttribute('api_id');
+    return this._apiId;
   }
   public set apiId(value: string) {
     this._apiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiIdInput() {
-    return this._apiId
   }
 
   // base_path - computed: false, optional: true, required: false
   private _basePath?: string;
   public get basePath() {
-    return this.getStringAttribute('base_path');
+    return this._basePath;
   }
-  public set basePath(value: string ) {
+  public set basePath(value: string | undefined) {
     this._basePath = value;
-  }
-  public resetBasePath() {
-    this._basePath = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get basePathInput() {
-    return this._basePath
   }
 
   // domain_name - computed: false, optional: false, required: true
   private _domainName: string;
   public get domainName() {
-    return this.getStringAttribute('domain_name');
+    return this._domainName;
   }
   public set domainName(value: string) {
     this._domainName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get domainNameInput() {
-    return this._domainName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // stage_name - computed: false, optional: true, required: false
   private _stageName?: string;
   public get stageName() {
-    return this.getStringAttribute('stage_name');
+    return this._stageName;
   }
-  public set stageName(value: string ) {
+  public set stageName(value: string | undefined) {
     this._stageName = value;
-  }
-  public resetStageName() {
-    this._stageName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stageNameInput() {
-    return this._stageName
   }
 
   // =========
@@ -111,10 +94,10 @@ export class ApiGatewayBasePathMapping extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      base_path: cdktf.stringToTerraform(this._basePath),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      stage_name: cdktf.stringToTerraform(this._stageName),
+      api_id: this._apiId,
+      base_path: this._basePath,
+      domain_name: this._domainName,
+      stage_name: this._stageName,
     };
   }
 }

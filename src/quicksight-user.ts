@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface QuicksightUserConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightUserConfig extends TerraformMetaArguments {
   readonly awsAccountId?: string;
   readonly email: string;
   readonly iamArn?: string;
@@ -19,7 +20,7 @@ export interface QuicksightUserConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class QuicksightUser extends cdktf.TerraformResource {
+export class QuicksightUser extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,7 +51,7 @@ export class QuicksightUser extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,125 +59,82 @@ export class QuicksightUser extends cdktf.TerraformResource {
   // aws_account_id - computed: true, optional: true, required: false
   private _awsAccountId?: string;
   public get awsAccountId() {
-    return this.getStringAttribute('aws_account_id');
+    return this._awsAccountId ?? this.getStringAttribute('aws_account_id');
   }
-  public set awsAccountId(value: string) {
+  public set awsAccountId(value: string | undefined) {
     this._awsAccountId = value;
-  }
-  public resetAwsAccountId() {
-    this._awsAccountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get awsAccountIdInput() {
-    return this._awsAccountId
   }
 
   // email - computed: false, optional: false, required: true
   private _email: string;
   public get email() {
-    return this.getStringAttribute('email');
+    return this._email;
   }
   public set email(value: string) {
     this._email = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailInput() {
-    return this._email
   }
 
   // iam_arn - computed: false, optional: true, required: false
   private _iamArn?: string;
   public get iamArn() {
-    return this.getStringAttribute('iam_arn');
+    return this._iamArn;
   }
-  public set iamArn(value: string ) {
+  public set iamArn(value: string | undefined) {
     this._iamArn = value;
-  }
-  public resetIamArn() {
-    this._iamArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iamArnInput() {
-    return this._iamArn
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // identity_type - computed: false, optional: false, required: true
   private _identityType: string;
   public get identityType() {
-    return this.getStringAttribute('identity_type');
+    return this._identityType;
   }
   public set identityType(value: string) {
     this._identityType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identityTypeInput() {
-    return this._identityType
   }
 
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string;
   public get namespace() {
-    return this.getStringAttribute('namespace');
+    return this._namespace;
   }
-  public set namespace(value: string ) {
+  public set namespace(value: string | undefined) {
     this._namespace = value;
-  }
-  public resetNamespace() {
-    this._namespace = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namespaceInput() {
-    return this._namespace
   }
 
   // session_name - computed: false, optional: true, required: false
   private _sessionName?: string;
   public get sessionName() {
-    return this.getStringAttribute('session_name');
+    return this._sessionName;
   }
-  public set sessionName(value: string ) {
+  public set sessionName(value: string | undefined) {
     this._sessionName = value;
-  }
-  public resetSessionName() {
-    this._sessionName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sessionNameInput() {
-    return this._sessionName
   }
 
   // user_name - computed: false, optional: true, required: false
   private _userName?: string;
   public get userName() {
-    return this.getStringAttribute('user_name');
+    return this._userName;
   }
-  public set userName(value: string ) {
+  public set userName(value: string | undefined) {
     this._userName = value;
-  }
-  public resetUserName() {
-    this._userName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userNameInput() {
-    return this._userName
   }
 
   // user_role - computed: false, optional: false, required: true
   private _userRole: string;
   public get userRole() {
-    return this.getStringAttribute('user_role');
+    return this._userRole;
   }
   public set userRole(value: string) {
     this._userRole = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userRoleInput() {
-    return this._userRole
   }
 
   // =========
@@ -185,14 +143,14 @@ export class QuicksightUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      email: cdktf.stringToTerraform(this._email),
-      iam_arn: cdktf.stringToTerraform(this._iamArn),
-      identity_type: cdktf.stringToTerraform(this._identityType),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      session_name: cdktf.stringToTerraform(this._sessionName),
-      user_name: cdktf.stringToTerraform(this._userName),
-      user_role: cdktf.stringToTerraform(this._userRole),
+      aws_account_id: this._awsAccountId,
+      email: this._email,
+      iam_arn: this._iamArn,
+      identity_type: this._identityType,
+      namespace: this._namespace,
+      session_name: this._sessionName,
+      user_name: this._userName,
+      user_role: this._userRole,
     };
   }
 }

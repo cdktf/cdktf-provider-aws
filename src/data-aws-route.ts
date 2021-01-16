@@ -2,16 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRouteConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRouteConfig extends TerraformMetaArguments {
   readonly destinationCidrBlock?: string;
   readonly destinationIpv6CidrBlock?: string;
   readonly egressOnlyGatewayId?: string;
   readonly gatewayId?: string;
   readonly instanceId?: string;
+  readonly localGatewayId?: string;
   readonly natGatewayId?: string;
   readonly networkInterfaceId?: string;
   readonly routeTableId: string;
@@ -21,7 +23,7 @@ export interface DataAwsRouteConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsRoute extends cdktf.TerraformDataSource {
+export class DataAwsRoute extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -43,6 +45,7 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
     this._egressOnlyGatewayId = config.egressOnlyGatewayId;
     this._gatewayId = config.gatewayId;
     this._instanceId = config.instanceId;
+    this._localGatewayId = config.localGatewayId;
     this._natGatewayId = config.natGatewayId;
     this._networkInterfaceId = config.networkInterfaceId;
     this._routeTableId = config.routeTableId;
@@ -57,163 +60,109 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
   // destination_cidr_block - computed: true, optional: true, required: false
   private _destinationCidrBlock?: string;
   public get destinationCidrBlock() {
-    return this.getStringAttribute('destination_cidr_block');
+    return this._destinationCidrBlock ?? this.getStringAttribute('destination_cidr_block');
   }
-  public set destinationCidrBlock(value: string) {
+  public set destinationCidrBlock(value: string | undefined) {
     this._destinationCidrBlock = value;
-  }
-  public resetDestinationCidrBlock() {
-    this._destinationCidrBlock = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get destinationCidrBlockInput() {
-    return this._destinationCidrBlock
   }
 
   // destination_ipv6_cidr_block - computed: true, optional: true, required: false
   private _destinationIpv6CidrBlock?: string;
   public get destinationIpv6CidrBlock() {
-    return this.getStringAttribute('destination_ipv6_cidr_block');
+    return this._destinationIpv6CidrBlock ?? this.getStringAttribute('destination_ipv6_cidr_block');
   }
-  public set destinationIpv6CidrBlock(value: string) {
+  public set destinationIpv6CidrBlock(value: string | undefined) {
     this._destinationIpv6CidrBlock = value;
-  }
-  public resetDestinationIpv6CidrBlock() {
-    this._destinationIpv6CidrBlock = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get destinationIpv6CidrBlockInput() {
-    return this._destinationIpv6CidrBlock
   }
 
   // egress_only_gateway_id - computed: true, optional: true, required: false
   private _egressOnlyGatewayId?: string;
   public get egressOnlyGatewayId() {
-    return this.getStringAttribute('egress_only_gateway_id');
+    return this._egressOnlyGatewayId ?? this.getStringAttribute('egress_only_gateway_id');
   }
-  public set egressOnlyGatewayId(value: string) {
+  public set egressOnlyGatewayId(value: string | undefined) {
     this._egressOnlyGatewayId = value;
-  }
-  public resetEgressOnlyGatewayId() {
-    this._egressOnlyGatewayId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get egressOnlyGatewayIdInput() {
-    return this._egressOnlyGatewayId
   }
 
   // gateway_id - computed: true, optional: true, required: false
   private _gatewayId?: string;
   public get gatewayId() {
-    return this.getStringAttribute('gateway_id');
+    return this._gatewayId ?? this.getStringAttribute('gateway_id');
   }
-  public set gatewayId(value: string) {
+  public set gatewayId(value: string | undefined) {
     this._gatewayId = value;
-  }
-  public resetGatewayId() {
-    this._gatewayId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get gatewayIdInput() {
-    return this._gatewayId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance_id - computed: true, optional: true, required: false
   private _instanceId?: string;
   public get instanceId() {
-    return this.getStringAttribute('instance_id');
+    return this._instanceId ?? this.getStringAttribute('instance_id');
   }
-  public set instanceId(value: string) {
+  public set instanceId(value: string | undefined) {
     this._instanceId = value;
   }
-  public resetInstanceId() {
-    this._instanceId = undefined;
+
+  // local_gateway_id - computed: true, optional: true, required: false
+  private _localGatewayId?: string;
+  public get localGatewayId() {
+    return this._localGatewayId ?? this.getStringAttribute('local_gateway_id');
   }
-  // Temporarily expose input value. Use with caution.
-  public get instanceIdInput() {
-    return this._instanceId
+  public set localGatewayId(value: string | undefined) {
+    this._localGatewayId = value;
   }
 
   // nat_gateway_id - computed: true, optional: true, required: false
   private _natGatewayId?: string;
   public get natGatewayId() {
-    return this.getStringAttribute('nat_gateway_id');
+    return this._natGatewayId ?? this.getStringAttribute('nat_gateway_id');
   }
-  public set natGatewayId(value: string) {
+  public set natGatewayId(value: string | undefined) {
     this._natGatewayId = value;
-  }
-  public resetNatGatewayId() {
-    this._natGatewayId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get natGatewayIdInput() {
-    return this._natGatewayId
   }
 
   // network_interface_id - computed: true, optional: true, required: false
   private _networkInterfaceId?: string;
   public get networkInterfaceId() {
-    return this.getStringAttribute('network_interface_id');
+    return this._networkInterfaceId ?? this.getStringAttribute('network_interface_id');
   }
-  public set networkInterfaceId(value: string) {
+  public set networkInterfaceId(value: string | undefined) {
     this._networkInterfaceId = value;
-  }
-  public resetNetworkInterfaceId() {
-    this._networkInterfaceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get networkInterfaceIdInput() {
-    return this._networkInterfaceId
   }
 
   // route_table_id - computed: false, optional: false, required: true
   private _routeTableId: string;
   public get routeTableId() {
-    return this.getStringAttribute('route_table_id');
+    return this._routeTableId;
   }
   public set routeTableId(value: string) {
     this._routeTableId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeTableIdInput() {
-    return this._routeTableId
   }
 
   // transit_gateway_id - computed: true, optional: true, required: false
   private _transitGatewayId?: string;
   public get transitGatewayId() {
-    return this.getStringAttribute('transit_gateway_id');
+    return this._transitGatewayId ?? this.getStringAttribute('transit_gateway_id');
   }
-  public set transitGatewayId(value: string) {
+  public set transitGatewayId(value: string | undefined) {
     this._transitGatewayId = value;
-  }
-  public resetTransitGatewayId() {
-    this._transitGatewayId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get transitGatewayIdInput() {
-    return this._transitGatewayId
   }
 
   // vpc_peering_connection_id - computed: true, optional: true, required: false
   private _vpcPeeringConnectionId?: string;
   public get vpcPeeringConnectionId() {
-    return this.getStringAttribute('vpc_peering_connection_id');
+    return this._vpcPeeringConnectionId ?? this.getStringAttribute('vpc_peering_connection_id');
   }
-  public set vpcPeeringConnectionId(value: string) {
+  public set vpcPeeringConnectionId(value: string | undefined) {
     this._vpcPeeringConnectionId = value;
-  }
-  public resetVpcPeeringConnectionId() {
-    this._vpcPeeringConnectionId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcPeeringConnectionIdInput() {
-    return this._vpcPeeringConnectionId
   }
 
   // =========
@@ -222,16 +171,17 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
-      destination_ipv6_cidr_block: cdktf.stringToTerraform(this._destinationIpv6CidrBlock),
-      egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
-      gateway_id: cdktf.stringToTerraform(this._gatewayId),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      nat_gateway_id: cdktf.stringToTerraform(this._natGatewayId),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      route_table_id: cdktf.stringToTerraform(this._routeTableId),
-      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
-      vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
+      destination_cidr_block: this._destinationCidrBlock,
+      destination_ipv6_cidr_block: this._destinationIpv6CidrBlock,
+      egress_only_gateway_id: this._egressOnlyGatewayId,
+      gateway_id: this._gatewayId,
+      instance_id: this._instanceId,
+      local_gateway_id: this._localGatewayId,
+      nat_gateway_id: this._natGatewayId,
+      network_interface_id: this._networkInterfaceId,
+      route_table_id: this._routeTableId,
+      transit_gateway_id: this._transitGatewayId,
+      vpc_peering_connection_id: this._vpcPeeringConnectionId,
     };
   }
 }

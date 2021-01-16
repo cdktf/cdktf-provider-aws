@@ -2,61 +2,63 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsLambdaFunctionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLambdaFunctionConfig extends TerraformMetaArguments {
   readonly functionName: string;
   readonly qualifier?: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsLambdaFunctionDeadLetterConfig extends cdktf.ComplexComputedList {
+export class DataAwsLambdaFunctionDeadLetterConfig extends ComplexComputedList {
 
-  // target_arn - computed: true, optional: false, required: false
+  // target_arn - computed: true, optional: false, required: true
   public get targetArn() {
     return this.getStringAttribute('target_arn');
   }
 }
-export class DataAwsLambdaFunctionEnvironment extends cdktf.ComplexComputedList {
+export class DataAwsLambdaFunctionEnvironment extends ComplexComputedList {
 
-  // variables - computed: true, optional: false, required: false
+  // variables - computed: true, optional: false, required: true
   public get variables() {
-    return this.interpolationForAttribute('variables') as any;
+    return 'not implemented' as any;
   }
 }
-export class DataAwsLambdaFunctionFileSystemConfig extends cdktf.ComplexComputedList {
+export class DataAwsLambdaFunctionFileSystemConfig extends ComplexComputedList {
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // local_mount_path - computed: true, optional: false, required: false
+  // local_mount_path - computed: true, optional: false, required: true
   public get localMountPath() {
     return this.getStringAttribute('local_mount_path');
   }
 }
-export class DataAwsLambdaFunctionTracingConfig extends cdktf.ComplexComputedList {
+export class DataAwsLambdaFunctionTracingConfig extends ComplexComputedList {
 
-  // mode - computed: true, optional: false, required: false
+  // mode - computed: true, optional: false, required: true
   public get mode() {
     return this.getStringAttribute('mode');
   }
 }
-export class DataAwsLambdaFunctionVpcConfig extends cdktf.ComplexComputedList {
+export class DataAwsLambdaFunctionVpcConfig extends ComplexComputedList {
 
-  // security_group_ids - computed: true, optional: false, required: false
+  // security_group_ids - computed: true, optional: false, required: true
   public get securityGroupIds() {
     return this.getListAttribute('security_group_ids');
   }
 
-  // subnet_ids - computed: true, optional: false, required: false
+  // subnet_ids - computed: true, optional: false, required: true
   public get subnetIds() {
     return this.getListAttribute('subnet_ids');
   }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -64,7 +66,7 @@ export class DataAwsLambdaFunctionVpcConfig extends cdktf.ComplexComputedList {
 
 // Resource
 
-export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
+export class DataAwsLambdaFunction extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -90,27 +92,32 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // dead_letter_config - computed: true, optional: false, required: false
+  // code_signing_config_arn - computed: true, optional: false, required: true
+  public get codeSigningConfigArn() {
+    return this.getStringAttribute('code_signing_config_arn');
+  }
+
+  // dead_letter_config - computed: true, optional: false, required: true
   public deadLetterConfig(index: string) {
     return new DataAwsLambdaFunctionDeadLetterConfig(this, 'dead_letter_config', index);
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // environment - computed: true, optional: false, required: false
+  // environment - computed: true, optional: false, required: true
   public environment(index: string) {
     return new DataAwsLambdaFunctionEnvironment(this, 'environment', index);
   }
 
-  // file_system_config - computed: true, optional: false, required: false
+  // file_system_config - computed: true, optional: false, required: true
   public fileSystemConfig(index: string) {
     return new DataAwsLambdaFunctionFileSystemConfig(this, 'file_system_config', index);
   }
@@ -118,52 +125,52 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this.getStringAttribute('function_name');
+    return this._functionName;
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get functionNameInput() {
-    return this._functionName
-  }
 
-  // handler - computed: true, optional: false, required: false
+  // handler - computed: true, optional: false, required: true
   public get handler() {
     return this.getStringAttribute('handler');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // invoke_arn - computed: true, optional: false, required: false
+  // invoke_arn - computed: true, optional: false, required: true
   public get invokeArn() {
     return this.getStringAttribute('invoke_arn');
   }
 
-  // kms_key_arn - computed: true, optional: false, required: false
+  // kms_key_arn - computed: true, optional: false, required: true
   public get kmsKeyArn() {
     return this.getStringAttribute('kms_key_arn');
   }
 
-  // last_modified - computed: true, optional: false, required: false
+  // last_modified - computed: true, optional: false, required: true
   public get lastModified() {
     return this.getStringAttribute('last_modified');
   }
 
-  // layers - computed: true, optional: false, required: false
+  // layers - computed: true, optional: false, required: true
   public get layers() {
     return this.getListAttribute('layers');
   }
 
-  // memory_size - computed: true, optional: false, required: false
+  // memory_size - computed: true, optional: false, required: true
   public get memorySize() {
     return this.getNumberAttribute('memory_size');
   }
 
-  // qualified_arn - computed: true, optional: false, required: false
+  // qualified_arn - computed: true, optional: false, required: true
   public get qualifiedArn() {
     return this.getStringAttribute('qualified_arn');
   }
@@ -171,76 +178,72 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   // qualifier - computed: false, optional: true, required: false
   private _qualifier?: string;
   public get qualifier() {
-    return this.getStringAttribute('qualifier');
+    return this._qualifier;
   }
-  public set qualifier(value: string ) {
+  public set qualifier(value: string | undefined) {
     this._qualifier = value;
   }
-  public resetQualifier() {
-    this._qualifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get qualifierInput() {
-    return this._qualifier
-  }
 
-  // reserved_concurrent_executions - computed: true, optional: false, required: false
+  // reserved_concurrent_executions - computed: true, optional: false, required: true
   public get reservedConcurrentExecutions() {
     return this.getNumberAttribute('reserved_concurrent_executions');
   }
 
-  // role - computed: true, optional: false, required: false
+  // role - computed: true, optional: false, required: true
   public get role() {
     return this.getStringAttribute('role');
   }
 
-  // runtime - computed: true, optional: false, required: false
+  // runtime - computed: true, optional: false, required: true
   public get runtime() {
     return this.getStringAttribute('runtime');
   }
 
-  // source_code_hash - computed: true, optional: false, required: false
+  // signing_job_arn - computed: true, optional: false, required: true
+  public get signingJobArn() {
+    return this.getStringAttribute('signing_job_arn');
+  }
+
+  // signing_profile_version_arn - computed: true, optional: false, required: true
+  public get signingProfileVersionArn() {
+    return this.getStringAttribute('signing_profile_version_arn');
+  }
+
+  // source_code_hash - computed: true, optional: false, required: true
   public get sourceCodeHash() {
     return this.getStringAttribute('source_code_hash');
   }
 
-  // source_code_size - computed: true, optional: false, required: false
+  // source_code_size - computed: true, optional: false, required: true
   public get sourceCodeSize() {
     return this.getNumberAttribute('source_code_size');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // timeout - computed: true, optional: false, required: false
+  // timeout - computed: true, optional: false, required: true
   public get timeout() {
     return this.getNumberAttribute('timeout');
   }
 
-  // tracing_config - computed: true, optional: false, required: false
+  // tracing_config - computed: true, optional: false, required: true
   public tracingConfig(index: string) {
     return new DataAwsLambdaFunctionTracingConfig(this, 'tracing_config', index);
   }
 
-  // version - computed: true, optional: false, required: false
+  // version - computed: true, optional: false, required: true
   public get version() {
     return this.getStringAttribute('version');
   }
 
-  // vpc_config - computed: true, optional: false, required: false
+  // vpc_config - computed: true, optional: false, required: true
   public vpcConfig(index: string) {
     return new DataAwsLambdaFunctionVpcConfig(this, 'vpc_config', index);
   }
@@ -251,9 +254,9 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: cdktf.stringToTerraform(this._functionName),
-      qualifier: cdktf.stringToTerraform(this._qualifier),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      function_name: this._functionName,
+      qualifier: this._qualifier,
+      tags: this._tags,
     };
   }
 }

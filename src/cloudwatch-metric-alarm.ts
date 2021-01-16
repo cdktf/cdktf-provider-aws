@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchMetricAlarmConfig extends TerraformMetaArguments {
   readonly actionsEnabled?: boolean;
   readonly alarmActions?: string[];
   readonly alarmDescription?: string;
@@ -39,19 +40,6 @@ export interface CloudwatchMetricAlarmMetricQueryMetric {
   readonly stat: string;
   readonly unit?: string;
 }
-
-function cloudwatchMetricAlarmMetricQueryMetricToTerraform(struct?: CloudwatchMetricAlarmMetricQueryMetric): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.dimensions),
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    period: cdktf.numberToTerraform(struct!.period),
-    stat: cdktf.stringToTerraform(struct!.stat),
-    unit: cdktf.stringToTerraform(struct!.unit),
-  }
-}
-
 export interface CloudwatchMetricAlarmMetricQuery {
   readonly expression?: string;
   readonly id: string;
@@ -61,21 +49,9 @@ export interface CloudwatchMetricAlarmMetricQuery {
   readonly metric?: CloudwatchMetricAlarmMetricQueryMetric[];
 }
 
-function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchMetricAlarmMetricQuery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    expression: cdktf.stringToTerraform(struct!.expression),
-    id: cdktf.stringToTerraform(struct!.id),
-    label: cdktf.stringToTerraform(struct!.label),
-    return_data: cdktf.booleanToTerraform(struct!.returnData),
-    metric: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryMetricToTerraform)(struct!.metric),
-  }
-}
-
-
 // Resource
 
-export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
+export class CloudwatchMetricAlarm extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -123,65 +99,40 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // actions_enabled - computed: false, optional: true, required: false
   private _actionsEnabled?: boolean;
   public get actionsEnabled() {
-    return this.getBooleanAttribute('actions_enabled');
+    return this._actionsEnabled;
   }
-  public set actionsEnabled(value: boolean ) {
+  public set actionsEnabled(value: boolean | undefined) {
     this._actionsEnabled = value;
-  }
-  public resetActionsEnabled() {
-    this._actionsEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get actionsEnabledInput() {
-    return this._actionsEnabled
   }
 
   // alarm_actions - computed: false, optional: true, required: false
   private _alarmActions?: string[];
   public get alarmActions() {
-    return this.getListAttribute('alarm_actions');
+    return this._alarmActions;
   }
-  public set alarmActions(value: string[] ) {
+  public set alarmActions(value: string[] | undefined) {
     this._alarmActions = value;
-  }
-  public resetAlarmActions() {
-    this._alarmActions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get alarmActionsInput() {
-    return this._alarmActions
   }
 
   // alarm_description - computed: false, optional: true, required: false
   private _alarmDescription?: string;
   public get alarmDescription() {
-    return this.getStringAttribute('alarm_description');
+    return this._alarmDescription;
   }
-  public set alarmDescription(value: string ) {
+  public set alarmDescription(value: string | undefined) {
     this._alarmDescription = value;
-  }
-  public resetAlarmDescription() {
-    this._alarmDescription = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get alarmDescriptionInput() {
-    return this._alarmDescription
   }
 
   // alarm_name - computed: false, optional: false, required: true
   private _alarmName: string;
   public get alarmName() {
-    return this.getStringAttribute('alarm_name');
+    return this._alarmName;
   }
   public set alarmName(value: string) {
     this._alarmName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get alarmNameInput() {
-    return this._alarmName
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -189,288 +140,172 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
   // comparison_operator - computed: false, optional: false, required: true
   private _comparisonOperator: string;
   public get comparisonOperator() {
-    return this.getStringAttribute('comparison_operator');
+    return this._comparisonOperator;
   }
   public set comparisonOperator(value: string) {
     this._comparisonOperator = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get comparisonOperatorInput() {
-    return this._comparisonOperator
   }
 
   // datapoints_to_alarm - computed: false, optional: true, required: false
   private _datapointsToAlarm?: number;
   public get datapointsToAlarm() {
-    return this.getNumberAttribute('datapoints_to_alarm');
+    return this._datapointsToAlarm;
   }
-  public set datapointsToAlarm(value: number ) {
+  public set datapointsToAlarm(value: number | undefined) {
     this._datapointsToAlarm = value;
-  }
-  public resetDatapointsToAlarm() {
-    this._datapointsToAlarm = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get datapointsToAlarmInput() {
-    return this._datapointsToAlarm
   }
 
   // dimensions - computed: false, optional: true, required: false
   private _dimensions?: { [key: string]: string };
   public get dimensions() {
-    return this.interpolationForAttribute('dimensions') as any;
+    return this._dimensions;
   }
-  public set dimensions(value: { [key: string]: string } ) {
+  public set dimensions(value: { [key: string]: string } | undefined) {
     this._dimensions = value;
-  }
-  public resetDimensions() {
-    this._dimensions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dimensionsInput() {
-    return this._dimensions
   }
 
   // evaluate_low_sample_count_percentiles - computed: true, optional: true, required: false
   private _evaluateLowSampleCountPercentiles?: string;
   public get evaluateLowSampleCountPercentiles() {
-    return this.getStringAttribute('evaluate_low_sample_count_percentiles');
+    return this._evaluateLowSampleCountPercentiles ?? this.getStringAttribute('evaluate_low_sample_count_percentiles');
   }
-  public set evaluateLowSampleCountPercentiles(value: string) {
+  public set evaluateLowSampleCountPercentiles(value: string | undefined) {
     this._evaluateLowSampleCountPercentiles = value;
-  }
-  public resetEvaluateLowSampleCountPercentiles() {
-    this._evaluateLowSampleCountPercentiles = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get evaluateLowSampleCountPercentilesInput() {
-    return this._evaluateLowSampleCountPercentiles
   }
 
   // evaluation_periods - computed: false, optional: false, required: true
   private _evaluationPeriods: number;
   public get evaluationPeriods() {
-    return this.getNumberAttribute('evaluation_periods');
+    return this._evaluationPeriods;
   }
   public set evaluationPeriods(value: number) {
     this._evaluationPeriods = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get evaluationPeriodsInput() {
-    return this._evaluationPeriods
   }
 
   // extended_statistic - computed: false, optional: true, required: false
   private _extendedStatistic?: string;
   public get extendedStatistic() {
-    return this.getStringAttribute('extended_statistic');
+    return this._extendedStatistic;
   }
-  public set extendedStatistic(value: string ) {
+  public set extendedStatistic(value: string | undefined) {
     this._extendedStatistic = value;
-  }
-  public resetExtendedStatistic() {
-    this._extendedStatistic = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get extendedStatisticInput() {
-    return this._extendedStatistic
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // insufficient_data_actions - computed: false, optional: true, required: false
   private _insufficientDataActions?: string[];
   public get insufficientDataActions() {
-    return this.getListAttribute('insufficient_data_actions');
+    return this._insufficientDataActions;
   }
-  public set insufficientDataActions(value: string[] ) {
+  public set insufficientDataActions(value: string[] | undefined) {
     this._insufficientDataActions = value;
-  }
-  public resetInsufficientDataActions() {
-    this._insufficientDataActions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get insufficientDataActionsInput() {
-    return this._insufficientDataActions
   }
 
   // metric_name - computed: false, optional: true, required: false
   private _metricName?: string;
   public get metricName() {
-    return this.getStringAttribute('metric_name');
+    return this._metricName;
   }
-  public set metricName(value: string ) {
+  public set metricName(value: string | undefined) {
     this._metricName = value;
-  }
-  public resetMetricName() {
-    this._metricName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricNameInput() {
-    return this._metricName
   }
 
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string;
   public get namespace() {
-    return this.getStringAttribute('namespace');
+    return this._namespace;
   }
-  public set namespace(value: string ) {
+  public set namespace(value: string | undefined) {
     this._namespace = value;
-  }
-  public resetNamespace() {
-    this._namespace = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namespaceInput() {
-    return this._namespace
   }
 
   // ok_actions - computed: false, optional: true, required: false
   private _okActions?: string[];
   public get okActions() {
-    return this.getListAttribute('ok_actions');
+    return this._okActions;
   }
-  public set okActions(value: string[] ) {
+  public set okActions(value: string[] | undefined) {
     this._okActions = value;
-  }
-  public resetOkActions() {
-    this._okActions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get okActionsInput() {
-    return this._okActions
   }
 
   // period - computed: false, optional: true, required: false
   private _period?: number;
   public get period() {
-    return this.getNumberAttribute('period');
+    return this._period;
   }
-  public set period(value: number ) {
+  public set period(value: number | undefined) {
     this._period = value;
-  }
-  public resetPeriod() {
-    this._period = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get periodInput() {
-    return this._period
   }
 
   // statistic - computed: false, optional: true, required: false
   private _statistic?: string;
   public get statistic() {
-    return this.getStringAttribute('statistic');
+    return this._statistic;
   }
-  public set statistic(value: string ) {
+  public set statistic(value: string | undefined) {
     this._statistic = value;
-  }
-  public resetStatistic() {
-    this._statistic = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statisticInput() {
-    return this._statistic
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // threshold - computed: false, optional: true, required: false
   private _threshold?: number;
   public get threshold() {
-    return this.getNumberAttribute('threshold');
+    return this._threshold;
   }
-  public set threshold(value: number ) {
+  public set threshold(value: number | undefined) {
     this._threshold = value;
-  }
-  public resetThreshold() {
-    this._threshold = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thresholdInput() {
-    return this._threshold
   }
 
   // threshold_metric_id - computed: false, optional: true, required: false
   private _thresholdMetricId?: string;
   public get thresholdMetricId() {
-    return this.getStringAttribute('threshold_metric_id');
+    return this._thresholdMetricId;
   }
-  public set thresholdMetricId(value: string ) {
+  public set thresholdMetricId(value: string | undefined) {
     this._thresholdMetricId = value;
-  }
-  public resetThresholdMetricId() {
-    this._thresholdMetricId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thresholdMetricIdInput() {
-    return this._thresholdMetricId
   }
 
   // treat_missing_data - computed: false, optional: true, required: false
   private _treatMissingData?: string;
   public get treatMissingData() {
-    return this.getStringAttribute('treat_missing_data');
+    return this._treatMissingData;
   }
-  public set treatMissingData(value: string ) {
+  public set treatMissingData(value: string | undefined) {
     this._treatMissingData = value;
-  }
-  public resetTreatMissingData() {
-    this._treatMissingData = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get treatMissingDataInput() {
-    return this._treatMissingData
   }
 
   // unit - computed: false, optional: true, required: false
   private _unit?: string;
   public get unit() {
-    return this.getStringAttribute('unit');
+    return this._unit;
   }
-  public set unit(value: string ) {
+  public set unit(value: string | undefined) {
     this._unit = value;
-  }
-  public resetUnit() {
-    this._unit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get unitInput() {
-    return this._unit
   }
 
   // metric_query - computed: false, optional: true, required: false
   private _metricQuery?: CloudwatchMetricAlarmMetricQuery[];
   public get metricQuery() {
-    return this.interpolationForAttribute('metric_query') as any;
+    return this._metricQuery;
   }
-  public set metricQuery(value: CloudwatchMetricAlarmMetricQuery[] ) {
+  public set metricQuery(value: CloudwatchMetricAlarmMetricQuery[] | undefined) {
     this._metricQuery = value;
-  }
-  public resetMetricQuery() {
-    this._metricQuery = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricQueryInput() {
-    return this._metricQuery
   }
 
   // =========
@@ -479,28 +314,28 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      actions_enabled: cdktf.booleanToTerraform(this._actionsEnabled),
-      alarm_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._alarmActions),
-      alarm_description: cdktf.stringToTerraform(this._alarmDescription),
-      alarm_name: cdktf.stringToTerraform(this._alarmName),
-      comparison_operator: cdktf.stringToTerraform(this._comparisonOperator),
-      datapoints_to_alarm: cdktf.numberToTerraform(this._datapointsToAlarm),
-      dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(this._dimensions),
-      evaluate_low_sample_count_percentiles: cdktf.stringToTerraform(this._evaluateLowSampleCountPercentiles),
-      evaluation_periods: cdktf.numberToTerraform(this._evaluationPeriods),
-      extended_statistic: cdktf.stringToTerraform(this._extendedStatistic),
-      insufficient_data_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._insufficientDataActions),
-      metric_name: cdktf.stringToTerraform(this._metricName),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      ok_actions: cdktf.listMapper(cdktf.stringToTerraform)(this._okActions),
-      period: cdktf.numberToTerraform(this._period),
-      statistic: cdktf.stringToTerraform(this._statistic),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      threshold: cdktf.numberToTerraform(this._threshold),
-      threshold_metric_id: cdktf.stringToTerraform(this._thresholdMetricId),
-      treat_missing_data: cdktf.stringToTerraform(this._treatMissingData),
-      unit: cdktf.stringToTerraform(this._unit),
-      metric_query: cdktf.listMapper(cloudwatchMetricAlarmMetricQueryToTerraform)(this._metricQuery),
+      actions_enabled: this._actionsEnabled,
+      alarm_actions: this._alarmActions,
+      alarm_description: this._alarmDescription,
+      alarm_name: this._alarmName,
+      comparison_operator: this._comparisonOperator,
+      datapoints_to_alarm: this._datapointsToAlarm,
+      dimensions: this._dimensions,
+      evaluate_low_sample_count_percentiles: this._evaluateLowSampleCountPercentiles,
+      evaluation_periods: this._evaluationPeriods,
+      extended_statistic: this._extendedStatistic,
+      insufficient_data_actions: this._insufficientDataActions,
+      metric_name: this._metricName,
+      namespace: this._namespace,
+      ok_actions: this._okActions,
+      period: this._period,
+      statistic: this._statistic,
+      tags: this._tags,
+      threshold: this._threshold,
+      threshold_metric_id: this._thresholdMetricId,
+      treat_missing_data: this._treatMissingData,
+      unit: this._unit,
+      metric_query: this._metricQuery,
     };
   }
 }

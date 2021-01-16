@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AmiLaunchPermissionConfig extends cdktf.TerraformMetaArguments {
+export interface AmiLaunchPermissionConfig extends TerraformMetaArguments {
   readonly accountId: string;
   readonly imageId: string;
 }
 
 // Resource
 
-export class AmiLaunchPermission extends cdktf.TerraformResource {
+export class AmiLaunchPermission extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
   // account_id - computed: false, optional: false, required: true
   private _accountId: string;
   public get accountId() {
-    return this.getStringAttribute('account_id');
+    return this._accountId;
   }
   public set accountId(value: string) {
     this._accountId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get accountIdInput() {
-    return this._accountId
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // image_id - computed: false, optional: false, required: true
   private _imageId: string;
   public get imageId() {
-    return this.getStringAttribute('image_id');
+    return this._imageId;
   }
   public set imageId(value: string) {
     this._imageId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get imageIdInput() {
-    return this._imageId
   }
 
   // =========
@@ -75,8 +72,8 @@ export class AmiLaunchPermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      image_id: cdktf.stringToTerraform(this._imageId),
+      account_id: this._accountId,
+      image_id: this._imageId,
     };
   }
 }

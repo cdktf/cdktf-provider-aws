@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsOutpostsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOutpostsOutpostsConfig extends TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly availabilityZoneId?: string;
   readonly siteId?: string;
@@ -14,7 +15,7 @@ export interface DataAwsOutpostsOutpostsConfig extends cdktf.TerraformMetaArgume
 
 // Resource
 
-export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
+export class DataAwsOutpostsOutposts extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arns - computed: true, optional: false, required: false
+  // arns - computed: true, optional: false, required: true
   public get arns() {
     return this.getListAttribute('arns');
   }
@@ -48,41 +49,31 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string) {
+  public set availabilityZone(value: string | undefined) {
     this._availabilityZone = value;
-  }
-  public resetAvailabilityZone() {
-    this._availabilityZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
   }
 
   // availability_zone_id - computed: true, optional: true, required: false
   private _availabilityZoneId?: string;
   public get availabilityZoneId() {
-    return this.getStringAttribute('availability_zone_id');
+    return this._availabilityZoneId ?? this.getStringAttribute('availability_zone_id');
   }
-  public set availabilityZoneId(value: string) {
+  public set availabilityZoneId(value: string | undefined) {
     this._availabilityZoneId = value;
-  }
-  public resetAvailabilityZoneId() {
-    this._availabilityZoneId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneIdInput() {
-    return this._availabilityZoneId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ids - computed: true, optional: false, required: false
+  // ids - computed: true, optional: false, required: true
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -90,17 +81,10 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
   // site_id - computed: true, optional: true, required: false
   private _siteId?: string;
   public get siteId() {
-    return this.getStringAttribute('site_id');
+    return this._siteId ?? this.getStringAttribute('site_id');
   }
-  public set siteId(value: string) {
+  public set siteId(value: string | undefined) {
     this._siteId = value;
-  }
-  public resetSiteId() {
-    this._siteId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get siteIdInput() {
-    return this._siteId
   }
 
   // =========
@@ -109,9 +93,9 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
-      site_id: cdktf.stringToTerraform(this._siteId),
+      availability_zone: this._availabilityZone,
+      availability_zone_id: this._availabilityZoneId,
+      site_id: this._siteId,
     };
   }
 }

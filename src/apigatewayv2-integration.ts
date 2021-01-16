@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2IntegrationConfig extends TerraformMetaArguments {
   readonly apiId: string;
   readonly connectionId?: string;
   readonly connectionType?: string;
@@ -14,18 +15,31 @@ export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArgume
   readonly credentialsArn?: string;
   readonly description?: string;
   readonly integrationMethod?: string;
+  readonly integrationSubtype?: string;
   readonly integrationType: string;
   readonly integrationUri?: string;
   readonly passthroughBehavior?: string;
   readonly payloadFormatVersion?: string;
+  readonly requestParameters?: { [key: string]: string };
   readonly requestTemplates?: { [key: string]: string };
   readonly templateSelectionExpression?: string;
   readonly timeoutMilliseconds?: number;
+  /** response_parameters block */
+  readonly responseParameters?: Apigatewayv2IntegrationResponseParameters[];
+  /** tls_config block */
+  readonly tlsConfig?: Apigatewayv2IntegrationTlsConfig[];
+}
+export interface Apigatewayv2IntegrationResponseParameters {
+  readonly mappings: { [key: string]: string };
+  readonly statusCode: string;
+}
+export interface Apigatewayv2IntegrationTlsConfig {
+  readonly serverNameToVerify?: string;
 }
 
 // Resource
 
-export class Apigatewayv2Integration extends cdktf.TerraformResource {
+export class Apigatewayv2Integration extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,13 +63,17 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
     this._credentialsArn = config.credentialsArn;
     this._description = config.description;
     this._integrationMethod = config.integrationMethod;
+    this._integrationSubtype = config.integrationSubtype;
     this._integrationType = config.integrationType;
     this._integrationUri = config.integrationUri;
     this._passthroughBehavior = config.passthroughBehavior;
     this._payloadFormatVersion = config.payloadFormatVersion;
+    this._requestParameters = config.requestParameters;
     this._requestTemplates = config.requestTemplates;
     this._templateSelectionExpression = config.templateSelectionExpression;
     this._timeoutMilliseconds = config.timeoutMilliseconds;
+    this._responseParameters = config.responseParameters;
+    this._tlsConfig = config.tlsConfig;
   }
 
   // ==========
@@ -65,229 +83,177 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this.getStringAttribute('api_id');
+    return this._apiId;
   }
   public set apiId(value: string) {
     this._apiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiIdInput() {
-    return this._apiId
   }
 
   // connection_id - computed: false, optional: true, required: false
   private _connectionId?: string;
   public get connectionId() {
-    return this.getStringAttribute('connection_id');
+    return this._connectionId;
   }
-  public set connectionId(value: string ) {
+  public set connectionId(value: string | undefined) {
     this._connectionId = value;
-  }
-  public resetConnectionId() {
-    this._connectionId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get connectionIdInput() {
-    return this._connectionId
   }
 
   // connection_type - computed: false, optional: true, required: false
   private _connectionType?: string;
   public get connectionType() {
-    return this.getStringAttribute('connection_type');
+    return this._connectionType;
   }
-  public set connectionType(value: string ) {
+  public set connectionType(value: string | undefined) {
     this._connectionType = value;
-  }
-  public resetConnectionType() {
-    this._connectionType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get connectionTypeInput() {
-    return this._connectionType
   }
 
   // content_handling_strategy - computed: false, optional: true, required: false
   private _contentHandlingStrategy?: string;
   public get contentHandlingStrategy() {
-    return this.getStringAttribute('content_handling_strategy');
+    return this._contentHandlingStrategy;
   }
-  public set contentHandlingStrategy(value: string ) {
+  public set contentHandlingStrategy(value: string | undefined) {
     this._contentHandlingStrategy = value;
-  }
-  public resetContentHandlingStrategy() {
-    this._contentHandlingStrategy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contentHandlingStrategyInput() {
-    return this._contentHandlingStrategy
   }
 
   // credentials_arn - computed: false, optional: true, required: false
   private _credentialsArn?: string;
   public get credentialsArn() {
-    return this.getStringAttribute('credentials_arn');
+    return this._credentialsArn;
   }
-  public set credentialsArn(value: string ) {
+  public set credentialsArn(value: string | undefined) {
     this._credentialsArn = value;
-  }
-  public resetCredentialsArn() {
-    this._credentialsArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get credentialsArnInput() {
-    return this._credentialsArn
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // integration_method - computed: false, optional: true, required: false
   private _integrationMethod?: string;
   public get integrationMethod() {
-    return this.getStringAttribute('integration_method');
+    return this._integrationMethod;
   }
-  public set integrationMethod(value: string ) {
+  public set integrationMethod(value: string | undefined) {
     this._integrationMethod = value;
   }
-  public resetIntegrationMethod() {
-    this._integrationMethod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get integrationMethodInput() {
-    return this._integrationMethod
-  }
 
-  // integration_response_selection_expression - computed: true, optional: false, required: false
+  // integration_response_selection_expression - computed: true, optional: false, required: true
   public get integrationResponseSelectionExpression() {
     return this.getStringAttribute('integration_response_selection_expression');
+  }
+
+  // integration_subtype - computed: false, optional: true, required: false
+  private _integrationSubtype?: string;
+  public get integrationSubtype() {
+    return this._integrationSubtype;
+  }
+  public set integrationSubtype(value: string | undefined) {
+    this._integrationSubtype = value;
   }
 
   // integration_type - computed: false, optional: false, required: true
   private _integrationType: string;
   public get integrationType() {
-    return this.getStringAttribute('integration_type');
+    return this._integrationType;
   }
   public set integrationType(value: string) {
     this._integrationType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get integrationTypeInput() {
-    return this._integrationType
   }
 
   // integration_uri - computed: false, optional: true, required: false
   private _integrationUri?: string;
   public get integrationUri() {
-    return this.getStringAttribute('integration_uri');
+    return this._integrationUri;
   }
-  public set integrationUri(value: string ) {
+  public set integrationUri(value: string | undefined) {
     this._integrationUri = value;
-  }
-  public resetIntegrationUri() {
-    this._integrationUri = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get integrationUriInput() {
-    return this._integrationUri
   }
 
   // passthrough_behavior - computed: false, optional: true, required: false
   private _passthroughBehavior?: string;
   public get passthroughBehavior() {
-    return this.getStringAttribute('passthrough_behavior');
+    return this._passthroughBehavior;
   }
-  public set passthroughBehavior(value: string ) {
+  public set passthroughBehavior(value: string | undefined) {
     this._passthroughBehavior = value;
-  }
-  public resetPassthroughBehavior() {
-    this._passthroughBehavior = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get passthroughBehaviorInput() {
-    return this._passthroughBehavior
   }
 
   // payload_format_version - computed: false, optional: true, required: false
   private _payloadFormatVersion?: string;
   public get payloadFormatVersion() {
-    return this.getStringAttribute('payload_format_version');
+    return this._payloadFormatVersion;
   }
-  public set payloadFormatVersion(value: string ) {
+  public set payloadFormatVersion(value: string | undefined) {
     this._payloadFormatVersion = value;
   }
-  public resetPayloadFormatVersion() {
-    this._payloadFormatVersion = undefined;
+
+  // request_parameters - computed: false, optional: true, required: false
+  private _requestParameters?: { [key: string]: string };
+  public get requestParameters() {
+    return this._requestParameters;
   }
-  // Temporarily expose input value. Use with caution.
-  public get payloadFormatVersionInput() {
-    return this._payloadFormatVersion
+  public set requestParameters(value: { [key: string]: string } | undefined) {
+    this._requestParameters = value;
   }
 
   // request_templates - computed: false, optional: true, required: false
   private _requestTemplates?: { [key: string]: string };
   public get requestTemplates() {
-    return this.interpolationForAttribute('request_templates') as any;
+    return this._requestTemplates;
   }
-  public set requestTemplates(value: { [key: string]: string } ) {
+  public set requestTemplates(value: { [key: string]: string } | undefined) {
     this._requestTemplates = value;
-  }
-  public resetRequestTemplates() {
-    this._requestTemplates = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestTemplatesInput() {
-    return this._requestTemplates
   }
 
   // template_selection_expression - computed: false, optional: true, required: false
   private _templateSelectionExpression?: string;
   public get templateSelectionExpression() {
-    return this.getStringAttribute('template_selection_expression');
+    return this._templateSelectionExpression;
   }
-  public set templateSelectionExpression(value: string ) {
+  public set templateSelectionExpression(value: string | undefined) {
     this._templateSelectionExpression = value;
   }
-  public resetTemplateSelectionExpression() {
-    this._templateSelectionExpression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get templateSelectionExpressionInput() {
-    return this._templateSelectionExpression
-  }
 
-  // timeout_milliseconds - computed: false, optional: true, required: false
+  // timeout_milliseconds - computed: true, optional: true, required: false
   private _timeoutMilliseconds?: number;
   public get timeoutMilliseconds() {
-    return this.getNumberAttribute('timeout_milliseconds');
+    return this._timeoutMilliseconds ?? this.getNumberAttribute('timeout_milliseconds');
   }
-  public set timeoutMilliseconds(value: number ) {
+  public set timeoutMilliseconds(value: number | undefined) {
     this._timeoutMilliseconds = value;
   }
-  public resetTimeoutMilliseconds() {
-    this._timeoutMilliseconds = undefined;
+
+  // response_parameters - computed: false, optional: true, required: false
+  private _responseParameters?: Apigatewayv2IntegrationResponseParameters[];
+  public get responseParameters() {
+    return this._responseParameters;
   }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutMillisecondsInput() {
-    return this._timeoutMilliseconds
+  public set responseParameters(value: Apigatewayv2IntegrationResponseParameters[] | undefined) {
+    this._responseParameters = value;
+  }
+
+  // tls_config - computed: false, optional: true, required: false
+  private _tlsConfig?: Apigatewayv2IntegrationTlsConfig[];
+  public get tlsConfig() {
+    return this._tlsConfig;
+  }
+  public set tlsConfig(value: Apigatewayv2IntegrationTlsConfig[] | undefined) {
+    this._tlsConfig = value;
   }
 
   // =========
@@ -296,20 +262,24 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      connection_id: cdktf.stringToTerraform(this._connectionId),
-      connection_type: cdktf.stringToTerraform(this._connectionType),
-      content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
-      credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
-      description: cdktf.stringToTerraform(this._description),
-      integration_method: cdktf.stringToTerraform(this._integrationMethod),
-      integration_type: cdktf.stringToTerraform(this._integrationType),
-      integration_uri: cdktf.stringToTerraform(this._integrationUri),
-      passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
-      payload_format_version: cdktf.stringToTerraform(this._payloadFormatVersion),
-      request_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestTemplates),
-      template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
-      timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
+      api_id: this._apiId,
+      connection_id: this._connectionId,
+      connection_type: this._connectionType,
+      content_handling_strategy: this._contentHandlingStrategy,
+      credentials_arn: this._credentialsArn,
+      description: this._description,
+      integration_method: this._integrationMethod,
+      integration_subtype: this._integrationSubtype,
+      integration_type: this._integrationType,
+      integration_uri: this._integrationUri,
+      passthrough_behavior: this._passthroughBehavior,
+      payload_format_version: this._payloadFormatVersion,
+      request_parameters: this._requestParameters,
+      request_templates: this._requestTemplates,
+      template_selection_expression: this._templateSelectionExpression,
+      timeout_milliseconds: this._timeoutMilliseconds,
+      response_parameters: this._responseParameters,
+      tls_config: this._tlsConfig,
     };
   }
 }

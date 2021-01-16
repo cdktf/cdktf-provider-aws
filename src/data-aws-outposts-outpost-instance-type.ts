@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsOutpostInstanceTypeConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOutpostsOutpostInstanceTypeConfig extends TerraformMetaArguments {
   readonly arn: string;
   readonly instanceType?: string;
   readonly preferredInstanceTypes?: string[];
@@ -14,7 +15,7 @@ export interface DataAwsOutpostsOutpostInstanceTypeConfig extends cdktf.Terrafor
 
 // Resource
 
-export class DataAwsOutpostsOutpostInstanceType extends cdktf.TerraformDataSource {
+export class DataAwsOutpostsOutpostInstanceType extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -43,51 +44,37 @@ export class DataAwsOutpostsOutpostInstanceType extends cdktf.TerraformDataSourc
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn;
   }
   public set arn(value: string) {
     this._arn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get arnInput() {
-    return this._arn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance_type - computed: true, optional: true, required: false
   private _instanceType?: string;
   public get instanceType() {
-    return this.getStringAttribute('instance_type');
+    return this._instanceType ?? this.getStringAttribute('instance_type');
   }
-  public set instanceType(value: string) {
+  public set instanceType(value: string | undefined) {
     this._instanceType = value;
-  }
-  public resetInstanceType() {
-    this._instanceType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceTypeInput() {
-    return this._instanceType
   }
 
   // preferred_instance_types - computed: false, optional: true, required: false
   private _preferredInstanceTypes?: string[];
   public get preferredInstanceTypes() {
-    return this.getListAttribute('preferred_instance_types');
+    return this._preferredInstanceTypes;
   }
-  public set preferredInstanceTypes(value: string[] ) {
+  public set preferredInstanceTypes(value: string[] | undefined) {
     this._preferredInstanceTypes = value;
-  }
-  public resetPreferredInstanceTypes() {
-    this._preferredInstanceTypes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preferredInstanceTypesInput() {
-    return this._preferredInstanceTypes
   }
 
   // =========
@@ -96,9 +83,9 @@ export class DataAwsOutpostsOutpostInstanceType extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      preferred_instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceTypes),
+      arn: this._arn,
+      instance_type: this._instanceType,
+      preferred_instance_types: this._preferredInstanceTypes,
     };
   }
 }

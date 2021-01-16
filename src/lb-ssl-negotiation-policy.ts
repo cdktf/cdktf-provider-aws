@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LbSslNegotiationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface LbSslNegotiationPolicyConfig extends TerraformMetaArguments {
   readonly lbPort: number;
   readonly loadBalancer: string;
   readonly name: string;
@@ -18,18 +19,9 @@ export interface LbSslNegotiationPolicyAttribute {
   readonly value: string;
 }
 
-function lbSslNegotiationPolicyAttributeToTerraform(struct?: LbSslNegotiationPolicyAttribute): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
-
 // Resource
 
-export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
+export class LbSslNegotiationPolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,63 +49,48 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // lb_port - computed: false, optional: false, required: true
   private _lbPort: number;
   public get lbPort() {
-    return this.getNumberAttribute('lb_port');
+    return this._lbPort;
   }
   public set lbPort(value: number) {
     this._lbPort = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get lbPortInput() {
-    return this._lbPort
   }
 
   // load_balancer - computed: false, optional: false, required: true
   private _loadBalancer: string;
   public get loadBalancer() {
-    return this.getStringAttribute('load_balancer');
+    return this._loadBalancer;
   }
   public set loadBalancer(value: string) {
     this._loadBalancer = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loadBalancerInput() {
-    return this._loadBalancer
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // attribute - computed: false, optional: true, required: false
   private _attribute?: LbSslNegotiationPolicyAttribute[];
   public get attribute() {
-    return this.interpolationForAttribute('attribute') as any;
+    return this._attribute;
   }
-  public set attribute(value: LbSslNegotiationPolicyAttribute[] ) {
+  public set attribute(value: LbSslNegotiationPolicyAttribute[] | undefined) {
     this._attribute = value;
-  }
-  public resetAttribute() {
-    this._attribute = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attributeInput() {
-    return this._attribute
   }
 
   // =========
@@ -122,10 +99,10 @@ export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      lb_port: cdktf.numberToTerraform(this._lbPort),
-      load_balancer: cdktf.stringToTerraform(this._loadBalancer),
-      name: cdktf.stringToTerraform(this._name),
-      attribute: cdktf.listMapper(lbSslNegotiationPolicyAttributeToTerraform)(this._attribute),
+      lb_port: this._lbPort,
+      load_balancer: this._loadBalancer,
+      name: this._name,
+      attribute: this._attribute,
     };
   }
 }

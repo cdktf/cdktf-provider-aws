@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DatasyncLocationSmbConfig extends cdktf.TerraformMetaArguments {
+export interface DatasyncLocationSmbConfig extends TerraformMetaArguments {
   readonly agentArns: string[];
   readonly domain?: string;
   readonly password: string;
@@ -21,17 +22,9 @@ export interface DatasyncLocationSmbMountOptions {
   readonly version?: string;
 }
 
-function datasyncLocationSmbMountOptionsToTerraform(struct?: DatasyncLocationSmbMountOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    version: cdktf.stringToTerraform(struct!.version),
-  }
-}
-
-
 // Resource
 
-export class DatasyncLocationSmb extends cdktf.TerraformResource {
+export class DatasyncLocationSmb extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -65,17 +58,13 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   // agent_arns - computed: false, optional: false, required: true
   private _agentArns: string[];
   public get agentArns() {
-    return this.getListAttribute('agent_arns');
+    return this._agentArns;
   }
   public set agentArns(value: string[]) {
     this._agentArns = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get agentArnsInput() {
-    return this._agentArns
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -83,80 +72,58 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   // domain - computed: true, optional: true, required: false
   private _domain?: string;
   public get domain() {
-    return this.getStringAttribute('domain');
+    return this._domain ?? this.getStringAttribute('domain');
   }
-  public set domain(value: string) {
+  public set domain(value: string | undefined) {
     this._domain = value;
-  }
-  public resetDomain() {
-    this._domain = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get domainInput() {
-    return this._domain
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // password - computed: false, optional: false, required: true
   private _password: string;
   public get password() {
-    return this.getStringAttribute('password');
+    return this._password;
   }
   public set password(value: string) {
     this._password = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get passwordInput() {
-    return this._password
   }
 
   // server_hostname - computed: false, optional: false, required: true
   private _serverHostname: string;
   public get serverHostname() {
-    return this.getStringAttribute('server_hostname');
+    return this._serverHostname;
   }
   public set serverHostname(value: string) {
     this._serverHostname = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverHostnameInput() {
-    return this._serverHostname
   }
 
   // subdirectory - computed: false, optional: false, required: true
   private _subdirectory: string;
   public get subdirectory() {
-    return this.getStringAttribute('subdirectory');
+    return this._subdirectory;
   }
   public set subdirectory(value: string) {
     this._subdirectory = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subdirectoryInput() {
-    return this._subdirectory
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // uri - computed: true, optional: false, required: false
+  // uri - computed: true, optional: false, required: true
   public get uri() {
     return this.getStringAttribute('uri');
   }
@@ -164,30 +131,19 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this.getStringAttribute('user');
+    return this._user;
   }
   public set user(value: string) {
     this._user = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userInput() {
-    return this._user
   }
 
   // mount_options - computed: false, optional: true, required: false
   private _mountOptions?: DatasyncLocationSmbMountOptions[];
   public get mountOptions() {
-    return this.interpolationForAttribute('mount_options') as any;
+    return this._mountOptions;
   }
-  public set mountOptions(value: DatasyncLocationSmbMountOptions[] ) {
+  public set mountOptions(value: DatasyncLocationSmbMountOptions[] | undefined) {
     this._mountOptions = value;
-  }
-  public resetMountOptions() {
-    this._mountOptions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get mountOptionsInput() {
-    return this._mountOptions
   }
 
   // =========
@@ -196,14 +152,14 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._agentArns),
-      domain: cdktf.stringToTerraform(this._domain),
-      password: cdktf.stringToTerraform(this._password),
-      server_hostname: cdktf.stringToTerraform(this._serverHostname),
-      subdirectory: cdktf.stringToTerraform(this._subdirectory),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      user: cdktf.stringToTerraform(this._user),
-      mount_options: cdktf.listMapper(datasyncLocationSmbMountOptionsToTerraform)(this._mountOptions),
+      agent_arns: this._agentArns,
+      domain: this._domain,
+      password: this._password,
+      server_hostname: this._serverHostname,
+      subdirectory: this._subdirectory,
+      tags: this._tags,
+      user: this._user,
+      mount_options: this._mountOptions,
     };
   }
 }

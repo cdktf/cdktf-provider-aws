@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface OpsworksInstanceConfig extends TerraformMetaArguments {
   readonly agentVersion?: string;
   readonly amiId?: string;
   readonly architecture?: string;
@@ -65,68 +66,25 @@ export interface OpsworksInstanceEbsBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
-
-function opsworksInstanceEbsBlockDeviceToTerraform(struct?: OpsworksInstanceEbsBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
-    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
-    volume_type: cdktf.stringToTerraform(struct!.volumeType),
-  }
-}
-
 export interface OpsworksInstanceEphemeralBlockDevice {
   readonly deviceName: string;
   readonly virtualName: string;
 }
-
-function opsworksInstanceEphemeralBlockDeviceToTerraform(struct?: OpsworksInstanceEphemeralBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
-  }
-}
-
 export interface OpsworksInstanceRootBlockDevice {
   readonly deleteOnTermination?: boolean;
   readonly iops?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
-
-function opsworksInstanceRootBlockDeviceToTerraform(struct?: OpsworksInstanceRootBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
-    volume_type: cdktf.stringToTerraform(struct!.volumeType),
-  }
-}
-
 export interface OpsworksInstanceTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
-function opsworksInstanceTimeoutsToTerraform(struct?: OpsworksInstanceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class OpsworksInstance extends cdktf.TerraformResource {
+export class OpsworksInstance extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -197,148 +155,85 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   // agent_version - computed: false, optional: true, required: false
   private _agentVersion?: string;
   public get agentVersion() {
-    return this.getStringAttribute('agent_version');
+    return this._agentVersion;
   }
-  public set agentVersion(value: string ) {
+  public set agentVersion(value: string | undefined) {
     this._agentVersion = value;
-  }
-  public resetAgentVersion() {
-    this._agentVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get agentVersionInput() {
-    return this._agentVersion
   }
 
   // ami_id - computed: true, optional: true, required: false
   private _amiId?: string;
   public get amiId() {
-    return this.getStringAttribute('ami_id');
+    return this._amiId ?? this.getStringAttribute('ami_id');
   }
-  public set amiId(value: string) {
+  public set amiId(value: string | undefined) {
     this._amiId = value;
-  }
-  public resetAmiId() {
-    this._amiId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get amiIdInput() {
-    return this._amiId
   }
 
   // architecture - computed: false, optional: true, required: false
   private _architecture?: string;
   public get architecture() {
-    return this.getStringAttribute('architecture');
+    return this._architecture;
   }
-  public set architecture(value: string ) {
+  public set architecture(value: string | undefined) {
     this._architecture = value;
-  }
-  public resetArchitecture() {
-    this._architecture = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get architectureInput() {
-    return this._architecture
   }
 
   // auto_scaling_type - computed: false, optional: true, required: false
   private _autoScalingType?: string;
   public get autoScalingType() {
-    return this.getStringAttribute('auto_scaling_type');
+    return this._autoScalingType;
   }
-  public set autoScalingType(value: string ) {
+  public set autoScalingType(value: string | undefined) {
     this._autoScalingType = value;
-  }
-  public resetAutoScalingType() {
-    this._autoScalingType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoScalingTypeInput() {
-    return this._autoScalingType
   }
 
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string) {
+  public set availabilityZone(value: string | undefined) {
     this._availabilityZone = value;
-  }
-  public resetAvailabilityZone() {
-    this._availabilityZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
   }
 
   // created_at - computed: true, optional: true, required: false
   private _createdAt?: string;
   public get createdAt() {
-    return this.getStringAttribute('created_at');
+    return this._createdAt ?? this.getStringAttribute('created_at');
   }
-  public set createdAt(value: string) {
+  public set createdAt(value: string | undefined) {
     this._createdAt = value;
-  }
-  public resetCreatedAt() {
-    this._createdAt = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createdAtInput() {
-    return this._createdAt
   }
 
   // delete_ebs - computed: false, optional: true, required: false
   private _deleteEbs?: boolean;
   public get deleteEbs() {
-    return this.getBooleanAttribute('delete_ebs');
+    return this._deleteEbs;
   }
-  public set deleteEbs(value: boolean ) {
+  public set deleteEbs(value: boolean | undefined) {
     this._deleteEbs = value;
-  }
-  public resetDeleteEbs() {
-    this._deleteEbs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deleteEbsInput() {
-    return this._deleteEbs
   }
 
   // delete_eip - computed: false, optional: true, required: false
   private _deleteEip?: boolean;
   public get deleteEip() {
-    return this.getBooleanAttribute('delete_eip');
+    return this._deleteEip;
   }
-  public set deleteEip(value: boolean ) {
+  public set deleteEip(value: boolean | undefined) {
     this._deleteEip = value;
-  }
-  public resetDeleteEip() {
-    this._deleteEip = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deleteEipInput() {
-    return this._deleteEip
   }
 
   // ebs_optimized - computed: false, optional: true, required: false
   private _ebsOptimized?: boolean;
   public get ebsOptimized() {
-    return this.getBooleanAttribute('ebs_optimized');
+    return this._ebsOptimized;
   }
-  public set ebsOptimized(value: boolean ) {
+  public set ebsOptimized(value: boolean | undefined) {
     this._ebsOptimized = value;
   }
-  public resetEbsOptimized() {
-    this._ebsOptimized = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ebsOptimizedInput() {
-    return this._ebsOptimized
-  }
 
-  // ec2_instance_id - computed: true, optional: false, required: false
+  // ec2_instance_id - computed: true, optional: false, required: true
   public get ec2InstanceId() {
     return this.getStringAttribute('ec2_instance_id');
   }
@@ -346,576 +241,334 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   // ecs_cluster_arn - computed: true, optional: true, required: false
   private _ecsClusterArn?: string;
   public get ecsClusterArn() {
-    return this.getStringAttribute('ecs_cluster_arn');
+    return this._ecsClusterArn ?? this.getStringAttribute('ecs_cluster_arn');
   }
-  public set ecsClusterArn(value: string) {
+  public set ecsClusterArn(value: string | undefined) {
     this._ecsClusterArn = value;
-  }
-  public resetEcsClusterArn() {
-    this._ecsClusterArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ecsClusterArnInput() {
-    return this._ecsClusterArn
   }
 
   // elastic_ip - computed: true, optional: true, required: false
   private _elasticIp?: string;
   public get elasticIp() {
-    return this.getStringAttribute('elastic_ip');
+    return this._elasticIp ?? this.getStringAttribute('elastic_ip');
   }
-  public set elasticIp(value: string) {
+  public set elasticIp(value: string | undefined) {
     this._elasticIp = value;
-  }
-  public resetElasticIp() {
-    this._elasticIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get elasticIpInput() {
-    return this._elasticIp
   }
 
   // hostname - computed: true, optional: true, required: false
   private _hostname?: string;
   public get hostname() {
-    return this.getStringAttribute('hostname');
+    return this._hostname ?? this.getStringAttribute('hostname');
   }
-  public set hostname(value: string) {
+  public set hostname(value: string | undefined) {
     this._hostname = value;
-  }
-  public resetHostname() {
-    this._hostname = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get hostnameInput() {
-    return this._hostname
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // infrastructure_class - computed: true, optional: true, required: false
   private _infrastructureClass?: string;
   public get infrastructureClass() {
-    return this.getStringAttribute('infrastructure_class');
+    return this._infrastructureClass ?? this.getStringAttribute('infrastructure_class');
   }
-  public set infrastructureClass(value: string) {
+  public set infrastructureClass(value: string | undefined) {
     this._infrastructureClass = value;
-  }
-  public resetInfrastructureClass() {
-    this._infrastructureClass = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get infrastructureClassInput() {
-    return this._infrastructureClass
   }
 
   // install_updates_on_boot - computed: false, optional: true, required: false
   private _installUpdatesOnBoot?: boolean;
   public get installUpdatesOnBoot() {
-    return this.getBooleanAttribute('install_updates_on_boot');
+    return this._installUpdatesOnBoot;
   }
-  public set installUpdatesOnBoot(value: boolean ) {
+  public set installUpdatesOnBoot(value: boolean | undefined) {
     this._installUpdatesOnBoot = value;
-  }
-  public resetInstallUpdatesOnBoot() {
-    this._installUpdatesOnBoot = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get installUpdatesOnBootInput() {
-    return this._installUpdatesOnBoot
   }
 
   // instance_profile_arn - computed: true, optional: true, required: false
   private _instanceProfileArn?: string;
   public get instanceProfileArn() {
-    return this.getStringAttribute('instance_profile_arn');
+    return this._instanceProfileArn ?? this.getStringAttribute('instance_profile_arn');
   }
-  public set instanceProfileArn(value: string) {
+  public set instanceProfileArn(value: string | undefined) {
     this._instanceProfileArn = value;
-  }
-  public resetInstanceProfileArn() {
-    this._instanceProfileArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceProfileArnInput() {
-    return this._instanceProfileArn
   }
 
   // instance_type - computed: false, optional: true, required: false
   private _instanceType?: string;
   public get instanceType() {
-    return this.getStringAttribute('instance_type');
+    return this._instanceType;
   }
-  public set instanceType(value: string ) {
+  public set instanceType(value: string | undefined) {
     this._instanceType = value;
-  }
-  public resetInstanceType() {
-    this._instanceType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceTypeInput() {
-    return this._instanceType
   }
 
   // last_service_error_id - computed: true, optional: true, required: false
   private _lastServiceErrorId?: string;
   public get lastServiceErrorId() {
-    return this.getStringAttribute('last_service_error_id');
+    return this._lastServiceErrorId ?? this.getStringAttribute('last_service_error_id');
   }
-  public set lastServiceErrorId(value: string) {
+  public set lastServiceErrorId(value: string | undefined) {
     this._lastServiceErrorId = value;
-  }
-  public resetLastServiceErrorId() {
-    this._lastServiceErrorId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get lastServiceErrorIdInput() {
-    return this._lastServiceErrorId
   }
 
   // layer_ids - computed: false, optional: false, required: true
   private _layerIds: string[];
   public get layerIds() {
-    return this.getListAttribute('layer_ids');
+    return this._layerIds;
   }
   public set layerIds(value: string[]) {
     this._layerIds = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get layerIdsInput() {
-    return this._layerIds
   }
 
   // os - computed: true, optional: true, required: false
   private _os?: string;
   public get os() {
-    return this.getStringAttribute('os');
+    return this._os ?? this.getStringAttribute('os');
   }
-  public set os(value: string) {
+  public set os(value: string | undefined) {
     this._os = value;
-  }
-  public resetOs() {
-    this._os = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get osInput() {
-    return this._os
   }
 
   // platform - computed: true, optional: true, required: false
   private _platform?: string;
   public get platform() {
-    return this.getStringAttribute('platform');
+    return this._platform ?? this.getStringAttribute('platform');
   }
-  public set platform(value: string) {
+  public set platform(value: string | undefined) {
     this._platform = value;
-  }
-  public resetPlatform() {
-    this._platform = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get platformInput() {
-    return this._platform
   }
 
   // private_dns - computed: true, optional: true, required: false
   private _privateDns?: string;
   public get privateDns() {
-    return this.getStringAttribute('private_dns');
+    return this._privateDns ?? this.getStringAttribute('private_dns');
   }
-  public set privateDns(value: string) {
+  public set privateDns(value: string | undefined) {
     this._privateDns = value;
-  }
-  public resetPrivateDns() {
-    this._privateDns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateDnsInput() {
-    return this._privateDns
   }
 
   // private_ip - computed: true, optional: true, required: false
   private _privateIp?: string;
   public get privateIp() {
-    return this.getStringAttribute('private_ip');
+    return this._privateIp ?? this.getStringAttribute('private_ip');
   }
-  public set privateIp(value: string) {
+  public set privateIp(value: string | undefined) {
     this._privateIp = value;
-  }
-  public resetPrivateIp() {
-    this._privateIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateIpInput() {
-    return this._privateIp
   }
 
   // public_dns - computed: true, optional: true, required: false
   private _publicDns?: string;
   public get publicDns() {
-    return this.getStringAttribute('public_dns');
+    return this._publicDns ?? this.getStringAttribute('public_dns');
   }
-  public set publicDns(value: string) {
+  public set publicDns(value: string | undefined) {
     this._publicDns = value;
-  }
-  public resetPublicDns() {
-    this._publicDns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicDnsInput() {
-    return this._publicDns
   }
 
   // public_ip - computed: true, optional: true, required: false
   private _publicIp?: string;
   public get publicIp() {
-    return this.getStringAttribute('public_ip');
+    return this._publicIp ?? this.getStringAttribute('public_ip');
   }
-  public set publicIp(value: string) {
+  public set publicIp(value: string | undefined) {
     this._publicIp = value;
-  }
-  public resetPublicIp() {
-    this._publicIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicIpInput() {
-    return this._publicIp
   }
 
   // registered_by - computed: true, optional: true, required: false
   private _registeredBy?: string;
   public get registeredBy() {
-    return this.getStringAttribute('registered_by');
+    return this._registeredBy ?? this.getStringAttribute('registered_by');
   }
-  public set registeredBy(value: string) {
+  public set registeredBy(value: string | undefined) {
     this._registeredBy = value;
-  }
-  public resetRegisteredBy() {
-    this._registeredBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get registeredByInput() {
-    return this._registeredBy
   }
 
   // reported_agent_version - computed: true, optional: true, required: false
   private _reportedAgentVersion?: string;
   public get reportedAgentVersion() {
-    return this.getStringAttribute('reported_agent_version');
+    return this._reportedAgentVersion ?? this.getStringAttribute('reported_agent_version');
   }
-  public set reportedAgentVersion(value: string) {
+  public set reportedAgentVersion(value: string | undefined) {
     this._reportedAgentVersion = value;
-  }
-  public resetReportedAgentVersion() {
-    this._reportedAgentVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reportedAgentVersionInput() {
-    return this._reportedAgentVersion
   }
 
   // reported_os_family - computed: true, optional: true, required: false
   private _reportedOsFamily?: string;
   public get reportedOsFamily() {
-    return this.getStringAttribute('reported_os_family');
+    return this._reportedOsFamily ?? this.getStringAttribute('reported_os_family');
   }
-  public set reportedOsFamily(value: string) {
+  public set reportedOsFamily(value: string | undefined) {
     this._reportedOsFamily = value;
-  }
-  public resetReportedOsFamily() {
-    this._reportedOsFamily = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reportedOsFamilyInput() {
-    return this._reportedOsFamily
   }
 
   // reported_os_name - computed: true, optional: true, required: false
   private _reportedOsName?: string;
   public get reportedOsName() {
-    return this.getStringAttribute('reported_os_name');
+    return this._reportedOsName ?? this.getStringAttribute('reported_os_name');
   }
-  public set reportedOsName(value: string) {
+  public set reportedOsName(value: string | undefined) {
     this._reportedOsName = value;
-  }
-  public resetReportedOsName() {
-    this._reportedOsName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reportedOsNameInput() {
-    return this._reportedOsName
   }
 
   // reported_os_version - computed: true, optional: true, required: false
   private _reportedOsVersion?: string;
   public get reportedOsVersion() {
-    return this.getStringAttribute('reported_os_version');
+    return this._reportedOsVersion ?? this.getStringAttribute('reported_os_version');
   }
-  public set reportedOsVersion(value: string) {
+  public set reportedOsVersion(value: string | undefined) {
     this._reportedOsVersion = value;
-  }
-  public resetReportedOsVersion() {
-    this._reportedOsVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reportedOsVersionInput() {
-    return this._reportedOsVersion
   }
 
   // root_device_type - computed: true, optional: true, required: false
   private _rootDeviceType?: string;
   public get rootDeviceType() {
-    return this.getStringAttribute('root_device_type');
+    return this._rootDeviceType ?? this.getStringAttribute('root_device_type');
   }
-  public set rootDeviceType(value: string) {
+  public set rootDeviceType(value: string | undefined) {
     this._rootDeviceType = value;
-  }
-  public resetRootDeviceType() {
-    this._rootDeviceType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rootDeviceTypeInput() {
-    return this._rootDeviceType
   }
 
   // root_device_volume_id - computed: true, optional: true, required: false
   private _rootDeviceVolumeId?: string;
   public get rootDeviceVolumeId() {
-    return this.getStringAttribute('root_device_volume_id');
+    return this._rootDeviceVolumeId ?? this.getStringAttribute('root_device_volume_id');
   }
-  public set rootDeviceVolumeId(value: string) {
+  public set rootDeviceVolumeId(value: string | undefined) {
     this._rootDeviceVolumeId = value;
-  }
-  public resetRootDeviceVolumeId() {
-    this._rootDeviceVolumeId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rootDeviceVolumeIdInput() {
-    return this._rootDeviceVolumeId
   }
 
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[];
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return this._securityGroupIds ?? this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[]) {
+  public set securityGroupIds(value: string[] | undefined) {
     this._securityGroupIds = value;
-  }
-  public resetSecurityGroupIds() {
-    this._securityGroupIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupIdsInput() {
-    return this._securityGroupIds
   }
 
   // ssh_host_dsa_key_fingerprint - computed: true, optional: true, required: false
   private _sshHostDsaKeyFingerprint?: string;
   public get sshHostDsaKeyFingerprint() {
-    return this.getStringAttribute('ssh_host_dsa_key_fingerprint');
+    return this._sshHostDsaKeyFingerprint ?? this.getStringAttribute('ssh_host_dsa_key_fingerprint');
   }
-  public set sshHostDsaKeyFingerprint(value: string) {
+  public set sshHostDsaKeyFingerprint(value: string | undefined) {
     this._sshHostDsaKeyFingerprint = value;
-  }
-  public resetSshHostDsaKeyFingerprint() {
-    this._sshHostDsaKeyFingerprint = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sshHostDsaKeyFingerprintInput() {
-    return this._sshHostDsaKeyFingerprint
   }
 
   // ssh_host_rsa_key_fingerprint - computed: true, optional: true, required: false
   private _sshHostRsaKeyFingerprint?: string;
   public get sshHostRsaKeyFingerprint() {
-    return this.getStringAttribute('ssh_host_rsa_key_fingerprint');
+    return this._sshHostRsaKeyFingerprint ?? this.getStringAttribute('ssh_host_rsa_key_fingerprint');
   }
-  public set sshHostRsaKeyFingerprint(value: string) {
+  public set sshHostRsaKeyFingerprint(value: string | undefined) {
     this._sshHostRsaKeyFingerprint = value;
-  }
-  public resetSshHostRsaKeyFingerprint() {
-    this._sshHostRsaKeyFingerprint = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sshHostRsaKeyFingerprintInput() {
-    return this._sshHostRsaKeyFingerprint
   }
 
   // ssh_key_name - computed: true, optional: true, required: false
   private _sshKeyName?: string;
   public get sshKeyName() {
-    return this.getStringAttribute('ssh_key_name');
+    return this._sshKeyName ?? this.getStringAttribute('ssh_key_name');
   }
-  public set sshKeyName(value: string) {
+  public set sshKeyName(value: string | undefined) {
     this._sshKeyName = value;
-  }
-  public resetSshKeyName() {
-    this._sshKeyName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sshKeyNameInput() {
-    return this._sshKeyName
   }
 
   // stack_id - computed: false, optional: false, required: true
   private _stackId: string;
   public get stackId() {
-    return this.getStringAttribute('stack_id');
+    return this._stackId;
   }
   public set stackId(value: string) {
     this._stackId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stackIdInput() {
-    return this._stackId
   }
 
   // state - computed: false, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this.getStringAttribute('state');
+    return this._state;
   }
-  public set state(value: string ) {
+  public set state(value: string | undefined) {
     this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state
   }
 
   // status - computed: true, optional: true, required: false
   private _status?: string;
   public get status() {
-    return this.getStringAttribute('status');
+    return this._status ?? this.getStringAttribute('status');
   }
-  public set status(value: string) {
+  public set status(value: string | undefined) {
     this._status = value;
-  }
-  public resetStatus() {
-    this._status = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status
   }
 
   // subnet_id - computed: true, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this.getStringAttribute('subnet_id');
+    return this._subnetId ?? this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string) {
+  public set subnetId(value: string | undefined) {
     this._subnetId = value;
-  }
-  public resetSubnetId() {
-    this._subnetId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId
   }
 
   // tenancy - computed: true, optional: true, required: false
   private _tenancy?: string;
   public get tenancy() {
-    return this.getStringAttribute('tenancy');
+    return this._tenancy ?? this.getStringAttribute('tenancy');
   }
-  public set tenancy(value: string) {
+  public set tenancy(value: string | undefined) {
     this._tenancy = value;
-  }
-  public resetTenancy() {
-    this._tenancy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tenancyInput() {
-    return this._tenancy
   }
 
   // virtualization_type - computed: true, optional: true, required: false
   private _virtualizationType?: string;
   public get virtualizationType() {
-    return this.getStringAttribute('virtualization_type');
+    return this._virtualizationType ?? this.getStringAttribute('virtualization_type');
   }
-  public set virtualizationType(value: string) {
+  public set virtualizationType(value: string | undefined) {
     this._virtualizationType = value;
-  }
-  public resetVirtualizationType() {
-    this._virtualizationType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get virtualizationTypeInput() {
-    return this._virtualizationType
   }
 
   // ebs_block_device - computed: false, optional: true, required: false
   private _ebsBlockDevice?: OpsworksInstanceEbsBlockDevice[];
   public get ebsBlockDevice() {
-    return this.interpolationForAttribute('ebs_block_device') as any;
+    return this._ebsBlockDevice;
   }
-  public set ebsBlockDevice(value: OpsworksInstanceEbsBlockDevice[] ) {
+  public set ebsBlockDevice(value: OpsworksInstanceEbsBlockDevice[] | undefined) {
     this._ebsBlockDevice = value;
-  }
-  public resetEbsBlockDevice() {
-    this._ebsBlockDevice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ebsBlockDeviceInput() {
-    return this._ebsBlockDevice
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
   private _ephemeralBlockDevice?: OpsworksInstanceEphemeralBlockDevice[];
   public get ephemeralBlockDevice() {
-    return this.interpolationForAttribute('ephemeral_block_device') as any;
+    return this._ephemeralBlockDevice;
   }
-  public set ephemeralBlockDevice(value: OpsworksInstanceEphemeralBlockDevice[] ) {
+  public set ephemeralBlockDevice(value: OpsworksInstanceEphemeralBlockDevice[] | undefined) {
     this._ephemeralBlockDevice = value;
-  }
-  public resetEphemeralBlockDevice() {
-    this._ephemeralBlockDevice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ephemeralBlockDeviceInput() {
-    return this._ephemeralBlockDevice
   }
 
   // root_block_device - computed: false, optional: true, required: false
   private _rootBlockDevice?: OpsworksInstanceRootBlockDevice[];
   public get rootBlockDevice() {
-    return this.interpolationForAttribute('root_block_device') as any;
+    return this._rootBlockDevice;
   }
-  public set rootBlockDevice(value: OpsworksInstanceRootBlockDevice[] ) {
+  public set rootBlockDevice(value: OpsworksInstanceRootBlockDevice[] | undefined) {
     this._rootBlockDevice = value;
-  }
-  public resetRootBlockDevice() {
-    this._rootBlockDevice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rootBlockDeviceInput() {
-    return this._rootBlockDevice
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: OpsworksInstanceTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: OpsworksInstanceTimeouts ) {
+  public set timeouts(value: OpsworksInstanceTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -924,51 +577,51 @@ export class OpsworksInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_version: cdktf.stringToTerraform(this._agentVersion),
-      ami_id: cdktf.stringToTerraform(this._amiId),
-      architecture: cdktf.stringToTerraform(this._architecture),
-      auto_scaling_type: cdktf.stringToTerraform(this._autoScalingType),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      created_at: cdktf.stringToTerraform(this._createdAt),
-      delete_ebs: cdktf.booleanToTerraform(this._deleteEbs),
-      delete_eip: cdktf.booleanToTerraform(this._deleteEip),
-      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
-      ecs_cluster_arn: cdktf.stringToTerraform(this._ecsClusterArn),
-      elastic_ip: cdktf.stringToTerraform(this._elasticIp),
-      hostname: cdktf.stringToTerraform(this._hostname),
-      infrastructure_class: cdktf.stringToTerraform(this._infrastructureClass),
-      install_updates_on_boot: cdktf.booleanToTerraform(this._installUpdatesOnBoot),
-      instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      last_service_error_id: cdktf.stringToTerraform(this._lastServiceErrorId),
-      layer_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._layerIds),
-      os: cdktf.stringToTerraform(this._os),
-      platform: cdktf.stringToTerraform(this._platform),
-      private_dns: cdktf.stringToTerraform(this._privateDns),
-      private_ip: cdktf.stringToTerraform(this._privateIp),
-      public_dns: cdktf.stringToTerraform(this._publicDns),
-      public_ip: cdktf.stringToTerraform(this._publicIp),
-      registered_by: cdktf.stringToTerraform(this._registeredBy),
-      reported_agent_version: cdktf.stringToTerraform(this._reportedAgentVersion),
-      reported_os_family: cdktf.stringToTerraform(this._reportedOsFamily),
-      reported_os_name: cdktf.stringToTerraform(this._reportedOsName),
-      reported_os_version: cdktf.stringToTerraform(this._reportedOsVersion),
-      root_device_type: cdktf.stringToTerraform(this._rootDeviceType),
-      root_device_volume_id: cdktf.stringToTerraform(this._rootDeviceVolumeId),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      ssh_host_dsa_key_fingerprint: cdktf.stringToTerraform(this._sshHostDsaKeyFingerprint),
-      ssh_host_rsa_key_fingerprint: cdktf.stringToTerraform(this._sshHostRsaKeyFingerprint),
-      ssh_key_name: cdktf.stringToTerraform(this._sshKeyName),
-      stack_id: cdktf.stringToTerraform(this._stackId),
-      state: cdktf.stringToTerraform(this._state),
-      status: cdktf.stringToTerraform(this._status),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tenancy: cdktf.stringToTerraform(this._tenancy),
-      virtualization_type: cdktf.stringToTerraform(this._virtualizationType),
-      ebs_block_device: cdktf.listMapper(opsworksInstanceEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
-      ephemeral_block_device: cdktf.listMapper(opsworksInstanceEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
-      root_block_device: cdktf.listMapper(opsworksInstanceRootBlockDeviceToTerraform)(this._rootBlockDevice),
-      timeouts: opsworksInstanceTimeoutsToTerraform(this._timeouts),
+      agent_version: this._agentVersion,
+      ami_id: this._amiId,
+      architecture: this._architecture,
+      auto_scaling_type: this._autoScalingType,
+      availability_zone: this._availabilityZone,
+      created_at: this._createdAt,
+      delete_ebs: this._deleteEbs,
+      delete_eip: this._deleteEip,
+      ebs_optimized: this._ebsOptimized,
+      ecs_cluster_arn: this._ecsClusterArn,
+      elastic_ip: this._elasticIp,
+      hostname: this._hostname,
+      infrastructure_class: this._infrastructureClass,
+      install_updates_on_boot: this._installUpdatesOnBoot,
+      instance_profile_arn: this._instanceProfileArn,
+      instance_type: this._instanceType,
+      last_service_error_id: this._lastServiceErrorId,
+      layer_ids: this._layerIds,
+      os: this._os,
+      platform: this._platform,
+      private_dns: this._privateDns,
+      private_ip: this._privateIp,
+      public_dns: this._publicDns,
+      public_ip: this._publicIp,
+      registered_by: this._registeredBy,
+      reported_agent_version: this._reportedAgentVersion,
+      reported_os_family: this._reportedOsFamily,
+      reported_os_name: this._reportedOsName,
+      reported_os_version: this._reportedOsVersion,
+      root_device_type: this._rootDeviceType,
+      root_device_volume_id: this._rootDeviceVolumeId,
+      security_group_ids: this._securityGroupIds,
+      ssh_host_dsa_key_fingerprint: this._sshHostDsaKeyFingerprint,
+      ssh_host_rsa_key_fingerprint: this._sshHostRsaKeyFingerprint,
+      ssh_key_name: this._sshKeyName,
+      stack_id: this._stackId,
+      state: this._state,
+      status: this._status,
+      subnet_id: this._subnetId,
+      tenancy: this._tenancy,
+      virtualization_type: this._virtualizationType,
+      ebs_block_device: this._ebsBlockDevice,
+      ephemeral_block_device: this._ephemeralBlockDevice,
+      root_block_device: this._rootBlockDevice,
+      timeouts: this._timeouts,
     };
   }
 }

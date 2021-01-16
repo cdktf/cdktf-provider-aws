@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface MacieS3BucketAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface MacieS3BucketAssociationConfig extends TerraformMetaArguments {
   readonly bucketName: string;
   readonly memberAccountId?: string;
   readonly prefix?: string;
@@ -18,18 +19,9 @@ export interface MacieS3BucketAssociationClassificationType {
   readonly oneTime?: string;
 }
 
-function macieS3BucketAssociationClassificationTypeToTerraform(struct?: MacieS3BucketAssociationClassificationType): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    continuous: cdktf.stringToTerraform(struct!.continuous),
-    one_time: cdktf.stringToTerraform(struct!.oneTime),
-  }
-}
-
-
 // Resource
 
-export class MacieS3BucketAssociation extends cdktf.TerraformResource {
+export class MacieS3BucketAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,67 +51,46 @@ export class MacieS3BucketAssociation extends cdktf.TerraformResource {
   // bucket_name - computed: false, optional: false, required: true
   private _bucketName: string;
   public get bucketName() {
-    return this.getStringAttribute('bucket_name');
+    return this._bucketName;
   }
   public set bucketName(value: string) {
     this._bucketName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get bucketNameInput() {
-    return this._bucketName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // member_account_id - computed: false, optional: true, required: false
   private _memberAccountId?: string;
   public get memberAccountId() {
-    return this.getStringAttribute('member_account_id');
+    return this._memberAccountId;
   }
-  public set memberAccountId(value: string ) {
+  public set memberAccountId(value: string | undefined) {
     this._memberAccountId = value;
-  }
-  public resetMemberAccountId() {
-    this._memberAccountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get memberAccountIdInput() {
-    return this._memberAccountId
   }
 
   // prefix - computed: false, optional: true, required: false
   private _prefix?: string;
   public get prefix() {
-    return this.getStringAttribute('prefix');
+    return this._prefix;
   }
-  public set prefix(value: string ) {
+  public set prefix(value: string | undefined) {
     this._prefix = value;
-  }
-  public resetPrefix() {
-    this._prefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get prefixInput() {
-    return this._prefix
   }
 
   // classification_type - computed: false, optional: true, required: false
   private _classificationType?: MacieS3BucketAssociationClassificationType[];
   public get classificationType() {
-    return this.interpolationForAttribute('classification_type') as any;
+    return this._classificationType;
   }
-  public set classificationType(value: MacieS3BucketAssociationClassificationType[] ) {
+  public set classificationType(value: MacieS3BucketAssociationClassificationType[] | undefined) {
     this._classificationType = value;
-  }
-  public resetClassificationType() {
-    this._classificationType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get classificationTypeInput() {
-    return this._classificationType
   }
 
   // =========
@@ -128,10 +99,10 @@ export class MacieS3BucketAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      member_account_id: cdktf.stringToTerraform(this._memberAccountId),
-      prefix: cdktf.stringToTerraform(this._prefix),
-      classification_type: cdktf.listMapper(macieS3BucketAssociationClassificationTypeToTerraform)(this._classificationType),
+      bucket_name: this._bucketName,
+      member_account_id: this._memberAccountId,
+      prefix: this._prefix,
+      classification_type: this._classificationType,
     };
   }
 }

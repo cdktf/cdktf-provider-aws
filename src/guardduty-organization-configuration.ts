@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyOrganizationConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface GuarddutyOrganizationConfigurationConfig extends TerraformMetaArguments {
   readonly autoEnable: boolean;
   readonly detectorId: string;
 }
 
 // Resource
 
-export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource {
+export class GuarddutyOrganizationConfiguration extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource 
   // auto_enable - computed: false, optional: false, required: true
   private _autoEnable: boolean;
   public get autoEnable() {
-    return this.getBooleanAttribute('auto_enable');
+    return this._autoEnable;
   }
   public set autoEnable(value: boolean) {
     this._autoEnable = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoEnableInput() {
-    return this._autoEnable
   }
 
   // detector_id - computed: false, optional: false, required: true
   private _detectorId: string;
   public get detectorId() {
-    return this.getStringAttribute('detector_id');
+    return this._detectorId;
   }
   public set detectorId(value: string) {
     this._detectorId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get detectorIdInput() {
-    return this._detectorId
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========
@@ -75,8 +72,8 @@ export class GuarddutyOrganizationConfiguration extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_enable: cdktf.booleanToTerraform(this._autoEnable),
-      detector_id: cdktf.stringToTerraform(this._detectorId),
+      auto_enable: this._autoEnable,
+      detector_id: this._detectorId,
     };
   }
 }

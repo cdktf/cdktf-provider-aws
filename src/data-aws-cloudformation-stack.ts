@@ -2,18 +2,20 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { StringMap } from "cdktf";
 
 // Configuration
 
-export interface DataAwsCloudformationStackConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCloudformationStackConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
+export class DataAwsCloudformationStack extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,81 +40,74 @@ export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // capabilities - computed: true, optional: false, required: false
+  // capabilities - computed: true, optional: false, required: true
   public get capabilities() {
     return this.getListAttribute('capabilities');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // disable_rollback - computed: true, optional: false, required: false
+  // disable_rollback - computed: true, optional: false, required: true
   public get disableRollback() {
     return this.getBooleanAttribute('disable_rollback');
   }
 
-  // iam_role_arn - computed: true, optional: false, required: false
+  // iam_role_arn - computed: true, optional: false, required: true
   public get iamRoleArn() {
     return this.getStringAttribute('iam_role_arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // notification_arns - computed: true, optional: false, required: false
+  // notification_arns - computed: true, optional: false, required: true
   public get notificationArns() {
     return this.getListAttribute('notification_arns');
   }
 
-  // outputs - computed: true, optional: false, required: false
+  // outputs - computed: true, optional: false, required: true
   public outputs(key: string): string {
-    return new cdktf.StringMap(this, 'outputs').lookup(key);
+    return new StringMap(this, 'outputs').lookup(key);
   }
 
-  // parameters - computed: true, optional: false, required: false
+  // parameters - computed: true, optional: false, required: true
   public parameters(key: string): string {
-    return new cdktf.StringMap(this, 'parameters').lookup(key);
+    return new StringMap(this, 'parameters').lookup(key);
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // template_body - computed: true, optional: false, required: false
+  // template_body - computed: true, optional: false, required: true
   public get templateBody() {
     return this.getStringAttribute('template_body');
   }
 
-  // timeout_in_minutes - computed: true, optional: false, required: false
+  // timeout_in_minutes - computed: true, optional: false, required: true
   public get timeoutInMinutes() {
     return this.getNumberAttribute('timeout_in_minutes');
   }
@@ -123,8 +118,8 @@ export class DataAwsCloudformationStack extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      name: this._name,
+      tags: this._tags,
     };
   }
 }

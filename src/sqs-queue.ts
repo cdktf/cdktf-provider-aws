@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
+export interface SqsQueueConfig extends TerraformMetaArguments {
   readonly contentBasedDeduplication?: boolean;
   readonly delaySeconds?: number;
   readonly fifoQueue?: boolean;
@@ -25,7 +26,7 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class SqsQueue extends cdktf.TerraformResource {
+export class SqsQueue extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -62,7 +63,7 @@ export class SqsQueue extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -70,230 +71,136 @@ export class SqsQueue extends cdktf.TerraformResource {
   // content_based_deduplication - computed: false, optional: true, required: false
   private _contentBasedDeduplication?: boolean;
   public get contentBasedDeduplication() {
-    return this.getBooleanAttribute('content_based_deduplication');
+    return this._contentBasedDeduplication;
   }
-  public set contentBasedDeduplication(value: boolean ) {
+  public set contentBasedDeduplication(value: boolean | undefined) {
     this._contentBasedDeduplication = value;
-  }
-  public resetContentBasedDeduplication() {
-    this._contentBasedDeduplication = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contentBasedDeduplicationInput() {
-    return this._contentBasedDeduplication
   }
 
   // delay_seconds - computed: false, optional: true, required: false
   private _delaySeconds?: number;
   public get delaySeconds() {
-    return this.getNumberAttribute('delay_seconds');
+    return this._delaySeconds;
   }
-  public set delaySeconds(value: number ) {
+  public set delaySeconds(value: number | undefined) {
     this._delaySeconds = value;
-  }
-  public resetDelaySeconds() {
-    this._delaySeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get delaySecondsInput() {
-    return this._delaySeconds
   }
 
   // fifo_queue - computed: false, optional: true, required: false
   private _fifoQueue?: boolean;
   public get fifoQueue() {
-    return this.getBooleanAttribute('fifo_queue');
+    return this._fifoQueue;
   }
-  public set fifoQueue(value: boolean ) {
+  public set fifoQueue(value: boolean | undefined) {
     this._fifoQueue = value;
-  }
-  public resetFifoQueue() {
-    this._fifoQueue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fifoQueueInput() {
-    return this._fifoQueue
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // kms_data_key_reuse_period_seconds - computed: true, optional: true, required: false
   private _kmsDataKeyReusePeriodSeconds?: number;
   public get kmsDataKeyReusePeriodSeconds() {
-    return this.getNumberAttribute('kms_data_key_reuse_period_seconds');
+    return this._kmsDataKeyReusePeriodSeconds ?? this.getNumberAttribute('kms_data_key_reuse_period_seconds');
   }
-  public set kmsDataKeyReusePeriodSeconds(value: number) {
+  public set kmsDataKeyReusePeriodSeconds(value: number | undefined) {
     this._kmsDataKeyReusePeriodSeconds = value;
-  }
-  public resetKmsDataKeyReusePeriodSeconds() {
-    this._kmsDataKeyReusePeriodSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsDataKeyReusePeriodSecondsInput() {
-    return this._kmsDataKeyReusePeriodSeconds
   }
 
   // kms_master_key_id - computed: false, optional: true, required: false
   private _kmsMasterKeyId?: string;
   public get kmsMasterKeyId() {
-    return this.getStringAttribute('kms_master_key_id');
+    return this._kmsMasterKeyId;
   }
-  public set kmsMasterKeyId(value: string ) {
+  public set kmsMasterKeyId(value: string | undefined) {
     this._kmsMasterKeyId = value;
-  }
-  public resetKmsMasterKeyId() {
-    this._kmsMasterKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsMasterKeyIdInput() {
-    return this._kmsMasterKeyId
   }
 
   // max_message_size - computed: false, optional: true, required: false
   private _maxMessageSize?: number;
   public get maxMessageSize() {
-    return this.getNumberAttribute('max_message_size');
+    return this._maxMessageSize;
   }
-  public set maxMessageSize(value: number ) {
+  public set maxMessageSize(value: number | undefined) {
     this._maxMessageSize = value;
-  }
-  public resetMaxMessageSize() {
-    this._maxMessageSize = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxMessageSizeInput() {
-    return this._maxMessageSize
   }
 
   // message_retention_seconds - computed: false, optional: true, required: false
   private _messageRetentionSeconds?: number;
   public get messageRetentionSeconds() {
-    return this.getNumberAttribute('message_retention_seconds');
+    return this._messageRetentionSeconds;
   }
-  public set messageRetentionSeconds(value: number ) {
+  public set messageRetentionSeconds(value: number | undefined) {
     this._messageRetentionSeconds = value;
-  }
-  public resetMessageRetentionSeconds() {
-    this._messageRetentionSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get messageRetentionSecondsInput() {
-    return this._messageRetentionSeconds
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy ?? this.getStringAttribute('policy');
   }
-  public set policy(value: string) {
+  public set policy(value: string | undefined) {
     this._policy = value;
-  }
-  public resetPolicy() {
-    this._policy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // receive_wait_time_seconds - computed: false, optional: true, required: false
   private _receiveWaitTimeSeconds?: number;
   public get receiveWaitTimeSeconds() {
-    return this.getNumberAttribute('receive_wait_time_seconds');
+    return this._receiveWaitTimeSeconds;
   }
-  public set receiveWaitTimeSeconds(value: number ) {
+  public set receiveWaitTimeSeconds(value: number | undefined) {
     this._receiveWaitTimeSeconds = value;
-  }
-  public resetReceiveWaitTimeSeconds() {
-    this._receiveWaitTimeSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get receiveWaitTimeSecondsInput() {
-    return this._receiveWaitTimeSeconds
   }
 
   // redrive_policy - computed: false, optional: true, required: false
   private _redrivePolicy?: string;
   public get redrivePolicy() {
-    return this.getStringAttribute('redrive_policy');
+    return this._redrivePolicy;
   }
-  public set redrivePolicy(value: string ) {
+  public set redrivePolicy(value: string | undefined) {
     this._redrivePolicy = value;
-  }
-  public resetRedrivePolicy() {
-    this._redrivePolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get redrivePolicyInput() {
-    return this._redrivePolicy
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // visibility_timeout_seconds - computed: false, optional: true, required: false
   private _visibilityTimeoutSeconds?: number;
   public get visibilityTimeoutSeconds() {
-    return this.getNumberAttribute('visibility_timeout_seconds');
+    return this._visibilityTimeoutSeconds;
   }
-  public set visibilityTimeoutSeconds(value: number ) {
+  public set visibilityTimeoutSeconds(value: number | undefined) {
     this._visibilityTimeoutSeconds = value;
-  }
-  public resetVisibilityTimeoutSeconds() {
-    this._visibilityTimeoutSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get visibilityTimeoutSecondsInput() {
-    return this._visibilityTimeoutSeconds
   }
 
   // =========
@@ -302,20 +209,20 @@ export class SqsQueue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_based_deduplication: cdktf.booleanToTerraform(this._contentBasedDeduplication),
-      delay_seconds: cdktf.numberToTerraform(this._delaySeconds),
-      fifo_queue: cdktf.booleanToTerraform(this._fifoQueue),
-      kms_data_key_reuse_period_seconds: cdktf.numberToTerraform(this._kmsDataKeyReusePeriodSeconds),
-      kms_master_key_id: cdktf.stringToTerraform(this._kmsMasterKeyId),
-      max_message_size: cdktf.numberToTerraform(this._maxMessageSize),
-      message_retention_seconds: cdktf.numberToTerraform(this._messageRetentionSeconds),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      policy: cdktf.stringToTerraform(this._policy),
-      receive_wait_time_seconds: cdktf.numberToTerraform(this._receiveWaitTimeSeconds),
-      redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      visibility_timeout_seconds: cdktf.numberToTerraform(this._visibilityTimeoutSeconds),
+      content_based_deduplication: this._contentBasedDeduplication,
+      delay_seconds: this._delaySeconds,
+      fifo_queue: this._fifoQueue,
+      kms_data_key_reuse_period_seconds: this._kmsDataKeyReusePeriodSeconds,
+      kms_master_key_id: this._kmsMasterKeyId,
+      max_message_size: this._maxMessageSize,
+      message_retention_seconds: this._messageRetentionSeconds,
+      name: this._name,
+      name_prefix: this._namePrefix,
+      policy: this._policy,
+      receive_wait_time_seconds: this._receiveWaitTimeSeconds,
+      redrive_policy: this._redrivePolicy,
+      tags: this._tags,
+      visibility_timeout_seconds: this._visibilityTimeoutSeconds,
     };
   }
 }

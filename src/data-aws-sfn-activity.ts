@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSfnActivityConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSfnActivityConfig extends TerraformMetaArguments {
   readonly name?: string;
 }
 
 // Resource
 
-export class DataAwsSfnActivity extends cdktf.TerraformDataSource {
+export class DataAwsSfnActivity extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,34 +38,35 @@ export class DataAwsSfnActivity extends cdktf.TerraformDataSource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn ?? this.getStringAttribute('arn');
+  }
+  public set arn(value: string | undefined) {
+    this._arn = value;
   }
 
-  // creation_date - computed: true, optional: false, required: false
+  // creation_date - computed: true, optional: false, required: true
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // =========
@@ -73,7 +75,7 @@ export class DataAwsSfnActivity extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

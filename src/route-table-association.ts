@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface RouteTableAssociationConfig extends TerraformMetaArguments {
   readonly gatewayId?: string;
   readonly routeTableId: string;
   readonly subnetId?: string;
@@ -14,7 +15,7 @@ export interface RouteTableAssociationConfig extends cdktf.TerraformMetaArgument
 
 // Resource
 
-export class RouteTableAssociation extends cdktf.TerraformResource {
+export class RouteTableAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,51 +44,37 @@ export class RouteTableAssociation extends cdktf.TerraformResource {
   // gateway_id - computed: false, optional: true, required: false
   private _gatewayId?: string;
   public get gatewayId() {
-    return this.getStringAttribute('gateway_id');
+    return this._gatewayId;
   }
-  public set gatewayId(value: string ) {
+  public set gatewayId(value: string | undefined) {
     this._gatewayId = value;
-  }
-  public resetGatewayId() {
-    this._gatewayId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get gatewayIdInput() {
-    return this._gatewayId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // route_table_id - computed: false, optional: false, required: true
   private _routeTableId: string;
   public get routeTableId() {
-    return this.getStringAttribute('route_table_id');
+    return this._routeTableId;
   }
   public set routeTableId(value: string) {
     this._routeTableId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeTableIdInput() {
-    return this._routeTableId
   }
 
   // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this.getStringAttribute('subnet_id');
+    return this._subnetId;
   }
-  public set subnetId(value: string ) {
+  public set subnetId(value: string | undefined) {
     this._subnetId = value;
-  }
-  public resetSubnetId() {
-    this._subnetId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId
   }
 
   // =========
@@ -96,9 +83,9 @@ export class RouteTableAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      gateway_id: cdktf.stringToTerraform(this._gatewayId),
-      route_table_id: cdktf.stringToTerraform(this._routeTableId),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      gateway_id: this._gatewayId,
+      route_table_id: this._routeTableId,
+      subnet_id: this._subnetId,
     };
   }
 }

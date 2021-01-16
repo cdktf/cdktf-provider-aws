@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EksFargateProfileConfig extends cdktf.TerraformMetaArguments {
+export interface EksFargateProfileConfig extends TerraformMetaArguments {
   readonly clusterName: string;
   readonly fargateProfileName: string;
   readonly podExecutionRoleArn: string;
@@ -21,32 +22,14 @@ export interface EksFargateProfileSelector {
   readonly labels?: { [key: string]: string };
   readonly namespace: string;
 }
-
-function eksFargateProfileSelectorToTerraform(struct?: EksFargateProfileSelector): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    labels: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.labels),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-  }
-}
-
 export interface EksFargateProfileTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
-function eksFargateProfileTimeoutsToTerraform(struct?: EksFargateProfileTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
-
 // Resource
 
-export class EksFargateProfile extends cdktf.TerraformResource {
+export class EksFargateProfile extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,7 +59,7 @@ export class EksFargateProfile extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -84,48 +67,40 @@ export class EksFargateProfile extends cdktf.TerraformResource {
   // cluster_name - computed: false, optional: false, required: true
   private _clusterName: string;
   public get clusterName() {
-    return this.getStringAttribute('cluster_name');
+    return this._clusterName;
   }
   public set clusterName(value: string) {
     this._clusterName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterNameInput() {
-    return this._clusterName
   }
 
   // fargate_profile_name - computed: false, optional: false, required: true
   private _fargateProfileName: string;
   public get fargateProfileName() {
-    return this.getStringAttribute('fargate_profile_name');
+    return this._fargateProfileName;
   }
   public set fargateProfileName(value: string) {
     this._fargateProfileName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get fargateProfileNameInput() {
-    return this._fargateProfileName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // pod_execution_role_arn - computed: false, optional: false, required: true
   private _podExecutionRoleArn: string;
   public get podExecutionRoleArn() {
-    return this.getStringAttribute('pod_execution_role_arn');
+    return this._podExecutionRoleArn;
   }
   public set podExecutionRoleArn(value: string) {
     this._podExecutionRoleArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get podExecutionRoleArnInput() {
-    return this._podExecutionRoleArn
-  }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -133,62 +108,37 @@ export class EksFargateProfile extends cdktf.TerraformResource {
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[];
   public get subnetIds() {
-    return this.getListAttribute('subnet_ids');
+    return this._subnetIds;
   }
-  public set subnetIds(value: string[] ) {
+  public set subnetIds(value: string[] | undefined) {
     this._subnetIds = value;
-  }
-  public resetSubnetIds() {
-    this._subnetIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdsInput() {
-    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // selector - computed: false, optional: false, required: true
   private _selector: EksFargateProfileSelector[];
   public get selector() {
-    return this.interpolationForAttribute('selector') as any;
+    return this._selector;
   }
   public set selector(value: EksFargateProfileSelector[]) {
     this._selector = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectorInput() {
-    return this._selector
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EksFargateProfileTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: EksFargateProfileTimeouts ) {
+  public set timeouts(value: EksFargateProfileTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -197,13 +147,13 @@ export class EksFargateProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      fargate_profile_name: cdktf.stringToTerraform(this._fargateProfileName),
-      pod_execution_role_arn: cdktf.stringToTerraform(this._podExecutionRoleArn),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      selector: cdktf.listMapper(eksFargateProfileSelectorToTerraform)(this._selector),
-      timeouts: eksFargateProfileTimeoutsToTerraform(this._timeouts),
+      cluster_name: this._clusterName,
+      fargate_profile_name: this._fargateProfileName,
+      pod_execution_role_arn: this._podExecutionRoleArn,
+      subnet_ids: this._subnetIds,
+      tags: this._tags,
+      selector: this._selector,
+      timeouts: this._timeouts,
     };
   }
 }

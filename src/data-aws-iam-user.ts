@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamUserConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIamUserConfig extends TerraformMetaArguments {
   readonly userName: string;
 }
 
 // Resource
 
-export class DataAwsIamUser extends cdktf.TerraformDataSource {
+export class DataAwsIamUser extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,27 +37,31 @@ export class DataAwsIamUser extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // path - computed: true, optional: false, required: false
+  // path - computed: true, optional: false, required: true
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // permissions_boundary - computed: true, optional: false, required: false
+  // permissions_boundary - computed: true, optional: false, required: true
   public get permissionsBoundary() {
     return this.getStringAttribute('permissions_boundary');
   }
 
-  // user_id - computed: true, optional: false, required: false
+  // user_id - computed: true, optional: false, required: true
   public get userId() {
     return this.getStringAttribute('user_id');
   }
@@ -64,14 +69,10 @@ export class DataAwsIamUser extends cdktf.TerraformDataSource {
   // user_name - computed: false, optional: false, required: true
   private _userName: string;
   public get userName() {
-    return this.getStringAttribute('user_name');
+    return this._userName;
   }
   public set userName(value: string) {
     this._userName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userNameInput() {
-    return this._userName
   }
 
   // =========
@@ -80,7 +81,7 @@ export class DataAwsIamUser extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      user_name: cdktf.stringToTerraform(this._userName),
+      user_name: this._userName,
     };
   }
 }

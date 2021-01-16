@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LbConfig extends cdktf.TerraformMetaArguments {
+export interface LbConfig extends TerraformMetaArguments {
+  readonly customerOwnedIpv4Pool?: string;
   readonly dropInvalidHeaderFields?: boolean;
   readonly enableCrossZoneLoadBalancing?: boolean;
   readonly enableDeletionProtection?: boolean;
@@ -32,48 +34,20 @@ export interface LbAccessLogs {
   readonly enabled?: boolean;
   readonly prefix?: string;
 }
-
-function lbAccessLogsToTerraform(struct?: LbAccessLogs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-  }
-}
-
 export interface LbSubnetMapping {
   readonly allocationId?: string;
+  readonly privateIpv4Address?: string;
   readonly subnetId: string;
 }
-
-function lbSubnetMappingToTerraform(struct?: LbSubnetMapping): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    allocation_id: cdktf.stringToTerraform(struct!.allocationId),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-  }
-}
-
 export interface LbTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
-function lbTimeoutsToTerraform(struct?: LbTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class Lb extends cdktf.TerraformResource {
+export class Lb extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -90,6 +64,7 @@ export class Lb extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
     this._dropInvalidHeaderFields = config.dropInvalidHeaderFields;
     this._enableCrossZoneLoadBalancing = config.enableCrossZoneLoadBalancing;
     this._enableDeletionProtection = config.enableDeletionProtection;
@@ -112,17 +87,26 @@ export class Lb extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // arn_suffix - computed: true, optional: false, required: false
+  // arn_suffix - computed: true, optional: false, required: true
   public get arnSuffix() {
     return this.getStringAttribute('arn_suffix');
   }
 
-  // dns_name - computed: true, optional: false, required: false
+  // customer_owned_ipv4_pool - computed: false, optional: true, required: false
+  private _customerOwnedIpv4Pool?: string;
+  public get customerOwnedIpv4Pool() {
+    return this._customerOwnedIpv4Pool;
+  }
+  public set customerOwnedIpv4Pool(value: string | undefined) {
+    this._customerOwnedIpv4Pool = value;
+  }
+
+  // dns_name - computed: true, optional: false, required: true
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
@@ -130,222 +114,135 @@ export class Lb extends cdktf.TerraformResource {
   // drop_invalid_header_fields - computed: false, optional: true, required: false
   private _dropInvalidHeaderFields?: boolean;
   public get dropInvalidHeaderFields() {
-    return this.getBooleanAttribute('drop_invalid_header_fields');
+    return this._dropInvalidHeaderFields;
   }
-  public set dropInvalidHeaderFields(value: boolean ) {
+  public set dropInvalidHeaderFields(value: boolean | undefined) {
     this._dropInvalidHeaderFields = value;
-  }
-  public resetDropInvalidHeaderFields() {
-    this._dropInvalidHeaderFields = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dropInvalidHeaderFieldsInput() {
-    return this._dropInvalidHeaderFields
   }
 
   // enable_cross_zone_load_balancing - computed: false, optional: true, required: false
   private _enableCrossZoneLoadBalancing?: boolean;
   public get enableCrossZoneLoadBalancing() {
-    return this.getBooleanAttribute('enable_cross_zone_load_balancing');
+    return this._enableCrossZoneLoadBalancing;
   }
-  public set enableCrossZoneLoadBalancing(value: boolean ) {
+  public set enableCrossZoneLoadBalancing(value: boolean | undefined) {
     this._enableCrossZoneLoadBalancing = value;
-  }
-  public resetEnableCrossZoneLoadBalancing() {
-    this._enableCrossZoneLoadBalancing = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableCrossZoneLoadBalancingInput() {
-    return this._enableCrossZoneLoadBalancing
   }
 
   // enable_deletion_protection - computed: false, optional: true, required: false
   private _enableDeletionProtection?: boolean;
   public get enableDeletionProtection() {
-    return this.getBooleanAttribute('enable_deletion_protection');
+    return this._enableDeletionProtection;
   }
-  public set enableDeletionProtection(value: boolean ) {
+  public set enableDeletionProtection(value: boolean | undefined) {
     this._enableDeletionProtection = value;
-  }
-  public resetEnableDeletionProtection() {
-    this._enableDeletionProtection = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableDeletionProtectionInput() {
-    return this._enableDeletionProtection
   }
 
   // enable_http2 - computed: false, optional: true, required: false
   private _enableHttp2?: boolean;
   public get enableHttp2() {
-    return this.getBooleanAttribute('enable_http2');
+    return this._enableHttp2;
   }
-  public set enableHttp2(value: boolean ) {
+  public set enableHttp2(value: boolean | undefined) {
     this._enableHttp2 = value;
-  }
-  public resetEnableHttp2() {
-    this._enableHttp2 = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableHttp2Input() {
-    return this._enableHttp2
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // idle_timeout - computed: false, optional: true, required: false
   private _idleTimeout?: number;
   public get idleTimeout() {
-    return this.getNumberAttribute('idle_timeout');
+    return this._idleTimeout;
   }
-  public set idleTimeout(value: number ) {
+  public set idleTimeout(value: number | undefined) {
     this._idleTimeout = value;
-  }
-  public resetIdleTimeout() {
-    this._idleTimeout = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idleTimeoutInput() {
-    return this._idleTimeout
   }
 
   // internal - computed: true, optional: true, required: false
   private _internal?: boolean;
   public get internal() {
-    return this.getBooleanAttribute('internal');
+    return this._internal ?? this.getBooleanAttribute('internal');
   }
-  public set internal(value: boolean) {
+  public set internal(value: boolean | undefined) {
     this._internal = value;
-  }
-  public resetInternal() {
-    this._internal = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get internalInput() {
-    return this._internal
   }
 
   // ip_address_type - computed: true, optional: true, required: false
   private _ipAddressType?: string;
   public get ipAddressType() {
-    return this.getStringAttribute('ip_address_type');
+    return this._ipAddressType ?? this.getStringAttribute('ip_address_type');
   }
-  public set ipAddressType(value: string) {
+  public set ipAddressType(value: string | undefined) {
     this._ipAddressType = value;
-  }
-  public resetIpAddressType() {
-    this._ipAddressType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipAddressTypeInput() {
-    return this._ipAddressType
   }
 
   // load_balancer_type - computed: false, optional: true, required: false
   private _loadBalancerType?: string;
   public get loadBalancerType() {
-    return this.getStringAttribute('load_balancer_type');
+    return this._loadBalancerType;
   }
-  public set loadBalancerType(value: string ) {
+  public set loadBalancerType(value: string | undefined) {
     this._loadBalancerType = value;
-  }
-  public resetLoadBalancerType() {
-    this._loadBalancerType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loadBalancerTypeInput() {
-    return this._loadBalancerType
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[];
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return this._securityGroups ?? this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[]) {
+  public set securityGroups(value: string[] | undefined) {
     this._securityGroups = value;
-  }
-  public resetSecurityGroups() {
-    this._securityGroups = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupsInput() {
-    return this._securityGroups
   }
 
   // subnets - computed: true, optional: true, required: false
   private _subnets?: string[];
   public get subnets() {
-    return this.getListAttribute('subnets');
+    return this._subnets ?? this.getListAttribute('subnets');
   }
-  public set subnets(value: string[]) {
+  public set subnets(value: string[] | undefined) {
     this._subnets = value;
-  }
-  public resetSubnets() {
-    this._subnets = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetsInput() {
-    return this._subnets
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
 
-  // zone_id - computed: true, optional: false, required: false
+  // zone_id - computed: true, optional: false, required: true
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
@@ -353,49 +250,28 @@ export class Lb extends cdktf.TerraformResource {
   // access_logs - computed: false, optional: true, required: false
   private _accessLogs?: LbAccessLogs[];
   public get accessLogs() {
-    return this.interpolationForAttribute('access_logs') as any;
+    return this._accessLogs;
   }
-  public set accessLogs(value: LbAccessLogs[] ) {
+  public set accessLogs(value: LbAccessLogs[] | undefined) {
     this._accessLogs = value;
-  }
-  public resetAccessLogs() {
-    this._accessLogs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accessLogsInput() {
-    return this._accessLogs
   }
 
   // subnet_mapping - computed: false, optional: true, required: false
   private _subnetMapping?: LbSubnetMapping[];
   public get subnetMapping() {
-    return this.interpolationForAttribute('subnet_mapping') as any;
+    return this._subnetMapping;
   }
-  public set subnetMapping(value: LbSubnetMapping[] ) {
+  public set subnetMapping(value: LbSubnetMapping[] | undefined) {
     this._subnetMapping = value;
-  }
-  public resetSubnetMapping() {
-    this._subnetMapping = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetMappingInput() {
-    return this._subnetMapping
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: LbTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: LbTimeouts ) {
+  public set timeouts(value: LbTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -404,22 +280,23 @@ export class Lb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      drop_invalid_header_fields: cdktf.booleanToTerraform(this._dropInvalidHeaderFields),
-      enable_cross_zone_load_balancing: cdktf.booleanToTerraform(this._enableCrossZoneLoadBalancing),
-      enable_deletion_protection: cdktf.booleanToTerraform(this._enableDeletionProtection),
-      enable_http2: cdktf.booleanToTerraform(this._enableHttp2),
-      idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
-      internal: cdktf.booleanToTerraform(this._internal),
-      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
-      load_balancer_type: cdktf.stringToTerraform(this._loadBalancerType),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
-      subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      access_logs: cdktf.listMapper(lbAccessLogsToTerraform)(this._accessLogs),
-      subnet_mapping: cdktf.listMapper(lbSubnetMappingToTerraform)(this._subnetMapping),
-      timeouts: lbTimeoutsToTerraform(this._timeouts),
+      customer_owned_ipv4_pool: this._customerOwnedIpv4Pool,
+      drop_invalid_header_fields: this._dropInvalidHeaderFields,
+      enable_cross_zone_load_balancing: this._enableCrossZoneLoadBalancing,
+      enable_deletion_protection: this._enableDeletionProtection,
+      enable_http2: this._enableHttp2,
+      idle_timeout: this._idleTimeout,
+      internal: this._internal,
+      ip_address_type: this._ipAddressType,
+      load_balancer_type: this._loadBalancerType,
+      name: this._name,
+      name_prefix: this._namePrefix,
+      security_groups: this._securityGroups,
+      subnets: this._subnets,
+      tags: this._tags,
+      access_logs: this._accessLogs,
+      subnet_mapping: this._subnetMapping,
+      timeouts: this._timeouts,
     };
   }
 }

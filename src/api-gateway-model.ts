@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayModelConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayModelConfig extends TerraformMetaArguments {
   readonly contentType: string;
   readonly description?: string;
   readonly name: string;
@@ -16,7 +17,7 @@ export interface ApiGatewayModelConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayModel extends cdktf.TerraformResource {
+export class ApiGatewayModel extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,77 +48,55 @@ export class ApiGatewayModel extends cdktf.TerraformResource {
   // content_type - computed: false, optional: false, required: true
   private _contentType: string;
   public get contentType() {
-    return this.getStringAttribute('content_type');
+    return this._contentType;
   }
   public set contentType(value: string) {
     this._contentType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contentTypeInput() {
-    return this._contentType
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this.getStringAttribute('rest_api_id');
+    return this._restApiId;
   }
   public set restApiId(value: string) {
     this._restApiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restApiIdInput() {
-    return this._restApiId
   }
 
   // schema - computed: false, optional: true, required: false
   private _schema?: string;
   public get schema() {
-    return this.getStringAttribute('schema');
+    return this._schema;
   }
-  public set schema(value: string ) {
+  public set schema(value: string | undefined) {
     this._schema = value;
-  }
-  public resetSchema() {
-    this._schema = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get schemaInput() {
-    return this._schema
   }
 
   // =========
@@ -126,11 +105,11 @@ export class ApiGatewayModel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_type: cdktf.stringToTerraform(this._contentType),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      schema: cdktf.stringToTerraform(this._schema),
+      content_type: this._contentType,
+      description: this._description,
+      name: this._name,
+      rest_api_id: this._restApiId,
+      schema: this._schema,
     };
   }
 }

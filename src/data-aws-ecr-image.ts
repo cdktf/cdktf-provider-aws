@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcrImageConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcrImageConfig extends TerraformMetaArguments {
   readonly imageDigest?: string;
   readonly imageTag?: string;
   readonly registryId?: string;
@@ -15,7 +16,7 @@ export interface DataAwsEcrImageConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsEcrImage extends cdktf.TerraformDataSource {
+export class DataAwsEcrImage extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -43,32 +44,29 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // image_digest - computed: true, optional: true, required: false
   private _imageDigest?: string;
   public get imageDigest() {
-    return this.getStringAttribute('image_digest');
+    return this._imageDigest ?? this.getStringAttribute('image_digest');
   }
-  public set imageDigest(value: string) {
+  public set imageDigest(value: string | undefined) {
     this._imageDigest = value;
   }
-  public resetImageDigest() {
-    this._imageDigest = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get imageDigestInput() {
-    return this._imageDigest
-  }
 
-  // image_pushed_at - computed: true, optional: false, required: false
+  // image_pushed_at - computed: true, optional: false, required: true
   public get imagePushedAt() {
     return this.getNumberAttribute('image_pushed_at');
   }
 
-  // image_size_in_bytes - computed: true, optional: false, required: false
+  // image_size_in_bytes - computed: true, optional: false, required: true
   public get imageSizeInBytes() {
     return this.getNumberAttribute('image_size_in_bytes');
   }
@@ -76,20 +74,13 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
   // image_tag - computed: false, optional: true, required: false
   private _imageTag?: string;
   public get imageTag() {
-    return this.getStringAttribute('image_tag');
+    return this._imageTag;
   }
-  public set imageTag(value: string ) {
+  public set imageTag(value: string | undefined) {
     this._imageTag = value;
   }
-  public resetImageTag() {
-    this._imageTag = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get imageTagInput() {
-    return this._imageTag
-  }
 
-  // image_tags - computed: true, optional: false, required: false
+  // image_tags - computed: true, optional: false, required: true
   public get imageTags() {
     return this.getListAttribute('image_tags');
   }
@@ -97,30 +88,19 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
   // registry_id - computed: true, optional: true, required: false
   private _registryId?: string;
   public get registryId() {
-    return this.getStringAttribute('registry_id');
+    return this._registryId ?? this.getStringAttribute('registry_id');
   }
-  public set registryId(value: string) {
+  public set registryId(value: string | undefined) {
     this._registryId = value;
-  }
-  public resetRegistryId() {
-    this._registryId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get registryIdInput() {
-    return this._registryId
   }
 
   // repository_name - computed: false, optional: false, required: true
   private _repositoryName: string;
   public get repositoryName() {
-    return this.getStringAttribute('repository_name');
+    return this._repositoryName;
   }
   public set repositoryName(value: string) {
     this._repositoryName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get repositoryNameInput() {
-    return this._repositoryName
   }
 
   // =========
@@ -129,10 +109,10 @@ export class DataAwsEcrImage extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      image_digest: cdktf.stringToTerraform(this._imageDigest),
-      image_tag: cdktf.stringToTerraform(this._imageTag),
-      registry_id: cdktf.stringToTerraform(this._registryId),
-      repository_name: cdktf.stringToTerraform(this._repositoryName),
+      image_digest: this._imageDigest,
+      image_tag: this._imageTag,
+      registry_id: this._registryId,
+      repository_name: this._repositoryName,
     };
   }
 }

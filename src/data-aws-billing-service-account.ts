@@ -2,16 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsBillingServiceAccountConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBillingServiceAccountConfig extends TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsBillingServiceAccount extends cdktf.TerraformDataSource {
+export class DataAwsBillingServiceAccount extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -34,14 +35,18 @@ export class DataAwsBillingServiceAccount extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========

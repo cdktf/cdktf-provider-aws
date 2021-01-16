@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcsTaskDefinitionConfig extends TerraformMetaArguments {
   readonly taskDefinition: string;
 }
 
 // Resource
 
-export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
+export class DataAwsEcsTaskDefinition extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,27 +37,31 @@ export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // family - computed: true, optional: false, required: false
+  // family - computed: true, optional: false, required: true
   public get family() {
     return this.getStringAttribute('family');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // network_mode - computed: true, optional: false, required: false
+  // network_mode - computed: true, optional: false, required: true
   public get networkMode() {
     return this.getStringAttribute('network_mode');
   }
 
-  // revision - computed: true, optional: false, required: false
+  // revision - computed: true, optional: false, required: true
   public get revision() {
     return this.getNumberAttribute('revision');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -64,17 +69,13 @@ export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
   // task_definition - computed: false, optional: false, required: true
   private _taskDefinition: string;
   public get taskDefinition() {
-    return this.getStringAttribute('task_definition');
+    return this._taskDefinition;
   }
   public set taskDefinition(value: string) {
     this._taskDefinition = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get taskDefinitionInput() {
-    return this._taskDefinition
-  }
 
-  // task_role_arn - computed: true, optional: false, required: false
+  // task_role_arn - computed: true, optional: false, required: true
   public get taskRoleArn() {
     return this.getStringAttribute('task_role_arn');
   }
@@ -85,7 +86,7 @@ export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      task_definition: cdktf.stringToTerraform(this._taskDefinition),
+      task_definition: this._taskDefinition,
     };
   }
 }

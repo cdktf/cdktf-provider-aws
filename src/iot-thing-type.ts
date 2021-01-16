@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IotThingTypeConfig extends cdktf.TerraformMetaArguments {
+export interface IotThingTypeConfig extends TerraformMetaArguments {
   readonly deprecated?: boolean;
   readonly name: string;
   /** properties block */
@@ -17,18 +18,9 @@ export interface IotThingTypeProperties {
   readonly searchableAttributes?: string[];
 }
 
-function iotThingTypePropertiesToTerraform(struct?: IotThingTypeProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    description: cdktf.stringToTerraform(struct!.description),
-    searchable_attributes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.searchableAttributes),
-  }
-}
-
-
 // Resource
 
-export class IotThingType extends cdktf.TerraformResource {
+export class IotThingType extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -54,7 +46,7 @@ export class IotThingType extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -62,51 +54,37 @@ export class IotThingType extends cdktf.TerraformResource {
   // deprecated - computed: false, optional: true, required: false
   private _deprecated?: boolean;
   public get deprecated() {
-    return this.getBooleanAttribute('deprecated');
+    return this._deprecated;
   }
-  public set deprecated(value: boolean ) {
+  public set deprecated(value: boolean | undefined) {
     this._deprecated = value;
-  }
-  public resetDeprecated() {
-    this._deprecated = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deprecatedInput() {
-    return this._deprecated
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // properties - computed: false, optional: true, required: false
   private _properties?: IotThingTypeProperties[];
   public get properties() {
-    return this.interpolationForAttribute('properties') as any;
+    return this._properties;
   }
-  public set properties(value: IotThingTypeProperties[] ) {
+  public set properties(value: IotThingTypeProperties[] | undefined) {
     this._properties = value;
-  }
-  public resetProperties() {
-    this._properties = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get propertiesInput() {
-    return this._properties
   }
 
   // =========
@@ -115,9 +93,9 @@ export class IotThingType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deprecated: cdktf.booleanToTerraform(this._deprecated),
-      name: cdktf.stringToTerraform(this._name),
-      properties: cdktf.listMapper(iotThingTypePropertiesToTerraform)(this._properties),
+      deprecated: this._deprecated,
+      name: this._name,
+      properties: this._properties,
     };
   }
 }

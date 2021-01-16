@@ -2,104 +2,106 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsOrganizationsOrganizationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOrganizationsOrganizationConfig extends TerraformMetaArguments {
 }
-export class DataAwsOrganizationsOrganizationAccounts extends cdktf.ComplexComputedList {
+export class DataAwsOrganizationsOrganizationAccounts extends ComplexComputedList {
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // email - computed: true, optional: false, required: false
+  // email - computed: true, optional: false, required: true
   public get email() {
     return this.getStringAttribute('email');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: false, required: true
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
 }
-export class DataAwsOrganizationsOrganizationNonMasterAccounts extends cdktf.ComplexComputedList {
+export class DataAwsOrganizationsOrganizationNonMasterAccounts extends ComplexComputedList {
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // email - computed: true, optional: false, required: false
+  // email - computed: true, optional: false, required: true
   public get email() {
     return this.getStringAttribute('email');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: false, required: true
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
 }
-export class DataAwsOrganizationsOrganizationRootsPolicyTypes extends cdktf.ComplexComputedList {
+export class DataAwsOrganizationsOrganizationRootsPolicyTypes extends ComplexComputedList {
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // type - computed: true, optional: false, required: false
+  // type - computed: true, optional: false, required: true
   public get type() {
     return this.getStringAttribute('type');
   }
 }
-export class DataAwsOrganizationsOrganizationRoots extends cdktf.ComplexComputedList {
+export class DataAwsOrganizationsOrganizationRoots extends ComplexComputedList {
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: false, required: true
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // policy_types - computed: true, optional: false, required: false
+  // policy_types - computed: true, optional: false, required: true
   public get policyTypes() {
-    return this.interpolationForAttribute('policy_types') as any;
+    return 'not implemented' as any;
   }
 }
 
 // Resource
 
-export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource {
+export class DataAwsOrganizationsOrganization extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -122,57 +124,61 @@ export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource 
   // ATTRIBUTES
   // ==========
 
-  // accounts - computed: true, optional: false, required: false
+  // accounts - computed: true, optional: false, required: true
   public accounts(index: string) {
     return new DataAwsOrganizationsOrganizationAccounts(this, 'accounts', index);
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // aws_service_access_principals - computed: true, optional: false, required: false
+  // aws_service_access_principals - computed: true, optional: false, required: true
   public get awsServiceAccessPrincipals() {
     return this.getListAttribute('aws_service_access_principals');
   }
 
-  // enabled_policy_types - computed: true, optional: false, required: false
+  // enabled_policy_types - computed: true, optional: false, required: true
   public get enabledPolicyTypes() {
     return this.getListAttribute('enabled_policy_types');
   }
 
-  // feature_set - computed: true, optional: false, required: false
+  // feature_set - computed: true, optional: false, required: true
   public get featureSet() {
     return this.getStringAttribute('feature_set');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // master_account_arn - computed: true, optional: false, required: false
+  // master_account_arn - computed: true, optional: false, required: true
   public get masterAccountArn() {
     return this.getStringAttribute('master_account_arn');
   }
 
-  // master_account_email - computed: true, optional: false, required: false
+  // master_account_email - computed: true, optional: false, required: true
   public get masterAccountEmail() {
     return this.getStringAttribute('master_account_email');
   }
 
-  // master_account_id - computed: true, optional: false, required: false
+  // master_account_id - computed: true, optional: false, required: true
   public get masterAccountId() {
     return this.getStringAttribute('master_account_id');
   }
 
-  // non_master_accounts - computed: true, optional: false, required: false
+  // non_master_accounts - computed: true, optional: false, required: true
   public nonMasterAccounts(index: string) {
     return new DataAwsOrganizationsOrganizationNonMasterAccounts(this, 'non_master_accounts', index);
   }
 
-  // roots - computed: true, optional: false, required: false
+  // roots - computed: true, optional: false, required: true
   public roots(index: string) {
     return new DataAwsOrganizationsOrganizationRoots(this, 'roots', index);
   }

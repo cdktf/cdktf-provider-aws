@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DirectoryServiceLogSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryServiceLogSubscriptionConfig extends TerraformMetaArguments {
   readonly directoryId: string;
   readonly logGroupName: string;
 }
 
 // Resource
 
-export class DirectoryServiceLogSubscription extends cdktf.TerraformResource {
+export class DirectoryServiceLogSubscription extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class DirectoryServiceLogSubscription extends cdktf.TerraformResource {
   // directory_id - computed: false, optional: false, required: true
   private _directoryId: string;
   public get directoryId() {
-    return this.getStringAttribute('directory_id');
+    return this._directoryId;
   }
   public set directoryId(value: string) {
     this._directoryId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get directoryIdInput() {
-    return this._directoryId
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // log_group_name - computed: false, optional: false, required: true
   private _logGroupName: string;
   public get logGroupName() {
-    return this.getStringAttribute('log_group_name');
+    return this._logGroupName;
   }
   public set logGroupName(value: string) {
     this._logGroupName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logGroupNameInput() {
-    return this._logGroupName
   }
 
   // =========
@@ -75,8 +72,8 @@ export class DirectoryServiceLogSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      log_group_name: cdktf.stringToTerraform(this._logGroupName),
+      directory_id: this._directoryId,
+      log_group_name: this._logGroupName,
     };
   }
 }

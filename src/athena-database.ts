@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface AthenaDatabaseConfig extends TerraformMetaArguments {
   readonly bucket: string;
   readonly forceDestroy?: boolean;
   readonly name: string;
@@ -18,18 +19,9 @@ export interface AthenaDatabaseEncryptionConfiguration {
   readonly kmsKey?: string;
 }
 
-function athenaDatabaseEncryptionConfigurationToTerraform(struct?: AthenaDatabaseEncryptionConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-  }
-}
-
-
 // Resource
 
-export class AthenaDatabase extends cdktf.TerraformResource {
+export class AthenaDatabase extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,64 +51,46 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this.getStringAttribute('bucket');
+    return this._bucket;
   }
   public set bucket(value: string) {
     this._bucket = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bucketInput() {
-    return this._bucket
   }
 
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy');
+    return this._forceDestroy;
   }
-  public set forceDestroy(value: boolean ) {
+  public set forceDestroy(value: boolean | undefined) {
     this._forceDestroy = value;
-  }
-  public resetForceDestroy() {
-    this._forceDestroy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get forceDestroyInput() {
-    return this._forceDestroy
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // encryption_configuration - computed: false, optional: true, required: false
   private _encryptionConfiguration?: AthenaDatabaseEncryptionConfiguration[];
   public get encryptionConfiguration() {
-    return this.interpolationForAttribute('encryption_configuration') as any;
+    return this._encryptionConfiguration;
   }
-  public set encryptionConfiguration(value: AthenaDatabaseEncryptionConfiguration[] ) {
+  public set encryptionConfiguration(value: AthenaDatabaseEncryptionConfiguration[] | undefined) {
     this._encryptionConfiguration = value;
-  }
-  public resetEncryptionConfiguration() {
-    this._encryptionConfiguration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get encryptionConfigurationInput() {
-    return this._encryptionConfiguration
   }
 
   // =========
@@ -125,10 +99,10 @@ export class AthenaDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      name: cdktf.stringToTerraform(this._name),
-      encryption_configuration: cdktf.listMapper(athenaDatabaseEncryptionConfigurationToTerraform)(this._encryptionConfiguration),
+      bucket: this._bucket,
+      force_destroy: this._forceDestroy,
+      name: this._name,
+      encryption_configuration: this._encryptionConfiguration,
     };
   }
 }

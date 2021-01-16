@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamUserConfig extends cdktf.TerraformMetaArguments {
+export interface IamUserConfig extends TerraformMetaArguments {
   /** Delete user even if it has non-Terraform-managed IAM access keys, login profile or MFA devices */
   readonly forceDestroy?: boolean;
   readonly name: string;
@@ -17,7 +18,7 @@ export interface IamUserConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class IamUser extends cdktf.TerraformResource {
+export class IamUser extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,7 +46,7 @@ export class IamUser extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -53,86 +54,58 @@ export class IamUser extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy');
+    return this._forceDestroy;
   }
-  public set forceDestroy(value: boolean ) {
+  public set forceDestroy(value: boolean | undefined) {
     this._forceDestroy = value;
-  }
-  public resetForceDestroy() {
-    this._forceDestroy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get forceDestroyInput() {
-    return this._forceDestroy
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // path - computed: false, optional: true, required: false
   private _path?: string;
   public get path() {
-    return this.getStringAttribute('path');
+    return this._path;
   }
-  public set path(value: string ) {
+  public set path(value: string | undefined) {
     this._path = value;
-  }
-  public resetPath() {
-    this._path = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pathInput() {
-    return this._path
   }
 
   // permissions_boundary - computed: false, optional: true, required: false
   private _permissionsBoundary?: string;
   public get permissionsBoundary() {
-    return this.getStringAttribute('permissions_boundary');
+    return this._permissionsBoundary;
   }
-  public set permissionsBoundary(value: string ) {
+  public set permissionsBoundary(value: string | undefined) {
     this._permissionsBoundary = value;
-  }
-  public resetPermissionsBoundary() {
-    this._permissionsBoundary = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get permissionsBoundaryInput() {
-    return this._permissionsBoundary
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // unique_id - computed: true, optional: false, required: false
+  // unique_id - computed: true, optional: false, required: true
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
   }
@@ -143,11 +116,11 @@ export class IamUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      name: cdktf.stringToTerraform(this._name),
-      path: cdktf.stringToTerraform(this._path),
-      permissions_boundary: cdktf.stringToTerraform(this._permissionsBoundary),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      force_destroy: this._forceDestroy,
+      name: this._name,
+      path: this._path,
+      permissions_boundary: this._permissionsBoundary,
+      tags: this._tags,
     };
   }
 }

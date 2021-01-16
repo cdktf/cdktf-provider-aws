@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsOutpostConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOutpostsOutpostConfig extends TerraformMetaArguments {
   readonly name?: string;
 }
 
 // Resource
 
-export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
+export class DataAwsOutpostsOutpost extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,53 +37,54 @@ export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: true, required: false
+  private _arn?: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn ?? this.getStringAttribute('arn');
+  }
+  public set arn(value: string | undefined) {
+    this._arn = value;
   }
 
-  // availability_zone - computed: true, optional: false, required: false
+  // availability_zone - computed: true, optional: false, required: true
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
 
-  // availability_zone_id - computed: true, optional: false, required: false
+  // availability_zone_id - computed: true, optional: false, required: true
   public get availabilityZoneId() {
     return this.getStringAttribute('availability_zone_id');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
 
-  // site_id - computed: true, optional: false, required: false
+  // site_id - computed: true, optional: false, required: true
   public get siteId() {
     return this.getStringAttribute('site_id');
   }
@@ -93,7 +95,7 @@ export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

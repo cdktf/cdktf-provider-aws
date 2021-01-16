@@ -2,60 +2,72 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsNetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsNetworkInterfaceConfig extends TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsNetworkInterfaceFilter[];
 }
-export class DataAwsNetworkInterfaceAssociation extends cdktf.ComplexComputedList {
+export class DataAwsNetworkInterfaceAssociation extends ComplexComputedList {
 
-  // allocation_id - computed: true, optional: false, required: false
+  // allocation_id - computed: true, optional: false, required: true
   public get allocationId() {
     return this.getStringAttribute('allocation_id');
   }
 
-  // association_id - computed: true, optional: false, required: false
+  // association_id - computed: true, optional: false, required: true
   public get associationId() {
     return this.getStringAttribute('association_id');
   }
 
-  // ip_owner_id - computed: true, optional: false, required: false
+  // carrier_ip - computed: true, optional: false, required: true
+  public get carrierIp() {
+    return this.getStringAttribute('carrier_ip');
+  }
+
+  // customer_owned_ip - computed: true, optional: false, required: true
+  public get customerOwnedIp() {
+    return this.getStringAttribute('customer_owned_ip');
+  }
+
+  // ip_owner_id - computed: true, optional: false, required: true
   public get ipOwnerId() {
     return this.getStringAttribute('ip_owner_id');
   }
 
-  // public_dns_name - computed: true, optional: false, required: false
+  // public_dns_name - computed: true, optional: false, required: true
   public get publicDnsName() {
     return this.getStringAttribute('public_dns_name');
   }
 
-  // public_ip - computed: true, optional: false, required: false
+  // public_ip - computed: true, optional: false, required: true
   public get publicIp() {
     return this.getStringAttribute('public_ip');
   }
 }
-export class DataAwsNetworkInterfaceAttachment extends cdktf.ComplexComputedList {
+export class DataAwsNetworkInterfaceAttachment extends ComplexComputedList {
 
-  // attachment_id - computed: true, optional: false, required: false
+  // attachment_id - computed: true, optional: false, required: true
   public get attachmentId() {
     return this.getStringAttribute('attachment_id');
   }
 
-  // device_index - computed: true, optional: false, required: false
+  // device_index - computed: true, optional: false, required: true
   public get deviceIndex() {
     return this.getNumberAttribute('device_index');
   }
 
-  // instance_id - computed: true, optional: false, required: false
+  // instance_id - computed: true, optional: false, required: true
   public get instanceId() {
     return this.getStringAttribute('instance_id');
   }
 
-  // instance_owner_id - computed: true, optional: false, required: false
+  // instance_owner_id - computed: true, optional: false, required: true
   public get instanceOwnerId() {
     return this.getStringAttribute('instance_owner_id');
   }
@@ -65,18 +77,9 @@ export interface DataAwsNetworkInterfaceFilter {
   readonly values: string[];
 }
 
-function dataAwsNetworkInterfaceFilterToTerraform(struct?: DataAwsNetworkInterfaceFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
+export class DataAwsNetworkInterface extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -101,103 +104,100 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // association - computed: true, optional: false, required: false
+  // association - computed: true, optional: false, required: true
   public association(index: string) {
     return new DataAwsNetworkInterfaceAssociation(this, 'association', index);
   }
 
-  // attachment - computed: true, optional: false, required: false
+  // attachment - computed: true, optional: false, required: true
   public attachment(index: string) {
     return new DataAwsNetworkInterfaceAttachment(this, 'attachment', index);
   }
 
-  // availability_zone - computed: true, optional: false, required: false
+  // availability_zone - computed: true, optional: false, required: true
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // interface_type - computed: true, optional: false, required: false
+  // interface_type - computed: true, optional: false, required: true
   public get interfaceType() {
     return this.getStringAttribute('interface_type');
   }
 
-  // ipv6_addresses - computed: true, optional: false, required: false
+  // ipv6_addresses - computed: true, optional: false, required: true
   public get ipv6Addresses() {
     return this.getListAttribute('ipv6_addresses');
   }
 
-  // mac_address - computed: true, optional: false, required: false
+  // mac_address - computed: true, optional: false, required: true
   public get macAddress() {
     return this.getStringAttribute('mac_address');
   }
 
-  // outpost_arn - computed: true, optional: false, required: false
+  // outpost_arn - computed: true, optional: false, required: true
   public get outpostArn() {
     return this.getStringAttribute('outpost_arn');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
 
-  // private_dns_name - computed: true, optional: false, required: false
+  // private_dns_name - computed: true, optional: false, required: true
   public get privateDnsName() {
     return this.getStringAttribute('private_dns_name');
   }
 
-  // private_ip - computed: true, optional: false, required: false
+  // private_ip - computed: true, optional: false, required: true
   public get privateIp() {
     return this.getStringAttribute('private_ip');
   }
 
-  // private_ips - computed: true, optional: false, required: false
+  // private_ips - computed: true, optional: false, required: true
   public get privateIps() {
     return this.getListAttribute('private_ips');
   }
 
-  // requester_id - computed: true, optional: false, required: false
+  // requester_id - computed: true, optional: false, required: true
   public get requesterId() {
     return this.getStringAttribute('requester_id');
   }
 
-  // security_groups - computed: true, optional: false, required: false
+  // security_groups - computed: true, optional: false, required: true
   public get securityGroups() {
     return this.getListAttribute('security_groups');
   }
 
-  // subnet_id - computed: true, optional: false, required: false
+  // subnet_id - computed: true, optional: false, required: true
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -205,17 +205,10 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsNetworkInterfaceFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsNetworkInterfaceFilter[] ) {
+  public set filter(value: DataAwsNetworkInterfaceFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -224,8 +217,8 @@ export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsNetworkInterfaceFilterToTerraform)(this._filter),
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface WafGeoMatchSetConfig extends cdktf.TerraformMetaArguments {
+export interface WafGeoMatchSetConfig extends TerraformMetaArguments {
   readonly name: string;
   /** geo_match_constraint block */
   readonly geoMatchConstraint?: WafGeoMatchSetGeoMatchConstraint[];
@@ -16,18 +17,9 @@ export interface WafGeoMatchSetGeoMatchConstraint {
   readonly value: string;
 }
 
-function wafGeoMatchSetGeoMatchConstraintToTerraform(struct?: WafGeoMatchSetGeoMatchConstraint): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
-
 // Resource
 
-export class WafGeoMatchSet extends cdktf.TerraformResource {
+export class WafGeoMatchSet extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -52,43 +44,36 @@ export class WafGeoMatchSet extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // geo_match_constraint - computed: false, optional: true, required: false
   private _geoMatchConstraint?: WafGeoMatchSetGeoMatchConstraint[];
   public get geoMatchConstraint() {
-    return this.interpolationForAttribute('geo_match_constraint') as any;
+    return this._geoMatchConstraint;
   }
-  public set geoMatchConstraint(value: WafGeoMatchSetGeoMatchConstraint[] ) {
+  public set geoMatchConstraint(value: WafGeoMatchSetGeoMatchConstraint[] | undefined) {
     this._geoMatchConstraint = value;
-  }
-  public resetGeoMatchConstraint() {
-    this._geoMatchConstraint = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get geoMatchConstraintInput() {
-    return this._geoMatchConstraint
   }
 
   // =========
@@ -97,8 +82,8 @@ export class WafGeoMatchSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      geo_match_constraint: cdktf.listMapper(wafGeoMatchSetGeoMatchConstraintToTerraform)(this._geoMatchConstraint),
+      name: this._name,
+      geo_match_constraint: this._geoMatchConstraint,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsVolumesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEbsVolumesConfig extends TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsEbsVolumesFilter[];
@@ -16,18 +17,9 @@ export interface DataAwsEbsVolumesFilter {
   readonly values: string[];
 }
 
-function dataAwsEbsVolumesFilterToTerraform(struct?: DataAwsEbsVolumesFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsEbsVolumes extends cdktf.TerraformDataSource {
+export class DataAwsEbsVolumes extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -53,11 +45,15 @@ export class DataAwsEbsVolumes extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ids - computed: true, optional: false, required: false
+  // ids - computed: true, optional: false, required: true
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -65,33 +61,19 @@ export class DataAwsEbsVolumes extends cdktf.TerraformDataSource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEbsVolumesFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsEbsVolumesFilter[] ) {
+  public set filter(value: DataAwsEbsVolumesFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -100,8 +82,8 @@ export class DataAwsEbsVolumes extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsEbsVolumesFilterToTerraform)(this._filter),
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

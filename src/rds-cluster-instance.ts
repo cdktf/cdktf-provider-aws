@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface RdsClusterInstanceConfig extends TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly autoMinorVersionUpgrade?: boolean;
   readonly availabilityZone?: string;
@@ -38,19 +39,9 @@ export interface RdsClusterInstanceTimeouts {
   readonly update?: string;
 }
 
-function rdsClusterInstanceTimeoutsToTerraform(struct?: RdsClusterInstanceTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class RdsClusterInstance extends cdktf.TerraformResource {
+export class RdsClusterInstance extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,20 +90,13 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this.getBooleanAttribute('apply_immediately');
+    return this._applyImmediately ?? this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | undefined) {
     this._applyImmediately = value;
   }
-  public resetApplyImmediately() {
-    this._applyImmediately = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applyImmediatelyInput() {
-    return this._applyImmediately
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -120,118 +104,72 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
   private _autoMinorVersionUpgrade?: boolean;
   public get autoMinorVersionUpgrade() {
-    return this.getBooleanAttribute('auto_minor_version_upgrade');
+    return this._autoMinorVersionUpgrade;
   }
-  public set autoMinorVersionUpgrade(value: boolean ) {
+  public set autoMinorVersionUpgrade(value: boolean | undefined) {
     this._autoMinorVersionUpgrade = value;
-  }
-  public resetAutoMinorVersionUpgrade() {
-    this._autoMinorVersionUpgrade = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoMinorVersionUpgradeInput() {
-    return this._autoMinorVersionUpgrade
   }
 
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string) {
+  public set availabilityZone(value: string | undefined) {
     this._availabilityZone = value;
-  }
-  public resetAvailabilityZone() {
-    this._availabilityZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
   }
 
   // ca_cert_identifier - computed: true, optional: true, required: false
   private _caCertIdentifier?: string;
   public get caCertIdentifier() {
-    return this.getStringAttribute('ca_cert_identifier');
+    return this._caCertIdentifier ?? this.getStringAttribute('ca_cert_identifier');
   }
-  public set caCertIdentifier(value: string) {
+  public set caCertIdentifier(value: string | undefined) {
     this._caCertIdentifier = value;
-  }
-  public resetCaCertIdentifier() {
-    this._caCertIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get caCertIdentifierInput() {
-    return this._caCertIdentifier
   }
 
   // cluster_identifier - computed: false, optional: false, required: true
   private _clusterIdentifier: string;
   public get clusterIdentifier() {
-    return this.getStringAttribute('cluster_identifier');
+    return this._clusterIdentifier;
   }
   public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdentifierInput() {
-    return this._clusterIdentifier
   }
 
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
   private _copyTagsToSnapshot?: boolean;
   public get copyTagsToSnapshot() {
-    return this.getBooleanAttribute('copy_tags_to_snapshot');
+    return this._copyTagsToSnapshot;
   }
-  public set copyTagsToSnapshot(value: boolean ) {
+  public set copyTagsToSnapshot(value: boolean | undefined) {
     this._copyTagsToSnapshot = value;
-  }
-  public resetCopyTagsToSnapshot() {
-    this._copyTagsToSnapshot = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get copyTagsToSnapshotInput() {
-    return this._copyTagsToSnapshot
   }
 
   // db_parameter_group_name - computed: true, optional: true, required: false
   private _dbParameterGroupName?: string;
   public get dbParameterGroupName() {
-    return this.getStringAttribute('db_parameter_group_name');
+    return this._dbParameterGroupName ?? this.getStringAttribute('db_parameter_group_name');
   }
-  public set dbParameterGroupName(value: string) {
+  public set dbParameterGroupName(value: string | undefined) {
     this._dbParameterGroupName = value;
-  }
-  public resetDbParameterGroupName() {
-    this._dbParameterGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dbParameterGroupNameInput() {
-    return this._dbParameterGroupName
   }
 
   // db_subnet_group_name - computed: true, optional: true, required: false
   private _dbSubnetGroupName?: string;
   public get dbSubnetGroupName() {
-    return this.getStringAttribute('db_subnet_group_name');
+    return this._dbSubnetGroupName ?? this.getStringAttribute('db_subnet_group_name');
   }
-  public set dbSubnetGroupName(value: string) {
+  public set dbSubnetGroupName(value: string | undefined) {
     this._dbSubnetGroupName = value;
   }
-  public resetDbSubnetGroupName() {
-    this._dbSubnetGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dbSubnetGroupNameInput() {
-    return this._dbSubnetGroupName
-  }
 
-  // dbi_resource_id - computed: true, optional: false, required: false
+  // dbi_resource_id - computed: true, optional: false, required: true
   public get dbiResourceId() {
     return this.getStringAttribute('dbi_resource_id');
   }
 
-  // endpoint - computed: true, optional: false, required: false
+  // endpoint - computed: true, optional: false, required: true
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -239,86 +177,58 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this.getStringAttribute('engine');
+    return this._engine;
   }
-  public set engine(value: string ) {
+  public set engine(value: string | undefined) {
     this._engine = value;
-  }
-  public resetEngine() {
-    this._engine = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineInput() {
-    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this.getStringAttribute('engine_version');
+    return this._engineVersion ?? this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string) {
+  public set engineVersion(value: string | undefined) {
     this._engineVersion = value;
-  }
-  public resetEngineVersion() {
-    this._engineVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineVersionInput() {
-    return this._engineVersion
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // identifier - computed: true, optional: true, required: false
   private _identifier?: string;
   public get identifier() {
-    return this.getStringAttribute('identifier');
+    return this._identifier ?? this.getStringAttribute('identifier');
   }
-  public set identifier(value: string) {
+  public set identifier(value: string | undefined) {
     this._identifier = value;
-  }
-  public resetIdentifier() {
-    this._identifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identifierInput() {
-    return this._identifier
   }
 
   // identifier_prefix - computed: true, optional: true, required: false
   private _identifierPrefix?: string;
   public get identifierPrefix() {
-    return this.getStringAttribute('identifier_prefix');
+    return this._identifierPrefix ?? this.getStringAttribute('identifier_prefix');
   }
-  public set identifierPrefix(value: string) {
+  public set identifierPrefix(value: string | undefined) {
     this._identifierPrefix = value;
-  }
-  public resetIdentifierPrefix() {
-    this._identifierPrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identifierPrefixInput() {
-    return this._identifierPrefix
   }
 
   // instance_class - computed: false, optional: false, required: true
   private _instanceClass: string;
   public get instanceClass() {
-    return this.getStringAttribute('instance_class');
+    return this._instanceClass;
   }
   public set instanceClass(value: string) {
     this._instanceClass = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get instanceClassInput() {
-    return this._instanceClass
-  }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
@@ -326,68 +236,40 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // monitoring_interval - computed: false, optional: true, required: false
   private _monitoringInterval?: number;
   public get monitoringInterval() {
-    return this.getNumberAttribute('monitoring_interval');
+    return this._monitoringInterval;
   }
-  public set monitoringInterval(value: number ) {
+  public set monitoringInterval(value: number | undefined) {
     this._monitoringInterval = value;
-  }
-  public resetMonitoringInterval() {
-    this._monitoringInterval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get monitoringIntervalInput() {
-    return this._monitoringInterval
   }
 
   // monitoring_role_arn - computed: true, optional: true, required: false
   private _monitoringRoleArn?: string;
   public get monitoringRoleArn() {
-    return this.getStringAttribute('monitoring_role_arn');
+    return this._monitoringRoleArn ?? this.getStringAttribute('monitoring_role_arn');
   }
-  public set monitoringRoleArn(value: string) {
+  public set monitoringRoleArn(value: string | undefined) {
     this._monitoringRoleArn = value;
-  }
-  public resetMonitoringRoleArn() {
-    this._monitoringRoleArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get monitoringRoleArnInput() {
-    return this._monitoringRoleArn
   }
 
   // performance_insights_enabled - computed: true, optional: true, required: false
   private _performanceInsightsEnabled?: boolean;
   public get performanceInsightsEnabled() {
-    return this.getBooleanAttribute('performance_insights_enabled');
+    return this._performanceInsightsEnabled ?? this.getBooleanAttribute('performance_insights_enabled');
   }
-  public set performanceInsightsEnabled(value: boolean) {
+  public set performanceInsightsEnabled(value: boolean | undefined) {
     this._performanceInsightsEnabled = value;
-  }
-  public resetPerformanceInsightsEnabled() {
-    this._performanceInsightsEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get performanceInsightsEnabledInput() {
-    return this._performanceInsightsEnabled
   }
 
   // performance_insights_kms_key_id - computed: true, optional: true, required: false
   private _performanceInsightsKmsKeyId?: string;
   public get performanceInsightsKmsKeyId() {
-    return this.getStringAttribute('performance_insights_kms_key_id');
+    return this._performanceInsightsKmsKeyId ?? this.getStringAttribute('performance_insights_kms_key_id');
   }
-  public set performanceInsightsKmsKeyId(value: string) {
+  public set performanceInsightsKmsKeyId(value: string | undefined) {
     this._performanceInsightsKmsKeyId = value;
   }
-  public resetPerformanceInsightsKmsKeyId() {
-    this._performanceInsightsKmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get performanceInsightsKmsKeyIdInput() {
-    return this._performanceInsightsKmsKeyId
-  }
 
-  // port - computed: true, optional: false, required: false
+  // port - computed: true, optional: false, required: true
   public get port() {
     return this.getNumberAttribute('port');
   }
@@ -395,68 +277,40 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // preferred_backup_window - computed: true, optional: true, required: false
   private _preferredBackupWindow?: string;
   public get preferredBackupWindow() {
-    return this.getStringAttribute('preferred_backup_window');
+    return this._preferredBackupWindow ?? this.getStringAttribute('preferred_backup_window');
   }
-  public set preferredBackupWindow(value: string) {
+  public set preferredBackupWindow(value: string | undefined) {
     this._preferredBackupWindow = value;
-  }
-  public resetPreferredBackupWindow() {
-    this._preferredBackupWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preferredBackupWindowInput() {
-    return this._preferredBackupWindow
   }
 
   // preferred_maintenance_window - computed: true, optional: true, required: false
   private _preferredMaintenanceWindow?: string;
   public get preferredMaintenanceWindow() {
-    return this.getStringAttribute('preferred_maintenance_window');
+    return this._preferredMaintenanceWindow ?? this.getStringAttribute('preferred_maintenance_window');
   }
-  public set preferredMaintenanceWindow(value: string) {
+  public set preferredMaintenanceWindow(value: string | undefined) {
     this._preferredMaintenanceWindow = value;
-  }
-  public resetPreferredMaintenanceWindow() {
-    this._preferredMaintenanceWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preferredMaintenanceWindowInput() {
-    return this._preferredMaintenanceWindow
   }
 
   // promotion_tier - computed: false, optional: true, required: false
   private _promotionTier?: number;
   public get promotionTier() {
-    return this.getNumberAttribute('promotion_tier');
+    return this._promotionTier;
   }
-  public set promotionTier(value: number ) {
+  public set promotionTier(value: number | undefined) {
     this._promotionTier = value;
-  }
-  public resetPromotionTier() {
-    this._promotionTier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get promotionTierInput() {
-    return this._promotionTier
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
   private _publiclyAccessible?: boolean;
   public get publiclyAccessible() {
-    return this.getBooleanAttribute('publicly_accessible');
+    return this._publiclyAccessible;
   }
-  public set publiclyAccessible(value: boolean ) {
+  public set publiclyAccessible(value: boolean | undefined) {
     this._publiclyAccessible = value;
   }
-  public resetPubliclyAccessible() {
-    this._publiclyAccessible = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publiclyAccessibleInput() {
-    return this._publiclyAccessible
-  }
 
-  // storage_encrypted - computed: true, optional: false, required: false
+  // storage_encrypted - computed: true, optional: false, required: true
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
@@ -464,20 +318,13 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // writer - computed: true, optional: false, required: false
+  // writer - computed: true, optional: false, required: true
   public get writer() {
     return this.getBooleanAttribute('writer');
   }
@@ -485,17 +332,10 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: RdsClusterInstanceTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: RdsClusterInstanceTimeouts ) {
+  public set timeouts(value: RdsClusterInstanceTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -504,29 +344,29 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
-      db_parameter_group_name: cdktf.stringToTerraform(this._dbParameterGroupName),
-      db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
-      instance_class: cdktf.stringToTerraform(this._instanceClass),
-      monitoring_interval: cdktf.numberToTerraform(this._monitoringInterval),
-      monitoring_role_arn: cdktf.stringToTerraform(this._monitoringRoleArn),
-      performance_insights_enabled: cdktf.booleanToTerraform(this._performanceInsightsEnabled),
-      performance_insights_kms_key_id: cdktf.stringToTerraform(this._performanceInsightsKmsKeyId),
-      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      promotion_tier: cdktf.numberToTerraform(this._promotionTier),
-      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      timeouts: rdsClusterInstanceTimeoutsToTerraform(this._timeouts),
+      apply_immediately: this._applyImmediately,
+      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
+      availability_zone: this._availabilityZone,
+      ca_cert_identifier: this._caCertIdentifier,
+      cluster_identifier: this._clusterIdentifier,
+      copy_tags_to_snapshot: this._copyTagsToSnapshot,
+      db_parameter_group_name: this._dbParameterGroupName,
+      db_subnet_group_name: this._dbSubnetGroupName,
+      engine: this._engine,
+      engine_version: this._engineVersion,
+      identifier: this._identifier,
+      identifier_prefix: this._identifierPrefix,
+      instance_class: this._instanceClass,
+      monitoring_interval: this._monitoringInterval,
+      monitoring_role_arn: this._monitoringRoleArn,
+      performance_insights_enabled: this._performanceInsightsEnabled,
+      performance_insights_kms_key_id: this._performanceInsightsKmsKeyId,
+      preferred_backup_window: this._preferredBackupWindow,
+      preferred_maintenance_window: this._preferredMaintenanceWindow,
+      promotion_tier: this._promotionTier,
+      publicly_accessible: this._publiclyAccessible,
+      tags: this._tags,
+      timeouts: this._timeouts,
     };
   }
 }

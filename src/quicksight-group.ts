@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface QuicksightGroupConfig extends cdktf.TerraformMetaArguments {
+export interface QuicksightGroupConfig extends TerraformMetaArguments {
   readonly awsAccountId?: string;
   readonly description?: string;
   readonly groupName: string;
@@ -15,7 +16,7 @@ export interface QuicksightGroupConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class QuicksightGroup extends cdktf.TerraformResource {
+export class QuicksightGroup extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,7 +43,7 @@ export class QuicksightGroup extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -50,67 +51,46 @@ export class QuicksightGroup extends cdktf.TerraformResource {
   // aws_account_id - computed: true, optional: true, required: false
   private _awsAccountId?: string;
   public get awsAccountId() {
-    return this.getStringAttribute('aws_account_id');
+    return this._awsAccountId ?? this.getStringAttribute('aws_account_id');
   }
-  public set awsAccountId(value: string) {
+  public set awsAccountId(value: string | undefined) {
     this._awsAccountId = value;
-  }
-  public resetAwsAccountId() {
-    this._awsAccountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get awsAccountIdInput() {
-    return this._awsAccountId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // group_name - computed: false, optional: false, required: true
   private _groupName: string;
   public get groupName() {
-    return this.getStringAttribute('group_name');
+    return this._groupName;
   }
   public set groupName(value: string) {
     this._groupName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get groupNameInput() {
-    return this._groupName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string;
   public get namespace() {
-    return this.getStringAttribute('namespace');
+    return this._namespace;
   }
-  public set namespace(value: string ) {
+  public set namespace(value: string | undefined) {
     this._namespace = value;
-  }
-  public resetNamespace() {
-    this._namespace = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namespaceInput() {
-    return this._namespace
   }
 
   // =========
@@ -119,10 +99,10 @@ export class QuicksightGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      description: cdktf.stringToTerraform(this._description),
-      group_name: cdktf.stringToTerraform(this._groupName),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      aws_account_id: this._awsAccountId,
+      description: this._description,
+      group_name: this._groupName,
+      namespace: this._namespace,
     };
   }
 }

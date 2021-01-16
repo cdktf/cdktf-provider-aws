@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface OpsworksJavaAppLayerConfig extends cdktf.TerraformMetaArguments {
+export interface OpsworksJavaAppLayerConfig extends TerraformMetaArguments {
   readonly appServer?: string;
   readonly appServerVersion?: string;
   readonly autoAssignElasticIps?: boolean;
@@ -45,23 +46,9 @@ export interface OpsworksJavaAppLayerEbsVolume {
   readonly type?: string;
 }
 
-function opsworksJavaAppLayerEbsVolumeToTerraform(struct?: OpsworksJavaAppLayerEbsVolume): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    mount_point: cdktf.stringToTerraform(struct!.mountPoint),
-    number_of_disks: cdktf.numberToTerraform(struct!.numberOfDisks),
-    raid_level: cdktf.stringToTerraform(struct!.raidLevel),
-    size: cdktf.numberToTerraform(struct!.size),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
-
 // Resource
 
-export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
+export class OpsworksJavaAppLayer extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -113,36 +100,22 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // app_server - computed: false, optional: true, required: false
   private _appServer?: string;
   public get appServer() {
-    return this.getStringAttribute('app_server');
+    return this._appServer;
   }
-  public set appServer(value: string ) {
+  public set appServer(value: string | undefined) {
     this._appServer = value;
-  }
-  public resetAppServer() {
-    this._appServer = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get appServerInput() {
-    return this._appServer
   }
 
   // app_server_version - computed: false, optional: true, required: false
   private _appServerVersion?: string;
   public get appServerVersion() {
-    return this.getStringAttribute('app_server_version');
+    return this._appServerVersion;
   }
-  public set appServerVersion(value: string ) {
+  public set appServerVersion(value: string | undefined) {
     this._appServerVersion = value;
   }
-  public resetAppServerVersion() {
-    this._appServerVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get appServerVersionInput() {
-    return this._appServerVersion
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -150,387 +123,226 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
   // auto_assign_elastic_ips - computed: false, optional: true, required: false
   private _autoAssignElasticIps?: boolean;
   public get autoAssignElasticIps() {
-    return this.getBooleanAttribute('auto_assign_elastic_ips');
+    return this._autoAssignElasticIps;
   }
-  public set autoAssignElasticIps(value: boolean ) {
+  public set autoAssignElasticIps(value: boolean | undefined) {
     this._autoAssignElasticIps = value;
-  }
-  public resetAutoAssignElasticIps() {
-    this._autoAssignElasticIps = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoAssignElasticIpsInput() {
-    return this._autoAssignElasticIps
   }
 
   // auto_assign_public_ips - computed: false, optional: true, required: false
   private _autoAssignPublicIps?: boolean;
   public get autoAssignPublicIps() {
-    return this.getBooleanAttribute('auto_assign_public_ips');
+    return this._autoAssignPublicIps;
   }
-  public set autoAssignPublicIps(value: boolean ) {
+  public set autoAssignPublicIps(value: boolean | undefined) {
     this._autoAssignPublicIps = value;
-  }
-  public resetAutoAssignPublicIps() {
-    this._autoAssignPublicIps = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoAssignPublicIpsInput() {
-    return this._autoAssignPublicIps
   }
 
   // auto_healing - computed: false, optional: true, required: false
   private _autoHealing?: boolean;
   public get autoHealing() {
-    return this.getBooleanAttribute('auto_healing');
+    return this._autoHealing;
   }
-  public set autoHealing(value: boolean ) {
+  public set autoHealing(value: boolean | undefined) {
     this._autoHealing = value;
-  }
-  public resetAutoHealing() {
-    this._autoHealing = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoHealingInput() {
-    return this._autoHealing
   }
 
   // custom_configure_recipes - computed: false, optional: true, required: false
   private _customConfigureRecipes?: string[];
   public get customConfigureRecipes() {
-    return this.getListAttribute('custom_configure_recipes');
+    return this._customConfigureRecipes;
   }
-  public set customConfigureRecipes(value: string[] ) {
+  public set customConfigureRecipes(value: string[] | undefined) {
     this._customConfigureRecipes = value;
-  }
-  public resetCustomConfigureRecipes() {
-    this._customConfigureRecipes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customConfigureRecipesInput() {
-    return this._customConfigureRecipes
   }
 
   // custom_deploy_recipes - computed: false, optional: true, required: false
   private _customDeployRecipes?: string[];
   public get customDeployRecipes() {
-    return this.getListAttribute('custom_deploy_recipes');
+    return this._customDeployRecipes;
   }
-  public set customDeployRecipes(value: string[] ) {
+  public set customDeployRecipes(value: string[] | undefined) {
     this._customDeployRecipes = value;
-  }
-  public resetCustomDeployRecipes() {
-    this._customDeployRecipes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customDeployRecipesInput() {
-    return this._customDeployRecipes
   }
 
   // custom_instance_profile_arn - computed: false, optional: true, required: false
   private _customInstanceProfileArn?: string;
   public get customInstanceProfileArn() {
-    return this.getStringAttribute('custom_instance_profile_arn');
+    return this._customInstanceProfileArn;
   }
-  public set customInstanceProfileArn(value: string ) {
+  public set customInstanceProfileArn(value: string | undefined) {
     this._customInstanceProfileArn = value;
-  }
-  public resetCustomInstanceProfileArn() {
-    this._customInstanceProfileArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customInstanceProfileArnInput() {
-    return this._customInstanceProfileArn
   }
 
   // custom_json - computed: false, optional: true, required: false
   private _customJson?: string;
   public get customJson() {
-    return this.getStringAttribute('custom_json');
+    return this._customJson;
   }
-  public set customJson(value: string ) {
+  public set customJson(value: string | undefined) {
     this._customJson = value;
-  }
-  public resetCustomJson() {
-    this._customJson = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customJsonInput() {
-    return this._customJson
   }
 
   // custom_security_group_ids - computed: false, optional: true, required: false
   private _customSecurityGroupIds?: string[];
   public get customSecurityGroupIds() {
-    return this.getListAttribute('custom_security_group_ids');
+    return this._customSecurityGroupIds;
   }
-  public set customSecurityGroupIds(value: string[] ) {
+  public set customSecurityGroupIds(value: string[] | undefined) {
     this._customSecurityGroupIds = value;
-  }
-  public resetCustomSecurityGroupIds() {
-    this._customSecurityGroupIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customSecurityGroupIdsInput() {
-    return this._customSecurityGroupIds
   }
 
   // custom_setup_recipes - computed: false, optional: true, required: false
   private _customSetupRecipes?: string[];
   public get customSetupRecipes() {
-    return this.getListAttribute('custom_setup_recipes');
+    return this._customSetupRecipes;
   }
-  public set customSetupRecipes(value: string[] ) {
+  public set customSetupRecipes(value: string[] | undefined) {
     this._customSetupRecipes = value;
-  }
-  public resetCustomSetupRecipes() {
-    this._customSetupRecipes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customSetupRecipesInput() {
-    return this._customSetupRecipes
   }
 
   // custom_shutdown_recipes - computed: false, optional: true, required: false
   private _customShutdownRecipes?: string[];
   public get customShutdownRecipes() {
-    return this.getListAttribute('custom_shutdown_recipes');
+    return this._customShutdownRecipes;
   }
-  public set customShutdownRecipes(value: string[] ) {
+  public set customShutdownRecipes(value: string[] | undefined) {
     this._customShutdownRecipes = value;
-  }
-  public resetCustomShutdownRecipes() {
-    this._customShutdownRecipes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customShutdownRecipesInput() {
-    return this._customShutdownRecipes
   }
 
   // custom_undeploy_recipes - computed: false, optional: true, required: false
   private _customUndeployRecipes?: string[];
   public get customUndeployRecipes() {
-    return this.getListAttribute('custom_undeploy_recipes');
+    return this._customUndeployRecipes;
   }
-  public set customUndeployRecipes(value: string[] ) {
+  public set customUndeployRecipes(value: string[] | undefined) {
     this._customUndeployRecipes = value;
-  }
-  public resetCustomUndeployRecipes() {
-    this._customUndeployRecipes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customUndeployRecipesInput() {
-    return this._customUndeployRecipes
   }
 
   // drain_elb_on_shutdown - computed: false, optional: true, required: false
   private _drainElbOnShutdown?: boolean;
   public get drainElbOnShutdown() {
-    return this.getBooleanAttribute('drain_elb_on_shutdown');
+    return this._drainElbOnShutdown;
   }
-  public set drainElbOnShutdown(value: boolean ) {
+  public set drainElbOnShutdown(value: boolean | undefined) {
     this._drainElbOnShutdown = value;
-  }
-  public resetDrainElbOnShutdown() {
-    this._drainElbOnShutdown = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get drainElbOnShutdownInput() {
-    return this._drainElbOnShutdown
   }
 
   // elastic_load_balancer - computed: false, optional: true, required: false
   private _elasticLoadBalancer?: string;
   public get elasticLoadBalancer() {
-    return this.getStringAttribute('elastic_load_balancer');
+    return this._elasticLoadBalancer;
   }
-  public set elasticLoadBalancer(value: string ) {
+  public set elasticLoadBalancer(value: string | undefined) {
     this._elasticLoadBalancer = value;
-  }
-  public resetElasticLoadBalancer() {
-    this._elasticLoadBalancer = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get elasticLoadBalancerInput() {
-    return this._elasticLoadBalancer
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // install_updates_on_boot - computed: false, optional: true, required: false
   private _installUpdatesOnBoot?: boolean;
   public get installUpdatesOnBoot() {
-    return this.getBooleanAttribute('install_updates_on_boot');
+    return this._installUpdatesOnBoot;
   }
-  public set installUpdatesOnBoot(value: boolean ) {
+  public set installUpdatesOnBoot(value: boolean | undefined) {
     this._installUpdatesOnBoot = value;
-  }
-  public resetInstallUpdatesOnBoot() {
-    this._installUpdatesOnBoot = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get installUpdatesOnBootInput() {
-    return this._installUpdatesOnBoot
   }
 
   // instance_shutdown_timeout - computed: false, optional: true, required: false
   private _instanceShutdownTimeout?: number;
   public get instanceShutdownTimeout() {
-    return this.getNumberAttribute('instance_shutdown_timeout');
+    return this._instanceShutdownTimeout;
   }
-  public set instanceShutdownTimeout(value: number ) {
+  public set instanceShutdownTimeout(value: number | undefined) {
     this._instanceShutdownTimeout = value;
-  }
-  public resetInstanceShutdownTimeout() {
-    this._instanceShutdownTimeout = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceShutdownTimeoutInput() {
-    return this._instanceShutdownTimeout
   }
 
   // jvm_options - computed: false, optional: true, required: false
   private _jvmOptions?: string;
   public get jvmOptions() {
-    return this.getStringAttribute('jvm_options');
+    return this._jvmOptions;
   }
-  public set jvmOptions(value: string ) {
+  public set jvmOptions(value: string | undefined) {
     this._jvmOptions = value;
-  }
-  public resetJvmOptions() {
-    this._jvmOptions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get jvmOptionsInput() {
-    return this._jvmOptions
   }
 
   // jvm_type - computed: false, optional: true, required: false
   private _jvmType?: string;
   public get jvmType() {
-    return this.getStringAttribute('jvm_type');
+    return this._jvmType;
   }
-  public set jvmType(value: string ) {
+  public set jvmType(value: string | undefined) {
     this._jvmType = value;
-  }
-  public resetJvmType() {
-    this._jvmType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get jvmTypeInput() {
-    return this._jvmType
   }
 
   // jvm_version - computed: false, optional: true, required: false
   private _jvmVersion?: string;
   public get jvmVersion() {
-    return this.getStringAttribute('jvm_version');
+    return this._jvmVersion;
   }
-  public set jvmVersion(value: string ) {
+  public set jvmVersion(value: string | undefined) {
     this._jvmVersion = value;
-  }
-  public resetJvmVersion() {
-    this._jvmVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get jvmVersionInput() {
-    return this._jvmVersion
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // stack_id - computed: false, optional: false, required: true
   private _stackId: string;
   public get stackId() {
-    return this.getStringAttribute('stack_id');
+    return this._stackId;
   }
   public set stackId(value: string) {
     this._stackId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stackIdInput() {
-    return this._stackId
   }
 
   // system_packages - computed: false, optional: true, required: false
   private _systemPackages?: string[];
   public get systemPackages() {
-    return this.getListAttribute('system_packages');
+    return this._systemPackages;
   }
-  public set systemPackages(value: string[] ) {
+  public set systemPackages(value: string[] | undefined) {
     this._systemPackages = value;
-  }
-  public resetSystemPackages() {
-    this._systemPackages = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get systemPackagesInput() {
-    return this._systemPackages
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // use_ebs_optimized_instances - computed: false, optional: true, required: false
   private _useEbsOptimizedInstances?: boolean;
   public get useEbsOptimizedInstances() {
-    return this.getBooleanAttribute('use_ebs_optimized_instances');
+    return this._useEbsOptimizedInstances;
   }
-  public set useEbsOptimizedInstances(value: boolean ) {
+  public set useEbsOptimizedInstances(value: boolean | undefined) {
     this._useEbsOptimizedInstances = value;
-  }
-  public resetUseEbsOptimizedInstances() {
-    this._useEbsOptimizedInstances = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get useEbsOptimizedInstancesInput() {
-    return this._useEbsOptimizedInstances
   }
 
   // ebs_volume - computed: false, optional: true, required: false
   private _ebsVolume?: OpsworksJavaAppLayerEbsVolume[];
   public get ebsVolume() {
-    return this.interpolationForAttribute('ebs_volume') as any;
+    return this._ebsVolume;
   }
-  public set ebsVolume(value: OpsworksJavaAppLayerEbsVolume[] ) {
+  public set ebsVolume(value: OpsworksJavaAppLayerEbsVolume[] | undefined) {
     this._ebsVolume = value;
-  }
-  public resetEbsVolume() {
-    this._ebsVolume = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ebsVolumeInput() {
-    return this._ebsVolume
   }
 
   // =========
@@ -539,32 +351,32 @@ export class OpsworksJavaAppLayer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_server: cdktf.stringToTerraform(this._appServer),
-      app_server_version: cdktf.stringToTerraform(this._appServerVersion),
-      auto_assign_elastic_ips: cdktf.booleanToTerraform(this._autoAssignElasticIps),
-      auto_assign_public_ips: cdktf.booleanToTerraform(this._autoAssignPublicIps),
-      auto_healing: cdktf.booleanToTerraform(this._autoHealing),
-      custom_configure_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customConfigureRecipes),
-      custom_deploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customDeployRecipes),
-      custom_instance_profile_arn: cdktf.stringToTerraform(this._customInstanceProfileArn),
-      custom_json: cdktf.stringToTerraform(this._customJson),
-      custom_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._customSecurityGroupIds),
-      custom_setup_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customSetupRecipes),
-      custom_shutdown_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customShutdownRecipes),
-      custom_undeploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customUndeployRecipes),
-      drain_elb_on_shutdown: cdktf.booleanToTerraform(this._drainElbOnShutdown),
-      elastic_load_balancer: cdktf.stringToTerraform(this._elasticLoadBalancer),
-      install_updates_on_boot: cdktf.booleanToTerraform(this._installUpdatesOnBoot),
-      instance_shutdown_timeout: cdktf.numberToTerraform(this._instanceShutdownTimeout),
-      jvm_options: cdktf.stringToTerraform(this._jvmOptions),
-      jvm_type: cdktf.stringToTerraform(this._jvmType),
-      jvm_version: cdktf.stringToTerraform(this._jvmVersion),
-      name: cdktf.stringToTerraform(this._name),
-      stack_id: cdktf.stringToTerraform(this._stackId),
-      system_packages: cdktf.listMapper(cdktf.stringToTerraform)(this._systemPackages),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
-      ebs_volume: cdktf.listMapper(opsworksJavaAppLayerEbsVolumeToTerraform)(this._ebsVolume),
+      app_server: this._appServer,
+      app_server_version: this._appServerVersion,
+      auto_assign_elastic_ips: this._autoAssignElasticIps,
+      auto_assign_public_ips: this._autoAssignPublicIps,
+      auto_healing: this._autoHealing,
+      custom_configure_recipes: this._customConfigureRecipes,
+      custom_deploy_recipes: this._customDeployRecipes,
+      custom_instance_profile_arn: this._customInstanceProfileArn,
+      custom_json: this._customJson,
+      custom_security_group_ids: this._customSecurityGroupIds,
+      custom_setup_recipes: this._customSetupRecipes,
+      custom_shutdown_recipes: this._customShutdownRecipes,
+      custom_undeploy_recipes: this._customUndeployRecipes,
+      drain_elb_on_shutdown: this._drainElbOnShutdown,
+      elastic_load_balancer: this._elasticLoadBalancer,
+      install_updates_on_boot: this._installUpdatesOnBoot,
+      instance_shutdown_timeout: this._instanceShutdownTimeout,
+      jvm_options: this._jvmOptions,
+      jvm_type: this._jvmType,
+      jvm_version: this._jvmVersion,
+      name: this._name,
+      stack_id: this._stackId,
+      system_packages: this._systemPackages,
+      tags: this._tags,
+      use_ebs_optimized_instances: this._useEbsOptimizedInstances,
+      ebs_volume: this._ebsVolume,
     };
   }
 }

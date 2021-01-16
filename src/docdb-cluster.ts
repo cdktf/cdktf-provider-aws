@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DocdbClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DocdbClusterConfig extends TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly availabilityZones?: string[];
   readonly backupRetentionPeriod?: number;
@@ -40,19 +41,9 @@ export interface DocdbClusterTimeouts {
   readonly update?: string;
 }
 
-function docdbClusterTimeoutsToTerraform(struct?: DocdbClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class DocdbCluster extends cdktf.TerraformResource {
+export class DocdbCluster extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -103,20 +94,13 @@ export class DocdbCluster extends cdktf.TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this.getBooleanAttribute('apply_immediately');
+    return this._applyImmediately ?? this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | undefined) {
     this._applyImmediately = value;
   }
-  public resetApplyImmediately() {
-    this._applyImmediately = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applyImmediatelyInput() {
-    return this._applyImmediately
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -124,84 +108,49 @@ export class DocdbCluster extends cdktf.TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[];
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return this._availabilityZones ?? this.getListAttribute('availability_zones');
   }
-  public set availabilityZones(value: string[]) {
+  public set availabilityZones(value: string[] | undefined) {
     this._availabilityZones = value;
-  }
-  public resetAvailabilityZones() {
-    this._availabilityZones = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZonesInput() {
-    return this._availabilityZones
   }
 
   // backup_retention_period - computed: false, optional: true, required: false
   private _backupRetentionPeriod?: number;
   public get backupRetentionPeriod() {
-    return this.getNumberAttribute('backup_retention_period');
+    return this._backupRetentionPeriod;
   }
-  public set backupRetentionPeriod(value: number ) {
+  public set backupRetentionPeriod(value: number | undefined) {
     this._backupRetentionPeriod = value;
-  }
-  public resetBackupRetentionPeriod() {
-    this._backupRetentionPeriod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get backupRetentionPeriodInput() {
-    return this._backupRetentionPeriod
   }
 
   // cluster_identifier - computed: true, optional: true, required: false
   private _clusterIdentifier?: string;
   public get clusterIdentifier() {
-    return this.getStringAttribute('cluster_identifier');
+    return this._clusterIdentifier ?? this.getStringAttribute('cluster_identifier');
   }
-  public set clusterIdentifier(value: string) {
+  public set clusterIdentifier(value: string | undefined) {
     this._clusterIdentifier = value;
-  }
-  public resetClusterIdentifier() {
-    this._clusterIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdentifierInput() {
-    return this._clusterIdentifier
   }
 
   // cluster_identifier_prefix - computed: true, optional: true, required: false
   private _clusterIdentifierPrefix?: string;
   public get clusterIdentifierPrefix() {
-    return this.getStringAttribute('cluster_identifier_prefix');
+    return this._clusterIdentifierPrefix ?? this.getStringAttribute('cluster_identifier_prefix');
   }
-  public set clusterIdentifierPrefix(value: string) {
+  public set clusterIdentifierPrefix(value: string | undefined) {
     this._clusterIdentifierPrefix = value;
-  }
-  public resetClusterIdentifierPrefix() {
-    this._clusterIdentifierPrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdentifierPrefixInput() {
-    return this._clusterIdentifierPrefix
   }
 
   // cluster_members - computed: true, optional: true, required: false
   private _clusterMembers?: string[];
   public get clusterMembers() {
-    return this.getListAttribute('cluster_members');
+    return this._clusterMembers ?? this.getListAttribute('cluster_members');
   }
-  public set clusterMembers(value: string[]) {
+  public set clusterMembers(value: string[] | undefined) {
     this._clusterMembers = value;
   }
-  public resetClusterMembers() {
-    this._clusterMembers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterMembersInput() {
-    return this._clusterMembers
-  }
 
-  // cluster_resource_id - computed: true, optional: false, required: false
+  // cluster_resource_id - computed: true, optional: false, required: true
   public get clusterResourceId() {
     return this.getStringAttribute('cluster_resource_id');
   }
@@ -209,68 +158,40 @@ export class DocdbCluster extends cdktf.TerraformResource {
   // db_cluster_parameter_group_name - computed: true, optional: true, required: false
   private _dbClusterParameterGroupName?: string;
   public get dbClusterParameterGroupName() {
-    return this.getStringAttribute('db_cluster_parameter_group_name');
+    return this._dbClusterParameterGroupName ?? this.getStringAttribute('db_cluster_parameter_group_name');
   }
-  public set dbClusterParameterGroupName(value: string) {
+  public set dbClusterParameterGroupName(value: string | undefined) {
     this._dbClusterParameterGroupName = value;
-  }
-  public resetDbClusterParameterGroupName() {
-    this._dbClusterParameterGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dbClusterParameterGroupNameInput() {
-    return this._dbClusterParameterGroupName
   }
 
   // db_subnet_group_name - computed: true, optional: true, required: false
   private _dbSubnetGroupName?: string;
   public get dbSubnetGroupName() {
-    return this.getStringAttribute('db_subnet_group_name');
+    return this._dbSubnetGroupName ?? this.getStringAttribute('db_subnet_group_name');
   }
-  public set dbSubnetGroupName(value: string) {
+  public set dbSubnetGroupName(value: string | undefined) {
     this._dbSubnetGroupName = value;
-  }
-  public resetDbSubnetGroupName() {
-    this._dbSubnetGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dbSubnetGroupNameInput() {
-    return this._dbSubnetGroupName
   }
 
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean;
   public get deletionProtection() {
-    return this.getBooleanAttribute('deletion_protection');
+    return this._deletionProtection;
   }
-  public set deletionProtection(value: boolean ) {
+  public set deletionProtection(value: boolean | undefined) {
     this._deletionProtection = value;
-  }
-  public resetDeletionProtection() {
-    this._deletionProtection = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deletionProtectionInput() {
-    return this._deletionProtection
   }
 
   // enabled_cloudwatch_logs_exports - computed: false, optional: true, required: false
   private _enabledCloudwatchLogsExports?: string[];
   public get enabledCloudwatchLogsExports() {
-    return this.getListAttribute('enabled_cloudwatch_logs_exports');
+    return this._enabledCloudwatchLogsExports;
   }
-  public set enabledCloudwatchLogsExports(value: string[] ) {
+  public set enabledCloudwatchLogsExports(value: string[] | undefined) {
     this._enabledCloudwatchLogsExports = value;
   }
-  public resetEnabledCloudwatchLogsExports() {
-    this._enabledCloudwatchLogsExports = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledCloudwatchLogsExportsInput() {
-    return this._enabledCloudwatchLogsExports
-  }
 
-  // endpoint - computed: true, optional: false, required: false
+  // endpoint - computed: true, optional: false, required: true
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -278,158 +199,99 @@ export class DocdbCluster extends cdktf.TerraformResource {
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this.getStringAttribute('engine');
+    return this._engine;
   }
-  public set engine(value: string ) {
+  public set engine(value: string | undefined) {
     this._engine = value;
-  }
-  public resetEngine() {
-    this._engine = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineInput() {
-    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this.getStringAttribute('engine_version');
+    return this._engineVersion ?? this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string) {
+  public set engineVersion(value: string | undefined) {
     this._engineVersion = value;
-  }
-  public resetEngineVersion() {
-    this._engineVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineVersionInput() {
-    return this._engineVersion
   }
 
   // final_snapshot_identifier - computed: false, optional: true, required: false
   private _finalSnapshotIdentifier?: string;
   public get finalSnapshotIdentifier() {
-    return this.getStringAttribute('final_snapshot_identifier');
+    return this._finalSnapshotIdentifier;
   }
-  public set finalSnapshotIdentifier(value: string ) {
+  public set finalSnapshotIdentifier(value: string | undefined) {
     this._finalSnapshotIdentifier = value;
   }
-  public resetFinalSnapshotIdentifier() {
-    this._finalSnapshotIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get finalSnapshotIdentifierInput() {
-    return this._finalSnapshotIdentifier
-  }
 
-  // hosted_zone_id - computed: true, optional: false, required: false
+  // hosted_zone_id - computed: true, optional: false, required: true
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this.getStringAttribute('kms_key_id');
+    return this._kmsKeyId ?? this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string) {
+  public set kmsKeyId(value: string | undefined) {
     this._kmsKeyId = value;
-  }
-  public resetKmsKeyId() {
-    this._kmsKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyIdInput() {
-    return this._kmsKeyId
   }
 
   // master_password - computed: false, optional: true, required: false
   private _masterPassword?: string;
   public get masterPassword() {
-    return this.getStringAttribute('master_password');
+    return this._masterPassword;
   }
-  public set masterPassword(value: string ) {
+  public set masterPassword(value: string | undefined) {
     this._masterPassword = value;
-  }
-  public resetMasterPassword() {
-    this._masterPassword = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get masterPasswordInput() {
-    return this._masterPassword
   }
 
   // master_username - computed: true, optional: true, required: false
   private _masterUsername?: string;
   public get masterUsername() {
-    return this.getStringAttribute('master_username');
+    return this._masterUsername ?? this.getStringAttribute('master_username');
   }
-  public set masterUsername(value: string) {
+  public set masterUsername(value: string | undefined) {
     this._masterUsername = value;
-  }
-  public resetMasterUsername() {
-    this._masterUsername = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get masterUsernameInput() {
-    return this._masterUsername
   }
 
   // port - computed: false, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this.getNumberAttribute('port');
+    return this._port;
   }
-  public set port(value: number ) {
+  public set port(value: number | undefined) {
     this._port = value;
-  }
-  public resetPort() {
-    this._port = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get portInput() {
-    return this._port
   }
 
   // preferred_backup_window - computed: true, optional: true, required: false
   private _preferredBackupWindow?: string;
   public get preferredBackupWindow() {
-    return this.getStringAttribute('preferred_backup_window');
+    return this._preferredBackupWindow ?? this.getStringAttribute('preferred_backup_window');
   }
-  public set preferredBackupWindow(value: string) {
+  public set preferredBackupWindow(value: string | undefined) {
     this._preferredBackupWindow = value;
-  }
-  public resetPreferredBackupWindow() {
-    this._preferredBackupWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preferredBackupWindowInput() {
-    return this._preferredBackupWindow
   }
 
   // preferred_maintenance_window - computed: true, optional: true, required: false
   private _preferredMaintenanceWindow?: string;
   public get preferredMaintenanceWindow() {
-    return this.getStringAttribute('preferred_maintenance_window');
+    return this._preferredMaintenanceWindow ?? this.getStringAttribute('preferred_maintenance_window');
   }
-  public set preferredMaintenanceWindow(value: string) {
+  public set preferredMaintenanceWindow(value: string | undefined) {
     this._preferredMaintenanceWindow = value;
   }
-  public resetPreferredMaintenanceWindow() {
-    this._preferredMaintenanceWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preferredMaintenanceWindowInput() {
-    return this._preferredMaintenanceWindow
-  }
 
-  // reader_endpoint - computed: true, optional: false, required: false
+  // reader_endpoint - computed: true, optional: false, required: true
   public get readerEndpoint() {
     return this.getStringAttribute('reader_endpoint');
   }
@@ -437,97 +299,55 @@ export class DocdbCluster extends cdktf.TerraformResource {
   // skip_final_snapshot - computed: false, optional: true, required: false
   private _skipFinalSnapshot?: boolean;
   public get skipFinalSnapshot() {
-    return this.getBooleanAttribute('skip_final_snapshot');
+    return this._skipFinalSnapshot;
   }
-  public set skipFinalSnapshot(value: boolean ) {
+  public set skipFinalSnapshot(value: boolean | undefined) {
     this._skipFinalSnapshot = value;
-  }
-  public resetSkipFinalSnapshot() {
-    this._skipFinalSnapshot = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get skipFinalSnapshotInput() {
-    return this._skipFinalSnapshot
   }
 
   // snapshot_identifier - computed: false, optional: true, required: false
   private _snapshotIdentifier?: string;
   public get snapshotIdentifier() {
-    return this.getStringAttribute('snapshot_identifier');
+    return this._snapshotIdentifier;
   }
-  public set snapshotIdentifier(value: string ) {
+  public set snapshotIdentifier(value: string | undefined) {
     this._snapshotIdentifier = value;
-  }
-  public resetSnapshotIdentifier() {
-    this._snapshotIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotIdentifierInput() {
-    return this._snapshotIdentifier
   }
 
   // storage_encrypted - computed: false, optional: true, required: false
   private _storageEncrypted?: boolean;
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted');
+    return this._storageEncrypted;
   }
-  public set storageEncrypted(value: boolean ) {
+  public set storageEncrypted(value: boolean | undefined) {
     this._storageEncrypted = value;
-  }
-  public resetStorageEncrypted() {
-    this._storageEncrypted = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get storageEncryptedInput() {
-    return this._storageEncrypted
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return this._vpcSecurityGroupIds ?? this.getListAttribute('vpc_security_group_ids');
   }
-  public set vpcSecurityGroupIds(value: string[]) {
+  public set vpcSecurityGroupIds(value: string[] | undefined) {
     this._vpcSecurityGroupIds = value;
-  }
-  public resetVpcSecurityGroupIds() {
-    this._vpcSecurityGroupIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcSecurityGroupIdsInput() {
-    return this._vpcSecurityGroupIds
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DocdbClusterTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: DocdbClusterTimeouts ) {
+  public set timeouts(value: DocdbClusterTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -536,31 +356,31 @@ export class DocdbCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
-      backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      cluster_identifier_prefix: cdktf.stringToTerraform(this._clusterIdentifierPrefix),
-      cluster_members: cdktf.listMapper(cdktf.stringToTerraform)(this._clusterMembers),
-      db_cluster_parameter_group_name: cdktf.stringToTerraform(this._dbClusterParameterGroupName),
-      db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledCloudwatchLogsExports),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
-      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
-      master_password: cdktf.stringToTerraform(this._masterPassword),
-      master_username: cdktf.stringToTerraform(this._masterUsername),
-      port: cdktf.numberToTerraform(this._port),
-      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
-      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
-      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
-      timeouts: docdbClusterTimeoutsToTerraform(this._timeouts),
+      apply_immediately: this._applyImmediately,
+      availability_zones: this._availabilityZones,
+      backup_retention_period: this._backupRetentionPeriod,
+      cluster_identifier: this._clusterIdentifier,
+      cluster_identifier_prefix: this._clusterIdentifierPrefix,
+      cluster_members: this._clusterMembers,
+      db_cluster_parameter_group_name: this._dbClusterParameterGroupName,
+      db_subnet_group_name: this._dbSubnetGroupName,
+      deletion_protection: this._deletionProtection,
+      enabled_cloudwatch_logs_exports: this._enabledCloudwatchLogsExports,
+      engine: this._engine,
+      engine_version: this._engineVersion,
+      final_snapshot_identifier: this._finalSnapshotIdentifier,
+      kms_key_id: this._kmsKeyId,
+      master_password: this._masterPassword,
+      master_username: this._masterUsername,
+      port: this._port,
+      preferred_backup_window: this._preferredBackupWindow,
+      preferred_maintenance_window: this._preferredMaintenanceWindow,
+      skip_final_snapshot: this._skipFinalSnapshot,
+      snapshot_identifier: this._snapshotIdentifier,
+      storage_encrypted: this._storageEncrypted,
+      tags: this._tags,
+      vpc_security_group_ids: this._vpcSecurityGroupIds,
+      timeouts: this._timeouts,
     };
   }
 }

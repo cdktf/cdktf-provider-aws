@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaEventSourceMappingConfig extends TerraformMetaArguments {
   readonly batchSize?: number;
   readonly bisectBatchOnFunctionError?: boolean;
   readonly enabled?: boolean;
@@ -24,30 +25,14 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
 export interface LambdaEventSourceMappingDestinationConfigOnFailure {
   readonly destinationArn: string;
 }
-
-function lambdaEventSourceMappingDestinationConfigOnFailureToTerraform(struct?: LambdaEventSourceMappingDestinationConfigOnFailure): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
-  }
-}
-
 export interface LambdaEventSourceMappingDestinationConfig {
   /** on_failure block */
   readonly onFailure?: LambdaEventSourceMappingDestinationConfigOnFailure[];
 }
 
-function lambdaEventSourceMappingDestinationConfigToTerraform(struct?: LambdaEventSourceMappingDestinationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    on_failure: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigOnFailureToTerraform)(struct!.onFailure),
-  }
-}
-
-
 // Resource
 
-export class LambdaEventSourceMapping extends cdktf.TerraformResource {
+export class LambdaEventSourceMapping extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -85,65 +70,40 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // batch_size - computed: false, optional: true, required: false
   private _batchSize?: number;
   public get batchSize() {
-    return this.getNumberAttribute('batch_size');
+    return this._batchSize;
   }
-  public set batchSize(value: number ) {
+  public set batchSize(value: number | undefined) {
     this._batchSize = value;
-  }
-  public resetBatchSize() {
-    this._batchSize = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get batchSizeInput() {
-    return this._batchSize
   }
 
   // bisect_batch_on_function_error - computed: false, optional: true, required: false
   private _bisectBatchOnFunctionError?: boolean;
   public get bisectBatchOnFunctionError() {
-    return this.getBooleanAttribute('bisect_batch_on_function_error');
+    return this._bisectBatchOnFunctionError;
   }
-  public set bisectBatchOnFunctionError(value: boolean ) {
+  public set bisectBatchOnFunctionError(value: boolean | undefined) {
     this._bisectBatchOnFunctionError = value;
-  }
-  public resetBisectBatchOnFunctionError() {
-    this._bisectBatchOnFunctionError = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bisectBatchOnFunctionErrorInput() {
-    return this._bisectBatchOnFunctionError
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this._enabled;
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | undefined) {
     this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled
   }
 
   // event_source_arn - computed: false, optional: false, required: true
   private _eventSourceArn: string;
   public get eventSourceArn() {
-    return this.getStringAttribute('event_source_arn');
+    return this._eventSourceArn;
   }
   public set eventSourceArn(value: string) {
     this._eventSourceArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get eventSourceArnInput() {
-    return this._eventSourceArn
-  }
 
-  // function_arn - computed: true, optional: false, required: false
+  // function_arn - computed: true, optional: false, required: true
   public get functionArn() {
     return this.getStringAttribute('function_arn');
   }
@@ -151,27 +111,27 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this.getStringAttribute('function_name');
+    return this._functionName;
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get functionNameInput() {
-    return this._functionName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // last_modified - computed: true, optional: false, required: false
+  // last_modified - computed: true, optional: false, required: true
   public get lastModified() {
     return this.getStringAttribute('last_modified');
   }
 
-  // last_processing_result - computed: true, optional: false, required: false
+  // last_processing_result - computed: true, optional: false, required: true
   public get lastProcessingResult() {
     return this.getStringAttribute('last_processing_result');
   }
@@ -179,110 +139,68 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // maximum_batching_window_in_seconds - computed: false, optional: true, required: false
   private _maximumBatchingWindowInSeconds?: number;
   public get maximumBatchingWindowInSeconds() {
-    return this.getNumberAttribute('maximum_batching_window_in_seconds');
+    return this._maximumBatchingWindowInSeconds;
   }
-  public set maximumBatchingWindowInSeconds(value: number ) {
+  public set maximumBatchingWindowInSeconds(value: number | undefined) {
     this._maximumBatchingWindowInSeconds = value;
-  }
-  public resetMaximumBatchingWindowInSeconds() {
-    this._maximumBatchingWindowInSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maximumBatchingWindowInSecondsInput() {
-    return this._maximumBatchingWindowInSeconds
   }
 
   // maximum_record_age_in_seconds - computed: true, optional: true, required: false
   private _maximumRecordAgeInSeconds?: number;
   public get maximumRecordAgeInSeconds() {
-    return this.getNumberAttribute('maximum_record_age_in_seconds');
+    return this._maximumRecordAgeInSeconds ?? this.getNumberAttribute('maximum_record_age_in_seconds');
   }
-  public set maximumRecordAgeInSeconds(value: number) {
+  public set maximumRecordAgeInSeconds(value: number | undefined) {
     this._maximumRecordAgeInSeconds = value;
-  }
-  public resetMaximumRecordAgeInSeconds() {
-    this._maximumRecordAgeInSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maximumRecordAgeInSecondsInput() {
-    return this._maximumRecordAgeInSeconds
   }
 
   // maximum_retry_attempts - computed: true, optional: true, required: false
   private _maximumRetryAttempts?: number;
   public get maximumRetryAttempts() {
-    return this.getNumberAttribute('maximum_retry_attempts');
+    return this._maximumRetryAttempts ?? this.getNumberAttribute('maximum_retry_attempts');
   }
-  public set maximumRetryAttempts(value: number) {
+  public set maximumRetryAttempts(value: number | undefined) {
     this._maximumRetryAttempts = value;
-  }
-  public resetMaximumRetryAttempts() {
-    this._maximumRetryAttempts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maximumRetryAttemptsInput() {
-    return this._maximumRetryAttempts
   }
 
   // parallelization_factor - computed: true, optional: true, required: false
   private _parallelizationFactor?: number;
   public get parallelizationFactor() {
-    return this.getNumberAttribute('parallelization_factor');
+    return this._parallelizationFactor ?? this.getNumberAttribute('parallelization_factor');
   }
-  public set parallelizationFactor(value: number) {
+  public set parallelizationFactor(value: number | undefined) {
     this._parallelizationFactor = value;
-  }
-  public resetParallelizationFactor() {
-    this._parallelizationFactor = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parallelizationFactorInput() {
-    return this._parallelizationFactor
   }
 
   // starting_position - computed: false, optional: true, required: false
   private _startingPosition?: string;
   public get startingPosition() {
-    return this.getStringAttribute('starting_position');
+    return this._startingPosition;
   }
-  public set startingPosition(value: string ) {
+  public set startingPosition(value: string | undefined) {
     this._startingPosition = value;
-  }
-  public resetStartingPosition() {
-    this._startingPosition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get startingPositionInput() {
-    return this._startingPosition
   }
 
   // starting_position_timestamp - computed: false, optional: true, required: false
   private _startingPositionTimestamp?: string;
   public get startingPositionTimestamp() {
-    return this.getStringAttribute('starting_position_timestamp');
+    return this._startingPositionTimestamp;
   }
-  public set startingPositionTimestamp(value: string ) {
+  public set startingPositionTimestamp(value: string | undefined) {
     this._startingPositionTimestamp = value;
   }
-  public resetStartingPositionTimestamp() {
-    this._startingPositionTimestamp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get startingPositionTimestampInput() {
-    return this._startingPositionTimestamp
-  }
 
-  // state - computed: true, optional: false, required: false
+  // state - computed: true, optional: false, required: true
   public get state() {
     return this.getStringAttribute('state');
   }
 
-  // state_transition_reason - computed: true, optional: false, required: false
+  // state_transition_reason - computed: true, optional: false, required: true
   public get stateTransitionReason() {
     return this.getStringAttribute('state_transition_reason');
   }
 
-  // uuid - computed: true, optional: false, required: false
+  // uuid - computed: true, optional: false, required: true
   public get uuid() {
     return this.getStringAttribute('uuid');
   }
@@ -290,17 +208,10 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // destination_config - computed: false, optional: true, required: false
   private _destinationConfig?: LambdaEventSourceMappingDestinationConfig[];
   public get destinationConfig() {
-    return this.interpolationForAttribute('destination_config') as any;
+    return this._destinationConfig;
   }
-  public set destinationConfig(value: LambdaEventSourceMappingDestinationConfig[] ) {
+  public set destinationConfig(value: LambdaEventSourceMappingDestinationConfig[] | undefined) {
     this._destinationConfig = value;
-  }
-  public resetDestinationConfig() {
-    this._destinationConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get destinationConfigInput() {
-    return this._destinationConfig
   }
 
   // =========
@@ -309,18 +220,18 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_size: cdktf.numberToTerraform(this._batchSize),
-      bisect_batch_on_function_error: cdktf.booleanToTerraform(this._bisectBatchOnFunctionError),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      event_source_arn: cdktf.stringToTerraform(this._eventSourceArn),
-      function_name: cdktf.stringToTerraform(this._functionName),
-      maximum_batching_window_in_seconds: cdktf.numberToTerraform(this._maximumBatchingWindowInSeconds),
-      maximum_record_age_in_seconds: cdktf.numberToTerraform(this._maximumRecordAgeInSeconds),
-      maximum_retry_attempts: cdktf.numberToTerraform(this._maximumRetryAttempts),
-      parallelization_factor: cdktf.numberToTerraform(this._parallelizationFactor),
-      starting_position: cdktf.stringToTerraform(this._startingPosition),
-      starting_position_timestamp: cdktf.stringToTerraform(this._startingPositionTimestamp),
-      destination_config: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigToTerraform)(this._destinationConfig),
+      batch_size: this._batchSize,
+      bisect_batch_on_function_error: this._bisectBatchOnFunctionError,
+      enabled: this._enabled,
+      event_source_arn: this._eventSourceArn,
+      function_name: this._functionName,
+      maximum_batching_window_in_seconds: this._maximumBatchingWindowInSeconds,
+      maximum_record_age_in_seconds: this._maximumRecordAgeInSeconds,
+      maximum_retry_attempts: this._maximumRetryAttempts,
+      parallelization_factor: this._parallelizationFactor,
+      starting_position: this._startingPosition,
+      starting_position_timestamp: this._startingPositionTimestamp,
+      destination_config: this._destinationConfig,
     };
   }
 }

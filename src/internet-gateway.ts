@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface InternetGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface InternetGatewayConfig extends TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly vpcId?: string;
 }
 
 // Resource
 
-export class InternetGateway extends cdktf.TerraformResource {
+export class InternetGateway extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,17 +39,21 @@ export class InternetGateway extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -56,33 +61,19 @@ export class InternetGateway extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // vpc_id - computed: false, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this.getStringAttribute('vpc_id');
+    return this._vpcId;
   }
-  public set vpcId(value: string ) {
+  public set vpcId(value: string | undefined) {
     this._vpcId = value;
-  }
-  public resetVpcId() {
-    this._vpcId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
   }
 
   // =========
@@ -91,8 +82,8 @@ export class InternetGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      tags: this._tags,
+      vpc_id: this._vpcId,
     };
   }
 }

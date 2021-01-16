@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SnsSmsPreferencesConfig extends cdktf.TerraformMetaArguments {
+export interface SnsSmsPreferencesConfig extends TerraformMetaArguments {
   readonly defaultSenderId?: string;
   readonly defaultSmsType?: string;
   readonly deliveryStatusIamRoleArn?: string;
@@ -17,7 +18,7 @@ export interface SnsSmsPreferencesConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class SnsSmsPreferences extends cdktf.TerraformResource {
+export class SnsSmsPreferences extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,102 +50,64 @@ export class SnsSmsPreferences extends cdktf.TerraformResource {
   // default_sender_id - computed: false, optional: true, required: false
   private _defaultSenderId?: string;
   public get defaultSenderId() {
-    return this.getStringAttribute('default_sender_id');
+    return this._defaultSenderId;
   }
-  public set defaultSenderId(value: string ) {
+  public set defaultSenderId(value: string | undefined) {
     this._defaultSenderId = value;
-  }
-  public resetDefaultSenderId() {
-    this._defaultSenderId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultSenderIdInput() {
-    return this._defaultSenderId
   }
 
   // default_sms_type - computed: false, optional: true, required: false
   private _defaultSmsType?: string;
   public get defaultSmsType() {
-    return this.getStringAttribute('default_sms_type');
+    return this._defaultSmsType;
   }
-  public set defaultSmsType(value: string ) {
+  public set defaultSmsType(value: string | undefined) {
     this._defaultSmsType = value;
-  }
-  public resetDefaultSmsType() {
-    this._defaultSmsType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultSmsTypeInput() {
-    return this._defaultSmsType
   }
 
   // delivery_status_iam_role_arn - computed: false, optional: true, required: false
   private _deliveryStatusIamRoleArn?: string;
   public get deliveryStatusIamRoleArn() {
-    return this.getStringAttribute('delivery_status_iam_role_arn');
+    return this._deliveryStatusIamRoleArn;
   }
-  public set deliveryStatusIamRoleArn(value: string ) {
+  public set deliveryStatusIamRoleArn(value: string | undefined) {
     this._deliveryStatusIamRoleArn = value;
-  }
-  public resetDeliveryStatusIamRoleArn() {
-    this._deliveryStatusIamRoleArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deliveryStatusIamRoleArnInput() {
-    return this._deliveryStatusIamRoleArn
   }
 
   // delivery_status_success_sampling_rate - computed: false, optional: true, required: false
   private _deliveryStatusSuccessSamplingRate?: string;
   public get deliveryStatusSuccessSamplingRate() {
-    return this.getStringAttribute('delivery_status_success_sampling_rate');
+    return this._deliveryStatusSuccessSamplingRate;
   }
-  public set deliveryStatusSuccessSamplingRate(value: string ) {
+  public set deliveryStatusSuccessSamplingRate(value: string | undefined) {
     this._deliveryStatusSuccessSamplingRate = value;
-  }
-  public resetDeliveryStatusSuccessSamplingRate() {
-    this._deliveryStatusSuccessSamplingRate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deliveryStatusSuccessSamplingRateInput() {
-    return this._deliveryStatusSuccessSamplingRate
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // monthly_spend_limit - computed: false, optional: true, required: false
   private _monthlySpendLimit?: string;
   public get monthlySpendLimit() {
-    return this.getStringAttribute('monthly_spend_limit');
+    return this._monthlySpendLimit;
   }
-  public set monthlySpendLimit(value: string ) {
+  public set monthlySpendLimit(value: string | undefined) {
     this._monthlySpendLimit = value;
-  }
-  public resetMonthlySpendLimit() {
-    this._monthlySpendLimit = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get monthlySpendLimitInput() {
-    return this._monthlySpendLimit
   }
 
   // usage_report_s3_bucket - computed: false, optional: true, required: false
   private _usageReportS3Bucket?: string;
   public get usageReportS3Bucket() {
-    return this.getStringAttribute('usage_report_s3_bucket');
+    return this._usageReportS3Bucket;
   }
-  public set usageReportS3Bucket(value: string ) {
+  public set usageReportS3Bucket(value: string | undefined) {
     this._usageReportS3Bucket = value;
-  }
-  public resetUsageReportS3Bucket() {
-    this._usageReportS3Bucket = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usageReportS3BucketInput() {
-    return this._usageReportS3Bucket
   }
 
   // =========
@@ -153,12 +116,12 @@ export class SnsSmsPreferences extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_sender_id: cdktf.stringToTerraform(this._defaultSenderId),
-      default_sms_type: cdktf.stringToTerraform(this._defaultSmsType),
-      delivery_status_iam_role_arn: cdktf.stringToTerraform(this._deliveryStatusIamRoleArn),
-      delivery_status_success_sampling_rate: cdktf.stringToTerraform(this._deliveryStatusSuccessSamplingRate),
-      monthly_spend_limit: cdktf.stringToTerraform(this._monthlySpendLimit),
-      usage_report_s3_bucket: cdktf.stringToTerraform(this._usageReportS3Bucket),
+      default_sender_id: this._defaultSenderId,
+      default_sms_type: this._defaultSmsType,
+      delivery_status_iam_role_arn: this._deliveryStatusIamRoleArn,
+      delivery_status_success_sampling_rate: this._deliveryStatusSuccessSamplingRate,
+      monthly_spend_limit: this._monthlySpendLimit,
+      usage_report_s3_bucket: this._usageReportS3Bucket,
     };
   }
 }

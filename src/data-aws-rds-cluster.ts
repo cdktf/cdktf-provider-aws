@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRdsClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRdsClusterConfig extends TerraformMetaArguments {
   readonly clusterIdentifier: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
+export class DataAwsRdsCluster extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,22 +39,22 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zones - computed: true, optional: false, required: false
+  // availability_zones - computed: true, optional: false, required: true
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
 
-  // backtrack_window - computed: true, optional: false, required: false
+  // backtrack_window - computed: true, optional: false, required: true
   public get backtrackWindow() {
     return this.getNumberAttribute('backtrack_window');
   }
 
-  // backup_retention_period - computed: true, optional: false, required: false
+  // backup_retention_period - computed: true, optional: false, required: true
   public get backupRetentionPeriod() {
     return this.getNumberAttribute('backup_retention_period');
   }
@@ -61,143 +62,136 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
   // cluster_identifier - computed: false, optional: false, required: true
   private _clusterIdentifier: string;
   public get clusterIdentifier() {
-    return this.getStringAttribute('cluster_identifier');
+    return this._clusterIdentifier;
   }
   public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdentifierInput() {
-    return this._clusterIdentifier
-  }
 
-  // cluster_members - computed: true, optional: false, required: false
+  // cluster_members - computed: true, optional: false, required: true
   public get clusterMembers() {
     return this.getListAttribute('cluster_members');
   }
 
-  // cluster_resource_id - computed: true, optional: false, required: false
+  // cluster_resource_id - computed: true, optional: false, required: true
   public get clusterResourceId() {
     return this.getStringAttribute('cluster_resource_id');
   }
 
-  // database_name - computed: true, optional: false, required: false
+  // database_name - computed: true, optional: false, required: true
   public get databaseName() {
     return this.getStringAttribute('database_name');
   }
 
-  // db_cluster_parameter_group_name - computed: true, optional: false, required: false
+  // db_cluster_parameter_group_name - computed: true, optional: false, required: true
   public get dbClusterParameterGroupName() {
     return this.getStringAttribute('db_cluster_parameter_group_name');
   }
 
-  // db_subnet_group_name - computed: true, optional: false, required: false
+  // db_subnet_group_name - computed: true, optional: false, required: true
   public get dbSubnetGroupName() {
     return this.getStringAttribute('db_subnet_group_name');
   }
 
-  // enabled_cloudwatch_logs_exports - computed: true, optional: false, required: false
+  // enabled_cloudwatch_logs_exports - computed: true, optional: false, required: true
   public get enabledCloudwatchLogsExports() {
     return this.getListAttribute('enabled_cloudwatch_logs_exports');
   }
 
-  // endpoint - computed: true, optional: false, required: false
+  // endpoint - computed: true, optional: false, required: true
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
 
-  // engine - computed: true, optional: false, required: false
+  // engine - computed: true, optional: false, required: true
   public get engine() {
     return this.getStringAttribute('engine');
   }
 
-  // engine_version - computed: true, optional: false, required: false
+  // engine_version - computed: true, optional: false, required: true
   public get engineVersion() {
     return this.getStringAttribute('engine_version');
   }
 
-  // final_snapshot_identifier - computed: true, optional: false, required: false
+  // final_snapshot_identifier - computed: true, optional: false, required: true
   public get finalSnapshotIdentifier() {
     return this.getStringAttribute('final_snapshot_identifier');
   }
 
-  // hosted_zone_id - computed: true, optional: false, required: false
+  // hosted_zone_id - computed: true, optional: false, required: true
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
 
-  // iam_database_authentication_enabled - computed: true, optional: false, required: false
+  // iam_database_authentication_enabled - computed: true, optional: false, required: true
   public get iamDatabaseAuthenticationEnabled() {
     return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
 
-  // iam_roles - computed: true, optional: false, required: false
+  // iam_roles - computed: true, optional: false, required: true
   public get iamRoles() {
     return this.getListAttribute('iam_roles');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // master_username - computed: true, optional: false, required: false
+  // master_username - computed: true, optional: false, required: true
   public get masterUsername() {
     return this.getStringAttribute('master_username');
   }
 
-  // port - computed: true, optional: false, required: false
+  // port - computed: true, optional: false, required: true
   public get port() {
     return this.getNumberAttribute('port');
   }
 
-  // preferred_backup_window - computed: true, optional: false, required: false
+  // preferred_backup_window - computed: true, optional: false, required: true
   public get preferredBackupWindow() {
     return this.getStringAttribute('preferred_backup_window');
   }
 
-  // preferred_maintenance_window - computed: true, optional: false, required: false
+  // preferred_maintenance_window - computed: true, optional: false, required: true
   public get preferredMaintenanceWindow() {
     return this.getStringAttribute('preferred_maintenance_window');
   }
 
-  // reader_endpoint - computed: true, optional: false, required: false
+  // reader_endpoint - computed: true, optional: false, required: true
   public get readerEndpoint() {
     return this.getStringAttribute('reader_endpoint');
   }
 
-  // replication_source_identifier - computed: true, optional: false, required: false
+  // replication_source_identifier - computed: true, optional: false, required: true
   public get replicationSourceIdentifier() {
     return this.getStringAttribute('replication_source_identifier');
   }
 
-  // storage_encrypted - computed: true, optional: false, required: false
+  // storage_encrypted - computed: true, optional: false, required: true
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // vpc_security_group_ids - computed: true, optional: false, required: false
+  // vpc_security_group_ids - computed: true, optional: false, required: true
   public get vpcSecurityGroupIds() {
     return this.getListAttribute('vpc_security_group_ids');
   }
@@ -208,8 +202,8 @@ export class DataAwsRdsCluster extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      cluster_identifier: this._clusterIdentifier,
+      tags: this._tags,
     };
   }
 }

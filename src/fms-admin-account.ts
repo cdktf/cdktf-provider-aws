@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface FmsAdminAccountConfig extends cdktf.TerraformMetaArguments {
+export interface FmsAdminAccountConfig extends TerraformMetaArguments {
   readonly accountId?: string;
 }
 
 // Resource
 
-export class FmsAdminAccount extends cdktf.TerraformResource {
+export class FmsAdminAccount extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,22 +40,19 @@ export class FmsAdminAccount extends cdktf.TerraformResource {
   // account_id - computed: true, optional: true, required: false
   private _accountId?: string;
   public get accountId() {
-    return this.getStringAttribute('account_id');
+    return this._accountId ?? this.getStringAttribute('account_id');
   }
-  public set accountId(value: string) {
+  public set accountId(value: string | undefined) {
     this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accountIdInput() {
-    return this._accountId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========
@@ -63,7 +61,7 @@ export class FmsAdminAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: this._accountId,
     };
   }
 }

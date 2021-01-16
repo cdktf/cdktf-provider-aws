@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface EipAssociationConfig extends TerraformMetaArguments {
   readonly allocationId?: string;
   readonly allowReassociation?: boolean;
   readonly instanceId?: string;
@@ -17,7 +18,7 @@ export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class EipAssociation extends cdktf.TerraformResource {
+export class EipAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,102 +50,64 @@ export class EipAssociation extends cdktf.TerraformResource {
   // allocation_id - computed: true, optional: true, required: false
   private _allocationId?: string;
   public get allocationId() {
-    return this.getStringAttribute('allocation_id');
+    return this._allocationId ?? this.getStringAttribute('allocation_id');
   }
-  public set allocationId(value: string) {
+  public set allocationId(value: string | undefined) {
     this._allocationId = value;
-  }
-  public resetAllocationId() {
-    this._allocationId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allocationIdInput() {
-    return this._allocationId
   }
 
   // allow_reassociation - computed: false, optional: true, required: false
   private _allowReassociation?: boolean;
   public get allowReassociation() {
-    return this.getBooleanAttribute('allow_reassociation');
+    return this._allowReassociation;
   }
-  public set allowReassociation(value: boolean ) {
+  public set allowReassociation(value: boolean | undefined) {
     this._allowReassociation = value;
-  }
-  public resetAllowReassociation() {
-    this._allowReassociation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowReassociationInput() {
-    return this._allowReassociation
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance_id - computed: true, optional: true, required: false
   private _instanceId?: string;
   public get instanceId() {
-    return this.getStringAttribute('instance_id');
+    return this._instanceId ?? this.getStringAttribute('instance_id');
   }
-  public set instanceId(value: string) {
+  public set instanceId(value: string | undefined) {
     this._instanceId = value;
-  }
-  public resetInstanceId() {
-    this._instanceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceIdInput() {
-    return this._instanceId
   }
 
   // network_interface_id - computed: true, optional: true, required: false
   private _networkInterfaceId?: string;
   public get networkInterfaceId() {
-    return this.getStringAttribute('network_interface_id');
+    return this._networkInterfaceId ?? this.getStringAttribute('network_interface_id');
   }
-  public set networkInterfaceId(value: string) {
+  public set networkInterfaceId(value: string | undefined) {
     this._networkInterfaceId = value;
-  }
-  public resetNetworkInterfaceId() {
-    this._networkInterfaceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get networkInterfaceIdInput() {
-    return this._networkInterfaceId
   }
 
   // private_ip_address - computed: true, optional: true, required: false
   private _privateIpAddress?: string;
   public get privateIpAddress() {
-    return this.getStringAttribute('private_ip_address');
+    return this._privateIpAddress ?? this.getStringAttribute('private_ip_address');
   }
-  public set privateIpAddress(value: string) {
+  public set privateIpAddress(value: string | undefined) {
     this._privateIpAddress = value;
-  }
-  public resetPrivateIpAddress() {
-    this._privateIpAddress = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateIpAddressInput() {
-    return this._privateIpAddress
   }
 
   // public_ip - computed: true, optional: true, required: false
   private _publicIp?: string;
   public get publicIp() {
-    return this.getStringAttribute('public_ip');
+    return this._publicIp ?? this.getStringAttribute('public_ip');
   }
-  public set publicIp(value: string) {
+  public set publicIp(value: string | undefined) {
     this._publicIp = value;
-  }
-  public resetPublicIp() {
-    this._publicIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicIpInput() {
-    return this._publicIp
   }
 
   // =========
@@ -153,12 +116,12 @@ export class EipAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_id: cdktf.stringToTerraform(this._allocationId),
-      allow_reassociation: cdktf.booleanToTerraform(this._allowReassociation),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      private_ip_address: cdktf.stringToTerraform(this._privateIpAddress),
-      public_ip: cdktf.stringToTerraform(this._publicIp),
+      allocation_id: this._allocationId,
+      allow_reassociation: this._allowReassociation,
+      instance_id: this._instanceId,
+      network_interface_id: this._networkInterfaceId,
+      private_ip_address: this._privateIpAddress,
+      public_ip: this._publicIp,
     };
   }
 }

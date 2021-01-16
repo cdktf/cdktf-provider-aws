@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Route53DelegationSetConfig extends cdktf.TerraformMetaArguments {
+export interface Route53DelegationSetConfig extends TerraformMetaArguments {
   readonly referenceName?: string;
 }
 
 // Resource
 
-export class Route53DelegationSet extends cdktf.TerraformResource {
+export class Route53DelegationSet extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -37,11 +38,15 @@ export class Route53DelegationSet extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // name_servers - computed: true, optional: false, required: false
+  // name_servers - computed: true, optional: false, required: true
   public get nameServers() {
     return this.getListAttribute('name_servers');
   }
@@ -49,17 +54,10 @@ export class Route53DelegationSet extends cdktf.TerraformResource {
   // reference_name - computed: false, optional: true, required: false
   private _referenceName?: string;
   public get referenceName() {
-    return this.getStringAttribute('reference_name');
+    return this._referenceName;
   }
-  public set referenceName(value: string ) {
+  public set referenceName(value: string | undefined) {
     this._referenceName = value;
-  }
-  public resetReferenceName() {
-    this._referenceName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get referenceNameInput() {
-    return this._referenceName
   }
 
   // =========
@@ -68,7 +66,7 @@ export class Route53DelegationSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      reference_name: cdktf.stringToTerraform(this._referenceName),
+      reference_name: this._referenceName,
     };
   }
 }

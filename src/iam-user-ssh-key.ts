@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamUserSshKeyConfig extends cdktf.TerraformMetaArguments {
+export interface IamUserSshKeyConfig extends TerraformMetaArguments {
   readonly encoding: string;
   readonly publicKey: string;
   readonly status?: string;
@@ -15,7 +16,7 @@ export interface IamUserSshKeyConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class IamUserSshKey extends cdktf.TerraformResource {
+export class IamUserSshKey extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,40 +46,36 @@ export class IamUserSshKey extends cdktf.TerraformResource {
   // encoding - computed: false, optional: false, required: true
   private _encoding: string;
   public get encoding() {
-    return this.getStringAttribute('encoding');
+    return this._encoding;
   }
   public set encoding(value: string) {
     this._encoding = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get encodingInput() {
-    return this._encoding
-  }
 
-  // fingerprint - computed: true, optional: false, required: false
+  // fingerprint - computed: true, optional: false, required: true
   public get fingerprint() {
     return this.getStringAttribute('fingerprint');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // public_key - computed: false, optional: false, required: true
   private _publicKey: string;
   public get publicKey() {
-    return this.getStringAttribute('public_key');
+    return this._publicKey;
   }
   public set publicKey(value: string) {
     this._publicKey = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get publicKeyInput() {
-    return this._publicKey
-  }
 
-  // ssh_public_key_id - computed: true, optional: false, required: false
+  // ssh_public_key_id - computed: true, optional: false, required: true
   public get sshPublicKeyId() {
     return this.getStringAttribute('ssh_public_key_id');
   }
@@ -86,30 +83,19 @@ export class IamUserSshKey extends cdktf.TerraformResource {
   // status - computed: true, optional: true, required: false
   private _status?: string;
   public get status() {
-    return this.getStringAttribute('status');
+    return this._status ?? this.getStringAttribute('status');
   }
-  public set status(value: string) {
+  public set status(value: string | undefined) {
     this._status = value;
-  }
-  public resetStatus() {
-    this._status = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status
   }
 
   // username - computed: false, optional: false, required: true
   private _username: string;
   public get username() {
-    return this.getStringAttribute('username');
+    return this._username;
   }
   public set username(value: string) {
     this._username = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usernameInput() {
-    return this._username
   }
 
   // =========
@@ -118,10 +104,10 @@ export class IamUserSshKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      encoding: cdktf.stringToTerraform(this._encoding),
-      public_key: cdktf.stringToTerraform(this._publicKey),
-      status: cdktf.stringToTerraform(this._status),
-      username: cdktf.stringToTerraform(this._username),
+      encoding: this._encoding,
+      public_key: this._publicKey,
+      status: this._status,
+      username: this._username,
     };
   }
 }

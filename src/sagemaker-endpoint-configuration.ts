@@ -2,16 +2,36 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerEndpointConfigurationConfig extends TerraformMetaArguments {
   readonly kmsKeyArn?: string;
   readonly name?: string;
   readonly tags?: { [key: string]: string };
+  /** data_capture_config block */
+  readonly dataCaptureConfig?: SagemakerEndpointConfigurationDataCaptureConfig[];
   /** production_variants block */
   readonly productionVariants: SagemakerEndpointConfigurationProductionVariants[];
+}
+export interface SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader {
+  readonly csvContentTypes?: string[];
+  readonly jsonContentTypes?: string[];
+}
+export interface SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions {
+  readonly captureMode: string;
+}
+export interface SagemakerEndpointConfigurationDataCaptureConfig {
+  readonly destinationS3Uri: string;
+  readonly enableCapture?: boolean;
+  readonly initialSamplingPercentage: number;
+  readonly kmsKeyId?: string;
+  /** capture_content_type_header block */
+  readonly captureContentTypeHeader?: SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader[];
+  /** capture_options block */
+  readonly captureOptions: SagemakerEndpointConfigurationDataCaptureConfigCaptureOptions[];
 }
 export interface SagemakerEndpointConfigurationProductionVariants {
   readonly acceleratorType?: string;
@@ -22,22 +42,9 @@ export interface SagemakerEndpointConfigurationProductionVariants {
   readonly variantName?: string;
 }
 
-function sagemakerEndpointConfigurationProductionVariantsToTerraform(struct?: SagemakerEndpointConfigurationProductionVariants): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    accelerator_type: cdktf.stringToTerraform(struct!.acceleratorType),
-    initial_instance_count: cdktf.numberToTerraform(struct!.initialInstanceCount),
-    initial_variant_weight: cdktf.numberToTerraform(struct!.initialVariantWeight),
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    model_name: cdktf.stringToTerraform(struct!.modelName),
-    variant_name: cdktf.stringToTerraform(struct!.variantName),
-  }
-}
-
-
 // Resource
 
-export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
+export class SagemakerEndpointConfiguration extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,6 +64,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     this._kmsKeyArn = config.kmsKeyArn;
     this._name = config.name;
     this._tags = config.tags;
+    this._dataCaptureConfig = config.dataCaptureConfig;
     this._productionVariants = config.productionVariants;
   }
 
@@ -64,75 +72,63 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // kms_key_arn - computed: false, optional: true, required: false
   private _kmsKeyArn?: string;
   public get kmsKeyArn() {
-    return this.getStringAttribute('kms_key_arn');
+    return this._kmsKeyArn;
   }
-  public set kmsKeyArn(value: string ) {
+  public set kmsKeyArn(value: string | undefined) {
     this._kmsKeyArn = value;
-  }
-  public resetKmsKeyArn() {
-    this._kmsKeyArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyArnInput() {
-    return this._kmsKeyArn
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
+
+  // data_capture_config - computed: false, optional: true, required: false
+  private _dataCaptureConfig?: SagemakerEndpointConfigurationDataCaptureConfig[];
+  public get dataCaptureConfig() {
+    return this._dataCaptureConfig;
   }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
+  public set dataCaptureConfig(value: SagemakerEndpointConfigurationDataCaptureConfig[] | undefined) {
+    this._dataCaptureConfig = value;
   }
 
   // production_variants - computed: false, optional: false, required: true
   private _productionVariants: SagemakerEndpointConfigurationProductionVariants[];
   public get productionVariants() {
-    return this.interpolationForAttribute('production_variants') as any;
+    return this._productionVariants;
   }
   public set productionVariants(value: SagemakerEndpointConfigurationProductionVariants[]) {
     this._productionVariants = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get productionVariantsInput() {
-    return this._productionVariants
   }
 
   // =========
@@ -141,10 +137,11 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform)(this._productionVariants),
+      kms_key_arn: this._kmsKeyArn,
+      name: this._name,
+      tags: this._tags,
+      data_capture_config: this._dataCaptureConfig,
+      production_variants: this._productionVariants,
     };
   }
 }

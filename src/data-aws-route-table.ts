@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRouteTableConfig extends TerraformMetaArguments {
   readonly gatewayId?: string;
   readonly routeTableId?: string;
   readonly subnetId?: string;
@@ -15,76 +17,86 @@ export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsRouteTableFilter[];
 }
-export class DataAwsRouteTableAssociations extends cdktf.ComplexComputedList {
+export class DataAwsRouteTableAssociations extends ComplexComputedList {
 
-  // gateway_id - computed: true, optional: false, required: false
+  // gateway_id - computed: true, optional: false, required: true
   public get gatewayId() {
     return this.getStringAttribute('gateway_id');
   }
 
-  // main - computed: true, optional: false, required: false
+  // main - computed: true, optional: false, required: true
   public get main() {
     return this.getBooleanAttribute('main');
   }
 
-  // route_table_association_id - computed: true, optional: false, required: false
+  // route_table_association_id - computed: true, optional: false, required: true
   public get routeTableAssociationId() {
     return this.getStringAttribute('route_table_association_id');
   }
 
-  // route_table_id - computed: true, optional: false, required: false
+  // route_table_id - computed: true, optional: false, required: true
   public get routeTableId() {
     return this.getStringAttribute('route_table_id');
   }
 
-  // subnet_id - computed: true, optional: false, required: false
+  // subnet_id - computed: true, optional: false, required: true
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
 }
-export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
+export class DataAwsRouteTableRoutes extends ComplexComputedList {
 
-  // cidr_block - computed: true, optional: false, required: false
+  // cidr_block - computed: true, optional: false, required: true
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
 
-  // egress_only_gateway_id - computed: true, optional: false, required: false
+  // egress_only_gateway_id - computed: true, optional: false, required: true
   public get egressOnlyGatewayId() {
     return this.getStringAttribute('egress_only_gateway_id');
   }
 
-  // gateway_id - computed: true, optional: false, required: false
+  // gateway_id - computed: true, optional: false, required: true
   public get gatewayId() {
     return this.getStringAttribute('gateway_id');
   }
 
-  // instance_id - computed: true, optional: false, required: false
+  // instance_id - computed: true, optional: false, required: true
   public get instanceId() {
     return this.getStringAttribute('instance_id');
   }
 
-  // ipv6_cidr_block - computed: true, optional: false, required: false
+  // ipv6_cidr_block - computed: true, optional: false, required: true
   public get ipv6CidrBlock() {
     return this.getStringAttribute('ipv6_cidr_block');
   }
 
-  // nat_gateway_id - computed: true, optional: false, required: false
+  // local_gateway_id - computed: true, optional: false, required: true
+  public get localGatewayId() {
+    return this.getStringAttribute('local_gateway_id');
+  }
+
+  // nat_gateway_id - computed: true, optional: false, required: true
   public get natGatewayId() {
     return this.getStringAttribute('nat_gateway_id');
   }
 
-  // network_interface_id - computed: true, optional: false, required: false
+  // network_interface_id - computed: true, optional: false, required: true
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
   }
 
-  // transit_gateway_id - computed: true, optional: false, required: false
+  // transit_gateway_id - computed: true, optional: false, required: true
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
   }
 
-  // vpc_peering_connection_id - computed: true, optional: false, required: false
+  // vpc_endpoint_id - computed: true, optional: false, required: true
+  public get vpcEndpointId() {
+    return this.getStringAttribute('vpc_endpoint_id');
+  }
+
+  // vpc_peering_connection_id - computed: true, optional: false, required: true
   public get vpcPeeringConnectionId() {
     return this.getStringAttribute('vpc_peering_connection_id');
   }
@@ -94,18 +106,9 @@ export interface DataAwsRouteTableFilter {
   readonly values: string[];
 }
 
-function dataAwsRouteTableFilterToTerraform(struct?: DataAwsRouteTableFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsRouteTable extends cdktf.TerraformDataSource {
+export class DataAwsRouteTable extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -134,7 +137,7 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // associations - computed: true, optional: false, required: false
+  // associations - computed: true, optional: false, required: true
   public associations(index: string) {
     return new DataAwsRouteTableAssociations(this, 'associations', index);
   }
@@ -142,25 +145,22 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   // gateway_id - computed: true, optional: true, required: false
   private _gatewayId?: string;
   public get gatewayId() {
-    return this.getStringAttribute('gateway_id');
+    return this._gatewayId ?? this.getStringAttribute('gateway_id');
   }
-  public set gatewayId(value: string) {
+  public set gatewayId(value: string | undefined) {
     this._gatewayId = value;
-  }
-  public resetGatewayId() {
-    this._gatewayId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get gatewayIdInput() {
-    return this._gatewayId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -168,20 +168,13 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   // route_table_id - computed: true, optional: true, required: false
   private _routeTableId?: string;
   public get routeTableId() {
-    return this.getStringAttribute('route_table_id');
+    return this._routeTableId ?? this.getStringAttribute('route_table_id');
   }
-  public set routeTableId(value: string) {
+  public set routeTableId(value: string | undefined) {
     this._routeTableId = value;
   }
-  public resetRouteTableId() {
-    this._routeTableId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeTableIdInput() {
-    return this._routeTableId
-  }
 
-  // routes - computed: true, optional: false, required: false
+  // routes - computed: true, optional: false, required: true
   public routes(index: string) {
     return new DataAwsRouteTableRoutes(this, 'routes', index);
   }
@@ -189,65 +182,37 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   // subnet_id - computed: true, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this.getStringAttribute('subnet_id');
+    return this._subnetId ?? this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string) {
+  public set subnetId(value: string | undefined) {
     this._subnetId = value;
-  }
-  public resetSubnetId() {
-    this._subnetId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // vpc_id - computed: true, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this.getStringAttribute('vpc_id');
+    return this._vpcId ?? this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string) {
+  public set vpcId(value: string | undefined) {
     this._vpcId = value;
-  }
-  public resetVpcId() {
-    this._vpcId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsRouteTableFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsRouteTableFilter[] ) {
+  public set filter(value: DataAwsRouteTableFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -256,12 +221,12 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      gateway_id: cdktf.stringToTerraform(this._gatewayId),
-      route_table_id: cdktf.stringToTerraform(this._routeTableId),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      filter: cdktf.listMapper(dataAwsRouteTableFilterToTerraform)(this._filter),
+      gateway_id: this._gatewayId,
+      route_table_id: this._routeTableId,
+      subnet_id: this._subnetId,
+      tags: this._tags,
+      vpc_id: this._vpcId,
+      filter: this._filter,
     };
   }
 }

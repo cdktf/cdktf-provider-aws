@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface OpsworksPermissionConfig extends cdktf.TerraformMetaArguments {
+export interface OpsworksPermissionConfig extends TerraformMetaArguments {
   readonly allowSsh?: boolean;
   readonly allowSudo?: boolean;
   readonly level?: string;
@@ -16,7 +17,7 @@ export interface OpsworksPermissionConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class OpsworksPermission extends cdktf.TerraformResource {
+export class OpsworksPermission extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,83 +48,55 @@ export class OpsworksPermission extends cdktf.TerraformResource {
   // allow_ssh - computed: true, optional: true, required: false
   private _allowSsh?: boolean;
   public get allowSsh() {
-    return this.getBooleanAttribute('allow_ssh');
+    return this._allowSsh ?? this.getBooleanAttribute('allow_ssh');
   }
-  public set allowSsh(value: boolean) {
+  public set allowSsh(value: boolean | undefined) {
     this._allowSsh = value;
-  }
-  public resetAllowSsh() {
-    this._allowSsh = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowSshInput() {
-    return this._allowSsh
   }
 
   // allow_sudo - computed: true, optional: true, required: false
   private _allowSudo?: boolean;
   public get allowSudo() {
-    return this.getBooleanAttribute('allow_sudo');
+    return this._allowSudo ?? this.getBooleanAttribute('allow_sudo');
   }
-  public set allowSudo(value: boolean) {
+  public set allowSudo(value: boolean | undefined) {
     this._allowSudo = value;
-  }
-  public resetAllowSudo() {
-    this._allowSudo = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowSudoInput() {
-    return this._allowSudo
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // level - computed: true, optional: true, required: false
   private _level?: string;
   public get level() {
-    return this.getStringAttribute('level');
+    return this._level ?? this.getStringAttribute('level');
   }
-  public set level(value: string) {
+  public set level(value: string | undefined) {
     this._level = value;
-  }
-  public resetLevel() {
-    this._level = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get levelInput() {
-    return this._level
   }
 
   // stack_id - computed: true, optional: true, required: false
   private _stackId?: string;
   public get stackId() {
-    return this.getStringAttribute('stack_id');
+    return this._stackId ?? this.getStringAttribute('stack_id');
   }
-  public set stackId(value: string) {
+  public set stackId(value: string | undefined) {
     this._stackId = value;
-  }
-  public resetStackId() {
-    this._stackId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stackIdInput() {
-    return this._stackId
   }
 
   // user_arn - computed: false, optional: false, required: true
   private _userArn: string;
   public get userArn() {
-    return this.getStringAttribute('user_arn');
+    return this._userArn;
   }
   public set userArn(value: string) {
     this._userArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userArnInput() {
-    return this._userArn
   }
 
   // =========
@@ -132,11 +105,11 @@ export class OpsworksPermission extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_ssh: cdktf.booleanToTerraform(this._allowSsh),
-      allow_sudo: cdktf.booleanToTerraform(this._allowSudo),
-      level: cdktf.stringToTerraform(this._level),
-      stack_id: cdktf.stringToTerraform(this._stackId),
-      user_arn: cdktf.stringToTerraform(this._userArn),
+      allow_ssh: this._allowSsh,
+      allow_sudo: this._allowSudo,
+      level: this._level,
+      stack_id: this._stackId,
+      user_arn: this._userArn,
     };
   }
 }

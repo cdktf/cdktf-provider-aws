@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCloudfrontDistributionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCloudfrontDistributionConfig extends TerraformMetaArguments {
   readonly id: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
+export class DataAwsCloudfrontDistribution extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,27 +39,27 @@ export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // domain_name - computed: true, optional: false, required: false
+  // domain_name - computed: true, optional: false, required: true
   public get domainName() {
     return this.getStringAttribute('domain_name');
   }
 
-  // enabled - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // etag - computed: true, optional: false, required: false
+  // etag - computed: true, optional: false, required: true
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
-  // hosted_zone_id - computed: true, optional: false, required: false
+  // hosted_zone_id - computed: true, optional: false, required: true
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
@@ -66,27 +67,23 @@ export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
   // id - computed: false, optional: false, required: true
   private _id: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id;
   }
   public set id(value: string) {
     this._id = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id
-  }
 
-  // in_progress_validation_batches - computed: true, optional: false, required: false
+  // in_progress_validation_batches - computed: true, optional: false, required: true
   public get inProgressValidationBatches() {
     return this.getNumberAttribute('in_progress_validation_batches');
   }
 
-  // last_modified_time - computed: true, optional: false, required: false
+  // last_modified_time - computed: true, optional: false, required: true
   public get lastModifiedTime() {
     return this.getStringAttribute('last_modified_time');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -94,17 +91,10 @@ export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -113,8 +103,8 @@ export class DataAwsCloudfrontDistribution extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      id: this._id,
+      tags: this._tags,
     };
   }
 }

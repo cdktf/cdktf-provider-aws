@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
+export interface FlowLogConfig extends TerraformMetaArguments {
   readonly eniId?: string;
   readonly iamRoleArn?: string;
   readonly logDestination?: string;
@@ -22,7 +23,7 @@ export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class FlowLog extends cdktf.TerraformResource {
+export class FlowLog extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -56,7 +57,7 @@ export class FlowLog extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -64,179 +65,109 @@ export class FlowLog extends cdktf.TerraformResource {
   // eni_id - computed: false, optional: true, required: false
   private _eniId?: string;
   public get eniId() {
-    return this.getStringAttribute('eni_id');
+    return this._eniId;
   }
-  public set eniId(value: string ) {
+  public set eniId(value: string | undefined) {
     this._eniId = value;
-  }
-  public resetEniId() {
-    this._eniId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get eniIdInput() {
-    return this._eniId
   }
 
   // iam_role_arn - computed: false, optional: true, required: false
   private _iamRoleArn?: string;
   public get iamRoleArn() {
-    return this.getStringAttribute('iam_role_arn');
+    return this._iamRoleArn;
   }
-  public set iamRoleArn(value: string ) {
+  public set iamRoleArn(value: string | undefined) {
     this._iamRoleArn = value;
-  }
-  public resetIamRoleArn() {
-    this._iamRoleArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iamRoleArnInput() {
-    return this._iamRoleArn
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // log_destination - computed: true, optional: true, required: false
   private _logDestination?: string;
   public get logDestination() {
-    return this.getStringAttribute('log_destination');
+    return this._logDestination ?? this.getStringAttribute('log_destination');
   }
-  public set logDestination(value: string) {
+  public set logDestination(value: string | undefined) {
     this._logDestination = value;
-  }
-  public resetLogDestination() {
-    this._logDestination = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logDestinationInput() {
-    return this._logDestination
   }
 
   // log_destination_type - computed: false, optional: true, required: false
   private _logDestinationType?: string;
   public get logDestinationType() {
-    return this.getStringAttribute('log_destination_type');
+    return this._logDestinationType;
   }
-  public set logDestinationType(value: string ) {
+  public set logDestinationType(value: string | undefined) {
     this._logDestinationType = value;
-  }
-  public resetLogDestinationType() {
-    this._logDestinationType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logDestinationTypeInput() {
-    return this._logDestinationType
   }
 
   // log_format - computed: true, optional: true, required: false
   private _logFormat?: string;
   public get logFormat() {
-    return this.getStringAttribute('log_format');
+    return this._logFormat ?? this.getStringAttribute('log_format');
   }
-  public set logFormat(value: string) {
+  public set logFormat(value: string | undefined) {
     this._logFormat = value;
-  }
-  public resetLogFormat() {
-    this._logFormat = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logFormatInput() {
-    return this._logFormat
   }
 
   // log_group_name - computed: true, optional: true, required: false
   private _logGroupName?: string;
   public get logGroupName() {
-    return this.getStringAttribute('log_group_name');
+    return this._logGroupName ?? this.getStringAttribute('log_group_name');
   }
-  public set logGroupName(value: string) {
+  public set logGroupName(value: string | undefined) {
     this._logGroupName = value;
-  }
-  public resetLogGroupName() {
-    this._logGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logGroupNameInput() {
-    return this._logGroupName
   }
 
   // max_aggregation_interval - computed: false, optional: true, required: false
   private _maxAggregationInterval?: number;
   public get maxAggregationInterval() {
-    return this.getNumberAttribute('max_aggregation_interval');
+    return this._maxAggregationInterval;
   }
-  public set maxAggregationInterval(value: number ) {
+  public set maxAggregationInterval(value: number | undefined) {
     this._maxAggregationInterval = value;
-  }
-  public resetMaxAggregationInterval() {
-    this._maxAggregationInterval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxAggregationIntervalInput() {
-    return this._maxAggregationInterval
   }
 
   // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this.getStringAttribute('subnet_id');
+    return this._subnetId;
   }
-  public set subnetId(value: string ) {
+  public set subnetId(value: string | undefined) {
     this._subnetId = value;
-  }
-  public resetSubnetId() {
-    this._subnetId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // traffic_type - computed: false, optional: false, required: true
   private _trafficType: string;
   public get trafficType() {
-    return this.getStringAttribute('traffic_type');
+    return this._trafficType;
   }
   public set trafficType(value: string) {
     this._trafficType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get trafficTypeInput() {
-    return this._trafficType
   }
 
   // vpc_id - computed: false, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this.getStringAttribute('vpc_id');
+    return this._vpcId;
   }
-  public set vpcId(value: string ) {
+  public set vpcId(value: string | undefined) {
     this._vpcId = value;
-  }
-  public resetVpcId() {
-    this._vpcId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
   }
 
   // =========
@@ -245,17 +176,17 @@ export class FlowLog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      eni_id: cdktf.stringToTerraform(this._eniId),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      log_destination: cdktf.stringToTerraform(this._logDestination),
-      log_destination_type: cdktf.stringToTerraform(this._logDestinationType),
-      log_format: cdktf.stringToTerraform(this._logFormat),
-      log_group_name: cdktf.stringToTerraform(this._logGroupName),
-      max_aggregation_interval: cdktf.numberToTerraform(this._maxAggregationInterval),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      traffic_type: cdktf.stringToTerraform(this._trafficType),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      eni_id: this._eniId,
+      iam_role_arn: this._iamRoleArn,
+      log_destination: this._logDestination,
+      log_destination_type: this._logDestinationType,
+      log_format: this._logFormat,
+      log_group_name: this._logGroupName,
+      max_aggregation_interval: this._maxAggregationInterval,
+      subnet_id: this._subnetId,
+      tags: this._tags,
+      traffic_type: this._trafficType,
+      vpc_id: this._vpcId,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamAccessKeyConfig extends cdktf.TerraformMetaArguments {
+export interface IamAccessKeyConfig extends TerraformMetaArguments {
   readonly pgpKey?: string;
   readonly status?: string;
   readonly user: string;
@@ -14,7 +15,7 @@ export interface IamAccessKeyConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class IamAccessKey extends cdktf.TerraformResource {
+export class IamAccessKey extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,17 +41,21 @@ export class IamAccessKey extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // encrypted_secret - computed: true, optional: false, required: false
+  // encrypted_secret - computed: true, optional: false, required: true
   public get encryptedSecret() {
     return this.getStringAttribute('encrypted_secret');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // key_fingerprint - computed: true, optional: false, required: false
+  // key_fingerprint - computed: true, optional: false, required: true
   public get keyFingerprint() {
     return this.getStringAttribute('key_fingerprint');
   }
@@ -58,30 +63,18 @@ export class IamAccessKey extends cdktf.TerraformResource {
   // pgp_key - computed: false, optional: true, required: false
   private _pgpKey?: string;
   public get pgpKey() {
-    return this.getStringAttribute('pgp_key');
+    return this._pgpKey;
   }
-  public set pgpKey(value: string ) {
+  public set pgpKey(value: string | undefined) {
     this._pgpKey = value;
   }
-  public resetPgpKey() {
-    this._pgpKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pgpKeyInput() {
-    return this._pgpKey
-  }
 
-  // secret - computed: true, optional: false, required: false
+  // secret - computed: true, optional: false, required: true
   public get secret() {
     return this.getStringAttribute('secret');
   }
 
-  // ses_smtp_password - computed: true, optional: false, required: false
-  public get sesSmtpPassword() {
-    return this.getStringAttribute('ses_smtp_password');
-  }
-
-  // ses_smtp_password_v4 - computed: true, optional: false, required: false
+  // ses_smtp_password_v4 - computed: true, optional: false, required: true
   public get sesSmtpPasswordV4() {
     return this.getStringAttribute('ses_smtp_password_v4');
   }
@@ -89,30 +82,19 @@ export class IamAccessKey extends cdktf.TerraformResource {
   // status - computed: true, optional: true, required: false
   private _status?: string;
   public get status() {
-    return this.getStringAttribute('status');
+    return this._status ?? this.getStringAttribute('status');
   }
-  public set status(value: string) {
+  public set status(value: string | undefined) {
     this._status = value;
-  }
-  public resetStatus() {
-    this._status = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status
   }
 
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this.getStringAttribute('user');
+    return this._user;
   }
   public set user(value: string) {
     this._user = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userInput() {
-    return this._user
   }
 
   // =========
@@ -121,9 +103,9 @@ export class IamAccessKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      pgp_key: cdktf.stringToTerraform(this._pgpKey),
-      status: cdktf.stringToTerraform(this._status),
-      user: cdktf.stringToTerraform(this._user),
+      pgp_key: this._pgpKey,
+      status: this._status,
+      user: this._user,
     };
   }
 }

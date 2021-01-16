@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsSnapshotIdsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEbsSnapshotIdsConfig extends TerraformMetaArguments {
   readonly owners?: string[];
   readonly restorableByUserIds?: string[];
   /** filter block */
@@ -17,18 +18,9 @@ export interface DataAwsEbsSnapshotIdsFilter {
   readonly values: string[];
 }
 
-function dataAwsEbsSnapshotIdsFilterToTerraform(struct?: DataAwsEbsSnapshotIdsFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
+export class DataAwsEbsSnapshotIds extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -55,11 +47,15 @@ export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ids - computed: true, optional: false, required: false
+  // ids - computed: true, optional: false, required: true
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -67,49 +63,28 @@ export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
   // owners - computed: false, optional: true, required: false
   private _owners?: string[];
   public get owners() {
-    return this.getListAttribute('owners');
+    return this._owners;
   }
-  public set owners(value: string[] ) {
+  public set owners(value: string[] | undefined) {
     this._owners = value;
-  }
-  public resetOwners() {
-    this._owners = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ownersInput() {
-    return this._owners
   }
 
   // restorable_by_user_ids - computed: false, optional: true, required: false
   private _restorableByUserIds?: string[];
   public get restorableByUserIds() {
-    return this.getListAttribute('restorable_by_user_ids');
+    return this._restorableByUserIds;
   }
-  public set restorableByUserIds(value: string[] ) {
+  public set restorableByUserIds(value: string[] | undefined) {
     this._restorableByUserIds = value;
-  }
-  public resetRestorableByUserIds() {
-    this._restorableByUserIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restorableByUserIdsInput() {
-    return this._restorableByUserIds
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEbsSnapshotIdsFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsEbsSnapshotIdsFilter[] ) {
+  public set filter(value: DataAwsEbsSnapshotIdsFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -118,9 +93,9 @@ export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      owners: cdktf.listMapper(cdktf.stringToTerraform)(this._owners),
-      restorable_by_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._restorableByUserIds),
-      filter: cdktf.listMapper(dataAwsEbsSnapshotIdsFilterToTerraform)(this._filter),
+      owners: this._owners,
+      restorable_by_user_ids: this._restorableByUserIds,
+      filter: this._filter,
     };
   }
 }

@@ -2,26 +2,30 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaArguments {
+export interface GlobalacceleratorAcceleratorConfig extends TerraformMetaArguments {
   readonly enabled?: boolean;
   readonly ipAddressType?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** attributes block */
   readonly attributes?: GlobalacceleratorAcceleratorAttributes[];
+  /** timeouts block */
+  readonly timeouts?: GlobalacceleratorAcceleratorTimeouts;
 }
-export class GlobalacceleratorAcceleratorIpSets extends cdktf.ComplexComputedList {
+export class GlobalacceleratorAcceleratorIpSets extends ComplexComputedList {
 
-  // ip_addresses - computed: true, optional: false, required: false
+  // ip_addresses - computed: true, optional: false, required: true
   public get ipAddresses() {
     return this.getListAttribute('ip_addresses');
   }
 
-  // ip_family - computed: true, optional: false, required: false
+  // ip_family - computed: true, optional: false, required: true
   public get ipFamily() {
     return this.getStringAttribute('ip_family');
   }
@@ -31,20 +35,14 @@ export interface GlobalacceleratorAcceleratorAttributes {
   readonly flowLogsS3Bucket?: string;
   readonly flowLogsS3Prefix?: string;
 }
-
-function globalacceleratorAcceleratorAttributesToTerraform(struct?: GlobalacceleratorAcceleratorAttributes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    flow_logs_enabled: cdktf.booleanToTerraform(struct!.flowLogsEnabled),
-    flow_logs_s3_bucket: cdktf.stringToTerraform(struct!.flowLogsS3Bucket),
-    flow_logs_s3_prefix: cdktf.stringToTerraform(struct!.flowLogsS3Prefix),
-  }
+export interface GlobalacceleratorAcceleratorTimeouts {
+  readonly create?: string;
+  readonly update?: string;
 }
-
 
 // Resource
 
-export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
+export class GlobalacceleratorAccelerator extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -66,13 +64,14 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._attributes = config.attributes;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // dns_name - computed: true, optional: false, required: false
+  // dns_name - computed: true, optional: false, required: true
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
@@ -80,46 +79,36 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this._enabled;
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | undefined) {
     this._enabled = value;
   }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled
-  }
 
-  // hosted_zone_id - computed: true, optional: false, required: false
+  // hosted_zone_id - computed: true, optional: false, required: true
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // ip_address_type - computed: false, optional: true, required: false
   private _ipAddressType?: string;
   public get ipAddressType() {
-    return this.getStringAttribute('ip_address_type');
+    return this._ipAddressType;
   }
-  public set ipAddressType(value: string ) {
+  public set ipAddressType(value: string | undefined) {
     this._ipAddressType = value;
   }
-  public resetIpAddressType() {
-    this._ipAddressType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipAddressTypeInput() {
-    return this._ipAddressType
-  }
 
-  // ip_sets - computed: true, optional: false, required: false
+  // ip_sets - computed: true, optional: false, required: true
   public ipSets(index: string) {
     return new GlobalacceleratorAcceleratorIpSets(this, 'ip_sets', index);
   }
@@ -127,46 +116,37 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // attributes - computed: false, optional: true, required: false
   private _attributes?: GlobalacceleratorAcceleratorAttributes[];
   public get attributes() {
-    return this.interpolationForAttribute('attributes') as any;
+    return this._attributes;
   }
-  public set attributes(value: GlobalacceleratorAcceleratorAttributes[] ) {
+  public set attributes(value: GlobalacceleratorAcceleratorAttributes[] | undefined) {
     this._attributes = value;
   }
-  public resetAttributes() {
-    this._attributes = undefined;
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: GlobalacceleratorAcceleratorTimeouts;
+  public get timeouts() {
+    return this._timeouts;
   }
-  // Temporarily expose input value. Use with caution.
-  public get attributesInput() {
-    return this._attributes
+  public set timeouts(value: GlobalacceleratorAcceleratorTimeouts | undefined) {
+    this._timeouts = value;
   }
 
   // =========
@@ -175,11 +155,12 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      attributes: cdktf.listMapper(globalacceleratorAcceleratorAttributesToTerraform)(this._attributes),
+      enabled: this._enabled,
+      ip_address_type: this._ipAddressType,
+      name: this._name,
+      tags: this._tags,
+      attributes: this._attributes,
+      timeouts: this._timeouts,
     };
   }
 }

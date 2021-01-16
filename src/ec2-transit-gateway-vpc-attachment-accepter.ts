@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayVpcAttachmentAccepterConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayVpcAttachmentAccepterConfig extends TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly transitGatewayAttachmentId: string;
   readonly transitGatewayDefaultRouteTableAssociation?: boolean;
@@ -15,7 +16,7 @@ export interface Ec2TransitGatewayVpcAttachmentAccepterConfig extends cdktf.Terr
 
 // Resource
 
-export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResource {
+export class Ec2TransitGatewayVpcAttachmentAccepter extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,22 +43,31 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResou
   // ATTRIBUTES
   // ==========
 
-  // dns_support - computed: true, optional: false, required: false
+  // appliance_mode_support - computed: true, optional: false, required: true
+  public get applianceModeSupport() {
+    return this.getStringAttribute('appliance_mode_support');
+  }
+
+  // dns_support - computed: true, optional: false, required: true
   public get dnsSupport() {
     return this.getStringAttribute('dns_support');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ipv6_support - computed: true, optional: false, required: false
+  // ipv6_support - computed: true, optional: false, required: true
   public get ipv6Support() {
     return this.getStringAttribute('ipv6_support');
   }
 
-  // subnet_ids - computed: true, optional: false, required: false
+  // subnet_ids - computed: true, optional: false, required: true
   public get subnetIds() {
     return this.getListAttribute('subnet_ids');
   }
@@ -65,75 +75,50 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResou
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // transit_gateway_attachment_id - computed: false, optional: false, required: true
   private _transitGatewayAttachmentId: string;
   public get transitGatewayAttachmentId() {
-    return this.getStringAttribute('transit_gateway_attachment_id');
+    return this._transitGatewayAttachmentId;
   }
   public set transitGatewayAttachmentId(value: string) {
     this._transitGatewayAttachmentId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get transitGatewayAttachmentIdInput() {
-    return this._transitGatewayAttachmentId
   }
 
   // transit_gateway_default_route_table_association - computed: false, optional: true, required: false
   private _transitGatewayDefaultRouteTableAssociation?: boolean;
   public get transitGatewayDefaultRouteTableAssociation() {
-    return this.getBooleanAttribute('transit_gateway_default_route_table_association');
+    return this._transitGatewayDefaultRouteTableAssociation;
   }
-  public set transitGatewayDefaultRouteTableAssociation(value: boolean ) {
+  public set transitGatewayDefaultRouteTableAssociation(value: boolean | undefined) {
     this._transitGatewayDefaultRouteTableAssociation = value;
-  }
-  public resetTransitGatewayDefaultRouteTableAssociation() {
-    this._transitGatewayDefaultRouteTableAssociation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get transitGatewayDefaultRouteTableAssociationInput() {
-    return this._transitGatewayDefaultRouteTableAssociation
   }
 
   // transit_gateway_default_route_table_propagation - computed: false, optional: true, required: false
   private _transitGatewayDefaultRouteTablePropagation?: boolean;
   public get transitGatewayDefaultRouteTablePropagation() {
-    return this.getBooleanAttribute('transit_gateway_default_route_table_propagation');
+    return this._transitGatewayDefaultRouteTablePropagation;
   }
-  public set transitGatewayDefaultRouteTablePropagation(value: boolean ) {
+  public set transitGatewayDefaultRouteTablePropagation(value: boolean | undefined) {
     this._transitGatewayDefaultRouteTablePropagation = value;
   }
-  public resetTransitGatewayDefaultRouteTablePropagation() {
-    this._transitGatewayDefaultRouteTablePropagation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get transitGatewayDefaultRouteTablePropagationInput() {
-    return this._transitGatewayDefaultRouteTablePropagation
-  }
 
-  // transit_gateway_id - computed: true, optional: false, required: false
+  // transit_gateway_id - computed: true, optional: false, required: true
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
   }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
 
-  // vpc_owner_id - computed: true, optional: false, required: false
+  // vpc_owner_id - computed: true, optional: false, required: true
   public get vpcOwnerId() {
     return this.getStringAttribute('vpc_owner_id');
   }
@@ -144,10 +129,10 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
-      transit_gateway_default_route_table_association: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTableAssociation),
-      transit_gateway_default_route_table_propagation: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTablePropagation),
+      tags: this._tags,
+      transit_gateway_attachment_id: this._transitGatewayAttachmentId,
+      transit_gateway_default_route_table_association: this._transitGatewayDefaultRouteTableAssociation,
+      transit_gateway_default_route_table_propagation: this._transitGatewayDefaultRouteTablePropagation,
     };
   }
 }

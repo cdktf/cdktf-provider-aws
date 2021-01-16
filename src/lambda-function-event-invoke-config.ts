@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LambdaFunctionEventInvokeConfigConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaFunctionEventInvokeConfigConfig extends TerraformMetaArguments {
   readonly functionName: string;
   readonly maximumEventAgeInSeconds?: number;
   readonly maximumRetryAttempts?: number;
@@ -17,25 +18,9 @@ export interface LambdaFunctionEventInvokeConfigConfig extends cdktf.TerraformMe
 export interface LambdaFunctionEventInvokeConfigDestinationConfigOnFailure {
   readonly destination: string;
 }
-
-function lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailure): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    destination: cdktf.stringToTerraform(struct!.destination),
-  }
-}
-
 export interface LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess {
   readonly destination: string;
 }
-
-function lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    destination: cdktf.stringToTerraform(struct!.destination),
-  }
-}
-
 export interface LambdaFunctionEventInvokeConfigDestinationConfig {
   /** on_failure block */
   readonly onFailure?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailure[];
@@ -43,18 +28,9 @@ export interface LambdaFunctionEventInvokeConfigDestinationConfig {
   readonly onSuccess?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess[];
 }
 
-function lambdaFunctionEventInvokeConfigDestinationConfigToTerraform(struct?: LambdaFunctionEventInvokeConfigDestinationConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    on_failure: cdktf.listMapper(lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerraform)(struct!.onFailure),
-    on_success: cdktf.listMapper(lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerraform)(struct!.onSuccess),
-  }
-}
-
-
 // Resource
 
-export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
+export class LambdaFunctionEventInvokeConfig extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -85,83 +61,55 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this.getStringAttribute('function_name');
+    return this._functionName;
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get functionNameInput() {
-    return this._functionName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // maximum_event_age_in_seconds - computed: false, optional: true, required: false
   private _maximumEventAgeInSeconds?: number;
   public get maximumEventAgeInSeconds() {
-    return this.getNumberAttribute('maximum_event_age_in_seconds');
+    return this._maximumEventAgeInSeconds;
   }
-  public set maximumEventAgeInSeconds(value: number ) {
+  public set maximumEventAgeInSeconds(value: number | undefined) {
     this._maximumEventAgeInSeconds = value;
-  }
-  public resetMaximumEventAgeInSeconds() {
-    this._maximumEventAgeInSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maximumEventAgeInSecondsInput() {
-    return this._maximumEventAgeInSeconds
   }
 
   // maximum_retry_attempts - computed: false, optional: true, required: false
   private _maximumRetryAttempts?: number;
   public get maximumRetryAttempts() {
-    return this.getNumberAttribute('maximum_retry_attempts');
+    return this._maximumRetryAttempts;
   }
-  public set maximumRetryAttempts(value: number ) {
+  public set maximumRetryAttempts(value: number | undefined) {
     this._maximumRetryAttempts = value;
-  }
-  public resetMaximumRetryAttempts() {
-    this._maximumRetryAttempts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maximumRetryAttemptsInput() {
-    return this._maximumRetryAttempts
   }
 
   // qualifier - computed: false, optional: true, required: false
   private _qualifier?: string;
   public get qualifier() {
-    return this.getStringAttribute('qualifier');
+    return this._qualifier;
   }
-  public set qualifier(value: string ) {
+  public set qualifier(value: string | undefined) {
     this._qualifier = value;
-  }
-  public resetQualifier() {
-    this._qualifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get qualifierInput() {
-    return this._qualifier
   }
 
   // destination_config - computed: false, optional: true, required: false
   private _destinationConfig?: LambdaFunctionEventInvokeConfigDestinationConfig[];
   public get destinationConfig() {
-    return this.interpolationForAttribute('destination_config') as any;
+    return this._destinationConfig;
   }
-  public set destinationConfig(value: LambdaFunctionEventInvokeConfigDestinationConfig[] ) {
+  public set destinationConfig(value: LambdaFunctionEventInvokeConfigDestinationConfig[] | undefined) {
     this._destinationConfig = value;
-  }
-  public resetDestinationConfig() {
-    this._destinationConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get destinationConfigInput() {
-    return this._destinationConfig
   }
 
   // =========
@@ -170,11 +118,11 @@ export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: cdktf.stringToTerraform(this._functionName),
-      maximum_event_age_in_seconds: cdktf.numberToTerraform(this._maximumEventAgeInSeconds),
-      maximum_retry_attempts: cdktf.numberToTerraform(this._maximumRetryAttempts),
-      qualifier: cdktf.stringToTerraform(this._qualifier),
-      destination_config: cdktf.listMapper(lambdaFunctionEventInvokeConfigDestinationConfigToTerraform)(this._destinationConfig),
+      function_name: this._functionName,
+      maximum_event_age_in_seconds: this._maximumEventAgeInSeconds,
+      maximum_retry_attempts: this._maximumRetryAttempts,
+      qualifier: this._qualifier,
+      destination_config: this._destinationConfig,
     };
   }
 }

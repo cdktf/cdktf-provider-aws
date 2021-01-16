@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSsmParameterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSsmParameterConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly withDecryption?: boolean;
 }
 
 // Resource
 
-export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
+export class DataAwsSsmParameter extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,40 +39,40 @@ export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // type - computed: true, optional: false, required: false
+  // type - computed: true, optional: false, required: true
   public get type() {
     return this.getStringAttribute('type');
   }
 
-  // value - computed: true, optional: false, required: false
+  // value - computed: true, optional: false, required: true
   public get value() {
     return this.getStringAttribute('value');
   }
 
-  // version - computed: true, optional: false, required: false
+  // version - computed: true, optional: false, required: true
   public get version() {
     return this.getNumberAttribute('version');
   }
@@ -79,17 +80,10 @@ export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
   // with_decryption - computed: false, optional: true, required: false
   private _withDecryption?: boolean;
   public get withDecryption() {
-    return this.getBooleanAttribute('with_decryption');
+    return this._withDecryption;
   }
-  public set withDecryption(value: boolean ) {
+  public set withDecryption(value: boolean | undefined) {
     this._withDecryption = value;
-  }
-  public resetWithDecryption() {
-    this._withDecryption = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get withDecryptionInput() {
-    return this._withDecryption
   }
 
   // =========
@@ -98,8 +92,8 @@ export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      with_decryption: cdktf.booleanToTerraform(this._withDecryption),
+      name: this._name,
+      with_decryption: this._withDecryption,
     };
   }
 }

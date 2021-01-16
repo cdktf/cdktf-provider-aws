@@ -2,19 +2,20 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayMethodConfig extends TerraformMetaArguments {
   readonly apiKeyRequired?: boolean;
   readonly authorization: string;
   readonly authorizationScopes?: string[];
   readonly authorizerId?: string;
   readonly httpMethod: string;
+  readonly operationName?: string;
   readonly requestModels?: { [key: string]: string };
   readonly requestParameters?: { [key: string]: boolean };
-  readonly requestParametersInJson?: string;
   readonly requestValidatorId?: string;
   readonly resourceId: string;
   readonly restApiId: string;
@@ -22,7 +23,7 @@ export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayMethod extends cdktf.TerraformResource {
+export class ApiGatewayMethod extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,9 +45,9 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
     this._authorizationScopes = config.authorizationScopes;
     this._authorizerId = config.authorizerId;
     this._httpMethod = config.httpMethod;
+    this._operationName = config.operationName;
     this._requestModels = config.requestModels;
     this._requestParameters = config.requestParameters;
-    this._requestParametersInJson = config.requestParametersInJson;
     this._requestValidatorId = config.requestValidatorId;
     this._resourceId = config.resourceId;
     this._restApiId = config.restApiId;
@@ -59,170 +60,109 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   // api_key_required - computed: false, optional: true, required: false
   private _apiKeyRequired?: boolean;
   public get apiKeyRequired() {
-    return this.getBooleanAttribute('api_key_required');
+    return this._apiKeyRequired;
   }
-  public set apiKeyRequired(value: boolean ) {
+  public set apiKeyRequired(value: boolean | undefined) {
     this._apiKeyRequired = value;
-  }
-  public resetApiKeyRequired() {
-    this._apiKeyRequired = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiKeyRequiredInput() {
-    return this._apiKeyRequired
   }
 
   // authorization - computed: false, optional: false, required: true
   private _authorization: string;
   public get authorization() {
-    return this.getStringAttribute('authorization');
+    return this._authorization;
   }
   public set authorization(value: string) {
     this._authorization = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizationInput() {
-    return this._authorization
   }
 
   // authorization_scopes - computed: false, optional: true, required: false
   private _authorizationScopes?: string[];
   public get authorizationScopes() {
-    return this.getListAttribute('authorization_scopes');
+    return this._authorizationScopes;
   }
-  public set authorizationScopes(value: string[] ) {
+  public set authorizationScopes(value: string[] | undefined) {
     this._authorizationScopes = value;
-  }
-  public resetAuthorizationScopes() {
-    this._authorizationScopes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizationScopesInput() {
-    return this._authorizationScopes
   }
 
   // authorizer_id - computed: false, optional: true, required: false
   private _authorizerId?: string;
   public get authorizerId() {
-    return this.getStringAttribute('authorizer_id');
+    return this._authorizerId;
   }
-  public set authorizerId(value: string ) {
+  public set authorizerId(value: string | undefined) {
     this._authorizerId = value;
-  }
-  public resetAuthorizerId() {
-    this._authorizerId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authorizerIdInput() {
-    return this._authorizerId
   }
 
   // http_method - computed: false, optional: false, required: true
   private _httpMethod: string;
   public get httpMethod() {
-    return this.getStringAttribute('http_method');
+    return this._httpMethod;
   }
   public set httpMethod(value: string) {
     this._httpMethod = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get httpMethodInput() {
-    return this._httpMethod
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
+  }
+
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string;
+  public get operationName() {
+    return this._operationName;
+  }
+  public set operationName(value: string | undefined) {
+    this._operationName = value;
   }
 
   // request_models - computed: false, optional: true, required: false
   private _requestModels?: { [key: string]: string };
   public get requestModels() {
-    return this.interpolationForAttribute('request_models') as any;
+    return this._requestModels;
   }
-  public set requestModels(value: { [key: string]: string } ) {
+  public set requestModels(value: { [key: string]: string } | undefined) {
     this._requestModels = value;
-  }
-  public resetRequestModels() {
-    this._requestModels = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestModelsInput() {
-    return this._requestModels
   }
 
   // request_parameters - computed: false, optional: true, required: false
   private _requestParameters?: { [key: string]: boolean };
   public get requestParameters() {
-    return this.interpolationForAttribute('request_parameters') as any;
+    return this._requestParameters;
   }
-  public set requestParameters(value: { [key: string]: boolean } ) {
+  public set requestParameters(value: { [key: string]: boolean } | undefined) {
     this._requestParameters = value;
-  }
-  public resetRequestParameters() {
-    this._requestParameters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestParametersInput() {
-    return this._requestParameters
-  }
-
-  // request_parameters_in_json - computed: false, optional: true, required: false
-  private _requestParametersInJson?: string;
-  public get requestParametersInJson() {
-    return this.getStringAttribute('request_parameters_in_json');
-  }
-  public set requestParametersInJson(value: string ) {
-    this._requestParametersInJson = value;
-  }
-  public resetRequestParametersInJson() {
-    this._requestParametersInJson = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestParametersInJsonInput() {
-    return this._requestParametersInJson
   }
 
   // request_validator_id - computed: false, optional: true, required: false
   private _requestValidatorId?: string;
   public get requestValidatorId() {
-    return this.getStringAttribute('request_validator_id');
+    return this._requestValidatorId;
   }
-  public set requestValidatorId(value: string ) {
+  public set requestValidatorId(value: string | undefined) {
     this._requestValidatorId = value;
-  }
-  public resetRequestValidatorId() {
-    this._requestValidatorId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestValidatorIdInput() {
-    return this._requestValidatorId
   }
 
   // resource_id - computed: false, optional: false, required: true
   private _resourceId: string;
   public get resourceId() {
-    return this.getStringAttribute('resource_id');
+    return this._resourceId;
   }
   public set resourceId(value: string) {
     this._resourceId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceIdInput() {
-    return this._resourceId
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this.getStringAttribute('rest_api_id');
+    return this._restApiId;
   }
   public set restApiId(value: string) {
     this._restApiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restApiIdInput() {
-    return this._restApiId
   }
 
   // =========
@@ -231,17 +171,17 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key_required: cdktf.booleanToTerraform(this._apiKeyRequired),
-      authorization: cdktf.stringToTerraform(this._authorization),
-      authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
-      authorizer_id: cdktf.stringToTerraform(this._authorizerId),
-      http_method: cdktf.stringToTerraform(this._httpMethod),
-      request_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestModels),
-      request_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestParameters),
-      request_parameters_in_json: cdktf.stringToTerraform(this._requestParametersInJson),
-      request_validator_id: cdktf.stringToTerraform(this._requestValidatorId),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      api_key_required: this._apiKeyRequired,
+      authorization: this._authorization,
+      authorization_scopes: this._authorizationScopes,
+      authorizer_id: this._authorizerId,
+      http_method: this._httpMethod,
+      operation_name: this._operationName,
+      request_models: this._requestModels,
+      request_parameters: this._requestParameters,
+      request_validator_id: this._requestValidatorId,
+      resource_id: this._resourceId,
+      rest_api_id: this._restApiId,
     };
   }
 }

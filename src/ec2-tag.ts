@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Ec2TagConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TagConfig extends TerraformMetaArguments {
   readonly key: string;
   readonly resourceId: string;
   readonly value: string;
@@ -14,7 +15,7 @@ export interface Ec2TagConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class Ec2Tag extends cdktf.TerraformResource {
+export class Ec2Tag extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,47 +42,39 @@ export class Ec2Tag extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // key - computed: false, optional: false, required: true
   private _key: string;
   public get key() {
-    return this.getStringAttribute('key');
+    return this._key;
   }
   public set key(value: string) {
     this._key = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyInput() {
-    return this._key
   }
 
   // resource_id - computed: false, optional: false, required: true
   private _resourceId: string;
   public get resourceId() {
-    return this.getStringAttribute('resource_id');
+    return this._resourceId;
   }
   public set resourceId(value: string) {
     this._resourceId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceIdInput() {
-    return this._resourceId
   }
 
   // value - computed: false, optional: false, required: true
   private _value: string;
   public get value() {
-    return this.getStringAttribute('value');
+    return this._value;
   }
   public set value(value: string) {
     this._value = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value
   }
 
   // =========
@@ -90,9 +83,9 @@ export class Ec2Tag extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      key: cdktf.stringToTerraform(this._key),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      value: cdktf.stringToTerraform(this._value),
+      key: this._key,
+      resource_id: this._resourceId,
+      value: this._value,
     };
   }
 }

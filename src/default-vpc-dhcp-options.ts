@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DefaultVpcDhcpOptionsConfig extends cdktf.TerraformMetaArguments {
+export interface DefaultVpcDhcpOptionsConfig extends TerraformMetaArguments {
   readonly netbiosNameServers?: string[];
   readonly netbiosNodeType?: string;
   readonly tags?: { [key: string]: string };
@@ -14,7 +15,7 @@ export interface DefaultVpcDhcpOptionsConfig extends cdktf.TerraformMetaArgument
 
 // Resource
 
-export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
+export class DefaultVpcDhcpOptions extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,64 +41,54 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // domain_name - computed: true, optional: false, required: false
+  // domain_name - computed: true, optional: false, required: true
   public get domainName() {
     return this.getStringAttribute('domain_name');
   }
 
-  // domain_name_servers - computed: true, optional: false, required: false
+  // domain_name_servers - computed: true, optional: false, required: true
   public get domainNameServers() {
     return this.getStringAttribute('domain_name_servers');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // netbios_name_servers - computed: false, optional: true, required: false
   private _netbiosNameServers?: string[];
   public get netbiosNameServers() {
-    return this.getListAttribute('netbios_name_servers');
+    return this._netbiosNameServers;
   }
-  public set netbiosNameServers(value: string[] ) {
+  public set netbiosNameServers(value: string[] | undefined) {
     this._netbiosNameServers = value;
-  }
-  public resetNetbiosNameServers() {
-    this._netbiosNameServers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get netbiosNameServersInput() {
-    return this._netbiosNameServers
   }
 
   // netbios_node_type - computed: false, optional: true, required: false
   private _netbiosNodeType?: string;
   public get netbiosNodeType() {
-    return this.getStringAttribute('netbios_node_type');
+    return this._netbiosNodeType;
   }
-  public set netbiosNodeType(value: string ) {
+  public set netbiosNodeType(value: string | undefined) {
     this._netbiosNodeType = value;
   }
-  public resetNetbiosNodeType() {
-    this._netbiosNodeType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get netbiosNodeTypeInput() {
-    return this._netbiosNodeType
-  }
 
-  // ntp_servers - computed: true, optional: false, required: false
+  // ntp_servers - computed: true, optional: false, required: true
   public get ntpServers() {
     return this.getStringAttribute('ntp_servers');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -105,17 +96,10 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -124,9 +108,9 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      netbios_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._netbiosNameServers),
-      netbios_node_type: cdktf.stringToTerraform(this._netbiosNodeType),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      netbios_name_servers: this._netbiosNameServers,
+      netbios_node_type: this._netbiosNodeType,
+      tags: this._tags,
     };
   }
 }

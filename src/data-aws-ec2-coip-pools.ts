@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2CoipPoolsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEc2CoipPoolsConfig extends TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsEc2CoipPoolsFilter[];
@@ -16,18 +17,9 @@ export interface DataAwsEc2CoipPoolsFilter {
   readonly values: string[];
 }
 
-function dataAwsEc2CoipPoolsFilterToTerraform(struct?: DataAwsEc2CoipPoolsFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsEc2CoipPools extends cdktf.TerraformDataSource {
+export class DataAwsEc2CoipPools extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -53,45 +45,35 @@ export class DataAwsEc2CoipPools extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // pool_ids - computed: true, optional: false, required: false
+  // pool_ids - computed: true, optional: false, required: true
   public get poolIds() {
     return this.getListAttribute('pool_ids');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2CoipPoolsFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsEc2CoipPoolsFilter[] ) {
+  public set filter(value: DataAwsEc2CoipPoolsFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -100,8 +82,8 @@ export class DataAwsEc2CoipPools extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsEc2CoipPoolsFilterToTerraform)(this._filter),
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
+export interface EmrInstanceGroupConfig extends TerraformMetaArguments {
   readonly autoscalingPolicy?: string;
   readonly bidPrice?: string;
   readonly clusterId: string;
@@ -25,20 +26,9 @@ export interface EmrInstanceGroupEbsConfig {
   readonly volumesPerInstance?: number;
 }
 
-function emrInstanceGroupEbsConfigToTerraform(struct?: EmrInstanceGroupEbsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    iops: cdktf.numberToTerraform(struct!.iops),
-    size: cdktf.numberToTerraform(struct!.size),
-    type: cdktf.stringToTerraform(struct!.type),
-    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
-  }
-}
-
-
 // Resource
 
-export class EmrInstanceGroup extends cdktf.TerraformResource {
+export class EmrInstanceGroup extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -73,136 +63,90 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   // autoscaling_policy - computed: false, optional: true, required: false
   private _autoscalingPolicy?: string;
   public get autoscalingPolicy() {
-    return this.getStringAttribute('autoscaling_policy');
+    return this._autoscalingPolicy;
   }
-  public set autoscalingPolicy(value: string ) {
+  public set autoscalingPolicy(value: string | undefined) {
     this._autoscalingPolicy = value;
-  }
-  public resetAutoscalingPolicy() {
-    this._autoscalingPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoscalingPolicyInput() {
-    return this._autoscalingPolicy
   }
 
   // bid_price - computed: false, optional: true, required: false
   private _bidPrice?: string;
   public get bidPrice() {
-    return this.getStringAttribute('bid_price');
+    return this._bidPrice;
   }
-  public set bidPrice(value: string ) {
+  public set bidPrice(value: string | undefined) {
     this._bidPrice = value;
-  }
-  public resetBidPrice() {
-    this._bidPrice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bidPriceInput() {
-    return this._bidPrice
   }
 
   // cluster_id - computed: false, optional: false, required: true
   private _clusterId: string;
   public get clusterId() {
-    return this.getStringAttribute('cluster_id');
+    return this._clusterId;
   }
   public set clusterId(value: string) {
     this._clusterId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdInput() {
-    return this._clusterId
   }
 
   // configurations_json - computed: false, optional: true, required: false
   private _configurationsJson?: string;
   public get configurationsJson() {
-    return this.getStringAttribute('configurations_json');
+    return this._configurationsJson;
   }
-  public set configurationsJson(value: string ) {
+  public set configurationsJson(value: string | undefined) {
     this._configurationsJson = value;
-  }
-  public resetConfigurationsJson() {
-    this._configurationsJson = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get configurationsJsonInput() {
-    return this._configurationsJson
   }
 
   // ebs_optimized - computed: false, optional: true, required: false
   private _ebsOptimized?: boolean;
   public get ebsOptimized() {
-    return this.getBooleanAttribute('ebs_optimized');
+    return this._ebsOptimized;
   }
-  public set ebsOptimized(value: boolean ) {
+  public set ebsOptimized(value: boolean | undefined) {
     this._ebsOptimized = value;
-  }
-  public resetEbsOptimized() {
-    this._ebsOptimized = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ebsOptimizedInput() {
-    return this._ebsOptimized
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance_count - computed: false, optional: true, required: false
   private _instanceCount?: number;
   public get instanceCount() {
-    return this.getNumberAttribute('instance_count');
+    return this._instanceCount;
   }
-  public set instanceCount(value: number ) {
+  public set instanceCount(value: number | undefined) {
     this._instanceCount = value;
-  }
-  public resetInstanceCount() {
-    this._instanceCount = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceCountInput() {
-    return this._instanceCount
   }
 
   // instance_type - computed: false, optional: false, required: true
   private _instanceType: string;
   public get instanceType() {
-    return this.getStringAttribute('instance_type');
+    return this._instanceType;
   }
   public set instanceType(value: string) {
     this._instanceType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceTypeInput() {
-    return this._instanceType
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // running_instance_count - computed: true, optional: false, required: false
+  // running_instance_count - computed: true, optional: false, required: true
   public get runningInstanceCount() {
     return this.getNumberAttribute('running_instance_count');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -210,17 +154,10 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   // ebs_config - computed: false, optional: true, required: false
   private _ebsConfig?: EmrInstanceGroupEbsConfig[];
   public get ebsConfig() {
-    return this.interpolationForAttribute('ebs_config') as any;
+    return this._ebsConfig;
   }
-  public set ebsConfig(value: EmrInstanceGroupEbsConfig[] ) {
+  public set ebsConfig(value: EmrInstanceGroupEbsConfig[] | undefined) {
     this._ebsConfig = value;
-  }
-  public resetEbsConfig() {
-    this._ebsConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ebsConfigInput() {
-    return this._ebsConfig
   }
 
   // =========
@@ -229,15 +166,15 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autoscaling_policy: cdktf.stringToTerraform(this._autoscalingPolicy),
-      bid_price: cdktf.stringToTerraform(this._bidPrice),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      configurations_json: cdktf.stringToTerraform(this._configurationsJson),
-      ebs_optimized: cdktf.booleanToTerraform(this._ebsOptimized),
-      instance_count: cdktf.numberToTerraform(this._instanceCount),
-      instance_type: cdktf.stringToTerraform(this._instanceType),
-      name: cdktf.stringToTerraform(this._name),
-      ebs_config: cdktf.listMapper(emrInstanceGroupEbsConfigToTerraform)(this._ebsConfig),
+      autoscaling_policy: this._autoscalingPolicy,
+      bid_price: this._bidPrice,
+      cluster_id: this._clusterId,
+      configurations_json: this._configurationsJson,
+      ebs_optimized: this._ebsOptimized,
+      instance_count: this._instanceCount,
+      instance_type: this._instanceType,
+      name: this._name,
+      ebs_config: this._ebsConfig,
     };
   }
 }

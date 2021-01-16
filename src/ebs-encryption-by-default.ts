@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EbsEncryptionByDefaultConfig extends cdktf.TerraformMetaArguments {
+export interface EbsEncryptionByDefaultConfig extends TerraformMetaArguments {
   readonly enabled?: boolean;
 }
 
 // Resource
 
-export class EbsEncryptionByDefault extends cdktf.TerraformResource {
+export class EbsEncryptionByDefault extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,22 +40,19 @@ export class EbsEncryptionByDefault extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this.getBooleanAttribute('enabled');
+    return this._enabled;
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | undefined) {
     this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========
@@ -63,7 +61,7 @@ export class EbsEncryptionByDefault extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
+      enabled: this._enabled,
     };
   }
 }

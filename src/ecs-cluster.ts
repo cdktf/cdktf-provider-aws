@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
+export interface EcsClusterConfig extends TerraformMetaArguments {
   readonly capacityProviders?: string[];
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -20,33 +21,14 @@ export interface EcsClusterDefaultCapacityProviderStrategy {
   readonly capacityProvider: string;
   readonly weight?: number;
 }
-
-function ecsClusterDefaultCapacityProviderStrategyToTerraform(struct?: EcsClusterDefaultCapacityProviderStrategy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    base: cdktf.numberToTerraform(struct!.base),
-    capacity_provider: cdktf.stringToTerraform(struct!.capacityProvider),
-    weight: cdktf.numberToTerraform(struct!.weight),
-  }
-}
-
 export interface EcsClusterSetting {
   readonly name: string;
   readonly value: string;
 }
 
-function ecsClusterSettingToTerraform(struct?: EcsClusterSetting): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
-
 // Resource
 
-export class EcsCluster extends cdktf.TerraformResource {
+export class EcsCluster extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -74,7 +56,7 @@ export class EcsCluster extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -82,83 +64,55 @@ export class EcsCluster extends cdktf.TerraformResource {
   // capacity_providers - computed: false, optional: true, required: false
   private _capacityProviders?: string[];
   public get capacityProviders() {
-    return this.getListAttribute('capacity_providers');
+    return this._capacityProviders;
   }
-  public set capacityProviders(value: string[] ) {
+  public set capacityProviders(value: string[] | undefined) {
     this._capacityProviders = value;
-  }
-  public resetCapacityProviders() {
-    this._capacityProviders = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get capacityProvidersInput() {
-    return this._capacityProviders
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // default_capacity_provider_strategy - computed: false, optional: true, required: false
   private _defaultCapacityProviderStrategy?: EcsClusterDefaultCapacityProviderStrategy[];
   public get defaultCapacityProviderStrategy() {
-    return this.interpolationForAttribute('default_capacity_provider_strategy') as any;
+    return this._defaultCapacityProviderStrategy;
   }
-  public set defaultCapacityProviderStrategy(value: EcsClusterDefaultCapacityProviderStrategy[] ) {
+  public set defaultCapacityProviderStrategy(value: EcsClusterDefaultCapacityProviderStrategy[] | undefined) {
     this._defaultCapacityProviderStrategy = value;
-  }
-  public resetDefaultCapacityProviderStrategy() {
-    this._defaultCapacityProviderStrategy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultCapacityProviderStrategyInput() {
-    return this._defaultCapacityProviderStrategy
   }
 
   // setting - computed: false, optional: true, required: false
   private _setting?: EcsClusterSetting[];
   public get setting() {
-    return this.interpolationForAttribute('setting') as any;
+    return this._setting;
   }
-  public set setting(value: EcsClusterSetting[] ) {
+  public set setting(value: EcsClusterSetting[] | undefined) {
     this._setting = value;
-  }
-  public resetSetting() {
-    this._setting = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get settingInput() {
-    return this._setting
   }
 
   // =========
@@ -167,11 +121,11 @@ export class EcsCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._capacityProviders),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform)(this._defaultCapacityProviderStrategy),
-      setting: cdktf.listMapper(ecsClusterSettingToTerraform)(this._setting),
+      capacity_providers: this._capacityProviders,
+      name: this._name,
+      tags: this._tags,
+      default_capacity_provider_strategy: this._defaultCapacityProviderStrategy,
+      setting: this._setting,
     };
   }
 }

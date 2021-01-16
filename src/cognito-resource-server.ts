@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CognitoResourceServerConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoResourceServerConfig extends TerraformMetaArguments {
   readonly identifier: string;
   readonly name: string;
   readonly userPoolId: string;
@@ -18,18 +19,9 @@ export interface CognitoResourceServerScope {
   readonly scopeName: string;
 }
 
-function cognitoResourceServerScopeToTerraform(struct?: CognitoResourceServerScope): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    scope_description: cdktf.stringToTerraform(struct!.scopeDescription),
-    scope_name: cdktf.stringToTerraform(struct!.scopeName),
-  }
-}
-
-
 // Resource
 
-export class CognitoResourceServer extends cdktf.TerraformResource {
+export class CognitoResourceServer extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,37 +49,33 @@ export class CognitoResourceServer extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // identifier - computed: false, optional: false, required: true
   private _identifier: string;
   public get identifier() {
-    return this.getStringAttribute('identifier');
+    return this._identifier;
   }
   public set identifier(value: string) {
     this._identifier = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identifierInput() {
-    return this._identifier
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // scope_identifiers - computed: true, optional: false, required: false
+  // scope_identifiers - computed: true, optional: false, required: true
   public get scopeIdentifiers() {
     return this.getListAttribute('scope_identifiers');
   }
@@ -95,30 +83,19 @@ export class CognitoResourceServer extends cdktf.TerraformResource {
   // user_pool_id - computed: false, optional: false, required: true
   private _userPoolId: string;
   public get userPoolId() {
-    return this.getStringAttribute('user_pool_id');
+    return this._userPoolId;
   }
   public set userPoolId(value: string) {
     this._userPoolId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userPoolIdInput() {
-    return this._userPoolId
   }
 
   // scope - computed: false, optional: true, required: false
   private _scope?: CognitoResourceServerScope[];
   public get scope() {
-    return this.interpolationForAttribute('scope') as any;
+    return this._scope;
   }
-  public set scope(value: CognitoResourceServerScope[] ) {
+  public set scope(value: CognitoResourceServerScope[] | undefined) {
     this._scope = value;
-  }
-  public resetScope() {
-    this._scope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scopeInput() {
-    return this._scope
   }
 
   // =========
@@ -127,10 +104,10 @@ export class CognitoResourceServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identifier: cdktf.stringToTerraform(this._identifier),
-      name: cdktf.stringToTerraform(this._name),
-      user_pool_id: cdktf.stringToTerraform(this._userPoolId),
-      scope: cdktf.listMapper(cognitoResourceServerScopeToTerraform)(this._scope),
+      identifier: this._identifier,
+      name: this._name,
+      user_pool_id: this._userPoolId,
+      scope: this._scope,
     };
   }
 }

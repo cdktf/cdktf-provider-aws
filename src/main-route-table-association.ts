@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface MainRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface MainRouteTableAssociationConfig extends TerraformMetaArguments {
   readonly routeTableId: string;
   readonly vpcId: string;
 }
 
 // Resource
 
-export class MainRouteTableAssociation extends cdktf.TerraformResource {
+export class MainRouteTableAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,11 +40,15 @@ export class MainRouteTableAssociation extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // original_route_table_id - computed: true, optional: false, required: false
+  // original_route_table_id - computed: true, optional: false, required: true
   public get originalRouteTableId() {
     return this.getStringAttribute('original_route_table_id');
   }
@@ -51,27 +56,19 @@ export class MainRouteTableAssociation extends cdktf.TerraformResource {
   // route_table_id - computed: false, optional: false, required: true
   private _routeTableId: string;
   public get routeTableId() {
-    return this.getStringAttribute('route_table_id');
+    return this._routeTableId;
   }
   public set routeTableId(value: string) {
     this._routeTableId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get routeTableIdInput() {
-    return this._routeTableId
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this.getStringAttribute('vpc_id');
+    return this._vpcId;
   }
   public set vpcId(value: string) {
     this._vpcId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
   }
 
   // =========
@@ -80,8 +77,8 @@ export class MainRouteTableAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      route_table_id: cdktf.stringToTerraform(this._routeTableId),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      route_table_id: this._routeTableId,
+      vpc_id: this._vpcId,
     };
   }
 }

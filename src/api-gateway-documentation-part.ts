@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayDocumentationPartConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayDocumentationPartConfig extends TerraformMetaArguments {
   readonly properties: string;
   readonly restApiId: string;
   /** location block */
@@ -20,21 +21,9 @@ export interface ApiGatewayDocumentationPartLocation {
   readonly type: string;
 }
 
-function apiGatewayDocumentationPartLocationToTerraform(struct?: ApiGatewayDocumentationPartLocation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    method: cdktf.stringToTerraform(struct!.method),
-    name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
-    status_code: cdktf.stringToTerraform(struct!.statusCode),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
-
 // Resource
 
-export class ApiGatewayDocumentationPart extends cdktf.TerraformResource {
+export class ApiGatewayDocumentationPart extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,47 +50,39 @@ export class ApiGatewayDocumentationPart extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // properties - computed: false, optional: false, required: true
   private _properties: string;
   public get properties() {
-    return this.getStringAttribute('properties');
+    return this._properties;
   }
   public set properties(value: string) {
     this._properties = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get propertiesInput() {
-    return this._properties
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this.getStringAttribute('rest_api_id');
+    return this._restApiId;
   }
   public set restApiId(value: string) {
     this._restApiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restApiIdInput() {
-    return this._restApiId
   }
 
   // location - computed: false, optional: false, required: true
   private _location: ApiGatewayDocumentationPartLocation[];
   public get location() {
-    return this.interpolationForAttribute('location') as any;
+    return this._location;
   }
   public set location(value: ApiGatewayDocumentationPartLocation[]) {
     this._location = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get locationInput() {
-    return this._location
   }
 
   // =========
@@ -110,9 +91,9 @@ export class ApiGatewayDocumentationPart extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      properties: cdktf.stringToTerraform(this._properties),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      location: cdktf.listMapper(apiGatewayDocumentationPartLocationToTerraform)(this._location),
+      properties: this._properties,
+      rest_api_id: this._restApiId,
+      location: this._location,
     };
   }
 }

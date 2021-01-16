@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LightsailKeyPairConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailKeyPairConfig extends TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly pgpKey?: string;
@@ -15,7 +16,7 @@ export interface LightsailKeyPairConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class LightsailKeyPair extends cdktf.TerraformResource {
+export class LightsailKeyPair extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,80 +43,63 @@ export class LightsailKeyPair extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // encrypted_fingerprint - computed: true, optional: false, required: false
+  // encrypted_fingerprint - computed: true, optional: false, required: true
   public get encryptedFingerprint() {
     return this.getStringAttribute('encrypted_fingerprint');
   }
 
-  // encrypted_private_key - computed: true, optional: false, required: false
+  // encrypted_private_key - computed: true, optional: false, required: true
   public get encryptedPrivateKey() {
     return this.getStringAttribute('encrypted_private_key');
   }
 
-  // fingerprint - computed: true, optional: false, required: false
+  // fingerprint - computed: true, optional: false, required: true
   public get fingerprint() {
     return this.getStringAttribute('fingerprint');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // pgp_key - computed: false, optional: true, required: false
   private _pgpKey?: string;
   public get pgpKey() {
-    return this.getStringAttribute('pgp_key');
+    return this._pgpKey;
   }
-  public set pgpKey(value: string ) {
+  public set pgpKey(value: string | undefined) {
     this._pgpKey = value;
   }
-  public resetPgpKey() {
-    this._pgpKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pgpKeyInput() {
-    return this._pgpKey
-  }
 
-  // private_key - computed: true, optional: false, required: false
+  // private_key - computed: true, optional: false, required: true
   public get privateKey() {
     return this.getStringAttribute('private_key');
   }
@@ -123,17 +107,10 @@ export class LightsailKeyPair extends cdktf.TerraformResource {
   // public_key - computed: true, optional: true, required: false
   private _publicKey?: string;
   public get publicKey() {
-    return this.getStringAttribute('public_key');
+    return this._publicKey ?? this.getStringAttribute('public_key');
   }
-  public set publicKey(value: string) {
+  public set publicKey(value: string | undefined) {
     this._publicKey = value;
-  }
-  public resetPublicKey() {
-    this._publicKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicKeyInput() {
-    return this._publicKey
   }
 
   // =========
@@ -142,10 +119,10 @@ export class LightsailKeyPair extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      pgp_key: cdktf.stringToTerraform(this._pgpKey),
-      public_key: cdktf.stringToTerraform(this._publicKey),
+      name: this._name,
+      name_prefix: this._namePrefix,
+      pgp_key: this._pgpKey,
+      public_key: this._publicKey,
     };
   }
 }

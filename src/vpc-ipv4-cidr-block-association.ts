@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface VpcIpv4CidrBlockAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface VpcIpv4CidrBlockAssociationConfig extends TerraformMetaArguments {
   readonly cidrBlock: string;
   readonly vpcId: string;
   /** timeouts block */
@@ -17,18 +18,9 @@ export interface VpcIpv4CidrBlockAssociationTimeouts {
   readonly delete?: string;
 }
 
-function vpcIpv4CidrBlockAssociationTimeoutsToTerraform(struct?: VpcIpv4CidrBlockAssociationTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
-
 // Resource
 
-export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
+export class VpcIpv4CidrBlockAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,48 +49,37 @@ export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
   // cidr_block - computed: false, optional: false, required: true
   private _cidrBlock: string;
   public get cidrBlock() {
-    return this.getStringAttribute('cidr_block');
+    return this._cidrBlock;
   }
   public set cidrBlock(value: string) {
     this._cidrBlock = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get cidrBlockInput() {
-    return this._cidrBlock
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this.getStringAttribute('vpc_id');
+    return this._vpcId;
   }
   public set vpcId(value: string) {
     this._vpcId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: VpcIpv4CidrBlockAssociationTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: VpcIpv4CidrBlockAssociationTimeouts ) {
+  public set timeouts(value: VpcIpv4CidrBlockAssociationTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -107,9 +88,9 @@ export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_block: cdktf.stringToTerraform(this._cidrBlock),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      timeouts: vpcIpv4CidrBlockAssociationTimeoutsToTerraform(this._timeouts),
+      cidr_block: this._cidrBlock,
+      vpc_id: this._vpcId,
+      timeouts: this._timeouts,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRamResourceShareConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRamResourceShareConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly resourceOwner: string;
   readonly tags?: { [key: string]: string };
@@ -18,18 +19,9 @@ export interface DataAwsRamResourceShareFilter {
   readonly values: string[];
 }
 
-function dataAwsRamResourceShareFilterToTerraform(struct?: DataAwsRamResourceShareFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsRamResourceShare extends cdktf.TerraformDataSource {
+export class DataAwsRamResourceShare extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -56,30 +48,30 @@ export class DataAwsRamResourceShare extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // owning_account_id - computed: true, optional: false, required: false
+  // owning_account_id - computed: true, optional: false, required: true
   public get owningAccountId() {
     return this.getStringAttribute('owning_account_id');
   }
@@ -87,51 +79,33 @@ export class DataAwsRamResourceShare extends cdktf.TerraformDataSource {
   // resource_owner - computed: false, optional: false, required: true
   private _resourceOwner: string;
   public get resourceOwner() {
-    return this.getStringAttribute('resource_owner');
+    return this._resourceOwner;
   }
   public set resourceOwner(value: string) {
     this._resourceOwner = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get resourceOwnerInput() {
-    return this._resourceOwner
-  }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsRamResourceShareFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsRamResourceShareFilter[] ) {
+  public set filter(value: DataAwsRamResourceShareFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -140,10 +114,10 @@ export class DataAwsRamResourceShare extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      resource_owner: cdktf.stringToTerraform(this._resourceOwner),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsRamResourceShareFilterToTerraform)(this._filter),
+      name: this._name,
+      resource_owner: this._resourceOwner,
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

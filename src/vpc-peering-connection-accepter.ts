@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface VpcPeeringConnectionAccepterAConfig extends cdktf.TerraformMetaArguments {
+export interface VpcPeeringConnectionAccepterAConfig extends TerraformMetaArguments {
   readonly autoAccept?: boolean;
   readonly tags?: { [key: string]: string };
   readonly vpcPeeringConnectionId: string;
@@ -20,35 +21,15 @@ export interface VpcPeeringConnectionAccepterAccepter {
   readonly allowRemoteVpcDnsResolution?: boolean;
   readonly allowVpcToRemoteClassicLink?: boolean;
 }
-
-function vpcPeeringConnectionAccepterAccepterToTerraform(struct?: VpcPeeringConnectionAccepterAccepter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    allow_classic_link_to_remote_vpc: cdktf.booleanToTerraform(struct!.allowClassicLinkToRemoteVpc),
-    allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
-    allow_vpc_to_remote_classic_link: cdktf.booleanToTerraform(struct!.allowVpcToRemoteClassicLink),
-  }
-}
-
 export interface VpcPeeringConnectionAccepterRequester {
   readonly allowClassicLinkToRemoteVpc?: boolean;
   readonly allowRemoteVpcDnsResolution?: boolean;
   readonly allowVpcToRemoteClassicLink?: boolean;
 }
 
-function vpcPeeringConnectionAccepterRequesterToTerraform(struct?: VpcPeeringConnectionAccepterRequester): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    allow_classic_link_to_remote_vpc: cdktf.booleanToTerraform(struct!.allowClassicLinkToRemoteVpc),
-    allow_remote_vpc_dns_resolution: cdktf.booleanToTerraform(struct!.allowRemoteVpcDnsResolution),
-    allow_vpc_to_remote_classic_link: cdktf.booleanToTerraform(struct!.allowVpcToRemoteClassicLink),
-  }
-}
-
-
 // Resource
 
-export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
+export class VpcPeeringConnectionAccepterA extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,7 +57,7 @@ export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // accept_status - computed: true, optional: false, required: false
+  // accept_status - computed: true, optional: false, required: true
   public get acceptStatus() {
     return this.getStringAttribute('accept_status');
   }
@@ -84,35 +65,32 @@ export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
   // auto_accept - computed: false, optional: true, required: false
   private _autoAccept?: boolean;
   public get autoAccept() {
-    return this.getBooleanAttribute('auto_accept');
+    return this._autoAccept;
   }
-  public set autoAccept(value: boolean ) {
+  public set autoAccept(value: boolean | undefined) {
     this._autoAccept = value;
-  }
-  public resetAutoAccept() {
-    this._autoAccept = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get autoAcceptInput() {
-    return this._autoAccept
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // peer_owner_id - computed: true, optional: false, required: false
+  // peer_owner_id - computed: true, optional: false, required: true
   public get peerOwnerId() {
     return this.getStringAttribute('peer_owner_id');
   }
 
-  // peer_region - computed: true, optional: false, required: false
+  // peer_region - computed: true, optional: false, required: true
   public get peerRegion() {
     return this.getStringAttribute('peer_region');
   }
 
-  // peer_vpc_id - computed: true, optional: false, required: false
+  // peer_vpc_id - computed: true, optional: false, required: true
   public get peerVpcId() {
     return this.getStringAttribute('peer_vpc_id');
   }
@@ -120,20 +98,13 @@ export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // vpc_id - computed: true, optional: false, required: false
+  // vpc_id - computed: true, optional: false, required: true
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -141,46 +112,28 @@ export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
   // vpc_peering_connection_id - computed: false, optional: false, required: true
   private _vpcPeeringConnectionId: string;
   public get vpcPeeringConnectionId() {
-    return this.getStringAttribute('vpc_peering_connection_id');
+    return this._vpcPeeringConnectionId;
   }
   public set vpcPeeringConnectionId(value: string) {
     this._vpcPeeringConnectionId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcPeeringConnectionIdInput() {
-    return this._vpcPeeringConnectionId
   }
 
   // accepter - computed: false, optional: true, required: false
   private _accepter?: VpcPeeringConnectionAccepterAccepter[];
   public get accepter() {
-    return this.interpolationForAttribute('accepter') as any;
+    return this._accepter;
   }
-  public set accepter(value: VpcPeeringConnectionAccepterAccepter[] ) {
+  public set accepter(value: VpcPeeringConnectionAccepterAccepter[] | undefined) {
     this._accepter = value;
-  }
-  public resetAccepter() {
-    this._accepter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accepterInput() {
-    return this._accepter
   }
 
   // requester - computed: false, optional: true, required: false
   private _requester?: VpcPeeringConnectionAccepterRequester[];
   public get requester() {
-    return this.interpolationForAttribute('requester') as any;
+    return this._requester;
   }
-  public set requester(value: VpcPeeringConnectionAccepterRequester[] ) {
+  public set requester(value: VpcPeeringConnectionAccepterRequester[] | undefined) {
     this._requester = value;
-  }
-  public resetRequester() {
-    this._requester = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requesterInput() {
-    return this._requester
   }
 
   // =========
@@ -189,11 +142,11 @@ export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_accept: cdktf.booleanToTerraform(this._autoAccept),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
-      accepter: cdktf.listMapper(vpcPeeringConnectionAccepterAccepterToTerraform)(this._accepter),
-      requester: cdktf.listMapper(vpcPeeringConnectionAccepterRequesterToTerraform)(this._requester),
+      auto_accept: this._autoAccept,
+      tags: this._tags,
+      vpc_peering_connection_id: this._vpcPeeringConnectionId,
+      accepter: this._accepter,
+      requester: this._requester,
     };
   }
 }

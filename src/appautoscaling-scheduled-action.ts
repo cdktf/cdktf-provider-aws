@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AppautoscalingScheduledActionConfig extends cdktf.TerraformMetaArguments {
+export interface AppautoscalingScheduledActionConfig extends TerraformMetaArguments {
   readonly endTime?: string;
   readonly name: string;
   readonly resourceId: string;
@@ -22,18 +23,9 @@ export interface AppautoscalingScheduledActionScalableTargetAction {
   readonly minCapacity?: number;
 }
 
-function appautoscalingScheduledActionScalableTargetActionToTerraform(struct?: AppautoscalingScheduledActionScalableTargetAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
-    min_capacity: cdktf.numberToTerraform(struct!.minCapacity),
-  }
-}
-
-
 // Resource
 
-export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
+export class AppautoscalingScheduledAction extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -64,7 +56,7 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -72,125 +64,82 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
   // end_time - computed: false, optional: true, required: false
   private _endTime?: string;
   public get endTime() {
-    return this.getStringAttribute('end_time');
+    return this._endTime;
   }
-  public set endTime(value: string ) {
+  public set endTime(value: string | undefined) {
     this._endTime = value;
-  }
-  public resetEndTime() {
-    this._endTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get endTimeInput() {
-    return this._endTime
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // resource_id - computed: false, optional: false, required: true
   private _resourceId: string;
   public get resourceId() {
-    return this.getStringAttribute('resource_id');
+    return this._resourceId;
   }
   public set resourceId(value: string) {
     this._resourceId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceIdInput() {
-    return this._resourceId
   }
 
   // scalable_dimension - computed: false, optional: true, required: false
   private _scalableDimension?: string;
   public get scalableDimension() {
-    return this.getStringAttribute('scalable_dimension');
+    return this._scalableDimension;
   }
-  public set scalableDimension(value: string ) {
+  public set scalableDimension(value: string | undefined) {
     this._scalableDimension = value;
-  }
-  public resetScalableDimension() {
-    this._scalableDimension = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scalableDimensionInput() {
-    return this._scalableDimension
   }
 
   // schedule - computed: false, optional: true, required: false
   private _schedule?: string;
   public get schedule() {
-    return this.getStringAttribute('schedule');
+    return this._schedule;
   }
-  public set schedule(value: string ) {
+  public set schedule(value: string | undefined) {
     this._schedule = value;
-  }
-  public resetSchedule() {
-    this._schedule = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scheduleInput() {
-    return this._schedule
   }
 
   // service_namespace - computed: false, optional: false, required: true
   private _serviceNamespace: string;
   public get serviceNamespace() {
-    return this.getStringAttribute('service_namespace');
+    return this._serviceNamespace;
   }
   public set serviceNamespace(value: string) {
     this._serviceNamespace = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceNamespaceInput() {
-    return this._serviceNamespace
   }
 
   // start_time - computed: false, optional: true, required: false
   private _startTime?: string;
   public get startTime() {
-    return this.getStringAttribute('start_time');
+    return this._startTime;
   }
-  public set startTime(value: string ) {
+  public set startTime(value: string | undefined) {
     this._startTime = value;
-  }
-  public resetStartTime() {
-    this._startTime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get startTimeInput() {
-    return this._startTime
   }
 
   // scalable_target_action - computed: false, optional: true, required: false
   private _scalableTargetAction?: AppautoscalingScheduledActionScalableTargetAction[];
   public get scalableTargetAction() {
-    return this.interpolationForAttribute('scalable_target_action') as any;
+    return this._scalableTargetAction;
   }
-  public set scalableTargetAction(value: AppautoscalingScheduledActionScalableTargetAction[] ) {
+  public set scalableTargetAction(value: AppautoscalingScheduledActionScalableTargetAction[] | undefined) {
     this._scalableTargetAction = value;
-  }
-  public resetScalableTargetAction() {
-    this._scalableTargetAction = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scalableTargetActionInput() {
-    return this._scalableTargetAction
   }
 
   // =========
@@ -199,14 +148,14 @@ export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      end_time: cdktf.stringToTerraform(this._endTime),
-      name: cdktf.stringToTerraform(this._name),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      scalable_dimension: cdktf.stringToTerraform(this._scalableDimension),
-      schedule: cdktf.stringToTerraform(this._schedule),
-      service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
-      start_time: cdktf.stringToTerraform(this._startTime),
-      scalable_target_action: cdktf.listMapper(appautoscalingScheduledActionScalableTargetActionToTerraform)(this._scalableTargetAction),
+      end_time: this._endTime,
+      name: this._name,
+      resource_id: this._resourceId,
+      scalable_dimension: this._scalableDimension,
+      schedule: this._schedule,
+      service_namespace: this._serviceNamespace,
+      start_time: this._startTime,
+      scalable_target_action: this._scalableTargetAction,
     };
   }
 }

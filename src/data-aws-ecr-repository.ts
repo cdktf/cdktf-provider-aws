@@ -2,18 +2,40 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsEcrRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEcrRepositoryConfig extends TerraformMetaArguments {
   readonly name: string;
+  readonly registryId?: string;
   readonly tags?: { [key: string]: string };
+}
+export class DataAwsEcrRepositoryEncryptionConfiguration extends ComplexComputedList {
+
+  // encryption_type - computed: true, optional: false, required: true
+  public get encryptionType() {
+    return this.getStringAttribute('encryption_type');
+  }
+
+  // kms_key - computed: true, optional: false, required: true
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+}
+export class DataAwsEcrRepositoryImageScanningConfiguration extends ComplexComputedList {
+
+  // scan_on_push - computed: true, optional: false, required: true
+  public get scanOnPush() {
+    return this.getBooleanAttribute('scan_on_push');
+  }
 }
 
 // Resource
 
-export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
+export class DataAwsEcrRepository extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -31,6 +53,7 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
+    this._registryId = config.registryId;
     this._tags = config.tags;
   }
 
@@ -38,53 +61,65 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
+  // encryption_configuration - computed: true, optional: false, required: true
+  public encryptionConfiguration(index: string) {
+    return new DataAwsEcrRepositoryEncryptionConfiguration(this, 'encryption_configuration', index);
+  }
+
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
+  }
+
+  // image_scanning_configuration - computed: true, optional: false, required: true
+  public imageScanningConfiguration(index: string) {
+    return new DataAwsEcrRepositoryImageScanningConfiguration(this, 'image_scanning_configuration', index);
+  }
+
+  // image_tag_mutability - computed: true, optional: false, required: true
+  public get imageTagMutability() {
+    return this.getStringAttribute('image_tag_mutability');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // registry_id - computed: true, optional: false, required: false
+  // registry_id - computed: true, optional: true, required: false
+  private _registryId?: string;
   public get registryId() {
-    return this.getStringAttribute('registry_id');
+    return this._registryId ?? this.getStringAttribute('registry_id');
+  }
+  public set registryId(value: string | undefined) {
+    this._registryId = value;
   }
 
-  // repository_url - computed: true, optional: false, required: false
+  // repository_url - computed: true, optional: false, required: true
   public get repositoryUrl() {
     return this.getStringAttribute('repository_url');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -93,8 +128,9 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      name: this._name,
+      registry_id: this._registryId,
+      tags: this._tags,
     };
   }
 }

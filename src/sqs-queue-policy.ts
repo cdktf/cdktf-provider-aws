@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SqsQueuePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface SqsQueuePolicyConfig extends TerraformMetaArguments {
   readonly policy: string;
   readonly queueUrl: string;
 }
 
 // Resource
 
-export class SqsQueuePolicy extends cdktf.TerraformResource {
+export class SqsQueuePolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,34 +40,30 @@ export class SqsQueuePolicy extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy;
   }
   public set policy(value: string) {
     this._policy = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // queue_url - computed: false, optional: false, required: true
   private _queueUrl: string;
   public get queueUrl() {
-    return this.getStringAttribute('queue_url');
+    return this._queueUrl;
   }
   public set queueUrl(value: string) {
     this._queueUrl = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get queueUrlInput() {
-    return this._queueUrl
   }
 
   // =========
@@ -75,8 +72,8 @@ export class SqsQueuePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy: cdktf.stringToTerraform(this._policy),
-      queue_url: cdktf.stringToTerraform(this._queueUrl),
+      policy: this._policy,
+      queue_url: this._queueUrl,
     };
   }
 }

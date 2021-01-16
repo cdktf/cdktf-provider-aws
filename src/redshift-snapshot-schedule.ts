@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RedshiftSnapshotScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftSnapshotScheduleConfig extends TerraformMetaArguments {
   readonly definitions: string[];
   readonly description?: string;
   readonly forceDestroy?: boolean;
@@ -17,7 +18,7 @@ export interface RedshiftSnapshotScheduleConfig extends cdktf.TerraformMetaArgum
 
 // Resource
 
-export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
+export class RedshiftSnapshotSchedule extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,7 +47,7 @@ export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -54,99 +55,64 @@ export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
   // definitions - computed: false, optional: false, required: true
   private _definitions: string[];
   public get definitions() {
-    return this.getListAttribute('definitions');
+    return this._definitions;
   }
   public set definitions(value: string[]) {
     this._definitions = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get definitionsInput() {
-    return this._definitions
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy');
+    return this._forceDestroy;
   }
-  public set forceDestroy(value: boolean ) {
+  public set forceDestroy(value: boolean | undefined) {
     this._forceDestroy = value;
-  }
-  public resetForceDestroy() {
-    this._forceDestroy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get forceDestroyInput() {
-    return this._forceDestroy
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // identifier - computed: true, optional: true, required: false
   private _identifier?: string;
   public get identifier() {
-    return this.getStringAttribute('identifier');
+    return this._identifier ?? this.getStringAttribute('identifier');
   }
-  public set identifier(value: string) {
+  public set identifier(value: string | undefined) {
     this._identifier = value;
-  }
-  public resetIdentifier() {
-    this._identifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identifierInput() {
-    return this._identifier
   }
 
   // identifier_prefix - computed: true, optional: true, required: false
   private _identifierPrefix?: string;
   public get identifierPrefix() {
-    return this.getStringAttribute('identifier_prefix');
+    return this._identifierPrefix ?? this.getStringAttribute('identifier_prefix');
   }
-  public set identifierPrefix(value: string) {
+  public set identifierPrefix(value: string | undefined) {
     this._identifierPrefix = value;
-  }
-  public resetIdentifierPrefix() {
-    this._identifierPrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identifierPrefixInput() {
-    return this._identifierPrefix
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -155,12 +121,12 @@ export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      definitions: cdktf.listMapper(cdktf.stringToTerraform)(this._definitions),
-      description: cdktf.stringToTerraform(this._description),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      definitions: this._definitions,
+      description: this._description,
+      force_destroy: this._forceDestroy,
+      identifier: this._identifier,
+      identifier_prefix: this._identifierPrefix,
+      tags: this._tags,
     };
   }
 }

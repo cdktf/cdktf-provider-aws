@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface BackupSelectionConfig extends cdktf.TerraformMetaArguments {
+export interface BackupSelectionConfig extends TerraformMetaArguments {
   readonly iamRoleArn: string;
   readonly name: string;
   readonly planId: string;
@@ -20,19 +21,9 @@ export interface BackupSelectionSelectionTag {
   readonly value: string;
 }
 
-function backupSelectionSelectionTagToTerraform(struct?: BackupSelectionSelectionTag): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    key: cdktf.stringToTerraform(struct!.key),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
-
 // Resource
 
-export class BackupSelection extends cdktf.TerraformResource {
+export class BackupSelection extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -63,77 +54,55 @@ export class BackupSelection extends cdktf.TerraformResource {
   // iam_role_arn - computed: false, optional: false, required: true
   private _iamRoleArn: string;
   public get iamRoleArn() {
-    return this.getStringAttribute('iam_role_arn');
+    return this._iamRoleArn;
   }
   public set iamRoleArn(value: string) {
     this._iamRoleArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get iamRoleArnInput() {
-    return this._iamRoleArn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // plan_id - computed: false, optional: false, required: true
   private _planId: string;
   public get planId() {
-    return this.getStringAttribute('plan_id');
+    return this._planId;
   }
   public set planId(value: string) {
     this._planId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get planIdInput() {
-    return this._planId
   }
 
   // resources - computed: false, optional: true, required: false
   private _resources?: string[];
   public get resources() {
-    return this.getListAttribute('resources');
+    return this._resources;
   }
-  public set resources(value: string[] ) {
+  public set resources(value: string[] | undefined) {
     this._resources = value;
-  }
-  public resetResources() {
-    this._resources = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourcesInput() {
-    return this._resources
   }
 
   // selection_tag - computed: false, optional: true, required: false
   private _selectionTag?: BackupSelectionSelectionTag[];
   public get selectionTag() {
-    return this.interpolationForAttribute('selection_tag') as any;
+    return this._selectionTag;
   }
-  public set selectionTag(value: BackupSelectionSelectionTag[] ) {
+  public set selectionTag(value: BackupSelectionSelectionTag[] | undefined) {
     this._selectionTag = value;
-  }
-  public resetSelectionTag() {
-    this._selectionTag = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectionTagInput() {
-    return this._selectionTag
   }
 
   // =========
@@ -142,11 +111,11 @@ export class BackupSelection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      name: cdktf.stringToTerraform(this._name),
-      plan_id: cdktf.stringToTerraform(this._planId),
-      resources: cdktf.listMapper(cdktf.stringToTerraform)(this._resources),
-      selection_tag: cdktf.listMapper(backupSelectionSelectionTagToTerraform)(this._selectionTag),
+      iam_role_arn: this._iamRoleArn,
+      name: this._name,
+      plan_id: this._planId,
+      resources: this._resources,
+      selection_tag: this._selectionTag,
     };
   }
 }

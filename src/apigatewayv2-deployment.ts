@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2DeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2DeploymentConfig extends TerraformMetaArguments {
   readonly apiId: string;
   readonly description?: string;
   readonly triggers?: { [key: string]: string };
@@ -14,7 +15,7 @@ export interface Apigatewayv2DeploymentConfig extends cdktf.TerraformMetaArgumen
 
 // Resource
 
-export class Apigatewayv2Deployment extends cdktf.TerraformResource {
+export class Apigatewayv2Deployment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,17 +44,13 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this.getStringAttribute('api_id');
+    return this._apiId;
   }
   public set apiId(value: string) {
     this._apiId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get apiIdInput() {
-    return this._apiId
-  }
 
-  // auto_deployed - computed: true, optional: false, required: false
+  // auto_deployed - computed: true, optional: false, required: true
   public get autoDeployed() {
     return this.getBooleanAttribute('auto_deployed');
   }
@@ -61,38 +58,28 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // triggers - computed: false, optional: true, required: false
   private _triggers?: { [key: string]: string };
   public get triggers() {
-    return this.interpolationForAttribute('triggers') as any;
+    return this._triggers;
   }
-  public set triggers(value: { [key: string]: string } ) {
+  public set triggers(value: { [key: string]: string } | undefined) {
     this._triggers = value;
-  }
-  public resetTriggers() {
-    this._triggers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get triggersInput() {
-    return this._triggers
   }
 
   // =========
@@ -101,9 +88,9 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      description: cdktf.stringToTerraform(this._description),
-      triggers: cdktf.hashMapper(cdktf.anyToTerraform)(this._triggers),
+      api_id: this._apiId,
+      description: this._description,
+      triggers: this._triggers,
     };
   }
 }

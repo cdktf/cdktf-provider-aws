@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
+export interface NeptuneClusterConfig extends TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly availabilityZones?: string[];
   readonly backupRetentionPeriod?: number;
@@ -40,19 +41,9 @@ export interface NeptuneClusterTimeouts {
   readonly update?: string;
 }
 
-function neptuneClusterTimeoutsToTerraform(struct?: NeptuneClusterTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class NeptuneCluster extends cdktf.TerraformResource {
+export class NeptuneCluster extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -103,20 +94,13 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this.getBooleanAttribute('apply_immediately');
+    return this._applyImmediately ?? this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | undefined) {
     this._applyImmediately = value;
   }
-  public resetApplyImmediately() {
-    this._applyImmediately = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applyImmediatelyInput() {
-    return this._applyImmediately
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -124,73 +108,45 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // availability_zones - computed: true, optional: true, required: false
   private _availabilityZones?: string[];
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return this._availabilityZones ?? this.getListAttribute('availability_zones');
   }
-  public set availabilityZones(value: string[]) {
+  public set availabilityZones(value: string[] | undefined) {
     this._availabilityZones = value;
-  }
-  public resetAvailabilityZones() {
-    this._availabilityZones = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZonesInput() {
-    return this._availabilityZones
   }
 
   // backup_retention_period - computed: false, optional: true, required: false
   private _backupRetentionPeriod?: number;
   public get backupRetentionPeriod() {
-    return this.getNumberAttribute('backup_retention_period');
+    return this._backupRetentionPeriod;
   }
-  public set backupRetentionPeriod(value: number ) {
+  public set backupRetentionPeriod(value: number | undefined) {
     this._backupRetentionPeriod = value;
-  }
-  public resetBackupRetentionPeriod() {
-    this._backupRetentionPeriod = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get backupRetentionPeriodInput() {
-    return this._backupRetentionPeriod
   }
 
   // cluster_identifier - computed: true, optional: true, required: false
   private _clusterIdentifier?: string;
   public get clusterIdentifier() {
-    return this.getStringAttribute('cluster_identifier');
+    return this._clusterIdentifier ?? this.getStringAttribute('cluster_identifier');
   }
-  public set clusterIdentifier(value: string) {
+  public set clusterIdentifier(value: string | undefined) {
     this._clusterIdentifier = value;
-  }
-  public resetClusterIdentifier() {
-    this._clusterIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdentifierInput() {
-    return this._clusterIdentifier
   }
 
   // cluster_identifier_prefix - computed: true, optional: true, required: false
   private _clusterIdentifierPrefix?: string;
   public get clusterIdentifierPrefix() {
-    return this.getStringAttribute('cluster_identifier_prefix');
+    return this._clusterIdentifierPrefix ?? this.getStringAttribute('cluster_identifier_prefix');
   }
-  public set clusterIdentifierPrefix(value: string) {
+  public set clusterIdentifierPrefix(value: string | undefined) {
     this._clusterIdentifierPrefix = value;
   }
-  public resetClusterIdentifierPrefix() {
-    this._clusterIdentifierPrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdentifierPrefixInput() {
-    return this._clusterIdentifierPrefix
-  }
 
-  // cluster_members - computed: true, optional: false, required: false
+  // cluster_members - computed: true, optional: false, required: true
   public get clusterMembers() {
     return this.getListAttribute('cluster_members');
   }
 
-  // cluster_resource_id - computed: true, optional: false, required: false
+  // cluster_resource_id - computed: true, optional: false, required: true
   public get clusterResourceId() {
     return this.getStringAttribute('cluster_resource_id');
   }
@@ -198,36 +154,22 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean;
   public get deletionProtection() {
-    return this.getBooleanAttribute('deletion_protection');
+    return this._deletionProtection;
   }
-  public set deletionProtection(value: boolean ) {
+  public set deletionProtection(value: boolean | undefined) {
     this._deletionProtection = value;
-  }
-  public resetDeletionProtection() {
-    this._deletionProtection = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deletionProtectionInput() {
-    return this._deletionProtection
   }
 
   // enable_cloudwatch_logs_exports - computed: false, optional: true, required: false
   private _enableCloudwatchLogsExports?: string[];
   public get enableCloudwatchLogsExports() {
-    return this.getListAttribute('enable_cloudwatch_logs_exports');
+    return this._enableCloudwatchLogsExports;
   }
-  public set enableCloudwatchLogsExports(value: string[] ) {
+  public set enableCloudwatchLogsExports(value: string[] | undefined) {
     this._enableCloudwatchLogsExports = value;
   }
-  public resetEnableCloudwatchLogsExports() {
-    this._enableCloudwatchLogsExports = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableCloudwatchLogsExportsInput() {
-    return this._enableCloudwatchLogsExports
-  }
 
-  // endpoint - computed: true, optional: false, required: false
+  // endpoint - computed: true, optional: false, required: true
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -235,52 +177,31 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this.getStringAttribute('engine');
+    return this._engine;
   }
-  public set engine(value: string ) {
+  public set engine(value: string | undefined) {
     this._engine = value;
-  }
-  public resetEngine() {
-    this._engine = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineInput() {
-    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this.getStringAttribute('engine_version');
+    return this._engineVersion ?? this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string) {
+  public set engineVersion(value: string | undefined) {
     this._engineVersion = value;
-  }
-  public resetEngineVersion() {
-    this._engineVersion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get engineVersionInput() {
-    return this._engineVersion
   }
 
   // final_snapshot_identifier - computed: false, optional: true, required: false
   private _finalSnapshotIdentifier?: string;
   public get finalSnapshotIdentifier() {
-    return this.getStringAttribute('final_snapshot_identifier');
+    return this._finalSnapshotIdentifier;
   }
-  public set finalSnapshotIdentifier(value: string ) {
+  public set finalSnapshotIdentifier(value: string | undefined) {
     this._finalSnapshotIdentifier = value;
   }
-  public resetFinalSnapshotIdentifier() {
-    this._finalSnapshotIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get finalSnapshotIdentifierInput() {
-    return this._finalSnapshotIdentifier
-  }
 
-  // hosted_zone_id - computed: true, optional: false, required: false
+  // hosted_zone_id - computed: true, optional: false, required: true
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
@@ -288,137 +209,85 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // iam_database_authentication_enabled - computed: false, optional: true, required: false
   private _iamDatabaseAuthenticationEnabled?: boolean;
   public get iamDatabaseAuthenticationEnabled() {
-    return this.getBooleanAttribute('iam_database_authentication_enabled');
+    return this._iamDatabaseAuthenticationEnabled;
   }
-  public set iamDatabaseAuthenticationEnabled(value: boolean ) {
+  public set iamDatabaseAuthenticationEnabled(value: boolean | undefined) {
     this._iamDatabaseAuthenticationEnabled = value;
-  }
-  public resetIamDatabaseAuthenticationEnabled() {
-    this._iamDatabaseAuthenticationEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iamDatabaseAuthenticationEnabledInput() {
-    return this._iamDatabaseAuthenticationEnabled
   }
 
   // iam_roles - computed: false, optional: true, required: false
   private _iamRoles?: string[];
   public get iamRoles() {
-    return this.getListAttribute('iam_roles');
+    return this._iamRoles;
   }
-  public set iamRoles(value: string[] ) {
+  public set iamRoles(value: string[] | undefined) {
     this._iamRoles = value;
-  }
-  public resetIamRoles() {
-    this._iamRoles = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iamRolesInput() {
-    return this._iamRoles
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // kms_key_arn - computed: true, optional: true, required: false
   private _kmsKeyArn?: string;
   public get kmsKeyArn() {
-    return this.getStringAttribute('kms_key_arn');
+    return this._kmsKeyArn ?? this.getStringAttribute('kms_key_arn');
   }
-  public set kmsKeyArn(value: string) {
+  public set kmsKeyArn(value: string | undefined) {
     this._kmsKeyArn = value;
-  }
-  public resetKmsKeyArn() {
-    this._kmsKeyArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kmsKeyArnInput() {
-    return this._kmsKeyArn
   }
 
   // neptune_cluster_parameter_group_name - computed: false, optional: true, required: false
   private _neptuneClusterParameterGroupName?: string;
   public get neptuneClusterParameterGroupName() {
-    return this.getStringAttribute('neptune_cluster_parameter_group_name');
+    return this._neptuneClusterParameterGroupName;
   }
-  public set neptuneClusterParameterGroupName(value: string ) {
+  public set neptuneClusterParameterGroupName(value: string | undefined) {
     this._neptuneClusterParameterGroupName = value;
-  }
-  public resetNeptuneClusterParameterGroupName() {
-    this._neptuneClusterParameterGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get neptuneClusterParameterGroupNameInput() {
-    return this._neptuneClusterParameterGroupName
   }
 
   // neptune_subnet_group_name - computed: true, optional: true, required: false
   private _neptuneSubnetGroupName?: string;
   public get neptuneSubnetGroupName() {
-    return this.getStringAttribute('neptune_subnet_group_name');
+    return this._neptuneSubnetGroupName ?? this.getStringAttribute('neptune_subnet_group_name');
   }
-  public set neptuneSubnetGroupName(value: string) {
+  public set neptuneSubnetGroupName(value: string | undefined) {
     this._neptuneSubnetGroupName = value;
-  }
-  public resetNeptuneSubnetGroupName() {
-    this._neptuneSubnetGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get neptuneSubnetGroupNameInput() {
-    return this._neptuneSubnetGroupName
   }
 
   // port - computed: false, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this.getNumberAttribute('port');
+    return this._port;
   }
-  public set port(value: number ) {
+  public set port(value: number | undefined) {
     this._port = value;
-  }
-  public resetPort() {
-    this._port = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get portInput() {
-    return this._port
   }
 
   // preferred_backup_window - computed: true, optional: true, required: false
   private _preferredBackupWindow?: string;
   public get preferredBackupWindow() {
-    return this.getStringAttribute('preferred_backup_window');
+    return this._preferredBackupWindow ?? this.getStringAttribute('preferred_backup_window');
   }
-  public set preferredBackupWindow(value: string) {
+  public set preferredBackupWindow(value: string | undefined) {
     this._preferredBackupWindow = value;
-  }
-  public resetPreferredBackupWindow() {
-    this._preferredBackupWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preferredBackupWindowInput() {
-    return this._preferredBackupWindow
   }
 
   // preferred_maintenance_window - computed: true, optional: true, required: false
   private _preferredMaintenanceWindow?: string;
   public get preferredMaintenanceWindow() {
-    return this.getStringAttribute('preferred_maintenance_window');
+    return this._preferredMaintenanceWindow ?? this.getStringAttribute('preferred_maintenance_window');
   }
-  public set preferredMaintenanceWindow(value: string) {
+  public set preferredMaintenanceWindow(value: string | undefined) {
     this._preferredMaintenanceWindow = value;
   }
-  public resetPreferredMaintenanceWindow() {
-    this._preferredMaintenanceWindow = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get preferredMaintenanceWindowInput() {
-    return this._preferredMaintenanceWindow
-  }
 
-  // reader_endpoint - computed: true, optional: false, required: false
+  // reader_endpoint - computed: true, optional: false, required: true
   public get readerEndpoint() {
     return this.getStringAttribute('reader_endpoint');
   }
@@ -426,113 +295,64 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // replication_source_identifier - computed: false, optional: true, required: false
   private _replicationSourceIdentifier?: string;
   public get replicationSourceIdentifier() {
-    return this.getStringAttribute('replication_source_identifier');
+    return this._replicationSourceIdentifier;
   }
-  public set replicationSourceIdentifier(value: string ) {
+  public set replicationSourceIdentifier(value: string | undefined) {
     this._replicationSourceIdentifier = value;
-  }
-  public resetReplicationSourceIdentifier() {
-    this._replicationSourceIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get replicationSourceIdentifierInput() {
-    return this._replicationSourceIdentifier
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
   private _skipFinalSnapshot?: boolean;
   public get skipFinalSnapshot() {
-    return this.getBooleanAttribute('skip_final_snapshot');
+    return this._skipFinalSnapshot;
   }
-  public set skipFinalSnapshot(value: boolean ) {
+  public set skipFinalSnapshot(value: boolean | undefined) {
     this._skipFinalSnapshot = value;
-  }
-  public resetSkipFinalSnapshot() {
-    this._skipFinalSnapshot = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get skipFinalSnapshotInput() {
-    return this._skipFinalSnapshot
   }
 
   // snapshot_identifier - computed: false, optional: true, required: false
   private _snapshotIdentifier?: string;
   public get snapshotIdentifier() {
-    return this.getStringAttribute('snapshot_identifier');
+    return this._snapshotIdentifier;
   }
-  public set snapshotIdentifier(value: string ) {
+  public set snapshotIdentifier(value: string | undefined) {
     this._snapshotIdentifier = value;
-  }
-  public resetSnapshotIdentifier() {
-    this._snapshotIdentifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotIdentifierInput() {
-    return this._snapshotIdentifier
   }
 
   // storage_encrypted - computed: false, optional: true, required: false
   private _storageEncrypted?: boolean;
   public get storageEncrypted() {
-    return this.getBooleanAttribute('storage_encrypted');
+    return this._storageEncrypted;
   }
-  public set storageEncrypted(value: boolean ) {
+  public set storageEncrypted(value: boolean | undefined) {
     this._storageEncrypted = value;
-  }
-  public resetStorageEncrypted() {
-    this._storageEncrypted = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get storageEncryptedInput() {
-    return this._storageEncrypted
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
-    return this.getListAttribute('vpc_security_group_ids');
+    return this._vpcSecurityGroupIds ?? this.getListAttribute('vpc_security_group_ids');
   }
-  public set vpcSecurityGroupIds(value: string[]) {
+  public set vpcSecurityGroupIds(value: string[] | undefined) {
     this._vpcSecurityGroupIds = value;
-  }
-  public resetVpcSecurityGroupIds() {
-    this._vpcSecurityGroupIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcSecurityGroupIdsInput() {
-    return this._vpcSecurityGroupIds
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: NeptuneClusterTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: NeptuneClusterTimeouts ) {
+  public set timeouts(value: NeptuneClusterTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -541,31 +361,31 @@ export class NeptuneCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
-      backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      cluster_identifier_prefix: cdktf.stringToTerraform(this._clusterIdentifierPrefix),
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      enable_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enableCloudwatchLogsExports),
-      engine: cdktf.stringToTerraform(this._engine),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
-      iam_database_authentication_enabled: cdktf.booleanToTerraform(this._iamDatabaseAuthenticationEnabled),
-      iam_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._iamRoles),
-      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
-      neptune_cluster_parameter_group_name: cdktf.stringToTerraform(this._neptuneClusterParameterGroupName),
-      neptune_subnet_group_name: cdktf.stringToTerraform(this._neptuneSubnetGroupName),
-      port: cdktf.numberToTerraform(this._port),
-      preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
-      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
-      replication_source_identifier: cdktf.stringToTerraform(this._replicationSourceIdentifier),
-      skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
-      snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
-      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
-      timeouts: neptuneClusterTimeoutsToTerraform(this._timeouts),
+      apply_immediately: this._applyImmediately,
+      availability_zones: this._availabilityZones,
+      backup_retention_period: this._backupRetentionPeriod,
+      cluster_identifier: this._clusterIdentifier,
+      cluster_identifier_prefix: this._clusterIdentifierPrefix,
+      deletion_protection: this._deletionProtection,
+      enable_cloudwatch_logs_exports: this._enableCloudwatchLogsExports,
+      engine: this._engine,
+      engine_version: this._engineVersion,
+      final_snapshot_identifier: this._finalSnapshotIdentifier,
+      iam_database_authentication_enabled: this._iamDatabaseAuthenticationEnabled,
+      iam_roles: this._iamRoles,
+      kms_key_arn: this._kmsKeyArn,
+      neptune_cluster_parameter_group_name: this._neptuneClusterParameterGroupName,
+      neptune_subnet_group_name: this._neptuneSubnetGroupName,
+      port: this._port,
+      preferred_backup_window: this._preferredBackupWindow,
+      preferred_maintenance_window: this._preferredMaintenanceWindow,
+      replication_source_identifier: this._replicationSourceIdentifier,
+      skip_final_snapshot: this._skipFinalSnapshot,
+      snapshot_identifier: this._snapshotIdentifier,
+      storage_encrypted: this._storageEncrypted,
+      tags: this._tags,
+      vpc_security_group_ids: this._vpcSecurityGroupIds,
+      timeouts: this._timeouts,
     };
   }
 }

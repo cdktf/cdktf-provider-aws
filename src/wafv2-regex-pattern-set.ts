@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Wafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments {
+export interface Wafv2RegexPatternSetConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly scope: string;
@@ -18,17 +19,9 @@ export interface Wafv2RegexPatternSetRegularExpression {
   readonly regexString: string;
 }
 
-function wafv2RegexPatternSetRegularExpressionToTerraform(struct?: Wafv2RegexPatternSetRegularExpression): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    regex_string: cdktf.stringToTerraform(struct!.regexString),
-  }
-}
-
-
 // Resource
 
-export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
+export class Wafv2RegexPatternSet extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -56,7 +49,7 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -64,25 +57,22 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // lock_token - computed: true, optional: false, required: false
+  // lock_token - computed: true, optional: false, required: true
   public get lockToken() {
     return this.getStringAttribute('lock_token');
   }
@@ -90,59 +80,37 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // scope - computed: false, optional: false, required: true
   private _scope: string;
   public get scope() {
-    return this.getStringAttribute('scope');
+    return this._scope;
   }
   public set scope(value: string) {
     this._scope = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scopeInput() {
-    return this._scope
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // regular_expression - computed: false, optional: true, required: false
   private _regularExpression?: Wafv2RegexPatternSetRegularExpression[];
   public get regularExpression() {
-    return this.interpolationForAttribute('regular_expression') as any;
+    return this._regularExpression;
   }
-  public set regularExpression(value: Wafv2RegexPatternSetRegularExpression[] ) {
+  public set regularExpression(value: Wafv2RegexPatternSetRegularExpression[] | undefined) {
     this._regularExpression = value;
-  }
-  public resetRegularExpression() {
-    this._regularExpression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regularExpressionInput() {
-    return this._regularExpression
   }
 
   // =========
@@ -151,11 +119,11 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      scope: cdktf.stringToTerraform(this._scope),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      regular_expression: cdktf.listMapper(wafv2RegexPatternSetRegularExpressionToTerraform)(this._regularExpression),
+      description: this._description,
+      name: this._name,
+      scope: this._scope,
+      tags: this._tags,
+      regular_expression: this._regularExpression,
     };
   }
 }

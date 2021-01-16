@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamOpenidConnectProviderConfig extends cdktf.TerraformMetaArguments {
+export interface IamOpenidConnectProviderConfig extends TerraformMetaArguments {
   readonly clientIdList: string[];
   readonly thumbprintList: string[];
   readonly url: string;
@@ -14,7 +15,7 @@ export interface IamOpenidConnectProviderConfig extends cdktf.TerraformMetaArgum
 
 // Resource
 
-export class IamOpenidConnectProvider extends cdktf.TerraformResource {
+export class IamOpenidConnectProvider extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -48,45 +49,37 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
   // client_id_list - computed: false, optional: false, required: true
   private _clientIdList: string[];
   public get clientIdList() {
-    return this.getListAttribute('client_id_list');
+    return this._clientIdList;
   }
   public set clientIdList(value: string[]) {
     this._clientIdList = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get clientIdListInput() {
-    return this._clientIdList
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // thumbprint_list - computed: false, optional: false, required: true
   private _thumbprintList: string[];
   public get thumbprintList() {
-    return this.getListAttribute('thumbprint_list');
+    return this._thumbprintList;
   }
   public set thumbprintList(value: string[]) {
     this._thumbprintList = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thumbprintListInput() {
-    return this._thumbprintList
   }
 
   // url - computed: false, optional: false, required: true
   private _url: string;
   public get url() {
-    return this.getStringAttribute('url');
+    return this._url;
   }
   public set url(value: string) {
     this._url = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlInput() {
-    return this._url
   }
 
   // =========
@@ -95,9 +88,9 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id_list: cdktf.listMapper(cdktf.stringToTerraform)(this._clientIdList),
-      thumbprint_list: cdktf.listMapper(cdktf.stringToTerraform)(this._thumbprintList),
-      url: cdktf.stringToTerraform(this._url),
+      client_id_list: this._clientIdList,
+      thumbprint_list: this._thumbprintList,
+      url: this._url,
     };
   }
 }

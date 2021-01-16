@@ -2,16 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SecurityhubAccountConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityhubAccountConfig extends TerraformMetaArguments {
 }
 
 // Resource
 
-export class SecurityhubAccount extends cdktf.TerraformResource {
+export class SecurityhubAccount extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -35,8 +36,12 @@ export class SecurityhubAccount extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // =========

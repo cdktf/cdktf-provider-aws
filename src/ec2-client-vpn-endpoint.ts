@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2ClientVpnEndpointConfig extends TerraformMetaArguments {
   readonly clientCidrBlock: string;
   readonly description?: string;
   readonly dnsServers?: string[];
@@ -22,37 +23,18 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
 export interface Ec2ClientVpnEndpointAuthenticationOptions {
   readonly activeDirectoryId?: string;
   readonly rootCertificateChainArn?: string;
+  readonly samlProviderArn?: string;
   readonly type: string;
 }
-
-function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec2ClientVpnEndpointAuthenticationOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    active_directory_id: cdktf.stringToTerraform(struct!.activeDirectoryId),
-    root_certificate_chain_arn: cdktf.stringToTerraform(struct!.rootCertificateChainArn),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface Ec2ClientVpnEndpointConnectionLogOptions {
   readonly cloudwatchLogGroup?: string;
   readonly cloudwatchLogStream?: string;
   readonly enabled: boolean;
 }
 
-function ec2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: Ec2ClientVpnEndpointConnectionLogOptions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    cloudwatch_log_group: cdktf.stringToTerraform(struct!.cloudwatchLogGroup),
-    cloudwatch_log_stream: cdktf.stringToTerraform(struct!.cloudwatchLogStream),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-  }
-}
-
-
 // Resource
 
-export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
+export class Ec2ClientVpnEndpoint extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -84,7 +66,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -92,33 +74,22 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // client_cidr_block - computed: false, optional: false, required: true
   private _clientCidrBlock: string;
   public get clientCidrBlock() {
-    return this.getStringAttribute('client_cidr_block');
+    return this._clientCidrBlock;
   }
   public set clientCidrBlock(value: string) {
     this._clientCidrBlock = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clientCidrBlockInput() {
-    return this._clientCidrBlock
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
-  }
 
-  // dns_name - computed: true, optional: false, required: false
+  // dns_name - computed: true, optional: false, required: true
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
@@ -126,54 +97,40 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // dns_servers - computed: false, optional: true, required: false
   private _dnsServers?: string[];
   public get dnsServers() {
-    return this.getListAttribute('dns_servers');
+    return this._dnsServers;
   }
-  public set dnsServers(value: string[] ) {
+  public set dnsServers(value: string[] | undefined) {
     this._dnsServers = value;
-  }
-  public resetDnsServers() {
-    this._dnsServers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dnsServersInput() {
-    return this._dnsServers
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // server_certificate_arn - computed: false, optional: false, required: true
   private _serverCertificateArn: string;
   public get serverCertificateArn() {
-    return this.getStringAttribute('server_certificate_arn');
+    return this._serverCertificateArn;
   }
   public set serverCertificateArn(value: string) {
     this._serverCertificateArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serverCertificateArnInput() {
-    return this._serverCertificateArn
   }
 
   // split_tunnel - computed: false, optional: true, required: false
   private _splitTunnel?: boolean;
   public get splitTunnel() {
-    return this.getBooleanAttribute('split_tunnel');
+    return this._splitTunnel;
   }
-  public set splitTunnel(value: boolean ) {
+  public set splitTunnel(value: boolean | undefined) {
     this._splitTunnel = value;
   }
-  public resetSplitTunnel() {
-    this._splitTunnel = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get splitTunnelInput() {
-    return this._splitTunnel
-  }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -181,59 +138,37 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // transport_protocol - computed: false, optional: true, required: false
   private _transportProtocol?: string;
   public get transportProtocol() {
-    return this.getStringAttribute('transport_protocol');
+    return this._transportProtocol;
   }
-  public set transportProtocol(value: string ) {
+  public set transportProtocol(value: string | undefined) {
     this._transportProtocol = value;
-  }
-  public resetTransportProtocol() {
-    this._transportProtocol = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get transportProtocolInput() {
-    return this._transportProtocol
   }
 
   // authentication_options - computed: false, optional: false, required: true
   private _authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[];
   public get authenticationOptions() {
-    return this.interpolationForAttribute('authentication_options') as any;
+    return this._authenticationOptions;
   }
   public set authenticationOptions(value: Ec2ClientVpnEndpointAuthenticationOptions[]) {
     this._authenticationOptions = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get authenticationOptionsInput() {
-    return this._authenticationOptions
   }
 
   // connection_log_options - computed: false, optional: false, required: true
   private _connectionLogOptions: Ec2ClientVpnEndpointConnectionLogOptions[];
   public get connectionLogOptions() {
-    return this.interpolationForAttribute('connection_log_options') as any;
+    return this._connectionLogOptions;
   }
   public set connectionLogOptions(value: Ec2ClientVpnEndpointConnectionLogOptions[]) {
     this._connectionLogOptions = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get connectionLogOptionsInput() {
-    return this._connectionLogOptions
   }
 
   // =========
@@ -242,15 +177,15 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_cidr_block: cdktf.stringToTerraform(this._clientCidrBlock),
-      description: cdktf.stringToTerraform(this._description),
-      dns_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsServers),
-      server_certificate_arn: cdktf.stringToTerraform(this._serverCertificateArn),
-      split_tunnel: cdktf.booleanToTerraform(this._splitTunnel),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      transport_protocol: cdktf.stringToTerraform(this._transportProtocol),
-      authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform)(this._authenticationOptions),
-      connection_log_options: cdktf.listMapper(ec2ClientVpnEndpointConnectionLogOptionsToTerraform)(this._connectionLogOptions),
+      client_cidr_block: this._clientCidrBlock,
+      description: this._description,
+      dns_servers: this._dnsServers,
+      server_certificate_arn: this._serverCertificateArn,
+      split_tunnel: this._splitTunnel,
+      tags: this._tags,
+      transport_protocol: this._transportProtocol,
+      authentication_options: this._authenticationOptions,
+      connection_log_options: this._connectionLogOptions,
     };
   }
 }

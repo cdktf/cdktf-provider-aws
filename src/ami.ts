@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AmiConfig extends cdktf.TerraformMetaArguments {
+export interface AmiConfig extends TerraformMetaArguments {
   readonly architecture?: string;
   readonly description?: string;
   readonly enaSupport?: boolean;
@@ -34,52 +35,19 @@ export interface AmiEbsBlockDevice {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
-
-function amiEbsBlockDeviceToTerraform(struct?: AmiEbsBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
-    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
-    volume_type: cdktf.stringToTerraform(struct!.volumeType),
-  }
-}
-
 export interface AmiEphemeralBlockDevice {
   readonly deviceName: string;
   readonly virtualName: string;
 }
-
-function amiEphemeralBlockDeviceToTerraform(struct?: AmiEphemeralBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
-  }
-}
-
 export interface AmiTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
-function amiTimeoutsToTerraform(struct?: AmiTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class Ami extends cdktf.TerraformResource {
+export class Ami extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,20 +87,13 @@ export class Ami extends cdktf.TerraformResource {
   // architecture - computed: false, optional: true, required: false
   private _architecture?: string;
   public get architecture() {
-    return this.getStringAttribute('architecture');
+    return this._architecture;
   }
-  public set architecture(value: string ) {
+  public set architecture(value: string | undefined) {
     this._architecture = value;
   }
-  public resetArchitecture() {
-    this._architecture = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get architectureInput() {
-    return this._architecture
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -140,73 +101,49 @@ export class Ami extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // ena_support - computed: false, optional: true, required: false
   private _enaSupport?: boolean;
   public get enaSupport() {
-    return this.getBooleanAttribute('ena_support');
+    return this._enaSupport;
   }
-  public set enaSupport(value: boolean ) {
+  public set enaSupport(value: boolean | undefined) {
     this._enaSupport = value;
-  }
-  public resetEnaSupport() {
-    this._enaSupport = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enaSupportInput() {
-    return this._enaSupport
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // image_location - computed: true, optional: true, required: false
   private _imageLocation?: string;
   public get imageLocation() {
-    return this.getStringAttribute('image_location');
+    return this._imageLocation ?? this.getStringAttribute('image_location');
   }
-  public set imageLocation(value: string) {
+  public set imageLocation(value: string | undefined) {
     this._imageLocation = value;
-  }
-  public resetImageLocation() {
-    this._imageLocation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get imageLocationInput() {
-    return this._imageLocation
   }
 
   // kernel_id - computed: false, optional: true, required: false
   private _kernelId?: string;
   public get kernelId() {
-    return this.getStringAttribute('kernel_id');
+    return this._kernelId;
   }
-  public set kernelId(value: string ) {
+  public set kernelId(value: string | undefined) {
     this._kernelId = value;
   }
-  public resetKernelId() {
-    this._kernelId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get kernelIdInput() {
-    return this._kernelId
-  }
 
-  // manage_ebs_snapshots - computed: true, optional: false, required: false
+  // manage_ebs_snapshots - computed: true, optional: false, required: true
   public get manageEbsSnapshots() {
     return this.getBooleanAttribute('manage_ebs_snapshots');
   }
@@ -214,49 +151,31 @@ export class Ami extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // ramdisk_id - computed: false, optional: true, required: false
   private _ramdiskId?: string;
   public get ramdiskId() {
-    return this.getStringAttribute('ramdisk_id');
+    return this._ramdiskId;
   }
-  public set ramdiskId(value: string ) {
+  public set ramdiskId(value: string | undefined) {
     this._ramdiskId = value;
-  }
-  public resetRamdiskId() {
-    this._ramdiskId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ramdiskIdInput() {
-    return this._ramdiskId
   }
 
   // root_device_name - computed: false, optional: true, required: false
   private _rootDeviceName?: string;
   public get rootDeviceName() {
-    return this.getStringAttribute('root_device_name');
+    return this._rootDeviceName;
   }
-  public set rootDeviceName(value: string ) {
+  public set rootDeviceName(value: string | undefined) {
     this._rootDeviceName = value;
   }
-  public resetRootDeviceName() {
-    this._rootDeviceName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rootDeviceNameInput() {
-    return this._rootDeviceName
-  }
 
-  // root_snapshot_id - computed: true, optional: false, required: false
+  // root_snapshot_id - computed: true, optional: false, required: true
   public get rootSnapshotId() {
     return this.getStringAttribute('root_snapshot_id');
   }
@@ -264,97 +183,55 @@ export class Ami extends cdktf.TerraformResource {
   // sriov_net_support - computed: false, optional: true, required: false
   private _sriovNetSupport?: string;
   public get sriovNetSupport() {
-    return this.getStringAttribute('sriov_net_support');
+    return this._sriovNetSupport;
   }
-  public set sriovNetSupport(value: string ) {
+  public set sriovNetSupport(value: string | undefined) {
     this._sriovNetSupport = value;
-  }
-  public resetSriovNetSupport() {
-    this._sriovNetSupport = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sriovNetSupportInput() {
-    return this._sriovNetSupport
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // virtualization_type - computed: false, optional: true, required: false
   private _virtualizationType?: string;
   public get virtualizationType() {
-    return this.getStringAttribute('virtualization_type');
+    return this._virtualizationType;
   }
-  public set virtualizationType(value: string ) {
+  public set virtualizationType(value: string | undefined) {
     this._virtualizationType = value;
-  }
-  public resetVirtualizationType() {
-    this._virtualizationType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get virtualizationTypeInput() {
-    return this._virtualizationType
   }
 
   // ebs_block_device - computed: false, optional: true, required: false
   private _ebsBlockDevice?: AmiEbsBlockDevice[];
   public get ebsBlockDevice() {
-    return this.interpolationForAttribute('ebs_block_device') as any;
+    return this._ebsBlockDevice;
   }
-  public set ebsBlockDevice(value: AmiEbsBlockDevice[] ) {
+  public set ebsBlockDevice(value: AmiEbsBlockDevice[] | undefined) {
     this._ebsBlockDevice = value;
-  }
-  public resetEbsBlockDevice() {
-    this._ebsBlockDevice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ebsBlockDeviceInput() {
-    return this._ebsBlockDevice
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
   private _ephemeralBlockDevice?: AmiEphemeralBlockDevice[];
   public get ephemeralBlockDevice() {
-    return this.interpolationForAttribute('ephemeral_block_device') as any;
+    return this._ephemeralBlockDevice;
   }
-  public set ephemeralBlockDevice(value: AmiEphemeralBlockDevice[] ) {
+  public set ephemeralBlockDevice(value: AmiEphemeralBlockDevice[] | undefined) {
     this._ephemeralBlockDevice = value;
-  }
-  public resetEphemeralBlockDevice() {
-    this._ephemeralBlockDevice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ephemeralBlockDeviceInput() {
-    return this._ephemeralBlockDevice
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: AmiTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: AmiTimeouts ) {
+  public set timeouts(value: AmiTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -363,20 +240,20 @@ export class Ami extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      architecture: cdktf.stringToTerraform(this._architecture),
-      description: cdktf.stringToTerraform(this._description),
-      ena_support: cdktf.booleanToTerraform(this._enaSupport),
-      image_location: cdktf.stringToTerraform(this._imageLocation),
-      kernel_id: cdktf.stringToTerraform(this._kernelId),
-      name: cdktf.stringToTerraform(this._name),
-      ramdisk_id: cdktf.stringToTerraform(this._ramdiskId),
-      root_device_name: cdktf.stringToTerraform(this._rootDeviceName),
-      sriov_net_support: cdktf.stringToTerraform(this._sriovNetSupport),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      virtualization_type: cdktf.stringToTerraform(this._virtualizationType),
-      ebs_block_device: cdktf.listMapper(amiEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
-      ephemeral_block_device: cdktf.listMapper(amiEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
-      timeouts: amiTimeoutsToTerraform(this._timeouts),
+      architecture: this._architecture,
+      description: this._description,
+      ena_support: this._enaSupport,
+      image_location: this._imageLocation,
+      kernel_id: this._kernelId,
+      name: this._name,
+      ramdisk_id: this._ramdiskId,
+      root_device_name: this._rootDeviceName,
+      sriov_net_support: this._sriovNetSupport,
+      tags: this._tags,
+      virtualization_type: this._virtualizationType,
+      ebs_block_device: this._ebsBlockDevice,
+      ephemeral_block_device: this._ephemeralBlockDevice,
+      timeouts: this._timeouts,
     };
   }
 }

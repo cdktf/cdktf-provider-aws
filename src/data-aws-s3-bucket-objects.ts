@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsS3BucketObjectsConfig extends TerraformMetaArguments {
   readonly bucket: string;
   readonly delimiter?: string;
   readonly encodingType?: string;
@@ -18,7 +19,7 @@ export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArgumen
 
 // Resource
 
-export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
+export class DataAwsS3BucketObjects extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -51,17 +52,13 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this.getStringAttribute('bucket');
+    return this._bucket;
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get bucketInput() {
-    return this._bucket
-  }
 
-  // common_prefixes - computed: true, optional: false, required: false
+  // common_prefixes - computed: true, optional: false, required: true
   public get commonPrefixes() {
     return this.getListAttribute('common_prefixes');
   }
@@ -69,57 +66,40 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   // delimiter - computed: false, optional: true, required: false
   private _delimiter?: string;
   public get delimiter() {
-    return this.getStringAttribute('delimiter');
+    return this._delimiter;
   }
-  public set delimiter(value: string ) {
+  public set delimiter(value: string | undefined) {
     this._delimiter = value;
-  }
-  public resetDelimiter() {
-    this._delimiter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get delimiterInput() {
-    return this._delimiter
   }
 
   // encoding_type - computed: false, optional: true, required: false
   private _encodingType?: string;
   public get encodingType() {
-    return this.getStringAttribute('encoding_type');
+    return this._encodingType;
   }
-  public set encodingType(value: string ) {
+  public set encodingType(value: string | undefined) {
     this._encodingType = value;
-  }
-  public resetEncodingType() {
-    this._encodingType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get encodingTypeInput() {
-    return this._encodingType
   }
 
   // fetch_owner - computed: false, optional: true, required: false
   private _fetchOwner?: boolean;
   public get fetchOwner() {
-    return this.getBooleanAttribute('fetch_owner');
+    return this._fetchOwner;
   }
-  public set fetchOwner(value: boolean ) {
+  public set fetchOwner(value: boolean | undefined) {
     this._fetchOwner = value;
-  }
-  public resetFetchOwner() {
-    this._fetchOwner = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fetchOwnerInput() {
-    return this._fetchOwner
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // keys - computed: true, optional: false, required: false
+  // keys - computed: true, optional: false, required: true
   public get keys() {
     return this.getListAttribute('keys');
   }
@@ -127,20 +107,13 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   // max_keys - computed: false, optional: true, required: false
   private _maxKeys?: number;
   public get maxKeys() {
-    return this.getNumberAttribute('max_keys');
+    return this._maxKeys;
   }
-  public set maxKeys(value: number ) {
+  public set maxKeys(value: number | undefined) {
     this._maxKeys = value;
   }
-  public resetMaxKeys() {
-    this._maxKeys = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxKeysInput() {
-    return this._maxKeys
-  }
 
-  // owners - computed: true, optional: false, required: false
+  // owners - computed: true, optional: false, required: true
   public get owners() {
     return this.getListAttribute('owners');
   }
@@ -148,33 +121,19 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   // prefix - computed: false, optional: true, required: false
   private _prefix?: string;
   public get prefix() {
-    return this.getStringAttribute('prefix');
+    return this._prefix;
   }
-  public set prefix(value: string ) {
+  public set prefix(value: string | undefined) {
     this._prefix = value;
-  }
-  public resetPrefix() {
-    this._prefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get prefixInput() {
-    return this._prefix
   }
 
   // start_after - computed: false, optional: true, required: false
   private _startAfter?: string;
   public get startAfter() {
-    return this.getStringAttribute('start_after');
+    return this._startAfter;
   }
-  public set startAfter(value: string ) {
+  public set startAfter(value: string | undefined) {
     this._startAfter = value;
-  }
-  public resetStartAfter() {
-    this._startAfter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get startAfterInput() {
-    return this._startAfter
   }
 
   // =========
@@ -183,13 +142,13 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      delimiter: cdktf.stringToTerraform(this._delimiter),
-      encoding_type: cdktf.stringToTerraform(this._encodingType),
-      fetch_owner: cdktf.booleanToTerraform(this._fetchOwner),
-      max_keys: cdktf.numberToTerraform(this._maxKeys),
-      prefix: cdktf.stringToTerraform(this._prefix),
-      start_after: cdktf.stringToTerraform(this._startAfter),
+      bucket: this._bucket,
+      delimiter: this._delimiter,
+      encoding_type: this._encodingType,
+      fetch_owner: this._fetchOwner,
+      max_keys: this._maxKeys,
+      prefix: this._prefix,
+      start_after: this._startAfter,
     };
   }
 }

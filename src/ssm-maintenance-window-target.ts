@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SsmMaintenanceWindowTargetConfig extends cdktf.TerraformMetaArguments {
+export interface SsmMaintenanceWindowTargetConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly name?: string;
   readonly ownerInformation?: string;
@@ -20,18 +21,9 @@ export interface SsmMaintenanceWindowTargetTargets {
   readonly values: string[];
 }
 
-function ssmMaintenanceWindowTargetTargetsToTerraform(struct?: SsmMaintenanceWindowTargetTargets): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
+export class SsmMaintenanceWindowTarget extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -63,93 +55,64 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // owner_information - computed: false, optional: true, required: false
   private _ownerInformation?: string;
   public get ownerInformation() {
-    return this.getStringAttribute('owner_information');
+    return this._ownerInformation;
   }
-  public set ownerInformation(value: string ) {
+  public set ownerInformation(value: string | undefined) {
     this._ownerInformation = value;
-  }
-  public resetOwnerInformation() {
-    this._ownerInformation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ownerInformationInput() {
-    return this._ownerInformation
   }
 
   // resource_type - computed: false, optional: false, required: true
   private _resourceType: string;
   public get resourceType() {
-    return this.getStringAttribute('resource_type');
+    return this._resourceType;
   }
   public set resourceType(value: string) {
     this._resourceType = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceTypeInput() {
-    return this._resourceType
   }
 
   // window_id - computed: false, optional: false, required: true
   private _windowId: string;
   public get windowId() {
-    return this.getStringAttribute('window_id');
+    return this._windowId;
   }
   public set windowId(value: string) {
     this._windowId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get windowIdInput() {
-    return this._windowId
   }
 
   // targets - computed: false, optional: false, required: true
   private _targets: SsmMaintenanceWindowTargetTargets[];
   public get targets() {
-    return this.interpolationForAttribute('targets') as any;
+    return this._targets;
   }
   public set targets(value: SsmMaintenanceWindowTargetTargets[]) {
     this._targets = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetsInput() {
-    return this._targets
   }
 
   // =========
@@ -158,12 +121,12 @@ export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      owner_information: cdktf.stringToTerraform(this._ownerInformation),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      window_id: cdktf.stringToTerraform(this._windowId),
-      targets: cdktf.listMapper(ssmMaintenanceWindowTargetTargetsToTerraform)(this._targets),
+      description: this._description,
+      name: this._name,
+      owner_information: this._ownerInformation,
+      resource_type: this._resourceType,
+      window_id: this._windowId,
+      targets: this._targets,
     };
   }
 }

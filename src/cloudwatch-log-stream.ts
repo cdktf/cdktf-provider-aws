@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogStreamConfig extends cdktf.TerraformMetaArguments {
+export interface CloudwatchLogStreamConfig extends TerraformMetaArguments {
   readonly logGroupName: string;
   readonly name: string;
 }
 
 // Resource
 
-export class CloudwatchLogStream extends cdktf.TerraformResource {
+export class CloudwatchLogStream extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,40 +39,36 @@ export class CloudwatchLogStream extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // log_group_name - computed: false, optional: false, required: true
   private _logGroupName: string;
   public get logGroupName() {
-    return this.getStringAttribute('log_group_name');
+    return this._logGroupName;
   }
   public set logGroupName(value: string) {
     this._logGroupName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logGroupNameInput() {
-    return this._logGroupName
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // =========
@@ -80,8 +77,8 @@ export class CloudwatchLogStream extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      log_group_name: cdktf.stringToTerraform(this._logGroupName),
-      name: cdktf.stringToTerraform(this._name),
+      log_group_name: this._logGroupName,
+      name: this._name,
     };
   }
 }

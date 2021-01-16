@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface SnsTopicSubscriptionConfig extends TerraformMetaArguments {
   readonly confirmationTimeoutInMinutes?: number;
   readonly deliveryPolicy?: string;
   readonly endpoint: string;
@@ -19,7 +20,7 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
 
 // Resource
 
-export class SnsTopicSubscription extends cdktf.TerraformResource {
+export class SnsTopicSubscription extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,7 +51,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,125 +59,82 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   // confirmation_timeout_in_minutes - computed: false, optional: true, required: false
   private _confirmationTimeoutInMinutes?: number;
   public get confirmationTimeoutInMinutes() {
-    return this.getNumberAttribute('confirmation_timeout_in_minutes');
+    return this._confirmationTimeoutInMinutes;
   }
-  public set confirmationTimeoutInMinutes(value: number ) {
+  public set confirmationTimeoutInMinutes(value: number | undefined) {
     this._confirmationTimeoutInMinutes = value;
-  }
-  public resetConfirmationTimeoutInMinutes() {
-    this._confirmationTimeoutInMinutes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get confirmationTimeoutInMinutesInput() {
-    return this._confirmationTimeoutInMinutes
   }
 
   // delivery_policy - computed: false, optional: true, required: false
   private _deliveryPolicy?: string;
   public get deliveryPolicy() {
-    return this.getStringAttribute('delivery_policy');
+    return this._deliveryPolicy;
   }
-  public set deliveryPolicy(value: string ) {
+  public set deliveryPolicy(value: string | undefined) {
     this._deliveryPolicy = value;
-  }
-  public resetDeliveryPolicy() {
-    this._deliveryPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deliveryPolicyInput() {
-    return this._deliveryPolicy
   }
 
   // endpoint - computed: false, optional: false, required: true
   private _endpoint: string;
   public get endpoint() {
-    return this.getStringAttribute('endpoint');
+    return this._endpoint;
   }
   public set endpoint(value: string) {
     this._endpoint = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get endpointInput() {
-    return this._endpoint
   }
 
   // endpoint_auto_confirms - computed: false, optional: true, required: false
   private _endpointAutoConfirms?: boolean;
   public get endpointAutoConfirms() {
-    return this.getBooleanAttribute('endpoint_auto_confirms');
+    return this._endpointAutoConfirms;
   }
-  public set endpointAutoConfirms(value: boolean ) {
+  public set endpointAutoConfirms(value: boolean | undefined) {
     this._endpointAutoConfirms = value;
-  }
-  public resetEndpointAutoConfirms() {
-    this._endpointAutoConfirms = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get endpointAutoConfirmsInput() {
-    return this._endpointAutoConfirms
   }
 
   // filter_policy - computed: false, optional: true, required: false
   private _filterPolicy?: string;
   public get filterPolicy() {
-    return this.getStringAttribute('filter_policy');
+    return this._filterPolicy;
   }
-  public set filterPolicy(value: string ) {
+  public set filterPolicy(value: string | undefined) {
     this._filterPolicy = value;
-  }
-  public resetFilterPolicy() {
-    this._filterPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterPolicyInput() {
-    return this._filterPolicy
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // protocol - computed: false, optional: false, required: true
   private _protocol: string;
   public get protocol() {
-    return this.getStringAttribute('protocol');
+    return this._protocol;
   }
   public set protocol(value: string) {
     this._protocol = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get protocolInput() {
-    return this._protocol
   }
 
   // raw_message_delivery - computed: false, optional: true, required: false
   private _rawMessageDelivery?: boolean;
   public get rawMessageDelivery() {
-    return this.getBooleanAttribute('raw_message_delivery');
+    return this._rawMessageDelivery;
   }
-  public set rawMessageDelivery(value: boolean ) {
+  public set rawMessageDelivery(value: boolean | undefined) {
     this._rawMessageDelivery = value;
-  }
-  public resetRawMessageDelivery() {
-    this._rawMessageDelivery = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rawMessageDeliveryInput() {
-    return this._rawMessageDelivery
   }
 
   // topic_arn - computed: false, optional: false, required: true
   private _topicArn: string;
   public get topicArn() {
-    return this.getStringAttribute('topic_arn');
+    return this._topicArn;
   }
   public set topicArn(value: string) {
     this._topicArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get topicArnInput() {
-    return this._topicArn
   }
 
   // =========
@@ -185,14 +143,14 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      confirmation_timeout_in_minutes: cdktf.numberToTerraform(this._confirmationTimeoutInMinutes),
-      delivery_policy: cdktf.stringToTerraform(this._deliveryPolicy),
-      endpoint: cdktf.stringToTerraform(this._endpoint),
-      endpoint_auto_confirms: cdktf.booleanToTerraform(this._endpointAutoConfirms),
-      filter_policy: cdktf.stringToTerraform(this._filterPolicy),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      raw_message_delivery: cdktf.booleanToTerraform(this._rawMessageDelivery),
-      topic_arn: cdktf.stringToTerraform(this._topicArn),
+      confirmation_timeout_in_minutes: this._confirmationTimeoutInMinutes,
+      delivery_policy: this._deliveryPolicy,
+      endpoint: this._endpoint,
+      endpoint_auto_confirms: this._endpointAutoConfirms,
+      filter_policy: this._filterPolicy,
+      protocol: this._protocol,
+      raw_message_delivery: this._rawMessageDelivery,
+      topic_arn: this._topicArn,
     };
   }
 }

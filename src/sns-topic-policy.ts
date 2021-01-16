@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SnsTopicPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface SnsTopicPolicyConfig extends TerraformMetaArguments {
   readonly arn: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class SnsTopicPolicy extends cdktf.TerraformResource {
+export class SnsTopicPolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class SnsTopicPolicy extends cdktf.TerraformResource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn;
   }
   public set arn(value: string) {
     this._arn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get arnInput() {
-    return this._arn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy;
   }
   public set policy(value: string) {
     this._policy = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // =========
@@ -75,8 +72,8 @@ export class SnsTopicPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
-      policy: cdktf.stringToTerraform(this._policy),
+      arn: this._arn,
+      policy: this._policy,
     };
   }
 }

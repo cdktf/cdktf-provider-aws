@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments {
+export interface WorkspacesWorkspaceConfig extends TerraformMetaArguments {
   readonly bundleId: string;
   readonly directoryId: string;
   readonly rootVolumeEncryptionEnabled?: boolean;
@@ -14,8 +15,15 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   readonly userName: string;
   readonly userVolumeEncryptionEnabled?: boolean;
   readonly volumeEncryptionKey?: string;
+  /** timeouts block */
+  readonly timeouts?: WorkspacesWorkspaceTimeouts;
   /** workspace_properties block */
   readonly workspaceProperties?: WorkspacesWorkspaceWorkspaceProperties[];
+}
+export interface WorkspacesWorkspaceTimeouts {
+  readonly create?: string;
+  readonly delete?: string;
+  readonly update?: string;
 }
 export interface WorkspacesWorkspaceWorkspaceProperties {
   readonly computeTypeName?: string;
@@ -25,21 +33,9 @@ export interface WorkspacesWorkspaceWorkspaceProperties {
   readonly userVolumeSizeGib?: number;
 }
 
-function workspacesWorkspaceWorkspacePropertiesToTerraform(struct?: WorkspacesWorkspaceWorkspaceProperties): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    compute_type_name: cdktf.stringToTerraform(struct!.computeTypeName),
-    root_volume_size_gib: cdktf.numberToTerraform(struct!.rootVolumeSizeGib),
-    running_mode: cdktf.stringToTerraform(struct!.runningMode),
-    running_mode_auto_stop_timeout_in_minutes: cdktf.numberToTerraform(struct!.runningModeAutoStopTimeoutInMinutes),
-    user_volume_size_gib: cdktf.numberToTerraform(struct!.userVolumeSizeGib),
-  }
-}
-
-
 // Resource
 
-export class WorkspacesWorkspace extends cdktf.TerraformResource {
+export class WorkspacesWorkspace extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -63,6 +59,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
     this._userName = config.userName;
     this._userVolumeEncryptionEnabled = config.userVolumeEncryptionEnabled;
     this._volumeEncryptionKey = config.volumeEncryptionKey;
+    this._timeouts = config.timeouts;
     this._workspaceProperties = config.workspaceProperties;
   }
 
@@ -73,17 +70,13 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   // bundle_id - computed: false, optional: false, required: true
   private _bundleId: string;
   public get bundleId() {
-    return this.getStringAttribute('bundle_id');
+    return this._bundleId;
   }
   public set bundleId(value: string) {
     this._bundleId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get bundleIdInput() {
-    return this._bundleId
-  }
 
-  // computer_name - computed: true, optional: false, required: false
+  // computer_name - computed: true, optional: false, required: true
   public get computerName() {
     return this.getStringAttribute('computer_name');
   }
@@ -91,22 +84,22 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   // directory_id - computed: false, optional: false, required: true
   private _directoryId: string;
   public get directoryId() {
-    return this.getStringAttribute('directory_id');
+    return this._directoryId;
   }
   public set directoryId(value: string) {
     this._directoryId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get directoryIdInput() {
-    return this._directoryId
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ip_address - computed: true, optional: false, required: false
+  // ip_address - computed: true, optional: false, required: true
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
   }
@@ -114,20 +107,13 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   // root_volume_encryption_enabled - computed: false, optional: true, required: false
   private _rootVolumeEncryptionEnabled?: boolean;
   public get rootVolumeEncryptionEnabled() {
-    return this.getBooleanAttribute('root_volume_encryption_enabled');
+    return this._rootVolumeEncryptionEnabled;
   }
-  public set rootVolumeEncryptionEnabled(value: boolean ) {
+  public set rootVolumeEncryptionEnabled(value: boolean | undefined) {
     this._rootVolumeEncryptionEnabled = value;
   }
-  public resetRootVolumeEncryptionEnabled() {
-    this._rootVolumeEncryptionEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rootVolumeEncryptionEnabledInput() {
-    return this._rootVolumeEncryptionEnabled
-  }
 
-  // state - computed: true, optional: false, required: false
+  // state - computed: true, optional: false, required: true
   public get state() {
     return this.getStringAttribute('state');
   }
@@ -135,78 +121,55 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // user_name - computed: false, optional: false, required: true
   private _userName: string;
   public get userName() {
-    return this.getStringAttribute('user_name');
+    return this._userName;
   }
   public set userName(value: string) {
     this._userName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userNameInput() {
-    return this._userName
   }
 
   // user_volume_encryption_enabled - computed: false, optional: true, required: false
   private _userVolumeEncryptionEnabled?: boolean;
   public get userVolumeEncryptionEnabled() {
-    return this.getBooleanAttribute('user_volume_encryption_enabled');
+    return this._userVolumeEncryptionEnabled;
   }
-  public set userVolumeEncryptionEnabled(value: boolean ) {
+  public set userVolumeEncryptionEnabled(value: boolean | undefined) {
     this._userVolumeEncryptionEnabled = value;
-  }
-  public resetUserVolumeEncryptionEnabled() {
-    this._userVolumeEncryptionEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userVolumeEncryptionEnabledInput() {
-    return this._userVolumeEncryptionEnabled
   }
 
   // volume_encryption_key - computed: false, optional: true, required: false
   private _volumeEncryptionKey?: string;
   public get volumeEncryptionKey() {
-    return this.getStringAttribute('volume_encryption_key');
+    return this._volumeEncryptionKey;
   }
-  public set volumeEncryptionKey(value: string ) {
+  public set volumeEncryptionKey(value: string | undefined) {
     this._volumeEncryptionKey = value;
   }
-  public resetVolumeEncryptionKey() {
-    this._volumeEncryptionKey = undefined;
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: WorkspacesWorkspaceTimeouts;
+  public get timeouts() {
+    return this._timeouts;
   }
-  // Temporarily expose input value. Use with caution.
-  public get volumeEncryptionKeyInput() {
-    return this._volumeEncryptionKey
+  public set timeouts(value: WorkspacesWorkspaceTimeouts | undefined) {
+    this._timeouts = value;
   }
 
   // workspace_properties - computed: false, optional: true, required: false
   private _workspaceProperties?: WorkspacesWorkspaceWorkspaceProperties[];
   public get workspaceProperties() {
-    return this.interpolationForAttribute('workspace_properties') as any;
+    return this._workspaceProperties;
   }
-  public set workspaceProperties(value: WorkspacesWorkspaceWorkspaceProperties[] ) {
+  public set workspaceProperties(value: WorkspacesWorkspaceWorkspaceProperties[] | undefined) {
     this._workspaceProperties = value;
-  }
-  public resetWorkspaceProperties() {
-    this._workspaceProperties = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspacePropertiesInput() {
-    return this._workspaceProperties
   }
 
   // =========
@@ -215,14 +178,15 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_id: cdktf.stringToTerraform(this._bundleId),
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      root_volume_encryption_enabled: cdktf.booleanToTerraform(this._rootVolumeEncryptionEnabled),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      user_name: cdktf.stringToTerraform(this._userName),
-      user_volume_encryption_enabled: cdktf.booleanToTerraform(this._userVolumeEncryptionEnabled),
-      volume_encryption_key: cdktf.stringToTerraform(this._volumeEncryptionKey),
-      workspace_properties: cdktf.listMapper(workspacesWorkspaceWorkspacePropertiesToTerraform)(this._workspaceProperties),
+      bundle_id: this._bundleId,
+      directory_id: this._directoryId,
+      root_volume_encryption_enabled: this._rootVolumeEncryptionEnabled,
+      tags: this._tags,
+      user_name: this._userName,
+      user_volume_encryption_enabled: this._userVolumeEncryptionEnabled,
+      volume_encryption_key: this._volumeEncryptionKey,
+      timeouts: this._timeouts,
+      workspace_properties: this._workspaceProperties,
     };
   }
 }

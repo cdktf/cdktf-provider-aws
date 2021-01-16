@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsKmsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsKmsSecretConfig extends TerraformMetaArguments {
   /** secret block */
   readonly secret: DataAwsKmsSecretSecret[];
 }
@@ -17,20 +18,9 @@ export interface DataAwsKmsSecretSecret {
   readonly payload: string;
 }
 
-function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecret): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    context: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.context),
-    grant_tokens: cdktf.listMapper(cdktf.stringToTerraform)(struct!.grantTokens),
-    name: cdktf.stringToTerraform(struct!.name),
-    payload: cdktf.stringToTerraform(struct!.payload),
-  }
-}
-
-
 // Resource
 
-export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
+export class DataAwsKmsSecret extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -55,21 +45,21 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // secret - computed: false, optional: false, required: true
   private _secret: DataAwsKmsSecretSecret[];
   public get secret() {
-    return this.interpolationForAttribute('secret') as any;
+    return this._secret;
   }
   public set secret(value: DataAwsKmsSecretSecret[]) {
     this._secret = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get secretInput() {
-    return this._secret
   }
 
   // =========
@@ -78,7 +68,7 @@ export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      secret: cdktf.listMapper(dataAwsKmsSecretSecretToTerraform)(this._secret),
+      secret: this._secret,
     };
   }
 }

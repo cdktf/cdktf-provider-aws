@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEfsMountTargetConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsEfsMountTargetConfig extends TerraformMetaArguments {
   readonly mountTargetId: string;
 }
 
 // Resource
 
-export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
+export class DataAwsEfsMountTarget extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,42 +37,46 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // availability_zone_id - computed: true, optional: false, required: false
+  // availability_zone_id - computed: true, optional: false, required: true
   public get availabilityZoneId() {
     return this.getStringAttribute('availability_zone_id');
   }
 
-  // availability_zone_name - computed: true, optional: false, required: false
+  // availability_zone_name - computed: true, optional: false, required: true
   public get availabilityZoneName() {
     return this.getStringAttribute('availability_zone_name');
   }
 
-  // dns_name - computed: true, optional: false, required: false
+  // dns_name - computed: true, optional: false, required: true
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
 
-  // file_system_arn - computed: true, optional: false, required: false
+  // file_system_arn - computed: true, optional: false, required: true
   public get fileSystemArn() {
     return this.getStringAttribute('file_system_arn');
   }
 
-  // file_system_id - computed: true, optional: false, required: false
+  // file_system_id - computed: true, optional: false, required: true
   public get fileSystemId() {
     return this.getStringAttribute('file_system_id');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ip_address - computed: true, optional: false, required: false
+  // ip_address - computed: true, optional: false, required: true
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
   }
 
-  // mount_target_dns_name - computed: true, optional: false, required: false
+  // mount_target_dns_name - computed: true, optional: false, required: true
   public get mountTargetDnsName() {
     return this.getStringAttribute('mount_target_dns_name');
   }
@@ -79,32 +84,28 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
   // mount_target_id - computed: false, optional: false, required: true
   private _mountTargetId: string;
   public get mountTargetId() {
-    return this.getStringAttribute('mount_target_id');
+    return this._mountTargetId;
   }
   public set mountTargetId(value: string) {
     this._mountTargetId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get mountTargetIdInput() {
-    return this._mountTargetId
-  }
 
-  // network_interface_id - computed: true, optional: false, required: false
+  // network_interface_id - computed: true, optional: false, required: true
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: false, required: true
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
 
-  // security_groups - computed: true, optional: false, required: false
+  // security_groups - computed: true, optional: false, required: true
   public get securityGroups() {
     return this.getListAttribute('security_groups');
   }
 
-  // subnet_id - computed: true, optional: false, required: false
+  // subnet_id - computed: true, optional: false, required: true
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
@@ -115,7 +116,7 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mount_target_id: cdktf.stringToTerraform(this._mountTargetId),
+      mount_target_id: this._mountTargetId,
     };
   }
 }

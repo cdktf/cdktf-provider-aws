@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DbInstanceRoleAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface DbInstanceRoleAssociationConfig extends TerraformMetaArguments {
   readonly dbInstanceIdentifier: string;
   readonly featureName: string;
   readonly roleArn: string;
@@ -14,7 +15,7 @@ export interface DbInstanceRoleAssociationConfig extends cdktf.TerraformMetaArgu
 
 // Resource
 
-export class DbInstanceRoleAssociation extends cdktf.TerraformResource {
+export class DbInstanceRoleAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,45 +44,37 @@ export class DbInstanceRoleAssociation extends cdktf.TerraformResource {
   // db_instance_identifier - computed: false, optional: false, required: true
   private _dbInstanceIdentifier: string;
   public get dbInstanceIdentifier() {
-    return this.getStringAttribute('db_instance_identifier');
+    return this._dbInstanceIdentifier;
   }
   public set dbInstanceIdentifier(value: string) {
     this._dbInstanceIdentifier = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dbInstanceIdentifierInput() {
-    return this._dbInstanceIdentifier
   }
 
   // feature_name - computed: false, optional: false, required: true
   private _featureName: string;
   public get featureName() {
-    return this.getStringAttribute('feature_name');
+    return this._featureName;
   }
   public set featureName(value: string) {
     this._featureName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get featureNameInput() {
-    return this._featureName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this.getStringAttribute('role_arn');
+    return this._roleArn;
   }
   public set roleArn(value: string) {
     this._roleArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleArnInput() {
-    return this._roleArn
   }
 
   // =========
@@ -90,9 +83,9 @@ export class DbInstanceRoleAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
-      feature_name: cdktf.stringToTerraform(this._featureName),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      db_instance_identifier: this._dbInstanceIdentifier,
+      feature_name: this._featureName,
+      role_arn: this._roleArn,
     };
   }
 }

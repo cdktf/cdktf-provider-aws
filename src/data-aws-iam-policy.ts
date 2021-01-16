@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIamPolicyConfig extends TerraformMetaArguments {
   readonly arn: string;
 }
 
 // Resource
 
-export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
+export class DataAwsIamPolicy extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -39,37 +40,37 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this.getStringAttribute('arn');
+    return this._arn;
   }
   public set arn(value: string) {
     this._arn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get arnInput() {
-    return this._arn
-  }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // path - computed: true, optional: false, required: false
+  // path - computed: true, optional: false, required: true
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // policy - computed: true, optional: false, required: false
+  // policy - computed: true, optional: false, required: true
   public get policy() {
     return this.getStringAttribute('policy');
   }
@@ -80,7 +81,7 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
+      arn: this._arn,
     };
   }
 }

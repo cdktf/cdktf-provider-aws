@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSfnStateMachineConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsSfnStateMachineConfig extends TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsSfnStateMachine extends cdktf.TerraformDataSource {
+export class DataAwsSfnStateMachine extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,45 +37,45 @@ export class DataAwsSfnStateMachine extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // creation_date - computed: true, optional: false, required: false
+  // creation_date - computed: true, optional: false, required: true
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
 
-  // definition - computed: true, optional: false, required: false
+  // definition - computed: true, optional: false, required: true
   public get definition() {
     return this.getStringAttribute('definition');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // role_arn - computed: true, optional: false, required: false
+  // role_arn - computed: true, optional: false, required: true
   public get roleArn() {
     return this.getStringAttribute('role_arn');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -85,7 +86,7 @@ export class DataAwsSfnStateMachine extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayRequestValidatorConfig extends cdktf.TerraformMetaArguments {
+export interface ApiGatewayRequestValidatorConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly restApiId: string;
   readonly validateRequestBody?: boolean;
@@ -15,7 +16,7 @@ export interface ApiGatewayRequestValidatorConfig extends cdktf.TerraformMetaArg
 
 // Resource
 
-export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
+export class ApiGatewayRequestValidator extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,66 +44,48 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this.getStringAttribute('rest_api_id');
+    return this._restApiId;
   }
   public set restApiId(value: string) {
     this._restApiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restApiIdInput() {
-    return this._restApiId
   }
 
   // validate_request_body - computed: false, optional: true, required: false
   private _validateRequestBody?: boolean;
   public get validateRequestBody() {
-    return this.getBooleanAttribute('validate_request_body');
+    return this._validateRequestBody;
   }
-  public set validateRequestBody(value: boolean ) {
+  public set validateRequestBody(value: boolean | undefined) {
     this._validateRequestBody = value;
-  }
-  public resetValidateRequestBody() {
-    this._validateRequestBody = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get validateRequestBodyInput() {
-    return this._validateRequestBody
   }
 
   // validate_request_parameters - computed: false, optional: true, required: false
   private _validateRequestParameters?: boolean;
   public get validateRequestParameters() {
-    return this.getBooleanAttribute('validate_request_parameters');
+    return this._validateRequestParameters;
   }
-  public set validateRequestParameters(value: boolean ) {
+  public set validateRequestParameters(value: boolean | undefined) {
     this._validateRequestParameters = value;
-  }
-  public resetValidateRequestParameters() {
-    this._validateRequestParameters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get validateRequestParametersInput() {
-    return this._validateRequestParameters
   }
 
   // =========
@@ -111,10 +94,10 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      rest_api_id: cdktf.stringToTerraform(this._restApiId),
-      validate_request_body: cdktf.booleanToTerraform(this._validateRequestBody),
-      validate_request_parameters: cdktf.booleanToTerraform(this._validateRequestParameters),
+      name: this._name,
+      rest_api_id: this._restApiId,
+      validate_request_body: this._validateRequestBody,
+      validate_request_parameters: this._validateRequestParameters,
     };
   }
 }

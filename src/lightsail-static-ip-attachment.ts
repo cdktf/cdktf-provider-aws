@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LightsailStaticIpAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface LightsailStaticIpAttachmentConfig extends TerraformMetaArguments {
   readonly instanceName: string;
   readonly staticIpName: string;
 }
 
 // Resource
 
-export class LightsailStaticIpAttachment extends cdktf.TerraformResource {
+export class LightsailStaticIpAttachment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,24 +40,24 @@ export class LightsailStaticIpAttachment extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance_name - computed: false, optional: false, required: true
   private _instanceName: string;
   public get instanceName() {
-    return this.getStringAttribute('instance_name');
+    return this._instanceName;
   }
   public set instanceName(value: string) {
     this._instanceName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get instanceNameInput() {
-    return this._instanceName
-  }
 
-  // ip_address - computed: true, optional: false, required: false
+  // ip_address - computed: true, optional: false, required: true
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
   }
@@ -64,14 +65,10 @@ export class LightsailStaticIpAttachment extends cdktf.TerraformResource {
   // static_ip_name - computed: false, optional: false, required: true
   private _staticIpName: string;
   public get staticIpName() {
-    return this.getStringAttribute('static_ip_name');
+    return this._staticIpName;
   }
   public set staticIpName(value: string) {
     this._staticIpName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get staticIpNameInput() {
-    return this._staticIpName
   }
 
   // =========
@@ -80,8 +77,8 @@ export class LightsailStaticIpAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_name: cdktf.stringToTerraform(this._instanceName),
-      static_ip_name: cdktf.stringToTerraform(this._staticIpName),
+      instance_name: this._instanceName,
+      static_ip_name: this._staticIpName,
     };
   }
 }

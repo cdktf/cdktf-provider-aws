@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface MacieMemberAccountAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface MacieMemberAccountAssociationConfig extends TerraformMetaArguments {
   readonly memberAccountId: string;
 }
 
 // Resource
 
-export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
+export class MacieMemberAccountAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -37,21 +38,21 @@ export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // member_account_id - computed: false, optional: false, required: true
   private _memberAccountId: string;
   public get memberAccountId() {
-    return this.getStringAttribute('member_account_id');
+    return this._memberAccountId;
   }
   public set memberAccountId(value: string) {
     this._memberAccountId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get memberAccountIdInput() {
-    return this._memberAccountId
   }
 
   // =========
@@ -60,7 +61,7 @@ export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      member_account_id: cdktf.stringToTerraform(this._memberAccountId),
+      member_account_id: this._memberAccountId,
     };
   }
 }

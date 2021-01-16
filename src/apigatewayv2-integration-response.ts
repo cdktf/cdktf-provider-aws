@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMetaArguments {
+export interface Apigatewayv2IntegrationResponseConfig extends TerraformMetaArguments {
   readonly apiId: string;
   readonly contentHandlingStrategy?: string;
   readonly integrationId: string;
@@ -17,7 +18,7 @@ export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMe
 
 // Resource
 
-export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
+export class Apigatewayv2IntegrationResponse extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,93 +50,64 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this.getStringAttribute('api_id');
+    return this._apiId;
   }
   public set apiId(value: string) {
     this._apiId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get apiIdInput() {
-    return this._apiId
   }
 
   // content_handling_strategy - computed: false, optional: true, required: false
   private _contentHandlingStrategy?: string;
   public get contentHandlingStrategy() {
-    return this.getStringAttribute('content_handling_strategy');
+    return this._contentHandlingStrategy;
   }
-  public set contentHandlingStrategy(value: string ) {
+  public set contentHandlingStrategy(value: string | undefined) {
     this._contentHandlingStrategy = value;
-  }
-  public resetContentHandlingStrategy() {
-    this._contentHandlingStrategy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contentHandlingStrategyInput() {
-    return this._contentHandlingStrategy
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // integration_id - computed: false, optional: false, required: true
   private _integrationId: string;
   public get integrationId() {
-    return this.getStringAttribute('integration_id');
+    return this._integrationId;
   }
   public set integrationId(value: string) {
     this._integrationId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get integrationIdInput() {
-    return this._integrationId
   }
 
   // integration_response_key - computed: false, optional: false, required: true
   private _integrationResponseKey: string;
   public get integrationResponseKey() {
-    return this.getStringAttribute('integration_response_key');
+    return this._integrationResponseKey;
   }
   public set integrationResponseKey(value: string) {
     this._integrationResponseKey = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get integrationResponseKeyInput() {
-    return this._integrationResponseKey
   }
 
   // response_templates - computed: false, optional: true, required: false
   private _responseTemplates?: { [key: string]: string };
   public get responseTemplates() {
-    return this.interpolationForAttribute('response_templates') as any;
+    return this._responseTemplates;
   }
-  public set responseTemplates(value: { [key: string]: string } ) {
+  public set responseTemplates(value: { [key: string]: string } | undefined) {
     this._responseTemplates = value;
-  }
-  public resetResponseTemplates() {
-    this._responseTemplates = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseTemplatesInput() {
-    return this._responseTemplates
   }
 
   // template_selection_expression - computed: false, optional: true, required: false
   private _templateSelectionExpression?: string;
   public get templateSelectionExpression() {
-    return this.getStringAttribute('template_selection_expression');
+    return this._templateSelectionExpression;
   }
-  public set templateSelectionExpression(value: string ) {
+  public set templateSelectionExpression(value: string | undefined) {
     this._templateSelectionExpression = value;
-  }
-  public resetTemplateSelectionExpression() {
-    this._templateSelectionExpression = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get templateSelectionExpressionInput() {
-    return this._templateSelectionExpression
   }
 
   // =========
@@ -144,12 +116,12 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: cdktf.stringToTerraform(this._apiId),
-      content_handling_strategy: cdktf.stringToTerraform(this._contentHandlingStrategy),
-      integration_id: cdktf.stringToTerraform(this._integrationId),
-      integration_response_key: cdktf.stringToTerraform(this._integrationResponseKey),
-      response_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseTemplates),
-      template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
+      api_id: this._apiId,
+      content_handling_strategy: this._contentHandlingStrategy,
+      integration_id: this._integrationId,
+      integration_response_key: this._integrationResponseKey,
+      response_templates: this._responseTemplates,
+      template_selection_expression: this._templateSelectionExpression,
     };
   }
 }

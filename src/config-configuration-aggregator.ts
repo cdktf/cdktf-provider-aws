@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ConfigConfigurationAggregatorConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigConfigurationAggregatorConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** account_aggregation_source block */
@@ -19,35 +20,15 @@ export interface ConfigConfigurationAggregatorAccountAggregationSource {
   readonly allRegions?: boolean;
   readonly regions?: string[];
 }
-
-function configConfigurationAggregatorAccountAggregationSourceToTerraform(struct?: ConfigConfigurationAggregatorAccountAggregationSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    account_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.accountIds),
-    all_regions: cdktf.booleanToTerraform(struct!.allRegions),
-    regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regions),
-  }
-}
-
 export interface ConfigConfigurationAggregatorOrganizationAggregationSource {
   readonly allRegions?: boolean;
   readonly regions?: string[];
   readonly roleArn: string;
 }
 
-function configConfigurationAggregatorOrganizationAggregationSourceToTerraform(struct?: ConfigConfigurationAggregatorOrganizationAggregationSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    all_regions: cdktf.booleanToTerraform(struct!.allRegions),
-    regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regions),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-  }
-}
-
-
 // Resource
 
-export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
+export class ConfigConfigurationAggregator extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -74,75 +55,54 @@ export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // account_aggregation_source - computed: false, optional: true, required: false
   private _accountAggregationSource?: ConfigConfigurationAggregatorAccountAggregationSource[];
   public get accountAggregationSource() {
-    return this.interpolationForAttribute('account_aggregation_source') as any;
+    return this._accountAggregationSource;
   }
-  public set accountAggregationSource(value: ConfigConfigurationAggregatorAccountAggregationSource[] ) {
+  public set accountAggregationSource(value: ConfigConfigurationAggregatorAccountAggregationSource[] | undefined) {
     this._accountAggregationSource = value;
-  }
-  public resetAccountAggregationSource() {
-    this._accountAggregationSource = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accountAggregationSourceInput() {
-    return this._accountAggregationSource
   }
 
   // organization_aggregation_source - computed: false, optional: true, required: false
   private _organizationAggregationSource?: ConfigConfigurationAggregatorOrganizationAggregationSource[];
   public get organizationAggregationSource() {
-    return this.interpolationForAttribute('organization_aggregation_source') as any;
+    return this._organizationAggregationSource;
   }
-  public set organizationAggregationSource(value: ConfigConfigurationAggregatorOrganizationAggregationSource[] ) {
+  public set organizationAggregationSource(value: ConfigConfigurationAggregatorOrganizationAggregationSource[] | undefined) {
     this._organizationAggregationSource = value;
-  }
-  public resetOrganizationAggregationSource() {
-    this._organizationAggregationSource = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get organizationAggregationSourceInput() {
-    return this._organizationAggregationSource
   }
 
   // =========
@@ -151,10 +111,10 @@ export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      account_aggregation_source: cdktf.listMapper(configConfigurationAggregatorAccountAggregationSourceToTerraform)(this._accountAggregationSource),
-      organization_aggregation_source: cdktf.listMapper(configConfigurationAggregatorOrganizationAggregationSourceToTerraform)(this._organizationAggregationSource),
+      name: this._name,
+      tags: this._tags,
+      account_aggregation_source: this._accountAggregationSource,
+      organization_aggregation_source: this._organizationAggregationSource,
     };
   }
 }

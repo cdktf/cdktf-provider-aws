@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLambdaInvocationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLambdaInvocationConfig extends TerraformMetaArguments {
   readonly functionName: string;
   readonly input: string;
   readonly qualifier?: string;
@@ -14,7 +15,7 @@ export interface DataAwsLambdaInvocationConfig extends cdktf.TerraformMetaArgume
 
 // Resource
 
-export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
+export class DataAwsLambdaInvocation extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -43,58 +44,42 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this.getStringAttribute('function_name');
+    return this._functionName;
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get functionNameInput() {
-    return this._functionName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // input - computed: false, optional: false, required: true
   private _input: string;
   public get input() {
-    return this.getStringAttribute('input');
+    return this._input;
   }
   public set input(value: string) {
     this._input = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputInput() {
-    return this._input
   }
 
   // qualifier - computed: false, optional: true, required: false
   private _qualifier?: string;
   public get qualifier() {
-    return this.getStringAttribute('qualifier');
+    return this._qualifier;
   }
-  public set qualifier(value: string ) {
+  public set qualifier(value: string | undefined) {
     this._qualifier = value;
   }
-  public resetQualifier() {
-    this._qualifier = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get qualifierInput() {
-    return this._qualifier
-  }
 
-  // result - computed: true, optional: false, required: false
+  // result - computed: true, optional: false, required: true
   public get result() {
     return this.getStringAttribute('result');
-  }
-
-  // result_map - computed: true, optional: false, required: false
-  public resultMap(key: string): string {
-    return new cdktf.StringMap(this, 'result_map').lookup(key);
   }
 
   // =========
@@ -103,9 +88,9 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: cdktf.stringToTerraform(this._functionName),
-      input: cdktf.stringToTerraform(this._input),
-      qualifier: cdktf.stringToTerraform(this._qualifier),
+      function_name: this._functionName,
+      input: this._input,
+      qualifier: this._qualifier,
     };
   }
 }

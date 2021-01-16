@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CodebuildWebhookConfig extends cdktf.TerraformMetaArguments {
+export interface CodebuildWebhookConfig extends TerraformMetaArguments {
   readonly branchFilter?: string;
   readonly projectName: string;
   /** filter_group block */
@@ -17,32 +18,14 @@ export interface CodebuildWebhookFilterGroupFilter {
   readonly pattern: string;
   readonly type: string;
 }
-
-function codebuildWebhookFilterGroupFilterToTerraform(struct?: CodebuildWebhookFilterGroupFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    exclude_matched_pattern: cdktf.booleanToTerraform(struct!.excludeMatchedPattern),
-    pattern: cdktf.stringToTerraform(struct!.pattern),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface CodebuildWebhookFilterGroup {
   /** filter block */
   readonly filter?: CodebuildWebhookFilterGroupFilter[];
 }
 
-function codebuildWebhookFilterGroupToTerraform(struct?: CodebuildWebhookFilterGroup): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    filter: cdktf.listMapper(codebuildWebhookFilterGroupFilterToTerraform)(struct!.filter),
-  }
-}
-
-
 // Resource
 
-export class CodebuildWebhook extends cdktf.TerraformResource {
+export class CodebuildWebhook extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -71,25 +54,22 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
   // branch_filter - computed: false, optional: true, required: false
   private _branchFilter?: string;
   public get branchFilter() {
-    return this.getStringAttribute('branch_filter');
+    return this._branchFilter;
   }
-  public set branchFilter(value: string ) {
+  public set branchFilter(value: string | undefined) {
     this._branchFilter = value;
-  }
-  public resetBranchFilter() {
-    this._branchFilter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get branchFilterInput() {
-    return this._branchFilter
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // payload_url - computed: true, optional: false, required: false
+  // payload_url - computed: true, optional: false, required: true
   public get payloadUrl() {
     return this.getStringAttribute('payload_url');
   }
@@ -97,22 +77,18 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
   // project_name - computed: false, optional: false, required: true
   private _projectName: string;
   public get projectName() {
-    return this.getStringAttribute('project_name');
+    return this._projectName;
   }
   public set projectName(value: string) {
     this._projectName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get projectNameInput() {
-    return this._projectName
-  }
 
-  // secret - computed: true, optional: false, required: false
+  // secret - computed: true, optional: false, required: true
   public get secret() {
     return this.getStringAttribute('secret');
   }
 
-  // url - computed: true, optional: false, required: false
+  // url - computed: true, optional: false, required: true
   public get url() {
     return this.getStringAttribute('url');
   }
@@ -120,17 +96,10 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
   // filter_group - computed: false, optional: true, required: false
   private _filterGroup?: CodebuildWebhookFilterGroup[];
   public get filterGroup() {
-    return this.interpolationForAttribute('filter_group') as any;
+    return this._filterGroup;
   }
-  public set filterGroup(value: CodebuildWebhookFilterGroup[] ) {
+  public set filterGroup(value: CodebuildWebhookFilterGroup[] | undefined) {
     this._filterGroup = value;
-  }
-  public resetFilterGroup() {
-    this._filterGroup = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterGroupInput() {
-    return this._filterGroup
   }
 
   // =========
@@ -139,9 +108,9 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch_filter: cdktf.stringToTerraform(this._branchFilter),
-      project_name: cdktf.stringToTerraform(this._projectName),
-      filter_group: cdktf.listMapper(codebuildWebhookFilterGroupToTerraform)(this._filterGroup),
+      branch_filter: this._branchFilter,
+      project_name: this._projectName,
+      filter_group: this._filterGroup,
     };
   }
 }

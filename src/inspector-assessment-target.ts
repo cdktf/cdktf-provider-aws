@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface InspectorAssessmentTargetConfig extends cdktf.TerraformMetaArguments {
+export interface InspectorAssessmentTargetConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly resourceGroupArn?: string;
 }
 
 // Resource
 
-export class InspectorAssessmentTarget extends cdktf.TerraformResource {
+export class InspectorAssessmentTarget extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,43 +39,36 @@ export class InspectorAssessmentTarget extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // resource_group_arn - computed: false, optional: true, required: false
   private _resourceGroupArn?: string;
   public get resourceGroupArn() {
-    return this.getStringAttribute('resource_group_arn');
+    return this._resourceGroupArn;
   }
-  public set resourceGroupArn(value: string ) {
+  public set resourceGroupArn(value: string | undefined) {
     this._resourceGroupArn = value;
-  }
-  public resetResourceGroupArn() {
-    this._resourceGroupArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceGroupArnInput() {
-    return this._resourceGroupArn
   }
 
   // =========
@@ -83,8 +77,8 @@ export class InspectorAssessmentTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_arn: cdktf.stringToTerraform(this._resourceGroupArn),
+      name: this._name,
+      resource_group_arn: this._resourceGroupArn,
     };
   }
 }

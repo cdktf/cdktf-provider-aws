@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SesReceiptFilterConfig extends cdktf.TerraformMetaArguments {
+export interface SesReceiptFilterConfig extends TerraformMetaArguments {
   readonly cidr: string;
   readonly name: string;
   readonly policy: string;
@@ -14,7 +15,7 @@ export interface SesReceiptFilterConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class SesReceiptFilter extends cdktf.TerraformResource {
+export class SesReceiptFilter extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class SesReceiptFilter extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -48,45 +49,37 @@ export class SesReceiptFilter extends cdktf.TerraformResource {
   // cidr - computed: false, optional: false, required: true
   private _cidr: string;
   public get cidr() {
-    return this.getStringAttribute('cidr');
+    return this._cidr;
   }
   public set cidr(value: string) {
     this._cidr = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get cidrInput() {
-    return this._cidr
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy;
   }
   public set policy(value: string) {
     this._policy = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // =========
@@ -95,9 +88,9 @@ export class SesReceiptFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr: cdktf.stringToTerraform(this._cidr),
-      name: cdktf.stringToTerraform(this._name),
-      policy: cdktf.stringToTerraform(this._policy),
+      cidr: this._cidr,
+      name: this._name,
+      policy: this._policy,
     };
   }
 }

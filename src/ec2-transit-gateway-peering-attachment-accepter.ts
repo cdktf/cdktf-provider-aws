@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayPeeringAttachmentAccepterConfig extends cdktf.TerraformMetaArguments {
+export interface Ec2TransitGatewayPeeringAttachmentAccepterConfig extends TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   readonly transitGatewayAttachmentId: string;
 }
 
 // Resource
 
-export class Ec2TransitGatewayPeeringAttachmentAccepter extends cdktf.TerraformResource {
+export class Ec2TransitGatewayPeeringAttachmentAccepter extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,21 +40,25 @@ export class Ec2TransitGatewayPeeringAttachmentAccepter extends cdktf.TerraformR
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // peer_account_id - computed: true, optional: false, required: false
+  // peer_account_id - computed: true, optional: false, required: true
   public get peerAccountId() {
     return this.getStringAttribute('peer_account_id');
   }
 
-  // peer_region - computed: true, optional: false, required: false
+  // peer_region - computed: true, optional: false, required: true
   public get peerRegion() {
     return this.getStringAttribute('peer_region');
   }
 
-  // peer_transit_gateway_id - computed: true, optional: false, required: false
+  // peer_transit_gateway_id - computed: true, optional: false, required: true
   public get peerTransitGatewayId() {
     return this.getStringAttribute('peer_transit_gateway_id');
   }
@@ -61,33 +66,22 @@ export class Ec2TransitGatewayPeeringAttachmentAccepter extends cdktf.TerraformR
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // transit_gateway_attachment_id - computed: false, optional: false, required: true
   private _transitGatewayAttachmentId: string;
   public get transitGatewayAttachmentId() {
-    return this.getStringAttribute('transit_gateway_attachment_id');
+    return this._transitGatewayAttachmentId;
   }
   public set transitGatewayAttachmentId(value: string) {
     this._transitGatewayAttachmentId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get transitGatewayAttachmentIdInput() {
-    return this._transitGatewayAttachmentId
-  }
 
-  // transit_gateway_id - computed: true, optional: false, required: false
+  // transit_gateway_id - computed: true, optional: false, required: true
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
   }
@@ -98,8 +92,8 @@ export class Ec2TransitGatewayPeeringAttachmentAccepter extends cdktf.TerraformR
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
+      tags: this._tags,
+      transit_gateway_attachment_id: this._transitGatewayAttachmentId,
     };
   }
 }

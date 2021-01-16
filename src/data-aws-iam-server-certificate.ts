@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamServerCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIamServerCertificateConfig extends TerraformMetaArguments {
   readonly latest?: boolean;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -15,7 +16,7 @@ export interface DataAwsIamServerCertificateConfig extends cdktf.TerraformMetaAr
 
 // Resource
 
-export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
+export class DataAwsIamServerCertificate extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -42,80 +43,63 @@ export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // certificate_body - computed: true, optional: false, required: false
+  // certificate_body - computed: true, optional: false, required: true
   public get certificateBody() {
     return this.getStringAttribute('certificate_body');
   }
 
-  // certificate_chain - computed: true, optional: false, required: false
+  // certificate_chain - computed: true, optional: false, required: true
   public get certificateChain() {
     return this.getStringAttribute('certificate_chain');
   }
 
-  // expiration_date - computed: true, optional: false, required: false
+  // expiration_date - computed: true, optional: false, required: true
   public get expirationDate() {
     return this.getStringAttribute('expiration_date');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // latest - computed: false, optional: true, required: false
   private _latest?: boolean;
   public get latest() {
-    return this.getBooleanAttribute('latest');
+    return this._latest;
   }
-  public set latest(value: boolean ) {
+  public set latest(value: boolean | undefined) {
     this._latest = value;
-  }
-  public resetLatest() {
-    this._latest = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get latestInput() {
-    return this._latest
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
   }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
-  }
 
-  // path - computed: true, optional: false, required: false
+  // path - computed: true, optional: false, required: true
   public get path() {
     return this.getStringAttribute('path');
   }
@@ -123,20 +107,13 @@ export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
   // path_prefix - computed: false, optional: true, required: false
   private _pathPrefix?: string;
   public get pathPrefix() {
-    return this.getStringAttribute('path_prefix');
+    return this._pathPrefix;
   }
-  public set pathPrefix(value: string ) {
+  public set pathPrefix(value: string | undefined) {
     this._pathPrefix = value;
   }
-  public resetPathPrefix() {
-    this._pathPrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pathPrefixInput() {
-    return this._pathPrefix
-  }
 
-  // upload_date - computed: true, optional: false, required: false
+  // upload_date - computed: true, optional: false, required: true
   public get uploadDate() {
     return this.getStringAttribute('upload_date');
   }
@@ -147,10 +124,10 @@ export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      latest: cdktf.booleanToTerraform(this._latest),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      path_prefix: cdktf.stringToTerraform(this._pathPrefix),
+      latest: this._latest,
+      name: this._name,
+      name_prefix: this._namePrefix,
+      path_prefix: this._pathPrefix,
     };
   }
 }

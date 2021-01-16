@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIpRangesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsIpRangesConfig extends TerraformMetaArguments {
   readonly regions?: string[];
   readonly services: string[];
   readonly url?: string;
@@ -14,7 +15,7 @@ export interface DataAwsIpRangesConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsIpRanges extends cdktf.TerraformDataSource {
+export class DataAwsIpRanges extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -40,22 +41,26 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // cidr_blocks - computed: true, optional: false, required: false
+  // cidr_blocks - computed: true, optional: false, required: true
   public get cidrBlocks() {
     return this.getListAttribute('cidr_blocks');
   }
 
-  // create_date - computed: true, optional: false, required: false
+  // create_date - computed: true, optional: false, required: true
   public get createDate() {
     return this.getStringAttribute('create_date');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ipv6_cidr_blocks - computed: true, optional: false, required: false
+  // ipv6_cidr_blocks - computed: true, optional: false, required: true
   public get ipv6CidrBlocks() {
     return this.getListAttribute('ipv6_cidr_blocks');
   }
@@ -63,33 +68,22 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // regions - computed: false, optional: true, required: false
   private _regions?: string[];
   public get regions() {
-    return this.getListAttribute('regions');
+    return this._regions;
   }
-  public set regions(value: string[] ) {
+  public set regions(value: string[] | undefined) {
     this._regions = value;
-  }
-  public resetRegions() {
-    this._regions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionsInput() {
-    return this._regions
   }
 
   // services - computed: false, optional: false, required: true
   private _services: string[];
   public get services() {
-    return this.getListAttribute('services');
+    return this._services;
   }
   public set services(value: string[]) {
     this._services = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get servicesInput() {
-    return this._services
-  }
 
-  // sync_token - computed: true, optional: false, required: false
+  // sync_token - computed: true, optional: false, required: true
   public get syncToken() {
     return this.getNumberAttribute('sync_token');
   }
@@ -97,17 +91,10 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
   // url - computed: false, optional: true, required: false
   private _url?: string;
   public get url() {
-    return this.getStringAttribute('url');
+    return this._url;
   }
-  public set url(value: string ) {
+  public set url(value: string | undefined) {
     this._url = value;
-  }
-  public resetUrl() {
-    this._url = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlInput() {
-    return this._url
   }
 
   // =========
@@ -116,9 +103,9 @@ export class DataAwsIpRanges extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      regions: cdktf.listMapper(cdktf.stringToTerraform)(this._regions),
-      services: cdktf.listMapper(cdktf.stringToTerraform)(this._services),
-      url: cdktf.stringToTerraform(this._url),
+      regions: this._regions,
+      services: this._services,
+      url: this._url,
     };
   }
 }

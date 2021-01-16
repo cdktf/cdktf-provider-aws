@@ -2,40 +2,107 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface AppmeshVirtualNodeConfig extends cdktf.TerraformMetaArguments {
+export interface AppmeshVirtualNodeConfig extends TerraformMetaArguments {
   readonly meshName: string;
+  readonly meshOwner?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** spec block */
   readonly spec: AppmeshVirtualNodeSpec[];
 }
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm {
+  readonly certificateAuthorityArns: string[];
+}
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile {
+  readonly certificateChain: string;
+}
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust {
+  /** acm block */
+  readonly acm?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm[];
+  /** file block */
+  readonly file?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile[];
+}
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation {
+  /** trust block */
+  readonly trust: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust[];
+}
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls {
+  readonly enforce?: boolean;
+  readonly ports?: number[];
+  /** validation block */
+  readonly validation: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation[];
+}
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy {
+  /** tls block */
+  readonly tls?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls[];
+}
 export interface AppmeshVirtualNodeSpecBackendVirtualService {
   readonly virtualServiceName: string;
+  /** client_policy block */
+  readonly clientPolicy?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicy[];
 }
-
-function appmeshVirtualNodeSpecBackendVirtualServiceToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualService): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    virtual_service_name: cdktf.stringToTerraform(struct!.virtualServiceName),
-  }
-}
-
 export interface AppmeshVirtualNodeSpecBackend {
   /** virtual_service block */
-  readonly virtualService?: AppmeshVirtualNodeSpecBackendVirtualService[];
+  readonly virtualService: AppmeshVirtualNodeSpecBackendVirtualService[];
 }
-
-function appmeshVirtualNodeSpecBackendToTerraform(struct?: AppmeshVirtualNodeSpecBackend): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    virtual_service: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceToTerraform)(struct!.virtualService),
-  }
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
+  readonly certificateAuthorityArns: string[];
 }
-
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile {
+  readonly certificateChain: string;
+}
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust {
+  /** acm block */
+  readonly acm?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm[];
+  /** file block */
+  readonly file?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile[];
+}
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation {
+  /** trust block */
+  readonly trust: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust[];
+}
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls {
+  readonly enforce?: boolean;
+  readonly ports?: number[];
+  /** validation block */
+  readonly validation: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation[];
+}
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicy {
+  /** tls block */
+  readonly tls?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls[];
+}
+export interface AppmeshVirtualNodeSpecBackendDefaults {
+  /** client_policy block */
+  readonly clientPolicy?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicy[];
+}
+export interface AppmeshVirtualNodeSpecListenerConnectionPoolGrpc {
+  readonly maxRequests: number;
+}
+export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp {
+  readonly maxConnections: number;
+  readonly maxPendingRequests?: number;
+}
+export interface AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
+  readonly maxRequests: number;
+}
+export interface AppmeshVirtualNodeSpecListenerConnectionPoolTcp {
+  readonly maxConnections: number;
+}
+export interface AppmeshVirtualNodeSpecListenerConnectionPool {
+  /** grpc block */
+  readonly grpc?: AppmeshVirtualNodeSpecListenerConnectionPoolGrpc[];
+  /** http block */
+  readonly http?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp[];
+  /** http2 block */
+  readonly http2?: AppmeshVirtualNodeSpecListenerConnectionPoolHttp2[];
+  /** tcp block */
+  readonly tcp?: AppmeshVirtualNodeSpecListenerConnectionPoolTcp[];
+}
 export interface AppmeshVirtualNodeSpecListenerHealthCheck {
   readonly healthyThreshold: number;
   readonly intervalMillis: number;
@@ -45,130 +112,148 @@ export interface AppmeshVirtualNodeSpecListenerHealthCheck {
   readonly timeoutMillis: number;
   readonly unhealthyThreshold: number;
 }
-
-function appmeshVirtualNodeSpecListenerHealthCheckToTerraform(struct?: AppmeshVirtualNodeSpecListenerHealthCheck): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    healthy_threshold: cdktf.numberToTerraform(struct!.healthyThreshold),
-    interval_millis: cdktf.numberToTerraform(struct!.intervalMillis),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    timeout_millis: cdktf.numberToTerraform(struct!.timeoutMillis),
-    unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
-  }
+export interface AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration {
+  readonly unit: string;
+  readonly value: number;
 }
-
+export interface AppmeshVirtualNodeSpecListenerOutlierDetectionInterval {
+  readonly unit: string;
+  readonly value: number;
+}
+export interface AppmeshVirtualNodeSpecListenerOutlierDetection {
+  readonly maxEjectionPercent: number;
+  readonly maxServerErrors: number;
+  /** base_ejection_duration block */
+  readonly baseEjectionDuration: AppmeshVirtualNodeSpecListenerOutlierDetectionBaseEjectionDuration[];
+  /** interval block */
+  readonly interval: AppmeshVirtualNodeSpecListenerOutlierDetectionInterval[];
+}
 export interface AppmeshVirtualNodeSpecListenerPortMapping {
   readonly port: number;
   readonly protocol: string;
 }
-
-function appmeshVirtualNodeSpecListenerPortMappingToTerraform(struct?: AppmeshVirtualNodeSpecListenerPortMapping): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-  }
+export interface AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle {
+  readonly unit: string;
+  readonly value: number;
 }
-
+export interface AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest {
+  readonly unit: string;
+  readonly value: number;
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutGrpc {
+  /** idle block */
+  readonly idle?: AppmeshVirtualNodeSpecListenerTimeoutGrpcIdle[];
+  /** per_request block */
+  readonly perRequest?: AppmeshVirtualNodeSpecListenerTimeoutGrpcPerRequest[];
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutHttpIdle {
+  readonly unit: string;
+  readonly value: number;
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest {
+  readonly unit: string;
+  readonly value: number;
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutHttp {
+  /** idle block */
+  readonly idle?: AppmeshVirtualNodeSpecListenerTimeoutHttpIdle[];
+  /** per_request block */
+  readonly perRequest?: AppmeshVirtualNodeSpecListenerTimeoutHttpPerRequest[];
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle {
+  readonly unit: string;
+  readonly value: number;
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest {
+  readonly unit: string;
+  readonly value: number;
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutHttp2 {
+  /** idle block */
+  readonly idle?: AppmeshVirtualNodeSpecListenerTimeoutHttp2Idle[];
+  /** per_request block */
+  readonly perRequest?: AppmeshVirtualNodeSpecListenerTimeoutHttp2PerRequest[];
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutTcpIdle {
+  readonly unit: string;
+  readonly value: number;
+}
+export interface AppmeshVirtualNodeSpecListenerTimeoutTcp {
+  /** idle block */
+  readonly idle?: AppmeshVirtualNodeSpecListenerTimeoutTcpIdle[];
+}
+export interface AppmeshVirtualNodeSpecListenerTimeout {
+  /** grpc block */
+  readonly grpc?: AppmeshVirtualNodeSpecListenerTimeoutGrpc[];
+  /** http block */
+  readonly http?: AppmeshVirtualNodeSpecListenerTimeoutHttp[];
+  /** http2 block */
+  readonly http2?: AppmeshVirtualNodeSpecListenerTimeoutHttp2[];
+  /** tcp block */
+  readonly tcp?: AppmeshVirtualNodeSpecListenerTimeoutTcp[];
+}
+export interface AppmeshVirtualNodeSpecListenerTlsCertificateAcm {
+  readonly certificateArn: string;
+}
+export interface AppmeshVirtualNodeSpecListenerTlsCertificateFile {
+  readonly certificateChain: string;
+  readonly privateKey: string;
+}
+export interface AppmeshVirtualNodeSpecListenerTlsCertificate {
+  /** acm block */
+  readonly acm?: AppmeshVirtualNodeSpecListenerTlsCertificateAcm[];
+  /** file block */
+  readonly file?: AppmeshVirtualNodeSpecListenerTlsCertificateFile[];
+}
+export interface AppmeshVirtualNodeSpecListenerTls {
+  readonly mode: string;
+  /** certificate block */
+  readonly certificate: AppmeshVirtualNodeSpecListenerTlsCertificate[];
+}
 export interface AppmeshVirtualNodeSpecListener {
+  /** connection_pool block */
+  readonly connectionPool?: AppmeshVirtualNodeSpecListenerConnectionPool[];
   /** health_check block */
   readonly healthCheck?: AppmeshVirtualNodeSpecListenerHealthCheck[];
+  /** outlier_detection block */
+  readonly outlierDetection?: AppmeshVirtualNodeSpecListenerOutlierDetection[];
   /** port_mapping block */
   readonly portMapping: AppmeshVirtualNodeSpecListenerPortMapping[];
+  /** timeout block */
+  readonly timeout?: AppmeshVirtualNodeSpecListenerTimeout[];
+  /** tls block */
+  readonly tls?: AppmeshVirtualNodeSpecListenerTls[];
 }
-
-function appmeshVirtualNodeSpecListenerToTerraform(struct?: AppmeshVirtualNodeSpecListener): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    health_check: cdktf.listMapper(appmeshVirtualNodeSpecListenerHealthCheckToTerraform)(struct!.healthCheck),
-    port_mapping: cdktf.listMapper(appmeshVirtualNodeSpecListenerPortMappingToTerraform)(struct!.portMapping),
-  }
-}
-
 export interface AppmeshVirtualNodeSpecLoggingAccessLogFile {
   readonly path: string;
 }
-
-function appmeshVirtualNodeSpecLoggingAccessLogFileToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLogFile): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    path: cdktf.stringToTerraform(struct!.path),
-  }
-}
-
 export interface AppmeshVirtualNodeSpecLoggingAccessLog {
   /** file block */
   readonly file?: AppmeshVirtualNodeSpecLoggingAccessLogFile[];
 }
-
-function appmeshVirtualNodeSpecLoggingAccessLogToTerraform(struct?: AppmeshVirtualNodeSpecLoggingAccessLog): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    file: cdktf.listMapper(appmeshVirtualNodeSpecLoggingAccessLogFileToTerraform)(struct!.file),
-  }
-}
-
 export interface AppmeshVirtualNodeSpecLogging {
   /** access_log block */
   readonly accessLog?: AppmeshVirtualNodeSpecLoggingAccessLog[];
 }
-
-function appmeshVirtualNodeSpecLoggingToTerraform(struct?: AppmeshVirtualNodeSpecLogging): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    access_log: cdktf.listMapper(appmeshVirtualNodeSpecLoggingAccessLogToTerraform)(struct!.accessLog),
-  }
-}
-
 export interface AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap {
   readonly attributes?: { [key: string]: string };
   readonly namespaceName: string;
   readonly serviceName: string;
 }
-
-function appmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    attributes: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.attributes),
-    namespace_name: cdktf.stringToTerraform(struct!.namespaceName),
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
-  }
-}
-
 export interface AppmeshVirtualNodeSpecServiceDiscoveryDns {
   readonly hostname: string;
-  readonly serviceName?: string;
 }
-
-function appmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscoveryDns): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
-  }
-}
-
 export interface AppmeshVirtualNodeSpecServiceDiscovery {
   /** aws_cloud_map block */
   readonly awsCloudMap?: AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMap[];
   /** dns block */
   readonly dns?: AppmeshVirtualNodeSpecServiceDiscoveryDns[];
 }
-
-function appmeshVirtualNodeSpecServiceDiscoveryToTerraform(struct?: AppmeshVirtualNodeSpecServiceDiscovery): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    aws_cloud_map: cdktf.listMapper(appmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapToTerraform)(struct!.awsCloudMap),
-    dns: cdktf.listMapper(appmeshVirtualNodeSpecServiceDiscoveryDnsToTerraform)(struct!.dns),
-  }
-}
-
 export interface AppmeshVirtualNodeSpec {
-  readonly backends?: string[];
   /** backend block */
   readonly backend?: AppmeshVirtualNodeSpecBackend[];
+  /** backend_defaults block */
+  readonly backendDefaults?: AppmeshVirtualNodeSpecBackendDefaults[];
   /** listener block */
   readonly listener?: AppmeshVirtualNodeSpecListener[];
   /** logging block */
@@ -177,21 +262,9 @@ export interface AppmeshVirtualNodeSpec {
   readonly serviceDiscovery?: AppmeshVirtualNodeSpecServiceDiscovery[];
 }
 
-function appmeshVirtualNodeSpecToTerraform(struct?: AppmeshVirtualNodeSpec): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    backends: cdktf.listMapper(cdktf.stringToTerraform)(struct!.backends),
-    backend: cdktf.listMapper(appmeshVirtualNodeSpecBackendToTerraform)(struct!.backend),
-    listener: cdktf.listMapper(appmeshVirtualNodeSpecListenerToTerraform)(struct!.listener),
-    logging: cdktf.listMapper(appmeshVirtualNodeSpecLoggingToTerraform)(struct!.logging),
-    service_discovery: cdktf.listMapper(appmeshVirtualNodeSpecServiceDiscoveryToTerraform)(struct!.serviceDiscovery),
-  }
-}
-
-
 // Resource
 
-export class AppmeshVirtualNode extends cdktf.TerraformResource {
+export class AppmeshVirtualNode extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -209,6 +282,7 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._meshName = config.meshName;
+    this._meshOwner = config.meshOwner;
     this._name = config.name;
     this._tags = config.tags;
     this._spec = config.spec;
@@ -218,22 +292,26 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // created_date - computed: true, optional: false, required: false
+  // created_date - computed: true, optional: false, required: true
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // last_updated_date - computed: true, optional: false, required: false
+  // last_updated_date - computed: true, optional: false, required: true
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -241,56 +319,51 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
   // mesh_name - computed: false, optional: false, required: true
   private _meshName: string;
   public get meshName() {
-    return this.getStringAttribute('mesh_name');
+    return this._meshName;
   }
   public set meshName(value: string) {
     this._meshName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get meshNameInput() {
-    return this._meshName
+
+  // mesh_owner - computed: true, optional: true, required: false
+  private _meshOwner?: string;
+  public get meshOwner() {
+    return this._meshOwner ?? this.getStringAttribute('mesh_owner');
+  }
+  public set meshOwner(value: string | undefined) {
+    this._meshOwner = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
+
+  // resource_owner - computed: true, optional: false, required: true
+  public get resourceOwner() {
+    return this.getStringAttribute('resource_owner');
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // spec - computed: false, optional: false, required: true
   private _spec: AppmeshVirtualNodeSpec[];
   public get spec() {
-    return this.interpolationForAttribute('spec') as any;
+    return this._spec;
   }
   public set spec(value: AppmeshVirtualNodeSpec[]) {
     this._spec = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get specInput() {
-    return this._spec
   }
 
   // =========
@@ -299,10 +372,11 @@ export class AppmeshVirtualNode extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mesh_name: cdktf.stringToTerraform(this._meshName),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      spec: cdktf.listMapper(appmeshVirtualNodeSpecToTerraform)(this._spec),
+      mesh_name: this._meshName,
+      mesh_owner: this._meshOwner,
+      name: this._name,
+      tags: this._tags,
+      spec: this._spec,
     };
   }
 }

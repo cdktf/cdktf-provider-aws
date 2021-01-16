@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RedshiftSecurityGroupConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftSecurityGroupConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   /** ingress block */
@@ -18,19 +19,9 @@ export interface RedshiftSecurityGroupIngress {
   readonly securityGroupOwnerId?: string;
 }
 
-function redshiftSecurityGroupIngressToTerraform(struct?: RedshiftSecurityGroupIngress): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    cidr: cdktf.stringToTerraform(struct!.cidr),
-    security_group_name: cdktf.stringToTerraform(struct!.securityGroupName),
-    security_group_owner_id: cdktf.stringToTerraform(struct!.securityGroupOwnerId),
-  }
-}
-
-
 // Resource
 
-export class RedshiftSecurityGroup extends cdktf.TerraformResource {
+export class RedshiftSecurityGroup extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,48 +50,37 @@ export class RedshiftSecurityGroup extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // ingress - computed: false, optional: false, required: true
   private _ingress: RedshiftSecurityGroupIngress[];
   public get ingress() {
-    return this.interpolationForAttribute('ingress') as any;
+    return this._ingress;
   }
   public set ingress(value: RedshiftSecurityGroupIngress[]) {
     this._ingress = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ingressInput() {
-    return this._ingress
   }
 
   // =========
@@ -109,9 +89,9 @@ export class RedshiftSecurityGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      ingress: cdktf.listMapper(redshiftSecurityGroupIngressToTerraform)(this._ingress),
+      description: this._description,
+      name: this._name,
+      ingress: this._ingress,
     };
   }
 }

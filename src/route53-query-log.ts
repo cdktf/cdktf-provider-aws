@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Route53QueryLogConfig extends cdktf.TerraformMetaArguments {
+export interface Route53QueryLogConfig extends TerraformMetaArguments {
   readonly cloudwatchLogGroupArn: string;
   readonly zoneId: string;
 }
 
 // Resource
 
-export class Route53QueryLog extends cdktf.TerraformResource {
+export class Route53QueryLog extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class Route53QueryLog extends cdktf.TerraformResource {
   // cloudwatch_log_group_arn - computed: false, optional: false, required: true
   private _cloudwatchLogGroupArn: string;
   public get cloudwatchLogGroupArn() {
-    return this.getStringAttribute('cloudwatch_log_group_arn');
+    return this._cloudwatchLogGroupArn;
   }
   public set cloudwatchLogGroupArn(value: string) {
     this._cloudwatchLogGroupArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get cloudwatchLogGroupArnInput() {
-    return this._cloudwatchLogGroupArn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // zone_id - computed: false, optional: false, required: true
   private _zoneId: string;
   public get zoneId() {
-    return this.getStringAttribute('zone_id');
+    return this._zoneId;
   }
   public set zoneId(value: string) {
     this._zoneId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get zoneIdInput() {
-    return this._zoneId
   }
 
   // =========
@@ -75,8 +72,8 @@ export class Route53QueryLog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloudwatch_log_group_arn: cdktf.stringToTerraform(this._cloudwatchLogGroupArn),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      cloudwatch_log_group_arn: this._cloudwatchLogGroupArn,
+      zone_id: this._zoneId,
     };
   }
 }

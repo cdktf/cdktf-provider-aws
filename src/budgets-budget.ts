@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface BudgetsBudgetConfig extends cdktf.TerraformMetaArguments {
+export interface BudgetsBudgetConfig extends TerraformMetaArguments {
   readonly accountId?: string;
   readonly budgetType: string;
   readonly costFilters?: { [key: string]: string };
@@ -35,24 +36,6 @@ export interface BudgetsBudgetCostTypes {
   readonly useAmortized?: boolean;
   readonly useBlended?: boolean;
 }
-
-function budgetsBudgetCostTypesToTerraform(struct?: BudgetsBudgetCostTypes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    include_credit: cdktf.booleanToTerraform(struct!.includeCredit),
-    include_discount: cdktf.booleanToTerraform(struct!.includeDiscount),
-    include_other_subscription: cdktf.booleanToTerraform(struct!.includeOtherSubscription),
-    include_recurring: cdktf.booleanToTerraform(struct!.includeRecurring),
-    include_refund: cdktf.booleanToTerraform(struct!.includeRefund),
-    include_subscription: cdktf.booleanToTerraform(struct!.includeSubscription),
-    include_support: cdktf.booleanToTerraform(struct!.includeSupport),
-    include_tax: cdktf.booleanToTerraform(struct!.includeTax),
-    include_upfront: cdktf.booleanToTerraform(struct!.includeUpfront),
-    use_amortized: cdktf.booleanToTerraform(struct!.useAmortized),
-    use_blended: cdktf.booleanToTerraform(struct!.useBlended),
-  }
-}
-
 export interface BudgetsBudgetNotification {
   readonly comparisonOperator: string;
   readonly notificationType: string;
@@ -62,22 +45,9 @@ export interface BudgetsBudgetNotification {
   readonly thresholdType: string;
 }
 
-function budgetsBudgetNotificationToTerraform(struct?: BudgetsBudgetNotification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    comparison_operator: cdktf.stringToTerraform(struct!.comparisonOperator),
-    notification_type: cdktf.stringToTerraform(struct!.notificationType),
-    subscriber_email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subscriberEmailAddresses),
-    subscriber_sns_topic_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subscriberSnsTopicArns),
-    threshold: cdktf.numberToTerraform(struct!.threshold),
-    threshold_type: cdktf.stringToTerraform(struct!.thresholdType),
-  }
-}
-
-
 // Resource
 
-export class BudgetsBudget extends cdktf.TerraformResource {
+export class BudgetsBudget extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -115,183 +85,118 @@ export class BudgetsBudget extends cdktf.TerraformResource {
   // account_id - computed: true, optional: true, required: false
   private _accountId?: string;
   public get accountId() {
-    return this.getStringAttribute('account_id');
+    return this._accountId ?? this.getStringAttribute('account_id');
   }
-  public set accountId(value: string) {
+  public set accountId(value: string | undefined) {
     this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accountIdInput() {
-    return this._accountId
   }
 
   // budget_type - computed: false, optional: false, required: true
   private _budgetType: string;
   public get budgetType() {
-    return this.getStringAttribute('budget_type');
+    return this._budgetType;
   }
   public set budgetType(value: string) {
     this._budgetType = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get budgetTypeInput() {
-    return this._budgetType
-  }
 
   // cost_filters - computed: true, optional: true, required: false
   private _costFilters?: { [key: string]: string }
-  public get costFilters(): { [key: string]: string } {
-    return this.interpolationForAttribute('cost_filters') as any; // Getting the computed value is not yet implemented
+  public get costFilters(): { [key: string]: string } | undefined {
+    return this._costFilters; // Getting the computed value is not yet implemented
   }
-  public set costFilters(value: { [key: string]: string }) {
+  public set costFilters(value: { [key: string]: string } | undefined) {
     this._costFilters = value;
-  }
-  public resetCostFilters() {
-    this._costFilters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get costFiltersInput() {
-    return this._costFilters
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // limit_amount - computed: false, optional: false, required: true
   private _limitAmount: string;
   public get limitAmount() {
-    return this.getStringAttribute('limit_amount');
+    return this._limitAmount;
   }
   public set limitAmount(value: string) {
     this._limitAmount = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitAmountInput() {
-    return this._limitAmount
   }
 
   // limit_unit - computed: false, optional: false, required: true
   private _limitUnit: string;
   public get limitUnit() {
-    return this.getStringAttribute('limit_unit');
+    return this._limitUnit;
   }
   public set limitUnit(value: string) {
     this._limitUnit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get limitUnitInput() {
-    return this._limitUnit
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix ?? this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // time_period_end - computed: false, optional: true, required: false
   private _timePeriodEnd?: string;
   public get timePeriodEnd() {
-    return this.getStringAttribute('time_period_end');
+    return this._timePeriodEnd;
   }
-  public set timePeriodEnd(value: string ) {
+  public set timePeriodEnd(value: string | undefined) {
     this._timePeriodEnd = value;
-  }
-  public resetTimePeriodEnd() {
-    this._timePeriodEnd = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timePeriodEndInput() {
-    return this._timePeriodEnd
   }
 
   // time_period_start - computed: false, optional: false, required: true
   private _timePeriodStart: string;
   public get timePeriodStart() {
-    return this.getStringAttribute('time_period_start');
+    return this._timePeriodStart;
   }
   public set timePeriodStart(value: string) {
     this._timePeriodStart = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timePeriodStartInput() {
-    return this._timePeriodStart
   }
 
   // time_unit - computed: false, optional: false, required: true
   private _timeUnit: string;
   public get timeUnit() {
-    return this.getStringAttribute('time_unit');
+    return this._timeUnit;
   }
   public set timeUnit(value: string) {
     this._timeUnit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeUnitInput() {
-    return this._timeUnit
   }
 
   // cost_types - computed: false, optional: true, required: false
   private _costTypes?: BudgetsBudgetCostTypes[];
   public get costTypes() {
-    return this.interpolationForAttribute('cost_types') as any;
+    return this._costTypes;
   }
-  public set costTypes(value: BudgetsBudgetCostTypes[] ) {
+  public set costTypes(value: BudgetsBudgetCostTypes[] | undefined) {
     this._costTypes = value;
-  }
-  public resetCostTypes() {
-    this._costTypes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get costTypesInput() {
-    return this._costTypes
   }
 
   // notification - computed: false, optional: true, required: false
   private _notification?: BudgetsBudgetNotification[];
   public get notification() {
-    return this.interpolationForAttribute('notification') as any;
+    return this._notification;
   }
-  public set notification(value: BudgetsBudgetNotification[] ) {
+  public set notification(value: BudgetsBudgetNotification[] | undefined) {
     this._notification = value;
-  }
-  public resetNotification() {
-    this._notification = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get notificationInput() {
-    return this._notification
   }
 
   // =========
@@ -300,18 +205,18 @@ export class BudgetsBudget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      budget_type: cdktf.stringToTerraform(this._budgetType),
-      cost_filters: cdktf.hashMapper(cdktf.anyToTerraform)(this._costFilters),
-      limit_amount: cdktf.stringToTerraform(this._limitAmount),
-      limit_unit: cdktf.stringToTerraform(this._limitUnit),
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      time_period_end: cdktf.stringToTerraform(this._timePeriodEnd),
-      time_period_start: cdktf.stringToTerraform(this._timePeriodStart),
-      time_unit: cdktf.stringToTerraform(this._timeUnit),
-      cost_types: cdktf.listMapper(budgetsBudgetCostTypesToTerraform)(this._costTypes),
-      notification: cdktf.listMapper(budgetsBudgetNotificationToTerraform)(this._notification),
+      account_id: this._accountId,
+      budget_type: this._budgetType,
+      cost_filters: this._costFilters,
+      limit_amount: this._limitAmount,
+      limit_unit: this._limitUnit,
+      name: this._name,
+      name_prefix: this._namePrefix,
+      time_period_end: this._timePeriodEnd,
+      time_period_start: this._timePeriodStart,
+      time_unit: this._timeUnit,
+      cost_types: this._costTypes,
+      notification: this._notification,
     };
   }
 }

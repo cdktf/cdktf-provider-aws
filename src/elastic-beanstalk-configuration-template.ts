@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ElasticBeanstalkConfigurationTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticBeanstalkConfigurationTemplateConfig extends TerraformMetaArguments {
   readonly application: string;
   readonly description?: string;
   readonly environmentId?: string;
@@ -22,20 +23,9 @@ export interface ElasticBeanstalkConfigurationTemplateSetting {
   readonly value: string;
 }
 
-function elasticBeanstalkConfigurationTemplateSettingToTerraform(struct?: ElasticBeanstalkConfigurationTemplateSetting): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    resource: cdktf.stringToTerraform(struct!.resource),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
-
 // Resource
 
-export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResource {
+export class ElasticBeanstalkConfigurationTemplate extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -67,96 +57,64 @@ export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResour
   // application - computed: false, optional: false, required: true
   private _application: string;
   public get application() {
-    return this.getStringAttribute('application');
+    return this._application;
   }
   public set application(value: string) {
     this._application = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get applicationInput() {
-    return this._application
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // environment_id - computed: false, optional: true, required: false
   private _environmentId?: string;
   public get environmentId() {
-    return this.getStringAttribute('environment_id');
+    return this._environmentId;
   }
-  public set environmentId(value: string ) {
+  public set environmentId(value: string | undefined) {
     this._environmentId = value;
-  }
-  public resetEnvironmentId() {
-    this._environmentId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get environmentIdInput() {
-    return this._environmentId
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // solution_stack_name - computed: false, optional: true, required: false
   private _solutionStackName?: string;
   public get solutionStackName() {
-    return this.getStringAttribute('solution_stack_name');
+    return this._solutionStackName;
   }
-  public set solutionStackName(value: string ) {
+  public set solutionStackName(value: string | undefined) {
     this._solutionStackName = value;
-  }
-  public resetSolutionStackName() {
-    this._solutionStackName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get solutionStackNameInput() {
-    return this._solutionStackName
   }
 
   // setting - computed: false, optional: true, required: false
   private _setting?: ElasticBeanstalkConfigurationTemplateSetting[];
   public get setting() {
-    return this.interpolationForAttribute('setting') as any;
+    return this._setting;
   }
-  public set setting(value: ElasticBeanstalkConfigurationTemplateSetting[] ) {
+  public set setting(value: ElasticBeanstalkConfigurationTemplateSetting[] | undefined) {
     this._setting = value;
-  }
-  public resetSetting() {
-    this._setting = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get settingInput() {
-    return this._setting
   }
 
   // =========
@@ -165,12 +123,12 @@ export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application: cdktf.stringToTerraform(this._application),
-      description: cdktf.stringToTerraform(this._description),
-      environment_id: cdktf.stringToTerraform(this._environmentId),
-      name: cdktf.stringToTerraform(this._name),
-      solution_stack_name: cdktf.stringToTerraform(this._solutionStackName),
-      setting: cdktf.listMapper(elasticBeanstalkConfigurationTemplateSettingToTerraform)(this._setting),
+      application: this._application,
+      description: this._description,
+      environment_id: this._environmentId,
+      name: this._name,
+      solution_stack_name: this._solutionStackName,
+      setting: this._setting,
     };
   }
 }

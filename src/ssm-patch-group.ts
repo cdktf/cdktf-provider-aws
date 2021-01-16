@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SsmPatchGroupConfig extends cdktf.TerraformMetaArguments {
+export interface SsmPatchGroupConfig extends TerraformMetaArguments {
   readonly baselineId: string;
   readonly patchGroup: string;
 }
 
 // Resource
 
-export class SsmPatchGroup extends cdktf.TerraformResource {
+export class SsmPatchGroup extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class SsmPatchGroup extends cdktf.TerraformResource {
   // baseline_id - computed: false, optional: false, required: true
   private _baselineId: string;
   public get baselineId() {
-    return this.getStringAttribute('baseline_id');
+    return this._baselineId;
   }
   public set baselineId(value: string) {
     this._baselineId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get baselineIdInput() {
-    return this._baselineId
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // patch_group - computed: false, optional: false, required: true
   private _patchGroup: string;
   public get patchGroup() {
-    return this.getStringAttribute('patch_group');
+    return this._patchGroup;
   }
   public set patchGroup(value: string) {
     this._patchGroup = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get patchGroupInput() {
-    return this._patchGroup
   }
 
   // =========
@@ -75,8 +72,8 @@ export class SsmPatchGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      baseline_id: cdktf.stringToTerraform(this._baselineId),
-      patch_group: cdktf.stringToTerraform(this._patchGroup),
+      baseline_id: this._baselineId,
+      patch_group: this._patchGroup,
     };
   }
 }

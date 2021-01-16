@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCodecommitRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCodecommitRepositoryConfig extends TerraformMetaArguments {
   readonly repositoryName: string;
 }
 
 // Resource
 
-export class DataAwsCodecommitRepository extends cdktf.TerraformDataSource {
+export class DataAwsCodecommitRepository extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,27 +37,31 @@ export class DataAwsCodecommitRepository extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // clone_url_http - computed: true, optional: false, required: false
+  // clone_url_http - computed: true, optional: false, required: true
   public get cloneUrlHttp() {
     return this.getStringAttribute('clone_url_http');
   }
 
-  // clone_url_ssh - computed: true, optional: false, required: false
+  // clone_url_ssh - computed: true, optional: false, required: true
   public get cloneUrlSsh() {
     return this.getStringAttribute('clone_url_ssh');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // repository_id - computed: true, optional: false, required: false
+  // repository_id - computed: true, optional: false, required: true
   public get repositoryId() {
     return this.getStringAttribute('repository_id');
   }
@@ -64,14 +69,10 @@ export class DataAwsCodecommitRepository extends cdktf.TerraformDataSource {
   // repository_name - computed: false, optional: false, required: true
   private _repositoryName: string;
   public get repositoryName() {
-    return this.getStringAttribute('repository_name');
+    return this._repositoryName;
   }
   public set repositoryName(value: string) {
     this._repositoryName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get repositoryNameInput() {
-    return this._repositoryName
   }
 
   // =========
@@ -80,7 +81,7 @@ export class DataAwsCodecommitRepository extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      repository_name: cdktf.stringToTerraform(this._repositoryName),
+      repository_name: this._repositoryName,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ElastictranscoderPipelineConfig extends cdktf.TerraformMetaArguments {
+export interface ElastictranscoderPipelineConfig extends TerraformMetaArguments {
   readonly awsKmsKeyArn?: string;
   readonly inputBucket: string;
   readonly name?: string;
@@ -27,79 +28,30 @@ export interface ElastictranscoderPipelineContentConfig {
   readonly bucket?: string;
   readonly storageClass?: string;
 }
-
-function elastictranscoderPipelineContentConfigToTerraform(struct?: ElastictranscoderPipelineContentConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
-  }
-}
-
 export interface ElastictranscoderPipelineContentConfigPermissions {
   readonly access?: string[];
   readonly grantee?: string;
   readonly granteeType?: string;
 }
-
-function elastictranscoderPipelineContentConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineContentConfigPermissions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    access: cdktf.listMapper(cdktf.stringToTerraform)(struct!.access),
-    grantee: cdktf.stringToTerraform(struct!.grantee),
-    grantee_type: cdktf.stringToTerraform(struct!.granteeType),
-  }
-}
-
 export interface ElastictranscoderPipelineNotifications {
   readonly completed?: string;
   readonly error?: string;
   readonly progressing?: string;
   readonly warning?: string;
 }
-
-function elastictranscoderPipelineNotificationsToTerraform(struct?: ElastictranscoderPipelineNotifications): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    completed: cdktf.stringToTerraform(struct!.completed),
-    error: cdktf.stringToTerraform(struct!.error),
-    progressing: cdktf.stringToTerraform(struct!.progressing),
-    warning: cdktf.stringToTerraform(struct!.warning),
-  }
-}
-
 export interface ElastictranscoderPipelineThumbnailConfig {
   readonly bucket?: string;
   readonly storageClass?: string;
 }
-
-function elastictranscoderPipelineThumbnailConfigToTerraform(struct?: ElastictranscoderPipelineThumbnailConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
-  }
-}
-
 export interface ElastictranscoderPipelineThumbnailConfigPermissions {
   readonly access?: string[];
   readonly grantee?: string;
   readonly granteeType?: string;
 }
 
-function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(struct?: ElastictranscoderPipelineThumbnailConfigPermissions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    access: cdktf.listMapper(cdktf.stringToTerraform)(struct!.access),
-    grantee: cdktf.stringToTerraform(struct!.grantee),
-    grantee_type: cdktf.stringToTerraform(struct!.granteeType),
-  }
-}
-
-
 // Resource
 
-export class ElastictranscoderPipeline extends cdktf.TerraformResource {
+export class ElastictranscoderPipeline extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -132,7 +84,7 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -140,160 +92,100 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
   // aws_kms_key_arn - computed: false, optional: true, required: false
   private _awsKmsKeyArn?: string;
   public get awsKmsKeyArn() {
-    return this.getStringAttribute('aws_kms_key_arn');
+    return this._awsKmsKeyArn;
   }
-  public set awsKmsKeyArn(value: string ) {
+  public set awsKmsKeyArn(value: string | undefined) {
     this._awsKmsKeyArn = value;
-  }
-  public resetAwsKmsKeyArn() {
-    this._awsKmsKeyArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get awsKmsKeyArnInput() {
-    return this._awsKmsKeyArn
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // input_bucket - computed: false, optional: false, required: true
   private _inputBucket: string;
   public get inputBucket() {
-    return this.getStringAttribute('input_bucket');
+    return this._inputBucket;
   }
   public set inputBucket(value: string) {
     this._inputBucket = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputBucketInput() {
-    return this._inputBucket
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // output_bucket - computed: true, optional: true, required: false
   private _outputBucket?: string;
   public get outputBucket() {
-    return this.getStringAttribute('output_bucket');
+    return this._outputBucket ?? this.getStringAttribute('output_bucket');
   }
-  public set outputBucket(value: string) {
+  public set outputBucket(value: string | undefined) {
     this._outputBucket = value;
-  }
-  public resetOutputBucket() {
-    this._outputBucket = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get outputBucketInput() {
-    return this._outputBucket
   }
 
   // role - computed: false, optional: false, required: true
   private _role: string;
   public get role() {
-    return this.getStringAttribute('role');
+    return this._role;
   }
   public set role(value: string) {
     this._role = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleInput() {
-    return this._role
   }
 
   // content_config - computed: false, optional: true, required: false
   private _contentConfig?: ElastictranscoderPipelineContentConfig[];
   public get contentConfig() {
-    return this.interpolationForAttribute('content_config') as any;
+    return this._contentConfig;
   }
-  public set contentConfig(value: ElastictranscoderPipelineContentConfig[] ) {
+  public set contentConfig(value: ElastictranscoderPipelineContentConfig[] | undefined) {
     this._contentConfig = value;
-  }
-  public resetContentConfig() {
-    this._contentConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contentConfigInput() {
-    return this._contentConfig
   }
 
   // content_config_permissions - computed: false, optional: true, required: false
   private _contentConfigPermissions?: ElastictranscoderPipelineContentConfigPermissions[];
   public get contentConfigPermissions() {
-    return this.interpolationForAttribute('content_config_permissions') as any;
+    return this._contentConfigPermissions;
   }
-  public set contentConfigPermissions(value: ElastictranscoderPipelineContentConfigPermissions[] ) {
+  public set contentConfigPermissions(value: ElastictranscoderPipelineContentConfigPermissions[] | undefined) {
     this._contentConfigPermissions = value;
-  }
-  public resetContentConfigPermissions() {
-    this._contentConfigPermissions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contentConfigPermissionsInput() {
-    return this._contentConfigPermissions
   }
 
   // notifications - computed: false, optional: true, required: false
   private _notifications?: ElastictranscoderPipelineNotifications[];
   public get notifications() {
-    return this.interpolationForAttribute('notifications') as any;
+    return this._notifications;
   }
-  public set notifications(value: ElastictranscoderPipelineNotifications[] ) {
+  public set notifications(value: ElastictranscoderPipelineNotifications[] | undefined) {
     this._notifications = value;
-  }
-  public resetNotifications() {
-    this._notifications = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get notificationsInput() {
-    return this._notifications
   }
 
   // thumbnail_config - computed: false, optional: true, required: false
   private _thumbnailConfig?: ElastictranscoderPipelineThumbnailConfig[];
   public get thumbnailConfig() {
-    return this.interpolationForAttribute('thumbnail_config') as any;
+    return this._thumbnailConfig;
   }
-  public set thumbnailConfig(value: ElastictranscoderPipelineThumbnailConfig[] ) {
+  public set thumbnailConfig(value: ElastictranscoderPipelineThumbnailConfig[] | undefined) {
     this._thumbnailConfig = value;
-  }
-  public resetThumbnailConfig() {
-    this._thumbnailConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thumbnailConfigInput() {
-    return this._thumbnailConfig
   }
 
   // thumbnail_config_permissions - computed: false, optional: true, required: false
   private _thumbnailConfigPermissions?: ElastictranscoderPipelineThumbnailConfigPermissions[];
   public get thumbnailConfigPermissions() {
-    return this.interpolationForAttribute('thumbnail_config_permissions') as any;
+    return this._thumbnailConfigPermissions;
   }
-  public set thumbnailConfigPermissions(value: ElastictranscoderPipelineThumbnailConfigPermissions[] ) {
+  public set thumbnailConfigPermissions(value: ElastictranscoderPipelineThumbnailConfigPermissions[] | undefined) {
     this._thumbnailConfigPermissions = value;
-  }
-  public resetThumbnailConfigPermissions() {
-    this._thumbnailConfigPermissions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thumbnailConfigPermissionsInput() {
-    return this._thumbnailConfigPermissions
   }
 
   // =========
@@ -302,16 +194,16 @@ export class ElastictranscoderPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_kms_key_arn: cdktf.stringToTerraform(this._awsKmsKeyArn),
-      input_bucket: cdktf.stringToTerraform(this._inputBucket),
-      name: cdktf.stringToTerraform(this._name),
-      output_bucket: cdktf.stringToTerraform(this._outputBucket),
-      role: cdktf.stringToTerraform(this._role),
-      content_config: cdktf.listMapper(elastictranscoderPipelineContentConfigToTerraform)(this._contentConfig),
-      content_config_permissions: cdktf.listMapper(elastictranscoderPipelineContentConfigPermissionsToTerraform)(this._contentConfigPermissions),
-      notifications: cdktf.listMapper(elastictranscoderPipelineNotificationsToTerraform)(this._notifications),
-      thumbnail_config: cdktf.listMapper(elastictranscoderPipelineThumbnailConfigToTerraform)(this._thumbnailConfig),
-      thumbnail_config_permissions: cdktf.listMapper(elastictranscoderPipelineThumbnailConfigPermissionsToTerraform)(this._thumbnailConfigPermissions),
+      aws_kms_key_arn: this._awsKmsKeyArn,
+      input_bucket: this._inputBucket,
+      name: this._name,
+      output_bucket: this._outputBucket,
+      role: this._role,
+      content_config: this._contentConfig,
+      content_config_permissions: this._contentConfigPermissions,
+      notifications: this._notifications,
+      thumbnail_config: this._thumbnailConfig,
+      thumbnail_config_permissions: this._thumbnailConfigPermissions,
     };
   }
 }

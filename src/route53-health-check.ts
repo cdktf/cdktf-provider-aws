@@ -2,15 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
+export interface Route53HealthCheckConfig extends TerraformMetaArguments {
   readonly childHealthThreshold?: number;
   readonly childHealthchecks?: string[];
   readonly cloudwatchAlarmName?: string;
   readonly cloudwatchAlarmRegion?: string;
+  readonly disabled?: boolean;
   readonly enableSni?: boolean;
   readonly failureThreshold?: number;
   readonly fqdn?: string;
@@ -30,7 +32,7 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class Route53HealthCheck extends cdktf.TerraformResource {
+export class Route53HealthCheck extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -51,6 +53,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
     this._childHealthchecks = config.childHealthchecks;
     this._cloudwatchAlarmName = config.cloudwatchAlarmName;
     this._cloudwatchAlarmRegion = config.cloudwatchAlarmRegion;
+    this._disabled = config.disabled;
     this._enableSni = config.enableSni;
     this._failureThreshold = config.failureThreshold;
     this._fqdn = config.fqdn;
@@ -75,307 +78,190 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // child_health_threshold - computed: false, optional: true, required: false
   private _childHealthThreshold?: number;
   public get childHealthThreshold() {
-    return this.getNumberAttribute('child_health_threshold');
+    return this._childHealthThreshold;
   }
-  public set childHealthThreshold(value: number ) {
+  public set childHealthThreshold(value: number | undefined) {
     this._childHealthThreshold = value;
-  }
-  public resetChildHealthThreshold() {
-    this._childHealthThreshold = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get childHealthThresholdInput() {
-    return this._childHealthThreshold
   }
 
   // child_healthchecks - computed: false, optional: true, required: false
   private _childHealthchecks?: string[];
   public get childHealthchecks() {
-    return this.getListAttribute('child_healthchecks');
+    return this._childHealthchecks;
   }
-  public set childHealthchecks(value: string[] ) {
+  public set childHealthchecks(value: string[] | undefined) {
     this._childHealthchecks = value;
-  }
-  public resetChildHealthchecks() {
-    this._childHealthchecks = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get childHealthchecksInput() {
-    return this._childHealthchecks
   }
 
   // cloudwatch_alarm_name - computed: false, optional: true, required: false
   private _cloudwatchAlarmName?: string;
   public get cloudwatchAlarmName() {
-    return this.getStringAttribute('cloudwatch_alarm_name');
+    return this._cloudwatchAlarmName;
   }
-  public set cloudwatchAlarmName(value: string ) {
+  public set cloudwatchAlarmName(value: string | undefined) {
     this._cloudwatchAlarmName = value;
-  }
-  public resetCloudwatchAlarmName() {
-    this._cloudwatchAlarmName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cloudwatchAlarmNameInput() {
-    return this._cloudwatchAlarmName
   }
 
   // cloudwatch_alarm_region - computed: false, optional: true, required: false
   private _cloudwatchAlarmRegion?: string;
   public get cloudwatchAlarmRegion() {
-    return this.getStringAttribute('cloudwatch_alarm_region');
+    return this._cloudwatchAlarmRegion;
   }
-  public set cloudwatchAlarmRegion(value: string ) {
+  public set cloudwatchAlarmRegion(value: string | undefined) {
     this._cloudwatchAlarmRegion = value;
   }
-  public resetCloudwatchAlarmRegion() {
-    this._cloudwatchAlarmRegion = undefined;
+
+  // disabled - computed: false, optional: true, required: false
+  private _disabled?: boolean;
+  public get disabled() {
+    return this._disabled;
   }
-  // Temporarily expose input value. Use with caution.
-  public get cloudwatchAlarmRegionInput() {
-    return this._cloudwatchAlarmRegion
+  public set disabled(value: boolean | undefined) {
+    this._disabled = value;
   }
 
   // enable_sni - computed: true, optional: true, required: false
   private _enableSni?: boolean;
   public get enableSni() {
-    return this.getBooleanAttribute('enable_sni');
+    return this._enableSni ?? this.getBooleanAttribute('enable_sni');
   }
-  public set enableSni(value: boolean) {
+  public set enableSni(value: boolean | undefined) {
     this._enableSni = value;
-  }
-  public resetEnableSni() {
-    this._enableSni = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableSniInput() {
-    return this._enableSni
   }
 
   // failure_threshold - computed: false, optional: true, required: false
   private _failureThreshold?: number;
   public get failureThreshold() {
-    return this.getNumberAttribute('failure_threshold');
+    return this._failureThreshold;
   }
-  public set failureThreshold(value: number ) {
+  public set failureThreshold(value: number | undefined) {
     this._failureThreshold = value;
-  }
-  public resetFailureThreshold() {
-    this._failureThreshold = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get failureThresholdInput() {
-    return this._failureThreshold
   }
 
   // fqdn - computed: false, optional: true, required: false
   private _fqdn?: string;
   public get fqdn() {
-    return this.getStringAttribute('fqdn');
+    return this._fqdn;
   }
-  public set fqdn(value: string ) {
+  public set fqdn(value: string | undefined) {
     this._fqdn = value;
-  }
-  public resetFqdn() {
-    this._fqdn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fqdnInput() {
-    return this._fqdn
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // insufficient_data_health_status - computed: false, optional: true, required: false
   private _insufficientDataHealthStatus?: string;
   public get insufficientDataHealthStatus() {
-    return this.getStringAttribute('insufficient_data_health_status');
+    return this._insufficientDataHealthStatus;
   }
-  public set insufficientDataHealthStatus(value: string ) {
+  public set insufficientDataHealthStatus(value: string | undefined) {
     this._insufficientDataHealthStatus = value;
-  }
-  public resetInsufficientDataHealthStatus() {
-    this._insufficientDataHealthStatus = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get insufficientDataHealthStatusInput() {
-    return this._insufficientDataHealthStatus
   }
 
   // invert_healthcheck - computed: false, optional: true, required: false
   private _invertHealthcheck?: boolean;
   public get invertHealthcheck() {
-    return this.getBooleanAttribute('invert_healthcheck');
+    return this._invertHealthcheck;
   }
-  public set invertHealthcheck(value: boolean ) {
+  public set invertHealthcheck(value: boolean | undefined) {
     this._invertHealthcheck = value;
-  }
-  public resetInvertHealthcheck() {
-    this._invertHealthcheck = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get invertHealthcheckInput() {
-    return this._invertHealthcheck
   }
 
   // ip_address - computed: false, optional: true, required: false
   private _ipAddress?: string;
   public get ipAddress() {
-    return this.getStringAttribute('ip_address');
+    return this._ipAddress;
   }
-  public set ipAddress(value: string ) {
+  public set ipAddress(value: string | undefined) {
     this._ipAddress = value;
-  }
-  public resetIpAddress() {
-    this._ipAddress = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipAddressInput() {
-    return this._ipAddress
   }
 
   // measure_latency - computed: false, optional: true, required: false
   private _measureLatency?: boolean;
   public get measureLatency() {
-    return this.getBooleanAttribute('measure_latency');
+    return this._measureLatency;
   }
-  public set measureLatency(value: boolean ) {
+  public set measureLatency(value: boolean | undefined) {
     this._measureLatency = value;
-  }
-  public resetMeasureLatency() {
-    this._measureLatency = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get measureLatencyInput() {
-    return this._measureLatency
   }
 
   // port - computed: false, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this.getNumberAttribute('port');
+    return this._port;
   }
-  public set port(value: number ) {
+  public set port(value: number | undefined) {
     this._port = value;
-  }
-  public resetPort() {
-    this._port = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get portInput() {
-    return this._port
   }
 
   // reference_name - computed: false, optional: true, required: false
   private _referenceName?: string;
   public get referenceName() {
-    return this.getStringAttribute('reference_name');
+    return this._referenceName;
   }
-  public set referenceName(value: string ) {
+  public set referenceName(value: string | undefined) {
     this._referenceName = value;
-  }
-  public resetReferenceName() {
-    this._referenceName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get referenceNameInput() {
-    return this._referenceName
   }
 
   // regions - computed: false, optional: true, required: false
   private _regions?: string[];
   public get regions() {
-    return this.getListAttribute('regions');
+    return this._regions;
   }
-  public set regions(value: string[] ) {
+  public set regions(value: string[] | undefined) {
     this._regions = value;
-  }
-  public resetRegions() {
-    this._regions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionsInput() {
-    return this._regions
   }
 
   // request_interval - computed: false, optional: true, required: false
   private _requestInterval?: number;
   public get requestInterval() {
-    return this.getNumberAttribute('request_interval');
+    return this._requestInterval;
   }
-  public set requestInterval(value: number ) {
+  public set requestInterval(value: number | undefined) {
     this._requestInterval = value;
-  }
-  public resetRequestInterval() {
-    this._requestInterval = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestIntervalInput() {
-    return this._requestInterval
   }
 
   // resource_path - computed: false, optional: true, required: false
   private _resourcePath?: string;
   public get resourcePath() {
-    return this.getStringAttribute('resource_path');
+    return this._resourcePath;
   }
-  public set resourcePath(value: string ) {
+  public set resourcePath(value: string | undefined) {
     this._resourcePath = value;
-  }
-  public resetResourcePath() {
-    this._resourcePath = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourcePathInput() {
-    return this._resourcePath
   }
 
   // search_string - computed: false, optional: true, required: false
   private _searchString?: string;
   public get searchString() {
-    return this.getStringAttribute('search_string');
+    return this._searchString;
   }
-  public set searchString(value: string ) {
+  public set searchString(value: string | undefined) {
     this._searchString = value;
-  }
-  public resetSearchString() {
-    this._searchString = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get searchStringInput() {
-    return this._searchString
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this.getStringAttribute('type');
+    return this._type;
   }
   public set type(value: string) {
     this._type = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type
   }
 
   // =========
@@ -384,25 +270,26 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      child_health_threshold: cdktf.numberToTerraform(this._childHealthThreshold),
-      child_healthchecks: cdktf.listMapper(cdktf.stringToTerraform)(this._childHealthchecks),
-      cloudwatch_alarm_name: cdktf.stringToTerraform(this._cloudwatchAlarmName),
-      cloudwatch_alarm_region: cdktf.stringToTerraform(this._cloudwatchAlarmRegion),
-      enable_sni: cdktf.booleanToTerraform(this._enableSni),
-      failure_threshold: cdktf.numberToTerraform(this._failureThreshold),
-      fqdn: cdktf.stringToTerraform(this._fqdn),
-      insufficient_data_health_status: cdktf.stringToTerraform(this._insufficientDataHealthStatus),
-      invert_healthcheck: cdktf.booleanToTerraform(this._invertHealthcheck),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      measure_latency: cdktf.booleanToTerraform(this._measureLatency),
-      port: cdktf.numberToTerraform(this._port),
-      reference_name: cdktf.stringToTerraform(this._referenceName),
-      regions: cdktf.listMapper(cdktf.stringToTerraform)(this._regions),
-      request_interval: cdktf.numberToTerraform(this._requestInterval),
-      resource_path: cdktf.stringToTerraform(this._resourcePath),
-      search_string: cdktf.stringToTerraform(this._searchString),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
+      child_health_threshold: this._childHealthThreshold,
+      child_healthchecks: this._childHealthchecks,
+      cloudwatch_alarm_name: this._cloudwatchAlarmName,
+      cloudwatch_alarm_region: this._cloudwatchAlarmRegion,
+      disabled: this._disabled,
+      enable_sni: this._enableSni,
+      failure_threshold: this._failureThreshold,
+      fqdn: this._fqdn,
+      insufficient_data_health_status: this._insufficientDataHealthStatus,
+      invert_healthcheck: this._invertHealthcheck,
+      ip_address: this._ipAddress,
+      measure_latency: this._measureLatency,
+      port: this._port,
+      reference_name: this._referenceName,
+      regions: this._regions,
+      request_interval: this._requestInterval,
+      resource_path: this._resourcePath,
+      search_string: this._searchString,
+      tags: this._tags,
+      type: this._type,
     };
   }
 }

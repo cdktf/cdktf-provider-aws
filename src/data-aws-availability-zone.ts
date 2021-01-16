@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAvailabilityZoneConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsAvailabilityZoneConfig extends TerraformMetaArguments {
   readonly allAvailabilityZones?: boolean;
   readonly name?: string;
   readonly state?: string;
@@ -19,18 +20,9 @@ export interface DataAwsAvailabilityZoneFilter {
   readonly values: string[];
 }
 
-function dataAwsAvailabilityZoneFilterToTerraform(struct?: DataAwsAvailabilityZoneFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
+export class DataAwsAvailabilityZone extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -61,61 +53,61 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
   // all_availability_zones - computed: false, optional: true, required: false
   private _allAvailabilityZones?: boolean;
   public get allAvailabilityZones() {
-    return this.getBooleanAttribute('all_availability_zones');
+    return this._allAvailabilityZones;
   }
-  public set allAvailabilityZones(value: boolean ) {
+  public set allAvailabilityZones(value: boolean | undefined) {
     this._allAvailabilityZones = value;
   }
-  public resetAllAvailabilityZones() {
-    this._allAvailabilityZones = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allAvailabilityZonesInput() {
-    return this._allAvailabilityZones
-  }
 
-  // group_name - computed: true, optional: false, required: false
+  // group_name - computed: true, optional: false, required: true
   public get groupName() {
     return this.getStringAttribute('group_name');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // name_suffix - computed: true, optional: false, required: false
+  // name_suffix - computed: true, optional: false, required: true
   public get nameSuffix() {
     return this.getStringAttribute('name_suffix');
   }
 
-  // network_border_group - computed: true, optional: false, required: false
+  // network_border_group - computed: true, optional: false, required: true
   public get networkBorderGroup() {
     return this.getStringAttribute('network_border_group');
   }
 
-  // opt_in_status - computed: true, optional: false, required: false
+  // opt_in_status - computed: true, optional: false, required: true
   public get optInStatus() {
     return this.getStringAttribute('opt_in_status');
   }
 
-  // region - computed: true, optional: false, required: false
+  // parent_zone_id - computed: true, optional: false, required: true
+  public get parentZoneId() {
+    return this.getStringAttribute('parent_zone_id');
+  }
+
+  // parent_zone_name - computed: true, optional: false, required: true
+  public get parentZoneName() {
+    return this.getStringAttribute('parent_zone_name');
+  }
+
+  // region - computed: true, optional: false, required: true
   public get region() {
     return this.getStringAttribute('region');
   }
@@ -123,49 +115,33 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
   // state - computed: true, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this.getStringAttribute('state');
+    return this._state ?? this.getStringAttribute('state');
   }
-  public set state(value: string) {
+  public set state(value: string | undefined) {
     this._state = value;
-  }
-  public resetState() {
-    this._state = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stateInput() {
-    return this._state
   }
 
   // zone_id - computed: true, optional: true, required: false
   private _zoneId?: string;
   public get zoneId() {
-    return this.getStringAttribute('zone_id');
+    return this._zoneId ?? this.getStringAttribute('zone_id');
   }
-  public set zoneId(value: string) {
+  public set zoneId(value: string | undefined) {
     this._zoneId = value;
   }
-  public resetZoneId() {
-    this._zoneId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get zoneIdInput() {
-    return this._zoneId
+
+  // zone_type - computed: true, optional: false, required: true
+  public get zoneType() {
+    return this.getStringAttribute('zone_type');
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsAvailabilityZoneFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsAvailabilityZoneFilter[] ) {
+  public set filter(value: DataAwsAvailabilityZoneFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -174,11 +150,11 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_availability_zones: cdktf.booleanToTerraform(this._allAvailabilityZones),
-      name: cdktf.stringToTerraform(this._name),
-      state: cdktf.stringToTerraform(this._state),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
-      filter: cdktf.listMapper(dataAwsAvailabilityZoneFilterToTerraform)(this._filter),
+      all_availability_zones: this._allAvailabilityZones,
+      name: this._name,
+      state: this._state,
+      zone_id: this._zoneId,
+      filter: this._filter,
     };
   }
 }

@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsBackupSelectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsBackupSelectionConfig extends TerraformMetaArguments {
   readonly planId: string;
   readonly selectionId: string;
 }
 
 // Resource
 
-export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
+export class DataAwsBackupSelection extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,17 +39,21 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // iam_role_arn - computed: true, optional: false, required: false
+  // iam_role_arn - computed: true, optional: false, required: true
   public get iamRoleArn() {
     return this.getStringAttribute('iam_role_arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -56,17 +61,13 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
   // plan_id - computed: false, optional: false, required: true
   private _planId: string;
   public get planId() {
-    return this.getStringAttribute('plan_id');
+    return this._planId;
   }
   public set planId(value: string) {
     this._planId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get planIdInput() {
-    return this._planId
-  }
 
-  // resources - computed: true, optional: false, required: false
+  // resources - computed: true, optional: false, required: true
   public get resources() {
     return this.getListAttribute('resources');
   }
@@ -74,14 +75,10 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
   // selection_id - computed: false, optional: false, required: true
   private _selectionId: string;
   public get selectionId() {
-    return this.getStringAttribute('selection_id');
+    return this._selectionId;
   }
   public set selectionId(value: string) {
     this._selectionId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get selectionIdInput() {
-    return this._selectionId
   }
 
   // =========
@@ -90,8 +87,8 @@ export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      plan_id: cdktf.stringToTerraform(this._planId),
-      selection_id: cdktf.stringToTerraform(this._selectionId),
+      plan_id: this._planId,
+      selection_id: this._selectionId,
     };
   }
 }

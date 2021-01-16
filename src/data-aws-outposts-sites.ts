@@ -2,16 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsSitesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOutpostsSitesConfig extends TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsOutpostsSites extends cdktf.TerraformDataSource {
+export class DataAwsOutpostsSites extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -35,11 +36,15 @@ export class DataAwsOutpostsSites extends cdktf.TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // ids - computed: true, optional: false, required: false
+  // ids - computed: true, optional: false, required: true
   public get ids() {
     return this.getListAttribute('ids');
   }

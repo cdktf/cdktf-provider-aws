@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { StringMap } from "cdktf";
 
 // Configuration
 
-export interface CloudformationStackConfig extends cdktf.TerraformMetaArguments {
+export interface CloudformationStackConfig extends TerraformMetaArguments {
   readonly capabilities?: string[];
   readonly disableRollback?: boolean;
   readonly iamRoleArn?: string;
@@ -29,19 +31,9 @@ export interface CloudformationStackTimeouts {
   readonly update?: string;
 }
 
-function cloudformationStackTimeoutsToTerraform(struct?: CloudformationStackTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class CloudformationStack extends cdktf.TerraformResource {
+export class CloudformationStack extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -81,232 +73,141 @@ export class CloudformationStack extends cdktf.TerraformResource {
   // capabilities - computed: false, optional: true, required: false
   private _capabilities?: string[];
   public get capabilities() {
-    return this.getListAttribute('capabilities');
+    return this._capabilities;
   }
-  public set capabilities(value: string[] ) {
+  public set capabilities(value: string[] | undefined) {
     this._capabilities = value;
-  }
-  public resetCapabilities() {
-    this._capabilities = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get capabilitiesInput() {
-    return this._capabilities
   }
 
   // disable_rollback - computed: false, optional: true, required: false
   private _disableRollback?: boolean;
   public get disableRollback() {
-    return this.getBooleanAttribute('disable_rollback');
+    return this._disableRollback;
   }
-  public set disableRollback(value: boolean ) {
+  public set disableRollback(value: boolean | undefined) {
     this._disableRollback = value;
-  }
-  public resetDisableRollback() {
-    this._disableRollback = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get disableRollbackInput() {
-    return this._disableRollback
   }
 
   // iam_role_arn - computed: false, optional: true, required: false
   private _iamRoleArn?: string;
   public get iamRoleArn() {
-    return this.getStringAttribute('iam_role_arn');
+    return this._iamRoleArn;
   }
-  public set iamRoleArn(value: string ) {
+  public set iamRoleArn(value: string | undefined) {
     this._iamRoleArn = value;
-  }
-  public resetIamRoleArn() {
-    this._iamRoleArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get iamRoleArnInput() {
-    return this._iamRoleArn
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // notification_arns - computed: false, optional: true, required: false
   private _notificationArns?: string[];
   public get notificationArns() {
-    return this.getListAttribute('notification_arns');
+    return this._notificationArns;
   }
-  public set notificationArns(value: string[] ) {
+  public set notificationArns(value: string[] | undefined) {
     this._notificationArns = value;
-  }
-  public resetNotificationArns() {
-    this._notificationArns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get notificationArnsInput() {
-    return this._notificationArns
   }
 
   // on_failure - computed: false, optional: true, required: false
   private _onFailure?: string;
   public get onFailure() {
-    return this.getStringAttribute('on_failure');
+    return this._onFailure;
   }
-  public set onFailure(value: string ) {
+  public set onFailure(value: string | undefined) {
     this._onFailure = value;
   }
-  public resetOnFailure() {
-    this._onFailure = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get onFailureInput() {
-    return this._onFailure
-  }
 
-  // outputs - computed: true, optional: false, required: false
+  // outputs - computed: true, optional: false, required: true
   public outputs(key: string): string {
-    return new cdktf.StringMap(this, 'outputs').lookup(key);
+    return new StringMap(this, 'outputs').lookup(key);
   }
 
   // parameters - computed: true, optional: true, required: false
   private _parameters?: { [key: string]: string }
-  public get parameters(): { [key: string]: string } {
-    return this.interpolationForAttribute('parameters') as any; // Getting the computed value is not yet implemented
+  public get parameters(): { [key: string]: string } | undefined {
+    return this._parameters; // Getting the computed value is not yet implemented
   }
-  public set parameters(value: { [key: string]: string }) {
+  public set parameters(value: { [key: string]: string } | undefined) {
     this._parameters = value;
-  }
-  public resetParameters() {
-    this._parameters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parametersInput() {
-    return this._parameters
   }
 
   // policy_body - computed: true, optional: true, required: false
   private _policyBody?: string;
   public get policyBody() {
-    return this.getStringAttribute('policy_body');
+    return this._policyBody ?? this.getStringAttribute('policy_body');
   }
-  public set policyBody(value: string) {
+  public set policyBody(value: string | undefined) {
     this._policyBody = value;
-  }
-  public resetPolicyBody() {
-    this._policyBody = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyBodyInput() {
-    return this._policyBody
   }
 
   // policy_url - computed: false, optional: true, required: false
   private _policyUrl?: string;
   public get policyUrl() {
-    return this.getStringAttribute('policy_url');
+    return this._policyUrl;
   }
-  public set policyUrl(value: string ) {
+  public set policyUrl(value: string | undefined) {
     this._policyUrl = value;
-  }
-  public resetPolicyUrl() {
-    this._policyUrl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyUrlInput() {
-    return this._policyUrl
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // template_body - computed: true, optional: true, required: false
   private _templateBody?: string;
   public get templateBody() {
-    return this.getStringAttribute('template_body');
+    return this._templateBody ?? this.getStringAttribute('template_body');
   }
-  public set templateBody(value: string) {
+  public set templateBody(value: string | undefined) {
     this._templateBody = value;
-  }
-  public resetTemplateBody() {
-    this._templateBody = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get templateBodyInput() {
-    return this._templateBody
   }
 
   // template_url - computed: false, optional: true, required: false
   private _templateUrl?: string;
   public get templateUrl() {
-    return this.getStringAttribute('template_url');
+    return this._templateUrl;
   }
-  public set templateUrl(value: string ) {
+  public set templateUrl(value: string | undefined) {
     this._templateUrl = value;
-  }
-  public resetTemplateUrl() {
-    this._templateUrl = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get templateUrlInput() {
-    return this._templateUrl
   }
 
   // timeout_in_minutes - computed: false, optional: true, required: false
   private _timeoutInMinutes?: number;
   public get timeoutInMinutes() {
-    return this.getNumberAttribute('timeout_in_minutes');
+    return this._timeoutInMinutes;
   }
-  public set timeoutInMinutes(value: number ) {
+  public set timeoutInMinutes(value: number | undefined) {
     this._timeoutInMinutes = value;
-  }
-  public resetTimeoutInMinutes() {
-    this._timeoutInMinutes = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutInMinutesInput() {
-    return this._timeoutInMinutes
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: CloudformationStackTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: CloudformationStackTimeouts ) {
+  public set timeouts(value: CloudformationStackTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -315,20 +216,20 @@ export class CloudformationStack extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._capabilities),
-      disable_rollback: cdktf.booleanToTerraform(this._disableRollback),
-      iam_role_arn: cdktf.stringToTerraform(this._iamRoleArn),
-      name: cdktf.stringToTerraform(this._name),
-      notification_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationArns),
-      on_failure: cdktf.stringToTerraform(this._onFailure),
-      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
-      policy_body: cdktf.stringToTerraform(this._policyBody),
-      policy_url: cdktf.stringToTerraform(this._policyUrl),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      template_body: cdktf.stringToTerraform(this._templateBody),
-      template_url: cdktf.stringToTerraform(this._templateUrl),
-      timeout_in_minutes: cdktf.numberToTerraform(this._timeoutInMinutes),
-      timeouts: cloudformationStackTimeoutsToTerraform(this._timeouts),
+      capabilities: this._capabilities,
+      disable_rollback: this._disableRollback,
+      iam_role_arn: this._iamRoleArn,
+      name: this._name,
+      notification_arns: this._notificationArns,
+      on_failure: this._onFailure,
+      parameters: this._parameters,
+      policy_body: this._policyBody,
+      policy_url: this._policyUrl,
+      tags: this._tags,
+      template_body: this._templateBody,
+      template_url: this._templateUrl,
+      timeout_in_minutes: this._timeoutInMinutes,
+      timeouts: this._timeouts,
     };
   }
 }

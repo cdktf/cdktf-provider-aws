@@ -2,19 +2,22 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface GlueWorkflowConfig extends cdktf.TerraformMetaArguments {
+export interface GlueWorkflowConfig extends TerraformMetaArguments {
   readonly defaultRunProperties?: { [key: string]: string };
   readonly description?: string;
+  readonly maxConcurrentRuns?: number;
   readonly name?: string;
+  readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class GlueWorkflow extends cdktf.TerraformResource {
+export class GlueWorkflow extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -33,64 +36,72 @@ export class GlueWorkflow extends cdktf.TerraformResource {
     });
     this._defaultRunProperties = config.defaultRunProperties;
     this._description = config.description;
+    this._maxConcurrentRuns = config.maxConcurrentRuns;
     this._name = config.name;
+    this._tags = config.tags;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: true
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // default_run_properties - computed: false, optional: true, required: false
   private _defaultRunProperties?: { [key: string]: string };
   public get defaultRunProperties() {
-    return this.interpolationForAttribute('default_run_properties') as any;
+    return this._defaultRunProperties;
   }
-  public set defaultRunProperties(value: { [key: string]: string } ) {
+  public set defaultRunProperties(value: { [key: string]: string } | undefined) {
     this._defaultRunProperties = value;
-  }
-  public resetDefaultRunProperties() {
-    this._defaultRunProperties = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get defaultRunPropertiesInput() {
-    return this._defaultRunProperties
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
+  }
+
+  // max_concurrent_runs - computed: false, optional: true, required: false
+  private _maxConcurrentRuns?: number;
+  public get maxConcurrentRuns() {
+    return this._maxConcurrentRuns;
+  }
+  public set maxConcurrentRuns(value: number | undefined) {
+    this._maxConcurrentRuns = value;
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this._tags;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
+  public set tags(value: { [key: string]: string } | undefined) {
+    this._tags = value;
   }
 
   // =========
@@ -99,9 +110,11 @@ export class GlueWorkflow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_run_properties: cdktf.hashMapper(cdktf.anyToTerraform)(this._defaultRunProperties),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
+      default_run_properties: this._defaultRunProperties,
+      description: this._description,
+      max_concurrent_runs: this._maxConcurrentRuns,
+      name: this._name,
+      tags: this._tags,
     };
   }
 }

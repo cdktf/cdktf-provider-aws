@@ -2,43 +2,45 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface MediaPackageChannelConfig extends cdktf.TerraformMetaArguments {
+export interface MediaPackageChannelConfig extends TerraformMetaArguments {
   readonly channelId: string;
   readonly description?: string;
   readonly tags?: { [key: string]: string };
 }
-export class MediaPackageChannelHlsIngestIngestEndpoints extends cdktf.ComplexComputedList {
+export class MediaPackageChannelHlsIngestIngestEndpoints extends ComplexComputedList {
 
-  // password - computed: true, optional: false, required: false
+  // password - computed: true, optional: false, required: true
   public get password() {
     return this.getStringAttribute('password');
   }
 
-  // url - computed: true, optional: false, required: false
+  // url - computed: true, optional: false, required: true
   public get url() {
     return this.getStringAttribute('url');
   }
 
-  // username - computed: true, optional: false, required: false
+  // username - computed: true, optional: false, required: true
   public get username() {
     return this.getStringAttribute('username');
   }
 }
-export class MediaPackageChannelHlsIngest extends cdktf.ComplexComputedList {
+export class MediaPackageChannelHlsIngest extends ComplexComputedList {
 
-  // ingest_endpoints - computed: true, optional: false, required: false
+  // ingest_endpoints - computed: true, optional: false, required: true
   public get ingestEndpoints() {
-    return this.interpolationForAttribute('ingest_endpoints') as any;
+    return 'not implemented' as any;
   }
 }
 
 // Resource
 
-export class MediaPackageChannel extends cdktf.TerraformResource {
+export class MediaPackageChannel extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -64,7 +66,7 @@ export class MediaPackageChannel extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -72,56 +74,42 @@ export class MediaPackageChannel extends cdktf.TerraformResource {
   // channel_id - computed: false, optional: false, required: true
   private _channelId: string;
   public get channelId() {
-    return this.getStringAttribute('channel_id');
+    return this._channelId;
   }
   public set channelId(value: string) {
     this._channelId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get channelIdInput() {
-    return this._channelId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
-  }
 
-  // hls_ingest - computed: true, optional: false, required: false
+  // hls_ingest - computed: true, optional: false, required: true
   public hlsIngest(index: string) {
     return new MediaPackageChannelHlsIngest(this, 'hls_ingest', index);
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -130,9 +118,9 @@ export class MediaPackageChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      channel_id: cdktf.stringToTerraform(this._channelId),
-      description: cdktf.stringToTerraform(this._description),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      channel_id: this._channelId,
+      description: this._description,
+      tags: this._tags,
     };
   }
 }

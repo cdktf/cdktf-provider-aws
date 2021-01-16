@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IotRoleAliasConfig extends cdktf.TerraformMetaArguments {
+export interface IotRoleAliasConfig extends TerraformMetaArguments {
   readonly alias: string;
   readonly credentialDuration?: number;
   readonly roleArn: string;
@@ -14,7 +15,7 @@ export interface IotRoleAliasConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class IotRoleAlias extends cdktf.TerraformResource {
+export class IotRoleAlias extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,17 +44,13 @@ export class IotRoleAlias extends cdktf.TerraformResource {
   // alias - computed: false, optional: false, required: true
   private _alias: string;
   public get alias() {
-    return this.getStringAttribute('alias');
+    return this._alias;
   }
   public set alias(value: string) {
     this._alias = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get aliasInput() {
-    return this._alias
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -61,35 +58,28 @@ export class IotRoleAlias extends cdktf.TerraformResource {
   // credential_duration - computed: false, optional: true, required: false
   private _credentialDuration?: number;
   public get credentialDuration() {
-    return this.getNumberAttribute('credential_duration');
+    return this._credentialDuration;
   }
-  public set credentialDuration(value: number ) {
+  public set credentialDuration(value: number | undefined) {
     this._credentialDuration = value;
-  }
-  public resetCredentialDuration() {
-    this._credentialDuration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get credentialDurationInput() {
-    return this._credentialDuration
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this.getStringAttribute('role_arn');
+    return this._roleArn;
   }
   public set roleArn(value: string) {
     this._roleArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleArnInput() {
-    return this._roleArn
   }
 
   // =========
@@ -98,9 +88,9 @@ export class IotRoleAlias extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: cdktf.stringToTerraform(this._alias),
-      credential_duration: cdktf.numberToTerraform(this._credentialDuration),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      alias: this._alias,
+      credential_duration: this._credentialDuration,
+      role_arn: this._roleArn,
     };
   }
 }

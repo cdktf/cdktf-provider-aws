@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Route53ResolverEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface Route53ResolverEndpointConfig extends TerraformMetaArguments {
   readonly direction: string;
   readonly name?: string;
   readonly securityGroupIds: string[];
@@ -20,34 +21,15 @@ export interface Route53ResolverEndpointIpAddress {
   readonly ip?: string;
   readonly subnetId: string;
 }
-
-function route53ResolverEndpointIpAddressToTerraform(struct?: Route53ResolverEndpointIpAddress): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    ip: cdktf.stringToTerraform(struct!.ip),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-  }
-}
-
 export interface Route53ResolverEndpointTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
-function route53ResolverEndpointTimeoutsToTerraform(struct?: Route53ResolverEndpointTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class Route53ResolverEndpoint extends cdktf.TerraformResource {
+export class Route53ResolverEndpoint extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,7 +58,7 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -84,98 +66,69 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
   // direction - computed: false, optional: false, required: true
   private _direction: string;
   public get direction() {
-    return this.getStringAttribute('direction');
+    return this._direction;
   }
   public set direction(value: string) {
     this._direction = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get directionInput() {
-    return this._direction
-  }
 
-  // host_vpc_id - computed: true, optional: false, required: false
+  // host_vpc_id - computed: true, optional: false, required: true
   public get hostVpcId() {
     return this.getStringAttribute('host_vpc_id');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds: string[];
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return this._securityGroupIds;
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupIdsInput() {
-    return this._securityGroupIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // ip_address - computed: false, optional: false, required: true
   private _ipAddress: Route53ResolverEndpointIpAddress[];
   public get ipAddress() {
-    return this.interpolationForAttribute('ip_address') as any;
+    return this._ipAddress;
   }
   public set ipAddress(value: Route53ResolverEndpointIpAddress[]) {
     this._ipAddress = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipAddressInput() {
-    return this._ipAddress
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: Route53ResolverEndpointTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: Route53ResolverEndpointTimeouts ) {
+  public set timeouts(value: Route53ResolverEndpointTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -184,12 +137,12 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      direction: cdktf.stringToTerraform(this._direction),
-      name: cdktf.stringToTerraform(this._name),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      ip_address: cdktf.listMapper(route53ResolverEndpointIpAddressToTerraform)(this._ipAddress),
-      timeouts: route53ResolverEndpointTimeoutsToTerraform(this._timeouts),
+      direction: this._direction,
+      name: this._name,
+      security_group_ids: this._securityGroupIds,
+      tags: this._tags,
+      ip_address: this._ipAddress,
+      timeouts: this._timeouts,
     };
   }
 }

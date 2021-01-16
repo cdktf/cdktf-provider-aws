@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface SsmDocumentConfig extends TerraformMetaArguments {
   readonly content: string;
   readonly documentFormat?: string;
   readonly documentType: string;
@@ -17,24 +19,24 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   /** attachments_source block */
   readonly attachmentsSource?: SsmDocumentAttachmentsSource[];
 }
-export class SsmDocumentParameter extends cdktf.ComplexComputedList {
+export class SsmDocumentParameter extends ComplexComputedList {
 
-  // default_value - computed: true, optional: false, required: false
+  // default_value - computed: true, optional: false, required: true
   public get defaultValue() {
     return this.getStringAttribute('default_value');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // type - computed: true, optional: false, required: false
+  // type - computed: true, optional: false, required: true
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -45,19 +47,9 @@ export interface SsmDocumentAttachmentsSource {
   readonly values: string[];
 }
 
-function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAttachmentsSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class SsmDocument extends cdktf.TerraformResource {
+export class SsmDocument extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -88,7 +80,7 @@ export class SsmDocument extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -96,27 +88,23 @@ export class SsmDocument extends cdktf.TerraformResource {
   // content - computed: false, optional: false, required: true
   private _content: string;
   public get content() {
-    return this.getStringAttribute('content');
+    return this._content;
   }
   public set content(value: string) {
     this._content = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get contentInput() {
-    return this._content
-  }
 
-  // created_date - computed: true, optional: false, required: false
+  // created_date - computed: true, optional: false, required: true
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // default_version - computed: true, optional: false, required: false
+  // default_version - computed: true, optional: false, required: true
   public get defaultVersion() {
     return this.getStringAttribute('default_version');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
@@ -124,53 +112,46 @@ export class SsmDocument extends cdktf.TerraformResource {
   // document_format - computed: false, optional: true, required: false
   private _documentFormat?: string;
   public get documentFormat() {
-    return this.getStringAttribute('document_format');
+    return this._documentFormat;
   }
-  public set documentFormat(value: string ) {
+  public set documentFormat(value: string | undefined) {
     this._documentFormat = value;
-  }
-  public resetDocumentFormat() {
-    this._documentFormat = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get documentFormatInput() {
-    return this._documentFormat
   }
 
   // document_type - computed: false, optional: false, required: true
   private _documentType: string;
   public get documentType() {
-    return this.getStringAttribute('document_type');
+    return this._documentType;
   }
   public set documentType(value: string) {
     this._documentType = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get documentTypeInput() {
-    return this._documentType
-  }
 
-  // document_version - computed: true, optional: false, required: false
+  // document_version - computed: true, optional: false, required: true
   public get documentVersion() {
     return this.getStringAttribute('document_version');
   }
 
-  // hash - computed: true, optional: false, required: false
+  // hash - computed: true, optional: false, required: true
   public get hash() {
     return this.getStringAttribute('hash');
   }
 
-  // hash_type - computed: true, optional: false, required: false
+  // hash_type - computed: true, optional: false, required: true
   public get hashType() {
     return this.getStringAttribute('hash_type');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // latest_version - computed: true, optional: false, required: false
+  // latest_version - computed: true, optional: false, required: true
   public get latestVersion() {
     return this.getStringAttribute('latest_version');
   }
@@ -178,22 +159,18 @@ export class SsmDocument extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // owner - computed: true, optional: false, required: false
+  // owner - computed: true, optional: false, required: true
   public get owner() {
     return this.getStringAttribute('owner');
   }
 
-  // parameter - computed: true, optional: false, required: false
+  // parameter - computed: true, optional: false, required: true
   public parameter(index: string) {
     return new SsmDocumentParameter(this, 'parameter', index);
   }
@@ -201,30 +178,23 @@ export class SsmDocument extends cdktf.TerraformResource {
   // permissions - computed: false, optional: true, required: false
   private _permissions?: { [key: string]: string };
   public get permissions() {
-    return this.interpolationForAttribute('permissions') as any;
+    return this._permissions;
   }
-  public set permissions(value: { [key: string]: string } ) {
+  public set permissions(value: { [key: string]: string } | undefined) {
     this._permissions = value;
   }
-  public resetPermissions() {
-    this._permissions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get permissionsInput() {
-    return this._permissions
-  }
 
-  // platform_types - computed: true, optional: false, required: false
+  // platform_types - computed: true, optional: false, required: true
   public get platformTypes() {
     return this.getListAttribute('platform_types');
   }
 
-  // schema_version - computed: true, optional: false, required: false
+  // schema_version - computed: true, optional: false, required: true
   public get schemaVersion() {
     return this.getStringAttribute('schema_version');
   }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -232,49 +202,28 @@ export class SsmDocument extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // target_type - computed: false, optional: true, required: false
   private _targetType?: string;
   public get targetType() {
-    return this.getStringAttribute('target_type');
+    return this._targetType;
   }
-  public set targetType(value: string ) {
+  public set targetType(value: string | undefined) {
     this._targetType = value;
-  }
-  public resetTargetType() {
-    this._targetType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetTypeInput() {
-    return this._targetType
   }
 
   // attachments_source - computed: false, optional: true, required: false
   private _attachmentsSource?: SsmDocumentAttachmentsSource[];
   public get attachmentsSource() {
-    return this.interpolationForAttribute('attachments_source') as any;
+    return this._attachmentsSource;
   }
-  public set attachmentsSource(value: SsmDocumentAttachmentsSource[] ) {
+  public set attachmentsSource(value: SsmDocumentAttachmentsSource[] | undefined) {
     this._attachmentsSource = value;
-  }
-  public resetAttachmentsSource() {
-    this._attachmentsSource = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get attachmentsSourceInput() {
-    return this._attachmentsSource
   }
 
   // =========
@@ -283,14 +232,14 @@ export class SsmDocument extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content: cdktf.stringToTerraform(this._content),
-      document_format: cdktf.stringToTerraform(this._documentFormat),
-      document_type: cdktf.stringToTerraform(this._documentType),
-      name: cdktf.stringToTerraform(this._name),
-      permissions: cdktf.hashMapper(cdktf.anyToTerraform)(this._permissions),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      target_type: cdktf.stringToTerraform(this._targetType),
-      attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform)(this._attachmentsSource),
+      content: this._content,
+      document_format: this._documentFormat,
+      document_type: this._documentType,
+      name: this._name,
+      permissions: this._permissions,
+      tags: this._tags,
+      target_type: this._targetType,
+      attachments_source: this._attachmentsSource,
     };
   }
 }

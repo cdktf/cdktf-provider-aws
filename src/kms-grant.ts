@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface KmsGrantConfig extends cdktf.TerraformMetaArguments {
+export interface KmsGrantConfig extends TerraformMetaArguments {
   readonly grantCreationTokens?: string[];
   readonly granteePrincipal: string;
   readonly keyId: string;
@@ -22,18 +23,9 @@ export interface KmsGrantConstraints {
   readonly encryptionContextSubset?: { [key: string]: string };
 }
 
-function kmsGrantConstraintsToTerraform(struct?: KmsGrantConstraints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    encryption_context_equals: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.encryptionContextEquals),
-    encryption_context_subset: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.encryptionContextSubset),
-  }
-}
-
-
 // Resource
 
-export class KmsGrant extends cdktf.TerraformResource {
+export class KmsGrant extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -67,25 +59,18 @@ export class KmsGrant extends cdktf.TerraformResource {
   // grant_creation_tokens - computed: false, optional: true, required: false
   private _grantCreationTokens?: string[];
   public get grantCreationTokens() {
-    return this.getListAttribute('grant_creation_tokens');
+    return this._grantCreationTokens;
   }
-  public set grantCreationTokens(value: string[] ) {
+  public set grantCreationTokens(value: string[] | undefined) {
     this._grantCreationTokens = value;
   }
-  public resetGrantCreationTokens() {
-    this._grantCreationTokens = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get grantCreationTokensInput() {
-    return this._grantCreationTokens
-  }
 
-  // grant_id - computed: true, optional: false, required: false
+  // grant_id - computed: true, optional: false, required: true
   public get grantId() {
     return this.getStringAttribute('grant_id');
   }
 
-  // grant_token - computed: true, optional: false, required: false
+  // grant_token - computed: true, optional: false, required: true
   public get grantToken() {
     return this.getStringAttribute('grant_token');
   }
@@ -93,109 +78,73 @@ export class KmsGrant extends cdktf.TerraformResource {
   // grantee_principal - computed: false, optional: false, required: true
   private _granteePrincipal: string;
   public get granteePrincipal() {
-    return this.getStringAttribute('grantee_principal');
+    return this._granteePrincipal;
   }
   public set granteePrincipal(value: string) {
     this._granteePrincipal = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get granteePrincipalInput() {
-    return this._granteePrincipal
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // key_id - computed: false, optional: false, required: true
   private _keyId: string;
   public get keyId() {
-    return this.getStringAttribute('key_id');
+    return this._keyId;
   }
   public set keyId(value: string) {
     this._keyId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get keyIdInput() {
-    return this._keyId
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // operations - computed: false, optional: false, required: true
   private _operations: string[];
   public get operations() {
-    return this.getListAttribute('operations');
+    return this._operations;
   }
   public set operations(value: string[]) {
     this._operations = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operationsInput() {
-    return this._operations
   }
 
   // retire_on_delete - computed: false, optional: true, required: false
   private _retireOnDelete?: boolean;
   public get retireOnDelete() {
-    return this.getBooleanAttribute('retire_on_delete');
+    return this._retireOnDelete;
   }
-  public set retireOnDelete(value: boolean ) {
+  public set retireOnDelete(value: boolean | undefined) {
     this._retireOnDelete = value;
-  }
-  public resetRetireOnDelete() {
-    this._retireOnDelete = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retireOnDeleteInput() {
-    return this._retireOnDelete
   }
 
   // retiring_principal - computed: false, optional: true, required: false
   private _retiringPrincipal?: string;
   public get retiringPrincipal() {
-    return this.getStringAttribute('retiring_principal');
+    return this._retiringPrincipal;
   }
-  public set retiringPrincipal(value: string ) {
+  public set retiringPrincipal(value: string | undefined) {
     this._retiringPrincipal = value;
-  }
-  public resetRetiringPrincipal() {
-    this._retiringPrincipal = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retiringPrincipalInput() {
-    return this._retiringPrincipal
   }
 
   // constraints - computed: false, optional: true, required: false
   private _constraints?: KmsGrantConstraints[];
   public get constraints() {
-    return this.interpolationForAttribute('constraints') as any;
+    return this._constraints;
   }
-  public set constraints(value: KmsGrantConstraints[] ) {
+  public set constraints(value: KmsGrantConstraints[] | undefined) {
     this._constraints = value;
-  }
-  public resetConstraints() {
-    this._constraints = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get constraintsInput() {
-    return this._constraints
   }
 
   // =========
@@ -204,14 +153,14 @@ export class KmsGrant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_creation_tokens: cdktf.listMapper(cdktf.stringToTerraform)(this._grantCreationTokens),
-      grantee_principal: cdktf.stringToTerraform(this._granteePrincipal),
-      key_id: cdktf.stringToTerraform(this._keyId),
-      name: cdktf.stringToTerraform(this._name),
-      operations: cdktf.listMapper(cdktf.stringToTerraform)(this._operations),
-      retire_on_delete: cdktf.booleanToTerraform(this._retireOnDelete),
-      retiring_principal: cdktf.stringToTerraform(this._retiringPrincipal),
-      constraints: cdktf.listMapper(kmsGrantConstraintsToTerraform)(this._constraints),
+      grant_creation_tokens: this._grantCreationTokens,
+      grantee_principal: this._granteePrincipal,
+      key_id: this._keyId,
+      name: this._name,
+      operations: this._operations,
+      retire_on_delete: this._retireOnDelete,
+      retiring_principal: this._retiringPrincipal,
+      constraints: this._constraints,
     };
   }
 }

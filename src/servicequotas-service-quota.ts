@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ServicequotasServiceQuotaConfig extends cdktf.TerraformMetaArguments {
+export interface ServicequotasServiceQuotaConfig extends TerraformMetaArguments {
   readonly quotaCode: string;
   readonly serviceCode: string;
   readonly value: number;
@@ -14,7 +15,7 @@ export interface ServicequotasServiceQuotaConfig extends cdktf.TerraformMetaArgu
 
 // Resource
 
-export class ServicequotasServiceQuota extends cdktf.TerraformResource {
+export class ServicequotasServiceQuota extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,50 +41,50 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // adjustable - computed: true, optional: false, required: false
+  // adjustable - computed: true, optional: false, required: true
   public get adjustable() {
     return this.getBooleanAttribute('adjustable');
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // default_value - computed: true, optional: false, required: false
+  // default_value - computed: true, optional: false, required: true
   public get defaultValue() {
     return this.getNumberAttribute('default_value');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // quota_code - computed: false, optional: false, required: true
   private _quotaCode: string;
   public get quotaCode() {
-    return this.getStringAttribute('quota_code');
+    return this._quotaCode;
   }
   public set quotaCode(value: string) {
     this._quotaCode = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get quotaCodeInput() {
-    return this._quotaCode
-  }
 
-  // quota_name - computed: true, optional: false, required: false
+  // quota_name - computed: true, optional: false, required: true
   public get quotaName() {
     return this.getStringAttribute('quota_name');
   }
 
-  // request_id - computed: true, optional: false, required: false
+  // request_id - computed: true, optional: false, required: true
   public get requestId() {
     return this.getStringAttribute('request_id');
   }
 
-  // request_status - computed: true, optional: false, required: false
+  // request_status - computed: true, optional: false, required: true
   public get requestStatus() {
     return this.getStringAttribute('request_status');
   }
@@ -91,17 +92,13 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
   // service_code - computed: false, optional: false, required: true
   private _serviceCode: string;
   public get serviceCode() {
-    return this.getStringAttribute('service_code');
+    return this._serviceCode;
   }
   public set serviceCode(value: string) {
     this._serviceCode = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get serviceCodeInput() {
-    return this._serviceCode
-  }
 
-  // service_name - computed: true, optional: false, required: false
+  // service_name - computed: true, optional: false, required: true
   public get serviceName() {
     return this.getStringAttribute('service_name');
   }
@@ -109,14 +106,10 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
   // value - computed: false, optional: false, required: true
   private _value: number;
   public get value() {
-    return this.getNumberAttribute('value');
+    return this._value;
   }
   public set value(value: number) {
     this._value = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value
   }
 
   // =========
@@ -125,9 +118,9 @@ export class ServicequotasServiceQuota extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      quota_code: cdktf.stringToTerraform(this._quotaCode),
-      service_code: cdktf.stringToTerraform(this._serviceCode),
-      value: cdktf.numberToTerraform(this._value),
+      quota_code: this._quotaCode,
+      service_code: this._serviceCode,
+      value: this._value,
     };
   }
 }

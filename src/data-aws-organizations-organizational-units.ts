@@ -2,26 +2,28 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsOrganizationsOrganizationalUnitsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsOrganizationsOrganizationalUnitsConfig extends TerraformMetaArguments {
   readonly parentId: string;
 }
-export class DataAwsOrganizationsOrganizationalUnitsChildren extends cdktf.ComplexComputedList {
+export class DataAwsOrganizationsOrganizationalUnitsChildren extends ComplexComputedList {
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: false, required: true
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -29,7 +31,7 @@ export class DataAwsOrganizationsOrganizationalUnitsChildren extends cdktf.Compl
 
 // Resource
 
-export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformDataSource {
+export class DataAwsOrganizationsOrganizationalUnits extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -53,27 +55,27 @@ export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformData
   // ATTRIBUTES
   // ==========
 
-  // children - computed: true, optional: false, required: false
+  // children - computed: true, optional: false, required: true
   public children(index: string) {
     return new DataAwsOrganizationsOrganizationalUnitsChildren(this, 'children', index);
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // parent_id - computed: false, optional: false, required: true
   private _parentId: string;
   public get parentId() {
-    return this.getStringAttribute('parent_id');
+    return this._parentId;
   }
   public set parentId(value: string) {
     this._parentId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parentIdInput() {
-    return this._parentId
   }
 
   // =========
@@ -82,7 +84,7 @@ export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      parent_id: cdktf.stringToTerraform(this._parentId),
+      parent_id: this._parentId,
     };
   }
 }

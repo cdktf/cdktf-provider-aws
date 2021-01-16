@@ -2,17 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRoute53DelegationSetConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRoute53DelegationSetConfig extends TerraformMetaArguments {
   readonly id: string;
 }
 
 // Resource
 
-export class DataAwsRoute53DelegationSet extends cdktf.TerraformDataSource {
+export class DataAwsRoute53DelegationSet extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,7 +37,7 @@ export class DataAwsRoute53DelegationSet extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // caller_reference - computed: true, optional: false, required: false
+  // caller_reference - computed: true, optional: false, required: true
   public get callerReference() {
     return this.getStringAttribute('caller_reference');
   }
@@ -44,17 +45,13 @@ export class DataAwsRoute53DelegationSet extends cdktf.TerraformDataSource {
   // id - computed: false, optional: false, required: true
   private _id: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id;
   }
   public set id(value: string) {
     this._id = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id
-  }
 
-  // name_servers - computed: true, optional: false, required: false
+  // name_servers - computed: true, optional: false, required: true
   public get nameServers() {
     return this.getListAttribute('name_servers');
   }
@@ -65,7 +62,7 @@ export class DataAwsRoute53DelegationSet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: this._id,
     };
   }
 }

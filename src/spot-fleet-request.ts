@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
+export interface SpotFleetRequestConfig extends TerraformMetaArguments {
   readonly allocationStrategy?: string;
   readonly excessCapacityTerminationPolicy?: string;
   readonly fleetType?: string;
@@ -27,6 +28,8 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   readonly launchSpecification?: SpotFleetRequestLaunchSpecification[];
   /** launch_template_config block */
   readonly launchTemplateConfig?: SpotFleetRequestLaunchTemplateConfig[];
+  /** spot_maintenance_strategies block */
+  readonly spotMaintenanceStrategies?: SpotFleetRequestSpotMaintenanceStrategies[];
   /** timeouts block */
   readonly timeouts?: SpotFleetRequestTimeouts;
 }
@@ -37,58 +40,23 @@ export interface SpotFleetRequestLaunchSpecificationEbsBlockDevice {
   readonly iops?: number;
   readonly kmsKeyId?: string;
   readonly snapshotId?: string;
+  readonly throughput?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
-
-function spotFleetRequestLaunchSpecificationEbsBlockDeviceToTerraform(struct?: SpotFleetRequestLaunchSpecificationEbsBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
-    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
-    volume_type: cdktf.stringToTerraform(struct!.volumeType),
-  }
-}
-
 export interface SpotFleetRequestLaunchSpecificationEphemeralBlockDevice {
   readonly deviceName: string;
   readonly virtualName: string;
 }
-
-function spotFleetRequestLaunchSpecificationEphemeralBlockDeviceToTerraform(struct?: SpotFleetRequestLaunchSpecificationEphemeralBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    device_name: cdktf.stringToTerraform(struct!.deviceName),
-    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
-  }
-}
-
 export interface SpotFleetRequestLaunchSpecificationRootBlockDevice {
   readonly deleteOnTermination?: boolean;
   readonly encrypted?: boolean;
   readonly iops?: number;
   readonly kmsKeyId?: string;
+  readonly throughput?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
-
-function spotFleetRequestLaunchSpecificationRootBlockDeviceToTerraform(struct?: SpotFleetRequestLaunchSpecificationRootBlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
-    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
-    volume_type: cdktf.stringToTerraform(struct!.volumeType),
-  }
-}
-
 export interface SpotFleetRequestLaunchSpecification {
   readonly ami: string;
   readonly associatePublicIpAddress?: boolean;
@@ -114,48 +82,11 @@ export interface SpotFleetRequestLaunchSpecification {
   /** root_block_device block */
   readonly rootBlockDevice?: SpotFleetRequestLaunchSpecificationRootBlockDevice[];
 }
-
-function spotFleetRequestLaunchSpecificationToTerraform(struct?: SpotFleetRequestLaunchSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    ami: cdktf.stringToTerraform(struct!.ami),
-    associate_public_ip_address: cdktf.booleanToTerraform(struct!.associatePublicIpAddress),
-    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    ebs_optimized: cdktf.booleanToTerraform(struct!.ebsOptimized),
-    iam_instance_profile: cdktf.stringToTerraform(struct!.iamInstanceProfile),
-    iam_instance_profile_arn: cdktf.stringToTerraform(struct!.iamInstanceProfileArn),
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    key_name: cdktf.stringToTerraform(struct!.keyName),
-    monitoring: cdktf.booleanToTerraform(struct!.monitoring),
-    placement_group: cdktf.stringToTerraform(struct!.placementGroup),
-    placement_tenancy: cdktf.stringToTerraform(struct!.placementTenancy),
-    spot_price: cdktf.stringToTerraform(struct!.spotPrice),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
-    user_data: cdktf.stringToTerraform(struct!.userData),
-    vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.vpcSecurityGroupIds),
-    weighted_capacity: cdktf.stringToTerraform(struct!.weightedCapacity),
-    ebs_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationEbsBlockDeviceToTerraform)(struct!.ebsBlockDevice),
-    ephemeral_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationEphemeralBlockDeviceToTerraform)(struct!.ephemeralBlockDevice),
-    root_block_device: cdktf.listMapper(spotFleetRequestLaunchSpecificationRootBlockDeviceToTerraform)(struct!.rootBlockDevice),
-  }
-}
-
 export interface SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification {
   readonly id?: string;
   readonly name?: string;
   readonly version?: string;
 }
-
-function spotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationToTerraform(struct?: SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
-  }
-}
-
 export interface SpotFleetRequestLaunchTemplateConfigOverrides {
   readonly availabilityZone?: string;
   readonly instanceType?: string;
@@ -164,51 +95,27 @@ export interface SpotFleetRequestLaunchTemplateConfigOverrides {
   readonly subnetId?: string;
   readonly weightedCapacity?: number;
 }
-
-function spotFleetRequestLaunchTemplateConfigOverridesToTerraform(struct?: SpotFleetRequestLaunchTemplateConfigOverrides): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    spot_price: cdktf.stringToTerraform(struct!.spotPrice),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    weighted_capacity: cdktf.numberToTerraform(struct!.weightedCapacity),
-  }
-}
-
 export interface SpotFleetRequestLaunchTemplateConfig {
   /** launch_template_specification block */
   readonly launchTemplateSpecification: SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification[];
   /** overrides block */
   readonly overrides?: SpotFleetRequestLaunchTemplateConfigOverrides[];
 }
-
-function spotFleetRequestLaunchTemplateConfigToTerraform(struct?: SpotFleetRequestLaunchTemplateConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    launch_template_specification: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigLaunchTemplateSpecificationToTerraform)(struct!.launchTemplateSpecification),
-    overrides: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigOverridesToTerraform)(struct!.overrides),
-  }
+export interface SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance {
+  readonly replacementStrategy?: string;
 }
-
+export interface SpotFleetRequestSpotMaintenanceStrategies {
+  /** capacity_rebalance block */
+  readonly capacityRebalance?: SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance[];
+}
 export interface SpotFleetRequestTimeouts {
   readonly create?: string;
   readonly delete?: string;
 }
 
-function spotFleetRequestTimeoutsToTerraform(struct?: SpotFleetRequestTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
-
 // Resource
 
-export class SpotFleetRequest extends cdktf.TerraformResource {
+export class SpotFleetRequest extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -243,6 +150,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     this._waitForFulfillment = config.waitForFulfillment;
     this._launchSpecification = config.launchSpecification;
     this._launchTemplateConfig = config.launchTemplateConfig;
+    this._spotMaintenanceStrategies = config.spotMaintenanceStrategies;
     this._timeouts = config.timeouts;
   }
 
@@ -253,20 +161,13 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   // allocation_strategy - computed: false, optional: true, required: false
   private _allocationStrategy?: string;
   public get allocationStrategy() {
-    return this.getStringAttribute('allocation_strategy');
+    return this._allocationStrategy;
   }
-  public set allocationStrategy(value: string ) {
+  public set allocationStrategy(value: string | undefined) {
     this._allocationStrategy = value;
   }
-  public resetAllocationStrategy() {
-    this._allocationStrategy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allocationStrategyInput() {
-    return this._allocationStrategy
-  }
 
-  // client_token - computed: true, optional: false, required: false
+  // client_token - computed: true, optional: false, required: true
   public get clientToken() {
     return this.getStringAttribute('client_token');
   }
@@ -274,134 +175,85 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   // excess_capacity_termination_policy - computed: false, optional: true, required: false
   private _excessCapacityTerminationPolicy?: string;
   public get excessCapacityTerminationPolicy() {
-    return this.getStringAttribute('excess_capacity_termination_policy');
+    return this._excessCapacityTerminationPolicy;
   }
-  public set excessCapacityTerminationPolicy(value: string ) {
+  public set excessCapacityTerminationPolicy(value: string | undefined) {
     this._excessCapacityTerminationPolicy = value;
-  }
-  public resetExcessCapacityTerminationPolicy() {
-    this._excessCapacityTerminationPolicy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get excessCapacityTerminationPolicyInput() {
-    return this._excessCapacityTerminationPolicy
   }
 
   // fleet_type - computed: false, optional: true, required: false
   private _fleetType?: string;
   public get fleetType() {
-    return this.getStringAttribute('fleet_type');
+    return this._fleetType;
   }
-  public set fleetType(value: string ) {
+  public set fleetType(value: string | undefined) {
     this._fleetType = value;
-  }
-  public resetFleetType() {
-    this._fleetType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fleetTypeInput() {
-    return this._fleetType
   }
 
   // iam_fleet_role - computed: false, optional: false, required: true
   private _iamFleetRole: string;
   public get iamFleetRole() {
-    return this.getStringAttribute('iam_fleet_role');
+    return this._iamFleetRole;
   }
   public set iamFleetRole(value: string) {
     this._iamFleetRole = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get iamFleetRoleInput() {
-    return this._iamFleetRole
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance_interruption_behaviour - computed: false, optional: true, required: false
   private _instanceInterruptionBehaviour?: string;
   public get instanceInterruptionBehaviour() {
-    return this.getStringAttribute('instance_interruption_behaviour');
+    return this._instanceInterruptionBehaviour;
   }
-  public set instanceInterruptionBehaviour(value: string ) {
+  public set instanceInterruptionBehaviour(value: string | undefined) {
     this._instanceInterruptionBehaviour = value;
-  }
-  public resetInstanceInterruptionBehaviour() {
-    this._instanceInterruptionBehaviour = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceInterruptionBehaviourInput() {
-    return this._instanceInterruptionBehaviour
   }
 
   // instance_pools_to_use_count - computed: false, optional: true, required: false
   private _instancePoolsToUseCount?: number;
   public get instancePoolsToUseCount() {
-    return this.getNumberAttribute('instance_pools_to_use_count');
+    return this._instancePoolsToUseCount;
   }
-  public set instancePoolsToUseCount(value: number ) {
+  public set instancePoolsToUseCount(value: number | undefined) {
     this._instancePoolsToUseCount = value;
-  }
-  public resetInstancePoolsToUseCount() {
-    this._instancePoolsToUseCount = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instancePoolsToUseCountInput() {
-    return this._instancePoolsToUseCount
   }
 
   // load_balancers - computed: true, optional: true, required: false
   private _loadBalancers?: string[];
   public get loadBalancers() {
-    return this.getListAttribute('load_balancers');
+    return this._loadBalancers ?? this.getListAttribute('load_balancers');
   }
-  public set loadBalancers(value: string[]) {
+  public set loadBalancers(value: string[] | undefined) {
     this._loadBalancers = value;
-  }
-  public resetLoadBalancers() {
-    this._loadBalancers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loadBalancersInput() {
-    return this._loadBalancers
   }
 
   // replace_unhealthy_instances - computed: false, optional: true, required: false
   private _replaceUnhealthyInstances?: boolean;
   public get replaceUnhealthyInstances() {
-    return this.getBooleanAttribute('replace_unhealthy_instances');
+    return this._replaceUnhealthyInstances;
   }
-  public set replaceUnhealthyInstances(value: boolean ) {
+  public set replaceUnhealthyInstances(value: boolean | undefined) {
     this._replaceUnhealthyInstances = value;
-  }
-  public resetReplaceUnhealthyInstances() {
-    this._replaceUnhealthyInstances = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get replaceUnhealthyInstancesInput() {
-    return this._replaceUnhealthyInstances
   }
 
   // spot_price - computed: false, optional: true, required: false
   private _spotPrice?: string;
   public get spotPrice() {
-    return this.getStringAttribute('spot_price');
+    return this._spotPrice;
   }
-  public set spotPrice(value: string ) {
+  public set spotPrice(value: string | undefined) {
     this._spotPrice = value;
   }
-  public resetSpotPrice() {
-    this._spotPrice = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get spotPriceInput() {
-    return this._spotPrice
-  }
 
-  // spot_request_state - computed: true, optional: false, required: false
+  // spot_request_state - computed: true, optional: false, required: true
   public get spotRequestState() {
     return this.getStringAttribute('spot_request_state');
   }
@@ -409,158 +261,100 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // target_capacity - computed: false, optional: false, required: true
   private _targetCapacity: number;
   public get targetCapacity() {
-    return this.getNumberAttribute('target_capacity');
+    return this._targetCapacity;
   }
   public set targetCapacity(value: number) {
     this._targetCapacity = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetCapacityInput() {
-    return this._targetCapacity
   }
 
   // target_group_arns - computed: true, optional: true, required: false
   private _targetGroupArns?: string[];
   public get targetGroupArns() {
-    return this.getListAttribute('target_group_arns');
+    return this._targetGroupArns ?? this.getListAttribute('target_group_arns');
   }
-  public set targetGroupArns(value: string[]) {
+  public set targetGroupArns(value: string[] | undefined) {
     this._targetGroupArns = value;
-  }
-  public resetTargetGroupArns() {
-    this._targetGroupArns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetGroupArnsInput() {
-    return this._targetGroupArns
   }
 
   // terminate_instances_with_expiration - computed: false, optional: true, required: false
   private _terminateInstancesWithExpiration?: boolean;
   public get terminateInstancesWithExpiration() {
-    return this.getBooleanAttribute('terminate_instances_with_expiration');
+    return this._terminateInstancesWithExpiration;
   }
-  public set terminateInstancesWithExpiration(value: boolean ) {
+  public set terminateInstancesWithExpiration(value: boolean | undefined) {
     this._terminateInstancesWithExpiration = value;
-  }
-  public resetTerminateInstancesWithExpiration() {
-    this._terminateInstancesWithExpiration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get terminateInstancesWithExpirationInput() {
-    return this._terminateInstancesWithExpiration
   }
 
   // valid_from - computed: false, optional: true, required: false
   private _validFrom?: string;
   public get validFrom() {
-    return this.getStringAttribute('valid_from');
+    return this._validFrom;
   }
-  public set validFrom(value: string ) {
+  public set validFrom(value: string | undefined) {
     this._validFrom = value;
-  }
-  public resetValidFrom() {
-    this._validFrom = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get validFromInput() {
-    return this._validFrom
   }
 
   // valid_until - computed: false, optional: true, required: false
   private _validUntil?: string;
   public get validUntil() {
-    return this.getStringAttribute('valid_until');
+    return this._validUntil;
   }
-  public set validUntil(value: string ) {
+  public set validUntil(value: string | undefined) {
     this._validUntil = value;
-  }
-  public resetValidUntil() {
-    this._validUntil = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get validUntilInput() {
-    return this._validUntil
   }
 
   // wait_for_fulfillment - computed: false, optional: true, required: false
   private _waitForFulfillment?: boolean;
   public get waitForFulfillment() {
-    return this.getBooleanAttribute('wait_for_fulfillment');
+    return this._waitForFulfillment;
   }
-  public set waitForFulfillment(value: boolean ) {
+  public set waitForFulfillment(value: boolean | undefined) {
     this._waitForFulfillment = value;
-  }
-  public resetWaitForFulfillment() {
-    this._waitForFulfillment = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get waitForFulfillmentInput() {
-    return this._waitForFulfillment
   }
 
   // launch_specification - computed: false, optional: true, required: false
   private _launchSpecification?: SpotFleetRequestLaunchSpecification[];
   public get launchSpecification() {
-    return this.interpolationForAttribute('launch_specification') as any;
+    return this._launchSpecification;
   }
-  public set launchSpecification(value: SpotFleetRequestLaunchSpecification[] ) {
+  public set launchSpecification(value: SpotFleetRequestLaunchSpecification[] | undefined) {
     this._launchSpecification = value;
-  }
-  public resetLaunchSpecification() {
-    this._launchSpecification = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get launchSpecificationInput() {
-    return this._launchSpecification
   }
 
   // launch_template_config - computed: false, optional: true, required: false
   private _launchTemplateConfig?: SpotFleetRequestLaunchTemplateConfig[];
   public get launchTemplateConfig() {
-    return this.interpolationForAttribute('launch_template_config') as any;
+    return this._launchTemplateConfig;
   }
-  public set launchTemplateConfig(value: SpotFleetRequestLaunchTemplateConfig[] ) {
+  public set launchTemplateConfig(value: SpotFleetRequestLaunchTemplateConfig[] | undefined) {
     this._launchTemplateConfig = value;
   }
-  public resetLaunchTemplateConfig() {
-    this._launchTemplateConfig = undefined;
+
+  // spot_maintenance_strategies - computed: false, optional: true, required: false
+  private _spotMaintenanceStrategies?: SpotFleetRequestSpotMaintenanceStrategies[];
+  public get spotMaintenanceStrategies() {
+    return this._spotMaintenanceStrategies;
   }
-  // Temporarily expose input value. Use with caution.
-  public get launchTemplateConfigInput() {
-    return this._launchTemplateConfig
+  public set spotMaintenanceStrategies(value: SpotFleetRequestSpotMaintenanceStrategies[] | undefined) {
+    this._spotMaintenanceStrategies = value;
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: SpotFleetRequestTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: SpotFleetRequestTimeouts ) {
+  public set timeouts(value: SpotFleetRequestTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -569,25 +363,26 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_strategy: cdktf.stringToTerraform(this._allocationStrategy),
-      excess_capacity_termination_policy: cdktf.stringToTerraform(this._excessCapacityTerminationPolicy),
-      fleet_type: cdktf.stringToTerraform(this._fleetType),
-      iam_fleet_role: cdktf.stringToTerraform(this._iamFleetRole),
-      instance_interruption_behaviour: cdktf.stringToTerraform(this._instanceInterruptionBehaviour),
-      instance_pools_to_use_count: cdktf.numberToTerraform(this._instancePoolsToUseCount),
-      load_balancers: cdktf.listMapper(cdktf.stringToTerraform)(this._loadBalancers),
-      replace_unhealthy_instances: cdktf.booleanToTerraform(this._replaceUnhealthyInstances),
-      spot_price: cdktf.stringToTerraform(this._spotPrice),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      target_capacity: cdktf.numberToTerraform(this._targetCapacity),
-      target_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupArns),
-      terminate_instances_with_expiration: cdktf.booleanToTerraform(this._terminateInstancesWithExpiration),
-      valid_from: cdktf.stringToTerraform(this._validFrom),
-      valid_until: cdktf.stringToTerraform(this._validUntil),
-      wait_for_fulfillment: cdktf.booleanToTerraform(this._waitForFulfillment),
-      launch_specification: cdktf.listMapper(spotFleetRequestLaunchSpecificationToTerraform)(this._launchSpecification),
-      launch_template_config: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigToTerraform)(this._launchTemplateConfig),
-      timeouts: spotFleetRequestTimeoutsToTerraform(this._timeouts),
+      allocation_strategy: this._allocationStrategy,
+      excess_capacity_termination_policy: this._excessCapacityTerminationPolicy,
+      fleet_type: this._fleetType,
+      iam_fleet_role: this._iamFleetRole,
+      instance_interruption_behaviour: this._instanceInterruptionBehaviour,
+      instance_pools_to_use_count: this._instancePoolsToUseCount,
+      load_balancers: this._loadBalancers,
+      replace_unhealthy_instances: this._replaceUnhealthyInstances,
+      spot_price: this._spotPrice,
+      tags: this._tags,
+      target_capacity: this._targetCapacity,
+      target_group_arns: this._targetGroupArns,
+      terminate_instances_with_expiration: this._terminateInstancesWithExpiration,
+      valid_from: this._validFrom,
+      valid_until: this._validUntil,
+      wait_for_fulfillment: this._waitForFulfillment,
+      launch_specification: this._launchSpecification,
+      launch_template_config: this._launchTemplateConfig,
+      spot_maintenance_strategies: this._spotMaintenanceStrategies,
+      timeouts: this._timeouts,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RdsClusterEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface RdsClusterEndpointConfig extends TerraformMetaArguments {
   readonly clusterEndpointIdentifier: string;
   readonly clusterIdentifier: string;
   readonly customEndpointType: string;
@@ -17,7 +18,7 @@ export interface RdsClusterEndpointConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class RdsClusterEndpoint extends cdktf.TerraformResource {
+export class RdsClusterEndpoint extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,7 +47,7 @@ export class RdsClusterEndpoint extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -54,43 +55,31 @@ export class RdsClusterEndpoint extends cdktf.TerraformResource {
   // cluster_endpoint_identifier - computed: false, optional: false, required: true
   private _clusterEndpointIdentifier: string;
   public get clusterEndpointIdentifier() {
-    return this.getStringAttribute('cluster_endpoint_identifier');
+    return this._clusterEndpointIdentifier;
   }
   public set clusterEndpointIdentifier(value: string) {
     this._clusterEndpointIdentifier = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterEndpointIdentifierInput() {
-    return this._clusterEndpointIdentifier
   }
 
   // cluster_identifier - computed: false, optional: false, required: true
   private _clusterIdentifier: string;
   public get clusterIdentifier() {
-    return this.getStringAttribute('cluster_identifier');
+    return this._clusterIdentifier;
   }
   public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdentifierInput() {
-    return this._clusterIdentifier
   }
 
   // custom_endpoint_type - computed: false, optional: false, required: true
   private _customEndpointType: string;
   public get customEndpointType() {
-    return this.getStringAttribute('custom_endpoint_type');
+    return this._customEndpointType;
   }
   public set customEndpointType(value: string) {
     this._customEndpointType = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get customEndpointTypeInput() {
-    return this._customEndpointType
-  }
 
-  // endpoint - computed: true, optional: false, required: false
+  // endpoint - computed: true, optional: false, required: true
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -98,54 +87,37 @@ export class RdsClusterEndpoint extends cdktf.TerraformResource {
   // excluded_members - computed: false, optional: true, required: false
   private _excludedMembers?: string[];
   public get excludedMembers() {
-    return this.getListAttribute('excluded_members');
+    return this._excludedMembers;
   }
-  public set excludedMembers(value: string[] ) {
+  public set excludedMembers(value: string[] | undefined) {
     this._excludedMembers = value;
-  }
-  public resetExcludedMembers() {
-    this._excludedMembers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get excludedMembersInput() {
-    return this._excludedMembers
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // static_members - computed: false, optional: true, required: false
   private _staticMembers?: string[];
   public get staticMembers() {
-    return this.getListAttribute('static_members');
+    return this._staticMembers;
   }
-  public set staticMembers(value: string[] ) {
+  public set staticMembers(value: string[] | undefined) {
     this._staticMembers = value;
-  }
-  public resetStaticMembers() {
-    this._staticMembers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get staticMembersInput() {
-    return this._staticMembers
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -154,12 +126,12 @@ export class RdsClusterEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_endpoint_identifier: cdktf.stringToTerraform(this._clusterEndpointIdentifier),
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      custom_endpoint_type: cdktf.stringToTerraform(this._customEndpointType),
-      excluded_members: cdktf.listMapper(cdktf.stringToTerraform)(this._excludedMembers),
-      static_members: cdktf.listMapper(cdktf.stringToTerraform)(this._staticMembers),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      cluster_endpoint_identifier: this._clusterEndpointIdentifier,
+      cluster_identifier: this._clusterIdentifier,
+      custom_endpoint_type: this._customEndpointType,
+      excluded_members: this._excludedMembers,
+      static_members: this._staticMembers,
+      tags: this._tags,
     };
   }
 }

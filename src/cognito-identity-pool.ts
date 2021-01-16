@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CognitoIdentityPoolConfig extends cdktf.TerraformMetaArguments {
+export interface CognitoIdentityPoolConfig extends TerraformMetaArguments {
   readonly allowUnauthenticatedIdentities?: boolean;
   readonly developerProviderName?: string;
   readonly identityPoolName: string;
@@ -23,19 +24,9 @@ export interface CognitoIdentityPoolCognitoIdentityProviders {
   readonly serverSideTokenCheck?: boolean;
 }
 
-function cognitoIdentityPoolCognitoIdentityProvidersToTerraform(struct?: CognitoIdentityPoolCognitoIdentityProviders): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    provider_name: cdktf.stringToTerraform(struct!.providerName),
-    server_side_token_check: cdktf.booleanToTerraform(struct!.serverSideTokenCheck),
-  }
-}
-
-
 // Resource
 
-export class CognitoIdentityPool extends cdktf.TerraformResource {
+export class CognitoIdentityPool extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -69,20 +60,13 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   // allow_unauthenticated_identities - computed: false, optional: true, required: false
   private _allowUnauthenticatedIdentities?: boolean;
   public get allowUnauthenticatedIdentities() {
-    return this.getBooleanAttribute('allow_unauthenticated_identities');
+    return this._allowUnauthenticatedIdentities;
   }
-  public set allowUnauthenticatedIdentities(value: boolean ) {
+  public set allowUnauthenticatedIdentities(value: boolean | undefined) {
     this._allowUnauthenticatedIdentities = value;
   }
-  public resetAllowUnauthenticatedIdentities() {
-    this._allowUnauthenticatedIdentities = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowUnauthenticatedIdentitiesInput() {
-    return this._allowUnauthenticatedIdentities
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -90,115 +74,73 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   // developer_provider_name - computed: false, optional: true, required: false
   private _developerProviderName?: string;
   public get developerProviderName() {
-    return this.getStringAttribute('developer_provider_name');
+    return this._developerProviderName;
   }
-  public set developerProviderName(value: string ) {
+  public set developerProviderName(value: string | undefined) {
     this._developerProviderName = value;
-  }
-  public resetDeveloperProviderName() {
-    this._developerProviderName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get developerProviderNameInput() {
-    return this._developerProviderName
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // identity_pool_name - computed: false, optional: false, required: true
   private _identityPoolName: string;
   public get identityPoolName() {
-    return this.getStringAttribute('identity_pool_name');
+    return this._identityPoolName;
   }
   public set identityPoolName(value: string) {
     this._identityPoolName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get identityPoolNameInput() {
-    return this._identityPoolName
   }
 
   // openid_connect_provider_arns - computed: false, optional: true, required: false
   private _openidConnectProviderArns?: string[];
   public get openidConnectProviderArns() {
-    return this.getListAttribute('openid_connect_provider_arns');
+    return this._openidConnectProviderArns;
   }
-  public set openidConnectProviderArns(value: string[] ) {
+  public set openidConnectProviderArns(value: string[] | undefined) {
     this._openidConnectProviderArns = value;
-  }
-  public resetOpenidConnectProviderArns() {
-    this._openidConnectProviderArns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get openidConnectProviderArnsInput() {
-    return this._openidConnectProviderArns
   }
 
   // saml_provider_arns - computed: false, optional: true, required: false
   private _samlProviderArns?: string[];
   public get samlProviderArns() {
-    return this.getListAttribute('saml_provider_arns');
+    return this._samlProviderArns;
   }
-  public set samlProviderArns(value: string[] ) {
+  public set samlProviderArns(value: string[] | undefined) {
     this._samlProviderArns = value;
-  }
-  public resetSamlProviderArns() {
-    this._samlProviderArns = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get samlProviderArnsInput() {
-    return this._samlProviderArns
   }
 
   // supported_login_providers - computed: false, optional: true, required: false
   private _supportedLoginProviders?: { [key: string]: string };
   public get supportedLoginProviders() {
-    return this.interpolationForAttribute('supported_login_providers') as any;
+    return this._supportedLoginProviders;
   }
-  public set supportedLoginProviders(value: { [key: string]: string } ) {
+  public set supportedLoginProviders(value: { [key: string]: string } | undefined) {
     this._supportedLoginProviders = value;
-  }
-  public resetSupportedLoginProviders() {
-    this._supportedLoginProviders = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get supportedLoginProvidersInput() {
-    return this._supportedLoginProviders
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // cognito_identity_providers - computed: false, optional: true, required: false
   private _cognitoIdentityProviders?: CognitoIdentityPoolCognitoIdentityProviders[];
   public get cognitoIdentityProviders() {
-    return this.interpolationForAttribute('cognito_identity_providers') as any;
+    return this._cognitoIdentityProviders;
   }
-  public set cognitoIdentityProviders(value: CognitoIdentityPoolCognitoIdentityProviders[] ) {
+  public set cognitoIdentityProviders(value: CognitoIdentityPoolCognitoIdentityProviders[] | undefined) {
     this._cognitoIdentityProviders = value;
-  }
-  public resetCognitoIdentityProviders() {
-    this._cognitoIdentityProviders = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cognitoIdentityProvidersInput() {
-    return this._cognitoIdentityProviders
   }
 
   // =========
@@ -207,14 +149,14 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_unauthenticated_identities: cdktf.booleanToTerraform(this._allowUnauthenticatedIdentities),
-      developer_provider_name: cdktf.stringToTerraform(this._developerProviderName),
-      identity_pool_name: cdktf.stringToTerraform(this._identityPoolName),
-      openid_connect_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._openidConnectProviderArns),
-      saml_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._samlProviderArns),
-      supported_login_providers: cdktf.hashMapper(cdktf.anyToTerraform)(this._supportedLoginProviders),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      cognito_identity_providers: cdktf.listMapper(cognitoIdentityPoolCognitoIdentityProvidersToTerraform)(this._cognitoIdentityProviders),
+      allow_unauthenticated_identities: this._allowUnauthenticatedIdentities,
+      developer_provider_name: this._developerProviderName,
+      identity_pool_name: this._identityPoolName,
+      openid_connect_provider_arns: this._openidConnectProviderArns,
+      saml_provider_arns: this._samlProviderArns,
+      supported_login_providers: this._supportedLoginProviders,
+      tags: this._tags,
+      cognito_identity_providers: this._cognitoIdentityProviders,
     };
   }
 }

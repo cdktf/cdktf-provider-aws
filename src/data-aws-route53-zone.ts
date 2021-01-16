@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsRoute53ZoneConfig extends TerraformMetaArguments {
   readonly name?: string;
   readonly privateZone?: boolean;
   readonly resourceRecordSetCount?: number;
@@ -17,7 +18,7 @@ export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
+export class DataAwsRoute53Zone extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,27 +47,31 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // caller_reference - computed: true, optional: false, required: false
+  // caller_reference - computed: true, optional: false, required: true
   public get callerReference() {
     return this.getStringAttribute('caller_reference');
   }
 
-  // comment - computed: true, optional: false, required: false
+  // comment - computed: true, optional: false, required: true
   public get comment() {
     return this.getStringAttribute('comment');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // linked_service_description - computed: true, optional: false, required: false
+  // linked_service_description - computed: true, optional: false, required: true
   public get linkedServiceDescription() {
     return this.getStringAttribute('linked_service_description');
   }
 
-  // linked_service_principal - computed: true, optional: false, required: false
+  // linked_service_principal - computed: true, optional: false, required: true
   public get linkedServicePrincipal() {
     return this.getStringAttribute('linked_service_principal');
   }
@@ -74,20 +79,13 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // name_servers - computed: true, optional: false, required: false
+  // name_servers - computed: true, optional: false, required: true
   public get nameServers() {
     return this.getListAttribute('name_servers');
   }
@@ -95,81 +93,46 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   // private_zone - computed: false, optional: true, required: false
   private _privateZone?: boolean;
   public get privateZone() {
-    return this.getBooleanAttribute('private_zone');
+    return this._privateZone;
   }
-  public set privateZone(value: boolean ) {
+  public set privateZone(value: boolean | undefined) {
     this._privateZone = value;
-  }
-  public resetPrivateZone() {
-    this._privateZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get privateZoneInput() {
-    return this._privateZone
   }
 
   // resource_record_set_count - computed: true, optional: true, required: false
   private _resourceRecordSetCount?: number;
   public get resourceRecordSetCount() {
-    return this.getNumberAttribute('resource_record_set_count');
+    return this._resourceRecordSetCount ?? this.getNumberAttribute('resource_record_set_count');
   }
-  public set resourceRecordSetCount(value: number) {
+  public set resourceRecordSetCount(value: number | undefined) {
     this._resourceRecordSetCount = value;
-  }
-  public resetResourceRecordSetCount() {
-    this._resourceRecordSetCount = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceRecordSetCountInput() {
-    return this._resourceRecordSetCount
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // vpc_id - computed: true, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this.getStringAttribute('vpc_id');
+    return this._vpcId ?? this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string) {
+  public set vpcId(value: string | undefined) {
     this._vpcId = value;
-  }
-  public resetVpcId() {
-    this._vpcId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
   }
 
   // zone_id - computed: true, optional: true, required: false
   private _zoneId?: string;
   public get zoneId() {
-    return this.getStringAttribute('zone_id');
+    return this._zoneId ?? this.getStringAttribute('zone_id');
   }
-  public set zoneId(value: string) {
+  public set zoneId(value: string | undefined) {
     this._zoneId = value;
-  }
-  public resetZoneId() {
-    this._zoneId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get zoneIdInput() {
-    return this._zoneId
   }
 
   // =========
@@ -178,12 +141,12 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      private_zone: cdktf.booleanToTerraform(this._privateZone),
-      resource_record_set_count: cdktf.numberToTerraform(this._resourceRecordSetCount),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      name: this._name,
+      private_zone: this._privateZone,
+      resource_record_set_count: this._resourceRecordSetCount,
+      tags: this._tags,
+      vpc_id: this._vpcId,
+      zone_id: this._zoneId,
     };
   }
 }

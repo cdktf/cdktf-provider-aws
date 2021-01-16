@@ -2,12 +2,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMetaArguments {
+export interface StoragegatewayCachedIscsiVolumeConfig extends TerraformMetaArguments {
   readonly gatewayArn: string;
+  readonly kmsEncrypted?: boolean;
+  readonly kmsKey?: string;
   readonly networkInterfaceId: string;
   readonly snapshotId?: string;
   readonly sourceVolumeArn?: string;
@@ -18,7 +21,7 @@ export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMe
 
 // Resource
 
-export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
+export class StoragegatewayCachedIscsiVolume extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -36,6 +39,8 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._gatewayArn = config.gatewayArn;
+    this._kmsEncrypted = config.kmsEncrypted;
+    this._kmsKey = config.kmsKey;
     this._networkInterfaceId = config.networkInterfaceId;
     this._snapshotId = config.snapshotId;
     this._sourceVolumeArn = config.sourceVolumeArn;
@@ -48,12 +53,12 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // chap_enabled - computed: true, optional: false, required: false
+  // chap_enabled - computed: true, optional: false, required: true
   public get chapEnabled() {
     return this.getBooleanAttribute('chap_enabled');
   }
@@ -61,22 +66,40 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   // gateway_arn - computed: false, optional: false, required: true
   private _gatewayArn: string;
   public get gatewayArn() {
-    return this.getStringAttribute('gateway_arn');
+    return this._gatewayArn;
   }
   public set gatewayArn(value: string) {
     this._gatewayArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get gatewayArnInput() {
-    return this._gatewayArn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // lun_number - computed: true, optional: false, required: false
+  // kms_encrypted - computed: false, optional: true, required: false
+  private _kmsEncrypted?: boolean;
+  public get kmsEncrypted() {
+    return this._kmsEncrypted;
+  }
+  public set kmsEncrypted(value: boolean | undefined) {
+    this._kmsEncrypted = value;
+  }
+
+  // kms_key - computed: false, optional: true, required: false
+  private _kmsKey?: string;
+  public get kmsKey() {
+    return this._kmsKey;
+  }
+  public set kmsKey(value: string | undefined) {
+    this._kmsKey = value;
+  }
+
+  // lun_number - computed: true, optional: false, required: true
   public get lunNumber() {
     return this.getNumberAttribute('lun_number');
   }
@@ -84,17 +107,13 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   // network_interface_id - computed: false, optional: false, required: true
   private _networkInterfaceId: string;
   public get networkInterfaceId() {
-    return this.getStringAttribute('network_interface_id');
+    return this._networkInterfaceId;
   }
   public set networkInterfaceId(value: string) {
     this._networkInterfaceId = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get networkInterfaceIdInput() {
-    return this._networkInterfaceId
-  }
 
-  // network_interface_port - computed: true, optional: false, required: false
+  // network_interface_port - computed: true, optional: false, required: true
   public get networkInterfacePort() {
     return this.getNumberAttribute('network_interface_port');
   }
@@ -102,52 +121,31 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   // snapshot_id - computed: false, optional: true, required: false
   private _snapshotId?: string;
   public get snapshotId() {
-    return this.getStringAttribute('snapshot_id');
+    return this._snapshotId;
   }
-  public set snapshotId(value: string ) {
+  public set snapshotId(value: string | undefined) {
     this._snapshotId = value;
-  }
-  public resetSnapshotId() {
-    this._snapshotId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get snapshotIdInput() {
-    return this._snapshotId
   }
 
   // source_volume_arn - computed: false, optional: true, required: false
   private _sourceVolumeArn?: string;
   public get sourceVolumeArn() {
-    return this.getStringAttribute('source_volume_arn');
+    return this._sourceVolumeArn;
   }
-  public set sourceVolumeArn(value: string ) {
+  public set sourceVolumeArn(value: string | undefined) {
     this._sourceVolumeArn = value;
-  }
-  public resetSourceVolumeArn() {
-    this._sourceVolumeArn = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceVolumeArnInput() {
-    return this._sourceVolumeArn
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // target_arn - computed: true, optional: false, required: false
+  // target_arn - computed: true, optional: false, required: true
   public get targetArn() {
     return this.getStringAttribute('target_arn');
   }
@@ -155,22 +153,18 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   // target_name - computed: false, optional: false, required: true
   private _targetName: string;
   public get targetName() {
-    return this.getStringAttribute('target_name');
+    return this._targetName;
   }
   public set targetName(value: string) {
     this._targetName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get targetNameInput() {
-    return this._targetName
-  }
 
-  // volume_arn - computed: true, optional: false, required: false
+  // volume_arn - computed: true, optional: false, required: true
   public get volumeArn() {
     return this.getStringAttribute('volume_arn');
   }
 
-  // volume_id - computed: true, optional: false, required: false
+  // volume_id - computed: true, optional: false, required: true
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
@@ -178,14 +172,10 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   // volume_size_in_bytes - computed: false, optional: false, required: true
   private _volumeSizeInBytes: number;
   public get volumeSizeInBytes() {
-    return this.getNumberAttribute('volume_size_in_bytes');
+    return this._volumeSizeInBytes;
   }
   public set volumeSizeInBytes(value: number) {
     this._volumeSizeInBytes = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get volumeSizeInBytesInput() {
-    return this._volumeSizeInBytes
   }
 
   // =========
@@ -194,13 +184,15 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
-      snapshot_id: cdktf.stringToTerraform(this._snapshotId),
-      source_volume_arn: cdktf.stringToTerraform(this._sourceVolumeArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      target_name: cdktf.stringToTerraform(this._targetName),
-      volume_size_in_bytes: cdktf.numberToTerraform(this._volumeSizeInBytes),
+      gateway_arn: this._gatewayArn,
+      kms_encrypted: this._kmsEncrypted,
+      kms_key: this._kmsKey,
+      network_interface_id: this._networkInterfaceId,
+      snapshot_id: this._snapshotId,
+      source_volume_arn: this._sourceVolumeArn,
+      tags: this._tags,
+      target_name: this._targetName,
+      volume_size_in_bytes: this._volumeSizeInBytes,
     };
   }
 }

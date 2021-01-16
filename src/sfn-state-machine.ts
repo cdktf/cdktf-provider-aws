@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SfnStateMachineConfig extends cdktf.TerraformMetaArguments {
+export interface SfnStateMachineConfig extends TerraformMetaArguments {
   readonly definition: string;
   readonly name: string;
   readonly roleArn: string;
@@ -15,7 +16,7 @@ export interface SfnStateMachineConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class SfnStateMachine extends cdktf.TerraformResource {
+export class SfnStateMachine extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,12 +43,12 @@ export class SfnStateMachine extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // creation_date - computed: true, optional: false, required: false
+  // creation_date - computed: true, optional: false, required: true
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
@@ -55,48 +56,40 @@ export class SfnStateMachine extends cdktf.TerraformResource {
   // definition - computed: false, optional: false, required: true
   private _definition: string;
   public get definition() {
-    return this.getStringAttribute('definition');
+    return this._definition;
   }
   public set definition(value: string) {
     this._definition = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get definitionInput() {
-    return this._definition
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this.getStringAttribute('role_arn');
+    return this._roleArn;
   }
   public set roleArn(value: string) {
     this._roleArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get roleArnInput() {
-    return this._roleArn
-  }
 
-  // status - computed: true, optional: false, required: false
+  // status - computed: true, optional: false, required: true
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -104,17 +97,10 @@ export class SfnStateMachine extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -123,10 +109,10 @@ export class SfnStateMachine extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      definition: cdktf.stringToTerraform(this._definition),
-      name: cdktf.stringToTerraform(this._name),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      definition: this._definition,
+      name: this._name,
+      role_arn: this._roleArn,
+      tags: this._tags,
     };
   }
 }

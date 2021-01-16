@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LambdaProvisionedConcurrencyConfigConfig extends cdktf.TerraformMetaArguments {
+export interface LambdaProvisionedConcurrencyConfigConfig extends TerraformMetaArguments {
   readonly functionName: string;
   readonly provisionedConcurrentExecutions: number;
   readonly qualifier: string;
@@ -18,18 +19,9 @@ export interface LambdaProvisionedConcurrencyConfigTimeouts {
   readonly update?: string;
 }
 
-function lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(struct?: LambdaProvisionedConcurrencyConfigTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
 // Resource
 
-export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource {
+export class LambdaProvisionedConcurrencyConfig extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,61 +51,46 @@ export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource 
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this.getStringAttribute('function_name');
+    return this._functionName;
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get functionNameInput() {
-    return this._functionName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // provisioned_concurrent_executions - computed: false, optional: false, required: true
   private _provisionedConcurrentExecutions: number;
   public get provisionedConcurrentExecutions() {
-    return this.getNumberAttribute('provisioned_concurrent_executions');
+    return this._provisionedConcurrentExecutions;
   }
   public set provisionedConcurrentExecutions(value: number) {
     this._provisionedConcurrentExecutions = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get provisionedConcurrentExecutionsInput() {
-    return this._provisionedConcurrentExecutions
   }
 
   // qualifier - computed: false, optional: false, required: true
   private _qualifier: string;
   public get qualifier() {
-    return this.getStringAttribute('qualifier');
+    return this._qualifier;
   }
   public set qualifier(value: string) {
     this._qualifier = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get qualifierInput() {
-    return this._qualifier
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: LambdaProvisionedConcurrencyConfigTimeouts;
   public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
+    return this._timeouts;
   }
-  public set timeouts(value: LambdaProvisionedConcurrencyConfigTimeouts ) {
+  public set timeouts(value: LambdaProvisionedConcurrencyConfigTimeouts | undefined) {
     this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
   }
 
   // =========
@@ -122,10 +99,10 @@ export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: cdktf.stringToTerraform(this._functionName),
-      provisioned_concurrent_executions: cdktf.numberToTerraform(this._provisionedConcurrentExecutions),
-      qualifier: cdktf.stringToTerraform(this._qualifier),
-      timeouts: lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(this._timeouts),
+      function_name: this._functionName,
+      provisioned_concurrent_executions: this._provisionedConcurrentExecutions,
+      qualifier: this._qualifier,
+      timeouts: this._timeouts,
     };
   }
 }

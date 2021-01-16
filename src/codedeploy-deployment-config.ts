@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CodedeployDeploymentConfigConfig extends cdktf.TerraformMetaArguments {
+export interface CodedeployDeploymentConfigConfig extends TerraformMetaArguments {
   readonly computePlatform?: string;
   readonly deploymentConfigName: string;
   /** minimum_healthy_hosts block */
@@ -18,41 +19,14 @@ export interface CodedeployDeploymentConfigMinimumHealthyHosts {
   readonly type?: string;
   readonly value?: number;
 }
-
-function codedeployDeploymentConfigMinimumHealthyHostsToTerraform(struct?: CodedeployDeploymentConfigMinimumHealthyHosts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.numberToTerraform(struct!.value),
-  }
-}
-
 export interface CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary {
   readonly interval?: number;
   readonly percentage?: number;
 }
-
-function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanary): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    interval: cdktf.numberToTerraform(struct!.interval),
-    percentage: cdktf.numberToTerraform(struct!.percentage),
-  }
-}
-
 export interface CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear {
   readonly interval?: number;
   readonly percentage?: number;
 }
-
-function codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    interval: cdktf.numberToTerraform(struct!.interval),
-    percentage: cdktf.numberToTerraform(struct!.percentage),
-  }
-}
-
 export interface CodedeployDeploymentConfigTrafficRoutingConfig {
   readonly type?: string;
   /** time_based_canary block */
@@ -61,19 +35,9 @@ export interface CodedeployDeploymentConfigTrafficRoutingConfig {
   readonly timeBasedLinear?: CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinear[];
 }
 
-function codedeployDeploymentConfigTrafficRoutingConfigToTerraform(struct?: CodedeployDeploymentConfigTrafficRoutingConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    type: cdktf.stringToTerraform(struct!.type),
-    time_based_canary: cdktf.listMapper(codedeployDeploymentConfigTrafficRoutingConfigTimeBasedCanaryToTerraform)(struct!.timeBasedCanary),
-    time_based_linear: cdktf.listMapper(codedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearToTerraform)(struct!.timeBasedLinear),
-  }
-}
-
-
 // Resource
 
-export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
+export class CodedeployDeploymentConfig extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -103,20 +67,13 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
   // compute_platform - computed: false, optional: true, required: false
   private _computePlatform?: string;
   public get computePlatform() {
-    return this.getStringAttribute('compute_platform');
+    return this._computePlatform;
   }
-  public set computePlatform(value: string ) {
+  public set computePlatform(value: string | undefined) {
     this._computePlatform = value;
   }
-  public resetComputePlatform() {
-    this._computePlatform = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get computePlatformInput() {
-    return this._computePlatform
-  }
 
-  // deployment_config_id - computed: true, optional: false, required: false
+  // deployment_config_id - computed: true, optional: false, required: true
   public get deploymentConfigId() {
     return this.getStringAttribute('deployment_config_id');
   }
@@ -124,51 +81,37 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
   // deployment_config_name - computed: false, optional: false, required: true
   private _deploymentConfigName: string;
   public get deploymentConfigName() {
-    return this.getStringAttribute('deployment_config_name');
+    return this._deploymentConfigName;
   }
   public set deploymentConfigName(value: string) {
     this._deploymentConfigName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get deploymentConfigNameInput() {
-    return this._deploymentConfigName
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // minimum_healthy_hosts - computed: false, optional: true, required: false
   private _minimumHealthyHosts?: CodedeployDeploymentConfigMinimumHealthyHosts[];
   public get minimumHealthyHosts() {
-    return this.interpolationForAttribute('minimum_healthy_hosts') as any;
+    return this._minimumHealthyHosts;
   }
-  public set minimumHealthyHosts(value: CodedeployDeploymentConfigMinimumHealthyHosts[] ) {
+  public set minimumHealthyHosts(value: CodedeployDeploymentConfigMinimumHealthyHosts[] | undefined) {
     this._minimumHealthyHosts = value;
-  }
-  public resetMinimumHealthyHosts() {
-    this._minimumHealthyHosts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minimumHealthyHostsInput() {
-    return this._minimumHealthyHosts
   }
 
   // traffic_routing_config - computed: false, optional: true, required: false
   private _trafficRoutingConfig?: CodedeployDeploymentConfigTrafficRoutingConfig[];
   public get trafficRoutingConfig() {
-    return this.interpolationForAttribute('traffic_routing_config') as any;
+    return this._trafficRoutingConfig;
   }
-  public set trafficRoutingConfig(value: CodedeployDeploymentConfigTrafficRoutingConfig[] ) {
+  public set trafficRoutingConfig(value: CodedeployDeploymentConfigTrafficRoutingConfig[] | undefined) {
     this._trafficRoutingConfig = value;
-  }
-  public resetTrafficRoutingConfig() {
-    this._trafficRoutingConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get trafficRoutingConfigInput() {
-    return this._trafficRoutingConfig
   }
 
   // =========
@@ -177,10 +120,10 @@ export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_platform: cdktf.stringToTerraform(this._computePlatform),
-      deployment_config_name: cdktf.stringToTerraform(this._deploymentConfigName),
-      minimum_healthy_hosts: cdktf.listMapper(codedeployDeploymentConfigMinimumHealthyHostsToTerraform)(this._minimumHealthyHosts),
-      traffic_routing_config: cdktf.listMapper(codedeployDeploymentConfigTrafficRoutingConfigToTerraform)(this._trafficRoutingConfig),
+      compute_platform: this._computePlatform,
+      deployment_config_name: this._deploymentConfigName,
+      minimum_healthy_hosts: this._minimumHealthyHosts,
+      traffic_routing_config: this._trafficRoutingConfig,
     };
   }
 }

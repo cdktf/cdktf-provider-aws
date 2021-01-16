@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLambdaAliasConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLambdaAliasConfig extends TerraformMetaArguments {
   readonly functionName: string;
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsLambdaAlias extends cdktf.TerraformDataSource {
+export class DataAwsLambdaAlias extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,12 +39,12 @@ export class DataAwsLambdaAlias extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
@@ -51,27 +52,27 @@ export class DataAwsLambdaAlias extends cdktf.TerraformDataSource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this.getStringAttribute('function_name');
+    return this._functionName;
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get functionNameInput() {
-    return this._functionName
-  }
 
-  // function_version - computed: true, optional: false, required: false
+  // function_version - computed: true, optional: false, required: true
   public get functionVersion() {
     return this.getStringAttribute('function_version');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // invoke_arn - computed: true, optional: false, required: false
+  // invoke_arn - computed: true, optional: false, required: true
   public get invokeArn() {
     return this.getStringAttribute('invoke_arn');
   }
@@ -79,14 +80,10 @@ export class DataAwsLambdaAlias extends cdktf.TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // =========
@@ -95,8 +92,8 @@ export class DataAwsLambdaAlias extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      function_name: cdktf.stringToTerraform(this._functionName),
-      name: cdktf.stringToTerraform(this._name),
+      function_name: this._functionName,
+      name: this._name,
     };
   }
 }

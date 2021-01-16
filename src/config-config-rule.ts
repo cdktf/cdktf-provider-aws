@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface ConfigConfigRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigConfigRuleConfig extends TerraformMetaArguments {
   readonly description?: string;
   readonly inputParameters?: string;
   readonly maximumExecutionFrequency?: string;
@@ -23,32 +24,11 @@ export interface ConfigConfigRuleScope {
   readonly tagKey?: string;
   readonly tagValue?: string;
 }
-
-function configConfigRuleScopeToTerraform(struct?: ConfigConfigRuleScope): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    compliance_resource_id: cdktf.stringToTerraform(struct!.complianceResourceId),
-    compliance_resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.complianceResourceTypes),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_value: cdktf.stringToTerraform(struct!.tagValue),
-  }
-}
-
 export interface ConfigConfigRuleSourceSourceDetail {
   readonly eventSource?: string;
   readonly maximumExecutionFrequency?: string;
   readonly messageType?: string;
 }
-
-function configConfigRuleSourceSourceDetailToTerraform(struct?: ConfigConfigRuleSourceSourceDetail): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    event_source: cdktf.stringToTerraform(struct!.eventSource),
-    maximum_execution_frequency: cdktf.stringToTerraform(struct!.maximumExecutionFrequency),
-    message_type: cdktf.stringToTerraform(struct!.messageType),
-  }
-}
-
 export interface ConfigConfigRuleSource {
   readonly owner: string;
   readonly sourceIdentifier: string;
@@ -56,19 +36,9 @@ export interface ConfigConfigRuleSource {
   readonly sourceDetail?: ConfigConfigRuleSourceSourceDetail[];
 }
 
-function configConfigRuleSourceToTerraform(struct?: ConfigConfigRuleSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    owner: cdktf.stringToTerraform(struct!.owner),
-    source_identifier: cdktf.stringToTerraform(struct!.sourceIdentifier),
-    source_detail: cdktf.listMapper(configConfigRuleSourceSourceDetailToTerraform)(struct!.sourceDetail),
-  }
-}
-
-
 // Resource
 
-export class ConfigConfigRule extends cdktf.TerraformResource {
+export class ConfigConfigRule extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -98,7 +68,7 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -106,70 +76,49 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // input_parameters - computed: false, optional: true, required: false
   private _inputParameters?: string;
   public get inputParameters() {
-    return this.getStringAttribute('input_parameters');
+    return this._inputParameters;
   }
-  public set inputParameters(value: string ) {
+  public set inputParameters(value: string | undefined) {
     this._inputParameters = value;
-  }
-  public resetInputParameters() {
-    this._inputParameters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputParametersInput() {
-    return this._inputParameters
   }
 
   // maximum_execution_frequency - computed: false, optional: true, required: false
   private _maximumExecutionFrequency?: string;
   public get maximumExecutionFrequency() {
-    return this.getStringAttribute('maximum_execution_frequency');
+    return this._maximumExecutionFrequency;
   }
-  public set maximumExecutionFrequency(value: string ) {
+  public set maximumExecutionFrequency(value: string | undefined) {
     this._maximumExecutionFrequency = value;
-  }
-  public resetMaximumExecutionFrequency() {
-    this._maximumExecutionFrequency = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maximumExecutionFrequencyInput() {
-    return this._maximumExecutionFrequency
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
-  }
 
-  // rule_id - computed: true, optional: false, required: false
+  // rule_id - computed: true, optional: false, required: true
   public get ruleId() {
     return this.getStringAttribute('rule_id');
   }
@@ -177,46 +126,28 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // scope - computed: false, optional: true, required: false
   private _scope?: ConfigConfigRuleScope[];
   public get scope() {
-    return this.interpolationForAttribute('scope') as any;
+    return this._scope;
   }
-  public set scope(value: ConfigConfigRuleScope[] ) {
+  public set scope(value: ConfigConfigRuleScope[] | undefined) {
     this._scope = value;
-  }
-  public resetScope() {
-    this._scope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scopeInput() {
-    return this._scope
   }
 
   // source - computed: false, optional: false, required: true
   private _source: ConfigConfigRuleSource[];
   public get source() {
-    return this.interpolationForAttribute('source') as any;
+    return this._source;
   }
   public set source(value: ConfigConfigRuleSource[]) {
     this._source = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceInput() {
-    return this._source
   }
 
   // =========
@@ -225,13 +156,13 @@ export class ConfigConfigRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      input_parameters: cdktf.stringToTerraform(this._inputParameters),
-      maximum_execution_frequency: cdktf.stringToTerraform(this._maximumExecutionFrequency),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      scope: cdktf.listMapper(configConfigRuleScopeToTerraform)(this._scope),
-      source: cdktf.listMapper(configConfigRuleSourceToTerraform)(this._source),
+      description: this._description,
+      input_parameters: this._inputParameters,
+      maximum_execution_frequency: this._maximumExecutionFrequency,
+      name: this._name,
+      tags: this._tags,
+      scope: this._scope,
+      source: this._source,
     };
   }
 }

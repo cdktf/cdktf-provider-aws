@@ -2,11 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsInstanceConfig extends TerraformMetaArguments {
   readonly fetchPasswordData?: boolean;
   readonly fetchUserData?: boolean;
   readonly instanceId?: string;
@@ -15,132 +17,159 @@ export interface DataAwsInstanceConfig extends cdktf.TerraformMetaArguments {
   /** filter block */
   readonly filter?: DataAwsInstanceFilter[];
 }
-export class DataAwsInstanceCreditSpecification extends cdktf.ComplexComputedList {
+export class DataAwsInstanceCreditSpecification extends ComplexComputedList {
 
-  // cpu_credits - computed: true, optional: false, required: false
+  // cpu_credits - computed: true, optional: false, required: true
   public get cpuCredits() {
     return this.getStringAttribute('cpu_credits');
   }
 }
-export class DataAwsInstanceEbsBlockDevice extends cdktf.ComplexComputedList {
+export class DataAwsInstanceEbsBlockDevice extends ComplexComputedList {
 
-  // delete_on_termination - computed: true, optional: false, required: false
+  // delete_on_termination - computed: true, optional: false, required: true
   public get deleteOnTermination() {
     return this.getBooleanAttribute('delete_on_termination');
   }
 
-  // device_name - computed: true, optional: false, required: false
+  // device_name - computed: true, optional: false, required: true
   public get deviceName() {
     return this.getStringAttribute('device_name');
   }
 
-  // encrypted - computed: true, optional: false, required: false
+  // encrypted - computed: true, optional: false, required: true
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
 
-  // iops - computed: true, optional: false, required: false
+  // iops - computed: true, optional: false, required: true
   public get iops() {
     return this.getNumberAttribute('iops');
   }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // snapshot_id - computed: true, optional: false, required: false
+  // snapshot_id - computed: true, optional: false, required: true
   public get snapshotId() {
     return this.getStringAttribute('snapshot_id');
   }
 
-  // volume_id - computed: true, optional: false, required: false
+  // tags - computed: true, optional: false, required: true
+  public get tags() {
+    return 'not implemented' as any;
+  }
+
+  // throughput - computed: true, optional: false, required: true
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+
+  // volume_id - computed: true, optional: false, required: true
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
 
-  // volume_size - computed: true, optional: false, required: false
+  // volume_size - computed: true, optional: false, required: true
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }
 
-  // volume_type - computed: true, optional: false, required: false
+  // volume_type - computed: true, optional: false, required: true
   public get volumeType() {
     return this.getStringAttribute('volume_type');
   }
 }
-export class DataAwsInstanceEphemeralBlockDevice extends cdktf.ComplexComputedList {
+export class DataAwsInstanceEnclaveOptions extends ComplexComputedList {
 
-  // device_name - computed: true, optional: false, required: false
+  // enabled - computed: true, optional: false, required: true
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+}
+export class DataAwsInstanceEphemeralBlockDevice extends ComplexComputedList {
+
+  // device_name - computed: true, optional: false, required: true
   public get deviceName() {
     return this.getStringAttribute('device_name');
   }
 
-  // no_device - computed: true, optional: false, required: false
+  // no_device - computed: true, optional: false, required: true
   public get noDevice() {
     return this.getBooleanAttribute('no_device');
   }
 
-  // virtual_name - computed: true, optional: false, required: false
+  // virtual_name - computed: true, optional: false, required: true
   public get virtualName() {
     return this.getStringAttribute('virtual_name');
   }
 }
-export class DataAwsInstanceMetadataOptions extends cdktf.ComplexComputedList {
+export class DataAwsInstanceMetadataOptions extends ComplexComputedList {
 
-  // http_endpoint - computed: true, optional: false, required: false
+  // http_endpoint - computed: true, optional: false, required: true
   public get httpEndpoint() {
     return this.getStringAttribute('http_endpoint');
   }
 
-  // http_put_response_hop_limit - computed: true, optional: false, required: false
+  // http_put_response_hop_limit - computed: true, optional: false, required: true
   public get httpPutResponseHopLimit() {
     return this.getNumberAttribute('http_put_response_hop_limit');
   }
 
-  // http_tokens - computed: true, optional: false, required: false
+  // http_tokens - computed: true, optional: false, required: true
   public get httpTokens() {
     return this.getStringAttribute('http_tokens');
   }
 }
-export class DataAwsInstanceRootBlockDevice extends cdktf.ComplexComputedList {
+export class DataAwsInstanceRootBlockDevice extends ComplexComputedList {
 
-  // delete_on_termination - computed: true, optional: false, required: false
+  // delete_on_termination - computed: true, optional: false, required: true
   public get deleteOnTermination() {
     return this.getBooleanAttribute('delete_on_termination');
   }
 
-  // device_name - computed: true, optional: false, required: false
+  // device_name - computed: true, optional: false, required: true
   public get deviceName() {
     return this.getStringAttribute('device_name');
   }
 
-  // encrypted - computed: true, optional: false, required: false
+  // encrypted - computed: true, optional: false, required: true
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
 
-  // iops - computed: true, optional: false, required: false
+  // iops - computed: true, optional: false, required: true
   public get iops() {
     return this.getNumberAttribute('iops');
   }
 
-  // kms_key_id - computed: true, optional: false, required: false
+  // kms_key_id - computed: true, optional: false, required: true
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // volume_id - computed: true, optional: false, required: false
+  // tags - computed: true, optional: false, required: true
+  public get tags() {
+    return 'not implemented' as any;
+  }
+
+  // throughput - computed: true, optional: false, required: true
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+
+  // volume_id - computed: true, optional: false, required: true
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
 
-  // volume_size - computed: true, optional: false, required: false
+  // volume_size - computed: true, optional: false, required: true
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }
 
-  // volume_type - computed: true, optional: false, required: false
+  // volume_type - computed: true, optional: false, required: true
   public get volumeType() {
     return this.getStringAttribute('volume_type');
   }
@@ -150,18 +179,9 @@ export interface DataAwsInstanceFilter {
   readonly values: string[];
 }
 
-function dataAwsInstanceFilterToTerraform(struct?: DataAwsInstanceFilter): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
-
 // Resource
 
-export class DataAwsInstance extends cdktf.TerraformDataSource {
+export class DataAwsInstance extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -190,47 +210,52 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // ami - computed: true, optional: false, required: false
+  // ami - computed: true, optional: false, required: true
   public get ami() {
     return this.getStringAttribute('ami');
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // associate_public_ip_address - computed: true, optional: false, required: false
+  // associate_public_ip_address - computed: true, optional: false, required: true
   public get associatePublicIpAddress() {
     return this.getBooleanAttribute('associate_public_ip_address');
   }
 
-  // availability_zone - computed: true, optional: false, required: false
+  // availability_zone - computed: true, optional: false, required: true
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
 
-  // credit_specification - computed: true, optional: false, required: false
+  // credit_specification - computed: true, optional: false, required: true
   public creditSpecification(index: string) {
     return new DataAwsInstanceCreditSpecification(this, 'credit_specification', index);
   }
 
-  // disable_api_termination - computed: true, optional: false, required: false
+  // disable_api_termination - computed: true, optional: false, required: true
   public get disableApiTermination() {
     return this.getBooleanAttribute('disable_api_termination');
   }
 
-  // ebs_block_device - computed: true, optional: false, required: false
+  // ebs_block_device - computed: true, optional: false, required: true
   public ebsBlockDevice(index: string) {
     return new DataAwsInstanceEbsBlockDevice(this, 'ebs_block_device', index);
   }
 
-  // ebs_optimized - computed: true, optional: false, required: false
+  // ebs_optimized - computed: true, optional: false, required: true
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
 
-  // ephemeral_block_device - computed: true, optional: false, required: false
+  // enclave_options - computed: true, optional: false, required: true
+  public enclaveOptions(index: string) {
+    return new DataAwsInstanceEnclaveOptions(this, 'enclave_options', index);
+  }
+
+  // ephemeral_block_device - computed: true, optional: false, required: true
   public ephemeralBlockDevice(index: string) {
     return new DataAwsInstanceEphemeralBlockDevice(this, 'ephemeral_block_device', index);
   }
@@ -238,199 +263,173 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
   // get_password_data - computed: false, optional: true, required: false
   private _getPasswordData?: boolean;
   public get fetchPasswordData() {
-    return this.getBooleanAttribute('get_password_data');
+    return this._getPasswordData;
   }
-  public set fetchPasswordData(value: boolean ) {
+  public set fetchPasswordData(value: boolean | undefined) {
     this._getPasswordData = value;
-  }
-  public resetFetchPasswordData() {
-    this._getPasswordData = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fetchPasswordDataInput() {
-    return this._getPasswordData
   }
 
   // get_user_data - computed: false, optional: true, required: false
   private _getUserData?: boolean;
   public get fetchUserData() {
-    return this.getBooleanAttribute('get_user_data');
+    return this._getUserData;
   }
-  public set fetchUserData(value: boolean ) {
+  public set fetchUserData(value: boolean | undefined) {
     this._getUserData = value;
   }
-  public resetFetchUserData() {
-    this._getUserData = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fetchUserDataInput() {
-    return this._getUserData
-  }
 
-  // host_id - computed: true, optional: false, required: false
+  // host_id - computed: true, optional: false, required: true
   public get hostId() {
     return this.getStringAttribute('host_id');
   }
 
-  // iam_instance_profile - computed: true, optional: false, required: false
+  // iam_instance_profile - computed: true, optional: false, required: true
   public get iamInstanceProfile() {
     return this.getStringAttribute('iam_instance_profile');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // instance_id - computed: false, optional: true, required: false
   private _instanceId?: string;
   public get instanceId() {
-    return this.getStringAttribute('instance_id');
+    return this._instanceId;
   }
-  public set instanceId(value: string ) {
+  public set instanceId(value: string | undefined) {
     this._instanceId = value;
   }
-  public resetInstanceId() {
-    this._instanceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceIdInput() {
-    return this._instanceId
-  }
 
-  // instance_state - computed: true, optional: false, required: false
+  // instance_state - computed: true, optional: false, required: true
   public get instanceState() {
     return this.getStringAttribute('instance_state');
   }
 
   // instance_tags - computed: true, optional: true, required: false
   private _instanceTags?: { [key: string]: string }
-  public get instanceTags(): { [key: string]: string } {
-    return this.interpolationForAttribute('instance_tags') as any; // Getting the computed value is not yet implemented
+  public get instanceTags(): { [key: string]: string } | undefined {
+    return this._instanceTags; // Getting the computed value is not yet implemented
   }
-  public set instanceTags(value: { [key: string]: string }) {
+  public set instanceTags(value: { [key: string]: string } | undefined) {
     this._instanceTags = value;
   }
-  public resetInstanceTags() {
-    this._instanceTags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceTagsInput() {
-    return this._instanceTags
-  }
 
-  // instance_type - computed: true, optional: false, required: false
+  // instance_type - computed: true, optional: false, required: true
   public get instanceType() {
     return this.getStringAttribute('instance_type');
   }
 
-  // key_name - computed: true, optional: false, required: false
+  // key_name - computed: true, optional: false, required: true
   public get keyName() {
     return this.getStringAttribute('key_name');
   }
 
-  // metadata_options - computed: true, optional: false, required: false
+  // metadata_options - computed: true, optional: false, required: true
   public metadataOptions(index: string) {
     return new DataAwsInstanceMetadataOptions(this, 'metadata_options', index);
   }
 
-  // monitoring - computed: true, optional: false, required: false
+  // monitoring - computed: true, optional: false, required: true
   public get monitoring() {
     return this.getBooleanAttribute('monitoring');
   }
 
-  // network_interface_id - computed: true, optional: false, required: false
+  // network_interface_id - computed: true, optional: false, required: true
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
   }
 
-  // outpost_arn - computed: true, optional: false, required: false
+  // outpost_arn - computed: true, optional: false, required: true
   public get outpostArn() {
     return this.getStringAttribute('outpost_arn');
   }
 
-  // password_data - computed: true, optional: false, required: false
+  // password_data - computed: true, optional: false, required: true
   public get passwordData() {
     return this.getStringAttribute('password_data');
   }
 
-  // placement_group - computed: true, optional: false, required: false
+  // placement_group - computed: true, optional: false, required: true
   public get placementGroup() {
     return this.getStringAttribute('placement_group');
   }
 
-  // private_dns - computed: true, optional: false, required: false
+  // private_dns - computed: true, optional: false, required: true
   public get privateDns() {
     return this.getStringAttribute('private_dns');
   }
 
-  // private_ip - computed: true, optional: false, required: false
+  // private_ip - computed: true, optional: false, required: true
   public get privateIp() {
     return this.getStringAttribute('private_ip');
   }
 
-  // public_dns - computed: true, optional: false, required: false
+  // public_dns - computed: true, optional: false, required: true
   public get publicDns() {
     return this.getStringAttribute('public_dns');
   }
 
-  // public_ip - computed: true, optional: false, required: false
+  // public_ip - computed: true, optional: false, required: true
   public get publicIp() {
     return this.getStringAttribute('public_ip');
   }
 
-  // root_block_device - computed: true, optional: false, required: false
+  // root_block_device - computed: true, optional: false, required: true
   public rootBlockDevice(index: string) {
     return new DataAwsInstanceRootBlockDevice(this, 'root_block_device', index);
   }
 
-  // security_groups - computed: true, optional: false, required: false
+  // secondary_private_ips - computed: true, optional: false, required: true
+  public get secondaryPrivateIps() {
+    return this.getListAttribute('secondary_private_ips');
+  }
+
+  // security_groups - computed: true, optional: false, required: true
   public get securityGroups() {
     return this.getListAttribute('security_groups');
   }
 
-  // source_dest_check - computed: true, optional: false, required: false
+  // source_dest_check - computed: true, optional: false, required: true
   public get sourceDestCheck() {
     return this.getBooleanAttribute('source_dest_check');
   }
 
-  // subnet_id - computed: true, optional: false, required: false
+  // subnet_id - computed: true, optional: false, required: true
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } | undefined {
+    return this._tags; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
   }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
-  }
 
-  // tenancy - computed: true, optional: false, required: false
+  // tenancy - computed: true, optional: false, required: true
   public get tenancy() {
     return this.getStringAttribute('tenancy');
   }
 
-  // user_data - computed: true, optional: false, required: false
+  // user_data - computed: true, optional: false, required: true
   public get userData() {
     return this.getStringAttribute('user_data');
   }
 
-  // user_data_base64 - computed: true, optional: false, required: false
+  // user_data_base64 - computed: true, optional: false, required: true
   public get userDataBase64() {
     return this.getStringAttribute('user_data_base64');
   }
 
-  // vpc_security_group_ids - computed: true, optional: false, required: false
+  // vpc_security_group_ids - computed: true, optional: false, required: true
   public get vpcSecurityGroupIds() {
     return this.getListAttribute('vpc_security_group_ids');
   }
@@ -438,17 +437,10 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsInstanceFilter[];
   public get filter() {
-    return this.interpolationForAttribute('filter') as any;
+    return this._filter;
   }
-  public set filter(value: DataAwsInstanceFilter[] ) {
+  public set filter(value: DataAwsInstanceFilter[] | undefined) {
     this._filter = value;
-  }
-  public resetFilter() {
-    this._filter = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter
   }
 
   // =========
@@ -457,12 +449,12 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      get_password_data: cdktf.booleanToTerraform(this._getPasswordData),
-      get_user_data: cdktf.booleanToTerraform(this._getUserData),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      instance_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._instanceTags),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      filter: cdktf.listMapper(dataAwsInstanceFilterToTerraform)(this._filter),
+      get_password_data: this._getPasswordData,
+      get_user_data: this._getUserData,
+      instance_id: this._instanceId,
+      instance_tags: this._instanceTags,
+      tags: this._tags,
+      filter: this._filter,
     };
   }
 }

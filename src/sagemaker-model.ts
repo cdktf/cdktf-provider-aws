@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
+export interface SagemakerModelConfig extends TerraformMetaArguments {
   readonly enableNetworkIsolation?: boolean;
   readonly executionRoleArn: string;
   readonly name?: string;
@@ -18,57 +19,38 @@ export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   /** vpc_config block */
   readonly vpcConfig?: SagemakerModelVpcConfig[];
 }
+export interface SagemakerModelContainerImageConfig {
+  readonly repositoryAccessMode: string;
+}
 export interface SagemakerModelContainer {
   readonly containerHostname?: string;
   readonly environment?: { [key: string]: string };
   readonly image: string;
+  readonly mode?: string;
   readonly modelDataUrl?: string;
+  /** image_config block */
+  readonly imageConfig?: SagemakerModelContainerImageConfig[];
 }
-
-function sagemakerModelContainerToTerraform(struct?: SagemakerModelContainer): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    container_hostname: cdktf.stringToTerraform(struct!.containerHostname),
-    environment: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.environment),
-    image: cdktf.stringToTerraform(struct!.image),
-    model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
-  }
+export interface SagemakerModelPrimaryContainerImageConfig {
+  readonly repositoryAccessMode: string;
 }
-
 export interface SagemakerModelPrimaryContainer {
   readonly containerHostname?: string;
   readonly environment?: { [key: string]: string };
   readonly image: string;
+  readonly mode?: string;
   readonly modelDataUrl?: string;
+  /** image_config block */
+  readonly imageConfig?: SagemakerModelPrimaryContainerImageConfig[];
 }
-
-function sagemakerModelPrimaryContainerToTerraform(struct?: SagemakerModelPrimaryContainer): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    container_hostname: cdktf.stringToTerraform(struct!.containerHostname),
-    environment: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.environment),
-    image: cdktf.stringToTerraform(struct!.image),
-    model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
-  }
-}
-
 export interface SagemakerModelVpcConfig {
   readonly securityGroupIds: string[];
   readonly subnets: string[];
 }
 
-function sagemakerModelVpcConfigToTerraform(struct?: SagemakerModelVpcConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
-  }
-}
-
-
 // Resource
 
-export class SagemakerModel extends cdktf.TerraformResource {
+export class SagemakerModel extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -98,7 +80,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -106,115 +88,73 @@ export class SagemakerModel extends cdktf.TerraformResource {
   // enable_network_isolation - computed: false, optional: true, required: false
   private _enableNetworkIsolation?: boolean;
   public get enableNetworkIsolation() {
-    return this.getBooleanAttribute('enable_network_isolation');
+    return this._enableNetworkIsolation;
   }
-  public set enableNetworkIsolation(value: boolean ) {
+  public set enableNetworkIsolation(value: boolean | undefined) {
     this._enableNetworkIsolation = value;
-  }
-  public resetEnableNetworkIsolation() {
-    this._enableNetworkIsolation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableNetworkIsolationInput() {
-    return this._enableNetworkIsolation
   }
 
   // execution_role_arn - computed: false, optional: false, required: true
   private _executionRoleArn: string;
   public get executionRoleArn() {
-    return this.getStringAttribute('execution_role_arn');
+    return this._executionRoleArn;
   }
   public set executionRoleArn(value: string) {
     this._executionRoleArn = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get executionRoleArnInput() {
-    return this._executionRoleArn
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // container - computed: false, optional: true, required: false
   private _container?: SagemakerModelContainer[];
   public get container() {
-    return this.interpolationForAttribute('container') as any;
+    return this._container;
   }
-  public set container(value: SagemakerModelContainer[] ) {
+  public set container(value: SagemakerModelContainer[] | undefined) {
     this._container = value;
-  }
-  public resetContainer() {
-    this._container = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get containerInput() {
-    return this._container
   }
 
   // primary_container - computed: false, optional: true, required: false
   private _primaryContainer?: SagemakerModelPrimaryContainer[];
   public get primaryContainer() {
-    return this.interpolationForAttribute('primary_container') as any;
+    return this._primaryContainer;
   }
-  public set primaryContainer(value: SagemakerModelPrimaryContainer[] ) {
+  public set primaryContainer(value: SagemakerModelPrimaryContainer[] | undefined) {
     this._primaryContainer = value;
-  }
-  public resetPrimaryContainer() {
-    this._primaryContainer = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get primaryContainerInput() {
-    return this._primaryContainer
   }
 
   // vpc_config - computed: false, optional: true, required: false
   private _vpcConfig?: SagemakerModelVpcConfig[];
   public get vpcConfig() {
-    return this.interpolationForAttribute('vpc_config') as any;
+    return this._vpcConfig;
   }
-  public set vpcConfig(value: SagemakerModelVpcConfig[] ) {
+  public set vpcConfig(value: SagemakerModelVpcConfig[] | undefined) {
     this._vpcConfig = value;
-  }
-  public resetVpcConfig() {
-    this._vpcConfig = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcConfigInput() {
-    return this._vpcConfig
   }
 
   // =========
@@ -223,13 +163,13 @@ export class SagemakerModel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable_network_isolation: cdktf.booleanToTerraform(this._enableNetworkIsolation),
-      execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      container: cdktf.listMapper(sagemakerModelContainerToTerraform)(this._container),
-      primary_container: cdktf.listMapper(sagemakerModelPrimaryContainerToTerraform)(this._primaryContainer),
-      vpc_config: cdktf.listMapper(sagemakerModelVpcConfigToTerraform)(this._vpcConfig),
+      enable_network_isolation: this._enableNetworkIsolation,
+      execution_role_arn: this._executionRoleArn,
+      name: this._name,
+      tags: this._tags,
+      container: this._container,
+      primary_container: this._primaryContainer,
+      vpc_config: this._vpcConfig,
     };
   }
 }

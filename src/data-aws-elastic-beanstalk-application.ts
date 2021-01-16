@@ -2,31 +2,33 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface DataAwsElasticBeanstalkApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsElasticBeanstalkApplicationConfig extends TerraformMetaArguments {
   readonly name: string;
 }
-export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends cdktf.ComplexComputedList {
+export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends ComplexComputedList {
 
-  // delete_source_from_s3 - computed: true, optional: false, required: false
+  // delete_source_from_s3 - computed: true, optional: false, required: true
   public get deleteSourceFromS3() {
     return this.getBooleanAttribute('delete_source_from_s3');
   }
 
-  // max_age_in_days - computed: true, optional: false, required: false
+  // max_age_in_days - computed: true, optional: false, required: true
   public get maxAgeInDays() {
     return this.getNumberAttribute('max_age_in_days');
   }
 
-  // max_count - computed: true, optional: false, required: false
+  // max_count - computed: true, optional: false, required: true
   public get maxCount() {
     return this.getNumberAttribute('max_count');
   }
 
-  // service_role - computed: true, optional: false, required: false
+  // service_role - computed: true, optional: false, required: true
   public get serviceRole() {
     return this.getStringAttribute('service_role');
   }
@@ -34,7 +36,7 @@ export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends cdktf
 
 // Resource
 
-export class DataAwsElasticBeanstalkApplication extends cdktf.TerraformDataSource {
+export class DataAwsElasticBeanstalkApplication extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -58,37 +60,37 @@ export class DataAwsElasticBeanstalkApplication extends cdktf.TerraformDataSourc
   // ATTRIBUTES
   // ==========
 
-  // appversion_lifecycle - computed: true, optional: false, required: false
+  // appversion_lifecycle - computed: true, optional: false, required: true
   public appversionLifecycle(index: string) {
     return new DataAwsElasticBeanstalkApplicationAppversionLifecycle(this, 'appversion_lifecycle', index);
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // =========
@@ -97,7 +99,7 @@ export class DataAwsElasticBeanstalkApplication extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: this._name,
     };
   }
 }

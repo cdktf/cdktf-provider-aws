@@ -2,16 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface CurReportDefinitionConfig extends TerraformMetaArguments {
   readonly additionalArtifacts?: string[];
   readonly additionalSchemaElements: string[];
   readonly compression: string;
   readonly format: string;
+  readonly refreshClosedReports?: boolean;
   readonly reportName: string;
+  readonly reportVersioning?: string;
   readonly s3Bucket: string;
   readonly s3Prefix?: string;
   readonly s3Region: string;
@@ -20,7 +23,7 @@ export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments 
 
 // Resource
 
-export class CurReportDefinition extends cdktf.TerraformResource {
+export class CurReportDefinition extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +44,9 @@ export class CurReportDefinition extends cdktf.TerraformResource {
     this._additionalSchemaElements = config.additionalSchemaElements;
     this._compression = config.compression;
     this._format = config.format;
+    this._refreshClosedReports = config.refreshClosedReports;
     this._reportName = config.reportName;
+    this._reportVersioning = config.reportVersioning;
     this._s3Bucket = config.s3Bucket;
     this._s3Prefix = config.s3Prefix;
     this._s3Region = config.s3Region;
@@ -55,129 +60,109 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   // additional_artifacts - computed: false, optional: true, required: false
   private _additionalArtifacts?: string[];
   public get additionalArtifacts() {
-    return this.getListAttribute('additional_artifacts');
+    return this._additionalArtifacts;
   }
-  public set additionalArtifacts(value: string[] ) {
+  public set additionalArtifacts(value: string[] | undefined) {
     this._additionalArtifacts = value;
-  }
-  public resetAdditionalArtifacts() {
-    this._additionalArtifacts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get additionalArtifactsInput() {
-    return this._additionalArtifacts
   }
 
   // additional_schema_elements - computed: false, optional: false, required: true
   private _additionalSchemaElements: string[];
   public get additionalSchemaElements() {
-    return this.getListAttribute('additional_schema_elements');
+    return this._additionalSchemaElements;
   }
   public set additionalSchemaElements(value: string[]) {
     this._additionalSchemaElements = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get additionalSchemaElementsInput() {
-    return this._additionalSchemaElements
   }
 
   // compression - computed: false, optional: false, required: true
   private _compression: string;
   public get compression() {
-    return this.getStringAttribute('compression');
+    return this._compression;
   }
   public set compression(value: string) {
     this._compression = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get compressionInput() {
-    return this._compression
   }
 
   // format - computed: false, optional: false, required: true
   private _format: string;
   public get format() {
-    return this.getStringAttribute('format');
+    return this._format;
   }
   public set format(value: string) {
     this._format = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get formatInput() {
-    return this._format
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
+  }
+
+  // refresh_closed_reports - computed: false, optional: true, required: false
+  private _refreshClosedReports?: boolean;
+  public get refreshClosedReports() {
+    return this._refreshClosedReports;
+  }
+  public set refreshClosedReports(value: boolean | undefined) {
+    this._refreshClosedReports = value;
   }
 
   // report_name - computed: false, optional: false, required: true
   private _reportName: string;
   public get reportName() {
-    return this.getStringAttribute('report_name');
+    return this._reportName;
   }
   public set reportName(value: string) {
     this._reportName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get reportNameInput() {
-    return this._reportName
+
+  // report_versioning - computed: false, optional: true, required: false
+  private _reportVersioning?: string;
+  public get reportVersioning() {
+    return this._reportVersioning;
+  }
+  public set reportVersioning(value: string | undefined) {
+    this._reportVersioning = value;
   }
 
   // s3_bucket - computed: false, optional: false, required: true
   private _s3Bucket: string;
   public get s3Bucket() {
-    return this.getStringAttribute('s3_bucket');
+    return this._s3Bucket;
   }
   public set s3Bucket(value: string) {
     this._s3Bucket = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get s3BucketInput() {
-    return this._s3Bucket
   }
 
   // s3_prefix - computed: false, optional: true, required: false
   private _s3Prefix?: string;
   public get s3Prefix() {
-    return this.getStringAttribute('s3_prefix');
+    return this._s3Prefix;
   }
-  public set s3Prefix(value: string ) {
+  public set s3Prefix(value: string | undefined) {
     this._s3Prefix = value;
-  }
-  public resetS3Prefix() {
-    this._s3Prefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get s3PrefixInput() {
-    return this._s3Prefix
   }
 
   // s3_region - computed: false, optional: false, required: true
   private _s3Region: string;
   public get s3Region() {
-    return this.getStringAttribute('s3_region');
+    return this._s3Region;
   }
   public set s3Region(value: string) {
     this._s3Region = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get s3RegionInput() {
-    return this._s3Region
   }
 
   // time_unit - computed: false, optional: false, required: true
   private _timeUnit: string;
   public get timeUnit() {
-    return this.getStringAttribute('time_unit');
+    return this._timeUnit;
   }
   public set timeUnit(value: string) {
     this._timeUnit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeUnitInput() {
-    return this._timeUnit
   }
 
   // =========
@@ -186,15 +171,17 @@ export class CurReportDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_artifacts: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalArtifacts),
-      additional_schema_elements: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalSchemaElements),
-      compression: cdktf.stringToTerraform(this._compression),
-      format: cdktf.stringToTerraform(this._format),
-      report_name: cdktf.stringToTerraform(this._reportName),
-      s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
-      s3_prefix: cdktf.stringToTerraform(this._s3Prefix),
-      s3_region: cdktf.stringToTerraform(this._s3Region),
-      time_unit: cdktf.stringToTerraform(this._timeUnit),
+      additional_artifacts: this._additionalArtifacts,
+      additional_schema_elements: this._additionalSchemaElements,
+      compression: this._compression,
+      format: this._format,
+      refresh_closed_reports: this._refreshClosedReports,
+      report_name: this._reportName,
+      report_versioning: this._reportVersioning,
+      s3_bucket: this._s3Bucket,
+      s3_prefix: this._s3Prefix,
+      s3_region: this._s3Region,
+      time_unit: this._timeUnit,
     };
   }
 }

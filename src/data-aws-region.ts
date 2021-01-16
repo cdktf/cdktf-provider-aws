@@ -2,19 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRegionConfig extends cdktf.TerraformMetaArguments {
-  readonly current?: boolean;
+export interface DataAwsRegionConfig extends TerraformMetaArguments {
   readonly endpoint?: string;
   readonly name?: string;
 }
 
 // Resource
 
-export class DataAwsRegion extends cdktf.TerraformDataSource {
+export class DataAwsRegion extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -31,7 +31,6 @@ export class DataAwsRegion extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._current = config.current;
     this._endpoint = config.endpoint;
     this._name = config.name;
   }
@@ -40,23 +39,7 @@ export class DataAwsRegion extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // current - computed: true, optional: true, required: false
-  private _current?: boolean;
-  public get current() {
-    return this.getBooleanAttribute('current');
-  }
-  public set current(value: boolean) {
-    this._current = value;
-  }
-  public resetCurrent() {
-    this._current = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get currentInput() {
-    return this._current
-  }
-
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
@@ -64,38 +47,28 @@ export class DataAwsRegion extends cdktf.TerraformDataSource {
   // endpoint - computed: true, optional: true, required: false
   private _endpoint?: string;
   public get endpoint() {
-    return this.getStringAttribute('endpoint');
+    return this._endpoint ?? this.getStringAttribute('endpoint');
   }
-  public set endpoint(value: string) {
+  public set endpoint(value: string | undefined) {
     this._endpoint = value;
-  }
-  public resetEndpoint() {
-    this._endpoint = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get endpointInput() {
-    return this._endpoint
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // =========
@@ -104,9 +77,8 @@ export class DataAwsRegion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      current: cdktf.booleanToTerraform(this._current),
-      endpoint: cdktf.stringToTerraform(this._endpoint),
-      name: cdktf.stringToTerraform(this._name),
+      endpoint: this._endpoint,
+      name: this._name,
     };
   }
 }

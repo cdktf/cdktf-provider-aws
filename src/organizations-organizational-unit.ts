@@ -2,32 +2,34 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
+import { ComplexComputedList } from "cdktf";
 
 // Configuration
 
-export interface OrganizationsOrganizationalUnitConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationsOrganizationalUnitConfig extends TerraformMetaArguments {
   readonly name: string;
   readonly parentId: string;
 }
-export class OrganizationsOrganizationalUnitAccounts extends cdktf.ComplexComputedList {
+export class OrganizationsOrganizationalUnitAccounts extends ComplexComputedList {
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // email - computed: true, optional: false, required: false
+  // email - computed: true, optional: false, required: true
   public get email() {
     return this.getStringAttribute('email');
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: false, required: true
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: false, required: true
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -35,7 +37,7 @@ export class OrganizationsOrganizationalUnitAccounts extends cdktf.ComplexComput
 
 // Resource
 
-export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
+export class OrganizationsOrganizationalUnit extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -60,45 +62,41 @@ export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // accounts - computed: true, optional: false, required: false
+  // accounts - computed: true, optional: false, required: true
   public accounts(index: string) {
     return new OrganizationsOrganizationalUnitAccounts(this, 'accounts', index);
   }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // parent_id - computed: false, optional: false, required: true
   private _parentId: string;
   public get parentId() {
-    return this.getStringAttribute('parent_id');
+    return this._parentId;
   }
   public set parentId(value: string) {
     this._parentId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parentIdInput() {
-    return this._parentId
   }
 
   // =========
@@ -107,8 +105,8 @@ export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      parent_id: cdktf.stringToTerraform(this._parentId),
+      name: this._name,
+      parent_id: this._parentId,
     };
   }
 }

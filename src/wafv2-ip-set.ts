@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface Wafv2IpSetConfig extends cdktf.TerraformMetaArguments {
+export interface Wafv2IpSetConfig extends TerraformMetaArguments {
   readonly addresses?: string[];
   readonly description?: string;
   readonly ipAddressVersion: string;
@@ -17,7 +18,7 @@ export interface Wafv2IpSetConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class Wafv2IpSet extends cdktf.TerraformResource {
+export class Wafv2IpSet extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,20 +50,13 @@ export class Wafv2IpSet extends cdktf.TerraformResource {
   // addresses - computed: false, optional: true, required: false
   private _addresses?: string[];
   public get addresses() {
-    return this.getListAttribute('addresses');
+    return this._addresses;
   }
-  public set addresses(value: string[] ) {
+  public set addresses(value: string[] | undefined) {
     this._addresses = value;
   }
-  public resetAddresses() {
-    this._addresses = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get addressesInput() {
-    return this._addresses
-  }
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -70,38 +64,31 @@ export class Wafv2IpSet extends cdktf.TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this.getStringAttribute('description');
+    return this._description;
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
-  }
-  public resetDescription() {
-    this._description = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // ip_address_version - computed: false, optional: false, required: true
   private _ipAddressVersion: string;
   public get ipAddressVersion() {
-    return this.getStringAttribute('ip_address_version');
+    return this._ipAddressVersion;
   }
   public set ipAddressVersion(value: string) {
     this._ipAddressVersion = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get ipAddressVersionInput() {
-    return this._ipAddressVersion
-  }
 
-  // lock_token - computed: true, optional: false, required: false
+  // lock_token - computed: true, optional: false, required: true
   public get lockToken() {
     return this.getStringAttribute('lock_token');
   }
@@ -109,43 +96,28 @@ export class Wafv2IpSet extends cdktf.TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name;
   }
   public set name(value: string) {
     this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // scope - computed: false, optional: false, required: true
   private _scope: string;
   public get scope() {
-    return this.getStringAttribute('scope');
+    return this._scope;
   }
   public set scope(value: string) {
     this._scope = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scopeInput() {
-    return this._scope
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this.interpolationForAttribute('tags') as any;
+    return this._tags;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | undefined) {
     this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
-    return this._tags
   }
 
   // =========
@@ -154,12 +126,12 @@ export class Wafv2IpSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._addresses),
-      description: cdktf.stringToTerraform(this._description),
-      ip_address_version: cdktf.stringToTerraform(this._ipAddressVersion),
-      name: cdktf.stringToTerraform(this._name),
-      scope: cdktf.stringToTerraform(this._scope),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      addresses: this._addresses,
+      description: this._description,
+      ip_address_version: this._ipAddressVersion,
+      name: this._name,
+      scope: this._scope,
+      tags: this._tags,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformDataSource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsLambdaLayerVersionConfig extends TerraformMetaArguments {
   readonly compatibleRuntime?: string;
   readonly layerName: string;
   readonly version?: number;
@@ -14,7 +15,7 @@ export interface DataAwsLambdaLayerVersionConfig extends cdktf.TerraformMetaArgu
 
 // Resource
 
-export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
+export class DataAwsLambdaLayerVersion extends TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -40,7 +41,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: false, required: true
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -48,40 +49,37 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
   // compatible_runtime - computed: false, optional: true, required: false
   private _compatibleRuntime?: string;
   public get compatibleRuntime() {
-    return this.getStringAttribute('compatible_runtime');
+    return this._compatibleRuntime;
   }
-  public set compatibleRuntime(value: string ) {
+  public set compatibleRuntime(value: string | undefined) {
     this._compatibleRuntime = value;
   }
-  public resetCompatibleRuntime() {
-    this._compatibleRuntime = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get compatibleRuntimeInput() {
-    return this._compatibleRuntime
-  }
 
-  // compatible_runtimes - computed: true, optional: false, required: false
+  // compatible_runtimes - computed: true, optional: false, required: true
   public get compatibleRuntimes() {
     return this.getListAttribute('compatible_runtimes');
   }
 
-  // created_date - computed: true, optional: false, required: false
+  // created_date - computed: true, optional: false, required: true
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: true, optional: false, required: true
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
-  // layer_arn - computed: true, optional: false, required: false
+  // layer_arn - computed: true, optional: false, required: true
   public get layerArn() {
     return this.getStringAttribute('layer_arn');
   }
@@ -89,27 +87,33 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
   // layer_name - computed: false, optional: false, required: true
   private _layerName: string;
   public get layerName() {
-    return this.getStringAttribute('layer_name');
+    return this._layerName;
   }
   public set layerName(value: string) {
     this._layerName = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get layerNameInput() {
-    return this._layerName
-  }
 
-  // license_info - computed: true, optional: false, required: false
+  // license_info - computed: true, optional: false, required: true
   public get licenseInfo() {
     return this.getStringAttribute('license_info');
   }
 
-  // source_code_hash - computed: true, optional: false, required: false
+  // signing_job_arn - computed: true, optional: false, required: true
+  public get signingJobArn() {
+    return this.getStringAttribute('signing_job_arn');
+  }
+
+  // signing_profile_version_arn - computed: true, optional: false, required: true
+  public get signingProfileVersionArn() {
+    return this.getStringAttribute('signing_profile_version_arn');
+  }
+
+  // source_code_hash - computed: true, optional: false, required: true
   public get sourceCodeHash() {
     return this.getStringAttribute('source_code_hash');
   }
 
-  // source_code_size - computed: true, optional: false, required: false
+  // source_code_size - computed: true, optional: false, required: true
   public get sourceCodeSize() {
     return this.getNumberAttribute('source_code_size');
   }
@@ -117,17 +121,10 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
   // version - computed: true, optional: true, required: false
   private _version?: number;
   public get version() {
-    return this.getNumberAttribute('version');
+    return this._version ?? this.getNumberAttribute('version');
   }
-  public set version(value: number) {
+  public set version(value: number | undefined) {
     this._version = value;
-  }
-  public resetVersion() {
-    this._version = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version
   }
 
   // =========
@@ -136,9 +133,9 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compatible_runtime: cdktf.stringToTerraform(this._compatibleRuntime),
-      layer_name: cdktf.stringToTerraform(this._layerName),
-      version: cdktf.numberToTerraform(this._version),
+      compatible_runtime: this._compatibleRuntime,
+      layer_name: this._layerName,
+      version: this._version,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface LbTargetGroupAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface LbTargetGroupAttachmentConfig extends TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly port?: number;
   readonly targetGroupArn: string;
@@ -15,7 +16,7 @@ export interface LbTargetGroupAttachmentConfig extends cdktf.TerraformMetaArgume
 
 // Resource
 
-export class LbTargetGroupAttachment extends cdktf.TerraformResource {
+export class LbTargetGroupAttachment extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,64 +46,46 @@ export class LbTargetGroupAttachment extends cdktf.TerraformResource {
   // availability_zone - computed: false, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this.getStringAttribute('availability_zone');
+    return this._availabilityZone;
   }
-  public set availabilityZone(value: string ) {
+  public set availabilityZone(value: string | undefined) {
     this._availabilityZone = value;
-  }
-  public resetAvailabilityZone() {
-    this._availabilityZone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZoneInput() {
-    return this._availabilityZone
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // port - computed: false, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this.getNumberAttribute('port');
+    return this._port;
   }
-  public set port(value: number ) {
+  public set port(value: number | undefined) {
     this._port = value;
-  }
-  public resetPort() {
-    this._port = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get portInput() {
-    return this._port
   }
 
   // target_group_arn - computed: false, optional: false, required: true
   private _targetGroupArn: string;
   public get targetGroupArn() {
-    return this.getStringAttribute('target_group_arn');
+    return this._targetGroupArn;
   }
   public set targetGroupArn(value: string) {
     this._targetGroupArn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetGroupArnInput() {
-    return this._targetGroupArn
   }
 
   // target_id - computed: false, optional: false, required: true
   private _targetId: string;
   public get targetId() {
-    return this.getStringAttribute('target_id');
+    return this._targetId;
   }
   public set targetId(value: string) {
     this._targetId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get targetIdInput() {
-    return this._targetId
   }
 
   // =========
@@ -111,10 +94,10 @@ export class LbTargetGroupAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      port: cdktf.numberToTerraform(this._port),
-      target_group_arn: cdktf.stringToTerraform(this._targetGroupArn),
-      target_id: cdktf.stringToTerraform(this._targetId),
+      availability_zone: this._availabilityZone,
+      port: this._port,
+      target_group_arn: this._targetGroupArn,
+      target_id: this._targetId,
     };
   }
 }

@@ -2,11 +2,12 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface IamUserPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface IamUserPolicyConfig extends TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly policy: string;
@@ -15,7 +16,7 @@ export interface IamUserPolicyConfig extends cdktf.TerraformMetaArguments {
 
 // Resource
 
-export class IamUserPolicy extends cdktf.TerraformResource {
+export class IamUserPolicy extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,66 +44,48 @@ export class IamUserPolicy extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this.getStringAttribute('name');
+    return this._name ?? this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this.getStringAttribute('name_prefix');
+    return this._namePrefix;
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string | undefined) {
     this._namePrefix = value;
-  }
-  public resetNamePrefix() {
-    this._namePrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namePrefixInput() {
-    return this._namePrefix
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this.getStringAttribute('policy');
+    return this._policy;
   }
   public set policy(value: string) {
     this._policy = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get policyInput() {
-    return this._policy
   }
 
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this.getStringAttribute('user');
+    return this._user;
   }
   public set user(value: string) {
     this._user = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userInput() {
-    return this._user
   }
 
   // =========
@@ -111,10 +94,10 @@ export class IamUserPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      policy: cdktf.stringToTerraform(this._policy),
-      user: cdktf.stringToTerraform(this._user),
+      name: this._name,
+      name_prefix: this._namePrefix,
+      policy: this._policy,
+      user: this._user,
     };
   }
 }

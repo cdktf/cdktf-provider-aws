@@ -2,18 +2,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import { TerraformResource } from 'cdktf';
+import { TerraformMetaArguments } from 'cdktf';
 
 // Configuration
 
-export interface RedshiftSnapshotScheduleAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface RedshiftSnapshotScheduleAssociationConfig extends TerraformMetaArguments {
   readonly clusterIdentifier: string;
   readonly scheduleIdentifier: string;
 }
 
 // Resource
 
-export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource {
+export class RedshiftSnapshotScheduleAssociation extends TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,32 +42,28 @@ export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource
   // cluster_identifier - computed: false, optional: false, required: true
   private _clusterIdentifier: string;
   public get clusterIdentifier() {
-    return this.getStringAttribute('cluster_identifier');
+    return this._clusterIdentifier;
   }
   public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
   }
-  // Temporarily expose input value. Use with caution.
-  public get clusterIdentifierInput() {
-    return this._clusterIdentifier
-  }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string;
   public get id() {
-    return this.getStringAttribute('id');
+    return this._id ?? this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
   }
 
   // schedule_identifier - computed: false, optional: false, required: true
   private _scheduleIdentifier: string;
   public get scheduleIdentifier() {
-    return this.getStringAttribute('schedule_identifier');
+    return this._scheduleIdentifier;
   }
   public set scheduleIdentifier(value: string) {
     this._scheduleIdentifier = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get scheduleIdentifierInput() {
-    return this._scheduleIdentifier
   }
 
   // =========
@@ -75,8 +72,8 @@ export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
-      schedule_identifier: cdktf.stringToTerraform(this._scheduleIdentifier),
+      cluster_identifier: this._clusterIdentifier,
+      schedule_identifier: this._scheduleIdentifier,
     };
   }
 }
