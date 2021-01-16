@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10.17.0
-      - run: npm install @cdktf/provider-project@0.0.35
+      - run: npm install @cdktf/provider-project@0.0.79
       - run: npx projen@0.3.38
       - run: yarn install --frozen-lockfile
       - name: Anti-tamper check

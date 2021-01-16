@@ -270,10 +270,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cdktf/provider-project@0.0.35":
-  version "0.0.35"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.0.35.tgz#a219c9853d9e2a097a7a11fcc7653370471b36e9"
-  integrity sha512-m/wkelGzTRQfF8cGM3gDnvFQtP5AtcV4CK+/M643gkaER2D362b2nIYxKXrQ0ClwJ9X5+yOORuYw17DHPi3jGQ==
+"@cdktf/provider-project@^0.0.79":
+  version "0.0.79"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.0.79.tgz#babd9525d4e4c885b8234316013a8bf91035bb07"
+  integrity sha512-tbgEmgSPWxrrlUftLPU0p2rYjkGYANyjy5fApM8efATm95dRIwX1uOeUKVo5MnsN954Rf3V/ivG4b0HTpk37Yw==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
