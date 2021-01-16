@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsBatchJobQueueConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsBatchJobQueueComputeEnvironmentOrder extends cdktf.ComplexComputedList {
 
@@ -42,6 +43,7 @@ export class DataAwsBatchJobQueue extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -96,6 +98,22 @@ export class DataAwsBatchJobQueue extends cdktf.TerraformDataSource {
     return this.getStringAttribute('status_reason');
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -103,6 +121,7 @@ export class DataAwsBatchJobQueue extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

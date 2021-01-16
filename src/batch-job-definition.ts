@@ -10,6 +10,7 @@ export interface BatchJobDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly containerProperties?: string;
   readonly name: string;
   readonly parameters?: { [key: string]: string };
+  readonly tags?: { [key: string]: string };
   readonly type: string;
   /** retry_strategy block */
   readonly retryStrategy?: BatchJobDefinitionRetryStrategy[];
@@ -61,6 +62,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
     this._containerProperties = config.containerProperties;
     this._name = config.name;
     this._parameters = config.parameters;
+    this._tags = config.tags;
     this._type = config.type;
     this._retryStrategy = config.retryStrategy;
     this._timeout = config.timeout;
@@ -130,6 +132,22 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
     return this.getNumberAttribute('revision');
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
@@ -184,6 +202,7 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
       container_properties: cdktf.stringToTerraform(this._containerProperties),
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       retry_strategy: cdktf.listMapper(batchJobDefinitionRetryStrategyToTerraform)(this._retryStrategy),
       timeout: cdktf.listMapper(batchJobDefinitionTimeoutToTerraform)(this._timeout),

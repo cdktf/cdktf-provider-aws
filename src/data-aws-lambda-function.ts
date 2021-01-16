@@ -95,6 +95,11 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
     return this.getStringAttribute('arn');
   }
 
+  // code_signing_config_arn - computed: true, optional: false, required: false
+  public get codeSigningConfigArn() {
+    return this.getStringAttribute('code_signing_config_arn');
+  }
+
   // dead_letter_config - computed: true, optional: false, required: false
   public deadLetterConfig(index: string) {
     return new DataAwsLambdaFunctionDeadLetterConfig(this, 'dead_letter_config', index);
@@ -197,6 +202,16 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   // runtime - computed: true, optional: false, required: false
   public get runtime() {
     return this.getStringAttribute('runtime');
+  }
+
+  // signing_job_arn - computed: true, optional: false, required: false
+  public get signingJobArn() {
+    return this.getStringAttribute('signing_job_arn');
+  }
+
+  // signing_profile_version_arn - computed: true, optional: false, required: false
+  public get signingProfileVersionArn() {
+    return this.getStringAttribute('signing_profile_version_arn');
   }
 
   // source_code_hash - computed: true, optional: false, required: false

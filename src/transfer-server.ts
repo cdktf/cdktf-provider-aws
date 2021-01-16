@@ -19,13 +19,19 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   readonly endpointDetails?: TransferServerEndpointDetails[];
 }
 export interface TransferServerEndpointDetails {
-  readonly vpcEndpointId: string;
+  readonly addressAllocationIds?: string[];
+  readonly subnetIds?: string[];
+  readonly vpcEndpointId?: string;
+  readonly vpcId?: string;
 }
 
 function transferServerEndpointDetailsToTerraform(struct?: TransferServerEndpointDetails): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    address_allocation_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.addressAllocationIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
     vpc_endpoint_id: cdktf.stringToTerraform(struct!.vpcEndpointId),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
 }
 

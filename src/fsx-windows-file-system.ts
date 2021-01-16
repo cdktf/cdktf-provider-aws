@@ -11,10 +11,13 @@ export interface FsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments
   readonly automaticBackupRetentionDays?: number;
   readonly copyTagsToBackups?: boolean;
   readonly dailyAutomaticBackupStartTime?: string;
+  readonly deploymentType?: string;
   readonly kmsKeyId?: string;
+  readonly preferredSubnetId?: string;
   readonly securityGroupIds?: string[];
   readonly skipFinalBackup?: boolean;
   readonly storageCapacity: number;
+  readonly storageType?: string;
   readonly subnetIds: string[];
   readonly tags?: { [key: string]: string };
   readonly throughputCapacity: number;
@@ -48,6 +51,7 @@ function fsxWindowsFileSystemSelfManagedActiveDirectoryToTerraform(struct?: FsxW
 export interface FsxWindowsFileSystemTimeouts {
   readonly create?: string;
   readonly delete?: string;
+  readonly update?: string;
 }
 
 function fsxWindowsFileSystemTimeoutsToTerraform(struct?: FsxWindowsFileSystemTimeouts): any {
@@ -55,6 +59,7 @@ function fsxWindowsFileSystemTimeoutsToTerraform(struct?: FsxWindowsFileSystemTi
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -82,10 +87,13 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
     this._automaticBackupRetentionDays = config.automaticBackupRetentionDays;
     this._copyTagsToBackups = config.copyTagsToBackups;
     this._dailyAutomaticBackupStartTime = config.dailyAutomaticBackupStartTime;
+    this._deploymentType = config.deploymentType;
     this._kmsKeyId = config.kmsKeyId;
+    this._preferredSubnetId = config.preferredSubnetId;
     this._securityGroupIds = config.securityGroupIds;
     this._skipFinalBackup = config.skipFinalBackup;
     this._storageCapacity = config.storageCapacity;
+    this._storageType = config.storageType;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
     this._throughputCapacity = config.throughputCapacity;
@@ -167,6 +175,22 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
     return this._dailyAutomaticBackupStartTime
   }
 
+  // deployment_type - computed: false, optional: true, required: false
+  private _deploymentType?: string;
+  public get deploymentType() {
+    return this.getStringAttribute('deployment_type');
+  }
+  public set deploymentType(value: string ) {
+    this._deploymentType = value;
+  }
+  public resetDeploymentType() {
+    this._deploymentType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentTypeInput() {
+    return this._deploymentType
+  }
+
   // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
@@ -201,6 +225,32 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
+  }
+
+  // preferred_file_server_ip - computed: true, optional: false, required: false
+  public get preferredFileServerIp() {
+    return this.getStringAttribute('preferred_file_server_ip');
+  }
+
+  // preferred_subnet_id - computed: true, optional: true, required: false
+  private _preferredSubnetId?: string;
+  public get preferredSubnetId() {
+    return this.getStringAttribute('preferred_subnet_id');
+  }
+  public set preferredSubnetId(value: string) {
+    this._preferredSubnetId = value;
+  }
+  public resetPreferredSubnetId() {
+    this._preferredSubnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredSubnetIdInput() {
+    return this._preferredSubnetId
+  }
+
+  // remote_administration_endpoint - computed: true, optional: false, required: false
+  public get remoteAdministrationEndpoint() {
+    return this.getStringAttribute('remote_administration_endpoint');
   }
 
   // security_group_ids - computed: false, optional: true, required: false
@@ -246,6 +296,22 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get storageCapacityInput() {
     return this._storageCapacity
+  }
+
+  // storage_type - computed: false, optional: true, required: false
+  private _storageType?: string;
+  public get storageType() {
+    return this.getStringAttribute('storage_type');
+  }
+  public set storageType(value: string ) {
+    this._storageType = value;
+  }
+  public resetStorageType() {
+    this._storageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTypeInput() {
+    return this._storageType
   }
 
   // subnet_ids - computed: false, optional: false, required: true
@@ -353,10 +419,13 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
       automatic_backup_retention_days: cdktf.numberToTerraform(this._automaticBackupRetentionDays),
       copy_tags_to_backups: cdktf.booleanToTerraform(this._copyTagsToBackups),
       daily_automatic_backup_start_time: cdktf.stringToTerraform(this._dailyAutomaticBackupStartTime),
+      deployment_type: cdktf.stringToTerraform(this._deploymentType),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      preferred_subnet_id: cdktf.stringToTerraform(this._preferredSubnetId),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       skip_final_backup: cdktf.booleanToTerraform(this._skipFinalBackup),
       storage_capacity: cdktf.numberToTerraform(this._storageCapacity),
+      storage_type: cdktf.stringToTerraform(this._storageType),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       throughput_capacity: cdktf.numberToTerraform(this._throughputCapacity),

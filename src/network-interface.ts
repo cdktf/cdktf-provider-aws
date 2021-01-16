@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
+  readonly ipv6AddressCount?: number;
+  readonly ipv6Addresses?: string[];
   readonly privateIp?: string;
   readonly privateIps?: string[];
   readonly privateIpsCount?: number;
@@ -52,6 +54,8 @@ export class NetworkInterface extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._ipv6AddressCount = config.ipv6AddressCount;
+    this._ipv6Addresses = config.ipv6Addresses;
     this._privateIp = config.privateIp;
     this._privateIps = config.privateIps;
     this._privateIpsCount = config.privateIpsCount;
@@ -85,6 +89,38 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ipv6_address_count - computed: true, optional: true, required: false
+  private _ipv6AddressCount?: number;
+  public get ipv6AddressCount() {
+    return this.getNumberAttribute('ipv6_address_count');
+  }
+  public set ipv6AddressCount(value: number) {
+    this._ipv6AddressCount = value;
+  }
+  public resetIpv6AddressCount() {
+    this._ipv6AddressCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AddressCountInput() {
+    return this._ipv6AddressCount
+  }
+
+  // ipv6_addresses - computed: true, optional: true, required: false
+  private _ipv6Addresses?: string[];
+  public get ipv6Addresses() {
+    return this.getListAttribute('ipv6_addresses');
+  }
+  public set ipv6Addresses(value: string[]) {
+    this._ipv6Addresses = value;
+  }
+  public resetIpv6Addresses() {
+    this._ipv6Addresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AddressesInput() {
+    return this._ipv6Addresses
   }
 
   // mac_address - computed: true, optional: false, required: false
@@ -234,6 +270,8 @@ export class NetworkInterface extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
+      ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Addresses),
       private_ip: cdktf.stringToTerraform(this._privateIp),
       private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIps),
       private_ips_count: cdktf.numberToTerraform(this._privateIpsCount),

@@ -92,11 +92,6 @@ export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
     return this.getStringAttribute('result');
   }
 
-  // result_map - computed: true, optional: false, required: false
-  public resultMap(key: string): string {
-    return new cdktf.StringMap(this, 'result_map').lookup(key);
-  }
-
   // =========
   // SYNTHESIS
   // =========

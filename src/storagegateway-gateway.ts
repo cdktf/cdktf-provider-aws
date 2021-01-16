@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly activationKey?: string;
+  readonly averageDownloadRateLimitInBitsPerSec?: number;
+  readonly averageUploadRateLimitInBitsPerSec?: number;
   readonly cloudwatchLogGroupArn?: string;
   readonly gatewayIpAddress?: string;
   readonly gatewayName: string;
@@ -16,6 +18,7 @@ export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArgument
   readonly gatewayVpcEndpoint?: string;
   readonly mediumChangerType?: string;
   readonly smbGuestPassword?: string;
+  readonly smbSecurityStrategy?: string;
   readonly tags?: { [key: string]: string };
   readonly tapeDriveType?: string;
   /** smb_active_directory_settings block */
@@ -23,17 +26,30 @@ export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArgument
   /** timeouts block */
   readonly timeouts?: StoragegatewayGatewayTimeouts;
 }
+export class StoragegatewayGatewayGatewayNetworkInterface extends cdktf.ComplexComputedList {
+
+  // ipv4_address - computed: true, optional: false, required: false
+  public get ipv4Address() {
+    return this.getStringAttribute('ipv4_address');
+  }
+}
 export interface StoragegatewayGatewaySmbActiveDirectorySettings {
+  readonly domainControllers?: string[];
   readonly domainName: string;
+  readonly organizationalUnit?: string;
   readonly password: string;
+  readonly timeoutInSeconds?: number;
   readonly username: string;
 }
 
 function storagegatewayGatewaySmbActiveDirectorySettingsToTerraform(struct?: StoragegatewayGatewaySmbActiveDirectorySettings): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    domain_controllers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.domainControllers),
     domain_name: cdktf.stringToTerraform(struct!.domainName),
+    organizational_unit: cdktf.stringToTerraform(struct!.organizationalUnit),
     password: cdktf.stringToTerraform(struct!.password),
+    timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
     username: cdktf.stringToTerraform(struct!.username),
   }
 }
@@ -70,6 +86,8 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._activationKey = config.activationKey;
+    this._averageDownloadRateLimitInBitsPerSec = config.averageDownloadRateLimitInBitsPerSec;
+    this._averageUploadRateLimitInBitsPerSec = config.averageUploadRateLimitInBitsPerSec;
     this._cloudwatchLogGroupArn = config.cloudwatchLogGroupArn;
     this._gatewayIpAddress = config.gatewayIpAddress;
     this._gatewayName = config.gatewayName;
@@ -78,6 +96,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     this._gatewayVpcEndpoint = config.gatewayVpcEndpoint;
     this._mediumChangerType = config.mediumChangerType;
     this._smbGuestPassword = config.smbGuestPassword;
+    this._smbSecurityStrategy = config.smbSecurityStrategy;
     this._tags = config.tags;
     this._tapeDriveType = config.tapeDriveType;
     this._smbActiveDirectorySettings = config.smbActiveDirectorySettings;
@@ -109,6 +128,38 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
+  // average_download_rate_limit_in_bits_per_sec - computed: false, optional: true, required: false
+  private _averageDownloadRateLimitInBitsPerSec?: number;
+  public get averageDownloadRateLimitInBitsPerSec() {
+    return this.getNumberAttribute('average_download_rate_limit_in_bits_per_sec');
+  }
+  public set averageDownloadRateLimitInBitsPerSec(value: number ) {
+    this._averageDownloadRateLimitInBitsPerSec = value;
+  }
+  public resetAverageDownloadRateLimitInBitsPerSec() {
+    this._averageDownloadRateLimitInBitsPerSec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get averageDownloadRateLimitInBitsPerSecInput() {
+    return this._averageDownloadRateLimitInBitsPerSec
+  }
+
+  // average_upload_rate_limit_in_bits_per_sec - computed: false, optional: true, required: false
+  private _averageUploadRateLimitInBitsPerSec?: number;
+  public get averageUploadRateLimitInBitsPerSec() {
+    return this.getNumberAttribute('average_upload_rate_limit_in_bits_per_sec');
+  }
+  public set averageUploadRateLimitInBitsPerSec(value: number ) {
+    this._averageUploadRateLimitInBitsPerSec = value;
+  }
+  public resetAverageUploadRateLimitInBitsPerSec() {
+    this._averageUploadRateLimitInBitsPerSec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get averageUploadRateLimitInBitsPerSecInput() {
+    return this._averageUploadRateLimitInBitsPerSec
+  }
+
   // cloudwatch_log_group_arn - computed: false, optional: true, required: false
   private _cloudwatchLogGroupArn?: string;
   public get cloudwatchLogGroupArn() {
@@ -123,6 +174,16 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cloudwatchLogGroupArnInput() {
     return this._cloudwatchLogGroupArn
+  }
+
+  // ec2_instance_id - computed: true, optional: false, required: false
+  public get ec2InstanceId() {
+    return this.getStringAttribute('ec2_instance_id');
+  }
+
+  // endpoint_type - computed: true, optional: false, required: false
+  public get endpointType() {
+    return this.getStringAttribute('endpoint_type');
   }
 
   // gateway_id - computed: true, optional: false, required: false
@@ -157,6 +218,11 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get gatewayNameInput() {
     return this._gatewayName
+  }
+
+  // gateway_network_interface - computed: true, optional: false, required: false
+  public gatewayNetworkInterface(index: string) {
+    return new StoragegatewayGatewayGatewayNetworkInterface(this, 'gateway_network_interface', index);
   }
 
   // gateway_timezone - computed: false, optional: false, required: true
@@ -204,6 +270,11 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     return this._gatewayVpcEndpoint
   }
 
+  // host_environment - computed: true, optional: false, required: false
+  public get hostEnvironment() {
+    return this.getStringAttribute('host_environment');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -239,6 +310,22 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get smbGuestPasswordInput() {
     return this._smbGuestPassword
+  }
+
+  // smb_security_strategy - computed: true, optional: true, required: false
+  private _smbSecurityStrategy?: string;
+  public get smbSecurityStrategy() {
+    return this.getStringAttribute('smb_security_strategy');
+  }
+  public set smbSecurityStrategy(value: string) {
+    this._smbSecurityStrategy = value;
+  }
+  public resetSmbSecurityStrategy() {
+    this._smbSecurityStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get smbSecurityStrategyInput() {
+    return this._smbSecurityStrategy
   }
 
   // tags - computed: false, optional: true, required: false
@@ -312,6 +399,8 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       activation_key: cdktf.stringToTerraform(this._activationKey),
+      average_download_rate_limit_in_bits_per_sec: cdktf.numberToTerraform(this._averageDownloadRateLimitInBitsPerSec),
+      average_upload_rate_limit_in_bits_per_sec: cdktf.numberToTerraform(this._averageUploadRateLimitInBitsPerSec),
       cloudwatch_log_group_arn: cdktf.stringToTerraform(this._cloudwatchLogGroupArn),
       gateway_ip_address: cdktf.stringToTerraform(this._gatewayIpAddress),
       gateway_name: cdktf.stringToTerraform(this._gatewayName),
@@ -320,6 +409,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
       gateway_vpc_endpoint: cdktf.stringToTerraform(this._gatewayVpcEndpoint),
       medium_changer_type: cdktf.stringToTerraform(this._mediumChangerType),
       smb_guest_password: cdktf.stringToTerraform(this._smbGuestPassword),
+      smb_security_strategy: cdktf.stringToTerraform(this._smbSecurityStrategy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tape_drive_type: cdktf.stringToTerraform(this._tapeDriveType),
       smb_active_directory_settings: cdktf.listMapper(storagegatewayGatewaySmbActiveDirectorySettingsToTerraform)(this._smbActiveDirectorySettings),

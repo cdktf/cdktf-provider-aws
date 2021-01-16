@@ -13,6 +13,8 @@ export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaA
   readonly tags?: { [key: string]: string };
   /** attributes block */
   readonly attributes?: GlobalacceleratorAcceleratorAttributes[];
+  /** timeouts block */
+  readonly timeouts?: GlobalacceleratorAcceleratorTimeouts;
 }
 export class GlobalacceleratorAcceleratorIpSets extends cdktf.ComplexComputedList {
 
@@ -41,6 +43,19 @@ function globalacceleratorAcceleratorAttributesToTerraform(struct?: Globalaccele
   }
 }
 
+export interface GlobalacceleratorAcceleratorTimeouts {
+  readonly create?: string;
+  readonly update?: string;
+}
+
+function globalacceleratorAcceleratorTimeoutsToTerraform(struct?: GlobalacceleratorAcceleratorTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
 
 // Resource
 
@@ -66,6 +81,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._attributes = config.attributes;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
@@ -169,6 +185,22 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
     return this._attributes
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: GlobalacceleratorAcceleratorTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: GlobalacceleratorAcceleratorTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -180,6 +212,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       attributes: cdktf.listMapper(globalacceleratorAcceleratorAttributesToTerraform)(this._attributes),
+      timeouts: globalacceleratorAcceleratorTimeoutsToTerraform(this._timeouts),
     };
   }
 }

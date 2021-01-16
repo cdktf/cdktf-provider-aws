@@ -17,6 +17,8 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   readonly smsVerificationMessage?: string;
   readonly tags?: { [key: string]: string };
   readonly usernameAttributes?: string[];
+  /** account_recovery_setting block */
+  readonly accountRecoverySetting?: CognitoUserPoolAccountRecoverySetting[];
   /** admin_create_user_config block */
   readonly adminCreateUserConfig?: CognitoUserPoolAdminCreateUserConfig[];
   /** device_configuration block */
@@ -40,6 +42,31 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   /** verification_message_template block */
   readonly verificationMessageTemplate?: CognitoUserPoolVerificationMessageTemplate[];
 }
+export interface CognitoUserPoolAccountRecoverySettingRecoveryMechanism {
+  readonly name: string;
+  readonly priority: number;
+}
+
+function cognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerraform(struct?: CognitoUserPoolAccountRecoverySettingRecoveryMechanism): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    priority: cdktf.numberToTerraform(struct!.priority),
+  }
+}
+
+export interface CognitoUserPoolAccountRecoverySetting {
+  /** recovery_mechanism block */
+  readonly recoveryMechanism: CognitoUserPoolAccountRecoverySettingRecoveryMechanism[];
+}
+
+function cognitoUserPoolAccountRecoverySettingToTerraform(struct?: CognitoUserPoolAccountRecoverySetting): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    recovery_mechanism: cdktf.listMapper(cognitoUserPoolAccountRecoverySettingRecoveryMechanismToTerraform)(struct!.recoveryMechanism),
+  }
+}
+
 export interface CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate {
   readonly emailMessage?: string;
   readonly emailSubject?: string;
@@ -57,7 +84,6 @@ function cognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToTerraform(st
 
 export interface CognitoUserPoolAdminCreateUserConfig {
   readonly allowAdminCreateUserOnly?: boolean;
-  readonly unusedAccountValidityDays?: number;
   /** invite_message_template block */
   readonly inviteMessageTemplate?: CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate[];
 }
@@ -66,7 +92,6 @@ function cognitoUserPoolAdminCreateUserConfigToTerraform(struct?: CognitoUserPoo
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     allow_admin_create_user_only: cdktf.booleanToTerraform(struct!.allowAdminCreateUserOnly),
-    unused_account_validity_days: cdktf.numberToTerraform(struct!.unusedAccountValidityDays),
     invite_message_template: cdktf.listMapper(cognitoUserPoolAdminCreateUserConfigInviteMessageTemplateToTerraform)(struct!.inviteMessageTemplate),
   }
 }
@@ -299,6 +324,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     this._smsVerificationMessage = config.smsVerificationMessage;
     this._tags = config.tags;
     this._usernameAttributes = config.usernameAttributes;
+    this._accountRecoverySetting = config.accountRecoverySetting;
     this._adminCreateUserConfig = config.adminCreateUserConfig;
     this._deviceConfiguration = config.deviceConfiguration;
     this._emailConfiguration = config.emailConfiguration;
@@ -498,6 +524,22 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     return this._usernameAttributes
   }
 
+  // account_recovery_setting - computed: false, optional: true, required: false
+  private _accountRecoverySetting?: CognitoUserPoolAccountRecoverySetting[];
+  public get accountRecoverySetting() {
+    return this.interpolationForAttribute('account_recovery_setting') as any;
+  }
+  public set accountRecoverySetting(value: CognitoUserPoolAccountRecoverySetting[] ) {
+    this._accountRecoverySetting = value;
+  }
+  public resetAccountRecoverySetting() {
+    this._accountRecoverySetting = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountRecoverySettingInput() {
+    return this._accountRecoverySetting
+  }
+
   // admin_create_user_config - computed: false, optional: true, required: false
   private _adminCreateUserConfig?: CognitoUserPoolAdminCreateUserConfig[];
   public get adminCreateUserConfig() {
@@ -690,6 +732,7 @@ export class CognitoUserPool extends cdktf.TerraformResource {
       sms_verification_message: cdktf.stringToTerraform(this._smsVerificationMessage),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       username_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._usernameAttributes),
+      account_recovery_setting: cdktf.listMapper(cognitoUserPoolAccountRecoverySettingToTerraform)(this._accountRecoverySetting),
       admin_create_user_config: cdktf.listMapper(cognitoUserPoolAdminCreateUserConfigToTerraform)(this._adminCreateUserConfig),
       device_configuration: cdktf.listMapper(cognitoUserPoolDeviceConfigurationToTerraform)(this._deviceConfiguration),
       email_configuration: cdktf.listMapper(cognitoUserPoolEmailConfigurationToTerraform)(this._emailConfiguration),

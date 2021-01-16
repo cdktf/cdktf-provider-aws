@@ -104,6 +104,16 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
     return this.getStringAttribute('license_info');
   }
 
+  // signing_job_arn - computed: true, optional: false, required: false
+  public get signingJobArn() {
+    return this.getStringAttribute('signing_job_arn');
+  }
+
+  // signing_profile_version_arn - computed: true, optional: false, required: false
+  public get signingProfileVersionArn() {
+    return this.getStringAttribute('signing_profile_version_arn');
+  }
+
   // source_code_hash - computed: true, optional: false, required: false
   public get sourceCodeHash() {
     return this.getStringAttribute('source_code_hash');

@@ -8,10 +8,9 @@ import * as cdktf from 'cdktf';
 
 export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaArguments {
   readonly allowedPrefixes?: string[];
-  readonly associatedGatewayId?: string;
+  readonly associatedGatewayId: string;
   readonly dxGatewayId: string;
   readonly dxGatewayOwnerAccountId: string;
-  readonly vpnGatewayId?: string;
 }
 
 // Resource
@@ -37,7 +36,6 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
     this._associatedGatewayId = config.associatedGatewayId;
     this._dxGatewayId = config.dxGatewayId;
     this._dxGatewayOwnerAccountId = config.dxGatewayOwnerAccountId;
-    this._vpnGatewayId = config.vpnGatewayId;
   }
 
   // ==========
@@ -60,16 +58,13 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
     return this._allowedPrefixes
   }
 
-  // associated_gateway_id - computed: false, optional: true, required: false
-  private _associatedGatewayId?: string;
+  // associated_gateway_id - computed: false, optional: false, required: true
+  private _associatedGatewayId: string;
   public get associatedGatewayId() {
     return this.getStringAttribute('associated_gateway_id');
   }
-  public set associatedGatewayId(value: string ) {
+  public set associatedGatewayId(value: string) {
     this._associatedGatewayId = value;
-  }
-  public resetAssociatedGatewayId() {
-    this._associatedGatewayId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get associatedGatewayIdInput() {
@@ -117,22 +112,6 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // vpn_gateway_id - computed: false, optional: true, required: false
-  private _vpnGatewayId?: string;
-  public get vpnGatewayId() {
-    return this.getStringAttribute('vpn_gateway_id');
-  }
-  public set vpnGatewayId(value: string ) {
-    this._vpnGatewayId = value;
-  }
-  public resetVpnGatewayId() {
-    this._vpnGatewayId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpnGatewayIdInput() {
-    return this._vpnGatewayId
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -143,7 +122,6 @@ export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
       associated_gateway_id: cdktf.stringToTerraform(this._associatedGatewayId),
       dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
       dx_gateway_owner_account_id: cdktf.stringToTerraform(this._dxGatewayOwnerAccountId),
-      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
     };
   }
 }

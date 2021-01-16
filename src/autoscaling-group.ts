@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZones?: string[];
+  readonly capacityRebalance?: boolean;
   readonly defaultCooldown?: number;
   readonly desiredCapacity?: number;
   readonly enabledMetrics?: string[];
@@ -35,6 +36,8 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly waitForElbCapacity?: number;
   /** initial_lifecycle_hook block */
   readonly initialLifecycleHook?: AutoscalingGroupInitialLifecycleHook[];
+  /** instance_refresh block */
+  readonly instanceRefresh?: AutoscalingGroupInstanceRefresh[];
   /** launch_template block */
   readonly launchTemplate?: AutoscalingGroupLaunchTemplate[];
   /** mixed_instances_policy block */
@@ -64,6 +67,35 @@ function autoscalingGroupInitialLifecycleHookToTerraform(struct?: AutoscalingGro
     notification_metadata: cdktf.stringToTerraform(struct!.notificationMetadata),
     notification_target_arn: cdktf.stringToTerraform(struct!.notificationTargetArn),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
+  }
+}
+
+export interface AutoscalingGroupInstanceRefreshPreferences {
+  readonly instanceWarmup?: string;
+  readonly minHealthyPercentage?: number;
+}
+
+function autoscalingGroupInstanceRefreshPreferencesToTerraform(struct?: AutoscalingGroupInstanceRefreshPreferences): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    instance_warmup: cdktf.stringToTerraform(struct!.instanceWarmup),
+    min_healthy_percentage: cdktf.numberToTerraform(struct!.minHealthyPercentage),
+  }
+}
+
+export interface AutoscalingGroupInstanceRefresh {
+  readonly strategy: string;
+  readonly triggers?: string[];
+  /** preferences block */
+  readonly preferences?: AutoscalingGroupInstanceRefreshPreferences[];
+}
+
+function autoscalingGroupInstanceRefreshToTerraform(struct?: AutoscalingGroupInstanceRefresh): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    strategy: cdktf.stringToTerraform(struct!.strategy),
+    triggers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.triggers),
+    preferences: cdktf.listMapper(autoscalingGroupInstanceRefreshPreferencesToTerraform)(struct!.preferences),
   }
 }
 
@@ -208,6 +240,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._availabilityZones = config.availabilityZones;
+    this._capacityRebalance = config.capacityRebalance;
     this._defaultCooldown = config.defaultCooldown;
     this._desiredCapacity = config.desiredCapacity;
     this._enabledMetrics = config.enabledMetrics;
@@ -234,6 +267,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._waitForCapacityTimeout = config.waitForCapacityTimeout;
     this._waitForElbCapacity = config.waitForElbCapacity;
     this._initialLifecycleHook = config.initialLifecycleHook;
+    this._instanceRefresh = config.instanceRefresh;
     this._launchTemplate = config.launchTemplate;
     this._mixedInstancesPolicy = config.mixedInstancesPolicy;
     this._tag = config.tag;
@@ -263,6 +297,22 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get availabilityZonesInput() {
     return this._availabilityZones
+  }
+
+  // capacity_rebalance - computed: false, optional: true, required: false
+  private _capacityRebalance?: boolean;
+  public get capacityRebalance() {
+    return this.getBooleanAttribute('capacity_rebalance');
+  }
+  public set capacityRebalance(value: boolean ) {
+    this._capacityRebalance = value;
+  }
+  public resetCapacityRebalance() {
+    this._capacityRebalance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityRebalanceInput() {
+    return this._capacityRebalance
   }
 
   // default_cooldown - computed: true, optional: true, required: false
@@ -382,12 +432,12 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     return this._launchConfiguration
   }
 
-  // load_balancers - computed: true, optional: true, required: false
+  // load_balancers - computed: false, optional: true, required: false
   private _loadBalancers?: string[];
   public get loadBalancers() {
     return this.getListAttribute('load_balancers');
   }
-  public set loadBalancers(value: string[]) {
+  public set loadBalancers(value: string[] ) {
     this._loadBalancers = value;
   }
   public resetLoadBalancers() {
@@ -584,12 +634,12 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
-  // target_group_arns - computed: true, optional: true, required: false
+  // target_group_arns - computed: false, optional: true, required: false
   private _targetGroupArns?: string[];
   public get targetGroupArns() {
     return this.getListAttribute('target_group_arns');
   }
-  public set targetGroupArns(value: string[]) {
+  public set targetGroupArns(value: string[] ) {
     this._targetGroupArns = value;
   }
   public resetTargetGroupArns() {
@@ -680,6 +730,22 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     return this._initialLifecycleHook
   }
 
+  // instance_refresh - computed: false, optional: true, required: false
+  private _instanceRefresh?: AutoscalingGroupInstanceRefresh[];
+  public get instanceRefresh() {
+    return this.interpolationForAttribute('instance_refresh') as any;
+  }
+  public set instanceRefresh(value: AutoscalingGroupInstanceRefresh[] ) {
+    this._instanceRefresh = value;
+  }
+  public resetInstanceRefresh() {
+    this._instanceRefresh = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceRefreshInput() {
+    return this._instanceRefresh
+  }
+
   // launch_template - computed: false, optional: true, required: false
   private _launchTemplate?: AutoscalingGroupLaunchTemplate[];
   public get launchTemplate() {
@@ -751,6 +817,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      capacity_rebalance: cdktf.booleanToTerraform(this._capacityRebalance),
       default_cooldown: cdktf.numberToTerraform(this._defaultCooldown),
       desired_capacity: cdktf.numberToTerraform(this._desiredCapacity),
       enabled_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledMetrics),
@@ -777,6 +844,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       wait_for_capacity_timeout: cdktf.stringToTerraform(this._waitForCapacityTimeout),
       wait_for_elb_capacity: cdktf.numberToTerraform(this._waitForElbCapacity),
       initial_lifecycle_hook: cdktf.listMapper(autoscalingGroupInitialLifecycleHookToTerraform)(this._initialLifecycleHook),
+      instance_refresh: cdktf.listMapper(autoscalingGroupInstanceRefreshToTerraform)(this._instanceRefresh),
       launch_template: cdktf.listMapper(autoscalingGroupLaunchTemplateToTerraform)(this._launchTemplate),
       mixed_instances_policy: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyToTerraform)(this._mixedInstancesPolicy),
       tag: cdktf.listMapper(autoscalingGroupTagToTerraform)(this._tag),

@@ -26,6 +26,7 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   readonly monitoring?: boolean;
   readonly placementGroup?: string;
   readonly privateIp?: string;
+  readonly secondaryPrivateIps?: string[];
   readonly securityGroups?: string[];
   readonly sourceDestCheck?: boolean;
   readonly subnetId?: string;
@@ -39,6 +40,8 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   readonly creditSpecification?: InstanceCreditSpecification[];
   /** ebs_block_device block */
   readonly ebsBlockDevice?: InstanceEbsBlockDevice[];
+  /** enclave_options block */
+  readonly enclaveOptions?: InstanceEnclaveOptions[];
   /** ephemeral_block_device block */
   readonly ephemeralBlockDevice?: InstanceEphemeralBlockDevice[];
   /** metadata_options block */
@@ -68,6 +71,8 @@ export interface InstanceEbsBlockDevice {
   readonly iops?: number;
   readonly kmsKeyId?: string;
   readonly snapshotId?: string;
+  readonly tags?: { [key: string]: string };
+  readonly throughput?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
@@ -81,8 +86,21 @@ function instanceEbsBlockDeviceToTerraform(struct?: InstanceEbsBlockDevice): any
     iops: cdktf.numberToTerraform(struct!.iops),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
+export interface InstanceEnclaveOptions {
+  readonly enabled?: boolean;
+}
+
+function instanceEnclaveOptionsToTerraform(struct?: InstanceEnclaveOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
 }
 
@@ -136,6 +154,8 @@ export interface InstanceRootBlockDevice {
   readonly encrypted?: boolean;
   readonly iops?: number;
   readonly kmsKeyId?: string;
+  readonly tags?: { [key: string]: string };
+  readonly throughput?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
@@ -147,6 +167,8 @@ function instanceRootBlockDeviceToTerraform(struct?: InstanceRootBlockDevice): a
     encrypted: cdktf.booleanToTerraform(struct!.encrypted),
     iops: cdktf.numberToTerraform(struct!.iops),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
@@ -206,6 +228,7 @@ export class Instance extends cdktf.TerraformResource {
     this._monitoring = config.monitoring;
     this._placementGroup = config.placementGroup;
     this._privateIp = config.privateIp;
+    this._secondaryPrivateIps = config.secondaryPrivateIps;
     this._securityGroups = config.securityGroups;
     this._sourceDestCheck = config.sourceDestCheck;
     this._subnetId = config.subnetId;
@@ -217,6 +240,7 @@ export class Instance extends cdktf.TerraformResource {
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
     this._creditSpecification = config.creditSpecification;
     this._ebsBlockDevice = config.ebsBlockDevice;
+    this._enclaveOptions = config.enclaveOptions;
     this._ephemeralBlockDevice = config.ephemeralBlockDevice;
     this._metadataOptions = config.metadataOptions;
     this._networkInterface = config.networkInterface;
@@ -509,11 +533,6 @@ export class Instance extends cdktf.TerraformResource {
     return this._monitoring
   }
 
-  // network_interface_id - computed: true, optional: false, required: false
-  public get networkInterfaceId() {
-    return this.getStringAttribute('network_interface_id');
-  }
-
   // outpost_arn - computed: true, optional: false, required: false
   public get outpostArn() {
     return this.getStringAttribute('outpost_arn');
@@ -574,6 +593,22 @@ export class Instance extends cdktf.TerraformResource {
   // public_ip - computed: true, optional: false, required: false
   public get publicIp() {
     return this.getStringAttribute('public_ip');
+  }
+
+  // secondary_private_ips - computed: true, optional: true, required: false
+  private _secondaryPrivateIps?: string[];
+  public get secondaryPrivateIps() {
+    return this.getListAttribute('secondary_private_ips');
+  }
+  public set secondaryPrivateIps(value: string[]) {
+    this._secondaryPrivateIps = value;
+  }
+  public resetSecondaryPrivateIps() {
+    this._secondaryPrivateIps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryPrivateIpsInput() {
+    return this._secondaryPrivateIps
   }
 
   // security_groups - computed: true, optional: true, required: false
@@ -688,12 +723,12 @@ export class Instance extends cdktf.TerraformResource {
     return this._userDataBase64
   }
 
-  // volume_tags - computed: true, optional: true, required: false
-  private _volumeTags?: { [key: string]: string }
-  public get volumeTags(): { [key: string]: string } {
-    return this.interpolationForAttribute('volume_tags') as any; // Getting the computed value is not yet implemented
+  // volume_tags - computed: false, optional: true, required: false
+  private _volumeTags?: { [key: string]: string };
+  public get volumeTags() {
+    return this.interpolationForAttribute('volume_tags') as any;
   }
-  public set volumeTags(value: { [key: string]: string }) {
+  public set volumeTags(value: { [key: string]: string } ) {
     this._volumeTags = value;
   }
   public resetVolumeTags() {
@@ -750,6 +785,22 @@ export class Instance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ebsBlockDeviceInput() {
     return this._ebsBlockDevice
+  }
+
+  // enclave_options - computed: false, optional: true, required: false
+  private _enclaveOptions?: InstanceEnclaveOptions[];
+  public get enclaveOptions() {
+    return this.interpolationForAttribute('enclave_options') as any;
+  }
+  public set enclaveOptions(value: InstanceEnclaveOptions[] ) {
+    this._enclaveOptions = value;
+  }
+  public resetEnclaveOptions() {
+    this._enclaveOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enclaveOptionsInput() {
+    return this._enclaveOptions
   }
 
   // ephemeral_block_device - computed: false, optional: true, required: false
@@ -857,6 +908,7 @@ export class Instance extends cdktf.TerraformResource {
       monitoring: cdktf.booleanToTerraform(this._monitoring),
       placement_group: cdktf.stringToTerraform(this._placementGroup),
       private_ip: cdktf.stringToTerraform(this._privateIp),
+      secondary_private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._secondaryPrivateIps),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
@@ -868,6 +920,7 @@ export class Instance extends cdktf.TerraformResource {
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       credit_specification: cdktf.listMapper(instanceCreditSpecificationToTerraform)(this._creditSpecification),
       ebs_block_device: cdktf.listMapper(instanceEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
+      enclave_options: cdktf.listMapper(instanceEnclaveOptionsToTerraform)(this._enclaveOptions),
       ephemeral_block_device: cdktf.listMapper(instanceEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
       metadata_options: cdktf.listMapper(instanceMetadataOptionsToTerraform)(this._metadataOptions),
       network_interface: cdktf.listMapper(instanceNetworkInterfaceToTerraform)(this._networkInterface),

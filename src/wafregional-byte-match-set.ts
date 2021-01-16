@@ -8,42 +8,9 @@ import * as cdktf from 'cdktf';
 
 export interface WafregionalByteMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
-  /** byte_match_tuple block */
-  readonly byteMatchTuple?: WafregionalByteMatchSetByteMatchTuple[];
   /** byte_match_tuples block */
   readonly byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[];
 }
-export interface WafregionalByteMatchSetByteMatchTupleFieldToMatch {
-  readonly data?: string;
-  readonly type: string;
-}
-
-function wafregionalByteMatchSetByteMatchTupleFieldToMatchToTerraform(struct?: WafregionalByteMatchSetByteMatchTupleFieldToMatch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    data: cdktf.stringToTerraform(struct!.data),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
-export interface WafregionalByteMatchSetByteMatchTuple {
-  readonly positionalConstraint: string;
-  readonly targetString?: string;
-  readonly textTransformation: string;
-  /** field_to_match block */
-  readonly fieldToMatch: WafregionalByteMatchSetByteMatchTupleFieldToMatch[];
-}
-
-function wafregionalByteMatchSetByteMatchTupleToTerraform(struct?: WafregionalByteMatchSetByteMatchTuple): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    positional_constraint: cdktf.stringToTerraform(struct!.positionalConstraint),
-    target_string: cdktf.stringToTerraform(struct!.targetString),
-    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
-    field_to_match: cdktf.listMapper(wafregionalByteMatchSetByteMatchTupleFieldToMatchToTerraform)(struct!.fieldToMatch),
-  }
-}
-
 export interface WafregionalByteMatchSetByteMatchTuplesFieldToMatch {
   readonly data?: string;
   readonly type: string;
@@ -96,7 +63,6 @@ export class WafregionalByteMatchSet extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
-    this._byteMatchTuple = config.byteMatchTuple;
     this._byteMatchTuples = config.byteMatchTuples;
   }
 
@@ -122,22 +88,6 @@ export class WafregionalByteMatchSet extends cdktf.TerraformResource {
     return this._name
   }
 
-  // byte_match_tuple - computed: false, optional: true, required: false
-  private _byteMatchTuple?: WafregionalByteMatchSetByteMatchTuple[];
-  public get byteMatchTuple() {
-    return this.interpolationForAttribute('byte_match_tuple') as any;
-  }
-  public set byteMatchTuple(value: WafregionalByteMatchSetByteMatchTuple[] ) {
-    this._byteMatchTuple = value;
-  }
-  public resetByteMatchTuple() {
-    this._byteMatchTuple = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get byteMatchTupleInput() {
-    return this._byteMatchTuple
-  }
-
   // byte_match_tuples - computed: false, optional: true, required: false
   private _byteMatchTuples?: WafregionalByteMatchSetByteMatchTuples[];
   public get byteMatchTuples() {
@@ -161,7 +111,6 @@ export class WafregionalByteMatchSet extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      byte_match_tuple: cdktf.listMapper(wafregionalByteMatchSetByteMatchTupleToTerraform)(this._byteMatchTuple),
       byte_match_tuples: cdktf.listMapper(wafregionalByteMatchSetByteMatchTuplesToTerraform)(this._byteMatchTuples),
     };
   }

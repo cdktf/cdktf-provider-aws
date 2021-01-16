@@ -86,10 +86,35 @@ function ec2FleetOnDemandOptionsToTerraform(struct?: Ec2FleetOnDemandOptions): a
   }
 }
 
+export interface Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance {
+  readonly replacementStrategy?: string;
+}
+
+function ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceToTerraform(struct?: Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    replacement_strategy: cdktf.stringToTerraform(struct!.replacementStrategy),
+  }
+}
+
+export interface Ec2FleetSpotOptionsMaintenanceStrategies {
+  /** capacity_rebalance block */
+  readonly capacityRebalance?: Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalance[];
+}
+
+function ec2FleetSpotOptionsMaintenanceStrategiesToTerraform(struct?: Ec2FleetSpotOptionsMaintenanceStrategies): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    capacity_rebalance: cdktf.listMapper(ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceToTerraform)(struct!.capacityRebalance),
+  }
+}
+
 export interface Ec2FleetSpotOptions {
   readonly allocationStrategy?: string;
   readonly instanceInterruptionBehavior?: string;
   readonly instancePoolsToUseCount?: number;
+  /** maintenance_strategies block */
+  readonly maintenanceStrategies?: Ec2FleetSpotOptionsMaintenanceStrategies[];
 }
 
 function ec2FleetSpotOptionsToTerraform(struct?: Ec2FleetSpotOptions): any {
@@ -98,6 +123,7 @@ function ec2FleetSpotOptionsToTerraform(struct?: Ec2FleetSpotOptions): any {
     allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
     instance_interruption_behavior: cdktf.stringToTerraform(struct!.instanceInterruptionBehavior),
     instance_pools_to_use_count: cdktf.numberToTerraform(struct!.instancePoolsToUseCount),
+    maintenance_strategies: cdktf.listMapper(ec2FleetSpotOptionsMaintenanceStrategiesToTerraform)(struct!.maintenanceStrategies),
   }
 }
 

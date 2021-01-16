@@ -22,6 +22,7 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   readonly schedulingStrategy?: string;
   readonly tags?: { [key: string]: string };
   readonly taskDefinition?: string;
+  readonly waitForSteadyState?: boolean;
   /** capacity_provider_strategy block */
   readonly capacityProviderStrategy?: EcsServiceCapacityProviderStrategy[];
   /** deployment_controller block */
@@ -34,8 +35,6 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   readonly orderedPlacementStrategy?: EcsServiceOrderedPlacementStrategy[];
   /** placement_constraints block */
   readonly placementConstraints?: EcsServicePlacementConstraints[];
-  /** placement_strategy block */
-  readonly placementStrategy?: EcsServicePlacementStrategy[];
   /** service_registries block */
   readonly serviceRegistries?: EcsServiceServiceRegistries[];
   /** timeouts block */
@@ -125,19 +124,6 @@ function ecsServicePlacementConstraintsToTerraform(struct?: EcsServicePlacementC
   }
 }
 
-export interface EcsServicePlacementStrategy {
-  readonly field?: string;
-  readonly type: string;
-}
-
-function ecsServicePlacementStrategyToTerraform(struct?: EcsServicePlacementStrategy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    field: cdktf.stringToTerraform(struct!.field),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
 export interface EcsServiceServiceRegistries {
   readonly containerName?: string;
   readonly containerPort?: number;
@@ -201,13 +187,13 @@ export class EcsService extends cdktf.TerraformResource {
     this._schedulingStrategy = config.schedulingStrategy;
     this._tags = config.tags;
     this._taskDefinition = config.taskDefinition;
+    this._waitForSteadyState = config.waitForSteadyState;
     this._capacityProviderStrategy = config.capacityProviderStrategy;
     this._deploymentController = config.deploymentController;
     this._loadBalancer = config.loadBalancer;
     this._networkConfiguration = config.networkConfiguration;
     this._orderedPlacementStrategy = config.orderedPlacementStrategy;
     this._placementConstraints = config.placementConstraints;
-    this._placementStrategy = config.placementStrategy;
     this._serviceRegistries = config.serviceRegistries;
     this._timeouts = config.timeouts;
   }
@@ -458,6 +444,22 @@ export class EcsService extends cdktf.TerraformResource {
     return this._taskDefinition
   }
 
+  // wait_for_steady_state - computed: false, optional: true, required: false
+  private _waitForSteadyState?: boolean;
+  public get waitForSteadyState() {
+    return this.getBooleanAttribute('wait_for_steady_state');
+  }
+  public set waitForSteadyState(value: boolean ) {
+    this._waitForSteadyState = value;
+  }
+  public resetWaitForSteadyState() {
+    this._waitForSteadyState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get waitForSteadyStateInput() {
+    return this._waitForSteadyState
+  }
+
   // capacity_provider_strategy - computed: false, optional: true, required: false
   private _capacityProviderStrategy?: EcsServiceCapacityProviderStrategy[];
   public get capacityProviderStrategy() {
@@ -554,22 +556,6 @@ export class EcsService extends cdktf.TerraformResource {
     return this._placementConstraints
   }
 
-  // placement_strategy - computed: false, optional: true, required: false
-  private _placementStrategy?: EcsServicePlacementStrategy[];
-  public get placementStrategy() {
-    return this.interpolationForAttribute('placement_strategy') as any;
-  }
-  public set placementStrategy(value: EcsServicePlacementStrategy[] ) {
-    this._placementStrategy = value;
-  }
-  public resetPlacementStrategy() {
-    this._placementStrategy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get placementStrategyInput() {
-    return this._placementStrategy
-  }
-
   // service_registries - computed: false, optional: true, required: false
   private _serviceRegistries?: EcsServiceServiceRegistries[];
   public get serviceRegistries() {
@@ -623,13 +609,13 @@ export class EcsService extends cdktf.TerraformResource {
       scheduling_strategy: cdktf.stringToTerraform(this._schedulingStrategy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
+      wait_for_steady_state: cdktf.booleanToTerraform(this._waitForSteadyState),
       capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform)(this._capacityProviderStrategy),
       deployment_controller: cdktf.listMapper(ecsServiceDeploymentControllerToTerraform)(this._deploymentController),
       load_balancer: cdktf.listMapper(ecsServiceLoadBalancerToTerraform)(this._loadBalancer),
       network_configuration: cdktf.listMapper(ecsServiceNetworkConfigurationToTerraform)(this._networkConfiguration),
       ordered_placement_strategy: cdktf.listMapper(ecsServiceOrderedPlacementStrategyToTerraform)(this._orderedPlacementStrategy),
       placement_constraints: cdktf.listMapper(ecsServicePlacementConstraintsToTerraform)(this._placementConstraints),
-      placement_strategy: cdktf.listMapper(ecsServicePlacementStrategyToTerraform)(this._placementStrategy),
       service_registries: cdktf.listMapper(ecsServiceServiceRegistriesToTerraform)(this._serviceRegistries),
       timeouts: ecsServiceTimeoutsToTerraform(this._timeouts),
     };

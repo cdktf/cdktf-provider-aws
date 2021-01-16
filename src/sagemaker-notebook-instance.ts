@@ -7,15 +7,19 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SagemakerNotebookInstanceConfig extends cdktf.TerraformMetaArguments {
+  readonly additionalCodeRepositories?: string[];
+  readonly defaultCodeRepository?: string;
   readonly directInternetAccess?: string;
   readonly instanceType: string;
   readonly kmsKeyId?: string;
   readonly lifecycleConfigName?: string;
   readonly name: string;
   readonly roleArn: string;
+  readonly rootAccess?: string;
   readonly securityGroups?: string[];
   readonly subnetId?: string;
   readonly tags?: { [key: string]: string };
+  readonly volumeSize?: number;
 }
 
 // Resource
@@ -37,24 +41,60 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._additionalCodeRepositories = config.additionalCodeRepositories;
+    this._defaultCodeRepository = config.defaultCodeRepository;
     this._directInternetAccess = config.directInternetAccess;
     this._instanceType = config.instanceType;
     this._kmsKeyId = config.kmsKeyId;
     this._lifecycleConfigName = config.lifecycleConfigName;
     this._name = config.name;
     this._roleArn = config.roleArn;
+    this._rootAccess = config.rootAccess;
     this._securityGroups = config.securityGroups;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
+    this._volumeSize = config.volumeSize;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
+  // additional_code_repositories - computed: false, optional: true, required: false
+  private _additionalCodeRepositories?: string[];
+  public get additionalCodeRepositories() {
+    return this.getListAttribute('additional_code_repositories');
+  }
+  public set additionalCodeRepositories(value: string[] ) {
+    this._additionalCodeRepositories = value;
+  }
+  public resetAdditionalCodeRepositories() {
+    this._additionalCodeRepositories = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get additionalCodeRepositoriesInput() {
+    return this._additionalCodeRepositories
+  }
+
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // default_code_repository - computed: false, optional: true, required: false
+  private _defaultCodeRepository?: string;
+  public get defaultCodeRepository() {
+    return this.getStringAttribute('default_code_repository');
+  }
+  public set defaultCodeRepository(value: string ) {
+    this._defaultCodeRepository = value;
+  }
+  public resetDefaultCodeRepository() {
+    this._defaultCodeRepository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultCodeRepositoryInput() {
+    return this._defaultCodeRepository
   }
 
   // direct_internet_access - computed: false, optional: true, required: false
@@ -136,6 +176,11 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
     return this._name
   }
 
+  // network_interface_id - computed: true, optional: false, required: false
+  public get networkInterfaceId() {
+    return this.getStringAttribute('network_interface_id');
+  }
+
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
@@ -147,6 +192,22 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get roleArnInput() {
     return this._roleArn
+  }
+
+  // root_access - computed: false, optional: true, required: false
+  private _rootAccess?: string;
+  public get rootAccess() {
+    return this.getStringAttribute('root_access');
+  }
+  public set rootAccess(value: string ) {
+    this._rootAccess = value;
+  }
+  public resetRootAccess() {
+    this._rootAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rootAccessInput() {
+    return this._rootAccess
   }
 
   // security_groups - computed: true, optional: true, required: false
@@ -197,21 +258,46 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+
+  // volume_size - computed: false, optional: true, required: false
+  private _volumeSize?: number;
+  public get volumeSize() {
+    return this.getNumberAttribute('volume_size');
+  }
+  public set volumeSize(value: number ) {
+    this._volumeSize = value;
+  }
+  public resetVolumeSize() {
+    this._volumeSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeSizeInput() {
+    return this._volumeSize
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      additional_code_repositories: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalCodeRepositories),
+      default_code_repository: cdktf.stringToTerraform(this._defaultCodeRepository),
       direct_internet_access: cdktf.stringToTerraform(this._directInternetAccess),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       lifecycle_config_name: cdktf.stringToTerraform(this._lifecycleConfigName),
       name: cdktf.stringToTerraform(this._name),
       role_arn: cdktf.stringToTerraform(this._roleArn),
+      root_access: cdktf.stringToTerraform(this._rootAccess),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      volume_size: cdktf.numberToTerraform(this._volumeSize),
     };
   }
 }

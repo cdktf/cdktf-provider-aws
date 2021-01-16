@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMetaArguments {
+  readonly applianceModeSupport?: string;
   readonly dnsSupport?: string;
   readonly ipv6Support?: string;
   readonly subnetIds: string[];
@@ -36,6 +37,7 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._applianceModeSupport = config.applianceModeSupport;
     this._dnsSupport = config.dnsSupport;
     this._ipv6Support = config.ipv6Support;
     this._subnetIds = config.subnetIds;
@@ -49,6 +51,22 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // appliance_mode_support - computed: false, optional: true, required: false
+  private _applianceModeSupport?: string;
+  public get applianceModeSupport() {
+    return this.getStringAttribute('appliance_mode_support');
+  }
+  public set applianceModeSupport(value: string ) {
+    this._applianceModeSupport = value;
+  }
+  public resetApplianceModeSupport() {
+    this._applianceModeSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applianceModeSupportInput() {
+    return this._applianceModeSupport
+  }
 
   // dns_support - computed: false, optional: true, required: false
   private _dnsSupport?: string;
@@ -185,6 +203,7 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      appliance_mode_support: cdktf.stringToTerraform(this._applianceModeSupport),
       dns_support: cdktf.stringToTerraform(this._dnsSupport),
       ipv6_support: cdktf.stringToTerraform(this._ipv6Support),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),

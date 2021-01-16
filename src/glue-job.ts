@@ -7,7 +7,6 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
-  readonly allocatedCapacity?: number;
   readonly connections?: string[];
   readonly defaultArguments?: { [key: string]: string };
   readonly description?: string;
@@ -15,6 +14,7 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   readonly maxCapacity?: number;
   readonly maxRetries?: number;
   readonly name: string;
+  readonly nonOverridableArguments?: { [key: string]: string };
   readonly numberOfWorkers?: number;
   readonly roleArn: string;
   readonly securityConfiguration?: string;
@@ -85,7 +85,6 @@ export class GlueJob extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._allocatedCapacity = config.allocatedCapacity;
     this._connections = config.connections;
     this._defaultArguments = config.defaultArguments;
     this._description = config.description;
@@ -93,6 +92,7 @@ export class GlueJob extends cdktf.TerraformResource {
     this._maxCapacity = config.maxCapacity;
     this._maxRetries = config.maxRetries;
     this._name = config.name;
+    this._nonOverridableArguments = config.nonOverridableArguments;
     this._numberOfWorkers = config.numberOfWorkers;
     this._roleArn = config.roleArn;
     this._securityConfiguration = config.securityConfiguration;
@@ -107,22 +107,6 @@ export class GlueJob extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // allocated_capacity - computed: true, optional: true, required: false
-  private _allocatedCapacity?: number;
-  public get allocatedCapacity() {
-    return this.getNumberAttribute('allocated_capacity');
-  }
-  public set allocatedCapacity(value: number) {
-    this._allocatedCapacity = value;
-  }
-  public resetAllocatedCapacity() {
-    this._allocatedCapacity = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allocatedCapacityInput() {
-    return this._allocatedCapacity
-  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -241,6 +225,22 @@ export class GlueJob extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // non_overridable_arguments - computed: false, optional: true, required: false
+  private _nonOverridableArguments?: { [key: string]: string };
+  public get nonOverridableArguments() {
+    return this.interpolationForAttribute('non_overridable_arguments') as any;
+  }
+  public set nonOverridableArguments(value: { [key: string]: string } ) {
+    this._nonOverridableArguments = value;
+  }
+  public resetNonOverridableArguments() {
+    this._nonOverridableArguments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nonOverridableArgumentsInput() {
+    return this._nonOverridableArguments
   }
 
   // number_of_workers - computed: false, optional: true, required: false
@@ -387,7 +387,6 @@ export class GlueJob extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_capacity: cdktf.numberToTerraform(this._allocatedCapacity),
       connections: cdktf.listMapper(cdktf.stringToTerraform)(this._connections),
       default_arguments: cdktf.hashMapper(cdktf.anyToTerraform)(this._defaultArguments),
       description: cdktf.stringToTerraform(this._description),
@@ -395,6 +394,7 @@ export class GlueJob extends cdktf.TerraformResource {
       max_capacity: cdktf.numberToTerraform(this._maxCapacity),
       max_retries: cdktf.numberToTerraform(this._maxRetries),
       name: cdktf.stringToTerraform(this._name),
+      non_overridable_arguments: cdktf.hashMapper(cdktf.anyToTerraform)(this._nonOverridableArguments),
       number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       security_configuration: cdktf.stringToTerraform(this._securityConfiguration),

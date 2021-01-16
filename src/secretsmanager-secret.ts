@@ -138,12 +138,12 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
     return this._namePrefix
   }
 
-  // policy - computed: false, optional: true, required: false
+  // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
     return this.getStringAttribute('policy');
   }
-  public set policy(value: string ) {
+  public set policy(value: string) {
     this._policy = value;
   }
   public resetPolicy() {

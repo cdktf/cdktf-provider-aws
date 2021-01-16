@@ -31,6 +31,11 @@ export class DataAwsLaunchConfigurationEbsBlockDevice extends cdktf.ComplexCompu
     return this.getNumberAttribute('iops');
   }
 
+  // no_device - computed: true, optional: false, required: false
+  public get noDevice() {
+    return this.getBooleanAttribute('no_device');
+  }
+
   // snapshot_id - computed: true, optional: false, required: false
   public get snapshotId() {
     return this.getStringAttribute('snapshot_id');
@@ -56,6 +61,23 @@ export class DataAwsLaunchConfigurationEphemeralBlockDevice extends cdktf.Comple
   // virtual_name - computed: true, optional: false, required: false
   public get virtualName() {
     return this.getStringAttribute('virtual_name');
+  }
+}
+export class DataAwsLaunchConfigurationMetadataOptions extends cdktf.ComplexComputedList {
+
+  // http_endpoint - computed: true, optional: false, required: false
+  public get httpEndpoint() {
+    return this.getStringAttribute('http_endpoint');
+  }
+
+  // http_put_response_hop_limit - computed: true, optional: false, required: false
+  public get httpPutResponseHopLimit() {
+    return this.getNumberAttribute('http_put_response_hop_limit');
+  }
+
+  // http_tokens - computed: true, optional: false, required: false
+  public get httpTokens() {
+    return this.getStringAttribute('http_tokens');
   }
 }
 export class DataAwsLaunchConfigurationRootBlockDevice extends cdktf.ComplexComputedList {
@@ -165,6 +187,11 @@ export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
   // key_name - computed: true, optional: false, required: false
   public get keyName() {
     return this.getStringAttribute('key_name');
+  }
+
+  // metadata_options - computed: true, optional: false, required: false
+  public metadataOptions(index: string) {
+    return new DataAwsLaunchConfigurationMetadataOptions(this, 'metadata_options', index);
   }
 
   // name - computed: false, optional: false, required: true

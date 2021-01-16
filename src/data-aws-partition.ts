@@ -49,6 +49,11 @@ export class DataAwsPartition extends cdktf.TerraformDataSource {
     return this.getStringAttribute('partition');
   }
 
+  // reverse_dns_prefix - computed: true, optional: false, required: false
+  public get reverseDnsPrefix() {
+    return this.getStringAttribute('reverse_dns_prefix');
+  }
+
   // =========
   // SYNTHESIS
   // =========

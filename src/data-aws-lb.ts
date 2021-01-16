@@ -34,6 +34,16 @@ export class DataAwsLbSubnetMapping extends cdktf.ComplexComputedList {
     return this.getStringAttribute('allocation_id');
   }
 
+  // outpost_id - computed: true, optional: false, required: false
+  public get outpostId() {
+    return this.getStringAttribute('outpost_id');
+  }
+
+  // private_ipv4_address - computed: true, optional: false, required: false
+  public get privateIpv4Address() {
+    return this.getStringAttribute('private_ipv4_address');
+  }
+
   // subnet_id - computed: true, optional: false, required: false
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
@@ -82,6 +92,11 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
     return this.getStringAttribute('arn_suffix');
   }
 
+  // customer_owned_ipv4_pool - computed: true, optional: false, required: false
+  public get customerOwnedIpv4Pool() {
+    return this.getStringAttribute('customer_owned_ipv4_pool');
+  }
+
   // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
@@ -95,6 +110,11 @@ export class DataAwsLb extends cdktf.TerraformDataSource {
   // enable_deletion_protection - computed: true, optional: false, required: false
   public get enableDeletionProtection() {
     return this.getBooleanAttribute('enable_deletion_protection');
+  }
+
+  // enable_http2 - computed: true, optional: false, required: false
+  public get enableHttp2() {
+    return this.getBooleanAttribute('enable_http2');
   }
 
   // id - computed: true, optional: true, required: false

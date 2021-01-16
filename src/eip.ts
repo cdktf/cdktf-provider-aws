@@ -10,6 +10,7 @@ export interface EipConfig extends cdktf.TerraformMetaArguments {
   readonly associateWithPrivateIp?: string;
   readonly customerOwnedIpv4Pool?: string;
   readonly instance?: string;
+  readonly networkBorderGroup?: string;
   readonly networkInterface?: string;
   readonly publicIpv4Pool?: string;
   readonly tags?: { [key: string]: string };
@@ -55,6 +56,7 @@ export class Eip extends cdktf.TerraformResource {
     this._associateWithPrivateIp = config.associateWithPrivateIp;
     this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
     this._instance = config.instance;
+    this._networkBorderGroup = config.networkBorderGroup;
     this._networkInterface = config.networkInterface;
     this._publicIpv4Pool = config.publicIpv4Pool;
     this._tags = config.tags;
@@ -90,6 +92,11 @@ export class Eip extends cdktf.TerraformResource {
   // association_id - computed: true, optional: false, required: false
   public get associationId() {
     return this.getStringAttribute('association_id');
+  }
+
+  // carrier_ip - computed: true, optional: false, required: false
+  public get carrierIp() {
+    return this.getStringAttribute('carrier_ip');
   }
 
   // customer_owned_ip - computed: true, optional: false, required: false
@@ -137,6 +144,22 @@ export class Eip extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get instanceInput() {
     return this._instance
+  }
+
+  // network_border_group - computed: true, optional: true, required: false
+  private _networkBorderGroup?: string;
+  public get networkBorderGroup() {
+    return this.getStringAttribute('network_border_group');
+  }
+  public set networkBorderGroup(value: string) {
+    this._networkBorderGroup = value;
+  }
+  public resetNetworkBorderGroup() {
+    this._networkBorderGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkBorderGroupInput() {
+    return this._networkBorderGroup
   }
 
   // network_interface - computed: true, optional: true, required: false
@@ -248,6 +271,7 @@ export class Eip extends cdktf.TerraformResource {
       associate_with_private_ip: cdktf.stringToTerraform(this._associateWithPrivateIp),
       customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
       instance: cdktf.stringToTerraform(this._instance),
+      network_border_group: cdktf.stringToTerraform(this._networkBorderGroup),
       network_interface: cdktf.stringToTerraform(this._networkInterface),
       public_ipv4_pool: cdktf.stringToTerraform(this._publicIpv4Pool),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

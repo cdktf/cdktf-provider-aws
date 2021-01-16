@@ -45,6 +45,11 @@ export class Route53ZoneAssociation extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // owning_account - computed: true, optional: false, required: false
+  public get owningAccount() {
+    return this.getStringAttribute('owning_account');
+  }
+
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {

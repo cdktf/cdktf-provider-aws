@@ -18,9 +18,11 @@ export interface RouteTableRoute {
   readonly gatewayId?: string;
   readonly instanceId?: string;
   readonly ipv6CidrBlock?: string;
+  readonly localGatewayId?: string;
   readonly natGatewayId?: string;
   readonly networkInterfaceId?: string;
   readonly transitGatewayId?: string;
+  readonly vpcEndpointId?: string;
   readonly vpcPeeringConnectionId?: string;
 }
 
@@ -32,9 +34,11 @@ function routeTableRouteToTerraform(struct?: RouteTableRoute): any {
     gateway_id: cdktf.stringToTerraform(struct!.gatewayId),
     instance_id: cdktf.stringToTerraform(struct!.instanceId),
     ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    local_gateway_id: cdktf.stringToTerraform(struct!.localGatewayId),
     nat_gateway_id: cdktf.stringToTerraform(struct!.natGatewayId),
     network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
     transit_gateway_id: cdktf.stringToTerraform(struct!.transitGatewayId),
+    vpc_endpoint_id: cdktf.stringToTerraform(struct!.vpcEndpointId),
     vpc_peering_connection_id: cdktf.stringToTerraform(struct!.vpcPeeringConnectionId),
   }
 }

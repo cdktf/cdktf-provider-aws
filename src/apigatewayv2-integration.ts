@@ -14,14 +14,44 @@ export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArgume
   readonly credentialsArn?: string;
   readonly description?: string;
   readonly integrationMethod?: string;
+  readonly integrationSubtype?: string;
   readonly integrationType: string;
   readonly integrationUri?: string;
   readonly passthroughBehavior?: string;
   readonly payloadFormatVersion?: string;
+  readonly requestParameters?: { [key: string]: string };
   readonly requestTemplates?: { [key: string]: string };
   readonly templateSelectionExpression?: string;
   readonly timeoutMilliseconds?: number;
+  /** response_parameters block */
+  readonly responseParameters?: Apigatewayv2IntegrationResponseParameters[];
+  /** tls_config block */
+  readonly tlsConfig?: Apigatewayv2IntegrationTlsConfig[];
 }
+export interface Apigatewayv2IntegrationResponseParameters {
+  readonly mappings: { [key: string]: string };
+  readonly statusCode: string;
+}
+
+function apigatewayv2IntegrationResponseParametersToTerraform(struct?: Apigatewayv2IntegrationResponseParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    mappings: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.mappings),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+  }
+}
+
+export interface Apigatewayv2IntegrationTlsConfig {
+  readonly serverNameToVerify?: string;
+}
+
+function apigatewayv2IntegrationTlsConfigToTerraform(struct?: Apigatewayv2IntegrationTlsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    server_name_to_verify: cdktf.stringToTerraform(struct!.serverNameToVerify),
+  }
+}
+
 
 // Resource
 
@@ -49,13 +79,17 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
     this._credentialsArn = config.credentialsArn;
     this._description = config.description;
     this._integrationMethod = config.integrationMethod;
+    this._integrationSubtype = config.integrationSubtype;
     this._integrationType = config.integrationType;
     this._integrationUri = config.integrationUri;
     this._passthroughBehavior = config.passthroughBehavior;
     this._payloadFormatVersion = config.payloadFormatVersion;
+    this._requestParameters = config.requestParameters;
     this._requestTemplates = config.requestTemplates;
     this._templateSelectionExpression = config.templateSelectionExpression;
     this._timeoutMilliseconds = config.timeoutMilliseconds;
+    this._responseParameters = config.responseParameters;
+    this._tlsConfig = config.tlsConfig;
   }
 
   // ==========
@@ -181,6 +215,22 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
     return this.getStringAttribute('integration_response_selection_expression');
   }
 
+  // integration_subtype - computed: false, optional: true, required: false
+  private _integrationSubtype?: string;
+  public get integrationSubtype() {
+    return this.getStringAttribute('integration_subtype');
+  }
+  public set integrationSubtype(value: string ) {
+    this._integrationSubtype = value;
+  }
+  public resetIntegrationSubtype() {
+    this._integrationSubtype = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integrationSubtypeInput() {
+    return this._integrationSubtype
+  }
+
   // integration_type - computed: false, optional: false, required: true
   private _integrationType: string;
   public get integrationType() {
@@ -242,6 +292,22 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
     return this._payloadFormatVersion
   }
 
+  // request_parameters - computed: false, optional: true, required: false
+  private _requestParameters?: { [key: string]: string };
+  public get requestParameters() {
+    return this.interpolationForAttribute('request_parameters') as any;
+  }
+  public set requestParameters(value: { [key: string]: string } ) {
+    this._requestParameters = value;
+  }
+  public resetRequestParameters() {
+    this._requestParameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestParametersInput() {
+    return this._requestParameters
+  }
+
   // request_templates - computed: false, optional: true, required: false
   private _requestTemplates?: { [key: string]: string };
   public get requestTemplates() {
@@ -274,12 +340,12 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
     return this._templateSelectionExpression
   }
 
-  // timeout_milliseconds - computed: false, optional: true, required: false
+  // timeout_milliseconds - computed: true, optional: true, required: false
   private _timeoutMilliseconds?: number;
   public get timeoutMilliseconds() {
     return this.getNumberAttribute('timeout_milliseconds');
   }
-  public set timeoutMilliseconds(value: number ) {
+  public set timeoutMilliseconds(value: number) {
     this._timeoutMilliseconds = value;
   }
   public resetTimeoutMilliseconds() {
@@ -288,6 +354,38 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get timeoutMillisecondsInput() {
     return this._timeoutMilliseconds
+  }
+
+  // response_parameters - computed: false, optional: true, required: false
+  private _responseParameters?: Apigatewayv2IntegrationResponseParameters[];
+  public get responseParameters() {
+    return this.interpolationForAttribute('response_parameters') as any;
+  }
+  public set responseParameters(value: Apigatewayv2IntegrationResponseParameters[] ) {
+    this._responseParameters = value;
+  }
+  public resetResponseParameters() {
+    this._responseParameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseParametersInput() {
+    return this._responseParameters
+  }
+
+  // tls_config - computed: false, optional: true, required: false
+  private _tlsConfig?: Apigatewayv2IntegrationTlsConfig[];
+  public get tlsConfig() {
+    return this.interpolationForAttribute('tls_config') as any;
+  }
+  public set tlsConfig(value: Apigatewayv2IntegrationTlsConfig[] ) {
+    this._tlsConfig = value;
+  }
+  public resetTlsConfig() {
+    this._tlsConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsConfigInput() {
+    return this._tlsConfig
   }
 
   // =========
@@ -303,13 +401,17 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
       credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
       description: cdktf.stringToTerraform(this._description),
       integration_method: cdktf.stringToTerraform(this._integrationMethod),
+      integration_subtype: cdktf.stringToTerraform(this._integrationSubtype),
       integration_type: cdktf.stringToTerraform(this._integrationType),
       integration_uri: cdktf.stringToTerraform(this._integrationUri),
       passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
       payload_format_version: cdktf.stringToTerraform(this._payloadFormatVersion),
+      request_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestParameters),
       request_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestTemplates),
       template_selection_expression: cdktf.stringToTerraform(this._templateSelectionExpression),
       timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
+      response_parameters: cdktf.listMapper(apigatewayv2IntegrationResponseParametersToTerraform)(this._responseParameters),
+      tls_config: cdktf.listMapper(apigatewayv2IntegrationTlsConfigToTerraform)(this._tlsConfig),
     };
   }
 }

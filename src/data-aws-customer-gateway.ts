@@ -7,7 +7,6 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsCustomerGatewayConfig extends cdktf.TerraformMetaArguments {
-  readonly id?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsCustomerGatewayFilter[];
@@ -45,7 +44,6 @@ export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._id = config.id;
     this._tags = config.tags;
     this._filter = config.filter;
   }
@@ -64,20 +62,9 @@ export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('bgp_asn');
   }
 
-  // id - computed: false, optional: true, required: false
-  private _id?: string;
+  // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string ) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id
   }
 
   // ip_address - computed: true, optional: false, required: false
@@ -128,7 +115,6 @@ export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsCustomerGatewayFilterToTerraform)(this._filter),
     };

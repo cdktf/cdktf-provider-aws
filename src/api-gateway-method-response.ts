@@ -11,7 +11,6 @@ export interface ApiGatewayMethodResponseConfig extends cdktf.TerraformMetaArgum
   readonly resourceId: string;
   readonly responseModels?: { [key: string]: string };
   readonly responseParameters?: { [key: string]: boolean };
-  readonly responseParametersInJson?: string;
   readonly restApiId: string;
   readonly statusCode: string;
 }
@@ -39,7 +38,6 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
     this._resourceId = config.resourceId;
     this._responseModels = config.responseModels;
     this._responseParameters = config.responseParameters;
-    this._responseParametersInJson = config.responseParametersInJson;
     this._restApiId = config.restApiId;
     this._statusCode = config.statusCode;
   }
@@ -111,22 +109,6 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
     return this._responseParameters
   }
 
-  // response_parameters_in_json - computed: false, optional: true, required: false
-  private _responseParametersInJson?: string;
-  public get responseParametersInJson() {
-    return this.getStringAttribute('response_parameters_in_json');
-  }
-  public set responseParametersInJson(value: string ) {
-    this._responseParametersInJson = value;
-  }
-  public resetResponseParametersInJson() {
-    this._responseParametersInJson = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseParametersInJsonInput() {
-    return this._responseParametersInJson
-  }
-
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
@@ -163,7 +145,6 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
       resource_id: cdktf.stringToTerraform(this._resourceId),
       response_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseModels),
       response_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseParameters),
-      response_parameters_in_json: cdktf.stringToTerraform(this._responseParametersInJson),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
       status_code: cdktf.stringToTerraform(this._statusCode),
     };

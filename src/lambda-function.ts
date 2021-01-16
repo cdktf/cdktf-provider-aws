@@ -7,17 +7,20 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
+  readonly codeSigningConfigArn?: string;
   readonly description?: string;
   readonly filename?: string;
   readonly functionName: string;
-  readonly handler: string;
+  readonly handler?: string;
+  readonly imageUri?: string;
   readonly kmsKeyArn?: string;
   readonly layers?: string[];
   readonly memorySize?: number;
+  readonly packageType?: string;
   readonly publish?: boolean;
   readonly reservedConcurrentExecutions?: number;
   readonly role: string;
-  readonly runtime: string;
+  readonly runtime?: string;
   readonly s3Bucket?: string;
   readonly s3Key?: string;
   readonly s3ObjectVersion?: string;
@@ -30,6 +33,8 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   readonly environment?: LambdaFunctionEnvironment[];
   /** file_system_config block */
   readonly fileSystemConfig?: LambdaFunctionFileSystemConfig[];
+  /** image_config block */
+  readonly imageConfig?: LambdaFunctionImageConfig[];
   /** timeouts block */
   readonly timeouts?: LambdaFunctionTimeouts;
   /** tracing_config block */
@@ -69,6 +74,21 @@ function lambdaFunctionFileSystemConfigToTerraform(struct?: LambdaFunctionFileSy
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
     local_mount_path: cdktf.stringToTerraform(struct!.localMountPath),
+  }
+}
+
+export interface LambdaFunctionImageConfig {
+  readonly command?: string[];
+  readonly entryPoint?: string[];
+  readonly workingDirectory?: string;
+}
+
+function lambdaFunctionImageConfigToTerraform(struct?: LambdaFunctionImageConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    command: cdktf.listMapper(cdktf.stringToTerraform)(struct!.command),
+    entry_point: cdktf.listMapper(cdktf.stringToTerraform)(struct!.entryPoint),
+    working_directory: cdktf.stringToTerraform(struct!.workingDirectory),
   }
 }
 
@@ -127,13 +147,16 @@ export class LambdaFunction extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._codeSigningConfigArn = config.codeSigningConfigArn;
     this._description = config.description;
     this._filename = config.filename;
     this._functionName = config.functionName;
     this._handler = config.handler;
+    this._imageUri = config.imageUri;
     this._kmsKeyArn = config.kmsKeyArn;
     this._layers = config.layers;
     this._memorySize = config.memorySize;
+    this._packageType = config.packageType;
     this._publish = config.publish;
     this._reservedConcurrentExecutions = config.reservedConcurrentExecutions;
     this._role = config.role;
@@ -147,6 +170,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
     this._deadLetterConfig = config.deadLetterConfig;
     this._environment = config.environment;
     this._fileSystemConfig = config.fileSystemConfig;
+    this._imageConfig = config.imageConfig;
     this._timeouts = config.timeouts;
     this._tracingConfig = config.tracingConfig;
     this._vpcConfig = config.vpcConfig;
@@ -159,6 +183,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // code_signing_config_arn - computed: false, optional: true, required: false
+  private _codeSigningConfigArn?: string;
+  public get codeSigningConfigArn() {
+    return this.getStringAttribute('code_signing_config_arn');
+  }
+  public set codeSigningConfigArn(value: string ) {
+    this._codeSigningConfigArn = value;
+  }
+  public resetCodeSigningConfigArn() {
+    this._codeSigningConfigArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeSigningConfigArnInput() {
+    return this._codeSigningConfigArn
   }
 
   // description - computed: false, optional: true, required: false
@@ -206,13 +246,16 @@ export class LambdaFunction extends cdktf.TerraformResource {
     return this._functionName
   }
 
-  // handler - computed: false, optional: false, required: true
-  private _handler: string;
+  // handler - computed: false, optional: true, required: false
+  private _handler?: string;
   public get handler() {
     return this.getStringAttribute('handler');
   }
-  public set handler(value: string) {
+  public set handler(value: string ) {
     this._handler = value;
+  }
+  public resetHandler() {
+    this._handler = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get handlerInput() {
@@ -222,6 +265,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // image_uri - computed: false, optional: true, required: false
+  private _imageUri?: string;
+  public get imageUri() {
+    return this.getStringAttribute('image_uri');
+  }
+  public set imageUri(value: string ) {
+    this._imageUri = value;
+  }
+  public resetImageUri() {
+    this._imageUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageUriInput() {
+    return this._imageUri
   }
 
   // invoke_arn - computed: true, optional: false, required: false
@@ -282,6 +341,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
     return this._memorySize
   }
 
+  // package_type - computed: false, optional: true, required: false
+  private _packageType?: string;
+  public get packageType() {
+    return this.getStringAttribute('package_type');
+  }
+  public set packageType(value: string ) {
+    this._packageType = value;
+  }
+  public resetPackageType() {
+    this._packageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get packageTypeInput() {
+    return this._packageType
+  }
+
   // publish - computed: false, optional: true, required: false
   private _publish?: boolean;
   public get publish() {
@@ -332,13 +407,16 @@ export class LambdaFunction extends cdktf.TerraformResource {
     return this._role
   }
 
-  // runtime - computed: false, optional: false, required: true
-  private _runtime: string;
+  // runtime - computed: false, optional: true, required: false
+  private _runtime?: string;
   public get runtime() {
     return this.getStringAttribute('runtime');
   }
-  public set runtime(value: string) {
+  public set runtime(value: string ) {
     this._runtime = value;
+  }
+  public resetRuntime() {
+    this._runtime = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get runtimeInput() {
@@ -391,6 +469,16 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get s3ObjectVersionInput() {
     return this._s3ObjectVersion
+  }
+
+  // signing_job_arn - computed: true, optional: false, required: false
+  public get signingJobArn() {
+    return this.getStringAttribute('signing_job_arn');
+  }
+
+  // signing_profile_version_arn - computed: true, optional: false, required: false
+  public get signingProfileVersionArn() {
+    return this.getStringAttribute('signing_profile_version_arn');
   }
 
   // source_code_hash - computed: true, optional: true, required: false
@@ -499,6 +587,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
     return this._fileSystemConfig
   }
 
+  // image_config - computed: false, optional: true, required: false
+  private _imageConfig?: LambdaFunctionImageConfig[];
+  public get imageConfig() {
+    return this.interpolationForAttribute('image_config') as any;
+  }
+  public set imageConfig(value: LambdaFunctionImageConfig[] ) {
+    this._imageConfig = value;
+  }
+  public resetImageConfig() {
+    this._imageConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageConfigInput() {
+    return this._imageConfig
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: LambdaFunctionTimeouts;
   public get timeouts() {
@@ -553,13 +657,16 @@ export class LambdaFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      code_signing_config_arn: cdktf.stringToTerraform(this._codeSigningConfigArn),
       description: cdktf.stringToTerraform(this._description),
       filename: cdktf.stringToTerraform(this._filename),
       function_name: cdktf.stringToTerraform(this._functionName),
       handler: cdktf.stringToTerraform(this._handler),
+      image_uri: cdktf.stringToTerraform(this._imageUri),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       layers: cdktf.listMapper(cdktf.stringToTerraform)(this._layers),
       memory_size: cdktf.numberToTerraform(this._memorySize),
+      package_type: cdktf.stringToTerraform(this._packageType),
       publish: cdktf.booleanToTerraform(this._publish),
       reserved_concurrent_executions: cdktf.numberToTerraform(this._reservedConcurrentExecutions),
       role: cdktf.stringToTerraform(this._role),
@@ -573,6 +680,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       dead_letter_config: cdktf.listMapper(lambdaFunctionDeadLetterConfigToTerraform)(this._deadLetterConfig),
       environment: cdktf.listMapper(lambdaFunctionEnvironmentToTerraform)(this._environment),
       file_system_config: cdktf.listMapper(lambdaFunctionFileSystemConfigToTerraform)(this._fileSystemConfig),
+      image_config: cdktf.listMapper(lambdaFunctionImageConfigToTerraform)(this._imageConfig),
       timeouts: lambdaFunctionTimeoutsToTerraform(this._timeouts),
       tracing_config: cdktf.listMapper(lambdaFunctionTracingConfigToTerraform)(this._tracingConfig),
       vpc_config: cdktf.listMapper(lambdaFunctionVpcConfigToTerraform)(this._vpcConfig),

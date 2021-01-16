@@ -197,6 +197,16 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
     return this._s3ObjectVersion
   }
 
+  // signing_job_arn - computed: true, optional: false, required: false
+  public get signingJobArn() {
+    return this.getStringAttribute('signing_job_arn');
+  }
+
+  // signing_profile_version_arn - computed: true, optional: false, required: false
+  public get signingProfileVersionArn() {
+    return this.getStringAttribute('signing_profile_version_arn');
+  }
+
   // source_code_hash - computed: true, optional: true, required: false
   private _sourceCodeHash?: string;
   public get sourceCodeHash() {

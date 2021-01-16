@@ -69,6 +69,11 @@ export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
     return this.getStringAttribute('ipv6_cidr_block');
   }
 
+  // local_gateway_id - computed: true, optional: false, required: false
+  public get localGatewayId() {
+    return this.getStringAttribute('local_gateway_id');
+  }
+
   // nat_gateway_id - computed: true, optional: false, required: false
   public get natGatewayId() {
     return this.getStringAttribute('nat_gateway_id');
@@ -82,6 +87,11 @@ export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
   // transit_gateway_id - computed: true, optional: false, required: false
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
+  }
+
+  // vpc_endpoint_id - computed: true, optional: false, required: false
+  public get vpcEndpointId() {
+    return this.getStringAttribute('vpc_endpoint_id');
   }
 
   // vpc_peering_connection_id - computed: true, optional: false, required: false

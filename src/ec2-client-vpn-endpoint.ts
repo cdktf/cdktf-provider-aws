@@ -22,6 +22,7 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
 export interface Ec2ClientVpnEndpointAuthenticationOptions {
   readonly activeDirectoryId?: string;
   readonly rootCertificateChainArn?: string;
+  readonly samlProviderArn?: string;
   readonly type: string;
 }
 
@@ -30,6 +31,7 @@ function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec2Client
   return {
     active_directory_id: cdktf.stringToTerraform(struct!.activeDirectoryId),
     root_certificate_chain_arn: cdktf.stringToTerraform(struct!.rootCertificateChainArn),
+    saml_provider_arn: cdktf.stringToTerraform(struct!.samlProviderArn),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }

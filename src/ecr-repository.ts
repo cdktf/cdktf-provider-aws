@@ -10,11 +10,26 @@ export interface EcrRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly imageTagMutability?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  /** encryption_configuration block */
+  readonly encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[];
   /** image_scanning_configuration block */
   readonly imageScanningConfiguration?: EcrRepositoryImageScanningConfiguration[];
   /** timeouts block */
   readonly timeouts?: EcrRepositoryTimeouts;
 }
+export interface EcrRepositoryEncryptionConfiguration {
+  readonly encryptionType?: string;
+  readonly kmsKey?: string;
+}
+
+function ecrRepositoryEncryptionConfigurationToTerraform(struct?: EcrRepositoryEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
+    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+  }
+}
+
 export interface EcrRepositoryImageScanningConfiguration {
   readonly scanOnPush: boolean;
 }
@@ -60,6 +75,7 @@ export class EcrRepository extends cdktf.TerraformResource {
     this._imageTagMutability = config.imageTagMutability;
     this._name = config.name;
     this._tags = config.tags;
+    this._encryptionConfiguration = config.encryptionConfiguration;
     this._imageScanningConfiguration = config.imageScanningConfiguration;
     this._timeouts = config.timeouts;
   }
@@ -133,6 +149,22 @@ export class EcrRepository extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // encryption_configuration - computed: false, optional: true, required: false
+  private _encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[];
+  public get encryptionConfiguration() {
+    return this.interpolationForAttribute('encryption_configuration') as any;
+  }
+  public set encryptionConfiguration(value: EcrRepositoryEncryptionConfiguration[] ) {
+    this._encryptionConfiguration = value;
+  }
+  public resetEncryptionConfiguration() {
+    this._encryptionConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionConfigurationInput() {
+    return this._encryptionConfiguration
+  }
+
   // image_scanning_configuration - computed: false, optional: true, required: false
   private _imageScanningConfiguration?: EcrRepositoryImageScanningConfiguration[];
   public get imageScanningConfiguration() {
@@ -174,6 +206,7 @@ export class EcrRepository extends cdktf.TerraformResource {
       image_tag_mutability: cdktf.stringToTerraform(this._imageTagMutability),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      encryption_configuration: cdktf.listMapper(ecrRepositoryEncryptionConfigurationToTerraform)(this._encryptionConfiguration),
       image_scanning_configuration: cdktf.listMapper(ecrRepositoryImageScanningConfigurationToTerraform)(this._imageScanningConfiguration),
       timeouts: ecrRepositoryTimeoutsToTerraform(this._timeouts),
     };

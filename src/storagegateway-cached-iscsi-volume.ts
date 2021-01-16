@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly gatewayArn: string;
+  readonly kmsEncrypted?: boolean;
+  readonly kmsKey?: string;
   readonly networkInterfaceId: string;
   readonly snapshotId?: string;
   readonly sourceVolumeArn?: string;
@@ -36,6 +38,8 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._gatewayArn = config.gatewayArn;
+    this._kmsEncrypted = config.kmsEncrypted;
+    this._kmsKey = config.kmsKey;
     this._networkInterfaceId = config.networkInterfaceId;
     this._snapshotId = config.snapshotId;
     this._sourceVolumeArn = config.sourceVolumeArn;
@@ -74,6 +78,38 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // kms_encrypted - computed: false, optional: true, required: false
+  private _kmsEncrypted?: boolean;
+  public get kmsEncrypted() {
+    return this.getBooleanAttribute('kms_encrypted');
+  }
+  public set kmsEncrypted(value: boolean ) {
+    this._kmsEncrypted = value;
+  }
+  public resetKmsEncrypted() {
+    this._kmsEncrypted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsEncryptedInput() {
+    return this._kmsEncrypted
+  }
+
+  // kms_key - computed: false, optional: true, required: false
+  private _kmsKey?: string;
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+  public set kmsKey(value: string ) {
+    this._kmsKey = value;
+  }
+  public resetKmsKey() {
+    this._kmsKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyInput() {
+    return this._kmsKey
   }
 
   // lun_number - computed: true, optional: false, required: false
@@ -195,6 +231,8 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
+      kms_encrypted: cdktf.booleanToTerraform(this._kmsEncrypted),
+      kms_key: cdktf.stringToTerraform(this._kmsKey),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
       snapshot_id: cdktf.stringToTerraform(this._snapshotId),
       source_volume_arn: cdktf.stringToTerraform(this._sourceVolumeArn),

@@ -7,7 +7,6 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMetaArguments {
-  readonly id?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsEc2TransitGatewayVpcAttachmentFilter[];
@@ -45,7 +44,6 @@ export class DataAwsEc2TransitGatewayVpcAttachment extends cdktf.TerraformDataSo
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._id = config.id;
     this._tags = config.tags;
     this._filter = config.filter;
   }
@@ -54,25 +52,19 @@ export class DataAwsEc2TransitGatewayVpcAttachment extends cdktf.TerraformDataSo
   // ATTRIBUTES
   // ==========
 
+  // appliance_mode_support - computed: true, optional: false, required: false
+  public get applianceModeSupport() {
+    return this.getStringAttribute('appliance_mode_support');
+  }
+
   // dns_support - computed: true, optional: false, required: false
   public get dnsSupport() {
     return this.getStringAttribute('dns_support');
   }
 
-  // id - computed: false, optional: true, required: false
-  private _id?: string;
+  // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string ) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id
   }
 
   // ipv6_support - computed: true, optional: false, required: false
@@ -138,7 +130,6 @@ export class DataAwsEc2TransitGatewayVpcAttachment extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsEc2TransitGatewayVpcAttachmentFilterToTerraform)(this._filter),
     };

@@ -8,8 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   readonly apiKeySelectionExpression?: string;
+  readonly body?: string;
   readonly credentialsArn?: string;
   readonly description?: string;
+  readonly disableExecuteApiEndpoint?: boolean;
   readonly name: string;
   readonly protocolType: string;
   readonly routeKey?: string;
@@ -62,8 +64,10 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._apiKeySelectionExpression = config.apiKeySelectionExpression;
+    this._body = config.body;
     this._credentialsArn = config.credentialsArn;
     this._description = config.description;
+    this._disableExecuteApiEndpoint = config.disableExecuteApiEndpoint;
     this._name = config.name;
     this._protocolType = config.protocolType;
     this._routeKey = config.routeKey;
@@ -104,6 +108,22 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
+  // body - computed: false, optional: true, required: false
+  private _body?: string;
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+  public set body(value: string ) {
+    this._body = value;
+  }
+  public resetBody() {
+    this._body = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body
+  }
+
   // credentials_arn - computed: false, optional: true, required: false
   private _credentialsArn?: string;
   public get credentialsArn() {
@@ -134,6 +154,22 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description
+  }
+
+  // disable_execute_api_endpoint - computed: false, optional: true, required: false
+  private _disableExecuteApiEndpoint?: boolean;
+  public get disableExecuteApiEndpoint() {
+    return this.getBooleanAttribute('disable_execute_api_endpoint');
+  }
+  public set disableExecuteApiEndpoint(value: boolean ) {
+    this._disableExecuteApiEndpoint = value;
+  }
+  public resetDisableExecuteApiEndpoint() {
+    this._disableExecuteApiEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableExecuteApiEndpointInput() {
+    return this._disableExecuteApiEndpoint
   }
 
   // execution_arn - computed: true, optional: false, required: false
@@ -275,8 +311,10 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_key_selection_expression: cdktf.stringToTerraform(this._apiKeySelectionExpression),
+      body: cdktf.stringToTerraform(this._body),
       credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
       description: cdktf.stringToTerraform(this._description),
+      disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),
       name: cdktf.stringToTerraform(this._name),
       protocol_type: cdktf.stringToTerraform(this._protocolType),
       route_key: cdktf.stringToTerraform(this._routeKey),

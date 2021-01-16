@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AppmeshVirtualServiceConfig extends cdktf.TerraformMetaArguments {
   readonly meshName: string;
+  readonly meshOwner?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
   /** spec block */
@@ -83,6 +84,7 @@ export class AppmeshVirtualService extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._meshName = config.meshName;
+    this._meshOwner = config.meshOwner;
     this._name = config.name;
     this._tags = config.tags;
     this._spec = config.spec;
@@ -125,6 +127,22 @@ export class AppmeshVirtualService extends cdktf.TerraformResource {
     return this._meshName
   }
 
+  // mesh_owner - computed: true, optional: true, required: false
+  private _meshOwner?: string;
+  public get meshOwner() {
+    return this.getStringAttribute('mesh_owner');
+  }
+  public set meshOwner(value: string) {
+    this._meshOwner = value;
+  }
+  public resetMeshOwner() {
+    this._meshOwner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get meshOwnerInput() {
+    return this._meshOwner
+  }
+
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
@@ -136,6 +154,11 @@ export class AppmeshVirtualService extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // resource_owner - computed: true, optional: false, required: false
+  public get resourceOwner() {
+    return this.getStringAttribute('resource_owner');
   }
 
   // tags - computed: false, optional: true, required: false
@@ -174,6 +197,7 @@ export class AppmeshVirtualService extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       mesh_name: cdktf.stringToTerraform(this._meshName),
+      mesh_owner: cdktf.stringToTerraform(this._meshOwner),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       spec: cdktf.listMapper(appmeshVirtualServiceSpecToTerraform)(this._spec),

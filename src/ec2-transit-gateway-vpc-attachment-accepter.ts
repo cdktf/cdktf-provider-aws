@@ -42,6 +42,11 @@ export class Ec2TransitGatewayVpcAttachmentAccepter extends cdktf.TerraformResou
   // ATTRIBUTES
   // ==========
 
+  // appliance_mode_support - computed: true, optional: false, required: false
+  public get applianceModeSupport() {
+    return this.getStringAttribute('appliance_mode_support');
+  }
+
   // dns_support - computed: true, optional: false, required: false
   public get dnsSupport() {
     return this.getStringAttribute('dns_support');

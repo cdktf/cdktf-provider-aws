@@ -11,7 +11,6 @@ export interface ApiGatewayIntegrationResponseConfig extends cdktf.TerraformMeta
   readonly httpMethod: string;
   readonly resourceId: string;
   readonly responseParameters?: { [key: string]: string };
-  readonly responseParametersInJson?: string;
   readonly responseTemplates?: { [key: string]: string };
   readonly restApiId: string;
   readonly selectionPattern?: string;
@@ -41,7 +40,6 @@ export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
     this._httpMethod = config.httpMethod;
     this._resourceId = config.resourceId;
     this._responseParameters = config.responseParameters;
-    this._responseParametersInJson = config.responseParametersInJson;
     this._responseTemplates = config.responseTemplates;
     this._restApiId = config.restApiId;
     this._selectionPattern = config.selectionPattern;
@@ -115,22 +113,6 @@ export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
     return this._responseParameters
   }
 
-  // response_parameters_in_json - computed: false, optional: true, required: false
-  private _responseParametersInJson?: string;
-  public get responseParametersInJson() {
-    return this.getStringAttribute('response_parameters_in_json');
-  }
-  public set responseParametersInJson(value: string ) {
-    this._responseParametersInJson = value;
-  }
-  public resetResponseParametersInJson() {
-    this._responseParametersInJson = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseParametersInJsonInput() {
-    return this._responseParametersInJson
-  }
-
   // response_templates - computed: false, optional: true, required: false
   private _responseTemplates?: { [key: string]: string };
   public get responseTemplates() {
@@ -199,7 +181,6 @@ export class ApiGatewayIntegrationResponse extends cdktf.TerraformResource {
       http_method: cdktf.stringToTerraform(this._httpMethod),
       resource_id: cdktf.stringToTerraform(this._resourceId),
       response_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseParameters),
-      response_parameters_in_json: cdktf.stringToTerraform(this._responseParametersInJson),
       response_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._responseTemplates),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
       selection_pattern: cdktf.stringToTerraform(this._selectionPattern),

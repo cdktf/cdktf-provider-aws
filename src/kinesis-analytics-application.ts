@@ -60,7 +60,7 @@ function kinesisAnalyticsApplicationInputsKinesisStreamToTerraform(struct?: Kine
 }
 
 export interface KinesisAnalyticsApplicationInputsParallelism {
-  readonly count: number;
+  readonly count?: number;
 }
 
 function kinesisAnalyticsApplicationInputsParallelismToTerraform(struct?: KinesisAnalyticsApplicationInputsParallelism): any {

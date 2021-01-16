@@ -22,6 +22,8 @@ export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** event_selector block */
   readonly eventSelector?: CloudtrailEventSelector[];
+  /** insight_selector block */
+  readonly insightSelector?: CloudtrailInsightSelector[];
 }
 export interface CloudtrailEventSelectorDataResource {
   readonly type: string;
@@ -49,6 +51,17 @@ function cloudtrailEventSelectorToTerraform(struct?: CloudtrailEventSelector): a
     include_management_events: cdktf.booleanToTerraform(struct!.includeManagementEvents),
     read_write_type: cdktf.stringToTerraform(struct!.readWriteType),
     data_resource: cdktf.listMapper(cloudtrailEventSelectorDataResourceToTerraform)(struct!.dataResource),
+  }
+}
+
+export interface CloudtrailInsightSelector {
+  readonly insightType: string;
+}
+
+function cloudtrailInsightSelectorToTerraform(struct?: CloudtrailInsightSelector): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    insight_type: cdktf.stringToTerraform(struct!.insightType),
   }
 }
 
@@ -86,6 +99,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
     this._snsTopicName = config.snsTopicName;
     this._tags = config.tags;
     this._eventSelector = config.eventSelector;
+    this._insightSelector = config.insightSelector;
   }
 
   // ==========
@@ -325,6 +339,22 @@ export class Cloudtrail extends cdktf.TerraformResource {
     return this._eventSelector
   }
 
+  // insight_selector - computed: false, optional: true, required: false
+  private _insightSelector?: CloudtrailInsightSelector[];
+  public get insightSelector() {
+    return this.interpolationForAttribute('insight_selector') as any;
+  }
+  public set insightSelector(value: CloudtrailInsightSelector[] ) {
+    this._insightSelector = value;
+  }
+  public resetInsightSelector() {
+    this._insightSelector = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insightSelectorInput() {
+    return this._insightSelector
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -345,6 +375,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
       sns_topic_name: cdktf.stringToTerraform(this._snsTopicName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       event_selector: cdktf.listMapper(cloudtrailEventSelectorToTerraform)(this._eventSelector),
+      insight_selector: cdktf.listMapper(cloudtrailInsightSelectorToTerraform)(this._insightSelector),
     };
   }
 }

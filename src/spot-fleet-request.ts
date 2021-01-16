@@ -27,6 +27,8 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   readonly launchSpecification?: SpotFleetRequestLaunchSpecification[];
   /** launch_template_config block */
   readonly launchTemplateConfig?: SpotFleetRequestLaunchTemplateConfig[];
+  /** spot_maintenance_strategies block */
+  readonly spotMaintenanceStrategies?: SpotFleetRequestSpotMaintenanceStrategies[];
   /** timeouts block */
   readonly timeouts?: SpotFleetRequestTimeouts;
 }
@@ -37,6 +39,7 @@ export interface SpotFleetRequestLaunchSpecificationEbsBlockDevice {
   readonly iops?: number;
   readonly kmsKeyId?: string;
   readonly snapshotId?: string;
+  readonly throughput?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
@@ -50,6 +53,7 @@ function spotFleetRequestLaunchSpecificationEbsBlockDeviceToTerraform(struct?: S
     iops: cdktf.numberToTerraform(struct!.iops),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
@@ -73,6 +77,7 @@ export interface SpotFleetRequestLaunchSpecificationRootBlockDevice {
   readonly encrypted?: boolean;
   readonly iops?: number;
   readonly kmsKeyId?: string;
+  readonly throughput?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
@@ -84,6 +89,7 @@ function spotFleetRequestLaunchSpecificationRootBlockDeviceToTerraform(struct?: 
     encrypted: cdktf.booleanToTerraform(struct!.encrypted),
     iops: cdktf.numberToTerraform(struct!.iops),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
@@ -192,6 +198,29 @@ function spotFleetRequestLaunchTemplateConfigToTerraform(struct?: SpotFleetReque
   }
 }
 
+export interface SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance {
+  readonly replacementStrategy?: string;
+}
+
+function spotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceToTerraform(struct?: SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    replacement_strategy: cdktf.stringToTerraform(struct!.replacementStrategy),
+  }
+}
+
+export interface SpotFleetRequestSpotMaintenanceStrategies {
+  /** capacity_rebalance block */
+  readonly capacityRebalance?: SpotFleetRequestSpotMaintenanceStrategiesCapacityRebalance[];
+}
+
+function spotFleetRequestSpotMaintenanceStrategiesToTerraform(struct?: SpotFleetRequestSpotMaintenanceStrategies): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    capacity_rebalance: cdktf.listMapper(spotFleetRequestSpotMaintenanceStrategiesCapacityRebalanceToTerraform)(struct!.capacityRebalance),
+  }
+}
+
 export interface SpotFleetRequestTimeouts {
   readonly create?: string;
   readonly delete?: string;
@@ -243,6 +272,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     this._waitForFulfillment = config.waitForFulfillment;
     this._launchSpecification = config.launchSpecification;
     this._launchTemplateConfig = config.launchTemplateConfig;
+    this._spotMaintenanceStrategies = config.spotMaintenanceStrategies;
     this._timeouts = config.timeouts;
   }
 
@@ -547,6 +577,22 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     return this._launchTemplateConfig
   }
 
+  // spot_maintenance_strategies - computed: false, optional: true, required: false
+  private _spotMaintenanceStrategies?: SpotFleetRequestSpotMaintenanceStrategies[];
+  public get spotMaintenanceStrategies() {
+    return this.interpolationForAttribute('spot_maintenance_strategies') as any;
+  }
+  public set spotMaintenanceStrategies(value: SpotFleetRequestSpotMaintenanceStrategies[] ) {
+    this._spotMaintenanceStrategies = value;
+  }
+  public resetSpotMaintenanceStrategies() {
+    this._spotMaintenanceStrategies = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotMaintenanceStrategiesInput() {
+    return this._spotMaintenanceStrategies
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: SpotFleetRequestTimeouts;
   public get timeouts() {
@@ -587,6 +633,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       wait_for_fulfillment: cdktf.booleanToTerraform(this._waitForFulfillment),
       launch_specification: cdktf.listMapper(spotFleetRequestLaunchSpecificationToTerraform)(this._launchSpecification),
       launch_template_config: cdktf.listMapper(spotFleetRequestLaunchTemplateConfigToTerraform)(this._launchTemplateConfig),
+      spot_maintenance_strategies: cdktf.listMapper(spotFleetRequestSpotMaintenanceStrategiesToTerraform)(this._spotMaintenanceStrategies),
       timeouts: spotFleetRequestTimeoutsToTerraform(this._timeouts),
     };
   }

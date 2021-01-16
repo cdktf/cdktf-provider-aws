@@ -12,13 +12,10 @@ export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
   readonly autoscalingRole?: string;
   readonly configurations?: string;
   readonly configurationsJson?: string;
-  readonly coreInstanceCount?: number;
-  readonly coreInstanceType?: string;
   readonly customAmiId?: string;
   readonly ebsRootVolumeSize?: number;
   readonly keepJobFlowAliveWhenNoSteps?: boolean;
   readonly logUri?: string;
-  readonly masterInstanceType?: string;
   readonly name: string;
   readonly releaseLabel: string;
   readonly scaleDownBehavior?: string;
@@ -31,14 +28,16 @@ export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
   readonly visibleToAllUsers?: boolean;
   /** bootstrap_action block */
   readonly bootstrapAction?: EmrClusterBootstrapAction[];
+  /** core_instance_fleet block */
+  readonly coreInstanceFleet?: EmrClusterCoreInstanceFleet[];
   /** core_instance_group block */
   readonly coreInstanceGroup?: EmrClusterCoreInstanceGroup[];
   /** ec2_attributes block */
   readonly ec2Attributes?: EmrClusterEc2Attributes[];
-  /** instance_group block */
-  readonly instanceGroup?: EmrClusterInstanceGroup[];
   /** kerberos_attributes block */
   readonly kerberosAttributes?: EmrClusterKerberosAttributes[];
+  /** master_instance_fleet block */
+  readonly masterInstanceFleet?: EmrClusterMasterInstanceFleet[];
   /** master_instance_group block */
   readonly masterInstanceGroup?: EmrClusterMasterInstanceGroup[];
 }
@@ -86,6 +85,123 @@ function emrClusterBootstrapActionToTerraform(struct?: EmrClusterBootstrapAction
     args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
     name: cdktf.stringToTerraform(struct!.name),
     path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export interface EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations {
+  readonly classification?: string;
+  readonly properties?: { [key: string]: string };
+}
+
+function emrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(struct?: EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    classification: cdktf.stringToTerraform(struct!.classification),
+    properties: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.properties),
+  }
+}
+
+export interface EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig {
+  readonly iops?: number;
+  readonly size: number;
+  readonly type: string;
+  readonly volumesPerInstance?: number;
+}
+
+function emrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigToTerraform(struct?: EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    iops: cdktf.numberToTerraform(struct!.iops),
+    size: cdktf.numberToTerraform(struct!.size),
+    type: cdktf.stringToTerraform(struct!.type),
+    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
+  }
+}
+
+export interface EmrClusterCoreInstanceFleetInstanceTypeConfigs {
+  readonly bidPrice?: string;
+  readonly bidPriceAsPercentageOfOnDemandPrice?: number;
+  readonly instanceType: string;
+  readonly weightedCapacity?: number;
+  /** configurations block */
+  readonly configurations?: EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations[];
+  /** ebs_config block */
+  readonly ebsConfig?: EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig[];
+}
+
+function emrClusterCoreInstanceFleetInstanceTypeConfigsToTerraform(struct?: EmrClusterCoreInstanceFleetInstanceTypeConfigs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bid_price: cdktf.stringToTerraform(struct!.bidPrice),
+    bid_price_as_percentage_of_on_demand_price: cdktf.numberToTerraform(struct!.bidPriceAsPercentageOfOnDemandPrice),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    weighted_capacity: cdktf.numberToTerraform(struct!.weightedCapacity),
+    configurations: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsToTerraform)(struct!.configurations),
+    ebs_config: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigToTerraform)(struct!.ebsConfig),
+  }
+}
+
+export interface EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification {
+  readonly allocationStrategy: string;
+}
+
+function emrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform(struct?: EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+  }
+}
+
+export interface EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification {
+  readonly allocationStrategy: string;
+  readonly blockDurationMinutes?: number;
+  readonly timeoutAction: string;
+  readonly timeoutDurationMinutes: number;
+}
+
+function emrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform(struct?: EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+    block_duration_minutes: cdktf.numberToTerraform(struct!.blockDurationMinutes),
+    timeout_action: cdktf.stringToTerraform(struct!.timeoutAction),
+    timeout_duration_minutes: cdktf.numberToTerraform(struct!.timeoutDurationMinutes),
+  }
+}
+
+export interface EmrClusterCoreInstanceFleetLaunchSpecifications {
+  /** on_demand_specification block */
+  readonly onDemandSpecification?: EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification[];
+  /** spot_specification block */
+  readonly spotSpecification?: EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification[];
+}
+
+function emrClusterCoreInstanceFleetLaunchSpecificationsToTerraform(struct?: EmrClusterCoreInstanceFleetLaunchSpecifications): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    on_demand_specification: cdktf.listMapper(emrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform)(struct!.onDemandSpecification),
+    spot_specification: cdktf.listMapper(emrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform)(struct!.spotSpecification),
+  }
+}
+
+export interface EmrClusterCoreInstanceFleet {
+  readonly name?: string;
+  readonly targetOnDemandCapacity?: number;
+  readonly targetSpotCapacity?: number;
+  /** instance_type_configs block */
+  readonly instanceTypeConfigs?: EmrClusterCoreInstanceFleetInstanceTypeConfigs[];
+  /** launch_specifications block */
+  readonly launchSpecifications?: EmrClusterCoreInstanceFleetLaunchSpecifications[];
+}
+
+function emrClusterCoreInstanceFleetToTerraform(struct?: EmrClusterCoreInstanceFleet): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    target_on_demand_capacity: cdktf.numberToTerraform(struct!.targetOnDemandCapacity),
+    target_spot_capacity: cdktf.numberToTerraform(struct!.targetSpotCapacity),
+    instance_type_configs: cdktf.listMapper(emrClusterCoreInstanceFleetInstanceTypeConfigsToTerraform)(struct!.instanceTypeConfigs),
+    launch_specifications: cdktf.listMapper(emrClusterCoreInstanceFleetLaunchSpecificationsToTerraform)(struct!.launchSpecifications),
   }
 }
 
@@ -153,47 +269,6 @@ function emrClusterEc2AttributesToTerraform(struct?: EmrClusterEc2Attributes): a
   }
 }
 
-export interface EmrClusterInstanceGroupEbsConfig {
-  readonly iops?: number;
-  readonly size: number;
-  readonly type: string;
-  readonly volumesPerInstance?: number;
-}
-
-function emrClusterInstanceGroupEbsConfigToTerraform(struct?: EmrClusterInstanceGroupEbsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    iops: cdktf.numberToTerraform(struct!.iops),
-    size: cdktf.numberToTerraform(struct!.size),
-    type: cdktf.stringToTerraform(struct!.type),
-    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
-  }
-}
-
-export interface EmrClusterInstanceGroup {
-  readonly autoscalingPolicy?: string;
-  readonly bidPrice?: string;
-  readonly instanceCount?: number;
-  readonly instanceRole: string;
-  readonly instanceType: string;
-  readonly name?: string;
-  /** ebs_config block */
-  readonly ebsConfig?: EmrClusterInstanceGroupEbsConfig[];
-}
-
-function emrClusterInstanceGroupToTerraform(struct?: EmrClusterInstanceGroup): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    autoscaling_policy: cdktf.stringToTerraform(struct!.autoscalingPolicy),
-    bid_price: cdktf.stringToTerraform(struct!.bidPrice),
-    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
-    instance_role: cdktf.stringToTerraform(struct!.instanceRole),
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    name: cdktf.stringToTerraform(struct!.name),
-    ebs_config: cdktf.listMapper(emrClusterInstanceGroupEbsConfigToTerraform)(struct!.ebsConfig),
-  }
-}
-
 export interface EmrClusterKerberosAttributes {
   readonly adDomainJoinPassword?: string;
   readonly adDomainJoinUser?: string;
@@ -210,6 +285,123 @@ function emrClusterKerberosAttributesToTerraform(struct?: EmrClusterKerberosAttr
     cross_realm_trust_principal_password: cdktf.stringToTerraform(struct!.crossRealmTrustPrincipalPassword),
     kdc_admin_password: cdktf.stringToTerraform(struct!.kdcAdminPassword),
     realm: cdktf.stringToTerraform(struct!.realm),
+  }
+}
+
+export interface EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations {
+  readonly classification?: string;
+  readonly properties?: { [key: string]: string };
+}
+
+function emrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(struct?: EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    classification: cdktf.stringToTerraform(struct!.classification),
+    properties: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.properties),
+  }
+}
+
+export interface EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig {
+  readonly iops?: number;
+  readonly size: number;
+  readonly type: string;
+  readonly volumesPerInstance?: number;
+}
+
+function emrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigToTerraform(struct?: EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    iops: cdktf.numberToTerraform(struct!.iops),
+    size: cdktf.numberToTerraform(struct!.size),
+    type: cdktf.stringToTerraform(struct!.type),
+    volumes_per_instance: cdktf.numberToTerraform(struct!.volumesPerInstance),
+  }
+}
+
+export interface EmrClusterMasterInstanceFleetInstanceTypeConfigs {
+  readonly bidPrice?: string;
+  readonly bidPriceAsPercentageOfOnDemandPrice?: number;
+  readonly instanceType: string;
+  readonly weightedCapacity?: number;
+  /** configurations block */
+  readonly configurations?: EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations[];
+  /** ebs_config block */
+  readonly ebsConfig?: EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig[];
+}
+
+function emrClusterMasterInstanceFleetInstanceTypeConfigsToTerraform(struct?: EmrClusterMasterInstanceFleetInstanceTypeConfigs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    bid_price: cdktf.stringToTerraform(struct!.bidPrice),
+    bid_price_as_percentage_of_on_demand_price: cdktf.numberToTerraform(struct!.bidPriceAsPercentageOfOnDemandPrice),
+    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    weighted_capacity: cdktf.numberToTerraform(struct!.weightedCapacity),
+    configurations: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsToTerraform)(struct!.configurations),
+    ebs_config: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigToTerraform)(struct!.ebsConfig),
+  }
+}
+
+export interface EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification {
+  readonly allocationStrategy: string;
+}
+
+function emrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform(struct?: EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+  }
+}
+
+export interface EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification {
+  readonly allocationStrategy: string;
+  readonly blockDurationMinutes?: number;
+  readonly timeoutAction: string;
+  readonly timeoutDurationMinutes: number;
+}
+
+function emrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform(struct?: EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
+    block_duration_minutes: cdktf.numberToTerraform(struct!.blockDurationMinutes),
+    timeout_action: cdktf.stringToTerraform(struct!.timeoutAction),
+    timeout_duration_minutes: cdktf.numberToTerraform(struct!.timeoutDurationMinutes),
+  }
+}
+
+export interface EmrClusterMasterInstanceFleetLaunchSpecifications {
+  /** on_demand_specification block */
+  readonly onDemandSpecification?: EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification[];
+  /** spot_specification block */
+  readonly spotSpecification?: EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification[];
+}
+
+function emrClusterMasterInstanceFleetLaunchSpecificationsToTerraform(struct?: EmrClusterMasterInstanceFleetLaunchSpecifications): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    on_demand_specification: cdktf.listMapper(emrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationToTerraform)(struct!.onDemandSpecification),
+    spot_specification: cdktf.listMapper(emrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationToTerraform)(struct!.spotSpecification),
+  }
+}
+
+export interface EmrClusterMasterInstanceFleet {
+  readonly name?: string;
+  readonly targetOnDemandCapacity?: number;
+  readonly targetSpotCapacity?: number;
+  /** instance_type_configs block */
+  readonly instanceTypeConfigs?: EmrClusterMasterInstanceFleetInstanceTypeConfigs[];
+  /** launch_specifications block */
+  readonly launchSpecifications?: EmrClusterMasterInstanceFleetLaunchSpecifications[];
+}
+
+function emrClusterMasterInstanceFleetToTerraform(struct?: EmrClusterMasterInstanceFleet): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    target_on_demand_capacity: cdktf.numberToTerraform(struct!.targetOnDemandCapacity),
+    target_spot_capacity: cdktf.numberToTerraform(struct!.targetSpotCapacity),
+    instance_type_configs: cdktf.listMapper(emrClusterMasterInstanceFleetInstanceTypeConfigsToTerraform)(struct!.instanceTypeConfigs),
+    launch_specifications: cdktf.listMapper(emrClusterMasterInstanceFleetLaunchSpecificationsToTerraform)(struct!.launchSpecifications),
   }
 }
 
@@ -275,13 +467,10 @@ export class EmrCluster extends cdktf.TerraformResource {
     this._autoscalingRole = config.autoscalingRole;
     this._configurations = config.configurations;
     this._configurationsJson = config.configurationsJson;
-    this._coreInstanceCount = config.coreInstanceCount;
-    this._coreInstanceType = config.coreInstanceType;
     this._customAmiId = config.customAmiId;
     this._ebsRootVolumeSize = config.ebsRootVolumeSize;
     this._keepJobFlowAliveWhenNoSteps = config.keepJobFlowAliveWhenNoSteps;
     this._logUri = config.logUri;
-    this._masterInstanceType = config.masterInstanceType;
     this._name = config.name;
     this._releaseLabel = config.releaseLabel;
     this._scaleDownBehavior = config.scaleDownBehavior;
@@ -293,10 +482,11 @@ export class EmrCluster extends cdktf.TerraformResource {
     this._terminationProtection = config.terminationProtection;
     this._visibleToAllUsers = config.visibleToAllUsers;
     this._bootstrapAction = config.bootstrapAction;
+    this._coreInstanceFleet = config.coreInstanceFleet;
     this._coreInstanceGroup = config.coreInstanceGroup;
     this._ec2Attributes = config.ec2Attributes;
-    this._instanceGroup = config.instanceGroup;
     this._kerberosAttributes = config.kerberosAttributes;
+    this._masterInstanceFleet = config.masterInstanceFleet;
     this._masterInstanceGroup = config.masterInstanceGroup;
   }
 
@@ -394,38 +584,6 @@ export class EmrCluster extends cdktf.TerraformResource {
     return this._configurationsJson
   }
 
-  // core_instance_count - computed: true, optional: true, required: false
-  private _coreInstanceCount?: number;
-  public get coreInstanceCount() {
-    return this.getNumberAttribute('core_instance_count');
-  }
-  public set coreInstanceCount(value: number) {
-    this._coreInstanceCount = value;
-  }
-  public resetCoreInstanceCount() {
-    this._coreInstanceCount = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get coreInstanceCountInput() {
-    return this._coreInstanceCount
-  }
-
-  // core_instance_type - computed: true, optional: true, required: false
-  private _coreInstanceType?: string;
-  public get coreInstanceType() {
-    return this.getStringAttribute('core_instance_type');
-  }
-  public set coreInstanceType(value: string) {
-    this._coreInstanceType = value;
-  }
-  public resetCoreInstanceType() {
-    this._coreInstanceType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get coreInstanceTypeInput() {
-    return this._coreInstanceType
-  }
-
   // custom_ami_id - computed: false, optional: true, required: false
   private _customAmiId?: string;
   public get customAmiId() {
@@ -493,22 +651,6 @@ export class EmrCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get logUriInput() {
     return this._logUri
-  }
-
-  // master_instance_type - computed: true, optional: true, required: false
-  private _masterInstanceType?: string;
-  public get masterInstanceType() {
-    return this.getStringAttribute('master_instance_type');
-  }
-  public set masterInstanceType(value: string) {
-    this._masterInstanceType = value;
-  }
-  public resetMasterInstanceType() {
-    this._masterInstanceType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get masterInstanceTypeInput() {
-    return this._masterInstanceType
   }
 
   // master_public_dns - computed: true, optional: false, required: false
@@ -683,6 +825,22 @@ export class EmrCluster extends cdktf.TerraformResource {
     return this._bootstrapAction
   }
 
+  // core_instance_fleet - computed: false, optional: true, required: false
+  private _coreInstanceFleet?: EmrClusterCoreInstanceFleet[];
+  public get coreInstanceFleet() {
+    return this.interpolationForAttribute('core_instance_fleet') as any;
+  }
+  public set coreInstanceFleet(value: EmrClusterCoreInstanceFleet[] ) {
+    this._coreInstanceFleet = value;
+  }
+  public resetCoreInstanceFleet() {
+    this._coreInstanceFleet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get coreInstanceFleetInput() {
+    return this._coreInstanceFleet
+  }
+
   // core_instance_group - computed: false, optional: true, required: false
   private _coreInstanceGroup?: EmrClusterCoreInstanceGroup[];
   public get coreInstanceGroup() {
@@ -715,22 +873,6 @@ export class EmrCluster extends cdktf.TerraformResource {
     return this._ec2Attributes
   }
 
-  // instance_group - computed: false, optional: true, required: false
-  private _instanceGroup?: EmrClusterInstanceGroup[];
-  public get instanceGroup() {
-    return this.interpolationForAttribute('instance_group') as any;
-  }
-  public set instanceGroup(value: EmrClusterInstanceGroup[] ) {
-    this._instanceGroup = value;
-  }
-  public resetInstanceGroup() {
-    this._instanceGroup = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceGroupInput() {
-    return this._instanceGroup
-  }
-
   // kerberos_attributes - computed: false, optional: true, required: false
   private _kerberosAttributes?: EmrClusterKerberosAttributes[];
   public get kerberosAttributes() {
@@ -745,6 +887,22 @@ export class EmrCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get kerberosAttributesInput() {
     return this._kerberosAttributes
+  }
+
+  // master_instance_fleet - computed: false, optional: true, required: false
+  private _masterInstanceFleet?: EmrClusterMasterInstanceFleet[];
+  public get masterInstanceFleet() {
+    return this.interpolationForAttribute('master_instance_fleet') as any;
+  }
+  public set masterInstanceFleet(value: EmrClusterMasterInstanceFleet[] ) {
+    this._masterInstanceFleet = value;
+  }
+  public resetMasterInstanceFleet() {
+    this._masterInstanceFleet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get masterInstanceFleetInput() {
+    return this._masterInstanceFleet
   }
 
   // master_instance_group - computed: false, optional: true, required: false
@@ -774,13 +932,10 @@ export class EmrCluster extends cdktf.TerraformResource {
       autoscaling_role: cdktf.stringToTerraform(this._autoscalingRole),
       configurations: cdktf.stringToTerraform(this._configurations),
       configurations_json: cdktf.stringToTerraform(this._configurationsJson),
-      core_instance_count: cdktf.numberToTerraform(this._coreInstanceCount),
-      core_instance_type: cdktf.stringToTerraform(this._coreInstanceType),
       custom_ami_id: cdktf.stringToTerraform(this._customAmiId),
       ebs_root_volume_size: cdktf.numberToTerraform(this._ebsRootVolumeSize),
       keep_job_flow_alive_when_no_steps: cdktf.booleanToTerraform(this._keepJobFlowAliveWhenNoSteps),
       log_uri: cdktf.stringToTerraform(this._logUri),
-      master_instance_type: cdktf.stringToTerraform(this._masterInstanceType),
       name: cdktf.stringToTerraform(this._name),
       release_label: cdktf.stringToTerraform(this._releaseLabel),
       scale_down_behavior: cdktf.stringToTerraform(this._scaleDownBehavior),
@@ -792,10 +947,11 @@ export class EmrCluster extends cdktf.TerraformResource {
       termination_protection: cdktf.booleanToTerraform(this._terminationProtection),
       visible_to_all_users: cdktf.booleanToTerraform(this._visibleToAllUsers),
       bootstrap_action: cdktf.listMapper(emrClusterBootstrapActionToTerraform)(this._bootstrapAction),
+      core_instance_fleet: cdktf.listMapper(emrClusterCoreInstanceFleetToTerraform)(this._coreInstanceFleet),
       core_instance_group: cdktf.listMapper(emrClusterCoreInstanceGroupToTerraform)(this._coreInstanceGroup),
       ec2_attributes: cdktf.listMapper(emrClusterEc2AttributesToTerraform)(this._ec2Attributes),
-      instance_group: cdktf.listMapper(emrClusterInstanceGroupToTerraform)(this._instanceGroup),
       kerberos_attributes: cdktf.listMapper(emrClusterKerberosAttributesToTerraform)(this._kerberosAttributes),
+      master_instance_fleet: cdktf.listMapper(emrClusterMasterInstanceFleetToTerraform)(this._masterInstanceFleet),
       master_instance_group: cdktf.listMapper(emrClusterMasterInstanceGroupToTerraform)(this._masterInstanceGroup),
     };
   }

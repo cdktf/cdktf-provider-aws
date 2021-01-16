@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface LbConfig extends cdktf.TerraformMetaArguments {
+  readonly customerOwnedIpv4Pool?: string;
   readonly dropInvalidHeaderFields?: boolean;
   readonly enableCrossZoneLoadBalancing?: boolean;
   readonly enableDeletionProtection?: boolean;
@@ -44,6 +45,7 @@ function lbAccessLogsToTerraform(struct?: LbAccessLogs): any {
 
 export interface LbSubnetMapping {
   readonly allocationId?: string;
+  readonly privateIpv4Address?: string;
   readonly subnetId: string;
 }
 
@@ -51,6 +53,7 @@ function lbSubnetMappingToTerraform(struct?: LbSubnetMapping): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     allocation_id: cdktf.stringToTerraform(struct!.allocationId),
+    private_ipv4_address: cdktf.stringToTerraform(struct!.privateIpv4Address),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
   }
 }
@@ -90,6 +93,7 @@ export class Lb extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
     this._dropInvalidHeaderFields = config.dropInvalidHeaderFields;
     this._enableCrossZoneLoadBalancing = config.enableCrossZoneLoadBalancing;
     this._enableDeletionProtection = config.enableDeletionProtection;
@@ -120,6 +124,22 @@ export class Lb extends cdktf.TerraformResource {
   // arn_suffix - computed: true, optional: false, required: false
   public get arnSuffix() {
     return this.getStringAttribute('arn_suffix');
+  }
+
+  // customer_owned_ipv4_pool - computed: false, optional: true, required: false
+  private _customerOwnedIpv4Pool?: string;
+  public get customerOwnedIpv4Pool() {
+    return this.getStringAttribute('customer_owned_ipv4_pool');
+  }
+  public set customerOwnedIpv4Pool(value: string ) {
+    this._customerOwnedIpv4Pool = value;
+  }
+  public resetCustomerOwnedIpv4Pool() {
+    this._customerOwnedIpv4Pool = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerOwnedIpv4PoolInput() {
+    return this._customerOwnedIpv4Pool
   }
 
   // dns_name - computed: true, optional: false, required: false
@@ -404,6 +424,7 @@ export class Lb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
       drop_invalid_header_fields: cdktf.booleanToTerraform(this._dropInvalidHeaderFields),
       enable_cross_zone_load_balancing: cdktf.booleanToTerraform(this._enableCrossZoneLoadBalancing),
       enable_deletion_protection: cdktf.booleanToTerraform(this._enableDeletionProtection),

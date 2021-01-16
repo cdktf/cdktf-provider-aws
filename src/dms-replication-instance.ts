@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly allocatedStorage?: number;
+  readonly allowMajorVersionUpgrade?: boolean;
   readonly applyImmediately?: boolean;
   readonly autoMinorVersionUpgrade?: boolean;
   readonly availabilityZone?: string;
@@ -60,6 +61,7 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._allocatedStorage = config.allocatedStorage;
+    this._allowMajorVersionUpgrade = config.allowMajorVersionUpgrade;
     this._applyImmediately = config.applyImmediately;
     this._autoMinorVersionUpgrade = config.autoMinorVersionUpgrade;
     this._availabilityZone = config.availabilityZone;
@@ -94,6 +96,22 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allocatedStorageInput() {
     return this._allocatedStorage
+  }
+
+  // allow_major_version_upgrade - computed: false, optional: true, required: false
+  private _allowMajorVersionUpgrade?: boolean;
+  public get allowMajorVersionUpgrade() {
+    return this.getBooleanAttribute('allow_major_version_upgrade');
+  }
+  public set allowMajorVersionUpgrade(value: boolean ) {
+    this._allowMajorVersionUpgrade = value;
+  }
+  public resetAllowMajorVersionUpgrade() {
+    this._allowMajorVersionUpgrade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowMajorVersionUpgradeInput() {
+    return this._allowMajorVersionUpgrade
   }
 
   // apply_immediately - computed: false, optional: true, required: false
@@ -341,6 +359,7 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allocated_storage: cdktf.numberToTerraform(this._allocatedStorage),
+      allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
       auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),

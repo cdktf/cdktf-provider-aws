@@ -31,6 +31,13 @@ export class DataAwsEksClusterIdentity extends cdktf.ComplexComputedList {
     return this.interpolationForAttribute('oidc') as any;
   }
 }
+export class DataAwsEksClusterKubernetesNetworkConfig extends cdktf.ComplexComputedList {
+
+  // service_ipv4_cidr - computed: true, optional: false, required: false
+  public get serviceIpv4Cidr() {
+    return this.getStringAttribute('service_ipv4_cidr');
+  }
+}
 export class DataAwsEksClusterVpcConfig extends cdktf.ComplexComputedList {
 
   // cluster_security_group_id - computed: true, optional: false, required: false
@@ -129,6 +136,11 @@ export class DataAwsEksCluster extends cdktf.TerraformDataSource {
   // identity - computed: true, optional: false, required: false
   public identity(index: string) {
     return new DataAwsEksClusterIdentity(this, 'identity', index);
+  }
+
+  // kubernetes_network_config - computed: true, optional: false, required: false
+  public kubernetesNetworkConfig(index: string) {
+    return new DataAwsEksClusterKubernetesNetworkConfig(this, 'kubernetes_network_config', index);
   }
 
   // name - computed: false, optional: false, required: true

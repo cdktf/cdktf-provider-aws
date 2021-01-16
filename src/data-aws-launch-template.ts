@@ -39,6 +39,11 @@ export class DataAwsLaunchTemplateBlockDeviceMappingsEbs extends cdktf.ComplexCo
     return this.getStringAttribute('snapshot_id');
   }
 
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+
   // volume_size - computed: true, optional: false, required: false
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
@@ -83,6 +88,13 @@ export class DataAwsLaunchTemplateElasticGpuSpecifications extends cdktf.Complex
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
+  }
+}
+export class DataAwsLaunchTemplateEnclaveOptions extends cdktf.ComplexComputedList {
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class DataAwsLaunchTemplateHibernationOptions extends cdktf.ComplexComputedList {
@@ -169,6 +181,11 @@ export class DataAwsLaunchTemplateMonitoring extends cdktf.ComplexComputedList {
 }
 export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexComputedList {
 
+  // associate_carrier_ip_address - computed: true, optional: false, required: false
+  public get associateCarrierIpAddress() {
+    return this.getStringAttribute('associate_carrier_ip_address');
+  }
+
   // associate_public_ip_address - computed: true, optional: false, required: false
   public get associatePublicIpAddress() {
     return this.getStringAttribute('associate_public_ip_address');
@@ -176,7 +193,7 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexCompute
 
   // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
-    return this.getBooleanAttribute('delete_on_termination');
+    return this.getStringAttribute('delete_on_termination');
   }
 
   // description - computed: true, optional: false, required: false
@@ -358,6 +375,11 @@ export class DataAwsLaunchTemplate extends cdktf.TerraformDataSource {
   // elastic_gpu_specifications - computed: true, optional: false, required: false
   public elasticGpuSpecifications(index: string) {
     return new DataAwsLaunchTemplateElasticGpuSpecifications(this, 'elastic_gpu_specifications', index);
+  }
+
+  // enclave_options - computed: true, optional: false, required: false
+  public enclaveOptions(index: string) {
+    return new DataAwsLaunchTemplateEnclaveOptions(this, 'enclave_options', index);
   }
 
   // hibernation_options - computed: true, optional: false, required: false

@@ -8,7 +8,6 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsIamRoleConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
-  readonly roleName?: string;
   readonly tags?: { [key: string]: string };
 }
 
@@ -32,7 +31,6 @@ export class DataAwsIamRole extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
-    this._roleName = config.roleName;
     this._tags = config.tags;
   }
 
@@ -48,11 +46,6 @@ export class DataAwsIamRole extends cdktf.TerraformDataSource {
   // assume_role_policy - computed: true, optional: false, required: false
   public get assumeRolePolicy() {
     return this.getStringAttribute('assume_role_policy');
-  }
-
-  // assume_role_policy_document - computed: true, optional: false, required: false
-  public get assumeRolePolicyDocument() {
-    return this.getStringAttribute('assume_role_policy_document');
   }
 
   // create_date - computed: true, optional: false, required: false
@@ -98,27 +91,6 @@ export class DataAwsIamRole extends cdktf.TerraformDataSource {
     return this.getStringAttribute('permissions_boundary');
   }
 
-  // role_id - computed: true, optional: false, required: false
-  public get roleId() {
-    return this.getStringAttribute('role_id');
-  }
-
-  // role_name - computed: false, optional: true, required: false
-  private _roleName?: string;
-  public get roleName() {
-    return this.getStringAttribute('role_name');
-  }
-  public set roleName(value: string ) {
-    this._roleName = value;
-  }
-  public resetRoleName() {
-    this._roleName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get roleNameInput() {
-    return this._roleName
-  }
-
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
   public get tags(): { [key: string]: string } {
@@ -147,7 +119,6 @@ export class DataAwsIamRole extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
-      role_name: cdktf.stringToTerraform(this._roleName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }

@@ -23,6 +23,12 @@ export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
   readonly dynamodbTarget?: GlueCrawlerDynamodbTarget[];
   /** jdbc_target block */
   readonly jdbcTarget?: GlueCrawlerJdbcTarget[];
+  /** lineage_configuration block */
+  readonly lineageConfiguration?: GlueCrawlerLineageConfiguration[];
+  /** mongodb_target block */
+  readonly mongodbTarget?: GlueCrawlerMongodbTarget[];
+  /** recrawl_policy block */
+  readonly recrawlPolicy?: GlueCrawlerRecrawlPolicy[];
   /** s3_target block */
   readonly s3Target?: GlueCrawlerS3Target[];
   /** schema_change_policy block */
@@ -43,12 +49,16 @@ function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogTarget):
 
 export interface GlueCrawlerDynamodbTarget {
   readonly path: string;
+  readonly scanAll?: boolean;
+  readonly scanRate?: number;
 }
 
 function glueCrawlerDynamodbTargetToTerraform(struct?: GlueCrawlerDynamodbTarget): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     path: cdktf.stringToTerraform(struct!.path),
+    scan_all: cdktf.booleanToTerraform(struct!.scanAll),
+    scan_rate: cdktf.numberToTerraform(struct!.scanRate),
   }
 }
 
@@ -67,7 +77,45 @@ function glueCrawlerJdbcTargetToTerraform(struct?: GlueCrawlerJdbcTarget): any {
   }
 }
 
+export interface GlueCrawlerLineageConfiguration {
+  readonly crawlerLineageSettings?: string;
+}
+
+function glueCrawlerLineageConfigurationToTerraform(struct?: GlueCrawlerLineageConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    crawler_lineage_settings: cdktf.stringToTerraform(struct!.crawlerLineageSettings),
+  }
+}
+
+export interface GlueCrawlerMongodbTarget {
+  readonly connectionName: string;
+  readonly path: string;
+  readonly scanAll?: boolean;
+}
+
+function glueCrawlerMongodbTargetToTerraform(struct?: GlueCrawlerMongodbTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    connection_name: cdktf.stringToTerraform(struct!.connectionName),
+    path: cdktf.stringToTerraform(struct!.path),
+    scan_all: cdktf.booleanToTerraform(struct!.scanAll),
+  }
+}
+
+export interface GlueCrawlerRecrawlPolicy {
+  readonly recrawlBehavior?: string;
+}
+
+function glueCrawlerRecrawlPolicyToTerraform(struct?: GlueCrawlerRecrawlPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    recrawl_behavior: cdktf.stringToTerraform(struct!.recrawlBehavior),
+  }
+}
+
 export interface GlueCrawlerS3Target {
+  readonly connectionName?: string;
   readonly exclusions?: string[];
   readonly path: string;
 }
@@ -75,6 +123,7 @@ export interface GlueCrawlerS3Target {
 function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    connection_name: cdktf.stringToTerraform(struct!.connectionName),
     exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
     path: cdktf.stringToTerraform(struct!.path),
   }
@@ -126,6 +175,9 @@ export class GlueCrawler extends cdktf.TerraformResource {
     this._catalogTarget = config.catalogTarget;
     this._dynamodbTarget = config.dynamodbTarget;
     this._jdbcTarget = config.jdbcTarget;
+    this._lineageConfiguration = config.lineageConfiguration;
+    this._mongodbTarget = config.mongodbTarget;
+    this._recrawlPolicy = config.recrawlPolicy;
     this._s3Target = config.s3Target;
     this._schemaChangePolicy = config.schemaChangePolicy;
   }
@@ -343,6 +395,54 @@ export class GlueCrawler extends cdktf.TerraformResource {
     return this._jdbcTarget
   }
 
+  // lineage_configuration - computed: false, optional: true, required: false
+  private _lineageConfiguration?: GlueCrawlerLineageConfiguration[];
+  public get lineageConfiguration() {
+    return this.interpolationForAttribute('lineage_configuration') as any;
+  }
+  public set lineageConfiguration(value: GlueCrawlerLineageConfiguration[] ) {
+    this._lineageConfiguration = value;
+  }
+  public resetLineageConfiguration() {
+    this._lineageConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lineageConfigurationInput() {
+    return this._lineageConfiguration
+  }
+
+  // mongodb_target - computed: false, optional: true, required: false
+  private _mongodbTarget?: GlueCrawlerMongodbTarget[];
+  public get mongodbTarget() {
+    return this.interpolationForAttribute('mongodb_target') as any;
+  }
+  public set mongodbTarget(value: GlueCrawlerMongodbTarget[] ) {
+    this._mongodbTarget = value;
+  }
+  public resetMongodbTarget() {
+    this._mongodbTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mongodbTargetInput() {
+    return this._mongodbTarget
+  }
+
+  // recrawl_policy - computed: false, optional: true, required: false
+  private _recrawlPolicy?: GlueCrawlerRecrawlPolicy[];
+  public get recrawlPolicy() {
+    return this.interpolationForAttribute('recrawl_policy') as any;
+  }
+  public set recrawlPolicy(value: GlueCrawlerRecrawlPolicy[] ) {
+    this._recrawlPolicy = value;
+  }
+  public resetRecrawlPolicy() {
+    this._recrawlPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recrawlPolicyInput() {
+    return this._recrawlPolicy
+  }
+
   // s3_target - computed: false, optional: true, required: false
   private _s3Target?: GlueCrawlerS3Target[];
   public get s3Target() {
@@ -394,6 +494,9 @@ export class GlueCrawler extends cdktf.TerraformResource {
       catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform)(this._catalogTarget),
       dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform)(this._dynamodbTarget),
       jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform)(this._jdbcTarget),
+      lineage_configuration: cdktf.listMapper(glueCrawlerLineageConfigurationToTerraform)(this._lineageConfiguration),
+      mongodb_target: cdktf.listMapper(glueCrawlerMongodbTargetToTerraform)(this._mongodbTarget),
+      recrawl_policy: cdktf.listMapper(glueCrawlerRecrawlPolicyToTerraform)(this._recrawlPolicy),
       s3_target: cdktf.listMapper(glueCrawlerS3TargetToTerraform)(this._s3Target),
       schema_change_policy: cdktf.listMapper(glueCrawlerSchemaChangePolicyToTerraform)(this._schemaChangePolicy),
     };

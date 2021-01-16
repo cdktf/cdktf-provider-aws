@@ -11,6 +11,8 @@ export interface Apigatewayv2DomainNameConfig extends cdktf.TerraformMetaArgumen
   readonly tags?: { [key: string]: string };
   /** domain_name_configuration block */
   readonly domainNameConfiguration: Apigatewayv2DomainNameDomainNameConfiguration[];
+  /** mutual_tls_authentication block */
+  readonly mutualTlsAuthentication?: Apigatewayv2DomainNameMutualTlsAuthentication[];
   /** timeouts block */
   readonly timeouts?: Apigatewayv2DomainNameTimeouts;
 }
@@ -26,6 +28,19 @@ function apigatewayv2DomainNameDomainNameConfigurationToTerraform(struct?: Apiga
     certificate_arn: cdktf.stringToTerraform(struct!.certificateArn),
     endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
     security_policy: cdktf.stringToTerraform(struct!.securityPolicy),
+  }
+}
+
+export interface Apigatewayv2DomainNameMutualTlsAuthentication {
+  readonly truststoreUri: string;
+  readonly truststoreVersion?: string;
+}
+
+function apigatewayv2DomainNameMutualTlsAuthenticationToTerraform(struct?: Apigatewayv2DomainNameMutualTlsAuthentication): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    truststore_uri: cdktf.stringToTerraform(struct!.truststoreUri),
+    truststore_version: cdktf.stringToTerraform(struct!.truststoreVersion),
   }
 }
 
@@ -63,6 +78,7 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
     this._domainName = config.domainName;
     this._tags = config.tags;
     this._domainNameConfiguration = config.domainNameConfiguration;
+    this._mutualTlsAuthentication = config.mutualTlsAuthentication;
     this._timeouts = config.timeouts;
   }
 
@@ -127,6 +143,22 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
     return this._domainNameConfiguration
   }
 
+  // mutual_tls_authentication - computed: false, optional: true, required: false
+  private _mutualTlsAuthentication?: Apigatewayv2DomainNameMutualTlsAuthentication[];
+  public get mutualTlsAuthentication() {
+    return this.interpolationForAttribute('mutual_tls_authentication') as any;
+  }
+  public set mutualTlsAuthentication(value: Apigatewayv2DomainNameMutualTlsAuthentication[] ) {
+    this._mutualTlsAuthentication = value;
+  }
+  public resetMutualTlsAuthentication() {
+    this._mutualTlsAuthentication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mutualTlsAuthenticationInput() {
+    return this._mutualTlsAuthentication
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: Apigatewayv2DomainNameTimeouts;
   public get timeouts() {
@@ -152,6 +184,7 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
       domain_name: cdktf.stringToTerraform(this._domainName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       domain_name_configuration: cdktf.listMapper(apigatewayv2DomainNameDomainNameConfigurationToTerraform)(this._domainNameConfiguration),
+      mutual_tls_authentication: cdktf.listMapper(apigatewayv2DomainNameMutualTlsAuthenticationToTerraform)(this._mutualTlsAuthentication),
       timeouts: apigatewayv2DomainNameTimeoutsToTerraform(this._timeouts),
     };
   }

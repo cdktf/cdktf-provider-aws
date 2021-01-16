@@ -178,7 +178,7 @@ function lbListenerRuleActionToTerraform(struct?: LbListenerRuleAction): any {
 }
 
 export interface LbListenerRuleConditionHostHeader {
-  readonly values?: string[];
+  readonly values: string[];
 }
 
 function lbListenerRuleConditionHostHeaderToTerraform(struct?: LbListenerRuleConditionHostHeader): any {
@@ -213,7 +213,7 @@ function lbListenerRuleConditionHttpRequestMethodToTerraform(struct?: LbListener
 }
 
 export interface LbListenerRuleConditionPathPattern {
-  readonly values?: string[];
+  readonly values: string[];
 }
 
 function lbListenerRuleConditionPathPatternToTerraform(struct?: LbListenerRuleConditionPathPattern): any {
@@ -248,8 +248,6 @@ function lbListenerRuleConditionSourceIpToTerraform(struct?: LbListenerRuleCondi
 }
 
 export interface LbListenerRuleCondition {
-  readonly field?: string;
-  readonly values?: string[];
   /** host_header block */
   readonly hostHeader?: LbListenerRuleConditionHostHeader[];
   /** http_header block */
@@ -267,8 +265,6 @@ export interface LbListenerRuleCondition {
 function lbListenerRuleConditionToTerraform(struct?: LbListenerRuleCondition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
-    field: cdktf.stringToTerraform(struct!.field),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
     host_header: cdktf.listMapper(lbListenerRuleConditionHostHeaderToTerraform)(struct!.hostHeader),
     http_header: cdktf.listMapper(lbListenerRuleConditionHttpHeaderToTerraform)(struct!.httpHeader),
     http_request_method: cdktf.listMapper(lbListenerRuleConditionHttpRequestMethodToTerraform)(struct!.httpRequestMethod),

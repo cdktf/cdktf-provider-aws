@@ -11,7 +11,6 @@ export interface IamInstanceProfileConfig extends cdktf.TerraformMetaArguments {
   readonly namePrefix?: string;
   readonly path?: string;
   readonly role?: string;
-  readonly roles?: string[];
 }
 
 // Resource
@@ -37,7 +36,6 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
     this._namePrefix = config.namePrefix;
     this._path = config.path;
     this._role = config.role;
-    this._roles = config.roles;
   }
 
   // ==========
@@ -107,12 +105,12 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
     return this._path
   }
 
-  // role - computed: true, optional: true, required: false
+  // role - computed: false, optional: true, required: false
   private _role?: string;
   public get role() {
     return this.getStringAttribute('role');
   }
-  public set role(value: string) {
+  public set role(value: string ) {
     this._role = value;
   }
   public resetRole() {
@@ -121,22 +119,6 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get roleInput() {
     return this._role
-  }
-
-  // roles - computed: true, optional: true, required: false
-  private _roles?: string[];
-  public get roles() {
-    return this.getListAttribute('roles');
-  }
-  public set roles(value: string[]) {
-    this._roles = value;
-  }
-  public resetRoles() {
-    this._roles = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get rolesInput() {
-    return this._roles
   }
 
   // unique_id - computed: true, optional: false, required: false
@@ -154,7 +136,6 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       path: cdktf.stringToTerraform(this._path),
       role: cdktf.stringToTerraform(this._role),
-      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
     };
   }
 }

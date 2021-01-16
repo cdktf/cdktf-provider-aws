@@ -9,27 +9,42 @@ import * as cdktf from 'cdktf';
 export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArguments {
   readonly clientList: string[];
   readonly defaultStorageClass?: string;
+  readonly fileShareName?: string;
   readonly gatewayArn: string;
   readonly guessMimeTypeEnabled?: boolean;
   readonly kmsEncrypted?: boolean;
   readonly kmsKeyArn?: string;
   readonly locationArn: string;
+  readonly notificationPolicy?: string;
   readonly objectAcl?: string;
   readonly readOnly?: boolean;
   readonly requesterPays?: boolean;
   readonly roleArn: string;
   readonly squash?: string;
   readonly tags?: { [key: string]: string };
+  /** cache_attributes block */
+  readonly cacheAttributes?: StoragegatewayNfsFileShareCacheAttributes[];
   /** nfs_file_share_defaults block */
   readonly nfsFileShareDefaults?: StoragegatewayNfsFileShareNfsFileShareDefaults[];
   /** timeouts block */
   readonly timeouts?: StoragegatewayNfsFileShareTimeouts;
 }
+export interface StoragegatewayNfsFileShareCacheAttributes {
+  readonly cacheStaleTimeoutInSeconds?: number;
+}
+
+function storagegatewayNfsFileShareCacheAttributesToTerraform(struct?: StoragegatewayNfsFileShareCacheAttributes): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cache_stale_timeout_in_seconds: cdktf.numberToTerraform(struct!.cacheStaleTimeoutInSeconds),
+  }
+}
+
 export interface StoragegatewayNfsFileShareNfsFileShareDefaults {
   readonly directoryMode?: string;
   readonly fileMode?: string;
-  readonly groupId?: number;
-  readonly ownerId?: number;
+  readonly groupId?: string;
+  readonly ownerId?: string;
 }
 
 function storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform(struct?: StoragegatewayNfsFileShareNfsFileShareDefaults): any {
@@ -37,8 +52,8 @@ function storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform(struct?: Stor
   return {
     directory_mode: cdktf.stringToTerraform(struct!.directoryMode),
     file_mode: cdktf.stringToTerraform(struct!.fileMode),
-    group_id: cdktf.numberToTerraform(struct!.groupId),
-    owner_id: cdktf.numberToTerraform(struct!.ownerId),
+    group_id: cdktf.stringToTerraform(struct!.groupId),
+    owner_id: cdktf.stringToTerraform(struct!.ownerId),
   }
 }
 
@@ -79,17 +94,20 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
     });
     this._clientList = config.clientList;
     this._defaultStorageClass = config.defaultStorageClass;
+    this._fileShareName = config.fileShareName;
     this._gatewayArn = config.gatewayArn;
     this._guessMimeTypeEnabled = config.guessMimeTypeEnabled;
     this._kmsEncrypted = config.kmsEncrypted;
     this._kmsKeyArn = config.kmsKeyArn;
     this._locationArn = config.locationArn;
+    this._notificationPolicy = config.notificationPolicy;
     this._objectAcl = config.objectAcl;
     this._readOnly = config.readOnly;
     this._requesterPays = config.requesterPays;
     this._roleArn = config.roleArn;
     this._squash = config.squash;
     this._tags = config.tags;
+    this._cacheAttributes = config.cacheAttributes;
     this._nfsFileShareDefaults = config.nfsFileShareDefaults;
     this._timeouts = config.timeouts;
   }
@@ -130,6 +148,22 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultStorageClassInput() {
     return this._defaultStorageClass
+  }
+
+  // file_share_name - computed: true, optional: true, required: false
+  private _fileShareName?: string;
+  public get fileShareName() {
+    return this.getStringAttribute('file_share_name');
+  }
+  public set fileShareName(value: string) {
+    this._fileShareName = value;
+  }
+  public resetFileShareName() {
+    this._fileShareName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileShareNameInput() {
+    return this._fileShareName
   }
 
   // fileshare_id - computed: true, optional: false, required: false
@@ -214,6 +248,22 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get locationArnInput() {
     return this._locationArn
+  }
+
+  // notification_policy - computed: false, optional: true, required: false
+  private _notificationPolicy?: string;
+  public get notificationPolicy() {
+    return this.getStringAttribute('notification_policy');
+  }
+  public set notificationPolicy(value: string ) {
+    this._notificationPolicy = value;
+  }
+  public resetNotificationPolicy() {
+    this._notificationPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationPolicyInput() {
+    return this._notificationPolicy
   }
 
   // object_acl - computed: false, optional: true, required: false
@@ -314,6 +364,22 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // cache_attributes - computed: false, optional: true, required: false
+  private _cacheAttributes?: StoragegatewayNfsFileShareCacheAttributes[];
+  public get cacheAttributes() {
+    return this.interpolationForAttribute('cache_attributes') as any;
+  }
+  public set cacheAttributes(value: StoragegatewayNfsFileShareCacheAttributes[] ) {
+    this._cacheAttributes = value;
+  }
+  public resetCacheAttributes() {
+    this._cacheAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cacheAttributesInput() {
+    return this._cacheAttributes
+  }
+
   // nfs_file_share_defaults - computed: false, optional: true, required: false
   private _nfsFileShareDefaults?: StoragegatewayNfsFileShareNfsFileShareDefaults[];
   public get nfsFileShareDefaults() {
@@ -354,17 +420,20 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
     return {
       client_list: cdktf.listMapper(cdktf.stringToTerraform)(this._clientList),
       default_storage_class: cdktf.stringToTerraform(this._defaultStorageClass),
+      file_share_name: cdktf.stringToTerraform(this._fileShareName),
       gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
       guess_mime_type_enabled: cdktf.booleanToTerraform(this._guessMimeTypeEnabled),
       kms_encrypted: cdktf.booleanToTerraform(this._kmsEncrypted),
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       location_arn: cdktf.stringToTerraform(this._locationArn),
+      notification_policy: cdktf.stringToTerraform(this._notificationPolicy),
       object_acl: cdktf.stringToTerraform(this._objectAcl),
       read_only: cdktf.booleanToTerraform(this._readOnly),
       requester_pays: cdktf.booleanToTerraform(this._requesterPays),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       squash: cdktf.stringToTerraform(this._squash),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      cache_attributes: cdktf.listMapper(storagegatewayNfsFileShareCacheAttributesToTerraform)(this._cacheAttributes),
       nfs_file_share_defaults: cdktf.listMapper(storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform)(this._nfsFileShareDefaults),
       timeouts: storagegatewayNfsFileShareTimeoutsToTerraform(this._timeouts),
     };

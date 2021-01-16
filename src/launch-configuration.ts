@@ -27,6 +27,8 @@ export interface LaunchConfigurationConfig extends cdktf.TerraformMetaArguments 
   readonly ebsBlockDevice?: LaunchConfigurationEbsBlockDevice[];
   /** ephemeral_block_device block */
   readonly ephemeralBlockDevice?: LaunchConfigurationEphemeralBlockDevice[];
+  /** metadata_options block */
+  readonly metadataOptions?: LaunchConfigurationMetadataOptions[];
   /** root_block_device block */
   readonly rootBlockDevice?: LaunchConfigurationRootBlockDevice[];
 }
@@ -65,6 +67,21 @@ function launchConfigurationEphemeralBlockDeviceToTerraform(struct?: LaunchConfi
   return {
     device_name: cdktf.stringToTerraform(struct!.deviceName),
     virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+  }
+}
+
+export interface LaunchConfigurationMetadataOptions {
+  readonly httpEndpoint?: string;
+  readonly httpPutResponseHopLimit?: number;
+  readonly httpTokens?: string;
+}
+
+function launchConfigurationMetadataOptionsToTerraform(struct?: LaunchConfigurationMetadataOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    http_endpoint: cdktf.stringToTerraform(struct!.httpEndpoint),
+    http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
+    http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
   }
 }
 
@@ -125,6 +142,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
     this._vpcClassicLinkSecurityGroups = config.vpcClassicLinkSecurityGroups;
     this._ebsBlockDevice = config.ebsBlockDevice;
     this._ephemeralBlockDevice = config.ephemeralBlockDevice;
+    this._metadataOptions = config.metadataOptions;
     this._rootBlockDevice = config.rootBlockDevice;
   }
 
@@ -424,6 +442,22 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
     return this._ephemeralBlockDevice
   }
 
+  // metadata_options - computed: false, optional: true, required: false
+  private _metadataOptions?: LaunchConfigurationMetadataOptions[];
+  public get metadataOptions() {
+    return this.interpolationForAttribute('metadata_options') as any;
+  }
+  public set metadataOptions(value: LaunchConfigurationMetadataOptions[] ) {
+    this._metadataOptions = value;
+  }
+  public resetMetadataOptions() {
+    this._metadataOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataOptionsInput() {
+    return this._metadataOptions
+  }
+
   // root_block_device - computed: false, optional: true, required: false
   private _rootBlockDevice?: LaunchConfigurationRootBlockDevice[];
   public get rootBlockDevice() {
@@ -464,6 +498,7 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
       vpc_classic_link_security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcClassicLinkSecurityGroups),
       ebs_block_device: cdktf.listMapper(launchConfigurationEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
       ephemeral_block_device: cdktf.listMapper(launchConfigurationEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      metadata_options: cdktf.listMapper(launchConfigurationMetadataOptionsToTerraform)(this._metadataOptions),
       root_block_device: cdktf.listMapper(launchConfigurationRootBlockDeviceToTerraform)(this._rootBlockDevice),
     };
   }

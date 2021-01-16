@@ -54,6 +54,16 @@ export class DataAwsInstanceEbsBlockDevice extends cdktf.ComplexComputedList {
     return this.getStringAttribute('snapshot_id');
   }
 
+  // tags - computed: true, optional: false, required: false
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+
   // volume_id - computed: true, optional: false, required: false
   public get volumeId() {
     return this.getStringAttribute('volume_id');
@@ -67,6 +77,13 @@ export class DataAwsInstanceEbsBlockDevice extends cdktf.ComplexComputedList {
   // volume_type - computed: true, optional: false, required: false
   public get volumeType() {
     return this.getStringAttribute('volume_type');
+  }
+}
+export class DataAwsInstanceEnclaveOptions extends cdktf.ComplexComputedList {
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
   }
 }
 export class DataAwsInstanceEphemeralBlockDevice extends cdktf.ComplexComputedList {
@@ -128,6 +145,16 @@ export class DataAwsInstanceRootBlockDevice extends cdktf.ComplexComputedList {
   // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
+  }
+
+  // tags - computed: true, optional: false, required: false
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
   }
 
   // volume_id - computed: true, optional: false, required: false
@@ -228,6 +255,11 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
   // ebs_optimized - computed: true, optional: false, required: false
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
+  }
+
+  // enclave_options - computed: true, optional: false, required: false
+  public enclaveOptions(index: string) {
+    return new DataAwsInstanceEnclaveOptions(this, 'enclave_options', index);
   }
 
   // ephemeral_block_device - computed: true, optional: false, required: false
@@ -382,6 +414,11 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
   // root_block_device - computed: true, optional: false, required: false
   public rootBlockDevice(index: string) {
     return new DataAwsInstanceRootBlockDevice(this, 'root_block_device', index);
+  }
+
+  // secondary_private_ips - computed: true, optional: false, required: false
+  public get secondaryPrivateIps() {
+    return this.getListAttribute('secondary_private_ips');
   }
 
   // security_groups - computed: true, optional: false, required: false

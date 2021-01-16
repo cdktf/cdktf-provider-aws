@@ -12,6 +12,7 @@ export interface DataAwsRouteConfig extends cdktf.TerraformMetaArguments {
   readonly egressOnlyGatewayId?: string;
   readonly gatewayId?: string;
   readonly instanceId?: string;
+  readonly localGatewayId?: string;
   readonly natGatewayId?: string;
   readonly networkInterfaceId?: string;
   readonly routeTableId: string;
@@ -43,6 +44,7 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
     this._egressOnlyGatewayId = config.egressOnlyGatewayId;
     this._gatewayId = config.gatewayId;
     this._instanceId = config.instanceId;
+    this._localGatewayId = config.localGatewayId;
     this._natGatewayId = config.natGatewayId;
     this._networkInterfaceId = config.networkInterfaceId;
     this._routeTableId = config.routeTableId;
@@ -139,6 +141,22 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
     return this._instanceId
   }
 
+  // local_gateway_id - computed: true, optional: true, required: false
+  private _localGatewayId?: string;
+  public get localGatewayId() {
+    return this.getStringAttribute('local_gateway_id');
+  }
+  public set localGatewayId(value: string) {
+    this._localGatewayId = value;
+  }
+  public resetLocalGatewayId() {
+    this._localGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayIdInput() {
+    return this._localGatewayId
+  }
+
   // nat_gateway_id - computed: true, optional: true, required: false
   private _natGatewayId?: string;
   public get natGatewayId() {
@@ -227,6 +245,7 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
       egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
       gateway_id: cdktf.stringToTerraform(this._gatewayId),
       instance_id: cdktf.stringToTerraform(this._instanceId),
+      local_gateway_id: cdktf.stringToTerraform(this._localGatewayId),
       nat_gateway_id: cdktf.stringToTerraform(this._natGatewayId),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
       route_table_id: cdktf.stringToTerraform(this._routeTableId),

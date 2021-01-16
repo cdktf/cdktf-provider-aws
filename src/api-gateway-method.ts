@@ -12,9 +12,9 @@ export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
   readonly authorizationScopes?: string[];
   readonly authorizerId?: string;
   readonly httpMethod: string;
+  readonly operationName?: string;
   readonly requestModels?: { [key: string]: string };
   readonly requestParameters?: { [key: string]: boolean };
-  readonly requestParametersInJson?: string;
   readonly requestValidatorId?: string;
   readonly resourceId: string;
   readonly restApiId: string;
@@ -44,9 +44,9 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
     this._authorizationScopes = config.authorizationScopes;
     this._authorizerId = config.authorizerId;
     this._httpMethod = config.httpMethod;
+    this._operationName = config.operationName;
     this._requestModels = config.requestModels;
     this._requestParameters = config.requestParameters;
-    this._requestParametersInJson = config.requestParametersInJson;
     this._requestValidatorId = config.requestValidatorId;
     this._resourceId = config.resourceId;
     this._restApiId = config.restApiId;
@@ -135,6 +135,22 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // operation_name - computed: false, optional: true, required: false
+  private _operationName?: string;
+  public get operationName() {
+    return this.getStringAttribute('operation_name');
+  }
+  public set operationName(value: string ) {
+    this._operationName = value;
+  }
+  public resetOperationName() {
+    this._operationName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operationNameInput() {
+    return this._operationName
+  }
+
   // request_models - computed: false, optional: true, required: false
   private _requestModels?: { [key: string]: string };
   public get requestModels() {
@@ -165,22 +181,6 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get requestParametersInput() {
     return this._requestParameters
-  }
-
-  // request_parameters_in_json - computed: false, optional: true, required: false
-  private _requestParametersInJson?: string;
-  public get requestParametersInJson() {
-    return this.getStringAttribute('request_parameters_in_json');
-  }
-  public set requestParametersInJson(value: string ) {
-    this._requestParametersInJson = value;
-  }
-  public resetRequestParametersInJson() {
-    this._requestParametersInJson = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestParametersInJsonInput() {
-    return this._requestParametersInJson
   }
 
   // request_validator_id - computed: false, optional: true, required: false
@@ -236,9 +236,9 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
       authorization_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._authorizationScopes),
       authorizer_id: cdktf.stringToTerraform(this._authorizerId),
       http_method: cdktf.stringToTerraform(this._httpMethod),
+      operation_name: cdktf.stringToTerraform(this._operationName),
       request_models: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestModels),
       request_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestParameters),
-      request_parameters_in_json: cdktf.stringToTerraform(this._requestParametersInJson),
       request_validator_id: cdktf.stringToTerraform(this._requestValidatorId),
       resource_id: cdktf.stringToTerraform(this._resourceId),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),

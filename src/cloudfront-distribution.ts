@@ -18,8 +18,6 @@ export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArgumen
   readonly tags?: { [key: string]: string };
   readonly waitForDeployment?: boolean;
   readonly webAclId?: string;
-  /** cache_behavior block */
-  readonly cacheBehavior?: CloudfrontDistributionCacheBehavior[];
   /** custom_error_response block */
   readonly customErrorResponse?: CloudfrontDistributionCustomErrorResponse[];
   /** default_cache_behavior block */
@@ -37,91 +35,30 @@ export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArgumen
   /** viewer_certificate block */
   readonly viewerCertificate: CloudfrontDistributionViewerCertificate[];
 }
-export interface CloudfrontDistributionCacheBehaviorForwardedValuesCookies {
-  readonly forward: string;
-  readonly whitelistedNames?: string[];
-}
+export class CloudfrontDistributionTrustedSignersItems extends cdktf.ComplexComputedList {
 
-function cloudfrontDistributionCacheBehaviorForwardedValuesCookiesToTerraform(struct?: CloudfrontDistributionCacheBehaviorForwardedValuesCookies): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    forward: cdktf.stringToTerraform(struct!.forward),
-    whitelisted_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.whitelistedNames),
+  // aws_account_number - computed: true, optional: false, required: false
+  public get awsAccountNumber() {
+    return this.getStringAttribute('aws_account_number');
+  }
+
+  // key_pair_ids - computed: true, optional: false, required: false
+  public get keyPairIds() {
+    return this.getListAttribute('key_pair_ids');
   }
 }
+export class CloudfrontDistributionTrustedSigners extends cdktf.ComplexComputedList {
 
-export interface CloudfrontDistributionCacheBehaviorForwardedValues {
-  readonly headers?: string[];
-  readonly queryString: boolean;
-  readonly queryStringCacheKeys?: string[];
-  /** cookies block */
-  readonly cookies: CloudfrontDistributionCacheBehaviorForwardedValuesCookies[];
-}
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
 
-function cloudfrontDistributionCacheBehaviorForwardedValuesToTerraform(struct?: CloudfrontDistributionCacheBehaviorForwardedValues): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.headers),
-    query_string: cdktf.booleanToTerraform(struct!.queryString),
-    query_string_cache_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queryStringCacheKeys),
-    cookies: cdktf.listMapper(cloudfrontDistributionCacheBehaviorForwardedValuesCookiesToTerraform)(struct!.cookies),
+  // items - computed: true, optional: false, required: false
+  public get items() {
+    return this.interpolationForAttribute('items') as any;
   }
 }
-
-export interface CloudfrontDistributionCacheBehaviorLambdaFunctionAssociation {
-  readonly eventType: string;
-  readonly includeBody?: boolean;
-  readonly lambdaArn: string;
-}
-
-function cloudfrontDistributionCacheBehaviorLambdaFunctionAssociationToTerraform(struct?: CloudfrontDistributionCacheBehaviorLambdaFunctionAssociation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    event_type: cdktf.stringToTerraform(struct!.eventType),
-    include_body: cdktf.booleanToTerraform(struct!.includeBody),
-    lambda_arn: cdktf.stringToTerraform(struct!.lambdaArn),
-  }
-}
-
-export interface CloudfrontDistributionCacheBehavior {
-  readonly allowedMethods: string[];
-  readonly cachedMethods: string[];
-  readonly compress?: boolean;
-  readonly defaultTtl?: number;
-  readonly fieldLevelEncryptionId?: string;
-  readonly maxTtl?: number;
-  readonly minTtl?: number;
-  readonly pathPattern: string;
-  readonly smoothStreaming?: boolean;
-  readonly targetOriginId: string;
-  readonly trustedSigners?: string[];
-  readonly viewerProtocolPolicy: string;
-  /** forwarded_values block */
-  readonly forwardedValues: CloudfrontDistributionCacheBehaviorForwardedValues[];
-  /** lambda_function_association block */
-  readonly lambdaFunctionAssociation?: CloudfrontDistributionCacheBehaviorLambdaFunctionAssociation[];
-}
-
-function cloudfrontDistributionCacheBehaviorToTerraform(struct?: CloudfrontDistributionCacheBehavior): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
-    cached_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachedMethods),
-    compress: cdktf.booleanToTerraform(struct!.compress),
-    default_ttl: cdktf.numberToTerraform(struct!.defaultTtl),
-    field_level_encryption_id: cdktf.stringToTerraform(struct!.fieldLevelEncryptionId),
-    max_ttl: cdktf.numberToTerraform(struct!.maxTtl),
-    min_ttl: cdktf.numberToTerraform(struct!.minTtl),
-    path_pattern: cdktf.stringToTerraform(struct!.pathPattern),
-    smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
-    target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
-    trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
-    viewer_protocol_policy: cdktf.stringToTerraform(struct!.viewerProtocolPolicy),
-    forwarded_values: cdktf.listMapper(cloudfrontDistributionCacheBehaviorForwardedValuesToTerraform)(struct!.forwardedValues),
-    lambda_function_association: cdktf.listMapper(cloudfrontDistributionCacheBehaviorLambdaFunctionAssociationToTerraform)(struct!.lambdaFunctionAssociation),
-  }
-}
-
 export interface CloudfrontDistributionCustomErrorResponse {
   readonly errorCachingMinTtl?: number;
   readonly errorCode: number;
@@ -505,7 +442,6 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._waitForDeployment = config.waitForDeployment;
     this._webAclId = config.webAclId;
-    this._cacheBehavior = config.cacheBehavior;
     this._customErrorResponse = config.customErrorResponse;
     this._defaultCacheBehavior = config.defaultCacheBehavior;
     this._loggingConfig = config.loggingConfig;
@@ -519,11 +455,6 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // active_trusted_signers - computed: true, optional: false, required: false
-  public activeTrustedSigners(key: string): string {
-    return new cdktf.StringMap(this, 'active_trusted_signers').lookup(key);
-  }
 
   // aliases - computed: false, optional: true, required: false
   private _aliases?: string[];
@@ -711,6 +642,11 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // trusted_signers - computed: true, optional: false, required: false
+  public trustedSigners(index: string) {
+    return new CloudfrontDistributionTrustedSigners(this, 'trusted_signers', index);
+  }
+
   // wait_for_deployment - computed: false, optional: true, required: false
   private _waitForDeployment?: boolean;
   public get waitForDeployment() {
@@ -741,22 +677,6 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get webAclIdInput() {
     return this._webAclId
-  }
-
-  // cache_behavior - computed: false, optional: true, required: false
-  private _cacheBehavior?: CloudfrontDistributionCacheBehavior[];
-  public get cacheBehavior() {
-    return this.interpolationForAttribute('cache_behavior') as any;
-  }
-  public set cacheBehavior(value: CloudfrontDistributionCacheBehavior[] ) {
-    this._cacheBehavior = value;
-  }
-  public resetCacheBehavior() {
-    this._cacheBehavior = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cacheBehaviorInput() {
-    return this._cacheBehavior
   }
 
   // custom_error_response - computed: false, optional: true, required: false
@@ -892,7 +812,6 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       wait_for_deployment: cdktf.booleanToTerraform(this._waitForDeployment),
       web_acl_id: cdktf.stringToTerraform(this._webAclId),
-      cache_behavior: cdktf.listMapper(cloudfrontDistributionCacheBehaviorToTerraform)(this._cacheBehavior),
       custom_error_response: cdktf.listMapper(cloudfrontDistributionCustomErrorResponseToTerraform)(this._customErrorResponse),
       default_cache_behavior: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorToTerraform)(this._defaultCacheBehavior),
       logging_config: cdktf.listMapper(cloudfrontDistributionLoggingConfigToTerraform)(this._loggingConfig),

@@ -81,6 +81,11 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
     return this.getStringAttribute('primary_endpoint_address');
   }
 
+  // reader_endpoint_address - computed: true, optional: false, required: false
+  public get readerEndpointAddress() {
+    return this.getStringAttribute('reader_endpoint_address');
+  }
+
   // replication_group_description - computed: true, optional: false, required: false
   public get replicationGroupDescription() {
     return this.getStringAttribute('replication_group_description');

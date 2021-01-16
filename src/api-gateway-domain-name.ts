@@ -19,6 +19,8 @@ export interface ApiGatewayDomainNameConfig extends cdktf.TerraformMetaArguments
   readonly tags?: { [key: string]: string };
   /** endpoint_configuration block */
   readonly endpointConfiguration?: ApiGatewayDomainNameEndpointConfiguration[];
+  /** mutual_tls_authentication block */
+  readonly mutualTlsAuthentication?: ApiGatewayDomainNameMutualTlsAuthentication[];
 }
 export interface ApiGatewayDomainNameEndpointConfiguration {
   readonly types: string[];
@@ -28,6 +30,19 @@ function apiGatewayDomainNameEndpointConfigurationToTerraform(struct?: ApiGatewa
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.types),
+  }
+}
+
+export interface ApiGatewayDomainNameMutualTlsAuthentication {
+  readonly truststoreUri: string;
+  readonly truststoreVersion?: string;
+}
+
+function apiGatewayDomainNameMutualTlsAuthenticationToTerraform(struct?: ApiGatewayDomainNameMutualTlsAuthentication): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    truststore_uri: cdktf.stringToTerraform(struct!.truststoreUri),
+    truststore_version: cdktf.stringToTerraform(struct!.truststoreVersion),
   }
 }
 
@@ -62,6 +77,7 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
     this._securityPolicy = config.securityPolicy;
     this._tags = config.tags;
     this._endpointConfiguration = config.endpointConfiguration;
+    this._mutualTlsAuthentication = config.mutualTlsAuthentication;
   }
 
   // ==========
@@ -276,6 +292,22 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
     return this._endpointConfiguration
   }
 
+  // mutual_tls_authentication - computed: false, optional: true, required: false
+  private _mutualTlsAuthentication?: ApiGatewayDomainNameMutualTlsAuthentication[];
+  public get mutualTlsAuthentication() {
+    return this.interpolationForAttribute('mutual_tls_authentication') as any;
+  }
+  public set mutualTlsAuthentication(value: ApiGatewayDomainNameMutualTlsAuthentication[] ) {
+    this._mutualTlsAuthentication = value;
+  }
+  public resetMutualTlsAuthentication() {
+    this._mutualTlsAuthentication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mutualTlsAuthenticationInput() {
+    return this._mutualTlsAuthentication
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -293,6 +325,7 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
       security_policy: cdktf.stringToTerraform(this._securityPolicy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       endpoint_configuration: cdktf.listMapper(apiGatewayDomainNameEndpointConfigurationToTerraform)(this._endpointConfiguration),
+      mutual_tls_authentication: cdktf.listMapper(apiGatewayDomainNameMutualTlsAuthenticationToTerraform)(this._mutualTlsAuthentication),
     };
   }
 }

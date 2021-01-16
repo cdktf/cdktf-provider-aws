@@ -17,11 +17,26 @@ export interface GlueCatalogTableConfig extends cdktf.TerraformMetaArguments {
   readonly tableType?: string;
   readonly viewExpandedText?: string;
   readonly viewOriginalText?: string;
+  /** partition_index block */
+  readonly partitionIndex?: GlueCatalogTablePartitionIndex[];
   /** partition_keys block */
   readonly partitionKeys?: GlueCatalogTablePartitionKeys[];
   /** storage_descriptor block */
   readonly storageDescriptor?: GlueCatalogTableStorageDescriptor[];
 }
+export interface GlueCatalogTablePartitionIndex {
+  readonly indexName: string;
+  readonly keys: string[];
+}
+
+function glueCatalogTablePartitionIndexToTerraform(struct?: GlueCatalogTablePartitionIndex): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    index_name: cdktf.stringToTerraform(struct!.indexName),
+    keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.keys),
+  }
+}
+
 export interface GlueCatalogTablePartitionKeys {
   readonly comment?: string;
   readonly name: string;
@@ -40,6 +55,7 @@ function glueCatalogTablePartitionKeysToTerraform(struct?: GlueCatalogTableParti
 export interface GlueCatalogTableStorageDescriptorColumns {
   readonly comment?: string;
   readonly name: string;
+  readonly parameters?: { [key: string]: string };
   readonly type?: string;
 }
 
@@ -48,6 +64,7 @@ function glueCatalogTableStorageDescriptorColumnsToTerraform(struct?: GlueCatalo
   return {
     comment: cdktf.stringToTerraform(struct!.comment),
     name: cdktf.stringToTerraform(struct!.name),
+    parameters: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.parameters),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -162,6 +179,7 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
     this._tableType = config.tableType;
     this._viewExpandedText = config.viewExpandedText;
     this._viewOriginalText = config.viewOriginalText;
+    this._partitionIndex = config.partitionIndex;
     this._partitionKeys = config.partitionKeys;
     this._storageDescriptor = config.storageDescriptor;
   }
@@ -334,6 +352,22 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
     return this._viewOriginalText
   }
 
+  // partition_index - computed: false, optional: true, required: false
+  private _partitionIndex?: GlueCatalogTablePartitionIndex[];
+  public get partitionIndex() {
+    return this.interpolationForAttribute('partition_index') as any;
+  }
+  public set partitionIndex(value: GlueCatalogTablePartitionIndex[] ) {
+    this._partitionIndex = value;
+  }
+  public resetPartitionIndex() {
+    this._partitionIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionIndexInput() {
+    return this._partitionIndex
+  }
+
   // partition_keys - computed: false, optional: true, required: false
   private _partitionKeys?: GlueCatalogTablePartitionKeys[];
   public get partitionKeys() {
@@ -382,6 +416,7 @@ export class GlueCatalogTable extends cdktf.TerraformResource {
       table_type: cdktf.stringToTerraform(this._tableType),
       view_expanded_text: cdktf.stringToTerraform(this._viewExpandedText),
       view_original_text: cdktf.stringToTerraform(this._viewOriginalText),
+      partition_index: cdktf.listMapper(glueCatalogTablePartitionIndexToTerraform)(this._partitionIndex),
       partition_keys: cdktf.listMapper(glueCatalogTablePartitionKeysToTerraform)(this._partitionKeys),
       storage_descriptor: cdktf.listMapper(glueCatalogTableStorageDescriptorToTerraform)(this._storageDescriptor),
     };

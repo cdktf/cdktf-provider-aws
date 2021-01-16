@@ -11,6 +11,7 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   readonly childHealthchecks?: string[];
   readonly cloudwatchAlarmName?: string;
   readonly cloudwatchAlarmRegion?: string;
+  readonly disabled?: boolean;
   readonly enableSni?: boolean;
   readonly failureThreshold?: number;
   readonly fqdn?: string;
@@ -51,6 +52,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
     this._childHealthchecks = config.childHealthchecks;
     this._cloudwatchAlarmName = config.cloudwatchAlarmName;
     this._cloudwatchAlarmRegion = config.cloudwatchAlarmRegion;
+    this._disabled = config.disabled;
     this._enableSni = config.enableSni;
     this._failureThreshold = config.failureThreshold;
     this._fqdn = config.fqdn;
@@ -134,6 +136,22 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cloudwatchAlarmRegionInput() {
     return this._cloudwatchAlarmRegion
+  }
+
+  // disabled - computed: false, optional: true, required: false
+  private _disabled?: boolean;
+  public get disabled() {
+    return this.getBooleanAttribute('disabled');
+  }
+  public set disabled(value: boolean ) {
+    this._disabled = value;
+  }
+  public resetDisabled() {
+    this._disabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disabledInput() {
+    return this._disabled
   }
 
   // enable_sni - computed: true, optional: true, required: false
@@ -388,6 +406,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
       child_healthchecks: cdktf.listMapper(cdktf.stringToTerraform)(this._childHealthchecks),
       cloudwatch_alarm_name: cdktf.stringToTerraform(this._cloudwatchAlarmName),
       cloudwatch_alarm_region: cdktf.stringToTerraform(this._cloudwatchAlarmRegion),
+      disabled: cdktf.booleanToTerraform(this._disabled),
       enable_sni: cdktf.booleanToTerraform(this._enableSni),
       failure_threshold: cdktf.numberToTerraform(this._failureThreshold),
       fqdn: cdktf.stringToTerraform(this._fqdn),

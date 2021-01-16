@@ -12,8 +12,6 @@ export interface Route53ZoneConfig extends cdktf.TerraformMetaArguments {
   readonly forceDestroy?: boolean;
   readonly name: string;
   readonly tags?: { [key: string]: string };
-  readonly vpcId?: string;
-  readonly vpcRegion?: string;
   /** vpc block */
   readonly vpc?: Route53ZoneVpc[];
 }
@@ -55,8 +53,6 @@ export class Route53Zone extends cdktf.TerraformResource {
     this._forceDestroy = config.forceDestroy;
     this._name = config.name;
     this._tags = config.tags;
-    this._vpcId = config.vpcId;
-    this._vpcRegion = config.vpcRegion;
     this._vpc = config.vpc;
   }
 
@@ -151,38 +147,6 @@ export class Route53Zone extends cdktf.TerraformResource {
     return this._tags
   }
 
-  // vpc_id - computed: true, optional: true, required: false
-  private _vpcId?: string;
-  public get vpcId() {
-    return this.getStringAttribute('vpc_id');
-  }
-  public set vpcId(value: string) {
-    this._vpcId = value;
-  }
-  public resetVpcId() {
-    this._vpcId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcIdInput() {
-    return this._vpcId
-  }
-
-  // vpc_region - computed: true, optional: true, required: false
-  private _vpcRegion?: string;
-  public get vpcRegion() {
-    return this.getStringAttribute('vpc_region');
-  }
-  public set vpcRegion(value: string) {
-    this._vpcRegion = value;
-  }
-  public resetVpcRegion() {
-    this._vpcRegion = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get vpcRegionInput() {
-    return this._vpcRegion
-  }
-
   // zone_id - computed: true, optional: false, required: false
   public get zoneId() {
     return this.getStringAttribute('zone_id');
@@ -215,8 +179,6 @@ export class Route53Zone extends cdktf.TerraformResource {
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      vpc_region: cdktf.stringToTerraform(this._vpcRegion),
       vpc: cdktf.listMapper(route53ZoneVpcToTerraform)(this._vpc),
     };
   }

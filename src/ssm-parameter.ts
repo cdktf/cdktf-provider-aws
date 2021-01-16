@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
   readonly allowedPattern?: string;
+  readonly dataType?: string;
   readonly description?: string;
   readonly keyId?: string;
   readonly name: string;
@@ -38,6 +39,7 @@ export class SsmParameter extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._allowedPattern = config.allowedPattern;
+    this._dataType = config.dataType;
     this._description = config.description;
     this._keyId = config.keyId;
     this._name = config.name;
@@ -71,6 +73,22 @@ export class SsmParameter extends cdktf.TerraformResource {
   // arn - computed: true, optional: true, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // data_type - computed: true, optional: true, required: false
+  private _dataType?: string;
+  public get dataType() {
+    return this.getStringAttribute('data_type');
+  }
+  public set dataType(value: string) {
+    this._dataType = value;
+  }
+  public resetDataType() {
+    this._dataType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataTypeInput() {
+    return this._dataType
   }
 
   // description - computed: false, optional: true, required: false
@@ -209,6 +227,7 @@ export class SsmParameter extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allowed_pattern: cdktf.stringToTerraform(this._allowedPattern),
+      data_type: cdktf.stringToTerraform(this._dataType),
       description: cdktf.stringToTerraform(this._description),
       key_id: cdktf.stringToTerraform(this._keyId),
       name: cdktf.stringToTerraform(this._name),

@@ -61,6 +61,11 @@ export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
     return this.getStringAttribute('id');
   }
 
+  // refresh_closed_reports - computed: true, optional: false, required: false
+  public get refreshClosedReports() {
+    return this.getBooleanAttribute('refresh_closed_reports');
+  }
+
   // report_name - computed: false, optional: false, required: true
   private _reportName: string;
   public get reportName() {
@@ -72,6 +77,11 @@ export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get reportNameInput() {
     return this._reportName
+  }
+
+  // report_versioning - computed: true, optional: false, required: false
+  public get reportVersioning() {
+    return this.getStringAttribute('report_versioning');
   }
 
   // s3_bucket - computed: true, optional: false, required: false

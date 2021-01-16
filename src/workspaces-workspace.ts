@@ -14,9 +14,26 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   readonly userName: string;
   readonly userVolumeEncryptionEnabled?: boolean;
   readonly volumeEncryptionKey?: string;
+  /** timeouts block */
+  readonly timeouts?: WorkspacesWorkspaceTimeouts;
   /** workspace_properties block */
   readonly workspaceProperties?: WorkspacesWorkspaceWorkspaceProperties[];
 }
+export interface WorkspacesWorkspaceTimeouts {
+  readonly create?: string;
+  readonly delete?: string;
+  readonly update?: string;
+}
+
+function workspacesWorkspaceTimeoutsToTerraform(struct?: WorkspacesWorkspaceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
 export interface WorkspacesWorkspaceWorkspaceProperties {
   readonly computeTypeName?: string;
   readonly rootVolumeSizeGib?: number;
@@ -63,6 +80,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
     this._userName = config.userName;
     this._userVolumeEncryptionEnabled = config.userVolumeEncryptionEnabled;
     this._volumeEncryptionKey = config.volumeEncryptionKey;
+    this._timeouts = config.timeouts;
     this._workspaceProperties = config.workspaceProperties;
   }
 
@@ -193,6 +211,22 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
     return this._volumeEncryptionKey
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: WorkspacesWorkspaceTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: WorkspacesWorkspaceTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // workspace_properties - computed: false, optional: true, required: false
   private _workspaceProperties?: WorkspacesWorkspaceWorkspaceProperties[];
   public get workspaceProperties() {
@@ -222,6 +256,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
       user_name: cdktf.stringToTerraform(this._userName),
       user_volume_encryption_enabled: cdktf.booleanToTerraform(this._userVolumeEncryptionEnabled),
       volume_encryption_key: cdktf.stringToTerraform(this._volumeEncryptionKey),
+      timeouts: workspacesWorkspaceTimeoutsToTerraform(this._timeouts),
       workspace_properties: cdktf.listMapper(workspacesWorkspaceWorkspacePropertiesToTerraform)(this._workspaceProperties),
     };
   }

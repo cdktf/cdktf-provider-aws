@@ -57,23 +57,35 @@ using temporary security credentials. */
   readonly ignoreTags?: AwsProviderIgnoreTags[];
 }
 export interface AwsProviderAssumeRole {
-  /** The external ID to use when assuming the role. If omitted, no external ID is passed to the AssumeRole call. */
+  /** Seconds to restrict the assume role session duration. */
+  readonly durationSeconds?: number;
+  /** Unique identifier that might be required for assuming a role in another account. */
   readonly externalId?: string;
-  /** The permissions applied when assuming a role. You cannot use, this policy to grant further permissions that are in excess to those of the,  role that is being assumed. */
+  /** IAM Policy JSON describing further restricting permissions for the IAM Role being assumed. */
   readonly policy?: string;
-  /** The ARN of an IAM role to assume prior to making API calls. */
+  /** Amazon Resource Names (ARNs) of IAM Policies describing further restricting permissions for the IAM Role being assumed. */
+  readonly policyArns?: string[];
+  /** Amazon Resource Name of an IAM Role to assume prior to making API calls. */
   readonly roleArn?: string;
-  /** The session name to use when assuming the role. If omitted, no session name is passed to the AssumeRole call. */
+  /** Identifier for the assumed role session. */
   readonly sessionName?: string;
+  /** Assume role session tags. */
+  readonly tags?: { [key: string]: string };
+  /** Assume role session tag keys to pass to any subsequent sessions. */
+  readonly transitiveTagKeys?: string[];
 }
 
 function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    duration_seconds: cdktf.numberToTerraform(struct!.durationSeconds),
     external_id: cdktf.stringToTerraform(struct!.externalId),
     policy: cdktf.stringToTerraform(struct!.policy),
+    policy_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.policyArns),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     session_name: cdktf.stringToTerraform(struct!.sessionName),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    transitive_tag_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.transitiveTagKeys),
   }
 }
 
@@ -139,11 +151,15 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly codepipeline?: string;
   /** Use this to override the default service endpoint URL */
+  readonly codestarconnections?: string;
+  /** Use this to override the default service endpoint URL */
   readonly cognitoidentity?: string;
   /** Use this to override the default service endpoint URL */
   readonly cognitoidp?: string;
   /** Use this to override the default service endpoint URL */
   readonly configservice?: string;
+  /** Use this to override the default service endpoint URL */
+  readonly connect?: string;
   /** Use this to override the default service endpoint URL */
   readonly cur?: string;
   /** Use this to override the default service endpoint URL */
@@ -172,6 +188,8 @@ export interface AwsProviderEndpoints {
   readonly ec2?: string;
   /** Use this to override the default service endpoint URL */
   readonly ecr?: string;
+  /** Use this to override the default service endpoint URL */
+  readonly ecrpublic?: string;
   /** Use this to override the default service endpoint URL */
   readonly ecs?: string;
   /** Use this to override the default service endpoint URL */
@@ -213,6 +231,8 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly iam?: string;
   /** Use this to override the default service endpoint URL */
+  readonly identitystore?: string;
+  /** Use this to override the default service endpoint URL */
   readonly imagebuilder?: string;
   /** Use this to override the default service endpoint URL */
   readonly inspector?: string;
@@ -226,8 +246,6 @@ export interface AwsProviderEndpoints {
   readonly kafka?: string;
   /** Use this to override the default service endpoint URL */
   readonly kinesis?: string;
-  /** Use this to override the default service endpoint URL */
-  readonly kinesisAnalytics?: string;
   /** Use this to override the default service endpoint URL */
   readonly kinesisanalytics?: string;
   /** Use this to override the default service endpoint URL */
@@ -249,6 +267,8 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly macie?: string;
   /** Use this to override the default service endpoint URL */
+  readonly macie2?: string;
+  /** Use this to override the default service endpoint URL */
   readonly managedblockchain?: string;
   /** Use this to override the default service endpoint URL */
   readonly marketplacecatalog?: string;
@@ -267,7 +287,11 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly mq?: string;
   /** Use this to override the default service endpoint URL */
+  readonly mwaa?: string;
+  /** Use this to override the default service endpoint URL */
   readonly neptune?: string;
+  /** Use this to override the default service endpoint URL */
+  readonly networkfirewall?: string;
   /** Use this to override the default service endpoint URL */
   readonly networkmanager?: string;
   /** Use this to override the default service endpoint URL */
@@ -286,8 +310,6 @@ export interface AwsProviderEndpoints {
   readonly qldb?: string;
   /** Use this to override the default service endpoint URL */
   readonly quicksight?: string;
-  /** Use this to override the default service endpoint URL */
-  readonly r53?: string;
   /** Use this to override the default service endpoint URL */
   readonly ram?: string;
   /** Use this to override the default service endpoint URL */
@@ -309,6 +331,8 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly s3Control?: string;
   /** Use this to override the default service endpoint URL */
+  readonly s3Outposts?: string;
+  /** Use this to override the default service endpoint URL */
   readonly sagemaker?: string;
   /** Use this to override the default service endpoint URL */
   readonly sdb?: string;
@@ -329,11 +353,15 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly shield?: string;
   /** Use this to override the default service endpoint URL */
+  readonly signer?: string;
+  /** Use this to override the default service endpoint URL */
   readonly sns?: string;
   /** Use this to override the default service endpoint URL */
   readonly sqs?: string;
   /** Use this to override the default service endpoint URL */
   readonly ssm?: string;
+  /** Use this to override the default service endpoint URL */
+  readonly ssoadmin?: string;
   /** Use this to override the default service endpoint URL */
   readonly stepfunctions?: string;
   /** Use this to override the default service endpoint URL */
@@ -344,6 +372,8 @@ export interface AwsProviderEndpoints {
   readonly swf?: string;
   /** Use this to override the default service endpoint URL */
   readonly synthetics?: string;
+  /** Use this to override the default service endpoint URL */
+  readonly timestreamwrite?: string;
   /** Use this to override the default service endpoint URL */
   readonly transfer?: string;
   /** Use this to override the default service endpoint URL */
@@ -395,9 +425,11 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     codecommit: cdktf.stringToTerraform(struct!.codecommit),
     codedeploy: cdktf.stringToTerraform(struct!.codedeploy),
     codepipeline: cdktf.stringToTerraform(struct!.codepipeline),
+    codestarconnections: cdktf.stringToTerraform(struct!.codestarconnections),
     cognitoidentity: cdktf.stringToTerraform(struct!.cognitoidentity),
     cognitoidp: cdktf.stringToTerraform(struct!.cognitoidp),
     configservice: cdktf.stringToTerraform(struct!.configservice),
+    connect: cdktf.stringToTerraform(struct!.connect),
     cur: cdktf.stringToTerraform(struct!.cur),
     dataexchange: cdktf.stringToTerraform(struct!.dataexchange),
     datapipeline: cdktf.stringToTerraform(struct!.datapipeline),
@@ -412,6 +444,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     dynamodb: cdktf.stringToTerraform(struct!.dynamodb),
     ec2: cdktf.stringToTerraform(struct!.ec2),
     ecr: cdktf.stringToTerraform(struct!.ecr),
+    ecrpublic: cdktf.stringToTerraform(struct!.ecrpublic),
     ecs: cdktf.stringToTerraform(struct!.ecs),
     efs: cdktf.stringToTerraform(struct!.efs),
     eks: cdktf.stringToTerraform(struct!.eks),
@@ -432,6 +465,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     greengrass: cdktf.stringToTerraform(struct!.greengrass),
     guardduty: cdktf.stringToTerraform(struct!.guardduty),
     iam: cdktf.stringToTerraform(struct!.iam),
+    identitystore: cdktf.stringToTerraform(struct!.identitystore),
     imagebuilder: cdktf.stringToTerraform(struct!.imagebuilder),
     inspector: cdktf.stringToTerraform(struct!.inspector),
     iot: cdktf.stringToTerraform(struct!.iot),
@@ -439,7 +473,6 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     iotevents: cdktf.stringToTerraform(struct!.iotevents),
     kafka: cdktf.stringToTerraform(struct!.kafka),
     kinesis: cdktf.stringToTerraform(struct!.kinesis),
-    kinesis_analytics: cdktf.stringToTerraform(struct!.kinesisAnalytics),
     kinesisanalytics: cdktf.stringToTerraform(struct!.kinesisanalytics),
     kinesisanalyticsv2: cdktf.stringToTerraform(struct!.kinesisanalyticsv2),
     kinesisvideo: cdktf.stringToTerraform(struct!.kinesisvideo),
@@ -450,6 +483,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     licensemanager: cdktf.stringToTerraform(struct!.licensemanager),
     lightsail: cdktf.stringToTerraform(struct!.lightsail),
     macie: cdktf.stringToTerraform(struct!.macie),
+    macie2: cdktf.stringToTerraform(struct!.macie2),
     managedblockchain: cdktf.stringToTerraform(struct!.managedblockchain),
     marketplacecatalog: cdktf.stringToTerraform(struct!.marketplacecatalog),
     mediaconnect: cdktf.stringToTerraform(struct!.mediaconnect),
@@ -459,7 +493,9 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     mediastore: cdktf.stringToTerraform(struct!.mediastore),
     mediastoredata: cdktf.stringToTerraform(struct!.mediastoredata),
     mq: cdktf.stringToTerraform(struct!.mq),
+    mwaa: cdktf.stringToTerraform(struct!.mwaa),
     neptune: cdktf.stringToTerraform(struct!.neptune),
+    networkfirewall: cdktf.stringToTerraform(struct!.networkfirewall),
     networkmanager: cdktf.stringToTerraform(struct!.networkmanager),
     opsworks: cdktf.stringToTerraform(struct!.opsworks),
     organizations: cdktf.stringToTerraform(struct!.organizations),
@@ -469,7 +505,6 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     pricing: cdktf.stringToTerraform(struct!.pricing),
     qldb: cdktf.stringToTerraform(struct!.qldb),
     quicksight: cdktf.stringToTerraform(struct!.quicksight),
-    r53: cdktf.stringToTerraform(struct!.r53),
     ram: cdktf.stringToTerraform(struct!.ram),
     rds: cdktf.stringToTerraform(struct!.rds),
     redshift: cdktf.stringToTerraform(struct!.redshift),
@@ -480,6 +515,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     route53resolver: cdktf.stringToTerraform(struct!.route53Resolver),
     s3: cdktf.stringToTerraform(struct!.s3),
     s3control: cdktf.stringToTerraform(struct!.s3Control),
+    s3outposts: cdktf.stringToTerraform(struct!.s3Outposts),
     sagemaker: cdktf.stringToTerraform(struct!.sagemaker),
     sdb: cdktf.stringToTerraform(struct!.sdb),
     secretsmanager: cdktf.stringToTerraform(struct!.secretsmanager),
@@ -490,14 +526,17 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     servicequotas: cdktf.stringToTerraform(struct!.servicequotas),
     ses: cdktf.stringToTerraform(struct!.ses),
     shield: cdktf.stringToTerraform(struct!.shield),
+    signer: cdktf.stringToTerraform(struct!.signer),
     sns: cdktf.stringToTerraform(struct!.sns),
     sqs: cdktf.stringToTerraform(struct!.sqs),
     ssm: cdktf.stringToTerraform(struct!.ssm),
+    ssoadmin: cdktf.stringToTerraform(struct!.ssoadmin),
     stepfunctions: cdktf.stringToTerraform(struct!.stepfunctions),
     storagegateway: cdktf.stringToTerraform(struct!.storagegateway),
     sts: cdktf.stringToTerraform(struct!.sts),
     swf: cdktf.stringToTerraform(struct!.swf),
     synthetics: cdktf.stringToTerraform(struct!.synthetics),
+    timestreamwrite: cdktf.stringToTerraform(struct!.timestreamwrite),
     transfer: cdktf.stringToTerraform(struct!.transfer),
     waf: cdktf.stringToTerraform(struct!.waf),
     wafregional: cdktf.stringToTerraform(struct!.wafregional),
@@ -538,7 +577,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'aws',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersionConstraint: '~> 2.0'
+        providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'aws'
     });

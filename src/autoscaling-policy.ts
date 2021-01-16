@@ -13,7 +13,6 @@ export interface AutoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly estimatedInstanceWarmup?: number;
   readonly metricAggregationType?: string;
   readonly minAdjustmentMagnitude?: number;
-  readonly minAdjustmentStep?: number;
   readonly name: string;
   readonly policyType?: string;
   readonly scalingAdjustment?: number;
@@ -128,7 +127,6 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
     this._estimatedInstanceWarmup = config.estimatedInstanceWarmup;
     this._metricAggregationType = config.metricAggregationType;
     this._minAdjustmentMagnitude = config.minAdjustmentMagnitude;
-    this._minAdjustmentStep = config.minAdjustmentStep;
     this._name = config.name;
     this._policyType = config.policyType;
     this._scalingAdjustment = config.scalingAdjustment;
@@ -243,22 +241,6 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
     return this._minAdjustmentMagnitude
   }
 
-  // min_adjustment_step - computed: false, optional: true, required: false
-  private _minAdjustmentStep?: number;
-  public get minAdjustmentStep() {
-    return this.getNumberAttribute('min_adjustment_step');
-  }
-  public set minAdjustmentStep(value: number ) {
-    this._minAdjustmentStep = value;
-  }
-  public resetMinAdjustmentStep() {
-    this._minAdjustmentStep = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minAdjustmentStepInput() {
-    return this._minAdjustmentStep
-  }
-
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
@@ -348,7 +330,6 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
       estimated_instance_warmup: cdktf.numberToTerraform(this._estimatedInstanceWarmup),
       metric_aggregation_type: cdktf.stringToTerraform(this._metricAggregationType),
       min_adjustment_magnitude: cdktf.numberToTerraform(this._minAdjustmentMagnitude),
-      min_adjustment_step: cdktf.numberToTerraform(this._minAdjustmentStep),
       name: cdktf.stringToTerraform(this._name),
       policy_type: cdktf.stringToTerraform(this._policyType),
       scaling_adjustment: cdktf.numberToTerraform(this._scalingAdjustment),

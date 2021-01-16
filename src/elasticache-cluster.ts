@@ -9,11 +9,11 @@ import * as cdktf from 'cdktf';
 export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly availabilityZone?: string;
-  readonly availabilityZones?: string[];
   readonly azMode?: string;
   readonly clusterId: string;
   readonly engine?: string;
   readonly engineVersion?: string;
+  readonly finalSnapshotIdentifier?: string;
   readonly maintenanceWindow?: string;
   readonly nodeType?: string;
   readonly notificationTopicArn?: string;
@@ -75,11 +75,11 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     });
     this._applyImmediately = config.applyImmediately;
     this._availabilityZone = config.availabilityZone;
-    this._availabilityZones = config.availabilityZones;
     this._azMode = config.azMode;
     this._clusterId = config.clusterId;
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
+    this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
     this._maintenanceWindow = config.maintenanceWindow;
     this._nodeType = config.nodeType;
     this._notificationTopicArn = config.notificationTopicArn;
@@ -137,22 +137,6 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
     return this._availabilityZone
-  }
-
-  // availability_zones - computed: false, optional: true, required: false
-  private _availabilityZones?: string[];
-  public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
-  }
-  public set availabilityZones(value: string[] ) {
-    this._availabilityZones = value;
-  }
-  public resetAvailabilityZones() {
-    this._availabilityZones = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get availabilityZonesInput() {
-    return this._availabilityZones
   }
 
   // az_mode - computed: true, optional: true, required: false
@@ -229,6 +213,22 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get engineVersionInput() {
     return this._engineVersion
+  }
+
+  // final_snapshot_identifier - computed: false, optional: true, required: false
+  private _finalSnapshotIdentifier?: string;
+  public get finalSnapshotIdentifier() {
+    return this.getStringAttribute('final_snapshot_identifier');
+  }
+  public set finalSnapshotIdentifier(value: string ) {
+    this._finalSnapshotIdentifier = value;
+  }
+  public resetFinalSnapshotIdentifier() {
+    this._finalSnapshotIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get finalSnapshotIdentifierInput() {
+    return this._finalSnapshotIdentifier
   }
 
   // id - computed: true, optional: true, required: false
@@ -500,11 +500,11 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     return {
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
       az_mode: cdktf.stringToTerraform(this._azMode),
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
+      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
       maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
       node_type: cdktf.stringToTerraform(this._nodeType),
       notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),

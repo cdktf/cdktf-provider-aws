@@ -7,37 +7,16 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AppautoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
-  readonly adjustmentType?: string;
-  readonly cooldown?: number;
-  readonly metricAggregationType?: string;
-  readonly minAdjustmentMagnitude?: number;
   readonly name: string;
   readonly policyType?: string;
   readonly resourceId: string;
   readonly scalableDimension: string;
   readonly serviceNamespace: string;
-  /** step_adjustment block */
-  readonly stepAdjustment?: AppautoscalingPolicyStepAdjustment[];
   /** step_scaling_policy_configuration block */
   readonly stepScalingPolicyConfiguration?: AppautoscalingPolicyStepScalingPolicyConfiguration[];
   /** target_tracking_scaling_policy_configuration block */
   readonly targetTrackingScalingPolicyConfiguration?: AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration[];
 }
-export interface AppautoscalingPolicyStepAdjustment {
-  readonly metricIntervalLowerBound?: string;
-  readonly metricIntervalUpperBound?: string;
-  readonly scalingAdjustment: number;
-}
-
-function appautoscalingPolicyStepAdjustmentToTerraform(struct?: AppautoscalingPolicyStepAdjustment): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    metric_interval_lower_bound: cdktf.stringToTerraform(struct!.metricIntervalLowerBound),
-    metric_interval_upper_bound: cdktf.stringToTerraform(struct!.metricIntervalUpperBound),
-    scaling_adjustment: cdktf.numberToTerraform(struct!.scalingAdjustment),
-  }
-}
-
 export interface AppautoscalingPolicyStepScalingPolicyConfigurationStepAdjustment {
   readonly metricIntervalLowerBound?: string;
   readonly metricIntervalUpperBound?: string;
@@ -162,16 +141,11 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._adjustmentType = config.adjustmentType;
-    this._cooldown = config.cooldown;
-    this._metricAggregationType = config.metricAggregationType;
-    this._minAdjustmentMagnitude = config.minAdjustmentMagnitude;
     this._name = config.name;
     this._policyType = config.policyType;
     this._resourceId = config.resourceId;
     this._scalableDimension = config.scalableDimension;
     this._serviceNamespace = config.serviceNamespace;
-    this._stepAdjustment = config.stepAdjustment;
     this._stepScalingPolicyConfiguration = config.stepScalingPolicyConfiguration;
     this._targetTrackingScalingPolicyConfiguration = config.targetTrackingScalingPolicyConfiguration;
   }
@@ -180,78 +154,14 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // adjustment_type - computed: false, optional: true, required: false
-  private _adjustmentType?: string;
-  public get adjustmentType() {
-    return this.getStringAttribute('adjustment_type');
-  }
-  public set adjustmentType(value: string ) {
-    this._adjustmentType = value;
-  }
-  public resetAdjustmentType() {
-    this._adjustmentType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get adjustmentTypeInput() {
-    return this._adjustmentType
-  }
-
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // cooldown - computed: false, optional: true, required: false
-  private _cooldown?: number;
-  public get cooldown() {
-    return this.getNumberAttribute('cooldown');
-  }
-  public set cooldown(value: number ) {
-    this._cooldown = value;
-  }
-  public resetCooldown() {
-    this._cooldown = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cooldownInput() {
-    return this._cooldown
-  }
-
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-
-  // metric_aggregation_type - computed: false, optional: true, required: false
-  private _metricAggregationType?: string;
-  public get metricAggregationType() {
-    return this.getStringAttribute('metric_aggregation_type');
-  }
-  public set metricAggregationType(value: string ) {
-    this._metricAggregationType = value;
-  }
-  public resetMetricAggregationType() {
-    this._metricAggregationType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricAggregationTypeInput() {
-    return this._metricAggregationType
-  }
-
-  // min_adjustment_magnitude - computed: false, optional: true, required: false
-  private _minAdjustmentMagnitude?: number;
-  public get minAdjustmentMagnitude() {
-    return this.getNumberAttribute('min_adjustment_magnitude');
-  }
-  public set minAdjustmentMagnitude(value: number ) {
-    this._minAdjustmentMagnitude = value;
-  }
-  public resetMinAdjustmentMagnitude() {
-    this._minAdjustmentMagnitude = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minAdjustmentMagnitudeInput() {
-    return this._minAdjustmentMagnitude
   }
 
   // name - computed: false, optional: false, required: true
@@ -322,22 +232,6 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
     return this._serviceNamespace
   }
 
-  // step_adjustment - computed: false, optional: true, required: false
-  private _stepAdjustment?: AppautoscalingPolicyStepAdjustment[];
-  public get stepAdjustment() {
-    return this.interpolationForAttribute('step_adjustment') as any;
-  }
-  public set stepAdjustment(value: AppautoscalingPolicyStepAdjustment[] ) {
-    this._stepAdjustment = value;
-  }
-  public resetStepAdjustment() {
-    this._stepAdjustment = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stepAdjustmentInput() {
-    return this._stepAdjustment
-  }
-
   // step_scaling_policy_configuration - computed: false, optional: true, required: false
   private _stepScalingPolicyConfiguration?: AppautoscalingPolicyStepScalingPolicyConfiguration[];
   public get stepScalingPolicyConfiguration() {
@@ -376,16 +270,11 @@ export class AppautoscalingPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      adjustment_type: cdktf.stringToTerraform(this._adjustmentType),
-      cooldown: cdktf.numberToTerraform(this._cooldown),
-      metric_aggregation_type: cdktf.stringToTerraform(this._metricAggregationType),
-      min_adjustment_magnitude: cdktf.numberToTerraform(this._minAdjustmentMagnitude),
       name: cdktf.stringToTerraform(this._name),
       policy_type: cdktf.stringToTerraform(this._policyType),
       resource_id: cdktf.stringToTerraform(this._resourceId),
       scalable_dimension: cdktf.stringToTerraform(this._scalableDimension),
       service_namespace: cdktf.stringToTerraform(this._serviceNamespace),
-      step_adjustment: cdktf.listMapper(appautoscalingPolicyStepAdjustmentToTerraform)(this._stepAdjustment),
       step_scaling_policy_configuration: cdktf.listMapper(appautoscalingPolicyStepScalingPolicyConfigurationToTerraform)(this._stepScalingPolicyConfiguration),
       target_tracking_scaling_policy_configuration: cdktf.listMapper(appautoscalingPolicyTargetTrackingScalingPolicyConfigurationToTerraform)(this._targetTrackingScalingPolicyConfiguration),
     };

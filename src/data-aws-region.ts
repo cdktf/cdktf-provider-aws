@@ -7,7 +7,6 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsRegionConfig extends cdktf.TerraformMetaArguments {
-  readonly current?: boolean;
   readonly endpoint?: string;
   readonly name?: string;
 }
@@ -31,7 +30,6 @@ export class DataAwsRegion extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._current = config.current;
     this._endpoint = config.endpoint;
     this._name = config.name;
   }
@@ -39,22 +37,6 @@ export class DataAwsRegion extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // current - computed: true, optional: true, required: false
-  private _current?: boolean;
-  public get current() {
-    return this.getBooleanAttribute('current');
-  }
-  public set current(value: boolean) {
-    this._current = value;
-  }
-  public resetCurrent() {
-    this._current = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get currentInput() {
-    return this._current
-  }
 
   // description - computed: true, optional: false, required: false
   public get description() {
@@ -104,7 +86,6 @@ export class DataAwsRegion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      current: cdktf.booleanToTerraform(this._current),
       endpoint: cdktf.stringToTerraform(this._endpoint),
       name: cdktf.stringToTerraform(this._name),
     };

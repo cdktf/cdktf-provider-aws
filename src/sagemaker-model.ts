@@ -18,11 +18,25 @@ export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   /** vpc_config block */
   readonly vpcConfig?: SagemakerModelVpcConfig[];
 }
+export interface SagemakerModelContainerImageConfig {
+  readonly repositoryAccessMode: string;
+}
+
+function sagemakerModelContainerImageConfigToTerraform(struct?: SagemakerModelContainerImageConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    repository_access_mode: cdktf.stringToTerraform(struct!.repositoryAccessMode),
+  }
+}
+
 export interface SagemakerModelContainer {
   readonly containerHostname?: string;
   readonly environment?: { [key: string]: string };
   readonly image: string;
+  readonly mode?: string;
   readonly modelDataUrl?: string;
+  /** image_config block */
+  readonly imageConfig?: SagemakerModelContainerImageConfig[];
 }
 
 function sagemakerModelContainerToTerraform(struct?: SagemakerModelContainer): any {
@@ -31,7 +45,20 @@ function sagemakerModelContainerToTerraform(struct?: SagemakerModelContainer): a
     container_hostname: cdktf.stringToTerraform(struct!.containerHostname),
     environment: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.environment),
     image: cdktf.stringToTerraform(struct!.image),
+    mode: cdktf.stringToTerraform(struct!.mode),
     model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
+    image_config: cdktf.listMapper(sagemakerModelContainerImageConfigToTerraform)(struct!.imageConfig),
+  }
+}
+
+export interface SagemakerModelPrimaryContainerImageConfig {
+  readonly repositoryAccessMode: string;
+}
+
+function sagemakerModelPrimaryContainerImageConfigToTerraform(struct?: SagemakerModelPrimaryContainerImageConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    repository_access_mode: cdktf.stringToTerraform(struct!.repositoryAccessMode),
   }
 }
 
@@ -39,7 +66,10 @@ export interface SagemakerModelPrimaryContainer {
   readonly containerHostname?: string;
   readonly environment?: { [key: string]: string };
   readonly image: string;
+  readonly mode?: string;
   readonly modelDataUrl?: string;
+  /** image_config block */
+  readonly imageConfig?: SagemakerModelPrimaryContainerImageConfig[];
 }
 
 function sagemakerModelPrimaryContainerToTerraform(struct?: SagemakerModelPrimaryContainer): any {
@@ -48,7 +78,9 @@ function sagemakerModelPrimaryContainerToTerraform(struct?: SagemakerModelPrimar
     container_hostname: cdktf.stringToTerraform(struct!.containerHostname),
     environment: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.environment),
     image: cdktf.stringToTerraform(struct!.image),
+    mode: cdktf.stringToTerraform(struct!.mode),
     model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
+    image_config: cdktf.listMapper(sagemakerModelPrimaryContainerImageConfigToTerraform)(struct!.imageConfig),
   }
 }
 

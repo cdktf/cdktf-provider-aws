@@ -84,6 +84,11 @@ export class AppmeshMesh extends cdktf.TerraformResource {
     return this.getStringAttribute('last_updated_date');
   }
 
+  // mesh_owner - computed: true, optional: false, required: false
+  public get meshOwner() {
+    return this.getStringAttribute('mesh_owner');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
@@ -95,6 +100,11 @@ export class AppmeshMesh extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // resource_owner - computed: true, optional: false, required: false
+  public get resourceOwner() {
+    return this.getStringAttribute('resource_owner');
   }
 
   // tags - computed: false, optional: true, required: false

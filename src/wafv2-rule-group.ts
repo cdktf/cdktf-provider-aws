@@ -191,25 +191,59 @@ function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementBy
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -890,25 +924,59 @@ function wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementToTer
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -1041,25 +1109,59 @@ function wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementBy
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -1740,25 +1842,59 @@ function wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementByt
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementAndStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -2996,25 +3132,59 @@ function wafv2RuleGroupRuleStatementByteMatchStatementToTerraform(struct?: Wafv2
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -3147,25 +3317,59 @@ function wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementBy
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -3846,25 +4050,59 @@ function wafv2RuleGroupRuleStatementNotStatementStatementByteMatchStatementToTer
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -3997,25 +4235,59 @@ function wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementBy
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementNotStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -4696,25 +4968,59 @@ function wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementByt
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementNotStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -5952,25 +6258,59 @@ function wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementByt
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -6651,25 +6991,59 @@ function wafv2RuleGroupRuleStatementOrStatementStatementByteMatchStatementToTerr
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementOrStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementOrStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementOrStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementOrStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementOrStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementOrStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -6802,25 +7176,59 @@ function wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementByt
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 
@@ -7501,25 +7909,59 @@ function wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementByte
   }
 }
 
+export interface Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+}
+
+function wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+  }
+}
+
 export interface Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementGeoMatchStatement {
   readonly countryCodes: string[];
+  /** forwarded_ip_config block */
+  readonly forwardedIpConfig?: Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementGeoMatchStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementGeoMatchStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     country_codes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.countryCodes),
+    forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementGeoMatchStatementForwardedIpConfigToTerraform)(struct!.forwardedIpConfig),
+  }
+}
+
+export interface Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
+  readonly fallbackBehavior: string;
+  readonly headerName: string;
+  readonly position: string;
+}
+
+function wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    fallback_behavior: cdktf.stringToTerraform(struct!.fallbackBehavior),
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    position: cdktf.stringToTerraform(struct!.position),
   }
 }
 
 export interface Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementIpSetReferenceStatement {
   readonly arn: string;
+  /** ip_set_forwarded_ip_config block */
+  readonly ipSetForwardedIpConfig?: Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig[];
 }
 
 function wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementIpSetReferenceStatementToTerraform(struct?: Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementIpSetReferenceStatement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     arn: cdktf.stringToTerraform(struct!.arn),
+    ip_set_forwarded_ip_config: cdktf.listMapper(wafv2RuleGroupRuleStatementOrStatementStatementOrStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigToTerraform)(struct!.ipSetForwardedIpConfig),
   }
 }
 

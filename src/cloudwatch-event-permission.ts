@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchEventPermissionConfig extends cdktf.TerraformMetaArguments {
   readonly action?: string;
+  readonly eventBusName?: string;
   readonly principal: string;
   readonly statementId: string;
   /** condition block */
@@ -49,6 +50,7 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._action = config.action;
+    this._eventBusName = config.eventBusName;
     this._principal = config.principal;
     this._statementId = config.statementId;
     this._condition = config.condition;
@@ -72,6 +74,22 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
     return this._action
+  }
+
+  // event_bus_name - computed: false, optional: true, required: false
+  private _eventBusName?: string;
+  public get eventBusName() {
+    return this.getStringAttribute('event_bus_name');
+  }
+  public set eventBusName(value: string ) {
+    this._eventBusName = value;
+  }
+  public resetEventBusName() {
+    this._eventBusName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventBusNameInput() {
+    return this._eventBusName
   }
 
   // id - computed: true, optional: true, required: false
@@ -128,6 +146,7 @@ export class CloudwatchEventPermission extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       action: cdktf.stringToTerraform(this._action),
+      event_bus_name: cdktf.stringToTerraform(this._eventBusName),
       principal: cdktf.stringToTerraform(this._principal),
       statement_id: cdktf.stringToTerraform(this._statementId),
       condition: cdktf.listMapper(cloudwatchEventPermissionConditionToTerraform)(this._condition),

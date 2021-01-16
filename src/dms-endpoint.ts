@@ -104,6 +104,7 @@ export interface DmsEndpointS3Settings {
   readonly compressionType?: string;
   readonly csvDelimiter?: string;
   readonly csvRowDelimiter?: string;
+  readonly datePartitionEnabled?: boolean;
   readonly externalTableDefinition?: string;
   readonly serviceAccessRoleArn?: string;
 }
@@ -116,6 +117,7 @@ function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3Settings): any {
     compression_type: cdktf.stringToTerraform(struct!.compressionType),
     csv_delimiter: cdktf.stringToTerraform(struct!.csvDelimiter),
     csv_row_delimiter: cdktf.stringToTerraform(struct!.csvRowDelimiter),
+    date_partition_enabled: cdktf.booleanToTerraform(struct!.datePartitionEnabled),
     external_table_definition: cdktf.stringToTerraform(struct!.externalTableDefinition),
     service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
   }

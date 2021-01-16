@@ -115,6 +115,16 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
     return this.getStringAttribute('opt_in_status');
   }
 
+  // parent_zone_id - computed: true, optional: false, required: false
+  public get parentZoneId() {
+    return this.getStringAttribute('parent_zone_id');
+  }
+
+  // parent_zone_name - computed: true, optional: false, required: false
+  public get parentZoneName() {
+    return this.getStringAttribute('parent_zone_name');
+  }
+
   // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
@@ -150,6 +160,11 @@ export class DataAwsAvailabilityZone extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {
     return this._zoneId
+  }
+
+  // zone_type - computed: true, optional: false, required: false
+  public get zoneType() {
+    return this.getStringAttribute('zone_type');
   }
 
   // filter - computed: false, optional: true, required: false

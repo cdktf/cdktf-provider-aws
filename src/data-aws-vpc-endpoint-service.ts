@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataAwsVpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   readonly service?: string;
   readonly serviceName?: string;
+  readonly serviceType?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsVpcEndpointServiceFilter[];
@@ -48,6 +49,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
     });
     this._service = config.service;
     this._serviceName = config.serviceName;
+    this._serviceType = config.serviceType;
     this._tags = config.tags;
     this._filter = config.filter;
   }
@@ -133,9 +135,20 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
     return this._serviceName
   }
 
-  // service_type - computed: true, optional: false, required: false
+  // service_type - computed: true, optional: true, required: false
+  private _serviceType?: string;
   public get serviceType() {
     return this.getStringAttribute('service_type');
+  }
+  public set serviceType(value: string) {
+    this._serviceType = value;
+  }
+  public resetServiceType() {
+    this._serviceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceTypeInput() {
+    return this._serviceType
   }
 
   // tags - computed: true, optional: true, required: false
@@ -183,6 +196,7 @@ export class DataAwsVpcEndpointService extends cdktf.TerraformDataSource {
     return {
       service: cdktf.stringToTerraform(this._service),
       service_name: cdktf.stringToTerraform(this._serviceName),
+      service_type: cdktf.stringToTerraform(this._serviceType),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsVpcEndpointServiceFilterToTerraform)(this._filter),
     };

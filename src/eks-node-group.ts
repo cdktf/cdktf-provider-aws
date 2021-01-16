@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   readonly amiType?: string;
+  readonly capacityType?: string;
   readonly clusterName: string;
   readonly diskSize?: number;
   readonly forceUpdateVersion?: boolean;
@@ -19,6 +20,8 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   readonly subnetIds: string[];
   readonly tags?: { [key: string]: string };
   readonly version?: string;
+  /** launch_template block */
+  readonly launchTemplate?: EksNodeGroupLaunchTemplate[];
   /** remote_access block */
   readonly remoteAccess?: EksNodeGroupRemoteAccess[];
   /** scaling_config block */
@@ -45,6 +48,21 @@ export class EksNodeGroupResources extends cdktf.ComplexComputedList {
     return this.getStringAttribute('remote_access_security_group_id');
   }
 }
+export interface EksNodeGroupLaunchTemplate {
+  readonly id?: string;
+  readonly name?: string;
+  readonly version: string;
+}
+
+function eksNodeGroupLaunchTemplateToTerraform(struct?: EksNodeGroupLaunchTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface EksNodeGroupRemoteAccess {
   readonly ec2SshKey?: string;
   readonly sourceSecurityGroupIds?: string[];
@@ -109,6 +127,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._amiType = config.amiType;
+    this._capacityType = config.capacityType;
     this._clusterName = config.clusterName;
     this._diskSize = config.diskSize;
     this._forceUpdateVersion = config.forceUpdateVersion;
@@ -120,6 +139,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
     this._version = config.version;
+    this._launchTemplate = config.launchTemplate;
     this._remoteAccess = config.remoteAccess;
     this._scalingConfig = config.scalingConfig;
     this._timeouts = config.timeouts;
@@ -148,6 +168,22 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // capacity_type - computed: true, optional: true, required: false
+  private _capacityType?: string;
+  public get capacityType() {
+    return this.getStringAttribute('capacity_type');
+  }
+  public set capacityType(value: string) {
+    this._capacityType = value;
+  }
+  public resetCapacityType() {
+    this._capacityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityTypeInput() {
+    return this._capacityType
   }
 
   // cluster_name - computed: false, optional: false, required: true
@@ -329,6 +365,22 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     return this._version
   }
 
+  // launch_template - computed: false, optional: true, required: false
+  private _launchTemplate?: EksNodeGroupLaunchTemplate[];
+  public get launchTemplate() {
+    return this.interpolationForAttribute('launch_template') as any;
+  }
+  public set launchTemplate(value: EksNodeGroupLaunchTemplate[] ) {
+    this._launchTemplate = value;
+  }
+  public resetLaunchTemplate() {
+    this._launchTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchTemplateInput() {
+    return this._launchTemplate
+  }
+
   // remote_access - computed: false, optional: true, required: false
   private _remoteAccess?: EksNodeGroupRemoteAccess[];
   public get remoteAccess() {
@@ -381,6 +433,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       ami_type: cdktf.stringToTerraform(this._amiType),
+      capacity_type: cdktf.stringToTerraform(this._capacityType),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       disk_size: cdktf.numberToTerraform(this._diskSize),
       force_update_version: cdktf.booleanToTerraform(this._forceUpdateVersion),
@@ -392,6 +445,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       version: cdktf.stringToTerraform(this._version),
+      launch_template: cdktf.listMapper(eksNodeGroupLaunchTemplateToTerraform)(this._launchTemplate),
       remote_access: cdktf.listMapper(eksNodeGroupRemoteAccessToTerraform)(this._remoteAccess),
       scaling_config: cdktf.listMapper(eksNodeGroupScalingConfigToTerraform)(this._scalingConfig),
       timeouts: eksNodeGroupTimeoutsToTerraform(this._timeouts),

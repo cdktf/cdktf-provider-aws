@@ -23,6 +23,16 @@ export class DataAwsNetworkInterfaceAssociation extends cdktf.ComplexComputedLis
     return this.getStringAttribute('association_id');
   }
 
+  // carrier_ip - computed: true, optional: false, required: false
+  public get carrierIp() {
+    return this.getStringAttribute('carrier_ip');
+  }
+
+  // customer_owned_ip - computed: true, optional: false, required: false
+  public get customerOwnedIp() {
+    return this.getStringAttribute('customer_owned_ip');
+  }
+
   // ip_owner_id - computed: true, optional: false, required: false
   public get ipOwnerId() {
     return this.getStringAttribute('ip_owner_id');

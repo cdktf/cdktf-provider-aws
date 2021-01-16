@@ -12,10 +12,12 @@ export interface RouteConfig extends cdktf.TerraformMetaArguments {
   readonly egressOnlyGatewayId?: string;
   readonly gatewayId?: string;
   readonly instanceId?: string;
+  readonly localGatewayId?: string;
   readonly natGatewayId?: string;
   readonly networkInterfaceId?: string;
   readonly routeTableId: string;
   readonly transitGatewayId?: string;
+  readonly vpcEndpointId?: string;
   readonly vpcPeeringConnectionId?: string;
   /** timeouts block */
   readonly timeouts?: RouteTimeouts;
@@ -58,10 +60,12 @@ export class Route extends cdktf.TerraformResource {
     this._egressOnlyGatewayId = config.egressOnlyGatewayId;
     this._gatewayId = config.gatewayId;
     this._instanceId = config.instanceId;
+    this._localGatewayId = config.localGatewayId;
     this._natGatewayId = config.natGatewayId;
     this._networkInterfaceId = config.networkInterfaceId;
     this._routeTableId = config.routeTableId;
     this._transitGatewayId = config.transitGatewayId;
+    this._vpcEndpointId = config.vpcEndpointId;
     this._vpcPeeringConnectionId = config.vpcPeeringConnectionId;
     this._timeouts = config.timeouts;
   }
@@ -165,6 +169,22 @@ export class Route extends cdktf.TerraformResource {
     return this.getStringAttribute('instance_owner_id');
   }
 
+  // local_gateway_id - computed: true, optional: true, required: false
+  private _localGatewayId?: string;
+  public get localGatewayId() {
+    return this.getStringAttribute('local_gateway_id');
+  }
+  public set localGatewayId(value: string) {
+    this._localGatewayId = value;
+  }
+  public resetLocalGatewayId() {
+    this._localGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayIdInput() {
+    return this._localGatewayId
+  }
+
   // nat_gateway_id - computed: true, optional: true, required: false
   private _natGatewayId?: string;
   public get natGatewayId() {
@@ -236,6 +256,22 @@ export class Route extends cdktf.TerraformResource {
     return this._transitGatewayId
   }
 
+  // vpc_endpoint_id - computed: false, optional: true, required: false
+  private _vpcEndpointId?: string;
+  public get vpcEndpointId() {
+    return this.getStringAttribute('vpc_endpoint_id');
+  }
+  public set vpcEndpointId(value: string ) {
+    this._vpcEndpointId = value;
+  }
+  public resetVpcEndpointId() {
+    this._vpcEndpointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEndpointIdInput() {
+    return this._vpcEndpointId
+  }
+
   // vpc_peering_connection_id - computed: false, optional: true, required: false
   private _vpcPeeringConnectionId?: string;
   public get vpcPeeringConnectionId() {
@@ -279,10 +315,12 @@ export class Route extends cdktf.TerraformResource {
       egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
       gateway_id: cdktf.stringToTerraform(this._gatewayId),
       instance_id: cdktf.stringToTerraform(this._instanceId),
+      local_gateway_id: cdktf.stringToTerraform(this._localGatewayId),
       nat_gateway_id: cdktf.stringToTerraform(this._natGatewayId),
       network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
       route_table_id: cdktf.stringToTerraform(this._routeTableId),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
       vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
       timeouts: routeTimeoutsToTerraform(this._timeouts),
     };

@@ -44,6 +44,17 @@ function mskClusterBrokerNodeGroupInfoToTerraform(struct?: MskClusterBrokerNodeG
   }
 }
 
+export interface MskClusterClientAuthenticationSasl {
+  readonly scram?: boolean;
+}
+
+function mskClusterClientAuthenticationSaslToTerraform(struct?: MskClusterClientAuthenticationSasl): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    scram: cdktf.booleanToTerraform(struct!.scram),
+  }
+}
+
 export interface MskClusterClientAuthenticationTls {
   readonly certificateAuthorityArns?: string[];
 }
@@ -56,6 +67,8 @@ function mskClusterClientAuthenticationTlsToTerraform(struct?: MskClusterClientA
 }
 
 export interface MskClusterClientAuthentication {
+  /** sasl block */
+  readonly sasl?: MskClusterClientAuthenticationSasl[];
   /** tls block */
   readonly tls?: MskClusterClientAuthenticationTls[];
 }
@@ -63,6 +76,7 @@ export interface MskClusterClientAuthentication {
 function mskClusterClientAuthenticationToTerraform(struct?: MskClusterClientAuthentication): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    sasl: cdktf.listMapper(mskClusterClientAuthenticationSaslToTerraform)(struct!.sasl),
     tls: cdktf.listMapper(mskClusterClientAuthenticationTlsToTerraform)(struct!.tls),
   }
 }
@@ -272,6 +286,11 @@ export class MskCluster extends cdktf.TerraformResource {
   // bootstrap_brokers - computed: true, optional: false, required: false
   public get bootstrapBrokers() {
     return this.getStringAttribute('bootstrap_brokers');
+  }
+
+  // bootstrap_brokers_sasl_scram - computed: true, optional: false, required: false
+  public get bootstrapBrokersSaslScram() {
+    return this.getStringAttribute('bootstrap_brokers_sasl_scram');
   }
 
   // bootstrap_brokers_tls - computed: true, optional: false, required: false

@@ -9,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface LbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly certificateArn?: string;
   readonly loadBalancerArn: string;
-  readonly port: number;
+  readonly port?: number;
   readonly protocol?: string;
   readonly sslPolicy?: string;
   /** default_action block */
@@ -263,25 +263,28 @@ export class LbListener extends cdktf.TerraformResource {
     return this._loadBalancerArn
   }
 
-  // port - computed: false, optional: false, required: true
-  private _port: number;
+  // port - computed: false, optional: true, required: false
+  private _port?: number;
   public get port() {
     return this.getNumberAttribute('port');
   }
-  public set port(value: number) {
+  public set port(value: number ) {
     this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get portInput() {
     return this._port
   }
 
-  // protocol - computed: false, optional: true, required: false
+  // protocol - computed: true, optional: true, required: false
   private _protocol?: string;
   public get protocol() {
     return this.getStringAttribute('protocol');
   }
-  public set protocol(value: string ) {
+  public set protocol(value: string) {
     this._protocol = value;
   }
   public resetProtocol() {

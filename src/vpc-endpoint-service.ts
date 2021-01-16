@@ -9,8 +9,32 @@ import * as cdktf from 'cdktf';
 export interface VpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   readonly acceptanceRequired: boolean;
   readonly allowedPrincipals?: string[];
-  readonly networkLoadBalancerArns: string[];
+  readonly gatewayLoadBalancerArns?: string[];
+  readonly networkLoadBalancerArns?: string[];
+  readonly privateDnsName?: string;
   readonly tags?: { [key: string]: string };
+}
+export class VpcEndpointServicePrivateDnsNameConfiguration extends cdktf.ComplexComputedList {
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
 }
 
 // Resource
@@ -34,7 +58,9 @@ export class VpcEndpointService extends cdktf.TerraformResource {
     });
     this._acceptanceRequired = config.acceptanceRequired;
     this._allowedPrincipals = config.allowedPrincipals;
+    this._gatewayLoadBalancerArns = config.gatewayLoadBalancerArns;
     this._networkLoadBalancerArns = config.networkLoadBalancerArns;
+    this._privateDnsName = config.privateDnsName;
     this._tags = config.tags;
   }
 
@@ -86,6 +112,22 @@ export class VpcEndpointService extends cdktf.TerraformResource {
     return this.getListAttribute('base_endpoint_dns_names');
   }
 
+  // gateway_load_balancer_arns - computed: false, optional: true, required: false
+  private _gatewayLoadBalancerArns?: string[];
+  public get gatewayLoadBalancerArns() {
+    return this.getListAttribute('gateway_load_balancer_arns');
+  }
+  public set gatewayLoadBalancerArns(value: string[] ) {
+    this._gatewayLoadBalancerArns = value;
+  }
+  public resetGatewayLoadBalancerArns() {
+    this._gatewayLoadBalancerArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayLoadBalancerArnsInput() {
+    return this._gatewayLoadBalancerArns
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -96,22 +138,41 @@ export class VpcEndpointService extends cdktf.TerraformResource {
     return this.getBooleanAttribute('manages_vpc_endpoints');
   }
 
-  // network_load_balancer_arns - computed: false, optional: false, required: true
-  private _networkLoadBalancerArns: string[];
+  // network_load_balancer_arns - computed: false, optional: true, required: false
+  private _networkLoadBalancerArns?: string[];
   public get networkLoadBalancerArns() {
     return this.getListAttribute('network_load_balancer_arns');
   }
-  public set networkLoadBalancerArns(value: string[]) {
+  public set networkLoadBalancerArns(value: string[] ) {
     this._networkLoadBalancerArns = value;
+  }
+  public resetNetworkLoadBalancerArns() {
+    this._networkLoadBalancerArns = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get networkLoadBalancerArnsInput() {
     return this._networkLoadBalancerArns
   }
 
-  // private_dns_name - computed: true, optional: false, required: false
+  // private_dns_name - computed: true, optional: true, required: false
+  private _privateDnsName?: string;
   public get privateDnsName() {
     return this.getStringAttribute('private_dns_name');
+  }
+  public set privateDnsName(value: string) {
+    this._privateDnsName = value;
+  }
+  public resetPrivateDnsName() {
+    this._privateDnsName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateDnsNameInput() {
+    return this._privateDnsName
+  }
+
+  // private_dns_name_configuration - computed: true, optional: false, required: false
+  public privateDnsNameConfiguration(index: string) {
+    return new VpcEndpointServicePrivateDnsNameConfiguration(this, 'private_dns_name_configuration', index);
   }
 
   // service_name - computed: true, optional: false, required: false
@@ -153,7 +214,9 @@ export class VpcEndpointService extends cdktf.TerraformResource {
     return {
       acceptance_required: cdktf.booleanToTerraform(this._acceptanceRequired),
       allowed_principals: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedPrincipals),
+      gateway_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._gatewayLoadBalancerArns),
       network_load_balancer_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._networkLoadBalancerArns),
+      private_dns_name: cdktf.stringToTerraform(this._privateDnsName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }

@@ -36,6 +36,8 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly elasticGpuSpecifications?: LaunchTemplateElasticGpuSpecifications[];
   /** elastic_inference_accelerator block */
   readonly elasticInferenceAccelerator?: LaunchTemplateElasticInferenceAccelerator[];
+  /** enclave_options block */
+  readonly enclaveOptions?: LaunchTemplateEnclaveOptions[];
   /** hibernation_options block */
   readonly hibernationOptions?: LaunchTemplateHibernationOptions[];
   /** iam_instance_profile block */
@@ -61,6 +63,7 @@ export interface LaunchTemplateBlockDeviceMappingsEbs {
   readonly iops?: number;
   readonly kmsKeyId?: string;
   readonly snapshotId?: string;
+  readonly throughput?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
@@ -73,6 +76,7 @@ function launchTemplateBlockDeviceMappingsEbsToTerraform(struct?: LaunchTemplate
     iops: cdktf.numberToTerraform(struct!.iops),
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
@@ -164,6 +168,17 @@ function launchTemplateElasticInferenceAcceleratorToTerraform(struct?: LaunchTem
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export interface LaunchTemplateEnclaveOptions {
+  readonly enabled?: boolean;
+}
+
+function launchTemplateEnclaveOptionsToTerraform(struct?: LaunchTemplateEnclaveOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
 }
 
@@ -262,8 +277,9 @@ function launchTemplateMonitoringToTerraform(struct?: LaunchTemplateMonitoring):
 }
 
 export interface LaunchTemplateNetworkInterfaces {
+  readonly associateCarrierIpAddress?: string;
   readonly associatePublicIpAddress?: string;
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: string;
   readonly description?: string;
   readonly deviceIndex?: number;
   readonly ipv4AddressCount?: number;
@@ -279,8 +295,9 @@ export interface LaunchTemplateNetworkInterfaces {
 function launchTemplateNetworkInterfacesToTerraform(struct?: LaunchTemplateNetworkInterfaces): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    associate_carrier_ip_address: cdktf.stringToTerraform(struct!.associateCarrierIpAddress),
     associate_public_ip_address: cdktf.stringToTerraform(struct!.associatePublicIpAddress),
-    delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
+    delete_on_termination: cdktf.stringToTerraform(struct!.deleteOnTermination),
     description: cdktf.stringToTerraform(struct!.description),
     device_index: cdktf.numberToTerraform(struct!.deviceIndex),
     ipv4_address_count: cdktf.numberToTerraform(struct!.ipv4AddressCount),
@@ -373,6 +390,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     this._creditSpecification = config.creditSpecification;
     this._elasticGpuSpecifications = config.elasticGpuSpecifications;
     this._elasticInferenceAccelerator = config.elasticInferenceAccelerator;
+    this._enclaveOptions = config.enclaveOptions;
     this._hibernationOptions = config.hibernationOptions;
     this._iamInstanceProfile = config.iamInstanceProfile;
     this._instanceMarketOptions = config.instanceMarketOptions;
@@ -771,6 +789,22 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     return this._elasticInferenceAccelerator
   }
 
+  // enclave_options - computed: false, optional: true, required: false
+  private _enclaveOptions?: LaunchTemplateEnclaveOptions[];
+  public get enclaveOptions() {
+    return this.interpolationForAttribute('enclave_options') as any;
+  }
+  public set enclaveOptions(value: LaunchTemplateEnclaveOptions[] ) {
+    this._enclaveOptions = value;
+  }
+  public resetEnclaveOptions() {
+    this._enclaveOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enclaveOptionsInput() {
+    return this._enclaveOptions
+  }
+
   // hibernation_options - computed: false, optional: true, required: false
   private _hibernationOptions?: LaunchTemplateHibernationOptions[];
   public get hibernationOptions() {
@@ -944,6 +978,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       credit_specification: cdktf.listMapper(launchTemplateCreditSpecificationToTerraform)(this._creditSpecification),
       elastic_gpu_specifications: cdktf.listMapper(launchTemplateElasticGpuSpecificationsToTerraform)(this._elasticGpuSpecifications),
       elastic_inference_accelerator: cdktf.listMapper(launchTemplateElasticInferenceAcceleratorToTerraform)(this._elasticInferenceAccelerator),
+      enclave_options: cdktf.listMapper(launchTemplateEnclaveOptionsToTerraform)(this._enclaveOptions),
       hibernation_options: cdktf.listMapper(launchTemplateHibernationOptionsToTerraform)(this._hibernationOptions),
       iam_instance_profile: cdktf.listMapper(launchTemplateIamInstanceProfileToTerraform)(this._iamInstanceProfile),
       instance_market_options: cdktf.listMapper(launchTemplateInstanceMarketOptionsToTerraform)(this._instanceMarketOptions),

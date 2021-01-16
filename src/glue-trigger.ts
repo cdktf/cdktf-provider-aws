@@ -21,11 +21,25 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: GlueTriggerTimeouts;
 }
+export interface GlueTriggerActionsNotificationProperty {
+  readonly notifyDelayAfter?: number;
+}
+
+function glueTriggerActionsNotificationPropertyToTerraform(struct?: GlueTriggerActionsNotificationProperty): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    notify_delay_after: cdktf.numberToTerraform(struct!.notifyDelayAfter),
+  }
+}
+
 export interface GlueTriggerActions {
   readonly arguments?: { [key: string]: string };
   readonly crawlerName?: string;
   readonly jobName?: string;
+  readonly securityConfiguration?: string;
   readonly timeout?: number;
+  /** notification_property block */
+  readonly notificationProperty?: GlueTriggerActionsNotificationProperty[];
 }
 
 function glueTriggerActionsToTerraform(struct?: GlueTriggerActions): any {
@@ -34,7 +48,9 @@ function glueTriggerActionsToTerraform(struct?: GlueTriggerActions): any {
     arguments: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.arguments),
     crawler_name: cdktf.stringToTerraform(struct!.crawlerName),
     job_name: cdktf.stringToTerraform(struct!.jobName),
+    security_configuration: cdktf.stringToTerraform(struct!.securityConfiguration),
     timeout: cdktf.numberToTerraform(struct!.timeout),
+    notification_property: cdktf.listMapper(glueTriggerActionsNotificationPropertyToTerraform)(struct!.notificationProperty),
   }
 }
 

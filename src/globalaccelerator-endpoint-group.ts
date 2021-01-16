@@ -17,8 +17,13 @@ export interface GlobalacceleratorEndpointGroupConfig extends cdktf.TerraformMet
   readonly trafficDialPercentage?: number;
   /** endpoint_configuration block */
   readonly endpointConfiguration?: GlobalacceleratorEndpointGroupEndpointConfiguration[];
+  /** port_override block */
+  readonly portOverride?: GlobalacceleratorEndpointGroupPortOverride[];
+  /** timeouts block */
+  readonly timeouts?: GlobalacceleratorEndpointGroupTimeouts;
 }
 export interface GlobalacceleratorEndpointGroupEndpointConfiguration {
+  readonly clientIpPreservationEnabled?: boolean;
   readonly endpointId?: string;
   readonly weight?: number;
 }
@@ -26,8 +31,37 @@ export interface GlobalacceleratorEndpointGroupEndpointConfiguration {
 function globalacceleratorEndpointGroupEndpointConfigurationToTerraform(struct?: GlobalacceleratorEndpointGroupEndpointConfiguration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    client_ip_preservation_enabled: cdktf.booleanToTerraform(struct!.clientIpPreservationEnabled),
     endpoint_id: cdktf.stringToTerraform(struct!.endpointId),
     weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
+export interface GlobalacceleratorEndpointGroupPortOverride {
+  readonly endpointPort: number;
+  readonly listenerPort: number;
+}
+
+function globalacceleratorEndpointGroupPortOverrideToTerraform(struct?: GlobalacceleratorEndpointGroupPortOverride): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    endpoint_port: cdktf.numberToTerraform(struct!.endpointPort),
+    listener_port: cdktf.numberToTerraform(struct!.listenerPort),
+  }
+}
+
+export interface GlobalacceleratorEndpointGroupTimeouts {
+  readonly create?: string;
+  readonly delete?: string;
+  readonly update?: string;
+}
+
+function globalacceleratorEndpointGroupTimeoutsToTerraform(struct?: GlobalacceleratorEndpointGroupTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -60,11 +94,18 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
     this._thresholdCount = config.thresholdCount;
     this._trafficDialPercentage = config.trafficDialPercentage;
     this._endpointConfiguration = config.endpointConfiguration;
+    this._portOverride = config.portOverride;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // endpoint_group_region - computed: true, optional: true, required: false
   private _endpointGroupRegion?: string;
@@ -98,12 +139,12 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
     return this._healthCheckIntervalSeconds
   }
 
-  // health_check_path - computed: false, optional: true, required: false
+  // health_check_path - computed: true, optional: true, required: false
   private _healthCheckPath?: string;
   public get healthCheckPath() {
     return this.getStringAttribute('health_check_path');
   }
-  public set healthCheckPath(value: string ) {
+  public set healthCheckPath(value: string) {
     this._healthCheckPath = value;
   }
   public resetHealthCheckPath() {
@@ -114,12 +155,12 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
     return this._healthCheckPath
   }
 
-  // health_check_port - computed: false, optional: true, required: false
+  // health_check_port - computed: true, optional: true, required: false
   private _healthCheckPort?: number;
   public get healthCheckPort() {
     return this.getNumberAttribute('health_check_port');
   }
-  public set healthCheckPort(value: number ) {
+  public set healthCheckPort(value: number) {
     this._healthCheckPort = value;
   }
   public resetHealthCheckPort() {
@@ -212,6 +253,38 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
     return this._endpointConfiguration
   }
 
+  // port_override - computed: false, optional: true, required: false
+  private _portOverride?: GlobalacceleratorEndpointGroupPortOverride[];
+  public get portOverride() {
+    return this.interpolationForAttribute('port_override') as any;
+  }
+  public set portOverride(value: GlobalacceleratorEndpointGroupPortOverride[] ) {
+    this._portOverride = value;
+  }
+  public resetPortOverride() {
+    this._portOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portOverrideInput() {
+    return this._portOverride
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: GlobalacceleratorEndpointGroupTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: GlobalacceleratorEndpointGroupTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -227,6 +300,8 @@ export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
       threshold_count: cdktf.numberToTerraform(this._thresholdCount),
       traffic_dial_percentage: cdktf.numberToTerraform(this._trafficDialPercentage),
       endpoint_configuration: cdktf.listMapper(globalacceleratorEndpointGroupEndpointConfigurationToTerraform)(this._endpointConfiguration),
+      port_override: cdktf.listMapper(globalacceleratorEndpointGroupPortOverrideToTerraform)(this._portOverride),
+      timeouts: globalacceleratorEndpointGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

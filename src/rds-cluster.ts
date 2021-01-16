@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
+  readonly allowMajorVersionUpgrade?: boolean;
   readonly applyImmediately?: boolean;
   readonly availabilityZones?: string[];
   readonly backtrackWindow?: number;
@@ -41,6 +42,8 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly storageEncrypted?: boolean;
   readonly tags?: { [key: string]: string };
   readonly vpcSecurityGroupIds?: string[];
+  /** restore_to_point_in_time block */
+  readonly restoreToPointInTime?: RdsClusterRestoreToPointInTime[];
   /** s3_import block */
   readonly s3Import?: RdsClusterS3Import[];
   /** scaling_configuration block */
@@ -48,6 +51,23 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: RdsClusterTimeouts;
 }
+export interface RdsClusterRestoreToPointInTime {
+  readonly restoreToTime?: string;
+  readonly restoreType?: string;
+  readonly sourceClusterIdentifier: string;
+  readonly useLatestRestorableTime?: boolean;
+}
+
+function rdsClusterRestoreToPointInTimeToTerraform(struct?: RdsClusterRestoreToPointInTime): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    restore_to_time: cdktf.stringToTerraform(struct!.restoreToTime),
+    restore_type: cdktf.stringToTerraform(struct!.restoreType),
+    source_cluster_identifier: cdktf.stringToTerraform(struct!.sourceClusterIdentifier),
+    use_latest_restorable_time: cdktf.booleanToTerraform(struct!.useLatestRestorableTime),
+  }
+}
+
 export interface RdsClusterS3Import {
   readonly bucketName: string;
   readonly bucketPrefix?: string;
@@ -121,6 +141,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._allowMajorVersionUpgrade = config.allowMajorVersionUpgrade;
     this._applyImmediately = config.applyImmediately;
     this._availabilityZones = config.availabilityZones;
     this._backtrackWindow = config.backtrackWindow;
@@ -155,6 +176,7 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._storageEncrypted = config.storageEncrypted;
     this._tags = config.tags;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
+    this._restoreToPointInTime = config.restoreToPointInTime;
     this._s3Import = config.s3Import;
     this._scalingConfiguration = config.scalingConfiguration;
     this._timeouts = config.timeouts;
@@ -163,6 +185,22 @@ export class RdsCluster extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_major_version_upgrade - computed: false, optional: true, required: false
+  private _allowMajorVersionUpgrade?: boolean;
+  public get allowMajorVersionUpgrade() {
+    return this.getBooleanAttribute('allow_major_version_upgrade');
+  }
+  public set allowMajorVersionUpgrade(value: boolean ) {
+    this._allowMajorVersionUpgrade = value;
+  }
+  public resetAllowMajorVersionUpgrade() {
+    this._allowMajorVersionUpgrade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowMajorVersionUpgradeInput() {
+    return this._allowMajorVersionUpgrade
+  }
 
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
@@ -690,12 +728,12 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._sourceRegion
   }
 
-  // storage_encrypted - computed: false, optional: true, required: false
+  // storage_encrypted - computed: true, optional: true, required: false
   private _storageEncrypted?: boolean;
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean ) {
+  public set storageEncrypted(value: boolean) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {
@@ -736,6 +774,22 @@ export class RdsCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get vpcSecurityGroupIdsInput() {
     return this._vpcSecurityGroupIds
+  }
+
+  // restore_to_point_in_time - computed: false, optional: true, required: false
+  private _restoreToPointInTime?: RdsClusterRestoreToPointInTime[];
+  public get restoreToPointInTime() {
+    return this.interpolationForAttribute('restore_to_point_in_time') as any;
+  }
+  public set restoreToPointInTime(value: RdsClusterRestoreToPointInTime[] ) {
+    this._restoreToPointInTime = value;
+  }
+  public resetRestoreToPointInTime() {
+    this._restoreToPointInTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreToPointInTimeInput() {
+    return this._restoreToPointInTime
   }
 
   // s3_import - computed: false, optional: true, required: false
@@ -792,6 +846,7 @@ export class RdsCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
       backtrack_window: cdktf.numberToTerraform(this._backtrackWindow),
@@ -826,6 +881,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      restore_to_point_in_time: cdktf.listMapper(rdsClusterRestoreToPointInTimeToTerraform)(this._restoreToPointInTime),
       s3_import: cdktf.listMapper(rdsClusterS3ImportToTerraform)(this._s3Import),
       scaling_configuration: cdktf.listMapper(rdsClusterScalingConfigurationToTerraform)(this._scalingConfiguration),
       timeouts: rdsClusterTimeoutsToTerraform(this._timeouts),

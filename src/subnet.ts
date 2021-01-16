@@ -139,12 +139,12 @@ export class Subnet extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // ipv6_cidr_block - computed: true, optional: true, required: false
+  // ipv6_cidr_block - computed: false, optional: true, required: false
   private _ipv6CidrBlock?: string;
   public get ipv6CidrBlock() {
     return this.getStringAttribute('ipv6_cidr_block');
   }
-  public set ipv6CidrBlock(value: string) {
+  public set ipv6CidrBlock(value: string ) {
     this._ipv6CidrBlock = value;
   }
   public resetIpv6CidrBlock() {

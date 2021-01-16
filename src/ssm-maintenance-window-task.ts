@@ -16,30 +16,11 @@ export interface SsmMaintenanceWindowTaskConfig extends cdktf.TerraformMetaArgum
   readonly taskArn: string;
   readonly taskType: string;
   readonly windowId: string;
-  /** logging_info block */
-  readonly loggingInfo?: SsmMaintenanceWindowTaskLoggingInfo[];
   /** targets block */
   readonly targets: SsmMaintenanceWindowTaskTargets[];
   /** task_invocation_parameters block */
   readonly taskInvocationParameters?: SsmMaintenanceWindowTaskTaskInvocationParameters[];
-  /** task_parameters block */
-  readonly taskParameters?: SsmMaintenanceWindowTaskTaskParameters[];
 }
-export interface SsmMaintenanceWindowTaskLoggingInfo {
-  readonly s3BucketName: string;
-  readonly s3BucketPrefix?: string;
-  readonly s3Region: string;
-}
-
-function ssmMaintenanceWindowTaskLoggingInfoToTerraform(struct?: SsmMaintenanceWindowTaskLoggingInfo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
-    s3_bucket_prefix: cdktf.stringToTerraform(struct!.s3BucketPrefix),
-    s3_region: cdktf.stringToTerraform(struct!.s3Region),
-  }
-}
-
 export interface SsmMaintenanceWindowTaskTargets {
   readonly key: string;
   readonly values: string[];
@@ -186,19 +167,6 @@ function ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(struct?: Ss
   }
 }
 
-export interface SsmMaintenanceWindowTaskTaskParameters {
-  readonly name: string;
-  readonly values: string[];
-}
-
-function ssmMaintenanceWindowTaskTaskParametersToTerraform(struct?: SsmMaintenanceWindowTaskTaskParameters): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
-  }
-}
-
 
 // Resource
 
@@ -228,10 +196,8 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     this._taskArn = config.taskArn;
     this._taskType = config.taskType;
     this._windowId = config.windowId;
-    this._loggingInfo = config.loggingInfo;
     this._targets = config.targets;
     this._taskInvocationParameters = config.taskInvocationParameters;
-    this._taskParameters = config.taskParameters;
   }
 
   // ==========
@@ -369,22 +335,6 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     return this._windowId
   }
 
-  // logging_info - computed: false, optional: true, required: false
-  private _loggingInfo?: SsmMaintenanceWindowTaskLoggingInfo[];
-  public get loggingInfo() {
-    return this.interpolationForAttribute('logging_info') as any;
-  }
-  public set loggingInfo(value: SsmMaintenanceWindowTaskLoggingInfo[] ) {
-    this._loggingInfo = value;
-  }
-  public resetLoggingInfo() {
-    this._loggingInfo = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loggingInfoInput() {
-    return this._loggingInfo
-  }
-
   // targets - computed: false, optional: false, required: true
   private _targets: SsmMaintenanceWindowTaskTargets[];
   public get targets() {
@@ -414,22 +364,6 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     return this._taskInvocationParameters
   }
 
-  // task_parameters - computed: false, optional: true, required: false
-  private _taskParameters?: SsmMaintenanceWindowTaskTaskParameters[];
-  public get taskParameters() {
-    return this.interpolationForAttribute('task_parameters') as any;
-  }
-  public set taskParameters(value: SsmMaintenanceWindowTaskTaskParameters[] ) {
-    this._taskParameters = value;
-  }
-  public resetTaskParameters() {
-    this._taskParameters = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get taskParametersInput() {
-    return this._taskParameters
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -445,10 +379,8 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
       task_arn: cdktf.stringToTerraform(this._taskArn),
       task_type: cdktf.stringToTerraform(this._taskType),
       window_id: cdktf.stringToTerraform(this._windowId),
-      logging_info: cdktf.listMapper(ssmMaintenanceWindowTaskLoggingInfoToTerraform)(this._loggingInfo),
       targets: cdktf.listMapper(ssmMaintenanceWindowTaskTargetsToTerraform)(this._targets),
       task_invocation_parameters: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform)(this._taskInvocationParameters),
-      task_parameters: cdktf.listMapper(ssmMaintenanceWindowTaskTaskParametersToTerraform)(this._taskParameters),
     };
   }
 }

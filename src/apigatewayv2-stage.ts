@@ -162,12 +162,12 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
     return this._clientCertificateId
   }
 
-  // deployment_id - computed: false, optional: true, required: false
+  // deployment_id - computed: true, optional: true, required: false
   private _deploymentId?: string;
   public get deploymentId() {
     return this.getStringAttribute('deployment_id');
   }
-  public set deploymentId(value: string ) {
+  public set deploymentId(value: string) {
     this._deploymentId = value;
   }
   public resetDeploymentId() {

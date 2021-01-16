@@ -8,10 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface WorkspacesDirectoryConfig extends cdktf.TerraformMetaArguments {
   readonly directoryId: string;
+  readonly ipGroupIds?: string[];
   readonly subnetIds?: string[];
   readonly tags?: { [key: string]: string };
   /** self_service_permissions block */
   readonly selfServicePermissions?: WorkspacesDirectorySelfServicePermissions[];
+  /** workspace_access_properties block */
+  readonly workspaceAccessProperties?: WorkspacesDirectoryWorkspaceAccessProperties[];
+  /** workspace_creation_properties block */
+  readonly workspaceCreationProperties?: WorkspacesDirectoryWorkspaceCreationProperties[];
 }
 export interface WorkspacesDirectorySelfServicePermissions {
   readonly changeComputeType?: boolean;
@@ -29,6 +34,48 @@ function workspacesDirectorySelfServicePermissionsToTerraform(struct?: Workspace
     rebuild_workspace: cdktf.booleanToTerraform(struct!.rebuildWorkspace),
     restart_workspace: cdktf.booleanToTerraform(struct!.restartWorkspace),
     switch_running_mode: cdktf.booleanToTerraform(struct!.switchRunningMode),
+  }
+}
+
+export interface WorkspacesDirectoryWorkspaceAccessProperties {
+  readonly deviceTypeAndroid?: string;
+  readonly deviceTypeChromeos?: string;
+  readonly deviceTypeIos?: string;
+  readonly deviceTypeOsx?: string;
+  readonly deviceTypeWeb?: string;
+  readonly deviceTypeWindows?: string;
+  readonly deviceTypeZeroclient?: string;
+}
+
+function workspacesDirectoryWorkspaceAccessPropertiesToTerraform(struct?: WorkspacesDirectoryWorkspaceAccessProperties): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_type_android: cdktf.stringToTerraform(struct!.deviceTypeAndroid),
+    device_type_chromeos: cdktf.stringToTerraform(struct!.deviceTypeChromeos),
+    device_type_ios: cdktf.stringToTerraform(struct!.deviceTypeIos),
+    device_type_osx: cdktf.stringToTerraform(struct!.deviceTypeOsx),
+    device_type_web: cdktf.stringToTerraform(struct!.deviceTypeWeb),
+    device_type_windows: cdktf.stringToTerraform(struct!.deviceTypeWindows),
+    device_type_zeroclient: cdktf.stringToTerraform(struct!.deviceTypeZeroclient),
+  }
+}
+
+export interface WorkspacesDirectoryWorkspaceCreationProperties {
+  readonly customSecurityGroupId?: string;
+  readonly defaultOu?: string;
+  readonly enableInternetAccess?: boolean;
+  readonly enableMaintenanceMode?: boolean;
+  readonly userEnabledAsLocalAdministrator?: boolean;
+}
+
+function workspacesDirectoryWorkspaceCreationPropertiesToTerraform(struct?: WorkspacesDirectoryWorkspaceCreationProperties): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    custom_security_group_id: cdktf.stringToTerraform(struct!.customSecurityGroupId),
+    default_ou: cdktf.stringToTerraform(struct!.defaultOu),
+    enable_internet_access: cdktf.booleanToTerraform(struct!.enableInternetAccess),
+    enable_maintenance_mode: cdktf.booleanToTerraform(struct!.enableMaintenanceMode),
+    user_enabled_as_local_administrator: cdktf.booleanToTerraform(struct!.userEnabledAsLocalAdministrator),
   }
 }
 
@@ -53,9 +100,12 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._directoryId = config.directoryId;
+    this._ipGroupIds = config.ipGroupIds;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
     this._selfServicePermissions = config.selfServicePermissions;
+    this._workspaceAccessProperties = config.workspaceAccessProperties;
+    this._workspaceCreationProperties = config.workspaceCreationProperties;
   }
 
   // ==========
@@ -110,9 +160,20 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // ip_group_ids - computed: true, optional: false, required: false
+  // ip_group_ids - computed: true, optional: true, required: false
+  private _ipGroupIds?: string[];
   public get ipGroupIds() {
     return this.getListAttribute('ip_group_ids');
+  }
+  public set ipGroupIds(value: string[]) {
+    this._ipGroupIds = value;
+  }
+  public resetIpGroupIds() {
+    this._ipGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipGroupIdsInput() {
+    return this._ipGroupIds
   }
 
   // registration_code - computed: true, optional: false, required: false
@@ -173,6 +234,38 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
     return this._selfServicePermissions
   }
 
+  // workspace_access_properties - computed: false, optional: true, required: false
+  private _workspaceAccessProperties?: WorkspacesDirectoryWorkspaceAccessProperties[];
+  public get workspaceAccessProperties() {
+    return this.interpolationForAttribute('workspace_access_properties') as any;
+  }
+  public set workspaceAccessProperties(value: WorkspacesDirectoryWorkspaceAccessProperties[] ) {
+    this._workspaceAccessProperties = value;
+  }
+  public resetWorkspaceAccessProperties() {
+    this._workspaceAccessProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceAccessPropertiesInput() {
+    return this._workspaceAccessProperties
+  }
+
+  // workspace_creation_properties - computed: false, optional: true, required: false
+  private _workspaceCreationProperties?: WorkspacesDirectoryWorkspaceCreationProperties[];
+  public get workspaceCreationProperties() {
+    return this.interpolationForAttribute('workspace_creation_properties') as any;
+  }
+  public set workspaceCreationProperties(value: WorkspacesDirectoryWorkspaceCreationProperties[] ) {
+    this._workspaceCreationProperties = value;
+  }
+  public resetWorkspaceCreationProperties() {
+    this._workspaceCreationProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceCreationPropertiesInput() {
+    return this._workspaceCreationProperties
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -180,9 +273,12 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_id: cdktf.stringToTerraform(this._directoryId),
+      ip_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._ipGroupIds),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       self_service_permissions: cdktf.listMapper(workspacesDirectorySelfServicePermissionsToTerraform)(this._selfServicePermissions),
+      workspace_access_properties: cdktf.listMapper(workspacesDirectoryWorkspaceAccessPropertiesToTerraform)(this._workspaceAccessProperties),
+      workspace_creation_properties: cdktf.listMapper(workspacesDirectoryWorkspaceCreationPropertiesToTerraform)(this._workspaceCreationProperties),
     };
   }
 }

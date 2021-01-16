@@ -12,6 +12,8 @@ export interface GlobalacceleratorListenerConfig extends cdktf.TerraformMetaArgu
   readonly protocol: string;
   /** port_range block */
   readonly portRange: GlobalacceleratorListenerPortRange[];
+  /** timeouts block */
+  readonly timeouts?: GlobalacceleratorListenerTimeouts;
 }
 export interface GlobalacceleratorListenerPortRange {
   readonly fromPort?: number;
@@ -23,6 +25,21 @@ function globalacceleratorListenerPortRangeToTerraform(struct?: Globalaccelerato
   return {
     from_port: cdktf.numberToTerraform(struct!.fromPort),
     to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+export interface GlobalacceleratorListenerTimeouts {
+  readonly create?: string;
+  readonly delete?: string;
+  readonly update?: string;
+}
+
+function globalacceleratorListenerTimeoutsToTerraform(struct?: GlobalacceleratorListenerTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -50,6 +67,7 @@ export class GlobalacceleratorListener extends cdktf.TerraformResource {
     this._clientAffinity = config.clientAffinity;
     this._protocol = config.protocol;
     this._portRange = config.portRange;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
@@ -116,6 +134,22 @@ export class GlobalacceleratorListener extends cdktf.TerraformResource {
     return this._portRange
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: GlobalacceleratorListenerTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: GlobalacceleratorListenerTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -126,6 +160,7 @@ export class GlobalacceleratorListener extends cdktf.TerraformResource {
       client_affinity: cdktf.stringToTerraform(this._clientAffinity),
       protocol: cdktf.stringToTerraform(this._protocol),
       port_range: cdktf.listMapper(globalacceleratorListenerPortRangeToTerraform)(this._portRange),
+      timeouts: globalacceleratorListenerTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -9,7 +9,6 @@ import * as cdktf from 'cdktf';
 export interface NetworkAclConfig extends cdktf.TerraformMetaArguments {
   readonly egress?: NetworkAclEgress[];
   readonly ingress?: NetworkAclIngress[];
-  readonly subnetId?: string;
   readonly subnetIds?: string[];
   readonly tags?: { [key: string]: string };
   readonly vpcId: string;
@@ -90,7 +89,6 @@ export class NetworkAcl extends cdktf.TerraformResource {
     });
     this._egress = config.egress;
     this._ingress = config.ingress;
-    this._subnetId = config.subnetId;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
     this._vpcId = config.vpcId;
@@ -147,22 +145,6 @@ export class NetworkAcl extends cdktf.TerraformResource {
     return this.getStringAttribute('owner_id');
   }
 
-  // subnet_id - computed: false, optional: true, required: false
-  private _subnetId?: string;
-  public get subnetId() {
-    return this.getStringAttribute('subnet_id');
-  }
-  public set subnetId(value: string ) {
-    this._subnetId = value;
-  }
-  public resetSubnetId() {
-    this._subnetId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId
-  }
-
   // subnet_ids - computed: true, optional: true, required: false
   private _subnetIds?: string[];
   public get subnetIds() {
@@ -216,7 +198,6 @@ export class NetworkAcl extends cdktf.TerraformResource {
     return {
       egress: cdktf.listMapper(networkAclEgressToTerraform)(this._egress),
       ingress: cdktf.listMapper(networkAclIngressToTerraform)(this._ingress),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),

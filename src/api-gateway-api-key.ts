@@ -12,22 +12,7 @@ export interface ApiGatewayApiKeyConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
   readonly value?: string;
-  /** stage_key block */
-  readonly stageKey?: ApiGatewayApiKeyStageKey[];
 }
-export interface ApiGatewayApiKeyStageKey {
-  readonly restApiId: string;
-  readonly stageName: string;
-}
-
-function apiGatewayApiKeyStageKeyToTerraform(struct?: ApiGatewayApiKeyStageKey): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    rest_api_id: cdktf.stringToTerraform(struct!.restApiId),
-    stage_name: cdktf.stringToTerraform(struct!.stageName),
-  }
-}
-
 
 // Resource
 
@@ -53,7 +38,6 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._value = config.value;
-    this._stageKey = config.stageKey;
   }
 
   // ==========
@@ -157,22 +141,6 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
     return this._value
   }
 
-  // stage_key - computed: false, optional: true, required: false
-  private _stageKey?: ApiGatewayApiKeyStageKey[];
-  public get stageKey() {
-    return this.interpolationForAttribute('stage_key') as any;
-  }
-  public set stageKey(value: ApiGatewayApiKeyStageKey[] ) {
-    this._stageKey = value;
-  }
-  public resetStageKey() {
-    this._stageKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stageKeyInput() {
-    return this._stageKey
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -184,7 +152,6 @@ export class ApiGatewayApiKey extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       value: cdktf.stringToTerraform(this._value),
-      stage_key: cdktf.listMapper(apiGatewayApiKeyStageKeyToTerraform)(this._stageKey),
     };
   }
 }

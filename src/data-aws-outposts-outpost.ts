@@ -36,7 +36,7 @@ export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: false
+  // arn - computed: true, optional: true, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }

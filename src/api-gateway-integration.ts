@@ -17,14 +17,26 @@ export interface ApiGatewayIntegrationConfig extends cdktf.TerraformMetaArgument
   readonly integrationHttpMethod?: string;
   readonly passthroughBehavior?: string;
   readonly requestParameters?: { [key: string]: string };
-  readonly requestParametersInJson?: string;
   readonly requestTemplates?: { [key: string]: string };
   readonly resourceId: string;
   readonly restApiId: string;
   readonly timeoutMilliseconds?: number;
   readonly type: string;
   readonly uri?: string;
+  /** tls_config block */
+  readonly tlsConfig?: ApiGatewayIntegrationTlsConfig[];
 }
+export interface ApiGatewayIntegrationTlsConfig {
+  readonly insecureSkipVerification?: boolean;
+}
+
+function apiGatewayIntegrationTlsConfigToTerraform(struct?: ApiGatewayIntegrationTlsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    insecure_skip_verification: cdktf.booleanToTerraform(struct!.insecureSkipVerification),
+  }
+}
+
 
 // Resource
 
@@ -55,13 +67,13 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
     this._integrationHttpMethod = config.integrationHttpMethod;
     this._passthroughBehavior = config.passthroughBehavior;
     this._requestParameters = config.requestParameters;
-    this._requestParametersInJson = config.requestParametersInJson;
     this._requestTemplates = config.requestTemplates;
     this._resourceId = config.resourceId;
     this._restApiId = config.restApiId;
     this._timeoutMilliseconds = config.timeoutMilliseconds;
     this._type = config.type;
     this._uri = config.uri;
+    this._tlsConfig = config.tlsConfig;
   }
 
   // ==========
@@ -230,22 +242,6 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
     return this._requestParameters
   }
 
-  // request_parameters_in_json - computed: false, optional: true, required: false
-  private _requestParametersInJson?: string;
-  public get requestParametersInJson() {
-    return this.getStringAttribute('request_parameters_in_json');
-  }
-  public set requestParametersInJson(value: string ) {
-    this._requestParametersInJson = value;
-  }
-  public resetRequestParametersInJson() {
-    this._requestParametersInJson = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestParametersInJsonInput() {
-    return this._requestParametersInJson
-  }
-
   // request_templates - computed: false, optional: true, required: false
   private _requestTemplates?: { [key: string]: string };
   public get requestTemplates() {
@@ -333,6 +329,22 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
     return this._uri
   }
 
+  // tls_config - computed: false, optional: true, required: false
+  private _tlsConfig?: ApiGatewayIntegrationTlsConfig[];
+  public get tlsConfig() {
+    return this.interpolationForAttribute('tls_config') as any;
+  }
+  public set tlsConfig(value: ApiGatewayIntegrationTlsConfig[] ) {
+    this._tlsConfig = value;
+  }
+  public resetTlsConfig() {
+    this._tlsConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsConfigInput() {
+    return this._tlsConfig
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -349,13 +361,13 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
       integration_http_method: cdktf.stringToTerraform(this._integrationHttpMethod),
       passthrough_behavior: cdktf.stringToTerraform(this._passthroughBehavior),
       request_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestParameters),
-      request_parameters_in_json: cdktf.stringToTerraform(this._requestParametersInJson),
       request_templates: cdktf.hashMapper(cdktf.anyToTerraform)(this._requestTemplates),
       resource_id: cdktf.stringToTerraform(this._resourceId),
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
       timeout_milliseconds: cdktf.numberToTerraform(this._timeoutMilliseconds),
       type: cdktf.stringToTerraform(this._type),
       uri: cdktf.stringToTerraform(this._uri),
+      tls_config: cdktf.listMapper(apiGatewayIntegrationTlsConfigToTerraform)(this._tlsConfig),
     };
   }
 }

@@ -269,12 +269,12 @@ export class S3BucketObject extends cdktf.TerraformResource {
     return this._key
   }
 
-  // kms_key_id - computed: false, optional: true, required: false
+  // kms_key_id - computed: true, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string ) {
+  public set kmsKeyId(value: string) {
     this._kmsKeyId = value;
   }
   public resetKmsKeyId() {

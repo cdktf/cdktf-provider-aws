@@ -9,6 +9,23 @@ import * as cdktf from 'cdktf';
 export interface DataAwsAutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
+export class DataAwsAutoscalingGroupLaunchTemplate extends cdktf.ComplexComputedList {
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+}
 
 // Resource
 
@@ -74,6 +91,11 @@ export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
   // launch_configuration - computed: true, optional: false, required: false
   public get launchConfiguration() {
     return this.getStringAttribute('launch_configuration');
+  }
+
+  // launch_template - computed: true, optional: false, required: false
+  public launchTemplate(index: string) {
+    return new DataAwsAutoscalingGroupLaunchTemplate(this, 'launch_template', index);
   }
 
   // load_balancers - computed: true, optional: false, required: false

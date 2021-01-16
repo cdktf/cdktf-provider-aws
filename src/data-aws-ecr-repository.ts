@@ -8,7 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsEcrRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
+  readonly registryId?: string;
   readonly tags?: { [key: string]: string };
+}
+export class DataAwsEcrRepositoryEncryptionConfiguration extends cdktf.ComplexComputedList {
+
+  // encryption_type - computed: true, optional: false, required: false
+  public get encryptionType() {
+    return this.getStringAttribute('encryption_type');
+  }
+
+  // kms_key - computed: true, optional: false, required: false
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+}
+export class DataAwsEcrRepositoryImageScanningConfiguration extends cdktf.ComplexComputedList {
+
+  // scan_on_push - computed: true, optional: false, required: false
+  public get scanOnPush() {
+    return this.getBooleanAttribute('scan_on_push');
+  }
 }
 
 // Resource
@@ -31,6 +51,7 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
+    this._registryId = config.registryId;
     this._tags = config.tags;
   }
 
@@ -43,9 +64,24 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
     return this.getStringAttribute('arn');
   }
 
+  // encryption_configuration - computed: true, optional: false, required: false
+  public encryptionConfiguration(index: string) {
+    return new DataAwsEcrRepositoryEncryptionConfiguration(this, 'encryption_configuration', index);
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // image_scanning_configuration - computed: true, optional: false, required: false
+  public imageScanningConfiguration(index: string) {
+    return new DataAwsEcrRepositoryImageScanningConfiguration(this, 'image_scanning_configuration', index);
+  }
+
+  // image_tag_mutability - computed: true, optional: false, required: false
+  public get imageTagMutability() {
+    return this.getStringAttribute('image_tag_mutability');
   }
 
   // name - computed: false, optional: false, required: true
@@ -61,9 +97,20 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
     return this._name
   }
 
-  // registry_id - computed: true, optional: false, required: false
+  // registry_id - computed: true, optional: true, required: false
+  private _registryId?: string;
   public get registryId() {
     return this.getStringAttribute('registry_id');
+  }
+  public set registryId(value: string) {
+    this._registryId = value;
+  }
+  public resetRegistryId() {
+    this._registryId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get registryIdInput() {
+    return this._registryId
   }
 
   // repository_url - computed: true, optional: false, required: false
@@ -94,6 +141,7 @@ export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      registry_id: cdktf.stringToTerraform(this._registryId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }

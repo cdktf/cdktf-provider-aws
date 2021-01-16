@@ -8,12 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface TransferUserConfig extends cdktf.TerraformMetaArguments {
   readonly homeDirectory?: string;
+  readonly homeDirectoryType?: string;
   readonly policy?: string;
   readonly role: string;
   readonly serverId: string;
   readonly tags?: { [key: string]: string };
   readonly userName: string;
+  /** home_directory_mappings block */
+  readonly homeDirectoryMappings?: TransferUserHomeDirectoryMappings[];
 }
+export interface TransferUserHomeDirectoryMappings {
+  readonly entry: string;
+  readonly target: string;
+}
+
+function transferUserHomeDirectoryMappingsToTerraform(struct?: TransferUserHomeDirectoryMappings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    entry: cdktf.stringToTerraform(struct!.entry),
+    target: cdktf.stringToTerraform(struct!.target),
+  }
+}
+
 
 // Resource
 
@@ -35,11 +51,13 @@ export class TransferUser extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._homeDirectory = config.homeDirectory;
+    this._homeDirectoryType = config.homeDirectoryType;
     this._policy = config.policy;
     this._role = config.role;
     this._serverId = config.serverId;
     this._tags = config.tags;
     this._userName = config.userName;
+    this._homeDirectoryMappings = config.homeDirectoryMappings;
   }
 
   // ==========
@@ -65,6 +83,22 @@ export class TransferUser extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get homeDirectoryInput() {
     return this._homeDirectory
+  }
+
+  // home_directory_type - computed: false, optional: true, required: false
+  private _homeDirectoryType?: string;
+  public get homeDirectoryType() {
+    return this.getStringAttribute('home_directory_type');
+  }
+  public set homeDirectoryType(value: string ) {
+    this._homeDirectoryType = value;
+  }
+  public resetHomeDirectoryType() {
+    this._homeDirectoryType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get homeDirectoryTypeInput() {
+    return this._homeDirectoryType
   }
 
   // id - computed: true, optional: true, required: false
@@ -143,6 +177,22 @@ export class TransferUser extends cdktf.TerraformResource {
     return this._userName
   }
 
+  // home_directory_mappings - computed: false, optional: true, required: false
+  private _homeDirectoryMappings?: TransferUserHomeDirectoryMappings[];
+  public get homeDirectoryMappings() {
+    return this.interpolationForAttribute('home_directory_mappings') as any;
+  }
+  public set homeDirectoryMappings(value: TransferUserHomeDirectoryMappings[] ) {
+    this._homeDirectoryMappings = value;
+  }
+  public resetHomeDirectoryMappings() {
+    this._homeDirectoryMappings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get homeDirectoryMappingsInput() {
+    return this._homeDirectoryMappings
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -150,11 +200,13 @@ export class TransferUser extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       home_directory: cdktf.stringToTerraform(this._homeDirectory),
+      home_directory_type: cdktf.stringToTerraform(this._homeDirectoryType),
       policy: cdktf.stringToTerraform(this._policy),
       role: cdktf.stringToTerraform(this._role),
       server_id: cdktf.stringToTerraform(this._serverId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       user_name: cdktf.stringToTerraform(this._userName),
+      home_directory_mappings: cdktf.listMapper(transferUserHomeDirectoryMappingsToTerraform)(this._homeDirectoryMappings),
     };
   }
 }

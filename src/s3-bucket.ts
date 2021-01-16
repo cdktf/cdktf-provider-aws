@@ -14,7 +14,6 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   readonly forceDestroy?: boolean;
   readonly hostedZoneId?: string;
   readonly policy?: string;
-  readonly region?: string;
   readonly requestPayer?: string;
   readonly tags?: { [key: string]: string };
   readonly websiteDomain?: string;
@@ -414,7 +413,6 @@ export class S3Bucket extends cdktf.TerraformResource {
     this._forceDestroy = config.forceDestroy;
     this._hostedZoneId = config.hostedZoneId;
     this._policy = config.policy;
-    this._region = config.region;
     this._requestPayer = config.requestPayer;
     this._tags = config.tags;
     this._websiteDomain = config.websiteDomain;
@@ -566,20 +564,9 @@ export class S3Bucket extends cdktf.TerraformResource {
     return this._policy
   }
 
-  // region - computed: true, optional: true, required: false
-  private _region?: string;
+  // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
-  }
-  public set region(value: string) {
-    this._region = value;
-  }
-  public resetRegion() {
-    this._region = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionInput() {
-    return this._region
   }
 
   // request_payer - computed: true, optional: true, required: false
@@ -803,7 +790,6 @@ export class S3Bucket extends cdktf.TerraformResource {
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
       policy: cdktf.stringToTerraform(this._policy),
-      region: cdktf.stringToTerraform(this._region),
       request_payer: cdktf.stringToTerraform(this._requestPayer),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       website_domain: cdktf.stringToTerraform(this._websiteDomain),

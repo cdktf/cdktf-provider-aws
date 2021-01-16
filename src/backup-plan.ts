@@ -9,9 +9,24 @@ import * as cdktf from 'cdktf';
 export interface BackupPlanConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  /** advanced_backup_setting block */
+  readonly advancedBackupSetting?: BackupPlanAdvancedBackupSetting[];
   /** rule block */
   readonly rule: BackupPlanRule[];
 }
+export interface BackupPlanAdvancedBackupSetting {
+  readonly backupOptions?: { [key: string]: string };
+  readonly resourceType?: string;
+}
+
+function backupPlanAdvancedBackupSettingToTerraform(struct?: BackupPlanAdvancedBackupSetting): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    backup_options: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.backupOptions),
+    resource_type: cdktf.stringToTerraform(struct!.resourceType),
+  }
+}
+
 export interface BackupPlanRuleCopyActionLifecycle {
   readonly coldStorageAfter?: number;
   readonly deleteAfter?: number;
@@ -101,6 +116,7 @@ export class BackupPlan extends cdktf.TerraformResource {
     });
     this._name = config.name;
     this._tags = config.tags;
+    this._advancedBackupSetting = config.advancedBackupSetting;
     this._rule = config.rule;
   }
 
@@ -152,6 +168,22 @@ export class BackupPlan extends cdktf.TerraformResource {
     return this.getStringAttribute('version');
   }
 
+  // advanced_backup_setting - computed: false, optional: true, required: false
+  private _advancedBackupSetting?: BackupPlanAdvancedBackupSetting[];
+  public get advancedBackupSetting() {
+    return this.interpolationForAttribute('advanced_backup_setting') as any;
+  }
+  public set advancedBackupSetting(value: BackupPlanAdvancedBackupSetting[] ) {
+    this._advancedBackupSetting = value;
+  }
+  public resetAdvancedBackupSetting() {
+    this._advancedBackupSetting = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedBackupSettingInput() {
+    return this._advancedBackupSetting
+  }
+
   // rule - computed: false, optional: false, required: true
   private _rule: BackupPlanRule[];
   public get rule() {
@@ -173,6 +205,7 @@ export class BackupPlan extends cdktf.TerraformResource {
     return {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      advanced_backup_setting: cdktf.listMapper(backupPlanAdvancedBackupSettingToTerraform)(this._advancedBackupSetting),
       rule: cdktf.listMapper(backupPlanRuleToTerraform)(this._rule),
     };
   }

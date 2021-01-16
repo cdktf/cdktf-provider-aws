@@ -57,11 +57,30 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly timezone?: string;
   readonly username?: string;
   readonly vpcSecurityGroupIds?: string[];
+  /** restore_to_point_in_time block */
+  readonly restoreToPointInTime?: DbInstanceRestoreToPointInTime[];
   /** s3_import block */
   readonly s3Import?: DbInstanceS3Import[];
   /** timeouts block */
   readonly timeouts?: DbInstanceTimeouts;
 }
+export interface DbInstanceRestoreToPointInTime {
+  readonly restoreTime?: string;
+  readonly sourceDbInstanceIdentifier?: string;
+  readonly sourceDbiResourceId?: string;
+  readonly useLatestRestorableTime?: boolean;
+}
+
+function dbInstanceRestoreToPointInTimeToTerraform(struct?: DbInstanceRestoreToPointInTime): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    restore_time: cdktf.stringToTerraform(struct!.restoreTime),
+    source_db_instance_identifier: cdktf.stringToTerraform(struct!.sourceDbInstanceIdentifier),
+    source_dbi_resource_id: cdktf.stringToTerraform(struct!.sourceDbiResourceId),
+    use_latest_restorable_time: cdktf.booleanToTerraform(struct!.useLatestRestorableTime),
+  }
+}
+
 export interface DbInstanceS3Import {
   readonly bucketName: string;
   readonly bucketPrefix?: string;
@@ -166,6 +185,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._timezone = config.timezone;
     this._username = config.username;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
+    this._restoreToPointInTime = config.restoreToPointInTime;
     this._s3Import = config.s3Import;
     this._timeouts = config.timeouts;
   }
@@ -596,6 +616,11 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._kmsKeyId
   }
 
+  // latest_restorable_time - computed: true, optional: false, required: false
+  public get latestRestorableTime() {
+    return this.getStringAttribute('latest_restorable_time');
+  }
+
   // license_model - computed: true, optional: true, required: false
   private _licenseModel?: string;
   public get licenseModel() {
@@ -1011,6 +1036,22 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._vpcSecurityGroupIds
   }
 
+  // restore_to_point_in_time - computed: false, optional: true, required: false
+  private _restoreToPointInTime?: DbInstanceRestoreToPointInTime[];
+  public get restoreToPointInTime() {
+    return this.interpolationForAttribute('restore_to_point_in_time') as any;
+  }
+  public set restoreToPointInTime(value: DbInstanceRestoreToPointInTime[] ) {
+    this._restoreToPointInTime = value;
+  }
+  public resetRestoreToPointInTime() {
+    this._restoreToPointInTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreToPointInTimeInput() {
+    return this._restoreToPointInTime
+  }
+
   // s3_import - computed: false, optional: true, required: false
   private _s3Import?: DbInstanceS3Import[];
   public get s3Import() {
@@ -1099,6 +1140,7 @@ export class DbInstance extends cdktf.TerraformResource {
       timezone: cdktf.stringToTerraform(this._timezone),
       username: cdktf.stringToTerraform(this._username),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      restore_to_point_in_time: cdktf.listMapper(dbInstanceRestoreToPointInTimeToTerraform)(this._restoreToPointInTime),
       s3_import: cdktf.listMapper(dbInstanceS3ImportToTerraform)(this._s3Import),
       timeouts: dbInstanceTimeoutsToTerraform(this._timeouts),
     };

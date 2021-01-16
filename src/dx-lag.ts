@@ -11,7 +11,6 @@ export interface DxLagConfig extends cdktf.TerraformMetaArguments {
   readonly forceDestroy?: boolean;
   readonly location: string;
   readonly name: string;
-  readonly numberOfConnections?: number;
   readonly tags?: { [key: string]: string };
 }
 
@@ -38,7 +37,6 @@ export class DxLag extends cdktf.TerraformResource {
     this._forceDestroy = config.forceDestroy;
     this._location = config.location;
     this._name = config.name;
-    this._numberOfConnections = config.numberOfConnections;
     this._tags = config.tags;
   }
 
@@ -121,22 +119,6 @@ export class DxLag extends cdktf.TerraformResource {
     return this._name
   }
 
-  // number_of_connections - computed: true, optional: true, required: false
-  private _numberOfConnections?: number;
-  public get numberOfConnections() {
-    return this.getNumberAttribute('number_of_connections');
-  }
-  public set numberOfConnections(value: number) {
-    this._numberOfConnections = value;
-  }
-  public resetNumberOfConnections() {
-    this._numberOfConnections = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get numberOfConnectionsInput() {
-    return this._numberOfConnections
-  }
-
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
@@ -163,7 +145,6 @@ export class DxLag extends cdktf.TerraformResource {
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
-      number_of_connections: cdktf.numberToTerraform(this._numberOfConnections),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }

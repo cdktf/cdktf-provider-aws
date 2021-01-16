@@ -15,6 +15,7 @@ export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments
   readonly endDate?: string;
   readonly name: string;
   readonly schedule: string;
+  readonly scheduleOffset?: number;
   readonly scheduleTimezone?: string;
   readonly startDate?: string;
   readonly tags?: { [key: string]: string };
@@ -47,6 +48,7 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
     this._endDate = config.endDate;
     this._name = config.name;
     this._schedule = config.schedule;
+    this._scheduleOffset = config.scheduleOffset;
     this._scheduleTimezone = config.scheduleTimezone;
     this._startDate = config.startDate;
     this._tags = config.tags;
@@ -177,6 +179,22 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
     return this._schedule
   }
 
+  // schedule_offset - computed: false, optional: true, required: false
+  private _scheduleOffset?: number;
+  public get scheduleOffset() {
+    return this.getNumberAttribute('schedule_offset');
+  }
+  public set scheduleOffset(value: number ) {
+    this._scheduleOffset = value;
+  }
+  public resetScheduleOffset() {
+    this._scheduleOffset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleOffsetInput() {
+    return this._scheduleOffset
+  }
+
   // schedule_timezone - computed: false, optional: true, required: false
   private _scheduleTimezone?: string;
   public get scheduleTimezone() {
@@ -239,6 +257,7 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
       end_date: cdktf.stringToTerraform(this._endDate),
       name: cdktf.stringToTerraform(this._name),
       schedule: cdktf.stringToTerraform(this._schedule),
+      schedule_offset: cdktf.numberToTerraform(this._scheduleOffset),
       schedule_timezone: cdktf.stringToTerraform(this._scheduleTimezone),
       start_date: cdktf.stringToTerraform(this._startDate),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

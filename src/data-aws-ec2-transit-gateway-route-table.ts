@@ -7,7 +7,6 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2TransitGatewayRouteTableConfig extends cdktf.TerraformMetaArguments {
-  readonly id?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsEc2TransitGatewayRouteTableFilter[];
@@ -45,7 +44,6 @@ export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSourc
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._id = config.id;
     this._tags = config.tags;
     this._filter = config.filter;
   }
@@ -53,6 +51,11 @@ export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSourc
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // default_association_route_table - computed: true, optional: false, required: false
   public get defaultAssociationRouteTable() {
@@ -64,20 +67,9 @@ export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSourc
     return this.getBooleanAttribute('default_propagation_route_table');
   }
 
-  // id - computed: false, optional: true, required: false
-  private _id?: string;
+  // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string ) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id
   }
 
   // tags - computed: true, optional: true, required: false
@@ -123,7 +115,6 @@ export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       filter: cdktf.listMapper(dataAwsEc2TransitGatewayRouteTableFilterToTerraform)(this._filter),
     };

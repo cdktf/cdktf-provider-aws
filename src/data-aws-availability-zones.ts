@@ -8,11 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsAvailabilityZonesConfig extends cdktf.TerraformMetaArguments {
   readonly allAvailabilityZones?: boolean;
-  readonly blacklistedNames?: string[];
-  readonly blacklistedZoneIds?: string[];
   readonly excludeNames?: string[];
   readonly excludeZoneIds?: string[];
-  readonly groupNames?: string[];
   readonly state?: string;
   /** filter block */
   readonly filter?: DataAwsAvailabilityZonesFilter[];
@@ -51,11 +48,8 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._allAvailabilityZones = config.allAvailabilityZones;
-    this._blacklistedNames = config.blacklistedNames;
-    this._blacklistedZoneIds = config.blacklistedZoneIds;
     this._excludeNames = config.excludeNames;
     this._excludeZoneIds = config.excludeZoneIds;
-    this._groupNames = config.groupNames;
     this._state = config.state;
     this._filter = config.filter;
   }
@@ -78,38 +72,6 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get allAvailabilityZonesInput() {
     return this._allAvailabilityZones
-  }
-
-  // blacklisted_names - computed: false, optional: true, required: false
-  private _blacklistedNames?: string[];
-  public get blacklistedNames() {
-    return this.getListAttribute('blacklisted_names');
-  }
-  public set blacklistedNames(value: string[] ) {
-    this._blacklistedNames = value;
-  }
-  public resetBlacklistedNames() {
-    this._blacklistedNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get blacklistedNamesInput() {
-    return this._blacklistedNames
-  }
-
-  // blacklisted_zone_ids - computed: false, optional: true, required: false
-  private _blacklistedZoneIds?: string[];
-  public get blacklistedZoneIds() {
-    return this.getListAttribute('blacklisted_zone_ids');
-  }
-  public set blacklistedZoneIds(value: string[] ) {
-    this._blacklistedZoneIds = value;
-  }
-  public resetBlacklistedZoneIds() {
-    this._blacklistedZoneIds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get blacklistedZoneIdsInput() {
-    return this._blacklistedZoneIds
   }
 
   // exclude_names - computed: false, optional: true, required: false
@@ -144,20 +106,9 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
     return this._excludeZoneIds
   }
 
-  // group_names - computed: false, optional: true, required: false
-  private _groupNames?: string[];
+  // group_names - computed: true, optional: false, required: false
   public get groupNames() {
     return this.getListAttribute('group_names');
-  }
-  public set groupNames(value: string[] ) {
-    this._groupNames = value;
-  }
-  public resetGroupNames() {
-    this._groupNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupNamesInput() {
-    return this._groupNames
   }
 
   // id - computed: true, optional: true, required: false
@@ -214,11 +165,8 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       all_availability_zones: cdktf.booleanToTerraform(this._allAvailabilityZones),
-      blacklisted_names: cdktf.listMapper(cdktf.stringToTerraform)(this._blacklistedNames),
-      blacklisted_zone_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._blacklistedZoneIds),
       exclude_names: cdktf.listMapper(cdktf.stringToTerraform)(this._excludeNames),
       exclude_zone_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._excludeZoneIds),
-      group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._groupNames),
       state: cdktf.stringToTerraform(this._state),
       filter: cdktf.listMapper(dataAwsAvailabilityZonesFilterToTerraform)(this._filter),
     };

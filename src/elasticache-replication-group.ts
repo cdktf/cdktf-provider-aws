@@ -15,6 +15,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   readonly availabilityZones?: string[];
   readonly engine?: string;
   readonly engineVersion?: string;
+  readonly finalSnapshotIdentifier?: string;
   readonly kmsKeyId?: string;
   readonly maintenanceWindow?: string;
   readonly nodeType?: string;
@@ -94,6 +95,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     this._availabilityZones = config.availabilityZones;
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
+    this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
     this._kmsKeyId = config.kmsKeyId;
     this._maintenanceWindow = config.maintenanceWindow;
     this._nodeType = config.nodeType;
@@ -216,6 +218,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     return this._availabilityZones
   }
 
+  // cluster_enabled - computed: true, optional: false, required: false
+  public get clusterEnabled() {
+    return this.getBooleanAttribute('cluster_enabled');
+  }
+
   // configuration_endpoint_address - computed: true, optional: false, required: false
   public get configurationEndpointAddress() {
     return this.getStringAttribute('configuration_endpoint_address');
@@ -251,6 +258,22 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get engineVersionInput() {
     return this._engineVersion
+  }
+
+  // final_snapshot_identifier - computed: false, optional: true, required: false
+  private _finalSnapshotIdentifier?: string;
+  public get finalSnapshotIdentifier() {
+    return this.getStringAttribute('final_snapshot_identifier');
+  }
+  public set finalSnapshotIdentifier(value: string ) {
+    this._finalSnapshotIdentifier = value;
+  }
+  public resetFinalSnapshotIdentifier() {
+    this._finalSnapshotIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get finalSnapshotIdentifierInput() {
+    return this._finalSnapshotIdentifier
   }
 
   // id - computed: true, optional: true, required: false
@@ -378,6 +401,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // primary_endpoint_address - computed: true, optional: false, required: false
   public get primaryEndpointAddress() {
     return this.getStringAttribute('primary_endpoint_address');
+  }
+
+  // reader_endpoint_address - computed: true, optional: false, required: false
+  public get readerEndpointAddress() {
+    return this.getStringAttribute('reader_endpoint_address');
   }
 
   // replication_group_description - computed: false, optional: false, required: true
@@ -596,6 +624,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
+      final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
       node_type: cdktf.stringToTerraform(this._nodeType),

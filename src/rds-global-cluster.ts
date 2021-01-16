@@ -11,8 +11,22 @@ export interface RdsGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   readonly deletionProtection?: boolean;
   readonly engine?: string;
   readonly engineVersion?: string;
+  readonly forceDestroy?: boolean;
   readonly globalClusterIdentifier: string;
+  readonly sourceDbClusterIdentifier?: string;
   readonly storageEncrypted?: boolean;
+}
+export class RdsGlobalClusterGlobalClusterMembers extends cdktf.ComplexComputedList {
+
+  // db_cluster_arn - computed: true, optional: false, required: false
+  public get dbClusterArn() {
+    return this.getStringAttribute('db_cluster_arn');
+  }
+
+  // is_writer - computed: true, optional: false, required: false
+  public get isWriter() {
+    return this.getBooleanAttribute('is_writer');
+  }
 }
 
 // Resource
@@ -38,7 +52,9 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
     this._deletionProtection = config.deletionProtection;
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
+    this._forceDestroy = config.forceDestroy;
     this._globalClusterIdentifier = config.globalClusterIdentifier;
+    this._sourceDbClusterIdentifier = config.sourceDbClusterIdentifier;
     this._storageEncrypted = config.storageEncrypted;
   }
 
@@ -83,12 +99,12 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
     return this._deletionProtection
   }
 
-  // engine - computed: false, optional: true, required: false
+  // engine - computed: true, optional: true, required: false
   private _engine?: string;
   public get engine() {
     return this.getStringAttribute('engine');
   }
-  public set engine(value: string ) {
+  public set engine(value: string) {
     this._engine = value;
   }
   public resetEngine() {
@@ -115,6 +131,22 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
     return this._engineVersion
   }
 
+  // force_destroy - computed: false, optional: true, required: false
+  private _forceDestroy?: boolean;
+  public get forceDestroy() {
+    return this.getBooleanAttribute('force_destroy');
+  }
+  public set forceDestroy(value: boolean ) {
+    this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy
+  }
+
   // global_cluster_identifier - computed: false, optional: false, required: true
   private _globalClusterIdentifier: string;
   public get globalClusterIdentifier() {
@@ -128,6 +160,11 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
     return this._globalClusterIdentifier
   }
 
+  // global_cluster_members - computed: true, optional: false, required: false
+  public globalClusterMembers(index: string) {
+    return new RdsGlobalClusterGlobalClusterMembers(this, 'global_cluster_members', index);
+  }
+
   // global_cluster_resource_id - computed: true, optional: false, required: false
   public get globalClusterResourceId() {
     return this.getStringAttribute('global_cluster_resource_id');
@@ -138,12 +175,28 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // storage_encrypted - computed: false, optional: true, required: false
+  // source_db_cluster_identifier - computed: true, optional: true, required: false
+  private _sourceDbClusterIdentifier?: string;
+  public get sourceDbClusterIdentifier() {
+    return this.getStringAttribute('source_db_cluster_identifier');
+  }
+  public set sourceDbClusterIdentifier(value: string) {
+    this._sourceDbClusterIdentifier = value;
+  }
+  public resetSourceDbClusterIdentifier() {
+    this._sourceDbClusterIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceDbClusterIdentifierInput() {
+    return this._sourceDbClusterIdentifier
+  }
+
+  // storage_encrypted - computed: true, optional: true, required: false
   private _storageEncrypted?: boolean;
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean ) {
+  public set storageEncrypted(value: boolean) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {
@@ -164,7 +217,9 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
+      source_db_cluster_identifier: cdktf.stringToTerraform(this._sourceDbClusterIdentifier),
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
     };
   }

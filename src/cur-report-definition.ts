@@ -11,7 +11,9 @@ export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments 
   readonly additionalSchemaElements: string[];
   readonly compression: string;
   readonly format: string;
+  readonly refreshClosedReports?: boolean;
   readonly reportName: string;
+  readonly reportVersioning?: string;
   readonly s3Bucket: string;
   readonly s3Prefix?: string;
   readonly s3Region: string;
@@ -41,7 +43,9 @@ export class CurReportDefinition extends cdktf.TerraformResource {
     this._additionalSchemaElements = config.additionalSchemaElements;
     this._compression = config.compression;
     this._format = config.format;
+    this._refreshClosedReports = config.refreshClosedReports;
     this._reportName = config.reportName;
+    this._reportVersioning = config.reportVersioning;
     this._s3Bucket = config.s3Bucket;
     this._s3Prefix = config.s3Prefix;
     this._s3Region = config.s3Region;
@@ -112,6 +116,22 @@ export class CurReportDefinition extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // refresh_closed_reports - computed: false, optional: true, required: false
+  private _refreshClosedReports?: boolean;
+  public get refreshClosedReports() {
+    return this.getBooleanAttribute('refresh_closed_reports');
+  }
+  public set refreshClosedReports(value: boolean ) {
+    this._refreshClosedReports = value;
+  }
+  public resetRefreshClosedReports() {
+    this._refreshClosedReports = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get refreshClosedReportsInput() {
+    return this._refreshClosedReports
+  }
+
   // report_name - computed: false, optional: false, required: true
   private _reportName: string;
   public get reportName() {
@@ -123,6 +143,22 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get reportNameInput() {
     return this._reportName
+  }
+
+  // report_versioning - computed: false, optional: true, required: false
+  private _reportVersioning?: string;
+  public get reportVersioning() {
+    return this.getStringAttribute('report_versioning');
+  }
+  public set reportVersioning(value: string ) {
+    this._reportVersioning = value;
+  }
+  public resetReportVersioning() {
+    this._reportVersioning = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reportVersioningInput() {
+    return this._reportVersioning
   }
 
   // s3_bucket - computed: false, optional: false, required: true
@@ -190,7 +226,9 @@ export class CurReportDefinition extends cdktf.TerraformResource {
       additional_schema_elements: cdktf.listMapper(cdktf.stringToTerraform)(this._additionalSchemaElements),
       compression: cdktf.stringToTerraform(this._compression),
       format: cdktf.stringToTerraform(this._format),
+      refresh_closed_reports: cdktf.booleanToTerraform(this._refreshClosedReports),
       report_name: cdktf.stringToTerraform(this._reportName),
+      report_versioning: cdktf.stringToTerraform(this._reportVersioning),
       s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
       s3_prefix: cdktf.stringToTerraform(this._s3Prefix),
       s3_region: cdktf.stringToTerraform(this._s3Region),

@@ -38,6 +38,11 @@ export class Ec2TransitGatewayRouteTable extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // default_association_route_table - computed: true, optional: false, required: false
   public get defaultAssociationRouteTable() {
     return this.getBooleanAttribute('default_association_route_table');

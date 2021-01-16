@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface CloudwatchEventTargetConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
+  readonly eventBusName?: string;
   readonly input?: string;
   readonly inputPath?: string;
   readonly roleArn?: string;
@@ -149,6 +150,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._arn = config.arn;
+    this._eventBusName = config.eventBusName;
     this._input = config.input;
     this._inputPath = config.inputPath;
     this._roleArn = config.roleArn;
@@ -177,6 +179,22 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get arnInput() {
     return this._arn
+  }
+
+  // event_bus_name - computed: false, optional: true, required: false
+  private _eventBusName?: string;
+  public get eventBusName() {
+    return this.getStringAttribute('event_bus_name');
+  }
+  public set eventBusName(value: string ) {
+    this._eventBusName = value;
+  }
+  public resetEventBusName() {
+    this._eventBusName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventBusNameInput() {
+    return this._eventBusName
   }
 
   // id - computed: true, optional: true, required: false
@@ -364,6 +382,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: cdktf.stringToTerraform(this._arn),
+      event_bus_name: cdktf.stringToTerraform(this._eventBusName),
       input: cdktf.stringToTerraform(this._input),
       input_path: cdktf.stringToTerraform(this._inputPath),
       role_arn: cdktf.stringToTerraform(this._roleArn),

@@ -21,6 +21,7 @@ export interface DefaultRouteTableRoute {
   readonly natGatewayId?: string;
   readonly networkInterfaceId?: string;
   readonly transitGatewayId?: string;
+  readonly vpcEndpointId?: string;
   readonly vpcPeeringConnectionId?: string;
 }
 
@@ -35,6 +36,7 @@ function defaultRouteTableRouteToTerraform(struct?: DefaultRouteTableRoute): any
     nat_gateway_id: cdktf.stringToTerraform(struct!.natGatewayId),
     network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
     transit_gateway_id: cdktf.stringToTerraform(struct!.transitGatewayId),
+    vpc_endpoint_id: cdktf.stringToTerraform(struct!.vpcEndpointId),
     vpc_peering_connection_id: cdktf.stringToTerraform(struct!.vpcPeeringConnectionId),
   }
 }

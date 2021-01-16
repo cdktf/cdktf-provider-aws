@@ -12,8 +12,6 @@ export interface DefaultSecurityGroupConfig extends cdktf.TerraformMetaArguments
   readonly revokeRulesOnDelete?: boolean;
   readonly tags?: { [key: string]: string };
   readonly vpcId?: string;
-  /** timeouts block */
-  readonly timeouts?: DefaultSecurityGroupTimeouts;
 }
 export interface DefaultSecurityGroupEgress {
   readonly cidrBlocks?: string[];
@@ -69,19 +67,6 @@ function defaultSecurityGroupIngressToTerraform(struct?: DefaultSecurityGroupIng
   }
 }
 
-export interface DefaultSecurityGroupTimeouts {
-  readonly create?: string;
-  readonly delete?: string;
-}
-
-function defaultSecurityGroupTimeoutsToTerraform(struct?: DefaultSecurityGroupTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-  }
-}
-
 
 // Resource
 
@@ -107,7 +92,6 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
     this._revokeRulesOnDelete = config.revokeRulesOnDelete;
     this._tags = config.tags;
     this._vpcId = config.vpcId;
-    this._timeouts = config.timeouts;
   }
 
   // ==========
@@ -124,12 +108,12 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
     return this.getStringAttribute('description');
   }
 
-  // egress - computed: false, optional: true, required: false
-  private _egress?: DefaultSecurityGroupEgress[];
-  public get egress() {
-    return this.interpolationForAttribute('egress') as any;
+  // egress - computed: true, optional: true, required: false
+  private _egress?: DefaultSecurityGroupEgress[]
+  public get egress(): DefaultSecurityGroupEgress[] {
+    return this.interpolationForAttribute('egress') as any; // Getting the computed value is not yet implemented
   }
-  public set egress(value: DefaultSecurityGroupEgress[] ) {
+  public set egress(value: DefaultSecurityGroupEgress[]) {
     this._egress = value;
   }
   public resetEgress() {
@@ -145,12 +129,12 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // ingress - computed: false, optional: true, required: false
-  private _ingress?: DefaultSecurityGroupIngress[];
-  public get ingress() {
-    return this.interpolationForAttribute('ingress') as any;
+  // ingress - computed: true, optional: true, required: false
+  private _ingress?: DefaultSecurityGroupIngress[]
+  public get ingress(): DefaultSecurityGroupIngress[] {
+    return this.interpolationForAttribute('ingress') as any; // Getting the computed value is not yet implemented
   }
-  public set ingress(value: DefaultSecurityGroupIngress[] ) {
+  public set ingress(value: DefaultSecurityGroupIngress[]) {
     this._ingress = value;
   }
   public resetIngress() {
@@ -219,22 +203,6 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
     return this._vpcId
   }
 
-  // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DefaultSecurityGroupTimeouts;
-  public get timeouts() {
-    return this.interpolationForAttribute('timeouts') as any;
-  }
-  public set timeouts(value: DefaultSecurityGroupTimeouts ) {
-    this._timeouts = value;
-  }
-  public resetTimeouts() {
-    this._timeouts = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeoutsInput() {
-    return this._timeouts
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -246,7 +214,6 @@ export class DefaultSecurityGroup extends cdktf.TerraformResource {
       revoke_rules_on_delete: cdktf.booleanToTerraform(this._revokeRulesOnDelete),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      timeouts: defaultSecurityGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

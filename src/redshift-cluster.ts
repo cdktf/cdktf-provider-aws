@@ -10,7 +10,6 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   readonly allowVersionUpgrade?: boolean;
   readonly automatedSnapshotRetentionPeriod?: number;
   readonly availabilityZone?: string;
-  readonly bucketName?: string;
   readonly clusterIdentifier: string;
   readonly clusterParameterGroupName?: string;
   readonly clusterPublicKey?: string;
@@ -21,7 +20,6 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   readonly clusterVersion?: string;
   readonly databaseName?: string;
   readonly elasticIp?: string;
-  readonly enableLogging?: boolean;
   readonly encrypted?: boolean;
   readonly endpoint?: string;
   readonly enhancedVpcRouting?: boolean;
@@ -36,7 +34,6 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   readonly port?: number;
   readonly preferredMaintenanceWindow?: string;
   readonly publiclyAccessible?: boolean;
-  readonly s3KeyPrefix?: string;
   readonly skipFinalSnapshot?: boolean;
   readonly snapshotClusterIdentifier?: string;
   readonly snapshotIdentifier?: string;
@@ -117,7 +114,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     this._allowVersionUpgrade = config.allowVersionUpgrade;
     this._automatedSnapshotRetentionPeriod = config.automatedSnapshotRetentionPeriod;
     this._availabilityZone = config.availabilityZone;
-    this._bucketName = config.bucketName;
     this._clusterIdentifier = config.clusterIdentifier;
     this._clusterParameterGroupName = config.clusterParameterGroupName;
     this._clusterPublicKey = config.clusterPublicKey;
@@ -128,7 +124,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     this._clusterVersion = config.clusterVersion;
     this._databaseName = config.databaseName;
     this._elasticIp = config.elasticIp;
-    this._enableLogging = config.enableLogging;
     this._encrypted = config.encrypted;
     this._endpoint = config.endpoint;
     this._enhancedVpcRouting = config.enhancedVpcRouting;
@@ -143,7 +138,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     this._port = config.port;
     this._preferredMaintenanceWindow = config.preferredMaintenanceWindow;
     this._publiclyAccessible = config.publiclyAccessible;
-    this._s3KeyPrefix = config.s3KeyPrefix;
     this._skipFinalSnapshot = config.skipFinalSnapshot;
     this._snapshotClusterIdentifier = config.snapshotClusterIdentifier;
     this._snapshotIdentifier = config.snapshotIdentifier;
@@ -209,22 +203,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
     return this._availabilityZone
-  }
-
-  // bucket_name - computed: true, optional: true, required: false
-  private _bucketName?: string;
-  public get bucketName() {
-    return this.getStringAttribute('bucket_name');
-  }
-  public set bucketName(value: string) {
-    this._bucketName = value;
-  }
-  public resetBucketName() {
-    this._bucketName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bucketNameInput() {
-    return this._bucketName
   }
 
   // cluster_identifier - computed: false, optional: false, required: true
@@ -387,22 +365,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get elasticIpInput() {
     return this._elasticIp
-  }
-
-  // enable_logging - computed: true, optional: true, required: false
-  private _enableLogging?: boolean;
-  public get enableLogging() {
-    return this.getBooleanAttribute('enable_logging');
-  }
-  public set enableLogging(value: boolean) {
-    this._enableLogging = value;
-  }
-  public resetEnableLogging() {
-    this._enableLogging = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableLoggingInput() {
-    return this._enableLogging
   }
 
   // encrypted - computed: false, optional: true, required: false
@@ -631,22 +593,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     return this._publiclyAccessible
   }
 
-  // s3_key_prefix - computed: true, optional: true, required: false
-  private _s3KeyPrefix?: string;
-  public get s3KeyPrefix() {
-    return this.getStringAttribute('s3_key_prefix');
-  }
-  public set s3KeyPrefix(value: string) {
-    this._s3KeyPrefix = value;
-  }
-  public resetS3KeyPrefix() {
-    this._s3KeyPrefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get s3KeyPrefixInput() {
-    return this._s3KeyPrefix
-  }
-
   // skip_final_snapshot - computed: false, optional: true, required: false
   private _skipFinalSnapshot?: boolean;
   public get skipFinalSnapshot() {
@@ -784,7 +730,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       allow_version_upgrade: cdktf.booleanToTerraform(this._allowVersionUpgrade),
       automated_snapshot_retention_period: cdktf.numberToTerraform(this._automatedSnapshotRetentionPeriod),
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
       cluster_parameter_group_name: cdktf.stringToTerraform(this._clusterParameterGroupName),
       cluster_public_key: cdktf.stringToTerraform(this._clusterPublicKey),
@@ -795,7 +740,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       cluster_version: cdktf.stringToTerraform(this._clusterVersion),
       database_name: cdktf.stringToTerraform(this._databaseName),
       elastic_ip: cdktf.stringToTerraform(this._elasticIp),
-      enable_logging: cdktf.booleanToTerraform(this._enableLogging),
       encrypted: cdktf.booleanToTerraform(this._encrypted),
       endpoint: cdktf.stringToTerraform(this._endpoint),
       enhanced_vpc_routing: cdktf.booleanToTerraform(this._enhancedVpcRouting),
@@ -810,7 +754,6 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       port: cdktf.numberToTerraform(this._port),
       preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
       publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
-      s3_key_prefix: cdktf.stringToTerraform(this._s3KeyPrefix),
       skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),
       snapshot_cluster_identifier: cdktf.stringToTerraform(this._snapshotClusterIdentifier),
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),

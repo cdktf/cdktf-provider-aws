@@ -9,9 +9,12 @@ import * as cdktf from 'cdktf';
 export interface Apigatewayv2AuthorizerConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly authorizerCredentialsArn?: string;
+  readonly authorizerPayloadFormatVersion?: string;
+  readonly authorizerResultTtlInSeconds?: number;
   readonly authorizerType: string;
   readonly authorizerUri?: string;
-  readonly identitySources: string[];
+  readonly enableSimpleResponses?: boolean;
+  readonly identitySources?: string[];
   readonly name: string;
   /** jwt_configuration block */
   readonly jwtConfiguration?: Apigatewayv2AuthorizerJwtConfiguration[];
@@ -51,8 +54,11 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
     });
     this._apiId = config.apiId;
     this._authorizerCredentialsArn = config.authorizerCredentialsArn;
+    this._authorizerPayloadFormatVersion = config.authorizerPayloadFormatVersion;
+    this._authorizerResultTtlInSeconds = config.authorizerResultTtlInSeconds;
     this._authorizerType = config.authorizerType;
     this._authorizerUri = config.authorizerUri;
+    this._enableSimpleResponses = config.enableSimpleResponses;
     this._identitySources = config.identitySources;
     this._name = config.name;
     this._jwtConfiguration = config.jwtConfiguration;
@@ -91,6 +97,38 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
     return this._authorizerCredentialsArn
   }
 
+  // authorizer_payload_format_version - computed: false, optional: true, required: false
+  private _authorizerPayloadFormatVersion?: string;
+  public get authorizerPayloadFormatVersion() {
+    return this.getStringAttribute('authorizer_payload_format_version');
+  }
+  public set authorizerPayloadFormatVersion(value: string ) {
+    this._authorizerPayloadFormatVersion = value;
+  }
+  public resetAuthorizerPayloadFormatVersion() {
+    this._authorizerPayloadFormatVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerPayloadFormatVersionInput() {
+    return this._authorizerPayloadFormatVersion
+  }
+
+  // authorizer_result_ttl_in_seconds - computed: true, optional: true, required: false
+  private _authorizerResultTtlInSeconds?: number;
+  public get authorizerResultTtlInSeconds() {
+    return this.getNumberAttribute('authorizer_result_ttl_in_seconds');
+  }
+  public set authorizerResultTtlInSeconds(value: number) {
+    this._authorizerResultTtlInSeconds = value;
+  }
+  public resetAuthorizerResultTtlInSeconds() {
+    this._authorizerResultTtlInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerResultTtlInSecondsInput() {
+    return this._authorizerResultTtlInSeconds
+  }
+
   // authorizer_type - computed: false, optional: false, required: true
   private _authorizerType: string;
   public get authorizerType() {
@@ -120,18 +158,37 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
     return this._authorizerUri
   }
 
+  // enable_simple_responses - computed: false, optional: true, required: false
+  private _enableSimpleResponses?: boolean;
+  public get enableSimpleResponses() {
+    return this.getBooleanAttribute('enable_simple_responses');
+  }
+  public set enableSimpleResponses(value: boolean ) {
+    this._enableSimpleResponses = value;
+  }
+  public resetEnableSimpleResponses() {
+    this._enableSimpleResponses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableSimpleResponsesInput() {
+    return this._enableSimpleResponses
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // identity_sources - computed: false, optional: false, required: true
-  private _identitySources: string[];
+  // identity_sources - computed: false, optional: true, required: false
+  private _identitySources?: string[];
   public get identitySources() {
     return this.getListAttribute('identity_sources');
   }
-  public set identitySources(value: string[]) {
+  public set identitySources(value: string[] ) {
     this._identitySources = value;
+  }
+  public resetIdentitySources() {
+    this._identitySources = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get identitySourcesInput() {
@@ -175,8 +232,11 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
     return {
       api_id: cdktf.stringToTerraform(this._apiId),
       authorizer_credentials_arn: cdktf.stringToTerraform(this._authorizerCredentialsArn),
+      authorizer_payload_format_version: cdktf.stringToTerraform(this._authorizerPayloadFormatVersion),
+      authorizer_result_ttl_in_seconds: cdktf.numberToTerraform(this._authorizerResultTtlInSeconds),
       authorizer_type: cdktf.stringToTerraform(this._authorizerType),
       authorizer_uri: cdktf.stringToTerraform(this._authorizerUri),
+      enable_simple_responses: cdktf.booleanToTerraform(this._enableSimpleResponses),
       identity_sources: cdktf.listMapper(cdktf.stringToTerraform)(this._identitySources),
       name: cdktf.stringToTerraform(this._name),
       jwt_configuration: cdktf.listMapper(apigatewayv2AuthorizerJwtConfigurationToTerraform)(this._jwtConfiguration),

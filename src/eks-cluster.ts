@@ -14,6 +14,8 @@ export interface EksClusterConfig extends cdktf.TerraformMetaArguments {
   readonly version?: string;
   /** encryption_config block */
   readonly encryptionConfig?: EksClusterEncryptionConfig[];
+  /** kubernetes_network_config block */
+  readonly kubernetesNetworkConfig?: EksClusterKubernetesNetworkConfig[];
   /** timeouts block */
   readonly timeouts?: EksClusterTimeouts;
   /** vpc_config block */
@@ -62,6 +64,17 @@ function eksClusterEncryptionConfigToTerraform(struct?: EksClusterEncryptionConf
   return {
     resources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resources),
     provider: cdktf.listMapper(eksClusterEncryptionConfigProviderToTerraform)(struct!.provider),
+  }
+}
+
+export interface EksClusterKubernetesNetworkConfig {
+  readonly serviceIpv4Cidr?: string;
+}
+
+function eksClusterKubernetesNetworkConfigToTerraform(struct?: EksClusterKubernetesNetworkConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    service_ipv4_cidr: cdktf.stringToTerraform(struct!.serviceIpv4Cidr),
   }
 }
 
@@ -125,6 +138,7 @@ export class EksCluster extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._version = config.version;
     this._encryptionConfig = config.encryptionConfig;
+    this._kubernetesNetworkConfig = config.kubernetesNetworkConfig;
     this._timeouts = config.timeouts;
     this._vpcConfig = config.vpcConfig;
   }
@@ -263,6 +277,22 @@ export class EksCluster extends cdktf.TerraformResource {
     return this._encryptionConfig
   }
 
+  // kubernetes_network_config - computed: false, optional: true, required: false
+  private _kubernetesNetworkConfig?: EksClusterKubernetesNetworkConfig[];
+  public get kubernetesNetworkConfig() {
+    return this.interpolationForAttribute('kubernetes_network_config') as any;
+  }
+  public set kubernetesNetworkConfig(value: EksClusterKubernetesNetworkConfig[] ) {
+    this._kubernetesNetworkConfig = value;
+  }
+  public resetKubernetesNetworkConfig() {
+    this._kubernetesNetworkConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubernetesNetworkConfigInput() {
+    return this._kubernetesNetworkConfig
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EksClusterTimeouts;
   public get timeouts() {
@@ -304,6 +334,7 @@ export class EksCluster extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       version: cdktf.stringToTerraform(this._version),
       encryption_config: cdktf.listMapper(eksClusterEncryptionConfigToTerraform)(this._encryptionConfig),
+      kubernetes_network_config: cdktf.listMapper(eksClusterKubernetesNetworkConfigToTerraform)(this._kubernetesNetworkConfig),
       timeouts: eksClusterTimeoutsToTerraform(this._timeouts),
       vpc_config: cdktf.listMapper(eksClusterVpcConfigToTerraform)(this._vpcConfig),
     };

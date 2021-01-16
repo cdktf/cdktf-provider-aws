@@ -16,6 +16,8 @@ export interface KinesisFirehoseDeliveryStreamConfig extends cdktf.TerraformMeta
   readonly elasticsearchConfiguration?: KinesisFirehoseDeliveryStreamElasticsearchConfiguration[];
   /** extended_s3_configuration block */
   readonly extendedS3Configuration?: KinesisFirehoseDeliveryStreamExtendedS3Configuration[];
+  /** http_endpoint_configuration block */
+  readonly httpEndpointConfiguration?: KinesisFirehoseDeliveryStreamHttpEndpointConfiguration[];
   /** kinesis_source_configuration block */
   readonly kinesisSourceConfiguration?: KinesisFirehoseDeliveryStreamKinesisSourceConfiguration[];
   /** redshift_configuration block */
@@ -83,10 +85,26 @@ function kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfig
   }
 }
 
+export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig {
+  readonly roleArn: string;
+  readonly securityGroupIds: string[];
+  readonly subnetIds: string[];
+}
+
+function kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+  }
+}
+
 export interface KinesisFirehoseDeliveryStreamElasticsearchConfiguration {
   readonly bufferingInterval?: number;
   readonly bufferingSize?: number;
-  readonly domainArn: string;
+  readonly clusterEndpoint?: string;
+  readonly domainArn?: string;
   readonly indexName: string;
   readonly indexRotationPeriod?: string;
   readonly retryDuration?: number;
@@ -97,6 +115,8 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfiguration {
   readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions[];
   /** processing_configuration block */
   readonly processingConfiguration?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration[];
+  /** vpc_config block */
+  readonly vpcConfig?: KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig[];
 }
 
 function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamElasticsearchConfiguration): any {
@@ -104,6 +124,7 @@ function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerraform(stru
   return {
     buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
     buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
+    cluster_endpoint: cdktf.stringToTerraform(struct!.clusterEndpoint),
     domain_arn: cdktf.stringToTerraform(struct!.domainArn),
     index_name: cdktf.stringToTerraform(struct!.indexName),
     index_rotation_period: cdktf.stringToTerraform(struct!.indexRotationPeriod),
@@ -113,6 +134,7 @@ function kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerraform(stru
     type_name: cdktf.stringToTerraform(struct!.typeName),
     cloudwatch_logging_options: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsToTerraform)(struct!.cloudwatchLoggingOptions),
     processing_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationToTerraform)(struct!.processingConfiguration),
+    vpc_config: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigToTerraform)(struct!.vpcConfig),
   }
 }
 
@@ -423,6 +445,123 @@ function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToTerraform(struct?
   }
 }
 
+export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions {
+  readonly enabled?: boolean;
+  readonly logGroupName?: string;
+  readonly logStreamName?: string;
+}
+
+function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    log_group_name: cdktf.stringToTerraform(struct!.logGroupName),
+    log_stream_name: cdktf.stringToTerraform(struct!.logStreamName),
+  }
+}
+
+export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters {
+  readonly parameterName: string;
+  readonly parameterValue: string;
+}
+
+function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    parameter_name: cdktf.stringToTerraform(struct!.parameterName),
+    parameter_value: cdktf.stringToTerraform(struct!.parameterValue),
+  }
+}
+
+export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors {
+  readonly type: string;
+  /** parameters block */
+  readonly parameters?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParameters[];
+}
+
+function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    parameters: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsParametersToTerraform)(struct!.parameters),
+  }
+}
+
+export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration {
+  readonly enabled?: boolean;
+  /** processors block */
+  readonly processors?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessors[];
+}
+
+function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    processors: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsToTerraform)(struct!.processors),
+  }
+}
+
+export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes {
+  readonly name: string;
+  readonly value: string;
+}
+
+function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
+  readonly contentEncoding?: string;
+  /** common_attributes block */
+  readonly commonAttributes?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributes[];
+}
+
+function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    content_encoding: cdktf.stringToTerraform(struct!.contentEncoding),
+    common_attributes: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttributesToTerraform)(struct!.commonAttributes),
+  }
+}
+
+export interface KinesisFirehoseDeliveryStreamHttpEndpointConfiguration {
+  readonly accessKey?: string;
+  readonly bufferingInterval?: number;
+  readonly bufferingSize?: number;
+  readonly name?: string;
+  readonly retryDuration?: number;
+  readonly roleArn?: string;
+  readonly s3BackupMode?: string;
+  readonly url: string;
+  /** cloudwatch_logging_options block */
+  readonly cloudwatchLoggingOptions?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions[];
+  /** processing_configuration block */
+  readonly processingConfiguration?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration[];
+  /** request_configuration block */
+  readonly requestConfiguration?: KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration[];
+}
+
+function kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamHttpEndpointConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    access_key: cdktf.stringToTerraform(struct!.accessKey),
+    buffering_interval: cdktf.numberToTerraform(struct!.bufferingInterval),
+    buffering_size: cdktf.numberToTerraform(struct!.bufferingSize),
+    name: cdktf.stringToTerraform(struct!.name),
+    retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
+    url: cdktf.stringToTerraform(struct!.url),
+    cloudwatch_logging_options: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptionsToTerraform)(struct!.cloudwatchLoggingOptions),
+    processing_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationToTerraform)(struct!.processingConfiguration),
+    request_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationToTerraform)(struct!.requestConfiguration),
+  }
+}
+
 export interface KinesisFirehoseDeliveryStreamKinesisSourceConfiguration {
   readonly kinesisStreamArn: string;
   readonly roleArn: string;
@@ -612,12 +751,16 @@ function kinesisFirehoseDeliveryStreamS3ConfigurationToTerraform(struct?: Kinesi
 
 export interface KinesisFirehoseDeliveryStreamServerSideEncryption {
   readonly enabled?: boolean;
+  readonly keyArn?: string;
+  readonly keyType?: string;
 }
 
 function kinesisFirehoseDeliveryStreamServerSideEncryptionToTerraform(struct?: KinesisFirehoseDeliveryStreamServerSideEncryption): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
+    key_arn: cdktf.stringToTerraform(struct!.keyArn),
+    key_type: cdktf.stringToTerraform(struct!.keyType),
   }
 }
 
@@ -731,6 +874,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
     this._versionId = config.versionId;
     this._elasticsearchConfiguration = config.elasticsearchConfiguration;
     this._extendedS3Configuration = config.extendedS3Configuration;
+    this._httpEndpointConfiguration = config.httpEndpointConfiguration;
     this._kinesisSourceConfiguration = config.kinesisSourceConfiguration;
     this._redshiftConfiguration = config.redshiftConfiguration;
     this._s3Configuration = config.s3Configuration;
@@ -858,6 +1002,22 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
     return this._extendedS3Configuration
   }
 
+  // http_endpoint_configuration - computed: false, optional: true, required: false
+  private _httpEndpointConfiguration?: KinesisFirehoseDeliveryStreamHttpEndpointConfiguration[];
+  public get httpEndpointConfiguration() {
+    return this.interpolationForAttribute('http_endpoint_configuration') as any;
+  }
+  public set httpEndpointConfiguration(value: KinesisFirehoseDeliveryStreamHttpEndpointConfiguration[] ) {
+    this._httpEndpointConfiguration = value;
+  }
+  public resetHttpEndpointConfiguration() {
+    this._httpEndpointConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpEndpointConfigurationInput() {
+    return this._httpEndpointConfiguration
+  }
+
   // kinesis_source_configuration - computed: false, optional: true, required: false
   private _kinesisSourceConfiguration?: KinesisFirehoseDeliveryStreamKinesisSourceConfiguration[];
   public get kinesisSourceConfiguration() {
@@ -951,6 +1111,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
       version_id: cdktf.stringToTerraform(this._versionId),
       elasticsearch_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerraform)(this._elasticsearchConfiguration),
       extended_s3_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToTerraform)(this._extendedS3Configuration),
+      http_endpoint_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamHttpEndpointConfigurationToTerraform)(this._httpEndpointConfiguration),
       kinesis_source_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamKinesisSourceConfigurationToTerraform)(this._kinesisSourceConfiguration),
       redshift_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamRedshiftConfigurationToTerraform)(this._redshiftConfiguration),
       s3_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamS3ConfigurationToTerraform)(this._s3Configuration),

@@ -11,6 +11,7 @@ export interface BatchComputeEnvironmentConfig extends cdktf.TerraformMetaArgume
   readonly computeEnvironmentNamePrefix?: string;
   readonly serviceRole: string;
   readonly state?: string;
+  readonly tags?: { [key: string]: string };
   readonly type: string;
   /** compute_resources block */
   readonly computeResources?: BatchComputeEnvironmentComputeResources[];
@@ -94,6 +95,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     this._computeEnvironmentNamePrefix = config.computeEnvironmentNamePrefix;
     this._serviceRole = config.serviceRole;
     this._state = config.state;
+    this._tags = config.tags;
     this._type = config.type;
     this._computeResources = config.computeResources;
   }
@@ -137,11 +139,6 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get computeEnvironmentNamePrefixInput() {
     return this._computeEnvironmentNamePrefix
-  }
-
-  // ecc_cluster_arn - computed: true, optional: false, required: false
-  public get eccClusterArn() {
-    return this.getStringAttribute('ecc_cluster_arn');
   }
 
   // ecs_cluster_arn - computed: true, optional: false, required: false
@@ -193,6 +190,22 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     return this.getStringAttribute('status_reason');
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
@@ -232,6 +245,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       compute_environment_name_prefix: cdktf.stringToTerraform(this._computeEnvironmentNamePrefix),
       service_role: cdktf.stringToTerraform(this._serviceRole),
       state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),
       compute_resources: cdktf.listMapper(batchComputeEnvironmentComputeResourcesToTerraform)(this._computeResources),
     };

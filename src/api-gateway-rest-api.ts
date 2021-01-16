@@ -11,8 +11,10 @@ export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   readonly binaryMediaTypes?: string[];
   readonly body?: string;
   readonly description?: string;
+  readonly disableExecuteApiEndpoint?: boolean;
   readonly minimumCompressionSize?: number;
   readonly name: string;
+  readonly parameters?: { [key: string]: string };
   readonly policy?: string;
   readonly tags?: { [key: string]: string };
   /** endpoint_configuration block */
@@ -55,8 +57,10 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     this._binaryMediaTypes = config.binaryMediaTypes;
     this._body = config.body;
     this._description = config.description;
+    this._disableExecuteApiEndpoint = config.disableExecuteApiEndpoint;
     this._minimumCompressionSize = config.minimumCompressionSize;
     this._name = config.name;
+    this._parameters = config.parameters;
     this._policy = config.policy;
     this._tags = config.tags;
     this._endpointConfiguration = config.endpointConfiguration;
@@ -140,6 +144,22 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     return this._description
   }
 
+  // disable_execute_api_endpoint - computed: false, optional: true, required: false
+  private _disableExecuteApiEndpoint?: boolean;
+  public get disableExecuteApiEndpoint() {
+    return this.getBooleanAttribute('disable_execute_api_endpoint');
+  }
+  public set disableExecuteApiEndpoint(value: boolean ) {
+    this._disableExecuteApiEndpoint = value;
+  }
+  public resetDisableExecuteApiEndpoint() {
+    this._disableExecuteApiEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableExecuteApiEndpointInput() {
+    return this._disableExecuteApiEndpoint
+  }
+
   // execution_arn - computed: true, optional: false, required: false
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
@@ -179,12 +199,28 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     return this._name
   }
 
-  // policy - computed: false, optional: true, required: false
+  // parameters - computed: false, optional: true, required: false
+  private _parameters?: { [key: string]: string };
+  public get parameters() {
+    return this.interpolationForAttribute('parameters') as any;
+  }
+  public set parameters(value: { [key: string]: string } ) {
+    this._parameters = value;
+  }
+  public resetParameters() {
+    this._parameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters
+  }
+
+  // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
     return this.getStringAttribute('policy');
   }
-  public set policy(value: string ) {
+  public set policy(value: string) {
     this._policy = value;
   }
   public resetPolicy() {
@@ -242,8 +278,10 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
       binary_media_types: cdktf.listMapper(cdktf.stringToTerraform)(this._binaryMediaTypes),
       body: cdktf.stringToTerraform(this._body),
       description: cdktf.stringToTerraform(this._description),
+      disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),
       minimum_compression_size: cdktf.numberToTerraform(this._minimumCompressionSize),
       name: cdktf.stringToTerraform(this._name),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
       policy: cdktf.stringToTerraform(this._policy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       endpoint_configuration: cdktf.listMapper(apiGatewayRestApiEndpointConfigurationToTerraform)(this._endpointConfiguration),

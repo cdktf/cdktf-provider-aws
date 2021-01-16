@@ -8,13 +8,51 @@ import * as cdktf from 'cdktf';
 
 export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly customerGatewayId: string;
+  readonly enableAcceleration?: boolean;
+  readonly localIpv4NetworkCidr?: string;
+  readonly localIpv6NetworkCidr?: string;
+  readonly remoteIpv4NetworkCidr?: string;
+  readonly remoteIpv6NetworkCidr?: string;
   readonly staticRoutesOnly?: boolean;
   readonly tags?: { [key: string]: string };
   readonly transitGatewayId?: string;
+  readonly tunnel1DpdTimeoutAction?: string;
+  readonly tunnel1DpdTimeoutSeconds?: number;
+  readonly tunnel1IkeVersions?: string[];
   readonly tunnel1InsideCidr?: string;
+  readonly tunnel1InsideIpv6Cidr?: string;
+  readonly tunnel1Phase1DhGroupNumbers?: number[];
+  readonly tunnel1Phase1EncryptionAlgorithms?: string[];
+  readonly tunnel1Phase1IntegrityAlgorithms?: string[];
+  readonly tunnel1Phase1LifetimeSeconds?: number;
+  readonly tunnel1Phase2DhGroupNumbers?: number[];
+  readonly tunnel1Phase2EncryptionAlgorithms?: string[];
+  readonly tunnel1Phase2IntegrityAlgorithms?: string[];
+  readonly tunnel1Phase2LifetimeSeconds?: number;
   readonly tunnel1PresharedKey?: string;
+  readonly tunnel1RekeyFuzzPercentage?: number;
+  readonly tunnel1RekeyMarginTimeSeconds?: number;
+  readonly tunnel1ReplayWindowSize?: number;
+  readonly tunnel1StartupAction?: string;
+  readonly tunnel2DpdTimeoutAction?: string;
+  readonly tunnel2DpdTimeoutSeconds?: number;
+  readonly tunnel2IkeVersions?: string[];
   readonly tunnel2InsideCidr?: string;
+  readonly tunnel2InsideIpv6Cidr?: string;
+  readonly tunnel2Phase1DhGroupNumbers?: number[];
+  readonly tunnel2Phase1EncryptionAlgorithms?: string[];
+  readonly tunnel2Phase1IntegrityAlgorithms?: string[];
+  readonly tunnel2Phase1LifetimeSeconds?: number;
+  readonly tunnel2Phase2DhGroupNumbers?: number[];
+  readonly tunnel2Phase2EncryptionAlgorithms?: string[];
+  readonly tunnel2Phase2IntegrityAlgorithms?: string[];
+  readonly tunnel2Phase2LifetimeSeconds?: number;
   readonly tunnel2PresharedKey?: string;
+  readonly tunnel2RekeyFuzzPercentage?: number;
+  readonly tunnel2RekeyMarginTimeSeconds?: number;
+  readonly tunnel2ReplayWindowSize?: number;
+  readonly tunnel2StartupAction?: string;
+  readonly tunnelInsideIpVersion?: string;
   readonly type: string;
   readonly vpnGatewayId?: string;
 }
@@ -83,13 +121,51 @@ export class VpnConnection extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._customerGatewayId = config.customerGatewayId;
+    this._enableAcceleration = config.enableAcceleration;
+    this._localIpv4NetworkCidr = config.localIpv4NetworkCidr;
+    this._localIpv6NetworkCidr = config.localIpv6NetworkCidr;
+    this._remoteIpv4NetworkCidr = config.remoteIpv4NetworkCidr;
+    this._remoteIpv6NetworkCidr = config.remoteIpv6NetworkCidr;
     this._staticRoutesOnly = config.staticRoutesOnly;
     this._tags = config.tags;
     this._transitGatewayId = config.transitGatewayId;
+    this._tunnel1DpdTimeoutAction = config.tunnel1DpdTimeoutAction;
+    this._tunnel1DpdTimeoutSeconds = config.tunnel1DpdTimeoutSeconds;
+    this._tunnel1IkeVersions = config.tunnel1IkeVersions;
     this._tunnel1InsideCidr = config.tunnel1InsideCidr;
+    this._tunnel1InsideIpv6Cidr = config.tunnel1InsideIpv6Cidr;
+    this._tunnel1Phase1DhGroupNumbers = config.tunnel1Phase1DhGroupNumbers;
+    this._tunnel1Phase1EncryptionAlgorithms = config.tunnel1Phase1EncryptionAlgorithms;
+    this._tunnel1Phase1IntegrityAlgorithms = config.tunnel1Phase1IntegrityAlgorithms;
+    this._tunnel1Phase1LifetimeSeconds = config.tunnel1Phase1LifetimeSeconds;
+    this._tunnel1Phase2DhGroupNumbers = config.tunnel1Phase2DhGroupNumbers;
+    this._tunnel1Phase2EncryptionAlgorithms = config.tunnel1Phase2EncryptionAlgorithms;
+    this._tunnel1Phase2IntegrityAlgorithms = config.tunnel1Phase2IntegrityAlgorithms;
+    this._tunnel1Phase2LifetimeSeconds = config.tunnel1Phase2LifetimeSeconds;
     this._tunnel1PresharedKey = config.tunnel1PresharedKey;
+    this._tunnel1RekeyFuzzPercentage = config.tunnel1RekeyFuzzPercentage;
+    this._tunnel1RekeyMarginTimeSeconds = config.tunnel1RekeyMarginTimeSeconds;
+    this._tunnel1ReplayWindowSize = config.tunnel1ReplayWindowSize;
+    this._tunnel1StartupAction = config.tunnel1StartupAction;
+    this._tunnel2DpdTimeoutAction = config.tunnel2DpdTimeoutAction;
+    this._tunnel2DpdTimeoutSeconds = config.tunnel2DpdTimeoutSeconds;
+    this._tunnel2IkeVersions = config.tunnel2IkeVersions;
     this._tunnel2InsideCidr = config.tunnel2InsideCidr;
+    this._tunnel2InsideIpv6Cidr = config.tunnel2InsideIpv6Cidr;
+    this._tunnel2Phase1DhGroupNumbers = config.tunnel2Phase1DhGroupNumbers;
+    this._tunnel2Phase1EncryptionAlgorithms = config.tunnel2Phase1EncryptionAlgorithms;
+    this._tunnel2Phase1IntegrityAlgorithms = config.tunnel2Phase1IntegrityAlgorithms;
+    this._tunnel2Phase1LifetimeSeconds = config.tunnel2Phase1LifetimeSeconds;
+    this._tunnel2Phase2DhGroupNumbers = config.tunnel2Phase2DhGroupNumbers;
+    this._tunnel2Phase2EncryptionAlgorithms = config.tunnel2Phase2EncryptionAlgorithms;
+    this._tunnel2Phase2IntegrityAlgorithms = config.tunnel2Phase2IntegrityAlgorithms;
+    this._tunnel2Phase2LifetimeSeconds = config.tunnel2Phase2LifetimeSeconds;
     this._tunnel2PresharedKey = config.tunnel2PresharedKey;
+    this._tunnel2RekeyFuzzPercentage = config.tunnel2RekeyFuzzPercentage;
+    this._tunnel2RekeyMarginTimeSeconds = config.tunnel2RekeyMarginTimeSeconds;
+    this._tunnel2ReplayWindowSize = config.tunnel2ReplayWindowSize;
+    this._tunnel2StartupAction = config.tunnel2StartupAction;
+    this._tunnelInsideIpVersion = config.tunnelInsideIpVersion;
     this._type = config.type;
     this._vpnGatewayId = config.vpnGatewayId;
   }
@@ -121,9 +197,89 @@ export class VpnConnection extends cdktf.TerraformResource {
     return this._customerGatewayId
   }
 
+  // enable_acceleration - computed: true, optional: true, required: false
+  private _enableAcceleration?: boolean;
+  public get enableAcceleration() {
+    return this.getBooleanAttribute('enable_acceleration');
+  }
+  public set enableAcceleration(value: boolean) {
+    this._enableAcceleration = value;
+  }
+  public resetEnableAcceleration() {
+    this._enableAcceleration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableAccelerationInput() {
+    return this._enableAcceleration
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // local_ipv4_network_cidr - computed: true, optional: true, required: false
+  private _localIpv4NetworkCidr?: string;
+  public get localIpv4NetworkCidr() {
+    return this.getStringAttribute('local_ipv4_network_cidr');
+  }
+  public set localIpv4NetworkCidr(value: string) {
+    this._localIpv4NetworkCidr = value;
+  }
+  public resetLocalIpv4NetworkCidr() {
+    this._localIpv4NetworkCidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localIpv4NetworkCidrInput() {
+    return this._localIpv4NetworkCidr
+  }
+
+  // local_ipv6_network_cidr - computed: true, optional: true, required: false
+  private _localIpv6NetworkCidr?: string;
+  public get localIpv6NetworkCidr() {
+    return this.getStringAttribute('local_ipv6_network_cidr');
+  }
+  public set localIpv6NetworkCidr(value: string) {
+    this._localIpv6NetworkCidr = value;
+  }
+  public resetLocalIpv6NetworkCidr() {
+    this._localIpv6NetworkCidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localIpv6NetworkCidrInput() {
+    return this._localIpv6NetworkCidr
+  }
+
+  // remote_ipv4_network_cidr - computed: true, optional: true, required: false
+  private _remoteIpv4NetworkCidr?: string;
+  public get remoteIpv4NetworkCidr() {
+    return this.getStringAttribute('remote_ipv4_network_cidr');
+  }
+  public set remoteIpv4NetworkCidr(value: string) {
+    this._remoteIpv4NetworkCidr = value;
+  }
+  public resetRemoteIpv4NetworkCidr() {
+    this._remoteIpv4NetworkCidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteIpv4NetworkCidrInput() {
+    return this._remoteIpv4NetworkCidr
+  }
+
+  // remote_ipv6_network_cidr - computed: true, optional: true, required: false
+  private _remoteIpv6NetworkCidr?: string;
+  public get remoteIpv6NetworkCidr() {
+    return this.getStringAttribute('remote_ipv6_network_cidr');
+  }
+  public set remoteIpv6NetworkCidr(value: string) {
+    this._remoteIpv6NetworkCidr = value;
+  }
+  public resetRemoteIpv6NetworkCidr() {
+    this._remoteIpv6NetworkCidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteIpv6NetworkCidrInput() {
+    return this._remoteIpv6NetworkCidr
   }
 
   // routes - computed: true, optional: false, required: false
@@ -204,6 +360,54 @@ export class VpnConnection extends cdktf.TerraformResource {
     return this.getStringAttribute('tunnel1_cgw_inside_address');
   }
 
+  // tunnel1_dpd_timeout_action - computed: false, optional: true, required: false
+  private _tunnel1DpdTimeoutAction?: string;
+  public get tunnel1DpdTimeoutAction() {
+    return this.getStringAttribute('tunnel1_dpd_timeout_action');
+  }
+  public set tunnel1DpdTimeoutAction(value: string ) {
+    this._tunnel1DpdTimeoutAction = value;
+  }
+  public resetTunnel1DpdTimeoutAction() {
+    this._tunnel1DpdTimeoutAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1DpdTimeoutActionInput() {
+    return this._tunnel1DpdTimeoutAction
+  }
+
+  // tunnel1_dpd_timeout_seconds - computed: false, optional: true, required: false
+  private _tunnel1DpdTimeoutSeconds?: number;
+  public get tunnel1DpdTimeoutSeconds() {
+    return this.getNumberAttribute('tunnel1_dpd_timeout_seconds');
+  }
+  public set tunnel1DpdTimeoutSeconds(value: number ) {
+    this._tunnel1DpdTimeoutSeconds = value;
+  }
+  public resetTunnel1DpdTimeoutSeconds() {
+    this._tunnel1DpdTimeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1DpdTimeoutSecondsInput() {
+    return this._tunnel1DpdTimeoutSeconds
+  }
+
+  // tunnel1_ike_versions - computed: false, optional: true, required: false
+  private _tunnel1IkeVersions?: string[];
+  public get tunnel1IkeVersions() {
+    return this.getListAttribute('tunnel1_ike_versions');
+  }
+  public set tunnel1IkeVersions(value: string[] ) {
+    this._tunnel1IkeVersions = value;
+  }
+  public resetTunnel1IkeVersions() {
+    this._tunnel1IkeVersions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1IkeVersionsInput() {
+    return this._tunnel1IkeVersions
+  }
+
   // tunnel1_inside_cidr - computed: true, optional: true, required: false
   private _tunnel1InsideCidr?: string;
   public get tunnel1InsideCidr() {
@@ -220,6 +424,150 @@ export class VpnConnection extends cdktf.TerraformResource {
     return this._tunnel1InsideCidr
   }
 
+  // tunnel1_inside_ipv6_cidr - computed: true, optional: true, required: false
+  private _tunnel1InsideIpv6Cidr?: string;
+  public get tunnel1InsideIpv6Cidr() {
+    return this.getStringAttribute('tunnel1_inside_ipv6_cidr');
+  }
+  public set tunnel1InsideIpv6Cidr(value: string) {
+    this._tunnel1InsideIpv6Cidr = value;
+  }
+  public resetTunnel1InsideIpv6Cidr() {
+    this._tunnel1InsideIpv6Cidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1InsideIpv6CidrInput() {
+    return this._tunnel1InsideIpv6Cidr
+  }
+
+  // tunnel1_phase1_dh_group_numbers - computed: false, optional: true, required: false
+  private _tunnel1Phase1DhGroupNumbers?: number[];
+  public get tunnel1Phase1DhGroupNumbers() {
+    return this.interpolationForAttribute('tunnel1_phase1_dh_group_numbers') as any;
+  }
+  public set tunnel1Phase1DhGroupNumbers(value: number[] ) {
+    this._tunnel1Phase1DhGroupNumbers = value;
+  }
+  public resetTunnel1Phase1DhGroupNumbers() {
+    this._tunnel1Phase1DhGroupNumbers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1Phase1DhGroupNumbersInput() {
+    return this._tunnel1Phase1DhGroupNumbers
+  }
+
+  // tunnel1_phase1_encryption_algorithms - computed: false, optional: true, required: false
+  private _tunnel1Phase1EncryptionAlgorithms?: string[];
+  public get tunnel1Phase1EncryptionAlgorithms() {
+    return this.getListAttribute('tunnel1_phase1_encryption_algorithms');
+  }
+  public set tunnel1Phase1EncryptionAlgorithms(value: string[] ) {
+    this._tunnel1Phase1EncryptionAlgorithms = value;
+  }
+  public resetTunnel1Phase1EncryptionAlgorithms() {
+    this._tunnel1Phase1EncryptionAlgorithms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1Phase1EncryptionAlgorithmsInput() {
+    return this._tunnel1Phase1EncryptionAlgorithms
+  }
+
+  // tunnel1_phase1_integrity_algorithms - computed: false, optional: true, required: false
+  private _tunnel1Phase1IntegrityAlgorithms?: string[];
+  public get tunnel1Phase1IntegrityAlgorithms() {
+    return this.getListAttribute('tunnel1_phase1_integrity_algorithms');
+  }
+  public set tunnel1Phase1IntegrityAlgorithms(value: string[] ) {
+    this._tunnel1Phase1IntegrityAlgorithms = value;
+  }
+  public resetTunnel1Phase1IntegrityAlgorithms() {
+    this._tunnel1Phase1IntegrityAlgorithms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1Phase1IntegrityAlgorithmsInput() {
+    return this._tunnel1Phase1IntegrityAlgorithms
+  }
+
+  // tunnel1_phase1_lifetime_seconds - computed: false, optional: true, required: false
+  private _tunnel1Phase1LifetimeSeconds?: number;
+  public get tunnel1Phase1LifetimeSeconds() {
+    return this.getNumberAttribute('tunnel1_phase1_lifetime_seconds');
+  }
+  public set tunnel1Phase1LifetimeSeconds(value: number ) {
+    this._tunnel1Phase1LifetimeSeconds = value;
+  }
+  public resetTunnel1Phase1LifetimeSeconds() {
+    this._tunnel1Phase1LifetimeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1Phase1LifetimeSecondsInput() {
+    return this._tunnel1Phase1LifetimeSeconds
+  }
+
+  // tunnel1_phase2_dh_group_numbers - computed: false, optional: true, required: false
+  private _tunnel1Phase2DhGroupNumbers?: number[];
+  public get tunnel1Phase2DhGroupNumbers() {
+    return this.interpolationForAttribute('tunnel1_phase2_dh_group_numbers') as any;
+  }
+  public set tunnel1Phase2DhGroupNumbers(value: number[] ) {
+    this._tunnel1Phase2DhGroupNumbers = value;
+  }
+  public resetTunnel1Phase2DhGroupNumbers() {
+    this._tunnel1Phase2DhGroupNumbers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1Phase2DhGroupNumbersInput() {
+    return this._tunnel1Phase2DhGroupNumbers
+  }
+
+  // tunnel1_phase2_encryption_algorithms - computed: false, optional: true, required: false
+  private _tunnel1Phase2EncryptionAlgorithms?: string[];
+  public get tunnel1Phase2EncryptionAlgorithms() {
+    return this.getListAttribute('tunnel1_phase2_encryption_algorithms');
+  }
+  public set tunnel1Phase2EncryptionAlgorithms(value: string[] ) {
+    this._tunnel1Phase2EncryptionAlgorithms = value;
+  }
+  public resetTunnel1Phase2EncryptionAlgorithms() {
+    this._tunnel1Phase2EncryptionAlgorithms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1Phase2EncryptionAlgorithmsInput() {
+    return this._tunnel1Phase2EncryptionAlgorithms
+  }
+
+  // tunnel1_phase2_integrity_algorithms - computed: false, optional: true, required: false
+  private _tunnel1Phase2IntegrityAlgorithms?: string[];
+  public get tunnel1Phase2IntegrityAlgorithms() {
+    return this.getListAttribute('tunnel1_phase2_integrity_algorithms');
+  }
+  public set tunnel1Phase2IntegrityAlgorithms(value: string[] ) {
+    this._tunnel1Phase2IntegrityAlgorithms = value;
+  }
+  public resetTunnel1Phase2IntegrityAlgorithms() {
+    this._tunnel1Phase2IntegrityAlgorithms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1Phase2IntegrityAlgorithmsInput() {
+    return this._tunnel1Phase2IntegrityAlgorithms
+  }
+
+  // tunnel1_phase2_lifetime_seconds - computed: false, optional: true, required: false
+  private _tunnel1Phase2LifetimeSeconds?: number;
+  public get tunnel1Phase2LifetimeSeconds() {
+    return this.getNumberAttribute('tunnel1_phase2_lifetime_seconds');
+  }
+  public set tunnel1Phase2LifetimeSeconds(value: number ) {
+    this._tunnel1Phase2LifetimeSeconds = value;
+  }
+  public resetTunnel1Phase2LifetimeSeconds() {
+    this._tunnel1Phase2LifetimeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1Phase2LifetimeSecondsInput() {
+    return this._tunnel1Phase2LifetimeSeconds
+  }
+
   // tunnel1_preshared_key - computed: true, optional: true, required: false
   private _tunnel1PresharedKey?: string;
   public get tunnel1PresharedKey() {
@@ -234,6 +582,70 @@ export class VpnConnection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tunnel1PresharedKeyInput() {
     return this._tunnel1PresharedKey
+  }
+
+  // tunnel1_rekey_fuzz_percentage - computed: false, optional: true, required: false
+  private _tunnel1RekeyFuzzPercentage?: number;
+  public get tunnel1RekeyFuzzPercentage() {
+    return this.getNumberAttribute('tunnel1_rekey_fuzz_percentage');
+  }
+  public set tunnel1RekeyFuzzPercentage(value: number ) {
+    this._tunnel1RekeyFuzzPercentage = value;
+  }
+  public resetTunnel1RekeyFuzzPercentage() {
+    this._tunnel1RekeyFuzzPercentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1RekeyFuzzPercentageInput() {
+    return this._tunnel1RekeyFuzzPercentage
+  }
+
+  // tunnel1_rekey_margin_time_seconds - computed: false, optional: true, required: false
+  private _tunnel1RekeyMarginTimeSeconds?: number;
+  public get tunnel1RekeyMarginTimeSeconds() {
+    return this.getNumberAttribute('tunnel1_rekey_margin_time_seconds');
+  }
+  public set tunnel1RekeyMarginTimeSeconds(value: number ) {
+    this._tunnel1RekeyMarginTimeSeconds = value;
+  }
+  public resetTunnel1RekeyMarginTimeSeconds() {
+    this._tunnel1RekeyMarginTimeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1RekeyMarginTimeSecondsInput() {
+    return this._tunnel1RekeyMarginTimeSeconds
+  }
+
+  // tunnel1_replay_window_size - computed: false, optional: true, required: false
+  private _tunnel1ReplayWindowSize?: number;
+  public get tunnel1ReplayWindowSize() {
+    return this.getNumberAttribute('tunnel1_replay_window_size');
+  }
+  public set tunnel1ReplayWindowSize(value: number ) {
+    this._tunnel1ReplayWindowSize = value;
+  }
+  public resetTunnel1ReplayWindowSize() {
+    this._tunnel1ReplayWindowSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1ReplayWindowSizeInput() {
+    return this._tunnel1ReplayWindowSize
+  }
+
+  // tunnel1_startup_action - computed: false, optional: true, required: false
+  private _tunnel1StartupAction?: string;
+  public get tunnel1StartupAction() {
+    return this.getStringAttribute('tunnel1_startup_action');
+  }
+  public set tunnel1StartupAction(value: string ) {
+    this._tunnel1StartupAction = value;
+  }
+  public resetTunnel1StartupAction() {
+    this._tunnel1StartupAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel1StartupActionInput() {
+    return this._tunnel1StartupAction
   }
 
   // tunnel1_vgw_inside_address - computed: true, optional: false, required: false
@@ -261,6 +673,54 @@ export class VpnConnection extends cdktf.TerraformResource {
     return this.getStringAttribute('tunnel2_cgw_inside_address');
   }
 
+  // tunnel2_dpd_timeout_action - computed: false, optional: true, required: false
+  private _tunnel2DpdTimeoutAction?: string;
+  public get tunnel2DpdTimeoutAction() {
+    return this.getStringAttribute('tunnel2_dpd_timeout_action');
+  }
+  public set tunnel2DpdTimeoutAction(value: string ) {
+    this._tunnel2DpdTimeoutAction = value;
+  }
+  public resetTunnel2DpdTimeoutAction() {
+    this._tunnel2DpdTimeoutAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2DpdTimeoutActionInput() {
+    return this._tunnel2DpdTimeoutAction
+  }
+
+  // tunnel2_dpd_timeout_seconds - computed: false, optional: true, required: false
+  private _tunnel2DpdTimeoutSeconds?: number;
+  public get tunnel2DpdTimeoutSeconds() {
+    return this.getNumberAttribute('tunnel2_dpd_timeout_seconds');
+  }
+  public set tunnel2DpdTimeoutSeconds(value: number ) {
+    this._tunnel2DpdTimeoutSeconds = value;
+  }
+  public resetTunnel2DpdTimeoutSeconds() {
+    this._tunnel2DpdTimeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2DpdTimeoutSecondsInput() {
+    return this._tunnel2DpdTimeoutSeconds
+  }
+
+  // tunnel2_ike_versions - computed: false, optional: true, required: false
+  private _tunnel2IkeVersions?: string[];
+  public get tunnel2IkeVersions() {
+    return this.getListAttribute('tunnel2_ike_versions');
+  }
+  public set tunnel2IkeVersions(value: string[] ) {
+    this._tunnel2IkeVersions = value;
+  }
+  public resetTunnel2IkeVersions() {
+    this._tunnel2IkeVersions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2IkeVersionsInput() {
+    return this._tunnel2IkeVersions
+  }
+
   // tunnel2_inside_cidr - computed: true, optional: true, required: false
   private _tunnel2InsideCidr?: string;
   public get tunnel2InsideCidr() {
@@ -275,6 +735,150 @@ export class VpnConnection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tunnel2InsideCidrInput() {
     return this._tunnel2InsideCidr
+  }
+
+  // tunnel2_inside_ipv6_cidr - computed: true, optional: true, required: false
+  private _tunnel2InsideIpv6Cidr?: string;
+  public get tunnel2InsideIpv6Cidr() {
+    return this.getStringAttribute('tunnel2_inside_ipv6_cidr');
+  }
+  public set tunnel2InsideIpv6Cidr(value: string) {
+    this._tunnel2InsideIpv6Cidr = value;
+  }
+  public resetTunnel2InsideIpv6Cidr() {
+    this._tunnel2InsideIpv6Cidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2InsideIpv6CidrInput() {
+    return this._tunnel2InsideIpv6Cidr
+  }
+
+  // tunnel2_phase1_dh_group_numbers - computed: false, optional: true, required: false
+  private _tunnel2Phase1DhGroupNumbers?: number[];
+  public get tunnel2Phase1DhGroupNumbers() {
+    return this.interpolationForAttribute('tunnel2_phase1_dh_group_numbers') as any;
+  }
+  public set tunnel2Phase1DhGroupNumbers(value: number[] ) {
+    this._tunnel2Phase1DhGroupNumbers = value;
+  }
+  public resetTunnel2Phase1DhGroupNumbers() {
+    this._tunnel2Phase1DhGroupNumbers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2Phase1DhGroupNumbersInput() {
+    return this._tunnel2Phase1DhGroupNumbers
+  }
+
+  // tunnel2_phase1_encryption_algorithms - computed: false, optional: true, required: false
+  private _tunnel2Phase1EncryptionAlgorithms?: string[];
+  public get tunnel2Phase1EncryptionAlgorithms() {
+    return this.getListAttribute('tunnel2_phase1_encryption_algorithms');
+  }
+  public set tunnel2Phase1EncryptionAlgorithms(value: string[] ) {
+    this._tunnel2Phase1EncryptionAlgorithms = value;
+  }
+  public resetTunnel2Phase1EncryptionAlgorithms() {
+    this._tunnel2Phase1EncryptionAlgorithms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2Phase1EncryptionAlgorithmsInput() {
+    return this._tunnel2Phase1EncryptionAlgorithms
+  }
+
+  // tunnel2_phase1_integrity_algorithms - computed: false, optional: true, required: false
+  private _tunnel2Phase1IntegrityAlgorithms?: string[];
+  public get tunnel2Phase1IntegrityAlgorithms() {
+    return this.getListAttribute('tunnel2_phase1_integrity_algorithms');
+  }
+  public set tunnel2Phase1IntegrityAlgorithms(value: string[] ) {
+    this._tunnel2Phase1IntegrityAlgorithms = value;
+  }
+  public resetTunnel2Phase1IntegrityAlgorithms() {
+    this._tunnel2Phase1IntegrityAlgorithms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2Phase1IntegrityAlgorithmsInput() {
+    return this._tunnel2Phase1IntegrityAlgorithms
+  }
+
+  // tunnel2_phase1_lifetime_seconds - computed: false, optional: true, required: false
+  private _tunnel2Phase1LifetimeSeconds?: number;
+  public get tunnel2Phase1LifetimeSeconds() {
+    return this.getNumberAttribute('tunnel2_phase1_lifetime_seconds');
+  }
+  public set tunnel2Phase1LifetimeSeconds(value: number ) {
+    this._tunnel2Phase1LifetimeSeconds = value;
+  }
+  public resetTunnel2Phase1LifetimeSeconds() {
+    this._tunnel2Phase1LifetimeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2Phase1LifetimeSecondsInput() {
+    return this._tunnel2Phase1LifetimeSeconds
+  }
+
+  // tunnel2_phase2_dh_group_numbers - computed: false, optional: true, required: false
+  private _tunnel2Phase2DhGroupNumbers?: number[];
+  public get tunnel2Phase2DhGroupNumbers() {
+    return this.interpolationForAttribute('tunnel2_phase2_dh_group_numbers') as any;
+  }
+  public set tunnel2Phase2DhGroupNumbers(value: number[] ) {
+    this._tunnel2Phase2DhGroupNumbers = value;
+  }
+  public resetTunnel2Phase2DhGroupNumbers() {
+    this._tunnel2Phase2DhGroupNumbers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2Phase2DhGroupNumbersInput() {
+    return this._tunnel2Phase2DhGroupNumbers
+  }
+
+  // tunnel2_phase2_encryption_algorithms - computed: false, optional: true, required: false
+  private _tunnel2Phase2EncryptionAlgorithms?: string[];
+  public get tunnel2Phase2EncryptionAlgorithms() {
+    return this.getListAttribute('tunnel2_phase2_encryption_algorithms');
+  }
+  public set tunnel2Phase2EncryptionAlgorithms(value: string[] ) {
+    this._tunnel2Phase2EncryptionAlgorithms = value;
+  }
+  public resetTunnel2Phase2EncryptionAlgorithms() {
+    this._tunnel2Phase2EncryptionAlgorithms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2Phase2EncryptionAlgorithmsInput() {
+    return this._tunnel2Phase2EncryptionAlgorithms
+  }
+
+  // tunnel2_phase2_integrity_algorithms - computed: false, optional: true, required: false
+  private _tunnel2Phase2IntegrityAlgorithms?: string[];
+  public get tunnel2Phase2IntegrityAlgorithms() {
+    return this.getListAttribute('tunnel2_phase2_integrity_algorithms');
+  }
+  public set tunnel2Phase2IntegrityAlgorithms(value: string[] ) {
+    this._tunnel2Phase2IntegrityAlgorithms = value;
+  }
+  public resetTunnel2Phase2IntegrityAlgorithms() {
+    this._tunnel2Phase2IntegrityAlgorithms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2Phase2IntegrityAlgorithmsInput() {
+    return this._tunnel2Phase2IntegrityAlgorithms
+  }
+
+  // tunnel2_phase2_lifetime_seconds - computed: false, optional: true, required: false
+  private _tunnel2Phase2LifetimeSeconds?: number;
+  public get tunnel2Phase2LifetimeSeconds() {
+    return this.getNumberAttribute('tunnel2_phase2_lifetime_seconds');
+  }
+  public set tunnel2Phase2LifetimeSeconds(value: number ) {
+    this._tunnel2Phase2LifetimeSeconds = value;
+  }
+  public resetTunnel2Phase2LifetimeSeconds() {
+    this._tunnel2Phase2LifetimeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2Phase2LifetimeSecondsInput() {
+    return this._tunnel2Phase2LifetimeSeconds
   }
 
   // tunnel2_preshared_key - computed: true, optional: true, required: false
@@ -293,9 +897,89 @@ export class VpnConnection extends cdktf.TerraformResource {
     return this._tunnel2PresharedKey
   }
 
+  // tunnel2_rekey_fuzz_percentage - computed: false, optional: true, required: false
+  private _tunnel2RekeyFuzzPercentage?: number;
+  public get tunnel2RekeyFuzzPercentage() {
+    return this.getNumberAttribute('tunnel2_rekey_fuzz_percentage');
+  }
+  public set tunnel2RekeyFuzzPercentage(value: number ) {
+    this._tunnel2RekeyFuzzPercentage = value;
+  }
+  public resetTunnel2RekeyFuzzPercentage() {
+    this._tunnel2RekeyFuzzPercentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2RekeyFuzzPercentageInput() {
+    return this._tunnel2RekeyFuzzPercentage
+  }
+
+  // tunnel2_rekey_margin_time_seconds - computed: false, optional: true, required: false
+  private _tunnel2RekeyMarginTimeSeconds?: number;
+  public get tunnel2RekeyMarginTimeSeconds() {
+    return this.getNumberAttribute('tunnel2_rekey_margin_time_seconds');
+  }
+  public set tunnel2RekeyMarginTimeSeconds(value: number ) {
+    this._tunnel2RekeyMarginTimeSeconds = value;
+  }
+  public resetTunnel2RekeyMarginTimeSeconds() {
+    this._tunnel2RekeyMarginTimeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2RekeyMarginTimeSecondsInput() {
+    return this._tunnel2RekeyMarginTimeSeconds
+  }
+
+  // tunnel2_replay_window_size - computed: false, optional: true, required: false
+  private _tunnel2ReplayWindowSize?: number;
+  public get tunnel2ReplayWindowSize() {
+    return this.getNumberAttribute('tunnel2_replay_window_size');
+  }
+  public set tunnel2ReplayWindowSize(value: number ) {
+    this._tunnel2ReplayWindowSize = value;
+  }
+  public resetTunnel2ReplayWindowSize() {
+    this._tunnel2ReplayWindowSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2ReplayWindowSizeInput() {
+    return this._tunnel2ReplayWindowSize
+  }
+
+  // tunnel2_startup_action - computed: false, optional: true, required: false
+  private _tunnel2StartupAction?: string;
+  public get tunnel2StartupAction() {
+    return this.getStringAttribute('tunnel2_startup_action');
+  }
+  public set tunnel2StartupAction(value: string ) {
+    this._tunnel2StartupAction = value;
+  }
+  public resetTunnel2StartupAction() {
+    this._tunnel2StartupAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnel2StartupActionInput() {
+    return this._tunnel2StartupAction
+  }
+
   // tunnel2_vgw_inside_address - computed: true, optional: false, required: false
   public get tunnel2VgwInsideAddress() {
     return this.getStringAttribute('tunnel2_vgw_inside_address');
+  }
+
+  // tunnel_inside_ip_version - computed: true, optional: true, required: false
+  private _tunnelInsideIpVersion?: string;
+  public get tunnelInsideIpVersion() {
+    return this.getStringAttribute('tunnel_inside_ip_version');
+  }
+  public set tunnelInsideIpVersion(value: string) {
+    this._tunnelInsideIpVersion = value;
+  }
+  public resetTunnelInsideIpVersion() {
+    this._tunnelInsideIpVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tunnelInsideIpVersionInput() {
+    return this._tunnelInsideIpVersion
   }
 
   // type - computed: false, optional: false, required: true
@@ -339,13 +1023,51 @@ export class VpnConnection extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       customer_gateway_id: cdktf.stringToTerraform(this._customerGatewayId),
+      enable_acceleration: cdktf.booleanToTerraform(this._enableAcceleration),
+      local_ipv4_network_cidr: cdktf.stringToTerraform(this._localIpv4NetworkCidr),
+      local_ipv6_network_cidr: cdktf.stringToTerraform(this._localIpv6NetworkCidr),
+      remote_ipv4_network_cidr: cdktf.stringToTerraform(this._remoteIpv4NetworkCidr),
+      remote_ipv6_network_cidr: cdktf.stringToTerraform(this._remoteIpv6NetworkCidr),
       static_routes_only: cdktf.booleanToTerraform(this._staticRoutesOnly),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      tunnel1_dpd_timeout_action: cdktf.stringToTerraform(this._tunnel1DpdTimeoutAction),
+      tunnel1_dpd_timeout_seconds: cdktf.numberToTerraform(this._tunnel1DpdTimeoutSeconds),
+      tunnel1_ike_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel1IkeVersions),
       tunnel1_inside_cidr: cdktf.stringToTerraform(this._tunnel1InsideCidr),
+      tunnel1_inside_ipv6_cidr: cdktf.stringToTerraform(this._tunnel1InsideIpv6Cidr),
+      tunnel1_phase1_dh_group_numbers: cdktf.listMapper(cdktf.numberToTerraform)(this._tunnel1Phase1DhGroupNumbers),
+      tunnel1_phase1_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel1Phase1EncryptionAlgorithms),
+      tunnel1_phase1_integrity_algorithms: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel1Phase1IntegrityAlgorithms),
+      tunnel1_phase1_lifetime_seconds: cdktf.numberToTerraform(this._tunnel1Phase1LifetimeSeconds),
+      tunnel1_phase2_dh_group_numbers: cdktf.listMapper(cdktf.numberToTerraform)(this._tunnel1Phase2DhGroupNumbers),
+      tunnel1_phase2_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel1Phase2EncryptionAlgorithms),
+      tunnel1_phase2_integrity_algorithms: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel1Phase2IntegrityAlgorithms),
+      tunnel1_phase2_lifetime_seconds: cdktf.numberToTerraform(this._tunnel1Phase2LifetimeSeconds),
       tunnel1_preshared_key: cdktf.stringToTerraform(this._tunnel1PresharedKey),
+      tunnel1_rekey_fuzz_percentage: cdktf.numberToTerraform(this._tunnel1RekeyFuzzPercentage),
+      tunnel1_rekey_margin_time_seconds: cdktf.numberToTerraform(this._tunnel1RekeyMarginTimeSeconds),
+      tunnel1_replay_window_size: cdktf.numberToTerraform(this._tunnel1ReplayWindowSize),
+      tunnel1_startup_action: cdktf.stringToTerraform(this._tunnel1StartupAction),
+      tunnel2_dpd_timeout_action: cdktf.stringToTerraform(this._tunnel2DpdTimeoutAction),
+      tunnel2_dpd_timeout_seconds: cdktf.numberToTerraform(this._tunnel2DpdTimeoutSeconds),
+      tunnel2_ike_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel2IkeVersions),
       tunnel2_inside_cidr: cdktf.stringToTerraform(this._tunnel2InsideCidr),
+      tunnel2_inside_ipv6_cidr: cdktf.stringToTerraform(this._tunnel2InsideIpv6Cidr),
+      tunnel2_phase1_dh_group_numbers: cdktf.listMapper(cdktf.numberToTerraform)(this._tunnel2Phase1DhGroupNumbers),
+      tunnel2_phase1_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel2Phase1EncryptionAlgorithms),
+      tunnel2_phase1_integrity_algorithms: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel2Phase1IntegrityAlgorithms),
+      tunnel2_phase1_lifetime_seconds: cdktf.numberToTerraform(this._tunnel2Phase1LifetimeSeconds),
+      tunnel2_phase2_dh_group_numbers: cdktf.listMapper(cdktf.numberToTerraform)(this._tunnel2Phase2DhGroupNumbers),
+      tunnel2_phase2_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel2Phase2EncryptionAlgorithms),
+      tunnel2_phase2_integrity_algorithms: cdktf.listMapper(cdktf.stringToTerraform)(this._tunnel2Phase2IntegrityAlgorithms),
+      tunnel2_phase2_lifetime_seconds: cdktf.numberToTerraform(this._tunnel2Phase2LifetimeSeconds),
       tunnel2_preshared_key: cdktf.stringToTerraform(this._tunnel2PresharedKey),
+      tunnel2_rekey_fuzz_percentage: cdktf.numberToTerraform(this._tunnel2RekeyFuzzPercentage),
+      tunnel2_rekey_margin_time_seconds: cdktf.numberToTerraform(this._tunnel2RekeyMarginTimeSeconds),
+      tunnel2_replay_window_size: cdktf.numberToTerraform(this._tunnel2ReplayWindowSize),
+      tunnel2_startup_action: cdktf.stringToTerraform(this._tunnel2StartupAction),
+      tunnel_inside_ip_version: cdktf.stringToTerraform(this._tunnelInsideIpVersion),
       type: cdktf.stringToTerraform(this._type),
       vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
     };
