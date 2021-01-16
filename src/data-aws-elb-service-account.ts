@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsElbServiceAccountConfig extends TerraformMetaArguments {
+export interface DataAwsElbServiceAccountConfig extends cdktf.TerraformMetaArguments {
   readonly region?: string;
 }
 
 // Resource
 
-export class DataAwsElbServiceAccount extends TerraformDataSource {
+export class DataAwsElbServiceAccount extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,27 +36,30 @@ export class DataAwsElbServiceAccount extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // region - computed: false, optional: true, required: false
   private _region?: string;
   public get region() {
-    return this._region;
+    return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string ) {
     this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region
   }
 
   // =========
@@ -66,7 +68,7 @@ export class DataAwsElbServiceAccount extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      region: this._region,
+      region: cdktf.stringToTerraform(this._region),
     };
   }
 }

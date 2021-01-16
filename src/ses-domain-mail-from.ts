@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesDomainMailFromConfig extends TerraformMetaArguments {
+export interface SesDomainMailFromConfig extends cdktf.TerraformMetaArguments {
   readonly behaviorOnMxFailure?: string;
   readonly domain: string;
   readonly mailFromDomain: string;
@@ -15,7 +14,7 @@ export interface SesDomainMailFromConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SesDomainMailFrom extends TerraformResource {
+export class SesDomainMailFrom extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,37 +43,48 @@ export class SesDomainMailFrom extends TerraformResource {
   // behavior_on_mx_failure - computed: false, optional: true, required: false
   private _behaviorOnMxFailure?: string;
   public get behaviorOnMxFailure() {
-    return this._behaviorOnMxFailure;
+    return this.getStringAttribute('behavior_on_mx_failure');
   }
-  public set behaviorOnMxFailure(value: string | undefined) {
+  public set behaviorOnMxFailure(value: string ) {
     this._behaviorOnMxFailure = value;
+  }
+  public resetBehaviorOnMxFailure() {
+    this._behaviorOnMxFailure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorOnMxFailureInput() {
+    return this._behaviorOnMxFailure
   }
 
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // mail_from_domain - computed: false, optional: false, required: true
   private _mailFromDomain: string;
   public get mailFromDomain() {
-    return this._mailFromDomain;
+    return this.getStringAttribute('mail_from_domain');
   }
   public set mailFromDomain(value: string) {
     this._mailFromDomain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mailFromDomainInput() {
+    return this._mailFromDomain
   }
 
   // =========
@@ -83,9 +93,9 @@ export class SesDomainMailFrom extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      behavior_on_mx_failure: this._behaviorOnMxFailure,
-      domain: this._domain,
-      mail_from_domain: this._mailFromDomain,
+      behavior_on_mx_failure: cdktf.stringToTerraform(this._behaviorOnMxFailure),
+      domain: cdktf.stringToTerraform(this._domain),
+      mail_from_domain: cdktf.stringToTerraform(this._mailFromDomain),
     };
   }
 }

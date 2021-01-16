@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecretsmanagerSecretVersionConfig extends TerraformMetaArguments {
+export interface SecretsmanagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
   readonly secretBinary?: string;
   readonly secretId: string;
   readonly secretString?: string;
@@ -16,7 +15,7 @@ export interface SecretsmanagerSecretVersionConfig extends TerraformMetaArgument
 
 // Resource
 
-export class SecretsmanagerSecretVersion extends TerraformResource {
+export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,48 +42,62 @@ export class SecretsmanagerSecretVersion extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // secret_binary - computed: false, optional: true, required: false
   private _secretBinary?: string;
   public get secretBinary() {
-    return this._secretBinary;
+    return this.getStringAttribute('secret_binary');
   }
-  public set secretBinary(value: string | undefined) {
+  public set secretBinary(value: string ) {
     this._secretBinary = value;
+  }
+  public resetSecretBinary() {
+    this._secretBinary = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretBinaryInput() {
+    return this._secretBinary
   }
 
   // secret_id - computed: false, optional: false, required: true
   private _secretId: string;
   public get secretId() {
-    return this._secretId;
+    return this.getStringAttribute('secret_id');
   }
   public set secretId(value: string) {
     this._secretId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretIdInput() {
+    return this._secretId
   }
 
   // secret_string - computed: false, optional: true, required: false
   private _secretString?: string;
   public get secretString() {
-    return this._secretString;
+    return this.getStringAttribute('secret_string');
   }
-  public set secretString(value: string | undefined) {
+  public set secretString(value: string ) {
     this._secretString = value;
   }
+  public resetSecretString() {
+    this._secretString = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretStringInput() {
+    return this._secretString
+  }
 
-  // version_id - computed: true, optional: false, required: true
+  // version_id - computed: true, optional: false, required: false
   public get versionId() {
     return this.getStringAttribute('version_id');
   }
@@ -92,10 +105,17 @@ export class SecretsmanagerSecretVersion extends TerraformResource {
   // version_stages - computed: true, optional: true, required: false
   private _versionStages?: string[];
   public get versionStages() {
-    return this._versionStages ?? this.getListAttribute('version_stages');
+    return this.getListAttribute('version_stages');
   }
-  public set versionStages(value: string[] | undefined) {
+  public set versionStages(value: string[]) {
     this._versionStages = value;
+  }
+  public resetVersionStages() {
+    this._versionStages = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionStagesInput() {
+    return this._versionStages
   }
 
   // =========
@@ -104,10 +124,10 @@ export class SecretsmanagerSecretVersion extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      secret_binary: this._secretBinary,
-      secret_id: this._secretId,
-      secret_string: this._secretString,
-      version_stages: this._versionStages,
+      secret_binary: cdktf.stringToTerraform(this._secretBinary),
+      secret_id: cdktf.stringToTerraform(this._secretId),
+      secret_string: cdktf.stringToTerraform(this._secretString),
+      version_stages: cdktf.listMapper(cdktf.stringToTerraform)(this._versionStages),
     };
   }
 }

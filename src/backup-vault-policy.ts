@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BackupVaultPolicyConfig extends TerraformMetaArguments {
+export interface BackupVaultPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly backupVaultName: string;
   readonly policy: string;
 }
 
 // Resource
 
-export class BackupVaultPolicy extends TerraformResource {
+export class BackupVaultPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,7 +38,7 @@ export class BackupVaultPolicy extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // backup_vault_arn - computed: true, optional: false, required: true
+  // backup_vault_arn - computed: true, optional: false, required: false
   public get backupVaultArn() {
     return this.getStringAttribute('backup_vault_arn');
   }
@@ -47,28 +46,32 @@ export class BackupVaultPolicy extends TerraformResource {
   // backup_vault_name - computed: false, optional: false, required: true
   private _backupVaultName: string;
   public get backupVaultName() {
-    return this._backupVaultName;
+    return this.getStringAttribute('backup_vault_name');
   }
   public set backupVaultName(value: string) {
     this._backupVaultName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get backupVaultNameInput() {
+    return this._backupVaultName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
   public set policy(value: string) {
     this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // =========
@@ -77,8 +80,8 @@ export class BackupVaultPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_vault_name: this._backupVaultName,
-      policy: this._policy,
+      backup_vault_name: cdktf.stringToTerraform(this._backupVaultName),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalWebAclAssociationConfig extends TerraformMetaArguments {
+export interface WafregionalWebAclAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly resourceArn: string;
   readonly webAclId: string;
 }
 
 // Resource
 
-export class WafregionalWebAclAssociation extends TerraformResource {
+export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class WafregionalWebAclAssociation extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // resource_arn - computed: false, optional: false, required: true
   private _resourceArn: string;
   public get resourceArn() {
-    return this._resourceArn;
+    return this.getStringAttribute('resource_arn');
   }
   public set resourceArn(value: string) {
     this._resourceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn
   }
 
   // web_acl_id - computed: false, optional: false, required: true
   private _webAclId: string;
   public get webAclId() {
-    return this._webAclId;
+    return this.getStringAttribute('web_acl_id');
   }
   public set webAclId(value: string) {
     this._webAclId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webAclIdInput() {
+    return this._webAclId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class WafregionalWebAclAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_arn: this._resourceArn,
-      web_acl_id: this._webAclId,
+      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      web_acl_id: cdktf.stringToTerraform(this._webAclId),
     };
   }
 }

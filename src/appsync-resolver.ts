@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppsyncResolverConfig extends TerraformMetaArguments {
+export interface AppsyncResolverConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly dataSource?: string;
   readonly field: string;
@@ -24,13 +23,30 @@ export interface AppsyncResolverCachingConfig {
   readonly cachingKeys?: string[];
   readonly ttl?: number;
 }
+
+function appsyncResolverCachingConfigToTerraform(struct?: AppsyncResolverCachingConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    caching_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachingKeys),
+    ttl: cdktf.numberToTerraform(struct!.ttl),
+  }
+}
+
 export interface AppsyncResolverPipelineConfig {
   readonly functions?: string[];
 }
 
+function appsyncResolverPipelineConfigToTerraform(struct?: AppsyncResolverPipelineConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    functions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.functions),
+  }
+}
+
+
 // Resource
 
-export class AppsyncResolver extends TerraformResource {
+export class AppsyncResolver extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -65,13 +81,17 @@ export class AppsyncResolver extends TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this._apiId;
+    return this.getStringAttribute('api_id');
   }
   public set apiId(value: string) {
     this._apiId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -79,82 +99,122 @@ export class AppsyncResolver extends TerraformResource {
   // data_source - computed: false, optional: true, required: false
   private _dataSource?: string;
   public get dataSource() {
-    return this._dataSource;
+    return this.getStringAttribute('data_source');
   }
-  public set dataSource(value: string | undefined) {
+  public set dataSource(value: string ) {
     this._dataSource = value;
+  }
+  public resetDataSource() {
+    this._dataSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
   }
 
   // field - computed: false, optional: false, required: true
   private _field: string;
   public get field() {
-    return this._field;
+    return this.getStringAttribute('field');
   }
   public set field(value: string) {
     this._field = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kind - computed: false, optional: true, required: false
   private _kind?: string;
   public get kind() {
-    return this._kind;
+    return this.getStringAttribute('kind');
   }
-  public set kind(value: string | undefined) {
+  public set kind(value: string ) {
     this._kind = value;
+  }
+  public resetKind() {
+    this._kind = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kindInput() {
+    return this._kind
   }
 
   // request_template - computed: false, optional: false, required: true
   private _requestTemplate: string;
   public get requestTemplate() {
-    return this._requestTemplate;
+    return this.getStringAttribute('request_template');
   }
   public set requestTemplate(value: string) {
     this._requestTemplate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestTemplateInput() {
+    return this._requestTemplate
   }
 
   // response_template - computed: false, optional: false, required: true
   private _responseTemplate: string;
   public get responseTemplate() {
-    return this._responseTemplate;
+    return this.getStringAttribute('response_template');
   }
   public set responseTemplate(value: string) {
     this._responseTemplate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseTemplateInput() {
+    return this._responseTemplate
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // caching_config - computed: false, optional: true, required: false
   private _cachingConfig?: AppsyncResolverCachingConfig[];
   public get cachingConfig() {
-    return this._cachingConfig;
+    return this.interpolationForAttribute('caching_config') as any;
   }
-  public set cachingConfig(value: AppsyncResolverCachingConfig[] | undefined) {
+  public set cachingConfig(value: AppsyncResolverCachingConfig[] ) {
     this._cachingConfig = value;
+  }
+  public resetCachingConfig() {
+    this._cachingConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cachingConfigInput() {
+    return this._cachingConfig
   }
 
   // pipeline_config - computed: false, optional: true, required: false
   private _pipelineConfig?: AppsyncResolverPipelineConfig[];
   public get pipelineConfig() {
-    return this._pipelineConfig;
+    return this.interpolationForAttribute('pipeline_config') as any;
   }
-  public set pipelineConfig(value: AppsyncResolverPipelineConfig[] | undefined) {
+  public set pipelineConfig(value: AppsyncResolverPipelineConfig[] ) {
     this._pipelineConfig = value;
+  }
+  public resetPipelineConfig() {
+    this._pipelineConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pipelineConfigInput() {
+    return this._pipelineConfig
   }
 
   // =========
@@ -163,15 +223,15 @@ export class AppsyncResolver extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      data_source: this._dataSource,
-      field: this._field,
-      kind: this._kind,
-      request_template: this._requestTemplate,
-      response_template: this._responseTemplate,
-      type: this._type,
-      caching_config: this._cachingConfig,
-      pipeline_config: this._pipelineConfig,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      data_source: cdktf.stringToTerraform(this._dataSource),
+      field: cdktf.stringToTerraform(this._field),
+      kind: cdktf.stringToTerraform(this._kind),
+      request_template: cdktf.stringToTerraform(this._requestTemplate),
+      response_template: cdktf.stringToTerraform(this._responseTemplate),
+      type: cdktf.stringToTerraform(this._type),
+      caching_config: cdktf.listMapper(appsyncResolverCachingConfigToTerraform)(this._cachingConfig),
+      pipeline_config: cdktf.listMapper(appsyncResolverPipelineConfigToTerraform)(this._pipelineConfig),
     };
   }
 }

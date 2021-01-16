@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultSecurityGroupConfig extends TerraformMetaArguments {
+export interface DefaultSecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly egress?: DefaultSecurityGroupEgress[];
   readonly ingress?: DefaultSecurityGroupIngress[];
   readonly revokeRulesOnDelete?: boolean;
@@ -25,6 +24,22 @@ export interface DefaultSecurityGroupEgress {
   readonly selfAttribute?: boolean;
   readonly toPort?: number;
 }
+
+function defaultSecurityGroupEgressToTerraform(struct?: DefaultSecurityGroupEgress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrBlocks),
+    description: cdktf.stringToTerraform(struct!.description),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.prefixListIds),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    self: cdktf.booleanToTerraform(struct!.selfAttribute),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface DefaultSecurityGroupIngress {
   readonly cidrBlocks?: string[];
   readonly description?: string;
@@ -37,9 +52,25 @@ export interface DefaultSecurityGroupIngress {
   readonly toPort?: number;
 }
 
+function defaultSecurityGroupIngressToTerraform(struct?: DefaultSecurityGroupIngress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrBlocks),
+    description: cdktf.stringToTerraform(struct!.description),
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipv6CidrBlocks),
+    prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.prefixListIds),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    self: cdktf.booleanToTerraform(struct!.selfAttribute),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
+
 // Resource
 
-export class DefaultSecurityGroup extends TerraformResource {
+export class DefaultSecurityGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -67,49 +98,59 @@ export class DefaultSecurityGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // egress - computed: true, optional: true, required: false
   private _egress?: DefaultSecurityGroupEgress[]
-  public get egress(): DefaultSecurityGroupEgress[] | undefined {
-    return this._egress; // Getting the computed value is not yet implemented
+  public get egress(): DefaultSecurityGroupEgress[] {
+    return this.interpolationForAttribute('egress') as any; // Getting the computed value is not yet implemented
   }
-  public set egress(value: DefaultSecurityGroupEgress[] | undefined) {
+  public set egress(value: DefaultSecurityGroupEgress[]) {
     this._egress = value;
+  }
+  public resetEgress() {
+    this._egress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressInput() {
+    return this._egress
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ingress - computed: true, optional: true, required: false
   private _ingress?: DefaultSecurityGroupIngress[]
-  public get ingress(): DefaultSecurityGroupIngress[] | undefined {
-    return this._ingress; // Getting the computed value is not yet implemented
+  public get ingress(): DefaultSecurityGroupIngress[] {
+    return this.interpolationForAttribute('ingress') as any; // Getting the computed value is not yet implemented
   }
-  public set ingress(value: DefaultSecurityGroupIngress[] | undefined) {
+  public set ingress(value: DefaultSecurityGroupIngress[]) {
     this._ingress = value;
   }
+  public resetIngress() {
+    this._ingress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ingressInput() {
+    return this._ingress
+  }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -117,28 +158,49 @@ export class DefaultSecurityGroup extends TerraformResource {
   // revoke_rules_on_delete - computed: false, optional: true, required: false
   private _revokeRulesOnDelete?: boolean;
   public get revokeRulesOnDelete() {
-    return this._revokeRulesOnDelete;
+    return this.getBooleanAttribute('revoke_rules_on_delete');
   }
-  public set revokeRulesOnDelete(value: boolean | undefined) {
+  public set revokeRulesOnDelete(value: boolean ) {
     this._revokeRulesOnDelete = value;
+  }
+  public resetRevokeRulesOnDelete() {
+    this._revokeRulesOnDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get revokeRulesOnDeleteInput() {
+    return this._revokeRulesOnDelete
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_id - computed: true, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this._vpcId ?? this.getStringAttribute('vpc_id');
+    return this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string | undefined) {
+  public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // =========
@@ -147,11 +209,11 @@ export class DefaultSecurityGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      egress: this._egress,
-      ingress: this._ingress,
-      revoke_rules_on_delete: this._revokeRulesOnDelete,
-      tags: this._tags,
-      vpc_id: this._vpcId,
+      egress: cdktf.listMapper(defaultSecurityGroupEgressToTerraform)(this._egress),
+      ingress: cdktf.listMapper(defaultSecurityGroupIngressToTerraform)(this._ingress),
+      revoke_rules_on_delete: cdktf.booleanToTerraform(this._revokeRulesOnDelete),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

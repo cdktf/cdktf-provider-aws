@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogResourcePolicyConfig extends TerraformMetaArguments {
+export interface CloudwatchLogResourcePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly policyDocument: string;
   readonly policyName: string;
 }
 
 // Resource
 
-export class CloudwatchLogResourcePolicy extends TerraformResource {
+export class CloudwatchLogResourcePolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class CloudwatchLogResourcePolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy_document - computed: false, optional: false, required: true
   private _policyDocument: string;
   public get policyDocument() {
-    return this._policyDocument;
+    return this.getStringAttribute('policy_document');
   }
   public set policyDocument(value: string) {
     this._policyDocument = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyDocumentInput() {
+    return this._policyDocument
   }
 
   // policy_name - computed: false, optional: false, required: true
   private _policyName: string;
   public get policyName() {
-    return this._policyName;
+    return this.getStringAttribute('policy_name');
   }
   public set policyName(value: string) {
     this._policyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyNameInput() {
+    return this._policyName
   }
 
   // =========
@@ -72,8 +75,8 @@ export class CloudwatchLogResourcePolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_document: this._policyDocument,
-      policy_name: this._policyName,
+      policy_document: cdktf.stringToTerraform(this._policyDocument),
+      policy_name: cdktf.stringToTerraform(this._policyName),
     };
   }
 }

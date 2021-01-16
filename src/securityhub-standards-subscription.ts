@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecurityhubStandardsSubscriptionConfig extends TerraformMetaArguments {
+export interface SecurityhubStandardsSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly standardsArn: string;
 }
 
 // Resource
 
-export class SecurityhubStandardsSubscription extends TerraformResource {
+export class SecurityhubStandardsSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,21 +37,21 @@ export class SecurityhubStandardsSubscription extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // standards_arn - computed: false, optional: false, required: true
   private _standardsArn: string;
   public get standardsArn() {
-    return this._standardsArn;
+    return this.getStringAttribute('standards_arn');
   }
   public set standardsArn(value: string) {
     this._standardsArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get standardsArnInput() {
+    return this._standardsArn
   }
 
   // =========
@@ -61,7 +60,7 @@ export class SecurityhubStandardsSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      standards_arn: this._standardsArn,
+      standards_arn: cdktf.stringToTerraform(this._standardsArn),
     };
   }
 }

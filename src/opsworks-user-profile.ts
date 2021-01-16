@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksUserProfileConfig extends TerraformMetaArguments {
+export interface OpsworksUserProfileConfig extends cdktf.TerraformMetaArguments {
   readonly allowSelfManagement?: boolean;
   readonly sshPublicKey?: string;
   readonly sshUsername: string;
@@ -16,7 +15,7 @@ export interface OpsworksUserProfileConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class OpsworksUserProfile extends TerraformResource {
+export class OpsworksUserProfile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,46 +45,64 @@ export class OpsworksUserProfile extends TerraformResource {
   // allow_self_management - computed: false, optional: true, required: false
   private _allowSelfManagement?: boolean;
   public get allowSelfManagement() {
-    return this._allowSelfManagement;
+    return this.getBooleanAttribute('allow_self_management');
   }
-  public set allowSelfManagement(value: boolean | undefined) {
+  public set allowSelfManagement(value: boolean ) {
     this._allowSelfManagement = value;
+  }
+  public resetAllowSelfManagement() {
+    this._allowSelfManagement = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowSelfManagementInput() {
+    return this._allowSelfManagement
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ssh_public_key - computed: false, optional: true, required: false
   private _sshPublicKey?: string;
   public get sshPublicKey() {
-    return this._sshPublicKey;
+    return this.getStringAttribute('ssh_public_key');
   }
-  public set sshPublicKey(value: string | undefined) {
+  public set sshPublicKey(value: string ) {
     this._sshPublicKey = value;
+  }
+  public resetSshPublicKey() {
+    this._sshPublicKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshPublicKeyInput() {
+    return this._sshPublicKey
   }
 
   // ssh_username - computed: false, optional: false, required: true
   private _sshUsername: string;
   public get sshUsername() {
-    return this._sshUsername;
+    return this.getStringAttribute('ssh_username');
   }
   public set sshUsername(value: string) {
     this._sshUsername = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshUsernameInput() {
+    return this._sshUsername
   }
 
   // user_arn - computed: false, optional: false, required: true
   private _userArn: string;
   public get userArn() {
-    return this._userArn;
+    return this.getStringAttribute('user_arn');
   }
   public set userArn(value: string) {
     this._userArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userArnInput() {
+    return this._userArn
   }
 
   // =========
@@ -94,10 +111,10 @@ export class OpsworksUserProfile extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_self_management: this._allowSelfManagement,
-      ssh_public_key: this._sshPublicKey,
-      ssh_username: this._sshUsername,
-      user_arn: this._userArn,
+      allow_self_management: cdktf.booleanToTerraform(this._allowSelfManagement),
+      ssh_public_key: cdktf.stringToTerraform(this._sshPublicKey),
+      ssh_username: cdktf.stringToTerraform(this._sshUsername),
+      user_arn: cdktf.stringToTerraform(this._userArn),
     };
   }
 }

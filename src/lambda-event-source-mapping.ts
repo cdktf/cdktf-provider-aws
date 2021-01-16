@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LambdaEventSourceMappingConfig extends TerraformMetaArguments {
+export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArguments {
   readonly batchSize?: number;
   readonly bisectBatchOnFunctionError?: boolean;
   readonly enabled?: boolean;
@@ -25,14 +24,30 @@ export interface LambdaEventSourceMappingConfig extends TerraformMetaArguments {
 export interface LambdaEventSourceMappingDestinationConfigOnFailure {
   readonly destinationArn: string;
 }
+
+function lambdaEventSourceMappingDestinationConfigOnFailureToTerraform(struct?: LambdaEventSourceMappingDestinationConfigOnFailure): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
+  }
+}
+
 export interface LambdaEventSourceMappingDestinationConfig {
   /** on_failure block */
   readonly onFailure?: LambdaEventSourceMappingDestinationConfigOnFailure[];
 }
 
+function lambdaEventSourceMappingDestinationConfigToTerraform(struct?: LambdaEventSourceMappingDestinationConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    on_failure: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigOnFailureToTerraform)(struct!.onFailure),
+  }
+}
+
+
 // Resource
 
-export class LambdaEventSourceMapping extends TerraformResource {
+export class LambdaEventSourceMapping extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -70,40 +85,65 @@ export class LambdaEventSourceMapping extends TerraformResource {
   // batch_size - computed: false, optional: true, required: false
   private _batchSize?: number;
   public get batchSize() {
-    return this._batchSize;
+    return this.getNumberAttribute('batch_size');
   }
-  public set batchSize(value: number | undefined) {
+  public set batchSize(value: number ) {
     this._batchSize = value;
+  }
+  public resetBatchSize() {
+    this._batchSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchSizeInput() {
+    return this._batchSize
   }
 
   // bisect_batch_on_function_error - computed: false, optional: true, required: false
   private _bisectBatchOnFunctionError?: boolean;
   public get bisectBatchOnFunctionError() {
-    return this._bisectBatchOnFunctionError;
+    return this.getBooleanAttribute('bisect_batch_on_function_error');
   }
-  public set bisectBatchOnFunctionError(value: boolean | undefined) {
+  public set bisectBatchOnFunctionError(value: boolean ) {
     this._bisectBatchOnFunctionError = value;
+  }
+  public resetBisectBatchOnFunctionError() {
+    this._bisectBatchOnFunctionError = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bisectBatchOnFunctionErrorInput() {
+    return this._bisectBatchOnFunctionError
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this._enabled;
+    return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | undefined) {
+  public set enabled(value: boolean ) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled
   }
 
   // event_source_arn - computed: false, optional: false, required: true
   private _eventSourceArn: string;
   public get eventSourceArn() {
-    return this._eventSourceArn;
+    return this.getStringAttribute('event_source_arn');
   }
   public set eventSourceArn(value: string) {
     this._eventSourceArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get eventSourceArnInput() {
+    return this._eventSourceArn
+  }
 
-  // function_arn - computed: true, optional: false, required: true
+  // function_arn - computed: true, optional: false, required: false
   public get functionArn() {
     return this.getStringAttribute('function_arn');
   }
@@ -111,27 +151,27 @@ export class LambdaEventSourceMapping extends TerraformResource {
   // function_name - computed: false, optional: false, required: true
   private _functionName: string;
   public get functionName() {
-    return this._functionName;
+    return this.getStringAttribute('function_name');
   }
   public set functionName(value: string) {
     this._functionName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get functionNameInput() {
+    return this._functionName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_modified - computed: true, optional: false, required: true
+  // last_modified - computed: true, optional: false, required: false
   public get lastModified() {
     return this.getStringAttribute('last_modified');
   }
 
-  // last_processing_result - computed: true, optional: false, required: true
+  // last_processing_result - computed: true, optional: false, required: false
   public get lastProcessingResult() {
     return this.getStringAttribute('last_processing_result');
   }
@@ -139,68 +179,110 @@ export class LambdaEventSourceMapping extends TerraformResource {
   // maximum_batching_window_in_seconds - computed: false, optional: true, required: false
   private _maximumBatchingWindowInSeconds?: number;
   public get maximumBatchingWindowInSeconds() {
-    return this._maximumBatchingWindowInSeconds;
+    return this.getNumberAttribute('maximum_batching_window_in_seconds');
   }
-  public set maximumBatchingWindowInSeconds(value: number | undefined) {
+  public set maximumBatchingWindowInSeconds(value: number ) {
     this._maximumBatchingWindowInSeconds = value;
+  }
+  public resetMaximumBatchingWindowInSeconds() {
+    this._maximumBatchingWindowInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumBatchingWindowInSecondsInput() {
+    return this._maximumBatchingWindowInSeconds
   }
 
   // maximum_record_age_in_seconds - computed: true, optional: true, required: false
   private _maximumRecordAgeInSeconds?: number;
   public get maximumRecordAgeInSeconds() {
-    return this._maximumRecordAgeInSeconds ?? this.getNumberAttribute('maximum_record_age_in_seconds');
+    return this.getNumberAttribute('maximum_record_age_in_seconds');
   }
-  public set maximumRecordAgeInSeconds(value: number | undefined) {
+  public set maximumRecordAgeInSeconds(value: number) {
     this._maximumRecordAgeInSeconds = value;
+  }
+  public resetMaximumRecordAgeInSeconds() {
+    this._maximumRecordAgeInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumRecordAgeInSecondsInput() {
+    return this._maximumRecordAgeInSeconds
   }
 
   // maximum_retry_attempts - computed: true, optional: true, required: false
   private _maximumRetryAttempts?: number;
   public get maximumRetryAttempts() {
-    return this._maximumRetryAttempts ?? this.getNumberAttribute('maximum_retry_attempts');
+    return this.getNumberAttribute('maximum_retry_attempts');
   }
-  public set maximumRetryAttempts(value: number | undefined) {
+  public set maximumRetryAttempts(value: number) {
     this._maximumRetryAttempts = value;
+  }
+  public resetMaximumRetryAttempts() {
+    this._maximumRetryAttempts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumRetryAttemptsInput() {
+    return this._maximumRetryAttempts
   }
 
   // parallelization_factor - computed: true, optional: true, required: false
   private _parallelizationFactor?: number;
   public get parallelizationFactor() {
-    return this._parallelizationFactor ?? this.getNumberAttribute('parallelization_factor');
+    return this.getNumberAttribute('parallelization_factor');
   }
-  public set parallelizationFactor(value: number | undefined) {
+  public set parallelizationFactor(value: number) {
     this._parallelizationFactor = value;
+  }
+  public resetParallelizationFactor() {
+    this._parallelizationFactor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parallelizationFactorInput() {
+    return this._parallelizationFactor
   }
 
   // starting_position - computed: false, optional: true, required: false
   private _startingPosition?: string;
   public get startingPosition() {
-    return this._startingPosition;
+    return this.getStringAttribute('starting_position');
   }
-  public set startingPosition(value: string | undefined) {
+  public set startingPosition(value: string ) {
     this._startingPosition = value;
+  }
+  public resetStartingPosition() {
+    this._startingPosition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startingPositionInput() {
+    return this._startingPosition
   }
 
   // starting_position_timestamp - computed: false, optional: true, required: false
   private _startingPositionTimestamp?: string;
   public get startingPositionTimestamp() {
-    return this._startingPositionTimestamp;
+    return this.getStringAttribute('starting_position_timestamp');
   }
-  public set startingPositionTimestamp(value: string | undefined) {
+  public set startingPositionTimestamp(value: string ) {
     this._startingPositionTimestamp = value;
   }
+  public resetStartingPositionTimestamp() {
+    this._startingPositionTimestamp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startingPositionTimestampInput() {
+    return this._startingPositionTimestamp
+  }
 
-  // state - computed: true, optional: false, required: true
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
 
-  // state_transition_reason - computed: true, optional: false, required: true
+  // state_transition_reason - computed: true, optional: false, required: false
   public get stateTransitionReason() {
     return this.getStringAttribute('state_transition_reason');
   }
 
-  // uuid - computed: true, optional: false, required: true
+  // uuid - computed: true, optional: false, required: false
   public get uuid() {
     return this.getStringAttribute('uuid');
   }
@@ -208,10 +290,17 @@ export class LambdaEventSourceMapping extends TerraformResource {
   // destination_config - computed: false, optional: true, required: false
   private _destinationConfig?: LambdaEventSourceMappingDestinationConfig[];
   public get destinationConfig() {
-    return this._destinationConfig;
+    return this.interpolationForAttribute('destination_config') as any;
   }
-  public set destinationConfig(value: LambdaEventSourceMappingDestinationConfig[] | undefined) {
+  public set destinationConfig(value: LambdaEventSourceMappingDestinationConfig[] ) {
     this._destinationConfig = value;
+  }
+  public resetDestinationConfig() {
+    this._destinationConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationConfigInput() {
+    return this._destinationConfig
   }
 
   // =========
@@ -220,18 +309,18 @@ export class LambdaEventSourceMapping extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_size: this._batchSize,
-      bisect_batch_on_function_error: this._bisectBatchOnFunctionError,
-      enabled: this._enabled,
-      event_source_arn: this._eventSourceArn,
-      function_name: this._functionName,
-      maximum_batching_window_in_seconds: this._maximumBatchingWindowInSeconds,
-      maximum_record_age_in_seconds: this._maximumRecordAgeInSeconds,
-      maximum_retry_attempts: this._maximumRetryAttempts,
-      parallelization_factor: this._parallelizationFactor,
-      starting_position: this._startingPosition,
-      starting_position_timestamp: this._startingPositionTimestamp,
-      destination_config: this._destinationConfig,
+      batch_size: cdktf.numberToTerraform(this._batchSize),
+      bisect_batch_on_function_error: cdktf.booleanToTerraform(this._bisectBatchOnFunctionError),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      event_source_arn: cdktf.stringToTerraform(this._eventSourceArn),
+      function_name: cdktf.stringToTerraform(this._functionName),
+      maximum_batching_window_in_seconds: cdktf.numberToTerraform(this._maximumBatchingWindowInSeconds),
+      maximum_record_age_in_seconds: cdktf.numberToTerraform(this._maximumRecordAgeInSeconds),
+      maximum_retry_attempts: cdktf.numberToTerraform(this._maximumRetryAttempts),
+      parallelization_factor: cdktf.numberToTerraform(this._parallelizationFactor),
+      starting_position: cdktf.stringToTerraform(this._startingPosition),
+      starting_position_timestamp: cdktf.stringToTerraform(this._startingPositionTimestamp),
+      destination_config: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigToTerraform)(this._destinationConfig),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodecommitTriggerConfig extends TerraformMetaArguments {
+export interface CodecommitTriggerConfig extends cdktf.TerraformMetaArguments {
   readonly repositoryName: string;
   /** trigger block */
   readonly trigger: CodecommitTriggerTrigger[];
@@ -20,9 +19,21 @@ export interface CodecommitTriggerTrigger {
   readonly name: string;
 }
 
+function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTrigger): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    branches: cdktf.listMapper(cdktf.stringToTerraform)(struct!.branches),
+    custom_data: cdktf.stringToTerraform(struct!.customData),
+    destination_arn: cdktf.stringToTerraform(struct!.destinationArn),
+    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+
 // Resource
 
-export class CodecommitTrigger extends TerraformResource {
+export class CodecommitTrigger extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,36 +58,40 @@ export class CodecommitTrigger extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // configuration_id - computed: true, optional: false, required: true
+  // configuration_id - computed: true, optional: false, required: false
   public get configurationId() {
     return this.getStringAttribute('configuration_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // repository_name - computed: false, optional: false, required: true
   private _repositoryName: string;
   public get repositoryName() {
-    return this._repositoryName;
+    return this.getStringAttribute('repository_name');
   }
   public set repositoryName(value: string) {
     this._repositoryName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryNameInput() {
+    return this._repositoryName
   }
 
   // trigger - computed: false, optional: false, required: true
   private _trigger: CodecommitTriggerTrigger[];
   public get trigger() {
-    return this._trigger;
+    return this.interpolationForAttribute('trigger') as any;
   }
   public set trigger(value: CodecommitTriggerTrigger[]) {
     this._trigger = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerInput() {
+    return this._trigger
   }
 
   // =========
@@ -85,8 +100,8 @@ export class CodecommitTrigger extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      repository_name: this._repositoryName,
-      trigger: this._trigger,
+      repository_name: cdktf.stringToTerraform(this._repositoryName),
+      trigger: cdktf.listMapper(codecommitTriggerTriggerToTerraform)(this._trigger),
     };
   }
 }

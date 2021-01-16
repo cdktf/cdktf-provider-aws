@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamInstanceProfileConfig extends TerraformMetaArguments {
+export interface DataAwsIamInstanceProfileConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsIamInstanceProfile extends TerraformDataSource {
+export class DataAwsIamInstanceProfile extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,50 +36,50 @@ export class DataAwsIamInstanceProfile extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // create_date - computed: true, optional: false, required: true
+  // create_date - computed: true, optional: false, required: false
   public get createDate() {
     return this.getStringAttribute('create_date');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // role_arn - computed: true, optional: false, required: true
+  // role_arn - computed: true, optional: false, required: false
   public get roleArn() {
     return this.getStringAttribute('role_arn');
   }
 
-  // role_id - computed: true, optional: false, required: true
+  // role_id - computed: true, optional: false, required: false
   public get roleId() {
     return this.getStringAttribute('role_id');
   }
 
-  // role_name - computed: true, optional: false, required: true
+  // role_name - computed: true, optional: false, required: false
   public get roleName() {
     return this.getStringAttribute('role_name');
   }
@@ -91,7 +90,7 @@ export class DataAwsIamInstanceProfile extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

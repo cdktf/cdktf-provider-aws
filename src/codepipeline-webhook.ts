@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodepipelineWebhookConfig extends TerraformMetaArguments {
+export interface CodepipelineWebhookConfig extends cdktf.TerraformMetaArguments {
   readonly authentication: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -22,14 +21,32 @@ export interface CodepipelineWebhookAuthenticationConfiguration {
   readonly allowedIpRange?: string;
   readonly secretToken?: string;
 }
+
+function codepipelineWebhookAuthenticationConfigurationToTerraform(struct?: CodepipelineWebhookAuthenticationConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allowed_ip_range: cdktf.stringToTerraform(struct!.allowedIpRange),
+    secret_token: cdktf.stringToTerraform(struct!.secretToken),
+  }
+}
+
 export interface CodepipelineWebhookFilter {
   readonly jsonPath: string;
   readonly matchEquals: string;
 }
 
+function codepipelineWebhookFilterToTerraform(struct?: CodepipelineWebhookFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    json_path: cdktf.stringToTerraform(struct!.jsonPath),
+    match_equals: cdktf.stringToTerraform(struct!.matchEquals),
+  }
+}
+
+
 // Resource
 
-export class CodepipelineWebhook extends TerraformResource {
+export class CodepipelineWebhook extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -62,58 +79,77 @@ export class CodepipelineWebhook extends TerraformResource {
   // authentication - computed: false, optional: false, required: true
   private _authentication: string;
   public get authentication() {
-    return this._authentication;
+    return this.getStringAttribute('authentication');
   }
   public set authentication(value: string) {
     this._authentication = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationInput() {
+    return this._authentication
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // target_action - computed: false, optional: false, required: true
   private _targetAction: string;
   public get targetAction() {
-    return this._targetAction;
+    return this.getStringAttribute('target_action');
   }
   public set targetAction(value: string) {
     this._targetAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetActionInput() {
+    return this._targetAction
   }
 
   // target_pipeline - computed: false, optional: false, required: true
   private _targetPipeline: string;
   public get targetPipeline() {
-    return this._targetPipeline;
+    return this.getStringAttribute('target_pipeline');
   }
   public set targetPipeline(value: string) {
     this._targetPipeline = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get targetPipelineInput() {
+    return this._targetPipeline
+  }
 
-  // url - computed: true, optional: false, required: true
+  // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
   }
@@ -121,19 +157,30 @@ export class CodepipelineWebhook extends TerraformResource {
   // authentication_configuration - computed: false, optional: true, required: false
   private _authenticationConfiguration?: CodepipelineWebhookAuthenticationConfiguration[];
   public get authenticationConfiguration() {
-    return this._authenticationConfiguration;
+    return this.interpolationForAttribute('authentication_configuration') as any;
   }
-  public set authenticationConfiguration(value: CodepipelineWebhookAuthenticationConfiguration[] | undefined) {
+  public set authenticationConfiguration(value: CodepipelineWebhookAuthenticationConfiguration[] ) {
     this._authenticationConfiguration = value;
+  }
+  public resetAuthenticationConfiguration() {
+    this._authenticationConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationConfigurationInput() {
+    return this._authenticationConfiguration
   }
 
   // filter - computed: false, optional: false, required: true
   private _filter: CodepipelineWebhookFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
   public set filter(value: CodepipelineWebhookFilter[]) {
     this._filter = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -142,13 +189,13 @@ export class CodepipelineWebhook extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication: this._authentication,
-      name: this._name,
-      tags: this._tags,
-      target_action: this._targetAction,
-      target_pipeline: this._targetPipeline,
-      authentication_configuration: this._authenticationConfiguration,
-      filter: this._filter,
+      authentication: cdktf.stringToTerraform(this._authentication),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_action: cdktf.stringToTerraform(this._targetAction),
+      target_pipeline: cdktf.stringToTerraform(this._targetPipeline),
+      authentication_configuration: cdktf.listMapper(codepipelineWebhookAuthenticationConfigurationToTerraform)(this._authenticationConfiguration),
+      filter: cdktf.listMapper(codepipelineWebhookFilterToTerraform)(this._filter),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcDhcpOptionsConfig extends TerraformMetaArguments {
+export interface VpcDhcpOptionsConfig extends cdktf.TerraformMetaArguments {
   readonly domainName?: string;
   readonly domainNameServers?: string[];
   readonly netbiosNameServers?: string[];
@@ -18,7 +17,7 @@ export interface VpcDhcpOptionsConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class VpcDhcpOptions extends TerraformResource {
+export class VpcDhcpOptions extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,7 +46,7 @@ export class VpcDhcpOptions extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -55,58 +54,89 @@ export class VpcDhcpOptions extends TerraformResource {
   // domain_name - computed: false, optional: true, required: false
   private _domainName?: string;
   public get domainName() {
-    return this._domainName;
+    return this.getStringAttribute('domain_name');
   }
-  public set domainName(value: string | undefined) {
+  public set domainName(value: string ) {
     this._domainName = value;
+  }
+  public resetDomainName() {
+    this._domainName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainNameInput() {
+    return this._domainName
   }
 
   // domain_name_servers - computed: false, optional: true, required: false
   private _domainNameServers?: string[];
   public get domainNameServers() {
-    return this._domainNameServers;
+    return this.getListAttribute('domain_name_servers');
   }
-  public set domainNameServers(value: string[] | undefined) {
+  public set domainNameServers(value: string[] ) {
     this._domainNameServers = value;
+  }
+  public resetDomainNameServers() {
+    this._domainNameServers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainNameServersInput() {
+    return this._domainNameServers
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // netbios_name_servers - computed: false, optional: true, required: false
   private _netbiosNameServers?: string[];
   public get netbiosNameServers() {
-    return this._netbiosNameServers;
+    return this.getListAttribute('netbios_name_servers');
   }
-  public set netbiosNameServers(value: string[] | undefined) {
+  public set netbiosNameServers(value: string[] ) {
     this._netbiosNameServers = value;
+  }
+  public resetNetbiosNameServers() {
+    this._netbiosNameServers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get netbiosNameServersInput() {
+    return this._netbiosNameServers
   }
 
   // netbios_node_type - computed: false, optional: true, required: false
   private _netbiosNodeType?: string;
   public get netbiosNodeType() {
-    return this._netbiosNodeType;
+    return this.getStringAttribute('netbios_node_type');
   }
-  public set netbiosNodeType(value: string | undefined) {
+  public set netbiosNodeType(value: string ) {
     this._netbiosNodeType = value;
+  }
+  public resetNetbiosNodeType() {
+    this._netbiosNodeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get netbiosNodeTypeInput() {
+    return this._netbiosNodeType
   }
 
   // ntp_servers - computed: false, optional: true, required: false
   private _ntpServers?: string[];
   public get ntpServers() {
-    return this._ntpServers;
+    return this.getListAttribute('ntp_servers');
   }
-  public set ntpServers(value: string[] | undefined) {
+  public set ntpServers(value: string[] ) {
     this._ntpServers = value;
   }
+  public resetNtpServers() {
+    this._ntpServers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ntpServersInput() {
+    return this._ntpServers
+  }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -114,10 +144,17 @@ export class VpcDhcpOptions extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -126,12 +163,12 @@ export class VpcDhcpOptions extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: this._domainName,
-      domain_name_servers: this._domainNameServers,
-      netbios_name_servers: this._netbiosNameServers,
-      netbios_node_type: this._netbiosNodeType,
-      ntp_servers: this._ntpServers,
-      tags: this._tags,
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      domain_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._domainNameServers),
+      netbios_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._netbiosNameServers),
+      netbios_node_type: cdktf.stringToTerraform(this._netbiosNodeType),
+      ntp_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._ntpServers),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

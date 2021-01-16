@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsOutpostsConfig extends TerraformMetaArguments {
+export interface DataAwsOutpostsOutpostsConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly availabilityZoneId?: string;
   readonly siteId?: string;
@@ -15,7 +14,7 @@ export interface DataAwsOutpostsOutpostsConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsOutpostsOutposts extends TerraformDataSource {
+export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +40,7 @@ export class DataAwsOutpostsOutposts extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arns - computed: true, optional: false, required: true
+  // arns - computed: true, optional: false, required: false
   public get arns() {
     return this.getListAttribute('arns');
   }
@@ -49,31 +48,41 @@ export class DataAwsOutpostsOutposts extends TerraformDataSource {
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
+    return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // availability_zone_id - computed: true, optional: true, required: false
   private _availabilityZoneId?: string;
   public get availabilityZoneId() {
-    return this._availabilityZoneId ?? this.getStringAttribute('availability_zone_id');
+    return this.getStringAttribute('availability_zone_id');
   }
-  public set availabilityZoneId(value: string | undefined) {
+  public set availabilityZoneId(value: string) {
     this._availabilityZoneId = value;
+  }
+  public resetAvailabilityZoneId() {
+    this._availabilityZoneId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneIdInput() {
+    return this._availabilityZoneId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ids - computed: true, optional: false, required: true
+  // ids - computed: true, optional: false, required: false
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -81,10 +90,17 @@ export class DataAwsOutpostsOutposts extends TerraformDataSource {
   // site_id - computed: true, optional: true, required: false
   private _siteId?: string;
   public get siteId() {
-    return this._siteId ?? this.getStringAttribute('site_id');
+    return this.getStringAttribute('site_id');
   }
-  public set siteId(value: string | undefined) {
+  public set siteId(value: string) {
     this._siteId = value;
+  }
+  public resetSiteId() {
+    this._siteId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get siteIdInput() {
+    return this._siteId
   }
 
   // =========
@@ -93,9 +109,9 @@ export class DataAwsOutpostsOutposts extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      availability_zone_id: this._availabilityZoneId,
-      site_id: this._siteId,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
+      site_id: cdktf.stringToTerraform(this._siteId),
     };
   }
 }

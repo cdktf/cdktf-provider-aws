@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface FmsPolicyConfig extends TerraformMetaArguments {
+export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly deleteAllPolicyResources?: boolean;
   readonly excludeResourceTags: boolean;
   readonly name: string;
@@ -25,18 +24,45 @@ export interface FmsPolicyExcludeMap {
   readonly account?: string[];
   readonly orgunit?: string[];
 }
+
+function fmsPolicyExcludeMapToTerraform(struct?: FmsPolicyExcludeMap): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    account: cdktf.listMapper(cdktf.stringToTerraform)(struct!.account),
+    orgunit: cdktf.listMapper(cdktf.stringToTerraform)(struct!.orgunit),
+  }
+}
+
 export interface FmsPolicyIncludeMap {
   readonly account?: string[];
   readonly orgunit?: string[];
 }
+
+function fmsPolicyIncludeMapToTerraform(struct?: FmsPolicyIncludeMap): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    account: cdktf.listMapper(cdktf.stringToTerraform)(struct!.account),
+    orgunit: cdktf.listMapper(cdktf.stringToTerraform)(struct!.orgunit),
+  }
+}
+
 export interface FmsPolicySecurityServicePolicyData {
   readonly managedServiceData?: string;
   readonly type: string;
 }
 
+function fmsPolicySecurityServicePolicyDataToTerraform(struct?: FmsPolicySecurityServicePolicyData): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    managed_service_data: cdktf.stringToTerraform(struct!.managedServiceData),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class FmsPolicy extends TerraformResource {
+export class FmsPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -68,7 +94,7 @@ export class FmsPolicy extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -76,40 +102,51 @@ export class FmsPolicy extends TerraformResource {
   // delete_all_policy_resources - computed: false, optional: true, required: false
   private _deleteAllPolicyResources?: boolean;
   public get deleteAllPolicyResources() {
-    return this._deleteAllPolicyResources;
+    return this.getBooleanAttribute('delete_all_policy_resources');
   }
-  public set deleteAllPolicyResources(value: boolean | undefined) {
+  public set deleteAllPolicyResources(value: boolean ) {
     this._deleteAllPolicyResources = value;
+  }
+  public resetDeleteAllPolicyResources() {
+    this._deleteAllPolicyResources = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteAllPolicyResourcesInput() {
+    return this._deleteAllPolicyResources
   }
 
   // exclude_resource_tags - computed: false, optional: false, required: true
   private _excludeResourceTags: boolean;
   public get excludeResourceTags() {
-    return this._excludeResourceTags;
+    return this.getBooleanAttribute('exclude_resource_tags');
   }
   public set excludeResourceTags(value: boolean) {
     this._excludeResourceTags = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get excludeResourceTagsInput() {
+    return this._excludeResourceTags
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // policy_update_token - computed: true, optional: false, required: true
+  // policy_update_token - computed: true, optional: false, required: false
   public get policyUpdateToken() {
     return this.getStringAttribute('policy_update_token');
   }
@@ -117,55 +154,91 @@ export class FmsPolicy extends TerraformResource {
   // remediation_enabled - computed: false, optional: true, required: false
   private _remediationEnabled?: boolean;
   public get remediationEnabled() {
-    return this._remediationEnabled;
+    return this.getBooleanAttribute('remediation_enabled');
   }
-  public set remediationEnabled(value: boolean | undefined) {
+  public set remediationEnabled(value: boolean ) {
     this._remediationEnabled = value;
+  }
+  public resetRemediationEnabled() {
+    this._remediationEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remediationEnabledInput() {
+    return this._remediationEnabled
   }
 
   // resource_tags - computed: false, optional: true, required: false
   private _resourceTags?: { [key: string]: string };
   public get resourceTags() {
-    return this._resourceTags;
+    return this.interpolationForAttribute('resource_tags') as any;
   }
-  public set resourceTags(value: { [key: string]: string } | undefined) {
+  public set resourceTags(value: { [key: string]: string } ) {
     this._resourceTags = value;
+  }
+  public resetResourceTags() {
+    this._resourceTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTagsInput() {
+    return this._resourceTags
   }
 
   // resource_type_list - computed: false, optional: false, required: true
   private _resourceTypeList: string[];
   public get resourceTypeList() {
-    return this._resourceTypeList;
+    return this.getListAttribute('resource_type_list');
   }
   public set resourceTypeList(value: string[]) {
     this._resourceTypeList = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypeListInput() {
+    return this._resourceTypeList
   }
 
   // exclude_map - computed: false, optional: true, required: false
   private _excludeMap?: FmsPolicyExcludeMap[];
   public get excludeMap() {
-    return this._excludeMap;
+    return this.interpolationForAttribute('exclude_map') as any;
   }
-  public set excludeMap(value: FmsPolicyExcludeMap[] | undefined) {
+  public set excludeMap(value: FmsPolicyExcludeMap[] ) {
     this._excludeMap = value;
+  }
+  public resetExcludeMap() {
+    this._excludeMap = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeMapInput() {
+    return this._excludeMap
   }
 
   // include_map - computed: false, optional: true, required: false
   private _includeMap?: FmsPolicyIncludeMap[];
   public get includeMap() {
-    return this._includeMap;
+    return this.interpolationForAttribute('include_map') as any;
   }
-  public set includeMap(value: FmsPolicyIncludeMap[] | undefined) {
+  public set includeMap(value: FmsPolicyIncludeMap[] ) {
     this._includeMap = value;
+  }
+  public resetIncludeMap() {
+    this._includeMap = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeMapInput() {
+    return this._includeMap
   }
 
   // security_service_policy_data - computed: false, optional: false, required: true
   private _securityServicePolicyData: FmsPolicySecurityServicePolicyData[];
   public get securityServicePolicyData() {
-    return this._securityServicePolicyData;
+    return this.interpolationForAttribute('security_service_policy_data') as any;
   }
   public set securityServicePolicyData(value: FmsPolicySecurityServicePolicyData[]) {
     this._securityServicePolicyData = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityServicePolicyDataInput() {
+    return this._securityServicePolicyData
   }
 
   // =========
@@ -174,15 +247,15 @@ export class FmsPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delete_all_policy_resources: this._deleteAllPolicyResources,
-      exclude_resource_tags: this._excludeResourceTags,
-      name: this._name,
-      remediation_enabled: this._remediationEnabled,
-      resource_tags: this._resourceTags,
-      resource_type_list: this._resourceTypeList,
-      exclude_map: this._excludeMap,
-      include_map: this._includeMap,
-      security_service_policy_data: this._securityServicePolicyData,
+      delete_all_policy_resources: cdktf.booleanToTerraform(this._deleteAllPolicyResources),
+      exclude_resource_tags: cdktf.booleanToTerraform(this._excludeResourceTags),
+      name: cdktf.stringToTerraform(this._name),
+      remediation_enabled: cdktf.booleanToTerraform(this._remediationEnabled),
+      resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTags),
+      resource_type_list: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceTypeList),
+      exclude_map: cdktf.listMapper(fmsPolicyExcludeMapToTerraform)(this._excludeMap),
+      include_map: cdktf.listMapper(fmsPolicyIncludeMapToTerraform)(this._includeMap),
+      security_service_policy_data: cdktf.listMapper(fmsPolicySecurityServicePolicyDataToTerraform)(this._securityServicePolicyData),
     };
   }
 }

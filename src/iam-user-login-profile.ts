@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamUserLoginProfileConfig extends TerraformMetaArguments {
+export interface IamUserLoginProfileConfig extends cdktf.TerraformMetaArguments {
   readonly passwordLength?: number;
   readonly passwordResetRequired?: boolean;
   readonly pgpKey: string;
@@ -16,7 +15,7 @@ export interface IamUserLoginProfileConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamUserLoginProfile extends TerraformResource {
+export class IamUserLoginProfile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,21 +42,17 @@ export class IamUserLoginProfile extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // encrypted_password - computed: true, optional: false, required: true
+  // encrypted_password - computed: true, optional: false, required: false
   public get encryptedPassword() {
     return this.getStringAttribute('encrypted_password');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // key_fingerprint - computed: true, optional: false, required: true
+  // key_fingerprint - computed: true, optional: false, required: false
   public get keyFingerprint() {
     return this.getStringAttribute('key_fingerprint');
   }
@@ -65,37 +60,59 @@ export class IamUserLoginProfile extends TerraformResource {
   // password_length - computed: false, optional: true, required: false
   private _passwordLength?: number;
   public get passwordLength() {
-    return this._passwordLength;
+    return this.getNumberAttribute('password_length');
   }
-  public set passwordLength(value: number | undefined) {
+  public set passwordLength(value: number ) {
     this._passwordLength = value;
+  }
+  public resetPasswordLength() {
+    this._passwordLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordLengthInput() {
+    return this._passwordLength
   }
 
   // password_reset_required - computed: false, optional: true, required: false
   private _passwordResetRequired?: boolean;
   public get passwordResetRequired() {
-    return this._passwordResetRequired;
+    return this.getBooleanAttribute('password_reset_required');
   }
-  public set passwordResetRequired(value: boolean | undefined) {
+  public set passwordResetRequired(value: boolean ) {
     this._passwordResetRequired = value;
+  }
+  public resetPasswordResetRequired() {
+    this._passwordResetRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordResetRequiredInput() {
+    return this._passwordResetRequired
   }
 
   // pgp_key - computed: false, optional: false, required: true
   private _pgpKey: string;
   public get pgpKey() {
-    return this._pgpKey;
+    return this.getStringAttribute('pgp_key');
   }
   public set pgpKey(value: string) {
     this._pgpKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pgpKeyInput() {
+    return this._pgpKey
   }
 
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this._user;
+    return this.getStringAttribute('user');
   }
   public set user(value: string) {
     this._user = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user
   }
 
   // =========
@@ -104,10 +121,10 @@ export class IamUserLoginProfile extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      password_length: this._passwordLength,
-      password_reset_required: this._passwordResetRequired,
-      pgp_key: this._pgpKey,
-      user: this._user,
+      password_length: cdktf.numberToTerraform(this._passwordLength),
+      password_reset_required: cdktf.booleanToTerraform(this._passwordResetRequired),
+      pgp_key: cdktf.stringToTerraform(this._pgpKey),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

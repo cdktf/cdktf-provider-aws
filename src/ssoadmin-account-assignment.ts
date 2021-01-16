@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsoadminAccountAssignmentConfig extends TerraformMetaArguments {
+export interface SsoadminAccountAssignmentConfig extends cdktf.TerraformMetaArguments {
   readonly instanceArn: string;
   readonly permissionSetArn: string;
   readonly principalId: string;
@@ -18,7 +17,7 @@ export interface SsoadminAccountAssignmentConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class SsoadminAccountAssignment extends TerraformResource {
+export class SsoadminAccountAssignment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -48,66 +47,89 @@ export class SsoadminAccountAssignment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_arn - computed: false, optional: false, required: true
   private _instanceArn: string;
   public get instanceArn() {
-    return this._instanceArn;
+    return this.getStringAttribute('instance_arn');
   }
   public set instanceArn(value: string) {
     this._instanceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceArnInput() {
+    return this._instanceArn
   }
 
   // permission_set_arn - computed: false, optional: false, required: true
   private _permissionSetArn: string;
   public get permissionSetArn() {
-    return this._permissionSetArn;
+    return this.getStringAttribute('permission_set_arn');
   }
   public set permissionSetArn(value: string) {
     this._permissionSetArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionSetArnInput() {
+    return this._permissionSetArn
   }
 
   // principal_id - computed: false, optional: false, required: true
   private _principalId: string;
   public get principalId() {
-    return this._principalId;
+    return this.getStringAttribute('principal_id');
   }
   public set principalId(value: string) {
     this._principalId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalIdInput() {
+    return this._principalId
   }
 
   // principal_type - computed: false, optional: false, required: true
   private _principalType: string;
   public get principalType() {
-    return this._principalType;
+    return this.getStringAttribute('principal_type');
   }
   public set principalType(value: string) {
     this._principalType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalTypeInput() {
+    return this._principalType
   }
 
   // target_id - computed: false, optional: false, required: true
   private _targetId: string;
   public get targetId() {
-    return this._targetId;
+    return this.getStringAttribute('target_id');
   }
   public set targetId(value: string) {
     this._targetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetIdInput() {
+    return this._targetId
   }
 
   // target_type - computed: false, optional: true, required: false
   private _targetType?: string;
   public get targetType() {
-    return this._targetType;
+    return this.getStringAttribute('target_type');
   }
-  public set targetType(value: string | undefined) {
+  public set targetType(value: string ) {
     this._targetType = value;
+  }
+  public resetTargetType() {
+    this._targetType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetTypeInput() {
+    return this._targetType
   }
 
   // =========
@@ -116,12 +138,12 @@ export class SsoadminAccountAssignment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_arn: this._instanceArn,
-      permission_set_arn: this._permissionSetArn,
-      principal_id: this._principalId,
-      principal_type: this._principalType,
-      target_id: this._targetId,
-      target_type: this._targetType,
+      instance_arn: cdktf.stringToTerraform(this._instanceArn),
+      permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
+      principal_id: cdktf.stringToTerraform(this._principalId),
+      principal_type: cdktf.stringToTerraform(this._principalType),
+      target_id: cdktf.stringToTerraform(this._targetId),
+      target_type: cdktf.stringToTerraform(this._targetType),
     };
   }
 }

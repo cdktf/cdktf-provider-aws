@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2SpotPriceConfig extends TerraformMetaArguments {
+export interface DataAwsEc2SpotPriceConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly instanceType?: string;
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsEc2SpotPriceFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2SpotPriceFilterToTerraform(struct?: DataAwsEc2SpotPriceFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2SpotPrice extends TerraformDataSource {
+export class DataAwsEc2SpotPrice extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -49,36 +57,46 @@ export class DataAwsEc2SpotPrice extends TerraformDataSource {
   // availability_zone - computed: false, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this._availabilityZone;
+    return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string ) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_type - computed: false, optional: true, required: false
   private _instanceType?: string;
   public get instanceType() {
-    return this._instanceType;
+    return this.getStringAttribute('instance_type');
   }
-  public set instanceType(value: string | undefined) {
+  public set instanceType(value: string ) {
     this._instanceType = value;
   }
+  public resetInstanceType() {
+    this._instanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType
+  }
 
-  // spot_price - computed: true, optional: false, required: true
+  // spot_price - computed: true, optional: false, required: false
   public get spotPrice() {
     return this.getStringAttribute('spot_price');
   }
 
-  // spot_price_timestamp - computed: true, optional: false, required: true
+  // spot_price_timestamp - computed: true, optional: false, required: false
   public get spotPriceTimestamp() {
     return this.getStringAttribute('spot_price_timestamp');
   }
@@ -86,10 +104,17 @@ export class DataAwsEc2SpotPrice extends TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2SpotPriceFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2SpotPriceFilter[] | undefined) {
+  public set filter(value: DataAwsEc2SpotPriceFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -98,9 +123,9 @@ export class DataAwsEc2SpotPrice extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      instance_type: this._instanceType,
-      filter: this._filter,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      filter: cdktf.listMapper(dataAwsEc2SpotPriceFilterToTerraform)(this._filter),
     };
   }
 }

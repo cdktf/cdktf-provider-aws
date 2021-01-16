@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueSchemaConfig extends TerraformMetaArguments {
+export interface GlueSchemaConfig extends cdktf.TerraformMetaArguments {
   readonly compatibility: string;
   readonly dataFormat: string;
   readonly description?: string;
@@ -19,7 +18,7 @@ export interface GlueSchemaConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GlueSchema extends TerraformResource {
+export class GlueSchema extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,7 +48,7 @@ export class GlueSchema extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -57,45 +56,56 @@ export class GlueSchema extends TerraformResource {
   // compatibility - computed: false, optional: false, required: true
   private _compatibility: string;
   public get compatibility() {
-    return this._compatibility;
+    return this.getStringAttribute('compatibility');
   }
   public set compatibility(value: string) {
     this._compatibility = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compatibilityInput() {
+    return this._compatibility
   }
 
   // data_format - computed: false, optional: false, required: true
   private _dataFormat: string;
   public get dataFormat() {
-    return this._dataFormat;
+    return this.getStringAttribute('data_format');
   }
   public set dataFormat(value: string) {
     this._dataFormat = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataFormatInput() {
+    return this._dataFormat
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // latest_schema_version - computed: true, optional: false, required: true
+  // latest_schema_version - computed: true, optional: false, required: false
   public get latestSchemaVersion() {
     return this.getNumberAttribute('latest_schema_version');
   }
 
-  // next_schema_version - computed: true, optional: false, required: true
+  // next_schema_version - computed: true, optional: false, required: false
   public get nextSchemaVersion() {
     return this.getNumberAttribute('next_schema_version');
   }
@@ -103,18 +113,25 @@ export class GlueSchema extends TerraformResource {
   // registry_arn - computed: true, optional: true, required: false
   private _registryArn?: string;
   public get registryArn() {
-    return this._registryArn ?? this.getStringAttribute('registry_arn');
+    return this.getStringAttribute('registry_arn');
   }
-  public set registryArn(value: string | undefined) {
+  public set registryArn(value: string) {
     this._registryArn = value;
   }
+  public resetRegistryArn() {
+    this._registryArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get registryArnInput() {
+    return this._registryArn
+  }
 
-  // registry_name - computed: true, optional: false, required: true
+  // registry_name - computed: true, optional: false, required: false
   public get registryName() {
     return this.getStringAttribute('registry_name');
   }
 
-  // schema_checkpoint - computed: true, optional: false, required: true
+  // schema_checkpoint - computed: true, optional: false, required: false
   public get schemaCheckpoint() {
     return this.getNumberAttribute('schema_checkpoint');
   }
@@ -122,28 +139,43 @@ export class GlueSchema extends TerraformResource {
   // schema_definition - computed: false, optional: false, required: true
   private _schemaDefinition: string;
   public get schemaDefinition() {
-    return this._schemaDefinition;
+    return this.getStringAttribute('schema_definition');
   }
   public set schemaDefinition(value: string) {
     this._schemaDefinition = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaDefinitionInput() {
+    return this._schemaDefinition
   }
 
   // schema_name - computed: false, optional: false, required: true
   private _schemaName: string;
   public get schemaName() {
-    return this._schemaName;
+    return this.getStringAttribute('schema_name');
   }
   public set schemaName(value: string) {
     this._schemaName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaNameInput() {
+    return this._schemaName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -152,13 +184,13 @@ export class GlueSchema extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compatibility: this._compatibility,
-      data_format: this._dataFormat,
-      description: this._description,
-      registry_arn: this._registryArn,
-      schema_definition: this._schemaDefinition,
-      schema_name: this._schemaName,
-      tags: this._tags,
+      compatibility: cdktf.stringToTerraform(this._compatibility),
+      data_format: cdktf.stringToTerraform(this._dataFormat),
+      description: cdktf.stringToTerraform(this._description),
+      registry_arn: cdktf.stringToTerraform(this._registryArn),
+      schema_definition: cdktf.stringToTerraform(this._schemaDefinition),
+      schema_name: cdktf.stringToTerraform(this._schemaName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpnGatewayConfig extends TerraformMetaArguments {
+export interface VpnGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly amazonSideAsn?: string;
   readonly availabilityZone?: string;
   readonly tags?: { [key: string]: string };
@@ -16,7 +15,7 @@ export interface VpnGatewayConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class VpnGateway extends TerraformResource {
+export class VpnGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,13 +45,20 @@ export class VpnGateway extends TerraformResource {
   // amazon_side_asn - computed: true, optional: true, required: false
   private _amazonSideAsn?: string;
   public get amazonSideAsn() {
-    return this._amazonSideAsn ?? this.getStringAttribute('amazon_side_asn');
+    return this.getStringAttribute('amazon_side_asn');
   }
-  public set amazonSideAsn(value: string | undefined) {
+  public set amazonSideAsn(value: string) {
     this._amazonSideAsn = value;
   }
+  public resetAmazonSideAsn() {
+    this._amazonSideAsn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amazonSideAsnInput() {
+    return this._amazonSideAsn
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -60,37 +66,54 @@ export class VpnGateway extends TerraformResource {
   // availability_zone - computed: false, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this._availabilityZone;
+    return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string ) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_id - computed: true, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
-    return this._vpcId ?? this.getStringAttribute('vpc_id');
+    return this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string | undefined) {
+  public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // =========
@@ -99,10 +122,10 @@ export class VpnGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amazon_side_asn: this._amazonSideAsn,
-      availability_zone: this._availabilityZone,
-      tags: this._tags,
-      vpc_id: this._vpcId,
+      amazon_side_asn: cdktf.stringToTerraform(this._amazonSideAsn),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

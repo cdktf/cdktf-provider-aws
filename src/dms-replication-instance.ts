@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DmsReplicationInstanceConfig extends TerraformMetaArguments {
+export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly allocatedStorage?: number;
   readonly allowMajorVersionUpgrade?: boolean;
   readonly applyImmediately?: boolean;
@@ -32,9 +31,19 @@ export interface DmsReplicationInstanceTimeouts {
   readonly update?: string;
 }
 
+function dmsReplicationInstanceTimeoutsToTerraform(struct?: DmsReplicationInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DmsReplicationInstance extends TerraformResource {
+export class DmsReplicationInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -76,103 +85,169 @@ export class DmsReplicationInstance extends TerraformResource {
   // allocated_storage - computed: true, optional: true, required: false
   private _allocatedStorage?: number;
   public get allocatedStorage() {
-    return this._allocatedStorage ?? this.getNumberAttribute('allocated_storage');
+    return this.getNumberAttribute('allocated_storage');
   }
-  public set allocatedStorage(value: number | undefined) {
+  public set allocatedStorage(value: number) {
     this._allocatedStorage = value;
+  }
+  public resetAllocatedStorage() {
+    this._allocatedStorage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocatedStorageInput() {
+    return this._allocatedStorage
   }
 
   // allow_major_version_upgrade - computed: false, optional: true, required: false
   private _allowMajorVersionUpgrade?: boolean;
   public get allowMajorVersionUpgrade() {
-    return this._allowMajorVersionUpgrade;
+    return this.getBooleanAttribute('allow_major_version_upgrade');
   }
-  public set allowMajorVersionUpgrade(value: boolean | undefined) {
+  public set allowMajorVersionUpgrade(value: boolean ) {
     this._allowMajorVersionUpgrade = value;
+  }
+  public resetAllowMajorVersionUpgrade() {
+    this._allowMajorVersionUpgrade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowMajorVersionUpgradeInput() {
+    return this._allowMajorVersionUpgrade
   }
 
   // apply_immediately - computed: false, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this._applyImmediately;
+    return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | undefined) {
+  public set applyImmediately(value: boolean ) {
     this._applyImmediately = value;
+  }
+  public resetApplyImmediately() {
+    this._applyImmediately = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyImmediatelyInput() {
+    return this._applyImmediately
   }
 
   // auto_minor_version_upgrade - computed: true, optional: true, required: false
   private _autoMinorVersionUpgrade?: boolean;
   public get autoMinorVersionUpgrade() {
-    return this._autoMinorVersionUpgrade ?? this.getBooleanAttribute('auto_minor_version_upgrade');
+    return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | undefined) {
+  public set autoMinorVersionUpgrade(value: boolean) {
     this._autoMinorVersionUpgrade = value;
+  }
+  public resetAutoMinorVersionUpgrade() {
+    this._autoMinorVersionUpgrade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoMinorVersionUpgradeInput() {
+    return this._autoMinorVersionUpgrade
   }
 
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
+    return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this._engineVersion ?? this.getStringAttribute('engine_version');
+    return this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string | undefined) {
+  public set engineVersion(value: string) {
     this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_arn - computed: true, optional: true, required: false
   private _kmsKeyArn?: string;
   public get kmsKeyArn() {
-    return this._kmsKeyArn ?? this.getStringAttribute('kms_key_arn');
+    return this.getStringAttribute('kms_key_arn');
   }
-  public set kmsKeyArn(value: string | undefined) {
+  public set kmsKeyArn(value: string) {
     this._kmsKeyArn = value;
+  }
+  public resetKmsKeyArn() {
+    this._kmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn
   }
 
   // multi_az - computed: true, optional: true, required: false
   private _multiAz?: boolean;
   public get multiAz() {
-    return this._multiAz ?? this.getBooleanAttribute('multi_az');
+    return this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean | undefined) {
+  public set multiAz(value: boolean) {
     this._multiAz = value;
+  }
+  public resetMultiAz() {
+    this._multiAz = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multiAzInput() {
+    return this._multiAz
   }
 
   // preferred_maintenance_window - computed: true, optional: true, required: false
   private _preferredMaintenanceWindow?: string;
   public get preferredMaintenanceWindow() {
-    return this._preferredMaintenanceWindow ?? this.getStringAttribute('preferred_maintenance_window');
+    return this.getStringAttribute('preferred_maintenance_window');
   }
-  public set preferredMaintenanceWindow(value: string | undefined) {
+  public set preferredMaintenanceWindow(value: string) {
     this._preferredMaintenanceWindow = value;
+  }
+  public resetPreferredMaintenanceWindow() {
+    this._preferredMaintenanceWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredMaintenanceWindowInput() {
+    return this._preferredMaintenanceWindow
   }
 
   // publicly_accessible - computed: true, optional: true, required: false
   private _publiclyAccessible?: boolean;
   public get publiclyAccessible() {
-    return this._publiclyAccessible ?? this.getBooleanAttribute('publicly_accessible');
+    return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean | undefined) {
+  public set publiclyAccessible(value: boolean) {
     this._publiclyAccessible = value;
   }
+  public resetPubliclyAccessible() {
+    this._publiclyAccessible = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publiclyAccessibleInput() {
+    return this._publiclyAccessible
+  }
 
-  // replication_instance_arn - computed: true, optional: false, required: true
+  // replication_instance_arn - computed: true, optional: false, required: false
   public get replicationInstanceArn() {
     return this.getStringAttribute('replication_instance_arn');
   }
@@ -180,27 +255,35 @@ export class DmsReplicationInstance extends TerraformResource {
   // replication_instance_class - computed: false, optional: false, required: true
   private _replicationInstanceClass: string;
   public get replicationInstanceClass() {
-    return this._replicationInstanceClass;
+    return this.getStringAttribute('replication_instance_class');
   }
   public set replicationInstanceClass(value: string) {
     this._replicationInstanceClass = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationInstanceClassInput() {
+    return this._replicationInstanceClass
   }
 
   // replication_instance_id - computed: false, optional: false, required: true
   private _replicationInstanceId: string;
   public get replicationInstanceId() {
-    return this._replicationInstanceId;
+    return this.getStringAttribute('replication_instance_id');
   }
   public set replicationInstanceId(value: string) {
     this._replicationInstanceId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get replicationInstanceIdInput() {
+    return this._replicationInstanceId
+  }
 
-  // replication_instance_private_ips - computed: true, optional: false, required: true
+  // replication_instance_private_ips - computed: true, optional: false, required: false
   public get replicationInstancePrivateIps() {
     return this.getListAttribute('replication_instance_private_ips');
   }
 
-  // replication_instance_public_ips - computed: true, optional: false, required: true
+  // replication_instance_public_ips - computed: true, optional: false, required: false
   public get replicationInstancePublicIps() {
     return this.getListAttribute('replication_instance_public_ips');
   }
@@ -208,37 +291,65 @@ export class DmsReplicationInstance extends TerraformResource {
   // replication_subnet_group_id - computed: true, optional: true, required: false
   private _replicationSubnetGroupId?: string;
   public get replicationSubnetGroupId() {
-    return this._replicationSubnetGroupId ?? this.getStringAttribute('replication_subnet_group_id');
+    return this.getStringAttribute('replication_subnet_group_id');
   }
-  public set replicationSubnetGroupId(value: string | undefined) {
+  public set replicationSubnetGroupId(value: string) {
     this._replicationSubnetGroupId = value;
+  }
+  public resetReplicationSubnetGroupId() {
+    this._replicationSubnetGroupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationSubnetGroupIdInput() {
+    return this._replicationSubnetGroupId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
-    return this._vpcSecurityGroupIds ?? this.getListAttribute('vpc_security_group_ids');
+    return this.getListAttribute('vpc_security_group_ids');
   }
-  public set vpcSecurityGroupIds(value: string[] | undefined) {
+  public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
+  }
+  public resetVpcSecurityGroupIds() {
+    this._vpcSecurityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcSecurityGroupIdsInput() {
+    return this._vpcSecurityGroupIds
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DmsReplicationInstanceTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: DmsReplicationInstanceTimeouts | undefined) {
+  public set timeouts(value: DmsReplicationInstanceTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -247,22 +358,22 @@ export class DmsReplicationInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_storage: this._allocatedStorage,
-      allow_major_version_upgrade: this._allowMajorVersionUpgrade,
-      apply_immediately: this._applyImmediately,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      availability_zone: this._availabilityZone,
-      engine_version: this._engineVersion,
-      kms_key_arn: this._kmsKeyArn,
-      multi_az: this._multiAz,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      publicly_accessible: this._publiclyAccessible,
-      replication_instance_class: this._replicationInstanceClass,
-      replication_instance_id: this._replicationInstanceId,
-      replication_subnet_group_id: this._replicationSubnetGroupId,
-      tags: this._tags,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      timeouts: this._timeouts,
+      allocated_storage: cdktf.numberToTerraform(this._allocatedStorage),
+      allow_major_version_upgrade: cdktf.booleanToTerraform(this._allowMajorVersionUpgrade),
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
+      multi_az: cdktf.booleanToTerraform(this._multiAz),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
+      replication_instance_class: cdktf.stringToTerraform(this._replicationInstanceClass),
+      replication_instance_id: cdktf.stringToTerraform(this._replicationInstanceId),
+      replication_subnet_group_id: cdktf.stringToTerraform(this._replicationSubnetGroupId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      timeouts: dmsReplicationInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

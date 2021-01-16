@@ -2,20 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3OutpostsEndpointConfig extends TerraformMetaArguments {
+export interface S3OutpostsEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly outpostId: string;
   readonly securityGroupId: string;
   readonly subnetId: string;
 }
-export class S3OutpostsEndpointNetworkInterfaces extends ComplexComputedList {
+export class S3OutpostsEndpointNetworkInterfaces extends cdktf.ComplexComputedList {
 
-  // network_interface_id - computed: true, optional: false, required: true
+  // network_interface_id - computed: true, optional: false, required: false
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
   }
@@ -23,7 +21,7 @@ export class S3OutpostsEndpointNetworkInterfaces extends ComplexComputedList {
 
 // Resource
 
-export class S3OutpostsEndpoint extends TerraformResource {
+export class S3OutpostsEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,31 +47,27 @@ export class S3OutpostsEndpoint extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // cidr_block - computed: true, optional: false, required: true
+  // cidr_block - computed: true, optional: false, required: false
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
 
-  // creation_time - computed: true, optional: false, required: true
+  // creation_time - computed: true, optional: false, required: false
   public get creationTime() {
     return this.getStringAttribute('creation_time');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // network_interfaces - computed: true, optional: false, required: true
+  // network_interfaces - computed: true, optional: false, required: false
   public networkInterfaces(index: string) {
     return new S3OutpostsEndpointNetworkInterfaces(this, 'network_interfaces', index);
   }
@@ -81,28 +75,40 @@ export class S3OutpostsEndpoint extends TerraformResource {
   // outpost_id - computed: false, optional: false, required: true
   private _outpostId: string;
   public get outpostId() {
-    return this._outpostId;
+    return this.getStringAttribute('outpost_id');
   }
   public set outpostId(value: string) {
     this._outpostId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outpostIdInput() {
+    return this._outpostId
   }
 
   // security_group_id - computed: false, optional: false, required: true
   private _securityGroupId: string;
   public get securityGroupId() {
-    return this._securityGroupId;
+    return this.getStringAttribute('security_group_id');
   }
   public set securityGroupId(value: string) {
     this._securityGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdInput() {
+    return this._securityGroupId
   }
 
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
   public set subnetId(value: string) {
     this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // =========
@@ -111,9 +117,9 @@ export class S3OutpostsEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      outpost_id: this._outpostId,
-      security_group_id: this._securityGroupId,
-      subnet_id: this._subnetId,
+      outpost_id: cdktf.stringToTerraform(this._outpostId),
+      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
     };
   }
 }

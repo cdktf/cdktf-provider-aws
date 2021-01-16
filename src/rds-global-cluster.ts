@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RdsGlobalClusterConfig extends TerraformMetaArguments {
+export interface RdsGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   readonly databaseName?: string;
   readonly deletionProtection?: boolean;
   readonly engine?: string;
@@ -18,14 +16,14 @@ export interface RdsGlobalClusterConfig extends TerraformMetaArguments {
   readonly sourceDbClusterIdentifier?: string;
   readonly storageEncrypted?: boolean;
 }
-export class RdsGlobalClusterGlobalClusterMembers extends ComplexComputedList {
+export class RdsGlobalClusterGlobalClusterMembers extends cdktf.ComplexComputedList {
 
-  // db_cluster_arn - computed: true, optional: false, required: true
+  // db_cluster_arn - computed: true, optional: false, required: false
   public get dbClusterArn() {
     return this.getStringAttribute('db_cluster_arn');
   }
 
-  // is_writer - computed: true, optional: false, required: true
+  // is_writer - computed: true, optional: false, required: false
   public get isWriter() {
     return this.getBooleanAttribute('is_writer');
   }
@@ -33,7 +31,7 @@ export class RdsGlobalClusterGlobalClusterMembers extends ComplexComputedList {
 
 // Resource
 
-export class RdsGlobalCluster extends TerraformResource {
+export class RdsGlobalCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -64,7 +62,7 @@ export class RdsGlobalCluster extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -72,92 +70,141 @@ export class RdsGlobalCluster extends TerraformResource {
   // database_name - computed: false, optional: true, required: false
   private _databaseName?: string;
   public get databaseName() {
-    return this._databaseName;
+    return this.getStringAttribute('database_name');
   }
-  public set databaseName(value: string | undefined) {
+  public set databaseName(value: string ) {
     this._databaseName = value;
+  }
+  public resetDatabaseName() {
+    this._databaseName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameInput() {
+    return this._databaseName
   }
 
   // deletion_protection - computed: false, optional: true, required: false
   private _deletionProtection?: boolean;
   public get deletionProtection() {
-    return this._deletionProtection;
+    return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | undefined) {
+  public set deletionProtection(value: boolean ) {
     this._deletionProtection = value;
+  }
+  public resetDeletionProtection() {
+    this._deletionProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionInput() {
+    return this._deletionProtection
   }
 
   // engine - computed: true, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this._engine ?? this.getStringAttribute('engine');
+    return this.getStringAttribute('engine');
   }
-  public set engine(value: string | undefined) {
+  public set engine(value: string) {
     this._engine = value;
+  }
+  public resetEngine() {
+    this._engine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this._engineVersion ?? this.getStringAttribute('engine_version');
+    return this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string | undefined) {
+  public set engineVersion(value: string) {
     this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion
   }
 
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this._forceDestroy;
+    return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | undefined) {
+  public set forceDestroy(value: boolean ) {
     this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy
   }
 
   // global_cluster_identifier - computed: false, optional: false, required: true
   private _globalClusterIdentifier: string;
   public get globalClusterIdentifier() {
-    return this._globalClusterIdentifier;
+    return this.getStringAttribute('global_cluster_identifier');
   }
   public set globalClusterIdentifier(value: string) {
     this._globalClusterIdentifier = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get globalClusterIdentifierInput() {
+    return this._globalClusterIdentifier
+  }
 
-  // global_cluster_members - computed: true, optional: false, required: true
+  // global_cluster_members - computed: true, optional: false, required: false
   public globalClusterMembers(index: string) {
     return new RdsGlobalClusterGlobalClusterMembers(this, 'global_cluster_members', index);
   }
 
-  // global_cluster_resource_id - computed: true, optional: false, required: true
+  // global_cluster_resource_id - computed: true, optional: false, required: false
   public get globalClusterResourceId() {
     return this.getStringAttribute('global_cluster_resource_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // source_db_cluster_identifier - computed: true, optional: true, required: false
   private _sourceDbClusterIdentifier?: string;
   public get sourceDbClusterIdentifier() {
-    return this._sourceDbClusterIdentifier ?? this.getStringAttribute('source_db_cluster_identifier');
+    return this.getStringAttribute('source_db_cluster_identifier');
   }
-  public set sourceDbClusterIdentifier(value: string | undefined) {
+  public set sourceDbClusterIdentifier(value: string) {
     this._sourceDbClusterIdentifier = value;
+  }
+  public resetSourceDbClusterIdentifier() {
+    this._sourceDbClusterIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceDbClusterIdentifierInput() {
+    return this._sourceDbClusterIdentifier
   }
 
   // storage_encrypted - computed: true, optional: true, required: false
   private _storageEncrypted?: boolean;
   public get storageEncrypted() {
-    return this._storageEncrypted ?? this.getBooleanAttribute('storage_encrypted');
+    return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean | undefined) {
+  public set storageEncrypted(value: boolean) {
     this._storageEncrypted = value;
+  }
+  public resetStorageEncrypted() {
+    this._storageEncrypted = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageEncryptedInput() {
+    return this._storageEncrypted
   }
 
   // =========
@@ -166,14 +213,14 @@ export class RdsGlobalCluster extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_name: this._databaseName,
-      deletion_protection: this._deletionProtection,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      force_destroy: this._forceDestroy,
-      global_cluster_identifier: this._globalClusterIdentifier,
-      source_db_cluster_identifier: this._sourceDbClusterIdentifier,
-      storage_encrypted: this._storageEncrypted,
+      database_name: cdktf.stringToTerraform(this._databaseName),
+      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      global_cluster_identifier: cdktf.stringToTerraform(this._globalClusterIdentifier),
+      source_db_cluster_identifier: cdktf.stringToTerraform(this._sourceDbClusterIdentifier),
+      storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
     };
   }
 }

@@ -2,35 +2,33 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLakeformationDataLakeSettingsConfig extends TerraformMetaArguments {
+export interface DataAwsLakeformationDataLakeSettingsConfig extends cdktf.TerraformMetaArguments {
   readonly catalogId?: string;
 }
-export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions extends ComplexComputedList {
+export class DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions extends cdktf.ComplexComputedList {
 
-  // permissions - computed: true, optional: false, required: true
+  // permissions - computed: true, optional: false, required: false
   public get permissions() {
     return this.getListAttribute('permissions');
   }
 
-  // principal - computed: true, optional: false, required: true
+  // principal - computed: true, optional: false, required: false
   public get principal() {
     return this.getStringAttribute('principal');
   }
 }
-export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions extends ComplexComputedList {
+export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions extends cdktf.ComplexComputedList {
 
-  // permissions - computed: true, optional: false, required: true
+  // permissions - computed: true, optional: false, required: false
   public get permissions() {
     return this.getListAttribute('permissions');
   }
 
-  // principal - computed: true, optional: false, required: true
+  // principal - computed: true, optional: false, required: false
   public get principal() {
     return this.getStringAttribute('principal');
   }
@@ -38,7 +36,7 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions e
 
 // Resource
 
-export class DataAwsLakeformationDataLakeSettings extends TerraformDataSource {
+export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -62,7 +60,7 @@ export class DataAwsLakeformationDataLakeSettings extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // admins - computed: true, optional: false, required: true
+  // admins - computed: true, optional: false, required: false
   public get admins() {
     return this.getListAttribute('admins');
   }
@@ -70,32 +68,35 @@ export class DataAwsLakeformationDataLakeSettings extends TerraformDataSource {
   // catalog_id - computed: false, optional: true, required: false
   private _catalogId?: string;
   public get catalogId() {
-    return this._catalogId;
+    return this.getStringAttribute('catalog_id');
   }
-  public set catalogId(value: string | undefined) {
+  public set catalogId(value: string ) {
     this._catalogId = value;
   }
+  public resetCatalogId() {
+    this._catalogId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogIdInput() {
+    return this._catalogId
+  }
 
-  // create_database_default_permissions - computed: true, optional: false, required: true
+  // create_database_default_permissions - computed: true, optional: false, required: false
   public createDatabaseDefaultPermissions(index: string) {
     return new DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions(this, 'create_database_default_permissions', index);
   }
 
-  // create_table_default_permissions - computed: true, optional: false, required: true
+  // create_table_default_permissions - computed: true, optional: false, required: false
   public createTableDefaultPermissions(index: string) {
     return new DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions(this, 'create_table_default_permissions', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // trusted_resource_owners - computed: true, optional: false, required: true
+  // trusted_resource_owners - computed: true, optional: false, required: false
   public get trustedResourceOwners() {
     return this.getListAttribute('trusted_resource_owners');
   }
@@ -106,7 +107,7 @@ export class DataAwsLakeformationDataLakeSettings extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_id: this._catalogId,
+      catalog_id: cdktf.stringToTerraform(this._catalogId),
     };
   }
 }

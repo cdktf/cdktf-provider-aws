@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRedshiftOrderableClusterConfig extends TerraformMetaArguments {
+export interface DataAwsRedshiftOrderableClusterConfig extends cdktf.TerraformMetaArguments {
   readonly clusterType?: string;
   readonly clusterVersion?: string;
   readonly nodeType?: string;
@@ -16,7 +15,7 @@ export interface DataAwsRedshiftOrderableClusterConfig extends TerraformMetaArgu
 
 // Resource
 
-export class DataAwsRedshiftOrderableCluster extends TerraformDataSource {
+export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -43,7 +42,7 @@ export class DataAwsRedshiftOrderableCluster extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // availability_zones - computed: true, optional: false, required: true
+  // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
@@ -51,46 +50,70 @@ export class DataAwsRedshiftOrderableCluster extends TerraformDataSource {
   // cluster_type - computed: true, optional: true, required: false
   private _clusterType?: string;
   public get clusterType() {
-    return this._clusterType ?? this.getStringAttribute('cluster_type');
+    return this.getStringAttribute('cluster_type');
   }
-  public set clusterType(value: string | undefined) {
+  public set clusterType(value: string) {
     this._clusterType = value;
+  }
+  public resetClusterType() {
+    this._clusterType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterTypeInput() {
+    return this._clusterType
   }
 
   // cluster_version - computed: true, optional: true, required: false
   private _clusterVersion?: string;
   public get clusterVersion() {
-    return this._clusterVersion ?? this.getStringAttribute('cluster_version');
+    return this.getStringAttribute('cluster_version');
   }
-  public set clusterVersion(value: string | undefined) {
+  public set clusterVersion(value: string) {
     this._clusterVersion = value;
+  }
+  public resetClusterVersion() {
+    this._clusterVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterVersionInput() {
+    return this._clusterVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // node_type - computed: true, optional: true, required: false
   private _nodeType?: string;
   public get nodeType() {
-    return this._nodeType ?? this.getStringAttribute('node_type');
+    return this.getStringAttribute('node_type');
   }
-  public set nodeType(value: string | undefined) {
+  public set nodeType(value: string) {
     this._nodeType = value;
+  }
+  public resetNodeType() {
+    this._nodeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeTypeInput() {
+    return this._nodeType
   }
 
   // preferred_node_types - computed: false, optional: true, required: false
   private _preferredNodeTypes?: string[];
   public get preferredNodeTypes() {
-    return this._preferredNodeTypes;
+    return this.getListAttribute('preferred_node_types');
   }
-  public set preferredNodeTypes(value: string[] | undefined) {
+  public set preferredNodeTypes(value: string[] ) {
     this._preferredNodeTypes = value;
+  }
+  public resetPreferredNodeTypes() {
+    this._preferredNodeTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredNodeTypesInput() {
+    return this._preferredNodeTypes
   }
 
   // =========
@@ -99,10 +122,10 @@ export class DataAwsRedshiftOrderableCluster extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_type: this._clusterType,
-      cluster_version: this._clusterVersion,
-      node_type: this._nodeType,
-      preferred_node_types: this._preferredNodeTypes,
+      cluster_type: cdktf.stringToTerraform(this._clusterType),
+      cluster_version: cdktf.stringToTerraform(this._clusterVersion),
+      node_type: cdktf.stringToTerraform(this._nodeType),
+      preferred_node_types: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredNodeTypes),
     };
   }
 }

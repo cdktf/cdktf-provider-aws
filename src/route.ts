@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RouteConfig extends TerraformMetaArguments {
+export interface RouteConfig extends cdktf.TerraformMetaArguments {
   readonly destinationCidrBlock?: string;
   readonly destinationIpv6CidrBlock?: string;
   readonly egressOnlyGatewayId?: string;
@@ -28,9 +27,18 @@ export interface RouteTimeouts {
   readonly delete?: string;
 }
 
+function routeTimeoutsToTerraform(struct?: RouteTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class Route extends TerraformResource {
+export class Route extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -69,22 +77,36 @@ export class Route extends TerraformResource {
   // destination_cidr_block - computed: false, optional: true, required: false
   private _destinationCidrBlock?: string;
   public get destinationCidrBlock() {
-    return this._destinationCidrBlock;
+    return this.getStringAttribute('destination_cidr_block');
   }
-  public set destinationCidrBlock(value: string | undefined) {
+  public set destinationCidrBlock(value: string ) {
     this._destinationCidrBlock = value;
+  }
+  public resetDestinationCidrBlock() {
+    this._destinationCidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationCidrBlockInput() {
+    return this._destinationCidrBlock
   }
 
   // destination_ipv6_cidr_block - computed: false, optional: true, required: false
   private _destinationIpv6CidrBlock?: string;
   public get destinationIpv6CidrBlock() {
-    return this._destinationIpv6CidrBlock;
+    return this.getStringAttribute('destination_ipv6_cidr_block');
   }
-  public set destinationIpv6CidrBlock(value: string | undefined) {
+  public set destinationIpv6CidrBlock(value: string ) {
     this._destinationIpv6CidrBlock = value;
   }
+  public resetDestinationIpv6CidrBlock() {
+    this._destinationIpv6CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationIpv6CidrBlockInput() {
+    return this._destinationIpv6CidrBlock
+  }
 
-  // destination_prefix_list_id - computed: true, optional: false, required: true
+  // destination_prefix_list_id - computed: true, optional: false, required: false
   public get destinationPrefixListId() {
     return this.getStringAttribute('destination_prefix_list_id');
   }
@@ -92,40 +114,57 @@ export class Route extends TerraformResource {
   // egress_only_gateway_id - computed: true, optional: true, required: false
   private _egressOnlyGatewayId?: string;
   public get egressOnlyGatewayId() {
-    return this._egressOnlyGatewayId ?? this.getStringAttribute('egress_only_gateway_id');
+    return this.getStringAttribute('egress_only_gateway_id');
   }
-  public set egressOnlyGatewayId(value: string | undefined) {
+  public set egressOnlyGatewayId(value: string) {
     this._egressOnlyGatewayId = value;
+  }
+  public resetEgressOnlyGatewayId() {
+    this._egressOnlyGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressOnlyGatewayIdInput() {
+    return this._egressOnlyGatewayId
   }
 
   // gateway_id - computed: true, optional: true, required: false
   private _gatewayId?: string;
   public get gatewayId() {
-    return this._gatewayId ?? this.getStringAttribute('gateway_id');
+    return this.getStringAttribute('gateway_id');
   }
-  public set gatewayId(value: string | undefined) {
+  public set gatewayId(value: string) {
     this._gatewayId = value;
+  }
+  public resetGatewayId() {
+    this._gatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayIdInput() {
+    return this._gatewayId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_id - computed: true, optional: true, required: false
   private _instanceId?: string;
   public get instanceId() {
-    return this._instanceId ?? this.getStringAttribute('instance_id');
+    return this.getStringAttribute('instance_id');
   }
-  public set instanceId(value: string | undefined) {
+  public set instanceId(value: string) {
     this._instanceId = value;
   }
+  public resetInstanceId() {
+    this._instanceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceIdInput() {
+    return this._instanceId
+  }
 
-  // instance_owner_id - computed: true, optional: false, required: true
+  // instance_owner_id - computed: true, optional: false, required: false
   public get instanceOwnerId() {
     return this.getStringAttribute('instance_owner_id');
   }
@@ -133,31 +172,52 @@ export class Route extends TerraformResource {
   // local_gateway_id - computed: true, optional: true, required: false
   private _localGatewayId?: string;
   public get localGatewayId() {
-    return this._localGatewayId ?? this.getStringAttribute('local_gateway_id');
+    return this.getStringAttribute('local_gateway_id');
   }
-  public set localGatewayId(value: string | undefined) {
+  public set localGatewayId(value: string) {
     this._localGatewayId = value;
+  }
+  public resetLocalGatewayId() {
+    this._localGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localGatewayIdInput() {
+    return this._localGatewayId
   }
 
   // nat_gateway_id - computed: true, optional: true, required: false
   private _natGatewayId?: string;
   public get natGatewayId() {
-    return this._natGatewayId ?? this.getStringAttribute('nat_gateway_id');
+    return this.getStringAttribute('nat_gateway_id');
   }
-  public set natGatewayId(value: string | undefined) {
+  public set natGatewayId(value: string) {
     this._natGatewayId = value;
+  }
+  public resetNatGatewayId() {
+    this._natGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get natGatewayIdInput() {
+    return this._natGatewayId
   }
 
   // network_interface_id - computed: true, optional: true, required: false
   private _networkInterfaceId?: string;
   public get networkInterfaceId() {
-    return this._networkInterfaceId ?? this.getStringAttribute('network_interface_id');
+    return this.getStringAttribute('network_interface_id');
   }
-  public set networkInterfaceId(value: string | undefined) {
+  public set networkInterfaceId(value: string) {
     this._networkInterfaceId = value;
   }
+  public resetNetworkInterfaceId() {
+    this._networkInterfaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceIdInput() {
+    return this._networkInterfaceId
+  }
 
-  // origin - computed: true, optional: false, required: true
+  // origin - computed: true, optional: false, required: false
   public get origin() {
     return this.getStringAttribute('origin');
   }
@@ -165,13 +225,17 @@ export class Route extends TerraformResource {
   // route_table_id - computed: false, optional: false, required: true
   private _routeTableId: string;
   public get routeTableId() {
-    return this._routeTableId;
+    return this.getStringAttribute('route_table_id');
   }
   public set routeTableId(value: string) {
     this._routeTableId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get routeTableIdInput() {
+    return this._routeTableId
+  }
 
-  // state - computed: true, optional: false, required: true
+  // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
   }
@@ -179,37 +243,65 @@ export class Route extends TerraformResource {
   // transit_gateway_id - computed: false, optional: true, required: false
   private _transitGatewayId?: string;
   public get transitGatewayId() {
-    return this._transitGatewayId;
+    return this.getStringAttribute('transit_gateway_id');
   }
-  public set transitGatewayId(value: string | undefined) {
+  public set transitGatewayId(value: string ) {
     this._transitGatewayId = value;
+  }
+  public resetTransitGatewayId() {
+    this._transitGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayIdInput() {
+    return this._transitGatewayId
   }
 
   // vpc_endpoint_id - computed: false, optional: true, required: false
   private _vpcEndpointId?: string;
   public get vpcEndpointId() {
-    return this._vpcEndpointId;
+    return this.getStringAttribute('vpc_endpoint_id');
   }
-  public set vpcEndpointId(value: string | undefined) {
+  public set vpcEndpointId(value: string ) {
     this._vpcEndpointId = value;
+  }
+  public resetVpcEndpointId() {
+    this._vpcEndpointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEndpointIdInput() {
+    return this._vpcEndpointId
   }
 
   // vpc_peering_connection_id - computed: false, optional: true, required: false
   private _vpcPeeringConnectionId?: string;
   public get vpcPeeringConnectionId() {
-    return this._vpcPeeringConnectionId;
+    return this.getStringAttribute('vpc_peering_connection_id');
   }
-  public set vpcPeeringConnectionId(value: string | undefined) {
+  public set vpcPeeringConnectionId(value: string ) {
     this._vpcPeeringConnectionId = value;
+  }
+  public resetVpcPeeringConnectionId() {
+    this._vpcPeeringConnectionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcPeeringConnectionIdInput() {
+    return this._vpcPeeringConnectionId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: RouteTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: RouteTimeouts | undefined) {
+  public set timeouts(value: RouteTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -218,19 +310,19 @@ export class Route extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_cidr_block: this._destinationCidrBlock,
-      destination_ipv6_cidr_block: this._destinationIpv6CidrBlock,
-      egress_only_gateway_id: this._egressOnlyGatewayId,
-      gateway_id: this._gatewayId,
-      instance_id: this._instanceId,
-      local_gateway_id: this._localGatewayId,
-      nat_gateway_id: this._natGatewayId,
-      network_interface_id: this._networkInterfaceId,
-      route_table_id: this._routeTableId,
-      transit_gateway_id: this._transitGatewayId,
-      vpc_endpoint_id: this._vpcEndpointId,
-      vpc_peering_connection_id: this._vpcPeeringConnectionId,
-      timeouts: this._timeouts,
+      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      destination_ipv6_cidr_block: cdktf.stringToTerraform(this._destinationIpv6CidrBlock),
+      egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
+      gateway_id: cdktf.stringToTerraform(this._gatewayId),
+      instance_id: cdktf.stringToTerraform(this._instanceId),
+      local_gateway_id: cdktf.stringToTerraform(this._localGatewayId),
+      nat_gateway_id: cdktf.stringToTerraform(this._natGatewayId),
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      route_table_id: cdktf.stringToTerraform(this._routeTableId),
+      transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
+      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
+      timeouts: routeTimeoutsToTerraform(this._timeouts),
     };
   }
 }

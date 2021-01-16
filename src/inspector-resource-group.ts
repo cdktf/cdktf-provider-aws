@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface InspectorResourceGroupConfig extends TerraformMetaArguments {
+export interface InspectorResourceGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tags: { [key: string]: string };
 }
 
 // Resource
 
-export class InspectorResourceGroup extends TerraformResource {
+export class InspectorResourceGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -37,27 +36,27 @@ export class InspectorResourceGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // tags - computed: false, optional: false, required: true
   private _tags: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
   public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -66,7 +65,7 @@ export class InspectorResourceGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

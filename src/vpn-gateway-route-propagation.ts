@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpnGatewayRoutePropagationConfig extends TerraformMetaArguments {
+export interface VpnGatewayRoutePropagationConfig extends cdktf.TerraformMetaArguments {
   readonly routeTableId: string;
   readonly vpnGatewayId: string;
 }
 
 // Resource
 
-export class VpnGatewayRoutePropagation extends TerraformResource {
+export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class VpnGatewayRoutePropagation extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // route_table_id - computed: false, optional: false, required: true
   private _routeTableId: string;
   public get routeTableId() {
-    return this._routeTableId;
+    return this.getStringAttribute('route_table_id');
   }
   public set routeTableId(value: string) {
     this._routeTableId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeTableIdInput() {
+    return this._routeTableId
   }
 
   // vpn_gateway_id - computed: false, optional: false, required: true
   private _vpnGatewayId: string;
   public get vpnGatewayId() {
-    return this._vpnGatewayId;
+    return this.getStringAttribute('vpn_gateway_id');
   }
   public set vpnGatewayId(value: string) {
     this._vpnGatewayId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpnGatewayIdInput() {
+    return this._vpnGatewayId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class VpnGatewayRoutePropagation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      route_table_id: this._routeTableId,
-      vpn_gateway_id: this._vpnGatewayId,
+      route_table_id: cdktf.stringToTerraform(this._routeTableId),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
     };
   }
 }

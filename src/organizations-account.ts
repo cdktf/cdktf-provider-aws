@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OrganizationsAccountConfig extends TerraformMetaArguments {
+export interface OrganizationsAccountConfig extends cdktf.TerraformMetaArguments {
   readonly email: string;
   readonly iamUserAccessToBilling?: string;
   readonly name: string;
@@ -18,7 +17,7 @@ export interface OrganizationsAccountConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class OrganizationsAccount extends TerraformResource {
+export class OrganizationsAccount extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,7 +46,7 @@ export class OrganizationsAccount extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -55,36 +54,43 @@ export class OrganizationsAccount extends TerraformResource {
   // email - computed: false, optional: false, required: true
   private _email: string;
   public get email() {
-    return this._email;
+    return this.getStringAttribute('email');
   }
   public set email(value: string) {
     this._email = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email
   }
 
   // iam_user_access_to_billing - computed: false, optional: true, required: false
   private _iamUserAccessToBilling?: string;
   public get iamUserAccessToBilling() {
-    return this._iamUserAccessToBilling;
+    return this.getStringAttribute('iam_user_access_to_billing');
   }
-  public set iamUserAccessToBilling(value: string | undefined) {
+  public set iamUserAccessToBilling(value: string ) {
     this._iamUserAccessToBilling = value;
+  }
+  public resetIamUserAccessToBilling() {
+    this._iamUserAccessToBilling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamUserAccessToBillingInput() {
+    return this._iamUserAccessToBilling
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // joined_method - computed: true, optional: false, required: true
+  // joined_method - computed: true, optional: false, required: false
   public get joinedMethod() {
     return this.getStringAttribute('joined_method');
   }
 
-  // joined_timestamp - computed: true, optional: false, required: true
+  // joined_timestamp - computed: true, optional: false, required: false
   public get joinedTimestamp() {
     return this.getStringAttribute('joined_timestamp');
   }
@@ -92,31 +98,49 @@ export class OrganizationsAccount extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // parent_id - computed: true, optional: true, required: false
   private _parentId?: string;
   public get parentId() {
-    return this._parentId ?? this.getStringAttribute('parent_id');
+    return this.getStringAttribute('parent_id');
   }
-  public set parentId(value: string | undefined) {
+  public set parentId(value: string) {
     this._parentId = value;
+  }
+  public resetParentId() {
+    this._parentId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentIdInput() {
+    return this._parentId
   }
 
   // role_name - computed: false, optional: true, required: false
   private _roleName?: string;
   public get roleName() {
-    return this._roleName;
+    return this.getStringAttribute('role_name');
   }
-  public set roleName(value: string | undefined) {
+  public set roleName(value: string ) {
     this._roleName = value;
   }
+  public resetRoleName() {
+    this._roleName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleNameInput() {
+    return this._roleName
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -124,10 +148,17 @@ export class OrganizationsAccount extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -136,12 +167,12 @@ export class OrganizationsAccount extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email: this._email,
-      iam_user_access_to_billing: this._iamUserAccessToBilling,
-      name: this._name,
-      parent_id: this._parentId,
-      role_name: this._roleName,
-      tags: this._tags,
+      email: cdktf.stringToTerraform(this._email),
+      iam_user_access_to_billing: cdktf.stringToTerraform(this._iamUserAccessToBilling),
+      name: cdktf.stringToTerraform(this._name),
+      parent_id: cdktf.stringToTerraform(this._parentId),
+      role_name: cdktf.stringToTerraform(this._roleName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

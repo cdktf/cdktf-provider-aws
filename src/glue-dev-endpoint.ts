@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueDevEndpointConfig extends TerraformMetaArguments {
+export interface GlueDevEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly arguments?: { [key: string]: string };
   readonly extraJarsS3Path?: string;
   readonly extraPythonLibsS3Path?: string;
@@ -27,7 +26,7 @@ export interface GlueDevEndpointConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GlueDevEndpoint extends TerraformResource {
+export class GlueDevEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -68,18 +67,25 @@ export class GlueDevEndpoint extends TerraformResource {
   // arguments - computed: false, optional: true, required: false
   private _arguments?: { [key: string]: string };
   public get arguments() {
-    return this._arguments;
+    return this.interpolationForAttribute('arguments') as any;
   }
-  public set arguments(value: { [key: string]: string } | undefined) {
+  public set arguments(value: { [key: string]: string } ) {
     this._arguments = value;
   }
+  public resetArguments() {
+    this._arguments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get argumentsInput() {
+    return this._arguments
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zone - computed: true, optional: false, required: true
+  // availability_zone - computed: true, optional: false, required: false
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
@@ -87,22 +93,36 @@ export class GlueDevEndpoint extends TerraformResource {
   // extra_jars_s3_path - computed: false, optional: true, required: false
   private _extraJarsS3Path?: string;
   public get extraJarsS3Path() {
-    return this._extraJarsS3Path;
+    return this.getStringAttribute('extra_jars_s3_path');
   }
-  public set extraJarsS3Path(value: string | undefined) {
+  public set extraJarsS3Path(value: string ) {
     this._extraJarsS3Path = value;
+  }
+  public resetExtraJarsS3Path() {
+    this._extraJarsS3Path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraJarsS3PathInput() {
+    return this._extraJarsS3Path
   }
 
   // extra_python_libs_s3_path - computed: false, optional: true, required: false
   private _extraPythonLibsS3Path?: string;
   public get extraPythonLibsS3Path() {
-    return this._extraPythonLibsS3Path;
+    return this.getStringAttribute('extra_python_libs_s3_path');
   }
-  public set extraPythonLibsS3Path(value: string | undefined) {
+  public set extraPythonLibsS3Path(value: string ) {
     this._extraPythonLibsS3Path = value;
   }
+  public resetExtraPythonLibsS3Path() {
+    this._extraPythonLibsS3Path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraPythonLibsS3PathInput() {
+    return this._extraPythonLibsS3Path
+  }
 
-  // failure_reason - computed: true, optional: false, required: true
+  // failure_reason - computed: true, optional: false, required: false
   public get failureReason() {
     return this.getStringAttribute('failure_reason');
   }
@@ -110,54 +130,75 @@ export class GlueDevEndpoint extends TerraformResource {
   // glue_version - computed: false, optional: true, required: false
   private _glueVersion?: string;
   public get glueVersion() {
-    return this._glueVersion;
+    return this.getStringAttribute('glue_version');
   }
-  public set glueVersion(value: string | undefined) {
+  public set glueVersion(value: string ) {
     this._glueVersion = value;
+  }
+  public resetGlueVersion() {
+    this._glueVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get glueVersionInput() {
+    return this._glueVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // number_of_nodes - computed: false, optional: true, required: false
   private _numberOfNodes?: number;
   public get numberOfNodes() {
-    return this._numberOfNodes;
+    return this.getNumberAttribute('number_of_nodes');
   }
-  public set numberOfNodes(value: number | undefined) {
+  public set numberOfNodes(value: number ) {
     this._numberOfNodes = value;
+  }
+  public resetNumberOfNodes() {
+    this._numberOfNodes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfNodesInput() {
+    return this._numberOfNodes
   }
 
   // number_of_workers - computed: false, optional: true, required: false
   private _numberOfWorkers?: number;
   public get numberOfWorkers() {
-    return this._numberOfWorkers;
+    return this.getNumberAttribute('number_of_workers');
   }
-  public set numberOfWorkers(value: number | undefined) {
+  public set numberOfWorkers(value: number ) {
     this._numberOfWorkers = value;
   }
+  public resetNumberOfWorkers() {
+    this._numberOfWorkers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfWorkersInput() {
+    return this._numberOfWorkers
+  }
 
-  // private_address - computed: true, optional: false, required: true
+  // private_address - computed: true, optional: false, required: false
   public get privateAddress() {
     return this.getStringAttribute('private_address');
   }
 
-  // public_address - computed: true, optional: false, required: true
+  // public_address - computed: true, optional: false, required: false
   public get publicAddress() {
     return this.getStringAttribute('public_address');
   }
@@ -165,49 +206,81 @@ export class GlueDevEndpoint extends TerraformResource {
   // public_key - computed: false, optional: true, required: false
   private _publicKey?: string;
   public get publicKey() {
-    return this._publicKey;
+    return this.getStringAttribute('public_key');
   }
-  public set publicKey(value: string | undefined) {
+  public set publicKey(value: string ) {
     this._publicKey = value;
+  }
+  public resetPublicKey() {
+    this._publicKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicKeyInput() {
+    return this._publicKey
   }
 
   // public_keys - computed: false, optional: true, required: false
   private _publicKeys?: string[];
   public get publicKeys() {
-    return this._publicKeys;
+    return this.getListAttribute('public_keys');
   }
-  public set publicKeys(value: string[] | undefined) {
+  public set publicKeys(value: string[] ) {
     this._publicKeys = value;
+  }
+  public resetPublicKeys() {
+    this._publicKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicKeysInput() {
+    return this._publicKeys
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // security_configuration - computed: false, optional: true, required: false
   private _securityConfiguration?: string;
   public get securityConfiguration() {
-    return this._securityConfiguration;
+    return this.getStringAttribute('security_configuration');
   }
-  public set securityConfiguration(value: string | undefined) {
+  public set securityConfiguration(value: string ) {
     this._securityConfiguration = value;
+  }
+  public resetSecurityConfiguration() {
+    this._securityConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityConfigurationInput() {
+    return this._securityConfiguration
   }
 
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[];
   public get securityGroupIds() {
-    return this._securityGroupIds;
+    return this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[] | undefined) {
+  public set securityGroupIds(value: string[] ) {
     this._securityGroupIds = value;
   }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -215,22 +288,36 @@ export class GlueDevEndpoint extends TerraformResource {
   // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string ) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -238,18 +325,25 @@ export class GlueDevEndpoint extends TerraformResource {
   // worker_type - computed: false, optional: true, required: false
   private _workerType?: string;
   public get workerType() {
-    return this._workerType;
+    return this.getStringAttribute('worker_type');
   }
-  public set workerType(value: string | undefined) {
+  public set workerType(value: string ) {
     this._workerType = value;
   }
+  public resetWorkerType() {
+    this._workerType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workerTypeInput() {
+    return this._workerType
+  }
 
-  // yarn_endpoint_address - computed: true, optional: false, required: true
+  // yarn_endpoint_address - computed: true, optional: false, required: false
   public get yarnEndpointAddress() {
     return this.getStringAttribute('yarn_endpoint_address');
   }
 
-  // zeppelin_remote_spark_interpreter_port - computed: true, optional: false, required: true
+  // zeppelin_remote_spark_interpreter_port - computed: true, optional: false, required: false
   public get zeppelinRemoteSparkInterpreterPort() {
     return this.getNumberAttribute('zeppelin_remote_spark_interpreter_port');
   }
@@ -260,21 +354,21 @@ export class GlueDevEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arguments: this._arguments,
-      extra_jars_s3_path: this._extraJarsS3Path,
-      extra_python_libs_s3_path: this._extraPythonLibsS3Path,
-      glue_version: this._glueVersion,
-      name: this._name,
-      number_of_nodes: this._numberOfNodes,
-      number_of_workers: this._numberOfWorkers,
-      public_key: this._publicKey,
-      public_keys: this._publicKeys,
-      role_arn: this._roleArn,
-      security_configuration: this._securityConfiguration,
-      security_group_ids: this._securityGroupIds,
-      subnet_id: this._subnetId,
-      tags: this._tags,
-      worker_type: this._workerType,
+      arguments: cdktf.hashMapper(cdktf.anyToTerraform)(this._arguments),
+      extra_jars_s3_path: cdktf.stringToTerraform(this._extraJarsS3Path),
+      extra_python_libs_s3_path: cdktf.stringToTerraform(this._extraPythonLibsS3Path),
+      glue_version: cdktf.stringToTerraform(this._glueVersion),
+      name: cdktf.stringToTerraform(this._name),
+      number_of_nodes: cdktf.numberToTerraform(this._numberOfNodes),
+      number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
+      public_key: cdktf.stringToTerraform(this._publicKey),
+      public_keys: cdktf.listMapper(cdktf.stringToTerraform)(this._publicKeys),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      worker_type: cdktf.stringToTerraform(this._workerType),
     };
   }
 }

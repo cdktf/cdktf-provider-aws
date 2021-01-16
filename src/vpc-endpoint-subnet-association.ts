@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointSubnetAssociationConfig extends TerraformMetaArguments {
+export interface VpcEndpointSubnetAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly subnetId: string;
   readonly vpcEndpointId: string;
   /** timeouts block */
@@ -18,9 +17,18 @@ export interface VpcEndpointSubnetAssociationTimeouts {
   readonly delete?: string;
 }
 
+function vpcEndpointSubnetAssociationTimeoutsToTerraform(struct?: VpcEndpointSubnetAssociationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class VpcEndpointSubnetAssociation extends TerraformResource {
+export class VpcEndpointSubnetAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -47,39 +55,50 @@ export class VpcEndpointSubnetAssociation extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
   public set subnetId(value: string) {
     this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // vpc_endpoint_id - computed: false, optional: false, required: true
   private _vpcEndpointId: string;
   public get vpcEndpointId() {
-    return this._vpcEndpointId;
+    return this.getStringAttribute('vpc_endpoint_id');
   }
   public set vpcEndpointId(value: string) {
     this._vpcEndpointId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEndpointIdInput() {
+    return this._vpcEndpointId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: VpcEndpointSubnetAssociationTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: VpcEndpointSubnetAssociationTimeouts | undefined) {
+  public set timeouts(value: VpcEndpointSubnetAssociationTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -88,9 +107,9 @@ export class VpcEndpointSubnetAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      subnet_id: this._subnetId,
-      vpc_endpoint_id: this._vpcEndpointId,
-      timeouts: this._timeouts,
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      timeouts: vpcEndpointSubnetAssociationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

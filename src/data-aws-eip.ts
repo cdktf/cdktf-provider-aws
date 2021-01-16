@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEipConfig extends TerraformMetaArguments {
+export interface DataAwsEipConfig extends cdktf.TerraformMetaArguments {
   readonly publicIp?: string;
   readonly tags?: { [key: string]: string };
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsEipFilter {
   readonly values: string[];
 }
 
+function dataAwsEipFilterToTerraform(struct?: DataAwsEipFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEip extends TerraformDataSource {
+export class DataAwsEip extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,66 +54,62 @@ export class DataAwsEip extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // association_id - computed: true, optional: false, required: true
+  // association_id - computed: true, optional: false, required: false
   public get associationId() {
     return this.getStringAttribute('association_id');
   }
 
-  // carrier_ip - computed: true, optional: false, required: true
+  // carrier_ip - computed: true, optional: false, required: false
   public get carrierIp() {
     return this.getStringAttribute('carrier_ip');
   }
 
-  // customer_owned_ip - computed: true, optional: false, required: true
+  // customer_owned_ip - computed: true, optional: false, required: false
   public get customerOwnedIp() {
     return this.getStringAttribute('customer_owned_ip');
   }
 
-  // customer_owned_ipv4_pool - computed: true, optional: false, required: true
+  // customer_owned_ipv4_pool - computed: true, optional: false, required: false
   public get customerOwnedIpv4Pool() {
     return this.getStringAttribute('customer_owned_ipv4_pool');
   }
 
-  // domain - computed: true, optional: false, required: true
+  // domain - computed: true, optional: false, required: false
   public get domain() {
     return this.getStringAttribute('domain');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // instance_id - computed: true, optional: false, required: true
+  // instance_id - computed: true, optional: false, required: false
   public get instanceId() {
     return this.getStringAttribute('instance_id');
   }
 
-  // network_interface_id - computed: true, optional: false, required: true
+  // network_interface_id - computed: true, optional: false, required: false
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
   }
 
-  // network_interface_owner_id - computed: true, optional: false, required: true
+  // network_interface_owner_id - computed: true, optional: false, required: false
   public get networkInterfaceOwnerId() {
     return this.getStringAttribute('network_interface_owner_id');
   }
 
-  // private_dns - computed: true, optional: false, required: true
+  // private_dns - computed: true, optional: false, required: false
   public get privateDns() {
     return this.getStringAttribute('private_dns');
   }
 
-  // private_ip - computed: true, optional: false, required: true
+  // private_ip - computed: true, optional: false, required: false
   public get privateIp() {
     return this.getStringAttribute('private_ip');
   }
 
-  // public_dns - computed: true, optional: false, required: true
+  // public_dns - computed: true, optional: false, required: false
   public get publicDns() {
     return this.getStringAttribute('public_dns');
   }
@@ -113,33 +117,54 @@ export class DataAwsEip extends TerraformDataSource {
   // public_ip - computed: true, optional: true, required: false
   private _publicIp?: string;
   public get publicIp() {
-    return this._publicIp ?? this.getStringAttribute('public_ip');
+    return this.getStringAttribute('public_ip');
   }
-  public set publicIp(value: string | undefined) {
+  public set publicIp(value: string) {
     this._publicIp = value;
   }
+  public resetPublicIp() {
+    this._publicIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicIpInput() {
+    return this._publicIp
+  }
 
-  // public_ipv4_pool - computed: true, optional: false, required: true
+  // public_ipv4_pool - computed: true, optional: false, required: false
   public get publicIpv4Pool() {
     return this.getStringAttribute('public_ipv4_pool');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEipFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEipFilter[] | undefined) {
+  public set filter(value: DataAwsEipFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -148,9 +173,9 @@ export class DataAwsEip extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      public_ip: this._publicIp,
-      tags: this._tags,
-      filter: this._filter,
+      public_ip: cdktf.stringToTerraform(this._publicIp),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEipFilterToTerraform)(this._filter),
     };
   }
 }

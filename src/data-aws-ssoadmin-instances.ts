@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSsoadminInstancesConfig extends TerraformMetaArguments {
+export interface DataAwsSsoadminInstancesConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsSsoadminInstances extends TerraformDataSource {
+export class DataAwsSsoadminInstances extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -35,21 +34,17 @@ export class DataAwsSsoadminInstances extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arns - computed: true, optional: false, required: true
+  // arns - computed: true, optional: false, required: false
   public get arns() {
     return this.getListAttribute('arns');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // identity_store_ids - computed: true, optional: false, required: true
+  // identity_store_ids - computed: true, optional: false, required: false
   public get identityStoreIds() {
     return this.getListAttribute('identity_store_ids');
   }

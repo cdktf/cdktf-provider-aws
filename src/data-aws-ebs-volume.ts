@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsVolumeConfig extends TerraformMetaArguments {
+export interface DataAwsEbsVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly mostRecent?: boolean;
   readonly tags?: { [key: string]: string };
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsEbsVolumeFilter {
   readonly values: string[];
 }
 
+function dataAwsEbsVolumeFilterToTerraform(struct?: DataAwsEbsVolumeFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEbsVolume extends TerraformDataSource {
+export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,36 +54,32 @@ export class DataAwsEbsVolume extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zone - computed: true, optional: false, required: true
+  // availability_zone - computed: true, optional: false, required: false
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
 
-  // encrypted - computed: true, optional: false, required: true
+  // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // iops - computed: true, optional: false, required: true
+  // iops - computed: true, optional: false, required: false
   public get iops() {
     return this.getNumberAttribute('iops');
   }
 
-  // kms_key_id - computed: true, optional: false, required: true
+  // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
@@ -83,47 +87,61 @@ export class DataAwsEbsVolume extends TerraformDataSource {
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean;
   public get mostRecent() {
-    return this._mostRecent;
+    return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean | undefined) {
+  public set mostRecent(value: boolean ) {
     this._mostRecent = value;
   }
+  public resetMostRecent() {
+    this._mostRecent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mostRecentInput() {
+    return this._mostRecent
+  }
 
-  // multi_attach_enabled - computed: true, optional: false, required: true
+  // multi_attach_enabled - computed: true, optional: false, required: false
   public get multiAttachEnabled() {
     return this.getBooleanAttribute('multi_attach_enabled');
   }
 
-  // outpost_arn - computed: true, optional: false, required: true
+  // outpost_arn - computed: true, optional: false, required: false
   public get outpostArn() {
     return this.getStringAttribute('outpost_arn');
   }
 
-  // size - computed: true, optional: false, required: true
+  // size - computed: true, optional: false, required: false
   public get size() {
     return this.getNumberAttribute('size');
   }
 
-  // snapshot_id - computed: true, optional: false, required: true
+  // snapshot_id - computed: true, optional: false, required: false
   public get snapshotId() {
     return this.getStringAttribute('snapshot_id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // volume_id - computed: true, optional: false, required: true
+  // volume_id - computed: true, optional: false, required: false
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
 
-  // volume_type - computed: true, optional: false, required: true
+  // volume_type - computed: true, optional: false, required: false
   public get volumeType() {
     return this.getStringAttribute('volume_type');
   }
@@ -131,10 +149,17 @@ export class DataAwsEbsVolume extends TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEbsVolumeFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEbsVolumeFilter[] | undefined) {
+  public set filter(value: DataAwsEbsVolumeFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -143,9 +168,9 @@ export class DataAwsEbsVolume extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      most_recent: this._mostRecent,
-      tags: this._tags,
-      filter: this._filter,
+      most_recent: cdktf.booleanToTerraform(this._mostRecent),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEbsVolumeFilterToTerraform)(this._filter),
     };
   }
 }

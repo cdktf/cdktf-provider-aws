@@ -2,34 +2,32 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsWorkspacesBundleConfig extends TerraformMetaArguments {
+export interface DataAwsWorkspacesBundleConfig extends cdktf.TerraformMetaArguments {
   readonly bundleId?: string;
   readonly name?: string;
   readonly owner?: string;
 }
-export class DataAwsWorkspacesBundleComputeType extends ComplexComputedList {
+export class DataAwsWorkspacesBundleComputeType extends cdktf.ComplexComputedList {
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 }
-export class DataAwsWorkspacesBundleRootStorage extends ComplexComputedList {
+export class DataAwsWorkspacesBundleRootStorage extends cdktf.ComplexComputedList {
 
-  // capacity - computed: true, optional: false, required: true
+  // capacity - computed: true, optional: false, required: false
   public get capacity() {
     return this.getStringAttribute('capacity');
   }
 }
-export class DataAwsWorkspacesBundleUserStorage extends ComplexComputedList {
+export class DataAwsWorkspacesBundleUserStorage extends cdktf.ComplexComputedList {
 
-  // capacity - computed: true, optional: false, required: true
+  // capacity - computed: true, optional: false, required: false
   public get capacity() {
     return this.getStringAttribute('capacity');
   }
@@ -37,7 +35,7 @@ export class DataAwsWorkspacesBundleUserStorage extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsWorkspacesBundle extends TerraformDataSource {
+export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -66,55 +64,72 @@ export class DataAwsWorkspacesBundle extends TerraformDataSource {
   // bundle_id - computed: false, optional: true, required: false
   private _bundleId?: string;
   public get bundleId() {
-    return this._bundleId;
+    return this.getStringAttribute('bundle_id');
   }
-  public set bundleId(value: string | undefined) {
+  public set bundleId(value: string ) {
     this._bundleId = value;
   }
+  public resetBundleId() {
+    this._bundleId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bundleIdInput() {
+    return this._bundleId
+  }
 
-  // compute_type - computed: true, optional: false, required: true
+  // compute_type - computed: true, optional: false, required: false
   public computeType(index: string) {
     return new DataAwsWorkspacesBundleComputeType(this, 'compute_type', index);
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string ) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // owner - computed: false, optional: true, required: false
   private _owner?: string;
   public get owner() {
-    return this._owner;
+    return this.getStringAttribute('owner');
   }
-  public set owner(value: string | undefined) {
+  public set owner(value: string ) {
     this._owner = value;
   }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner
+  }
 
-  // root_storage - computed: true, optional: false, required: true
+  // root_storage - computed: true, optional: false, required: false
   public rootStorage(index: string) {
     return new DataAwsWorkspacesBundleRootStorage(this, 'root_storage', index);
   }
 
-  // user_storage - computed: true, optional: false, required: true
+  // user_storage - computed: true, optional: false, required: false
   public userStorage(index: string) {
     return new DataAwsWorkspacesBundleUserStorage(this, 'user_storage', index);
   }
@@ -125,9 +140,9 @@ export class DataAwsWorkspacesBundle extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_id: this._bundleId,
-      name: this._name,
-      owner: this._owner,
+      bundle_id: cdktf.stringToTerraform(this._bundleId),
+      name: cdktf.stringToTerraform(this._name),
+      owner: cdktf.stringToTerraform(this._owner),
     };
   }
 }

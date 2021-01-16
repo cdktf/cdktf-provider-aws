@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesIdentityPolicyConfig extends TerraformMetaArguments {
+export interface SesIdentityPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly identity: string;
   readonly name: string;
   readonly policy: string;
@@ -15,7 +14,7 @@ export interface SesIdentityPolicyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SesIdentityPolicy extends TerraformResource {
+export class SesIdentityPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,39 +41,47 @@ export class SesIdentityPolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identity - computed: false, optional: false, required: true
   private _identity: string;
   public get identity() {
-    return this._identity;
+    return this.getStringAttribute('identity');
   }
   public set identity(value: string) {
     this._identity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityInput() {
+    return this._identity
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
   public set policy(value: string) {
     this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // =========
@@ -83,9 +90,9 @@ export class SesIdentityPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identity: this._identity,
-      name: this._name,
-      policy: this._policy,
+      identity: cdktf.stringToTerraform(this._identity),
+      name: cdktf.stringToTerraform(this._name),
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsoadminManagedPolicyAttachmentConfig extends TerraformMetaArguments {
+export interface SsoadminManagedPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly instanceArn: string;
   readonly managedPolicyArn: string;
   readonly permissionSetArn: string;
@@ -15,7 +14,7 @@ export interface SsoadminManagedPolicyAttachmentConfig extends TerraformMetaArgu
 
 // Resource
 
-export class SsoadminManagedPolicyAttachment extends TerraformResource {
+export class SsoadminManagedPolicyAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,33 +41,37 @@ export class SsoadminManagedPolicyAttachment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_arn - computed: false, optional: false, required: true
   private _instanceArn: string;
   public get instanceArn() {
-    return this._instanceArn;
+    return this.getStringAttribute('instance_arn');
   }
   public set instanceArn(value: string) {
     this._instanceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceArnInput() {
+    return this._instanceArn
   }
 
   // managed_policy_arn - computed: false, optional: false, required: true
   private _managedPolicyArn: string;
   public get managedPolicyArn() {
-    return this._managedPolicyArn;
+    return this.getStringAttribute('managed_policy_arn');
   }
   public set managedPolicyArn(value: string) {
     this._managedPolicyArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get managedPolicyArnInput() {
+    return this._managedPolicyArn
+  }
 
-  // managed_policy_name - computed: true, optional: false, required: true
+  // managed_policy_name - computed: true, optional: false, required: false
   public get managedPolicyName() {
     return this.getStringAttribute('managed_policy_name');
   }
@@ -76,10 +79,14 @@ export class SsoadminManagedPolicyAttachment extends TerraformResource {
   // permission_set_arn - computed: false, optional: false, required: true
   private _permissionSetArn: string;
   public get permissionSetArn() {
-    return this._permissionSetArn;
+    return this.getStringAttribute('permission_set_arn');
   }
   public set permissionSetArn(value: string) {
     this._permissionSetArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionSetArnInput() {
+    return this._permissionSetArn
   }
 
   // =========
@@ -88,9 +95,9 @@ export class SsoadminManagedPolicyAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_arn: this._instanceArn,
-      managed_policy_arn: this._managedPolicyArn,
-      permission_set_arn: this._permissionSetArn,
+      instance_arn: cdktf.stringToTerraform(this._instanceArn),
+      managed_policy_arn: cdktf.stringToTerraform(this._managedPolicyArn),
+      permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
     };
   }
 }

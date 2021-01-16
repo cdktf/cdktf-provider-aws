@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayResourceConfig extends TerraformMetaArguments {
+export interface ApiGatewayResourceConfig extends cdktf.TerraformMetaArguments {
   readonly parentId: string;
   readonly pathPart: string;
   readonly restApiId: string;
@@ -15,7 +14,7 @@ export interface ApiGatewayResourceConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ApiGatewayResource extends TerraformResource {
+export class ApiGatewayResource extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,24 +41,24 @@ export class ApiGatewayResource extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // parent_id - computed: false, optional: false, required: true
   private _parentId: string;
   public get parentId() {
-    return this._parentId;
+    return this.getStringAttribute('parent_id');
   }
   public set parentId(value: string) {
     this._parentId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get parentIdInput() {
+    return this._parentId
+  }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
@@ -67,19 +66,27 @@ export class ApiGatewayResource extends TerraformResource {
   // path_part - computed: false, optional: false, required: true
   private _pathPart: string;
   public get pathPart() {
-    return this._pathPart;
+    return this.getStringAttribute('path_part');
   }
   public set pathPart(value: string) {
     this._pathPart = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathPartInput() {
+    return this._pathPart
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this._restApiId;
+    return this.getStringAttribute('rest_api_id');
   }
   public set restApiId(value: string) {
     this._restApiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restApiIdInput() {
+    return this._restApiId
   }
 
   // =========
@@ -88,9 +95,9 @@ export class ApiGatewayResource extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      parent_id: this._parentId,
-      path_part: this._pathPart,
-      rest_api_id: this._restApiId,
+      parent_id: cdktf.stringToTerraform(this._parentId),
+      path_part: cdktf.stringToTerraform(this._pathPart),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
     };
   }
 }

@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRdsCertificateConfig extends TerraformMetaArguments {
+export interface DataAwsRdsCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly latestValidTill?: boolean;
 }
 
 // Resource
 
-export class DataAwsRdsCertificate extends TerraformDataSource {
+export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,55 +36,58 @@ export class DataAwsRdsCertificate extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // certificate_type - computed: true, optional: false, required: true
+  // certificate_type - computed: true, optional: false, required: false
   public get certificateType() {
     return this.getStringAttribute('certificate_type');
   }
 
-  // customer_override - computed: true, optional: false, required: true
+  // customer_override - computed: true, optional: false, required: false
   public get customerOverride() {
     return this.getBooleanAttribute('customer_override');
   }
 
-  // customer_override_valid_till - computed: true, optional: false, required: true
+  // customer_override_valid_till - computed: true, optional: false, required: false
   public get customerOverrideValidTill() {
     return this.getStringAttribute('customer_override_valid_till');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // latest_valid_till - computed: false, optional: true, required: false
   private _latestValidTill?: boolean;
   public get latestValidTill() {
-    return this._latestValidTill;
+    return this.getBooleanAttribute('latest_valid_till');
   }
-  public set latestValidTill(value: boolean | undefined) {
+  public set latestValidTill(value: boolean ) {
     this._latestValidTill = value;
   }
+  public resetLatestValidTill() {
+    this._latestValidTill = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get latestValidTillInput() {
+    return this._latestValidTill
+  }
 
-  // thumbprint - computed: true, optional: false, required: true
+  // thumbprint - computed: true, optional: false, required: false
   public get thumbprint() {
     return this.getStringAttribute('thumbprint');
   }
 
-  // valid_from - computed: true, optional: false, required: true
+  // valid_from - computed: true, optional: false, required: false
   public get validFrom() {
     return this.getStringAttribute('valid_from');
   }
 
-  // valid_till - computed: true, optional: false, required: true
+  // valid_till - computed: true, optional: false, required: false
   public get validTill() {
     return this.getStringAttribute('valid_till');
   }
@@ -96,7 +98,7 @@ export class DataAwsRdsCertificate extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      latest_valid_till: this._latestValidTill,
+      latest_valid_till: cdktf.booleanToTerraform(this._latestValidTill),
     };
   }
 }

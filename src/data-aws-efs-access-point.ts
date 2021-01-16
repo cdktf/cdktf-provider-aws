@@ -2,58 +2,56 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEfsAccessPointConfig extends TerraformMetaArguments {
+export interface DataAwsEfsAccessPointConfig extends cdktf.TerraformMetaArguments {
   readonly accessPointId: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsEfsAccessPointPosixUser extends ComplexComputedList {
+export class DataAwsEfsAccessPointPosixUser extends cdktf.ComplexComputedList {
 
-  // gid - computed: true, optional: false, required: true
+  // gid - computed: true, optional: false, required: false
   public get gid() {
     return this.getNumberAttribute('gid');
   }
 
-  // secondary_gids - computed: true, optional: false, required: true
+  // secondary_gids - computed: true, optional: false, required: false
   public get secondaryGids() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('secondary_gids') as any;
   }
 
-  // uid - computed: true, optional: false, required: true
+  // uid - computed: true, optional: false, required: false
   public get uid() {
     return this.getNumberAttribute('uid');
   }
 }
-export class DataAwsEfsAccessPointRootDirectoryCreationInfo extends ComplexComputedList {
+export class DataAwsEfsAccessPointRootDirectoryCreationInfo extends cdktf.ComplexComputedList {
 
-  // owner_gid - computed: true, optional: false, required: true
+  // owner_gid - computed: true, optional: false, required: false
   public get ownerGid() {
     return this.getNumberAttribute('owner_gid');
   }
 
-  // owner_uid - computed: true, optional: false, required: true
+  // owner_uid - computed: true, optional: false, required: false
   public get ownerUid() {
     return this.getNumberAttribute('owner_uid');
   }
 
-  // permissions - computed: true, optional: false, required: true
+  // permissions - computed: true, optional: false, required: false
   public get permissions() {
     return this.getStringAttribute('permissions');
   }
 }
-export class DataAwsEfsAccessPointRootDirectory extends ComplexComputedList {
+export class DataAwsEfsAccessPointRootDirectory extends cdktf.ComplexComputedList {
 
-  // creation_info - computed: true, optional: false, required: true
+  // creation_info - computed: true, optional: false, required: false
   public get creationInfo() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('creation_info') as any;
   }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
@@ -61,7 +59,7 @@ export class DataAwsEfsAccessPointRootDirectory extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsEfsAccessPoint extends TerraformDataSource {
+export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -89,47 +87,47 @@ export class DataAwsEfsAccessPoint extends TerraformDataSource {
   // access_point_id - computed: false, optional: false, required: true
   private _accessPointId: string;
   public get accessPointId() {
-    return this._accessPointId;
+    return this.getStringAttribute('access_point_id');
   }
   public set accessPointId(value: string) {
     this._accessPointId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get accessPointIdInput() {
+    return this._accessPointId
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // file_system_arn - computed: true, optional: false, required: true
+  // file_system_arn - computed: true, optional: false, required: false
   public get fileSystemArn() {
     return this.getStringAttribute('file_system_arn');
   }
 
-  // file_system_id - computed: true, optional: false, required: true
+  // file_system_id - computed: true, optional: false, required: false
   public get fileSystemId() {
     return this.getStringAttribute('file_system_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
 
-  // posix_user - computed: true, optional: false, required: true
+  // posix_user - computed: true, optional: false, required: false
   public posixUser(index: string) {
     return new DataAwsEfsAccessPointPosixUser(this, 'posix_user', index);
   }
 
-  // root_directory - computed: true, optional: false, required: true
+  // root_directory - computed: true, optional: false, required: false
   public rootDirectory(index: string) {
     return new DataAwsEfsAccessPointRootDirectory(this, 'root_directory', index);
   }
@@ -137,10 +135,17 @@ export class DataAwsEfsAccessPoint extends TerraformDataSource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -149,8 +154,8 @@ export class DataAwsEfsAccessPoint extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_point_id: this._accessPointId,
-      tags: this._tags,
+      access_point_id: cdktf.stringToTerraform(this._accessPointId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

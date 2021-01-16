@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecretsmanagerSecretPolicyConfig extends TerraformMetaArguments {
+export interface SecretsmanagerSecretPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly blockPublicPolicy?: boolean;
   readonly policy: string;
   readonly secretArn: string;
@@ -15,7 +14,7 @@ export interface SecretsmanagerSecretPolicyConfig extends TerraformMetaArguments
 
 // Resource
 
-export class SecretsmanagerSecretPolicy extends TerraformResource {
+export class SecretsmanagerSecretPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,37 +43,48 @@ export class SecretsmanagerSecretPolicy extends TerraformResource {
   // block_public_policy - computed: false, optional: true, required: false
   private _blockPublicPolicy?: boolean;
   public get blockPublicPolicy() {
-    return this._blockPublicPolicy;
+    return this.getBooleanAttribute('block_public_policy');
   }
-  public set blockPublicPolicy(value: boolean | undefined) {
+  public set blockPublicPolicy(value: boolean ) {
     this._blockPublicPolicy = value;
+  }
+  public resetBlockPublicPolicy() {
+    this._blockPublicPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blockPublicPolicyInput() {
+    return this._blockPublicPolicy
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
   public set policy(value: string) {
     this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // secret_arn - computed: false, optional: false, required: true
   private _secretArn: string;
   public get secretArn() {
-    return this._secretArn;
+    return this.getStringAttribute('secret_arn');
   }
   public set secretArn(value: string) {
     this._secretArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretArnInput() {
+    return this._secretArn
   }
 
   // =========
@@ -83,9 +93,9 @@ export class SecretsmanagerSecretPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      block_public_policy: this._blockPublicPolicy,
-      policy: this._policy,
-      secret_arn: this._secretArn,
+      block_public_policy: cdktf.booleanToTerraform(this._blockPublicPolicy),
+      policy: cdktf.stringToTerraform(this._policy),
+      secret_arn: cdktf.stringToTerraform(this._secretArn),
     };
   }
 }

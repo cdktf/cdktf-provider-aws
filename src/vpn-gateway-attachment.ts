@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpnGatewayAttachmentConfig extends TerraformMetaArguments {
+export interface VpnGatewayAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   readonly vpnGatewayId: string;
 }
 
 // Resource
 
-export class VpnGatewayAttachment extends TerraformResource {
+export class VpnGatewayAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class VpnGatewayAttachment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // vpn_gateway_id - computed: false, optional: false, required: true
   private _vpnGatewayId: string;
   public get vpnGatewayId() {
-    return this._vpnGatewayId;
+    return this.getStringAttribute('vpn_gateway_id');
   }
   public set vpnGatewayId(value: string) {
     this._vpnGatewayId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpnGatewayIdInput() {
+    return this._vpnGatewayId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class VpnGatewayAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      vpc_id: this._vpcId,
-      vpn_gateway_id: this._vpnGatewayId,
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
     };
   }
 }

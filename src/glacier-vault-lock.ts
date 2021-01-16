@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlacierVaultLockConfig extends TerraformMetaArguments {
+export interface GlacierVaultLockConfig extends cdktf.TerraformMetaArguments {
   readonly completeLock: boolean;
   readonly ignoreDeletionError?: boolean;
   readonly policy: string;
@@ -16,7 +15,7 @@ export interface GlacierVaultLockConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GlacierVaultLock extends TerraformResource {
+export class GlacierVaultLock extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,46 +45,61 @@ export class GlacierVaultLock extends TerraformResource {
   // complete_lock - computed: false, optional: false, required: true
   private _completeLock: boolean;
   public get completeLock() {
-    return this._completeLock;
+    return this.getBooleanAttribute('complete_lock');
   }
   public set completeLock(value: boolean) {
     this._completeLock = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get completeLockInput() {
+    return this._completeLock
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ignore_deletion_error - computed: false, optional: true, required: false
   private _ignoreDeletionError?: boolean;
   public get ignoreDeletionError() {
-    return this._ignoreDeletionError;
+    return this.getBooleanAttribute('ignore_deletion_error');
   }
-  public set ignoreDeletionError(value: boolean | undefined) {
+  public set ignoreDeletionError(value: boolean ) {
     this._ignoreDeletionError = value;
+  }
+  public resetIgnoreDeletionError() {
+    this._ignoreDeletionError = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreDeletionErrorInput() {
+    return this._ignoreDeletionError
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
   public set policy(value: string) {
     this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // vault_name - computed: false, optional: false, required: true
   private _vaultName: string;
   public get vaultName() {
-    return this._vaultName;
+    return this.getStringAttribute('vault_name');
   }
   public set vaultName(value: string) {
     this._vaultName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vaultNameInput() {
+    return this._vaultName
   }
 
   // =========
@@ -94,10 +108,10 @@ export class GlacierVaultLock extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      complete_lock: this._completeLock,
-      ignore_deletion_error: this._ignoreDeletionError,
-      policy: this._policy,
-      vault_name: this._vaultName,
+      complete_lock: cdktf.booleanToTerraform(this._completeLock),
+      ignore_deletion_error: cdktf.booleanToTerraform(this._ignoreDeletionError),
+      policy: cdktf.stringToTerraform(this._policy),
+      vault_name: cdktf.stringToTerraform(this._vaultName),
     };
   }
 }

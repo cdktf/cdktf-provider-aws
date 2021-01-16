@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EksNodeGroupConfig extends TerraformMetaArguments {
+export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   readonly amiType?: string;
   readonly capacityType?: string;
   readonly clusterName: string;
@@ -31,21 +29,21 @@ export interface EksNodeGroupConfig extends TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: EksNodeGroupTimeouts;
 }
-export class EksNodeGroupResourcesAutoscalingGroups extends ComplexComputedList {
+export class EksNodeGroupResourcesAutoscalingGroups extends cdktf.ComplexComputedList {
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 }
-export class EksNodeGroupResources extends ComplexComputedList {
+export class EksNodeGroupResources extends cdktf.ComplexComputedList {
 
-  // autoscaling_groups - computed: true, optional: false, required: true
+  // autoscaling_groups - computed: true, optional: false, required: false
   public get autoscalingGroups() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('autoscaling_groups') as any;
   }
 
-  // remote_access_security_group_id - computed: true, optional: false, required: true
+  // remote_access_security_group_id - computed: true, optional: false, required: false
   public get remoteAccessSecurityGroupId() {
     return this.getStringAttribute('remote_access_security_group_id');
   }
@@ -55,24 +53,63 @@ export interface EksNodeGroupLaunchTemplate {
   readonly name?: string;
   readonly version: string;
 }
+
+function eksNodeGroupLaunchTemplateToTerraform(struct?: EksNodeGroupLaunchTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface EksNodeGroupRemoteAccess {
   readonly ec2SshKey?: string;
   readonly sourceSecurityGroupIds?: string[];
 }
+
+function eksNodeGroupRemoteAccessToTerraform(struct?: EksNodeGroupRemoteAccess): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ec2_ssh_key: cdktf.stringToTerraform(struct!.ec2SshKey),
+    source_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sourceSecurityGroupIds),
+  }
+}
+
 export interface EksNodeGroupScalingConfig {
   readonly desiredSize: number;
   readonly maxSize: number;
   readonly minSize: number;
 }
+
+function eksNodeGroupScalingConfigToTerraform(struct?: EksNodeGroupScalingConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    desired_size: cdktf.numberToTerraform(struct!.desiredSize),
+    max_size: cdktf.numberToTerraform(struct!.maxSize),
+    min_size: cdktf.numberToTerraform(struct!.minSize),
+  }
+}
+
 export interface EksNodeGroupTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function eksNodeGroupTimeoutsToTerraform(struct?: EksNodeGroupTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class EksNodeGroup extends TerraformResource {
+export class EksNodeGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -115,13 +152,20 @@ export class EksNodeGroup extends TerraformResource {
   // ami_type - computed: true, optional: true, required: false
   private _amiType?: string;
   public get amiType() {
-    return this._amiType ?? this.getStringAttribute('ami_type');
+    return this.getStringAttribute('ami_type');
   }
-  public set amiType(value: string | undefined) {
+  public set amiType(value: string) {
     this._amiType = value;
   }
+  public resetAmiType() {
+    this._amiType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amiTypeInput() {
+    return this._amiType
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -129,99 +173,149 @@ export class EksNodeGroup extends TerraformResource {
   // capacity_type - computed: true, optional: true, required: false
   private _capacityType?: string;
   public get capacityType() {
-    return this._capacityType ?? this.getStringAttribute('capacity_type');
+    return this.getStringAttribute('capacity_type');
   }
-  public set capacityType(value: string | undefined) {
+  public set capacityType(value: string) {
     this._capacityType = value;
+  }
+  public resetCapacityType() {
+    this._capacityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityTypeInput() {
+    return this._capacityType
   }
 
   // cluster_name - computed: false, optional: false, required: true
   private _clusterName: string;
   public get clusterName() {
-    return this._clusterName;
+    return this.getStringAttribute('cluster_name');
   }
   public set clusterName(value: string) {
     this._clusterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterNameInput() {
+    return this._clusterName
   }
 
   // disk_size - computed: true, optional: true, required: false
   private _diskSize?: number;
   public get diskSize() {
-    return this._diskSize ?? this.getNumberAttribute('disk_size');
+    return this.getNumberAttribute('disk_size');
   }
-  public set diskSize(value: number | undefined) {
+  public set diskSize(value: number) {
     this._diskSize = value;
+  }
+  public resetDiskSize() {
+    this._diskSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskSizeInput() {
+    return this._diskSize
   }
 
   // force_update_version - computed: false, optional: true, required: false
   private _forceUpdateVersion?: boolean;
   public get forceUpdateVersion() {
-    return this._forceUpdateVersion;
+    return this.getBooleanAttribute('force_update_version');
   }
-  public set forceUpdateVersion(value: boolean | undefined) {
+  public set forceUpdateVersion(value: boolean ) {
     this._forceUpdateVersion = value;
+  }
+  public resetForceUpdateVersion() {
+    this._forceUpdateVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceUpdateVersionInput() {
+    return this._forceUpdateVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_types - computed: true, optional: true, required: false
   private _instanceTypes?: string[];
   public get instanceTypes() {
-    return this._instanceTypes ?? this.getListAttribute('instance_types');
+    return this.getListAttribute('instance_types');
   }
-  public set instanceTypes(value: string[] | undefined) {
+  public set instanceTypes(value: string[]) {
     this._instanceTypes = value;
+  }
+  public resetInstanceTypes() {
+    this._instanceTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypesInput() {
+    return this._instanceTypes
   }
 
   // labels - computed: false, optional: true, required: false
   private _labels?: { [key: string]: string };
   public get labels() {
-    return this._labels;
+    return this.interpolationForAttribute('labels') as any;
   }
-  public set labels(value: { [key: string]: string } | undefined) {
+  public set labels(value: { [key: string]: string } ) {
     this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels
   }
 
   // node_group_name - computed: false, optional: false, required: true
   private _nodeGroupName: string;
   public get nodeGroupName() {
-    return this._nodeGroupName;
+    return this.getStringAttribute('node_group_name');
   }
   public set nodeGroupName(value: string) {
     this._nodeGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeGroupNameInput() {
+    return this._nodeGroupName
   }
 
   // node_role_arn - computed: false, optional: false, required: true
   private _nodeRoleArn: string;
   public get nodeRoleArn() {
-    return this._nodeRoleArn;
+    return this.getStringAttribute('node_role_arn');
   }
   public set nodeRoleArn(value: string) {
     this._nodeRoleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeRoleArnInput() {
+    return this._nodeRoleArn
   }
 
   // release_version - computed: true, optional: true, required: false
   private _releaseVersion?: string;
   public get releaseVersion() {
-    return this._releaseVersion ?? this.getStringAttribute('release_version');
+    return this.getStringAttribute('release_version');
   }
-  public set releaseVersion(value: string | undefined) {
+  public set releaseVersion(value: string) {
     this._releaseVersion = value;
   }
+  public resetReleaseVersion() {
+    this._releaseVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get releaseVersionInput() {
+    return this._releaseVersion
+  }
 
-  // resources - computed: true, optional: false, required: true
+  // resources - computed: true, optional: false, required: false
   public resources(index: string) {
     return new EksNodeGroupResources(this, 'resources', index);
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -229,64 +323,107 @@ export class EksNodeGroup extends TerraformResource {
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds: string[];
   public get subnetIds() {
-    return this._subnetIds;
+    return this.getListAttribute('subnet_ids');
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // version - computed: true, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this._version ?? this.getStringAttribute('version');
+    return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string) {
     this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // launch_template - computed: false, optional: true, required: false
   private _launchTemplate?: EksNodeGroupLaunchTemplate[];
   public get launchTemplate() {
-    return this._launchTemplate;
+    return this.interpolationForAttribute('launch_template') as any;
   }
-  public set launchTemplate(value: EksNodeGroupLaunchTemplate[] | undefined) {
+  public set launchTemplate(value: EksNodeGroupLaunchTemplate[] ) {
     this._launchTemplate = value;
+  }
+  public resetLaunchTemplate() {
+    this._launchTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchTemplateInput() {
+    return this._launchTemplate
   }
 
   // remote_access - computed: false, optional: true, required: false
   private _remoteAccess?: EksNodeGroupRemoteAccess[];
   public get remoteAccess() {
-    return this._remoteAccess;
+    return this.interpolationForAttribute('remote_access') as any;
   }
-  public set remoteAccess(value: EksNodeGroupRemoteAccess[] | undefined) {
+  public set remoteAccess(value: EksNodeGroupRemoteAccess[] ) {
     this._remoteAccess = value;
+  }
+  public resetRemoteAccess() {
+    this._remoteAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteAccessInput() {
+    return this._remoteAccess
   }
 
   // scaling_config - computed: false, optional: false, required: true
   private _scalingConfig: EksNodeGroupScalingConfig[];
   public get scalingConfig() {
-    return this._scalingConfig;
+    return this.interpolationForAttribute('scaling_config') as any;
   }
   public set scalingConfig(value: EksNodeGroupScalingConfig[]) {
     this._scalingConfig = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingConfigInput() {
+    return this._scalingConfig
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EksNodeGroupTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: EksNodeGroupTimeouts | undefined) {
+  public set timeouts(value: EksNodeGroupTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -295,23 +432,23 @@ export class EksNodeGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ami_type: this._amiType,
-      capacity_type: this._capacityType,
-      cluster_name: this._clusterName,
-      disk_size: this._diskSize,
-      force_update_version: this._forceUpdateVersion,
-      instance_types: this._instanceTypes,
-      labels: this._labels,
-      node_group_name: this._nodeGroupName,
-      node_role_arn: this._nodeRoleArn,
-      release_version: this._releaseVersion,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
-      version: this._version,
-      launch_template: this._launchTemplate,
-      remote_access: this._remoteAccess,
-      scaling_config: this._scalingConfig,
-      timeouts: this._timeouts,
+      ami_type: cdktf.stringToTerraform(this._amiType),
+      capacity_type: cdktf.stringToTerraform(this._capacityType),
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
+      disk_size: cdktf.numberToTerraform(this._diskSize),
+      force_update_version: cdktf.booleanToTerraform(this._forceUpdateVersion),
+      instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceTypes),
+      labels: cdktf.hashMapper(cdktf.anyToTerraform)(this._labels),
+      node_group_name: cdktf.stringToTerraform(this._nodeGroupName),
+      node_role_arn: cdktf.stringToTerraform(this._nodeRoleArn),
+      release_version: cdktf.stringToTerraform(this._releaseVersion),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      version: cdktf.stringToTerraform(this._version),
+      launch_template: cdktf.listMapper(eksNodeGroupLaunchTemplateToTerraform)(this._launchTemplate),
+      remote_access: cdktf.listMapper(eksNodeGroupRemoteAccessToTerraform)(this._remoteAccess),
+      scaling_config: cdktf.listMapper(eksNodeGroupScalingConfigToTerraform)(this._scalingConfig),
+      timeouts: eksNodeGroupTimeoutsToTerraform(this._timeouts),
     };
   }
 }

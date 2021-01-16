@@ -2,40 +2,38 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsImagebuilderInfrastructureConfigurationConfig extends TerraformMetaArguments {
+export interface DataAwsImagebuilderInfrastructureConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly resourceTags?: { [key: string]: string };
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs extends ComplexComputedList {
+export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs extends cdktf.ComplexComputedList {
 
-  // s3_bucket_name - computed: true, optional: false, required: true
+  // s3_bucket_name - computed: true, optional: false, required: false
   public get s3BucketName() {
     return this.getStringAttribute('s3_bucket_name');
   }
 
-  // s3_key_prefix - computed: true, optional: false, required: true
+  // s3_key_prefix - computed: true, optional: false, required: false
   public get s3KeyPrefix() {
     return this.getStringAttribute('s3_key_prefix');
   }
 }
-export class DataAwsImagebuilderInfrastructureConfigurationLogging extends ComplexComputedList {
+export class DataAwsImagebuilderInfrastructureConfigurationLogging extends cdktf.ComplexComputedList {
 
-  // s3_logs - computed: true, optional: false, required: true
+  // s3_logs - computed: true, optional: false, required: false
   public get s3Logs() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('s3_logs') as any;
   }
 }
 
 // Resource
 
-export class DataAwsImagebuilderInfrastructureConfiguration extends TerraformDataSource {
+export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -64,95 +62,109 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends TerraformDat
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this._arn;
+    return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn
+  }
 
-  // date_created - computed: true, optional: false, required: true
+  // date_created - computed: true, optional: false, required: false
   public get dateCreated() {
     return this.getStringAttribute('date_created');
   }
 
-  // date_updated - computed: true, optional: false, required: true
+  // date_updated - computed: true, optional: false, required: false
   public get dateUpdated() {
     return this.getStringAttribute('date_updated');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // instance_profile_name - computed: true, optional: false, required: true
+  // instance_profile_name - computed: true, optional: false, required: false
   public get instanceProfileName() {
     return this.getStringAttribute('instance_profile_name');
   }
 
-  // instance_types - computed: true, optional: false, required: true
+  // instance_types - computed: true, optional: false, required: false
   public get instanceTypes() {
     return this.getListAttribute('instance_types');
   }
 
-  // key_pair - computed: true, optional: false, required: true
+  // key_pair - computed: true, optional: false, required: false
   public get keyPair() {
     return this.getStringAttribute('key_pair');
   }
 
-  // logging - computed: true, optional: false, required: true
+  // logging - computed: true, optional: false, required: false
   public logging(index: string) {
     return new DataAwsImagebuilderInfrastructureConfigurationLogging(this, 'logging', index);
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
   // resource_tags - computed: true, optional: true, required: false
   private _resourceTags?: { [key: string]: string }
-  public get resourceTags(): { [key: string]: string } | undefined {
-    return this._resourceTags; // Getting the computed value is not yet implemented
+  public get resourceTags(): { [key: string]: string } {
+    return this.interpolationForAttribute('resource_tags') as any; // Getting the computed value is not yet implemented
   }
-  public set resourceTags(value: { [key: string]: string } | undefined) {
+  public set resourceTags(value: { [key: string]: string }) {
     this._resourceTags = value;
   }
+  public resetResourceTags() {
+    this._resourceTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTagsInput() {
+    return this._resourceTags
+  }
 
-  // security_group_ids - computed: true, optional: false, required: true
+  // security_group_ids - computed: true, optional: false, required: false
   public get securityGroupIds() {
     return this.getListAttribute('security_group_ids');
   }
 
-  // sns_topic_arn - computed: true, optional: false, required: true
+  // sns_topic_arn - computed: true, optional: false, required: false
   public get snsTopicArn() {
     return this.getStringAttribute('sns_topic_arn');
   }
 
-  // subnet_id - computed: true, optional: false, required: true
+  // subnet_id - computed: true, optional: false, required: false
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // terminate_instance_on_failure - computed: true, optional: false, required: true
+  // terminate_instance_on_failure - computed: true, optional: false, required: false
   public get terminateInstanceOnFailure() {
     return this.getBooleanAttribute('terminate_instance_on_failure');
   }
@@ -163,9 +175,9 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends TerraformDat
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
-      resource_tags: this._resourceTags,
-      tags: this._tags,
+      arn: cdktf.stringToTerraform(this._arn),
+      resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTags),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

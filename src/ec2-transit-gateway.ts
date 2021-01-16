@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly amazonSideAsn?: number;
   readonly autoAcceptSharedAttachments?: string;
   readonly defaultRouteTableAssociation?: string;
@@ -20,7 +19,7 @@ export interface Ec2TransitGatewayConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2TransitGateway extends TerraformResource {
+export class Ec2TransitGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -54,18 +53,25 @@ export class Ec2TransitGateway extends TerraformResource {
   // amazon_side_asn - computed: false, optional: true, required: false
   private _amazonSideAsn?: number;
   public get amazonSideAsn() {
-    return this._amazonSideAsn;
+    return this.getNumberAttribute('amazon_side_asn');
   }
-  public set amazonSideAsn(value: number | undefined) {
+  public set amazonSideAsn(value: number ) {
     this._amazonSideAsn = value;
   }
+  public resetAmazonSideAsn() {
+    this._amazonSideAsn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amazonSideAsnInput() {
+    return this._amazonSideAsn
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // association_default_route_table_id - computed: true, optional: false, required: true
+  // association_default_route_table_id - computed: true, optional: false, required: false
   public get associationDefaultRouteTableId() {
     return this.getStringAttribute('association_default_route_table_id');
   }
@@ -73,63 +79,94 @@ export class Ec2TransitGateway extends TerraformResource {
   // auto_accept_shared_attachments - computed: false, optional: true, required: false
   private _autoAcceptSharedAttachments?: string;
   public get autoAcceptSharedAttachments() {
-    return this._autoAcceptSharedAttachments;
+    return this.getStringAttribute('auto_accept_shared_attachments');
   }
-  public set autoAcceptSharedAttachments(value: string | undefined) {
+  public set autoAcceptSharedAttachments(value: string ) {
     this._autoAcceptSharedAttachments = value;
+  }
+  public resetAutoAcceptSharedAttachments() {
+    this._autoAcceptSharedAttachments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoAcceptSharedAttachmentsInput() {
+    return this._autoAcceptSharedAttachments
   }
 
   // default_route_table_association - computed: false, optional: true, required: false
   private _defaultRouteTableAssociation?: string;
   public get defaultRouteTableAssociation() {
-    return this._defaultRouteTableAssociation;
+    return this.getStringAttribute('default_route_table_association');
   }
-  public set defaultRouteTableAssociation(value: string | undefined) {
+  public set defaultRouteTableAssociation(value: string ) {
     this._defaultRouteTableAssociation = value;
+  }
+  public resetDefaultRouteTableAssociation() {
+    this._defaultRouteTableAssociation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultRouteTableAssociationInput() {
+    return this._defaultRouteTableAssociation
   }
 
   // default_route_table_propagation - computed: false, optional: true, required: false
   private _defaultRouteTablePropagation?: string;
   public get defaultRouteTablePropagation() {
-    return this._defaultRouteTablePropagation;
+    return this.getStringAttribute('default_route_table_propagation');
   }
-  public set defaultRouteTablePropagation(value: string | undefined) {
+  public set defaultRouteTablePropagation(value: string ) {
     this._defaultRouteTablePropagation = value;
+  }
+  public resetDefaultRouteTablePropagation() {
+    this._defaultRouteTablePropagation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultRouteTablePropagationInput() {
+    return this._defaultRouteTablePropagation
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // dns_support - computed: false, optional: true, required: false
   private _dnsSupport?: string;
   public get dnsSupport() {
-    return this._dnsSupport;
+    return this.getStringAttribute('dns_support');
   }
-  public set dnsSupport(value: string | undefined) {
+  public set dnsSupport(value: string ) {
     this._dnsSupport = value;
+  }
+  public resetDnsSupport() {
+    this._dnsSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsSupportInput() {
+    return this._dnsSupport
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
 
-  // propagation_default_route_table_id - computed: true, optional: false, required: true
+  // propagation_default_route_table_id - computed: true, optional: false, required: false
   public get propagationDefaultRouteTableId() {
     return this.getStringAttribute('propagation_default_route_table_id');
   }
@@ -137,19 +174,33 @@ export class Ec2TransitGateway extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpn_ecmp_support - computed: false, optional: true, required: false
   private _vpnEcmpSupport?: string;
   public get vpnEcmpSupport() {
-    return this._vpnEcmpSupport;
+    return this.getStringAttribute('vpn_ecmp_support');
   }
-  public set vpnEcmpSupport(value: string | undefined) {
+  public set vpnEcmpSupport(value: string ) {
     this._vpnEcmpSupport = value;
+  }
+  public resetVpnEcmpSupport() {
+    this._vpnEcmpSupport = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpnEcmpSupportInput() {
+    return this._vpnEcmpSupport
   }
 
   // =========
@@ -158,14 +209,14 @@ export class Ec2TransitGateway extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amazon_side_asn: this._amazonSideAsn,
-      auto_accept_shared_attachments: this._autoAcceptSharedAttachments,
-      default_route_table_association: this._defaultRouteTableAssociation,
-      default_route_table_propagation: this._defaultRouteTablePropagation,
-      description: this._description,
-      dns_support: this._dnsSupport,
-      tags: this._tags,
-      vpn_ecmp_support: this._vpnEcmpSupport,
+      amazon_side_asn: cdktf.numberToTerraform(this._amazonSideAsn),
+      auto_accept_shared_attachments: cdktf.stringToTerraform(this._autoAcceptSharedAttachments),
+      default_route_table_association: cdktf.stringToTerraform(this._defaultRouteTableAssociation),
+      default_route_table_propagation: cdktf.stringToTerraform(this._defaultRouteTablePropagation),
+      description: cdktf.stringToTerraform(this._description),
+      dns_support: cdktf.stringToTerraform(this._dnsSupport),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpn_ecmp_support: cdktf.stringToTerraform(this._vpnEcmpSupport),
     };
   }
 }

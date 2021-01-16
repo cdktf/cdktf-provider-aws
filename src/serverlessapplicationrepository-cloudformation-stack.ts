@@ -2,13 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ServerlessapplicationrepositoryCloudformationStackConfig extends TerraformMetaArguments {
+export interface ServerlessapplicationrepositoryCloudformationStackConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
   readonly capabilities: string[];
   readonly name: string;
@@ -24,9 +22,19 @@ export interface ServerlessapplicationrepositoryCloudformationStackTimeouts {
   readonly update?: string;
 }
 
+function serverlessapplicationrepositoryCloudformationStackTimeoutsToTerraform(struct?: ServerlessapplicationrepositoryCloudformationStackTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class ServerlessapplicationrepositoryCloudformationStack extends TerraformResource {
+export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,78 +67,114 @@ export class ServerlessapplicationrepositoryCloudformationStack extends Terrafor
   // application_id - computed: false, optional: false, required: true
   private _applicationId: string;
   public get applicationId() {
-    return this._applicationId;
+    return this.getStringAttribute('application_id');
   }
   public set applicationId(value: string) {
     this._applicationId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationIdInput() {
+    return this._applicationId
   }
 
   // capabilities - computed: false, optional: false, required: true
   private _capabilities: string[];
   public get capabilities() {
-    return this._capabilities;
+    return this.getListAttribute('capabilities');
   }
   public set capabilities(value: string[]) {
     this._capabilities = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get capabilitiesInput() {
+    return this._capabilities
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // outputs - computed: true, optional: false, required: true
+  // outputs - computed: true, optional: false, required: false
   public outputs(key: string): string {
-    return new StringMap(this, 'outputs').lookup(key);
+    return new cdktf.StringMap(this, 'outputs').lookup(key);
   }
 
   // parameters - computed: true, optional: true, required: false
   private _parameters?: { [key: string]: string }
-  public get parameters(): { [key: string]: string } | undefined {
-    return this._parameters; // Getting the computed value is not yet implemented
+  public get parameters(): { [key: string]: string } {
+    return this.interpolationForAttribute('parameters') as any; // Getting the computed value is not yet implemented
   }
-  public set parameters(value: { [key: string]: string } | undefined) {
+  public set parameters(value: { [key: string]: string }) {
     this._parameters = value;
+  }
+  public resetParameters() {
+    this._parameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters
   }
 
   // semantic_version - computed: true, optional: true, required: false
   private _semanticVersion?: string;
   public get semanticVersion() {
-    return this._semanticVersion ?? this.getStringAttribute('semantic_version');
+    return this.getStringAttribute('semantic_version');
   }
-  public set semanticVersion(value: string | undefined) {
+  public set semanticVersion(value: string) {
     this._semanticVersion = value;
+  }
+  public resetSemanticVersion() {
+    this._semanticVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get semanticVersionInput() {
+    return this._semanticVersion
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: ServerlessapplicationrepositoryCloudformationStackTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: ServerlessapplicationrepositoryCloudformationStackTimeouts | undefined) {
+  public set timeouts(value: ServerlessapplicationrepositoryCloudformationStackTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -139,13 +183,13 @@ export class ServerlessapplicationrepositoryCloudformationStack extends Terrafor
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: this._applicationId,
-      capabilities: this._capabilities,
-      name: this._name,
-      parameters: this._parameters,
-      semantic_version: this._semanticVersion,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      capabilities: cdktf.listMapper(cdktf.stringToTerraform)(this._capabilities),
+      name: cdktf.stringToTerraform(this._name),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      semantic_version: cdktf.stringToTerraform(this._semanticVersion),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: serverlessapplicationrepositoryCloudformationStackTimeoutsToTerraform(this._timeouts),
     };
   }
 }

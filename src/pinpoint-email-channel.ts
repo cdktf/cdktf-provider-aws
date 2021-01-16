@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface PinpointEmailChannelConfig extends TerraformMetaArguments {
+export interface PinpointEmailChannelConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
   readonly enabled?: boolean;
   readonly fromAddress: string;
@@ -17,7 +16,7 @@ export interface PinpointEmailChannelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class PinpointEmailChannel extends TerraformResource {
+export class PinpointEmailChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -48,49 +47,64 @@ export class PinpointEmailChannel extends TerraformResource {
   // application_id - computed: false, optional: false, required: true
   private _applicationId: string;
   public get applicationId() {
-    return this._applicationId;
+    return this.getStringAttribute('application_id');
   }
   public set applicationId(value: string) {
     this._applicationId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationIdInput() {
+    return this._applicationId
   }
 
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this._enabled;
+    return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | undefined) {
+  public set enabled(value: boolean ) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled
   }
 
   // from_address - computed: false, optional: false, required: true
   private _fromAddress: string;
   public get fromAddress() {
-    return this._fromAddress;
+    return this.getStringAttribute('from_address');
   }
   public set fromAddress(value: string) {
     this._fromAddress = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fromAddressInput() {
+    return this._fromAddress
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identity - computed: false, optional: false, required: true
   private _identity: string;
   public get identity() {
-    return this._identity;
+    return this.getStringAttribute('identity');
   }
   public set identity(value: string) {
     this._identity = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get identityInput() {
+    return this._identity
+  }
 
-  // messages_per_second - computed: true, optional: false, required: true
+  // messages_per_second - computed: true, optional: false, required: false
   public get messagesPerSecond() {
     return this.getNumberAttribute('messages_per_second');
   }
@@ -98,10 +112,14 @@ export class PinpointEmailChannel extends TerraformResource {
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // =========
@@ -110,11 +128,11 @@ export class PinpointEmailChannel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: this._applicationId,
-      enabled: this._enabled,
-      from_address: this._fromAddress,
-      identity: this._identity,
-      role_arn: this._roleArn,
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      from_address: cdktf.stringToTerraform(this._fromAddress),
+      identity: cdktf.stringToTerraform(this._identity),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DocdbClusterInstanceConfig extends TerraformMetaArguments {
+export interface DocdbClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
   readonly autoMinorVersionUpgrade?: boolean;
   readonly availabilityZone?: string;
@@ -29,9 +28,19 @@ export interface DocdbClusterInstanceTimeouts {
   readonly update?: string;
 }
 
+function docdbClusterInstanceTimeoutsToTerraform(struct?: DocdbClusterInstanceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DocdbClusterInstance extends TerraformResource {
+export class DocdbClusterInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -70,13 +79,20 @@ export class DocdbClusterInstance extends TerraformResource {
   // apply_immediately - computed: true, optional: true, required: false
   private _applyImmediately?: boolean;
   public get applyImmediately() {
-    return this._applyImmediately ?? this.getBooleanAttribute('apply_immediately');
+    return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean | undefined) {
+  public set applyImmediately(value: boolean) {
     this._applyImmediately = value;
   }
+  public resetApplyImmediately() {
+    this._applyImmediately = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyImmediatelyInput() {
+    return this._applyImmediately
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -84,50 +100,75 @@ export class DocdbClusterInstance extends TerraformResource {
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
   private _autoMinorVersionUpgrade?: boolean;
   public get autoMinorVersionUpgrade() {
-    return this._autoMinorVersionUpgrade;
+    return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean | undefined) {
+  public set autoMinorVersionUpgrade(value: boolean ) {
     this._autoMinorVersionUpgrade = value;
+  }
+  public resetAutoMinorVersionUpgrade() {
+    this._autoMinorVersionUpgrade = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoMinorVersionUpgradeInput() {
+    return this._autoMinorVersionUpgrade
   }
 
   // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string;
   public get availabilityZone() {
-    return this._availabilityZone ?? this.getStringAttribute('availability_zone');
+    return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
   }
 
   // ca_cert_identifier - computed: true, optional: true, required: false
   private _caCertIdentifier?: string;
   public get caCertIdentifier() {
-    return this._caCertIdentifier ?? this.getStringAttribute('ca_cert_identifier');
+    return this.getStringAttribute('ca_cert_identifier');
   }
-  public set caCertIdentifier(value: string | undefined) {
+  public set caCertIdentifier(value: string) {
     this._caCertIdentifier = value;
+  }
+  public resetCaCertIdentifier() {
+    this._caCertIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caCertIdentifierInput() {
+    return this._caCertIdentifier
   }
 
   // cluster_identifier - computed: false, optional: false, required: true
   private _clusterIdentifier: string;
   public get clusterIdentifier() {
-    return this._clusterIdentifier;
+    return this.getStringAttribute('cluster_identifier');
   }
   public set clusterIdentifier(value: string) {
     this._clusterIdentifier = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdentifierInput() {
+    return this._clusterIdentifier
+  }
 
-  // db_subnet_group_name - computed: true, optional: false, required: true
+  // db_subnet_group_name - computed: true, optional: false, required: false
   public get dbSubnetGroupName() {
     return this.getStringAttribute('db_subnet_group_name');
   }
 
-  // dbi_resource_id - computed: true, optional: false, required: true
+  // dbi_resource_id - computed: true, optional: false, required: false
   public get dbiResourceId() {
     return this.getStringAttribute('dbi_resource_id');
   }
 
-  // endpoint - computed: true, optional: false, required: true
+  // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -135,64 +176,85 @@ export class DocdbClusterInstance extends TerraformResource {
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this._engine;
+    return this.getStringAttribute('engine');
   }
-  public set engine(value: string | undefined) {
+  public set engine(value: string ) {
     this._engine = value;
   }
+  public resetEngine() {
+    this._engine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
+  }
 
-  // engine_version - computed: true, optional: false, required: true
+  // engine_version - computed: true, optional: false, required: false
   public get engineVersion() {
     return this.getStringAttribute('engine_version');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identifier - computed: true, optional: true, required: false
   private _identifier?: string;
   public get identifier() {
-    return this._identifier ?? this.getStringAttribute('identifier');
+    return this.getStringAttribute('identifier');
   }
-  public set identifier(value: string | undefined) {
+  public set identifier(value: string) {
     this._identifier = value;
+  }
+  public resetIdentifier() {
+    this._identifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierInput() {
+    return this._identifier
   }
 
   // identifier_prefix - computed: true, optional: true, required: false
   private _identifierPrefix?: string;
   public get identifierPrefix() {
-    return this._identifierPrefix ?? this.getStringAttribute('identifier_prefix');
+    return this.getStringAttribute('identifier_prefix');
   }
-  public set identifierPrefix(value: string | undefined) {
+  public set identifierPrefix(value: string) {
     this._identifierPrefix = value;
+  }
+  public resetIdentifierPrefix() {
+    this._identifierPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierPrefixInput() {
+    return this._identifierPrefix
   }
 
   // instance_class - computed: false, optional: false, required: true
   private _instanceClass: string;
   public get instanceClass() {
-    return this._instanceClass;
+    return this.getStringAttribute('instance_class');
   }
   public set instanceClass(value: string) {
     this._instanceClass = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get instanceClassInput() {
+    return this._instanceClass
+  }
 
-  // kms_key_id - computed: true, optional: false, required: true
+  // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // port - computed: true, optional: false, required: true
+  // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
   }
 
-  // preferred_backup_window - computed: true, optional: false, required: true
+  // preferred_backup_window - computed: true, optional: false, required: false
   public get preferredBackupWindow() {
     return this.getStringAttribute('preferred_backup_window');
   }
@@ -200,27 +262,41 @@ export class DocdbClusterInstance extends TerraformResource {
   // preferred_maintenance_window - computed: true, optional: true, required: false
   private _preferredMaintenanceWindow?: string;
   public get preferredMaintenanceWindow() {
-    return this._preferredMaintenanceWindow ?? this.getStringAttribute('preferred_maintenance_window');
+    return this.getStringAttribute('preferred_maintenance_window');
   }
-  public set preferredMaintenanceWindow(value: string | undefined) {
+  public set preferredMaintenanceWindow(value: string) {
     this._preferredMaintenanceWindow = value;
+  }
+  public resetPreferredMaintenanceWindow() {
+    this._preferredMaintenanceWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredMaintenanceWindowInput() {
+    return this._preferredMaintenanceWindow
   }
 
   // promotion_tier - computed: false, optional: true, required: false
   private _promotionTier?: number;
   public get promotionTier() {
-    return this._promotionTier;
+    return this.getNumberAttribute('promotion_tier');
   }
-  public set promotionTier(value: number | undefined) {
+  public set promotionTier(value: number ) {
     this._promotionTier = value;
   }
+  public resetPromotionTier() {
+    this._promotionTier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get promotionTierInput() {
+    return this._promotionTier
+  }
 
-  // publicly_accessible - computed: true, optional: false, required: true
+  // publicly_accessible - computed: true, optional: false, required: false
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
 
-  // storage_encrypted - computed: true, optional: false, required: true
+  // storage_encrypted - computed: true, optional: false, required: false
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
@@ -228,13 +304,20 @@ export class DocdbClusterInstance extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // writer - computed: true, optional: false, required: true
+  // writer - computed: true, optional: false, required: false
   public get writer() {
     return this.getBooleanAttribute('writer');
   }
@@ -242,10 +325,17 @@ export class DocdbClusterInstance extends TerraformResource {
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DocdbClusterInstanceTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: DocdbClusterInstanceTimeouts | undefined) {
+  public set timeouts(value: DocdbClusterInstanceTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -254,19 +344,19 @@ export class DocdbClusterInstance extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_immediately: this._applyImmediately,
-      auto_minor_version_upgrade: this._autoMinorVersionUpgrade,
-      availability_zone: this._availabilityZone,
-      ca_cert_identifier: this._caCertIdentifier,
-      cluster_identifier: this._clusterIdentifier,
-      engine: this._engine,
-      identifier: this._identifier,
-      identifier_prefix: this._identifierPrefix,
-      instance_class: this._instanceClass,
-      preferred_maintenance_window: this._preferredMaintenanceWindow,
-      promotion_tier: this._promotionTier,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
+      cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
+      engine: cdktf.stringToTerraform(this._engine),
+      identifier: cdktf.stringToTerraform(this._identifier),
+      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
+      instance_class: cdktf.stringToTerraform(this._instanceClass),
+      preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
+      promotion_tier: cdktf.numberToTerraform(this._promotionTier),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: docdbClusterInstanceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KinesisStreamConfig extends TerraformMetaArguments {
+export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
   readonly encryptionType?: string;
   readonly enforceConsumerDeletion?: boolean;
   readonly kmsKeyId?: string;
@@ -25,9 +24,19 @@ export interface KinesisStreamTimeouts {
   readonly update?: string;
 }
 
+function kinesisStreamTimeoutsToTerraform(struct?: KinesisStreamTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class KinesisStream extends TerraformResource {
+export class KinesisStream extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -60,102 +69,151 @@ export class KinesisStream extends TerraformResource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
-  private _arn?: string;
   public get arn() {
-    return this._arn ?? this.getStringAttribute('arn');
-  }
-  public set arn(value: string | undefined) {
-    this._arn = value;
+    return this.getStringAttribute('arn');
   }
 
   // encryption_type - computed: false, optional: true, required: false
   private _encryptionType?: string;
   public get encryptionType() {
-    return this._encryptionType;
+    return this.getStringAttribute('encryption_type');
   }
-  public set encryptionType(value: string | undefined) {
+  public set encryptionType(value: string ) {
     this._encryptionType = value;
+  }
+  public resetEncryptionType() {
+    this._encryptionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionTypeInput() {
+    return this._encryptionType
   }
 
   // enforce_consumer_deletion - computed: false, optional: true, required: false
   private _enforceConsumerDeletion?: boolean;
   public get enforceConsumerDeletion() {
-    return this._enforceConsumerDeletion;
+    return this.getBooleanAttribute('enforce_consumer_deletion');
   }
-  public set enforceConsumerDeletion(value: boolean | undefined) {
+  public set enforceConsumerDeletion(value: boolean ) {
     this._enforceConsumerDeletion = value;
+  }
+  public resetEnforceConsumerDeletion() {
+    this._enforceConsumerDeletion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforceConsumerDeletionInput() {
+    return this._enforceConsumerDeletion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId;
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string ) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // retention_period - computed: false, optional: true, required: false
   private _retentionPeriod?: number;
   public get retentionPeriod() {
-    return this._retentionPeriod;
+    return this.getNumberAttribute('retention_period');
   }
-  public set retentionPeriod(value: number | undefined) {
+  public set retentionPeriod(value: number ) {
     this._retentionPeriod = value;
+  }
+  public resetRetentionPeriod() {
+    this._retentionPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionPeriodInput() {
+    return this._retentionPeriod
   }
 
   // shard_count - computed: false, optional: false, required: true
   private _shardCount: number;
   public get shardCount() {
-    return this._shardCount;
+    return this.getNumberAttribute('shard_count');
   }
   public set shardCount(value: number) {
     this._shardCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shardCountInput() {
+    return this._shardCount
   }
 
   // shard_level_metrics - computed: false, optional: true, required: false
   private _shardLevelMetrics?: string[];
   public get shardLevelMetrics() {
-    return this._shardLevelMetrics;
+    return this.getListAttribute('shard_level_metrics');
   }
-  public set shardLevelMetrics(value: string[] | undefined) {
+  public set shardLevelMetrics(value: string[] ) {
     this._shardLevelMetrics = value;
+  }
+  public resetShardLevelMetrics() {
+    this._shardLevelMetrics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shardLevelMetricsInput() {
+    return this._shardLevelMetrics
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: KinesisStreamTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: KinesisStreamTimeouts | undefined) {
+  public set timeouts(value: KinesisStreamTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -164,15 +222,15 @@ export class KinesisStream extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      encryption_type: this._encryptionType,
-      enforce_consumer_deletion: this._enforceConsumerDeletion,
-      kms_key_id: this._kmsKeyId,
-      name: this._name,
-      retention_period: this._retentionPeriod,
-      shard_count: this._shardCount,
-      shard_level_metrics: this._shardLevelMetrics,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      encryption_type: cdktf.stringToTerraform(this._encryptionType),
+      enforce_consumer_deletion: cdktf.booleanToTerraform(this._enforceConsumerDeletion),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      name: cdktf.stringToTerraform(this._name),
+      retention_period: cdktf.numberToTerraform(this._retentionPeriod),
+      shard_count: cdktf.numberToTerraform(this._shardCount),
+      shard_level_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._shardLevelMetrics),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: kinesisStreamTimeoutsToTerraform(this._timeouts),
     };
   }
 }

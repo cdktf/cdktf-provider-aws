@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2TransitGatewayPeeringAttachmentConfig extends TerraformMetaArguments {
+export interface DataAwsEc2TransitGatewayPeeringAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsEc2TransitGatewayPeeringAttachmentFilter[];
@@ -17,9 +16,18 @@ export interface DataAwsEc2TransitGatewayPeeringAttachmentFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2TransitGatewayPeeringAttachmentFilterToTerraform(struct?: DataAwsEc2TransitGatewayPeeringAttachmentFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2TransitGatewayPeeringAttachment extends TerraformDataSource {
+export class DataAwsEc2TransitGatewayPeeringAttachment extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -45,39 +53,42 @@ export class DataAwsEc2TransitGatewayPeeringAttachment extends TerraformDataSour
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // peer_account_id - computed: true, optional: false, required: true
+  // peer_account_id - computed: true, optional: false, required: false
   public get peerAccountId() {
     return this.getStringAttribute('peer_account_id');
   }
 
-  // peer_region - computed: true, optional: false, required: true
+  // peer_region - computed: true, optional: false, required: false
   public get peerRegion() {
     return this.getStringAttribute('peer_region');
   }
 
-  // peer_transit_gateway_id - computed: true, optional: false, required: true
+  // peer_transit_gateway_id - computed: true, optional: false, required: false
   public get peerTransitGatewayId() {
     return this.getStringAttribute('peer_transit_gateway_id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // transit_gateway_id - computed: true, optional: false, required: true
+  // transit_gateway_id - computed: true, optional: false, required: false
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
   }
@@ -85,10 +96,17 @@ export class DataAwsEc2TransitGatewayPeeringAttachment extends TerraformDataSour
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2TransitGatewayPeeringAttachmentFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2TransitGatewayPeeringAttachmentFilter[] | undefined) {
+  public set filter(value: DataAwsEc2TransitGatewayPeeringAttachmentFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -97,8 +115,8 @@ export class DataAwsEc2TransitGatewayPeeringAttachment extends TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      filter: this._filter,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEc2TransitGatewayPeeringAttachmentFilterToTerraform)(this._filter),
     };
   }
 }

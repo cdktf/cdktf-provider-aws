@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2InstanceTypeOfferingsConfig extends TerraformMetaArguments {
+export interface DataAwsEc2InstanceTypeOfferingsConfig extends cdktf.TerraformMetaArguments {
   readonly locationType?: string;
   /** filter block */
   readonly filter?: DataAwsEc2InstanceTypeOfferingsFilter[];
@@ -17,9 +16,18 @@ export interface DataAwsEc2InstanceTypeOfferingsFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2InstanceTypeOfferingsFilterToTerraform(struct?: DataAwsEc2InstanceTypeOfferingsFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2InstanceTypeOfferings extends TerraformDataSource {
+export class DataAwsEc2InstanceTypeOfferings extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -45,15 +53,11 @@ export class DataAwsEc2InstanceTypeOfferings extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // instance_types - computed: true, optional: false, required: true
+  // instance_types - computed: true, optional: false, required: false
   public get instanceTypes() {
     return this.getListAttribute('instance_types');
   }
@@ -61,19 +65,33 @@ export class DataAwsEc2InstanceTypeOfferings extends TerraformDataSource {
   // location_type - computed: false, optional: true, required: false
   private _locationType?: string;
   public get locationType() {
-    return this._locationType;
+    return this.getStringAttribute('location_type');
   }
-  public set locationType(value: string | undefined) {
+  public set locationType(value: string ) {
     this._locationType = value;
+  }
+  public resetLocationType() {
+    this._locationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationTypeInput() {
+    return this._locationType
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2InstanceTypeOfferingsFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2InstanceTypeOfferingsFilter[] | undefined) {
+  public set filter(value: DataAwsEc2InstanceTypeOfferingsFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -82,8 +100,8 @@ export class DataAwsEc2InstanceTypeOfferings extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      location_type: this._locationType,
-      filter: this._filter,
+      location_type: cdktf.stringToTerraform(this._locationType),
+      filter: cdktf.listMapper(dataAwsEc2InstanceTypeOfferingsFilterToTerraform)(this._filter),
     };
   }
 }

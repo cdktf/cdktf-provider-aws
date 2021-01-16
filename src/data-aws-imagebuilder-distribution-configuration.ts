@@ -2,73 +2,71 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsImagebuilderDistributionConfigurationConfig extends TerraformMetaArguments {
+export interface DataAwsImagebuilderDistributionConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission extends ComplexComputedList {
+export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission extends cdktf.ComplexComputedList {
 
-  // user_groups - computed: true, optional: false, required: true
+  // user_groups - computed: true, optional: false, required: false
   public get userGroups() {
     return this.getListAttribute('user_groups');
   }
 
-  // user_ids - computed: true, optional: false, required: true
+  // user_ids - computed: true, optional: false, required: false
   public get userIds() {
     return this.getListAttribute('user_ids');
   }
 }
-export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration extends ComplexComputedList {
+export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration extends cdktf.ComplexComputedList {
 
-  // ami_tags - computed: true, optional: false, required: true
+  // ami_tags - computed: true, optional: false, required: false
   public get amiTags() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('ami_tags') as any;
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // kms_key_id - computed: true, optional: false, required: true
+  // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // launch_permission - computed: true, optional: false, required: true
+  // launch_permission - computed: true, optional: false, required: false
   public get launchPermission() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('launch_permission') as any;
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // target_account_ids - computed: true, optional: false, required: true
+  // target_account_ids - computed: true, optional: false, required: false
   public get targetAccountIds() {
     return this.getListAttribute('target_account_ids');
   }
 }
-export class DataAwsImagebuilderDistributionConfigurationDistribution extends ComplexComputedList {
+export class DataAwsImagebuilderDistributionConfigurationDistribution extends cdktf.ComplexComputedList {
 
-  // ami_distribution_configuration - computed: true, optional: false, required: true
+  // ami_distribution_configuration - computed: true, optional: false, required: false
   public get amiDistributionConfiguration() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('ami_distribution_configuration') as any;
   }
 
-  // license_configuration_arns - computed: true, optional: false, required: true
+  // license_configuration_arns - computed: true, optional: false, required: false
   public get licenseConfigurationArns() {
     return this.getListAttribute('license_configuration_arns');
   }
 
-  // region - computed: true, optional: false, required: true
+  // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
   }
@@ -76,7 +74,7 @@ export class DataAwsImagebuilderDistributionConfigurationDistribution extends Co
 
 // Resource
 
-export class DataAwsImagebuilderDistributionConfiguration extends TerraformDataSource {
+export class DataAwsImagebuilderDistributionConfiguration extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -104,53 +102,60 @@ export class DataAwsImagebuilderDistributionConfiguration extends TerraformDataS
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this._arn;
+    return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn
+  }
 
-  // date_created - computed: true, optional: false, required: true
+  // date_created - computed: true, optional: false, required: false
   public get dateCreated() {
     return this.getStringAttribute('date_created');
   }
 
-  // date_updated - computed: true, optional: false, required: true
+  // date_updated - computed: true, optional: false, required: false
   public get dateUpdated() {
     return this.getStringAttribute('date_updated');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // distribution - computed: true, optional: false, required: true
+  // distribution - computed: true, optional: false, required: false
   public distribution(index: string) {
     return new DataAwsImagebuilderDistributionConfigurationDistribution(this, 'distribution', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -159,8 +164,8 @@ export class DataAwsImagebuilderDistributionConfiguration extends TerraformDataS
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
-      tags: this._tags,
+      arn: cdktf.stringToTerraform(this._arn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

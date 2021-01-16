@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcDhcpOptionsAssociationConfig extends TerraformMetaArguments {
+export interface VpcDhcpOptionsAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly dhcpOptionsId: string;
   readonly vpcId: string;
 }
 
 // Resource
 
-export class VpcDhcpOptionsAssociation extends TerraformResource {
+export class VpcDhcpOptionsAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,28 +41,32 @@ export class VpcDhcpOptionsAssociation extends TerraformResource {
   // dhcp_options_id - computed: false, optional: false, required: true
   private _dhcpOptionsId: string;
   public get dhcpOptionsId() {
-    return this._dhcpOptionsId;
+    return this.getStringAttribute('dhcp_options_id');
   }
   public set dhcpOptionsId(value: string) {
     this._dhcpOptionsId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpOptionsIdInput() {
+    return this._dhcpOptionsId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class VpcDhcpOptionsAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dhcp_options_id: this._dhcpOptionsId,
-      vpc_id: this._vpcId,
+      dhcp_options_id: cdktf.stringToTerraform(this._dhcpOptionsId),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

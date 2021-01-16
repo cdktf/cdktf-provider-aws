@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamRolePolicyAttachmentConfig extends TerraformMetaArguments {
+export interface IamRolePolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly policyArn: string;
   readonly role: string;
 }
 
 // Resource
 
-export class IamRolePolicyAttachment extends TerraformResource {
+export class IamRolePolicyAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class IamRolePolicyAttachment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy_arn - computed: false, optional: false, required: true
   private _policyArn: string;
   public get policyArn() {
-    return this._policyArn;
+    return this.getStringAttribute('policy_arn');
   }
   public set policyArn(value: string) {
     this._policyArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyArnInput() {
+    return this._policyArn
   }
 
   // role - computed: false, optional: false, required: true
   private _role: string;
   public get role() {
-    return this._role;
+    return this.getStringAttribute('role');
   }
   public set role(value: string) {
     this._role = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleInput() {
+    return this._role
   }
 
   // =========
@@ -72,8 +75,8 @@ export class IamRolePolicyAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_arn: this._policyArn,
-      role: this._role,
+      policy_arn: cdktf.stringToTerraform(this._policyArn),
+      role: cdktf.stringToTerraform(this._role),
     };
   }
 }

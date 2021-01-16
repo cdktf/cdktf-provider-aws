@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAvailabilityZonesConfig extends TerraformMetaArguments {
+export interface DataAwsAvailabilityZonesConfig extends cdktf.TerraformMetaArguments {
   readonly allAvailabilityZones?: boolean;
   readonly excludeNames?: string[];
   readonly excludeZoneIds?: string[];
@@ -20,9 +19,18 @@ export interface DataAwsAvailabilityZonesFilter {
   readonly values: string[];
 }
 
+function dataAwsAvailabilityZonesFilterToTerraform(struct?: DataAwsAvailabilityZonesFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsAvailabilityZones extends TerraformDataSource {
+export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -53,45 +61,62 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
   // all_availability_zones - computed: false, optional: true, required: false
   private _allAvailabilityZones?: boolean;
   public get allAvailabilityZones() {
-    return this._allAvailabilityZones;
+    return this.getBooleanAttribute('all_availability_zones');
   }
-  public set allAvailabilityZones(value: boolean | undefined) {
+  public set allAvailabilityZones(value: boolean ) {
     this._allAvailabilityZones = value;
+  }
+  public resetAllAvailabilityZones() {
+    this._allAvailabilityZones = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allAvailabilityZonesInput() {
+    return this._allAvailabilityZones
   }
 
   // exclude_names - computed: false, optional: true, required: false
   private _excludeNames?: string[];
   public get excludeNames() {
-    return this._excludeNames;
+    return this.getListAttribute('exclude_names');
   }
-  public set excludeNames(value: string[] | undefined) {
+  public set excludeNames(value: string[] ) {
     this._excludeNames = value;
+  }
+  public resetExcludeNames() {
+    this._excludeNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeNamesInput() {
+    return this._excludeNames
   }
 
   // exclude_zone_ids - computed: false, optional: true, required: false
   private _excludeZoneIds?: string[];
   public get excludeZoneIds() {
-    return this._excludeZoneIds;
+    return this.getListAttribute('exclude_zone_ids');
   }
-  public set excludeZoneIds(value: string[] | undefined) {
+  public set excludeZoneIds(value: string[] ) {
     this._excludeZoneIds = value;
   }
+  public resetExcludeZoneIds() {
+    this._excludeZoneIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeZoneIdsInput() {
+    return this._excludeZoneIds
+  }
 
-  // group_names - computed: true, optional: false, required: true
+  // group_names - computed: true, optional: false, required: false
   public get groupNames() {
     return this.getListAttribute('group_names');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // names - computed: true, optional: false, required: true
+  // names - computed: true, optional: false, required: false
   public get names() {
     return this.getListAttribute('names');
   }
@@ -99,13 +124,20 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
   // state - computed: false, optional: true, required: false
   private _state?: string;
   public get state() {
-    return this._state;
+    return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string ) {
     this._state = value;
   }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state
+  }
 
-  // zone_ids - computed: true, optional: false, required: true
+  // zone_ids - computed: true, optional: false, required: false
   public get zoneIds() {
     return this.getListAttribute('zone_ids');
   }
@@ -113,10 +145,17 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsAvailabilityZonesFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsAvailabilityZonesFilter[] | undefined) {
+  public set filter(value: DataAwsAvailabilityZonesFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -125,11 +164,11 @@ export class DataAwsAvailabilityZones extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      all_availability_zones: this._allAvailabilityZones,
-      exclude_names: this._excludeNames,
-      exclude_zone_ids: this._excludeZoneIds,
-      state: this._state,
-      filter: this._filter,
+      all_availability_zones: cdktf.booleanToTerraform(this._allAvailabilityZones),
+      exclude_names: cdktf.listMapper(cdktf.stringToTerraform)(this._excludeNames),
+      exclude_zone_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._excludeZoneIds),
+      state: cdktf.stringToTerraform(this._state),
+      filter: cdktf.listMapper(dataAwsAvailabilityZonesFilterToTerraform)(this._filter),
     };
   }
 }

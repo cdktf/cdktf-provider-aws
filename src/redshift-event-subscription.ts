@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RedshiftEventSubscriptionConfig extends TerraformMetaArguments {
+export interface RedshiftEventSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly enabled?: boolean;
   readonly eventCategories?: string[];
   readonly name: string;
@@ -25,9 +24,19 @@ export interface RedshiftEventSubscriptionTimeouts {
   readonly update?: string;
 }
 
+function redshiftEventSubscriptionTimeoutsToTerraform(struct?: RedshiftEventSubscriptionTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class RedshiftEventSubscription extends TerraformResource {
+export class RedshiftEventSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,12 +68,12 @@ export class RedshiftEventSubscription extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // customer_aws_id - computed: true, optional: false, required: true
+  // customer_aws_id - computed: true, optional: false, required: false
   public get customerAwsId() {
     return this.getStringAttribute('customer_aws_id');
   }
@@ -72,76 +81,115 @@ export class RedshiftEventSubscription extends TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
-    return this._enabled;
+    return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | undefined) {
+  public set enabled(value: boolean ) {
     this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled
   }
 
   // event_categories - computed: false, optional: true, required: false
   private _eventCategories?: string[];
   public get eventCategories() {
-    return this._eventCategories;
+    return this.getListAttribute('event_categories');
   }
-  public set eventCategories(value: string[] | undefined) {
+  public set eventCategories(value: string[] ) {
     this._eventCategories = value;
+  }
+  public resetEventCategories() {
+    this._eventCategories = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventCategoriesInput() {
+    return this._eventCategories
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // severity - computed: false, optional: true, required: false
   private _severity?: string;
   public get severity() {
-    return this._severity;
+    return this.getStringAttribute('severity');
   }
-  public set severity(value: string | undefined) {
+  public set severity(value: string ) {
     this._severity = value;
+  }
+  public resetSeverity() {
+    this._severity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get severityInput() {
+    return this._severity
   }
 
   // sns_topic_arn - computed: false, optional: false, required: true
   private _snsTopicArn: string;
   public get snsTopicArn() {
-    return this._snsTopicArn;
+    return this.getStringAttribute('sns_topic_arn');
   }
   public set snsTopicArn(value: string) {
     this._snsTopicArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snsTopicArnInput() {
+    return this._snsTopicArn
   }
 
   // source_ids - computed: false, optional: true, required: false
   private _sourceIds?: string[];
   public get sourceIds() {
-    return this._sourceIds;
+    return this.getListAttribute('source_ids');
   }
-  public set sourceIds(value: string[] | undefined) {
+  public set sourceIds(value: string[] ) {
     this._sourceIds = value;
+  }
+  public resetSourceIds() {
+    this._sourceIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceIdsInput() {
+    return this._sourceIds
   }
 
   // source_type - computed: false, optional: true, required: false
   private _sourceType?: string;
   public get sourceType() {
-    return this._sourceType;
+    return this.getStringAttribute('source_type');
   }
-  public set sourceType(value: string | undefined) {
+  public set sourceType(value: string ) {
     this._sourceType = value;
   }
+  public resetSourceType() {
+    this._sourceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceTypeInput() {
+    return this._sourceType
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -149,19 +197,33 @@ export class RedshiftEventSubscription extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: RedshiftEventSubscriptionTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: RedshiftEventSubscriptionTimeouts | undefined) {
+  public set timeouts(value: RedshiftEventSubscriptionTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -170,15 +232,15 @@ export class RedshiftEventSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: this._enabled,
-      event_categories: this._eventCategories,
-      name: this._name,
-      severity: this._severity,
-      sns_topic_arn: this._snsTopicArn,
-      source_ids: this._sourceIds,
-      source_type: this._sourceType,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      enabled: cdktf.booleanToTerraform(this._enabled),
+      event_categories: cdktf.listMapper(cdktf.stringToTerraform)(this._eventCategories),
+      name: cdktf.stringToTerraform(this._name),
+      severity: cdktf.stringToTerraform(this._severity),
+      sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
+      source_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._sourceIds),
+      source_type: cdktf.stringToTerraform(this._sourceType),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: redshiftEventSubscriptionTimeoutsToTerraform(this._timeouts),
     };
   }
 }

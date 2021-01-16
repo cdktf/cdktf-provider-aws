@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsTransferServerConfig extends TerraformMetaArguments {
+export interface DataAwsTransferServerConfig extends cdktf.TerraformMetaArguments {
   readonly serverId: string;
 }
 
 // Resource
 
-export class DataAwsTransferServer extends TerraformDataSource {
+export class DataAwsTransferServer extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,36 +36,32 @@ export class DataAwsTransferServer extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // endpoint - computed: true, optional: false, required: true
+  // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // identity_provider_type - computed: true, optional: false, required: true
+  // identity_provider_type - computed: true, optional: false, required: false
   public get identityProviderType() {
     return this.getStringAttribute('identity_provider_type');
   }
 
-  // invocation_role - computed: true, optional: false, required: true
+  // invocation_role - computed: true, optional: false, required: false
   public get invocationRole() {
     return this.getStringAttribute('invocation_role');
   }
 
-  // logging_role - computed: true, optional: false, required: true
+  // logging_role - computed: true, optional: false, required: false
   public get loggingRole() {
     return this.getStringAttribute('logging_role');
   }
@@ -74,13 +69,17 @@ export class DataAwsTransferServer extends TerraformDataSource {
   // server_id - computed: false, optional: false, required: true
   private _serverId: string;
   public get serverId() {
-    return this._serverId;
+    return this.getStringAttribute('server_id');
   }
   public set serverId(value: string) {
     this._serverId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get serverIdInput() {
+    return this._serverId
+  }
 
-  // url - computed: true, optional: false, required: true
+  // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
   }
@@ -91,7 +90,7 @@ export class DataAwsTransferServer extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      server_id: this._serverId,
+      server_id: cdktf.stringToTerraform(this._serverId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodeartifactDomainConfig extends TerraformMetaArguments {
+export interface CodeartifactDomainConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
   readonly encryptionKey: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface CodeartifactDomainConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CodeartifactDomain extends TerraformResource {
+export class CodeartifactDomain extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,17 +40,17 @@ export class CodeartifactDomain extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // asset_size_bytes - computed: true, optional: false, required: true
+  // asset_size_bytes - computed: true, optional: false, required: false
   public get assetSizeBytes() {
     return this.getNumberAttribute('asset_size_bytes');
   }
 
-  // created_time - computed: true, optional: false, required: true
+  // created_time - computed: true, optional: false, required: false
   public get createdTime() {
     return this.getStringAttribute('created_time');
   }
@@ -59,36 +58,40 @@ export class CodeartifactDomain extends TerraformResource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
   }
 
   // encryption_key - computed: false, optional: false, required: true
   private _encryptionKey: string;
   public get encryptionKey() {
-    return this._encryptionKey;
+    return this.getStringAttribute('encryption_key');
   }
   public set encryptionKey(value: string) {
     this._encryptionKey = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionKeyInput() {
+    return this._encryptionKey
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // owner - computed: true, optional: false, required: true
+  // owner - computed: true, optional: false, required: false
   public get owner() {
     return this.getStringAttribute('owner');
   }
 
-  // repository_count - computed: true, optional: false, required: true
+  // repository_count - computed: true, optional: false, required: false
   public get repositoryCount() {
     return this.getNumberAttribute('repository_count');
   }
@@ -96,10 +99,17 @@ export class CodeartifactDomain extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -108,9 +118,9 @@ export class CodeartifactDomain extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
-      encryption_key: this._encryptionKey,
-      tags: this._tags,
+      domain: cdktf.stringToTerraform(this._domain),
+      encryption_key: cdktf.stringToTerraform(this._encryptionKey),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

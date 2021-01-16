@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEc2TransitGatewayRouteTableConfig extends TerraformMetaArguments {
+export interface DataAwsEc2TransitGatewayRouteTableConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /** filter block */
   readonly filter?: DataAwsEc2TransitGatewayRouteTableFilter[];
@@ -17,9 +16,18 @@ export interface DataAwsEc2TransitGatewayRouteTableFilter {
   readonly values: string[];
 }
 
+function dataAwsEc2TransitGatewayRouteTableFilterToTerraform(struct?: DataAwsEc2TransitGatewayRouteTableFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
+export class DataAwsEc2TransitGatewayRouteTable extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -44,40 +52,43 @@ export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // default_association_route_table - computed: true, optional: false, required: true
+  // default_association_route_table - computed: true, optional: false, required: false
   public get defaultAssociationRouteTable() {
     return this.getBooleanAttribute('default_association_route_table');
   }
 
-  // default_propagation_route_table - computed: true, optional: false, required: true
+  // default_propagation_route_table - computed: true, optional: false, required: false
   public get defaultPropagationRouteTable() {
     return this.getBooleanAttribute('default_propagation_route_table');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // transit_gateway_id - computed: true, optional: false, required: true
+  // transit_gateway_id - computed: true, optional: false, required: false
   public get transitGatewayId() {
     return this.getStringAttribute('transit_gateway_id');
   }
@@ -85,10 +96,17 @@ export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2TransitGatewayRouteTableFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsEc2TransitGatewayRouteTableFilter[] | undefined) {
+  public set filter(value: DataAwsEc2TransitGatewayRouteTableFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -97,8 +115,8 @@ export class DataAwsEc2TransitGatewayRouteTable extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      tags: this._tags,
-      filter: this._filter,
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      filter: cdktf.listMapper(dataAwsEc2TransitGatewayRouteTableFilterToTerraform)(this._filter),
     };
   }
 }

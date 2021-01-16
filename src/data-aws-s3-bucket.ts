@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsS3BucketConfig extends TerraformMetaArguments {
+export interface DataAwsS3BucketConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
 }
 
 // Resource
 
-export class DataAwsS3Bucket extends TerraformDataSource {
+export class DataAwsS3Bucket extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,7 +36,7 @@ export class DataAwsS3Bucket extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -45,47 +44,47 @@ export class DataAwsS3Bucket extends TerraformDataSource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
+  }
 
-  // bucket_domain_name - computed: true, optional: false, required: true
+  // bucket_domain_name - computed: true, optional: false, required: false
   public get bucketDomainName() {
     return this.getStringAttribute('bucket_domain_name');
   }
 
-  // bucket_regional_domain_name - computed: true, optional: false, required: true
+  // bucket_regional_domain_name - computed: true, optional: false, required: false
   public get bucketRegionalDomainName() {
     return this.getStringAttribute('bucket_regional_domain_name');
   }
 
-  // hosted_zone_id - computed: true, optional: false, required: true
+  // hosted_zone_id - computed: true, optional: false, required: false
   public get hostedZoneId() {
     return this.getStringAttribute('hosted_zone_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // region - computed: true, optional: false, required: true
+  // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
   }
 
-  // website_domain - computed: true, optional: false, required: true
+  // website_domain - computed: true, optional: false, required: false
   public get websiteDomain() {
     return this.getStringAttribute('website_domain');
   }
 
-  // website_endpoint - computed: true, optional: false, required: true
+  // website_endpoint - computed: true, optional: false, required: false
   public get websiteEndpoint() {
     return this.getStringAttribute('website_endpoint');
   }
@@ -96,7 +95,7 @@ export class DataAwsS3Bucket extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
+      bucket: cdktf.stringToTerraform(this._bucket),
     };
   }
 }

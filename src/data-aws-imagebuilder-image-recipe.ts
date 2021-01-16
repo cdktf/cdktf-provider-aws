@@ -2,78 +2,76 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsImagebuilderImageRecipeConfig extends TerraformMetaArguments {
+export interface DataAwsImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsImagebuilderImageRecipeBlockDeviceMappingEbs extends ComplexComputedList {
+export class DataAwsImagebuilderImageRecipeBlockDeviceMappingEbs extends cdktf.ComplexComputedList {
 
-  // delete_on_termination - computed: true, optional: false, required: true
+  // delete_on_termination - computed: true, optional: false, required: false
   public get deleteOnTermination() {
     return this.getBooleanAttribute('delete_on_termination');
   }
 
-  // encrypted - computed: true, optional: false, required: true
+  // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
 
-  // iops - computed: true, optional: false, required: true
+  // iops - computed: true, optional: false, required: false
   public get iops() {
     return this.getNumberAttribute('iops');
   }
 
-  // kms_key_id - computed: true, optional: false, required: true
+  // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // snapshot_id - computed: true, optional: false, required: true
+  // snapshot_id - computed: true, optional: false, required: false
   public get snapshotId() {
     return this.getStringAttribute('snapshot_id');
   }
 
-  // volume_size - computed: true, optional: false, required: true
+  // volume_size - computed: true, optional: false, required: false
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }
 
-  // volume_type - computed: true, optional: false, required: true
+  // volume_type - computed: true, optional: false, required: false
   public get volumeType() {
     return this.getStringAttribute('volume_type');
   }
 }
-export class DataAwsImagebuilderImageRecipeBlockDeviceMapping extends ComplexComputedList {
+export class DataAwsImagebuilderImageRecipeBlockDeviceMapping extends cdktf.ComplexComputedList {
 
-  // device_name - computed: true, optional: false, required: true
+  // device_name - computed: true, optional: false, required: false
   public get deviceName() {
     return this.getStringAttribute('device_name');
   }
 
-  // ebs - computed: true, optional: false, required: true
+  // ebs - computed: true, optional: false, required: false
   public get ebs() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('ebs') as any;
   }
 
-  // no_device - computed: true, optional: false, required: true
+  // no_device - computed: true, optional: false, required: false
   public get noDevice() {
     return this.getStringAttribute('no_device');
   }
 
-  // virtual_name - computed: true, optional: false, required: true
+  // virtual_name - computed: true, optional: false, required: false
   public get virtualName() {
     return this.getStringAttribute('virtual_name');
   }
 }
-export class DataAwsImagebuilderImageRecipeComponent extends ComplexComputedList {
+export class DataAwsImagebuilderImageRecipeComponent extends cdktf.ComplexComputedList {
 
-  // component_arn - computed: true, optional: false, required: true
+  // component_arn - computed: true, optional: false, required: false
   public get componentArn() {
     return this.getStringAttribute('component_arn');
   }
@@ -81,7 +79,7 @@ export class DataAwsImagebuilderImageRecipeComponent extends ComplexComputedList
 
 // Resource
 
-export class DataAwsImagebuilderImageRecipe extends TerraformDataSource {
+export class DataAwsImagebuilderImageRecipe extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -109,57 +107,57 @@ export class DataAwsImagebuilderImageRecipe extends TerraformDataSource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this._arn;
+    return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn
+  }
 
-  // block_device_mapping - computed: true, optional: false, required: true
+  // block_device_mapping - computed: true, optional: false, required: false
   public blockDeviceMapping(index: string) {
     return new DataAwsImagebuilderImageRecipeBlockDeviceMapping(this, 'block_device_mapping', index);
   }
 
-  // component - computed: true, optional: false, required: true
+  // component - computed: true, optional: false, required: false
   public component(index: string) {
     return new DataAwsImagebuilderImageRecipeComponent(this, 'component', index);
   }
 
-  // date_created - computed: true, optional: false, required: true
+  // date_created - computed: true, optional: false, required: false
   public get dateCreated() {
     return this.getStringAttribute('date_created');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // owner - computed: true, optional: false, required: true
+  // owner - computed: true, optional: false, required: false
   public get owner() {
     return this.getStringAttribute('owner');
   }
 
-  // parent_image - computed: true, optional: false, required: true
+  // parent_image - computed: true, optional: false, required: false
   public get parentImage() {
     return this.getStringAttribute('parent_image');
   }
 
-  // platform - computed: true, optional: false, required: true
+  // platform - computed: true, optional: false, required: false
   public get platform() {
     return this.getStringAttribute('platform');
   }
@@ -167,18 +165,25 @@ export class DataAwsImagebuilderImageRecipe extends TerraformDataSource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
   }
 
-  // working_directory - computed: true, optional: false, required: true
+  // working_directory - computed: true, optional: false, required: false
   public get workingDirectory() {
     return this.getStringAttribute('working_directory');
   }
@@ -189,8 +194,8 @@ export class DataAwsImagebuilderImageRecipe extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
-      tags: this._tags,
+      arn: cdktf.stringToTerraform(this._arn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

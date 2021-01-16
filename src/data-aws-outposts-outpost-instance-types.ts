@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsOutpostsOutpostInstanceTypesConfig extends TerraformMetaArguments {
+export interface DataAwsOutpostsOutpostInstanceTypesConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
 }
 
 // Resource
 
-export class DataAwsOutpostsOutpostInstanceTypes extends TerraformDataSource {
+export class DataAwsOutpostsOutpostInstanceTypes extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -40,22 +39,22 @@ export class DataAwsOutpostsOutpostInstanceTypes extends TerraformDataSource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this._arn;
+    return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // instance_types - computed: true, optional: false, required: true
+  // instance_types - computed: true, optional: false, required: false
   public get instanceTypes() {
     return this.getListAttribute('instance_types');
   }
@@ -66,7 +65,7 @@ export class DataAwsOutpostsOutpostInstanceTypes extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
+      arn: cdktf.stringToTerraform(this._arn),
     };
   }
 }

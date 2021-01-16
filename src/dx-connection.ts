@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxConnectionConfig extends TerraformMetaArguments {
+export interface DxConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly bandwidth: string;
   readonly location: string;
   readonly name: string;
@@ -16,7 +15,7 @@ export interface DxConnectionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DxConnection extends TerraformResource {
+export class DxConnection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,12 +42,12 @@ export class DxConnection extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // aws_device - computed: true, optional: false, required: true
+  // aws_device - computed: true, optional: false, required: false
   public get awsDevice() {
     return this.getStringAttribute('aws_device');
   }
@@ -56,27 +55,27 @@ export class DxConnection extends TerraformResource {
   // bandwidth - computed: false, optional: false, required: true
   private _bandwidth: string;
   public get bandwidth() {
-    return this._bandwidth;
+    return this.getStringAttribute('bandwidth');
   }
   public set bandwidth(value: string) {
     this._bandwidth = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthInput() {
+    return this._bandwidth
+  }
 
-  // has_logical_redundancy - computed: true, optional: false, required: true
+  // has_logical_redundancy - computed: true, optional: false, required: false
   public get hasLogicalRedundancy() {
     return this.getStringAttribute('has_logical_redundancy');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // jumbo_frame_capable - computed: true, optional: false, required: true
+  // jumbo_frame_capable - computed: true, optional: false, required: false
   public get jumboFrameCapable() {
     return this.getBooleanAttribute('jumbo_frame_capable');
   }
@@ -84,28 +83,43 @@ export class DxConnection extends TerraformResource {
   // location - computed: false, optional: false, required: true
   private _location: string;
   public get location() {
-    return this._location;
+    return this.getStringAttribute('location');
   }
   public set location(value: string) {
     this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -114,10 +128,10 @@ export class DxConnection extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bandwidth: this._bandwidth,
-      location: this._location,
-      name: this._name,
-      tags: this._tags,
+      bandwidth: cdktf.stringToTerraform(this._bandwidth),
+      location: cdktf.stringToTerraform(this._location),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

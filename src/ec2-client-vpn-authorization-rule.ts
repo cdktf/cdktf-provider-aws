@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2ClientVpnAuthorizationRuleConfig extends TerraformMetaArguments {
+export interface Ec2ClientVpnAuthorizationRuleConfig extends cdktf.TerraformMetaArguments {
   readonly accessGroupId?: string;
   readonly authorizeAllGroups?: boolean;
   readonly clientVpnEndpointId: string;
@@ -17,7 +16,7 @@ export interface Ec2ClientVpnAuthorizationRuleConfig extends TerraformMetaArgume
 
 // Resource
 
-export class Ec2ClientVpnAuthorizationRule extends TerraformResource {
+export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -48,55 +47,80 @@ export class Ec2ClientVpnAuthorizationRule extends TerraformResource {
   // access_group_id - computed: false, optional: true, required: false
   private _accessGroupId?: string;
   public get accessGroupId() {
-    return this._accessGroupId;
+    return this.getStringAttribute('access_group_id');
   }
-  public set accessGroupId(value: string | undefined) {
+  public set accessGroupId(value: string ) {
     this._accessGroupId = value;
+  }
+  public resetAccessGroupId() {
+    this._accessGroupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessGroupIdInput() {
+    return this._accessGroupId
   }
 
   // authorize_all_groups - computed: false, optional: true, required: false
   private _authorizeAllGroups?: boolean;
   public get authorizeAllGroups() {
-    return this._authorizeAllGroups;
+    return this.getBooleanAttribute('authorize_all_groups');
   }
-  public set authorizeAllGroups(value: boolean | undefined) {
+  public set authorizeAllGroups(value: boolean ) {
     this._authorizeAllGroups = value;
+  }
+  public resetAuthorizeAllGroups() {
+    this._authorizeAllGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizeAllGroupsInput() {
+    return this._authorizeAllGroups
   }
 
   // client_vpn_endpoint_id - computed: false, optional: false, required: true
   private _clientVpnEndpointId: string;
   public get clientVpnEndpointId() {
-    return this._clientVpnEndpointId;
+    return this.getStringAttribute('client_vpn_endpoint_id');
   }
   public set clientVpnEndpointId(value: string) {
     this._clientVpnEndpointId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientVpnEndpointIdInput() {
+    return this._clientVpnEndpointId
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // target_network_cidr - computed: false, optional: false, required: true
   private _targetNetworkCidr: string;
   public get targetNetworkCidr() {
-    return this._targetNetworkCidr;
+    return this.getStringAttribute('target_network_cidr');
   }
   public set targetNetworkCidr(value: string) {
     this._targetNetworkCidr = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetNetworkCidrInput() {
+    return this._targetNetworkCidr
   }
 
   // =========
@@ -105,11 +129,11 @@ export class Ec2ClientVpnAuthorizationRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_group_id: this._accessGroupId,
-      authorize_all_groups: this._authorizeAllGroups,
-      client_vpn_endpoint_id: this._clientVpnEndpointId,
-      description: this._description,
-      target_network_cidr: this._targetNetworkCidr,
+      access_group_id: cdktf.stringToTerraform(this._accessGroupId),
+      authorize_all_groups: cdktf.booleanToTerraform(this._authorizeAllGroups),
+      client_vpn_endpoint_id: cdktf.stringToTerraform(this._clientVpnEndpointId),
+      description: cdktf.stringToTerraform(this._description),
+      target_network_cidr: cdktf.stringToTerraform(this._targetNetworkCidr),
     };
   }
 }

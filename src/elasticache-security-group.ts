@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticacheSecurityGroupConfig extends TerraformMetaArguments {
+export interface ElasticacheSecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly securityGroupNames: string[];
@@ -15,7 +14,7 @@ export interface ElasticacheSecurityGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ElasticacheSecurityGroup extends TerraformResource {
+export class ElasticacheSecurityGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,37 +43,48 @@ export class ElasticacheSecurityGroup extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // security_group_names - computed: false, optional: false, required: true
   private _securityGroupNames: string[];
   public get securityGroupNames() {
-    return this._securityGroupNames;
+    return this.getListAttribute('security_group_names');
   }
   public set securityGroupNames(value: string[]) {
     this._securityGroupNames = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupNamesInput() {
+    return this._securityGroupNames
   }
 
   // =========
@@ -83,9 +93,9 @@ export class ElasticacheSecurityGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      security_group_names: this._securityGroupNames,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
     };
   }
 }

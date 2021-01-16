@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LicensemanagerLicenseConfigurationConfig extends TerraformMetaArguments {
+export interface LicensemanagerLicenseConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly licenseCount?: number;
   readonly licenseCountHardLimit?: boolean;
@@ -19,7 +18,7 @@ export interface LicensemanagerLicenseConfigurationConfig extends TerraformMetaA
 
 // Resource
 
-export class LicensemanagerLicenseConfiguration extends TerraformResource {
+export class LicensemanagerLicenseConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -52,73 +51,112 @@ export class LicensemanagerLicenseConfiguration extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // license_count - computed: false, optional: true, required: false
   private _licenseCount?: number;
   public get licenseCount() {
-    return this._licenseCount;
+    return this.getNumberAttribute('license_count');
   }
-  public set licenseCount(value: number | undefined) {
+  public set licenseCount(value: number ) {
     this._licenseCount = value;
+  }
+  public resetLicenseCount() {
+    this._licenseCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseCountInput() {
+    return this._licenseCount
   }
 
   // license_count_hard_limit - computed: false, optional: true, required: false
   private _licenseCountHardLimit?: boolean;
   public get licenseCountHardLimit() {
-    return this._licenseCountHardLimit;
+    return this.getBooleanAttribute('license_count_hard_limit');
   }
-  public set licenseCountHardLimit(value: boolean | undefined) {
+  public set licenseCountHardLimit(value: boolean ) {
     this._licenseCountHardLimit = value;
+  }
+  public resetLicenseCountHardLimit() {
+    this._licenseCountHardLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseCountHardLimitInput() {
+    return this._licenseCountHardLimit
   }
 
   // license_counting_type - computed: false, optional: false, required: true
   private _licenseCountingType: string;
   public get licenseCountingType() {
-    return this._licenseCountingType;
+    return this.getStringAttribute('license_counting_type');
   }
   public set licenseCountingType(value: string) {
     this._licenseCountingType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseCountingTypeInput() {
+    return this._licenseCountingType
   }
 
   // license_rules - computed: false, optional: true, required: false
   private _licenseRules?: string[];
   public get licenseRules() {
-    return this._licenseRules;
+    return this.getListAttribute('license_rules');
   }
-  public set licenseRules(value: string[] | undefined) {
+  public set licenseRules(value: string[] ) {
     this._licenseRules = value;
+  }
+  public resetLicenseRules() {
+    this._licenseRules = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseRulesInput() {
+    return this._licenseRules
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -127,13 +165,13 @@ export class LicensemanagerLicenseConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      license_count: this._licenseCount,
-      license_count_hard_limit: this._licenseCountHardLimit,
-      license_counting_type: this._licenseCountingType,
-      license_rules: this._licenseRules,
-      name: this._name,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      license_count: cdktf.numberToTerraform(this._licenseCount),
+      license_count_hard_limit: cdktf.booleanToTerraform(this._licenseCountHardLimit),
+      license_counting_type: cdktf.stringToTerraform(this._licenseCountingType),
+      license_rules: cdktf.listMapper(cdktf.stringToTerraform)(this._licenseRules),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

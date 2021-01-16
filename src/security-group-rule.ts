@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecurityGroupRuleConfig extends TerraformMetaArguments {
+export interface SecurityGroupRuleConfig extends cdktf.TerraformMetaArguments {
   readonly cidrBlocks?: string[];
   readonly description?: string;
   readonly fromPort: number;
@@ -24,7 +23,7 @@ export interface SecurityGroupRuleConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SecurityGroupRule extends TerraformResource {
+export class SecurityGroupRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,109 +60,167 @@ export class SecurityGroupRule extends TerraformResource {
   // cidr_blocks - computed: false, optional: true, required: false
   private _cidrBlocks?: string[];
   public get cidrBlocks() {
-    return this._cidrBlocks;
+    return this.getListAttribute('cidr_blocks');
   }
-  public set cidrBlocks(value: string[] | undefined) {
+  public set cidrBlocks(value: string[] ) {
     this._cidrBlocks = value;
+  }
+  public resetCidrBlocks() {
+    this._cidrBlocks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrBlocksInput() {
+    return this._cidrBlocks
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // from_port - computed: false, optional: false, required: true
   private _fromPort: number;
   public get fromPort() {
-    return this._fromPort;
+    return this.getNumberAttribute('from_port');
   }
   public set fromPort(value: number) {
     this._fromPort = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fromPortInput() {
+    return this._fromPort
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ipv6_cidr_blocks - computed: false, optional: true, required: false
   private _ipv6CidrBlocks?: string[];
   public get ipv6CidrBlocks() {
-    return this._ipv6CidrBlocks;
+    return this.getListAttribute('ipv6_cidr_blocks');
   }
-  public set ipv6CidrBlocks(value: string[] | undefined) {
+  public set ipv6CidrBlocks(value: string[] ) {
     this._ipv6CidrBlocks = value;
+  }
+  public resetIpv6CidrBlocks() {
+    this._ipv6CidrBlocks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrBlocksInput() {
+    return this._ipv6CidrBlocks
   }
 
   // prefix_list_ids - computed: false, optional: true, required: false
   private _prefixListIds?: string[];
   public get prefixListIds() {
-    return this._prefixListIds;
+    return this.getListAttribute('prefix_list_ids');
   }
-  public set prefixListIds(value: string[] | undefined) {
+  public set prefixListIds(value: string[] ) {
     this._prefixListIds = value;
+  }
+  public resetPrefixListIds() {
+    this._prefixListIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixListIdsInput() {
+    return this._prefixListIds
   }
 
   // protocol - computed: false, optional: false, required: true
   private _protocol: string;
   public get protocol() {
-    return this._protocol;
+    return this.getStringAttribute('protocol');
   }
   public set protocol(value: string) {
     this._protocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol
   }
 
   // security_group_id - computed: false, optional: false, required: true
   private _securityGroupId: string;
   public get securityGroupId() {
-    return this._securityGroupId;
+    return this.getStringAttribute('security_group_id');
   }
   public set securityGroupId(value: string) {
     this._securityGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdInput() {
+    return this._securityGroupId
   }
 
   // self - computed: false, optional: true, required: false
   private _self?: boolean;
   public get selfAttribute() {
-    return this._self;
+    return this.getBooleanAttribute('self');
   }
-  public set selfAttribute(value: boolean | undefined) {
+  public set selfAttribute(value: boolean ) {
     this._self = value;
+  }
+  public resetSelfAttribute() {
+    this._self = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfAttributeInput() {
+    return this._self
   }
 
   // source_security_group_id - computed: true, optional: true, required: false
   private _sourceSecurityGroupId?: string;
   public get sourceSecurityGroupId() {
-    return this._sourceSecurityGroupId ?? this.getStringAttribute('source_security_group_id');
+    return this.getStringAttribute('source_security_group_id');
   }
-  public set sourceSecurityGroupId(value: string | undefined) {
+  public set sourceSecurityGroupId(value: string) {
     this._sourceSecurityGroupId = value;
+  }
+  public resetSourceSecurityGroupId() {
+    this._sourceSecurityGroupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceSecurityGroupIdInput() {
+    return this._sourceSecurityGroupId
   }
 
   // to_port - computed: false, optional: false, required: true
   private _toPort: number;
   public get toPort() {
-    return this._toPort;
+    return this.getNumberAttribute('to_port');
   }
   public set toPort(value: number) {
     this._toPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toPortInput() {
+    return this._toPort
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // =========
@@ -172,17 +229,17 @@ export class SecurityGroupRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr_blocks: this._cidrBlocks,
-      description: this._description,
-      from_port: this._fromPort,
-      ipv6_cidr_blocks: this._ipv6CidrBlocks,
-      prefix_list_ids: this._prefixListIds,
-      protocol: this._protocol,
-      security_group_id: this._securityGroupId,
-      self: this._self,
-      source_security_group_id: this._sourceSecurityGroupId,
-      to_port: this._toPort,
-      type: this._type,
+      cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._cidrBlocks),
+      description: cdktf.stringToTerraform(this._description),
+      from_port: cdktf.numberToTerraform(this._fromPort),
+      ipv6_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6CidrBlocks),
+      prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._prefixListIds),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
+      self: cdktf.booleanToTerraform(this._self),
+      source_security_group_id: cdktf.stringToTerraform(this._sourceSecurityGroupId),
+      to_port: cdktf.numberToTerraform(this._toPort),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

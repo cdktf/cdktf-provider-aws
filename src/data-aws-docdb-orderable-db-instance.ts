@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDocdbOrderableDbInstanceConfig extends TerraformMetaArguments {
+export interface DataAwsDocdbOrderableDbInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly engine?: string;
   readonly engineVersion?: string;
   readonly instanceClass?: string;
@@ -18,7 +17,7 @@ export interface DataAwsDocdbOrderableDbInstanceConfig extends TerraformMetaArgu
 
 // Resource
 
-export class DataAwsDocdbOrderableDbInstance extends TerraformDataSource {
+export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -47,7 +46,7 @@ export class DataAwsDocdbOrderableDbInstance extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // availability_zones - computed: true, optional: false, required: true
+  // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
@@ -55,64 +54,102 @@ export class DataAwsDocdbOrderableDbInstance extends TerraformDataSource {
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this._engine;
+    return this.getStringAttribute('engine');
   }
-  public set engine(value: string | undefined) {
+  public set engine(value: string ) {
     this._engine = value;
+  }
+  public resetEngine() {
+    this._engine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this._engineVersion ?? this.getStringAttribute('engine_version');
+    return this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string | undefined) {
+  public set engineVersion(value: string) {
     this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_class - computed: true, optional: true, required: false
   private _instanceClass?: string;
   public get instanceClass() {
-    return this._instanceClass ?? this.getStringAttribute('instance_class');
+    return this.getStringAttribute('instance_class');
   }
-  public set instanceClass(value: string | undefined) {
+  public set instanceClass(value: string) {
     this._instanceClass = value;
+  }
+  public resetInstanceClass() {
+    this._instanceClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceClassInput() {
+    return this._instanceClass
   }
 
   // license_model - computed: false, optional: true, required: false
   private _licenseModel?: string;
   public get licenseModel() {
-    return this._licenseModel;
+    return this.getStringAttribute('license_model');
   }
-  public set licenseModel(value: string | undefined) {
+  public set licenseModel(value: string ) {
     this._licenseModel = value;
+  }
+  public resetLicenseModel() {
+    this._licenseModel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseModelInput() {
+    return this._licenseModel
   }
 
   // preferred_instance_classes - computed: false, optional: true, required: false
   private _preferredInstanceClasses?: string[];
   public get preferredInstanceClasses() {
-    return this._preferredInstanceClasses;
+    return this.getListAttribute('preferred_instance_classes');
   }
-  public set preferredInstanceClasses(value: string[] | undefined) {
+  public set preferredInstanceClasses(value: string[] ) {
     this._preferredInstanceClasses = value;
+  }
+  public resetPreferredInstanceClasses() {
+    this._preferredInstanceClasses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredInstanceClassesInput() {
+    return this._preferredInstanceClasses
   }
 
   // vpc - computed: true, optional: true, required: false
   private _vpc?: boolean;
   public get vpc() {
-    return this._vpc ?? this.getBooleanAttribute('vpc');
+    return this.getBooleanAttribute('vpc');
   }
-  public set vpc(value: boolean | undefined) {
+  public set vpc(value: boolean) {
     this._vpc = value;
+  }
+  public resetVpc() {
+    this._vpc = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcInput() {
+    return this._vpc
   }
 
   // =========
@@ -121,12 +158,12 @@ export class DataAwsDocdbOrderableDbInstance extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      instance_class: this._instanceClass,
-      license_model: this._licenseModel,
-      preferred_instance_classes: this._preferredInstanceClasses,
-      vpc: this._vpc,
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      instance_class: cdktf.stringToTerraform(this._instanceClass),
+      license_model: cdktf.stringToTerraform(this._licenseModel),
+      preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceClasses),
+      vpc: cdktf.booleanToTerraform(this._vpc),
     };
   }
 }

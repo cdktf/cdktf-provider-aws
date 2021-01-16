@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamPolicyAttachmentConfig extends TerraformMetaArguments {
+export interface IamPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly groups?: string[];
   readonly name: string;
   readonly policyArn: string;
@@ -17,7 +16,7 @@ export interface IamPolicyAttachmentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamPolicyAttachment extends TerraformResource {
+export class IamPolicyAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -48,55 +47,80 @@ export class IamPolicyAttachment extends TerraformResource {
   // groups - computed: false, optional: true, required: false
   private _groups?: string[];
   public get groups() {
-    return this._groups;
+    return this.getListAttribute('groups');
   }
-  public set groups(value: string[] | undefined) {
+  public set groups(value: string[] ) {
     this._groups = value;
+  }
+  public resetGroups() {
+    this._groups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupsInput() {
+    return this._groups
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // policy_arn - computed: false, optional: false, required: true
   private _policyArn: string;
   public get policyArn() {
-    return this._policyArn;
+    return this.getStringAttribute('policy_arn');
   }
   public set policyArn(value: string) {
     this._policyArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyArnInput() {
+    return this._policyArn
   }
 
   // roles - computed: false, optional: true, required: false
   private _roles?: string[];
   public get roles() {
-    return this._roles;
+    return this.getListAttribute('roles');
   }
-  public set roles(value: string[] | undefined) {
+  public set roles(value: string[] ) {
     this._roles = value;
+  }
+  public resetRoles() {
+    this._roles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rolesInput() {
+    return this._roles
   }
 
   // users - computed: false, optional: true, required: false
   private _users?: string[];
   public get users() {
-    return this._users;
+    return this.getListAttribute('users');
   }
-  public set users(value: string[] | undefined) {
+  public set users(value: string[] ) {
     this._users = value;
+  }
+  public resetUsers() {
+    this._users = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersInput() {
+    return this._users
   }
 
   // =========
@@ -105,11 +129,11 @@ export class IamPolicyAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      groups: this._groups,
-      name: this._name,
-      policy_arn: this._policyArn,
-      roles: this._roles,
-      users: this._users,
+      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      name: cdktf.stringToTerraform(this._name),
+      policy_arn: cdktf.stringToTerraform(this._policyArn),
+      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
+      users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
     };
   }
 }

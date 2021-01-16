@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface KmsCiphertextConfig extends TerraformMetaArguments {
+export interface KmsCiphertextConfig extends cdktf.TerraformMetaArguments {
   readonly context?: { [key: string]: string };
   readonly keyId: string;
   readonly plaintext: string;
@@ -15,7 +14,7 @@ export interface KmsCiphertextConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class KmsCiphertext extends TerraformResource {
+export class KmsCiphertext extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +40,7 @@ export class KmsCiphertext extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // ciphertext_blob - computed: true, optional: false, required: true
+  // ciphertext_blob - computed: true, optional: false, required: false
   public get ciphertextBlob() {
     return this.getStringAttribute('ciphertext_blob');
   }
@@ -49,37 +48,48 @@ export class KmsCiphertext extends TerraformResource {
   // context - computed: false, optional: true, required: false
   private _context?: { [key: string]: string };
   public get context() {
-    return this._context;
+    return this.interpolationForAttribute('context') as any;
   }
-  public set context(value: { [key: string]: string } | undefined) {
+  public set context(value: { [key: string]: string } ) {
     this._context = value;
+  }
+  public resetContext() {
+    this._context = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextInput() {
+    return this._context
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key_id - computed: false, optional: false, required: true
   private _keyId: string;
   public get keyId() {
-    return this._keyId;
+    return this.getStringAttribute('key_id');
   }
   public set keyId(value: string) {
     this._keyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId
   }
 
   // plaintext - computed: false, optional: false, required: true
   private _plaintext: string;
   public get plaintext() {
-    return this._plaintext;
+    return this.getStringAttribute('plaintext');
   }
   public set plaintext(value: string) {
     this._plaintext = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get plaintextInput() {
+    return this._plaintext
   }
 
   // =========
@@ -88,9 +98,9 @@ export class KmsCiphertext extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      context: this._context,
-      key_id: this._keyId,
-      plaintext: this._plaintext,
+      context: cdktf.hashMapper(cdktf.anyToTerraform)(this._context),
+      key_id: cdktf.stringToTerraform(this._keyId),
+      plaintext: cdktf.stringToTerraform(this._plaintext),
     };
   }
 }

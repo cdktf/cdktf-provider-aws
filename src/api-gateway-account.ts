@@ -2,23 +2,21 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayAccountConfig extends TerraformMetaArguments {
+export interface ApiGatewayAccountConfig extends cdktf.TerraformMetaArguments {
   readonly cloudwatchRoleArn?: string;
 }
-export class ApiGatewayAccountThrottleSettings extends ComplexComputedList {
+export class ApiGatewayAccountThrottleSettings extends cdktf.ComplexComputedList {
 
-  // burst_limit - computed: true, optional: false, required: true
+  // burst_limit - computed: true, optional: false, required: false
   public get burstLimit() {
     return this.getNumberAttribute('burst_limit');
   }
 
-  // rate_limit - computed: true, optional: false, required: true
+  // rate_limit - computed: true, optional: false, required: false
   public get rateLimit() {
     return this.getNumberAttribute('rate_limit');
   }
@@ -26,7 +24,7 @@ export class ApiGatewayAccountThrottleSettings extends ComplexComputedList {
 
 // Resource
 
-export class ApiGatewayAccount extends TerraformResource {
+export class ApiGatewayAccount extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -53,22 +51,25 @@ export class ApiGatewayAccount extends TerraformResource {
   // cloudwatch_role_arn - computed: false, optional: true, required: false
   private _cloudwatchRoleArn?: string;
   public get cloudwatchRoleArn() {
-    return this._cloudwatchRoleArn;
+    return this.getStringAttribute('cloudwatch_role_arn');
   }
-  public set cloudwatchRoleArn(value: string | undefined) {
+  public set cloudwatchRoleArn(value: string ) {
     this._cloudwatchRoleArn = value;
+  }
+  public resetCloudwatchRoleArn() {
+    this._cloudwatchRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudwatchRoleArnInput() {
+    return this._cloudwatchRoleArn
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // throttle_settings - computed: true, optional: false, required: true
+  // throttle_settings - computed: true, optional: false, required: false
   public throttleSettings(index: string) {
     return new ApiGatewayAccountThrottleSettings(this, 'throttle_settings', index);
   }
@@ -79,7 +80,7 @@ export class ApiGatewayAccount extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloudwatch_role_arn: this._cloudwatchRoleArn,
+      cloudwatch_role_arn: cdktf.stringToTerraform(this._cloudwatchRoleArn),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BackupVaultNotificationsConfig extends TerraformMetaArguments {
+export interface BackupVaultNotificationsConfig extends cdktf.TerraformMetaArguments {
   readonly backupVaultEvents: string[];
   readonly backupVaultName: string;
   readonly snsTopicArn: string;
@@ -15,7 +14,7 @@ export interface BackupVaultNotificationsConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class BackupVaultNotifications extends TerraformResource {
+export class BackupVaultNotifications extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +40,7 @@ export class BackupVaultNotifications extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // backup_vault_arn - computed: true, optional: false, required: true
+  // backup_vault_arn - computed: true, optional: false, required: false
   public get backupVaultArn() {
     return this.getStringAttribute('backup_vault_arn');
   }
@@ -49,37 +48,45 @@ export class BackupVaultNotifications extends TerraformResource {
   // backup_vault_events - computed: false, optional: false, required: true
   private _backupVaultEvents: string[];
   public get backupVaultEvents() {
-    return this._backupVaultEvents;
+    return this.getListAttribute('backup_vault_events');
   }
   public set backupVaultEvents(value: string[]) {
     this._backupVaultEvents = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupVaultEventsInput() {
+    return this._backupVaultEvents
   }
 
   // backup_vault_name - computed: false, optional: false, required: true
   private _backupVaultName: string;
   public get backupVaultName() {
-    return this._backupVaultName;
+    return this.getStringAttribute('backup_vault_name');
   }
   public set backupVaultName(value: string) {
     this._backupVaultName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get backupVaultNameInput() {
+    return this._backupVaultName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // sns_topic_arn - computed: false, optional: false, required: true
   private _snsTopicArn: string;
   public get snsTopicArn() {
-    return this._snsTopicArn;
+    return this.getStringAttribute('sns_topic_arn');
   }
   public set snsTopicArn(value: string) {
     this._snsTopicArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snsTopicArnInput() {
+    return this._snsTopicArn
   }
 
   // =========
@@ -88,9 +95,9 @@ export class BackupVaultNotifications extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_vault_events: this._backupVaultEvents,
-      backup_vault_name: this._backupVaultName,
-      sns_topic_arn: this._snsTopicArn,
+      backup_vault_events: cdktf.listMapper(cdktf.stringToTerraform)(this._backupVaultEvents),
+      backup_vault_name: cdktf.stringToTerraform(this._backupVaultName),
+      sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
     };
   }
 }

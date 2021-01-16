@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2TransitGatewayRouteConfig extends TerraformMetaArguments {
+export interface Ec2TransitGatewayRouteConfig extends cdktf.TerraformMetaArguments {
   readonly blackhole?: boolean;
   readonly destinationCidrBlock: string;
   readonly transitGatewayAttachmentId?: string;
@@ -16,7 +15,7 @@ export interface Ec2TransitGatewayRouteConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Ec2TransitGatewayRoute extends TerraformResource {
+export class Ec2TransitGatewayRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,46 +45,64 @@ export class Ec2TransitGatewayRoute extends TerraformResource {
   // blackhole - computed: false, optional: true, required: false
   private _blackhole?: boolean;
   public get blackhole() {
-    return this._blackhole;
+    return this.getBooleanAttribute('blackhole');
   }
-  public set blackhole(value: boolean | undefined) {
+  public set blackhole(value: boolean ) {
     this._blackhole = value;
+  }
+  public resetBlackhole() {
+    this._blackhole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blackholeInput() {
+    return this._blackhole
   }
 
   // destination_cidr_block - computed: false, optional: false, required: true
   private _destinationCidrBlock: string;
   public get destinationCidrBlock() {
-    return this._destinationCidrBlock;
+    return this.getStringAttribute('destination_cidr_block');
   }
   public set destinationCidrBlock(value: string) {
     this._destinationCidrBlock = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get destinationCidrBlockInput() {
+    return this._destinationCidrBlock
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // transit_gateway_attachment_id - computed: false, optional: true, required: false
   private _transitGatewayAttachmentId?: string;
   public get transitGatewayAttachmentId() {
-    return this._transitGatewayAttachmentId;
+    return this.getStringAttribute('transit_gateway_attachment_id');
   }
-  public set transitGatewayAttachmentId(value: string | undefined) {
+  public set transitGatewayAttachmentId(value: string ) {
     this._transitGatewayAttachmentId = value;
+  }
+  public resetTransitGatewayAttachmentId() {
+    this._transitGatewayAttachmentId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayAttachmentIdInput() {
+    return this._transitGatewayAttachmentId
   }
 
   // transit_gateway_route_table_id - computed: false, optional: false, required: true
   private _transitGatewayRouteTableId: string;
   public get transitGatewayRouteTableId() {
-    return this._transitGatewayRouteTableId;
+    return this.getStringAttribute('transit_gateway_route_table_id');
   }
   public set transitGatewayRouteTableId(value: string) {
     this._transitGatewayRouteTableId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitGatewayRouteTableIdInput() {
+    return this._transitGatewayRouteTableId
   }
 
   // =========
@@ -94,10 +111,10 @@ export class Ec2TransitGatewayRoute extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      blackhole: this._blackhole,
-      destination_cidr_block: this._destinationCidrBlock,
-      transit_gateway_attachment_id: this._transitGatewayAttachmentId,
-      transit_gateway_route_table_id: this._transitGatewayRouteTableId,
+      blackhole: cdktf.booleanToTerraform(this._blackhole),
+      destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
+      transit_gateway_attachment_id: cdktf.stringToTerraform(this._transitGatewayAttachmentId),
+      transit_gateway_route_table_id: cdktf.stringToTerraform(this._transitGatewayRouteTableId),
     };
   }
 }

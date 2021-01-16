@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface StoragegatewayTapePoolConfig extends TerraformMetaArguments {
+export interface StoragegatewayTapePoolConfig extends cdktf.TerraformMetaArguments {
   readonly poolName: string;
   readonly retentionLockTimeInDays?: number;
   readonly retentionLockType?: string;
@@ -17,7 +16,7 @@ export interface StoragegatewayTapePoolConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class StoragegatewayTapePool extends TerraformResource {
+export class StoragegatewayTapePool extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,63 +44,88 @@ export class StoragegatewayTapePool extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // pool_name - computed: false, optional: false, required: true
   private _poolName: string;
   public get poolName() {
-    return this._poolName;
+    return this.getStringAttribute('pool_name');
   }
   public set poolName(value: string) {
     this._poolName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolNameInput() {
+    return this._poolName
   }
 
   // retention_lock_time_in_days - computed: false, optional: true, required: false
   private _retentionLockTimeInDays?: number;
   public get retentionLockTimeInDays() {
-    return this._retentionLockTimeInDays;
+    return this.getNumberAttribute('retention_lock_time_in_days');
   }
-  public set retentionLockTimeInDays(value: number | undefined) {
+  public set retentionLockTimeInDays(value: number ) {
     this._retentionLockTimeInDays = value;
+  }
+  public resetRetentionLockTimeInDays() {
+    this._retentionLockTimeInDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionLockTimeInDaysInput() {
+    return this._retentionLockTimeInDays
   }
 
   // retention_lock_type - computed: false, optional: true, required: false
   private _retentionLockType?: string;
   public get retentionLockType() {
-    return this._retentionLockType;
+    return this.getStringAttribute('retention_lock_type');
   }
-  public set retentionLockType(value: string | undefined) {
+  public set retentionLockType(value: string ) {
     this._retentionLockType = value;
+  }
+  public resetRetentionLockType() {
+    this._retentionLockType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionLockTypeInput() {
+    return this._retentionLockType
   }
 
   // storage_class - computed: false, optional: false, required: true
   private _storageClass: string;
   public get storageClass() {
-    return this._storageClass;
+    return this.getStringAttribute('storage_class');
   }
   public set storageClass(value: string) {
     this._storageClass = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageClassInput() {
+    return this._storageClass
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -110,11 +134,11 @@ export class StoragegatewayTapePool extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      pool_name: this._poolName,
-      retention_lock_time_in_days: this._retentionLockTimeInDays,
-      retention_lock_type: this._retentionLockType,
-      storage_class: this._storageClass,
-      tags: this._tags,
+      pool_name: cdktf.stringToTerraform(this._poolName),
+      retention_lock_time_in_days: cdktf.numberToTerraform(this._retentionLockTimeInDays),
+      retention_lock_type: cdktf.stringToTerraform(this._retentionLockType),
+      storage_class: cdktf.stringToTerraform(this._storageClass),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

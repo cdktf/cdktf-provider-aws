@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SpotDatafeedSubscriptionConfig extends TerraformMetaArguments {
+export interface SpotDatafeedSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly prefix?: string;
 }
 
 // Resource
 
-export class SpotDatafeedSubscription extends TerraformResource {
+export class SpotDatafeedSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,28 +41,35 @@ export class SpotDatafeedSubscription extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // prefix - computed: false, optional: true, required: false
   private _prefix?: string;
   public get prefix() {
-    return this._prefix;
+    return this.getStringAttribute('prefix');
   }
-  public set prefix(value: string | undefined) {
+  public set prefix(value: string ) {
     this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix
   }
 
   // =========
@@ -72,8 +78,8 @@ export class SpotDatafeedSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      prefix: this._prefix,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      prefix: cdktf.stringToTerraform(this._prefix),
     };
   }
 }

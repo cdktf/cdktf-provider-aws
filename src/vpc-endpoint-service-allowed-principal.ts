@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface VpcEndpointServiceAllowedPrincipalConfig extends TerraformMetaArguments {
+export interface VpcEndpointServiceAllowedPrincipalConfig extends cdktf.TerraformMetaArguments {
   readonly principalArn: string;
   readonly vpcEndpointServiceId: string;
 }
 
 // Resource
 
-export class VpcEndpointServiceAllowedPrincipal extends TerraformResource {
+export class VpcEndpointServiceAllowedPrincipal extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class VpcEndpointServiceAllowedPrincipal extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // principal_arn - computed: false, optional: false, required: true
   private _principalArn: string;
   public get principalArn() {
-    return this._principalArn;
+    return this.getStringAttribute('principal_arn');
   }
   public set principalArn(value: string) {
     this._principalArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalArnInput() {
+    return this._principalArn
   }
 
   // vpc_endpoint_service_id - computed: false, optional: false, required: true
   private _vpcEndpointServiceId: string;
   public get vpcEndpointServiceId() {
-    return this._vpcEndpointServiceId;
+    return this.getStringAttribute('vpc_endpoint_service_id');
   }
   public set vpcEndpointServiceId(value: string) {
     this._vpcEndpointServiceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEndpointServiceIdInput() {
+    return this._vpcEndpointServiceId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class VpcEndpointServiceAllowedPrincipal extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      principal_arn: this._principalArn,
-      vpc_endpoint_service_id: this._vpcEndpointServiceId,
+      principal_arn: cdktf.stringToTerraform(this._principalArn),
+      vpc_endpoint_service_id: cdktf.stringToTerraform(this._vpcEndpointServiceId),
     };
   }
 }

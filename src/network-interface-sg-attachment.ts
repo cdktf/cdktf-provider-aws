@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NetworkInterfaceSgAttachmentConfig extends TerraformMetaArguments {
+export interface NetworkInterfaceSgAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly networkInterfaceId: string;
   readonly securityGroupId: string;
 }
 
 // Resource
 
-export class NetworkInterfaceSgAttachment extends TerraformResource {
+export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class NetworkInterfaceSgAttachment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // network_interface_id - computed: false, optional: false, required: true
   private _networkInterfaceId: string;
   public get networkInterfaceId() {
-    return this._networkInterfaceId;
+    return this.getStringAttribute('network_interface_id');
   }
   public set networkInterfaceId(value: string) {
     this._networkInterfaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceIdInput() {
+    return this._networkInterfaceId
   }
 
   // security_group_id - computed: false, optional: false, required: true
   private _securityGroupId: string;
   public get securityGroupId() {
-    return this._securityGroupId;
+    return this.getStringAttribute('security_group_id');
   }
   public set securityGroupId(value: string) {
     this._securityGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdInput() {
+    return this._securityGroupId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class NetworkInterfaceSgAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      network_interface_id: this._networkInterfaceId,
-      security_group_id: this._securityGroupId,
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
     };
   }
 }

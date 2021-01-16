@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueRegistryConfig extends TerraformMetaArguments {
+export interface GlueRegistryConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly registryName: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface GlueRegistryConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GlueRegistry extends TerraformResource {
+export class GlueRegistry extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +40,7 @@ export class GlueRegistry extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -49,37 +48,51 @@ export class GlueRegistry extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // registry_name - computed: false, optional: false, required: true
   private _registryName: string;
   public get registryName() {
-    return this._registryName;
+    return this.getStringAttribute('registry_name');
   }
   public set registryName(value: string) {
     this._registryName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get registryNameInput() {
+    return this._registryName
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -88,9 +101,9 @@ export class GlueRegistry extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      registry_name: this._registryName,
-      tags: this._tags,
+      description: cdktf.stringToTerraform(this._description),
+      registry_name: cdktf.stringToTerraform(this._registryName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

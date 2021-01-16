@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53ZoneConfig extends TerraformMetaArguments {
+export interface Route53ZoneConfig extends cdktf.TerraformMetaArguments {
   readonly comment?: string;
   readonly delegationSetId?: string;
   readonly forceDestroy?: boolean;
@@ -21,9 +20,18 @@ export interface Route53ZoneVpc {
   readonly vpcRegion?: string;
 }
 
+function route53ZoneVpcToTerraform(struct?: Route53ZoneVpc): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    vpc_region: cdktf.stringToTerraform(struct!.vpcRegion),
+  }
+}
+
+
 // Resource
 
-export class Route53Zone extends TerraformResource {
+export class Route53Zone extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -55,49 +63,70 @@ export class Route53Zone extends TerraformResource {
   // comment - computed: false, optional: true, required: false
   private _comment?: string;
   public get comment() {
-    return this._comment;
+    return this.getStringAttribute('comment');
   }
-  public set comment(value: string | undefined) {
+  public set comment(value: string ) {
     this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment
   }
 
   // delegation_set_id - computed: false, optional: true, required: false
   private _delegationSetId?: string;
   public get delegationSetId() {
-    return this._delegationSetId;
+    return this.getStringAttribute('delegation_set_id');
   }
-  public set delegationSetId(value: string | undefined) {
+  public set delegationSetId(value: string ) {
     this._delegationSetId = value;
+  }
+  public resetDelegationSetId() {
+    this._delegationSetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delegationSetIdInput() {
+    return this._delegationSetId
   }
 
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this._forceDestroy;
+    return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | undefined) {
+  public set forceDestroy(value: boolean ) {
     this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // name_servers - computed: true, optional: false, required: true
+  // name_servers - computed: true, optional: false, required: false
   public get nameServers() {
     return this.getListAttribute('name_servers');
   }
@@ -105,13 +134,20 @@ export class Route53Zone extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // zone_id - computed: true, optional: false, required: true
+  // zone_id - computed: true, optional: false, required: false
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
@@ -119,10 +155,17 @@ export class Route53Zone extends TerraformResource {
   // vpc - computed: false, optional: true, required: false
   private _vpc?: Route53ZoneVpc[];
   public get vpc() {
-    return this._vpc;
+    return this.interpolationForAttribute('vpc') as any;
   }
-  public set vpc(value: Route53ZoneVpc[] | undefined) {
+  public set vpc(value: Route53ZoneVpc[] ) {
     this._vpc = value;
+  }
+  public resetVpc() {
+    this._vpc = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcInput() {
+    return this._vpc
   }
 
   // =========
@@ -131,12 +174,12 @@ export class Route53Zone extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: this._comment,
-      delegation_set_id: this._delegationSetId,
-      force_destroy: this._forceDestroy,
-      name: this._name,
-      tags: this._tags,
-      vpc: this._vpc,
+      comment: cdktf.stringToTerraform(this._comment),
+      delegation_set_id: cdktf.stringToTerraform(this._delegationSetId),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc: cdktf.listMapper(route53ZoneVpcToTerraform)(this._vpc),
     };
   }
 }

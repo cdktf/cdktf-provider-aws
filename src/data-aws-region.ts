@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRegionConfig extends TerraformMetaArguments {
+export interface DataAwsRegionConfig extends cdktf.TerraformMetaArguments {
   readonly endpoint?: string;
   readonly name?: string;
 }
 
 // Resource
 
-export class DataAwsRegion extends TerraformDataSource {
+export class DataAwsRegion extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -39,7 +38,7 @@ export class DataAwsRegion extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
@@ -47,28 +46,38 @@ export class DataAwsRegion extends TerraformDataSource {
   // endpoint - computed: true, optional: true, required: false
   private _endpoint?: string;
   public get endpoint() {
-    return this._endpoint ?? this.getStringAttribute('endpoint');
+    return this.getStringAttribute('endpoint');
   }
-  public set endpoint(value: string | undefined) {
+  public set endpoint(value: string) {
     this._endpoint = value;
+  }
+  public resetEndpoint() {
+    this._endpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // =========
@@ -77,8 +86,8 @@ export class DataAwsRegion extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint: this._endpoint,
-      name: this._name,
+      endpoint: cdktf.stringToTerraform(this._endpoint),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCanonicalUserIdConfig extends TerraformMetaArguments {
+export interface DataAwsCanonicalUserIdConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsCanonicalUserId extends TerraformDataSource {
+export class DataAwsCanonicalUserId extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -35,18 +34,14 @@ export class DataAwsCanonicalUserId extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // display_name - computed: true, optional: false, required: true
+  // display_name - computed: true, optional: false, required: false
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

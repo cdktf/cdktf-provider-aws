@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ImagebuilderImageRecipeConfig extends TerraformMetaArguments {
+export interface ImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly parentImage: string;
@@ -28,6 +27,20 @@ export interface ImagebuilderImageRecipeBlockDeviceMappingEbs {
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
+
+function imagebuilderImageRecipeBlockDeviceMappingEbsToTerraform(struct?: ImagebuilderImageRecipeBlockDeviceMappingEbs): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    delete_on_termination: cdktf.stringToTerraform(struct!.deleteOnTermination),
+    encrypted: cdktf.stringToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    volume_size: cdktf.numberToTerraform(struct!.volumeSize),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
 export interface ImagebuilderImageRecipeBlockDeviceMapping {
   readonly deviceName?: string;
   readonly noDevice?: boolean;
@@ -35,13 +48,32 @@ export interface ImagebuilderImageRecipeBlockDeviceMapping {
   /** ebs block */
   readonly ebs?: ImagebuilderImageRecipeBlockDeviceMappingEbs[];
 }
+
+function imagebuilderImageRecipeBlockDeviceMappingToTerraform(struct?: ImagebuilderImageRecipeBlockDeviceMapping): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    device_name: cdktf.stringToTerraform(struct!.deviceName),
+    no_device: cdktf.booleanToTerraform(struct!.noDevice),
+    virtual_name: cdktf.stringToTerraform(struct!.virtualName),
+    ebs: cdktf.listMapper(imagebuilderImageRecipeBlockDeviceMappingEbsToTerraform)(struct!.ebs),
+  }
+}
+
 export interface ImagebuilderImageRecipeComponent {
   readonly componentArn: string;
 }
 
+function imagebuilderImageRecipeComponentToTerraform(struct?: ImagebuilderImageRecipeComponent): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    component_arn: cdktf.stringToTerraform(struct!.componentArn),
+  }
+}
+
+
 // Resource
 
-export class ImagebuilderImageRecipe extends TerraformResource {
+export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -72,12 +104,12 @@ export class ImagebuilderImageRecipe extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // date_created - computed: true, optional: false, required: true
+  // date_created - computed: true, optional: false, required: false
   public get dateCreated() {
     return this.getStringAttribute('date_created');
   }
@@ -85,31 +117,38 @@ export class ImagebuilderImageRecipe extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // owner - computed: true, optional: false, required: true
+  // owner - computed: true, optional: false, required: false
   public get owner() {
     return this.getStringAttribute('owner');
   }
@@ -117,13 +156,17 @@ export class ImagebuilderImageRecipe extends TerraformResource {
   // parent_image - computed: false, optional: false, required: true
   private _parentImage: string;
   public get parentImage() {
-    return this._parentImage;
+    return this.getStringAttribute('parent_image');
   }
   public set parentImage(value: string) {
     this._parentImage = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get parentImageInput() {
+    return this._parentImage
+  }
 
-  // platform - computed: true, optional: false, required: true
+  // platform - computed: true, optional: false, required: false
   public get platform() {
     return this.getStringAttribute('platform');
   }
@@ -131,46 +174,75 @@ export class ImagebuilderImageRecipe extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // version - computed: false, optional: false, required: true
   private _version: string;
   public get version() {
-    return this._version;
+    return this.getStringAttribute('version');
   }
   public set version(value: string) {
     this._version = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // working_directory - computed: false, optional: true, required: false
   private _workingDirectory?: string;
   public get workingDirectory() {
-    return this._workingDirectory;
+    return this.getStringAttribute('working_directory');
   }
-  public set workingDirectory(value: string | undefined) {
+  public set workingDirectory(value: string ) {
     this._workingDirectory = value;
+  }
+  public resetWorkingDirectory() {
+    this._workingDirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workingDirectoryInput() {
+    return this._workingDirectory
   }
 
   // block_device_mapping - computed: false, optional: true, required: false
   private _blockDeviceMapping?: ImagebuilderImageRecipeBlockDeviceMapping[];
   public get blockDeviceMapping() {
-    return this._blockDeviceMapping;
+    return this.interpolationForAttribute('block_device_mapping') as any;
   }
-  public set blockDeviceMapping(value: ImagebuilderImageRecipeBlockDeviceMapping[] | undefined) {
+  public set blockDeviceMapping(value: ImagebuilderImageRecipeBlockDeviceMapping[] ) {
     this._blockDeviceMapping = value;
+  }
+  public resetBlockDeviceMapping() {
+    this._blockDeviceMapping = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blockDeviceMappingInput() {
+    return this._blockDeviceMapping
   }
 
   // component - computed: false, optional: false, required: true
   private _component: ImagebuilderImageRecipeComponent[];
   public get component() {
-    return this._component;
+    return this.interpolationForAttribute('component') as any;
   }
   public set component(value: ImagebuilderImageRecipeComponent[]) {
     this._component = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get componentInput() {
+    return this._component
   }
 
   // =========
@@ -179,14 +251,14 @@ export class ImagebuilderImageRecipe extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      parent_image: this._parentImage,
-      tags: this._tags,
-      version: this._version,
-      working_directory: this._workingDirectory,
-      block_device_mapping: this._blockDeviceMapping,
-      component: this._component,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      parent_image: cdktf.stringToTerraform(this._parentImage),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      version: cdktf.stringToTerraform(this._version),
+      working_directory: cdktf.stringToTerraform(this._workingDirectory),
+      block_device_mapping: cdktf.listMapper(imagebuilderImageRecipeBlockDeviceMappingToTerraform)(this._blockDeviceMapping),
+      component: cdktf.listMapper(imagebuilderImageRecipeComponentToTerraform)(this._component),
     };
   }
 }

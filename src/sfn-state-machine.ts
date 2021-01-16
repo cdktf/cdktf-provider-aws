@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SfnStateMachineConfig extends TerraformMetaArguments {
+export interface SfnStateMachineConfig extends cdktf.TerraformMetaArguments {
   readonly definition: string;
   readonly name: string;
   readonly roleArn: string;
@@ -16,7 +15,7 @@ export interface SfnStateMachineConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class SfnStateMachine extends TerraformResource {
+export class SfnStateMachine extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,12 +42,12 @@ export class SfnStateMachine extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // creation_date - computed: true, optional: false, required: true
+  // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
@@ -56,40 +55,48 @@ export class SfnStateMachine extends TerraformResource {
   // definition - computed: false, optional: false, required: true
   private _definition: string;
   public get definition() {
-    return this._definition;
+    return this.getStringAttribute('definition');
   }
   public set definition(value: string) {
     this._definition = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get definitionInput() {
+    return this._definition
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -97,10 +104,17 @@ export class SfnStateMachine extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -109,10 +123,10 @@ export class SfnStateMachine extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      definition: this._definition,
-      name: this._name,
-      role_arn: this._roleArn,
-      tags: this._tags,
+      definition: cdktf.stringToTerraform(this._definition),
+      name: cdktf.stringToTerraform(this._name),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

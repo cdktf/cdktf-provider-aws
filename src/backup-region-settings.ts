@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BackupRegionSettingsConfig extends TerraformMetaArguments {
+export interface BackupRegionSettingsConfig extends cdktf.TerraformMetaArguments {
   readonly resourceTypeOptInPreference: { [key: string]: boolean };
 }
 
 // Resource
 
-export class BackupRegionSettings extends TerraformResource {
+export class BackupRegionSettings extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,21 +37,21 @@ export class BackupRegionSettings extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // resource_type_opt_in_preference - computed: false, optional: false, required: true
   private _resourceTypeOptInPreference: { [key: string]: boolean };
   public get resourceTypeOptInPreference() {
-    return this._resourceTypeOptInPreference;
+    return this.interpolationForAttribute('resource_type_opt_in_preference') as any;
   }
   public set resourceTypeOptInPreference(value: { [key: string]: boolean }) {
     this._resourceTypeOptInPreference = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypeOptInPreferenceInput() {
+    return this._resourceTypeOptInPreference
   }
 
   // =========
@@ -61,7 +60,7 @@ export class BackupRegionSettings extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_type_opt_in_preference: this._resourceTypeOptInPreference,
+      resource_type_opt_in_preference: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTypeOptInPreference),
     };
   }
 }

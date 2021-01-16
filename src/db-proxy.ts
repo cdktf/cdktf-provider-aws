@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbProxyConfig extends TerraformMetaArguments {
+export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
   readonly debugLogging?: boolean;
   readonly engineFamily: string;
   readonly idleClientTimeout?: number;
@@ -28,15 +27,36 @@ export interface DbProxyAuth {
   readonly iamAuth?: string;
   readonly secretArn?: string;
 }
+
+function dbProxyAuthToTerraform(struct?: DbProxyAuth): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    auth_scheme: cdktf.stringToTerraform(struct!.authScheme),
+    description: cdktf.stringToTerraform(struct!.description),
+    iam_auth: cdktf.stringToTerraform(struct!.iamAuth),
+    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+  }
+}
+
 export interface DbProxyTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function dbProxyTimeoutsToTerraform(struct?: DbProxyTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DbProxy extends TerraformResource {
+export class DbProxy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -70,7 +90,7 @@ export class DbProxy extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -78,13 +98,20 @@ export class DbProxy extends TerraformResource {
   // debug_logging - computed: false, optional: true, required: false
   private _debugLogging?: boolean;
   public get debugLogging() {
-    return this._debugLogging;
+    return this.getBooleanAttribute('debug_logging');
   }
-  public set debugLogging(value: boolean | undefined) {
+  public set debugLogging(value: boolean ) {
     this._debugLogging = value;
   }
+  public resetDebugLogging() {
+    this._debugLogging = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get debugLoggingInput() {
+    return this._debugLogging
+  }
 
-  // endpoint - computed: true, optional: false, required: true
+  // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
@@ -92,100 +119,151 @@ export class DbProxy extends TerraformResource {
   // engine_family - computed: false, optional: false, required: true
   private _engineFamily: string;
   public get engineFamily() {
-    return this._engineFamily;
+    return this.getStringAttribute('engine_family');
   }
   public set engineFamily(value: string) {
     this._engineFamily = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get engineFamilyInput() {
+    return this._engineFamily
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // idle_client_timeout - computed: true, optional: true, required: false
   private _idleClientTimeout?: number;
   public get idleClientTimeout() {
-    return this._idleClientTimeout ?? this.getNumberAttribute('idle_client_timeout');
+    return this.getNumberAttribute('idle_client_timeout');
   }
-  public set idleClientTimeout(value: number | undefined) {
+  public set idleClientTimeout(value: number) {
     this._idleClientTimeout = value;
+  }
+  public resetIdleClientTimeout() {
+    this._idleClientTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idleClientTimeoutInput() {
+    return this._idleClientTimeout
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // require_tls - computed: false, optional: true, required: false
   private _requireTls?: boolean;
   public get requireTls() {
-    return this._requireTls;
+    return this.getBooleanAttribute('require_tls');
   }
-  public set requireTls(value: boolean | undefined) {
+  public set requireTls(value: boolean ) {
     this._requireTls = value;
+  }
+  public resetRequireTls() {
+    this._requireTls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireTlsInput() {
+    return this._requireTls
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
-    return this._vpcSecurityGroupIds ?? this.getListAttribute('vpc_security_group_ids');
+    return this.getListAttribute('vpc_security_group_ids');
   }
-  public set vpcSecurityGroupIds(value: string[] | undefined) {
+  public set vpcSecurityGroupIds(value: string[]) {
     this._vpcSecurityGroupIds = value;
+  }
+  public resetVpcSecurityGroupIds() {
+    this._vpcSecurityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcSecurityGroupIdsInput() {
+    return this._vpcSecurityGroupIds
   }
 
   // vpc_subnet_ids - computed: false, optional: false, required: true
   private _vpcSubnetIds: string[];
   public get vpcSubnetIds() {
-    return this._vpcSubnetIds;
+    return this.getListAttribute('vpc_subnet_ids');
   }
   public set vpcSubnetIds(value: string[]) {
     this._vpcSubnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcSubnetIdsInput() {
+    return this._vpcSubnetIds
   }
 
   // auth - computed: false, optional: false, required: true
   private _auth: DbProxyAuth[];
   public get auth() {
-    return this._auth;
+    return this.interpolationForAttribute('auth') as any;
   }
   public set auth(value: DbProxyAuth[]) {
     this._auth = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authInput() {
+    return this._auth
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DbProxyTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: DbProxyTimeouts | undefined) {
+  public set timeouts(value: DbProxyTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -194,17 +272,17 @@ export class DbProxy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      debug_logging: this._debugLogging,
-      engine_family: this._engineFamily,
-      idle_client_timeout: this._idleClientTimeout,
-      name: this._name,
-      require_tls: this._requireTls,
-      role_arn: this._roleArn,
-      tags: this._tags,
-      vpc_security_group_ids: this._vpcSecurityGroupIds,
-      vpc_subnet_ids: this._vpcSubnetIds,
-      auth: this._auth,
-      timeouts: this._timeouts,
+      debug_logging: cdktf.booleanToTerraform(this._debugLogging),
+      engine_family: cdktf.stringToTerraform(this._engineFamily),
+      idle_client_timeout: cdktf.numberToTerraform(this._idleClientTimeout),
+      name: cdktf.stringToTerraform(this._name),
+      require_tls: cdktf.booleanToTerraform(this._requireTls),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      vpc_subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSubnetIds),
+      auth: cdktf.listMapper(dbProxyAuthToTerraform)(this._auth),
+      timeouts: dbProxyTimeoutsToTerraform(this._timeouts),
     };
   }
 }

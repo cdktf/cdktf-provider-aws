@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DefaultSubnetConfig extends TerraformMetaArguments {
+export interface DefaultSubnetConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone: string;
   readonly mapPublicIpOnLaunch?: boolean;
   readonly outpostArn?: string;
@@ -20,9 +19,18 @@ export interface DefaultSubnetTimeouts {
   readonly delete?: string;
 }
 
+function defaultSubnetTimeoutsToTerraform(struct?: DefaultSubnetTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DefaultSubnet extends TerraformResource {
+export class DefaultSubnet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,12 +58,12 @@ export class DefaultSubnet extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // assign_ipv6_address_on_creation - computed: true, optional: false, required: true
+  // assign_ipv6_address_on_creation - computed: true, optional: false, required: false
   public get assignIpv6AddressOnCreation() {
     return this.getBooleanAttribute('assign_ipv6_address_on_creation');
   }
@@ -63,37 +71,37 @@ export class DefaultSubnet extends TerraformResource {
   // availability_zone - computed: false, optional: false, required: true
   private _availabilityZone: string;
   public get availabilityZone() {
-    return this._availabilityZone;
+    return this.getStringAttribute('availability_zone');
   }
   public set availabilityZone(value: string) {
     this._availabilityZone = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
+  }
 
-  // availability_zone_id - computed: true, optional: false, required: true
+  // availability_zone_id - computed: true, optional: false, required: false
   public get availabilityZoneId() {
     return this.getStringAttribute('availability_zone_id');
   }
 
-  // cidr_block - computed: true, optional: false, required: true
+  // cidr_block - computed: true, optional: false, required: false
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ipv6_cidr_block - computed: true, optional: false, required: true
+  // ipv6_cidr_block - computed: true, optional: false, required: false
   public get ipv6CidrBlock() {
     return this.getStringAttribute('ipv6_cidr_block');
   }
 
-  // ipv6_cidr_block_association_id - computed: true, optional: false, required: true
+  // ipv6_cidr_block_association_id - computed: true, optional: false, required: false
   public get ipv6CidrBlockAssociationId() {
     return this.getStringAttribute('ipv6_cidr_block_association_id');
   }
@@ -101,22 +109,36 @@ export class DefaultSubnet extends TerraformResource {
   // map_public_ip_on_launch - computed: true, optional: true, required: false
   private _mapPublicIpOnLaunch?: boolean;
   public get mapPublicIpOnLaunch() {
-    return this._mapPublicIpOnLaunch ?? this.getBooleanAttribute('map_public_ip_on_launch');
+    return this.getBooleanAttribute('map_public_ip_on_launch');
   }
-  public set mapPublicIpOnLaunch(value: boolean | undefined) {
+  public set mapPublicIpOnLaunch(value: boolean) {
     this._mapPublicIpOnLaunch = value;
+  }
+  public resetMapPublicIpOnLaunch() {
+    this._mapPublicIpOnLaunch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mapPublicIpOnLaunchInput() {
+    return this._mapPublicIpOnLaunch
   }
 
   // outpost_arn - computed: false, optional: true, required: false
   private _outpostArn?: string;
   public get outpostArn() {
-    return this._outpostArn;
+    return this.getStringAttribute('outpost_arn');
   }
-  public set outpostArn(value: string | undefined) {
+  public set outpostArn(value: string ) {
     this._outpostArn = value;
   }
+  public resetOutpostArn() {
+    this._outpostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outpostArnInput() {
+    return this._outpostArn
+  }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -124,13 +146,20 @@ export class DefaultSubnet extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -138,10 +167,17 @@ export class DefaultSubnet extends TerraformResource {
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DefaultSubnetTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: DefaultSubnetTimeouts | undefined) {
+  public set timeouts(value: DefaultSubnetTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -150,11 +186,11 @@ export class DefaultSubnet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: this._availabilityZone,
-      map_public_ip_on_launch: this._mapPublicIpOnLaunch,
-      outpost_arn: this._outpostArn,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      map_public_ip_on_launch: cdktf.booleanToTerraform(this._mapPublicIpOnLaunch),
+      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: defaultSubnetTimeoutsToTerraform(this._timeouts),
     };
   }
 }

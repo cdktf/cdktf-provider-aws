@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppsyncDatasourceConfig extends TerraformMetaArguments {
+export interface AppsyncDatasourceConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly description?: string;
   readonly name: string;
@@ -27,20 +26,55 @@ export interface AppsyncDatasourceDynamodbConfig {
   readonly tableName: string;
   readonly useCallerCredentials?: boolean;
 }
+
+function appsyncDatasourceDynamodbConfigToTerraform(struct?: AppsyncDatasourceDynamodbConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    region: cdktf.stringToTerraform(struct!.region),
+    table_name: cdktf.stringToTerraform(struct!.tableName),
+    use_caller_credentials: cdktf.booleanToTerraform(struct!.useCallerCredentials),
+  }
+}
+
 export interface AppsyncDatasourceElasticsearchConfig {
   readonly endpoint: string;
   readonly region?: string;
 }
+
+function appsyncDatasourceElasticsearchConfigToTerraform(struct?: AppsyncDatasourceElasticsearchConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+    region: cdktf.stringToTerraform(struct!.region),
+  }
+}
+
 export interface AppsyncDatasourceHttpConfig {
   readonly endpoint: string;
 }
+
+function appsyncDatasourceHttpConfigToTerraform(struct?: AppsyncDatasourceHttpConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+  }
+}
+
 export interface AppsyncDatasourceLambdaConfig {
   readonly functionArn: string;
 }
 
+function appsyncDatasourceLambdaConfigToTerraform(struct?: AppsyncDatasourceLambdaConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    function_arn: cdktf.stringToTerraform(struct!.functionArn),
+  }
+}
+
+
 // Resource
 
-export class AppsyncDatasource extends TerraformResource {
+export class AppsyncDatasource extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -75,13 +109,17 @@ export class AppsyncDatasource extends TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this._apiId;
+    return this.getStringAttribute('api_id');
   }
   public set apiId(value: string) {
     this._apiId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -89,82 +127,128 @@ export class AppsyncDatasource extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // service_role_arn - computed: false, optional: true, required: false
   private _serviceRoleArn?: string;
   public get serviceRoleArn() {
-    return this._serviceRoleArn;
+    return this.getStringAttribute('service_role_arn');
   }
-  public set serviceRoleArn(value: string | undefined) {
+  public set serviceRoleArn(value: string ) {
     this._serviceRoleArn = value;
+  }
+  public resetServiceRoleArn() {
+    this._serviceRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceRoleArnInput() {
+    return this._serviceRoleArn
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // dynamodb_config - computed: false, optional: true, required: false
   private _dynamodbConfig?: AppsyncDatasourceDynamodbConfig[];
   public get dynamodbConfig() {
-    return this._dynamodbConfig;
+    return this.interpolationForAttribute('dynamodb_config') as any;
   }
-  public set dynamodbConfig(value: AppsyncDatasourceDynamodbConfig[] | undefined) {
+  public set dynamodbConfig(value: AppsyncDatasourceDynamodbConfig[] ) {
     this._dynamodbConfig = value;
+  }
+  public resetDynamodbConfig() {
+    this._dynamodbConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamodbConfigInput() {
+    return this._dynamodbConfig
   }
 
   // elasticsearch_config - computed: false, optional: true, required: false
   private _elasticsearchConfig?: AppsyncDatasourceElasticsearchConfig[];
   public get elasticsearchConfig() {
-    return this._elasticsearchConfig;
+    return this.interpolationForAttribute('elasticsearch_config') as any;
   }
-  public set elasticsearchConfig(value: AppsyncDatasourceElasticsearchConfig[] | undefined) {
+  public set elasticsearchConfig(value: AppsyncDatasourceElasticsearchConfig[] ) {
     this._elasticsearchConfig = value;
+  }
+  public resetElasticsearchConfig() {
+    this._elasticsearchConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elasticsearchConfigInput() {
+    return this._elasticsearchConfig
   }
 
   // http_config - computed: false, optional: true, required: false
   private _httpConfig?: AppsyncDatasourceHttpConfig[];
   public get httpConfig() {
-    return this._httpConfig;
+    return this.interpolationForAttribute('http_config') as any;
   }
-  public set httpConfig(value: AppsyncDatasourceHttpConfig[] | undefined) {
+  public set httpConfig(value: AppsyncDatasourceHttpConfig[] ) {
     this._httpConfig = value;
+  }
+  public resetHttpConfig() {
+    this._httpConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpConfigInput() {
+    return this._httpConfig
   }
 
   // lambda_config - computed: false, optional: true, required: false
   private _lambdaConfig?: AppsyncDatasourceLambdaConfig[];
   public get lambdaConfig() {
-    return this._lambdaConfig;
+    return this.interpolationForAttribute('lambda_config') as any;
   }
-  public set lambdaConfig(value: AppsyncDatasourceLambdaConfig[] | undefined) {
+  public set lambdaConfig(value: AppsyncDatasourceLambdaConfig[] ) {
     this._lambdaConfig = value;
+  }
+  public resetLambdaConfig() {
+    this._lambdaConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaConfigInput() {
+    return this._lambdaConfig
   }
 
   // =========
@@ -173,15 +257,15 @@ export class AppsyncDatasource extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      description: this._description,
-      name: this._name,
-      service_role_arn: this._serviceRoleArn,
-      type: this._type,
-      dynamodb_config: this._dynamodbConfig,
-      elasticsearch_config: this._elasticsearchConfig,
-      http_config: this._httpConfig,
-      lambda_config: this._lambdaConfig,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
+      type: cdktf.stringToTerraform(this._type),
+      dynamodb_config: cdktf.listMapper(appsyncDatasourceDynamodbConfigToTerraform)(this._dynamodbConfig),
+      elasticsearch_config: cdktf.listMapper(appsyncDatasourceElasticsearchConfigToTerraform)(this._elasticsearchConfig),
+      http_config: cdktf.listMapper(appsyncDatasourceHttpConfigToTerraform)(this._httpConfig),
+      lambda_config: cdktf.listMapper(appsyncDatasourceLambdaConfigToTerraform)(this._lambdaConfig),
     };
   }
 }

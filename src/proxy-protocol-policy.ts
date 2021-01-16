@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ProxyProtocolPolicyConfig extends TerraformMetaArguments {
+export interface ProxyProtocolPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly instancePorts: string[];
   readonly loadBalancer: string;
 }
 
 // Resource
 
-export class ProxyProtocolPolicy extends TerraformResource {
+export class ProxyProtocolPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class ProxyProtocolPolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_ports - computed: false, optional: false, required: true
   private _instancePorts: string[];
   public get instancePorts() {
-    return this._instancePorts;
+    return this.getListAttribute('instance_ports');
   }
   public set instancePorts(value: string[]) {
     this._instancePorts = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePortsInput() {
+    return this._instancePorts
   }
 
   // load_balancer - computed: false, optional: false, required: true
   private _loadBalancer: string;
   public get loadBalancer() {
-    return this._loadBalancer;
+    return this.getStringAttribute('load_balancer');
   }
   public set loadBalancer(value: string) {
     this._loadBalancer = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerInput() {
+    return this._loadBalancer
   }
 
   // =========
@@ -72,8 +75,8 @@ export class ProxyProtocolPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_ports: this._instancePorts,
-      load_balancer: this._loadBalancer,
+      instance_ports: cdktf.listMapper(cdktf.stringToTerraform)(this._instancePorts),
+      load_balancer: cdktf.stringToTerraform(this._loadBalancer),
     };
   }
 }

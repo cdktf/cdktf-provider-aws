@@ -2,20 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEfsFileSystemConfig extends TerraformMetaArguments {
+export interface DataAwsEfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly creationToken?: string;
   readonly fileSystemId?: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsEfsFileSystemLifecyclePolicy extends ComplexComputedList {
+export class DataAwsEfsFileSystemLifecyclePolicy extends cdktf.ComplexComputedList {
 
-  // transition_to_ia - computed: true, optional: false, required: true
+  // transition_to_ia - computed: true, optional: false, required: false
   public get transitionToIa() {
     return this.getStringAttribute('transition_to_ia');
   }
@@ -23,7 +21,7 @@ export class DataAwsEfsFileSystemLifecyclePolicy extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsEfsFileSystem extends TerraformDataSource {
+export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -49,7 +47,7 @@ export class DataAwsEfsFileSystem extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -57,18 +55,25 @@ export class DataAwsEfsFileSystem extends TerraformDataSource {
   // creation_token - computed: true, optional: true, required: false
   private _creationToken?: string;
   public get creationToken() {
-    return this._creationToken ?? this.getStringAttribute('creation_token');
+    return this.getStringAttribute('creation_token');
   }
-  public set creationToken(value: string | undefined) {
+  public set creationToken(value: string) {
     this._creationToken = value;
   }
+  public resetCreationToken() {
+    this._creationToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get creationTokenInput() {
+    return this._creationToken
+  }
 
-  // dns_name - computed: true, optional: false, required: true
+  // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
 
-  // encrypted - computed: true, optional: false, required: true
+  // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
@@ -76,56 +81,66 @@ export class DataAwsEfsFileSystem extends TerraformDataSource {
   // file_system_id - computed: true, optional: true, required: false
   private _fileSystemId?: string;
   public get fileSystemId() {
-    return this._fileSystemId ?? this.getStringAttribute('file_system_id');
+    return this.getStringAttribute('file_system_id');
   }
-  public set fileSystemId(value: string | undefined) {
+  public set fileSystemId(value: string) {
     this._fileSystemId = value;
+  }
+  public resetFileSystemId() {
+    this._fileSystemId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdInput() {
+    return this._fileSystemId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // kms_key_id - computed: true, optional: false, required: true
+  // kms_key_id - computed: true, optional: false, required: false
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
 
-  // lifecycle_policy - computed: true, optional: false, required: true
+  // lifecycle_policy - computed: true, optional: false, required: false
   public lifecyclePolicy(index: string) {
     return new DataAwsEfsFileSystemLifecyclePolicy(this, 'lifecycle_policy', index);
   }
 
-  // performance_mode - computed: true, optional: false, required: true
+  // performance_mode - computed: true, optional: false, required: false
   public get performanceMode() {
     return this.getStringAttribute('performance_mode');
   }
 
-  // provisioned_throughput_in_mibps - computed: true, optional: false, required: true
+  // provisioned_throughput_in_mibps - computed: true, optional: false, required: false
   public get provisionedThroughputInMibps() {
     return this.getNumberAttribute('provisioned_throughput_in_mibps');
   }
 
-  // size_in_bytes - computed: true, optional: false, required: true
+  // size_in_bytes - computed: true, optional: false, required: false
   public get sizeInBytes() {
     return this.getNumberAttribute('size_in_bytes');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // throughput_mode - computed: true, optional: false, required: true
+  // throughput_mode - computed: true, optional: false, required: false
   public get throughputMode() {
     return this.getStringAttribute('throughput_mode');
   }
@@ -136,9 +151,9 @@ export class DataAwsEfsFileSystem extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      creation_token: this._creationToken,
-      file_system_id: this._fileSystemId,
-      tags: this._tags,
+      creation_token: cdktf.stringToTerraform(this._creationToken),
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

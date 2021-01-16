@@ -2,79 +2,77 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSignerSigningJobConfig extends TerraformMetaArguments {
+export interface DataAwsSignerSigningJobConfig extends cdktf.TerraformMetaArguments {
   readonly jobId: string;
 }
-export class DataAwsSignerSigningJobRevocationRecord extends ComplexComputedList {
+export class DataAwsSignerSigningJobRevocationRecord extends cdktf.ComplexComputedList {
 
-  // reason - computed: true, optional: false, required: true
+  // reason - computed: true, optional: false, required: false
   public get reason() {
     return this.getStringAttribute('reason');
   }
 
-  // revoked_at - computed: true, optional: false, required: true
+  // revoked_at - computed: true, optional: false, required: false
   public get revokedAt() {
     return this.getStringAttribute('revoked_at');
   }
 
-  // revoked_by - computed: true, optional: false, required: true
+  // revoked_by - computed: true, optional: false, required: false
   public get revokedBy() {
     return this.getStringAttribute('revoked_by');
   }
 }
-export class DataAwsSignerSigningJobSignedObjectS3 extends ComplexComputedList {
+export class DataAwsSignerSigningJobSignedObjectS3 extends cdktf.ComplexComputedList {
 
-  // bucket - computed: true, optional: false, required: true
+  // bucket - computed: true, optional: false, required: false
   public get bucket() {
     return this.getStringAttribute('bucket');
   }
 
-  // key - computed: true, optional: false, required: true
+  // key - computed: true, optional: false, required: false
   public get key() {
     return this.getStringAttribute('key');
   }
 }
-export class DataAwsSignerSigningJobSignedObject extends ComplexComputedList {
+export class DataAwsSignerSigningJobSignedObject extends cdktf.ComplexComputedList {
 
-  // s3 - computed: true, optional: false, required: true
+  // s3 - computed: true, optional: false, required: false
   public get s3() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('s3') as any;
   }
 }
-export class DataAwsSignerSigningJobSourceS3 extends ComplexComputedList {
+export class DataAwsSignerSigningJobSourceS3 extends cdktf.ComplexComputedList {
 
-  // bucket - computed: true, optional: false, required: true
+  // bucket - computed: true, optional: false, required: false
   public get bucket() {
     return this.getStringAttribute('bucket');
   }
 
-  // key - computed: true, optional: false, required: true
+  // key - computed: true, optional: false, required: false
   public get key() {
     return this.getStringAttribute('key');
   }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
   }
 }
-export class DataAwsSignerSigningJobSource extends ComplexComputedList {
+export class DataAwsSignerSigningJobSource extends cdktf.ComplexComputedList {
 
-  // s3 - computed: true, optional: false, required: true
+  // s3 - computed: true, optional: false, required: false
   public get s3() {
-    return 'not implemented' as any;
+    return this.interpolationForAttribute('s3') as any;
   }
 }
 
 // Resource
 
-export class DataAwsSignerSigningJob extends TerraformDataSource {
+export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -98,95 +96,95 @@ export class DataAwsSignerSigningJob extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // completed_at - computed: true, optional: false, required: true
+  // completed_at - computed: true, optional: false, required: false
   public get completedAt() {
     return this.getStringAttribute('completed_at');
   }
 
-  // created_at - computed: true, optional: false, required: true
+  // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // job_id - computed: false, optional: false, required: true
   private _jobId: string;
   public get jobId() {
-    return this._jobId;
+    return this.getStringAttribute('job_id');
   }
   public set jobId(value: string) {
     this._jobId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get jobIdInput() {
+    return this._jobId
+  }
 
-  // job_invoker - computed: true, optional: false, required: true
+  // job_invoker - computed: true, optional: false, required: false
   public get jobInvoker() {
     return this.getStringAttribute('job_invoker');
   }
 
-  // job_owner - computed: true, optional: false, required: true
+  // job_owner - computed: true, optional: false, required: false
   public get jobOwner() {
     return this.getStringAttribute('job_owner');
   }
 
-  // platform_display_name - computed: true, optional: false, required: true
+  // platform_display_name - computed: true, optional: false, required: false
   public get platformDisplayName() {
     return this.getStringAttribute('platform_display_name');
   }
 
-  // platform_id - computed: true, optional: false, required: true
+  // platform_id - computed: true, optional: false, required: false
   public get platformId() {
     return this.getStringAttribute('platform_id');
   }
 
-  // profile_name - computed: true, optional: false, required: true
+  // profile_name - computed: true, optional: false, required: false
   public get profileName() {
     return this.getStringAttribute('profile_name');
   }
 
-  // profile_version - computed: true, optional: false, required: true
+  // profile_version - computed: true, optional: false, required: false
   public get profileVersion() {
     return this.getStringAttribute('profile_version');
   }
 
-  // requested_by - computed: true, optional: false, required: true
+  // requested_by - computed: true, optional: false, required: false
   public get requestedBy() {
     return this.getStringAttribute('requested_by');
   }
 
-  // revocation_record - computed: true, optional: false, required: true
+  // revocation_record - computed: true, optional: false, required: false
   public revocationRecord(index: string) {
     return new DataAwsSignerSigningJobRevocationRecord(this, 'revocation_record', index);
   }
 
-  // signature_expires_at - computed: true, optional: false, required: true
+  // signature_expires_at - computed: true, optional: false, required: false
   public get signatureExpiresAt() {
     return this.getStringAttribute('signature_expires_at');
   }
 
-  // signed_object - computed: true, optional: false, required: true
+  // signed_object - computed: true, optional: false, required: false
   public signedObject(index: string) {
     return new DataAwsSignerSigningJobSignedObject(this, 'signed_object', index);
   }
 
-  // source - computed: true, optional: false, required: true
+  // source - computed: true, optional: false, required: false
   public source(index: string) {
     return new DataAwsSignerSigningJobSource(this, 'source', index);
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // status_reason - computed: true, optional: false, required: true
+  // status_reason - computed: true, optional: false, required: false
   public get statusReason() {
     return this.getStringAttribute('status_reason');
   }
@@ -197,7 +195,7 @@ export class DataAwsSignerSigningJob extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      job_id: this._jobId,
+      job_id: cdktf.stringToTerraform(this._jobId),
     };
   }
 }

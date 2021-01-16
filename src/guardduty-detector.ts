@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyDetectorConfig extends TerraformMetaArguments {
+export interface GuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   readonly enable?: boolean;
   readonly findingPublishingFrequency?: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface GuarddutyDetectorConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GuarddutyDetector extends TerraformResource {
+export class GuarddutyDetector extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,12 +40,12 @@ export class GuarddutyDetector extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: true, optional: false, required: true
+  // account_id - computed: true, optional: false, required: false
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -54,37 +53,54 @@ export class GuarddutyDetector extends TerraformResource {
   // enable - computed: false, optional: true, required: false
   private _enable?: boolean;
   public get enable() {
-    return this._enable;
+    return this.getBooleanAttribute('enable');
   }
-  public set enable(value: boolean | undefined) {
+  public set enable(value: boolean ) {
     this._enable = value;
+  }
+  public resetEnable() {
+    this._enable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableInput() {
+    return this._enable
   }
 
   // finding_publishing_frequency - computed: true, optional: true, required: false
   private _findingPublishingFrequency?: string;
   public get findingPublishingFrequency() {
-    return this._findingPublishingFrequency ?? this.getStringAttribute('finding_publishing_frequency');
+    return this.getStringAttribute('finding_publishing_frequency');
   }
-  public set findingPublishingFrequency(value: string | undefined) {
+  public set findingPublishingFrequency(value: string) {
     this._findingPublishingFrequency = value;
+  }
+  public resetFindingPublishingFrequency() {
+    this._findingPublishingFrequency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get findingPublishingFrequencyInput() {
+    return this._findingPublishingFrequency
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -93,9 +109,9 @@ export class GuarddutyDetector extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable: this._enable,
-      finding_publishing_frequency: this._findingPublishingFrequency,
-      tags: this._tags,
+      enable: cdktf.booleanToTerraform(this._enable),
+      finding_publishing_frequency: cdktf.stringToTerraform(this._findingPublishingFrequency),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

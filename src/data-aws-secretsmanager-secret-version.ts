@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSecretsmanagerSecretVersionConfig extends TerraformMetaArguments {
+export interface DataAwsSecretsmanagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
   readonly secretId: string;
   readonly versionId?: string;
   readonly versionStage?: string;
@@ -15,7 +14,7 @@ export interface DataAwsSecretsmanagerSecretVersionConfig extends TerraformMetaA
 
 // Resource
 
-export class DataAwsSecretsmanagerSecretVersion extends TerraformDataSource {
+export class DataAwsSecretsmanagerSecretVersion extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -41,21 +40,17 @@ export class DataAwsSecretsmanagerSecretVersion extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // secret_binary - computed: true, optional: false, required: true
+  // secret_binary - computed: true, optional: false, required: false
   public get secretBinary() {
     return this.getStringAttribute('secret_binary');
   }
@@ -63,13 +58,17 @@ export class DataAwsSecretsmanagerSecretVersion extends TerraformDataSource {
   // secret_id - computed: false, optional: false, required: true
   private _secretId: string;
   public get secretId() {
-    return this._secretId;
+    return this.getStringAttribute('secret_id');
   }
   public set secretId(value: string) {
     this._secretId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get secretIdInput() {
+    return this._secretId
+  }
 
-  // secret_string - computed: true, optional: false, required: true
+  // secret_string - computed: true, optional: false, required: false
   public get secretString() {
     return this.getStringAttribute('secret_string');
   }
@@ -77,22 +76,36 @@ export class DataAwsSecretsmanagerSecretVersion extends TerraformDataSource {
   // version_id - computed: true, optional: true, required: false
   private _versionId?: string;
   public get versionId() {
-    return this._versionId ?? this.getStringAttribute('version_id');
+    return this.getStringAttribute('version_id');
   }
-  public set versionId(value: string | undefined) {
+  public set versionId(value: string) {
     this._versionId = value;
+  }
+  public resetVersionId() {
+    this._versionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionIdInput() {
+    return this._versionId
   }
 
   // version_stage - computed: false, optional: true, required: false
   private _versionStage?: string;
   public get versionStage() {
-    return this._versionStage;
+    return this.getStringAttribute('version_stage');
   }
-  public set versionStage(value: string | undefined) {
+  public set versionStage(value: string ) {
     this._versionStage = value;
   }
+  public resetVersionStage() {
+    this._versionStage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionStageInput() {
+    return this._versionStage
+  }
 
-  // version_stages - computed: true, optional: false, required: true
+  // version_stages - computed: true, optional: false, required: false
   public get versionStages() {
     return this.getListAttribute('version_stages');
   }
@@ -103,9 +116,9 @@ export class DataAwsSecretsmanagerSecretVersion extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      secret_id: this._secretId,
-      version_id: this._versionId,
-      version_stage: this._versionStage,
+      secret_id: cdktf.stringToTerraform(this._secretId),
+      version_id: cdktf.stringToTerraform(this._versionId),
+      version_stage: cdktf.stringToTerraform(this._versionStage),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface XrayGroupConfig extends TerraformMetaArguments {
+export interface XrayGroupConfig extends cdktf.TerraformMetaArguments {
   readonly filterExpression: string;
   readonly groupName: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface XrayGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class XrayGroup extends TerraformResource {
+export class XrayGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +40,7 @@ export class XrayGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -49,37 +48,48 @@ export class XrayGroup extends TerraformResource {
   // filter_expression - computed: false, optional: false, required: true
   private _filterExpression: string;
   public get filterExpression() {
-    return this._filterExpression;
+    return this.getStringAttribute('filter_expression');
   }
   public set filterExpression(value: string) {
     this._filterExpression = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterExpressionInput() {
+    return this._filterExpression
   }
 
   // group_name - computed: false, optional: false, required: true
   private _groupName: string;
   public get groupName() {
-    return this._groupName;
+    return this.getStringAttribute('group_name');
   }
   public set groupName(value: string) {
     this._groupName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get groupNameInput() {
+    return this._groupName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -88,9 +98,9 @@ export class XrayGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter_expression: this._filterExpression,
-      group_name: this._groupName,
-      tags: this._tags,
+      filter_expression: cdktf.stringToTerraform(this._filterExpression),
+      group_name: cdktf.stringToTerraform(this._groupName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

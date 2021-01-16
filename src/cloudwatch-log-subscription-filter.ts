@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogSubscriptionFilterConfig extends TerraformMetaArguments {
+export interface CloudwatchLogSubscriptionFilterConfig extends cdktf.TerraformMetaArguments {
   readonly destinationArn: string;
   readonly distribution?: string;
   readonly filterPattern: string;
@@ -18,7 +17,7 @@ export interface CloudwatchLogSubscriptionFilterConfig extends TerraformMetaArgu
 
 // Resource
 
-export class CloudwatchLogSubscriptionFilter extends TerraformResource {
+export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,64 +49,90 @@ export class CloudwatchLogSubscriptionFilter extends TerraformResource {
   // destination_arn - computed: false, optional: false, required: true
   private _destinationArn: string;
   public get destinationArn() {
-    return this._destinationArn;
+    return this.getStringAttribute('destination_arn');
   }
   public set destinationArn(value: string) {
     this._destinationArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationArnInput() {
+    return this._destinationArn
   }
 
   // distribution - computed: false, optional: true, required: false
   private _distribution?: string;
   public get distribution() {
-    return this._distribution;
+    return this.getStringAttribute('distribution');
   }
-  public set distribution(value: string | undefined) {
+  public set distribution(value: string ) {
     this._distribution = value;
+  }
+  public resetDistribution() {
+    this._distribution = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get distributionInput() {
+    return this._distribution
   }
 
   // filter_pattern - computed: false, optional: false, required: true
   private _filterPattern: string;
   public get filterPattern() {
-    return this._filterPattern;
+    return this.getStringAttribute('filter_pattern');
   }
   public set filterPattern(value: string) {
     this._filterPattern = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get filterPatternInput() {
+    return this._filterPattern
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // log_group_name - computed: false, optional: false, required: true
   private _logGroupName: string;
   public get logGroupName() {
-    return this._logGroupName;
+    return this.getStringAttribute('log_group_name');
   }
   public set logGroupName(value: string) {
     this._logGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logGroupNameInput() {
+    return this._logGroupName
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // role_arn - computed: true, optional: true, required: false
   private _roleArn?: string;
   public get roleArn() {
-    return this._roleArn ?? this.getStringAttribute('role_arn');
+    return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // =========
@@ -116,12 +141,12 @@ export class CloudwatchLogSubscriptionFilter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_arn: this._destinationArn,
-      distribution: this._distribution,
-      filter_pattern: this._filterPattern,
-      log_group_name: this._logGroupName,
-      name: this._name,
-      role_arn: this._roleArn,
+      destination_arn: cdktf.stringToTerraform(this._destinationArn),
+      distribution: cdktf.stringToTerraform(this._distribution),
+      filter_pattern: cdktf.stringToTerraform(this._filterPattern),
+      log_group_name: cdktf.stringToTerraform(this._logGroupName),
+      name: cdktf.stringToTerraform(this._name),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

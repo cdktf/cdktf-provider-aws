@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigConfigurationRecorderStatusConfig extends TerraformMetaArguments {
+export interface ConfigConfigurationRecorderStatusConfig extends cdktf.TerraformMetaArguments {
   readonly isEnabled: boolean;
   readonly name: string;
 }
 
 // Resource
 
-export class ConfigConfigurationRecorderStatus extends TerraformResource {
+export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class ConfigConfigurationRecorderStatus extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // is_enabled - computed: false, optional: false, required: true
   private _isEnabled: boolean;
   public get isEnabled() {
-    return this._isEnabled;
+    return this.getBooleanAttribute('is_enabled');
   }
   public set isEnabled(value: boolean) {
     this._isEnabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isEnabledInput() {
+    return this._isEnabled
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // =========
@@ -72,8 +75,8 @@ export class ConfigConfigurationRecorderStatus extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      is_enabled: this._isEnabled,
-      name: this._name,
+      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

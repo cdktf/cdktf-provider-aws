@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafByteMatchSetConfig extends TerraformMetaArguments {
+export interface WafByteMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** byte_match_tuples block */
   readonly byteMatchTuples?: WafByteMatchSetByteMatchTuples[];
@@ -16,6 +15,15 @@ export interface WafByteMatchSetByteMatchTuplesFieldToMatch {
   readonly data?: string;
   readonly type: string;
 }
+
+function wafByteMatchSetByteMatchTuplesFieldToMatchToTerraform(struct?: WafByteMatchSetByteMatchTuplesFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafByteMatchSetByteMatchTuples {
   readonly positionalConstraint: string;
   readonly targetString?: string;
@@ -24,9 +32,20 @@ export interface WafByteMatchSetByteMatchTuples {
   readonly fieldToMatch: WafByteMatchSetByteMatchTuplesFieldToMatch[];
 }
 
+function wafByteMatchSetByteMatchTuplesToTerraform(struct?: WafByteMatchSetByteMatchTuples): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    positional_constraint: cdktf.stringToTerraform(struct!.positionalConstraint),
+    target_string: cdktf.stringToTerraform(struct!.targetString),
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafByteMatchSetByteMatchTuplesFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafByteMatchSet extends TerraformResource {
+export class WafByteMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -52,30 +71,37 @@ export class WafByteMatchSet extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // byte_match_tuples - computed: false, optional: true, required: false
   private _byteMatchTuples?: WafByteMatchSetByteMatchTuples[];
   public get byteMatchTuples() {
-    return this._byteMatchTuples;
+    return this.interpolationForAttribute('byte_match_tuples') as any;
   }
-  public set byteMatchTuples(value: WafByteMatchSetByteMatchTuples[] | undefined) {
+  public set byteMatchTuples(value: WafByteMatchSetByteMatchTuples[] ) {
     this._byteMatchTuples = value;
+  }
+  public resetByteMatchTuples() {
+    this._byteMatchTuples = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get byteMatchTuplesInput() {
+    return this._byteMatchTuples
   }
 
   // =========
@@ -84,8 +110,8 @@ export class WafByteMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      byte_match_tuples: this._byteMatchTuples,
+      name: cdktf.stringToTerraform(this._name),
+      byte_match_tuples: cdktf.listMapper(wafByteMatchSetByteMatchTuplesToTerraform)(this._byteMatchTuples),
     };
   }
 }

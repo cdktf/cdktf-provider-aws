@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueWorkflowConfig extends TerraformMetaArguments {
+export interface GlueWorkflowConfig extends cdktf.TerraformMetaArguments {
   readonly defaultRunProperties?: { [key: string]: string };
   readonly description?: string;
   readonly maxConcurrentRuns?: number;
@@ -17,7 +16,7 @@ export interface GlueWorkflowConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class GlueWorkflow extends TerraformResource {
+export class GlueWorkflow extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,7 +44,7 @@ export class GlueWorkflow extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -53,55 +52,86 @@ export class GlueWorkflow extends TerraformResource {
   // default_run_properties - computed: false, optional: true, required: false
   private _defaultRunProperties?: { [key: string]: string };
   public get defaultRunProperties() {
-    return this._defaultRunProperties;
+    return this.interpolationForAttribute('default_run_properties') as any;
   }
-  public set defaultRunProperties(value: { [key: string]: string } | undefined) {
+  public set defaultRunProperties(value: { [key: string]: string } ) {
     this._defaultRunProperties = value;
+  }
+  public resetDefaultRunProperties() {
+    this._defaultRunProperties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultRunPropertiesInput() {
+    return this._defaultRunProperties
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // max_concurrent_runs - computed: false, optional: true, required: false
   private _maxConcurrentRuns?: number;
   public get maxConcurrentRuns() {
-    return this._maxConcurrentRuns;
+    return this.getNumberAttribute('max_concurrent_runs');
   }
-  public set maxConcurrentRuns(value: number | undefined) {
+  public set maxConcurrentRuns(value: number ) {
     this._maxConcurrentRuns = value;
+  }
+  public resetMaxConcurrentRuns() {
+    this._maxConcurrentRuns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxConcurrentRunsInput() {
+    return this._maxConcurrentRuns
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string ) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -110,11 +140,11 @@ export class GlueWorkflow extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_run_properties: this._defaultRunProperties,
-      description: this._description,
-      max_concurrent_runs: this._maxConcurrentRuns,
-      name: this._name,
-      tags: this._tags,
+      default_run_properties: cdktf.hashMapper(cdktf.anyToTerraform)(this._defaultRunProperties),
+      description: cdktf.stringToTerraform(this._description),
+      max_concurrent_runs: cdktf.numberToTerraform(this._maxConcurrentRuns),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

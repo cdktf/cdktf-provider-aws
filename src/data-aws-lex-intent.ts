@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLexIntentConfig extends TerraformMetaArguments {
+export interface DataAwsLexIntentConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly version?: string;
 }
 
 // Resource
 
-export class DataAwsLexIntent extends TerraformDataSource {
+export class DataAwsLexIntent extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -39,36 +38,32 @@ export class DataAwsLexIntent extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // checksum - computed: true, optional: false, required: true
+  // checksum - computed: true, optional: false, required: false
   public get checksum() {
     return this.getStringAttribute('checksum');
   }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_updated_date - computed: true, optional: false, required: true
+  // last_updated_date - computed: true, optional: false, required: false
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -76,13 +71,17 @@ export class DataAwsLexIntent extends TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // parent_intent_signature - computed: true, optional: false, required: true
+  // parent_intent_signature - computed: true, optional: false, required: false
   public get parentIntentSignature() {
     return this.getStringAttribute('parent_intent_signature');
   }
@@ -90,10 +89,17 @@ export class DataAwsLexIntent extends TerraformDataSource {
   // version - computed: false, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this._version;
+    return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string ) {
     this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // =========
@@ -102,8 +108,8 @@ export class DataAwsLexIntent extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      version: this._version,
+      name: cdktf.stringToTerraform(this._name),
+      version: cdktf.stringToTerraform(this._version),
     };
   }
 }

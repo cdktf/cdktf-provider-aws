@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSagemakerPrebuiltEcrImageConfig extends TerraformMetaArguments {
+export interface DataAwsSagemakerPrebuiltEcrImageConfig extends cdktf.TerraformMetaArguments {
   readonly dnsSuffix?: string;
   readonly imageTag?: string;
   readonly region?: string;
@@ -16,7 +15,7 @@ export interface DataAwsSagemakerPrebuiltEcrImageConfig extends TerraformMetaArg
 
 // Resource
 
-export class DataAwsSagemakerPrebuiltEcrImage extends TerraformDataSource {
+export class DataAwsSagemakerPrebuiltEcrImage extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,45 +45,62 @@ export class DataAwsSagemakerPrebuiltEcrImage extends TerraformDataSource {
   // dns_suffix - computed: false, optional: true, required: false
   private _dnsSuffix?: string;
   public get dnsSuffix() {
-    return this._dnsSuffix;
+    return this.getStringAttribute('dns_suffix');
   }
-  public set dnsSuffix(value: string | undefined) {
+  public set dnsSuffix(value: string ) {
     this._dnsSuffix = value;
+  }
+  public resetDnsSuffix() {
+    this._dnsSuffix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsSuffixInput() {
+    return this._dnsSuffix
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // image_tag - computed: false, optional: true, required: false
   private _imageTag?: string;
   public get imageTag() {
-    return this._imageTag;
+    return this.getStringAttribute('image_tag');
   }
-  public set imageTag(value: string | undefined) {
+  public set imageTag(value: string ) {
     this._imageTag = value;
+  }
+  public resetImageTag() {
+    this._imageTag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageTagInput() {
+    return this._imageTag
   }
 
   // region - computed: false, optional: true, required: false
   private _region?: string;
   public get region() {
-    return this._region;
+    return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string ) {
     this._region = value;
   }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region
+  }
 
-  // registry_id - computed: true, optional: false, required: true
+  // registry_id - computed: true, optional: false, required: false
   public get registryId() {
     return this.getStringAttribute('registry_id');
   }
 
-  // registry_path - computed: true, optional: false, required: true
+  // registry_path - computed: true, optional: false, required: false
   public get registryPath() {
     return this.getStringAttribute('registry_path');
   }
@@ -92,10 +108,14 @@ export class DataAwsSagemakerPrebuiltEcrImage extends TerraformDataSource {
   // repository_name - computed: false, optional: false, required: true
   private _repositoryName: string;
   public get repositoryName() {
-    return this._repositoryName;
+    return this.getStringAttribute('repository_name');
   }
   public set repositoryName(value: string) {
     this._repositoryName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryNameInput() {
+    return this._repositoryName
   }
 
   // =========
@@ -104,10 +124,10 @@ export class DataAwsSagemakerPrebuiltEcrImage extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dns_suffix: this._dnsSuffix,
-      image_tag: this._imageTag,
-      region: this._region,
-      repository_name: this._repositoryName,
+      dns_suffix: cdktf.stringToTerraform(this._dnsSuffix),
+      image_tag: cdktf.stringToTerraform(this._imageTag),
+      region: cdktf.stringToTerraform(this._region),
+      repository_name: cdktf.stringToTerraform(this._repositoryName),
     };
   }
 }

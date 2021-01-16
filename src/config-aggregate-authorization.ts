@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConfigAggregateAuthorizationConfig extends TerraformMetaArguments {
+export interface ConfigAggregateAuthorizationConfig extends cdktf.TerraformMetaArguments {
   readonly accountId: string;
   readonly region: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface ConfigAggregateAuthorizationConfig extends TerraformMetaArgumen
 
 // Resource
 
-export class ConfigAggregateAuthorization extends TerraformResource {
+export class ConfigAggregateAuthorization extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,42 +43,53 @@ export class ConfigAggregateAuthorization extends TerraformResource {
   // account_id - computed: false, optional: false, required: true
   private _accountId: string;
   public get accountId() {
-    return this._accountId;
+    return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get accountIdInput() {
+    return this._accountId
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // region - computed: false, optional: false, required: true
   private _region: string;
   public get region() {
-    return this._region;
+    return this.getStringAttribute('region');
   }
   public set region(value: string) {
     this._region = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -88,9 +98,9 @@ export class ConfigAggregateAuthorization extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: this._accountId,
-      region: this._region,
-      tags: this._tags,
+      account_id: cdktf.stringToTerraform(this._accountId),
+      region: cdktf.stringToTerraform(this._region),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayMethodSettingsConfig extends TerraformMetaArguments {
+export interface ApiGatewayMethodSettingsConfig extends cdktf.TerraformMetaArguments {
   readonly methodPath: string;
   readonly restApiId: string;
   readonly stageName: string;
@@ -27,9 +26,26 @@ export interface ApiGatewayMethodSettingsSettings {
   readonly unauthorizedCacheControlHeaderStrategy?: string;
 }
 
+function apiGatewayMethodSettingsSettingsToTerraform(struct?: ApiGatewayMethodSettingsSettings): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cache_data_encrypted: cdktf.booleanToTerraform(struct!.cacheDataEncrypted),
+    cache_ttl_in_seconds: cdktf.numberToTerraform(struct!.cacheTtlInSeconds),
+    caching_enabled: cdktf.booleanToTerraform(struct!.cachingEnabled),
+    data_trace_enabled: cdktf.booleanToTerraform(struct!.dataTraceEnabled),
+    logging_level: cdktf.stringToTerraform(struct!.loggingLevel),
+    metrics_enabled: cdktf.booleanToTerraform(struct!.metricsEnabled),
+    require_authorization_for_cache_control: cdktf.booleanToTerraform(struct!.requireAuthorizationForCacheControl),
+    throttling_burst_limit: cdktf.numberToTerraform(struct!.throttlingBurstLimit),
+    throttling_rate_limit: cdktf.numberToTerraform(struct!.throttlingRateLimit),
+    unauthorized_cache_control_header_strategy: cdktf.stringToTerraform(struct!.unauthorizedCacheControlHeaderStrategy),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayMethodSettings extends TerraformResource {
+export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,48 +73,60 @@ export class ApiGatewayMethodSettings extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // method_path - computed: false, optional: false, required: true
   private _methodPath: string;
   public get methodPath() {
-    return this._methodPath;
+    return this.getStringAttribute('method_path');
   }
   public set methodPath(value: string) {
     this._methodPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get methodPathInput() {
+    return this._methodPath
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this._restApiId;
+    return this.getStringAttribute('rest_api_id');
   }
   public set restApiId(value: string) {
     this._restApiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restApiIdInput() {
+    return this._restApiId
   }
 
   // stage_name - computed: false, optional: false, required: true
   private _stageName: string;
   public get stageName() {
-    return this._stageName;
+    return this.getStringAttribute('stage_name');
   }
   public set stageName(value: string) {
     this._stageName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stageNameInput() {
+    return this._stageName
   }
 
   // settings - computed: false, optional: false, required: true
   private _settings: ApiGatewayMethodSettingsSettings[];
   public get settings() {
-    return this._settings;
+    return this.interpolationForAttribute('settings') as any;
   }
   public set settings(value: ApiGatewayMethodSettingsSettings[]) {
     this._settings = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get settingsInput() {
+    return this._settings
   }
 
   // =========
@@ -107,10 +135,10 @@ export class ApiGatewayMethodSettings extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      method_path: this._methodPath,
-      rest_api_id: this._restApiId,
-      stage_name: this._stageName,
-      settings: this._settings,
+      method_path: cdktf.stringToTerraform(this._methodPath),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
+      stage_name: cdktf.stringToTerraform(this._stageName),
+      settings: cdktf.listMapper(apiGatewayMethodSettingsSettingsToTerraform)(this._settings),
     };
   }
 }

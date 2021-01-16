@@ -2,7 +2,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformProvider } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
@@ -74,6 +74,21 @@ export interface AwsProviderAssumeRole {
   /** Assume role session tag keys to pass to any subsequent sessions. */
   readonly transitiveTagKeys?: string[];
 }
+
+function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    duration_seconds: cdktf.numberToTerraform(struct!.durationSeconds),
+    external_id: cdktf.stringToTerraform(struct!.externalId),
+    policy: cdktf.stringToTerraform(struct!.policy),
+    policy_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.policyArns),
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    session_name: cdktf.stringToTerraform(struct!.sessionName),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    transitive_tag_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.transitiveTagKeys),
+  }
+}
+
 export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly accessanalyzer?: string;
@@ -376,6 +391,163 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly xray?: string;
 }
+
+function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    accessanalyzer: cdktf.stringToTerraform(struct!.accessanalyzer),
+    acm: cdktf.stringToTerraform(struct!.acm),
+    acmpca: cdktf.stringToTerraform(struct!.acmpca),
+    amplify: cdktf.stringToTerraform(struct!.amplify),
+    apigateway: cdktf.stringToTerraform(struct!.apigateway),
+    applicationautoscaling: cdktf.stringToTerraform(struct!.applicationautoscaling),
+    applicationinsights: cdktf.stringToTerraform(struct!.applicationinsights),
+    appmesh: cdktf.stringToTerraform(struct!.appmesh),
+    appstream: cdktf.stringToTerraform(struct!.appstream),
+    appsync: cdktf.stringToTerraform(struct!.appsync),
+    athena: cdktf.stringToTerraform(struct!.athena),
+    autoscaling: cdktf.stringToTerraform(struct!.autoscaling),
+    autoscalingplans: cdktf.stringToTerraform(struct!.autoscalingplans),
+    backup: cdktf.stringToTerraform(struct!.backup),
+    batch: cdktf.stringToTerraform(struct!.batch),
+    budgets: cdktf.stringToTerraform(struct!.budgets),
+    cloud9: cdktf.stringToTerraform(struct!.cloud9),
+    cloudformation: cdktf.stringToTerraform(struct!.cloudformation),
+    cloudfront: cdktf.stringToTerraform(struct!.cloudfront),
+    cloudhsm: cdktf.stringToTerraform(struct!.cloudhsm),
+    cloudsearch: cdktf.stringToTerraform(struct!.cloudsearch),
+    cloudtrail: cdktf.stringToTerraform(struct!.cloudtrail),
+    cloudwatch: cdktf.stringToTerraform(struct!.cloudwatch),
+    cloudwatchevents: cdktf.stringToTerraform(struct!.cloudwatchevents),
+    cloudwatchlogs: cdktf.stringToTerraform(struct!.cloudwatchlogs),
+    codeartifact: cdktf.stringToTerraform(struct!.codeartifact),
+    codebuild: cdktf.stringToTerraform(struct!.codebuild),
+    codecommit: cdktf.stringToTerraform(struct!.codecommit),
+    codedeploy: cdktf.stringToTerraform(struct!.codedeploy),
+    codepipeline: cdktf.stringToTerraform(struct!.codepipeline),
+    codestarconnections: cdktf.stringToTerraform(struct!.codestarconnections),
+    cognitoidentity: cdktf.stringToTerraform(struct!.cognitoidentity),
+    cognitoidp: cdktf.stringToTerraform(struct!.cognitoidp),
+    configservice: cdktf.stringToTerraform(struct!.configservice),
+    connect: cdktf.stringToTerraform(struct!.connect),
+    cur: cdktf.stringToTerraform(struct!.cur),
+    dataexchange: cdktf.stringToTerraform(struct!.dataexchange),
+    datapipeline: cdktf.stringToTerraform(struct!.datapipeline),
+    datasync: cdktf.stringToTerraform(struct!.datasync),
+    dax: cdktf.stringToTerraform(struct!.dax),
+    devicefarm: cdktf.stringToTerraform(struct!.devicefarm),
+    directconnect: cdktf.stringToTerraform(struct!.directconnect),
+    dlm: cdktf.stringToTerraform(struct!.dlm),
+    dms: cdktf.stringToTerraform(struct!.dms),
+    docdb: cdktf.stringToTerraform(struct!.docdb),
+    ds: cdktf.stringToTerraform(struct!.ds),
+    dynamodb: cdktf.stringToTerraform(struct!.dynamodb),
+    ec2: cdktf.stringToTerraform(struct!.ec2),
+    ecr: cdktf.stringToTerraform(struct!.ecr),
+    ecrpublic: cdktf.stringToTerraform(struct!.ecrpublic),
+    ecs: cdktf.stringToTerraform(struct!.ecs),
+    efs: cdktf.stringToTerraform(struct!.efs),
+    eks: cdktf.stringToTerraform(struct!.eks),
+    elasticache: cdktf.stringToTerraform(struct!.elasticache),
+    elasticbeanstalk: cdktf.stringToTerraform(struct!.elasticbeanstalk),
+    elastictranscoder: cdktf.stringToTerraform(struct!.elastictranscoder),
+    elb: cdktf.stringToTerraform(struct!.elb),
+    emr: cdktf.stringToTerraform(struct!.emr),
+    es: cdktf.stringToTerraform(struct!.es),
+    firehose: cdktf.stringToTerraform(struct!.firehose),
+    fms: cdktf.stringToTerraform(struct!.fms),
+    forecast: cdktf.stringToTerraform(struct!.forecast),
+    fsx: cdktf.stringToTerraform(struct!.fsx),
+    gamelift: cdktf.stringToTerraform(struct!.gamelift),
+    glacier: cdktf.stringToTerraform(struct!.glacier),
+    globalaccelerator: cdktf.stringToTerraform(struct!.globalaccelerator),
+    glue: cdktf.stringToTerraform(struct!.glue),
+    greengrass: cdktf.stringToTerraform(struct!.greengrass),
+    guardduty: cdktf.stringToTerraform(struct!.guardduty),
+    iam: cdktf.stringToTerraform(struct!.iam),
+    identitystore: cdktf.stringToTerraform(struct!.identitystore),
+    imagebuilder: cdktf.stringToTerraform(struct!.imagebuilder),
+    inspector: cdktf.stringToTerraform(struct!.inspector),
+    iot: cdktf.stringToTerraform(struct!.iot),
+    iotanalytics: cdktf.stringToTerraform(struct!.iotanalytics),
+    iotevents: cdktf.stringToTerraform(struct!.iotevents),
+    kafka: cdktf.stringToTerraform(struct!.kafka),
+    kinesis: cdktf.stringToTerraform(struct!.kinesis),
+    kinesisanalytics: cdktf.stringToTerraform(struct!.kinesisanalytics),
+    kinesisanalyticsv2: cdktf.stringToTerraform(struct!.kinesisanalyticsv2),
+    kinesisvideo: cdktf.stringToTerraform(struct!.kinesisvideo),
+    kms: cdktf.stringToTerraform(struct!.kms),
+    lakeformation: cdktf.stringToTerraform(struct!.lakeformation),
+    lambda: cdktf.stringToTerraform(struct!.lambda),
+    lexmodels: cdktf.stringToTerraform(struct!.lexmodels),
+    licensemanager: cdktf.stringToTerraform(struct!.licensemanager),
+    lightsail: cdktf.stringToTerraform(struct!.lightsail),
+    macie: cdktf.stringToTerraform(struct!.macie),
+    macie2: cdktf.stringToTerraform(struct!.macie2),
+    managedblockchain: cdktf.stringToTerraform(struct!.managedblockchain),
+    marketplacecatalog: cdktf.stringToTerraform(struct!.marketplacecatalog),
+    mediaconnect: cdktf.stringToTerraform(struct!.mediaconnect),
+    mediaconvert: cdktf.stringToTerraform(struct!.mediaconvert),
+    medialive: cdktf.stringToTerraform(struct!.medialive),
+    mediapackage: cdktf.stringToTerraform(struct!.mediapackage),
+    mediastore: cdktf.stringToTerraform(struct!.mediastore),
+    mediastoredata: cdktf.stringToTerraform(struct!.mediastoredata),
+    mq: cdktf.stringToTerraform(struct!.mq),
+    mwaa: cdktf.stringToTerraform(struct!.mwaa),
+    neptune: cdktf.stringToTerraform(struct!.neptune),
+    networkfirewall: cdktf.stringToTerraform(struct!.networkfirewall),
+    networkmanager: cdktf.stringToTerraform(struct!.networkmanager),
+    opsworks: cdktf.stringToTerraform(struct!.opsworks),
+    organizations: cdktf.stringToTerraform(struct!.organizations),
+    outposts: cdktf.stringToTerraform(struct!.outposts),
+    personalize: cdktf.stringToTerraform(struct!.personalize),
+    pinpoint: cdktf.stringToTerraform(struct!.pinpoint),
+    pricing: cdktf.stringToTerraform(struct!.pricing),
+    qldb: cdktf.stringToTerraform(struct!.qldb),
+    quicksight: cdktf.stringToTerraform(struct!.quicksight),
+    ram: cdktf.stringToTerraform(struct!.ram),
+    rds: cdktf.stringToTerraform(struct!.rds),
+    redshift: cdktf.stringToTerraform(struct!.redshift),
+    resourcegroups: cdktf.stringToTerraform(struct!.resourcegroups),
+    resourcegroupstaggingapi: cdktf.stringToTerraform(struct!.resourcegroupstaggingapi),
+    route53: cdktf.stringToTerraform(struct!.route53),
+    route53domains: cdktf.stringToTerraform(struct!.route53Domains),
+    route53resolver: cdktf.stringToTerraform(struct!.route53Resolver),
+    s3: cdktf.stringToTerraform(struct!.s3),
+    s3control: cdktf.stringToTerraform(struct!.s3Control),
+    s3outposts: cdktf.stringToTerraform(struct!.s3Outposts),
+    sagemaker: cdktf.stringToTerraform(struct!.sagemaker),
+    sdb: cdktf.stringToTerraform(struct!.sdb),
+    secretsmanager: cdktf.stringToTerraform(struct!.secretsmanager),
+    securityhub: cdktf.stringToTerraform(struct!.securityhub),
+    serverlessrepo: cdktf.stringToTerraform(struct!.serverlessrepo),
+    servicecatalog: cdktf.stringToTerraform(struct!.servicecatalog),
+    servicediscovery: cdktf.stringToTerraform(struct!.servicediscovery),
+    servicequotas: cdktf.stringToTerraform(struct!.servicequotas),
+    ses: cdktf.stringToTerraform(struct!.ses),
+    shield: cdktf.stringToTerraform(struct!.shield),
+    signer: cdktf.stringToTerraform(struct!.signer),
+    sns: cdktf.stringToTerraform(struct!.sns),
+    sqs: cdktf.stringToTerraform(struct!.sqs),
+    ssm: cdktf.stringToTerraform(struct!.ssm),
+    ssoadmin: cdktf.stringToTerraform(struct!.ssoadmin),
+    stepfunctions: cdktf.stringToTerraform(struct!.stepfunctions),
+    storagegateway: cdktf.stringToTerraform(struct!.storagegateway),
+    sts: cdktf.stringToTerraform(struct!.sts),
+    swf: cdktf.stringToTerraform(struct!.swf),
+    synthetics: cdktf.stringToTerraform(struct!.synthetics),
+    timestreamwrite: cdktf.stringToTerraform(struct!.timestreamwrite),
+    transfer: cdktf.stringToTerraform(struct!.transfer),
+    waf: cdktf.stringToTerraform(struct!.waf),
+    wafregional: cdktf.stringToTerraform(struct!.wafregional),
+    wafv2: cdktf.stringToTerraform(struct!.wafv2),
+    worklink: cdktf.stringToTerraform(struct!.worklink),
+    workmail: cdktf.stringToTerraform(struct!.workmail),
+    workspaces: cdktf.stringToTerraform(struct!.workspaces),
+    xray: cdktf.stringToTerraform(struct!.xray),
+  }
+}
+
 export interface AwsProviderIgnoreTags {
   /** Resource tag key prefixes to ignore across all resources. */
   readonly keyPrefixes?: string[];
@@ -383,9 +555,18 @@ export interface AwsProviderIgnoreTags {
   readonly keys?: string[];
 }
 
+function awsProviderIgnoreTagsToTerraform(struct?: AwsProviderIgnoreTags): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.keyPrefixes),
+    keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.keys),
+  }
+}
+
+
 // Resource
 
-export class AwsProvider extends TerraformProvider {
+export class AwsProvider extends cdktf.TerraformProvider {
 
   // ===========
   // INITIALIZER
@@ -431,8 +612,15 @@ export class AwsProvider extends TerraformProvider {
   public get accessKey() {
     return this._accessKey;
   }
-  public set accessKey(value: string | undefined) {
+  public set accessKey(value: string  | undefined) {
     this._accessKey = value;
+  }
+  public resetAccessKey() {
+    this._accessKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessKeyInput() {
+    return this._accessKey
   }
 
   // allowed_account_ids - computed: false, optional: true, required: false
@@ -440,8 +628,15 @@ export class AwsProvider extends TerraformProvider {
   public get allowedAccountIds() {
     return this._allowedAccountIds;
   }
-  public set allowedAccountIds(value: string[] | undefined) {
+  public set allowedAccountIds(value: string[]  | undefined) {
     this._allowedAccountIds = value;
+  }
+  public resetAllowedAccountIds() {
+    this._allowedAccountIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedAccountIdsInput() {
+    return this._allowedAccountIds
   }
 
   // forbidden_account_ids - computed: false, optional: true, required: false
@@ -449,8 +644,15 @@ export class AwsProvider extends TerraformProvider {
   public get forbiddenAccountIds() {
     return this._forbiddenAccountIds;
   }
-  public set forbiddenAccountIds(value: string[] | undefined) {
+  public set forbiddenAccountIds(value: string[]  | undefined) {
     this._forbiddenAccountIds = value;
+  }
+  public resetForbiddenAccountIds() {
+    this._forbiddenAccountIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forbiddenAccountIdsInput() {
+    return this._forbiddenAccountIds
   }
 
   // insecure - computed: false, optional: true, required: false
@@ -458,8 +660,15 @@ export class AwsProvider extends TerraformProvider {
   public get insecure() {
     return this._insecure;
   }
-  public set insecure(value: boolean | undefined) {
+  public set insecure(value: boolean  | undefined) {
     this._insecure = value;
+  }
+  public resetInsecure() {
+    this._insecure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insecureInput() {
+    return this._insecure
   }
 
   // max_retries - computed: false, optional: true, required: false
@@ -467,8 +676,15 @@ export class AwsProvider extends TerraformProvider {
   public get maxRetries() {
     return this._maxRetries;
   }
-  public set maxRetries(value: number | undefined) {
+  public set maxRetries(value: number  | undefined) {
     this._maxRetries = value;
+  }
+  public resetMaxRetries() {
+    this._maxRetries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxRetriesInput() {
+    return this._maxRetries
   }
 
   // profile - computed: false, optional: true, required: false
@@ -476,8 +692,15 @@ export class AwsProvider extends TerraformProvider {
   public get profile() {
     return this._profile;
   }
-  public set profile(value: string | undefined) {
+  public set profile(value: string  | undefined) {
     this._profile = value;
+  }
+  public resetProfile() {
+    this._profile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get profileInput() {
+    return this._profile
   }
 
   // region - computed: false, optional: false, required: true
@@ -488,14 +711,25 @@ export class AwsProvider extends TerraformProvider {
   public set region(value: string) {
     this._region = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region
+  }
 
   // s3_force_path_style - computed: false, optional: true, required: false
   private _s3ForcePathStyle?: boolean;
   public get s3ForcePathStyle() {
     return this._s3ForcePathStyle;
   }
-  public set s3ForcePathStyle(value: boolean | undefined) {
+  public set s3ForcePathStyle(value: boolean  | undefined) {
     this._s3ForcePathStyle = value;
+  }
+  public resetS3ForcePathStyle() {
+    this._s3ForcePathStyle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3ForcePathStyleInput() {
+    return this._s3ForcePathStyle
   }
 
   // secret_key - computed: false, optional: true, required: false
@@ -503,8 +737,15 @@ export class AwsProvider extends TerraformProvider {
   public get secretKey() {
     return this._secretKey;
   }
-  public set secretKey(value: string | undefined) {
+  public set secretKey(value: string  | undefined) {
     this._secretKey = value;
+  }
+  public resetSecretKey() {
+    this._secretKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretKeyInput() {
+    return this._secretKey
   }
 
   // shared_credentials_file - computed: false, optional: true, required: false
@@ -512,8 +753,15 @@ export class AwsProvider extends TerraformProvider {
   public get sharedCredentialsFile() {
     return this._sharedCredentialsFile;
   }
-  public set sharedCredentialsFile(value: string | undefined) {
+  public set sharedCredentialsFile(value: string  | undefined) {
     this._sharedCredentialsFile = value;
+  }
+  public resetSharedCredentialsFile() {
+    this._sharedCredentialsFile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedCredentialsFileInput() {
+    return this._sharedCredentialsFile
   }
 
   // skip_credentials_validation - computed: false, optional: true, required: false
@@ -521,8 +769,15 @@ export class AwsProvider extends TerraformProvider {
   public get skipCredentialsValidation() {
     return this._skipCredentialsValidation;
   }
-  public set skipCredentialsValidation(value: boolean | undefined) {
+  public set skipCredentialsValidation(value: boolean  | undefined) {
     this._skipCredentialsValidation = value;
+  }
+  public resetSkipCredentialsValidation() {
+    this._skipCredentialsValidation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipCredentialsValidationInput() {
+    return this._skipCredentialsValidation
   }
 
   // skip_get_ec2_platforms - computed: false, optional: true, required: false
@@ -530,8 +785,15 @@ export class AwsProvider extends TerraformProvider {
   public get skipGetEc2Platforms() {
     return this._skipGetEc2Platforms;
   }
-  public set skipGetEc2Platforms(value: boolean | undefined) {
+  public set skipGetEc2Platforms(value: boolean  | undefined) {
     this._skipGetEc2Platforms = value;
+  }
+  public resetSkipGetEc2Platforms() {
+    this._skipGetEc2Platforms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipGetEc2PlatformsInput() {
+    return this._skipGetEc2Platforms
   }
 
   // skip_metadata_api_check - computed: false, optional: true, required: false
@@ -539,8 +801,15 @@ export class AwsProvider extends TerraformProvider {
   public get skipMetadataApiCheck() {
     return this._skipMetadataApiCheck;
   }
-  public set skipMetadataApiCheck(value: boolean | undefined) {
+  public set skipMetadataApiCheck(value: boolean  | undefined) {
     this._skipMetadataApiCheck = value;
+  }
+  public resetSkipMetadataApiCheck() {
+    this._skipMetadataApiCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipMetadataApiCheckInput() {
+    return this._skipMetadataApiCheck
   }
 
   // skip_region_validation - computed: false, optional: true, required: false
@@ -548,8 +817,15 @@ export class AwsProvider extends TerraformProvider {
   public get skipRegionValidation() {
     return this._skipRegionValidation;
   }
-  public set skipRegionValidation(value: boolean | undefined) {
+  public set skipRegionValidation(value: boolean  | undefined) {
     this._skipRegionValidation = value;
+  }
+  public resetSkipRegionValidation() {
+    this._skipRegionValidation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipRegionValidationInput() {
+    return this._skipRegionValidation
   }
 
   // skip_requesting_account_id - computed: false, optional: true, required: false
@@ -557,8 +833,15 @@ export class AwsProvider extends TerraformProvider {
   public get skipRequestingAccountId() {
     return this._skipRequestingAccountId;
   }
-  public set skipRequestingAccountId(value: boolean | undefined) {
+  public set skipRequestingAccountId(value: boolean  | undefined) {
     this._skipRequestingAccountId = value;
+  }
+  public resetSkipRequestingAccountId() {
+    this._skipRequestingAccountId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipRequestingAccountIdInput() {
+    return this._skipRequestingAccountId
   }
 
   // token - computed: false, optional: true, required: false
@@ -566,8 +849,15 @@ export class AwsProvider extends TerraformProvider {
   public get token() {
     return this._token;
   }
-  public set token(value: string | undefined) {
+  public set token(value: string  | undefined) {
     this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenInput() {
+    return this._token
   }
 
   // alias - computed: false, optional: true, required: false
@@ -575,8 +865,15 @@ export class AwsProvider extends TerraformProvider {
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined) {
+  public set alias(value: string  | undefined) {
     this._alias = value;
+  }
+  public resetAlias() {
+    this._alias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasInput() {
+    return this._alias
   }
 
   // assume_role - computed: false, optional: true, required: false
@@ -584,8 +881,15 @@ export class AwsProvider extends TerraformProvider {
   public get assumeRole() {
     return this._assumeRole;
   }
-  public set assumeRole(value: AwsProviderAssumeRole[] | undefined) {
+  public set assumeRole(value: AwsProviderAssumeRole[]  | undefined) {
     this._assumeRole = value;
+  }
+  public resetAssumeRole() {
+    this._assumeRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get assumeRoleInput() {
+    return this._assumeRole
   }
 
   // endpoints - computed: false, optional: true, required: false
@@ -593,8 +897,15 @@ export class AwsProvider extends TerraformProvider {
   public get endpoints() {
     return this._endpoints;
   }
-  public set endpoints(value: AwsProviderEndpoints[] | undefined) {
+  public set endpoints(value: AwsProviderEndpoints[]  | undefined) {
     this._endpoints = value;
+  }
+  public resetEndpoints() {
+    this._endpoints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointsInput() {
+    return this._endpoints
   }
 
   // ignore_tags - computed: false, optional: true, required: false
@@ -602,8 +913,15 @@ export class AwsProvider extends TerraformProvider {
   public get ignoreTags() {
     return this._ignoreTags;
   }
-  public set ignoreTags(value: AwsProviderIgnoreTags[] | undefined) {
+  public set ignoreTags(value: AwsProviderIgnoreTags[]  | undefined) {
     this._ignoreTags = value;
+  }
+  public resetIgnoreTags() {
+    this._ignoreTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreTagsInput() {
+    return this._ignoreTags
   }
 
   // =========
@@ -612,26 +930,26 @@ export class AwsProvider extends TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_key: this._accessKey,
-      allowed_account_ids: this._allowedAccountIds,
-      forbidden_account_ids: this._forbiddenAccountIds,
-      insecure: this._insecure,
-      max_retries: this._maxRetries,
-      profile: this._profile,
-      region: this._region,
-      s3_force_path_style: this._s3ForcePathStyle,
-      secret_key: this._secretKey,
-      shared_credentials_file: this._sharedCredentialsFile,
-      skip_credentials_validation: this._skipCredentialsValidation,
-      skip_get_ec2_platforms: this._skipGetEc2Platforms,
-      skip_metadata_api_check: this._skipMetadataApiCheck,
-      skip_region_validation: this._skipRegionValidation,
-      skip_requesting_account_id: this._skipRequestingAccountId,
-      token: this._token,
-      alias: this._alias,
-      assume_role: this._assumeRole,
-      endpoints: this._endpoints,
-      ignore_tags: this._ignoreTags,
+      access_key: cdktf.stringToTerraform(this._accessKey),
+      allowed_account_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedAccountIds),
+      forbidden_account_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._forbiddenAccountIds),
+      insecure: cdktf.booleanToTerraform(this._insecure),
+      max_retries: cdktf.numberToTerraform(this._maxRetries),
+      profile: cdktf.stringToTerraform(this._profile),
+      region: cdktf.stringToTerraform(this._region),
+      s3_force_path_style: cdktf.booleanToTerraform(this._s3ForcePathStyle),
+      secret_key: cdktf.stringToTerraform(this._secretKey),
+      shared_credentials_file: cdktf.stringToTerraform(this._sharedCredentialsFile),
+      skip_credentials_validation: cdktf.booleanToTerraform(this._skipCredentialsValidation),
+      skip_get_ec2_platforms: cdktf.booleanToTerraform(this._skipGetEc2Platforms),
+      skip_metadata_api_check: cdktf.booleanToTerraform(this._skipMetadataApiCheck),
+      skip_region_validation: cdktf.booleanToTerraform(this._skipRegionValidation),
+      skip_requesting_account_id: cdktf.booleanToTerraform(this._skipRequestingAccountId),
+      token: cdktf.stringToTerraform(this._token),
+      alias: cdktf.stringToTerraform(this._alias),
+      assume_role: cdktf.listMapper(awsProviderAssumeRoleToTerraform)(this._assumeRole),
+      endpoints: cdktf.listMapper(awsProviderEndpointsToTerraform)(this._endpoints),
+      ignore_tags: cdktf.listMapper(awsProviderIgnoreTagsToTerraform)(this._ignoreTags),
     };
   }
 }

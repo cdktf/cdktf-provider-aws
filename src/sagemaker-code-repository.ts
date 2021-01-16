@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SagemakerCodeRepositoryConfig extends TerraformMetaArguments {
+export interface SagemakerCodeRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly codeRepositoryName: string;
   /** git_config block */
   readonly gitConfig: SagemakerCodeRepositoryGitConfig[];
@@ -18,9 +17,19 @@ export interface SagemakerCodeRepositoryGitConfig {
   readonly secretArn?: string;
 }
 
+function sagemakerCodeRepositoryGitConfigToTerraform(struct?: SagemakerCodeRepositoryGitConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    repository_url: cdktf.stringToTerraform(struct!.repositoryUrl),
+    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+  }
+}
+
+
 // Resource
 
-export class SagemakerCodeRepository extends TerraformResource {
+export class SagemakerCodeRepository extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,7 +54,7 @@ export class SagemakerCodeRepository extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -53,28 +62,32 @@ export class SagemakerCodeRepository extends TerraformResource {
   // code_repository_name - computed: false, optional: false, required: true
   private _codeRepositoryName: string;
   public get codeRepositoryName() {
-    return this._codeRepositoryName;
+    return this.getStringAttribute('code_repository_name');
   }
   public set codeRepositoryName(value: string) {
     this._codeRepositoryName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get codeRepositoryNameInput() {
+    return this._codeRepositoryName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // git_config - computed: false, optional: false, required: true
   private _gitConfig: SagemakerCodeRepositoryGitConfig[];
   public get gitConfig() {
-    return this._gitConfig;
+    return this.interpolationForAttribute('git_config') as any;
   }
   public set gitConfig(value: SagemakerCodeRepositoryGitConfig[]) {
     this._gitConfig = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gitConfigInput() {
+    return this._gitConfig
   }
 
   // =========
@@ -83,8 +96,8 @@ export class SagemakerCodeRepository extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      code_repository_name: this._codeRepositoryName,
-      git_config: this._gitConfig,
+      code_repository_name: cdktf.stringToTerraform(this._codeRepositoryName),
+      git_config: cdktf.listMapper(sagemakerCodeRepositoryGitConfigToTerraform)(this._gitConfig),
     };
   }
 }

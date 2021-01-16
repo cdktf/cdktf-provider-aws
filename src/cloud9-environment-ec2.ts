@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Cloud9EnvironmentEc2Config extends TerraformMetaArguments {
+export interface Cloud9EnvironmentEc2Config extends cdktf.TerraformMetaArguments {
   readonly automaticStopTimeMinutes?: number;
   readonly description?: string;
   readonly instanceType: string;
@@ -19,7 +18,7 @@ export interface Cloud9EnvironmentEc2Config extends TerraformMetaArguments {
 
 // Resource
 
-export class Cloud9EnvironmentEc2 extends TerraformResource {
+export class Cloud9EnvironmentEc2 extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,7 +48,7 @@ export class Cloud9EnvironmentEc2 extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -57,76 +56,115 @@ export class Cloud9EnvironmentEc2 extends TerraformResource {
   // automatic_stop_time_minutes - computed: false, optional: true, required: false
   private _automaticStopTimeMinutes?: number;
   public get automaticStopTimeMinutes() {
-    return this._automaticStopTimeMinutes;
+    return this.getNumberAttribute('automatic_stop_time_minutes');
   }
-  public set automaticStopTimeMinutes(value: number | undefined) {
+  public set automaticStopTimeMinutes(value: number ) {
     this._automaticStopTimeMinutes = value;
+  }
+  public resetAutomaticStopTimeMinutes() {
+    this._automaticStopTimeMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get automaticStopTimeMinutesInput() {
+    return this._automaticStopTimeMinutes
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_type - computed: false, optional: false, required: true
   private _instanceType: string;
   public get instanceType() {
-    return this._instanceType;
+    return this.getStringAttribute('instance_type');
   }
   public set instanceType(value: string) {
     this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // owner_arn - computed: true, optional: true, required: false
   private _ownerArn?: string;
   public get ownerArn() {
-    return this._ownerArn ?? this.getStringAttribute('owner_arn');
+    return this.getStringAttribute('owner_arn');
   }
-  public set ownerArn(value: string | undefined) {
+  public set ownerArn(value: string) {
     this._ownerArn = value;
+  }
+  public resetOwnerArn() {
+    this._ownerArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerArnInput() {
+    return this._ownerArn
   }
 
   // subnet_id - computed: false, optional: true, required: false
   private _subnetId?: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string ) {
     this._subnetId = value;
+  }
+  public resetSubnetId() {
+    this._subnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -137,13 +175,13 @@ export class Cloud9EnvironmentEc2 extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automatic_stop_time_minutes: this._automaticStopTimeMinutes,
-      description: this._description,
-      instance_type: this._instanceType,
-      name: this._name,
-      owner_arn: this._ownerArn,
-      subnet_id: this._subnetId,
-      tags: this._tags,
+      automatic_stop_time_minutes: cdktf.numberToTerraform(this._automaticStopTimeMinutes),
+      description: cdktf.stringToTerraform(this._description),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      name: cdktf.stringToTerraform(this._name),
+      owner_arn: cdktf.stringToTerraform(this._ownerArn),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

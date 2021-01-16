@@ -2,23 +2,21 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEcsClusterConfig extends TerraformMetaArguments {
+export interface DataAwsEcsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly clusterName: string;
 }
-export class DataAwsEcsClusterSetting extends ComplexComputedList {
+export class DataAwsEcsClusterSetting extends cdktf.ComplexComputedList {
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // value - computed: true, optional: false, required: true
+  // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
   }
@@ -26,7 +24,7 @@ export class DataAwsEcsClusterSetting extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsEcsCluster extends TerraformDataSource {
+export class DataAwsEcsCluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -50,7 +48,7 @@ export class DataAwsEcsCluster extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -58,42 +56,42 @@ export class DataAwsEcsCluster extends TerraformDataSource {
   // cluster_name - computed: false, optional: false, required: true
   private _clusterName: string;
   public get clusterName() {
-    return this._clusterName;
+    return this.getStringAttribute('cluster_name');
   }
   public set clusterName(value: string) {
     this._clusterName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get clusterNameInput() {
+    return this._clusterName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // pending_tasks_count - computed: true, optional: false, required: true
+  // pending_tasks_count - computed: true, optional: false, required: false
   public get pendingTasksCount() {
     return this.getNumberAttribute('pending_tasks_count');
   }
 
-  // registered_container_instances_count - computed: true, optional: false, required: true
+  // registered_container_instances_count - computed: true, optional: false, required: false
   public get registeredContainerInstancesCount() {
     return this.getNumberAttribute('registered_container_instances_count');
   }
 
-  // running_tasks_count - computed: true, optional: false, required: true
+  // running_tasks_count - computed: true, optional: false, required: false
   public get runningTasksCount() {
     return this.getNumberAttribute('running_tasks_count');
   }
 
-  // setting - computed: true, optional: false, required: true
+  // setting - computed: true, optional: false, required: false
   public setting(index: string) {
     return new DataAwsEcsClusterSetting(this, 'setting', index);
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -104,7 +102,7 @@ export class DataAwsEcsCluster extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: this._clusterName,
+      cluster_name: cdktf.stringToTerraform(this._clusterName),
     };
   }
 }

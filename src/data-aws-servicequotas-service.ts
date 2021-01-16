@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsServicequotasServiceConfig extends TerraformMetaArguments {
+export interface DataAwsServicequotasServiceConfig extends cdktf.TerraformMetaArguments {
   readonly serviceName: string;
 }
 
 // Resource
 
-export class DataAwsServicequotasService extends TerraformDataSource {
+export class DataAwsServicequotasService extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -38,15 +37,11 @@ export class DataAwsServicequotasService extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // service_code - computed: true, optional: false, required: true
+  // service_code - computed: true, optional: false, required: false
   public get serviceCode() {
     return this.getStringAttribute('service_code');
   }
@@ -54,10 +49,14 @@ export class DataAwsServicequotasService extends TerraformDataSource {
   // service_name - computed: false, optional: false, required: true
   private _serviceName: string;
   public get serviceName() {
-    return this._serviceName;
+    return this.getStringAttribute('service_name');
   }
   public set serviceName(value: string) {
     this._serviceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceNameInput() {
+    return this._serviceName
   }
 
   // =========
@@ -66,7 +65,7 @@ export class DataAwsServicequotasService extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      service_name: this._serviceName,
+      service_name: cdktf.stringToTerraform(this._serviceName),
     };
   }
 }

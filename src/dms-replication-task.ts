@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DmsReplicationTaskConfig extends TerraformMetaArguments {
+export interface DmsReplicationTaskConfig extends cdktf.TerraformMetaArguments {
   readonly cdcStartTime?: string;
   readonly migrationType: string;
   readonly replicationInstanceArn: string;
@@ -21,7 +20,7 @@ export interface DmsReplicationTaskConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DmsReplicationTask extends TerraformResource {
+export class DmsReplicationTask extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -56,40 +55,51 @@ export class DmsReplicationTask extends TerraformResource {
   // cdc_start_time - computed: false, optional: true, required: false
   private _cdcStartTime?: string;
   public get cdcStartTime() {
-    return this._cdcStartTime;
+    return this.getStringAttribute('cdc_start_time');
   }
-  public set cdcStartTime(value: string | undefined) {
+  public set cdcStartTime(value: string ) {
     this._cdcStartTime = value;
+  }
+  public resetCdcStartTime() {
+    this._cdcStartTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdcStartTimeInput() {
+    return this._cdcStartTime
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // migration_type - computed: false, optional: false, required: true
   private _migrationType: string;
   public get migrationType() {
-    return this._migrationType;
+    return this.getStringAttribute('migration_type');
   }
   public set migrationType(value: string) {
     this._migrationType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get migrationTypeInput() {
+    return this._migrationType
   }
 
   // replication_instance_arn - computed: false, optional: false, required: true
   private _replicationInstanceArn: string;
   public get replicationInstanceArn() {
-    return this._replicationInstanceArn;
+    return this.getStringAttribute('replication_instance_arn');
   }
   public set replicationInstanceArn(value: string) {
     this._replicationInstanceArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get replicationInstanceArnInput() {
+    return this._replicationInstanceArn
+  }
 
-  // replication_task_arn - computed: true, optional: false, required: true
+  // replication_task_arn - computed: true, optional: false, required: false
   public get replicationTaskArn() {
     return this.getStringAttribute('replication_task_arn');
   }
@@ -97,55 +107,85 @@ export class DmsReplicationTask extends TerraformResource {
   // replication_task_id - computed: false, optional: false, required: true
   private _replicationTaskId: string;
   public get replicationTaskId() {
-    return this._replicationTaskId;
+    return this.getStringAttribute('replication_task_id');
   }
   public set replicationTaskId(value: string) {
     this._replicationTaskId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationTaskIdInput() {
+    return this._replicationTaskId
   }
 
   // replication_task_settings - computed: false, optional: true, required: false
   private _replicationTaskSettings?: string;
   public get replicationTaskSettings() {
-    return this._replicationTaskSettings;
+    return this.getStringAttribute('replication_task_settings');
   }
-  public set replicationTaskSettings(value: string | undefined) {
+  public set replicationTaskSettings(value: string ) {
     this._replicationTaskSettings = value;
+  }
+  public resetReplicationTaskSettings() {
+    this._replicationTaskSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationTaskSettingsInput() {
+    return this._replicationTaskSettings
   }
 
   // source_endpoint_arn - computed: false, optional: false, required: true
   private _sourceEndpointArn: string;
   public get sourceEndpointArn() {
-    return this._sourceEndpointArn;
+    return this.getStringAttribute('source_endpoint_arn');
   }
   public set sourceEndpointArn(value: string) {
     this._sourceEndpointArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceEndpointArnInput() {
+    return this._sourceEndpointArn
   }
 
   // table_mappings - computed: false, optional: false, required: true
   private _tableMappings: string;
   public get tableMappings() {
-    return this._tableMappings;
+    return this.getStringAttribute('table_mappings');
   }
   public set tableMappings(value: string) {
     this._tableMappings = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableMappingsInput() {
+    return this._tableMappings
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // target_endpoint_arn - computed: false, optional: false, required: true
   private _targetEndpointArn: string;
   public get targetEndpointArn() {
-    return this._targetEndpointArn;
+    return this.getStringAttribute('target_endpoint_arn');
   }
   public set targetEndpointArn(value: string) {
     this._targetEndpointArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetEndpointArnInput() {
+    return this._targetEndpointArn
   }
 
   // =========
@@ -154,15 +194,15 @@ export class DmsReplicationTask extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cdc_start_time: this._cdcStartTime,
-      migration_type: this._migrationType,
-      replication_instance_arn: this._replicationInstanceArn,
-      replication_task_id: this._replicationTaskId,
-      replication_task_settings: this._replicationTaskSettings,
-      source_endpoint_arn: this._sourceEndpointArn,
-      table_mappings: this._tableMappings,
-      tags: this._tags,
-      target_endpoint_arn: this._targetEndpointArn,
+      cdc_start_time: cdktf.stringToTerraform(this._cdcStartTime),
+      migration_type: cdktf.stringToTerraform(this._migrationType),
+      replication_instance_arn: cdktf.stringToTerraform(this._replicationInstanceArn),
+      replication_task_id: cdktf.stringToTerraform(this._replicationTaskId),
+      replication_task_settings: cdktf.stringToTerraform(this._replicationTaskSettings),
+      source_endpoint_arn: cdktf.stringToTerraform(this._sourceEndpointArn),
+      table_mappings: cdktf.stringToTerraform(this._tableMappings),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target_endpoint_arn: cdktf.stringToTerraform(this._targetEndpointArn),
     };
   }
 }

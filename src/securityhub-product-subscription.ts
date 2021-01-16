@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SecurityhubProductSubscriptionConfig extends TerraformMetaArguments {
+export interface SecurityhubProductSubscriptionConfig extends cdktf.TerraformMetaArguments {
   readonly productArn: string;
 }
 
 // Resource
 
-export class SecurityhubProductSubscription extends TerraformResource {
+export class SecurityhubProductSubscription extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -37,27 +36,27 @@ export class SecurityhubProductSubscription extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // product_arn - computed: false, optional: false, required: true
   private _productArn: string;
   public get productArn() {
-    return this._productArn;
+    return this.getStringAttribute('product_arn');
   }
   public set productArn(value: string) {
     this._productArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get productArnInput() {
+    return this._productArn
   }
 
   // =========
@@ -66,7 +65,7 @@ export class SecurityhubProductSubscription extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      product_arn: this._productArn,
+      product_arn: cdktf.stringToTerraform(this._productArn),
     };
   }
 }

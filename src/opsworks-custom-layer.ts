@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OpsworksCustomLayerConfig extends TerraformMetaArguments {
+export interface OpsworksCustomLayerConfig extends cdktf.TerraformMetaArguments {
   readonly autoAssignElasticIps?: boolean;
   readonly autoAssignPublicIps?: boolean;
   readonly autoHealing?: boolean;
@@ -42,9 +41,23 @@ export interface OpsworksCustomLayerEbsVolume {
   readonly type?: string;
 }
 
+function opsworksCustomLayerEbsVolumeToTerraform(struct?: OpsworksCustomLayerEbsVolume): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+    iops: cdktf.numberToTerraform(struct!.iops),
+    mount_point: cdktf.stringToTerraform(struct!.mountPoint),
+    number_of_disks: cdktf.numberToTerraform(struct!.numberOfDisks),
+    raid_level: cdktf.stringToTerraform(struct!.raidLevel),
+    size: cdktf.numberToTerraform(struct!.size),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class OpsworksCustomLayer extends TerraformResource {
+export class OpsworksCustomLayer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -89,7 +102,7 @@ export class OpsworksCustomLayer extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -97,208 +110,349 @@ export class OpsworksCustomLayer extends TerraformResource {
   // auto_assign_elastic_ips - computed: false, optional: true, required: false
   private _autoAssignElasticIps?: boolean;
   public get autoAssignElasticIps() {
-    return this._autoAssignElasticIps;
+    return this.getBooleanAttribute('auto_assign_elastic_ips');
   }
-  public set autoAssignElasticIps(value: boolean | undefined) {
+  public set autoAssignElasticIps(value: boolean ) {
     this._autoAssignElasticIps = value;
+  }
+  public resetAutoAssignElasticIps() {
+    this._autoAssignElasticIps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoAssignElasticIpsInput() {
+    return this._autoAssignElasticIps
   }
 
   // auto_assign_public_ips - computed: false, optional: true, required: false
   private _autoAssignPublicIps?: boolean;
   public get autoAssignPublicIps() {
-    return this._autoAssignPublicIps;
+    return this.getBooleanAttribute('auto_assign_public_ips');
   }
-  public set autoAssignPublicIps(value: boolean | undefined) {
+  public set autoAssignPublicIps(value: boolean ) {
     this._autoAssignPublicIps = value;
+  }
+  public resetAutoAssignPublicIps() {
+    this._autoAssignPublicIps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoAssignPublicIpsInput() {
+    return this._autoAssignPublicIps
   }
 
   // auto_healing - computed: false, optional: true, required: false
   private _autoHealing?: boolean;
   public get autoHealing() {
-    return this._autoHealing;
+    return this.getBooleanAttribute('auto_healing');
   }
-  public set autoHealing(value: boolean | undefined) {
+  public set autoHealing(value: boolean ) {
     this._autoHealing = value;
+  }
+  public resetAutoHealing() {
+    this._autoHealing = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoHealingInput() {
+    return this._autoHealing
   }
 
   // custom_configure_recipes - computed: false, optional: true, required: false
   private _customConfigureRecipes?: string[];
   public get customConfigureRecipes() {
-    return this._customConfigureRecipes;
+    return this.getListAttribute('custom_configure_recipes');
   }
-  public set customConfigureRecipes(value: string[] | undefined) {
+  public set customConfigureRecipes(value: string[] ) {
     this._customConfigureRecipes = value;
+  }
+  public resetCustomConfigureRecipes() {
+    this._customConfigureRecipes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customConfigureRecipesInput() {
+    return this._customConfigureRecipes
   }
 
   // custom_deploy_recipes - computed: false, optional: true, required: false
   private _customDeployRecipes?: string[];
   public get customDeployRecipes() {
-    return this._customDeployRecipes;
+    return this.getListAttribute('custom_deploy_recipes');
   }
-  public set customDeployRecipes(value: string[] | undefined) {
+  public set customDeployRecipes(value: string[] ) {
     this._customDeployRecipes = value;
+  }
+  public resetCustomDeployRecipes() {
+    this._customDeployRecipes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customDeployRecipesInput() {
+    return this._customDeployRecipes
   }
 
   // custom_instance_profile_arn - computed: false, optional: true, required: false
   private _customInstanceProfileArn?: string;
   public get customInstanceProfileArn() {
-    return this._customInstanceProfileArn;
+    return this.getStringAttribute('custom_instance_profile_arn');
   }
-  public set customInstanceProfileArn(value: string | undefined) {
+  public set customInstanceProfileArn(value: string ) {
     this._customInstanceProfileArn = value;
+  }
+  public resetCustomInstanceProfileArn() {
+    this._customInstanceProfileArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customInstanceProfileArnInput() {
+    return this._customInstanceProfileArn
   }
 
   // custom_json - computed: false, optional: true, required: false
   private _customJson?: string;
   public get customJson() {
-    return this._customJson;
+    return this.getStringAttribute('custom_json');
   }
-  public set customJson(value: string | undefined) {
+  public set customJson(value: string ) {
     this._customJson = value;
+  }
+  public resetCustomJson() {
+    this._customJson = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customJsonInput() {
+    return this._customJson
   }
 
   // custom_security_group_ids - computed: false, optional: true, required: false
   private _customSecurityGroupIds?: string[];
   public get customSecurityGroupIds() {
-    return this._customSecurityGroupIds;
+    return this.getListAttribute('custom_security_group_ids');
   }
-  public set customSecurityGroupIds(value: string[] | undefined) {
+  public set customSecurityGroupIds(value: string[] ) {
     this._customSecurityGroupIds = value;
+  }
+  public resetCustomSecurityGroupIds() {
+    this._customSecurityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customSecurityGroupIdsInput() {
+    return this._customSecurityGroupIds
   }
 
   // custom_setup_recipes - computed: false, optional: true, required: false
   private _customSetupRecipes?: string[];
   public get customSetupRecipes() {
-    return this._customSetupRecipes;
+    return this.getListAttribute('custom_setup_recipes');
   }
-  public set customSetupRecipes(value: string[] | undefined) {
+  public set customSetupRecipes(value: string[] ) {
     this._customSetupRecipes = value;
+  }
+  public resetCustomSetupRecipes() {
+    this._customSetupRecipes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customSetupRecipesInput() {
+    return this._customSetupRecipes
   }
 
   // custom_shutdown_recipes - computed: false, optional: true, required: false
   private _customShutdownRecipes?: string[];
   public get customShutdownRecipes() {
-    return this._customShutdownRecipes;
+    return this.getListAttribute('custom_shutdown_recipes');
   }
-  public set customShutdownRecipes(value: string[] | undefined) {
+  public set customShutdownRecipes(value: string[] ) {
     this._customShutdownRecipes = value;
+  }
+  public resetCustomShutdownRecipes() {
+    this._customShutdownRecipes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customShutdownRecipesInput() {
+    return this._customShutdownRecipes
   }
 
   // custom_undeploy_recipes - computed: false, optional: true, required: false
   private _customUndeployRecipes?: string[];
   public get customUndeployRecipes() {
-    return this._customUndeployRecipes;
+    return this.getListAttribute('custom_undeploy_recipes');
   }
-  public set customUndeployRecipes(value: string[] | undefined) {
+  public set customUndeployRecipes(value: string[] ) {
     this._customUndeployRecipes = value;
+  }
+  public resetCustomUndeployRecipes() {
+    this._customUndeployRecipes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customUndeployRecipesInput() {
+    return this._customUndeployRecipes
   }
 
   // drain_elb_on_shutdown - computed: false, optional: true, required: false
   private _drainElbOnShutdown?: boolean;
   public get drainElbOnShutdown() {
-    return this._drainElbOnShutdown;
+    return this.getBooleanAttribute('drain_elb_on_shutdown');
   }
-  public set drainElbOnShutdown(value: boolean | undefined) {
+  public set drainElbOnShutdown(value: boolean ) {
     this._drainElbOnShutdown = value;
+  }
+  public resetDrainElbOnShutdown() {
+    this._drainElbOnShutdown = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get drainElbOnShutdownInput() {
+    return this._drainElbOnShutdown
   }
 
   // elastic_load_balancer - computed: false, optional: true, required: false
   private _elasticLoadBalancer?: string;
   public get elasticLoadBalancer() {
-    return this._elasticLoadBalancer;
+    return this.getStringAttribute('elastic_load_balancer');
   }
-  public set elasticLoadBalancer(value: string | undefined) {
+  public set elasticLoadBalancer(value: string ) {
     this._elasticLoadBalancer = value;
+  }
+  public resetElasticLoadBalancer() {
+    this._elasticLoadBalancer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elasticLoadBalancerInput() {
+    return this._elasticLoadBalancer
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // install_updates_on_boot - computed: false, optional: true, required: false
   private _installUpdatesOnBoot?: boolean;
   public get installUpdatesOnBoot() {
-    return this._installUpdatesOnBoot;
+    return this.getBooleanAttribute('install_updates_on_boot');
   }
-  public set installUpdatesOnBoot(value: boolean | undefined) {
+  public set installUpdatesOnBoot(value: boolean ) {
     this._installUpdatesOnBoot = value;
+  }
+  public resetInstallUpdatesOnBoot() {
+    this._installUpdatesOnBoot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get installUpdatesOnBootInput() {
+    return this._installUpdatesOnBoot
   }
 
   // instance_shutdown_timeout - computed: false, optional: true, required: false
   private _instanceShutdownTimeout?: number;
   public get instanceShutdownTimeout() {
-    return this._instanceShutdownTimeout;
+    return this.getNumberAttribute('instance_shutdown_timeout');
   }
-  public set instanceShutdownTimeout(value: number | undefined) {
+  public set instanceShutdownTimeout(value: number ) {
     this._instanceShutdownTimeout = value;
+  }
+  public resetInstanceShutdownTimeout() {
+    this._instanceShutdownTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceShutdownTimeoutInput() {
+    return this._instanceShutdownTimeout
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // short_name - computed: false, optional: false, required: true
   private _shortName: string;
   public get shortName() {
-    return this._shortName;
+    return this.getStringAttribute('short_name');
   }
   public set shortName(value: string) {
     this._shortName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shortNameInput() {
+    return this._shortName
   }
 
   // stack_id - computed: false, optional: false, required: true
   private _stackId: string;
   public get stackId() {
-    return this._stackId;
+    return this.getStringAttribute('stack_id');
   }
   public set stackId(value: string) {
     this._stackId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stackIdInput() {
+    return this._stackId
   }
 
   // system_packages - computed: false, optional: true, required: false
   private _systemPackages?: string[];
   public get systemPackages() {
-    return this._systemPackages;
+    return this.getListAttribute('system_packages');
   }
-  public set systemPackages(value: string[] | undefined) {
+  public set systemPackages(value: string[] ) {
     this._systemPackages = value;
+  }
+  public resetSystemPackages() {
+    this._systemPackages = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get systemPackagesInput() {
+    return this._systemPackages
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // use_ebs_optimized_instances - computed: false, optional: true, required: false
   private _useEbsOptimizedInstances?: boolean;
   public get useEbsOptimizedInstances() {
-    return this._useEbsOptimizedInstances;
+    return this.getBooleanAttribute('use_ebs_optimized_instances');
   }
-  public set useEbsOptimizedInstances(value: boolean | undefined) {
+  public set useEbsOptimizedInstances(value: boolean ) {
     this._useEbsOptimizedInstances = value;
+  }
+  public resetUseEbsOptimizedInstances() {
+    this._useEbsOptimizedInstances = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useEbsOptimizedInstancesInput() {
+    return this._useEbsOptimizedInstances
   }
 
   // ebs_volume - computed: false, optional: true, required: false
   private _ebsVolume?: OpsworksCustomLayerEbsVolume[];
   public get ebsVolume() {
-    return this._ebsVolume;
+    return this.interpolationForAttribute('ebs_volume') as any;
   }
-  public set ebsVolume(value: OpsworksCustomLayerEbsVolume[] | undefined) {
+  public set ebsVolume(value: OpsworksCustomLayerEbsVolume[] ) {
     this._ebsVolume = value;
+  }
+  public resetEbsVolume() {
+    this._ebsVolume = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeInput() {
+    return this._ebsVolume
   }
 
   // =========
@@ -307,28 +461,28 @@ export class OpsworksCustomLayer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_assign_elastic_ips: this._autoAssignElasticIps,
-      auto_assign_public_ips: this._autoAssignPublicIps,
-      auto_healing: this._autoHealing,
-      custom_configure_recipes: this._customConfigureRecipes,
-      custom_deploy_recipes: this._customDeployRecipes,
-      custom_instance_profile_arn: this._customInstanceProfileArn,
-      custom_json: this._customJson,
-      custom_security_group_ids: this._customSecurityGroupIds,
-      custom_setup_recipes: this._customSetupRecipes,
-      custom_shutdown_recipes: this._customShutdownRecipes,
-      custom_undeploy_recipes: this._customUndeployRecipes,
-      drain_elb_on_shutdown: this._drainElbOnShutdown,
-      elastic_load_balancer: this._elasticLoadBalancer,
-      install_updates_on_boot: this._installUpdatesOnBoot,
-      instance_shutdown_timeout: this._instanceShutdownTimeout,
-      name: this._name,
-      short_name: this._shortName,
-      stack_id: this._stackId,
-      system_packages: this._systemPackages,
-      tags: this._tags,
-      use_ebs_optimized_instances: this._useEbsOptimizedInstances,
-      ebs_volume: this._ebsVolume,
+      auto_assign_elastic_ips: cdktf.booleanToTerraform(this._autoAssignElasticIps),
+      auto_assign_public_ips: cdktf.booleanToTerraform(this._autoAssignPublicIps),
+      auto_healing: cdktf.booleanToTerraform(this._autoHealing),
+      custom_configure_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customConfigureRecipes),
+      custom_deploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customDeployRecipes),
+      custom_instance_profile_arn: cdktf.stringToTerraform(this._customInstanceProfileArn),
+      custom_json: cdktf.stringToTerraform(this._customJson),
+      custom_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._customSecurityGroupIds),
+      custom_setup_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customSetupRecipes),
+      custom_shutdown_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customShutdownRecipes),
+      custom_undeploy_recipes: cdktf.listMapper(cdktf.stringToTerraform)(this._customUndeployRecipes),
+      drain_elb_on_shutdown: cdktf.booleanToTerraform(this._drainElbOnShutdown),
+      elastic_load_balancer: cdktf.stringToTerraform(this._elasticLoadBalancer),
+      install_updates_on_boot: cdktf.booleanToTerraform(this._installUpdatesOnBoot),
+      instance_shutdown_timeout: cdktf.numberToTerraform(this._instanceShutdownTimeout),
+      name: cdktf.stringToTerraform(this._name),
+      short_name: cdktf.stringToTerraform(this._shortName),
+      stack_id: cdktf.stringToTerraform(this._stackId),
+      system_packages: cdktf.listMapper(cdktf.stringToTerraform)(this._systemPackages),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
+      ebs_volume: cdktf.listMapper(opsworksCustomLayerEbsVolumeToTerraform)(this._ebsVolume),
     };
   }
 }

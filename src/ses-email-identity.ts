@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesEmailIdentityConfig extends TerraformMetaArguments {
+export interface SesEmailIdentityConfig extends cdktf.TerraformMetaArguments {
   readonly email: string;
 }
 
 // Resource
 
-export class SesEmailIdentity extends TerraformResource {
+export class SesEmailIdentity extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -37,7 +36,7 @@ export class SesEmailIdentity extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -45,19 +44,19 @@ export class SesEmailIdentity extends TerraformResource {
   // email - computed: false, optional: false, required: true
   private _email: string;
   public get email() {
-    return this._email;
+    return this.getStringAttribute('email');
   }
   public set email(value: string) {
     this._email = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========
@@ -66,7 +65,7 @@ export class SesEmailIdentity extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email: this._email,
+      email: cdktf.stringToTerraform(this._email),
     };
   }
 }

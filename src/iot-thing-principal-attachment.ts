@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IotThingPrincipalAttachmentConfig extends TerraformMetaArguments {
+export interface IotThingPrincipalAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly principal: string;
   readonly thing: string;
 }
 
 // Resource
 
-export class IotThingPrincipalAttachment extends TerraformResource {
+export class IotThingPrincipalAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class IotThingPrincipalAttachment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // principal - computed: false, optional: false, required: true
   private _principal: string;
   public get principal() {
-    return this._principal;
+    return this.getStringAttribute('principal');
   }
   public set principal(value: string) {
     this._principal = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal
   }
 
   // thing - computed: false, optional: false, required: true
   private _thing: string;
   public get thing() {
-    return this._thing;
+    return this.getStringAttribute('thing');
   }
   public set thing(value: string) {
     this._thing = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get thingInput() {
+    return this._thing
   }
 
   // =========
@@ -72,8 +75,8 @@ export class IotThingPrincipalAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      principal: this._principal,
-      thing: this._thing,
+      principal: cdktf.stringToTerraform(this._principal),
+      thing: cdktf.stringToTerraform(this._thing),
     };
   }
 }

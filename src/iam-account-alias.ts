@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamAccountAliasConfig extends TerraformMetaArguments {
+export interface IamAccountAliasConfig extends cdktf.TerraformMetaArguments {
   readonly accountAlias: string;
 }
 
 // Resource
 
-export class IamAccountAlias extends TerraformResource {
+export class IamAccountAlias extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,19 +39,19 @@ export class IamAccountAlias extends TerraformResource {
   // account_alias - computed: false, optional: false, required: true
   private _accountAlias: string;
   public get accountAlias() {
-    return this._accountAlias;
+    return this.getStringAttribute('account_alias');
   }
   public set accountAlias(value: string) {
     this._accountAlias = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get accountAliasInput() {
+    return this._accountAlias
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========
@@ -61,7 +60,7 @@ export class IamAccountAlias extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_alias: this._accountAlias,
+      account_alias: cdktf.stringToTerraform(this._accountAlias),
     };
   }
 }

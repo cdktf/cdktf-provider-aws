@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamAccessKeyConfig extends TerraformMetaArguments {
+export interface IamAccessKeyConfig extends cdktf.TerraformMetaArguments {
   readonly pgpKey?: string;
   readonly status?: string;
   readonly user: string;
@@ -15,7 +14,7 @@ export interface IamAccessKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IamAccessKey extends TerraformResource {
+export class IamAccessKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,21 +40,17 @@ export class IamAccessKey extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // encrypted_secret - computed: true, optional: false, required: true
+  // encrypted_secret - computed: true, optional: false, required: false
   public get encryptedSecret() {
     return this.getStringAttribute('encrypted_secret');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // key_fingerprint - computed: true, optional: false, required: true
+  // key_fingerprint - computed: true, optional: false, required: false
   public get keyFingerprint() {
     return this.getStringAttribute('key_fingerprint');
   }
@@ -63,18 +58,25 @@ export class IamAccessKey extends TerraformResource {
   // pgp_key - computed: false, optional: true, required: false
   private _pgpKey?: string;
   public get pgpKey() {
-    return this._pgpKey;
+    return this.getStringAttribute('pgp_key');
   }
-  public set pgpKey(value: string | undefined) {
+  public set pgpKey(value: string ) {
     this._pgpKey = value;
   }
+  public resetPgpKey() {
+    this._pgpKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pgpKeyInput() {
+    return this._pgpKey
+  }
 
-  // secret - computed: true, optional: false, required: true
+  // secret - computed: true, optional: false, required: false
   public get secret() {
     return this.getStringAttribute('secret');
   }
 
-  // ses_smtp_password_v4 - computed: true, optional: false, required: true
+  // ses_smtp_password_v4 - computed: true, optional: false, required: false
   public get sesSmtpPasswordV4() {
     return this.getStringAttribute('ses_smtp_password_v4');
   }
@@ -82,19 +84,30 @@ export class IamAccessKey extends TerraformResource {
   // status - computed: true, optional: true, required: false
   private _status?: string;
   public get status() {
-    return this._status ?? this.getStringAttribute('status');
+    return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status
   }
 
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this._user;
+    return this.getStringAttribute('user');
   }
   public set user(value: string) {
     this._user = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user
   }
 
   // =========
@@ -103,9 +116,9 @@ export class IamAccessKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      pgp_key: this._pgpKey,
-      status: this._status,
-      user: this._user,
+      pgp_key: cdktf.stringToTerraform(this._pgpKey),
+      status: cdktf.stringToTerraform(this._status),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

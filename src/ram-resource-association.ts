@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RamResourceAssociationConfig extends TerraformMetaArguments {
+export interface RamResourceAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly resourceArn: string;
   readonly resourceShareArn: string;
 }
 
 // Resource
 
-export class RamResourceAssociation extends TerraformResource {
+export class RamResourceAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class RamResourceAssociation extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // resource_arn - computed: false, optional: false, required: true
   private _resourceArn: string;
   public get resourceArn() {
-    return this._resourceArn;
+    return this.getStringAttribute('resource_arn');
   }
   public set resourceArn(value: string) {
     this._resourceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceArnInput() {
+    return this._resourceArn
   }
 
   // resource_share_arn - computed: false, optional: false, required: true
   private _resourceShareArn: string;
   public get resourceShareArn() {
-    return this._resourceShareArn;
+    return this.getStringAttribute('resource_share_arn');
   }
   public set resourceShareArn(value: string) {
     this._resourceShareArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceShareArnInput() {
+    return this._resourceShareArn
   }
 
   // =========
@@ -72,8 +75,8 @@ export class RamResourceAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_arn: this._resourceArn,
-      resource_share_arn: this._resourceShareArn,
+      resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      resource_share_arn: cdktf.stringToTerraform(this._resourceShareArn),
     };
   }
 }

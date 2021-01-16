@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRdsEngineVersionConfig extends TerraformMetaArguments {
+export interface DataAwsRdsEngineVersionConfig extends cdktf.TerraformMetaArguments {
   readonly engine: string;
   readonly parameterGroupFamily?: string;
   readonly preferredVersions?: string[];
@@ -16,7 +15,7 @@ export interface DataAwsRdsEngineVersionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsRdsEngineVersion extends TerraformDataSource {
+export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -43,7 +42,7 @@ export class DataAwsRdsEngineVersion extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // default_character_set - computed: true, optional: false, required: true
+  // default_character_set - computed: true, optional: false, required: false
   public get defaultCharacterSet() {
     return this.getStringAttribute('default_character_set');
   }
@@ -51,95 +50,109 @@ export class DataAwsRdsEngineVersion extends TerraformDataSource {
   // engine - computed: false, optional: false, required: true
   private _engine: string;
   public get engine() {
-    return this._engine;
+    return this.getStringAttribute('engine');
   }
   public set engine(value: string) {
     this._engine = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
+  }
 
-  // engine_description - computed: true, optional: false, required: true
+  // engine_description - computed: true, optional: false, required: false
   public get engineDescription() {
     return this.getStringAttribute('engine_description');
   }
 
-  // exportable_log_types - computed: true, optional: false, required: true
+  // exportable_log_types - computed: true, optional: false, required: false
   public get exportableLogTypes() {
     return this.getListAttribute('exportable_log_types');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // parameter_group_family - computed: true, optional: true, required: false
   private _parameterGroupFamily?: string;
   public get parameterGroupFamily() {
-    return this._parameterGroupFamily ?? this.getStringAttribute('parameter_group_family');
+    return this.getStringAttribute('parameter_group_family');
   }
-  public set parameterGroupFamily(value: string | undefined) {
+  public set parameterGroupFamily(value: string) {
     this._parameterGroupFamily = value;
+  }
+  public resetParameterGroupFamily() {
+    this._parameterGroupFamily = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterGroupFamilyInput() {
+    return this._parameterGroupFamily
   }
 
   // preferred_versions - computed: false, optional: true, required: false
   private _preferredVersions?: string[];
   public get preferredVersions() {
-    return this._preferredVersions;
+    return this.getListAttribute('preferred_versions');
   }
-  public set preferredVersions(value: string[] | undefined) {
+  public set preferredVersions(value: string[] ) {
     this._preferredVersions = value;
   }
+  public resetPreferredVersions() {
+    this._preferredVersions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredVersionsInput() {
+    return this._preferredVersions
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // supported_character_sets - computed: true, optional: false, required: true
+  // supported_character_sets - computed: true, optional: false, required: false
   public get supportedCharacterSets() {
     return this.getListAttribute('supported_character_sets');
   }
 
-  // supported_feature_names - computed: true, optional: false, required: true
+  // supported_feature_names - computed: true, optional: false, required: false
   public get supportedFeatureNames() {
     return this.getListAttribute('supported_feature_names');
   }
 
-  // supported_modes - computed: true, optional: false, required: true
+  // supported_modes - computed: true, optional: false, required: false
   public get supportedModes() {
     return this.getListAttribute('supported_modes');
   }
 
-  // supported_timezones - computed: true, optional: false, required: true
+  // supported_timezones - computed: true, optional: false, required: false
   public get supportedTimezones() {
     return this.getListAttribute('supported_timezones');
   }
 
-  // supports_global_databases - computed: true, optional: false, required: true
+  // supports_global_databases - computed: true, optional: false, required: false
   public get supportsGlobalDatabases() {
     return this.getBooleanAttribute('supports_global_databases');
   }
 
-  // supports_log_exports_to_cloudwatch - computed: true, optional: false, required: true
+  // supports_log_exports_to_cloudwatch - computed: true, optional: false, required: false
   public get supportsLogExportsToCloudwatch() {
     return this.getBooleanAttribute('supports_log_exports_to_cloudwatch');
   }
 
-  // supports_parallel_query - computed: true, optional: false, required: true
+  // supports_parallel_query - computed: true, optional: false, required: false
   public get supportsParallelQuery() {
     return this.getBooleanAttribute('supports_parallel_query');
   }
 
-  // supports_read_replica - computed: true, optional: false, required: true
+  // supports_read_replica - computed: true, optional: false, required: false
   public get supportsReadReplica() {
     return this.getBooleanAttribute('supports_read_replica');
   }
 
-  // valid_upgrade_targets - computed: true, optional: false, required: true
+  // valid_upgrade_targets - computed: true, optional: false, required: false
   public get validUpgradeTargets() {
     return this.getListAttribute('valid_upgrade_targets');
   }
@@ -147,13 +160,20 @@ export class DataAwsRdsEngineVersion extends TerraformDataSource {
   // version - computed: true, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this._version ?? this.getStringAttribute('version');
+    return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string) {
     this._version = value;
   }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
+  }
 
-  // version_description - computed: true, optional: false, required: true
+  // version_description - computed: true, optional: false, required: false
   public get versionDescription() {
     return this.getStringAttribute('version_description');
   }
@@ -164,10 +184,10 @@ export class DataAwsRdsEngineVersion extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine: this._engine,
-      parameter_group_family: this._parameterGroupFamily,
-      preferred_versions: this._preferredVersions,
-      version: this._version,
+      engine: cdktf.stringToTerraform(this._engine),
+      parameter_group_family: cdktf.stringToTerraform(this._parameterGroupFamily),
+      preferred_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredVersions),
+      version: cdktf.stringToTerraform(this._version),
     };
   }
 }

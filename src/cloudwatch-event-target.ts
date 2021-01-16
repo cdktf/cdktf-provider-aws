@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchEventTargetConfig extends TerraformMetaArguments {
+export interface CloudwatchEventTargetConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly eventBusName?: string;
   readonly input?: string;
@@ -34,11 +33,32 @@ export interface CloudwatchEventTargetBatchTarget {
   readonly jobDefinition: string;
   readonly jobName: string;
 }
+
+function cloudwatchEventTargetBatchTargetToTerraform(struct?: CloudwatchEventTargetBatchTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    array_size: cdktf.numberToTerraform(struct!.arraySize),
+    job_attempts: cdktf.numberToTerraform(struct!.jobAttempts),
+    job_definition: cdktf.stringToTerraform(struct!.jobDefinition),
+    job_name: cdktf.stringToTerraform(struct!.jobName),
+  }
+}
+
 export interface CloudwatchEventTargetEcsTargetNetworkConfiguration {
   readonly assignPublicIp?: boolean;
   readonly securityGroups?: string[];
   readonly subnets: string[];
 }
+
+function cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform(struct?: CloudwatchEventTargetEcsTargetNetworkConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    assign_public_ip: cdktf.booleanToTerraform(struct!.assignPublicIp),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
+  }
+}
+
 export interface CloudwatchEventTargetEcsTarget {
   readonly group?: string;
   readonly launchType?: string;
@@ -48,24 +68,71 @@ export interface CloudwatchEventTargetEcsTarget {
   /** network_configuration block */
   readonly networkConfiguration?: CloudwatchEventTargetEcsTargetNetworkConfiguration[];
 }
+
+function cloudwatchEventTargetEcsTargetToTerraform(struct?: CloudwatchEventTargetEcsTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    group: cdktf.stringToTerraform(struct!.group),
+    launch_type: cdktf.stringToTerraform(struct!.launchType),
+    platform_version: cdktf.stringToTerraform(struct!.platformVersion),
+    task_count: cdktf.numberToTerraform(struct!.taskCount),
+    task_definition_arn: cdktf.stringToTerraform(struct!.taskDefinitionArn),
+    network_configuration: cdktf.listMapper(cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform)(struct!.networkConfiguration),
+  }
+}
+
 export interface CloudwatchEventTargetInputTransformer {
   readonly inputPaths?: { [key: string]: string };
   readonly inputTemplate: string;
 }
+
+function cloudwatchEventTargetInputTransformerToTerraform(struct?: CloudwatchEventTargetInputTransformer): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    input_paths: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.inputPaths),
+    input_template: cdktf.stringToTerraform(struct!.inputTemplate),
+  }
+}
+
 export interface CloudwatchEventTargetKinesisTarget {
   readonly partitionKeyPath?: string;
 }
+
+function cloudwatchEventTargetKinesisTargetToTerraform(struct?: CloudwatchEventTargetKinesisTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    partition_key_path: cdktf.stringToTerraform(struct!.partitionKeyPath),
+  }
+}
+
 export interface CloudwatchEventTargetRunCommandTargets {
   readonly key: string;
   readonly values: string[];
 }
+
+function cloudwatchEventTargetRunCommandTargetsToTerraform(struct?: CloudwatchEventTargetRunCommandTargets): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
 export interface CloudwatchEventTargetSqsTarget {
   readonly messageGroupId?: string;
 }
 
+function cloudwatchEventTargetSqsTargetToTerraform(struct?: CloudwatchEventTargetSqsTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    message_group_id: cdktf.stringToTerraform(struct!.messageGroupId),
+  }
+}
+
+
 // Resource
 
-export class CloudwatchEventTarget extends TerraformResource {
+export class CloudwatchEventTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -104,127 +171,208 @@ export class CloudwatchEventTarget extends TerraformResource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this._arn;
+    return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn
   }
 
   // event_bus_name - computed: false, optional: true, required: false
   private _eventBusName?: string;
   public get eventBusName() {
-    return this._eventBusName;
+    return this.getStringAttribute('event_bus_name');
   }
-  public set eventBusName(value: string | undefined) {
+  public set eventBusName(value: string ) {
     this._eventBusName = value;
+  }
+  public resetEventBusName() {
+    this._eventBusName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventBusNameInput() {
+    return this._eventBusName
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // input - computed: false, optional: true, required: false
   private _input?: string;
   public get input() {
-    return this._input;
+    return this.getStringAttribute('input');
   }
-  public set input(value: string | undefined) {
+  public set input(value: string ) {
     this._input = value;
+  }
+  public resetInput() {
+    this._input = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input
   }
 
   // input_path - computed: false, optional: true, required: false
   private _inputPath?: string;
   public get inputPath() {
-    return this._inputPath;
+    return this.getStringAttribute('input_path');
   }
-  public set inputPath(value: string | undefined) {
+  public set inputPath(value: string ) {
     this._inputPath = value;
+  }
+  public resetInputPath() {
+    this._inputPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputPathInput() {
+    return this._inputPath
   }
 
   // role_arn - computed: false, optional: true, required: false
   private _roleArn?: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string ) {
     this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // rule - computed: false, optional: false, required: true
   private _rule: string;
   public get rule() {
-    return this._rule;
+    return this.getStringAttribute('rule');
   }
   public set rule(value: string) {
     this._rule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule
   }
 
   // target_id - computed: true, optional: true, required: false
   private _targetId?: string;
   public get targetId() {
-    return this._targetId ?? this.getStringAttribute('target_id');
+    return this.getStringAttribute('target_id');
   }
-  public set targetId(value: string | undefined) {
+  public set targetId(value: string) {
     this._targetId = value;
+  }
+  public resetTargetId() {
+    this._targetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetIdInput() {
+    return this._targetId
   }
 
   // batch_target - computed: false, optional: true, required: false
   private _batchTarget?: CloudwatchEventTargetBatchTarget[];
   public get batchTarget() {
-    return this._batchTarget;
+    return this.interpolationForAttribute('batch_target') as any;
   }
-  public set batchTarget(value: CloudwatchEventTargetBatchTarget[] | undefined) {
+  public set batchTarget(value: CloudwatchEventTargetBatchTarget[] ) {
     this._batchTarget = value;
+  }
+  public resetBatchTarget() {
+    this._batchTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchTargetInput() {
+    return this._batchTarget
   }
 
   // ecs_target - computed: false, optional: true, required: false
   private _ecsTarget?: CloudwatchEventTargetEcsTarget[];
   public get ecsTarget() {
-    return this._ecsTarget;
+    return this.interpolationForAttribute('ecs_target') as any;
   }
-  public set ecsTarget(value: CloudwatchEventTargetEcsTarget[] | undefined) {
+  public set ecsTarget(value: CloudwatchEventTargetEcsTarget[] ) {
     this._ecsTarget = value;
+  }
+  public resetEcsTarget() {
+    this._ecsTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ecsTargetInput() {
+    return this._ecsTarget
   }
 
   // input_transformer - computed: false, optional: true, required: false
   private _inputTransformer?: CloudwatchEventTargetInputTransformer[];
   public get inputTransformer() {
-    return this._inputTransformer;
+    return this.interpolationForAttribute('input_transformer') as any;
   }
-  public set inputTransformer(value: CloudwatchEventTargetInputTransformer[] | undefined) {
+  public set inputTransformer(value: CloudwatchEventTargetInputTransformer[] ) {
     this._inputTransformer = value;
+  }
+  public resetInputTransformer() {
+    this._inputTransformer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputTransformerInput() {
+    return this._inputTransformer
   }
 
   // kinesis_target - computed: false, optional: true, required: false
   private _kinesisTarget?: CloudwatchEventTargetKinesisTarget[];
   public get kinesisTarget() {
-    return this._kinesisTarget;
+    return this.interpolationForAttribute('kinesis_target') as any;
   }
-  public set kinesisTarget(value: CloudwatchEventTargetKinesisTarget[] | undefined) {
+  public set kinesisTarget(value: CloudwatchEventTargetKinesisTarget[] ) {
     this._kinesisTarget = value;
+  }
+  public resetKinesisTarget() {
+    this._kinesisTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kinesisTargetInput() {
+    return this._kinesisTarget
   }
 
   // run_command_targets - computed: false, optional: true, required: false
   private _runCommandTargets?: CloudwatchEventTargetRunCommandTargets[];
   public get runCommandTargets() {
-    return this._runCommandTargets;
+    return this.interpolationForAttribute('run_command_targets') as any;
   }
-  public set runCommandTargets(value: CloudwatchEventTargetRunCommandTargets[] | undefined) {
+  public set runCommandTargets(value: CloudwatchEventTargetRunCommandTargets[] ) {
     this._runCommandTargets = value;
+  }
+  public resetRunCommandTargets() {
+    this._runCommandTargets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runCommandTargetsInput() {
+    return this._runCommandTargets
   }
 
   // sqs_target - computed: false, optional: true, required: false
   private _sqsTarget?: CloudwatchEventTargetSqsTarget[];
   public get sqsTarget() {
-    return this._sqsTarget;
+    return this.interpolationForAttribute('sqs_target') as any;
   }
-  public set sqsTarget(value: CloudwatchEventTargetSqsTarget[] | undefined) {
+  public set sqsTarget(value: CloudwatchEventTargetSqsTarget[] ) {
     this._sqsTarget = value;
+  }
+  public resetSqsTarget() {
+    this._sqsTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqsTargetInput() {
+    return this._sqsTarget
   }
 
   // =========
@@ -233,19 +381,19 @@ export class CloudwatchEventTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
-      event_bus_name: this._eventBusName,
-      input: this._input,
-      input_path: this._inputPath,
-      role_arn: this._roleArn,
-      rule: this._rule,
-      target_id: this._targetId,
-      batch_target: this._batchTarget,
-      ecs_target: this._ecsTarget,
-      input_transformer: this._inputTransformer,
-      kinesis_target: this._kinesisTarget,
-      run_command_targets: this._runCommandTargets,
-      sqs_target: this._sqsTarget,
+      arn: cdktf.stringToTerraform(this._arn),
+      event_bus_name: cdktf.stringToTerraform(this._eventBusName),
+      input: cdktf.stringToTerraform(this._input),
+      input_path: cdktf.stringToTerraform(this._inputPath),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      rule: cdktf.stringToTerraform(this._rule),
+      target_id: cdktf.stringToTerraform(this._targetId),
+      batch_target: cdktf.listMapper(cloudwatchEventTargetBatchTargetToTerraform)(this._batchTarget),
+      ecs_target: cdktf.listMapper(cloudwatchEventTargetEcsTargetToTerraform)(this._ecsTarget),
+      input_transformer: cdktf.listMapper(cloudwatchEventTargetInputTransformerToTerraform)(this._inputTransformer),
+      kinesis_target: cdktf.listMapper(cloudwatchEventTargetKinesisTargetToTerraform)(this._kinesisTarget),
+      run_command_targets: cdktf.listMapper(cloudwatchEventTargetRunCommandTargetsToTerraform)(this._runCommandTargets),
+      sqs_target: cdktf.listMapper(cloudwatchEventTargetSqsTargetToTerraform)(this._sqsTarget),
     };
   }
 }

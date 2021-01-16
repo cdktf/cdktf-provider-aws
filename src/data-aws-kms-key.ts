@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsKmsKeyConfig extends TerraformMetaArguments {
+export interface DataAwsKmsKeyConfig extends cdktf.TerraformMetaArguments {
   readonly grantTokens?: string[];
   readonly keyId: string;
 }
 
 // Resource
 
-export class DataAwsKmsKey extends TerraformDataSource {
+export class DataAwsKmsKey extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -39,42 +38,42 @@ export class DataAwsKmsKey extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // aws_account_id - computed: true, optional: false, required: true
+  // aws_account_id - computed: true, optional: false, required: false
   public get awsAccountId() {
     return this.getStringAttribute('aws_account_id');
   }
 
-  // creation_date - computed: true, optional: false, required: true
+  // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
     return this.getStringAttribute('creation_date');
   }
 
-  // customer_master_key_spec - computed: true, optional: false, required: true
+  // customer_master_key_spec - computed: true, optional: false, required: false
   public get customerMasterKeySpec() {
     return this.getStringAttribute('customer_master_key_spec');
   }
 
-  // deletion_date - computed: true, optional: false, required: true
+  // deletion_date - computed: true, optional: false, required: false
   public get deletionDate() {
     return this.getStringAttribute('deletion_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // enabled - computed: true, optional: false, required: true
+  // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // expiration_model - computed: true, optional: false, required: true
+  // expiration_model - computed: true, optional: false, required: false
   public get expirationModel() {
     return this.getStringAttribute('expiration_model');
   }
@@ -82,51 +81,58 @@ export class DataAwsKmsKey extends TerraformDataSource {
   // grant_tokens - computed: false, optional: true, required: false
   private _grantTokens?: string[];
   public get grantTokens() {
-    return this._grantTokens;
+    return this.getListAttribute('grant_tokens');
   }
-  public set grantTokens(value: string[] | undefined) {
+  public set grantTokens(value: string[] ) {
     this._grantTokens = value;
+  }
+  public resetGrantTokens() {
+    this._grantTokens = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grantTokensInput() {
+    return this._grantTokens
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key_id - computed: false, optional: false, required: true
   private _keyId: string;
   public get keyId() {
-    return this._keyId;
+    return this.getStringAttribute('key_id');
   }
   public set keyId(value: string) {
     this._keyId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId
+  }
 
-  // key_manager - computed: true, optional: false, required: true
+  // key_manager - computed: true, optional: false, required: false
   public get keyManager() {
     return this.getStringAttribute('key_manager');
   }
 
-  // key_state - computed: true, optional: false, required: true
+  // key_state - computed: true, optional: false, required: false
   public get keyState() {
     return this.getStringAttribute('key_state');
   }
 
-  // key_usage - computed: true, optional: false, required: true
+  // key_usage - computed: true, optional: false, required: false
   public get keyUsage() {
     return this.getStringAttribute('key_usage');
   }
 
-  // origin - computed: true, optional: false, required: true
+  // origin - computed: true, optional: false, required: false
   public get origin() {
     return this.getStringAttribute('origin');
   }
 
-  // valid_to - computed: true, optional: false, required: true
+  // valid_to - computed: true, optional: false, required: false
   public get validTo() {
     return this.getStringAttribute('valid_to');
   }
@@ -137,8 +143,8 @@ export class DataAwsKmsKey extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      grant_tokens: this._grantTokens,
-      key_id: this._keyId,
+      grant_tokens: cdktf.listMapper(cdktf.stringToTerraform)(this._grantTokens),
+      key_id: cdktf.stringToTerraform(this._keyId),
     };
   }
 }

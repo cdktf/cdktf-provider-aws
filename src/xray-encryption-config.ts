@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface XrayEncryptionConfigConfig extends TerraformMetaArguments {
+export interface XrayEncryptionConfigConfig extends cdktf.TerraformMetaArguments {
   readonly keyId?: string;
   readonly type: string;
 }
 
 // Resource
 
-export class XrayEncryptionConfig extends TerraformResource {
+export class XrayEncryptionConfig extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,37 @@ export class XrayEncryptionConfig extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key_id - computed: false, optional: true, required: false
   private _keyId?: string;
   public get keyId() {
-    return this._keyId;
+    return this.getStringAttribute('key_id');
   }
-  public set keyId(value: string | undefined) {
+  public set keyId(value: string ) {
     this._keyId = value;
+  }
+  public resetKeyId() {
+    this._keyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId
   }
 
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
-    return this._type;
+    return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type
   }
 
   // =========
@@ -72,8 +78,8 @@ export class XrayEncryptionConfig extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      key_id: this._keyId,
-      type: this._type,
+      key_id: cdktf.stringToTerraform(this._keyId),
+      type: cdktf.stringToTerraform(this._type),
     };
   }
 }

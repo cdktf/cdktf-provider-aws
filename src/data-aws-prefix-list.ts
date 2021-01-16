@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsPrefixListConfig extends TerraformMetaArguments {
+export interface DataAwsPrefixListConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly prefixListId?: string;
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsPrefixListFilter {
   readonly values: string[];
 }
 
+function dataAwsPrefixListFilterToTerraform(struct?: DataAwsPrefixListFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+
 // Resource
 
-export class DataAwsPrefixList extends TerraformDataSource {
+export class DataAwsPrefixList extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,45 +54,62 @@ export class DataAwsPrefixList extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // cidr_blocks - computed: true, optional: false, required: true
+  // cidr_blocks - computed: true, optional: false, required: false
   public get cidrBlocks() {
     return this.getListAttribute('cidr_blocks');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // prefix_list_id - computed: false, optional: true, required: false
   private _prefixListId?: string;
   public get prefixListId() {
-    return this._prefixListId;
+    return this.getStringAttribute('prefix_list_id');
   }
-  public set prefixListId(value: string | undefined) {
+  public set prefixListId(value: string ) {
     this._prefixListId = value;
+  }
+  public resetPrefixListId() {
+    this._prefixListId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixListIdInput() {
+    return this._prefixListId
   }
 
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsPrefixListFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
-  public set filter(value: DataAwsPrefixListFilter[] | undefined) {
+  public set filter(value: DataAwsPrefixListFilter[] ) {
     this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -93,9 +118,9 @@ export class DataAwsPrefixList extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      prefix_list_id: this._prefixListId,
-      filter: this._filter,
+      name: cdktf.stringToTerraform(this._name),
+      prefix_list_id: cdktf.stringToTerraform(this._prefixListId),
+      filter: cdktf.listMapper(dataAwsPrefixListFilterToTerraform)(this._filter),
     };
   }
 }

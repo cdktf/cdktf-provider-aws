@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEfsAccessPointsConfig extends TerraformMetaArguments {
+export interface DataAwsEfsAccessPointsConfig extends cdktf.TerraformMetaArguments {
   readonly fileSystemId: string;
 }
 
 // Resource
 
-export class DataAwsEfsAccessPoints extends TerraformDataSource {
+export class DataAwsEfsAccessPoints extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,7 +36,7 @@ export class DataAwsEfsAccessPoints extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arns - computed: true, optional: false, required: true
+  // arns - computed: true, optional: false, required: false
   public get arns() {
     return this.getListAttribute('arns');
   }
@@ -45,22 +44,22 @@ export class DataAwsEfsAccessPoints extends TerraformDataSource {
   // file_system_id - computed: false, optional: false, required: true
   private _fileSystemId: string;
   public get fileSystemId() {
-    return this._fileSystemId;
+    return this.getStringAttribute('file_system_id');
   }
   public set fileSystemId(value: string) {
     this._fileSystemId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdInput() {
+    return this._fileSystemId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ids - computed: true, optional: false, required: true
+  // ids - computed: true, optional: false, required: false
   public get ids() {
     return this.getListAttribute('ids');
   }
@@ -71,7 +70,7 @@ export class DataAwsEfsAccessPoints extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      file_system_id: this._fileSystemId,
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
     };
   }
 }

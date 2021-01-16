@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodestarconnectionsConnectionConfig extends TerraformMetaArguments {
+export interface CodestarconnectionsConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly providerType: string;
 }
 
 // Resource
 
-export class CodestarconnectionsConnection extends TerraformResource {
+export class CodestarconnectionsConnection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,41 +38,45 @@ export class CodestarconnectionsConnection extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // connection_status - computed: true, optional: false, required: true
+  // connection_status - computed: true, optional: false, required: false
   public get connectionStatus() {
     return this.getStringAttribute('connection_status');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // provider_type - computed: false, optional: false, required: true
   private _providerType: string;
   public get providerType() {
-    return this._providerType;
+    return this.getStringAttribute('provider_type');
   }
   public set providerType(value: string) {
     this._providerType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerTypeInput() {
+    return this._providerType
   }
 
   // =========
@@ -82,8 +85,8 @@ export class CodestarconnectionsConnection extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      provider_type: this._providerType,
+      name: cdktf.stringToTerraform(this._name),
+      provider_type: cdktf.stringToTerraform(this._providerType),
     };
   }
 }

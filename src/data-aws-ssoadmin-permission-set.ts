@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSsoadminPermissionSetConfig extends TerraformMetaArguments {
+export interface DataAwsSsoadminPermissionSetConfig extends cdktf.TerraformMetaArguments {
   readonly instanceArn: string;
   readonly name?: string;
   readonly tags?: { [key: string]: string };
@@ -15,7 +14,7 @@ export interface DataAwsSsoadminPermissionSetConfig extends TerraformMetaArgumen
 
 // Resource
 
-export class DataAwsSsoadminPermissionSet extends TerraformDataSource {
+export class DataAwsSsoadminPermissionSet extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -42,68 +41,78 @@ export class DataAwsSsoadminPermissionSet extends TerraformDataSource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
-  private _arn?: string;
   public get arn() {
-    return this._arn ?? this.getStringAttribute('arn');
-  }
-  public set arn(value: string | undefined) {
-    this._arn = value;
+    return this.getStringAttribute('arn');
   }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_arn - computed: false, optional: false, required: true
   private _instanceArn: string;
   public get instanceArn() {
-    return this._instanceArn;
+    return this.getStringAttribute('instance_arn');
   }
   public set instanceArn(value: string) {
     this._instanceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceArnInput() {
+    return this._instanceArn
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // relay_state - computed: true, optional: false, required: true
+  // relay_state - computed: true, optional: false, required: false
   public get relayState() {
     return this.getStringAttribute('relay_state');
   }
 
-  // session_duration - computed: true, optional: false, required: true
+  // session_duration - computed: true, optional: false, required: false
   public get sessionDuration() {
     return this.getStringAttribute('session_duration');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -112,9 +121,9 @@ export class DataAwsSsoadminPermissionSet extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      instance_arn: this._instanceArn,
-      name: this._name,
-      tags: this._tags,
+      instance_arn: cdktf.stringToTerraform(this._instanceArn),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

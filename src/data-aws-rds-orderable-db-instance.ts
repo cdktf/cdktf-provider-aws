@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRdsOrderableDbInstanceConfig extends TerraformMetaArguments {
+export interface DataAwsRdsOrderableDbInstanceConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZoneGroup?: string;
   readonly engine: string;
   readonly engineVersion?: string;
@@ -29,7 +28,7 @@ export interface DataAwsRdsOrderableDbInstanceConfig extends TerraformMetaArgume
 
 // Resource
 
-export class DataAwsRdsOrderableDbInstance extends TerraformDataSource {
+export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -72,13 +71,20 @@ export class DataAwsRdsOrderableDbInstance extends TerraformDataSource {
   // availability_zone_group - computed: true, optional: true, required: false
   private _availabilityZoneGroup?: string;
   public get availabilityZoneGroup() {
-    return this._availabilityZoneGroup ?? this.getStringAttribute('availability_zone_group');
+    return this.getStringAttribute('availability_zone_group');
   }
-  public set availabilityZoneGroup(value: string | undefined) {
+  public set availabilityZoneGroup(value: string) {
     this._availabilityZoneGroup = value;
   }
+  public resetAvailabilityZoneGroup() {
+    this._availabilityZoneGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneGroupInput() {
+    return this._availabilityZoneGroup
+  }
 
-  // availability_zones - computed: true, optional: false, required: true
+  // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
@@ -86,84 +92,105 @@ export class DataAwsRdsOrderableDbInstance extends TerraformDataSource {
   // engine - computed: false, optional: false, required: true
   private _engine: string;
   public get engine() {
-    return this._engine;
+    return this.getStringAttribute('engine');
   }
   public set engine(value: string) {
     this._engine = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
   }
 
   // engine_version - computed: true, optional: true, required: false
   private _engineVersion?: string;
   public get engineVersion() {
-    return this._engineVersion ?? this.getStringAttribute('engine_version');
+    return this.getStringAttribute('engine_version');
   }
-  public set engineVersion(value: string | undefined) {
+  public set engineVersion(value: string) {
     this._engineVersion = value;
+  }
+  public resetEngineVersion() {
+    this._engineVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineVersionInput() {
+    return this._engineVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_class - computed: true, optional: true, required: false
   private _instanceClass?: string;
   public get instanceClass() {
-    return this._instanceClass ?? this.getStringAttribute('instance_class');
+    return this.getStringAttribute('instance_class');
   }
-  public set instanceClass(value: string | undefined) {
+  public set instanceClass(value: string) {
     this._instanceClass = value;
+  }
+  public resetInstanceClass() {
+    this._instanceClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceClassInput() {
+    return this._instanceClass
   }
 
   // license_model - computed: true, optional: true, required: false
   private _licenseModel?: string;
   public get licenseModel() {
-    return this._licenseModel ?? this.getStringAttribute('license_model');
+    return this.getStringAttribute('license_model');
   }
-  public set licenseModel(value: string | undefined) {
+  public set licenseModel(value: string) {
     this._licenseModel = value;
   }
+  public resetLicenseModel() {
+    this._licenseModel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseModelInput() {
+    return this._licenseModel
+  }
 
-  // max_iops_per_db_instance - computed: true, optional: false, required: true
+  // max_iops_per_db_instance - computed: true, optional: false, required: false
   public get maxIopsPerDbInstance() {
     return this.getNumberAttribute('max_iops_per_db_instance');
   }
 
-  // max_iops_per_gib - computed: true, optional: false, required: true
+  // max_iops_per_gib - computed: true, optional: false, required: false
   public get maxIopsPerGib() {
     return this.getNumberAttribute('max_iops_per_gib');
   }
 
-  // max_storage_size - computed: true, optional: false, required: true
+  // max_storage_size - computed: true, optional: false, required: false
   public get maxStorageSize() {
     return this.getNumberAttribute('max_storage_size');
   }
 
-  // min_iops_per_db_instance - computed: true, optional: false, required: true
+  // min_iops_per_db_instance - computed: true, optional: false, required: false
   public get minIopsPerDbInstance() {
     return this.getNumberAttribute('min_iops_per_db_instance');
   }
 
-  // min_iops_per_gib - computed: true, optional: false, required: true
+  // min_iops_per_gib - computed: true, optional: false, required: false
   public get minIopsPerGib() {
     return this.getNumberAttribute('min_iops_per_gib');
   }
 
-  // min_storage_size - computed: true, optional: false, required: true
+  // min_storage_size - computed: true, optional: false, required: false
   public get minStorageSize() {
     return this.getNumberAttribute('min_storage_size');
   }
 
-  // multi_az_capable - computed: true, optional: false, required: true
+  // multi_az_capable - computed: true, optional: false, required: false
   public get multiAzCapable() {
     return this.getBooleanAttribute('multi_az_capable');
   }
 
-  // outpost_capable - computed: true, optional: false, required: true
+  // outpost_capable - computed: true, optional: false, required: false
   public get outpostCapable() {
     return this.getBooleanAttribute('outpost_capable');
   }
@@ -171,22 +198,36 @@ export class DataAwsRdsOrderableDbInstance extends TerraformDataSource {
   // preferred_engine_versions - computed: false, optional: true, required: false
   private _preferredEngineVersions?: string[];
   public get preferredEngineVersions() {
-    return this._preferredEngineVersions;
+    return this.getListAttribute('preferred_engine_versions');
   }
-  public set preferredEngineVersions(value: string[] | undefined) {
+  public set preferredEngineVersions(value: string[] ) {
     this._preferredEngineVersions = value;
+  }
+  public resetPreferredEngineVersions() {
+    this._preferredEngineVersions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredEngineVersionsInput() {
+    return this._preferredEngineVersions
   }
 
   // preferred_instance_classes - computed: false, optional: true, required: false
   private _preferredInstanceClasses?: string[];
   public get preferredInstanceClasses() {
-    return this._preferredInstanceClasses;
+    return this.getListAttribute('preferred_instance_classes');
   }
-  public set preferredInstanceClasses(value: string[] | undefined) {
+  public set preferredInstanceClasses(value: string[] ) {
     this._preferredInstanceClasses = value;
   }
+  public resetPreferredInstanceClasses() {
+    this._preferredInstanceClasses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredInstanceClassesInput() {
+    return this._preferredInstanceClasses
+  }
 
-  // read_replica_capable - computed: true, optional: false, required: true
+  // read_replica_capable - computed: true, optional: false, required: false
   public get readReplicaCapable() {
     return this.getBooleanAttribute('read_replica_capable');
   }
@@ -194,13 +235,20 @@ export class DataAwsRdsOrderableDbInstance extends TerraformDataSource {
   // storage_type - computed: true, optional: true, required: false
   private _storageType?: string;
   public get storageType() {
-    return this._storageType ?? this.getStringAttribute('storage_type');
+    return this.getStringAttribute('storage_type');
   }
-  public set storageType(value: string | undefined) {
+  public set storageType(value: string) {
     this._storageType = value;
   }
+  public resetStorageType() {
+    this._storageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTypeInput() {
+    return this._storageType
+  }
 
-  // supported_engine_modes - computed: true, optional: false, required: true
+  // supported_engine_modes - computed: true, optional: false, required: false
   public get supportedEngineModes() {
     return this.getListAttribute('supported_engine_modes');
   }
@@ -208,82 +256,145 @@ export class DataAwsRdsOrderableDbInstance extends TerraformDataSource {
   // supports_enhanced_monitoring - computed: true, optional: true, required: false
   private _supportsEnhancedMonitoring?: boolean;
   public get supportsEnhancedMonitoring() {
-    return this._supportsEnhancedMonitoring ?? this.getBooleanAttribute('supports_enhanced_monitoring');
+    return this.getBooleanAttribute('supports_enhanced_monitoring');
   }
-  public set supportsEnhancedMonitoring(value: boolean | undefined) {
+  public set supportsEnhancedMonitoring(value: boolean) {
     this._supportsEnhancedMonitoring = value;
+  }
+  public resetSupportsEnhancedMonitoring() {
+    this._supportsEnhancedMonitoring = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportsEnhancedMonitoringInput() {
+    return this._supportsEnhancedMonitoring
   }
 
   // supports_global_databases - computed: true, optional: true, required: false
   private _supportsGlobalDatabases?: boolean;
   public get supportsGlobalDatabases() {
-    return this._supportsGlobalDatabases ?? this.getBooleanAttribute('supports_global_databases');
+    return this.getBooleanAttribute('supports_global_databases');
   }
-  public set supportsGlobalDatabases(value: boolean | undefined) {
+  public set supportsGlobalDatabases(value: boolean) {
     this._supportsGlobalDatabases = value;
+  }
+  public resetSupportsGlobalDatabases() {
+    this._supportsGlobalDatabases = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportsGlobalDatabasesInput() {
+    return this._supportsGlobalDatabases
   }
 
   // supports_iam_database_authentication - computed: true, optional: true, required: false
   private _supportsIamDatabaseAuthentication?: boolean;
   public get supportsIamDatabaseAuthentication() {
-    return this._supportsIamDatabaseAuthentication ?? this.getBooleanAttribute('supports_iam_database_authentication');
+    return this.getBooleanAttribute('supports_iam_database_authentication');
   }
-  public set supportsIamDatabaseAuthentication(value: boolean | undefined) {
+  public set supportsIamDatabaseAuthentication(value: boolean) {
     this._supportsIamDatabaseAuthentication = value;
+  }
+  public resetSupportsIamDatabaseAuthentication() {
+    this._supportsIamDatabaseAuthentication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportsIamDatabaseAuthenticationInput() {
+    return this._supportsIamDatabaseAuthentication
   }
 
   // supports_iops - computed: true, optional: true, required: false
   private _supportsIops?: boolean;
   public get supportsIops() {
-    return this._supportsIops ?? this.getBooleanAttribute('supports_iops');
+    return this.getBooleanAttribute('supports_iops');
   }
-  public set supportsIops(value: boolean | undefined) {
+  public set supportsIops(value: boolean) {
     this._supportsIops = value;
+  }
+  public resetSupportsIops() {
+    this._supportsIops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportsIopsInput() {
+    return this._supportsIops
   }
 
   // supports_kerberos_authentication - computed: true, optional: true, required: false
   private _supportsKerberosAuthentication?: boolean;
   public get supportsKerberosAuthentication() {
-    return this._supportsKerberosAuthentication ?? this.getBooleanAttribute('supports_kerberos_authentication');
+    return this.getBooleanAttribute('supports_kerberos_authentication');
   }
-  public set supportsKerberosAuthentication(value: boolean | undefined) {
+  public set supportsKerberosAuthentication(value: boolean) {
     this._supportsKerberosAuthentication = value;
+  }
+  public resetSupportsKerberosAuthentication() {
+    this._supportsKerberosAuthentication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportsKerberosAuthenticationInput() {
+    return this._supportsKerberosAuthentication
   }
 
   // supports_performance_insights - computed: true, optional: true, required: false
   private _supportsPerformanceInsights?: boolean;
   public get supportsPerformanceInsights() {
-    return this._supportsPerformanceInsights ?? this.getBooleanAttribute('supports_performance_insights');
+    return this.getBooleanAttribute('supports_performance_insights');
   }
-  public set supportsPerformanceInsights(value: boolean | undefined) {
+  public set supportsPerformanceInsights(value: boolean) {
     this._supportsPerformanceInsights = value;
+  }
+  public resetSupportsPerformanceInsights() {
+    this._supportsPerformanceInsights = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportsPerformanceInsightsInput() {
+    return this._supportsPerformanceInsights
   }
 
   // supports_storage_autoscaling - computed: true, optional: true, required: false
   private _supportsStorageAutoscaling?: boolean;
   public get supportsStorageAutoscaling() {
-    return this._supportsStorageAutoscaling ?? this.getBooleanAttribute('supports_storage_autoscaling');
+    return this.getBooleanAttribute('supports_storage_autoscaling');
   }
-  public set supportsStorageAutoscaling(value: boolean | undefined) {
+  public set supportsStorageAutoscaling(value: boolean) {
     this._supportsStorageAutoscaling = value;
+  }
+  public resetSupportsStorageAutoscaling() {
+    this._supportsStorageAutoscaling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportsStorageAutoscalingInput() {
+    return this._supportsStorageAutoscaling
   }
 
   // supports_storage_encryption - computed: true, optional: true, required: false
   private _supportsStorageEncryption?: boolean;
   public get supportsStorageEncryption() {
-    return this._supportsStorageEncryption ?? this.getBooleanAttribute('supports_storage_encryption');
+    return this.getBooleanAttribute('supports_storage_encryption');
   }
-  public set supportsStorageEncryption(value: boolean | undefined) {
+  public set supportsStorageEncryption(value: boolean) {
     this._supportsStorageEncryption = value;
+  }
+  public resetSupportsStorageEncryption() {
+    this._supportsStorageEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportsStorageEncryptionInput() {
+    return this._supportsStorageEncryption
   }
 
   // vpc - computed: true, optional: true, required: false
   private _vpc?: boolean;
   public get vpc() {
-    return this._vpc ?? this.getBooleanAttribute('vpc');
+    return this.getBooleanAttribute('vpc');
   }
-  public set vpc(value: boolean | undefined) {
+  public set vpc(value: boolean) {
     this._vpc = value;
+  }
+  public resetVpc() {
+    this._vpc = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcInput() {
+    return this._vpc
   }
 
   // =========
@@ -292,23 +403,23 @@ export class DataAwsRdsOrderableDbInstance extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone_group: this._availabilityZoneGroup,
-      engine: this._engine,
-      engine_version: this._engineVersion,
-      instance_class: this._instanceClass,
-      license_model: this._licenseModel,
-      preferred_engine_versions: this._preferredEngineVersions,
-      preferred_instance_classes: this._preferredInstanceClasses,
-      storage_type: this._storageType,
-      supports_enhanced_monitoring: this._supportsEnhancedMonitoring,
-      supports_global_databases: this._supportsGlobalDatabases,
-      supports_iam_database_authentication: this._supportsIamDatabaseAuthentication,
-      supports_iops: this._supportsIops,
-      supports_kerberos_authentication: this._supportsKerberosAuthentication,
-      supports_performance_insights: this._supportsPerformanceInsights,
-      supports_storage_autoscaling: this._supportsStorageAutoscaling,
-      supports_storage_encryption: this._supportsStorageEncryption,
-      vpc: this._vpc,
+      availability_zone_group: cdktf.stringToTerraform(this._availabilityZoneGroup),
+      engine: cdktf.stringToTerraform(this._engine),
+      engine_version: cdktf.stringToTerraform(this._engineVersion),
+      instance_class: cdktf.stringToTerraform(this._instanceClass),
+      license_model: cdktf.stringToTerraform(this._licenseModel),
+      preferred_engine_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredEngineVersions),
+      preferred_instance_classes: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredInstanceClasses),
+      storage_type: cdktf.stringToTerraform(this._storageType),
+      supports_enhanced_monitoring: cdktf.booleanToTerraform(this._supportsEnhancedMonitoring),
+      supports_global_databases: cdktf.booleanToTerraform(this._supportsGlobalDatabases),
+      supports_iam_database_authentication: cdktf.booleanToTerraform(this._supportsIamDatabaseAuthentication),
+      supports_iops: cdktf.booleanToTerraform(this._supportsIops),
+      supports_kerberos_authentication: cdktf.booleanToTerraform(this._supportsKerberosAuthentication),
+      supports_performance_insights: cdktf.booleanToTerraform(this._supportsPerformanceInsights),
+      supports_storage_autoscaling: cdktf.booleanToTerraform(this._supportsStorageAutoscaling),
+      supports_storage_encryption: cdktf.booleanToTerraform(this._supportsStorageEncryption),
+      vpc: cdktf.booleanToTerraform(this._vpc),
     };
   }
 }

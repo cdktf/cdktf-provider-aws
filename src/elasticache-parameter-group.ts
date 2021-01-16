@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ElasticacheParameterGroupConfig extends TerraformMetaArguments {
+export interface ElasticacheParameterGroupConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly family: string;
   readonly name: string;
@@ -19,9 +18,18 @@ export interface ElasticacheParameterGroupParameter {
   readonly value: string;
 }
 
+function elasticacheParameterGroupParameterToTerraform(struct?: ElasticacheParameterGroupParameter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+
 // Resource
 
-export class ElasticacheParameterGroup extends TerraformResource {
+export class ElasticacheParameterGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -51,46 +59,64 @@ export class ElasticacheParameterGroup extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // family - computed: false, optional: false, required: true
   private _family: string;
   public get family() {
-    return this._family;
+    return this.getStringAttribute('family');
   }
   public set family(value: string) {
     this._family = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get familyInput() {
+    return this._family
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // parameter - computed: false, optional: true, required: false
   private _parameter?: ElasticacheParameterGroupParameter[];
   public get parameter() {
-    return this._parameter;
+    return this.interpolationForAttribute('parameter') as any;
   }
-  public set parameter(value: ElasticacheParameterGroupParameter[] | undefined) {
+  public set parameter(value: ElasticacheParameterGroupParameter[] ) {
     this._parameter = value;
+  }
+  public resetParameter() {
+    this._parameter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterInput() {
+    return this._parameter
   }
 
   // =========
@@ -99,10 +125,10 @@ export class ElasticacheParameterGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      family: this._family,
-      name: this._name,
-      parameter: this._parameter,
+      description: cdktf.stringToTerraform(this._description),
+      family: cdktf.stringToTerraform(this._family),
+      name: cdktf.stringToTerraform(this._name),
+      parameter: cdktf.listMapper(elasticacheParameterGroupParameterToTerraform)(this._parameter),
     };
   }
 }

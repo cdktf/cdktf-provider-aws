@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BatchJobQueueConfig extends TerraformMetaArguments {
+export interface BatchJobQueueConfig extends cdktf.TerraformMetaArguments {
   readonly computeEnvironments: string[];
   readonly name: string;
   readonly priority: number;
@@ -17,7 +16,7 @@ export interface BatchJobQueueConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class BatchJobQueue extends TerraformResource {
+export class BatchJobQueue extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,7 +44,7 @@ export class BatchJobQueue extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -53,55 +52,74 @@ export class BatchJobQueue extends TerraformResource {
   // compute_environments - computed: false, optional: false, required: true
   private _computeEnvironments: string[];
   public get computeEnvironments() {
-    return this._computeEnvironments;
+    return this.getListAttribute('compute_environments');
   }
   public set computeEnvironments(value: string[]) {
     this._computeEnvironments = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get computeEnvironmentsInput() {
+    return this._computeEnvironments
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // priority - computed: false, optional: false, required: true
   private _priority: number;
   public get priority() {
-    return this._priority;
+    return this.getNumberAttribute('priority');
   }
   public set priority(value: number) {
     this._priority = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority
   }
 
   // state - computed: false, optional: false, required: true
   private _state: string;
   public get state() {
-    return this._state;
+    return this.getStringAttribute('state');
   }
   public set state(value: string) {
     this._state = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -110,11 +128,11 @@ export class BatchJobQueue extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_environments: this._computeEnvironments,
-      name: this._name,
-      priority: this._priority,
-      state: this._state,
-      tags: this._tags,
+      compute_environments: cdktf.listMapper(cdktf.stringToTerraform)(this._computeEnvironments),
+      name: cdktf.stringToTerraform(this._name),
+      priority: cdktf.numberToTerraform(this._priority),
+      state: cdktf.stringToTerraform(this._state),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsEbsDefaultKmsKeyConfig extends TerraformMetaArguments {
+export interface DataAwsEbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsEbsDefaultKmsKey extends TerraformDataSource {
+export class DataAwsEbsDefaultKmsKey extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -36,15 +35,11 @@ export class DataAwsEbsDefaultKmsKey extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // key_arn - computed: true, optional: false, required: true
+  // key_arn - computed: true, optional: false, required: false
   public get keyArn() {
     return this.getStringAttribute('key_arn');
   }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCodeartifactAuthorizationTokenConfig extends TerraformMetaArguments {
+export interface DataAwsCodeartifactAuthorizationTokenConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
   readonly domainOwner?: string;
   readonly durationSeconds?: number;
@@ -15,7 +14,7 @@ export interface DataAwsCodeartifactAuthorizationTokenConfig extends TerraformMe
 
 // Resource
 
-export class DataAwsCodeartifactAuthorizationToken extends TerraformDataSource {
+export class DataAwsCodeartifactAuthorizationToken extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +40,7 @@ export class DataAwsCodeartifactAuthorizationToken extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // authorization_token - computed: true, optional: false, required: true
+  // authorization_token - computed: true, optional: false, required: false
   public get authorizationToken() {
     return this.getStringAttribute('authorization_token');
   }
@@ -49,42 +48,56 @@ export class DataAwsCodeartifactAuthorizationToken extends TerraformDataSource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
   }
 
   // domain_owner - computed: true, optional: true, required: false
   private _domainOwner?: string;
   public get domainOwner() {
-    return this._domainOwner ?? this.getStringAttribute('domain_owner');
+    return this.getStringAttribute('domain_owner');
   }
-  public set domainOwner(value: string | undefined) {
+  public set domainOwner(value: string) {
     this._domainOwner = value;
+  }
+  public resetDomainOwner() {
+    this._domainOwner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainOwnerInput() {
+    return this._domainOwner
   }
 
   // duration_seconds - computed: false, optional: true, required: false
   private _durationSeconds?: number;
   public get durationSeconds() {
-    return this._durationSeconds;
+    return this.getNumberAttribute('duration_seconds');
   }
-  public set durationSeconds(value: number | undefined) {
+  public set durationSeconds(value: number ) {
     this._durationSeconds = value;
   }
+  public resetDurationSeconds() {
+    this._durationSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationSecondsInput() {
+    return this._durationSeconds
+  }
 
-  // expiration - computed: true, optional: false, required: true
+  // expiration - computed: true, optional: false, required: false
   public get expiration() {
     return this.getStringAttribute('expiration');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========
@@ -93,9 +106,9 @@ export class DataAwsCodeartifactAuthorizationToken extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
-      domain_owner: this._domainOwner,
-      duration_seconds: this._durationSeconds,
+      domain: cdktf.stringToTerraform(this._domain),
+      domain_owner: cdktf.stringToTerraform(this._domainOwner),
+      duration_seconds: cdktf.numberToTerraform(this._durationSeconds),
     };
   }
 }

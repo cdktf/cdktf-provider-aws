@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RouteTableConfig extends TerraformMetaArguments {
+export interface RouteTableConfig extends cdktf.TerraformMetaArguments {
   readonly propagatingVgws?: string[];
   readonly route?: RouteTableRoute[];
   readonly tags?: { [key: string]: string };
@@ -27,9 +26,27 @@ export interface RouteTableRoute {
   readonly vpcPeeringConnectionId?: string;
 }
 
+function routeTableRouteToTerraform(struct?: RouteTableRoute): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
+    egress_only_gateway_id: cdktf.stringToTerraform(struct!.egressOnlyGatewayId),
+    gateway_id: cdktf.stringToTerraform(struct!.gatewayId),
+    instance_id: cdktf.stringToTerraform(struct!.instanceId),
+    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    local_gateway_id: cdktf.stringToTerraform(struct!.localGatewayId),
+    nat_gateway_id: cdktf.stringToTerraform(struct!.natGatewayId),
+    network_interface_id: cdktf.stringToTerraform(struct!.networkInterfaceId),
+    transit_gateway_id: cdktf.stringToTerraform(struct!.transitGatewayId),
+    vpc_endpoint_id: cdktf.stringToTerraform(struct!.vpcEndpointId),
+    vpc_peering_connection_id: cdktf.stringToTerraform(struct!.vpcPeeringConnectionId),
+  }
+}
+
+
 // Resource
 
-export class RouteTable extends TerraformResource {
+export class RouteTable extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,15 +74,11 @@ export class RouteTable extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -73,37 +86,62 @@ export class RouteTable extends TerraformResource {
   // propagating_vgws - computed: true, optional: true, required: false
   private _propagatingVgws?: string[];
   public get propagatingVgws() {
-    return this._propagatingVgws ?? this.getListAttribute('propagating_vgws');
+    return this.getListAttribute('propagating_vgws');
   }
-  public set propagatingVgws(value: string[] | undefined) {
+  public set propagatingVgws(value: string[]) {
     this._propagatingVgws = value;
+  }
+  public resetPropagatingVgws() {
+    this._propagatingVgws = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propagatingVgwsInput() {
+    return this._propagatingVgws
   }
 
   // route - computed: true, optional: true, required: false
   private _route?: RouteTableRoute[]
-  public get route(): RouteTableRoute[] | undefined {
-    return this._route; // Getting the computed value is not yet implemented
+  public get route(): RouteTableRoute[] {
+    return this.interpolationForAttribute('route') as any; // Getting the computed value is not yet implemented
   }
-  public set route(value: RouteTableRoute[] | undefined) {
+  public set route(value: RouteTableRoute[]) {
     this._route = value;
+  }
+  public resetRoute() {
+    this._route = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeInput() {
+    return this._route
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
-    return this._vpcId;
+    return this.getStringAttribute('vpc_id');
   }
   public set vpcId(value: string) {
     this._vpcId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId
   }
 
   // =========
@@ -112,10 +150,10 @@ export class RouteTable extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      propagating_vgws: this._propagatingVgws,
-      route: this._route,
-      tags: this._tags,
-      vpc_id: this._vpcId,
+      propagating_vgws: cdktf.listMapper(cdktf.stringToTerraform)(this._propagatingVgws),
+      route: cdktf.listMapper(routeTableRouteToTerraform)(this._route),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }
 }

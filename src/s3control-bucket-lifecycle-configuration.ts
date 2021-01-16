@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3ControlBucketLifecycleConfigurationConfig extends TerraformMetaArguments {
+export interface S3ControlBucketLifecycleConfigurationConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   /** rule block */
   readonly rule: S3ControlBucketLifecycleConfigurationRule[];
@@ -15,15 +14,42 @@ export interface S3ControlBucketLifecycleConfigurationConfig extends TerraformMe
 export interface S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload {
   readonly daysAfterInitiation: number;
 }
+
+function s3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToTerraform(struct?: S3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    days_after_initiation: cdktf.numberToTerraform(struct!.daysAfterInitiation),
+  }
+}
+
 export interface S3ControlBucketLifecycleConfigurationRuleExpiration {
   readonly date?: string;
   readonly days?: number;
   readonly expiredObjectDeleteMarker?: boolean;
 }
+
+function s3ControlBucketLifecycleConfigurationRuleExpirationToTerraform(struct?: S3ControlBucketLifecycleConfigurationRuleExpiration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    date: cdktf.stringToTerraform(struct!.date),
+    days: cdktf.numberToTerraform(struct!.days),
+    expired_object_delete_marker: cdktf.booleanToTerraform(struct!.expiredObjectDeleteMarker),
+  }
+}
+
 export interface S3ControlBucketLifecycleConfigurationRuleFilter {
   readonly prefix?: string;
   readonly tags?: { [key: string]: string };
 }
+
+function s3ControlBucketLifecycleConfigurationRuleFilterToTerraform(struct?: S3ControlBucketLifecycleConfigurationRuleFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+  }
+}
+
 export interface S3ControlBucketLifecycleConfigurationRule {
   readonly id: string;
   readonly status?: string;
@@ -35,9 +61,21 @@ export interface S3ControlBucketLifecycleConfigurationRule {
   readonly filter?: S3ControlBucketLifecycleConfigurationRuleFilter[];
 }
 
+function s3ControlBucketLifecycleConfigurationRuleToTerraform(struct?: S3ControlBucketLifecycleConfigurationRule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    status: cdktf.stringToTerraform(struct!.status),
+    abort_incomplete_multipart_upload: cdktf.listMapper(s3ControlBucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToTerraform)(struct!.abortIncompleteMultipartUpload),
+    expiration: cdktf.listMapper(s3ControlBucketLifecycleConfigurationRuleExpirationToTerraform)(struct!.expiration),
+    filter: cdktf.listMapper(s3ControlBucketLifecycleConfigurationRuleFilterToTerraform)(struct!.filter),
+  }
+}
+
+
 // Resource
 
-export class S3ControlBucketLifecycleConfiguration extends TerraformResource {
+export class S3ControlBucketLifecycleConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -65,28 +103,32 @@ export class S3ControlBucketLifecycleConfiguration extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // rule - computed: false, optional: false, required: true
   private _rule: S3ControlBucketLifecycleConfigurationRule[];
   public get rule() {
-    return this._rule;
+    return this.interpolationForAttribute('rule') as any;
   }
   public set rule(value: S3ControlBucketLifecycleConfigurationRule[]) {
     this._rule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule
   }
 
   // =========
@@ -95,8 +137,8 @@ export class S3ControlBucketLifecycleConfiguration extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      rule: this._rule,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      rule: cdktf.listMapper(s3ControlBucketLifecycleConfigurationRuleToTerraform)(this._rule),
     };
   }
 }

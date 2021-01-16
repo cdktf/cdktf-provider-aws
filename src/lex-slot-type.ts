@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LexSlotTypeConfig extends TerraformMetaArguments {
+export interface LexSlotTypeConfig extends cdktf.TerraformMetaArguments {
   readonly createVersion?: boolean;
   readonly description?: string;
   readonly name: string;
@@ -21,15 +20,34 @@ export interface LexSlotTypeEnumerationValue {
   readonly synonyms?: string[];
   readonly value: string;
 }
+
+function lexSlotTypeEnumerationValueToTerraform(struct?: LexSlotTypeEnumerationValue): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    synonyms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.synonyms),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface LexSlotTypeTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function lexSlotTypeTimeoutsToTerraform(struct?: LexSlotTypeTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class LexSlotType extends TerraformResource {
+export class LexSlotType extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -58,7 +76,7 @@ export class LexSlotType extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // checksum - computed: true, optional: false, required: true
+  // checksum - computed: true, optional: false, required: false
   public get checksum() {
     return this.getStringAttribute('checksum');
   }
@@ -66,13 +84,20 @@ export class LexSlotType extends TerraformResource {
   // create_version - computed: false, optional: true, required: false
   private _createVersion?: boolean;
   public get createVersion() {
-    return this._createVersion;
+    return this.getBooleanAttribute('create_version');
   }
-  public set createVersion(value: boolean | undefined) {
+  public set createVersion(value: boolean ) {
     this._createVersion = value;
   }
+  public resetCreateVersion() {
+    this._createVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createVersionInput() {
+    return this._createVersion
+  }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
@@ -80,22 +105,25 @@ export class LexSlotType extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_updated_date - computed: true, optional: false, required: true
+  // last_updated_date - computed: true, optional: false, required: false
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -103,22 +131,33 @@ export class LexSlotType extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // value_selection_strategy - computed: false, optional: true, required: false
   private _valueSelectionStrategy?: string;
   public get valueSelectionStrategy() {
-    return this._valueSelectionStrategy;
+    return this.getStringAttribute('value_selection_strategy');
   }
-  public set valueSelectionStrategy(value: string | undefined) {
+  public set valueSelectionStrategy(value: string ) {
     this._valueSelectionStrategy = value;
   }
+  public resetValueSelectionStrategy() {
+    this._valueSelectionStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueSelectionStrategyInput() {
+    return this._valueSelectionStrategy
+  }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
   }
@@ -126,19 +165,30 @@ export class LexSlotType extends TerraformResource {
   // enumeration_value - computed: false, optional: false, required: true
   private _enumerationValue: LexSlotTypeEnumerationValue[];
   public get enumerationValue() {
-    return this._enumerationValue;
+    return this.interpolationForAttribute('enumeration_value') as any;
   }
   public set enumerationValue(value: LexSlotTypeEnumerationValue[]) {
     this._enumerationValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enumerationValueInput() {
+    return this._enumerationValue
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: LexSlotTypeTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: LexSlotTypeTimeouts | undefined) {
+  public set timeouts(value: LexSlotTypeTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -147,12 +197,12 @@ export class LexSlotType extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_version: this._createVersion,
-      description: this._description,
-      name: this._name,
-      value_selection_strategy: this._valueSelectionStrategy,
-      enumeration_value: this._enumerationValue,
-      timeouts: this._timeouts,
+      create_version: cdktf.booleanToTerraform(this._createVersion),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      value_selection_strategy: cdktf.stringToTerraform(this._valueSelectionStrategy),
+      enumeration_value: cdktf.listMapper(lexSlotTypeEnumerationValueToTerraform)(this._enumerationValue),
+      timeouts: lexSlotTypeTimeoutsToTerraform(this._timeouts),
     };
   }
 }

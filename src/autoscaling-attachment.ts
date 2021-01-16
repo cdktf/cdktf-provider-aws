@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AutoscalingAttachmentConfig extends TerraformMetaArguments {
+export interface AutoscalingAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly albTargetGroupArn?: string;
   readonly autoscalingGroupName: string;
   readonly elb?: string;
@@ -15,7 +14,7 @@ export interface AutoscalingAttachmentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AutoscalingAttachment extends TerraformResource {
+export class AutoscalingAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,37 +43,51 @@ export class AutoscalingAttachment extends TerraformResource {
   // alb_target_group_arn - computed: false, optional: true, required: false
   private _albTargetGroupArn?: string;
   public get albTargetGroupArn() {
-    return this._albTargetGroupArn;
+    return this.getStringAttribute('alb_target_group_arn');
   }
-  public set albTargetGroupArn(value: string | undefined) {
+  public set albTargetGroupArn(value: string ) {
     this._albTargetGroupArn = value;
+  }
+  public resetAlbTargetGroupArn() {
+    this._albTargetGroupArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get albTargetGroupArnInput() {
+    return this._albTargetGroupArn
   }
 
   // autoscaling_group_name - computed: false, optional: false, required: true
   private _autoscalingGroupName: string;
   public get autoscalingGroupName() {
-    return this._autoscalingGroupName;
+    return this.getStringAttribute('autoscaling_group_name');
   }
   public set autoscalingGroupName(value: string) {
     this._autoscalingGroupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingGroupNameInput() {
+    return this._autoscalingGroupName
   }
 
   // elb - computed: false, optional: true, required: false
   private _elb?: string;
   public get elb() {
-    return this._elb;
+    return this.getStringAttribute('elb');
   }
-  public set elb(value: string | undefined) {
+  public set elb(value: string ) {
     this._elb = value;
+  }
+  public resetElb() {
+    this._elb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get elbInput() {
+    return this._elb
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========
@@ -83,9 +96,9 @@ export class AutoscalingAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alb_target_group_arn: this._albTargetGroupArn,
-      autoscaling_group_name: this._autoscalingGroupName,
-      elb: this._elb,
+      alb_target_group_arn: cdktf.stringToTerraform(this._albTargetGroupArn),
+      autoscaling_group_name: cdktf.stringToTerraform(this._autoscalingGroupName),
+      elb: cdktf.stringToTerraform(this._elb),
     };
   }
 }

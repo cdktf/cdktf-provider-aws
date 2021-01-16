@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalRuleConfig extends TerraformMetaArguments {
+export interface WafregionalRuleConfig extends cdktf.TerraformMetaArguments {
   readonly metricName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -20,9 +19,19 @@ export interface WafregionalRulePredicate {
   readonly type: string;
 }
 
+function wafregionalRulePredicateToTerraform(struct?: WafregionalRulePredicate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data_id: cdktf.stringToTerraform(struct!.dataId),
+    negated: cdktf.booleanToTerraform(struct!.negated),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
 // Resource
 
-export class WafregionalRule extends TerraformResource {
+export class WafregionalRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,54 +58,72 @@ export class WafregionalRule extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // metric_name - computed: false, optional: false, required: true
   private _metricName: string;
   public get metricName() {
-    return this._metricName;
+    return this.getStringAttribute('metric_name');
   }
   public set metricName(value: string) {
     this._metricName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricNameInput() {
+    return this._metricName
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // predicate - computed: false, optional: true, required: false
   private _predicate?: WafregionalRulePredicate[];
   public get predicate() {
-    return this._predicate;
+    return this.interpolationForAttribute('predicate') as any;
   }
-  public set predicate(value: WafregionalRulePredicate[] | undefined) {
+  public set predicate(value: WafregionalRulePredicate[] ) {
     this._predicate = value;
+  }
+  public resetPredicate() {
+    this._predicate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predicateInput() {
+    return this._predicate
   }
 
   // =========
@@ -105,10 +132,10 @@ export class WafregionalRule extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      metric_name: this._metricName,
-      name: this._name,
-      tags: this._tags,
-      predicate: this._predicate,
+      metric_name: cdktf.stringToTerraform(this._metricName),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      predicate: cdktf.listMapper(wafregionalRulePredicateToTerraform)(this._predicate),
     };
   }
 }

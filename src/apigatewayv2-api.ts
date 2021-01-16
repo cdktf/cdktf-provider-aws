@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Apigatewayv2ApiConfig extends TerraformMetaArguments {
+export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   readonly apiKeySelectionExpression?: string;
   readonly body?: string;
   readonly credentialsArn?: string;
@@ -32,9 +31,22 @@ export interface Apigatewayv2ApiCorsConfiguration {
   readonly maxAge?: number;
 }
 
+function apigatewayv2ApiCorsConfigurationToTerraform(struct?: Apigatewayv2ApiCorsConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
+    allow_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowHeaders),
+    allow_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowMethods),
+    allow_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowOrigins),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    max_age: cdktf.numberToTerraform(struct!.maxAge),
+  }
+}
+
+
 // Resource
 
-export class Apigatewayv2Api extends TerraformResource {
+export class Apigatewayv2Api extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -70,7 +82,7 @@ export class Apigatewayv2Api extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // api_endpoint - computed: true, optional: false, required: true
+  // api_endpoint - computed: true, optional: false, required: false
   public get apiEndpoint() {
     return this.getStringAttribute('api_endpoint');
   }
@@ -78,13 +90,20 @@ export class Apigatewayv2Api extends TerraformResource {
   // api_key_selection_expression - computed: false, optional: true, required: false
   private _apiKeySelectionExpression?: string;
   public get apiKeySelectionExpression() {
-    return this._apiKeySelectionExpression;
+    return this.getStringAttribute('api_key_selection_expression');
   }
-  public set apiKeySelectionExpression(value: string | undefined) {
+  public set apiKeySelectionExpression(value: string ) {
     this._apiKeySelectionExpression = value;
   }
+  public resetApiKeySelectionExpression() {
+    this._apiKeySelectionExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeySelectionExpressionInput() {
+    return this._apiKeySelectionExpression
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -92,123 +111,197 @@ export class Apigatewayv2Api extends TerraformResource {
   // body - computed: false, optional: true, required: false
   private _body?: string;
   public get body() {
-    return this._body;
+    return this.getStringAttribute('body');
   }
-  public set body(value: string | undefined) {
+  public set body(value: string ) {
     this._body = value;
+  }
+  public resetBody() {
+    this._body = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body
   }
 
   // credentials_arn - computed: false, optional: true, required: false
   private _credentialsArn?: string;
   public get credentialsArn() {
-    return this._credentialsArn;
+    return this.getStringAttribute('credentials_arn');
   }
-  public set credentialsArn(value: string | undefined) {
+  public set credentialsArn(value: string ) {
     this._credentialsArn = value;
+  }
+  public resetCredentialsArn() {
+    this._credentialsArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get credentialsArnInput() {
+    return this._credentialsArn
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // disable_execute_api_endpoint - computed: false, optional: true, required: false
   private _disableExecuteApiEndpoint?: boolean;
   public get disableExecuteApiEndpoint() {
-    return this._disableExecuteApiEndpoint;
+    return this.getBooleanAttribute('disable_execute_api_endpoint');
   }
-  public set disableExecuteApiEndpoint(value: boolean | undefined) {
+  public set disableExecuteApiEndpoint(value: boolean ) {
     this._disableExecuteApiEndpoint = value;
   }
+  public resetDisableExecuteApiEndpoint() {
+    this._disableExecuteApiEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableExecuteApiEndpointInput() {
+    return this._disableExecuteApiEndpoint
+  }
 
-  // execution_arn - computed: true, optional: false, required: true
+  // execution_arn - computed: true, optional: false, required: false
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // protocol_type - computed: false, optional: false, required: true
   private _protocolType: string;
   public get protocolType() {
-    return this._protocolType;
+    return this.getStringAttribute('protocol_type');
   }
   public set protocolType(value: string) {
     this._protocolType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolTypeInput() {
+    return this._protocolType
   }
 
   // route_key - computed: false, optional: true, required: false
   private _routeKey?: string;
   public get routeKey() {
-    return this._routeKey;
+    return this.getStringAttribute('route_key');
   }
-  public set routeKey(value: string | undefined) {
+  public set routeKey(value: string ) {
     this._routeKey = value;
+  }
+  public resetRouteKey() {
+    this._routeKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeKeyInput() {
+    return this._routeKey
   }
 
   // route_selection_expression - computed: false, optional: true, required: false
   private _routeSelectionExpression?: string;
   public get routeSelectionExpression() {
-    return this._routeSelectionExpression;
+    return this.getStringAttribute('route_selection_expression');
   }
-  public set routeSelectionExpression(value: string | undefined) {
+  public set routeSelectionExpression(value: string ) {
     this._routeSelectionExpression = value;
+  }
+  public resetRouteSelectionExpression() {
+    this._routeSelectionExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeSelectionExpressionInput() {
+    return this._routeSelectionExpression
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // target - computed: false, optional: true, required: false
   private _target?: string;
   public get target() {
-    return this._target;
+    return this.getStringAttribute('target');
   }
-  public set target(value: string | undefined) {
+  public set target(value: string ) {
     this._target = value;
+  }
+  public resetTarget() {
+    this._target = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target
   }
 
   // version - computed: false, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this._version;
+    return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string ) {
     this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // cors_configuration - computed: false, optional: true, required: false
   private _corsConfiguration?: Apigatewayv2ApiCorsConfiguration[];
   public get corsConfiguration() {
-    return this._corsConfiguration;
+    return this.interpolationForAttribute('cors_configuration') as any;
   }
-  public set corsConfiguration(value: Apigatewayv2ApiCorsConfiguration[] | undefined) {
+  public set corsConfiguration(value: Apigatewayv2ApiCorsConfiguration[] ) {
     this._corsConfiguration = value;
+  }
+  public resetCorsConfiguration() {
+    this._corsConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get corsConfigurationInput() {
+    return this._corsConfiguration
   }
 
   // =========
@@ -217,19 +310,19 @@ export class Apigatewayv2Api extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key_selection_expression: this._apiKeySelectionExpression,
-      body: this._body,
-      credentials_arn: this._credentialsArn,
-      description: this._description,
-      disable_execute_api_endpoint: this._disableExecuteApiEndpoint,
-      name: this._name,
-      protocol_type: this._protocolType,
-      route_key: this._routeKey,
-      route_selection_expression: this._routeSelectionExpression,
-      tags: this._tags,
-      target: this._target,
-      version: this._version,
-      cors_configuration: this._corsConfiguration,
+      api_key_selection_expression: cdktf.stringToTerraform(this._apiKeySelectionExpression),
+      body: cdktf.stringToTerraform(this._body),
+      credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
+      description: cdktf.stringToTerraform(this._description),
+      disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),
+      name: cdktf.stringToTerraform(this._name),
+      protocol_type: cdktf.stringToTerraform(this._protocolType),
+      route_key: cdktf.stringToTerraform(this._routeKey),
+      route_selection_expression: cdktf.stringToTerraform(this._routeSelectionExpression),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      target: cdktf.stringToTerraform(this._target),
+      version: cdktf.stringToTerraform(this._version),
+      cors_configuration: cdktf.listMapper(apigatewayv2ApiCorsConfigurationToTerraform)(this._corsConfiguration),
     };
   }
 }

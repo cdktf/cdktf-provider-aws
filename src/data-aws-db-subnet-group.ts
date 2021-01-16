@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDbSubnetGroupConfig extends TerraformMetaArguments {
+export interface DataAwsDbSubnetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsDbSubnetGroup extends TerraformDataSource {
+export class DataAwsDbSubnetGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,45 +36,45 @@ export class DataAwsDbSubnetGroup extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // subnet_ids - computed: true, optional: false, required: true
+  // subnet_ids - computed: true, optional: false, required: false
   public get subnetIds() {
     return this.getListAttribute('subnet_ids');
   }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -86,7 +85,7 @@ export class DataAwsDbSubnetGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

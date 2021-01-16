@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxConnectionAssociationConfig extends TerraformMetaArguments {
+export interface DxConnectionAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly connectionId: string;
   readonly lagId: string;
 }
 
 // Resource
 
-export class DxConnectionAssociation extends TerraformResource {
+export class DxConnectionAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,28 +41,32 @@ export class DxConnectionAssociation extends TerraformResource {
   // connection_id - computed: false, optional: false, required: true
   private _connectionId: string;
   public get connectionId() {
-    return this._connectionId;
+    return this.getStringAttribute('connection_id');
   }
   public set connectionId(value: string) {
     this._connectionId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get connectionIdInput() {
+    return this._connectionId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // lag_id - computed: false, optional: false, required: true
   private _lagId: string;
   public get lagId() {
-    return this._lagId;
+    return this.getStringAttribute('lag_id');
   }
   public set lagId(value: string) {
     this._lagId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lagIdInput() {
+    return this._lagId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class DxConnectionAssociation extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_id: this._connectionId,
-      lag_id: this._lagId,
+      connection_id: cdktf.stringToTerraform(this._connectionId),
+      lag_id: cdktf.stringToTerraform(this._lagId),
     };
   }
 }

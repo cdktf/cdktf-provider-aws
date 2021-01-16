@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EmrManagedScalingPolicyConfig extends TerraformMetaArguments {
+export interface EmrManagedScalingPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly clusterId: string;
   /** compute_limits block */
   readonly computeLimits: EmrManagedScalingPolicyComputeLimits[];
@@ -20,9 +19,21 @@ export interface EmrManagedScalingPolicyComputeLimits {
   readonly unitType: string;
 }
 
+function emrManagedScalingPolicyComputeLimitsToTerraform(struct?: EmrManagedScalingPolicyComputeLimits): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    maximum_capacity_units: cdktf.numberToTerraform(struct!.maximumCapacityUnits),
+    maximum_core_capacity_units: cdktf.numberToTerraform(struct!.maximumCoreCapacityUnits),
+    maximum_ondemand_capacity_units: cdktf.numberToTerraform(struct!.maximumOndemandCapacityUnits),
+    minimum_capacity_units: cdktf.numberToTerraform(struct!.minimumCapacityUnits),
+    unit_type: cdktf.stringToTerraform(struct!.unitType),
+  }
+}
+
+
 // Resource
 
-export class EmrManagedScalingPolicy extends TerraformResource {
+export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,28 +61,32 @@ export class EmrManagedScalingPolicy extends TerraformResource {
   // cluster_id - computed: false, optional: false, required: true
   private _clusterId: string;
   public get clusterId() {
-    return this._clusterId;
+    return this.getStringAttribute('cluster_id');
   }
   public set clusterId(value: string) {
     this._clusterId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIdInput() {
+    return this._clusterId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // compute_limits - computed: false, optional: false, required: true
   private _computeLimits: EmrManagedScalingPolicyComputeLimits[];
   public get computeLimits() {
-    return this._computeLimits;
+    return this.interpolationForAttribute('compute_limits') as any;
   }
   public set computeLimits(value: EmrManagedScalingPolicyComputeLimits[]) {
     this._computeLimits = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeLimitsInput() {
+    return this._computeLimits
   }
 
   // =========
@@ -80,8 +95,8 @@ export class EmrManagedScalingPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: this._clusterId,
-      compute_limits: this._computeLimits,
+      cluster_id: cdktf.stringToTerraform(this._clusterId),
+      compute_limits: cdktf.listMapper(emrManagedScalingPolicyComputeLimitsToTerraform)(this._computeLimits),
     };
   }
 }

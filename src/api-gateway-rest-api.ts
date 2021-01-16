@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayRestApiConfig extends TerraformMetaArguments {
+export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   readonly apiKeySource?: string;
   readonly binaryMediaTypes?: string[];
   readonly body?: string;
@@ -26,9 +25,18 @@ export interface ApiGatewayRestApiEndpointConfiguration {
   readonly vpcEndpointIds?: string[];
 }
 
+function apiGatewayRestApiEndpointConfigurationToTerraform(struct?: ApiGatewayRestApiEndpointConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.types),
+    vpc_endpoint_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.vpcEndpointIds),
+  }
+}
+
+
 // Resource
 
-export class ApiGatewayRestApi extends TerraformResource {
+export class ApiGatewayRestApi extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -65,13 +73,20 @@ export class ApiGatewayRestApi extends TerraformResource {
   // api_key_source - computed: false, optional: true, required: false
   private _apiKeySource?: string;
   public get apiKeySource() {
-    return this._apiKeySource;
+    return this.getStringAttribute('api_key_source');
   }
-  public set apiKeySource(value: string | undefined) {
+  public set apiKeySource(value: string ) {
     this._apiKeySource = value;
   }
+  public resetApiKeySource() {
+    this._apiKeySource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeySourceInput() {
+    return this._apiKeySource
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -79,22 +94,36 @@ export class ApiGatewayRestApi extends TerraformResource {
   // binary_media_types - computed: false, optional: true, required: false
   private _binaryMediaTypes?: string[];
   public get binaryMediaTypes() {
-    return this._binaryMediaTypes;
+    return this.getListAttribute('binary_media_types');
   }
-  public set binaryMediaTypes(value: string[] | undefined) {
+  public set binaryMediaTypes(value: string[] ) {
     this._binaryMediaTypes = value;
+  }
+  public resetBinaryMediaTypes() {
+    this._binaryMediaTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get binaryMediaTypesInput() {
+    return this._binaryMediaTypes
   }
 
   // body - computed: false, optional: true, required: false
   private _body?: string;
   public get body() {
-    return this._body;
+    return this.getStringAttribute('body');
   }
-  public set body(value: string | undefined) {
+  public set body(value: string ) {
     this._body = value;
   }
+  public resetBody() {
+    this._body = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body
+  }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
@@ -102,72 +131,107 @@ export class ApiGatewayRestApi extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // disable_execute_api_endpoint - computed: false, optional: true, required: false
   private _disableExecuteApiEndpoint?: boolean;
   public get disableExecuteApiEndpoint() {
-    return this._disableExecuteApiEndpoint;
+    return this.getBooleanAttribute('disable_execute_api_endpoint');
   }
-  public set disableExecuteApiEndpoint(value: boolean | undefined) {
+  public set disableExecuteApiEndpoint(value: boolean ) {
     this._disableExecuteApiEndpoint = value;
   }
+  public resetDisableExecuteApiEndpoint() {
+    this._disableExecuteApiEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableExecuteApiEndpointInput() {
+    return this._disableExecuteApiEndpoint
+  }
 
-  // execution_arn - computed: true, optional: false, required: true
+  // execution_arn - computed: true, optional: false, required: false
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // minimum_compression_size - computed: false, optional: true, required: false
   private _minimumCompressionSize?: number;
   public get minimumCompressionSize() {
-    return this._minimumCompressionSize;
+    return this.getNumberAttribute('minimum_compression_size');
   }
-  public set minimumCompressionSize(value: number | undefined) {
+  public set minimumCompressionSize(value: number ) {
     this._minimumCompressionSize = value;
+  }
+  public resetMinimumCompressionSize() {
+    this._minimumCompressionSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumCompressionSizeInput() {
+    return this._minimumCompressionSize
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // parameters - computed: false, optional: true, required: false
   private _parameters?: { [key: string]: string };
   public get parameters() {
-    return this._parameters;
+    return this.interpolationForAttribute('parameters') as any;
   }
-  public set parameters(value: { [key: string]: string } | undefined) {
+  public set parameters(value: { [key: string]: string } ) {
     this._parameters = value;
+  }
+  public resetParameters() {
+    this._parameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters
   }
 
   // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
-    return this._policy ?? this.getStringAttribute('policy');
+    return this.getStringAttribute('policy');
   }
-  public set policy(value: string | undefined) {
+  public set policy(value: string) {
     this._policy = value;
   }
+  public resetPolicy() {
+    this._policy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
+  }
 
-  // root_resource_id - computed: true, optional: false, required: true
+  // root_resource_id - computed: true, optional: false, required: false
   public get rootResourceId() {
     return this.getStringAttribute('root_resource_id');
   }
@@ -175,19 +239,33 @@ export class ApiGatewayRestApi extends TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // endpoint_configuration - computed: false, optional: true, required: false
   private _endpointConfiguration?: ApiGatewayRestApiEndpointConfiguration[];
   public get endpointConfiguration() {
-    return this._endpointConfiguration;
+    return this.interpolationForAttribute('endpoint_configuration') as any;
   }
-  public set endpointConfiguration(value: ApiGatewayRestApiEndpointConfiguration[] | undefined) {
+  public set endpointConfiguration(value: ApiGatewayRestApiEndpointConfiguration[] ) {
     this._endpointConfiguration = value;
+  }
+  public resetEndpointConfiguration() {
+    this._endpointConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointConfigurationInput() {
+    return this._endpointConfiguration
   }
 
   // =========
@@ -196,17 +274,17 @@ export class ApiGatewayRestApi extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key_source: this._apiKeySource,
-      binary_media_types: this._binaryMediaTypes,
-      body: this._body,
-      description: this._description,
-      disable_execute_api_endpoint: this._disableExecuteApiEndpoint,
-      minimum_compression_size: this._minimumCompressionSize,
-      name: this._name,
-      parameters: this._parameters,
-      policy: this._policy,
-      tags: this._tags,
-      endpoint_configuration: this._endpointConfiguration,
+      api_key_source: cdktf.stringToTerraform(this._apiKeySource),
+      binary_media_types: cdktf.listMapper(cdktf.stringToTerraform)(this._binaryMediaTypes),
+      body: cdktf.stringToTerraform(this._body),
+      description: cdktf.stringToTerraform(this._description),
+      disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),
+      minimum_compression_size: cdktf.numberToTerraform(this._minimumCompressionSize),
+      name: cdktf.stringToTerraform(this._name),
+      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      policy: cdktf.stringToTerraform(this._policy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      endpoint_configuration: cdktf.listMapper(apiGatewayRestApiEndpointConfigurationToTerraform)(this._endpointConfiguration),
     };
   }
 }

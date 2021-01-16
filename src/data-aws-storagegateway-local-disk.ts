@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsStoragegatewayLocalDiskConfig extends TerraformMetaArguments {
+export interface DataAwsStoragegatewayLocalDiskConfig extends cdktf.TerraformMetaArguments {
   readonly diskNode?: string;
   readonly diskPath?: string;
   readonly gatewayArn: string;
@@ -15,7 +14,7 @@ export interface DataAwsStoragegatewayLocalDiskConfig extends TerraformMetaArgum
 
 // Resource
 
-export class DataAwsStoragegatewayLocalDisk extends TerraformDataSource {
+export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +40,7 @@ export class DataAwsStoragegatewayLocalDisk extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // disk_id - computed: true, optional: false, required: true
+  // disk_id - computed: true, optional: false, required: false
   public get diskId() {
     return this.getStringAttribute('disk_id');
   }
@@ -49,37 +48,51 @@ export class DataAwsStoragegatewayLocalDisk extends TerraformDataSource {
   // disk_node - computed: false, optional: true, required: false
   private _diskNode?: string;
   public get diskNode() {
-    return this._diskNode;
+    return this.getStringAttribute('disk_node');
   }
-  public set diskNode(value: string | undefined) {
+  public set diskNode(value: string ) {
     this._diskNode = value;
+  }
+  public resetDiskNode() {
+    this._diskNode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskNodeInput() {
+    return this._diskNode
   }
 
   // disk_path - computed: false, optional: true, required: false
   private _diskPath?: string;
   public get diskPath() {
-    return this._diskPath;
+    return this.getStringAttribute('disk_path');
   }
-  public set diskPath(value: string | undefined) {
+  public set diskPath(value: string ) {
     this._diskPath = value;
+  }
+  public resetDiskPath() {
+    this._diskPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskPathInput() {
+    return this._diskPath
   }
 
   // gateway_arn - computed: false, optional: false, required: true
   private _gatewayArn: string;
   public get gatewayArn() {
-    return this._gatewayArn;
+    return this.getStringAttribute('gateway_arn');
   }
   public set gatewayArn(value: string) {
     this._gatewayArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayArnInput() {
+    return this._gatewayArn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========
@@ -88,9 +101,9 @@ export class DataAwsStoragegatewayLocalDisk extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disk_node: this._diskNode,
-      disk_path: this._diskPath,
-      gateway_arn: this._gatewayArn,
+      disk_node: cdktf.stringToTerraform(this._diskNode),
+      disk_path: cdktf.stringToTerraform(this._diskPath),
+      gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
     };
   }
 }

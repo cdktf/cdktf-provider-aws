@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamGroupConfig extends TerraformMetaArguments {
+export interface IamGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly path?: string;
 }
 
 // Resource
 
-export class IamGroup extends TerraformResource {
+export class IamGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,39 +38,46 @@ export class IamGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // path - computed: false, optional: true, required: false
   private _path?: string;
   public get path() {
-    return this._path;
+    return this.getStringAttribute('path');
   }
-  public set path(value: string | undefined) {
+  public set path(value: string ) {
     this._path = value;
   }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path
+  }
 
-  // unique_id - computed: true, optional: false, required: true
+  // unique_id - computed: true, optional: false, required: false
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
   }
@@ -82,8 +88,8 @@ export class IamGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      path: this._path,
+      name: cdktf.stringToTerraform(this._name),
+      path: cdktf.stringToTerraform(this._path),
     };
   }
 }

@@ -2,76 +2,74 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLbTargetGroupConfig extends TerraformMetaArguments {
+export interface DataAwsLbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsLbTargetGroupHealthCheck extends ComplexComputedList {
+export class DataAwsLbTargetGroupHealthCheck extends cdktf.ComplexComputedList {
 
-  // enabled - computed: true, optional: false, required: true
+  // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // healthy_threshold - computed: true, optional: false, required: true
+  // healthy_threshold - computed: true, optional: false, required: false
   public get healthyThreshold() {
     return this.getNumberAttribute('healthy_threshold');
   }
 
-  // interval - computed: true, optional: false, required: true
+  // interval - computed: true, optional: false, required: false
   public get interval() {
     return this.getNumberAttribute('interval');
   }
 
-  // matcher - computed: true, optional: false, required: true
+  // matcher - computed: true, optional: false, required: false
   public get matcher() {
     return this.getStringAttribute('matcher');
   }
 
-  // path - computed: true, optional: false, required: true
+  // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
   }
 
-  // port - computed: true, optional: false, required: true
+  // port - computed: true, optional: false, required: false
   public get port() {
     return this.getStringAttribute('port');
   }
 
-  // protocol - computed: true, optional: false, required: true
+  // protocol - computed: true, optional: false, required: false
   public get protocol() {
     return this.getStringAttribute('protocol');
   }
 
-  // timeout - computed: true, optional: false, required: true
+  // timeout - computed: true, optional: false, required: false
   public get timeout() {
     return this.getNumberAttribute('timeout');
   }
 
-  // unhealthy_threshold - computed: true, optional: false, required: true
+  // unhealthy_threshold - computed: true, optional: false, required: false
   public get unhealthyThreshold() {
     return this.getNumberAttribute('unhealthy_threshold');
   }
 }
-export class DataAwsLbTargetGroupStickiness extends ComplexComputedList {
+export class DataAwsLbTargetGroupStickiness extends cdktf.ComplexComputedList {
 
-  // cookie_duration - computed: true, optional: false, required: true
+  // cookie_duration - computed: true, optional: false, required: false
   public get cookieDuration() {
     return this.getNumberAttribute('cookie_duration');
   }
 
-  // enabled - computed: true, optional: false, required: true
+  // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -79,7 +77,7 @@ export class DataAwsLbTargetGroupStickiness extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsLbTargetGroup extends TerraformDataSource {
+export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -105,44 +103,36 @@ export class DataAwsLbTargetGroup extends TerraformDataSource {
   // ==========
 
   // arn - computed: true, optional: true, required: false
-  private _arn?: string;
   public get arn() {
-    return this._arn ?? this.getStringAttribute('arn');
-  }
-  public set arn(value: string | undefined) {
-    this._arn = value;
+    return this.getStringAttribute('arn');
   }
 
-  // arn_suffix - computed: true, optional: false, required: true
+  // arn_suffix - computed: true, optional: false, required: false
   public get arnSuffix() {
     return this.getStringAttribute('arn_suffix');
   }
 
-  // deregistration_delay - computed: true, optional: false, required: true
+  // deregistration_delay - computed: true, optional: false, required: false
   public get deregistrationDelay() {
     return this.getNumberAttribute('deregistration_delay');
   }
 
-  // health_check - computed: true, optional: false, required: true
+  // health_check - computed: true, optional: false, required: false
   public healthCheck(index: string) {
     return new DataAwsLbTargetGroupHealthCheck(this, 'health_check', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // lambda_multi_value_headers_enabled - computed: true, optional: false, required: true
+  // lambda_multi_value_headers_enabled - computed: true, optional: false, required: false
   public get lambdaMultiValueHeadersEnabled() {
     return this.getBooleanAttribute('lambda_multi_value_headers_enabled');
   }
 
-  // load_balancing_algorithm_type - computed: true, optional: false, required: true
+  // load_balancing_algorithm_type - computed: true, optional: false, required: false
   public get loadBalancingAlgorithmType() {
     return this.getStringAttribute('load_balancing_algorithm_type');
   }
@@ -150,52 +140,66 @@ export class DataAwsLbTargetGroup extends TerraformDataSource {
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // port - computed: true, optional: false, required: true
+  // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
   }
 
-  // protocol - computed: true, optional: false, required: true
+  // protocol - computed: true, optional: false, required: false
   public get protocol() {
     return this.getStringAttribute('protocol');
   }
 
-  // proxy_protocol_v2 - computed: true, optional: false, required: true
+  // proxy_protocol_v2 - computed: true, optional: false, required: false
   public get proxyProtocolV2() {
     return this.getBooleanAttribute('proxy_protocol_v2');
   }
 
-  // slow_start - computed: true, optional: false, required: true
+  // slow_start - computed: true, optional: false, required: false
   public get slowStart() {
     return this.getNumberAttribute('slow_start');
   }
 
-  // stickiness - computed: true, optional: false, required: true
+  // stickiness - computed: true, optional: false, required: false
   public stickiness(index: string) {
     return new DataAwsLbTargetGroupStickiness(this, 'stickiness', index);
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // target_type - computed: true, optional: false, required: true
+  // target_type - computed: true, optional: false, required: false
   public get targetType() {
     return this.getStringAttribute('target_type');
   }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -206,8 +210,8 @@ export class DataAwsLbTargetGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

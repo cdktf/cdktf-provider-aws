@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsApiGatewayResourceConfig extends TerraformMetaArguments {
+export interface DataAwsApiGatewayResourceConfig extends cdktf.TerraformMetaArguments {
   readonly path: string;
   readonly restApiId: string;
 }
 
 // Resource
 
-export class DataAwsApiGatewayResource extends TerraformDataSource {
+export class DataAwsApiGatewayResource extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -40,15 +39,11 @@ export class DataAwsApiGatewayResource extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // parent_id - computed: true, optional: false, required: true
+  // parent_id - computed: true, optional: false, required: false
   public get parentId() {
     return this.getStringAttribute('parent_id');
   }
@@ -56,13 +51,17 @@ export class DataAwsApiGatewayResource extends TerraformDataSource {
   // path - computed: false, optional: false, required: true
   private _path: string;
   public get path() {
-    return this._path;
+    return this.getStringAttribute('path');
   }
   public set path(value: string) {
     this._path = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path
+  }
 
-  // path_part - computed: true, optional: false, required: true
+  // path_part - computed: true, optional: false, required: false
   public get pathPart() {
     return this.getStringAttribute('path_part');
   }
@@ -70,10 +69,14 @@ export class DataAwsApiGatewayResource extends TerraformDataSource {
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this._restApiId;
+    return this.getStringAttribute('rest_api_id');
   }
   public set restApiId(value: string) {
     this._restApiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restApiIdInput() {
+    return this._restApiId
   }
 
   // =========
@@ -82,8 +85,8 @@ export class DataAwsApiGatewayResource extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      path: this._path,
-      rest_api_id: this._restApiId,
+      path: cdktf.stringToTerraform(this._path),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
     };
   }
 }

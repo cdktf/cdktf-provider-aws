@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AthenaDatabaseConfig extends TerraformMetaArguments {
+export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   readonly forceDestroy?: boolean;
   readonly name: string;
@@ -19,9 +18,18 @@ export interface AthenaDatabaseEncryptionConfiguration {
   readonly kmsKey?: string;
 }
 
+function athenaDatabaseEncryptionConfigurationToTerraform(struct?: AthenaDatabaseEncryptionConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    encryption_option: cdktf.stringToTerraform(struct!.encryptionOption),
+    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+  }
+}
+
+
 // Resource
 
-export class AthenaDatabase extends TerraformResource {
+export class AthenaDatabase extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -51,46 +59,64 @@ export class AthenaDatabase extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
   }
 
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean;
   public get forceDestroy() {
-    return this._forceDestroy;
+    return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | undefined) {
+  public set forceDestroy(value: boolean ) {
     this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // encryption_configuration - computed: false, optional: true, required: false
   private _encryptionConfiguration?: AthenaDatabaseEncryptionConfiguration[];
   public get encryptionConfiguration() {
-    return this._encryptionConfiguration;
+    return this.interpolationForAttribute('encryption_configuration') as any;
   }
-  public set encryptionConfiguration(value: AthenaDatabaseEncryptionConfiguration[] | undefined) {
+  public set encryptionConfiguration(value: AthenaDatabaseEncryptionConfiguration[] ) {
     this._encryptionConfiguration = value;
+  }
+  public resetEncryptionConfiguration() {
+    this._encryptionConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionConfigurationInput() {
+    return this._encryptionConfiguration
   }
 
   // =========
@@ -99,10 +125,10 @@ export class AthenaDatabase extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      force_destroy: this._forceDestroy,
-      name: this._name,
-      encryption_configuration: this._encryptionConfiguration,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      name: cdktf.stringToTerraform(this._name),
+      encryption_configuration: cdktf.listMapper(athenaDatabaseEncryptionConfigurationToTerraform)(this._encryptionConfiguration),
     };
   }
 }

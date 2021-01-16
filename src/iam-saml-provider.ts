@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamSamlProviderConfig extends TerraformMetaArguments {
+export interface IamSamlProviderConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly samlMetadataDocument: string;
 }
 
 // Resource
 
-export class IamSamlProvider extends TerraformResource {
+export class IamSamlProvider extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,39 +38,43 @@ export class IamSamlProvider extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // saml_metadata_document - computed: false, optional: false, required: true
   private _samlMetadataDocument: string;
   public get samlMetadataDocument() {
-    return this._samlMetadataDocument;
+    return this.getStringAttribute('saml_metadata_document');
   }
   public set samlMetadataDocument(value: string) {
     this._samlMetadataDocument = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get samlMetadataDocumentInput() {
+    return this._samlMetadataDocument
+  }
 
-  // valid_until - computed: true, optional: false, required: true
+  // valid_until - computed: true, optional: false, required: false
   public get validUntil() {
     return this.getStringAttribute('valid_until');
   }
@@ -82,8 +85,8 @@ export class IamSamlProvider extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      saml_metadata_document: this._samlMetadataDocument,
+      name: cdktf.stringToTerraform(this._name),
+      saml_metadata_document: cdktf.stringToTerraform(this._samlMetadataDocument),
     };
   }
 }

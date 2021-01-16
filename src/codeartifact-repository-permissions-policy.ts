@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodeartifactRepositoryPermissionsPolicyConfig extends TerraformMetaArguments {
+export interface CodeartifactRepositoryPermissionsPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
   readonly domainOwner?: string;
   readonly policyDocument: string;
@@ -17,7 +16,7 @@ export interface CodeartifactRepositoryPermissionsPolicyConfig extends Terraform
 
 // Resource
 
-export class CodeartifactRepositoryPermissionsPolicy extends TerraformResource {
+export class CodeartifactRepositoryPermissionsPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -48,58 +47,80 @@ export class CodeartifactRepositoryPermissionsPolicy extends TerraformResource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
   }
 
   // domain_owner - computed: true, optional: true, required: false
   private _domainOwner?: string;
   public get domainOwner() {
-    return this._domainOwner ?? this.getStringAttribute('domain_owner');
+    return this.getStringAttribute('domain_owner');
   }
-  public set domainOwner(value: string | undefined) {
+  public set domainOwner(value: string) {
     this._domainOwner = value;
+  }
+  public resetDomainOwner() {
+    this._domainOwner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainOwnerInput() {
+    return this._domainOwner
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy_document - computed: false, optional: false, required: true
   private _policyDocument: string;
   public get policyDocument() {
-    return this._policyDocument;
+    return this.getStringAttribute('policy_document');
   }
   public set policyDocument(value: string) {
     this._policyDocument = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyDocumentInput() {
+    return this._policyDocument
   }
 
   // policy_revision - computed: true, optional: true, required: false
   private _policyRevision?: string;
   public get policyRevision() {
-    return this._policyRevision ?? this.getStringAttribute('policy_revision');
+    return this.getStringAttribute('policy_revision');
   }
-  public set policyRevision(value: string | undefined) {
+  public set policyRevision(value: string) {
     this._policyRevision = value;
+  }
+  public resetPolicyRevision() {
+    this._policyRevision = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyRevisionInput() {
+    return this._policyRevision
   }
 
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
+  }
 
-  // resource_arn - computed: true, optional: false, required: true
+  // resource_arn - computed: true, optional: false, required: false
   public get resourceArn() {
     return this.getStringAttribute('resource_arn');
   }
@@ -110,11 +131,11 @@ export class CodeartifactRepositoryPermissionsPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
-      domain_owner: this._domainOwner,
-      policy_document: this._policyDocument,
-      policy_revision: this._policyRevision,
-      repository: this._repository,
+      domain: cdktf.stringToTerraform(this._domain),
+      domain_owner: cdktf.stringToTerraform(this._domainOwner),
+      policy_document: cdktf.stringToTerraform(this._policyDocument),
+      policy_revision: cdktf.stringToTerraform(this._policyRevision),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

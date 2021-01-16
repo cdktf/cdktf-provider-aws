@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDbEventCategoriesConfig extends TerraformMetaArguments {
+export interface DataAwsDbEventCategoriesConfig extends cdktf.TerraformMetaArguments {
   readonly sourceType?: string;
 }
 
 // Resource
 
-export class DataAwsDbEventCategories extends TerraformDataSource {
+export class DataAwsDbEventCategories extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -37,27 +36,30 @@ export class DataAwsDbEventCategories extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // event_categories - computed: true, optional: false, required: true
+  // event_categories - computed: true, optional: false, required: false
   public get eventCategories() {
     return this.getListAttribute('event_categories');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // source_type - computed: false, optional: true, required: false
   private _sourceType?: string;
   public get sourceType() {
-    return this._sourceType;
+    return this.getStringAttribute('source_type');
   }
-  public set sourceType(value: string | undefined) {
+  public set sourceType(value: string ) {
     this._sourceType = value;
+  }
+  public resetSourceType() {
+    this._sourceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceTypeInput() {
+    return this._sourceType
   }
 
   // =========
@@ -66,7 +68,7 @@ export class DataAwsDbEventCategories extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      source_type: this._sourceType,
+      source_type: cdktf.stringToTerraform(this._sourceType),
     };
   }
 }

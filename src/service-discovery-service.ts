@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ServiceDiscoveryServiceConfig extends TerraformMetaArguments {
+export interface ServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
   readonly namespaceId?: string;
@@ -23,24 +22,61 @@ export interface ServiceDiscoveryServiceDnsConfigDnsRecords {
   readonly ttl: number;
   readonly type: string;
 }
+
+function serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform(struct?: ServiceDiscoveryServiceDnsConfigDnsRecords): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ttl: cdktf.numberToTerraform(struct!.ttl),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface ServiceDiscoveryServiceDnsConfig {
   readonly namespaceId: string;
   readonly routingPolicy?: string;
   /** dns_records block */
   readonly dnsRecords: ServiceDiscoveryServiceDnsConfigDnsRecords[];
 }
+
+function serviceDiscoveryServiceDnsConfigToTerraform(struct?: ServiceDiscoveryServiceDnsConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
+    routing_policy: cdktf.stringToTerraform(struct!.routingPolicy),
+    dns_records: cdktf.listMapper(serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform)(struct!.dnsRecords),
+  }
+}
+
 export interface ServiceDiscoveryServiceHealthCheckConfig {
   readonly failureThreshold?: number;
   readonly resourcePath?: string;
   readonly type?: string;
 }
+
+function serviceDiscoveryServiceHealthCheckConfigToTerraform(struct?: ServiceDiscoveryServiceHealthCheckConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
+    resource_path: cdktf.stringToTerraform(struct!.resourcePath),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface ServiceDiscoveryServiceHealthCheckCustomConfig {
   readonly failureThreshold?: number;
 }
 
+function serviceDiscoveryServiceHealthCheckCustomConfigToTerraform(struct?: ServiceDiscoveryServiceHealthCheckCustomConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
+  }
+}
+
+
 // Resource
 
-export class ServiceDiscoveryService extends TerraformResource {
+export class ServiceDiscoveryService extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -70,7 +106,7 @@ export class ServiceDiscoveryService extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -78,73 +114,115 @@ export class ServiceDiscoveryService extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // namespace_id - computed: true, optional: true, required: false
   private _namespaceId?: string;
   public get namespaceId() {
-    return this._namespaceId ?? this.getStringAttribute('namespace_id');
+    return this.getStringAttribute('namespace_id');
   }
-  public set namespaceId(value: string | undefined) {
+  public set namespaceId(value: string) {
     this._namespaceId = value;
+  }
+  public resetNamespaceId() {
+    this._namespaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceIdInput() {
+    return this._namespaceId
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // dns_config - computed: false, optional: true, required: false
   private _dnsConfig?: ServiceDiscoveryServiceDnsConfig[];
   public get dnsConfig() {
-    return this._dnsConfig;
+    return this.interpolationForAttribute('dns_config') as any;
   }
-  public set dnsConfig(value: ServiceDiscoveryServiceDnsConfig[] | undefined) {
+  public set dnsConfig(value: ServiceDiscoveryServiceDnsConfig[] ) {
     this._dnsConfig = value;
+  }
+  public resetDnsConfig() {
+    this._dnsConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsConfigInput() {
+    return this._dnsConfig
   }
 
   // health_check_config - computed: false, optional: true, required: false
   private _healthCheckConfig?: ServiceDiscoveryServiceHealthCheckConfig[];
   public get healthCheckConfig() {
-    return this._healthCheckConfig;
+    return this.interpolationForAttribute('health_check_config') as any;
   }
-  public set healthCheckConfig(value: ServiceDiscoveryServiceHealthCheckConfig[] | undefined) {
+  public set healthCheckConfig(value: ServiceDiscoveryServiceHealthCheckConfig[] ) {
     this._healthCheckConfig = value;
+  }
+  public resetHealthCheckConfig() {
+    this._healthCheckConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckConfigInput() {
+    return this._healthCheckConfig
   }
 
   // health_check_custom_config - computed: false, optional: true, required: false
   private _healthCheckCustomConfig?: ServiceDiscoveryServiceHealthCheckCustomConfig[];
   public get healthCheckCustomConfig() {
-    return this._healthCheckCustomConfig;
+    return this.interpolationForAttribute('health_check_custom_config') as any;
   }
-  public set healthCheckCustomConfig(value: ServiceDiscoveryServiceHealthCheckCustomConfig[] | undefined) {
+  public set healthCheckCustomConfig(value: ServiceDiscoveryServiceHealthCheckCustomConfig[] ) {
     this._healthCheckCustomConfig = value;
+  }
+  public resetHealthCheckCustomConfig() {
+    this._healthCheckCustomConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckCustomConfigInput() {
+    return this._healthCheckCustomConfig
   }
 
   // =========
@@ -153,13 +231,13 @@ export class ServiceDiscoveryService extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      name: this._name,
-      namespace_id: this._namespaceId,
-      tags: this._tags,
-      dns_config: this._dnsConfig,
-      health_check_config: this._healthCheckConfig,
-      health_check_custom_config: this._healthCheckCustomConfig,
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      namespace_id: cdktf.stringToTerraform(this._namespaceId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      dns_config: cdktf.listMapper(serviceDiscoveryServiceDnsConfigToTerraform)(this._dnsConfig),
+      health_check_config: cdktf.listMapper(serviceDiscoveryServiceHealthCheckConfigToTerraform)(this._healthCheckConfig),
+      health_check_custom_config: cdktf.listMapper(serviceDiscoveryServiceHealthCheckCustomConfigToTerraform)(this._healthCheckCustomConfig),
     };
   }
 }

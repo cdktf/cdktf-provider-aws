@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Ec2AvailabilityZoneGroupConfig extends TerraformMetaArguments {
+export interface Ec2AvailabilityZoneGroupConfig extends cdktf.TerraformMetaArguments {
   readonly groupName: string;
   readonly optInStatus: string;
 }
 
 // Resource
 
-export class Ec2AvailabilityZoneGroup extends TerraformResource {
+export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,28 +41,32 @@ export class Ec2AvailabilityZoneGroup extends TerraformResource {
   // group_name - computed: false, optional: false, required: true
   private _groupName: string;
   public get groupName() {
-    return this._groupName;
+    return this.getStringAttribute('group_name');
   }
   public set groupName(value: string) {
     this._groupName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get groupNameInput() {
+    return this._groupName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // opt_in_status - computed: false, optional: false, required: true
   private _optInStatus: string;
   public get optInStatus() {
-    return this._optInStatus;
+    return this.getStringAttribute('opt_in_status');
   }
   public set optInStatus(value: string) {
     this._optInStatus = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optInStatusInput() {
+    return this._optInStatus
   }
 
   // =========
@@ -72,8 +75,8 @@ export class Ec2AvailabilityZoneGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_name: this._groupName,
-      opt_in_status: this._optInStatus,
+      group_name: cdktf.stringToTerraform(this._groupName),
+      opt_in_status: cdktf.stringToTerraform(this._optInStatus),
     };
   }
 }

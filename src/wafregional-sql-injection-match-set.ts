@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface WafregionalSqlInjectionMatchSetConfig extends TerraformMetaArguments {
+export interface WafregionalSqlInjectionMatchSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /** sql_injection_match_tuple block */
   readonly sqlInjectionMatchTuple?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[];
@@ -16,15 +15,33 @@ export interface WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMat
   readonly data?: string;
   readonly type: string;
 }
+
+function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchToTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple {
   readonly textTransformation: string;
   /** field_to_match block */
   readonly fieldToMatch: WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch[];
 }
 
+function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform(struct?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    text_transformation: cdktf.stringToTerraform(struct!.textTransformation),
+    field_to_match: cdktf.listMapper(wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchToTerraform)(struct!.fieldToMatch),
+  }
+}
+
+
 // Resource
 
-export class WafregionalSqlInjectionMatchSet extends TerraformResource {
+export class WafregionalSqlInjectionMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,30 +67,37 @@ export class WafregionalSqlInjectionMatchSet extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // sql_injection_match_tuple - computed: false, optional: true, required: false
   private _sqlInjectionMatchTuple?: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[];
   public get sqlInjectionMatchTuple() {
-    return this._sqlInjectionMatchTuple;
+    return this.interpolationForAttribute('sql_injection_match_tuple') as any;
   }
-  public set sqlInjectionMatchTuple(value: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[] | undefined) {
+  public set sqlInjectionMatchTuple(value: WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple[] ) {
     this._sqlInjectionMatchTuple = value;
+  }
+  public resetSqlInjectionMatchTuple() {
+    this._sqlInjectionMatchTuple = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlInjectionMatchTupleInput() {
+    return this._sqlInjectionMatchTuple
   }
 
   // =========
@@ -82,8 +106,8 @@ export class WafregionalSqlInjectionMatchSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      sql_injection_match_tuple: this._sqlInjectionMatchTuple,
+      name: cdktf.stringToTerraform(this._name),
+      sql_injection_match_tuple: cdktf.listMapper(wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform)(this._sqlInjectionMatchTuple),
     };
   }
 }

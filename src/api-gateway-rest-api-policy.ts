@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ApiGatewayRestApiPolicyConfig extends TerraformMetaArguments {
+export interface ApiGatewayRestApiPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly policy: string;
   readonly restApiId: string;
 }
 
 // Resource
 
-export class ApiGatewayRestApiPolicy extends TerraformResource {
+export class ApiGatewayRestApiPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class ApiGatewayRestApiPolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
   public set policy(value: string) {
     this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // rest_api_id - computed: false, optional: false, required: true
   private _restApiId: string;
   public get restApiId() {
-    return this._restApiId;
+    return this.getStringAttribute('rest_api_id');
   }
   public set restApiId(value: string) {
     this._restApiId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restApiIdInput() {
+    return this._restApiId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class ApiGatewayRestApiPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy: this._policy,
-      rest_api_id: this._restApiId,
+      policy: cdktf.stringToTerraform(this._policy),
+      rest_api_id: cdktf.stringToTerraform(this._restApiId),
     };
   }
 }

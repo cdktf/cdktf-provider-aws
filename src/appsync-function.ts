@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppsyncFunctionConfig extends TerraformMetaArguments {
+export interface AppsyncFunctionConfig extends cdktf.TerraformMetaArguments {
   readonly apiId: string;
   readonly dataSource: string;
   readonly description?: string;
@@ -19,7 +18,7 @@ export interface AppsyncFunctionConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class AppsyncFunction extends TerraformResource {
+export class AppsyncFunction extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -52,13 +51,17 @@ export class AppsyncFunction extends TerraformResource {
   // api_id - computed: false, optional: false, required: true
   private _apiId: string;
   public get apiId() {
-    return this._apiId;
+    return this.getStringAttribute('api_id');
   }
   public set apiId(value: string) {
     this._apiId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get apiIdInput() {
+    return this._apiId
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -66,22 +69,33 @@ export class AppsyncFunction extends TerraformResource {
   // data_source - computed: false, optional: false, required: true
   private _dataSource: string;
   public get dataSource() {
-    return this._dataSource;
+    return this.getStringAttribute('data_source');
   }
   public set dataSource(value: string) {
     this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
   }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
+  }
 
-  // function_id - computed: true, optional: false, required: true
+  // function_id - computed: true, optional: false, required: false
   public get functionId() {
     return this.getStringAttribute('function_id');
   }
@@ -89,46 +103,61 @@ export class AppsyncFunction extends TerraformResource {
   // function_version - computed: false, optional: true, required: false
   private _functionVersion?: string;
   public get functionVersion() {
-    return this._functionVersion;
+    return this.getStringAttribute('function_version');
   }
-  public set functionVersion(value: string | undefined) {
+  public set functionVersion(value: string ) {
     this._functionVersion = value;
+  }
+  public resetFunctionVersion() {
+    this._functionVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionVersionInput() {
+    return this._functionVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // request_mapping_template - computed: false, optional: false, required: true
   private _requestMappingTemplate: string;
   public get requestMappingTemplate() {
-    return this._requestMappingTemplate;
+    return this.getStringAttribute('request_mapping_template');
   }
   public set requestMappingTemplate(value: string) {
     this._requestMappingTemplate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestMappingTemplateInput() {
+    return this._requestMappingTemplate
   }
 
   // response_mapping_template - computed: false, optional: false, required: true
   private _responseMappingTemplate: string;
   public get responseMappingTemplate() {
-    return this._responseMappingTemplate;
+    return this.getStringAttribute('response_mapping_template');
   }
   public set responseMappingTemplate(value: string) {
     this._responseMappingTemplate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseMappingTemplateInput() {
+    return this._responseMappingTemplate
   }
 
   // =========
@@ -137,13 +166,13 @@ export class AppsyncFunction extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_id: this._apiId,
-      data_source: this._dataSource,
-      description: this._description,
-      function_version: this._functionVersion,
-      name: this._name,
-      request_mapping_template: this._requestMappingTemplate,
-      response_mapping_template: this._responseMappingTemplate,
+      api_id: cdktf.stringToTerraform(this._apiId),
+      data_source: cdktf.stringToTerraform(this._dataSource),
+      description: cdktf.stringToTerraform(this._description),
+      function_version: cdktf.stringToTerraform(this._functionVersion),
+      name: cdktf.stringToTerraform(this._name),
+      request_mapping_template: cdktf.stringToTerraform(this._requestMappingTemplate),
+      response_mapping_template: cdktf.stringToTerraform(this._responseMappingTemplate),
     };
   }
 }

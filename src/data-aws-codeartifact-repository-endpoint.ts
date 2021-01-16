@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCodeartifactRepositoryEndpointConfig extends TerraformMetaArguments {
+export interface DataAwsCodeartifactRepositoryEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
   readonly domainOwner?: string;
   readonly format: string;
@@ -16,7 +15,7 @@ export interface DataAwsCodeartifactRepositoryEndpointConfig extends TerraformMe
 
 // Resource
 
-export class DataAwsCodeartifactRepositoryEndpoint extends TerraformDataSource {
+export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,49 +45,64 @@ export class DataAwsCodeartifactRepositoryEndpoint extends TerraformDataSource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
   }
 
   // domain_owner - computed: true, optional: true, required: false
   private _domainOwner?: string;
   public get domainOwner() {
-    return this._domainOwner ?? this.getStringAttribute('domain_owner');
+    return this.getStringAttribute('domain_owner');
   }
-  public set domainOwner(value: string | undefined) {
+  public set domainOwner(value: string) {
     this._domainOwner = value;
+  }
+  public resetDomainOwner() {
+    this._domainOwner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainOwnerInput() {
+    return this._domainOwner
   }
 
   // format - computed: false, optional: false, required: true
   private _format: string;
   public get format() {
-    return this._format;
+    return this.getStringAttribute('format');
   }
   public set format(value: string) {
     this._format = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get formatInput() {
+    return this._format
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
+  }
 
-  // repository_endpoint - computed: true, optional: false, required: true
+  // repository_endpoint - computed: true, optional: false, required: false
   public get repositoryEndpoint() {
     return this.getStringAttribute('repository_endpoint');
   }
@@ -99,10 +113,10 @@ export class DataAwsCodeartifactRepositoryEndpoint extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
-      domain_owner: this._domainOwner,
-      format: this._format,
-      repository: this._repository,
+      domain: cdktf.stringToTerraform(this._domain),
+      domain_owner: cdktf.stringToTerraform(this._domainOwner),
+      format: cdktf.stringToTerraform(this._format),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

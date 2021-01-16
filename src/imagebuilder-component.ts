@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ImagebuilderComponentConfig extends TerraformMetaArguments {
+export interface ImagebuilderComponentConfig extends cdktf.TerraformMetaArguments {
   readonly changeDescription?: string;
   readonly data?: string;
   readonly description?: string;
@@ -22,7 +21,7 @@ export interface ImagebuilderComponentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ImagebuilderComponent extends TerraformResource {
+export class ImagebuilderComponent extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -55,7 +54,7 @@ export class ImagebuilderComponent extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -63,22 +62,36 @@ export class ImagebuilderComponent extends TerraformResource {
   // change_description - computed: false, optional: true, required: false
   private _changeDescription?: string;
   public get changeDescription() {
-    return this._changeDescription;
+    return this.getStringAttribute('change_description');
   }
-  public set changeDescription(value: string | undefined) {
+  public set changeDescription(value: string ) {
     this._changeDescription = value;
+  }
+  public resetChangeDescription() {
+    this._changeDescription = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get changeDescriptionInput() {
+    return this._changeDescription
   }
 
   // data - computed: true, optional: true, required: false
   private _data?: string;
   public get data() {
-    return this._data ?? this.getStringAttribute('data');
+    return this.getStringAttribute('data');
   }
-  public set data(value: string | undefined) {
+  public set data(value: string) {
     this._data = value;
   }
+  public resetData() {
+    this._data = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataInput() {
+    return this._data
+  }
 
-  // date_created - computed: true, optional: false, required: true
+  // date_created - computed: true, optional: false, required: false
   public get dateCreated() {
     return this.getStringAttribute('date_created');
   }
@@ -86,45 +99,59 @@ export class ImagebuilderComponent extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
   }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
+  }
 
-  // encrypted - computed: true, optional: false, required: true
+  // encrypted - computed: true, optional: false, required: false
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId;
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string ) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // owner - computed: true, optional: false, required: true
+  // owner - computed: true, optional: false, required: false
   public get owner() {
     return this.getStringAttribute('owner');
   }
@@ -132,31 +159,49 @@ export class ImagebuilderComponent extends TerraformResource {
   // platform - computed: false, optional: false, required: true
   private _platform: string;
   public get platform() {
-    return this._platform;
+    return this.getStringAttribute('platform');
   }
   public set platform(value: string) {
     this._platform = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get platformInput() {
+    return this._platform
   }
 
   // supported_os_versions - computed: false, optional: true, required: false
   private _supportedOsVersions?: string[];
   public get supportedOsVersions() {
-    return this._supportedOsVersions;
+    return this.getListAttribute('supported_os_versions');
   }
-  public set supportedOsVersions(value: string[] | undefined) {
+  public set supportedOsVersions(value: string[] ) {
     this._supportedOsVersions = value;
+  }
+  public resetSupportedOsVersions() {
+    this._supportedOsVersions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportedOsVersionsInput() {
+    return this._supportedOsVersions
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -164,19 +209,30 @@ export class ImagebuilderComponent extends TerraformResource {
   // uri - computed: false, optional: true, required: false
   private _uri?: string;
   public get uri() {
-    return this._uri;
+    return this.getStringAttribute('uri');
   }
-  public set uri(value: string | undefined) {
+  public set uri(value: string ) {
     this._uri = value;
+  }
+  public resetUri() {
+    this._uri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri
   }
 
   // version - computed: false, optional: false, required: true
   private _version: string;
   public get version() {
-    return this._version;
+    return this.getStringAttribute('version');
   }
   public set version(value: string) {
     this._version = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // =========
@@ -185,16 +241,16 @@ export class ImagebuilderComponent extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      change_description: this._changeDescription,
-      data: this._data,
-      description: this._description,
-      kms_key_id: this._kmsKeyId,
-      name: this._name,
-      platform: this._platform,
-      supported_os_versions: this._supportedOsVersions,
-      tags: this._tags,
-      uri: this._uri,
-      version: this._version,
+      change_description: cdktf.stringToTerraform(this._changeDescription),
+      data: cdktf.stringToTerraform(this._data),
+      description: cdktf.stringToTerraform(this._description),
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      name: cdktf.stringToTerraform(this._name),
+      platform: cdktf.stringToTerraform(this._platform),
+      supported_os_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._supportedOsVersions),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      uri: cdktf.stringToTerraform(this._uri),
+      version: cdktf.stringToTerraform(this._version),
     };
   }
 }

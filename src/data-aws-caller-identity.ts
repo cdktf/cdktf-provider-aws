@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsCallerIdentityConfig extends TerraformMetaArguments {
+export interface DataAwsCallerIdentityConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsCallerIdentity extends TerraformDataSource {
+export class DataAwsCallerIdentity extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -35,26 +34,22 @@ export class DataAwsCallerIdentity extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: true, optional: false, required: true
+  // account_id - computed: true, optional: false, required: false
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // user_id - computed: true, optional: false, required: true
+  // user_id - computed: true, optional: false, required: false
   public get userId() {
     return this.getStringAttribute('user_id');
   }

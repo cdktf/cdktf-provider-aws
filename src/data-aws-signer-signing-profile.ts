@@ -2,41 +2,39 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSignerSigningProfileConfig extends TerraformMetaArguments {
+export interface DataAwsSignerSigningProfileConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsSignerSigningProfileRevocationRecord extends ComplexComputedList {
+export class DataAwsSignerSigningProfileRevocationRecord extends cdktf.ComplexComputedList {
 
-  // revocation_effective_from - computed: true, optional: false, required: true
+  // revocation_effective_from - computed: true, optional: false, required: false
   public get revocationEffectiveFrom() {
     return this.getStringAttribute('revocation_effective_from');
   }
 
-  // revoked_at - computed: true, optional: false, required: true
+  // revoked_at - computed: true, optional: false, required: false
   public get revokedAt() {
     return this.getStringAttribute('revoked_at');
   }
 
-  // revoked_by - computed: true, optional: false, required: true
+  // revoked_by - computed: true, optional: false, required: false
   public get revokedBy() {
     return this.getStringAttribute('revoked_by');
   }
 }
-export class DataAwsSignerSigningProfileSignatureValidityPeriod extends ComplexComputedList {
+export class DataAwsSignerSigningProfileSignatureValidityPeriod extends cdktf.ComplexComputedList {
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
 
-  // value - computed: true, optional: false, required: true
+  // value - computed: true, optional: false, required: false
   public get value() {
     return this.getNumberAttribute('value');
   }
@@ -44,7 +42,7 @@ export class DataAwsSignerSigningProfileSignatureValidityPeriod extends ComplexC
 
 // Resource
 
-export class DataAwsSignerSigningProfile extends TerraformDataSource {
+export class DataAwsSignerSigningProfile extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -69,69 +67,76 @@ export class DataAwsSignerSigningProfile extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // platform_display_name - computed: true, optional: false, required: true
+  // platform_display_name - computed: true, optional: false, required: false
   public get platformDisplayName() {
     return this.getStringAttribute('platform_display_name');
   }
 
-  // platform_id - computed: true, optional: false, required: true
+  // platform_id - computed: true, optional: false, required: false
   public get platformId() {
     return this.getStringAttribute('platform_id');
   }
 
-  // revocation_record - computed: true, optional: false, required: true
+  // revocation_record - computed: true, optional: false, required: false
   public revocationRecord(index: string) {
     return new DataAwsSignerSigningProfileRevocationRecord(this, 'revocation_record', index);
   }
 
-  // signature_validity_period - computed: true, optional: false, required: true
+  // signature_validity_period - computed: true, optional: false, required: false
   public signatureValidityPeriod(index: string) {
     return new DataAwsSignerSigningProfileSignatureValidityPeriod(this, 'signature_validity_period', index);
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
   // tags - computed: true, optional: true, required: false
   private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } | undefined {
-    return this._tags; // Getting the computed value is not yet implemented
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
   }
 
-  // version_arn - computed: true, optional: false, required: true
+  // version_arn - computed: true, optional: false, required: false
   public get versionArn() {
     return this.getStringAttribute('version_arn');
   }
@@ -142,8 +147,8 @@ export class DataAwsSignerSigningProfile extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      tags: this._tags,
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

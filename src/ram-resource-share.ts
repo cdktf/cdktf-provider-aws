@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RamResourceShareConfig extends TerraformMetaArguments {
+export interface RamResourceShareConfig extends cdktf.TerraformMetaArguments {
   readonly allowExternalPrincipals?: boolean;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface RamResourceShareTimeouts {
   readonly delete?: string;
 }
 
+function ramResourceShareTimeoutsToTerraform(struct?: RamResourceShareTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class RamResourceShare extends TerraformResource {
+export class RamResourceShare extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -51,51 +59,72 @@ export class RamResourceShare extends TerraformResource {
   // allow_external_principals - computed: false, optional: true, required: false
   private _allowExternalPrincipals?: boolean;
   public get allowExternalPrincipals() {
-    return this._allowExternalPrincipals;
+    return this.getBooleanAttribute('allow_external_principals');
   }
-  public set allowExternalPrincipals(value: boolean | undefined) {
+  public set allowExternalPrincipals(value: boolean ) {
     this._allowExternalPrincipals = value;
   }
+  public resetAllowExternalPrincipals() {
+    this._allowExternalPrincipals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowExternalPrincipalsInput() {
+    return this._allowExternalPrincipals
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: RamResourceShareTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: RamResourceShareTimeouts | undefined) {
+  public set timeouts(value: RamResourceShareTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -104,10 +133,10 @@ export class RamResourceShare extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_external_principals: this._allowExternalPrincipals,
-      name: this._name,
-      tags: this._tags,
-      timeouts: this._timeouts,
+      allow_external_principals: cdktf.booleanToTerraform(this._allowExternalPrincipals),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeouts: ramResourceShareTimeoutsToTerraform(this._timeouts),
     };
   }
 }

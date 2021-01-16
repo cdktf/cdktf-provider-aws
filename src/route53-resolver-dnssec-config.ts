@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53ResolverDnssecConfigConfig extends TerraformMetaArguments {
+export interface Route53ResolverDnssecConfigConfig extends cdktf.TerraformMetaArguments {
   readonly resourceId: string;
 }
 
 // Resource
 
-export class Route53ResolverDnssecConfig extends TerraformResource {
+export class Route53ResolverDnssecConfig extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -37,17 +36,17 @@ export class Route53ResolverDnssecConfig extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // id - computed: true, optional: false, required: true
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -55,13 +54,17 @@ export class Route53ResolverDnssecConfig extends TerraformResource {
   // resource_id - computed: false, optional: false, required: true
   private _resourceId: string;
   public get resourceId() {
-    return this._resourceId;
+    return this.getStringAttribute('resource_id');
   }
   public set resourceId(value: string) {
     this._resourceId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get resourceIdInput() {
+    return this._resourceId
+  }
 
-  // validation_status - computed: true, optional: false, required: true
+  // validation_status - computed: true, optional: false, required: false
   public get validationStatus() {
     return this.getStringAttribute('validation_status');
   }
@@ -72,7 +75,7 @@ export class Route53ResolverDnssecConfig extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_id: this._resourceId,
+      resource_id: cdktf.stringToTerraform(this._resourceId),
     };
   }
 }

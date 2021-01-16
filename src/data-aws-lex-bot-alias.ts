@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLexBotAliasConfig extends TerraformMetaArguments {
+export interface DataAwsLexBotAliasConfig extends cdktf.TerraformMetaArguments {
   readonly botName: string;
   readonly name: string;
 }
 
 // Resource
 
-export class DataAwsLexBotAlias extends TerraformDataSource {
+export class DataAwsLexBotAlias extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -39,7 +38,7 @@ export class DataAwsLexBotAlias extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -47,42 +46,42 @@ export class DataAwsLexBotAlias extends TerraformDataSource {
   // bot_name - computed: false, optional: false, required: true
   private _botName: string;
   public get botName() {
-    return this._botName;
+    return this.getStringAttribute('bot_name');
   }
   public set botName(value: string) {
     this._botName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get botNameInput() {
+    return this._botName
+  }
 
-  // bot_version - computed: true, optional: false, required: true
+  // bot_version - computed: true, optional: false, required: false
   public get botVersion() {
     return this.getStringAttribute('bot_version');
   }
 
-  // checksum - computed: true, optional: false, required: true
+  // checksum - computed: true, optional: false, required: false
   public get checksum() {
     return this.getStringAttribute('checksum');
   }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_updated_date - computed: true, optional: false, required: true
+  // last_updated_date - computed: true, optional: false, required: false
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -90,10 +89,14 @@ export class DataAwsLexBotAlias extends TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // =========
@@ -102,8 +105,8 @@ export class DataAwsLexBotAlias extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_name: this._botName,
-      name: this._name,
+      bot_name: cdktf.stringToTerraform(this._botName),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

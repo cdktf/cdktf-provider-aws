@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface EfsMountTargetConfig extends TerraformMetaArguments {
+export interface EfsMountTargetConfig extends cdktf.TerraformMetaArguments {
   readonly fileSystemId: string;
   readonly ipAddress?: string;
   readonly securityGroups?: string[];
@@ -16,7 +15,7 @@ export interface EfsMountTargetConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class EfsMountTarget extends TerraformResource {
+export class EfsMountTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,22 +42,22 @@ export class EfsMountTarget extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // availability_zone_id - computed: true, optional: false, required: true
+  // availability_zone_id - computed: true, optional: false, required: false
   public get availabilityZoneId() {
     return this.getStringAttribute('availability_zone_id');
   }
 
-  // availability_zone_name - computed: true, optional: false, required: true
+  // availability_zone_name - computed: true, optional: false, required: false
   public get availabilityZoneName() {
     return this.getStringAttribute('availability_zone_name');
   }
 
-  // dns_name - computed: true, optional: false, required: true
+  // dns_name - computed: true, optional: false, required: false
   public get dnsName() {
     return this.getStringAttribute('dns_name');
   }
 
-  // file_system_arn - computed: true, optional: false, required: true
+  // file_system_arn - computed: true, optional: false, required: false
   public get fileSystemArn() {
     return this.getStringAttribute('file_system_arn');
   }
@@ -66,41 +65,48 @@ export class EfsMountTarget extends TerraformResource {
   // file_system_id - computed: false, optional: false, required: true
   private _fileSystemId: string;
   public get fileSystemId() {
-    return this._fileSystemId;
+    return this.getStringAttribute('file_system_id');
   }
   public set fileSystemId(value: string) {
     this._fileSystemId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdInput() {
+    return this._fileSystemId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ip_address - computed: true, optional: true, required: false
   private _ipAddress?: string;
   public get ipAddress() {
-    return this._ipAddress ?? this.getStringAttribute('ip_address');
+    return this.getStringAttribute('ip_address');
   }
-  public set ipAddress(value: string | undefined) {
+  public set ipAddress(value: string) {
     this._ipAddress = value;
   }
+  public resetIpAddress() {
+    this._ipAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress
+  }
 
-  // mount_target_dns_name - computed: true, optional: false, required: true
+  // mount_target_dns_name - computed: true, optional: false, required: false
   public get mountTargetDnsName() {
     return this.getStringAttribute('mount_target_dns_name');
   }
 
-  // network_interface_id - computed: true, optional: false, required: true
+  // network_interface_id - computed: true, optional: false, required: false
   public get networkInterfaceId() {
     return this.getStringAttribute('network_interface_id');
   }
 
-  // owner_id - computed: true, optional: false, required: true
+  // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
   }
@@ -108,19 +114,30 @@ export class EfsMountTarget extends TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[];
   public get securityGroups() {
-    return this._securityGroups ?? this.getListAttribute('security_groups');
+    return this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[] | undefined) {
+  public set securityGroups(value: string[]) {
     this._securityGroups = value;
+  }
+  public resetSecurityGroups() {
+    this._securityGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupsInput() {
+    return this._securityGroups
   }
 
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId: string;
   public get subnetId() {
-    return this._subnetId;
+    return this.getStringAttribute('subnet_id');
   }
   public set subnetId(value: string) {
     this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId
   }
 
   // =========
@@ -129,10 +146,10 @@ export class EfsMountTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      file_system_id: this._fileSystemId,
-      ip_address: this._ipAddress,
-      security_groups: this._securityGroups,
-      subnet_id: this._subnetId,
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
+      ip_address: cdktf.stringToTerraform(this._ipAddress),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      subnet_id: cdktf.stringToTerraform(this._subnetId),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AlbListenerConfig extends TerraformMetaArguments {
+export interface AlbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly certificateArn?: string;
   readonly loadBalancerArn: string;
   readonly port?: number;
@@ -28,6 +27,21 @@ export interface AlbListenerDefaultActionAuthenticateCognito {
   readonly userPoolClientId: string;
   readonly userPoolDomain: string;
 }
+
+function albListenerDefaultActionAuthenticateCognitoToTerraform(struct?: AlbListenerDefaultActionAuthenticateCognito): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    authentication_request_extra_params: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.authenticationRequestExtraParams),
+    on_unauthenticated_request: cdktf.stringToTerraform(struct!.onUnauthenticatedRequest),
+    scope: cdktf.stringToTerraform(struct!.scope),
+    session_cookie_name: cdktf.stringToTerraform(struct!.sessionCookieName),
+    session_timeout: cdktf.numberToTerraform(struct!.sessionTimeout),
+    user_pool_arn: cdktf.stringToTerraform(struct!.userPoolArn),
+    user_pool_client_id: cdktf.stringToTerraform(struct!.userPoolClientId),
+    user_pool_domain: cdktf.stringToTerraform(struct!.userPoolDomain),
+  }
+}
+
 export interface AlbListenerDefaultActionAuthenticateOidc {
   readonly authenticationRequestExtraParams?: { [key: string]: string };
   readonly authorizationEndpoint: string;
@@ -41,25 +55,80 @@ export interface AlbListenerDefaultActionAuthenticateOidc {
   readonly tokenEndpoint: string;
   readonly userInfoEndpoint: string;
 }
+
+function albListenerDefaultActionAuthenticateOidcToTerraform(struct?: AlbListenerDefaultActionAuthenticateOidc): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    authentication_request_extra_params: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.authenticationRequestExtraParams),
+    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    issuer: cdktf.stringToTerraform(struct!.issuer),
+    on_unauthenticated_request: cdktf.stringToTerraform(struct!.onUnauthenticatedRequest),
+    scope: cdktf.stringToTerraform(struct!.scope),
+    session_cookie_name: cdktf.stringToTerraform(struct!.sessionCookieName),
+    session_timeout: cdktf.numberToTerraform(struct!.sessionTimeout),
+    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+    user_info_endpoint: cdktf.stringToTerraform(struct!.userInfoEndpoint),
+  }
+}
+
 export interface AlbListenerDefaultActionFixedResponse {
   readonly contentType: string;
   readonly messageBody?: string;
   readonly statusCode?: string;
 }
+
+function albListenerDefaultActionFixedResponseToTerraform(struct?: AlbListenerDefaultActionFixedResponse): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    content_type: cdktf.stringToTerraform(struct!.contentType),
+    message_body: cdktf.stringToTerraform(struct!.messageBody),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+  }
+}
+
 export interface AlbListenerDefaultActionForwardStickiness {
   readonly duration: number;
   readonly enabled?: boolean;
 }
+
+function albListenerDefaultActionForwardStickinessToTerraform(struct?: AlbListenerDefaultActionForwardStickiness): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    duration: cdktf.numberToTerraform(struct!.duration),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
 export interface AlbListenerDefaultActionForwardTargetGroup {
   readonly arn: string;
   readonly weight?: number;
 }
+
+function albListenerDefaultActionForwardTargetGroupToTerraform(struct?: AlbListenerDefaultActionForwardTargetGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    arn: cdktf.stringToTerraform(struct!.arn),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
 export interface AlbListenerDefaultActionForward {
   /** stickiness block */
   readonly stickiness?: AlbListenerDefaultActionForwardStickiness[];
   /** target_group block */
   readonly targetGroup: AlbListenerDefaultActionForwardTargetGroup[];
 }
+
+function albListenerDefaultActionForwardToTerraform(struct?: AlbListenerDefaultActionForward): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    stickiness: cdktf.listMapper(albListenerDefaultActionForwardStickinessToTerraform)(struct!.stickiness),
+    target_group: cdktf.listMapper(albListenerDefaultActionForwardTargetGroupToTerraform)(struct!.targetGroup),
+  }
+}
+
 export interface AlbListenerDefaultActionRedirect {
   readonly host?: string;
   readonly path?: string;
@@ -68,6 +137,19 @@ export interface AlbListenerDefaultActionRedirect {
   readonly query?: string;
   readonly statusCode: string;
 }
+
+function albListenerDefaultActionRedirectToTerraform(struct?: AlbListenerDefaultActionRedirect): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    host: cdktf.stringToTerraform(struct!.host),
+    path: cdktf.stringToTerraform(struct!.path),
+    port: cdktf.stringToTerraform(struct!.port),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    query: cdktf.stringToTerraform(struct!.query),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+  }
+}
+
 export interface AlbListenerDefaultAction {
   readonly order?: number;
   readonly targetGroupArn?: string;
@@ -83,13 +165,36 @@ export interface AlbListenerDefaultAction {
   /** redirect block */
   readonly redirect?: AlbListenerDefaultActionRedirect[];
 }
+
+function albListenerDefaultActionToTerraform(struct?: AlbListenerDefaultAction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    order: cdktf.numberToTerraform(struct!.order),
+    target_group_arn: cdktf.stringToTerraform(struct!.targetGroupArn),
+    type: cdktf.stringToTerraform(struct!.type),
+    authenticate_cognito: cdktf.listMapper(albListenerDefaultActionAuthenticateCognitoToTerraform)(struct!.authenticateCognito),
+    authenticate_oidc: cdktf.listMapper(albListenerDefaultActionAuthenticateOidcToTerraform)(struct!.authenticateOidc),
+    fixed_response: cdktf.listMapper(albListenerDefaultActionFixedResponseToTerraform)(struct!.fixedResponse),
+    forward: cdktf.listMapper(albListenerDefaultActionForwardToTerraform)(struct!.forward),
+    redirect: cdktf.listMapper(albListenerDefaultActionRedirectToTerraform)(struct!.redirect),
+  }
+}
+
 export interface AlbListenerTimeouts {
   readonly read?: string;
 }
 
+function albListenerTimeoutsToTerraform(struct?: AlbListenerTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    read: cdktf.stringToTerraform(struct!.read),
+  }
+}
+
+
 // Resource
 
-export class AlbListener extends TerraformResource {
+export class AlbListener extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,7 +224,7 @@ export class AlbListener extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -127,73 +232,112 @@ export class AlbListener extends TerraformResource {
   // certificate_arn - computed: false, optional: true, required: false
   private _certificateArn?: string;
   public get certificateArn() {
-    return this._certificateArn;
+    return this.getStringAttribute('certificate_arn');
   }
-  public set certificateArn(value: string | undefined) {
+  public set certificateArn(value: string ) {
     this._certificateArn = value;
+  }
+  public resetCertificateArn() {
+    this._certificateArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateArnInput() {
+    return this._certificateArn
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // load_balancer_arn - computed: false, optional: false, required: true
   private _loadBalancerArn: string;
   public get loadBalancerArn() {
-    return this._loadBalancerArn;
+    return this.getStringAttribute('load_balancer_arn');
   }
   public set loadBalancerArn(value: string) {
     this._loadBalancerArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerArnInput() {
+    return this._loadBalancerArn
   }
 
   // port - computed: false, optional: true, required: false
   private _port?: number;
   public get port() {
-    return this._port;
+    return this.getNumberAttribute('port');
   }
-  public set port(value: number | undefined) {
+  public set port(value: number ) {
     this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port
   }
 
   // protocol - computed: true, optional: true, required: false
   private _protocol?: string;
   public get protocol() {
-    return this._protocol ?? this.getStringAttribute('protocol');
+    return this.getStringAttribute('protocol');
   }
-  public set protocol(value: string | undefined) {
+  public set protocol(value: string) {
     this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol
   }
 
   // ssl_policy - computed: true, optional: true, required: false
   private _sslPolicy?: string;
   public get sslPolicy() {
-    return this._sslPolicy ?? this.getStringAttribute('ssl_policy');
+    return this.getStringAttribute('ssl_policy');
   }
-  public set sslPolicy(value: string | undefined) {
+  public set sslPolicy(value: string) {
     this._sslPolicy = value;
+  }
+  public resetSslPolicy() {
+    this._sslPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslPolicyInput() {
+    return this._sslPolicy
   }
 
   // default_action - computed: false, optional: false, required: true
   private _defaultAction: AlbListenerDefaultAction[];
   public get defaultAction() {
-    return this._defaultAction;
+    return this.interpolationForAttribute('default_action') as any;
   }
   public set defaultAction(value: AlbListenerDefaultAction[]) {
     this._defaultAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultActionInput() {
+    return this._defaultAction
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: AlbListenerTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: AlbListenerTimeouts | undefined) {
+  public set timeouts(value: AlbListenerTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -202,13 +346,13 @@ export class AlbListener extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_arn: this._certificateArn,
-      load_balancer_arn: this._loadBalancerArn,
-      port: this._port,
-      protocol: this._protocol,
-      ssl_policy: this._sslPolicy,
-      default_action: this._defaultAction,
-      timeouts: this._timeouts,
+      certificate_arn: cdktf.stringToTerraform(this._certificateArn),
+      load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
+      port: cdktf.numberToTerraform(this._port),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      ssl_policy: cdktf.stringToTerraform(this._sslPolicy),
+      default_action: cdktf.listMapper(albListenerDefaultActionToTerraform)(this._defaultAction),
+      timeouts: albListenerTimeoutsToTerraform(this._timeouts),
     };
   }
 }

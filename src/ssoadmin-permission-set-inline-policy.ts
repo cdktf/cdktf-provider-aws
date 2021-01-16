@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SsoadminPermissionSetInlinePolicyConfig extends TerraformMetaArguments {
+export interface SsoadminPermissionSetInlinePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly inlinePolicy: string;
   readonly instanceArn: string;
   readonly permissionSetArn: string;
@@ -15,7 +14,7 @@ export interface SsoadminPermissionSetInlinePolicyConfig extends TerraformMetaAr
 
 // Resource
 
-export class SsoadminPermissionSetInlinePolicy extends TerraformResource {
+export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,39 +41,47 @@ export class SsoadminPermissionSetInlinePolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // inline_policy - computed: false, optional: false, required: true
   private _inlinePolicy: string;
   public get inlinePolicy() {
-    return this._inlinePolicy;
+    return this.getStringAttribute('inline_policy');
   }
   public set inlinePolicy(value: string) {
     this._inlinePolicy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inlinePolicyInput() {
+    return this._inlinePolicy
   }
 
   // instance_arn - computed: false, optional: false, required: true
   private _instanceArn: string;
   public get instanceArn() {
-    return this._instanceArn;
+    return this.getStringAttribute('instance_arn');
   }
   public set instanceArn(value: string) {
     this._instanceArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceArnInput() {
+    return this._instanceArn
   }
 
   // permission_set_arn - computed: false, optional: false, required: true
   private _permissionSetArn: string;
   public get permissionSetArn() {
-    return this._permissionSetArn;
+    return this.getStringAttribute('permission_set_arn');
   }
   public set permissionSetArn(value: string) {
     this._permissionSetArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionSetArnInput() {
+    return this._permissionSetArn
   }
 
   // =========
@@ -83,9 +90,9 @@ export class SsoadminPermissionSetInlinePolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      inline_policy: this._inlinePolicy,
-      instance_arn: this._instanceArn,
-      permission_set_arn: this._permissionSetArn,
+      inline_policy: cdktf.stringToTerraform(this._inlinePolicy),
+      instance_arn: cdktf.stringToTerraform(this._instanceArn),
+      permission_set_arn: cdktf.stringToTerraform(this._permissionSetArn),
     };
   }
 }

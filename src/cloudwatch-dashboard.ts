@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchDashboardConfig extends TerraformMetaArguments {
+export interface CloudwatchDashboardConfig extends cdktf.TerraformMetaArguments {
   readonly dashboardBody: string;
   readonly dashboardName: string;
 }
 
 // Resource
 
-export class CloudwatchDashboard extends TerraformResource {
+export class CloudwatchDashboard extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -39,7 +38,7 @@ export class CloudwatchDashboard extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // dashboard_arn - computed: true, optional: false, required: true
+  // dashboard_arn - computed: true, optional: false, required: false
   public get dashboardArn() {
     return this.getStringAttribute('dashboard_arn');
   }
@@ -47,28 +46,32 @@ export class CloudwatchDashboard extends TerraformResource {
   // dashboard_body - computed: false, optional: false, required: true
   private _dashboardBody: string;
   public get dashboardBody() {
-    return this._dashboardBody;
+    return this.getStringAttribute('dashboard_body');
   }
   public set dashboardBody(value: string) {
     this._dashboardBody = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dashboardBodyInput() {
+    return this._dashboardBody
   }
 
   // dashboard_name - computed: false, optional: false, required: true
   private _dashboardName: string;
   public get dashboardName() {
-    return this._dashboardName;
+    return this.getStringAttribute('dashboard_name');
   }
   public set dashboardName(value: string) {
     this._dashboardName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get dashboardNameInput() {
+    return this._dashboardName
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========
@@ -77,8 +80,8 @@ export class CloudwatchDashboard extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dashboard_body: this._dashboardBody,
-      dashboard_name: this._dashboardName,
+      dashboard_body: cdktf.stringToTerraform(this._dashboardBody),
+      dashboard_name: cdktf.stringToTerraform(this._dashboardName),
     };
   }
 }

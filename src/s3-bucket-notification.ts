@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface S3BucketNotificationConfig extends TerraformMetaArguments {
+export interface S3BucketNotificationConfig extends cdktf.TerraformMetaArguments {
   readonly bucket: string;
   /** lambda_function block */
   readonly lambdaFunction?: S3BucketNotificationLambdaFunction[];
@@ -23,6 +22,18 @@ export interface S3BucketNotificationLambdaFunction {
   readonly id?: string;
   readonly lambdaFunctionArn?: string;
 }
+
+function s3BucketNotificationLambdaFunctionToTerraform(struct?: S3BucketNotificationLambdaFunction): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
+    filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
+    id: cdktf.stringToTerraform(struct!.id),
+    lambda_function_arn: cdktf.stringToTerraform(struct!.lambdaFunctionArn),
+  }
+}
+
 export interface S3BucketNotificationQueue {
   readonly events: string[];
   readonly filterPrefix?: string;
@@ -30,6 +41,18 @@ export interface S3BucketNotificationQueue {
   readonly id?: string;
   readonly queueArn: string;
 }
+
+function s3BucketNotificationQueueToTerraform(struct?: S3BucketNotificationQueue): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
+    filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
+    id: cdktf.stringToTerraform(struct!.id),
+    queue_arn: cdktf.stringToTerraform(struct!.queueArn),
+  }
+}
+
 export interface S3BucketNotificationTopic {
   readonly events: string[];
   readonly filterPrefix?: string;
@@ -38,9 +61,21 @@ export interface S3BucketNotificationTopic {
   readonly topicArn: string;
 }
 
+function s3BucketNotificationTopicToTerraform(struct?: S3BucketNotificationTopic): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    filter_prefix: cdktf.stringToTerraform(struct!.filterPrefix),
+    filter_suffix: cdktf.stringToTerraform(struct!.filterSuffix),
+    id: cdktf.stringToTerraform(struct!.id),
+    topic_arn: cdktf.stringToTerraform(struct!.topicArn),
+  }
+}
+
+
 // Resource
 
-export class S3BucketNotification extends TerraformResource {
+export class S3BucketNotification extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -70,46 +105,67 @@ export class S3BucketNotification extends TerraformResource {
   // bucket - computed: false, optional: false, required: true
   private _bucket: string;
   public get bucket() {
-    return this._bucket;
+    return this.getStringAttribute('bucket');
   }
   public set bucket(value: string) {
     this._bucket = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // lambda_function - computed: false, optional: true, required: false
   private _lambdaFunction?: S3BucketNotificationLambdaFunction[];
   public get lambdaFunction() {
-    return this._lambdaFunction;
+    return this.interpolationForAttribute('lambda_function') as any;
   }
-  public set lambdaFunction(value: S3BucketNotificationLambdaFunction[] | undefined) {
+  public set lambdaFunction(value: S3BucketNotificationLambdaFunction[] ) {
     this._lambdaFunction = value;
+  }
+  public resetLambdaFunction() {
+    this._lambdaFunction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lambdaFunctionInput() {
+    return this._lambdaFunction
   }
 
   // queue - computed: false, optional: true, required: false
   private _queue?: S3BucketNotificationQueue[];
   public get queue() {
-    return this._queue;
+    return this.interpolationForAttribute('queue') as any;
   }
-  public set queue(value: S3BucketNotificationQueue[] | undefined) {
+  public set queue(value: S3BucketNotificationQueue[] ) {
     this._queue = value;
+  }
+  public resetQueue() {
+    this._queue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueInput() {
+    return this._queue
   }
 
   // topic - computed: false, optional: true, required: false
   private _topic?: S3BucketNotificationTopic[];
   public get topic() {
-    return this._topic;
+    return this.interpolationForAttribute('topic') as any;
   }
-  public set topic(value: S3BucketNotificationTopic[] | undefined) {
+  public set topic(value: S3BucketNotificationTopic[] ) {
     this._topic = value;
+  }
+  public resetTopic() {
+    this._topic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicInput() {
+    return this._topic
   }
 
   // =========
@@ -118,10 +174,10 @@ export class S3BucketNotification extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: this._bucket,
-      lambda_function: this._lambdaFunction,
-      queue: this._queue,
-      topic: this._topic,
+      bucket: cdktf.stringToTerraform(this._bucket),
+      lambda_function: cdktf.listMapper(s3BucketNotificationLambdaFunctionToTerraform)(this._lambdaFunction),
+      queue: cdktf.listMapper(s3BucketNotificationQueueToTerraform)(this._queue),
+      topic: cdktf.listMapper(s3BucketNotificationTopicToTerraform)(this._topic),
     };
   }
 }

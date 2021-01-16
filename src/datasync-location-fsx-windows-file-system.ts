@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatasyncLocationFsxWindowsFileSystemConfig extends TerraformMetaArguments {
+export interface DatasyncLocationFsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly domain?: string;
   readonly fsxFilesystemArn: string;
   readonly password: string;
@@ -19,7 +18,7 @@ export interface DatasyncLocationFsxWindowsFileSystemConfig extends TerraformMet
 
 // Resource
 
-export class DatasyncLocationFsxWindowsFileSystem extends TerraformResource {
+export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -49,12 +48,12 @@ export class DatasyncLocationFsxWindowsFileSystem extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // creation_time - computed: true, optional: false, required: true
+  // creation_time - computed: true, optional: false, required: false
   public get creationTime() {
     return this.getStringAttribute('creation_time');
   }
@@ -62,67 +61,96 @@ export class DatasyncLocationFsxWindowsFileSystem extends TerraformResource {
   // domain - computed: false, optional: true, required: false
   private _domain?: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
-  public set domain(value: string | undefined) {
+  public set domain(value: string ) {
     this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
   }
 
   // fsx_filesystem_arn - computed: false, optional: false, required: true
   private _fsxFilesystemArn: string;
   public get fsxFilesystemArn() {
-    return this._fsxFilesystemArn;
+    return this.getStringAttribute('fsx_filesystem_arn');
   }
   public set fsxFilesystemArn(value: string) {
     this._fsxFilesystemArn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fsxFilesystemArnInput() {
+    return this._fsxFilesystemArn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // password - computed: false, optional: false, required: true
   private _password: string;
   public get password() {
-    return this._password;
+    return this.getStringAttribute('password');
   }
   public set password(value: string) {
     this._password = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password
   }
 
   // security_group_arns - computed: false, optional: false, required: true
   private _securityGroupArns: string[];
   public get securityGroupArns() {
-    return this._securityGroupArns;
+    return this.getListAttribute('security_group_arns');
   }
   public set securityGroupArns(value: string[]) {
     this._securityGroupArns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupArnsInput() {
+    return this._securityGroupArns
   }
 
   // subdirectory - computed: true, optional: true, required: false
   private _subdirectory?: string;
   public get subdirectory() {
-    return this._subdirectory ?? this.getStringAttribute('subdirectory');
+    return this.getStringAttribute('subdirectory');
   }
-  public set subdirectory(value: string | undefined) {
+  public set subdirectory(value: string) {
     this._subdirectory = value;
+  }
+  public resetSubdirectory() {
+    this._subdirectory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subdirectoryInput() {
+    return this._subdirectory
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // uri - computed: true, optional: false, required: true
+  // uri - computed: true, optional: false, required: false
   public get uri() {
     return this.getStringAttribute('uri');
   }
@@ -130,10 +158,14 @@ export class DatasyncLocationFsxWindowsFileSystem extends TerraformResource {
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this._user;
+    return this.getStringAttribute('user');
   }
   public set user(value: string) {
     this._user = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user
   }
 
   // =========
@@ -142,13 +174,13 @@ export class DatasyncLocationFsxWindowsFileSystem extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
-      fsx_filesystem_arn: this._fsxFilesystemArn,
-      password: this._password,
-      security_group_arns: this._securityGroupArns,
-      subdirectory: this._subdirectory,
-      tags: this._tags,
-      user: this._user,
+      domain: cdktf.stringToTerraform(this._domain),
+      fsx_filesystem_arn: cdktf.stringToTerraform(this._fsxFilesystemArn),
+      password: cdktf.stringToTerraform(this._password),
+      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupArns),
+      subdirectory: cdktf.stringToTerraform(this._subdirectory),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

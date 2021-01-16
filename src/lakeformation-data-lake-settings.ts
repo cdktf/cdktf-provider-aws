@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LakeformationDataLakeSettingsConfig extends TerraformMetaArguments {
+export interface LakeformationDataLakeSettingsConfig extends cdktf.TerraformMetaArguments {
   readonly admins?: string[];
   readonly catalogId?: string;
   readonly trustedResourceOwners?: string[];
@@ -20,14 +19,32 @@ export interface LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions {
   readonly permissions?: string[];
   readonly principal?: string;
 }
+
+function lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    principal: cdktf.stringToTerraform(struct!.principal),
+  }
+}
+
 export interface LakeformationDataLakeSettingsCreateTableDefaultPermissions {
   readonly permissions?: string[];
   readonly principal?: string;
 }
 
+function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform(struct?: LakeformationDataLakeSettingsCreateTableDefaultPermissions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.permissions),
+    principal: cdktf.stringToTerraform(struct!.principal),
+  }
+}
+
+
 // Resource
 
-export class LakeformationDataLakeSettings extends TerraformResource {
+export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -58,55 +75,86 @@ export class LakeformationDataLakeSettings extends TerraformResource {
   // admins - computed: true, optional: true, required: false
   private _admins?: string[];
   public get admins() {
-    return this._admins ?? this.getListAttribute('admins');
+    return this.getListAttribute('admins');
   }
-  public set admins(value: string[] | undefined) {
+  public set admins(value: string[]) {
     this._admins = value;
+  }
+  public resetAdmins() {
+    this._admins = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminsInput() {
+    return this._admins
   }
 
   // catalog_id - computed: false, optional: true, required: false
   private _catalogId?: string;
   public get catalogId() {
-    return this._catalogId;
+    return this.getStringAttribute('catalog_id');
   }
-  public set catalogId(value: string | undefined) {
+  public set catalogId(value: string ) {
     this._catalogId = value;
+  }
+  public resetCatalogId() {
+    this._catalogId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogIdInput() {
+    return this._catalogId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // trusted_resource_owners - computed: true, optional: true, required: false
   private _trustedResourceOwners?: string[];
   public get trustedResourceOwners() {
-    return this._trustedResourceOwners ?? this.getListAttribute('trusted_resource_owners');
+    return this.getListAttribute('trusted_resource_owners');
   }
-  public set trustedResourceOwners(value: string[] | undefined) {
+  public set trustedResourceOwners(value: string[]) {
     this._trustedResourceOwners = value;
+  }
+  public resetTrustedResourceOwners() {
+    this._trustedResourceOwners = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trustedResourceOwnersInput() {
+    return this._trustedResourceOwners
   }
 
   // create_database_default_permissions - computed: false, optional: true, required: false
   private _createDatabaseDefaultPermissions?: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[];
   public get createDatabaseDefaultPermissions() {
-    return this._createDatabaseDefaultPermissions;
+    return this.interpolationForAttribute('create_database_default_permissions') as any;
   }
-  public set createDatabaseDefaultPermissions(value: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] | undefined) {
+  public set createDatabaseDefaultPermissions(value: LakeformationDataLakeSettingsCreateDatabaseDefaultPermissions[] ) {
     this._createDatabaseDefaultPermissions = value;
+  }
+  public resetCreateDatabaseDefaultPermissions() {
+    this._createDatabaseDefaultPermissions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createDatabaseDefaultPermissionsInput() {
+    return this._createDatabaseDefaultPermissions
   }
 
   // create_table_default_permissions - computed: false, optional: true, required: false
   private _createTableDefaultPermissions?: LakeformationDataLakeSettingsCreateTableDefaultPermissions[];
   public get createTableDefaultPermissions() {
-    return this._createTableDefaultPermissions;
+    return this.interpolationForAttribute('create_table_default_permissions') as any;
   }
-  public set createTableDefaultPermissions(value: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] | undefined) {
+  public set createTableDefaultPermissions(value: LakeformationDataLakeSettingsCreateTableDefaultPermissions[] ) {
     this._createTableDefaultPermissions = value;
+  }
+  public resetCreateTableDefaultPermissions() {
+    this._createTableDefaultPermissions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createTableDefaultPermissionsInput() {
+    return this._createTableDefaultPermissions
   }
 
   // =========
@@ -115,11 +163,11 @@ export class LakeformationDataLakeSettings extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admins: this._admins,
-      catalog_id: this._catalogId,
-      trusted_resource_owners: this._trustedResourceOwners,
-      create_database_default_permissions: this._createDatabaseDefaultPermissions,
-      create_table_default_permissions: this._createTableDefaultPermissions,
+      admins: cdktf.listMapper(cdktf.stringToTerraform)(this._admins),
+      catalog_id: cdktf.stringToTerraform(this._catalogId),
+      trusted_resource_owners: cdktf.listMapper(cdktf.stringToTerraform)(this._trustedResourceOwners),
+      create_database_default_permissions: cdktf.listMapper(lakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsToTerraform)(this._createDatabaseDefaultPermissions),
+      create_table_default_permissions: cdktf.listMapper(lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform)(this._createTableDefaultPermissions),
     };
   }
 }

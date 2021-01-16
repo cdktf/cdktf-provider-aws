@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GuarddutyPublishingDestinationConfig extends TerraformMetaArguments {
+export interface GuarddutyPublishingDestinationConfig extends cdktf.TerraformMetaArguments {
   readonly destinationArn: string;
   readonly destinationType?: string;
   readonly detectorId: string;
@@ -16,7 +15,7 @@ export interface GuarddutyPublishingDestinationConfig extends TerraformMetaArgum
 
 // Resource
 
-export class GuarddutyPublishingDestination extends TerraformResource {
+export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,46 +45,61 @@ export class GuarddutyPublishingDestination extends TerraformResource {
   // destination_arn - computed: false, optional: false, required: true
   private _destinationArn: string;
   public get destinationArn() {
-    return this._destinationArn;
+    return this.getStringAttribute('destination_arn');
   }
   public set destinationArn(value: string) {
     this._destinationArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationArnInput() {
+    return this._destinationArn
   }
 
   // destination_type - computed: false, optional: true, required: false
   private _destinationType?: string;
   public get destinationType() {
-    return this._destinationType;
+    return this.getStringAttribute('destination_type');
   }
-  public set destinationType(value: string | undefined) {
+  public set destinationType(value: string ) {
     this._destinationType = value;
+  }
+  public resetDestinationType() {
+    this._destinationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationTypeInput() {
+    return this._destinationType
   }
 
   // detector_id - computed: false, optional: false, required: true
   private _detectorId: string;
   public get detectorId() {
-    return this._detectorId;
+    return this.getStringAttribute('detector_id');
   }
   public set detectorId(value: string) {
     this._detectorId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get detectorIdInput() {
+    return this._detectorId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_arn - computed: false, optional: false, required: true
   private _kmsKeyArn: string;
   public get kmsKeyArn() {
-    return this._kmsKeyArn;
+    return this.getStringAttribute('kms_key_arn');
   }
   public set kmsKeyArn(value: string) {
     this._kmsKeyArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyArnInput() {
+    return this._kmsKeyArn
   }
 
   // =========
@@ -94,10 +108,10 @@ export class GuarddutyPublishingDestination extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_arn: this._destinationArn,
-      destination_type: this._destinationType,
-      detector_id: this._detectorId,
-      kms_key_arn: this._kmsKeyArn,
+      destination_arn: cdktf.stringToTerraform(this._destinationArn),
+      destination_type: cdktf.stringToTerraform(this._destinationType),
+      detector_id: cdktf.stringToTerraform(this._detectorId),
+      kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
     };
   }
 }

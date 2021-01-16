@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesIdentityNotificationTopicConfig extends TerraformMetaArguments {
+export interface SesIdentityNotificationTopicConfig extends cdktf.TerraformMetaArguments {
   readonly identity: string;
   readonly includeOriginalHeaders?: boolean;
   readonly notificationType: string;
@@ -16,7 +15,7 @@ export interface SesIdentityNotificationTopicConfig extends TerraformMetaArgumen
 
 // Resource
 
-export class SesIdentityNotificationTopic extends TerraformResource {
+export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,48 +43,66 @@ export class SesIdentityNotificationTopic extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identity - computed: false, optional: false, required: true
   private _identity: string;
   public get identity() {
-    return this._identity;
+    return this.getStringAttribute('identity');
   }
   public set identity(value: string) {
     this._identity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityInput() {
+    return this._identity
   }
 
   // include_original_headers - computed: false, optional: true, required: false
   private _includeOriginalHeaders?: boolean;
   public get includeOriginalHeaders() {
-    return this._includeOriginalHeaders;
+    return this.getBooleanAttribute('include_original_headers');
   }
-  public set includeOriginalHeaders(value: boolean | undefined) {
+  public set includeOriginalHeaders(value: boolean ) {
     this._includeOriginalHeaders = value;
+  }
+  public resetIncludeOriginalHeaders() {
+    this._includeOriginalHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeOriginalHeadersInput() {
+    return this._includeOriginalHeaders
   }
 
   // notification_type - computed: false, optional: false, required: true
   private _notificationType: string;
   public get notificationType() {
-    return this._notificationType;
+    return this.getStringAttribute('notification_type');
   }
   public set notificationType(value: string) {
     this._notificationType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationTypeInput() {
+    return this._notificationType
   }
 
   // topic_arn - computed: false, optional: true, required: false
   private _topicArn?: string;
   public get topicArn() {
-    return this._topicArn;
+    return this.getStringAttribute('topic_arn');
   }
-  public set topicArn(value: string | undefined) {
+  public set topicArn(value: string ) {
     this._topicArn = value;
+  }
+  public resetTopicArn() {
+    this._topicArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicArnInput() {
+    return this._topicArn
   }
 
   // =========
@@ -94,10 +111,10 @@ export class SesIdentityNotificationTopic extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identity: this._identity,
-      include_original_headers: this._includeOriginalHeaders,
-      notification_type: this._notificationType,
-      topic_arn: this._topicArn,
+      identity: cdktf.stringToTerraform(this._identity),
+      include_original_headers: cdktf.booleanToTerraform(this._includeOriginalHeaders),
+      notification_type: cdktf.stringToTerraform(this._notificationType),
+      topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }
 }

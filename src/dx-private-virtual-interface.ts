@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxPrivateVirtualInterfaceConfig extends TerraformMetaArguments {
+export interface DxPrivateVirtualInterfaceConfig extends cdktf.TerraformMetaArguments {
   readonly addressFamily: string;
   readonly amazonAddress?: string;
   readonly bgpAsn: number;
@@ -29,9 +28,19 @@ export interface DxPrivateVirtualInterfaceTimeouts {
   readonly update?: string;
 }
 
+function dxPrivateVirtualInterfaceTimeoutsToTerraform(struct?: DxPrivateVirtualInterfaceTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class DxPrivateVirtualInterface extends TerraformResource {
+export class DxPrivateVirtualInterface extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -70,32 +79,43 @@ export class DxPrivateVirtualInterface extends TerraformResource {
   // address_family - computed: false, optional: false, required: true
   private _addressFamily: string;
   public get addressFamily() {
-    return this._addressFamily;
+    return this.getStringAttribute('address_family');
   }
   public set addressFamily(value: string) {
     this._addressFamily = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressFamilyInput() {
+    return this._addressFamily
   }
 
   // amazon_address - computed: true, optional: true, required: false
   private _amazonAddress?: string;
   public get amazonAddress() {
-    return this._amazonAddress ?? this.getStringAttribute('amazon_address');
+    return this.getStringAttribute('amazon_address');
   }
-  public set amazonAddress(value: string | undefined) {
+  public set amazonAddress(value: string) {
     this._amazonAddress = value;
   }
+  public resetAmazonAddress() {
+    this._amazonAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amazonAddressInput() {
+    return this._amazonAddress
+  }
 
-  // amazon_side_asn - computed: true, optional: false, required: true
+  // amazon_side_asn - computed: true, optional: false, required: false
   public get amazonSideAsn() {
     return this.getStringAttribute('amazon_side_asn');
   }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // aws_device - computed: true, optional: false, required: true
+  // aws_device - computed: true, optional: false, required: false
   public get awsDevice() {
     return this.getStringAttribute('aws_device');
   }
@@ -103,58 +123,83 @@ export class DxPrivateVirtualInterface extends TerraformResource {
   // bgp_asn - computed: false, optional: false, required: true
   private _bgpAsn: number;
   public get bgpAsn() {
-    return this._bgpAsn;
+    return this.getNumberAttribute('bgp_asn');
   }
   public set bgpAsn(value: number) {
     this._bgpAsn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bgpAsnInput() {
+    return this._bgpAsn
   }
 
   // bgp_auth_key - computed: true, optional: true, required: false
   private _bgpAuthKey?: string;
   public get bgpAuthKey() {
-    return this._bgpAuthKey ?? this.getStringAttribute('bgp_auth_key');
+    return this.getStringAttribute('bgp_auth_key');
   }
-  public set bgpAuthKey(value: string | undefined) {
+  public set bgpAuthKey(value: string) {
     this._bgpAuthKey = value;
+  }
+  public resetBgpAuthKey() {
+    this._bgpAuthKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bgpAuthKeyInput() {
+    return this._bgpAuthKey
   }
 
   // connection_id - computed: false, optional: false, required: true
   private _connectionId: string;
   public get connectionId() {
-    return this._connectionId;
+    return this.getStringAttribute('connection_id');
   }
   public set connectionId(value: string) {
     this._connectionId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionIdInput() {
+    return this._connectionId
   }
 
   // customer_address - computed: true, optional: true, required: false
   private _customerAddress?: string;
   public get customerAddress() {
-    return this._customerAddress ?? this.getStringAttribute('customer_address');
+    return this.getStringAttribute('customer_address');
   }
-  public set customerAddress(value: string | undefined) {
+  public set customerAddress(value: string) {
     this._customerAddress = value;
+  }
+  public resetCustomerAddress() {
+    this._customerAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerAddressInput() {
+    return this._customerAddress
   }
 
   // dx_gateway_id - computed: false, optional: true, required: false
   private _dxGatewayId?: string;
   public get dxGatewayId() {
-    return this._dxGatewayId;
+    return this.getStringAttribute('dx_gateway_id');
   }
-  public set dxGatewayId(value: string | undefined) {
+  public set dxGatewayId(value: string ) {
     this._dxGatewayId = value;
+  }
+  public resetDxGatewayId() {
+    this._dxGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dxGatewayIdInput() {
+    return this._dxGatewayId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // jumbo_frame_capable - computed: true, optional: false, required: true
+  // jumbo_frame_capable - computed: true, optional: false, required: false
   public get jumboFrameCapable() {
     return this.getBooleanAttribute('jumbo_frame_capable');
   }
@@ -162,55 +207,91 @@ export class DxPrivateVirtualInterface extends TerraformResource {
   // mtu - computed: false, optional: true, required: false
   private _mtu?: number;
   public get mtu() {
-    return this._mtu;
+    return this.getNumberAttribute('mtu');
   }
-  public set mtu(value: number | undefined) {
+  public set mtu(value: number ) {
     this._mtu = value;
+  }
+  public resetMtu() {
+    this._mtu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mtuInput() {
+    return this._mtu
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // vlan - computed: false, optional: false, required: true
   private _vlan: number;
   public get vlan() {
-    return this._vlan;
+    return this.getNumberAttribute('vlan');
   }
   public set vlan(value: number) {
     this._vlan = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vlanInput() {
+    return this._vlan
   }
 
   // vpn_gateway_id - computed: false, optional: true, required: false
   private _vpnGatewayId?: string;
   public get vpnGatewayId() {
-    return this._vpnGatewayId;
+    return this.getStringAttribute('vpn_gateway_id');
   }
-  public set vpnGatewayId(value: string | undefined) {
+  public set vpnGatewayId(value: string ) {
     this._vpnGatewayId = value;
+  }
+  public resetVpnGatewayId() {
+    this._vpnGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpnGatewayIdInput() {
+    return this._vpnGatewayId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DxPrivateVirtualInterfaceTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: DxPrivateVirtualInterfaceTimeouts | undefined) {
+  public set timeouts(value: DxPrivateVirtualInterfaceTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -219,19 +300,19 @@ export class DxPrivateVirtualInterface extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_family: this._addressFamily,
-      amazon_address: this._amazonAddress,
-      bgp_asn: this._bgpAsn,
-      bgp_auth_key: this._bgpAuthKey,
-      connection_id: this._connectionId,
-      customer_address: this._customerAddress,
-      dx_gateway_id: this._dxGatewayId,
-      mtu: this._mtu,
-      name: this._name,
-      tags: this._tags,
-      vlan: this._vlan,
-      vpn_gateway_id: this._vpnGatewayId,
-      timeouts: this._timeouts,
+      address_family: cdktf.stringToTerraform(this._addressFamily),
+      amazon_address: cdktf.stringToTerraform(this._amazonAddress),
+      bgp_asn: cdktf.numberToTerraform(this._bgpAsn),
+      bgp_auth_key: cdktf.stringToTerraform(this._bgpAuthKey),
+      connection_id: cdktf.stringToTerraform(this._connectionId),
+      customer_address: cdktf.stringToTerraform(this._customerAddress),
+      dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
+      mtu: cdktf.numberToTerraform(this._mtu),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      vlan: cdktf.numberToTerraform(this._vlan),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
+      timeouts: dxPrivateVirtualInterfaceTimeoutsToTerraform(this._timeouts),
     };
   }
 }

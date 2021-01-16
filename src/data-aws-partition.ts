@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsPartitionConfig extends TerraformMetaArguments {
+export interface DataAwsPartitionConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsPartition extends TerraformDataSource {
+export class DataAwsPartition extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -35,26 +34,22 @@ export class DataAwsPartition extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // dns_suffix - computed: true, optional: false, required: true
+  // dns_suffix - computed: true, optional: false, required: false
   public get dnsSuffix() {
     return this.getStringAttribute('dns_suffix');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // partition - computed: true, optional: false, required: true
+  // partition - computed: true, optional: false, required: false
   public get partition() {
     return this.getStringAttribute('partition');
   }
 
-  // reverse_dns_prefix - computed: true, optional: false, required: true
+  // reverse_dns_prefix - computed: true, optional: false, required: false
   public get reverseDnsPrefix() {
     return this.getStringAttribute('reverse_dns_prefix');
   }

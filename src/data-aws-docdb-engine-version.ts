@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsDocdbEngineVersionConfig extends TerraformMetaArguments {
+export interface DataAwsDocdbEngineVersionConfig extends cdktf.TerraformMetaArguments {
   readonly engine?: string;
   readonly parameterGroupFamily?: string;
   readonly preferredVersions?: string[];
@@ -16,7 +15,7 @@ export interface DataAwsDocdbEngineVersionConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class DataAwsDocdbEngineVersion extends TerraformDataSource {
+export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,55 +45,72 @@ export class DataAwsDocdbEngineVersion extends TerraformDataSource {
   // engine - computed: false, optional: true, required: false
   private _engine?: string;
   public get engine() {
-    return this._engine;
+    return this.getStringAttribute('engine');
   }
-  public set engine(value: string | undefined) {
+  public set engine(value: string ) {
     this._engine = value;
   }
+  public resetEngine() {
+    this._engine = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
+  }
 
-  // engine_description - computed: true, optional: false, required: true
+  // engine_description - computed: true, optional: false, required: false
   public get engineDescription() {
     return this.getStringAttribute('engine_description');
   }
 
-  // exportable_log_types - computed: true, optional: false, required: true
+  // exportable_log_types - computed: true, optional: false, required: false
   public get exportableLogTypes() {
     return this.getListAttribute('exportable_log_types');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // parameter_group_family - computed: true, optional: true, required: false
   private _parameterGroupFamily?: string;
   public get parameterGroupFamily() {
-    return this._parameterGroupFamily ?? this.getStringAttribute('parameter_group_family');
+    return this.getStringAttribute('parameter_group_family');
   }
-  public set parameterGroupFamily(value: string | undefined) {
+  public set parameterGroupFamily(value: string) {
     this._parameterGroupFamily = value;
+  }
+  public resetParameterGroupFamily() {
+    this._parameterGroupFamily = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterGroupFamilyInput() {
+    return this._parameterGroupFamily
   }
 
   // preferred_versions - computed: false, optional: true, required: false
   private _preferredVersions?: string[];
   public get preferredVersions() {
-    return this._preferredVersions;
+    return this.getListAttribute('preferred_versions');
   }
-  public set preferredVersions(value: string[] | undefined) {
+  public set preferredVersions(value: string[] ) {
     this._preferredVersions = value;
   }
+  public resetPreferredVersions() {
+    this._preferredVersions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preferredVersionsInput() {
+    return this._preferredVersions
+  }
 
-  // supports_log_exports_to_cloudwatch - computed: true, optional: false, required: true
+  // supports_log_exports_to_cloudwatch - computed: true, optional: false, required: false
   public get supportsLogExportsToCloudwatch() {
     return this.getBooleanAttribute('supports_log_exports_to_cloudwatch');
   }
 
-  // valid_upgrade_targets - computed: true, optional: false, required: true
+  // valid_upgrade_targets - computed: true, optional: false, required: false
   public get validUpgradeTargets() {
     return this.getListAttribute('valid_upgrade_targets');
   }
@@ -102,13 +118,20 @@ export class DataAwsDocdbEngineVersion extends TerraformDataSource {
   // version - computed: true, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this._version ?? this.getStringAttribute('version');
+    return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string) {
     this._version = value;
   }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
+  }
 
-  // version_description - computed: true, optional: false, required: true
+  // version_description - computed: true, optional: false, required: false
   public get versionDescription() {
     return this.getStringAttribute('version_description');
   }
@@ -119,10 +142,10 @@ export class DataAwsDocdbEngineVersion extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      engine: this._engine,
-      parameter_group_family: this._parameterGroupFamily,
-      preferred_versions: this._preferredVersions,
-      version: this._version,
+      engine: cdktf.stringToTerraform(this._engine),
+      parameter_group_family: cdktf.stringToTerraform(this._parameterGroupFamily),
+      preferred_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._preferredVersions),
+      version: cdktf.stringToTerraform(this._version),
     };
   }
 }

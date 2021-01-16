@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LoadBalancerListenerPolicyConfig extends TerraformMetaArguments {
+export interface LoadBalancerListenerPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly loadBalancerName: string;
   readonly loadBalancerPort: number;
   readonly policyNames?: string[];
@@ -15,7 +14,7 @@ export interface LoadBalancerListenerPolicyConfig extends TerraformMetaArguments
 
 // Resource
 
-export class LoadBalancerListenerPolicy extends TerraformResource {
+export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,39 +41,50 @@ export class LoadBalancerListenerPolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // load_balancer_name - computed: false, optional: false, required: true
   private _loadBalancerName: string;
   public get loadBalancerName() {
-    return this._loadBalancerName;
+    return this.getStringAttribute('load_balancer_name');
   }
   public set loadBalancerName(value: string) {
     this._loadBalancerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerNameInput() {
+    return this._loadBalancerName
   }
 
   // load_balancer_port - computed: false, optional: false, required: true
   private _loadBalancerPort: number;
   public get loadBalancerPort() {
-    return this._loadBalancerPort;
+    return this.getNumberAttribute('load_balancer_port');
   }
   public set loadBalancerPort(value: number) {
     this._loadBalancerPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerPortInput() {
+    return this._loadBalancerPort
   }
 
   // policy_names - computed: false, optional: true, required: false
   private _policyNames?: string[];
   public get policyNames() {
-    return this._policyNames;
+    return this.getListAttribute('policy_names');
   }
-  public set policyNames(value: string[] | undefined) {
+  public set policyNames(value: string[] ) {
     this._policyNames = value;
+  }
+  public resetPolicyNames() {
+    this._policyNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyNamesInput() {
+    return this._policyNames
   }
 
   // =========
@@ -83,9 +93,9 @@ export class LoadBalancerListenerPolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      load_balancer_name: this._loadBalancerName,
-      load_balancer_port: this._loadBalancerPort,
-      policy_names: this._policyNames,
+      load_balancer_name: cdktf.stringToTerraform(this._loadBalancerName),
+      load_balancer_port: cdktf.numberToTerraform(this._loadBalancerPort),
+      policy_names: cdktf.listMapper(cdktf.stringToTerraform)(this._policyNames),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CodedeployAppConfig extends TerraformMetaArguments {
+export interface CodedeployAppConfig extends cdktf.TerraformMetaArguments {
   readonly computePlatform?: string;
   readonly name: string;
   readonly uniqueId?: string;
@@ -15,7 +14,7 @@ export interface CodedeployAppConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CodedeployApp extends TerraformResource {
+export class CodedeployApp extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,37 +43,51 @@ export class CodedeployApp extends TerraformResource {
   // compute_platform - computed: false, optional: true, required: false
   private _computePlatform?: string;
   public get computePlatform() {
-    return this._computePlatform;
+    return this.getStringAttribute('compute_platform');
   }
-  public set computePlatform(value: string | undefined) {
+  public set computePlatform(value: string ) {
     this._computePlatform = value;
+  }
+  public resetComputePlatform() {
+    this._computePlatform = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computePlatformInput() {
+    return this._computePlatform
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // unique_id - computed: true, optional: true, required: false
   private _uniqueId?: string;
   public get uniqueId() {
-    return this._uniqueId ?? this.getStringAttribute('unique_id');
+    return this.getStringAttribute('unique_id');
   }
-  public set uniqueId(value: string | undefined) {
+  public set uniqueId(value: string) {
     this._uniqueId = value;
+  }
+  public resetUniqueId() {
+    this._uniqueId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uniqueIdInput() {
+    return this._uniqueId
   }
 
   // =========
@@ -83,9 +96,9 @@ export class CodedeployApp extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      compute_platform: this._computePlatform,
-      name: this._name,
-      unique_id: this._uniqueId,
+      compute_platform: cdktf.stringToTerraform(this._computePlatform),
+      name: cdktf.stringToTerraform(this._name),
+      unique_id: cdktf.stringToTerraform(this._uniqueId),
     };
   }
 }

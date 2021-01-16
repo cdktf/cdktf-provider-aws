@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLakeformationResourceConfig extends TerraformMetaArguments {
+export interface DataAwsLakeformationResourceConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
 }
 
 // Resource
 
-export class DataAwsLakeformationResource extends TerraformDataSource {
+export class DataAwsLakeformationResource extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -40,27 +39,27 @@ export class DataAwsLakeformationResource extends TerraformDataSource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this._arn;
+    return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_modified - computed: true, optional: false, required: true
+  // last_modified - computed: true, optional: false, required: false
   public get lastModified() {
     return this.getStringAttribute('last_modified');
   }
 
-  // role_arn - computed: true, optional: false, required: true
+  // role_arn - computed: true, optional: false, required: false
   public get roleArn() {
     return this.getStringAttribute('role_arn');
   }
@@ -71,7 +70,7 @@ export class DataAwsLakeformationResource extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
+      arn: cdktf.stringToTerraform(this._arn),
     };
   }
 }

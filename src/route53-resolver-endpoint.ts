@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53ResolverEndpointConfig extends TerraformMetaArguments {
+export interface Route53ResolverEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly direction: string;
   readonly name?: string;
   readonly securityGroupIds: string[];
@@ -21,15 +20,34 @@ export interface Route53ResolverEndpointIpAddress {
   readonly ip?: string;
   readonly subnetId: string;
 }
+
+function route53ResolverEndpointIpAddressToTerraform(struct?: Route53ResolverEndpointIpAddress): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ip: cdktf.stringToTerraform(struct!.ip),
+    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+  }
+}
+
 export interface Route53ResolverEndpointTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function route53ResolverEndpointTimeoutsToTerraform(struct?: Route53ResolverEndpointTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class Route53ResolverEndpoint extends TerraformResource {
+export class Route53ResolverEndpoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -58,7 +76,7 @@ export class Route53ResolverEndpoint extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -66,69 +84,98 @@ export class Route53ResolverEndpoint extends TerraformResource {
   // direction - computed: false, optional: false, required: true
   private _direction: string;
   public get direction() {
-    return this._direction;
+    return this.getStringAttribute('direction');
   }
   public set direction(value: string) {
     this._direction = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction
+  }
 
-  // host_vpc_id - computed: true, optional: false, required: true
+  // host_vpc_id - computed: true, optional: false, required: false
   public get hostVpcId() {
     return this.getStringAttribute('host_vpc_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string ) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // security_group_ids - computed: false, optional: false, required: true
   private _securityGroupIds: string[];
   public get securityGroupIds() {
-    return this._securityGroupIds;
+    return this.getListAttribute('security_group_ids');
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // ip_address - computed: false, optional: false, required: true
   private _ipAddress: Route53ResolverEndpointIpAddress[];
   public get ipAddress() {
-    return this._ipAddress;
+    return this.interpolationForAttribute('ip_address') as any;
   }
   public set ipAddress(value: Route53ResolverEndpointIpAddress[]) {
     this._ipAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: Route53ResolverEndpointTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: Route53ResolverEndpointTimeouts | undefined) {
+  public set timeouts(value: Route53ResolverEndpointTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -137,12 +184,12 @@ export class Route53ResolverEndpoint extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      direction: this._direction,
-      name: this._name,
-      security_group_ids: this._securityGroupIds,
-      tags: this._tags,
-      ip_address: this._ipAddress,
-      timeouts: this._timeouts,
+      direction: cdktf.stringToTerraform(this._direction),
+      name: cdktf.stringToTerraform(this._name),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      ip_address: cdktf.listMapper(route53ResolverEndpointIpAddressToTerraform)(this._ipAddress),
+      timeouts: route53ResolverEndpointTimeoutsToTerraform(this._timeouts),
     };
   }
 }

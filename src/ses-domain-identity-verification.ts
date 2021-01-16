@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesDomainIdentityVerificationConfig extends TerraformMetaArguments {
+export interface SesDomainIdentityVerificationConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
   /** timeouts block */
   readonly timeouts?: SesDomainIdentityVerificationTimeouts;
@@ -16,9 +15,17 @@ export interface SesDomainIdentityVerificationTimeouts {
   readonly create?: string;
 }
 
+function sesDomainIdentityVerificationTimeoutsToTerraform(struct?: SesDomainIdentityVerificationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+  }
+}
+
+
 // Resource
 
-export class SesDomainIdentityVerification extends TerraformResource {
+export class SesDomainIdentityVerification extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -43,7 +50,7 @@ export class SesDomainIdentityVerification extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -51,28 +58,35 @@ export class SesDomainIdentityVerification extends TerraformResource {
   // domain - computed: false, optional: false, required: true
   private _domain: string;
   public get domain() {
-    return this._domain;
+    return this.getStringAttribute('domain');
   }
   public set domain(value: string) {
     this._domain = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: SesDomainIdentityVerificationTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: SesDomainIdentityVerificationTimeouts | undefined) {
+  public set timeouts(value: SesDomainIdentityVerificationTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -81,8 +95,8 @@ export class SesDomainIdentityVerification extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: this._domain,
-      timeouts: this._timeouts,
+      domain: cdktf.stringToTerraform(this._domain),
+      timeouts: sesDomainIdentityVerificationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

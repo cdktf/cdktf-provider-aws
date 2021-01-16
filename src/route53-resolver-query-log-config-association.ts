@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface Route53ResolverQueryLogConfigAssociationConfig extends TerraformMetaArguments {
+export interface Route53ResolverQueryLogConfigAssociationConfig extends cdktf.TerraformMetaArguments {
   readonly resolverQueryLogConfigId: string;
   readonly resourceId: string;
 }
 
 // Resource
 
-export class Route53ResolverQueryLogConfigAssociation extends TerraformResource {
+export class Route53ResolverQueryLogConfigAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class Route53ResolverQueryLogConfigAssociation extends TerraformResource 
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // resolver_query_log_config_id - computed: false, optional: false, required: true
   private _resolverQueryLogConfigId: string;
   public get resolverQueryLogConfigId() {
-    return this._resolverQueryLogConfigId;
+    return this.getStringAttribute('resolver_query_log_config_id');
   }
   public set resolverQueryLogConfigId(value: string) {
     this._resolverQueryLogConfigId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resolverQueryLogConfigIdInput() {
+    return this._resolverQueryLogConfigId
   }
 
   // resource_id - computed: false, optional: false, required: true
   private _resourceId: string;
   public get resourceId() {
-    return this._resourceId;
+    return this.getStringAttribute('resource_id');
   }
   public set resourceId(value: string) {
     this._resourceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceIdInput() {
+    return this._resourceId
   }
 
   // =========
@@ -72,8 +75,8 @@ export class Route53ResolverQueryLogConfigAssociation extends TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resolver_query_log_config_id: this._resolverQueryLogConfigId,
-      resource_id: this._resourceId,
+      resolver_query_log_config_id: cdktf.stringToTerraform(this._resolverQueryLogConfigId),
+      resource_id: cdktf.stringToTerraform(this._resourceId),
     };
   }
 }

@@ -2,28 +2,26 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsAutoscalingGroupConfig extends TerraformMetaArguments {
+export interface DataAwsAutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
 }
-export class DataAwsAutoscalingGroupLaunchTemplate extends ComplexComputedList {
+export class DataAwsAutoscalingGroupLaunchTemplate extends cdktf.ComplexComputedList {
 
-  // id - computed: true, optional: false, required: true
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // version - computed: true, optional: false, required: true
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
   }
@@ -31,7 +29,7 @@ export class DataAwsAutoscalingGroupLaunchTemplate extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsAutoscalingGroup extends TerraformDataSource {
+export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -55,66 +53,62 @@ export class DataAwsAutoscalingGroup extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // availability_zones - computed: true, optional: false, required: true
+  // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
     return this.getListAttribute('availability_zones');
   }
 
-  // default_cooldown - computed: true, optional: false, required: true
+  // default_cooldown - computed: true, optional: false, required: false
   public get defaultCooldown() {
     return this.getNumberAttribute('default_cooldown');
   }
 
-  // desired_capacity - computed: true, optional: false, required: true
+  // desired_capacity - computed: true, optional: false, required: false
   public get desiredCapacity() {
     return this.getNumberAttribute('desired_capacity');
   }
 
-  // health_check_grace_period - computed: true, optional: false, required: true
+  // health_check_grace_period - computed: true, optional: false, required: false
   public get healthCheckGracePeriod() {
     return this.getNumberAttribute('health_check_grace_period');
   }
 
-  // health_check_type - computed: true, optional: false, required: true
+  // health_check_type - computed: true, optional: false, required: false
   public get healthCheckType() {
     return this.getStringAttribute('health_check_type');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // launch_configuration - computed: true, optional: false, required: true
+  // launch_configuration - computed: true, optional: false, required: false
   public get launchConfiguration() {
     return this.getStringAttribute('launch_configuration');
   }
 
-  // launch_template - computed: true, optional: false, required: true
+  // launch_template - computed: true, optional: false, required: false
   public launchTemplate(index: string) {
     return new DataAwsAutoscalingGroupLaunchTemplate(this, 'launch_template', index);
   }
 
-  // load_balancers - computed: true, optional: false, required: true
+  // load_balancers - computed: true, optional: false, required: false
   public get loadBalancers() {
     return this.getListAttribute('load_balancers');
   }
 
-  // max_size - computed: true, optional: false, required: true
+  // max_size - computed: true, optional: false, required: false
   public get maxSize() {
     return this.getNumberAttribute('max_size');
   }
 
-  // min_size - computed: true, optional: false, required: true
+  // min_size - computed: true, optional: false, required: false
   public get minSize() {
     return this.getNumberAttribute('min_size');
   }
@@ -122,43 +116,47 @@ export class DataAwsAutoscalingGroup extends TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // new_instances_protected_from_scale_in - computed: true, optional: false, required: true
+  // new_instances_protected_from_scale_in - computed: true, optional: false, required: false
   public get newInstancesProtectedFromScaleIn() {
     return this.getBooleanAttribute('new_instances_protected_from_scale_in');
   }
 
-  // placement_group - computed: true, optional: false, required: true
+  // placement_group - computed: true, optional: false, required: false
   public get placementGroup() {
     return this.getStringAttribute('placement_group');
   }
 
-  // service_linked_role_arn - computed: true, optional: false, required: true
+  // service_linked_role_arn - computed: true, optional: false, required: false
   public get serviceLinkedRoleArn() {
     return this.getStringAttribute('service_linked_role_arn');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
 
-  // target_group_arns - computed: true, optional: false, required: true
+  // target_group_arns - computed: true, optional: false, required: false
   public get targetGroupArns() {
     return this.getListAttribute('target_group_arns');
   }
 
-  // termination_policies - computed: true, optional: false, required: true
+  // termination_policies - computed: true, optional: false, required: false
   public get terminationPolicies() {
     return this.getListAttribute('termination_policies');
   }
 
-  // vpc_zone_identifier - computed: true, optional: false, required: true
+  // vpc_zone_identifier - computed: true, optional: false, required: false
   public get vpcZoneIdentifier() {
     return this.getStringAttribute('vpc_zone_identifier');
   }
@@ -169,7 +167,7 @@ export class DataAwsAutoscalingGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

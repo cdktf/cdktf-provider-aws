@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LakeformationResourceConfig extends TerraformMetaArguments {
+export interface LakeformationResourceConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly roleArn?: string;
 }
 
 // Resource
 
-export class LakeformationResource extends TerraformResource {
+export class LakeformationResource extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,22 +41,22 @@ export class LakeformationResource extends TerraformResource {
   // arn - computed: false, optional: false, required: true
   private _arn: string;
   public get arn() {
-    return this._arn;
+    return this.getStringAttribute('arn');
   }
   public set arn(value: string) {
     this._arn = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_modified - computed: true, optional: false, required: true
+  // last_modified - computed: true, optional: false, required: false
   public get lastModified() {
     return this.getStringAttribute('last_modified');
   }
@@ -65,10 +64,17 @@ export class LakeformationResource extends TerraformResource {
   // role_arn - computed: true, optional: true, required: false
   private _roleArn?: string;
   public get roleArn() {
-    return this._roleArn ?? this.getStringAttribute('role_arn');
+    return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // =========
@@ -77,8 +83,8 @@ export class LakeformationResource extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: this._arn,
-      role_arn: this._roleArn,
+      arn: cdktf.stringToTerraform(this._arn),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
     };
   }
 }

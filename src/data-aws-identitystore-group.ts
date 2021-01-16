@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIdentitystoreGroupConfig extends TerraformMetaArguments {
+export interface DataAwsIdentitystoreGroupConfig extends cdktf.TerraformMetaArguments {
   readonly groupId?: string;
   readonly identityStoreId: string;
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsIdentitystoreGroupFilter {
   readonly attributeValue: string;
 }
 
+function dataAwsIdentitystoreGroupFilterToTerraform(struct?: DataAwsIdentitystoreGroupFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    attribute_path: cdktf.stringToTerraform(struct!.attributePath),
+    attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
+  }
+}
+
+
 // Resource
 
-export class DataAwsIdentitystoreGroup extends TerraformDataSource {
+export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -46,7 +54,7 @@ export class DataAwsIdentitystoreGroup extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // display_name - computed: true, optional: false, required: true
+  // display_name - computed: true, optional: false, required: false
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
@@ -54,37 +62,48 @@ export class DataAwsIdentitystoreGroup extends TerraformDataSource {
   // group_id - computed: true, optional: true, required: false
   private _groupId?: string;
   public get groupId() {
-    return this._groupId ?? this.getStringAttribute('group_id');
+    return this.getStringAttribute('group_id');
   }
-  public set groupId(value: string | undefined) {
+  public set groupId(value: string) {
     this._groupId = value;
+  }
+  public resetGroupId() {
+    this._groupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identity_store_id - computed: false, optional: false, required: true
   private _identityStoreId: string;
   public get identityStoreId() {
-    return this._identityStoreId;
+    return this.getStringAttribute('identity_store_id');
   }
   public set identityStoreId(value: string) {
     this._identityStoreId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityStoreIdInput() {
+    return this._identityStoreId
   }
 
   // filter - computed: false, optional: false, required: true
   private _filter: DataAwsIdentitystoreGroupFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
   public set filter(value: DataAwsIdentitystoreGroupFilter[]) {
     this._filter = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -93,9 +112,9 @@ export class DataAwsIdentitystoreGroup extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_id: this._groupId,
-      identity_store_id: this._identityStoreId,
-      filter: this._filter,
+      group_id: cdktf.stringToTerraform(this._groupId),
+      identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
+      filter: cdktf.listMapper(dataAwsIdentitystoreGroupFilterToTerraform)(this._filter),
     };
   }
 }

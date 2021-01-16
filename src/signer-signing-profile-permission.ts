@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SignerSigningProfilePermissionConfig extends TerraformMetaArguments {
+export interface SignerSigningProfilePermissionConfig extends cdktf.TerraformMetaArguments {
   readonly action: string;
   readonly principal: string;
   readonly profileName: string;
@@ -18,7 +17,7 @@ export interface SignerSigningProfilePermissionConfig extends TerraformMetaArgum
 
 // Resource
 
-export class SignerSigningProfilePermission extends TerraformResource {
+export class SignerSigningProfilePermission extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -50,64 +49,93 @@ export class SignerSigningProfilePermission extends TerraformResource {
   // action - computed: false, optional: false, required: true
   private _action: string;
   public get action() {
-    return this._action;
+    return this.getStringAttribute('action');
   }
   public set action(value: string) {
     this._action = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // principal - computed: false, optional: false, required: true
   private _principal: string;
   public get principal() {
-    return this._principal;
+    return this.getStringAttribute('principal');
   }
   public set principal(value: string) {
     this._principal = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalInput() {
+    return this._principal
   }
 
   // profile_name - computed: false, optional: false, required: true
   private _profileName: string;
   public get profileName() {
-    return this._profileName;
+    return this.getStringAttribute('profile_name');
   }
   public set profileName(value: string) {
     this._profileName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get profileNameInput() {
+    return this._profileName
   }
 
   // profile_version - computed: true, optional: true, required: false
   private _profileVersion?: string;
   public get profileVersion() {
-    return this._profileVersion ?? this.getStringAttribute('profile_version');
+    return this.getStringAttribute('profile_version');
   }
-  public set profileVersion(value: string | undefined) {
+  public set profileVersion(value: string) {
     this._profileVersion = value;
+  }
+  public resetProfileVersion() {
+    this._profileVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get profileVersionInput() {
+    return this._profileVersion
   }
 
   // statement_id - computed: true, optional: true, required: false
   private _statementId?: string;
   public get statementId() {
-    return this._statementId ?? this.getStringAttribute('statement_id');
+    return this.getStringAttribute('statement_id');
   }
-  public set statementId(value: string | undefined) {
+  public set statementId(value: string) {
     this._statementId = value;
+  }
+  public resetStatementId() {
+    this._statementId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statementIdInput() {
+    return this._statementId
   }
 
   // statement_id_prefix - computed: false, optional: true, required: false
   private _statementIdPrefix?: string;
   public get statementIdPrefix() {
-    return this._statementIdPrefix;
+    return this.getStringAttribute('statement_id_prefix');
   }
-  public set statementIdPrefix(value: string | undefined) {
+  public set statementIdPrefix(value: string ) {
     this._statementIdPrefix = value;
+  }
+  public resetStatementIdPrefix() {
+    this._statementIdPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statementIdPrefixInput() {
+    return this._statementIdPrefix
   }
 
   // =========
@@ -116,12 +144,12 @@ export class SignerSigningProfilePermission extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: this._action,
-      principal: this._principal,
-      profile_name: this._profileName,
-      profile_version: this._profileVersion,
-      statement_id: this._statementId,
-      statement_id_prefix: this._statementIdPrefix,
+      action: cdktf.stringToTerraform(this._action),
+      principal: cdktf.stringToTerraform(this._principal),
+      profile_name: cdktf.stringToTerraform(this._profileName),
+      profile_version: cdktf.stringToTerraform(this._profileVersion),
+      statement_id: cdktf.stringToTerraform(this._statementId),
+      statement_id_prefix: cdktf.stringToTerraform(this._statementIdPrefix),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DynamodbTableItemConfig extends TerraformMetaArguments {
+export interface DynamodbTableItemConfig extends cdktf.TerraformMetaArguments {
   readonly hashKey: string;
   readonly item: string;
   readonly rangeKey?: string;
@@ -16,7 +15,7 @@ export interface DynamodbTableItemConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DynamodbTableItem extends TerraformResource {
+export class DynamodbTableItem extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,46 +45,61 @@ export class DynamodbTableItem extends TerraformResource {
   // hash_key - computed: false, optional: false, required: true
   private _hashKey: string;
   public get hashKey() {
-    return this._hashKey;
+    return this.getStringAttribute('hash_key');
   }
   public set hashKey(value: string) {
     this._hashKey = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get hashKeyInput() {
+    return this._hashKey
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // item - computed: false, optional: false, required: true
   private _item: string;
   public get item() {
-    return this._item;
+    return this.getStringAttribute('item');
   }
   public set item(value: string) {
     this._item = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get itemInput() {
+    return this._item
   }
 
   // range_key - computed: false, optional: true, required: false
   private _rangeKey?: string;
   public get rangeKey() {
-    return this._rangeKey;
+    return this.getStringAttribute('range_key');
   }
-  public set rangeKey(value: string | undefined) {
+  public set rangeKey(value: string ) {
     this._rangeKey = value;
+  }
+  public resetRangeKey() {
+    this._rangeKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeKeyInput() {
+    return this._rangeKey
   }
 
   // table_name - computed: false, optional: false, required: true
   private _tableName: string;
   public get tableName() {
-    return this._tableName;
+    return this.getStringAttribute('table_name');
   }
   public set tableName(value: string) {
     this._tableName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableNameInput() {
+    return this._tableName
   }
 
   // =========
@@ -94,10 +108,10 @@ export class DynamodbTableItem extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hash_key: this._hashKey,
-      item: this._item,
-      range_key: this._rangeKey,
-      table_name: this._tableName,
+      hash_key: cdktf.stringToTerraform(this._hashKey),
+      item: cdktf.stringToTerraform(this._item),
+      range_key: cdktf.stringToTerraform(this._rangeKey),
+      table_name: cdktf.stringToTerraform(this._tableName),
     };
   }
 }

@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DxBgpPeerConfig extends TerraformMetaArguments {
+export interface DxBgpPeerConfig extends cdktf.TerraformMetaArguments {
   readonly addressFamily: string;
   readonly amazonAddress?: string;
   readonly bgpAsn: number;
@@ -22,9 +21,18 @@ export interface DxBgpPeerTimeouts {
   readonly delete?: string;
 }
 
+function dxBgpPeerTimeoutsToTerraform(struct?: DxBgpPeerTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+
 // Resource
 
-export class DxBgpPeer extends TerraformResource {
+export class DxBgpPeer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -57,22 +65,33 @@ export class DxBgpPeer extends TerraformResource {
   // address_family - computed: false, optional: false, required: true
   private _addressFamily: string;
   public get addressFamily() {
-    return this._addressFamily;
+    return this.getStringAttribute('address_family');
   }
   public set addressFamily(value: string) {
     this._addressFamily = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressFamilyInput() {
+    return this._addressFamily
   }
 
   // amazon_address - computed: true, optional: true, required: false
   private _amazonAddress?: string;
   public get amazonAddress() {
-    return this._amazonAddress ?? this.getStringAttribute('amazon_address');
+    return this.getStringAttribute('amazon_address');
   }
-  public set amazonAddress(value: string | undefined) {
+  public set amazonAddress(value: string) {
     this._amazonAddress = value;
   }
+  public resetAmazonAddress() {
+    this._amazonAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get amazonAddressInput() {
+    return this._amazonAddress
+  }
 
-  // aws_device - computed: true, optional: false, required: true
+  // aws_device - computed: true, optional: false, required: false
   public get awsDevice() {
     return this.getStringAttribute('aws_device');
   }
@@ -80,27 +99,38 @@ export class DxBgpPeer extends TerraformResource {
   // bgp_asn - computed: false, optional: false, required: true
   private _bgpAsn: number;
   public get bgpAsn() {
-    return this._bgpAsn;
+    return this.getNumberAttribute('bgp_asn');
   }
   public set bgpAsn(value: number) {
     this._bgpAsn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bgpAsnInput() {
+    return this._bgpAsn
   }
 
   // bgp_auth_key - computed: true, optional: true, required: false
   private _bgpAuthKey?: string;
   public get bgpAuthKey() {
-    return this._bgpAuthKey ?? this.getStringAttribute('bgp_auth_key');
+    return this.getStringAttribute('bgp_auth_key');
   }
-  public set bgpAuthKey(value: string | undefined) {
+  public set bgpAuthKey(value: string) {
     this._bgpAuthKey = value;
   }
+  public resetBgpAuthKey() {
+    this._bgpAuthKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bgpAuthKeyInput() {
+    return this._bgpAuthKey
+  }
 
-  // bgp_peer_id - computed: true, optional: false, required: true
+  // bgp_peer_id - computed: true, optional: false, required: false
   public get bgpPeerId() {
     return this.getStringAttribute('bgp_peer_id');
   }
 
-  // bgp_status - computed: true, optional: false, required: true
+  // bgp_status - computed: true, optional: false, required: false
   public get bgpStatus() {
     return this.getStringAttribute('bgp_status');
   }
@@ -108,37 +138,51 @@ export class DxBgpPeer extends TerraformResource {
   // customer_address - computed: true, optional: true, required: false
   private _customerAddress?: string;
   public get customerAddress() {
-    return this._customerAddress ?? this.getStringAttribute('customer_address');
+    return this.getStringAttribute('customer_address');
   }
-  public set customerAddress(value: string | undefined) {
+  public set customerAddress(value: string) {
     this._customerAddress = value;
+  }
+  public resetCustomerAddress() {
+    this._customerAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerAddressInput() {
+    return this._customerAddress
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // virtual_interface_id - computed: false, optional: false, required: true
   private _virtualInterfaceId: string;
   public get virtualInterfaceId() {
-    return this._virtualInterfaceId;
+    return this.getStringAttribute('virtual_interface_id');
   }
   public set virtualInterfaceId(value: string) {
     this._virtualInterfaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualInterfaceIdInput() {
+    return this._virtualInterfaceId
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DxBgpPeerTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: DxBgpPeerTimeouts | undefined) {
+  public set timeouts(value: DxBgpPeerTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -147,13 +191,13 @@ export class DxBgpPeer extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_family: this._addressFamily,
-      amazon_address: this._amazonAddress,
-      bgp_asn: this._bgpAsn,
-      bgp_auth_key: this._bgpAuthKey,
-      customer_address: this._customerAddress,
-      virtual_interface_id: this._virtualInterfaceId,
-      timeouts: this._timeouts,
+      address_family: cdktf.stringToTerraform(this._addressFamily),
+      amazon_address: cdktf.stringToTerraform(this._amazonAddress),
+      bgp_asn: cdktf.numberToTerraform(this._bgpAsn),
+      bgp_auth_key: cdktf.stringToTerraform(this._bgpAuthKey),
+      customer_address: cdktf.stringToTerraform(this._customerAddress),
+      virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
+      timeouts: dxBgpPeerTimeoutsToTerraform(this._timeouts),
     };
   }
 }

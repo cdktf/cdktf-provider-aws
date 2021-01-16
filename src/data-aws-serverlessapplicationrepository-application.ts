@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsServerlessapplicationrepositoryApplicationConfig extends TerraformMetaArguments {
+export interface DataAwsServerlessapplicationrepositoryApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
   readonly semanticVersion?: string;
 }
 
 // Resource
 
-export class DataAwsServerlessapplicationrepositoryApplication extends TerraformDataSource {
+export class DataAwsServerlessapplicationrepositoryApplication extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -42,27 +41,27 @@ export class DataAwsServerlessapplicationrepositoryApplication extends Terraform
   // application_id - computed: false, optional: false, required: true
   private _applicationId: string;
   public get applicationId() {
-    return this._applicationId;
+    return this.getStringAttribute('application_id');
   }
   public set applicationId(value: string) {
     this._applicationId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get applicationIdInput() {
+    return this._applicationId
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // required_capabilities - computed: true, optional: false, required: true
+  // required_capabilities - computed: true, optional: false, required: false
   public get requiredCapabilities() {
     return this.getListAttribute('required_capabilities');
   }
@@ -70,18 +69,25 @@ export class DataAwsServerlessapplicationrepositoryApplication extends Terraform
   // semantic_version - computed: true, optional: true, required: false
   private _semanticVersion?: string;
   public get semanticVersion() {
-    return this._semanticVersion ?? this.getStringAttribute('semantic_version');
+    return this.getStringAttribute('semantic_version');
   }
-  public set semanticVersion(value: string | undefined) {
+  public set semanticVersion(value: string) {
     this._semanticVersion = value;
   }
+  public resetSemanticVersion() {
+    this._semanticVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get semanticVersionInput() {
+    return this._semanticVersion
+  }
 
-  // source_code_url - computed: true, optional: false, required: true
+  // source_code_url - computed: true, optional: false, required: false
   public get sourceCodeUrl() {
     return this.getStringAttribute('source_code_url');
   }
 
-  // template_url - computed: true, optional: false, required: true
+  // template_url - computed: true, optional: false, required: false
   public get templateUrl() {
     return this.getStringAttribute('template_url');
   }
@@ -92,8 +98,8 @@ export class DataAwsServerlessapplicationrepositoryApplication extends Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: this._applicationId,
-      semantic_version: this._semanticVersion,
+      application_id: cdktf.stringToTerraform(this._applicationId),
+      semantic_version: cdktf.stringToTerraform(this._semanticVersion),
     };
   }
 }

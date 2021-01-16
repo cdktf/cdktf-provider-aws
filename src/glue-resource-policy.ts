@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueResourcePolicyConfig extends TerraformMetaArguments {
+export interface GlueResourcePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly policy: string;
 }
 
 // Resource
 
-export class GlueResourcePolicy extends TerraformResource {
+export class GlueResourcePolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,21 +37,21 @@ export class GlueResourcePolicy extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {
-    return this._policy;
+    return this.getStringAttribute('policy');
   }
   public set policy(value: string) {
     this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy
   }
 
   // =========
@@ -61,7 +60,7 @@ export class GlueResourcePolicy extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy: this._policy,
+      policy: cdktf.stringToTerraform(this._policy),
     };
   }
 }

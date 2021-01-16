@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamUserGroupMembershipConfig extends TerraformMetaArguments {
+export interface IamUserGroupMembershipConfig extends cdktf.TerraformMetaArguments {
   readonly groups: string[];
   readonly user: string;
 }
 
 // Resource
 
-export class IamUserGroupMembership extends TerraformResource {
+export class IamUserGroupMembership extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -42,28 +41,32 @@ export class IamUserGroupMembership extends TerraformResource {
   // groups - computed: false, optional: false, required: true
   private _groups: string[];
   public get groups() {
-    return this._groups;
+    return this.getListAttribute('groups');
   }
   public set groups(value: string[]) {
     this._groups = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get groupsInput() {
+    return this._groups
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this._user;
+    return this.getStringAttribute('user');
   }
   public set user(value: string) {
     this._user = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user
   }
 
   // =========
@@ -72,8 +75,8 @@ export class IamUserGroupMembership extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      groups: this._groups,
-      user: this._user,
+      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

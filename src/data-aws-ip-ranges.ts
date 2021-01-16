@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIpRangesConfig extends TerraformMetaArguments {
+export interface DataAwsIpRangesConfig extends cdktf.TerraformMetaArguments {
   readonly regions?: string[];
   readonly services: string[];
   readonly url?: string;
@@ -15,7 +14,7 @@ export interface DataAwsIpRangesConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsIpRanges extends TerraformDataSource {
+export class DataAwsIpRanges extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -41,26 +40,22 @@ export class DataAwsIpRanges extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // cidr_blocks - computed: true, optional: false, required: true
+  // cidr_blocks - computed: true, optional: false, required: false
   public get cidrBlocks() {
     return this.getListAttribute('cidr_blocks');
   }
 
-  // create_date - computed: true, optional: false, required: true
+  // create_date - computed: true, optional: false, required: false
   public get createDate() {
     return this.getStringAttribute('create_date');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ipv6_cidr_blocks - computed: true, optional: false, required: true
+  // ipv6_cidr_blocks - computed: true, optional: false, required: false
   public get ipv6CidrBlocks() {
     return this.getListAttribute('ipv6_cidr_blocks');
   }
@@ -68,22 +63,33 @@ export class DataAwsIpRanges extends TerraformDataSource {
   // regions - computed: false, optional: true, required: false
   private _regions?: string[];
   public get regions() {
-    return this._regions;
+    return this.getListAttribute('regions');
   }
-  public set regions(value: string[] | undefined) {
+  public set regions(value: string[] ) {
     this._regions = value;
+  }
+  public resetRegions() {
+    this._regions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionsInput() {
+    return this._regions
   }
 
   // services - computed: false, optional: false, required: true
   private _services: string[];
   public get services() {
-    return this._services;
+    return this.getListAttribute('services');
   }
   public set services(value: string[]) {
     this._services = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get servicesInput() {
+    return this._services
+  }
 
-  // sync_token - computed: true, optional: false, required: true
+  // sync_token - computed: true, optional: false, required: false
   public get syncToken() {
     return this.getNumberAttribute('sync_token');
   }
@@ -91,10 +97,17 @@ export class DataAwsIpRanges extends TerraformDataSource {
   // url - computed: false, optional: true, required: false
   private _url?: string;
   public get url() {
-    return this._url;
+    return this.getStringAttribute('url');
   }
-  public set url(value: string | undefined) {
+  public set url(value: string ) {
     this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url
   }
 
   // =========
@@ -103,9 +116,9 @@ export class DataAwsIpRanges extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      regions: this._regions,
-      services: this._services,
-      url: this._url,
+      regions: cdktf.listMapper(cdktf.stringToTerraform)(this._regions),
+      services: cdktf.listMapper(cdktf.stringToTerraform)(this._services),
+      url: cdktf.stringToTerraform(this._url),
     };
   }
 }

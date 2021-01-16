@@ -2,24 +2,22 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLexSlotTypeConfig extends TerraformMetaArguments {
+export interface DataAwsLexSlotTypeConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly version?: string;
 }
-export class DataAwsLexSlotTypeEnumerationValue extends ComplexComputedList {
+export class DataAwsLexSlotTypeEnumerationValue extends cdktf.ComplexComputedList {
 
-  // synonyms - computed: true, optional: false, required: true
+  // synonyms - computed: true, optional: false, required: false
   public get synonyms() {
     return this.getListAttribute('synonyms');
   }
 
-  // value - computed: true, optional: false, required: true
+  // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
   }
@@ -27,7 +25,7 @@ export class DataAwsLexSlotTypeEnumerationValue extends ComplexComputedList {
 
 // Resource
 
-export class DataAwsLexSlotType extends TerraformDataSource {
+export class DataAwsLexSlotType extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -52,36 +50,32 @@ export class DataAwsLexSlotType extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // checksum - computed: true, optional: false, required: true
+  // checksum - computed: true, optional: false, required: false
   public get checksum() {
     return this.getStringAttribute('checksum');
   }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // enumeration_value - computed: true, optional: false, required: true
+  // enumeration_value - computed: true, optional: false, required: false
   public enumerationValue(index: string) {
     return new DataAwsLexSlotTypeEnumerationValue(this, 'enumeration_value', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // last_updated_date - computed: true, optional: false, required: true
+  // last_updated_date - computed: true, optional: false, required: false
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
@@ -89,13 +83,17 @@ export class DataAwsLexSlotType extends TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // value_selection_strategy - computed: true, optional: false, required: true
+  // value_selection_strategy - computed: true, optional: false, required: false
   public get valueSelectionStrategy() {
     return this.getStringAttribute('value_selection_strategy');
   }
@@ -103,10 +101,17 @@ export class DataAwsLexSlotType extends TerraformDataSource {
   // version - computed: false, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this._version;
+    return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string ) {
     this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
   }
 
   // =========
@@ -115,8 +120,8 @@ export class DataAwsLexSlotType extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      version: this._version,
+      name: cdktf.stringToTerraform(this._name),
+      version: cdktf.stringToTerraform(this._version),
     };
   }
 }

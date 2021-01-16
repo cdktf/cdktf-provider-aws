@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DmsReplicationSubnetGroupConfig extends TerraformMetaArguments {
+export interface DmsReplicationSubnetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly replicationSubnetGroupDescription: string;
   readonly replicationSubnetGroupId: string;
   readonly subnetIds: string[];
@@ -16,7 +15,7 @@ export interface DmsReplicationSubnetGroupConfig extends TerraformMetaArguments 
 
 // Resource
 
-export class DmsReplicationSubnetGroup extends TerraformResource {
+export class DmsReplicationSubnetGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,15 +43,11 @@ export class DmsReplicationSubnetGroup extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // replication_subnet_group_arn - computed: true, optional: false, required: true
+  // replication_subnet_group_arn - computed: true, optional: false, required: false
   public get replicationSubnetGroupArn() {
     return this.getStringAttribute('replication_subnet_group_arn');
   }
@@ -60,40 +55,59 @@ export class DmsReplicationSubnetGroup extends TerraformResource {
   // replication_subnet_group_description - computed: false, optional: false, required: true
   private _replicationSubnetGroupDescription: string;
   public get replicationSubnetGroupDescription() {
-    return this._replicationSubnetGroupDescription;
+    return this.getStringAttribute('replication_subnet_group_description');
   }
   public set replicationSubnetGroupDescription(value: string) {
     this._replicationSubnetGroupDescription = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationSubnetGroupDescriptionInput() {
+    return this._replicationSubnetGroupDescription
   }
 
   // replication_subnet_group_id - computed: false, optional: false, required: true
   private _replicationSubnetGroupId: string;
   public get replicationSubnetGroupId() {
-    return this._replicationSubnetGroupId;
+    return this.getStringAttribute('replication_subnet_group_id');
   }
   public set replicationSubnetGroupId(value: string) {
     this._replicationSubnetGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationSubnetGroupIdInput() {
+    return this._replicationSubnetGroupId
   }
 
   // subnet_ids - computed: false, optional: false, required: true
   private _subnetIds: string[];
   public get subnetIds() {
-    return this._subnetIds;
+    return this.getListAttribute('subnet_ids');
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdsInput() {
+    return this._subnetIds
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
 
-  // vpc_id - computed: true, optional: false, required: true
+  // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
@@ -104,10 +118,10 @@ export class DmsReplicationSubnetGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      replication_subnet_group_description: this._replicationSubnetGroupDescription,
-      replication_subnet_group_id: this._replicationSubnetGroupId,
-      subnet_ids: this._subnetIds,
-      tags: this._tags,
+      replication_subnet_group_description: cdktf.stringToTerraform(this._replicationSubnetGroupDescription),
+      replication_subnet_group_id: cdktf.stringToTerraform(this._replicationSubnetGroupId),
+      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsLexBotConfig extends TerraformMetaArguments {
+export interface DataAwsLexBotConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly version?: string;
 }
 
 // Resource
 
-export class DataAwsLexBot extends TerraformDataSource {
+export class DataAwsLexBot extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -39,66 +38,62 @@ export class DataAwsLexBot extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // checksum - computed: true, optional: false, required: true
+  // checksum - computed: true, optional: false, required: false
   public get checksum() {
     return this.getStringAttribute('checksum');
   }
 
-  // child_directed - computed: true, optional: false, required: true
+  // child_directed - computed: true, optional: false, required: false
   public get childDirected() {
     return this.getBooleanAttribute('child_directed');
   }
 
-  // created_date - computed: true, optional: false, required: true
+  // created_date - computed: true, optional: false, required: false
   public get createdDate() {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
-  // detect_sentiment - computed: true, optional: false, required: true
+  // detect_sentiment - computed: true, optional: false, required: false
   public get detectSentiment() {
     return this.getBooleanAttribute('detect_sentiment');
   }
 
-  // enable_model_improvements - computed: true, optional: false, required: true
+  // enable_model_improvements - computed: true, optional: false, required: false
   public get enableModelImprovements() {
     return this.getBooleanAttribute('enable_model_improvements');
   }
 
-  // failure_reason - computed: true, optional: false, required: true
+  // failure_reason - computed: true, optional: false, required: false
   public get failureReason() {
     return this.getStringAttribute('failure_reason');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // idle_session_ttl_in_seconds - computed: true, optional: false, required: true
+  // idle_session_ttl_in_seconds - computed: true, optional: false, required: false
   public get idleSessionTtlInSeconds() {
     return this.getNumberAttribute('idle_session_ttl_in_seconds');
   }
 
-  // last_updated_date - computed: true, optional: false, required: true
+  // last_updated_date - computed: true, optional: false, required: false
   public get lastUpdatedDate() {
     return this.getStringAttribute('last_updated_date');
   }
 
-  // locale - computed: true, optional: false, required: true
+  // locale - computed: true, optional: false, required: false
   public get locale() {
     return this.getStringAttribute('locale');
   }
@@ -106,18 +101,22 @@ export class DataAwsLexBot extends TerraformDataSource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // nlu_intent_confidence_threshold - computed: true, optional: false, required: true
+  // nlu_intent_confidence_threshold - computed: true, optional: false, required: false
   public get nluIntentConfidenceThreshold() {
     return this.getNumberAttribute('nlu_intent_confidence_threshold');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -125,13 +124,20 @@ export class DataAwsLexBot extends TerraformDataSource {
   // version - computed: false, optional: true, required: false
   private _version?: string;
   public get version() {
-    return this._version;
+    return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string ) {
     this._version = value;
   }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
+  }
 
-  // voice_id - computed: true, optional: false, required: true
+  // voice_id - computed: true, optional: false, required: false
   public get voiceId() {
     return this.getStringAttribute('voice_id');
   }
@@ -142,8 +148,8 @@ export class DataAwsLexBot extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      version: this._version,
+      name: cdktf.stringToTerraform(this._name),
+      version: cdktf.stringToTerraform(this._version),
     };
   }
 }

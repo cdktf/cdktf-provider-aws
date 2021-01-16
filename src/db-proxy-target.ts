@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DbProxyTargetConfig extends TerraformMetaArguments {
+export interface DbProxyTargetConfig extends cdktf.TerraformMetaArguments {
   readonly dbClusterIdentifier?: string;
   readonly dbInstanceIdentifier?: string;
   readonly dbProxyName: string;
@@ -16,7 +15,7 @@ export interface DbProxyTargetConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DbProxyTarget extends TerraformResource {
+export class DbProxyTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -46,55 +45,69 @@ export class DbProxyTarget extends TerraformResource {
   // db_cluster_identifier - computed: false, optional: true, required: false
   private _dbClusterIdentifier?: string;
   public get dbClusterIdentifier() {
-    return this._dbClusterIdentifier;
+    return this.getStringAttribute('db_cluster_identifier');
   }
-  public set dbClusterIdentifier(value: string | undefined) {
+  public set dbClusterIdentifier(value: string ) {
     this._dbClusterIdentifier = value;
+  }
+  public resetDbClusterIdentifier() {
+    this._dbClusterIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbClusterIdentifierInput() {
+    return this._dbClusterIdentifier
   }
 
   // db_instance_identifier - computed: false, optional: true, required: false
   private _dbInstanceIdentifier?: string;
   public get dbInstanceIdentifier() {
-    return this._dbInstanceIdentifier;
+    return this.getStringAttribute('db_instance_identifier');
   }
-  public set dbInstanceIdentifier(value: string | undefined) {
+  public set dbInstanceIdentifier(value: string ) {
     this._dbInstanceIdentifier = value;
+  }
+  public resetDbInstanceIdentifier() {
+    this._dbInstanceIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbInstanceIdentifierInput() {
+    return this._dbInstanceIdentifier
   }
 
   // db_proxy_name - computed: false, optional: false, required: true
   private _dbProxyName: string;
   public get dbProxyName() {
-    return this._dbProxyName;
+    return this.getStringAttribute('db_proxy_name');
   }
   public set dbProxyName(value: string) {
     this._dbProxyName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get dbProxyNameInput() {
+    return this._dbProxyName
+  }
 
-  // endpoint - computed: true, optional: false, required: true
+  // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // port - computed: true, optional: false, required: true
+  // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
   }
 
-  // rds_resource_id - computed: true, optional: false, required: true
+  // rds_resource_id - computed: true, optional: false, required: false
   public get rdsResourceId() {
     return this.getStringAttribute('rds_resource_id');
   }
 
-  // target_arn - computed: true, optional: false, required: true
+  // target_arn - computed: true, optional: false, required: false
   public get targetArn() {
     return this.getStringAttribute('target_arn');
   }
@@ -102,18 +115,22 @@ export class DbProxyTarget extends TerraformResource {
   // target_group_name - computed: false, optional: false, required: true
   private _targetGroupName: string;
   public get targetGroupName() {
-    return this._targetGroupName;
+    return this.getStringAttribute('target_group_name');
   }
   public set targetGroupName(value: string) {
     this._targetGroupName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get targetGroupNameInput() {
+    return this._targetGroupName
+  }
 
-  // tracked_cluster_id - computed: true, optional: false, required: true
+  // tracked_cluster_id - computed: true, optional: false, required: false
   public get trackedClusterId() {
     return this.getStringAttribute('tracked_cluster_id');
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
@@ -124,10 +141,10 @@ export class DbProxyTarget extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      db_cluster_identifier: this._dbClusterIdentifier,
-      db_instance_identifier: this._dbInstanceIdentifier,
-      db_proxy_name: this._dbProxyName,
-      target_group_name: this._targetGroupName,
+      db_cluster_identifier: cdktf.stringToTerraform(this._dbClusterIdentifier),
+      db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
+      db_proxy_name: cdktf.stringToTerraform(this._dbProxyName),
+      target_group_name: cdktf.stringToTerraform(this._targetGroupName),
     };
   }
 }

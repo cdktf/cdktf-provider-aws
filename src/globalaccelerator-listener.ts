@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlobalacceleratorListenerConfig extends TerraformMetaArguments {
+export interface GlobalacceleratorListenerConfig extends cdktf.TerraformMetaArguments {
   readonly acceleratorArn: string;
   readonly clientAffinity?: string;
   readonly protocol: string;
@@ -20,15 +19,34 @@ export interface GlobalacceleratorListenerPortRange {
   readonly fromPort?: number;
   readonly toPort?: number;
 }
+
+function globalacceleratorListenerPortRangeToTerraform(struct?: GlobalacceleratorListenerPortRange): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    from_port: cdktf.numberToTerraform(struct!.fromPort),
+    to_port: cdktf.numberToTerraform(struct!.toPort),
+  }
+}
+
 export interface GlobalacceleratorListenerTimeouts {
   readonly create?: string;
   readonly delete?: string;
   readonly update?: string;
 }
 
+function globalacceleratorListenerTimeoutsToTerraform(struct?: GlobalacceleratorListenerTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
 // Resource
 
-export class GlobalacceleratorListener extends TerraformResource {
+export class GlobalacceleratorListener extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -59,55 +77,77 @@ export class GlobalacceleratorListener extends TerraformResource {
   // accelerator_arn - computed: false, optional: false, required: true
   private _acceleratorArn: string;
   public get acceleratorArn() {
-    return this._acceleratorArn;
+    return this.getStringAttribute('accelerator_arn');
   }
   public set acceleratorArn(value: string) {
     this._acceleratorArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorArnInput() {
+    return this._acceleratorArn
   }
 
   // client_affinity - computed: false, optional: true, required: false
   private _clientAffinity?: string;
   public get clientAffinity() {
-    return this._clientAffinity;
+    return this.getStringAttribute('client_affinity');
   }
-  public set clientAffinity(value: string | undefined) {
+  public set clientAffinity(value: string ) {
     this._clientAffinity = value;
+  }
+  public resetClientAffinity() {
+    this._clientAffinity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientAffinityInput() {
+    return this._clientAffinity
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // protocol - computed: false, optional: false, required: true
   private _protocol: string;
   public get protocol() {
-    return this._protocol;
+    return this.getStringAttribute('protocol');
   }
   public set protocol(value: string) {
     this._protocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol
   }
 
   // port_range - computed: false, optional: false, required: true
   private _portRange: GlobalacceleratorListenerPortRange[];
   public get portRange() {
-    return this._portRange;
+    return this.interpolationForAttribute('port_range') as any;
   }
   public set portRange(value: GlobalacceleratorListenerPortRange[]) {
     this._portRange = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portRangeInput() {
+    return this._portRange
   }
 
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: GlobalacceleratorListenerTimeouts;
   public get timeouts() {
-    return this._timeouts;
+    return this.interpolationForAttribute('timeouts') as any;
   }
-  public set timeouts(value: GlobalacceleratorListenerTimeouts | undefined) {
+  public set timeouts(value: GlobalacceleratorListenerTimeouts ) {
     this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
   }
 
   // =========
@@ -116,11 +156,11 @@ export class GlobalacceleratorListener extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accelerator_arn: this._acceleratorArn,
-      client_affinity: this._clientAffinity,
-      protocol: this._protocol,
-      port_range: this._portRange,
-      timeouts: this._timeouts,
+      accelerator_arn: cdktf.stringToTerraform(this._acceleratorArn),
+      client_affinity: cdktf.stringToTerraform(this._clientAffinity),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      port_range: cdktf.listMapper(globalacceleratorListenerPortRangeToTerraform)(this._portRange),
+      timeouts: globalacceleratorListenerTimeoutsToTerraform(this._timeouts),
     };
   }
 }

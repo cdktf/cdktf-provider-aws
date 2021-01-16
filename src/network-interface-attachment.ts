@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface NetworkInterfaceAttachmentAConfig extends TerraformMetaArguments {
+export interface NetworkInterfaceAttachmentAConfig extends cdktf.TerraformMetaArguments {
   readonly deviceIndex: number;
   readonly instanceId: string;
   readonly networkInterfaceId: string;
@@ -15,7 +14,7 @@ export interface NetworkInterfaceAttachmentAConfig extends TerraformMetaArgument
 
 // Resource
 
-export class NetworkInterfaceAttachmentA extends TerraformResource {
+export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -41,7 +40,7 @@ export class NetworkInterfaceAttachmentA extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // attachment_id - computed: true, optional: false, required: true
+  // attachment_id - computed: true, optional: false, required: false
   public get attachmentId() {
     return this.getStringAttribute('attachment_id');
   }
@@ -49,40 +48,48 @@ export class NetworkInterfaceAttachmentA extends TerraformResource {
   // device_index - computed: false, optional: false, required: true
   private _deviceIndex: number;
   public get deviceIndex() {
-    return this._deviceIndex;
+    return this.getNumberAttribute('device_index');
   }
   public set deviceIndex(value: number) {
     this._deviceIndex = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get deviceIndexInput() {
+    return this._deviceIndex
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // instance_id - computed: false, optional: false, required: true
   private _instanceId: string;
   public get instanceId() {
-    return this._instanceId;
+    return this.getStringAttribute('instance_id');
   }
   public set instanceId(value: string) {
     this._instanceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceIdInput() {
+    return this._instanceId
   }
 
   // network_interface_id - computed: false, optional: false, required: true
   private _networkInterfaceId: string;
   public get networkInterfaceId() {
-    return this._networkInterfaceId;
+    return this.getStringAttribute('network_interface_id');
   }
   public set networkInterfaceId(value: string) {
     this._networkInterfaceId = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfaceIdInput() {
+    return this._networkInterfaceId
+  }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }
@@ -93,9 +100,9 @@ export class NetworkInterfaceAttachmentA extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      device_index: this._deviceIndex,
-      instance_id: this._instanceId,
-      network_interface_id: this._networkInterfaceId,
+      device_index: cdktf.numberToTerraform(this._deviceIndex),
+      instance_id: cdktf.stringToTerraform(this._instanceId),
+      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
     };
   }
 }

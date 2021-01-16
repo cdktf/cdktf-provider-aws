@@ -2,17 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsGuarddutyDetectorConfig extends TerraformMetaArguments {
+export interface DataAwsGuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
 }
 
 // Resource
 
-export class DataAwsGuarddutyDetector extends TerraformDataSource {
+export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -35,26 +34,22 @@ export class DataAwsGuarddutyDetector extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // finding_publishing_frequency - computed: true, optional: false, required: true
+  // finding_publishing_frequency - computed: true, optional: false, required: false
   public get findingPublishingFrequency() {
     return this.getStringAttribute('finding_publishing_frequency');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // service_role_arn - computed: true, optional: false, required: true
+  // service_role_arn - computed: true, optional: false, required: false
   public get serviceRoleArn() {
     return this.getStringAttribute('service_role_arn');
   }
 
-  // status - computed: true, optional: false, required: true
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
   }

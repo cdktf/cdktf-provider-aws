@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IamUserPolicyAttachmentConfig extends TerraformMetaArguments {
+export interface IamUserPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   readonly policyArn: string;
   readonly user: string;
 }
 
 // Resource
 
-export class IamUserPolicyAttachment extends TerraformResource {
+export class IamUserPolicyAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -40,30 +39,34 @@ export class IamUserPolicyAttachment extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // policy_arn - computed: false, optional: false, required: true
   private _policyArn: string;
   public get policyArn() {
-    return this._policyArn;
+    return this.getStringAttribute('policy_arn');
   }
   public set policyArn(value: string) {
     this._policyArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyArnInput() {
+    return this._policyArn
   }
 
   // user - computed: false, optional: false, required: true
   private _user: string;
   public get user() {
-    return this._user;
+    return this.getStringAttribute('user');
   }
   public set user(value: string) {
     this._user = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user
   }
 
   // =========
@@ -72,8 +75,8 @@ export class IamUserPolicyAttachment extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      policy_arn: this._policyArn,
-      user: this._user,
+      policy_arn: cdktf.stringToTerraform(this._policyArn),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

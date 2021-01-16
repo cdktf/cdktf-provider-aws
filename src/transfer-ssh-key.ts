@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TransferSshKeyConfig extends TerraformMetaArguments {
+export interface TransferSshKeyConfig extends cdktf.TerraformMetaArguments {
   readonly body: string;
   readonly serverId: string;
   readonly userName: string;
@@ -15,7 +14,7 @@ export interface TransferSshKeyConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class TransferSshKey extends TerraformResource {
+export class TransferSshKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -44,37 +43,45 @@ export class TransferSshKey extends TerraformResource {
   // body - computed: false, optional: false, required: true
   private _body: string;
   public get body() {
-    return this._body;
+    return this.getStringAttribute('body');
   }
   public set body(value: string) {
     this._body = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // server_id - computed: false, optional: false, required: true
   private _serverId: string;
   public get serverId() {
-    return this._serverId;
+    return this.getStringAttribute('server_id');
   }
   public set serverId(value: string) {
     this._serverId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverIdInput() {
+    return this._serverId
   }
 
   // user_name - computed: false, optional: false, required: true
   private _userName: string;
   public get userName() {
-    return this._userName;
+    return this.getStringAttribute('user_name');
   }
   public set userName(value: string) {
     this._userName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userNameInput() {
+    return this._userName
   }
 
   // =========
@@ -83,9 +90,9 @@ export class TransferSshKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      body: this._body,
-      server_id: this._serverId,
-      user_name: this._userName,
+      body: cdktf.stringToTerraform(this._body),
+      server_id: cdktf.stringToTerraform(this._serverId),
+      user_name: cdktf.stringToTerraform(this._userName),
     };
   }
 }

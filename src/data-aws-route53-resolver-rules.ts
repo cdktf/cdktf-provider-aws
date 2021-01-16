@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsRoute53ResolverRulesConfig extends TerraformMetaArguments {
+export interface DataAwsRoute53ResolverRulesConfig extends cdktf.TerraformMetaArguments {
   readonly ownerId?: string;
   readonly resolverEndpointId?: string;
   readonly ruleType?: string;
@@ -16,7 +15,7 @@ export interface DataAwsRoute53ResolverRulesConfig extends TerraformMetaArgument
 
 // Resource
 
-export class DataAwsRoute53ResolverRules extends TerraformDataSource {
+export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -44,33 +43,43 @@ export class DataAwsRoute53ResolverRules extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // owner_id - computed: false, optional: true, required: false
   private _ownerId?: string;
   public get ownerId() {
-    return this._ownerId;
+    return this.getStringAttribute('owner_id');
   }
-  public set ownerId(value: string | undefined) {
+  public set ownerId(value: string ) {
     this._ownerId = value;
+  }
+  public resetOwnerId() {
+    this._ownerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerIdInput() {
+    return this._ownerId
   }
 
   // resolver_endpoint_id - computed: false, optional: true, required: false
   private _resolverEndpointId?: string;
   public get resolverEndpointId() {
-    return this._resolverEndpointId;
+    return this.getStringAttribute('resolver_endpoint_id');
   }
-  public set resolverEndpointId(value: string | undefined) {
+  public set resolverEndpointId(value: string ) {
     this._resolverEndpointId = value;
   }
+  public resetResolverEndpointId() {
+    this._resolverEndpointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resolverEndpointIdInput() {
+    return this._resolverEndpointId
+  }
 
-  // resolver_rule_ids - computed: true, optional: false, required: true
+  // resolver_rule_ids - computed: true, optional: false, required: false
   public get resolverRuleIds() {
     return this.getListAttribute('resolver_rule_ids');
   }
@@ -78,19 +87,33 @@ export class DataAwsRoute53ResolverRules extends TerraformDataSource {
   // rule_type - computed: false, optional: true, required: false
   private _ruleType?: string;
   public get ruleType() {
-    return this._ruleType;
+    return this.getStringAttribute('rule_type');
   }
-  public set ruleType(value: string | undefined) {
+  public set ruleType(value: string ) {
     this._ruleType = value;
+  }
+  public resetRuleType() {
+    this._ruleType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleTypeInput() {
+    return this._ruleType
   }
 
   // share_status - computed: false, optional: true, required: false
   private _shareStatus?: string;
   public get shareStatus() {
-    return this._shareStatus;
+    return this.getStringAttribute('share_status');
   }
-  public set shareStatus(value: string | undefined) {
+  public set shareStatus(value: string ) {
     this._shareStatus = value;
+  }
+  public resetShareStatus() {
+    this._shareStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shareStatusInput() {
+    return this._shareStatus
   }
 
   // =========
@@ -99,10 +122,10 @@ export class DataAwsRoute53ResolverRules extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      owner_id: this._ownerId,
-      resolver_endpoint_id: this._resolverEndpointId,
-      rule_type: this._ruleType,
-      share_status: this._shareStatus,
+      owner_id: cdktf.stringToTerraform(this._ownerId),
+      resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
+      rule_type: cdktf.stringToTerraform(this._ruleType),
+      share_status: cdktf.stringToTerraform(this._shareStatus),
     };
   }
 }

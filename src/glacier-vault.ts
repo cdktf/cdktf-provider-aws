@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlacierVaultConfig extends TerraformMetaArguments {
+export interface GlacierVaultConfig extends cdktf.TerraformMetaArguments {
   readonly accessPolicy?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
@@ -19,9 +18,18 @@ export interface GlacierVaultNotification {
   readonly snsTopic: string;
 }
 
+function glacierVaultNotificationToTerraform(struct?: GlacierVaultNotification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    sns_topic: cdktf.stringToTerraform(struct!.snsTopic),
+  }
+}
+
+
 // Resource
 
-export class GlacierVault extends TerraformResource {
+export class GlacierVault extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -51,27 +59,30 @@ export class GlacierVault extends TerraformResource {
   // access_policy - computed: false, optional: true, required: false
   private _accessPolicy?: string;
   public get accessPolicy() {
-    return this._accessPolicy;
+    return this.getStringAttribute('access_policy');
   }
-  public set accessPolicy(value: string | undefined) {
+  public set accessPolicy(value: string ) {
     this._accessPolicy = value;
   }
+  public resetAccessPolicy() {
+    this._accessPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessPolicyInput() {
+    return this._accessPolicy
+  }
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // location - computed: true, optional: false, required: true
+  // location - computed: true, optional: false, required: false
   public get location() {
     return this.getStringAttribute('location');
   }
@@ -79,28 +90,46 @@ export class GlacierVault extends TerraformResource {
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // notification - computed: false, optional: true, required: false
   private _notification?: GlacierVaultNotification[];
   public get notification() {
-    return this._notification;
+    return this.interpolationForAttribute('notification') as any;
   }
-  public set notification(value: GlacierVaultNotification[] | undefined) {
+  public set notification(value: GlacierVaultNotification[] ) {
     this._notification = value;
+  }
+  public resetNotification() {
+    this._notification = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationInput() {
+    return this._notification
   }
 
   // =========
@@ -109,10 +138,10 @@ export class GlacierVault extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policy: this._accessPolicy,
-      name: this._name,
-      tags: this._tags,
-      notification: this._notification,
+      access_policy: cdktf.stringToTerraform(this._accessPolicy),
+      name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      notification: cdktf.listMapper(glacierVaultNotificationToTerraform)(this._notification),
     };
   }
 }

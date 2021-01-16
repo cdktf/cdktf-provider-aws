@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface SesReceiptRuleSetConfig extends TerraformMetaArguments {
+export interface SesReceiptRuleSetConfig extends cdktf.TerraformMetaArguments {
   readonly ruleSetName: string;
 }
 
 // Resource
 
-export class SesReceiptRuleSet extends TerraformResource {
+export class SesReceiptRuleSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -38,21 +37,21 @@ export class SesReceiptRuleSet extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // rule_set_name - computed: false, optional: false, required: true
   private _ruleSetName: string;
   public get ruleSetName() {
-    return this._ruleSetName;
+    return this.getStringAttribute('rule_set_name');
   }
   public set ruleSetName(value: string) {
     this._ruleSetName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleSetNameInput() {
+    return this._ruleSetName
   }
 
   // =========
@@ -61,7 +60,7 @@ export class SesReceiptRuleSet extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      rule_set_name: this._ruleSetName,
+      rule_set_name: cdktf.stringToTerraform(this._ruleSetName),
     };
   }
 }

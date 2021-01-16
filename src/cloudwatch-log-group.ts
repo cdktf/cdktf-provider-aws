@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CloudwatchLogGroupConfig extends TerraformMetaArguments {
+export interface CloudwatchLogGroupConfig extends cdktf.TerraformMetaArguments {
   readonly kmsKeyId?: string;
   readonly name?: string;
   readonly namePrefix?: string;
@@ -17,7 +16,7 @@ export interface CloudwatchLogGroupConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class CloudwatchLogGroup extends TerraformResource {
+export class CloudwatchLogGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -45,63 +44,94 @@ export class CloudwatchLogGroup extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // kms_key_id - computed: false, optional: true, required: false
   private _kmsKeyId?: string;
   public get kmsKeyId() {
-    return this._kmsKeyId;
+    return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string ) {
     this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId
   }
 
   // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name ?? this.getStringAttribute('name');
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // name_prefix - computed: false, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
-    return this._namePrefix;
+    return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string | undefined) {
+  public set namePrefix(value: string ) {
     this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix
   }
 
   // retention_in_days - computed: false, optional: true, required: false
   private _retentionInDays?: number;
   public get retentionInDays() {
-    return this._retentionInDays;
+    return this.getNumberAttribute('retention_in_days');
   }
-  public set retentionInDays(value: number | undefined) {
+  public set retentionInDays(value: number ) {
     this._retentionInDays = value;
+  }
+  public resetRetentionInDays() {
+    this._retentionInDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionInDaysInput() {
+    return this._retentionInDays
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -110,11 +140,11 @@ export class CloudwatchLogGroup extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kms_key_id: this._kmsKeyId,
-      name: this._name,
-      name_prefix: this._namePrefix,
-      retention_in_days: this._retentionInDays,
-      tags: this._tags,
+      kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
+      name: cdktf.stringToTerraform(this._name),
+      name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      retention_in_days: cdktf.numberToTerraform(this._retentionInDays),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

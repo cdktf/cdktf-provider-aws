@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsSsmDocumentConfig extends TerraformMetaArguments {
+export interface DataAwsSsmDocumentConfig extends cdktf.TerraformMetaArguments {
   readonly documentFormat?: string;
   readonly documentVersion?: string;
   readonly name: string;
@@ -15,7 +14,7 @@ export interface DataAwsSsmDocumentConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataAwsSsmDocument extends TerraformDataSource {
+export class DataAwsSsmDocument extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -41,12 +40,12 @@ export class DataAwsSsmDocument extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // content - computed: true, optional: false, required: true
+  // content - computed: true, optional: false, required: false
   public get content() {
     return this.getStringAttribute('content');
   }
@@ -54,13 +53,20 @@ export class DataAwsSsmDocument extends TerraformDataSource {
   // document_format - computed: false, optional: true, required: false
   private _documentFormat?: string;
   public get documentFormat() {
-    return this._documentFormat;
+    return this.getStringAttribute('document_format');
   }
-  public set documentFormat(value: string | undefined) {
+  public set documentFormat(value: string ) {
     this._documentFormat = value;
   }
+  public resetDocumentFormat() {
+    this._documentFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get documentFormatInput() {
+    return this._documentFormat
+  }
 
-  // document_type - computed: true, optional: false, required: true
+  // document_type - computed: true, optional: false, required: false
   public get documentType() {
     return this.getStringAttribute('document_type');
   }
@@ -68,28 +74,35 @@ export class DataAwsSsmDocument extends TerraformDataSource {
   // document_version - computed: false, optional: true, required: false
   private _documentVersion?: string;
   public get documentVersion() {
-    return this._documentVersion;
+    return this.getStringAttribute('document_version');
   }
-  public set documentVersion(value: string | undefined) {
+  public set documentVersion(value: string ) {
     this._documentVersion = value;
+  }
+  public resetDocumentVersion() {
+    this._documentVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get documentVersionInput() {
+    return this._documentVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // =========
@@ -98,9 +111,9 @@ export class DataAwsSsmDocument extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      document_format: this._documentFormat,
-      document_version: this._documentVersion,
-      name: this._name,
+      document_format: cdktf.stringToTerraform(this._documentFormat),
+      document_version: cdktf.stringToTerraform(this._documentVersion),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

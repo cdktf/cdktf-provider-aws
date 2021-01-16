@@ -2,19 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsApiGatewayDomainNameConfig extends TerraformMetaArguments {
+export interface DataAwsApiGatewayDomainNameConfig extends cdktf.TerraformMetaArguments {
   readonly domainName: string;
   readonly tags?: { [key: string]: string };
 }
-export class DataAwsApiGatewayDomainNameEndpointConfiguration extends ComplexComputedList {
+export class DataAwsApiGatewayDomainNameEndpointConfiguration extends cdktf.ComplexComputedList {
 
-  // types - computed: true, optional: false, required: true
+  // types - computed: true, optional: false, required: false
   public get types() {
     return this.getListAttribute('types');
   }
@@ -22,7 +20,7 @@ export class DataAwsApiGatewayDomainNameEndpointConfiguration extends ComplexCom
 
 // Resource
 
-export class DataAwsApiGatewayDomainName extends TerraformDataSource {
+export class DataAwsApiGatewayDomainName extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -47,32 +45,32 @@ export class DataAwsApiGatewayDomainName extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
 
-  // certificate_arn - computed: true, optional: false, required: true
+  // certificate_arn - computed: true, optional: false, required: false
   public get certificateArn() {
     return this.getStringAttribute('certificate_arn');
   }
 
-  // certificate_name - computed: true, optional: false, required: true
+  // certificate_name - computed: true, optional: false, required: false
   public get certificateName() {
     return this.getStringAttribute('certificate_name');
   }
 
-  // certificate_upload_date - computed: true, optional: false, required: true
+  // certificate_upload_date - computed: true, optional: false, required: false
   public get certificateUploadDate() {
     return this.getStringAttribute('certificate_upload_date');
   }
 
-  // cloudfront_domain_name - computed: true, optional: false, required: true
+  // cloudfront_domain_name - computed: true, optional: false, required: false
   public get cloudfrontDomainName() {
     return this.getStringAttribute('cloudfront_domain_name');
   }
 
-  // cloudfront_zone_id - computed: true, optional: false, required: true
+  // cloudfront_zone_id - computed: true, optional: false, required: false
   public get cloudfrontZoneId() {
     return this.getStringAttribute('cloudfront_zone_id');
   }
@@ -80,47 +78,47 @@ export class DataAwsApiGatewayDomainName extends TerraformDataSource {
   // domain_name - computed: false, optional: false, required: true
   private _domainName: string;
   public get domainName() {
-    return this._domainName;
+    return this.getStringAttribute('domain_name');
   }
   public set domainName(value: string) {
     this._domainName = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get domainNameInput() {
+    return this._domainName
+  }
 
-  // endpoint_configuration - computed: true, optional: false, required: true
+  // endpoint_configuration - computed: true, optional: false, required: false
   public endpointConfiguration(index: string) {
     return new DataAwsApiGatewayDomainNameEndpointConfiguration(this, 'endpoint_configuration', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // regional_certificate_arn - computed: true, optional: false, required: true
+  // regional_certificate_arn - computed: true, optional: false, required: false
   public get regionalCertificateArn() {
     return this.getStringAttribute('regional_certificate_arn');
   }
 
-  // regional_certificate_name - computed: true, optional: false, required: true
+  // regional_certificate_name - computed: true, optional: false, required: false
   public get regionalCertificateName() {
     return this.getStringAttribute('regional_certificate_name');
   }
 
-  // regional_domain_name - computed: true, optional: false, required: true
+  // regional_domain_name - computed: true, optional: false, required: false
   public get regionalDomainName() {
     return this.getStringAttribute('regional_domain_name');
   }
 
-  // regional_zone_id - computed: true, optional: false, required: true
+  // regional_zone_id - computed: true, optional: false, required: false
   public get regionalZoneId() {
     return this.getStringAttribute('regional_zone_id');
   }
 
-  // security_policy - computed: true, optional: false, required: true
+  // security_policy - computed: true, optional: false, required: false
   public get securityPolicy() {
     return this.getStringAttribute('security_policy');
   }
@@ -128,10 +126,17 @@ export class DataAwsApiGatewayDomainName extends TerraformDataSource {
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -140,8 +145,8 @@ export class DataAwsApiGatewayDomainName extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_name: this._domainName,
-      tags: this._tags,
+      domain_name: cdktf.stringToTerraform(this._domainName),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

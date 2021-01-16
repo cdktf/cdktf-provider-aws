@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GlueJobConfig extends TerraformMetaArguments {
+export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   readonly connections?: string[];
   readonly defaultArguments?: { [key: string]: string };
   readonly description?: string;
@@ -34,16 +33,42 @@ export interface GlueJobCommand {
   readonly pythonVersion?: string;
   readonly scriptLocation: string;
 }
+
+function glueJobCommandToTerraform(struct?: GlueJobCommand): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    python_version: cdktf.stringToTerraform(struct!.pythonVersion),
+    script_location: cdktf.stringToTerraform(struct!.scriptLocation),
+  }
+}
+
 export interface GlueJobExecutionProperty {
   readonly maxConcurrentRuns?: number;
 }
+
+function glueJobExecutionPropertyToTerraform(struct?: GlueJobExecutionProperty): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_concurrent_runs: cdktf.numberToTerraform(struct!.maxConcurrentRuns),
+  }
+}
+
 export interface GlueJobNotificationProperty {
   readonly notifyDelayAfter?: number;
 }
 
+function glueJobNotificationPropertyToTerraform(struct?: GlueJobNotificationProperty): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    notify_delay_after: cdktf.numberToTerraform(struct!.notifyDelayAfter),
+  }
+}
+
+
 // Resource
 
-export class GlueJob extends TerraformResource {
+export class GlueJob extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -83,7 +108,7 @@ export class GlueJob extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: false, required: true
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -91,163 +116,269 @@ export class GlueJob extends TerraformResource {
   // connections - computed: false, optional: true, required: false
   private _connections?: string[];
   public get connections() {
-    return this._connections;
+    return this.getListAttribute('connections');
   }
-  public set connections(value: string[] | undefined) {
+  public set connections(value: string[] ) {
     this._connections = value;
+  }
+  public resetConnections() {
+    this._connections = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionsInput() {
+    return this._connections
   }
 
   // default_arguments - computed: false, optional: true, required: false
   private _defaultArguments?: { [key: string]: string };
   public get defaultArguments() {
-    return this._defaultArguments;
+    return this.interpolationForAttribute('default_arguments') as any;
   }
-  public set defaultArguments(value: { [key: string]: string } | undefined) {
+  public set defaultArguments(value: { [key: string]: string } ) {
     this._defaultArguments = value;
+  }
+  public resetDefaultArguments() {
+    this._defaultArguments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultArgumentsInput() {
+    return this._defaultArguments
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
   }
 
   // glue_version - computed: true, optional: true, required: false
   private _glueVersion?: string;
   public get glueVersion() {
-    return this._glueVersion ?? this.getStringAttribute('glue_version');
+    return this.getStringAttribute('glue_version');
   }
-  public set glueVersion(value: string | undefined) {
+  public set glueVersion(value: string) {
     this._glueVersion = value;
+  }
+  public resetGlueVersion() {
+    this._glueVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get glueVersionInput() {
+    return this._glueVersion
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // max_capacity - computed: true, optional: true, required: false
   private _maxCapacity?: number;
   public get maxCapacity() {
-    return this._maxCapacity ?? this.getNumberAttribute('max_capacity');
+    return this.getNumberAttribute('max_capacity');
   }
-  public set maxCapacity(value: number | undefined) {
+  public set maxCapacity(value: number) {
     this._maxCapacity = value;
+  }
+  public resetMaxCapacity() {
+    this._maxCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxCapacityInput() {
+    return this._maxCapacity
   }
 
   // max_retries - computed: false, optional: true, required: false
   private _maxRetries?: number;
   public get maxRetries() {
-    return this._maxRetries;
+    return this.getNumberAttribute('max_retries');
   }
-  public set maxRetries(value: number | undefined) {
+  public set maxRetries(value: number ) {
     this._maxRetries = value;
+  }
+  public resetMaxRetries() {
+    this._maxRetries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxRetriesInput() {
+    return this._maxRetries
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // non_overridable_arguments - computed: false, optional: true, required: false
   private _nonOverridableArguments?: { [key: string]: string };
   public get nonOverridableArguments() {
-    return this._nonOverridableArguments;
+    return this.interpolationForAttribute('non_overridable_arguments') as any;
   }
-  public set nonOverridableArguments(value: { [key: string]: string } | undefined) {
+  public set nonOverridableArguments(value: { [key: string]: string } ) {
     this._nonOverridableArguments = value;
+  }
+  public resetNonOverridableArguments() {
+    this._nonOverridableArguments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nonOverridableArgumentsInput() {
+    return this._nonOverridableArguments
   }
 
   // number_of_workers - computed: false, optional: true, required: false
   private _numberOfWorkers?: number;
   public get numberOfWorkers() {
-    return this._numberOfWorkers;
+    return this.getNumberAttribute('number_of_workers');
   }
-  public set numberOfWorkers(value: number | undefined) {
+  public set numberOfWorkers(value: number ) {
     this._numberOfWorkers = value;
+  }
+  public resetNumberOfWorkers() {
+    this._numberOfWorkers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberOfWorkersInput() {
+    return this._numberOfWorkers
   }
 
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
-    return this._roleArn;
+    return this.getStringAttribute('role_arn');
   }
   public set roleArn(value: string) {
     this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn
   }
 
   // security_configuration - computed: false, optional: true, required: false
   private _securityConfiguration?: string;
   public get securityConfiguration() {
-    return this._securityConfiguration;
+    return this.getStringAttribute('security_configuration');
   }
-  public set securityConfiguration(value: string | undefined) {
+  public set securityConfiguration(value: string ) {
     this._securityConfiguration = value;
+  }
+  public resetSecurityConfiguration() {
+    this._securityConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityConfigurationInput() {
+    return this._securityConfiguration
   }
 
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
-    return this._tags;
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | undefined) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // timeout - computed: false, optional: true, required: false
   private _timeout?: number;
   public get timeout() {
-    return this._timeout;
+    return this.getNumberAttribute('timeout');
   }
-  public set timeout(value: number | undefined) {
+  public set timeout(value: number ) {
     this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout
   }
 
   // worker_type - computed: false, optional: true, required: false
   private _workerType?: string;
   public get workerType() {
-    return this._workerType;
+    return this.getStringAttribute('worker_type');
   }
-  public set workerType(value: string | undefined) {
+  public set workerType(value: string ) {
     this._workerType = value;
+  }
+  public resetWorkerType() {
+    this._workerType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workerTypeInput() {
+    return this._workerType
   }
 
   // command - computed: false, optional: false, required: true
   private _command: GlueJobCommand[];
   public get command() {
-    return this._command;
+    return this.interpolationForAttribute('command') as any;
   }
   public set command(value: GlueJobCommand[]) {
     this._command = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commandInput() {
+    return this._command
   }
 
   // execution_property - computed: false, optional: true, required: false
   private _executionProperty?: GlueJobExecutionProperty[];
   public get executionProperty() {
-    return this._executionProperty;
+    return this.interpolationForAttribute('execution_property') as any;
   }
-  public set executionProperty(value: GlueJobExecutionProperty[] | undefined) {
+  public set executionProperty(value: GlueJobExecutionProperty[] ) {
     this._executionProperty = value;
+  }
+  public resetExecutionProperty() {
+    this._executionProperty = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionPropertyInput() {
+    return this._executionProperty
   }
 
   // notification_property - computed: false, optional: true, required: false
   private _notificationProperty?: GlueJobNotificationProperty[];
   public get notificationProperty() {
-    return this._notificationProperty;
+    return this.interpolationForAttribute('notification_property') as any;
   }
-  public set notificationProperty(value: GlueJobNotificationProperty[] | undefined) {
+  public set notificationProperty(value: GlueJobNotificationProperty[] ) {
     this._notificationProperty = value;
+  }
+  public resetNotificationProperty() {
+    this._notificationProperty = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationPropertyInput() {
+    return this._notificationProperty
   }
 
   // =========
@@ -256,23 +387,23 @@ export class GlueJob extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connections: this._connections,
-      default_arguments: this._defaultArguments,
-      description: this._description,
-      glue_version: this._glueVersion,
-      max_capacity: this._maxCapacity,
-      max_retries: this._maxRetries,
-      name: this._name,
-      non_overridable_arguments: this._nonOverridableArguments,
-      number_of_workers: this._numberOfWorkers,
-      role_arn: this._roleArn,
-      security_configuration: this._securityConfiguration,
-      tags: this._tags,
-      timeout: this._timeout,
-      worker_type: this._workerType,
-      command: this._command,
-      execution_property: this._executionProperty,
-      notification_property: this._notificationProperty,
+      connections: cdktf.listMapper(cdktf.stringToTerraform)(this._connections),
+      default_arguments: cdktf.hashMapper(cdktf.anyToTerraform)(this._defaultArguments),
+      description: cdktf.stringToTerraform(this._description),
+      glue_version: cdktf.stringToTerraform(this._glueVersion),
+      max_capacity: cdktf.numberToTerraform(this._maxCapacity),
+      max_retries: cdktf.numberToTerraform(this._maxRetries),
+      name: cdktf.stringToTerraform(this._name),
+      non_overridable_arguments: cdktf.hashMapper(cdktf.anyToTerraform)(this._nonOverridableArguments),
+      number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
+      role_arn: cdktf.stringToTerraform(this._roleArn),
+      security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      timeout: cdktf.numberToTerraform(this._timeout),
+      worker_type: cdktf.stringToTerraform(this._workerType),
+      command: cdktf.listMapper(glueJobCommandToTerraform)(this._command),
+      execution_property: cdktf.listMapper(glueJobExecutionPropertyToTerraform)(this._executionProperty),
+      notification_property: cdktf.listMapper(glueJobNotificationPropertyToTerraform)(this._notificationProperty),
     };
   }
 }

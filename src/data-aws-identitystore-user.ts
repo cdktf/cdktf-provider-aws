@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIdentitystoreUserConfig extends TerraformMetaArguments {
+export interface DataAwsIdentitystoreUserConfig extends cdktf.TerraformMetaArguments {
   readonly identityStoreId: string;
   readonly userId?: string;
   /** filter block */
@@ -18,9 +17,18 @@ export interface DataAwsIdentitystoreUserFilter {
   readonly attributeValue: string;
 }
 
+function dataAwsIdentitystoreUserFilterToTerraform(struct?: DataAwsIdentitystoreUserFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    attribute_path: cdktf.stringToTerraform(struct!.attributePath),
+    attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
+  }
+}
+
+
 // Resource
 
-export class DataAwsIdentitystoreUser extends TerraformDataSource {
+export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -47,33 +55,40 @@ export class DataAwsIdentitystoreUser extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // identity_store_id - computed: false, optional: false, required: true
   private _identityStoreId: string;
   public get identityStoreId() {
-    return this._identityStoreId;
+    return this.getStringAttribute('identity_store_id');
   }
   public set identityStoreId(value: string) {
     this._identityStoreId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityStoreIdInput() {
+    return this._identityStoreId
   }
 
   // user_id - computed: true, optional: true, required: false
   private _userId?: string;
   public get userId() {
-    return this._userId ?? this.getStringAttribute('user_id');
+    return this.getStringAttribute('user_id');
   }
-  public set userId(value: string | undefined) {
+  public set userId(value: string) {
     this._userId = value;
   }
+  public resetUserId() {
+    this._userId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userIdInput() {
+    return this._userId
+  }
 
-  // user_name - computed: true, optional: false, required: true
+  // user_name - computed: true, optional: false, required: false
   public get userName() {
     return this.getStringAttribute('user_name');
   }
@@ -81,10 +96,14 @@ export class DataAwsIdentitystoreUser extends TerraformDataSource {
   // filter - computed: false, optional: false, required: true
   private _filter: DataAwsIdentitystoreUserFilter[];
   public get filter() {
-    return this._filter;
+    return this.interpolationForAttribute('filter') as any;
   }
   public set filter(value: DataAwsIdentitystoreUserFilter[]) {
     this._filter = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter
   }
 
   // =========
@@ -93,9 +112,9 @@ export class DataAwsIdentitystoreUser extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      identity_store_id: this._identityStoreId,
-      user_id: this._userId,
-      filter: this._filter,
+      identity_store_id: cdktf.stringToTerraform(this._identityStoreId),
+      user_id: cdktf.stringToTerraform(this._userId),
+      filter: cdktf.listMapper(dataAwsIdentitystoreUserFilterToTerraform)(this._filter),
     };
   }
 }
