@@ -138,6 +138,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     return this._applyImmediately
   }
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // at_rest_encryption_enabled - computed: false, optional: true, required: false
   private _atRestEncryptionEnabled?: boolean;
   public get atRestEncryptionEnabled() {

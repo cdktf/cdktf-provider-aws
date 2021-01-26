@@ -112,6 +112,11 @@ export class LightsailInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('ipv6_address');
   }
 
+  // ipv6_addresses - computed: true, optional: false, required: false
+  public get ipv6Addresses() {
+    return this.getListAttribute('ipv6_addresses');
+  }
+
   // is_static_ip - computed: true, optional: false, required: false
   public get isStaticIp() {
     return this.getBooleanAttribute('is_static_ip');

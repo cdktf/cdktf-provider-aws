@@ -36,6 +36,11 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // auth_token_enabled - computed: true, optional: false, required: false
   public get authTokenEnabled() {
     return this.getBooleanAttribute('auth_token_enabled');

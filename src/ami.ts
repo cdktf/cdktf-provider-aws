@@ -31,6 +31,7 @@ export interface AmiEbsBlockDevice {
   readonly encrypted?: boolean;
   readonly iops?: number;
   readonly snapshotId?: string;
+  readonly throughput?: number;
   readonly volumeSize?: number;
   readonly volumeType?: string;
 }
@@ -43,6 +44,7 @@ function amiEbsBlockDeviceToTerraform(struct?: AmiEbsBlockDevice): any {
     encrypted: cdktf.booleanToTerraform(struct!.encrypted),
     iops: cdktf.numberToTerraform(struct!.iops),
     snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }

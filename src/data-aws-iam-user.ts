@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsIamUserConfig extends cdktf.TerraformMetaArguments {
+  readonly tags?: { [key: string]: string };
   readonly userName: string;
 }
 
@@ -29,6 +30,7 @@ export class DataAwsIamUser extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._tags = config.tags;
     this._userName = config.userName;
   }
 
@@ -56,6 +58,22 @@ export class DataAwsIamUser extends cdktf.TerraformDataSource {
     return this.getStringAttribute('permissions_boundary');
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // user_id - computed: true, optional: false, required: false
   public get userId() {
     return this.getStringAttribute('user_id');
@@ -80,6 +98,7 @@ export class DataAwsIamUser extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       user_name: cdktf.stringToTerraform(this._userName),
     };
   }

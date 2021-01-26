@@ -70,12 +70,12 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // api_key_source - computed: false, optional: true, required: false
+  // api_key_source - computed: true, optional: true, required: false
   private _apiKeySource?: string;
   public get apiKeySource() {
     return this.getStringAttribute('api_key_source');
   }
-  public set apiKeySource(value: string ) {
+  public set apiKeySource(value: string) {
     this._apiKeySource = value;
   }
   public resetApiKeySource() {
@@ -91,12 +91,12 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // binary_media_types - computed: false, optional: true, required: false
+  // binary_media_types - computed: true, optional: true, required: false
   private _binaryMediaTypes?: string[];
   public get binaryMediaTypes() {
     return this.getListAttribute('binary_media_types');
   }
-  public set binaryMediaTypes(value: string[] ) {
+  public set binaryMediaTypes(value: string[]) {
     this._binaryMediaTypes = value;
   }
   public resetBinaryMediaTypes() {
@@ -128,12 +128,12 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     return this.getStringAttribute('created_date');
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string;
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -144,12 +144,12 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
     return this._description
   }
 
-  // disable_execute_api_endpoint - computed: false, optional: true, required: false
+  // disable_execute_api_endpoint - computed: true, optional: true, required: false
   private _disableExecuteApiEndpoint?: boolean;
   public get disableExecuteApiEndpoint() {
     return this.getBooleanAttribute('disable_execute_api_endpoint');
   }
-  public set disableExecuteApiEndpoint(value: boolean ) {
+  public set disableExecuteApiEndpoint(value: boolean) {
     this._disableExecuteApiEndpoint = value;
   }
   public resetDisableExecuteApiEndpoint() {

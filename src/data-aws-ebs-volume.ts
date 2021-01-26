@@ -136,6 +136,11 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
     return this._tags
   }
 
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getNumberAttribute('throughput');
+  }
+
   // volume_id - computed: true, optional: false, required: false
   public get volumeId() {
     return this.getStringAttribute('volume_id');
