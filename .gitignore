@@ -32,7 +32,6 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 tsconfig.json
 yarn-debug.log*
 yarn-error.log*
-!/.eslintrc.json
 !/.github/dependabot.yml
 !/.github/pull_request_template.md
 !/.github/workflows/build.yml
@@ -52,6 +51,5 @@ yarn-error.log*
 !/package.json
 !/src
 !/test
-!/tsconfig.eslint.json
 !/tsconfig.jest.json
 !version.json

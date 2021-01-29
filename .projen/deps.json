@@ -15,16 +15,6 @@
       "type": "build"
     },
     {
-      "name": "@typescript-eslint/eslint-plugin",
-      "version": "^4.3.0",
-      "type": "build"
-    },
-    {
-      "name": "@typescript-eslint/parser",
-      "version": "^4.3.0",
-      "type": "build"
-    },
-    {
       "name": "cdktf-cli",
       "version": "^0.1",
       "type": "build"
@@ -47,22 +37,6 @@
     {
       "name": "dot-prop",
       "version": "^5.2.0",
-      "type": "build"
-    },
-    {
-      "name": "eslint",
-      "type": "build"
-    },
-    {
-      "name": "eslint-import-resolver-node",
-      "type": "build"
-    },
-    {
-      "name": "eslint-import-resolver-typescript",
-      "type": "build"
-    },
-    {
-      "name": "eslint-plugin-import",
       "type": "build"
     },
     {
@@ -92,10 +66,6 @@
     },
     {
       "name": "jsii-release",
-      "type": "build"
-    },
-    {
-      "name": "json-schema",
       "type": "build"
     },
     {
