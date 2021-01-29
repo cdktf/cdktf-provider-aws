@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface CodeartifactDomainConfig extends cdktf.TerraformMetaArguments {
   readonly domain: string;
-  readonly encryptionKey: string;
+  readonly encryptionKey?: string;
   readonly tags?: { [key: string]: string };
 }
 
@@ -68,13 +68,16 @@ export class CodeartifactDomain extends cdktf.TerraformResource {
     return this._domain
   }
 
-  // encryption_key - computed: false, optional: false, required: true
-  private _encryptionKey: string;
+  // encryption_key - computed: true, optional: true, required: false
+  private _encryptionKey?: string;
   public get encryptionKey() {
     return this.getStringAttribute('encryption_key');
   }
   public set encryptionKey(value: string) {
     this._encryptionKey = value;
+  }
+  public resetEncryptionKey() {
+    this._encryptionKey = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get encryptionKeyInput() {

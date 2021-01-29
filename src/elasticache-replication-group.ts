@@ -18,6 +18,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   readonly finalSnapshotIdentifier?: string;
   readonly kmsKeyId?: string;
   readonly maintenanceWindow?: string;
+  readonly multiAzEnabled?: boolean;
   readonly nodeType?: string;
   readonly notificationTopicArn?: string;
   readonly numberCacheClusters?: number;
@@ -98,6 +99,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
     this._kmsKeyId = config.kmsKeyId;
     this._maintenanceWindow = config.maintenanceWindow;
+    this._multiAzEnabled = config.multiAzEnabled;
     this._nodeType = config.nodeType;
     this._notificationTopicArn = config.notificationTopicArn;
     this._numberCacheClusters = config.numberCacheClusters;
@@ -321,6 +323,22 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // member_clusters - computed: true, optional: false, required: false
   public get memberClusters() {
     return this.getListAttribute('member_clusters');
+  }
+
+  // multi_az_enabled - computed: false, optional: true, required: false
+  private _multiAzEnabled?: boolean;
+  public get multiAzEnabled() {
+    return this.getBooleanAttribute('multi_az_enabled');
+  }
+  public set multiAzEnabled(value: boolean ) {
+    this._multiAzEnabled = value;
+  }
+  public resetMultiAzEnabled() {
+    this._multiAzEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multiAzEnabledInput() {
+    return this._multiAzEnabled
   }
 
   // node_type - computed: true, optional: true, required: false
@@ -632,6 +650,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
+      multi_az_enabled: cdktf.booleanToTerraform(this._multiAzEnabled),
       node_type: cdktf.stringToTerraform(this._nodeType),
       notification_topic_arn: cdktf.stringToTerraform(this._notificationTopicArn),
       number_cache_clusters: cdktf.numberToTerraform(this._numberCacheClusters),

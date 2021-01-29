@@ -20,6 +20,20 @@ export interface DataAwsVpcPeeringConnectionConfig extends cdktf.TerraformMetaAr
   /** filter block */
   readonly filter?: DataAwsVpcPeeringConnectionFilter[];
 }
+export class DataAwsVpcPeeringConnectionCidrBlockSet extends cdktf.ComplexComputedList {
+
+  // cidr_block - computed: true, optional: false, required: false
+  public get cidrBlock() {
+    return this.getStringAttribute('cidr_block');
+  }
+}
+export class DataAwsVpcPeeringConnectionPeerCidrBlockSet extends cdktf.ComplexComputedList {
+
+  // cidr_block - computed: true, optional: false, required: false
+  public get cidrBlock() {
+    return this.getStringAttribute('cidr_block');
+  }
+}
 export interface DataAwsVpcPeeringConnectionFilter {
   readonly name: string;
   readonly values: string[];
@@ -91,6 +105,11 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
     return this._cidrBlock
   }
 
+  // cidr_block_set - computed: true, optional: false, required: false
+  public cidrBlockSet(index: string) {
+    return new DataAwsVpcPeeringConnectionCidrBlockSet(this, 'cidr_block_set', index);
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -126,6 +145,11 @@ export class DataAwsVpcPeeringConnection extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get peerCidrBlockInput() {
     return this._peerCidrBlock
+  }
+
+  // peer_cidr_block_set - computed: true, optional: false, required: false
+  public peerCidrBlockSet(index: string) {
+    return new DataAwsVpcPeeringConnectionPeerCidrBlockSet(this, 'peer_cidr_block_set', index);
   }
 
   // peer_owner_id - computed: true, optional: true, required: false
