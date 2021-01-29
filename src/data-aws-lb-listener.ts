@@ -126,6 +126,42 @@ export class DataAwsLbListenerDefaultActionFixedResponse extends cdktf.ComplexCo
     return this.getStringAttribute('status_code');
   }
 }
+export class DataAwsLbListenerDefaultActionForwardStickiness extends cdktf.ComplexComputedList {
+
+  // duration - computed: true, optional: false, required: false
+  public get duration() {
+    return this.getNumberAttribute('duration');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+}
+export class DataAwsLbListenerDefaultActionForwardTargetGroup extends cdktf.ComplexComputedList {
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // weight - computed: true, optional: false, required: false
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+}
+export class DataAwsLbListenerDefaultActionForward extends cdktf.ComplexComputedList {
+
+  // stickiness - computed: true, optional: false, required: false
+  public get stickiness() {
+    return this.interpolationForAttribute('stickiness') as any;
+  }
+
+  // target_group - computed: true, optional: false, required: false
+  public get targetGroup() {
+    return this.interpolationForAttribute('target_group') as any;
+  }
+}
 export class DataAwsLbListenerDefaultActionRedirect extends cdktf.ComplexComputedList {
 
   // host - computed: true, optional: false, required: false
@@ -173,6 +209,11 @@ export class DataAwsLbListenerDefaultAction extends cdktf.ComplexComputedList {
   // fixed_response - computed: true, optional: false, required: false
   public get fixedResponse() {
     return this.interpolationForAttribute('fixed_response') as any;
+  }
+
+  // forward - computed: true, optional: false, required: false
+  public get forward() {
+    return this.interpolationForAttribute('forward') as any;
   }
 
   // order - computed: true, optional: false, required: false

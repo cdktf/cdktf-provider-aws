@@ -207,6 +207,8 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly emr?: string;
   /** Use this to override the default service endpoint URL */
+  readonly emrcontainers?: string;
+  /** Use this to override the default service endpoint URL */
   readonly es?: string;
   /** Use this to override the default service endpoint URL */
   readonly firehose?: string;
@@ -453,6 +455,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     elastictranscoder: cdktf.stringToTerraform(struct!.elastictranscoder),
     elb: cdktf.stringToTerraform(struct!.elb),
     emr: cdktf.stringToTerraform(struct!.emr),
+    emrcontainers: cdktf.stringToTerraform(struct!.emrcontainers),
     es: cdktf.stringToTerraform(struct!.es),
     firehose: cdktf.stringToTerraform(struct!.firehose),
     fms: cdktf.stringToTerraform(struct!.fms),

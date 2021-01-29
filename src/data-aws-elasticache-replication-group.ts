@@ -66,6 +66,11 @@ export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSourc
     return this.getListAttribute('member_clusters');
   }
 
+  // multi_az_enabled - computed: true, optional: false, required: false
+  public get multiAzEnabled() {
+    return this.getBooleanAttribute('multi_az_enabled');
+  }
+
   // node_type - computed: true, optional: false, required: false
   public get nodeType() {
     return this.getStringAttribute('node_type');
