@@ -35,7 +35,7 @@ This is mostly based on [projen](https://github.com/eladb/projen), which takes c
 
 ## cdktf-provider-project based on projen
 
-There's a custom [project builder](https://github.com/skorfmann/cdktf-provider-project) which encapsulate the common settings for all `cdktf` providers.
+There's a custom [project builder](https://github.com/terraform-cdk-providers/cdktf-provider-project) which encapsulate the common settings for all `cdktf` providers.
 
 ## provider version
 
