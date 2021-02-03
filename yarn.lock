@@ -271,9 +271,9 @@
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
 "@cdktf/provider-project@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.3.tgz#101e7fc1056bee81f6b72cc20597723a3df95cdc"
-  integrity sha512-l8zXSals6XJJbHBpY/vtnEv2jQOHtOITKJNseHGMtPGUeXFuoQDWyDobWIj2EcTpNgNNl0r6gBTyEzaq7N9F+Q==
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.7.tgz#5488128da809903aae5a3c7076accf2bbed90e53"
+  integrity sha512-ksQvpHkStiu67U9z5h6iIWJ0TjPEfTROc4i+6BYPyqid+woFuEcCP6rJ5Uz91dx/bcGox24l/VUZ2+Q+AVEyuA==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
