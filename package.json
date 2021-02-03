@@ -46,7 +46,6 @@
     "jsii-diff": "^1.19.0",
     "jsii-docgen": "^1.8.33",
     "jsii-pacmak": "^1.19.0",
-    "jsii-release": "^0.2.13",
     "projen": "^0.15.17",
     "standard-version": "^9.0.0",
     "ts-jest": "^26.1.0",
