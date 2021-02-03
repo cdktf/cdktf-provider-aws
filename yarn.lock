@@ -1402,10 +1402,10 @@ codemaker@^0.22.0:
     decamelize "^1.2.0"
     fs-extra "^8.1.0"
 
-codemaker@^1.18.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/codemaker/-/codemaker-1.18.0.tgz#3f846094ac5b4e8cb7bd34c3526fe3cc669f6ed0"
-  integrity sha512-sUVEg7pzW5HlWvC8OZvMoon9+8LZXA+5dIAqJD8GleosY16UOlOY2MlbLldRa34PXfqCODrXlktTbH93AELgHg==
+codemaker@^1.19.0:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/codemaker/-/codemaker-1.19.0.tgz#52c96722a203fcea33bfe47f9c0ef9df501db1f8"
+  integrity sha512-k32S8e16dxWB2qXENMsy146Ze2/1oj3Oc2jC1Y4KGbeshqjUNaaE94/Y+TmGPRJaTPvQwUPnYAZLCbRkzHZ4ZA==
   dependencies:
     camelcase "^6.2.0"
     decamelize "^5.0.0"
@@ -3638,18 +3638,18 @@ jsii-docgen@^1.3.2:
     yargs "^16.2.0"
 
 jsii-pacmak@^1.12.0, jsii-pacmak@^1.9.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/jsii-pacmak/-/jsii-pacmak-1.18.0.tgz#04fc5559575b23d3e089efee4c5be570ff797ac6"
-  integrity sha512-j1gRTaCn+IQ1R2a2uLqCfohY+unI/hD8Zedw9TOCTBjpASDDbDd9DMbOGnQBZ9G2nRq4SUIPg5eVOKPovpTI+w==
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/jsii-pacmak/-/jsii-pacmak-1.19.0.tgz#2680c51f83b04d03ed2834670b9d1143613c58ce"
+  integrity sha512-u3iu5XdrbN8l3imzi2Xm6NWoadimlkS15Olk7SavHiJNvM0pDLlpiT2mIXkB0yWhmOiRAyHuinHdqEt7Lz3DOA==
   dependencies:
-    "@jsii/spec" "^1.18.0"
+    "@jsii/spec" "^1.19.0"
     clone "^2.1.2"
-    codemaker "^1.18.0"
+    codemaker "^1.19.0"
     commonmark "^0.29.3"
     escape-string-regexp "^4.0.0"
     fs-extra "^9.1.0"
-    jsii-reflect "^1.18.0"
-    jsii-rosetta "^1.18.0"
+    jsii-reflect "^1.19.0"
+    jsii-rosetta "^1.19.0"
     semver "^7.3.4"
     spdx-license-list "^6.4.0"
     xmlbuilder "^15.1.1"
@@ -3671,12 +3671,12 @@ jsii-release@^0.1.6:
   resolved "https://registry.yarnpkg.com/jsii-release/-/jsii-release-0.1.10.tgz#7344a37daca79906f4a65c3c53764a3326df3776"
   integrity sha512-uX+S7FHnB+IDuTGGZBpOwLO+BJjfHWpggj11YiY73oy7b8Y6PSVUmVR+ZLSb8TdpmXMAVyWakLNv4p88WLczHg==
 
-jsii-rosetta@^1.18.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-1.18.0.tgz#106e8344cb124072f57306c5f5980a502f5e0313"
-  integrity sha512-gPBt689vGjR9CqmfYHusSsFr/v4v9qcJAKaCqc3uan2nGCe/lugxR416YnhkpsVQBZdT+H4EA2Lp+yjqj9kMUw==
+jsii-rosetta@^1.19.0:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-1.19.0.tgz#1960b7157093538d9c83cdcd6b532eedfb948e6d"
+  integrity sha512-cEd4lXPYNg0VLBsR1DBF8jxtEhCsUDWuJ69WpYnplROC/YH6TAZ0Y7+8yV5E1bAApQTA78ejsOSgVvJZpfEVtA==
   dependencies:
-    "@jsii/spec" "^1.18.0"
+    "@jsii/spec" "^1.19.0"
     commonmark "^0.29.3"
     fs-extra "^9.1.0"
     typescript "~3.9.7"
