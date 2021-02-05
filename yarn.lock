@@ -3728,7 +3728,7 @@ jsii-reflect@^1.16.0, jsii-reflect@^1.20.0:
     oo-ascii-tree "^1.20.0"
     yargs "^16.2.0"
 
-jsii-release@*:
+jsii-release@^0.2.16:
   version "0.2.16"
   resolved "https://registry.yarnpkg.com/jsii-release/-/jsii-release-0.2.16.tgz#45e4269eb55d56c9a55bda834289b7367d2dd2f6"
   integrity sha512-PJoOYBm8qKugtDOMUeGmZ0214SCCCutkBaKWWMPA6+GIb98ubtP7y/YUueENjk/p7+JZo5lmE8CtC/lS5Xi4Tg==
