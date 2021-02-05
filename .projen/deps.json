@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@cdktf/provider-project",
-      "version": "^0.1.7",
+      "version": "^0.1.8",
       "type": "build"
     },
     {
@@ -65,8 +65,12 @@
       "type": "build"
     },
     {
+      "name": "jsii-release",
+      "type": "build"
+    },
+    {
       "name": "projen",
-      "version": "^0.15.17",
+      "version": "^0.15.13",
       "type": "build"
     },
     {
