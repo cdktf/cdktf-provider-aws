@@ -475,7 +475,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jsii/spec@^1.16.0", "@jsii/spec@^1.20.0", "@jsii/spec@^1.20.1":
+"@jsii/spec@^1.16.0", "@jsii/spec@^1.20.1":
   version "1.20.1"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.20.1.tgz#931a4e8280ab2f2314452a92fb91f0b40d5e8f77"
   integrity sha512-+ot9SPb/lFnRiPlhWUGLMp8owpr/pnpFX0/iIUhZ0kJ1LIAUde7TSuaz70mV6x+ES2wvVXKsgfu2WTMFHIAwZQ==
@@ -3655,7 +3655,7 @@ jsii-pacmak@^1.12.0, jsii-pacmak@^1.19.0:
     xmlbuilder "^15.1.1"
     yargs "^16.2.0"
 
-jsii-reflect@^1.16.0, jsii-reflect@^1.20.0, jsii-reflect@^1.20.1:
+jsii-reflect@^1.16.0, jsii-reflect@^1.20.1:
   version "1.20.1"
   resolved "https://registry.yarnpkg.com/jsii-reflect/-/jsii-reflect-1.20.1.tgz#25b3146e923e728202c8fcac1c611eb261fa3a6c"
   integrity sha512-TkimkYu25H6YtfKRz7D/ZXbquXbhylS60TxgSPZC85iItCpZMwTlbIdvnpBKasx8e7MtJO6xYoAHEYHRhs8djQ==
@@ -5861,9 +5861,9 @@ trim-off-newlines@^1.0.0:
   integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
 
 ts-jest@^26.1.0:
-  version "26.5.0"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.5.0.tgz#3e3417d91bc40178a6716d7dacc5b0505835aa21"
-  integrity sha512-Ya4IQgvIFNa2Mgq52KaO8yBw2W8tWp61Ecl66VjF0f5JaV8u50nGoptHVILOPGoI7SDnShmEqnYQEmyHdQ+56g==
+  version "26.5.1"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.5.1.tgz#4d53ee4481552f57c1624f0bd3425c8b17996150"
+  integrity sha512-G7Rmo3OJMvlqE79amJX8VJKDiRcd7/r61wh9fnvvG8cAjhA9edklGw/dCxRSQmfZ/z8NDums5srSVgwZos1qfg==
   dependencies:
     "@types/jest" "26.x"
     bs-logger "0.x"
