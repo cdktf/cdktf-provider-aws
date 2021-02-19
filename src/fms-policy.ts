@@ -12,7 +12,8 @@ export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly remediationEnabled?: boolean;
   readonly resourceTags?: { [key: string]: string };
-  readonly resourceTypeList: string[];
+  readonly resourceType?: string;
+  readonly resourceTypeList?: string[];
   /** exclude_map block */
   readonly excludeMap?: FmsPolicyExcludeMap[];
   /** include_map block */
@@ -84,6 +85,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
     this._name = config.name;
     this._remediationEnabled = config.remediationEnabled;
     this._resourceTags = config.resourceTags;
+    this._resourceType = config.resourceType;
     this._resourceTypeList = config.resourceTypeList;
     this._excludeMap = config.excludeMap;
     this._includeMap = config.includeMap;
@@ -183,13 +185,32 @@ export class FmsPolicy extends cdktf.TerraformResource {
     return this._resourceTags
   }
 
-  // resource_type_list - computed: false, optional: false, required: true
-  private _resourceTypeList: string[];
+  // resource_type - computed: true, optional: true, required: false
+  private _resourceType?: string;
+  public get resourceType() {
+    return this.getStringAttribute('resource_type');
+  }
+  public set resourceType(value: string) {
+    this._resourceType = value;
+  }
+  public resetResourceType() {
+    this._resourceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypeInput() {
+    return this._resourceType
+  }
+
+  // resource_type_list - computed: true, optional: true, required: false
+  private _resourceTypeList?: string[];
   public get resourceTypeList() {
     return this.getListAttribute('resource_type_list');
   }
   public set resourceTypeList(value: string[]) {
     this._resourceTypeList = value;
+  }
+  public resetResourceTypeList() {
+    this._resourceTypeList = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get resourceTypeListInput() {
@@ -252,6 +273,7 @@ export class FmsPolicy extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       remediation_enabled: cdktf.booleanToTerraform(this._remediationEnabled),
       resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._resourceTags),
+      resource_type: cdktf.stringToTerraform(this._resourceType),
       resource_type_list: cdktf.listMapper(cdktf.stringToTerraform)(this._resourceTypeList),
       exclude_map: cdktf.listMapper(fmsPolicyExcludeMapToTerraform)(this._excludeMap),
       include_map: cdktf.listMapper(fmsPolicyIncludeMapToTerraform)(this._includeMap),

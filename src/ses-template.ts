@@ -42,6 +42,11 @@ export class SesTemplate extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // html - computed: false, optional: true, required: false
   private _html?: string;
   public get html() {

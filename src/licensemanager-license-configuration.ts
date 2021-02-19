@@ -48,6 +48,11 @@ export class LicensemanagerLicenseConfiguration extends cdktf.TerraformResource 
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
@@ -141,6 +146,11 @@ export class LicensemanagerLicenseConfiguration extends cdktf.TerraformResource 
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // owner_account_id - computed: true, optional: false, required: false
+  public get ownerAccountId() {
+    return this.getStringAttribute('owner_account_id');
   }
 
   // tags - computed: false, optional: true, required: false

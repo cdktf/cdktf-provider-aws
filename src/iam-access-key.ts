@@ -40,6 +40,11 @@ export class IamAccessKey extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // create_date - computed: true, optional: false, required: false
+  public get createDate() {
+    return this.getStringAttribute('create_date');
+  }
+
   // encrypted_secret - computed: true, optional: false, required: false
   public get encryptedSecret() {
     return this.getStringAttribute('encrypted_secret');

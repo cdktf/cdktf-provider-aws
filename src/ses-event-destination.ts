@@ -90,6 +90,11 @@ export class SesEventDestination extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // configuration_set_name - computed: false, optional: false, required: true
   private _configurationSetName: string;
   public get configurationSetName() {

@@ -62,6 +62,11 @@ export class DataAwsCustomerGateway extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('bgp_asn');
   }
 
+  // device_name - computed: true, optional: false, required: false
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');

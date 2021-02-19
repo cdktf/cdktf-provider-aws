@@ -14,6 +14,7 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
   readonly filterPolicy?: string;
   readonly protocol: string;
   readonly rawMessageDelivery?: boolean;
+  readonly redrivePolicy?: string;
   readonly topicArn: string;
 }
 
@@ -43,6 +44,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
     this._filterPolicy = config.filterPolicy;
     this._protocol = config.protocol;
     this._rawMessageDelivery = config.rawMessageDelivery;
+    this._redrivePolicy = config.redrivePolicy;
     this._topicArn = config.topicArn;
   }
 
@@ -166,6 +168,22 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
     return this._rawMessageDelivery
   }
 
+  // redrive_policy - computed: false, optional: true, required: false
+  private _redrivePolicy?: string;
+  public get redrivePolicy() {
+    return this.getStringAttribute('redrive_policy');
+  }
+  public set redrivePolicy(value: string ) {
+    this._redrivePolicy = value;
+  }
+  public resetRedrivePolicy() {
+    this._redrivePolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redrivePolicyInput() {
+    return this._redrivePolicy
+  }
+
   // topic_arn - computed: false, optional: false, required: true
   private _topicArn: string;
   public get topicArn() {
@@ -192,6 +210,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
       filter_policy: cdktf.stringToTerraform(this._filterPolicy),
       protocol: cdktf.stringToTerraform(this._protocol),
       raw_message_delivery: cdktf.booleanToTerraform(this._rawMessageDelivery),
+      redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
       topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }

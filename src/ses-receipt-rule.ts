@@ -200,12 +200,17 @@ export class SesReceiptRule extends cdktf.TerraformResource {
     return this._after
   }
 
-  // enabled - computed: true, optional: true, required: false
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean) {
+  public set enabled(value: boolean ) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -263,12 +268,12 @@ export class SesReceiptRule extends cdktf.TerraformResource {
     return this._ruleSetName
   }
 
-  // scan_enabled - computed: true, optional: true, required: false
+  // scan_enabled - computed: false, optional: true, required: false
   private _scanEnabled?: boolean;
   public get scanEnabled() {
     return this.getBooleanAttribute('scan_enabled');
   }
-  public set scanEnabled(value: boolean) {
+  public set scanEnabled(value: boolean ) {
     this._scanEnabled = value;
   }
   public resetScanEnabled() {

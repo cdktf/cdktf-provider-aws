@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DefaultSubnetConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone: string;
+  readonly customerOwnedIpv4Pool?: string;
+  readonly mapCustomerOwnedIpOnLaunch?: boolean;
   readonly mapPublicIpOnLaunch?: boolean;
   readonly outpostArn?: string;
   readonly tags?: { [key: string]: string };
@@ -48,6 +50,8 @@ export class DefaultSubnet extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._availabilityZone = config.availabilityZone;
+    this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
+    this._mapCustomerOwnedIpOnLaunch = config.mapCustomerOwnedIpOnLaunch;
     this._mapPublicIpOnLaunch = config.mapPublicIpOnLaunch;
     this._outpostArn = config.outpostArn;
     this._tags = config.tags;
@@ -91,6 +95,22 @@ export class DefaultSubnet extends cdktf.TerraformResource {
     return this.getStringAttribute('cidr_block');
   }
 
+  // customer_owned_ipv4_pool - computed: false, optional: true, required: false
+  private _customerOwnedIpv4Pool?: string;
+  public get customerOwnedIpv4Pool() {
+    return this.getStringAttribute('customer_owned_ipv4_pool');
+  }
+  public set customerOwnedIpv4Pool(value: string ) {
+    this._customerOwnedIpv4Pool = value;
+  }
+  public resetCustomerOwnedIpv4Pool() {
+    this._customerOwnedIpv4Pool = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerOwnedIpv4PoolInput() {
+    return this._customerOwnedIpv4Pool
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -104,6 +124,22 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   // ipv6_cidr_block_association_id - computed: true, optional: false, required: false
   public get ipv6CidrBlockAssociationId() {
     return this.getStringAttribute('ipv6_cidr_block_association_id');
+  }
+
+  // map_customer_owned_ip_on_launch - computed: false, optional: true, required: false
+  private _mapCustomerOwnedIpOnLaunch?: boolean;
+  public get mapCustomerOwnedIpOnLaunch() {
+    return this.getBooleanAttribute('map_customer_owned_ip_on_launch');
+  }
+  public set mapCustomerOwnedIpOnLaunch(value: boolean ) {
+    this._mapCustomerOwnedIpOnLaunch = value;
+  }
+  public resetMapCustomerOwnedIpOnLaunch() {
+    this._mapCustomerOwnedIpOnLaunch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mapCustomerOwnedIpOnLaunchInput() {
+    return this._mapCustomerOwnedIpOnLaunch
   }
 
   // map_public_ip_on_launch - computed: true, optional: true, required: false
@@ -187,6 +223,8 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
+      map_customer_owned_ip_on_launch: cdktf.booleanToTerraform(this._mapCustomerOwnedIpOnLaunch),
       map_public_ip_on_launch: cdktf.booleanToTerraform(this._mapPublicIpOnLaunch),
       outpost_arn: cdktf.stringToTerraform(this._outpostArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

@@ -12,12 +12,12 @@ export interface SsmMaintenanceWindowTaskConfig extends cdktf.TerraformMetaArgum
   readonly maxErrors: string;
   readonly name?: string;
   readonly priority?: number;
-  readonly serviceRoleArn: string;
+  readonly serviceRoleArn?: string;
   readonly taskArn: string;
   readonly taskType: string;
   readonly windowId: string;
   /** targets block */
-  readonly targets: SsmMaintenanceWindowTaskTargets[];
+  readonly targets?: SsmMaintenanceWindowTaskTargets[];
   /** task_invocation_parameters block */
   readonly taskInvocationParameters?: SsmMaintenanceWindowTaskTaskInvocationParameters[];
 }
@@ -76,6 +76,19 @@ function ssmMaintenanceWindowTaskTaskInvocationParametersLambdaParametersToTerra
   }
 }
 
+export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig {
+  readonly cloudwatchLogGroupName?: string;
+  readonly cloudwatchOutputEnabled?: boolean;
+}
+
+function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cloudwatch_log_group_name: cdktf.stringToTerraform(struct!.cloudwatchLogGroupName),
+    cloudwatch_output_enabled: cdktf.booleanToTerraform(struct!.cloudwatchOutputEnabled),
+  }
+}
+
 export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig {
   readonly notificationArn?: string;
   readonly notificationEvents?: string[];
@@ -108,10 +121,13 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
   readonly comment?: string;
   readonly documentHash?: string;
   readonly documentHashType?: string;
+  readonly documentVersion?: string;
   readonly outputS3Bucket?: string;
   readonly outputS3KeyPrefix?: string;
   readonly serviceRoleArn?: string;
   readonly timeoutSeconds?: number;
+  /** cloudwatch_config block */
+  readonly cloudwatchConfig?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig[];
   /** notification_config block */
   readonly notificationConfig?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig[];
   /** parameter block */
@@ -124,10 +140,12 @@ function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersToT
     comment: cdktf.stringToTerraform(struct!.comment),
     document_hash: cdktf.stringToTerraform(struct!.documentHash),
     document_hash_type: cdktf.stringToTerraform(struct!.documentHashType),
+    document_version: cdktf.stringToTerraform(struct!.documentVersion),
     output_s3_bucket: cdktf.stringToTerraform(struct!.outputS3Bucket),
     output_s3_key_prefix: cdktf.stringToTerraform(struct!.outputS3KeyPrefix),
     service_role_arn: cdktf.stringToTerraform(struct!.serviceRoleArn),
     timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    cloudwatch_config: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigToTerraform)(struct!.cloudwatchConfig),
     notification_config: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigToTerraform)(struct!.notificationConfig),
     parameter: cdktf.listMapper(ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterToTerraform)(struct!.parameter),
   }
@@ -283,13 +301,16 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     return this._priority
   }
 
-  // service_role_arn - computed: false, optional: false, required: true
-  private _serviceRoleArn: string;
+  // service_role_arn - computed: true, optional: true, required: false
+  private _serviceRoleArn?: string;
   public get serviceRoleArn() {
     return this.getStringAttribute('service_role_arn');
   }
   public set serviceRoleArn(value: string) {
     this._serviceRoleArn = value;
+  }
+  public resetServiceRoleArn() {
+    this._serviceRoleArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get serviceRoleArnInput() {
@@ -335,13 +356,16 @@ export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
     return this._windowId
   }
 
-  // targets - computed: false, optional: false, required: true
-  private _targets: SsmMaintenanceWindowTaskTargets[];
+  // targets - computed: false, optional: true, required: false
+  private _targets?: SsmMaintenanceWindowTaskTargets[];
   public get targets() {
     return this.interpolationForAttribute('targets') as any;
   }
-  public set targets(value: SsmMaintenanceWindowTaskTargets[]) {
+  public set targets(value: SsmMaintenanceWindowTaskTargets[] ) {
     this._targets = value;
+  }
+  public resetTargets() {
+    this._targets = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get targetsInput() {

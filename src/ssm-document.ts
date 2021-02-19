@@ -14,6 +14,7 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   readonly permissions?: { [key: string]: string };
   readonly tags?: { [key: string]: string };
   readonly targetType?: string;
+  readonly versionName?: string;
   /** attachments_source block */
   readonly attachmentsSource?: SsmDocumentAttachmentsSource[];
 }
@@ -81,6 +82,7 @@ export class SsmDocument extends cdktf.TerraformResource {
     this._permissions = config.permissions;
     this._tags = config.tags;
     this._targetType = config.targetType;
+    this._versionName = config.versionName;
     this._attachmentsSource = config.attachmentsSource;
   }
 
@@ -261,6 +263,22 @@ export class SsmDocument extends cdktf.TerraformResource {
     return this._targetType
   }
 
+  // version_name - computed: false, optional: true, required: false
+  private _versionName?: string;
+  public get versionName() {
+    return this.getStringAttribute('version_name');
+  }
+  public set versionName(value: string ) {
+    this._versionName = value;
+  }
+  public resetVersionName() {
+    this._versionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionNameInput() {
+    return this._versionName
+  }
+
   // attachments_source - computed: false, optional: true, required: false
   private _attachmentsSource?: SsmDocumentAttachmentsSource[];
   public get attachmentsSource() {
@@ -290,6 +308,7 @@ export class SsmDocument extends cdktf.TerraformResource {
       permissions: cdktf.hashMapper(cdktf.anyToTerraform)(this._permissions),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       target_type: cdktf.stringToTerraform(this._targetType),
+      version_name: cdktf.stringToTerraform(this._versionName),
       attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform)(this._attachmentsSource),
     };
   }

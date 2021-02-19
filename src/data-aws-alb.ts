@@ -34,6 +34,11 @@ export class DataAwsAlbSubnetMapping extends cdktf.ComplexComputedList {
     return this.getStringAttribute('allocation_id');
   }
 
+  // ipv6_address - computed: true, optional: false, required: false
+  public get ipv6Address() {
+    return this.getStringAttribute('ipv6_address');
+  }
+
   // outpost_id - computed: true, optional: false, required: false
   public get outpostId() {
     return this.getStringAttribute('outpost_id');
