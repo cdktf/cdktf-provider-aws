@@ -18,6 +18,7 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   readonly parallelizationFactor?: number;
   readonly startingPosition?: string;
   readonly startingPositionTimestamp?: string;
+  readonly topics?: string[];
   /** destination_config block */
   readonly destinationConfig?: LambdaEventSourceMappingDestinationConfig[];
 }
@@ -75,6 +76,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     this._parallelizationFactor = config.parallelizationFactor;
     this._startingPosition = config.startingPosition;
     this._startingPositionTimestamp = config.startingPositionTimestamp;
+    this._topics = config.topics;
     this._destinationConfig = config.destinationConfig;
   }
 
@@ -282,6 +284,22 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     return this.getStringAttribute('state_transition_reason');
   }
 
+  // topics - computed: false, optional: true, required: false
+  private _topics?: string[];
+  public get topics() {
+    return this.getListAttribute('topics');
+  }
+  public set topics(value: string[] ) {
+    this._topics = value;
+  }
+  public resetTopics() {
+    this._topics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicsInput() {
+    return this._topics
+  }
+
   // uuid - computed: true, optional: false, required: false
   public get uuid() {
     return this.getStringAttribute('uuid');
@@ -320,6 +338,7 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       parallelization_factor: cdktf.numberToTerraform(this._parallelizationFactor),
       starting_position: cdktf.stringToTerraform(this._startingPosition),
       starting_position_timestamp: cdktf.stringToTerraform(this._startingPositionTimestamp),
+      topics: cdktf.listMapper(cdktf.stringToTerraform)(this._topics),
       destination_config: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigToTerraform)(this._destinationConfig),
     };
   }

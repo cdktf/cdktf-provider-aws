@@ -124,6 +124,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
     return this._cidrBlock
   }
 
+  // customer_owned_ipv4_pool - computed: true, optional: false, required: false
+  public get customerOwnedIpv4Pool() {
+    return this.getStringAttribute('customer_owned_ipv4_pool');
+  }
+
   // default_for_az - computed: true, optional: true, required: false
   private _defaultForAz?: boolean;
   public get defaultForAz() {
@@ -164,6 +169,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   // ipv6_cidr_block_association_id - computed: true, optional: false, required: false
   public get ipv6CidrBlockAssociationId() {
     return this.getStringAttribute('ipv6_cidr_block_association_id');
+  }
+
+  // map_customer_owned_ip_on_launch - computed: true, optional: false, required: false
+  public get mapCustomerOwnedIpOnLaunch() {
+    return this.getBooleanAttribute('map_customer_owned_ip_on_launch');
   }
 
   // map_public_ip_on_launch - computed: true, optional: false, required: false

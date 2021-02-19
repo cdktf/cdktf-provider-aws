@@ -45,6 +45,7 @@ function albAccessLogsToTerraform(struct?: AlbAccessLogs): any {
 
 export interface AlbSubnetMapping {
   readonly allocationId?: string;
+  readonly ipv6Address?: string;
   readonly privateIpv4Address?: string;
   readonly subnetId: string;
 }
@@ -53,6 +54,7 @@ function albSubnetMappingToTerraform(struct?: AlbSubnetMapping): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     allocation_id: cdktf.stringToTerraform(struct!.allocationId),
+    ipv6_address: cdktf.stringToTerraform(struct!.ipv6Address),
     private_ipv4_address: cdktf.stringToTerraform(struct!.privateIpv4Address),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
   }

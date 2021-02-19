@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CodebuildReportGroupConfig extends cdktf.TerraformMetaArguments {
+  readonly deleteReports?: boolean;
   readonly name: string;
   readonly tags?: { [key: string]: string };
   readonly type: string;
@@ -66,6 +67,7 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._deleteReports = config.deleteReports;
     this._name = config.name;
     this._tags = config.tags;
     this._type = config.type;
@@ -84,6 +86,22 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   // created - computed: true, optional: false, required: false
   public get created() {
     return this.getStringAttribute('created');
+  }
+
+  // delete_reports - computed: false, optional: true, required: false
+  private _deleteReports?: boolean;
+  public get deleteReports() {
+    return this.getBooleanAttribute('delete_reports');
+  }
+  public set deleteReports(value: boolean ) {
+    this._deleteReports = value;
+  }
+  public resetDeleteReports() {
+    this._deleteReports = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteReportsInput() {
+    return this._deleteReports
   }
 
   // id - computed: true, optional: true, required: false
@@ -152,6 +170,7 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      delete_reports: cdktf.booleanToTerraform(this._deleteReports),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),

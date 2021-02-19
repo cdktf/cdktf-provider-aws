@@ -163,6 +163,11 @@ export class DataAwsAlbTargetGroup extends cdktf.TerraformDataSource {
     return this.getStringAttribute('protocol');
   }
 
+  // protocol_version - computed: true, optional: false, required: false
+  public get protocolVersion() {
+    return this.getStringAttribute('protocol_version');
+  }
+
   // proxy_protocol_v2 - computed: true, optional: false, required: false
   public get proxyProtocolV2() {
     return this.getBooleanAttribute('proxy_protocol_v2');
