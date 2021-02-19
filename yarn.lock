@@ -270,10 +270,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cdktf/provider-project@^0.1.8":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.9.tgz#ef5e661d4b0c5cee8f598b50936e6a8544dba5a8"
-  integrity sha512-p+SMFcZPW+/DE02v9YQ2a+6+aEZi8qeVaifz9vm764QDdyEo/Lrx/qTvfMHVVxEngCREBsSZ88q16xkOpOpbew==
+"@cdktf/provider-project@^0.1.16":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.16.tgz#8442adc915a5d9c88e31663d1a07e9899123d159"
+  integrity sha512-j5b+fQhvkty+yUhLcaKqyCHCSm6zn/BUzHd6IqACO0qtumOQ+L2CNqNRug/HGtlOqG7V9+xzmUk5xnR6k6QBVQ==
   dependencies:
     change-case "^4.1.2"
 
@@ -3678,11 +3678,6 @@ jsii-reflect@^1.16.0, jsii-reflect@^1.21.0:
     oo-ascii-tree "^1.21.0"
     yargs "^16.2.0"
 
-jsii-release@^0.2.16:
-  version "0.2.16"
-  resolved "https://registry.yarnpkg.com/jsii-release/-/jsii-release-0.2.16.tgz#45e4269eb55d56c9a55bda834289b7367d2dd2f6"
-  integrity sha512-PJoOYBm8qKugtDOMUeGmZ0214SCCCutkBaKWWMPA6+GIb98ubtP7y/YUueENjk/p7+JZo5lmE8CtC/lS5Xi4Tg==
-
 jsii-rosetta@^1.21.0:
   version "1.21.0"
   resolved "https://registry.yarnpkg.com/jsii-rosetta/-/jsii-rosetta-1.21.0.tgz#591ebb2ce390b81f269a66d906446f8bebe9e23b"
@@ -4744,7 +4739,7 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-projen@^0.15.13:
+projen@^0.15.18:
   version "0.15.18"
   resolved "https://registry.yarnpkg.com/projen/-/projen-0.15.18.tgz#5b1a9dffe18d6178d06f27eebb9c6b6cb2a66be5"
   integrity sha512-dZ5W2k4s+MYMjDtxumFD3V+sN6KcxAhYUSDJhML4A7yZv1OgFqNZvj56ktvEcCOC5bnqo5LWmioYQ+hOgD0X2g==

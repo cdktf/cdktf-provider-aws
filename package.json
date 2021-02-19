@@ -33,7 +33,7 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.1.8",
+    "@cdktf/provider-project": "^0.1.16",
     "@types/jest": "^26.0.7",
     "@types/node": "^10.17.0",
     "cdktf": "0.1.0",
@@ -46,8 +46,7 @@
     "jsii-diff": "^1.19.0",
     "jsii-docgen": "^1.8.33",
     "jsii-pacmak": "^1.19.0",
-    "jsii-release": "^0.2.16",
-    "projen": "^0.15.13",
+    "projen": "^0.15.18",
     "standard-version": "^9.0.0",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
@@ -122,8 +121,8 @@
         "module": "cdktf_cdktf_provider_aws"
       },
       "dotnet": {
-        "namespace": "HashiCorp.Cdktf.ProviderAws",
-        "packageId": "HashiCorp.Cdktf.ProviderAws"
+        "namespace": "HashiCorp.Cdktf.Providers.Aws",
+        "packageId": "HashiCorp.Cdktf.Providers.Aws"
       }
     },
     "tsc": {
