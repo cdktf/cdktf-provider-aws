@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@cdktf/provider-project",
-      "version": "^0.1.7",
+      "version": "^0.1.16",
       "type": "build"
     },
     {
@@ -66,7 +66,7 @@
     },
     {
       "name": "projen",
-      "version": "^0.15.17",
+      "version": "^0.15.18",
       "type": "build"
     },
     {
