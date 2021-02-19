@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
+  readonly applyOnlyAtCronInterval?: boolean;
   readonly associationName?: string;
   readonly automationTargetParameterName?: string;
   readonly complianceSeverity?: string;
@@ -68,6 +69,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._applyOnlyAtCronInterval = config.applyOnlyAtCronInterval;
     this._associationName = config.associationName;
     this._automationTargetParameterName = config.automationTargetParameterName;
     this._complianceSeverity = config.complianceSeverity;
@@ -85,6 +87,22 @@ export class SsmAssociation extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // apply_only_at_cron_interval - computed: false, optional: true, required: false
+  private _applyOnlyAtCronInterval?: boolean;
+  public get applyOnlyAtCronInterval() {
+    return this.getBooleanAttribute('apply_only_at_cron_interval');
+  }
+  public set applyOnlyAtCronInterval(value: boolean ) {
+    this._applyOnlyAtCronInterval = value;
+  }
+  public resetApplyOnlyAtCronInterval() {
+    this._applyOnlyAtCronInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applyOnlyAtCronIntervalInput() {
+    return this._applyOnlyAtCronInterval
+  }
 
   // association_id - computed: true, optional: false, required: false
   public get associationId() {
@@ -291,6 +309,7 @@ export class SsmAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      apply_only_at_cron_interval: cdktf.booleanToTerraform(this._applyOnlyAtCronInterval),
       association_name: cdktf.stringToTerraform(this._associationName),
       automation_target_parameter_name: cdktf.stringToTerraform(this._automationTargetParameterName),
       compliance_severity: cdktf.stringToTerraform(this._complianceSeverity),

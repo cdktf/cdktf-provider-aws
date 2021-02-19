@@ -128,6 +128,11 @@ export class BudgetsBudget extends cdktf.TerraformResource {
     return this._accountId
   }
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // budget_type - computed: false, optional: false, required: true
   private _budgetType: string;
   public get budgetType() {

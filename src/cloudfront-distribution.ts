@@ -124,18 +124,21 @@ function cloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationToTe
 
 export interface CloudfrontDistributionDefaultCacheBehavior {
   readonly allowedMethods: string[];
+  readonly cachePolicyId?: string;
   readonly cachedMethods: string[];
   readonly compress?: boolean;
   readonly defaultTtl?: number;
   readonly fieldLevelEncryptionId?: string;
   readonly maxTtl?: number;
   readonly minTtl?: number;
+  readonly originRequestPolicyId?: string;
+  readonly realtimeLogConfigArn?: string;
   readonly smoothStreaming?: boolean;
   readonly targetOriginId: string;
   readonly trustedSigners?: string[];
   readonly viewerProtocolPolicy: string;
   /** forwarded_values block */
-  readonly forwardedValues: CloudfrontDistributionDefaultCacheBehaviorForwardedValues[];
+  readonly forwardedValues?: CloudfrontDistributionDefaultCacheBehaviorForwardedValues[];
   /** lambda_function_association block */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation[];
 }
@@ -144,12 +147,15 @@ function cloudfrontDistributionDefaultCacheBehaviorToTerraform(struct?: Cloudfro
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
+    cache_policy_id: cdktf.stringToTerraform(struct!.cachePolicyId),
     cached_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachedMethods),
     compress: cdktf.booleanToTerraform(struct!.compress),
     default_ttl: cdktf.numberToTerraform(struct!.defaultTtl),
     field_level_encryption_id: cdktf.stringToTerraform(struct!.fieldLevelEncryptionId),
     max_ttl: cdktf.numberToTerraform(struct!.maxTtl),
     min_ttl: cdktf.numberToTerraform(struct!.minTtl),
+    origin_request_policy_id: cdktf.stringToTerraform(struct!.originRequestPolicyId),
+    realtime_log_config_arn: cdktf.stringToTerraform(struct!.realtimeLogConfigArn),
     smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
     target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
     trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
@@ -222,19 +228,22 @@ function cloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationToTe
 
 export interface CloudfrontDistributionOrderedCacheBehavior {
   readonly allowedMethods: string[];
+  readonly cachePolicyId?: string;
   readonly cachedMethods: string[];
   readonly compress?: boolean;
   readonly defaultTtl?: number;
   readonly fieldLevelEncryptionId?: string;
   readonly maxTtl?: number;
   readonly minTtl?: number;
+  readonly originRequestPolicyId?: string;
   readonly pathPattern: string;
+  readonly realtimeLogConfigArn?: string;
   readonly smoothStreaming?: boolean;
   readonly targetOriginId: string;
   readonly trustedSigners?: string[];
   readonly viewerProtocolPolicy: string;
   /** forwarded_values block */
-  readonly forwardedValues: CloudfrontDistributionOrderedCacheBehaviorForwardedValues[];
+  readonly forwardedValues?: CloudfrontDistributionOrderedCacheBehaviorForwardedValues[];
   /** lambda_function_association block */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation[];
 }
@@ -243,13 +252,16 @@ function cloudfrontDistributionOrderedCacheBehaviorToTerraform(struct?: Cloudfro
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
+    cache_policy_id: cdktf.stringToTerraform(struct!.cachePolicyId),
     cached_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cachedMethods),
     compress: cdktf.booleanToTerraform(struct!.compress),
     default_ttl: cdktf.numberToTerraform(struct!.defaultTtl),
     field_level_encryption_id: cdktf.stringToTerraform(struct!.fieldLevelEncryptionId),
     max_ttl: cdktf.numberToTerraform(struct!.maxTtl),
     min_ttl: cdktf.numberToTerraform(struct!.minTtl),
+    origin_request_policy_id: cdktf.stringToTerraform(struct!.originRequestPolicyId),
     path_pattern: cdktf.stringToTerraform(struct!.pathPattern),
+    realtime_log_config_arn: cdktf.stringToTerraform(struct!.realtimeLogConfigArn),
     smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
     target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
     trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),

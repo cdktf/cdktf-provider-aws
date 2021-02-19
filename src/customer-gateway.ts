@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface CustomerGatewayConfig extends cdktf.TerraformMetaArguments {
   readonly bgpAsn: string;
+  readonly deviceName?: string;
   readonly ipAddress: string;
   readonly tags?: { [key: string]: string };
   readonly type: string;
@@ -33,6 +34,7 @@ export class CustomerGateway extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._bgpAsn = config.bgpAsn;
+    this._deviceName = config.deviceName;
     this._ipAddress = config.ipAddress;
     this._tags = config.tags;
     this._type = config.type;
@@ -58,6 +60,22 @@ export class CustomerGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bgpAsnInput() {
     return this._bgpAsn
+  }
+
+  // device_name - computed: false, optional: true, required: false
+  private _deviceName?: string;
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+  public set deviceName(value: string ) {
+    this._deviceName = value;
+  }
+  public resetDeviceName() {
+    this._deviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceNameInput() {
+    return this._deviceName
   }
 
   // id - computed: true, optional: true, required: false
@@ -114,6 +132,7 @@ export class CustomerGateway extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bgp_asn: cdktf.stringToTerraform(this._bgpAsn),
+      device_name: cdktf.stringToTerraform(this._deviceName),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),

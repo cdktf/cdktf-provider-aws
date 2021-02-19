@@ -69,6 +69,37 @@ function glueCatalogTableStorageDescriptorColumnsToTerraform(struct?: GlueCatalo
   }
 }
 
+export interface GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId {
+  readonly registryName?: string;
+  readonly schemaArn?: string;
+  readonly schemaName?: string;
+}
+
+function glueCatalogTableStorageDescriptorSchemaReferenceSchemaIdToTerraform(struct?: GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    registry_name: cdktf.stringToTerraform(struct!.registryName),
+    schema_arn: cdktf.stringToTerraform(struct!.schemaArn),
+    schema_name: cdktf.stringToTerraform(struct!.schemaName),
+  }
+}
+
+export interface GlueCatalogTableStorageDescriptorSchemaReference {
+  readonly schemaVersionId?: string;
+  readonly schemaVersionNumber: number;
+  /** schema_id block */
+  readonly schemaId?: GlueCatalogTableStorageDescriptorSchemaReferenceSchemaId[];
+}
+
+function glueCatalogTableStorageDescriptorSchemaReferenceToTerraform(struct?: GlueCatalogTableStorageDescriptorSchemaReference): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    schema_version_id: cdktf.stringToTerraform(struct!.schemaVersionId),
+    schema_version_number: cdktf.numberToTerraform(struct!.schemaVersionNumber),
+    schema_id: cdktf.listMapper(glueCatalogTableStorageDescriptorSchemaReferenceSchemaIdToTerraform)(struct!.schemaId),
+  }
+}
+
 export interface GlueCatalogTableStorageDescriptorSerDeInfo {
   readonly name?: string;
   readonly parameters?: { [key: string]: string };
@@ -123,6 +154,8 @@ export interface GlueCatalogTableStorageDescriptor {
   readonly storedAsSubDirectories?: boolean;
   /** columns block */
   readonly columns?: GlueCatalogTableStorageDescriptorColumns[];
+  /** schema_reference block */
+  readonly schemaReference?: GlueCatalogTableStorageDescriptorSchemaReference[];
   /** ser_de_info block */
   readonly serDeInfo?: GlueCatalogTableStorageDescriptorSerDeInfo[];
   /** skewed_info block */
@@ -143,6 +176,7 @@ function glueCatalogTableStorageDescriptorToTerraform(struct?: GlueCatalogTableS
     parameters: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.parameters),
     stored_as_sub_directories: cdktf.booleanToTerraform(struct!.storedAsSubDirectories),
     columns: cdktf.listMapper(glueCatalogTableStorageDescriptorColumnsToTerraform)(struct!.columns),
+    schema_reference: cdktf.listMapper(glueCatalogTableStorageDescriptorSchemaReferenceToTerraform)(struct!.schemaReference),
     ser_de_info: cdktf.listMapper(glueCatalogTableStorageDescriptorSerDeInfoToTerraform)(struct!.serDeInfo),
     skewed_info: cdktf.listMapper(glueCatalogTableStorageDescriptorSkewedInfoToTerraform)(struct!.skewedInfo),
     sort_columns: cdktf.listMapper(glueCatalogTableStorageDescriptorSortColumnsToTerraform)(struct!.sortColumns),

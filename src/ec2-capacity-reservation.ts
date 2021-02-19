@@ -198,6 +198,11 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
     return this._instanceType
   }
 
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {

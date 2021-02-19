@@ -9,15 +9,19 @@ import * as cdktf from 'cdktf';
 export interface SsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
   readonly approvedPatches?: string[];
   readonly approvedPatchesComplianceLevel?: string;
+  readonly approvedPatchesEnableNonSecurity?: boolean;
   readonly description?: string;
   readonly name: string;
   readonly operatingSystem?: string;
   readonly rejectedPatches?: string[];
+  readonly rejectedPatchesAction?: string;
   readonly tags?: { [key: string]: string };
   /** approval_rule block */
   readonly approvalRule?: SsmPatchBaselineApprovalRule[];
   /** global_filter block */
   readonly globalFilter?: SsmPatchBaselineGlobalFilter[];
+  /** source block */
+  readonly source?: SsmPatchBaselineSource[];
 }
 export interface SsmPatchBaselineApprovalRulePatchFilter {
   readonly key: string;
@@ -33,7 +37,8 @@ function ssmPatchBaselineApprovalRulePatchFilterToTerraform(struct?: SsmPatchBas
 }
 
 export interface SsmPatchBaselineApprovalRule {
-  readonly approveAfterDays: number;
+  readonly approveAfterDays?: number;
+  readonly approveUntilDate?: string;
   readonly complianceLevel?: string;
   readonly enableNonSecurity?: boolean;
   /** patch_filter block */
@@ -44,6 +49,7 @@ function ssmPatchBaselineApprovalRuleToTerraform(struct?: SsmPatchBaselineApprov
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     approve_after_days: cdktf.numberToTerraform(struct!.approveAfterDays),
+    approve_until_date: cdktf.stringToTerraform(struct!.approveUntilDate),
     compliance_level: cdktf.stringToTerraform(struct!.complianceLevel),
     enable_non_security: cdktf.booleanToTerraform(struct!.enableNonSecurity),
     patch_filter: cdktf.listMapper(ssmPatchBaselineApprovalRulePatchFilterToTerraform)(struct!.patchFilter),
@@ -60,6 +66,21 @@ function ssmPatchBaselineGlobalFilterToTerraform(struct?: SsmPatchBaselineGlobal
   return {
     key: cdktf.stringToTerraform(struct!.key),
     values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+export interface SsmPatchBaselineSource {
+  readonly configuration: string;
+  readonly name: string;
+  readonly products: string[];
+}
+
+function ssmPatchBaselineSourceToTerraform(struct?: SsmPatchBaselineSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    configuration: cdktf.stringToTerraform(struct!.configuration),
+    name: cdktf.stringToTerraform(struct!.name),
+    products: cdktf.listMapper(cdktf.stringToTerraform)(struct!.products),
   }
 }
 
@@ -85,13 +106,16 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
     });
     this._approvedPatches = config.approvedPatches;
     this._approvedPatchesComplianceLevel = config.approvedPatchesComplianceLevel;
+    this._approvedPatchesEnableNonSecurity = config.approvedPatchesEnableNonSecurity;
     this._description = config.description;
     this._name = config.name;
     this._operatingSystem = config.operatingSystem;
     this._rejectedPatches = config.rejectedPatches;
+    this._rejectedPatchesAction = config.rejectedPatchesAction;
     this._tags = config.tags;
     this._approvalRule = config.approvalRule;
     this._globalFilter = config.globalFilter;
+    this._source = config.source;
   }
 
   // ==========
@@ -128,6 +152,27 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get approvedPatchesComplianceLevelInput() {
     return this._approvedPatchesComplianceLevel
+  }
+
+  // approved_patches_enable_non_security - computed: false, optional: true, required: false
+  private _approvedPatchesEnableNonSecurity?: boolean;
+  public get approvedPatchesEnableNonSecurity() {
+    return this.getBooleanAttribute('approved_patches_enable_non_security');
+  }
+  public set approvedPatchesEnableNonSecurity(value: boolean ) {
+    this._approvedPatchesEnableNonSecurity = value;
+  }
+  public resetApprovedPatchesEnableNonSecurity() {
+    this._approvedPatchesEnableNonSecurity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get approvedPatchesEnableNonSecurityInput() {
+    return this._approvedPatchesEnableNonSecurity
+  }
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
   }
 
   // description - computed: false, optional: true, required: false
@@ -196,6 +241,22 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
     return this._rejectedPatches
   }
 
+  // rejected_patches_action - computed: true, optional: true, required: false
+  private _rejectedPatchesAction?: string;
+  public get rejectedPatchesAction() {
+    return this.getStringAttribute('rejected_patches_action');
+  }
+  public set rejectedPatchesAction(value: string) {
+    this._rejectedPatchesAction = value;
+  }
+  public resetRejectedPatchesAction() {
+    this._rejectedPatchesAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rejectedPatchesActionInput() {
+    return this._rejectedPatchesAction
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
@@ -244,6 +305,22 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
     return this._globalFilter
   }
 
+  // source - computed: false, optional: true, required: false
+  private _source?: SsmPatchBaselineSource[];
+  public get source() {
+    return this.interpolationForAttribute('source') as any;
+  }
+  public set source(value: SsmPatchBaselineSource[] ) {
+    this._source = value;
+  }
+  public resetSource() {
+    this._source = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -252,13 +329,16 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
     return {
       approved_patches: cdktf.listMapper(cdktf.stringToTerraform)(this._approvedPatches),
       approved_patches_compliance_level: cdktf.stringToTerraform(this._approvedPatchesComplianceLevel),
+      approved_patches_enable_non_security: cdktf.booleanToTerraform(this._approvedPatchesEnableNonSecurity),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       operating_system: cdktf.stringToTerraform(this._operatingSystem),
       rejected_patches: cdktf.listMapper(cdktf.stringToTerraform)(this._rejectedPatches),
+      rejected_patches_action: cdktf.stringToTerraform(this._rejectedPatchesAction),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       approval_rule: cdktf.listMapper(ssmPatchBaselineApprovalRuleToTerraform)(this._approvalRule),
       global_filter: cdktf.listMapper(ssmPatchBaselineGlobalFilterToTerraform)(this._globalFilter),
+      source: cdktf.listMapper(ssmPatchBaselineSourceToTerraform)(this._source),
     };
   }
 }

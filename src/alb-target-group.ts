@@ -14,6 +14,7 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly namePrefix?: string;
   readonly port?: number;
   readonly protocol?: string;
+  readonly protocolVersion?: string;
   readonly proxyProtocolV2?: boolean;
   readonly slowStart?: number;
   readonly tags?: { [key: string]: string };
@@ -93,6 +94,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
     this._namePrefix = config.namePrefix;
     this._port = config.port;
     this._protocol = config.protocol;
+    this._protocolVersion = config.protocolVersion;
     this._proxyProtocolV2 = config.proxyProtocolV2;
     this._slowStart = config.slowStart;
     this._tags = config.tags;
@@ -233,6 +235,22 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
     return this._protocol
   }
 
+  // protocol_version - computed: true, optional: true, required: false
+  private _protocolVersion?: string;
+  public get protocolVersion() {
+    return this.getStringAttribute('protocol_version');
+  }
+  public set protocolVersion(value: string) {
+    this._protocolVersion = value;
+  }
+  public resetProtocolVersion() {
+    this._protocolVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolVersionInput() {
+    return this._protocolVersion
+  }
+
   // proxy_protocol_v2 - computed: false, optional: true, required: false
   private _proxyProtocolV2?: boolean;
   public get proxyProtocolV2() {
@@ -358,6 +376,7 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       port: cdktf.numberToTerraform(this._port),
       protocol: cdktf.stringToTerraform(this._protocol),
+      protocol_version: cdktf.stringToTerraform(this._protocolVersion),
       proxy_protocol_v2: cdktf.booleanToTerraform(this._proxyProtocolV2),
       slow_start: cdktf.numberToTerraform(this._slowStart),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

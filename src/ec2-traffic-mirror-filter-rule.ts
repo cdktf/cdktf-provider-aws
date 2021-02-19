@@ -82,6 +82,11 @@ export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
