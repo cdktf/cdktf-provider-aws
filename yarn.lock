@@ -270,10 +270,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cdktf/provider-project@^0.1.16":
-  version "0.1.16"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.16.tgz#8442adc915a5d9c88e31663d1a07e9899123d159"
-  integrity sha512-j5b+fQhvkty+yUhLcaKqyCHCSm6zn/BUzHd6IqACO0qtumOQ+L2CNqNRug/HGtlOqG7V9+xzmUk5xnR6k6QBVQ==
+"@cdktf/provider-project@^0.1.26":
+  version "0.1.26"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.26.tgz#c1f7d74c8d6048d886d300e099455ba305976263"
+  integrity sha512-A6hC9uNgDrj4Lfsd+eMzNiTYayv+SgLqEebALQXfKj1BBhLb6tnQkfHNks0b/mGT6ogtLfyXZi9geMm991Lv6w==
   dependencies:
     change-case "^4.1.2"
 
@@ -4739,10 +4739,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-projen@^0.15.18:
-  version "0.15.18"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.15.18.tgz#5b1a9dffe18d6178d06f27eebb9c6b6cb2a66be5"
-  integrity sha512-dZ5W2k4s+MYMjDtxumFD3V+sN6KcxAhYUSDJhML4A7yZv1OgFqNZvj56ktvEcCOC5bnqo5LWmioYQ+hOgD0X2g==
+projen@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.17.0.tgz#9a7c6deff77a3a76f24abc0ccb6563f23eae6fb1"
+  integrity sha512-t8Vg7tXLPMqi7PPJPCIujzv6jD3hHrnSXwXjECJZBh0+zeAdFuu6H46ztIiu0I73h0QOTMfyRxlRoMn4YKtxoQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     chalk "^4.1.0"
@@ -5471,7 +5471,7 @@ stack-utils@^2.0.2:
   dependencies:
     escape-string-regexp "^2.0.0"
 
-standard-version@^9.0.0:
+standard-version@^9:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/standard-version/-/standard-version-9.1.1.tgz#7561df6351b075a44544ce3d3ebcffcb9582ba5a"
   integrity sha512-PF9JnRauBwH7DAkmefYu1mB2Kx0MVG13udqDTFmDUiogbyikBAHBdMrVuauxtAb2YIkyZ3FMYCNv0hqUKMOPww==

@@ -33,7 +33,7 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.1.16",
+    "@cdktf/provider-project": "^0.1.26",
     "@types/jest": "^26.0.7",
     "@types/node": "^10.17.0",
     "cdktf": "0.1.0",
@@ -46,8 +46,8 @@
     "jsii-diff": "^1.19.0",
     "jsii-docgen": "^1.8.33",
     "jsii-pacmak": "^1.19.0",
-    "projen": "^0.15.18",
-    "standard-version": "^9.0.0",
+    "projen": "^0.17.0",
+    "standard-version": "^9",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
   },
