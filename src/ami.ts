@@ -171,6 +171,11 @@ export class Ami extends cdktf.TerraformResource {
     return this._enaSupport
   }
 
+  // hypervisor - computed: true, optional: false, required: false
+  public get hypervisor() {
+    return this.getStringAttribute('hypervisor');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -190,6 +195,16 @@ export class Ami extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get imageLocationInput() {
     return this._imageLocation
+  }
+
+  // image_owner_alias - computed: true, optional: false, required: false
+  public get imageOwnerAlias() {
+    return this.getStringAttribute('image_owner_alias');
+  }
+
+  // image_type - computed: true, optional: false, required: false
+  public get imageType() {
+    return this.getStringAttribute('image_type');
   }
 
   // kernel_id - computed: false, optional: true, required: false
@@ -224,6 +239,26 @@ export class Ami extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
+  // platform - computed: true, optional: false, required: false
+  public get platform() {
+    return this.getStringAttribute('platform');
+  }
+
+  // platform_details - computed: true, optional: false, required: false
+  public get platformDetails() {
+    return this.getStringAttribute('platform_details');
+  }
+
+  // public - computed: true, optional: false, required: false
+  public get public() {
+    return this.getBooleanAttribute('public');
   }
 
   // ramdisk_id - computed: false, optional: true, required: false
@@ -293,6 +328,11 @@ export class Ami extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // usage_operation - computed: true, optional: false, required: false
+  public get usageOperation() {
+    return this.getStringAttribute('usage_operation');
   }
 
   // virtualization_type - computed: false, optional: true, required: false

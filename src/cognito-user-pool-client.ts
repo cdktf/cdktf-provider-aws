@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArguments {
+  readonly accessTokenValidity?: number;
   readonly allowedOauthFlows?: string[];
   readonly allowedOauthFlowsUserPoolClient?: boolean;
   readonly allowedOauthScopes?: string[];
@@ -14,6 +15,7 @@ export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArgument
   readonly defaultRedirectUri?: string;
   readonly explicitAuthFlows?: string[];
   readonly generateSecret?: boolean;
+  readonly idTokenValidity?: number;
   readonly logoutUrls?: string[];
   readonly name: string;
   readonly preventUserExistenceErrors?: string;
@@ -24,21 +26,40 @@ export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArgument
   readonly writeAttributes?: string[];
   /** analytics_configuration block */
   readonly analyticsConfiguration?: CognitoUserPoolClientAnalyticsConfiguration[];
+  /** token_validity_units block */
+  readonly tokenValidityUnits?: CognitoUserPoolClientTokenValidityUnits[];
 }
 export interface CognitoUserPoolClientAnalyticsConfiguration {
-  readonly applicationId: string;
-  readonly externalId: string;
-  readonly roleArn: string;
+  readonly applicationArn?: string;
+  readonly applicationId?: string;
+  readonly externalId?: string;
+  readonly roleArn?: string;
   readonly userDataShared?: boolean;
 }
 
 function cognitoUserPoolClientAnalyticsConfigurationToTerraform(struct?: CognitoUserPoolClientAnalyticsConfiguration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    application_arn: cdktf.stringToTerraform(struct!.applicationArn),
     application_id: cdktf.stringToTerraform(struct!.applicationId),
     external_id: cdktf.stringToTerraform(struct!.externalId),
     role_arn: cdktf.stringToTerraform(struct!.roleArn),
     user_data_shared: cdktf.booleanToTerraform(struct!.userDataShared),
+  }
+}
+
+export interface CognitoUserPoolClientTokenValidityUnits {
+  readonly accessToken?: string;
+  readonly idToken?: string;
+  readonly refreshToken?: string;
+}
+
+function cognitoUserPoolClientTokenValidityUnitsToTerraform(struct?: CognitoUserPoolClientTokenValidityUnits): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    access_token: cdktf.stringToTerraform(struct!.accessToken),
+    id_token: cdktf.stringToTerraform(struct!.idToken),
+    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
   }
 }
 
@@ -62,6 +83,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._accessTokenValidity = config.accessTokenValidity;
     this._allowedOauthFlows = config.allowedOauthFlows;
     this._allowedOauthFlowsUserPoolClient = config.allowedOauthFlowsUserPoolClient;
     this._allowedOauthScopes = config.allowedOauthScopes;
@@ -69,6 +91,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
     this._defaultRedirectUri = config.defaultRedirectUri;
     this._explicitAuthFlows = config.explicitAuthFlows;
     this._generateSecret = config.generateSecret;
+    this._idTokenValidity = config.idTokenValidity;
     this._logoutUrls = config.logoutUrls;
     this._name = config.name;
     this._preventUserExistenceErrors = config.preventUserExistenceErrors;
@@ -78,11 +101,28 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
     this._userPoolId = config.userPoolId;
     this._writeAttributes = config.writeAttributes;
     this._analyticsConfiguration = config.analyticsConfiguration;
+    this._tokenValidityUnits = config.tokenValidityUnits;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // access_token_validity - computed: false, optional: true, required: false
+  private _accessTokenValidity?: number;
+  public get accessTokenValidity() {
+    return this.getNumberAttribute('access_token_validity');
+  }
+  public set accessTokenValidity(value: number ) {
+    this._accessTokenValidity = value;
+  }
+  public resetAccessTokenValidity() {
+    this._accessTokenValidity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessTokenValidityInput() {
+    return this._accessTokenValidity
+  }
 
   // allowed_oauth_flows - computed: false, optional: true, required: false
   private _allowedOauthFlows?: string[];
@@ -204,6 +244,22 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // id_token_validity - computed: false, optional: true, required: false
+  private _idTokenValidity?: number;
+  public get idTokenValidity() {
+    return this.getNumberAttribute('id_token_validity');
+  }
+  public set idTokenValidity(value: number ) {
+    this._idTokenValidity = value;
+  }
+  public resetIdTokenValidity() {
+    this._idTokenValidity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idTokenValidityInput() {
+    return this._idTokenValidity
   }
 
   // logout_urls - computed: false, optional: true, required: false
@@ -344,12 +400,29 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
     return this._analyticsConfiguration
   }
 
+  // token_validity_units - computed: false, optional: true, required: false
+  private _tokenValidityUnits?: CognitoUserPoolClientTokenValidityUnits[];
+  public get tokenValidityUnits() {
+    return this.interpolationForAttribute('token_validity_units') as any;
+  }
+  public set tokenValidityUnits(value: CognitoUserPoolClientTokenValidityUnits[] ) {
+    this._tokenValidityUnits = value;
+  }
+  public resetTokenValidityUnits() {
+    this._tokenValidityUnits = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenValidityUnitsInput() {
+    return this._tokenValidityUnits
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      access_token_validity: cdktf.numberToTerraform(this._accessTokenValidity),
       allowed_oauth_flows: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOauthFlows),
       allowed_oauth_flows_user_pool_client: cdktf.booleanToTerraform(this._allowedOauthFlowsUserPoolClient),
       allowed_oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedOauthScopes),
@@ -357,6 +430,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
       default_redirect_uri: cdktf.stringToTerraform(this._defaultRedirectUri),
       explicit_auth_flows: cdktf.listMapper(cdktf.stringToTerraform)(this._explicitAuthFlows),
       generate_secret: cdktf.booleanToTerraform(this._generateSecret),
+      id_token_validity: cdktf.numberToTerraform(this._idTokenValidity),
       logout_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._logoutUrls),
       name: cdktf.stringToTerraform(this._name),
       prevent_user_existence_errors: cdktf.stringToTerraform(this._preventUserExistenceErrors),
@@ -366,6 +440,7 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
       user_pool_id: cdktf.stringToTerraform(this._userPoolId),
       write_attributes: cdktf.listMapper(cdktf.stringToTerraform)(this._writeAttributes),
       analytics_configuration: cdktf.listMapper(cognitoUserPoolClientAnalyticsConfigurationToTerraform)(this._analyticsConfiguration),
+      token_validity_units: cdktf.listMapper(cognitoUserPoolClientTokenValidityUnitsToTerraform)(this._tokenValidityUnits),
     };
   }
 }

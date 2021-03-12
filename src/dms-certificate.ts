@@ -10,6 +10,7 @@ export interface DmsCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly certificateId: string;
   readonly certificatePem?: string;
   readonly certificateWallet?: string;
+  readonly tags?: { [key: string]: string };
 }
 
 // Resource
@@ -34,6 +35,7 @@ export class DmsCertificate extends cdktf.TerraformResource {
     this._certificateId = config.certificateId;
     this._certificatePem = config.certificatePem;
     this._certificateWallet = config.certificateWallet;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -95,6 +97,22 @@ export class DmsCertificate extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -104,6 +122,7 @@ export class DmsCertificate extends cdktf.TerraformResource {
       certificate_id: cdktf.stringToTerraform(this._certificateId),
       certificate_pem: cdktf.stringToTerraform(this._certificatePem),
       certificate_wallet: cdktf.stringToTerraform(this._certificateWallet),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

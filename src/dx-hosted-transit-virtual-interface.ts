@@ -23,7 +23,6 @@ export interface DxHostedTransitVirtualInterfaceConfig extends cdktf.TerraformMe
 export interface DxHostedTransitVirtualInterfaceTimeouts {
   readonly create?: string;
   readonly delete?: string;
-  readonly update?: string;
 }
 
 function dxHostedTransitVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedTransitVirtualInterfaceTimeouts): any {
@@ -31,7 +30,6 @@ function dxHostedTransitVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedTra
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 

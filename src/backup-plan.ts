@@ -15,8 +15,8 @@ export interface BackupPlanConfig extends cdktf.TerraformMetaArguments {
   readonly rule: BackupPlanRule[];
 }
 export interface BackupPlanAdvancedBackupSetting {
-  readonly backupOptions?: { [key: string]: string };
-  readonly resourceType?: string;
+  readonly backupOptions: { [key: string]: string };
+  readonly resourceType: string;
 }
 
 function backupPlanAdvancedBackupSettingToTerraform(struct?: BackupPlanAdvancedBackupSetting): any {

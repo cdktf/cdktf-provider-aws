@@ -16,12 +16,16 @@ export interface CloudwatchEventTargetConfig extends cdktf.TerraformMetaArgument
   readonly targetId?: string;
   /** batch_target block */
   readonly batchTarget?: CloudwatchEventTargetBatchTarget[];
+  /** dead_letter_config block */
+  readonly deadLetterConfig?: CloudwatchEventTargetDeadLetterConfig[];
   /** ecs_target block */
   readonly ecsTarget?: CloudwatchEventTargetEcsTarget[];
   /** input_transformer block */
   readonly inputTransformer?: CloudwatchEventTargetInputTransformer[];
   /** kinesis_target block */
   readonly kinesisTarget?: CloudwatchEventTargetKinesisTarget[];
+  /** retry_policy block */
+  readonly retryPolicy?: CloudwatchEventTargetRetryPolicy[];
   /** run_command_targets block */
   readonly runCommandTargets?: CloudwatchEventTargetRunCommandTargets[];
   /** sqs_target block */
@@ -41,6 +45,17 @@ function cloudwatchEventTargetBatchTargetToTerraform(struct?: CloudwatchEventTar
     job_attempts: cdktf.numberToTerraform(struct!.jobAttempts),
     job_definition: cdktf.stringToTerraform(struct!.jobDefinition),
     job_name: cdktf.stringToTerraform(struct!.jobName),
+  }
+}
+
+export interface CloudwatchEventTargetDeadLetterConfig {
+  readonly arn?: string;
+}
+
+function cloudwatchEventTargetDeadLetterConfigToTerraform(struct?: CloudwatchEventTargetDeadLetterConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    arn: cdktf.stringToTerraform(struct!.arn),
   }
 }
 
@@ -105,6 +120,19 @@ function cloudwatchEventTargetKinesisTargetToTerraform(struct?: CloudwatchEventT
   }
 }
 
+export interface CloudwatchEventTargetRetryPolicy {
+  readonly maximumEventAgeInSeconds?: number;
+  readonly maximumRetryAttempts?: number;
+}
+
+function cloudwatchEventTargetRetryPolicyToTerraform(struct?: CloudwatchEventTargetRetryPolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    maximum_event_age_in_seconds: cdktf.numberToTerraform(struct!.maximumEventAgeInSeconds),
+    maximum_retry_attempts: cdktf.numberToTerraform(struct!.maximumRetryAttempts),
+  }
+}
+
 export interface CloudwatchEventTargetRunCommandTargets {
   readonly key: string;
   readonly values: string[];
@@ -157,9 +185,11 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     this._rule = config.rule;
     this._targetId = config.targetId;
     this._batchTarget = config.batchTarget;
+    this._deadLetterConfig = config.deadLetterConfig;
     this._ecsTarget = config.ecsTarget;
     this._inputTransformer = config.inputTransformer;
     this._kinesisTarget = config.kinesisTarget;
+    this._retryPolicy = config.retryPolicy;
     this._runCommandTargets = config.runCommandTargets;
     this._sqsTarget = config.sqsTarget;
   }
@@ -295,6 +325,22 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     return this._batchTarget
   }
 
+  // dead_letter_config - computed: false, optional: true, required: false
+  private _deadLetterConfig?: CloudwatchEventTargetDeadLetterConfig[];
+  public get deadLetterConfig() {
+    return this.interpolationForAttribute('dead_letter_config') as any;
+  }
+  public set deadLetterConfig(value: CloudwatchEventTargetDeadLetterConfig[] ) {
+    this._deadLetterConfig = value;
+  }
+  public resetDeadLetterConfig() {
+    this._deadLetterConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deadLetterConfigInput() {
+    return this._deadLetterConfig
+  }
+
   // ecs_target - computed: false, optional: true, required: false
   private _ecsTarget?: CloudwatchEventTargetEcsTarget[];
   public get ecsTarget() {
@@ -343,6 +389,22 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     return this._kinesisTarget
   }
 
+  // retry_policy - computed: false, optional: true, required: false
+  private _retryPolicy?: CloudwatchEventTargetRetryPolicy[];
+  public get retryPolicy() {
+    return this.interpolationForAttribute('retry_policy') as any;
+  }
+  public set retryPolicy(value: CloudwatchEventTargetRetryPolicy[] ) {
+    this._retryPolicy = value;
+  }
+  public resetRetryPolicy() {
+    this._retryPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retryPolicyInput() {
+    return this._retryPolicy
+  }
+
   // run_command_targets - computed: false, optional: true, required: false
   private _runCommandTargets?: CloudwatchEventTargetRunCommandTargets[];
   public get runCommandTargets() {
@@ -389,9 +451,11 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
       rule: cdktf.stringToTerraform(this._rule),
       target_id: cdktf.stringToTerraform(this._targetId),
       batch_target: cdktf.listMapper(cloudwatchEventTargetBatchTargetToTerraform)(this._batchTarget),
+      dead_letter_config: cdktf.listMapper(cloudwatchEventTargetDeadLetterConfigToTerraform)(this._deadLetterConfig),
       ecs_target: cdktf.listMapper(cloudwatchEventTargetEcsTargetToTerraform)(this._ecsTarget),
       input_transformer: cdktf.listMapper(cloudwatchEventTargetInputTransformerToTerraform)(this._inputTransformer),
       kinesis_target: cdktf.listMapper(cloudwatchEventTargetKinesisTargetToTerraform)(this._kinesisTarget),
+      retry_policy: cdktf.listMapper(cloudwatchEventTargetRetryPolicyToTerraform)(this._retryPolicy),
       run_command_targets: cdktf.listMapper(cloudwatchEventTargetRunCommandTargetsToTerraform)(this._runCommandTargets),
       sqs_target: cdktf.listMapper(cloudwatchEventTargetSqsTargetToTerraform)(this._sqsTarget),
     };

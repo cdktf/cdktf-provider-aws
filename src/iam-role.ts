@@ -10,13 +10,29 @@ export interface IamRoleConfig extends cdktf.TerraformMetaArguments {
   readonly assumeRolePolicy: string;
   readonly description?: string;
   readonly forceDetachPolicies?: boolean;
+  readonly managedPolicyArns?: string[];
   readonly maxSessionDuration?: number;
   readonly name?: string;
   readonly namePrefix?: string;
   readonly path?: string;
   readonly permissionsBoundary?: string;
   readonly tags?: { [key: string]: string };
+  /** inline_policy block */
+  readonly inlinePolicy?: IamRoleInlinePolicy[];
 }
+export interface IamRoleInlinePolicy {
+  readonly name?: string;
+  readonly policy?: string;
+}
+
+function iamRoleInlinePolicyToTerraform(struct?: IamRoleInlinePolicy): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    policy: cdktf.stringToTerraform(struct!.policy),
+  }
+}
+
 
 // Resource
 
@@ -40,12 +56,14 @@ export class IamRole extends cdktf.TerraformResource {
     this._assumeRolePolicy = config.assumeRolePolicy;
     this._description = config.description;
     this._forceDetachPolicies = config.forceDetachPolicies;
+    this._managedPolicyArns = config.managedPolicyArns;
     this._maxSessionDuration = config.maxSessionDuration;
     this._name = config.name;
     this._namePrefix = config.namePrefix;
     this._path = config.path;
     this._permissionsBoundary = config.permissionsBoundary;
     this._tags = config.tags;
+    this._inlinePolicy = config.inlinePolicy;
   }
 
   // ==========
@@ -110,6 +128,22 @@ export class IamRole extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // managed_policy_arns - computed: true, optional: true, required: false
+  private _managedPolicyArns?: string[];
+  public get managedPolicyArns() {
+    return this.getListAttribute('managed_policy_arns');
+  }
+  public set managedPolicyArns(value: string[]) {
+    this._managedPolicyArns = value;
+  }
+  public resetManagedPolicyArns() {
+    this._managedPolicyArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedPolicyArnsInput() {
+    return this._managedPolicyArns
   }
 
   // max_session_duration - computed: false, optional: true, required: false
@@ -213,6 +247,22 @@ export class IamRole extends cdktf.TerraformResource {
     return this.getStringAttribute('unique_id');
   }
 
+  // inline_policy - computed: false, optional: true, required: false
+  private _inlinePolicy?: IamRoleInlinePolicy[];
+  public get inlinePolicy() {
+    return this.interpolationForAttribute('inline_policy') as any;
+  }
+  public set inlinePolicy(value: IamRoleInlinePolicy[] ) {
+    this._inlinePolicy = value;
+  }
+  public resetInlinePolicy() {
+    this._inlinePolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inlinePolicyInput() {
+    return this._inlinePolicy
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -222,12 +272,14 @@ export class IamRole extends cdktf.TerraformResource {
       assume_role_policy: cdktf.stringToTerraform(this._assumeRolePolicy),
       description: cdktf.stringToTerraform(this._description),
       force_detach_policies: cdktf.booleanToTerraform(this._forceDetachPolicies),
+      managed_policy_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._managedPolicyArns),
       max_session_duration: cdktf.numberToTerraform(this._maxSessionDuration),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       path: cdktf.stringToTerraform(this._path),
       permissions_boundary: cdktf.stringToTerraform(this._permissionsBoundary),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      inline_policy: cdktf.listMapper(iamRoleInlinePolicyToTerraform)(this._inlinePolicy),
     };
   }
 }

@@ -108,6 +108,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
     return this._availabilityZoneId
   }
 
+  // available_ip_address_count - computed: true, optional: false, required: false
+  public get availableIpAddressCount() {
+    return this.getNumberAttribute('available_ip_address_count');
+  }
+
   // cidr_block - computed: true, optional: true, required: false
   private _cidrBlock?: string;
   public get cidrBlock() {

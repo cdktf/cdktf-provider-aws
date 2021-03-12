@@ -10,6 +10,7 @@ export interface KinesisAnalyticsApplicationConfig extends cdktf.TerraformMetaAr
   readonly code?: string;
   readonly description?: string;
   readonly name: string;
+  readonly startApplication?: boolean;
   readonly tags?: { [key: string]: string };
   /** cloudwatch_logging_options block */
   readonly cloudwatchLoggingOptions?: KinesisAnalyticsApplicationCloudwatchLoggingOptions[];
@@ -178,6 +179,17 @@ function kinesisAnalyticsApplicationInputsSchemaToTerraform(struct?: KinesisAnal
   }
 }
 
+export interface KinesisAnalyticsApplicationInputsStartingPositionConfiguration {
+  readonly startingPosition?: string;
+}
+
+function kinesisAnalyticsApplicationInputsStartingPositionConfigurationToTerraform(struct?: KinesisAnalyticsApplicationInputsStartingPositionConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    starting_position: cdktf.stringToTerraform(struct!.startingPosition),
+  }
+}
+
 export interface KinesisAnalyticsApplicationInputs {
   readonly namePrefix: string;
   /** kinesis_firehose block */
@@ -190,6 +202,8 @@ export interface KinesisAnalyticsApplicationInputs {
   readonly processingConfiguration?: KinesisAnalyticsApplicationInputsProcessingConfiguration[];
   /** schema block */
   readonly schema: KinesisAnalyticsApplicationInputsSchema[];
+  /** starting_position_configuration block */
+  readonly startingPositionConfiguration?: KinesisAnalyticsApplicationInputsStartingPositionConfiguration[];
 }
 
 function kinesisAnalyticsApplicationInputsToTerraform(struct?: KinesisAnalyticsApplicationInputs): any {
@@ -201,6 +215,7 @@ function kinesisAnalyticsApplicationInputsToTerraform(struct?: KinesisAnalyticsA
     parallelism: cdktf.listMapper(kinesisAnalyticsApplicationInputsParallelismToTerraform)(struct!.parallelism),
     processing_configuration: cdktf.listMapper(kinesisAnalyticsApplicationInputsProcessingConfigurationToTerraform)(struct!.processingConfiguration),
     schema: cdktf.listMapper(kinesisAnalyticsApplicationInputsSchemaToTerraform)(struct!.schema),
+    starting_position_configuration: cdktf.listMapper(kinesisAnalyticsApplicationInputsStartingPositionConfigurationToTerraform)(struct!.startingPositionConfiguration),
   }
 }
 
@@ -244,7 +259,7 @@ function kinesisAnalyticsApplicationOutputsLambdaToTerraform(struct?: KinesisAna
 }
 
 export interface KinesisAnalyticsApplicationOutputsSchema {
-  readonly recordFormatType?: string;
+  readonly recordFormatType: string;
 }
 
 function kinesisAnalyticsApplicationOutputsSchemaToTerraform(struct?: KinesisAnalyticsApplicationOutputsSchema): any {
@@ -415,6 +430,7 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
     this._code = config.code;
     this._description = config.description;
     this._name = config.name;
+    this._startApplication = config.startApplication;
     this._tags = config.tags;
     this._cloudwatchLoggingOptions = config.cloudwatchLoggingOptions;
     this._inputs = config.inputs;
@@ -489,6 +505,22 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // start_application - computed: false, optional: true, required: false
+  private _startApplication?: boolean;
+  public get startApplication() {
+    return this.getBooleanAttribute('start_application');
+  }
+  public set startApplication(value: boolean ) {
+    this._startApplication = value;
+  }
+  public resetStartApplication() {
+    this._startApplication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startApplicationInput() {
+    return this._startApplication
   }
 
   // status - computed: true, optional: false, required: false
@@ -590,6 +622,7 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
       code: cdktf.stringToTerraform(this._code),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
+      start_application: cdktf.booleanToTerraform(this._startApplication),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       cloudwatch_logging_options: cdktf.listMapper(kinesisAnalyticsApplicationCloudwatchLoggingOptionsToTerraform)(this._cloudwatchLoggingOptions),
       inputs: cdktf.listMapper(kinesisAnalyticsApplicationInputsToTerraform)(this._inputs),

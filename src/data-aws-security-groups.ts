@@ -52,6 +52,11 @@ export class DataAwsSecurityGroups extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // arns - computed: true, optional: false, required: false
+  public get arns() {
+    return this.getListAttribute('arns');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');

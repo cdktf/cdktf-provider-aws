@@ -23,7 +23,6 @@ export interface DxHostedPrivateVirtualInterfaceConfig extends cdktf.TerraformMe
 export interface DxHostedPrivateVirtualInterfaceTimeouts {
   readonly create?: string;
   readonly delete?: string;
-  readonly update?: string;
 }
 
 function dxHostedPrivateVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedPrivateVirtualInterfaceTimeouts): any {
@@ -31,7 +30,6 @@ function dxHostedPrivateVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedPri
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
