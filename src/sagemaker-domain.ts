@@ -32,7 +32,7 @@ function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResour
 
 export interface SagemakerDomainDefaultUserSettingsJupyterServerAppSettings {
   /** default_resource_spec block */
-  readonly defaultResourceSpec: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec[];
+  readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec[];
 }
 
 function sagemakerDomainDefaultUserSettingsJupyterServerAppSettingsToTerraform(struct?: SagemakerDomainDefaultUserSettingsJupyterServerAppSettings): any {
@@ -74,7 +74,7 @@ export interface SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings {
   /** custom_image block */
   readonly customImage?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImage[];
   /** default_resource_spec block */
-  readonly defaultResourceSpec: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec[];
+  readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec[];
 }
 
 function sagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsToTerraform(struct?: SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings): any {
@@ -115,7 +115,7 @@ function sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResource
 
 export interface SagemakerDomainDefaultUserSettingsTensorBoardAppSettings {
   /** default_resource_spec block */
-  readonly defaultResourceSpec: SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec[];
+  readonly defaultResourceSpec?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec[];
 }
 
 function sagemakerDomainDefaultUserSettingsTensorBoardAppSettingsToTerraform(struct?: SagemakerDomainDefaultUserSettingsTensorBoardAppSettings): any {

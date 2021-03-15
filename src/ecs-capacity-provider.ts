@@ -13,6 +13,7 @@ export interface EcsCapacityProviderConfig extends cdktf.TerraformMetaArguments 
   readonly autoScalingGroupProvider: EcsCapacityProviderAutoScalingGroupProvider[];
 }
 export interface EcsCapacityProviderAutoScalingGroupProviderManagedScaling {
+  readonly instanceWarmupPeriod?: number;
   readonly maximumScalingStepSize?: number;
   readonly minimumScalingStepSize?: number;
   readonly status?: string;
@@ -22,6 +23,7 @@ export interface EcsCapacityProviderAutoScalingGroupProviderManagedScaling {
 function ecsCapacityProviderAutoScalingGroupProviderManagedScalingToTerraform(struct?: EcsCapacityProviderAutoScalingGroupProviderManagedScaling): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    instance_warmup_period: cdktf.numberToTerraform(struct!.instanceWarmupPeriod),
     maximum_scaling_step_size: cdktf.numberToTerraform(struct!.maximumScalingStepSize),
     minimum_scaling_step_size: cdktf.numberToTerraform(struct!.minimumScalingStepSize),
     status: cdktf.stringToTerraform(struct!.status),

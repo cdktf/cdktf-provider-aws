@@ -715,12 +715,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this.getStringAttribute('spot_instance_id');
   }
 
-  // spot_price - computed: false, optional: true, required: false
+  // spot_price - computed: true, optional: true, required: false
   private _spotPrice?: string;
   public get spotPrice() {
     return this.getStringAttribute('spot_price');
   }
-  public set spotPrice(value: string ) {
+  public set spotPrice(value: string) {
     this._spotPrice = value;
   }
   public resetSpotPrice() {

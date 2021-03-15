@@ -919,12 +919,12 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._skipFinalSnapshot
   }
 
-  // snapshot_identifier - computed: false, optional: true, required: false
+  // snapshot_identifier - computed: true, optional: true, required: false
   private _snapshotIdentifier?: string;
   public get snapshotIdentifier() {
     return this.getStringAttribute('snapshot_identifier');
   }
-  public set snapshotIdentifier(value: string ) {
+  public set snapshotIdentifier(value: string) {
     this._snapshotIdentifier = value;
   }
   public resetSnapshotIdentifier() {

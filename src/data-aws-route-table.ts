@@ -44,6 +44,11 @@ export class DataAwsRouteTableAssociations extends cdktf.ComplexComputedList {
 }
 export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
 
+  // carrier_gateway_id - computed: true, optional: false, required: false
+  public get carrierGatewayId() {
+    return this.getStringAttribute('carrier_gateway_id');
+  }
+
   // cidr_block - computed: true, optional: false, required: false
   public get cidrBlock() {
     return this.getStringAttribute('cidr_block');
@@ -143,6 +148,11 @@ export class DataAwsRouteTable extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // associations - computed: true, optional: false, required: false
   public associations(index: string) {

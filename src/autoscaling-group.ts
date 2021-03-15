@@ -150,9 +150,26 @@ function autoscalingGroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecifi
   }
 }
 
+export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification {
+  readonly launchTemplateId?: string;
+  readonly launchTemplateName?: string;
+  readonly version?: string;
+}
+
+function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    launch_template_id: cdktf.stringToTerraform(struct!.launchTemplateId),
+    launch_template_name: cdktf.stringToTerraform(struct!.launchTemplateName),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride {
   readonly instanceType?: string;
   readonly weightedCapacity?: string;
+  /** launch_template_specification block */
+  readonly launchTemplateSpecification?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification[];
 }
 
 function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerraform(struct?: AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverride): any {
@@ -160,6 +177,7 @@ function autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideToTerraform(s
   return {
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     weighted_capacity: cdktf.stringToTerraform(struct!.weightedCapacity),
+    launch_template_specification: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationToTerraform)(struct!.launchTemplateSpecification),
   }
 }
 

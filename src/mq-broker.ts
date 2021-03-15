@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   readonly applyImmediately?: boolean;
+  readonly authenticationStrategy?: string;
   readonly autoMinorVersionUpgrade?: boolean;
   readonly brokerName: string;
   readonly deploymentMode?: string;
@@ -15,13 +16,16 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   readonly engineVersion: string;
   readonly hostInstanceType: string;
   readonly publiclyAccessible?: boolean;
-  readonly securityGroups: string[];
+  readonly securityGroups?: string[];
+  readonly storageType?: string;
   readonly subnetIds?: string[];
   readonly tags?: { [key: string]: string };
   /** configuration block */
   readonly configuration?: MqBrokerConfiguration[];
   /** encryption_options block */
   readonly encryptionOptions?: MqBrokerEncryptionOptions[];
+  /** ldap_server_metadata block */
+  readonly ldapServerMetadata?: MqBrokerLdapServerMetadata[];
   /** logs block */
   readonly logs?: MqBrokerLogs[];
   /** maintenance_window_start_time block */
@@ -69,6 +73,37 @@ function mqBrokerEncryptionOptionsToTerraform(struct?: MqBrokerEncryptionOptions
   return {
     kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     use_aws_owned_key: cdktf.booleanToTerraform(struct!.useAwsOwnedKey),
+  }
+}
+
+export interface MqBrokerLdapServerMetadata {
+  readonly hosts?: string[];
+  readonly roleBase?: string;
+  readonly roleName?: string;
+  readonly roleSearchMatching?: string;
+  readonly roleSearchSubtree?: boolean;
+  readonly serviceAccountPassword?: string;
+  readonly serviceAccountUsername?: string;
+  readonly userBase?: string;
+  readonly userRoleName?: string;
+  readonly userSearchMatching?: string;
+  readonly userSearchSubtree?: boolean;
+}
+
+function mqBrokerLdapServerMetadataToTerraform(struct?: MqBrokerLdapServerMetadata): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    hosts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.hosts),
+    role_base: cdktf.stringToTerraform(struct!.roleBase),
+    role_name: cdktf.stringToTerraform(struct!.roleName),
+    role_search_matching: cdktf.stringToTerraform(struct!.roleSearchMatching),
+    role_search_subtree: cdktf.booleanToTerraform(struct!.roleSearchSubtree),
+    service_account_password: cdktf.stringToTerraform(struct!.serviceAccountPassword),
+    service_account_username: cdktf.stringToTerraform(struct!.serviceAccountUsername),
+    user_base: cdktf.stringToTerraform(struct!.userBase),
+    user_role_name: cdktf.stringToTerraform(struct!.userRoleName),
+    user_search_matching: cdktf.stringToTerraform(struct!.userSearchMatching),
+    user_search_subtree: cdktf.booleanToTerraform(struct!.userSearchSubtree),
   }
 }
 
@@ -138,6 +173,7 @@ export class MqBroker extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._applyImmediately = config.applyImmediately;
+    this._authenticationStrategy = config.authenticationStrategy;
     this._autoMinorVersionUpgrade = config.autoMinorVersionUpgrade;
     this._brokerName = config.brokerName;
     this._deploymentMode = config.deploymentMode;
@@ -146,10 +182,12 @@ export class MqBroker extends cdktf.TerraformResource {
     this._hostInstanceType = config.hostInstanceType;
     this._publiclyAccessible = config.publiclyAccessible;
     this._securityGroups = config.securityGroups;
+    this._storageType = config.storageType;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
     this._configuration = config.configuration;
     this._encryptionOptions = config.encryptionOptions;
+    this._ldapServerMetadata = config.ldapServerMetadata;
     this._logs = config.logs;
     this._maintenanceWindowStartTime = config.maintenanceWindowStartTime;
     this._user = config.user;
@@ -178,6 +216,22 @@ export class MqBroker extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // authentication_strategy - computed: true, optional: true, required: false
+  private _authenticationStrategy?: string;
+  public get authenticationStrategy() {
+    return this.getStringAttribute('authentication_strategy');
+  }
+  public set authenticationStrategy(value: string) {
+    this._authenticationStrategy = value;
+  }
+  public resetAuthenticationStrategy() {
+    this._authenticationStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationStrategyInput() {
+    return this._authenticationStrategy
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
@@ -290,17 +344,36 @@ export class MqBroker extends cdktf.TerraformResource {
     return this._publiclyAccessible
   }
 
-  // security_groups - computed: false, optional: false, required: true
-  private _securityGroups: string[];
+  // security_groups - computed: false, optional: true, required: false
+  private _securityGroups?: string[];
   public get securityGroups() {
     return this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[]) {
+  public set securityGroups(value: string[] ) {
     this._securityGroups = value;
+  }
+  public resetSecurityGroups() {
+    this._securityGroups = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupsInput() {
     return this._securityGroups
+  }
+
+  // storage_type - computed: true, optional: true, required: false
+  private _storageType?: string;
+  public get storageType() {
+    return this.getStringAttribute('storage_type');
+  }
+  public set storageType(value: string) {
+    this._storageType = value;
+  }
+  public resetStorageType() {
+    this._storageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTypeInput() {
+    return this._storageType
   }
 
   // subnet_ids - computed: true, optional: true, required: false
@@ -367,6 +440,22 @@ export class MqBroker extends cdktf.TerraformResource {
     return this._encryptionOptions
   }
 
+  // ldap_server_metadata - computed: false, optional: true, required: false
+  private _ldapServerMetadata?: MqBrokerLdapServerMetadata[];
+  public get ldapServerMetadata() {
+    return this.interpolationForAttribute('ldap_server_metadata') as any;
+  }
+  public set ldapServerMetadata(value: MqBrokerLdapServerMetadata[] ) {
+    this._ldapServerMetadata = value;
+  }
+  public resetLdapServerMetadata() {
+    this._ldapServerMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ldapServerMetadataInput() {
+    return this._ldapServerMetadata
+  }
+
   // logs - computed: false, optional: true, required: false
   private _logs?: MqBrokerLogs[];
   public get logs() {
@@ -419,6 +508,7 @@ export class MqBroker extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       apply_immediately: cdktf.booleanToTerraform(this._applyImmediately),
+      authentication_strategy: cdktf.stringToTerraform(this._authenticationStrategy),
       auto_minor_version_upgrade: cdktf.booleanToTerraform(this._autoMinorVersionUpgrade),
       broker_name: cdktf.stringToTerraform(this._brokerName),
       deployment_mode: cdktf.stringToTerraform(this._deploymentMode),
@@ -427,10 +517,12 @@ export class MqBroker extends cdktf.TerraformResource {
       host_instance_type: cdktf.stringToTerraform(this._hostInstanceType),
       publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      storage_type: cdktf.stringToTerraform(this._storageType),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       configuration: cdktf.listMapper(mqBrokerConfigurationToTerraform)(this._configuration),
       encryption_options: cdktf.listMapper(mqBrokerEncryptionOptionsToTerraform)(this._encryptionOptions),
+      ldap_server_metadata: cdktf.listMapper(mqBrokerLdapServerMetadataToTerraform)(this._ldapServerMetadata),
       logs: cdktf.listMapper(mqBrokerLogsToTerraform)(this._logs),
       maintenance_window_start_time: cdktf.listMapper(mqBrokerMaintenanceWindowStartTimeToTerraform)(this._maintenanceWindowStartTime),
       user: cdktf.listMapper(mqBrokerUserToTerraform)(this._user),

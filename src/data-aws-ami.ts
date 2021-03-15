@@ -119,6 +119,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     return this.getStringAttribute('description');
   }
 
+  // ena_support - computed: true, optional: false, required: false
+  public get enaSupport() {
+    return this.getBooleanAttribute('ena_support');
+  }
+
   // executable_users - computed: false, optional: true, required: false
   private _executableUsers?: string[];
   public get executableUsers() {
@@ -230,6 +235,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
     return this.getStringAttribute('platform');
   }
 
+  // platform_details - computed: true, optional: false, required: false
+  public get platformDetails() {
+    return this.getStringAttribute('platform_details');
+  }
+
   // product_codes - computed: true, optional: false, required: false
   public productCodes(index: string) {
     return new DataAwsAmiProductCodes(this, 'product_codes', index);
@@ -289,6 +299,11 @@ export class DataAwsAmi extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // usage_operation - computed: true, optional: false, required: false
+  public get usageOperation() {
+    return this.getStringAttribute('usage_operation');
   }
 
   // virtualization_type - computed: true, optional: false, required: false

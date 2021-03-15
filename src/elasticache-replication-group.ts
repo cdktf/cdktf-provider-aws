@@ -16,6 +16,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   readonly engine?: string;
   readonly engineVersion?: string;
   readonly finalSnapshotIdentifier?: string;
+  readonly globalReplicationGroupId?: string;
   readonly kmsKeyId?: string;
   readonly maintenanceWindow?: string;
   readonly multiAzEnabled?: boolean;
@@ -97,6 +98,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
     this._finalSnapshotIdentifier = config.finalSnapshotIdentifier;
+    this._globalReplicationGroupId = config.globalReplicationGroupId;
     this._kmsKeyId = config.kmsKeyId;
     this._maintenanceWindow = config.maintenanceWindow;
     this._multiAzEnabled = config.multiAzEnabled;
@@ -281,6 +283,22 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get finalSnapshotIdentifierInput() {
     return this._finalSnapshotIdentifier
+  }
+
+  // global_replication_group_id - computed: true, optional: true, required: false
+  private _globalReplicationGroupId?: string;
+  public get globalReplicationGroupId() {
+    return this.getStringAttribute('global_replication_group_id');
+  }
+  public set globalReplicationGroupId(value: string) {
+    this._globalReplicationGroupId = value;
+  }
+  public resetGlobalReplicationGroupId() {
+    this._globalReplicationGroupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get globalReplicationGroupIdInput() {
+    return this._globalReplicationGroupId
   }
 
   // id - computed: true, optional: true, required: false
@@ -648,6 +666,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       final_snapshot_identifier: cdktf.stringToTerraform(this._finalSnapshotIdentifier),
+      global_replication_group_id: cdktf.stringToTerraform(this._globalReplicationGroupId),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       maintenance_window: cdktf.stringToTerraform(this._maintenanceWindow),
       multi_az_enabled: cdktf.booleanToTerraform(this._multiAzEnabled),

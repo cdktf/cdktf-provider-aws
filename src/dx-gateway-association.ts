@@ -12,6 +12,7 @@ export interface DxGatewayAssociationConfig extends cdktf.TerraformMetaArguments
   readonly associatedGatewayOwnerAccountId?: string;
   readonly dxGatewayId: string;
   readonly proposalId?: string;
+  readonly vpnGatewayId?: string;
   /** timeouts block */
   readonly timeouts?: DxGatewayAssociationTimeouts;
 }
@@ -55,6 +56,7 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
     this._associatedGatewayOwnerAccountId = config.associatedGatewayOwnerAccountId;
     this._dxGatewayId = config.dxGatewayId;
     this._proposalId = config.proposalId;
+    this._vpnGatewayId = config.vpnGatewayId;
     this._timeouts = config.timeouts;
   }
 
@@ -159,6 +161,22 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
     return this._proposalId
   }
 
+  // vpn_gateway_id - computed: false, optional: true, required: false
+  private _vpnGatewayId?: string;
+  public get vpnGatewayId() {
+    return this.getStringAttribute('vpn_gateway_id');
+  }
+  public set vpnGatewayId(value: string ) {
+    this._vpnGatewayId = value;
+  }
+  public resetVpnGatewayId() {
+    this._vpnGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpnGatewayIdInput() {
+    return this._vpnGatewayId
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DxGatewayAssociationTimeouts;
   public get timeouts() {
@@ -186,6 +204,7 @@ export class DxGatewayAssociation extends cdktf.TerraformResource {
       associated_gateway_owner_account_id: cdktf.stringToTerraform(this._associatedGatewayOwnerAccountId),
       dx_gateway_id: cdktf.stringToTerraform(this._dxGatewayId),
       proposal_id: cdktf.stringToTerraform(this._proposalId),
+      vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
       timeouts: dxGatewayAssociationTimeoutsToTerraform(this._timeouts),
     };
   }

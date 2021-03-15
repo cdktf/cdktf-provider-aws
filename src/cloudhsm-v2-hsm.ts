@@ -17,7 +17,6 @@ export interface CloudhsmV2HsmConfig extends cdktf.TerraformMetaArguments {
 export interface CloudhsmV2HsmTimeouts {
   readonly create?: string;
   readonly delete?: string;
-  readonly update?: string;
 }
 
 function cloudhsmV2HsmTimeoutsToTerraform(struct?: CloudhsmV2HsmTimeouts): any {
@@ -25,7 +24,6 @@ function cloudhsmV2HsmTimeoutsToTerraform(struct?: CloudhsmV2HsmTimeouts): any {
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 

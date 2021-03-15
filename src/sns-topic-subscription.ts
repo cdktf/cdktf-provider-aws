@@ -15,6 +15,7 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
   readonly protocol: string;
   readonly rawMessageDelivery?: boolean;
   readonly redrivePolicy?: string;
+  readonly subscriptionRoleArn?: string;
   readonly topicArn: string;
 }
 
@@ -45,6 +46,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
     this._protocol = config.protocol;
     this._rawMessageDelivery = config.rawMessageDelivery;
     this._redrivePolicy = config.redrivePolicy;
+    this._subscriptionRoleArn = config.subscriptionRoleArn;
     this._topicArn = config.topicArn;
   }
 
@@ -71,6 +73,11 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get confirmationTimeoutInMinutesInput() {
     return this._confirmationTimeoutInMinutes
+  }
+
+  // confirmation_was_authenticated - computed: true, optional: false, required: false
+  public get confirmationWasAuthenticated() {
+    return this.getBooleanAttribute('confirmation_was_authenticated');
   }
 
   // delivery_policy - computed: false, optional: true, required: false
@@ -139,6 +146,16 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
+  // pending_confirmation - computed: true, optional: false, required: false
+  public get pendingConfirmation() {
+    return this.getBooleanAttribute('pending_confirmation');
+  }
+
   // protocol - computed: false, optional: false, required: true
   private _protocol: string;
   public get protocol() {
@@ -184,6 +201,22 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
     return this._redrivePolicy
   }
 
+  // subscription_role_arn - computed: false, optional: true, required: false
+  private _subscriptionRoleArn?: string;
+  public get subscriptionRoleArn() {
+    return this.getStringAttribute('subscription_role_arn');
+  }
+  public set subscriptionRoleArn(value: string ) {
+    this._subscriptionRoleArn = value;
+  }
+  public resetSubscriptionRoleArn() {
+    this._subscriptionRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscriptionRoleArnInput() {
+    return this._subscriptionRoleArn
+  }
+
   // topic_arn - computed: false, optional: false, required: true
   private _topicArn: string;
   public get topicArn() {
@@ -211,6 +244,7 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
       protocol: cdktf.stringToTerraform(this._protocol),
       raw_message_delivery: cdktf.booleanToTerraform(this._rawMessageDelivery),
       redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
+      subscription_role_arn: cdktf.stringToTerraform(this._subscriptionRoleArn),
       topic_arn: cdktf.stringToTerraform(this._topicArn),
     };
   }

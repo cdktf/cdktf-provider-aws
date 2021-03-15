@@ -110,6 +110,7 @@ function cognitoUserPoolDeviceConfigurationToTerraform(struct?: CognitoUserPoolD
 }
 
 export interface CognitoUserPoolEmailConfiguration {
+  readonly configurationSet?: string;
   readonly emailSendingAccount?: string;
   readonly fromEmailAddress?: string;
   readonly replyToEmailAddress?: string;
@@ -119,6 +120,7 @@ export interface CognitoUserPoolEmailConfiguration {
 function cognitoUserPoolEmailConfigurationToTerraform(struct?: CognitoUserPoolEmailConfiguration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    configuration_set: cdktf.stringToTerraform(struct!.configurationSet),
     email_sending_account: cdktf.stringToTerraform(struct!.emailSendingAccount),
     from_email_address: cdktf.stringToTerraform(struct!.fromEmailAddress),
     reply_to_email_address: cdktf.stringToTerraform(struct!.replyToEmailAddress),

@@ -54,6 +54,63 @@ export class DataAwsMqBrokerInstances extends cdktf.ComplexComputedList {
     return this.getStringAttribute('ip_address');
   }
 }
+export class DataAwsMqBrokerLdapServerMetadata extends cdktf.ComplexComputedList {
+
+  // hosts - computed: true, optional: false, required: false
+  public get hosts() {
+    return this.getListAttribute('hosts');
+  }
+
+  // role_base - computed: true, optional: false, required: false
+  public get roleBase() {
+    return this.getStringAttribute('role_base');
+  }
+
+  // role_name - computed: true, optional: false, required: false
+  public get roleName() {
+    return this.getStringAttribute('role_name');
+  }
+
+  // role_search_matching - computed: true, optional: false, required: false
+  public get roleSearchMatching() {
+    return this.getStringAttribute('role_search_matching');
+  }
+
+  // role_search_subtree - computed: true, optional: false, required: false
+  public get roleSearchSubtree() {
+    return this.getBooleanAttribute('role_search_subtree');
+  }
+
+  // service_account_password - computed: true, optional: false, required: false
+  public get serviceAccountPassword() {
+    return this.getStringAttribute('service_account_password');
+  }
+
+  // service_account_username - computed: true, optional: false, required: false
+  public get serviceAccountUsername() {
+    return this.getStringAttribute('service_account_username');
+  }
+
+  // user_base - computed: true, optional: false, required: false
+  public get userBase() {
+    return this.getStringAttribute('user_base');
+  }
+
+  // user_role_name - computed: true, optional: false, required: false
+  public get userRoleName() {
+    return this.getStringAttribute('user_role_name');
+  }
+
+  // user_search_matching - computed: true, optional: false, required: false
+  public get userSearchMatching() {
+    return this.getStringAttribute('user_search_matching');
+  }
+
+  // user_search_subtree - computed: true, optional: false, required: false
+  public get userSearchSubtree() {
+    return this.getBooleanAttribute('user_search_subtree');
+  }
+}
 export class DataAwsMqBrokerMaintenanceWindowStartTime extends cdktf.ComplexComputedList {
 
   // day_of_week - computed: true, optional: false, required: false
@@ -130,6 +187,11 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // authentication_strategy - computed: true, optional: false, required: false
+  public get authenticationStrategy() {
+    return this.getStringAttribute('authentication_strategy');
   }
 
   // auto_minor_version_upgrade - computed: true, optional: false, required: false
@@ -209,6 +271,11 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
     return new DataAwsMqBrokerInstances(this, 'instances', index);
   }
 
+  // ldap_server_metadata - computed: true, optional: false, required: false
+  public ldapServerMetadata(index: string) {
+    return new DataAwsMqBrokerLdapServerMetadata(this, 'ldap_server_metadata', index);
+  }
+
   // maintenance_window_start_time - computed: true, optional: false, required: false
   public maintenanceWindowStartTime(index: string) {
     return new DataAwsMqBrokerMaintenanceWindowStartTime(this, 'maintenance_window_start_time', index);
@@ -222,6 +289,11 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
     return this.getListAttribute('security_groups');
+  }
+
+  // storage_type - computed: true, optional: false, required: false
+  public get storageType() {
+    return this.getStringAttribute('storage_type');
   }
 
   // subnet_ids - computed: true, optional: false, required: false
