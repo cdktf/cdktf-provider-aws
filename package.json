@@ -33,7 +33,7 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.1.26",
+    "@cdktf/provider-project": "^0.1.33",
     "@types/jest": "^26.0.7",
     "@types/node": "^10.17.0",
     "cdktf": "0.1.0",
@@ -122,7 +122,7 @@
       },
       "dotnet": {
         "namespace": "HashiCorp.Cdktf.Providers.Aws",
-        "packageId": "HashiCorp.Cdktf.Providers.Aws"
+        "packageId": "HashiCorp.Cdktf.Providers.AwsProvider"
       }
     },
     "tsc": {

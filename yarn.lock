@@ -270,10 +270,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cdktf/provider-project@^0.1.26":
-  version "0.1.26"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.26.tgz#c1f7d74c8d6048d886d300e099455ba305976263"
-  integrity sha512-A6hC9uNgDrj4Lfsd+eMzNiTYayv+SgLqEebALQXfKj1BBhLb6tnQkfHNks0b/mGT6ogtLfyXZi9geMm991Lv6w==
+"@cdktf/provider-project@^0.1.33":
+  version "0.1.33"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.33.tgz#714f155ade6c66251209ebdabf54db93fc3762c3"
+  integrity sha512-QxQcnPhZ7GI0sUTkneTygqjfxbCiC7uLjZuPZPxhMWoOSaV3cSADSBBk6VGrTcHsQjKK8mvlg3UYr2M1KSgp7A==
   dependencies:
     change-case "^4.1.2"
 
