@@ -17,6 +17,7 @@ export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArgument
   readonly gatewayType?: string;
   readonly gatewayVpcEndpoint?: string;
   readonly mediumChangerType?: string;
+  readonly smbFileShareVisibility?: boolean;
   readonly smbGuestPassword?: string;
   readonly smbSecurityStrategy?: string;
   readonly tags?: { [key: string]: string };
@@ -95,6 +96,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     this._gatewayType = config.gatewayType;
     this._gatewayVpcEndpoint = config.gatewayVpcEndpoint;
     this._mediumChangerType = config.mediumChangerType;
+    this._smbFileShareVisibility = config.smbFileShareVisibility;
     this._smbGuestPassword = config.smbGuestPassword;
     this._smbSecurityStrategy = config.smbSecurityStrategy;
     this._tags = config.tags;
@@ -296,6 +298,22 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     return this._mediumChangerType
   }
 
+  // smb_file_share_visibility - computed: false, optional: true, required: false
+  private _smbFileShareVisibility?: boolean;
+  public get smbFileShareVisibility() {
+    return this.getBooleanAttribute('smb_file_share_visibility');
+  }
+  public set smbFileShareVisibility(value: boolean ) {
+    this._smbFileShareVisibility = value;
+  }
+  public resetSmbFileShareVisibility() {
+    this._smbFileShareVisibility = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get smbFileShareVisibilityInput() {
+    return this._smbFileShareVisibility
+  }
+
   // smb_guest_password - computed: false, optional: true, required: false
   private _smbGuestPassword?: string;
   public get smbGuestPassword() {
@@ -408,6 +426,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
       gateway_type: cdktf.stringToTerraform(this._gatewayType),
       gateway_vpc_endpoint: cdktf.stringToTerraform(this._gatewayVpcEndpoint),
       medium_changer_type: cdktf.stringToTerraform(this._mediumChangerType),
+      smb_file_share_visibility: cdktf.booleanToTerraform(this._smbFileShareVisibility),
       smb_guest_password: cdktf.stringToTerraform(this._smbGuestPassword),
       smb_security_strategy: cdktf.stringToTerraform(this._smbSecurityStrategy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
