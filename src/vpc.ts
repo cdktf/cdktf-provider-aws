@@ -15,6 +15,7 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   readonly enableDnsSupport?: boolean;
   readonly instanceTenancy?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -44,6 +45,7 @@ export class Vpc extends cdktf.TerraformResource {
     this._enableDnsSupport = config.enableDnsSupport;
     this._instanceTenancy = config.instanceTenancy;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -225,6 +227,22 @@ export class Vpc extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -239,6 +257,7 @@ export class Vpc extends cdktf.TerraformResource {
       enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
       instance_tenancy: cdktf.stringToTerraform(this._instanceTenancy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

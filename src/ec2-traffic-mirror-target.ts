@@ -100,6 +100,11 @@ export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
     return this._networkLoadBalancerArn
   }
 
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {

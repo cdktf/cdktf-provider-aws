@@ -89,6 +89,11 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
     return this._networkInterfaceId
   }
 
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
   // packet_length - computed: false, optional: true, required: false
   private _packetLength?: number;
   public get packetLength() {

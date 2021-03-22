@@ -51,6 +51,8 @@ using temporary security credentials. */
   readonly alias?: string;
   /** assume_role block */
   readonly assumeRole?: AwsProviderAssumeRole[];
+  /** default_tags block */
+  readonly defaultTags?: AwsProviderDefaultTags[];
   /** endpoints block */
   readonly endpoints?: AwsProviderEndpoints[];
   /** ignore_tags block */
@@ -89,6 +91,18 @@ function awsProviderAssumeRoleToTerraform(struct?: AwsProviderAssumeRole): any {
   }
 }
 
+export interface AwsProviderDefaultTags {
+  /** Resource tags to default across all resources */
+  readonly tags?: { [key: string]: string };
+}
+
+function awsProviderDefaultTagsToTerraform(struct?: AwsProviderDefaultTags): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+  }
+}
+
 export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly accessanalyzer?: string;
@@ -112,6 +126,8 @@ export interface AwsProviderEndpoints {
   readonly appsync?: string;
   /** Use this to override the default service endpoint URL */
   readonly athena?: string;
+  /** Use this to override the default service endpoint URL */
+  readonly auditmanager?: string;
   /** Use this to override the default service endpoint URL */
   readonly autoscaling?: string;
   /** Use this to override the default service endpoint URL */
@@ -408,6 +424,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     appstream: cdktf.stringToTerraform(struct!.appstream),
     appsync: cdktf.stringToTerraform(struct!.appsync),
     athena: cdktf.stringToTerraform(struct!.athena),
+    auditmanager: cdktf.stringToTerraform(struct!.auditmanager),
     autoscaling: cdktf.stringToTerraform(struct!.autoscaling),
     autoscalingplans: cdktf.stringToTerraform(struct!.autoscalingplans),
     backup: cdktf.stringToTerraform(struct!.backup),
@@ -602,6 +619,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
     this._token = config.token;
     this._alias = config.alias;
     this._assumeRole = config.assumeRole;
+    this._defaultTags = config.defaultTags;
     this._endpoints = config.endpoints;
     this._ignoreTags = config.ignoreTags;
   }
@@ -895,6 +913,22 @@ export class AwsProvider extends cdktf.TerraformProvider {
     return this._assumeRole
   }
 
+  // default_tags - computed: false, optional: true, required: false
+  private _defaultTags?: AwsProviderDefaultTags[];
+  public get defaultTags() {
+    return this._defaultTags;
+  }
+  public set defaultTags(value: AwsProviderDefaultTags[]  | undefined) {
+    this._defaultTags = value;
+  }
+  public resetDefaultTags() {
+    this._defaultTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultTagsInput() {
+    return this._defaultTags
+  }
+
   // endpoints - computed: false, optional: true, required: false
   private _endpoints?: AwsProviderEndpoints[];
   public get endpoints() {
@@ -951,6 +985,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       token: cdktf.stringToTerraform(this._token),
       alias: cdktf.stringToTerraform(this._alias),
       assume_role: cdktf.listMapper(awsProviderAssumeRoleToTerraform)(this._assumeRole),
+      default_tags: cdktf.listMapper(awsProviderDefaultTagsToTerraform)(this._defaultTags),
       endpoints: cdktf.listMapper(awsProviderEndpointsToTerraform)(this._endpoints),
       ignore_tags: cdktf.listMapper(awsProviderIgnoreTagsToTerraform)(this._ignoreTags),
     };
