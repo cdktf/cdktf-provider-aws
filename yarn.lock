@@ -477,7 +477,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jsii/spec@^1.16.0", "@jsii/spec@^1.25.0", "@jsii/spec@^1.26.0":
+"@jsii/spec@^1.16.0", "@jsii/spec@^1.26.0":
   version "1.26.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.26.0.tgz#fcf0ceae1eaa486c504fdb6d2d02897870e43ab4"
   integrity sha512-wh9Z/wfQYcWE5IgUfKNBYQ9Lhye9Xh/lsRsxMQluqEsgObNqb/8JreenWviqzHzBBcvTcHHyl+G30mpmyO1PWQ==
@@ -622,9 +622,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/jest@^26.0.7":
-  version "26.0.21"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.21.tgz#3a73c2731e7e4f0fbaea56ce7ff8c79cf812bd24"
-  integrity sha512-ab9TyM/69yg7eew9eOwKMUmvIZAKEGZYlq/dhe5/0IMUd/QLJv5ldRMdddSn+u22N13FP3s5jYyktxuBwY0kDA==
+  version "26.0.22"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.22.tgz#8308a1debdf1b807aa47be2838acdcd91e88fbe6"
+  integrity sha512-eeWwWjlqxvBxc4oQdkueW5OF/gtfSceKk4OnOAGlUSwS/liBRtZppbJuz1YkgbrbfGOoeBHun9fOvXnjNwrSOw==
   dependencies:
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
@@ -3667,7 +3667,7 @@ jsii-pacmak@^1.12.0, jsii-pacmak@^1.19.0:
     xmlbuilder "^15.1.1"
     yargs "^16.2.0"
 
-jsii-reflect@^1.16.0, jsii-reflect@^1.25.0, jsii-reflect@^1.26.0:
+jsii-reflect@^1.16.0, jsii-reflect@^1.26.0:
   version "1.26.0"
   resolved "https://registry.yarnpkg.com/jsii-reflect/-/jsii-reflect-1.26.0.tgz#6efa0e8058ff8547b02b3b688263ad933feb646b"
   integrity sha512-mlu97Xs2M+YCq3Z8z2vzLYOe3XVC3T0YBabvJjkKoNYdH6F/S5zQMVdGwfHEXv1asFv7PrrVu46Zf/dKnqULcw==
