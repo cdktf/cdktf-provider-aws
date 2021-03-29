@@ -270,10 +270,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cdktf/provider-project@^0.1.39":
-  version "0.1.39"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.39.tgz#b36e4447bd8b72f57f38e0efc4ff3169ae44e106"
-  integrity sha512-LYIsQiwhi61Qozwph9OntihLZX0c6ErJPxIgDD+wSrwmmU+wxVH/rKdMllRZsaTCJwr49CQZFwhwGdrht8wDaw==
+"@cdktf/provider-project@^0.1.40":
+  version "0.1.40"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.40.tgz#7ec5fe509800e764fbfbad4aeaf327f05a9ae262"
+  integrity sha512-2cLndojXdBJ63yDj93l2kEAYs92VkPtlXkEiDTZgr5SQNVBN2pC6sUIRbOe3Q+uJkIwaVKjPPmefvMfrgFG0WA==
   dependencies:
     change-case "^4.1.2"
 
@@ -2760,6 +2760,11 @@ ini@^1.3.2:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
 
+ini@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-2.0.0.tgz#e5fd556ecdd5726be978fa1001862eacb0a94bc5"
+  integrity sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==
+
 ink-confirm-input@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ink-confirm-input/-/ink-confirm-input-2.0.0.tgz#ee65758f6315396bbcd0613ef626f1d594703cde"
@@ -4739,16 +4744,17 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-projen@^0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.17.0.tgz#9a7c6deff77a3a76f24abc0ccb6563f23eae6fb1"
-  integrity sha512-t8Vg7tXLPMqi7PPJPCIujzv6jD3hHrnSXwXjECJZBh0+zeAdFuu6H46ztIiu0I73h0QOTMfyRxlRoMn4YKtxoQ==
+projen@^0.17.18:
+  version "0.17.18"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.17.18.tgz#5ca933b7ba51ae52d80d0e88af16be8796c7e9d2"
+  integrity sha512-K4eg39LPpE2pXqMPyWjS6+qXZdfZGOIqRoKcddBKBvPVeD+Hy6bxZ5mzOOPalWIY3D/rcN3MvYv77nOX/jl7vA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     chalk "^4.1.0"
     decamelize "^4.0.0"
     fs-extra "^9.0.1"
     glob "^7"
+    ini "^2.0.0"
     inquirer "^7.3.3"
     semver "^7.3.2"
     xmlbuilder2 "^2.4.0"
