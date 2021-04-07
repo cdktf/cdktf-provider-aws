@@ -6,16 +6,10 @@
     "url": "https://github.com/terraform-cdk-providers/cdktf-provider-aws.git"
   },
   "scripts": {
-    "projen": "npx projen",
-    "start": "npx projen start",
-    "fetch": "rm -rf ./src/* && cdktf get && cp -R .gen/providers/aws/* ./src/",
-    "commit": "git add -A && git commit -am \"Update provider\" || echo \"No changes to commit\"",
-    "should-release": "! git diff --exit-code v$(cat version.json | jq -r '.version') ./src ./package.json",
-    "prebump": "yarn fetch && yarn compile && yarn run commit && yarn run should-release",
-    "compile": "npx projen compile",
-    "test": "npx projen test",
     "clobber": "npx projen clobber",
+    "compile": "jsii --silence-warnings=reserved-word",
     "test:compile": "npx projen test:compile",
+    "test": "jest --passWithNoTests",
     "build": "npx projen build",
     "bump": "npx projen bump",
     "release": "npx projen release",
@@ -25,7 +19,13 @@
     "watch": "npx projen watch",
     "package": "npx projen package",
     "compat": "npx projen compat",
-    "docgen": "npx projen docgen"
+    "docgen": "npx projen docgen",
+    "projen": "npx projen",
+    "start": "npx projen start",
+    "fetch": "rm -rf ./src/* && cdktf get && cp -R .gen/providers/aws/* ./src/",
+    "commit": "git add -A && git commit -am \"Update provider\" || echo \"No changes to commit\"",
+    "should-release": "! git diff --exit-code v$(cat version.json | jq -r '.version') ./src ./package.json",
+    "prebump": "yarn fetch && yarn compile && yarn run commit && yarn run should-release"
   },
   "author": {
     "name": "HashiCorp",
@@ -33,7 +33,7 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.1.39",
+    "@cdktf/provider-project": "^0.1.47",
     "@types/jest": "^26.0.7",
     "@types/node": "^10.17.0",
     "cdktf": "0.1.0",
@@ -46,7 +46,7 @@
     "jsii-diff": "^1.19.0",
     "jsii-docgen": "^1.8.33",
     "jsii-pacmak": "^1.19.0",
-    "projen": "^0.17.0",
+    "projen": "^0.17.30",
     "standard-version": "^9",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
@@ -122,7 +122,7 @@
       },
       "dotnet": {
         "namespace": "HashiCorp.Cdktf.Providers.Aws",
-        "packageId": "HashiCorp.Cdktf.Providers.ProviderAws"
+        "packageId": "HashiCorp.Cdktf.Providers.Aws"
       }
     },
     "tsc": {
