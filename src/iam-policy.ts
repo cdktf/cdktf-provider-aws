@@ -12,6 +12,7 @@ export interface IamPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly namePrefix?: string;
   readonly path?: string;
   readonly policy: string;
+  readonly tags?: { [key: string]: string };
 }
 
 // Resource
@@ -38,6 +39,7 @@ export class IamPolicy extends cdktf.TerraformResource {
     this._namePrefix = config.namePrefix;
     this._path = config.path;
     this._policy = config.policy;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -131,6 +133,27 @@ export class IamPolicy extends cdktf.TerraformResource {
     return this._policy
   }
 
+  // policy_id - computed: true, optional: false, required: false
+  public get policyId() {
+    return this.getStringAttribute('policy_id');
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -142,6 +165,7 @@ export class IamPolicy extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       path: cdktf.stringToTerraform(this._path),
       policy: cdktf.stringToTerraform(this._policy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

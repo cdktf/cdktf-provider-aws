@@ -14,6 +14,68 @@ export interface AppmeshVirtualNodeConfig extends cdktf.TerraformMetaArguments {
   /** spec block */
   readonly spec: AppmeshVirtualNodeSpec[];
 }
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile {
+  readonly certificateChain: string;
+  readonly privateKey: string;
+}
+
+function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    certificate_chain: cdktf.stringToTerraform(struct!.certificateChain),
+    private_key: cdktf.stringToTerraform(struct!.privateKey),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds {
+  readonly secretName: string;
+}
+
+function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    secret_name: cdktf.stringToTerraform(struct!.secretName),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate {
+  /** file block */
+  readonly file?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFile[];
+  /** sds block */
+  readonly sds?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSds[];
+}
+
+function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    file: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateFileToTerraform)(struct!.file),
+    sds: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateSdsToTerraform)(struct!.sds),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch {
+  readonly exact: string[];
+}
+
+function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    exact: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exact),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames {
+  /** match block */
+  readonly match: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatch[];
+}
+
+function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    match: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesMatchToTerraform)(struct!.match),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm {
   readonly certificateAuthorityArns: string[];
 }
@@ -36,11 +98,24 @@ function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTru
   }
 }
 
+export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds {
+  readonly secretName: string;
+}
+
+function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    secret_name: cdktf.stringToTerraform(struct!.secretName),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust {
   /** acm block */
   readonly acm?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcm[];
   /** file block */
   readonly file?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFile[];
+  /** sds block */
+  readonly sds?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSds[];
 }
 
 function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust): any {
@@ -48,10 +123,13 @@ function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTru
   return {
     acm: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustAcmToTerraform)(struct!.acm),
     file: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustFileToTerraform)(struct!.file),
+    sds: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustSdsToTerraform)(struct!.sds),
   }
 }
 
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation {
+  /** subject_alternative_names block */
+  readonly subjectAlternativeNames?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNames[];
   /** trust block */
   readonly trust: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrust[];
 }
@@ -59,6 +137,7 @@ export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValid
 function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationToTerraform(struct?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    subject_alternative_names: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationSubjectAlternativeNamesToTerraform)(struct!.subjectAlternativeNames),
     trust: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationTrustToTerraform)(struct!.trust),
   }
 }
@@ -66,6 +145,8 @@ function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationToT
 export interface AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTls {
   readonly enforce?: boolean;
   readonly ports?: number[];
+  /** certificate block */
+  readonly certificate?: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificate[];
   /** validation block */
   readonly validation: AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidation[];
 }
@@ -75,6 +156,7 @@ function appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsToTerraform(s
   return {
     enforce: cdktf.booleanToTerraform(struct!.enforce),
     ports: cdktf.listMapper(cdktf.numberToTerraform)(struct!.ports),
+    certificate: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsCertificateToTerraform)(struct!.certificate),
     validation: cdktf.listMapper(appmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsValidationToTerraform)(struct!.validation),
   }
 }
@@ -117,6 +199,68 @@ function appmeshVirtualNodeSpecBackendToTerraform(struct?: AppmeshVirtualNodeSpe
   }
 }
 
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile {
+  readonly certificateChain: string;
+  readonly privateKey: string;
+}
+
+function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    certificate_chain: cdktf.stringToTerraform(struct!.certificateChain),
+    private_key: cdktf.stringToTerraform(struct!.privateKey),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds {
+  readonly secretName: string;
+}
+
+function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    secret_name: cdktf.stringToTerraform(struct!.secretName),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate {
+  /** file block */
+  readonly file?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFile[];
+  /** sds block */
+  readonly sds?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSds[];
+}
+
+function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    file: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileToTerraform)(struct!.file),
+    sds: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsToTerraform)(struct!.sds),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch {
+  readonly exact: string[];
+}
+
+function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    exact: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exact),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames {
+  /** match block */
+  readonly match: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch[];
+}
+
+function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    match: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchToTerraform)(struct!.match),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
   readonly certificateAuthorityArns: string[];
 }
@@ -139,11 +283,24 @@ function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile
   }
 }
 
+export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds {
+  readonly secretName: string;
+}
+
+function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    secret_name: cdktf.stringToTerraform(struct!.secretName),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust {
   /** acm block */
   readonly acm?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcm[];
   /** file block */
   readonly file?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFile[];
+  /** sds block */
+  readonly sds?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSds[];
 }
 
 function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust): any {
@@ -151,10 +308,13 @@ function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustToTe
   return {
     acm: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustAcmToTerraform)(struct!.acm),
     file: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustFileToTerraform)(struct!.file),
+    sds: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustSdsToTerraform)(struct!.sds),
   }
 }
 
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation {
+  /** subject_alternative_names block */
+  readonly subjectAlternativeNames?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames[];
   /** trust block */
   readonly trust: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrust[];
 }
@@ -162,6 +322,7 @@ export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation 
 function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationToTerraform(struct?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    subject_alternative_names: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesToTerraform)(struct!.subjectAlternativeNames),
     trust: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustToTerraform)(struct!.trust),
   }
 }
@@ -169,6 +330,8 @@ function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationToTerrafo
 export interface AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls {
   readonly enforce?: boolean;
   readonly ports?: number[];
+  /** certificate block */
+  readonly certificate?: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate[];
   /** validation block */
   readonly validation: AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation[];
 }
@@ -178,6 +341,7 @@ function appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsToTerraform(struct?
   return {
     enforce: cdktf.booleanToTerraform(struct!.enforce),
     ports: cdktf.listMapper(cdktf.numberToTerraform)(struct!.ports),
+    certificate: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateToTerraform)(struct!.certificate),
     validation: cdktf.listMapper(appmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationToTerraform)(struct!.validation),
   }
 }
@@ -547,11 +711,24 @@ function appmeshVirtualNodeSpecListenerTlsCertificateFileToTerraform(struct?: Ap
   }
 }
 
+export interface AppmeshVirtualNodeSpecListenerTlsCertificateSds {
+  readonly secretName: string;
+}
+
+function appmeshVirtualNodeSpecListenerTlsCertificateSdsToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsCertificateSds): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    secret_name: cdktf.stringToTerraform(struct!.secretName),
+  }
+}
+
 export interface AppmeshVirtualNodeSpecListenerTlsCertificate {
   /** acm block */
   readonly acm?: AppmeshVirtualNodeSpecListenerTlsCertificateAcm[];
   /** file block */
   readonly file?: AppmeshVirtualNodeSpecListenerTlsCertificateFile[];
+  /** sds block */
+  readonly sds?: AppmeshVirtualNodeSpecListenerTlsCertificateSds[];
 }
 
 function appmeshVirtualNodeSpecListenerTlsCertificateToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsCertificate): any {
@@ -559,6 +736,82 @@ function appmeshVirtualNodeSpecListenerTlsCertificateToTerraform(struct?: Appmes
   return {
     acm: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsCertificateAcmToTerraform)(struct!.acm),
     file: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsCertificateFileToTerraform)(struct!.file),
+    sds: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsCertificateSdsToTerraform)(struct!.sds),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch {
+  readonly exact: string[];
+}
+
+function appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    exact: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exact),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames {
+  /** match block */
+  readonly match: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatch[];
+}
+
+function appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    match: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesMatchToTerraform)(struct!.match),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecListenerTlsValidationTrustFile {
+  readonly certificateChain: string;
+}
+
+function appmeshVirtualNodeSpecListenerTlsValidationTrustFileToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationTrustFile): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    certificate_chain: cdktf.stringToTerraform(struct!.certificateChain),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecListenerTlsValidationTrustSds {
+  readonly secretName: string;
+}
+
+function appmeshVirtualNodeSpecListenerTlsValidationTrustSdsToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationTrustSds): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    secret_name: cdktf.stringToTerraform(struct!.secretName),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecListenerTlsValidationTrust {
+  /** file block */
+  readonly file?: AppmeshVirtualNodeSpecListenerTlsValidationTrustFile[];
+  /** sds block */
+  readonly sds?: AppmeshVirtualNodeSpecListenerTlsValidationTrustSds[];
+}
+
+function appmeshVirtualNodeSpecListenerTlsValidationTrustToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidationTrust): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    file: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsValidationTrustFileToTerraform)(struct!.file),
+    sds: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsValidationTrustSdsToTerraform)(struct!.sds),
+  }
+}
+
+export interface AppmeshVirtualNodeSpecListenerTlsValidation {
+  /** subject_alternative_names block */
+  readonly subjectAlternativeNames?: AppmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNames[];
+  /** trust block */
+  readonly trust: AppmeshVirtualNodeSpecListenerTlsValidationTrust[];
+}
+
+function appmeshVirtualNodeSpecListenerTlsValidationToTerraform(struct?: AppmeshVirtualNodeSpecListenerTlsValidation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    subject_alternative_names: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsValidationSubjectAlternativeNamesToTerraform)(struct!.subjectAlternativeNames),
+    trust: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsValidationTrustToTerraform)(struct!.trust),
   }
 }
 
@@ -566,6 +819,8 @@ export interface AppmeshVirtualNodeSpecListenerTls {
   readonly mode: string;
   /** certificate block */
   readonly certificate: AppmeshVirtualNodeSpecListenerTlsCertificate[];
+  /** validation block */
+  readonly validation?: AppmeshVirtualNodeSpecListenerTlsValidation[];
 }
 
 function appmeshVirtualNodeSpecListenerTlsToTerraform(struct?: AppmeshVirtualNodeSpecListenerTls): any {
@@ -573,6 +828,7 @@ function appmeshVirtualNodeSpecListenerTlsToTerraform(struct?: AppmeshVirtualNod
   return {
     mode: cdktf.stringToTerraform(struct!.mode),
     certificate: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsCertificateToTerraform)(struct!.certificate),
+    validation: cdktf.listMapper(appmeshVirtualNodeSpecListenerTlsValidationToTerraform)(struct!.validation),
   }
 }
 

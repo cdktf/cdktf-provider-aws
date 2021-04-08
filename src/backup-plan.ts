@@ -69,6 +69,7 @@ function backupPlanRuleLifecycleToTerraform(struct?: BackupPlanRuleLifecycle): a
 
 export interface BackupPlanRule {
   readonly completionWindow?: number;
+  readonly enableContinuousBackup?: boolean;
   readonly recoveryPointTags?: { [key: string]: string };
   readonly ruleName: string;
   readonly schedule?: string;
@@ -84,6 +85,7 @@ function backupPlanRuleToTerraform(struct?: BackupPlanRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     completion_window: cdktf.numberToTerraform(struct!.completionWindow),
+    enable_continuous_backup: cdktf.booleanToTerraform(struct!.enableContinuousBackup),
     recovery_point_tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.recoveryPointTags),
     rule_name: cdktf.stringToTerraform(struct!.ruleName),
     schedule: cdktf.stringToTerraform(struct!.schedule),

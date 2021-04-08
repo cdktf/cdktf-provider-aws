@@ -125,13 +125,19 @@ function elasticsearchDomainCognitoOptionsToTerraform(struct?: ElasticsearchDoma
 }
 
 export interface ElasticsearchDomainDomainEndpointOptions {
-  readonly enforceHttps: boolean;
+  readonly customEndpoint?: string;
+  readonly customEndpointCertificateArn?: string;
+  readonly customEndpointEnabled?: boolean;
+  readonly enforceHttps?: boolean;
   readonly tlsSecurityPolicy?: string;
 }
 
 function elasticsearchDomainDomainEndpointOptionsToTerraform(struct?: ElasticsearchDomainDomainEndpointOptions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_endpoint: cdktf.stringToTerraform(struct!.customEndpoint),
+    custom_endpoint_certificate_arn: cdktf.stringToTerraform(struct!.customEndpointCertificateArn),
+    custom_endpoint_enabled: cdktf.booleanToTerraform(struct!.customEndpointEnabled),
     enforce_https: cdktf.booleanToTerraform(struct!.enforceHttps),
     tls_security_policy: cdktf.stringToTerraform(struct!.tlsSecurityPolicy),
   }

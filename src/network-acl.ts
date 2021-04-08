@@ -28,15 +28,15 @@ export interface NetworkAclEgress {
 function networkAclEgressToTerraform(struct?: NetworkAclEgress): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    icmp_code: cdktf.numberToTerraform(struct!.icmpCode),
-    icmp_type: cdktf.numberToTerraform(struct!.icmpType),
-    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    rule_no: cdktf.numberToTerraform(struct!.ruleNo),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    action: struct!.action === undefined ? null : cdktf.stringToTerraform(struct!.action),
+    cidr_block: struct!.cidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.cidrBlock),
+    from_port: struct!.fromPort === undefined ? null : cdktf.numberToTerraform(struct!.fromPort),
+    icmp_code: struct!.icmpCode === undefined ? null : cdktf.numberToTerraform(struct!.icmpCode),
+    icmp_type: struct!.icmpType === undefined ? null : cdktf.numberToTerraform(struct!.icmpType),
+    ipv6_cidr_block: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
+    rule_no: struct!.ruleNo === undefined ? null : cdktf.numberToTerraform(struct!.ruleNo),
+    to_port: struct!.toPort === undefined ? null : cdktf.numberToTerraform(struct!.toPort),
   }
 }
 
@@ -55,15 +55,15 @@ export interface NetworkAclIngress {
 function networkAclIngressToTerraform(struct?: NetworkAclIngress): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    cidr_block: cdktf.stringToTerraform(struct!.cidrBlock),
-    from_port: cdktf.numberToTerraform(struct!.fromPort),
-    icmp_code: cdktf.numberToTerraform(struct!.icmpCode),
-    icmp_type: cdktf.numberToTerraform(struct!.icmpType),
-    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    rule_no: cdktf.numberToTerraform(struct!.ruleNo),
-    to_port: cdktf.numberToTerraform(struct!.toPort),
+    action: struct!.action === undefined ? null : cdktf.stringToTerraform(struct!.action),
+    cidr_block: struct!.cidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.cidrBlock),
+    from_port: struct!.fromPort === undefined ? null : cdktf.numberToTerraform(struct!.fromPort),
+    icmp_code: struct!.icmpCode === undefined ? null : cdktf.numberToTerraform(struct!.icmpCode),
+    icmp_type: struct!.icmpType === undefined ? null : cdktf.numberToTerraform(struct!.icmpType),
+    ipv6_cidr_block: struct!.ipv6CidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
+    rule_no: struct!.ruleNo === undefined ? null : cdktf.numberToTerraform(struct!.ruleNo),
+    to_port: struct!.toPort === undefined ? null : cdktf.numberToTerraform(struct!.toPort),
   }
 }
 

@@ -45,12 +45,14 @@ function apigatewayv2DomainNameMutualTlsAuthenticationToTerraform(struct?: Apiga
 }
 
 export interface Apigatewayv2DomainNameTimeouts {
+  readonly create?: string;
   readonly update?: string;
 }
 
 function apigatewayv2DomainNameTimeoutsToTerraform(struct?: Apigatewayv2DomainNameTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
 }

@@ -45,12 +45,12 @@ export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
     return this.getStringAttribute('disk_id');
   }
 
-  // disk_node - computed: false, optional: true, required: false
+  // disk_node - computed: true, optional: true, required: false
   private _diskNode?: string;
   public get diskNode() {
     return this.getStringAttribute('disk_node');
   }
-  public set diskNode(value: string ) {
+  public set diskNode(value: string) {
     this._diskNode = value;
   }
   public resetDiskNode() {
@@ -61,12 +61,12 @@ export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
     return this._diskNode
   }
 
-  // disk_path - computed: false, optional: true, required: false
+  // disk_path - computed: true, optional: true, required: false
   private _diskPath?: string;
   public get diskPath() {
     return this.getStringAttribute('disk_path');
   }
-  public set diskPath(value: string ) {
+  public set diskPath(value: string) {
     this._diskPath = value;
   }
   public resetDiskPath() {

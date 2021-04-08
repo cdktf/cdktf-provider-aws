@@ -7,8 +7,10 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsRouteConfig extends cdktf.TerraformMetaArguments {
+  readonly carrierGatewayId?: string;
   readonly destinationCidrBlock?: string;
   readonly destinationIpv6CidrBlock?: string;
+  readonly destinationPrefixListId?: string;
   readonly egressOnlyGatewayId?: string;
   readonly gatewayId?: string;
   readonly instanceId?: string;
@@ -39,8 +41,10 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._carrierGatewayId = config.carrierGatewayId;
     this._destinationCidrBlock = config.destinationCidrBlock;
     this._destinationIpv6CidrBlock = config.destinationIpv6CidrBlock;
+    this._destinationPrefixListId = config.destinationPrefixListId;
     this._egressOnlyGatewayId = config.egressOnlyGatewayId;
     this._gatewayId = config.gatewayId;
     this._instanceId = config.instanceId;
@@ -55,6 +59,22 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // carrier_gateway_id - computed: true, optional: true, required: false
+  private _carrierGatewayId?: string;
+  public get carrierGatewayId() {
+    return this.getStringAttribute('carrier_gateway_id');
+  }
+  public set carrierGatewayId(value: string) {
+    this._carrierGatewayId = value;
+  }
+  public resetCarrierGatewayId() {
+    this._carrierGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get carrierGatewayIdInput() {
+    return this._carrierGatewayId
+  }
 
   // destination_cidr_block - computed: true, optional: true, required: false
   private _destinationCidrBlock?: string;
@@ -86,6 +106,22 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get destinationIpv6CidrBlockInput() {
     return this._destinationIpv6CidrBlock
+  }
+
+  // destination_prefix_list_id - computed: true, optional: true, required: false
+  private _destinationPrefixListId?: string;
+  public get destinationPrefixListId() {
+    return this.getStringAttribute('destination_prefix_list_id');
+  }
+  public set destinationPrefixListId(value: string) {
+    this._destinationPrefixListId = value;
+  }
+  public resetDestinationPrefixListId() {
+    this._destinationPrefixListId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationPrefixListIdInput() {
+    return this._destinationPrefixListId
   }
 
   // egress_only_gateway_id - computed: true, optional: true, required: false
@@ -240,8 +276,10 @@ export class DataAwsRoute extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      carrier_gateway_id: cdktf.stringToTerraform(this._carrierGatewayId),
       destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
       destination_ipv6_cidr_block: cdktf.stringToTerraform(this._destinationIpv6CidrBlock),
+      destination_prefix_list_id: cdktf.stringToTerraform(this._destinationPrefixListId),
       egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
       gateway_id: cdktf.stringToTerraform(this._gatewayId),
       instance_id: cdktf.stringToTerraform(this._instanceId),

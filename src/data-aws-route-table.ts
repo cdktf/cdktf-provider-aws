@@ -54,6 +54,11 @@ export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
     return this.getStringAttribute('cidr_block');
   }
 
+  // destination_prefix_list_id - computed: true, optional: false, required: false
+  public get destinationPrefixListId() {
+    return this.getStringAttribute('destination_prefix_list_id');
+  }
+
   // egress_only_gateway_id - computed: true, optional: false, required: false
   public get egressOnlyGatewayId() {
     return this.getStringAttribute('egress_only_gateway_id');

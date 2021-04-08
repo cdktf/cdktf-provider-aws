@@ -12,6 +12,7 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   readonly deploymentMinimumHealthyPercent?: number;
   readonly desiredCount?: number;
   readonly enableEcsManagedTags?: boolean;
+  readonly enableExecuteCommand?: boolean;
   readonly forceNewDeployment?: boolean;
   readonly healthCheckGracePeriodSeconds?: number;
   readonly iamRole?: string;
@@ -25,6 +26,8 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   readonly waitForSteadyState?: boolean;
   /** capacity_provider_strategy block */
   readonly capacityProviderStrategy?: EcsServiceCapacityProviderStrategy[];
+  /** deployment_circuit_breaker block */
+  readonly deploymentCircuitBreaker?: EcsServiceDeploymentCircuitBreaker[];
   /** deployment_controller block */
   readonly deploymentController?: EcsServiceDeploymentController[];
   /** load_balancer block */
@@ -52,6 +55,19 @@ function ecsServiceCapacityProviderStrategyToTerraform(struct?: EcsServiceCapaci
     base: cdktf.numberToTerraform(struct!.base),
     capacity_provider: cdktf.stringToTerraform(struct!.capacityProvider),
     weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
+export interface EcsServiceDeploymentCircuitBreaker {
+  readonly enable: boolean;
+  readonly rollback: boolean;
+}
+
+function ecsServiceDeploymentCircuitBreakerToTerraform(struct?: EcsServiceDeploymentCircuitBreaker): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enable: cdktf.booleanToTerraform(struct!.enable),
+    rollback: cdktf.booleanToTerraform(struct!.rollback),
   }
 }
 
@@ -177,6 +193,7 @@ export class EcsService extends cdktf.TerraformResource {
     this._deploymentMinimumHealthyPercent = config.deploymentMinimumHealthyPercent;
     this._desiredCount = config.desiredCount;
     this._enableEcsManagedTags = config.enableEcsManagedTags;
+    this._enableExecuteCommand = config.enableExecuteCommand;
     this._forceNewDeployment = config.forceNewDeployment;
     this._healthCheckGracePeriodSeconds = config.healthCheckGracePeriodSeconds;
     this._iamRole = config.iamRole;
@@ -189,6 +206,7 @@ export class EcsService extends cdktf.TerraformResource {
     this._taskDefinition = config.taskDefinition;
     this._waitForSteadyState = config.waitForSteadyState;
     this._capacityProviderStrategy = config.capacityProviderStrategy;
+    this._deploymentCircuitBreaker = config.deploymentCircuitBreaker;
     this._deploymentController = config.deploymentController;
     this._loadBalancer = config.loadBalancer;
     this._networkConfiguration = config.networkConfiguration;
@@ -280,6 +298,22 @@ export class EcsService extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enableEcsManagedTagsInput() {
     return this._enableEcsManagedTags
+  }
+
+  // enable_execute_command - computed: false, optional: true, required: false
+  private _enableExecuteCommand?: boolean;
+  public get enableExecuteCommand() {
+    return this.getBooleanAttribute('enable_execute_command');
+  }
+  public set enableExecuteCommand(value: boolean ) {
+    this._enableExecuteCommand = value;
+  }
+  public resetEnableExecuteCommand() {
+    this._enableExecuteCommand = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableExecuteCommandInput() {
+    return this._enableExecuteCommand
   }
 
   // force_new_deployment - computed: false, optional: true, required: false
@@ -476,6 +510,22 @@ export class EcsService extends cdktf.TerraformResource {
     return this._capacityProviderStrategy
   }
 
+  // deployment_circuit_breaker - computed: false, optional: true, required: false
+  private _deploymentCircuitBreaker?: EcsServiceDeploymentCircuitBreaker[];
+  public get deploymentCircuitBreaker() {
+    return this.interpolationForAttribute('deployment_circuit_breaker') as any;
+  }
+  public set deploymentCircuitBreaker(value: EcsServiceDeploymentCircuitBreaker[] ) {
+    this._deploymentCircuitBreaker = value;
+  }
+  public resetDeploymentCircuitBreaker() {
+    this._deploymentCircuitBreaker = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentCircuitBreakerInput() {
+    return this._deploymentCircuitBreaker
+  }
+
   // deployment_controller - computed: false, optional: true, required: false
   private _deploymentController?: EcsServiceDeploymentController[];
   public get deploymentController() {
@@ -599,6 +649,7 @@ export class EcsService extends cdktf.TerraformResource {
       deployment_minimum_healthy_percent: cdktf.numberToTerraform(this._deploymentMinimumHealthyPercent),
       desired_count: cdktf.numberToTerraform(this._desiredCount),
       enable_ecs_managed_tags: cdktf.booleanToTerraform(this._enableEcsManagedTags),
+      enable_execute_command: cdktf.booleanToTerraform(this._enableExecuteCommand),
       force_new_deployment: cdktf.booleanToTerraform(this._forceNewDeployment),
       health_check_grace_period_seconds: cdktf.numberToTerraform(this._healthCheckGracePeriodSeconds),
       iam_role: cdktf.stringToTerraform(this._iamRole),
@@ -611,6 +662,7 @@ export class EcsService extends cdktf.TerraformResource {
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
       wait_for_steady_state: cdktf.booleanToTerraform(this._waitForSteadyState),
       capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform)(this._capacityProviderStrategy),
+      deployment_circuit_breaker: cdktf.listMapper(ecsServiceDeploymentCircuitBreakerToTerraform)(this._deploymentCircuitBreaker),
       deployment_controller: cdktf.listMapper(ecsServiceDeploymentControllerToTerraform)(this._deploymentController),
       load_balancer: cdktf.listMapper(ecsServiceLoadBalancerToTerraform)(this._loadBalancer),
       network_configuration: cdktf.listMapper(ecsServiceNetworkConfigurationToTerraform)(this._networkConfiguration),

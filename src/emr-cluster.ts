@@ -51,10 +51,10 @@ export interface EmrClusterStepHadoopJarStep {
 function emrClusterStepHadoopJarStepToTerraform(struct?: EmrClusterStepHadoopJarStep): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
-    jar: cdktf.stringToTerraform(struct!.jar),
-    main_class: cdktf.stringToTerraform(struct!.mainClass),
-    properties: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.properties),
+    args: struct!.args === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
+    jar: struct!.jar === undefined ? null : cdktf.stringToTerraform(struct!.jar),
+    main_class: struct!.mainClass === undefined ? null : cdktf.stringToTerraform(struct!.mainClass),
+    properties: struct!.properties === undefined ? null : cdktf.hashMapper(cdktf.anyToTerraform)(struct!.properties),
   }
 }
 
@@ -67,9 +67,9 @@ export interface EmrClusterStep {
 function emrClusterStepToTerraform(struct?: EmrClusterStep): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
-    action_on_failure: cdktf.stringToTerraform(struct!.actionOnFailure),
-    hadoop_jar_step: cdktf.listMapper(emrClusterStepHadoopJarStepToTerraform)(struct!.hadoopJarStep),
-    name: cdktf.stringToTerraform(struct!.name),
+    action_on_failure: struct!.actionOnFailure === undefined ? null : cdktf.stringToTerraform(struct!.actionOnFailure),
+    hadoop_jar_step: struct!.hadoopJarStep === undefined ? null : cdktf.listMapper(emrClusterStepHadoopJarStepToTerraform)(struct!.hadoopJarStep),
+    name: struct!.name === undefined ? null : cdktf.stringToTerraform(struct!.name),
   }
 }
 

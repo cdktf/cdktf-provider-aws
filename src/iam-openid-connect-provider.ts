@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface IamOpenidConnectProviderConfig extends cdktf.TerraformMetaArguments {
   readonly clientIdList: string[];
+  readonly tags?: { [key: string]: string };
   readonly thumbprintList: string[];
   readonly url: string;
 }
@@ -32,6 +33,7 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._clientIdList = config.clientIdList;
+    this._tags = config.tags;
     this._thumbprintList = config.thumbprintList;
     this._url = config.url;
   }
@@ -61,6 +63,22 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // thumbprint_list - computed: false, optional: false, required: true
@@ -96,6 +114,7 @@ export class IamOpenidConnectProvider extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       client_id_list: cdktf.listMapper(cdktf.stringToTerraform)(this._clientIdList),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       thumbprint_list: cdktf.listMapper(cdktf.stringToTerraform)(this._thumbprintList),
       url: cdktf.stringToTerraform(this._url),
     };

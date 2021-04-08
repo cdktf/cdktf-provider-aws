@@ -12,6 +12,7 @@ export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   readonly credentialsArn?: string;
   readonly description?: string;
   readonly disableExecuteApiEndpoint?: boolean;
+  readonly failOnWarnings?: boolean;
   readonly name: string;
   readonly protocolType: string;
   readonly routeKey?: string;
@@ -68,6 +69,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
     this._credentialsArn = config.credentialsArn;
     this._description = config.description;
     this._disableExecuteApiEndpoint = config.disableExecuteApiEndpoint;
+    this._failOnWarnings = config.failOnWarnings;
     this._name = config.name;
     this._protocolType = config.protocolType;
     this._routeKey = config.routeKey;
@@ -175,6 +177,22 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   // execution_arn - computed: true, optional: false, required: false
   public get executionArn() {
     return this.getStringAttribute('execution_arn');
+  }
+
+  // fail_on_warnings - computed: false, optional: true, required: false
+  private _failOnWarnings?: boolean;
+  public get failOnWarnings() {
+    return this.getBooleanAttribute('fail_on_warnings');
+  }
+  public set failOnWarnings(value: boolean ) {
+    this._failOnWarnings = value;
+  }
+  public resetFailOnWarnings() {
+    this._failOnWarnings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failOnWarningsInput() {
+    return this._failOnWarnings
   }
 
   // id - computed: true, optional: true, required: false
@@ -315,6 +333,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
       credentials_arn: cdktf.stringToTerraform(this._credentialsArn),
       description: cdktf.stringToTerraform(this._description),
       disable_execute_api_endpoint: cdktf.booleanToTerraform(this._disableExecuteApiEndpoint),
+      fail_on_warnings: cdktf.booleanToTerraform(this._failOnWarnings),
       name: cdktf.stringToTerraform(this._name),
       protocol_type: cdktf.stringToTerraform(this._protocolType),
       route_key: cdktf.stringToTerraform(this._routeKey),

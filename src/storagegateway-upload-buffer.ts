@@ -7,7 +7,8 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface StoragegatewayUploadBufferConfig extends cdktf.TerraformMetaArguments {
-  readonly diskId: string;
+  readonly diskId?: string;
+  readonly diskPath?: string;
   readonly gatewayArn: string;
 }
 
@@ -31,6 +32,7 @@ export class StoragegatewayUploadBuffer extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._diskId = config.diskId;
+    this._diskPath = config.diskPath;
     this._gatewayArn = config.gatewayArn;
   }
 
@@ -38,17 +40,36 @@ export class StoragegatewayUploadBuffer extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // disk_id - computed: false, optional: false, required: true
-  private _diskId: string;
+  // disk_id - computed: true, optional: true, required: false
+  private _diskId?: string;
   public get diskId() {
     return this.getStringAttribute('disk_id');
   }
   public set diskId(value: string) {
     this._diskId = value;
   }
+  public resetDiskId() {
+    this._diskId = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get diskIdInput() {
     return this._diskId
+  }
+
+  // disk_path - computed: true, optional: true, required: false
+  private _diskPath?: string;
+  public get diskPath() {
+    return this.getStringAttribute('disk_path');
+  }
+  public set diskPath(value: string) {
+    this._diskPath = value;
+  }
+  public resetDiskPath() {
+    this._diskPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskPathInput() {
+    return this._diskPath
   }
 
   // gateway_arn - computed: false, optional: false, required: true
@@ -76,6 +97,7 @@ export class StoragegatewayUploadBuffer extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       disk_id: cdktf.stringToTerraform(this._diskId),
+      disk_path: cdktf.stringToTerraform(this._diskPath),
       gateway_arn: cdktf.stringToTerraform(this._gatewayArn),
     };
   }

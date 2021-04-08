@@ -52,6 +52,16 @@ export class DataAwsEfsFileSystem extends cdktf.TerraformDataSource {
     return this.getStringAttribute('arn');
   }
 
+  // availability_zone_id - computed: true, optional: false, required: false
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+
+  // availability_zone_name - computed: true, optional: false, required: false
+  public get availabilityZoneName() {
+    return this.getStringAttribute('availability_zone_name');
+  }
+
   // creation_token - computed: true, optional: true, required: false
   private _creationToken?: string;
   public get creationToken() {

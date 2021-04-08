@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_iam_policy.html
+// https://www.terraform.io/docs/providers/aws/r/data_aws_codestarconnections_connection.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,22 +6,22 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataAwsIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataAwsCodestarconnectionsConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
   readonly tags?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
+export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
-  public constructor(scope: Construct, id: string, config: DataAwsIamPolicyConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsCodestarconnectionsConnectionConfig) {
     super(scope, id, {
-      terraformResourceType: 'aws_iam_policy',
+      terraformResourceType: 'aws_codestarconnections_connection',
       terraformGeneratorMetadata: {
         providerName: 'aws'
       },
@@ -51,9 +51,9 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
     return this._arn
   }
 
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
+  // connection_status - computed: true, optional: false, required: false
+  public get connectionStatus() {
+    return this.getStringAttribute('connection_status');
   }
 
   // id - computed: true, optional: true, required: false
@@ -66,19 +66,9 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
     return this.getStringAttribute('name');
   }
 
-  // path - computed: true, optional: false, required: false
-  public get path() {
-    return this.getStringAttribute('path');
-  }
-
-  // policy - computed: true, optional: false, required: false
-  public get policy() {
-    return this.getStringAttribute('policy');
-  }
-
-  // policy_id - computed: true, optional: false, required: false
-  public get policyId() {
-    return this.getStringAttribute('policy_id');
+  // provider_type - computed: true, optional: false, required: false
+  public get providerType() {
+    return this.getStringAttribute('provider_type');
   }
 
   // tags - computed: true, optional: true, required: false

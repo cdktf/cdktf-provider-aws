@@ -13,6 +13,7 @@ export interface IamServerCertificateConfig extends cdktf.TerraformMetaArguments
   readonly namePrefix?: string;
   readonly path?: string;
   readonly privateKey: string;
+  readonly tags?: { [key: string]: string };
 }
 
 // Resource
@@ -40,13 +41,14 @@ export class IamServerCertificate extends cdktf.TerraformResource {
     this._namePrefix = config.namePrefix;
     this._path = config.path;
     this._privateKey = config.privateKey;
+    this._tags = config.tags;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: true, optional: true, required: false
+  // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
   }
@@ -78,6 +80,11 @@ export class IamServerCertificate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get certificateChainInput() {
     return this._certificateChain
+  }
+
+  // expiration - computed: true, optional: false, required: false
+  public get expiration() {
+    return this.getStringAttribute('expiration');
   }
 
   // id - computed: true, optional: true, required: false
@@ -146,6 +153,27 @@ export class IamServerCertificate extends cdktf.TerraformResource {
     return this._privateKey
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
+  // upload_date - computed: true, optional: false, required: false
+  public get uploadDate() {
+    return this.getStringAttribute('upload_date');
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -158,6 +186,7 @@ export class IamServerCertificate extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       path: cdktf.stringToTerraform(this._path),
       private_key: cdktf.stringToTerraform(this._privateKey),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }
