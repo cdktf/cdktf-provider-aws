@@ -33,12 +33,12 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.1.47",
+    "@cdktf/provider-project": "^0.1.49",
     "@types/jest": "^26.0.7",
     "@types/node": "^10.17.0",
-    "cdktf": "0.1.0",
-    "cdktf-cli": "^0.1",
-    "constructs": "3.0.4",
+    "cdktf": "^0.x",
+    "cdktf-cli": "^0.x",
+    "constructs": "^3.0.4",
     "dot-prop": "^5.2.0",
     "jest": "^26.0.1",
     "jest-junit": "^12",
@@ -52,7 +52,7 @@
     "typescript": "^3.9.5"
   },
   "peerDependencies": {
-    "cdktf": "^0.1",
+    "cdktf": "^0.x",
     "constructs": "^3.0.4"
   },
   "bundledDependencies": [],

@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@cdktf/provider-project",
-      "version": "^0.1.47",
+      "version": "^0.1.49",
       "type": "build"
     },
     {
@@ -16,22 +16,17 @@
     },
     {
       "name": "cdktf-cli",
-      "version": "^0.1",
+      "version": "^0.x",
       "type": "build"
     },
     {
       "name": "cdktf",
-      "version": "^0.1",
-      "type": "build"
-    },
-    {
-      "name": "cdktf",
-      "version": "0.1.0",
+      "version": "^0.x",
       "type": "build"
     },
     {
       "name": "constructs",
-      "version": "3.0.4",
+      "version": "^3.0.4",
       "type": "build"
     },
     {
@@ -84,7 +79,7 @@
     },
     {
       "name": "cdktf",
-      "version": "^0.1",
+      "version": "^0.x",
       "type": "peer"
     },
     {
