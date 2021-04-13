@@ -68,7 +68,7 @@
   },
   "main": "lib/index.js",
   "license": "MPL-2.0",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "publishConfig": {
     "access": "public"
   },
