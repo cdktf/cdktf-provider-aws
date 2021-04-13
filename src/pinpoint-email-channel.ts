@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface PinpointEmailChannelConfig extends cdktf.TerraformMetaArguments {
   readonly applicationId: string;
+  readonly configurationSet?: string;
   readonly enabled?: boolean;
   readonly fromAddress: string;
   readonly identity: string;
@@ -34,6 +35,7 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._applicationId = config.applicationId;
+    this._configurationSet = config.configurationSet;
     this._enabled = config.enabled;
     this._fromAddress = config.fromAddress;
     this._identity = config.identity;
@@ -55,6 +57,22 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get applicationIdInput() {
     return this._applicationId
+  }
+
+  // configuration_set - computed: false, optional: true, required: false
+  private _configurationSet?: string;
+  public get configurationSet() {
+    return this.getStringAttribute('configuration_set');
+  }
+  public set configurationSet(value: string ) {
+    this._configurationSet = value;
+  }
+  public resetConfigurationSet() {
+    this._configurationSet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationSetInput() {
+    return this._configurationSet
   }
 
   // enabled - computed: false, optional: true, required: false
@@ -129,6 +147,7 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       application_id: cdktf.stringToTerraform(this._applicationId),
+      configuration_set: cdktf.stringToTerraform(this._configurationSet),
       enabled: cdktf.booleanToTerraform(this._enabled),
       from_address: cdktf.stringToTerraform(this._fromAddress),
       identity: cdktf.stringToTerraform(this._identity),

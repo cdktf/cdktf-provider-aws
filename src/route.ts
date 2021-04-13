@@ -7,8 +7,10 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface RouteConfig extends cdktf.TerraformMetaArguments {
+  readonly carrierGatewayId?: string;
   readonly destinationCidrBlock?: string;
   readonly destinationIpv6CidrBlock?: string;
+  readonly destinationPrefixListId?: string;
   readonly egressOnlyGatewayId?: string;
   readonly gatewayId?: string;
   readonly instanceId?: string;
@@ -55,8 +57,10 @@ export class Route extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._carrierGatewayId = config.carrierGatewayId;
     this._destinationCidrBlock = config.destinationCidrBlock;
     this._destinationIpv6CidrBlock = config.destinationIpv6CidrBlock;
+    this._destinationPrefixListId = config.destinationPrefixListId;
     this._egressOnlyGatewayId = config.egressOnlyGatewayId;
     this._gatewayId = config.gatewayId;
     this._instanceId = config.instanceId;
@@ -73,6 +77,22 @@ export class Route extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // carrier_gateway_id - computed: false, optional: true, required: false
+  private _carrierGatewayId?: string;
+  public get carrierGatewayId() {
+    return this.getStringAttribute('carrier_gateway_id');
+  }
+  public set carrierGatewayId(value: string ) {
+    this._carrierGatewayId = value;
+  }
+  public resetCarrierGatewayId() {
+    this._carrierGatewayId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get carrierGatewayIdInput() {
+    return this._carrierGatewayId
+  }
 
   // destination_cidr_block - computed: false, optional: true, required: false
   private _destinationCidrBlock?: string;
@@ -106,17 +126,28 @@ export class Route extends cdktf.TerraformResource {
     return this._destinationIpv6CidrBlock
   }
 
-  // destination_prefix_list_id - computed: true, optional: false, required: false
+  // destination_prefix_list_id - computed: false, optional: true, required: false
+  private _destinationPrefixListId?: string;
   public get destinationPrefixListId() {
     return this.getStringAttribute('destination_prefix_list_id');
   }
+  public set destinationPrefixListId(value: string ) {
+    this._destinationPrefixListId = value;
+  }
+  public resetDestinationPrefixListId() {
+    this._destinationPrefixListId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationPrefixListIdInput() {
+    return this._destinationPrefixListId
+  }
 
-  // egress_only_gateway_id - computed: true, optional: true, required: false
+  // egress_only_gateway_id - computed: false, optional: true, required: false
   private _egressOnlyGatewayId?: string;
   public get egressOnlyGatewayId() {
     return this.getStringAttribute('egress_only_gateway_id');
   }
-  public set egressOnlyGatewayId(value: string) {
+  public set egressOnlyGatewayId(value: string ) {
     this._egressOnlyGatewayId = value;
   }
   public resetEgressOnlyGatewayId() {
@@ -127,12 +158,12 @@ export class Route extends cdktf.TerraformResource {
     return this._egressOnlyGatewayId
   }
 
-  // gateway_id - computed: true, optional: true, required: false
+  // gateway_id - computed: false, optional: true, required: false
   private _gatewayId?: string;
   public get gatewayId() {
     return this.getStringAttribute('gateway_id');
   }
-  public set gatewayId(value: string) {
+  public set gatewayId(value: string ) {
     this._gatewayId = value;
   }
   public resetGatewayId() {
@@ -169,12 +200,12 @@ export class Route extends cdktf.TerraformResource {
     return this.getStringAttribute('instance_owner_id');
   }
 
-  // local_gateway_id - computed: true, optional: true, required: false
+  // local_gateway_id - computed: false, optional: true, required: false
   private _localGatewayId?: string;
   public get localGatewayId() {
     return this.getStringAttribute('local_gateway_id');
   }
-  public set localGatewayId(value: string) {
+  public set localGatewayId(value: string ) {
     this._localGatewayId = value;
   }
   public resetLocalGatewayId() {
@@ -185,12 +216,12 @@ export class Route extends cdktf.TerraformResource {
     return this._localGatewayId
   }
 
-  // nat_gateway_id - computed: true, optional: true, required: false
+  // nat_gateway_id - computed: false, optional: true, required: false
   private _natGatewayId?: string;
   public get natGatewayId() {
     return this.getStringAttribute('nat_gateway_id');
   }
-  public set natGatewayId(value: string) {
+  public set natGatewayId(value: string ) {
     this._natGatewayId = value;
   }
   public resetNatGatewayId() {
@@ -310,8 +341,10 @@ export class Route extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      carrier_gateway_id: cdktf.stringToTerraform(this._carrierGatewayId),
       destination_cidr_block: cdktf.stringToTerraform(this._destinationCidrBlock),
       destination_ipv6_cidr_block: cdktf.stringToTerraform(this._destinationIpv6CidrBlock),
+      destination_prefix_list_id: cdktf.stringToTerraform(this._destinationPrefixListId),
       egress_only_gateway_id: cdktf.stringToTerraform(this._egressOnlyGatewayId),
       gateway_id: cdktf.stringToTerraform(this._gatewayId),
       instance_id: cdktf.stringToTerraform(this._instanceId),

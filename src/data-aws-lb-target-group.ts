@@ -158,6 +158,11 @@ export class DataAwsLbTargetGroup extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('port');
   }
 
+  // preserve_client_ip - computed: true, optional: false, required: false
+  public get preserveClientIp() {
+    return this.getStringAttribute('preserve_client_ip');
+  }
+
   // protocol - computed: true, optional: false, required: false
   public get protocol() {
     return this.getStringAttribute('protocol');

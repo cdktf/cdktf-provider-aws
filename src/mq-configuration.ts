@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface MqConfigurationConfig extends cdktf.TerraformMetaArguments {
+  readonly authenticationStrategy?: string;
   readonly data: string;
   readonly description?: string;
   readonly engineType: string;
@@ -34,6 +35,7 @@ export class MqConfiguration extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._authenticationStrategy = config.authenticationStrategy;
     this._data = config.data;
     this._description = config.description;
     this._engineType = config.engineType;
@@ -49,6 +51,22 @@ export class MqConfiguration extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // authentication_strategy - computed: true, optional: true, required: false
+  private _authenticationStrategy?: string;
+  public get authenticationStrategy() {
+    return this.getStringAttribute('authentication_strategy');
+  }
+  public set authenticationStrategy(value: string) {
+    this._authenticationStrategy = value;
+  }
+  public resetAuthenticationStrategy() {
+    this._authenticationStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationStrategyInput() {
+    return this._authenticationStrategy
   }
 
   // data - computed: false, optional: false, required: true
@@ -151,6 +169,7 @@ export class MqConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      authentication_strategy: cdktf.stringToTerraform(this._authenticationStrategy),
       data: cdktf.stringToTerraform(this._data),
       description: cdktf.stringToTerraform(this._description),
       engine_type: cdktf.stringToTerraform(this._engineType),

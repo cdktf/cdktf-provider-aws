@@ -13,6 +13,7 @@ export interface LbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly namePrefix?: string;
   readonly port?: number;
+  readonly preserveClientIp?: string;
   readonly protocol?: string;
   readonly protocolVersion?: string;
   readonly proxyProtocolV2?: boolean;
@@ -93,6 +94,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
     this._name = config.name;
     this._namePrefix = config.namePrefix;
     this._port = config.port;
+    this._preserveClientIp = config.preserveClientIp;
     this._protocol = config.protocol;
     this._protocolVersion = config.protocolVersion;
     this._proxyProtocolV2 = config.proxyProtocolV2;
@@ -217,6 +219,22 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get portInput() {
     return this._port
+  }
+
+  // preserve_client_ip - computed: true, optional: true, required: false
+  private _preserveClientIp?: string;
+  public get preserveClientIp() {
+    return this.getStringAttribute('preserve_client_ip');
+  }
+  public set preserveClientIp(value: string) {
+    this._preserveClientIp = value;
+  }
+  public resetPreserveClientIp() {
+    this._preserveClientIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preserveClientIpInput() {
+    return this._preserveClientIp
   }
 
   // protocol - computed: false, optional: true, required: false
@@ -375,6 +393,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       port: cdktf.numberToTerraform(this._port),
+      preserve_client_ip: cdktf.stringToTerraform(this._preserveClientIp),
       protocol: cdktf.stringToTerraform(this._protocol),
       protocol_version: cdktf.stringToTerraform(this._protocolVersion),
       proxy_protocol_v2: cdktf.booleanToTerraform(this._proxyProtocolV2),

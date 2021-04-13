@@ -147,12 +147,12 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
-  // at_rest_encryption_enabled - computed: false, optional: true, required: false
+  // at_rest_encryption_enabled - computed: true, optional: true, required: false
   private _atRestEncryptionEnabled?: boolean;
   public get atRestEncryptionEnabled() {
     return this.getBooleanAttribute('at_rest_encryption_enabled');
   }
-  public set atRestEncryptionEnabled(value: boolean ) {
+  public set atRestEncryptionEnabled(value: boolean) {
     this._atRestEncryptionEnabled = value;
   }
   public resetAtRestEncryptionEnabled() {
@@ -603,12 +603,12 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
-  // transit_encryption_enabled - computed: false, optional: true, required: false
+  // transit_encryption_enabled - computed: true, optional: true, required: false
   private _transitEncryptionEnabled?: boolean;
   public get transitEncryptionEnabled() {
     return this.getBooleanAttribute('transit_encryption_enabled');
   }
-  public set transitEncryptionEnabled(value: boolean ) {
+  public set transitEncryptionEnabled(value: boolean) {
     this._transitEncryptionEnabled = value;
   }
   public resetTransitEncryptionEnabled() {

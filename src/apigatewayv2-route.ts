@@ -18,7 +18,22 @@ export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   readonly routeKey: string;
   readonly routeResponseSelectionExpression?: string;
   readonly target?: string;
+  /** request_parameter block */
+  readonly requestParameter?: Apigatewayv2RouteRequestParameter[];
 }
+export interface Apigatewayv2RouteRequestParameter {
+  readonly requestParameterKey: string;
+  readonly required: boolean;
+}
+
+function apigatewayv2RouteRequestParameterToTerraform(struct?: Apigatewayv2RouteRequestParameter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    request_parameter_key: cdktf.stringToTerraform(struct!.requestParameterKey),
+    required: cdktf.booleanToTerraform(struct!.required),
+  }
+}
+
 
 // Resource
 
@@ -50,6 +65,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
     this._routeKey = config.routeKey;
     this._routeResponseSelectionExpression = config.routeResponseSelectionExpression;
     this._target = config.target;
+    this._requestParameter = config.requestParameter;
   }
 
   // ==========
@@ -231,6 +247,22 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
     return this._target
   }
 
+  // request_parameter - computed: false, optional: true, required: false
+  private _requestParameter?: Apigatewayv2RouteRequestParameter[];
+  public get requestParameter() {
+    return this.interpolationForAttribute('request_parameter') as any;
+  }
+  public set requestParameter(value: Apigatewayv2RouteRequestParameter[] ) {
+    this._requestParameter = value;
+  }
+  public resetRequestParameter() {
+    this._requestParameter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestParameterInput() {
+    return this._requestParameter
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -248,6 +280,7 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
       route_key: cdktf.stringToTerraform(this._routeKey),
       route_response_selection_expression: cdktf.stringToTerraform(this._routeResponseSelectionExpression),
       target: cdktf.stringToTerraform(this._target),
+      request_parameter: cdktf.listMapper(apigatewayv2RouteRequestParameterToTerraform)(this._requestParameter),
     };
   }
 }

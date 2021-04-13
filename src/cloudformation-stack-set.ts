@@ -7,18 +7,34 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CloudformationStackSetConfig extends cdktf.TerraformMetaArguments {
-  readonly administrationRoleArn: string;
+  readonly administrationRoleArn?: string;
   readonly capabilities?: string[];
   readonly description?: string;
   readonly executionRoleName?: string;
   readonly name: string;
   readonly parameters?: { [key: string]: string };
+  readonly permissionModel?: string;
   readonly tags?: { [key: string]: string };
   readonly templateBody?: string;
   readonly templateUrl?: string;
+  /** auto_deployment block */
+  readonly autoDeployment?: CloudformationStackSetAutoDeployment[];
   /** timeouts block */
   readonly timeouts?: CloudformationStackSetTimeouts;
 }
+export interface CloudformationStackSetAutoDeployment {
+  readonly enabled?: boolean;
+  readonly retainStacksOnAccountRemoval?: boolean;
+}
+
+function cloudformationStackSetAutoDeploymentToTerraform(struct?: CloudformationStackSetAutoDeployment): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    retain_stacks_on_account_removal: cdktf.booleanToTerraform(struct!.retainStacksOnAccountRemoval),
+  }
+}
+
 export interface CloudformationStackSetTimeouts {
   readonly update?: string;
 }
@@ -56,9 +72,11 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
     this._executionRoleName = config.executionRoleName;
     this._name = config.name;
     this._parameters = config.parameters;
+    this._permissionModel = config.permissionModel;
     this._tags = config.tags;
     this._templateBody = config.templateBody;
     this._templateUrl = config.templateUrl;
+    this._autoDeployment = config.autoDeployment;
     this._timeouts = config.timeouts;
   }
 
@@ -66,13 +84,16 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // administration_role_arn - computed: false, optional: false, required: true
-  private _administrationRoleArn: string;
+  // administration_role_arn - computed: false, optional: true, required: false
+  private _administrationRoleArn?: string;
   public get administrationRoleArn() {
     return this.getStringAttribute('administration_role_arn');
   }
-  public set administrationRoleArn(value: string) {
+  public set administrationRoleArn(value: string ) {
     this._administrationRoleArn = value;
+  }
+  public resetAdministrationRoleArn() {
+    this._administrationRoleArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get administrationRoleArnInput() {
@@ -116,12 +137,12 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
     return this._description
   }
 
-  // execution_role_name - computed: false, optional: true, required: false
+  // execution_role_name - computed: true, optional: true, required: false
   private _executionRoleName?: string;
   public get executionRoleName() {
     return this.getStringAttribute('execution_role_name');
   }
-  public set executionRoleName(value: string ) {
+  public set executionRoleName(value: string) {
     this._executionRoleName = value;
   }
   public resetExecutionRoleName() {
@@ -164,6 +185,22 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get parametersInput() {
     return this._parameters
+  }
+
+  // permission_model - computed: false, optional: true, required: false
+  private _permissionModel?: string;
+  public get permissionModel() {
+    return this.getStringAttribute('permission_model');
+  }
+  public set permissionModel(value: string ) {
+    this._permissionModel = value;
+  }
+  public resetPermissionModel() {
+    this._permissionModel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionModelInput() {
+    return this._permissionModel
   }
 
   // stack_set_id - computed: true, optional: false, required: false
@@ -219,6 +256,22 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
     return this._templateUrl
   }
 
+  // auto_deployment - computed: false, optional: true, required: false
+  private _autoDeployment?: CloudformationStackSetAutoDeployment[];
+  public get autoDeployment() {
+    return this.interpolationForAttribute('auto_deployment') as any;
+  }
+  public set autoDeployment(value: CloudformationStackSetAutoDeployment[] ) {
+    this._autoDeployment = value;
+  }
+  public resetAutoDeployment() {
+    this._autoDeployment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoDeploymentInput() {
+    return this._autoDeployment
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: CloudformationStackSetTimeouts;
   public get timeouts() {
@@ -247,9 +300,11 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
       execution_role_name: cdktf.stringToTerraform(this._executionRoleName),
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      permission_model: cdktf.stringToTerraform(this._permissionModel),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_url: cdktf.stringToTerraform(this._templateUrl),
+      auto_deployment: cdktf.listMapper(cloudformationStackSetAutoDeploymentToTerraform)(this._autoDeployment),
       timeouts: cloudformationStackSetTimeoutsToTerraform(this._timeouts),
     };
   }

@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
+  readonly availabilityZoneName?: string;
   readonly creationToken?: string;
   readonly encrypted?: boolean;
   readonly kmsKeyId?: string;
@@ -16,6 +17,23 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly throughputMode?: string;
   /** lifecycle_policy block */
   readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[];
+}
+export class EfsFileSystemSizeInBytes extends cdktf.ComplexComputedList {
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+
+  // value_in_ia - computed: true, optional: false, required: false
+  public get valueInIa() {
+    return this.getNumberAttribute('value_in_ia');
+  }
+
+  // value_in_standard - computed: true, optional: false, required: false
+  public get valueInStandard() {
+    return this.getNumberAttribute('value_in_standard');
+  }
 }
 export interface EfsFileSystemLifecyclePolicy {
   readonly transitionToIa: string;
@@ -48,6 +66,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._availabilityZoneName = config.availabilityZoneName;
     this._creationToken = config.creationToken;
     this._encrypted = config.encrypted;
     this._kmsKeyId = config.kmsKeyId;
@@ -65,6 +84,27 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // availability_zone_id - computed: true, optional: false, required: false
+  public get availabilityZoneId() {
+    return this.getStringAttribute('availability_zone_id');
+  }
+
+  // availability_zone_name - computed: true, optional: true, required: false
+  private _availabilityZoneName?: string;
+  public get availabilityZoneName() {
+    return this.getStringAttribute('availability_zone_name');
+  }
+  public set availabilityZoneName(value: string) {
+    this._availabilityZoneName = value;
+  }
+  public resetAvailabilityZoneName() {
+    this._availabilityZoneName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneNameInput() {
+    return this._availabilityZoneName
   }
 
   // creation_token - computed: true, optional: true, required: false
@@ -125,6 +165,16 @@ export class EfsFileSystem extends cdktf.TerraformResource {
     return this._kmsKeyId
   }
 
+  // number_of_mount_targets - computed: true, optional: false, required: false
+  public get numberOfMountTargets() {
+    return this.getNumberAttribute('number_of_mount_targets');
+  }
+
+  // owner_id - computed: true, optional: false, required: false
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+
   // performance_mode - computed: true, optional: true, required: false
   private _performanceMode?: string;
   public get performanceMode() {
@@ -155,6 +205,11 @@ export class EfsFileSystem extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get provisionedThroughputInMibpsInput() {
     return this._provisionedThroughputInMibps
+  }
+
+  // size_in_bytes - computed: true, optional: false, required: false
+  public sizeInBytes(index: string) {
+    return new EfsFileSystemSizeInBytes(this, 'size_in_bytes', index);
   }
 
   // tags - computed: false, optional: true, required: false
@@ -211,6 +266,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      availability_zone_name: cdktf.stringToTerraform(this._availabilityZoneName),
       creation_token: cdktf.stringToTerraform(this._creationToken),
       encrypted: cdktf.booleanToTerraform(this._encrypted),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),

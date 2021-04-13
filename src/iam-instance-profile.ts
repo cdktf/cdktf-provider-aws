@@ -11,6 +11,7 @@ export interface IamInstanceProfileConfig extends cdktf.TerraformMetaArguments {
   readonly namePrefix?: string;
   readonly path?: string;
   readonly role?: string;
+  readonly tags?: { [key: string]: string };
 }
 
 // Resource
@@ -36,6 +37,7 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
     this._namePrefix = config.namePrefix;
     this._path = config.path;
     this._role = config.role;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -121,6 +123,22 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
     return this._role
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // unique_id - computed: true, optional: false, required: false
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
@@ -136,6 +154,7 @@ export class IamInstanceProfile extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       path: cdktf.stringToTerraform(this._path),
       role: cdktf.stringToTerraform(this._role),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

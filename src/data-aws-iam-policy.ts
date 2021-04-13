@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsIamPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly arn: string;
+  readonly tags?: { [key: string]: string };
 }
 
 // Resource
@@ -30,6 +31,7 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._arn = config.arn;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -74,6 +76,27 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
     return this.getStringAttribute('policy');
   }
 
+  // policy_id - computed: true, optional: false, required: false
+  public get policyId() {
+    return this.getStringAttribute('policy_id');
+  }
+
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -81,6 +104,7 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       arn: cdktf.stringToTerraform(this._arn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }
