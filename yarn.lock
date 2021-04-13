@@ -278,10 +278,10 @@
     "@types/node-fetch" "^2.5.8"
     node-fetch "^2.6.1"
 
-"@cdktf/provider-project@^0.1.49":
-  version "0.1.49"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.49.tgz#16319d611a91aeec90f3f21b5bbb0c3f2c3c2507"
-  integrity sha512-Xdej/QQQlp08IIYyoAfibuZUr7EA7Il4+gfV+CEb2Sq/4JkviWqyBeDkvqjS/i7mL9rWZKdy4O0Im2i2+bvvqw==
+"@cdktf/provider-project@^0.1.54":
+  version "0.1.54"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.54.tgz#72c74408700ee2c8e226908bc3649d347de0cacf"
+  integrity sha512-x3iLRnKEs0g3uMT+fXEas//9h6wR+gC2jqYfvFHkfu+kDr2x1+Uj/kR6rIHQZ2hkkqYS/a7BkPY7jA2yyHw5vg==
   dependencies:
     change-case "^4.1.2"
 
@@ -1200,7 +1200,7 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cdktf-cli@^0.x:
+cdktf-cli@^0.2:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.2.1.tgz#00aa8e2a164a5b50544b3bbfb453163515719b67"
   integrity sha512-DcAkiIy8oA3GIUG8/zqO7oBYyER7WxC4ylVNkQFqq/k7m+x+YCk18JvHkZHX4uK2xxQyttQ0lxHMNyZyA5y1oA==
@@ -1229,7 +1229,7 @@ cdktf-cli@^0.x:
     uuid "^8.3.0"
     yargs "^15.1.0"
 
-cdktf@0.2.1, cdktf@^0.x:
+cdktf@0.2.1, cdktf@^0.2:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.2.1.tgz#ec4864db7741bc7350ff8563cc547d4601ded309"
   integrity sha512-yz2eoeiSWDjf98ackXw6D0bWvdsmJ7EIxuTHbkn7hzaIJ9sDrXhVLpcTP0rolBVZ/FR8/mtFLoEdHnthIg5IcA==
@@ -4627,10 +4627,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-projen@^0.17.30:
-  version "0.17.30"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.17.30.tgz#3f69d2fa6b09a14c536062c646116caf6f7e4f9f"
-  integrity sha512-NyQtS6zIvkPOB7OuRIvYafS3XBmgu7GNDuLAivMG0OIoo0OGlCFC8MuWIJd1sejOHjlZUPz4izA00vYu/x7I6Q==
+projen@^0.17.37:
+  version "0.17.37"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.17.37.tgz#7eaeb6aba8484147aeadd4521d5af902a36732c5"
+  integrity sha512-alIcnqPrwKnXq4Em/TaKZytrTLL88V4VeXYhguJPB9tk+YRwj4JaB3PxcUgNxWRDd1D33Wz3H1o4Jz8hkryMEA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     chalk "^4.1.0"

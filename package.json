@@ -33,11 +33,11 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.1.49",
+    "@cdktf/provider-project": "^0.1.54",
     "@types/jest": "^26.0.7",
     "@types/node": "^10.17.0",
-    "cdktf": "^0.x",
-    "cdktf-cli": "^0.x",
+    "cdktf": "^0.2",
+    "cdktf-cli": "^0.2",
     "constructs": "^3.0.4",
     "dot-prop": "^5.2.0",
     "jest": "^26.0.1",
@@ -46,13 +46,13 @@
     "jsii-diff": "^1.19.0",
     "jsii-docgen": "^1.8.33",
     "jsii-pacmak": "^1.19.0",
-    "projen": "^0.17.30",
+    "projen": "^0.17.37",
     "standard-version": "^9",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
   },
   "peerDependencies": {
-    "cdktf": "^0.x",
+    "cdktf": "^0.2",
     "constructs": "^3.0.4"
   },
   "bundledDependencies": [],
