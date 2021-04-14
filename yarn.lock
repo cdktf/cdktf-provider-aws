@@ -270,10 +270,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cdktf/hcl2json@0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.2.1.tgz#eaf844d38cb55fb5bb7f3d6572cd3ce8998e8fc3"
-  integrity sha512-fn2ZA+Fxdk+QfDleT7GOiZozHdic5kVR0MhFHPzTEipXw7tJlrrbqd1fH+GJFu090uzIagdUM3Y+j4w1GTOz7g==
+"@cdktf/hcl2json@0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.2.2.tgz#a8c471268462209aaf2c33c4a6ecb8a52d241a80"
+  integrity sha512-C/IOl8ARTRiafC9mdZiIuJbqys6LRmaVM/grux7OASkVbkyYy2RHKPVXRBsD5mtfLBXQaL/NGjLLJ4aSC7jFZQ==
   dependencies:
     "@types/node-fetch" "^2.5.8"
     node-fetch "^2.6.1"
@@ -485,7 +485,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jsii/spec@^1.16.0", "@jsii/spec@^1.27.1", "@jsii/spec@^1.28.0":
+"@jsii/spec@^1.16.0", "@jsii/spec@^1.28.0":
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.28.0.tgz#47db1102fc0291dbffffb3adb7f8ee0671e15ef3"
   integrity sha512-5mcupuCCXyhZwNmX/RDBn3WUYtd0oPXEDa3E+qOSjT30vaO8u9ZQ+mxwl4qsecx3m51LhXKnR1C9U9t4VlAmqA==
@@ -1201,20 +1201,21 @@ caseless@~0.12.0:
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
 cdktf-cli@^0.2:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.2.1.tgz#00aa8e2a164a5b50544b3bbfb453163515719b67"
-  integrity sha512-DcAkiIy8oA3GIUG8/zqO7oBYyER7WxC4ylVNkQFqq/k7m+x+YCk18JvHkZHX4uK2xxQyttQ0lxHMNyZyA5y1oA==
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.2.2.tgz#0664a285e809d5f862d0cedb25cf1cbfa786eb81"
+  integrity sha512-tkUGs4+739C+3lklwQQM/wLgp41maVlJUK/2cCzuNxVBgobLXBxn55lHxbmEuh2Ddc8PtNV31uzHzn1f2ZzdfQ==
   dependencies:
-    "@cdktf/hcl2json" "0.2.1"
+    "@cdktf/hcl2json" "0.2.2"
     "@skorfmann/ink-confirm-input" "^3.0.0"
     "@skorfmann/terraform-cloud" "^1.9.1"
     "@types/node" "^14.0.26"
     archiver "^5.1.0"
-    cdktf "0.2.1"
+    cdktf "0.2.2"
     chalk "^4.1.0"
     codemaker "^0.22.0"
     constructs "^3.0.0"
     fs-extra "^8.1.0"
+    indent-string "^4.0.0"
     ink "^3.0.8"
     ink-spinner "^4.0.1"
     jsii-srcmak "^0.1.223"
@@ -1229,14 +1230,7 @@ cdktf-cli@^0.2:
     uuid "^8.3.0"
     yargs "^15.1.0"
 
-cdktf@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.2.1.tgz#ec4864db7741bc7350ff8563cc547d4601ded309"
-  integrity sha512-yz2eoeiSWDjf98ackXw6D0bWvdsmJ7EIxuTHbkn7hzaIJ9sDrXhVLpcTP0rolBVZ/FR8/mtFLoEdHnthIg5IcA==
-  dependencies:
-    json-stable-stringify "^1.0.1"
-
-cdktf@^0.2:
+cdktf@0.2.2, cdktf@^0.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.2.2.tgz#93aec902694bca77009ecd1c1490fec19e908a12"
   integrity sha512-SMiDV99ruSGhjBm+dj30XmtV20BKesjY75SGGB3sTcFeaqn5d1Gf8gAaG69QTm3zqI8SbYO12MDslkoX1BY5Zw==
@@ -1497,12 +1491,7 @@ constant-case@^3.0.4:
     tslib "^2.0.3"
     upper-case "^2.0.2"
 
-constructs@^3.0.0:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.0.4.tgz#eb1ed5b80f6600b8d50de83971357ae0fe8e29a2"
-  integrity sha512-CDvg7gMjphE3DFX4pzkF6j73NREbR8npPFW8Mx/CLRnMR035+Y1o1HrXIsNSss/dq3ZUnNTU9jKyd3fL9EOlfw==
-
-constructs@^3.0.4:
+constructs@^3.0.0, constructs@^3.0.4:
   version "3.3.71"
   resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.71.tgz#5a3e968de484ad327bc2650aa4a7f37a39834ac5"
   integrity sha512-3KFtTsA7OV27m/+pJhN4iJkKzHbPIPvyvEX5BQ/JCAWjfCHOQEVpIgxHLpT4i8L1OFta+pJrzcEVAHo6UitwqA==
@@ -3610,7 +3599,7 @@ jsii-pacmak@^1.12.0, jsii-pacmak@^1.19.0:
     xmlbuilder "^15.1.1"
     yargs "^16.2.0"
 
-jsii-reflect@^1.16.0, jsii-reflect@^1.27.1, jsii-reflect@^1.28.0:
+jsii-reflect@^1.16.0, jsii-reflect@^1.28.0:
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/jsii-reflect/-/jsii-reflect-1.28.0.tgz#d03276499702115ff0582f82ede7bd40f1a4b6b9"
   integrity sha512-jFu9dUy5D0PrxVnaDilb50agbSr0wZRya6StwHyw8Wly3ruzS8uuSB1aWmEwN371m5ewDD4m9nPEQ9zMmKFvMQ==
