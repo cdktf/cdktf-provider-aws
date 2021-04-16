@@ -279,9 +279,9 @@
     node-fetch "^2.6.1"
 
 "@cdktf/provider-project@^0.1.54":
-  version "0.1.54"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.54.tgz#72c74408700ee2c8e226908bc3649d347de0cacf"
-  integrity sha512-x3iLRnKEs0g3uMT+fXEas//9h6wR+gC2jqYfvFHkfu+kDr2x1+Uj/kR6rIHQZ2hkkqYS/a7BkPY7jA2yyHw5vg==
+  version "0.1.55"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.55.tgz#78f1360f8438f06a9846986084ed7ddfc310bdef"
+  integrity sha512-JeQqVanGWewV0wXtqhMf2sMLVLxuWdLlbbF/vJqonzq6VqHIE/x7+A/Xtz2rYJvRNXP2pMxFaO9Gum4lwKUg2g==
   dependencies:
     change-case "^4.1.2"
 
