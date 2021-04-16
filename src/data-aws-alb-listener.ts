@@ -264,6 +264,11 @@ export class DataAwsAlbListener extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // alpn_policy - computed: true, optional: false, required: false
+  public get alpnPolicy() {
+    return this.getStringAttribute('alpn_policy');
+  }
+
   // arn - computed: true, optional: true, required: false
   public get arn() {
     return this.getStringAttribute('arn');

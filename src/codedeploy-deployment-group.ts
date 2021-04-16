@@ -12,6 +12,7 @@ export interface CodedeployDeploymentGroupConfig extends cdktf.TerraformMetaArgu
   readonly deploymentConfigName?: string;
   readonly deploymentGroupName: string;
   readonly serviceRoleArn: string;
+  readonly tags?: { [key: string]: string };
   /** alarm_configuration block */
   readonly alarmConfiguration?: CodedeployDeploymentGroupAlarmConfiguration[];
   /** auto_rollback_configuration block */
@@ -330,6 +331,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
     this._deploymentConfigName = config.deploymentConfigName;
     this._deploymentGroupName = config.deploymentGroupName;
     this._serviceRoleArn = config.serviceRoleArn;
+    this._tags = config.tags;
     this._alarmConfiguration = config.alarmConfiguration;
     this._autoRollbackConfiguration = config.autoRollbackConfiguration;
     this._blueGreenDeploymentConfig = config.blueGreenDeploymentConfig;
@@ -359,6 +361,11 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
     return this._appName
   }
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // autoscaling_groups - computed: false, optional: true, required: false
   private _autoscalingGroups?: string[];
   public get autoscalingGroups() {
@@ -375,6 +382,11 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
     return this._autoscalingGroups
   }
 
+  // compute_platform - computed: true, optional: false, required: false
+  public get computePlatform() {
+    return this.getStringAttribute('compute_platform');
+  }
+
   // deployment_config_name - computed: false, optional: true, required: false
   private _deploymentConfigName?: string;
   public get deploymentConfigName() {
@@ -389,6 +401,11 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get deploymentConfigNameInput() {
     return this._deploymentConfigName
+  }
+
+  // deployment_group_id - computed: true, optional: false, required: false
+  public get deploymentGroupId() {
+    return this.getStringAttribute('deployment_group_id');
   }
 
   // deployment_group_name - computed: false, optional: false, required: true
@@ -420,6 +437,22 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get serviceRoleArnInput() {
     return this._serviceRoleArn
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
   }
 
   // alarm_configuration - computed: false, optional: true, required: false
@@ -593,6 +626,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
       deployment_config_name: cdktf.stringToTerraform(this._deploymentConfigName),
       deployment_group_name: cdktf.stringToTerraform(this._deploymentGroupName),
       service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       alarm_configuration: cdktf.listMapper(codedeployDeploymentGroupAlarmConfigurationToTerraform)(this._alarmConfiguration),
       auto_rollback_configuration: cdktf.listMapper(codedeployDeploymentGroupAutoRollbackConfigurationToTerraform)(this._autoRollbackConfiguration),
       blue_green_deployment_config: cdktf.listMapper(codedeployDeploymentGroupBlueGreenDeploymentConfigToTerraform)(this._blueGreenDeploymentConfig),

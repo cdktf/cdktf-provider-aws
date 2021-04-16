@@ -253,6 +253,7 @@ export interface EmrClusterEc2Attributes {
   readonly keyName?: string;
   readonly serviceAccessSecurityGroup?: string;
   readonly subnetId?: string;
+  readonly subnetIds?: string[];
 }
 
 function emrClusterEc2AttributesToTerraform(struct?: EmrClusterEc2Attributes): any {
@@ -266,6 +267,7 @@ function emrClusterEc2AttributesToTerraform(struct?: EmrClusterEc2Attributes): a
     key_name: cdktf.stringToTerraform(struct!.keyName),
     service_access_security_group: cdktf.stringToTerraform(struct!.serviceAccessSecurityGroup),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
   }
 }
 

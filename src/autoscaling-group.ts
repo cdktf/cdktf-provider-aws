@@ -13,6 +13,7 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly desiredCapacity?: number;
   readonly enabledMetrics?: string[];
   readonly forceDelete?: boolean;
+  readonly forceDeleteWarmPool?: boolean;
   readonly healthCheckGracePeriod?: number;
   readonly healthCheckType?: string;
   readonly launchConfiguration?: string;
@@ -46,6 +47,8 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   readonly tag?: AutoscalingGroupTag[];
   /** timeouts block */
   readonly timeouts?: AutoscalingGroupTimeouts;
+  /** warm_pool block */
+  readonly warmPool?: AutoscalingGroupWarmPool[];
 }
 export interface AutoscalingGroupInitialLifecycleHook {
   readonly defaultResult?: string;
@@ -237,6 +240,21 @@ function autoscalingGroupTimeoutsToTerraform(struct?: AutoscalingGroupTimeouts):
   }
 }
 
+export interface AutoscalingGroupWarmPool {
+  readonly maxGroupPreparedCapacity?: number;
+  readonly minSize?: number;
+  readonly poolState?: string;
+}
+
+function autoscalingGroupWarmPoolToTerraform(struct?: AutoscalingGroupWarmPool): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_group_prepared_capacity: cdktf.numberToTerraform(struct!.maxGroupPreparedCapacity),
+    min_size: cdktf.numberToTerraform(struct!.minSize),
+    pool_state: cdktf.stringToTerraform(struct!.poolState),
+  }
+}
+
 
 // Resource
 
@@ -263,6 +281,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._desiredCapacity = config.desiredCapacity;
     this._enabledMetrics = config.enabledMetrics;
     this._forceDelete = config.forceDelete;
+    this._forceDeleteWarmPool = config.forceDeleteWarmPool;
     this._healthCheckGracePeriod = config.healthCheckGracePeriod;
     this._healthCheckType = config.healthCheckType;
     this._launchConfiguration = config.launchConfiguration;
@@ -290,6 +309,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     this._mixedInstancesPolicy = config.mixedInstancesPolicy;
     this._tag = config.tag;
     this._timeouts = config.timeouts;
+    this._warmPool = config.warmPool;
   }
 
   // ==========
@@ -395,6 +415,22 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get forceDeleteInput() {
     return this._forceDelete
+  }
+
+  // force_delete_warm_pool - computed: false, optional: true, required: false
+  private _forceDeleteWarmPool?: boolean;
+  public get forceDeleteWarmPool() {
+    return this.getBooleanAttribute('force_delete_warm_pool');
+  }
+  public set forceDeleteWarmPool(value: boolean ) {
+    this._forceDeleteWarmPool = value;
+  }
+  public resetForceDeleteWarmPool() {
+    this._forceDeleteWarmPool = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDeleteWarmPoolInput() {
+    return this._forceDeleteWarmPool
   }
 
   // health_check_grace_period - computed: false, optional: true, required: false
@@ -828,6 +864,22 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
     return this._timeouts
   }
 
+  // warm_pool - computed: false, optional: true, required: false
+  private _warmPool?: AutoscalingGroupWarmPool[];
+  public get warmPool() {
+    return this.interpolationForAttribute('warm_pool') as any;
+  }
+  public set warmPool(value: AutoscalingGroupWarmPool[] ) {
+    this._warmPool = value;
+  }
+  public resetWarmPool() {
+    this._warmPool = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warmPoolInput() {
+    return this._warmPool
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -840,6 +892,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       desired_capacity: cdktf.numberToTerraform(this._desiredCapacity),
       enabled_metrics: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledMetrics),
       force_delete: cdktf.booleanToTerraform(this._forceDelete),
+      force_delete_warm_pool: cdktf.booleanToTerraform(this._forceDeleteWarmPool),
       health_check_grace_period: cdktf.numberToTerraform(this._healthCheckGracePeriod),
       health_check_type: cdktf.stringToTerraform(this._healthCheckType),
       launch_configuration: cdktf.stringToTerraform(this._launchConfiguration),
@@ -867,6 +920,7 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
       mixed_instances_policy: cdktf.listMapper(autoscalingGroupMixedInstancesPolicyToTerraform)(this._mixedInstancesPolicy),
       tag: cdktf.listMapper(autoscalingGroupTagToTerraform)(this._tag),
       timeouts: autoscalingGroupTimeoutsToTerraform(this._timeouts),
+      warm_pool: cdktf.listMapper(autoscalingGroupWarmPoolToTerraform)(this._warmPool),
     };
   }
 }

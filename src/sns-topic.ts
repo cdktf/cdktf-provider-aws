@@ -10,8 +10,10 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   readonly applicationFailureFeedbackRoleArn?: string;
   readonly applicationSuccessFeedbackRoleArn?: string;
   readonly applicationSuccessFeedbackSampleRate?: number;
+  readonly contentBasedDeduplication?: boolean;
   readonly deliveryPolicy?: string;
   readonly displayName?: string;
+  readonly fifoTopic?: boolean;
   readonly httpFailureFeedbackRoleArn?: string;
   readonly httpSuccessFeedbackRoleArn?: string;
   readonly httpSuccessFeedbackSampleRate?: number;
@@ -50,8 +52,10 @@ export class SnsTopic extends cdktf.TerraformResource {
     this._applicationFailureFeedbackRoleArn = config.applicationFailureFeedbackRoleArn;
     this._applicationSuccessFeedbackRoleArn = config.applicationSuccessFeedbackRoleArn;
     this._applicationSuccessFeedbackSampleRate = config.applicationSuccessFeedbackSampleRate;
+    this._contentBasedDeduplication = config.contentBasedDeduplication;
     this._deliveryPolicy = config.deliveryPolicy;
     this._displayName = config.displayName;
+    this._fifoTopic = config.fifoTopic;
     this._httpFailureFeedbackRoleArn = config.httpFailureFeedbackRoleArn;
     this._httpSuccessFeedbackRoleArn = config.httpSuccessFeedbackRoleArn;
     this._httpSuccessFeedbackSampleRate = config.httpSuccessFeedbackSampleRate;
@@ -125,6 +129,22 @@ export class SnsTopic extends cdktf.TerraformResource {
     return this.getStringAttribute('arn');
   }
 
+  // content_based_deduplication - computed: false, optional: true, required: false
+  private _contentBasedDeduplication?: boolean;
+  public get contentBasedDeduplication() {
+    return this.getBooleanAttribute('content_based_deduplication');
+  }
+  public set contentBasedDeduplication(value: boolean ) {
+    this._contentBasedDeduplication = value;
+  }
+  public resetContentBasedDeduplication() {
+    this._contentBasedDeduplication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentBasedDeduplicationInput() {
+    return this._contentBasedDeduplication
+  }
+
   // delivery_policy - computed: false, optional: true, required: false
   private _deliveryPolicy?: string;
   public get deliveryPolicy() {
@@ -155,6 +175,22 @@ export class SnsTopic extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName
+  }
+
+  // fifo_topic - computed: false, optional: true, required: false
+  private _fifoTopic?: boolean;
+  public get fifoTopic() {
+    return this.getBooleanAttribute('fifo_topic');
+  }
+  public set fifoTopic(value: boolean ) {
+    this._fifoTopic = value;
+  }
+  public resetFifoTopic() {
+    this._fifoTopic = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fifoTopicInput() {
+    return this._fifoTopic
   }
 
   // http_failure_feedback_role_arn - computed: false, optional: true, required: false
@@ -290,12 +326,12 @@ export class SnsTopic extends cdktf.TerraformResource {
     return this._name
   }
 
-  // name_prefix - computed: false, optional: true, required: false
+  // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
     return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string) {
     this._namePrefix = value;
   }
   public resetNamePrefix() {
@@ -395,8 +431,10 @@ export class SnsTopic extends cdktf.TerraformResource {
       application_failure_feedback_role_arn: cdktf.stringToTerraform(this._applicationFailureFeedbackRoleArn),
       application_success_feedback_role_arn: cdktf.stringToTerraform(this._applicationSuccessFeedbackRoleArn),
       application_success_feedback_sample_rate: cdktf.numberToTerraform(this._applicationSuccessFeedbackSampleRate),
+      content_based_deduplication: cdktf.booleanToTerraform(this._contentBasedDeduplication),
       delivery_policy: cdktf.stringToTerraform(this._deliveryPolicy),
       display_name: cdktf.stringToTerraform(this._displayName),
+      fifo_topic: cdktf.booleanToTerraform(this._fifoTopic),
       http_failure_feedback_role_arn: cdktf.stringToTerraform(this._httpFailureFeedbackRoleArn),
       http_success_feedback_role_arn: cdktf.stringToTerraform(this._httpSuccessFeedbackRoleArn),
       http_success_feedback_sample_rate: cdktf.numberToTerraform(this._httpSuccessFeedbackSampleRate),
