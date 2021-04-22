@@ -62,6 +62,11 @@ export class DataAwsS3BucketObject extends cdktf.TerraformDataSource {
     return this._bucket
   }
 
+  // bucket_key_enabled - computed: true, optional: false, required: false
+  public get bucketKeyEnabled() {
+    return this.getBooleanAttribute('bucket_key_enabled');
+  }
+
   // cache_control - computed: true, optional: false, required: false
   public get cacheControl() {
     return this.getStringAttribute('cache_control');

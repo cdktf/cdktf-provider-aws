@@ -187,6 +187,8 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly dax?: string;
   /** Use this to override the default service endpoint URL */
+  readonly detective?: string;
+  /** Use this to override the default service endpoint URL */
   readonly devicefarm?: string;
   /** Use this to override the default service endpoint URL */
   readonly directconnect?: string;
@@ -454,6 +456,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     datapipeline: cdktf.stringToTerraform(struct!.datapipeline),
     datasync: cdktf.stringToTerraform(struct!.datasync),
     dax: cdktf.stringToTerraform(struct!.dax),
+    detective: cdktf.stringToTerraform(struct!.detective),
     devicefarm: cdktf.stringToTerraform(struct!.devicefarm),
     directconnect: cdktf.stringToTerraform(struct!.directconnect),
     dlm: cdktf.stringToTerraform(struct!.dlm),

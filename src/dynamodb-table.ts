@@ -98,12 +98,14 @@ function dynamodbTablePointInTimeRecoveryToTerraform(struct?: DynamodbTablePoint
 }
 
 export interface DynamodbTableReplica {
+  readonly kmsKeyArn?: string;
   readonly regionName: string;
 }
 
 function dynamodbTableReplicaToTerraform(struct?: DynamodbTableReplica): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
     region_name: cdktf.stringToTerraform(struct!.regionName),
   }
 }

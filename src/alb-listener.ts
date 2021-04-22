@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AlbListenerConfig extends cdktf.TerraformMetaArguments {
+  readonly alpnPolicy?: string;
   readonly certificateArn?: string;
   readonly loadBalancerArn: string;
   readonly port?: number;
@@ -211,6 +212,7 @@ export class AlbListener extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._alpnPolicy = config.alpnPolicy;
     this._certificateArn = config.certificateArn;
     this._loadBalancerArn = config.loadBalancerArn;
     this._port = config.port;
@@ -223,6 +225,22 @@ export class AlbListener extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // alpn_policy - computed: false, optional: true, required: false
+  private _alpnPolicy?: string;
+  public get alpnPolicy() {
+    return this.getStringAttribute('alpn_policy');
+  }
+  public set alpnPolicy(value: string ) {
+    this._alpnPolicy = value;
+  }
+  public resetAlpnPolicy() {
+    this._alpnPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alpnPolicyInput() {
+    return this._alpnPolicy
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -346,6 +364,7 @@ export class AlbListener extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      alpn_policy: cdktf.stringToTerraform(this._alpnPolicy),
       certificate_arn: cdktf.stringToTerraform(this._certificateArn),
       load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
       port: cdktf.numberToTerraform(this._port),

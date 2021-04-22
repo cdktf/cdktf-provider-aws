@@ -9,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface CodedeployAppConfig extends cdktf.TerraformMetaArguments {
   readonly computePlatform?: string;
   readonly name: string;
-  readonly uniqueId?: string;
+  readonly tags?: { [key: string]: string };
 }
 
 // Resource
@@ -33,12 +33,22 @@ export class CodedeployApp extends cdktf.TerraformResource {
     });
     this._computePlatform = config.computePlatform;
     this._name = config.name;
-    this._uniqueId = config.uniqueId;
+    this._tags = config.tags;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // application_id - computed: true, optional: false, required: false
+  public get applicationId() {
+    return this.getStringAttribute('application_id');
+  }
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // compute_platform - computed: false, optional: true, required: false
   private _computePlatform?: string;
@@ -56,9 +66,19 @@ export class CodedeployApp extends cdktf.TerraformResource {
     return this._computePlatform
   }
 
+  // github_account_name - computed: true, optional: false, required: false
+  public get githubAccountName() {
+    return this.getStringAttribute('github_account_name');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // linked_to_github - computed: true, optional: false, required: false
+  public get linkedToGithub() {
+    return this.getBooleanAttribute('linked_to_github');
   }
 
   // name - computed: false, optional: false, required: true
@@ -74,20 +94,20 @@ export class CodedeployApp extends cdktf.TerraformResource {
     return this._name
   }
 
-  // unique_id - computed: true, optional: true, required: false
-  private _uniqueId?: string;
-  public get uniqueId() {
-    return this.getStringAttribute('unique_id');
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set uniqueId(value: string) {
-    this._uniqueId = value;
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
   }
-  public resetUniqueId() {
-    this._uniqueId = undefined;
+  public resetTags() {
+    this._tags = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get uniqueIdInput() {
-    return this._uniqueId
+  public get tagsInput() {
+    return this._tags
   }
 
   // =========
@@ -98,7 +118,7 @@ export class CodedeployApp extends cdktf.TerraformResource {
     return {
       compute_platform: cdktf.stringToTerraform(this._computePlatform),
       name: cdktf.stringToTerraform(this._name),
-      unique_id: cdktf.stringToTerraform(this._uniqueId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

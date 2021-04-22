@@ -333,6 +333,7 @@ function s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionB
 }
 
 export interface S3BucketServerSideEncryptionConfigurationRule {
+  readonly bucketKeyEnabled?: boolean;
   /** apply_server_side_encryption_by_default block */
   readonly applyServerSideEncryptionByDefault: S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault[];
 }
@@ -340,6 +341,7 @@ export interface S3BucketServerSideEncryptionConfigurationRule {
 function s3BucketServerSideEncryptionConfigurationRuleToTerraform(struct?: S3BucketServerSideEncryptionConfigurationRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    bucket_key_enabled: cdktf.booleanToTerraform(struct!.bucketKeyEnabled),
     apply_server_side_encryption_by_default: cdktf.listMapper(s3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultToTerraform)(struct!.applyServerSideEncryptionByDefault),
   }
 }

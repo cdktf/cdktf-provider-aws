@@ -35,6 +35,30 @@ export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArgumen
   /** viewer_certificate block */
   readonly viewerCertificate: CloudfrontDistributionViewerCertificate[];
 }
+export class CloudfrontDistributionTrustedKeyGroupsItems extends cdktf.ComplexComputedList {
+
+  // key_group_id - computed: true, optional: false, required: false
+  public get keyGroupId() {
+    return this.getStringAttribute('key_group_id');
+  }
+
+  // key_pair_ids - computed: true, optional: false, required: false
+  public get keyPairIds() {
+    return this.getListAttribute('key_pair_ids');
+  }
+}
+export class CloudfrontDistributionTrustedKeyGroups extends cdktf.ComplexComputedList {
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // items - computed: true, optional: false, required: false
+  public get items() {
+    return this.interpolationForAttribute('items') as any;
+  }
+}
 export class CloudfrontDistributionTrustedSignersItems extends cdktf.ComplexComputedList {
 
   // aws_account_number - computed: true, optional: false, required: false
@@ -135,6 +159,7 @@ export interface CloudfrontDistributionDefaultCacheBehavior {
   readonly realtimeLogConfigArn?: string;
   readonly smoothStreaming?: boolean;
   readonly targetOriginId: string;
+  readonly trustedKeyGroups?: string[];
   readonly trustedSigners?: string[];
   readonly viewerProtocolPolicy: string;
   /** forwarded_values block */
@@ -158,6 +183,7 @@ function cloudfrontDistributionDefaultCacheBehaviorToTerraform(struct?: Cloudfro
     realtime_log_config_arn: cdktf.stringToTerraform(struct!.realtimeLogConfigArn),
     smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
     target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
+    trusted_key_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedKeyGroups),
     trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
     viewer_protocol_policy: cdktf.stringToTerraform(struct!.viewerProtocolPolicy),
     forwarded_values: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorForwardedValuesToTerraform)(struct!.forwardedValues),
@@ -240,6 +266,7 @@ export interface CloudfrontDistributionOrderedCacheBehavior {
   readonly realtimeLogConfigArn?: string;
   readonly smoothStreaming?: boolean;
   readonly targetOriginId: string;
+  readonly trustedKeyGroups?: string[];
   readonly trustedSigners?: string[];
   readonly viewerProtocolPolicy: string;
   /** forwarded_values block */
@@ -264,6 +291,7 @@ function cloudfrontDistributionOrderedCacheBehaviorToTerraform(struct?: Cloudfro
     realtime_log_config_arn: cdktf.stringToTerraform(struct!.realtimeLogConfigArn),
     smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
     target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
+    trusted_key_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedKeyGroups),
     trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
     viewer_protocol_policy: cdktf.stringToTerraform(struct!.viewerProtocolPolicy),
     forwarded_values: cdktf.listMapper(cloudfrontDistributionOrderedCacheBehaviorForwardedValuesToTerraform)(struct!.forwardedValues),
@@ -652,6 +680,11 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // trusted_key_groups - computed: true, optional: false, required: false
+  public trustedKeyGroups(index: string) {
+    return new CloudfrontDistributionTrustedKeyGroups(this, 'trusted_key_groups', index);
   }
 
   // trusted_signers - computed: true, optional: false, required: false

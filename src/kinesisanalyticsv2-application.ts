@@ -8,9 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface Kinesisanalyticsv2ApplicationConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
+  readonly forceStop?: boolean;
   readonly name: string;
   readonly runtimeEnvironment: string;
   readonly serviceExecutionRole: string;
+  readonly startApplication?: boolean;
   readonly tags?: { [key: string]: string };
   /** application_configuration block */
   readonly applicationConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfiguration[];
@@ -163,6 +165,45 @@ function kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationCo
   }
 }
 
+export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfiguration {
+  readonly applicationRestoreType?: string;
+  readonly snapshotName?: string;
+}
+
+function kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    application_restore_type: cdktf.stringToTerraform(struct!.applicationRestoreType),
+    snapshot_name: cdktf.stringToTerraform(struct!.snapshotName),
+  }
+}
+
+export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration {
+  readonly allowNonRestoredState?: boolean;
+}
+
+function kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    allow_non_restored_state: cdktf.booleanToTerraform(struct!.allowNonRestoredState),
+  }
+}
+
+export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfiguration {
+  /** application_restore_configuration block */
+  readonly applicationRestoreConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfiguration[];
+  /** flink_run_configuration block */
+  readonly flinkRunConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration[];
+}
+
+function kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    application_restore_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationApplicationRestoreConfigurationToTerraform)(struct!.applicationRestoreConfiguration),
+    flink_run_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationToTerraform)(struct!.flinkRunConfiguration),
+  }
+}
+
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism {
   readonly count?: number;
 }
@@ -282,6 +323,17 @@ function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConf
   }
 }
 
+export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration {
+  readonly inputStartingPosition?: string;
+}
+
+function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    input_starting_position: cdktf.stringToTerraform(struct!.inputStartingPosition),
+  }
+}
+
 export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput {
   readonly resourceArn: string;
 }
@@ -312,6 +364,8 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplica
   readonly inputProcessingConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration[];
   /** input_schema block */
   readonly inputSchema: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema[];
+  /** input_starting_position_configuration block */
+  readonly inputStartingPositionConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration[];
   /** kinesis_firehose_input block */
   readonly kinesisFirehoseInput?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput[];
   /** kinesis_streams_input block */
@@ -325,6 +379,7 @@ function kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConf
     input_parallelism: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelismToTerraform)(struct!.inputParallelism),
     input_processing_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationToTerraform)(struct!.inputProcessingConfiguration),
     input_schema: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaToTerraform)(struct!.inputSchema),
+    input_starting_position_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfigurationToTerraform)(struct!.inputStartingPositionConfiguration),
     kinesis_firehose_input: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputToTerraform)(struct!.kinesisFirehoseInput),
     kinesis_streams_input: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputToTerraform)(struct!.kinesisStreamsInput),
   }
@@ -552,6 +607,8 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfiguration {
   readonly environmentProperties?: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentProperties[];
   /** flink_application_configuration block */
   readonly flinkApplicationConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfiguration[];
+  /** run_configuration block */
+  readonly runConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfiguration[];
   /** sql_application_configuration block */
   readonly sqlApplicationConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfiguration[];
   /** vpc_configuration block */
@@ -565,6 +622,7 @@ function kinesisanalyticsv2ApplicationApplicationConfigurationToTerraform(struct
     application_snapshot_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfigurationToTerraform)(struct!.applicationSnapshotConfiguration),
     environment_properties: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesToTerraform)(struct!.environmentProperties),
     flink_application_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationFlinkApplicationConfigurationToTerraform)(struct!.flinkApplicationConfiguration),
+    run_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationToTerraform)(struct!.runConfiguration),
     sql_application_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationToTerraform)(struct!.sqlApplicationConfiguration),
     vpc_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationVpcConfigurationToTerraform)(struct!.vpcConfiguration),
   }
@@ -602,9 +660,11 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._forceStop = config.forceStop;
     this._name = config.name;
     this._runtimeEnvironment = config.runtimeEnvironment;
     this._serviceExecutionRole = config.serviceExecutionRole;
+    this._startApplication = config.startApplication;
     this._tags = config.tags;
     this._applicationConfiguration = config.applicationConfiguration;
     this._cloudwatchLoggingOptions = config.cloudwatchLoggingOptions;
@@ -638,6 +698,22 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description
+  }
+
+  // force_stop - computed: false, optional: true, required: false
+  private _forceStop?: boolean;
+  public get forceStop() {
+    return this.getBooleanAttribute('force_stop');
+  }
+  public set forceStop(value: boolean ) {
+    this._forceStop = value;
+  }
+  public resetForceStop() {
+    this._forceStop = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceStopInput() {
+    return this._forceStop
   }
 
   // id - computed: true, optional: true, required: false
@@ -687,6 +763,22 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get serviceExecutionRoleInput() {
     return this._serviceExecutionRole
+  }
+
+  // start_application - computed: false, optional: true, required: false
+  private _startApplication?: boolean;
+  public get startApplication() {
+    return this.getBooleanAttribute('start_application');
+  }
+  public set startApplication(value: boolean ) {
+    this._startApplication = value;
+  }
+  public resetStartApplication() {
+    this._startApplication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startApplicationInput() {
+    return this._startApplication
   }
 
   // status - computed: true, optional: false, required: false
@@ -754,9 +846,11 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      force_stop: cdktf.booleanToTerraform(this._forceStop),
       name: cdktf.stringToTerraform(this._name),
       runtime_environment: cdktf.stringToTerraform(this._runtimeEnvironment),
       service_execution_role: cdktf.stringToTerraform(this._serviceExecutionRole),
+      start_application: cdktf.booleanToTerraform(this._startApplication),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       application_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationToTerraform)(this._applicationConfiguration),
       cloudwatch_logging_options: cdktf.listMapper(kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsToTerraform)(this._cloudwatchLoggingOptions),

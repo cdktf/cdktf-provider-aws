@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   readonly acl?: string;
   readonly bucket: string;
+  readonly bucketKeyEnabled?: boolean;
   readonly cacheControl?: string;
   readonly contentDisposition?: string;
   readonly contentEncoding?: string;
@@ -87,6 +88,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
     });
     this._acl = config.acl;
     this._bucket = config.bucket;
+    this._bucketKeyEnabled = config.bucketKeyEnabled;
     this._cacheControl = config.cacheControl;
     this._contentDisposition = config.contentDisposition;
     this._contentEncoding = config.contentEncoding;
@@ -155,6 +157,22 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
     return this._bucket
+  }
+
+  // bucket_key_enabled - computed: true, optional: true, required: false
+  private _bucketKeyEnabled?: boolean;
+  public get bucketKeyEnabled() {
+    return this.getBooleanAttribute('bucket_key_enabled');
+  }
+  public set bucketKeyEnabled(value: boolean) {
+    this._bucketKeyEnabled = value;
+  }
+  public resetBucketKeyEnabled() {
+    this._bucketKeyEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketKeyEnabledInput() {
+    return this._bucketKeyEnabled
   }
 
   // cache_control - computed: true, optional: true, required: false
@@ -754,6 +772,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
     return {
       acl: cdktf.stringToTerraform(this._acl),
       bucket: cdktf.stringToTerraform(this._bucket),
+      bucket_key_enabled: cdktf.booleanToTerraform(this._bucketKeyEnabled),
       cache_control: cdktf.stringToTerraform(this._cacheControl),
       content_disposition: cdktf.stringToTerraform(this._contentDisposition),
       content_encoding: cdktf.stringToTerraform(this._contentEncoding),
