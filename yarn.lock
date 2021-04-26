@@ -3611,9 +3611,9 @@ jsii-diff@^1.19.0:
     yargs "^16.2.0"
 
 jsii-docgen@^1.8.33:
-  version "1.8.68"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-1.8.68.tgz#9ae866bcffdab73b50d704f656e2ee9b883d2292"
-  integrity sha512-Z1CpLaOUdssk6Wc8RX7Wj20ebxVfMBhvbi2hREbTPNwH9TTtZ7ZVwKNQg1vXIEXTP/85MyVWcHhK5t2bqhXwQw==
+  version "1.8.69"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-1.8.69.tgz#6c88c0c58c988276f7bff34b97a615401716bccb"
+  integrity sha512-eVbZlDnWByLbvRa9zeC6S9SY0odBKNzdC0cJijMjZMfGwqoh+UUjOTrWKWZIA9mJFwCxB4LJ/S+c9eW7Ji+RUA==
   dependencies:
     "@jsii/spec" "^1.16.0"
     fs-extra "^9.0.1"
