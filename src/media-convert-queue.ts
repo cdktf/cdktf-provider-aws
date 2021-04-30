@@ -12,6 +12,7 @@ export interface MediaConvertQueueConfig extends cdktf.TerraformMetaArguments {
   readonly pricingPlan?: string;
   readonly status?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** reservation_plan_settings block */
   readonly reservationPlanSettings?: MediaConvertQueueReservationPlanSettings[];
 }
@@ -55,6 +56,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
     this._pricingPlan = config.pricingPlan;
     this._status = config.status;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._reservationPlanSettings = config.reservationPlanSettings;
   }
 
@@ -149,6 +151,22 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // reservation_plan_settings - computed: false, optional: true, required: false
   private _reservationPlanSettings?: MediaConvertQueueReservationPlanSettings[];
   public get reservationPlanSettings() {
@@ -176,6 +194,7 @@ export class MediaConvertQueue extends cdktf.TerraformResource {
       pricing_plan: cdktf.stringToTerraform(this._pricingPlan),
       status: cdktf.stringToTerraform(this._status),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       reservation_plan_settings: cdktf.listMapper(mediaConvertQueueReservationPlanSettingsToTerraform)(this._reservationPlanSettings),
     };
   }

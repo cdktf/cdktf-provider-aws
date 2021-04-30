@@ -75,6 +75,11 @@ export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
     return this.getStringAttribute('engine');
   }
 
+  // engine_version_actual - computed: true, optional: false, required: false
+  public get engineVersionActual() {
+    return this.getStringAttribute('engine_version_actual');
+  }
+
   // global_replication_group_description - computed: false, optional: true, required: false
   private _globalReplicationGroupDescription?: string;
   public get globalReplicationGroupDescription() {

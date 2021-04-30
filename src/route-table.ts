@@ -10,6 +10,7 @@ export interface RouteTableConfig extends cdktf.TerraformMetaArguments {
   readonly propagatingVgws?: string[];
   readonly route?: RouteTableRoute[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly vpcId: string;
 }
 export interface RouteTableRoute {
@@ -70,6 +71,7 @@ export class RouteTable extends cdktf.TerraformResource {
     this._propagatingVgws = config.propagatingVgws;
     this._route = config.route;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._vpcId = config.vpcId;
   }
 
@@ -140,6 +142,22 @@ export class RouteTable extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
@@ -162,6 +180,7 @@ export class RouteTable extends cdktf.TerraformResource {
       propagating_vgws: cdktf.listMapper(cdktf.stringToTerraform)(this._propagatingVgws),
       route: cdktf.listMapper(routeTableRouteToTerraform)(this._route),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
   }

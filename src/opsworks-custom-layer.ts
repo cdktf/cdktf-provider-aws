@@ -27,6 +27,7 @@ export interface OpsworksCustomLayerConfig extends cdktf.TerraformMetaArguments 
   readonly stackId: string;
   readonly systemPackages?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly useEbsOptimizedInstances?: boolean;
   /** ebs_volume block */
   readonly ebsVolume?: OpsworksCustomLayerEbsVolume[];
@@ -94,6 +95,7 @@ export class OpsworksCustomLayer extends cdktf.TerraformResource {
     this._stackId = config.stackId;
     this._systemPackages = config.systemPackages;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._useEbsOptimizedInstances = config.useEbsOptimizedInstances;
     this._ebsVolume = config.ebsVolume;
   }
@@ -423,6 +425,22 @@ export class OpsworksCustomLayer extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // use_ebs_optimized_instances - computed: false, optional: true, required: false
   private _useEbsOptimizedInstances?: boolean;
   public get useEbsOptimizedInstances() {
@@ -481,6 +499,7 @@ export class OpsworksCustomLayer extends cdktf.TerraformResource {
       stack_id: cdktf.stringToTerraform(this._stackId),
       system_packages: cdktf.listMapper(cdktf.stringToTerraform)(this._systemPackages),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
       ebs_volume: cdktf.listMapper(opsworksCustomLayerEbsVolumeToTerraform)(this._ebsVolume),
     };

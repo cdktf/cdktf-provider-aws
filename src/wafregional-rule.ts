@@ -10,6 +10,7 @@ export interface WafregionalRuleConfig extends cdktf.TerraformMetaArguments {
   readonly metricName: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** predicate block */
   readonly predicate?: WafregionalRulePredicate[];
 }
@@ -51,6 +52,7 @@ export class WafregionalRule extends cdktf.TerraformResource {
     this._metricName = config.metricName;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._predicate = config.predicate;
   }
 
@@ -110,6 +112,22 @@ export class WafregionalRule extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // predicate - computed: false, optional: true, required: false
   private _predicate?: WafregionalRulePredicate[];
   public get predicate() {
@@ -135,6 +153,7 @@ export class WafregionalRule extends cdktf.TerraformResource {
       metric_name: cdktf.stringToTerraform(this._metricName),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       predicate: cdktf.listMapper(wafregionalRulePredicateToTerraform)(this._predicate),
     };
   }

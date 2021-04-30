@@ -19,6 +19,7 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   readonly roleArn: string;
   readonly securityConfiguration?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly timeout?: number;
   readonly workerType?: string;
   /** command block */
@@ -97,6 +98,7 @@ export class GlueJob extends cdktf.TerraformResource {
     this._roleArn = config.roleArn;
     this._securityConfiguration = config.securityConfiguration;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._timeout = config.timeout;
     this._workerType = config.workerType;
     this._command = config.command;
@@ -304,6 +306,22 @@ export class GlueJob extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // timeout - computed: false, optional: true, required: false
   private _timeout?: number;
   public get timeout() {
@@ -399,6 +417,7 @@ export class GlueJob extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       timeout: cdktf.numberToTerraform(this._timeout),
       worker_type: cdktf.stringToTerraform(this._workerType),
       command: cdktf.listMapper(glueJobCommandToTerraform)(this._command),

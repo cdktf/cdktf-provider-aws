@@ -10,6 +10,7 @@ export interface DbSnapshotConfig extends cdktf.TerraformMetaArguments {
   readonly dbInstanceIdentifier: string;
   readonly dbSnapshotIdentifier: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** timeouts block */
   readonly timeouts?: DbSnapshotTimeouts;
 }
@@ -47,6 +48,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
     this._dbInstanceIdentifier = config.dbInstanceIdentifier;
     this._dbSnapshotIdentifier = config.dbSnapshotIdentifier;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._timeouts = config.timeouts;
   }
 
@@ -181,6 +183,22 @@ export class DbSnapshot extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
@@ -211,6 +229,7 @@ export class DbSnapshot extends cdktf.TerraformResource {
       db_instance_identifier: cdktf.stringToTerraform(this._dbInstanceIdentifier),
       db_snapshot_identifier: cdktf.stringToTerraform(this._dbSnapshotIdentifier),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       timeouts: dbSnapshotTimeoutsToTerraform(this._timeouts),
     };
   }

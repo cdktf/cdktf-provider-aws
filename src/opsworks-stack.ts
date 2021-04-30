@@ -25,6 +25,7 @@ export interface OpsworksStackConfig extends cdktf.TerraformMetaArguments {
   readonly region: string;
   readonly serviceRoleArn: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly useCustomCookbooks?: boolean;
   readonly useOpsworksSecurityGroups?: boolean;
   readonly vpcId?: string;
@@ -90,6 +91,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
     this._region = config.region;
     this._serviceRoleArn = config.serviceRoleArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._useCustomCookbooks = config.useCustomCookbooks;
     this._useOpsworksSecurityGroups = config.useOpsworksSecurityGroups;
     this._vpcId = config.vpcId;
@@ -391,6 +393,22 @@ export class OpsworksStack extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // use_custom_cookbooks - computed: false, optional: true, required: false
   private _useCustomCookbooks?: boolean;
   public get useCustomCookbooks() {
@@ -479,6 +497,7 @@ export class OpsworksStack extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       use_custom_cookbooks: cdktf.booleanToTerraform(this._useCustomCookbooks),
       use_opsworks_security_groups: cdktf.booleanToTerraform(this._useOpsworksSecurityGroups),
       vpc_id: cdktf.stringToTerraform(this._vpcId),

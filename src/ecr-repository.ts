@@ -10,6 +10,7 @@ export interface EcrRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly imageTagMutability?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** encryption_configuration block */
   readonly encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[];
   /** image_scanning_configuration block */
@@ -75,6 +76,7 @@ export class EcrRepository extends cdktf.TerraformResource {
     this._imageTagMutability = config.imageTagMutability;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._encryptionConfiguration = config.encryptionConfiguration;
     this._imageScanningConfiguration = config.imageScanningConfiguration;
     this._timeouts = config.timeouts;
@@ -149,6 +151,22 @@ export class EcrRepository extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // encryption_configuration - computed: false, optional: true, required: false
   private _encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[];
   public get encryptionConfiguration() {
@@ -206,6 +224,7 @@ export class EcrRepository extends cdktf.TerraformResource {
       image_tag_mutability: cdktf.stringToTerraform(this._imageTagMutability),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       encryption_configuration: cdktf.listMapper(ecrRepositoryEncryptionConfigurationToTerraform)(this._encryptionConfiguration),
       image_scanning_configuration: cdktf.listMapper(ecrRepositoryImageScanningConfigurationToTerraform)(this._imageScanningConfiguration),
       timeouts: ecrRepositoryTimeoutsToTerraform(this._timeouts),

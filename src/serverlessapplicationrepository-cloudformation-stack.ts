@@ -13,6 +13,7 @@ export interface ServerlessapplicationrepositoryCloudformationStackConfig extend
   readonly parameters?: { [key: string]: string };
   readonly semanticVersion?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** timeouts block */
   readonly timeouts?: ServerlessapplicationrepositoryCloudformationStackTimeouts;
 }
@@ -57,6 +58,7 @@ export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.Te
     this._parameters = config.parameters;
     this._semanticVersion = config.semanticVersion;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._timeouts = config.timeouts;
   }
 
@@ -161,6 +163,22 @@ export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.Te
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: ServerlessapplicationrepositoryCloudformationStackTimeouts;
   public get timeouts() {
@@ -189,6 +207,7 @@ export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.Te
       parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
       semantic_version: cdktf.stringToTerraform(this._semanticVersion),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       timeouts: serverlessapplicationrepositoryCloudformationStackTimeoutsToTerraform(this._timeouts),
     };
   }

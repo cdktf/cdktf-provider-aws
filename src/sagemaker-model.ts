@@ -11,6 +11,7 @@ export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   readonly executionRoleArn: string;
   readonly name?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** container block */
   readonly container?: SagemakerModelContainer[];
   /** primary_container block */
@@ -121,6 +122,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
     this._executionRoleArn = config.executionRoleArn;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._container = config.container;
     this._primaryContainer = config.primaryContainer;
     this._vpcConfig = config.vpcConfig;
@@ -201,6 +203,22 @@ export class SagemakerModel extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // container - computed: false, optional: true, required: false
   private _container?: SagemakerModelContainer[];
   public get container() {
@@ -259,6 +277,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
       execution_role_arn: cdktf.stringToTerraform(this._executionRoleArn),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       container: cdktf.listMapper(sagemakerModelContainerToTerraform)(this._container),
       primary_container: cdktf.listMapper(sagemakerModelPrimaryContainerToTerraform)(this._primaryContainer),
       vpc_config: cdktf.listMapper(sagemakerModelVpcConfigToTerraform)(this._vpcConfig),

@@ -10,6 +10,7 @@ export interface GameliftGameSessionQueueConfig extends cdktf.TerraformMetaArgum
   readonly destinations?: string[];
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly timeoutInSeconds?: number;
   /** player_latency_policy block */
   readonly playerLatencyPolicy?: GameliftGameSessionQueuePlayerLatencyPolicy[];
@@ -50,6 +51,7 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
     this._destinations = config.destinations;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._timeoutInSeconds = config.timeoutInSeconds;
     this._playerLatencyPolicy = config.playerLatencyPolicy;
   }
@@ -113,6 +115,22 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // timeout_in_seconds - computed: false, optional: true, required: false
   private _timeoutInSeconds?: number;
   public get timeoutInSeconds() {
@@ -154,6 +172,7 @@ export class GameliftGameSessionQueue extends cdktf.TerraformResource {
       destinations: cdktf.listMapper(cdktf.stringToTerraform)(this._destinations),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       timeout_in_seconds: cdktf.numberToTerraform(this._timeoutInSeconds),
       player_latency_policy: cdktf.listMapper(gameliftGameSessionQueuePlayerLatencyPolicyToTerraform)(this._playerLatencyPolicy),
     };

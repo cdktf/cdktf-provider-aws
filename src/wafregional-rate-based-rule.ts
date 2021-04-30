@@ -12,6 +12,7 @@ export interface WafregionalRateBasedRuleConfig extends cdktf.TerraformMetaArgum
   readonly rateKey: string;
   readonly rateLimit: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** predicate block */
   readonly predicate?: WafregionalRateBasedRulePredicate[];
 }
@@ -55,6 +56,7 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
     this._rateKey = config.rateKey;
     this._rateLimit = config.rateLimit;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._predicate = config.predicate;
   }
 
@@ -140,6 +142,22 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // predicate - computed: false, optional: true, required: false
   private _predicate?: WafregionalRateBasedRulePredicate[];
   public get predicate() {
@@ -167,6 +185,7 @@ export class WafregionalRateBasedRule extends cdktf.TerraformResource {
       rate_key: cdktf.stringToTerraform(this._rateKey),
       rate_limit: cdktf.numberToTerraform(this._rateLimit),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       predicate: cdktf.listMapper(wafregionalRateBasedRulePredicateToTerraform)(this._predicate),
     };
   }

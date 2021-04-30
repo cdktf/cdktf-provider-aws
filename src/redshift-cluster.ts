@@ -38,6 +38,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   readonly snapshotClusterIdentifier?: string;
   readonly snapshotIdentifier?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly vpcSecurityGroupIds?: string[];
   /** logging block */
   readonly logging?: RedshiftClusterLogging[];
@@ -142,6 +143,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     this._snapshotClusterIdentifier = config.snapshotClusterIdentifier;
     this._snapshotIdentifier = config.snapshotIdentifier;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
     this._logging = config.logging;
     this._snapshotCopy = config.snapshotCopy;
@@ -657,6 +659,22 @@ export class RedshiftCluster extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
@@ -758,6 +776,7 @@ export class RedshiftCluster extends cdktf.TerraformResource {
       snapshot_cluster_identifier: cdktf.stringToTerraform(this._snapshotClusterIdentifier),
       snapshot_identifier: cdktf.stringToTerraform(this._snapshotIdentifier),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       logging: cdktf.listMapper(redshiftClusterLoggingToTerraform)(this._logging),
       snapshot_copy: cdktf.listMapper(redshiftClusterSnapshotCopyToTerraform)(this._snapshotCopy),

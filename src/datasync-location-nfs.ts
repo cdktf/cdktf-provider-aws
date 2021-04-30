@@ -10,6 +10,7 @@ export interface DatasyncLocationNfsConfig extends cdktf.TerraformMetaArguments 
   readonly serverHostname: string;
   readonly subdirectory: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** on_prem_config block */
   readonly onPremConfig: DatasyncLocationNfsOnPremConfig[];
 }
@@ -47,6 +48,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
     this._serverHostname = config.serverHostname;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._onPremConfig = config.onPremConfig;
   }
 
@@ -106,6 +108,22 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // uri - computed: true, optional: false, required: false
   public get uri() {
     return this.getStringAttribute('uri');
@@ -133,6 +151,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
       server_hostname: cdktf.stringToTerraform(this._serverHostname),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       on_prem_config: cdktf.listMapper(datasyncLocationNfsOnPremConfigToTerraform)(this._onPremConfig),
     };
   }

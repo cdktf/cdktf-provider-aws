@@ -15,6 +15,7 @@ export interface GlueMlTransformConfig extends cdktf.TerraformMetaArguments {
   readonly numberOfWorkers?: number;
   readonly roleArn: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly timeout?: number;
   readonly workerType?: string;
   /** input_record_tables block */
@@ -110,6 +111,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
     this._numberOfWorkers = config.numberOfWorkers;
     this._roleArn = config.roleArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._timeout = config.timeout;
     this._workerType = config.workerType;
     this._inputRecordTables = config.inputRecordTables;
@@ -262,6 +264,22 @@ export class GlueMlTransform extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // timeout - computed: false, optional: true, required: false
   private _timeout?: number;
   public get timeout() {
@@ -334,6 +352,7 @@ export class GlueMlTransform extends cdktf.TerraformResource {
       number_of_workers: cdktf.numberToTerraform(this._numberOfWorkers),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       timeout: cdktf.numberToTerraform(this._timeout),
       worker_type: cdktf.stringToTerraform(this._workerType),
       input_record_tables: cdktf.listMapper(glueMlTransformInputRecordTablesToTerraform)(this._inputRecordTables),

@@ -12,6 +12,7 @@ export interface GlueTriggerConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly schedule?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly type: string;
   readonly workflowName?: string;
   /** actions block */
@@ -125,6 +126,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
     this._name = config.name;
     this._schedule = config.schedule;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._workflowName = config.workflowName;
     this._actions = config.actions;
@@ -228,6 +230,22 @@ export class GlueTrigger extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
@@ -313,6 +331,7 @@ export class GlueTrigger extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       schedule: cdktf.stringToTerraform(this._schedule),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       workflow_name: cdktf.stringToTerraform(this._workflowName),
       actions: cdktf.listMapper(glueTriggerActionsToTerraform)(this._actions),

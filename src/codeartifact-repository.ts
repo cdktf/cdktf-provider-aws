@@ -12,6 +12,7 @@ export interface CodeartifactRepositoryConfig extends cdktf.TerraformMetaArgumen
   readonly domainOwner?: string;
   readonly repository: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** external_connections block */
   readonly externalConnections?: CodeartifactRepositoryExternalConnections[];
   /** upstream block */
@@ -64,6 +65,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
     this._domainOwner = config.domainOwner;
     this._repository = config.repository;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._externalConnections = config.externalConnections;
     this._upstream = config.upstream;
   }
@@ -161,6 +163,22 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // external_connections - computed: false, optional: true, required: false
   private _externalConnections?: CodeartifactRepositoryExternalConnections[];
   public get externalConnections() {
@@ -204,6 +222,7 @@ export class CodeartifactRepository extends cdktf.TerraformResource {
       domain_owner: cdktf.stringToTerraform(this._domainOwner),
       repository: cdktf.stringToTerraform(this._repository),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       external_connections: cdktf.listMapper(codeartifactRepositoryExternalConnectionsToTerraform)(this._externalConnections),
       upstream: cdktf.listMapper(codeartifactRepositoryUpstreamToTerraform)(this._upstream),
     };

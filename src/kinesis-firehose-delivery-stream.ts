@@ -11,6 +11,7 @@ export interface KinesisFirehoseDeliveryStreamConfig extends cdktf.TerraformMeta
   readonly destinationId?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly versionId?: string;
   /** elasticsearch_configuration block */
   readonly elasticsearchConfiguration?: KinesisFirehoseDeliveryStreamElasticsearchConfiguration[];
@@ -871,6 +872,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
     this._destinationId = config.destinationId;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._versionId = config.versionId;
     this._elasticsearchConfiguration = config.elasticsearchConfiguration;
     this._extendedS3Configuration = config.extendedS3Configuration;
@@ -952,6 +954,22 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // version_id - computed: true, optional: true, required: false
@@ -1108,6 +1126,7 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
       destination_id: cdktf.stringToTerraform(this._destinationId),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       version_id: cdktf.stringToTerraform(this._versionId),
       elasticsearch_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamElasticsearchConfigurationToTerraform)(this._elasticsearchConfiguration),
       extended_s3_configuration: cdktf.listMapper(kinesisFirehoseDeliveryStreamExtendedS3ConfigurationToTerraform)(this._extendedS3Configuration),

@@ -13,6 +13,7 @@ export interface OrganizationsAccountConfig extends cdktf.TerraformMetaArguments
   readonly parentId?: string;
   readonly roleName?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -40,6 +41,7 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
     this._parentId = config.parentId;
     this._roleName = config.roleName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -161,6 +163,22 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -173,6 +191,7 @@ export class OrganizationsAccount extends cdktf.TerraformResource {
       parent_id: cdktf.stringToTerraform(this._parentId),
       role_name: cdktf.stringToTerraform(this._roleName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

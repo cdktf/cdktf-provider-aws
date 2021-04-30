@@ -19,6 +19,7 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   readonly releaseVersion?: string;
   readonly subnetIds: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly version?: string;
   /** launch_template block */
   readonly launchTemplate?: EksNodeGroupLaunchTemplate[];
@@ -138,6 +139,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     this._releaseVersion = config.releaseVersion;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._version = config.version;
     this._launchTemplate = config.launchTemplate;
     this._remoteAccess = config.remoteAccess;
@@ -349,6 +351,22 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // version - computed: true, optional: true, required: false
   private _version?: string;
   public get version() {
@@ -444,6 +462,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       release_version: cdktf.stringToTerraform(this._releaseVersion),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       version: cdktf.stringToTerraform(this._version),
       launch_template: cdktf.listMapper(eksNodeGroupLaunchTemplateToTerraform)(this._launchTemplate),
       remote_access: cdktf.listMapper(eksNodeGroupRemoteAccessToTerraform)(this._remoteAccess),

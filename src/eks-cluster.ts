@@ -11,6 +11,7 @@ export interface EksClusterConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly roleArn: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly version?: string;
   /** encryption_config block */
   readonly encryptionConfig?: EksClusterEncryptionConfig[];
@@ -136,6 +137,7 @@ export class EksCluster extends cdktf.TerraformResource {
     this._name = config.name;
     this._roleArn = config.roleArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._version = config.version;
     this._encryptionConfig = config.encryptionConfig;
     this._kubernetesNetworkConfig = config.kubernetesNetworkConfig;
@@ -245,6 +247,22 @@ export class EksCluster extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // version - computed: true, optional: true, required: false
   private _version?: string;
   public get version() {
@@ -332,6 +350,7 @@ export class EksCluster extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       version: cdktf.stringToTerraform(this._version),
       encryption_config: cdktf.listMapper(eksClusterEncryptionConfigToTerraform)(this._encryptionConfig),
       kubernetes_network_config: cdktf.listMapper(eksClusterKubernetesNetworkConfigToTerraform)(this._kubernetesNetworkConfig),

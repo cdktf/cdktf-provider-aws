@@ -12,6 +12,7 @@ export interface AthenaWorkgroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly state?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** configuration block */
   readonly configuration?: AthenaWorkgroupConfiguration[];
 }
@@ -85,6 +86,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
     this._name = config.name;
     this._state = config.state;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._configuration = config.configuration;
   }
 
@@ -179,6 +181,22 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // configuration - computed: false, optional: true, required: false
   private _configuration?: AthenaWorkgroupConfiguration[];
   public get configuration() {
@@ -206,6 +224,7 @@ export class AthenaWorkgroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       state: cdktf.stringToTerraform(this._state),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       configuration: cdktf.listMapper(athenaWorkgroupConfigurationToTerraform)(this._configuration),
     };
   }

@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface EfsAccessPointConfig extends cdktf.TerraformMetaArguments {
   readonly fileSystemId: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** posix_user block */
   readonly posixUser?: EfsAccessPointPosixUser[];
   /** root_directory block */
@@ -80,6 +81,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
     });
     this._fileSystemId = config.fileSystemId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._posixUser = config.posixUser;
     this._rootDirectory = config.rootDirectory;
   }
@@ -137,6 +139,22 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // posix_user - computed: false, optional: true, required: false
   private _posixUser?: EfsAccessPointPosixUser[];
   public get posixUser() {
@@ -177,6 +195,7 @@ export class EfsAccessPoint extends cdktf.TerraformResource {
     return {
       file_system_id: cdktf.stringToTerraform(this._fileSystemId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       posix_user: cdktf.listMapper(efsAccessPointPosixUserToTerraform)(this._posixUser),
       root_directory: cdktf.listMapper(efsAccessPointRootDirectoryToTerraform)(this._rootDirectory),
     };

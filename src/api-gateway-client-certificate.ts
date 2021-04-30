@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface ApiGatewayClientCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -32,6 +33,7 @@ export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -95,6 +97,22 @@ export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -103,6 +121,7 @@ export class ApiGatewayClientCertificate extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

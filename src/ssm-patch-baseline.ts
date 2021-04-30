@@ -16,6 +16,7 @@ export interface SsmPatchBaselineConfig extends cdktf.TerraformMetaArguments {
   readonly rejectedPatches?: string[];
   readonly rejectedPatchesAction?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** approval_rule block */
   readonly approvalRule?: SsmPatchBaselineApprovalRule[];
   /** global_filter block */
@@ -113,6 +114,7 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
     this._rejectedPatches = config.rejectedPatches;
     this._rejectedPatchesAction = config.rejectedPatchesAction;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._approvalRule = config.approvalRule;
     this._globalFilter = config.globalFilter;
     this._source = config.source;
@@ -273,6 +275,22 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // approval_rule - computed: false, optional: true, required: false
   private _approvalRule?: SsmPatchBaselineApprovalRule[];
   public get approvalRule() {
@@ -336,6 +354,7 @@ export class SsmPatchBaseline extends cdktf.TerraformResource {
       rejected_patches: cdktf.listMapper(cdktf.stringToTerraform)(this._rejectedPatches),
       rejected_patches_action: cdktf.stringToTerraform(this._rejectedPatchesAction),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       approval_rule: cdktf.listMapper(ssmPatchBaselineApprovalRuleToTerraform)(this._approvalRule),
       global_filter: cdktf.listMapper(ssmPatchBaselineGlobalFilterToTerraform)(this._globalFilter),
       source: cdktf.listMapper(ssmPatchBaselineSourceToTerraform)(this._source),

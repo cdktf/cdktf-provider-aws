@@ -31,6 +31,7 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   readonly sourceDestCheck?: boolean;
   readonly subnetId?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly tenancy?: string;
   readonly userData?: string;
   readonly userDataBase64?: string;
@@ -233,6 +234,7 @@ export class Instance extends cdktf.TerraformResource {
     this._sourceDestCheck = config.sourceDestCheck;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._tenancy = config.tenancy;
     this._userData = config.userData;
     this._userDataBase64 = config.userDataBase64;
@@ -435,12 +437,12 @@ export class Instance extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // instance_initiated_shutdown_behavior - computed: false, optional: true, required: false
+  // instance_initiated_shutdown_behavior - computed: true, optional: true, required: false
   private _instanceInitiatedShutdownBehavior?: string;
   public get instanceInitiatedShutdownBehavior() {
     return this.getStringAttribute('instance_initiated_shutdown_behavior');
   }
-  public set instanceInitiatedShutdownBehavior(value: string ) {
+  public set instanceInitiatedShutdownBehavior(value: string) {
     this._instanceInitiatedShutdownBehavior = value;
   }
   public resetInstanceInitiatedShutdownBehavior() {
@@ -673,6 +675,22 @@ export class Instance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // tenancy - computed: true, optional: true, required: false
@@ -913,6 +931,7 @@ export class Instance extends cdktf.TerraformResource {
       source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       tenancy: cdktf.stringToTerraform(this._tenancy),
       user_data: cdktf.stringToTerraform(this._userData),
       user_data_base64: cdktf.stringToTerraform(this._userDataBase64),

@@ -15,6 +15,7 @@ export interface StoragegatewayStoredIscsiVolumeConfig extends cdktf.TerraformMe
   readonly preserveExistingData: boolean;
   readonly snapshotId?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly targetName: string;
 }
 
@@ -45,6 +46,7 @@ export class StoragegatewayStoredIscsiVolume extends cdktf.TerraformResource {
     this._preserveExistingData = config.preserveExistingData;
     this._snapshotId = config.snapshotId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._targetName = config.targetName;
   }
 
@@ -193,6 +195,22 @@ export class StoragegatewayStoredIscsiVolume extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // target_arn - computed: true, optional: false, required: false
   public get targetArn() {
     return this.getStringAttribute('target_arn');
@@ -250,6 +268,7 @@ export class StoragegatewayStoredIscsiVolume extends cdktf.TerraformResource {
       preserve_existing_data: cdktf.booleanToTerraform(this._preserveExistingData),
       snapshot_id: cdktf.stringToTerraform(this._snapshotId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       target_name: cdktf.stringToTerraform(this._targetName),
     };
   }

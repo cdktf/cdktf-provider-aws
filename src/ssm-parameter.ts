@@ -14,6 +14,7 @@ export interface SsmParameterConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly overwrite?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly tier?: string;
   readonly type: string;
   readonly value: string;
@@ -45,6 +46,7 @@ export class SsmParameter extends cdktf.TerraformResource {
     this._name = config.name;
     this._overwrite = config.overwrite;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._tier = config.tier;
     this._type = config.type;
     this._value = config.value;
@@ -173,6 +175,22 @@ export class SsmParameter extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // tier - computed: false, optional: true, required: false
   private _tier?: string;
   public get tier() {
@@ -233,6 +251,7 @@ export class SsmParameter extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       overwrite: cdktf.booleanToTerraform(this._overwrite),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       tier: cdktf.stringToTerraform(this._tier),
       type: cdktf.stringToTerraform(this._type),
       value: cdktf.stringToTerraform(this._value),

@@ -11,6 +11,7 @@ export interface SagemakerUserProfileConfig extends cdktf.TerraformMetaArguments
   readonly singleSignOnUserIdentifier?: string;
   readonly singleSignOnUserValue?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly userProfileName: string;
   /** user_settings block */
   readonly userSettings?: SagemakerUserProfileUserSettings[];
@@ -172,6 +173,7 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
     this._singleSignOnUserIdentifier = config.singleSignOnUserIdentifier;
     this._singleSignOnUserValue = config.singleSignOnUserValue;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._userProfileName = config.userProfileName;
     this._userSettings = config.userSettings;
   }
@@ -256,6 +258,22 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // user_profile_name - computed: false, optional: false, required: true
   private _userProfileName: string;
   public get userProfileName() {
@@ -295,6 +313,7 @@ export class SagemakerUserProfile extends cdktf.TerraformResource {
       single_sign_on_user_identifier: cdktf.stringToTerraform(this._singleSignOnUserIdentifier),
       single_sign_on_user_value: cdktf.stringToTerraform(this._singleSignOnUserValue),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       user_profile_name: cdktf.stringToTerraform(this._userProfileName),
       user_settings: cdktf.listMapper(sagemakerUserProfileUserSettingsToTerraform)(this._userSettings),
     };

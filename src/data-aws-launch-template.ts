@@ -268,6 +268,11 @@ export class DataAwsLaunchTemplatePlacement extends cdktf.ComplexComputedList {
     return this.getStringAttribute('host_id');
   }
 
+  // host_resource_group_arn - computed: true, optional: false, required: false
+  public get hostResourceGroupArn() {
+    return this.getStringAttribute('host_resource_group_arn');
+  }
+
   // partition_number - computed: true, optional: false, required: false
   public get partitionNumber() {
     return this.getNumberAttribute('partition_number');

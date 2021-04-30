@@ -13,6 +13,7 @@ export interface IotTopicRuleConfig extends cdktf.TerraformMetaArguments {
   readonly sql: string;
   readonly sqlVersion: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** cloudwatch_alarm block */
   readonly cloudwatchAlarm?: IotTopicRuleCloudwatchAlarm[];
   /** cloudwatch_metric block */
@@ -636,6 +637,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
     this._sql = config.sql;
     this._sqlVersion = config.sqlVersion;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._cloudwatchAlarm = config.cloudwatchAlarm;
     this._cloudwatchMetric = config.cloudwatchMetric;
     this._dynamodb = config.dynamodb;
@@ -750,6 +752,22 @@ export class IotTopicRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // cloudwatch_alarm - computed: false, optional: true, required: false
@@ -1020,6 +1038,7 @@ export class IotTopicRule extends cdktf.TerraformResource {
       sql: cdktf.stringToTerraform(this._sql),
       sql_version: cdktf.stringToTerraform(this._sqlVersion),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       cloudwatch_alarm: cdktf.listMapper(iotTopicRuleCloudwatchAlarmToTerraform)(this._cloudwatchAlarm),
       cloudwatch_metric: cdktf.listMapper(iotTopicRuleCloudwatchMetricToTerraform)(this._cloudwatchMetric),
       dynamodb: cdktf.listMapper(iotTopicRuleDynamodbToTerraform)(this._dynamodb),

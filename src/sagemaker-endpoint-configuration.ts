@@ -10,6 +10,7 @@ export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMet
   readonly kmsKeyArn?: string;
   readonly name?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** data_capture_config block */
   readonly dataCaptureConfig?: SagemakerEndpointConfigurationDataCaptureConfig[];
   /** production_variants block */
@@ -106,6 +107,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     this._kmsKeyArn = config.kmsKeyArn;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._dataCaptureConfig = config.dataCaptureConfig;
     this._productionVariants = config.productionVariants;
   }
@@ -172,6 +174,22 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // data_capture_config - computed: false, optional: true, required: false
   private _dataCaptureConfig?: SagemakerEndpointConfigurationDataCaptureConfig[];
   public get dataCaptureConfig() {
@@ -210,6 +228,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       kms_key_arn: cdktf.stringToTerraform(this._kmsKeyArn),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       data_capture_config: cdktf.listMapper(sagemakerEndpointConfigurationDataCaptureConfigToTerraform)(this._dataCaptureConfig),
       production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform)(this._productionVariants),
     };

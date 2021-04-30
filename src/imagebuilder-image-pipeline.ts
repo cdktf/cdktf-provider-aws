@@ -15,6 +15,7 @@ export interface ImagebuilderImagePipelineConfig extends cdktf.TerraformMetaArgu
   readonly name: string;
   readonly status?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** image_tests_configuration block */
   readonly imageTestsConfiguration?: ImagebuilderImagePipelineImageTestsConfiguration[];
   /** schedule block */
@@ -74,6 +75,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
     this._name = config.name;
     this._status = config.status;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._imageTestsConfiguration = config.imageTestsConfiguration;
     this._schedule = config.schedule;
   }
@@ -236,6 +238,22 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // image_tests_configuration - computed: false, optional: true, required: false
   private _imageTestsConfiguration?: ImagebuilderImagePipelineImageTestsConfiguration[];
   public get imageTestsConfiguration() {
@@ -282,6 +300,7 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       image_tests_configuration: cdktf.listMapper(imagebuilderImagePipelineImageTestsConfigurationToTerraform)(this._imageTestsConfiguration),
       schedule: cdktf.listMapper(imagebuilderImagePipelineScheduleToTerraform)(this._schedule),
     };

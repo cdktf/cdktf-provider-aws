@@ -11,6 +11,7 @@ export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaA
   readonly ipAddressType?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** attributes block */
   readonly attributes?: GlobalacceleratorAcceleratorAttributes[];
   /** timeouts block */
@@ -80,6 +81,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
     this._ipAddressType = config.ipAddressType;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._attributes = config.attributes;
     this._timeouts = config.timeouts;
   }
@@ -169,6 +171,22 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // attributes - computed: false, optional: true, required: false
   private _attributes?: GlobalacceleratorAcceleratorAttributes[];
   public get attributes() {
@@ -211,6 +229,7 @@ export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
       ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       attributes: cdktf.listMapper(globalacceleratorAcceleratorAttributesToTerraform)(this._attributes),
       timeouts: globalacceleratorAcceleratorTimeoutsToTerraform(this._timeouts),
     };

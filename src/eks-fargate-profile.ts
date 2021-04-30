@@ -12,6 +12,7 @@ export interface EksFargateProfileConfig extends cdktf.TerraformMetaArguments {
   readonly podExecutionRoleArn: string;
   readonly subnetIds?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** selector block */
   readonly selector: EksFargateProfileSelector[];
   /** timeouts block */
@@ -68,6 +69,7 @@ export class EksFargateProfile extends cdktf.TerraformResource {
     this._podExecutionRoleArn = config.podExecutionRoleArn;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._selector = config.selector;
     this._timeouts = config.timeouts;
   }
@@ -162,6 +164,22 @@ export class EksFargateProfile extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // selector - computed: false, optional: false, required: true
   private _selector: EksFargateProfileSelector[];
   public get selector() {
@@ -202,6 +220,7 @@ export class EksFargateProfile extends cdktf.TerraformResource {
       pod_execution_role_arn: cdktf.stringToTerraform(this._podExecutionRoleArn),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       selector: cdktf.listMapper(eksFargateProfileSelectorToTerraform)(this._selector),
       timeouts: eksFargateProfileTimeoutsToTerraform(this._timeouts),
     };

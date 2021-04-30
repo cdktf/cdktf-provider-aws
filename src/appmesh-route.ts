@@ -11,6 +11,7 @@ export interface AppmeshRouteConfig extends cdktf.TerraformMetaArguments {
   readonly meshOwner?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly virtualRouterName: string;
   /** spec block */
   readonly spec: AppmeshRouteSpec[];
@@ -684,6 +685,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
     this._meshOwner = config.meshOwner;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._virtualRouterName = config.virtualRouterName;
     this._spec = config.spec;
   }
@@ -775,6 +777,22 @@ export class AppmeshRoute extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // virtual_router_name - computed: false, optional: false, required: true
   private _virtualRouterName: string;
   public get virtualRouterName() {
@@ -811,6 +829,7 @@ export class AppmeshRoute extends cdktf.TerraformResource {
       mesh_owner: cdktf.stringToTerraform(this._meshOwner),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       virtual_router_name: cdktf.stringToTerraform(this._virtualRouterName),
       spec: cdktf.listMapper(appmeshRouteSpecToTerraform)(this._spec),
     };

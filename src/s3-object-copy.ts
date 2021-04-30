@@ -43,6 +43,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   readonly storageClass?: string;
   readonly taggingDirective?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly websiteRedirect?: string;
   /** grant block */
   readonly grant?: S3ObjectCopyGrant[];
@@ -122,6 +123,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
     this._storageClass = config.storageClass;
     this._taggingDirective = config.taggingDirective;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._websiteRedirect = config.websiteRedirect;
     this._grant = config.grant;
   }
@@ -727,6 +729,22 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // version_id - computed: true, optional: false, required: false
   public get versionId() {
     return this.getStringAttribute('version_id');
@@ -806,6 +824,7 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
       storage_class: cdktf.stringToTerraform(this._storageClass),
       tagging_directive: cdktf.stringToTerraform(this._taggingDirective),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       website_redirect: cdktf.stringToTerraform(this._websiteRedirect),
       grant: cdktf.listMapper(s3ObjectCopyGrantToTerraform)(this._grant),
     };

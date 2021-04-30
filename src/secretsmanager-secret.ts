@@ -15,6 +15,7 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   readonly recoveryWindowInDays?: number;
   readonly rotationLambdaArn?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** rotation_rules block */
   readonly rotationRules?: SecretsmanagerSecretRotationRules[];
 }
@@ -57,6 +58,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
     this._recoveryWindowInDays = config.recoveryWindowInDays;
     this._rotationLambdaArn = config.rotationLambdaArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._rotationRules = config.rotationRules;
   }
 
@@ -207,6 +209,22 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // rotation_rules - computed: false, optional: true, required: false
   private _rotationRules?: SecretsmanagerSecretRotationRules[];
   public get rotationRules() {
@@ -237,6 +255,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
       recovery_window_in_days: cdktf.numberToTerraform(this._recoveryWindowInDays),
       rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       rotation_rules: cdktf.listMapper(secretsmanagerSecretRotationRulesToTerraform)(this._rotationRules),
     };
   }

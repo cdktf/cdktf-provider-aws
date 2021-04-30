@@ -13,6 +13,7 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   readonly serverCertificateArn: string;
   readonly splitTunnel?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly transportProtocol?: string;
   /** authentication_options block */
   readonly authenticationOptions: Ec2ClientVpnEndpointAuthenticationOptions[];
@@ -77,6 +78,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
     this._serverCertificateArn = config.serverCertificateArn;
     this._splitTunnel = config.splitTunnel;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._transportProtocol = config.transportProtocol;
     this._authenticationOptions = config.authenticationOptions;
     this._connectionLogOptions = config.connectionLogOptions;
@@ -196,6 +198,22 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // transport_protocol - computed: false, optional: true, required: false
   private _transportProtocol?: string;
   public get transportProtocol() {
@@ -250,6 +268,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       server_certificate_arn: cdktf.stringToTerraform(this._serverCertificateArn),
       split_tunnel: cdktf.booleanToTerraform(this._splitTunnel),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       transport_protocol: cdktf.stringToTerraform(this._transportProtocol),
       authentication_options: cdktf.listMapper(ec2ClientVpnEndpointAuthenticationOptionsToTerraform)(this._authenticationOptions),
       connection_log_options: cdktf.listMapper(ec2ClientVpnEndpointConnectionLogOptionsToTerraform)(this._connectionLogOptions),

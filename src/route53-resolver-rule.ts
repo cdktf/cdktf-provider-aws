@@ -12,6 +12,7 @@ export interface Route53ResolverRuleConfig extends cdktf.TerraformMetaArguments 
   readonly resolverEndpointId?: string;
   readonly ruleType: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** target_ip block */
   readonly targetIp?: Route53ResolverRuleTargetIp[];
   /** timeouts block */
@@ -70,6 +71,7 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
     this._resolverEndpointId = config.resolverEndpointId;
     this._ruleType = config.ruleType;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._targetIp = config.targetIp;
     this._timeouts = config.timeouts;
   }
@@ -172,6 +174,22 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // target_ip - computed: false, optional: true, required: false
   private _targetIp?: Route53ResolverRuleTargetIp[];
   public get targetIp() {
@@ -215,6 +233,7 @@ export class Route53ResolverRule extends cdktf.TerraformResource {
       resolver_endpoint_id: cdktf.stringToTerraform(this._resolverEndpointId),
       rule_type: cdktf.stringToTerraform(this._ruleType),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       target_ip: cdktf.listMapper(route53ResolverRuleTargetIpToTerraform)(this._targetIp),
       timeouts: route53ResolverRuleTimeoutsToTerraform(this._timeouts),
     };

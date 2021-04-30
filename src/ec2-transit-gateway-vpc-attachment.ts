@@ -12,6 +12,7 @@ export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMet
   readonly ipv6Support?: string;
   readonly subnetIds: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly transitGatewayDefaultRouteTableAssociation?: boolean;
   readonly transitGatewayDefaultRouteTablePropagation?: boolean;
   readonly transitGatewayId: string;
@@ -42,6 +43,7 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
     this._ipv6Support = config.ipv6Support;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._transitGatewayDefaultRouteTableAssociation = config.transitGatewayDefaultRouteTableAssociation;
     this._transitGatewayDefaultRouteTablePropagation = config.transitGatewayDefaultRouteTablePropagation;
     this._transitGatewayId = config.transitGatewayId;
@@ -134,6 +136,22 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // transit_gateway_default_route_table_association - computed: false, optional: true, required: false
   private _transitGatewayDefaultRouteTableAssociation?: boolean;
   public get transitGatewayDefaultRouteTableAssociation() {
@@ -208,6 +226,7 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
       ipv6_support: cdktf.stringToTerraform(this._ipv6Support),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       transit_gateway_default_route_table_association: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTableAssociation),
       transit_gateway_default_route_table_propagation: cdktf.booleanToTerraform(this._transitGatewayDefaultRouteTablePropagation),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),

@@ -13,6 +13,7 @@ export interface RedshiftSnapshotScheduleConfig extends cdktf.TerraformMetaArgum
   readonly identifier?: string;
   readonly identifierPrefix?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -40,6 +41,7 @@ export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
     this._identifier = config.identifier;
     this._identifierPrefix = config.identifierPrefix;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -149,6 +151,22 @@ export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -161,6 +179,7 @@ export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
       identifier: cdktf.stringToTerraform(this._identifier),
       identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

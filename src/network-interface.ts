@@ -17,6 +17,7 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   readonly sourceDestCheck?: boolean;
   readonly subnetId: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** attachment block */
   readonly attachment?: NetworkInterfaceAttachment[];
 }
@@ -63,6 +64,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
     this._sourceDestCheck = config.sourceDestCheck;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._attachment = config.attachment;
   }
 
@@ -247,6 +249,22 @@ export class NetworkInterface extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // attachment - computed: false, optional: true, required: false
   private _attachment?: NetworkInterfaceAttachment[];
   public get attachment() {
@@ -279,6 +297,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
       source_dest_check: cdktf.booleanToTerraform(this._sourceDestCheck),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       attachment: cdktf.listMapper(networkInterfaceAttachmentToTerraform)(this._attachment),
     };
   }

@@ -11,6 +11,7 @@ export interface SagemakerAppConfig extends cdktf.TerraformMetaArguments {
   readonly appType: string;
   readonly domainId: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly userProfileName: string;
   /** resource_spec block */
   readonly resourceSpec?: SagemakerAppResourceSpec[];
@@ -52,6 +53,7 @@ export class SagemakerApp extends cdktf.TerraformResource {
     this._appType = config.appType;
     this._domainId = config.domainId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._userProfileName = config.userProfileName;
     this._resourceSpec = config.resourceSpec;
   }
@@ -125,6 +127,22 @@ export class SagemakerApp extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // user_profile_name - computed: false, optional: false, required: true
   private _userProfileName: string;
   public get userProfileName() {
@@ -164,6 +182,7 @@ export class SagemakerApp extends cdktf.TerraformResource {
       app_type: cdktf.stringToTerraform(this._appType),
       domain_id: cdktf.stringToTerraform(this._domainId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       user_profile_name: cdktf.stringToTerraform(this._userProfileName),
       resource_spec: cdktf.listMapper(sagemakerAppResourceSpecToTerraform)(this._resourceSpec),
     };

@@ -10,6 +10,7 @@ export interface AcmpcaCertificateAuthorityConfig extends cdktf.TerraformMetaArg
   readonly enabled?: boolean;
   readonly permanentDeletionTimeInDays?: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly type?: string;
   /** certificate_authority_configuration block */
   readonly certificateAuthorityConfiguration: AcmpcaCertificateAuthorityCertificateAuthorityConfiguration[];
@@ -132,6 +133,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
     this._enabled = config.enabled;
     this._permanentDeletionTimeInDays = config.permanentDeletionTimeInDays;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._certificateAuthorityConfiguration = config.certificateAuthorityConfiguration;
     this._revocationConfiguration = config.revocationConfiguration;
@@ -235,6 +237,22 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // type - computed: false, optional: true, required: false
   private _type?: string;
   public get type() {
@@ -305,6 +323,7 @@ export class AcmpcaCertificateAuthority extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       permanent_deletion_time_in_days: cdktf.numberToTerraform(this._permanentDeletionTimeInDays),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       certificate_authority_configuration: cdktf.listMapper(acmpcaCertificateAuthorityCertificateAuthorityConfigurationToTerraform)(this._certificateAuthorityConfiguration),
       revocation_configuration: cdktf.listMapper(acmpcaCertificateAuthorityRevocationConfigurationToTerraform)(this._revocationConfiguration),

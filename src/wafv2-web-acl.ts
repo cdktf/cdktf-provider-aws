@@ -11,6 +11,7 @@ export interface Wafv2WebAclConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly scope: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** default_action block */
   readonly defaultAction: Wafv2WebAclDefaultAction[];
   /** rule block */
@@ -39279,6 +39280,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
     this._name = config.name;
     this._scope = config.scope;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._defaultAction = config.defaultAction;
     this._rule = config.rule;
     this._visibilityConfig = config.visibilityConfig;
@@ -39366,6 +39368,22 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // default_action - computed: false, optional: false, required: true
   private _defaultAction: Wafv2WebAclDefaultAction[];
   public get defaultAction() {
@@ -39418,6 +39436,7 @@ export class Wafv2WebAcl extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       scope: cdktf.stringToTerraform(this._scope),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       default_action: cdktf.listMapper(wafv2WebAclDefaultActionToTerraform)(this._defaultAction),
       rule: cdktf.listMapper(wafv2WebAclRuleToTerraform)(this._rule),
       visibility_config: cdktf.listMapper(wafv2WebAclVisibilityConfigToTerraform)(this._visibilityConfig),

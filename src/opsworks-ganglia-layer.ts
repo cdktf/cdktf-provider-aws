@@ -27,6 +27,7 @@ export interface OpsworksGangliaLayerConfig extends cdktf.TerraformMetaArguments
   readonly stackId: string;
   readonly systemPackages?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly url?: string;
   readonly useEbsOptimizedInstances?: boolean;
   readonly username?: string;
@@ -96,6 +97,7 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
     this._stackId = config.stackId;
     this._systemPackages = config.systemPackages;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._url = config.url;
     this._useEbsOptimizedInstances = config.useEbsOptimizedInstances;
     this._username = config.username;
@@ -430,6 +432,22 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // url - computed: false, optional: true, required: false
   private _url?: string;
   public get url() {
@@ -520,6 +538,7 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
       stack_id: cdktf.stringToTerraform(this._stackId),
       system_packages: cdktf.listMapper(cdktf.stringToTerraform)(this._systemPackages),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       url: cdktf.stringToTerraform(this._url),
       use_ebs_optimized_instances: cdktf.booleanToTerraform(this._useEbsOptimizedInstances),
       username: cdktf.stringToTerraform(this._username),

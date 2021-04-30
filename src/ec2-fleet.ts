@@ -10,6 +10,7 @@ export interface Ec2FleetConfig extends cdktf.TerraformMetaArguments {
   readonly excessCapacityTerminationPolicy?: string;
   readonly replaceUnhealthyInstances?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly terminateInstances?: boolean;
   readonly terminateInstancesWithExpiration?: boolean;
   readonly type?: string;
@@ -182,6 +183,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
     this._excessCapacityTerminationPolicy = config.excessCapacityTerminationPolicy;
     this._replaceUnhealthyInstances = config.replaceUnhealthyInstances;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._terminateInstances = config.terminateInstances;
     this._terminateInstancesWithExpiration = config.terminateInstancesWithExpiration;
     this._type = config.type;
@@ -247,6 +249,22 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // terminate_instances - computed: false, optional: true, required: false
@@ -380,6 +398,7 @@ export class Ec2Fleet extends cdktf.TerraformResource {
       excess_capacity_termination_policy: cdktf.stringToTerraform(this._excessCapacityTerminationPolicy),
       replace_unhealthy_instances: cdktf.booleanToTerraform(this._replaceUnhealthyInstances),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       terminate_instances: cdktf.booleanToTerraform(this._terminateInstances),
       terminate_instances_with_expiration: cdktf.booleanToTerraform(this._terminateInstancesWithExpiration),
       type: cdktf.stringToTerraform(this._type),

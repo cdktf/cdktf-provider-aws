@@ -22,6 +22,7 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   readonly propagateTags?: string;
   readonly schedulingStrategy?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly taskDefinition?: string;
   readonly waitForSteadyState?: boolean;
   /** capacity_provider_strategy block */
@@ -203,6 +204,7 @@ export class EcsService extends cdktf.TerraformResource {
     this._propagateTags = config.propagateTags;
     this._schedulingStrategy = config.schedulingStrategy;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._taskDefinition = config.taskDefinition;
     this._waitForSteadyState = config.waitForSteadyState;
     this._capacityProviderStrategy = config.capacityProviderStrategy;
@@ -462,6 +464,22 @@ export class EcsService extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // task_definition - computed: false, optional: true, required: false
   private _taskDefinition?: string;
   public get taskDefinition() {
@@ -659,6 +677,7 @@ export class EcsService extends cdktf.TerraformResource {
       propagate_tags: cdktf.stringToTerraform(this._propagateTags),
       scheduling_strategy: cdktf.stringToTerraform(this._schedulingStrategy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       task_definition: cdktf.stringToTerraform(this._taskDefinition),
       wait_for_steady_state: cdktf.booleanToTerraform(this._waitForSteadyState),
       capacity_provider_strategy: cdktf.listMapper(ecsServiceCapacityProviderStrategyToTerraform)(this._capacityProviderStrategy),

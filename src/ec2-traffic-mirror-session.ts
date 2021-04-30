@@ -12,6 +12,7 @@ export interface Ec2TrafficMirrorSessionConfig extends cdktf.TerraformMetaArgume
   readonly packetLength?: number;
   readonly sessionNumber: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly trafficMirrorFilterId: string;
   readonly trafficMirrorTargetId: string;
   readonly virtualNetworkId?: number;
@@ -41,6 +42,7 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
     this._packetLength = config.packetLength;
     this._sessionNumber = config.sessionNumber;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._trafficMirrorFilterId = config.trafficMirrorFilterId;
     this._trafficMirrorTargetId = config.trafficMirrorTargetId;
     this._virtualNetworkId = config.virtualNetworkId;
@@ -139,6 +141,22 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // traffic_mirror_filter_id - computed: false, optional: false, required: true
   private _trafficMirrorFilterId: string;
   public get trafficMirrorFilterId() {
@@ -192,6 +210,7 @@ export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
       packet_length: cdktf.numberToTerraform(this._packetLength),
       session_number: cdktf.numberToTerraform(this._sessionNumber),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       traffic_mirror_filter_id: cdktf.stringToTerraform(this._trafficMirrorFilterId),
       traffic_mirror_target_id: cdktf.stringToTerraform(this._trafficMirrorTargetId),
       virtual_network_id: cdktf.numberToTerraform(this._virtualNetworkId),

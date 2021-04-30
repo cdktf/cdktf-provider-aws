@@ -13,6 +13,7 @@ export interface IamUserConfig extends cdktf.TerraformMetaArguments {
   readonly path?: string;
   readonly permissionsBoundary?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -39,6 +40,7 @@ export class IamUser extends cdktf.TerraformResource {
     this._path = config.path;
     this._permissionsBoundary = config.permissionsBoundary;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -132,6 +134,22 @@ export class IamUser extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // unique_id - computed: true, optional: false, required: false
   public get uniqueId() {
     return this.getStringAttribute('unique_id');
@@ -148,6 +166,7 @@ export class IamUser extends cdktf.TerraformResource {
       path: cdktf.stringToTerraform(this._path),
       permissions_boundary: cdktf.stringToTerraform(this._permissionsBoundary),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

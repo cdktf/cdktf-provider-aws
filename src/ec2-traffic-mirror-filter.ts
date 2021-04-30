@@ -10,6 +10,7 @@ export interface Ec2TrafficMirrorFilterConfig extends cdktf.TerraformMetaArgumen
   readonly description?: string;
   readonly networkServices?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -34,6 +35,7 @@ export class Ec2TrafficMirrorFilter extends cdktf.TerraformResource {
     this._description = config.description;
     this._networkServices = config.networkServices;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -98,6 +100,22 @@ export class Ec2TrafficMirrorFilter extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -107,6 +125,7 @@ export class Ec2TrafficMirrorFilter extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       network_services: cdktf.listMapper(cdktf.stringToTerraform)(this._networkServices),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

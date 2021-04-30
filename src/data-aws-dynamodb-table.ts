@@ -92,6 +92,11 @@ export class DataAwsDynamodbTablePointInTimeRecovery extends cdktf.ComplexComput
 }
 export class DataAwsDynamodbTableReplica extends cdktf.ComplexComputedList {
 
+  // kms_key_arn - computed: true, optional: false, required: false
+  public get kmsKeyArn() {
+    return this.getStringAttribute('kms_key_arn');
+  }
+
   // region_name - computed: true, optional: false, required: false
   public get regionName() {
     return this.getStringAttribute('region_name');

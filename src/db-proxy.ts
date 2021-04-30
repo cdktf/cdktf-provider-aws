@@ -14,6 +14,7 @@ export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
   readonly requireTls?: boolean;
   readonly roleArn: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly vpcSecurityGroupIds?: string[];
   readonly vpcSubnetIds: string[];
   /** auth block */
@@ -80,6 +81,7 @@ export class DbProxy extends cdktf.TerraformResource {
     this._requireTls = config.requireTls;
     this._roleArn = config.roleArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
     this._vpcSubnetIds = config.vpcSubnetIds;
     this._auth = config.auth;
@@ -208,6 +210,22 @@ export class DbProxy extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
@@ -279,6 +297,7 @@ export class DbProxy extends cdktf.TerraformResource {
       require_tls: cdktf.booleanToTerraform(this._requireTls),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       vpc_subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSubnetIds),
       auth: cdktf.listMapper(dbProxyAuthToTerraform)(this._auth),

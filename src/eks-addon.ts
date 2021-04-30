@@ -13,6 +13,7 @@ export interface EksAddonConfig extends cdktf.TerraformMetaArguments {
   readonly resolveConflicts?: string;
   readonly serviceAccountRoleArn?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -40,6 +41,7 @@ export class EksAddon extends cdktf.TerraformResource {
     this._resolveConflicts = config.resolveConflicts;
     this._serviceAccountRoleArn = config.serviceAccountRoleArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -140,12 +142,12 @@ export class EksAddon extends cdktf.TerraformResource {
     return this._serviceAccountRoleArn
   }
 
-  // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } ) {
     this._tags = value;
   }
   public resetTags() {
@@ -154,6 +156,22 @@ export class EksAddon extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // =========
@@ -168,6 +186,7 @@ export class EksAddon extends cdktf.TerraformResource {
       resolve_conflicts: cdktf.stringToTerraform(this._resolveConflicts),
       service_account_role_arn: cdktf.stringToTerraform(this._serviceAccountRoleArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

@@ -20,6 +20,7 @@ export interface DmsEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly serviceAccessRole?: string;
   readonly sslMode?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly username?: string;
   /** elasticsearch_settings block */
   readonly elasticsearchSettings?: DmsEndpointElasticsearchSettings[];
@@ -156,6 +157,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
     this._serviceAccessRole = config.serviceAccessRole;
     this._sslMode = config.sslMode;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._username = config.username;
     this._elasticsearchSettings = config.elasticsearchSettings;
     this._kafkaSettings = config.kafkaSettings;
@@ -377,6 +379,22 @@ export class DmsEndpoint extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // username - computed: false, optional: true, required: false
   private _username?: string;
   public get username() {
@@ -492,6 +510,7 @@ export class DmsEndpoint extends cdktf.TerraformResource {
       service_access_role: cdktf.stringToTerraform(this._serviceAccessRole),
       ssl_mode: cdktf.stringToTerraform(this._sslMode),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       username: cdktf.stringToTerraform(this._username),
       elasticsearch_settings: cdktf.listMapper(dmsEndpointElasticsearchSettingsToTerraform)(this._elasticsearchSettings),
       kafka_settings: cdktf.listMapper(dmsEndpointKafkaSettingsToTerraform)(this._kafkaSettings),

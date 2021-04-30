@@ -19,6 +19,7 @@ export interface SagemakerNotebookInstanceConfig extends cdktf.TerraformMetaArgu
   readonly securityGroups?: string[];
   readonly subnetId?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly volumeSize?: number;
 }
 
@@ -53,6 +54,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
     this._securityGroups = config.securityGroups;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._volumeSize = config.volumeSize;
   }
 
@@ -258,6 +260,22 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
@@ -297,6 +315,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       volume_size: cdktf.numberToTerraform(this._volumeSize),
     };
   }

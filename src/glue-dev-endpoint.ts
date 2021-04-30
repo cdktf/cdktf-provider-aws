@@ -21,6 +21,7 @@ export interface GlueDevEndpointConfig extends cdktf.TerraformMetaArguments {
   readonly securityGroupIds?: string[];
   readonly subnetId?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly workerType?: string;
 }
 
@@ -57,6 +58,7 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
     this._securityGroupIds = config.securityGroupIds;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._workerType = config.workerType;
   }
 
@@ -317,6 +319,22 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
@@ -368,6 +386,7 @@ export class GlueDevEndpoint extends cdktf.TerraformResource {
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       worker_type: cdktf.stringToTerraform(this._workerType),
     };
   }

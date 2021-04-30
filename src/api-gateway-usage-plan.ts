@@ -11,6 +11,7 @@ export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments 
   readonly name: string;
   readonly productCode?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** api_stages block */
   readonly apiStages?: ApiGatewayUsagePlanApiStages[];
   /** quota_settings block */
@@ -83,6 +84,7 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
     this._name = config.name;
     this._productCode = config.productCode;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._apiStages = config.apiStages;
     this._quotaSettings = config.quotaSettings;
     this._throttleSettings = config.throttleSettings;
@@ -163,6 +165,22 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // api_stages - computed: false, optional: true, required: false
   private _apiStages?: ApiGatewayUsagePlanApiStages[];
   public get apiStages() {
@@ -221,6 +239,7 @@ export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       product_code: cdktf.stringToTerraform(this._productCode),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       api_stages: cdktf.listMapper(apiGatewayUsagePlanApiStagesToTerraform)(this._apiStages),
       quota_settings: cdktf.listMapper(apiGatewayUsagePlanQuotaSettingsToTerraform)(this._quotaSettings),
       throttle_settings: cdktf.listMapper(apiGatewayUsagePlanThrottleSettingsToTerraform)(this._throttleSettings),

@@ -18,6 +18,7 @@ export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   readonly routeKey?: string;
   readonly routeSelectionExpression?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly target?: string;
   readonly version?: string;
   /** cors_configuration block */
@@ -75,6 +76,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
     this._routeKey = config.routeKey;
     this._routeSelectionExpression = config.routeSelectionExpression;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._target = config.target;
     this._version = config.version;
     this._corsConfiguration = config.corsConfiguration;
@@ -274,6 +276,22 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // target - computed: false, optional: true, required: false
   private _target?: string;
   public get target() {
@@ -339,6 +357,7 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
       route_key: cdktf.stringToTerraform(this._routeKey),
       route_selection_expression: cdktf.stringToTerraform(this._routeSelectionExpression),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       target: cdktf.stringToTerraform(this._target),
       version: cdktf.stringToTerraform(this._version),
       cors_configuration: cdktf.listMapper(apigatewayv2ApiCorsConfigurationToTerraform)(this._corsConfiguration),

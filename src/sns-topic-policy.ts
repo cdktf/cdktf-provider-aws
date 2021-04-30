@@ -56,6 +56,11 @@ export class SnsTopicPolicy extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+
   // policy - computed: false, optional: false, required: true
   private _policy: string;
   public get policy() {

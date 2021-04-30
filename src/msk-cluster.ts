@@ -12,6 +12,7 @@ export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
   readonly kafkaVersion: string;
   readonly numberOfBrokerNodes: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** broker_node_group_info block */
   readonly brokerNodeGroupInfo: MskClusterBrokerNodeGroupInfo[];
   /** client_authentication block */
@@ -266,6 +267,7 @@ export class MskCluster extends cdktf.TerraformResource {
     this._kafkaVersion = config.kafkaVersion;
     this._numberOfBrokerNodes = config.numberOfBrokerNodes;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._brokerNodeGroupInfo = config.brokerNodeGroupInfo;
     this._clientAuthentication = config.clientAuthentication;
     this._configurationInfo = config.configurationInfo;
@@ -379,6 +381,22 @@ export class MskCluster extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // zookeeper_connect_string - computed: true, optional: false, required: false
   public get zookeeperConnectString() {
     return this.getStringAttribute('zookeeper_connect_string');
@@ -488,6 +506,7 @@ export class MskCluster extends cdktf.TerraformResource {
       kafka_version: cdktf.stringToTerraform(this._kafkaVersion),
       number_of_broker_nodes: cdktf.numberToTerraform(this._numberOfBrokerNodes),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       broker_node_group_info: cdktf.listMapper(mskClusterBrokerNodeGroupInfoToTerraform)(this._brokerNodeGroupInfo),
       client_authentication: cdktf.listMapper(mskClusterClientAuthenticationToTerraform)(this._clientAuthentication),
       configuration_info: cdktf.listMapper(mskClusterConfigurationInfoToTerraform)(this._configurationInfo),

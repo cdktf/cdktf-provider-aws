@@ -13,6 +13,7 @@ export interface SagemakerFeatureGroupConfig extends cdktf.TerraformMetaArgument
   readonly recordIdentifierFeatureName: string;
   readonly roleArn: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** feature_definition block */
   readonly featureDefinition: SagemakerFeatureGroupFeatureDefinition[];
   /** offline_store_config block */
@@ -129,6 +130,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
     this._recordIdentifierFeatureName = config.recordIdentifierFeatureName;
     this._roleArn = config.roleArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._featureDefinition = config.featureDefinition;
     this._offlineStoreConfig = config.offlineStoreConfig;
     this._onlineStoreConfig = config.onlineStoreConfig;
@@ -232,6 +234,22 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // feature_definition - computed: false, optional: false, required: true
   private _featureDefinition: SagemakerFeatureGroupFeatureDefinition[];
   public get featureDefinition() {
@@ -289,6 +307,7 @@ export class SagemakerFeatureGroup extends cdktf.TerraformResource {
       record_identifier_feature_name: cdktf.stringToTerraform(this._recordIdentifierFeatureName),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       feature_definition: cdktf.listMapper(sagemakerFeatureGroupFeatureDefinitionToTerraform)(this._featureDefinition),
       offline_store_config: cdktf.listMapper(sagemakerFeatureGroupOfflineStoreConfigToTerraform)(this._offlineStoreConfig),
       online_store_config: cdktf.listMapper(sagemakerFeatureGroupOnlineStoreConfigToTerraform)(this._onlineStoreConfig),

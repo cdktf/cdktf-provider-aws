@@ -11,8 +11,8 @@ export interface AppsyncResolverConfig extends cdktf.TerraformMetaArguments {
   readonly dataSource?: string;
   readonly field: string;
   readonly kind?: string;
-  readonly requestTemplate: string;
-  readonly responseTemplate: string;
+  readonly requestTemplate?: string;
+  readonly responseTemplate?: string;
   readonly type: string;
   /** caching_config block */
   readonly cachingConfig?: AppsyncResolverCachingConfig[];
@@ -146,26 +146,32 @@ export class AppsyncResolver extends cdktf.TerraformResource {
     return this._kind
   }
 
-  // request_template - computed: false, optional: false, required: true
-  private _requestTemplate: string;
+  // request_template - computed: false, optional: true, required: false
+  private _requestTemplate?: string;
   public get requestTemplate() {
     return this.getStringAttribute('request_template');
   }
-  public set requestTemplate(value: string) {
+  public set requestTemplate(value: string ) {
     this._requestTemplate = value;
+  }
+  public resetRequestTemplate() {
+    this._requestTemplate = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestTemplateInput() {
     return this._requestTemplate
   }
 
-  // response_template - computed: false, optional: false, required: true
-  private _responseTemplate: string;
+  // response_template - computed: false, optional: true, required: false
+  private _responseTemplate?: string;
   public get responseTemplate() {
     return this.getStringAttribute('response_template');
   }
-  public set responseTemplate(value: string) {
+  public set responseTemplate(value: string ) {
     this._responseTemplate = value;
+  }
+  public resetResponseTemplate() {
+    this._responseTemplate = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseTemplateInput() {

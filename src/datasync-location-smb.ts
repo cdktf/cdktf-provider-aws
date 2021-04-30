@@ -13,6 +13,7 @@ export interface DatasyncLocationSmbConfig extends cdktf.TerraformMetaArguments 
   readonly serverHostname: string;
   readonly subdirectory: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly user: string;
   /** mount_options block */
   readonly mountOptions?: DatasyncLocationSmbMountOptions[];
@@ -54,6 +55,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
     this._serverHostname = config.serverHostname;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._user = config.user;
     this._mountOptions = config.mountOptions;
   }
@@ -156,6 +158,22 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // uri - computed: true, optional: false, required: false
   public get uri() {
     return this.getStringAttribute('uri');
@@ -202,6 +220,7 @@ export class DatasyncLocationSmb extends cdktf.TerraformResource {
       server_hostname: cdktf.stringToTerraform(this._serverHostname),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       user: cdktf.stringToTerraform(this._user),
       mount_options: cdktf.listMapper(datasyncLocationSmbMountOptionsToTerraform)(this._mountOptions),
     };

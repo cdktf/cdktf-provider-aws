@@ -15,6 +15,7 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   readonly streamEnabled?: boolean;
   readonly streamViewType?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly writeCapacity?: number;
   /** attribute block */
   readonly attribute: DynamodbTableAttribute[];
@@ -141,6 +142,7 @@ function dynamodbTableTimeoutsToTerraform(struct?: DynamodbTableTimeouts): any {
 export interface DynamodbTableTtl {
   readonly attributeName: string;
   readonly enabled?: boolean;
+  readonly kmsKeyArn?: string;
 }
 
 function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtl): any {
@@ -148,6 +150,7 @@ function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtl): any {
   return {
     attribute_name: cdktf.stringToTerraform(struct!.attributeName),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
+    kms_key_arn: cdktf.stringToTerraform(struct!.kmsKeyArn),
   }
 }
 
@@ -179,6 +182,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
     this._streamEnabled = config.streamEnabled;
     this._streamViewType = config.streamViewType;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._writeCapacity = config.writeCapacity;
     this._attribute = config.attribute;
     this._globalSecondaryIndex = config.globalSecondaryIndex;
@@ -336,6 +340,22 @@ export class DynamodbTable extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // write_capacity - computed: false, optional: true, required: false
   private _writeCapacity?: number;
   public get writeCapacity() {
@@ -491,6 +511,7 @@ export class DynamodbTable extends cdktf.TerraformResource {
       stream_enabled: cdktf.booleanToTerraform(this._streamEnabled),
       stream_view_type: cdktf.stringToTerraform(this._streamViewType),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       write_capacity: cdktf.numberToTerraform(this._writeCapacity),
       attribute: cdktf.listMapper(dynamodbTableAttributeToTerraform)(this._attribute),
       global_secondary_index: cdktf.listMapper(dynamodbTableGlobalSecondaryIndexToTerraform)(this._globalSecondaryIndex),

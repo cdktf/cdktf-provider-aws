@@ -14,6 +14,7 @@ export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
   readonly sourceAmiId: string;
   readonly sourceAmiRegion: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** ebs_block_device block */
   readonly ebsBlockDevice?: AmiCopyEbsBlockDevice[];
   /** ephemeral_block_device block */
@@ -81,6 +82,7 @@ export class AmiCopy extends cdktf.TerraformResource {
     this._sourceAmiId = config.sourceAmiId;
     this._sourceAmiRegion = config.sourceAmiRegion;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._ebsBlockDevice = config.ebsBlockDevice;
     this._ephemeralBlockDevice = config.ephemeralBlockDevice;
     this._timeouts = config.timeouts;
@@ -283,6 +285,22 @@ export class AmiCopy extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // usage_operation - computed: true, optional: false, required: false
   public get usageOperation() {
     return this.getStringAttribute('usage_operation');
@@ -354,6 +372,7 @@ export class AmiCopy extends cdktf.TerraformResource {
       source_ami_id: cdktf.stringToTerraform(this._sourceAmiId),
       source_ami_region: cdktf.stringToTerraform(this._sourceAmiRegion),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       ebs_block_device: cdktf.listMapper(amiCopyEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
       ephemeral_block_device: cdktf.listMapper(amiCopyEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
       timeouts: amiCopyTimeoutsToTerraform(this._timeouts),

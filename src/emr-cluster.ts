@@ -24,6 +24,7 @@ export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
   readonly step?: EmrClusterStep[];
   readonly stepConcurrencyLevel?: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly terminationProtection?: boolean;
   readonly visibleToAllUsers?: boolean;
   /** bootstrap_action block */
@@ -481,6 +482,7 @@ export class EmrCluster extends cdktf.TerraformResource {
     this._step = config.step;
     this._stepConcurrencyLevel = config.stepConcurrencyLevel;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._terminationProtection = config.terminationProtection;
     this._visibleToAllUsers = config.visibleToAllUsers;
     this._bootstrapAction = config.bootstrapAction;
@@ -779,6 +781,22 @@ export class EmrCluster extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // termination_protection - computed: true, optional: true, required: false
   private _terminationProtection?: boolean;
   public get terminationProtection() {
@@ -946,6 +964,7 @@ export class EmrCluster extends cdktf.TerraformResource {
       step: cdktf.listMapper(emrClusterStepToTerraform)(this._step),
       step_concurrency_level: cdktf.numberToTerraform(this._stepConcurrencyLevel),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       termination_protection: cdktf.booleanToTerraform(this._terminationProtection),
       visible_to_all_users: cdktf.booleanToTerraform(this._visibleToAllUsers),
       bootstrap_action: cdktf.listMapper(emrClusterBootstrapActionToTerraform)(this._bootstrapAction),

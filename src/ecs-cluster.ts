@@ -10,6 +10,7 @@ export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly capacityProviders?: string[];
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** default_capacity_provider_strategy block */
   readonly defaultCapacityProviderStrategy?: EcsClusterDefaultCapacityProviderStrategy[];
   /** setting block */
@@ -66,6 +67,7 @@ export class EcsCluster extends cdktf.TerraformResource {
     this._capacityProviders = config.capacityProviders;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._defaultCapacityProviderStrategy = config.defaultCapacityProviderStrategy;
     this._setting = config.setting;
   }
@@ -129,6 +131,22 @@ export class EcsCluster extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // default_capacity_provider_strategy - computed: false, optional: true, required: false
   private _defaultCapacityProviderStrategy?: EcsClusterDefaultCapacityProviderStrategy[];
   public get defaultCapacityProviderStrategy() {
@@ -170,6 +188,7 @@ export class EcsCluster extends cdktf.TerraformResource {
       capacity_providers: cdktf.listMapper(cdktf.stringToTerraform)(this._capacityProviders),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform)(this._defaultCapacityProviderStrategy),
       setting: cdktf.listMapper(ecsClusterSettingToTerraform)(this._setting),
     };

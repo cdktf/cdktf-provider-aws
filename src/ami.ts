@@ -17,6 +17,7 @@ export interface AmiConfig extends cdktf.TerraformMetaArguments {
   readonly rootDeviceName?: string;
   readonly sriovNetSupport?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly virtualizationType?: string;
   /** ebs_block_device block */
   readonly ebsBlockDevice?: AmiEbsBlockDevice[];
@@ -108,6 +109,7 @@ export class Ami extends cdktf.TerraformResource {
     this._rootDeviceName = config.rootDeviceName;
     this._sriovNetSupport = config.sriovNetSupport;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._virtualizationType = config.virtualizationType;
     this._ebsBlockDevice = config.ebsBlockDevice;
     this._ephemeralBlockDevice = config.ephemeralBlockDevice;
@@ -330,6 +332,22 @@ export class Ami extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // usage_operation - computed: true, optional: false, required: false
   public get usageOperation() {
     return this.getStringAttribute('usage_operation');
@@ -415,6 +433,7 @@ export class Ami extends cdktf.TerraformResource {
       root_device_name: cdktf.stringToTerraform(this._rootDeviceName),
       sriov_net_support: cdktf.stringToTerraform(this._sriovNetSupport),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       virtualization_type: cdktf.stringToTerraform(this._virtualizationType),
       ebs_block_device: cdktf.listMapper(amiEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
       ephemeral_block_device: cdktf.listMapper(amiEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),

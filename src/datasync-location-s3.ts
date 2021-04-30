@@ -10,6 +10,7 @@ export interface DatasyncLocationS3Config extends cdktf.TerraformMetaArguments {
   readonly s3BucketArn: string;
   readonly subdirectory: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** s3_config block */
   readonly s3Config: DatasyncLocationS3S3Config[];
 }
@@ -47,6 +48,7 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
     this._s3BucketArn = config.s3BucketArn;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._s3Config = config.s3Config;
   }
 
@@ -106,6 +108,22 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // uri - computed: true, optional: false, required: false
   public get uri() {
     return this.getStringAttribute('uri');
@@ -133,6 +151,7 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
       s3_bucket_arn: cdktf.stringToTerraform(this._s3BucketArn),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       s3_config: cdktf.listMapper(datasyncLocationS3S3ConfigToTerraform)(this._s3Config),
     };
   }

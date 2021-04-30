@@ -24,6 +24,7 @@ export interface CloudwatchMetricAlarmConfig extends cdktf.TerraformMetaArgument
   readonly period?: number;
   readonly statistic?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly threshold?: number;
   readonly thresholdMetricId?: string;
   readonly treatMissingData?: string;
@@ -109,6 +110,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
     this._period = config.period;
     this._statistic = config.statistic;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._threshold = config.threshold;
     this._thresholdMetricId = config.thresholdMetricId;
     this._treatMissingData = config.treatMissingData;
@@ -393,6 +395,22 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // threshold - computed: false, optional: true, required: false
   private _threshold?: number;
   public get threshold() {
@@ -496,6 +514,7 @@ export class CloudwatchMetricAlarm extends cdktf.TerraformResource {
       period: cdktf.numberToTerraform(this._period),
       statistic: cdktf.stringToTerraform(this._statistic),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       threshold: cdktf.numberToTerraform(this._threshold),
       threshold_metric_id: cdktf.stringToTerraform(this._thresholdMetricId),
       treat_missing_data: cdktf.stringToTerraform(this._treatMissingData),

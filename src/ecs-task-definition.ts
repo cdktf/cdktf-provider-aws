@@ -17,6 +17,7 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly pidMode?: string;
   readonly requiresCompatibilities?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly taskRoleArn?: string;
   /** inference_accelerator block */
   readonly inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[];
@@ -169,6 +170,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     this._pidMode = config.pidMode;
     this._requiresCompatibilities = config.requiresCompatibilities;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._taskRoleArn = config.taskRoleArn;
     this._inferenceAccelerator = config.inferenceAccelerator;
     this._placementConstraints = config.placementConstraints;
@@ -349,6 +351,22 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // task_role_arn - computed: false, optional: true, required: false
   private _taskRoleArn?: string;
   public get taskRoleArn() {
@@ -445,6 +463,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
       pid_mode: cdktf.stringToTerraform(this._pidMode),
       requires_compatibilities: cdktf.listMapper(cdktf.stringToTerraform)(this._requiresCompatibilities),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       task_role_arn: cdktf.stringToTerraform(this._taskRoleArn),
       inference_accelerator: cdktf.listMapper(ecsTaskDefinitionInferenceAcceleratorToTerraform)(this._inferenceAccelerator),
       placement_constraints: cdktf.listMapper(ecsTaskDefinitionPlacementConstraintsToTerraform)(this._placementConstraints),
