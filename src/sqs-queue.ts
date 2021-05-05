@@ -20,6 +20,7 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   readonly receiveWaitTimeSeconds?: number;
   readonly redrivePolicy?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly visibilityTimeoutSeconds?: number;
 }
 
@@ -55,6 +56,7 @@ export class SqsQueue extends cdktf.TerraformResource {
     this._receiveWaitTimeSeconds = config.receiveWaitTimeSeconds;
     this._redrivePolicy = config.redrivePolicy;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._visibilityTimeoutSeconds = config.visibilityTimeoutSeconds;
   }
 
@@ -280,6 +282,22 @@ export class SqsQueue extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // visibility_timeout_seconds - computed: false, optional: true, required: false
   private _visibilityTimeoutSeconds?: number;
   public get visibilityTimeoutSeconds() {
@@ -315,6 +333,7 @@ export class SqsQueue extends cdktf.TerraformResource {
       receive_wait_time_seconds: cdktf.numberToTerraform(this._receiveWaitTimeSeconds),
       redrive_policy: cdktf.stringToTerraform(this._redrivePolicy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       visibility_timeout_seconds: cdktf.numberToTerraform(this._visibilityTimeoutSeconds),
     };
   }

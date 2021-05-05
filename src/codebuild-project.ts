@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   readonly badgeEnabled?: boolean;
   readonly buildTimeout?: number;
+  readonly concurrentBuildLimit?: number;
   readonly description?: string;
   readonly encryptionKey?: string;
   readonly name: string;
@@ -16,8 +17,11 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   readonly serviceRole: string;
   readonly sourceVersion?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** artifacts block */
   readonly artifacts: CodebuildProjectArtifacts[];
+  /** build_batch_config block */
+  readonly buildBatchConfig?: CodebuildProjectBuildBatchConfig[];
   /** cache block */
   readonly cache?: CodebuildProjectCache[];
   /** environment block */
@@ -57,6 +61,37 @@ function codebuildProjectArtifactsToTerraform(struct?: CodebuildProjectArtifacts
     packaging: cdktf.stringToTerraform(struct!.packaging),
     path: cdktf.stringToTerraform(struct!.path),
     type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export interface CodebuildProjectBuildBatchConfigRestrictions {
+  readonly computeTypesAllowed?: string[];
+  readonly maximumBuildsAllowed?: number;
+}
+
+function codebuildProjectBuildBatchConfigRestrictionsToTerraform(struct?: CodebuildProjectBuildBatchConfigRestrictions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    compute_types_allowed: cdktf.listMapper(cdktf.stringToTerraform)(struct!.computeTypesAllowed),
+    maximum_builds_allowed: cdktf.numberToTerraform(struct!.maximumBuildsAllowed),
+  }
+}
+
+export interface CodebuildProjectBuildBatchConfig {
+  readonly combineArtifacts?: boolean;
+  readonly serviceRole: string;
+  readonly timeoutInMins?: number;
+  /** restrictions block */
+  readonly restrictions?: CodebuildProjectBuildBatchConfigRestrictions[];
+}
+
+function codebuildProjectBuildBatchConfigToTerraform(struct?: CodebuildProjectBuildBatchConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    combine_artifacts: cdktf.booleanToTerraform(struct!.combineArtifacts),
+    service_role: cdktf.stringToTerraform(struct!.serviceRole),
+    timeout_in_mins: cdktf.numberToTerraform(struct!.timeoutInMins),
+    restrictions: cdktf.listMapper(codebuildProjectBuildBatchConfigRestrictionsToTerraform)(struct!.restrictions),
   }
 }
 
@@ -215,6 +250,19 @@ function codebuildProjectSecondarySourcesAuthToTerraform(struct?: CodebuildProje
   }
 }
 
+export interface CodebuildProjectSecondarySourcesBuildStatusConfig {
+  readonly context?: string;
+  readonly targetUrl?: string;
+}
+
+function codebuildProjectSecondarySourcesBuildStatusConfigToTerraform(struct?: CodebuildProjectSecondarySourcesBuildStatusConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    context: cdktf.stringToTerraform(struct!.context),
+    target_url: cdktf.stringToTerraform(struct!.targetUrl),
+  }
+}
+
 export interface CodebuildProjectSecondarySourcesGitSubmodulesConfig {
   readonly fetchSubmodules: boolean;
 }
@@ -236,6 +284,8 @@ export interface CodebuildProjectSecondarySources {
   readonly type: string;
   /** auth block */
   readonly auth?: CodebuildProjectSecondarySourcesAuth[];
+  /** build_status_config block */
+  readonly buildStatusConfig?: CodebuildProjectSecondarySourcesBuildStatusConfig[];
   /** git_submodules_config block */
   readonly gitSubmodulesConfig?: CodebuildProjectSecondarySourcesGitSubmodulesConfig[];
 }
@@ -251,6 +301,7 @@ function codebuildProjectSecondarySourcesToTerraform(struct?: CodebuildProjectSe
     source_identifier: cdktf.stringToTerraform(struct!.sourceIdentifier),
     type: cdktf.stringToTerraform(struct!.type),
     auth: cdktf.listMapper(codebuildProjectSecondarySourcesAuthToTerraform)(struct!.auth),
+    build_status_config: cdktf.listMapper(codebuildProjectSecondarySourcesBuildStatusConfigToTerraform)(struct!.buildStatusConfig),
     git_submodules_config: cdktf.listMapper(codebuildProjectSecondarySourcesGitSubmodulesConfigToTerraform)(struct!.gitSubmodulesConfig),
   }
 }
@@ -265,6 +316,19 @@ function codebuildProjectSourceAuthToTerraform(struct?: CodebuildProjectSourceAu
   return {
     resource: cdktf.stringToTerraform(struct!.resource),
     type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export interface CodebuildProjectSourceBuildStatusConfig {
+  readonly context?: string;
+  readonly targetUrl?: string;
+}
+
+function codebuildProjectSourceBuildStatusConfigToTerraform(struct?: CodebuildProjectSourceBuildStatusConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    context: cdktf.stringToTerraform(struct!.context),
+    target_url: cdktf.stringToTerraform(struct!.targetUrl),
   }
 }
 
@@ -288,6 +352,8 @@ export interface CodebuildProjectSource {
   readonly type: string;
   /** auth block */
   readonly auth?: CodebuildProjectSourceAuth[];
+  /** build_status_config block */
+  readonly buildStatusConfig?: CodebuildProjectSourceBuildStatusConfig[];
   /** git_submodules_config block */
   readonly gitSubmodulesConfig?: CodebuildProjectSourceGitSubmodulesConfig[];
 }
@@ -302,6 +368,7 @@ function codebuildProjectSourceToTerraform(struct?: CodebuildProjectSource): any
     report_build_status: cdktf.booleanToTerraform(struct!.reportBuildStatus),
     type: cdktf.stringToTerraform(struct!.type),
     auth: cdktf.listMapper(codebuildProjectSourceAuthToTerraform)(struct!.auth),
+    build_status_config: cdktf.listMapper(codebuildProjectSourceBuildStatusConfigToTerraform)(struct!.buildStatusConfig),
     git_submodules_config: cdktf.listMapper(codebuildProjectSourceGitSubmodulesConfigToTerraform)(struct!.gitSubmodulesConfig),
   }
 }
@@ -343,6 +410,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
     });
     this._badgeEnabled = config.badgeEnabled;
     this._buildTimeout = config.buildTimeout;
+    this._concurrentBuildLimit = config.concurrentBuildLimit;
     this._description = config.description;
     this._encryptionKey = config.encryptionKey;
     this._name = config.name;
@@ -350,7 +418,9 @@ export class CodebuildProject extends cdktf.TerraformResource {
     this._serviceRole = config.serviceRole;
     this._sourceVersion = config.sourceVersion;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._artifacts = config.artifacts;
+    this._buildBatchConfig = config.buildBatchConfig;
     this._cache = config.cache;
     this._environment = config.environment;
     this._logsConfig = config.logsConfig;
@@ -404,6 +474,22 @@ export class CodebuildProject extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get buildTimeoutInput() {
     return this._buildTimeout
+  }
+
+  // concurrent_build_limit - computed: false, optional: true, required: false
+  private _concurrentBuildLimit?: number;
+  public get concurrentBuildLimit() {
+    return this.getNumberAttribute('concurrent_build_limit');
+  }
+  public set concurrentBuildLimit(value: number ) {
+    this._concurrentBuildLimit = value;
+  }
+  public resetConcurrentBuildLimit() {
+    this._concurrentBuildLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get concurrentBuildLimitInput() {
+    return this._concurrentBuildLimit
   }
 
   // description - computed: true, optional: true, required: false
@@ -517,6 +603,22 @@ export class CodebuildProject extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // artifacts - computed: false, optional: false, required: true
   private _artifacts: CodebuildProjectArtifacts[];
   public get artifacts() {
@@ -528,6 +630,22 @@ export class CodebuildProject extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get artifactsInput() {
     return this._artifacts
+  }
+
+  // build_batch_config - computed: false, optional: true, required: false
+  private _buildBatchConfig?: CodebuildProjectBuildBatchConfig[];
+  public get buildBatchConfig() {
+    return this.interpolationForAttribute('build_batch_config') as any;
+  }
+  public set buildBatchConfig(value: CodebuildProjectBuildBatchConfig[] ) {
+    this._buildBatchConfig = value;
+  }
+  public resetBuildBatchConfig() {
+    this._buildBatchConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get buildBatchConfigInput() {
+    return this._buildBatchConfig
   }
 
   // cache - computed: false, optional: true, required: false
@@ -644,6 +762,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
     return {
       badge_enabled: cdktf.booleanToTerraform(this._badgeEnabled),
       build_timeout: cdktf.numberToTerraform(this._buildTimeout),
+      concurrent_build_limit: cdktf.numberToTerraform(this._concurrentBuildLimit),
       description: cdktf.stringToTerraform(this._description),
       encryption_key: cdktf.stringToTerraform(this._encryptionKey),
       name: cdktf.stringToTerraform(this._name),
@@ -651,7 +770,9 @@ export class CodebuildProject extends cdktf.TerraformResource {
       service_role: cdktf.stringToTerraform(this._serviceRole),
       source_version: cdktf.stringToTerraform(this._sourceVersion),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       artifacts: cdktf.listMapper(codebuildProjectArtifactsToTerraform)(this._artifacts),
+      build_batch_config: cdktf.listMapper(codebuildProjectBuildBatchConfigToTerraform)(this._buildBatchConfig),
       cache: cdktf.listMapper(codebuildProjectCacheToTerraform)(this._cache),
       environment: cdktf.listMapper(codebuildProjectEnvironmentToTerraform)(this._environment),
       logs_config: cdktf.listMapper(codebuildProjectLogsConfigToTerraform)(this._logsConfig),

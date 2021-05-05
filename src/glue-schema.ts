@@ -14,6 +14,7 @@ export interface GlueSchemaConfig extends cdktf.TerraformMetaArguments {
   readonly schemaDefinition: string;
   readonly schemaName: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -42,6 +43,7 @@ export class GlueSchema extends cdktf.TerraformResource {
     this._schemaDefinition = config.schemaDefinition;
     this._schemaName = config.schemaName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -178,6 +180,22 @@ export class GlueSchema extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -191,6 +209,7 @@ export class GlueSchema extends cdktf.TerraformResource {
       schema_definition: cdktf.stringToTerraform(this._schemaDefinition),
       schema_name: cdktf.stringToTerraform(this._schemaName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

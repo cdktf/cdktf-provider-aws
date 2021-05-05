@@ -11,6 +11,7 @@ export interface ImagebuilderImageRecipeConfig extends cdktf.TerraformMetaArgume
   readonly name: string;
   readonly parentImage: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly version: string;
   readonly workingDirectory?: string;
   /** block_device_mapping block */
@@ -94,6 +95,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
     this._name = config.name;
     this._parentImage = config.parentImage;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._version = config.version;
     this._workingDirectory = config.workingDirectory;
     this._blockDeviceMapping = config.blockDeviceMapping;
@@ -187,6 +189,22 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // version - computed: false, optional: false, required: true
   private _version: string;
   public get version() {
@@ -255,6 +273,7 @@ export class ImagebuilderImageRecipe extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       parent_image: cdktf.stringToTerraform(this._parentImage),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       version: cdktf.stringToTerraform(this._version),
       working_directory: cdktf.stringToTerraform(this._workingDirectory),
       block_device_mapping: cdktf.listMapper(imagebuilderImageRecipeBlockDeviceMappingToTerraform)(this._blockDeviceMapping),

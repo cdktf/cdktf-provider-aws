@@ -14,6 +14,7 @@ export interface Kinesisanalyticsv2ApplicationConfig extends cdktf.TerraformMeta
   readonly serviceExecutionRole: string;
   readonly startApplication?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** application_configuration block */
   readonly applicationConfiguration?: Kinesisanalyticsv2ApplicationApplicationConfiguration[];
   /** cloudwatch_logging_options block */
@@ -666,6 +667,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
     this._serviceExecutionRole = config.serviceExecutionRole;
     this._startApplication = config.startApplication;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._applicationConfiguration = config.applicationConfiguration;
     this._cloudwatchLoggingOptions = config.cloudwatchLoggingOptions;
   }
@@ -802,6 +804,22 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // version_id - computed: true, optional: false, required: false
   public get versionId() {
     return this.getNumberAttribute('version_id');
@@ -852,6 +870,7 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
       service_execution_role: cdktf.stringToTerraform(this._serviceExecutionRole),
       start_application: cdktf.booleanToTerraform(this._startApplication),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       application_configuration: cdktf.listMapper(kinesisanalyticsv2ApplicationApplicationConfigurationToTerraform)(this._applicationConfiguration),
       cloudwatch_logging_options: cdktf.listMapper(kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsToTerraform)(this._cloudwatchLoggingOptions),
     };

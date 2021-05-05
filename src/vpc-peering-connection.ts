@@ -12,6 +12,7 @@ export interface VpcPeeringConnectionConfig extends cdktf.TerraformMetaArguments
   readonly peerRegion?: string;
   readonly peerVpcId: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly vpcId: string;
   /** accepter block */
   readonly accepter?: VpcPeeringConnectionAccepter[];
@@ -90,6 +91,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
     this._peerRegion = config.peerRegion;
     this._peerVpcId = config.peerVpcId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._vpcId = config.vpcId;
     this._accepter = config.accepter;
     this._requester = config.requester;
@@ -187,6 +189,22 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId: string;
   public get vpcId() {
@@ -259,6 +277,7 @@ export class VpcPeeringConnection extends cdktf.TerraformResource {
       peer_region: cdktf.stringToTerraform(this._peerRegion),
       peer_vpc_id: cdktf.stringToTerraform(this._peerVpcId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       accepter: cdktf.listMapper(vpcPeeringConnectionAccepterToTerraform)(this._accepter),
       requester: cdktf.listMapper(vpcPeeringConnectionRequesterToTerraform)(this._requester),

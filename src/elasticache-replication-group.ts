@@ -35,6 +35,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   readonly snapshotWindow?: string;
   readonly subnetGroupName?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly transitEncryptionEnabled?: boolean;
   /** cluster_mode block */
   readonly clusterMode?: ElasticacheReplicationGroupClusterMode[];
@@ -117,6 +118,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     this._snapshotWindow = config.snapshotWindow;
     this._subnetGroupName = config.subnetGroupName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._transitEncryptionEnabled = config.transitEncryptionEnabled;
     this._clusterMode = config.clusterMode;
     this._timeouts = config.timeouts;
@@ -267,6 +269,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get engineVersionInput() {
     return this._engineVersion
+  }
+
+  // engine_version_actual - computed: true, optional: false, required: false
+  public get engineVersionActual() {
+    return this.getStringAttribute('engine_version_actual');
   }
 
   // final_snapshot_identifier - computed: false, optional: true, required: false
@@ -603,6 +610,22 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // transit_encryption_enabled - computed: true, optional: true, required: false
   private _transitEncryptionEnabled?: boolean;
   public get transitEncryptionEnabled() {
@@ -685,6 +708,7 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
       snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       transit_encryption_enabled: cdktf.booleanToTerraform(this._transitEncryptionEnabled),
       cluster_mode: cdktf.listMapper(elasticacheReplicationGroupClusterModeToTerraform)(this._clusterMode),
       timeouts: elasticacheReplicationGroupTimeoutsToTerraform(this._timeouts),

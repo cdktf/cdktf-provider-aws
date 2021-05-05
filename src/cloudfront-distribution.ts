@@ -16,6 +16,7 @@ export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArgumen
   readonly priceClass?: string;
   readonly retainOnDelete?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly waitForDeployment?: boolean;
   readonly webAclId?: string;
   /** custom_error_response block */
@@ -480,6 +481,7 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
     this._priceClass = config.priceClass;
     this._retainOnDelete = config.retainOnDelete;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._waitForDeployment = config.waitForDeployment;
     this._webAclId = config.webAclId;
     this._customErrorResponse = config.customErrorResponse;
@@ -682,6 +684,22 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // trusted_key_groups - computed: true, optional: false, required: false
   public trustedKeyGroups(index: string) {
     return new CloudfrontDistributionTrustedKeyGroups(this, 'trusted_key_groups', index);
@@ -855,6 +873,7 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
       price_class: cdktf.stringToTerraform(this._priceClass),
       retain_on_delete: cdktf.booleanToTerraform(this._retainOnDelete),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       wait_for_deployment: cdktf.booleanToTerraform(this._waitForDeployment),
       web_acl_id: cdktf.stringToTerraform(this._webAclId),
       custom_error_response: cdktf.listMapper(cloudfrontDistributionCustomErrorResponseToTerraform)(this._customErrorResponse),

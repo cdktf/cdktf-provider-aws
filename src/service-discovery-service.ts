@@ -11,6 +11,7 @@ export interface ServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArgume
   readonly name: string;
   readonly namespaceId?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** dns_config block */
   readonly dnsConfig?: ServiceDiscoveryServiceDnsConfig[];
   /** health_check_config block */
@@ -97,6 +98,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
     this._name = config.name;
     this._namespaceId = config.namespaceId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._dnsConfig = config.dnsConfig;
     this._healthCheckConfig = config.healthCheckConfig;
     this._healthCheckCustomConfig = config.healthCheckCustomConfig;
@@ -177,6 +179,22 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // dns_config - computed: false, optional: true, required: false
   private _dnsConfig?: ServiceDiscoveryServiceDnsConfig[];
   public get dnsConfig() {
@@ -235,6 +253,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       namespace_id: cdktf.stringToTerraform(this._namespaceId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       dns_config: cdktf.listMapper(serviceDiscoveryServiceDnsConfigToTerraform)(this._dnsConfig),
       health_check_config: cdktf.listMapper(serviceDiscoveryServiceHealthCheckConfigToTerraform)(this._healthCheckConfig),
       health_check_custom_config: cdktf.listMapper(serviceDiscoveryServiceHealthCheckCustomConfigToTerraform)(this._healthCheckCustomConfig),

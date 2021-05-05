@@ -15,6 +15,7 @@ export interface CloudformationStackSetConfig extends cdktf.TerraformMetaArgumen
   readonly parameters?: { [key: string]: string };
   readonly permissionModel?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly templateBody?: string;
   readonly templateUrl?: string;
   /** auto_deployment block */
@@ -74,6 +75,7 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
     this._parameters = config.parameters;
     this._permissionModel = config.permissionModel;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._templateBody = config.templateBody;
     this._templateUrl = config.templateUrl;
     this._autoDeployment = config.autoDeployment;
@@ -224,6 +226,22 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // template_body - computed: true, optional: true, required: false
   private _templateBody?: string;
   public get templateBody() {
@@ -302,6 +320,7 @@ export class CloudformationStackSet extends cdktf.TerraformResource {
       parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
       permission_model: cdktf.stringToTerraform(this._permissionModel),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_url: cdktf.stringToTerraform(this._templateUrl),
       auto_deployment: cdktf.listMapper(cloudformationStackSetAutoDeploymentToTerraform)(this._autoDeployment),

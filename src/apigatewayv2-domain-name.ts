@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface Apigatewayv2DomainNameConfig extends cdktf.TerraformMetaArguments {
   readonly domainName: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** domain_name_configuration block */
   readonly domainNameConfiguration: Apigatewayv2DomainNameDomainNameConfiguration[];
   /** mutual_tls_authentication block */
@@ -79,6 +80,7 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
     });
     this._domainName = config.domainName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._domainNameConfiguration = config.domainNameConfiguration;
     this._mutualTlsAuthentication = config.mutualTlsAuthentication;
     this._timeouts = config.timeouts;
@@ -130,6 +132,22 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // domain_name_configuration - computed: false, optional: false, required: true
@@ -185,6 +203,7 @@ export class Apigatewayv2DomainName extends cdktf.TerraformResource {
     return {
       domain_name: cdktf.stringToTerraform(this._domainName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       domain_name_configuration: cdktf.listMapper(apigatewayv2DomainNameDomainNameConfigurationToTerraform)(this._domainNameConfiguration),
       mutual_tls_authentication: cdktf.listMapper(apigatewayv2DomainNameMutualTlsAuthenticationToTerraform)(this._mutualTlsAuthentication),
       timeouts: apigatewayv2DomainNameTimeoutsToTerraform(this._timeouts),

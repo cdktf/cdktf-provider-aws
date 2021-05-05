@@ -1,0 +1,115 @@
+// https://www.terraform.io/docs/providers/aws/r/data_aws_kms_public_key.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataAwsKmsPublicKeyConfig extends cdktf.TerraformMetaArguments {
+  readonly grantTokens?: string[];
+  readonly keyId: string;
+}
+
+// Resource
+
+export class DataAwsKmsPublicKey extends cdktf.TerraformDataSource {
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  public constructor(scope: Construct, id: string, config: DataAwsKmsPublicKeyConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_kms_public_key',
+      terraformGeneratorMetadata: {
+        providerName: 'aws'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._grantTokens = config.grantTokens;
+    this._keyId = config.keyId;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // customer_master_key_spec - computed: true, optional: false, required: false
+  public get customerMasterKeySpec() {
+    return this.getStringAttribute('customer_master_key_spec');
+  }
+
+  // encryption_algorithms - computed: true, optional: false, required: false
+  public get encryptionAlgorithms() {
+    return this.getListAttribute('encryption_algorithms');
+  }
+
+  // grant_tokens - computed: false, optional: true, required: false
+  private _grantTokens?: string[];
+  public get grantTokens() {
+    return this.getListAttribute('grant_tokens');
+  }
+  public set grantTokens(value: string[] ) {
+    this._grantTokens = value;
+  }
+  public resetGrantTokens() {
+    this._grantTokens = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grantTokensInput() {
+    return this._grantTokens
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // key_id - computed: false, optional: false, required: true
+  private _keyId: string;
+  public get keyId() {
+    return this.getStringAttribute('key_id');
+  }
+  public set keyId(value: string) {
+    this._keyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId
+  }
+
+  // key_usage - computed: true, optional: false, required: false
+  public get keyUsage() {
+    return this.getStringAttribute('key_usage');
+  }
+
+  // public_key - computed: true, optional: false, required: false
+  public get publicKey() {
+    return this.getStringAttribute('public_key');
+  }
+
+  // signing_algorithms - computed: true, optional: false, required: false
+  public get signingAlgorithms() {
+    return this.getListAttribute('signing_algorithms');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      grant_tokens: cdktf.listMapper(cdktf.stringToTerraform)(this._grantTokens),
+      key_id: cdktf.stringToTerraform(this._keyId),
+    };
+  }
+}

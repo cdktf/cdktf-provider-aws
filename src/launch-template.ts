@@ -21,6 +21,7 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   readonly ramDiskId?: string;
   readonly securityGroupNames?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly updateDefaultVersion?: boolean;
   readonly userData?: string;
   readonly vpcSecurityGroupIds?: string[];
@@ -316,6 +317,7 @@ export interface LaunchTemplatePlacement {
   readonly availabilityZone?: string;
   readonly groupName?: string;
   readonly hostId?: string;
+  readonly hostResourceGroupArn?: string;
   readonly partitionNumber?: number;
   readonly spreadDomain?: string;
   readonly tenancy?: string;
@@ -328,6 +330,7 @@ function launchTemplatePlacementToTerraform(struct?: LaunchTemplatePlacement): a
     availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
     group_name: cdktf.stringToTerraform(struct!.groupName),
     host_id: cdktf.stringToTerraform(struct!.hostId),
+    host_resource_group_arn: cdktf.stringToTerraform(struct!.hostResourceGroupArn),
     partition_number: cdktf.numberToTerraform(struct!.partitionNumber),
     spread_domain: cdktf.stringToTerraform(struct!.spreadDomain),
     tenancy: cdktf.stringToTerraform(struct!.tenancy),
@@ -381,6 +384,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
     this._ramDiskId = config.ramDiskId;
     this._securityGroupNames = config.securityGroupNames;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._updateDefaultVersion = config.updateDefaultVersion;
     this._userData = config.userData;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
@@ -643,6 +647,22 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // update_default_version - computed: false, optional: true, required: false
@@ -969,6 +989,7 @@ export class LaunchTemplate extends cdktf.TerraformResource {
       ram_disk_id: cdktf.stringToTerraform(this._ramDiskId),
       security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       update_default_version: cdktf.booleanToTerraform(this._updateDefaultVersion),
       user_data: cdktf.stringToTerraform(this._userData),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),

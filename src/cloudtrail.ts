@@ -20,6 +20,7 @@ export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   readonly s3KeyPrefix?: string;
   readonly snsTopicName?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** event_selector block */
   readonly eventSelector?: CloudtrailEventSelector[];
   /** insight_selector block */
@@ -98,6 +99,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
     this._s3KeyPrefix = config.s3KeyPrefix;
     this._snsTopicName = config.snsTopicName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._eventSelector = config.eventSelector;
     this._insightSelector = config.insightSelector;
   }
@@ -323,6 +325,22 @@ export class Cloudtrail extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // event_selector - computed: false, optional: true, required: false
   private _eventSelector?: CloudtrailEventSelector[];
   public get eventSelector() {
@@ -374,6 +392,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
       s3_key_prefix: cdktf.stringToTerraform(this._s3KeyPrefix),
       sns_topic_name: cdktf.stringToTerraform(this._snsTopicName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       event_selector: cdktf.listMapper(cloudtrailEventSelectorToTerraform)(this._eventSelector),
       insight_selector: cdktf.listMapper(cloudtrailInsightSelectorToTerraform)(this._insightSelector),
     };

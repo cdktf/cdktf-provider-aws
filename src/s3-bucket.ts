@@ -16,6 +16,7 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   readonly policy?: string;
   readonly requestPayer?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly websiteDomain?: string;
   readonly websiteEndpoint?: string;
   /** cors_rule block */
@@ -417,6 +418,7 @@ export class S3Bucket extends cdktf.TerraformResource {
     this._policy = config.policy;
     this._requestPayer = config.requestPayer;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._websiteDomain = config.websiteDomain;
     this._websiteEndpoint = config.websiteEndpoint;
     this._corsRule = config.corsRule;
@@ -601,6 +603,22 @@ export class S3Bucket extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // website_domain - computed: true, optional: true, required: false
@@ -794,6 +812,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       policy: cdktf.stringToTerraform(this._policy),
       request_payer: cdktf.stringToTerraform(this._requestPayer),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       website_domain: cdktf.stringToTerraform(this._websiteDomain),
       website_endpoint: cdktf.stringToTerraform(this._websiteEndpoint),
       cors_rule: cdktf.listMapper(s3BucketCorsRuleToTerraform)(this._corsRule),

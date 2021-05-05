@@ -18,6 +18,7 @@ export interface XraySamplingRuleConfig extends cdktf.TerraformMetaArguments {
   readonly serviceName: string;
   readonly serviceType: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly urlPath: string;
   readonly version: number;
 }
@@ -52,6 +53,7 @@ export class XraySamplingRule extends cdktf.TerraformResource {
     this._serviceName = config.serviceName;
     this._serviceType = config.serviceType;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._urlPath = config.urlPath;
     this._version = config.version;
   }
@@ -222,6 +224,22 @@ export class XraySamplingRule extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // url_path - computed: false, optional: false, required: true
   private _urlPath: string;
   public get urlPath() {
@@ -265,6 +283,7 @@ export class XraySamplingRule extends cdktf.TerraformResource {
       service_name: cdktf.stringToTerraform(this._serviceName),
       service_type: cdktf.stringToTerraform(this._serviceType),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       url_path: cdktf.stringToTerraform(this._urlPath),
       version: cdktf.numberToTerraform(this._version),
     };

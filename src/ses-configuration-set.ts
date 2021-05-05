@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface SesConfigurationSetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
+  readonly reputationMetricsEnabled?: boolean;
+  readonly sendingEnabled?: boolean;
   /** delivery_options block */
   readonly deliveryOptions?: SesConfigurationSetDeliveryOptions[];
 }
@@ -43,6 +45,8 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
+    this._reputationMetricsEnabled = config.reputationMetricsEnabled;
+    this._sendingEnabled = config.sendingEnabled;
     this._deliveryOptions = config.deliveryOptions;
   }
 
@@ -60,6 +64,11 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // last_fresh_start - computed: true, optional: false, required: false
+  public get lastFreshStart() {
+    return this.getStringAttribute('last_fresh_start');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
@@ -71,6 +80,38 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // reputation_metrics_enabled - computed: false, optional: true, required: false
+  private _reputationMetricsEnabled?: boolean;
+  public get reputationMetricsEnabled() {
+    return this.getBooleanAttribute('reputation_metrics_enabled');
+  }
+  public set reputationMetricsEnabled(value: boolean ) {
+    this._reputationMetricsEnabled = value;
+  }
+  public resetReputationMetricsEnabled() {
+    this._reputationMetricsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reputationMetricsEnabledInput() {
+    return this._reputationMetricsEnabled
+  }
+
+  // sending_enabled - computed: false, optional: true, required: false
+  private _sendingEnabled?: boolean;
+  public get sendingEnabled() {
+    return this.getBooleanAttribute('sending_enabled');
+  }
+  public set sendingEnabled(value: boolean ) {
+    this._sendingEnabled = value;
+  }
+  public resetSendingEnabled() {
+    this._sendingEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sendingEnabledInput() {
+    return this._sendingEnabled
   }
 
   // delivery_options - computed: false, optional: true, required: false
@@ -96,6 +137,8 @@ export class SesConfigurationSet extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      reputation_metrics_enabled: cdktf.booleanToTerraform(this._reputationMetricsEnabled),
+      sending_enabled: cdktf.booleanToTerraform(this._sendingEnabled),
       delivery_options: cdktf.listMapper(sesConfigurationSetDeliveryOptionsToTerraform)(this._deliveryOptions),
     };
   }

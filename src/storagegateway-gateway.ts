@@ -21,6 +21,7 @@ export interface StoragegatewayGatewayConfig extends cdktf.TerraformMetaArgument
   readonly smbGuestPassword?: string;
   readonly smbSecurityStrategy?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly tapeDriveType?: string;
   /** smb_active_directory_settings block */
   readonly smbActiveDirectorySettings?: StoragegatewayGatewaySmbActiveDirectorySettings[];
@@ -100,6 +101,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     this._smbGuestPassword = config.smbGuestPassword;
     this._smbSecurityStrategy = config.smbSecurityStrategy;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._tapeDriveType = config.tapeDriveType;
     this._smbActiveDirectorySettings = config.smbActiveDirectorySettings;
     this._timeouts = config.timeouts;
@@ -362,6 +364,22 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // tape_drive_type - computed: false, optional: true, required: false
   private _tapeDriveType?: string;
   public get tapeDriveType() {
@@ -430,6 +448,7 @@ export class StoragegatewayGateway extends cdktf.TerraformResource {
       smb_guest_password: cdktf.stringToTerraform(this._smbGuestPassword),
       smb_security_strategy: cdktf.stringToTerraform(this._smbSecurityStrategy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       tape_drive_type: cdktf.stringToTerraform(this._tapeDriveType),
       smb_active_directory_settings: cdktf.listMapper(storagegatewayGatewaySmbActiveDirectorySettingsToTerraform)(this._smbActiveDirectorySettings),
       timeouts: storagegatewayGatewayTimeoutsToTerraform(this._timeouts),

@@ -19,6 +19,7 @@ export interface LbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   readonly proxyProtocolV2?: boolean;
   readonly slowStart?: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly targetType?: string;
   readonly vpcId?: string;
   /** health_check block */
@@ -100,6 +101,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
     this._proxyProtocolV2 = config.proxyProtocolV2;
     this._slowStart = config.slowStart;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._targetType = config.targetType;
     this._vpcId = config.vpcId;
     this._healthCheck = config.healthCheck;
@@ -317,6 +319,22 @@ export class LbTargetGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // target_type - computed: false, optional: true, required: false
   private _targetType?: string;
   public get targetType() {
@@ -399,6 +417,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
       proxy_protocol_v2: cdktf.booleanToTerraform(this._proxyProtocolV2),
       slow_start: cdktf.numberToTerraform(this._slowStart),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       target_type: cdktf.stringToTerraform(this._targetType),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       health_check: cdktf.listMapper(lbTargetGroupHealthCheckToTerraform)(this._healthCheck),

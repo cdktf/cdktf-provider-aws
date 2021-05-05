@@ -14,6 +14,7 @@ export interface EfsFileSystemConfig extends cdktf.TerraformMetaArguments {
   readonly performanceMode?: string;
   readonly provisionedThroughputInMibps?: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly throughputMode?: string;
   /** lifecycle_policy block */
   readonly lifecyclePolicy?: EfsFileSystemLifecyclePolicy[];
@@ -73,6 +74,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
     this._performanceMode = config.performanceMode;
     this._provisionedThroughputInMibps = config.provisionedThroughputInMibps;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._throughputMode = config.throughputMode;
     this._lifecyclePolicy = config.lifecyclePolicy;
   }
@@ -228,6 +230,22 @@ export class EfsFileSystem extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // throughput_mode - computed: false, optional: true, required: false
   private _throughputMode?: string;
   public get throughputMode() {
@@ -273,6 +291,7 @@ export class EfsFileSystem extends cdktf.TerraformResource {
       performance_mode: cdktf.stringToTerraform(this._performanceMode),
       provisioned_throughput_in_mibps: cdktf.numberToTerraform(this._provisionedThroughputInMibps),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       throughput_mode: cdktf.stringToTerraform(this._throughputMode),
       lifecycle_policy: cdktf.listMapper(efsFileSystemLifecyclePolicyToTerraform)(this._lifecyclePolicy),
     };

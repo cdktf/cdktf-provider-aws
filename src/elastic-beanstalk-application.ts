@@ -10,6 +10,7 @@ export interface ElasticBeanstalkApplicationConfig extends cdktf.TerraformMetaAr
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** appversion_lifecycle block */
   readonly appversionLifecycle?: ElasticBeanstalkApplicationAppversionLifecycle[];
 }
@@ -53,6 +54,7 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
     this._description = config.description;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._appversionLifecycle = config.appversionLifecycle;
   }
 
@@ -115,6 +117,22 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // appversion_lifecycle - computed: false, optional: true, required: false
   private _appversionLifecycle?: ElasticBeanstalkApplicationAppversionLifecycle[];
   public get appversionLifecycle() {
@@ -140,6 +158,7 @@ export class ElasticBeanstalkApplication extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       appversion_lifecycle: cdktf.listMapper(elasticBeanstalkApplicationAppversionLifecycleToTerraform)(this._appversionLifecycle),
     };
   }

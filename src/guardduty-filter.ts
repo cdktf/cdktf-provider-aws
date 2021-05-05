@@ -13,6 +13,7 @@ export interface GuarddutyFilterConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly rank: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** finding_criteria block */
   readonly findingCriteria: GuarddutyFilterFindingCriteria[];
 }
@@ -77,6 +78,7 @@ export class GuarddutyFilter extends cdktf.TerraformResource {
     this._name = config.name;
     this._rank = config.rank;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._findingCriteria = config.findingCriteria;
   }
 
@@ -178,6 +180,22 @@ export class GuarddutyFilter extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // finding_criteria - computed: false, optional: false, required: true
   private _findingCriteria: GuarddutyFilterFindingCriteria[];
   public get findingCriteria() {
@@ -203,6 +221,7 @@ export class GuarddutyFilter extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       rank: cdktf.numberToTerraform(this._rank),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       finding_criteria: cdktf.listMapper(guarddutyFilterFindingCriteriaToTerraform)(this._findingCriteria),
     };
   }

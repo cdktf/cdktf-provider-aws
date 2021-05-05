@@ -12,6 +12,7 @@ export interface Wafv2RuleGroupConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly scope: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** rule block */
   readonly rule?: Wafv2RuleGroupRule[];
   /** visibility_config block */
@@ -9692,6 +9693,7 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
     this._name = config.name;
     this._scope = config.scope;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._rule = config.rule;
     this._visibilityConfig = config.visibilityConfig;
   }
@@ -9786,6 +9788,22 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // rule - computed: false, optional: true, required: false
   private _rule?: Wafv2RuleGroupRule[];
   public get rule() {
@@ -9826,6 +9844,7 @@ export class Wafv2RuleGroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       scope: cdktf.stringToTerraform(this._scope),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       rule: cdktf.listMapper(wafv2RuleGroupRuleToTerraform)(this._rule),
       visibility_config: cdktf.listMapper(wafv2RuleGroupVisibilityConfigToTerraform)(this._visibilityConfig),
     };

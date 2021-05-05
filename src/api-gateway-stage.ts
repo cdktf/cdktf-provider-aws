@@ -16,6 +16,7 @@ export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
   readonly restApiId: string;
   readonly stageName: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly variables?: { [key: string]: string };
   readonly xrayTracingEnabled?: boolean;
   /** access_log_settings block */
@@ -63,6 +64,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
     this._restApiId = config.restApiId;
     this._stageName = config.stageName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._variables = config.variables;
     this._xrayTracingEnabled = config.xrayTracingEnabled;
     this._accessLogSettings = config.accessLogSettings;
@@ -227,6 +229,22 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // variables - computed: false, optional: true, required: false
   private _variables?: { [key: string]: string };
   public get variables() {
@@ -290,6 +308,7 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
       rest_api_id: cdktf.stringToTerraform(this._restApiId),
       stage_name: cdktf.stringToTerraform(this._stageName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._variables),
       xray_tracing_enabled: cdktf.booleanToTerraform(this._xrayTracingEnabled),
       access_log_settings: cdktf.listMapper(apiGatewayStageAccessLogSettingsToTerraform)(this._accessLogSettings),

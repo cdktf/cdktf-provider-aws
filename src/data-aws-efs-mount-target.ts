@@ -7,7 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEfsMountTargetConfig extends cdktf.TerraformMetaArguments {
-  readonly mountTargetId: string;
+  readonly accessPointId?: string;
+  readonly fileSystemId?: string;
+  readonly mountTargetId?: string;
 }
 
 // Resource
@@ -18,7 +20,7 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
   // INITIALIZER
   // ===========
 
-  public constructor(scope: Construct, id: string, config: DataAwsEfsMountTargetConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsEfsMountTargetConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_efs_mount_target',
       terraformGeneratorMetadata: {
@@ -29,12 +31,30 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._accessPointId = config.accessPointId;
+    this._fileSystemId = config.fileSystemId;
     this._mountTargetId = config.mountTargetId;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // access_point_id - computed: false, optional: true, required: false
+  private _accessPointId?: string;
+  public get accessPointId() {
+    return this.getStringAttribute('access_point_id');
+  }
+  public set accessPointId(value: string ) {
+    this._accessPointId = value;
+  }
+  public resetAccessPointId() {
+    this._accessPointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessPointIdInput() {
+    return this._accessPointId
+  }
 
   // availability_zone_id - computed: true, optional: false, required: false
   public get availabilityZoneId() {
@@ -56,9 +76,20 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
     return this.getStringAttribute('file_system_arn');
   }
 
-  // file_system_id - computed: true, optional: false, required: false
+  // file_system_id - computed: true, optional: true, required: false
+  private _fileSystemId?: string;
   public get fileSystemId() {
     return this.getStringAttribute('file_system_id');
+  }
+  public set fileSystemId(value: string) {
+    this._fileSystemId = value;
+  }
+  public resetFileSystemId() {
+    this._fileSystemId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemIdInput() {
+    return this._fileSystemId
   }
 
   // id - computed: true, optional: true, required: false
@@ -76,13 +107,16 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
     return this.getStringAttribute('mount_target_dns_name');
   }
 
-  // mount_target_id - computed: false, optional: false, required: true
-  private _mountTargetId: string;
+  // mount_target_id - computed: true, optional: true, required: false
+  private _mountTargetId?: string;
   public get mountTargetId() {
     return this.getStringAttribute('mount_target_id');
   }
   public set mountTargetId(value: string) {
     this._mountTargetId = value;
+  }
+  public resetMountTargetId() {
+    this._mountTargetId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get mountTargetIdInput() {
@@ -115,6 +149,8 @@ export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      access_point_id: cdktf.stringToTerraform(this._accessPointId),
+      file_system_id: cdktf.stringToTerraform(this._fileSystemId),
       mount_target_id: cdktf.stringToTerraform(this._mountTargetId),
     };
   }

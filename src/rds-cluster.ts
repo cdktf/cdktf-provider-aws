@@ -41,6 +41,7 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   readonly sourceRegion?: string;
   readonly storageEncrypted?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly vpcSecurityGroupIds?: string[];
   /** restore_to_point_in_time block */
   readonly restoreToPointInTime?: RdsClusterRestoreToPointInTime[];
@@ -175,6 +176,7 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._sourceRegion = config.sourceRegion;
     this._storageEncrypted = config.storageEncrypted;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
     this._restoreToPointInTime = config.restoreToPointInTime;
     this._s3Import = config.s3Import;
@@ -760,6 +762,22 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_security_group_ids - computed: true, optional: true, required: false
   private _vpcSecurityGroupIds?: string[];
   public get vpcSecurityGroupIds() {
@@ -880,6 +898,7 @@ export class RdsCluster extends cdktf.TerraformResource {
       source_region: cdktf.stringToTerraform(this._sourceRegion),
       storage_encrypted: cdktf.booleanToTerraform(this._storageEncrypted),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       restore_to_point_in_time: cdktf.listMapper(rdsClusterRestoreToPointInTimeToTerraform)(this._restoreToPointInTime),
       s3_import: cdktf.listMapper(rdsClusterS3ImportToTerraform)(this._s3Import),

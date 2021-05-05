@@ -15,6 +15,7 @@ export interface Apigatewayv2StageConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly stageVariables?: { [key: string]: string };
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** access_log_settings block */
   readonly accessLogSettings?: Apigatewayv2StageAccessLogSettings[];
   /** default_route_settings block */
@@ -103,6 +104,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
     this._name = config.name;
     this._stageVariables = config.stageVariables;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._accessLogSettings = config.accessLogSettings;
     this._defaultRouteSettings = config.defaultRouteSettings;
     this._routeSettings = config.routeSettings;
@@ -254,6 +256,22 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // access_log_settings - computed: false, optional: true, required: false
   private _accessLogSettings?: Apigatewayv2StageAccessLogSettings[];
   public get accessLogSettings() {
@@ -316,6 +334,7 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       stage_variables: cdktf.hashMapper(cdktf.anyToTerraform)(this._stageVariables),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       access_log_settings: cdktf.listMapper(apigatewayv2StageAccessLogSettingsToTerraform)(this._accessLogSettings),
       default_route_settings: cdktf.listMapper(apigatewayv2StageDefaultRouteSettingsToTerraform)(this._defaultRouteSettings),
       route_settings: cdktf.listMapper(apigatewayv2StageRouteSettingsToTerraform)(this._routeSettings),

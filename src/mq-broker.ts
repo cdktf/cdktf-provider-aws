@@ -20,6 +20,7 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   readonly storageType?: string;
   readonly subnetIds?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** configuration block */
   readonly configuration?: MqBrokerConfiguration[];
   /** encryption_options block */
@@ -108,14 +109,14 @@ function mqBrokerLdapServerMetadataToTerraform(struct?: MqBrokerLdapServerMetada
 }
 
 export interface MqBrokerLogs {
-  readonly audit?: boolean;
+  readonly audit?: string;
   readonly general?: boolean;
 }
 
 function mqBrokerLogsToTerraform(struct?: MqBrokerLogs): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
-    audit: cdktf.booleanToTerraform(struct!.audit),
+    audit: cdktf.stringToTerraform(struct!.audit),
     general: cdktf.booleanToTerraform(struct!.general),
   }
 }
@@ -185,6 +186,7 @@ export class MqBroker extends cdktf.TerraformResource {
     this._storageType = config.storageType;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._configuration = config.configuration;
     this._encryptionOptions = config.encryptionOptions;
     this._ldapServerMetadata = config.ldapServerMetadata;
@@ -408,6 +410,22 @@ export class MqBroker extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // configuration - computed: false, optional: true, required: false
   private _configuration?: MqBrokerConfiguration[];
   public get configuration() {
@@ -520,6 +538,7 @@ export class MqBroker extends cdktf.TerraformResource {
       storage_type: cdktf.stringToTerraform(this._storageType),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       configuration: cdktf.listMapper(mqBrokerConfigurationToTerraform)(this._configuration),
       encryption_options: cdktf.listMapper(mqBrokerEncryptionOptionsToTerraform)(this._encryptionOptions),
       ldap_server_metadata: cdktf.listMapper(mqBrokerLdapServerMetadataToTerraform)(this._ldapServerMetadata),

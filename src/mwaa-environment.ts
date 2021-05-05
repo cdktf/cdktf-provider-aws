@@ -22,6 +22,7 @@ export interface MwaaEnvironmentConfig extends cdktf.TerraformMetaArguments {
   readonly requirementsS3Path?: string;
   readonly sourceBucketArn: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly webserverAccessMode?: string;
   readonly weeklyMaintenanceWindowStart?: string;
   /** logging_configuration block */
@@ -195,6 +196,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
     this._requirementsS3Path = config.requirementsS3Path;
     this._sourceBucketArn = config.sourceBucketArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._webserverAccessMode = config.webserverAccessMode;
     this._weeklyMaintenanceWindowStart = config.weeklyMaintenanceWindowStart;
     this._loggingConfiguration = config.loggingConfiguration;
@@ -463,6 +465,22 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // webserver_access_mode - computed: true, optional: true, required: false
   private _webserverAccessMode?: string;
   public get webserverAccessMode() {
@@ -550,6 +568,7 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
       requirements_s3_path: cdktf.stringToTerraform(this._requirementsS3Path),
       source_bucket_arn: cdktf.stringToTerraform(this._sourceBucketArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       webserver_access_mode: cdktf.stringToTerraform(this._webserverAccessMode),
       weekly_maintenance_window_start: cdktf.stringToTerraform(this._weeklyMaintenanceWindowStart),
       logging_configuration: cdktf.listMapper(mwaaEnvironmentLoggingConfigurationToTerraform)(this._loggingConfiguration),

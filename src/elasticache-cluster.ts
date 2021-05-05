@@ -30,6 +30,7 @@ export interface ElasticacheClusterConfig extends cdktf.TerraformMetaArguments {
   readonly snapshotWindow?: string;
   readonly subnetGroupName?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 export class ElasticacheClusterCacheNodes extends cdktf.ComplexComputedList {
 
@@ -96,6 +97,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     this._snapshotWindow = config.snapshotWindow;
     this._subnetGroupName = config.subnetGroupName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -213,6 +215,11 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get engineVersionInput() {
     return this._engineVersion
+  }
+
+  // engine_version_actual - computed: true, optional: false, required: false
+  public get engineVersionActual() {
+    return this.getStringAttribute('engine_version_actual');
   }
 
   // final_snapshot_identifier - computed: false, optional: true, required: false
@@ -492,6 +499,22 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -521,6 +544,7 @@ export class ElasticacheCluster extends cdktf.TerraformResource {
       snapshot_window: cdktf.stringToTerraform(this._snapshotWindow),
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

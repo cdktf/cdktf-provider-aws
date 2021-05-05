@@ -10,6 +10,7 @@ export interface ImagebuilderDistributionConfigurationConfig extends cdktf.Terra
   readonly description?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** distribution block */
   readonly distribution: ImagebuilderDistributionConfigurationDistribution[];
 }
@@ -87,6 +88,7 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
     this._description = config.description;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._distribution = config.distribution;
   }
 
@@ -159,6 +161,22 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // distribution - computed: false, optional: false, required: true
   private _distribution: ImagebuilderDistributionConfigurationDistribution[];
   public get distribution() {
@@ -181,6 +199,7 @@ export class ImagebuilderDistributionConfiguration extends cdktf.TerraformResour
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       distribution: cdktf.listMapper(imagebuilderDistributionConfigurationDistributionToTerraform)(this._distribution),
     };
   }

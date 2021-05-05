@@ -17,6 +17,7 @@ export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
   readonly securityConfiguration?: string;
   readonly tablePrefix?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** catalog_target block */
   readonly catalogTarget?: GlueCrawlerCatalogTarget[];
   /** dynamodb_target block */
@@ -172,6 +173,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
     this._securityConfiguration = config.securityConfiguration;
     this._tablePrefix = config.tablePrefix;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._catalogTarget = config.catalogTarget;
     this._dynamodbTarget = config.dynamodbTarget;
     this._jdbcTarget = config.jdbcTarget;
@@ -347,6 +349,22 @@ export class GlueCrawler extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // catalog_target - computed: false, optional: true, required: false
   private _catalogTarget?: GlueCrawlerCatalogTarget[];
   public get catalogTarget() {
@@ -491,6 +509,7 @@ export class GlueCrawler extends cdktf.TerraformResource {
       security_configuration: cdktf.stringToTerraform(this._securityConfiguration),
       table_prefix: cdktf.stringToTerraform(this._tablePrefix),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       catalog_target: cdktf.listMapper(glueCrawlerCatalogTargetToTerraform)(this._catalogTarget),
       dynamodb_target: cdktf.listMapper(glueCrawlerDynamodbTargetToTerraform)(this._dynamodbTarget),
       jdbc_target: cdktf.listMapper(glueCrawlerJdbcTargetToTerraform)(this._jdbcTarget),

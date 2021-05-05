@@ -13,6 +13,7 @@ export interface EbsSnapshotCopyConfig extends cdktf.TerraformMetaArguments {
   readonly sourceRegion: string;
   readonly sourceSnapshotId: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -40,6 +41,7 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
     this._sourceRegion = config.sourceRegion;
     this._sourceSnapshotId = config.sourceSnapshotId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -161,6 +163,22 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // volume_id - computed: true, optional: false, required: false
   public get volumeId() {
     return this.getStringAttribute('volume_id');
@@ -183,6 +201,7 @@ export class EbsSnapshotCopy extends cdktf.TerraformResource {
       source_region: cdktf.stringToTerraform(this._sourceRegion),
       source_snapshot_id: cdktf.stringToTerraform(this._sourceSnapshotId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

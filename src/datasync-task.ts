@@ -12,6 +12,7 @@ export interface DatasyncTaskConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
   readonly sourceLocationArn: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** options block */
   readonly options?: DatasyncTaskOptions[];
   /** timeouts block */
@@ -21,6 +22,7 @@ export interface DatasyncTaskOptions {
   readonly atime?: string;
   readonly bytesPerSecond?: number;
   readonly gid?: string;
+  readonly logLevel?: string;
   readonly mtime?: string;
   readonly posixPermissions?: string;
   readonly preserveDeletedFiles?: string;
@@ -35,6 +37,7 @@ function datasyncTaskOptionsToTerraform(struct?: DatasyncTaskOptions): any {
     atime: cdktf.stringToTerraform(struct!.atime),
     bytes_per_second: cdktf.numberToTerraform(struct!.bytesPerSecond),
     gid: cdktf.stringToTerraform(struct!.gid),
+    log_level: cdktf.stringToTerraform(struct!.logLevel),
     mtime: cdktf.stringToTerraform(struct!.mtime),
     posix_permissions: cdktf.stringToTerraform(struct!.posixPermissions),
     preserve_deleted_files: cdktf.stringToTerraform(struct!.preserveDeletedFiles),
@@ -80,6 +83,7 @@ export class DatasyncTask extends cdktf.TerraformResource {
     this._name = config.name;
     this._sourceLocationArn = config.sourceLocationArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._options = config.options;
     this._timeouts = config.timeouts;
   }
@@ -172,6 +176,22 @@ export class DatasyncTask extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // options - computed: false, optional: true, required: false
   private _options?: DatasyncTaskOptions[];
   public get options() {
@@ -215,6 +235,7 @@ export class DatasyncTask extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       source_location_arn: cdktf.stringToTerraform(this._sourceLocationArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       options: cdktf.listMapper(datasyncTaskOptionsToTerraform)(this._options),
       timeouts: datasyncTaskTimeoutsToTerraform(this._timeouts),
     };

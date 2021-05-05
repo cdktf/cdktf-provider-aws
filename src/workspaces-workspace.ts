@@ -11,6 +11,7 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   readonly directoryId: string;
   readonly rootVolumeEncryptionEnabled?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly userName: string;
   readonly userVolumeEncryptionEnabled?: boolean;
   readonly volumeEncryptionKey?: string;
@@ -77,6 +78,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
     this._directoryId = config.directoryId;
     this._rootVolumeEncryptionEnabled = config.rootVolumeEncryptionEnabled;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._userName = config.userName;
     this._userVolumeEncryptionEnabled = config.userVolumeEncryptionEnabled;
     this._volumeEncryptionKey = config.volumeEncryptionKey;
@@ -166,6 +168,22 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // user_name - computed: false, optional: false, required: true
   private _userName: string;
   public get userName() {
@@ -253,6 +271,7 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
       directory_id: cdktf.stringToTerraform(this._directoryId),
       root_volume_encryption_enabled: cdktf.booleanToTerraform(this._rootVolumeEncryptionEnabled),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       user_name: cdktf.stringToTerraform(this._userName),
       user_volume_encryption_enabled: cdktf.booleanToTerraform(this._userVolumeEncryptionEnabled),
       volume_encryption_key: cdktf.stringToTerraform(this._volumeEncryptionKey),

@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AccessanalyzerAnalyzerConfig extends cdktf.TerraformMetaArguments {
   readonly analyzerName: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly type?: string;
 }
 
@@ -33,6 +34,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
     });
     this._analyzerName = config.analyzerName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._type = config.type;
   }
 
@@ -79,6 +81,22 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // type - computed: false, optional: true, required: false
   private _type?: string;
   public get type() {
@@ -103,6 +121,7 @@ export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
     return {
       analyzer_name: cdktf.stringToTerraform(this._analyzerName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
     };
   }

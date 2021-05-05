@@ -11,6 +11,7 @@ export interface Route53ResolverEndpointConfig extends cdktf.TerraformMetaArgume
   readonly name?: string;
   readonly securityGroupIds: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** ip_address block */
   readonly ipAddress: Route53ResolverEndpointIpAddress[];
   /** timeouts block */
@@ -68,6 +69,7 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
     this._name = config.name;
     this._securityGroupIds = config.securityGroupIds;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._ipAddress = config.ipAddress;
     this._timeouts = config.timeouts;
   }
@@ -149,6 +151,22 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // ip_address - computed: false, optional: false, required: true
   private _ipAddress: Route53ResolverEndpointIpAddress[];
   public get ipAddress() {
@@ -188,6 +206,7 @@ export class Route53ResolverEndpoint extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       ip_address: cdktf.listMapper(route53ResolverEndpointIpAddressToTerraform)(this._ipAddress),
       timeouts: route53ResolverEndpointTimeoutsToTerraform(this._timeouts),
     };

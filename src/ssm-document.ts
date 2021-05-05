@@ -13,6 +13,7 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly permissions?: { [key: string]: string };
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly targetType?: string;
   readonly versionName?: string;
   /** attachments_source block */
@@ -81,6 +82,7 @@ export class SsmDocument extends cdktf.TerraformResource {
     this._name = config.name;
     this._permissions = config.permissions;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._targetType = config.targetType;
     this._versionName = config.versionName;
     this._attachmentsSource = config.attachmentsSource;
@@ -247,6 +249,22 @@ export class SsmDocument extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // target_type - computed: false, optional: true, required: false
   private _targetType?: string;
   public get targetType() {
@@ -307,6 +325,7 @@ export class SsmDocument extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       permissions: cdktf.hashMapper(cdktf.anyToTerraform)(this._permissions),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       target_type: cdktf.stringToTerraform(this._targetType),
       version_name: cdktf.stringToTerraform(this._versionName),
       attachments_source: cdktf.listMapper(ssmDocumentAttachmentsSourceToTerraform)(this._attachmentsSource),

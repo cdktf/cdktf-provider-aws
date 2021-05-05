@@ -17,6 +17,7 @@ export interface CloudformationStackConfig extends cdktf.TerraformMetaArguments 
   readonly policyBody?: string;
   readonly policyUrl?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly templateBody?: string;
   readonly templateUrl?: string;
   readonly timeoutInMinutes?: number;
@@ -68,6 +69,7 @@ export class CloudformationStack extends cdktf.TerraformResource {
     this._policyBody = config.policyBody;
     this._policyUrl = config.policyUrl;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._templateBody = config.templateBody;
     this._templateUrl = config.templateUrl;
     this._timeoutInMinutes = config.timeoutInMinutes;
@@ -245,6 +247,22 @@ export class CloudformationStack extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // template_body - computed: true, optional: true, required: false
   private _templateBody?: string;
   public get templateBody() {
@@ -325,6 +343,7 @@ export class CloudformationStack extends cdktf.TerraformResource {
       policy_body: cdktf.stringToTerraform(this._policyBody),
       policy_url: cdktf.stringToTerraform(this._policyUrl),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_url: cdktf.stringToTerraform(this._templateUrl),
       timeout_in_minutes: cdktf.numberToTerraform(this._timeoutInMinutes),

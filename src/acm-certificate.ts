@@ -14,6 +14,7 @@ export interface AcmCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly privateKey?: string;
   readonly subjectAlternativeNames?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly validationMethod?: string;
   /** options block */
   readonly options?: AcmCertificateOptions[];
@@ -78,6 +79,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
     this._privateKey = config.privateKey;
     this._subjectAlternativeNames = config.subjectAlternativeNames;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._validationMethod = config.validationMethod;
     this._options = config.options;
   }
@@ -218,6 +220,22 @@ export class AcmCertificate extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // validation_emails - computed: true, optional: false, required: false
   public get validationEmails() {
     return this.getListAttribute('validation_emails');
@@ -268,6 +286,7 @@ export class AcmCertificate extends cdktf.TerraformResource {
       private_key: cdktf.stringToTerraform(this._privateKey),
       subject_alternative_names: cdktf.listMapper(cdktf.stringToTerraform)(this._subjectAlternativeNames),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       validation_method: cdktf.stringToTerraform(this._validationMethod),
       options: cdktf.listMapper(acmCertificateOptionsToTerraform)(this._options),
     };

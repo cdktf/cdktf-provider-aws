@@ -16,6 +16,7 @@ export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArgu
   readonly shortName?: string;
   readonly size?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly type?: string;
   /** connect_settings block */
   readonly connectSettings?: DirectoryServiceDirectoryConnectSettings[];
@@ -81,6 +82,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
     this._shortName = config.shortName;
     this._size = config.size;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._connectSettings = config.connectSettings;
     this._vpcSettings = config.vpcSettings;
@@ -248,6 +250,22 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // type - computed: false, optional: true, required: false
   private _type?: string;
   public get type() {
@@ -311,6 +329,7 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
       short_name: cdktf.stringToTerraform(this._shortName),
       size: cdktf.stringToTerraform(this._size),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       connect_settings: cdktf.listMapper(directoryServiceDirectoryConnectSettingsToTerraform)(this._connectSettings),
       vpc_settings: cdktf.listMapper(directoryServiceDirectoryVpcSettingsToTerraform)(this._vpcSettings),

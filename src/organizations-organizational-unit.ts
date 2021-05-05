@@ -9,6 +9,8 @@ import * as cdktf from 'cdktf';
 export interface OrganizationsOrganizationalUnitConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly parentId: string;
+  readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 export class OrganizationsOrganizationalUnitAccounts extends cdktf.ComplexComputedList {
 
@@ -54,6 +56,8 @@ export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
     });
     this._name = config.name;
     this._parentId = config.parentId;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -101,6 +105,38 @@ export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
     return this._parentId
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -109,6 +145,8 @@ export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
     return {
       name: cdktf.stringToTerraform(this._name),
       parent_id: cdktf.stringToTerraform(this._parentId),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

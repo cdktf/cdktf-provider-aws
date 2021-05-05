@@ -19,6 +19,7 @@ export interface DaxClusterConfig extends cdktf.TerraformMetaArguments {
   readonly securityGroupIds?: string[];
   readonly subnetGroupName?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** server_side_encryption block */
   readonly serverSideEncryption?: DaxClusterServerSideEncryption[];
   /** timeouts block */
@@ -104,6 +105,7 @@ export class DaxCluster extends cdktf.TerraformResource {
     this._securityGroupIds = config.securityGroupIds;
     this._subnetGroupName = config.subnetGroupName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._serverSideEncryption = config.serverSideEncryption;
     this._timeouts = config.timeouts;
   }
@@ -322,6 +324,22 @@ export class DaxCluster extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // server_side_encryption - computed: false, optional: true, required: false
   private _serverSideEncryption?: DaxClusterServerSideEncryption[];
   public get serverSideEncryption() {
@@ -372,6 +390,7 @@ export class DaxCluster extends cdktf.TerraformResource {
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       subnet_group_name: cdktf.stringToTerraform(this._subnetGroupName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       server_side_encryption: cdktf.listMapper(daxClusterServerSideEncryptionToTerraform)(this._serverSideEncryption),
       timeouts: daxClusterTimeoutsToTerraform(this._timeouts),
     };

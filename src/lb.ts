@@ -21,6 +21,7 @@ export interface LbConfig extends cdktf.TerraformMetaArguments {
   readonly securityGroups?: string[];
   readonly subnets?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** access_logs block */
   readonly accessLogs?: LbAccessLogs[];
   /** subnet_mapping block */
@@ -109,6 +110,7 @@ export class Lb extends cdktf.TerraformResource {
     this._securityGroups = config.securityGroups;
     this._subnets = config.subnets;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._accessLogs = config.accessLogs;
     this._subnetMapping = config.subnetMapping;
     this._timeouts = config.timeouts;
@@ -362,6 +364,22 @@ export class Lb extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_id - computed: true, optional: false, required: false
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
@@ -440,6 +458,7 @@ export class Lb extends cdktf.TerraformResource {
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       access_logs: cdktf.listMapper(lbAccessLogsToTerraform)(this._accessLogs),
       subnet_mapping: cdktf.listMapper(lbSubnetMappingToTerraform)(this._subnetMapping),
       timeouts: lbTimeoutsToTerraform(this._timeouts),

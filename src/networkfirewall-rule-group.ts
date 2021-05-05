@@ -12,6 +12,7 @@ export interface NetworkfirewallRuleGroupConfig extends cdktf.TerraformMetaArgum
   readonly name: string;
   readonly rules?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly type: string;
   /** rule_group block */
   readonly ruleGroup?: NetworkfirewallRuleGroupRuleGroup[];
@@ -386,6 +387,7 @@ export class NetworkfirewallRuleGroup extends cdktf.TerraformResource {
     this._name = config.name;
     this._rules = config.rules;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._ruleGroup = config.ruleGroup;
   }
@@ -478,6 +480,22 @@ export class NetworkfirewallRuleGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
@@ -523,6 +541,7 @@ export class NetworkfirewallRuleGroup extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       rules: cdktf.stringToTerraform(this._rules),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       rule_group: cdktf.listMapper(networkfirewallRuleGroupRuleGroupToTerraform)(this._ruleGroup),
     };

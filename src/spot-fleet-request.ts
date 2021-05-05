@@ -17,6 +17,7 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   readonly replaceUnhealthyInstances?: boolean;
   readonly spotPrice?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly targetCapacity: number;
   readonly targetGroupArns?: string[];
   readonly terminateInstancesWithExpiration?: boolean;
@@ -264,6 +265,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     this._replaceUnhealthyInstances = config.replaceUnhealthyInstances;
     this._spotPrice = config.spotPrice;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._targetCapacity = config.targetCapacity;
     this._targetGroupArns = config.targetGroupArns;
     this._terminateInstancesWithExpiration = config.terminateInstancesWithExpiration;
@@ -452,6 +454,22 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // target_capacity - computed: false, optional: false, required: true
   private _targetCapacity: number;
   public get targetCapacity() {
@@ -625,6 +643,7 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       replace_unhealthy_instances: cdktf.booleanToTerraform(this._replaceUnhealthyInstances),
       spot_price: cdktf.stringToTerraform(this._spotPrice),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       target_capacity: cdktf.numberToTerraform(this._targetCapacity),
       target_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupArns),
       terminate_instances_with_expiration: cdktf.booleanToTerraform(this._terminateInstancesWithExpiration),

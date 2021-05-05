@@ -11,6 +11,7 @@ export interface WorkspacesDirectoryConfig extends cdktf.TerraformMetaArguments 
   readonly ipGroupIds?: string[];
   readonly subnetIds?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** self_service_permissions block */
   readonly selfServicePermissions?: WorkspacesDirectorySelfServicePermissions[];
   /** workspace_access_properties block */
@@ -103,6 +104,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
     this._ipGroupIds = config.ipGroupIds;
     this._subnetIds = config.subnetIds;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._selfServicePermissions = config.selfServicePermissions;
     this._workspaceAccessProperties = config.workspaceAccessProperties;
     this._workspaceCreationProperties = config.workspaceCreationProperties;
@@ -213,6 +215,22 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // workspace_security_group_id - computed: true, optional: false, required: false
   public get workspaceSecurityGroupId() {
     return this.getStringAttribute('workspace_security_group_id');
@@ -276,6 +294,7 @@ export class WorkspacesDirectory extends cdktf.TerraformResource {
       ip_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._ipGroupIds),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       self_service_permissions: cdktf.listMapper(workspacesDirectorySelfServicePermissionsToTerraform)(this._selfServicePermissions),
       workspace_access_properties: cdktf.listMapper(workspacesDirectoryWorkspaceAccessPropertiesToTerraform)(this._workspaceAccessProperties),
       workspace_creation_properties: cdktf.listMapper(workspacesDirectoryWorkspaceCreationPropertiesToTerraform)(this._workspaceCreationProperties),

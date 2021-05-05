@@ -102,6 +102,7 @@ function sesReceiptRuleS3ActionToTerraform(struct?: SesReceiptRuleS3Action): any
 }
 
 export interface SesReceiptRuleSnsAction {
+  readonly encoding?: string;
   readonly position: number;
   readonly topicArn: string;
 }
@@ -109,6 +110,7 @@ export interface SesReceiptRuleSnsAction {
 function sesReceiptRuleSnsActionToTerraform(struct?: SesReceiptRuleSnsAction): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    encoding: cdktf.stringToTerraform(struct!.encoding),
     position: cdktf.numberToTerraform(struct!.position),
     topic_arn: cdktf.stringToTerraform(struct!.topicArn),
   }

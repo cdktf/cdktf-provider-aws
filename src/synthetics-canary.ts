@@ -19,6 +19,7 @@ export interface SyntheticsCanaryConfig extends cdktf.TerraformMetaArguments {
   readonly startCanary?: boolean;
   readonly successRetentionPeriod?: number;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly zipFile?: string;
   /** run_config block */
   readonly runConfig?: SyntheticsCanaryRunConfig[];
@@ -122,6 +123,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
     this._startCanary = config.startCanary;
     this._successRetentionPeriod = config.successRetentionPeriod;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._zipFile = config.zipFile;
     this._runConfig = config.runConfig;
     this._schedule = config.schedule;
@@ -334,6 +336,22 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // timeline - computed: true, optional: false, required: false
   public timeline(index: string) {
     return new SyntheticsCanaryTimeline(this, 'timeline', index);
@@ -418,6 +436,7 @@ export class SyntheticsCanary extends cdktf.TerraformResource {
       start_canary: cdktf.booleanToTerraform(this._startCanary),
       success_retention_period: cdktf.numberToTerraform(this._successRetentionPeriod),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       zip_file: cdktf.stringToTerraform(this._zipFile),
       run_config: cdktf.listMapper(syntheticsCanaryRunConfigToTerraform)(this._runConfig),
       schedule: cdktf.listMapper(syntheticsCanaryScheduleToTerraform)(this._schedule),

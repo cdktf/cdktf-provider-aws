@@ -12,6 +12,7 @@ export interface KinesisAnalyticsApplicationConfig extends cdktf.TerraformMetaAr
   readonly name: string;
   readonly startApplication?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** cloudwatch_logging_options block */
   readonly cloudwatchLoggingOptions?: KinesisAnalyticsApplicationCloudwatchLoggingOptions[];
   /** inputs block */
@@ -432,6 +433,7 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
     this._name = config.name;
     this._startApplication = config.startApplication;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._cloudwatchLoggingOptions = config.cloudwatchLoggingOptions;
     this._inputs = config.inputs;
     this._outputs = config.outputs;
@@ -544,6 +546,22 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getNumberAttribute('version');
@@ -624,6 +642,7 @@ export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       start_application: cdktf.booleanToTerraform(this._startApplication),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       cloudwatch_logging_options: cdktf.listMapper(kinesisAnalyticsApplicationCloudwatchLoggingOptionsToTerraform)(this._cloudwatchLoggingOptions),
       inputs: cdktf.listMapper(kinesisAnalyticsApplicationInputsToTerraform)(this._inputs),
       outputs: cdktf.listMapper(kinesisAnalyticsApplicationOutputsToTerraform)(this._outputs),

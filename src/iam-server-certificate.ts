@@ -14,6 +14,7 @@ export interface IamServerCertificateConfig extends cdktf.TerraformMetaArguments
   readonly path?: string;
   readonly privateKey: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -42,6 +43,7 @@ export class IamServerCertificate extends cdktf.TerraformResource {
     this._path = config.path;
     this._privateKey = config.privateKey;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -169,6 +171,22 @@ export class IamServerCertificate extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // upload_date - computed: true, optional: false, required: false
   public get uploadDate() {
     return this.getStringAttribute('upload_date');
@@ -187,6 +205,7 @@ export class IamServerCertificate extends cdktf.TerraformResource {
       path: cdktf.stringToTerraform(this._path),
       private_key: cdktf.stringToTerraform(this._privateKey),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

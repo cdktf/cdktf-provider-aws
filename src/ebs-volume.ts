@@ -16,6 +16,7 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly size?: number;
   readonly snapshotId?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly throughput?: number;
   readonly type?: string;
 }
@@ -48,6 +49,7 @@ export class EbsVolume extends cdktf.TerraformResource {
     this._size = config.size;
     this._snapshotId = config.snapshotId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._throughput = config.throughput;
     this._type = config.type;
   }
@@ -207,6 +209,22 @@ export class EbsVolume extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // throughput - computed: true, optional: true, required: false
   private _throughput?: number;
   public get throughput() {
@@ -254,6 +272,7 @@ export class EbsVolume extends cdktf.TerraformResource {
       size: cdktf.numberToTerraform(this._size),
       snapshot_id: cdktf.stringToTerraform(this._snapshotId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       throughput: cdktf.numberToTerraform(this._throughput),
       type: cdktf.stringToTerraform(this._type),
     };

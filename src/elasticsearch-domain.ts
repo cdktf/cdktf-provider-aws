@@ -12,6 +12,7 @@ export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments 
   readonly domainName: string;
   readonly elasticsearchVersion?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** advanced_security_options block */
   readonly advancedSecurityOptions?: ElasticsearchDomainAdvancedSecurityOptions[];
   /** cluster_config block */
@@ -259,6 +260,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
     this._domainName = config.domainName;
     this._elasticsearchVersion = config.elasticsearchVersion;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._advancedSecurityOptions = config.advancedSecurityOptions;
     this._clusterConfig = config.clusterConfig;
     this._cognitoOptions = config.cognitoOptions;
@@ -376,6 +378,22 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // advanced_security_options - computed: false, optional: true, required: false
@@ -565,6 +583,7 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
       domain_name: cdktf.stringToTerraform(this._domainName),
       elasticsearch_version: cdktf.stringToTerraform(this._elasticsearchVersion),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       advanced_security_options: cdktf.listMapper(elasticsearchDomainAdvancedSecurityOptionsToTerraform)(this._advancedSecurityOptions),
       cluster_config: cdktf.listMapper(elasticsearchDomainClusterConfigToTerraform)(this._clusterConfig),
       cognito_options: cdktf.listMapper(elasticsearchDomainCognitoOptionsToTerraform)(this._cognitoOptions),

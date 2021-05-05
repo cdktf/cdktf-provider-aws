@@ -14,6 +14,7 @@ export interface SecurityGroupConfig extends cdktf.TerraformMetaArguments {
   readonly namePrefix?: string;
   readonly revokeRulesOnDelete?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly vpcId?: string;
   /** timeouts block */
   readonly timeouts?: SecurityGroupTimeouts;
@@ -112,6 +113,7 @@ export class SecurityGroup extends cdktf.TerraformResource {
     this._namePrefix = config.namePrefix;
     this._revokeRulesOnDelete = config.revokeRulesOnDelete;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._vpcId = config.vpcId;
     this._timeouts = config.timeouts;
   }
@@ -247,6 +249,22 @@ export class SecurityGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc_id - computed: true, optional: true, required: false
   private _vpcId?: string;
   public get vpcId() {
@@ -292,6 +310,7 @@ export class SecurityGroup extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       revoke_rules_on_delete: cdktf.booleanToTerraform(this._revokeRulesOnDelete),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       timeouts: securityGroupTimeoutsToTerraform(this._timeouts),
     };

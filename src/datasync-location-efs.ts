@@ -10,6 +10,7 @@ export interface DatasyncLocationEfsConfig extends cdktf.TerraformMetaArguments 
   readonly efsFileSystemArn: string;
   readonly subdirectory?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** ec2_config block */
   readonly ec2Config: DatasyncLocationEfsEc2Config[];
 }
@@ -49,6 +50,7 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
     this._efsFileSystemArn = config.efsFileSystemArn;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._ec2Config = config.ec2Config;
   }
 
@@ -111,6 +113,22 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // uri - computed: true, optional: false, required: false
   public get uri() {
     return this.getStringAttribute('uri');
@@ -138,6 +156,7 @@ export class DatasyncLocationEfs extends cdktf.TerraformResource {
       efs_file_system_arn: cdktf.stringToTerraform(this._efsFileSystemArn),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       ec2_config: cdktf.listMapper(datasyncLocationEfsEc2ConfigToTerraform)(this._ec2Config),
     };
   }

@@ -20,6 +20,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   readonly sourceSecurityGroup?: string;
   readonly subnets?: string[];
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** access_logs block */
   readonly accessLogs?: ElbAccessLogs[];
   /** health_check block */
@@ -115,6 +116,7 @@ export class Elb extends cdktf.TerraformResource {
     this._sourceSecurityGroup = config.sourceSecurityGroup;
     this._subnets = config.subnets;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._accessLogs = config.accessLogs;
     this._healthCheck = config.healthCheck;
     this._listener = config.listener;
@@ -352,6 +354,22 @@ export class Elb extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // zone_id - computed: true, optional: false, required: false
   public get zoneId() {
     return this.getStringAttribute('zone_id');
@@ -421,6 +439,7 @@ export class Elb extends cdktf.TerraformResource {
       source_security_group: cdktf.stringToTerraform(this._sourceSecurityGroup),
       subnets: cdktf.listMapper(cdktf.stringToTerraform)(this._subnets),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       access_logs: cdktf.listMapper(elbAccessLogsToTerraform)(this._accessLogs),
       health_check: cdktf.listMapper(elbHealthCheckToTerraform)(this._healthCheck),
       listener: cdktf.listMapper(elbListenerToTerraform)(this._listener),

@@ -15,6 +15,7 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   readonly remoteIpv6NetworkCidr?: string;
   readonly staticRoutesOnly?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly transitGatewayId?: string;
   readonly tunnel1DpdTimeoutAction?: string;
   readonly tunnel1DpdTimeoutSeconds?: number;
@@ -128,6 +129,7 @@ export class VpnConnection extends cdktf.TerraformResource {
     this._remoteIpv6NetworkCidr = config.remoteIpv6NetworkCidr;
     this._staticRoutesOnly = config.staticRoutesOnly;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._transitGatewayId = config.transitGatewayId;
     this._tunnel1DpdTimeoutAction = config.tunnel1DpdTimeoutAction;
     this._tunnel1DpdTimeoutSeconds = config.tunnel1DpdTimeoutSeconds;
@@ -317,6 +319,22 @@ export class VpnConnection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // transit_gateway_attachment_id - computed: true, optional: false, required: false
@@ -1030,6 +1048,7 @@ export class VpnConnection extends cdktf.TerraformResource {
       remote_ipv6_network_cidr: cdktf.stringToTerraform(this._remoteIpv6NetworkCidr),
       static_routes_only: cdktf.booleanToTerraform(this._staticRoutesOnly),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       transit_gateway_id: cdktf.stringToTerraform(this._transitGatewayId),
       tunnel1_dpd_timeout_action: cdktf.stringToTerraform(this._tunnel1DpdTimeoutAction),
       tunnel1_dpd_timeout_seconds: cdktf.numberToTerraform(this._tunnel1DpdTimeoutSeconds),

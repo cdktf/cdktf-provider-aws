@@ -10,6 +10,7 @@ export interface CodepipelineWebhookConfig extends cdktf.TerraformMetaArguments 
   readonly authentication: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly targetAction: string;
   readonly targetPipeline: string;
   /** authentication_configuration block */
@@ -66,6 +67,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
     this._authentication = config.authentication;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._targetAction = config.targetAction;
     this._targetPipeline = config.targetPipeline;
     this._authenticationConfiguration = config.authenticationConfiguration;
@@ -121,6 +123,22 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // target_action - computed: false, optional: false, required: true
@@ -192,6 +210,7 @@ export class CodepipelineWebhook extends cdktf.TerraformResource {
       authentication: cdktf.stringToTerraform(this._authentication),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       target_action: cdktf.stringToTerraform(this._targetAction),
       target_pipeline: cdktf.stringToTerraform(this._targetPipeline),
       authentication_configuration: cdktf.listMapper(codepipelineWebhookAuthenticationConfigurationToTerraform)(this._authenticationConfiguration),

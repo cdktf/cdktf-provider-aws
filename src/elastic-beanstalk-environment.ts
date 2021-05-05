@@ -15,6 +15,7 @@ export interface ElasticBeanstalkEnvironmentConfig extends cdktf.TerraformMetaAr
   readonly pollInterval?: string;
   readonly solutionStackName?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly templateName?: string;
   readonly tier?: string;
   readonly versionLabel?: string;
@@ -89,6 +90,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
     this._pollInterval = config.pollInterval;
     this._solutionStackName = config.solutionStackName;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._templateName = config.templateName;
     this._tier = config.tier;
     this._versionLabel = config.versionLabel;
@@ -272,6 +274,22 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // template_name - computed: false, optional: true, required: false
   private _templateName?: string;
   public get templateName() {
@@ -371,6 +389,7 @@ export class ElasticBeanstalkEnvironment extends cdktf.TerraformResource {
       poll_interval: cdktf.stringToTerraform(this._pollInterval),
       solution_stack_name: cdktf.stringToTerraform(this._solutionStackName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       template_name: cdktf.stringToTerraform(this._templateName),
       tier: cdktf.stringToTerraform(this._tier),
       version_label: cdktf.stringToTerraform(this._versionLabel),

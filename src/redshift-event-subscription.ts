@@ -15,6 +15,7 @@ export interface RedshiftEventSubscriptionConfig extends cdktf.TerraformMetaArgu
   readonly sourceIds?: string[];
   readonly sourceType?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** timeouts block */
   readonly timeouts?: RedshiftEventSubscriptionTimeouts;
 }
@@ -61,6 +62,7 @@ export class RedshiftEventSubscription extends cdktf.TerraformResource {
     this._sourceIds = config.sourceIds;
     this._sourceType = config.sourceType;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._timeouts = config.timeouts;
   }
 
@@ -210,6 +212,22 @@ export class RedshiftEventSubscription extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: RedshiftEventSubscriptionTimeouts;
   public get timeouts() {
@@ -240,6 +258,7 @@ export class RedshiftEventSubscription extends cdktf.TerraformResource {
       source_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._sourceIds),
       source_type: cdktf.stringToTerraform(this._sourceType),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       timeouts: redshiftEventSubscriptionTimeoutsToTerraform(this._timeouts),
     };
   }

@@ -10,6 +10,7 @@ export interface GuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   readonly enable?: boolean;
   readonly findingPublishingFrequency?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -34,6 +35,7 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
     this._enable = config.enable;
     this._findingPublishingFrequency = config.findingPublishingFrequency;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -103,6 +105,22 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -112,6 +130,7 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
       enable: cdktf.booleanToTerraform(this._enable),
       finding_publishing_frequency: cdktf.stringToTerraform(this._findingPublishingFrequency),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

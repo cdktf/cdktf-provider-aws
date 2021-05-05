@@ -13,6 +13,7 @@ export interface TransferUserConfig extends cdktf.TerraformMetaArguments {
   readonly role: string;
   readonly serverId: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly userName: string;
   /** home_directory_mappings block */
   readonly homeDirectoryMappings?: TransferUserHomeDirectoryMappings[];
@@ -56,6 +57,7 @@ export class TransferUser extends cdktf.TerraformResource {
     this._role = config.role;
     this._serverId = config.serverId;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._userName = config.userName;
     this._homeDirectoryMappings = config.homeDirectoryMappings;
   }
@@ -164,6 +166,22 @@ export class TransferUser extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // user_name - computed: false, optional: false, required: true
   private _userName: string;
   public get userName() {
@@ -205,6 +223,7 @@ export class TransferUser extends cdktf.TerraformResource {
       role: cdktf.stringToTerraform(this._role),
       server_id: cdktf.stringToTerraform(this._serverId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       user_name: cdktf.stringToTerraform(this._userName),
       home_directory_mappings: cdktf.listMapper(transferUserHomeDirectoryMappingsToTerraform)(this._homeDirectoryMappings),
     };

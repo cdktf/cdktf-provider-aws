@@ -27,6 +27,7 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   readonly roleArn: string;
   readonly smbAclEnabled?: boolean;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly validUserList?: string[];
   /** cache_attributes block */
   readonly cacheAttributes?: StoragegatewaySmbFileShareCacheAttributes[];
@@ -99,6 +100,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
     this._roleArn = config.roleArn;
     this._smbAclEnabled = config.smbAclEnabled;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._validUserList = config.validUserList;
     this._cacheAttributes = config.cacheAttributes;
     this._timeouts = config.timeouts;
@@ -439,6 +441,22 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // valid_user_list - computed: false, optional: true, required: false
   private _validUserList?: string[];
   public get validUserList() {
@@ -513,6 +531,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       smb_acl_enabled: cdktf.booleanToTerraform(this._smbAclEnabled),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       valid_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._validUserList),
       cache_attributes: cdktf.listMapper(storagegatewaySmbFileShareCacheAttributesToTerraform)(this._cacheAttributes),
       timeouts: storagegatewaySmbFileShareTimeoutsToTerraform(this._timeouts),

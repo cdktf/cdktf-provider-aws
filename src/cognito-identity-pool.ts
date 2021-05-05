@@ -14,6 +14,7 @@ export interface CognitoIdentityPoolConfig extends cdktf.TerraformMetaArguments 
   readonly samlProviderArns?: string[];
   readonly supportedLoginProviders?: { [key: string]: string };
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** cognito_identity_providers block */
   readonly cognitoIdentityProviders?: CognitoIdentityPoolCognitoIdentityProviders[];
 }
@@ -59,6 +60,7 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
     this._samlProviderArns = config.samlProviderArns;
     this._supportedLoginProviders = config.supportedLoginProviders;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._cognitoIdentityProviders = config.cognitoIdentityProviders;
   }
 
@@ -185,6 +187,22 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // cognito_identity_providers - computed: false, optional: true, required: false
   private _cognitoIdentityProviders?: CognitoIdentityPoolCognitoIdentityProviders[];
   public get cognitoIdentityProviders() {
@@ -214,6 +232,7 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
       saml_provider_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._samlProviderArns),
       supported_login_providers: cdktf.hashMapper(cdktf.anyToTerraform)(this._supportedLoginProviders),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       cognito_identity_providers: cdktf.listMapper(cognitoIdentityPoolCognitoIdentityProvidersToTerraform)(this._cognitoIdentityProviders),
     };
   }

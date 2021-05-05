@@ -13,6 +13,7 @@ export interface DatasyncLocationFsxWindowsFileSystemConfig extends cdktf.Terraf
   readonly securityGroupArns: string[];
   readonly subdirectory?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly user: string;
 }
 
@@ -41,6 +42,7 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
     this._securityGroupArns = config.securityGroupArns;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._user = config.user;
   }
 
@@ -150,6 +152,22 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // uri - computed: true, optional: false, required: false
   public get uri() {
     return this.getStringAttribute('uri');
@@ -180,6 +198,7 @@ export class DatasyncLocationFsxWindowsFileSystem extends cdktf.TerraformResourc
       security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupArns),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       user: cdktf.stringToTerraform(this._user),
     };
   }

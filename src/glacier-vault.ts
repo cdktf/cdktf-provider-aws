@@ -10,6 +10,7 @@ export interface GlacierVaultConfig extends cdktf.TerraformMetaArguments {
   readonly accessPolicy?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** notification block */
   readonly notification?: GlacierVaultNotification[];
 }
@@ -49,6 +50,7 @@ export class GlacierVault extends cdktf.TerraformResource {
     this._accessPolicy = config.accessPolicy;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._notification = config.notification;
   }
 
@@ -116,6 +118,22 @@ export class GlacierVault extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // notification - computed: false, optional: true, required: false
   private _notification?: GlacierVaultNotification[];
   public get notification() {
@@ -141,6 +159,7 @@ export class GlacierVault extends cdktf.TerraformResource {
       access_policy: cdktf.stringToTerraform(this._accessPolicy),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       notification: cdktf.listMapper(glacierVaultNotificationToTerraform)(this._notification),
     };
   }

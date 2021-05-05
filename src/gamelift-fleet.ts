@@ -16,6 +16,7 @@ export interface GameliftFleetConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly newGameSessionProtectionPolicy?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** ec2_inbound_permission block */
   readonly ec2InboundPermission?: GameliftFleetEc2InboundPermission[];
   /** resource_creation_limit_policy block */
@@ -128,6 +129,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
     this._name = config.name;
     this._newGameSessionProtectionPolicy = config.newGameSessionProtectionPolicy;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._ec2InboundPermission = config.ec2InboundPermission;
     this._resourceCreationLimitPolicy = config.resourceCreationLimitPolicy;
     this._runtimeConfiguration = config.runtimeConfiguration;
@@ -293,6 +295,22 @@ export class GameliftFleet extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // ec2_inbound_permission - computed: false, optional: true, required: false
   private _ec2InboundPermission?: GameliftFleetEc2InboundPermission[];
   public get ec2InboundPermission() {
@@ -372,6 +390,7 @@ export class GameliftFleet extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       new_game_session_protection_policy: cdktf.stringToTerraform(this._newGameSessionProtectionPolicy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       ec2_inbound_permission: cdktf.listMapper(gameliftFleetEc2InboundPermissionToTerraform)(this._ec2InboundPermission),
       resource_creation_limit_policy: cdktf.listMapper(gameliftFleetResourceCreationLimitPolicyToTerraform)(this._resourceCreationLimitPolicy),
       runtime_configuration: cdktf.listMapper(gameliftFleetRuntimeConfigurationToTerraform)(this._runtimeConfiguration),

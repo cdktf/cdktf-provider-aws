@@ -7,7 +7,8 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsIamPolicyConfig extends cdktf.TerraformMetaArguments {
-  readonly arn: string;
+  readonly name?: string;
+  readonly pathPrefix?: string;
   readonly tags?: { [key: string]: string };
 }
 
@@ -19,7 +20,7 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
   // INITIALIZER
   // ===========
 
-  public constructor(scope: Construct, id: string, config: DataAwsIamPolicyConfig) {
+  public constructor(scope: Construct, id: string, config: DataAwsIamPolicyConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_iam_policy',
       terraformGeneratorMetadata: {
@@ -30,7 +31,8 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._arn = config.arn;
+    this._name = config.name;
+    this._pathPrefix = config.pathPrefix;
     this._tags = config.tags;
   }
 
@@ -38,17 +40,9 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // arn - computed: false, optional: false, required: true
-  private _arn: string;
+  // arn - computed: true, optional: true, required: false
   public get arn() {
     return this.getStringAttribute('arn');
-  }
-  public set arn(value: string) {
-    this._arn = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get arnInput() {
-    return this._arn
   }
 
   // description - computed: true, optional: false, required: false
@@ -61,14 +55,41 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: true, required: false
+  private _name?: string;
   public get name() {
     return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
+  }
+
+  // path_prefix - computed: false, optional: true, required: false
+  private _pathPrefix?: string;
+  public get pathPrefix() {
+    return this.getStringAttribute('path_prefix');
+  }
+  public set pathPrefix(value: string ) {
+    this._pathPrefix = value;
+  }
+  public resetPathPrefix() {
+    this._pathPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathPrefixInput() {
+    return this._pathPrefix
   }
 
   // policy - computed: true, optional: false, required: false
@@ -103,7 +124,8 @@ export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arn: cdktf.stringToTerraform(this._arn),
+      name: cdktf.stringToTerraform(this._name),
+      path_prefix: cdktf.stringToTerraform(this._pathPrefix),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }

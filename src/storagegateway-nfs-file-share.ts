@@ -22,6 +22,7 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   readonly roleArn: string;
   readonly squash?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** cache_attributes block */
   readonly cacheAttributes?: StoragegatewayNfsFileShareCacheAttributes[];
   /** nfs_file_share_defaults block */
@@ -107,6 +108,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
     this._roleArn = config.roleArn;
     this._squash = config.squash;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._cacheAttributes = config.cacheAttributes;
     this._nfsFileShareDefaults = config.nfsFileShareDefaults;
     this._timeouts = config.timeouts;
@@ -364,6 +366,22 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // cache_attributes - computed: false, optional: true, required: false
   private _cacheAttributes?: StoragegatewayNfsFileShareCacheAttributes[];
   public get cacheAttributes() {
@@ -433,6 +451,7 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
       role_arn: cdktf.stringToTerraform(this._roleArn),
       squash: cdktf.stringToTerraform(this._squash),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       cache_attributes: cdktf.listMapper(storagegatewayNfsFileShareCacheAttributesToTerraform)(this._cacheAttributes),
       nfs_file_share_defaults: cdktf.listMapper(storagegatewayNfsFileShareNfsFileShareDefaultsToTerraform)(this._nfsFileShareDefaults),
       timeouts: storagegatewayNfsFileShareTimeoutsToTerraform(this._timeouts),

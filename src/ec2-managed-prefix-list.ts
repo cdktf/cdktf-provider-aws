@@ -11,6 +11,7 @@ export interface Ec2ManagedPrefixListConfig extends cdktf.TerraformMetaArguments
   readonly maxEntries: number;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** entry block */
   readonly entry?: Ec2ManagedPrefixListEntry[];
 }
@@ -51,6 +52,7 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
     this._maxEntries = config.maxEntries;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._entry = config.entry;
   }
 
@@ -128,6 +130,22 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getNumberAttribute('version');
@@ -159,6 +177,7 @@ export class Ec2ManagedPrefixList extends cdktf.TerraformResource {
       max_entries: cdktf.numberToTerraform(this._maxEntries),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       entry: cdktf.listMapper(ec2ManagedPrefixListEntryToTerraform)(this._entry),
     };
   }

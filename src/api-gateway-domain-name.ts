@@ -17,6 +17,7 @@ export interface ApiGatewayDomainNameConfig extends cdktf.TerraformMetaArguments
   readonly regionalCertificateName?: string;
   readonly securityPolicy?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** endpoint_configuration block */
   readonly endpointConfiguration?: ApiGatewayDomainNameEndpointConfiguration[];
   /** mutual_tls_authentication block */
@@ -76,6 +77,7 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
     this._regionalCertificateName = config.regionalCertificateName;
     this._securityPolicy = config.securityPolicy;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._endpointConfiguration = config.endpointConfiguration;
     this._mutualTlsAuthentication = config.mutualTlsAuthentication;
   }
@@ -276,6 +278,22 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // endpoint_configuration - computed: false, optional: true, required: false
   private _endpointConfiguration?: ApiGatewayDomainNameEndpointConfiguration[];
   public get endpointConfiguration() {
@@ -324,6 +342,7 @@ export class ApiGatewayDomainName extends cdktf.TerraformResource {
       regional_certificate_name: cdktf.stringToTerraform(this._regionalCertificateName),
       security_policy: cdktf.stringToTerraform(this._securityPolicy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       endpoint_configuration: cdktf.listMapper(apiGatewayDomainNameEndpointConfigurationToTerraform)(this._endpointConfiguration),
       mutual_tls_authentication: cdktf.listMapper(apiGatewayDomainNameMutualTlsAuthenticationToTerraform)(this._mutualTlsAuthentication),
     };

@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DxHostedPublicVirtualInterfaceAccepterConfig extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly virtualInterfaceId: string;
   /** timeouts block */
   readonly timeouts?: DxHostedPublicVirtualInterfaceAccepterTimeouts;
@@ -46,6 +47,7 @@ export class DxHostedPublicVirtualInterfaceAccepter extends cdktf.TerraformResou
       lifecycle: config.lifecycle
     });
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._virtualInterfaceId = config.virtualInterfaceId;
     this._timeouts = config.timeouts;
   }
@@ -78,6 +80,22 @@ export class DxHostedPublicVirtualInterfaceAccepter extends cdktf.TerraformResou
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // virtual_interface_id - computed: false, optional: false, required: true
@@ -116,6 +134,7 @@ export class DxHostedPublicVirtualInterfaceAccepter extends cdktf.TerraformResou
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       virtual_interface_id: cdktf.stringToTerraform(this._virtualInterfaceId),
       timeouts: dxHostedPublicVirtualInterfaceAccepterTimeoutsToTerraform(this._timeouts),
     };

@@ -13,6 +13,7 @@ export interface CodedeployDeploymentGroupConfig extends cdktf.TerraformMetaArgu
   readonly deploymentGroupName: string;
   readonly serviceRoleArn: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** alarm_configuration block */
   readonly alarmConfiguration?: CodedeployDeploymentGroupAlarmConfiguration[];
   /** auto_rollback_configuration block */
@@ -332,6 +333,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
     this._deploymentGroupName = config.deploymentGroupName;
     this._serviceRoleArn = config.serviceRoleArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._alarmConfiguration = config.alarmConfiguration;
     this._autoRollbackConfiguration = config.autoRollbackConfiguration;
     this._blueGreenDeploymentConfig = config.blueGreenDeploymentConfig;
@@ -453,6 +455,22 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
   }
 
   // alarm_configuration - computed: false, optional: true, required: false
@@ -627,6 +645,7 @@ export class CodedeployDeploymentGroup extends cdktf.TerraformResource {
       deployment_group_name: cdktf.stringToTerraform(this._deploymentGroupName),
       service_role_arn: cdktf.stringToTerraform(this._serviceRoleArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       alarm_configuration: cdktf.listMapper(codedeployDeploymentGroupAlarmConfigurationToTerraform)(this._alarmConfiguration),
       auto_rollback_configuration: cdktf.listMapper(codedeployDeploymentGroupAutoRollbackConfigurationToTerraform)(this._autoRollbackConfiguration),
       blue_green_deployment_config: cdktf.listMapper(codedeployDeploymentGroupBlueGreenDeploymentConfigToTerraform)(this._blueGreenDeploymentConfig),

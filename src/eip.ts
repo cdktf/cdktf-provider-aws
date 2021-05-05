@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EipConfig extends cdktf.TerraformMetaArguments {
+  readonly address?: string;
   readonly associateWithPrivateIp?: string;
   readonly customerOwnedIpv4Pool?: string;
   readonly instance?: string;
@@ -14,6 +15,7 @@ export interface EipConfig extends cdktf.TerraformMetaArguments {
   readonly networkInterface?: string;
   readonly publicIpv4Pool?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly vpc?: boolean;
   /** timeouts block */
   readonly timeouts?: EipTimeouts;
@@ -53,6 +55,7 @@ export class Eip extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._address = config.address;
     this._associateWithPrivateIp = config.associateWithPrivateIp;
     this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
     this._instance = config.instance;
@@ -60,6 +63,7 @@ export class Eip extends cdktf.TerraformResource {
     this._networkInterface = config.networkInterface;
     this._publicIpv4Pool = config.publicIpv4Pool;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._vpc = config.vpc;
     this._timeouts = config.timeouts;
   }
@@ -67,6 +71,22 @@ export class Eip extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // address - computed: false, optional: true, required: false
+  private _address?: string;
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string ) {
+    this._address = value;
+  }
+  public resetAddress() {
+    this._address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address
+  }
 
   // allocation_id - computed: true, optional: false, required: false
   public get allocationId() {
@@ -230,6 +250,22 @@ export class Eip extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // vpc - computed: true, optional: true, required: false
   private _vpc?: boolean;
   public get vpc() {
@@ -268,6 +304,7 @@ export class Eip extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      address: cdktf.stringToTerraform(this._address),
       associate_with_private_ip: cdktf.stringToTerraform(this._associateWithPrivateIp),
       customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
       instance: cdktf.stringToTerraform(this._instance),
@@ -275,6 +312,7 @@ export class Eip extends cdktf.TerraformResource {
       network_interface: cdktf.stringToTerraform(this._networkInterface),
       public_ipv4_pool: cdktf.stringToTerraform(this._publicIpv4Pool),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc: cdktf.booleanToTerraform(this._vpc),
       timeouts: eipTimeoutsToTerraform(this._timeouts),
     };

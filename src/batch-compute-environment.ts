@@ -12,6 +12,7 @@ export interface BatchComputeEnvironmentConfig extends cdktf.TerraformMetaArgume
   readonly serviceRole: string;
   readonly state?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly type: string;
   /** compute_resources block */
   readonly computeResources?: BatchComputeEnvironmentComputeResources[];
@@ -37,10 +38,10 @@ export interface BatchComputeEnvironmentComputeResources {
   readonly desiredVcpus?: number;
   readonly ec2KeyPair?: string;
   readonly imageId?: string;
-  readonly instanceRole: string;
-  readonly instanceType: string[];
+  readonly instanceRole?: string;
+  readonly instanceType?: string[];
   readonly maxVcpus: number;
-  readonly minVcpus: number;
+  readonly minVcpus?: number;
   readonly securityGroupIds: string[];
   readonly spotIamFleetRole?: string;
   readonly subnets: string[];
@@ -96,6 +97,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     this._serviceRole = config.serviceRole;
     this._state = config.state;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._computeResources = config.computeResources;
   }
@@ -125,12 +127,12 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     return this._computeEnvironmentName
   }
 
-  // compute_environment_name_prefix - computed: false, optional: true, required: false
+  // compute_environment_name_prefix - computed: true, optional: true, required: false
   private _computeEnvironmentNamePrefix?: string;
   public get computeEnvironmentNamePrefix() {
     return this.getStringAttribute('compute_environment_name_prefix');
   }
-  public set computeEnvironmentNamePrefix(value: string ) {
+  public set computeEnvironmentNamePrefix(value: string) {
     this._computeEnvironmentNamePrefix = value;
   }
   public resetComputeEnvironmentNamePrefix() {
@@ -206,6 +208,22 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
@@ -246,6 +264,7 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
       service_role: cdktf.stringToTerraform(this._serviceRole),
       state: cdktf.stringToTerraform(this._state),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       compute_resources: cdktf.listMapper(batchComputeEnvironmentComputeResourcesToTerraform)(this._computeResources),
     };

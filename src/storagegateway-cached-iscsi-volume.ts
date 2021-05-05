@@ -14,6 +14,7 @@ export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMe
   readonly snapshotId?: string;
   readonly sourceVolumeArn?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly targetName: string;
   readonly volumeSizeInBytes: number;
 }
@@ -44,6 +45,7 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
     this._snapshotId = config.snapshotId;
     this._sourceVolumeArn = config.sourceVolumeArn;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._targetName = config.targetName;
     this._volumeSizeInBytes = config.volumeSizeInBytes;
   }
@@ -183,6 +185,22 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // target_arn - computed: true, optional: false, required: false
   public get targetArn() {
     return this.getStringAttribute('target_arn');
@@ -237,6 +255,7 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
       snapshot_id: cdktf.stringToTerraform(this._snapshotId),
       source_volume_arn: cdktf.stringToTerraform(this._sourceVolumeArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       target_name: cdktf.stringToTerraform(this._targetName),
       volume_size_in_bytes: cdktf.numberToTerraform(this._volumeSizeInBytes),
     };

@@ -11,6 +11,7 @@ export interface NeptuneParameterGroupConfig extends cdktf.TerraformMetaArgument
   readonly family: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** parameter block */
   readonly parameter?: NeptuneParameterGroupParameter[];
 }
@@ -53,6 +54,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
     this._family = config.family;
     this._name = config.name;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._parameter = config.parameter;
   }
 
@@ -128,6 +130,22 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // parameter - computed: false, optional: true, required: false
   private _parameter?: NeptuneParameterGroupParameter[];
   public get parameter() {
@@ -154,6 +172,7 @@ export class NeptuneParameterGroup extends cdktf.TerraformResource {
       family: cdktf.stringToTerraform(this._family),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       parameter: cdktf.listMapper(neptuneParameterGroupParameterToTerraform)(this._parameter),
     };
   }

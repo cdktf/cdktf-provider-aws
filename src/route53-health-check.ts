@@ -26,6 +26,7 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   readonly resourcePath?: string;
   readonly searchString?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly type: string;
 }
 
@@ -67,6 +68,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
     this._resourcePath = config.resourcePath;
     this._searchString = config.searchString;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._type = config.type;
   }
 
@@ -383,6 +385,22 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // type - computed: false, optional: false, required: true
   private _type: string;
   public get type() {
@@ -421,6 +439,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
       resource_path: cdktf.stringToTerraform(this._resourcePath),
       search_string: cdktf.stringToTerraform(this._searchString),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
     };
   }

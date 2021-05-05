@@ -26,6 +26,7 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   readonly s3ObjectVersion?: string;
   readonly sourceCodeHash?: string;
   readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   readonly timeout?: number;
   /** dead_letter_config block */
   readonly deadLetterConfig?: LambdaFunctionDeadLetterConfig[];
@@ -166,6 +167,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
     this._s3ObjectVersion = config.s3ObjectVersion;
     this._sourceCodeHash = config.sourceCodeHash;
     this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._timeout = config.timeout;
     this._deadLetterConfig = config.deadLetterConfig;
     this._environment = config.environment;
@@ -518,6 +520,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
     return this._tags
   }
 
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // timeout - computed: false, optional: true, required: false
   private _timeout?: number;
   public get timeout() {
@@ -676,6 +694,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       s3_object_version: cdktf.stringToTerraform(this._s3ObjectVersion),
       source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       timeout: cdktf.numberToTerraform(this._timeout),
       dead_letter_config: cdktf.listMapper(lambdaFunctionDeadLetterConfigToTerraform)(this._deadLetterConfig),
       environment: cdktf.listMapper(lambdaFunctionEnvironmentToTerraform)(this._environment),
