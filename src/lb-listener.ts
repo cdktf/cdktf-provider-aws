@@ -13,6 +13,8 @@ export interface LbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly port?: number;
   readonly protocol?: string;
   readonly sslPolicy?: string;
+  readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** default_action block */
   readonly defaultAction: LbListenerDefaultAction[];
   /** timeouts block */
@@ -218,6 +220,8 @@ export class LbListener extends cdktf.TerraformResource {
     this._port = config.port;
     this._protocol = config.protocol;
     this._sslPolicy = config.sslPolicy;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._defaultAction = config.defaultAction;
     this._timeouts = config.timeouts;
   }
@@ -329,6 +333,38 @@ export class LbListener extends cdktf.TerraformResource {
     return this._sslPolicy
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // default_action - computed: false, optional: false, required: true
   private _defaultAction: LbListenerDefaultAction[];
   public get defaultAction() {
@@ -370,6 +406,8 @@ export class LbListener extends cdktf.TerraformResource {
       port: cdktf.numberToTerraform(this._port),
       protocol: cdktf.stringToTerraform(this._protocol),
       ssl_policy: cdktf.stringToTerraform(this._sslPolicy),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       default_action: cdktf.listMapper(lbListenerDefaultActionToTerraform)(this._defaultAction),
       timeouts: lbListenerTimeoutsToTerraform(this._timeouts),
     };

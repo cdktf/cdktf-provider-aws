@@ -68,6 +68,7 @@ export interface DataAwsLakeformationPermissionsTableWithColumns {
   readonly databaseName: string;
   readonly excludedColumnNames?: string[];
   readonly name: string;
+  readonly wildcard?: boolean;
 }
 
 function dataAwsLakeformationPermissionsTableWithColumnsToTerraform(struct?: DataAwsLakeformationPermissionsTableWithColumns): any {
@@ -78,6 +79,7 @@ function dataAwsLakeformationPermissionsTableWithColumnsToTerraform(struct?: Dat
     database_name: cdktf.stringToTerraform(struct!.databaseName),
     excluded_column_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedColumnNames),
     name: cdktf.stringToTerraform(struct!.name),
+    wildcard: cdktf.booleanToTerraform(struct!.wildcard),
   }
 }
 

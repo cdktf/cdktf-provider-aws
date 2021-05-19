@@ -15,6 +15,8 @@ export interface SfnStateMachineConfig extends cdktf.TerraformMetaArguments {
   readonly type?: string;
   /** logging_configuration block */
   readonly loggingConfiguration?: SfnStateMachineLoggingConfiguration[];
+  /** tracing_configuration block */
+  readonly tracingConfiguration?: SfnStateMachineTracingConfiguration[];
 }
 export interface SfnStateMachineLoggingConfiguration {
   readonly includeExecutionData?: boolean;
@@ -28,6 +30,17 @@ function sfnStateMachineLoggingConfigurationToTerraform(struct?: SfnStateMachine
     include_execution_data: cdktf.booleanToTerraform(struct!.includeExecutionData),
     level: cdktf.stringToTerraform(struct!.level),
     log_destination: cdktf.stringToTerraform(struct!.logDestination),
+  }
+}
+
+export interface SfnStateMachineTracingConfiguration {
+  readonly enabled?: boolean;
+}
+
+function sfnStateMachineTracingConfigurationToTerraform(struct?: SfnStateMachineTracingConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
   }
 }
 
@@ -58,6 +71,7 @@ export class SfnStateMachine extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._type = config.type;
     this._loggingConfiguration = config.loggingConfiguration;
+    this._tracingConfiguration = config.tracingConfiguration;
   }
 
   // ==========
@@ -187,6 +201,22 @@ export class SfnStateMachine extends cdktf.TerraformResource {
     return this._loggingConfiguration
   }
 
+  // tracing_configuration - computed: false, optional: true, required: false
+  private _tracingConfiguration?: SfnStateMachineTracingConfiguration[];
+  public get tracingConfiguration() {
+    return this.interpolationForAttribute('tracing_configuration') as any;
+  }
+  public set tracingConfiguration(value: SfnStateMachineTracingConfiguration[] ) {
+    this._tracingConfiguration = value;
+  }
+  public resetTracingConfiguration() {
+    this._tracingConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tracingConfigurationInput() {
+    return this._tracingConfiguration
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -200,6 +230,7 @@ export class SfnStateMachine extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       type: cdktf.stringToTerraform(this._type),
       logging_configuration: cdktf.listMapper(sfnStateMachineLoggingConfigurationToTerraform)(this._loggingConfiguration),
+      tracing_configuration: cdktf.listMapper(sfnStateMachineTracingConfigurationToTerraform)(this._tracingConfiguration),
     };
   }
 }

@@ -132,6 +132,19 @@ function cloudfrontDistributionDefaultCacheBehaviorForwardedValuesToTerraform(st
   }
 }
 
+export interface CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation {
+  readonly eventType: string;
+  readonly functionArn: string;
+}
+
+function cloudfrontDistributionDefaultCacheBehaviorFunctionAssociationToTerraform(struct?: CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    event_type: cdktf.stringToTerraform(struct!.eventType),
+    function_arn: cdktf.stringToTerraform(struct!.functionArn),
+  }
+}
+
 export interface CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation {
   readonly eventType: string;
   readonly includeBody?: boolean;
@@ -165,6 +178,8 @@ export interface CloudfrontDistributionDefaultCacheBehavior {
   readonly viewerProtocolPolicy: string;
   /** forwarded_values block */
   readonly forwardedValues?: CloudfrontDistributionDefaultCacheBehaviorForwardedValues[];
+  /** function_association block */
+  readonly functionAssociation?: CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation[];
   /** lambda_function_association block */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociation[];
 }
@@ -188,6 +203,7 @@ function cloudfrontDistributionDefaultCacheBehaviorToTerraform(struct?: Cloudfro
     trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
     viewer_protocol_policy: cdktf.stringToTerraform(struct!.viewerProtocolPolicy),
     forwarded_values: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorForwardedValuesToTerraform)(struct!.forwardedValues),
+    function_association: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorFunctionAssociationToTerraform)(struct!.functionAssociation),
     lambda_function_association: cdktf.listMapper(cloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssociationToTerraform)(struct!.lambdaFunctionAssociation),
   }
 }
@@ -238,6 +254,19 @@ function cloudfrontDistributionOrderedCacheBehaviorForwardedValuesToTerraform(st
   }
 }
 
+export interface CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation {
+  readonly eventType: string;
+  readonly functionArn: string;
+}
+
+function cloudfrontDistributionOrderedCacheBehaviorFunctionAssociationToTerraform(struct?: CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    event_type: cdktf.stringToTerraform(struct!.eventType),
+    function_arn: cdktf.stringToTerraform(struct!.functionArn),
+  }
+}
+
 export interface CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation {
   readonly eventType: string;
   readonly includeBody?: boolean;
@@ -272,6 +301,8 @@ export interface CloudfrontDistributionOrderedCacheBehavior {
   readonly viewerProtocolPolicy: string;
   /** forwarded_values block */
   readonly forwardedValues?: CloudfrontDistributionOrderedCacheBehaviorForwardedValues[];
+  /** function_association block */
+  readonly functionAssociation?: CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation[];
   /** lambda_function_association block */
   readonly lambdaFunctionAssociation?: CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociation[];
 }
@@ -296,6 +327,7 @@ function cloudfrontDistributionOrderedCacheBehaviorToTerraform(struct?: Cloudfro
     trusted_signers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedSigners),
     viewer_protocol_policy: cdktf.stringToTerraform(struct!.viewerProtocolPolicy),
     forwarded_values: cdktf.listMapper(cloudfrontDistributionOrderedCacheBehaviorForwardedValuesToTerraform)(struct!.forwardedValues),
+    function_association: cdktf.listMapper(cloudfrontDistributionOrderedCacheBehaviorFunctionAssociationToTerraform)(struct!.functionAssociation),
     lambda_function_association: cdktf.listMapper(cloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssociationToTerraform)(struct!.lambdaFunctionAssociation),
   }
 }

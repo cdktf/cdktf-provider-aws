@@ -20,6 +20,8 @@ export interface CloudwatchEventTargetConfig extends cdktf.TerraformMetaArgument
   readonly deadLetterConfig?: CloudwatchEventTargetDeadLetterConfig[];
   /** ecs_target block */
   readonly ecsTarget?: CloudwatchEventTargetEcsTarget[];
+  /** http_target block */
+  readonly httpTarget?: CloudwatchEventTargetHttpTarget[];
   /** input_transformer block */
   readonly inputTransformer?: CloudwatchEventTargetInputTransformer[];
   /** kinesis_target block */
@@ -93,6 +95,21 @@ function cloudwatchEventTargetEcsTargetToTerraform(struct?: CloudwatchEventTarge
     task_count: cdktf.numberToTerraform(struct!.taskCount),
     task_definition_arn: cdktf.stringToTerraform(struct!.taskDefinitionArn),
     network_configuration: cdktf.listMapper(cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform)(struct!.networkConfiguration),
+  }
+}
+
+export interface CloudwatchEventTargetHttpTarget {
+  readonly headerParameters?: { [key: string]: string };
+  readonly pathParameterValues?: string[];
+  readonly queryStringParameters?: { [key: string]: string };
+}
+
+function cloudwatchEventTargetHttpTargetToTerraform(struct?: CloudwatchEventTargetHttpTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    header_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.headerParameters),
+    path_parameter_values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.pathParameterValues),
+    query_string_parameters: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.queryStringParameters),
   }
 }
 
@@ -187,6 +204,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     this._batchTarget = config.batchTarget;
     this._deadLetterConfig = config.deadLetterConfig;
     this._ecsTarget = config.ecsTarget;
+    this._httpTarget = config.httpTarget;
     this._inputTransformer = config.inputTransformer;
     this._kinesisTarget = config.kinesisTarget;
     this._retryPolicy = config.retryPolicy;
@@ -357,6 +375,22 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     return this._ecsTarget
   }
 
+  // http_target - computed: false, optional: true, required: false
+  private _httpTarget?: CloudwatchEventTargetHttpTarget[];
+  public get httpTarget() {
+    return this.interpolationForAttribute('http_target') as any;
+  }
+  public set httpTarget(value: CloudwatchEventTargetHttpTarget[] ) {
+    this._httpTarget = value;
+  }
+  public resetHttpTarget() {
+    this._httpTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpTargetInput() {
+    return this._httpTarget
+  }
+
   // input_transformer - computed: false, optional: true, required: false
   private _inputTransformer?: CloudwatchEventTargetInputTransformer[];
   public get inputTransformer() {
@@ -453,6 +487,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
       batch_target: cdktf.listMapper(cloudwatchEventTargetBatchTargetToTerraform)(this._batchTarget),
       dead_letter_config: cdktf.listMapper(cloudwatchEventTargetDeadLetterConfigToTerraform)(this._deadLetterConfig),
       ecs_target: cdktf.listMapper(cloudwatchEventTargetEcsTargetToTerraform)(this._ecsTarget),
+      http_target: cdktf.listMapper(cloudwatchEventTargetHttpTargetToTerraform)(this._httpTarget),
       input_transformer: cdktf.listMapper(cloudwatchEventTargetInputTransformerToTerraform)(this._inputTransformer),
       kinesis_target: cdktf.listMapper(cloudwatchEventTargetKinesisTargetToTerraform)(this._kinesisTarget),
       retry_policy: cdktf.listMapper(cloudwatchEventTargetRetryPolicyToTerraform)(this._retryPolicy),

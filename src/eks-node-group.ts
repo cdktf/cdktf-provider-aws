@@ -14,7 +14,8 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   readonly forceUpdateVersion?: boolean;
   readonly instanceTypes?: string[];
   readonly labels?: { [key: string]: string };
-  readonly nodeGroupName: string;
+  readonly nodeGroupName?: string;
+  readonly nodeGroupNamePrefix?: string;
   readonly nodeRoleArn: string;
   readonly releaseVersion?: string;
   readonly subnetIds: string[];
@@ -135,6 +136,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     this._instanceTypes = config.instanceTypes;
     this._labels = config.labels;
     this._nodeGroupName = config.nodeGroupName;
+    this._nodeGroupNamePrefix = config.nodeGroupNamePrefix;
     this._nodeRoleArn = config.nodeRoleArn;
     this._releaseVersion = config.releaseVersion;
     this._subnetIds = config.subnetIds;
@@ -270,17 +272,36 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     return this._labels
   }
 
-  // node_group_name - computed: false, optional: false, required: true
-  private _nodeGroupName: string;
+  // node_group_name - computed: true, optional: true, required: false
+  private _nodeGroupName?: string;
   public get nodeGroupName() {
     return this.getStringAttribute('node_group_name');
   }
   public set nodeGroupName(value: string) {
     this._nodeGroupName = value;
   }
+  public resetNodeGroupName() {
+    this._nodeGroupName = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get nodeGroupNameInput() {
     return this._nodeGroupName
+  }
+
+  // node_group_name_prefix - computed: true, optional: true, required: false
+  private _nodeGroupNamePrefix?: string;
+  public get nodeGroupNamePrefix() {
+    return this.getStringAttribute('node_group_name_prefix');
+  }
+  public set nodeGroupNamePrefix(value: string) {
+    this._nodeGroupNamePrefix = value;
+  }
+  public resetNodeGroupNamePrefix() {
+    this._nodeGroupNamePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeGroupNamePrefixInput() {
+    return this._nodeGroupNamePrefix
   }
 
   // node_role_arn - computed: false, optional: false, required: true
@@ -458,6 +479,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       instance_types: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceTypes),
       labels: cdktf.hashMapper(cdktf.anyToTerraform)(this._labels),
       node_group_name: cdktf.stringToTerraform(this._nodeGroupName),
+      node_group_name_prefix: cdktf.stringToTerraform(this._nodeGroupNamePrefix),
       node_role_arn: cdktf.stringToTerraform(this._nodeRoleArn),
       release_version: cdktf.stringToTerraform(this._releaseVersion),
       subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetIds),

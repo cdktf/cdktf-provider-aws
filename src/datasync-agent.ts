@@ -10,8 +10,12 @@ export interface DatasyncAgentConfig extends cdktf.TerraformMetaArguments {
   readonly activationKey?: string;
   readonly ipAddress?: string;
   readonly name?: string;
+  readonly privateLinkEndpoint?: string;
+  readonly securityGroupArns?: string[];
+  readonly subnetArns?: string[];
   readonly tags?: { [key: string]: string };
   readonly tagsAll?: { [key: string]: string };
+  readonly vpcEndpointId?: string;
   /** timeouts block */
   readonly timeouts?: DatasyncAgentTimeouts;
 }
@@ -49,8 +53,12 @@ export class DatasyncAgent extends cdktf.TerraformResource {
     this._activationKey = config.activationKey;
     this._ipAddress = config.ipAddress;
     this._name = config.name;
+    this._privateLinkEndpoint = config.privateLinkEndpoint;
+    this._securityGroupArns = config.securityGroupArns;
+    this._subnetArns = config.subnetArns;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._vpcEndpointId = config.vpcEndpointId;
     this._timeouts = config.timeouts;
   }
 
@@ -116,6 +124,54 @@ export class DatasyncAgent extends cdktf.TerraformResource {
     return this._name
   }
 
+  // private_link_endpoint - computed: false, optional: true, required: false
+  private _privateLinkEndpoint?: string;
+  public get privateLinkEndpoint() {
+    return this.getStringAttribute('private_link_endpoint');
+  }
+  public set privateLinkEndpoint(value: string ) {
+    this._privateLinkEndpoint = value;
+  }
+  public resetPrivateLinkEndpoint() {
+    this._privateLinkEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateLinkEndpointInput() {
+    return this._privateLinkEndpoint
+  }
+
+  // security_group_arns - computed: false, optional: true, required: false
+  private _securityGroupArns?: string[];
+  public get securityGroupArns() {
+    return this.getListAttribute('security_group_arns');
+  }
+  public set securityGroupArns(value: string[] ) {
+    this._securityGroupArns = value;
+  }
+  public resetSecurityGroupArns() {
+    this._securityGroupArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupArnsInput() {
+    return this._securityGroupArns
+  }
+
+  // subnet_arns - computed: false, optional: true, required: false
+  private _subnetArns?: string[];
+  public get subnetArns() {
+    return this.getListAttribute('subnet_arns');
+  }
+  public set subnetArns(value: string[] ) {
+    this._subnetArns = value;
+  }
+  public resetSubnetArns() {
+    this._subnetArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetArnsInput() {
+    return this._subnetArns
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
@@ -148,6 +204,22 @@ export class DatasyncAgent extends cdktf.TerraformResource {
     return this._tagsAll
   }
 
+  // vpc_endpoint_id - computed: false, optional: true, required: false
+  private _vpcEndpointId?: string;
+  public get vpcEndpointId() {
+    return this.getStringAttribute('vpc_endpoint_id');
+  }
+  public set vpcEndpointId(value: string ) {
+    this._vpcEndpointId = value;
+  }
+  public resetVpcEndpointId() {
+    this._vpcEndpointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEndpointIdInput() {
+    return this._vpcEndpointId
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: DatasyncAgentTimeouts;
   public get timeouts() {
@@ -173,8 +245,12 @@ export class DatasyncAgent extends cdktf.TerraformResource {
       activation_key: cdktf.stringToTerraform(this._activationKey),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
       name: cdktf.stringToTerraform(this._name),
+      private_link_endpoint: cdktf.stringToTerraform(this._privateLinkEndpoint),
+      security_group_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupArns),
+      subnet_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._subnetArns),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
       timeouts: datasyncAgentTimeoutsToTerraform(this._timeouts),
     };
   }

@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CognitoIdentityPoolConfig extends cdktf.TerraformMetaArguments {
+  readonly allowClassicFlow?: boolean;
   readonly allowUnauthenticatedIdentities?: boolean;
   readonly developerProviderName?: string;
   readonly identityPoolName: string;
@@ -53,6 +54,7 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._allowClassicFlow = config.allowClassicFlow;
     this._allowUnauthenticatedIdentities = config.allowUnauthenticatedIdentities;
     this._developerProviderName = config.developerProviderName;
     this._identityPoolName = config.identityPoolName;
@@ -67,6 +69,22 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_classic_flow - computed: false, optional: true, required: false
+  private _allowClassicFlow?: boolean;
+  public get allowClassicFlow() {
+    return this.getBooleanAttribute('allow_classic_flow');
+  }
+  public set allowClassicFlow(value: boolean ) {
+    this._allowClassicFlow = value;
+  }
+  public resetAllowClassicFlow() {
+    this._allowClassicFlow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowClassicFlowInput() {
+    return this._allowClassicFlow
+  }
 
   // allow_unauthenticated_identities - computed: false, optional: true, required: false
   private _allowUnauthenticatedIdentities?: boolean;
@@ -225,6 +243,7 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_classic_flow: cdktf.booleanToTerraform(this._allowClassicFlow),
       allow_unauthenticated_identities: cdktf.booleanToTerraform(this._allowUnauthenticatedIdentities),
       developer_provider_name: cdktf.stringToTerraform(this._developerProviderName),
       identity_pool_name: cdktf.stringToTerraform(this._identityPoolName),

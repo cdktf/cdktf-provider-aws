@@ -9,6 +9,8 @@ import * as cdktf from 'cdktf';
 export interface ShieldProtectionConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly resourceArn: string;
+  readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
 }
 
 // Resource
@@ -32,11 +34,18 @@ export class ShieldProtection extends cdktf.TerraformResource {
     });
     this._name = config.name;
     this._resourceArn = config.resourceArn;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // id - computed: true, optional: true, required: false
   public get id() {
@@ -69,6 +78,38 @@ export class ShieldProtection extends cdktf.TerraformResource {
     return this._resourceArn
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -77,6 +118,8 @@ export class ShieldProtection extends cdktf.TerraformResource {
     return {
       name: cdktf.stringToTerraform(this._name),
       resource_arn: cdktf.stringToTerraform(this._resourceArn),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

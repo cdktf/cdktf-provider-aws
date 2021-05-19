@@ -56,6 +56,11 @@ export class DataAwsCodestarconnectionsConnection extends cdktf.TerraformDataSou
     return this.getStringAttribute('connection_status');
   }
 
+  // host_arn - computed: true, optional: false, required: false
+  public get hostArn() {
+    return this.getStringAttribute('host_arn');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');

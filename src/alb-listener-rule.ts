@@ -9,6 +9,8 @@ import * as cdktf from 'cdktf';
 export interface AlbListenerRuleConfig extends cdktf.TerraformMetaArguments {
   readonly listenerArn: string;
   readonly priority?: number;
+  readonly tags?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string };
   /** action block */
   readonly action: AlbListenerRuleAction[];
   /** condition block */
@@ -296,6 +298,8 @@ export class AlbListenerRule extends cdktf.TerraformResource {
     });
     this._listenerArn = config.listenerArn;
     this._priority = config.priority;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._action = config.action;
     this._condition = config.condition;
   }
@@ -343,6 +347,38 @@ export class AlbListenerRule extends cdktf.TerraformResource {
     return this._priority
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // action - computed: false, optional: false, required: true
   private _action: AlbListenerRuleAction[];
   public get action() {
@@ -377,6 +413,8 @@ export class AlbListenerRule extends cdktf.TerraformResource {
     return {
       listener_arn: cdktf.stringToTerraform(this._listenerArn),
       priority: cdktf.numberToTerraform(this._priority),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       action: cdktf.listMapper(albListenerRuleActionToTerraform)(this._action),
       condition: cdktf.listMapper(albListenerRuleConditionToTerraform)(this._condition),
     };

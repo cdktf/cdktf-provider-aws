@@ -7,6 +7,7 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CloudwatchEventBusConfig extends cdktf.TerraformMetaArguments {
+  readonly eventSourceName?: string;
   readonly name: string;
   readonly tags?: { [key: string]: string };
   readonly tagsAll?: { [key: string]: string };
@@ -31,6 +32,7 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._eventSourceName = config.eventSourceName;
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -43,6 +45,22 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // event_source_name - computed: false, optional: true, required: false
+  private _eventSourceName?: string;
+  public get eventSourceName() {
+    return this.getStringAttribute('event_source_name');
+  }
+  public set eventSourceName(value: string ) {
+    this._eventSourceName = value;
+  }
+  public resetEventSourceName() {
+    this._eventSourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventSourceNameInput() {
+    return this._eventSourceName
   }
 
   // id - computed: true, optional: true, required: false
@@ -101,6 +119,7 @@ export class CloudwatchEventBus extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      event_source_name: cdktf.stringToTerraform(this._eventSourceName),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),

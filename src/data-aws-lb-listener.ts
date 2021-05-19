@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataAwsLbListenerConfig extends cdktf.TerraformMetaArguments {
   readonly loadBalancerArn?: string;
   readonly port?: number;
+  readonly tags?: { [key: string]: string };
 }
 export class DataAwsLbListenerDefaultActionAuthenticateCognito extends cdktf.ComplexComputedList {
 
@@ -258,6 +259,7 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
     });
     this._loadBalancerArn = config.loadBalancerArn;
     this._port = config.port;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -331,6 +333,22 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
     return this.getStringAttribute('ssl_policy');
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string }
+  public get tags(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -339,6 +357,7 @@ export class DataAwsLbListener extends cdktf.TerraformDataSource {
     return {
       load_balancer_arn: cdktf.stringToTerraform(this._loadBalancerArn),
       port: cdktf.numberToTerraform(this._port),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -26,6 +26,8 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   readonly cache?: CodebuildProjectCache[];
   /** environment block */
   readonly environment: CodebuildProjectEnvironment[];
+  /** file_system_locations block */
+  readonly fileSystemLocations?: CodebuildProjectFileSystemLocations[];
   /** logs_config block */
   readonly logsConfig?: CodebuildProjectLogsConfig[];
   /** secondary_artifacts block */
@@ -162,6 +164,25 @@ function codebuildProjectEnvironmentToTerraform(struct?: CodebuildProjectEnviron
     type: cdktf.stringToTerraform(struct!.type),
     environment_variable: cdktf.listMapper(codebuildProjectEnvironmentEnvironmentVariableToTerraform)(struct!.environmentVariable),
     registry_credential: cdktf.listMapper(codebuildProjectEnvironmentRegistryCredentialToTerraform)(struct!.registryCredential),
+  }
+}
+
+export interface CodebuildProjectFileSystemLocations {
+  readonly identifier?: string;
+  readonly location?: string;
+  readonly mountOptions?: string;
+  readonly mountPoint?: string;
+  readonly type?: string;
+}
+
+function codebuildProjectFileSystemLocationsToTerraform(struct?: CodebuildProjectFileSystemLocations): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    identifier: cdktf.stringToTerraform(struct!.identifier),
+    location: cdktf.stringToTerraform(struct!.location),
+    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
+    mount_point: cdktf.stringToTerraform(struct!.mountPoint),
+    type: cdktf.stringToTerraform(struct!.type),
   }
 }
 
@@ -423,6 +444,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
     this._buildBatchConfig = config.buildBatchConfig;
     this._cache = config.cache;
     this._environment = config.environment;
+    this._fileSystemLocations = config.fileSystemLocations;
     this._logsConfig = config.logsConfig;
     this._secondaryArtifacts = config.secondaryArtifacts;
     this._secondarySources = config.secondarySources;
@@ -677,6 +699,22 @@ export class CodebuildProject extends cdktf.TerraformResource {
     return this._environment
   }
 
+  // file_system_locations - computed: false, optional: true, required: false
+  private _fileSystemLocations?: CodebuildProjectFileSystemLocations[];
+  public get fileSystemLocations() {
+    return this.interpolationForAttribute('file_system_locations') as any;
+  }
+  public set fileSystemLocations(value: CodebuildProjectFileSystemLocations[] ) {
+    this._fileSystemLocations = value;
+  }
+  public resetFileSystemLocations() {
+    this._fileSystemLocations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSystemLocationsInput() {
+    return this._fileSystemLocations
+  }
+
   // logs_config - computed: false, optional: true, required: false
   private _logsConfig?: CodebuildProjectLogsConfig[];
   public get logsConfig() {
@@ -775,6 +813,7 @@ export class CodebuildProject extends cdktf.TerraformResource {
       build_batch_config: cdktf.listMapper(codebuildProjectBuildBatchConfigToTerraform)(this._buildBatchConfig),
       cache: cdktf.listMapper(codebuildProjectCacheToTerraform)(this._cache),
       environment: cdktf.listMapper(codebuildProjectEnvironmentToTerraform)(this._environment),
+      file_system_locations: cdktf.listMapper(codebuildProjectFileSystemLocationsToTerraform)(this._fileSystemLocations),
       logs_config: cdktf.listMapper(codebuildProjectLogsConfigToTerraform)(this._logsConfig),
       secondary_artifacts: cdktf.listMapper(codebuildProjectSecondaryArtifactsToTerraform)(this._secondaryArtifacts),
       secondary_sources: cdktf.listMapper(codebuildProjectSecondarySourcesToTerraform)(this._secondarySources),

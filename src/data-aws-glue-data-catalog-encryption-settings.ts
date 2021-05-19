@@ -1,0 +1,107 @@
+// https://www.terraform.io/docs/providers/aws/r/data_aws_glue_data_catalog_encryption_settings.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataAwsGlueDataCatalogEncryptionSettingsConfig extends cdktf.TerraformMetaArguments {
+  readonly catalogId: string;
+}
+export class DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption extends cdktf.ComplexComputedList {
+
+  // aws_kms_key_id - computed: true, optional: false, required: false
+  public get awsKmsKeyId() {
+    return this.getStringAttribute('aws_kms_key_id');
+  }
+
+  // return_connection_password_encrypted - computed: true, optional: false, required: false
+  public get returnConnectionPasswordEncrypted() {
+    return this.getBooleanAttribute('return_connection_password_encrypted');
+  }
+}
+export class DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest extends cdktf.ComplexComputedList {
+
+  // catalog_encryption_mode - computed: true, optional: false, required: false
+  public get catalogEncryptionMode() {
+    return this.getStringAttribute('catalog_encryption_mode');
+  }
+
+  // sse_aws_kms_key_id - computed: true, optional: false, required: false
+  public get sseAwsKmsKeyId() {
+    return this.getStringAttribute('sse_aws_kms_key_id');
+  }
+}
+export class DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings extends cdktf.ComplexComputedList {
+
+  // connection_password_encryption - computed: true, optional: false, required: false
+  public get connectionPasswordEncryption() {
+    return this.interpolationForAttribute('connection_password_encryption') as any;
+  }
+
+  // encryption_at_rest - computed: true, optional: false, required: false
+  public get encryptionAtRest() {
+    return this.interpolationForAttribute('encryption_at_rest') as any;
+  }
+}
+
+// Resource
+
+export class DataAwsGlueDataCatalogEncryptionSettings extends cdktf.TerraformDataSource {
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  public constructor(scope: Construct, id: string, config: DataAwsGlueDataCatalogEncryptionSettingsConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_glue_data_catalog_encryption_settings',
+      terraformGeneratorMetadata: {
+        providerName: 'aws'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._catalogId = config.catalogId;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // catalog_id - computed: false, optional: false, required: true
+  private _catalogId: string;
+  public get catalogId() {
+    return this.getStringAttribute('catalog_id');
+  }
+  public set catalogId(value: string) {
+    this._catalogId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catalogIdInput() {
+    return this._catalogId
+  }
+
+  // data_catalog_encryption_settings - computed: true, optional: false, required: false
+  public dataCatalogEncryptionSettings(index: string) {
+    return new DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings(this, 'data_catalog_encryption_settings', index);
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      catalog_id: cdktf.stringToTerraform(this._catalogId),
+    };
+  }
+}

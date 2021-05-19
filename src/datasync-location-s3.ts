@@ -7,7 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DatasyncLocationS3Config extends cdktf.TerraformMetaArguments {
+  readonly agentArns?: string[];
   readonly s3BucketArn: string;
+  readonly s3StorageClass?: string;
   readonly subdirectory: string;
   readonly tags?: { [key: string]: string };
   readonly tagsAll?: { [key: string]: string };
@@ -45,7 +47,9 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._agentArns = config.agentArns;
     this._s3BucketArn = config.s3BucketArn;
+    this._s3StorageClass = config.s3StorageClass;
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -55,6 +59,22 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // agent_arns - computed: false, optional: true, required: false
+  private _agentArns?: string[];
+  public get agentArns() {
+    return this.getListAttribute('agent_arns');
+  }
+  public set agentArns(value: string[] ) {
+    this._agentArns = value;
+  }
+  public resetAgentArns() {
+    this._agentArns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get agentArnsInput() {
+    return this._agentArns
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -77,6 +97,22 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get s3BucketArnInput() {
     return this._s3BucketArn
+  }
+
+  // s3_storage_class - computed: true, optional: true, required: false
+  private _s3StorageClass?: string;
+  public get s3StorageClass() {
+    return this.getStringAttribute('s3_storage_class');
+  }
+  public set s3StorageClass(value: string) {
+    this._s3StorageClass = value;
+  }
+  public resetS3StorageClass() {
+    this._s3StorageClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3StorageClassInput() {
+    return this._s3StorageClass
   }
 
   // subdirectory - computed: false, optional: false, required: true
@@ -148,7 +184,9 @@ export class DatasyncLocationS3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      agent_arns: cdktf.listMapper(cdktf.stringToTerraform)(this._agentArns),
       s3_bucket_arn: cdktf.stringToTerraform(this._s3BucketArn),
+      s3_storage_class: cdktf.stringToTerraform(this._s3StorageClass),
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),

@@ -12,7 +12,22 @@ export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments 
   readonly locationUri?: string;
   readonly name: string;
   readonly parameters?: { [key: string]: string };
+  /** target_database block */
+  readonly targetDatabase?: GlueCatalogDatabaseTargetDatabase[];
 }
+export interface GlueCatalogDatabaseTargetDatabase {
+  readonly catalogId: string;
+  readonly databaseName: string;
+}
+
+function glueCatalogDatabaseTargetDatabaseToTerraform(struct?: GlueCatalogDatabaseTargetDatabase): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    catalog_id: cdktf.stringToTerraform(struct!.catalogId),
+    database_name: cdktf.stringToTerraform(struct!.databaseName),
+  }
+}
+
 
 // Resource
 
@@ -38,6 +53,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     this._locationUri = config.locationUri;
     this._name = config.name;
     this._parameters = config.parameters;
+    this._targetDatabase = config.targetDatabase;
   }
 
   // ==========
@@ -131,6 +147,22 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     return this._parameters
   }
 
+  // target_database - computed: false, optional: true, required: false
+  private _targetDatabase?: GlueCatalogDatabaseTargetDatabase[];
+  public get targetDatabase() {
+    return this.interpolationForAttribute('target_database') as any;
+  }
+  public set targetDatabase(value: GlueCatalogDatabaseTargetDatabase[] ) {
+    this._targetDatabase = value;
+  }
+  public resetTargetDatabase() {
+    this._targetDatabase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetDatabaseInput() {
+    return this._targetDatabase
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -142,6 +174,7 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
       location_uri: cdktf.stringToTerraform(this._locationUri),
       name: cdktf.stringToTerraform(this._name),
       parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      target_database: cdktf.listMapper(glueCatalogDatabaseTargetDatabaseToTerraform)(this._targetDatabase),
     };
   }
 }

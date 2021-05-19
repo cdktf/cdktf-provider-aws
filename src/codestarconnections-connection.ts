@@ -7,8 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CodestarconnectionsConnectionConfig extends cdktf.TerraformMetaArguments {
+  readonly hostArn?: string;
   readonly name: string;
-  readonly providerType: string;
+  readonly providerType?: string;
   readonly tags?: { [key: string]: string };
   readonly tagsAll?: { [key: string]: string };
 }
@@ -32,6 +33,7 @@ export class CodestarconnectionsConnection extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._hostArn = config.hostArn;
     this._name = config.name;
     this._providerType = config.providerType;
     this._tags = config.tags;
@@ -52,6 +54,22 @@ export class CodestarconnectionsConnection extends cdktf.TerraformResource {
     return this.getStringAttribute('connection_status');
   }
 
+  // host_arn - computed: false, optional: true, required: false
+  private _hostArn?: string;
+  public get hostArn() {
+    return this.getStringAttribute('host_arn');
+  }
+  public set hostArn(value: string ) {
+    this._hostArn = value;
+  }
+  public resetHostArn() {
+    this._hostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostArnInput() {
+    return this._hostArn
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -70,13 +88,16 @@ export class CodestarconnectionsConnection extends cdktf.TerraformResource {
     return this._name
   }
 
-  // provider_type - computed: false, optional: false, required: true
-  private _providerType: string;
+  // provider_type - computed: true, optional: true, required: false
+  private _providerType?: string;
   public get providerType() {
     return this.getStringAttribute('provider_type');
   }
   public set providerType(value: string) {
     this._providerType = value;
+  }
+  public resetProviderType() {
+    this._providerType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get providerTypeInput() {
@@ -121,6 +142,7 @@ export class CodestarconnectionsConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      host_arn: cdktf.stringToTerraform(this._hostArn),
       name: cdktf.stringToTerraform(this._name),
       provider_type: cdktf.stringToTerraform(this._providerType),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

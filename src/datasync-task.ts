@@ -13,20 +13,40 @@ export interface DatasyncTaskConfig extends cdktf.TerraformMetaArguments {
   readonly sourceLocationArn: string;
   readonly tags?: { [key: string]: string };
   readonly tagsAll?: { [key: string]: string };
+  /** excludes block */
+  readonly excludes?: DatasyncTaskExcludes[];
   /** options block */
   readonly options?: DatasyncTaskOptions[];
+  /** schedule block */
+  readonly schedule?: DatasyncTaskSchedule[];
   /** timeouts block */
   readonly timeouts?: DatasyncTaskTimeouts;
 }
+export interface DatasyncTaskExcludes {
+  readonly filterType?: string;
+  readonly value?: string;
+}
+
+function datasyncTaskExcludesToTerraform(struct?: DatasyncTaskExcludes): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    filter_type: cdktf.stringToTerraform(struct!.filterType),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface DatasyncTaskOptions {
   readonly atime?: string;
   readonly bytesPerSecond?: number;
   readonly gid?: string;
   readonly logLevel?: string;
   readonly mtime?: string;
+  readonly overwriteMode?: string;
   readonly posixPermissions?: string;
   readonly preserveDeletedFiles?: string;
   readonly preserveDevices?: string;
+  readonly taskQueueing?: string;
+  readonly transferMode?: string;
   readonly uid?: string;
   readonly verifyMode?: string;
 }
@@ -39,11 +59,25 @@ function datasyncTaskOptionsToTerraform(struct?: DatasyncTaskOptions): any {
     gid: cdktf.stringToTerraform(struct!.gid),
     log_level: cdktf.stringToTerraform(struct!.logLevel),
     mtime: cdktf.stringToTerraform(struct!.mtime),
+    overwrite_mode: cdktf.stringToTerraform(struct!.overwriteMode),
     posix_permissions: cdktf.stringToTerraform(struct!.posixPermissions),
     preserve_deleted_files: cdktf.stringToTerraform(struct!.preserveDeletedFiles),
     preserve_devices: cdktf.stringToTerraform(struct!.preserveDevices),
+    task_queueing: cdktf.stringToTerraform(struct!.taskQueueing),
+    transfer_mode: cdktf.stringToTerraform(struct!.transferMode),
     uid: cdktf.stringToTerraform(struct!.uid),
     verify_mode: cdktf.stringToTerraform(struct!.verifyMode),
+  }
+}
+
+export interface DatasyncTaskSchedule {
+  readonly scheduleExpression: string;
+}
+
+function datasyncTaskScheduleToTerraform(struct?: DatasyncTaskSchedule): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    schedule_expression: cdktf.stringToTerraform(struct!.scheduleExpression),
   }
 }
 
@@ -84,7 +118,9 @@ export class DatasyncTask extends cdktf.TerraformResource {
     this._sourceLocationArn = config.sourceLocationArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._excludes = config.excludes;
     this._options = config.options;
+    this._schedule = config.schedule;
     this._timeouts = config.timeouts;
   }
 
@@ -192,6 +228,22 @@ export class DatasyncTask extends cdktf.TerraformResource {
     return this._tagsAll
   }
 
+  // excludes - computed: false, optional: true, required: false
+  private _excludes?: DatasyncTaskExcludes[];
+  public get excludes() {
+    return this.interpolationForAttribute('excludes') as any;
+  }
+  public set excludes(value: DatasyncTaskExcludes[] ) {
+    this._excludes = value;
+  }
+  public resetExcludes() {
+    this._excludes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludesInput() {
+    return this._excludes
+  }
+
   // options - computed: false, optional: true, required: false
   private _options?: DatasyncTaskOptions[];
   public get options() {
@@ -206,6 +258,22 @@ export class DatasyncTask extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get optionsInput() {
     return this._options
+  }
+
+  // schedule - computed: false, optional: true, required: false
+  private _schedule?: DatasyncTaskSchedule[];
+  public get schedule() {
+    return this.interpolationForAttribute('schedule') as any;
+  }
+  public set schedule(value: DatasyncTaskSchedule[] ) {
+    this._schedule = value;
+  }
+  public resetSchedule() {
+    this._schedule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleInput() {
+    return this._schedule
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -236,7 +304,9 @@ export class DatasyncTask extends cdktf.TerraformResource {
       source_location_arn: cdktf.stringToTerraform(this._sourceLocationArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      excludes: cdktf.listMapper(datasyncTaskExcludesToTerraform)(this._excludes),
       options: cdktf.listMapper(datasyncTaskOptionsToTerraform)(this._options),
+      schedule: cdktf.listMapper(datasyncTaskScheduleToTerraform)(this._schedule),
       timeouts: datasyncTaskTimeoutsToTerraform(this._timeouts),
     };
   }

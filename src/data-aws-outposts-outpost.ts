@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsOutpostsOutpostConfig extends cdktf.TerraformMetaArguments {
   readonly name?: string;
+  readonly ownerId?: string;
 }
 
 // Resource
@@ -30,6 +31,7 @@ export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
+    this._ownerId = config.ownerId;
   }
 
   // ==========
@@ -77,9 +79,20 @@ export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
     return this._name
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: true, required: false
+  private _ownerId?: string;
   public get ownerId() {
     return this.getStringAttribute('owner_id');
+  }
+  public set ownerId(value: string) {
+    this._ownerId = value;
+  }
+  public resetOwnerId() {
+    this._ownerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerIdInput() {
+    return this._ownerId
   }
 
   // site_id - computed: true, optional: false, required: false
@@ -94,6 +107,7 @@ export class DataAwsOutpostsOutpost extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      owner_id: cdktf.stringToTerraform(this._ownerId),
     };
   }
 }
