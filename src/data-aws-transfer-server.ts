@@ -41,9 +41,19 @@ export class DataAwsTransferServer extends cdktf.TerraformDataSource {
     return this.getStringAttribute('arn');
   }
 
+  // certificate - computed: true, optional: false, required: false
+  public get certificate() {
+    return this.getStringAttribute('certificate');
+  }
+
   // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
+  }
+
+  // endpoint_type - computed: true, optional: false, required: false
+  public get endpointType() {
+    return this.getStringAttribute('endpoint_type');
   }
 
   // id - computed: true, optional: true, required: false
@@ -64,6 +74,16 @@ export class DataAwsTransferServer extends cdktf.TerraformDataSource {
   // logging_role - computed: true, optional: false, required: false
   public get loggingRole() {
     return this.getStringAttribute('logging_role');
+  }
+
+  // protocols - computed: true, optional: false, required: false
+  public get protocols() {
+    return this.getListAttribute('protocols');
+  }
+
+  // security_policy_name - computed: true, optional: false, required: false
+  public get securityPolicyName() {
+    return this.getStringAttribute('security_policy_name');
   }
 
   // server_id - computed: false, optional: false, required: true

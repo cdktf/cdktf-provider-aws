@@ -9,6 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataAwsOutpostsOutpostsConfig extends cdktf.TerraformMetaArguments {
   readonly availabilityZone?: string;
   readonly availabilityZoneId?: string;
+  readonly ownerId?: string;
   readonly siteId?: string;
 }
 
@@ -33,6 +34,7 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
     });
     this._availabilityZone = config.availabilityZone;
     this._availabilityZoneId = config.availabilityZoneId;
+    this._ownerId = config.ownerId;
     this._siteId = config.siteId;
   }
 
@@ -87,6 +89,22 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
     return this.getListAttribute('ids');
   }
 
+  // owner_id - computed: true, optional: true, required: false
+  private _ownerId?: string;
+  public get ownerId() {
+    return this.getStringAttribute('owner_id');
+  }
+  public set ownerId(value: string) {
+    this._ownerId = value;
+  }
+  public resetOwnerId() {
+    this._ownerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerIdInput() {
+    return this._ownerId
+  }
+
   // site_id - computed: true, optional: true, required: false
   private _siteId?: string;
   public get siteId() {
@@ -111,6 +129,7 @@ export class DataAwsOutpostsOutposts extends cdktf.TerraformDataSource {
     return {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       availability_zone_id: cdktf.stringToTerraform(this._availabilityZoneId),
+      owner_id: cdktf.stringToTerraform(this._ownerId),
       site_id: cdktf.stringToTerraform(this._siteId),
     };
   }

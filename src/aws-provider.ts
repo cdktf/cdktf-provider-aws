@@ -123,6 +123,8 @@ export interface AwsProviderEndpoints {
   /** Use this to override the default service endpoint URL */
   readonly appmesh?: string;
   /** Use this to override the default service endpoint URL */
+  readonly apprunner?: string;
+  /** Use this to override the default service endpoint URL */
   readonly appstream?: string;
   /** Use this to override the default service endpoint URL */
   readonly appsync?: string;
@@ -426,6 +428,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     applicationautoscaling: cdktf.stringToTerraform(struct!.applicationautoscaling),
     applicationinsights: cdktf.stringToTerraform(struct!.applicationinsights),
     appmesh: cdktf.stringToTerraform(struct!.appmesh),
+    apprunner: cdktf.stringToTerraform(struct!.apprunner),
     appstream: cdktf.stringToTerraform(struct!.appstream),
     appsync: cdktf.stringToTerraform(struct!.appsync),
     athena: cdktf.stringToTerraform(struct!.athena),

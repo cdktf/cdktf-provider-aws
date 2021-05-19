@@ -7,12 +7,15 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
+  readonly certificate?: string;
   readonly endpointType?: string;
   readonly forceDestroy?: boolean;
   readonly hostKey?: string;
   readonly identityProviderType?: string;
   readonly invocationRole?: string;
   readonly loggingRole?: string;
+  readonly protocols?: string[];
+  readonly securityPolicyName?: string;
   readonly tags?: { [key: string]: string };
   readonly tagsAll?: { [key: string]: string };
   readonly url?: string;
@@ -56,12 +59,15 @@ export class TransferServer extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._certificate = config.certificate;
     this._endpointType = config.endpointType;
     this._forceDestroy = config.forceDestroy;
     this._hostKey = config.hostKey;
     this._identityProviderType = config.identityProviderType;
     this._invocationRole = config.invocationRole;
     this._loggingRole = config.loggingRole;
+    this._protocols = config.protocols;
+    this._securityPolicyName = config.securityPolicyName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._url = config.url;
@@ -75,6 +81,22 @@ export class TransferServer extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // certificate - computed: false, optional: true, required: false
+  private _certificate?: string;
+  public get certificate() {
+    return this.getStringAttribute('certificate');
+  }
+  public set certificate(value: string ) {
+    this._certificate = value;
+  }
+  public resetCertificate() {
+    this._certificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateInput() {
+    return this._certificate
   }
 
   // endpoint - computed: true, optional: false, required: false
@@ -188,6 +210,38 @@ export class TransferServer extends cdktf.TerraformResource {
     return this._loggingRole
   }
 
+  // protocols - computed: true, optional: true, required: false
+  private _protocols?: string[];
+  public get protocols() {
+    return this.getListAttribute('protocols');
+  }
+  public set protocols(value: string[]) {
+    this._protocols = value;
+  }
+  public resetProtocols() {
+    this._protocols = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolsInput() {
+    return this._protocols
+  }
+
+  // security_policy_name - computed: false, optional: true, required: false
+  private _securityPolicyName?: string;
+  public get securityPolicyName() {
+    return this.getStringAttribute('security_policy_name');
+  }
+  public set securityPolicyName(value: string ) {
+    this._securityPolicyName = value;
+  }
+  public resetSecurityPolicyName() {
+    this._securityPolicyName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityPolicyNameInput() {
+    return this._securityPolicyName
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
@@ -258,12 +312,15 @@ export class TransferServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      certificate: cdktf.stringToTerraform(this._certificate),
       endpoint_type: cdktf.stringToTerraform(this._endpointType),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       host_key: cdktf.stringToTerraform(this._hostKey),
       identity_provider_type: cdktf.stringToTerraform(this._identityProviderType),
       invocation_role: cdktf.stringToTerraform(this._invocationRole),
       logging_role: cdktf.stringToTerraform(this._loggingRole),
+      protocols: cdktf.listMapper(cdktf.stringToTerraform)(this._protocols),
+      security_policy_name: cdktf.stringToTerraform(this._securityPolicyName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       url: cdktf.stringToTerraform(this._url),

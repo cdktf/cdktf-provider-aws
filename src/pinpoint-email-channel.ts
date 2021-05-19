@@ -12,7 +12,7 @@ export interface PinpointEmailChannelConfig extends cdktf.TerraformMetaArguments
   readonly enabled?: boolean;
   readonly fromAddress: string;
   readonly identity: string;
-  readonly roleArn: string;
+  readonly roleArn?: string;
 }
 
 // Resource
@@ -127,13 +127,16 @@ export class PinpointEmailChannel extends cdktf.TerraformResource {
     return this.getNumberAttribute('messages_per_second');
   }
 
-  // role_arn - computed: false, optional: false, required: true
-  private _roleArn: string;
+  // role_arn - computed: false, optional: true, required: false
+  private _roleArn?: string;
   public get roleArn() {
     return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string) {
+  public set roleArn(value: string ) {
     this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get roleArnInput() {

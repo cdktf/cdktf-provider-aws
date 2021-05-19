@@ -9,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface BatchComputeEnvironmentConfig extends cdktf.TerraformMetaArguments {
   readonly computeEnvironmentName?: string;
   readonly computeEnvironmentNamePrefix?: string;
-  readonly serviceRole: string;
+  readonly serviceRole?: string;
   readonly state?: string;
   readonly tags?: { [key: string]: string };
   readonly tagsAll?: { [key: string]: string };
@@ -153,13 +153,16 @@ export class BatchComputeEnvironment extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // service_role - computed: false, optional: false, required: true
-  private _serviceRole: string;
+  // service_role - computed: true, optional: true, required: false
+  private _serviceRole?: string;
   public get serviceRole() {
     return this.getStringAttribute('service_role');
   }
   public set serviceRole(value: string) {
     this._serviceRole = value;
+  }
+  public resetServiceRole() {
+    this._serviceRole = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get serviceRoleInput() {

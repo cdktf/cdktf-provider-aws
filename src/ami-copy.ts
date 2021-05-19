@@ -8,6 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
+  readonly destinationOutpostArn?: string;
   readonly encrypted?: boolean;
   readonly kmsKeyId?: string;
   readonly name: string;
@@ -76,6 +77,7 @@ export class AmiCopy extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._destinationOutpostArn = config.destinationOutpostArn;
     this._encrypted = config.encrypted;
     this._kmsKeyId = config.kmsKeyId;
     this._name = config.name;
@@ -116,6 +118,22 @@ export class AmiCopy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description
+  }
+
+  // destination_outpost_arn - computed: false, optional: true, required: false
+  private _destinationOutpostArn?: string;
+  public get destinationOutpostArn() {
+    return this.getStringAttribute('destination_outpost_arn');
+  }
+  public set destinationOutpostArn(value: string ) {
+    this._destinationOutpostArn = value;
+  }
+  public resetDestinationOutpostArn() {
+    this._destinationOutpostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationOutpostArnInput() {
+    return this._destinationOutpostArn
   }
 
   // ena_support - computed: true, optional: false, required: false
@@ -366,6 +384,7 @@ export class AmiCopy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      destination_outpost_arn: cdktf.stringToTerraform(this._destinationOutpostArn),
       encrypted: cdktf.booleanToTerraform(this._encrypted),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       name: cdktf.stringToTerraform(this._name),
