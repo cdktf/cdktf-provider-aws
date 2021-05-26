@@ -16,11 +16,92 @@ export interface AutoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly policyType?: string;
   readonly scalingAdjustment?: number;
+  /** predictive_scaling_configuration block */
+  readonly predictiveScalingConfiguration?: AutoscalingPolicyPredictiveScalingConfiguration[];
   /** step_adjustment block */
   readonly stepAdjustment?: AutoscalingPolicyStepAdjustment[];
   /** target_tracking_configuration block */
   readonly targetTrackingConfiguration?: AutoscalingPolicyTargetTrackingConfiguration[];
 }
+export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification {
+  readonly predefinedMetricType: string;
+  readonly resourceLabel: string;
+}
+
+function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    predefined_metric_type: cdktf.stringToTerraform(struct!.predefinedMetricType),
+    resource_label: cdktf.stringToTerraform(struct!.resourceLabel),
+  }
+}
+
+export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification {
+  readonly predefinedMetricType: string;
+  readonly resourceLabel: string;
+}
+
+function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    predefined_metric_type: cdktf.stringToTerraform(struct!.predefinedMetricType),
+    resource_label: cdktf.stringToTerraform(struct!.resourceLabel),
+  }
+}
+
+export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification {
+  readonly predefinedMetricType: string;
+  readonly resourceLabel: string;
+}
+
+function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    predefined_metric_type: cdktf.stringToTerraform(struct!.predefinedMetricType),
+    resource_label: cdktf.stringToTerraform(struct!.resourceLabel),
+  }
+}
+
+export interface AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification {
+  readonly targetValue: number;
+  /** predefined_load_metric_specification block */
+  readonly predefinedLoadMetricSpecification?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification[];
+  /** predefined_metric_pair_specification block */
+  readonly predefinedMetricPairSpecification?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification[];
+  /** predefined_scaling_metric_specification block */
+  readonly predefinedScalingMetricSpecification?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification[];
+}
+
+function autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    target_value: cdktf.numberToTerraform(struct!.targetValue),
+    predefined_load_metric_specification: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationToTerraform)(struct!.predefinedLoadMetricSpecification),
+    predefined_metric_pair_specification: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationToTerraform)(struct!.predefinedMetricPairSpecification),
+    predefined_scaling_metric_specification: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationToTerraform)(struct!.predefinedScalingMetricSpecification),
+  }
+}
+
+export interface AutoscalingPolicyPredictiveScalingConfiguration {
+  readonly maxCapacityBreachBehavior?: string;
+  readonly maxCapacityBuffer?: string;
+  readonly mode?: string;
+  readonly schedulingBufferTime?: string;
+  /** metric_specification block */
+  readonly metricSpecification: AutoscalingPolicyPredictiveScalingConfigurationMetricSpecification[];
+}
+
+function autoscalingPolicyPredictiveScalingConfigurationToTerraform(struct?: AutoscalingPolicyPredictiveScalingConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_capacity_breach_behavior: cdktf.stringToTerraform(struct!.maxCapacityBreachBehavior),
+    max_capacity_buffer: cdktf.stringToTerraform(struct!.maxCapacityBuffer),
+    mode: cdktf.stringToTerraform(struct!.mode),
+    scheduling_buffer_time: cdktf.stringToTerraform(struct!.schedulingBufferTime),
+    metric_specification: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationMetricSpecificationToTerraform)(struct!.metricSpecification),
+  }
+}
+
 export interface AutoscalingPolicyStepAdjustment {
   readonly metricIntervalLowerBound?: string;
   readonly metricIntervalUpperBound?: string;
@@ -130,6 +211,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
     this._name = config.name;
     this._policyType = config.policyType;
     this._scalingAdjustment = config.scalingAdjustment;
+    this._predictiveScalingConfiguration = config.predictiveScalingConfiguration;
     this._stepAdjustment = config.stepAdjustment;
     this._targetTrackingConfiguration = config.targetTrackingConfiguration;
   }
@@ -286,6 +368,22 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
     return this._scalingAdjustment
   }
 
+  // predictive_scaling_configuration - computed: false, optional: true, required: false
+  private _predictiveScalingConfiguration?: AutoscalingPolicyPredictiveScalingConfiguration[];
+  public get predictiveScalingConfiguration() {
+    return this.interpolationForAttribute('predictive_scaling_configuration') as any;
+  }
+  public set predictiveScalingConfiguration(value: AutoscalingPolicyPredictiveScalingConfiguration[] ) {
+    this._predictiveScalingConfiguration = value;
+  }
+  public resetPredictiveScalingConfiguration() {
+    this._predictiveScalingConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get predictiveScalingConfigurationInput() {
+    return this._predictiveScalingConfiguration
+  }
+
   // step_adjustment - computed: false, optional: true, required: false
   private _stepAdjustment?: AutoscalingPolicyStepAdjustment[];
   public get stepAdjustment() {
@@ -333,6 +431,7 @@ export class AutoscalingPolicy extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       policy_type: cdktf.stringToTerraform(this._policyType),
       scaling_adjustment: cdktf.numberToTerraform(this._scalingAdjustment),
+      predictive_scaling_configuration: cdktf.listMapper(autoscalingPolicyPredictiveScalingConfigurationToTerraform)(this._predictiveScalingConfiguration),
       step_adjustment: cdktf.listMapper(autoscalingPolicyStepAdjustmentToTerraform)(this._stepAdjustment),
       target_tracking_configuration: cdktf.listMapper(autoscalingPolicyTargetTrackingConfigurationToTerraform)(this._targetTrackingConfiguration),
     };
