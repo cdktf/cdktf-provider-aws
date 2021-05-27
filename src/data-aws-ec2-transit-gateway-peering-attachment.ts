@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_transit_gateway_peering_attachment.html
+// https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,12 +7,25 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2TransitGatewayPeeringAttachmentConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html#tags DataAwsEc2TransitGatewayPeeringAttachment#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html#filter DataAwsEc2TransitGatewayPeeringAttachment#filter}
+  */
   readonly filter?: DataAwsEc2TransitGatewayPeeringAttachmentFilter[];
 }
 export interface DataAwsEc2TransitGatewayPeeringAttachmentFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html#name DataAwsEc2TransitGatewayPeeringAttachment#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html#values DataAwsEc2TransitGatewayPeeringAttachment#values}
+  */
   readonly values: string[];
 }
 
@@ -25,14 +38,22 @@ function dataAwsEc2TransitGatewayPeeringAttachmentFilterToTerraform(struct?: Dat
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html aws_ec2_transit_gateway_peering_attachment}
+*/
 export class DataAwsEc2TransitGatewayPeeringAttachment extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_peering_attachment.html aws_ec2_transit_gateway_peering_attachment} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEc2TransitGatewayPeeringAttachmentConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEc2TransitGatewayPeeringAttachmentConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_transit_gateway_peering_attachment',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_pricing_product.html
+// https://www.terraform.io/docs/providers/aws/d/pricing_product.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,12 +7,25 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsPricingProductConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html#service_code DataAwsPricingProduct#service_code}
+  */
   readonly serviceCode: string;
-  /** filters block */
+  /**
+  * filters block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html#filters DataAwsPricingProduct#filters}
+  */
   readonly filters: DataAwsPricingProductFilters[];
 }
 export interface DataAwsPricingProductFilters {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html#field DataAwsPricingProduct#field}
+  */
   readonly field: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html#value DataAwsPricingProduct#value}
+  */
   readonly value: string;
 }
 
@@ -25,14 +38,22 @@ function dataAwsPricingProductFiltersToTerraform(struct?: DataAwsPricingProductF
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html aws_pricing_product}
+*/
 export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/pricing_product.html aws_pricing_product} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsPricingProductConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsPricingProductConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_pricing_product',

@@ -7,20 +7,53 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ApiGatewayUsagePlanConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#description ApiGatewayUsagePlan#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#name ApiGatewayUsagePlan#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#product_code ApiGatewayUsagePlan#product_code}
+  */
   readonly productCode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#tags ApiGatewayUsagePlan#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#tags_all ApiGatewayUsagePlan#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** api_stages block */
+  /**
+  * api_stages block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#api_stages ApiGatewayUsagePlan#api_stages}
+  */
   readonly apiStages?: ApiGatewayUsagePlanApiStages[];
-  /** quota_settings block */
+  /**
+  * quota_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#quota_settings ApiGatewayUsagePlan#quota_settings}
+  */
   readonly quotaSettings?: ApiGatewayUsagePlanQuotaSettings[];
-  /** throttle_settings block */
+  /**
+  * throttle_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#throttle_settings ApiGatewayUsagePlan#throttle_settings}
+  */
   readonly throttleSettings?: ApiGatewayUsagePlanThrottleSettings[];
 }
 export interface ApiGatewayUsagePlanApiStages {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#api_id ApiGatewayUsagePlan#api_id}
+  */
   readonly apiId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#stage ApiGatewayUsagePlan#stage}
+  */
   readonly stage: string;
 }
 
@@ -33,8 +66,17 @@ function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsagePlanApi
 }
 
 export interface ApiGatewayUsagePlanQuotaSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#limit ApiGatewayUsagePlan#limit}
+  */
   readonly limit: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#offset ApiGatewayUsagePlan#offset}
+  */
   readonly offset?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#period ApiGatewayUsagePlan#period}
+  */
   readonly period: string;
 }
 
@@ -48,7 +90,13 @@ function apiGatewayUsagePlanQuotaSettingsToTerraform(struct?: ApiGatewayUsagePla
 }
 
 export interface ApiGatewayUsagePlanThrottleSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#burst_limit ApiGatewayUsagePlan#burst_limit}
+  */
   readonly burstLimit?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#rate_limit ApiGatewayUsagePlan#rate_limit}
+  */
   readonly rateLimit?: number;
 }
 
@@ -61,14 +109,22 @@ function apiGatewayUsagePlanThrottleSettingsToTerraform(struct?: ApiGatewayUsage
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html aws_api_gateway_usage_plan}
+*/
 export class ApiGatewayUsagePlan extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html aws_api_gateway_usage_plan} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ApiGatewayUsagePlanConfig
+  */
   public constructor(scope: Construct, id: string, config: ApiGatewayUsagePlanConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_usage_plan',

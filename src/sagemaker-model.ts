@@ -7,19 +7,49 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#enable_network_isolation SagemakerModel#enable_network_isolation}
+  */
   readonly enableNetworkIsolation?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#execution_role_arn SagemakerModel#execution_role_arn}
+  */
   readonly executionRoleArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#name SagemakerModel#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#tags SagemakerModel#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#tags_all SagemakerModel#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** container block */
+  /**
+  * container block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#container SagemakerModel#container}
+  */
   readonly container?: SagemakerModelContainer[];
-  /** primary_container block */
+  /**
+  * primary_container block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#primary_container SagemakerModel#primary_container}
+  */
   readonly primaryContainer?: SagemakerModelPrimaryContainer[];
-  /** vpc_config block */
+  /**
+  * vpc_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#vpc_config SagemakerModel#vpc_config}
+  */
   readonly vpcConfig?: SagemakerModelVpcConfig[];
 }
 export interface SagemakerModelContainerImageConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#repository_access_mode SagemakerModel#repository_access_mode}
+  */
   readonly repositoryAccessMode: string;
 }
 
@@ -31,12 +61,31 @@ function sagemakerModelContainerImageConfigToTerraform(struct?: SagemakerModelCo
 }
 
 export interface SagemakerModelContainer {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#container_hostname SagemakerModel#container_hostname}
+  */
   readonly containerHostname?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#environment SagemakerModel#environment}
+  */
   readonly environment?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#image SagemakerModel#image}
+  */
   readonly image: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#mode SagemakerModel#mode}
+  */
   readonly mode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#model_data_url SagemakerModel#model_data_url}
+  */
   readonly modelDataUrl?: string;
-  /** image_config block */
+  /**
+  * image_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#image_config SagemakerModel#image_config}
+  */
   readonly imageConfig?: SagemakerModelContainerImageConfig[];
 }
 
@@ -53,6 +102,9 @@ function sagemakerModelContainerToTerraform(struct?: SagemakerModelContainer): a
 }
 
 export interface SagemakerModelPrimaryContainerImageConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#repository_access_mode SagemakerModel#repository_access_mode}
+  */
   readonly repositoryAccessMode: string;
 }
 
@@ -64,12 +116,31 @@ function sagemakerModelPrimaryContainerImageConfigToTerraform(struct?: Sagemaker
 }
 
 export interface SagemakerModelPrimaryContainer {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#container_hostname SagemakerModel#container_hostname}
+  */
   readonly containerHostname?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#environment SagemakerModel#environment}
+  */
   readonly environment?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#image SagemakerModel#image}
+  */
   readonly image: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#mode SagemakerModel#mode}
+  */
   readonly mode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#model_data_url SagemakerModel#model_data_url}
+  */
   readonly modelDataUrl?: string;
-  /** image_config block */
+  /**
+  * image_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#image_config SagemakerModel#image_config}
+  */
   readonly imageConfig?: SagemakerModelPrimaryContainerImageConfig[];
 }
 
@@ -86,7 +157,13 @@ function sagemakerModelPrimaryContainerToTerraform(struct?: SagemakerModelPrimar
 }
 
 export interface SagemakerModelVpcConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#security_group_ids SagemakerModel#security_group_ids}
+  */
   readonly securityGroupIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#subnets SagemakerModel#subnets}
+  */
   readonly subnets: string[];
 }
 
@@ -99,14 +176,22 @@ function sagemakerModelVpcConfigToTerraform(struct?: SagemakerModelVpcConfig): a
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html aws_sagemaker_model}
+*/
 export class SagemakerModel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html aws_sagemaker_model} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SagemakerModelConfig
+  */
   public constructor(scope: Construct, id: string, config: SagemakerModelConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_model',

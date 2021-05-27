@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Ec2CarrierGatewayConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_carrier_gateway.html#tags Ec2CarrierGateway#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_carrier_gateway.html#tags_all Ec2CarrierGateway#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_carrier_gateway.html#vpc_id Ec2CarrierGateway#vpc_id}
+  */
   readonly vpcId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_carrier_gateway.html aws_ec2_carrier_gateway}
+*/
 export class Ec2CarrierGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_carrier_gateway.html aws_ec2_carrier_gateway} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Ec2CarrierGatewayConfig
+  */
   public constructor(scope: Construct, id: string, config: Ec2CarrierGatewayConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_carrier_gateway',

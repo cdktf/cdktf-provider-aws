@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_directory_service_directory.html
+// https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsDirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html#directory_id DataAwsDirectoryServiceDirectory#directory_id}
+  */
   readonly directoryId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html#tags DataAwsDirectoryServiceDirectory#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsDirectoryServiceDirectoryConnectSettings extends cdktf.ComplexComputedList {
@@ -60,14 +66,22 @@ export class DataAwsDirectoryServiceDirectoryVpcSettings extends cdktf.ComplexCo
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html aws_directory_service_directory}
+*/
 export class DataAwsDirectoryServiceDirectory extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/directory_service_directory.html aws_directory_service_directory} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsDirectoryServiceDirectoryConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsDirectoryServiceDirectoryConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_directory_service_directory',

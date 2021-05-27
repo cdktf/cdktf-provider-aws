@@ -7,43 +7,137 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#code_signing_config_arn LambdaFunction#code_signing_config_arn}
+  */
   readonly codeSigningConfigArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#description LambdaFunction#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#filename LambdaFunction#filename}
+  */
   readonly filename?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#function_name LambdaFunction#function_name}
+  */
   readonly functionName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#handler LambdaFunction#handler}
+  */
   readonly handler?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#image_uri LambdaFunction#image_uri}
+  */
   readonly imageUri?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#kms_key_arn LambdaFunction#kms_key_arn}
+  */
   readonly kmsKeyArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#layers LambdaFunction#layers}
+  */
   readonly layers?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#memory_size LambdaFunction#memory_size}
+  */
   readonly memorySize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#package_type LambdaFunction#package_type}
+  */
   readonly packageType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#publish LambdaFunction#publish}
+  */
   readonly publish?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#reserved_concurrent_executions LambdaFunction#reserved_concurrent_executions}
+  */
   readonly reservedConcurrentExecutions?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#role LambdaFunction#role}
+  */
   readonly role: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#runtime LambdaFunction#runtime}
+  */
   readonly runtime?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#s3_bucket LambdaFunction#s3_bucket}
+  */
   readonly s3Bucket?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#s3_key LambdaFunction#s3_key}
+  */
   readonly s3Key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#s3_object_version LambdaFunction#s3_object_version}
+  */
   readonly s3ObjectVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#source_code_hash LambdaFunction#source_code_hash}
+  */
   readonly sourceCodeHash?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#tags LambdaFunction#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#tags_all LambdaFunction#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#timeout LambdaFunction#timeout}
+  */
   readonly timeout?: number;
-  /** dead_letter_config block */
+  /**
+  * dead_letter_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#dead_letter_config LambdaFunction#dead_letter_config}
+  */
   readonly deadLetterConfig?: LambdaFunctionDeadLetterConfig[];
-  /** environment block */
+  /**
+  * environment block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#environment LambdaFunction#environment}
+  */
   readonly environment?: LambdaFunctionEnvironment[];
-  /** file_system_config block */
+  /**
+  * file_system_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#file_system_config LambdaFunction#file_system_config}
+  */
   readonly fileSystemConfig?: LambdaFunctionFileSystemConfig[];
-  /** image_config block */
+  /**
+  * image_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#image_config LambdaFunction#image_config}
+  */
   readonly imageConfig?: LambdaFunctionImageConfig[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#timeouts LambdaFunction#timeouts}
+  */
   readonly timeouts?: LambdaFunctionTimeouts;
-  /** tracing_config block */
+  /**
+  * tracing_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#tracing_config LambdaFunction#tracing_config}
+  */
   readonly tracingConfig?: LambdaFunctionTracingConfig[];
-  /** vpc_config block */
+  /**
+  * vpc_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#vpc_config LambdaFunction#vpc_config}
+  */
   readonly vpcConfig?: LambdaFunctionVpcConfig[];
 }
 export interface LambdaFunctionDeadLetterConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#target_arn LambdaFunction#target_arn}
+  */
   readonly targetArn: string;
 }
 
@@ -55,6 +149,9 @@ function lambdaFunctionDeadLetterConfigToTerraform(struct?: LambdaFunctionDeadLe
 }
 
 export interface LambdaFunctionEnvironment {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#variables LambdaFunction#variables}
+  */
   readonly variables?: { [key: string]: string };
 }
 
@@ -66,7 +163,13 @@ function lambdaFunctionEnvironmentToTerraform(struct?: LambdaFunctionEnvironment
 }
 
 export interface LambdaFunctionFileSystemConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#arn LambdaFunction#arn}
+  */
   readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#local_mount_path LambdaFunction#local_mount_path}
+  */
   readonly localMountPath: string;
 }
 
@@ -79,8 +182,17 @@ function lambdaFunctionFileSystemConfigToTerraform(struct?: LambdaFunctionFileSy
 }
 
 export interface LambdaFunctionImageConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#command LambdaFunction#command}
+  */
   readonly command?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#entry_point LambdaFunction#entry_point}
+  */
   readonly entryPoint?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#working_directory LambdaFunction#working_directory}
+  */
   readonly workingDirectory?: string;
 }
 
@@ -94,6 +206,9 @@ function lambdaFunctionImageConfigToTerraform(struct?: LambdaFunctionImageConfig
 }
 
 export interface LambdaFunctionTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#create LambdaFunction#create}
+  */
   readonly create?: string;
 }
 
@@ -105,6 +220,9 @@ function lambdaFunctionTimeoutsToTerraform(struct?: LambdaFunctionTimeouts): any
 }
 
 export interface LambdaFunctionTracingConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#mode LambdaFunction#mode}
+  */
   readonly mode: string;
 }
 
@@ -116,7 +234,13 @@ function lambdaFunctionTracingConfigToTerraform(struct?: LambdaFunctionTracingCo
 }
 
 export interface LambdaFunctionVpcConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#security_group_ids LambdaFunction#security_group_ids}
+  */
   readonly securityGroupIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#subnet_ids LambdaFunction#subnet_ids}
+  */
   readonly subnetIds: string[];
 }
 
@@ -129,14 +253,22 @@ function lambdaFunctionVpcConfigToTerraform(struct?: LambdaFunctionVpcConfig): a
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html aws_lambda_function}
+*/
 export class LambdaFunction extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html aws_lambda_function} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options LambdaFunctionConfig
+  */
   public constructor(scope: Construct, id: string, config: LambdaFunctionConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_lambda_function',

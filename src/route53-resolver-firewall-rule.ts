@@ -7,25 +7,60 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Route53ResolverFirewallRuleConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#action Route53ResolverFirewallRule#action}
+  */
   readonly action: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#block_override_dns_type Route53ResolverFirewallRule#block_override_dns_type}
+  */
   readonly blockOverrideDnsType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#block_override_domain Route53ResolverFirewallRule#block_override_domain}
+  */
   readonly blockOverrideDomain?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#block_override_ttl Route53ResolverFirewallRule#block_override_ttl}
+  */
   readonly blockOverrideTtl?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#block_response Route53ResolverFirewallRule#block_response}
+  */
   readonly blockResponse?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#firewall_domain_list_id Route53ResolverFirewallRule#firewall_domain_list_id}
+  */
   readonly firewallDomainListId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#firewall_rule_group_id Route53ResolverFirewallRule#firewall_rule_group_id}
+  */
   readonly firewallRuleGroupId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#name Route53ResolverFirewallRule#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html#priority Route53ResolverFirewallRule#priority}
+  */
   readonly priority: number;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html aws_route53_resolver_firewall_rule}
+*/
 export class Route53ResolverFirewallRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_firewall_rule.html aws_route53_resolver_firewall_rule} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Route53ResolverFirewallRuleConfig
+  */
   public constructor(scope: Construct, id: string, config: Route53ResolverFirewallRuleConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_route53_resolver_firewall_rule',

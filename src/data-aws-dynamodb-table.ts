@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_dynamodb_table.html
+// https://www.terraform.io/docs/providers/aws/d/dynamodb_table.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,9 +7,19 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsDynamodbTableConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table.html#name DataAwsDynamodbTable#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table.html#tags DataAwsDynamodbTable#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** server_side_encryption block */
+  /**
+  * server_side_encryption block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table.html#server_side_encryption DataAwsDynamodbTable#server_side_encryption}
+  */
   readonly serverSideEncryption?: DataAwsDynamodbTableServerSideEncryption[];
 }
 export class DataAwsDynamodbTableAttribute extends cdktf.ComplexComputedList {
@@ -124,14 +134,22 @@ function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: DataAwsDyn
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table.html aws_dynamodb_table}
+*/
 export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table.html aws_dynamodb_table} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsDynamodbTableConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsDynamodbTableConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_dynamodb_table',

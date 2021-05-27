@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface VpcEndpointConnectionNotificationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_notification.html#connection_events VpcEndpointConnectionNotification#connection_events}
+  */
   readonly connectionEvents: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_notification.html#connection_notification_arn VpcEndpointConnectionNotification#connection_notification_arn}
+  */
   readonly connectionNotificationArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_notification.html#vpc_endpoint_id VpcEndpointConnectionNotification#vpc_endpoint_id}
+  */
   readonly vpcEndpointId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_notification.html#vpc_endpoint_service_id VpcEndpointConnectionNotification#vpc_endpoint_service_id}
+  */
   readonly vpcEndpointServiceId?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_notification.html aws_vpc_endpoint_connection_notification}
+*/
 export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_notification.html aws_vpc_endpoint_connection_notification} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options VpcEndpointConnectionNotificationConfig
+  */
   public constructor(scope: Construct, id: string, config: VpcEndpointConnectionNotificationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_vpc_endpoint_connection_notification',

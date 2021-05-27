@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_wafv2_ip_set.html
+// https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsWafv2IpSetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html#name DataAwsWafv2IpSet#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html#scope DataAwsWafv2IpSet#scope}
+  */
   readonly scope: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html aws_wafv2_ip_set}
+*/
 export class DataAwsWafv2IpSet extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_ip_set.html aws_wafv2_ip_set} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsWafv2IpSetConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsWafv2IpSetConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_wafv2_ip_set',

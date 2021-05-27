@@ -7,11 +7,25 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SignerSigningJobConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}
+  */
   readonly ignoreSigningJobFailure?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#profile_name SignerSigningJob#profile_name}
+  */
   readonly profileName: string;
-  /** destination block */
+  /**
+  * destination block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#destination SignerSigningJob#destination}
+  */
   readonly destination: SignerSigningJobDestination[];
-  /** source block */
+  /**
+  * source block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#source SignerSigningJob#source}
+  */
   readonly source: SignerSigningJobSource[];
 }
 export class SignerSigningJobRevocationRecord extends cdktf.ComplexComputedList {
@@ -51,7 +65,13 @@ export class SignerSigningJobSignedObject extends cdktf.ComplexComputedList {
   }
 }
 export interface SignerSigningJobDestinationS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#bucket SignerSigningJob#bucket}
+  */
   readonly bucket: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#prefix SignerSigningJob#prefix}
+  */
   readonly prefix?: string;
 }
 
@@ -64,7 +84,11 @@ function signerSigningJobDestinationS3ToTerraform(struct?: SignerSigningJobDesti
 }
 
 export interface SignerSigningJobDestination {
-  /** s3 block */
+  /**
+  * s3 block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#s3 SignerSigningJob#s3}
+  */
   readonly s3: SignerSigningJobDestinationS3[];
 }
 
@@ -76,8 +100,17 @@ function signerSigningJobDestinationToTerraform(struct?: SignerSigningJobDestina
 }
 
 export interface SignerSigningJobSourceS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#bucket SignerSigningJob#bucket}
+  */
   readonly bucket: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#key SignerSigningJob#key}
+  */
   readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#version SignerSigningJob#version}
+  */
   readonly version: string;
 }
 
@@ -91,7 +124,11 @@ function signerSigningJobSourceS3ToTerraform(struct?: SignerSigningJobSourceS3):
 }
 
 export interface SignerSigningJobSource {
-  /** s3 block */
+  /**
+  * s3 block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#s3 SignerSigningJob#s3}
+  */
   readonly s3: SignerSigningJobSourceS3[];
 }
 
@@ -103,14 +140,22 @@ function signerSigningJobSourceToTerraform(struct?: SignerSigningJobSource): any
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html aws_signer_signing_job}
+*/
 export class SignerSigningJob extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html aws_signer_signing_job} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SignerSigningJobConfig
+  */
   public constructor(scope: Construct, id: string, config: SignerSigningJobConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_signer_signing_job',

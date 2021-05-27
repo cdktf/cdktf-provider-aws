@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_alb_listener.html
+// https://www.terraform.io/docs/providers/aws/d/alb_listener.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,8 +7,17 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsAlbListenerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb_listener.html#load_balancer_arn DataAwsAlbListener#load_balancer_arn}
+  */
   readonly loadBalancerArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb_listener.html#port DataAwsAlbListener#port}
+  */
   readonly port?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/alb_listener.html#tags DataAwsAlbListener#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsAlbListenerDefaultActionAuthenticateCognito extends cdktf.ComplexComputedList {
@@ -238,14 +247,22 @@ export class DataAwsAlbListenerDefaultAction extends cdktf.ComplexComputedList {
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/alb_listener.html aws_alb_listener}
+*/
 export class DataAwsAlbListener extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/alb_listener.html aws_alb_listener} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsAlbListenerConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsAlbListenerConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_alb_listener',

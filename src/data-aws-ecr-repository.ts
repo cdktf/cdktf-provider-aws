@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ecr_repository.html
+// https://www.terraform.io/docs/providers/aws/d/ecr_repository.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,8 +7,17 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEcrRepositoryConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_repository.html#name DataAwsEcrRepository#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_repository.html#registry_id DataAwsEcrRepository#registry_id}
+  */
   readonly registryId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_repository.html#tags DataAwsEcrRepository#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsEcrRepositoryEncryptionConfiguration extends cdktf.ComplexComputedList {
@@ -31,14 +40,22 @@ export class DataAwsEcrRepositoryImageScanningConfiguration extends cdktf.Comple
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ecr_repository.html aws_ecr_repository}
+*/
 export class DataAwsEcrRepository extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ecr_repository.html aws_ecr_repository} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEcrRepositoryConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEcrRepositoryConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ecr_repository',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_coip_pools.html
+// https://www.terraform.io/docs/providers/aws/d/ec2_coip_pools.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,12 +7,25 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2CoipPoolsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pools.html#tags DataAwsEc2CoipPools#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pools.html#filter DataAwsEc2CoipPools#filter}
+  */
   readonly filter?: DataAwsEc2CoipPoolsFilter[];
 }
 export interface DataAwsEc2CoipPoolsFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pools.html#name DataAwsEc2CoipPools#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pools.html#values DataAwsEc2CoipPools#values}
+  */
   readonly values: string[];
 }
 
@@ -25,14 +38,22 @@ function dataAwsEc2CoipPoolsFilterToTerraform(struct?: DataAwsEc2CoipPoolsFilter
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pools.html aws_ec2_coip_pools}
+*/
 export class DataAwsEc2CoipPools extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pools.html aws_ec2_coip_pools} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEc2CoipPoolsConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEc2CoipPoolsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_coip_pools',

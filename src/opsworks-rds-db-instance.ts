@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OpsworksRdsDbInstanceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_rds_db_instance.html#db_password OpsworksRdsDbInstance#db_password}
+  */
   readonly dbPassword: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_rds_db_instance.html#db_user OpsworksRdsDbInstance#db_user}
+  */
   readonly dbUser: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_rds_db_instance.html#rds_db_instance_arn OpsworksRdsDbInstance#rds_db_instance_arn}
+  */
   readonly rdsDbInstanceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_rds_db_instance.html#stack_id OpsworksRdsDbInstance#stack_id}
+  */
   readonly stackId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_rds_db_instance.html aws_opsworks_rds_db_instance}
+*/
 export class OpsworksRdsDbInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_rds_db_instance.html aws_opsworks_rds_db_instance} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OpsworksRdsDbInstanceConfig
+  */
   public constructor(scope: Construct, id: string, config: OpsworksRdsDbInstanceConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_opsworks_rds_db_instance',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_lb.html
+// https://www.terraform.io/docs/providers/aws/d/lb.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsLbConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb.html#name DataAwsLb#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lb.html#tags DataAwsLb#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsLbAccessLogs extends cdktf.ComplexComputedList {
@@ -55,14 +61,22 @@ export class DataAwsLbSubnetMapping extends cdktf.ComplexComputedList {
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/lb.html aws_lb}
+*/
 export class DataAwsLb extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/lb.html aws_lb} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsLbConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsLbConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_lb',

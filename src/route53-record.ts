@@ -7,29 +7,85 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#allow_overwrite Route53Record#allow_overwrite}
+  */
   readonly allowOverwrite?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#health_check_id Route53Record#health_check_id}
+  */
   readonly healthCheckId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#multivalue_answer_routing_policy Route53Record#multivalue_answer_routing_policy}
+  */
   readonly multivalueAnswerRoutingPolicy?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#name Route53Record#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#records Route53Record#records}
+  */
   readonly records?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#set_identifier Route53Record#set_identifier}
+  */
   readonly setIdentifier?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#ttl Route53Record#ttl}
+  */
   readonly ttl?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#type Route53Record#type}
+  */
   readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#zone_id Route53Record#zone_id}
+  */
   readonly zoneId: string;
-  /** alias block */
+  /**
+  * alias block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#alias Route53Record#alias}
+  */
   readonly alias?: Route53RecordAlias[];
-  /** failover_routing_policy block */
+  /**
+  * failover_routing_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#failover_routing_policy Route53Record#failover_routing_policy}
+  */
   readonly failoverRoutingPolicy?: Route53RecordFailoverRoutingPolicy[];
-  /** geolocation_routing_policy block */
+  /**
+  * geolocation_routing_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#geolocation_routing_policy Route53Record#geolocation_routing_policy}
+  */
   readonly geolocationRoutingPolicy?: Route53RecordGeolocationRoutingPolicy[];
-  /** latency_routing_policy block */
+  /**
+  * latency_routing_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#latency_routing_policy Route53Record#latency_routing_policy}
+  */
   readonly latencyRoutingPolicy?: Route53RecordLatencyRoutingPolicy[];
-  /** weighted_routing_policy block */
+  /**
+  * weighted_routing_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#weighted_routing_policy Route53Record#weighted_routing_policy}
+  */
   readonly weightedRoutingPolicy?: Route53RecordWeightedRoutingPolicy[];
 }
 export interface Route53RecordAlias {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#evaluate_target_health Route53Record#evaluate_target_health}
+  */
   readonly evaluateTargetHealth: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#name Route53Record#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#zone_id Route53Record#zone_id}
+  */
   readonly zoneId: string;
 }
 
@@ -43,6 +99,9 @@ function route53RecordAliasToTerraform(struct?: Route53RecordAlias): any {
 }
 
 export interface Route53RecordFailoverRoutingPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#type Route53Record#type}
+  */
   readonly type: string;
 }
 
@@ -54,8 +113,17 @@ function route53RecordFailoverRoutingPolicyToTerraform(struct?: Route53RecordFai
 }
 
 export interface Route53RecordGeolocationRoutingPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#continent Route53Record#continent}
+  */
   readonly continent?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#country Route53Record#country}
+  */
   readonly country?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#subdivision Route53Record#subdivision}
+  */
   readonly subdivision?: string;
 }
 
@@ -69,6 +137,9 @@ function route53RecordGeolocationRoutingPolicyToTerraform(struct?: Route53Record
 }
 
 export interface Route53RecordLatencyRoutingPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#region Route53Record#region}
+  */
   readonly region: string;
 }
 
@@ -80,6 +151,9 @@ function route53RecordLatencyRoutingPolicyToTerraform(struct?: Route53RecordLate
 }
 
 export interface Route53RecordWeightedRoutingPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#weight Route53Record#weight}
+  */
   readonly weight: number;
 }
 
@@ -91,14 +165,22 @@ function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWei
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html aws_route53_record}
+*/
 export class Route53Record extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html aws_route53_record} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Route53RecordConfig
+  */
   public constructor(scope: Construct, id: string, config: Route53RecordConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_route53_record',

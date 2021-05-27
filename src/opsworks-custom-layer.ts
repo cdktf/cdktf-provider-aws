@@ -7,38 +7,129 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OpsworksCustomLayerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#auto_assign_elastic_ips OpsworksCustomLayer#auto_assign_elastic_ips}
+  */
   readonly autoAssignElasticIps?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#auto_assign_public_ips OpsworksCustomLayer#auto_assign_public_ips}
+  */
   readonly autoAssignPublicIps?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#auto_healing OpsworksCustomLayer#auto_healing}
+  */
   readonly autoHealing?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#custom_configure_recipes OpsworksCustomLayer#custom_configure_recipes}
+  */
   readonly customConfigureRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#custom_deploy_recipes OpsworksCustomLayer#custom_deploy_recipes}
+  */
   readonly customDeployRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#custom_instance_profile_arn OpsworksCustomLayer#custom_instance_profile_arn}
+  */
   readonly customInstanceProfileArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#custom_json OpsworksCustomLayer#custom_json}
+  */
   readonly customJson?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#custom_security_group_ids OpsworksCustomLayer#custom_security_group_ids}
+  */
   readonly customSecurityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#custom_setup_recipes OpsworksCustomLayer#custom_setup_recipes}
+  */
   readonly customSetupRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#custom_shutdown_recipes OpsworksCustomLayer#custom_shutdown_recipes}
+  */
   readonly customShutdownRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#custom_undeploy_recipes OpsworksCustomLayer#custom_undeploy_recipes}
+  */
   readonly customUndeployRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#drain_elb_on_shutdown OpsworksCustomLayer#drain_elb_on_shutdown}
+  */
   readonly drainElbOnShutdown?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#elastic_load_balancer OpsworksCustomLayer#elastic_load_balancer}
+  */
   readonly elasticLoadBalancer?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#install_updates_on_boot OpsworksCustomLayer#install_updates_on_boot}
+  */
   readonly installUpdatesOnBoot?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#instance_shutdown_timeout OpsworksCustomLayer#instance_shutdown_timeout}
+  */
   readonly instanceShutdownTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#name OpsworksCustomLayer#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#short_name OpsworksCustomLayer#short_name}
+  */
   readonly shortName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#stack_id OpsworksCustomLayer#stack_id}
+  */
   readonly stackId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#system_packages OpsworksCustomLayer#system_packages}
+  */
   readonly systemPackages?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#tags OpsworksCustomLayer#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#tags_all OpsworksCustomLayer#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#use_ebs_optimized_instances OpsworksCustomLayer#use_ebs_optimized_instances}
+  */
   readonly useEbsOptimizedInstances?: boolean;
-  /** ebs_volume block */
+  /**
+  * ebs_volume block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#ebs_volume OpsworksCustomLayer#ebs_volume}
+  */
   readonly ebsVolume?: OpsworksCustomLayerEbsVolume[];
 }
 export interface OpsworksCustomLayerEbsVolume {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#encrypted OpsworksCustomLayer#encrypted}
+  */
   readonly encrypted?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#iops OpsworksCustomLayer#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#mount_point OpsworksCustomLayer#mount_point}
+  */
   readonly mountPoint: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#number_of_disks OpsworksCustomLayer#number_of_disks}
+  */
   readonly numberOfDisks: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#raid_level OpsworksCustomLayer#raid_level}
+  */
   readonly raidLevel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#size OpsworksCustomLayer#size}
+  */
   readonly size: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html#type OpsworksCustomLayer#type}
+  */
   readonly type?: string;
 }
 
@@ -56,14 +147,22 @@ function opsworksCustomLayerEbsVolumeToTerraform(struct?: OpsworksCustomLayerEbs
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html aws_opsworks_custom_layer}
+*/
 export class OpsworksCustomLayer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_custom_layer.html aws_opsworks_custom_layer} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OpsworksCustomLayerConfig
+  */
   public constructor(scope: Construct, id: string, config: OpsworksCustomLayerConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_opsworks_custom_layer',

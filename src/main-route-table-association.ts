@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface MainRouteTableAssociationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html#route_table_id MainRouteTableAssociation#route_table_id}
+  */
   readonly routeTableId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html#vpc_id MainRouteTableAssociation#vpc_id}
+  */
   readonly vpcId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html aws_main_route_table_association}
+*/
 export class MainRouteTableAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html aws_main_route_table_association} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options MainRouteTableAssociationConfig
+  */
   public constructor(scope: Construct, id: string, config: MainRouteTableAssociationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_main_route_table_association',

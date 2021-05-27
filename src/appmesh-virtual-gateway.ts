@@ -7,16 +7,41 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AppmeshVirtualGatewayConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#mesh_name AppmeshVirtualGateway#mesh_name}
+  */
   readonly meshName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#mesh_owner AppmeshVirtualGateway#mesh_owner}
+  */
   readonly meshOwner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#name AppmeshVirtualGateway#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#tags AppmeshVirtualGateway#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#tags_all AppmeshVirtualGateway#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** spec block */
+  /**
+  * spec block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#spec AppmeshVirtualGateway#spec}
+  */
   readonly spec: AppmeshVirtualGatewaySpec[];
 }
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#certificate_chain AppmeshVirtualGateway#certificate_chain}
+  */
   readonly certificateChain: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#private_key AppmeshVirtualGateway#private_key}
+  */
   readonly privateKey: string;
 }
 
@@ -29,6 +54,9 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileT
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#secret_name AppmeshVirtualGateway#secret_name}
+  */
   readonly secretName: string;
 }
 
@@ -40,9 +68,17 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsTo
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate {
-  /** file block */
+  /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#file AppmeshVirtualGateway#file}
+  */
   readonly file?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile[];
-  /** sds block */
+  /**
+  * sds block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#sds AppmeshVirtualGateway#sds}
+  */
   readonly sds?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds[];
 }
 
@@ -55,6 +91,9 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateToTer
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#exact AppmeshVirtualGateway#exact}
+  */
   readonly exact: string[];
 }
 
@@ -66,7 +105,11 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjec
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames {
-  /** match block */
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#match AppmeshVirtualGateway#match}
+  */
   readonly match: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch[];
 }
 
@@ -78,6 +121,9 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjec
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#certificate_authority_arns AppmeshVirtualGateway#certificate_authority_arns}
+  */
   readonly certificateAuthorityArns: string[];
 }
 
@@ -89,6 +135,9 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustA
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#certificate_chain AppmeshVirtualGateway#certificate_chain}
+  */
   readonly certificateChain: string;
 }
 
@@ -100,6 +149,9 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustF
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#secret_name AppmeshVirtualGateway#secret_name}
+  */
   readonly secretName: string;
 }
 
@@ -111,11 +163,23 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustS
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust {
-  /** acm block */
+  /**
+  * acm block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#acm AppmeshVirtualGateway#acm}
+  */
   readonly acm?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm[];
-  /** file block */
+  /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#file AppmeshVirtualGateway#file}
+  */
   readonly file?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile[];
-  /** sds block */
+  /**
+  * sds block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#sds AppmeshVirtualGateway#sds}
+  */
   readonly sds?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds[];
 }
 
@@ -129,9 +193,17 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustT
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation {
-  /** subject_alternative_names block */
+  /**
+  * subject_alternative_names block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#subject_alternative_names AppmeshVirtualGateway#subject_alternative_names}
+  */
   readonly subjectAlternativeNames?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames[];
-  /** trust block */
+  /**
+  * trust block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#trust AppmeshVirtualGateway#trust}
+  */
   readonly trust: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust[];
 }
 
@@ -144,11 +216,25 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationToTerr
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#enforce AppmeshVirtualGateway#enforce}
+  */
   readonly enforce?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#ports AppmeshVirtualGateway#ports}
+  */
   readonly ports?: number[];
-  /** certificate block */
+  /**
+  * certificate block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#certificate AppmeshVirtualGateway#certificate}
+  */
   readonly certificate?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate[];
-  /** validation block */
+  /**
+  * validation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#validation AppmeshVirtualGateway#validation}
+  */
   readonly validation: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation[];
 }
 
@@ -163,7 +249,11 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsToTerraform(stru
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy {
-  /** tls block */
+  /**
+  * tls block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#tls AppmeshVirtualGateway#tls}
+  */
   readonly tls?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls[];
 }
 
@@ -175,7 +265,11 @@ function appmeshVirtualGatewaySpecBackendDefaultsClientPolicyToTerraform(struct?
 }
 
 export interface AppmeshVirtualGatewaySpecBackendDefaults {
-  /** client_policy block */
+  /**
+  * client_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#client_policy AppmeshVirtualGateway#client_policy}
+  */
   readonly clientPolicy?: AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy[];
 }
 
@@ -187,6 +281,9 @@ function appmeshVirtualGatewaySpecBackendDefaultsToTerraform(struct?: AppmeshVir
 }
 
 export interface AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#max_requests AppmeshVirtualGateway#max_requests}
+  */
   readonly maxRequests: number;
 }
 
@@ -198,7 +295,13 @@ function appmeshVirtualGatewaySpecListenerConnectionPoolGrpcToTerraform(struct?:
 }
 
 export interface AppmeshVirtualGatewaySpecListenerConnectionPoolHttp {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#max_connections AppmeshVirtualGateway#max_connections}
+  */
   readonly maxConnections: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#max_pending_requests AppmeshVirtualGateway#max_pending_requests}
+  */
   readonly maxPendingRequests?: number;
 }
 
@@ -211,6 +314,9 @@ function appmeshVirtualGatewaySpecListenerConnectionPoolHttpToTerraform(struct?:
 }
 
 export interface AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2 {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#max_requests AppmeshVirtualGateway#max_requests}
+  */
   readonly maxRequests: number;
 }
 
@@ -222,11 +328,23 @@ function appmeshVirtualGatewaySpecListenerConnectionPoolHttp2ToTerraform(struct?
 }
 
 export interface AppmeshVirtualGatewaySpecListenerConnectionPool {
-  /** grpc block */
+  /**
+  * grpc block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#grpc AppmeshVirtualGateway#grpc}
+  */
   readonly grpc?: AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc[];
-  /** http block */
+  /**
+  * http block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#http AppmeshVirtualGateway#http}
+  */
   readonly http?: AppmeshVirtualGatewaySpecListenerConnectionPoolHttp[];
-  /** http2 block */
+  /**
+  * http2 block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#http2 AppmeshVirtualGateway#http2}
+  */
   readonly http2?: AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2[];
 }
 
@@ -240,12 +358,33 @@ function appmeshVirtualGatewaySpecListenerConnectionPoolToTerraform(struct?: App
 }
 
 export interface AppmeshVirtualGatewaySpecListenerHealthCheck {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#healthy_threshold AppmeshVirtualGateway#healthy_threshold}
+  */
   readonly healthyThreshold: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#interval_millis AppmeshVirtualGateway#interval_millis}
+  */
   readonly intervalMillis: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#path AppmeshVirtualGateway#path}
+  */
   readonly path?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#port AppmeshVirtualGateway#port}
+  */
   readonly port?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#protocol AppmeshVirtualGateway#protocol}
+  */
   readonly protocol: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#timeout_millis AppmeshVirtualGateway#timeout_millis}
+  */
   readonly timeoutMillis: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#unhealthy_threshold AppmeshVirtualGateway#unhealthy_threshold}
+  */
   readonly unhealthyThreshold: number;
 }
 
@@ -263,7 +402,13 @@ function appmeshVirtualGatewaySpecListenerHealthCheckToTerraform(struct?: Appmes
 }
 
 export interface AppmeshVirtualGatewaySpecListenerPortMapping {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#port AppmeshVirtualGateway#port}
+  */
   readonly port: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#protocol AppmeshVirtualGateway#protocol}
+  */
   readonly protocol: string;
 }
 
@@ -276,6 +421,9 @@ function appmeshVirtualGatewaySpecListenerPortMappingToTerraform(struct?: Appmes
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsCertificateAcm {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#certificate_arn AppmeshVirtualGateway#certificate_arn}
+  */
   readonly certificateArn: string;
 }
 
@@ -287,7 +435,13 @@ function appmeshVirtualGatewaySpecListenerTlsCertificateAcmToTerraform(struct?: 
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsCertificateFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#certificate_chain AppmeshVirtualGateway#certificate_chain}
+  */
   readonly certificateChain: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#private_key AppmeshVirtualGateway#private_key}
+  */
   readonly privateKey: string;
 }
 
@@ -300,6 +454,9 @@ function appmeshVirtualGatewaySpecListenerTlsCertificateFileToTerraform(struct?:
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsCertificateSds {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#secret_name AppmeshVirtualGateway#secret_name}
+  */
   readonly secretName: string;
 }
 
@@ -311,11 +468,23 @@ function appmeshVirtualGatewaySpecListenerTlsCertificateSdsToTerraform(struct?: 
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsCertificate {
-  /** acm block */
+  /**
+  * acm block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#acm AppmeshVirtualGateway#acm}
+  */
   readonly acm?: AppmeshVirtualGatewaySpecListenerTlsCertificateAcm[];
-  /** file block */
+  /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#file AppmeshVirtualGateway#file}
+  */
   readonly file?: AppmeshVirtualGatewaySpecListenerTlsCertificateFile[];
-  /** sds block */
+  /**
+  * sds block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#sds AppmeshVirtualGateway#sds}
+  */
   readonly sds?: AppmeshVirtualGatewaySpecListenerTlsCertificateSds[];
 }
 
@@ -329,6 +498,9 @@ function appmeshVirtualGatewaySpecListenerTlsCertificateToTerraform(struct?: App
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#exact AppmeshVirtualGateway#exact}
+  */
   readonly exact: string[];
 }
 
@@ -340,7 +512,11 @@ function appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMa
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames {
-  /** match block */
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#match AppmeshVirtualGateway#match}
+  */
   readonly match: AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch[];
 }
 
@@ -352,6 +528,9 @@ function appmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesTo
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#certificate_chain AppmeshVirtualGateway#certificate_chain}
+  */
   readonly certificateChain: string;
 }
 
@@ -363,6 +542,9 @@ function appmeshVirtualGatewaySpecListenerTlsValidationTrustFileToTerraform(stru
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#secret_name AppmeshVirtualGateway#secret_name}
+  */
   readonly secretName: string;
 }
 
@@ -374,9 +556,17 @@ function appmeshVirtualGatewaySpecListenerTlsValidationTrustSdsToTerraform(struc
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsValidationTrust {
-  /** file block */
+  /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#file AppmeshVirtualGateway#file}
+  */
   readonly file?: AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile[];
-  /** sds block */
+  /**
+  * sds block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#sds AppmeshVirtualGateway#sds}
+  */
   readonly sds?: AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds[];
 }
 
@@ -389,9 +579,17 @@ function appmeshVirtualGatewaySpecListenerTlsValidationTrustToTerraform(struct?:
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTlsValidation {
-  /** subject_alternative_names block */
+  /**
+  * subject_alternative_names block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#subject_alternative_names AppmeshVirtualGateway#subject_alternative_names}
+  */
   readonly subjectAlternativeNames?: AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames[];
-  /** trust block */
+  /**
+  * trust block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#trust AppmeshVirtualGateway#trust}
+  */
   readonly trust: AppmeshVirtualGatewaySpecListenerTlsValidationTrust[];
 }
 
@@ -404,10 +602,21 @@ function appmeshVirtualGatewaySpecListenerTlsValidationToTerraform(struct?: Appm
 }
 
 export interface AppmeshVirtualGatewaySpecListenerTls {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#mode AppmeshVirtualGateway#mode}
+  */
   readonly mode: string;
-  /** certificate block */
+  /**
+  * certificate block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#certificate AppmeshVirtualGateway#certificate}
+  */
   readonly certificate: AppmeshVirtualGatewaySpecListenerTlsCertificate[];
-  /** validation block */
+  /**
+  * validation block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#validation AppmeshVirtualGateway#validation}
+  */
   readonly validation?: AppmeshVirtualGatewaySpecListenerTlsValidation[];
 }
 
@@ -421,13 +630,29 @@ function appmeshVirtualGatewaySpecListenerTlsToTerraform(struct?: AppmeshVirtual
 }
 
 export interface AppmeshVirtualGatewaySpecListener {
-  /** connection_pool block */
+  /**
+  * connection_pool block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#connection_pool AppmeshVirtualGateway#connection_pool}
+  */
   readonly connectionPool?: AppmeshVirtualGatewaySpecListenerConnectionPool[];
-  /** health_check block */
+  /**
+  * health_check block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#health_check AppmeshVirtualGateway#health_check}
+  */
   readonly healthCheck?: AppmeshVirtualGatewaySpecListenerHealthCheck[];
-  /** port_mapping block */
+  /**
+  * port_mapping block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#port_mapping AppmeshVirtualGateway#port_mapping}
+  */
   readonly portMapping: AppmeshVirtualGatewaySpecListenerPortMapping[];
-  /** tls block */
+  /**
+  * tls block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#tls AppmeshVirtualGateway#tls}
+  */
   readonly tls?: AppmeshVirtualGatewaySpecListenerTls[];
 }
 
@@ -442,6 +667,9 @@ function appmeshVirtualGatewaySpecListenerToTerraform(struct?: AppmeshVirtualGat
 }
 
 export interface AppmeshVirtualGatewaySpecLoggingAccessLogFile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#path AppmeshVirtualGateway#path}
+  */
   readonly path: string;
 }
 
@@ -453,7 +681,11 @@ function appmeshVirtualGatewaySpecLoggingAccessLogFileToTerraform(struct?: Appme
 }
 
 export interface AppmeshVirtualGatewaySpecLoggingAccessLog {
-  /** file block */
+  /**
+  * file block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#file AppmeshVirtualGateway#file}
+  */
   readonly file?: AppmeshVirtualGatewaySpecLoggingAccessLogFile[];
 }
 
@@ -465,7 +697,11 @@ function appmeshVirtualGatewaySpecLoggingAccessLogToTerraform(struct?: AppmeshVi
 }
 
 export interface AppmeshVirtualGatewaySpecLogging {
-  /** access_log block */
+  /**
+  * access_log block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#access_log AppmeshVirtualGateway#access_log}
+  */
   readonly accessLog?: AppmeshVirtualGatewaySpecLoggingAccessLog[];
 }
 
@@ -477,11 +713,23 @@ function appmeshVirtualGatewaySpecLoggingToTerraform(struct?: AppmeshVirtualGate
 }
 
 export interface AppmeshVirtualGatewaySpec {
-  /** backend_defaults block */
+  /**
+  * backend_defaults block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#backend_defaults AppmeshVirtualGateway#backend_defaults}
+  */
   readonly backendDefaults?: AppmeshVirtualGatewaySpecBackendDefaults[];
-  /** listener block */
+  /**
+  * listener block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#listener AppmeshVirtualGateway#listener}
+  */
   readonly listener: AppmeshVirtualGatewaySpecListener[];
-  /** logging block */
+  /**
+  * logging block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html#logging AppmeshVirtualGateway#logging}
+  */
   readonly logging?: AppmeshVirtualGatewaySpecLogging[];
 }
 
@@ -495,14 +743,22 @@ function appmeshVirtualGatewaySpecToTerraform(struct?: AppmeshVirtualGatewaySpec
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html aws_appmesh_virtual_gateway}
+*/
 export class AppmeshVirtualGateway extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html aws_appmesh_virtual_gateway} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AppmeshVirtualGatewayConfig
+  */
   public constructor(scope: Construct, id: string, config: AppmeshVirtualGatewayConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_virtual_gateway',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_iam_group.html
+// https://www.terraform.io/docs/providers/aws/d/iam_group.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsIamGroupConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_group.html#group_name DataAwsIamGroup#group_name}
+  */
   readonly groupName: string;
 }
 export class DataAwsIamGroupUsers extends cdktf.ComplexComputedList {
@@ -32,14 +35,22 @@ export class DataAwsIamGroupUsers extends cdktf.ComplexComputedList {
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_group.html aws_iam_group}
+*/
 export class DataAwsIamGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_group.html aws_iam_group} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsIamGroupConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsIamGroupConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_iam_group',

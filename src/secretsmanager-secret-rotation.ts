@@ -7,13 +7,29 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SecretsmanagerSecretRotationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation.html#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}
+  */
   readonly rotationLambdaArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation.html#secret_id SecretsmanagerSecretRotation#secret_id}
+  */
   readonly secretId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation.html#tags SecretsmanagerSecretRotation#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** rotation_rules block */
+  /**
+  * rotation_rules block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation.html#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
+  */
   readonly rotationRules: SecretsmanagerSecretRotationRotationRules[];
 }
 export interface SecretsmanagerSecretRotationRotationRules {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation.html#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}
+  */
   readonly automaticallyAfterDays: number;
 }
 
@@ -25,14 +41,22 @@ function secretsmanagerSecretRotationRotationRulesToTerraform(struct?: Secretsma
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation.html aws_secretsmanager_secret_rotation}
+*/
 export class SecretsmanagerSecretRotation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_rotation.html aws_secretsmanager_secret_rotation} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SecretsmanagerSecretRotationConfig
+  */
   public constructor(scope: Construct, id: string, config: SecretsmanagerSecretRotationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_secretsmanager_secret_rotation',

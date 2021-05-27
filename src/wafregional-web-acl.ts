@@ -7,18 +7,45 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface WafregionalWebAclConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#metric_name WafregionalWebAcl#metric_name}
+  */
   readonly metricName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#name WafregionalWebAcl#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#tags WafregionalWebAcl#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#tags_all WafregionalWebAcl#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** default_action block */
+  /**
+  * default_action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#default_action WafregionalWebAcl#default_action}
+  */
   readonly defaultAction: WafregionalWebAclDefaultAction[];
-  /** logging_configuration block */
+  /**
+  * logging_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#logging_configuration WafregionalWebAcl#logging_configuration}
+  */
   readonly loggingConfiguration?: WafregionalWebAclLoggingConfiguration[];
-  /** rule block */
+  /**
+  * rule block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#rule WafregionalWebAcl#rule}
+  */
   readonly rule?: WafregionalWebAclRule[];
 }
 export interface WafregionalWebAclDefaultAction {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  */
   readonly type: string;
 }
 
@@ -30,7 +57,13 @@ function wafregionalWebAclDefaultActionToTerraform(struct?: WafregionalWebAclDef
 }
 
 export interface WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#data WafregionalWebAcl#data}
+  */
   readonly data?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  */
   readonly type: string;
 }
 
@@ -43,7 +76,11 @@ function wafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraf
 }
 
 export interface WafregionalWebAclLoggingConfigurationRedactedFields {
-  /** field_to_match block */
+  /**
+  * field_to_match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#field_to_match WafregionalWebAcl#field_to_match}
+  */
   readonly fieldToMatch: WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch[];
 }
 
@@ -55,8 +92,15 @@ function wafregionalWebAclLoggingConfigurationRedactedFieldsToTerraform(struct?:
 }
 
 export interface WafregionalWebAclLoggingConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#log_destination WafregionalWebAcl#log_destination}
+  */
   readonly logDestination: string;
-  /** redacted_fields block */
+  /**
+  * redacted_fields block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#redacted_fields WafregionalWebAcl#redacted_fields}
+  */
   readonly redactedFields?: WafregionalWebAclLoggingConfigurationRedactedFields[];
 }
 
@@ -69,6 +113,9 @@ function wafregionalWebAclLoggingConfigurationToTerraform(struct?: WafregionalWe
 }
 
 export interface WafregionalWebAclRuleAction {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  */
   readonly type: string;
 }
 
@@ -80,6 +127,9 @@ function wafregionalWebAclRuleActionToTerraform(struct?: WafregionalWebAclRuleAc
 }
 
 export interface WafregionalWebAclRuleOverrideAction {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  */
   readonly type: string;
 }
 
@@ -91,12 +141,29 @@ function wafregionalWebAclRuleOverrideActionToTerraform(struct?: WafregionalWebA
 }
 
 export interface WafregionalWebAclRule {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#priority WafregionalWebAcl#priority}
+  */
   readonly priority: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#rule_id WafregionalWebAcl#rule_id}
+  */
   readonly ruleId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#type WafregionalWebAcl#type}
+  */
   readonly type?: string;
-  /** action block */
+  /**
+  * action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#action WafregionalWebAcl#action}
+  */
   readonly action?: WafregionalWebAclRuleAction[];
-  /** override_action block */
+  /**
+  * override_action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html#override_action WafregionalWebAcl#override_action}
+  */
   readonly overrideAction?: WafregionalWebAclRuleOverrideAction[];
 }
 
@@ -112,14 +179,22 @@ function wafregionalWebAclRuleToTerraform(struct?: WafregionalWebAclRule): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html aws_wafregional_web_acl}
+*/
 export class WafregionalWebAcl extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl.html aws_wafregional_web_acl} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options WafregionalWebAclConfig
+  */
   public constructor(scope: Construct, id: string, config: WafregionalWebAclConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_wafregional_web_acl',

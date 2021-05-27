@@ -7,20 +7,59 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AmiCopyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#description AmiCopy#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#destination_outpost_arn AmiCopy#destination_outpost_arn}
+  */
   readonly destinationOutpostArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#encrypted AmiCopy#encrypted}
+  */
   readonly encrypted?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#kms_key_id AmiCopy#kms_key_id}
+  */
   readonly kmsKeyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#name AmiCopy#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#source_ami_id AmiCopy#source_ami_id}
+  */
   readonly sourceAmiId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#source_ami_region AmiCopy#source_ami_region}
+  */
   readonly sourceAmiRegion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#tags AmiCopy#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#tags_all AmiCopy#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** ebs_block_device block */
+  /**
+  * ebs_block_device block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#ebs_block_device AmiCopy#ebs_block_device}
+  */
   readonly ebsBlockDevice?: AmiCopyEbsBlockDevice[];
-  /** ephemeral_block_device block */
+  /**
+  * ephemeral_block_device block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#ephemeral_block_device AmiCopy#ephemeral_block_device}
+  */
   readonly ephemeralBlockDevice?: AmiCopyEphemeralBlockDevice[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#timeouts AmiCopy#timeouts}
+  */
   readonly timeouts?: AmiCopyTimeouts;
 }
 export interface AmiCopyEbsBlockDevice {
@@ -42,8 +81,17 @@ function amiCopyEphemeralBlockDeviceToTerraform(struct?: AmiCopyEphemeralBlockDe
 }
 
 export interface AmiCopyTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#create AmiCopy#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#delete AmiCopy#delete}
+  */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html#update AmiCopy#update}
+  */
   readonly update?: string;
 }
 
@@ -57,14 +105,22 @@ function amiCopyTimeoutsToTerraform(struct?: AmiCopyTimeouts): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html aws_ami_copy}
+*/
 export class AmiCopy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ami_copy.html aws_ami_copy} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AmiCopyConfig
+  */
   public constructor(scope: Construct, id: string, config: AmiCopyConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ami_copy',

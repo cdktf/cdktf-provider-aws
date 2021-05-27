@@ -7,14 +7,33 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CodebuildWebhookConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#branch_filter CodebuildWebhook#branch_filter}
+  */
   readonly branchFilter?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#project_name CodebuildWebhook#project_name}
+  */
   readonly projectName: string;
-  /** filter_group block */
+  /**
+  * filter_group block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#filter_group CodebuildWebhook#filter_group}
+  */
   readonly filterGroup?: CodebuildWebhookFilterGroup[];
 }
 export interface CodebuildWebhookFilterGroupFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}
+  */
   readonly excludeMatchedPattern?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#pattern CodebuildWebhook#pattern}
+  */
   readonly pattern: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#type CodebuildWebhook#type}
+  */
   readonly type: string;
 }
 
@@ -28,7 +47,11 @@ function codebuildWebhookFilterGroupFilterToTerraform(struct?: CodebuildWebhookF
 }
 
 export interface CodebuildWebhookFilterGroup {
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#filter CodebuildWebhook#filter}
+  */
   readonly filter?: CodebuildWebhookFilterGroupFilter[];
 }
 
@@ -40,14 +63,22 @@ function codebuildWebhookFilterGroupToTerraform(struct?: CodebuildWebhookFilterG
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html aws_codebuild_webhook}
+*/
 export class CodebuildWebhook extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html aws_codebuild_webhook} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options CodebuildWebhookConfig
+  */
   public constructor(scope: Construct, id: string, config: CodebuildWebhookConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_codebuild_webhook',

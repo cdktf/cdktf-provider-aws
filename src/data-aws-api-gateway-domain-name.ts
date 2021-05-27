@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_api_gateway_domain_name.html
+// https://www.terraform.io/docs/providers/aws/d/api_gateway_domain_name.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsApiGatewayDomainNameConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_domain_name.html#domain_name DataAwsApiGatewayDomainName#domain_name}
+  */
   readonly domainName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_domain_name.html#tags DataAwsApiGatewayDomainName#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsApiGatewayDomainNameEndpointConfiguration extends cdktf.ComplexComputedList {
@@ -18,14 +24,22 @@ export class DataAwsApiGatewayDomainNameEndpointConfiguration extends cdktf.Comp
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_domain_name.html aws_api_gateway_domain_name}
+*/
 export class DataAwsApiGatewayDomainName extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_domain_name.html aws_api_gateway_domain_name} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsApiGatewayDomainNameConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsApiGatewayDomainNameConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_domain_name',

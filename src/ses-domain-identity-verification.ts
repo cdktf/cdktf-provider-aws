@@ -7,11 +7,21 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SesDomainIdentityVerificationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_identity_verification.html#domain SesDomainIdentityVerification#domain}
+  */
   readonly domain: string;
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_identity_verification.html#timeouts SesDomainIdentityVerification#timeouts}
+  */
   readonly timeouts?: SesDomainIdentityVerificationTimeouts;
 }
 export interface SesDomainIdentityVerificationTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_identity_verification.html#create SesDomainIdentityVerification#create}
+  */
   readonly create?: string;
 }
 
@@ -23,14 +33,22 @@ function sesDomainIdentityVerificationTimeoutsToTerraform(struct?: SesDomainIden
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_identity_verification.html aws_ses_domain_identity_verification}
+*/
 export class SesDomainIdentityVerification extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_identity_verification.html aws_ses_domain_identity_verification} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SesDomainIdentityVerificationConfig
+  */
   public constructor(scope: Construct, id: string, config: SesDomainIdentityVerificationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ses_domain_identity_verification',

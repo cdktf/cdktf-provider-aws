@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ebs_volume.html
+// https://www.terraform.io/docs/providers/aws/d/ebs_volume.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,13 +7,29 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEbsVolumeConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html#most_recent DataAwsEbsVolume#most_recent}
+  */
   readonly mostRecent?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html#tags DataAwsEbsVolume#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html#filter DataAwsEbsVolume#filter}
+  */
   readonly filter?: DataAwsEbsVolumeFilter[];
 }
 export interface DataAwsEbsVolumeFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html#name DataAwsEbsVolume#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html#values DataAwsEbsVolume#values}
+  */
   readonly values: string[];
 }
 
@@ -26,14 +42,22 @@ function dataAwsEbsVolumeFilterToTerraform(struct?: DataAwsEbsVolumeFilter): any
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html aws_ebs_volume}
+*/
 export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html aws_ebs_volume} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEbsVolumeConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEbsVolumeConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ebs_volume',

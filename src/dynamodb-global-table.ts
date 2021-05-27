@@ -7,13 +7,27 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DynamodbGlobalTableConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html#name DynamodbGlobalTable#name}
+  */
   readonly name: string;
-  /** replica block */
+  /**
+  * replica block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html#replica DynamodbGlobalTable#replica}
+  */
   readonly replica: DynamodbGlobalTableReplica[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html#timeouts DynamodbGlobalTable#timeouts}
+  */
   readonly timeouts?: DynamodbGlobalTableTimeouts;
 }
 export interface DynamodbGlobalTableReplica {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html#region_name DynamodbGlobalTable#region_name}
+  */
   readonly regionName: string;
 }
 
@@ -25,8 +39,17 @@ function dynamodbGlobalTableReplicaToTerraform(struct?: DynamodbGlobalTableRepli
 }
 
 export interface DynamodbGlobalTableTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html#create DynamodbGlobalTable#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html#delete DynamodbGlobalTable#delete}
+  */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html#update DynamodbGlobalTable#update}
+  */
   readonly update?: string;
 }
 
@@ -40,14 +63,22 @@ function dynamodbGlobalTableTimeoutsToTerraform(struct?: DynamodbGlobalTableTime
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html aws_dynamodb_global_table}
+*/
 export class DynamodbGlobalTable extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table.html aws_dynamodb_global_table} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DynamodbGlobalTableConfig
+  */
   public constructor(scope: Construct, id: string, config: DynamodbGlobalTableConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_dynamodb_global_table',

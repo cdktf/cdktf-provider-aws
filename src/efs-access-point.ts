@@ -7,17 +7,43 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EfsAccessPointConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#file_system_id EfsAccessPoint#file_system_id}
+  */
   readonly fileSystemId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#tags EfsAccessPoint#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#tags_all EfsAccessPoint#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** posix_user block */
+  /**
+  * posix_user block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#posix_user EfsAccessPoint#posix_user}
+  */
   readonly posixUser?: EfsAccessPointPosixUser[];
-  /** root_directory block */
+  /**
+  * root_directory block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#root_directory EfsAccessPoint#root_directory}
+  */
   readonly rootDirectory?: EfsAccessPointRootDirectory[];
 }
 export interface EfsAccessPointPosixUser {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#gid EfsAccessPoint#gid}
+  */
   readonly gid: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#secondary_gids EfsAccessPoint#secondary_gids}
+  */
   readonly secondaryGids?: number[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#uid EfsAccessPoint#uid}
+  */
   readonly uid: number;
 }
 
@@ -31,8 +57,17 @@ function efsAccessPointPosixUserToTerraform(struct?: EfsAccessPointPosixUser): a
 }
 
 export interface EfsAccessPointRootDirectoryCreationInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#owner_gid EfsAccessPoint#owner_gid}
+  */
   readonly ownerGid: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#owner_uid EfsAccessPoint#owner_uid}
+  */
   readonly ownerUid: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#permissions EfsAccessPoint#permissions}
+  */
   readonly permissions: string;
 }
 
@@ -46,8 +81,15 @@ function efsAccessPointRootDirectoryCreationInfoToTerraform(struct?: EfsAccessPo
 }
 
 export interface EfsAccessPointRootDirectory {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#path EfsAccessPoint#path}
+  */
   readonly path?: string;
-  /** creation_info block */
+  /**
+  * creation_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html#creation_info EfsAccessPoint#creation_info}
+  */
   readonly creationInfo?: EfsAccessPointRootDirectoryCreationInfo[];
 }
 
@@ -60,14 +102,22 @@ function efsAccessPointRootDirectoryToTerraform(struct?: EfsAccessPointRootDirec
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html aws_efs_access_point}
+*/
 export class EfsAccessPoint extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/efs_access_point.html aws_efs_access_point} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options EfsAccessPointConfig
+  */
   public constructor(scope: Construct, id: string, config: EfsAccessPointConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_efs_access_point',

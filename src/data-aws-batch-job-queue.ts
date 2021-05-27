@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_batch_job_queue.html
+// https://www.terraform.io/docs/providers/aws/d/batch_job_queue.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsBatchJobQueueConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/batch_job_queue.html#name DataAwsBatchJobQueue#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/batch_job_queue.html#tags DataAwsBatchJobQueue#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsBatchJobQueueComputeEnvironmentOrder extends cdktf.ComplexComputedList {
@@ -23,14 +29,22 @@ export class DataAwsBatchJobQueueComputeEnvironmentOrder extends cdktf.ComplexCo
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/batch_job_queue.html aws_batch_job_queue}
+*/
 export class DataAwsBatchJobQueue extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/batch_job_queue.html aws_batch_job_queue} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsBatchJobQueueConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsBatchJobQueueConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_batch_job_queue',

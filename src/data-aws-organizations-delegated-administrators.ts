@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_organizations_delegated_administrators.html
+// https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsOrganizationsDelegatedAdministratorsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators.html#service_principal DataAwsOrganizationsDelegatedAdministrators#service_principal}
+  */
   readonly servicePrincipal?: string;
 }
 export class DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators extends cdktf.ComplexComputedList {
@@ -52,14 +55,22 @@ export class DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators 
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators.html aws_organizations_delegated_administrators}
+*/
 export class DataAwsOrganizationsDelegatedAdministrators extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_delegated_administrators.html aws_organizations_delegated_administrators} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsOrganizationsDelegatedAdministratorsConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsOrganizationsDelegatedAdministratorsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_organizations_delegated_administrators',

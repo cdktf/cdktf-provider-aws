@@ -7,14 +7,37 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface GlobalacceleratorAcceleratorConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#enabled GlobalacceleratorAccelerator#enabled}
+  */
   readonly enabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#ip_address_type GlobalacceleratorAccelerator#ip_address_type}
+  */
   readonly ipAddressType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#name GlobalacceleratorAccelerator#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#tags GlobalacceleratorAccelerator#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#tags_all GlobalacceleratorAccelerator#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** attributes block */
+  /**
+  * attributes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#attributes GlobalacceleratorAccelerator#attributes}
+  */
   readonly attributes?: GlobalacceleratorAcceleratorAttributes[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#timeouts GlobalacceleratorAccelerator#timeouts}
+  */
   readonly timeouts?: GlobalacceleratorAcceleratorTimeouts;
 }
 export class GlobalacceleratorAcceleratorIpSets extends cdktf.ComplexComputedList {
@@ -30,8 +53,17 @@ export class GlobalacceleratorAcceleratorIpSets extends cdktf.ComplexComputedLis
   }
 }
 export interface GlobalacceleratorAcceleratorAttributes {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#flow_logs_enabled GlobalacceleratorAccelerator#flow_logs_enabled}
+  */
   readonly flowLogsEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#flow_logs_s3_bucket GlobalacceleratorAccelerator#flow_logs_s3_bucket}
+  */
   readonly flowLogsS3Bucket?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#flow_logs_s3_prefix GlobalacceleratorAccelerator#flow_logs_s3_prefix}
+  */
   readonly flowLogsS3Prefix?: string;
 }
 
@@ -45,7 +77,13 @@ function globalacceleratorAcceleratorAttributesToTerraform(struct?: Globalaccele
 }
 
 export interface GlobalacceleratorAcceleratorTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#create GlobalacceleratorAccelerator#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html#update GlobalacceleratorAccelerator#update}
+  */
   readonly update?: string;
 }
 
@@ -58,14 +96,22 @@ function globalacceleratorAcceleratorTimeoutsToTerraform(struct?: Globalaccelera
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html aws_globalaccelerator_accelerator}
+*/
 export class GlobalacceleratorAccelerator extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_accelerator.html aws_globalaccelerator_accelerator} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GlobalacceleratorAcceleratorConfig
+  */
   public constructor(scope: Construct, id: string, config: GlobalacceleratorAcceleratorConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_globalaccelerator_accelerator',

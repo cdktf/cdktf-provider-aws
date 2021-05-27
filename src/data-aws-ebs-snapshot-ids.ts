@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ebs_snapshot_ids.html
+// https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,13 +7,29 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEbsSnapshotIdsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids.html#owners DataAwsEbsSnapshotIds#owners}
+  */
   readonly owners?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids.html#restorable_by_user_ids DataAwsEbsSnapshotIds#restorable_by_user_ids}
+  */
   readonly restorableByUserIds?: string[];
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids.html#filter DataAwsEbsSnapshotIds#filter}
+  */
   readonly filter?: DataAwsEbsSnapshotIdsFilter[];
 }
 export interface DataAwsEbsSnapshotIdsFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids.html#name DataAwsEbsSnapshotIds#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids.html#values DataAwsEbsSnapshotIds#values}
+  */
   readonly values: string[];
 }
 
@@ -26,14 +42,22 @@ function dataAwsEbsSnapshotIdsFilterToTerraform(struct?: DataAwsEbsSnapshotIdsFi
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids.html aws_ebs_snapshot_ids}
+*/
 export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_snapshot_ids.html aws_ebs_snapshot_ids} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEbsSnapshotIdsConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEbsSnapshotIdsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ebs_snapshot_ids',

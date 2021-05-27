@@ -7,25 +7,60 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Ec2TrafficMirrorSessionConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#description Ec2TrafficMirrorSession#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#network_interface_id Ec2TrafficMirrorSession#network_interface_id}
+  */
   readonly networkInterfaceId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#packet_length Ec2TrafficMirrorSession#packet_length}
+  */
   readonly packetLength?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#session_number Ec2TrafficMirrorSession#session_number}
+  */
   readonly sessionNumber: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#tags Ec2TrafficMirrorSession#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#tags_all Ec2TrafficMirrorSession#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#traffic_mirror_filter_id Ec2TrafficMirrorSession#traffic_mirror_filter_id}
+  */
   readonly trafficMirrorFilterId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#traffic_mirror_target_id Ec2TrafficMirrorSession#traffic_mirror_target_id}
+  */
   readonly trafficMirrorTargetId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html#virtual_network_id Ec2TrafficMirrorSession#virtual_network_id}
+  */
   readonly virtualNetworkId?: number;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html aws_ec2_traffic_mirror_session}
+*/
 export class Ec2TrafficMirrorSession extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session.html aws_ec2_traffic_mirror_session} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Ec2TrafficMirrorSessionConfig
+  */
   public constructor(scope: Construct, id: string, config: Ec2TrafficMirrorSessionConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_traffic_mirror_session',

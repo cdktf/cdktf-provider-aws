@@ -7,15 +7,35 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface VpcPeeringConnectionOptionsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#vpc_peering_connection_id VpcPeeringConnectionOptions#vpc_peering_connection_id}
+  */
   readonly vpcPeeringConnectionId: string;
-  /** accepter block */
+  /**
+  * accepter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#accepter VpcPeeringConnectionOptions#accepter}
+  */
   readonly accepter?: VpcPeeringConnectionOptionsAccepter[];
-  /** requester block */
+  /**
+  * requester block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#requester VpcPeeringConnectionOptions#requester}
+  */
   readonly requester?: VpcPeeringConnectionOptionsRequester[];
 }
 export interface VpcPeeringConnectionOptionsAccepter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_classic_link_to_remote_vpc VpcPeeringConnectionOptions#allow_classic_link_to_remote_vpc}
+  */
   readonly allowClassicLinkToRemoteVpc?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_remote_vpc_dns_resolution VpcPeeringConnectionOptions#allow_remote_vpc_dns_resolution}
+  */
   readonly allowRemoteVpcDnsResolution?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_vpc_to_remote_classic_link VpcPeeringConnectionOptions#allow_vpc_to_remote_classic_link}
+  */
   readonly allowVpcToRemoteClassicLink?: boolean;
 }
 
@@ -29,8 +49,17 @@ function vpcPeeringConnectionOptionsAccepterToTerraform(struct?: VpcPeeringConne
 }
 
 export interface VpcPeeringConnectionOptionsRequester {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_classic_link_to_remote_vpc VpcPeeringConnectionOptions#allow_classic_link_to_remote_vpc}
+  */
   readonly allowClassicLinkToRemoteVpc?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_remote_vpc_dns_resolution VpcPeeringConnectionOptions#allow_remote_vpc_dns_resolution}
+  */
   readonly allowRemoteVpcDnsResolution?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_vpc_to_remote_classic_link VpcPeeringConnectionOptions#allow_vpc_to_remote_classic_link}
+  */
   readonly allowVpcToRemoteClassicLink?: boolean;
 }
 
@@ -44,14 +73,22 @@ function vpcPeeringConnectionOptionsRequesterToTerraform(struct?: VpcPeeringConn
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html aws_vpc_peering_connection_options}
+*/
 export class VpcPeeringConnectionOptions extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html aws_vpc_peering_connection_options} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options VpcPeeringConnectionOptionsConfig
+  */
   public constructor(scope: Construct, id: string, config: VpcPeeringConnectionOptionsConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_vpc_peering_connection_options',

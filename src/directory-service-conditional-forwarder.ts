@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DirectoryServiceConditionalForwarderConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_conditional_forwarder.html#directory_id DirectoryServiceConditionalForwarder#directory_id}
+  */
   readonly directoryId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_conditional_forwarder.html#dns_ips DirectoryServiceConditionalForwarder#dns_ips}
+  */
   readonly dnsIps: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_conditional_forwarder.html#remote_domain_name DirectoryServiceConditionalForwarder#remote_domain_name}
+  */
   readonly remoteDomainName: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/directory_service_conditional_forwarder.html aws_directory_service_conditional_forwarder}
+*/
 export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/directory_service_conditional_forwarder.html aws_directory_service_conditional_forwarder} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DirectoryServiceConditionalForwarderConfig
+  */
   public constructor(scope: Construct, id: string, config: DirectoryServiceConditionalForwarderConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_directory_service_conditional_forwarder',

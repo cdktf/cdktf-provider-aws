@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ecs_cluster.html
+// https://www.terraform.io/docs/providers/aws/d/ecs_cluster.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEcsClusterConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_cluster.html#cluster_name DataAwsEcsCluster#cluster_name}
+  */
   readonly clusterName: string;
 }
 export class DataAwsEcsClusterSetting extends cdktf.ComplexComputedList {
@@ -22,14 +25,22 @@ export class DataAwsEcsClusterSetting extends cdktf.ComplexComputedList {
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ecs_cluster.html aws_ecs_cluster}
+*/
 export class DataAwsEcsCluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ecs_cluster.html aws_ecs_cluster} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEcsClusterConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEcsClusterConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ecs_cluster',

@@ -7,20 +7,53 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#description ServiceDiscoveryService#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#name ServiceDiscoveryService#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#namespace_id ServiceDiscoveryService#namespace_id}
+  */
   readonly namespaceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#tags ServiceDiscoveryService#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#tags_all ServiceDiscoveryService#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** dns_config block */
+  /**
+  * dns_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#dns_config ServiceDiscoveryService#dns_config}
+  */
   readonly dnsConfig?: ServiceDiscoveryServiceDnsConfig[];
-  /** health_check_config block */
+  /**
+  * health_check_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#health_check_config ServiceDiscoveryService#health_check_config}
+  */
   readonly healthCheckConfig?: ServiceDiscoveryServiceHealthCheckConfig[];
-  /** health_check_custom_config block */
+  /**
+  * health_check_custom_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#health_check_custom_config ServiceDiscoveryService#health_check_custom_config}
+  */
   readonly healthCheckCustomConfig?: ServiceDiscoveryServiceHealthCheckCustomConfig[];
 }
 export interface ServiceDiscoveryServiceDnsConfigDnsRecords {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#ttl ServiceDiscoveryService#ttl}
+  */
   readonly ttl: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#type ServiceDiscoveryService#type}
+  */
   readonly type: string;
 }
 
@@ -33,9 +66,19 @@ function serviceDiscoveryServiceDnsConfigDnsRecordsToTerraform(struct?: ServiceD
 }
 
 export interface ServiceDiscoveryServiceDnsConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#namespace_id ServiceDiscoveryService#namespace_id}
+  */
   readonly namespaceId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#routing_policy ServiceDiscoveryService#routing_policy}
+  */
   readonly routingPolicy?: string;
-  /** dns_records block */
+  /**
+  * dns_records block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#dns_records ServiceDiscoveryService#dns_records}
+  */
   readonly dnsRecords: ServiceDiscoveryServiceDnsConfigDnsRecords[];
 }
 
@@ -49,8 +92,17 @@ function serviceDiscoveryServiceDnsConfigToTerraform(struct?: ServiceDiscoverySe
 }
 
 export interface ServiceDiscoveryServiceHealthCheckConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#failure_threshold ServiceDiscoveryService#failure_threshold}
+  */
   readonly failureThreshold?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#resource_path ServiceDiscoveryService#resource_path}
+  */
   readonly resourcePath?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#type ServiceDiscoveryService#type}
+  */
   readonly type?: string;
 }
 
@@ -64,6 +116,9 @@ function serviceDiscoveryServiceHealthCheckConfigToTerraform(struct?: ServiceDis
 }
 
 export interface ServiceDiscoveryServiceHealthCheckCustomConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#failure_threshold ServiceDiscoveryService#failure_threshold}
+  */
   readonly failureThreshold?: number;
 }
 
@@ -75,14 +130,22 @@ function serviceDiscoveryServiceHealthCheckCustomConfigToTerraform(struct?: Serv
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html aws_service_discovery_service}
+*/
 export class ServiceDiscoveryService extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html aws_service_discovery_service} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ServiceDiscoveryServiceConfig
+  */
   public constructor(scope: Construct, id: string, config: ServiceDiscoveryServiceConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_service_discovery_service',

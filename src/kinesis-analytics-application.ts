@@ -7,23 +7,63 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface KinesisAnalyticsApplicationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#code KinesisAnalyticsApplication#code}
+  */
   readonly code?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#description KinesisAnalyticsApplication#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#name KinesisAnalyticsApplication#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#start_application KinesisAnalyticsApplication#start_application}
+  */
   readonly startApplication?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#tags KinesisAnalyticsApplication#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#tags_all KinesisAnalyticsApplication#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** cloudwatch_logging_options block */
+  /**
+  * cloudwatch_logging_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#cloudwatch_logging_options KinesisAnalyticsApplication#cloudwatch_logging_options}
+  */
   readonly cloudwatchLoggingOptions?: KinesisAnalyticsApplicationCloudwatchLoggingOptions[];
-  /** inputs block */
+  /**
+  * inputs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#inputs KinesisAnalyticsApplication#inputs}
+  */
   readonly inputs?: KinesisAnalyticsApplicationInputs[];
-  /** outputs block */
+  /**
+  * outputs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#outputs KinesisAnalyticsApplication#outputs}
+  */
   readonly outputs?: KinesisAnalyticsApplicationOutputs[];
-  /** reference_data_sources block */
+  /**
+  * reference_data_sources block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#reference_data_sources KinesisAnalyticsApplication#reference_data_sources}
+  */
   readonly referenceDataSources?: KinesisAnalyticsApplicationReferenceDataSources[];
 }
 export interface KinesisAnalyticsApplicationCloudwatchLoggingOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#log_stream_arn KinesisAnalyticsApplication#log_stream_arn}
+  */
   readonly logStreamArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#role_arn KinesisAnalyticsApplication#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -36,7 +76,13 @@ function kinesisAnalyticsApplicationCloudwatchLoggingOptionsToTerraform(struct?:
 }
 
 export interface KinesisAnalyticsApplicationInputsKinesisFirehose {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#resource_arn KinesisAnalyticsApplication#resource_arn}
+  */
   readonly resourceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#role_arn KinesisAnalyticsApplication#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -49,7 +95,13 @@ function kinesisAnalyticsApplicationInputsKinesisFirehoseToTerraform(struct?: Ki
 }
 
 export interface KinesisAnalyticsApplicationInputsKinesisStream {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#resource_arn KinesisAnalyticsApplication#resource_arn}
+  */
   readonly resourceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#role_arn KinesisAnalyticsApplication#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -62,6 +114,9 @@ function kinesisAnalyticsApplicationInputsKinesisStreamToTerraform(struct?: Kine
 }
 
 export interface KinesisAnalyticsApplicationInputsParallelism {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#count KinesisAnalyticsApplication#count}
+  */
   readonly count?: number;
 }
 
@@ -73,7 +128,13 @@ function kinesisAnalyticsApplicationInputsParallelismToTerraform(struct?: Kinesi
 }
 
 export interface KinesisAnalyticsApplicationInputsProcessingConfigurationLambda {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#resource_arn KinesisAnalyticsApplication#resource_arn}
+  */
   readonly resourceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#role_arn KinesisAnalyticsApplication#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -86,7 +147,11 @@ function kinesisAnalyticsApplicationInputsProcessingConfigurationLambdaToTerrafo
 }
 
 export interface KinesisAnalyticsApplicationInputsProcessingConfiguration {
-  /** lambda block */
+  /**
+  * lambda block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#lambda KinesisAnalyticsApplication#lambda}
+  */
   readonly lambda: KinesisAnalyticsApplicationInputsProcessingConfigurationLambda[];
 }
 
@@ -98,8 +163,17 @@ function kinesisAnalyticsApplicationInputsProcessingConfigurationToTerraform(str
 }
 
 export interface KinesisAnalyticsApplicationInputsSchemaRecordColumns {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#mapping KinesisAnalyticsApplication#mapping}
+  */
   readonly mapping?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#name KinesisAnalyticsApplication#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#sql_type KinesisAnalyticsApplication#sql_type}
+  */
   readonly sqlType: string;
 }
 
@@ -113,7 +187,13 @@ function kinesisAnalyticsApplicationInputsSchemaRecordColumnsToTerraform(struct?
 }
 
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_column_delimiter KinesisAnalyticsApplication#record_column_delimiter}
+  */
   readonly recordColumnDelimiter: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_row_delimiter KinesisAnalyticsApplication#record_row_delimiter}
+  */
   readonly recordRowDelimiter: string;
 }
 
@@ -126,6 +206,9 @@ function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv
 }
 
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_row_path KinesisAnalyticsApplication#record_row_path}
+  */
   readonly recordRowPath: string;
 }
 
@@ -137,9 +220,17 @@ function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJso
 }
 
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters {
-  /** csv block */
+  /**
+  * csv block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#csv KinesisAnalyticsApplication#csv}
+  */
   readonly csv?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv[];
-  /** json block */
+  /**
+  * json block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#json KinesisAnalyticsApplication#json}
+  */
   readonly json?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson[];
 }
 
@@ -152,7 +243,11 @@ function kinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersToT
 }
 
 export interface KinesisAnalyticsApplicationInputsSchemaRecordFormat {
-  /** mapping_parameters block */
+  /**
+  * mapping_parameters block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#mapping_parameters KinesisAnalyticsApplication#mapping_parameters}
+  */
   readonly mappingParameters?: KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParameters[];
 }
 
@@ -164,10 +259,21 @@ function kinesisAnalyticsApplicationInputsSchemaRecordFormatToTerraform(struct?:
 }
 
 export interface KinesisAnalyticsApplicationInputsSchema {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_encoding KinesisAnalyticsApplication#record_encoding}
+  */
   readonly recordEncoding?: string;
-  /** record_columns block */
+  /**
+  * record_columns block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_columns KinesisAnalyticsApplication#record_columns}
+  */
   readonly recordColumns: KinesisAnalyticsApplicationInputsSchemaRecordColumns[];
-  /** record_format block */
+  /**
+  * record_format block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_format KinesisAnalyticsApplication#record_format}
+  */
   readonly recordFormat: KinesisAnalyticsApplicationInputsSchemaRecordFormat[];
 }
 
@@ -181,6 +287,9 @@ function kinesisAnalyticsApplicationInputsSchemaToTerraform(struct?: KinesisAnal
 }
 
 export interface KinesisAnalyticsApplicationInputsStartingPositionConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#starting_position KinesisAnalyticsApplication#starting_position}
+  */
   readonly startingPosition?: string;
 }
 
@@ -192,18 +301,45 @@ function kinesisAnalyticsApplicationInputsStartingPositionConfigurationToTerrafo
 }
 
 export interface KinesisAnalyticsApplicationInputs {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#name_prefix KinesisAnalyticsApplication#name_prefix}
+  */
   readonly namePrefix: string;
-  /** kinesis_firehose block */
+  /**
+  * kinesis_firehose block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#kinesis_firehose KinesisAnalyticsApplication#kinesis_firehose}
+  */
   readonly kinesisFirehose?: KinesisAnalyticsApplicationInputsKinesisFirehose[];
-  /** kinesis_stream block */
+  /**
+  * kinesis_stream block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#kinesis_stream KinesisAnalyticsApplication#kinesis_stream}
+  */
   readonly kinesisStream?: KinesisAnalyticsApplicationInputsKinesisStream[];
-  /** parallelism block */
+  /**
+  * parallelism block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#parallelism KinesisAnalyticsApplication#parallelism}
+  */
   readonly parallelism?: KinesisAnalyticsApplicationInputsParallelism[];
-  /** processing_configuration block */
+  /**
+  * processing_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#processing_configuration KinesisAnalyticsApplication#processing_configuration}
+  */
   readonly processingConfiguration?: KinesisAnalyticsApplicationInputsProcessingConfiguration[];
-  /** schema block */
+  /**
+  * schema block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#schema KinesisAnalyticsApplication#schema}
+  */
   readonly schema: KinesisAnalyticsApplicationInputsSchema[];
-  /** starting_position_configuration block */
+  /**
+  * starting_position_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#starting_position_configuration KinesisAnalyticsApplication#starting_position_configuration}
+  */
   readonly startingPositionConfiguration?: KinesisAnalyticsApplicationInputsStartingPositionConfiguration[];
 }
 
@@ -221,7 +357,13 @@ function kinesisAnalyticsApplicationInputsToTerraform(struct?: KinesisAnalyticsA
 }
 
 export interface KinesisAnalyticsApplicationOutputsKinesisFirehose {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#resource_arn KinesisAnalyticsApplication#resource_arn}
+  */
   readonly resourceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#role_arn KinesisAnalyticsApplication#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -234,7 +376,13 @@ function kinesisAnalyticsApplicationOutputsKinesisFirehoseToTerraform(struct?: K
 }
 
 export interface KinesisAnalyticsApplicationOutputsKinesisStream {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#resource_arn KinesisAnalyticsApplication#resource_arn}
+  */
   readonly resourceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#role_arn KinesisAnalyticsApplication#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -247,7 +395,13 @@ function kinesisAnalyticsApplicationOutputsKinesisStreamToTerraform(struct?: Kin
 }
 
 export interface KinesisAnalyticsApplicationOutputsLambda {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#resource_arn KinesisAnalyticsApplication#resource_arn}
+  */
   readonly resourceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#role_arn KinesisAnalyticsApplication#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -260,6 +414,9 @@ function kinesisAnalyticsApplicationOutputsLambdaToTerraform(struct?: KinesisAna
 }
 
 export interface KinesisAnalyticsApplicationOutputsSchema {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_format_type KinesisAnalyticsApplication#record_format_type}
+  */
   readonly recordFormatType: string;
 }
 
@@ -271,14 +428,33 @@ function kinesisAnalyticsApplicationOutputsSchemaToTerraform(struct?: KinesisAna
 }
 
 export interface KinesisAnalyticsApplicationOutputs {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#name KinesisAnalyticsApplication#name}
+  */
   readonly name: string;
-  /** kinesis_firehose block */
+  /**
+  * kinesis_firehose block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#kinesis_firehose KinesisAnalyticsApplication#kinesis_firehose}
+  */
   readonly kinesisFirehose?: KinesisAnalyticsApplicationOutputsKinesisFirehose[];
-  /** kinesis_stream block */
+  /**
+  * kinesis_stream block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#kinesis_stream KinesisAnalyticsApplication#kinesis_stream}
+  */
   readonly kinesisStream?: KinesisAnalyticsApplicationOutputsKinesisStream[];
-  /** lambda block */
+  /**
+  * lambda block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#lambda KinesisAnalyticsApplication#lambda}
+  */
   readonly lambda?: KinesisAnalyticsApplicationOutputsLambda[];
-  /** schema block */
+  /**
+  * schema block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#schema KinesisAnalyticsApplication#schema}
+  */
   readonly schema: KinesisAnalyticsApplicationOutputsSchema[];
 }
 
@@ -294,8 +470,17 @@ function kinesisAnalyticsApplicationOutputsToTerraform(struct?: KinesisAnalytics
 }
 
 export interface KinesisAnalyticsApplicationReferenceDataSourcesS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#bucket_arn KinesisAnalyticsApplication#bucket_arn}
+  */
   readonly bucketArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#file_key KinesisAnalyticsApplication#file_key}
+  */
   readonly fileKey: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#role_arn KinesisAnalyticsApplication#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -309,8 +494,17 @@ function kinesisAnalyticsApplicationReferenceDataSourcesS3ToTerraform(struct?: K
 }
 
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#mapping KinesisAnalyticsApplication#mapping}
+  */
   readonly mapping?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#name KinesisAnalyticsApplication#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#sql_type KinesisAnalyticsApplication#sql_type}
+  */
   readonly sqlType: string;
 }
 
@@ -324,7 +518,13 @@ function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumnsToTer
 }
 
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_column_delimiter KinesisAnalyticsApplication#record_column_delimiter}
+  */
   readonly recordColumnDelimiter: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_row_delimiter KinesisAnalyticsApplication#record_row_delimiter}
+  */
   readonly recordRowDelimiter: string;
 }
 
@@ -337,6 +537,9 @@ function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappin
 }
 
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_row_path KinesisAnalyticsApplication#record_row_path}
+  */
   readonly recordRowPath: string;
 }
 
@@ -348,9 +551,17 @@ function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappin
 }
 
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters {
-  /** csv block */
+  /**
+  * csv block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#csv KinesisAnalyticsApplication#csv}
+  */
   readonly csv?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv[];
-  /** json block */
+  /**
+  * json block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#json KinesisAnalyticsApplication#json}
+  */
   readonly json?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson[];
 }
 
@@ -363,7 +574,11 @@ function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappin
 }
 
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat {
-  /** mapping_parameters block */
+  /**
+  * mapping_parameters block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#mapping_parameters KinesisAnalyticsApplication#mapping_parameters}
+  */
   readonly mappingParameters?: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters[];
 }
 
@@ -375,10 +590,21 @@ function kinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatToTerr
 }
 
 export interface KinesisAnalyticsApplicationReferenceDataSourcesSchema {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_encoding KinesisAnalyticsApplication#record_encoding}
+  */
   readonly recordEncoding?: string;
-  /** record_columns block */
+  /**
+  * record_columns block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_columns KinesisAnalyticsApplication#record_columns}
+  */
   readonly recordColumns: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordColumns[];
-  /** record_format block */
+  /**
+  * record_format block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#record_format KinesisAnalyticsApplication#record_format}
+  */
   readonly recordFormat: KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormat[];
 }
 
@@ -392,10 +618,21 @@ function kinesisAnalyticsApplicationReferenceDataSourcesSchemaToTerraform(struct
 }
 
 export interface KinesisAnalyticsApplicationReferenceDataSources {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#table_name KinesisAnalyticsApplication#table_name}
+  */
   readonly tableName: string;
-  /** s3 block */
+  /**
+  * s3 block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#s3 KinesisAnalyticsApplication#s3}
+  */
   readonly s3: KinesisAnalyticsApplicationReferenceDataSourcesS3[];
-  /** schema block */
+  /**
+  * schema block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html#schema KinesisAnalyticsApplication#schema}
+  */
   readonly schema: KinesisAnalyticsApplicationReferenceDataSourcesSchema[];
 }
 
@@ -409,14 +646,22 @@ function kinesisAnalyticsApplicationReferenceDataSourcesToTerraform(struct?: Kin
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html aws_kinesis_analytics_application}
+*/
 export class KinesisAnalyticsApplication extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/kinesis_analytics_application.html aws_kinesis_analytics_application} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options KinesisAnalyticsApplicationConfig
+  */
   public constructor(scope: Construct, id: string, config: KinesisAnalyticsApplicationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_kinesis_analytics_application',

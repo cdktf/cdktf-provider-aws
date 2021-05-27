@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_apigatewayv2_api.html
+// https://www.terraform.io/docs/providers/aws/d/apigatewayv2_api.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsApigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_api.html#api_id DataAwsApigatewayv2Api#api_id}
+  */
   readonly apiId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_api.html#tags DataAwsApigatewayv2Api#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsApigatewayv2ApiCorsConfiguration extends cdktf.ComplexComputedList {
@@ -43,14 +49,22 @@ export class DataAwsApigatewayv2ApiCorsConfiguration extends cdktf.ComplexComput
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_api.html aws_apigatewayv2_api}
+*/
 export class DataAwsApigatewayv2Api extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_api.html aws_apigatewayv2_api} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsApigatewayv2ApiConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsApigatewayv2ApiConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_apigatewayv2_api',

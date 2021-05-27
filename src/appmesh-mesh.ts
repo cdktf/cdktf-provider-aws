@@ -7,13 +7,29 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AppmeshMeshConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html#name AppmeshMesh#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html#tags AppmeshMesh#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html#tags_all AppmeshMesh#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** spec block */
+  /**
+  * spec block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html#spec AppmeshMesh#spec}
+  */
   readonly spec?: AppmeshMeshSpec[];
 }
 export interface AppmeshMeshSpecEgressFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html#type AppmeshMesh#type}
+  */
   readonly type?: string;
 }
 
@@ -25,7 +41,11 @@ function appmeshMeshSpecEgressFilterToTerraform(struct?: AppmeshMeshSpecEgressFi
 }
 
 export interface AppmeshMeshSpec {
-  /** egress_filter block */
+  /**
+  * egress_filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html#egress_filter AppmeshMesh#egress_filter}
+  */
   readonly egressFilter?: AppmeshMeshSpecEgressFilter[];
 }
 
@@ -37,14 +57,22 @@ function appmeshMeshSpecToTerraform(struct?: AppmeshMeshSpec): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html aws_appmesh_mesh}
+*/
 export class AppmeshMesh extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_mesh.html aws_appmesh_mesh} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AppmeshMeshConfig
+  */
   public constructor(scope: Construct, id: string, config: AppmeshMeshConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_mesh',

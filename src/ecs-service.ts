@@ -7,46 +7,145 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#cluster EcsService#cluster}
+  */
   readonly cluster?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#deployment_maximum_percent EcsService#deployment_maximum_percent}
+  */
   readonly deploymentMaximumPercent?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#deployment_minimum_healthy_percent EcsService#deployment_minimum_healthy_percent}
+  */
   readonly deploymentMinimumHealthyPercent?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#desired_count EcsService#desired_count}
+  */
   readonly desiredCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}
+  */
   readonly enableEcsManagedTags?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#enable_execute_command EcsService#enable_execute_command}
+  */
   readonly enableExecuteCommand?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#force_new_deployment EcsService#force_new_deployment}
+  */
   readonly forceNewDeployment?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}
+  */
   readonly healthCheckGracePeriodSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#iam_role EcsService#iam_role}
+  */
   readonly iamRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#launch_type EcsService#launch_type}
+  */
   readonly launchType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#name EcsService#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#platform_version EcsService#platform_version}
+  */
   readonly platformVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#propagate_tags EcsService#propagate_tags}
+  */
   readonly propagateTags?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#scheduling_strategy EcsService#scheduling_strategy}
+  */
   readonly schedulingStrategy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#tags EcsService#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#tags_all EcsService#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#task_definition EcsService#task_definition}
+  */
   readonly taskDefinition?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#wait_for_steady_state EcsService#wait_for_steady_state}
+  */
   readonly waitForSteadyState?: boolean;
-  /** capacity_provider_strategy block */
+  /**
+  * capacity_provider_strategy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#capacity_provider_strategy EcsService#capacity_provider_strategy}
+  */
   readonly capacityProviderStrategy?: EcsServiceCapacityProviderStrategy[];
-  /** deployment_circuit_breaker block */
+  /**
+  * deployment_circuit_breaker block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#deployment_circuit_breaker EcsService#deployment_circuit_breaker}
+  */
   readonly deploymentCircuitBreaker?: EcsServiceDeploymentCircuitBreaker[];
-  /** deployment_controller block */
+  /**
+  * deployment_controller block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#deployment_controller EcsService#deployment_controller}
+  */
   readonly deploymentController?: EcsServiceDeploymentController[];
-  /** load_balancer block */
+  /**
+  * load_balancer block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#load_balancer EcsService#load_balancer}
+  */
   readonly loadBalancer?: EcsServiceLoadBalancer[];
-  /** network_configuration block */
+  /**
+  * network_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#network_configuration EcsService#network_configuration}
+  */
   readonly networkConfiguration?: EcsServiceNetworkConfiguration[];
-  /** ordered_placement_strategy block */
+  /**
+  * ordered_placement_strategy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#ordered_placement_strategy EcsService#ordered_placement_strategy}
+  */
   readonly orderedPlacementStrategy?: EcsServiceOrderedPlacementStrategy[];
-  /** placement_constraints block */
+  /**
+  * placement_constraints block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#placement_constraints EcsService#placement_constraints}
+  */
   readonly placementConstraints?: EcsServicePlacementConstraints[];
-  /** service_registries block */
+  /**
+  * service_registries block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#service_registries EcsService#service_registries}
+  */
   readonly serviceRegistries?: EcsServiceServiceRegistries[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#timeouts EcsService#timeouts}
+  */
   readonly timeouts?: EcsServiceTimeouts;
 }
 export interface EcsServiceCapacityProviderStrategy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#base EcsService#base}
+  */
   readonly base?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#capacity_provider EcsService#capacity_provider}
+  */
   readonly capacityProvider: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#weight EcsService#weight}
+  */
   readonly weight?: number;
 }
 
@@ -60,7 +159,13 @@ function ecsServiceCapacityProviderStrategyToTerraform(struct?: EcsServiceCapaci
 }
 
 export interface EcsServiceDeploymentCircuitBreaker {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#enable EcsService#enable}
+  */
   readonly enable: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#rollback EcsService#rollback}
+  */
   readonly rollback: boolean;
 }
 
@@ -73,6 +178,9 @@ function ecsServiceDeploymentCircuitBreakerToTerraform(struct?: EcsServiceDeploy
 }
 
 export interface EcsServiceDeploymentController {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#type EcsService#type}
+  */
   readonly type?: string;
 }
 
@@ -84,9 +192,21 @@ function ecsServiceDeploymentControllerToTerraform(struct?: EcsServiceDeployment
 }
 
 export interface EcsServiceLoadBalancer {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#container_name EcsService#container_name}
+  */
   readonly containerName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#container_port EcsService#container_port}
+  */
   readonly containerPort: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#elb_name EcsService#elb_name}
+  */
   readonly elbName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#target_group_arn EcsService#target_group_arn}
+  */
   readonly targetGroupArn?: string;
 }
 
@@ -101,8 +221,17 @@ function ecsServiceLoadBalancerToTerraform(struct?: EcsServiceLoadBalancer): any
 }
 
 export interface EcsServiceNetworkConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#assign_public_ip EcsService#assign_public_ip}
+  */
   readonly assignPublicIp?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#security_groups EcsService#security_groups}
+  */
   readonly securityGroups?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#subnets EcsService#subnets}
+  */
   readonly subnets: string[];
 }
 
@@ -116,7 +245,13 @@ function ecsServiceNetworkConfigurationToTerraform(struct?: EcsServiceNetworkCon
 }
 
 export interface EcsServiceOrderedPlacementStrategy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#field EcsService#field}
+  */
   readonly field?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#type EcsService#type}
+  */
   readonly type: string;
 }
 
@@ -129,7 +264,13 @@ function ecsServiceOrderedPlacementStrategyToTerraform(struct?: EcsServiceOrdere
 }
 
 export interface EcsServicePlacementConstraints {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#expression EcsService#expression}
+  */
   readonly expression?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#type EcsService#type}
+  */
   readonly type: string;
 }
 
@@ -142,9 +283,21 @@ function ecsServicePlacementConstraintsToTerraform(struct?: EcsServicePlacementC
 }
 
 export interface EcsServiceServiceRegistries {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#container_name EcsService#container_name}
+  */
   readonly containerName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#container_port EcsService#container_port}
+  */
   readonly containerPort?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#port EcsService#port}
+  */
   readonly port?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#registry_arn EcsService#registry_arn}
+  */
   readonly registryArn: string;
 }
 
@@ -159,6 +312,9 @@ function ecsServiceServiceRegistriesToTerraform(struct?: EcsServiceServiceRegist
 }
 
 export interface EcsServiceTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#delete EcsService#delete}
+  */
   readonly delete?: string;
 }
 
@@ -170,14 +326,22 @@ function ecsServiceTimeoutsToTerraform(struct?: EcsServiceTimeouts): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html aws_ecs_service}
+*/
 export class EcsService extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html aws_ecs_service} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options EcsServiceConfig
+  */
   public constructor(scope: Construct, id: string, config: EcsServiceConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ecs_service',

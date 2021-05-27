@@ -7,19 +7,49 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Apigatewayv2DomainNameConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#domain_name Apigatewayv2DomainName#domain_name}
+  */
   readonly domainName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#tags Apigatewayv2DomainName#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#tags_all Apigatewayv2DomainName#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** domain_name_configuration block */
+  /**
+  * domain_name_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#domain_name_configuration Apigatewayv2DomainName#domain_name_configuration}
+  */
   readonly domainNameConfiguration: Apigatewayv2DomainNameDomainNameConfiguration[];
-  /** mutual_tls_authentication block */
+  /**
+  * mutual_tls_authentication block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#mutual_tls_authentication Apigatewayv2DomainName#mutual_tls_authentication}
+  */
   readonly mutualTlsAuthentication?: Apigatewayv2DomainNameMutualTlsAuthentication[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#timeouts Apigatewayv2DomainName#timeouts}
+  */
   readonly timeouts?: Apigatewayv2DomainNameTimeouts;
 }
 export interface Apigatewayv2DomainNameDomainNameConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#certificate_arn Apigatewayv2DomainName#certificate_arn}
+  */
   readonly certificateArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#endpoint_type Apigatewayv2DomainName#endpoint_type}
+  */
   readonly endpointType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#security_policy Apigatewayv2DomainName#security_policy}
+  */
   readonly securityPolicy: string;
 }
 
@@ -33,7 +63,13 @@ function apigatewayv2DomainNameDomainNameConfigurationToTerraform(struct?: Apiga
 }
 
 export interface Apigatewayv2DomainNameMutualTlsAuthentication {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#truststore_uri Apigatewayv2DomainName#truststore_uri}
+  */
   readonly truststoreUri: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#truststore_version Apigatewayv2DomainName#truststore_version}
+  */
   readonly truststoreVersion?: string;
 }
 
@@ -46,7 +82,13 @@ function apigatewayv2DomainNameMutualTlsAuthenticationToTerraform(struct?: Apiga
 }
 
 export interface Apigatewayv2DomainNameTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#create Apigatewayv2DomainName#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html#update Apigatewayv2DomainName#update}
+  */
   readonly update?: string;
 }
 
@@ -59,14 +101,22 @@ function apigatewayv2DomainNameTimeoutsToTerraform(struct?: Apigatewayv2DomainNa
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html aws_apigatewayv2_domain_name}
+*/
 export class Apigatewayv2DomainName extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_domain_name.html aws_apigatewayv2_domain_name} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Apigatewayv2DomainNameConfig
+  */
   public constructor(scope: Construct, id: string, config: Apigatewayv2DomainNameConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_apigatewayv2_domain_name',

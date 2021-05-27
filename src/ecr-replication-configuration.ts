@@ -7,11 +7,21 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EcrReplicationConfigurationConfig extends cdktf.TerraformMetaArguments {
-  /** replication_configuration block */
+  /**
+  * replication_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#replication_configuration EcrReplicationConfiguration#replication_configuration}
+  */
   readonly replicationConfiguration?: EcrReplicationConfigurationReplicationConfiguration[];
 }
 export interface EcrReplicationConfigurationReplicationConfigurationRuleDestination {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#region EcrReplicationConfiguration#region}
+  */
   readonly region: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#registry_id EcrReplicationConfiguration#registry_id}
+  */
   readonly registryId: string;
 }
 
@@ -24,7 +34,11 @@ function ecrReplicationConfigurationReplicationConfigurationRuleDestinationToTer
 }
 
 export interface EcrReplicationConfigurationReplicationConfigurationRule {
-  /** destination block */
+  /**
+  * destination block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#destination EcrReplicationConfiguration#destination}
+  */
   readonly destination: EcrReplicationConfigurationReplicationConfigurationRuleDestination[];
 }
 
@@ -36,7 +50,11 @@ function ecrReplicationConfigurationReplicationConfigurationRuleToTerraform(stru
 }
 
 export interface EcrReplicationConfigurationReplicationConfiguration {
-  /** rule block */
+  /**
+  * rule block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html#rule EcrReplicationConfiguration#rule}
+  */
   readonly rule: EcrReplicationConfigurationReplicationConfigurationRule[];
 }
 
@@ -48,14 +66,22 @@ function ecrReplicationConfigurationReplicationConfigurationToTerraform(struct?:
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html aws_ecr_replication_configuration}
+*/
 export class EcrReplicationConfiguration extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_replication_configuration.html aws_ecr_replication_configuration} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options EcrReplicationConfigurationConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: EcrReplicationConfigurationConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ecr_replication_configuration',

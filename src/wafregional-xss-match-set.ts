@@ -7,12 +7,25 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface WafregionalXssMatchSetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set.html#name WafregionalXssMatchSet#name}
+  */
   readonly name: string;
-  /** xss_match_tuple block */
+  /**
+  * xss_match_tuple block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set.html#xss_match_tuple WafregionalXssMatchSet#xss_match_tuple}
+  */
   readonly xssMatchTuple?: WafregionalXssMatchSetXssMatchTuple[];
 }
 export interface WafregionalXssMatchSetXssMatchTupleFieldToMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set.html#data WafregionalXssMatchSet#data}
+  */
   readonly data?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set.html#type WafregionalXssMatchSet#type}
+  */
   readonly type: string;
 }
 
@@ -25,8 +38,15 @@ function wafregionalXssMatchSetXssMatchTupleFieldToMatchToTerraform(struct?: Waf
 }
 
 export interface WafregionalXssMatchSetXssMatchTuple {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set.html#text_transformation WafregionalXssMatchSet#text_transformation}
+  */
   readonly textTransformation: string;
-  /** field_to_match block */
+  /**
+  * field_to_match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set.html#field_to_match WafregionalXssMatchSet#field_to_match}
+  */
   readonly fieldToMatch: WafregionalXssMatchSetXssMatchTupleFieldToMatch[];
 }
 
@@ -39,14 +59,22 @@ function wafregionalXssMatchSetXssMatchTupleToTerraform(struct?: WafregionalXssM
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set.html aws_wafregional_xss_match_set}
+*/
 export class WafregionalXssMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafregional_xss_match_set.html aws_wafregional_xss_match_set} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options WafregionalXssMatchSetConfig
+  */
   public constructor(scope: Construct, id: string, config: WafregionalXssMatchSetConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_wafregional_xss_match_set',

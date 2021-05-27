@@ -7,19 +7,49 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface S3BucketInventoryConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#bucket S3BucketInventory#bucket}
+  */
   readonly bucket: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#enabled S3BucketInventory#enabled}
+  */
   readonly enabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#included_object_versions S3BucketInventory#included_object_versions}
+  */
   readonly includedObjectVersions: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#name S3BucketInventory#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#optional_fields S3BucketInventory#optional_fields}
+  */
   readonly optionalFields?: string[];
-  /** destination block */
+  /**
+  * destination block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#destination S3BucketInventory#destination}
+  */
   readonly destination: S3BucketInventoryDestination[];
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#filter S3BucketInventory#filter}
+  */
   readonly filter?: S3BucketInventoryFilter[];
-  /** schedule block */
+  /**
+  * schedule block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#schedule S3BucketInventory#schedule}
+  */
   readonly schedule: S3BucketInventorySchedule[];
 }
 export interface S3BucketInventoryDestinationBucketEncryptionSseKms {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#key_id S3BucketInventory#key_id}
+  */
   readonly keyId: string;
 }
 
@@ -40,9 +70,17 @@ function s3BucketInventoryDestinationBucketEncryptionSseS3ToTerraform(struct?: S
 }
 
 export interface S3BucketInventoryDestinationBucketEncryption {
-  /** sse_kms block */
+  /**
+  * sse_kms block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#sse_kms S3BucketInventory#sse_kms}
+  */
   readonly sseKms?: S3BucketInventoryDestinationBucketEncryptionSseKms[];
-  /** sse_s3 block */
+  /**
+  * sse_s3 block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#sse_s3 S3BucketInventory#sse_s3}
+  */
   readonly sseS3?: S3BucketInventoryDestinationBucketEncryptionSseS3[];
 }
 
@@ -55,11 +93,27 @@ function s3BucketInventoryDestinationBucketEncryptionToTerraform(struct?: S3Buck
 }
 
 export interface S3BucketInventoryDestinationBucket {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#account_id S3BucketInventory#account_id}
+  */
   readonly accountId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#bucket_arn S3BucketInventory#bucket_arn}
+  */
   readonly bucketArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#format S3BucketInventory#format}
+  */
   readonly format: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#prefix S3BucketInventory#prefix}
+  */
   readonly prefix?: string;
-  /** encryption block */
+  /**
+  * encryption block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#encryption S3BucketInventory#encryption}
+  */
   readonly encryption?: S3BucketInventoryDestinationBucketEncryption[];
 }
 
@@ -75,7 +129,11 @@ function s3BucketInventoryDestinationBucketToTerraform(struct?: S3BucketInventor
 }
 
 export interface S3BucketInventoryDestination {
-  /** bucket block */
+  /**
+  * bucket block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#bucket S3BucketInventory#bucket}
+  */
   readonly bucket: S3BucketInventoryDestinationBucket[];
 }
 
@@ -87,6 +145,9 @@ function s3BucketInventoryDestinationToTerraform(struct?: S3BucketInventoryDesti
 }
 
 export interface S3BucketInventoryFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#prefix S3BucketInventory#prefix}
+  */
   readonly prefix?: string;
 }
 
@@ -98,6 +159,9 @@ function s3BucketInventoryFilterToTerraform(struct?: S3BucketInventoryFilter): a
 }
 
 export interface S3BucketInventorySchedule {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html#frequency S3BucketInventory#frequency}
+  */
   readonly frequency: string;
 }
 
@@ -109,14 +173,22 @@ function s3BucketInventoryScheduleToTerraform(struct?: S3BucketInventorySchedule
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html aws_s3_bucket_inventory}
+*/
 export class S3BucketInventory extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_inventory.html aws_s3_bucket_inventory} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options S3BucketInventoryConfig
+  */
   public constructor(scope: Construct, id: string, config: S3BucketInventoryConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_inventory',

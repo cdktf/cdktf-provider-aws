@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_organizations_organization.html
+// https://www.terraform.io/docs/providers/aws/d/organizations_organization.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -97,14 +97,22 @@ export class DataAwsOrganizationsOrganizationRoots extends cdktf.ComplexComputed
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_organization.html aws_organizations_organization}
+*/
 export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_organization.html aws_organizations_organization} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsOrganizationsOrganizationConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsOrganizationsOrganizationConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_organizations_organization',

@@ -7,45 +7,145 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#additional_info EmrCluster#additional_info}
+  */
   readonly additionalInfo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#applications EmrCluster#applications}
+  */
   readonly applications?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#autoscaling_role EmrCluster#autoscaling_role}
+  */
   readonly autoscalingRole?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#configurations EmrCluster#configurations}
+  */
   readonly configurations?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#configurations_json EmrCluster#configurations_json}
+  */
   readonly configurationsJson?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#custom_ami_id EmrCluster#custom_ami_id}
+  */
   readonly customAmiId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#ebs_root_volume_size EmrCluster#ebs_root_volume_size}
+  */
   readonly ebsRootVolumeSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#keep_job_flow_alive_when_no_steps EmrCluster#keep_job_flow_alive_when_no_steps}
+  */
   readonly keepJobFlowAliveWhenNoSteps?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#log_uri EmrCluster#log_uri}
+  */
   readonly logUri?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#name EmrCluster#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#release_label EmrCluster#release_label}
+  */
   readonly releaseLabel: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#scale_down_behavior EmrCluster#scale_down_behavior}
+  */
   readonly scaleDownBehavior?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#security_configuration EmrCluster#security_configuration}
+  */
   readonly securityConfiguration?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#service_role EmrCluster#service_role}
+  */
   readonly serviceRole: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#step EmrCluster#step}
+  */
   readonly step?: EmrClusterStep[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#step_concurrency_level EmrCluster#step_concurrency_level}
+  */
   readonly stepConcurrencyLevel?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#tags EmrCluster#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#tags_all EmrCluster#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#termination_protection EmrCluster#termination_protection}
+  */
   readonly terminationProtection?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#visible_to_all_users EmrCluster#visible_to_all_users}
+  */
   readonly visibleToAllUsers?: boolean;
-  /** bootstrap_action block */
+  /**
+  * bootstrap_action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#bootstrap_action EmrCluster#bootstrap_action}
+  */
   readonly bootstrapAction?: EmrClusterBootstrapAction[];
-  /** core_instance_fleet block */
+  /**
+  * core_instance_fleet block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#core_instance_fleet EmrCluster#core_instance_fleet}
+  */
   readonly coreInstanceFleet?: EmrClusterCoreInstanceFleet[];
-  /** core_instance_group block */
+  /**
+  * core_instance_group block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#core_instance_group EmrCluster#core_instance_group}
+  */
   readonly coreInstanceGroup?: EmrClusterCoreInstanceGroup[];
-  /** ec2_attributes block */
+  /**
+  * ec2_attributes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#ec2_attributes EmrCluster#ec2_attributes}
+  */
   readonly ec2Attributes?: EmrClusterEc2Attributes[];
-  /** kerberos_attributes block */
+  /**
+  * kerberos_attributes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#kerberos_attributes EmrCluster#kerberos_attributes}
+  */
   readonly kerberosAttributes?: EmrClusterKerberosAttributes[];
-  /** master_instance_fleet block */
+  /**
+  * master_instance_fleet block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#master_instance_fleet EmrCluster#master_instance_fleet}
+  */
   readonly masterInstanceFleet?: EmrClusterMasterInstanceFleet[];
-  /** master_instance_group block */
+  /**
+  * master_instance_group block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#master_instance_group EmrCluster#master_instance_group}
+  */
   readonly masterInstanceGroup?: EmrClusterMasterInstanceGroup[];
 }
 export interface EmrClusterStepHadoopJarStep {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#args EmrCluster#args}
+  */
   readonly args?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#jar EmrCluster#jar}
+  */
   readonly jar?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#main_class EmrCluster#main_class}
+  */
   readonly mainClass?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#properties EmrCluster#properties}
+  */
   readonly properties?: { [key: string]: string };
 }
 
@@ -60,8 +160,17 @@ function emrClusterStepHadoopJarStepToTerraform(struct?: EmrClusterStepHadoopJar
 }
 
 export interface EmrClusterStep {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#action_on_failure EmrCluster#action_on_failure}
+  */
   readonly actionOnFailure?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#hadoop_jar_step EmrCluster#hadoop_jar_step}
+  */
   readonly hadoopJarStep?: EmrClusterStepHadoopJarStep[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#name EmrCluster#name}
+  */
   readonly name?: string;
 }
 
@@ -75,8 +184,17 @@ function emrClusterStepToTerraform(struct?: EmrClusterStep): any {
 }
 
 export interface EmrClusterBootstrapAction {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#args EmrCluster#args}
+  */
   readonly args?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#name EmrCluster#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#path EmrCluster#path}
+  */
   readonly path: string;
 }
 
@@ -90,7 +208,13 @@ function emrClusterBootstrapActionToTerraform(struct?: EmrClusterBootstrapAction
 }
 
 export interface EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#classification EmrCluster#classification}
+  */
   readonly classification?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#properties EmrCluster#properties}
+  */
   readonly properties?: { [key: string]: string };
 }
 
@@ -103,9 +227,21 @@ function emrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsToTerraform
 }
 
 export interface EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#iops EmrCluster#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#size EmrCluster#size}
+  */
   readonly size: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#type EmrCluster#type}
+  */
   readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#volumes_per_instance EmrCluster#volumes_per_instance}
+  */
   readonly volumesPerInstance?: number;
 }
 
@@ -120,13 +256,33 @@ function emrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfigToTerraform(stru
 }
 
 export interface EmrClusterCoreInstanceFleetInstanceTypeConfigs {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#bid_price EmrCluster#bid_price}
+  */
   readonly bidPrice?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}
+  */
   readonly bidPriceAsPercentageOfOnDemandPrice?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_type EmrCluster#instance_type}
+  */
   readonly instanceType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#weighted_capacity EmrCluster#weighted_capacity}
+  */
   readonly weightedCapacity?: number;
-  /** configurations block */
+  /**
+  * configurations block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#configurations EmrCluster#configurations}
+  */
   readonly configurations?: EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations[];
-  /** ebs_config block */
+  /**
+  * ebs_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#ebs_config EmrCluster#ebs_config}
+  */
   readonly ebsConfig?: EmrClusterCoreInstanceFleetInstanceTypeConfigsEbsConfig[];
 }
 
@@ -143,6 +299,9 @@ function emrClusterCoreInstanceFleetInstanceTypeConfigsToTerraform(struct?: EmrC
 }
 
 export interface EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#allocation_strategy EmrCluster#allocation_strategy}
+  */
   readonly allocationStrategy: string;
 }
 
@@ -154,9 +313,21 @@ function emrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecificationToT
 }
 
 export interface EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#allocation_strategy EmrCluster#allocation_strategy}
+  */
   readonly allocationStrategy: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#block_duration_minutes EmrCluster#block_duration_minutes}
+  */
   readonly blockDurationMinutes?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#timeout_action EmrCluster#timeout_action}
+  */
   readonly timeoutAction: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#timeout_duration_minutes EmrCluster#timeout_duration_minutes}
+  */
   readonly timeoutDurationMinutes: number;
 }
 
@@ -171,9 +342,17 @@ function emrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecificationToTerra
 }
 
 export interface EmrClusterCoreInstanceFleetLaunchSpecifications {
-  /** on_demand_specification block */
+  /**
+  * on_demand_specification block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#on_demand_specification EmrCluster#on_demand_specification}
+  */
   readonly onDemandSpecification?: EmrClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification[];
-  /** spot_specification block */
+  /**
+  * spot_specification block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#spot_specification EmrCluster#spot_specification}
+  */
   readonly spotSpecification?: EmrClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification[];
 }
 
@@ -186,12 +365,29 @@ function emrClusterCoreInstanceFleetLaunchSpecificationsToTerraform(struct?: Emr
 }
 
 export interface EmrClusterCoreInstanceFleet {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#name EmrCluster#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#target_on_demand_capacity EmrCluster#target_on_demand_capacity}
+  */
   readonly targetOnDemandCapacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#target_spot_capacity EmrCluster#target_spot_capacity}
+  */
   readonly targetSpotCapacity?: number;
-  /** instance_type_configs block */
+  /**
+  * instance_type_configs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_type_configs EmrCluster#instance_type_configs}
+  */
   readonly instanceTypeConfigs?: EmrClusterCoreInstanceFleetInstanceTypeConfigs[];
-  /** launch_specifications block */
+  /**
+  * launch_specifications block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#launch_specifications EmrCluster#launch_specifications}
+  */
   readonly launchSpecifications?: EmrClusterCoreInstanceFleetLaunchSpecifications[];
 }
 
@@ -207,9 +403,21 @@ function emrClusterCoreInstanceFleetToTerraform(struct?: EmrClusterCoreInstanceF
 }
 
 export interface EmrClusterCoreInstanceGroupEbsConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#iops EmrCluster#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#size EmrCluster#size}
+  */
   readonly size: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#type EmrCluster#type}
+  */
   readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#volumes_per_instance EmrCluster#volumes_per_instance}
+  */
   readonly volumesPerInstance?: number;
 }
 
@@ -224,12 +432,31 @@ function emrClusterCoreInstanceGroupEbsConfigToTerraform(struct?: EmrClusterCore
 }
 
 export interface EmrClusterCoreInstanceGroup {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#autoscaling_policy EmrCluster#autoscaling_policy}
+  */
   readonly autoscalingPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#bid_price EmrCluster#bid_price}
+  */
   readonly bidPrice?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_count EmrCluster#instance_count}
+  */
   readonly instanceCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_type EmrCluster#instance_type}
+  */
   readonly instanceType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#name EmrCluster#name}
+  */
   readonly name?: string;
-  /** ebs_config block */
+  /**
+  * ebs_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#ebs_config EmrCluster#ebs_config}
+  */
   readonly ebsConfig?: EmrClusterCoreInstanceGroupEbsConfig[];
 }
 
@@ -246,14 +473,41 @@ function emrClusterCoreInstanceGroupToTerraform(struct?: EmrClusterCoreInstanceG
 }
 
 export interface EmrClusterEc2Attributes {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#additional_master_security_groups EmrCluster#additional_master_security_groups}
+  */
   readonly additionalMasterSecurityGroups?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#additional_slave_security_groups EmrCluster#additional_slave_security_groups}
+  */
   readonly additionalSlaveSecurityGroups?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#emr_managed_master_security_group EmrCluster#emr_managed_master_security_group}
+  */
   readonly emrManagedMasterSecurityGroup?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#emr_managed_slave_security_group EmrCluster#emr_managed_slave_security_group}
+  */
   readonly emrManagedSlaveSecurityGroup?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_profile EmrCluster#instance_profile}
+  */
   readonly instanceProfile: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#key_name EmrCluster#key_name}
+  */
   readonly keyName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#service_access_security_group EmrCluster#service_access_security_group}
+  */
   readonly serviceAccessSecurityGroup?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#subnet_id EmrCluster#subnet_id}
+  */
   readonly subnetId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#subnet_ids EmrCluster#subnet_ids}
+  */
   readonly subnetIds?: string[];
 }
 
@@ -273,10 +527,25 @@ function emrClusterEc2AttributesToTerraform(struct?: EmrClusterEc2Attributes): a
 }
 
 export interface EmrClusterKerberosAttributes {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#ad_domain_join_password EmrCluster#ad_domain_join_password}
+  */
   readonly adDomainJoinPassword?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#ad_domain_join_user EmrCluster#ad_domain_join_user}
+  */
   readonly adDomainJoinUser?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#cross_realm_trust_principal_password EmrCluster#cross_realm_trust_principal_password}
+  */
   readonly crossRealmTrustPrincipalPassword?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#kdc_admin_password EmrCluster#kdc_admin_password}
+  */
   readonly kdcAdminPassword: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#realm EmrCluster#realm}
+  */
   readonly realm: string;
 }
 
@@ -292,7 +561,13 @@ function emrClusterKerberosAttributesToTerraform(struct?: EmrClusterKerberosAttr
 }
 
 export interface EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#classification EmrCluster#classification}
+  */
   readonly classification?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#properties EmrCluster#properties}
+  */
   readonly properties?: { [key: string]: string };
 }
 
@@ -305,9 +580,21 @@ function emrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsToTerrafo
 }
 
 export interface EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#iops EmrCluster#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#size EmrCluster#size}
+  */
   readonly size: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#type EmrCluster#type}
+  */
   readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#volumes_per_instance EmrCluster#volumes_per_instance}
+  */
   readonly volumesPerInstance?: number;
 }
 
@@ -322,13 +609,33 @@ function emrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigToTerraform(st
 }
 
 export interface EmrClusterMasterInstanceFleetInstanceTypeConfigs {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#bid_price EmrCluster#bid_price}
+  */
   readonly bidPrice?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#bid_price_as_percentage_of_on_demand_price EmrCluster#bid_price_as_percentage_of_on_demand_price}
+  */
   readonly bidPriceAsPercentageOfOnDemandPrice?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_type EmrCluster#instance_type}
+  */
   readonly instanceType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#weighted_capacity EmrCluster#weighted_capacity}
+  */
   readonly weightedCapacity?: number;
-  /** configurations block */
+  /**
+  * configurations block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#configurations EmrCluster#configurations}
+  */
   readonly configurations?: EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations[];
-  /** ebs_config block */
+  /**
+  * ebs_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#ebs_config EmrCluster#ebs_config}
+  */
   readonly ebsConfig?: EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfig[];
 }
 
@@ -345,6 +652,9 @@ function emrClusterMasterInstanceFleetInstanceTypeConfigsToTerraform(struct?: Em
 }
 
 export interface EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#allocation_strategy EmrCluster#allocation_strategy}
+  */
   readonly allocationStrategy: string;
 }
 
@@ -356,9 +666,21 @@ function emrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationT
 }
 
 export interface EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#allocation_strategy EmrCluster#allocation_strategy}
+  */
   readonly allocationStrategy: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#block_duration_minutes EmrCluster#block_duration_minutes}
+  */
   readonly blockDurationMinutes?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#timeout_action EmrCluster#timeout_action}
+  */
   readonly timeoutAction: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#timeout_duration_minutes EmrCluster#timeout_duration_minutes}
+  */
   readonly timeoutDurationMinutes: number;
 }
 
@@ -373,9 +695,17 @@ function emrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationToTer
 }
 
 export interface EmrClusterMasterInstanceFleetLaunchSpecifications {
-  /** on_demand_specification block */
+  /**
+  * on_demand_specification block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#on_demand_specification EmrCluster#on_demand_specification}
+  */
   readonly onDemandSpecification?: EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecification[];
-  /** spot_specification block */
+  /**
+  * spot_specification block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#spot_specification EmrCluster#spot_specification}
+  */
   readonly spotSpecification?: EmrClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification[];
 }
 
@@ -388,12 +718,29 @@ function emrClusterMasterInstanceFleetLaunchSpecificationsToTerraform(struct?: E
 }
 
 export interface EmrClusterMasterInstanceFleet {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#name EmrCluster#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#target_on_demand_capacity EmrCluster#target_on_demand_capacity}
+  */
   readonly targetOnDemandCapacity?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#target_spot_capacity EmrCluster#target_spot_capacity}
+  */
   readonly targetSpotCapacity?: number;
-  /** instance_type_configs block */
+  /**
+  * instance_type_configs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_type_configs EmrCluster#instance_type_configs}
+  */
   readonly instanceTypeConfigs?: EmrClusterMasterInstanceFleetInstanceTypeConfigs[];
-  /** launch_specifications block */
+  /**
+  * launch_specifications block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#launch_specifications EmrCluster#launch_specifications}
+  */
   readonly launchSpecifications?: EmrClusterMasterInstanceFleetLaunchSpecifications[];
 }
 
@@ -409,9 +756,21 @@ function emrClusterMasterInstanceFleetToTerraform(struct?: EmrClusterMasterInsta
 }
 
 export interface EmrClusterMasterInstanceGroupEbsConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#iops EmrCluster#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#size EmrCluster#size}
+  */
   readonly size: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#type EmrCluster#type}
+  */
   readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#volumes_per_instance EmrCluster#volumes_per_instance}
+  */
   readonly volumesPerInstance?: number;
 }
 
@@ -426,11 +785,27 @@ function emrClusterMasterInstanceGroupEbsConfigToTerraform(struct?: EmrClusterMa
 }
 
 export interface EmrClusterMasterInstanceGroup {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#bid_price EmrCluster#bid_price}
+  */
   readonly bidPrice?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_count EmrCluster#instance_count}
+  */
   readonly instanceCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#instance_type EmrCluster#instance_type}
+  */
   readonly instanceType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#name EmrCluster#name}
+  */
   readonly name?: string;
-  /** ebs_config block */
+  /**
+  * ebs_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#ebs_config EmrCluster#ebs_config}
+  */
   readonly ebsConfig?: EmrClusterMasterInstanceGroupEbsConfig[];
 }
 
@@ -446,14 +821,22 @@ function emrClusterMasterInstanceGroupToTerraform(struct?: EmrClusterMasterInsta
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html aws_emr_cluster}
+*/
 export class EmrCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html aws_emr_cluster} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options EmrClusterConfig
+  */
   public constructor(scope: Construct, id: string, config: EmrClusterConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_emr_cluster',

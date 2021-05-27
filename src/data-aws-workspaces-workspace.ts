@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_workspaces_workspace.html
+// https://www.terraform.io/docs/providers/aws/d/workspaces_workspace.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,9 +7,21 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsWorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace.html#directory_id DataAwsWorkspacesWorkspace#directory_id}
+  */
   readonly directoryId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace.html#tags DataAwsWorkspacesWorkspace#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace.html#user_name DataAwsWorkspacesWorkspace#user_name}
+  */
   readonly userName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace.html#workspace_id DataAwsWorkspacesWorkspace#workspace_id}
+  */
   readonly workspaceId?: string;
 }
 export class DataAwsWorkspacesWorkspaceWorkspaceProperties extends cdktf.ComplexComputedList {
@@ -40,14 +52,22 @@ export class DataAwsWorkspacesWorkspaceWorkspaceProperties extends cdktf.Complex
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace.html aws_workspaces_workspace}
+*/
 export class DataAwsWorkspacesWorkspace extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace.html aws_workspaces_workspace} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsWorkspacesWorkspaceConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsWorkspacesWorkspaceConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_workspaces_workspace',

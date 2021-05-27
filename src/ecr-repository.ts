@@ -7,19 +7,49 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EcrRepositoryConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#image_tag_mutability EcrRepository#image_tag_mutability}
+  */
   readonly imageTagMutability?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#name EcrRepository#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#tags EcrRepository#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#tags_all EcrRepository#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** encryption_configuration block */
+  /**
+  * encryption_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#encryption_configuration EcrRepository#encryption_configuration}
+  */
   readonly encryptionConfiguration?: EcrRepositoryEncryptionConfiguration[];
-  /** image_scanning_configuration block */
+  /**
+  * image_scanning_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#image_scanning_configuration EcrRepository#image_scanning_configuration}
+  */
   readonly imageScanningConfiguration?: EcrRepositoryImageScanningConfiguration[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#timeouts EcrRepository#timeouts}
+  */
   readonly timeouts?: EcrRepositoryTimeouts;
 }
 export interface EcrRepositoryEncryptionConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#encryption_type EcrRepository#encryption_type}
+  */
   readonly encryptionType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#kms_key EcrRepository#kms_key}
+  */
   readonly kmsKey?: string;
 }
 
@@ -32,6 +62,9 @@ function ecrRepositoryEncryptionConfigurationToTerraform(struct?: EcrRepositoryE
 }
 
 export interface EcrRepositoryImageScanningConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#scan_on_push EcrRepository#scan_on_push}
+  */
   readonly scanOnPush: boolean;
 }
 
@@ -43,6 +76,9 @@ function ecrRepositoryImageScanningConfigurationToTerraform(struct?: EcrReposito
 }
 
 export interface EcrRepositoryTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html#delete EcrRepository#delete}
+  */
   readonly delete?: string;
 }
 
@@ -54,14 +90,22 @@ function ecrRepositoryTimeoutsToTerraform(struct?: EcrRepositoryTimeouts): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html aws_ecr_repository}
+*/
 export class EcrRepository extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_repository.html aws_ecr_repository} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options EcrRepositoryConfig
+  */
   public constructor(scope: Construct, id: string, config: EcrRepositoryConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ecr_repository',

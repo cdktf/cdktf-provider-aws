@@ -7,38 +7,109 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#access_policies ElasticsearchDomain#access_policies}
+  */
   readonly accessPolicies?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#advanced_options ElasticsearchDomain#advanced_options}
+  */
   readonly advancedOptions?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#domain_name ElasticsearchDomain#domain_name}
+  */
   readonly domainName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#elasticsearch_version ElasticsearchDomain#elasticsearch_version}
+  */
   readonly elasticsearchVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tags ElasticsearchDomain#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tags_all ElasticsearchDomain#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** advanced_security_options block */
+  /**
+  * advanced_security_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#advanced_security_options ElasticsearchDomain#advanced_security_options}
+  */
   readonly advancedSecurityOptions?: ElasticsearchDomainAdvancedSecurityOptions[];
-  /** cluster_config block */
+  /**
+  * cluster_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cluster_config ElasticsearchDomain#cluster_config}
+  */
   readonly clusterConfig?: ElasticsearchDomainClusterConfig[];
-  /** cognito_options block */
+  /**
+  * cognito_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cognito_options ElasticsearchDomain#cognito_options}
+  */
   readonly cognitoOptions?: ElasticsearchDomainCognitoOptions[];
-  /** domain_endpoint_options block */
+  /**
+  * domain_endpoint_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#domain_endpoint_options ElasticsearchDomain#domain_endpoint_options}
+  */
   readonly domainEndpointOptions?: ElasticsearchDomainDomainEndpointOptions[];
-  /** ebs_options block */
+  /**
+  * ebs_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#ebs_options ElasticsearchDomain#ebs_options}
+  */
   readonly ebsOptions?: ElasticsearchDomainEbsOptions[];
-  /** encrypt_at_rest block */
+  /**
+  * encrypt_at_rest block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#encrypt_at_rest ElasticsearchDomain#encrypt_at_rest}
+  */
   readonly encryptAtRest?: ElasticsearchDomainEncryptAtRest[];
-  /** log_publishing_options block */
+  /**
+  * log_publishing_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#log_publishing_options ElasticsearchDomain#log_publishing_options}
+  */
   readonly logPublishingOptions?: ElasticsearchDomainLogPublishingOptions[];
-  /** node_to_node_encryption block */
+  /**
+  * node_to_node_encryption block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#node_to_node_encryption ElasticsearchDomain#node_to_node_encryption}
+  */
   readonly nodeToNodeEncryption?: ElasticsearchDomainNodeToNodeEncryption[];
-  /** snapshot_options block */
+  /**
+  * snapshot_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#snapshot_options ElasticsearchDomain#snapshot_options}
+  */
   readonly snapshotOptions?: ElasticsearchDomainSnapshotOptions[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#timeouts ElasticsearchDomain#timeouts}
+  */
   readonly timeouts?: ElasticsearchDomainTimeouts;
-  /** vpc_options block */
+  /**
+  * vpc_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#vpc_options ElasticsearchDomain#vpc_options}
+  */
   readonly vpcOptions?: ElasticsearchDomainVpcOptions[];
 }
 export interface ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#master_user_arn ElasticsearchDomain#master_user_arn}
+  */
   readonly masterUserArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#master_user_name ElasticsearchDomain#master_user_name}
+  */
   readonly masterUserName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#master_user_password ElasticsearchDomain#master_user_password}
+  */
   readonly masterUserPassword?: string;
 }
 
@@ -52,9 +123,19 @@ function elasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsToTerraform(
 }
 
 export interface ElasticsearchDomainAdvancedSecurityOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  */
   readonly enabled: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#internal_user_database_enabled ElasticsearchDomain#internal_user_database_enabled}
+  */
   readonly internalUserDatabaseEnabled?: boolean;
-  /** master_user_options block */
+  /**
+  * master_user_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#master_user_options ElasticsearchDomain#master_user_options}
+  */
   readonly masterUserOptions?: ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions[];
 }
 
@@ -68,6 +149,9 @@ function elasticsearchDomainAdvancedSecurityOptionsToTerraform(struct?: Elastics
 }
 
 export interface ElasticsearchDomainClusterConfigZoneAwarenessConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#availability_zone_count ElasticsearchDomain#availability_zone_count}
+  */
   readonly availabilityZoneCount?: number;
 }
 
@@ -79,16 +163,47 @@ function elasticsearchDomainClusterConfigZoneAwarenessConfigToTerraform(struct?:
 }
 
 export interface ElasticsearchDomainClusterConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#dedicated_master_count ElasticsearchDomain#dedicated_master_count}
+  */
   readonly dedicatedMasterCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#dedicated_master_enabled ElasticsearchDomain#dedicated_master_enabled}
+  */
   readonly dedicatedMasterEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#dedicated_master_type ElasticsearchDomain#dedicated_master_type}
+  */
   readonly dedicatedMasterType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#instance_count ElasticsearchDomain#instance_count}
+  */
   readonly instanceCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#instance_type ElasticsearchDomain#instance_type}
+  */
   readonly instanceType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#warm_count ElasticsearchDomain#warm_count}
+  */
   readonly warmCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#warm_enabled ElasticsearchDomain#warm_enabled}
+  */
   readonly warmEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#warm_type ElasticsearchDomain#warm_type}
+  */
   readonly warmType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#zone_awareness_enabled ElasticsearchDomain#zone_awareness_enabled}
+  */
   readonly zoneAwarenessEnabled?: boolean;
-  /** zone_awareness_config block */
+  /**
+  * zone_awareness_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#zone_awareness_config ElasticsearchDomain#zone_awareness_config}
+  */
   readonly zoneAwarenessConfig?: ElasticsearchDomainClusterConfigZoneAwarenessConfig[];
 }
 
@@ -109,9 +224,21 @@ function elasticsearchDomainClusterConfigToTerraform(struct?: ElasticsearchDomai
 }
 
 export interface ElasticsearchDomainCognitoOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  */
   readonly enabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#identity_pool_id ElasticsearchDomain#identity_pool_id}
+  */
   readonly identityPoolId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#role_arn ElasticsearchDomain#role_arn}
+  */
   readonly roleArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#user_pool_id ElasticsearchDomain#user_pool_id}
+  */
   readonly userPoolId: string;
 }
 
@@ -126,10 +253,25 @@ function elasticsearchDomainCognitoOptionsToTerraform(struct?: ElasticsearchDoma
 }
 
 export interface ElasticsearchDomainDomainEndpointOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#custom_endpoint ElasticsearchDomain#custom_endpoint}
+  */
   readonly customEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#custom_endpoint_certificate_arn ElasticsearchDomain#custom_endpoint_certificate_arn}
+  */
   readonly customEndpointCertificateArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#custom_endpoint_enabled ElasticsearchDomain#custom_endpoint_enabled}
+  */
   readonly customEndpointEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enforce_https ElasticsearchDomain#enforce_https}
+  */
   readonly enforceHttps?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tls_security_policy ElasticsearchDomain#tls_security_policy}
+  */
   readonly tlsSecurityPolicy?: string;
 }
 
@@ -145,9 +287,21 @@ function elasticsearchDomainDomainEndpointOptionsToTerraform(struct?: Elasticsea
 }
 
 export interface ElasticsearchDomainEbsOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#ebs_enabled ElasticsearchDomain#ebs_enabled}
+  */
   readonly ebsEnabled: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#iops ElasticsearchDomain#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#volume_size ElasticsearchDomain#volume_size}
+  */
   readonly volumeSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#volume_type ElasticsearchDomain#volume_type}
+  */
   readonly volumeType?: string;
 }
 
@@ -162,7 +316,13 @@ function elasticsearchDomainEbsOptionsToTerraform(struct?: ElasticsearchDomainEb
 }
 
 export interface ElasticsearchDomainEncryptAtRest {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  */
   readonly enabled: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#kms_key_id ElasticsearchDomain#kms_key_id}
+  */
   readonly kmsKeyId?: string;
 }
 
@@ -175,8 +335,17 @@ function elasticsearchDomainEncryptAtRestToTerraform(struct?: ElasticsearchDomai
 }
 
 export interface ElasticsearchDomainLogPublishingOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#cloudwatch_log_group_arn ElasticsearchDomain#cloudwatch_log_group_arn}
+  */
   readonly cloudwatchLogGroupArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  */
   readonly enabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#log_type ElasticsearchDomain#log_type}
+  */
   readonly logType: string;
 }
 
@@ -190,6 +359,9 @@ function elasticsearchDomainLogPublishingOptionsToTerraform(struct?: Elasticsear
 }
 
 export interface ElasticsearchDomainNodeToNodeEncryption {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
+  */
   readonly enabled: boolean;
 }
 
@@ -201,6 +373,9 @@ function elasticsearchDomainNodeToNodeEncryptionToTerraform(struct?: Elasticsear
 }
 
 export interface ElasticsearchDomainSnapshotOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#automated_snapshot_start_hour ElasticsearchDomain#automated_snapshot_start_hour}
+  */
   readonly automatedSnapshotStartHour: number;
 }
 
@@ -212,6 +387,9 @@ function elasticsearchDomainSnapshotOptionsToTerraform(struct?: ElasticsearchDom
 }
 
 export interface ElasticsearchDomainTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#update ElasticsearchDomain#update}
+  */
   readonly update?: string;
 }
 
@@ -223,7 +401,13 @@ function elasticsearchDomainTimeoutsToTerraform(struct?: ElasticsearchDomainTime
 }
 
 export interface ElasticsearchDomainVpcOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#security_group_ids ElasticsearchDomain#security_group_ids}
+  */
   readonly securityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#subnet_ids ElasticsearchDomain#subnet_ids}
+  */
   readonly subnetIds?: string[];
 }
 
@@ -236,14 +420,22 @@ function elasticsearchDomainVpcOptionsToTerraform(struct?: ElasticsearchDomainVp
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html aws_elasticsearch_domain}
+*/
 export class ElasticsearchDomain extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html aws_elasticsearch_domain} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ElasticsearchDomainConfig
+  */
   public constructor(scope: Construct, id: string, config: ElasticsearchDomainConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_elasticsearch_domain',

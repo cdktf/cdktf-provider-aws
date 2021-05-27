@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_secretsmanager_secret.html
+// https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsSecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret.html#name DataAwsSecretsmanagerSecret#name}
+  */
   readonly name?: string;
 }
 export class DataAwsSecretsmanagerSecretRotationRules extends cdktf.ComplexComputedList {
@@ -17,14 +20,22 @@ export class DataAwsSecretsmanagerSecretRotationRules extends cdktf.ComplexCompu
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret.html aws_secretsmanager_secret}
+*/
 export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret.html aws_secretsmanager_secret} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsSecretsmanagerSecretConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsSecretsmanagerSecretConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_secretsmanager_secret',
