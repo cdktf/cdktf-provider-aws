@@ -37,6 +37,8 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   readonly userDataBase64?: string;
   readonly volumeTags?: { [key: string]: string };
   readonly vpcSecurityGroupIds?: string[];
+  /** capacity_reservation_specification block */
+  readonly capacityReservationSpecification?: InstanceCapacityReservationSpecification[];
   /** credit_specification block */
   readonly creditSpecification?: InstanceCreditSpecification[];
   /** ebs_block_device block */
@@ -54,6 +56,31 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /** timeouts block */
   readonly timeouts?: InstanceTimeouts;
 }
+export interface InstanceCapacityReservationSpecificationCapacityReservationTarget {
+  readonly capacityReservationId?: string;
+}
+
+function instanceCapacityReservationSpecificationCapacityReservationTargetToTerraform(struct?: InstanceCapacityReservationSpecificationCapacityReservationTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    capacity_reservation_id: cdktf.stringToTerraform(struct!.capacityReservationId),
+  }
+}
+
+export interface InstanceCapacityReservationSpecification {
+  readonly capacityReservationPreference?: string;
+  /** capacity_reservation_target block */
+  readonly capacityReservationTarget?: InstanceCapacityReservationSpecificationCapacityReservationTarget[];
+}
+
+function instanceCapacityReservationSpecificationToTerraform(struct?: InstanceCapacityReservationSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    capacity_reservation_preference: cdktf.stringToTerraform(struct!.capacityReservationPreference),
+    capacity_reservation_target: cdktf.listMapper(instanceCapacityReservationSpecificationCapacityReservationTargetToTerraform)(struct!.capacityReservationTarget),
+  }
+}
+
 export interface InstanceCreditSpecification {
   readonly cpuCredits?: string;
 }
@@ -240,6 +267,7 @@ export class Instance extends cdktf.TerraformResource {
     this._userDataBase64 = config.userDataBase64;
     this._volumeTags = config.volumeTags;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
+    this._capacityReservationSpecification = config.capacityReservationSpecification;
     this._creditSpecification = config.creditSpecification;
     this._ebsBlockDevice = config.ebsBlockDevice;
     this._enclaveOptions = config.enclaveOptions;
@@ -773,6 +801,22 @@ export class Instance extends cdktf.TerraformResource {
     return this._vpcSecurityGroupIds
   }
 
+  // capacity_reservation_specification - computed: false, optional: true, required: false
+  private _capacityReservationSpecification?: InstanceCapacityReservationSpecification[];
+  public get capacityReservationSpecification() {
+    return this.interpolationForAttribute('capacity_reservation_specification') as any;
+  }
+  public set capacityReservationSpecification(value: InstanceCapacityReservationSpecification[] ) {
+    this._capacityReservationSpecification = value;
+  }
+  public resetCapacityReservationSpecification() {
+    this._capacityReservationSpecification = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityReservationSpecificationInput() {
+    return this._capacityReservationSpecification
+  }
+
   // credit_specification - computed: false, optional: true, required: false
   private _creditSpecification?: InstanceCreditSpecification[];
   public get creditSpecification() {
@@ -937,6 +981,7 @@ export class Instance extends cdktf.TerraformResource {
       user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
       volume_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._volumeTags),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
+      capacity_reservation_specification: cdktf.listMapper(instanceCapacityReservationSpecificationToTerraform)(this._capacityReservationSpecification),
       credit_specification: cdktf.listMapper(instanceCreditSpecificationToTerraform)(this._creditSpecification),
       ebs_block_device: cdktf.listMapper(instanceEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
       enclave_options: cdktf.listMapper(instanceEnclaveOptionsToTerraform)(this._enclaveOptions),

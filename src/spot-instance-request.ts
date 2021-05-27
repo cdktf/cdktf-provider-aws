@@ -45,6 +45,8 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   readonly volumeTags?: { [key: string]: string };
   readonly vpcSecurityGroupIds?: string[];
   readonly waitForFulfillment?: boolean;
+  /** capacity_reservation_specification block */
+  readonly capacityReservationSpecification?: SpotInstanceRequestCapacityReservationSpecification[];
   /** credit_specification block */
   readonly creditSpecification?: SpotInstanceRequestCreditSpecification[];
   /** ebs_block_device block */
@@ -62,6 +64,31 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /** timeouts block */
   readonly timeouts?: SpotInstanceRequestTimeouts;
 }
+export interface SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget {
+  readonly capacityReservationId?: string;
+}
+
+function spotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetToTerraform(struct?: SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    capacity_reservation_id: cdktf.stringToTerraform(struct!.capacityReservationId),
+  }
+}
+
+export interface SpotInstanceRequestCapacityReservationSpecification {
+  readonly capacityReservationPreference?: string;
+  /** capacity_reservation_target block */
+  readonly capacityReservationTarget?: SpotInstanceRequestCapacityReservationSpecificationCapacityReservationTarget[];
+}
+
+function spotInstanceRequestCapacityReservationSpecificationToTerraform(struct?: SpotInstanceRequestCapacityReservationSpecification): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    capacity_reservation_preference: cdktf.stringToTerraform(struct!.capacityReservationPreference),
+    capacity_reservation_target: cdktf.listMapper(spotInstanceRequestCapacityReservationSpecificationCapacityReservationTargetToTerraform)(struct!.capacityReservationTarget),
+  }
+}
+
 export interface SpotInstanceRequestCreditSpecification {
   readonly cpuCredits?: string;
 }
@@ -254,6 +281,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     this._volumeTags = config.volumeTags;
     this._vpcSecurityGroupIds = config.vpcSecurityGroupIds;
     this._waitForFulfillment = config.waitForFulfillment;
+    this._capacityReservationSpecification = config.capacityReservationSpecification;
     this._creditSpecification = config.creditSpecification;
     this._ebsBlockDevice = config.ebsBlockDevice;
     this._enclaveOptions = config.enclaveOptions;
@@ -930,6 +958,22 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._waitForFulfillment
   }
 
+  // capacity_reservation_specification - computed: false, optional: true, required: false
+  private _capacityReservationSpecification?: SpotInstanceRequestCapacityReservationSpecification[];
+  public get capacityReservationSpecification() {
+    return this.interpolationForAttribute('capacity_reservation_specification') as any;
+  }
+  public set capacityReservationSpecification(value: SpotInstanceRequestCapacityReservationSpecification[] ) {
+    this._capacityReservationSpecification = value;
+  }
+  public resetCapacityReservationSpecification() {
+    this._capacityReservationSpecification = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capacityReservationSpecificationInput() {
+    return this._capacityReservationSpecification
+  }
+
   // credit_specification - computed: false, optional: true, required: false
   private _creditSpecification?: SpotInstanceRequestCreditSpecification[];
   public get creditSpecification() {
@@ -1102,6 +1146,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       volume_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._volumeTags),
       vpc_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._vpcSecurityGroupIds),
       wait_for_fulfillment: cdktf.booleanToTerraform(this._waitForFulfillment),
+      capacity_reservation_specification: cdktf.listMapper(spotInstanceRequestCapacityReservationSpecificationToTerraform)(this._capacityReservationSpecification),
       credit_specification: cdktf.listMapper(spotInstanceRequestCreditSpecificationToTerraform)(this._creditSpecification),
       ebs_block_device: cdktf.listMapper(spotInstanceRequestEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
       enclave_options: cdktf.listMapper(spotInstanceRequestEnclaveOptionsToTerraform)(this._enclaveOptions),

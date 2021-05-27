@@ -9,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface ServicecatalogPortfolioConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly name: string;
-  readonly providerName?: string;
+  readonly providerName: string;
   readonly tags?: { [key: string]: string };
   readonly tagsAll?: { [key: string]: string };
   /** timeouts block */
@@ -106,16 +106,13 @@ export class ServicecatalogPortfolio extends cdktf.TerraformResource {
     return this._name
   }
 
-  // provider_name - computed: false, optional: true, required: false
-  private _providerName?: string;
+  // provider_name - computed: false, optional: false, required: true
+  private _providerName: string;
   public get providerName() {
     return this.getStringAttribute('provider_name');
   }
-  public set providerName(value: string ) {
+  public set providerName(value: string) {
     this._providerName = value;
-  }
-  public resetProviderName() {
-    this._providerName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get providerNameInput() {
