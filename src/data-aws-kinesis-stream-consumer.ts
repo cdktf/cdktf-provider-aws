@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_kinesis_stream_consumer.html
+// https://www.terraform.io/docs/providers/aws/d/kinesis_stream_consumer.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsKinesisStreamConsumerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kinesis_stream_consumer.html#name DataAwsKinesisStreamConsumer#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kinesis_stream_consumer.html#stream_arn DataAwsKinesisStreamConsumer#stream_arn}
+  */
   readonly streamArn: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kinesis_stream_consumer.html aws_kinesis_stream_consumer}
+*/
 export class DataAwsKinesisStreamConsumer extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kinesis_stream_consumer.html aws_kinesis_stream_consumer} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsKinesisStreamConsumerConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsKinesisStreamConsumerConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_kinesis_stream_consumer',

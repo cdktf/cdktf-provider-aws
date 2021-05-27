@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface IamGroupPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy_attachment.html#group IamGroupPolicyAttachment#group}
+  */
   readonly group: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy_attachment.html#policy_arn IamGroupPolicyAttachment#policy_arn}
+  */
   readonly policyArn: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy_attachment.html aws_iam_group_policy_attachment}
+*/
 export class IamGroupPolicyAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_group_policy_attachment.html aws_iam_group_policy_attachment} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options IamGroupPolicyAttachmentConfig
+  */
   public constructor(scope: Construct, id: string, config: IamGroupPolicyAttachmentConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_iam_group_policy_attachment',

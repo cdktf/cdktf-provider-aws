@@ -7,21 +7,44 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ElasticacheSubnetGroupConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group.html#description ElasticacheSubnetGroup#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group.html#name ElasticacheSubnetGroup#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group.html#subnet_ids ElasticacheSubnetGroup#subnet_ids}
+  */
   readonly subnetIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group.html#tags ElasticacheSubnetGroup#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group.html#tags_all ElasticacheSubnetGroup#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group.html aws_elasticache_subnet_group}
+*/
 export class ElasticacheSubnetGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group.html aws_elasticache_subnet_group} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ElasticacheSubnetGroupConfig
+  */
   public constructor(scope: Construct, id: string, config: ElasticacheSubnetGroupConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_elasticache_subnet_group',

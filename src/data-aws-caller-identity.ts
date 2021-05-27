@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_caller_identity.html
+// https://www.terraform.io/docs/providers/aws/d/caller_identity.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -9,14 +9,22 @@ import * as cdktf from 'cdktf';
 export interface DataAwsCallerIdentityConfig extends cdktf.TerraformMetaArguments {
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/caller_identity.html aws_caller_identity}
+*/
 export class DataAwsCallerIdentity extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/caller_identity.html aws_caller_identity} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsCallerIdentityConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsCallerIdentityConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_caller_identity',

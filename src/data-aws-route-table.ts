@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_route_table.html
+// https://www.terraform.io/docs/providers/aws/d/route_table.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,12 +7,31 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsRouteTableConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table.html#gateway_id DataAwsRouteTable#gateway_id}
+  */
   readonly gatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table.html#route_table_id DataAwsRouteTable#route_table_id}
+  */
   readonly routeTableId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table.html#subnet_id DataAwsRouteTable#subnet_id}
+  */
   readonly subnetId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table.html#tags DataAwsRouteTable#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table.html#vpc_id DataAwsRouteTable#vpc_id}
+  */
   readonly vpcId?: string;
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table.html#filter DataAwsRouteTable#filter}
+  */
   readonly filter?: DataAwsRouteTableFilter[];
 }
 export class DataAwsRouteTableAssociations extends cdktf.ComplexComputedList {
@@ -110,7 +129,13 @@ export class DataAwsRouteTableRoutes extends cdktf.ComplexComputedList {
   }
 }
 export interface DataAwsRouteTableFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table.html#name DataAwsRouteTable#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_table.html#values DataAwsRouteTable#values}
+  */
   readonly values: string[];
 }
 
@@ -123,14 +148,22 @@ function dataAwsRouteTableFilterToTerraform(struct?: DataAwsRouteTableFilter): a
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/route_table.html aws_route_table}
+*/
 export class DataAwsRouteTable extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/route_table.html aws_route_table} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsRouteTableConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsRouteTableConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_route_table',

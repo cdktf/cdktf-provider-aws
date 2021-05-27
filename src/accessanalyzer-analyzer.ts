@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AccessanalyzerAnalyzerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html#analyzer_name AccessanalyzerAnalyzer#analyzer_name}
+  */
   readonly analyzerName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html#tags AccessanalyzerAnalyzer#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html#tags_all AccessanalyzerAnalyzer#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html#type AccessanalyzerAnalyzer#type}
+  */
   readonly type?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html aws_accessanalyzer_analyzer}
+*/
 export class AccessanalyzerAnalyzer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/accessanalyzer_analyzer.html aws_accessanalyzer_analyzer} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AccessanalyzerAnalyzerConfig
+  */
   public constructor(scope: Construct, id: string, config: AccessanalyzerAnalyzerConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_accessanalyzer_analyzer',

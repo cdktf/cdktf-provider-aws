@@ -9,14 +9,22 @@ import * as cdktf from 'cdktf';
 export interface SecurityhubAccountConfig extends cdktf.TerraformMetaArguments {
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account.html aws_securityhub_account}
+*/
 export class SecurityhubAccount extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account.html aws_securityhub_account} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SecurityhubAccountConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: SecurityhubAccountConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_securityhub_account',

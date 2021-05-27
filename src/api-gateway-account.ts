@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ApiGatewayAccountConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_account.html#cloudwatch_role_arn ApiGatewayAccount#cloudwatch_role_arn}
+  */
   readonly cloudwatchRoleArn?: string;
 }
 export class ApiGatewayAccountThrottleSettings extends cdktf.ComplexComputedList {
@@ -22,14 +25,22 @@ export class ApiGatewayAccountThrottleSettings extends cdktf.ComplexComputedList
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_account.html aws_api_gateway_account}
+*/
 export class ApiGatewayAccount extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_account.html aws_api_gateway_account} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ApiGatewayAccountConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: ApiGatewayAccountConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_account',

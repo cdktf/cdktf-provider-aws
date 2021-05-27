@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal.html#allowed_prefixes DxGatewayAssociationProposal#allowed_prefixes}
+  */
   readonly allowedPrefixes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal.html#associated_gateway_id DxGatewayAssociationProposal#associated_gateway_id}
+  */
   readonly associatedGatewayId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal.html#dx_gateway_id DxGatewayAssociationProposal#dx_gateway_id}
+  */
   readonly dxGatewayId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal.html#dx_gateway_owner_account_id DxGatewayAssociationProposal#dx_gateway_owner_account_id}
+  */
   readonly dxGatewayOwnerAccountId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal.html aws_dx_gateway_association_proposal}
+*/
 export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dx_gateway_association_proposal.html aws_dx_gateway_association_proposal} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DxGatewayAssociationProposalConfig
+  */
   public constructor(scope: Construct, id: string, config: DxGatewayAssociationProposalConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_dx_gateway_association_proposal',

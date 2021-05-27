@@ -7,12 +7,31 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SignerSigningProfileConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html#name SignerSigningProfile#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html#name_prefix SignerSigningProfile#name_prefix}
+  */
   readonly namePrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html#platform_id SignerSigningProfile#platform_id}
+  */
   readonly platformId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html#tags SignerSigningProfile#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html#tags_all SignerSigningProfile#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** signature_validity_period block */
+  /**
+  * signature_validity_period block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html#signature_validity_period SignerSigningProfile#signature_validity_period}
+  */
   readonly signatureValidityPeriod?: SignerSigningProfileSignatureValidityPeriod[];
 }
 export class SignerSigningProfileRevocationRecord extends cdktf.ComplexComputedList {
@@ -33,7 +52,13 @@ export class SignerSigningProfileRevocationRecord extends cdktf.ComplexComputedL
   }
 }
 export interface SignerSigningProfileSignatureValidityPeriod {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html#type SignerSigningProfile#type}
+  */
   readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html#value SignerSigningProfile#value}
+  */
   readonly value: number;
 }
 
@@ -46,14 +71,22 @@ function signerSigningProfileSignatureValidityPeriodToTerraform(struct?: SignerS
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html aws_signer_signing_profile}
+*/
 export class SignerSigningProfile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_profile.html aws_signer_signing_profile} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SignerSigningProfileConfig
+  */
   public constructor(scope: Construct, id: string, config: SignerSigningProfileConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_signer_signing_profile',

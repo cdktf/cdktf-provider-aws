@@ -7,21 +7,61 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DxHostedPrivateVirtualInterfaceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#address_family DxHostedPrivateVirtualInterface#address_family}
+  */
   readonly addressFamily: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#amazon_address DxHostedPrivateVirtualInterface#amazon_address}
+  */
   readonly amazonAddress?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#bgp_asn DxHostedPrivateVirtualInterface#bgp_asn}
+  */
   readonly bgpAsn: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#bgp_auth_key DxHostedPrivateVirtualInterface#bgp_auth_key}
+  */
   readonly bgpAuthKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#connection_id DxHostedPrivateVirtualInterface#connection_id}
+  */
   readonly connectionId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#customer_address DxHostedPrivateVirtualInterface#customer_address}
+  */
   readonly customerAddress?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#mtu DxHostedPrivateVirtualInterface#mtu}
+  */
   readonly mtu?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#name DxHostedPrivateVirtualInterface#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#owner_account_id DxHostedPrivateVirtualInterface#owner_account_id}
+  */
   readonly ownerAccountId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#vlan DxHostedPrivateVirtualInterface#vlan}
+  */
   readonly vlan: number;
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#timeouts DxHostedPrivateVirtualInterface#timeouts}
+  */
   readonly timeouts?: DxHostedPrivateVirtualInterfaceTimeouts;
 }
 export interface DxHostedPrivateVirtualInterfaceTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#create DxHostedPrivateVirtualInterface#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html#delete DxHostedPrivateVirtualInterface#delete}
+  */
   readonly delete?: string;
 }
 
@@ -34,14 +74,22 @@ function dxHostedPrivateVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedPri
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html aws_dx_hosted_private_virtual_interface}
+*/
 export class DxHostedPrivateVirtualInterface extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_private_virtual_interface.html aws_dx_hosted_private_virtual_interface} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DxHostedPrivateVirtualInterfaceConfig
+  */
   public constructor(scope: Construct, id: string, config: DxHostedPrivateVirtualInterfaceConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_dx_hosted_private_virtual_interface',

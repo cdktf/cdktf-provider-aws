@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface LightsailDomainConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain.html#domain_name LightsailDomain#domain_name}
+  */
   readonly domainName: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain.html aws_lightsail_domain}
+*/
 export class LightsailDomain extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain.html aws_lightsail_domain} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options LightsailDomainConfig
+  */
   public constructor(scope: Construct, id: string, config: LightsailDomainConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_lightsail_domain',

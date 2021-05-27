@@ -7,11 +7,21 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface S3BucketOwnershipControlsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html#bucket S3BucketOwnershipControls#bucket}
+  */
   readonly bucket: string;
-  /** rule block */
+  /**
+  * rule block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html#rule S3BucketOwnershipControls#rule}
+  */
   readonly rule: S3BucketOwnershipControlsRule[];
 }
 export interface S3BucketOwnershipControlsRule {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html#object_ownership S3BucketOwnershipControls#object_ownership}
+  */
   readonly objectOwnership: string;
 }
 
@@ -23,14 +33,22 @@ function s3BucketOwnershipControlsRuleToTerraform(struct?: S3BucketOwnershipCont
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html aws_s3_bucket_ownership_controls}
+*/
 export class S3BucketOwnershipControls extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_ownership_controls.html aws_s3_bucket_ownership_controls} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options S3BucketOwnershipControlsConfig
+  */
   public constructor(scope: Construct, id: string, config: S3BucketOwnershipControlsConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_s3_bucket_ownership_controls',

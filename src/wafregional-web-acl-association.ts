@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface WafregionalWebAclAssociationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl_association.html#resource_arn WafregionalWebAclAssociation#resource_arn}
+  */
   readonly resourceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl_association.html#web_acl_id WafregionalWebAclAssociation#web_acl_id}
+  */
   readonly webAclId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl_association.html aws_wafregional_web_acl_association}
+*/
 export class WafregionalWebAclAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafregional_web_acl_association.html aws_wafregional_web_acl_association} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options WafregionalWebAclAssociationConfig
+  */
   public constructor(scope: Construct, id: string, config: WafregionalWebAclAssociationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_wafregional_web_acl_association',

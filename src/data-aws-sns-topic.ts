@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_sns_topic.html
+// https://www.terraform.io/docs/providers/aws/d/sns_topic.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsSnsTopicConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/sns_topic.html#name DataAwsSnsTopic#name}
+  */
   readonly name: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/sns_topic.html aws_sns_topic}
+*/
 export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/sns_topic.html aws_sns_topic} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsSnsTopicConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsSnsTopicConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_sns_topic',

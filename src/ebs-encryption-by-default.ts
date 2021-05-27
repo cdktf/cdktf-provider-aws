@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EbsEncryptionByDefaultConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_encryption_by_default.html#enabled EbsEncryptionByDefault#enabled}
+  */
   readonly enabled?: boolean;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ebs_encryption_by_default.html aws_ebs_encryption_by_default}
+*/
 export class EbsEncryptionByDefault extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ebs_encryption_by_default.html aws_ebs_encryption_by_default} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options EbsEncryptionByDefaultConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: EbsEncryptionByDefaultConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ebs_encryption_by_default',

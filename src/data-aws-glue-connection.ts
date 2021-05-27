@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_glue_connection.html
+// https://www.terraform.io/docs/providers/aws/d/glue_connection.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsGlueConnectionConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_connection.html#id DataAwsGlueConnection#id}
+  */
   readonly id: string;
 }
 export class DataAwsGlueConnectionPhysicalConnectionRequirements extends cdktf.ComplexComputedList {
@@ -27,14 +30,22 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirements extends cdktf.C
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/glue_connection.html aws_glue_connection}
+*/
 export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/glue_connection.html aws_glue_connection} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsGlueConnectionConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsGlueConnectionConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_glue_connection',

@@ -7,8 +7,17 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OrganizationsOrganizationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization.html#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}
+  */
   readonly awsServiceAccessPrincipals?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization.html#enabled_policy_types OrganizationsOrganization#enabled_policy_types}
+  */
   readonly enabledPolicyTypes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization.html#feature_set OrganizationsOrganization#feature_set}
+  */
   readonly featureSet?: string;
 }
 export class OrganizationsOrganizationAccounts extends cdktf.ComplexComputedList {
@@ -100,14 +109,22 @@ export class OrganizationsOrganizationRoots extends cdktf.ComplexComputedList {
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization.html aws_organizations_organization}
+*/
 export class OrganizationsOrganization extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization.html aws_organizations_organization} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OrganizationsOrganizationConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: OrganizationsOrganizationConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_organizations_organization',

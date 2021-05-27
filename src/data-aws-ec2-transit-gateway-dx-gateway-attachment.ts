@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_transit_gateway_dx_gateway_attachment.html
+// https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,14 +7,33 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2TransitGatewayDxGatewayAttachmentConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html#dx_gateway_id DataAwsEc2TransitGatewayDxGatewayAttachment#dx_gateway_id}
+  */
   readonly dxGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html#tags DataAwsEc2TransitGatewayDxGatewayAttachment#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html#transit_gateway_id DataAwsEc2TransitGatewayDxGatewayAttachment#transit_gateway_id}
+  */
   readonly transitGatewayId?: string;
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html#filter DataAwsEc2TransitGatewayDxGatewayAttachment#filter}
+  */
   readonly filter?: DataAwsEc2TransitGatewayDxGatewayAttachmentFilter[];
 }
 export interface DataAwsEc2TransitGatewayDxGatewayAttachmentFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html#name DataAwsEc2TransitGatewayDxGatewayAttachment#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html#values DataAwsEc2TransitGatewayDxGatewayAttachment#values}
+  */
   readonly values: string[];
 }
 
@@ -27,14 +46,22 @@ function dataAwsEc2TransitGatewayDxGatewayAttachmentFilterToTerraform(struct?: D
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html aws_ec2_transit_gateway_dx_gateway_attachment}
+*/
 export class DataAwsEc2TransitGatewayDxGatewayAttachment extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_dx_gateway_attachment.html aws_ec2_transit_gateway_dx_gateway_attachment} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEc2TransitGatewayDxGatewayAttachmentConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEc2TransitGatewayDxGatewayAttachmentConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_transit_gateway_dx_gateway_attachment',

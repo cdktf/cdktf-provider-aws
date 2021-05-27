@@ -7,22 +7,69 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DaxClusterConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#availability_zones DaxCluster#availability_zones}
+  */
   readonly availabilityZones?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#cluster_name DaxCluster#cluster_name}
+  */
   readonly clusterName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#description DaxCluster#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#iam_role_arn DaxCluster#iam_role_arn}
+  */
   readonly iamRoleArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#maintenance_window DaxCluster#maintenance_window}
+  */
   readonly maintenanceWindow?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#node_type DaxCluster#node_type}
+  */
   readonly nodeType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#notification_topic_arn DaxCluster#notification_topic_arn}
+  */
   readonly notificationTopicArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#parameter_group_name DaxCluster#parameter_group_name}
+  */
   readonly parameterGroupName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#replication_factor DaxCluster#replication_factor}
+  */
   readonly replicationFactor: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#security_group_ids DaxCluster#security_group_ids}
+  */
   readonly securityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#subnet_group_name DaxCluster#subnet_group_name}
+  */
   readonly subnetGroupName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#tags DaxCluster#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#tags_all DaxCluster#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** server_side_encryption block */
+  /**
+  * server_side_encryption block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#server_side_encryption DaxCluster#server_side_encryption}
+  */
   readonly serverSideEncryption?: DaxClusterServerSideEncryption[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#timeouts DaxCluster#timeouts}
+  */
   readonly timeouts?: DaxClusterTimeouts;
 }
 export class DaxClusterNodes extends cdktf.ComplexComputedList {
@@ -48,6 +95,9 @@ export class DaxClusterNodes extends cdktf.ComplexComputedList {
   }
 }
 export interface DaxClusterServerSideEncryption {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#enabled DaxCluster#enabled}
+  */
   readonly enabled?: boolean;
 }
 
@@ -59,8 +109,17 @@ function daxClusterServerSideEncryptionToTerraform(struct?: DaxClusterServerSide
 }
 
 export interface DaxClusterTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#create DaxCluster#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#delete DaxCluster#delete}
+  */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html#update DaxCluster#update}
+  */
   readonly update?: string;
 }
 
@@ -74,14 +133,22 @@ function daxClusterTimeoutsToTerraform(struct?: DaxClusterTimeouts): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html aws_dax_cluster}
+*/
 export class DaxCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dax_cluster.html aws_dax_cluster} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DaxClusterConfig
+  */
   public constructor(scope: Construct, id: string, config: DaxClusterConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_dax_cluster',

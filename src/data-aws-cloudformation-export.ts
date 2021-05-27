@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_cloudformation_export.html
+// https://www.terraform.io/docs/providers/aws/d/cloudformation_export.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsCloudformationExportConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export.html#name DataAwsCloudformationExport#name}
+  */
   readonly name: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export.html aws_cloudformation_export}
+*/
 export class DataAwsCloudformationExport extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudformation_export.html aws_cloudformation_export} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsCloudformationExportConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsCloudformationExportConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_cloudformation_export',

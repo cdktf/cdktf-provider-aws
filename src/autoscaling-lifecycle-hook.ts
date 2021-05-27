@@ -7,24 +7,56 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AutoscalingLifecycleHookConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html#autoscaling_group_name AutoscalingLifecycleHook#autoscaling_group_name}
+  */
   readonly autoscalingGroupName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html#default_result AutoscalingLifecycleHook#default_result}
+  */
   readonly defaultResult?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html#heartbeat_timeout AutoscalingLifecycleHook#heartbeat_timeout}
+  */
   readonly heartbeatTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html#lifecycle_transition AutoscalingLifecycleHook#lifecycle_transition}
+  */
   readonly lifecycleTransition: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html#name AutoscalingLifecycleHook#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html#notification_metadata AutoscalingLifecycleHook#notification_metadata}
+  */
   readonly notificationMetadata?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html#notification_target_arn AutoscalingLifecycleHook#notification_target_arn}
+  */
   readonly notificationTargetArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html#role_arn AutoscalingLifecycleHook#role_arn}
+  */
   readonly roleArn?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html aws_autoscaling_lifecycle_hook}
+*/
 export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_lifecycle_hook.html aws_autoscaling_lifecycle_hook} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AutoscalingLifecycleHookConfig
+  */
   public constructor(scope: Construct, id: string, config: AutoscalingLifecycleHookConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_autoscaling_lifecycle_hook',

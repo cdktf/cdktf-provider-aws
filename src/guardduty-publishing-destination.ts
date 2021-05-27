@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface GuarddutyPublishingDestinationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_publishing_destination.html#destination_arn GuarddutyPublishingDestination#destination_arn}
+  */
   readonly destinationArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_publishing_destination.html#destination_type GuarddutyPublishingDestination#destination_type}
+  */
   readonly destinationType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_publishing_destination.html#detector_id GuarddutyPublishingDestination#detector_id}
+  */
   readonly detectorId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_publishing_destination.html#kms_key_arn GuarddutyPublishingDestination#kms_key_arn}
+  */
   readonly kmsKeyArn: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_publishing_destination.html aws_guardduty_publishing_destination}
+*/
 export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/guardduty_publishing_destination.html aws_guardduty_publishing_destination} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GuarddutyPublishingDestinationConfig
+  */
   public constructor(scope: Construct, id: string, config: GuarddutyPublishingDestinationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_guardduty_publishing_destination',

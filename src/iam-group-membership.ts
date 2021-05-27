@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface IamGroupMembershipConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_membership.html#group IamGroupMembership#group}
+  */
   readonly group: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_membership.html#name IamGroupMembership#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_group_membership.html#users IamGroupMembership#users}
+  */
   readonly users: string[];
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_group_membership.html aws_iam_group_membership}
+*/
 export class IamGroupMembership extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_group_membership.html aws_iam_group_membership} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options IamGroupMembershipConfig
+  */
   public constructor(scope: Construct, id: string, config: IamGroupMembershipConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_iam_group_membership',

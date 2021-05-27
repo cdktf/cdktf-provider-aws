@@ -7,22 +7,61 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#delete_all_policy_resources FmsPolicy#delete_all_policy_resources}
+  */
   readonly deleteAllPolicyResources?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#exclude_resource_tags FmsPolicy#exclude_resource_tags}
+  */
   readonly excludeResourceTags: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#name FmsPolicy#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#remediation_enabled FmsPolicy#remediation_enabled}
+  */
   readonly remediationEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#resource_tags FmsPolicy#resource_tags}
+  */
   readonly resourceTags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#resource_type FmsPolicy#resource_type}
+  */
   readonly resourceType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#resource_type_list FmsPolicy#resource_type_list}
+  */
   readonly resourceTypeList?: string[];
-  /** exclude_map block */
+  /**
+  * exclude_map block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#exclude_map FmsPolicy#exclude_map}
+  */
   readonly excludeMap?: FmsPolicyExcludeMap[];
-  /** include_map block */
+  /**
+  * include_map block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#include_map FmsPolicy#include_map}
+  */
   readonly includeMap?: FmsPolicyIncludeMap[];
-  /** security_service_policy_data block */
+  /**
+  * security_service_policy_data block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#security_service_policy_data FmsPolicy#security_service_policy_data}
+  */
   readonly securityServicePolicyData: FmsPolicySecurityServicePolicyData[];
 }
 export interface FmsPolicyExcludeMap {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#account FmsPolicy#account}
+  */
   readonly account?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#orgunit FmsPolicy#orgunit}
+  */
   readonly orgunit?: string[];
 }
 
@@ -35,7 +74,13 @@ function fmsPolicyExcludeMapToTerraform(struct?: FmsPolicyExcludeMap): any {
 }
 
 export interface FmsPolicyIncludeMap {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#account FmsPolicy#account}
+  */
   readonly account?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#orgunit FmsPolicy#orgunit}
+  */
   readonly orgunit?: string[];
 }
 
@@ -48,7 +93,13 @@ function fmsPolicyIncludeMapToTerraform(struct?: FmsPolicyIncludeMap): any {
 }
 
 export interface FmsPolicySecurityServicePolicyData {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#managed_service_data FmsPolicy#managed_service_data}
+  */
   readonly managedServiceData?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#type FmsPolicy#type}
+  */
   readonly type: string;
 }
 
@@ -61,14 +112,22 @@ function fmsPolicySecurityServicePolicyDataToTerraform(struct?: FmsPolicySecurit
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html aws_fms_policy}
+*/
 export class FmsPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html aws_fms_policy} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options FmsPolicyConfig
+  */
   public constructor(scope: Construct, id: string, config: FmsPolicyConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_fms_policy',

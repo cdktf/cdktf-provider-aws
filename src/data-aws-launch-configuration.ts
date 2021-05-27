@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_launch_configuration.html
+// https://www.terraform.io/docs/providers/aws/d/launch_configuration.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsLaunchConfigurationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration.html#name DataAwsLaunchConfiguration#name}
+  */
   readonly name: string;
 }
 export class DataAwsLaunchConfigurationEbsBlockDevice extends cdktf.ComplexComputedList {
@@ -108,14 +111,22 @@ export class DataAwsLaunchConfigurationRootBlockDevice extends cdktf.ComplexComp
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration.html aws_launch_configuration}
+*/
 export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/launch_configuration.html aws_launch_configuration} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsLaunchConfigurationConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsLaunchConfigurationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_launch_configuration',

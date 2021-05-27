@@ -7,17 +7,43 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ConfigConfigurationAggregatorConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#name ConfigConfigurationAggregator#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#tags ConfigConfigurationAggregator#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#tags_all ConfigConfigurationAggregator#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** account_aggregation_source block */
+  /**
+  * account_aggregation_source block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#account_aggregation_source ConfigConfigurationAggregator#account_aggregation_source}
+  */
   readonly accountAggregationSource?: ConfigConfigurationAggregatorAccountAggregationSource[];
-  /** organization_aggregation_source block */
+  /**
+  * organization_aggregation_source block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#organization_aggregation_source ConfigConfigurationAggregator#organization_aggregation_source}
+  */
   readonly organizationAggregationSource?: ConfigConfigurationAggregatorOrganizationAggregationSource[];
 }
 export interface ConfigConfigurationAggregatorAccountAggregationSource {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#account_ids ConfigConfigurationAggregator#account_ids}
+  */
   readonly accountIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#all_regions ConfigConfigurationAggregator#all_regions}
+  */
   readonly allRegions?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#regions ConfigConfigurationAggregator#regions}
+  */
   readonly regions?: string[];
 }
 
@@ -31,8 +57,17 @@ function configConfigurationAggregatorAccountAggregationSourceToTerraform(struct
 }
 
 export interface ConfigConfigurationAggregatorOrganizationAggregationSource {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#all_regions ConfigConfigurationAggregator#all_regions}
+  */
   readonly allRegions?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#regions ConfigConfigurationAggregator#regions}
+  */
   readonly regions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html#role_arn ConfigConfigurationAggregator#role_arn}
+  */
   readonly roleArn: string;
 }
 
@@ -46,14 +81,22 @@ function configConfigurationAggregatorOrganizationAggregationSourceToTerraform(s
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html aws_config_configuration_aggregator}
+*/
 export class ConfigConfigurationAggregator extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_aggregator.html aws_config_configuration_aggregator} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ConfigConfigurationAggregatorConfig
+  */
   public constructor(scope: Construct, id: string, config: ConfigConfigurationAggregatorConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_config_configuration_aggregator',

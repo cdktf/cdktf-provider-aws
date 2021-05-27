@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_api_gateway_resource.html
+// https://www.terraform.io/docs/providers/aws/d/api_gateway_resource.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsApiGatewayResourceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_resource.html#path DataAwsApiGatewayResource#path}
+  */
   readonly path: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_resource.html#rest_api_id DataAwsApiGatewayResource#rest_api_id}
+  */
   readonly restApiId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_resource.html aws_api_gateway_resource}
+*/
 export class DataAwsApiGatewayResource extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_resource.html aws_api_gateway_resource} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsApiGatewayResourceConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsApiGatewayResourceConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_resource',

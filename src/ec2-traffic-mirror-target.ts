@@ -7,21 +7,44 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Ec2TrafficMirrorTargetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target.html#description Ec2TrafficMirrorTarget#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target.html#network_interface_id Ec2TrafficMirrorTarget#network_interface_id}
+  */
   readonly networkInterfaceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target.html#network_load_balancer_arn Ec2TrafficMirrorTarget#network_load_balancer_arn}
+  */
   readonly networkLoadBalancerArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target.html#tags Ec2TrafficMirrorTarget#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target.html#tags_all Ec2TrafficMirrorTarget#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target.html aws_ec2_traffic_mirror_target}
+*/
 export class Ec2TrafficMirrorTarget extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_target.html aws_ec2_traffic_mirror_target} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Ec2TrafficMirrorTargetConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: Ec2TrafficMirrorTargetConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_traffic_mirror_target',

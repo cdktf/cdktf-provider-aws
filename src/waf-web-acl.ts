@@ -7,18 +7,45 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface WafWebAclConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#metric_name WafWebAcl#metric_name}
+  */
   readonly metricName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#name WafWebAcl#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#tags WafWebAcl#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#tags_all WafWebAcl#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** default_action block */
+  /**
+  * default_action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#default_action WafWebAcl#default_action}
+  */
   readonly defaultAction: WafWebAclDefaultAction[];
-  /** logging_configuration block */
+  /**
+  * logging_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#logging_configuration WafWebAcl#logging_configuration}
+  */
   readonly loggingConfiguration?: WafWebAclLoggingConfiguration[];
-  /** rules block */
+  /**
+  * rules block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#rules WafWebAcl#rules}
+  */
   readonly rules?: WafWebAclRules[];
 }
 export interface WafWebAclDefaultAction {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#type WafWebAcl#type}
+  */
   readonly type: string;
 }
 
@@ -30,7 +57,13 @@ function wafWebAclDefaultActionToTerraform(struct?: WafWebAclDefaultAction): any
 }
 
 export interface WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#data WafWebAcl#data}
+  */
   readonly data?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#type WafWebAcl#type}
+  */
   readonly type: string;
 }
 
@@ -43,7 +76,11 @@ function wafWebAclLoggingConfigurationRedactedFieldsFieldToMatchToTerraform(stru
 }
 
 export interface WafWebAclLoggingConfigurationRedactedFields {
-  /** field_to_match block */
+  /**
+  * field_to_match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#field_to_match WafWebAcl#field_to_match}
+  */
   readonly fieldToMatch: WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch[];
 }
 
@@ -55,8 +92,15 @@ function wafWebAclLoggingConfigurationRedactedFieldsToTerraform(struct?: WafWebA
 }
 
 export interface WafWebAclLoggingConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#log_destination WafWebAcl#log_destination}
+  */
   readonly logDestination: string;
-  /** redacted_fields block */
+  /**
+  * redacted_fields block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#redacted_fields WafWebAcl#redacted_fields}
+  */
   readonly redactedFields?: WafWebAclLoggingConfigurationRedactedFields[];
 }
 
@@ -69,6 +113,9 @@ function wafWebAclLoggingConfigurationToTerraform(struct?: WafWebAclLoggingConfi
 }
 
 export interface WafWebAclRulesAction {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#type WafWebAcl#type}
+  */
   readonly type: string;
 }
 
@@ -80,6 +127,9 @@ function wafWebAclRulesActionToTerraform(struct?: WafWebAclRulesAction): any {
 }
 
 export interface WafWebAclRulesOverrideAction {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#type WafWebAcl#type}
+  */
   readonly type: string;
 }
 
@@ -91,12 +141,29 @@ function wafWebAclRulesOverrideActionToTerraform(struct?: WafWebAclRulesOverride
 }
 
 export interface WafWebAclRules {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#priority WafWebAcl#priority}
+  */
   readonly priority: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#rule_id WafWebAcl#rule_id}
+  */
   readonly ruleId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#type WafWebAcl#type}
+  */
   readonly type?: string;
-  /** action block */
+  /**
+  * action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#action WafWebAcl#action}
+  */
   readonly action?: WafWebAclRulesAction[];
-  /** override_action block */
+  /**
+  * override_action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html#override_action WafWebAcl#override_action}
+  */
   readonly overrideAction?: WafWebAclRulesOverrideAction[];
 }
 
@@ -112,14 +179,22 @@ function wafWebAclRulesToTerraform(struct?: WafWebAclRules): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html aws_waf_web_acl}
+*/
 export class WafWebAcl extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html aws_waf_web_acl} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options WafWebAclConfig
+  */
   public constructor(scope: Construct, id: string, config: WafWebAclConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_waf_web_acl',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_kms_public_key.html
+// https://www.terraform.io/docs/providers/aws/d/kms_public_key.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsKmsPublicKeyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_public_key.html#grant_tokens DataAwsKmsPublicKey#grant_tokens}
+  */
   readonly grantTokens?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_public_key.html#key_id DataAwsKmsPublicKey#key_id}
+  */
   readonly keyId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_public_key.html aws_kms_public_key}
+*/
 export class DataAwsKmsPublicKey extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_public_key.html aws_kms_public_key} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsKmsPublicKeyConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsKmsPublicKeyConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_kms_public_key',

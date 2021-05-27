@@ -7,30 +7,87 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#cluster_name MskCluster#cluster_name}
+  */
   readonly clusterName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enhanced_monitoring MskCluster#enhanced_monitoring}
+  */
   readonly enhancedMonitoring?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#kafka_version MskCluster#kafka_version}
+  */
   readonly kafkaVersion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#number_of_broker_nodes MskCluster#number_of_broker_nodes}
+  */
   readonly numberOfBrokerNodes: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#tags MskCluster#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#tags_all MskCluster#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** broker_node_group_info block */
+  /**
+  * broker_node_group_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#broker_node_group_info MskCluster#broker_node_group_info}
+  */
   readonly brokerNodeGroupInfo: MskClusterBrokerNodeGroupInfo[];
-  /** client_authentication block */
+  /**
+  * client_authentication block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#client_authentication MskCluster#client_authentication}
+  */
   readonly clientAuthentication?: MskClusterClientAuthentication[];
-  /** configuration_info block */
+  /**
+  * configuration_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#configuration_info MskCluster#configuration_info}
+  */
   readonly configurationInfo?: MskClusterConfigurationInfo[];
-  /** encryption_info block */
+  /**
+  * encryption_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#encryption_info MskCluster#encryption_info}
+  */
   readonly encryptionInfo?: MskClusterEncryptionInfo[];
-  /** logging_info block */
+  /**
+  * logging_info block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#logging_info MskCluster#logging_info}
+  */
   readonly loggingInfo?: MskClusterLoggingInfo[];
-  /** open_monitoring block */
+  /**
+  * open_monitoring block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#open_monitoring MskCluster#open_monitoring}
+  */
   readonly openMonitoring?: MskClusterOpenMonitoring[];
 }
 export interface MskClusterBrokerNodeGroupInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#az_distribution MskCluster#az_distribution}
+  */
   readonly azDistribution?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#client_subnets MskCluster#client_subnets}
+  */
   readonly clientSubnets: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#ebs_volume_size MskCluster#ebs_volume_size}
+  */
   readonly ebsVolumeSize: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#instance_type MskCluster#instance_type}
+  */
   readonly instanceType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#security_groups MskCluster#security_groups}
+  */
   readonly securityGroups: string[];
 }
 
@@ -46,6 +103,9 @@ function mskClusterBrokerNodeGroupInfoToTerraform(struct?: MskClusterBrokerNodeG
 }
 
 export interface MskClusterClientAuthenticationSasl {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#scram MskCluster#scram}
+  */
   readonly scram?: boolean;
 }
 
@@ -57,6 +117,9 @@ function mskClusterClientAuthenticationSaslToTerraform(struct?: MskClusterClient
 }
 
 export interface MskClusterClientAuthenticationTls {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#certificate_authority_arns MskCluster#certificate_authority_arns}
+  */
   readonly certificateAuthorityArns?: string[];
 }
 
@@ -68,9 +131,17 @@ function mskClusterClientAuthenticationTlsToTerraform(struct?: MskClusterClientA
 }
 
 export interface MskClusterClientAuthentication {
-  /** sasl block */
+  /**
+  * sasl block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#sasl MskCluster#sasl}
+  */
   readonly sasl?: MskClusterClientAuthenticationSasl[];
-  /** tls block */
+  /**
+  * tls block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#tls MskCluster#tls}
+  */
   readonly tls?: MskClusterClientAuthenticationTls[];
 }
 
@@ -83,7 +154,13 @@ function mskClusterClientAuthenticationToTerraform(struct?: MskClusterClientAuth
 }
 
 export interface MskClusterConfigurationInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#arn MskCluster#arn}
+  */
   readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#revision MskCluster#revision}
+  */
   readonly revision: number;
 }
 
@@ -96,7 +173,13 @@ function mskClusterConfigurationInfoToTerraform(struct?: MskClusterConfiguration
 }
 
 export interface MskClusterEncryptionInfoEncryptionInTransit {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#client_broker MskCluster#client_broker}
+  */
   readonly clientBroker?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#in_cluster MskCluster#in_cluster}
+  */
   readonly inCluster?: boolean;
 }
 
@@ -109,8 +192,15 @@ function mskClusterEncryptionInfoEncryptionInTransitToTerraform(struct?: MskClus
 }
 
 export interface MskClusterEncryptionInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#encryption_at_rest_kms_key_arn MskCluster#encryption_at_rest_kms_key_arn}
+  */
   readonly encryptionAtRestKmsKeyArn?: string;
-  /** encryption_in_transit block */
+  /**
+  * encryption_in_transit block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#encryption_in_transit MskCluster#encryption_in_transit}
+  */
   readonly encryptionInTransit?: MskClusterEncryptionInfoEncryptionInTransit[];
 }
 
@@ -123,7 +213,13 @@ function mskClusterEncryptionInfoToTerraform(struct?: MskClusterEncryptionInfo):
 }
 
 export interface MskClusterLoggingInfoBrokerLogsCloudwatchLogs {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
+  */
   readonly enabled: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#log_group MskCluster#log_group}
+  */
   readonly logGroup?: string;
 }
 
@@ -136,7 +232,13 @@ function mskClusterLoggingInfoBrokerLogsCloudwatchLogsToTerraform(struct?: MskCl
 }
 
 export interface MskClusterLoggingInfoBrokerLogsFirehose {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#delivery_stream MskCluster#delivery_stream}
+  */
   readonly deliveryStream?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
+  */
   readonly enabled: boolean;
 }
 
@@ -149,8 +251,17 @@ function mskClusterLoggingInfoBrokerLogsFirehoseToTerraform(struct?: MskClusterL
 }
 
 export interface MskClusterLoggingInfoBrokerLogsS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#bucket MskCluster#bucket}
+  */
   readonly bucket?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
+  */
   readonly enabled: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#prefix MskCluster#prefix}
+  */
   readonly prefix?: string;
 }
 
@@ -164,11 +275,23 @@ function mskClusterLoggingInfoBrokerLogsS3ToTerraform(struct?: MskClusterLogging
 }
 
 export interface MskClusterLoggingInfoBrokerLogs {
-  /** cloudwatch_logs block */
+  /**
+  * cloudwatch_logs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#cloudwatch_logs MskCluster#cloudwatch_logs}
+  */
   readonly cloudwatchLogs?: MskClusterLoggingInfoBrokerLogsCloudwatchLogs[];
-  /** firehose block */
+  /**
+  * firehose block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#firehose MskCluster#firehose}
+  */
   readonly firehose?: MskClusterLoggingInfoBrokerLogsFirehose[];
-  /** s3 block */
+  /**
+  * s3 block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#s3 MskCluster#s3}
+  */
   readonly s3?: MskClusterLoggingInfoBrokerLogsS3[];
 }
 
@@ -182,7 +305,11 @@ function mskClusterLoggingInfoBrokerLogsToTerraform(struct?: MskClusterLoggingIn
 }
 
 export interface MskClusterLoggingInfo {
-  /** broker_logs block */
+  /**
+  * broker_logs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#broker_logs MskCluster#broker_logs}
+  */
   readonly brokerLogs: MskClusterLoggingInfoBrokerLogs[];
 }
 
@@ -194,6 +321,9 @@ function mskClusterLoggingInfoToTerraform(struct?: MskClusterLoggingInfo): any {
 }
 
 export interface MskClusterOpenMonitoringPrometheusJmxExporter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled_in_broker MskCluster#enabled_in_broker}
+  */
   readonly enabledInBroker: boolean;
 }
 
@@ -205,6 +335,9 @@ function mskClusterOpenMonitoringPrometheusJmxExporterToTerraform(struct?: MskCl
 }
 
 export interface MskClusterOpenMonitoringPrometheusNodeExporter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled_in_broker MskCluster#enabled_in_broker}
+  */
   readonly enabledInBroker: boolean;
 }
 
@@ -216,9 +349,17 @@ function mskClusterOpenMonitoringPrometheusNodeExporterToTerraform(struct?: MskC
 }
 
 export interface MskClusterOpenMonitoringPrometheus {
-  /** jmx_exporter block */
+  /**
+  * jmx_exporter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#jmx_exporter MskCluster#jmx_exporter}
+  */
   readonly jmxExporter?: MskClusterOpenMonitoringPrometheusJmxExporter[];
-  /** node_exporter block */
+  /**
+  * node_exporter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#node_exporter MskCluster#node_exporter}
+  */
   readonly nodeExporter?: MskClusterOpenMonitoringPrometheusNodeExporter[];
 }
 
@@ -231,7 +372,11 @@ function mskClusterOpenMonitoringPrometheusToTerraform(struct?: MskClusterOpenMo
 }
 
 export interface MskClusterOpenMonitoring {
-  /** prometheus block */
+  /**
+  * prometheus block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#prometheus MskCluster#prometheus}
+  */
   readonly prometheus: MskClusterOpenMonitoringPrometheus[];
 }
 
@@ -243,14 +388,22 @@ function mskClusterOpenMonitoringToTerraform(struct?: MskClusterOpenMonitoring):
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html aws_msk_cluster}
+*/
 export class MskCluster extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html aws_msk_cluster} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options MskClusterConfig
+  */
   public constructor(scope: Construct, id: string, config: MskClusterConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_msk_cluster',

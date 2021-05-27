@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_vpc.html
+// https://www.terraform.io/docs/providers/aws/d/vpc.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,12 +7,31 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsVpcConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#cidr_block DataAwsVpc#cidr_block}
+  */
   readonly cidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#default DataAwsVpc#default}
+  */
   readonly default?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#dhcp_options_id DataAwsVpc#dhcp_options_id}
+  */
   readonly dhcpOptionsId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#state DataAwsVpc#state}
+  */
   readonly state?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#tags DataAwsVpc#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#filter DataAwsVpc#filter}
+  */
   readonly filter?: DataAwsVpcFilter[];
 }
 export class DataAwsVpcCidrBlockAssociations extends cdktf.ComplexComputedList {
@@ -33,7 +52,13 @@ export class DataAwsVpcCidrBlockAssociations extends cdktf.ComplexComputedList {
   }
 }
 export interface DataAwsVpcFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#name DataAwsVpc#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#values DataAwsVpc#values}
+  */
   readonly values: string[];
 }
 
@@ -46,14 +71,22 @@ function dataAwsVpcFilterToTerraform(struct?: DataAwsVpcFilter): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc.html aws_vpc}
+*/
 export class DataAwsVpc extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc.html aws_vpc} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsVpcConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsVpcConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_vpc',

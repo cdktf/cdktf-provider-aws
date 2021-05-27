@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface RedshiftSnapshotScheduleAssociationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule_association.html#cluster_identifier RedshiftSnapshotScheduleAssociation#cluster_identifier}
+  */
   readonly clusterIdentifier: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule_association.html#schedule_identifier RedshiftSnapshotScheduleAssociation#schedule_identifier}
+  */
   readonly scheduleIdentifier: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule_association.html aws_redshift_snapshot_schedule_association}
+*/
 export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule_association.html aws_redshift_snapshot_schedule_association} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options RedshiftSnapshotScheduleAssociationConfig
+  */
   public constructor(scope: Construct, id: string, config: RedshiftSnapshotScheduleAssociationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_redshift_snapshot_schedule_association',

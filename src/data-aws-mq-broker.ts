@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_mq_broker.html
+// https://www.terraform.io/docs/providers/aws/d/mq_broker.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,10 +7,23 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsMqBrokerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#broker_id DataAwsMqBroker#broker_id}
+  */
   readonly brokerId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#broker_name DataAwsMqBroker#broker_name}
+  */
   readonly brokerName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#tags DataAwsMqBroker#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** logs block */
+  /**
+  * logs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#logs DataAwsMqBroker#logs}
+  */
   readonly logs?: DataAwsMqBrokerLogs[];
 }
 export class DataAwsMqBrokerConfiguration extends cdktf.ComplexComputedList {
@@ -155,14 +168,22 @@ function dataAwsMqBrokerLogsToTerraform(struct?: DataAwsMqBrokerLogs): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html aws_mq_broker}
+*/
 export class DataAwsMqBroker extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html aws_mq_broker} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsMqBrokerConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsMqBrokerConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_mq_broker',

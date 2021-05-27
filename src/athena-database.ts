@@ -7,14 +7,33 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html#bucket AthenaDatabase#bucket}
+  */
   readonly bucket: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html#force_destroy AthenaDatabase#force_destroy}
+  */
   readonly forceDestroy?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html#name AthenaDatabase#name}
+  */
   readonly name: string;
-  /** encryption_configuration block */
+  /**
+  * encryption_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html#encryption_configuration AthenaDatabase#encryption_configuration}
+  */
   readonly encryptionConfiguration?: AthenaDatabaseEncryptionConfiguration[];
 }
 export interface AthenaDatabaseEncryptionConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html#encryption_option AthenaDatabase#encryption_option}
+  */
   readonly encryptionOption: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html#kms_key AthenaDatabase#kms_key}
+  */
   readonly kmsKey?: string;
 }
 
@@ -27,14 +46,22 @@ function athenaDatabaseEncryptionConfigurationToTerraform(struct?: AthenaDatabas
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html aws_athena_database}
+*/
 export class AthenaDatabase extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html aws_athena_database} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AthenaDatabaseConfig
+  */
   public constructor(scope: Construct, id: string, config: AthenaDatabaseConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_athena_database',

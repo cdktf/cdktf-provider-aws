@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_elasticache_replication_group.html
+// https://www.terraform.io/docs/providers/aws/d/elasticache_replication_group.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsElasticacheReplicationGroupConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_replication_group.html#replication_group_id DataAwsElasticacheReplicationGroup#replication_group_id}
+  */
   readonly replicationGroupId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/elasticache_replication_group.html aws_elasticache_replication_group}
+*/
 export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/elasticache_replication_group.html aws_elasticache_replication_group} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsElasticacheReplicationGroupConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsElasticacheReplicationGroupConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_elasticache_replication_group',

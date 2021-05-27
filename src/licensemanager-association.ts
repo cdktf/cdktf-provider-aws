@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface LicensemanagerAssociationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html#license_configuration_arn LicensemanagerAssociation#license_configuration_arn}
+  */
   readonly licenseConfigurationArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html#resource_arn LicensemanagerAssociation#resource_arn}
+  */
   readonly resourceArn: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html aws_licensemanager_association}
+*/
 export class LicensemanagerAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/licensemanager_association.html aws_licensemanager_association} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options LicensemanagerAssociationConfig
+  */
   public constructor(scope: Construct, id: string, config: LicensemanagerAssociationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_licensemanager_association',

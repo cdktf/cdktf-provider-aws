@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AppCookieStickinessPolicyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/app_cookie_stickiness_policy.html#cookie_name AppCookieStickinessPolicy#cookie_name}
+  */
   readonly cookieName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/app_cookie_stickiness_policy.html#lb_port AppCookieStickinessPolicy#lb_port}
+  */
   readonly lbPort: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/app_cookie_stickiness_policy.html#load_balancer AppCookieStickinessPolicy#load_balancer}
+  */
   readonly loadBalancer: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/app_cookie_stickiness_policy.html#name AppCookieStickinessPolicy#name}
+  */
   readonly name: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/app_cookie_stickiness_policy.html aws_app_cookie_stickiness_policy}
+*/
 export class AppCookieStickinessPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/app_cookie_stickiness_policy.html aws_app_cookie_stickiness_policy} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AppCookieStickinessPolicyConfig
+  */
   public constructor(scope: Construct, id: string, config: AppCookieStickinessPolicyConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_app_cookie_stickiness_policy',

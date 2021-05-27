@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_waf_ipset.html
+// https://www.terraform.io/docs/providers/aws/d/waf_ipset.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsWafIpsetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/waf_ipset.html#name DataAwsWafIpset#name}
+  */
   readonly name: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/waf_ipset.html aws_waf_ipset}
+*/
 export class DataAwsWafIpset extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/waf_ipset.html aws_waf_ipset} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsWafIpsetConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsWafIpsetConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_waf_ipset',

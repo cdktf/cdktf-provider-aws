@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_instance_type.html
+// https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,21 +7,61 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2InstanceTypeConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#default_cores DataAwsEc2InstanceType#default_cores}
+  */
   readonly defaultCores?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#default_threads_per_core DataAwsEc2InstanceType#default_threads_per_core}
+  */
   readonly defaultThreadsPerCore?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#hypervisor DataAwsEc2InstanceType#hypervisor}
+  */
   readonly hypervisor?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#instance_type DataAwsEc2InstanceType#instance_type}
+  */
   readonly instanceType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#maximum_ipv6_addresses_per_interface DataAwsEc2InstanceType#maximum_ipv6_addresses_per_interface}
+  */
   readonly maximumIpv6AddressesPerInterface?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#total_fpga_memory DataAwsEc2InstanceType#total_fpga_memory}
+  */
   readonly totalFpgaMemory?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#total_gpu_memory DataAwsEc2InstanceType#total_gpu_memory}
+  */
   readonly totalGpuMemory?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#total_instance_storage DataAwsEc2InstanceType#total_instance_storage}
+  */
   readonly totalInstanceStorage?: number;
-  /** fpgas block */
+  /**
+  * fpgas block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#fpgas DataAwsEc2InstanceType#fpgas}
+  */
   readonly fpgas?: DataAwsEc2InstanceTypeFpgas[];
-  /** gpus block */
+  /**
+  * gpus block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#gpus DataAwsEc2InstanceType#gpus}
+  */
   readonly gpus?: DataAwsEc2InstanceTypeGpus[];
-  /** inference_accelerators block */
+  /**
+  * inference_accelerators block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#inference_accelerators DataAwsEc2InstanceType#inference_accelerators}
+  */
   readonly inferenceAccelerators?: DataAwsEc2InstanceTypeInferenceAccelerators[];
-  /** instance_disks block */
+  /**
+  * instance_disks block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html#instance_disks DataAwsEc2InstanceType#instance_disks}
+  */
   readonly instanceDisks?: DataAwsEc2InstanceTypeInstanceDisks[];
 }
 export interface DataAwsEc2InstanceTypeFpgas {
@@ -61,14 +101,22 @@ function dataAwsEc2InstanceTypeInstanceDisksToTerraform(struct?: DataAwsEc2Insta
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html aws_ec2_instance_type}
+*/
 export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type.html aws_ec2_instance_type} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEc2InstanceTypeConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEc2InstanceTypeConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_instance_type',

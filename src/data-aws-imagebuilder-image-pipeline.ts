@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_imagebuilder_image_pipeline.html
+// https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_pipeline.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsImagebuilderImagePipelineConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_pipeline.html#arn DataAwsImagebuilderImagePipeline#arn}
+  */
   readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_pipeline.html#tags DataAwsImagebuilderImagePipeline#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsImagebuilderImagePipelineImageTestsConfiguration extends cdktf.ComplexComputedList {
@@ -35,14 +41,22 @@ export class DataAwsImagebuilderImagePipelineSchedule extends cdktf.ComplexCompu
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_pipeline.html aws_imagebuilder_image_pipeline}
+*/
 export class DataAwsImagebuilderImagePipeline extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_pipeline.html aws_imagebuilder_image_pipeline} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsImagebuilderImagePipelineConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsImagebuilderImagePipelineConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_image_pipeline',

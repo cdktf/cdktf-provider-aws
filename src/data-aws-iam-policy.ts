@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_iam_policy.html
+// https://www.terraform.io/docs/providers/aws/d/iam_policy.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsIamPolicyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_policy.html#name DataAwsIamPolicy#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_policy.html#path_prefix DataAwsIamPolicy#path_prefix}
+  */
   readonly pathPrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_policy.html#tags DataAwsIamPolicy#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_policy.html aws_iam_policy}
+*/
 export class DataAwsIamPolicy extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_policy.html aws_iam_policy} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsIamPolicyConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsIamPolicyConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_iam_policy',

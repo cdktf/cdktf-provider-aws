@@ -7,36 +7,107 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface GlueCrawlerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#classifiers GlueCrawler#classifiers}
+  */
   readonly classifiers?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#configuration GlueCrawler#configuration}
+  */
   readonly configuration?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#database_name GlueCrawler#database_name}
+  */
   readonly databaseName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#description GlueCrawler#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#name GlueCrawler#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#role GlueCrawler#role}
+  */
   readonly role: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#schedule GlueCrawler#schedule}
+  */
   readonly schedule?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#security_configuration GlueCrawler#security_configuration}
+  */
   readonly securityConfiguration?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#table_prefix GlueCrawler#table_prefix}
+  */
   readonly tablePrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#tags GlueCrawler#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#tags_all GlueCrawler#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** catalog_target block */
+  /**
+  * catalog_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#catalog_target GlueCrawler#catalog_target}
+  */
   readonly catalogTarget?: GlueCrawlerCatalogTarget[];
-  /** dynamodb_target block */
+  /**
+  * dynamodb_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#dynamodb_target GlueCrawler#dynamodb_target}
+  */
   readonly dynamodbTarget?: GlueCrawlerDynamodbTarget[];
-  /** jdbc_target block */
+  /**
+  * jdbc_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#jdbc_target GlueCrawler#jdbc_target}
+  */
   readonly jdbcTarget?: GlueCrawlerJdbcTarget[];
-  /** lineage_configuration block */
+  /**
+  * lineage_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#lineage_configuration GlueCrawler#lineage_configuration}
+  */
   readonly lineageConfiguration?: GlueCrawlerLineageConfiguration[];
-  /** mongodb_target block */
+  /**
+  * mongodb_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#mongodb_target GlueCrawler#mongodb_target}
+  */
   readonly mongodbTarget?: GlueCrawlerMongodbTarget[];
-  /** recrawl_policy block */
+  /**
+  * recrawl_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#recrawl_policy GlueCrawler#recrawl_policy}
+  */
   readonly recrawlPolicy?: GlueCrawlerRecrawlPolicy[];
-  /** s3_target block */
+  /**
+  * s3_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#s3_target GlueCrawler#s3_target}
+  */
   readonly s3Target?: GlueCrawlerS3Target[];
-  /** schema_change_policy block */
+  /**
+  * schema_change_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#schema_change_policy GlueCrawler#schema_change_policy}
+  */
   readonly schemaChangePolicy?: GlueCrawlerSchemaChangePolicy[];
 }
 export interface GlueCrawlerCatalogTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#database_name GlueCrawler#database_name}
+  */
   readonly databaseName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#tables GlueCrawler#tables}
+  */
   readonly tables: string[];
 }
 
@@ -49,8 +120,17 @@ function glueCrawlerCatalogTargetToTerraform(struct?: GlueCrawlerCatalogTarget):
 }
 
 export interface GlueCrawlerDynamodbTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#path GlueCrawler#path}
+  */
   readonly path: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#scan_all GlueCrawler#scan_all}
+  */
   readonly scanAll?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#scan_rate GlueCrawler#scan_rate}
+  */
   readonly scanRate?: number;
 }
 
@@ -64,8 +144,17 @@ function glueCrawlerDynamodbTargetToTerraform(struct?: GlueCrawlerDynamodbTarget
 }
 
 export interface GlueCrawlerJdbcTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#connection_name GlueCrawler#connection_name}
+  */
   readonly connectionName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#exclusions GlueCrawler#exclusions}
+  */
   readonly exclusions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#path GlueCrawler#path}
+  */
   readonly path: string;
 }
 
@@ -79,6 +168,9 @@ function glueCrawlerJdbcTargetToTerraform(struct?: GlueCrawlerJdbcTarget): any {
 }
 
 export interface GlueCrawlerLineageConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#crawler_lineage_settings GlueCrawler#crawler_lineage_settings}
+  */
   readonly crawlerLineageSettings?: string;
 }
 
@@ -90,8 +182,17 @@ function glueCrawlerLineageConfigurationToTerraform(struct?: GlueCrawlerLineageC
 }
 
 export interface GlueCrawlerMongodbTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#connection_name GlueCrawler#connection_name}
+  */
   readonly connectionName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#path GlueCrawler#path}
+  */
   readonly path: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#scan_all GlueCrawler#scan_all}
+  */
   readonly scanAll?: boolean;
 }
 
@@ -105,6 +206,9 @@ function glueCrawlerMongodbTargetToTerraform(struct?: GlueCrawlerMongodbTarget):
 }
 
 export interface GlueCrawlerRecrawlPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#recrawl_behavior GlueCrawler#recrawl_behavior}
+  */
   readonly recrawlBehavior?: string;
 }
 
@@ -116,8 +220,17 @@ function glueCrawlerRecrawlPolicyToTerraform(struct?: GlueCrawlerRecrawlPolicy):
 }
 
 export interface GlueCrawlerS3Target {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#connection_name GlueCrawler#connection_name}
+  */
   readonly connectionName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#exclusions GlueCrawler#exclusions}
+  */
   readonly exclusions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#path GlueCrawler#path}
+  */
   readonly path: string;
 }
 
@@ -131,7 +244,13 @@ function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target): any {
 }
 
 export interface GlueCrawlerSchemaChangePolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#delete_behavior GlueCrawler#delete_behavior}
+  */
   readonly deleteBehavior?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#update_behavior GlueCrawler#update_behavior}
+  */
   readonly updateBehavior?: string;
 }
 
@@ -144,14 +263,22 @@ function glueCrawlerSchemaChangePolicyToTerraform(struct?: GlueCrawlerSchemaChan
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html aws_glue_crawler}
+*/
 export class GlueCrawler extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html aws_glue_crawler} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GlueCrawlerConfig
+  */
   public constructor(scope: Construct, id: string, config: GlueCrawlerConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_glue_crawler',

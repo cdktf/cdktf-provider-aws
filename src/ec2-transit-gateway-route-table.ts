@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Ec2TransitGatewayRouteTableConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html#tags Ec2TransitGatewayRouteTable#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html#tags_all Ec2TransitGatewayRouteTable#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html#transit_gateway_id Ec2TransitGatewayRouteTable#transit_gateway_id}
+  */
   readonly transitGatewayId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html aws_ec2_transit_gateway_route_table}
+*/
 export class Ec2TransitGatewayRouteTable extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route_table.html aws_ec2_transit_gateway_route_table} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Ec2TransitGatewayRouteTableConfig
+  */
   public constructor(scope: Construct, id: string, config: Ec2TransitGatewayRouteTableConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_transit_gateway_route_table',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_codeartifact_repository_endpoint.html
+// https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsCodeartifactRepositoryEndpointConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html#domain DataAwsCodeartifactRepositoryEndpoint#domain}
+  */
   readonly domain: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html#domain_owner DataAwsCodeartifactRepositoryEndpoint#domain_owner}
+  */
   readonly domainOwner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html#format DataAwsCodeartifactRepositoryEndpoint#format}
+  */
   readonly format: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html#repository DataAwsCodeartifactRepositoryEndpoint#repository}
+  */
   readonly repository: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html aws_codeartifact_repository_endpoint}
+*/
 export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint.html aws_codeartifact_repository_endpoint} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsCodeartifactRepositoryEndpointConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsCodeartifactRepositoryEndpointConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_codeartifact_repository_endpoint',

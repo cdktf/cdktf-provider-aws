@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SqsQueuePolicyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy.html#policy SqsQueuePolicy#policy}
+  */
   readonly policy: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy.html#queue_url SqsQueuePolicy#queue_url}
+  */
   readonly queueUrl: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy.html aws_sqs_queue_policy}
+*/
 export class SqsQueuePolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy.html aws_sqs_queue_policy} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SqsQueuePolicyConfig
+  */
   public constructor(scope: Construct, id: string, config: SqsQueuePolicyConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_sqs_queue_policy',

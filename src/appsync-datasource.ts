@@ -7,23 +7,63 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AppsyncDatasourceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#api_id AppsyncDatasource#api_id}
+  */
   readonly apiId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#description AppsyncDatasource#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#name AppsyncDatasource#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#service_role_arn AppsyncDatasource#service_role_arn}
+  */
   readonly serviceRoleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#type AppsyncDatasource#type}
+  */
   readonly type: string;
-  /** dynamodb_config block */
+  /**
+  * dynamodb_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#dynamodb_config AppsyncDatasource#dynamodb_config}
+  */
   readonly dynamodbConfig?: AppsyncDatasourceDynamodbConfig[];
-  /** elasticsearch_config block */
+  /**
+  * elasticsearch_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#elasticsearch_config AppsyncDatasource#elasticsearch_config}
+  */
   readonly elasticsearchConfig?: AppsyncDatasourceElasticsearchConfig[];
-  /** http_config block */
+  /**
+  * http_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#http_config AppsyncDatasource#http_config}
+  */
   readonly httpConfig?: AppsyncDatasourceHttpConfig[];
-  /** lambda_config block */
+  /**
+  * lambda_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#lambda_config AppsyncDatasource#lambda_config}
+  */
   readonly lambdaConfig?: AppsyncDatasourceLambdaConfig[];
 }
 export interface AppsyncDatasourceDynamodbConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#region AppsyncDatasource#region}
+  */
   readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#table_name AppsyncDatasource#table_name}
+  */
   readonly tableName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#use_caller_credentials AppsyncDatasource#use_caller_credentials}
+  */
   readonly useCallerCredentials?: boolean;
 }
 
@@ -37,7 +77,13 @@ function appsyncDatasourceDynamodbConfigToTerraform(struct?: AppsyncDatasourceDy
 }
 
 export interface AppsyncDatasourceElasticsearchConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#endpoint AppsyncDatasource#endpoint}
+  */
   readonly endpoint: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#region AppsyncDatasource#region}
+  */
   readonly region?: string;
 }
 
@@ -50,6 +96,9 @@ function appsyncDatasourceElasticsearchConfigToTerraform(struct?: AppsyncDatasou
 }
 
 export interface AppsyncDatasourceHttpConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#endpoint AppsyncDatasource#endpoint}
+  */
   readonly endpoint: string;
 }
 
@@ -61,6 +110,9 @@ function appsyncDatasourceHttpConfigToTerraform(struct?: AppsyncDatasourceHttpCo
 }
 
 export interface AppsyncDatasourceLambdaConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#function_arn AppsyncDatasource#function_arn}
+  */
   readonly functionArn: string;
 }
 
@@ -72,14 +124,22 @@ function appsyncDatasourceLambdaConfigToTerraform(struct?: AppsyncDatasourceLamb
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html aws_appsync_datasource}
+*/
 export class AppsyncDatasource extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html aws_appsync_datasource} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AppsyncDatasourceConfig
+  */
   public constructor(scope: Construct, id: string, config: AppsyncDatasourceConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_appsync_datasource',

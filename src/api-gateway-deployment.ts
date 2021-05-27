@@ -7,22 +7,48 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ApiGatewayDeploymentConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html#description ApiGatewayDeployment#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html#rest_api_id ApiGatewayDeployment#rest_api_id}
+  */
   readonly restApiId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html#stage_description ApiGatewayDeployment#stage_description}
+  */
   readonly stageDescription?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html#stage_name ApiGatewayDeployment#stage_name}
+  */
   readonly stageName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html#triggers ApiGatewayDeployment#triggers}
+  */
   readonly triggers?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html#variables ApiGatewayDeployment#variables}
+  */
   readonly variables?: { [key: string]: string };
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html aws_api_gateway_deployment}
+*/
 export class ApiGatewayDeployment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html aws_api_gateway_deployment} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ApiGatewayDeploymentConfig
+  */
   public constructor(scope: Construct, id: string, config: ApiGatewayDeploymentConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_api_gateway_deployment',

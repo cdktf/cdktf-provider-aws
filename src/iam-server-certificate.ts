@@ -7,24 +7,56 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface IamServerCertificateConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html#certificate_body IamServerCertificate#certificate_body}
+  */
   readonly certificateBody: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html#certificate_chain IamServerCertificate#certificate_chain}
+  */
   readonly certificateChain?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html#name IamServerCertificate#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html#name_prefix IamServerCertificate#name_prefix}
+  */
   readonly namePrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html#path IamServerCertificate#path}
+  */
   readonly path?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html#private_key IamServerCertificate#private_key}
+  */
   readonly privateKey: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html#tags IamServerCertificate#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html#tags_all IamServerCertificate#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html aws_iam_server_certificate}
+*/
 export class IamServerCertificate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_server_certificate.html aws_iam_server_certificate} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options IamServerCertificateConfig
+  */
   public constructor(scope: Construct, id: string, config: IamServerCertificateConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_iam_server_certificate',

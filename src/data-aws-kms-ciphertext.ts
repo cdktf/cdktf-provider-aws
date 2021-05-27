@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_kms_ciphertext.html
+// https://www.terraform.io/docs/providers/aws/d/kms_ciphertext.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsKmsCiphertextConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_ciphertext.html#context DataAwsKmsCiphertext#context}
+  */
   readonly context?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_ciphertext.html#key_id DataAwsKmsCiphertext#key_id}
+  */
   readonly keyId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_ciphertext.html#plaintext DataAwsKmsCiphertext#plaintext}
+  */
   readonly plaintext: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_ciphertext.html aws_kms_ciphertext}
+*/
 export class DataAwsKmsCiphertext extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_ciphertext.html aws_kms_ciphertext} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsKmsCiphertextConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsKmsCiphertextConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_kms_ciphertext',

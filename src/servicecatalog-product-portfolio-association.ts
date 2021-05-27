@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ServicecatalogProductPortfolioAssociationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_product_portfolio_association.html#accept_language ServicecatalogProductPortfolioAssociation#accept_language}
+  */
   readonly acceptLanguage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_product_portfolio_association.html#portfolio_id ServicecatalogProductPortfolioAssociation#portfolio_id}
+  */
   readonly portfolioId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_product_portfolio_association.html#product_id ServicecatalogProductPortfolioAssociation#product_id}
+  */
   readonly productId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_product_portfolio_association.html#source_portfolio_id ServicecatalogProductPortfolioAssociation#source_portfolio_id}
+  */
   readonly sourcePortfolioId?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_product_portfolio_association.html aws_servicecatalog_product_portfolio_association}
+*/
 export class ServicecatalogProductPortfolioAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_product_portfolio_association.html aws_servicecatalog_product_portfolio_association} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ServicecatalogProductPortfolioAssociationConfig
+  */
   public constructor(scope: Construct, id: string, config: ServicecatalogProductPortfolioAssociationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_servicecatalog_product_portfolio_association',

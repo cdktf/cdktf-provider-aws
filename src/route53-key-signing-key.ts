@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Route53KeySigningKeyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html#hosted_zone_id Route53KeySigningKey#hosted_zone_id}
+  */
   readonly hostedZoneId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html#key_management_service_arn Route53KeySigningKey#key_management_service_arn}
+  */
   readonly keyManagementServiceArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html#name Route53KeySigningKey#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html#status Route53KeySigningKey#status}
+  */
   readonly status?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html aws_route53_key_signing_key}
+*/
 export class Route53KeySigningKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key.html aws_route53_key_signing_key} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Route53KeySigningKeyConfig
+  */
   public constructor(scope: Construct, id: string, config: Route53KeySigningKeyConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_route53_key_signing_key',

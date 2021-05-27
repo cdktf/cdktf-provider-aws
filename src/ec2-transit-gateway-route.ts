@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Ec2TransitGatewayRouteConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route.html#blackhole Ec2TransitGatewayRoute#blackhole}
+  */
   readonly blackhole?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route.html#destination_cidr_block Ec2TransitGatewayRoute#destination_cidr_block}
+  */
   readonly destinationCidrBlock: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route.html#transit_gateway_attachment_id Ec2TransitGatewayRoute#transit_gateway_attachment_id}
+  */
   readonly transitGatewayAttachmentId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route.html#transit_gateway_route_table_id Ec2TransitGatewayRoute#transit_gateway_route_table_id}
+  */
   readonly transitGatewayRouteTableId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route.html aws_ec2_transit_gateway_route}
+*/
 export class Ec2TransitGatewayRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_route.html aws_ec2_transit_gateway_route} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Ec2TransitGatewayRouteConfig
+  */
   public constructor(scope: Construct, id: string, config: Ec2TransitGatewayRouteConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_transit_gateway_route',

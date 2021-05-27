@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_elb.html
+// https://www.terraform.io/docs/providers/aws/d/elb.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsElbConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb.html#name DataAwsElb#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elb.html#tags DataAwsElb#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsElbAccessLogs extends cdktf.ComplexComputedList {
@@ -87,14 +93,22 @@ export class DataAwsElbListener extends cdktf.ComplexComputedList {
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/elb.html aws_elb}
+*/
 export class DataAwsElb extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/elb.html aws_elb} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsElbConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsElbConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_elb',

@@ -7,12 +7,25 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface WafRegexMatchSetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html#name WafRegexMatchSet#name}
+  */
   readonly name: string;
-  /** regex_match_tuple block */
+  /**
+  * regex_match_tuple block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html#regex_match_tuple WafRegexMatchSet#regex_match_tuple}
+  */
   readonly regexMatchTuple?: WafRegexMatchSetRegexMatchTuple[];
 }
 export interface WafRegexMatchSetRegexMatchTupleFieldToMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html#data WafRegexMatchSet#data}
+  */
   readonly data?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html#type WafRegexMatchSet#type}
+  */
   readonly type: string;
 }
 
@@ -25,9 +38,19 @@ function wafRegexMatchSetRegexMatchTupleFieldToMatchToTerraform(struct?: WafRege
 }
 
 export interface WafRegexMatchSetRegexMatchTuple {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html#regex_pattern_set_id WafRegexMatchSet#regex_pattern_set_id}
+  */
   readonly regexPatternSetId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html#text_transformation WafRegexMatchSet#text_transformation}
+  */
   readonly textTransformation: string;
-  /** field_to_match block */
+  /**
+  * field_to_match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html#field_to_match WafRegexMatchSet#field_to_match}
+  */
   readonly fieldToMatch: WafRegexMatchSetRegexMatchTupleFieldToMatch[];
 }
 
@@ -41,14 +64,22 @@ function wafRegexMatchSetRegexMatchTupleToTerraform(struct?: WafRegexMatchSetReg
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html aws_waf_regex_match_set}
+*/
 export class WafRegexMatchSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/waf_regex_match_set.html aws_waf_regex_match_set} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options WafRegexMatchSetConfig
+  */
   public constructor(scope: Construct, id: string, config: WafRegexMatchSetConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_waf_regex_match_set',

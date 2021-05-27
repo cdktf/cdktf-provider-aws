@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_imagebuilder_distribution_configuration.html
+// https://www.terraform.io/docs/providers/aws/d/imagebuilder_distribution_configuration.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsImagebuilderDistributionConfigurationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_distribution_configuration.html#arn DataAwsImagebuilderDistributionConfiguration#arn}
+  */
   readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_distribution_configuration.html#tags DataAwsImagebuilderDistributionConfiguration#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission extends cdktf.ComplexComputedList {
@@ -72,14 +78,22 @@ export class DataAwsImagebuilderDistributionConfigurationDistribution extends cd
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_distribution_configuration.html aws_imagebuilder_distribution_configuration}
+*/
 export class DataAwsImagebuilderDistributionConfiguration extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_distribution_configuration.html aws_imagebuilder_distribution_configuration} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsImagebuilderDistributionConfigurationConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsImagebuilderDistributionConfigurationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_distribution_configuration',

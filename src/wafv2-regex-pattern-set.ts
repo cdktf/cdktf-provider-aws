@@ -7,15 +7,37 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Wafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#description Wafv2RegexPatternSet#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#name Wafv2RegexPatternSet#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#scope Wafv2RegexPatternSet#scope}
+  */
   readonly scope: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#tags Wafv2RegexPatternSet#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#tags_all Wafv2RegexPatternSet#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** regular_expression block */
+  /**
+  * regular_expression block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#regular_expression Wafv2RegexPatternSet#regular_expression}
+  */
   readonly regularExpression?: Wafv2RegexPatternSetRegularExpression[];
 }
 export interface Wafv2RegexPatternSetRegularExpression {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#regex_string Wafv2RegexPatternSet#regex_string}
+  */
   readonly regexString: string;
 }
 
@@ -27,14 +49,22 @@ function wafv2RegexPatternSetRegularExpressionToTerraform(struct?: Wafv2RegexPat
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html aws_wafv2_regex_pattern_set}
+*/
 export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html aws_wafv2_regex_pattern_set} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Wafv2RegexPatternSetConfig
+  */
   public constructor(scope: Construct, id: string, config: Wafv2RegexPatternSetConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_wafv2_regex_pattern_set',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_cloudtrail_service_account.html
+// https://www.terraform.io/docs/providers/aws/d/cloudtrail_service_account.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsCloudtrailServiceAccountConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudtrail_service_account.html#region DataAwsCloudtrailServiceAccount#region}
+  */
   readonly region?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudtrail_service_account.html aws_cloudtrail_service_account}
+*/
 export class DataAwsCloudtrailServiceAccount extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudtrail_service_account.html aws_cloudtrail_service_account} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsCloudtrailServiceAccountConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsCloudtrailServiceAccountConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_cloudtrail_service_account',

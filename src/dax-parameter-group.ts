@@ -7,13 +7,29 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DaxParameterGroupConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_parameter_group.html#description DaxParameterGroup#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_parameter_group.html#name DaxParameterGroup#name}
+  */
   readonly name: string;
-  /** parameters block */
+  /**
+  * parameters block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_parameter_group.html#parameters DaxParameterGroup#parameters}
+  */
   readonly parameters?: DaxParameterGroupParameters[];
 }
 export interface DaxParameterGroupParameters {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_parameter_group.html#name DaxParameterGroup#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dax_parameter_group.html#value DaxParameterGroup#value}
+  */
   readonly value: string;
 }
 
@@ -26,14 +42,22 @@ function daxParameterGroupParametersToTerraform(struct?: DaxParameterGroupParame
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dax_parameter_group.html aws_dax_parameter_group}
+*/
 export class DaxParameterGroup extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dax_parameter_group.html aws_dax_parameter_group} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DaxParameterGroupConfig
+  */
   public constructor(scope: Construct, id: string, config: DaxParameterGroupConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_dax_parameter_group',

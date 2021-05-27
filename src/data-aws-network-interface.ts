@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_network_interface.html
+// https://www.terraform.io/docs/providers/aws/d/network_interface.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,8 +7,15 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsNetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/network_interface.html#tags DataAwsNetworkInterface#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/network_interface.html#filter DataAwsNetworkInterface#filter}
+  */
   readonly filter?: DataAwsNetworkInterfaceFilter[];
 }
 export class DataAwsNetworkInterfaceAssociation extends cdktf.ComplexComputedList {
@@ -71,7 +78,13 @@ export class DataAwsNetworkInterfaceAttachment extends cdktf.ComplexComputedList
   }
 }
 export interface DataAwsNetworkInterfaceFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/network_interface.html#name DataAwsNetworkInterface#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/network_interface.html#values DataAwsNetworkInterface#values}
+  */
   readonly values: string[];
 }
 
@@ -84,14 +97,22 @@ function dataAwsNetworkInterfaceFilterToTerraform(struct?: DataAwsNetworkInterfa
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/network_interface.html aws_network_interface}
+*/
 export class DataAwsNetworkInterface extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/network_interface.html aws_network_interface} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsNetworkInterfaceConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsNetworkInterfaceConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_network_interface',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_cloudhsm_v2_cluster.html
+// https://www.terraform.io/docs/providers/aws/d/cloudhsm_v2_cluster.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsCloudhsmV2ClusterConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudhsm_v2_cluster.html#cluster_id DataAwsCloudhsmV2Cluster#cluster_id}
+  */
   readonly clusterId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudhsm_v2_cluster.html#cluster_state DataAwsCloudhsmV2Cluster#cluster_state}
+  */
   readonly clusterState?: string;
 }
 export class DataAwsCloudhsmV2ClusterClusterCertificates extends cdktf.ComplexComputedList {
@@ -38,14 +44,22 @@ export class DataAwsCloudhsmV2ClusterClusterCertificates extends cdktf.ComplexCo
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudhsm_v2_cluster.html aws_cloudhsm_v2_cluster}
+*/
 export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudhsm_v2_cluster.html aws_cloudhsm_v2_cluster} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsCloudhsmV2ClusterConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsCloudhsmV2ClusterConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_cloudhsm_v2_cluster',

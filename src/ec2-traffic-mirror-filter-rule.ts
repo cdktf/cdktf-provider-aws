@@ -7,21 +7,59 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface Ec2TrafficMirrorFilterRuleConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#description Ec2TrafficMirrorFilterRule#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#destination_cidr_block Ec2TrafficMirrorFilterRule#destination_cidr_block}
+  */
   readonly destinationCidrBlock: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#protocol Ec2TrafficMirrorFilterRule#protocol}
+  */
   readonly protocol?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#rule_action Ec2TrafficMirrorFilterRule#rule_action}
+  */
   readonly ruleAction: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#rule_number Ec2TrafficMirrorFilterRule#rule_number}
+  */
   readonly ruleNumber: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#source_cidr_block Ec2TrafficMirrorFilterRule#source_cidr_block}
+  */
   readonly sourceCidrBlock: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#traffic_direction Ec2TrafficMirrorFilterRule#traffic_direction}
+  */
   readonly trafficDirection: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#traffic_mirror_filter_id Ec2TrafficMirrorFilterRule#traffic_mirror_filter_id}
+  */
   readonly trafficMirrorFilterId: string;
-  /** destination_port_range block */
+  /**
+  * destination_port_range block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#destination_port_range Ec2TrafficMirrorFilterRule#destination_port_range}
+  */
   readonly destinationPortRange?: Ec2TrafficMirrorFilterRuleDestinationPortRange[];
-  /** source_port_range block */
+  /**
+  * source_port_range block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#source_port_range Ec2TrafficMirrorFilterRule#source_port_range}
+  */
   readonly sourcePortRange?: Ec2TrafficMirrorFilterRuleSourcePortRange[];
 }
 export interface Ec2TrafficMirrorFilterRuleDestinationPortRange {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#from_port Ec2TrafficMirrorFilterRule#from_port}
+  */
   readonly fromPort?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#to_port Ec2TrafficMirrorFilterRule#to_port}
+  */
   readonly toPort?: number;
 }
 
@@ -34,7 +72,13 @@ function ec2TrafficMirrorFilterRuleDestinationPortRangeToTerraform(struct?: Ec2T
 }
 
 export interface Ec2TrafficMirrorFilterRuleSourcePortRange {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#from_port Ec2TrafficMirrorFilterRule#from_port}
+  */
   readonly fromPort?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html#to_port Ec2TrafficMirrorFilterRule#to_port}
+  */
   readonly toPort?: number;
 }
 
@@ -47,14 +91,22 @@ function ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform(struct?: Ec2Traffi
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html aws_ec2_traffic_mirror_filter_rule}
+*/
 export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_filter_rule.html aws_ec2_traffic_mirror_filter_rule} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options Ec2TrafficMirrorFilterRuleConfig
+  */
   public constructor(scope: Construct, id: string, config: Ec2TrafficMirrorFilterRuleConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_traffic_mirror_filter_rule',

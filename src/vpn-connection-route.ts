@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface VpnConnectionRouteConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection_route.html#destination_cidr_block VpnConnectionRoute#destination_cidr_block}
+  */
   readonly destinationCidrBlock: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection_route.html#vpn_connection_id VpnConnectionRoute#vpn_connection_id}
+  */
   readonly vpnConnectionId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection_route.html aws_vpn_connection_route}
+*/
 export class VpnConnectionRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection_route.html aws_vpn_connection_route} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options VpnConnectionRouteConfig
+  */
   public constructor(scope: Construct, id: string, config: VpnConnectionRouteConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_vpn_connection_route',

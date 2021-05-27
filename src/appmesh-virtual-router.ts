@@ -7,16 +7,41 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AppmeshVirtualRouterConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#mesh_name AppmeshVirtualRouter#mesh_name}
+  */
   readonly meshName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#mesh_owner AppmeshVirtualRouter#mesh_owner}
+  */
   readonly meshOwner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#name AppmeshVirtualRouter#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#tags AppmeshVirtualRouter#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#tags_all AppmeshVirtualRouter#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** spec block */
+  /**
+  * spec block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#spec AppmeshVirtualRouter#spec}
+  */
   readonly spec: AppmeshVirtualRouterSpec[];
 }
 export interface AppmeshVirtualRouterSpecListenerPortMapping {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#port AppmeshVirtualRouter#port}
+  */
   readonly port: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#protocol AppmeshVirtualRouter#protocol}
+  */
   readonly protocol: string;
 }
 
@@ -29,7 +54,11 @@ function appmeshVirtualRouterSpecListenerPortMappingToTerraform(struct?: Appmesh
 }
 
 export interface AppmeshVirtualRouterSpecListener {
-  /** port_mapping block */
+  /**
+  * port_mapping block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#port_mapping AppmeshVirtualRouter#port_mapping}
+  */
   readonly portMapping: AppmeshVirtualRouterSpecListenerPortMapping[];
 }
 
@@ -41,7 +70,11 @@ function appmeshVirtualRouterSpecListenerToTerraform(struct?: AppmeshVirtualRout
 }
 
 export interface AppmeshVirtualRouterSpec {
-  /** listener block */
+  /**
+  * listener block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html#listener AppmeshVirtualRouter#listener}
+  */
   readonly listener: AppmeshVirtualRouterSpecListener[];
 }
 
@@ -53,14 +86,22 @@ function appmeshVirtualRouterSpecToTerraform(struct?: AppmeshVirtualRouterSpec):
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html aws_appmesh_virtual_router}
+*/
 export class AppmeshVirtualRouter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_router.html aws_appmesh_virtual_router} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AppmeshVirtualRouterConfig
+  */
   public constructor(scope: Construct, id: string, config: AppmeshVirtualRouterConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_virtual_router',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_elastic_beanstalk_application.html
+// https://www.terraform.io/docs/providers/aws/d/elastic_beanstalk_application.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsElasticBeanstalkApplicationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elastic_beanstalk_application.html#name DataAwsElasticBeanstalkApplication#name}
+  */
   readonly name: string;
 }
 export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends cdktf.ComplexComputedList {
@@ -32,14 +35,22 @@ export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends cdktf
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/elastic_beanstalk_application.html aws_elastic_beanstalk_application}
+*/
 export class DataAwsElasticBeanstalkApplication extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/elastic_beanstalk_application.html aws_elastic_beanstalk_application} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsElasticBeanstalkApplicationConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsElasticBeanstalkApplicationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_elastic_beanstalk_application',

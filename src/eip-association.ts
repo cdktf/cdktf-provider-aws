@@ -7,22 +7,48 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html#allocation_id EipAssociation#allocation_id}
+  */
   readonly allocationId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html#allow_reassociation EipAssociation#allow_reassociation}
+  */
   readonly allowReassociation?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html#instance_id EipAssociation#instance_id}
+  */
   readonly instanceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html#network_interface_id EipAssociation#network_interface_id}
+  */
   readonly networkInterfaceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html#private_ip_address EipAssociation#private_ip_address}
+  */
   readonly privateIpAddress?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html#public_ip EipAssociation#public_ip}
+  */
   readonly publicIp?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html aws_eip_association}
+*/
 export class EipAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html aws_eip_association} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options EipAssociationConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: EipAssociationConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_eip_association',

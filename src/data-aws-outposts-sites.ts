@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_outposts_sites.html
+// https://www.terraform.io/docs/providers/aws/d/outposts_sites.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -9,14 +9,22 @@ import * as cdktf from 'cdktf';
 export interface DataAwsOutpostsSitesConfig extends cdktf.TerraformMetaArguments {
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_sites.html aws_outposts_sites}
+*/
 export class DataAwsOutpostsSites extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_sites.html aws_outposts_sites} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsOutpostsSitesConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsOutpostsSitesConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_outposts_sites',

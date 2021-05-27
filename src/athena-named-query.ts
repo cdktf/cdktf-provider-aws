@@ -7,21 +7,44 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AthenaNamedQueryConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_named_query.html#database AthenaNamedQuery#database}
+  */
   readonly database: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_named_query.html#description AthenaNamedQuery#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_named_query.html#name AthenaNamedQuery#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_named_query.html#query AthenaNamedQuery#query}
+  */
   readonly query: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_named_query.html#workgroup AthenaNamedQuery#workgroup}
+  */
   readonly workgroup?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/athena_named_query.html aws_athena_named_query}
+*/
 export class AthenaNamedQuery extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/athena_named_query.html aws_athena_named_query} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AthenaNamedQueryConfig
+  */
   public constructor(scope: Construct, id: string, config: AthenaNamedQueryConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_athena_named_query',

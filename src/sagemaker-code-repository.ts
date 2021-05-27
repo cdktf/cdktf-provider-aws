@@ -7,13 +7,29 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SagemakerCodeRepositoryConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html#code_repository_name SagemakerCodeRepository#code_repository_name}
+  */
   readonly codeRepositoryName: string;
-  /** git_config block */
+  /**
+  * git_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html#git_config SagemakerCodeRepository#git_config}
+  */
   readonly gitConfig: SagemakerCodeRepositoryGitConfig[];
 }
 export interface SagemakerCodeRepositoryGitConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html#branch SagemakerCodeRepository#branch}
+  */
   readonly branch?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html#repository_url SagemakerCodeRepository#repository_url}
+  */
   readonly repositoryUrl: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html#secret_arn SagemakerCodeRepository#secret_arn}
+  */
   readonly secretArn?: string;
 }
 
@@ -27,14 +43,22 @@ function sagemakerCodeRepositoryGitConfigToTerraform(struct?: SagemakerCodeRepos
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html aws_sagemaker_code_repository}
+*/
 export class SagemakerCodeRepository extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html aws_sagemaker_code_repository} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SagemakerCodeRepositoryConfig
+  */
   public constructor(scope: Construct, id: string, config: SagemakerCodeRepositoryConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_sagemaker_code_repository',

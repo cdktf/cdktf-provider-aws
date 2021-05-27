@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface MacieMemberAccountAssociationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association.html#member_account_id MacieMemberAccountAssociation#member_account_id}
+  */
   readonly memberAccountId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association.html aws_macie_member_account_association}
+*/
 export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association.html aws_macie_member_account_association} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options MacieMemberAccountAssociationConfig
+  */
   public constructor(scope: Construct, id: string, config: MacieMemberAccountAssociationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_macie_member_account_association',

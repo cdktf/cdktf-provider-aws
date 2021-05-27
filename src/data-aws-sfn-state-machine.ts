@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_sfn_state_machine.html
+// https://www.terraform.io/docs/providers/aws/d/sfn_state_machine.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsSfnStateMachineConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/sfn_state_machine.html#name DataAwsSfnStateMachine#name}
+  */
   readonly name: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/sfn_state_machine.html aws_sfn_state_machine}
+*/
 export class DataAwsSfnStateMachine extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/sfn_state_machine.html aws_sfn_state_machine} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsSfnStateMachineConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsSfnStateMachineConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_sfn_state_machine',

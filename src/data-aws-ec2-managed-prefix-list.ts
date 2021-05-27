@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_managed_prefix_list.html
+// https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,9 +7,19 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2ManagedPrefixListConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list.html#name DataAwsEc2ManagedPrefixList#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list.html#tags DataAwsEc2ManagedPrefixList#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list.html#filter DataAwsEc2ManagedPrefixList#filter}
+  */
   readonly filter?: DataAwsEc2ManagedPrefixListFilter[];
 }
 export class DataAwsEc2ManagedPrefixListEntries extends cdktf.ComplexComputedList {
@@ -25,7 +35,13 @@ export class DataAwsEc2ManagedPrefixListEntries extends cdktf.ComplexComputedLis
   }
 }
 export interface DataAwsEc2ManagedPrefixListFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list.html#name DataAwsEc2ManagedPrefixList#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list.html#values DataAwsEc2ManagedPrefixList#values}
+  */
   readonly values: string[];
 }
 
@@ -38,14 +54,22 @@ function dataAwsEc2ManagedPrefixListFilterToTerraform(struct?: DataAwsEc2Managed
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list.html aws_ec2_managed_prefix_list}
+*/
 export class DataAwsEc2ManagedPrefixList extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_list.html aws_ec2_managed_prefix_list} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEc2ManagedPrefixListConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEc2ManagedPrefixListConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_managed_prefix_list',

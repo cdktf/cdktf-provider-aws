@@ -7,21 +7,57 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CloudwatchMetricStreamConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#firehose_arn CloudwatchMetricStream#firehose_arn}
+  */
   readonly firehoseArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#name CloudwatchMetricStream#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#name_prefix CloudwatchMetricStream#name_prefix}
+  */
   readonly namePrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#output_format CloudwatchMetricStream#output_format}
+  */
   readonly outputFormat: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#role_arn CloudwatchMetricStream#role_arn}
+  */
   readonly roleArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#tags CloudwatchMetricStream#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#tags_all CloudwatchMetricStream#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** exclude_filter block */
+  /**
+  * exclude_filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#exclude_filter CloudwatchMetricStream#exclude_filter}
+  */
   readonly excludeFilter?: CloudwatchMetricStreamExcludeFilter[];
-  /** include_filter block */
+  /**
+  * include_filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#include_filter CloudwatchMetricStream#include_filter}
+  */
   readonly includeFilter?: CloudwatchMetricStreamIncludeFilter[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#timeouts CloudwatchMetricStream#timeouts}
+  */
   readonly timeouts?: CloudwatchMetricStreamTimeouts;
 }
 export interface CloudwatchMetricStreamExcludeFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#namespace CloudwatchMetricStream#namespace}
+  */
   readonly namespace: string;
 }
 
@@ -33,6 +69,9 @@ function cloudwatchMetricStreamExcludeFilterToTerraform(struct?: CloudwatchMetri
 }
 
 export interface CloudwatchMetricStreamIncludeFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#namespace CloudwatchMetricStream#namespace}
+  */
   readonly namespace: string;
 }
 
@@ -44,7 +83,13 @@ function cloudwatchMetricStreamIncludeFilterToTerraform(struct?: CloudwatchMetri
 }
 
 export interface CloudwatchMetricStreamTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#create CloudwatchMetricStream#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html#delete CloudwatchMetricStream#delete}
+  */
   readonly delete?: string;
 }
 
@@ -57,14 +102,22 @@ function cloudwatchMetricStreamTimeoutsToTerraform(struct?: CloudwatchMetricStre
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html aws_cloudwatch_metric_stream}
+*/
 export class CloudwatchMetricStream extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_stream.html aws_cloudwatch_metric_stream} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options CloudwatchMetricStreamConfig
+  */
   public constructor(scope: Construct, id: string, config: CloudwatchMetricStreamConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_metric_stream',

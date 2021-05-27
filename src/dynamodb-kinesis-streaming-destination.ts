@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DynamodbKinesisStreamingDestinationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_kinesis_streaming_destination.html#stream_arn DynamodbKinesisStreamingDestination#stream_arn}
+  */
   readonly streamArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_kinesis_streaming_destination.html#table_name DynamodbKinesisStreamingDestination#table_name}
+  */
   readonly tableName: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_kinesis_streaming_destination.html aws_dynamodb_kinesis_streaming_destination}
+*/
 export class DynamodbKinesisStreamingDestination extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_kinesis_streaming_destination.html aws_dynamodb_kinesis_streaming_destination} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DynamodbKinesisStreamingDestinationConfig
+  */
   public constructor(scope: Construct, id: string, config: DynamodbKinesisStreamingDestinationConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_dynamodb_kinesis_streaming_destination',

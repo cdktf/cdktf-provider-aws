@@ -7,12 +7,25 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface WafregionalIpsetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_ipset.html#name WafregionalIpset#name}
+  */
   readonly name: string;
-  /** ip_set_descriptor block */
+  /**
+  * ip_set_descriptor block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_ipset.html#ip_set_descriptor WafregionalIpset#ip_set_descriptor}
+  */
   readonly ipSetDescriptor?: WafregionalIpsetIpSetDescriptor[];
 }
 export interface WafregionalIpsetIpSetDescriptor {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_ipset.html#type WafregionalIpset#type}
+  */
   readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_ipset.html#value WafregionalIpset#value}
+  */
   readonly value: string;
 }
 
@@ -25,14 +38,22 @@ function wafregionalIpsetIpSetDescriptorToTerraform(struct?: WafregionalIpsetIpS
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_ipset.html aws_wafregional_ipset}
+*/
 export class WafregionalIpset extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafregional_ipset.html aws_wafregional_ipset} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options WafregionalIpsetConfig
+  */
   public constructor(scope: Construct, id: string, config: WafregionalIpsetConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_wafregional_ipset',

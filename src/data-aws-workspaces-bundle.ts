@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_workspaces_bundle.html
+// https://www.terraform.io/docs/providers/aws/d/workspaces_bundle.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,8 +7,17 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsWorkspacesBundleConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_bundle.html#bundle_id DataAwsWorkspacesBundle#bundle_id}
+  */
   readonly bundleId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_bundle.html#name DataAwsWorkspacesBundle#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_bundle.html#owner DataAwsWorkspacesBundle#owner}
+  */
   readonly owner?: string;
 }
 export class DataAwsWorkspacesBundleComputeType extends cdktf.ComplexComputedList {
@@ -33,14 +42,22 @@ export class DataAwsWorkspacesBundleUserStorage extends cdktf.ComplexComputedLis
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/workspaces_bundle.html aws_workspaces_bundle}
+*/
 export class DataAwsWorkspacesBundle extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/workspaces_bundle.html aws_workspaces_bundle} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsWorkspacesBundleConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsWorkspacesBundleConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_workspaces_bundle',

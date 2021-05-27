@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_instance.html
+// https://www.terraform.io/docs/providers/aws/d/instance.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,12 +7,31 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsInstanceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#get_password_data DataAwsInstance#get_password_data}
+  */
   readonly fetchPasswordData?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#get_user_data DataAwsInstance#get_user_data}
+  */
   readonly fetchUserData?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#instance_id DataAwsInstance#instance_id}
+  */
   readonly instanceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#instance_tags DataAwsInstance#instance_tags}
+  */
   readonly instanceTags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#tags DataAwsInstance#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#filter DataAwsInstance#filter}
+  */
   readonly filter?: DataAwsInstanceFilter[];
 }
 export class DataAwsInstanceCreditSpecification extends cdktf.ComplexComputedList {
@@ -173,7 +192,13 @@ export class DataAwsInstanceRootBlockDevice extends cdktf.ComplexComputedList {
   }
 }
 export interface DataAwsInstanceFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#name DataAwsInstance#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instance.html#values DataAwsInstance#values}
+  */
   readonly values: string[];
 }
 
@@ -186,14 +211,22 @@ function dataAwsInstanceFilterToTerraform(struct?: DataAwsInstanceFilter): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/instance.html aws_instance}
+*/
 export class DataAwsInstance extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/instance.html aws_instance} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsInstanceConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsInstanceConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_instance',

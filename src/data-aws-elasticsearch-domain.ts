@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_elasticsearch_domain.html
+// https://www.terraform.io/docs/providers/aws/d/elasticsearch_domain.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsElasticsearchDomainConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticsearch_domain.html#domain_name DataAwsElasticsearchDomain#domain_name}
+  */
   readonly domainName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticsearch_domain.html#tags DataAwsElasticsearchDomain#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsElasticsearchDomainAdvancedSecurityOptions extends cdktf.ComplexComputedList {
@@ -191,14 +197,22 @@ export class DataAwsElasticsearchDomainVpcOptions extends cdktf.ComplexComputedL
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/elasticsearch_domain.html aws_elasticsearch_domain}
+*/
 export class DataAwsElasticsearchDomain extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/elasticsearch_domain.html aws_elasticsearch_domain} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsElasticsearchDomainConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsElasticsearchDomainConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_elasticsearch_domain',

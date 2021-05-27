@@ -7,15 +7,37 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AppmeshVirtualServiceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#mesh_name AppmeshVirtualService#mesh_name}
+  */
   readonly meshName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#mesh_owner AppmeshVirtualService#mesh_owner}
+  */
   readonly meshOwner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#name AppmeshVirtualService#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#tags AppmeshVirtualService#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#tags_all AppmeshVirtualService#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** spec block */
+  /**
+  * spec block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#spec AppmeshVirtualService#spec}
+  */
   readonly spec: AppmeshVirtualServiceSpec[];
 }
 export interface AppmeshVirtualServiceSpecProviderVirtualNode {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#virtual_node_name AppmeshVirtualService#virtual_node_name}
+  */
   readonly virtualNodeName: string;
 }
 
@@ -27,6 +49,9 @@ function appmeshVirtualServiceSpecProviderVirtualNodeToTerraform(struct?: Appmes
 }
 
 export interface AppmeshVirtualServiceSpecProviderVirtualRouter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#virtual_router_name AppmeshVirtualService#virtual_router_name}
+  */
   readonly virtualRouterName: string;
 }
 
@@ -38,9 +63,17 @@ function appmeshVirtualServiceSpecProviderVirtualRouterToTerraform(struct?: Appm
 }
 
 export interface AppmeshVirtualServiceSpecProvider {
-  /** virtual_node block */
+  /**
+  * virtual_node block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#virtual_node AppmeshVirtualService#virtual_node}
+  */
   readonly virtualNode?: AppmeshVirtualServiceSpecProviderVirtualNode[];
-  /** virtual_router block */
+  /**
+  * virtual_router block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#virtual_router AppmeshVirtualService#virtual_router}
+  */
   readonly virtualRouter?: AppmeshVirtualServiceSpecProviderVirtualRouter[];
 }
 
@@ -53,7 +86,11 @@ function appmeshVirtualServiceSpecProviderToTerraform(struct?: AppmeshVirtualSer
 }
 
 export interface AppmeshVirtualServiceSpec {
-  /** provider block */
+  /**
+  * provider block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html#provider AppmeshVirtualService#provider}
+  */
   readonly provider?: AppmeshVirtualServiceSpecProvider[];
 }
 
@@ -65,14 +102,22 @@ function appmeshVirtualServiceSpecToTerraform(struct?: AppmeshVirtualServiceSpec
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html aws_appmesh_virtual_service}
+*/
 export class AppmeshVirtualService extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_service.html aws_appmesh_virtual_service} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AppmeshVirtualServiceConfig
+  */
   public constructor(scope: Construct, id: string, config: AppmeshVirtualServiceConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_virtual_service',

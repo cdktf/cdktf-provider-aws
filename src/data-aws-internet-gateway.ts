@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_internet_gateway.html
+// https://www.terraform.io/docs/providers/aws/d/internet_gateway.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,9 +7,19 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsInternetGatewayConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway.html#internet_gateway_id DataAwsInternetGateway#internet_gateway_id}
+  */
   readonly internetGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway.html#tags DataAwsInternetGateway#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway.html#filter DataAwsInternetGateway#filter}
+  */
   readonly filter?: DataAwsInternetGatewayFilter[];
 }
 export class DataAwsInternetGatewayAttachments extends cdktf.ComplexComputedList {
@@ -25,7 +35,13 @@ export class DataAwsInternetGatewayAttachments extends cdktf.ComplexComputedList
   }
 }
 export interface DataAwsInternetGatewayFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway.html#name DataAwsInternetGateway#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway.html#values DataAwsInternetGateway#values}
+  */
   readonly values: string[];
 }
 
@@ -38,14 +54,22 @@ function dataAwsInternetGatewayFilterToTerraform(struct?: DataAwsInternetGateway
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway.html aws_internet_gateway}
+*/
 export class DataAwsInternetGateway extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/internet_gateway.html aws_internet_gateway} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsInternetGatewayConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsInternetGatewayConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_internet_gateway',

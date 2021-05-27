@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_identitystore_user.html
+// https://www.terraform.io/docs/providers/aws/d/identitystore_user.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,13 +7,29 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsIdentitystoreUserConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user.html#identity_store_id DataAwsIdentitystoreUser#identity_store_id}
+  */
   readonly identityStoreId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user.html#user_id DataAwsIdentitystoreUser#user_id}
+  */
   readonly userId?: string;
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user.html#filter DataAwsIdentitystoreUser#filter}
+  */
   readonly filter: DataAwsIdentitystoreUserFilter[];
 }
 export interface DataAwsIdentitystoreUserFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user.html#attribute_path DataAwsIdentitystoreUser#attribute_path}
+  */
   readonly attributePath: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user.html#attribute_value DataAwsIdentitystoreUser#attribute_value}
+  */
   readonly attributeValue: string;
 }
 
@@ -26,14 +42,22 @@ function dataAwsIdentitystoreUserFilterToTerraform(struct?: DataAwsIdentitystore
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user.html aws_identitystore_user}
+*/
 export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user.html aws_identitystore_user} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsIdentitystoreUserConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsIdentitystoreUserConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_identitystore_user',

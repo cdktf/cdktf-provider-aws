@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface IotRoleAliasConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_role_alias.html#alias IotRoleAlias#alias}
+  */
   readonly alias: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_role_alias.html#credential_duration IotRoleAlias#credential_duration}
+  */
   readonly credentialDuration?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_role_alias.html#role_arn IotRoleAlias#role_arn}
+  */
   readonly roleArn: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_role_alias.html aws_iot_role_alias}
+*/
 export class IotRoleAlias extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_role_alias.html aws_iot_role_alias} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options IotRoleAliasConfig
+  */
   public constructor(scope: Construct, id: string, config: IotRoleAliasConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_iot_role_alias',

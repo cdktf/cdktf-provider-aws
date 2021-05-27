@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_efs_access_point.html
+// https://www.terraform.io/docs/providers/aws/d/efs_access_point.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEfsAccessPointConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point.html#access_point_id DataAwsEfsAccessPoint#access_point_id}
+  */
   readonly accessPointId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point.html#tags DataAwsEfsAccessPoint#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsEfsAccessPointPosixUser extends cdktf.ComplexComputedList {
@@ -57,14 +63,22 @@ export class DataAwsEfsAccessPointRootDirectory extends cdktf.ComplexComputedLis
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point.html aws_efs_access_point}
+*/
 export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point.html aws_efs_access_point} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEfsAccessPointConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEfsAccessPointConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_efs_access_point',

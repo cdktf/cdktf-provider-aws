@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ami_ids.html
+// https://www.terraform.io/docs/providers/aws/d/ami_ids.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,15 +7,37 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsAmiIdsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html#executable_users DataAwsAmiIds#executable_users}
+  */
   readonly executableUsers?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html#name_regex DataAwsAmiIds#name_regex}
+  */
   readonly nameRegex?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html#owners DataAwsAmiIds#owners}
+  */
   readonly owners: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html#sort_ascending DataAwsAmiIds#sort_ascending}
+  */
   readonly sortAscending?: boolean;
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html#filter DataAwsAmiIds#filter}
+  */
   readonly filter?: DataAwsAmiIdsFilter[];
 }
 export interface DataAwsAmiIdsFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html#name DataAwsAmiIds#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html#values DataAwsAmiIds#values}
+  */
   readonly values: string[];
 }
 
@@ -28,14 +50,22 @@ function dataAwsAmiIdsFilterToTerraform(struct?: DataAwsAmiIdsFilter): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html aws_ami_ids}
+*/
 export class DataAwsAmiIds extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html aws_ami_ids} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsAmiIdsConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsAmiIdsConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ami_ids',

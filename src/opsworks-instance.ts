@@ -7,62 +7,219 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#agent_version OpsworksInstance#agent_version}
+  */
   readonly agentVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ami_id OpsworksInstance#ami_id}
+  */
   readonly amiId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#architecture OpsworksInstance#architecture}
+  */
   readonly architecture?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#auto_scaling_type OpsworksInstance#auto_scaling_type}
+  */
   readonly autoScalingType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#availability_zone OpsworksInstance#availability_zone}
+  */
   readonly availabilityZone?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#created_at OpsworksInstance#created_at}
+  */
   readonly createdAt?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete_ebs OpsworksInstance#delete_ebs}
+  */
   readonly deleteEbs?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete_eip OpsworksInstance#delete_eip}
+  */
   readonly deleteEip?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ebs_optimized OpsworksInstance#ebs_optimized}
+  */
   readonly ebsOptimized?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ecs_cluster_arn OpsworksInstance#ecs_cluster_arn}
+  */
   readonly ecsClusterArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#elastic_ip OpsworksInstance#elastic_ip}
+  */
   readonly elasticIp?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#hostname OpsworksInstance#hostname}
+  */
   readonly hostname?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#infrastructure_class OpsworksInstance#infrastructure_class}
+  */
   readonly infrastructureClass?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#install_updates_on_boot OpsworksInstance#install_updates_on_boot}
+  */
   readonly installUpdatesOnBoot?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#instance_profile_arn OpsworksInstance#instance_profile_arn}
+  */
   readonly instanceProfileArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#instance_type OpsworksInstance#instance_type}
+  */
   readonly instanceType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#last_service_error_id OpsworksInstance#last_service_error_id}
+  */
   readonly lastServiceErrorId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#layer_ids OpsworksInstance#layer_ids}
+  */
   readonly layerIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#os OpsworksInstance#os}
+  */
   readonly os?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#platform OpsworksInstance#platform}
+  */
   readonly platform?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#private_dns OpsworksInstance#private_dns}
+  */
   readonly privateDns?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#private_ip OpsworksInstance#private_ip}
+  */
   readonly privateIp?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#public_dns OpsworksInstance#public_dns}
+  */
   readonly publicDns?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#public_ip OpsworksInstance#public_ip}
+  */
   readonly publicIp?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#registered_by OpsworksInstance#registered_by}
+  */
   readonly registeredBy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#reported_agent_version OpsworksInstance#reported_agent_version}
+  */
   readonly reportedAgentVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#reported_os_family OpsworksInstance#reported_os_family}
+  */
   readonly reportedOsFamily?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#reported_os_name OpsworksInstance#reported_os_name}
+  */
   readonly reportedOsName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#reported_os_version OpsworksInstance#reported_os_version}
+  */
   readonly reportedOsVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#root_device_type OpsworksInstance#root_device_type}
+  */
   readonly rootDeviceType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#root_device_volume_id OpsworksInstance#root_device_volume_id}
+  */
   readonly rootDeviceVolumeId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#security_group_ids OpsworksInstance#security_group_ids}
+  */
   readonly securityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ssh_host_dsa_key_fingerprint OpsworksInstance#ssh_host_dsa_key_fingerprint}
+  */
   readonly sshHostDsaKeyFingerprint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ssh_host_rsa_key_fingerprint OpsworksInstance#ssh_host_rsa_key_fingerprint}
+  */
   readonly sshHostRsaKeyFingerprint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ssh_key_name OpsworksInstance#ssh_key_name}
+  */
   readonly sshKeyName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#stack_id OpsworksInstance#stack_id}
+  */
   readonly stackId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#state OpsworksInstance#state}
+  */
   readonly state?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#status OpsworksInstance#status}
+  */
   readonly status?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#subnet_id OpsworksInstance#subnet_id}
+  */
   readonly subnetId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#tenancy OpsworksInstance#tenancy}
+  */
   readonly tenancy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#virtualization_type OpsworksInstance#virtualization_type}
+  */
   readonly virtualizationType?: string;
-  /** ebs_block_device block */
+  /**
+  * ebs_block_device block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ebs_block_device OpsworksInstance#ebs_block_device}
+  */
   readonly ebsBlockDevice?: OpsworksInstanceEbsBlockDevice[];
-  /** ephemeral_block_device block */
+  /**
+  * ephemeral_block_device block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ephemeral_block_device OpsworksInstance#ephemeral_block_device}
+  */
   readonly ephemeralBlockDevice?: OpsworksInstanceEphemeralBlockDevice[];
-  /** root_block_device block */
+  /**
+  * root_block_device block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#root_block_device OpsworksInstance#root_block_device}
+  */
   readonly rootBlockDevice?: OpsworksInstanceRootBlockDevice[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#timeouts OpsworksInstance#timeouts}
+  */
   readonly timeouts?: OpsworksInstanceTimeouts;
 }
 export interface OpsworksInstanceEbsBlockDevice {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete_on_termination OpsworksInstance#delete_on_termination}
+  */
   readonly deleteOnTermination?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#device_name OpsworksInstance#device_name}
+  */
   readonly deviceName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#iops OpsworksInstance#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#snapshot_id OpsworksInstance#snapshot_id}
+  */
   readonly snapshotId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#volume_size OpsworksInstance#volume_size}
+  */
   readonly volumeSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#volume_type OpsworksInstance#volume_type}
+  */
   readonly volumeType?: string;
 }
 
@@ -79,7 +236,13 @@ function opsworksInstanceEbsBlockDeviceToTerraform(struct?: OpsworksInstanceEbsB
 }
 
 export interface OpsworksInstanceEphemeralBlockDevice {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#device_name OpsworksInstance#device_name}
+  */
   readonly deviceName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#virtual_name OpsworksInstance#virtual_name}
+  */
   readonly virtualName: string;
 }
 
@@ -92,9 +255,21 @@ function opsworksInstanceEphemeralBlockDeviceToTerraform(struct?: OpsworksInstan
 }
 
 export interface OpsworksInstanceRootBlockDevice {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete_on_termination OpsworksInstance#delete_on_termination}
+  */
   readonly deleteOnTermination?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#iops OpsworksInstance#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#volume_size OpsworksInstance#volume_size}
+  */
   readonly volumeSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#volume_type OpsworksInstance#volume_type}
+  */
   readonly volumeType?: string;
 }
 
@@ -109,8 +284,17 @@ function opsworksInstanceRootBlockDeviceToTerraform(struct?: OpsworksInstanceRoo
 }
 
 export interface OpsworksInstanceTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#create OpsworksInstance#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete OpsworksInstance#delete}
+  */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#update OpsworksInstance#update}
+  */
   readonly update?: string;
 }
 
@@ -124,14 +308,22 @@ function opsworksInstanceTimeoutsToTerraform(struct?: OpsworksInstanceTimeouts):
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html aws_opsworks_instance}
+*/
 export class OpsworksInstance extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html aws_opsworks_instance} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OpsworksInstanceConfig
+  */
   public constructor(scope: Construct, id: string, config: OpsworksInstanceConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_opsworks_instance',

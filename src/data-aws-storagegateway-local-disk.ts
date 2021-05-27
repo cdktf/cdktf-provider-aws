@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_storagegateway_local_disk.html
+// https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsStoragegatewayLocalDiskConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk.html#disk_node DataAwsStoragegatewayLocalDisk#disk_node}
+  */
   readonly diskNode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk.html#disk_path DataAwsStoragegatewayLocalDisk#disk_path}
+  */
   readonly diskPath?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk.html#gateway_arn DataAwsStoragegatewayLocalDisk#gateway_arn}
+  */
   readonly gatewayArn: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk.html aws_storagegateway_local_disk}
+*/
 export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk.html aws_storagegateway_local_disk} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsStoragegatewayLocalDiskConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsStoragegatewayLocalDiskConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_storagegateway_local_disk',

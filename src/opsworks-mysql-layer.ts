@@ -7,39 +7,133 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OpsworksMysqlLayerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#auto_assign_elastic_ips OpsworksMysqlLayer#auto_assign_elastic_ips}
+  */
   readonly autoAssignElasticIps?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#auto_assign_public_ips OpsworksMysqlLayer#auto_assign_public_ips}
+  */
   readonly autoAssignPublicIps?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#auto_healing OpsworksMysqlLayer#auto_healing}
+  */
   readonly autoHealing?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_configure_recipes OpsworksMysqlLayer#custom_configure_recipes}
+  */
   readonly customConfigureRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_deploy_recipes OpsworksMysqlLayer#custom_deploy_recipes}
+  */
   readonly customDeployRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_instance_profile_arn OpsworksMysqlLayer#custom_instance_profile_arn}
+  */
   readonly customInstanceProfileArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_json OpsworksMysqlLayer#custom_json}
+  */
   readonly customJson?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_security_group_ids OpsworksMysqlLayer#custom_security_group_ids}
+  */
   readonly customSecurityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_setup_recipes OpsworksMysqlLayer#custom_setup_recipes}
+  */
   readonly customSetupRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_shutdown_recipes OpsworksMysqlLayer#custom_shutdown_recipes}
+  */
   readonly customShutdownRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_undeploy_recipes OpsworksMysqlLayer#custom_undeploy_recipes}
+  */
   readonly customUndeployRecipes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#drain_elb_on_shutdown OpsworksMysqlLayer#drain_elb_on_shutdown}
+  */
   readonly drainElbOnShutdown?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#elastic_load_balancer OpsworksMysqlLayer#elastic_load_balancer}
+  */
   readonly elasticLoadBalancer?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#install_updates_on_boot OpsworksMysqlLayer#install_updates_on_boot}
+  */
   readonly installUpdatesOnBoot?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#instance_shutdown_timeout OpsworksMysqlLayer#instance_shutdown_timeout}
+  */
   readonly instanceShutdownTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#name OpsworksMysqlLayer#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#root_password OpsworksMysqlLayer#root_password}
+  */
   readonly rootPassword?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#root_password_on_all_instances OpsworksMysqlLayer#root_password_on_all_instances}
+  */
   readonly rootPasswordOnAllInstances?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#stack_id OpsworksMysqlLayer#stack_id}
+  */
   readonly stackId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#system_packages OpsworksMysqlLayer#system_packages}
+  */
   readonly systemPackages?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#tags OpsworksMysqlLayer#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#tags_all OpsworksMysqlLayer#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#use_ebs_optimized_instances OpsworksMysqlLayer#use_ebs_optimized_instances}
+  */
   readonly useEbsOptimizedInstances?: boolean;
-  /** ebs_volume block */
+  /**
+  * ebs_volume block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#ebs_volume OpsworksMysqlLayer#ebs_volume}
+  */
   readonly ebsVolume?: OpsworksMysqlLayerEbsVolume[];
 }
 export interface OpsworksMysqlLayerEbsVolume {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#encrypted OpsworksMysqlLayer#encrypted}
+  */
   readonly encrypted?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#iops OpsworksMysqlLayer#iops}
+  */
   readonly iops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#mount_point OpsworksMysqlLayer#mount_point}
+  */
   readonly mountPoint: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#number_of_disks OpsworksMysqlLayer#number_of_disks}
+  */
   readonly numberOfDisks: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#raid_level OpsworksMysqlLayer#raid_level}
+  */
   readonly raidLevel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#size OpsworksMysqlLayer#size}
+  */
   readonly size: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#type OpsworksMysqlLayer#type}
+  */
   readonly type?: string;
 }
 
@@ -57,14 +151,22 @@ function opsworksMysqlLayerEbsVolumeToTerraform(struct?: OpsworksMysqlLayerEbsVo
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html aws_opsworks_mysql_layer}
+*/
 export class OpsworksMysqlLayer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html aws_opsworks_mysql_layer} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OpsworksMysqlLayerConfig
+  */
   public constructor(scope: Construct, id: string, config: OpsworksMysqlLayerConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_opsworks_mysql_layer',

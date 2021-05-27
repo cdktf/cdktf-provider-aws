@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_autoscaling_group.html
+// https://www.terraform.io/docs/providers/aws/d/autoscaling_group.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,6 +7,9 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsAutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_group.html#name DataAwsAutoscalingGroup#name}
+  */
   readonly name: string;
 }
 export class DataAwsAutoscalingGroupLaunchTemplate extends cdktf.ComplexComputedList {
@@ -27,14 +30,22 @@ export class DataAwsAutoscalingGroupLaunchTemplate extends cdktf.ComplexComputed
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_group.html aws_autoscaling_group}
+*/
 export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/autoscaling_group.html aws_autoscaling_group} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsAutoscalingGroupConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsAutoscalingGroupConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_autoscaling_group',

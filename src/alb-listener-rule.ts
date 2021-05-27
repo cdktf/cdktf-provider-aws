@@ -7,23 +7,67 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AlbListenerRuleConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#listener_arn AlbListenerRule#listener_arn}
+  */
   readonly listenerArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#priority AlbListenerRule#priority}
+  */
   readonly priority?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#tags AlbListenerRule#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#tags_all AlbListenerRule#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** action block */
+  /**
+  * action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#action AlbListenerRule#action}
+  */
   readonly action: AlbListenerRuleAction[];
-  /** condition block */
+  /**
+  * condition block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#condition AlbListenerRule#condition}
+  */
   readonly condition: AlbListenerRuleCondition[];
 }
 export interface AlbListenerRuleActionAuthenticateCognito {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}
+  */
   readonly authenticationRequestExtraParams?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}
+  */
   readonly onUnauthenticatedRequest?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#scope AlbListenerRule#scope}
+  */
   readonly scope?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#session_cookie_name AlbListenerRule#session_cookie_name}
+  */
   readonly sessionCookieName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#session_timeout AlbListenerRule#session_timeout}
+  */
   readonly sessionTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#user_pool_arn AlbListenerRule#user_pool_arn}
+  */
   readonly userPoolArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#user_pool_client_id AlbListenerRule#user_pool_client_id}
+  */
   readonly userPoolClientId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#user_pool_domain AlbListenerRule#user_pool_domain}
+  */
   readonly userPoolDomain: string;
 }
 
@@ -42,16 +86,49 @@ function albListenerRuleActionAuthenticateCognitoToTerraform(struct?: AlbListene
 }
 
 export interface AlbListenerRuleActionAuthenticateOidc {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#authentication_request_extra_params AlbListenerRule#authentication_request_extra_params}
+  */
   readonly authenticationRequestExtraParams?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#authorization_endpoint AlbListenerRule#authorization_endpoint}
+  */
   readonly authorizationEndpoint: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#client_id AlbListenerRule#client_id}
+  */
   readonly clientId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#client_secret AlbListenerRule#client_secret}
+  */
   readonly clientSecret: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#issuer AlbListenerRule#issuer}
+  */
   readonly issuer: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#on_unauthenticated_request AlbListenerRule#on_unauthenticated_request}
+  */
   readonly onUnauthenticatedRequest?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#scope AlbListenerRule#scope}
+  */
   readonly scope?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#session_cookie_name AlbListenerRule#session_cookie_name}
+  */
   readonly sessionCookieName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#session_timeout AlbListenerRule#session_timeout}
+  */
   readonly sessionTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#token_endpoint AlbListenerRule#token_endpoint}
+  */
   readonly tokenEndpoint: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#user_info_endpoint AlbListenerRule#user_info_endpoint}
+  */
   readonly userInfoEndpoint: string;
 }
 
@@ -73,8 +150,17 @@ function albListenerRuleActionAuthenticateOidcToTerraform(struct?: AlbListenerRu
 }
 
 export interface AlbListenerRuleActionFixedResponse {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#content_type AlbListenerRule#content_type}
+  */
   readonly contentType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#message_body AlbListenerRule#message_body}
+  */
   readonly messageBody?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#status_code AlbListenerRule#status_code}
+  */
   readonly statusCode?: string;
 }
 
@@ -88,7 +174,13 @@ function albListenerRuleActionFixedResponseToTerraform(struct?: AlbListenerRuleA
 }
 
 export interface AlbListenerRuleActionForwardStickiness {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#duration AlbListenerRule#duration}
+  */
   readonly duration: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#enabled AlbListenerRule#enabled}
+  */
   readonly enabled?: boolean;
 }
 
@@ -101,7 +193,13 @@ function albListenerRuleActionForwardStickinessToTerraform(struct?: AlbListenerR
 }
 
 export interface AlbListenerRuleActionForwardTargetGroup {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#arn AlbListenerRule#arn}
+  */
   readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#weight AlbListenerRule#weight}
+  */
   readonly weight?: number;
 }
 
@@ -114,9 +212,17 @@ function albListenerRuleActionForwardTargetGroupToTerraform(struct?: AlbListener
 }
 
 export interface AlbListenerRuleActionForward {
-  /** stickiness block */
+  /**
+  * stickiness block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#stickiness AlbListenerRule#stickiness}
+  */
   readonly stickiness?: AlbListenerRuleActionForwardStickiness[];
-  /** target_group block */
+  /**
+  * target_group block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#target_group AlbListenerRule#target_group}
+  */
   readonly targetGroup: AlbListenerRuleActionForwardTargetGroup[];
 }
 
@@ -129,11 +235,29 @@ function albListenerRuleActionForwardToTerraform(struct?: AlbListenerRuleActionF
 }
 
 export interface AlbListenerRuleActionRedirect {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#host AlbListenerRule#host}
+  */
   readonly host?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#path AlbListenerRule#path}
+  */
   readonly path?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#port AlbListenerRule#port}
+  */
   readonly port?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#protocol AlbListenerRule#protocol}
+  */
   readonly protocol?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#query AlbListenerRule#query}
+  */
   readonly query?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#status_code AlbListenerRule#status_code}
+  */
   readonly statusCode: string;
 }
 
@@ -150,18 +274,47 @@ function albListenerRuleActionRedirectToTerraform(struct?: AlbListenerRuleAction
 }
 
 export interface AlbListenerRuleAction {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#order AlbListenerRule#order}
+  */
   readonly order?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#target_group_arn AlbListenerRule#target_group_arn}
+  */
   readonly targetGroupArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#type AlbListenerRule#type}
+  */
   readonly type: string;
-  /** authenticate_cognito block */
+  /**
+  * authenticate_cognito block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#authenticate_cognito AlbListenerRule#authenticate_cognito}
+  */
   readonly authenticateCognito?: AlbListenerRuleActionAuthenticateCognito[];
-  /** authenticate_oidc block */
+  /**
+  * authenticate_oidc block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#authenticate_oidc AlbListenerRule#authenticate_oidc}
+  */
   readonly authenticateOidc?: AlbListenerRuleActionAuthenticateOidc[];
-  /** fixed_response block */
+  /**
+  * fixed_response block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#fixed_response AlbListenerRule#fixed_response}
+  */
   readonly fixedResponse?: AlbListenerRuleActionFixedResponse[];
-  /** forward block */
+  /**
+  * forward block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#forward AlbListenerRule#forward}
+  */
   readonly forward?: AlbListenerRuleActionForward[];
-  /** redirect block */
+  /**
+  * redirect block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#redirect AlbListenerRule#redirect}
+  */
   readonly redirect?: AlbListenerRuleActionRedirect[];
 }
 
@@ -180,6 +333,9 @@ function albListenerRuleActionToTerraform(struct?: AlbListenerRuleAction): any {
 }
 
 export interface AlbListenerRuleConditionHostHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#values AlbListenerRule#values}
+  */
   readonly values: string[];
 }
 
@@ -191,7 +347,13 @@ function albListenerRuleConditionHostHeaderToTerraform(struct?: AlbListenerRuleC
 }
 
 export interface AlbListenerRuleConditionHttpHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#http_header_name AlbListenerRule#http_header_name}
+  */
   readonly httpHeaderName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#values AlbListenerRule#values}
+  */
   readonly values: string[];
 }
 
@@ -204,6 +366,9 @@ function albListenerRuleConditionHttpHeaderToTerraform(struct?: AlbListenerRuleC
 }
 
 export interface AlbListenerRuleConditionHttpRequestMethod {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#values AlbListenerRule#values}
+  */
   readonly values: string[];
 }
 
@@ -215,6 +380,9 @@ function albListenerRuleConditionHttpRequestMethodToTerraform(struct?: AlbListen
 }
 
 export interface AlbListenerRuleConditionPathPattern {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#values AlbListenerRule#values}
+  */
   readonly values: string[];
 }
 
@@ -226,7 +394,13 @@ function albListenerRuleConditionPathPatternToTerraform(struct?: AlbListenerRule
 }
 
 export interface AlbListenerRuleConditionQueryString {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#key AlbListenerRule#key}
+  */
   readonly key?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#value AlbListenerRule#value}
+  */
   readonly value: string;
 }
 
@@ -239,6 +413,9 @@ function albListenerRuleConditionQueryStringToTerraform(struct?: AlbListenerRule
 }
 
 export interface AlbListenerRuleConditionSourceIp {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#values AlbListenerRule#values}
+  */
   readonly values: string[];
 }
 
@@ -250,17 +427,41 @@ function albListenerRuleConditionSourceIpToTerraform(struct?: AlbListenerRuleCon
 }
 
 export interface AlbListenerRuleCondition {
-  /** host_header block */
+  /**
+  * host_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#host_header AlbListenerRule#host_header}
+  */
   readonly hostHeader?: AlbListenerRuleConditionHostHeader[];
-  /** http_header block */
+  /**
+  * http_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#http_header AlbListenerRule#http_header}
+  */
   readonly httpHeader?: AlbListenerRuleConditionHttpHeader[];
-  /** http_request_method block */
+  /**
+  * http_request_method block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#http_request_method AlbListenerRule#http_request_method}
+  */
   readonly httpRequestMethod?: AlbListenerRuleConditionHttpRequestMethod[];
-  /** path_pattern block */
+  /**
+  * path_pattern block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#path_pattern AlbListenerRule#path_pattern}
+  */
   readonly pathPattern?: AlbListenerRuleConditionPathPattern[];
-  /** query_string block */
+  /**
+  * query_string block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#query_string AlbListenerRule#query_string}
+  */
   readonly queryString?: AlbListenerRuleConditionQueryString[];
-  /** source_ip block */
+  /**
+  * source_ip block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html#source_ip AlbListenerRule#source_ip}
+  */
   readonly sourceIp?: AlbListenerRuleConditionSourceIp[];
 }
 
@@ -277,14 +478,22 @@ function albListenerRuleConditionToTerraform(struct?: AlbListenerRuleCondition):
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html aws_alb_listener_rule}
+*/
 export class AlbListenerRule extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb_listener_rule.html aws_alb_listener_rule} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AlbListenerRuleConfig
+  */
   public constructor(scope: Construct, id: string, config: AlbListenerRuleConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_alb_listener_rule',

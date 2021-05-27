@@ -7,14 +7,33 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface LambdaFunctionEventInvokeConfigConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#function_name LambdaFunctionEventInvokeConfig#function_name}
+  */
   readonly functionName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#maximum_event_age_in_seconds LambdaFunctionEventInvokeConfig#maximum_event_age_in_seconds}
+  */
   readonly maximumEventAgeInSeconds?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#maximum_retry_attempts LambdaFunctionEventInvokeConfig#maximum_retry_attempts}
+  */
   readonly maximumRetryAttempts?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#qualifier LambdaFunctionEventInvokeConfig#qualifier}
+  */
   readonly qualifier?: string;
-  /** destination_config block */
+  /**
+  * destination_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#destination_config LambdaFunctionEventInvokeConfig#destination_config}
+  */
   readonly destinationConfig?: LambdaFunctionEventInvokeConfigDestinationConfig[];
 }
 export interface LambdaFunctionEventInvokeConfigDestinationConfigOnFailure {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#destination LambdaFunctionEventInvokeConfig#destination}
+  */
   readonly destination: string;
 }
 
@@ -26,6 +45,9 @@ function lambdaFunctionEventInvokeConfigDestinationConfigOnFailureToTerraform(st
 }
 
 export interface LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#destination LambdaFunctionEventInvokeConfig#destination}
+  */
   readonly destination: string;
 }
 
@@ -37,9 +59,17 @@ function lambdaFunctionEventInvokeConfigDestinationConfigOnSuccessToTerraform(st
 }
 
 export interface LambdaFunctionEventInvokeConfigDestinationConfig {
-  /** on_failure block */
+  /**
+  * on_failure block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#on_failure LambdaFunctionEventInvokeConfig#on_failure}
+  */
   readonly onFailure?: LambdaFunctionEventInvokeConfigDestinationConfigOnFailure[];
-  /** on_success block */
+  /**
+  * on_success block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html#on_success LambdaFunctionEventInvokeConfig#on_success}
+  */
   readonly onSuccess?: LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess[];
 }
 
@@ -52,14 +82,22 @@ function lambdaFunctionEventInvokeConfigDestinationConfigToTerraform(struct?: La
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html aws_lambda_function_event_invoke_config}
+*/
 export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config.html aws_lambda_function_event_invoke_config} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options LambdaFunctionEventInvokeConfigConfig
+  */
   public constructor(scope: Construct, id: string, config: LambdaFunctionEventInvokeConfigConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_lambda_function_event_invoke_config',

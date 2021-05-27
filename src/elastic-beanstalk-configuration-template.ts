@@ -7,18 +7,49 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ElasticBeanstalkConfigurationTemplateConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#application ElasticBeanstalkConfigurationTemplate#application}
+  */
   readonly application: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#description ElasticBeanstalkConfigurationTemplate#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#environment_id ElasticBeanstalkConfigurationTemplate#environment_id}
+  */
   readonly environmentId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#name ElasticBeanstalkConfigurationTemplate#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#solution_stack_name ElasticBeanstalkConfigurationTemplate#solution_stack_name}
+  */
   readonly solutionStackName?: string;
-  /** setting block */
+  /**
+  * setting block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#setting ElasticBeanstalkConfigurationTemplate#setting}
+  */
   readonly setting?: ElasticBeanstalkConfigurationTemplateSetting[];
 }
 export interface ElasticBeanstalkConfigurationTemplateSetting {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#name ElasticBeanstalkConfigurationTemplate#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#namespace ElasticBeanstalkConfigurationTemplate#namespace}
+  */
   readonly namespace: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#resource ElasticBeanstalkConfigurationTemplate#resource}
+  */
   readonly resource?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html#value ElasticBeanstalkConfigurationTemplate#value}
+  */
   readonly value: string;
 }
 
@@ -33,14 +64,22 @@ function elasticBeanstalkConfigurationTemplateSettingToTerraform(struct?: Elasti
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html aws_elastic_beanstalk_configuration_template}
+*/
 export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_configuration_template.html aws_elastic_beanstalk_configuration_template} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ElasticBeanstalkConfigurationTemplateConfig
+  */
   public constructor(scope: Construct, id: string, config: ElasticBeanstalkConfigurationTemplateConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_elastic_beanstalk_configuration_template',

@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface KinesisStreamConsumerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream_consumer.html#name KinesisStreamConsumer#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream_consumer.html#stream_arn KinesisStreamConsumer#stream_arn}
+  */
   readonly streamArn: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream_consumer.html aws_kinesis_stream_consumer}
+*/
 export class KinesisStreamConsumer extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream_consumer.html aws_kinesis_stream_consumer} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options KinesisStreamConsumerConfig
+  */
   public constructor(scope: Construct, id: string, config: KinesisStreamConsumerConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_kinesis_stream_consumer',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_ec2_local_gateway_virtual_interface.html
+// https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,12 +7,25 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsEc2LocalGatewayVirtualInterfaceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface.html#tags DataAwsEc2LocalGatewayVirtualInterface#tags}
+  */
   readonly tags?: { [key: string]: string };
-  /** filter block */
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface.html#filter DataAwsEc2LocalGatewayVirtualInterface#filter}
+  */
   readonly filter?: DataAwsEc2LocalGatewayVirtualInterfaceFilter[];
 }
 export interface DataAwsEc2LocalGatewayVirtualInterfaceFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface.html#name DataAwsEc2LocalGatewayVirtualInterface#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface.html#values DataAwsEc2LocalGatewayVirtualInterface#values}
+  */
   readonly values: string[];
 }
 
@@ -25,14 +38,22 @@ function dataAwsEc2LocalGatewayVirtualInterfaceFilterToTerraform(struct?: DataAw
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface.html aws_ec2_local_gateway_virtual_interface}
+*/
 export class DataAwsEc2LocalGatewayVirtualInterface extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface.html aws_ec2_local_gateway_virtual_interface} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsEc2LocalGatewayVirtualInterfaceConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsEc2LocalGatewayVirtualInterfaceConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_ec2_local_gateway_virtual_interface',

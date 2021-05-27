@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface LightsailStaticIpAttachmentConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_static_ip_attachment.html#instance_name LightsailStaticIpAttachment#instance_name}
+  */
   readonly instanceName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_static_ip_attachment.html#static_ip_name LightsailStaticIpAttachment#static_ip_name}
+  */
   readonly staticIpName: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_static_ip_attachment.html aws_lightsail_static_ip_attachment}
+*/
 export class LightsailStaticIpAttachment extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_static_ip_attachment.html aws_lightsail_static_ip_attachment} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options LightsailStaticIpAttachmentConfig
+  */
   public constructor(scope: Construct, id: string, config: LightsailStaticIpAttachmentConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_lightsail_static_ip_attachment',

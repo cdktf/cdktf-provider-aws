@@ -7,9 +7,21 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OrganizationsOrganizationalUnitConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organizational_unit.html#name OrganizationsOrganizationalUnit#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organizational_unit.html#parent_id OrganizationsOrganizationalUnit#parent_id}
+  */
   readonly parentId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organizational_unit.html#tags OrganizationsOrganizationalUnit#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_organizational_unit.html#tags_all OrganizationsOrganizationalUnit#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
 }
 export class OrganizationsOrganizationalUnitAccounts extends cdktf.ComplexComputedList {
@@ -35,14 +47,22 @@ export class OrganizationsOrganizationalUnitAccounts extends cdktf.ComplexComput
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/organizations_organizational_unit.html aws_organizations_organizational_unit}
+*/
 export class OrganizationsOrganizationalUnit extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_organizational_unit.html aws_organizations_organizational_unit} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OrganizationsOrganizationalUnitConfig
+  */
   public constructor(scope: Construct, id: string, config: OrganizationsOrganizationalUnitConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_organizations_organizational_unit',

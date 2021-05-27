@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CloudwatchLogStreamConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_stream.html#log_group_name CloudwatchLogStream#log_group_name}
+  */
   readonly logGroupName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_stream.html#name CloudwatchLogStream#name}
+  */
   readonly name: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_stream.html aws_cloudwatch_log_stream}
+*/
 export class CloudwatchLogStream extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_stream.html aws_cloudwatch_log_stream} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options CloudwatchLogStreamConfig
+  */
   public constructor(scope: Construct, id: string, config: CloudwatchLogStreamConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_log_stream',

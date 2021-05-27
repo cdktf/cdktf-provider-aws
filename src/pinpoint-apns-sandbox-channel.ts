@@ -7,25 +7,60 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface PinpointApnsSandboxChannelConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#application_id PinpointApnsSandboxChannel#application_id}
+  */
   readonly applicationId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#bundle_id PinpointApnsSandboxChannel#bundle_id}
+  */
   readonly bundleId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#certificate PinpointApnsSandboxChannel#certificate}
+  */
   readonly certificate?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#default_authentication_method PinpointApnsSandboxChannel#default_authentication_method}
+  */
   readonly defaultAuthenticationMethod?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#enabled PinpointApnsSandboxChannel#enabled}
+  */
   readonly enabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#private_key PinpointApnsSandboxChannel#private_key}
+  */
   readonly privateKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#team_id PinpointApnsSandboxChannel#team_id}
+  */
   readonly teamId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#token_key PinpointApnsSandboxChannel#token_key}
+  */
   readonly tokenKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html#token_key_id PinpointApnsSandboxChannel#token_key_id}
+  */
   readonly tokenKeyId?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html aws_pinpoint_apns_sandbox_channel}
+*/
 export class PinpointApnsSandboxChannel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_sandbox_channel.html aws_pinpoint_apns_sandbox_channel} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options PinpointApnsSandboxChannelConfig
+  */
   public constructor(scope: Construct, id: string, config: PinpointApnsSandboxChannelConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_pinpoint_apns_sandbox_channel',

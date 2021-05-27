@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OrganizationsDelegatedAdministratorConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_delegated_administrator.html#account_id OrganizationsDelegatedAdministrator#account_id}
+  */
   readonly accountId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/organizations_delegated_administrator.html#service_principal OrganizationsDelegatedAdministrator#service_principal}
+  */
   readonly servicePrincipal: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/organizations_delegated_administrator.html aws_organizations_delegated_administrator}
+*/
 export class OrganizationsDelegatedAdministrator extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_delegated_administrator.html aws_organizations_delegated_administrator} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OrganizationsDelegatedAdministratorConfig
+  */
   public constructor(scope: Construct, id: string, config: OrganizationsDelegatedAdministratorConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_organizations_delegated_administrator',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_wafv2_web_acl.html
+// https://www.terraform.io/docs/providers/aws/d/wafv2_web_acl.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsWafv2WebAclConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_web_acl.html#name DataAwsWafv2WebAcl#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_web_acl.html#scope DataAwsWafv2WebAcl#scope}
+  */
   readonly scope: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_web_acl.html aws_wafv2_web_acl}
+*/
 export class DataAwsWafv2WebAcl extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_web_acl.html aws_wafv2_web_acl} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsWafv2WebAclConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsWafv2WebAclConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_wafv2_web_acl',

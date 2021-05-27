@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface SesActiveReceiptRuleSetConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_active_receipt_rule_set.html#rule_set_name SesActiveReceiptRuleSet#rule_set_name}
+  */
   readonly ruleSetName: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_active_receipt_rule_set.html aws_ses_active_receipt_rule_set}
+*/
 export class SesActiveReceiptRuleSet extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_active_receipt_rule_set.html aws_ses_active_receipt_rule_set} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SesActiveReceiptRuleSetConfig
+  */
   public constructor(scope: Construct, id: string, config: SesActiveReceiptRuleSetConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_ses_active_receipt_rule_set',

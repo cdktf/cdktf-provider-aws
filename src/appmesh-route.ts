@@ -7,17 +7,45 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface AppmeshRouteConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#mesh_name AppmeshRoute#mesh_name}
+  */
   readonly meshName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#mesh_owner AppmeshRoute#mesh_owner}
+  */
   readonly meshOwner?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#name AppmeshRoute#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tags AppmeshRoute#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tags_all AppmeshRoute#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_router_name AppmeshRoute#virtual_router_name}
+  */
   readonly virtualRouterName: string;
-  /** spec block */
+  /**
+  * spec block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#spec AppmeshRoute#spec}
+  */
   readonly spec: AppmeshRouteSpec[];
 }
 export interface AppmeshRouteSpecGrpcRouteActionWeightedTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_node AppmeshRoute#virtual_node}
+  */
   readonly virtualNode: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weight AppmeshRoute#weight}
+  */
   readonly weight: number;
 }
 
@@ -30,7 +58,11 @@ function appmeshRouteSpecGrpcRouteActionWeightedTargetToTerraform(struct?: Appme
 }
 
 export interface AppmeshRouteSpecGrpcRouteAction {
-  /** weighted_target block */
+  /**
+  * weighted_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weighted_target AppmeshRoute#weighted_target}
+  */
   readonly weightedTarget: AppmeshRouteSpecGrpcRouteActionWeightedTarget[];
 }
 
@@ -42,7 +74,13 @@ function appmeshRouteSpecGrpcRouteActionToTerraform(struct?: AppmeshRouteSpecGrp
 }
 
 export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#end AppmeshRoute#end}
+  */
   readonly end: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#start AppmeshRoute#start}
+  */
   readonly start: number;
 }
 
@@ -55,11 +93,27 @@ function appmeshRouteSpecGrpcRouteMatchMetadataMatchRangeToTerraform(struct?: Ap
 }
 
 export interface AppmeshRouteSpecGrpcRouteMatchMetadataMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#exact AppmeshRoute#exact}
+  */
   readonly exact?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  */
   readonly prefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#regex AppmeshRoute#regex}
+  */
   readonly regex?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#suffix AppmeshRoute#suffix}
+  */
   readonly suffix?: string;
-  /** range block */
+  /**
+  * range block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#range AppmeshRoute#range}
+  */
   readonly range?: AppmeshRouteSpecGrpcRouteMatchMetadataMatchRange[];
 }
 
@@ -75,9 +129,19 @@ function appmeshRouteSpecGrpcRouteMatchMetadataMatchToTerraform(struct?: Appmesh
 }
 
 export interface AppmeshRouteSpecGrpcRouteMatchMetadata {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#invert AppmeshRoute#invert}
+  */
   readonly invert?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#name AppmeshRoute#name}
+  */
   readonly name: string;
-  /** match block */
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  */
   readonly match?: AppmeshRouteSpecGrpcRouteMatchMetadataMatch[];
 }
 
@@ -91,10 +155,23 @@ function appmeshRouteSpecGrpcRouteMatchMetadataToTerraform(struct?: AppmeshRoute
 }
 
 export interface AppmeshRouteSpecGrpcRouteMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#method_name AppmeshRoute#method_name}
+  */
   readonly methodName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  */
   readonly prefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#service_name AppmeshRoute#service_name}
+  */
   readonly serviceName?: string;
-  /** metadata block */
+  /**
+  * metadata block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#metadata AppmeshRoute#metadata}
+  */
   readonly metadata?: AppmeshRouteSpecGrpcRouteMatchMetadata[];
 }
 
@@ -109,7 +186,13 @@ function appmeshRouteSpecGrpcRouteMatchToTerraform(struct?: AppmeshRouteSpecGrpc
 }
 
 export interface AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -122,11 +205,27 @@ function appmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutToTerraform(struct?:
 }
 
 export interface AppmeshRouteSpecGrpcRouteRetryPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#grpc_retry_events AppmeshRoute#grpc_retry_events}
+  */
   readonly grpcRetryEvents?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http_retry_events AppmeshRoute#http_retry_events}
+  */
   readonly httpRetryEvents?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#max_retries AppmeshRoute#max_retries}
+  */
   readonly maxRetries: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  */
   readonly tcpRetryEvents?: string[];
-  /** per_retry_timeout block */
+  /**
+  * per_retry_timeout block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  */
   readonly perRetryTimeout: AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeout[];
 }
 
@@ -142,7 +241,13 @@ function appmeshRouteSpecGrpcRouteRetryPolicyToTerraform(struct?: AppmeshRouteSp
 }
 
 export interface AppmeshRouteSpecGrpcRouteTimeoutIdle {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -155,7 +260,13 @@ function appmeshRouteSpecGrpcRouteTimeoutIdleToTerraform(struct?: AppmeshRouteSp
 }
 
 export interface AppmeshRouteSpecGrpcRouteTimeoutPerRequest {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -168,9 +279,17 @@ function appmeshRouteSpecGrpcRouteTimeoutPerRequestToTerraform(struct?: AppmeshR
 }
 
 export interface AppmeshRouteSpecGrpcRouteTimeout {
-  /** idle block */
+  /**
+  * idle block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#idle AppmeshRoute#idle}
+  */
   readonly idle?: AppmeshRouteSpecGrpcRouteTimeoutIdle[];
-  /** per_request block */
+  /**
+  * per_request block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_request AppmeshRoute#per_request}
+  */
   readonly perRequest?: AppmeshRouteSpecGrpcRouteTimeoutPerRequest[];
 }
 
@@ -183,13 +302,29 @@ function appmeshRouteSpecGrpcRouteTimeoutToTerraform(struct?: AppmeshRouteSpecGr
 }
 
 export interface AppmeshRouteSpecGrpcRoute {
-  /** action block */
+  /**
+  * action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#action AppmeshRoute#action}
+  */
   readonly action: AppmeshRouteSpecGrpcRouteAction[];
-  /** match block */
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  */
   readonly match?: AppmeshRouteSpecGrpcRouteMatch[];
-  /** retry_policy block */
+  /**
+  * retry_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#retry_policy AppmeshRoute#retry_policy}
+  */
   readonly retryPolicy?: AppmeshRouteSpecGrpcRouteRetryPolicy[];
-  /** timeout block */
+  /**
+  * timeout block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#timeout AppmeshRoute#timeout}
+  */
   readonly timeout?: AppmeshRouteSpecGrpcRouteTimeout[];
 }
 
@@ -204,7 +339,13 @@ function appmeshRouteSpecGrpcRouteToTerraform(struct?: AppmeshRouteSpecGrpcRoute
 }
 
 export interface AppmeshRouteSpecHttp2RouteActionWeightedTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_node AppmeshRoute#virtual_node}
+  */
   readonly virtualNode: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weight AppmeshRoute#weight}
+  */
   readonly weight: number;
 }
 
@@ -217,7 +358,11 @@ function appmeshRouteSpecHttp2RouteActionWeightedTargetToTerraform(struct?: Appm
 }
 
 export interface AppmeshRouteSpecHttp2RouteAction {
-  /** weighted_target block */
+  /**
+  * weighted_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weighted_target AppmeshRoute#weighted_target}
+  */
   readonly weightedTarget: AppmeshRouteSpecHttp2RouteActionWeightedTarget[];
 }
 
@@ -229,7 +374,13 @@ function appmeshRouteSpecHttp2RouteActionToTerraform(struct?: AppmeshRouteSpecHt
 }
 
 export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#end AppmeshRoute#end}
+  */
   readonly end: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#start AppmeshRoute#start}
+  */
   readonly start: number;
 }
 
@@ -242,11 +393,27 @@ function appmeshRouteSpecHttp2RouteMatchHeaderMatchRangeToTerraform(struct?: App
 }
 
 export interface AppmeshRouteSpecHttp2RouteMatchHeaderMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#exact AppmeshRoute#exact}
+  */
   readonly exact?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  */
   readonly prefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#regex AppmeshRoute#regex}
+  */
   readonly regex?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#suffix AppmeshRoute#suffix}
+  */
   readonly suffix?: string;
-  /** range block */
+  /**
+  * range block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#range AppmeshRoute#range}
+  */
   readonly range?: AppmeshRouteSpecHttp2RouteMatchHeaderMatchRange[];
 }
 
@@ -262,9 +429,19 @@ function appmeshRouteSpecHttp2RouteMatchHeaderMatchToTerraform(struct?: AppmeshR
 }
 
 export interface AppmeshRouteSpecHttp2RouteMatchHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#invert AppmeshRoute#invert}
+  */
   readonly invert?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#name AppmeshRoute#name}
+  */
   readonly name: string;
-  /** match block */
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  */
   readonly match?: AppmeshRouteSpecHttp2RouteMatchHeaderMatch[];
 }
 
@@ -278,10 +455,23 @@ function appmeshRouteSpecHttp2RouteMatchHeaderToTerraform(struct?: AppmeshRouteS
 }
 
 export interface AppmeshRouteSpecHttp2RouteMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#method AppmeshRoute#method}
+  */
   readonly method?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  */
   readonly prefix: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#scheme AppmeshRoute#scheme}
+  */
   readonly scheme?: string;
-  /** header block */
+  /**
+  * header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#header AppmeshRoute#header}
+  */
   readonly header?: AppmeshRouteSpecHttp2RouteMatchHeader[];
 }
 
@@ -296,7 +486,13 @@ function appmeshRouteSpecHttp2RouteMatchToTerraform(struct?: AppmeshRouteSpecHtt
 }
 
 export interface AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -309,10 +505,23 @@ function appmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutToTerraform(struct?
 }
 
 export interface AppmeshRouteSpecHttp2RouteRetryPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http_retry_events AppmeshRoute#http_retry_events}
+  */
   readonly httpRetryEvents?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#max_retries AppmeshRoute#max_retries}
+  */
   readonly maxRetries: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  */
   readonly tcpRetryEvents?: string[];
-  /** per_retry_timeout block */
+  /**
+  * per_retry_timeout block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  */
   readonly perRetryTimeout: AppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeout[];
 }
 
@@ -327,7 +536,13 @@ function appmeshRouteSpecHttp2RouteRetryPolicyToTerraform(struct?: AppmeshRouteS
 }
 
 export interface AppmeshRouteSpecHttp2RouteTimeoutIdle {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -340,7 +555,13 @@ function appmeshRouteSpecHttp2RouteTimeoutIdleToTerraform(struct?: AppmeshRouteS
 }
 
 export interface AppmeshRouteSpecHttp2RouteTimeoutPerRequest {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -353,9 +574,17 @@ function appmeshRouteSpecHttp2RouteTimeoutPerRequestToTerraform(struct?: Appmesh
 }
 
 export interface AppmeshRouteSpecHttp2RouteTimeout {
-  /** idle block */
+  /**
+  * idle block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#idle AppmeshRoute#idle}
+  */
   readonly idle?: AppmeshRouteSpecHttp2RouteTimeoutIdle[];
-  /** per_request block */
+  /**
+  * per_request block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_request AppmeshRoute#per_request}
+  */
   readonly perRequest?: AppmeshRouteSpecHttp2RouteTimeoutPerRequest[];
 }
 
@@ -368,13 +597,29 @@ function appmeshRouteSpecHttp2RouteTimeoutToTerraform(struct?: AppmeshRouteSpecH
 }
 
 export interface AppmeshRouteSpecHttp2Route {
-  /** action block */
+  /**
+  * action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#action AppmeshRoute#action}
+  */
   readonly action: AppmeshRouteSpecHttp2RouteAction[];
-  /** match block */
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  */
   readonly match: AppmeshRouteSpecHttp2RouteMatch[];
-  /** retry_policy block */
+  /**
+  * retry_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#retry_policy AppmeshRoute#retry_policy}
+  */
   readonly retryPolicy?: AppmeshRouteSpecHttp2RouteRetryPolicy[];
-  /** timeout block */
+  /**
+  * timeout block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#timeout AppmeshRoute#timeout}
+  */
   readonly timeout?: AppmeshRouteSpecHttp2RouteTimeout[];
 }
 
@@ -389,7 +634,13 @@ function appmeshRouteSpecHttp2RouteToTerraform(struct?: AppmeshRouteSpecHttp2Rou
 }
 
 export interface AppmeshRouteSpecHttpRouteActionWeightedTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_node AppmeshRoute#virtual_node}
+  */
   readonly virtualNode: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weight AppmeshRoute#weight}
+  */
   readonly weight: number;
 }
 
@@ -402,7 +653,11 @@ function appmeshRouteSpecHttpRouteActionWeightedTargetToTerraform(struct?: Appme
 }
 
 export interface AppmeshRouteSpecHttpRouteAction {
-  /** weighted_target block */
+  /**
+  * weighted_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weighted_target AppmeshRoute#weighted_target}
+  */
   readonly weightedTarget: AppmeshRouteSpecHttpRouteActionWeightedTarget[];
 }
 
@@ -414,7 +669,13 @@ function appmeshRouteSpecHttpRouteActionToTerraform(struct?: AppmeshRouteSpecHtt
 }
 
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatchRange {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#end AppmeshRoute#end}
+  */
   readonly end: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#start AppmeshRoute#start}
+  */
   readonly start: number;
 }
 
@@ -427,11 +688,27 @@ function appmeshRouteSpecHttpRouteMatchHeaderMatchRangeToTerraform(struct?: Appm
 }
 
 export interface AppmeshRouteSpecHttpRouteMatchHeaderMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#exact AppmeshRoute#exact}
+  */
   readonly exact?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  */
   readonly prefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#regex AppmeshRoute#regex}
+  */
   readonly regex?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#suffix AppmeshRoute#suffix}
+  */
   readonly suffix?: string;
-  /** range block */
+  /**
+  * range block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#range AppmeshRoute#range}
+  */
   readonly range?: AppmeshRouteSpecHttpRouteMatchHeaderMatchRange[];
 }
 
@@ -447,9 +724,19 @@ function appmeshRouteSpecHttpRouteMatchHeaderMatchToTerraform(struct?: AppmeshRo
 }
 
 export interface AppmeshRouteSpecHttpRouteMatchHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#invert AppmeshRoute#invert}
+  */
   readonly invert?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#name AppmeshRoute#name}
+  */
   readonly name: string;
-  /** match block */
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  */
   readonly match?: AppmeshRouteSpecHttpRouteMatchHeaderMatch[];
 }
 
@@ -463,10 +750,23 @@ function appmeshRouteSpecHttpRouteMatchHeaderToTerraform(struct?: AppmeshRouteSp
 }
 
 export interface AppmeshRouteSpecHttpRouteMatch {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#method AppmeshRoute#method}
+  */
   readonly method?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#prefix AppmeshRoute#prefix}
+  */
   readonly prefix: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#scheme AppmeshRoute#scheme}
+  */
   readonly scheme?: string;
-  /** header block */
+  /**
+  * header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#header AppmeshRoute#header}
+  */
   readonly header?: AppmeshRouteSpecHttpRouteMatchHeader[];
 }
 
@@ -481,7 +781,13 @@ function appmeshRouteSpecHttpRouteMatchToTerraform(struct?: AppmeshRouteSpecHttp
 }
 
 export interface AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -494,10 +800,23 @@ function appmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeoutToTerraform(struct?:
 }
 
 export interface AppmeshRouteSpecHttpRouteRetryPolicy {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http_retry_events AppmeshRoute#http_retry_events}
+  */
   readonly httpRetryEvents?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#max_retries AppmeshRoute#max_retries}
+  */
   readonly maxRetries: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tcp_retry_events AppmeshRoute#tcp_retry_events}
+  */
   readonly tcpRetryEvents?: string[];
-  /** per_retry_timeout block */
+  /**
+  * per_retry_timeout block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_retry_timeout AppmeshRoute#per_retry_timeout}
+  */
   readonly perRetryTimeout: AppmeshRouteSpecHttpRouteRetryPolicyPerRetryTimeout[];
 }
 
@@ -512,7 +831,13 @@ function appmeshRouteSpecHttpRouteRetryPolicyToTerraform(struct?: AppmeshRouteSp
 }
 
 export interface AppmeshRouteSpecHttpRouteTimeoutIdle {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -525,7 +850,13 @@ function appmeshRouteSpecHttpRouteTimeoutIdleToTerraform(struct?: AppmeshRouteSp
 }
 
 export interface AppmeshRouteSpecHttpRouteTimeoutPerRequest {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -538,9 +869,17 @@ function appmeshRouteSpecHttpRouteTimeoutPerRequestToTerraform(struct?: AppmeshR
 }
 
 export interface AppmeshRouteSpecHttpRouteTimeout {
-  /** idle block */
+  /**
+  * idle block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#idle AppmeshRoute#idle}
+  */
   readonly idle?: AppmeshRouteSpecHttpRouteTimeoutIdle[];
-  /** per_request block */
+  /**
+  * per_request block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#per_request AppmeshRoute#per_request}
+  */
   readonly perRequest?: AppmeshRouteSpecHttpRouteTimeoutPerRequest[];
 }
 
@@ -553,13 +892,29 @@ function appmeshRouteSpecHttpRouteTimeoutToTerraform(struct?: AppmeshRouteSpecHt
 }
 
 export interface AppmeshRouteSpecHttpRoute {
-  /** action block */
+  /**
+  * action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#action AppmeshRoute#action}
+  */
   readonly action: AppmeshRouteSpecHttpRouteAction[];
-  /** match block */
+  /**
+  * match block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#match AppmeshRoute#match}
+  */
   readonly match: AppmeshRouteSpecHttpRouteMatch[];
-  /** retry_policy block */
+  /**
+  * retry_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#retry_policy AppmeshRoute#retry_policy}
+  */
   readonly retryPolicy?: AppmeshRouteSpecHttpRouteRetryPolicy[];
-  /** timeout block */
+  /**
+  * timeout block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#timeout AppmeshRoute#timeout}
+  */
   readonly timeout?: AppmeshRouteSpecHttpRouteTimeout[];
 }
 
@@ -574,7 +929,13 @@ function appmeshRouteSpecHttpRouteToTerraform(struct?: AppmeshRouteSpecHttpRoute
 }
 
 export interface AppmeshRouteSpecTcpRouteActionWeightedTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#virtual_node AppmeshRoute#virtual_node}
+  */
   readonly virtualNode: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weight AppmeshRoute#weight}
+  */
   readonly weight: number;
 }
 
@@ -587,7 +948,11 @@ function appmeshRouteSpecTcpRouteActionWeightedTargetToTerraform(struct?: Appmes
 }
 
 export interface AppmeshRouteSpecTcpRouteAction {
-  /** weighted_target block */
+  /**
+  * weighted_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#weighted_target AppmeshRoute#weighted_target}
+  */
   readonly weightedTarget: AppmeshRouteSpecTcpRouteActionWeightedTarget[];
 }
 
@@ -599,7 +964,13 @@ function appmeshRouteSpecTcpRouteActionToTerraform(struct?: AppmeshRouteSpecTcpR
 }
 
 export interface AppmeshRouteSpecTcpRouteTimeoutIdle {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#unit AppmeshRoute#unit}
+  */
   readonly unit: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#value AppmeshRoute#value}
+  */
   readonly value: number;
 }
 
@@ -612,7 +983,11 @@ function appmeshRouteSpecTcpRouteTimeoutIdleToTerraform(struct?: AppmeshRouteSpe
 }
 
 export interface AppmeshRouteSpecTcpRouteTimeout {
-  /** idle block */
+  /**
+  * idle block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#idle AppmeshRoute#idle}
+  */
   readonly idle?: AppmeshRouteSpecTcpRouteTimeoutIdle[];
 }
 
@@ -624,9 +999,17 @@ function appmeshRouteSpecTcpRouteTimeoutToTerraform(struct?: AppmeshRouteSpecTcp
 }
 
 export interface AppmeshRouteSpecTcpRoute {
-  /** action block */
+  /**
+  * action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#action AppmeshRoute#action}
+  */
   readonly action: AppmeshRouteSpecTcpRouteAction[];
-  /** timeout block */
+  /**
+  * timeout block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#timeout AppmeshRoute#timeout}
+  */
   readonly timeout?: AppmeshRouteSpecTcpRouteTimeout[];
 }
 
@@ -639,14 +1022,33 @@ function appmeshRouteSpecTcpRouteToTerraform(struct?: AppmeshRouteSpecTcpRoute):
 }
 
 export interface AppmeshRouteSpec {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#priority AppmeshRoute#priority}
+  */
   readonly priority?: number;
-  /** grpc_route block */
+  /**
+  * grpc_route block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#grpc_route AppmeshRoute#grpc_route}
+  */
   readonly grpcRoute?: AppmeshRouteSpecGrpcRoute[];
-  /** http2_route block */
+  /**
+  * http2_route block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http2_route AppmeshRoute#http2_route}
+  */
   readonly http2Route?: AppmeshRouteSpecHttp2Route[];
-  /** http_route block */
+  /**
+  * http_route block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#http_route AppmeshRoute#http_route}
+  */
   readonly httpRoute?: AppmeshRouteSpecHttpRoute[];
-  /** tcp_route block */
+  /**
+  * tcp_route block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html#tcp_route AppmeshRoute#tcp_route}
+  */
   readonly tcpRoute?: AppmeshRouteSpecTcpRoute[];
 }
 
@@ -662,14 +1064,22 @@ function appmeshRouteSpecToTerraform(struct?: AppmeshRouteSpec): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html aws_appmesh_route}
+*/
 export class AppmeshRoute extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route.html aws_appmesh_route} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AppmeshRouteConfig
+  */
   public constructor(scope: Construct, id: string, config: AppmeshRouteConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_appmesh_route',

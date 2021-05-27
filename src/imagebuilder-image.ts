@@ -7,15 +7,41 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}
+  */
   readonly distributionConfigurationArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}
+  */
   readonly enhancedImageMetadataEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#image_recipe_arn ImagebuilderImage#image_recipe_arn}
+  */
   readonly imageRecipeArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}
+  */
   readonly infrastructureConfigurationArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#tags ImagebuilderImage#tags}
+  */
   readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#tags_all ImagebuilderImage#tags_all}
+  */
   readonly tagsAll?: { [key: string]: string };
-  /** image_tests_configuration block */
+  /**
+  * image_tests_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#image_tests_configuration ImagebuilderImage#image_tests_configuration}
+  */
   readonly imageTestsConfiguration?: ImagebuilderImageImageTestsConfiguration[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#timeouts ImagebuilderImage#timeouts}
+  */
   readonly timeouts?: ImagebuilderImageTimeouts;
 }
 export class ImagebuilderImageOutputResourcesAmis extends cdktf.ComplexComputedList {
@@ -53,7 +79,13 @@ export class ImagebuilderImageOutputResources extends cdktf.ComplexComputedList 
   }
 }
 export interface ImagebuilderImageImageTestsConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#image_tests_enabled ImagebuilderImage#image_tests_enabled}
+  */
   readonly imageTestsEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#timeout_minutes ImagebuilderImage#timeout_minutes}
+  */
   readonly timeoutMinutes?: number;
 }
 
@@ -66,6 +98,9 @@ function imagebuilderImageImageTestsConfigurationToTerraform(struct?: Imagebuild
 }
 
 export interface ImagebuilderImageTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html#create ImagebuilderImage#create}
+  */
   readonly create?: string;
 }
 
@@ -77,14 +112,22 @@ function imagebuilderImageTimeoutsToTerraform(struct?: ImagebuilderImageTimeouts
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html aws_imagebuilder_image}
+*/
 export class ImagebuilderImage extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image.html aws_imagebuilder_image} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ImagebuilderImageConfig
+  */
   public constructor(scope: Construct, id: string, config: ImagebuilderImageConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_image',

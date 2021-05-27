@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_imagebuilder_image.html
+// https://www.terraform.io/docs/providers/aws/d/imagebuilder_image.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,7 +7,13 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsImagebuilderImageConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image.html#arn DataAwsImagebuilderImage#arn}
+  */
   readonly arn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image.html#tags DataAwsImagebuilderImage#tags}
+  */
   readonly tags?: { [key: string]: string };
 }
 export class DataAwsImagebuilderImageImageTestsConfiguration extends cdktf.ComplexComputedList {
@@ -57,14 +63,22 @@ export class DataAwsImagebuilderImageOutputResources extends cdktf.ComplexComput
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image.html aws_imagebuilder_image}
+*/
 export class DataAwsImagebuilderImage extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image.html aws_imagebuilder_image} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsImagebuilderImageConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsImagebuilderImageConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_imagebuilder_image',

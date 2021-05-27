@@ -7,25 +7,77 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface RouteConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#carrier_gateway_id Route#carrier_gateway_id}
+  */
   readonly carrierGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#destination_cidr_block Route#destination_cidr_block}
+  */
   readonly destinationCidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#destination_ipv6_cidr_block Route#destination_ipv6_cidr_block}
+  */
   readonly destinationIpv6CidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#destination_prefix_list_id Route#destination_prefix_list_id}
+  */
   readonly destinationPrefixListId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#egress_only_gateway_id Route#egress_only_gateway_id}
+  */
   readonly egressOnlyGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#gateway_id Route#gateway_id}
+  */
   readonly gatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#instance_id Route#instance_id}
+  */
   readonly instanceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#local_gateway_id Route#local_gateway_id}
+  */
   readonly localGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#nat_gateway_id Route#nat_gateway_id}
+  */
   readonly natGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#network_interface_id Route#network_interface_id}
+  */
   readonly networkInterfaceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#route_table_id Route#route_table_id}
+  */
   readonly routeTableId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#transit_gateway_id Route#transit_gateway_id}
+  */
   readonly transitGatewayId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#vpc_endpoint_id Route#vpc_endpoint_id}
+  */
   readonly vpcEndpointId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#vpc_peering_connection_id Route#vpc_peering_connection_id}
+  */
   readonly vpcPeeringConnectionId?: string;
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#timeouts Route#timeouts}
+  */
   readonly timeouts?: RouteTimeouts;
 }
 export interface RouteTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#create Route#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#delete Route#delete}
+  */
   readonly delete?: string;
 }
 
@@ -38,14 +90,22 @@ function routeTimeoutsToTerraform(struct?: RouteTimeouts): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/route.html aws_route}
+*/
 export class Route extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/route.html aws_route} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options RouteConfig
+  */
   public constructor(scope: Construct, id: string, config: RouteConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_route',

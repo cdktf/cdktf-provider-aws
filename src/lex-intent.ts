@@ -7,31 +7,87 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface LexIntentConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#create_version LexIntent#create_version}
+  */
   readonly createVersion?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#description LexIntent#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#name LexIntent#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#parent_intent_signature LexIntent#parent_intent_signature}
+  */
   readonly parentIntentSignature?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#sample_utterances LexIntent#sample_utterances}
+  */
   readonly sampleUtterances?: string[];
-  /** conclusion_statement block */
+  /**
+  * conclusion_statement block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#conclusion_statement LexIntent#conclusion_statement}
+  */
   readonly conclusionStatement?: LexIntentConclusionStatement[];
-  /** confirmation_prompt block */
+  /**
+  * confirmation_prompt block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#confirmation_prompt LexIntent#confirmation_prompt}
+  */
   readonly confirmationPrompt?: LexIntentConfirmationPrompt[];
-  /** dialog_code_hook block */
+  /**
+  * dialog_code_hook block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#dialog_code_hook LexIntent#dialog_code_hook}
+  */
   readonly dialogCodeHook?: LexIntentDialogCodeHook[];
-  /** follow_up_prompt block */
+  /**
+  * follow_up_prompt block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#follow_up_prompt LexIntent#follow_up_prompt}
+  */
   readonly followUpPrompt?: LexIntentFollowUpPrompt[];
-  /** fulfillment_activity block */
+  /**
+  * fulfillment_activity block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#fulfillment_activity LexIntent#fulfillment_activity}
+  */
   readonly fulfillmentActivity: LexIntentFulfillmentActivity[];
-  /** rejection_statement block */
+  /**
+  * rejection_statement block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#rejection_statement LexIntent#rejection_statement}
+  */
   readonly rejectionStatement?: LexIntentRejectionStatement[];
-  /** slot block */
+  /**
+  * slot block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#slot LexIntent#slot}
+  */
   readonly slot?: LexIntentSlot[];
-  /** timeouts block */
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#timeouts LexIntent#timeouts}
+  */
   readonly timeouts?: LexIntentTimeouts;
 }
 export interface LexIntentConclusionStatementMessage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  */
   readonly content: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  */
   readonly contentType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  */
   readonly groupNumber?: number;
 }
 
@@ -45,8 +101,15 @@ function lexIntentConclusionStatementMessageToTerraform(struct?: LexIntentConclu
 }
 
 export interface LexIntentConclusionStatement {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  */
   readonly responseCard?: string;
-  /** message block */
+  /**
+  * message block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  */
   readonly message: LexIntentConclusionStatementMessage[];
 }
 
@@ -59,8 +122,17 @@ function lexIntentConclusionStatementToTerraform(struct?: LexIntentConclusionSta
 }
 
 export interface LexIntentConfirmationPromptMessage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  */
   readonly content: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  */
   readonly contentType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  */
   readonly groupNumber?: number;
 }
 
@@ -74,9 +146,19 @@ function lexIntentConfirmationPromptMessageToTerraform(struct?: LexIntentConfirm
 }
 
 export interface LexIntentConfirmationPrompt {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#max_attempts LexIntent#max_attempts}
+  */
   readonly maxAttempts: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  */
   readonly responseCard?: string;
-  /** message block */
+  /**
+  * message block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  */
   readonly message: LexIntentConfirmationPromptMessage[];
 }
 
@@ -90,7 +172,13 @@ function lexIntentConfirmationPromptToTerraform(struct?: LexIntentConfirmationPr
 }
 
 export interface LexIntentDialogCodeHook {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message_version LexIntent#message_version}
+  */
   readonly messageVersion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#uri LexIntent#uri}
+  */
   readonly uri: string;
 }
 
@@ -103,8 +191,17 @@ function lexIntentDialogCodeHookToTerraform(struct?: LexIntentDialogCodeHook): a
 }
 
 export interface LexIntentFollowUpPromptPromptMessage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  */
   readonly content: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  */
   readonly contentType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  */
   readonly groupNumber?: number;
 }
 
@@ -118,9 +215,19 @@ function lexIntentFollowUpPromptPromptMessageToTerraform(struct?: LexIntentFollo
 }
 
 export interface LexIntentFollowUpPromptPrompt {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#max_attempts LexIntent#max_attempts}
+  */
   readonly maxAttempts: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  */
   readonly responseCard?: string;
-  /** message block */
+  /**
+  * message block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  */
   readonly message: LexIntentFollowUpPromptPromptMessage[];
 }
 
@@ -134,8 +241,17 @@ function lexIntentFollowUpPromptPromptToTerraform(struct?: LexIntentFollowUpProm
 }
 
 export interface LexIntentFollowUpPromptRejectionStatementMessage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  */
   readonly content: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  */
   readonly contentType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  */
   readonly groupNumber?: number;
 }
 
@@ -149,8 +265,15 @@ function lexIntentFollowUpPromptRejectionStatementMessageToTerraform(struct?: Le
 }
 
 export interface LexIntentFollowUpPromptRejectionStatement {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  */
   readonly responseCard?: string;
-  /** message block */
+  /**
+  * message block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  */
   readonly message: LexIntentFollowUpPromptRejectionStatementMessage[];
 }
 
@@ -163,9 +286,17 @@ function lexIntentFollowUpPromptRejectionStatementToTerraform(struct?: LexIntent
 }
 
 export interface LexIntentFollowUpPrompt {
-  /** prompt block */
+  /**
+  * prompt block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#prompt LexIntent#prompt}
+  */
   readonly prompt: LexIntentFollowUpPromptPrompt[];
-  /** rejection_statement block */
+  /**
+  * rejection_statement block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#rejection_statement LexIntent#rejection_statement}
+  */
   readonly rejectionStatement: LexIntentFollowUpPromptRejectionStatement[];
 }
 
@@ -178,7 +309,13 @@ function lexIntentFollowUpPromptToTerraform(struct?: LexIntentFollowUpPrompt): a
 }
 
 export interface LexIntentFulfillmentActivityCodeHook {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message_version LexIntent#message_version}
+  */
   readonly messageVersion: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#uri LexIntent#uri}
+  */
   readonly uri: string;
 }
 
@@ -191,8 +328,15 @@ function lexIntentFulfillmentActivityCodeHookToTerraform(struct?: LexIntentFulfi
 }
 
 export interface LexIntentFulfillmentActivity {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#type LexIntent#type}
+  */
   readonly type: string;
-  /** code_hook block */
+  /**
+  * code_hook block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#code_hook LexIntent#code_hook}
+  */
   readonly codeHook?: LexIntentFulfillmentActivityCodeHook[];
 }
 
@@ -205,8 +349,17 @@ function lexIntentFulfillmentActivityToTerraform(struct?: LexIntentFulfillmentAc
 }
 
 export interface LexIntentRejectionStatementMessage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  */
   readonly content: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  */
   readonly contentType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  */
   readonly groupNumber?: number;
 }
 
@@ -220,8 +373,15 @@ function lexIntentRejectionStatementMessageToTerraform(struct?: LexIntentRejecti
 }
 
 export interface LexIntentRejectionStatement {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  */
   readonly responseCard?: string;
-  /** message block */
+  /**
+  * message block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  */
   readonly message: LexIntentRejectionStatementMessage[];
 }
 
@@ -234,8 +394,17 @@ function lexIntentRejectionStatementToTerraform(struct?: LexIntentRejectionState
 }
 
 export interface LexIntentSlotValueElicitationPromptMessage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content LexIntent#content}
+  */
   readonly content: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#content_type LexIntent#content_type}
+  */
   readonly contentType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#group_number LexIntent#group_number}
+  */
   readonly groupNumber?: number;
 }
 
@@ -249,9 +418,19 @@ function lexIntentSlotValueElicitationPromptMessageToTerraform(struct?: LexInten
 }
 
 export interface LexIntentSlotValueElicitationPrompt {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#max_attempts LexIntent#max_attempts}
+  */
   readonly maxAttempts: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  */
   readonly responseCard?: string;
-  /** message block */
+  /**
+  * message block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#message LexIntent#message}
+  */
   readonly message: LexIntentSlotValueElicitationPromptMessage[];
 }
 
@@ -265,15 +444,43 @@ function lexIntentSlotValueElicitationPromptToTerraform(struct?: LexIntentSlotVa
 }
 
 export interface LexIntentSlot {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#description LexIntent#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#name LexIntent#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#priority LexIntent#priority}
+  */
   readonly priority?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#response_card LexIntent#response_card}
+  */
   readonly responseCard?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#sample_utterances LexIntent#sample_utterances}
+  */
   readonly sampleUtterances?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#slot_constraint LexIntent#slot_constraint}
+  */
   readonly slotConstraint: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#slot_type LexIntent#slot_type}
+  */
   readonly slotType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#slot_type_version LexIntent#slot_type_version}
+  */
   readonly slotTypeVersion?: string;
-  /** value_elicitation_prompt block */
+  /**
+  * value_elicitation_prompt block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#value_elicitation_prompt LexIntent#value_elicitation_prompt}
+  */
   readonly valueElicitationPrompt?: LexIntentSlotValueElicitationPrompt[];
 }
 
@@ -293,8 +500,17 @@ function lexIntentSlotToTerraform(struct?: LexIntentSlot): any {
 }
 
 export interface LexIntentTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#create LexIntent#create}
+  */
   readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#delete LexIntent#delete}
+  */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#update LexIntent#update}
+  */
   readonly update?: string;
 }
 
@@ -308,14 +524,22 @@ function lexIntentTimeoutsToTerraform(struct?: LexIntentTimeouts): any {
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html aws_lex_intent}
+*/
 export class LexIntent extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html aws_lex_intent} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options LexIntentConfig
+  */
   public constructor(scope: Construct, id: string, config: LexIntentConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_lex_intent',

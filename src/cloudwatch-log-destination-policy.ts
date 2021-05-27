@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CloudwatchLogDestinationPolicyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination_policy.html#access_policy CloudwatchLogDestinationPolicy#access_policy}
+  */
   readonly accessPolicy: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination_policy.html#destination_name CloudwatchLogDestinationPolicy#destination_name}
+  */
   readonly destinationName: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination_policy.html aws_cloudwatch_log_destination_policy}
+*/
 export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_destination_policy.html aws_cloudwatch_log_destination_policy} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options CloudwatchLogDestinationPolicyConfig
+  */
   public constructor(scope: Construct, id: string, config: CloudwatchLogDestinationPolicyConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_cloudwatch_log_destination_policy',

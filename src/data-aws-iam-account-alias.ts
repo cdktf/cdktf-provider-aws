@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_iam_account_alias.html
+// https://www.terraform.io/docs/providers/aws/d/iam_account_alias.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -9,14 +9,22 @@ import * as cdktf from 'cdktf';
 export interface DataAwsIamAccountAliasConfig extends cdktf.TerraformMetaArguments {
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_account_alias.html aws_iam_account_alias}
+*/
 export class DataAwsIamAccountAlias extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_account_alias.html aws_iam_account_alias} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsIamAccountAliasConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataAwsIamAccountAliasConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_iam_account_alias',

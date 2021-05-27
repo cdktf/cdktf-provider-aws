@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/aws/r/data_aws_wafv2_rule_group.html
+// https://www.terraform.io/docs/providers/aws/d/wafv2_rule_group.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataAwsWafv2RuleGroupConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_rule_group.html#name DataAwsWafv2RuleGroup#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/wafv2_rule_group.html#scope DataAwsWafv2RuleGroup#scope}
+  */
   readonly scope: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_rule_group.html aws_wafv2_rule_group}
+*/
 export class DataAwsWafv2RuleGroup extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_rule_group.html aws_wafv2_rule_group} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataAwsWafv2RuleGroupConfig
+  */
   public constructor(scope: Construct, id: string, config: DataAwsWafv2RuleGroupConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_wafv2_rule_group',

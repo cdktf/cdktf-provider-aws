@@ -7,22 +7,48 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#attribute_mapping CognitoIdentityProvider#attribute_mapping}
+  */
   readonly attributeMapping?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#idp_identifiers CognitoIdentityProvider#idp_identifiers}
+  */
   readonly idpIdentifiers?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#provider_details CognitoIdentityProvider#provider_details}
+  */
   readonly providerDetails: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#provider_name CognitoIdentityProvider#provider_name}
+  */
   readonly providerName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#provider_type CognitoIdentityProvider#provider_type}
+  */
   readonly providerType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#user_pool_id CognitoIdentityProvider#user_pool_id}
+  */
   readonly userPoolId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html aws_cognito_identity_provider}
+*/
 export class CognitoIdentityProvider extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html aws_cognito_identity_provider} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options CognitoIdentityProviderConfig
+  */
   public constructor(scope: Construct, id: string, config: CognitoIdentityProviderConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_cognito_identity_provider',
