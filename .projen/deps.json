@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@cdktf/provider-project",
-      "version": "^0.1.58",
+      "version": "^0.1.80",
       "type": "build"
     },
     {
@@ -16,12 +16,12 @@
     },
     {
       "name": "cdktf-cli",
-      "version": "^0.3",
+      "version": "^0.4",
       "type": "build"
     },
     {
       "name": "cdktf",
-      "version": "^0.3",
+      "version": "^0.4",
       "type": "build"
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "name": "cdktf",
-      "version": "^0.3",
+      "version": "^0.4",
       "type": "peer"
     },
     {
