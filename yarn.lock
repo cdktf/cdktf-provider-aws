@@ -485,14 +485,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jsii/spec@^1.16.0", "@jsii/spec@^1.29.0":
-  version "1.29.0"
-  resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.29.0.tgz#2378bbacd94e0159c6344c1556af0129e4d3e2f4"
-  integrity sha512-Y0ouCaYVPy7KjQ8di6Hu4xizKYp4klqqDf08BaEgqd38TzqBuO0abgcd9OJFUQyoDnCCWTdGBfqTo2xfvW9Pbw==
-  dependencies:
-    jsonschema "^1.4.0"
-
-"@jsii/spec@^1.30.0":
+"@jsii/spec@^1.16.0", "@jsii/spec@^1.29.0", "@jsii/spec@^1.30.0":
   version "1.30.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.30.0.tgz#e5b2381b2be0b9c0839190f9f45d0a038654c73d"
   integrity sha512-oXIwvZyHHc/TrwA/3pzQ3gkqBe916EWBvaexNI3rnKZujlHZT4vVVHMCjQ/kUJhcR0GEaahvwlNhiPTu6roC2g==
@@ -3752,30 +3745,12 @@ jsii-srcmak@^0.1.272:
     ncp "^2.0.0"
     yargs "^15.4.1"
 
-jsii@^1.29.0:
+jsii@^1.29.0, jsii@^1.9.0:
   version "1.30.0"
   resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.30.0.tgz#fe20f60e33d0beaae24bc6537fb623333e913da4"
   integrity sha512-TfVHhGjP0QiTEkyfnxrDIE8Da+itxnNUK2YoD69qIPAzmZ58goKVqK4sbXrXz2urHSToGLDmWI8+H69cLeVjJw==
   dependencies:
     "@jsii/spec" "^1.30.0"
-    case "^1.6.3"
-    colors "^1.4.0"
-    deep-equal "^2.0.5"
-    fs-extra "^9.1.0"
-    log4js "^6.3.0"
-    semver "^7.3.5"
-    semver-intersect "^1.4.0"
-    sort-json "^2.0.0"
-    spdx-license-list "^6.4.0"
-    typescript "~3.9.9"
-    yargs "^16.2.0"
-
-jsii@^1.9.0:
-  version "1.29.0"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.29.0.tgz#1f34c29db9299ace0f361e6d72627d4478994396"
-  integrity sha512-7o1yE/si/nbGsNquSejwxaiPq0iDSTPfDENd7ZyO3xzGIROV8UZSs+VhGyys9t/VF4og8p9s2olkajEN60fzMw==
-  dependencies:
-    "@jsii/spec" "^1.29.0"
     case "^1.6.3"
     colors "^1.4.0"
     deep-equal "^2.0.5"
