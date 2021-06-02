@@ -279,9 +279,9 @@
     node-fetch "^2.6.1"
 
 "@cdktf/provider-project@^0.1.80":
-  version "0.1.80"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.80.tgz#1c14e20ae7a5383d2353462c1bd94c25847b6c5d"
-  integrity sha512-tbxj3+JHoKBcs7gPyK5jAX//Y5buRcLebFq7MmS7VBUukDtx4akNtHDtMlXOXzzOkAbRgN2IgNWUDzo30Yv0aw==
+  version "0.1.83"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.83.tgz#be2896a671b5c05d4056537a97d05258e2cde9fe"
+  integrity sha512-vaNjFLvNfPUFBdfKMQ3fMa8gas0IZ15XyZj+tvawyTCQCFMFTMXH3Ff4tu5nN0KJUrMkzamz8cNfJQV/q0xuOQ==
   dependencies:
     change-case "^4.1.2"
 
@@ -485,7 +485,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@jsii/spec@^1.16.0", "@jsii/spec@^1.29.0", "@jsii/spec@^1.30.0":
+"@jsii/spec@^1.16.0", "@jsii/spec@^1.30.0":
   version "1.30.0"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.30.0.tgz#e5b2381b2be0b9c0839190f9f45d0a038654c73d"
   integrity sha512-oXIwvZyHHc/TrwA/3pzQ3gkqBe916EWBvaexNI3rnKZujlHZT4vVVHMCjQ/kUJhcR0GEaahvwlNhiPTu6roC2g==
@@ -3661,7 +3661,7 @@ jsii-pacmak@^1.19.0, jsii-pacmak@^1.29.0:
     xmlbuilder "^15.1.1"
     yargs "^16.2.0"
 
-jsii-reflect@^1.16.0, jsii-reflect@^1.29.0, jsii-reflect@^1.30.0:
+jsii-reflect@^1.16.0, jsii-reflect@^1.30.0:
   version "1.30.0"
   resolved "https://registry.yarnpkg.com/jsii-reflect/-/jsii-reflect-1.30.0.tgz#b079d448ed35c9d9dfea8798a8ef39487ed0c86c"
   integrity sha512-t/1Zr1gGqQSYt94Lfq860VLnCr8y8MLvlLorWYqmBeWKCaSPhtYSC1blGhZhDrAW+CBXiT0Oy64j4Q++AntRmw==
