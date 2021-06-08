@@ -270,10 +270,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cdktf/hcl2json@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.4.0.tgz#4d3b1958eeebdc0d1c50e2cbdbbe0733cb4fccbb"
-  integrity sha512-etFW1+DoAwQ7ENtdvpuKxmosJDDJ2rnQUDkJPZnNIqLUAXcGG3MdU6PWTnLQX/xwDMQq7xfCZlDK/hrV7g2rhA==
+"@cdktf/hcl2json@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@cdktf/hcl2json/-/hcl2json-0.4.1.tgz#904cbcab5c934cb69b32cec06498e0ec4405ca2b"
+  integrity sha512-yabxBeKkCJvj3gFQmHfsS/P6JaQMBqbyEZ1G67gTCtfkbOSEGib8KWsl3ZA+u5Fs2z5q9M4emLcCBHHPrmSG3g==
   dependencies:
     "@types/node-fetch" "^2.5.8"
     node-fetch "^2.6.1"
@@ -804,7 +804,7 @@ archiver-utils@^2.1.0:
     normalize-path "^3.0.0"
     readable-stream "^2.0.0"
 
-archiver@5.3.0:
+archiver@5.3.0, archiver@^5.1.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/archiver/-/archiver-5.3.0.tgz#dd3e097624481741df626267564f7dd8640a45ba"
   integrity sha512-iUw+oDwK0fgNpvveEsdQ0Ase6IIKztBJU2U0E9MzszMfmVVUyv1QJhS2ITW9ZCqx8dktAxVAjWWkKehuZE8OPg==
@@ -816,19 +816,6 @@ archiver@5.3.0:
     readdir-glob "^1.0.0"
     tar-stream "^2.2.0"
     zip-stream "^4.1.0"
-
-archiver@^5.1.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/archiver/-/archiver-5.2.0.tgz#25aa1b3d9febf7aec5b0f296e77e69960c26db94"
-  integrity sha512-QEAKlgQuAtUxKeZB9w5/ggKXh21bZS+dzzuQ0RPBC20qtDCbTyzqmisoeJP46MP39fg4B4IcyvR+yeyEBdblsQ==
-  dependencies:
-    archiver-utils "^2.1.0"
-    async "^3.2.0"
-    buffer-crc32 "^0.2.1"
-    readable-stream "^3.6.0"
-    readdir-glob "^1.0.0"
-    tar-stream "^2.1.4"
-    zip-stream "^4.0.4"
 
 argparse@^1.0.7:
   version "1.0.10"
@@ -1221,16 +1208,16 @@ caseless@~0.12.0:
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
 cdktf-cli@^0.4:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.4.0.tgz#c949bf6d849e1d50def99f879cb9c2c7d765216f"
-  integrity sha512-2mJA2Kq8mCcTzfHbNnogPWj/OVtPFEtzgL00hxPyLIKaQz7gX0Sagej18qp7kPh0pVA5Qenm5jVST3GdkjoX6A==
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.4.1.tgz#6c9cf17cf547cf9399c5a1adc1df2a00581a998f"
+  integrity sha512-bDK7F4MQFFgzkZBoxMimSu297IJ4duhG1ZpOGG/YcQ9MF/IuIKqlxV6WhWUEfPupnSuZuDQMNCRf/PhKsWcy9Q==
   dependencies:
-    "@cdktf/hcl2json" "0.4.0"
+    "@cdktf/hcl2json" "0.4.1"
     "@skorfmann/ink-confirm-input" "^3.0.0"
     "@skorfmann/terraform-cloud" "^1.10.1"
     "@types/node" "^14.0.26"
     archiver "^5.1.0"
-    cdktf "0.4.0"
+    cdktf "0.4.1"
     chalk "^4.1.0"
     codemaker "^0.22.0"
     constructs "^3.3.75"
@@ -1252,10 +1239,10 @@ cdktf-cli@^0.4:
     uuid "^8.3.0"
     yargs "^15.1.0"
 
-cdktf@0.4.0, cdktf@^0.4:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.4.0.tgz#2513c054d656c1a859541c0b5e13cf3bb1c3c107"
-  integrity sha512-P6KRqGokkAVRZdT2+fXfEdQszpOXrJa/EuNZr0WPcIrfTVfjL6HNrHyuP1HWUvJRzlcbG5ZZ3+8Uk4oFS9IXvA==
+cdktf@0.4.1, cdktf@^0.4:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.4.1.tgz#83c3756e30fbbfe7919bd76f6330da4bce441700"
+  integrity sha512-U5aap+QH+w/0ibeFRYm8T/JtaA8AkjCkQ6c60eL/5hY0K0qi8rjEBpQcEho9KljqZvWap6mD2yD+JqunbLzRGA==
   dependencies:
     archiver "5.3.0"
 
@@ -1478,16 +1465,6 @@ component-emitter@^1.2.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.3.0.tgz#16e4070fba8ae29b679f2215853ee181ab2eabc0"
   integrity sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0/yYnSin6Q/rD3mOutHvUrCAhJub3r90uNb+SESBuE0QYoB90YdfatsRg==
-
-compress-commons@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/compress-commons/-/compress-commons-4.0.2.tgz#d6896be386e52f37610cef9e6fa5defc58c31bd7"
-  integrity sha512-qhd32a9xgzmpfoga1VQEiLEwdKZ6Plnpx5UCgIsf89FSolyJ7WnifY4Gtjgv5WR6hWAyRaHxC5MiEhU/38U70A==
-  dependencies:
-    buffer-crc32 "^0.2.13"
-    crc32-stream "^4.0.1"
-    normalize-path "^3.0.0"
-    readable-stream "^3.6.0"
 
 compress-commons@^4.1.0:
   version "4.1.0"
@@ -2354,12 +2331,7 @@ flatted@^2.0.1:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
   integrity sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==
 
-follow-redirects@^1.10.0:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
-  integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
-
-follow-redirects@^1.13.3:
+follow-redirects@^1.10.0, follow-redirects@^1.13.3:
   version "1.13.3"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.3.tgz#e5598ad50174c1bc4e872301e82ac2cd97f90267"
   integrity sha512-DUgl6+HDzB0iEptNQEXLx/KhTmDb8tZUHSeLqpnjpknR70H0nC2t9N73BK6fN4hOvJ84pKlIQVQ4k5FFlBedKA==
@@ -5598,7 +5570,7 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-tar-stream@^2.1.4, tar-stream@^2.2.0:
+tar-stream@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-2.2.0.tgz#acad84c284136b060dc3faa64474aa9aebd77287"
   integrity sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==
@@ -6243,15 +6215,6 @@ yoga-layout-prebuilt@^1.9.6:
   integrity sha512-YnOmtSbv4MTf7RGJMK0FvZ+KD8OEe/J5BNnR0GHhD8J/XcG/Qvxgszm0Un6FTHWW4uHlTgP0IztiXQnGyIR45g==
   dependencies:
     "@types/yoga-layout" "1.9.2"
-
-zip-stream@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/zip-stream/-/zip-stream-4.0.4.tgz#3a8f100b73afaa7d1ae9338d910b321dec77ff3a"
-  integrity sha512-a65wQ3h5gcQ/nQGWV1mSZCEzCML6EK/vyVPcrPNynySP1j3VBbQKh3nhC8CbORb+jfl2vXvh56Ul5odP1bAHqw==
-  dependencies:
-    archiver-utils "^2.1.0"
-    compress-commons "^4.0.2"
-    readable-stream "^3.6.0"
 
 zip-stream@^4.1.0:
   version "4.1.0"
