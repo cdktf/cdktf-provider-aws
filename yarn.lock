@@ -1501,9 +1501,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^3.0.4, constructs@^3.3.75:
-  version "3.3.82"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.82.tgz#8ac46a925ffc98b52f5b7c8a041e3e8916418659"
-  integrity sha512-pOJAwmKf2yI8dF3fNK2akbl/xcq1xB3yhuu/ryDw7RESdrdUWbV7Bd013PI1brnXB3gNpUKsrKjXbnpfEZUrgA==
+  version "3.3.83"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.83.tgz#e62f79c2ec9255f5d91965b12d9bfc12d17b6c87"
+  integrity sha512-HLOdSvbUVejDskjDuieQz69Cp66nLovU5yHanDow/X+WbZx3rQ0HdNpCx7lJJw78uKYIiCQlznqDgzgLl5rcuQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.12"
@@ -5809,9 +5809,9 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 typescript@^3.9.5, typescript@~3.9.9:
-  version "3.9.9"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.9.tgz#e69905c54bc0681d0518bd4d587cc6f2d0b1a674"
-  integrity sha512-kdMjTiekY+z/ubJCATUPlRDl39vXYiMV9iyeMuEuXZh2we6zz80uovNN2WlAxmmdE/Z/YQe+EbOEXB5RHEED3w==
+  version "3.9.10"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
+  integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 uglify-js@^3.1.4:
   version "3.10.1"
