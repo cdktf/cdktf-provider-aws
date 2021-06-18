@@ -67,6 +67,12 @@ export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#open_monitoring MskCluster#open_monitoring}
   */
   readonly openMonitoring?: MskClusterOpenMonitoring[];
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#timeouts MskCluster#timeouts}
+  */
+  readonly timeouts?: MskClusterTimeouts;
 }
 export interface MskClusterBrokerNodeGroupInfo {
   /**
@@ -104,6 +110,10 @@ function mskClusterBrokerNodeGroupInfoToTerraform(struct?: MskClusterBrokerNodeG
 
 export interface MskClusterClientAuthenticationSasl {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#iam MskCluster#iam}
+  */
+  readonly iam?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#scram MskCluster#scram}
   */
   readonly scram?: boolean;
@@ -112,6 +122,7 @@ export interface MskClusterClientAuthenticationSasl {
 function mskClusterClientAuthenticationSaslToTerraform(struct?: MskClusterClientAuthenticationSasl): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    iam: cdktf.booleanToTerraform(struct!.iam),
     scram: cdktf.booleanToTerraform(struct!.scram),
   }
 }
@@ -387,6 +398,30 @@ function mskClusterOpenMonitoringToTerraform(struct?: MskClusterOpenMonitoring):
   }
 }
 
+export interface MskClusterTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#create MskCluster#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#delete MskCluster#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#update MskCluster#update}
+  */
+  readonly update?: string;
+}
+
+function mskClusterTimeoutsToTerraform(struct?: MskClusterTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html aws_msk_cluster}
@@ -427,6 +462,7 @@ export class MskCluster extends cdktf.TerraformResource {
     this._encryptionInfo = config.encryptionInfo;
     this._loggingInfo = config.loggingInfo;
     this._openMonitoring = config.openMonitoring;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
@@ -441,6 +477,11 @@ export class MskCluster extends cdktf.TerraformResource {
   // bootstrap_brokers - computed: true, optional: false, required: false
   public get bootstrapBrokers() {
     return this.getStringAttribute('bootstrap_brokers');
+  }
+
+  // bootstrap_brokers_sasl_iam - computed: true, optional: false, required: false
+  public get bootstrapBrokersSaslIam() {
+    return this.getStringAttribute('bootstrap_brokers_sasl_iam');
   }
 
   // bootstrap_brokers_sasl_scram - computed: true, optional: false, required: false
@@ -648,6 +689,22 @@ export class MskCluster extends cdktf.TerraformResource {
     return this._openMonitoring
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: MskClusterTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: MskClusterTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -666,6 +723,7 @@ export class MskCluster extends cdktf.TerraformResource {
       encryption_info: cdktf.listMapper(mskClusterEncryptionInfoToTerraform)(this._encryptionInfo),
       logging_info: cdktf.listMapper(mskClusterLoggingInfoToTerraform)(this._loggingInfo),
       open_monitoring: cdktf.listMapper(mskClusterOpenMonitoringToTerraform)(this._openMonitoring),
+      timeouts: mskClusterTimeoutsToTerraform(this._timeouts),
     };
   }
 }

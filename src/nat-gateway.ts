@@ -10,7 +10,11 @@ export interface NatGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/nat_gateway.html#allocation_id NatGateway#allocation_id}
   */
-  readonly allocationId: string;
+  readonly allocationId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/nat_gateway.html#connectivity_type NatGateway#connectivity_type}
+  */
+  readonly connectivityType?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/nat_gateway.html#subnet_id NatGateway#subnet_id}
   */
@@ -53,6 +57,7 @@ export class NatGateway extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._allocationId = config.allocationId;
+    this._connectivityType = config.connectivityType;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -62,17 +67,36 @@ export class NatGateway extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // allocation_id - computed: false, optional: false, required: true
-  private _allocationId: string;
+  // allocation_id - computed: false, optional: true, required: false
+  private _allocationId?: string;
   public get allocationId() {
     return this.getStringAttribute('allocation_id');
   }
-  public set allocationId(value: string) {
+  public set allocationId(value: string ) {
     this._allocationId = value;
+  }
+  public resetAllocationId() {
+    this._allocationId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get allocationIdInput() {
     return this._allocationId
+  }
+
+  // connectivity_type - computed: false, optional: true, required: false
+  private _connectivityType?: string;
+  public get connectivityType() {
+    return this.getStringAttribute('connectivity_type');
+  }
+  public set connectivityType(value: string ) {
+    this._connectivityType = value;
+  }
+  public resetConnectivityType() {
+    this._connectivityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectivityTypeInput() {
+    return this._connectivityType
   }
 
   // id - computed: true, optional: true, required: false
@@ -147,6 +171,7 @@ export class NatGateway extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allocation_id: cdktf.stringToTerraform(this._allocationId),
+      connectivity_type: cdktf.stringToTerraform(this._connectivityType),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),

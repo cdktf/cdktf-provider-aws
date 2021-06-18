@@ -56,6 +56,12 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly taskRoleArn?: string;
   /**
+  * ephemeral_storage block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#ephemeral_storage EcsTaskDefinition#ephemeral_storage}
+  */
+  readonly ephemeralStorage?: EcsTaskDefinitionEphemeralStorage[];
+  /**
   * inference_accelerator block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#inference_accelerator EcsTaskDefinition#inference_accelerator}
@@ -80,6 +86,20 @@ export interface EcsTaskDefinitionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly volume?: EcsTaskDefinitionVolume[];
 }
+export interface EcsTaskDefinitionEphemeralStorage {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#size_in_gib EcsTaskDefinition#size_in_gib}
+  */
+  readonly sizeInGib: number;
+}
+
+function ecsTaskDefinitionEphemeralStorageToTerraform(struct?: EcsTaskDefinitionEphemeralStorage): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    size_in_gib: cdktf.numberToTerraform(struct!.sizeInGib),
+  }
+}
+
 export interface EcsTaskDefinitionInferenceAccelerator {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#device_name EcsTaskDefinition#device_name}
@@ -231,6 +251,51 @@ function ecsTaskDefinitionVolumeEfsVolumeConfigurationToTerraform(struct?: EcsTa
   }
 }
 
+export interface EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#credentials_parameter EcsTaskDefinition#credentials_parameter}
+  */
+  readonly credentialsParameter: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#domain EcsTaskDefinition#domain}
+  */
+  readonly domain: string;
+}
+
+function ecsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigToTerraform(struct?: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    credentials_parameter: cdktf.stringToTerraform(struct!.credentialsParameter),
+    domain: cdktf.stringToTerraform(struct!.domain),
+  }
+}
+
+export interface EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#file_system_id EcsTaskDefinition#file_system_id}
+  */
+  readonly fileSystemId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#root_directory EcsTaskDefinition#root_directory}
+  */
+  readonly rootDirectory: string;
+  /**
+  * authorization_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#authorization_config EcsTaskDefinition#authorization_config}
+  */
+  readonly authorizationConfig: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig[];
+}
+
+function ecsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationToTerraform(struct?: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    file_system_id: cdktf.stringToTerraform(struct!.fileSystemId),
+    root_directory: cdktf.stringToTerraform(struct!.rootDirectory),
+    authorization_config: cdktf.listMapper(ecsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigToTerraform)(struct!.authorizationConfig),
+  }
+}
+
 export interface EcsTaskDefinitionVolume {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#host_path EcsTaskDefinition#host_path}
@@ -252,6 +317,12 @@ export interface EcsTaskDefinitionVolume {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#efs_volume_configuration EcsTaskDefinition#efs_volume_configuration}
   */
   readonly efsVolumeConfiguration?: EcsTaskDefinitionVolumeEfsVolumeConfiguration[];
+  /**
+  * fsx_windows_file_server_volume_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_task_definition.html#fsx_windows_file_server_volume_configuration EcsTaskDefinition#fsx_windows_file_server_volume_configuration}
+  */
+  readonly fsxWindowsFileServerVolumeConfiguration?: EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration[];
 }
 
 function ecsTaskDefinitionVolumeToTerraform(struct?: EcsTaskDefinitionVolume): any {
@@ -261,6 +332,7 @@ function ecsTaskDefinitionVolumeToTerraform(struct?: EcsTaskDefinitionVolume): a
     name: cdktf.stringToTerraform(struct!.name),
     docker_volume_configuration: cdktf.listMapper(ecsTaskDefinitionVolumeDockerVolumeConfigurationToTerraform)(struct!.dockerVolumeConfiguration),
     efs_volume_configuration: cdktf.listMapper(ecsTaskDefinitionVolumeEfsVolumeConfigurationToTerraform)(struct!.efsVolumeConfiguration),
+    fsx_windows_file_server_volume_configuration: cdktf.listMapper(ecsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationToTerraform)(struct!.fsxWindowsFileServerVolumeConfiguration),
   }
 }
 
@@ -304,6 +376,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._taskRoleArn = config.taskRoleArn;
+    this._ephemeralStorage = config.ephemeralStorage;
     this._inferenceAccelerator = config.inferenceAccelerator;
     this._placementConstraints = config.placementConstraints;
     this._proxyConfiguration = config.proxyConfiguration;
@@ -515,6 +588,22 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
     return this._taskRoleArn
   }
 
+  // ephemeral_storage - computed: false, optional: true, required: false
+  private _ephemeralStorage?: EcsTaskDefinitionEphemeralStorage[];
+  public get ephemeralStorage() {
+    return this.interpolationForAttribute('ephemeral_storage') as any;
+  }
+  public set ephemeralStorage(value: EcsTaskDefinitionEphemeralStorage[] ) {
+    this._ephemeralStorage = value;
+  }
+  public resetEphemeralStorage() {
+    this._ephemeralStorage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ephemeralStorageInput() {
+    return this._ephemeralStorage
+  }
+
   // inference_accelerator - computed: false, optional: true, required: false
   private _inferenceAccelerator?: EcsTaskDefinitionInferenceAccelerator[];
   public get inferenceAccelerator() {
@@ -597,6 +686,7 @@ export class EcsTaskDefinition extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       task_role_arn: cdktf.stringToTerraform(this._taskRoleArn),
+      ephemeral_storage: cdktf.listMapper(ecsTaskDefinitionEphemeralStorageToTerraform)(this._ephemeralStorage),
       inference_accelerator: cdktf.listMapper(ecsTaskDefinitionInferenceAcceleratorToTerraform)(this._inferenceAccelerator),
       placement_constraints: cdktf.listMapper(ecsTaskDefinitionPlacementConstraintsToTerraform)(this._placementConstraints),
       proxy_configuration: cdktf.listMapper(ecsTaskDefinitionProxyConfigurationToTerraform)(this._proxyConfiguration),

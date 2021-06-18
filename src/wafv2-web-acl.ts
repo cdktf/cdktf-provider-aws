@@ -46,21 +46,110 @@ export interface Wafv2WebAclConfig extends cdktf.TerraformMetaArguments {
   */
   readonly visibilityConfig: Wafv2WebAclVisibilityConfig[];
 }
+export interface Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#name Wafv2WebAcl#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#value Wafv2WebAcl#value}
+  */
+  readonly value: string;
+}
+
+function wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface Wafv2WebAclDefaultActionAllowCustomRequestHandling {
+  /**
+  * insert_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#insert_header Wafv2WebAcl#insert_header}
+  */
+  readonly insertHeader: Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader[];
+}
+
+function wafv2WebAclDefaultActionAllowCustomRequestHandlingToTerraform(struct?: Wafv2WebAclDefaultActionAllowCustomRequestHandling): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    insert_header: cdktf.listMapper(wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderToTerraform)(struct!.insertHeader),
+  }
+}
+
 export interface Wafv2WebAclDefaultActionAllow {
+  /**
+  * custom_request_handling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  */
+  readonly customRequestHandling?: Wafv2WebAclDefaultActionAllowCustomRequestHandling[];
 }
 
 function wafv2WebAclDefaultActionAllowToTerraform(struct?: Wafv2WebAclDefaultActionAllow): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_request_handling: cdktf.listMapper(wafv2WebAclDefaultActionAllowCustomRequestHandlingToTerraform)(struct!.customRequestHandling),
+  }
+}
+
+export interface Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#name Wafv2WebAcl#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#value Wafv2WebAcl#value}
+  */
+  readonly value: string;
+}
+
+function wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderToTerraform(struct?: Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface Wafv2WebAclDefaultActionBlockCustomResponse {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#response_code Wafv2WebAcl#response_code}
+  */
+  readonly responseCode: number;
+  /**
+  * response_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#response_header Wafv2WebAcl#response_header}
+  */
+  readonly responseHeader?: Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader[];
+}
+
+function wafv2WebAclDefaultActionBlockCustomResponseToTerraform(struct?: Wafv2WebAclDefaultActionBlockCustomResponse): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    response_code: cdktf.numberToTerraform(struct!.responseCode),
+    response_header: cdktf.listMapper(wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderToTerraform)(struct!.responseHeader),
   }
 }
 
 export interface Wafv2WebAclDefaultActionBlock {
+  /**
+  * custom_response block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#custom_response Wafv2WebAcl#custom_response}
+  */
+  readonly customResponse?: Wafv2WebAclDefaultActionBlockCustomResponse[];
 }
 
 function wafv2WebAclDefaultActionBlockToTerraform(struct?: Wafv2WebAclDefaultActionBlock): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_response: cdktf.listMapper(wafv2WebAclDefaultActionBlockCustomResponseToTerraform)(struct!.customResponse),
   }
 }
 
@@ -87,30 +176,161 @@ function wafv2WebAclDefaultActionToTerraform(struct?: Wafv2WebAclDefaultAction):
   }
 }
 
+export interface Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#name Wafv2WebAcl#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#value Wafv2WebAcl#value}
+  */
+  readonly value: string;
+}
+
+function wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface Wafv2WebAclRuleActionAllowCustomRequestHandling {
+  /**
+  * insert_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#insert_header Wafv2WebAcl#insert_header}
+  */
+  readonly insertHeader: Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader[];
+}
+
+function wafv2WebAclRuleActionAllowCustomRequestHandlingToTerraform(struct?: Wafv2WebAclRuleActionAllowCustomRequestHandling): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    insert_header: cdktf.listMapper(wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderToTerraform)(struct!.insertHeader),
+  }
+}
+
 export interface Wafv2WebAclRuleActionAllow {
+  /**
+  * custom_request_handling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  */
+  readonly customRequestHandling?: Wafv2WebAclRuleActionAllowCustomRequestHandling[];
 }
 
 function wafv2WebAclRuleActionAllowToTerraform(struct?: Wafv2WebAclRuleActionAllow): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_request_handling: cdktf.listMapper(wafv2WebAclRuleActionAllowCustomRequestHandlingToTerraform)(struct!.customRequestHandling),
+  }
+}
+
+export interface Wafv2WebAclRuleActionBlockCustomResponseResponseHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#name Wafv2WebAcl#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#value Wafv2WebAcl#value}
+  */
+  readonly value: string;
+}
+
+function wafv2WebAclRuleActionBlockCustomResponseResponseHeaderToTerraform(struct?: Wafv2WebAclRuleActionBlockCustomResponseResponseHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface Wafv2WebAclRuleActionBlockCustomResponse {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#response_code Wafv2WebAcl#response_code}
+  */
+  readonly responseCode: number;
+  /**
+  * response_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#response_header Wafv2WebAcl#response_header}
+  */
+  readonly responseHeader?: Wafv2WebAclRuleActionBlockCustomResponseResponseHeader[];
+}
+
+function wafv2WebAclRuleActionBlockCustomResponseToTerraform(struct?: Wafv2WebAclRuleActionBlockCustomResponse): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    response_code: cdktf.numberToTerraform(struct!.responseCode),
+    response_header: cdktf.listMapper(wafv2WebAclRuleActionBlockCustomResponseResponseHeaderToTerraform)(struct!.responseHeader),
   }
 }
 
 export interface Wafv2WebAclRuleActionBlock {
+  /**
+  * custom_response block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#custom_response Wafv2WebAcl#custom_response}
+  */
+  readonly customResponse?: Wafv2WebAclRuleActionBlockCustomResponse[];
 }
 
 function wafv2WebAclRuleActionBlockToTerraform(struct?: Wafv2WebAclRuleActionBlock): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_response: cdktf.listMapper(wafv2WebAclRuleActionBlockCustomResponseToTerraform)(struct!.customResponse),
+  }
+}
+
+export interface Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#name Wafv2WebAcl#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#value Wafv2WebAcl#value}
+  */
+  readonly value: string;
+}
+
+function wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface Wafv2WebAclRuleActionCountCustomRequestHandling {
+  /**
+  * insert_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#insert_header Wafv2WebAcl#insert_header}
+  */
+  readonly insertHeader: Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader[];
+}
+
+function wafv2WebAclRuleActionCountCustomRequestHandlingToTerraform(struct?: Wafv2WebAclRuleActionCountCustomRequestHandling): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    insert_header: cdktf.listMapper(wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderToTerraform)(struct!.insertHeader),
   }
 }
 
 export interface Wafv2WebAclRuleActionCount {
+  /**
+  * custom_request_handling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl.html#custom_request_handling Wafv2WebAcl#custom_request_handling}
+  */
+  readonly customRequestHandling?: Wafv2WebAclRuleActionCountCustomRequestHandling[];
 }
 
 function wafv2WebAclRuleActionCountToTerraform(struct?: Wafv2WebAclRuleActionCount): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_request_handling: cdktf.listMapper(wafv2WebAclRuleActionCountCustomRequestHandlingToTerraform)(struct!.customRequestHandling),
   }
 }
 

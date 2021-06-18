@@ -19,12 +19,6 @@ export interface DataAwsMqBrokerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#tags DataAwsMqBroker#tags}
   */
   readonly tags?: { [key: string]: string };
-  /**
-  * logs block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html#logs DataAwsMqBroker#logs}
-  */
-  readonly logs?: DataAwsMqBrokerLogs[];
 }
 export class DataAwsMqBrokerConfiguration extends cdktf.ComplexComputedList {
 
@@ -124,6 +118,18 @@ export class DataAwsMqBrokerLdapServerMetadata extends cdktf.ComplexComputedList
     return this.getBooleanAttribute('user_search_subtree');
   }
 }
+export class DataAwsMqBrokerLogs extends cdktf.ComplexComputedList {
+
+  // audit - computed: true, optional: false, required: false
+  public get audit() {
+    return this.getStringAttribute('audit');
+  }
+
+  // general - computed: true, optional: false, required: false
+  public get general() {
+    return this.getBooleanAttribute('general');
+  }
+}
 export class DataAwsMqBrokerMaintenanceWindowStartTime extends cdktf.ComplexComputedList {
 
   // day_of_week - computed: true, optional: false, required: false
@@ -158,15 +164,6 @@ export class DataAwsMqBrokerUser extends cdktf.ComplexComputedList {
     return this.getStringAttribute('username');
   }
 }
-export interface DataAwsMqBrokerLogs {
-}
-
-function dataAwsMqBrokerLogsToTerraform(struct?: DataAwsMqBrokerLogs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-  }
-}
-
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/mq_broker.html aws_mq_broker}
@@ -198,7 +195,6 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
     this._brokerId = config.brokerId;
     this._brokerName = config.brokerName;
     this._tags = config.tags;
-    this._logs = config.logs;
   }
 
   // ==========
@@ -297,6 +293,11 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
     return new DataAwsMqBrokerLdapServerMetadata(this, 'ldap_server_metadata', index);
   }
 
+  // logs - computed: true, optional: false, required: false
+  public logs(index: string) {
+    return new DataAwsMqBrokerLogs(this, 'logs', index);
+  }
+
   // maintenance_window_start_time - computed: true, optional: false, required: false
   public maintenanceWindowStartTime(index: string) {
     return new DataAwsMqBrokerMaintenanceWindowStartTime(this, 'maintenance_window_start_time', index);
@@ -343,22 +344,6 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
     return new DataAwsMqBrokerUser(this, 'user', index);
   }
 
-  // logs - computed: false, optional: true, required: false
-  private _logs?: DataAwsMqBrokerLogs[];
-  public get logs() {
-    return this.interpolationForAttribute('logs') as any;
-  }
-  public set logs(value: DataAwsMqBrokerLogs[] ) {
-    this._logs = value;
-  }
-  public resetLogs() {
-    this._logs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get logsInput() {
-    return this._logs
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -368,7 +353,6 @@ export class DataAwsMqBroker extends cdktf.TerraformDataSource {
       broker_id: cdktf.stringToTerraform(this._brokerId),
       broker_name: cdktf.stringToTerraform(this._brokerName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      logs: cdktf.listMapper(dataAwsMqBrokerLogsToTerraform)(this._logs),
     };
   }
 }

@@ -24,6 +24,12 @@ export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#configuration EcsCluster#configuration}
+  */
+  readonly configuration?: EcsClusterConfiguration[];
+  /**
   * default_capacity_provider_strategy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#default_capacity_provider_strategy EcsCluster#default_capacity_provider_strategy}
@@ -36,6 +42,82 @@ export interface EcsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly setting?: EcsClusterSetting[];
 }
+export interface EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#cloud_watch_encryption_enabled EcsCluster#cloud_watch_encryption_enabled}
+  */
+  readonly cloudWatchEncryptionEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#cloud_watch_log_group_name EcsCluster#cloud_watch_log_group_name}
+  */
+  readonly cloudWatchLogGroupName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#s3_bucket_encryption_enabled EcsCluster#s3_bucket_encryption_enabled}
+  */
+  readonly s3BucketEncryptionEnabled?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#s3_bucket_name EcsCluster#s3_bucket_name}
+  */
+  readonly s3BucketName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#s3_key_prefix EcsCluster#s3_key_prefix}
+  */
+  readonly s3KeyPrefix?: string;
+}
+
+function ecsClusterConfigurationExecuteCommandConfigurationLogConfigurationToTerraform(struct?: EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cloud_watch_encryption_enabled: cdktf.booleanToTerraform(struct!.cloudWatchEncryptionEnabled),
+    cloud_watch_log_group_name: cdktf.stringToTerraform(struct!.cloudWatchLogGroupName),
+    s3_bucket_encryption_enabled: cdktf.booleanToTerraform(struct!.s3BucketEncryptionEnabled),
+    s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
+    s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
+  }
+}
+
+export interface EcsClusterConfigurationExecuteCommandConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#kms_key_id EcsCluster#kms_key_id}
+  */
+  readonly kmsKeyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#logging EcsCluster#logging}
+  */
+  readonly logging?: string;
+  /**
+  * log_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#log_configuration EcsCluster#log_configuration}
+  */
+  readonly logConfiguration?: EcsClusterConfigurationExecuteCommandConfigurationLogConfiguration[];
+}
+
+function ecsClusterConfigurationExecuteCommandConfigurationToTerraform(struct?: EcsClusterConfigurationExecuteCommandConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    logging: cdktf.stringToTerraform(struct!.logging),
+    log_configuration: cdktf.listMapper(ecsClusterConfigurationExecuteCommandConfigurationLogConfigurationToTerraform)(struct!.logConfiguration),
+  }
+}
+
+export interface EcsClusterConfiguration {
+  /**
+  * execute_command_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#execute_command_configuration EcsCluster#execute_command_configuration}
+  */
+  readonly executeCommandConfiguration?: EcsClusterConfigurationExecuteCommandConfiguration[];
+}
+
+function ecsClusterConfigurationToTerraform(struct?: EcsClusterConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    execute_command_configuration: cdktf.listMapper(ecsClusterConfigurationExecuteCommandConfigurationToTerraform)(struct!.executeCommandConfiguration),
+  }
+}
+
 export interface EcsClusterDefaultCapacityProviderStrategy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_cluster.html#base EcsCluster#base}
@@ -111,6 +193,7 @@ export class EcsCluster extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._configuration = config.configuration;
     this._defaultCapacityProviderStrategy = config.defaultCapacityProviderStrategy;
     this._setting = config.setting;
   }
@@ -190,6 +273,22 @@ export class EcsCluster extends cdktf.TerraformResource {
     return this._tagsAll
   }
 
+  // configuration - computed: false, optional: true, required: false
+  private _configuration?: EcsClusterConfiguration[];
+  public get configuration() {
+    return this.interpolationForAttribute('configuration') as any;
+  }
+  public set configuration(value: EcsClusterConfiguration[] ) {
+    this._configuration = value;
+  }
+  public resetConfiguration() {
+    this._configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInput() {
+    return this._configuration
+  }
+
   // default_capacity_provider_strategy - computed: false, optional: true, required: false
   private _defaultCapacityProviderStrategy?: EcsClusterDefaultCapacityProviderStrategy[];
   public get defaultCapacityProviderStrategy() {
@@ -232,6 +331,7 @@ export class EcsCluster extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      configuration: cdktf.listMapper(ecsClusterConfigurationToTerraform)(this._configuration),
       default_capacity_provider_strategy: cdktf.listMapper(ecsClusterDefaultCapacityProviderStrategyToTerraform)(this._defaultCapacityProviderStrategy),
       setting: cdktf.listMapper(ecsClusterSettingToTerraform)(this._setting),
     };

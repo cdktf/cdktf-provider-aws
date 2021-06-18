@@ -36,6 +36,18 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   */
   readonly loadBalancers?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#on_demand_allocation_strategy SpotFleetRequest#on_demand_allocation_strategy}
+  */
+  readonly onDemandAllocationStrategy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#on_demand_max_total_price SpotFleetRequest#on_demand_max_total_price}
+  */
+  readonly onDemandMaxTotalPrice?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#on_demand_target_capacity SpotFleetRequest#on_demand_target_capacity}
+  */
+  readonly onDemandTargetCapacity?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#replace_unhealthy_instances SpotFleetRequest#replace_unhealthy_instances}
   */
   readonly replaceUnhealthyInstances?: boolean;
@@ -502,6 +514,9 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
     this._instanceInterruptionBehaviour = config.instanceInterruptionBehaviour;
     this._instancePoolsToUseCount = config.instancePoolsToUseCount;
     this._loadBalancers = config.loadBalancers;
+    this._onDemandAllocationStrategy = config.onDemandAllocationStrategy;
+    this._onDemandMaxTotalPrice = config.onDemandMaxTotalPrice;
+    this._onDemandTargetCapacity = config.onDemandTargetCapacity;
     this._replaceUnhealthyInstances = config.replaceUnhealthyInstances;
     this._spotPrice = config.spotPrice;
     this._tags = config.tags;
@@ -639,6 +654,54 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get loadBalancersInput() {
     return this._loadBalancers
+  }
+
+  // on_demand_allocation_strategy - computed: false, optional: true, required: false
+  private _onDemandAllocationStrategy?: string;
+  public get onDemandAllocationStrategy() {
+    return this.getStringAttribute('on_demand_allocation_strategy');
+  }
+  public set onDemandAllocationStrategy(value: string ) {
+    this._onDemandAllocationStrategy = value;
+  }
+  public resetOnDemandAllocationStrategy() {
+    this._onDemandAllocationStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onDemandAllocationStrategyInput() {
+    return this._onDemandAllocationStrategy
+  }
+
+  // on_demand_max_total_price - computed: false, optional: true, required: false
+  private _onDemandMaxTotalPrice?: string;
+  public get onDemandMaxTotalPrice() {
+    return this.getStringAttribute('on_demand_max_total_price');
+  }
+  public set onDemandMaxTotalPrice(value: string ) {
+    this._onDemandMaxTotalPrice = value;
+  }
+  public resetOnDemandMaxTotalPrice() {
+    this._onDemandMaxTotalPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onDemandMaxTotalPriceInput() {
+    return this._onDemandMaxTotalPrice
+  }
+
+  // on_demand_target_capacity - computed: false, optional: true, required: false
+  private _onDemandTargetCapacity?: number;
+  public get onDemandTargetCapacity() {
+    return this.getNumberAttribute('on_demand_target_capacity');
+  }
+  public set onDemandTargetCapacity(value: number ) {
+    this._onDemandTargetCapacity = value;
+  }
+  public resetOnDemandTargetCapacity() {
+    this._onDemandTargetCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onDemandTargetCapacityInput() {
+    return this._onDemandTargetCapacity
   }
 
   // replace_unhealthy_instances - computed: false, optional: true, required: false
@@ -880,6 +943,9 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
       instance_interruption_behaviour: cdktf.stringToTerraform(this._instanceInterruptionBehaviour),
       instance_pools_to_use_count: cdktf.numberToTerraform(this._instancePoolsToUseCount),
       load_balancers: cdktf.listMapper(cdktf.stringToTerraform)(this._loadBalancers),
+      on_demand_allocation_strategy: cdktf.stringToTerraform(this._onDemandAllocationStrategy),
+      on_demand_max_total_price: cdktf.stringToTerraform(this._onDemandMaxTotalPrice),
+      on_demand_target_capacity: cdktf.numberToTerraform(this._onDemandTargetCapacity),
       replace_unhealthy_instances: cdktf.booleanToTerraform(this._replaceUnhealthyInstances),
       spot_price: cdktf.stringToTerraform(this._spotPrice),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

@@ -44,6 +44,10 @@ export interface Ec2CapacityReservationConfig extends cdktf.TerraformMetaArgumen
   */
   readonly instanceType: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_capacity_reservation.html#outpost_arn Ec2CapacityReservation#outpost_arn}
+  */
+  readonly outpostArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_capacity_reservation.html#tags Ec2CapacityReservation#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -93,6 +97,7 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
     this._instanceMatchCriteria = config.instanceMatchCriteria;
     this._instancePlatform = config.instancePlatform;
     this._instanceType = config.instanceType;
+    this._outpostArn = config.outpostArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._tenancy = config.tenancy;
@@ -244,6 +249,22 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
     return this._instanceType
   }
 
+  // outpost_arn - computed: false, optional: true, required: false
+  private _outpostArn?: string;
+  public get outpostArn() {
+    return this.getStringAttribute('outpost_arn');
+  }
+  public set outpostArn(value: string ) {
+    this._outpostArn = value;
+  }
+  public resetOutpostArn() {
+    this._outpostArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outpostArnInput() {
+    return this._outpostArn
+  }
+
   // owner_id - computed: true, optional: false, required: false
   public get ownerId() {
     return this.getStringAttribute('owner_id');
@@ -312,6 +333,7 @@ export class Ec2CapacityReservation extends cdktf.TerraformResource {
       instance_match_criteria: cdktf.stringToTerraform(this._instanceMatchCriteria),
       instance_platform: cdktf.stringToTerraform(this._instancePlatform),
       instance_type: cdktf.stringToTerraform(this._instanceType),
+      outpost_arn: cdktf.stringToTerraform(this._outpostArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       tenancy: cdktf.stringToTerraform(this._tenancy),

@@ -24,6 +24,10 @@ export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments 
   */
   readonly dailyAutomaticBackupStartTime?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#data_compression_type FsxLustreFileSystem#data_compression_type}
+  */
+  readonly dataCompressionType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#deployment_type FsxLustreFileSystem#deployment_type}
   */
   readonly deploymentType?: string;
@@ -137,6 +141,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     this._automaticBackupRetentionDays = config.automaticBackupRetentionDays;
     this._copyTagsToBackups = config.copyTagsToBackups;
     this._dailyAutomaticBackupStartTime = config.dailyAutomaticBackupStartTime;
+    this._dataCompressionType = config.dataCompressionType;
     this._deploymentType = config.deploymentType;
     this._driveCacheType = config.driveCacheType;
     this._exportPath = config.exportPath;
@@ -225,6 +230,22 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get dailyAutomaticBackupStartTimeInput() {
     return this._dailyAutomaticBackupStartTime
+  }
+
+  // data_compression_type - computed: false, optional: true, required: false
+  private _dataCompressionType?: string;
+  public get dataCompressionType() {
+    return this.getStringAttribute('data_compression_type');
+  }
+  public set dataCompressionType(value: string ) {
+    this._dataCompressionType = value;
+  }
+  public resetDataCompressionType() {
+    this._dataCompressionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataCompressionTypeInput() {
+    return this._dataCompressionType
   }
 
   // deployment_type - computed: false, optional: true, required: false
@@ -501,6 +522,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
       automatic_backup_retention_days: cdktf.numberToTerraform(this._automaticBackupRetentionDays),
       copy_tags_to_backups: cdktf.booleanToTerraform(this._copyTagsToBackups),
       daily_automatic_backup_start_time: cdktf.stringToTerraform(this._dailyAutomaticBackupStartTime),
+      data_compression_type: cdktf.stringToTerraform(this._dataCompressionType),
       deployment_type: cdktf.stringToTerraform(this._deploymentType),
       drive_cache_type: cdktf.stringToTerraform(this._driveCacheType),
       export_path: cdktf.stringToTerraform(this._exportPath),

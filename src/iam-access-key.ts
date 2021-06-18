@@ -103,12 +103,12 @@ export class IamAccessKey extends cdktf.TerraformResource {
     return this.getStringAttribute('ses_smtp_password_v4');
   }
 
-  // status - computed: true, optional: true, required: false
+  // status - computed: false, optional: true, required: false
   private _status?: string;
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string) {
+  public set status(value: string ) {
     this._status = value;
   }
   public resetStatus() {

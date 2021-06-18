@@ -44,30 +44,161 @@ export interface Wafv2RuleGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly visibilityConfig: Wafv2RuleGroupVisibilityConfig[];
 }
+export interface Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#name Wafv2RuleGroup#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#value Wafv2RuleGroup#value}
+  */
+  readonly value: string;
+}
+
+function wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface Wafv2RuleGroupRuleActionAllowCustomRequestHandling {
+  /**
+  * insert_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#insert_header Wafv2RuleGroup#insert_header}
+  */
+  readonly insertHeader: Wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeader[];
+}
+
+function wafv2RuleGroupRuleActionAllowCustomRequestHandlingToTerraform(struct?: Wafv2RuleGroupRuleActionAllowCustomRequestHandling): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    insert_header: cdktf.listMapper(wafv2RuleGroupRuleActionAllowCustomRequestHandlingInsertHeaderToTerraform)(struct!.insertHeader),
+  }
+}
+
 export interface Wafv2RuleGroupRuleActionAllow {
+  /**
+  * custom_request_handling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+  */
+  readonly customRequestHandling?: Wafv2RuleGroupRuleActionAllowCustomRequestHandling[];
 }
 
 function wafv2RuleGroupRuleActionAllowToTerraform(struct?: Wafv2RuleGroupRuleActionAllow): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_request_handling: cdktf.listMapper(wafv2RuleGroupRuleActionAllowCustomRequestHandlingToTerraform)(struct!.customRequestHandling),
+  }
+}
+
+export interface Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#name Wafv2RuleGroup#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#value Wafv2RuleGroup#value}
+  */
+  readonly value: string;
+}
+
+function wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface Wafv2RuleGroupRuleActionBlockCustomResponse {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#response_code Wafv2RuleGroup#response_code}
+  */
+  readonly responseCode: number;
+  /**
+  * response_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#response_header Wafv2RuleGroup#response_header}
+  */
+  readonly responseHeader?: Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeader[];
+}
+
+function wafv2RuleGroupRuleActionBlockCustomResponseToTerraform(struct?: Wafv2RuleGroupRuleActionBlockCustomResponse): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    response_code: cdktf.numberToTerraform(struct!.responseCode),
+    response_header: cdktf.listMapper(wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderToTerraform)(struct!.responseHeader),
   }
 }
 
 export interface Wafv2RuleGroupRuleActionBlock {
+  /**
+  * custom_response block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#custom_response Wafv2RuleGroup#custom_response}
+  */
+  readonly customResponse?: Wafv2RuleGroupRuleActionBlockCustomResponse[];
 }
 
 function wafv2RuleGroupRuleActionBlockToTerraform(struct?: Wafv2RuleGroupRuleActionBlock): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_response: cdktf.listMapper(wafv2RuleGroupRuleActionBlockCustomResponseToTerraform)(struct!.customResponse),
+  }
+}
+
+export interface Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#name Wafv2RuleGroup#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#value Wafv2RuleGroup#value}
+  */
+  readonly value: string;
+}
+
+function wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToTerraform(struct?: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface Wafv2RuleGroupRuleActionCountCustomRequestHandling {
+  /**
+  * insert_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#insert_header Wafv2RuleGroup#insert_header}
+  */
+  readonly insertHeader: Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeader[];
+}
+
+function wafv2RuleGroupRuleActionCountCustomRequestHandlingToTerraform(struct?: Wafv2RuleGroupRuleActionCountCustomRequestHandling): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    insert_header: cdktf.listMapper(wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderToTerraform)(struct!.insertHeader),
   }
 }
 
 export interface Wafv2RuleGroupRuleActionCount {
+  /**
+  * custom_request_handling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group.html#custom_request_handling Wafv2RuleGroup#custom_request_handling}
+  */
+  readonly customRequestHandling?: Wafv2RuleGroupRuleActionCountCustomRequestHandling[];
 }
 
 function wafv2RuleGroupRuleActionCountToTerraform(struct?: Wafv2RuleGroupRuleActionCount): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    custom_request_handling: cdktf.listMapper(wafv2RuleGroupRuleActionCountCustomRequestHandlingToTerraform)(struct!.customRequestHandling),
   }
 }
 

@@ -16,6 +16,10 @@ export interface DefaultVpcDhcpOptionsConfig extends cdktf.TerraformMetaArgument
   */
   readonly netbiosNodeType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc_dhcp_options.html#owner_id DefaultVpcDhcpOptions#owner_id}
+  */
+  readonly ownerId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc_dhcp_options.html#tags DefaultVpcDhcpOptions#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -54,6 +58,7 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
     });
     this._netbiosNameServers = config.netbiosNameServers;
     this._netbiosNodeType = config.netbiosNodeType;
+    this._ownerId = config.ownerId;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
   }
@@ -119,9 +124,20 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
     return this.getStringAttribute('ntp_servers');
   }
 
-  // owner_id - computed: true, optional: false, required: false
+  // owner_id - computed: true, optional: true, required: false
+  private _ownerId?: string;
   public get ownerId() {
     return this.getStringAttribute('owner_id');
+  }
+  public set ownerId(value: string) {
+    this._ownerId = value;
+  }
+  public resetOwnerId() {
+    this._ownerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerIdInput() {
+    return this._ownerId
   }
 
   // tags - computed: false, optional: true, required: false
@@ -164,6 +180,7 @@ export class DefaultVpcDhcpOptions extends cdktf.TerraformResource {
     return {
       netbios_name_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._netbiosNameServers),
       netbios_node_type: cdktf.stringToTerraform(this._netbiosNodeType),
+      owner_id: cdktf.stringToTerraform(this._ownerId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };

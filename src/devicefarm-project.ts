@@ -8,9 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DevicefarmProjectConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_project.html#default_job_timeout_minutes DevicefarmProject#default_job_timeout_minutes}
+  */
+  readonly defaultJobTimeoutMinutes?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_project.html#name DevicefarmProject#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_project.html#tags DevicefarmProject#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_project.html#tags_all DevicefarmProject#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
 }
 
 /**
@@ -40,7 +52,10 @@ export class DevicefarmProject extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._defaultJobTimeoutMinutes = config.defaultJobTimeoutMinutes;
     this._name = config.name;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
   }
 
   // ==========
@@ -50,6 +65,22 @@ export class DevicefarmProject extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // default_job_timeout_minutes - computed: false, optional: true, required: false
+  private _defaultJobTimeoutMinutes?: number;
+  public get defaultJobTimeoutMinutes() {
+    return this.getNumberAttribute('default_job_timeout_minutes');
+  }
+  public set defaultJobTimeoutMinutes(value: number ) {
+    this._defaultJobTimeoutMinutes = value;
+  }
+  public resetDefaultJobTimeoutMinutes() {
+    this._defaultJobTimeoutMinutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultJobTimeoutMinutesInput() {
+    return this._defaultJobTimeoutMinutes
   }
 
   // id - computed: true, optional: true, required: false
@@ -70,13 +101,48 @@ export class DevicefarmProject extends cdktf.TerraformResource {
     return this._name
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      default_job_timeout_minutes: cdktf.numberToTerraform(this._defaultJobTimeoutMinutes),
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
   }
 }

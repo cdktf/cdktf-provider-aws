@@ -664,6 +664,25 @@ function cloudfrontDistributionOriginCustomOriginConfigToTerraform(struct?: Clou
   }
 }
 
+export interface CloudfrontDistributionOriginOriginShield {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#enabled CloudfrontDistribution#enabled}
+  */
+  readonly enabled: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#origin_shield_region CloudfrontDistribution#origin_shield_region}
+  */
+  readonly originShieldRegion: string;
+}
+
+function cloudfrontDistributionOriginOriginShieldToTerraform(struct?: CloudfrontDistributionOriginOriginShield): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    origin_shield_region: cdktf.stringToTerraform(struct!.originShieldRegion),
+  }
+}
+
 export interface CloudfrontDistributionOriginS3OriginConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#origin_access_identity CloudfrontDistribution#origin_access_identity}
@@ -679,6 +698,14 @@ function cloudfrontDistributionOriginS3OriginConfigToTerraform(struct?: Cloudfro
 }
 
 export interface CloudfrontDistributionOrigin {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#connection_attempts CloudfrontDistribution#connection_attempts}
+  */
+  readonly connectionAttempts?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#connection_timeout CloudfrontDistribution#connection_timeout}
+  */
+  readonly connectionTimeout?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#domain_name CloudfrontDistribution#domain_name}
   */
@@ -704,6 +731,12 @@ export interface CloudfrontDistributionOrigin {
   */
   readonly customOriginConfig?: CloudfrontDistributionOriginCustomOriginConfig[];
   /**
+  * origin_shield block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#origin_shield CloudfrontDistribution#origin_shield}
+  */
+  readonly originShield?: CloudfrontDistributionOriginOriginShield[];
+  /**
   * s3_origin_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#s3_origin_config CloudfrontDistribution#s3_origin_config}
@@ -714,11 +747,14 @@ export interface CloudfrontDistributionOrigin {
 function cloudfrontDistributionOriginToTerraform(struct?: CloudfrontDistributionOrigin): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    connection_attempts: cdktf.numberToTerraform(struct!.connectionAttempts),
+    connection_timeout: cdktf.numberToTerraform(struct!.connectionTimeout),
     domain_name: cdktf.stringToTerraform(struct!.domainName),
     origin_id: cdktf.stringToTerraform(struct!.originId),
     origin_path: cdktf.stringToTerraform(struct!.originPath),
     custom_header: cdktf.listMapper(cloudfrontDistributionOriginCustomHeaderToTerraform)(struct!.customHeader),
     custom_origin_config: cdktf.listMapper(cloudfrontDistributionOriginCustomOriginConfigToTerraform)(struct!.customOriginConfig),
+    origin_shield: cdktf.listMapper(cloudfrontDistributionOriginOriginShieldToTerraform)(struct!.originShield),
     s3_origin_config: cdktf.listMapper(cloudfrontDistributionOriginS3OriginConfigToTerraform)(struct!.s3OriginConfig),
   }
 }

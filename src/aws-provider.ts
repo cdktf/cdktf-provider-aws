@@ -338,6 +338,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chime AwsProvider#chime}
+  */
+  readonly chime?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloud9 AwsProvider#cloud9}
   */
   readonly cloud9?: string;
@@ -776,6 +782,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#location AwsProvider#location}
+  */
+  readonly location?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#macie AwsProvider#macie}
   */
   readonly macie?: string;
@@ -986,6 +998,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#schemas AwsProvider#schemas}
+  */
+  readonly schemas?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#sdb AwsProvider#sdb}
   */
   readonly sdb?: string;
@@ -1175,6 +1193,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     backup: cdktf.stringToTerraform(struct!.backup),
     batch: cdktf.stringToTerraform(struct!.batch),
     budgets: cdktf.stringToTerraform(struct!.budgets),
+    chime: cdktf.stringToTerraform(struct!.chime),
     cloud9: cdktf.stringToTerraform(struct!.cloud9),
     cloudformation: cdktf.stringToTerraform(struct!.cloudformation),
     cloudfront: cdktf.stringToTerraform(struct!.cloudfront),
@@ -1248,6 +1267,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     lexmodels: cdktf.stringToTerraform(struct!.lexmodels),
     licensemanager: cdktf.stringToTerraform(struct!.licensemanager),
     lightsail: cdktf.stringToTerraform(struct!.lightsail),
+    location: cdktf.stringToTerraform(struct!.location),
     macie: cdktf.stringToTerraform(struct!.macie),
     macie2: cdktf.stringToTerraform(struct!.macie2),
     managedblockchain: cdktf.stringToTerraform(struct!.managedblockchain),
@@ -1283,6 +1303,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     s3control: cdktf.stringToTerraform(struct!.s3Control),
     s3outposts: cdktf.stringToTerraform(struct!.s3Outposts),
     sagemaker: cdktf.stringToTerraform(struct!.sagemaker),
+    schemas: cdktf.stringToTerraform(struct!.schemas),
     sdb: cdktf.stringToTerraform(struct!.sdb),
     secretsmanager: cdktf.stringToTerraform(struct!.secretsmanager),
     securityhub: cdktf.stringToTerraform(struct!.securityhub),

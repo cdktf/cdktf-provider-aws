@@ -93,6 +93,11 @@ export class DataAwsNatGateway extends cdktf.TerraformDataSource {
     return this.getStringAttribute('allocation_id');
   }
 
+  // connectivity_type - computed: true, optional: false, required: false
+  public get connectivityType() {
+    return this.getStringAttribute('connectivity_type');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
