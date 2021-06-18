@@ -36,6 +36,18 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   */
   readonly fifoTopic?: boolean;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#firehose_failure_feedback_role_arn SnsTopic#firehose_failure_feedback_role_arn}
+  */
+  readonly firehoseFailureFeedbackRoleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#firehose_success_feedback_role_arn SnsTopic#firehose_success_feedback_role_arn}
+  */
+  readonly firehoseSuccessFeedbackRoleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#firehose_success_feedback_sample_rate SnsTopic#firehose_success_feedback_sample_rate}
+  */
+  readonly firehoseSuccessFeedbackSampleRate?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#http_failure_feedback_role_arn SnsTopic#http_failure_feedback_role_arn}
   */
   readonly httpFailureFeedbackRoleArn?: string;
@@ -131,6 +143,9 @@ export class SnsTopic extends cdktf.TerraformResource {
     this._deliveryPolicy = config.deliveryPolicy;
     this._displayName = config.displayName;
     this._fifoTopic = config.fifoTopic;
+    this._firehoseFailureFeedbackRoleArn = config.firehoseFailureFeedbackRoleArn;
+    this._firehoseSuccessFeedbackRoleArn = config.firehoseSuccessFeedbackRoleArn;
+    this._firehoseSuccessFeedbackSampleRate = config.firehoseSuccessFeedbackSampleRate;
     this._httpFailureFeedbackRoleArn = config.httpFailureFeedbackRoleArn;
     this._httpSuccessFeedbackRoleArn = config.httpSuccessFeedbackRoleArn;
     this._httpSuccessFeedbackSampleRate = config.httpSuccessFeedbackSampleRate;
@@ -267,6 +282,54 @@ export class SnsTopic extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get fifoTopicInput() {
     return this._fifoTopic
+  }
+
+  // firehose_failure_feedback_role_arn - computed: false, optional: true, required: false
+  private _firehoseFailureFeedbackRoleArn?: string;
+  public get firehoseFailureFeedbackRoleArn() {
+    return this.getStringAttribute('firehose_failure_feedback_role_arn');
+  }
+  public set firehoseFailureFeedbackRoleArn(value: string ) {
+    this._firehoseFailureFeedbackRoleArn = value;
+  }
+  public resetFirehoseFailureFeedbackRoleArn() {
+    this._firehoseFailureFeedbackRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firehoseFailureFeedbackRoleArnInput() {
+    return this._firehoseFailureFeedbackRoleArn
+  }
+
+  // firehose_success_feedback_role_arn - computed: false, optional: true, required: false
+  private _firehoseSuccessFeedbackRoleArn?: string;
+  public get firehoseSuccessFeedbackRoleArn() {
+    return this.getStringAttribute('firehose_success_feedback_role_arn');
+  }
+  public set firehoseSuccessFeedbackRoleArn(value: string ) {
+    this._firehoseSuccessFeedbackRoleArn = value;
+  }
+  public resetFirehoseSuccessFeedbackRoleArn() {
+    this._firehoseSuccessFeedbackRoleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firehoseSuccessFeedbackRoleArnInput() {
+    return this._firehoseSuccessFeedbackRoleArn
+  }
+
+  // firehose_success_feedback_sample_rate - computed: false, optional: true, required: false
+  private _firehoseSuccessFeedbackSampleRate?: number;
+  public get firehoseSuccessFeedbackSampleRate() {
+    return this.getNumberAttribute('firehose_success_feedback_sample_rate');
+  }
+  public set firehoseSuccessFeedbackSampleRate(value: number ) {
+    this._firehoseSuccessFeedbackSampleRate = value;
+  }
+  public resetFirehoseSuccessFeedbackSampleRate() {
+    this._firehoseSuccessFeedbackSampleRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firehoseSuccessFeedbackSampleRateInput() {
+    return this._firehoseSuccessFeedbackSampleRate
   }
 
   // http_failure_feedback_role_arn - computed: false, optional: true, required: false
@@ -418,6 +481,11 @@ export class SnsTopic extends cdktf.TerraformResource {
     return this._namePrefix
   }
 
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+
   // policy - computed: true, optional: true, required: false
   private _policy?: string;
   public get policy() {
@@ -527,6 +595,9 @@ export class SnsTopic extends cdktf.TerraformResource {
       delivery_policy: cdktf.stringToTerraform(this._deliveryPolicy),
       display_name: cdktf.stringToTerraform(this._displayName),
       fifo_topic: cdktf.booleanToTerraform(this._fifoTopic),
+      firehose_failure_feedback_role_arn: cdktf.stringToTerraform(this._firehoseFailureFeedbackRoleArn),
+      firehose_success_feedback_role_arn: cdktf.stringToTerraform(this._firehoseSuccessFeedbackRoleArn),
+      firehose_success_feedback_sample_rate: cdktf.numberToTerraform(this._firehoseSuccessFeedbackSampleRate),
       http_failure_feedback_role_arn: cdktf.stringToTerraform(this._httpFailureFeedbackRoleArn),
       http_success_feedback_role_arn: cdktf.stringToTerraform(this._httpSuccessFeedbackRoleArn),
       http_success_feedback_sample_rate: cdktf.numberToTerraform(this._httpSuccessFeedbackSampleRate),

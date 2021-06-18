@@ -24,12 +24,32 @@ export interface DatasyncLocationNfsConfig extends cdktf.TerraformMetaArguments 
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * mount_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_nfs.html#mount_options DatasyncLocationNfs#mount_options}
+  */
+  readonly mountOptions?: DatasyncLocationNfsMountOptions[];
+  /**
   * on_prem_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_nfs.html#on_prem_config DatasyncLocationNfs#on_prem_config}
   */
   readonly onPremConfig: DatasyncLocationNfsOnPremConfig[];
 }
+export interface DatasyncLocationNfsMountOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_nfs.html#version DatasyncLocationNfs#version}
+  */
+  readonly version?: string;
+}
+
+function datasyncLocationNfsMountOptionsToTerraform(struct?: DatasyncLocationNfsMountOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface DatasyncLocationNfsOnPremConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_nfs.html#agent_arns DatasyncLocationNfs#agent_arns}
@@ -76,6 +96,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
     this._subdirectory = config.subdirectory;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._mountOptions = config.mountOptions;
     this._onPremConfig = config.onPremConfig;
   }
 
@@ -156,6 +177,22 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
     return this.getStringAttribute('uri');
   }
 
+  // mount_options - computed: false, optional: true, required: false
+  private _mountOptions?: DatasyncLocationNfsMountOptions[];
+  public get mountOptions() {
+    return this.interpolationForAttribute('mount_options') as any;
+  }
+  public set mountOptions(value: DatasyncLocationNfsMountOptions[] ) {
+    this._mountOptions = value;
+  }
+  public resetMountOptions() {
+    this._mountOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mountOptionsInput() {
+    return this._mountOptions
+  }
+
   // on_prem_config - computed: false, optional: false, required: true
   private _onPremConfig: DatasyncLocationNfsOnPremConfig[];
   public get onPremConfig() {
@@ -179,6 +216,7 @@ export class DatasyncLocationNfs extends cdktf.TerraformResource {
       subdirectory: cdktf.stringToTerraform(this._subdirectory),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      mount_options: cdktf.listMapper(datasyncLocationNfsMountOptionsToTerraform)(this._mountOptions),
       on_prem_config: cdktf.listMapper(datasyncLocationNfsOnPremConfigToTerraform)(this._onPremConfig),
     };
   }

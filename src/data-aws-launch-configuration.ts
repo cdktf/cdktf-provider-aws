@@ -44,6 +44,11 @@ export class DataAwsLaunchConfigurationEbsBlockDevice extends cdktf.ComplexCompu
     return this.getStringAttribute('snapshot_id');
   }
 
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getBooleanAttribute('throughput');
+  }
+
   // volume_size - computed: true, optional: false, required: false
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
@@ -98,6 +103,11 @@ export class DataAwsLaunchConfigurationRootBlockDevice extends cdktf.ComplexComp
   // iops - computed: true, optional: false, required: false
   public get iops() {
     return this.getNumberAttribute('iops');
+  }
+
+  // throughput - computed: true, optional: false, required: false
+  public get throughput() {
+    return this.getBooleanAttribute('throughput');
   }
 
   // volume_size - computed: true, optional: false, required: false

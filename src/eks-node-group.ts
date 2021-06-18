@@ -86,6 +86,12 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly scalingConfig: EksNodeGroupScalingConfig[];
   /**
+  * taint block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#taint EksNodeGroup#taint}
+  */
+  readonly taint?: EksNodeGroupTaint[];
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#timeouts EksNodeGroup#timeouts}
@@ -178,6 +184,30 @@ function eksNodeGroupScalingConfigToTerraform(struct?: EksNodeGroupScalingConfig
   }
 }
 
+export interface EksNodeGroupTaint {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#effect EksNodeGroup#effect}
+  */
+  readonly effect: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#key EksNodeGroup#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#value EksNodeGroup#value}
+  */
+  readonly value?: string;
+}
+
+function eksNodeGroupTaintToTerraform(struct?: EksNodeGroupTaint): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    effect: cdktf.stringToTerraform(struct!.effect),
+    key: cdktf.stringToTerraform(struct!.key),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
 export interface EksNodeGroupTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#create EksNodeGroup#create}
@@ -248,6 +278,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     this._launchTemplate = config.launchTemplate;
     this._remoteAccess = config.remoteAccess;
     this._scalingConfig = config.scalingConfig;
+    this._taint = config.taint;
     this._timeouts = config.timeouts;
   }
 
@@ -551,6 +582,22 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     return this._scalingConfig
   }
 
+  // taint - computed: false, optional: true, required: false
+  private _taint?: EksNodeGroupTaint[];
+  public get taint() {
+    return this.interpolationForAttribute('taint') as any;
+  }
+  public set taint(value: EksNodeGroupTaint[] ) {
+    this._taint = value;
+  }
+  public resetTaint() {
+    this._taint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get taintInput() {
+    return this._taint
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: EksNodeGroupTimeouts;
   public get timeouts() {
@@ -591,6 +638,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       launch_template: cdktf.listMapper(eksNodeGroupLaunchTemplateToTerraform)(this._launchTemplate),
       remote_access: cdktf.listMapper(eksNodeGroupRemoteAccessToTerraform)(this._remoteAccess),
       scaling_config: cdktf.listMapper(eksNodeGroupScalingConfigToTerraform)(this._scalingConfig),
+      taint: cdktf.listMapper(eksNodeGroupTaintToTerraform)(this._taint),
       timeouts: eksNodeGroupTimeoutsToTerraform(this._timeouts),
     };
   }

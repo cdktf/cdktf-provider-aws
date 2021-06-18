@@ -20,6 +20,14 @@ export interface ElasticacheParameterGroupConfig extends cdktf.TerraformMetaArgu
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_parameter_group.html#tags ElasticacheParameterGroup#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_parameter_group.html#tags_all ElasticacheParameterGroup#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string };
+  /**
   * parameter block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_parameter_group.html#parameter ElasticacheParameterGroup#parameter}
@@ -76,12 +84,19 @@ export class ElasticacheParameterGroup extends cdktf.TerraformResource {
     this._description = config.description;
     this._family = config.family;
     this._name = config.name;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
     this._parameter = config.parameter;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
@@ -130,6 +145,38 @@ export class ElasticacheParameterGroup extends cdktf.TerraformResource {
     return this._name
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string };
+  public get tags() {
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } ) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string }
+  public get tagsAll(): { [key: string]: string } {
+    return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
+  }
+  public set tagsAll(value: { [key: string]: string }) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll
+  }
+
   // parameter - computed: false, optional: true, required: false
   private _parameter?: ElasticacheParameterGroupParameter[];
   public get parameter() {
@@ -155,6 +202,8 @@ export class ElasticacheParameterGroup extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       family: cdktf.stringToTerraform(this._family),
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       parameter: cdktf.listMapper(elasticacheParameterGroupParameterToTerraform)(this._parameter),
     };
   }

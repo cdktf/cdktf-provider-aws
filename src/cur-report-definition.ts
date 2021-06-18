@@ -126,6 +126,11 @@ export class CurReportDefinition extends cdktf.TerraformResource {
     return this._additionalSchemaElements
   }
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // compression - computed: false, optional: false, required: true
   private _compression: string;
   public get compression() {

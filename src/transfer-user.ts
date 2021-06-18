@@ -45,6 +45,12 @@ export interface TransferUserConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_user.html#home_directory_mappings TransferUser#home_directory_mappings}
   */
   readonly homeDirectoryMappings?: TransferUserHomeDirectoryMappings[];
+  /**
+  * posix_profile block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_user.html#posix_profile TransferUser#posix_profile}
+  */
+  readonly posixProfile?: TransferUserPosixProfile[];
 }
 export interface TransferUserHomeDirectoryMappings {
   /**
@@ -62,6 +68,30 @@ function transferUserHomeDirectoryMappingsToTerraform(struct?: TransferUserHomeD
   return {
     entry: cdktf.stringToTerraform(struct!.entry),
     target: cdktf.stringToTerraform(struct!.target),
+  }
+}
+
+export interface TransferUserPosixProfile {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_user.html#gid TransferUser#gid}
+  */
+  readonly gid: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_user.html#secondary_gids TransferUser#secondary_gids}
+  */
+  readonly secondaryGids?: number[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_user.html#uid TransferUser#uid}
+  */
+  readonly uid: number;
+}
+
+function transferUserPosixProfileToTerraform(struct?: TransferUserPosixProfile): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    gid: cdktf.numberToTerraform(struct!.gid),
+    secondary_gids: cdktf.listMapper(cdktf.numberToTerraform)(struct!.secondaryGids),
+    uid: cdktf.numberToTerraform(struct!.uid),
   }
 }
 
@@ -102,6 +132,7 @@ export class TransferUser extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._userName = config.userName;
     this._homeDirectoryMappings = config.homeDirectoryMappings;
+    this._posixProfile = config.posixProfile;
   }
 
   // ==========
@@ -253,6 +284,22 @@ export class TransferUser extends cdktf.TerraformResource {
     return this._homeDirectoryMappings
   }
 
+  // posix_profile - computed: false, optional: true, required: false
+  private _posixProfile?: TransferUserPosixProfile[];
+  public get posixProfile() {
+    return this.interpolationForAttribute('posix_profile') as any;
+  }
+  public set posixProfile(value: TransferUserPosixProfile[] ) {
+    this._posixProfile = value;
+  }
+  public resetPosixProfile() {
+    this._posixProfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get posixProfileInput() {
+    return this._posixProfile
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -268,6 +315,7 @@ export class TransferUser extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       user_name: cdktf.stringToTerraform(this._userName),
       home_directory_mappings: cdktf.listMapper(transferUserHomeDirectoryMappingsToTerraform)(this._homeDirectoryMappings),
+      posix_profile: cdktf.listMapper(transferUserPosixProfileToTerraform)(this._posixProfile),
     };
   }
 }

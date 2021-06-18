@@ -12,6 +12,10 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly certificate?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server.html#domain TransferServer#domain}
+  */
+  readonly domain?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server.html#endpoint_type TransferServer#endpoint_type}
   */
   readonly endpointType?: string;
@@ -120,6 +124,7 @@ export class TransferServer extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._certificate = config.certificate;
+    this._domain = config.domain;
     this._endpointType = config.endpointType;
     this._forceDestroy = config.forceDestroy;
     this._hostKey = config.hostKey;
@@ -157,6 +162,22 @@ export class TransferServer extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get certificateInput() {
     return this._certificate
+  }
+
+  // domain - computed: false, optional: true, required: false
+  private _domain?: string;
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string ) {
+    this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain
   }
 
   // endpoint - computed: true, optional: false, required: false
@@ -373,6 +394,7 @@ export class TransferServer extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate: cdktf.stringToTerraform(this._certificate),
+      domain: cdktf.stringToTerraform(this._domain),
       endpoint_type: cdktf.stringToTerraform(this._endpointType),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       host_key: cdktf.stringToTerraform(this._hostKey),

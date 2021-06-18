@@ -257,6 +257,44 @@ function cognitoUserPoolEmailConfigurationToTerraform(struct?: CognitoUserPoolEm
   }
 }
 
+export interface CognitoUserPoolLambdaConfigCustomEmailSender {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#lambda_arn CognitoUserPool#lambda_arn}
+  */
+  readonly lambdaArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#lambda_version CognitoUserPool#lambda_version}
+  */
+  readonly lambdaVersion: string;
+}
+
+function cognitoUserPoolLambdaConfigCustomEmailSenderToTerraform(struct?: CognitoUserPoolLambdaConfigCustomEmailSender): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    lambda_arn: cdktf.stringToTerraform(struct!.lambdaArn),
+    lambda_version: cdktf.stringToTerraform(struct!.lambdaVersion),
+  }
+}
+
+export interface CognitoUserPoolLambdaConfigCustomSmsSender {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#lambda_arn CognitoUserPool#lambda_arn}
+  */
+  readonly lambdaArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#lambda_version CognitoUserPool#lambda_version}
+  */
+  readonly lambdaVersion: string;
+}
+
+function cognitoUserPoolLambdaConfigCustomSmsSenderToTerraform(struct?: CognitoUserPoolLambdaConfigCustomSmsSender): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    lambda_arn: cdktf.stringToTerraform(struct!.lambdaArn),
+    lambda_version: cdktf.stringToTerraform(struct!.lambdaVersion),
+  }
+}
+
 export interface CognitoUserPoolLambdaConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#create_auth_challenge CognitoUserPool#create_auth_challenge}
@@ -270,6 +308,10 @@ export interface CognitoUserPoolLambdaConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#define_auth_challenge CognitoUserPool#define_auth_challenge}
   */
   readonly defineAuthChallenge?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#kms_key_id CognitoUserPool#kms_key_id}
+  */
+  readonly kmsKeyId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#post_authentication CognitoUserPool#post_authentication}
   */
@@ -298,6 +340,18 @@ export interface CognitoUserPoolLambdaConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#verify_auth_challenge_response CognitoUserPool#verify_auth_challenge_response}
   */
   readonly verifyAuthChallengeResponse?: string;
+  /**
+  * custom_email_sender block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#custom_email_sender CognitoUserPool#custom_email_sender}
+  */
+  readonly customEmailSender?: CognitoUserPoolLambdaConfigCustomEmailSender[];
+  /**
+  * custom_sms_sender block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#custom_sms_sender CognitoUserPool#custom_sms_sender}
+  */
+  readonly customSmsSender?: CognitoUserPoolLambdaConfigCustomSmsSender[];
 }
 
 function cognitoUserPoolLambdaConfigToTerraform(struct?: CognitoUserPoolLambdaConfig): any {
@@ -306,6 +360,7 @@ function cognitoUserPoolLambdaConfigToTerraform(struct?: CognitoUserPoolLambdaCo
     create_auth_challenge: cdktf.stringToTerraform(struct!.createAuthChallenge),
     custom_message: cdktf.stringToTerraform(struct!.customMessage),
     define_auth_challenge: cdktf.stringToTerraform(struct!.defineAuthChallenge),
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
     post_authentication: cdktf.stringToTerraform(struct!.postAuthentication),
     post_confirmation: cdktf.stringToTerraform(struct!.postConfirmation),
     pre_authentication: cdktf.stringToTerraform(struct!.preAuthentication),
@@ -313,6 +368,8 @@ function cognitoUserPoolLambdaConfigToTerraform(struct?: CognitoUserPoolLambdaCo
     pre_token_generation: cdktf.stringToTerraform(struct!.preTokenGeneration),
     user_migration: cdktf.stringToTerraform(struct!.userMigration),
     verify_auth_challenge_response: cdktf.stringToTerraform(struct!.verifyAuthChallengeResponse),
+    custom_email_sender: cdktf.listMapper(cognitoUserPoolLambdaConfigCustomEmailSenderToTerraform)(struct!.customEmailSender),
+    custom_sms_sender: cdktf.listMapper(cognitoUserPoolLambdaConfigCustomSmsSenderToTerraform)(struct!.customSmsSender),
   }
 }
 
@@ -640,6 +697,16 @@ export class CognitoUserPool extends cdktf.TerraformResource {
     return this.getStringAttribute('creation_date');
   }
 
+  // custom_domain - computed: true, optional: false, required: false
+  public get customDomain() {
+    return this.getStringAttribute('custom_domain');
+  }
+
+  // domain - computed: true, optional: false, required: false
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+
   // email_verification_message - computed: true, optional: true, required: false
   private _emailVerificationMessage?: string;
   public get emailVerificationMessage() {
@@ -675,6 +742,11 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');
+  }
+
+  // estimated_number_of_users - computed: true, optional: false, required: false
+  public get estimatedNumberOfUsers() {
+    return this.getNumberAttribute('estimated_number_of_users');
   }
 
   // id - computed: true, optional: true, required: false

@@ -57,6 +57,11 @@ export class DataAwsTransferServer extends cdktf.TerraformDataSource {
     return this.getStringAttribute('certificate');
   }
 
+  // domain - computed: true, optional: false, required: false
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+
   // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
     return this.getStringAttribute('endpoint');

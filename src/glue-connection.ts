@@ -14,7 +14,7 @@ export interface GlueConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_connection.html#connection_properties GlueConnection#connection_properties}
   */
-  readonly connectionProperties: { [key: string]: string };
+  readonly connectionProperties?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_connection.html#connection_type GlueConnection#connection_type}
   */
@@ -124,13 +124,16 @@ export class GlueConnection extends cdktf.TerraformResource {
     return this._catalogId
   }
 
-  // connection_properties - computed: false, optional: false, required: true
-  private _connectionProperties: { [key: string]: string };
+  // connection_properties - computed: false, optional: true, required: false
+  private _connectionProperties?: { [key: string]: string };
   public get connectionProperties() {
     return this.interpolationForAttribute('connection_properties') as any;
   }
-  public set connectionProperties(value: { [key: string]: string }) {
+  public set connectionProperties(value: { [key: string]: string } ) {
     this._connectionProperties = value;
+  }
+  public resetConnectionProperties() {
+    this._connectionProperties = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get connectionPropertiesInput() {

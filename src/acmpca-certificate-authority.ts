@@ -163,6 +163,10 @@ export interface AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurati
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#s3_bucket_name AcmpcaCertificateAuthority#s3_bucket_name}
   */
   readonly s3BucketName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority.html#s3_object_acl AcmpcaCertificateAuthority#s3_object_acl}
+  */
+  readonly s3ObjectAcl?: string;
 }
 
 function acmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerraform(struct?: AcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration): any {
@@ -172,6 +176,7 @@ function acmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationToTerr
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     expiration_in_days: cdktf.numberToTerraform(struct!.expirationInDays),
     s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
+    s3_object_acl: cdktf.stringToTerraform(struct!.s3ObjectAcl),
   }
 }
 

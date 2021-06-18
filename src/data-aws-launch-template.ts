@@ -216,6 +216,11 @@ export class DataAwsLaunchTemplateNetworkInterfaces extends cdktf.ComplexCompute
     return this.getNumberAttribute('device_index');
   }
 
+  // interface_type - computed: true, optional: false, required: false
+  public get interfaceType() {
+    return this.getStringAttribute('interface_type');
+  }
+
   // ipv4_address_count - computed: true, optional: false, required: false
   public get ipv4AddressCount() {
     return this.getNumberAttribute('ipv4_address_count');

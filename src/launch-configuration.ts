@@ -122,6 +122,10 @@ export interface LaunchConfigurationEbsBlockDevice {
   */
   readonly snapshotId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#throughput LaunchConfiguration#throughput}
+  */
+  readonly throughput?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#volume_size LaunchConfiguration#volume_size}
   */
   readonly volumeSize?: number;
@@ -140,6 +144,7 @@ function launchConfigurationEbsBlockDeviceToTerraform(struct?: LaunchConfigurati
     iops: cdktf.numberToTerraform(struct!.iops),
     no_device: cdktf.booleanToTerraform(struct!.noDevice),
     snapshot_id: cdktf.stringToTerraform(struct!.snapshotId),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
@@ -202,6 +207,10 @@ export interface LaunchConfigurationRootBlockDevice {
   */
   readonly iops?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#throughput LaunchConfiguration#throughput}
+  */
+  readonly throughput?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#volume_size LaunchConfiguration#volume_size}
   */
   readonly volumeSize?: number;
@@ -217,6 +226,7 @@ function launchConfigurationRootBlockDeviceToTerraform(struct?: LaunchConfigurat
     delete_on_termination: cdktf.booleanToTerraform(struct!.deleteOnTermination),
     encrypted: cdktf.booleanToTerraform(struct!.encrypted),
     iops: cdktf.numberToTerraform(struct!.iops),
+    throughput: cdktf.numberToTerraform(struct!.throughput),
     volume_size: cdktf.numberToTerraform(struct!.volumeSize),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
@@ -408,12 +418,12 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
     return this._name
   }
 
-  // name_prefix - computed: false, optional: true, required: false
+  // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
     return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string) {
     this._namePrefix = value;
   }
   public resetNamePrefix() {

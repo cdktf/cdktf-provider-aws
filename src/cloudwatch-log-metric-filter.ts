@@ -32,6 +32,10 @@ export interface CloudwatchLogMetricFilterMetricTransformation {
   */
   readonly defaultValue?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html#dimensions CloudwatchLogMetricFilter#dimensions}
+  */
+  readonly dimensions?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html#name CloudwatchLogMetricFilter#name}
   */
   readonly name: string;
@@ -39,6 +43,10 @@ export interface CloudwatchLogMetricFilterMetricTransformation {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html#namespace CloudwatchLogMetricFilter#namespace}
   */
   readonly namespace: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html#unit CloudwatchLogMetricFilter#unit}
+  */
+  readonly unit?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html#value CloudwatchLogMetricFilter#value}
   */
@@ -49,8 +57,10 @@ function cloudwatchLogMetricFilterMetricTransformationToTerraform(struct?: Cloud
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     default_value: cdktf.stringToTerraform(struct!.defaultValue),
+    dimensions: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.dimensions),
     name: cdktf.stringToTerraform(struct!.name),
     namespace: cdktf.stringToTerraform(struct!.namespace),
+    unit: cdktf.stringToTerraform(struct!.unit),
     value: cdktf.stringToTerraform(struct!.value),
   }
 }

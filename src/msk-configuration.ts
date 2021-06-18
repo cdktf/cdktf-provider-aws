@@ -14,7 +14,7 @@ export interface MskConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_configuration.html#kafka_versions MskConfiguration#kafka_versions}
   */
-  readonly kafkaVersions: string[];
+  readonly kafkaVersions?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_configuration.html#name MskConfiguration#name}
   */
@@ -88,13 +88,16 @@ export class MskConfiguration extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // kafka_versions - computed: false, optional: false, required: true
-  private _kafkaVersions: string[];
+  // kafka_versions - computed: false, optional: true, required: false
+  private _kafkaVersions?: string[];
   public get kafkaVersions() {
     return this.getListAttribute('kafka_versions');
   }
-  public set kafkaVersions(value: string[]) {
+  public set kafkaVersions(value: string[] ) {
     this._kafkaVersions = value;
+  }
+  public resetKafkaVersions() {
+    this._kafkaVersions = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get kafkaVersionsInput() {

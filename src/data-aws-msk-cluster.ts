@@ -62,6 +62,11 @@ export class DataAwsMskCluster extends cdktf.TerraformDataSource {
     return this.getStringAttribute('bootstrap_brokers');
   }
 
+  // bootstrap_brokers_sasl_iam - computed: true, optional: false, required: false
+  public get bootstrapBrokersSaslIam() {
+    return this.getStringAttribute('bootstrap_brokers_sasl_iam');
+  }
+
   // bootstrap_brokers_sasl_scram - computed: true, optional: false, required: false
   public get bootstrapBrokersSaslScram() {
     return this.getStringAttribute('bootstrap_brokers_sasl_scram');

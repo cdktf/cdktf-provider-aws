@@ -22,11 +22,15 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#event_source_arn LambdaEventSourceMapping#event_source_arn}
   */
-  readonly eventSourceArn: string;
+  readonly eventSourceArn?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#function_name LambdaEventSourceMapping#function_name}
   */
   readonly functionName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#function_response_types LambdaEventSourceMapping#function_response_types}
+  */
+  readonly functionResponseTypes?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}
   */
@@ -44,6 +48,10 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   */
   readonly parallelizationFactor?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#queues LambdaEventSourceMapping#queues}
+  */
+  readonly queues?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#starting_position LambdaEventSourceMapping#starting_position}
   */
   readonly startingPosition?: string;
@@ -56,11 +64,27 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   */
   readonly topics?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}
+  */
+  readonly tumblingWindowInSeconds?: number;
+  /**
   * destination_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#destination_config LambdaEventSourceMapping#destination_config}
   */
   readonly destinationConfig?: LambdaEventSourceMappingDestinationConfig[];
+  /**
+  * self_managed_event_source block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
+  */
+  readonly selfManagedEventSource?: LambdaEventSourceMappingSelfManagedEventSource[];
+  /**
+  * source_access_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
+  */
+  readonly sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[];
 }
 export interface LambdaEventSourceMappingDestinationConfigOnFailure {
   /**
@@ -89,6 +113,39 @@ function lambdaEventSourceMappingDestinationConfigToTerraform(struct?: LambdaEve
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     on_failure: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigOnFailureToTerraform)(struct!.onFailure),
+  }
+}
+
+export interface LambdaEventSourceMappingSelfManagedEventSource {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#endpoints LambdaEventSourceMapping#endpoints}
+  */
+  readonly endpoints: { [key: string]: string };
+}
+
+function lambdaEventSourceMappingSelfManagedEventSourceToTerraform(struct?: LambdaEventSourceMappingSelfManagedEventSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    endpoints: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.endpoints),
+  }
+}
+
+export interface LambdaEventSourceMappingSourceAccessConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#type LambdaEventSourceMapping#type}
+  */
+  readonly type: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#uri LambdaEventSourceMapping#uri}
+  */
+  readonly uri: string;
+}
+
+function lambdaEventSourceMappingSourceAccessConfigurationToTerraform(struct?: LambdaEventSourceMappingSourceAccessConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    type: cdktf.stringToTerraform(struct!.type),
+    uri: cdktf.stringToTerraform(struct!.uri),
   }
 }
 
@@ -125,14 +182,19 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     this._enabled = config.enabled;
     this._eventSourceArn = config.eventSourceArn;
     this._functionName = config.functionName;
+    this._functionResponseTypes = config.functionResponseTypes;
     this._maximumBatchingWindowInSeconds = config.maximumBatchingWindowInSeconds;
     this._maximumRecordAgeInSeconds = config.maximumRecordAgeInSeconds;
     this._maximumRetryAttempts = config.maximumRetryAttempts;
     this._parallelizationFactor = config.parallelizationFactor;
+    this._queues = config.queues;
     this._startingPosition = config.startingPosition;
     this._startingPositionTimestamp = config.startingPositionTimestamp;
     this._topics = config.topics;
+    this._tumblingWindowInSeconds = config.tumblingWindowInSeconds;
     this._destinationConfig = config.destinationConfig;
+    this._selfManagedEventSource = config.selfManagedEventSource;
+    this._sourceAccessConfiguration = config.sourceAccessConfiguration;
   }
 
   // ==========
@@ -187,13 +249,16 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     return this._enabled
   }
 
-  // event_source_arn - computed: false, optional: false, required: true
-  private _eventSourceArn: string;
+  // event_source_arn - computed: false, optional: true, required: false
+  private _eventSourceArn?: string;
   public get eventSourceArn() {
     return this.getStringAttribute('event_source_arn');
   }
-  public set eventSourceArn(value: string) {
+  public set eventSourceArn(value: string ) {
     this._eventSourceArn = value;
+  }
+  public resetEventSourceArn() {
+    this._eventSourceArn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get eventSourceArnInput() {
@@ -216,6 +281,22 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get functionNameInput() {
     return this._functionName
+  }
+
+  // function_response_types - computed: false, optional: true, required: false
+  private _functionResponseTypes?: string[];
+  public get functionResponseTypes() {
+    return this.getListAttribute('function_response_types');
+  }
+  public set functionResponseTypes(value: string[] ) {
+    this._functionResponseTypes = value;
+  }
+  public resetFunctionResponseTypes() {
+    this._functionResponseTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionResponseTypesInput() {
+    return this._functionResponseTypes
   }
 
   // id - computed: true, optional: true, required: false
@@ -297,6 +378,22 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     return this._parallelizationFactor
   }
 
+  // queues - computed: false, optional: true, required: false
+  private _queues?: string[];
+  public get queues() {
+    return this.getListAttribute('queues');
+  }
+  public set queues(value: string[] ) {
+    this._queues = value;
+  }
+  public resetQueues() {
+    this._queues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queuesInput() {
+    return this._queues
+  }
+
   // starting_position - computed: false, optional: true, required: false
   private _startingPosition?: string;
   public get startingPosition() {
@@ -355,6 +452,22 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     return this._topics
   }
 
+  // tumbling_window_in_seconds - computed: false, optional: true, required: false
+  private _tumblingWindowInSeconds?: number;
+  public get tumblingWindowInSeconds() {
+    return this.getNumberAttribute('tumbling_window_in_seconds');
+  }
+  public set tumblingWindowInSeconds(value: number ) {
+    this._tumblingWindowInSeconds = value;
+  }
+  public resetTumblingWindowInSeconds() {
+    this._tumblingWindowInSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tumblingWindowInSecondsInput() {
+    return this._tumblingWindowInSeconds
+  }
+
   // uuid - computed: true, optional: false, required: false
   public get uuid() {
     return this.getStringAttribute('uuid');
@@ -376,6 +489,38 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
     return this._destinationConfig
   }
 
+  // self_managed_event_source - computed: false, optional: true, required: false
+  private _selfManagedEventSource?: LambdaEventSourceMappingSelfManagedEventSource[];
+  public get selfManagedEventSource() {
+    return this.interpolationForAttribute('self_managed_event_source') as any;
+  }
+  public set selfManagedEventSource(value: LambdaEventSourceMappingSelfManagedEventSource[] ) {
+    this._selfManagedEventSource = value;
+  }
+  public resetSelfManagedEventSource() {
+    this._selfManagedEventSource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfManagedEventSourceInput() {
+    return this._selfManagedEventSource
+  }
+
+  // source_access_configuration - computed: false, optional: true, required: false
+  private _sourceAccessConfiguration?: LambdaEventSourceMappingSourceAccessConfiguration[];
+  public get sourceAccessConfiguration() {
+    return this.interpolationForAttribute('source_access_configuration') as any;
+  }
+  public set sourceAccessConfiguration(value: LambdaEventSourceMappingSourceAccessConfiguration[] ) {
+    this._sourceAccessConfiguration = value;
+  }
+  public resetSourceAccessConfiguration() {
+    this._sourceAccessConfiguration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceAccessConfigurationInput() {
+    return this._sourceAccessConfiguration
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -387,14 +532,19 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       event_source_arn: cdktf.stringToTerraform(this._eventSourceArn),
       function_name: cdktf.stringToTerraform(this._functionName),
+      function_response_types: cdktf.listMapper(cdktf.stringToTerraform)(this._functionResponseTypes),
       maximum_batching_window_in_seconds: cdktf.numberToTerraform(this._maximumBatchingWindowInSeconds),
       maximum_record_age_in_seconds: cdktf.numberToTerraform(this._maximumRecordAgeInSeconds),
       maximum_retry_attempts: cdktf.numberToTerraform(this._maximumRetryAttempts),
       parallelization_factor: cdktf.numberToTerraform(this._parallelizationFactor),
+      queues: cdktf.listMapper(cdktf.stringToTerraform)(this._queues),
       starting_position: cdktf.stringToTerraform(this._startingPosition),
       starting_position_timestamp: cdktf.stringToTerraform(this._startingPositionTimestamp),
       topics: cdktf.listMapper(cdktf.stringToTerraform)(this._topics),
+      tumbling_window_in_seconds: cdktf.numberToTerraform(this._tumblingWindowInSeconds),
       destination_config: cdktf.listMapper(lambdaEventSourceMappingDestinationConfigToTerraform)(this._destinationConfig),
+      self_managed_event_source: cdktf.listMapper(lambdaEventSourceMappingSelfManagedEventSourceToTerraform)(this._selfManagedEventSource),
+      source_access_configuration: cdktf.listMapper(lambdaEventSourceMappingSourceAccessConfigurationToTerraform)(this._sourceAccessConfiguration),
     };
   }
 }
