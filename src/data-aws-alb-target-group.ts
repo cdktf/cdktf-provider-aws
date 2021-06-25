@@ -70,6 +70,11 @@ export class DataAwsAlbTargetGroupStickiness extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('cookie_duration');
   }
 
+  // cookie_name - computed: true, optional: false, required: false
+  public get cookieName() {
+    return this.getStringAttribute('cookie_name');
+  }
+
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
