@@ -1501,9 +1501,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^3.0.4, constructs@^3.3.75:
-  version "3.3.88"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.88.tgz#584d8c093d15bcb42408adbd6bd6351e424cd0b0"
-  integrity sha512-qcHmCqx5H2WJO+RBFAGuZlOuy0E6SyNF2DLcS0NC51k8hY3DOUQbaZtfdfJmMxEtKlKOF/GaCOUFevzbxaCYlQ==
+  version "3.3.89"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.89.tgz#f115cf3c89af60ac3181166a154865f2ab47511e"
+  integrity sha512-pBKrwjOPYl4NUyIB1DFX6XEAXvkK5bWXynyFYx+K15UjpBbpWwKaIZShKhZxlKPxt1EK1VQvu43kRXjn310OEg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.12"
