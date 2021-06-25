@@ -135,12 +135,12 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // location_uri - computed: false, optional: true, required: false
+  // location_uri - computed: true, optional: true, required: false
   private _locationUri?: string;
   public get locationUri() {
     return this.getStringAttribute('location_uri');
   }
-  public set locationUri(value: string ) {
+  public set locationUri(value: string) {
     this._locationUri = value;
   }
   public resetLocationUri() {

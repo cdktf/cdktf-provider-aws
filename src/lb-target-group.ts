@@ -140,6 +140,10 @@ export interface LbTargetGroupStickiness {
   */
   readonly cookieDuration?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group.html#cookie_name LbTargetGroup#cookie_name}
+  */
+  readonly cookieName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group.html#enabled LbTargetGroup#enabled}
   */
   readonly enabled?: boolean;
@@ -153,6 +157,7 @@ function lbTargetGroupStickinessToTerraform(struct?: LbTargetGroupStickiness): a
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     cookie_duration: cdktf.numberToTerraform(struct!.cookieDuration),
+    cookie_name: cdktf.stringToTerraform(struct!.cookieName),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     type: cdktf.stringToTerraform(struct!.type),
   }

@@ -140,6 +140,10 @@ export interface AlbTargetGroupStickiness {
   */
   readonly cookieDuration?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#cookie_name AlbTargetGroup#cookie_name}
+  */
+  readonly cookieName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#enabled AlbTargetGroup#enabled}
   */
   readonly enabled?: boolean;
@@ -153,6 +157,7 @@ function albTargetGroupStickinessToTerraform(struct?: AlbTargetGroupStickiness):
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     cookie_duration: cdktf.numberToTerraform(struct!.cookieDuration),
+    cookie_name: cdktf.stringToTerraform(struct!.cookieName),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     type: cdktf.stringToTerraform(struct!.type),
   }

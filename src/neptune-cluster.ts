@@ -28,6 +28,10 @@ export interface NeptuneClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clusterIdentifierPrefix?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html#copy_tags_to_snapshot NeptuneCluster#copy_tags_to_snapshot}
+  */
+  readonly copyTagsToSnapshot?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html#deletion_protection NeptuneCluster#deletion_protection}
   */
   readonly deletionProtection?: boolean;
@@ -171,6 +175,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
     this._backupRetentionPeriod = config.backupRetentionPeriod;
     this._clusterIdentifier = config.clusterIdentifier;
     this._clusterIdentifierPrefix = config.clusterIdentifierPrefix;
+    this._copyTagsToSnapshot = config.copyTagsToSnapshot;
     this._deletionProtection = config.deletionProtection;
     this._enableCloudwatchLogsExports = config.enableCloudwatchLogsExports;
     this._engine = config.engine;
@@ -291,6 +296,22 @@ export class NeptuneCluster extends cdktf.TerraformResource {
   // cluster_resource_id - computed: true, optional: false, required: false
   public get clusterResourceId() {
     return this.getStringAttribute('cluster_resource_id');
+  }
+
+  // copy_tags_to_snapshot - computed: false, optional: true, required: false
+  private _copyTagsToSnapshot?: boolean;
+  public get copyTagsToSnapshot() {
+    return this.getBooleanAttribute('copy_tags_to_snapshot');
+  }
+  public set copyTagsToSnapshot(value: boolean ) {
+    this._copyTagsToSnapshot = value;
+  }
+  public resetCopyTagsToSnapshot() {
+    this._copyTagsToSnapshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyTagsToSnapshotInput() {
+    return this._copyTagsToSnapshot
   }
 
   // deletion_protection - computed: false, optional: true, required: false
@@ -660,6 +681,7 @@ export class NeptuneCluster extends cdktf.TerraformResource {
       backup_retention_period: cdktf.numberToTerraform(this._backupRetentionPeriod),
       cluster_identifier: cdktf.stringToTerraform(this._clusterIdentifier),
       cluster_identifier_prefix: cdktf.stringToTerraform(this._clusterIdentifierPrefix),
+      copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
       enable_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enableCloudwatchLogsExports),
       engine: cdktf.stringToTerraform(this._engine),
