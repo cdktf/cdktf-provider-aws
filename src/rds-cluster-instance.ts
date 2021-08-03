@@ -360,6 +360,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
     return this._engineVersion
   }
 
+  // engine_version_actual - computed: true, optional: false, required: false
+  public get engineVersionActual() {
+    return this.getStringAttribute('engine_version_actual');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');

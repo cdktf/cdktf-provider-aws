@@ -12,6 +12,10 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#force_overwrite_replica_secret SecretsmanagerSecret#force_overwrite_replica_secret}
+  */
+  readonly forceOverwriteReplicaSecret?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#kms_key_id SecretsmanagerSecret#kms_key_id}
   */
   readonly kmsKeyId?: string;
@@ -44,12 +48,37 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   */
   readonly tagsAll?: { [key: string]: string };
   /**
+  * replica block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#replica SecretsmanagerSecret#replica}
+  */
+  readonly replica?: SecretsmanagerSecretReplica[];
+  /**
   * rotation_rules block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#rotation_rules SecretsmanagerSecret#rotation_rules}
   */
   readonly rotationRules?: SecretsmanagerSecretRotationRules[];
 }
+export interface SecretsmanagerSecretReplica {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#kms_key_id SecretsmanagerSecret#kms_key_id}
+  */
+  readonly kmsKeyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#region SecretsmanagerSecret#region}
+  */
+  readonly region: string;
+}
+
+function secretsmanagerSecretReplicaToTerraform(struct?: SecretsmanagerSecretReplica): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    region: cdktf.stringToTerraform(struct!.region),
+  }
+}
+
 export interface SecretsmanagerSecretRotationRules {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#automatically_after_days SecretsmanagerSecret#automatically_after_days}
@@ -93,6 +122,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._forceOverwriteReplicaSecret = config.forceOverwriteReplicaSecret;
     this._kmsKeyId = config.kmsKeyId;
     this._name = config.name;
     this._namePrefix = config.namePrefix;
@@ -101,6 +131,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
     this._rotationLambdaArn = config.rotationLambdaArn;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._replica = config.replica;
     this._rotationRules = config.rotationRules;
   }
 
@@ -127,6 +158,22 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description
+  }
+
+  // force_overwrite_replica_secret - computed: false, optional: true, required: false
+  private _forceOverwriteReplicaSecret?: boolean;
+  public get forceOverwriteReplicaSecret() {
+    return this.getBooleanAttribute('force_overwrite_replica_secret');
+  }
+  public set forceOverwriteReplicaSecret(value: boolean ) {
+    this._forceOverwriteReplicaSecret = value;
+  }
+  public resetForceOverwriteReplicaSecret() {
+    this._forceOverwriteReplicaSecret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceOverwriteReplicaSecretInput() {
+    return this._forceOverwriteReplicaSecret
   }
 
   // id - computed: true, optional: true, required: false
@@ -267,6 +314,22 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
     return this._tagsAll
   }
 
+  // replica - computed: false, optional: true, required: false
+  private _replica?: SecretsmanagerSecretReplica[];
+  public get replica() {
+    return this.interpolationForAttribute('replica') as any;
+  }
+  public set replica(value: SecretsmanagerSecretReplica[] ) {
+    this._replica = value;
+  }
+  public resetReplica() {
+    this._replica = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicaInput() {
+    return this._replica
+  }
+
   // rotation_rules - computed: false, optional: true, required: false
   private _rotationRules?: SecretsmanagerSecretRotationRules[];
   public get rotationRules() {
@@ -290,6 +353,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      force_overwrite_replica_secret: cdktf.booleanToTerraform(this._forceOverwriteReplicaSecret),
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       name: cdktf.stringToTerraform(this._name),
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
@@ -298,6 +362,7 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
       rotation_lambda_arn: cdktf.stringToTerraform(this._rotationLambdaArn),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      replica: cdktf.listMapper(secretsmanagerSecretReplicaToTerraform)(this._replica),
       rotation_rules: cdktf.listMapper(secretsmanagerSecretRotationRulesToTerraform)(this._rotationRules),
     };
   }

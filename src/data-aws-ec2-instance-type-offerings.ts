@@ -99,6 +99,16 @@ export class DataAwsEc2InstanceTypeOfferings extends cdktf.TerraformDataSource {
     return this._locationType
   }
 
+  // location_types - computed: true, optional: false, required: false
+  public get locationTypes() {
+    return this.getListAttribute('location_types');
+  }
+
+  // locations - computed: true, optional: false, required: false
+  public get locations() {
+    return this.getListAttribute('locations');
+  }
+
   // filter - computed: false, optional: true, required: false
   private _filter?: DataAwsEc2InstanceTypeOfferingsFilter[];
   public get filter() {

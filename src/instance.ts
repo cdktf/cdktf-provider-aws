@@ -10,7 +10,7 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#ami Instance#ami}
   */
-  readonly ami: string;
+  readonly ami?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#associate_public_ip_address Instance#associate_public_ip_address}
   */
@@ -58,7 +58,7 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#instance_type Instance#instance_type}
   */
-  readonly instanceType: string;
+  readonly instanceType?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#ipv6_address_count Instance#ipv6_address_count}
   */
@@ -157,6 +157,12 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#ephemeral_block_device Instance#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: InstanceEphemeralBlockDevice[];
+  /**
+  * launch_template block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#launch_template Instance#launch_template}
+  */
+  readonly launchTemplate?: InstanceLaunchTemplate[];
   /**
   * metadata_options block
   * 
@@ -328,6 +334,30 @@ function instanceEphemeralBlockDeviceToTerraform(struct?: InstanceEphemeralBlock
   }
 }
 
+export interface InstanceLaunchTemplate {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#id Instance#id}
+  */
+  readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#name Instance#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#version Instance#version}
+  */
+  readonly version?: string;
+}
+
+function instanceLaunchTemplateToTerraform(struct?: InstanceLaunchTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface InstanceMetadataOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#http_endpoint Instance#http_endpoint}
@@ -464,9 +494,9 @@ export class Instance extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options InstanceConfig
+  * @param options InstanceConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: InstanceConfig) {
+  public constructor(scope: Construct, id: string, config: InstanceConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_instance',
       terraformGeneratorMetadata: {
@@ -512,6 +542,7 @@ export class Instance extends cdktf.TerraformResource {
     this._ebsBlockDevice = config.ebsBlockDevice;
     this._enclaveOptions = config.enclaveOptions;
     this._ephemeralBlockDevice = config.ephemeralBlockDevice;
+    this._launchTemplate = config.launchTemplate;
     this._metadataOptions = config.metadataOptions;
     this._networkInterface = config.networkInterface;
     this._rootBlockDevice = config.rootBlockDevice;
@@ -522,13 +553,16 @@ export class Instance extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // ami - computed: false, optional: false, required: true
-  private _ami: string;
+  // ami - computed: true, optional: true, required: false
+  private _ami?: string;
   public get ami() {
     return this.getStringAttribute('ami');
   }
   public set ami(value: string) {
     this._ami = value;
+  }
+  public resetAmi() {
+    this._ami = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get amiInput() {
@@ -604,12 +638,12 @@ export class Instance extends cdktf.TerraformResource {
     return this._cpuThreadsPerCore
   }
 
-  // disable_api_termination - computed: false, optional: true, required: false
+  // disable_api_termination - computed: true, optional: true, required: false
   private _disableApiTermination?: boolean;
   public get disableApiTermination() {
     return this.getBooleanAttribute('disable_api_termination');
   }
-  public set disableApiTermination(value: boolean ) {
+  public set disableApiTermination(value: boolean) {
     this._disableApiTermination = value;
   }
   public resetDisableApiTermination() {
@@ -620,12 +654,12 @@ export class Instance extends cdktf.TerraformResource {
     return this._disableApiTermination
   }
 
-  // ebs_optimized - computed: false, optional: true, required: false
+  // ebs_optimized - computed: true, optional: true, required: false
   private _ebsOptimized?: boolean;
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean ) {
+  public set ebsOptimized(value: boolean) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {
@@ -726,13 +760,16 @@ export class Instance extends cdktf.TerraformResource {
     return this.getStringAttribute('instance_state');
   }
 
-  // instance_type - computed: false, optional: false, required: true
-  private _instanceType: string;
+  // instance_type - computed: true, optional: true, required: false
+  private _instanceType?: string;
   public get instanceType() {
     return this.getStringAttribute('instance_type');
   }
   public set instanceType(value: string) {
     this._instanceType = value;
+  }
+  public resetInstanceType() {
+    this._instanceType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceTypeInput() {
@@ -787,12 +824,12 @@ export class Instance extends cdktf.TerraformResource {
     return this._keyName
   }
 
-  // monitoring - computed: false, optional: true, required: false
+  // monitoring - computed: true, optional: true, required: false
   private _monitoring?: boolean;
   public get monitoring() {
     return this.getBooleanAttribute('monitoring');
   }
-  public set monitoring(value: boolean ) {
+  public set monitoring(value: boolean) {
     this._monitoring = value;
   }
   public resetMonitoring() {
@@ -977,12 +1014,12 @@ export class Instance extends cdktf.TerraformResource {
     return this._tenancy
   }
 
-  // user_data - computed: false, optional: true, required: false
+  // user_data - computed: true, optional: true, required: false
   private _userData?: string;
   public get userData() {
     return this.getStringAttribute('user_data');
   }
-  public set userData(value: string ) {
+  public set userData(value: string) {
     this._userData = value;
   }
   public resetUserData() {
@@ -993,12 +1030,12 @@ export class Instance extends cdktf.TerraformResource {
     return this._userData
   }
 
-  // user_data_base64 - computed: false, optional: true, required: false
+  // user_data_base64 - computed: true, optional: true, required: false
   private _userDataBase64?: string;
   public get userDataBase64() {
     return this.getStringAttribute('user_data_base64');
   }
-  public set userDataBase64(value: string ) {
+  public set userDataBase64(value: string) {
     this._userDataBase64 = value;
   }
   public resetUserDataBase64() {
@@ -1121,6 +1158,22 @@ export class Instance extends cdktf.TerraformResource {
     return this._ephemeralBlockDevice
   }
 
+  // launch_template - computed: false, optional: true, required: false
+  private _launchTemplate?: InstanceLaunchTemplate[];
+  public get launchTemplate() {
+    return this.interpolationForAttribute('launch_template') as any;
+  }
+  public set launchTemplate(value: InstanceLaunchTemplate[] ) {
+    this._launchTemplate = value;
+  }
+  public resetLaunchTemplate() {
+    this._launchTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchTemplateInput() {
+    return this._launchTemplate
+  }
+
   // metadata_options - computed: false, optional: true, required: false
   private _metadataOptions?: InstanceMetadataOptions[];
   public get metadataOptions() {
@@ -1226,6 +1279,7 @@ export class Instance extends cdktf.TerraformResource {
       ebs_block_device: cdktf.listMapper(instanceEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
       enclave_options: cdktf.listMapper(instanceEnclaveOptionsToTerraform)(this._enclaveOptions),
       ephemeral_block_device: cdktf.listMapper(instanceEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      launch_template: cdktf.listMapper(instanceLaunchTemplateToTerraform)(this._launchTemplate),
       metadata_options: cdktf.listMapper(instanceMetadataOptionsToTerraform)(this._metadataOptions),
       network_interface: cdktf.listMapper(instanceNetworkInterfaceToTerraform)(this._networkInterface),
       root_block_device: cdktf.listMapper(instanceRootBlockDeviceToTerraform)(this._rootBlockDevice),

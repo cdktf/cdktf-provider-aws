@@ -674,6 +674,11 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._engineVersion
   }
 
+  // engine_version_actual - computed: true, optional: false, required: false
+  public get engineVersionActual() {
+    return this.getStringAttribute('engine_version_actual');
+  }
+
   // final_snapshot_identifier - computed: false, optional: true, required: false
   private _finalSnapshotIdentifier?: string;
   public get finalSnapshotIdentifier() {
@@ -727,12 +732,12 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._iamDatabaseAuthenticationEnabled
   }
 
-  // iam_roles - computed: false, optional: true, required: false
+  // iam_roles - computed: true, optional: true, required: false
   private _iamRoles?: string[];
   public get iamRoles() {
     return this.getListAttribute('iam_roles');
   }
-  public set iamRoles(value: string[] ) {
+  public set iamRoles(value: string[]) {
     this._iamRoles = value;
   }
   public resetIamRoles() {

@@ -42,11 +42,17 @@ export interface BudgetsBudgetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#time_period_start BudgetsBudget#time_period_start}
   */
-  readonly timePeriodStart: string;
+  readonly timePeriodStart?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#time_unit BudgetsBudget#time_unit}
   */
   readonly timeUnit: string;
+  /**
+  * cost_filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#cost_filter BudgetsBudget#cost_filter}
+  */
+  readonly costFilter?: BudgetsBudgetCostFilter[];
   /**
   * cost_types block
   * 
@@ -60,6 +66,25 @@ export interface BudgetsBudgetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly notification?: BudgetsBudgetNotification[];
 }
+export interface BudgetsBudgetCostFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#name BudgetsBudget#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#values BudgetsBudget#values}
+  */
+  readonly values: string[];
+}
+
+function budgetsBudgetCostFilterToTerraform(struct?: BudgetsBudgetCostFilter): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
 export interface BudgetsBudgetCostTypes {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_credit BudgetsBudget#include_credit}
@@ -201,6 +226,7 @@ export class BudgetsBudget extends cdktf.TerraformResource {
     this._timePeriodEnd = config.timePeriodEnd;
     this._timePeriodStart = config.timePeriodStart;
     this._timeUnit = config.timeUnit;
+    this._costFilter = config.costFilter;
     this._costTypes = config.costTypes;
     this._notification = config.notification;
   }
@@ -338,13 +364,16 @@ export class BudgetsBudget extends cdktf.TerraformResource {
     return this._timePeriodEnd
   }
 
-  // time_period_start - computed: false, optional: false, required: true
-  private _timePeriodStart: string;
+  // time_period_start - computed: true, optional: true, required: false
+  private _timePeriodStart?: string;
   public get timePeriodStart() {
     return this.getStringAttribute('time_period_start');
   }
   public set timePeriodStart(value: string) {
     this._timePeriodStart = value;
+  }
+  public resetTimePeriodStart() {
+    this._timePeriodStart = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timePeriodStartInput() {
@@ -362,6 +391,22 @@ export class BudgetsBudget extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get timeUnitInput() {
     return this._timeUnit
+  }
+
+  // cost_filter - computed: false, optional: true, required: false
+  private _costFilter?: BudgetsBudgetCostFilter[];
+  public get costFilter() {
+    return this.interpolationForAttribute('cost_filter') as any;
+  }
+  public set costFilter(value: BudgetsBudgetCostFilter[] ) {
+    this._costFilter = value;
+  }
+  public resetCostFilter() {
+    this._costFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costFilterInput() {
+    return this._costFilter
   }
 
   // cost_types - computed: false, optional: true, required: false
@@ -412,6 +457,7 @@ export class BudgetsBudget extends cdktf.TerraformResource {
       time_period_end: cdktf.stringToTerraform(this._timePeriodEnd),
       time_period_start: cdktf.stringToTerraform(this._timePeriodStart),
       time_unit: cdktf.stringToTerraform(this._timeUnit),
+      cost_filter: cdktf.listMapper(budgetsBudgetCostFilterToTerraform)(this._costFilter),
       cost_types: cdktf.listMapper(budgetsBudgetCostTypesToTerraform)(this._costTypes),
       notification: cdktf.listMapper(budgetsBudgetNotificationToTerraform)(this._notification),
     };

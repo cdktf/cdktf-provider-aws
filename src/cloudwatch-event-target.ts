@@ -72,6 +72,12 @@ export interface CloudwatchEventTargetConfig extends cdktf.TerraformMetaArgument
   */
   readonly kinesisTarget?: CloudwatchEventTargetKinesisTarget[];
   /**
+  * redshift_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#redshift_target CloudwatchEventTarget#redshift_target}
+  */
+  readonly redshiftTarget?: CloudwatchEventTargetRedshiftTarget[];
+  /**
   * retry_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#retry_policy CloudwatchEventTarget#retry_policy}
@@ -157,7 +163,34 @@ function cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform(struct?: 
   }
 }
 
+export interface CloudwatchEventTargetEcsTargetPlacementConstraint {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#expression CloudwatchEventTarget#expression}
+  */
+  readonly expression?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#type CloudwatchEventTarget#type}
+  */
+  readonly type: string;
+}
+
+function cloudwatchEventTargetEcsTargetPlacementConstraintToTerraform(struct?: CloudwatchEventTargetEcsTargetPlacementConstraint): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    expression: cdktf.stringToTerraform(struct!.expression),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
 export interface CloudwatchEventTargetEcsTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#enable_ecs_managed_tags CloudwatchEventTarget#enable_ecs_managed_tags}
+  */
+  readonly enableEcsManagedTags?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#enable_execute_command CloudwatchEventTarget#enable_execute_command}
+  */
+  readonly enableExecuteCommand?: boolean;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#group CloudwatchEventTarget#group}
   */
@@ -170,6 +203,14 @@ export interface CloudwatchEventTargetEcsTarget {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#platform_version CloudwatchEventTarget#platform_version}
   */
   readonly platformVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#propagate_tags CloudwatchEventTarget#propagate_tags}
+  */
+  readonly propagateTags?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#tags CloudwatchEventTarget#tags}
+  */
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#task_count CloudwatchEventTarget#task_count}
   */
@@ -184,17 +225,28 @@ export interface CloudwatchEventTargetEcsTarget {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#network_configuration CloudwatchEventTarget#network_configuration}
   */
   readonly networkConfiguration?: CloudwatchEventTargetEcsTargetNetworkConfiguration[];
+  /**
+  * placement_constraint block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#placement_constraint CloudwatchEventTarget#placement_constraint}
+  */
+  readonly placementConstraint?: CloudwatchEventTargetEcsTargetPlacementConstraint[];
 }
 
 function cloudwatchEventTargetEcsTargetToTerraform(struct?: CloudwatchEventTargetEcsTarget): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    enable_ecs_managed_tags: cdktf.booleanToTerraform(struct!.enableEcsManagedTags),
+    enable_execute_command: cdktf.booleanToTerraform(struct!.enableExecuteCommand),
     group: cdktf.stringToTerraform(struct!.group),
     launch_type: cdktf.stringToTerraform(struct!.launchType),
     platform_version: cdktf.stringToTerraform(struct!.platformVersion),
+    propagate_tags: cdktf.stringToTerraform(struct!.propagateTags),
+    tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
     task_count: cdktf.numberToTerraform(struct!.taskCount),
     task_definition_arn: cdktf.stringToTerraform(struct!.taskDefinitionArn),
     network_configuration: cdktf.listMapper(cloudwatchEventTargetEcsTargetNetworkConfigurationToTerraform)(struct!.networkConfiguration),
+    placement_constraint: cdktf.listMapper(cloudwatchEventTargetEcsTargetPlacementConstraintToTerraform)(struct!.placementConstraint),
   }
 }
 
@@ -252,6 +304,45 @@ function cloudwatchEventTargetKinesisTargetToTerraform(struct?: CloudwatchEventT
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     partition_key_path: cdktf.stringToTerraform(struct!.partitionKeyPath),
+  }
+}
+
+export interface CloudwatchEventTargetRedshiftTarget {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#database CloudwatchEventTarget#database}
+  */
+  readonly database: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#db_user CloudwatchEventTarget#db_user}
+  */
+  readonly dbUser?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#secrets_manager_arn CloudwatchEventTarget#secrets_manager_arn}
+  */
+  readonly secretsManagerArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#sql CloudwatchEventTarget#sql}
+  */
+  readonly sql?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#statement_name CloudwatchEventTarget#statement_name}
+  */
+  readonly statementName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#with_event CloudwatchEventTarget#with_event}
+  */
+  readonly withEvent?: boolean;
+}
+
+function cloudwatchEventTargetRedshiftTargetToTerraform(struct?: CloudwatchEventTargetRedshiftTarget): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    database: cdktf.stringToTerraform(struct!.database),
+    db_user: cdktf.stringToTerraform(struct!.dbUser),
+    secrets_manager_arn: cdktf.stringToTerraform(struct!.secretsManagerArn),
+    sql: cdktf.stringToTerraform(struct!.sql),
+    statement_name: cdktf.stringToTerraform(struct!.statementName),
+    with_event: cdktf.booleanToTerraform(struct!.withEvent),
   }
 }
 
@@ -348,6 +439,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     this._httpTarget = config.httpTarget;
     this._inputTransformer = config.inputTransformer;
     this._kinesisTarget = config.kinesisTarget;
+    this._redshiftTarget = config.redshiftTarget;
     this._retryPolicy = config.retryPolicy;
     this._runCommandTargets = config.runCommandTargets;
     this._sqsTarget = config.sqsTarget;
@@ -564,6 +656,22 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
     return this._kinesisTarget
   }
 
+  // redshift_target - computed: false, optional: true, required: false
+  private _redshiftTarget?: CloudwatchEventTargetRedshiftTarget[];
+  public get redshiftTarget() {
+    return this.interpolationForAttribute('redshift_target') as any;
+  }
+  public set redshiftTarget(value: CloudwatchEventTargetRedshiftTarget[] ) {
+    this._redshiftTarget = value;
+  }
+  public resetRedshiftTarget() {
+    this._redshiftTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redshiftTargetInput() {
+    return this._redshiftTarget
+  }
+
   // retry_policy - computed: false, optional: true, required: false
   private _retryPolicy?: CloudwatchEventTargetRetryPolicy[];
   public get retryPolicy() {
@@ -631,6 +739,7 @@ export class CloudwatchEventTarget extends cdktf.TerraformResource {
       http_target: cdktf.listMapper(cloudwatchEventTargetHttpTargetToTerraform)(this._httpTarget),
       input_transformer: cdktf.listMapper(cloudwatchEventTargetInputTransformerToTerraform)(this._inputTransformer),
       kinesis_target: cdktf.listMapper(cloudwatchEventTargetKinesisTargetToTerraform)(this._kinesisTarget),
+      redshift_target: cdktf.listMapper(cloudwatchEventTargetRedshiftTargetToTerraform)(this._redshiftTarget),
       retry_policy: cdktf.listMapper(cloudwatchEventTargetRetryPolicyToTerraform)(this._retryPolicy),
       run_command_targets: cdktf.listMapper(cloudwatchEventTargetRunCommandTargetsToTerraform)(this._runCommandTargets),
       sqs_target: cdktf.listMapper(cloudwatchEventTargetSqsTargetToTerraform)(this._sqsTarget),
