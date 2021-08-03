@@ -232,6 +232,10 @@ export interface GlueCrawlerS3Target {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#path GlueCrawler#path}
   */
   readonly path: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#sample_size GlueCrawler#sample_size}
+  */
+  readonly sampleSize?: number;
 }
 
 function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target): any {
@@ -240,6 +244,7 @@ function glueCrawlerS3TargetToTerraform(struct?: GlueCrawlerS3Target): any {
     connection_name: cdktf.stringToTerraform(struct!.connectionName),
     exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
     path: cdktf.stringToTerraform(struct!.path),
+    sample_size: cdktf.numberToTerraform(struct!.sampleSize),
   }
 }
 

@@ -24,6 +24,10 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   */
   readonly authentication?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#bucket_region StoragegatewaySmbFileShare#bucket_region}
+  */
+  readonly bucketRegion?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#case_sensitivity StoragegatewaySmbFileShare#case_sensitivity}
   */
   readonly caseSensitivity?: string;
@@ -68,6 +72,10 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   */
   readonly objectAcl?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#oplocks_enabled StoragegatewaySmbFileShare#oplocks_enabled}
+  */
+  readonly oplocksEnabled?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#read_only StoragegatewaySmbFileShare#read_only}
   */
   readonly readOnly?: boolean;
@@ -95,6 +103,10 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#valid_user_list StoragegatewaySmbFileShare#valid_user_list}
   */
   readonly validUserList?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#vpc_endpoint_dns_name StoragegatewaySmbFileShare#vpc_endpoint_dns_name}
+  */
+  readonly vpcEndpointDnsName?: string;
   /**
   * cache_attributes block
   * 
@@ -178,6 +190,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
     this._adminUserList = config.adminUserList;
     this._auditDestinationArn = config.auditDestinationArn;
     this._authentication = config.authentication;
+    this._bucketRegion = config.bucketRegion;
     this._caseSensitivity = config.caseSensitivity;
     this._defaultStorageClass = config.defaultStorageClass;
     this._fileShareName = config.fileShareName;
@@ -189,6 +202,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
     this._locationArn = config.locationArn;
     this._notificationPolicy = config.notificationPolicy;
     this._objectAcl = config.objectAcl;
+    this._oplocksEnabled = config.oplocksEnabled;
     this._readOnly = config.readOnly;
     this._requesterPays = config.requesterPays;
     this._roleArn = config.roleArn;
@@ -196,6 +210,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._validUserList = config.validUserList;
+    this._vpcEndpointDnsName = config.vpcEndpointDnsName;
     this._cacheAttributes = config.cacheAttributes;
     this._timeouts = config.timeouts;
   }
@@ -271,6 +286,22 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get authenticationInput() {
     return this._authentication
+  }
+
+  // bucket_region - computed: false, optional: true, required: false
+  private _bucketRegion?: string;
+  public get bucketRegion() {
+    return this.getStringAttribute('bucket_region');
+  }
+  public set bucketRegion(value: string ) {
+    this._bucketRegion = value;
+  }
+  public resetBucketRegion() {
+    this._bucketRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketRegionInput() {
+    return this._bucketRegion
   }
 
   // case_sensitivity - computed: false, optional: true, required: false
@@ -453,6 +484,22 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
     return this._objectAcl
   }
 
+  // oplocks_enabled - computed: false, optional: true, required: false
+  private _oplocksEnabled?: boolean;
+  public get oplocksEnabled() {
+    return this.getBooleanAttribute('oplocks_enabled');
+  }
+  public set oplocksEnabled(value: boolean ) {
+    this._oplocksEnabled = value;
+  }
+  public resetOplocksEnabled() {
+    this._oplocksEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oplocksEnabledInput() {
+    return this._oplocksEnabled
+  }
+
   // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
@@ -567,6 +614,22 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
     return this._validUserList
   }
 
+  // vpc_endpoint_dns_name - computed: false, optional: true, required: false
+  private _vpcEndpointDnsName?: string;
+  public get vpcEndpointDnsName() {
+    return this.getStringAttribute('vpc_endpoint_dns_name');
+  }
+  public set vpcEndpointDnsName(value: string ) {
+    this._vpcEndpointDnsName = value;
+  }
+  public resetVpcEndpointDnsName() {
+    this._vpcEndpointDnsName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEndpointDnsNameInput() {
+    return this._vpcEndpointDnsName
+  }
+
   // cache_attributes - computed: false, optional: true, required: false
   private _cacheAttributes?: StoragegatewaySmbFileShareCacheAttributes[];
   public get cacheAttributes() {
@@ -609,6 +672,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       admin_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._adminUserList),
       audit_destination_arn: cdktf.stringToTerraform(this._auditDestinationArn),
       authentication: cdktf.stringToTerraform(this._authentication),
+      bucket_region: cdktf.stringToTerraform(this._bucketRegion),
       case_sensitivity: cdktf.stringToTerraform(this._caseSensitivity),
       default_storage_class: cdktf.stringToTerraform(this._defaultStorageClass),
       file_share_name: cdktf.stringToTerraform(this._fileShareName),
@@ -620,6 +684,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       location_arn: cdktf.stringToTerraform(this._locationArn),
       notification_policy: cdktf.stringToTerraform(this._notificationPolicy),
       object_acl: cdktf.stringToTerraform(this._objectAcl),
+      oplocks_enabled: cdktf.booleanToTerraform(this._oplocksEnabled),
       read_only: cdktf.booleanToTerraform(this._readOnly),
       requester_pays: cdktf.booleanToTerraform(this._requesterPays),
       role_arn: cdktf.stringToTerraform(this._roleArn),
@@ -627,6 +692,7 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       valid_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._validUserList),
+      vpc_endpoint_dns_name: cdktf.stringToTerraform(this._vpcEndpointDnsName),
       cache_attributes: cdktf.listMapper(storagegatewaySmbFileShareCacheAttributesToTerraform)(this._cacheAttributes),
       timeouts: storagegatewaySmbFileShareTimeoutsToTerraform(this._timeouts),
     };

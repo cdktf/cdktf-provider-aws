@@ -86,9 +86,9 @@ export interface RouteTableRoute {
 function routeTableRouteToTerraform(struct?: RouteTableRoute): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
-    carrier_gateway_id: cdktf.stringToTerraform(struct!.carrierGatewayId),
+    carrier_gateway_id: struct!.carrierGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.carrierGatewayId),
     cidr_block: struct!.cidrBlock === undefined ? null : cdktf.stringToTerraform(struct!.cidrBlock),
-    destination_prefix_list_id: cdktf.stringToTerraform(struct!.destinationPrefixListId),
+    destination_prefix_list_id: struct!.destinationPrefixListId === undefined ? null : cdktf.stringToTerraform(struct!.destinationPrefixListId),
     egress_only_gateway_id: struct!.egressOnlyGatewayId === undefined ? null : cdktf.stringToTerraform(struct!.egressOnlyGatewayId),
     gateway_id: struct!.gatewayId === undefined ? null : cdktf.stringToTerraform(struct!.gatewayId),
     instance_id: struct!.instanceId === undefined ? null : cdktf.stringToTerraform(struct!.instanceId),

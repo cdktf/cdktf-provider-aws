@@ -75,6 +75,11 @@ export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
     return this._name
   }
 
+  // permissions_mode - computed: true, optional: false, required: false
+  public get permissionsMode() {
+    return this.getStringAttribute('permissions_mode');
+  }
+
   // =========
   // SYNTHESIS
   // =========

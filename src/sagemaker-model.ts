@@ -34,6 +34,12 @@ export interface SagemakerModelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly container?: SagemakerModelContainer[];
   /**
+  * inference_execution_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#inference_execution_config SagemakerModel#inference_execution_config}
+  */
+  readonly inferenceExecutionConfig?: SagemakerModelInferenceExecutionConfig[];
+  /**
   * primary_container block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#primary_container SagemakerModel#primary_container}
@@ -98,6 +104,20 @@ function sagemakerModelContainerToTerraform(struct?: SagemakerModelContainer): a
     mode: cdktf.stringToTerraform(struct!.mode),
     model_data_url: cdktf.stringToTerraform(struct!.modelDataUrl),
     image_config: cdktf.listMapper(sagemakerModelContainerImageConfigToTerraform)(struct!.imageConfig),
+  }
+}
+
+export interface SagemakerModelInferenceExecutionConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_model.html#mode SagemakerModel#mode}
+  */
+  readonly mode: string;
+}
+
+function sagemakerModelInferenceExecutionConfigToTerraform(struct?: SagemakerModelInferenceExecutionConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    mode: cdktf.stringToTerraform(struct!.mode),
   }
 }
 
@@ -209,6 +229,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._container = config.container;
+    this._inferenceExecutionConfig = config.inferenceExecutionConfig;
     this._primaryContainer = config.primaryContainer;
     this._vpcConfig = config.vpcConfig;
   }
@@ -320,6 +341,22 @@ export class SagemakerModel extends cdktf.TerraformResource {
     return this._container
   }
 
+  // inference_execution_config - computed: false, optional: true, required: false
+  private _inferenceExecutionConfig?: SagemakerModelInferenceExecutionConfig[];
+  public get inferenceExecutionConfig() {
+    return this.interpolationForAttribute('inference_execution_config') as any;
+  }
+  public set inferenceExecutionConfig(value: SagemakerModelInferenceExecutionConfig[] ) {
+    this._inferenceExecutionConfig = value;
+  }
+  public resetInferenceExecutionConfig() {
+    this._inferenceExecutionConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inferenceExecutionConfigInput() {
+    return this._inferenceExecutionConfig
+  }
+
   // primary_container - computed: false, optional: true, required: false
   private _primaryContainer?: SagemakerModelPrimaryContainer[];
   public get primaryContainer() {
@@ -364,6 +401,7 @@ export class SagemakerModel extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       container: cdktf.listMapper(sagemakerModelContainerToTerraform)(this._container),
+      inference_execution_config: cdktf.listMapper(sagemakerModelInferenceExecutionConfigToTerraform)(this._inferenceExecutionConfig),
       primary_container: cdktf.listMapper(sagemakerModelPrimaryContainerToTerraform)(this._primaryContainer),
       vpc_config: cdktf.listMapper(sagemakerModelVpcConfigToTerraform)(this._vpcConfig),
     };

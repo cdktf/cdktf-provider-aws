@@ -16,6 +16,10 @@ export interface QldbLedgerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/qldb_ledger.html#permissions_mode QldbLedger#permissions_mode}
+  */
+  readonly permissionsMode: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/qldb_ledger.html#tags QldbLedger#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -39,9 +43,9 @@ export class QldbLedger extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options QldbLedgerConfig = {}
+  * @param options QldbLedgerConfig
   */
-  public constructor(scope: Construct, id: string, config: QldbLedgerConfig = {}) {
+  public constructor(scope: Construct, id: string, config: QldbLedgerConfig) {
     super(scope, id, {
       terraformResourceType: 'aws_qldb_ledger',
       terraformGeneratorMetadata: {
@@ -54,6 +58,7 @@ export class QldbLedger extends cdktf.TerraformResource {
     });
     this._deletionProtection = config.deletionProtection;
     this._name = config.name;
+    this._permissionsMode = config.permissionsMode;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
   }
@@ -104,6 +109,19 @@ export class QldbLedger extends cdktf.TerraformResource {
     return this._name
   }
 
+  // permissions_mode - computed: false, optional: false, required: true
+  private _permissionsMode: string;
+  public get permissionsMode() {
+    return this.getStringAttribute('permissions_mode');
+  }
+  public set permissionsMode(value: string) {
+    this._permissionsMode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionsModeInput() {
+    return this._permissionsMode
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
@@ -144,6 +162,7 @@ export class QldbLedger extends cdktf.TerraformResource {
     return {
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
       name: cdktf.stringToTerraform(this._name),
+      permissions_mode: cdktf.stringToTerraform(this._permissionsMode),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };

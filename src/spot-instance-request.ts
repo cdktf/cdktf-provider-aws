@@ -10,7 +10,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#ami SpotInstanceRequest#ami}
   */
-  readonly ami: string;
+  readonly ami?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#associate_public_ip_address SpotInstanceRequest#associate_public_ip_address}
   */
@@ -60,13 +60,17 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   */
   readonly instanceInitiatedShutdownBehavior?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#instance_interruption_behavior SpotInstanceRequest#instance_interruption_behavior}
+  */
+  readonly instanceInterruptionBehavior?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#instance_interruption_behaviour SpotInstanceRequest#instance_interruption_behaviour}
   */
   readonly instanceInterruptionBehaviour?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#instance_type SpotInstanceRequest#instance_type}
   */
-  readonly instanceType: string;
+  readonly instanceType?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#ipv6_address_count SpotInstanceRequest#ipv6_address_count}
   */
@@ -189,6 +193,12 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#ephemeral_block_device SpotInstanceRequest#ephemeral_block_device}
   */
   readonly ephemeralBlockDevice?: SpotInstanceRequestEphemeralBlockDevice[];
+  /**
+  * launch_template block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#launch_template SpotInstanceRequest#launch_template}
+  */
+  readonly launchTemplate?: SpotInstanceRequestLaunchTemplate[];
   /**
   * metadata_options block
   * 
@@ -360,6 +370,30 @@ function spotInstanceRequestEphemeralBlockDeviceToTerraform(struct?: SpotInstanc
   }
 }
 
+export interface SpotInstanceRequestLaunchTemplate {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#id SpotInstanceRequest#id}
+  */
+  readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#name SpotInstanceRequest#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#version SpotInstanceRequest#version}
+  */
+  readonly version?: string;
+}
+
+function spotInstanceRequestLaunchTemplateToTerraform(struct?: SpotInstanceRequestLaunchTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
 export interface SpotInstanceRequestMetadataOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#http_endpoint SpotInstanceRequest#http_endpoint}
@@ -491,9 +525,9 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options SpotInstanceRequestConfig
+  * @param options SpotInstanceRequestConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: SpotInstanceRequestConfig) {
+  public constructor(scope: Construct, id: string, config: SpotInstanceRequestConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'aws_spot_instance_request',
       terraformGeneratorMetadata: {
@@ -517,6 +551,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     this._hostId = config.hostId;
     this._iamInstanceProfile = config.iamInstanceProfile;
     this._instanceInitiatedShutdownBehavior = config.instanceInitiatedShutdownBehavior;
+    this._instanceInterruptionBehavior = config.instanceInterruptionBehavior;
     this._instanceInterruptionBehaviour = config.instanceInterruptionBehaviour;
     this._instanceType = config.instanceType;
     this._ipv6AddressCount = config.ipv6AddressCount;
@@ -547,6 +582,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     this._ebsBlockDevice = config.ebsBlockDevice;
     this._enclaveOptions = config.enclaveOptions;
     this._ephemeralBlockDevice = config.ephemeralBlockDevice;
+    this._launchTemplate = config.launchTemplate;
     this._metadataOptions = config.metadataOptions;
     this._networkInterface = config.networkInterface;
     this._rootBlockDevice = config.rootBlockDevice;
@@ -557,13 +593,16 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // ami - computed: false, optional: false, required: true
-  private _ami: string;
+  // ami - computed: true, optional: true, required: false
+  private _ami?: string;
   public get ami() {
     return this.getStringAttribute('ami');
   }
   public set ami(value: string) {
     this._ami = value;
+  }
+  public resetAmi() {
+    this._ami = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get amiInput() {
@@ -655,12 +694,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._cpuThreadsPerCore
   }
 
-  // disable_api_termination - computed: false, optional: true, required: false
+  // disable_api_termination - computed: true, optional: true, required: false
   private _disableApiTermination?: boolean;
   public get disableApiTermination() {
     return this.getBooleanAttribute('disable_api_termination');
   }
-  public set disableApiTermination(value: boolean ) {
+  public set disableApiTermination(value: boolean) {
     this._disableApiTermination = value;
   }
   public resetDisableApiTermination() {
@@ -671,12 +710,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._disableApiTermination
   }
 
-  // ebs_optimized - computed: false, optional: true, required: false
+  // ebs_optimized - computed: true, optional: true, required: false
   private _ebsOptimized?: boolean;
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean ) {
+  public set ebsOptimized(value: boolean) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {
@@ -772,12 +811,28 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._instanceInitiatedShutdownBehavior
   }
 
-  // instance_interruption_behaviour - computed: false, optional: true, required: false
+  // instance_interruption_behavior - computed: true, optional: true, required: false
+  private _instanceInterruptionBehavior?: string;
+  public get instanceInterruptionBehavior() {
+    return this.getStringAttribute('instance_interruption_behavior');
+  }
+  public set instanceInterruptionBehavior(value: string) {
+    this._instanceInterruptionBehavior = value;
+  }
+  public resetInstanceInterruptionBehavior() {
+    this._instanceInterruptionBehavior = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceInterruptionBehaviorInput() {
+    return this._instanceInterruptionBehavior
+  }
+
+  // instance_interruption_behaviour - computed: true, optional: true, required: false
   private _instanceInterruptionBehaviour?: string;
   public get instanceInterruptionBehaviour() {
     return this.getStringAttribute('instance_interruption_behaviour');
   }
-  public set instanceInterruptionBehaviour(value: string ) {
+  public set instanceInterruptionBehaviour(value: string) {
     this._instanceInterruptionBehaviour = value;
   }
   public resetInstanceInterruptionBehaviour() {
@@ -793,13 +848,16 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this.getStringAttribute('instance_state');
   }
 
-  // instance_type - computed: false, optional: false, required: true
-  private _instanceType: string;
+  // instance_type - computed: true, optional: true, required: false
+  private _instanceType?: string;
   public get instanceType() {
     return this.getStringAttribute('instance_type');
   }
   public set instanceType(value: string) {
     this._instanceType = value;
+  }
+  public resetInstanceType() {
+    this._instanceType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceTypeInput() {
@@ -870,12 +928,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._launchGroup
   }
 
-  // monitoring - computed: false, optional: true, required: false
+  // monitoring - computed: true, optional: true, required: false
   private _monitoring?: boolean;
   public get monitoring() {
     return this.getBooleanAttribute('monitoring');
   }
-  public set monitoring(value: boolean ) {
+  public set monitoring(value: boolean) {
     this._monitoring = value;
   }
   public resetMonitoring() {
@@ -1107,12 +1165,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._tenancy
   }
 
-  // user_data - computed: false, optional: true, required: false
+  // user_data - computed: true, optional: true, required: false
   private _userData?: string;
   public get userData() {
     return this.getStringAttribute('user_data');
   }
-  public set userData(value: string ) {
+  public set userData(value: string) {
     this._userData = value;
   }
   public resetUserData() {
@@ -1123,12 +1181,12 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._userData
   }
 
-  // user_data_base64 - computed: false, optional: true, required: false
+  // user_data_base64 - computed: true, optional: true, required: false
   private _userDataBase64?: string;
   public get userDataBase64() {
     return this.getStringAttribute('user_data_base64');
   }
-  public set userDataBase64(value: string ) {
+  public set userDataBase64(value: string) {
     this._userDataBase64 = value;
   }
   public resetUserDataBase64() {
@@ -1299,6 +1357,22 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     return this._ephemeralBlockDevice
   }
 
+  // launch_template - computed: false, optional: true, required: false
+  private _launchTemplate?: SpotInstanceRequestLaunchTemplate[];
+  public get launchTemplate() {
+    return this.interpolationForAttribute('launch_template') as any;
+  }
+  public set launchTemplate(value: SpotInstanceRequestLaunchTemplate[] ) {
+    this._launchTemplate = value;
+  }
+  public resetLaunchTemplate() {
+    this._launchTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get launchTemplateInput() {
+    return this._launchTemplate
+  }
+
   // metadata_options - computed: false, optional: true, required: false
   private _metadataOptions?: SpotInstanceRequestMetadataOptions[];
   public get metadataOptions() {
@@ -1382,6 +1456,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       host_id: cdktf.stringToTerraform(this._hostId),
       iam_instance_profile: cdktf.stringToTerraform(this._iamInstanceProfile),
       instance_initiated_shutdown_behavior: cdktf.stringToTerraform(this._instanceInitiatedShutdownBehavior),
+      instance_interruption_behavior: cdktf.stringToTerraform(this._instanceInterruptionBehavior),
       instance_interruption_behaviour: cdktf.stringToTerraform(this._instanceInterruptionBehaviour),
       instance_type: cdktf.stringToTerraform(this._instanceType),
       ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
@@ -1412,6 +1487,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       ebs_block_device: cdktf.listMapper(spotInstanceRequestEbsBlockDeviceToTerraform)(this._ebsBlockDevice),
       enclave_options: cdktf.listMapper(spotInstanceRequestEnclaveOptionsToTerraform)(this._enclaveOptions),
       ephemeral_block_device: cdktf.listMapper(spotInstanceRequestEphemeralBlockDeviceToTerraform)(this._ephemeralBlockDevice),
+      launch_template: cdktf.listMapper(spotInstanceRequestLaunchTemplateToTerraform)(this._launchTemplate),
       metadata_options: cdktf.listMapper(spotInstanceRequestMetadataOptionsToTerraform)(this._metadataOptions),
       network_interface: cdktf.listMapper(spotInstanceRequestNetworkInterfaceToTerraform)(this._networkInterface),
       root_block_device: cdktf.listMapper(spotInstanceRequestRootBlockDeviceToTerraform)(this._rootBlockDevice),
