@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface KmsExternalKeyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#bypass_policy_lockout_safety_check KmsExternalKey#bypass_policy_lockout_safety_check}
+  */
+  readonly bypassPolicyLockoutSafetyCheck?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#deletion_window_in_days KmsExternalKey#deletion_window_in_days}
   */
   readonly deletionWindowInDays?: number;
@@ -68,6 +72,7 @@ export class KmsExternalKey extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._bypassPolicyLockoutSafetyCheck = config.bypassPolicyLockoutSafetyCheck;
     this._deletionWindowInDays = config.deletionWindowInDays;
     this._description = config.description;
     this._enabled = config.enabled;
@@ -85,6 +90,22 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // bypass_policy_lockout_safety_check - computed: false, optional: true, required: false
+  private _bypassPolicyLockoutSafetyCheck?: boolean;
+  public get bypassPolicyLockoutSafetyCheck() {
+    return this.getBooleanAttribute('bypass_policy_lockout_safety_check');
+  }
+  public set bypassPolicyLockoutSafetyCheck(value: boolean ) {
+    this._bypassPolicyLockoutSafetyCheck = value;
+  }
+  public resetBypassPolicyLockoutSafetyCheck() {
+    this._bypassPolicyLockoutSafetyCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bypassPolicyLockoutSafetyCheckInput() {
+    return this._bypassPolicyLockoutSafetyCheck
   }
 
   // deletion_window_in_days - computed: false, optional: true, required: false
@@ -241,6 +262,7 @@ export class KmsExternalKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      bypass_policy_lockout_safety_check: cdktf.booleanToTerraform(this._bypassPolicyLockoutSafetyCheck),
       deletion_window_in_days: cdktf.numberToTerraform(this._deletionWindowInDays),
       description: cdktf.stringToTerraform(this._description),
       enabled: cdktf.booleanToTerraform(this._enabled),

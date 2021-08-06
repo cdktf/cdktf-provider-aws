@@ -48,6 +48,10 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly copyTagsToSnapshot?: boolean;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}
+  */
+  readonly customerOwnedIpEnabled?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#db_subnet_group_name DbInstance#db_subnet_group_name}
   */
   readonly dbSubnetGroupName?: string;
@@ -135,6 +139,10 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#name DbInstance#name}
   */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#nchar_character_set_name DbInstance#nchar_character_set_name}
+  */
+  readonly ncharCharacterSetName?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#option_group_name DbInstance#option_group_name}
   */
@@ -355,6 +363,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._caCertIdentifier = config.caCertIdentifier;
     this._characterSetName = config.characterSetName;
     this._copyTagsToSnapshot = config.copyTagsToSnapshot;
+    this._customerOwnedIpEnabled = config.customerOwnedIpEnabled;
     this._dbSubnetGroupName = config.dbSubnetGroupName;
     this._deleteAutomatedBackups = config.deleteAutomatedBackups;
     this._deletionProtection = config.deletionProtection;
@@ -377,6 +386,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._monitoringRoleArn = config.monitoringRoleArn;
     this._multiAz = config.multiAz;
     this._name = config.name;
+    this._ncharCharacterSetName = config.ncharCharacterSetName;
     this._optionGroupName = config.optionGroupName;
     this._parameterGroupName = config.parameterGroupName;
     this._password = config.password;
@@ -573,6 +583,22 @@ export class DbInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get copyTagsToSnapshotInput() {
     return this._copyTagsToSnapshot
+  }
+
+  // customer_owned_ip_enabled - computed: false, optional: true, required: false
+  private _customerOwnedIpEnabled?: boolean;
+  public get customerOwnedIpEnabled() {
+    return this.getBooleanAttribute('customer_owned_ip_enabled');
+  }
+  public set customerOwnedIpEnabled(value: boolean ) {
+    this._customerOwnedIpEnabled = value;
+  }
+  public resetCustomerOwnedIpEnabled() {
+    this._customerOwnedIpEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerOwnedIpEnabledInput() {
+    return this._customerOwnedIpEnabled
   }
 
   // db_subnet_group_name - computed: true, optional: true, required: false
@@ -942,6 +968,22 @@ export class DbInstance extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // nchar_character_set_name - computed: true, optional: true, required: false
+  private _ncharCharacterSetName?: string;
+  public get ncharCharacterSetName() {
+    return this.getStringAttribute('nchar_character_set_name');
+  }
+  public set ncharCharacterSetName(value: string) {
+    this._ncharCharacterSetName = value;
+  }
+  public resetNcharCharacterSetName() {
+    this._ncharCharacterSetName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ncharCharacterSetNameInput() {
+    return this._ncharCharacterSetName
   }
 
   // option_group_name - computed: true, optional: true, required: false
@@ -1327,6 +1369,7 @@ export class DbInstance extends cdktf.TerraformResource {
       ca_cert_identifier: cdktf.stringToTerraform(this._caCertIdentifier),
       character_set_name: cdktf.stringToTerraform(this._characterSetName),
       copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
+      customer_owned_ip_enabled: cdktf.booleanToTerraform(this._customerOwnedIpEnabled),
       db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
       delete_automated_backups: cdktf.booleanToTerraform(this._deleteAutomatedBackups),
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
@@ -1349,6 +1392,7 @@ export class DbInstance extends cdktf.TerraformResource {
       monitoring_role_arn: cdktf.stringToTerraform(this._monitoringRoleArn),
       multi_az: cdktf.booleanToTerraform(this._multiAz),
       name: cdktf.stringToTerraform(this._name),
+      nchar_character_set_name: cdktf.stringToTerraform(this._ncharCharacterSetName),
       option_group_name: cdktf.stringToTerraform(this._optionGroupName),
       parameter_group_name: cdktf.stringToTerraform(this._parameterGroupName),
       password: cdktf.stringToTerraform(this._password),
