@@ -968,6 +968,18 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#route53recoverycontrolconfig AwsProvider#route53recoverycontrolconfig}
+  */
+  readonly route53Recoverycontrolconfig?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#route53recoveryreadiness AwsProvider#route53recoveryreadiness}
+  */
+  readonly route53Recoveryreadiness?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#route53resolver AwsProvider#route53resolver}
   */
   readonly route53Resolver?: string;
@@ -1298,6 +1310,8 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     resourcegroupstaggingapi: cdktf.stringToTerraform(struct!.resourcegroupstaggingapi),
     route53: cdktf.stringToTerraform(struct!.route53),
     route53domains: cdktf.stringToTerraform(struct!.route53Domains),
+    route53recoverycontrolconfig: cdktf.stringToTerraform(struct!.route53Recoverycontrolconfig),
+    route53recoveryreadiness: cdktf.stringToTerraform(struct!.route53Recoveryreadiness),
     route53resolver: cdktf.stringToTerraform(struct!.route53Resolver),
     s3: cdktf.stringToTerraform(struct!.s3),
     s3control: cdktf.stringToTerraform(struct!.s3Control),

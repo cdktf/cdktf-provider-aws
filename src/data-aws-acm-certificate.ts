@@ -127,6 +127,11 @@ export class DataAwsAcmCertificate extends cdktf.TerraformDataSource {
     return this._mostRecent
   }
 
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
   // statuses - computed: false, optional: true, required: false
   private _statuses?: string[];
   public get statuses() {

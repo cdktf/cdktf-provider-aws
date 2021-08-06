@@ -39,6 +39,10 @@ export interface AutoscalingScheduleConfig extends cdktf.TerraformMetaArguments 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_schedule.html#start_time AutoscalingSchedule#start_time}
   */
   readonly startTime?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_schedule.html#time_zone AutoscalingSchedule#time_zone}
+  */
+  readonly timeZone?: string;
 }
 
 /**
@@ -76,6 +80,7 @@ export class AutoscalingSchedule extends cdktf.TerraformResource {
     this._recurrence = config.recurrence;
     this._scheduledActionName = config.scheduledActionName;
     this._startTime = config.startTime;
+    this._timeZone = config.timeZone;
   }
 
   // ==========
@@ -214,6 +219,22 @@ export class AutoscalingSchedule extends cdktf.TerraformResource {
     return this._startTime
   }
 
+  // time_zone - computed: true, optional: true, required: false
+  private _timeZone?: string;
+  public get timeZone() {
+    return this.getStringAttribute('time_zone');
+  }
+  public set timeZone(value: string) {
+    this._timeZone = value;
+  }
+  public resetTimeZone() {
+    this._timeZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeZoneInput() {
+    return this._timeZone
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -228,6 +249,7 @@ export class AutoscalingSchedule extends cdktf.TerraformResource {
       recurrence: cdktf.stringToTerraform(this._recurrence),
       scheduled_action_name: cdktf.stringToTerraform(this._scheduledActionName),
       start_time: cdktf.stringToTerraform(this._startTime),
+      time_zone: cdktf.stringToTerraform(this._timeZone),
     };
   }
 }
