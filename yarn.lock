@@ -2130,9 +2130,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^3.0.4, constructs@^3.3.75:
-  version "3.3.114"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.114.tgz#5ad4f79657ab7078d52520261a4e6b02497af89d"
-  integrity sha512-J1R3RypQsCBvZ4zUpogIunj8ShpU4GC73mmHFPmOp7HgxHKYEOpukYAe5VL84pnsoQxv1tnM3EJcScPh/EEQQw==
+  version "3.3.115"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.115.tgz#0d8099355a4c9f703602cf1a5b6e98606ed3630d"
+  integrity sha512-0sd7gG//+g/uT7aFSdZCInt80SGZ/q5XE3uQcEkB8Psik7U4qQyGPhk1DmxG3KucN6ulewx1sPznOFYJWYPFNQ==
 
 content-disposition@0.5.3:
   version "0.5.3"
