@@ -94,6 +94,10 @@ export interface WorkspacesDirectoryWorkspaceAccessProperties {
   */
   readonly deviceTypeIos?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory.html#device_type_linux WorkspacesDirectory#device_type_linux}
+  */
+  readonly deviceTypeLinux?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory.html#device_type_osx WorkspacesDirectory#device_type_osx}
   */
   readonly deviceTypeOsx?: string;
@@ -117,6 +121,7 @@ function workspacesDirectoryWorkspaceAccessPropertiesToTerraform(struct?: Worksp
     device_type_android: cdktf.stringToTerraform(struct!.deviceTypeAndroid),
     device_type_chromeos: cdktf.stringToTerraform(struct!.deviceTypeChromeos),
     device_type_ios: cdktf.stringToTerraform(struct!.deviceTypeIos),
+    device_type_linux: cdktf.stringToTerraform(struct!.deviceTypeLinux),
     device_type_osx: cdktf.stringToTerraform(struct!.deviceTypeOsx),
     device_type_web: cdktf.stringToTerraform(struct!.deviceTypeWeb),
     device_type_windows: cdktf.stringToTerraform(struct!.deviceTypeWindows),
