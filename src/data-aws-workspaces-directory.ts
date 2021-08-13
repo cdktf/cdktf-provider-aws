@@ -60,6 +60,11 @@ export class DataAwsWorkspacesDirectoryWorkspaceAccessProperties extends cdktf.C
     return this.getStringAttribute('device_type_ios');
   }
 
+  // device_type_linux - computed: true, optional: false, required: false
+  public get deviceTypeLinux() {
+    return this.getStringAttribute('device_type_linux');
+  }
+
   // device_type_osx - computed: true, optional: false, required: false
   public get deviceTypeOsx() {
     return this.getStringAttribute('device_type_osx');

@@ -143,6 +143,10 @@ function cloudwatchMetricAlarmMetricQueryMetricToTerraform(struct?: CloudwatchMe
 
 export interface CloudwatchMetricAlarmMetricQuery {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm.html#account_id CloudwatchMetricAlarm#account_id}
+  */
+  readonly accountId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm.html#expression CloudwatchMetricAlarm#expression}
   */
   readonly expression?: string;
@@ -169,6 +173,7 @@ export interface CloudwatchMetricAlarmMetricQuery {
 function cloudwatchMetricAlarmMetricQueryToTerraform(struct?: CloudwatchMetricAlarmMetricQuery): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    account_id: cdktf.stringToTerraform(struct!.accountId),
     expression: cdktf.stringToTerraform(struct!.expression),
     id: cdktf.stringToTerraform(struct!.id),
     label: cdktf.stringToTerraform(struct!.label),

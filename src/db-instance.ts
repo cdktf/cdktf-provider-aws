@@ -734,6 +734,11 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._engineVersion
   }
 
+  // engine_version_actual - computed: true, optional: false, required: false
+  public get engineVersionActual() {
+    return this.getStringAttribute('engine_version_actual');
+  }
+
   // final_snapshot_identifier - computed: false, optional: true, required: false
   private _finalSnapshotIdentifier?: string;
   public get finalSnapshotIdentifier() {
