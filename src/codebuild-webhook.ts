@@ -12,6 +12,10 @@ export interface CodebuildWebhookConfig extends cdktf.TerraformMetaArguments {
   */
   readonly branchFilter?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#build_type CodebuildWebhook#build_type}
+  */
+  readonly buildType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#project_name CodebuildWebhook#project_name}
   */
   readonly projectName: string;
@@ -91,6 +95,7 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._branchFilter = config.branchFilter;
+    this._buildType = config.buildType;
     this._projectName = config.projectName;
     this._filterGroup = config.filterGroup;
   }
@@ -113,6 +118,22 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get branchFilterInput() {
     return this._branchFilter
+  }
+
+  // build_type - computed: false, optional: true, required: false
+  private _buildType?: string;
+  public get buildType() {
+    return this.getStringAttribute('build_type');
+  }
+  public set buildType(value: string ) {
+    this._buildType = value;
+  }
+  public resetBuildType() {
+    this._buildType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get buildTypeInput() {
+    return this._buildType
   }
 
   // id - computed: true, optional: true, required: false
@@ -171,6 +192,7 @@ export class CodebuildWebhook extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       branch_filter: cdktf.stringToTerraform(this._branchFilter),
+      build_type: cdktf.stringToTerraform(this._buildType),
       project_name: cdktf.stringToTerraform(this._projectName),
       filter_group: cdktf.listMapper(codebuildWebhookFilterGroupToTerraform)(this._filterGroup),
     };

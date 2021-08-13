@@ -92,6 +92,10 @@ export interface AthenaWorkgroupConfiguration {
   */
   readonly publishCloudwatchMetricsEnabled?: boolean;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#requester_pays_enabled AthenaWorkgroup#requester_pays_enabled}
+  */
+  readonly requesterPaysEnabled?: boolean;
+  /**
   * result_configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#result_configuration AthenaWorkgroup#result_configuration}
@@ -105,6 +109,7 @@ function athenaWorkgroupConfigurationToTerraform(struct?: AthenaWorkgroupConfigu
     bytes_scanned_cutoff_per_query: cdktf.numberToTerraform(struct!.bytesScannedCutoffPerQuery),
     enforce_workgroup_configuration: cdktf.booleanToTerraform(struct!.enforceWorkgroupConfiguration),
     publish_cloudwatch_metrics_enabled: cdktf.booleanToTerraform(struct!.publishCloudwatchMetricsEnabled),
+    requester_pays_enabled: cdktf.booleanToTerraform(struct!.requesterPaysEnabled),
     result_configuration: cdktf.listMapper(athenaWorkgroupConfigurationResultConfigurationToTerraform)(struct!.resultConfiguration),
   }
 }
