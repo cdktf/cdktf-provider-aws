@@ -44,14 +44,14 @@
     "cdktf-cli": "^0.5",
     "constructs": "^3.0.4",
     "dot-prop": "^5.2.0",
-    "jsii": "^1.9.0",
-    "jsii-diff": "^1.19.0",
-    "jsii-docgen": "^1.8.33",
-    "jsii-pacmak": "^1.19.0",
+    "jsii": "^1.33.0",
+    "jsii-diff": "^1.33.0",
+    "jsii-docgen": "^1.8.110",
+    "jsii-pacmak": "^1.33.0",
     "npm-check-updates": "^11",
     "projen": "^0.27.30",
     "standard-version": "^9",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.10"
   },
   "peerDependencies": {
     "cdktf": "^0.5",
