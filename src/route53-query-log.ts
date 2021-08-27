@@ -52,6 +52,11 @@ export class Route53QueryLog extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // cloudwatch_log_group_arn - computed: false, optional: false, required: true
   private _cloudwatchLogGroupArn: string;
   public get cloudwatchLogGroupArn() {

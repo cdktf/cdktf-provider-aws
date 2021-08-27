@@ -20,6 +20,10 @@ export interface FsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments
   */
   readonly automaticBackupRetentionDays?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#backup_id FsxWindowsFileSystem#backup_id}
+  */
+  readonly backupId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#copy_tags_to_backups FsxWindowsFileSystem#copy_tags_to_backups}
   */
   readonly copyTagsToBackups?: boolean;
@@ -50,7 +54,7 @@ export interface FsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#storage_capacity FsxWindowsFileSystem#storage_capacity}
   */
-  readonly storageCapacity: number;
+  readonly storageCapacity?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#storage_type FsxWindowsFileSystem#storage_type}
   */
@@ -212,6 +216,7 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
     this._activeDirectoryId = config.activeDirectoryId;
     this._aliases = config.aliases;
     this._automaticBackupRetentionDays = config.automaticBackupRetentionDays;
+    this._backupId = config.backupId;
     this._copyTagsToBackups = config.copyTagsToBackups;
     this._dailyAutomaticBackupStartTime = config.dailyAutomaticBackupStartTime;
     this._deploymentType = config.deploymentType;
@@ -286,6 +291,22 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get automaticBackupRetentionDaysInput() {
     return this._automaticBackupRetentionDays
+  }
+
+  // backup_id - computed: false, optional: true, required: false
+  private _backupId?: string;
+  public get backupId() {
+    return this.getStringAttribute('backup_id');
+  }
+  public set backupId(value: string ) {
+    this._backupId = value;
+  }
+  public resetBackupId() {
+    this._backupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupIdInput() {
+    return this._backupId
   }
 
   // copy_tags_to_backups - computed: false, optional: true, required: false
@@ -430,13 +451,16 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
     return this._skipFinalBackup
   }
 
-  // storage_capacity - computed: false, optional: false, required: true
-  private _storageCapacity: number;
+  // storage_capacity - computed: true, optional: true, required: false
+  private _storageCapacity?: number;
   public get storageCapacity() {
     return this.getNumberAttribute('storage_capacity');
   }
   public set storageCapacity(value: number) {
     this._storageCapacity = value;
+  }
+  public resetStorageCapacity() {
+    this._storageCapacity = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get storageCapacityInput() {
@@ -595,6 +619,7 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
       active_directory_id: cdktf.stringToTerraform(this._activeDirectoryId),
       aliases: cdktf.listMapper(cdktf.stringToTerraform)(this._aliases),
       automatic_backup_retention_days: cdktf.numberToTerraform(this._automaticBackupRetentionDays),
+      backup_id: cdktf.stringToTerraform(this._backupId),
       copy_tags_to_backups: cdktf.booleanToTerraform(this._copyTagsToBackups),
       daily_automatic_backup_start_time: cdktf.stringToTerraform(this._dailyAutomaticBackupStartTime),
       deployment_type: cdktf.stringToTerraform(this._deploymentType),

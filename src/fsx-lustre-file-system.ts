@@ -16,6 +16,10 @@ export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments 
   */
   readonly automaticBackupRetentionDays?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#backup_id FsxLustreFileSystem#backup_id}
+  */
+  readonly backupId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#copy_tags_to_backups FsxLustreFileSystem#copy_tags_to_backups}
   */
   readonly copyTagsToBackups?: boolean;
@@ -62,7 +66,7 @@ export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#storage_capacity FsxLustreFileSystem#storage_capacity}
   */
-  readonly storageCapacity: number;
+  readonly storageCapacity?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#storage_type FsxLustreFileSystem#storage_type}
   */
@@ -139,6 +143,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     });
     this._autoImportPolicy = config.autoImportPolicy;
     this._automaticBackupRetentionDays = config.automaticBackupRetentionDays;
+    this._backupId = config.backupId;
     this._copyTagsToBackups = config.copyTagsToBackups;
     this._dailyAutomaticBackupStartTime = config.dailyAutomaticBackupStartTime;
     this._dataCompressionType = config.dataCompressionType;
@@ -198,6 +203,22 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get automaticBackupRetentionDaysInput() {
     return this._automaticBackupRetentionDays
+  }
+
+  // backup_id - computed: false, optional: true, required: false
+  private _backupId?: string;
+  public get backupId() {
+    return this.getStringAttribute('backup_id');
+  }
+  public set backupId(value: string ) {
+    this._backupId = value;
+  }
+  public resetBackupId() {
+    this._backupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupIdInput() {
+    return this._backupId
   }
 
   // copy_tags_to_backups - computed: false, optional: true, required: false
@@ -401,13 +422,16 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     return this._securityGroupIds
   }
 
-  // storage_capacity - computed: false, optional: false, required: true
-  private _storageCapacity: number;
+  // storage_capacity - computed: false, optional: true, required: false
+  private _storageCapacity?: number;
   public get storageCapacity() {
     return this.getNumberAttribute('storage_capacity');
   }
-  public set storageCapacity(value: number) {
+  public set storageCapacity(value: number ) {
     this._storageCapacity = value;
+  }
+  public resetStorageCapacity() {
+    this._storageCapacity = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get storageCapacityInput() {
@@ -520,6 +544,7 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
     return {
       auto_import_policy: cdktf.stringToTerraform(this._autoImportPolicy),
       automatic_backup_retention_days: cdktf.numberToTerraform(this._automaticBackupRetentionDays),
+      backup_id: cdktf.stringToTerraform(this._backupId),
       copy_tags_to_backups: cdktf.booleanToTerraform(this._copyTagsToBackups),
       daily_automatic_backup_start_time: cdktf.stringToTerraform(this._dailyAutomaticBackupStartTime),
       data_compression_type: cdktf.stringToTerraform(this._dataCompressionType),

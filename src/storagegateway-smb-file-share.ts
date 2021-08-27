@@ -484,12 +484,12 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
     return this._objectAcl
   }
 
-  // oplocks_enabled - computed: false, optional: true, required: false
+  // oplocks_enabled - computed: true, optional: true, required: false
   private _oplocksEnabled?: boolean;
   public get oplocksEnabled() {
     return this.getBooleanAttribute('oplocks_enabled');
   }
-  public set oplocksEnabled(value: boolean ) {
+  public set oplocksEnabled(value: boolean) {
     this._oplocksEnabled = value;
   }
   public resetOplocksEnabled() {

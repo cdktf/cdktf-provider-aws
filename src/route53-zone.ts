@@ -98,6 +98,11 @@ export class Route53Zone extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // comment - computed: false, optional: true, required: false
   private _comment?: string;
   public get comment() {

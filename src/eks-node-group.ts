@@ -97,6 +97,12 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#timeouts EksNodeGroup#timeouts}
   */
   readonly timeouts?: EksNodeGroupTimeouts;
+  /**
+  * update_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#update_config EksNodeGroup#update_config}
+  */
+  readonly updateConfig?: EksNodeGroupUpdateConfig[];
 }
 export class EksNodeGroupResourcesAutoscalingGroups extends cdktf.ComplexComputedList {
 
@@ -232,6 +238,25 @@ function eksNodeGroupTimeoutsToTerraform(struct?: EksNodeGroupTimeouts): any {
   }
 }
 
+export interface EksNodeGroupUpdateConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#max_unavailable EksNodeGroup#max_unavailable}
+  */
+  readonly maxUnavailable?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#max_unavailable_percentage EksNodeGroup#max_unavailable_percentage}
+  */
+  readonly maxUnavailablePercentage?: number;
+}
+
+function eksNodeGroupUpdateConfigToTerraform(struct?: EksNodeGroupUpdateConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_unavailable: cdktf.numberToTerraform(struct!.maxUnavailable),
+    max_unavailable_percentage: cdktf.numberToTerraform(struct!.maxUnavailablePercentage),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html aws_eks_node_group}
@@ -280,6 +305,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     this._scalingConfig = config.scalingConfig;
     this._taint = config.taint;
     this._timeouts = config.timeouts;
+    this._updateConfig = config.updateConfig;
   }
 
   // ==========
@@ -614,6 +640,22 @@ export class EksNodeGroup extends cdktf.TerraformResource {
     return this._timeouts
   }
 
+  // update_config - computed: false, optional: true, required: false
+  private _updateConfig?: EksNodeGroupUpdateConfig[];
+  public get updateConfig() {
+    return this.interpolationForAttribute('update_config') as any;
+  }
+  public set updateConfig(value: EksNodeGroupUpdateConfig[] ) {
+    this._updateConfig = value;
+  }
+  public resetUpdateConfig() {
+    this._updateConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateConfigInput() {
+    return this._updateConfig
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -640,6 +682,7 @@ export class EksNodeGroup extends cdktf.TerraformResource {
       scaling_config: cdktf.listMapper(eksNodeGroupScalingConfigToTerraform)(this._scalingConfig),
       taint: cdktf.listMapper(eksNodeGroupTaintToTerraform)(this._taint),
       timeouts: eksNodeGroupTimeoutsToTerraform(this._timeouts),
+      update_config: cdktf.listMapper(eksNodeGroupUpdateConfigToTerraform)(this._updateConfig),
     };
   }
 }

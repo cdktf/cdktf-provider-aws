@@ -47,6 +47,11 @@ export class DataAwsRoute53DelegationSet extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // caller_reference - computed: true, optional: false, required: false
   public get callerReference() {
     return this.getStringAttribute('caller_reference');

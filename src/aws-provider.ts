@@ -848,6 +848,12 @@ export interface AwsProviderEndpoints {
   /**
   * Use this to override the default service endpoint URL
   * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#memorydb AwsProvider#memorydb}
+  */
+  readonly memorydb?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#mq AwsProvider#mq}
   */
   readonly mq?: string;
@@ -1290,6 +1296,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     mediapackage: cdktf.stringToTerraform(struct!.mediapackage),
     mediastore: cdktf.stringToTerraform(struct!.mediastore),
     mediastoredata: cdktf.stringToTerraform(struct!.mediastoredata),
+    memorydb: cdktf.stringToTerraform(struct!.memorydb),
     mq: cdktf.stringToTerraform(struct!.mq),
     mwaa: cdktf.stringToTerraform(struct!.mwaa),
     neptune: cdktf.stringToTerraform(struct!.neptune),
