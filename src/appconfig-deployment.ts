@@ -178,6 +178,11 @@ export class AppconfigDeployment extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {

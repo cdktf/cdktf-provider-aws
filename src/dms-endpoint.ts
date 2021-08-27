@@ -231,13 +231,33 @@ export interface DmsEndpointS3Settings {
   */
   readonly csvRowDelimiter?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#data_format DmsEndpoint#data_format}
+  */
+  readonly dataFormat?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#date_partition_enabled DmsEndpoint#date_partition_enabled}
   */
   readonly datePartitionEnabled?: boolean;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#encryption_mode DmsEndpoint#encryption_mode}
+  */
+  readonly encryptionMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#external_table_definition DmsEndpoint#external_table_definition}
   */
   readonly externalTableDefinition?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#parquet_timestamp_in_millisecond DmsEndpoint#parquet_timestamp_in_millisecond}
+  */
+  readonly parquetTimestampInMillisecond?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#parquet_version DmsEndpoint#parquet_version}
+  */
+  readonly parquetVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#server_side_encryption_kms_key_id DmsEndpoint#server_side_encryption_kms_key_id}
+  */
+  readonly serverSideEncryptionKmsKeyId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#service_access_role_arn DmsEndpoint#service_access_role_arn}
   */
@@ -252,8 +272,13 @@ function dmsEndpointS3SettingsToTerraform(struct?: DmsEndpointS3Settings): any {
     compression_type: cdktf.stringToTerraform(struct!.compressionType),
     csv_delimiter: cdktf.stringToTerraform(struct!.csvDelimiter),
     csv_row_delimiter: cdktf.stringToTerraform(struct!.csvRowDelimiter),
+    data_format: cdktf.stringToTerraform(struct!.dataFormat),
     date_partition_enabled: cdktf.booleanToTerraform(struct!.datePartitionEnabled),
+    encryption_mode: cdktf.stringToTerraform(struct!.encryptionMode),
     external_table_definition: cdktf.stringToTerraform(struct!.externalTableDefinition),
+    parquet_timestamp_in_millisecond: cdktf.booleanToTerraform(struct!.parquetTimestampInMillisecond),
+    parquet_version: cdktf.stringToTerraform(struct!.parquetVersion),
+    server_side_encryption_kms_key_id: cdktf.stringToTerraform(struct!.serverSideEncryptionKmsKeyId),
     service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
   }
 }

@@ -147,6 +147,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
   // child_health_threshold - computed: false, optional: true, required: false
   private _childHealthThreshold?: number;
   public get childHealthThreshold() {
@@ -243,12 +248,12 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
     return this._enableSni
   }
 
-  // failure_threshold - computed: false, optional: true, required: false
+  // failure_threshold - computed: true, optional: true, required: false
   private _failureThreshold?: number;
   public get failureThreshold() {
     return this.getNumberAttribute('failure_threshold');
   }
-  public set failureThreshold(value: number ) {
+  public set failureThreshold(value: number) {
     this._failureThreshold = value;
   }
   public resetFailureThreshold() {

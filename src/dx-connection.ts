@@ -20,6 +20,10 @@ export interface DxConnectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection.html#provider_name DxConnection#provider_name}
+  */
+  readonly providerName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_connection.html#tags DxConnection#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -59,6 +63,7 @@ export class DxConnection extends cdktf.TerraformResource {
     this._bandwidth = config.bandwidth;
     this._location = config.location;
     this._name = config.name;
+    this._providerName = config.providerName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
   }
@@ -131,6 +136,27 @@ export class DxConnection extends cdktf.TerraformResource {
     return this._name
   }
 
+  // owner_account_id - computed: true, optional: false, required: false
+  public get ownerAccountId() {
+    return this.getStringAttribute('owner_account_id');
+  }
+
+  // provider_name - computed: false, optional: true, required: false
+  private _providerName?: string;
+  public get providerName() {
+    return this.getStringAttribute('provider_name');
+  }
+  public set providerName(value: string ) {
+    this._providerName = value;
+  }
+  public resetProviderName() {
+    this._providerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerNameInput() {
+    return this._providerName
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string };
   public get tags() {
@@ -172,6 +198,7 @@ export class DxConnection extends cdktf.TerraformResource {
       bandwidth: cdktf.stringToTerraform(this._bandwidth),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
+      provider_name: cdktf.stringToTerraform(this._providerName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
     };
