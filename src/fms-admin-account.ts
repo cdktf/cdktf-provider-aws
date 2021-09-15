@@ -18,6 +18,11 @@ export interface FmsAdminAccountConfig extends cdktf.TerraformMetaArguments {
 */
 export class FmsAdminAccount extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_fms_admin_account";
+
   // ===========
   // INITIALIZER
   // ===========

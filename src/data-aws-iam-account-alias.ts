@@ -14,6 +14,11 @@ export interface DataAwsIamAccountAliasConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataAwsIamAccountAlias extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_account_alias";
+
   // ===========
   // INITIALIZER
   // ===========

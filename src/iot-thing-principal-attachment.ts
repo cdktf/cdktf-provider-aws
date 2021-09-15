@@ -22,6 +22,11 @@ export interface IotThingPrincipalAttachmentConfig extends cdktf.TerraformMetaAr
 */
 export class IotThingPrincipalAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iot_thing_principal_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

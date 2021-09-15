@@ -22,6 +22,11 @@ export interface LbListenerCertificateConfig extends cdktf.TerraformMetaArgument
 */
 export class LbListenerCertificate extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lb_listener_certificate";
+
   // ===========
   // INITIALIZER
   // ===========

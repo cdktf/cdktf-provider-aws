@@ -22,11 +22,11 @@ export interface DlmLifecyclePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#tags DlmLifecyclePolicy#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#tags_all DlmLifecyclePolicy#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * policy_details block
   * 
@@ -76,7 +76,7 @@ export interface DlmLifecyclePolicyPolicyDetailsSchedule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#copy_tags DlmLifecyclePolicy#copy_tags}
   */
-  readonly copyTags?: boolean;
+  readonly copyTags?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#name DlmLifecyclePolicy#name}
   */
@@ -84,7 +84,7 @@ export interface DlmLifecyclePolicyPolicyDetailsSchedule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#tags_to_add DlmLifecyclePolicy#tags_to_add}
   */
-  readonly tagsToAdd?: { [key: string]: string };
+  readonly tagsToAdd?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * create_rule block
   * 
@@ -118,7 +118,7 @@ export interface DlmLifecyclePolicyPolicyDetails {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#target_tags DlmLifecyclePolicy#target_tags}
   */
-  readonly targetTags: { [key: string]: string };
+  readonly targetTags: { [key: string]: string } | cdktf.IResolvable;
   /**
   * schedule block
   * 
@@ -141,6 +141,11 @@ function dlmLifecyclePolicyPolicyDetailsToTerraform(struct?: DlmLifecyclePolicyP
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html aws_dlm_lifecycle_policy}
 */
 export class DlmLifecyclePolicy extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dlm_lifecycle_policy";
 
   // ===========
   // INITIALIZER
@@ -229,11 +234,11 @@ export class DlmLifecyclePolicy extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -245,11 +250,11 @@ export class DlmLifecyclePolicy extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

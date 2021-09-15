@@ -18,6 +18,11 @@ export interface DataAwsCloudtrailServiceAccountConfig extends cdktf.TerraformMe
 */
 export class DataAwsCloudtrailServiceAccount extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudtrail_service_account";
+
   // ===========
   // INITIALIZER
   // ===========

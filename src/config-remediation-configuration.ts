@@ -64,6 +64,11 @@ function configRemediationConfigurationParameterToTerraform(struct?: ConfigRemed
 */
 export class ConfigRemediationConfiguration extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_config_remediation_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

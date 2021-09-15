@@ -34,7 +34,7 @@ export interface Apigatewayv2AuthorizerConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_authorizer.html#enable_simple_responses Apigatewayv2Authorizer#enable_simple_responses}
   */
-  readonly enableSimpleResponses?: boolean;
+  readonly enableSimpleResponses?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_authorizer.html#identity_sources Apigatewayv2Authorizer#identity_sources}
   */
@@ -74,6 +74,11 @@ function apigatewayv2AuthorizerJwtConfigurationToTerraform(struct?: Apigatewayv2
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_authorizer.html aws_apigatewayv2_authorizer}
 */
 export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_authorizer";
 
   // ===========
   // INITIALIZER
@@ -204,11 +209,11 @@ export class Apigatewayv2Authorizer extends cdktf.TerraformResource {
   }
 
   // enable_simple_responses - computed: false, optional: true, required: false
-  private _enableSimpleResponses?: boolean;
+  private _enableSimpleResponses?: boolean | cdktf.IResolvable;
   public get enableSimpleResponses() {
     return this.getBooleanAttribute('enable_simple_responses');
   }
-  public set enableSimpleResponses(value: boolean ) {
+  public set enableSimpleResponses(value: boolean | cdktf.IResolvable ) {
     this._enableSimpleResponses = value;
   }
   public resetEnableSimpleResponses() {

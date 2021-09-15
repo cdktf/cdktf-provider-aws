@@ -26,6 +26,11 @@ export interface LoadBalancerListenerPolicyConfig extends cdktf.TerraformMetaArg
 */
 export class LoadBalancerListenerPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_load_balancer_listener_policy";
+
   // ===========
   // INITIALIZER
   // ===========

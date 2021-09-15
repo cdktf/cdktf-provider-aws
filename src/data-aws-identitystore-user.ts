@@ -47,6 +47,11 @@ function dataAwsIdentitystoreUserFilterToTerraform(struct?: DataAwsIdentitystore
 */
 export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_identitystore_user";
+
   // ===========
   // INITIALIZER
   // ===========

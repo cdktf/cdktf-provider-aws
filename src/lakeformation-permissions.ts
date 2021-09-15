@@ -14,7 +14,7 @@ export interface LakeformationPermissionsConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_permissions.html#catalog_resource LakeformationPermissions#catalog_resource}
   */
-  readonly catalogResource?: boolean;
+  readonly catalogResource?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_permissions.html#permissions LakeformationPermissions#permissions}
   */
@@ -106,7 +106,7 @@ export interface LakeformationPermissionsTable {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_permissions.html#wildcard LakeformationPermissions#wildcard}
   */
-  readonly wildcard?: boolean;
+  readonly wildcard?: boolean | cdktf.IResolvable;
 }
 
 function lakeformationPermissionsTableToTerraform(struct?: LakeformationPermissionsTable): any {
@@ -143,7 +143,7 @@ export interface LakeformationPermissionsTableWithColumns {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_permissions.html#wildcard LakeformationPermissions#wildcard}
   */
-  readonly wildcard?: boolean;
+  readonly wildcard?: boolean | cdktf.IResolvable;
 }
 
 function lakeformationPermissionsTableWithColumnsToTerraform(struct?: LakeformationPermissionsTableWithColumns): any {
@@ -163,6 +163,11 @@ function lakeformationPermissionsTableWithColumnsToTerraform(struct?: Lakeformat
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_permissions.html aws_lakeformation_permissions}
 */
 export class LakeformationPermissions extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lakeformation_permissions";
 
   // ===========
   // INITIALIZER
@@ -218,11 +223,11 @@ export class LakeformationPermissions extends cdktf.TerraformResource {
   }
 
   // catalog_resource - computed: false, optional: true, required: false
-  private _catalogResource?: boolean;
+  private _catalogResource?: boolean | cdktf.IResolvable;
   public get catalogResource() {
     return this.getBooleanAttribute('catalog_resource');
   }
-  public set catalogResource(value: boolean ) {
+  public set catalogResource(value: boolean | cdktf.IResolvable ) {
     this._catalogResource = value;
   }
   public resetCatalogResource() {

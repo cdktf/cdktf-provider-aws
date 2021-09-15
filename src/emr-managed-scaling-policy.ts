@@ -58,6 +58,11 @@ function emrManagedScalingPolicyComputeLimitsToTerraform(struct?: EmrManagedScal
 */
 export class EmrManagedScalingPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_emr_managed_scaling_policy";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -26,6 +26,11 @@ export interface WorklinkWebsiteCertificateAuthorityAssociationConfig extends cd
 */
 export class WorklinkWebsiteCertificateAuthorityAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_worklink_website_certificate_authority_association";
+
   // ===========
   // INITIALIZER
   // ===========

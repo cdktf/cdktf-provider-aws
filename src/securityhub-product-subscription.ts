@@ -18,6 +18,11 @@ export interface SecurityhubProductSubscriptionConfig extends cdktf.TerraformMet
 */
 export class SecurityhubProductSubscription extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_product_subscription";
+
   // ===========
   // INITIALIZER
   // ===========

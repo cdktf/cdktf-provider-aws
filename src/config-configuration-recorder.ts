@@ -26,11 +26,11 @@ export interface ConfigConfigurationRecorderRecordingGroup {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#all_supported ConfigConfigurationRecorder#all_supported}
   */
-  readonly allSupported?: boolean;
+  readonly allSupported?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}
   */
-  readonly includeGlobalResourceTypes?: boolean;
+  readonly includeGlobalResourceTypes?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html#resource_types ConfigConfigurationRecorder#resource_types}
   */
@@ -51,6 +51,11 @@ function configConfigurationRecorderRecordingGroupToTerraform(struct?: ConfigCon
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder.html aws_config_configuration_recorder}
 */
 export class ConfigConfigurationRecorder extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_config_configuration_recorder";
 
   // ===========
   // INITIALIZER

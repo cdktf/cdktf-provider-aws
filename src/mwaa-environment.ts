@@ -10,7 +10,7 @@ export interface MwaaEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#airflow_configuration_options MwaaEnvironment#airflow_configuration_options}
   */
-  readonly airflowConfigurationOptions?: { [key: string]: string };
+  readonly airflowConfigurationOptions?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#airflow_version MwaaEnvironment#airflow_version}
   */
@@ -66,11 +66,11 @@ export interface MwaaEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#tags MwaaEnvironment#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#tags_all MwaaEnvironment#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#webserver_access_mode MwaaEnvironment#webserver_access_mode}
   */
@@ -125,7 +125,7 @@ export interface MwaaEnvironmentLoggingConfigurationDagProcessingLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#log_level MwaaEnvironment#log_level}
   */
@@ -144,7 +144,7 @@ export interface MwaaEnvironmentLoggingConfigurationSchedulerLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#log_level MwaaEnvironment#log_level}
   */
@@ -163,7 +163,7 @@ export interface MwaaEnvironmentLoggingConfigurationTaskLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#log_level MwaaEnvironment#log_level}
   */
@@ -182,7 +182,7 @@ export interface MwaaEnvironmentLoggingConfigurationWebserverLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#log_level MwaaEnvironment#log_level}
   */
@@ -201,7 +201,7 @@ export interface MwaaEnvironmentLoggingConfigurationWorkerLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#enabled MwaaEnvironment#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mwaa_environment.html#log_level MwaaEnvironment#log_level}
   */
@@ -285,6 +285,11 @@ function mwaaEnvironmentNetworkConfigurationToTerraform(struct?: MwaaEnvironment
 */
 export class MwaaEnvironment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_mwaa_environment";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -334,11 +339,11 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   // ==========
 
   // airflow_configuration_options - computed: false, optional: true, required: false
-  private _airflowConfigurationOptions?: { [key: string]: string };
+  private _airflowConfigurationOptions?: { [key: string]: string } | cdktf.IResolvable;
   public get airflowConfigurationOptions() {
     return this.interpolationForAttribute('airflow_configuration_options') as any;
   }
-  public set airflowConfigurationOptions(value: { [key: string]: string } ) {
+  public set airflowConfigurationOptions(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._airflowConfigurationOptions = value;
   }
   public resetAirflowConfigurationOptions() {
@@ -576,11 +581,11 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -592,11 +597,11 @@ export class MwaaEnvironment extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

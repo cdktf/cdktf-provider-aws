@@ -38,7 +38,7 @@ export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#keep_job_flow_alive_when_no_steps EmrCluster#keep_job_flow_alive_when_no_steps}
   */
-  readonly keepJobFlowAliveWhenNoSteps?: boolean;
+  readonly keepJobFlowAliveWhenNoSteps?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#log_uri EmrCluster#log_uri}
   */
@@ -74,19 +74,19 @@ export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#tags EmrCluster#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#tags_all EmrCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#termination_protection EmrCluster#termination_protection}
   */
-  readonly terminationProtection?: boolean;
+  readonly terminationProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#visible_to_all_users EmrCluster#visible_to_all_users}
   */
-  readonly visibleToAllUsers?: boolean;
+  readonly visibleToAllUsers?: boolean | cdktf.IResolvable;
   /**
   * bootstrap_action block
   * 
@@ -146,7 +146,7 @@ export interface EmrClusterStepHadoopJarStep {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#properties EmrCluster#properties}
   */
-  readonly properties?: { [key: string]: string };
+  readonly properties?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function emrClusterStepHadoopJarStepToTerraform(struct?: EmrClusterStepHadoopJarStep): any {
@@ -215,7 +215,7 @@ export interface EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#properties EmrCluster#properties}
   */
-  readonly properties?: { [key: string]: string };
+  readonly properties?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function emrClusterCoreInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(struct?: EmrClusterCoreInstanceFleetInstanceTypeConfigsConfigurations): any {
@@ -568,7 +568,7 @@ export interface EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#properties EmrCluster#properties}
   */
-  readonly properties?: { [key: string]: string };
+  readonly properties?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function emrClusterMasterInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(struct?: EmrClusterMasterInstanceFleetInstanceTypeConfigsConfigurations): any {
@@ -826,6 +826,11 @@ function emrClusterMasterInstanceGroupToTerraform(struct?: EmrClusterMasterInsta
 */
 export class EmrCluster extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_emr_cluster";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -1009,11 +1014,11 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // keep_job_flow_alive_when_no_steps - computed: true, optional: true, required: false
-  private _keepJobFlowAliveWhenNoSteps?: boolean;
+  private _keepJobFlowAliveWhenNoSteps?: boolean | cdktf.IResolvable;
   public get keepJobFlowAliveWhenNoSteps() {
     return this.getBooleanAttribute('keep_job_flow_alive_when_no_steps');
   }
-  public set keepJobFlowAliveWhenNoSteps(value: boolean) {
+  public set keepJobFlowAliveWhenNoSteps(value: boolean | cdktf.IResolvable) {
     this._keepJobFlowAliveWhenNoSteps = value;
   }
   public resetKeepJobFlowAliveWhenNoSteps() {
@@ -1149,11 +1154,11 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -1165,11 +1170,11 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1181,11 +1186,11 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // termination_protection - computed: true, optional: true, required: false
-  private _terminationProtection?: boolean;
+  private _terminationProtection?: boolean | cdktf.IResolvable;
   public get terminationProtection() {
     return this.getBooleanAttribute('termination_protection');
   }
-  public set terminationProtection(value: boolean) {
+  public set terminationProtection(value: boolean | cdktf.IResolvable) {
     this._terminationProtection = value;
   }
   public resetTerminationProtection() {
@@ -1197,11 +1202,11 @@ export class EmrCluster extends cdktf.TerraformResource {
   }
 
   // visible_to_all_users - computed: false, optional: true, required: false
-  private _visibleToAllUsers?: boolean;
+  private _visibleToAllUsers?: boolean | cdktf.IResolvable;
   public get visibleToAllUsers() {
     return this.getBooleanAttribute('visible_to_all_users');
   }
-  public set visibleToAllUsers(value: boolean ) {
+  public set visibleToAllUsers(value: boolean | cdktf.IResolvable ) {
     this._visibleToAllUsers = value;
   }
   public resetVisibleToAllUsers() {

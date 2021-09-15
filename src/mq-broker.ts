@@ -10,7 +10,7 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#apply_immediately MqBroker#apply_immediately}
   */
-  readonly applyImmediately?: boolean;
+  readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#authentication_strategy MqBroker#authentication_strategy}
   */
@@ -18,7 +18,7 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#auto_minor_version_upgrade MqBroker#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean;
+  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#broker_name MqBroker#broker_name}
   */
@@ -42,7 +42,7 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#publicly_accessible MqBroker#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean;
+  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#security_groups MqBroker#security_groups}
   */
@@ -58,11 +58,11 @@ export interface MqBrokerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#tags MqBroker#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#tags_all MqBroker#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * configuration block
   * 
@@ -144,7 +144,7 @@ export interface MqBrokerEncryptionOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#use_aws_owned_key MqBroker#use_aws_owned_key}
   */
-  readonly useAwsOwnedKey?: boolean;
+  readonly useAwsOwnedKey?: boolean | cdktf.IResolvable;
 }
 
 function mqBrokerEncryptionOptionsToTerraform(struct?: MqBrokerEncryptionOptions): any {
@@ -175,7 +175,7 @@ export interface MqBrokerLdapServerMetadata {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#role_search_subtree MqBroker#role_search_subtree}
   */
-  readonly roleSearchSubtree?: boolean;
+  readonly roleSearchSubtree?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#service_account_password MqBroker#service_account_password}
   */
@@ -199,7 +199,7 @@ export interface MqBrokerLdapServerMetadata {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#user_search_subtree MqBroker#user_search_subtree}
   */
-  readonly userSearchSubtree?: boolean;
+  readonly userSearchSubtree?: boolean | cdktf.IResolvable;
 }
 
 function mqBrokerLdapServerMetadataToTerraform(struct?: MqBrokerLdapServerMetadata): any {
@@ -227,7 +227,7 @@ export interface MqBrokerLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#general MqBroker#general}
   */
-  readonly general?: boolean;
+  readonly general?: boolean | cdktf.IResolvable;
 }
 
 function mqBrokerLogsToTerraform(struct?: MqBrokerLogs): any {
@@ -266,7 +266,7 @@ export interface MqBrokerUser {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#console_access MqBroker#console_access}
   */
-  readonly consoleAccess?: boolean;
+  readonly consoleAccess?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html#groups MqBroker#groups}
   */
@@ -296,6 +296,11 @@ function mqBrokerUserToTerraform(struct?: MqBrokerUser): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/mq_broker.html aws_mq_broker}
 */
 export class MqBroker extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_mq_broker";
 
   // ===========
   // INITIALIZER
@@ -346,11 +351,11 @@ export class MqBroker extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: false, optional: true, required: false
-  private _applyImmediately?: boolean;
+  private _applyImmediately?: boolean | cdktf.IResolvable;
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean ) {
+  public set applyImmediately(value: boolean | cdktf.IResolvable ) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -383,11 +388,11 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean;
+  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean ) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable ) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -477,11 +482,11 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
-  private _publiclyAccessible?: boolean;
+  private _publiclyAccessible?: boolean | cdktf.IResolvable;
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean ) {
+  public set publiclyAccessible(value: boolean | cdktf.IResolvable ) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -541,11 +546,11 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -557,11 +562,11 @@ export class MqBroker extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

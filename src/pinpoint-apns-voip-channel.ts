@@ -26,7 +26,7 @@ export interface PinpointApnsVoipChannelConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_voip_channel.html#enabled PinpointApnsVoipChannel#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_voip_channel.html#private_key PinpointApnsVoipChannel#private_key}
   */
@@ -49,6 +49,11 @@ export interface PinpointApnsVoipChannelConfig extends cdktf.TerraformMetaArgume
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_voip_channel.html aws_pinpoint_apns_voip_channel}
 */
 export class PinpointApnsVoipChannel extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_pinpoint_apns_voip_channel";
 
   // ===========
   // INITIALIZER
@@ -149,11 +154,11 @@ export class PinpointApnsVoipChannel extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean;
+  private _enabled?: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | cdktf.IResolvable ) {
     this._enabled = value;
   }
   public resetEnabled() {

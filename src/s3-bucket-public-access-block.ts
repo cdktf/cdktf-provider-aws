@@ -10,11 +10,11 @@ export interface S3BucketPublicAccessBlockConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_public_access_block.html#block_public_acls S3BucketPublicAccessBlock#block_public_acls}
   */
-  readonly blockPublicAcls?: boolean;
+  readonly blockPublicAcls?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_public_access_block.html#block_public_policy S3BucketPublicAccessBlock#block_public_policy}
   */
-  readonly blockPublicPolicy?: boolean;
+  readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_public_access_block.html#bucket S3BucketPublicAccessBlock#bucket}
   */
@@ -22,17 +22,22 @@ export interface S3BucketPublicAccessBlockConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_public_access_block.html#ignore_public_acls S3BucketPublicAccessBlock#ignore_public_acls}
   */
-  readonly ignorePublicAcls?: boolean;
+  readonly ignorePublicAcls?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_public_access_block.html#restrict_public_buckets S3BucketPublicAccessBlock#restrict_public_buckets}
   */
-  readonly restrictPublicBuckets?: boolean;
+  readonly restrictPublicBuckets?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_public_access_block.html aws_s3_bucket_public_access_block}
 */
 export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_bucket_public_access_block";
 
   // ===========
   // INITIALIZER
@@ -68,11 +73,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   // ==========
 
   // block_public_acls - computed: false, optional: true, required: false
-  private _blockPublicAcls?: boolean;
+  private _blockPublicAcls?: boolean | cdktf.IResolvable;
   public get blockPublicAcls() {
     return this.getBooleanAttribute('block_public_acls');
   }
-  public set blockPublicAcls(value: boolean ) {
+  public set blockPublicAcls(value: boolean | cdktf.IResolvable ) {
     this._blockPublicAcls = value;
   }
   public resetBlockPublicAcls() {
@@ -84,11 +89,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   }
 
   // block_public_policy - computed: false, optional: true, required: false
-  private _blockPublicPolicy?: boolean;
+  private _blockPublicPolicy?: boolean | cdktf.IResolvable;
   public get blockPublicPolicy() {
     return this.getBooleanAttribute('block_public_policy');
   }
-  public set blockPublicPolicy(value: boolean ) {
+  public set blockPublicPolicy(value: boolean | cdktf.IResolvable ) {
     this._blockPublicPolicy = value;
   }
   public resetBlockPublicPolicy() {
@@ -118,11 +123,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   }
 
   // ignore_public_acls - computed: false, optional: true, required: false
-  private _ignorePublicAcls?: boolean;
+  private _ignorePublicAcls?: boolean | cdktf.IResolvable;
   public get ignorePublicAcls() {
     return this.getBooleanAttribute('ignore_public_acls');
   }
-  public set ignorePublicAcls(value: boolean ) {
+  public set ignorePublicAcls(value: boolean | cdktf.IResolvable ) {
     this._ignorePublicAcls = value;
   }
   public resetIgnorePublicAcls() {
@@ -134,11 +139,11 @@ export class S3BucketPublicAccessBlock extends cdktf.TerraformResource {
   }
 
   // restrict_public_buckets - computed: false, optional: true, required: false
-  private _restrictPublicBuckets?: boolean;
+  private _restrictPublicBuckets?: boolean | cdktf.IResolvable;
   public get restrictPublicBuckets() {
     return this.getBooleanAttribute('restrict_public_buckets');
   }
-  public set restrictPublicBuckets(value: boolean ) {
+  public set restrictPublicBuckets(value: boolean | cdktf.IResolvable ) {
     this._restrictPublicBuckets = value;
   }
   public resetRestrictPublicBuckets() {

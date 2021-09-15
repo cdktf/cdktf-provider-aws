@@ -35,6 +35,11 @@ export class DataAwsOrganizationsOrganizationalUnitsChildren extends cdktf.Compl
 */
 export class DataAwsOrganizationsOrganizationalUnits extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_organizations_organizational_units";
+
   // ===========
   // INITIALIZER
   // ===========

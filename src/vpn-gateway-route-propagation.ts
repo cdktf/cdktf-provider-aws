@@ -22,6 +22,11 @@ export interface VpnGatewayRoutePropagationConfig extends cdktf.TerraformMetaArg
 */
 export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpn_gateway_route_propagation";
+
   // ===========
   // INITIALIZER
   // ===========

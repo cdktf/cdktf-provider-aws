@@ -10,15 +10,15 @@ export interface OpsworksGangliaLayerConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#auto_assign_elastic_ips OpsworksGangliaLayer#auto_assign_elastic_ips}
   */
-  readonly autoAssignElasticIps?: boolean;
+  readonly autoAssignElasticIps?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#auto_assign_public_ips OpsworksGangliaLayer#auto_assign_public_ips}
   */
-  readonly autoAssignPublicIps?: boolean;
+  readonly autoAssignPublicIps?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#auto_healing OpsworksGangliaLayer#auto_healing}
   */
-  readonly autoHealing?: boolean;
+  readonly autoHealing?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#custom_configure_recipes OpsworksGangliaLayer#custom_configure_recipes}
   */
@@ -54,7 +54,7 @@ export interface OpsworksGangliaLayerConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#drain_elb_on_shutdown OpsworksGangliaLayer#drain_elb_on_shutdown}
   */
-  readonly drainElbOnShutdown?: boolean;
+  readonly drainElbOnShutdown?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#elastic_load_balancer OpsworksGangliaLayer#elastic_load_balancer}
   */
@@ -62,7 +62,7 @@ export interface OpsworksGangliaLayerConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#install_updates_on_boot OpsworksGangliaLayer#install_updates_on_boot}
   */
-  readonly installUpdatesOnBoot?: boolean;
+  readonly installUpdatesOnBoot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#instance_shutdown_timeout OpsworksGangliaLayer#instance_shutdown_timeout}
   */
@@ -86,11 +86,11 @@ export interface OpsworksGangliaLayerConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#tags OpsworksGangliaLayer#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#tags_all OpsworksGangliaLayer#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#url OpsworksGangliaLayer#url}
   */
@@ -98,7 +98,7 @@ export interface OpsworksGangliaLayerConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#use_ebs_optimized_instances OpsworksGangliaLayer#use_ebs_optimized_instances}
   */
-  readonly useEbsOptimizedInstances?: boolean;
+  readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#username OpsworksGangliaLayer#username}
   */
@@ -114,7 +114,7 @@ export interface OpsworksGangliaLayerEbsVolume {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#encrypted OpsworksGangliaLayer#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html#iops OpsworksGangliaLayer#iops}
   */
@@ -159,6 +159,11 @@ function opsworksGangliaLayerEbsVolumeToTerraform(struct?: OpsworksGangliaLayerE
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_ganglia_layer.html aws_opsworks_ganglia_layer}
 */
 export class OpsworksGangliaLayer extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_opsworks_ganglia_layer";
 
   // ===========
   // INITIALIZER
@@ -219,11 +224,11 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
   }
 
   // auto_assign_elastic_ips - computed: false, optional: true, required: false
-  private _autoAssignElasticIps?: boolean;
+  private _autoAssignElasticIps?: boolean | cdktf.IResolvable;
   public get autoAssignElasticIps() {
     return this.getBooleanAttribute('auto_assign_elastic_ips');
   }
-  public set autoAssignElasticIps(value: boolean ) {
+  public set autoAssignElasticIps(value: boolean | cdktf.IResolvable ) {
     this._autoAssignElasticIps = value;
   }
   public resetAutoAssignElasticIps() {
@@ -235,11 +240,11 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
   }
 
   // auto_assign_public_ips - computed: false, optional: true, required: false
-  private _autoAssignPublicIps?: boolean;
+  private _autoAssignPublicIps?: boolean | cdktf.IResolvable;
   public get autoAssignPublicIps() {
     return this.getBooleanAttribute('auto_assign_public_ips');
   }
-  public set autoAssignPublicIps(value: boolean ) {
+  public set autoAssignPublicIps(value: boolean | cdktf.IResolvable ) {
     this._autoAssignPublicIps = value;
   }
   public resetAutoAssignPublicIps() {
@@ -251,11 +256,11 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
   }
 
   // auto_healing - computed: false, optional: true, required: false
-  private _autoHealing?: boolean;
+  private _autoHealing?: boolean | cdktf.IResolvable;
   public get autoHealing() {
     return this.getBooleanAttribute('auto_healing');
   }
-  public set autoHealing(value: boolean ) {
+  public set autoHealing(value: boolean | cdktf.IResolvable ) {
     this._autoHealing = value;
   }
   public resetAutoHealing() {
@@ -395,11 +400,11 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
   }
 
   // drain_elb_on_shutdown - computed: false, optional: true, required: false
-  private _drainElbOnShutdown?: boolean;
+  private _drainElbOnShutdown?: boolean | cdktf.IResolvable;
   public get drainElbOnShutdown() {
     return this.getBooleanAttribute('drain_elb_on_shutdown');
   }
-  public set drainElbOnShutdown(value: boolean ) {
+  public set drainElbOnShutdown(value: boolean | cdktf.IResolvable ) {
     this._drainElbOnShutdown = value;
   }
   public resetDrainElbOnShutdown() {
@@ -432,11 +437,11 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
   }
 
   // install_updates_on_boot - computed: false, optional: true, required: false
-  private _installUpdatesOnBoot?: boolean;
+  private _installUpdatesOnBoot?: boolean | cdktf.IResolvable;
   public get installUpdatesOnBoot() {
     return this.getBooleanAttribute('install_updates_on_boot');
   }
-  public set installUpdatesOnBoot(value: boolean ) {
+  public set installUpdatesOnBoot(value: boolean | cdktf.IResolvable ) {
     this._installUpdatesOnBoot = value;
   }
   public resetInstallUpdatesOnBoot() {
@@ -522,11 +527,11 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -538,11 +543,11 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -570,11 +575,11 @@ export class OpsworksGangliaLayer extends cdktf.TerraformResource {
   }
 
   // use_ebs_optimized_instances - computed: false, optional: true, required: false
-  private _useEbsOptimizedInstances?: boolean;
+  private _useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   public get useEbsOptimizedInstances() {
     return this.getBooleanAttribute('use_ebs_optimized_instances');
   }
-  public set useEbsOptimizedInstances(value: boolean ) {
+  public set useEbsOptimizedInstances(value: boolean | cdktf.IResolvable ) {
     this._useEbsOptimizedInstances = value;
   }
   public resetUseEbsOptimizedInstances() {

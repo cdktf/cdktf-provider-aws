@@ -30,6 +30,11 @@ export class DataAwsOrganizationsDelegatedServicesDelegatedServices extends cdkt
 */
 export class DataAwsOrganizationsDelegatedServices extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_organizations_delegated_services";
+
   // ===========
   // INITIALIZER
   // ===========

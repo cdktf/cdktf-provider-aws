@@ -18,6 +18,11 @@ export interface DataAwsRoute53DelegationSetConfig extends cdktf.TerraformMetaAr
 */
 export class DataAwsRoute53DelegationSet extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_delegation_set";
+
   // ===========
   // INITIALIZER
   // ===========

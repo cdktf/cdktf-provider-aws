@@ -30,6 +30,11 @@ export interface SecretsmanagerSecretVersionConfig extends cdktf.TerraformMetaAr
 */
 export class SecretsmanagerSecretVersion extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_secretsmanager_secret_version";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -26,7 +26,7 @@ export interface FsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#copy_tags_to_backups FsxWindowsFileSystem#copy_tags_to_backups}
   */
-  readonly copyTagsToBackups?: boolean;
+  readonly copyTagsToBackups?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#daily_automatic_backup_start_time FsxWindowsFileSystem#daily_automatic_backup_start_time}
   */
@@ -50,7 +50,7 @@ export interface FsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#skip_final_backup FsxWindowsFileSystem#skip_final_backup}
   */
-  readonly skipFinalBackup?: boolean;
+  readonly skipFinalBackup?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#storage_capacity FsxWindowsFileSystem#storage_capacity}
   */
@@ -66,11 +66,11 @@ export interface FsxWindowsFileSystemConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#tags FsxWindowsFileSystem#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#tags_all FsxWindowsFileSystem#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system.html#throughput_capacity FsxWindowsFileSystem#throughput_capacity}
   */
@@ -191,6 +191,11 @@ function fsxWindowsFileSystemTimeoutsToTerraform(struct?: FsxWindowsFileSystemTi
 */
 export class FsxWindowsFileSystem extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_fsx_windows_file_system";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -310,11 +315,11 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_backups - computed: false, optional: true, required: false
-  private _copyTagsToBackups?: boolean;
+  private _copyTagsToBackups?: boolean | cdktf.IResolvable;
   public get copyTagsToBackups() {
     return this.getBooleanAttribute('copy_tags_to_backups');
   }
-  public set copyTagsToBackups(value: boolean ) {
+  public set copyTagsToBackups(value: boolean | cdktf.IResolvable ) {
     this._copyTagsToBackups = value;
   }
   public resetCopyTagsToBackups() {
@@ -436,11 +441,11 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   }
 
   // skip_final_backup - computed: false, optional: true, required: false
-  private _skipFinalBackup?: boolean;
+  private _skipFinalBackup?: boolean | cdktf.IResolvable;
   public get skipFinalBackup() {
     return this.getBooleanAttribute('skip_final_backup');
   }
-  public set skipFinalBackup(value: boolean ) {
+  public set skipFinalBackup(value: boolean | cdktf.IResolvable ) {
     this._skipFinalBackup = value;
   }
   public resetSkipFinalBackup() {
@@ -497,11 +502,11 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -513,11 +518,11 @@ export class FsxWindowsFileSystem extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

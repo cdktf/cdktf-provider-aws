@@ -47,6 +47,11 @@ function vpcEndpointSubnetAssociationTimeoutsToTerraform(struct?: VpcEndpointSub
 */
 export class VpcEndpointSubnetAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_endpoint_subnet_association";
+
   // ===========
   // INITIALIZER
   // ===========

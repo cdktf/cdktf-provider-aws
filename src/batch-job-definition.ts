@@ -18,7 +18,7 @@ export interface BatchJobDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition.html#parameters BatchJobDefinition#parameters}
   */
-  readonly parameters?: { [key: string]: string };
+  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition.html#platform_capabilities BatchJobDefinition#platform_capabilities}
   */
@@ -26,15 +26,15 @@ export interface BatchJobDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition.html#propagate_tags BatchJobDefinition#propagate_tags}
   */
-  readonly propagateTags?: boolean;
+  readonly propagateTags?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition.html#tags BatchJobDefinition#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition.html#tags_all BatchJobDefinition#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition.html#type BatchJobDefinition#type}
   */
@@ -122,6 +122,11 @@ function batchJobDefinitionTimeoutToTerraform(struct?: BatchJobDefinitionTimeout
 */
 export class BatchJobDefinition extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_batch_job_definition";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -200,11 +205,11 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: true, required: false
-  private _parameters?: { [key: string]: string };
+  private _parameters?: { [key: string]: string } | cdktf.IResolvable;
   public get parameters() {
     return this.interpolationForAttribute('parameters') as any;
   }
-  public set parameters(value: { [key: string]: string } ) {
+  public set parameters(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._parameters = value;
   }
   public resetParameters() {
@@ -232,11 +237,11 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   }
 
   // propagate_tags - computed: false, optional: true, required: false
-  private _propagateTags?: boolean;
+  private _propagateTags?: boolean | cdktf.IResolvable;
   public get propagateTags() {
     return this.getBooleanAttribute('propagate_tags');
   }
-  public set propagateTags(value: boolean ) {
+  public set propagateTags(value: boolean | cdktf.IResolvable ) {
     this._propagateTags = value;
   }
   public resetPropagateTags() {
@@ -253,11 +258,11 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -269,11 +274,11 @@ export class BatchJobDefinition extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

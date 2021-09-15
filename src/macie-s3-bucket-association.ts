@@ -51,6 +51,11 @@ function macieS3BucketAssociationClassificationTypeToTerraform(struct?: MacieS3B
 */
 export class MacieS3BucketAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_macie_s3_bucket_association";
+
   // ===========
   // INITIALIZER
   // ===========

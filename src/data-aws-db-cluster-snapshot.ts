@@ -18,15 +18,15 @@ export interface DataAwsDbClusterSnapshotConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot.html#include_public DataAwsDbClusterSnapshot#include_public}
   */
-  readonly includePublic?: boolean;
+  readonly includePublic?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot.html#include_shared DataAwsDbClusterSnapshot#include_shared}
   */
-  readonly includeShared?: boolean;
+  readonly includeShared?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot.html#most_recent DataAwsDbClusterSnapshot#most_recent}
   */
-  readonly mostRecent?: boolean;
+  readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot.html#snapshot_type DataAwsDbClusterSnapshot#snapshot_type}
   */
@@ -34,13 +34,18 @@ export interface DataAwsDbClusterSnapshotConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot.html#tags DataAwsDbClusterSnapshot#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_cluster_snapshot.html aws_db_cluster_snapshot}
 */
 export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_db_cluster_snapshot";
 
   // ===========
   // INITIALIZER
@@ -140,11 +145,11 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   }
 
   // include_public - computed: false, optional: true, required: false
-  private _includePublic?: boolean;
+  private _includePublic?: boolean | cdktf.IResolvable;
   public get includePublic() {
     return this.getBooleanAttribute('include_public');
   }
-  public set includePublic(value: boolean ) {
+  public set includePublic(value: boolean | cdktf.IResolvable ) {
     this._includePublic = value;
   }
   public resetIncludePublic() {
@@ -156,11 +161,11 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   }
 
   // include_shared - computed: false, optional: true, required: false
-  private _includeShared?: boolean;
+  private _includeShared?: boolean | cdktf.IResolvable;
   public get includeShared() {
     return this.getBooleanAttribute('include_shared');
   }
-  public set includeShared(value: boolean ) {
+  public set includeShared(value: boolean | cdktf.IResolvable ) {
     this._includeShared = value;
   }
   public resetIncludeShared() {
@@ -182,11 +187,11 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean;
+  private _mostRecent?: boolean | cdktf.IResolvable;
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean ) {
+  public set mostRecent(value: boolean | cdktf.IResolvable ) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -239,11 +244,11 @@ export class DataAwsDbClusterSnapshot extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

@@ -143,7 +143,7 @@ export interface CloudwatchEventTargetEcsTargetNetworkConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#assign_public_ip CloudwatchEventTarget#assign_public_ip}
   */
-  readonly assignPublicIp?: boolean;
+  readonly assignPublicIp?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#security_groups CloudwatchEventTarget#security_groups}
   */
@@ -186,11 +186,11 @@ export interface CloudwatchEventTargetEcsTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#enable_ecs_managed_tags CloudwatchEventTarget#enable_ecs_managed_tags}
   */
-  readonly enableEcsManagedTags?: boolean;
+  readonly enableEcsManagedTags?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#enable_execute_command CloudwatchEventTarget#enable_execute_command}
   */
-  readonly enableExecuteCommand?: boolean;
+  readonly enableExecuteCommand?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#group CloudwatchEventTarget#group}
   */
@@ -210,7 +210,7 @@ export interface CloudwatchEventTargetEcsTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#tags CloudwatchEventTarget#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#task_count CloudwatchEventTarget#task_count}
   */
@@ -254,7 +254,7 @@ export interface CloudwatchEventTargetHttpTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#header_parameters CloudwatchEventTarget#header_parameters}
   */
-  readonly headerParameters?: { [key: string]: string };
+  readonly headerParameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#path_parameter_values CloudwatchEventTarget#path_parameter_values}
   */
@@ -262,7 +262,7 @@ export interface CloudwatchEventTargetHttpTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#query_string_parameters CloudwatchEventTarget#query_string_parameters}
   */
-  readonly queryStringParameters?: { [key: string]: string };
+  readonly queryStringParameters?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function cloudwatchEventTargetHttpTargetToTerraform(struct?: CloudwatchEventTargetHttpTarget): any {
@@ -278,7 +278,7 @@ export interface CloudwatchEventTargetInputTransformer {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#input_paths CloudwatchEventTarget#input_paths}
   */
-  readonly inputPaths?: { [key: string]: string };
+  readonly inputPaths?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#input_template CloudwatchEventTarget#input_template}
   */
@@ -331,7 +331,7 @@ export interface CloudwatchEventTargetRedshiftTarget {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html#with_event CloudwatchEventTarget#with_event}
   */
-  readonly withEvent?: boolean;
+  readonly withEvent?: boolean | cdktf.IResolvable;
 }
 
 function cloudwatchEventTargetRedshiftTargetToTerraform(struct?: CloudwatchEventTargetRedshiftTarget): any {
@@ -403,6 +403,11 @@ function cloudwatchEventTargetSqsTargetToTerraform(struct?: CloudwatchEventTarge
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_target.html aws_cloudwatch_event_target}
 */
 export class CloudwatchEventTarget extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_target";
 
   // ===========
   // INITIALIZER

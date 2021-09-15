@@ -10,7 +10,7 @@ export interface IotThingTypeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_type.html#deprecated IotThingType#deprecated}
   */
-  readonly deprecated?: boolean;
+  readonly deprecated?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_type.html#name IotThingType#name}
   */
@@ -46,6 +46,11 @@ function iotThingTypePropertiesToTerraform(struct?: IotThingTypeProperties): any
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_thing_type.html aws_iot_thing_type}
 */
 export class IotThingType extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iot_thing_type";
 
   // ===========
   // INITIALIZER
@@ -84,11 +89,11 @@ export class IotThingType extends cdktf.TerraformResource {
   }
 
   // deprecated - computed: false, optional: true, required: false
-  private _deprecated?: boolean;
+  private _deprecated?: boolean | cdktf.IResolvable;
   public get deprecated() {
     return this.getBooleanAttribute('deprecated');
   }
-  public set deprecated(value: boolean ) {
+  public set deprecated(value: boolean | cdktf.IResolvable ) {
     this._deprecated = value;
   }
   public resetDeprecated() {

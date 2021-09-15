@@ -10,7 +10,7 @@ export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#attribute_mapping CognitoIdentityProvider#attribute_mapping}
   */
-  readonly attributeMapping?: { [key: string]: string };
+  readonly attributeMapping?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#idp_identifiers CognitoIdentityProvider#idp_identifiers}
   */
@@ -18,7 +18,7 @@ export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#provider_details CognitoIdentityProvider#provider_details}
   */
-  readonly providerDetails: { [key: string]: string };
+  readonly providerDetails: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html#provider_name CognitoIdentityProvider#provider_name}
   */
@@ -37,6 +37,11 @@ export interface CognitoIdentityProviderConfig extends cdktf.TerraformMetaArgume
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_provider.html aws_cognito_identity_provider}
 */
 export class CognitoIdentityProvider extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_identity_provider";
 
   // ===========
   // INITIALIZER
@@ -73,11 +78,11 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
   // ==========
 
   // attribute_mapping - computed: true, optional: true, required: false
-  private _attributeMapping?: { [key: string]: string }
-  public get attributeMapping(): { [key: string]: string } {
+  private _attributeMapping?: { [key: string]: string } | cdktf.IResolvable
+  public get attributeMapping(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('attribute_mapping') as any; // Getting the computed value is not yet implemented
   }
-  public set attributeMapping(value: { [key: string]: string }) {
+  public set attributeMapping(value: { [key: string]: string } | cdktf.IResolvable) {
     this._attributeMapping = value;
   }
   public resetAttributeMapping() {
@@ -110,11 +115,11 @@ export class CognitoIdentityProvider extends cdktf.TerraformResource {
   }
 
   // provider_details - computed: false, optional: false, required: true
-  private _providerDetails: { [key: string]: string };
+  private _providerDetails: { [key: string]: string } | cdktf.IResolvable;
   public get providerDetails() {
     return this.interpolationForAttribute('provider_details') as any;
   }
-  public set providerDetails(value: { [key: string]: string }) {
+  public set providerDetails(value: { [key: string]: string } | cdktf.IResolvable) {
     this._providerDetails = value;
   }
   // Temporarily expose input value. Use with caution.

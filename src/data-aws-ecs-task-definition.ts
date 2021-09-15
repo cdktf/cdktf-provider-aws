@@ -18,6 +18,11 @@ export interface DataAwsEcsTaskDefinitionConfig extends cdktf.TerraformMetaArgum
 */
 export class DataAwsEcsTaskDefinition extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecs_task_definition";
+
   // ===========
   // INITIALIZER
   // ===========

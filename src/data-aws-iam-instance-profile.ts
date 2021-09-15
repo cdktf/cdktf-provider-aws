@@ -18,6 +18,11 @@ export interface DataAwsIamInstanceProfileConfig extends cdktf.TerraformMetaArgu
 */
 export class DataAwsIamInstanceProfile extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_instance_profile";
+
   // ===========
   // INITIALIZER
   // ===========

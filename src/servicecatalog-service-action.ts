@@ -66,6 +66,11 @@ function servicecatalogServiceActionDefinitionToTerraform(struct?: Servicecatalo
 */
 export class ServicecatalogServiceAction extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_service_action";
+
   // ===========
   // INITIALIZER
   // ===========

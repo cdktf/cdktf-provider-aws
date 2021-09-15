@@ -22,6 +22,11 @@ export interface StoragegatewayCacheConfig extends cdktf.TerraformMetaArguments 
 */
 export class StoragegatewayCache extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_storagegateway_cache";
+
   // ===========
   // INITIALIZER
   // ===========

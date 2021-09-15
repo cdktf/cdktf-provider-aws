@@ -10,15 +10,15 @@ export interface OpsworksMysqlLayerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#auto_assign_elastic_ips OpsworksMysqlLayer#auto_assign_elastic_ips}
   */
-  readonly autoAssignElasticIps?: boolean;
+  readonly autoAssignElasticIps?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#auto_assign_public_ips OpsworksMysqlLayer#auto_assign_public_ips}
   */
-  readonly autoAssignPublicIps?: boolean;
+  readonly autoAssignPublicIps?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#auto_healing OpsworksMysqlLayer#auto_healing}
   */
-  readonly autoHealing?: boolean;
+  readonly autoHealing?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#custom_configure_recipes OpsworksMysqlLayer#custom_configure_recipes}
   */
@@ -54,7 +54,7 @@ export interface OpsworksMysqlLayerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#drain_elb_on_shutdown OpsworksMysqlLayer#drain_elb_on_shutdown}
   */
-  readonly drainElbOnShutdown?: boolean;
+  readonly drainElbOnShutdown?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#elastic_load_balancer OpsworksMysqlLayer#elastic_load_balancer}
   */
@@ -62,7 +62,7 @@ export interface OpsworksMysqlLayerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#install_updates_on_boot OpsworksMysqlLayer#install_updates_on_boot}
   */
-  readonly installUpdatesOnBoot?: boolean;
+  readonly installUpdatesOnBoot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#instance_shutdown_timeout OpsworksMysqlLayer#instance_shutdown_timeout}
   */
@@ -78,7 +78,7 @@ export interface OpsworksMysqlLayerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#root_password_on_all_instances OpsworksMysqlLayer#root_password_on_all_instances}
   */
-  readonly rootPasswordOnAllInstances?: boolean;
+  readonly rootPasswordOnAllInstances?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#stack_id OpsworksMysqlLayer#stack_id}
   */
@@ -90,15 +90,15 @@ export interface OpsworksMysqlLayerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#tags OpsworksMysqlLayer#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#tags_all OpsworksMysqlLayer#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#use_ebs_optimized_instances OpsworksMysqlLayer#use_ebs_optimized_instances}
   */
-  readonly useEbsOptimizedInstances?: boolean;
+  readonly useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   /**
   * ebs_volume block
   * 
@@ -110,7 +110,7 @@ export interface OpsworksMysqlLayerEbsVolume {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#encrypted OpsworksMysqlLayer#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html#iops OpsworksMysqlLayer#iops}
   */
@@ -155,6 +155,11 @@ function opsworksMysqlLayerEbsVolumeToTerraform(struct?: OpsworksMysqlLayerEbsVo
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_mysql_layer.html aws_opsworks_mysql_layer}
 */
 export class OpsworksMysqlLayer extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_opsworks_mysql_layer";
 
   // ===========
   // INITIALIZER
@@ -214,11 +219,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // auto_assign_elastic_ips - computed: false, optional: true, required: false
-  private _autoAssignElasticIps?: boolean;
+  private _autoAssignElasticIps?: boolean | cdktf.IResolvable;
   public get autoAssignElasticIps() {
     return this.getBooleanAttribute('auto_assign_elastic_ips');
   }
-  public set autoAssignElasticIps(value: boolean ) {
+  public set autoAssignElasticIps(value: boolean | cdktf.IResolvable ) {
     this._autoAssignElasticIps = value;
   }
   public resetAutoAssignElasticIps() {
@@ -230,11 +235,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // auto_assign_public_ips - computed: false, optional: true, required: false
-  private _autoAssignPublicIps?: boolean;
+  private _autoAssignPublicIps?: boolean | cdktf.IResolvable;
   public get autoAssignPublicIps() {
     return this.getBooleanAttribute('auto_assign_public_ips');
   }
-  public set autoAssignPublicIps(value: boolean ) {
+  public set autoAssignPublicIps(value: boolean | cdktf.IResolvable ) {
     this._autoAssignPublicIps = value;
   }
   public resetAutoAssignPublicIps() {
@@ -246,11 +251,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // auto_healing - computed: false, optional: true, required: false
-  private _autoHealing?: boolean;
+  private _autoHealing?: boolean | cdktf.IResolvable;
   public get autoHealing() {
     return this.getBooleanAttribute('auto_healing');
   }
-  public set autoHealing(value: boolean ) {
+  public set autoHealing(value: boolean | cdktf.IResolvable ) {
     this._autoHealing = value;
   }
   public resetAutoHealing() {
@@ -390,11 +395,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // drain_elb_on_shutdown - computed: false, optional: true, required: false
-  private _drainElbOnShutdown?: boolean;
+  private _drainElbOnShutdown?: boolean | cdktf.IResolvable;
   public get drainElbOnShutdown() {
     return this.getBooleanAttribute('drain_elb_on_shutdown');
   }
-  public set drainElbOnShutdown(value: boolean ) {
+  public set drainElbOnShutdown(value: boolean | cdktf.IResolvable ) {
     this._drainElbOnShutdown = value;
   }
   public resetDrainElbOnShutdown() {
@@ -427,11 +432,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // install_updates_on_boot - computed: false, optional: true, required: false
-  private _installUpdatesOnBoot?: boolean;
+  private _installUpdatesOnBoot?: boolean | cdktf.IResolvable;
   public get installUpdatesOnBoot() {
     return this.getBooleanAttribute('install_updates_on_boot');
   }
-  public set installUpdatesOnBoot(value: boolean ) {
+  public set installUpdatesOnBoot(value: boolean | cdktf.IResolvable ) {
     this._installUpdatesOnBoot = value;
   }
   public resetInstallUpdatesOnBoot() {
@@ -491,11 +496,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // root_password_on_all_instances - computed: false, optional: true, required: false
-  private _rootPasswordOnAllInstances?: boolean;
+  private _rootPasswordOnAllInstances?: boolean | cdktf.IResolvable;
   public get rootPasswordOnAllInstances() {
     return this.getBooleanAttribute('root_password_on_all_instances');
   }
-  public set rootPasswordOnAllInstances(value: boolean ) {
+  public set rootPasswordOnAllInstances(value: boolean | cdktf.IResolvable ) {
     this._rootPasswordOnAllInstances = value;
   }
   public resetRootPasswordOnAllInstances() {
@@ -536,11 +541,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -552,11 +557,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -568,11 +573,11 @@ export class OpsworksMysqlLayer extends cdktf.TerraformResource {
   }
 
   // use_ebs_optimized_instances - computed: false, optional: true, required: false
-  private _useEbsOptimizedInstances?: boolean;
+  private _useEbsOptimizedInstances?: boolean | cdktf.IResolvable;
   public get useEbsOptimizedInstances() {
     return this.getBooleanAttribute('use_ebs_optimized_instances');
   }
-  public set useEbsOptimizedInstances(value: boolean ) {
+  public set useEbsOptimizedInstances(value: boolean | cdktf.IResolvable ) {
     this._useEbsOptimizedInstances = value;
   }
   public resetUseEbsOptimizedInstances() {

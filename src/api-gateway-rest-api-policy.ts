@@ -22,6 +22,11 @@ export interface ApiGatewayRestApiPolicyConfig extends cdktf.TerraformMetaArgume
 */
 export class ApiGatewayRestApiPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_rest_api_policy";
+
   // ===========
   // INITIALIZER
   // ===========

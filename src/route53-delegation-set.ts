@@ -18,6 +18,11 @@ export interface Route53DelegationSetConfig extends cdktf.TerraformMetaArguments
 */
 export class Route53DelegationSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_delegation_set";
+
   // ===========
   // INITIALIZER
   // ===========

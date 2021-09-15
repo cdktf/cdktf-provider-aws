@@ -18,6 +18,11 @@ export interface DataAwsDxGatewayConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsDxGateway extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dx_gateway";
+
   // ===========
   // INITIALIZER
   // ===========

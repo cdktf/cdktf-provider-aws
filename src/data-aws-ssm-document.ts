@@ -26,6 +26,11 @@ export interface DataAwsSsmDocumentConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsSsmDocument extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_document";
+
   // ===========
   // INITIALIZER
   // ===========

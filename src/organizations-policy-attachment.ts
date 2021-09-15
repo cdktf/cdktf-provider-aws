@@ -22,6 +22,11 @@ export interface OrganizationsPolicyAttachmentConfig extends cdktf.TerraformMeta
 */
 export class OrganizationsPolicyAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_organizations_policy_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

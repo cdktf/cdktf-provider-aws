@@ -14,7 +14,7 @@ export interface DataAwsEfsAccessPointConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point.html#tags DataAwsEfsAccessPoint#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 export class DataAwsEfsAccessPointPosixUser extends cdktf.ComplexComputedList {
 
@@ -67,6 +67,11 @@ export class DataAwsEfsAccessPointRootDirectory extends cdktf.ComplexComputedLis
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point.html aws_efs_access_point}
 */
 export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_efs_access_point";
 
   // ===========
   // INITIALIZER
@@ -147,11 +152,11 @@ export class DataAwsEfsAccessPoint extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {

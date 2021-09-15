@@ -18,6 +18,11 @@ export interface DataAwsCognitoUserPoolsConfig extends cdktf.TerraformMetaArgume
 */
 export class DataAwsCognitoUserPools extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_user_pools";
+
   // ===========
   // INITIALIZER
   // ===========

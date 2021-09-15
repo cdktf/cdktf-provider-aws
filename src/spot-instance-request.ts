@@ -14,7 +14,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#associate_public_ip_address SpotInstanceRequest#associate_public_ip_address}
   */
-  readonly associatePublicIpAddress?: boolean;
+  readonly associatePublicIpAddress?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#availability_zone SpotInstanceRequest#availability_zone}
   */
@@ -34,19 +34,19 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#disable_api_termination SpotInstanceRequest#disable_api_termination}
   */
-  readonly disableApiTermination?: boolean;
+  readonly disableApiTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#ebs_optimized SpotInstanceRequest#ebs_optimized}
   */
-  readonly ebsOptimized?: boolean;
+  readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#get_password_data SpotInstanceRequest#get_password_data}
   */
-  readonly fetchPasswordData?: boolean;
+  readonly fetchPasswordData?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#hibernation SpotInstanceRequest#hibernation}
   */
-  readonly hibernation?: boolean;
+  readonly hibernation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#host_id SpotInstanceRequest#host_id}
   */
@@ -90,7 +90,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#monitoring SpotInstanceRequest#monitoring}
   */
-  readonly monitoring?: boolean;
+  readonly monitoring?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#placement_group SpotInstanceRequest#placement_group}
   */
@@ -110,7 +110,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#source_dest_check SpotInstanceRequest#source_dest_check}
   */
-  readonly sourceDestCheck?: boolean;
+  readonly sourceDestCheck?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#spot_price SpotInstanceRequest#spot_price}
   */
@@ -126,11 +126,11 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#tags SpotInstanceRequest#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#tags_all SpotInstanceRequest#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#tenancy SpotInstanceRequest#tenancy}
   */
@@ -154,7 +154,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#volume_tags SpotInstanceRequest#volume_tags}
   */
-  readonly volumeTags?: { [key: string]: string };
+  readonly volumeTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#vpc_security_group_ids SpotInstanceRequest#vpc_security_group_ids}
   */
@@ -162,7 +162,7 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#wait_for_fulfillment SpotInstanceRequest#wait_for_fulfillment}
   */
-  readonly waitForFulfillment?: boolean;
+  readonly waitForFulfillment?: boolean | cdktf.IResolvable;
   /**
   * capacity_reservation_specification block
   * 
@@ -277,7 +277,7 @@ export interface SpotInstanceRequestEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#delete_on_termination SpotInstanceRequest#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#device_name SpotInstanceRequest#device_name}
   */
@@ -285,7 +285,7 @@ export interface SpotInstanceRequestEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#encrypted SpotInstanceRequest#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#iops SpotInstanceRequest#iops}
   */
@@ -301,7 +301,7 @@ export interface SpotInstanceRequestEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#tags SpotInstanceRequest#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#throughput SpotInstanceRequest#throughput}
   */
@@ -336,7 +336,7 @@ export interface SpotInstanceRequestEnclaveOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#enabled SpotInstanceRequest#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
 }
 
 function spotInstanceRequestEnclaveOptionsToTerraform(struct?: SpotInstanceRequestEnclaveOptions): any {
@@ -354,7 +354,7 @@ export interface SpotInstanceRequestEphemeralBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#no_device SpotInstanceRequest#no_device}
   */
-  readonly noDevice?: boolean;
+  readonly noDevice?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#virtual_name SpotInstanceRequest#virtual_name}
   */
@@ -422,7 +422,7 @@ export interface SpotInstanceRequestNetworkInterface {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#delete_on_termination SpotInstanceRequest#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#device_index SpotInstanceRequest#device_index}
   */
@@ -446,11 +446,11 @@ export interface SpotInstanceRequestRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#delete_on_termination SpotInstanceRequest#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#encrypted SpotInstanceRequest#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#iops SpotInstanceRequest#iops}
   */
@@ -462,7 +462,7 @@ export interface SpotInstanceRequestRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#tags SpotInstanceRequest#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#throughput SpotInstanceRequest#throughput}
   */
@@ -515,6 +515,11 @@ function spotInstanceRequestTimeoutsToTerraform(struct?: SpotInstanceRequestTime
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html aws_spot_instance_request}
 */
 export class SpotInstanceRequest extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_spot_instance_request";
 
   // ===========
   // INITIALIZER
@@ -615,11 +620,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // associate_public_ip_address - computed: true, optional: true, required: false
-  private _associatePublicIpAddress?: boolean;
+  private _associatePublicIpAddress?: boolean | cdktf.IResolvable;
   public get associatePublicIpAddress() {
     return this.getBooleanAttribute('associate_public_ip_address');
   }
-  public set associatePublicIpAddress(value: boolean) {
+  public set associatePublicIpAddress(value: boolean | cdktf.IResolvable) {
     this._associatePublicIpAddress = value;
   }
   public resetAssociatePublicIpAddress() {
@@ -695,11 +700,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // disable_api_termination - computed: true, optional: true, required: false
-  private _disableApiTermination?: boolean;
+  private _disableApiTermination?: boolean | cdktf.IResolvable;
   public get disableApiTermination() {
     return this.getBooleanAttribute('disable_api_termination');
   }
-  public set disableApiTermination(value: boolean) {
+  public set disableApiTermination(value: boolean | cdktf.IResolvable) {
     this._disableApiTermination = value;
   }
   public resetDisableApiTermination() {
@@ -711,11 +716,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // ebs_optimized - computed: true, optional: true, required: false
-  private _ebsOptimized?: boolean;
+  private _ebsOptimized?: boolean | cdktf.IResolvable;
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean) {
+  public set ebsOptimized(value: boolean | cdktf.IResolvable) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {
@@ -727,11 +732,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // get_password_data - computed: false, optional: true, required: false
-  private _getPasswordData?: boolean;
+  private _getPasswordData?: boolean | cdktf.IResolvable;
   public get fetchPasswordData() {
     return this.getBooleanAttribute('get_password_data');
   }
-  public set fetchPasswordData(value: boolean ) {
+  public set fetchPasswordData(value: boolean | cdktf.IResolvable ) {
     this._getPasswordData = value;
   }
   public resetFetchPasswordData() {
@@ -743,11 +748,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // hibernation - computed: false, optional: true, required: false
-  private _hibernation?: boolean;
+  private _hibernation?: boolean | cdktf.IResolvable;
   public get hibernation() {
     return this.getBooleanAttribute('hibernation');
   }
-  public set hibernation(value: boolean ) {
+  public set hibernation(value: boolean | cdktf.IResolvable ) {
     this._hibernation = value;
   }
   public resetHibernation() {
@@ -929,11 +934,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // monitoring - computed: true, optional: true, required: false
-  private _monitoring?: boolean;
+  private _monitoring?: boolean | cdktf.IResolvable;
   public get monitoring() {
     return this.getBooleanAttribute('monitoring');
   }
-  public set monitoring(value: boolean) {
+  public set monitoring(value: boolean | cdktf.IResolvable) {
     this._monitoring = value;
   }
   public resetMonitoring() {
@@ -1039,11 +1044,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // source_dest_check - computed: false, optional: true, required: false
-  private _sourceDestCheck?: boolean;
+  private _sourceDestCheck?: boolean | cdktf.IResolvable;
   public get sourceDestCheck() {
     return this.getBooleanAttribute('source_dest_check');
   }
-  public set sourceDestCheck(value: boolean ) {
+  public set sourceDestCheck(value: boolean | cdktf.IResolvable ) {
     this._sourceDestCheck = value;
   }
   public resetSourceDestCheck() {
@@ -1118,11 +1123,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -1134,11 +1139,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1230,11 +1235,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // volume_tags - computed: false, optional: true, required: false
-  private _volumeTags?: { [key: string]: string };
+  private _volumeTags?: { [key: string]: string } | cdktf.IResolvable;
   public get volumeTags() {
     return this.interpolationForAttribute('volume_tags') as any;
   }
-  public set volumeTags(value: { [key: string]: string } ) {
+  public set volumeTags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._volumeTags = value;
   }
   public resetVolumeTags() {
@@ -1262,11 +1267,11 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   }
 
   // wait_for_fulfillment - computed: false, optional: true, required: false
-  private _waitForFulfillment?: boolean;
+  private _waitForFulfillment?: boolean | cdktf.IResolvable;
   public get waitForFulfillment() {
     return this.getBooleanAttribute('wait_for_fulfillment');
   }
-  public set waitForFulfillment(value: boolean ) {
+  public set waitForFulfillment(value: boolean | cdktf.IResolvable ) {
     this._waitForFulfillment = value;
   }
   public resetWaitForFulfillment() {

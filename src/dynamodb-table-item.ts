@@ -30,6 +30,11 @@ export interface DynamodbTableItemConfig extends cdktf.TerraformMetaArguments {
 */
 export class DynamodbTableItem extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dynamodb_table_item";
+
   // ===========
   // INITIALIZER
   // ===========

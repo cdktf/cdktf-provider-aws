@@ -10,7 +10,7 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#content_based_deduplication SqsQueue#content_based_deduplication}
   */
-  readonly contentBasedDeduplication?: boolean;
+  readonly contentBasedDeduplication?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#deduplication_scope SqsQueue#deduplication_scope}
   */
@@ -22,7 +22,7 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#fifo_queue SqsQueue#fifo_queue}
   */
-  readonly fifoQueue?: boolean;
+  readonly fifoQueue?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#fifo_throughput_limit SqsQueue#fifo_throughput_limit}
   */
@@ -66,11 +66,11 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#tags SqsQueue#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#tags_all SqsQueue#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html#visibility_timeout_seconds SqsQueue#visibility_timeout_seconds}
   */
@@ -81,6 +81,11 @@ export interface SqsQueueConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue.html aws_sqs_queue}
 */
 export class SqsQueue extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sqs_queue";
 
   // ===========
   // INITIALIZER
@@ -133,11 +138,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // content_based_deduplication - computed: false, optional: true, required: false
-  private _contentBasedDeduplication?: boolean;
+  private _contentBasedDeduplication?: boolean | cdktf.IResolvable;
   public get contentBasedDeduplication() {
     return this.getBooleanAttribute('content_based_deduplication');
   }
-  public set contentBasedDeduplication(value: boolean ) {
+  public set contentBasedDeduplication(value: boolean | cdktf.IResolvable ) {
     this._contentBasedDeduplication = value;
   }
   public resetContentBasedDeduplication() {
@@ -181,11 +186,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // fifo_queue - computed: false, optional: true, required: false
-  private _fifoQueue?: boolean;
+  private _fifoQueue?: boolean | cdktf.IResolvable;
   public get fifoQueue() {
     return this.getBooleanAttribute('fifo_queue');
   }
-  public set fifoQueue(value: boolean ) {
+  public set fifoQueue(value: boolean | cdktf.IResolvable ) {
     this._fifoQueue = value;
   }
   public resetFifoQueue() {
@@ -362,11 +367,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -378,11 +383,11 @@ export class SqsQueue extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

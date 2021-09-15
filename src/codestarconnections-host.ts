@@ -61,6 +61,11 @@ function codestarconnectionsHostVpcConfigurationToTerraform(struct?: Codestarcon
 */
 export class CodestarconnectionsHost extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codestarconnections_host";
+
   // ===========
   // INITIALIZER
   // ===========

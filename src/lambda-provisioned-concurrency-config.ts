@@ -51,6 +51,11 @@ function lambdaProvisionedConcurrencyConfigTimeoutsToTerraform(struct?: LambdaPr
 */
 export class LambdaProvisionedConcurrencyConfig extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_provisioned_concurrency_config";
+
   // ===========
   // INITIALIZER
   // ===========

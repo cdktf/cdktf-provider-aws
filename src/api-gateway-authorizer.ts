@@ -50,6 +50,11 @@ export interface ApiGatewayAuthorizerConfig extends cdktf.TerraformMetaArguments
 */
 export class ApiGatewayAuthorizer extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_authorizer";
+
   // ===========
   // INITIALIZER
   // ===========

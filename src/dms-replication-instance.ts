@@ -14,15 +14,15 @@ export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#allow_major_version_upgrade DmsReplicationInstance#allow_major_version_upgrade}
   */
-  readonly allowMajorVersionUpgrade?: boolean;
+  readonly allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#apply_immediately DmsReplicationInstance#apply_immediately}
   */
-  readonly applyImmediately?: boolean;
+  readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#auto_minor_version_upgrade DmsReplicationInstance#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean;
+  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#availability_zone DmsReplicationInstance#availability_zone}
   */
@@ -38,7 +38,7 @@ export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#multi_az DmsReplicationInstance#multi_az}
   */
-  readonly multiAz?: boolean;
+  readonly multiAz?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#preferred_maintenance_window DmsReplicationInstance#preferred_maintenance_window}
   */
@@ -46,7 +46,7 @@ export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#publicly_accessible DmsReplicationInstance#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean;
+  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#replication_instance_class DmsReplicationInstance#replication_instance_class}
   */
@@ -62,11 +62,11 @@ export interface DmsReplicationInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#tags DmsReplicationInstance#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#tags_all DmsReplicationInstance#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html#vpc_security_group_ids DmsReplicationInstance#vpc_security_group_ids}
   */
@@ -107,6 +107,11 @@ function dmsReplicationInstanceTimeoutsToTerraform(struct?: DmsReplicationInstan
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_instance.html aws_dms_replication_instance}
 */
 export class DmsReplicationInstance extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dms_replication_instance";
 
   // ===========
   // INITIALIZER
@@ -170,11 +175,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // allow_major_version_upgrade - computed: false, optional: true, required: false
-  private _allowMajorVersionUpgrade?: boolean;
+  private _allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
   public get allowMajorVersionUpgrade() {
     return this.getBooleanAttribute('allow_major_version_upgrade');
   }
-  public set allowMajorVersionUpgrade(value: boolean ) {
+  public set allowMajorVersionUpgrade(value: boolean | cdktf.IResolvable ) {
     this._allowMajorVersionUpgrade = value;
   }
   public resetAllowMajorVersionUpgrade() {
@@ -186,11 +191,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // apply_immediately - computed: false, optional: true, required: false
-  private _applyImmediately?: boolean;
+  private _applyImmediately?: boolean | cdktf.IResolvable;
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean ) {
+  public set applyImmediately(value: boolean | cdktf.IResolvable ) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -202,11 +207,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: true, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean;
+  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -271,11 +276,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // multi_az - computed: true, optional: true, required: false
-  private _multiAz?: boolean;
+  private _multiAz?: boolean | cdktf.IResolvable;
   public get multiAz() {
     return this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean) {
+  public set multiAz(value: boolean | cdktf.IResolvable) {
     this._multiAz = value;
   }
   public resetMultiAz() {
@@ -303,11 +308,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: true, optional: true, required: false
-  private _publiclyAccessible?: boolean;
+  private _publiclyAccessible?: boolean | cdktf.IResolvable;
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean) {
+  public set publiclyAccessible(value: boolean | cdktf.IResolvable) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -376,11 +381,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -392,11 +397,11 @@ export class DmsReplicationInstance extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

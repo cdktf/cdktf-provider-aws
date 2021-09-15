@@ -26,6 +26,11 @@ export interface Route53VpcAssociationAuthorizationConfig extends cdktf.Terrafor
 */
 export class Route53VpcAssociationAuthorization extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_vpc_association_authorization";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -88,6 +88,11 @@ function configOrganizationCustomRuleTimeoutsToTerraform(struct?: ConfigOrganiza
 */
 export class ConfigOrganizationCustomRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_config_organization_custom_rule";
+
   // ===========
   // INITIALIZER
   // ===========

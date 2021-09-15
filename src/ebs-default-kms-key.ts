@@ -18,6 +18,11 @@ export interface EbsDefaultKmsKeyConfig extends cdktf.TerraformMetaArguments {
 */
 export class EbsDefaultKmsKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ebs_default_kms_key";
+
   // ===========
   // INITIALIZER
   // ===========

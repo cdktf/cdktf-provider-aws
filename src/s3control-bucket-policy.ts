@@ -22,6 +22,11 @@ export interface S3ControlBucketPolicyConfig extends cdktf.TerraformMetaArgument
 */
 export class S3ControlBucketPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3control_bucket_policy";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -26,6 +26,11 @@ export interface RdsClusterRoleAssociationConfig extends cdktf.TerraformMetaArgu
 */
 export class RdsClusterRoleAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_rds_cluster_role_association";
+
   // ===========
   // INITIALIZER
   // ===========

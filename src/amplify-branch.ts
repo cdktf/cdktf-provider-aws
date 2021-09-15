@@ -34,27 +34,27 @@ export interface AmplifyBranchConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#enable_auto_build AmplifyBranch#enable_auto_build}
   */
-  readonly enableAutoBuild?: boolean;
+  readonly enableAutoBuild?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#enable_basic_auth AmplifyBranch#enable_basic_auth}
   */
-  readonly enableBasicAuth?: boolean;
+  readonly enableBasicAuth?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#enable_notification AmplifyBranch#enable_notification}
   */
-  readonly enableNotification?: boolean;
+  readonly enableNotification?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#enable_performance_mode AmplifyBranch#enable_performance_mode}
   */
-  readonly enablePerformanceMode?: boolean;
+  readonly enablePerformanceMode?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#enable_pull_request_preview AmplifyBranch#enable_pull_request_preview}
   */
-  readonly enablePullRequestPreview?: boolean;
+  readonly enablePullRequestPreview?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#environment_variables AmplifyBranch#environment_variables}
   */
-  readonly environmentVariables?: { [key: string]: string };
+  readonly environmentVariables?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#framework AmplifyBranch#framework}
   */
@@ -70,11 +70,11 @@ export interface AmplifyBranchConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#tags AmplifyBranch#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#tags_all AmplifyBranch#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html#ttl AmplifyBranch#ttl}
   */
@@ -85,6 +85,11 @@ export interface AmplifyBranchConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch.html aws_amplify_branch}
 */
 export class AmplifyBranch extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_amplify_branch";
 
   // ===========
   // INITIALIZER
@@ -243,11 +248,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_auto_build - computed: false, optional: true, required: false
-  private _enableAutoBuild?: boolean;
+  private _enableAutoBuild?: boolean | cdktf.IResolvable;
   public get enableAutoBuild() {
     return this.getBooleanAttribute('enable_auto_build');
   }
-  public set enableAutoBuild(value: boolean ) {
+  public set enableAutoBuild(value: boolean | cdktf.IResolvable ) {
     this._enableAutoBuild = value;
   }
   public resetEnableAutoBuild() {
@@ -259,11 +264,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_basic_auth - computed: false, optional: true, required: false
-  private _enableBasicAuth?: boolean;
+  private _enableBasicAuth?: boolean | cdktf.IResolvable;
   public get enableBasicAuth() {
     return this.getBooleanAttribute('enable_basic_auth');
   }
-  public set enableBasicAuth(value: boolean ) {
+  public set enableBasicAuth(value: boolean | cdktf.IResolvable ) {
     this._enableBasicAuth = value;
   }
   public resetEnableBasicAuth() {
@@ -275,11 +280,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_notification - computed: false, optional: true, required: false
-  private _enableNotification?: boolean;
+  private _enableNotification?: boolean | cdktf.IResolvable;
   public get enableNotification() {
     return this.getBooleanAttribute('enable_notification');
   }
-  public set enableNotification(value: boolean ) {
+  public set enableNotification(value: boolean | cdktf.IResolvable ) {
     this._enableNotification = value;
   }
   public resetEnableNotification() {
@@ -291,11 +296,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_performance_mode - computed: false, optional: true, required: false
-  private _enablePerformanceMode?: boolean;
+  private _enablePerformanceMode?: boolean | cdktf.IResolvable;
   public get enablePerformanceMode() {
     return this.getBooleanAttribute('enable_performance_mode');
   }
-  public set enablePerformanceMode(value: boolean ) {
+  public set enablePerformanceMode(value: boolean | cdktf.IResolvable ) {
     this._enablePerformanceMode = value;
   }
   public resetEnablePerformanceMode() {
@@ -307,11 +312,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // enable_pull_request_preview - computed: false, optional: true, required: false
-  private _enablePullRequestPreview?: boolean;
+  private _enablePullRequestPreview?: boolean | cdktf.IResolvable;
   public get enablePullRequestPreview() {
     return this.getBooleanAttribute('enable_pull_request_preview');
   }
-  public set enablePullRequestPreview(value: boolean ) {
+  public set enablePullRequestPreview(value: boolean | cdktf.IResolvable ) {
     this._enablePullRequestPreview = value;
   }
   public resetEnablePullRequestPreview() {
@@ -323,11 +328,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // environment_variables - computed: false, optional: true, required: false
-  private _environmentVariables?: { [key: string]: string };
+  private _environmentVariables?: { [key: string]: string } | cdktf.IResolvable;
   public get environmentVariables() {
     return this.interpolationForAttribute('environment_variables') as any;
   }
-  public set environmentVariables(value: { [key: string]: string } ) {
+  public set environmentVariables(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._environmentVariables = value;
   }
   public resetEnvironmentVariables() {
@@ -397,11 +402,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -413,11 +418,11 @@ export class AmplifyBranch extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

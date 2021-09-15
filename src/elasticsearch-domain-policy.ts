@@ -22,6 +22,11 @@ export interface ElasticsearchDomainPolicyConfig extends cdktf.TerraformMetaArgu
 */
 export class ElasticsearchDomainPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticsearch_domain_policy";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -42,6 +42,11 @@ function guarddutyInviteAccepterTimeoutsToTerraform(struct?: GuarddutyInviteAcce
 */
 export class GuarddutyInviteAccepter extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_guardduty_invite_accepter";
+
   // ===========
   // INITIALIZER
   // ===========

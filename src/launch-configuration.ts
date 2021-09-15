@@ -10,15 +10,15 @@ export interface LaunchConfigurationConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#associate_public_ip_address LaunchConfiguration#associate_public_ip_address}
   */
-  readonly associatePublicIpAddress?: boolean;
+  readonly associatePublicIpAddress?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#ebs_optimized LaunchConfiguration#ebs_optimized}
   */
-  readonly ebsOptimized?: boolean;
+  readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#enable_monitoring LaunchConfiguration#enable_monitoring}
   */
-  readonly enableMonitoring?: boolean;
+  readonly enableMonitoring?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#iam_instance_profile LaunchConfiguration#iam_instance_profile}
   */
@@ -100,7 +100,7 @@ export interface LaunchConfigurationEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#delete_on_termination LaunchConfiguration#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#device_name LaunchConfiguration#device_name}
   */
@@ -108,7 +108,7 @@ export interface LaunchConfigurationEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#encrypted LaunchConfiguration#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#iops LaunchConfiguration#iops}
   */
@@ -116,7 +116,7 @@ export interface LaunchConfigurationEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#no_device LaunchConfiguration#no_device}
   */
-  readonly noDevice?: boolean;
+  readonly noDevice?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#snapshot_id LaunchConfiguration#snapshot_id}
   */
@@ -197,11 +197,11 @@ export interface LaunchConfigurationRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#delete_on_termination LaunchConfiguration#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#encrypted LaunchConfiguration#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html#iops LaunchConfiguration#iops}
   */
@@ -237,6 +237,11 @@ function launchConfigurationRootBlockDeviceToTerraform(struct?: LaunchConfigurat
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/launch_configuration.html aws_launch_configuration}
 */
 export class LaunchConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_launch_configuration";
 
   // ===========
   // INITIALIZER
@@ -292,11 +297,11 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // associate_public_ip_address - computed: false, optional: true, required: false
-  private _associatePublicIpAddress?: boolean;
+  private _associatePublicIpAddress?: boolean | cdktf.IResolvable;
   public get associatePublicIpAddress() {
     return this.getBooleanAttribute('associate_public_ip_address');
   }
-  public set associatePublicIpAddress(value: boolean ) {
+  public set associatePublicIpAddress(value: boolean | cdktf.IResolvable ) {
     this._associatePublicIpAddress = value;
   }
   public resetAssociatePublicIpAddress() {
@@ -308,11 +313,11 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // ebs_optimized - computed: true, optional: true, required: false
-  private _ebsOptimized?: boolean;
+  private _ebsOptimized?: boolean | cdktf.IResolvable;
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean) {
+  public set ebsOptimized(value: boolean | cdktf.IResolvable) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {
@@ -324,11 +329,11 @@ export class LaunchConfiguration extends cdktf.TerraformResource {
   }
 
   // enable_monitoring - computed: false, optional: true, required: false
-  private _enableMonitoring?: boolean;
+  private _enableMonitoring?: boolean | cdktf.IResolvable;
   public get enableMonitoring() {
     return this.getBooleanAttribute('enable_monitoring');
   }
-  public set enableMonitoring(value: boolean ) {
+  public set enableMonitoring(value: boolean | cdktf.IResolvable ) {
     this._enableMonitoring = value;
   }
   public resetEnableMonitoring() {

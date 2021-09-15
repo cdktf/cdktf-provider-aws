@@ -18,6 +18,11 @@ export interface DataAwsWafregionalWebAclConfig extends cdktf.TerraformMetaArgum
 */
 export class DataAwsWafregionalWebAcl extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafregional_web_acl";
+
   // ===========
   // INITIALIZER
   // ===========

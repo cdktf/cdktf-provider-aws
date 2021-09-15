@@ -38,6 +38,11 @@ function efsBackupPolicyBackupPolicyToTerraform(struct?: EfsBackupPolicyBackupPo
 */
 export class EfsBackupPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_efs_backup_policy";
+
   // ===========
   // INITIALIZER
   // ===========

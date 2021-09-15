@@ -22,6 +22,11 @@ export interface Ec2TransitGatewayRouteTableAssociationConfig extends cdktf.Terr
 */
 export class Ec2TransitGatewayRouteTableAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_transit_gateway_route_table_association";
+
   // ===========
   // INITIALIZER
   // ===========

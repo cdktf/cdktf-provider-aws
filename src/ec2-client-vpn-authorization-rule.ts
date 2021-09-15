@@ -14,7 +14,7 @@ export interface Ec2ClientVpnAuthorizationRuleConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_authorization_rule.html#authorize_all_groups Ec2ClientVpnAuthorizationRule#authorize_all_groups}
   */
-  readonly authorizeAllGroups?: boolean;
+  readonly authorizeAllGroups?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_authorization_rule.html#client_vpn_endpoint_id Ec2ClientVpnAuthorizationRule#client_vpn_endpoint_id}
   */
@@ -33,6 +33,11 @@ export interface Ec2ClientVpnAuthorizationRuleConfig extends cdktf.TerraformMeta
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_authorization_rule.html aws_ec2_client_vpn_authorization_rule}
 */
 export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_client_vpn_authorization_rule";
 
   // ===========
   // INITIALIZER
@@ -84,11 +89,11 @@ export class Ec2ClientVpnAuthorizationRule extends cdktf.TerraformResource {
   }
 
   // authorize_all_groups - computed: false, optional: true, required: false
-  private _authorizeAllGroups?: boolean;
+  private _authorizeAllGroups?: boolean | cdktf.IResolvable;
   public get authorizeAllGroups() {
     return this.getBooleanAttribute('authorize_all_groups');
   }
-  public set authorizeAllGroups(value: boolean ) {
+  public set authorizeAllGroups(value: boolean | cdktf.IResolvable ) {
     this._authorizeAllGroups = value;
   }
   public resetAuthorizeAllGroups() {

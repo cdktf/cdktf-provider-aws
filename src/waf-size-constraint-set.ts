@@ -74,6 +74,11 @@ function wafSizeConstraintSetSizeConstraintsToTerraform(struct?: WafSizeConstrai
 */
 export class WafSizeConstraintSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_size_constraint_set";
+
   // ===========
   // INITIALIZER
   // ===========

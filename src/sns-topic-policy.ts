@@ -22,6 +22,11 @@ export interface SnsTopicPolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class SnsTopicPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sns_topic_policy";
+
   // ===========
   // INITIALIZER
   // ===========

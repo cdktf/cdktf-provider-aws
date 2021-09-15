@@ -26,6 +26,11 @@ export interface SesDomainMailFromConfig extends cdktf.TerraformMetaArguments {
 */
 export class SesDomainMailFrom extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_domain_mail_from";
+
   // ===========
   // INITIALIZER
   // ===========

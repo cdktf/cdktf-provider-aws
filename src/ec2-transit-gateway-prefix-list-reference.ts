@@ -10,7 +10,7 @@ export interface Ec2TransitGatewayPrefixListReferenceConfig extends cdktf.Terraf
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_prefix_list_reference.html#blackhole Ec2TransitGatewayPrefixListReference#blackhole}
   */
-  readonly blackhole?: boolean;
+  readonly blackhole?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_prefix_list_reference.html#prefix_list_id Ec2TransitGatewayPrefixListReference#prefix_list_id}
   */
@@ -29,6 +29,11 @@ export interface Ec2TransitGatewayPrefixListReferenceConfig extends cdktf.Terraf
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_prefix_list_reference.html aws_ec2_transit_gateway_prefix_list_reference}
 */
 export class Ec2TransitGatewayPrefixListReference extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_transit_gateway_prefix_list_reference";
 
   // ===========
   // INITIALIZER
@@ -63,11 +68,11 @@ export class Ec2TransitGatewayPrefixListReference extends cdktf.TerraformResourc
   // ==========
 
   // blackhole - computed: false, optional: true, required: false
-  private _blackhole?: boolean;
+  private _blackhole?: boolean | cdktf.IResolvable;
   public get blackhole() {
     return this.getBooleanAttribute('blackhole');
   }
-  public set blackhole(value: boolean ) {
+  public set blackhole(value: boolean | cdktf.IResolvable ) {
     this._blackhole = value;
   }
   public resetBlackhole() {

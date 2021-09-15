@@ -38,7 +38,7 @@ export interface SecurityGroupRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/security_group_rule.html#self SecurityGroupRule#self}
   */
-  readonly selfAttribute?: boolean;
+  readonly selfAttribute?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/security_group_rule.html#source_security_group_id SecurityGroupRule#source_security_group_id}
   */
@@ -59,6 +59,11 @@ export interface SecurityGroupRuleConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/security_group_rule.html aws_security_group_rule}
 */
 export class SecurityGroupRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_security_group_rule";
 
   // ===========
   // INITIALIZER
@@ -208,11 +213,11 @@ export class SecurityGroupRule extends cdktf.TerraformResource {
   }
 
   // self - computed: false, optional: true, required: false
-  private _self?: boolean;
+  private _self?: boolean | cdktf.IResolvable;
   public get selfAttribute() {
     return this.getBooleanAttribute('self');
   }
-  public set selfAttribute(value: boolean ) {
+  public set selfAttribute(value: boolean | cdktf.IResolvable ) {
     this._self = value;
   }
   public resetSelfAttribute() {

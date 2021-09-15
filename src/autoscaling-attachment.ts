@@ -26,6 +26,11 @@ export interface AutoscalingAttachmentConfig extends cdktf.TerraformMetaArgument
 */
 export class AutoscalingAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -18,6 +18,11 @@ export interface DataAwsOutpostsOutpostInstanceTypesConfig extends cdktf.Terrafo
 */
 export class DataAwsOutpostsOutpostInstanceTypes extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_outposts_outpost_instance_types";
+
   // ===========
   // INITIALIZER
   // ===========

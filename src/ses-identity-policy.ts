@@ -26,6 +26,11 @@ export interface SesIdentityPolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class SesIdentityPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_identity_policy";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -10,7 +10,7 @@ export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#allow_overwrite Route53Record#allow_overwrite}
   */
-  readonly allowOverwrite?: boolean;
+  readonly allowOverwrite?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#health_check_id Route53Record#health_check_id}
   */
@@ -18,7 +18,7 @@ export interface Route53RecordConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#multivalue_answer_routing_policy Route53Record#multivalue_answer_routing_policy}
   */
-  readonly multivalueAnswerRoutingPolicy?: boolean;
+  readonly multivalueAnswerRoutingPolicy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#name Route53Record#name}
   */
@@ -78,7 +78,7 @@ export interface Route53RecordAlias {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#evaluate_target_health Route53Record#evaluate_target_health}
   */
-  readonly evaluateTargetHealth: boolean;
+  readonly evaluateTargetHealth: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record.html#name Route53Record#name}
   */
@@ -170,6 +170,11 @@ function route53RecordWeightedRoutingPolicyToTerraform(struct?: Route53RecordWei
 */
 export class Route53Record extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_record";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -213,11 +218,11 @@ export class Route53Record extends cdktf.TerraformResource {
   // ==========
 
   // allow_overwrite - computed: true, optional: true, required: false
-  private _allowOverwrite?: boolean;
+  private _allowOverwrite?: boolean | cdktf.IResolvable;
   public get allowOverwrite() {
     return this.getBooleanAttribute('allow_overwrite');
   }
-  public set allowOverwrite(value: boolean) {
+  public set allowOverwrite(value: boolean | cdktf.IResolvable) {
     this._allowOverwrite = value;
   }
   public resetAllowOverwrite() {
@@ -255,11 +260,11 @@ export class Route53Record extends cdktf.TerraformResource {
   }
 
   // multivalue_answer_routing_policy - computed: false, optional: true, required: false
-  private _multivalueAnswerRoutingPolicy?: boolean;
+  private _multivalueAnswerRoutingPolicy?: boolean | cdktf.IResolvable;
   public get multivalueAnswerRoutingPolicy() {
     return this.getBooleanAttribute('multivalue_answer_routing_policy');
   }
-  public set multivalueAnswerRoutingPolicy(value: boolean ) {
+  public set multivalueAnswerRoutingPolicy(value: boolean | cdktf.IResolvable ) {
     this._multivalueAnswerRoutingPolicy = value;
   }
   public resetMultivalueAnswerRoutingPolicy() {

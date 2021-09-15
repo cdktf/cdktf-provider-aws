@@ -14,7 +14,7 @@ export interface CloudformationStackConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack.html#disable_rollback CloudformationStack#disable_rollback}
   */
-  readonly disableRollback?: boolean;
+  readonly disableRollback?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack.html#iam_role_arn CloudformationStack#iam_role_arn}
   */
@@ -34,7 +34,7 @@ export interface CloudformationStackConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack.html#parameters CloudformationStack#parameters}
   */
-  readonly parameters?: { [key: string]: string };
+  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack.html#policy_body CloudformationStack#policy_body}
   */
@@ -46,11 +46,11 @@ export interface CloudformationStackConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack.html#tags CloudformationStack#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack.html#tags_all CloudformationStack#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack.html#template_body CloudformationStack#template_body}
   */
@@ -99,6 +99,11 @@ function cloudformationStackTimeoutsToTerraform(struct?: CloudformationStackTime
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack.html aws_cloudformation_stack}
 */
 export class CloudformationStack extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudformation_stack";
 
   // ===========
   // INITIALIZER
@@ -160,11 +165,11 @@ export class CloudformationStack extends cdktf.TerraformResource {
   }
 
   // disable_rollback - computed: false, optional: true, required: false
-  private _disableRollback?: boolean;
+  private _disableRollback?: boolean | cdktf.IResolvable;
   public get disableRollback() {
     return this.getBooleanAttribute('disable_rollback');
   }
-  public set disableRollback(value: boolean ) {
+  public set disableRollback(value: boolean | cdktf.IResolvable ) {
     this._disableRollback = value;
   }
   public resetDisableRollback() {
@@ -247,11 +252,11 @@ export class CloudformationStack extends cdktf.TerraformResource {
   }
 
   // parameters - computed: true, optional: true, required: false
-  private _parameters?: { [key: string]: string }
-  public get parameters(): { [key: string]: string } {
+  private _parameters?: { [key: string]: string } | cdktf.IResolvable
+  public get parameters(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('parameters') as any; // Getting the computed value is not yet implemented
   }
-  public set parameters(value: { [key: string]: string }) {
+  public set parameters(value: { [key: string]: string } | cdktf.IResolvable) {
     this._parameters = value;
   }
   public resetParameters() {
@@ -295,11 +300,11 @@ export class CloudformationStack extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -311,11 +316,11 @@ export class CloudformationStack extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -30,6 +30,11 @@ export interface AmplifyBackendEnvironmentConfig extends cdktf.TerraformMetaArgu
 */
 export class AmplifyBackendEnvironment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_amplify_backend_environment";
+
   // ===========
   // INITIALIZER
   // ===========

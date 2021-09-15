@@ -46,11 +46,11 @@ export interface ApiGatewayIntegrationConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html#request_parameters ApiGatewayIntegration#request_parameters}
   */
-  readonly requestParameters?: { [key: string]: string };
+  readonly requestParameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html#request_templates ApiGatewayIntegration#request_templates}
   */
-  readonly requestTemplates?: { [key: string]: string };
+  readonly requestTemplates?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html#resource_id ApiGatewayIntegration#resource_id}
   */
@@ -82,7 +82,7 @@ export interface ApiGatewayIntegrationTlsConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html#insecure_skip_verification ApiGatewayIntegration#insecure_skip_verification}
   */
-  readonly insecureSkipVerification?: boolean;
+  readonly insecureSkipVerification?: boolean | cdktf.IResolvable;
 }
 
 function apiGatewayIntegrationTlsConfigToTerraform(struct?: ApiGatewayIntegrationTlsConfig): any {
@@ -97,6 +97,11 @@ function apiGatewayIntegrationTlsConfigToTerraform(struct?: ApiGatewayIntegratio
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration.html aws_api_gateway_integration}
 */
 export class ApiGatewayIntegration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_integration";
 
   // ===========
   // INITIALIZER
@@ -290,11 +295,11 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
   }
 
   // request_parameters - computed: false, optional: true, required: false
-  private _requestParameters?: { [key: string]: string };
+  private _requestParameters?: { [key: string]: string } | cdktf.IResolvable;
   public get requestParameters() {
     return this.interpolationForAttribute('request_parameters') as any;
   }
-  public set requestParameters(value: { [key: string]: string } ) {
+  public set requestParameters(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._requestParameters = value;
   }
   public resetRequestParameters() {
@@ -306,11 +311,11 @@ export class ApiGatewayIntegration extends cdktf.TerraformResource {
   }
 
   // request_templates - computed: false, optional: true, required: false
-  private _requestTemplates?: { [key: string]: string };
+  private _requestTemplates?: { [key: string]: string } | cdktf.IResolvable;
   public get requestTemplates() {
     return this.interpolationForAttribute('request_templates') as any;
   }
-  public set requestTemplates(value: { [key: string]: string } ) {
+  public set requestTemplates(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._requestTemplates = value;
   }
   public resetRequestTemplates() {

@@ -179,6 +179,11 @@ function elastictranscoderPipelineThumbnailConfigPermissionsToTerraform(struct?:
 */
 export class ElastictranscoderPipeline extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elastictranscoder_pipeline";
+
   // ===========
   // INITIALIZER
   // ===========

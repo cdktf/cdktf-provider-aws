@@ -14,7 +14,7 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#force_overwrite_replica_secret SecretsmanagerSecret#force_overwrite_replica_secret}
   */
-  readonly forceOverwriteReplicaSecret?: boolean;
+  readonly forceOverwriteReplicaSecret?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#kms_key_id SecretsmanagerSecret#kms_key_id}
   */
@@ -42,11 +42,11 @@ export interface SecretsmanagerSecretConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#tags SecretsmanagerSecret#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html#tags_all SecretsmanagerSecret#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * replica block
   * 
@@ -98,6 +98,11 @@ function secretsmanagerSecretRotationRulesToTerraform(struct?: SecretsmanagerSec
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret.html aws_secretsmanager_secret}
 */
 export class SecretsmanagerSecret extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_secretsmanager_secret";
 
   // ===========
   // INITIALIZER
@@ -161,11 +166,11 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // force_overwrite_replica_secret - computed: false, optional: true, required: false
-  private _forceOverwriteReplicaSecret?: boolean;
+  private _forceOverwriteReplicaSecret?: boolean | cdktf.IResolvable;
   public get forceOverwriteReplicaSecret() {
     return this.getBooleanAttribute('force_overwrite_replica_secret');
   }
-  public set forceOverwriteReplicaSecret(value: boolean ) {
+  public set forceOverwriteReplicaSecret(value: boolean | cdktf.IResolvable ) {
     this._forceOverwriteReplicaSecret = value;
   }
   public resetForceOverwriteReplicaSecret() {
@@ -283,11 +288,11 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -299,11 +304,11 @@ export class SecretsmanagerSecret extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

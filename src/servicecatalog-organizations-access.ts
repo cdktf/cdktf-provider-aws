@@ -10,13 +10,18 @@ export interface ServicecatalogOrganizationsAccessConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_organizations_access.html#enabled ServicecatalogOrganizationsAccess#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_organizations_access.html aws_servicecatalog_organizations_access}
 */
 export class ServicecatalogOrganizationsAccess extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_organizations_access";
 
   // ===========
   // INITIALIZER
@@ -48,11 +53,11 @@ export class ServicecatalogOrganizationsAccess extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled: boolean;
+  private _enabled: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.

@@ -54,6 +54,11 @@ function cloudfrontMonitoringSubscriptionMonitoringSubscriptionToTerraform(struc
 */
 export class CloudfrontMonitoringSubscription extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_monitoring_subscription";
+
   // ===========
   // INITIALIZER
   // ===========

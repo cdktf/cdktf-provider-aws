@@ -14,6 +14,11 @@ export interface DataAwsGuarddutyDetectorConfig extends cdktf.TerraformMetaArgum
 */
 export class DataAwsGuarddutyDetector extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_guardduty_detector";
+
   // ===========
   // INITIALIZER
   // ===========

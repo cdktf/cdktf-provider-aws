@@ -30,6 +30,11 @@ export interface AlbTargetGroupAttachmentConfig extends cdktf.TerraformMetaArgum
 */
 export class AlbTargetGroupAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_alb_target_group_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

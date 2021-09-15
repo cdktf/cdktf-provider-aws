@@ -40,7 +40,7 @@ export interface GlueClassifierCsvClassifier {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#allow_single_column GlueClassifier#allow_single_column}
   */
-  readonly allowSingleColumn?: boolean;
+  readonly allowSingleColumn?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#contains_header GlueClassifier#contains_header}
   */
@@ -52,7 +52,7 @@ export interface GlueClassifierCsvClassifier {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#disable_value_trimming GlueClassifier#disable_value_trimming}
   */
-  readonly disableValueTrimming?: boolean;
+  readonly disableValueTrimming?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html#header GlueClassifier#header}
   */
@@ -137,6 +137,11 @@ function glueClassifierXmlClassifierToTerraform(struct?: GlueClassifierXmlClassi
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier.html aws_glue_classifier}
 */
 export class GlueClassifier extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_classifier";
 
   // ===========
   // INITIALIZER

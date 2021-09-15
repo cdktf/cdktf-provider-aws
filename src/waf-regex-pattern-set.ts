@@ -22,6 +22,11 @@ export interface WafRegexPatternSetConfig extends cdktf.TerraformMetaArguments {
 */
 export class WafRegexPatternSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_regex_pattern_set";
+
   // ===========
   // INITIALIZER
   // ===========

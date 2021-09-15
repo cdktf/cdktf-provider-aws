@@ -14,13 +14,18 @@ export interface DataAwsSsmParameterConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ssm_parameter.html#with_decryption DataAwsSsmParameter#with_decryption}
   */
-  readonly withDecryption?: boolean;
+  readonly withDecryption?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssm_parameter.html aws_ssm_parameter}
 */
 export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_parameter";
 
   // ===========
   // INITIALIZER
@@ -91,11 +96,11 @@ export class DataAwsSsmParameter extends cdktf.TerraformDataSource {
   }
 
   // with_decryption - computed: false, optional: true, required: false
-  private _withDecryption?: boolean;
+  private _withDecryption?: boolean | cdktf.IResolvable;
   public get withDecryption() {
     return this.getBooleanAttribute('with_decryption');
   }
-  public set withDecryption(value: boolean ) {
+  public set withDecryption(value: boolean | cdktf.IResolvable ) {
     this._withDecryption = value;
   }
   public resetWithDecryption() {

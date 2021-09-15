@@ -53,6 +53,11 @@ function lightsailInstancePublicPortsPortInfoToTerraform(struct?: LightsailInsta
 */
 export class LightsailInstancePublicPorts extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lightsail_instance_public_ports";
+
   // ===========
   // INITIALIZER
   // ===========

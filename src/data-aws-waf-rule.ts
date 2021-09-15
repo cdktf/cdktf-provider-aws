@@ -18,6 +18,11 @@ export interface DataAwsWafRuleConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsWafRule extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_rule";
+
   // ===========
   // INITIALIZER
   // ===========

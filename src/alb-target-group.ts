@@ -14,7 +14,7 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#lambda_multi_value_headers_enabled AlbTargetGroup#lambda_multi_value_headers_enabled}
   */
-  readonly lambdaMultiValueHeadersEnabled?: boolean;
+  readonly lambdaMultiValueHeadersEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#load_balancing_algorithm_type AlbTargetGroup#load_balancing_algorithm_type}
   */
@@ -46,7 +46,7 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#proxy_protocol_v2 AlbTargetGroup#proxy_protocol_v2}
   */
-  readonly proxyProtocolV2?: boolean;
+  readonly proxyProtocolV2?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#slow_start AlbTargetGroup#slow_start}
   */
@@ -54,11 +54,11 @@ export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#tags AlbTargetGroup#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#tags_all AlbTargetGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#target_type AlbTargetGroup#target_type}
   */
@@ -84,7 +84,7 @@ export interface AlbTargetGroupHealthCheck {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#enabled AlbTargetGroup#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#healthy_threshold AlbTargetGroup#healthy_threshold}
   */
@@ -146,7 +146,7 @@ export interface AlbTargetGroupStickiness {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#enabled AlbTargetGroup#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#type AlbTargetGroup#type}
   */
@@ -168,6 +168,11 @@ function albTargetGroupStickinessToTerraform(struct?: AlbTargetGroupStickiness):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html aws_alb_target_group}
 */
 export class AlbTargetGroup extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_alb_target_group";
 
   // ===========
   // INITIALIZER
@@ -246,11 +251,11 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   }
 
   // lambda_multi_value_headers_enabled - computed: false, optional: true, required: false
-  private _lambdaMultiValueHeadersEnabled?: boolean;
+  private _lambdaMultiValueHeadersEnabled?: boolean | cdktf.IResolvable;
   public get lambdaMultiValueHeadersEnabled() {
     return this.getBooleanAttribute('lambda_multi_value_headers_enabled');
   }
-  public set lambdaMultiValueHeadersEnabled(value: boolean ) {
+  public set lambdaMultiValueHeadersEnabled(value: boolean | cdktf.IResolvable ) {
     this._lambdaMultiValueHeadersEnabled = value;
   }
   public resetLambdaMultiValueHeadersEnabled() {
@@ -374,11 +379,11 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   }
 
   // proxy_protocol_v2 - computed: false, optional: true, required: false
-  private _proxyProtocolV2?: boolean;
+  private _proxyProtocolV2?: boolean | cdktf.IResolvable;
   public get proxyProtocolV2() {
     return this.getBooleanAttribute('proxy_protocol_v2');
   }
-  public set proxyProtocolV2(value: boolean ) {
+  public set proxyProtocolV2(value: boolean | cdktf.IResolvable ) {
     this._proxyProtocolV2 = value;
   }
   public resetProxyProtocolV2() {
@@ -406,11 +411,11 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -422,11 +427,11 @@ export class AlbTargetGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

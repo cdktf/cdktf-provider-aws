@@ -10,7 +10,7 @@ export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall.html#delete_protection NetworkfirewallFirewall#delete_protection}
   */
-  readonly deleteProtection?: boolean;
+  readonly deleteProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall.html#description NetworkfirewallFirewall#description}
   */
@@ -22,7 +22,7 @@ export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall.html#firewall_policy_change_protection NetworkfirewallFirewall#firewall_policy_change_protection}
   */
-  readonly firewallPolicyChangeProtection?: boolean;
+  readonly firewallPolicyChangeProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall.html#name NetworkfirewallFirewall#name}
   */
@@ -30,15 +30,15 @@ export interface NetworkfirewallFirewallConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall.html#subnet_change_protection NetworkfirewallFirewall#subnet_change_protection}
   */
-  readonly subnetChangeProtection?: boolean;
+  readonly subnetChangeProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall.html#tags NetworkfirewallFirewall#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall.html#tags_all NetworkfirewallFirewall#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_firewall.html#vpc_id NetworkfirewallFirewall#vpc_id}
   */
@@ -101,6 +101,11 @@ function networkfirewallFirewallSubnetMappingToTerraform(struct?: Networkfirewal
 */
 export class NetworkfirewallFirewall extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_networkfirewall_firewall";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -145,11 +150,11 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // delete_protection - computed: false, optional: true, required: false
-  private _deleteProtection?: boolean;
+  private _deleteProtection?: boolean | cdktf.IResolvable;
   public get deleteProtection() {
     return this.getBooleanAttribute('delete_protection');
   }
-  public set deleteProtection(value: boolean ) {
+  public set deleteProtection(value: boolean | cdktf.IResolvable ) {
     this._deleteProtection = value;
   }
   public resetDeleteProtection() {
@@ -190,11 +195,11 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // firewall_policy_change_protection - computed: false, optional: true, required: false
-  private _firewallPolicyChangeProtection?: boolean;
+  private _firewallPolicyChangeProtection?: boolean | cdktf.IResolvable;
   public get firewallPolicyChangeProtection() {
     return this.getBooleanAttribute('firewall_policy_change_protection');
   }
-  public set firewallPolicyChangeProtection(value: boolean ) {
+  public set firewallPolicyChangeProtection(value: boolean | cdktf.IResolvable ) {
     this._firewallPolicyChangeProtection = value;
   }
   public resetFirewallPolicyChangeProtection() {
@@ -229,11 +234,11 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // subnet_change_protection - computed: false, optional: true, required: false
-  private _subnetChangeProtection?: boolean;
+  private _subnetChangeProtection?: boolean | cdktf.IResolvable;
   public get subnetChangeProtection() {
     return this.getBooleanAttribute('subnet_change_protection');
   }
-  public set subnetChangeProtection(value: boolean ) {
+  public set subnetChangeProtection(value: boolean | cdktf.IResolvable ) {
     this._subnetChangeProtection = value;
   }
   public resetSubnetChangeProtection() {
@@ -245,11 +250,11 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -261,11 +266,11 @@ export class NetworkfirewallFirewall extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -14,7 +14,7 @@ export interface GlueConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_connection.html#connection_properties GlueConnection#connection_properties}
   */
-  readonly connectionProperties?: { [key: string]: string };
+  readonly connectionProperties?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_connection.html#connection_type GlueConnection#connection_type}
   */
@@ -67,6 +67,11 @@ function glueConnectionPhysicalConnectionRequirementsToTerraform(struct?: GlueCo
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_connection.html aws_glue_connection}
 */
 export class GlueConnection extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_connection";
 
   // ===========
   // INITIALIZER
@@ -125,11 +130,11 @@ export class GlueConnection extends cdktf.TerraformResource {
   }
 
   // connection_properties - computed: false, optional: true, required: false
-  private _connectionProperties?: { [key: string]: string };
+  private _connectionProperties?: { [key: string]: string } | cdktf.IResolvable;
   public get connectionProperties() {
     return this.interpolationForAttribute('connection_properties') as any;
   }
-  public set connectionProperties(value: { [key: string]: string } ) {
+  public set connectionProperties(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._connectionProperties = value;
   }
   public resetConnectionProperties() {

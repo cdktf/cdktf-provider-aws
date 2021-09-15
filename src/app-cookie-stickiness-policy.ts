@@ -30,6 +30,11 @@ export interface AppCookieStickinessPolicyConfig extends cdktf.TerraformMetaArgu
 */
 export class AppCookieStickinessPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_app_cookie_stickiness_policy";
+
   // ===========
   // INITIALIZER
   // ===========

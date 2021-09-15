@@ -37,6 +37,12 @@ export interface ConfigOrganizationConformancePackConfig extends cdktf.Terraform
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack.html#input_parameter ConfigOrganizationConformancePack#input_parameter}
   */
   readonly inputParameter?: ConfigOrganizationConformancePackInputParameter[];
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack.html#timeouts ConfigOrganizationConformancePack#timeouts}
+  */
+  readonly timeouts?: ConfigOrganizationConformancePackTimeouts;
 }
 export interface ConfigOrganizationConformancePackInputParameter {
   /**
@@ -57,11 +63,40 @@ function configOrganizationConformancePackInputParameterToTerraform(struct?: Con
   }
 }
 
+export interface ConfigOrganizationConformancePackTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack.html#create ConfigOrganizationConformancePack#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack.html#delete ConfigOrganizationConformancePack#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack.html#update ConfigOrganizationConformancePack#update}
+  */
+  readonly update?: string;
+}
+
+function configOrganizationConformancePackTimeoutsToTerraform(struct?: ConfigOrganizationConformancePackTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_organization_conformance_pack.html aws_config_organization_conformance_pack}
 */
 export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_config_organization_conformance_pack";
 
   // ===========
   // INITIALIZER
@@ -92,6 +127,7 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
     this._templateBody = config.templateBody;
     this._templateS3Uri = config.templateS3Uri;
     this._inputParameter = config.inputParameter;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
@@ -217,6 +253,22 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
     return this._inputParameter
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: ConfigOrganizationConformancePackTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: ConfigOrganizationConformancePackTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -230,6 +282,7 @@ export class ConfigOrganizationConformancePack extends cdktf.TerraformResource {
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_s3_uri: cdktf.stringToTerraform(this._templateS3Uri),
       input_parameter: cdktf.listMapper(configOrganizationConformancePackInputParameterToTerraform)(this._inputParameter),
+      timeouts: configOrganizationConformancePackTimeoutsToTerraform(this._timeouts),
     };
   }
 }

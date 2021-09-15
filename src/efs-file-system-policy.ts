@@ -22,6 +22,11 @@ export interface EfsFileSystemPolicyConfig extends cdktf.TerraformMetaArguments 
 */
 export class EfsFileSystemPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_efs_file_system_policy";
+
   // ===========
   // INITIALIZER
   // ===========

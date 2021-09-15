@@ -22,6 +22,11 @@ export interface Route53ResolverQueryLogConfigAssociationConfig extends cdktf.Te
 */
 export class Route53ResolverQueryLogConfigAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_resolver_query_log_config_association";
+
   // ===========
   // INITIALIZER
   // ===========

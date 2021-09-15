@@ -42,6 +42,11 @@ function docdbClusterSnapshotTimeoutsToTerraform(struct?: DocdbClusterSnapshotTi
 */
 export class DocdbClusterSnapshot extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_docdb_cluster_snapshot";
+
   // ===========
   // INITIALIZER
   // ===========

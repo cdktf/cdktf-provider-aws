@@ -30,6 +30,11 @@ export interface LbCookieStickinessPolicyConfig extends cdktf.TerraformMetaArgum
 */
 export class LbCookieStickinessPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lb_cookie_stickiness_policy";
+
   // ===========
   // INITIALIZER
   // ===========

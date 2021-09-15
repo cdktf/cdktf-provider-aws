@@ -18,6 +18,11 @@ export interface DataAwsCurReportDefinitionConfig extends cdktf.TerraformMetaArg
 */
 export class DataAwsCurReportDefinition extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cur_report_definition";
+
   // ===========
   // INITIALIZER
   // ===========

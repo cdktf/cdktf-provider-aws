@@ -30,6 +30,11 @@ export interface Route53KeySigningKeyConfig extends cdktf.TerraformMetaArguments
 */
 export class Route53KeySigningKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_key_signing_key";
+
   // ===========
   // INITIALIZER
   // ===========

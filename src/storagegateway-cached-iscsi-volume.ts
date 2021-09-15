@@ -14,7 +14,7 @@ export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_cached_iscsi_volume.html#kms_encrypted StoragegatewayCachedIscsiVolume#kms_encrypted}
   */
-  readonly kmsEncrypted?: boolean;
+  readonly kmsEncrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_cached_iscsi_volume.html#kms_key StoragegatewayCachedIscsiVolume#kms_key}
   */
@@ -34,11 +34,11 @@ export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_cached_iscsi_volume.html#tags StoragegatewayCachedIscsiVolume#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_cached_iscsi_volume.html#tags_all StoragegatewayCachedIscsiVolume#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_cached_iscsi_volume.html#target_name StoragegatewayCachedIscsiVolume#target_name}
   */
@@ -53,6 +53,11 @@ export interface StoragegatewayCachedIscsiVolumeConfig extends cdktf.TerraformMe
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_cached_iscsi_volume.html aws_storagegateway_cached_iscsi_volume}
 */
 export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_storagegateway_cached_iscsi_volume";
 
   // ===========
   // INITIALIZER
@@ -121,11 +126,11 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   }
 
   // kms_encrypted - computed: false, optional: true, required: false
-  private _kmsEncrypted?: boolean;
+  private _kmsEncrypted?: boolean | cdktf.IResolvable;
   public get kmsEncrypted() {
     return this.getBooleanAttribute('kms_encrypted');
   }
-  public set kmsEncrypted(value: boolean ) {
+  public set kmsEncrypted(value: boolean | cdktf.IResolvable ) {
     this._kmsEncrypted = value;
   }
   public resetKmsEncrypted() {
@@ -208,11 +213,11 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -224,11 +229,11 @@ export class StoragegatewayCachedIscsiVolume extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

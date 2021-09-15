@@ -14,7 +14,7 @@ export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream.html#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}
   */
-  readonly enforceConsumerDeletion?: boolean;
+  readonly enforceConsumerDeletion?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream.html#kms_key_id KinesisStream#kms_key_id}
   */
@@ -38,11 +38,11 @@ export interface KinesisStreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream.html#tags KinesisStream#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream.html#tags_all KinesisStream#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -79,6 +79,11 @@ function kinesisStreamTimeoutsToTerraform(struct?: KinesisStreamTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesis_stream.html aws_kinesis_stream}
 */
 export class KinesisStream extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kinesis_stream";
 
   // ===========
   // INITIALIZER
@@ -140,11 +145,11 @@ export class KinesisStream extends cdktf.TerraformResource {
   }
 
   // enforce_consumer_deletion - computed: false, optional: true, required: false
-  private _enforceConsumerDeletion?: boolean;
+  private _enforceConsumerDeletion?: boolean | cdktf.IResolvable;
   public get enforceConsumerDeletion() {
     return this.getBooleanAttribute('enforce_consumer_deletion');
   }
-  public set enforceConsumerDeletion(value: boolean ) {
+  public set enforceConsumerDeletion(value: boolean | cdktf.IResolvable ) {
     this._enforceConsumerDeletion = value;
   }
   public resetEnforceConsumerDeletion() {
@@ -235,11 +240,11 @@ export class KinesisStream extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -251,11 +256,11 @@ export class KinesisStream extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

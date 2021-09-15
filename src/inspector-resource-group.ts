@@ -10,13 +10,18 @@ export interface InspectorResourceGroupConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_resource_group.html#tags InspectorResourceGroup#tags}
   */
-  readonly tags: { [key: string]: string };
+  readonly tags: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector_resource_group.html aws_inspector_resource_group}
 */
 export class InspectorResourceGroup extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_inspector_resource_group";
 
   // ===========
   // INITIALIZER
@@ -58,11 +63,11 @@ export class InspectorResourceGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: false, required: true
-  private _tags: { [key: string]: string };
+  private _tags: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   // Temporarily expose input value. Use with caution.

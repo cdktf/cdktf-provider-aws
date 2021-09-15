@@ -10,7 +10,7 @@ export interface DataAwsAvailabilityZonesConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/availability_zones.html#all_availability_zones DataAwsAvailabilityZones#all_availability_zones}
   */
-  readonly allAvailabilityZones?: boolean;
+  readonly allAvailabilityZones?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/availability_zones.html#exclude_names DataAwsAvailabilityZones#exclude_names}
   */
@@ -55,6 +55,11 @@ function dataAwsAvailabilityZonesFilterToTerraform(struct?: DataAwsAvailabilityZ
 */
 export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_availability_zones";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -89,11 +94,11 @@ export class DataAwsAvailabilityZones extends cdktf.TerraformDataSource {
   // ==========
 
   // all_availability_zones - computed: false, optional: true, required: false
-  private _allAvailabilityZones?: boolean;
+  private _allAvailabilityZones?: boolean | cdktf.IResolvable;
   public get allAvailabilityZones() {
     return this.getBooleanAttribute('all_availability_zones');
   }
-  public set allAvailabilityZones(value: boolean ) {
+  public set allAvailabilityZones(value: boolean | cdktf.IResolvable ) {
     this._allAvailabilityZones = value;
   }
   public resetAllAvailabilityZones() {

@@ -26,6 +26,11 @@ export interface ApiGatewayUsagePlanKeyConfig extends cdktf.TerraformMetaArgumen
 */
 export class ApiGatewayUsagePlanKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_usage_plan_key";
+
   // ===========
   // INITIALIZER
   // ===========

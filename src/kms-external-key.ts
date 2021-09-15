@@ -10,7 +10,7 @@ export interface KmsExternalKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#bypass_policy_lockout_safety_check KmsExternalKey#bypass_policy_lockout_safety_check}
   */
-  readonly bypassPolicyLockoutSafetyCheck?: boolean;
+  readonly bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#deletion_window_in_days KmsExternalKey#deletion_window_in_days}
   */
@@ -22,7 +22,7 @@ export interface KmsExternalKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#enabled KmsExternalKey#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#key_material_base64 KmsExternalKey#key_material_base64}
   */
@@ -34,11 +34,11 @@ export interface KmsExternalKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#tags KmsExternalKey#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#tags_all KmsExternalKey#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html#valid_to KmsExternalKey#valid_to}
   */
@@ -49,6 +49,11 @@ export interface KmsExternalKeyConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/kms_external_key.html aws_kms_external_key}
 */
 export class KmsExternalKey extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kms_external_key";
 
   // ===========
   // INITIALIZER
@@ -93,11 +98,11 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   }
 
   // bypass_policy_lockout_safety_check - computed: false, optional: true, required: false
-  private _bypassPolicyLockoutSafetyCheck?: boolean;
+  private _bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable;
   public get bypassPolicyLockoutSafetyCheck() {
     return this.getBooleanAttribute('bypass_policy_lockout_safety_check');
   }
-  public set bypassPolicyLockoutSafetyCheck(value: boolean ) {
+  public set bypassPolicyLockoutSafetyCheck(value: boolean | cdktf.IResolvable ) {
     this._bypassPolicyLockoutSafetyCheck = value;
   }
   public resetBypassPolicyLockoutSafetyCheck() {
@@ -141,11 +146,11 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean;
+  private _enabled?: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -209,11 +214,11 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -225,11 +230,11 @@ export class KmsExternalKey extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

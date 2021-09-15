@@ -14,7 +14,7 @@ export interface DataAwsVpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#default DataAwsVpc#default}
   */
-  readonly default?: boolean;
+  readonly default?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#dhcp_options_id DataAwsVpc#dhcp_options_id}
   */
@@ -26,7 +26,7 @@ export interface DataAwsVpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc.html#tags DataAwsVpc#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
@@ -75,6 +75,11 @@ function dataAwsVpcFilterToTerraform(struct?: DataAwsVpcFilter): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc.html aws_vpc}
 */
 export class DataAwsVpc extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc";
 
   // ===========
   // INITIALIZER
@@ -137,11 +142,11 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   }
 
   // default - computed: true, optional: true, required: false
-  private _default?: boolean;
+  private _default?: boolean | cdktf.IResolvable;
   public get default() {
     return this.getBooleanAttribute('default');
   }
-  public set default(value: boolean) {
+  public set default(value: boolean | cdktf.IResolvable) {
     this._default = value;
   }
   public resetDefault() {
@@ -225,11 +230,11 @@ export class DataAwsVpc extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

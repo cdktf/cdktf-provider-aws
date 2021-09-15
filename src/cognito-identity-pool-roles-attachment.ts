@@ -14,7 +14,7 @@ export interface CognitoIdentityPoolRolesAttachmentConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool_roles_attachment.html#roles CognitoIdentityPoolRolesAttachment#roles}
   */
-  readonly roles: { [key: string]: string };
+  readonly roles: { [key: string]: string } | cdktf.IResolvable;
   /**
   * role_mapping block
   * 
@@ -88,6 +88,11 @@ function cognitoIdentityPoolRolesAttachmentRoleMappingToTerraform(struct?: Cogni
 */
 export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_identity_pool_roles_attachment";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -138,11 +143,11 @@ export class CognitoIdentityPoolRolesAttachment extends cdktf.TerraformResource 
   }
 
   // roles - computed: false, optional: false, required: true
-  private _roles: { [key: string]: string };
+  private _roles: { [key: string]: string } | cdktf.IResolvable;
   public get roles() {
     return this.interpolationForAttribute('roles') as any;
   }
-  public set roles(value: { [key: string]: string }) {
+  public set roles(value: { [key: string]: string } | cdktf.IResolvable) {
     this._roles = value;
   }
   // Temporarily expose input value. Use with caution.

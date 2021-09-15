@@ -147,7 +147,7 @@ export interface SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParam
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task.html#cloudwatch_output_enabled SsmMaintenanceWindowTask#cloudwatch_output_enabled}
   */
-  readonly cloudwatchOutputEnabled?: boolean;
+  readonly cloudwatchOutputEnabled?: boolean | cdktf.IResolvable;
 }
 
 function ssmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfigToTerraform(struct?: SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersCloudwatchConfig): any {
@@ -332,6 +332,11 @@ function ssmMaintenanceWindowTaskTaskInvocationParametersToTerraform(struct?: Ss
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window_task.html aws_ssm_maintenance_window_task}
 */
 export class SsmMaintenanceWindowTask extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_maintenance_window_task";
 
   // ===========
   // INITIALIZER

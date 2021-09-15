@@ -22,6 +22,11 @@ export interface DataAwsIamRolesConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsIamRoles extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_roles";
+
   // ===========
   // INITIALIZER
   // ===========

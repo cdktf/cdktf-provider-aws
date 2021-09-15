@@ -68,7 +68,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean;
+  readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#key CloudwatchEventConnection#key}
   */
@@ -92,7 +92,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean;
+  readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#key CloudwatchEventConnection#key}
   */
@@ -116,7 +116,7 @@ export interface CloudwatchEventConnectionAuthParametersInvocationHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean;
+  readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#key CloudwatchEventConnection#key}
   */
@@ -189,7 +189,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean;
+  readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#key CloudwatchEventConnection#key}
   */
@@ -213,7 +213,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean;
+  readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#key CloudwatchEventConnection#key}
   */
@@ -237,7 +237,7 @@ export interface CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#is_value_secret CloudwatchEventConnection#is_value_secret}
   */
-  readonly isValueSecret?: boolean;
+  readonly isValueSecret?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html#key CloudwatchEventConnection#key}
   */
@@ -362,6 +362,11 @@ function cloudwatchEventConnectionAuthParametersToTerraform(struct?: CloudwatchE
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_connection.html aws_cloudwatch_event_connection}
 */
 export class CloudwatchEventConnection extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_connection";
 
   // ===========
   // INITIALIZER

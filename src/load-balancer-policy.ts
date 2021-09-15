@@ -51,6 +51,11 @@ function loadBalancerPolicyPolicyAttributeToTerraform(struct?: LoadBalancerPolic
 */
 export class LoadBalancerPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_load_balancer_policy";
+
   // ===========
   // INITIALIZER
   // ===========

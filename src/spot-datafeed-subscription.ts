@@ -22,6 +22,11 @@ export interface SpotDatafeedSubscriptionConfig extends cdktf.TerraformMetaArgum
 */
 export class SpotDatafeedSubscription extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_spot_datafeed_subscription";
+
   // ===========
   // INITIALIZER
   // ===========

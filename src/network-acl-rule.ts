@@ -14,7 +14,7 @@ export interface NetworkAclRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_acl_rule.html#egress NetworkAclRule#egress}
   */
-  readonly egress?: boolean;
+  readonly egress?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_acl_rule.html#from_port NetworkAclRule#from_port}
   */
@@ -57,6 +57,11 @@ export interface NetworkAclRuleConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/network_acl_rule.html aws_network_acl_rule}
 */
 export class NetworkAclRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_network_acl_rule";
 
   // ===========
   // INITIALIZER
@@ -114,11 +119,11 @@ export class NetworkAclRule extends cdktf.TerraformResource {
   }
 
   // egress - computed: false, optional: true, required: false
-  private _egress?: boolean;
+  private _egress?: boolean | cdktf.IResolvable;
   public get egress() {
     return this.getBooleanAttribute('egress');
   }
-  public set egress(value: boolean ) {
+  public set egress(value: boolean | cdktf.IResolvable ) {
     this._egress = value;
   }
   public resetEgress() {

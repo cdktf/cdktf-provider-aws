@@ -111,6 +111,11 @@ function glueSecurityConfigurationEncryptionConfigurationToTerraform(struct?: Gl
 */
 export class GlueSecurityConfiguration extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_security_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,6 +22,11 @@ export interface Route53RecoverycontrolconfigControlPanelConfig extends cdktf.Te
 */
 export class Route53RecoverycontrolconfigControlPanel extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53recoverycontrolconfig_control_panel";
+
   // ===========
   // INITIALIZER
   // ===========

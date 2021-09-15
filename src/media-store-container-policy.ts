@@ -22,6 +22,11 @@ export interface MediaStoreContainerPolicyConfig extends cdktf.TerraformMetaArgu
 */
 export class MediaStoreContainerPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_media_store_container_policy";
+
   // ===========
   // INITIALIZER
   // ===========

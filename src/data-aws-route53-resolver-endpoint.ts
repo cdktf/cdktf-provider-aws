@@ -43,6 +43,11 @@ function dataAwsRoute53ResolverEndpointFilterToTerraform(struct?: DataAwsRoute53
 */
 export class DataAwsRoute53ResolverEndpoint extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_resolver_endpoint";
+
   // ===========
   // INITIALIZER
   // ===========

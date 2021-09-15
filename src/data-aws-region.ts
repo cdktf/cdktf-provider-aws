@@ -22,6 +22,11 @@ export interface DataAwsRegionConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsRegion extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_region";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -42,11 +42,11 @@ export interface CognitoUserPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#tags CognitoUserPool#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#tags_all CognitoUserPool#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#username_attributes CognitoUserPool#username_attributes}
   */
@@ -187,7 +187,7 @@ export interface CognitoUserPoolAdminCreateUserConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#allow_admin_create_user_only CognitoUserPool#allow_admin_create_user_only}
   */
-  readonly allowAdminCreateUserOnly?: boolean;
+  readonly allowAdminCreateUserOnly?: boolean | cdktf.IResolvable;
   /**
   * invite_message_template block
   * 
@@ -208,11 +208,11 @@ export interface CognitoUserPoolDeviceConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#challenge_required_on_new_device CognitoUserPool#challenge_required_on_new_device}
   */
-  readonly challengeRequiredOnNewDevice?: boolean;
+  readonly challengeRequiredOnNewDevice?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#device_only_remembered_on_user_prompt CognitoUserPool#device_only_remembered_on_user_prompt}
   */
-  readonly deviceOnlyRememberedOnUserPrompt?: boolean;
+  readonly deviceOnlyRememberedOnUserPrompt?: boolean | cdktf.IResolvable;
 }
 
 function cognitoUserPoolDeviceConfigurationToTerraform(struct?: CognitoUserPoolDeviceConfiguration): any {
@@ -381,19 +381,19 @@ export interface CognitoUserPoolPasswordPolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#require_lowercase CognitoUserPool#require_lowercase}
   */
-  readonly requireLowercase?: boolean;
+  readonly requireLowercase?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#require_numbers CognitoUserPool#require_numbers}
   */
-  readonly requireNumbers?: boolean;
+  readonly requireNumbers?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#require_symbols CognitoUserPool#require_symbols}
   */
-  readonly requireSymbols?: boolean;
+  readonly requireSymbols?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#require_uppercase CognitoUserPool#require_uppercase}
   */
-  readonly requireUppercase?: boolean;
+  readonly requireUppercase?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#temporary_password_validity_days CognitoUserPool#temporary_password_validity_days}
   */
@@ -458,11 +458,11 @@ export interface CognitoUserPoolSchema {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#developer_only_attribute CognitoUserPool#developer_only_attribute}
   */
-  readonly developerOnlyAttribute?: boolean;
+  readonly developerOnlyAttribute?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#mutable CognitoUserPool#mutable}
   */
-  readonly mutable?: boolean;
+  readonly mutable?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#name CognitoUserPool#name}
   */
@@ -470,7 +470,7 @@ export interface CognitoUserPoolSchema {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#required CognitoUserPool#required}
   */
-  readonly required?: boolean;
+  readonly required?: boolean | cdktf.IResolvable;
   /**
   * number_attribute_constraints block
   * 
@@ -521,7 +521,7 @@ export interface CognitoUserPoolSoftwareTokenMfaConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#enabled CognitoUserPool#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
 }
 
 function cognitoUserPoolSoftwareTokenMfaConfigurationToTerraform(struct?: CognitoUserPoolSoftwareTokenMfaConfiguration): any {
@@ -549,7 +549,7 @@ export interface CognitoUserPoolUsernameConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html#case_sensitive CognitoUserPool#case_sensitive}
   */
-  readonly caseSensitive: boolean;
+  readonly caseSensitive: boolean | cdktf.IResolvable;
 }
 
 function cognitoUserPoolUsernameConfigurationToTerraform(struct?: CognitoUserPoolUsernameConfiguration): any {
@@ -603,6 +603,11 @@ function cognitoUserPoolVerificationMessageTemplateToTerraform(struct?: CognitoU
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool.html aws_cognito_user_pool}
 */
 export class CognitoUserPool extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_user_pool";
 
   // ===========
   // INITIALIZER
@@ -821,11 +826,11 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -837,11 +842,11 @@ export class CognitoUserPool extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

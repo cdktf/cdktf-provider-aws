@@ -26,19 +26,19 @@ export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment.html#tags Ec2TransitGatewayVpcAttachment#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment.html#tags_all Ec2TransitGatewayVpcAttachment#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment.html#transit_gateway_default_route_table_association Ec2TransitGatewayVpcAttachment#transit_gateway_default_route_table_association}
   */
-  readonly transitGatewayDefaultRouteTableAssociation?: boolean;
+  readonly transitGatewayDefaultRouteTableAssociation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment.html#transit_gateway_default_route_table_propagation Ec2TransitGatewayVpcAttachment#transit_gateway_default_route_table_propagation}
   */
-  readonly transitGatewayDefaultRouteTablePropagation?: boolean;
+  readonly transitGatewayDefaultRouteTablePropagation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment.html#transit_gateway_id Ec2TransitGatewayVpcAttachment#transit_gateway_id}
   */
@@ -53,6 +53,11 @@ export interface Ec2TransitGatewayVpcAttachmentConfig extends cdktf.TerraformMet
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_vpc_attachment.html aws_ec2_transit_gateway_vpc_attachment}
 */
 export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_transit_gateway_vpc_attachment";
 
   // ===========
   // INITIALIZER
@@ -159,11 +164,11 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -175,11 +180,11 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -191,11 +196,11 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   }
 
   // transit_gateway_default_route_table_association - computed: false, optional: true, required: false
-  private _transitGatewayDefaultRouteTableAssociation?: boolean;
+  private _transitGatewayDefaultRouteTableAssociation?: boolean | cdktf.IResolvable;
   public get transitGatewayDefaultRouteTableAssociation() {
     return this.getBooleanAttribute('transit_gateway_default_route_table_association');
   }
-  public set transitGatewayDefaultRouteTableAssociation(value: boolean ) {
+  public set transitGatewayDefaultRouteTableAssociation(value: boolean | cdktf.IResolvable ) {
     this._transitGatewayDefaultRouteTableAssociation = value;
   }
   public resetTransitGatewayDefaultRouteTableAssociation() {
@@ -207,11 +212,11 @@ export class Ec2TransitGatewayVpcAttachment extends cdktf.TerraformResource {
   }
 
   // transit_gateway_default_route_table_propagation - computed: false, optional: true, required: false
-  private _transitGatewayDefaultRouteTablePropagation?: boolean;
+  private _transitGatewayDefaultRouteTablePropagation?: boolean | cdktf.IResolvable;
   public get transitGatewayDefaultRouteTablePropagation() {
     return this.getBooleanAttribute('transit_gateway_default_route_table_propagation');
   }
-  public set transitGatewayDefaultRouteTablePropagation(value: boolean ) {
+  public set transitGatewayDefaultRouteTablePropagation(value: boolean | cdktf.IResolvable ) {
     this._transitGatewayDefaultRouteTablePropagation = value;
   }
   public resetTransitGatewayDefaultRouteTablePropagation() {

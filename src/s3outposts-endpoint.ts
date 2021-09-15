@@ -33,6 +33,11 @@ export class S3OutpostsEndpointNetworkInterfaces extends cdktf.ComplexComputedLi
 */
 export class S3OutpostsEndpoint extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3outposts_endpoint";
+
   // ===========
   // INITIALIZER
   // ===========

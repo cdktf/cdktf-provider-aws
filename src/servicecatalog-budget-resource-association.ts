@@ -22,6 +22,11 @@ export interface ServicecatalogBudgetResourceAssociationConfig extends cdktf.Ter
 */
 export class ServicecatalogBudgetResourceAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_budget_resource_association";
+
   // ===========
   // INITIALIZER
   // ===========

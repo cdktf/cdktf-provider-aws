@@ -26,6 +26,11 @@ export interface EcsTagConfig extends cdktf.TerraformMetaArguments {
 */
 export class EcsTag extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecs_tag";
+
   // ===========
   // INITIALIZER
   // ===========

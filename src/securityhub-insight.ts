@@ -2636,6 +2636,11 @@ function securityhubInsightFiltersToTerraform(struct?: SecurityhubInsightFilters
 */
 export class SecurityhubInsight extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_insight";
+
   // ===========
   // INITIALIZER
   // ===========

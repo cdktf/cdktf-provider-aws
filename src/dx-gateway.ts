@@ -47,6 +47,11 @@ function dxGatewayTimeoutsToTerraform(struct?: DxGatewayTimeouts): any {
 */
 export class DxGateway extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dx_gateway";
+
   // ===========
   // INITIALIZER
   // ===========

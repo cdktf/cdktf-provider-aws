@@ -18,7 +18,7 @@ export interface BudgetsBudgetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#cost_filters BudgetsBudget#cost_filters}
   */
-  readonly costFilters?: { [key: string]: string };
+  readonly costFilters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#limit_amount BudgetsBudget#limit_amount}
   */
@@ -89,47 +89,47 @@ export interface BudgetsBudgetCostTypes {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_credit BudgetsBudget#include_credit}
   */
-  readonly includeCredit?: boolean;
+  readonly includeCredit?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_discount BudgetsBudget#include_discount}
   */
-  readonly includeDiscount?: boolean;
+  readonly includeDiscount?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_other_subscription BudgetsBudget#include_other_subscription}
   */
-  readonly includeOtherSubscription?: boolean;
+  readonly includeOtherSubscription?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_recurring BudgetsBudget#include_recurring}
   */
-  readonly includeRecurring?: boolean;
+  readonly includeRecurring?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_refund BudgetsBudget#include_refund}
   */
-  readonly includeRefund?: boolean;
+  readonly includeRefund?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_subscription BudgetsBudget#include_subscription}
   */
-  readonly includeSubscription?: boolean;
+  readonly includeSubscription?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_support BudgetsBudget#include_support}
   */
-  readonly includeSupport?: boolean;
+  readonly includeSupport?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_tax BudgetsBudget#include_tax}
   */
-  readonly includeTax?: boolean;
+  readonly includeTax?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#include_upfront BudgetsBudget#include_upfront}
   */
-  readonly includeUpfront?: boolean;
+  readonly includeUpfront?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#use_amortized BudgetsBudget#use_amortized}
   */
-  readonly useAmortized?: boolean;
+  readonly useAmortized?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html#use_blended BudgetsBudget#use_blended}
   */
-  readonly useBlended?: boolean;
+  readonly useBlended?: boolean | cdktf.IResolvable;
 }
 
 function budgetsBudgetCostTypesToTerraform(struct?: BudgetsBudgetCostTypes): any {
@@ -193,6 +193,11 @@ function budgetsBudgetNotificationToTerraform(struct?: BudgetsBudgetNotification
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/budgets_budget.html aws_budgets_budget}
 */
 export class BudgetsBudget extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_budgets_budget";
 
   // ===========
   // INITIALIZER
@@ -270,11 +275,11 @@ export class BudgetsBudget extends cdktf.TerraformResource {
   }
 
   // cost_filters - computed: true, optional: true, required: false
-  private _costFilters?: { [key: string]: string }
-  public get costFilters(): { [key: string]: string } {
+  private _costFilters?: { [key: string]: string } | cdktf.IResolvable
+  public get costFilters(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('cost_filters') as any; // Getting the computed value is not yet implemented
   }
-  public set costFilters(value: { [key: string]: string }) {
+  public set costFilters(value: { [key: string]: string } | cdktf.IResolvable) {
     this._costFilters = value;
   }
   public resetCostFilters() {

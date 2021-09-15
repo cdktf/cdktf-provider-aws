@@ -22,6 +22,11 @@ export interface MskScramSecretAssociationConfig extends cdktf.TerraformMetaArgu
 */
 export class MskScramSecretAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_msk_scram_secret_association";
+
   // ===========
   // INITIALIZER
   // ===========

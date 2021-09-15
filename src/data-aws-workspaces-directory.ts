@@ -14,7 +14,7 @@ export interface DataAwsWorkspacesDirectoryConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/workspaces_directory.html#tags DataAwsWorkspacesDirectory#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 export class DataAwsWorkspacesDirectorySelfServicePermissions extends cdktf.ComplexComputedList {
 
@@ -118,6 +118,11 @@ export class DataAwsWorkspacesDirectoryWorkspaceCreationProperties extends cdktf
 */
 export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_workspaces_directory";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -217,11 +222,11 @@ export class DataAwsWorkspacesDirectory extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {

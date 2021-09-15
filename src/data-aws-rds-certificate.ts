@@ -10,13 +10,18 @@ export interface DataAwsRdsCertificateConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_certificate.html#latest_valid_till DataAwsRdsCertificate#latest_valid_till}
   */
-  readonly latestValidTill?: boolean;
+  readonly latestValidTill?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/rds_certificate.html aws_rds_certificate}
 */
 export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_rds_certificate";
 
   // ===========
   // INITIALIZER
@@ -73,11 +78,11 @@ export class DataAwsRdsCertificate extends cdktf.TerraformDataSource {
   }
 
   // latest_valid_till - computed: false, optional: true, required: false
-  private _latestValidTill?: boolean;
+  private _latestValidTill?: boolean | cdktf.IResolvable;
   public get latestValidTill() {
     return this.getBooleanAttribute('latest_valid_till');
   }
-  public set latestValidTill(value: boolean ) {
+  public set latestValidTill(value: boolean | cdktf.IResolvable ) {
     this._latestValidTill = value;
   }
   public resetLatestValidTill() {

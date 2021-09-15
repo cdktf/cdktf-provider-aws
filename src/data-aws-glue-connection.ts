@@ -35,6 +35,11 @@ export class DataAwsGlueConnectionPhysicalConnectionRequirements extends cdktf.C
 */
 export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_connection";
+
   // ===========
   // INITIALIZER
   // ===========

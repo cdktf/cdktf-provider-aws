@@ -26,6 +26,11 @@ export interface TransferSshKeyConfig extends cdktf.TerraformMetaArguments {
 */
 export class TransferSshKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_transfer_ssh_key";
+
   // ===========
   // INITIALIZER
   // ===========

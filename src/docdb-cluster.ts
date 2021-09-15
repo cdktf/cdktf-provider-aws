@@ -10,7 +10,7 @@ export interface DocdbClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#apply_immediately DocdbCluster#apply_immediately}
   */
-  readonly applyImmediately?: boolean;
+  readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#availability_zones DocdbCluster#availability_zones}
   */
@@ -42,7 +42,7 @@ export interface DocdbClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#deletion_protection DocdbCluster#deletion_protection}
   */
-  readonly deletionProtection?: boolean;
+  readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#enabled_cloudwatch_logs_exports DocdbCluster#enabled_cloudwatch_logs_exports}
   */
@@ -86,7 +86,7 @@ export interface DocdbClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#skip_final_snapshot DocdbCluster#skip_final_snapshot}
   */
-  readonly skipFinalSnapshot?: boolean;
+  readonly skipFinalSnapshot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#snapshot_identifier DocdbCluster#snapshot_identifier}
   */
@@ -94,15 +94,15 @@ export interface DocdbClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#storage_encrypted DocdbCluster#storage_encrypted}
   */
-  readonly storageEncrypted?: boolean;
+  readonly storageEncrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#tags DocdbCluster#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#tags_all DocdbCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html#vpc_security_group_ids DocdbCluster#vpc_security_group_ids}
   */
@@ -143,6 +143,11 @@ function docdbClusterTimeoutsToTerraform(struct?: DocdbClusterTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html aws_docdb_cluster}
 */
 export class DocdbCluster extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_docdb_cluster";
 
   // ===========
   // INITIALIZER
@@ -199,11 +204,11 @@ export class DocdbCluster extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean;
+  private _applyImmediately?: boolean | cdktf.IResolvable;
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | cdktf.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -337,11 +342,11 @@ export class DocdbCluster extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean;
+  private _deletionProtection?: boolean | cdktf.IResolvable;
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean ) {
+  public set deletionProtection(value: boolean | cdktf.IResolvable ) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -533,11 +538,11 @@ export class DocdbCluster extends cdktf.TerraformResource {
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
-  private _skipFinalSnapshot?: boolean;
+  private _skipFinalSnapshot?: boolean | cdktf.IResolvable;
   public get skipFinalSnapshot() {
     return this.getBooleanAttribute('skip_final_snapshot');
   }
-  public set skipFinalSnapshot(value: boolean ) {
+  public set skipFinalSnapshot(value: boolean | cdktf.IResolvable ) {
     this._skipFinalSnapshot = value;
   }
   public resetSkipFinalSnapshot() {
@@ -565,11 +570,11 @@ export class DocdbCluster extends cdktf.TerraformResource {
   }
 
   // storage_encrypted - computed: false, optional: true, required: false
-  private _storageEncrypted?: boolean;
+  private _storageEncrypted?: boolean | cdktf.IResolvable;
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean ) {
+  public set storageEncrypted(value: boolean | cdktf.IResolvable ) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {
@@ -581,11 +586,11 @@ export class DocdbCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -597,11 +602,11 @@ export class DocdbCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

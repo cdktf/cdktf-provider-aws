@@ -32,6 +32,11 @@ export class DataAwsLambdaCodeSigningConfigPolicies extends cdktf.ComplexCompute
 */
 export class DataAwsLambdaCodeSigningConfig extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_code_signing_config";
+
   // ===========
   // INITIALIZER
   // ===========

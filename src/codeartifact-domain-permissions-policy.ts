@@ -30,6 +30,11 @@ export interface CodeartifactDomainPermissionsPolicyConfig extends cdktf.Terrafo
 */
 export class CodeartifactDomainPermissionsPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codeartifact_domain_permissions_policy";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,6 +22,11 @@ export interface Route53HostedZoneDnssecConfig extends cdktf.TerraformMetaArgume
 */
 export class Route53HostedZoneDnssec extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_hosted_zone_dnssec";
+
   // ===========
   // INITIALIZER
   // ===========

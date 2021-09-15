@@ -14,7 +14,7 @@ export interface IamUserLoginProfileConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user_login_profile.html#password_reset_required IamUserLoginProfile#password_reset_required}
   */
-  readonly passwordResetRequired?: boolean;
+  readonly passwordResetRequired?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_user_login_profile.html#pgp_key IamUserLoginProfile#pgp_key}
   */
@@ -29,6 +29,11 @@ export interface IamUserLoginProfileConfig extends cdktf.TerraformMetaArguments 
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_user_login_profile.html aws_iam_user_login_profile}
 */
 export class IamUserLoginProfile extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_user_login_profile";
 
   // ===========
   // INITIALIZER
@@ -94,11 +99,11 @@ export class IamUserLoginProfile extends cdktf.TerraformResource {
   }
 
   // password_reset_required - computed: false, optional: true, required: false
-  private _passwordResetRequired?: boolean;
+  private _passwordResetRequired?: boolean | cdktf.IResolvable;
   public get passwordResetRequired() {
     return this.getBooleanAttribute('password_reset_required');
   }
-  public set passwordResetRequired(value: boolean ) {
+  public set passwordResetRequired(value: boolean | cdktf.IResolvable ) {
     this._passwordResetRequired = value;
   }
   public resetPasswordResetRequired() {

@@ -14,7 +14,7 @@ export interface ApprunnerCustomDomainAssociationConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_custom_domain_association.html#enable_www_subdomain ApprunnerCustomDomainAssociation#enable_www_subdomain}
   */
-  readonly enableWwwSubdomain?: boolean;
+  readonly enableWwwSubdomain?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_custom_domain_association.html#service_arn ApprunnerCustomDomainAssociation#service_arn}
   */
@@ -47,6 +47,11 @@ export class ApprunnerCustomDomainAssociationCertificateValidationRecords extend
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apprunner_custom_domain_association.html aws_apprunner_custom_domain_association}
 */
 export class ApprunnerCustomDomainAssociation extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apprunner_custom_domain_association";
 
   // ===========
   // INITIALIZER
@@ -103,11 +108,11 @@ export class ApprunnerCustomDomainAssociation extends cdktf.TerraformResource {
   }
 
   // enable_www_subdomain - computed: false, optional: true, required: false
-  private _enableWwwSubdomain?: boolean;
+  private _enableWwwSubdomain?: boolean | cdktf.IResolvable;
   public get enableWwwSubdomain() {
     return this.getBooleanAttribute('enable_www_subdomain');
   }
-  public set enableWwwSubdomain(value: boolean ) {
+  public set enableWwwSubdomain(value: boolean | cdktf.IResolvable ) {
     this._enableWwwSubdomain = value;
   }
   public resetEnableWwwSubdomain() {

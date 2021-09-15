@@ -29,6 +29,11 @@ export class DataAwsWafv2RegexPatternSetRegularExpression extends cdktf.ComplexC
 */
 export class DataAwsWafv2RegexPatternSet extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafv2_regex_pattern_set";
+
   // ===========
   // INITIALIZER
   // ===========

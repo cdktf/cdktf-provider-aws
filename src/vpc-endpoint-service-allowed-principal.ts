@@ -22,6 +22,11 @@ export interface VpcEndpointServiceAllowedPrincipalConfig extends cdktf.Terrafor
 */
 export class VpcEndpointServiceAllowedPrincipal extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_endpoint_service_allowed_principal";
+
   // ===========
   // INITIALIZER
   // ===========

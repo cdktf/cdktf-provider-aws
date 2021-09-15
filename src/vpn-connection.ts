@@ -14,7 +14,7 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection.html#enable_acceleration VpnConnection#enable_acceleration}
   */
-  readonly enableAcceleration?: boolean;
+  readonly enableAcceleration?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection.html#local_ipv4_network_cidr VpnConnection#local_ipv4_network_cidr}
   */
@@ -34,15 +34,15 @@ export interface VpnConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection.html#static_routes_only VpnConnection#static_routes_only}
   */
-  readonly staticRoutesOnly?: boolean;
+  readonly staticRoutesOnly?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection.html#tags VpnConnection#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection.html#tags_all VpnConnection#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection.html#transit_gateway_id VpnConnection#transit_gateway_id}
   */
@@ -254,6 +254,11 @@ export class VpnConnectionVgwTelemetry extends cdktf.ComplexComputedList {
 */
 export class VpnConnection extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpn_connection";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -355,11 +360,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // enable_acceleration - computed: true, optional: true, required: false
-  private _enableAcceleration?: boolean;
+  private _enableAcceleration?: boolean | cdktf.IResolvable;
   public get enableAcceleration() {
     return this.getBooleanAttribute('enable_acceleration');
   }
-  public set enableAcceleration(value: boolean) {
+  public set enableAcceleration(value: boolean | cdktf.IResolvable) {
     this._enableAcceleration = value;
   }
   public resetEnableAcceleration() {
@@ -445,11 +450,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // static_routes_only - computed: true, optional: true, required: false
-  private _staticRoutesOnly?: boolean;
+  private _staticRoutesOnly?: boolean | cdktf.IResolvable;
   public get staticRoutesOnly() {
     return this.getBooleanAttribute('static_routes_only');
   }
-  public set staticRoutesOnly(value: boolean) {
+  public set staticRoutesOnly(value: boolean | cdktf.IResolvable) {
     this._staticRoutesOnly = value;
   }
   public resetStaticRoutesOnly() {
@@ -461,11 +466,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -477,11 +482,11 @@ export class VpnConnection extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

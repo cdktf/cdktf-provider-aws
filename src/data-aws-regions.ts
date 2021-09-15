@@ -10,7 +10,7 @@ export interface DataAwsRegionsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/regions.html#all_regions DataAwsRegions#all_regions}
   */
-  readonly allRegions?: boolean;
+  readonly allRegions?: boolean | cdktf.IResolvable;
   /**
   * filter block
   * 
@@ -43,6 +43,11 @@ function dataAwsRegionsFilterToTerraform(struct?: DataAwsRegionsFilter): any {
 */
 export class DataAwsRegions extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_regions";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -74,11 +79,11 @@ export class DataAwsRegions extends cdktf.TerraformDataSource {
   // ==========
 
   // all_regions - computed: false, optional: true, required: false
-  private _allRegions?: boolean;
+  private _allRegions?: boolean | cdktf.IResolvable;
   public get allRegions() {
     return this.getBooleanAttribute('all_regions');
   }
-  public set allRegions(value: boolean ) {
+  public set allRegions(value: boolean | cdktf.IResolvable ) {
     this._allRegions = value;
   }
   public resetAllRegions() {

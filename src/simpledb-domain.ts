@@ -18,6 +18,11 @@ export interface SimpledbDomainConfig extends cdktf.TerraformMetaArguments {
 */
 export class SimpledbDomain extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_simpledb_domain";
+
   // ===========
   // INITIALIZER
   // ===========

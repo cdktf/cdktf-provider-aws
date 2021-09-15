@@ -26,6 +26,11 @@ export interface CognitoUserPoolDomainConfig extends cdktf.TerraformMetaArgument
 */
 export class CognitoUserPoolDomain extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_user_pool_domain";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,6 +22,11 @@ export interface DataAwsLexBotAliasConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsLexBotAlias extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lex_bot_alias";
+
   // ===========
   // INITIALIZER
   // ===========

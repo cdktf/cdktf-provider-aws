@@ -10,7 +10,7 @@ export interface IotCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate.html#active IotCertificate#active}
   */
-  readonly active: boolean;
+  readonly active: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate.html#csr IotCertificate#csr}
   */
@@ -21,6 +21,11 @@ export interface IotCertificateConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate.html aws_iot_certificate}
 */
 export class IotCertificate extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iot_certificate";
 
   // ===========
   // INITIALIZER
@@ -53,11 +58,11 @@ export class IotCertificate extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: false, required: true
-  private _active: boolean;
+  private _active: boolean | cdktf.IResolvable;
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean) {
+  public set active(value: boolean | cdktf.IResolvable) {
     this._active = value;
   }
   // Temporarily expose input value. Use with caution.

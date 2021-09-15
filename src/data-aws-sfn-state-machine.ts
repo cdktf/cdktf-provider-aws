@@ -18,6 +18,11 @@ export interface DataAwsSfnStateMachineConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataAwsSfnStateMachine extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sfn_state_machine";
+
   // ===========
   // INITIALIZER
   // ===========

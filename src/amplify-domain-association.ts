@@ -18,7 +18,7 @@ export interface AmplifyDomainAssociationConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/amplify_domain_association.html#wait_for_verification AmplifyDomainAssociation#wait_for_verification}
   */
-  readonly waitForVerification?: boolean;
+  readonly waitForVerification?: boolean | cdktf.IResolvable;
   /**
   * sub_domain block
   * 
@@ -50,6 +50,11 @@ function amplifyDomainAssociationSubDomainToTerraform(struct?: AmplifyDomainAsso
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/amplify_domain_association.html aws_amplify_domain_association}
 */
 export class AmplifyDomainAssociation extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_amplify_domain_association";
 
   // ===========
   // INITIALIZER
@@ -125,11 +130,11 @@ export class AmplifyDomainAssociation extends cdktf.TerraformResource {
   }
 
   // wait_for_verification - computed: false, optional: true, required: false
-  private _waitForVerification?: boolean;
+  private _waitForVerification?: boolean | cdktf.IResolvable;
   public get waitForVerification() {
     return this.getBooleanAttribute('wait_for_verification');
   }
-  public set waitForVerification(value: boolean ) {
+  public set waitForVerification(value: boolean | cdktf.IResolvable ) {
     this._waitForVerification = value;
   }
   public resetWaitForVerification() {

@@ -56,7 +56,7 @@ export interface DataAwsGlueScriptDagNodeArgs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_script.html#param DataAwsGlueScript#param}
   */
-  readonly param?: boolean;
+  readonly param?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_script.html#value DataAwsGlueScript#value}
   */
@@ -108,6 +108,11 @@ function dataAwsGlueScriptDagNodeToTerraform(struct?: DataAwsGlueScriptDagNode):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/glue_script.html aws_glue_script}
 */
 export class DataAwsGlueScript extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_script";
 
   // ===========
   // INITIALIZER

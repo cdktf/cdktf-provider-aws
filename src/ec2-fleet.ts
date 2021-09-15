@@ -14,23 +14,23 @@ export interface Ec2FleetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#replace_unhealthy_instances Ec2Fleet#replace_unhealthy_instances}
   */
-  readonly replaceUnhealthyInstances?: boolean;
+  readonly replaceUnhealthyInstances?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#tags Ec2Fleet#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#tags_all Ec2Fleet#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#terminate_instances Ec2Fleet#terminate_instances}
   */
-  readonly terminateInstances?: boolean;
+  readonly terminateInstances?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#terminate_instances_with_expiration Ec2Fleet#terminate_instances_with_expiration}
   */
-  readonly terminateInstancesWithExpiration?: boolean;
+  readonly terminateInstancesWithExpiration?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet.html#type Ec2Fleet#type}
   */
@@ -286,6 +286,11 @@ function ec2FleetTimeoutsToTerraform(struct?: Ec2FleetTimeouts): any {
 */
 export class Ec2Fleet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_fleet";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -348,11 +353,11 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // replace_unhealthy_instances - computed: false, optional: true, required: false
-  private _replaceUnhealthyInstances?: boolean;
+  private _replaceUnhealthyInstances?: boolean | cdktf.IResolvable;
   public get replaceUnhealthyInstances() {
     return this.getBooleanAttribute('replace_unhealthy_instances');
   }
-  public set replaceUnhealthyInstances(value: boolean ) {
+  public set replaceUnhealthyInstances(value: boolean | cdktf.IResolvable ) {
     this._replaceUnhealthyInstances = value;
   }
   public resetReplaceUnhealthyInstances() {
@@ -364,11 +369,11 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -380,11 +385,11 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -396,11 +401,11 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // terminate_instances - computed: false, optional: true, required: false
-  private _terminateInstances?: boolean;
+  private _terminateInstances?: boolean | cdktf.IResolvable;
   public get terminateInstances() {
     return this.getBooleanAttribute('terminate_instances');
   }
-  public set terminateInstances(value: boolean ) {
+  public set terminateInstances(value: boolean | cdktf.IResolvable ) {
     this._terminateInstances = value;
   }
   public resetTerminateInstances() {
@@ -412,11 +417,11 @@ export class Ec2Fleet extends cdktf.TerraformResource {
   }
 
   // terminate_instances_with_expiration - computed: false, optional: true, required: false
-  private _terminateInstancesWithExpiration?: boolean;
+  private _terminateInstancesWithExpiration?: boolean | cdktf.IResolvable;
   public get terminateInstancesWithExpiration() {
     return this.getBooleanAttribute('terminate_instances_with_expiration');
   }
-  public set terminateInstancesWithExpiration(value: boolean ) {
+  public set terminateInstancesWithExpiration(value: boolean | cdktf.IResolvable ) {
     this._terminateInstancesWithExpiration = value;
   }
   public resetTerminateInstancesWithExpiration() {

@@ -22,6 +22,11 @@ export interface CloudwatchLogResourcePolicyConfig extends cdktf.TerraformMetaAr
 */
 export class CloudwatchLogResourcePolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_log_resource_policy";
+
   // ===========
   // INITIALIZER
   // ===========

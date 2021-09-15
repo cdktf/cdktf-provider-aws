@@ -84,6 +84,11 @@ function configOrganizationManagedRuleTimeoutsToTerraform(struct?: ConfigOrganiz
 */
 export class ConfigOrganizationManagedRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_config_organization_managed_rule";
+
   // ===========
   // INITIALIZER
   // ===========

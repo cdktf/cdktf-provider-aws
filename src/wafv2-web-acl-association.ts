@@ -22,6 +22,11 @@ export interface Wafv2WebAclAssociationConfig extends cdktf.TerraformMetaArgumen
 */
 export class Wafv2WebAclAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafv2_web_acl_association";
+
   // ===========
   // INITIALIZER
   // ===========

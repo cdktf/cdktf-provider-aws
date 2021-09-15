@@ -10,7 +10,7 @@ export interface DataAwsIamServerCertificateConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_server_certificate.html#latest DataAwsIamServerCertificate#latest}
   */
-  readonly latest?: boolean;
+  readonly latest?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/iam_server_certificate.html#name DataAwsIamServerCertificate#name}
   */
@@ -29,6 +29,11 @@ export interface DataAwsIamServerCertificateConfig extends cdktf.TerraformMetaAr
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_server_certificate.html aws_iam_server_certificate}
 */
 export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_server_certificate";
 
   // ===========
   // INITIALIZER
@@ -88,11 +93,11 @@ export class DataAwsIamServerCertificate extends cdktf.TerraformDataSource {
   }
 
   // latest - computed: false, optional: true, required: false
-  private _latest?: boolean;
+  private _latest?: boolean | cdktf.IResolvable;
   public get latest() {
     return this.getBooleanAttribute('latest');
   }
-  public set latest(value: boolean ) {
+  public set latest(value: boolean | cdktf.IResolvable ) {
     this._latest = value;
   }
   public resetLatest() {

@@ -18,6 +18,11 @@ export interface DataAwsTransferServerConfig extends cdktf.TerraformMetaArgument
 */
 export class DataAwsTransferServer extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_transfer_server";
+
   // ===========
   // INITIALIZER
   // ===========

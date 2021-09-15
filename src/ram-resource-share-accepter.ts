@@ -43,6 +43,11 @@ function ramResourceShareAccepterTimeoutsToTerraform(struct?: RamResourceShareAc
 */
 export class RamResourceShareAccepter extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ram_resource_share_accepter";
+
   // ===========
   // INITIALIZER
   // ===========

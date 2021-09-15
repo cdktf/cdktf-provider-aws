@@ -10,7 +10,7 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#badge_enabled CodebuildProject#badge_enabled}
   */
-  readonly badgeEnabled?: boolean;
+  readonly badgeEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#build_timeout CodebuildProject#build_timeout}
   */
@@ -46,11 +46,11 @@ export interface CodebuildProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#tags CodebuildProject#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#tags_all CodebuildProject#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * artifacts block
   * 
@@ -120,7 +120,7 @@ export interface CodebuildProjectArtifacts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#encryption_disabled CodebuildProject#encryption_disabled}
   */
-  readonly encryptionDisabled?: boolean;
+  readonly encryptionDisabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#location CodebuildProject#location}
   */
@@ -136,7 +136,7 @@ export interface CodebuildProjectArtifacts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#override_artifact_name CodebuildProject#override_artifact_name}
   */
-  readonly overrideArtifactName?: boolean;
+  readonly overrideArtifactName?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#packaging CodebuildProject#packaging}
   */
@@ -189,7 +189,7 @@ export interface CodebuildProjectBuildBatchConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#combine_artifacts CodebuildProject#combine_artifacts}
   */
-  readonly combineArtifacts?: boolean;
+  readonly combineArtifacts?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#service_role CodebuildProject#service_role}
   */
@@ -303,7 +303,7 @@ export interface CodebuildProjectEnvironment {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#privileged_mode CodebuildProject#privileged_mode}
   */
-  readonly privilegedMode?: boolean;
+  readonly privilegedMode?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#type CodebuildProject#type}
   */
@@ -398,7 +398,7 @@ export interface CodebuildProjectLogsConfigS3Logs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#encryption_disabled CodebuildProject#encryption_disabled}
   */
-  readonly encryptionDisabled?: boolean;
+  readonly encryptionDisabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#location CodebuildProject#location}
   */
@@ -449,7 +449,7 @@ export interface CodebuildProjectSecondaryArtifacts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#encryption_disabled CodebuildProject#encryption_disabled}
   */
-  readonly encryptionDisabled?: boolean;
+  readonly encryptionDisabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#location CodebuildProject#location}
   */
@@ -465,7 +465,7 @@ export interface CodebuildProjectSecondaryArtifacts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#override_artifact_name CodebuildProject#override_artifact_name}
   */
-  readonly overrideArtifactName?: boolean;
+  readonly overrideArtifactName?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#packaging CodebuildProject#packaging}
   */
@@ -537,7 +537,7 @@ export interface CodebuildProjectSecondarySourcesGitSubmodulesConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#fetch_submodules CodebuildProject#fetch_submodules}
   */
-  readonly fetchSubmodules: boolean;
+  readonly fetchSubmodules: boolean | cdktf.IResolvable;
 }
 
 function codebuildProjectSecondarySourcesGitSubmodulesConfigToTerraform(struct?: CodebuildProjectSecondarySourcesGitSubmodulesConfig): any {
@@ -559,7 +559,7 @@ export interface CodebuildProjectSecondarySources {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#insecure_ssl CodebuildProject#insecure_ssl}
   */
-  readonly insecureSsl?: boolean;
+  readonly insecureSsl?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#location CodebuildProject#location}
   */
@@ -567,7 +567,7 @@ export interface CodebuildProjectSecondarySources {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#report_build_status CodebuildProject#report_build_status}
   */
-  readonly reportBuildStatus?: boolean;
+  readonly reportBuildStatus?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#source_identifier CodebuildProject#source_identifier}
   */
@@ -654,7 +654,7 @@ export interface CodebuildProjectSourceGitSubmodulesConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#fetch_submodules CodebuildProject#fetch_submodules}
   */
-  readonly fetchSubmodules: boolean;
+  readonly fetchSubmodules: boolean | cdktf.IResolvable;
 }
 
 function codebuildProjectSourceGitSubmodulesConfigToTerraform(struct?: CodebuildProjectSourceGitSubmodulesConfig): any {
@@ -676,7 +676,7 @@ export interface CodebuildProjectSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#insecure_ssl CodebuildProject#insecure_ssl}
   */
-  readonly insecureSsl?: boolean;
+  readonly insecureSsl?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#location CodebuildProject#location}
   */
@@ -684,7 +684,7 @@ export interface CodebuildProjectSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#report_build_status CodebuildProject#report_build_status}
   */
-  readonly reportBuildStatus?: boolean;
+  readonly reportBuildStatus?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_project.html#type CodebuildProject#type}
   */
@@ -754,6 +754,11 @@ function codebuildProjectVpcConfigToTerraform(struct?: CodebuildProjectVpcConfig
 */
 export class CodebuildProject extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codebuild_project";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -809,11 +814,11 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // badge_enabled - computed: false, optional: true, required: false
-  private _badgeEnabled?: boolean;
+  private _badgeEnabled?: boolean | cdktf.IResolvable;
   public get badgeEnabled() {
     return this.getBooleanAttribute('badge_enabled');
   }
-  public set badgeEnabled(value: boolean ) {
+  public set badgeEnabled(value: boolean | cdktf.IResolvable ) {
     this._badgeEnabled = value;
   }
   public resetBadgeEnabled() {
@@ -957,11 +962,11 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -973,11 +978,11 @@ export class CodebuildProject extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

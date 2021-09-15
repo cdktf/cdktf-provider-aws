@@ -34,6 +34,11 @@ export interface CloudwatchEventArchiveConfig extends cdktf.TerraformMetaArgumen
 */
 export class CloudwatchEventArchive extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_archive";
+
   // ===========
   // INITIALIZER
   // ===========

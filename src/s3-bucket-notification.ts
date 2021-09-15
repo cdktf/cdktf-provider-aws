@@ -138,6 +138,11 @@ function s3BucketNotificationTopicToTerraform(struct?: S3BucketNotificationTopic
 */
 export class S3BucketNotification extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_bucket_notification";
+
   // ===========
   // INITIALIZER
   // ===========

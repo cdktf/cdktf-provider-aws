@@ -22,6 +22,11 @@ export interface DataAwsWafv2IpSetConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsWafv2IpSet extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafv2_ip_set";
+
   // ===========
   // INITIALIZER
   // ===========

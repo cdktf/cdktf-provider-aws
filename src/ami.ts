@@ -18,7 +18,7 @@ export interface AmiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#ena_support Ami#ena_support}
   */
-  readonly enaSupport?: boolean;
+  readonly enaSupport?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#image_location Ami#image_location}
   */
@@ -46,11 +46,11 @@ export interface AmiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#tags Ami#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#tags_all Ami#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#virtualization_type Ami#virtualization_type}
   */
@@ -78,7 +78,7 @@ export interface AmiEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#delete_on_termination Ami#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#device_name Ami#device_name}
   */
@@ -86,7 +86,7 @@ export interface AmiEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#encrypted Ami#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami.html#iops Ami#iops}
   */
@@ -172,6 +172,11 @@ function amiTimeoutsToTerraform(struct?: AmiTimeouts): any {
 */
 export class Ami extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ami";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -253,11 +258,11 @@ export class Ami extends cdktf.TerraformResource {
   }
 
   // ena_support - computed: false, optional: true, required: false
-  private _enaSupport?: boolean;
+  private _enaSupport?: boolean | cdktf.IResolvable;
   public get enaSupport() {
     return this.getBooleanAttribute('ena_support');
   }
-  public set enaSupport(value: boolean ) {
+  public set enaSupport(value: boolean | cdktf.IResolvable ) {
     this._enaSupport = value;
   }
   public resetEnaSupport() {
@@ -412,11 +417,11 @@ export class Ami extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -428,11 +433,11 @@ export class Ami extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -22,6 +22,11 @@ export interface LightsailStaticIpAttachmentConfig extends cdktf.TerraformMetaAr
 */
 export class LightsailStaticIpAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lightsail_static_ip_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

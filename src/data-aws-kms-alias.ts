@@ -18,6 +18,11 @@ export interface DataAwsKmsAliasConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsKmsAlias extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kms_alias";
+
   // ===========
   // INITIALIZER
   // ===========

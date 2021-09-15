@@ -26,6 +26,11 @@ export interface Ec2TagConfig extends cdktf.TerraformMetaArguments {
 */
 export class Ec2Tag extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_tag";
+
   // ===========
   // INITIALIZER
   // ===========

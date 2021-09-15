@@ -18,6 +18,11 @@ export interface DataAwsRedshiftServiceAccountConfig extends cdktf.TerraformMeta
 */
 export class DataAwsRedshiftServiceAccount extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_redshift_service_account";
+
   // ===========
   // INITIALIZER
   // ===========

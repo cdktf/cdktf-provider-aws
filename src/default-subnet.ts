@@ -18,11 +18,11 @@ export interface DefaultSubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_subnet.html#map_customer_owned_ip_on_launch DefaultSubnet#map_customer_owned_ip_on_launch}
   */
-  readonly mapCustomerOwnedIpOnLaunch?: boolean;
+  readonly mapCustomerOwnedIpOnLaunch?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_subnet.html#map_public_ip_on_launch DefaultSubnet#map_public_ip_on_launch}
   */
-  readonly mapPublicIpOnLaunch?: boolean;
+  readonly mapPublicIpOnLaunch?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_subnet.html#outpost_arn DefaultSubnet#outpost_arn}
   */
@@ -30,11 +30,11 @@ export interface DefaultSubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_subnet.html#tags DefaultSubnet#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_subnet.html#tags_all DefaultSubnet#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -66,6 +66,11 @@ function defaultSubnetTimeoutsToTerraform(struct?: DefaultSubnetTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/default_subnet.html aws_default_subnet}
 */
 export class DefaultSubnet extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_default_subnet";
 
   // ===========
   // INITIALIZER
@@ -168,11 +173,11 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   }
 
   // map_customer_owned_ip_on_launch - computed: false, optional: true, required: false
-  private _mapCustomerOwnedIpOnLaunch?: boolean;
+  private _mapCustomerOwnedIpOnLaunch?: boolean | cdktf.IResolvable;
   public get mapCustomerOwnedIpOnLaunch() {
     return this.getBooleanAttribute('map_customer_owned_ip_on_launch');
   }
-  public set mapCustomerOwnedIpOnLaunch(value: boolean ) {
+  public set mapCustomerOwnedIpOnLaunch(value: boolean | cdktf.IResolvable ) {
     this._mapCustomerOwnedIpOnLaunch = value;
   }
   public resetMapCustomerOwnedIpOnLaunch() {
@@ -184,11 +189,11 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   }
 
   // map_public_ip_on_launch - computed: true, optional: true, required: false
-  private _mapPublicIpOnLaunch?: boolean;
+  private _mapPublicIpOnLaunch?: boolean | cdktf.IResolvable;
   public get mapPublicIpOnLaunch() {
     return this.getBooleanAttribute('map_public_ip_on_launch');
   }
-  public set mapPublicIpOnLaunch(value: boolean) {
+  public set mapPublicIpOnLaunch(value: boolean | cdktf.IResolvable) {
     this._mapPublicIpOnLaunch = value;
   }
   public resetMapPublicIpOnLaunch() {
@@ -221,11 +226,11 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -237,11 +242,11 @@ export class DefaultSubnet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

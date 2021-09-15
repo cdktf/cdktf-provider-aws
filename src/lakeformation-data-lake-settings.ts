@@ -76,6 +76,11 @@ function lakeformationDataLakeSettingsCreateTableDefaultPermissionsToTerraform(s
 */
 export class LakeformationDataLakeSettings extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lakeformation_data_lake_settings";
+
   // ===========
   // INITIALIZER
   // ===========

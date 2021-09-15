@@ -43,6 +43,11 @@ function wafGeoMatchSetGeoMatchConstraintToTerraform(struct?: WafGeoMatchSetGeoM
 */
 export class WafGeoMatchSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_geo_match_set";
+
   // ===========
   // INITIALIZER
   // ===========

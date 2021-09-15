@@ -26,6 +26,11 @@ export interface CloudfrontKeyGroupConfig extends cdktf.TerraformMetaArguments {
 */
 export class CloudfrontKeyGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_key_group";
+
   // ===========
   // INITIALIZER
   // ===========

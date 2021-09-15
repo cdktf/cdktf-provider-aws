@@ -18,6 +18,11 @@ export interface DataAwsMskConfigurationConfig extends cdktf.TerraformMetaArgume
 */
 export class DataAwsMskConfiguration extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_msk_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

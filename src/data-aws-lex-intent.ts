@@ -22,6 +22,11 @@ export interface DataAwsLexIntentConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsLexIntent extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lex_intent";
+
   // ===========
   // INITIALIZER
   // ===========

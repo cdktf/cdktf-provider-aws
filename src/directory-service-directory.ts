@@ -22,7 +22,7 @@ export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory.html#enable_sso DirectoryServiceDirectory#enable_sso}
   */
-  readonly enableSso?: boolean;
+  readonly enableSso?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory.html#name DirectoryServiceDirectory#name}
   */
@@ -42,11 +42,11 @@ export interface DirectoryServiceDirectoryConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory.html#tags DirectoryServiceDirectory#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory.html#tags_all DirectoryServiceDirectory#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory.html#type DirectoryServiceDirectory#type}
   */
@@ -117,6 +117,11 @@ function directoryServiceDirectoryVpcSettingsToTerraform(struct?: DirectoryServi
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory.html aws_directory_service_directory}
 */
 export class DirectoryServiceDirectory extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_directory_service_directory";
 
   // ===========
   // INITIALIZER
@@ -218,11 +223,11 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // enable_sso - computed: false, optional: true, required: false
-  private _enableSso?: boolean;
+  private _enableSso?: boolean | cdktf.IResolvable;
   public get enableSso() {
     return this.getBooleanAttribute('enable_sso');
   }
-  public set enableSso(value: boolean ) {
+  public set enableSso(value: boolean | cdktf.IResolvable ) {
     this._enableSso = value;
   }
   public resetEnableSso() {
@@ -302,11 +307,11 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -318,11 +323,11 @@ export class DirectoryServiceDirectory extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -34,7 +34,7 @@ export interface CloudwatchLogMetricFilterMetricTransformation {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html#dimensions CloudwatchLogMetricFilter#dimensions}
   */
-  readonly dimensions?: { [key: string]: string };
+  readonly dimensions?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html#name CloudwatchLogMetricFilter#name}
   */
@@ -70,6 +70,11 @@ function cloudwatchLogMetricFilterMetricTransformationToTerraform(struct?: Cloud
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_metric_filter.html aws_cloudwatch_log_metric_filter}
 */
 export class CloudwatchLogMetricFilter extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_log_metric_filter";
 
   // ===========
   // INITIALIZER

@@ -18,7 +18,7 @@ export interface Apigatewayv2RouteResponseConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response.html#response_models Apigatewayv2RouteResponse#response_models}
   */
-  readonly responseModels?: { [key: string]: string };
+  readonly responseModels?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response.html#route_id Apigatewayv2RouteResponse#route_id}
   */
@@ -33,6 +33,11 @@ export interface Apigatewayv2RouteResponseConfig extends cdktf.TerraformMetaArgu
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response.html aws_apigatewayv2_route_response}
 */
 export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_route_response";
 
   // ===========
   // INITIALIZER
@@ -102,11 +107,11 @@ export class Apigatewayv2RouteResponse extends cdktf.TerraformResource {
   }
 
   // response_models - computed: false, optional: true, required: false
-  private _responseModels?: { [key: string]: string };
+  private _responseModels?: { [key: string]: string } | cdktf.IResolvable;
   public get responseModels() {
     return this.interpolationForAttribute('response_models') as any;
   }
-  public set responseModels(value: { [key: string]: string } ) {
+  public set responseModels(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._responseModels = value;
   }
   public resetResponseModels() {

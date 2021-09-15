@@ -22,6 +22,11 @@ export interface DataAwsEcsContainerDefinitionConfig extends cdktf.TerraformMeta
 */
 export class DataAwsEcsContainerDefinition extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecs_container_definition";
+
   // ===========
   // INITIALIZER
   // ===========

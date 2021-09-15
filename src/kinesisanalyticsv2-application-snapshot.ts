@@ -22,6 +22,11 @@ export interface Kinesisanalyticsv2ApplicationSnapshotConfig extends cdktf.Terra
 */
 export class Kinesisanalyticsv2ApplicationSnapshot extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kinesisanalyticsv2_application_snapshot";
+
   // ===========
   // INITIALIZER
   // ===========

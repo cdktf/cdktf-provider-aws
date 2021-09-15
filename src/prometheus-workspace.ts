@@ -18,6 +18,11 @@ export interface PrometheusWorkspaceConfig extends cdktf.TerraformMetaArguments 
 */
 export class PrometheusWorkspace extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_prometheus_workspace";
+
   // ===========
   // INITIALIZER
   // ===========

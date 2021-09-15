@@ -30,6 +30,11 @@ export interface Ec2ClientVpnRouteConfig extends cdktf.TerraformMetaArguments {
 */
 export class Ec2ClientVpnRoute extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_client_vpn_route";
+
   // ===========
   // INITIALIZER
   // ===========

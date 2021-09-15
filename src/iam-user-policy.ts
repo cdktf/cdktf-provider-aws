@@ -30,6 +30,11 @@ export interface IamUserPolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class IamUserPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_user_policy";
+
   // ===========
   // INITIALIZER
   // ===========

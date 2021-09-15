@@ -14,6 +14,11 @@ export interface DataAwsEbsEncryptionByDefaultConfig extends cdktf.TerraformMeta
 */
 export class DataAwsEbsEncryptionByDefault extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ebs_encryption_by_default";
+
   // ===========
   // INITIALIZER
   // ===========

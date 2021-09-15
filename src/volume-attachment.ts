@@ -14,7 +14,7 @@ export interface VolumeAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment.html#force_detach VolumeAttachment#force_detach}
   */
-  readonly forceDetach?: boolean;
+  readonly forceDetach?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment.html#instance_id VolumeAttachment#instance_id}
   */
@@ -22,7 +22,7 @@ export interface VolumeAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment.html#skip_destroy VolumeAttachment#skip_destroy}
   */
-  readonly skipDestroy?: boolean;
+  readonly skipDestroy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment.html#volume_id VolumeAttachment#volume_id}
   */
@@ -33,6 +33,11 @@ export interface VolumeAttachmentConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment.html aws_volume_attachment}
 */
 export class VolumeAttachment extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_volume_attachment";
 
   // ===========
   // INITIALIZER
@@ -81,11 +86,11 @@ export class VolumeAttachment extends cdktf.TerraformResource {
   }
 
   // force_detach - computed: false, optional: true, required: false
-  private _forceDetach?: boolean;
+  private _forceDetach?: boolean | cdktf.IResolvable;
   public get forceDetach() {
     return this.getBooleanAttribute('force_detach');
   }
-  public set forceDetach(value: boolean ) {
+  public set forceDetach(value: boolean | cdktf.IResolvable ) {
     this._forceDetach = value;
   }
   public resetForceDetach() {
@@ -115,11 +120,11 @@ export class VolumeAttachment extends cdktf.TerraformResource {
   }
 
   // skip_destroy - computed: false, optional: true, required: false
-  private _skipDestroy?: boolean;
+  private _skipDestroy?: boolean | cdktf.IResolvable;
   public get skipDestroy() {
     return this.getBooleanAttribute('skip_destroy');
   }
-  public set skipDestroy(value: boolean ) {
+  public set skipDestroy(value: boolean | cdktf.IResolvable ) {
     this._skipDestroy = value;
   }
   public resetSkipDestroy() {

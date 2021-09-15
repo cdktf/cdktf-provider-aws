@@ -196,6 +196,11 @@ function budgetsBudgetActionSubscriberToTerraform(struct?: BudgetsBudgetActionSu
 */
 export class BudgetsBudgetAction extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_budgets_budget_action";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -18,6 +18,11 @@ export interface EcrRegistryPolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class EcrRegistryPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecr_registry_policy";
+
   // ===========
   // INITIALIZER
   // ===========

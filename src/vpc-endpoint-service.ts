@@ -10,7 +10,7 @@ export interface VpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service.html#acceptance_required VpcEndpointService#acceptance_required}
   */
-  readonly acceptanceRequired: boolean;
+  readonly acceptanceRequired: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service.html#allowed_principals VpcEndpointService#allowed_principals}
   */
@@ -30,11 +30,11 @@ export interface VpcEndpointServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service.html#tags VpcEndpointService#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service.html#tags_all VpcEndpointService#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 export class VpcEndpointServicePrivateDnsNameConfiguration extends cdktf.ComplexComputedList {
 
@@ -63,6 +63,11 @@ export class VpcEndpointServicePrivateDnsNameConfiguration extends cdktf.Complex
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_service.html aws_vpc_endpoint_service}
 */
 export class VpcEndpointService extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_endpoint_service";
 
   // ===========
   // INITIALIZER
@@ -100,11 +105,11 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   // ==========
 
   // acceptance_required - computed: false, optional: false, required: true
-  private _acceptanceRequired: boolean;
+  private _acceptanceRequired: boolean | cdktf.IResolvable;
   public get acceptanceRequired() {
     return this.getBooleanAttribute('acceptance_required');
   }
-  public set acceptanceRequired(value: boolean) {
+  public set acceptanceRequired(value: boolean | cdktf.IResolvable) {
     this._acceptanceRequired = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -222,11 +227,11 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -238,11 +243,11 @@ export class VpcEndpointService extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

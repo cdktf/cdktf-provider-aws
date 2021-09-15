@@ -18,7 +18,7 @@ export interface DataAwsKmsSecretSecret {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html#context DataAwsKmsSecret#context}
   */
-  readonly context?: { [key: string]: string };
+  readonly context?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html#grant_tokens DataAwsKmsSecret#grant_tokens}
   */
@@ -48,6 +48,11 @@ function dataAwsKmsSecretSecretToTerraform(struct?: DataAwsKmsSecretSecret): any
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_secret.html aws_kms_secret}
 */
 export class DataAwsKmsSecret extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kms_secret";
 
   // ===========
   // INITIALIZER

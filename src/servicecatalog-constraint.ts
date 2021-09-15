@@ -38,6 +38,11 @@ export interface ServicecatalogConstraintConfig extends cdktf.TerraformMetaArgum
 */
 export class ServicecatalogConstraint extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_constraint";
+
   // ===========
   // INITIALIZER
   // ===========

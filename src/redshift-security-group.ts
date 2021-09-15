@@ -52,6 +52,11 @@ function redshiftSecurityGroupIngressToTerraform(struct?: RedshiftSecurityGroupI
 */
 export class RedshiftSecurityGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_redshift_security_group";
+
   // ===========
   // INITIALIZER
   // ===========

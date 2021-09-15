@@ -26,6 +26,11 @@ export interface DataAwsCodeartifactAuthorizationTokenConfig extends cdktf.Terra
 */
 export class DataAwsCodeartifactAuthorizationToken extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codeartifact_authorization_token";
+
   // ===========
   // INITIALIZER
   // ===========

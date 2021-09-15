@@ -26,15 +26,15 @@ export interface SsmDocumentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document.html#permissions SsmDocument#permissions}
   */
-  readonly permissions?: { [key: string]: string };
+  readonly permissions?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document.html#tags SsmDocument#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document.html#tags_all SsmDocument#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_document.html#target_type SsmDocument#target_type}
   */
@@ -101,6 +101,11 @@ function ssmDocumentAttachmentsSourceToTerraform(struct?: SsmDocumentAttachments
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_document.html aws_ssm_document}
 */
 export class SsmDocument extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_document";
 
   // ===========
   // INITIALIZER
@@ -251,11 +256,11 @@ export class SsmDocument extends cdktf.TerraformResource {
   }
 
   // permissions - computed: false, optional: true, required: false
-  private _permissions?: { [key: string]: string };
+  private _permissions?: { [key: string]: string } | cdktf.IResolvable;
   public get permissions() {
     return this.interpolationForAttribute('permissions') as any;
   }
-  public set permissions(value: { [key: string]: string } ) {
+  public set permissions(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._permissions = value;
   }
   public resetPermissions() {
@@ -282,11 +287,11 @@ export class SsmDocument extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -298,11 +303,11 @@ export class SsmDocument extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

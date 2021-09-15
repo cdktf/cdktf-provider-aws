@@ -40,6 +40,11 @@ export class DataAwsIamGroupUsers extends cdktf.ComplexComputedList {
 */
 export class DataAwsIamGroup extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_group";
+
   // ===========
   // INITIALIZER
   // ===========

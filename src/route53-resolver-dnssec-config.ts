@@ -18,6 +18,11 @@ export interface Route53ResolverDnssecConfigConfig extends cdktf.TerraformMetaAr
 */
 export class Route53ResolverDnssecConfig extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_resolver_dnssec_config";
+
   // ===========
   // INITIALIZER
   // ===========

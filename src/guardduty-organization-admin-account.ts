@@ -18,6 +18,11 @@ export interface GuarddutyOrganizationAdminAccountConfig extends cdktf.Terraform
 */
 export class GuarddutyOrganizationAdminAccount extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_guardduty_organization_admin_account";
+
   // ===========
   // INITIALIZER
   // ===========

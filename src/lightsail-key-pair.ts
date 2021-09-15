@@ -30,6 +30,11 @@ export interface LightsailKeyPairConfig extends cdktf.TerraformMetaArguments {
 */
 export class LightsailKeyPair extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lightsail_key_pair";
+
   // ===========
   // INITIALIZER
   // ===========

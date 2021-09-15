@@ -14,11 +14,11 @@ export interface LambdaEventSourceMappingConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}
   */
-  readonly bisectBatchOnFunctionError?: boolean;
+  readonly bisectBatchOnFunctionError?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#enabled LambdaEventSourceMapping#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#event_source_arn LambdaEventSourceMapping#event_source_arn}
   */
@@ -120,7 +120,7 @@ export interface LambdaEventSourceMappingSelfManagedEventSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html#endpoints LambdaEventSourceMapping#endpoints}
   */
-  readonly endpoints: { [key: string]: string };
+  readonly endpoints: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function lambdaEventSourceMappingSelfManagedEventSourceToTerraform(struct?: LambdaEventSourceMappingSelfManagedEventSource): any {
@@ -154,6 +154,11 @@ function lambdaEventSourceMappingSourceAccessConfigurationToTerraform(struct?: L
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping.html aws_lambda_event_source_mapping}
 */
 export class LambdaEventSourceMapping extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_event_source_mapping";
 
   // ===========
   // INITIALIZER
@@ -218,11 +223,11 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // bisect_batch_on_function_error - computed: false, optional: true, required: false
-  private _bisectBatchOnFunctionError?: boolean;
+  private _bisectBatchOnFunctionError?: boolean | cdktf.IResolvable;
   public get bisectBatchOnFunctionError() {
     return this.getBooleanAttribute('bisect_batch_on_function_error');
   }
-  public set bisectBatchOnFunctionError(value: boolean ) {
+  public set bisectBatchOnFunctionError(value: boolean | cdktf.IResolvable ) {
     this._bisectBatchOnFunctionError = value;
   }
   public resetBisectBatchOnFunctionError() {
@@ -234,11 +239,11 @@ export class LambdaEventSourceMapping extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean;
+  private _enabled?: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | cdktf.IResolvable ) {
     this._enabled = value;
   }
   public resetEnabled() {

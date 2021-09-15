@@ -42,7 +42,7 @@ export interface Route53RecoverycontrolconfigSafetyRuleRuleConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_safety_rule.html#inverted Route53RecoverycontrolconfigSafetyRule#inverted}
   */
-  readonly inverted: boolean;
+  readonly inverted: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_safety_rule.html#threshold Route53RecoverycontrolconfigSafetyRule#threshold}
   */
@@ -67,6 +67,11 @@ function route53RecoverycontrolconfigSafetyRuleRuleConfigToTerraform(struct?: Ro
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_safety_rule.html aws_route53recoverycontrolconfig_safety_rule}
 */
 export class Route53RecoverycontrolconfigSafetyRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53recoverycontrolconfig_safety_rule";
 
   // ===========
   // INITIALIZER

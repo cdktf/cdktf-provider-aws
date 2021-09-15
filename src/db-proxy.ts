@@ -10,7 +10,7 @@ export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy.html#debug_logging DbProxy#debug_logging}
   */
-  readonly debugLogging?: boolean;
+  readonly debugLogging?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy.html#engine_family DbProxy#engine_family}
   */
@@ -26,7 +26,7 @@ export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy.html#require_tls DbProxy#require_tls}
   */
-  readonly requireTls?: boolean;
+  readonly requireTls?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy.html#role_arn DbProxy#role_arn}
   */
@@ -34,11 +34,11 @@ export interface DbProxyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy.html#tags DbProxy#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy.html#tags_all DbProxy#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_proxy.html#vpc_security_group_ids DbProxy#vpc_security_group_ids}
   */
@@ -119,6 +119,11 @@ function dbProxyTimeoutsToTerraform(struct?: DbProxyTimeouts): any {
 */
 export class DbProxy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_db_proxy";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -165,11 +170,11 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // debug_logging - computed: false, optional: true, required: false
-  private _debugLogging?: boolean;
+  private _debugLogging?: boolean | cdktf.IResolvable;
   public get debugLogging() {
     return this.getBooleanAttribute('debug_logging');
   }
-  public set debugLogging(value: boolean ) {
+  public set debugLogging(value: boolean | cdktf.IResolvable ) {
     this._debugLogging = value;
   }
   public resetDebugLogging() {
@@ -233,11 +238,11 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // require_tls - computed: false, optional: true, required: false
-  private _requireTls?: boolean;
+  private _requireTls?: boolean | cdktf.IResolvable;
   public get requireTls() {
     return this.getBooleanAttribute('require_tls');
   }
-  public set requireTls(value: boolean ) {
+  public set requireTls(value: boolean | cdktf.IResolvable ) {
     this._requireTls = value;
   }
   public resetRequireTls() {
@@ -262,11 +267,11 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -278,11 +283,11 @@ export class DbProxy extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

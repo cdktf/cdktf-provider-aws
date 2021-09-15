@@ -10,7 +10,7 @@ export interface SignerSigningJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}
   */
-  readonly ignoreSigningJobFailure?: boolean;
+  readonly ignoreSigningJobFailure?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/signer_signing_job.html#profile_name SignerSigningJob#profile_name}
   */
@@ -145,6 +145,11 @@ function signerSigningJobSourceToTerraform(struct?: SignerSigningJobSource): any
 */
 export class SignerSigningJob extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_signer_signing_job";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -193,11 +198,11 @@ export class SignerSigningJob extends cdktf.TerraformResource {
   }
 
   // ignore_signing_job_failure - computed: false, optional: true, required: false
-  private _ignoreSigningJobFailure?: boolean;
+  private _ignoreSigningJobFailure?: boolean | cdktf.IResolvable;
   public get ignoreSigningJobFailure() {
     return this.getBooleanAttribute('ignore_signing_job_failure');
   }
-  public set ignoreSigningJobFailure(value: boolean ) {
+  public set ignoreSigningJobFailure(value: boolean | cdktf.IResolvable ) {
     this._ignoreSigningJobFailure = value;
   }
   public resetIgnoreSigningJobFailure() {

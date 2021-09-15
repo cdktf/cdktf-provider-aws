@@ -30,6 +30,11 @@ export interface GuarddutyPublishingDestinationConfig extends cdktf.TerraformMet
 */
 export class GuarddutyPublishingDestination extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_guardduty_publishing_destination";
+
   // ===========
   // INITIALIZER
   // ===========

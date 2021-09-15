@@ -26,6 +26,11 @@ export interface PinpointEventStreamConfig extends cdktf.TerraformMetaArguments 
 */
 export class PinpointEventStream extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_pinpoint_event_stream";
+
   // ===========
   // INITIALIZER
   // ===========

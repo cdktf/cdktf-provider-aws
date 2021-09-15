@@ -10,7 +10,7 @@ export interface ConfigConfigurationRecorderStatusConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder_status.html#is_enabled ConfigConfigurationRecorderStatus#is_enabled}
   */
-  readonly isEnabled: boolean;
+  readonly isEnabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder_status.html#name ConfigConfigurationRecorderStatus#name}
   */
@@ -21,6 +21,11 @@ export interface ConfigConfigurationRecorderStatusConfig extends cdktf.Terraform
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder_status.html aws_config_configuration_recorder_status}
 */
 export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_config_configuration_recorder_status";
 
   // ===========
   // INITIALIZER
@@ -58,11 +63,11 @@ export class ConfigConfigurationRecorderStatus extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: false, required: true
-  private _isEnabled: boolean;
+  private _isEnabled: boolean | cdktf.IResolvable;
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   // Temporarily expose input value. Use with caution.

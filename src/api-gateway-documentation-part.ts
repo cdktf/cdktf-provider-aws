@@ -62,6 +62,11 @@ function apiGatewayDocumentationPartLocationToTerraform(struct?: ApiGatewayDocum
 */
 export class ApiGatewayDocumentationPart extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_documentation_part";
+
   // ===========
   // INITIALIZER
   // ===========

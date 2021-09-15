@@ -58,6 +58,11 @@ export interface SnsPlatformApplicationConfig extends cdktf.TerraformMetaArgumen
 */
 export class SnsPlatformApplication extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sns_platform_application";
+
   // ===========
   // INITIALIZER
   // ===========

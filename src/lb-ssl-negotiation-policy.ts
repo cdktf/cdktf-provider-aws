@@ -51,6 +51,11 @@ function lbSslNegotiationPolicyAttributeToTerraform(struct?: LbSslNegotiationPol
 */
 export class LbSslNegotiationPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lb_ssl_negotiation_policy";
+
   // ===========
   // INITIALIZER
   // ===========

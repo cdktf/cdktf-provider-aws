@@ -22,6 +22,11 @@ export interface SnapshotCreateVolumePermissionConfig extends cdktf.TerraformMet
 */
 export class SnapshotCreateVolumePermission extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_snapshot_create_volume_permission";
+
   // ===========
   // INITIALIZER
   // ===========

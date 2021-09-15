@@ -14,7 +14,7 @@ export interface Kinesisanalyticsv2ApplicationConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#force_stop Kinesisanalyticsv2Application#force_stop}
   */
-  readonly forceStop?: boolean;
+  readonly forceStop?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#name Kinesisanalyticsv2Application#name}
   */
@@ -30,15 +30,15 @@ export interface Kinesisanalyticsv2ApplicationConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#start_application Kinesisanalyticsv2Application#start_application}
   */
-  readonly startApplication?: boolean;
+  readonly startApplication?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#tags Kinesisanalyticsv2Application#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#tags_all Kinesisanalyticsv2Application#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * application_configuration block
   * 
@@ -122,7 +122,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationApplicatio
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#snapshots_enabled Kinesisanalyticsv2Application#snapshots_enabled}
   */
-  readonly snapshotsEnabled: boolean;
+  readonly snapshotsEnabled: boolean | cdktf.IResolvable;
 }
 
 function kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationSnapshotConfiguration): any {
@@ -140,7 +140,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#property_map Kinesisanalyticsv2Application#property_map}
   */
-  readonly propertyMap: { [key: string]: string };
+  readonly propertyMap: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroupToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup): any {
@@ -175,7 +175,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkAppli
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#checkpointing_enabled Kinesisanalyticsv2Application#checkpointing_enabled}
   */
-  readonly checkpointingEnabled?: boolean;
+  readonly checkpointingEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#configuration_type Kinesisanalyticsv2Application#configuration_type}
   */
@@ -224,7 +224,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationFlinkAppli
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#auto_scaling_enabled Kinesisanalyticsv2Application#auto_scaling_enabled}
   */
-  readonly autoScalingEnabled?: boolean;
+  readonly autoScalingEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#configuration_type Kinesisanalyticsv2Application#configuration_type}
   */
@@ -302,7 +302,7 @@ export interface Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application.html#allow_non_restored_state Kinesisanalyticsv2Application#allow_non_restored_state}
   */
-  readonly allowNonRestoredState?: boolean;
+  readonly allowNonRestoredState?: boolean | cdktf.IResolvable;
 }
 
 function kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfigurationToTerraform(struct?: Kinesisanalyticsv2ApplicationApplicationConfigurationRunConfigurationFlinkRunConfiguration): any {
@@ -1007,6 +1007,11 @@ function kinesisanalyticsv2ApplicationCloudwatchLoggingOptionsToTerraform(struct
 */
 export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kinesisanalyticsv2_application";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -1072,11 +1077,11 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // force_stop - computed: false, optional: true, required: false
-  private _forceStop?: boolean;
+  private _forceStop?: boolean | cdktf.IResolvable;
   public get forceStop() {
     return this.getBooleanAttribute('force_stop');
   }
-  public set forceStop(value: boolean ) {
+  public set forceStop(value: boolean | cdktf.IResolvable ) {
     this._forceStop = value;
   }
   public resetForceStop() {
@@ -1137,11 +1142,11 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // start_application - computed: false, optional: true, required: false
-  private _startApplication?: boolean;
+  private _startApplication?: boolean | cdktf.IResolvable;
   public get startApplication() {
     return this.getBooleanAttribute('start_application');
   }
-  public set startApplication(value: boolean ) {
+  public set startApplication(value: boolean | cdktf.IResolvable ) {
     this._startApplication = value;
   }
   public resetStartApplication() {
@@ -1158,11 +1163,11 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -1174,11 +1179,11 @@ export class Kinesisanalyticsv2Application extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

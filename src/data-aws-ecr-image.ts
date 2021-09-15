@@ -30,6 +30,11 @@ export interface DataAwsEcrImageConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsEcrImage extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecr_image";
+
   // ===========
   // INITIALIZER
   // ===========

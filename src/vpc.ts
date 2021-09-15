@@ -10,7 +10,7 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#assign_generated_ipv6_cidr_block Vpc#assign_generated_ipv6_cidr_block}
   */
-  readonly assignGeneratedIpv6CidrBlock?: boolean;
+  readonly assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#cidr_block Vpc#cidr_block}
   */
@@ -18,19 +18,19 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#enable_classiclink Vpc#enable_classiclink}
   */
-  readonly enableClassiclink?: boolean;
+  readonly enableClassiclink?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#enable_classiclink_dns_support Vpc#enable_classiclink_dns_support}
   */
-  readonly enableClassiclinkDnsSupport?: boolean;
+  readonly enableClassiclinkDnsSupport?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#enable_dns_hostnames Vpc#enable_dns_hostnames}
   */
-  readonly enableDnsHostnames?: boolean;
+  readonly enableDnsHostnames?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#enable_dns_support Vpc#enable_dns_support}
   */
-  readonly enableDnsSupport?: boolean;
+  readonly enableDnsSupport?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#instance_tenancy Vpc#instance_tenancy}
   */
@@ -38,17 +38,22 @@ export interface VpcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#tags Vpc#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#tags_all Vpc#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc.html aws_vpc}
 */
 export class Vpc extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc";
 
   // ===========
   // INITIALIZER
@@ -93,11 +98,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // assign_generated_ipv6_cidr_block - computed: false, optional: true, required: false
-  private _assignGeneratedIpv6CidrBlock?: boolean;
+  private _assignGeneratedIpv6CidrBlock?: boolean | cdktf.IResolvable;
   public get assignGeneratedIpv6CidrBlock() {
     return this.getBooleanAttribute('assign_generated_ipv6_cidr_block');
   }
-  public set assignGeneratedIpv6CidrBlock(value: boolean ) {
+  public set assignGeneratedIpv6CidrBlock(value: boolean | cdktf.IResolvable ) {
     this._assignGeneratedIpv6CidrBlock = value;
   }
   public resetAssignGeneratedIpv6CidrBlock() {
@@ -142,11 +147,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // enable_classiclink - computed: true, optional: true, required: false
-  private _enableClassiclink?: boolean;
+  private _enableClassiclink?: boolean | cdktf.IResolvable;
   public get enableClassiclink() {
     return this.getBooleanAttribute('enable_classiclink');
   }
-  public set enableClassiclink(value: boolean) {
+  public set enableClassiclink(value: boolean | cdktf.IResolvable) {
     this._enableClassiclink = value;
   }
   public resetEnableClassiclink() {
@@ -158,11 +163,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // enable_classiclink_dns_support - computed: true, optional: true, required: false
-  private _enableClassiclinkDnsSupport?: boolean;
+  private _enableClassiclinkDnsSupport?: boolean | cdktf.IResolvable;
   public get enableClassiclinkDnsSupport() {
     return this.getBooleanAttribute('enable_classiclink_dns_support');
   }
-  public set enableClassiclinkDnsSupport(value: boolean) {
+  public set enableClassiclinkDnsSupport(value: boolean | cdktf.IResolvable) {
     this._enableClassiclinkDnsSupport = value;
   }
   public resetEnableClassiclinkDnsSupport() {
@@ -174,11 +179,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // enable_dns_hostnames - computed: true, optional: true, required: false
-  private _enableDnsHostnames?: boolean;
+  private _enableDnsHostnames?: boolean | cdktf.IResolvable;
   public get enableDnsHostnames() {
     return this.getBooleanAttribute('enable_dns_hostnames');
   }
-  public set enableDnsHostnames(value: boolean) {
+  public set enableDnsHostnames(value: boolean | cdktf.IResolvable) {
     this._enableDnsHostnames = value;
   }
   public resetEnableDnsHostnames() {
@@ -190,11 +195,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // enable_dns_support - computed: false, optional: true, required: false
-  private _enableDnsSupport?: boolean;
+  private _enableDnsSupport?: boolean | cdktf.IResolvable;
   public get enableDnsSupport() {
     return this.getBooleanAttribute('enable_dns_support');
   }
-  public set enableDnsSupport(value: boolean ) {
+  public set enableDnsSupport(value: boolean | cdktf.IResolvable ) {
     this._enableDnsSupport = value;
   }
   public resetEnableDnsSupport() {
@@ -247,11 +252,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -263,11 +268,11 @@ export class Vpc extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

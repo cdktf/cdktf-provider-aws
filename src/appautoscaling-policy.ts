@@ -178,7 +178,7 @@ export interface AppautoscalingPolicyTargetTrackingScalingPolicyConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appautoscaling_policy.html#disable_scale_in AppautoscalingPolicy#disable_scale_in}
   */
-  readonly disableScaleIn?: boolean;
+  readonly disableScaleIn?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appautoscaling_policy.html#scale_in_cooldown AppautoscalingPolicy#scale_in_cooldown}
   */
@@ -222,6 +222,11 @@ function appautoscalingPolicyTargetTrackingScalingPolicyConfigurationToTerraform
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/appautoscaling_policy.html aws_appautoscaling_policy}
 */
 export class AppautoscalingPolicy extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appautoscaling_policy";
 
   // ===========
   // INITIALIZER

@@ -10,13 +10,18 @@ export interface BackupGlobalSettingsConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/backup_global_settings.html#global_settings BackupGlobalSettings#global_settings}
   */
-  readonly globalSettings: { [key: string]: string };
+  readonly globalSettings: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_global_settings.html aws_backup_global_settings}
 */
 export class BackupGlobalSettings extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_backup_global_settings";
 
   // ===========
   // INITIALIZER
@@ -48,11 +53,11 @@ export class BackupGlobalSettings extends cdktf.TerraformResource {
   // ==========
 
   // global_settings - computed: false, optional: false, required: true
-  private _globalSettings: { [key: string]: string };
+  private _globalSettings: { [key: string]: string } | cdktf.IResolvable;
   public get globalSettings() {
     return this.interpolationForAttribute('global_settings') as any;
   }
-  public set globalSettings(value: { [key: string]: string }) {
+  public set globalSettings(value: { [key: string]: string } | cdktf.IResolvable) {
     this._globalSettings = value;
   }
   // Temporarily expose input value. Use with caution.

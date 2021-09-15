@@ -22,6 +22,11 @@ export interface VpcDhcpOptionsAssociationConfig extends cdktf.TerraformMetaArgu
 */
 export class VpcDhcpOptionsAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_dhcp_options_association";
+
   // ===========
   // INITIALIZER
   // ===========

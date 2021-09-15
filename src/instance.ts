@@ -14,7 +14,7 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#associate_public_ip_address Instance#associate_public_ip_address}
   */
-  readonly associatePublicIpAddress?: boolean;
+  readonly associatePublicIpAddress?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#availability_zone Instance#availability_zone}
   */
@@ -30,19 +30,19 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#disable_api_termination Instance#disable_api_termination}
   */
-  readonly disableApiTermination?: boolean;
+  readonly disableApiTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#ebs_optimized Instance#ebs_optimized}
   */
-  readonly ebsOptimized?: boolean;
+  readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#get_password_data Instance#get_password_data}
   */
-  readonly fetchPasswordData?: boolean;
+  readonly fetchPasswordData?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#hibernation Instance#hibernation}
   */
-  readonly hibernation?: boolean;
+  readonly hibernation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#host_id Instance#host_id}
   */
@@ -74,7 +74,7 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#monitoring Instance#monitoring}
   */
-  readonly monitoring?: boolean;
+  readonly monitoring?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#placement_group Instance#placement_group}
   */
@@ -94,7 +94,7 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#source_dest_check Instance#source_dest_check}
   */
-  readonly sourceDestCheck?: boolean;
+  readonly sourceDestCheck?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#subnet_id Instance#subnet_id}
   */
@@ -102,11 +102,11 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#tags Instance#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#tags_all Instance#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#tenancy Instance#tenancy}
   */
@@ -122,7 +122,7 @@ export interface InstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#volume_tags Instance#volume_tags}
   */
-  readonly volumeTags?: { [key: string]: string };
+  readonly volumeTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#vpc_security_group_ids Instance#vpc_security_group_ids}
   */
@@ -241,7 +241,7 @@ export interface InstanceEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#delete_on_termination Instance#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#device_name Instance#device_name}
   */
@@ -249,7 +249,7 @@ export interface InstanceEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#encrypted Instance#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#iops Instance#iops}
   */
@@ -265,7 +265,7 @@ export interface InstanceEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#tags Instance#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#throughput Instance#throughput}
   */
@@ -300,7 +300,7 @@ export interface InstanceEnclaveOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#enabled Instance#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
 }
 
 function instanceEnclaveOptionsToTerraform(struct?: InstanceEnclaveOptions): any {
@@ -318,7 +318,7 @@ export interface InstanceEphemeralBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#no_device Instance#no_device}
   */
-  readonly noDevice?: boolean;
+  readonly noDevice?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#virtual_name Instance#virtual_name}
   */
@@ -386,7 +386,7 @@ export interface InstanceNetworkInterface {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#delete_on_termination Instance#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#device_index Instance#device_index}
   */
@@ -410,11 +410,11 @@ export interface InstanceRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#delete_on_termination Instance#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#encrypted Instance#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#iops Instance#iops}
   */
@@ -426,7 +426,7 @@ export interface InstanceRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#tags Instance#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/instance.html#throughput Instance#throughput}
   */
@@ -484,6 +484,11 @@ function instanceTimeoutsToTerraform(struct?: InstanceTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/instance.html aws_instance}
 */
 export class Instance extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_instance";
 
   // ===========
   // INITIALIZER
@@ -575,11 +580,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // associate_public_ip_address - computed: true, optional: true, required: false
-  private _associatePublicIpAddress?: boolean;
+  private _associatePublicIpAddress?: boolean | cdktf.IResolvable;
   public get associatePublicIpAddress() {
     return this.getBooleanAttribute('associate_public_ip_address');
   }
-  public set associatePublicIpAddress(value: boolean) {
+  public set associatePublicIpAddress(value: boolean | cdktf.IResolvable) {
     this._associatePublicIpAddress = value;
   }
   public resetAssociatePublicIpAddress() {
@@ -639,11 +644,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // disable_api_termination - computed: true, optional: true, required: false
-  private _disableApiTermination?: boolean;
+  private _disableApiTermination?: boolean | cdktf.IResolvable;
   public get disableApiTermination() {
     return this.getBooleanAttribute('disable_api_termination');
   }
-  public set disableApiTermination(value: boolean) {
+  public set disableApiTermination(value: boolean | cdktf.IResolvable) {
     this._disableApiTermination = value;
   }
   public resetDisableApiTermination() {
@@ -655,11 +660,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // ebs_optimized - computed: true, optional: true, required: false
-  private _ebsOptimized?: boolean;
+  private _ebsOptimized?: boolean | cdktf.IResolvable;
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean) {
+  public set ebsOptimized(value: boolean | cdktf.IResolvable) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {
@@ -671,11 +676,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // get_password_data - computed: false, optional: true, required: false
-  private _getPasswordData?: boolean;
+  private _getPasswordData?: boolean | cdktf.IResolvable;
   public get fetchPasswordData() {
     return this.getBooleanAttribute('get_password_data');
   }
-  public set fetchPasswordData(value: boolean ) {
+  public set fetchPasswordData(value: boolean | cdktf.IResolvable ) {
     this._getPasswordData = value;
   }
   public resetFetchPasswordData() {
@@ -687,11 +692,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // hibernation - computed: false, optional: true, required: false
-  private _hibernation?: boolean;
+  private _hibernation?: boolean | cdktf.IResolvable;
   public get hibernation() {
     return this.getBooleanAttribute('hibernation');
   }
-  public set hibernation(value: boolean ) {
+  public set hibernation(value: boolean | cdktf.IResolvable ) {
     this._hibernation = value;
   }
   public resetHibernation() {
@@ -825,11 +830,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // monitoring - computed: true, optional: true, required: false
-  private _monitoring?: boolean;
+  private _monitoring?: boolean | cdktf.IResolvable;
   public get monitoring() {
     return this.getBooleanAttribute('monitoring');
   }
-  public set monitoring(value: boolean) {
+  public set monitoring(value: boolean | cdktf.IResolvable) {
     this._monitoring = value;
   }
   public resetMonitoring() {
@@ -935,11 +940,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // source_dest_check - computed: false, optional: true, required: false
-  private _sourceDestCheck?: boolean;
+  private _sourceDestCheck?: boolean | cdktf.IResolvable;
   public get sourceDestCheck() {
     return this.getBooleanAttribute('source_dest_check');
   }
-  public set sourceDestCheck(value: boolean ) {
+  public set sourceDestCheck(value: boolean | cdktf.IResolvable ) {
     this._sourceDestCheck = value;
   }
   public resetSourceDestCheck() {
@@ -967,11 +972,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -983,11 +988,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1047,11 +1052,11 @@ export class Instance extends cdktf.TerraformResource {
   }
 
   // volume_tags - computed: false, optional: true, required: false
-  private _volumeTags?: { [key: string]: string };
+  private _volumeTags?: { [key: string]: string } | cdktf.IResolvable;
   public get volumeTags() {
     return this.interpolationForAttribute('volume_tags') as any;
   }
-  public set volumeTags(value: { [key: string]: string } ) {
+  public set volumeTags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._volumeTags = value;
   }
   public resetVolumeTags() {

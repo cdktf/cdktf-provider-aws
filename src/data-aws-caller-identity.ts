@@ -14,6 +14,11 @@ export interface DataAwsCallerIdentityConfig extends cdktf.TerraformMetaArgument
 */
 export class DataAwsCallerIdentity extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_caller_identity";
+
   // ===========
   // INITIALIZER
   // ===========

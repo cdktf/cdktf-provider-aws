@@ -18,6 +18,11 @@ export interface CloudfrontOriginAccessIdentityConfig extends cdktf.TerraformMet
 */
 export class CloudfrontOriginAccessIdentity extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_origin_access_identity";
+
   // ===========
   // INITIALIZER
   // ===========

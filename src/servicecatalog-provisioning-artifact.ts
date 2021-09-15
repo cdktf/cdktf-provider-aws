@@ -14,7 +14,7 @@ export interface ServicecatalogProvisioningArtifactConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioning_artifact.html#active ServicecatalogProvisioningArtifact#active}
   */
-  readonly active?: boolean;
+  readonly active?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioning_artifact.html#description ServicecatalogProvisioningArtifact#description}
   */
@@ -22,7 +22,7 @@ export interface ServicecatalogProvisioningArtifactConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioning_artifact.html#disable_template_validation ServicecatalogProvisioningArtifact#disable_template_validation}
   */
-  readonly disableTemplateValidation?: boolean;
+  readonly disableTemplateValidation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioning_artifact.html#guidance ServicecatalogProvisioningArtifact#guidance}
   */
@@ -53,6 +53,11 @@ export interface ServicecatalogProvisioningArtifactConfig extends cdktf.Terrafor
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioning_artifact.html aws_servicecatalog_provisioning_artifact}
 */
 export class ServicecatalogProvisioningArtifact extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_provisioning_artifact";
 
   // ===========
   // INITIALIZER
@@ -109,11 +114,11 @@ export class ServicecatalogProvisioningArtifact extends cdktf.TerraformResource 
   }
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean;
+  private _active?: boolean | cdktf.IResolvable;
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean ) {
+  public set active(value: boolean | cdktf.IResolvable ) {
     this._active = value;
   }
   public resetActive() {
@@ -146,11 +151,11 @@ export class ServicecatalogProvisioningArtifact extends cdktf.TerraformResource 
   }
 
   // disable_template_validation - computed: false, optional: true, required: false
-  private _disableTemplateValidation?: boolean;
+  private _disableTemplateValidation?: boolean | cdktf.IResolvable;
   public get disableTemplateValidation() {
     return this.getBooleanAttribute('disable_template_validation');
   }
-  public set disableTemplateValidation(value: boolean ) {
+  public set disableTemplateValidation(value: boolean | cdktf.IResolvable ) {
     this._disableTemplateValidation = value;
   }
   public resetDisableTemplateValidation() {

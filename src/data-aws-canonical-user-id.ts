@@ -14,6 +14,11 @@ export interface DataAwsCanonicalUserIdConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataAwsCanonicalUserId extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_canonical_user_id";
+
   // ===========
   // INITIALIZER
   // ===========

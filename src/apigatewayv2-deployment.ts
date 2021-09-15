@@ -18,13 +18,18 @@ export interface Apigatewayv2DeploymentConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_deployment.html#triggers Apigatewayv2Deployment#triggers}
   */
-  readonly triggers?: { [key: string]: string };
+  readonly triggers?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_deployment.html aws_apigatewayv2_deployment}
 */
 export class Apigatewayv2Deployment extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_deployment";
 
   // ===========
   // INITIALIZER
@@ -97,11 +102,11 @@ export class Apigatewayv2Deployment extends cdktf.TerraformResource {
   }
 
   // triggers - computed: false, optional: true, required: false
-  private _triggers?: { [key: string]: string };
+  private _triggers?: { [key: string]: string } | cdktf.IResolvable;
   public get triggers() {
     return this.interpolationForAttribute('triggers') as any;
   }
-  public set triggers(value: { [key: string]: string } ) {
+  public set triggers(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._triggers = value;
   }
   public resetTriggers() {

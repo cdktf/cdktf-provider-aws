@@ -26,6 +26,11 @@ export interface ElasticacheSecurityGroupConfig extends cdktf.TerraformMetaArgum
 */
 export class ElasticacheSecurityGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticache_security_group";
+
   // ===========
   // INITIALIZER
   // ===========

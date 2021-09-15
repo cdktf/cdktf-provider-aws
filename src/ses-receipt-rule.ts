@@ -14,7 +14,7 @@ export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_receipt_rule.html#enabled SesReceiptRule#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_receipt_rule.html#name SesReceiptRule#name}
   */
@@ -30,7 +30,7 @@ export interface SesReceiptRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_receipt_rule.html#scan_enabled SesReceiptRule#scan_enabled}
   */
-  readonly scanEnabled?: boolean;
+  readonly scanEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_receipt_rule.html#tls_policy SesReceiptRule#tls_policy}
   */
@@ -282,6 +282,11 @@ function sesReceiptRuleWorkmailActionToTerraform(struct?: SesReceiptRuleWorkmail
 */
 export class SesReceiptRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_receipt_rule";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -346,11 +351,11 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean;
+  private _enabled?: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | cdktf.IResolvable ) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -409,11 +414,11 @@ export class SesReceiptRule extends cdktf.TerraformResource {
   }
 
   // scan_enabled - computed: false, optional: true, required: false
-  private _scanEnabled?: boolean;
+  private _scanEnabled?: boolean | cdktf.IResolvable;
   public get scanEnabled() {
     return this.getBooleanAttribute('scan_enabled');
   }
-  public set scanEnabled(value: boolean ) {
+  public set scanEnabled(value: boolean | cdktf.IResolvable ) {
     this._scanEnabled = value;
   }
   public resetScanEnabled() {

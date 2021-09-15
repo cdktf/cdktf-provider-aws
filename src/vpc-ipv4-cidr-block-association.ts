@@ -47,6 +47,11 @@ function vpcIpv4CidrBlockAssociationTimeoutsToTerraform(struct?: VpcIpv4CidrBloc
 */
 export class VpcIpv4CidrBlockAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_ipv4_cidr_block_association";
+
   // ===========
   // INITIALIZER
   // ===========

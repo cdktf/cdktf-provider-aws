@@ -72,6 +72,11 @@ function cloudfrontRealtimeLogConfigEndpointToTerraform(struct?: CloudfrontRealt
 */
 export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_realtime_log_config";
+
   // ===========
   // INITIALIZER
   // ===========

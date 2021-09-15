@@ -18,6 +18,11 @@ export interface DataAwsCloudformationExportConfig extends cdktf.TerraformMetaAr
 */
 export class DataAwsCloudformationExport extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudformation_export";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,7 +22,7 @@ export interface ServerlessapplicationrepositoryCloudformationStackConfig extend
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/serverlessapplicationrepository_cloudformation_stack.html#parameters ServerlessapplicationrepositoryCloudformationStack#parameters}
   */
-  readonly parameters?: { [key: string]: string };
+  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/serverlessapplicationrepository_cloudformation_stack.html#semantic_version ServerlessapplicationrepositoryCloudformationStack#semantic_version}
   */
@@ -30,11 +30,11 @@ export interface ServerlessapplicationrepositoryCloudformationStackConfig extend
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/serverlessapplicationrepository_cloudformation_stack.html#tags ServerlessapplicationrepositoryCloudformationStack#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/serverlessapplicationrepository_cloudformation_stack.html#tags_all ServerlessapplicationrepositoryCloudformationStack#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -71,6 +71,11 @@ function serverlessapplicationrepositoryCloudformationStackTimeoutsToTerraform(s
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/serverlessapplicationrepository_cloudformation_stack.html aws_serverlessapplicationrepository_cloudformation_stack}
 */
 export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_serverlessapplicationrepository_cloudformation_stack";
 
   // ===========
   // INITIALIZER
@@ -158,11 +163,11 @@ export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.Te
   }
 
   // parameters - computed: true, optional: true, required: false
-  private _parameters?: { [key: string]: string }
-  public get parameters(): { [key: string]: string } {
+  private _parameters?: { [key: string]: string } | cdktf.IResolvable
+  public get parameters(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('parameters') as any; // Getting the computed value is not yet implemented
   }
-  public set parameters(value: { [key: string]: string }) {
+  public set parameters(value: { [key: string]: string } | cdktf.IResolvable) {
     this._parameters = value;
   }
   public resetParameters() {
@@ -190,11 +195,11 @@ export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.Te
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -206,11 +211,11 @@ export class ServerlessapplicationrepositoryCloudformationStack extends cdktf.Te
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

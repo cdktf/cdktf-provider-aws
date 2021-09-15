@@ -47,6 +47,11 @@ function dataAwsPrefixListFilterToTerraform(struct?: DataAwsPrefixListFilter): a
 */
 export class DataAwsPrefixList extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_prefix_list";
+
   // ===========
   // INITIALIZER
   // ===========

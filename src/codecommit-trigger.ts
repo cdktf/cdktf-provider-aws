@@ -58,6 +58,11 @@ function codecommitTriggerTriggerToTerraform(struct?: CodecommitTriggerTrigger):
 */
 export class CodecommitTrigger extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codecommit_trigger";
+
   // ===========
   // INITIALIZER
   // ===========

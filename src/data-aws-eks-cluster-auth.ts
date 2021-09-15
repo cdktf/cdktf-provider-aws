@@ -18,6 +18,11 @@ export interface DataAwsEksClusterAuthConfig extends cdktf.TerraformMetaArgument
 */
 export class DataAwsEksClusterAuth extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_eks_cluster_auth";
+
   // ===========
   // INITIALIZER
   // ===========

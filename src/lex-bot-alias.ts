@@ -116,6 +116,11 @@ function lexBotAliasTimeoutsToTerraform(struct?: LexBotAliasTimeouts): any {
 */
 export class LexBotAlias extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lex_bot_alias";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -30,6 +30,11 @@ export interface ServicecatalogProductPortfolioAssociationConfig extends cdktf.T
 */
 export class ServicecatalogProductPortfolioAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_product_portfolio_association";
+
   // ===========
   // INITIALIZER
   // ===========

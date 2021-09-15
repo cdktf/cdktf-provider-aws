@@ -30,6 +30,11 @@ export interface IamGroupPolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class IamGroupPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_group_policy";
+
   // ===========
   // INITIALIZER
   // ===========

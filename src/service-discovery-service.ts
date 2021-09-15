@@ -12,6 +12,10 @@ export interface ServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArgume
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#force_destroy ServiceDiscoveryService#force_destroy}
+  */
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#name ServiceDiscoveryService#name}
   */
   readonly name: string;
@@ -22,11 +26,11 @@ export interface ServiceDiscoveryServiceConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#tags ServiceDiscoveryService#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service.html#tags_all ServiceDiscoveryService#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * dns_config block
   * 
@@ -135,6 +139,11 @@ function serviceDiscoveryServiceHealthCheckCustomConfigToTerraform(struct?: Serv
 */
 export class ServiceDiscoveryService extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_service_discovery_service";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -158,6 +167,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._forceDestroy = config.forceDestroy;
     this._name = config.name;
     this._namespaceId = config.namespaceId;
     this._tags = config.tags;
@@ -190,6 +200,22 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description
+  }
+
+  // force_destroy - computed: false, optional: true, required: false
+  private _forceDestroy?: boolean | cdktf.IResolvable;
+  public get forceDestroy() {
+    return this.getBooleanAttribute('force_destroy');
+  }
+  public set forceDestroy(value: boolean | cdktf.IResolvable ) {
+    this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy
   }
 
   // id - computed: true, optional: true, required: false
@@ -227,11 +253,11 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -243,11 +269,11 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -313,6 +339,7 @@ export class ServiceDiscoveryService extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       name: cdktf.stringToTerraform(this._name),
       namespace_id: cdktf.stringToTerraform(this._namespaceId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

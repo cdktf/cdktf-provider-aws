@@ -22,6 +22,11 @@ export interface Ec2AvailabilityZoneGroupConfig extends cdktf.TerraformMetaArgum
 */
 export class Ec2AvailabilityZoneGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_availability_zone_group";
+
   // ===========
   // INITIALIZER
   // ===========

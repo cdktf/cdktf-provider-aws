@@ -22,6 +22,11 @@ export interface DataAwsWafv2RuleGroupConfig extends cdktf.TerraformMetaArgument
 */
 export class DataAwsWafv2RuleGroup extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafv2_rule_group";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -26,6 +26,11 @@ export interface SesReceiptFilterConfig extends cdktf.TerraformMetaArguments {
 */
 export class SesReceiptFilter extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_receipt_filter";
+
   // ===========
   // INITIALIZER
   // ===========

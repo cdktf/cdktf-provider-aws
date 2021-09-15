@@ -26,7 +26,7 @@ export interface GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsC
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html#return_connection_password_encrypted GlueDataCatalogEncryptionSettings#return_connection_password_encrypted}
   */
-  readonly returnConnectionPasswordEncrypted: boolean;
+  readonly returnConnectionPasswordEncrypted: boolean | cdktf.IResolvable;
 }
 
 function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryptionToTerraform(struct?: GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption): any {
@@ -84,6 +84,11 @@ function glueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsToTerrafo
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_data_catalog_encryption_settings.html aws_glue_data_catalog_encryption_settings}
 */
 export class GlueDataCatalogEncryptionSettings extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_data_catalog_encryption_settings";
 
   // ===========
   // INITIALIZER

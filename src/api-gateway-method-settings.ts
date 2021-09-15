@@ -30,7 +30,7 @@ export interface ApiGatewayMethodSettingsSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#cache_data_encrypted ApiGatewayMethodSettings#cache_data_encrypted}
   */
-  readonly cacheDataEncrypted?: boolean;
+  readonly cacheDataEncrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#cache_ttl_in_seconds ApiGatewayMethodSettings#cache_ttl_in_seconds}
   */
@@ -38,11 +38,11 @@ export interface ApiGatewayMethodSettingsSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#caching_enabled ApiGatewayMethodSettings#caching_enabled}
   */
-  readonly cachingEnabled?: boolean;
+  readonly cachingEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#data_trace_enabled ApiGatewayMethodSettings#data_trace_enabled}
   */
-  readonly dataTraceEnabled?: boolean;
+  readonly dataTraceEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#logging_level ApiGatewayMethodSettings#logging_level}
   */
@@ -50,11 +50,11 @@ export interface ApiGatewayMethodSettingsSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#metrics_enabled ApiGatewayMethodSettings#metrics_enabled}
   */
-  readonly metricsEnabled?: boolean;
+  readonly metricsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#require_authorization_for_cache_control ApiGatewayMethodSettings#require_authorization_for_cache_control}
   */
-  readonly requireAuthorizationForCacheControl?: boolean;
+  readonly requireAuthorizationForCacheControl?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html#throttling_burst_limit ApiGatewayMethodSettings#throttling_burst_limit}
   */
@@ -90,6 +90,11 @@ function apiGatewayMethodSettingsSettingsToTerraform(struct?: ApiGatewayMethodSe
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_settings.html aws_api_gateway_method_settings}
 */
 export class ApiGatewayMethodSettings extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_method_settings";
 
   // ===========
   // INITIALIZER

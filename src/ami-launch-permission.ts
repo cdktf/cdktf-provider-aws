@@ -22,6 +22,11 @@ export interface AmiLaunchPermissionConfig extends cdktf.TerraformMetaArguments 
 */
 export class AmiLaunchPermission extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ami_launch_permission";
+
   // ===========
   // INITIALIZER
   // ===========

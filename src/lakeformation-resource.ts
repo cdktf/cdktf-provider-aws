@@ -22,6 +22,11 @@ export interface LakeformationResourceConfig extends cdktf.TerraformMetaArgument
 */
 export class LakeformationResource extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lakeformation_resource";
+
   // ===========
   // INITIALIZER
   // ===========

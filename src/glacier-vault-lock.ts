@@ -10,11 +10,11 @@ export interface GlacierVaultLockConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glacier_vault_lock.html#complete_lock GlacierVaultLock#complete_lock}
   */
-  readonly completeLock: boolean;
+  readonly completeLock: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glacier_vault_lock.html#ignore_deletion_error GlacierVaultLock#ignore_deletion_error}
   */
-  readonly ignoreDeletionError?: boolean;
+  readonly ignoreDeletionError?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glacier_vault_lock.html#policy GlacierVaultLock#policy}
   */
@@ -29,6 +29,11 @@ export interface GlacierVaultLockConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/glacier_vault_lock.html aws_glacier_vault_lock}
 */
 export class GlacierVaultLock extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glacier_vault_lock";
 
   // ===========
   // INITIALIZER
@@ -63,11 +68,11 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   // ==========
 
   // complete_lock - computed: false, optional: false, required: true
-  private _completeLock: boolean;
+  private _completeLock: boolean | cdktf.IResolvable;
   public get completeLock() {
     return this.getBooleanAttribute('complete_lock');
   }
-  public set completeLock(value: boolean) {
+  public set completeLock(value: boolean | cdktf.IResolvable) {
     this._completeLock = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -81,11 +86,11 @@ export class GlacierVaultLock extends cdktf.TerraformResource {
   }
 
   // ignore_deletion_error - computed: false, optional: true, required: false
-  private _ignoreDeletionError?: boolean;
+  private _ignoreDeletionError?: boolean | cdktf.IResolvable;
   public get ignoreDeletionError() {
     return this.getBooleanAttribute('ignore_deletion_error');
   }
-  public set ignoreDeletionError(value: boolean ) {
+  public set ignoreDeletionError(value: boolean | cdktf.IResolvable ) {
     this._ignoreDeletionError = value;
   }
   public resetIgnoreDeletionError() {

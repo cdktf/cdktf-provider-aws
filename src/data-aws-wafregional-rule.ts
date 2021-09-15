@@ -18,6 +18,11 @@ export interface DataAwsWafregionalRuleConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataAwsWafregionalRule extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafregional_rule";
+
   // ===========
   // INITIALIZER
   // ===========

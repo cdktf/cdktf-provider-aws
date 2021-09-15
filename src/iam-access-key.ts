@@ -26,6 +26,11 @@ export interface IamAccessKeyConfig extends cdktf.TerraformMetaArguments {
 */
 export class IamAccessKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_access_key";
+
   // ===========
   // INITIALIZER
   // ===========

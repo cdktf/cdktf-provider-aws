@@ -10,7 +10,7 @@ export interface DataAwsElasticBeanstalkSolutionStackConfig extends cdktf.Terraf
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elastic_beanstalk_solution_stack.html#most_recent DataAwsElasticBeanstalkSolutionStack#most_recent}
   */
-  readonly mostRecent?: boolean;
+  readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elastic_beanstalk_solution_stack.html#name_regex DataAwsElasticBeanstalkSolutionStack#name_regex}
   */
@@ -21,6 +21,11 @@ export interface DataAwsElasticBeanstalkSolutionStackConfig extends cdktf.Terraf
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/elastic_beanstalk_solution_stack.html aws_elastic_beanstalk_solution_stack}
 */
 export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elastic_beanstalk_solution_stack";
 
   // ===========
   // INITIALIZER
@@ -58,11 +63,11 @@ export class DataAwsElasticBeanstalkSolutionStack extends cdktf.TerraformDataSou
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean;
+  private _mostRecent?: boolean | cdktf.IResolvable;
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean ) {
+  public set mostRecent(value: boolean | cdktf.IResolvable ) {
     this._mostRecent = value;
   }
   public resetMostRecent() {

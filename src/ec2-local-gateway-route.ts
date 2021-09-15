@@ -26,6 +26,11 @@ export interface Ec2LocalGatewayRouteConfig extends cdktf.TerraformMetaArguments
 */
 export class Ec2LocalGatewayRoute extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_local_gateway_route";
+
   // ===========
   // INITIALIZER
   // ===========

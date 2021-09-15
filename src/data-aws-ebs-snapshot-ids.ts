@@ -47,6 +47,11 @@ function dataAwsEbsSnapshotIdsFilterToTerraform(struct?: DataAwsEbsSnapshotIdsFi
 */
 export class DataAwsEbsSnapshotIds extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ebs_snapshot_ids";
+
   // ===========
   // INITIALIZER
   // ===========

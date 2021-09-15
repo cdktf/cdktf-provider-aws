@@ -55,6 +55,11 @@ function cloudformationTypeLoggingConfigToTerraform(struct?: CloudformationTypeL
 */
 export class CloudformationType extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudformation_type";
+
   // ===========
   // INITIALIZER
   // ===========

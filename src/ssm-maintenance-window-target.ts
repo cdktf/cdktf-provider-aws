@@ -59,6 +59,11 @@ function ssmMaintenanceWindowTargetTargetsToTerraform(struct?: SsmMaintenanceWin
 */
 export class SsmMaintenanceWindowTarget extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_maintenance_window_target";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -64,6 +64,11 @@ function wafregionalXssMatchSetXssMatchTupleToTerraform(struct?: WafregionalXssM
 */
 export class WafregionalXssMatchSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafregional_xss_match_set";
+
   // ===========
   // INITIALIZER
   // ===========

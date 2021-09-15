@@ -26,6 +26,11 @@ export interface DataAwsServicecatalogConstraintConfig extends cdktf.TerraformMe
 */
 export class DataAwsServicecatalogConstraint extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_constraint";
+
   // ===========
   // INITIALIZER
   // ===========

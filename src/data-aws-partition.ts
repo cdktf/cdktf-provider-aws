@@ -14,6 +14,11 @@ export interface DataAwsPartitionConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsPartition extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_partition";
+
   // ===========
   // INITIALIZER
   // ===========

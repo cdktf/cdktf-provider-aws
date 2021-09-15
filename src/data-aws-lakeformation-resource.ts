@@ -18,6 +18,11 @@ export interface DataAwsLakeformationResourceConfig extends cdktf.TerraformMetaA
 */
 export class DataAwsLakeformationResource extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lakeformation_resource";
+
   // ===========
   // INITIALIZER
   // ===========

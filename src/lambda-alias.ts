@@ -34,7 +34,7 @@ export interface LambdaAliasRoutingConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_alias.html#additional_version_weights LambdaAlias#additional_version_weights}
   */
-  readonly additionalVersionWeights?: { [key: string]: number };
+  readonly additionalVersionWeights?: { [key: string]: number } | cdktf.IResolvable;
 }
 
 function lambdaAliasRoutingConfigToTerraform(struct?: LambdaAliasRoutingConfig): any {
@@ -49,6 +49,11 @@ function lambdaAliasRoutingConfigToTerraform(struct?: LambdaAliasRoutingConfig):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_alias.html aws_lambda_alias}
 */
 export class LambdaAlias extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_alias";
 
   // ===========
   // INITIALIZER

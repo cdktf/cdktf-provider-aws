@@ -14,6 +14,11 @@ export interface DataAwsDxLocationsConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsDxLocations extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dx_locations";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -30,6 +30,11 @@ export interface QuicksightGroupConfig extends cdktf.TerraformMetaArguments {
 */
 export class QuicksightGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_quicksight_group";
+
   // ===========
   // INITIALIZER
   // ===========

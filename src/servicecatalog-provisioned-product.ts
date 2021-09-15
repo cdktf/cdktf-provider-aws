@@ -14,7 +14,7 @@ export interface ServicecatalogProvisionedProductConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product.html#ignore_errors ServicecatalogProvisionedProduct#ignore_errors}
   */
-  readonly ignoreErrors?: boolean;
+  readonly ignoreErrors?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product.html#name ServicecatalogProvisionedProduct#name}
   */
@@ -50,15 +50,15 @@ export interface ServicecatalogProvisionedProductConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product.html#retain_physical_resources ServicecatalogProvisionedProduct#retain_physical_resources}
   */
-  readonly retainPhysicalResources?: boolean;
+  readonly retainPhysicalResources?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product.html#tags ServicecatalogProvisionedProduct#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product.html#tags_all ServicecatalogProvisionedProduct#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * provisioning_parameters block
   * 
@@ -86,7 +86,7 @@ export interface ServicecatalogProvisionedProductProvisioningParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product.html#use_previous_value ServicecatalogProvisionedProduct#use_previous_value}
   */
-  readonly usePreviousValue?: boolean;
+  readonly usePreviousValue?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_provisioned_product.html#value ServicecatalogProvisionedProduct#value}
   */
@@ -171,6 +171,11 @@ function servicecatalogProvisionedProductTimeoutsToTerraform(struct?: Servicecat
 */
 export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_provisioned_product";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -252,11 +257,11 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // ignore_errors - computed: false, optional: true, required: false
-  private _ignoreErrors?: boolean;
+  private _ignoreErrors?: boolean | cdktf.IResolvable;
   public get ignoreErrors() {
     return this.getBooleanAttribute('ignore_errors');
   }
-  public set ignoreErrors(value: boolean ) {
+  public set ignoreErrors(value: boolean | cdktf.IResolvable ) {
     this._ignoreErrors = value;
   }
   public resetIgnoreErrors() {
@@ -413,11 +418,11 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // retain_physical_resources - computed: false, optional: true, required: false
-  private _retainPhysicalResources?: boolean;
+  private _retainPhysicalResources?: boolean | cdktf.IResolvable;
   public get retainPhysicalResources() {
     return this.getBooleanAttribute('retain_physical_resources');
   }
-  public set retainPhysicalResources(value: boolean ) {
+  public set retainPhysicalResources(value: boolean | cdktf.IResolvable ) {
     this._retainPhysicalResources = value;
   }
   public resetRetainPhysicalResources() {
@@ -439,11 +444,11 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -455,11 +460,11 @@ export class ServicecatalogProvisionedProduct extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

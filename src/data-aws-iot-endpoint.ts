@@ -18,6 +18,11 @@ export interface DataAwsIotEndpointConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsIotEndpoint extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iot_endpoint";
+
   // ===========
   // INITIALIZER
   // ===========

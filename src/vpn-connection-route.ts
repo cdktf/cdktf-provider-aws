@@ -22,6 +22,11 @@ export interface VpnConnectionRouteConfig extends cdktf.TerraformMetaArguments {
 */
 export class VpnConnectionRoute extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpn_connection_route";
+
   // ===========
   // INITIALIZER
   // ===========

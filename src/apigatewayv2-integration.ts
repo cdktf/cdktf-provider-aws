@@ -58,11 +58,11 @@ export interface Apigatewayv2IntegrationConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html#request_parameters Apigatewayv2Integration#request_parameters}
   */
-  readonly requestParameters?: { [key: string]: string };
+  readonly requestParameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html#request_templates Apigatewayv2Integration#request_templates}
   */
-  readonly requestTemplates?: { [key: string]: string };
+  readonly requestTemplates?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html#template_selection_expression Apigatewayv2Integration#template_selection_expression}
   */
@@ -88,7 +88,7 @@ export interface Apigatewayv2IntegrationResponseParameters {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html#mappings Apigatewayv2Integration#mappings}
   */
-  readonly mappings: { [key: string]: string };
+  readonly mappings: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html#status_code Apigatewayv2Integration#status_code}
   */
@@ -122,6 +122,11 @@ function apigatewayv2IntegrationTlsConfigToTerraform(struct?: Apigatewayv2Integr
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration.html aws_apigatewayv2_integration}
 */
 export class Apigatewayv2Integration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_integration";
 
   // ===========
   // INITIALIZER
@@ -366,11 +371,11 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   }
 
   // request_parameters - computed: false, optional: true, required: false
-  private _requestParameters?: { [key: string]: string };
+  private _requestParameters?: { [key: string]: string } | cdktf.IResolvable;
   public get requestParameters() {
     return this.interpolationForAttribute('request_parameters') as any;
   }
-  public set requestParameters(value: { [key: string]: string } ) {
+  public set requestParameters(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._requestParameters = value;
   }
   public resetRequestParameters() {
@@ -382,11 +387,11 @@ export class Apigatewayv2Integration extends cdktf.TerraformResource {
   }
 
   // request_templates - computed: false, optional: true, required: false
-  private _requestTemplates?: { [key: string]: string };
+  private _requestTemplates?: { [key: string]: string } | cdktf.IResolvable;
   public get requestTemplates() {
     return this.interpolationForAttribute('request_templates') as any;
   }
-  public set requestTemplates(value: { [key: string]: string } ) {
+  public set requestTemplates(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._requestTemplates = value;
   }
   public resetRequestTemplates() {

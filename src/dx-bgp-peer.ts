@@ -63,6 +63,11 @@ function dxBgpPeerTimeoutsToTerraform(struct?: DxBgpPeerTimeouts): any {
 */
 export class DxBgpPeer extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dx_bgp_peer";
+
   // ===========
   // INITIALIZER
   // ===========

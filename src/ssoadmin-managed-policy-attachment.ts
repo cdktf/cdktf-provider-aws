@@ -26,6 +26,11 @@ export interface SsoadminManagedPolicyAttachmentConfig extends cdktf.TerraformMe
 */
 export class SsoadminManagedPolicyAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssoadmin_managed_policy_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

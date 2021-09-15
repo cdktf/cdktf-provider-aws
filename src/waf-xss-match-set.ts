@@ -64,6 +64,11 @@ function wafXssMatchSetXssMatchTuplesToTerraform(struct?: WafXssMatchSetXssMatch
 */
 export class WafXssMatchSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_xss_match_set";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -26,6 +26,11 @@ export interface LoadBalancerBackendServerPolicyConfig extends cdktf.TerraformMe
 */
 export class LoadBalancerBackendServerPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_load_balancer_backend_server_policy";
+
   // ===========
   // INITIALIZER
   // ===========

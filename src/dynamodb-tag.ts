@@ -26,6 +26,11 @@ export interface DynamodbTagConfig extends cdktf.TerraformMetaArguments {
 */
 export class DynamodbTag extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dynamodb_tag";
+
   // ===========
   // INITIALIZER
   // ===========

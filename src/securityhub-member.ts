@@ -18,13 +18,18 @@ export interface SecurityhubMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_member.html#invite SecurityhubMember#invite}
   */
-  readonly invite?: boolean;
+  readonly invite?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_member.html aws_securityhub_member}
 */
 export class SecurityhubMember extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_member";
 
   // ===========
   // INITIALIZER
@@ -89,11 +94,11 @@ export class SecurityhubMember extends cdktf.TerraformResource {
   }
 
   // invite - computed: false, optional: true, required: false
-  private _invite?: boolean;
+  private _invite?: boolean | cdktf.IResolvable;
   public get invite() {
     return this.getBooleanAttribute('invite');
   }
-  public set invite(value: boolean ) {
+  public set invite(value: boolean | cdktf.IResolvable ) {
     this._invite = value;
   }
   public resetInvite() {

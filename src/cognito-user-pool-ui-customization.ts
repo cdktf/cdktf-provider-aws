@@ -30,6 +30,11 @@ export interface CognitoUserPoolUiCustomizationConfig extends cdktf.TerraformMet
 */
 export class CognitoUserPoolUiCustomization extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_user_pool_ui_customization";
+
   // ===========
   // INITIALIZER
   // ===========

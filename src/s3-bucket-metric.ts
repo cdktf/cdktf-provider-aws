@@ -30,7 +30,7 @@ export interface S3BucketMetricFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_metric.html#tags S3BucketMetric#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function s3BucketMetricFilterToTerraform(struct?: S3BucketMetricFilter): any {
@@ -46,6 +46,11 @@ function s3BucketMetricFilterToTerraform(struct?: S3BucketMetricFilter): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_metric.html aws_s3_bucket_metric}
 */
 export class S3BucketMetric extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_bucket_metric";
 
   // ===========
   // INITIALIZER

@@ -51,6 +51,11 @@ function cognitoResourceServerScopeToTerraform(struct?: CognitoResourceServerSco
 */
 export class CognitoResourceServer extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_resource_server";
+
   // ===========
   // INITIALIZER
   // ===========

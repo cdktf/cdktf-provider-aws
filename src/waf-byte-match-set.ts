@@ -74,6 +74,11 @@ function wafByteMatchSetByteMatchTuplesToTerraform(struct?: WafByteMatchSetByteM
 */
 export class WafByteMatchSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_byte_match_set";
+
   // ===========
   // INITIALIZER
   // ===========

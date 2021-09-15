@@ -18,6 +18,11 @@ export interface DataAwsElbServiceAccountConfig extends cdktf.TerraformMetaArgum
 */
 export class DataAwsElbServiceAccount extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elb_service_account";
+
   // ===========
   // INITIALIZER
   // ===========

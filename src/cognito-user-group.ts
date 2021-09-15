@@ -34,6 +34,11 @@ export interface CognitoUserGroupConfig extends cdktf.TerraformMetaArguments {
 */
 export class CognitoUserGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_user_group";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -30,6 +30,11 @@ export interface CloudfrontPublicKeyConfig extends cdktf.TerraformMetaArguments 
 */
 export class CloudfrontPublicKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_public_key";
+
   // ===========
   // INITIALIZER
   // ===========

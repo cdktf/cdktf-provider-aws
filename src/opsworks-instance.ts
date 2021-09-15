@@ -34,15 +34,15 @@ export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete_ebs OpsworksInstance#delete_ebs}
   */
-  readonly deleteEbs?: boolean;
+  readonly deleteEbs?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete_eip OpsworksInstance#delete_eip}
   */
-  readonly deleteEip?: boolean;
+  readonly deleteEip?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ebs_optimized OpsworksInstance#ebs_optimized}
   */
-  readonly ebsOptimized?: boolean;
+  readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#ecs_cluster_arn OpsworksInstance#ecs_cluster_arn}
   */
@@ -62,7 +62,7 @@ export interface OpsworksInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#install_updates_on_boot OpsworksInstance#install_updates_on_boot}
   */
-  readonly installUpdatesOnBoot?: boolean;
+  readonly installUpdatesOnBoot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#instance_profile_arn OpsworksInstance#instance_profile_arn}
   */
@@ -200,7 +200,7 @@ export interface OpsworksInstanceEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete_on_termination OpsworksInstance#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#device_name OpsworksInstance#device_name}
   */
@@ -258,7 +258,7 @@ export interface OpsworksInstanceRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#delete_on_termination OpsworksInstance#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html#iops OpsworksInstance#iops}
   */
@@ -312,6 +312,11 @@ function opsworksInstanceTimeoutsToTerraform(struct?: OpsworksInstanceTimeouts):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance.html aws_opsworks_instance}
 */
 export class OpsworksInstance extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_opsworks_instance";
 
   // ===========
   // INITIALIZER
@@ -483,11 +488,11 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   }
 
   // delete_ebs - computed: false, optional: true, required: false
-  private _deleteEbs?: boolean;
+  private _deleteEbs?: boolean | cdktf.IResolvable;
   public get deleteEbs() {
     return this.getBooleanAttribute('delete_ebs');
   }
-  public set deleteEbs(value: boolean ) {
+  public set deleteEbs(value: boolean | cdktf.IResolvable ) {
     this._deleteEbs = value;
   }
   public resetDeleteEbs() {
@@ -499,11 +504,11 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   }
 
   // delete_eip - computed: false, optional: true, required: false
-  private _deleteEip?: boolean;
+  private _deleteEip?: boolean | cdktf.IResolvable;
   public get deleteEip() {
     return this.getBooleanAttribute('delete_eip');
   }
-  public set deleteEip(value: boolean ) {
+  public set deleteEip(value: boolean | cdktf.IResolvable ) {
     this._deleteEip = value;
   }
   public resetDeleteEip() {
@@ -515,11 +520,11 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   }
 
   // ebs_optimized - computed: false, optional: true, required: false
-  private _ebsOptimized?: boolean;
+  private _ebsOptimized?: boolean | cdktf.IResolvable;
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean ) {
+  public set ebsOptimized(value: boolean | cdktf.IResolvable ) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {
@@ -605,11 +610,11 @@ export class OpsworksInstance extends cdktf.TerraformResource {
   }
 
   // install_updates_on_boot - computed: false, optional: true, required: false
-  private _installUpdatesOnBoot?: boolean;
+  private _installUpdatesOnBoot?: boolean | cdktf.IResolvable;
   public get installUpdatesOnBoot() {
     return this.getBooleanAttribute('install_updates_on_boot');
   }
-  public set installUpdatesOnBoot(value: boolean ) {
+  public set installUpdatesOnBoot(value: boolean | cdktf.IResolvable ) {
     this._installUpdatesOnBoot = value;
   }
   public resetInstallUpdatesOnBoot() {

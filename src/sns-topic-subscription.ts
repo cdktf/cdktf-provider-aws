@@ -22,7 +22,7 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription.html#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}
   */
-  readonly endpointAutoConfirms?: boolean;
+  readonly endpointAutoConfirms?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription.html#filter_policy SnsTopicSubscription#filter_policy}
   */
@@ -34,7 +34,7 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription.html#raw_message_delivery SnsTopicSubscription#raw_message_delivery}
   */
-  readonly rawMessageDelivery?: boolean;
+  readonly rawMessageDelivery?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription.html#redrive_policy SnsTopicSubscription#redrive_policy}
   */
@@ -53,6 +53,11 @@ export interface SnsTopicSubscriptionConfig extends cdktf.TerraformMetaArguments
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription.html aws_sns_topic_subscription}
 */
 export class SnsTopicSubscription extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sns_topic_subscription";
 
   // ===========
   // INITIALIZER
@@ -148,11 +153,11 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   }
 
   // endpoint_auto_confirms - computed: false, optional: true, required: false
-  private _endpointAutoConfirms?: boolean;
+  private _endpointAutoConfirms?: boolean | cdktf.IResolvable;
   public get endpointAutoConfirms() {
     return this.getBooleanAttribute('endpoint_auto_confirms');
   }
-  public set endpointAutoConfirms(value: boolean ) {
+  public set endpointAutoConfirms(value: boolean | cdktf.IResolvable ) {
     this._endpointAutoConfirms = value;
   }
   public resetEndpointAutoConfirms() {
@@ -208,11 +213,11 @@ export class SnsTopicSubscription extends cdktf.TerraformResource {
   }
 
   // raw_message_delivery - computed: false, optional: true, required: false
-  private _rawMessageDelivery?: boolean;
+  private _rawMessageDelivery?: boolean | cdktf.IResolvable;
   public get rawMessageDelivery() {
     return this.getBooleanAttribute('raw_message_delivery');
   }
-  public set rawMessageDelivery(value: boolean ) {
+  public set rawMessageDelivery(value: boolean | cdktf.IResolvable ) {
     this._rawMessageDelivery = value;
   }
   public resetRawMessageDelivery() {

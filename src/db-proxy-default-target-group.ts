@@ -83,6 +83,11 @@ function dbProxyDefaultTargetGroupTimeoutsToTerraform(struct?: DbProxyDefaultTar
 */
 export class DbProxyDefaultTargetGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_db_proxy_default_target_group";
+
   // ===========
   // INITIALIZER
   // ===========

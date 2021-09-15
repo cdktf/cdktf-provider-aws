@@ -267,6 +267,11 @@ function wafv2WebAclLoggingConfigurationRedactedFieldsToTerraform(struct?: Wafv2
 */
 export class Wafv2WebAclLoggingConfiguration extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafv2_web_acl_logging_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

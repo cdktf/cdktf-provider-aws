@@ -18,7 +18,7 @@ export interface ImagebuilderImagePipelineConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline.html#enhanced_image_metadata_enabled ImagebuilderImagePipeline#enhanced_image_metadata_enabled}
   */
-  readonly enhancedImageMetadataEnabled?: boolean;
+  readonly enhancedImageMetadataEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline.html#image_recipe_arn ImagebuilderImagePipeline#image_recipe_arn}
   */
@@ -38,11 +38,11 @@ export interface ImagebuilderImagePipelineConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline.html#tags ImagebuilderImagePipeline#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline.html#tags_all ImagebuilderImagePipeline#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * image_tests_configuration block
   * 
@@ -60,7 +60,7 @@ export interface ImagebuilderImagePipelineImageTestsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline.html#image_tests_enabled ImagebuilderImagePipeline#image_tests_enabled}
   */
-  readonly imageTestsEnabled?: boolean;
+  readonly imageTestsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline.html#timeout_minutes ImagebuilderImagePipeline#timeout_minutes}
   */
@@ -99,6 +99,11 @@ function imagebuilderImagePipelineScheduleToTerraform(struct?: ImagebuilderImage
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_image_pipeline.html aws_imagebuilder_image_pipeline}
 */
 export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_imagebuilder_image_pipeline";
 
   // ===========
   // INITIALIZER
@@ -197,11 +202,11 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
   }
 
   // enhanced_image_metadata_enabled - computed: false, optional: true, required: false
-  private _enhancedImageMetadataEnabled?: boolean;
+  private _enhancedImageMetadataEnabled?: boolean | cdktf.IResolvable;
   public get enhancedImageMetadataEnabled() {
     return this.getBooleanAttribute('enhanced_image_metadata_enabled');
   }
-  public set enhancedImageMetadataEnabled(value: boolean ) {
+  public set enhancedImageMetadataEnabled(value: boolean | cdktf.IResolvable ) {
     this._enhancedImageMetadataEnabled = value;
   }
   public resetEnhancedImageMetadataEnabled() {
@@ -278,11 +283,11 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -294,11 +299,11 @@ export class ImagebuilderImagePipeline extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

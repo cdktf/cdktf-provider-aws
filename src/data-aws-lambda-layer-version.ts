@@ -26,6 +26,11 @@ export interface DataAwsLambdaLayerVersionConfig extends cdktf.TerraformMetaArgu
 */
 export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_layer_version";
+
   // ===========
   // INITIALIZER
   // ===========

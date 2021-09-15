@@ -62,7 +62,7 @@ export interface OpsworksStackConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html#manage_berkshelf OpsworksStack#manage_berkshelf}
   */
-  readonly manageBerkshelf?: boolean;
+  readonly manageBerkshelf?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html#name OpsworksStack#name}
   */
@@ -78,19 +78,19 @@ export interface OpsworksStackConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html#tags OpsworksStack#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html#tags_all OpsworksStack#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html#use_custom_cookbooks OpsworksStack#use_custom_cookbooks}
   */
-  readonly useCustomCookbooks?: boolean;
+  readonly useCustomCookbooks?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html#use_opsworks_security_groups OpsworksStack#use_opsworks_security_groups}
   */
-  readonly useOpsworksSecurityGroups?: boolean;
+  readonly useOpsworksSecurityGroups?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html#vpc_id OpsworksStack#vpc_id}
   */
@@ -146,6 +146,11 @@ function opsworksStackCustomCookbooksSourceToTerraform(struct?: OpsworksStackCus
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack.html aws_opsworks_stack}
 */
 export class OpsworksStack extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_opsworks_stack";
 
   // ===========
   // INITIALIZER
@@ -414,11 +419,11 @@ export class OpsworksStack extends cdktf.TerraformResource {
   }
 
   // manage_berkshelf - computed: false, optional: true, required: false
-  private _manageBerkshelf?: boolean;
+  private _manageBerkshelf?: boolean | cdktf.IResolvable;
   public get manageBerkshelf() {
     return this.getBooleanAttribute('manage_berkshelf');
   }
-  public set manageBerkshelf(value: boolean ) {
+  public set manageBerkshelf(value: boolean | cdktf.IResolvable ) {
     this._manageBerkshelf = value;
   }
   public resetManageBerkshelf() {
@@ -474,11 +479,11 @@ export class OpsworksStack extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -490,11 +495,11 @@ export class OpsworksStack extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -506,11 +511,11 @@ export class OpsworksStack extends cdktf.TerraformResource {
   }
 
   // use_custom_cookbooks - computed: false, optional: true, required: false
-  private _useCustomCookbooks?: boolean;
+  private _useCustomCookbooks?: boolean | cdktf.IResolvable;
   public get useCustomCookbooks() {
     return this.getBooleanAttribute('use_custom_cookbooks');
   }
-  public set useCustomCookbooks(value: boolean ) {
+  public set useCustomCookbooks(value: boolean | cdktf.IResolvable ) {
     this._useCustomCookbooks = value;
   }
   public resetUseCustomCookbooks() {
@@ -522,11 +527,11 @@ export class OpsworksStack extends cdktf.TerraformResource {
   }
 
   // use_opsworks_security_groups - computed: false, optional: true, required: false
-  private _useOpsworksSecurityGroups?: boolean;
+  private _useOpsworksSecurityGroups?: boolean | cdktf.IResolvable;
   public get useOpsworksSecurityGroups() {
     return this.getBooleanAttribute('use_opsworks_security_groups');
   }
-  public set useOpsworksSecurityGroups(value: boolean ) {
+  public set useOpsworksSecurityGroups(value: boolean | cdktf.IResolvable ) {
     this._useOpsworksSecurityGroups = value;
   }
   public resetUseOpsworksSecurityGroups() {

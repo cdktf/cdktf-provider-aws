@@ -22,6 +22,11 @@ export interface DataAwsKmsKeyConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsKmsKey extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kms_key";
+
   // ===========
   // INITIALIZER
   // ===========

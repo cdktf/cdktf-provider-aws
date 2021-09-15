@@ -25,6 +25,11 @@ export class DataAwsSecretsmanagerSecretRotationRules extends cdktf.ComplexCompu
 */
 export class DataAwsSecretsmanagerSecret extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_secretsmanager_secret";
+
   // ===========
   // INITIALIZER
   // ===========

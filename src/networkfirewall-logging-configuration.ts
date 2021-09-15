@@ -22,7 +22,7 @@ export interface NetworkfirewallLoggingConfigurationLoggingConfigurationLogDesti
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_logging_configuration.html#log_destination NetworkfirewallLoggingConfiguration#log_destination}
   */
-  readonly logDestination: { [key: string]: string };
+  readonly logDestination: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_logging_configuration.html#log_destination_type NetworkfirewallLoggingConfiguration#log_destination_type}
   */
@@ -63,6 +63,11 @@ function networkfirewallLoggingConfigurationLoggingConfigurationToTerraform(stru
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_logging_configuration.html aws_networkfirewall_logging_configuration}
 */
 export class NetworkfirewallLoggingConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_networkfirewall_logging_configuration";
 
   // ===========
   // INITIALIZER

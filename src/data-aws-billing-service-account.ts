@@ -14,6 +14,11 @@ export interface DataAwsBillingServiceAccountConfig extends cdktf.TerraformMetaA
 */
 export class DataAwsBillingServiceAccount extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_billing_service_account";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -38,6 +38,11 @@ export interface AppautoscalingTargetConfig extends cdktf.TerraformMetaArguments
 */
 export class AppautoscalingTarget extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appautoscaling_target";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -43,6 +43,11 @@ function dataAwsPricingProductFiltersToTerraform(struct?: DataAwsPricingProductF
 */
 export class DataAwsPricingProduct extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_pricing_product";
+
   // ===========
   // INITIALIZER
   // ===========

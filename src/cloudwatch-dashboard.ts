@@ -22,6 +22,11 @@ export interface CloudwatchDashboardConfig extends cdktf.TerraformMetaArguments 
 */
 export class CloudwatchDashboard extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_dashboard";
+
   // ===========
   // INITIALIZER
   // ===========

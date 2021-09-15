@@ -18,15 +18,15 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace.html#root_volume_encryption_enabled WorkspacesWorkspace#root_volume_encryption_enabled}
   */
-  readonly rootVolumeEncryptionEnabled?: boolean;
+  readonly rootVolumeEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace.html#tags WorkspacesWorkspace#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace.html#tags_all WorkspacesWorkspace#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace.html#user_name WorkspacesWorkspace#user_name}
   */
@@ -34,7 +34,7 @@ export interface WorkspacesWorkspaceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace.html#user_volume_encryption_enabled WorkspacesWorkspace#user_volume_encryption_enabled}
   */
-  readonly userVolumeEncryptionEnabled?: boolean;
+  readonly userVolumeEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/workspaces_workspace.html#volume_encryption_key WorkspacesWorkspace#volume_encryption_key}
   */
@@ -116,6 +116,11 @@ function workspacesWorkspaceWorkspacePropertiesToTerraform(struct?: WorkspacesWo
 */
 export class WorkspacesWorkspace extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_workspaces_workspace";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -196,11 +201,11 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // root_volume_encryption_enabled - computed: false, optional: true, required: false
-  private _rootVolumeEncryptionEnabled?: boolean;
+  private _rootVolumeEncryptionEnabled?: boolean | cdktf.IResolvable;
   public get rootVolumeEncryptionEnabled() {
     return this.getBooleanAttribute('root_volume_encryption_enabled');
   }
-  public set rootVolumeEncryptionEnabled(value: boolean ) {
+  public set rootVolumeEncryptionEnabled(value: boolean | cdktf.IResolvable ) {
     this._rootVolumeEncryptionEnabled = value;
   }
   public resetRootVolumeEncryptionEnabled() {
@@ -217,11 +222,11 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -233,11 +238,11 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -262,11 +267,11 @@ export class WorkspacesWorkspace extends cdktf.TerraformResource {
   }
 
   // user_volume_encryption_enabled - computed: false, optional: true, required: false
-  private _userVolumeEncryptionEnabled?: boolean;
+  private _userVolumeEncryptionEnabled?: boolean | cdktf.IResolvable;
   public get userVolumeEncryptionEnabled() {
     return this.getBooleanAttribute('user_volume_encryption_enabled');
   }
-  public set userVolumeEncryptionEnabled(value: boolean ) {
+  public set userVolumeEncryptionEnabled(value: boolean | cdktf.IResolvable ) {
     this._userVolumeEncryptionEnabled = value;
   }
   public resetUserVolumeEncryptionEnabled() {

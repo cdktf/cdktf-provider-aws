@@ -10,11 +10,11 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#allow_major_version_upgrade RdsCluster#allow_major_version_upgrade}
   */
-  readonly allowMajorVersionUpgrade?: boolean;
+  readonly allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#apply_immediately RdsCluster#apply_immediately}
   */
-  readonly applyImmediately?: boolean;
+  readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#availability_zones RdsCluster#availability_zones}
   */
@@ -42,7 +42,7 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#copy_tags_to_snapshot RdsCluster#copy_tags_to_snapshot}
   */
-  readonly copyTagsToSnapshot?: boolean;
+  readonly copyTagsToSnapshot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#database_name RdsCluster#database_name}
   */
@@ -58,11 +58,11 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#deletion_protection RdsCluster#deletion_protection}
   */
-  readonly deletionProtection?: boolean;
+  readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#enable_http_endpoint RdsCluster#enable_http_endpoint}
   */
-  readonly enableHttpEndpoint?: boolean;
+  readonly enableHttpEndpoint?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#enabled_cloudwatch_logs_exports RdsCluster#enabled_cloudwatch_logs_exports}
   */
@@ -90,7 +90,7 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#iam_database_authentication_enabled RdsCluster#iam_database_authentication_enabled}
   */
-  readonly iamDatabaseAuthenticationEnabled?: boolean;
+  readonly iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#iam_roles RdsCluster#iam_roles}
   */
@@ -126,7 +126,7 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#skip_final_snapshot RdsCluster#skip_final_snapshot}
   */
-  readonly skipFinalSnapshot?: boolean;
+  readonly skipFinalSnapshot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#snapshot_identifier RdsCluster#snapshot_identifier}
   */
@@ -138,15 +138,15 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#storage_encrypted RdsCluster#storage_encrypted}
   */
-  readonly storageEncrypted?: boolean;
+  readonly storageEncrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#tags RdsCluster#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#tags_all RdsCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#vpc_security_group_ids RdsCluster#vpc_security_group_ids}
   */
@@ -192,7 +192,7 @@ export interface RdsClusterRestoreToPointInTime {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#use_latest_restorable_time RdsCluster#use_latest_restorable_time}
   */
-  readonly useLatestRestorableTime?: boolean;
+  readonly useLatestRestorableTime?: boolean | cdktf.IResolvable;
 }
 
 function rdsClusterRestoreToPointInTimeToTerraform(struct?: RdsClusterRestoreToPointInTime): any {
@@ -243,7 +243,7 @@ export interface RdsClusterScalingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#auto_pause RdsCluster#auto_pause}
   */
-  readonly autoPause?: boolean;
+  readonly autoPause?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#max_capacity RdsCluster#max_capacity}
   */
@@ -302,6 +302,11 @@ function rdsClusterTimeoutsToTerraform(struct?: RdsClusterTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html aws_rds_cluster}
 */
 export class RdsCluster extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_rds_cluster";
 
   // ===========
   // INITIALIZER
@@ -372,11 +377,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   // ==========
 
   // allow_major_version_upgrade - computed: false, optional: true, required: false
-  private _allowMajorVersionUpgrade?: boolean;
+  private _allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
   public get allowMajorVersionUpgrade() {
     return this.getBooleanAttribute('allow_major_version_upgrade');
   }
-  public set allowMajorVersionUpgrade(value: boolean ) {
+  public set allowMajorVersionUpgrade(value: boolean | cdktf.IResolvable ) {
     this._allowMajorVersionUpgrade = value;
   }
   public resetAllowMajorVersionUpgrade() {
@@ -388,11 +393,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean;
+  private _applyImmediately?: boolean | cdktf.IResolvable;
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | cdktf.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -510,11 +515,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
-  private _copyTagsToSnapshot?: boolean;
+  private _copyTagsToSnapshot?: boolean | cdktf.IResolvable;
   public get copyTagsToSnapshot() {
     return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
-  public set copyTagsToSnapshot(value: boolean ) {
+  public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable ) {
     this._copyTagsToSnapshot = value;
   }
   public resetCopyTagsToSnapshot() {
@@ -574,11 +579,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean;
+  private _deletionProtection?: boolean | cdktf.IResolvable;
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean ) {
+  public set deletionProtection(value: boolean | cdktf.IResolvable ) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -590,11 +595,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // enable_http_endpoint - computed: false, optional: true, required: false
-  private _enableHttpEndpoint?: boolean;
+  private _enableHttpEndpoint?: boolean | cdktf.IResolvable;
   public get enableHttpEndpoint() {
     return this.getBooleanAttribute('enable_http_endpoint');
   }
-  public set enableHttpEndpoint(value: boolean ) {
+  public set enableHttpEndpoint(value: boolean | cdktf.IResolvable ) {
     this._enableHttpEndpoint = value;
   }
   public resetEnableHttpEndpoint() {
@@ -717,11 +722,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // iam_database_authentication_enabled - computed: false, optional: true, required: false
-  private _iamDatabaseAuthenticationEnabled?: boolean;
+  private _iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable;
   public get iamDatabaseAuthenticationEnabled() {
     return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
-  public set iamDatabaseAuthenticationEnabled(value: boolean ) {
+  public set iamDatabaseAuthenticationEnabled(value: boolean | cdktf.IResolvable ) {
     this._iamDatabaseAuthenticationEnabled = value;
   }
   public resetIamDatabaseAuthenticationEnabled() {
@@ -871,11 +876,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
-  private _skipFinalSnapshot?: boolean;
+  private _skipFinalSnapshot?: boolean | cdktf.IResolvable;
   public get skipFinalSnapshot() {
     return this.getBooleanAttribute('skip_final_snapshot');
   }
-  public set skipFinalSnapshot(value: boolean ) {
+  public set skipFinalSnapshot(value: boolean | cdktf.IResolvable ) {
     this._skipFinalSnapshot = value;
   }
   public resetSkipFinalSnapshot() {
@@ -919,11 +924,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // storage_encrypted - computed: true, optional: true, required: false
-  private _storageEncrypted?: boolean;
+  private _storageEncrypted?: boolean | cdktf.IResolvable;
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean) {
+  public set storageEncrypted(value: boolean | cdktf.IResolvable) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {
@@ -935,11 +940,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -951,11 +956,11 @@ export class RdsCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -18,6 +18,11 @@ export interface DataAwsQldbLedgerConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsQldbLedger extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_qldb_ledger";
+
   // ===========
   // INITIALIZER
   // ===========

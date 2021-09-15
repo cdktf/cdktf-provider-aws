@@ -59,6 +59,11 @@ function configConformancePackInputParameterToTerraform(struct?: ConfigConforman
 */
 export class ConfigConformancePack extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_config_conformance_pack";
+
   // ===========
   // INITIALIZER
   // ===========

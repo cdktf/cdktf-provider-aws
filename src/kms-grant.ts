@@ -30,7 +30,7 @@ export interface KmsGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_grant.html#retire_on_delete KmsGrant#retire_on_delete}
   */
-  readonly retireOnDelete?: boolean;
+  readonly retireOnDelete?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_grant.html#retiring_principal KmsGrant#retiring_principal}
   */
@@ -46,11 +46,11 @@ export interface KmsGrantConstraints {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_grant.html#encryption_context_equals KmsGrant#encryption_context_equals}
   */
-  readonly encryptionContextEquals?: { [key: string]: string };
+  readonly encryptionContextEquals?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kms_grant.html#encryption_context_subset KmsGrant#encryption_context_subset}
   */
-  readonly encryptionContextSubset?: { [key: string]: string };
+  readonly encryptionContextSubset?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function kmsGrantConstraintsToTerraform(struct?: KmsGrantConstraints): any {
@@ -66,6 +66,11 @@ function kmsGrantConstraintsToTerraform(struct?: KmsGrantConstraints): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/kms_grant.html aws_kms_grant}
 */
 export class KmsGrant extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kms_grant";
 
   // ===========
   // INITIALIZER
@@ -190,11 +195,11 @@ export class KmsGrant extends cdktf.TerraformResource {
   }
 
   // retire_on_delete - computed: false, optional: true, required: false
-  private _retireOnDelete?: boolean;
+  private _retireOnDelete?: boolean | cdktf.IResolvable;
   public get retireOnDelete() {
     return this.getBooleanAttribute('retire_on_delete');
   }
-  public set retireOnDelete(value: boolean ) {
+  public set retireOnDelete(value: boolean | cdktf.IResolvable ) {
     this._retireOnDelete = value;
   }
   public resetRetireOnDelete() {

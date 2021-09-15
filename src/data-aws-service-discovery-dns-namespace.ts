@@ -22,6 +22,11 @@ export interface DataAwsServiceDiscoveryDnsNamespaceConfig extends cdktf.Terrafo
 */
 export class DataAwsServiceDiscoveryDnsNamespace extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_service_discovery_dns_namespace";
+
   // ===========
   // INITIALIZER
   // ===========

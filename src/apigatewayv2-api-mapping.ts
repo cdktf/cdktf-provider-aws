@@ -30,6 +30,11 @@ export interface Apigatewayv2ApiMappingConfig extends cdktf.TerraformMetaArgumen
 */
 export class Apigatewayv2ApiMapping extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_api_mapping";
+
   // ===========
   // INITIALIZER
   // ===========

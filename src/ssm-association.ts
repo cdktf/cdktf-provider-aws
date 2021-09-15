@@ -10,7 +10,7 @@ export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association.html#apply_only_at_cron_interval SsmAssociation#apply_only_at_cron_interval}
   */
-  readonly applyOnlyAtCronInterval?: boolean;
+  readonly applyOnlyAtCronInterval?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association.html#association_name SsmAssociation#association_name}
   */
@@ -46,7 +46,7 @@ export interface SsmAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association.html#parameters SsmAssociation#parameters}
   */
-  readonly parameters?: { [key: string]: string };
+  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association.html#schedule_expression SsmAssociation#schedule_expression}
   */
@@ -108,6 +108,11 @@ function ssmAssociationTargetsToTerraform(struct?: SsmAssociationTargets): any {
 */
 export class SsmAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_association";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -150,11 +155,11 @@ export class SsmAssociation extends cdktf.TerraformResource {
   // ==========
 
   // apply_only_at_cron_interval - computed: false, optional: true, required: false
-  private _applyOnlyAtCronInterval?: boolean;
+  private _applyOnlyAtCronInterval?: boolean | cdktf.IResolvable;
   public get applyOnlyAtCronInterval() {
     return this.getBooleanAttribute('apply_only_at_cron_interval');
   }
-  public set applyOnlyAtCronInterval(value: boolean ) {
+  public set applyOnlyAtCronInterval(value: boolean | cdktf.IResolvable ) {
     this._applyOnlyAtCronInterval = value;
   }
   public resetApplyOnlyAtCronInterval() {
@@ -301,11 +306,11 @@ export class SsmAssociation extends cdktf.TerraformResource {
   }
 
   // parameters - computed: true, optional: true, required: false
-  private _parameters?: { [key: string]: string }
-  public get parameters(): { [key: string]: string } {
+  private _parameters?: { [key: string]: string } | cdktf.IResolvable
+  public get parameters(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('parameters') as any; // Getting the computed value is not yet implemented
   }
-  public set parameters(value: { [key: string]: string }) {
+  public set parameters(value: { [key: string]: string } | cdktf.IResolvable) {
     this._parameters = value;
   }
   public resetParameters() {

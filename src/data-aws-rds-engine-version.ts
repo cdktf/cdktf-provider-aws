@@ -30,6 +30,11 @@ export interface DataAwsRdsEngineVersionConfig extends cdktf.TerraformMetaArgume
 */
 export class DataAwsRdsEngineVersion extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_rds_engine_version";
+
   // ===========
   // INITIALIZER
   // ===========

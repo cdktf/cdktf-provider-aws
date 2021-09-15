@@ -26,6 +26,11 @@ export interface SagemakerNotebookInstanceLifecycleConfigurationConfig extends c
 */
 export class SagemakerNotebookInstanceLifecycleConfiguration extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sagemaker_notebook_instance_lifecycle_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

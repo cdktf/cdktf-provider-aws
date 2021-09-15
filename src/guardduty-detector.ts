@@ -10,7 +10,7 @@ export interface GuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_detector.html#enable GuarddutyDetector#enable}
   */
-  readonly enable?: boolean;
+  readonly enable?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_detector.html#finding_publishing_frequency GuarddutyDetector#finding_publishing_frequency}
   */
@@ -18,11 +18,11 @@ export interface GuarddutyDetectorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_detector.html#tags GuarddutyDetector#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_detector.html#tags_all GuarddutyDetector#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * datasources block
   * 
@@ -34,7 +34,7 @@ export interface GuarddutyDetectorDatasourcesS3Logs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_detector.html#enable GuarddutyDetector#enable}
   */
-  readonly enable: boolean;
+  readonly enable: boolean | cdktf.IResolvable;
 }
 
 function guarddutyDetectorDatasourcesS3LogsToTerraform(struct?: GuarddutyDetectorDatasourcesS3Logs): any {
@@ -65,6 +65,11 @@ function guarddutyDetectorDatasourcesToTerraform(struct?: GuarddutyDetectorDatas
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_detector.html aws_guardduty_detector}
 */
 export class GuarddutyDetector extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_guardduty_detector";
 
   // ===========
   // INITIALIZER
@@ -110,11 +115,11 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
   }
 
   // enable - computed: false, optional: true, required: false
-  private _enable?: boolean;
+  private _enable?: boolean | cdktf.IResolvable;
   public get enable() {
     return this.getBooleanAttribute('enable');
   }
-  public set enable(value: boolean ) {
+  public set enable(value: boolean | cdktf.IResolvable ) {
     this._enable = value;
   }
   public resetEnable() {
@@ -147,11 +152,11 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -163,11 +168,11 @@ export class GuarddutyDetector extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

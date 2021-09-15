@@ -22,7 +22,7 @@ export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_objects.html#fetch_owner DataAwsS3BucketObjects#fetch_owner}
   */
-  readonly fetchOwner?: boolean;
+  readonly fetchOwner?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_objects.html#max_keys DataAwsS3BucketObjects#max_keys}
   */
@@ -41,6 +41,11 @@ export interface DataAwsS3BucketObjectsConfig extends cdktf.TerraformMetaArgumen
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_objects.html aws_s3_bucket_objects}
 */
 export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_bucket_objects";
 
   // ===========
   // INITIALIZER
@@ -128,11 +133,11 @@ export class DataAwsS3BucketObjects extends cdktf.TerraformDataSource {
   }
 
   // fetch_owner - computed: false, optional: true, required: false
-  private _fetchOwner?: boolean;
+  private _fetchOwner?: boolean | cdktf.IResolvable;
   public get fetchOwner() {
     return this.getBooleanAttribute('fetch_owner');
   }
-  public set fetchOwner(value: boolean ) {
+  public set fetchOwner(value: boolean | cdktf.IResolvable ) {
     this._fetchOwner = value;
   }
   public resetFetchOwner() {

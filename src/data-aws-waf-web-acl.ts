@@ -18,6 +18,11 @@ export interface DataAwsWafWebAclConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsWafWebAcl extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_web_acl";
+
   // ===========
   // INITIALIZER
   // ===========

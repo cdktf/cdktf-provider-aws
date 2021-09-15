@@ -30,6 +30,11 @@ export interface LbTargetGroupAttachmentConfig extends cdktf.TerraformMetaArgume
 */
 export class LbTargetGroupAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lb_target_group_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

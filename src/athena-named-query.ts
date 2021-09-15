@@ -34,6 +34,11 @@ export interface AthenaNamedQueryConfig extends cdktf.TerraformMetaArguments {
 */
 export class AthenaNamedQuery extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_athena_named_query";
+
   // ===========
   // INITIALIZER
   // ===========

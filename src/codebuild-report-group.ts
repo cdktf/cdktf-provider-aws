@@ -10,7 +10,7 @@ export interface CodebuildReportGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_report_group.html#delete_reports CodebuildReportGroup#delete_reports}
   */
-  readonly deleteReports?: boolean;
+  readonly deleteReports?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_report_group.html#name CodebuildReportGroup#name}
   */
@@ -18,11 +18,11 @@ export interface CodebuildReportGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_report_group.html#tags CodebuildReportGroup#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_report_group.html#tags_all CodebuildReportGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_report_group.html#type CodebuildReportGroup#type}
   */
@@ -42,7 +42,7 @@ export interface CodebuildReportGroupExportConfigS3Destination {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_report_group.html#encryption_disabled CodebuildReportGroup#encryption_disabled}
   */
-  readonly encryptionDisabled?: boolean;
+  readonly encryptionDisabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_report_group.html#encryption_key CodebuildReportGroup#encryption_key}
   */
@@ -95,6 +95,11 @@ function codebuildReportGroupExportConfigToTerraform(struct?: CodebuildReportGro
 */
 export class CodebuildReportGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codebuild_report_group";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -140,11 +145,11 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   }
 
   // delete_reports - computed: false, optional: true, required: false
-  private _deleteReports?: boolean;
+  private _deleteReports?: boolean | cdktf.IResolvable;
   public get deleteReports() {
     return this.getBooleanAttribute('delete_reports');
   }
-  public set deleteReports(value: boolean ) {
+  public set deleteReports(value: boolean | cdktf.IResolvable ) {
     this._deleteReports = value;
   }
   public resetDeleteReports() {
@@ -174,11 +179,11 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -190,11 +195,11 @@ export class CodebuildReportGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

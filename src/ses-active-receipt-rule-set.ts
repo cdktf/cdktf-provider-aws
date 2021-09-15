@@ -18,6 +18,11 @@ export interface SesActiveReceiptRuleSetConfig extends cdktf.TerraformMetaArgume
 */
 export class SesActiveReceiptRuleSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_active_receipt_rule_set";
+
   // ===========
   // INITIALIZER
   // ===========

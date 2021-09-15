@@ -22,6 +22,11 @@ export interface RamPrincipalAssociationConfig extends cdktf.TerraformMetaArgume
 */
 export class RamPrincipalAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ram_principal_association";
+
   // ===========
   // INITIALIZER
   // ===========

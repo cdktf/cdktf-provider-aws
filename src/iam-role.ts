@@ -18,7 +18,7 @@ export interface IamRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_role.html#force_detach_policies IamRole#force_detach_policies}
   */
-  readonly forceDetachPolicies?: boolean;
+  readonly forceDetachPolicies?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_role.html#managed_policy_arns IamRole#managed_policy_arns}
   */
@@ -46,11 +46,11 @@ export interface IamRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_role.html#tags IamRole#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iam_role.html#tags_all IamRole#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * inline_policy block
   * 
@@ -82,6 +82,11 @@ function iamRoleInlinePolicyToTerraform(struct?: IamRoleInlinePolicy): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_role.html aws_iam_role}
 */
 export class IamRole extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_role";
 
   // ===========
   // INITIALIZER
@@ -163,11 +168,11 @@ export class IamRole extends cdktf.TerraformResource {
   }
 
   // force_detach_policies - computed: false, optional: true, required: false
-  private _forceDetachPolicies?: boolean;
+  private _forceDetachPolicies?: boolean | cdktf.IResolvable;
   public get forceDetachPolicies() {
     return this.getBooleanAttribute('force_detach_policies');
   }
-  public set forceDetachPolicies(value: boolean ) {
+  public set forceDetachPolicies(value: boolean | cdktf.IResolvable ) {
     this._forceDetachPolicies = value;
   }
   public resetForceDetachPolicies() {
@@ -280,11 +285,11 @@ export class IamRole extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -296,11 +301,11 @@ export class IamRole extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

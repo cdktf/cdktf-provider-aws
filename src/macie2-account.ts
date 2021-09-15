@@ -22,6 +22,11 @@ export interface Macie2AccountConfig extends cdktf.TerraformMetaArguments {
 */
 export class Macie2Account extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_macie2_account";
+
   // ===========
   // INITIALIZER
   // ===========

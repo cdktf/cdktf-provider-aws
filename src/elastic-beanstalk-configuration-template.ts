@@ -69,6 +69,11 @@ function elasticBeanstalkConfigurationTemplateSettingToTerraform(struct?: Elasti
 */
 export class ElasticBeanstalkConfigurationTemplate extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elastic_beanstalk_configuration_template";
+
   // ===========
   // INITIALIZER
   // ===========

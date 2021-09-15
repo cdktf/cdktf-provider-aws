@@ -10,11 +10,11 @@ export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#delete_all_policy_resources FmsPolicy#delete_all_policy_resources}
   */
-  readonly deleteAllPolicyResources?: boolean;
+  readonly deleteAllPolicyResources?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#exclude_resource_tags FmsPolicy#exclude_resource_tags}
   */
-  readonly excludeResourceTags: boolean;
+  readonly excludeResourceTags: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#name FmsPolicy#name}
   */
@@ -22,11 +22,11 @@ export interface FmsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#remediation_enabled FmsPolicy#remediation_enabled}
   */
-  readonly remediationEnabled?: boolean;
+  readonly remediationEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#resource_tags FmsPolicy#resource_tags}
   */
-  readonly resourceTags?: { [key: string]: string };
+  readonly resourceTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy.html#resource_type FmsPolicy#resource_type}
   */
@@ -117,6 +117,11 @@ function fmsPolicySecurityServicePolicyDataToTerraform(struct?: FmsPolicySecurit
 */
 export class FmsPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_fms_policy";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -161,11 +166,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // delete_all_policy_resources - computed: false, optional: true, required: false
-  private _deleteAllPolicyResources?: boolean;
+  private _deleteAllPolicyResources?: boolean | cdktf.IResolvable;
   public get deleteAllPolicyResources() {
     return this.getBooleanAttribute('delete_all_policy_resources');
   }
-  public set deleteAllPolicyResources(value: boolean ) {
+  public set deleteAllPolicyResources(value: boolean | cdktf.IResolvable ) {
     this._deleteAllPolicyResources = value;
   }
   public resetDeleteAllPolicyResources() {
@@ -177,11 +182,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // exclude_resource_tags - computed: false, optional: false, required: true
-  private _excludeResourceTags: boolean;
+  private _excludeResourceTags: boolean | cdktf.IResolvable;
   public get excludeResourceTags() {
     return this.getBooleanAttribute('exclude_resource_tags');
   }
-  public set excludeResourceTags(value: boolean) {
+  public set excludeResourceTags(value: boolean | cdktf.IResolvable) {
     this._excludeResourceTags = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -213,11 +218,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // remediation_enabled - computed: false, optional: true, required: false
-  private _remediationEnabled?: boolean;
+  private _remediationEnabled?: boolean | cdktf.IResolvable;
   public get remediationEnabled() {
     return this.getBooleanAttribute('remediation_enabled');
   }
-  public set remediationEnabled(value: boolean ) {
+  public set remediationEnabled(value: boolean | cdktf.IResolvable ) {
     this._remediationEnabled = value;
   }
   public resetRemediationEnabled() {
@@ -229,11 +234,11 @@ export class FmsPolicy extends cdktf.TerraformResource {
   }
 
   // resource_tags - computed: false, optional: true, required: false
-  private _resourceTags?: { [key: string]: string };
+  private _resourceTags?: { [key: string]: string } | cdktf.IResolvable;
   public get resourceTags() {
     return this.interpolationForAttribute('resource_tags') as any;
   }
-  public set resourceTags(value: { [key: string]: string } ) {
+  public set resourceTags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._resourceTags = value;
   }
   public resetResourceTags() {

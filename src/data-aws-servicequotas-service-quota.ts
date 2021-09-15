@@ -26,6 +26,11 @@ export interface DataAwsServicequotasServiceQuotaConfig extends cdktf.TerraformM
 */
 export class DataAwsServicequotasServiceQuota extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicequotas_service_quota";
+
   // ===========
   // INITIALIZER
   // ===========

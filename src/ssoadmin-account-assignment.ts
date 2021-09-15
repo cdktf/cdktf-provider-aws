@@ -38,6 +38,11 @@ export interface SsoadminAccountAssignmentConfig extends cdktf.TerraformMetaArgu
 */
 export class SsoadminAccountAssignment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssoadmin_account_assignment";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -14,6 +14,11 @@ export interface SecurityhubAccountConfig extends cdktf.TerraformMetaArguments {
 */
 export class SecurityhubAccount extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_account";
+
   // ===========
   // INITIALIZER
   // ===========

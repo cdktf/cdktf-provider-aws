@@ -22,6 +22,11 @@ export interface DataAwsBackupSelectionConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataAwsBackupSelection extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_backup_selection";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -30,6 +30,11 @@ export interface DataAwsRedshiftOrderableClusterConfig extends cdktf.TerraformMe
 */
 export class DataAwsRedshiftOrderableCluster extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_redshift_orderable_cluster";
+
   // ===========
   // INITIALIZER
   // ===========

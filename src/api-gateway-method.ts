@@ -10,7 +10,7 @@ export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method.html#api_key_required ApiGatewayMethod#api_key_required}
   */
-  readonly apiKeyRequired?: boolean;
+  readonly apiKeyRequired?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method.html#authorization ApiGatewayMethod#authorization}
   */
@@ -34,11 +34,11 @@ export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method.html#request_models ApiGatewayMethod#request_models}
   */
-  readonly requestModels?: { [key: string]: string };
+  readonly requestModels?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method.html#request_parameters ApiGatewayMethod#request_parameters}
   */
-  readonly requestParameters?: { [key: string]: boolean };
+  readonly requestParameters?: { [key: string]: boolean } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method.html#request_validator_id ApiGatewayMethod#request_validator_id}
   */
@@ -57,6 +57,11 @@ export interface ApiGatewayMethodConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method.html aws_api_gateway_method}
 */
 export class ApiGatewayMethod extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_method";
 
   // ===========
   // INITIALIZER
@@ -98,11 +103,11 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   // ==========
 
   // api_key_required - computed: false, optional: true, required: false
-  private _apiKeyRequired?: boolean;
+  private _apiKeyRequired?: boolean | cdktf.IResolvable;
   public get apiKeyRequired() {
     return this.getBooleanAttribute('api_key_required');
   }
-  public set apiKeyRequired(value: boolean ) {
+  public set apiKeyRequired(value: boolean | cdktf.IResolvable ) {
     this._apiKeyRequired = value;
   }
   public resetApiKeyRequired() {
@@ -193,11 +198,11 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   }
 
   // request_models - computed: false, optional: true, required: false
-  private _requestModels?: { [key: string]: string };
+  private _requestModels?: { [key: string]: string } | cdktf.IResolvable;
   public get requestModels() {
     return this.interpolationForAttribute('request_models') as any;
   }
-  public set requestModels(value: { [key: string]: string } ) {
+  public set requestModels(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._requestModels = value;
   }
   public resetRequestModels() {
@@ -209,11 +214,11 @@ export class ApiGatewayMethod extends cdktf.TerraformResource {
   }
 
   // request_parameters - computed: false, optional: true, required: false
-  private _requestParameters?: { [key: string]: boolean };
+  private _requestParameters?: { [key: string]: boolean } | cdktf.IResolvable;
   public get requestParameters() {
-    return this.interpolationForAttribute('request_parameters') as any;
+    return this.getBooleanAttribute('request_parameters');
   }
-  public set requestParameters(value: { [key: string]: boolean } ) {
+  public set requestParameters(value: { [key: string]: boolean } | cdktf.IResolvable ) {
     this._requestParameters = value;
   }
   public resetRequestParameters() {

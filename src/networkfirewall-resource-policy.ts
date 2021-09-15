@@ -22,6 +22,11 @@ export interface NetworkfirewallResourcePolicyConfig extends cdktf.TerraformMeta
 */
 export class NetworkfirewallResourcePolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_networkfirewall_resource_policy";
+
   // ===========
   // INITIALIZER
   // ===========

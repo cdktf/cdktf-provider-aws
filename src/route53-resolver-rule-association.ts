@@ -51,6 +51,11 @@ function route53ResolverRuleAssociationTimeoutsToTerraform(struct?: Route53Resol
 */
 export class Route53ResolverRuleAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_resolver_rule_association";
+
   // ===========
   // INITIALIZER
   // ===========

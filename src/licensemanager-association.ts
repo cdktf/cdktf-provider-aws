@@ -22,6 +22,11 @@ export interface LicensemanagerAssociationConfig extends cdktf.TerraformMetaArgu
 */
 export class LicensemanagerAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_licensemanager_association";
+
   // ===========
   // INITIALIZER
   // ===========

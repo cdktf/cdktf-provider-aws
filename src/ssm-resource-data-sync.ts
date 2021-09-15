@@ -58,6 +58,11 @@ function ssmResourceDataSyncS3DestinationToTerraform(struct?: SsmResourceDataSyn
 */
 export class SsmResourceDataSync extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_resource_data_sync";
+
   // ===========
   // INITIALIZER
   // ===========

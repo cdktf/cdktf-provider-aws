@@ -26,6 +26,11 @@ export interface DirectoryServiceConditionalForwarderConfig extends cdktf.Terraf
 */
 export class DirectoryServiceConditionalForwarder extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_directory_service_conditional_forwarder";
+
   // ===========
   // INITIALIZER
   // ===========

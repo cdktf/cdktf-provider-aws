@@ -26,6 +26,11 @@ export interface AutoscalingNotificationConfig extends cdktf.TerraformMetaArgume
 */
 export class AutoscalingNotification extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_notification";
+
   // ===========
   // INITIALIZER
   // ===========

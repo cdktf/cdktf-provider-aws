@@ -18,6 +18,11 @@ export interface DataAwsSnsTopicConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsSnsTopic extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sns_topic";
+
   // ===========
   // INITIALIZER
   // ===========

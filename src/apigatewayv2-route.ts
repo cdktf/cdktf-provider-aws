@@ -14,7 +14,7 @@ export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route.html#api_key_required Apigatewayv2Route#api_key_required}
   */
-  readonly apiKeyRequired?: boolean;
+  readonly apiKeyRequired?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route.html#authorization_scopes Apigatewayv2Route#authorization_scopes}
   */
@@ -38,7 +38,7 @@ export interface Apigatewayv2RouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route.html#request_models Apigatewayv2Route#request_models}
   */
-  readonly requestModels?: { [key: string]: string };
+  readonly requestModels?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route.html#route_key Apigatewayv2Route#route_key}
   */
@@ -66,7 +66,7 @@ export interface Apigatewayv2RouteRequestParameter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route.html#required Apigatewayv2Route#required}
   */
-  readonly required: boolean;
+  readonly required: boolean | cdktf.IResolvable;
 }
 
 function apigatewayv2RouteRequestParameterToTerraform(struct?: Apigatewayv2RouteRequestParameter): any {
@@ -82,6 +82,11 @@ function apigatewayv2RouteRequestParameterToTerraform(struct?: Apigatewayv2Route
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route.html aws_apigatewayv2_route}
 */
 export class Apigatewayv2Route extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_route";
 
   // ===========
   // INITIALIZER
@@ -137,11 +142,11 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   }
 
   // api_key_required - computed: false, optional: true, required: false
-  private _apiKeyRequired?: boolean;
+  private _apiKeyRequired?: boolean | cdktf.IResolvable;
   public get apiKeyRequired() {
     return this.getBooleanAttribute('api_key_required');
   }
-  public set apiKeyRequired(value: boolean ) {
+  public set apiKeyRequired(value: boolean | cdktf.IResolvable ) {
     this._apiKeyRequired = value;
   }
   public resetApiKeyRequired() {
@@ -238,11 +243,11 @@ export class Apigatewayv2Route extends cdktf.TerraformResource {
   }
 
   // request_models - computed: false, optional: true, required: false
-  private _requestModels?: { [key: string]: string };
+  private _requestModels?: { [key: string]: string } | cdktf.IResolvable;
   public get requestModels() {
     return this.interpolationForAttribute('request_models') as any;
   }
-  public set requestModels(value: { [key: string]: string } ) {
+  public set requestModels(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._requestModels = value;
   }
   public resetRequestModels() {

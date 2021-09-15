@@ -26,17 +26,22 @@ export interface ApiGatewayDeploymentConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html#triggers ApiGatewayDeployment#triggers}
   */
-  readonly triggers?: { [key: string]: string };
+  readonly triggers?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html#variables ApiGatewayDeployment#variables}
   */
-  readonly variables?: { [key: string]: string };
+  readonly variables?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment.html aws_api_gateway_deployment}
 */
 export class ApiGatewayDeployment extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_deployment";
 
   // ===========
   // INITIALIZER
@@ -154,11 +159,11 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
   }
 
   // triggers - computed: false, optional: true, required: false
-  private _triggers?: { [key: string]: string };
+  private _triggers?: { [key: string]: string } | cdktf.IResolvable;
   public get triggers() {
     return this.interpolationForAttribute('triggers') as any;
   }
-  public set triggers(value: { [key: string]: string } ) {
+  public set triggers(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._triggers = value;
   }
   public resetTriggers() {
@@ -170,11 +175,11 @@ export class ApiGatewayDeployment extends cdktf.TerraformResource {
   }
 
   // variables - computed: false, optional: true, required: false
-  private _variables?: { [key: string]: string };
+  private _variables?: { [key: string]: string } | cdktf.IResolvable;
   public get variables() {
     return this.interpolationForAttribute('variables') as any;
   }
-  public set variables(value: { [key: string]: string } ) {
+  public set variables(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._variables = value;
   }
   public resetVariables() {

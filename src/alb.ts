@@ -14,19 +14,19 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#drop_invalid_header_fields Alb#drop_invalid_header_fields}
   */
-  readonly dropInvalidHeaderFields?: boolean;
+  readonly dropInvalidHeaderFields?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#enable_cross_zone_load_balancing Alb#enable_cross_zone_load_balancing}
   */
-  readonly enableCrossZoneLoadBalancing?: boolean;
+  readonly enableCrossZoneLoadBalancing?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#enable_deletion_protection Alb#enable_deletion_protection}
   */
-  readonly enableDeletionProtection?: boolean;
+  readonly enableDeletionProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#enable_http2 Alb#enable_http2}
   */
-  readonly enableHttp2?: boolean;
+  readonly enableHttp2?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#idle_timeout Alb#idle_timeout}
   */
@@ -34,7 +34,7 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#internal Alb#internal}
   */
-  readonly internal?: boolean;
+  readonly internal?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#ip_address_type Alb#ip_address_type}
   */
@@ -62,11 +62,11 @@ export interface AlbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#tags Alb#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#tags_all Alb#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * access_logs block
   * 
@@ -94,7 +94,7 @@ export interface AlbAccessLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#enabled Alb#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#prefix Alb#prefix}
   */
@@ -168,6 +168,11 @@ function albTimeoutsToTerraform(struct?: AlbTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/alb.html aws_alb}
 */
 export class Alb extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_alb";
 
   // ===========
   // INITIALIZER
@@ -247,11 +252,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // drop_invalid_header_fields - computed: false, optional: true, required: false
-  private _dropInvalidHeaderFields?: boolean;
+  private _dropInvalidHeaderFields?: boolean | cdktf.IResolvable;
   public get dropInvalidHeaderFields() {
     return this.getBooleanAttribute('drop_invalid_header_fields');
   }
-  public set dropInvalidHeaderFields(value: boolean ) {
+  public set dropInvalidHeaderFields(value: boolean | cdktf.IResolvable ) {
     this._dropInvalidHeaderFields = value;
   }
   public resetDropInvalidHeaderFields() {
@@ -263,11 +268,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_cross_zone_load_balancing - computed: false, optional: true, required: false
-  private _enableCrossZoneLoadBalancing?: boolean;
+  private _enableCrossZoneLoadBalancing?: boolean | cdktf.IResolvable;
   public get enableCrossZoneLoadBalancing() {
     return this.getBooleanAttribute('enable_cross_zone_load_balancing');
   }
-  public set enableCrossZoneLoadBalancing(value: boolean ) {
+  public set enableCrossZoneLoadBalancing(value: boolean | cdktf.IResolvable ) {
     this._enableCrossZoneLoadBalancing = value;
   }
   public resetEnableCrossZoneLoadBalancing() {
@@ -279,11 +284,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_deletion_protection - computed: false, optional: true, required: false
-  private _enableDeletionProtection?: boolean;
+  private _enableDeletionProtection?: boolean | cdktf.IResolvable;
   public get enableDeletionProtection() {
     return this.getBooleanAttribute('enable_deletion_protection');
   }
-  public set enableDeletionProtection(value: boolean ) {
+  public set enableDeletionProtection(value: boolean | cdktf.IResolvable ) {
     this._enableDeletionProtection = value;
   }
   public resetEnableDeletionProtection() {
@@ -295,11 +300,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // enable_http2 - computed: false, optional: true, required: false
-  private _enableHttp2?: boolean;
+  private _enableHttp2?: boolean | cdktf.IResolvable;
   public get enableHttp2() {
     return this.getBooleanAttribute('enable_http2');
   }
-  public set enableHttp2(value: boolean ) {
+  public set enableHttp2(value: boolean | cdktf.IResolvable ) {
     this._enableHttp2 = value;
   }
   public resetEnableHttp2() {
@@ -332,11 +337,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // internal - computed: true, optional: true, required: false
-  private _internal?: boolean;
+  private _internal?: boolean | cdktf.IResolvable;
   public get internal() {
     return this.getBooleanAttribute('internal');
   }
-  public set internal(value: boolean) {
+  public set internal(value: boolean | cdktf.IResolvable) {
     this._internal = value;
   }
   public resetInternal() {
@@ -444,11 +449,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -460,11 +465,11 @@ export class Alb extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

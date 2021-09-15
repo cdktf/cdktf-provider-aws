@@ -18,6 +18,11 @@ export interface DataAwsCloudwatchEventConnectionConfig extends cdktf.TerraformM
 */
 export class DataAwsCloudwatchEventConnection extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_connection";
+
   // ===========
   // INITIALIZER
   // ===========

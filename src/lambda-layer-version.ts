@@ -50,6 +50,11 @@ export interface LambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
 */
 export class LambdaLayerVersion extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_layer_version";
+
   // ===========
   // INITIALIZER
   // ===========

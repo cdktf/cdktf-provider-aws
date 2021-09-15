@@ -102,6 +102,11 @@ export class DataAwsOrganizationsOrganizationRoots extends cdktf.ComplexComputed
 */
 export class DataAwsOrganizationsOrganization extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_organizations_organization";
+
   // ===========
   // INITIALIZER
   // ===========

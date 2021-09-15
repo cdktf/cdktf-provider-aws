@@ -22,6 +22,11 @@ export interface DataAwsAcmpcaCertificateConfig extends cdktf.TerraformMetaArgum
 */
 export class DataAwsAcmpcaCertificate extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_acmpca_certificate";
+
   // ===========
   // INITIALIZER
   // ===========

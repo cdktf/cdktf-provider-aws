@@ -28,15 +28,15 @@ export interface VpcPeeringConnectionOptionsAccepter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_classic_link_to_remote_vpc VpcPeeringConnectionOptions#allow_classic_link_to_remote_vpc}
   */
-  readonly allowClassicLinkToRemoteVpc?: boolean;
+  readonly allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_remote_vpc_dns_resolution VpcPeeringConnectionOptions#allow_remote_vpc_dns_resolution}
   */
-  readonly allowRemoteVpcDnsResolution?: boolean;
+  readonly allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_vpc_to_remote_classic_link VpcPeeringConnectionOptions#allow_vpc_to_remote_classic_link}
   */
-  readonly allowVpcToRemoteClassicLink?: boolean;
+  readonly allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable;
 }
 
 function vpcPeeringConnectionOptionsAccepterToTerraform(struct?: VpcPeeringConnectionOptionsAccepter): any {
@@ -52,15 +52,15 @@ export interface VpcPeeringConnectionOptionsRequester {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_classic_link_to_remote_vpc VpcPeeringConnectionOptions#allow_classic_link_to_remote_vpc}
   */
-  readonly allowClassicLinkToRemoteVpc?: boolean;
+  readonly allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_remote_vpc_dns_resolution VpcPeeringConnectionOptions#allow_remote_vpc_dns_resolution}
   */
-  readonly allowRemoteVpcDnsResolution?: boolean;
+  readonly allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html#allow_vpc_to_remote_classic_link VpcPeeringConnectionOptions#allow_vpc_to_remote_classic_link}
   */
-  readonly allowVpcToRemoteClassicLink?: boolean;
+  readonly allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable;
 }
 
 function vpcPeeringConnectionOptionsRequesterToTerraform(struct?: VpcPeeringConnectionOptionsRequester): any {
@@ -77,6 +77,11 @@ function vpcPeeringConnectionOptionsRequesterToTerraform(struct?: VpcPeeringConn
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_options.html aws_vpc_peering_connection_options}
 */
 export class VpcPeeringConnectionOptions extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_peering_connection_options";
 
   // ===========
   // INITIALIZER
