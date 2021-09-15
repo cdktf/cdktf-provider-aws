@@ -40,6 +40,11 @@ export class DataAwsElasticBeanstalkApplicationAppversionLifecycle extends cdktf
 */
 export class DataAwsElasticBeanstalkApplication extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elastic_beanstalk_application";
+
   // ===========
   // INITIALIZER
   // ===========

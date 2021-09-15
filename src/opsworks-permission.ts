@@ -10,11 +10,11 @@ export interface OpsworksPermissionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission.html#allow_ssh OpsworksPermission#allow_ssh}
   */
-  readonly allowSsh?: boolean;
+  readonly allowSsh?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission.html#allow_sudo OpsworksPermission#allow_sudo}
   */
-  readonly allowSudo?: boolean;
+  readonly allowSudo?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission.html#level OpsworksPermission#level}
   */
@@ -33,6 +33,11 @@ export interface OpsworksPermissionConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission.html aws_opsworks_permission}
 */
 export class OpsworksPermission extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_opsworks_permission";
 
   // ===========
   // INITIALIZER
@@ -68,11 +73,11 @@ export class OpsworksPermission extends cdktf.TerraformResource {
   // ==========
 
   // allow_ssh - computed: true, optional: true, required: false
-  private _allowSsh?: boolean;
+  private _allowSsh?: boolean | cdktf.IResolvable;
   public get allowSsh() {
     return this.getBooleanAttribute('allow_ssh');
   }
-  public set allowSsh(value: boolean) {
+  public set allowSsh(value: boolean | cdktf.IResolvable) {
     this._allowSsh = value;
   }
   public resetAllowSsh() {
@@ -84,11 +89,11 @@ export class OpsworksPermission extends cdktf.TerraformResource {
   }
 
   // allow_sudo - computed: true, optional: true, required: false
-  private _allowSudo?: boolean;
+  private _allowSudo?: boolean | cdktf.IResolvable;
   public get allowSudo() {
     return this.getBooleanAttribute('allow_sudo');
   }
-  public set allowSudo(value: boolean) {
+  public set allowSudo(value: boolean | cdktf.IResolvable) {
     this._allowSudo = value;
   }
   public resetAllowSudo() {

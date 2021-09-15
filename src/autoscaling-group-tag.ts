@@ -26,7 +26,7 @@ export interface AutoscalingGroupTagTag {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group_tag.html#propagate_at_launch AutoscalingGroupTagA#propagate_at_launch}
   */
-  readonly propagateAtLaunch: boolean;
+  readonly propagateAtLaunch: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group_tag.html#value AutoscalingGroupTagA#value}
   */
@@ -47,6 +47,11 @@ function autoscalingGroupTagTagToTerraform(struct?: AutoscalingGroupTagTag): any
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group_tag.html aws_autoscaling_group_tag}
 */
 export class AutoscalingGroupTagA extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_group_tag";
 
   // ===========
   // INITIALIZER

@@ -18,6 +18,11 @@ export interface DataAwsWafregionalIpsetConfig extends cdktf.TerraformMetaArgume
 */
 export class DataAwsWafregionalIpset extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafregional_ipset";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -10,11 +10,11 @@ export interface DataAwsEbsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html#most_recent DataAwsEbsVolume#most_recent}
   */
-  readonly mostRecent?: boolean;
+  readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html#tags DataAwsEbsVolume#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
@@ -46,6 +46,11 @@ function dataAwsEbsVolumeFilterToTerraform(struct?: DataAwsEbsVolumeFilter): any
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume.html aws_ebs_volume}
 */
 export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ebs_volume";
 
   // ===========
   // INITIALIZER
@@ -109,11 +114,11 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean;
+  private _mostRecent?: boolean | cdktf.IResolvable;
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean ) {
+  public set mostRecent(value: boolean | cdktf.IResolvable ) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -145,11 +150,11 @@ export class DataAwsEbsVolume extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

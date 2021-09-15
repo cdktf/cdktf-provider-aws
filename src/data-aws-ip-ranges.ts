@@ -26,6 +26,11 @@ export interface DataAwsIpRangesConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsIpRanges extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ip_ranges";
+
   // ===========
   // INITIALIZER
   // ===========

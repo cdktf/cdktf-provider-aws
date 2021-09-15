@@ -26,6 +26,11 @@ export interface KmsAliasConfig extends cdktf.TerraformMetaArguments {
 */
 export class KmsAlias extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kms_alias";
+
   // ===========
   // INITIALIZER
   // ===========

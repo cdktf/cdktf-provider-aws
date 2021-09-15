@@ -38,6 +38,11 @@ export interface CloudwatchEventApiDestinationConfig extends cdktf.TerraformMeta
 */
 export class CloudwatchEventApiDestination extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_api_destination";
+
   // ===========
   // INITIALIZER
   // ===========

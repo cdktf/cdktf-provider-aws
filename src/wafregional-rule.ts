@@ -18,11 +18,11 @@ export interface WafregionalRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_rule.html#tags WafregionalRule#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_rule.html#tags_all WafregionalRule#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * predicate block
   * 
@@ -38,7 +38,7 @@ export interface WafregionalRulePredicate {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_rule.html#negated WafregionalRule#negated}
   */
-  readonly negated: boolean;
+  readonly negated: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafregional_rule.html#type WafregionalRule#type}
   */
@@ -59,6 +59,11 @@ function wafregionalRulePredicateToTerraform(struct?: WafregionalRulePredicate):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_rule.html aws_wafregional_rule}
 */
 export class WafregionalRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafregional_rule";
 
   // ===========
   // INITIALIZER
@@ -130,11 +135,11 @@ export class WafregionalRule extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -146,11 +151,11 @@ export class WafregionalRule extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

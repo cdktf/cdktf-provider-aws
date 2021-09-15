@@ -10,7 +10,7 @@ export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window.html#allow_unassociated_targets SsmMaintenanceWindow#allow_unassociated_targets}
   */
-  readonly allowUnassociatedTargets?: boolean;
+  readonly allowUnassociatedTargets?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window.html#cutoff SsmMaintenanceWindow#cutoff}
   */
@@ -26,7 +26,7 @@ export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window.html#enabled SsmMaintenanceWindow#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window.html#end_date SsmMaintenanceWindow#end_date}
   */
@@ -54,17 +54,22 @@ export interface SsmMaintenanceWindowConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window.html#tags SsmMaintenanceWindow#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window.html#tags_all SsmMaintenanceWindow#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window.html aws_ssm_maintenance_window}
 */
 export class SsmMaintenanceWindow extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_maintenance_window";
 
   // ===========
   // INITIALIZER
@@ -108,11 +113,11 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   // ==========
 
   // allow_unassociated_targets - computed: false, optional: true, required: false
-  private _allowUnassociatedTargets?: boolean;
+  private _allowUnassociatedTargets?: boolean | cdktf.IResolvable;
   public get allowUnassociatedTargets() {
     return this.getBooleanAttribute('allow_unassociated_targets');
   }
-  public set allowUnassociatedTargets(value: boolean ) {
+  public set allowUnassociatedTargets(value: boolean | cdktf.IResolvable ) {
     this._allowUnassociatedTargets = value;
   }
   public resetAllowUnassociatedTargets() {
@@ -166,11 +171,11 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean;
+  private _enabled?: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | cdktf.IResolvable ) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -277,11 +282,11 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -293,11 +298,11 @@ export class SsmMaintenanceWindow extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

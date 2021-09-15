@@ -30,7 +30,7 @@ export interface CodebuildWebhookFilterGroupFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#exclude_matched_pattern CodebuildWebhook#exclude_matched_pattern}
   */
-  readonly excludeMatchedPattern?: boolean;
+  readonly excludeMatchedPattern?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html#pattern CodebuildWebhook#pattern}
   */
@@ -71,6 +71,11 @@ function codebuildWebhookFilterGroupToTerraform(struct?: CodebuildWebhookFilterG
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/codebuild_webhook.html aws_codebuild_webhook}
 */
 export class CodebuildWebhook extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codebuild_webhook";
 
   // ===========
   // INITIALIZER

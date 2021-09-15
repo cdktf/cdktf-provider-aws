@@ -26,6 +26,11 @@ export interface DaxSubnetGroupConfig extends cdktf.TerraformMetaArguments {
 */
 export class DaxSubnetGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dax_subnet_group";
+
   // ===========
   // INITIALIZER
   // ===========

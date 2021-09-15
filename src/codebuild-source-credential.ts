@@ -30,6 +30,11 @@ export interface CodebuildSourceCredentialConfig extends cdktf.TerraformMetaArgu
 */
 export class CodebuildSourceCredential extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codebuild_source_credential";
+
   // ===========
   // INITIALIZER
   // ===========

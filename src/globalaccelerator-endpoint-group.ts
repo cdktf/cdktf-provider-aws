@@ -62,7 +62,7 @@ export interface GlobalacceleratorEndpointGroupEndpointConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group.html#client_ip_preservation_enabled GlobalacceleratorEndpointGroup#client_ip_preservation_enabled}
   */
-  readonly clientIpPreservationEnabled?: boolean;
+  readonly clientIpPreservationEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group.html#endpoint_id GlobalacceleratorEndpointGroup#endpoint_id}
   */
@@ -130,6 +130,11 @@ function globalacceleratorEndpointGroupTimeoutsToTerraform(struct?: Globalaccele
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_endpoint_group.html aws_globalaccelerator_endpoint_group}
 */
 export class GlobalacceleratorEndpointGroup extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_globalaccelerator_endpoint_group";
 
   // ===========
   // INITIALIZER

@@ -26,6 +26,11 @@ export interface DataAwsSecretsmanagerSecretVersionConfig extends cdktf.Terrafor
 */
 export class DataAwsSecretsmanagerSecretVersion extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_secretsmanager_secret_version";
+
   // ===========
   // INITIALIZER
   // ===========

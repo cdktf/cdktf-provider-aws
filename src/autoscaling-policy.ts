@@ -292,7 +292,7 @@ export interface AutoscalingPolicyTargetTrackingConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#disable_scale_in AutoscalingPolicy#disable_scale_in}
   */
-  readonly disableScaleIn?: boolean;
+  readonly disableScaleIn?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html#target_value AutoscalingPolicy#target_value}
   */
@@ -326,6 +326,11 @@ function autoscalingPolicyTargetTrackingConfigurationToTerraform(struct?: Autosc
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_policy.html aws_autoscaling_policy}
 */
 export class AutoscalingPolicy extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_policy";
 
   // ===========
   // INITIALIZER

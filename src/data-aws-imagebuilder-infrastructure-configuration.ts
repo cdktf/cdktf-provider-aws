@@ -14,11 +14,11 @@ export interface DataAwsImagebuilderInfrastructureConfigurationConfig extends cd
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_infrastructure_configuration.html#resource_tags DataAwsImagebuilderInfrastructureConfiguration#resource_tags}
   */
-  readonly resourceTags?: { [key: string]: string };
+  readonly resourceTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_infrastructure_configuration.html#tags DataAwsImagebuilderInfrastructureConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 export class DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs extends cdktf.ComplexComputedList {
 
@@ -44,6 +44,11 @@ export class DataAwsImagebuilderInfrastructureConfigurationLogging extends cdktf
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_infrastructure_configuration.html aws_imagebuilder_infrastructure_configuration}
 */
 export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_imagebuilder_infrastructure_configuration";
 
   // ===========
   // INITIALIZER
@@ -135,11 +140,11 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
   }
 
   // resource_tags - computed: true, optional: true, required: false
-  private _resourceTags?: { [key: string]: string }
-  public get resourceTags(): { [key: string]: string } {
+  private _resourceTags?: { [key: string]: string } | cdktf.IResolvable
+  public get resourceTags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('resource_tags') as any; // Getting the computed value is not yet implemented
   }
-  public set resourceTags(value: { [key: string]: string }) {
+  public set resourceTags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._resourceTags = value;
   }
   public resetResourceTags() {
@@ -166,11 +171,11 @@ export class DataAwsImagebuilderInfrastructureConfiguration extends cdktf.Terraf
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

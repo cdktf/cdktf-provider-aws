@@ -26,7 +26,7 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#force_update_version EksNodeGroup#force_update_version}
   */
-  readonly forceUpdateVersion?: boolean;
+  readonly forceUpdateVersion?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#instance_types EksNodeGroup#instance_types}
   */
@@ -34,7 +34,7 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#labels EksNodeGroup#labels}
   */
-  readonly labels?: { [key: string]: string };
+  readonly labels?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#node_group_name EksNodeGroup#node_group_name}
   */
@@ -58,11 +58,11 @@ export interface EksNodeGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#tags EksNodeGroup#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#tags_all EksNodeGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_node_group.html#version EksNodeGroup#version}
   */
@@ -263,6 +263,11 @@ function eksNodeGroupUpdateConfigToTerraform(struct?: EksNodeGroupUpdateConfig):
 */
 export class EksNodeGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_eks_node_group";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -379,11 +384,11 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // force_update_version - computed: false, optional: true, required: false
-  private _forceUpdateVersion?: boolean;
+  private _forceUpdateVersion?: boolean | cdktf.IResolvable;
   public get forceUpdateVersion() {
     return this.getBooleanAttribute('force_update_version');
   }
-  public set forceUpdateVersion(value: boolean ) {
+  public set forceUpdateVersion(value: boolean | cdktf.IResolvable ) {
     this._forceUpdateVersion = value;
   }
   public resetForceUpdateVersion() {
@@ -416,11 +421,11 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // labels - computed: false, optional: true, required: false
-  private _labels?: { [key: string]: string };
+  private _labels?: { [key: string]: string } | cdktf.IResolvable;
   public get labels() {
     return this.interpolationForAttribute('labels') as any;
   }
-  public set labels(value: { [key: string]: string } ) {
+  public set labels(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._labels = value;
   }
   public resetLabels() {
@@ -516,11 +521,11 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -532,11 +537,11 @@ export class EksNodeGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

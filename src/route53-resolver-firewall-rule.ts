@@ -50,6 +50,11 @@ export interface Route53ResolverFirewallRuleConfig extends cdktf.TerraformMetaAr
 */
 export class Route53ResolverFirewallRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_resolver_firewall_rule";
+
   // ===========
   // INITIALIZER
   // ===========

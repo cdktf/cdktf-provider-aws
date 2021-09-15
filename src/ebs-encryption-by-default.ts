@@ -10,13 +10,18 @@ export interface EbsEncryptionByDefaultConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_encryption_by_default.html#enabled EbsEncryptionByDefault#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ebs_encryption_by_default.html aws_ebs_encryption_by_default}
 */
 export class EbsEncryptionByDefault extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ebs_encryption_by_default";
 
   // ===========
   // INITIALIZER
@@ -48,11 +53,11 @@ export class EbsEncryptionByDefault extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean;
+  private _enabled?: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean ) {
+  public set enabled(value: boolean | cdktf.IResolvable ) {
     this._enabled = value;
   }
   public resetEnabled() {

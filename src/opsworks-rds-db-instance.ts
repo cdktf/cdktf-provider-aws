@@ -30,6 +30,11 @@ export interface OpsworksRdsDbInstanceConfig extends cdktf.TerraformMetaArgument
 */
 export class OpsworksRdsDbInstance extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_opsworks_rds_db_instance";
+
   // ===========
   // INITIALIZER
   // ===========

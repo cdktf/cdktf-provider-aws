@@ -14,7 +14,7 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume.html#encrypted EbsVolume#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume.html#iops EbsVolume#iops}
   */
@@ -26,7 +26,7 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume.html#multi_attach_enabled EbsVolume#multi_attach_enabled}
   */
-  readonly multiAttachEnabled?: boolean;
+  readonly multiAttachEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume.html#outpost_arn EbsVolume#outpost_arn}
   */
@@ -42,11 +42,11 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume.html#tags EbsVolume#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume.html#tags_all EbsVolume#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume.html#throughput EbsVolume#throughput}
   */
@@ -61,6 +61,11 @@ export interface EbsVolumeConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ebs_volume.html aws_ebs_volume}
 */
 export class EbsVolume extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ebs_volume";
 
   // ===========
   // INITIALIZER
@@ -121,11 +126,11 @@ export class EbsVolume extends cdktf.TerraformResource {
   }
 
   // encrypted - computed: true, optional: true, required: false
-  private _encrypted?: boolean;
+  private _encrypted?: boolean | cdktf.IResolvable;
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean) {
+  public set encrypted(value: boolean | cdktf.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -174,11 +179,11 @@ export class EbsVolume extends cdktf.TerraformResource {
   }
 
   // multi_attach_enabled - computed: false, optional: true, required: false
-  private _multiAttachEnabled?: boolean;
+  private _multiAttachEnabled?: boolean | cdktf.IResolvable;
   public get multiAttachEnabled() {
     return this.getBooleanAttribute('multi_attach_enabled');
   }
-  public set multiAttachEnabled(value: boolean ) {
+  public set multiAttachEnabled(value: boolean | cdktf.IResolvable ) {
     this._multiAttachEnabled = value;
   }
   public resetMultiAttachEnabled() {
@@ -238,11 +243,11 @@ export class EbsVolume extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -254,11 +259,11 @@ export class EbsVolume extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -26,7 +26,7 @@ export interface EmrInstanceGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html#ebs_optimized EmrInstanceGroup#ebs_optimized}
   */
-  readonly ebsOptimized?: boolean;
+  readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html#instance_count EmrInstanceGroup#instance_count}
   */
@@ -80,6 +80,11 @@ function emrInstanceGroupEbsConfigToTerraform(struct?: EmrInstanceGroupEbsConfig
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html aws_emr_instance_group}
 */
 export class EmrInstanceGroup extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_emr_instance_group";
 
   // ===========
   // INITIALIZER
@@ -180,11 +185,11 @@ export class EmrInstanceGroup extends cdktf.TerraformResource {
   }
 
   // ebs_optimized - computed: false, optional: true, required: false
-  private _ebsOptimized?: boolean;
+  private _ebsOptimized?: boolean | cdktf.IResolvable;
   public get ebsOptimized() {
     return this.getBooleanAttribute('ebs_optimized');
   }
-  public set ebsOptimized(value: boolean ) {
+  public set ebsOptimized(value: boolean | cdktf.IResolvable ) {
     this._ebsOptimized = value;
   }
   public resetEbsOptimized() {

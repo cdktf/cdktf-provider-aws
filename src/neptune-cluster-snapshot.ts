@@ -42,6 +42,11 @@ function neptuneClusterSnapshotTimeoutsToTerraform(struct?: NeptuneClusterSnapsh
 */
 export class NeptuneClusterSnapshot extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_neptune_cluster_snapshot";
+
   // ===========
   // INITIALIZER
   // ===========

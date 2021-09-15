@@ -22,7 +22,7 @@ export interface ServicecatalogPortfolioShareConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_portfolio_share.html#share_tag_options ServicecatalogPortfolioShare#share_tag_options}
   */
-  readonly shareTagOptions?: boolean;
+  readonly shareTagOptions?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_portfolio_share.html#type ServicecatalogPortfolioShare#type}
   */
@@ -30,13 +30,18 @@ export interface ServicecatalogPortfolioShareConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_portfolio_share.html#wait_for_acceptance ServicecatalogPortfolioShare#wait_for_acceptance}
   */
-  readonly waitForAcceptance?: boolean;
+  readonly waitForAcceptance?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_portfolio_share.html aws_servicecatalog_portfolio_share}
 */
 export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_portfolio_share";
 
   // ===========
   // INITIALIZER
@@ -125,11 +130,11 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   }
 
   // share_tag_options - computed: false, optional: true, required: false
-  private _shareTagOptions?: boolean;
+  private _shareTagOptions?: boolean | cdktf.IResolvable;
   public get shareTagOptions() {
     return this.getBooleanAttribute('share_tag_options');
   }
-  public set shareTagOptions(value: boolean ) {
+  public set shareTagOptions(value: boolean | cdktf.IResolvable ) {
     this._shareTagOptions = value;
   }
   public resetShareTagOptions() {
@@ -154,11 +159,11 @@ export class ServicecatalogPortfolioShare extends cdktf.TerraformResource {
   }
 
   // wait_for_acceptance - computed: false, optional: true, required: false
-  private _waitForAcceptance?: boolean;
+  private _waitForAcceptance?: boolean | cdktf.IResolvable;
   public get waitForAcceptance() {
     return this.getBooleanAttribute('wait_for_acceptance');
   }
-  public set waitForAcceptance(value: boolean ) {
+  public set waitForAcceptance(value: boolean | cdktf.IResolvable ) {
     this._waitForAcceptance = value;
   }
   public resetWaitForAcceptance() {

@@ -22,6 +22,11 @@ export interface DataAwsEcsServiceConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsEcsService extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecs_service";
+
   // ===========
   // INITIALIZER
   // ===========

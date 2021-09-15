@@ -18,7 +18,7 @@ export interface GuarddutyMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_member.html#disable_email_notification GuarddutyMember#disable_email_notification}
   */
-  readonly disableEmailNotification?: boolean;
+  readonly disableEmailNotification?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_member.html#email GuarddutyMember#email}
   */
@@ -30,7 +30,7 @@ export interface GuarddutyMemberConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_member.html#invite GuarddutyMember#invite}
   */
-  readonly invite?: boolean;
+  readonly invite?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -62,6 +62,11 @@ function guarddutyMemberTimeoutsToTerraform(struct?: GuarddutyMemberTimeouts): a
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_member.html aws_guardduty_member}
 */
 export class GuarddutyMember extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_guardduty_member";
 
   // ===========
   // INITIALIZER
@@ -125,11 +130,11 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   }
 
   // disable_email_notification - computed: false, optional: true, required: false
-  private _disableEmailNotification?: boolean;
+  private _disableEmailNotification?: boolean | cdktf.IResolvable;
   public get disableEmailNotification() {
     return this.getBooleanAttribute('disable_email_notification');
   }
-  public set disableEmailNotification(value: boolean ) {
+  public set disableEmailNotification(value: boolean | cdktf.IResolvable ) {
     this._disableEmailNotification = value;
   }
   public resetDisableEmailNotification() {
@@ -175,11 +180,11 @@ export class GuarddutyMember extends cdktf.TerraformResource {
   }
 
   // invite - computed: false, optional: true, required: false
-  private _invite?: boolean;
+  private _invite?: boolean | cdktf.IResolvable;
   public get invite() {
     return this.getBooleanAttribute('invite');
   }
-  public set invite(value: boolean ) {
+  public set invite(value: boolean | cdktf.IResolvable ) {
     this._invite = value;
   }
   public resetInvite() {

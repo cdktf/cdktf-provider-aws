@@ -14,7 +14,7 @@ export interface AthenaDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html#force_destroy AthenaDatabase#force_destroy}
   */
-  readonly forceDestroy?: boolean;
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html#name AthenaDatabase#name}
   */
@@ -50,6 +50,11 @@ function athenaDatabaseEncryptionConfigurationToTerraform(struct?: AthenaDatabas
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/athena_database.html aws_athena_database}
 */
 export class AthenaDatabase extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_athena_database";
 
   // ===========
   // INITIALIZER
@@ -97,11 +102,11 @@ export class AthenaDatabase extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean;
+  private _forceDestroy?: boolean | cdktf.IResolvable;
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean ) {
+  public set forceDestroy(value: boolean | cdktf.IResolvable ) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {

@@ -10,7 +10,7 @@ export interface DataAwsNetworkAclsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/network_acls.html#tags DataAwsNetworkAcls#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/network_acls.html#vpc_id DataAwsNetworkAcls#vpc_id}
   */
@@ -46,6 +46,11 @@ function dataAwsNetworkAclsFilterToTerraform(struct?: DataAwsNetworkAclsFilter):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/network_acls.html aws_network_acls}
 */
 export class DataAwsNetworkAcls extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_network_acls";
 
   // ===========
   // INITIALIZER
@@ -89,11 +94,11 @@ export class DataAwsNetworkAcls extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

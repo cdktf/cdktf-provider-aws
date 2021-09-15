@@ -41,7 +41,7 @@ export interface ElasticsearchDomainSamlOptionsSamlOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#enabled ElasticsearchDomainSamlOptions#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html#master_backend_role ElasticsearchDomainSamlOptions#master_backend_role}
   */
@@ -88,6 +88,11 @@ function elasticsearchDomainSamlOptionsSamlOptionsToTerraform(struct?: Elasticse
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain_saml_options.html aws_elasticsearch_domain_saml_options}
 */
 export class ElasticsearchDomainSamlOptions extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticsearch_domain_saml_options";
 
   // ===========
   // INITIALIZER

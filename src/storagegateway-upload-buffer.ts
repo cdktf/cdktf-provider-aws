@@ -26,6 +26,11 @@ export interface StoragegatewayUploadBufferConfig extends cdktf.TerraformMetaArg
 */
 export class StoragegatewayUploadBuffer extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_storagegateway_upload_buffer";
+
   // ===========
   // INITIALIZER
   // ===========

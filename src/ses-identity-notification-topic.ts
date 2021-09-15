@@ -14,7 +14,7 @@ export interface SesIdentityNotificationTopicConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_identity_notification_topic.html#include_original_headers SesIdentityNotificationTopic#include_original_headers}
   */
-  readonly includeOriginalHeaders?: boolean;
+  readonly includeOriginalHeaders?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_identity_notification_topic.html#notification_type SesIdentityNotificationTopic#notification_type}
   */
@@ -29,6 +29,11 @@ export interface SesIdentityNotificationTopicConfig extends cdktf.TerraformMetaA
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_identity_notification_topic.html aws_ses_identity_notification_topic}
 */
 export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_identity_notification_topic";
 
   // ===========
   // INITIALIZER
@@ -81,11 +86,11 @@ export class SesIdentityNotificationTopic extends cdktf.TerraformResource {
   }
 
   // include_original_headers - computed: false, optional: true, required: false
-  private _includeOriginalHeaders?: boolean;
+  private _includeOriginalHeaders?: boolean | cdktf.IResolvable;
   public get includeOriginalHeaders() {
     return this.getBooleanAttribute('include_original_headers');
   }
-  public set includeOriginalHeaders(value: boolean ) {
+  public set includeOriginalHeaders(value: boolean | cdktf.IResolvable ) {
     this._includeOriginalHeaders = value;
   }
   public resetIncludeOriginalHeaders() {

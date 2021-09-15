@@ -147,11 +147,11 @@ export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#enable_accept_encoding_brotli CloudfrontCachePolicy#enable_accept_encoding_brotli}
   */
-  readonly enableAcceptEncodingBrotli?: boolean;
+  readonly enableAcceptEncodingBrotli?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#enable_accept_encoding_gzip CloudfrontCachePolicy#enable_accept_encoding_gzip}
   */
-  readonly enableAcceptEncodingGzip?: boolean;
+  readonly enableAcceptEncodingGzip?: boolean | cdktf.IResolvable;
   /**
   * cookies_config block
   * 
@@ -188,6 +188,11 @@ function cloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginToTerrafor
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html aws_cloudfront_cache_policy}
 */
 export class CloudfrontCachePolicy extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_cache_policy";
 
   // ===========
   // INITIALIZER

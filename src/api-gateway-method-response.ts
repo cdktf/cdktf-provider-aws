@@ -18,11 +18,11 @@ export interface ApiGatewayMethodResponseConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_response.html#response_models ApiGatewayMethodResponse#response_models}
   */
-  readonly responseModels?: { [key: string]: string };
+  readonly responseModels?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_response.html#response_parameters ApiGatewayMethodResponse#response_parameters}
   */
-  readonly responseParameters?: { [key: string]: boolean };
+  readonly responseParameters?: { [key: string]: boolean } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_response.html#rest_api_id ApiGatewayMethodResponse#rest_api_id}
   */
@@ -37,6 +37,11 @@ export interface ApiGatewayMethodResponseConfig extends cdktf.TerraformMetaArgum
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_method_response.html aws_api_gateway_method_response}
 */
 export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_method_response";
 
   // ===========
   // INITIALIZER
@@ -104,11 +109,11 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
   }
 
   // response_models - computed: false, optional: true, required: false
-  private _responseModels?: { [key: string]: string };
+  private _responseModels?: { [key: string]: string } | cdktf.IResolvable;
   public get responseModels() {
     return this.interpolationForAttribute('response_models') as any;
   }
-  public set responseModels(value: { [key: string]: string } ) {
+  public set responseModels(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._responseModels = value;
   }
   public resetResponseModels() {
@@ -120,11 +125,11 @@ export class ApiGatewayMethodResponse extends cdktf.TerraformResource {
   }
 
   // response_parameters - computed: false, optional: true, required: false
-  private _responseParameters?: { [key: string]: boolean };
+  private _responseParameters?: { [key: string]: boolean } | cdktf.IResolvable;
   public get responseParameters() {
-    return this.interpolationForAttribute('response_parameters') as any;
+    return this.getBooleanAttribute('response_parameters');
   }
-  public set responseParameters(value: { [key: string]: boolean } ) {
+  public set responseParameters(value: { [key: string]: boolean } | cdktf.IResolvable ) {
     this._responseParameters = value;
   }
   public resetResponseParameters() {

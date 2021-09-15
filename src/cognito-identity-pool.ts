@@ -10,11 +10,11 @@ export interface CognitoIdentityPoolConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool.html#allow_classic_flow CognitoIdentityPool#allow_classic_flow}
   */
-  readonly allowClassicFlow?: boolean;
+  readonly allowClassicFlow?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool.html#allow_unauthenticated_identities CognitoIdentityPool#allow_unauthenticated_identities}
   */
-  readonly allowUnauthenticatedIdentities?: boolean;
+  readonly allowUnauthenticatedIdentities?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool.html#developer_provider_name CognitoIdentityPool#developer_provider_name}
   */
@@ -34,15 +34,15 @@ export interface CognitoIdentityPoolConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool.html#supported_login_providers CognitoIdentityPool#supported_login_providers}
   */
-  readonly supportedLoginProviders?: { [key: string]: string };
+  readonly supportedLoginProviders?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool.html#tags CognitoIdentityPool#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool.html#tags_all CognitoIdentityPool#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * cognito_identity_providers block
   * 
@@ -62,7 +62,7 @@ export interface CognitoIdentityPoolCognitoIdentityProviders {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool.html#server_side_token_check CognitoIdentityPool#server_side_token_check}
   */
-  readonly serverSideTokenCheck?: boolean;
+  readonly serverSideTokenCheck?: boolean | cdktf.IResolvable;
 }
 
 function cognitoIdentityPoolCognitoIdentityProvidersToTerraform(struct?: CognitoIdentityPoolCognitoIdentityProviders): any {
@@ -79,6 +79,11 @@ function cognitoIdentityPoolCognitoIdentityProvidersToTerraform(struct?: Cognito
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_identity_pool.html aws_cognito_identity_pool}
 */
 export class CognitoIdentityPool extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_identity_pool";
 
   // ===========
   // INITIALIZER
@@ -119,11 +124,11 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   // ==========
 
   // allow_classic_flow - computed: false, optional: true, required: false
-  private _allowClassicFlow?: boolean;
+  private _allowClassicFlow?: boolean | cdktf.IResolvable;
   public get allowClassicFlow() {
     return this.getBooleanAttribute('allow_classic_flow');
   }
-  public set allowClassicFlow(value: boolean ) {
+  public set allowClassicFlow(value: boolean | cdktf.IResolvable ) {
     this._allowClassicFlow = value;
   }
   public resetAllowClassicFlow() {
@@ -135,11 +140,11 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   }
 
   // allow_unauthenticated_identities - computed: false, optional: true, required: false
-  private _allowUnauthenticatedIdentities?: boolean;
+  private _allowUnauthenticatedIdentities?: boolean | cdktf.IResolvable;
   public get allowUnauthenticatedIdentities() {
     return this.getBooleanAttribute('allow_unauthenticated_identities');
   }
-  public set allowUnauthenticatedIdentities(value: boolean ) {
+  public set allowUnauthenticatedIdentities(value: boolean | cdktf.IResolvable ) {
     this._allowUnauthenticatedIdentities = value;
   }
   public resetAllowUnauthenticatedIdentities() {
@@ -222,11 +227,11 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   }
 
   // supported_login_providers - computed: false, optional: true, required: false
-  private _supportedLoginProviders?: { [key: string]: string };
+  private _supportedLoginProviders?: { [key: string]: string } | cdktf.IResolvable;
   public get supportedLoginProviders() {
     return this.interpolationForAttribute('supported_login_providers') as any;
   }
-  public set supportedLoginProviders(value: { [key: string]: string } ) {
+  public set supportedLoginProviders(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._supportedLoginProviders = value;
   }
   public resetSupportedLoginProviders() {
@@ -238,11 +243,11 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -254,11 +259,11 @@ export class CognitoIdentityPool extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

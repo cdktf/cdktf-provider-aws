@@ -42,6 +42,11 @@ export class DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions e
 */
 export class DataAwsLakeformationDataLakeSettings extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lakeformation_data_lake_settings";
+
   // ===========
   // INITIALIZER
   // ===========

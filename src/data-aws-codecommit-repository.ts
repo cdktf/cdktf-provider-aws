@@ -18,6 +18,11 @@ export interface DataAwsCodecommitRepositoryConfig extends cdktf.TerraformMetaAr
 */
 export class DataAwsCodecommitRepository extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codecommit_repository";
+
   // ===========
   // INITIALIZER
   // ===========

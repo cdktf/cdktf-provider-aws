@@ -14,7 +14,7 @@ export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html#allow_reassociation EipAssociation#allow_reassociation}
   */
-  readonly allowReassociation?: boolean;
+  readonly allowReassociation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html#instance_id EipAssociation#instance_id}
   */
@@ -37,6 +37,11 @@ export interface EipAssociationConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/eip_association.html aws_eip_association}
 */
 export class EipAssociation extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_eip_association";
 
   // ===========
   // INITIALIZER
@@ -89,11 +94,11 @@ export class EipAssociation extends cdktf.TerraformResource {
   }
 
   // allow_reassociation - computed: false, optional: true, required: false
-  private _allowReassociation?: boolean;
+  private _allowReassociation?: boolean | cdktf.IResolvable;
   public get allowReassociation() {
     return this.getBooleanAttribute('allow_reassociation');
   }
-  public set allowReassociation(value: boolean ) {
+  public set allowReassociation(value: boolean | cdktf.IResolvable ) {
     this._allowReassociation = value;
   }
   public resetAllowReassociation() {

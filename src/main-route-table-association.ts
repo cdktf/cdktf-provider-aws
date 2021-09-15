@@ -22,6 +22,11 @@ export interface MainRouteTableAssociationConfig extends cdktf.TerraformMetaArgu
 */
 export class MainRouteTableAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_main_route_table_association";
+
   // ===========
   // INITIALIZER
   // ===========

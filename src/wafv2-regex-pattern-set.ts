@@ -22,11 +22,11 @@ export interface Wafv2RegexPatternSetConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#tags Wafv2RegexPatternSet#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html#tags_all Wafv2RegexPatternSet#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * regular_expression block
   * 
@@ -53,6 +53,11 @@ function wafv2RegexPatternSetRegularExpressionToTerraform(struct?: Wafv2RegexPat
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafv2_regex_pattern_set.html aws_wafv2_regex_pattern_set}
 */
 export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafv2_regex_pattern_set";
 
   // ===========
   // INITIALIZER
@@ -146,11 +151,11 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -162,11 +167,11 @@ export class Wafv2RegexPatternSet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

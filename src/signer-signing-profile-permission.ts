@@ -38,6 +38,11 @@ export interface SignerSigningProfilePermissionConfig extends cdktf.TerraformMet
 */
 export class SignerSigningProfilePermission extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_signer_signing_profile_permission";
+
   // ===========
   // INITIALIZER
   // ===========

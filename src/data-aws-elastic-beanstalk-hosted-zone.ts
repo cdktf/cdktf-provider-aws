@@ -18,6 +18,11 @@ export interface DataAwsElasticBeanstalkHostedZoneConfig extends cdktf.Terraform
 */
 export class DataAwsElasticBeanstalkHostedZone extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elastic_beanstalk_hosted_zone";
+
   // ===========
   // INITIALIZER
   // ===========

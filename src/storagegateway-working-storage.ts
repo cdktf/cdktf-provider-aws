@@ -22,6 +22,11 @@ export interface StoragegatewayWorkingStorageConfig extends cdktf.TerraformMetaA
 */
 export class StoragegatewayWorkingStorage extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_storagegateway_working_storage";
+
   // ===========
   // INITIALIZER
   // ===========

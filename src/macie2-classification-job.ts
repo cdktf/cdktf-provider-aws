@@ -18,7 +18,7 @@ export interface Macie2ClassificationJobConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job.html#initial_run Macie2ClassificationJob#initial_run}
   */
-  readonly initialRun?: boolean;
+  readonly initialRun?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job.html#job_status Macie2ClassificationJob#job_status}
   */
@@ -42,11 +42,11 @@ export interface Macie2ClassificationJobConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job.html#tags Macie2ClassificationJob#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job.html#tags_all Macie2ClassificationJob#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * s3_job_definition block
   * 
@@ -372,7 +372,7 @@ export interface Macie2ClassificationJobScheduleFrequency {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job.html#daily_schedule Macie2ClassificationJob#daily_schedule}
   */
-  readonly dailySchedule?: boolean;
+  readonly dailySchedule?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job.html#monthly_schedule Macie2ClassificationJob#monthly_schedule}
   */
@@ -397,6 +397,11 @@ function macie2ClassificationJobScheduleFrequencyToTerraform(struct?: Macie2Clas
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job.html aws_macie2_classification_job}
 */
 export class Macie2ClassificationJob extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_macie2_classification_job";
 
   // ===========
   // INITIALIZER
@@ -481,11 +486,11 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // initial_run - computed: false, optional: true, required: false
-  private _initialRun?: boolean;
+  private _initialRun?: boolean | cdktf.IResolvable;
   public get initialRun() {
     return this.getBooleanAttribute('initial_run');
   }
-  public set initialRun(value: boolean ) {
+  public set initialRun(value: boolean | cdktf.IResolvable ) {
     this._initialRun = value;
   }
   public resetInitialRun() {
@@ -584,11 +589,11 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -600,11 +605,11 @@ export class Macie2ClassificationJob extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

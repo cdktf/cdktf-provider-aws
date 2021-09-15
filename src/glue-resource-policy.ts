@@ -18,6 +18,11 @@ export interface GlueResourcePolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class GlueResourcePolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_resource_policy";
+
   // ===========
   // INITIALIZER
   // ===========

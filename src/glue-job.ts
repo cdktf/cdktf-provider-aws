@@ -14,7 +14,7 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job.html#default_arguments GlueJob#default_arguments}
   */
-  readonly defaultArguments?: { [key: string]: string };
+  readonly defaultArguments?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job.html#description GlueJob#description}
   */
@@ -38,7 +38,7 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job.html#non_overridable_arguments GlueJob#non_overridable_arguments}
   */
-  readonly nonOverridableArguments?: { [key: string]: string };
+  readonly nonOverridableArguments?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job.html#number_of_workers GlueJob#number_of_workers}
   */
@@ -54,11 +54,11 @@ export interface GlueJobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job.html#tags GlueJob#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job.html#tags_all GlueJob#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job.html#timeout GlueJob#timeout}
   */
@@ -144,6 +144,11 @@ function glueJobNotificationPropertyToTerraform(struct?: GlueJobNotificationProp
 */
 export class GlueJob extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_job";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -212,11 +217,11 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // default_arguments - computed: false, optional: true, required: false
-  private _defaultArguments?: { [key: string]: string };
+  private _defaultArguments?: { [key: string]: string } | cdktf.IResolvable;
   public get defaultArguments() {
     return this.interpolationForAttribute('default_arguments') as any;
   }
-  public set defaultArguments(value: { [key: string]: string } ) {
+  public set defaultArguments(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._defaultArguments = value;
   }
   public resetDefaultArguments() {
@@ -310,11 +315,11 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // non_overridable_arguments - computed: false, optional: true, required: false
-  private _nonOverridableArguments?: { [key: string]: string };
+  private _nonOverridableArguments?: { [key: string]: string } | cdktf.IResolvable;
   public get nonOverridableArguments() {
     return this.interpolationForAttribute('non_overridable_arguments') as any;
   }
-  public set nonOverridableArguments(value: { [key: string]: string } ) {
+  public set nonOverridableArguments(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._nonOverridableArguments = value;
   }
   public resetNonOverridableArguments() {
@@ -371,11 +376,11 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -387,11 +392,11 @@ export class GlueJob extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

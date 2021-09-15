@@ -87,6 +87,11 @@ function lambdaFunctionEventInvokeConfigDestinationConfigToTerraform(struct?: La
 */
 export class LambdaFunctionEventInvokeConfig extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_function_event_invoke_config";
+
   // ===========
   // INITIALIZER
   // ===========

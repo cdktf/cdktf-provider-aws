@@ -26,6 +26,11 @@ export interface Ec2ClientVpnNetworkAssociationConfig extends cdktf.TerraformMet
 */
 export class Ec2ClientVpnNetworkAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_client_vpn_network_association";
+
   // ===========
   // INITIALIZER
   // ===========

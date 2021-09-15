@@ -18,17 +18,22 @@ export interface ApiGatewayRequestValidatorConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_request_validator.html#validate_request_body ApiGatewayRequestValidator#validate_request_body}
   */
-  readonly validateRequestBody?: boolean;
+  readonly validateRequestBody?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_request_validator.html#validate_request_parameters ApiGatewayRequestValidator#validate_request_parameters}
   */
-  readonly validateRequestParameters?: boolean;
+  readonly validateRequestParameters?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_request_validator.html aws_api_gateway_request_validator}
 */
 export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_request_validator";
 
   // ===========
   // INITIALIZER
@@ -94,11 +99,11 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   }
 
   // validate_request_body - computed: false, optional: true, required: false
-  private _validateRequestBody?: boolean;
+  private _validateRequestBody?: boolean | cdktf.IResolvable;
   public get validateRequestBody() {
     return this.getBooleanAttribute('validate_request_body');
   }
-  public set validateRequestBody(value: boolean ) {
+  public set validateRequestBody(value: boolean | cdktf.IResolvable ) {
     this._validateRequestBody = value;
   }
   public resetValidateRequestBody() {
@@ -110,11 +115,11 @@ export class ApiGatewayRequestValidator extends cdktf.TerraformResource {
   }
 
   // validate_request_parameters - computed: false, optional: true, required: false
-  private _validateRequestParameters?: boolean;
+  private _validateRequestParameters?: boolean | cdktf.IResolvable;
   public get validateRequestParameters() {
     return this.getBooleanAttribute('validate_request_parameters');
   }
-  public set validateRequestParameters(value: boolean ) {
+  public set validateRequestParameters(value: boolean | cdktf.IResolvable ) {
     this._validateRequestParameters = value;
   }
   public resetValidateRequestParameters() {

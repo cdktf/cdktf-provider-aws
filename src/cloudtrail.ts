@@ -18,23 +18,23 @@ export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#enable_log_file_validation Cloudtrail#enable_log_file_validation}
   */
-  readonly enableLogFileValidation?: boolean;
+  readonly enableLogFileValidation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#enable_logging Cloudtrail#enable_logging}
   */
-  readonly enableLogging?: boolean;
+  readonly enableLogging?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#include_global_service_events Cloudtrail#include_global_service_events}
   */
-  readonly includeGlobalServiceEvents?: boolean;
+  readonly includeGlobalServiceEvents?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#is_multi_region_trail Cloudtrail#is_multi_region_trail}
   */
-  readonly isMultiRegionTrail?: boolean;
+  readonly isMultiRegionTrail?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#is_organization_trail Cloudtrail#is_organization_trail}
   */
-  readonly isOrganizationTrail?: boolean;
+  readonly isOrganizationTrail?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#kms_key_id Cloudtrail#kms_key_id}
   */
@@ -58,11 +58,11 @@ export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#tags Cloudtrail#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#tags_all Cloudtrail#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * event_selector block
   * 
@@ -99,7 +99,7 @@ export interface CloudtrailEventSelector {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#include_management_events Cloudtrail#include_management_events}
   */
-  readonly includeManagementEvents?: boolean;
+  readonly includeManagementEvents?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#read_write_type Cloudtrail#read_write_type}
   */
@@ -140,6 +140,11 @@ function cloudtrailInsightSelectorToTerraform(struct?: CloudtrailInsightSelector
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html aws_cloudtrail}
 */
 export class Cloudtrail extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudtrail";
 
   // ===========
   // INITIALIZER
@@ -223,11 +228,11 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // enable_log_file_validation - computed: false, optional: true, required: false
-  private _enableLogFileValidation?: boolean;
+  private _enableLogFileValidation?: boolean | cdktf.IResolvable;
   public get enableLogFileValidation() {
     return this.getBooleanAttribute('enable_log_file_validation');
   }
-  public set enableLogFileValidation(value: boolean ) {
+  public set enableLogFileValidation(value: boolean | cdktf.IResolvable ) {
     this._enableLogFileValidation = value;
   }
   public resetEnableLogFileValidation() {
@@ -239,11 +244,11 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // enable_logging - computed: false, optional: true, required: false
-  private _enableLogging?: boolean;
+  private _enableLogging?: boolean | cdktf.IResolvable;
   public get enableLogging() {
     return this.getBooleanAttribute('enable_logging');
   }
-  public set enableLogging(value: boolean ) {
+  public set enableLogging(value: boolean | cdktf.IResolvable ) {
     this._enableLogging = value;
   }
   public resetEnableLogging() {
@@ -265,11 +270,11 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // include_global_service_events - computed: false, optional: true, required: false
-  private _includeGlobalServiceEvents?: boolean;
+  private _includeGlobalServiceEvents?: boolean | cdktf.IResolvable;
   public get includeGlobalServiceEvents() {
     return this.getBooleanAttribute('include_global_service_events');
   }
-  public set includeGlobalServiceEvents(value: boolean ) {
+  public set includeGlobalServiceEvents(value: boolean | cdktf.IResolvable ) {
     this._includeGlobalServiceEvents = value;
   }
   public resetIncludeGlobalServiceEvents() {
@@ -281,11 +286,11 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // is_multi_region_trail - computed: false, optional: true, required: false
-  private _isMultiRegionTrail?: boolean;
+  private _isMultiRegionTrail?: boolean | cdktf.IResolvable;
   public get isMultiRegionTrail() {
     return this.getBooleanAttribute('is_multi_region_trail');
   }
-  public set isMultiRegionTrail(value: boolean ) {
+  public set isMultiRegionTrail(value: boolean | cdktf.IResolvable ) {
     this._isMultiRegionTrail = value;
   }
   public resetIsMultiRegionTrail() {
@@ -297,11 +302,11 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // is_organization_trail - computed: false, optional: true, required: false
-  private _isOrganizationTrail?: boolean;
+  private _isOrganizationTrail?: boolean | cdktf.IResolvable;
   public get isOrganizationTrail() {
     return this.getBooleanAttribute('is_organization_trail');
   }
-  public set isOrganizationTrail(value: boolean ) {
+  public set isOrganizationTrail(value: boolean | cdktf.IResolvable ) {
     this._isOrganizationTrail = value;
   }
   public resetIsOrganizationTrail() {
@@ -387,11 +392,11 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -403,11 +408,11 @@ export class Cloudtrail extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

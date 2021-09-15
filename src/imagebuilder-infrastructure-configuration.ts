@@ -30,7 +30,7 @@ export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration.html#resource_tags ImagebuilderInfrastructureConfiguration#resource_tags}
   */
-  readonly resourceTags?: { [key: string]: string };
+  readonly resourceTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration.html#security_group_ids ImagebuilderInfrastructureConfiguration#security_group_ids}
   */
@@ -46,15 +46,15 @@ export interface ImagebuilderInfrastructureConfigurationConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration.html#tags ImagebuilderInfrastructureConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration.html#tags_all ImagebuilderInfrastructureConfiguration#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration.html#terminate_instance_on_failure ImagebuilderInfrastructureConfiguration#terminate_instance_on_failure}
   */
-  readonly terminateInstanceOnFailure?: boolean;
+  readonly terminateInstanceOnFailure?: boolean | cdktf.IResolvable;
   /**
   * logging block
   * 
@@ -102,6 +102,11 @@ function imagebuilderInfrastructureConfigurationLoggingToTerraform(struct?: Imag
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_infrastructure_configuration.html aws_imagebuilder_infrastructure_configuration}
 */
 export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_imagebuilder_infrastructure_configuration";
 
   // ===========
   // INITIALIZER
@@ -239,11 +244,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // resource_tags - computed: false, optional: true, required: false
-  private _resourceTags?: { [key: string]: string };
+  private _resourceTags?: { [key: string]: string } | cdktf.IResolvable;
   public get resourceTags() {
     return this.interpolationForAttribute('resource_tags') as any;
   }
-  public set resourceTags(value: { [key: string]: string } ) {
+  public set resourceTags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._resourceTags = value;
   }
   public resetResourceTags() {
@@ -303,11 +308,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -319,11 +324,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -335,11 +340,11 @@ export class ImagebuilderInfrastructureConfiguration extends cdktf.TerraformReso
   }
 
   // terminate_instance_on_failure - computed: false, optional: true, required: false
-  private _terminateInstanceOnFailure?: boolean;
+  private _terminateInstanceOnFailure?: boolean | cdktf.IResolvable;
   public get terminateInstanceOnFailure() {
     return this.getBooleanAttribute('terminate_instance_on_failure');
   }
-  public set terminateInstanceOnFailure(value: boolean ) {
+  public set terminateInstanceOnFailure(value: boolean | cdktf.IResolvable ) {
     this._terminateInstanceOnFailure = value;
   }
   public resetTerminateInstanceOnFailure() {

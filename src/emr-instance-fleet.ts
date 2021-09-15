@@ -44,7 +44,7 @@ export interface EmrInstanceFleetInstanceTypeConfigsConfigurations {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet.html#properties EmrInstanceFleet#properties}
   */
-  readonly properties?: { [key: string]: string };
+  readonly properties?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function emrInstanceFleetInstanceTypeConfigsConfigurationsToTerraform(struct?: EmrInstanceFleetInstanceTypeConfigsConfigurations): any {
@@ -198,6 +198,11 @@ function emrInstanceFleetLaunchSpecificationsToTerraform(struct?: EmrInstanceFle
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_fleet.html aws_emr_instance_fleet}
 */
 export class EmrInstanceFleet extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_emr_instance_fleet";
 
   // ===========
   // INITIALIZER

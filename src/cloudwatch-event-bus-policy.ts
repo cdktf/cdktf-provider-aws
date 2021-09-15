@@ -22,6 +22,11 @@ export interface CloudwatchEventBusPolicyConfig extends cdktf.TerraformMetaArgum
 */
 export class CloudwatchEventBusPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_bus_policy";
+
   // ===========
   // INITIALIZER
   // ===========

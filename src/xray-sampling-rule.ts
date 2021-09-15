@@ -10,7 +10,7 @@ export interface XraySamplingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_sampling_rule.html#attributes XraySamplingRule#attributes}
   */
-  readonly attributes?: { [key: string]: string };
+  readonly attributes?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_sampling_rule.html#fixed_rate XraySamplingRule#fixed_rate}
   */
@@ -50,11 +50,11 @@ export interface XraySamplingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_sampling_rule.html#tags XraySamplingRule#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_sampling_rule.html#tags_all XraySamplingRule#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/xray_sampling_rule.html#url_path XraySamplingRule#url_path}
   */
@@ -69,6 +69,11 @@ export interface XraySamplingRuleConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/xray_sampling_rule.html aws_xray_sampling_rule}
 */
 export class XraySamplingRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_xray_sampling_rule";
 
   // ===========
   // INITIALIZER
@@ -118,11 +123,11 @@ export class XraySamplingRule extends cdktf.TerraformResource {
   }
 
   // attributes - computed: false, optional: true, required: false
-  private _attributes?: { [key: string]: string };
+  private _attributes?: { [key: string]: string } | cdktf.IResolvable;
   public get attributes() {
     return this.interpolationForAttribute('attributes') as any;
   }
-  public set attributes(value: { [key: string]: string } ) {
+  public set attributes(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._attributes = value;
   }
   public resetAttributes() {
@@ -259,11 +264,11 @@ export class XraySamplingRule extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -275,11 +280,11 @@ export class XraySamplingRule extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

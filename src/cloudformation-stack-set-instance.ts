@@ -14,7 +14,7 @@ export interface CloudformationStackSetInstanceConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html#parameter_overrides CloudformationStackSetInstance#parameter_overrides}
   */
-  readonly parameterOverrides?: { [key: string]: string };
+  readonly parameterOverrides?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html#region CloudformationStackSetInstance#region}
   */
@@ -22,7 +22,7 @@ export interface CloudformationStackSetInstanceConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html#retain_stack CloudformationStackSetInstance#retain_stack}
   */
-  readonly retainStack?: boolean;
+  readonly retainStack?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html#stack_set_name CloudformationStackSetInstance#stack_set_name}
   */
@@ -63,6 +63,11 @@ function cloudformationStackSetInstanceTimeoutsToTerraform(struct?: Cloudformati
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html aws_cloudformation_stack_set_instance}
 */
 export class CloudformationStackSetInstance extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudformation_stack_set_instance";
 
   // ===========
   // INITIALIZER
@@ -120,11 +125,11 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
   }
 
   // parameter_overrides - computed: false, optional: true, required: false
-  private _parameterOverrides?: { [key: string]: string };
+  private _parameterOverrides?: { [key: string]: string } | cdktf.IResolvable;
   public get parameterOverrides() {
     return this.interpolationForAttribute('parameter_overrides') as any;
   }
-  public set parameterOverrides(value: { [key: string]: string } ) {
+  public set parameterOverrides(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._parameterOverrides = value;
   }
   public resetParameterOverrides() {
@@ -152,11 +157,11 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
   }
 
   // retain_stack - computed: false, optional: true, required: false
-  private _retainStack?: boolean;
+  private _retainStack?: boolean | cdktf.IResolvable;
   public get retainStack() {
     return this.getBooleanAttribute('retain_stack');
   }
-  public set retainStack(value: boolean ) {
+  public set retainStack(value: boolean | cdktf.IResolvable ) {
     this._retainStack = value;
   }
   public resetRetainStack() {

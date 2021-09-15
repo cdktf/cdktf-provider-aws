@@ -114,6 +114,11 @@ export class OrganizationsOrganizationRoots extends cdktf.ComplexComputedList {
 */
 export class OrganizationsOrganization extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_organizations_organization";
+
   // ===========
   // INITIALIZER
   // ===========

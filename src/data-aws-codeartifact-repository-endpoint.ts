@@ -30,6 +30,11 @@ export interface DataAwsCodeartifactRepositoryEndpointConfig extends cdktf.Terra
 */
 export class DataAwsCodeartifactRepositoryEndpoint extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codeartifact_repository_endpoint";
+
   // ===========
   // INITIALIZER
   // ===========

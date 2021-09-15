@@ -26,7 +26,7 @@ export interface ElastictranscoderPresetConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elastictranscoder_preset.html#video_codec_options ElastictranscoderPreset#video_codec_options}
   */
-  readonly videoCodecOptions?: { [key: string]: string };
+  readonly videoCodecOptions?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * audio block
   * 
@@ -309,6 +309,11 @@ function elastictranscoderPresetVideoWatermarksToTerraform(struct?: Elastictrans
 */
 export class ElastictranscoderPreset extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elastictranscoder_preset";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -419,11 +424,11 @@ export class ElastictranscoderPreset extends cdktf.TerraformResource {
   }
 
   // video_codec_options - computed: false, optional: true, required: false
-  private _videoCodecOptions?: { [key: string]: string };
+  private _videoCodecOptions?: { [key: string]: string } | cdktf.IResolvable;
   public get videoCodecOptions() {
     return this.interpolationForAttribute('video_codec_options') as any;
   }
-  public set videoCodecOptions(value: { [key: string]: string } ) {
+  public set videoCodecOptions(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._videoCodecOptions = value;
   }
   public resetVideoCodecOptions() {

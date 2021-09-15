@@ -30,6 +30,11 @@ export interface DataAwsDocdbEngineVersionConfig extends cdktf.TerraformMetaArgu
 */
 export class DataAwsDocdbEngineVersion extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_docdb_engine_version";
+
   // ===========
   // INITIALIZER
   // ===========

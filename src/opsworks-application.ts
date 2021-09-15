@@ -42,7 +42,7 @@ export interface OpsworksApplicationConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_application.html#enable_ssl OpsworksApplication#enable_ssl}
   */
-  readonly enableSsl?: boolean;
+  readonly enableSsl?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_application.html#name OpsworksApplication#name}
   */
@@ -129,7 +129,7 @@ export interface OpsworksApplicationEnvironment {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_application.html#secure OpsworksApplication#secure}
   */
-  readonly secure?: boolean;
+  readonly secure?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_application.html#value OpsworksApplication#value}
   */
@@ -174,6 +174,11 @@ function opsworksApplicationSslConfigurationToTerraform(struct?: OpsworksApplica
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_application.html aws_opsworks_application}
 */
 export class OpsworksApplication extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_opsworks_application";
 
   // ===========
   // INITIALIZER
@@ -349,11 +354,11 @@ export class OpsworksApplication extends cdktf.TerraformResource {
   }
 
   // enable_ssl - computed: false, optional: true, required: false
-  private _enableSsl?: boolean;
+  private _enableSsl?: boolean | cdktf.IResolvable;
   public get enableSsl() {
     return this.getBooleanAttribute('enable_ssl');
   }
-  public set enableSsl(value: boolean ) {
+  public set enableSsl(value: boolean | cdktf.IResolvable ) {
     this._enableSsl = value;
   }
   public resetEnableSsl() {

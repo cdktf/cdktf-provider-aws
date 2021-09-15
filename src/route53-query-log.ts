@@ -22,6 +22,11 @@ export interface Route53QueryLogConfig extends cdktf.TerraformMetaArguments {
 */
 export class Route53QueryLog extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_query_log";
+
   // ===========
   // INITIALIZER
   // ===========

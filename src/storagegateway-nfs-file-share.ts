@@ -26,11 +26,11 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#guess_mime_type_enabled StoragegatewayNfsFileShare#guess_mime_type_enabled}
   */
-  readonly guessMimeTypeEnabled?: boolean;
+  readonly guessMimeTypeEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#kms_encrypted StoragegatewayNfsFileShare#kms_encrypted}
   */
-  readonly kmsEncrypted?: boolean;
+  readonly kmsEncrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#kms_key_arn StoragegatewayNfsFileShare#kms_key_arn}
   */
@@ -50,11 +50,11 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#read_only StoragegatewayNfsFileShare#read_only}
   */
-  readonly readOnly?: boolean;
+  readonly readOnly?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#requester_pays StoragegatewayNfsFileShare#requester_pays}
   */
-  readonly requesterPays?: boolean;
+  readonly requesterPays?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#role_arn StoragegatewayNfsFileShare#role_arn}
   */
@@ -66,11 +66,11 @@ export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#tags StoragegatewayNfsFileShare#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#tags_all StoragegatewayNfsFileShare#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * cache_attributes block
   * 
@@ -162,6 +162,11 @@ function storagegatewayNfsFileShareTimeoutsToTerraform(struct?: StoragegatewayNf
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html aws_storagegateway_nfs_file_share}
 */
 export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_storagegateway_nfs_file_share";
 
   // ===========
   // INITIALIZER
@@ -279,11 +284,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // guess_mime_type_enabled - computed: false, optional: true, required: false
-  private _guessMimeTypeEnabled?: boolean;
+  private _guessMimeTypeEnabled?: boolean | cdktf.IResolvable;
   public get guessMimeTypeEnabled() {
     return this.getBooleanAttribute('guess_mime_type_enabled');
   }
-  public set guessMimeTypeEnabled(value: boolean ) {
+  public set guessMimeTypeEnabled(value: boolean | cdktf.IResolvable ) {
     this._guessMimeTypeEnabled = value;
   }
   public resetGuessMimeTypeEnabled() {
@@ -300,11 +305,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // kms_encrypted - computed: false, optional: true, required: false
-  private _kmsEncrypted?: boolean;
+  private _kmsEncrypted?: boolean | cdktf.IResolvable;
   public get kmsEncrypted() {
     return this.getBooleanAttribute('kms_encrypted');
   }
-  public set kmsEncrypted(value: boolean ) {
+  public set kmsEncrypted(value: boolean | cdktf.IResolvable ) {
     this._kmsEncrypted = value;
   }
   public resetKmsEncrypted() {
@@ -382,11 +387,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean;
+  private _readOnly?: boolean | cdktf.IResolvable;
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean ) {
+  public set readOnly(value: boolean | cdktf.IResolvable ) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -398,11 +403,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // requester_pays - computed: false, optional: true, required: false
-  private _requesterPays?: boolean;
+  private _requesterPays?: boolean | cdktf.IResolvable;
   public get requesterPays() {
     return this.getBooleanAttribute('requester_pays');
   }
-  public set requesterPays(value: boolean ) {
+  public set requesterPays(value: boolean | cdktf.IResolvable ) {
     this._requesterPays = value;
   }
   public resetRequesterPays() {
@@ -443,11 +448,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -459,11 +464,11 @@ export class StoragegatewayNfsFileShare extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -35,6 +35,11 @@ export class DataAwsAutoscalingGroupLaunchTemplate extends cdktf.ComplexComputed
 */
 export class DataAwsAutoscalingGroup extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_group";
+
   // ===========
   // INITIALIZER
   // ===========

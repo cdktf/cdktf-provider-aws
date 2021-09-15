@@ -26,11 +26,11 @@ export interface MskClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#tags MskCluster#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#tags_all MskCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * broker_node_group_info block
   * 
@@ -112,11 +112,11 @@ export interface MskClusterClientAuthenticationSasl {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#iam MskCluster#iam}
   */
-  readonly iam?: boolean;
+  readonly iam?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#scram MskCluster#scram}
   */
-  readonly scram?: boolean;
+  readonly scram?: boolean | cdktf.IResolvable;
 }
 
 function mskClusterClientAuthenticationSaslToTerraform(struct?: MskClusterClientAuthenticationSasl): any {
@@ -191,7 +191,7 @@ export interface MskClusterEncryptionInfoEncryptionInTransit {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#in_cluster MskCluster#in_cluster}
   */
-  readonly inCluster?: boolean;
+  readonly inCluster?: boolean | cdktf.IResolvable;
 }
 
 function mskClusterEncryptionInfoEncryptionInTransitToTerraform(struct?: MskClusterEncryptionInfoEncryptionInTransit): any {
@@ -227,7 +227,7 @@ export interface MskClusterLoggingInfoBrokerLogsCloudwatchLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#log_group MskCluster#log_group}
   */
@@ -250,7 +250,7 @@ export interface MskClusterLoggingInfoBrokerLogsFirehose {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
 }
 
 function mskClusterLoggingInfoBrokerLogsFirehoseToTerraform(struct?: MskClusterLoggingInfoBrokerLogsFirehose): any {
@@ -269,7 +269,7 @@ export interface MskClusterLoggingInfoBrokerLogsS3 {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled MskCluster#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#prefix MskCluster#prefix}
   */
@@ -335,7 +335,7 @@ export interface MskClusterOpenMonitoringPrometheusJmxExporter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled_in_broker MskCluster#enabled_in_broker}
   */
-  readonly enabledInBroker: boolean;
+  readonly enabledInBroker: boolean | cdktf.IResolvable;
 }
 
 function mskClusterOpenMonitoringPrometheusJmxExporterToTerraform(struct?: MskClusterOpenMonitoringPrometheusJmxExporter): any {
@@ -349,7 +349,7 @@ export interface MskClusterOpenMonitoringPrometheusNodeExporter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html#enabled_in_broker MskCluster#enabled_in_broker}
   */
-  readonly enabledInBroker: boolean;
+  readonly enabledInBroker: boolean | cdktf.IResolvable;
 }
 
 function mskClusterOpenMonitoringPrometheusNodeExporterToTerraform(struct?: MskClusterOpenMonitoringPrometheusNodeExporter): any {
@@ -427,6 +427,11 @@ function mskClusterTimeoutsToTerraform(struct?: MskClusterTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/msk_cluster.html aws_msk_cluster}
 */
 export class MskCluster extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_msk_cluster";
 
   // ===========
   // INITIALIZER
@@ -560,11 +565,11 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -576,11 +581,11 @@ export class MskCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

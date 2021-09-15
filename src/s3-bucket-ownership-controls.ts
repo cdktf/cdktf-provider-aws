@@ -38,6 +38,11 @@ function s3BucketOwnershipControlsRuleToTerraform(struct?: S3BucketOwnershipCont
 */
 export class S3BucketOwnershipControls extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_bucket_ownership_controls";
+
   // ===========
   // INITIALIZER
   // ===========

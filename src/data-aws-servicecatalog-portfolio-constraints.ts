@@ -58,6 +58,11 @@ export class DataAwsServicecatalogPortfolioConstraintsDetails extends cdktf.Comp
 */
 export class DataAwsServicecatalogPortfolioConstraints extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_portfolio_constraints";
+
   // ===========
   // INITIALIZER
   // ===========

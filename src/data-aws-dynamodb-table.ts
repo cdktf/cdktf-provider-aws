@@ -14,7 +14,7 @@ export interface DataAwsDynamodbTableConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table.html#tags DataAwsDynamodbTable#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * server_side_encryption block
   * 
@@ -139,6 +139,11 @@ function dataAwsDynamodbTableServerSideEncryptionToTerraform(struct?: DataAwsDyn
 */
 export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dynamodb_table";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -259,11 +264,11 @@ export class DataAwsDynamodbTable extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

@@ -26,6 +26,11 @@ export interface DataAwsEfsMountTargetConfig extends cdktf.TerraformMetaArgument
 */
 export class DataAwsEfsMountTarget extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_efs_mount_target";
+
   // ===========
   // INITIALIZER
   // ===========

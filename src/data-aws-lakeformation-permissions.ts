@@ -14,7 +14,7 @@ export interface DataAwsLakeformationPermissionsConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions.html#catalog_resource DataAwsLakeformationPermissions#catalog_resource}
   */
-  readonly catalogResource?: boolean;
+  readonly catalogResource?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions.html#principal DataAwsLakeformationPermissions#principal}
   */
@@ -98,7 +98,7 @@ export interface DataAwsLakeformationPermissionsTable {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions.html#wildcard DataAwsLakeformationPermissions#wildcard}
   */
-  readonly wildcard?: boolean;
+  readonly wildcard?: boolean | cdktf.IResolvable;
 }
 
 function dataAwsLakeformationPermissionsTableToTerraform(struct?: DataAwsLakeformationPermissionsTable): any {
@@ -135,7 +135,7 @@ export interface DataAwsLakeformationPermissionsTableWithColumns {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions.html#wildcard DataAwsLakeformationPermissions#wildcard}
   */
-  readonly wildcard?: boolean;
+  readonly wildcard?: boolean | cdktf.IResolvable;
 }
 
 function dataAwsLakeformationPermissionsTableWithColumnsToTerraform(struct?: DataAwsLakeformationPermissionsTableWithColumns): any {
@@ -155,6 +155,11 @@ function dataAwsLakeformationPermissionsTableWithColumnsToTerraform(struct?: Dat
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions.html aws_lakeformation_permissions}
 */
 export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lakeformation_permissions";
 
   // ===========
   // INITIALIZER
@@ -208,11 +213,11 @@ export class DataAwsLakeformationPermissions extends cdktf.TerraformDataSource {
   }
 
   // catalog_resource - computed: false, optional: true, required: false
-  private _catalogResource?: boolean;
+  private _catalogResource?: boolean | cdktf.IResolvable;
   public get catalogResource() {
     return this.getBooleanAttribute('catalog_resource');
   }
-  public set catalogResource(value: boolean ) {
+  public set catalogResource(value: boolean | cdktf.IResolvable ) {
     this._catalogResource = value;
   }
   public resetCatalogResource() {

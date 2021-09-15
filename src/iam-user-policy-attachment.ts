@@ -22,6 +22,11 @@ export interface IamUserPolicyAttachmentConfig extends cdktf.TerraformMetaArgume
 */
 export class IamUserPolicyAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_user_policy_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

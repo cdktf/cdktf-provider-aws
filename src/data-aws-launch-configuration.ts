@@ -126,6 +126,11 @@ export class DataAwsLaunchConfigurationRootBlockDevice extends cdktf.ComplexComp
 */
 export class DataAwsLaunchConfiguration extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_launch_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

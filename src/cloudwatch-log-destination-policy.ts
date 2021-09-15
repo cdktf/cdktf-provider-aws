@@ -22,6 +22,11 @@ export interface CloudwatchLogDestinationPolicyConfig extends cdktf.TerraformMet
 */
 export class CloudwatchLogDestinationPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_log_destination_policy";
+
   // ===========
   // INITIALIZER
   // ===========

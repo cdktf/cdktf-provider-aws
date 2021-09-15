@@ -30,6 +30,11 @@ export interface DxGatewayAssociationProposalConfig extends cdktf.TerraformMetaA
 */
 export class DxGatewayAssociationProposal extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dx_gateway_association_proposal";
+
   // ===========
   // INITIALIZER
   // ===========

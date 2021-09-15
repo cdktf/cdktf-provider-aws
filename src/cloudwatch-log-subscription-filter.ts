@@ -38,6 +38,11 @@ export interface CloudwatchLogSubscriptionFilterConfig extends cdktf.TerraformMe
 */
 export class CloudwatchLogSubscriptionFilter extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_log_subscription_filter";
+
   // ===========
   // INITIALIZER
   // ===========

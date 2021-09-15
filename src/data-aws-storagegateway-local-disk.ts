@@ -26,6 +26,11 @@ export interface DataAwsStoragegatewayLocalDiskConfig extends cdktf.TerraformMet
 */
 export class DataAwsStoragegatewayLocalDisk extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_storagegateway_local_disk";
+
   // ===========
   // INITIALIZER
   // ===========

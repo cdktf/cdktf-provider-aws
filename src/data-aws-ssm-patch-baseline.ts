@@ -10,7 +10,7 @@ export interface DataAwsSsmPatchBaselineConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ssm_patch_baseline.html#default_baseline DataAwsSsmPatchBaseline#default_baseline}
   */
-  readonly defaultBaseline?: boolean;
+  readonly defaultBaseline?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ssm_patch_baseline.html#name_prefix DataAwsSsmPatchBaseline#name_prefix}
   */
@@ -29,6 +29,11 @@ export interface DataAwsSsmPatchBaselineConfig extends cdktf.TerraformMetaArgume
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssm_patch_baseline.html aws_ssm_patch_baseline}
 */
 export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_patch_baseline";
 
   // ===========
   // INITIALIZER
@@ -63,11 +68,11 @@ export class DataAwsSsmPatchBaseline extends cdktf.TerraformDataSource {
   // ==========
 
   // default_baseline - computed: false, optional: true, required: false
-  private _defaultBaseline?: boolean;
+  private _defaultBaseline?: boolean | cdktf.IResolvable;
   public get defaultBaseline() {
     return this.getBooleanAttribute('default_baseline');
   }
-  public set defaultBaseline(value: boolean ) {
+  public set defaultBaseline(value: boolean | cdktf.IResolvable ) {
     this._defaultBaseline = value;
   }
   public resetDefaultBaseline() {

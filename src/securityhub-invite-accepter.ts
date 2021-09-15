@@ -18,6 +18,11 @@ export interface SecurityhubInviteAccepterConfig extends cdktf.TerraformMetaArgu
 */
 export class SecurityhubInviteAccepter extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_invite_accepter";
+
   // ===========
   // INITIALIZER
   // ===========

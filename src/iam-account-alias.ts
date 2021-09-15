@@ -18,6 +18,11 @@ export interface IamAccountAliasConfig extends cdktf.TerraformMetaArguments {
 */
 export class IamAccountAlias extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_account_alias";
+
   // ===========
   // INITIALIZER
   // ===========

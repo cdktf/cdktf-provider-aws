@@ -50,7 +50,7 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#replace_unhealthy_instances SpotFleetRequest#replace_unhealthy_instances}
   */
-  readonly replaceUnhealthyInstances?: boolean;
+  readonly replaceUnhealthyInstances?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#spot_price SpotFleetRequest#spot_price}
   */
@@ -58,11 +58,11 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#tags SpotFleetRequest#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#tags_all SpotFleetRequest#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#target_capacity SpotFleetRequest#target_capacity}
   */
@@ -74,7 +74,7 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#terminate_instances_with_expiration SpotFleetRequest#terminate_instances_with_expiration}
   */
-  readonly terminateInstancesWithExpiration?: boolean;
+  readonly terminateInstancesWithExpiration?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#valid_from SpotFleetRequest#valid_from}
   */
@@ -86,7 +86,7 @@ export interface SpotFleetRequestConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#wait_for_fulfillment SpotFleetRequest#wait_for_fulfillment}
   */
-  readonly waitForFulfillment?: boolean;
+  readonly waitForFulfillment?: boolean | cdktf.IResolvable;
   /**
   * launch_specification block
   * 
@@ -116,7 +116,7 @@ export interface SpotFleetRequestLaunchSpecificationEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#delete_on_termination SpotFleetRequest#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#device_name SpotFleetRequest#device_name}
   */
@@ -124,7 +124,7 @@ export interface SpotFleetRequestLaunchSpecificationEbsBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#encrypted SpotFleetRequest#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#iops SpotFleetRequest#iops}
   */
@@ -189,11 +189,11 @@ export interface SpotFleetRequestLaunchSpecificationRootBlockDevice {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#delete_on_termination SpotFleetRequest#delete_on_termination}
   */
-  readonly deleteOnTermination?: boolean;
+  readonly deleteOnTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#encrypted SpotFleetRequest#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#iops SpotFleetRequest#iops}
   */
@@ -237,7 +237,7 @@ export interface SpotFleetRequestLaunchSpecification {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#associate_public_ip_address SpotFleetRequest#associate_public_ip_address}
   */
-  readonly associatePublicIpAddress?: boolean;
+  readonly associatePublicIpAddress?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#availability_zone SpotFleetRequest#availability_zone}
   */
@@ -245,7 +245,7 @@ export interface SpotFleetRequestLaunchSpecification {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#ebs_optimized SpotFleetRequest#ebs_optimized}
   */
-  readonly ebsOptimized?: boolean;
+  readonly ebsOptimized?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#iam_instance_profile SpotFleetRequest#iam_instance_profile}
   */
@@ -265,7 +265,7 @@ export interface SpotFleetRequestLaunchSpecification {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#monitoring SpotFleetRequest#monitoring}
   */
-  readonly monitoring?: boolean;
+  readonly monitoring?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#placement_group SpotFleetRequest#placement_group}
   */
@@ -285,7 +285,7 @@ export interface SpotFleetRequestLaunchSpecification {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#tags SpotFleetRequest#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html#user_data SpotFleetRequest#user_data}
   */
@@ -484,6 +484,11 @@ function spotFleetRequestTimeoutsToTerraform(struct?: SpotFleetRequestTimeouts):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/spot_fleet_request.html aws_spot_fleet_request}
 */
 export class SpotFleetRequest extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_spot_fleet_request";
 
   // ===========
   // INITIALIZER
@@ -705,11 +710,11 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   }
 
   // replace_unhealthy_instances - computed: false, optional: true, required: false
-  private _replaceUnhealthyInstances?: boolean;
+  private _replaceUnhealthyInstances?: boolean | cdktf.IResolvable;
   public get replaceUnhealthyInstances() {
     return this.getBooleanAttribute('replace_unhealthy_instances');
   }
-  public set replaceUnhealthyInstances(value: boolean ) {
+  public set replaceUnhealthyInstances(value: boolean | cdktf.IResolvable ) {
     this._replaceUnhealthyInstances = value;
   }
   public resetReplaceUnhealthyInstances() {
@@ -742,11 +747,11 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -758,11 +763,11 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -803,11 +808,11 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   }
 
   // terminate_instances_with_expiration - computed: false, optional: true, required: false
-  private _terminateInstancesWithExpiration?: boolean;
+  private _terminateInstancesWithExpiration?: boolean | cdktf.IResolvable;
   public get terminateInstancesWithExpiration() {
     return this.getBooleanAttribute('terminate_instances_with_expiration');
   }
-  public set terminateInstancesWithExpiration(value: boolean ) {
+  public set terminateInstancesWithExpiration(value: boolean | cdktf.IResolvable ) {
     this._terminateInstancesWithExpiration = value;
   }
   public resetTerminateInstancesWithExpiration() {
@@ -851,11 +856,11 @@ export class SpotFleetRequest extends cdktf.TerraformResource {
   }
 
   // wait_for_fulfillment - computed: false, optional: true, required: false
-  private _waitForFulfillment?: boolean;
+  private _waitForFulfillment?: boolean | cdktf.IResolvable;
   public get waitForFulfillment() {
     return this.getBooleanAttribute('wait_for_fulfillment');
   }
-  public set waitForFulfillment(value: boolean ) {
+  public set waitForFulfillment(value: boolean | cdktf.IResolvable ) {
     this._waitForFulfillment = value;
   }
   public resetWaitForFulfillment() {

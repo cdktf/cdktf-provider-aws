@@ -22,7 +22,7 @@ export interface CloudfrontFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_function.html#publish CloudfrontFunction#publish}
   */
-  readonly publish?: boolean;
+  readonly publish?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_function.html#runtime CloudfrontFunction#runtime}
   */
@@ -33,6 +33,11 @@ export interface CloudfrontFunctionConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_function.html aws_cloudfront_function}
 */
 export class CloudfrontFunction extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_function";
 
   // ===========
   // INITIALIZER
@@ -125,11 +130,11 @@ export class CloudfrontFunction extends cdktf.TerraformResource {
   }
 
   // publish - computed: false, optional: true, required: false
-  private _publish?: boolean;
+  private _publish?: boolean | cdktf.IResolvable;
   public get publish() {
     return this.getBooleanAttribute('publish');
   }
-  public set publish(value: boolean ) {
+  public set publish(value: boolean | cdktf.IResolvable ) {
     this._publish = value;
   }
   public resetPublish() {

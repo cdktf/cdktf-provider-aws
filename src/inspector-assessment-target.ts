@@ -22,6 +22,11 @@ export interface InspectorAssessmentTargetConfig extends cdktf.TerraformMetaArgu
 */
 export class InspectorAssessmentTarget extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_inspector_assessment_target";
+
   // ===========
   // INITIALIZER
   // ===========

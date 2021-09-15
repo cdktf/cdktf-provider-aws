@@ -60,6 +60,11 @@ export class DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators 
 */
 export class DataAwsOrganizationsDelegatedAdministrators extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_organizations_delegated_administrators";
+
   // ===========
   // INITIALIZER
   // ===========

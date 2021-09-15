@@ -18,6 +18,11 @@ export interface DataAwsArnConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsArn extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_arn";
+
   // ===========
   // INITIALIZER
   // ===========

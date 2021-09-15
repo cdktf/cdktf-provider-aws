@@ -43,6 +43,11 @@ function chimeVoiceConnectorGroupConnectorToTerraform(struct?: ChimeVoiceConnect
 */
 export class ChimeVoiceConnectorGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_chime_voice_connector_group";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -18,6 +18,11 @@ export interface DataAwsS3BucketConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsS3Bucket extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_bucket";
+
   // ===========
   // INITIALIZER
   // ===========

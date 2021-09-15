@@ -10,11 +10,11 @@ export interface DataAwsResourcegroupstaggingapiResourcesConfig extends cdktf.Te
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/resourcegroupstaggingapi_resources.html#exclude_compliant_resources DataAwsResourcegroupstaggingapiResources#exclude_compliant_resources}
   */
-  readonly excludeCompliantResources?: boolean;
+  readonly excludeCompliantResources?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/resourcegroupstaggingapi_resources.html#include_compliance_details DataAwsResourcegroupstaggingapiResources#include_compliance_details}
   */
-  readonly includeComplianceDetails?: boolean;
+  readonly includeComplianceDetails?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/resourcegroupstaggingapi_resources.html#resource_arn_list DataAwsResourcegroupstaggingapiResources#resource_arn_list}
   */
@@ -89,6 +89,11 @@ function dataAwsResourcegroupstaggingapiResourcesTagFilterToTerraform(struct?: D
 */
 export class DataAwsResourcegroupstaggingapiResources extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_resourcegroupstaggingapi_resources";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -123,11 +128,11 @@ export class DataAwsResourcegroupstaggingapiResources extends cdktf.TerraformDat
   // ==========
 
   // exclude_compliant_resources - computed: false, optional: true, required: false
-  private _excludeCompliantResources?: boolean;
+  private _excludeCompliantResources?: boolean | cdktf.IResolvable;
   public get excludeCompliantResources() {
     return this.getBooleanAttribute('exclude_compliant_resources');
   }
-  public set excludeCompliantResources(value: boolean ) {
+  public set excludeCompliantResources(value: boolean | cdktf.IResolvable ) {
     this._excludeCompliantResources = value;
   }
   public resetExcludeCompliantResources() {
@@ -144,11 +149,11 @@ export class DataAwsResourcegroupstaggingapiResources extends cdktf.TerraformDat
   }
 
   // include_compliance_details - computed: false, optional: true, required: false
-  private _includeComplianceDetails?: boolean;
+  private _includeComplianceDetails?: boolean | cdktf.IResolvable;
   public get includeComplianceDetails() {
     return this.getBooleanAttribute('include_compliance_details');
   }
-  public set includeComplianceDetails(value: boolean ) {
+  public set includeComplianceDetails(value: boolean | cdktf.IResolvable ) {
     this._includeComplianceDetails = value;
   }
   public resetIncludeComplianceDetails() {

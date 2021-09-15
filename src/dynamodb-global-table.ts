@@ -68,6 +68,11 @@ function dynamodbGlobalTableTimeoutsToTerraform(struct?: DynamodbGlobalTableTime
 */
 export class DynamodbGlobalTable extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dynamodb_global_table";
+
   // ===========
   // INITIALIZER
   // ===========

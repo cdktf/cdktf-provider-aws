@@ -14,7 +14,7 @@ export interface DataAwsAcmpcaCertificateAuthorityConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certificate_authority.html#tags DataAwsAcmpcaCertificateAuthority#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * revocation_configuration block
   * 
@@ -52,6 +52,11 @@ function dataAwsAcmpcaCertificateAuthorityRevocationConfigurationToTerraform(str
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/acmpca_certificate_authority.html aws_acmpca_certificate_authority}
 */
 export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_acmpca_certificate_authority";
 
   // ===========
   // INITIALIZER
@@ -138,11 +143,11 @@ export class DataAwsAcmpcaCertificateAuthority extends cdktf.TerraformDataSource
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

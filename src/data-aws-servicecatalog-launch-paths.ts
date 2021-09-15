@@ -56,6 +56,11 @@ export class DataAwsServicecatalogLaunchPathsSummaries extends cdktf.ComplexComp
 */
 export class DataAwsServicecatalogLaunchPaths extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_launch_paths";
+
   // ===========
   // INITIALIZER
   // ===========

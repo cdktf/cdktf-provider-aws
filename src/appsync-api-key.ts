@@ -26,6 +26,11 @@ export interface AppsyncApiKeyConfig extends cdktf.TerraformMetaArguments {
 */
 export class AppsyncApiKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appsync_api_key";
+
   // ===========
   // INITIALIZER
   // ===========

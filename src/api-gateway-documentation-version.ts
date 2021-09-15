@@ -26,6 +26,11 @@ export interface ApiGatewayDocumentationVersionConfig extends cdktf.TerraformMet
 */
 export class ApiGatewayDocumentationVersion extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_documentation_version";
+
   // ===========
   // INITIALIZER
   // ===========

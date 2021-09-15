@@ -18,6 +18,11 @@ export interface SesDomainIdentityConfig extends cdktf.TerraformMetaArguments {
 */
 export class SesDomainIdentity extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_domain_identity";
+
   // ===========
   // INITIALIZER
   // ===========

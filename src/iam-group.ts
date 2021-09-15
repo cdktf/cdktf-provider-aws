@@ -22,6 +22,11 @@ export interface IamGroupConfig extends cdktf.TerraformMetaArguments {
 */
 export class IamGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_group";
+
   // ===========
   // INITIALIZER
   // ===========

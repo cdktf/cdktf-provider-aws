@@ -50,7 +50,7 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#publish LambdaFunction#publish}
   */
-  readonly publish?: boolean;
+  readonly publish?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#reserved_concurrent_executions LambdaFunction#reserved_concurrent_executions}
   */
@@ -82,11 +82,11 @@ export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#tags LambdaFunction#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#tags_all LambdaFunction#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#timeout LambdaFunction#timeout}
   */
@@ -152,7 +152,7 @@ export interface LambdaFunctionEnvironment {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#variables LambdaFunction#variables}
   */
-  readonly variables?: { [key: string]: string };
+  readonly variables?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function lambdaFunctionEnvironmentToTerraform(struct?: LambdaFunctionEnvironment): any {
@@ -257,6 +257,11 @@ function lambdaFunctionVpcConfigToTerraform(struct?: LambdaFunctionVpcConfig): a
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html aws_lambda_function}
 */
 export class LambdaFunction extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_function";
 
   // ===========
   // INITIALIZER
@@ -492,11 +497,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // publish - computed: false, optional: true, required: false
-  private _publish?: boolean;
+  private _publish?: boolean | cdktf.IResolvable;
   public get publish() {
     return this.getBooleanAttribute('publish');
   }
-  public set publish(value: boolean ) {
+  public set publish(value: boolean | cdktf.IResolvable ) {
     this._publish = value;
   }
   public resetPublish() {
@@ -637,11 +642,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -653,11 +658,11 @@ export class LambdaFunction extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

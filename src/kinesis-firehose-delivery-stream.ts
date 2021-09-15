@@ -22,11 +22,11 @@ export interface KinesisFirehoseDeliveryStreamConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#tags KinesisFirehoseDeliveryStream#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#tags_all KinesisFirehoseDeliveryStream#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#version_id KinesisFirehoseDeliveryStream#version_id}
   */
@@ -84,7 +84,7 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwat
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -148,7 +148,7 @@ export interface KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessi
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
@@ -273,7 +273,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchL
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -311,15 +311,15 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#case_insensitive KinesisFirehoseDeliveryStream#case_insensitive}
   */
-  readonly caseInsensitive?: boolean;
+  readonly caseInsensitive?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#column_to_json_key_mappings KinesisFirehoseDeliveryStream#column_to_json_key_mappings}
   */
-  readonly columnToJsonKeyMappings?: { [key: string]: string };
+  readonly columnToJsonKeyMappings?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#convert_dots_in_json_keys_to_underscores KinesisFirehoseDeliveryStream#convert_dots_in_json_keys_to_underscores}
   */
-  readonly convertDotsInJsonKeysToUnderscores?: boolean;
+  readonly convertDotsInJsonKeysToUnderscores?: boolean | cdktf.IResolvable;
 }
 
 function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDeToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe): any {
@@ -394,7 +394,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enable_padding KinesisFirehoseDeliveryStream#enable_padding}
   */
-  readonly enablePadding?: boolean;
+  readonly enablePadding?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#format_version KinesisFirehoseDeliveryStream#format_version}
   */
@@ -441,7 +441,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enable_dictionary_compression KinesisFirehoseDeliveryStream#enable_dictionary_compression}
   */
-  readonly enableDictionaryCompression?: boolean;
+  readonly enableDictionaryCompression?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#max_padding_bytes KinesisFirehoseDeliveryStream#max_padding_bytes}
   */
@@ -550,7 +550,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatC
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * input_format_configuration block
   * 
@@ -625,7 +625,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingC
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
@@ -646,7 +646,7 @@ export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupCon
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -803,7 +803,7 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatc
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -867,7 +867,7 @@ export interface KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessin
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
@@ -1017,7 +1017,7 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLog
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -1081,7 +1081,7 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingCon
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
@@ -1102,7 +1102,7 @@ export interface KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfi
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -1252,7 +1252,7 @@ export interface KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOp
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -1327,7 +1327,7 @@ export interface KinesisFirehoseDeliveryStreamServerSideEncryption {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#key_arn KinesisFirehoseDeliveryStream#key_arn}
   */
@@ -1351,7 +1351,7 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggi
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#log_group_name KinesisFirehoseDeliveryStream#log_group_name}
   */
@@ -1415,7 +1415,7 @@ export interface KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfi
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * processors block
   * 
@@ -1490,6 +1490,11 @@ function kinesisFirehoseDeliveryStreamSplunkConfigurationToTerraform(struct?: Ki
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html aws_kinesis_firehose_delivery_stream}
 */
 export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kinesis_firehose_delivery_stream";
 
   // ===========
   // INITIALIZER
@@ -1586,11 +1591,11 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -1602,11 +1607,11 @@ export class KinesisFirehoseDeliveryStream extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

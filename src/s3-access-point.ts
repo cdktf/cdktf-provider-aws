@@ -40,19 +40,19 @@ export interface S3AccessPointPublicAccessBlockConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#block_public_acls S3AccessPoint#block_public_acls}
   */
-  readonly blockPublicAcls?: boolean;
+  readonly blockPublicAcls?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#block_public_policy S3AccessPoint#block_public_policy}
   */
-  readonly blockPublicPolicy?: boolean;
+  readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#ignore_public_acls S3AccessPoint#ignore_public_acls}
   */
-  readonly ignorePublicAcls?: boolean;
+  readonly ignorePublicAcls?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html#restrict_public_buckets S3AccessPoint#restrict_public_buckets}
   */
-  readonly restrictPublicBuckets?: boolean;
+  readonly restrictPublicBuckets?: boolean | cdktf.IResolvable;
 }
 
 function s3AccessPointPublicAccessBlockConfigurationToTerraform(struct?: S3AccessPointPublicAccessBlockConfiguration): any {
@@ -84,6 +84,11 @@ function s3AccessPointVpcConfigurationToTerraform(struct?: S3AccessPointVpcConfi
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point.html aws_s3_access_point}
 */
 export class S3AccessPoint extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_access_point";
 
   // ===========
   // INITIALIZER

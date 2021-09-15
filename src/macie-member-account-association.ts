@@ -18,6 +18,11 @@ export interface MacieMemberAccountAssociationConfig extends cdktf.TerraformMeta
 */
 export class MacieMemberAccountAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_macie_member_account_association";
+
   // ===========
   // INITIALIZER
   // ===========

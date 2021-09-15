@@ -18,6 +18,11 @@ export interface SesDomainDkimConfig extends cdktf.TerraformMetaArguments {
 */
 export class SesDomainDkim extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_domain_dkim";
+
   // ===========
   // INITIALIZER
   // ===========

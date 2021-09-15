@@ -18,6 +18,11 @@ export interface DataAwsOutpostsSiteConfig extends cdktf.TerraformMetaArguments 
 */
 export class DataAwsOutpostsSite extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_outposts_site";
+
   // ===========
   // INITIALIZER
   // ===========

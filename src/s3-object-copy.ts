@@ -18,7 +18,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#bucket_key_enabled S3ObjectCopy#bucket_key_enabled}
   */
-  readonly bucketKeyEnabled?: boolean;
+  readonly bucketKeyEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#cache_control S3ObjectCopy#cache_control}
   */
@@ -82,7 +82,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#force_destroy S3ObjectCopy#force_destroy}
   */
-  readonly forceDestroy?: boolean;
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#key S3ObjectCopy#key}
   */
@@ -98,7 +98,7 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#metadata S3ObjectCopy#metadata}
   */
-  readonly metadata?: { [key: string]: string };
+  readonly metadata?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#metadata_directive S3ObjectCopy#metadata_directive}
   */
@@ -150,11 +150,11 @@ export interface S3ObjectCopyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#tags S3ObjectCopy#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#tags_all S3ObjectCopy#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html#website_redirect S3ObjectCopy#website_redirect}
   */
@@ -205,6 +205,11 @@ function s3ObjectCopyGrantToTerraform(struct?: S3ObjectCopyGrant): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy.html aws_s3_object_copy}
 */
 export class S3ObjectCopy extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_object_copy";
 
   // ===========
   // INITIALIZER
@@ -303,11 +308,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // bucket_key_enabled - computed: true, optional: true, required: false
-  private _bucketKeyEnabled?: boolean;
+  private _bucketKeyEnabled?: boolean | cdktf.IResolvable;
   public get bucketKeyEnabled() {
     return this.getBooleanAttribute('bucket_key_enabled');
   }
-  public set bucketKeyEnabled(value: boolean) {
+  public set bucketKeyEnabled(value: boolean | cdktf.IResolvable) {
     this._bucketKeyEnabled = value;
   }
   public resetBucketKeyEnabled() {
@@ -569,11 +574,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean;
+  private _forceDestroy?: boolean | cdktf.IResolvable;
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean ) {
+  public set forceDestroy(value: boolean | cdktf.IResolvable ) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -640,11 +645,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // metadata - computed: true, optional: true, required: false
-  private _metadata?: { [key: string]: string }
-  public get metadata(): { [key: string]: string } {
+  private _metadata?: { [key: string]: string } | cdktf.IResolvable
+  public get metadata(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('metadata') as any; // Getting the computed value is not yet implemented
   }
-  public set metadata(value: { [key: string]: string }) {
+  public set metadata(value: { [key: string]: string } | cdktf.IResolvable) {
     this._metadata = value;
   }
   public resetMetadata() {
@@ -855,11 +860,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -871,11 +876,11 @@ export class S3ObjectCopy extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

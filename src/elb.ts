@@ -14,7 +14,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#connection_draining Elb#connection_draining}
   */
-  readonly connectionDraining?: boolean;
+  readonly connectionDraining?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#connection_draining_timeout Elb#connection_draining_timeout}
   */
@@ -22,7 +22,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#cross_zone_load_balancing Elb#cross_zone_load_balancing}
   */
-  readonly crossZoneLoadBalancing?: boolean;
+  readonly crossZoneLoadBalancing?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#idle_timeout Elb#idle_timeout}
   */
@@ -34,7 +34,7 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#internal Elb#internal}
   */
-  readonly internal?: boolean;
+  readonly internal?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#name Elb#name}
   */
@@ -58,11 +58,11 @@ export interface ElbConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#tags Elb#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#tags_all Elb#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * access_logs block
   * 
@@ -94,7 +94,7 @@ export interface ElbAccessLogs {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#enabled Elb#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elb.html#interval Elb#interval}
   */
@@ -185,6 +185,11 @@ function elbListenerToTerraform(struct?: ElbListener): any {
 */
 export class Elb extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elb";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -252,11 +257,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // connection_draining - computed: false, optional: true, required: false
-  private _connectionDraining?: boolean;
+  private _connectionDraining?: boolean | cdktf.IResolvable;
   public get connectionDraining() {
     return this.getBooleanAttribute('connection_draining');
   }
-  public set connectionDraining(value: boolean ) {
+  public set connectionDraining(value: boolean | cdktf.IResolvable ) {
     this._connectionDraining = value;
   }
   public resetConnectionDraining() {
@@ -284,11 +289,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // cross_zone_load_balancing - computed: false, optional: true, required: false
-  private _crossZoneLoadBalancing?: boolean;
+  private _crossZoneLoadBalancing?: boolean | cdktf.IResolvable;
   public get crossZoneLoadBalancing() {
     return this.getBooleanAttribute('cross_zone_load_balancing');
   }
-  public set crossZoneLoadBalancing(value: boolean ) {
+  public set crossZoneLoadBalancing(value: boolean | cdktf.IResolvable ) {
     this._crossZoneLoadBalancing = value;
   }
   public resetCrossZoneLoadBalancing() {
@@ -342,11 +347,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // internal - computed: true, optional: true, required: false
-  private _internal?: boolean;
+  private _internal?: boolean | cdktf.IResolvable;
   public get internal() {
     return this.getBooleanAttribute('internal');
   }
-  public set internal(value: boolean) {
+  public set internal(value: boolean | cdktf.IResolvable) {
     this._internal = value;
   }
   public resetInternal() {
@@ -443,11 +448,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -459,11 +464,11 @@ export class Elb extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

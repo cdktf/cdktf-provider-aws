@@ -10,7 +10,7 @@ export interface DataAwsSecurityGroupsConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/security_groups.html#tags DataAwsSecurityGroups#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
@@ -42,6 +42,11 @@ function dataAwsSecurityGroupsFilterToTerraform(struct?: DataAwsSecurityGroupsFi
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/security_groups.html aws_security_groups}
 */
 export class DataAwsSecurityGroups extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_security_groups";
 
   // ===========
   // INITIALIZER
@@ -89,11 +94,11 @@ export class DataAwsSecurityGroups extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

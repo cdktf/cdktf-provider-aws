@@ -47,6 +47,11 @@ function daxParameterGroupParametersToTerraform(struct?: DaxParameterGroupParame
 */
 export class DaxParameterGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dax_parameter_group";
+
   // ===========
   // INITIALIZER
   // ===========

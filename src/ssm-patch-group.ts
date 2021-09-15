@@ -22,6 +22,11 @@ export interface SsmPatchGroupConfig extends cdktf.TerraformMetaArguments {
 */
 export class SsmPatchGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssm_patch_group";
+
   // ===========
   // INITIALIZER
   // ===========

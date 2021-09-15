@@ -26,7 +26,7 @@ export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html#disable_execute_api_endpoint ApiGatewayRestApi#disable_execute_api_endpoint}
   */
-  readonly disableExecuteApiEndpoint?: boolean;
+  readonly disableExecuteApiEndpoint?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html#minimum_compression_size ApiGatewayRestApi#minimum_compression_size}
   */
@@ -38,7 +38,7 @@ export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html#parameters ApiGatewayRestApi#parameters}
   */
-  readonly parameters?: { [key: string]: string };
+  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html#policy ApiGatewayRestApi#policy}
   */
@@ -46,11 +46,11 @@ export interface ApiGatewayRestApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html#tags ApiGatewayRestApi#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html#tags_all ApiGatewayRestApi#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * endpoint_configuration block
   * 
@@ -82,6 +82,11 @@ function apiGatewayRestApiEndpointConfigurationToTerraform(struct?: ApiGatewayRe
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html aws_api_gateway_rest_api}
 */
 export class ApiGatewayRestApi extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_rest_api";
 
   // ===========
   // INITIALIZER
@@ -198,11 +203,11 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   }
 
   // disable_execute_api_endpoint - computed: true, optional: true, required: false
-  private _disableExecuteApiEndpoint?: boolean;
+  private _disableExecuteApiEndpoint?: boolean | cdktf.IResolvable;
   public get disableExecuteApiEndpoint() {
     return this.getBooleanAttribute('disable_execute_api_endpoint');
   }
-  public set disableExecuteApiEndpoint(value: boolean) {
+  public set disableExecuteApiEndpoint(value: boolean | cdktf.IResolvable) {
     this._disableExecuteApiEndpoint = value;
   }
   public resetDisableExecuteApiEndpoint() {
@@ -253,11 +258,11 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: true, required: false
-  private _parameters?: { [key: string]: string };
+  private _parameters?: { [key: string]: string } | cdktf.IResolvable;
   public get parameters() {
     return this.interpolationForAttribute('parameters') as any;
   }
-  public set parameters(value: { [key: string]: string } ) {
+  public set parameters(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._parameters = value;
   }
   public resetParameters() {
@@ -290,11 +295,11 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -306,11 +311,11 @@ export class ApiGatewayRestApi extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

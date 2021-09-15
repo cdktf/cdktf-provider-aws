@@ -18,13 +18,18 @@ export interface ChimeVoiceConnectorConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector.html#require_encryption ChimeVoiceConnector#require_encryption}
   */
-  readonly requireEncryption: boolean;
+  readonly requireEncryption: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector.html aws_chime_voice_connector}
 */
 export class ChimeVoiceConnector extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_chime_voice_connector";
 
   // ===========
   // INITIALIZER
@@ -97,11 +102,11 @@ export class ChimeVoiceConnector extends cdktf.TerraformResource {
   }
 
   // require_encryption - computed: false, optional: false, required: true
-  private _requireEncryption: boolean;
+  private _requireEncryption: boolean | cdktf.IResolvable;
   public get requireEncryption() {
     return this.getBooleanAttribute('require_encryption');
   }
-  public set requireEncryption(value: boolean) {
+  public set requireEncryption(value: boolean | cdktf.IResolvable) {
     this._requireEncryption = value;
   }
   // Temporarily expose input value. Use with caution.

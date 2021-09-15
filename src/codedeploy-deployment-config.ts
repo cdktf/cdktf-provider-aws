@@ -119,6 +119,11 @@ function codedeployDeploymentConfigTrafficRoutingConfigToTerraform(struct?: Code
 */
 export class CodedeployDeploymentConfig extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_codedeploy_deployment_config";
+
   // ===========
   // INITIALIZER
   // ===========

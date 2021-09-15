@@ -26,7 +26,7 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#force_destroy S3Bucket#force_destroy}
   */
-  readonly forceDestroy?: boolean;
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#hosted_zone_id S3Bucket#hosted_zone_id}
   */
@@ -42,11 +42,11 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#tags S3Bucket#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#tags_all S3Bucket#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#website_domain S3Bucket#website_domain}
   */
@@ -185,7 +185,7 @@ export interface S3BucketLifecycleRuleExpiration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#expired_object_delete_marker S3Bucket#expired_object_delete_marker}
   */
-  readonly expiredObjectDeleteMarker?: boolean;
+  readonly expiredObjectDeleteMarker?: boolean | cdktf.IResolvable;
 }
 
 function s3BucketLifecycleRuleExpirationToTerraform(struct?: S3BucketLifecycleRuleExpiration): any {
@@ -262,7 +262,7 @@ export interface S3BucketLifecycleRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#enabled S3Bucket#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#id S3Bucket#id}
   */
@@ -274,7 +274,7 @@ export interface S3BucketLifecycleRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#tags S3Bucket#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * expiration block
   * 
@@ -454,7 +454,7 @@ export interface S3BucketReplicationConfigurationRulesFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#tags S3Bucket#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function s3BucketReplicationConfigurationRulesFilterToTerraform(struct?: S3BucketReplicationConfigurationRulesFilter): any {
@@ -469,7 +469,7 @@ export interface S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSse
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#enabled S3Bucket#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
 }
 
 function s3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjectsToTerraform(struct?: S3BucketReplicationConfigurationRulesSourceSelectionCriteriaSseKmsEncryptedObjects): any {
@@ -594,7 +594,7 @@ export interface S3BucketServerSideEncryptionConfigurationRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#bucket_key_enabled S3Bucket#bucket_key_enabled}
   */
-  readonly bucketKeyEnabled?: boolean;
+  readonly bucketKeyEnabled?: boolean | cdktf.IResolvable;
   /**
   * apply_server_side_encryption_by_default block
   * 
@@ -631,11 +631,11 @@ export interface S3BucketVersioning {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#enabled S3Bucket#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#mfa_delete S3Bucket#mfa_delete}
   */
-  readonly mfaDelete?: boolean;
+  readonly mfaDelete?: boolean | cdktf.IResolvable;
 }
 
 function s3BucketVersioningToTerraform(struct?: S3BucketVersioning): any {
@@ -680,6 +680,11 @@ function s3BucketWebsiteToTerraform(struct?: S3BucketWebsite): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html aws_s3_bucket}
 */
 export class S3Bucket extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_bucket";
 
   // ===========
   // INITIALIZER
@@ -810,11 +815,11 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean;
+  private _forceDestroy?: boolean | cdktf.IResolvable;
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean ) {
+  public set forceDestroy(value: boolean | cdktf.IResolvable ) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -884,11 +889,11 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -900,11 +905,11 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

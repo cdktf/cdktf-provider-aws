@@ -42,6 +42,11 @@ export interface AppsyncFunctionConfig extends cdktf.TerraformMetaArguments {
 */
 export class AppsyncFunction extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appsync_function";
+
   // ===========
   // INITIALIZER
   // ===========

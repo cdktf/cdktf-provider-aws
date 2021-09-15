@@ -10,7 +10,7 @@ export interface OpsworksUserProfileConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile.html#allow_self_management OpsworksUserProfile#allow_self_management}
   */
-  readonly allowSelfManagement?: boolean;
+  readonly allowSelfManagement?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile.html#ssh_public_key OpsworksUserProfile#ssh_public_key}
   */
@@ -29,6 +29,11 @@ export interface OpsworksUserProfileConfig extends cdktf.TerraformMetaArguments 
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile.html aws_opsworks_user_profile}
 */
 export class OpsworksUserProfile extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_opsworks_user_profile";
 
   // ===========
   // INITIALIZER
@@ -63,11 +68,11 @@ export class OpsworksUserProfile extends cdktf.TerraformResource {
   // ==========
 
   // allow_self_management - computed: false, optional: true, required: false
-  private _allowSelfManagement?: boolean;
+  private _allowSelfManagement?: boolean | cdktf.IResolvable;
   public get allowSelfManagement() {
     return this.getBooleanAttribute('allow_self_management');
   }
-  public set allowSelfManagement(value: boolean ) {
+  public set allowSelfManagement(value: boolean | cdktf.IResolvable ) {
     this._allowSelfManagement = value;
   }
   public resetAllowSelfManagement() {

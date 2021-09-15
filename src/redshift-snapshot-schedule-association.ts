@@ -22,6 +22,11 @@ export interface RedshiftSnapshotScheduleAssociationConfig extends cdktf.Terrafo
 */
 export class RedshiftSnapshotScheduleAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_redshift_snapshot_schedule_association";
+
   // ===========
   // INITIALIZER
   // ===========

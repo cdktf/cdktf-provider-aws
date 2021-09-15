@@ -22,6 +22,11 @@ export interface CloudwatchLogStreamConfig extends cdktf.TerraformMetaArguments 
 */
 export class CloudwatchLogStream extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_log_stream";
+
   // ===========
   // INITIALIZER
   // ===========

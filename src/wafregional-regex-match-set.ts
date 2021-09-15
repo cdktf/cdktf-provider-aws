@@ -69,6 +69,11 @@ function wafregionalRegexMatchSetRegexMatchTupleToTerraform(struct?: Wafregional
 */
 export class WafregionalRegexMatchSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafregional_regex_match_set";
+
   // ===========
   // INITIALIZER
   // ===========

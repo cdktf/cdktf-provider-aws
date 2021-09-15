@@ -26,6 +26,11 @@ export interface DataAwsLambdaInvocationConfig extends cdktf.TerraformMetaArgume
 */
 export class DataAwsLambdaInvocation extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_invocation";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -14,15 +14,15 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#allow_major_version_upgrade DbInstance#allow_major_version_upgrade}
   */
-  readonly allowMajorVersionUpgrade?: boolean;
+  readonly allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#apply_immediately DbInstance#apply_immediately}
   */
-  readonly applyImmediately?: boolean;
+  readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#auto_minor_version_upgrade DbInstance#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean;
+  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#availability_zone DbInstance#availability_zone}
   */
@@ -46,11 +46,11 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#copy_tags_to_snapshot DbInstance#copy_tags_to_snapshot}
   */
-  readonly copyTagsToSnapshot?: boolean;
+  readonly copyTagsToSnapshot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#customer_owned_ip_enabled DbInstance#customer_owned_ip_enabled}
   */
-  readonly customerOwnedIpEnabled?: boolean;
+  readonly customerOwnedIpEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#db_subnet_group_name DbInstance#db_subnet_group_name}
   */
@@ -58,11 +58,11 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#delete_automated_backups DbInstance#delete_automated_backups}
   */
-  readonly deleteAutomatedBackups?: boolean;
+  readonly deleteAutomatedBackups?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#deletion_protection DbInstance#deletion_protection}
   */
-  readonly deletionProtection?: boolean;
+  readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#domain DbInstance#domain}
   */
@@ -90,7 +90,7 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#iam_database_authentication_enabled DbInstance#iam_database_authentication_enabled}
   */
-  readonly iamDatabaseAuthenticationEnabled?: boolean;
+  readonly iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#identifier DbInstance#identifier}
   */
@@ -134,7 +134,7 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#multi_az DbInstance#multi_az}
   */
-  readonly multiAz?: boolean;
+  readonly multiAz?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#name DbInstance#name}
   */
@@ -158,7 +158,7 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#performance_insights_enabled DbInstance#performance_insights_enabled}
   */
-  readonly performanceInsightsEnabled?: boolean;
+  readonly performanceInsightsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#performance_insights_kms_key_id DbInstance#performance_insights_kms_key_id}
   */
@@ -174,7 +174,7 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#publicly_accessible DbInstance#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean;
+  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#replicate_source_db DbInstance#replicate_source_db}
   */
@@ -186,7 +186,7 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#skip_final_snapshot DbInstance#skip_final_snapshot}
   */
-  readonly skipFinalSnapshot?: boolean;
+  readonly skipFinalSnapshot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#snapshot_identifier DbInstance#snapshot_identifier}
   */
@@ -194,7 +194,7 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#storage_encrypted DbInstance#storage_encrypted}
   */
-  readonly storageEncrypted?: boolean;
+  readonly storageEncrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#storage_type DbInstance#storage_type}
   */
@@ -202,11 +202,11 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#tags DbInstance#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#tags_all DbInstance#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#timezone DbInstance#timezone}
   */
@@ -254,7 +254,7 @@ export interface DbInstanceRestoreToPointInTime {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#use_latest_restorable_time DbInstance#use_latest_restorable_time}
   */
-  readonly useLatestRestorableTime?: boolean;
+  readonly useLatestRestorableTime?: boolean | cdktf.IResolvable;
 }
 
 function dbInstanceRestoreToPointInTimeToTerraform(struct?: DbInstanceRestoreToPointInTime): any {
@@ -330,6 +330,11 @@ function dbInstanceTimeoutsToTerraform(struct?: DbInstanceTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html aws_db_instance}
 */
 export class DbInstance extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_db_instance";
 
   // ===========
   // INITIALIZER
@@ -437,11 +442,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // allow_major_version_upgrade - computed: false, optional: true, required: false
-  private _allowMajorVersionUpgrade?: boolean;
+  private _allowMajorVersionUpgrade?: boolean | cdktf.IResolvable;
   public get allowMajorVersionUpgrade() {
     return this.getBooleanAttribute('allow_major_version_upgrade');
   }
-  public set allowMajorVersionUpgrade(value: boolean ) {
+  public set allowMajorVersionUpgrade(value: boolean | cdktf.IResolvable ) {
     this._allowMajorVersionUpgrade = value;
   }
   public resetAllowMajorVersionUpgrade() {
@@ -453,11 +458,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean;
+  private _applyImmediately?: boolean | cdktf.IResolvable;
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | cdktf.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -474,11 +479,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean;
+  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean ) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable ) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -570,11 +575,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
-  private _copyTagsToSnapshot?: boolean;
+  private _copyTagsToSnapshot?: boolean | cdktf.IResolvable;
   public get copyTagsToSnapshot() {
     return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
-  public set copyTagsToSnapshot(value: boolean ) {
+  public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable ) {
     this._copyTagsToSnapshot = value;
   }
   public resetCopyTagsToSnapshot() {
@@ -586,11 +591,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // customer_owned_ip_enabled - computed: false, optional: true, required: false
-  private _customerOwnedIpEnabled?: boolean;
+  private _customerOwnedIpEnabled?: boolean | cdktf.IResolvable;
   public get customerOwnedIpEnabled() {
     return this.getBooleanAttribute('customer_owned_ip_enabled');
   }
-  public set customerOwnedIpEnabled(value: boolean ) {
+  public set customerOwnedIpEnabled(value: boolean | cdktf.IResolvable ) {
     this._customerOwnedIpEnabled = value;
   }
   public resetCustomerOwnedIpEnabled() {
@@ -618,11 +623,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // delete_automated_backups - computed: false, optional: true, required: false
-  private _deleteAutomatedBackups?: boolean;
+  private _deleteAutomatedBackups?: boolean | cdktf.IResolvable;
   public get deleteAutomatedBackups() {
     return this.getBooleanAttribute('delete_automated_backups');
   }
-  public set deleteAutomatedBackups(value: boolean ) {
+  public set deleteAutomatedBackups(value: boolean | cdktf.IResolvable ) {
     this._deleteAutomatedBackups = value;
   }
   public resetDeleteAutomatedBackups() {
@@ -634,11 +639,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean;
+  private _deletionProtection?: boolean | cdktf.IResolvable;
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean ) {
+  public set deletionProtection(value: boolean | cdktf.IResolvable ) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -761,11 +766,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // iam_database_authentication_enabled - computed: false, optional: true, required: false
-  private _iamDatabaseAuthenticationEnabled?: boolean;
+  private _iamDatabaseAuthenticationEnabled?: boolean | cdktf.IResolvable;
   public get iamDatabaseAuthenticationEnabled() {
     return this.getBooleanAttribute('iam_database_authentication_enabled');
   }
-  public set iamDatabaseAuthenticationEnabled(value: boolean ) {
+  public set iamDatabaseAuthenticationEnabled(value: boolean | cdktf.IResolvable ) {
     this._iamDatabaseAuthenticationEnabled = value;
   }
   public resetIamDatabaseAuthenticationEnabled() {
@@ -944,11 +949,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // multi_az - computed: true, optional: true, required: false
-  private _multiAz?: boolean;
+  private _multiAz?: boolean | cdktf.IResolvable;
   public get multiAz() {
     return this.getBooleanAttribute('multi_az');
   }
-  public set multiAz(value: boolean) {
+  public set multiAz(value: boolean | cdktf.IResolvable) {
     this._multiAz = value;
   }
   public resetMultiAz() {
@@ -1040,11 +1045,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // performance_insights_enabled - computed: false, optional: true, required: false
-  private _performanceInsightsEnabled?: boolean;
+  private _performanceInsightsEnabled?: boolean | cdktf.IResolvable;
   public get performanceInsightsEnabled() {
     return this.getBooleanAttribute('performance_insights_enabled');
   }
-  public set performanceInsightsEnabled(value: boolean ) {
+  public set performanceInsightsEnabled(value: boolean | cdktf.IResolvable ) {
     this._performanceInsightsEnabled = value;
   }
   public resetPerformanceInsightsEnabled() {
@@ -1104,11 +1109,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
-  private _publiclyAccessible?: boolean;
+  private _publiclyAccessible?: boolean | cdktf.IResolvable;
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean ) {
+  public set publiclyAccessible(value: boolean | cdktf.IResolvable ) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -1162,11 +1167,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
-  private _skipFinalSnapshot?: boolean;
+  private _skipFinalSnapshot?: boolean | cdktf.IResolvable;
   public get skipFinalSnapshot() {
     return this.getBooleanAttribute('skip_final_snapshot');
   }
-  public set skipFinalSnapshot(value: boolean ) {
+  public set skipFinalSnapshot(value: boolean | cdktf.IResolvable ) {
     this._skipFinalSnapshot = value;
   }
   public resetSkipFinalSnapshot() {
@@ -1199,11 +1204,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // storage_encrypted - computed: false, optional: true, required: false
-  private _storageEncrypted?: boolean;
+  private _storageEncrypted?: boolean | cdktf.IResolvable;
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean ) {
+  public set storageEncrypted(value: boolean | cdktf.IResolvable ) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {
@@ -1231,11 +1236,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -1247,11 +1252,11 @@ export class DbInstance extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

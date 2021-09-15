@@ -22,7 +22,7 @@ export interface CloudwatchEventRuleConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_rule.html#is_enabled CloudwatchEventRule#is_enabled}
   */
-  readonly isEnabled?: boolean;
+  readonly isEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_rule.html#name CloudwatchEventRule#name}
   */
@@ -42,17 +42,22 @@ export interface CloudwatchEventRuleConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_rule.html#tags CloudwatchEventRule#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_rule.html#tags_all CloudwatchEventRule#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_event_rule.html aws_cloudwatch_event_rule}
 */
 export class CloudwatchEventRule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_rule";
 
   // ===========
   // INITIALIZER
@@ -151,11 +156,11 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean;
+  private _isEnabled?: boolean | cdktf.IResolvable;
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean ) {
+  public set isEnabled(value: boolean | cdktf.IResolvable ) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -231,11 +236,11 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -247,11 +252,11 @@ export class CloudwatchEventRule extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

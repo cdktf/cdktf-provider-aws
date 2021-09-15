@@ -22,6 +22,11 @@ export interface VpcEndpointRouteTableAssociationConfig extends cdktf.TerraformM
 */
 export class VpcEndpointRouteTableAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_endpoint_route_table_association";
+
   // ===========
   // INITIALIZER
   // ===========

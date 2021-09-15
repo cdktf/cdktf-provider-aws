@@ -30,6 +30,11 @@ export interface DataAwsRoute53ResolverRulesConfig extends cdktf.TerraformMetaAr
 */
 export class DataAwsRoute53ResolverRules extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_resolver_rules";
+
   // ===========
   // INITIALIZER
   // ===========

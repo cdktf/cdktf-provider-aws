@@ -22,7 +22,7 @@ export interface DataAwsSubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnet.html#default_for_az DataAwsSubnet#default_for_az}
   */
-  readonly defaultForAz?: boolean;
+  readonly defaultForAz?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnet.html#ipv6_cidr_block DataAwsSubnet#ipv6_cidr_block}
   */
@@ -34,7 +34,7 @@ export interface DataAwsSubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnet.html#tags DataAwsSubnet#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/subnet.html#vpc_id DataAwsSubnet#vpc_id}
   */
@@ -70,6 +70,11 @@ function dataAwsSubnetFilterToTerraform(struct?: DataAwsSubnetFilter): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/subnet.html aws_subnet}
 */
 export class DataAwsSubnet extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_subnet";
 
   // ===========
   // INITIALIZER
@@ -177,11 +182,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   }
 
   // default_for_az - computed: true, optional: true, required: false
-  private _defaultForAz?: boolean;
+  private _defaultForAz?: boolean | cdktf.IResolvable;
   public get defaultForAz() {
     return this.getBooleanAttribute('default_for_az');
   }
-  public set defaultForAz(value: boolean) {
+  public set defaultForAz(value: boolean | cdktf.IResolvable) {
     this._defaultForAz = value;
   }
   public resetDefaultForAz() {
@@ -255,11 +260,11 @@ export class DataAwsSubnet extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

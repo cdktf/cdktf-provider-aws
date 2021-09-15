@@ -34,6 +34,11 @@ export interface AppconfigHostedConfigurationVersionConfig extends cdktf.Terrafo
 */
 export class AppconfigHostedConfigurationVersion extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appconfig_hosted_configuration_version";
+
   // ===========
   // INITIALIZER
   // ===========

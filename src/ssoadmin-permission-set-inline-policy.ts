@@ -26,6 +26,11 @@ export interface SsoadminPermissionSetInlinePolicyConfig extends cdktf.Terraform
 */
 export class SsoadminPermissionSetInlinePolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssoadmin_permission_set_inline_policy";
+
   // ===========
   // INITIALIZER
   // ===========

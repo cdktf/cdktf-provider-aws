@@ -22,6 +22,11 @@ export interface IamUserGroupMembershipConfig extends cdktf.TerraformMetaArgumen
 */
 export class IamUserGroupMembership extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_user_group_membership";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -26,6 +26,11 @@ export interface Route53RecoverycontrolconfigRoutingControlConfig extends cdktf.
 */
 export class Route53RecoverycontrolconfigRoutingControl extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53recoverycontrolconfig_routing_control";
+
   // ===========
   // INITIALIZER
   // ===========

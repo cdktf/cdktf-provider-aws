@@ -26,11 +26,11 @@ export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html#disable_execute_api_endpoint Apigatewayv2Api#disable_execute_api_endpoint}
   */
-  readonly disableExecuteApiEndpoint?: boolean;
+  readonly disableExecuteApiEndpoint?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html#fail_on_warnings Apigatewayv2Api#fail_on_warnings}
   */
-  readonly failOnWarnings?: boolean;
+  readonly failOnWarnings?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html#name Apigatewayv2Api#name}
   */
@@ -50,11 +50,11 @@ export interface Apigatewayv2ApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html#tags Apigatewayv2Api#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html#tags_all Apigatewayv2Api#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html#target Apigatewayv2Api#target}
   */
@@ -74,7 +74,7 @@ export interface Apigatewayv2ApiCorsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html#allow_credentials Apigatewayv2Api#allow_credentials}
   */
-  readonly allowCredentials?: boolean;
+  readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html#allow_headers Apigatewayv2Api#allow_headers}
   */
@@ -114,6 +114,11 @@ function apigatewayv2ApiCorsConfigurationToTerraform(struct?: Apigatewayv2ApiCor
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_api.html aws_apigatewayv2_api}
 */
 export class Apigatewayv2Api extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_api";
 
   // ===========
   // INITIALIZER
@@ -233,11 +238,11 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // disable_execute_api_endpoint - computed: false, optional: true, required: false
-  private _disableExecuteApiEndpoint?: boolean;
+  private _disableExecuteApiEndpoint?: boolean | cdktf.IResolvable;
   public get disableExecuteApiEndpoint() {
     return this.getBooleanAttribute('disable_execute_api_endpoint');
   }
-  public set disableExecuteApiEndpoint(value: boolean ) {
+  public set disableExecuteApiEndpoint(value: boolean | cdktf.IResolvable ) {
     this._disableExecuteApiEndpoint = value;
   }
   public resetDisableExecuteApiEndpoint() {
@@ -254,11 +259,11 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // fail_on_warnings - computed: false, optional: true, required: false
-  private _failOnWarnings?: boolean;
+  private _failOnWarnings?: boolean | cdktf.IResolvable;
   public get failOnWarnings() {
     return this.getBooleanAttribute('fail_on_warnings');
   }
-  public set failOnWarnings(value: boolean ) {
+  public set failOnWarnings(value: boolean | cdktf.IResolvable ) {
     this._failOnWarnings = value;
   }
   public resetFailOnWarnings() {
@@ -333,11 +338,11 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -349,11 +354,11 @@ export class Apigatewayv2Api extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -46,6 +46,11 @@ export interface AutoscalingLifecycleHookConfig extends cdktf.TerraformMetaArgum
 */
 export class AutoscalingLifecycleHook extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_lifecycle_hook";
+
   // ===========
   // INITIALIZER
   // ===========

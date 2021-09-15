@@ -81,6 +81,11 @@ function globalacceleratorListenerTimeoutsToTerraform(struct?: Globalaccelerator
 */
 export class GlobalacceleratorListener extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_globalaccelerator_listener";
+
   // ===========
   // INITIALIZER
   // ===========

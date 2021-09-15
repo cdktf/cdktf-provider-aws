@@ -26,7 +26,7 @@ export interface WorklinkFleetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/worklink_fleet.html#optimize_for_end_user_location WorklinkFleet#optimize_for_end_user_location}
   */
-  readonly optimizeForEndUserLocation?: boolean;
+  readonly optimizeForEndUserLocation?: boolean | cdktf.IResolvable;
   /**
   * identity_provider block
   * 
@@ -88,6 +88,11 @@ function worklinkFleetNetworkToTerraform(struct?: WorklinkFleetNetwork): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/worklink_fleet.html aws_worklink_fleet}
 */
 export class WorklinkFleet extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_worklink_fleet";
 
   // ===========
   // INITIALIZER
@@ -211,11 +216,11 @@ export class WorklinkFleet extends cdktf.TerraformResource {
   }
 
   // optimize_for_end_user_location - computed: false, optional: true, required: false
-  private _optimizeForEndUserLocation?: boolean;
+  private _optimizeForEndUserLocation?: boolean | cdktf.IResolvable;
   public get optimizeForEndUserLocation() {
     return this.getBooleanAttribute('optimize_for_end_user_location');
   }
-  public set optimizeForEndUserLocation(value: boolean ) {
+  public set optimizeForEndUserLocation(value: boolean | cdktf.IResolvable ) {
     this._optimizeForEndUserLocation = value;
   }
   public resetOptimizeForEndUserLocation() {

@@ -43,6 +43,11 @@ function wafIpsetIpSetDescriptorsToTerraform(struct?: WafIpsetIpSetDescriptors):
 */
 export class WafIpset extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_ipset";
+
   // ===========
   // INITIALIZER
   // ===========

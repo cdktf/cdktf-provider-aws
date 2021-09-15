@@ -10,7 +10,7 @@ export interface IotThingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing.html#attributes IotThing#attributes}
   */
-  readonly attributes?: { [key: string]: string };
+  readonly attributes?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_thing.html#name IotThing#name}
   */
@@ -25,6 +25,11 @@ export interface IotThingConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_thing.html aws_iot_thing}
 */
 export class IotThing extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iot_thing";
 
   // ===========
   // INITIALIZER
@@ -63,11 +68,11 @@ export class IotThing extends cdktf.TerraformResource {
   }
 
   // attributes - computed: false, optional: true, required: false
-  private _attributes?: { [key: string]: string };
+  private _attributes?: { [key: string]: string } | cdktf.IResolvable;
   public get attributes() {
     return this.interpolationForAttribute('attributes') as any;
   }
-  public set attributes(value: { [key: string]: string } ) {
+  public set attributes(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._attributes = value;
   }
   public resetAttributes() {

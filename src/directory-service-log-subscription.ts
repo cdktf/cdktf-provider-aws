@@ -22,6 +22,11 @@ export interface DirectoryServiceLogSubscriptionConfig extends cdktf.TerraformMe
 */
 export class DirectoryServiceLogSubscription extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_directory_service_log_subscription";
+
   // ===========
   // INITIALIZER
   // ===========

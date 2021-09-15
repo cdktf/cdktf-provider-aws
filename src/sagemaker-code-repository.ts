@@ -48,6 +48,11 @@ function sagemakerCodeRepositoryGitConfigToTerraform(struct?: SagemakerCodeRepos
 */
 export class SagemakerCodeRepository extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sagemaker_code_repository";
+
   // ===========
   // INITIALIZER
   // ===========

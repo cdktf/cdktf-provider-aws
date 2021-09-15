@@ -18,6 +18,11 @@ export interface DataAwsCloudwatchEventSourceConfig extends cdktf.TerraformMetaA
 */
 export class DataAwsCloudwatchEventSource extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_source";
+
   // ===========
   // INITIALIZER
   // ===========

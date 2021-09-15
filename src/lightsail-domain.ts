@@ -18,6 +18,11 @@ export interface LightsailDomainConfig extends cdktf.TerraformMetaArguments {
 */
 export class LightsailDomain extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lightsail_domain";
+
   // ===========
   // INITIALIZER
   // ===========

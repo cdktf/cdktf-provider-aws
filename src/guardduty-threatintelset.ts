@@ -10,7 +10,7 @@ export interface GuarddutyThreatintelsetConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_threatintelset.html#activate GuarddutyThreatintelset#activate}
   */
-  readonly activate: boolean;
+  readonly activate: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_threatintelset.html#detector_id GuarddutyThreatintelset#detector_id}
   */
@@ -30,17 +30,22 @@ export interface GuarddutyThreatintelsetConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_threatintelset.html#tags GuarddutyThreatintelset#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/guardduty_threatintelset.html#tags_all GuarddutyThreatintelset#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_threatintelset.html aws_guardduty_threatintelset}
 */
 export class GuarddutyThreatintelset extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_guardduty_threatintelset";
 
   // ===========
   // INITIALIZER
@@ -78,11 +83,11 @@ export class GuarddutyThreatintelset extends cdktf.TerraformResource {
   // ==========
 
   // activate - computed: false, optional: false, required: true
-  private _activate: boolean;
+  private _activate: boolean | cdktf.IResolvable;
   public get activate() {
     return this.getBooleanAttribute('activate');
   }
-  public set activate(value: boolean) {
+  public set activate(value: boolean | cdktf.IResolvable) {
     this._activate = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -153,11 +158,11 @@ export class GuarddutyThreatintelset extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -169,11 +174,11 @@ export class GuarddutyThreatintelset extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

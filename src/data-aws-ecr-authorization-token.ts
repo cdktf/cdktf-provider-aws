@@ -18,6 +18,11 @@ export interface DataAwsEcrAuthorizationTokenConfig extends cdktf.TerraformMetaA
 */
 export class DataAwsEcrAuthorizationToken extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecr_authorization_token";
+
   // ===========
   // INITIALIZER
   // ===========

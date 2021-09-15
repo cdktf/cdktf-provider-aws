@@ -22,7 +22,7 @@ export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#enabled CloudfrontDistribution#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#http_version CloudfrontDistribution#http_version}
   */
@@ -30,7 +30,7 @@ export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#is_ipv6_enabled CloudfrontDistribution#is_ipv6_enabled}
   */
-  readonly isIpv6Enabled?: boolean;
+  readonly isIpv6Enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#price_class CloudfrontDistribution#price_class}
   */
@@ -38,19 +38,19 @@ export interface CloudfrontDistributionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#retain_on_delete CloudfrontDistribution#retain_on_delete}
   */
-  readonly retainOnDelete?: boolean;
+  readonly retainOnDelete?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#tags CloudfrontDistribution#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#tags_all CloudfrontDistribution#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#wait_for_deployment CloudfrontDistribution#wait_for_deployment}
   */
-  readonly waitForDeployment?: boolean;
+  readonly waitForDeployment?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#web_acl_id CloudfrontDistribution#web_acl_id}
   */
@@ -208,7 +208,7 @@ export interface CloudfrontDistributionDefaultCacheBehaviorForwardedValues {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#query_string CloudfrontDistribution#query_string}
   */
-  readonly queryString: boolean;
+  readonly queryString: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#query_string_cache_keys CloudfrontDistribution#query_string_cache_keys}
   */
@@ -258,7 +258,7 @@ export interface CloudfrontDistributionDefaultCacheBehaviorLambdaFunctionAssocia
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#include_body CloudfrontDistribution#include_body}
   */
-  readonly includeBody?: boolean;
+  readonly includeBody?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#lambda_arn CloudfrontDistribution#lambda_arn}
   */
@@ -290,7 +290,7 @@ export interface CloudfrontDistributionDefaultCacheBehavior {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#compress CloudfrontDistribution#compress}
   */
-  readonly compress?: boolean;
+  readonly compress?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#default_ttl CloudfrontDistribution#default_ttl}
   */
@@ -318,7 +318,7 @@ export interface CloudfrontDistributionDefaultCacheBehavior {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#smooth_streaming CloudfrontDistribution#smooth_streaming}
   */
-  readonly smoothStreaming?: boolean;
+  readonly smoothStreaming?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#target_origin_id CloudfrontDistribution#target_origin_id}
   */
@@ -387,7 +387,7 @@ export interface CloudfrontDistributionLoggingConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#include_cookies CloudfrontDistribution#include_cookies}
   */
-  readonly includeCookies?: boolean;
+  readonly includeCookies?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#prefix CloudfrontDistribution#prefix}
   */
@@ -430,7 +430,7 @@ export interface CloudfrontDistributionOrderedCacheBehaviorForwardedValues {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#query_string CloudfrontDistribution#query_string}
   */
-  readonly queryString: boolean;
+  readonly queryString: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#query_string_cache_keys CloudfrontDistribution#query_string_cache_keys}
   */
@@ -480,7 +480,7 @@ export interface CloudfrontDistributionOrderedCacheBehaviorLambdaFunctionAssocia
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#include_body CloudfrontDistribution#include_body}
   */
-  readonly includeBody?: boolean;
+  readonly includeBody?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#lambda_arn CloudfrontDistribution#lambda_arn}
   */
@@ -512,7 +512,7 @@ export interface CloudfrontDistributionOrderedCacheBehavior {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#compress CloudfrontDistribution#compress}
   */
-  readonly compress?: boolean;
+  readonly compress?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#default_ttl CloudfrontDistribution#default_ttl}
   */
@@ -544,7 +544,7 @@ export interface CloudfrontDistributionOrderedCacheBehavior {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#smooth_streaming CloudfrontDistribution#smooth_streaming}
   */
-  readonly smoothStreaming?: boolean;
+  readonly smoothStreaming?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#target_origin_id CloudfrontDistribution#target_origin_id}
   */
@@ -668,7 +668,7 @@ export interface CloudfrontDistributionOriginOriginShield {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#enabled CloudfrontDistribution#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#origin_shield_region CloudfrontDistribution#origin_shield_region}
   */
@@ -858,7 +858,7 @@ export interface CloudfrontDistributionViewerCertificate {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#cloudfront_default_certificate CloudfrontDistribution#cloudfront_default_certificate}
   */
-  readonly cloudfrontDefaultCertificate?: boolean;
+  readonly cloudfrontDefaultCertificate?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#iam_certificate_id CloudfrontDistribution#iam_certificate_id}
   */
@@ -889,6 +889,11 @@ function cloudfrontDistributionViewerCertificateToTerraform(struct?: CloudfrontD
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html aws_cloudfront_distribution}
 */
 export class CloudfrontDistribution extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_distribution";
 
   // ===========
   // INITIALIZER
@@ -1002,11 +1007,11 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled: boolean;
+  private _enabled: boolean | cdktf.IResolvable;
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1051,11 +1056,11 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   }
 
   // is_ipv6_enabled - computed: false, optional: true, required: false
-  private _isIpv6Enabled?: boolean;
+  private _isIpv6Enabled?: boolean | cdktf.IResolvable;
   public get isIpv6Enabled() {
     return this.getBooleanAttribute('is_ipv6_enabled');
   }
-  public set isIpv6Enabled(value: boolean ) {
+  public set isIpv6Enabled(value: boolean | cdktf.IResolvable ) {
     this._isIpv6Enabled = value;
   }
   public resetIsIpv6Enabled() {
@@ -1088,11 +1093,11 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   }
 
   // retain_on_delete - computed: false, optional: true, required: false
-  private _retainOnDelete?: boolean;
+  private _retainOnDelete?: boolean | cdktf.IResolvable;
   public get retainOnDelete() {
     return this.getBooleanAttribute('retain_on_delete');
   }
-  public set retainOnDelete(value: boolean ) {
+  public set retainOnDelete(value: boolean | cdktf.IResolvable ) {
     this._retainOnDelete = value;
   }
   public resetRetainOnDelete() {
@@ -1109,11 +1114,11 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -1125,11 +1130,11 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -1151,11 +1156,11 @@ export class CloudfrontDistribution extends cdktf.TerraformResource {
   }
 
   // wait_for_deployment - computed: false, optional: true, required: false
-  private _waitForDeployment?: boolean;
+  private _waitForDeployment?: boolean | cdktf.IResolvable;
   public get waitForDeployment() {
     return this.getBooleanAttribute('wait_for_deployment');
   }
-  public set waitForDeployment(value: boolean ) {
+  public set waitForDeployment(value: boolean | cdktf.IResolvable ) {
     this._waitForDeployment = value;
   }
   public resetWaitForDeployment() {

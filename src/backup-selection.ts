@@ -60,6 +60,11 @@ function backupSelectionSelectionTagToTerraform(struct?: BackupSelectionSelectio
 */
 export class BackupSelection extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_backup_selection";
+
   // ===========
   // INITIALIZER
   // ===========

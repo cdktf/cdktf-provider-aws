@@ -30,6 +30,11 @@ export interface IamRolePolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class IamRolePolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_role_policy";
+
   // ===========
   // INITIALIZER
   // ===========

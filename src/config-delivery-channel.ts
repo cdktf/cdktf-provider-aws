@@ -50,6 +50,11 @@ function configDeliveryChannelSnapshotDeliveryPropertiesToTerraform(struct?: Con
 */
 export class ConfigDeliveryChannel extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_config_delivery_channel";
+
   // ===========
   // INITIALIZER
   // ===========

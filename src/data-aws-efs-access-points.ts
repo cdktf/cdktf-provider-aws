@@ -18,6 +18,11 @@ export interface DataAwsEfsAccessPointsConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataAwsEfsAccessPoints extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_efs_access_points";
+
   // ===========
   // INITIALIZER
   // ===========

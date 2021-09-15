@@ -26,7 +26,7 @@ export interface GlueCatalogDatabaseConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database.html#parameters GlueCatalogDatabase#parameters}
   */
-  readonly parameters?: { [key: string]: string };
+  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * target_database block
   * 
@@ -58,6 +58,11 @@ function glueCatalogDatabaseTargetDatabaseToTerraform(struct?: GlueCatalogDataba
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_catalog_database.html aws_glue_catalog_database}
 */
 export class GlueCatalogDatabase extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_catalog_database";
 
   // ===========
   // INITIALIZER
@@ -165,11 +170,11 @@ export class GlueCatalogDatabase extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: true, required: false
-  private _parameters?: { [key: string]: string };
+  private _parameters?: { [key: string]: string } | cdktf.IResolvable;
   public get parameters() {
     return this.interpolationForAttribute('parameters') as any;
   }
-  public set parameters(value: { [key: string]: string } ) {
+  public set parameters(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._parameters = value;
   }
   public resetParameters() {

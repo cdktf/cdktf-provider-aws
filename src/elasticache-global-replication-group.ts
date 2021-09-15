@@ -26,6 +26,11 @@ export interface ElasticacheGlobalReplicationGroupConfig extends cdktf.Terraform
 */
 export class ElasticacheGlobalReplicationGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticache_global_replication_group";
+
   // ===========
   // INITIALIZER
   // ===========

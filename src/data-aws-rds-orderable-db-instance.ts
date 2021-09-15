@@ -42,45 +42,50 @@ export interface DataAwsRdsOrderableDbInstanceConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#supports_enhanced_monitoring DataAwsRdsOrderableDbInstance#supports_enhanced_monitoring}
   */
-  readonly supportsEnhancedMonitoring?: boolean;
+  readonly supportsEnhancedMonitoring?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#supports_global_databases DataAwsRdsOrderableDbInstance#supports_global_databases}
   */
-  readonly supportsGlobalDatabases?: boolean;
+  readonly supportsGlobalDatabases?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#supports_iam_database_authentication DataAwsRdsOrderableDbInstance#supports_iam_database_authentication}
   */
-  readonly supportsIamDatabaseAuthentication?: boolean;
+  readonly supportsIamDatabaseAuthentication?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#supports_iops DataAwsRdsOrderableDbInstance#supports_iops}
   */
-  readonly supportsIops?: boolean;
+  readonly supportsIops?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#supports_kerberos_authentication DataAwsRdsOrderableDbInstance#supports_kerberos_authentication}
   */
-  readonly supportsKerberosAuthentication?: boolean;
+  readonly supportsKerberosAuthentication?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#supports_performance_insights DataAwsRdsOrderableDbInstance#supports_performance_insights}
   */
-  readonly supportsPerformanceInsights?: boolean;
+  readonly supportsPerformanceInsights?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#supports_storage_autoscaling DataAwsRdsOrderableDbInstance#supports_storage_autoscaling}
   */
-  readonly supportsStorageAutoscaling?: boolean;
+  readonly supportsStorageAutoscaling?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#supports_storage_encryption DataAwsRdsOrderableDbInstance#supports_storage_encryption}
   */
-  readonly supportsStorageEncryption?: boolean;
+  readonly supportsStorageEncryption?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html#vpc DataAwsRdsOrderableDbInstance#vpc}
   */
-  readonly vpc?: boolean;
+  readonly vpc?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/rds_orderable_db_instance.html aws_rds_orderable_db_instance}
 */
 export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_rds_orderable_db_instance";
 
   // ===========
   // INITIALIZER
@@ -313,11 +318,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_enhanced_monitoring - computed: true, optional: true, required: false
-  private _supportsEnhancedMonitoring?: boolean;
+  private _supportsEnhancedMonitoring?: boolean | cdktf.IResolvable;
   public get supportsEnhancedMonitoring() {
     return this.getBooleanAttribute('supports_enhanced_monitoring');
   }
-  public set supportsEnhancedMonitoring(value: boolean) {
+  public set supportsEnhancedMonitoring(value: boolean | cdktf.IResolvable) {
     this._supportsEnhancedMonitoring = value;
   }
   public resetSupportsEnhancedMonitoring() {
@@ -329,11 +334,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_global_databases - computed: true, optional: true, required: false
-  private _supportsGlobalDatabases?: boolean;
+  private _supportsGlobalDatabases?: boolean | cdktf.IResolvable;
   public get supportsGlobalDatabases() {
     return this.getBooleanAttribute('supports_global_databases');
   }
-  public set supportsGlobalDatabases(value: boolean) {
+  public set supportsGlobalDatabases(value: boolean | cdktf.IResolvable) {
     this._supportsGlobalDatabases = value;
   }
   public resetSupportsGlobalDatabases() {
@@ -345,11 +350,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_iam_database_authentication - computed: true, optional: true, required: false
-  private _supportsIamDatabaseAuthentication?: boolean;
+  private _supportsIamDatabaseAuthentication?: boolean | cdktf.IResolvable;
   public get supportsIamDatabaseAuthentication() {
     return this.getBooleanAttribute('supports_iam_database_authentication');
   }
-  public set supportsIamDatabaseAuthentication(value: boolean) {
+  public set supportsIamDatabaseAuthentication(value: boolean | cdktf.IResolvable) {
     this._supportsIamDatabaseAuthentication = value;
   }
   public resetSupportsIamDatabaseAuthentication() {
@@ -361,11 +366,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_iops - computed: true, optional: true, required: false
-  private _supportsIops?: boolean;
+  private _supportsIops?: boolean | cdktf.IResolvable;
   public get supportsIops() {
     return this.getBooleanAttribute('supports_iops');
   }
-  public set supportsIops(value: boolean) {
+  public set supportsIops(value: boolean | cdktf.IResolvable) {
     this._supportsIops = value;
   }
   public resetSupportsIops() {
@@ -377,11 +382,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_kerberos_authentication - computed: true, optional: true, required: false
-  private _supportsKerberosAuthentication?: boolean;
+  private _supportsKerberosAuthentication?: boolean | cdktf.IResolvable;
   public get supportsKerberosAuthentication() {
     return this.getBooleanAttribute('supports_kerberos_authentication');
   }
-  public set supportsKerberosAuthentication(value: boolean) {
+  public set supportsKerberosAuthentication(value: boolean | cdktf.IResolvable) {
     this._supportsKerberosAuthentication = value;
   }
   public resetSupportsKerberosAuthentication() {
@@ -393,11 +398,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_performance_insights - computed: true, optional: true, required: false
-  private _supportsPerformanceInsights?: boolean;
+  private _supportsPerformanceInsights?: boolean | cdktf.IResolvable;
   public get supportsPerformanceInsights() {
     return this.getBooleanAttribute('supports_performance_insights');
   }
-  public set supportsPerformanceInsights(value: boolean) {
+  public set supportsPerformanceInsights(value: boolean | cdktf.IResolvable) {
     this._supportsPerformanceInsights = value;
   }
   public resetSupportsPerformanceInsights() {
@@ -409,11 +414,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_storage_autoscaling - computed: true, optional: true, required: false
-  private _supportsStorageAutoscaling?: boolean;
+  private _supportsStorageAutoscaling?: boolean | cdktf.IResolvable;
   public get supportsStorageAutoscaling() {
     return this.getBooleanAttribute('supports_storage_autoscaling');
   }
-  public set supportsStorageAutoscaling(value: boolean) {
+  public set supportsStorageAutoscaling(value: boolean | cdktf.IResolvable) {
     this._supportsStorageAutoscaling = value;
   }
   public resetSupportsStorageAutoscaling() {
@@ -425,11 +430,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // supports_storage_encryption - computed: true, optional: true, required: false
-  private _supportsStorageEncryption?: boolean;
+  private _supportsStorageEncryption?: boolean | cdktf.IResolvable;
   public get supportsStorageEncryption() {
     return this.getBooleanAttribute('supports_storage_encryption');
   }
-  public set supportsStorageEncryption(value: boolean) {
+  public set supportsStorageEncryption(value: boolean | cdktf.IResolvable) {
     this._supportsStorageEncryption = value;
   }
   public resetSupportsStorageEncryption() {
@@ -441,11 +446,11 @@ export class DataAwsRdsOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // vpc - computed: true, optional: true, required: false
-  private _vpc?: boolean;
+  private _vpc?: boolean | cdktf.IResolvable;
   public get vpc() {
     return this.getBooleanAttribute('vpc');
   }
-  public set vpc(value: boolean) {
+  public set vpc(value: boolean | cdktf.IResolvable) {
     this._vpc = value;
   }
   public resetVpc() {

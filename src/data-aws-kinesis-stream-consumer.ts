@@ -22,6 +22,11 @@ export interface DataAwsKinesisStreamConsumerConfig extends cdktf.TerraformMetaA
 */
 export class DataAwsKinesisStreamConsumer extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kinesis_stream_consumer";
+
   // ===========
   // INITIALIZER
   // ===========

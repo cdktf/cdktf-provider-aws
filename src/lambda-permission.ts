@@ -50,6 +50,11 @@ export interface LambdaPermissionConfig extends cdktf.TerraformMetaArguments {
 */
 export class LambdaPermission extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_permission";
+
   // ===========
   // INITIALIZER
   // ===========

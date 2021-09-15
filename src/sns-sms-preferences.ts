@@ -38,6 +38,11 @@ export interface SnsSmsPreferencesConfig extends cdktf.TerraformMetaArguments {
 */
 export class SnsSmsPreferences extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sns_sms_preferences";
+
   // ===========
   // INITIALIZER
   // ===========

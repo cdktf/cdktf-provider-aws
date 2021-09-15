@@ -26,6 +26,11 @@ export interface SecurityhubActionTargetConfig extends cdktf.TerraformMetaArgume
 */
 export class SecurityhubActionTarget extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_action_target";
+
   // ===========
   // INITIALIZER
   // ===========

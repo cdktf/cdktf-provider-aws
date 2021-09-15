@@ -18,7 +18,7 @@ export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html#allowed_oauth_flows_user_pool_client CognitoUserPoolClient#allowed_oauth_flows_user_pool_client}
   */
-  readonly allowedOauthFlowsUserPoolClient?: boolean;
+  readonly allowedOauthFlowsUserPoolClient?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html#allowed_oauth_scopes CognitoUserPoolClient#allowed_oauth_scopes}
   */
@@ -34,7 +34,7 @@ export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html#enable_token_revocation CognitoUserPoolClient#enable_token_revocation}
   */
-  readonly enableTokenRevocation?: boolean;
+  readonly enableTokenRevocation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html#explicit_auth_flows CognitoUserPoolClient#explicit_auth_flows}
   */
@@ -42,7 +42,7 @@ export interface CognitoUserPoolClientConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html#generate_secret CognitoUserPoolClient#generate_secret}
   */
-  readonly generateSecret?: boolean;
+  readonly generateSecret?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html#id_token_validity CognitoUserPoolClient#id_token_validity}
   */
@@ -112,7 +112,7 @@ export interface CognitoUserPoolClientAnalyticsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html#user_data_shared CognitoUserPoolClient#user_data_shared}
   */
-  readonly userDataShared?: boolean;
+  readonly userDataShared?: boolean | cdktf.IResolvable;
 }
 
 function cognitoUserPoolClientAnalyticsConfigurationToTerraform(struct?: CognitoUserPoolClientAnalyticsConfiguration): any {
@@ -155,6 +155,11 @@ function cognitoUserPoolClientTokenValidityUnitsToTerraform(struct?: CognitoUser
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_pool_client.html aws_cognito_user_pool_client}
 */
 export class CognitoUserPoolClient extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cognito_user_pool_client";
 
   // ===========
   // INITIALIZER
@@ -237,11 +242,11 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   }
 
   // allowed_oauth_flows_user_pool_client - computed: false, optional: true, required: false
-  private _allowedOauthFlowsUserPoolClient?: boolean;
+  private _allowedOauthFlowsUserPoolClient?: boolean | cdktf.IResolvable;
   public get allowedOauthFlowsUserPoolClient() {
     return this.getBooleanAttribute('allowed_oauth_flows_user_pool_client');
   }
-  public set allowedOauthFlowsUserPoolClient(value: boolean ) {
+  public set allowedOauthFlowsUserPoolClient(value: boolean | cdktf.IResolvable ) {
     this._allowedOauthFlowsUserPoolClient = value;
   }
   public resetAllowedOauthFlowsUserPoolClient() {
@@ -306,11 +311,11 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   }
 
   // enable_token_revocation - computed: true, optional: true, required: false
-  private _enableTokenRevocation?: boolean;
+  private _enableTokenRevocation?: boolean | cdktf.IResolvable;
   public get enableTokenRevocation() {
     return this.getBooleanAttribute('enable_token_revocation');
   }
-  public set enableTokenRevocation(value: boolean) {
+  public set enableTokenRevocation(value: boolean | cdktf.IResolvable) {
     this._enableTokenRevocation = value;
   }
   public resetEnableTokenRevocation() {
@@ -338,11 +343,11 @@ export class CognitoUserPoolClient extends cdktf.TerraformResource {
   }
 
   // generate_secret - computed: false, optional: true, required: false
-  private _generateSecret?: boolean;
+  private _generateSecret?: boolean | cdktf.IResolvable;
   public get generateSecret() {
     return this.getBooleanAttribute('generate_secret');
   }
-  public set generateSecret(value: boolean ) {
+  public set generateSecret(value: boolean | cdktf.IResolvable ) {
     this._generateSecret = value;
   }
   public resetGenerateSecret() {

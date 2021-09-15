@@ -10,7 +10,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#allow_version_upgrade RedshiftCluster#allow_version_upgrade}
   */
-  readonly allowVersionUpgrade?: boolean;
+  readonly allowVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#automated_snapshot_retention_period RedshiftCluster#automated_snapshot_retention_period}
   */
@@ -62,7 +62,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#encrypted RedshiftCluster#encrypted}
   */
-  readonly encrypted?: boolean;
+  readonly encrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#endpoint RedshiftCluster#endpoint}
   */
@@ -70,7 +70,7 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#enhanced_vpc_routing RedshiftCluster#enhanced_vpc_routing}
   */
-  readonly enhancedVpcRouting?: boolean;
+  readonly enhancedVpcRouting?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#final_snapshot_identifier RedshiftCluster#final_snapshot_identifier}
   */
@@ -114,11 +114,11 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#publicly_accessible RedshiftCluster#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean;
+  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#skip_final_snapshot RedshiftCluster#skip_final_snapshot}
   */
-  readonly skipFinalSnapshot?: boolean;
+  readonly skipFinalSnapshot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#snapshot_cluster_identifier RedshiftCluster#snapshot_cluster_identifier}
   */
@@ -130,11 +130,11 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#tags RedshiftCluster#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#tags_all RedshiftCluster#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#vpc_security_group_ids RedshiftCluster#vpc_security_group_ids}
   */
@@ -158,6 +158,23 @@ export interface RedshiftClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: RedshiftClusterTimeouts;
 }
+export class RedshiftClusterClusterNodes extends cdktf.ComplexComputedList {
+
+  // node_role - computed: true, optional: false, required: false
+  public get nodeRole() {
+    return this.getStringAttribute('node_role');
+  }
+
+  // private_ip_address - computed: true, optional: false, required: false
+  public get privateIpAddress() {
+    return this.getStringAttribute('private_ip_address');
+  }
+
+  // public_ip_address - computed: true, optional: false, required: false
+  public get publicIpAddress() {
+    return this.getStringAttribute('public_ip_address');
+  }
+}
 export interface RedshiftClusterLogging {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#bucket_name RedshiftCluster#bucket_name}
@@ -166,7 +183,7 @@ export interface RedshiftClusterLogging {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#enable RedshiftCluster#enable}
   */
-  readonly enable: boolean;
+  readonly enable: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_cluster.html#s3_key_prefix RedshiftCluster#s3_key_prefix}
   */
@@ -236,6 +253,11 @@ function redshiftClusterTimeoutsToTerraform(struct?: RedshiftClusterTimeouts): a
 */
 export class RedshiftCluster extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_redshift_cluster";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -301,11 +323,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // ==========
 
   // allow_version_upgrade - computed: false, optional: true, required: false
-  private _allowVersionUpgrade?: boolean;
+  private _allowVersionUpgrade?: boolean | cdktf.IResolvable;
   public get allowVersionUpgrade() {
     return this.getBooleanAttribute('allow_version_upgrade');
   }
-  public set allowVersionUpgrade(value: boolean ) {
+  public set allowVersionUpgrade(value: boolean | cdktf.IResolvable ) {
     this._allowVersionUpgrade = value;
   }
   public resetAllowVersionUpgrade() {
@@ -364,6 +386,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clusterIdentifierInput() {
     return this._clusterIdentifier
+  }
+
+  // cluster_nodes - computed: true, optional: false, required: false
+  public clusterNodes(index: string) {
+    return new RedshiftClusterClusterNodes(this, 'cluster_nodes', index);
   }
 
   // cluster_parameter_group_name - computed: true, optional: true, required: false
@@ -516,11 +543,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // encrypted - computed: false, optional: true, required: false
-  private _encrypted?: boolean;
+  private _encrypted?: boolean | cdktf.IResolvable;
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean ) {
+  public set encrypted(value: boolean | cdktf.IResolvable ) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -548,11 +575,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // enhanced_vpc_routing - computed: true, optional: true, required: false
-  private _enhancedVpcRouting?: boolean;
+  private _enhancedVpcRouting?: boolean | cdktf.IResolvable;
   public get enhancedVpcRouting() {
     return this.getBooleanAttribute('enhanced_vpc_routing');
   }
-  public set enhancedVpcRouting(value: boolean) {
+  public set enhancedVpcRouting(value: boolean | cdktf.IResolvable) {
     this._enhancedVpcRouting = value;
   }
   public resetEnhancedVpcRouting() {
@@ -726,11 +753,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
-  private _publiclyAccessible?: boolean;
+  private _publiclyAccessible?: boolean | cdktf.IResolvable;
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean ) {
+  public set publiclyAccessible(value: boolean | cdktf.IResolvable ) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -742,11 +769,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // skip_final_snapshot - computed: false, optional: true, required: false
-  private _skipFinalSnapshot?: boolean;
+  private _skipFinalSnapshot?: boolean | cdktf.IResolvable;
   public get skipFinalSnapshot() {
     return this.getBooleanAttribute('skip_final_snapshot');
   }
-  public set skipFinalSnapshot(value: boolean ) {
+  public set skipFinalSnapshot(value: boolean | cdktf.IResolvable ) {
     this._skipFinalSnapshot = value;
   }
   public resetSkipFinalSnapshot() {
@@ -790,11 +817,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -806,11 +833,11 @@ export class RedshiftCluster extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

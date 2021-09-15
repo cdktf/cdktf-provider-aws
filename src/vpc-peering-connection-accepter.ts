@@ -10,15 +10,15 @@ export interface VpcPeeringConnectionAccepterAConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#auto_accept VpcPeeringConnectionAccepterA#auto_accept}
   */
-  readonly autoAccept?: boolean;
+  readonly autoAccept?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#tags VpcPeeringConnectionAccepterA#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#tags_all VpcPeeringConnectionAccepterA#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#vpc_peering_connection_id VpcPeeringConnectionAccepterA#vpc_peering_connection_id}
   */
@@ -40,15 +40,15 @@ export interface VpcPeeringConnectionAccepterAccepter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#allow_classic_link_to_remote_vpc VpcPeeringConnectionAccepterA#allow_classic_link_to_remote_vpc}
   */
-  readonly allowClassicLinkToRemoteVpc?: boolean;
+  readonly allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#allow_remote_vpc_dns_resolution VpcPeeringConnectionAccepterA#allow_remote_vpc_dns_resolution}
   */
-  readonly allowRemoteVpcDnsResolution?: boolean;
+  readonly allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#allow_vpc_to_remote_classic_link VpcPeeringConnectionAccepterA#allow_vpc_to_remote_classic_link}
   */
-  readonly allowVpcToRemoteClassicLink?: boolean;
+  readonly allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable;
 }
 
 function vpcPeeringConnectionAccepterAccepterToTerraform(struct?: VpcPeeringConnectionAccepterAccepter): any {
@@ -64,15 +64,15 @@ export interface VpcPeeringConnectionAccepterRequester {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#allow_classic_link_to_remote_vpc VpcPeeringConnectionAccepterA#allow_classic_link_to_remote_vpc}
   */
-  readonly allowClassicLinkToRemoteVpc?: boolean;
+  readonly allowClassicLinkToRemoteVpc?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#allow_remote_vpc_dns_resolution VpcPeeringConnectionAccepterA#allow_remote_vpc_dns_resolution}
   */
-  readonly allowRemoteVpcDnsResolution?: boolean;
+  readonly allowRemoteVpcDnsResolution?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html#allow_vpc_to_remote_classic_link VpcPeeringConnectionAccepterA#allow_vpc_to_remote_classic_link}
   */
-  readonly allowVpcToRemoteClassicLink?: boolean;
+  readonly allowVpcToRemoteClassicLink?: boolean | cdktf.IResolvable;
 }
 
 function vpcPeeringConnectionAccepterRequesterToTerraform(struct?: VpcPeeringConnectionAccepterRequester): any {
@@ -89,6 +89,11 @@ function vpcPeeringConnectionAccepterRequesterToTerraform(struct?: VpcPeeringCon
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_peering_connection_accepter.html aws_vpc_peering_connection_accepter}
 */
 export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_peering_connection_accepter";
 
   // ===========
   // INITIALIZER
@@ -130,11 +135,11 @@ export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
   }
 
   // auto_accept - computed: false, optional: true, required: false
-  private _autoAccept?: boolean;
+  private _autoAccept?: boolean | cdktf.IResolvable;
   public get autoAccept() {
     return this.getBooleanAttribute('auto_accept');
   }
-  public set autoAccept(value: boolean ) {
+  public set autoAccept(value: boolean | cdktf.IResolvable ) {
     this._autoAccept = value;
   }
   public resetAutoAccept() {
@@ -166,11 +171,11 @@ export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -182,11 +187,11 @@ export class VpcPeeringConnectionAccepterA extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -49,6 +49,11 @@ export class DataAwsCloudhsmV2ClusterClusterCertificates extends cdktf.ComplexCo
 */
 export class DataAwsCloudhsmV2Cluster extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudhsm_v2_cluster";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -149,6 +149,11 @@ function cloudfrontOriginRequestPolicyQueryStringsConfigToTerraform(struct?: Clo
 */
 export class CloudfrontOriginRequestPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_origin_request_policy";
+
   // ===========
   // INITIALIZER
   // ===========

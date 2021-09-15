@@ -30,13 +30,18 @@ export interface DataAwsDocdbOrderableDbInstanceConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/docdb_orderable_db_instance.html#vpc DataAwsDocdbOrderableDbInstance#vpc}
   */
-  readonly vpc?: boolean;
+  readonly vpc?: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/docdb_orderable_db_instance.html aws_docdb_orderable_db_instance}
 */
 export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_docdb_orderable_db_instance";
 
   // ===========
   // INITIALIZER
@@ -163,11 +168,11 @@ export class DataAwsDocdbOrderableDbInstance extends cdktf.TerraformDataSource {
   }
 
   // vpc - computed: true, optional: true, required: false
-  private _vpc?: boolean;
+  private _vpc?: boolean | cdktf.IResolvable;
   public get vpc() {
     return this.getBooleanAttribute('vpc');
   }
-  public set vpc(value: boolean) {
+  public set vpc(value: boolean | cdktf.IResolvable) {
     this._vpc = value;
   }
   public resetVpc() {

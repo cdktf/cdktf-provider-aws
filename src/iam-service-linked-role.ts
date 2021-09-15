@@ -26,6 +26,11 @@ export interface IamServiceLinkedRoleConfig extends cdktf.TerraformMetaArguments
 */
 export class IamServiceLinkedRole extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_service_linked_role";
+
   // ===========
   // INITIALIZER
   // ===========

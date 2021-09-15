@@ -87,6 +87,11 @@ function appsyncResolverPipelineConfigToTerraform(struct?: AppsyncResolverPipeli
 */
 export class AppsyncResolver extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appsync_resolver";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -79,6 +79,11 @@ function dxHostedPublicVirtualInterfaceTimeoutsToTerraform(struct?: DxHostedPubl
 */
 export class DxHostedPublicVirtualInterface extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dx_hosted_public_virtual_interface";
+
   // ===========
   // INITIALIZER
   // ===========

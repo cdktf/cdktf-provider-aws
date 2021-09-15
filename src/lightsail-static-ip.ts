@@ -18,6 +18,11 @@ export interface LightsailStaticIpConfig extends cdktf.TerraformMetaArguments {
 */
 export class LightsailStaticIp extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lightsail_static_ip";
+
   // ===========
   // INITIALIZER
   // ===========

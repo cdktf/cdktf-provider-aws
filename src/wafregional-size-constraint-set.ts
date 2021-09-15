@@ -74,6 +74,11 @@ function wafregionalSizeConstraintSetSizeConstraintsToTerraform(struct?: Wafregi
 */
 export class WafregionalSizeConstraintSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafregional_size_constraint_set";
+
   // ===========
   // INITIALIZER
   // ===========

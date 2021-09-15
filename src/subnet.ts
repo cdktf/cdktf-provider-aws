@@ -10,7 +10,7 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}
   */
-  readonly assignIpv6AddressOnCreation?: boolean;
+  readonly assignIpv6AddressOnCreation?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#availability_zone Subnet#availability_zone}
   */
@@ -34,11 +34,11 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}
   */
-  readonly mapCustomerOwnedIpOnLaunch?: boolean;
+  readonly mapCustomerOwnedIpOnLaunch?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#map_public_ip_on_launch Subnet#map_public_ip_on_launch}
   */
-  readonly mapPublicIpOnLaunch?: boolean;
+  readonly mapPublicIpOnLaunch?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#outpost_arn Subnet#outpost_arn}
   */
@@ -46,11 +46,11 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#tags Subnet#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#tags_all Subnet#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/subnet.html#vpc_id Subnet#vpc_id}
   */
@@ -86,6 +86,11 @@ function subnetTimeoutsToTerraform(struct?: SubnetTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/subnet.html aws_subnet}
 */
 export class Subnet extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_subnet";
 
   // ===========
   // INITIALIZER
@@ -134,11 +139,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // assign_ipv6_address_on_creation - computed: false, optional: true, required: false
-  private _assignIpv6AddressOnCreation?: boolean;
+  private _assignIpv6AddressOnCreation?: boolean | cdktf.IResolvable;
   public get assignIpv6AddressOnCreation() {
     return this.getBooleanAttribute('assign_ipv6_address_on_creation');
   }
-  public set assignIpv6AddressOnCreation(value: boolean ) {
+  public set assignIpv6AddressOnCreation(value: boolean | cdktf.IResolvable ) {
     this._assignIpv6AddressOnCreation = value;
   }
   public resetAssignIpv6AddressOnCreation() {
@@ -237,11 +242,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // map_customer_owned_ip_on_launch - computed: false, optional: true, required: false
-  private _mapCustomerOwnedIpOnLaunch?: boolean;
+  private _mapCustomerOwnedIpOnLaunch?: boolean | cdktf.IResolvable;
   public get mapCustomerOwnedIpOnLaunch() {
     return this.getBooleanAttribute('map_customer_owned_ip_on_launch');
   }
-  public set mapCustomerOwnedIpOnLaunch(value: boolean ) {
+  public set mapCustomerOwnedIpOnLaunch(value: boolean | cdktf.IResolvable ) {
     this._mapCustomerOwnedIpOnLaunch = value;
   }
   public resetMapCustomerOwnedIpOnLaunch() {
@@ -253,11 +258,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // map_public_ip_on_launch - computed: false, optional: true, required: false
-  private _mapPublicIpOnLaunch?: boolean;
+  private _mapPublicIpOnLaunch?: boolean | cdktf.IResolvable;
   public get mapPublicIpOnLaunch() {
     return this.getBooleanAttribute('map_public_ip_on_launch');
   }
-  public set mapPublicIpOnLaunch(value: boolean ) {
+  public set mapPublicIpOnLaunch(value: boolean | cdktf.IResolvable ) {
     this._mapPublicIpOnLaunch = value;
   }
   public resetMapPublicIpOnLaunch() {
@@ -290,11 +295,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -306,11 +311,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

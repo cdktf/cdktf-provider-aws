@@ -26,7 +26,7 @@ export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration_response.html#response_templates Apigatewayv2IntegrationResponse#response_templates}
   */
-  readonly responseTemplates?: { [key: string]: string };
+  readonly responseTemplates?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration_response.html#template_selection_expression Apigatewayv2IntegrationResponse#template_selection_expression}
   */
@@ -37,6 +37,11 @@ export interface Apigatewayv2IntegrationResponseConfig extends cdktf.TerraformMe
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration_response.html aws_apigatewayv2_integration_response}
 */
 export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_integration_response";
 
   // ===========
   // INITIALIZER
@@ -133,11 +138,11 @@ export class Apigatewayv2IntegrationResponse extends cdktf.TerraformResource {
   }
 
   // response_templates - computed: false, optional: true, required: false
-  private _responseTemplates?: { [key: string]: string };
+  private _responseTemplates?: { [key: string]: string } | cdktf.IResolvable;
   public get responseTemplates() {
     return this.interpolationForAttribute('response_templates') as any;
   }
-  public set responseTemplates(value: { [key: string]: string } ) {
+  public set responseTemplates(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._responseTemplates = value;
   }
   public resetResponseTemplates() {

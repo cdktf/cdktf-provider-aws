@@ -22,6 +22,11 @@ export interface AlbListenerCertificateConfig extends cdktf.TerraformMetaArgumen
 */
 export class AlbListenerCertificate extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_alb_listener_certificate";
+
   // ===========
   // INITIALIZER
   // ===========

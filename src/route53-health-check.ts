@@ -26,11 +26,11 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#disabled Route53HealthCheck#disabled}
   */
-  readonly disabled?: boolean;
+  readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#enable_sni Route53HealthCheck#enable_sni}
   */
-  readonly enableSni?: boolean;
+  readonly enableSni?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#failure_threshold Route53HealthCheck#failure_threshold}
   */
@@ -46,7 +46,7 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#invert_healthcheck Route53HealthCheck#invert_healthcheck}
   */
-  readonly invertHealthcheck?: boolean;
+  readonly invertHealthcheck?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#ip_address Route53HealthCheck#ip_address}
   */
@@ -54,7 +54,7 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#measure_latency Route53HealthCheck#measure_latency}
   */
-  readonly measureLatency?: boolean;
+  readonly measureLatency?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#port Route53HealthCheck#port}
   */
@@ -76,17 +76,21 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
   */
   readonly resourcePath?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#routing_control_arn Route53HealthCheck#routing_control_arn}
+  */
+  readonly routingControlArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#search_string Route53HealthCheck#search_string}
   */
   readonly searchString?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#tags Route53HealthCheck#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#tags_all Route53HealthCheck#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html#type Route53HealthCheck#type}
   */
@@ -97,6 +101,11 @@ export interface Route53HealthCheckConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_health_check.html aws_route53_health_check}
 */
 export class Route53HealthCheck extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_health_check";
 
   // ===========
   // INITIALIZER
@@ -137,6 +146,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
     this._regions = config.regions;
     this._requestInterval = config.requestInterval;
     this._resourcePath = config.resourcePath;
+    this._routingControlArn = config.routingControlArn;
     this._searchString = config.searchString;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -217,11 +227,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean;
+  private _disabled?: boolean | cdktf.IResolvable;
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean ) {
+  public set disabled(value: boolean | cdktf.IResolvable ) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -233,11 +243,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // enable_sni - computed: true, optional: true, required: false
-  private _enableSni?: boolean;
+  private _enableSni?: boolean | cdktf.IResolvable;
   public get enableSni() {
     return this.getBooleanAttribute('enable_sni');
   }
-  public set enableSni(value: boolean) {
+  public set enableSni(value: boolean | cdktf.IResolvable) {
     this._enableSni = value;
   }
   public resetEnableSni() {
@@ -302,11 +312,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // invert_healthcheck - computed: false, optional: true, required: false
-  private _invertHealthcheck?: boolean;
+  private _invertHealthcheck?: boolean | cdktf.IResolvable;
   public get invertHealthcheck() {
     return this.getBooleanAttribute('invert_healthcheck');
   }
-  public set invertHealthcheck(value: boolean ) {
+  public set invertHealthcheck(value: boolean | cdktf.IResolvable ) {
     this._invertHealthcheck = value;
   }
   public resetInvertHealthcheck() {
@@ -334,11 +344,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // measure_latency - computed: false, optional: true, required: false
-  private _measureLatency?: boolean;
+  private _measureLatency?: boolean | cdktf.IResolvable;
   public get measureLatency() {
     return this.getBooleanAttribute('measure_latency');
   }
-  public set measureLatency(value: boolean ) {
+  public set measureLatency(value: boolean | cdktf.IResolvable ) {
     this._measureLatency = value;
   }
   public resetMeasureLatency() {
@@ -429,6 +439,22 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
     return this._resourcePath
   }
 
+  // routing_control_arn - computed: false, optional: true, required: false
+  private _routingControlArn?: string;
+  public get routingControlArn() {
+    return this.getStringAttribute('routing_control_arn');
+  }
+  public set routingControlArn(value: string ) {
+    this._routingControlArn = value;
+  }
+  public resetRoutingControlArn() {
+    this._routingControlArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routingControlArnInput() {
+    return this._routingControlArn
+  }
+
   // search_string - computed: false, optional: true, required: false
   private _searchString?: string;
   public get searchString() {
@@ -446,11 +472,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -462,11 +488,11 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -513,6 +539,7 @@ export class Route53HealthCheck extends cdktf.TerraformResource {
       regions: cdktf.listMapper(cdktf.stringToTerraform)(this._regions),
       request_interval: cdktf.numberToTerraform(this._requestInterval),
       resource_path: cdktf.stringToTerraform(this._resourcePath),
+      routing_control_arn: cdktf.stringToTerraform(this._routingControlArn),
       search_string: cdktf.stringToTerraform(this._searchString),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),

@@ -30,6 +30,11 @@ export interface SesTemplateConfig extends cdktf.TerraformMetaArguments {
 */
 export class SesTemplate extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_template";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,6 +22,11 @@ export interface KinesisStreamConsumerConfig extends cdktf.TerraformMetaArgument
 */
 export class KinesisStreamConsumer extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_kinesis_stream_consumer";
+
   // ===========
   // INITIALIZER
   // ===========

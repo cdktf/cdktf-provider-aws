@@ -106,6 +106,11 @@ export class DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigi
 */
 export class DataAwsCloudfrontCachePolicy extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_cache_policy";
+
   // ===========
   // INITIALIZER
   // ===========

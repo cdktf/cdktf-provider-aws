@@ -10,11 +10,11 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#apply_immediately ElasticacheReplicationGroup#apply_immediately}
   */
-  readonly applyImmediately?: boolean;
+  readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#at_rest_encryption_enabled ElasticacheReplicationGroup#at_rest_encryption_enabled}
   */
-  readonly atRestEncryptionEnabled?: boolean;
+  readonly atRestEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#auth_token ElasticacheReplicationGroup#auth_token}
   */
@@ -22,11 +22,11 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#auto_minor_version_upgrade ElasticacheReplicationGroup#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean;
+  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#automatic_failover_enabled ElasticacheReplicationGroup#automatic_failover_enabled}
   */
-  readonly automaticFailoverEnabled?: boolean;
+  readonly automaticFailoverEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#availability_zones ElasticacheReplicationGroup#availability_zones}
   */
@@ -58,7 +58,7 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#multi_az_enabled ElasticacheReplicationGroup#multi_az_enabled}
   */
-  readonly multiAzEnabled?: boolean;
+  readonly multiAzEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#node_type ElasticacheReplicationGroup#node_type}
   */
@@ -118,15 +118,15 @@ export interface ElasticacheReplicationGroupConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#tags ElasticacheReplicationGroup#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#tags_all ElasticacheReplicationGroup#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_replication_group.html#transit_encryption_enabled ElasticacheReplicationGroup#transit_encryption_enabled}
   */
-  readonly transitEncryptionEnabled?: boolean;
+  readonly transitEncryptionEnabled?: boolean | cdktf.IResolvable;
   /**
   * cluster_mode block
   * 
@@ -189,6 +189,11 @@ function elasticacheReplicationGroupTimeoutsToTerraform(struct?: ElasticacheRepl
 */
 export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticache_replication_group";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -250,11 +255,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean;
+  private _applyImmediately?: boolean | cdktf.IResolvable;
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | cdktf.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -271,11 +276,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // at_rest_encryption_enabled - computed: true, optional: true, required: false
-  private _atRestEncryptionEnabled?: boolean;
+  private _atRestEncryptionEnabled?: boolean | cdktf.IResolvable;
   public get atRestEncryptionEnabled() {
     return this.getBooleanAttribute('at_rest_encryption_enabled');
   }
-  public set atRestEncryptionEnabled(value: boolean) {
+  public set atRestEncryptionEnabled(value: boolean | cdktf.IResolvable) {
     this._atRestEncryptionEnabled = value;
   }
   public resetAtRestEncryptionEnabled() {
@@ -303,11 +308,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean;
+  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean ) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable ) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -319,11 +324,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // automatic_failover_enabled - computed: false, optional: true, required: false
-  private _automaticFailoverEnabled?: boolean;
+  private _automaticFailoverEnabled?: boolean | cdktf.IResolvable;
   public get automaticFailoverEnabled() {
     return this.getBooleanAttribute('automatic_failover_enabled');
   }
-  public set automaticFailoverEnabled(value: boolean ) {
+  public set automaticFailoverEnabled(value: boolean | cdktf.IResolvable ) {
     this._automaticFailoverEnabled = value;
   }
   public resetAutomaticFailoverEnabled() {
@@ -472,11 +477,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // multi_az_enabled - computed: false, optional: true, required: false
-  private _multiAzEnabled?: boolean;
+  private _multiAzEnabled?: boolean | cdktf.IResolvable;
   public get multiAzEnabled() {
     return this.getBooleanAttribute('multi_az_enabled');
   }
-  public set multiAzEnabled(value: boolean ) {
+  public set multiAzEnabled(value: boolean | cdktf.IResolvable ) {
     this._multiAzEnabled = value;
   }
   public resetMultiAzEnabled() {
@@ -716,11 +721,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -732,11 +737,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -748,11 +753,11 @@ export class ElasticacheReplicationGroup extends cdktf.TerraformResource {
   }
 
   // transit_encryption_enabled - computed: true, optional: true, required: false
-  private _transitEncryptionEnabled?: boolean;
+  private _transitEncryptionEnabled?: boolean | cdktf.IResolvable;
   public get transitEncryptionEnabled() {
     return this.getBooleanAttribute('transit_encryption_enabled');
   }
-  public set transitEncryptionEnabled(value: boolean) {
+  public set transitEncryptionEnabled(value: boolean | cdktf.IResolvable) {
     this._transitEncryptionEnabled = value;
   }
   public resetTransitEncryptionEnabled() {

@@ -14,7 +14,7 @@ export interface DataAwsInstancesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/instances.html#instance_tags DataAwsInstances#instance_tags}
   */
-  readonly instanceTags?: { [key: string]: string };
+  readonly instanceTags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
@@ -46,6 +46,11 @@ function dataAwsInstancesFilterToTerraform(struct?: DataAwsInstancesFilter): any
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/instances.html aws_instances}
 */
 export class DataAwsInstances extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_instances";
 
   // ===========
   // INITIALIZER
@@ -105,11 +110,11 @@ export class DataAwsInstances extends cdktf.TerraformDataSource {
   }
 
   // instance_tags - computed: true, optional: true, required: false
-  private _instanceTags?: { [key: string]: string }
-  public get instanceTags(): { [key: string]: string } {
+  private _instanceTags?: { [key: string]: string } | cdktf.IResolvable
+  public get instanceTags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('instance_tags') as any; // Getting the computed value is not yet implemented
   }
-  public set instanceTags(value: { [key: string]: string }) {
+  public set instanceTags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._instanceTags = value;
   }
   public resetInstanceTags() {

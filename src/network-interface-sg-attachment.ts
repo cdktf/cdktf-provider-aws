@@ -22,6 +22,11 @@ export interface NetworkInterfaceSgAttachmentConfig extends cdktf.TerraformMetaA
 */
 export class NetworkInterfaceSgAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_network_interface_sg_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

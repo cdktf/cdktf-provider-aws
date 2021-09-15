@@ -22,7 +22,7 @@ export interface DataAwsAppmeshVirtualServiceConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/appmesh_virtual_service.html#tags DataAwsAppmeshVirtualService#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 export class DataAwsAppmeshVirtualServiceSpecProviderVirtualNode extends cdktf.ComplexComputedList {
 
@@ -62,6 +62,11 @@ export class DataAwsAppmeshVirtualServiceSpec extends cdktf.ComplexComputedList 
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/appmesh_virtual_service.html aws_appmesh_virtual_service}
 */
 export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appmesh_virtual_service";
 
   // ===========
   // INITIALIZER
@@ -168,11 +173,11 @@ export class DataAwsAppmeshVirtualService extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {

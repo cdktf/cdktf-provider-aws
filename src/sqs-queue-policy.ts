@@ -22,6 +22,11 @@ export interface SqsQueuePolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class SqsQueuePolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sqs_queue_policy";
+
   // ===========
   // INITIALIZER
   // ===========

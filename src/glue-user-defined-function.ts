@@ -63,6 +63,11 @@ function glueUserDefinedFunctionResourceUrisToTerraform(struct?: GlueUserDefined
 */
 export class GlueUserDefinedFunction extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_user_defined_function";
+
   // ===========
   // INITIALIZER
   // ===========

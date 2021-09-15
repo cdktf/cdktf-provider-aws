@@ -10,11 +10,11 @@ export interface LexBotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot.html#child_directed LexBot#child_directed}
   */
-  readonly childDirected: boolean;
+  readonly childDirected: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot.html#create_version LexBot#create_version}
   */
-  readonly createVersion?: boolean;
+  readonly createVersion?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot.html#description LexBot#description}
   */
@@ -22,11 +22,11 @@ export interface LexBotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot.html#detect_sentiment LexBot#detect_sentiment}
   */
-  readonly detectSentiment?: boolean;
+  readonly detectSentiment?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot.html#enable_model_improvements LexBot#enable_model_improvements}
   */
-  readonly enableModelImprovements?: boolean;
+  readonly enableModelImprovements?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_bot.html#idle_session_ttl_in_seconds LexBot#idle_session_ttl_in_seconds}
   */
@@ -220,6 +220,11 @@ function lexBotTimeoutsToTerraform(struct?: LexBotTimeouts): any {
 */
 export class LexBot extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lex_bot";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -274,11 +279,11 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // child_directed - computed: false, optional: false, required: true
-  private _childDirected: boolean;
+  private _childDirected: boolean | cdktf.IResolvable;
   public get childDirected() {
     return this.getBooleanAttribute('child_directed');
   }
-  public set childDirected(value: boolean) {
+  public set childDirected(value: boolean | cdktf.IResolvable) {
     this._childDirected = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -287,11 +292,11 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // create_version - computed: false, optional: true, required: false
-  private _createVersion?: boolean;
+  private _createVersion?: boolean | cdktf.IResolvable;
   public get createVersion() {
     return this.getBooleanAttribute('create_version');
   }
-  public set createVersion(value: boolean ) {
+  public set createVersion(value: boolean | cdktf.IResolvable ) {
     this._createVersion = value;
   }
   public resetCreateVersion() {
@@ -324,11 +329,11 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // detect_sentiment - computed: false, optional: true, required: false
-  private _detectSentiment?: boolean;
+  private _detectSentiment?: boolean | cdktf.IResolvable;
   public get detectSentiment() {
     return this.getBooleanAttribute('detect_sentiment');
   }
-  public set detectSentiment(value: boolean ) {
+  public set detectSentiment(value: boolean | cdktf.IResolvable ) {
     this._detectSentiment = value;
   }
   public resetDetectSentiment() {
@@ -340,11 +345,11 @@ export class LexBot extends cdktf.TerraformResource {
   }
 
   // enable_model_improvements - computed: false, optional: true, required: false
-  private _enableModelImprovements?: boolean;
+  private _enableModelImprovements?: boolean | cdktf.IResolvable;
   public get enableModelImprovements() {
     return this.getBooleanAttribute('enable_model_improvements');
   }
-  public set enableModelImprovements(value: boolean ) {
+  public set enableModelImprovements(value: boolean | cdktf.IResolvable ) {
     this._enableModelImprovements = value;
   }
   public resetEnableModelImprovements() {

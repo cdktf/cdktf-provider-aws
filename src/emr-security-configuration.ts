@@ -26,6 +26,11 @@ export interface EmrSecurityConfigurationConfig extends cdktf.TerraformMetaArgum
 */
 export class EmrSecurityConfiguration extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_emr_security_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

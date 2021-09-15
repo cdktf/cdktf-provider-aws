@@ -14,7 +14,7 @@ export interface Apigatewayv2StageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#auto_deploy Apigatewayv2Stage#auto_deploy}
   */
-  readonly autoDeploy?: boolean;
+  readonly autoDeploy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#client_certificate_id Apigatewayv2Stage#client_certificate_id}
   */
@@ -34,15 +34,15 @@ export interface Apigatewayv2StageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#stage_variables Apigatewayv2Stage#stage_variables}
   */
-  readonly stageVariables?: { [key: string]: string };
+  readonly stageVariables?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#tags Apigatewayv2Stage#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#tags_all Apigatewayv2Stage#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * access_log_settings block
   * 
@@ -85,11 +85,11 @@ export interface Apigatewayv2StageDefaultRouteSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#data_trace_enabled Apigatewayv2Stage#data_trace_enabled}
   */
-  readonly dataTraceEnabled?: boolean;
+  readonly dataTraceEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#detailed_metrics_enabled Apigatewayv2Stage#detailed_metrics_enabled}
   */
-  readonly detailedMetricsEnabled?: boolean;
+  readonly detailedMetricsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#logging_level Apigatewayv2Stage#logging_level}
   */
@@ -119,11 +119,11 @@ export interface Apigatewayv2StageRouteSettings {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#data_trace_enabled Apigatewayv2Stage#data_trace_enabled}
   */
-  readonly dataTraceEnabled?: boolean;
+  readonly dataTraceEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#detailed_metrics_enabled Apigatewayv2Stage#detailed_metrics_enabled}
   */
-  readonly detailedMetricsEnabled?: boolean;
+  readonly detailedMetricsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html#logging_level Apigatewayv2Stage#logging_level}
   */
@@ -159,6 +159,11 @@ function apigatewayv2StageRouteSettingsToTerraform(struct?: Apigatewayv2StageRou
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_stage.html aws_apigatewayv2_stage}
 */
 export class Apigatewayv2Stage extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_apigatewayv2_stage";
 
   // ===========
   // INITIALIZER
@@ -219,11 +224,11 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // auto_deploy - computed: false, optional: true, required: false
-  private _autoDeploy?: boolean;
+  private _autoDeploy?: boolean | cdktf.IResolvable;
   public get autoDeploy() {
     return this.getBooleanAttribute('auto_deploy');
   }
-  public set autoDeploy(value: boolean ) {
+  public set autoDeploy(value: boolean | cdktf.IResolvable ) {
     this._autoDeploy = value;
   }
   public resetAutoDeploy() {
@@ -311,11 +316,11 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // stage_variables - computed: false, optional: true, required: false
-  private _stageVariables?: { [key: string]: string };
+  private _stageVariables?: { [key: string]: string } | cdktf.IResolvable;
   public get stageVariables() {
     return this.interpolationForAttribute('stage_variables') as any;
   }
-  public set stageVariables(value: { [key: string]: string } ) {
+  public set stageVariables(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._stageVariables = value;
   }
   public resetStageVariables() {
@@ -327,11 +332,11 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -343,11 +348,11 @@ export class Apigatewayv2Stage extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -30,6 +30,11 @@ export interface MskConfigurationConfig extends cdktf.TerraformMetaArguments {
 */
 export class MskConfiguration extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_msk_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

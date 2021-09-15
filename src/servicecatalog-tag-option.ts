@@ -10,7 +10,7 @@ export interface ServicecatalogTagOptionConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_tag_option.html#active ServicecatalogTagOption#active}
   */
-  readonly active?: boolean;
+  readonly active?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_tag_option.html#key ServicecatalogTagOption#key}
   */
@@ -25,6 +25,11 @@ export interface ServicecatalogTagOptionConfig extends cdktf.TerraformMetaArgume
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_tag_option.html aws_servicecatalog_tag_option}
 */
 export class ServicecatalogTagOption extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_tag_option";
 
   // ===========
   // INITIALIZER
@@ -58,11 +63,11 @@ export class ServicecatalogTagOption extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean;
+  private _active?: boolean | cdktf.IResolvable;
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean ) {
+  public set active(value: boolean | cdktf.IResolvable ) {
     this._active = value;
   }
   public resetActive() {

@@ -10,7 +10,7 @@ export interface DataAwsEc2LocalGatewayVirtualInterfaceGroupsConfig extends cdkt
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface_groups.html#tags DataAwsEc2LocalGatewayVirtualInterfaceGroups#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * filter block
   * 
@@ -42,6 +42,11 @@ function dataAwsEc2LocalGatewayVirtualInterfaceGroupsFilterToTerraform(struct?: 
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface_groups.html aws_ec2_local_gateway_virtual_interface_groups}
 */
 export class DataAwsEc2LocalGatewayVirtualInterfaceGroups extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_local_gateway_virtual_interface_groups";
 
   // ===========
   // INITIALIZER
@@ -89,11 +94,11 @@ export class DataAwsEc2LocalGatewayVirtualInterfaceGroups extends cdktf.Terrafor
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

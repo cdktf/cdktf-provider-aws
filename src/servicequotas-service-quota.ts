@@ -26,6 +26,11 @@ export interface ServicequotasServiceQuotaConfig extends cdktf.TerraformMetaArgu
 */
 export class ServicequotasServiceQuota extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicequotas_service_quota";
+
   // ===========
   // INITIALIZER
   // ===========

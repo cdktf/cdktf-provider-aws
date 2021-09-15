@@ -14,7 +14,7 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#capacity_rebalance AutoscalingGroup#capacity_rebalance}
   */
-  readonly capacityRebalance?: boolean;
+  readonly capacityRebalance?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#default_cooldown AutoscalingGroup#default_cooldown}
   */
@@ -30,11 +30,11 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#force_delete AutoscalingGroup#force_delete}
   */
-  readonly forceDelete?: boolean;
+  readonly forceDelete?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#force_delete_warm_pool AutoscalingGroup#force_delete_warm_pool}
   */
-  readonly forceDeleteWarmPool?: boolean;
+  readonly forceDeleteWarmPool?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#health_check_grace_period AutoscalingGroup#health_check_grace_period}
   */
@@ -86,7 +86,7 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#protect_from_scale_in AutoscalingGroup#protect_from_scale_in}
   */
-  readonly protectFromScaleIn?: boolean;
+  readonly protectFromScaleIn?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#service_linked_role_arn AutoscalingGroup#service_linked_role_arn}
   */
@@ -98,7 +98,7 @@ export interface AutoscalingGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#tags AutoscalingGroup#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#target_group_arns AutoscalingGroup#target_group_arns}
   */
@@ -442,7 +442,7 @@ export interface AutoscalingGroupTag {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#propagate_at_launch AutoscalingGroup#propagate_at_launch}
   */
-  readonly propagateAtLaunch: boolean;
+  readonly propagateAtLaunch: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#value AutoscalingGroup#value}
   */
@@ -501,6 +501,11 @@ function autoscalingGroupWarmPoolToTerraform(struct?: AutoscalingGroupWarmPool):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html aws_autoscaling_group}
 */
 export class AutoscalingGroup extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_group";
 
   // ===========
   // INITIALIZER
@@ -587,11 +592,11 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // capacity_rebalance - computed: false, optional: true, required: false
-  private _capacityRebalance?: boolean;
+  private _capacityRebalance?: boolean | cdktf.IResolvable;
   public get capacityRebalance() {
     return this.getBooleanAttribute('capacity_rebalance');
   }
-  public set capacityRebalance(value: boolean ) {
+  public set capacityRebalance(value: boolean | cdktf.IResolvable ) {
     this._capacityRebalance = value;
   }
   public resetCapacityRebalance() {
@@ -651,11 +656,11 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean;
+  private _forceDelete?: boolean | cdktf.IResolvable;
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean ) {
+  public set forceDelete(value: boolean | cdktf.IResolvable ) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -667,11 +672,11 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // force_delete_warm_pool - computed: false, optional: true, required: false
-  private _forceDeleteWarmPool?: boolean;
+  private _forceDeleteWarmPool?: boolean | cdktf.IResolvable;
   public get forceDeleteWarmPool() {
     return this.getBooleanAttribute('force_delete_warm_pool');
   }
-  public set forceDeleteWarmPool(value: boolean ) {
+  public set forceDeleteWarmPool(value: boolean | cdktf.IResolvable ) {
     this._forceDeleteWarmPool = value;
   }
   public resetForceDeleteWarmPool() {
@@ -874,11 +879,11 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // protect_from_scale_in - computed: false, optional: true, required: false
-  private _protectFromScaleIn?: boolean;
+  private _protectFromScaleIn?: boolean | cdktf.IResolvable;
   public get protectFromScaleIn() {
     return this.getBooleanAttribute('protect_from_scale_in');
   }
-  public set protectFromScaleIn(value: boolean ) {
+  public set protectFromScaleIn(value: boolean | cdktf.IResolvable ) {
     this._protectFromScaleIn = value;
   }
   public resetProtectFromScaleIn() {
@@ -922,11 +927,11 @@ export class AutoscalingGroup extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {

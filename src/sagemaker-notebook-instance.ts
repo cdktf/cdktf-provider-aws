@@ -36,6 +36,10 @@ export interface SagemakerNotebookInstanceConfig extends cdktf.TerraformMetaArgu
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance.html#platform_identifier SagemakerNotebookInstance#platform_identifier}
+  */
+  readonly platformIdentifier?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance.html#role_arn SagemakerNotebookInstance#role_arn}
   */
   readonly roleArn: string;
@@ -54,11 +58,11 @@ export interface SagemakerNotebookInstanceConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance.html#tags SagemakerNotebookInstance#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance.html#tags_all SagemakerNotebookInstance#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance.html#volume_size SagemakerNotebookInstance#volume_size}
   */
@@ -69,6 +73,11 @@ export interface SagemakerNotebookInstanceConfig extends cdktf.TerraformMetaArgu
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_notebook_instance.html aws_sagemaker_notebook_instance}
 */
 export class SagemakerNotebookInstance extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sagemaker_notebook_instance";
 
   // ===========
   // INITIALIZER
@@ -99,6 +108,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
     this._kmsKeyId = config.kmsKeyId;
     this._lifecycleConfigName = config.lifecycleConfigName;
     this._name = config.name;
+    this._platformIdentifier = config.platformIdentifier;
     this._roleArn = config.roleArn;
     this._rootAccess = config.rootAccess;
     this._securityGroups = config.securityGroups;
@@ -233,6 +243,22 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('network_interface_id');
   }
 
+  // platform_identifier - computed: true, optional: true, required: false
+  private _platformIdentifier?: string;
+  public get platformIdentifier() {
+    return this.getStringAttribute('platform_identifier');
+  }
+  public set platformIdentifier(value: string) {
+    this._platformIdentifier = value;
+  }
+  public resetPlatformIdentifier() {
+    this._platformIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get platformIdentifierInput() {
+    return this._platformIdentifier
+  }
+
   // role_arn - computed: false, optional: false, required: true
   private _roleArn: string;
   public get roleArn() {
@@ -295,11 +321,11 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -311,11 +337,11 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -360,6 +386,7 @@ export class SagemakerNotebookInstance extends cdktf.TerraformResource {
       kms_key_id: cdktf.stringToTerraform(this._kmsKeyId),
       lifecycle_config_name: cdktf.stringToTerraform(this._lifecycleConfigName),
       name: cdktf.stringToTerraform(this._name),
+      platform_identifier: cdktf.stringToTerraform(this._platformIdentifier),
       role_arn: cdktf.stringToTerraform(this._roleArn),
       root_access: cdktf.stringToTerraform(this._rootAccess),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),

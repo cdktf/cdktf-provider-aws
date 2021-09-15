@@ -18,6 +18,11 @@ export interface DataAwsWafIpsetConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsWafIpset extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_ipset";
+
   // ===========
   // INITIALIZER
   // ===========

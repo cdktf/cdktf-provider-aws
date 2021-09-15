@@ -30,6 +30,11 @@ export interface VpcEndpointConnectionNotificationConfig extends cdktf.Terraform
 */
 export class VpcEndpointConnectionNotification extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_vpc_endpoint_connection_notification";
+
   // ===========
   // INITIALIZER
   // ===========

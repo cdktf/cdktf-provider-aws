@@ -22,6 +22,11 @@ export interface BackupVaultPolicyConfig extends cdktf.TerraformMetaArguments {
 */
 export class BackupVaultPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_backup_vault_policy";
+
   // ===========
   // INITIALIZER
   // ===========

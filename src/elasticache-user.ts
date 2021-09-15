@@ -18,7 +18,7 @@ export interface ElasticacheUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user.html#no_password_required ElasticacheUser#no_password_required}
   */
-  readonly noPasswordRequired?: boolean;
+  readonly noPasswordRequired?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user.html#passwords ElasticacheUser#passwords}
   */
@@ -26,11 +26,11 @@ export interface ElasticacheUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user.html#tags ElasticacheUser#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user.html#tags_all ElasticacheUser#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user.html#user_id ElasticacheUser#user_id}
   */
@@ -45,6 +45,11 @@ export interface ElasticacheUserConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user.html aws_elasticache_user}
 */
 export class ElasticacheUser extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticache_user";
 
   // ===========
   // INITIALIZER
@@ -119,11 +124,11 @@ export class ElasticacheUser extends cdktf.TerraformResource {
   }
 
   // no_password_required - computed: false, optional: true, required: false
-  private _noPasswordRequired?: boolean;
+  private _noPasswordRequired?: boolean | cdktf.IResolvable;
   public get noPasswordRequired() {
     return this.getBooleanAttribute('no_password_required');
   }
-  public set noPasswordRequired(value: boolean ) {
+  public set noPasswordRequired(value: boolean | cdktf.IResolvable ) {
     this._noPasswordRequired = value;
   }
   public resetNoPasswordRequired() {
@@ -151,11 +156,11 @@ export class ElasticacheUser extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -167,11 +172,11 @@ export class ElasticacheUser extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

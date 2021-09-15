@@ -47,6 +47,11 @@ function dataAwsEc2InstanceTypeOfferingFilterToTerraform(struct?: DataAwsEc2Inst
 */
 export class DataAwsEc2InstanceTypeOffering extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_instance_type_offering";
+
   // ===========
   // INITIALIZER
   // ===========

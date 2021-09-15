@@ -38,6 +38,11 @@ function macie2InvitationAccepterTimeoutsToTerraform(struct?: Macie2InvitationAc
 */
 export class Macie2InvitationAccepter extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_macie2_invitation_accepter";
+
   // ===========
   // INITIALIZER
   // ===========

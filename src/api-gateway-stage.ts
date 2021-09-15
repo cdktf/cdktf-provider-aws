@@ -10,7 +10,7 @@ export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage.html#cache_cluster_enabled ApiGatewayStage#cache_cluster_enabled}
   */
-  readonly cacheClusterEnabled?: boolean;
+  readonly cacheClusterEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage.html#cache_cluster_size ApiGatewayStage#cache_cluster_size}
   */
@@ -42,19 +42,19 @@ export interface ApiGatewayStageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage.html#tags ApiGatewayStage#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage.html#tags_all ApiGatewayStage#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage.html#variables ApiGatewayStage#variables}
   */
-  readonly variables?: { [key: string]: string };
+  readonly variables?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage.html#xray_tracing_enabled ApiGatewayStage#xray_tracing_enabled}
   */
-  readonly xrayTracingEnabled?: boolean;
+  readonly xrayTracingEnabled?: boolean | cdktf.IResolvable;
   /**
   * access_log_settings block
   * 
@@ -86,6 +86,11 @@ function apiGatewayStageAccessLogSettingsToTerraform(struct?: ApiGatewayStageAcc
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_stage.html aws_api_gateway_stage}
 */
 export class ApiGatewayStage extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_stage";
 
   // ===========
   // INITIALIZER
@@ -134,11 +139,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // cache_cluster_enabled - computed: false, optional: true, required: false
-  private _cacheClusterEnabled?: boolean;
+  private _cacheClusterEnabled?: boolean | cdktf.IResolvable;
   public get cacheClusterEnabled() {
     return this.getBooleanAttribute('cache_cluster_enabled');
   }
-  public set cacheClusterEnabled(value: boolean ) {
+  public set cacheClusterEnabled(value: boolean | cdktf.IResolvable ) {
     this._cacheClusterEnabled = value;
   }
   public resetCacheClusterEnabled() {
@@ -268,11 +273,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -284,11 +289,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -300,11 +305,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // variables - computed: false, optional: true, required: false
-  private _variables?: { [key: string]: string };
+  private _variables?: { [key: string]: string } | cdktf.IResolvable;
   public get variables() {
     return this.interpolationForAttribute('variables') as any;
   }
-  public set variables(value: { [key: string]: string } ) {
+  public set variables(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._variables = value;
   }
   public resetVariables() {
@@ -316,11 +321,11 @@ export class ApiGatewayStage extends cdktf.TerraformResource {
   }
 
   // xray_tracing_enabled - computed: false, optional: true, required: false
-  private _xrayTracingEnabled?: boolean;
+  private _xrayTracingEnabled?: boolean | cdktf.IResolvable;
   public get xrayTracingEnabled() {
     return this.getBooleanAttribute('xray_tracing_enabled');
   }
-  public set xrayTracingEnabled(value: boolean ) {
+  public set xrayTracingEnabled(value: boolean | cdktf.IResolvable ) {
     this._xrayTracingEnabled = value;
   }
   public resetXrayTracingEnabled() {

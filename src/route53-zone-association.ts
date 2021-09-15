@@ -26,6 +26,11 @@ export interface Route53ZoneAssociationConfig extends cdktf.TerraformMetaArgumen
 */
 export class Route53ZoneAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_zone_association";
+
   // ===========
   // INITIALIZER
   // ===========

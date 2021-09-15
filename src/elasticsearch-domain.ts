@@ -14,7 +14,7 @@ export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#advanced_options ElasticsearchDomain#advanced_options}
   */
-  readonly advancedOptions?: { [key: string]: string };
+  readonly advancedOptions?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#domain_name ElasticsearchDomain#domain_name}
   */
@@ -26,11 +26,11 @@ export interface ElasticsearchDomainConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tags ElasticsearchDomain#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tags_all ElasticsearchDomain#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * advanced_security_options block
   * 
@@ -126,11 +126,11 @@ export interface ElasticsearchDomainAdvancedSecurityOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#internal_user_database_enabled ElasticsearchDomain#internal_user_database_enabled}
   */
-  readonly internalUserDatabaseEnabled?: boolean;
+  readonly internalUserDatabaseEnabled?: boolean | cdktf.IResolvable;
   /**
   * master_user_options block
   * 
@@ -170,7 +170,7 @@ export interface ElasticsearchDomainClusterConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#dedicated_master_enabled ElasticsearchDomain#dedicated_master_enabled}
   */
-  readonly dedicatedMasterEnabled?: boolean;
+  readonly dedicatedMasterEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#dedicated_master_type ElasticsearchDomain#dedicated_master_type}
   */
@@ -190,7 +190,7 @@ export interface ElasticsearchDomainClusterConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#warm_enabled ElasticsearchDomain#warm_enabled}
   */
-  readonly warmEnabled?: boolean;
+  readonly warmEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#warm_type ElasticsearchDomain#warm_type}
   */
@@ -198,7 +198,7 @@ export interface ElasticsearchDomainClusterConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#zone_awareness_enabled ElasticsearchDomain#zone_awareness_enabled}
   */
-  readonly zoneAwarenessEnabled?: boolean;
+  readonly zoneAwarenessEnabled?: boolean | cdktf.IResolvable;
   /**
   * zone_awareness_config block
   * 
@@ -227,7 +227,7 @@ export interface ElasticsearchDomainCognitoOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#identity_pool_id ElasticsearchDomain#identity_pool_id}
   */
@@ -264,11 +264,11 @@ export interface ElasticsearchDomainDomainEndpointOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#custom_endpoint_enabled ElasticsearchDomain#custom_endpoint_enabled}
   */
-  readonly customEndpointEnabled?: boolean;
+  readonly customEndpointEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enforce_https ElasticsearchDomain#enforce_https}
   */
-  readonly enforceHttps?: boolean;
+  readonly enforceHttps?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#tls_security_policy ElasticsearchDomain#tls_security_policy}
   */
@@ -290,7 +290,7 @@ export interface ElasticsearchDomainEbsOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#ebs_enabled ElasticsearchDomain#ebs_enabled}
   */
-  readonly ebsEnabled: boolean;
+  readonly ebsEnabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#iops ElasticsearchDomain#iops}
   */
@@ -319,7 +319,7 @@ export interface ElasticsearchDomainEncryptAtRest {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#kms_key_id ElasticsearchDomain#kms_key_id}
   */
@@ -342,7 +342,7 @@ export interface ElasticsearchDomainLogPublishingOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#log_type ElasticsearchDomain#log_type}
   */
@@ -362,7 +362,7 @@ export interface ElasticsearchDomainNodeToNodeEncryption {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html#enabled ElasticsearchDomain#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
 }
 
 function elasticsearchDomainNodeToNodeEncryptionToTerraform(struct?: ElasticsearchDomainNodeToNodeEncryption): any {
@@ -424,6 +424,11 @@ function elasticsearchDomainVpcOptionsToTerraform(struct?: ElasticsearchDomainVp
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain.html aws_elasticsearch_domain}
 */
 export class ElasticsearchDomain extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticsearch_domain";
 
   // ===========
   // INITIALIZER
@@ -487,11 +492,11 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // advanced_options - computed: true, optional: true, required: false
-  private _advancedOptions?: { [key: string]: string }
-  public get advancedOptions(): { [key: string]: string } {
+  private _advancedOptions?: { [key: string]: string } | cdktf.IResolvable
+  public get advancedOptions(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('advanced_options') as any; // Getting the computed value is not yet implemented
   }
-  public set advancedOptions(value: { [key: string]: string }) {
+  public set advancedOptions(value: { [key: string]: string } | cdktf.IResolvable) {
     this._advancedOptions = value;
   }
   public resetAdvancedOptions() {
@@ -557,11 +562,11 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -573,11 +578,11 @@ export class ElasticsearchDomain extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

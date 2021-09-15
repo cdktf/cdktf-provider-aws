@@ -34,6 +34,11 @@ export interface ApiGatewayModelConfig extends cdktf.TerraformMetaArguments {
 */
 export class ApiGatewayModel extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_api_gateway_model";
+
   // ===========
   // INITIALIZER
   // ===========

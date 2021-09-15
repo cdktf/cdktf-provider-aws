@@ -18,6 +18,11 @@ export interface DataAwsElasticacheReplicationGroupConfig extends cdktf.Terrafor
 */
 export class DataAwsElasticacheReplicationGroup extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticache_replication_group";
+
   // ===========
   // INITIALIZER
   // ===========

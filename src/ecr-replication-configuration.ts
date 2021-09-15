@@ -71,6 +71,11 @@ function ecrReplicationConfigurationReplicationConfigurationToTerraform(struct?:
 */
 export class EcrReplicationConfiguration extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecr_replication_configuration";
+
   // ===========
   // INITIALIZER
   // ===========

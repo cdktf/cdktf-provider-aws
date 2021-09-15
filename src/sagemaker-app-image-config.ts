@@ -90,6 +90,11 @@ function sagemakerAppImageConfigKernelGatewayImageConfigToTerraform(struct?: Sag
 */
 export class SagemakerAppImageConfig extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sagemaker_app_image_config";
+
   // ===========
   // INITIALIZER
   // ===========

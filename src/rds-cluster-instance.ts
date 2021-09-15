@@ -10,11 +10,11 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#apply_immediately RdsClusterInstance#apply_immediately}
   */
-  readonly applyImmediately?: boolean;
+  readonly applyImmediately?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#auto_minor_version_upgrade RdsClusterInstance#auto_minor_version_upgrade}
   */
-  readonly autoMinorVersionUpgrade?: boolean;
+  readonly autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#availability_zone RdsClusterInstance#availability_zone}
   */
@@ -30,7 +30,7 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#copy_tags_to_snapshot RdsClusterInstance#copy_tags_to_snapshot}
   */
-  readonly copyTagsToSnapshot?: boolean;
+  readonly copyTagsToSnapshot?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#db_parameter_group_name RdsClusterInstance#db_parameter_group_name}
   */
@@ -70,7 +70,7 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#performance_insights_enabled RdsClusterInstance#performance_insights_enabled}
   */
-  readonly performanceInsightsEnabled?: boolean;
+  readonly performanceInsightsEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#performance_insights_kms_key_id RdsClusterInstance#performance_insights_kms_key_id}
   */
@@ -90,15 +90,15 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#publicly_accessible RdsClusterInstance#publicly_accessible}
   */
-  readonly publiclyAccessible?: boolean;
+  readonly publiclyAccessible?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#tags RdsClusterInstance#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#tags_all RdsClusterInstance#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -135,6 +135,11 @@ function rdsClusterInstanceTimeoutsToTerraform(struct?: RdsClusterInstanceTimeou
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html aws_rds_cluster_instance}
 */
 export class RdsClusterInstance extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_rds_cluster_instance";
 
   // ===========
   // INITIALIZER
@@ -189,11 +194,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   // ==========
 
   // apply_immediately - computed: true, optional: true, required: false
-  private _applyImmediately?: boolean;
+  private _applyImmediately?: boolean | cdktf.IResolvable;
   public get applyImmediately() {
     return this.getBooleanAttribute('apply_immediately');
   }
-  public set applyImmediately(value: boolean) {
+  public set applyImmediately(value: boolean | cdktf.IResolvable) {
     this._applyImmediately = value;
   }
   public resetApplyImmediately() {
@@ -210,11 +215,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // auto_minor_version_upgrade - computed: false, optional: true, required: false
-  private _autoMinorVersionUpgrade?: boolean;
+  private _autoMinorVersionUpgrade?: boolean | cdktf.IResolvable;
   public get autoMinorVersionUpgrade() {
     return this.getBooleanAttribute('auto_minor_version_upgrade');
   }
-  public set autoMinorVersionUpgrade(value: boolean ) {
+  public set autoMinorVersionUpgrade(value: boolean | cdktf.IResolvable ) {
     this._autoMinorVersionUpgrade = value;
   }
   public resetAutoMinorVersionUpgrade() {
@@ -271,11 +276,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_snapshot - computed: false, optional: true, required: false
-  private _copyTagsToSnapshot?: boolean;
+  private _copyTagsToSnapshot?: boolean | cdktf.IResolvable;
   public get copyTagsToSnapshot() {
     return this.getBooleanAttribute('copy_tags_to_snapshot');
   }
-  public set copyTagsToSnapshot(value: boolean ) {
+  public set copyTagsToSnapshot(value: boolean | cdktf.IResolvable ) {
     this._copyTagsToSnapshot = value;
   }
   public resetCopyTagsToSnapshot() {
@@ -453,11 +458,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // performance_insights_enabled - computed: true, optional: true, required: false
-  private _performanceInsightsEnabled?: boolean;
+  private _performanceInsightsEnabled?: boolean | cdktf.IResolvable;
   public get performanceInsightsEnabled() {
     return this.getBooleanAttribute('performance_insights_enabled');
   }
-  public set performanceInsightsEnabled(value: boolean) {
+  public set performanceInsightsEnabled(value: boolean | cdktf.IResolvable) {
     this._performanceInsightsEnabled = value;
   }
   public resetPerformanceInsightsEnabled() {
@@ -538,11 +543,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // publicly_accessible - computed: false, optional: true, required: false
-  private _publiclyAccessible?: boolean;
+  private _publiclyAccessible?: boolean | cdktf.IResolvable;
   public get publiclyAccessible() {
     return this.getBooleanAttribute('publicly_accessible');
   }
-  public set publiclyAccessible(value: boolean ) {
+  public set publiclyAccessible(value: boolean | cdktf.IResolvable ) {
     this._publiclyAccessible = value;
   }
   public resetPubliclyAccessible() {
@@ -559,11 +564,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -575,11 +580,11 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

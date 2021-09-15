@@ -22,7 +22,7 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#content_based_deduplication SnsTopic#content_based_deduplication}
   */
-  readonly contentBasedDeduplication?: boolean;
+  readonly contentBasedDeduplication?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#delivery_policy SnsTopic#delivery_policy}
   */
@@ -34,7 +34,7 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#fifo_topic SnsTopic#fifo_topic}
   */
-  readonly fifoTopic?: boolean;
+  readonly fifoTopic?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#firehose_failure_feedback_role_arn SnsTopic#firehose_failure_feedback_role_arn}
   */
@@ -102,17 +102,22 @@ export interface SnsTopicConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#tags SnsTopic#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html#tags_all SnsTopic#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/sns_topic.html aws_sns_topic}
 */
 export class SnsTopic extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sns_topic";
 
   // ===========
   // INITIALIZER
@@ -221,11 +226,11 @@ export class SnsTopic extends cdktf.TerraformResource {
   }
 
   // content_based_deduplication - computed: false, optional: true, required: false
-  private _contentBasedDeduplication?: boolean;
+  private _contentBasedDeduplication?: boolean | cdktf.IResolvable;
   public get contentBasedDeduplication() {
     return this.getBooleanAttribute('content_based_deduplication');
   }
-  public set contentBasedDeduplication(value: boolean ) {
+  public set contentBasedDeduplication(value: boolean | cdktf.IResolvable ) {
     this._contentBasedDeduplication = value;
   }
   public resetContentBasedDeduplication() {
@@ -269,11 +274,11 @@ export class SnsTopic extends cdktf.TerraformResource {
   }
 
   // fifo_topic - computed: false, optional: true, required: false
-  private _fifoTopic?: boolean;
+  private _fifoTopic?: boolean | cdktf.IResolvable;
   public get fifoTopic() {
     return this.getBooleanAttribute('fifo_topic');
   }
-  public set fifoTopic(value: boolean ) {
+  public set fifoTopic(value: boolean | cdktf.IResolvable ) {
     this._fifoTopic = value;
   }
   public resetFifoTopic() {
@@ -551,11 +556,11 @@ export class SnsTopic extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -567,11 +572,11 @@ export class SnsTopic extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

@@ -22,6 +22,11 @@ export interface ServicecatalogTagOptionResourceAssociationConfig extends cdktf.
 */
 export class ServicecatalogTagOptionResourceAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_servicecatalog_tag_option_resource_association";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,7 +22,7 @@ export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#copy_tags_to_backups FsxLustreFileSystem#copy_tags_to_backups}
   */
-  readonly copyTagsToBackups?: boolean;
+  readonly copyTagsToBackups?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#daily_automatic_backup_start_time FsxLustreFileSystem#daily_automatic_backup_start_time}
   */
@@ -78,11 +78,11 @@ export interface FsxLustreFileSystemConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#tags FsxLustreFileSystem#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#tags_all FsxLustreFileSystem#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#weekly_maintenance_start_time FsxLustreFileSystem#weekly_maintenance_start_time}
   */
@@ -118,6 +118,11 @@ function fsxLustreFileSystemTimeoutsToTerraform(struct?: FsxLustreFileSystemTime
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html aws_fsx_lustre_file_system}
 */
 export class FsxLustreFileSystem extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_fsx_lustre_file_system";
 
   // ===========
   // INITIALIZER
@@ -222,11 +227,11 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   }
 
   // copy_tags_to_backups - computed: false, optional: true, required: false
-  private _copyTagsToBackups?: boolean;
+  private _copyTagsToBackups?: boolean | cdktf.IResolvable;
   public get copyTagsToBackups() {
     return this.getBooleanAttribute('copy_tags_to_backups');
   }
-  public set copyTagsToBackups(value: boolean ) {
+  public set copyTagsToBackups(value: boolean | cdktf.IResolvable ) {
     this._copyTagsToBackups = value;
   }
   public resetCopyTagsToBackups() {
@@ -468,11 +473,11 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -484,11 +489,11 @@ export class FsxLustreFileSystem extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

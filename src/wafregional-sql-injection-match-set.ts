@@ -64,6 +64,11 @@ function wafregionalSqlInjectionMatchSetSqlInjectionMatchTupleToTerraform(struct
 */
 export class WafregionalSqlInjectionMatchSet extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_wafregional_sql_injection_match_set";
+
   // ===========
   // INITIALIZER
   // ===========

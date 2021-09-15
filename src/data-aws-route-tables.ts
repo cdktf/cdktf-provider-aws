@@ -10,7 +10,7 @@ export interface DataAwsRouteTablesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html#tags DataAwsRouteTables#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html#vpc_id DataAwsRouteTables#vpc_id}
   */
@@ -46,6 +46,11 @@ function dataAwsRouteTablesFilterToTerraform(struct?: DataAwsRouteTablesFilter):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/route_tables.html aws_route_tables}
 */
 export class DataAwsRouteTables extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route_tables";
 
   // ===========
   // INITIALIZER
@@ -89,11 +94,11 @@ export class DataAwsRouteTables extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

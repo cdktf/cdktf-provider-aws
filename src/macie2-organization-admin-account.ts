@@ -18,6 +18,11 @@ export interface Macie2OrganizationAdminAccountConfig extends cdktf.TerraformMet
 */
 export class Macie2OrganizationAdminAccount extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_macie2_organization_admin_account";
+
   // ===========
   // INITIALIZER
   // ===========

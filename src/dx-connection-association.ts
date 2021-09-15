@@ -22,6 +22,11 @@ export interface DxConnectionAssociationConfig extends cdktf.TerraformMetaArgume
 */
 export class DxConnectionAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dx_connection_association";
+
   // ===========
   // INITIALIZER
   // ===========

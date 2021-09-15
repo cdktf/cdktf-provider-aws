@@ -30,6 +30,11 @@ export interface DataAwsNeptuneEngineVersionConfig extends cdktf.TerraformMetaAr
 */
 export class DataAwsNeptuneEngineVersion extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_neptune_engine_version";
+
   // ===========
   // INITIALIZER
   // ===========

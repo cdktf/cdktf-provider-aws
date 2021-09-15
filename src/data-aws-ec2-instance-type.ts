@@ -106,6 +106,11 @@ function dataAwsEc2InstanceTypeInstanceDisksToTerraform(struct?: DataAwsEc2Insta
 */
 export class DataAwsEc2InstanceType extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_instance_type";
+
   // ===========
   // INITIALIZER
   // ===========

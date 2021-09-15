@@ -18,6 +18,11 @@ export interface DataAwsWorkspacesImageConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataAwsWorkspacesImage extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_workspaces_image";
+
   // ===========
   // INITIALIZER
   // ===========

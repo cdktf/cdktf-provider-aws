@@ -14,6 +14,11 @@ export interface DataAwsInspectorRulesPackagesConfig extends cdktf.TerraformMeta
 */
 export class DataAwsInspectorRulesPackages extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_inspector_rules_packages";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -55,6 +55,11 @@ function cloudhsmV2HsmTimeoutsToTerraform(struct?: CloudhsmV2HsmTimeouts): any {
 */
 export class CloudhsmV2Hsm extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudhsm_v2_hsm";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,6 +22,11 @@ export interface OrganizationsDelegatedAdministratorConfig extends cdktf.Terrafo
 */
 export class OrganizationsDelegatedAdministrator extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_organizations_delegated_administrator";
+
   // ===========
   // INITIALIZER
   // ===========

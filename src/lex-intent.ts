@@ -10,7 +10,7 @@ export interface LexIntentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#create_version LexIntent#create_version}
   */
-  readonly createVersion?: boolean;
+  readonly createVersion?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lex_intent.html#description LexIntent#description}
   */
@@ -529,6 +529,11 @@ function lexIntentTimeoutsToTerraform(struct?: LexIntentTimeouts): any {
 */
 export class LexIntent extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lex_intent";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -581,11 +586,11 @@ export class LexIntent extends cdktf.TerraformResource {
   }
 
   // create_version - computed: false, optional: true, required: false
-  private _createVersion?: boolean;
+  private _createVersion?: boolean | cdktf.IResolvable;
   public get createVersion() {
     return this.getBooleanAttribute('create_version');
   }
-  public set createVersion(value: boolean ) {
+  public set createVersion(value: boolean | cdktf.IResolvable ) {
     this._createVersion = value;
   }
   public resetCreateVersion() {

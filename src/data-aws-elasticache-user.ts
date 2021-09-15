@@ -18,7 +18,7 @@ export interface DataAwsElasticacheUserConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user.html#no_password_required DataAwsElasticacheUser#no_password_required}
   */
-  readonly noPasswordRequired?: boolean;
+  readonly noPasswordRequired?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user.html#passwords DataAwsElasticacheUser#passwords}
   */
@@ -37,6 +37,11 @@ export interface DataAwsElasticacheUserConfig extends cdktf.TerraformMetaArgumen
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user.html aws_elasticache_user}
 */
 export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elasticache_user";
 
   // ===========
   // INITIALIZER
@@ -110,11 +115,11 @@ export class DataAwsElasticacheUser extends cdktf.TerraformDataSource {
   }
 
   // no_password_required - computed: false, optional: true, required: false
-  private _noPasswordRequired?: boolean;
+  private _noPasswordRequired?: boolean | cdktf.IResolvable;
   public get noPasswordRequired() {
     return this.getBooleanAttribute('no_password_required');
   }
-  public set noPasswordRequired(value: boolean ) {
+  public set noPasswordRequired(value: boolean | cdktf.IResolvable ) {
     this._noPasswordRequired = value;
   }
   public resetNoPasswordRequired() {

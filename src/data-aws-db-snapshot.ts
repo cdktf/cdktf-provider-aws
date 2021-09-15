@@ -18,15 +18,15 @@ export interface DataAwsDbSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot.html#include_public DataAwsDbSnapshot#include_public}
   */
-  readonly includePublic?: boolean;
+  readonly includePublic?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot.html#include_shared DataAwsDbSnapshot#include_shared}
   */
-  readonly includeShared?: boolean;
+  readonly includeShared?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot.html#most_recent DataAwsDbSnapshot#most_recent}
   */
-  readonly mostRecent?: boolean;
+  readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot.html#snapshot_type DataAwsDbSnapshot#snapshot_type}
   */
@@ -37,6 +37,11 @@ export interface DataAwsDbSnapshotConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot.html aws_db_snapshot}
 */
 export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_db_snapshot";
 
   // ===========
   // INITIALIZER
@@ -140,11 +145,11 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
   }
 
   // include_public - computed: false, optional: true, required: false
-  private _includePublic?: boolean;
+  private _includePublic?: boolean | cdktf.IResolvable;
   public get includePublic() {
     return this.getBooleanAttribute('include_public');
   }
-  public set includePublic(value: boolean ) {
+  public set includePublic(value: boolean | cdktf.IResolvable ) {
     this._includePublic = value;
   }
   public resetIncludePublic() {
@@ -156,11 +161,11 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
   }
 
   // include_shared - computed: false, optional: true, required: false
-  private _includeShared?: boolean;
+  private _includeShared?: boolean | cdktf.IResolvable;
   public get includeShared() {
     return this.getBooleanAttribute('include_shared');
   }
-  public set includeShared(value: boolean ) {
+  public set includeShared(value: boolean | cdktf.IResolvable ) {
     this._includeShared = value;
   }
   public resetIncludeShared() {
@@ -187,11 +192,11 @@ export class DataAwsDbSnapshot extends cdktf.TerraformDataSource {
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean;
+  private _mostRecent?: boolean | cdktf.IResolvable;
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent');
   }
-  public set mostRecent(value: boolean ) {
+  public set mostRecent(value: boolean | cdktf.IResolvable ) {
     this._mostRecent = value;
   }
   public resetMostRecent() {

@@ -14,7 +14,7 @@ export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_zone.html#private_zone DataAwsRoute53Zone#private_zone}
   */
-  readonly privateZone?: boolean;
+  readonly privateZone?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_zone.html#resource_record_set_count DataAwsRoute53Zone#resource_record_set_count}
   */
@@ -22,7 +22,7 @@ export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_zone.html#tags DataAwsRoute53Zone#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/route53_zone.html#vpc_id DataAwsRoute53Zone#vpc_id}
   */
@@ -37,6 +37,11 @@ export interface DataAwsRoute53ZoneConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/route53_zone.html aws_route53_zone}
 */
 export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53_zone";
 
   // ===========
   // INITIALIZER
@@ -124,11 +129,11 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   }
 
   // private_zone - computed: false, optional: true, required: false
-  private _privateZone?: boolean;
+  private _privateZone?: boolean | cdktf.IResolvable;
   public get privateZone() {
     return this.getBooleanAttribute('private_zone');
   }
-  public set privateZone(value: boolean ) {
+  public set privateZone(value: boolean | cdktf.IResolvable ) {
     this._privateZone = value;
   }
   public resetPrivateZone() {
@@ -156,11 +161,11 @@ export class DataAwsRoute53Zone extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string }
-  public get tags(): { [key: string]: string } {
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
   }
-  public set tags(value: { [key: string]: string }) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {

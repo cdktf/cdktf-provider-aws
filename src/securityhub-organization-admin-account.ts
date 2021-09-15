@@ -18,6 +18,11 @@ export interface SecurityhubOrganizationAdminAccountConfig extends cdktf.Terrafo
 */
 export class SecurityhubOrganizationAdminAccount extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_organization_admin_account";
+
   // ===========
   // INITIALIZER
   // ===========

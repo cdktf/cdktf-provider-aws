@@ -18,6 +18,11 @@ export interface DataAwsWafRateBasedRuleConfig extends cdktf.TerraformMetaArgume
 */
 export class DataAwsWafRateBasedRule extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_waf_rate_based_rule";
+
   // ===========
   // INITIALIZER
   // ===========

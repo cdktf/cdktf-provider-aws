@@ -38,6 +38,11 @@ export class DataAwsCloudformationTypeLoggingConfig extends cdktf.ComplexCompute
 */
 export class DataAwsCloudformationType extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudformation_type";
+
   // ===========
   // INITIALIZER
   // ===========

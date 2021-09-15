@@ -26,6 +26,11 @@ export interface SecurityhubStandardsControlConfig extends cdktf.TerraformMetaAr
 */
 export class SecurityhubStandardsControl extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_standards_control";
+
   // ===========
   // INITIALIZER
   // ===========

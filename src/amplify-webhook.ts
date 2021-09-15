@@ -26,6 +26,11 @@ export interface AmplifyWebhookConfig extends cdktf.TerraformMetaArguments {
 */
 export class AmplifyWebhook extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_amplify_webhook";
+
   // ===========
   // INITIALIZER
   // ===========

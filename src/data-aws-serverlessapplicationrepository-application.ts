@@ -22,6 +22,11 @@ export interface DataAwsServerlessapplicationrepositoryApplicationConfig extends
 */
 export class DataAwsServerlessapplicationrepositoryApplication extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_serverlessapplicationrepository_application";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -34,6 +34,11 @@ export class DataAwsLexSlotTypeEnumerationValue extends cdktf.ComplexComputedLis
 */
 export class DataAwsLexSlotType extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lex_slot_type";
+
   // ===========
   // INITIALIZER
   // ===========

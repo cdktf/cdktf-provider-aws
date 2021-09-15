@@ -18,7 +18,7 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#disable_api_termination LaunchTemplate#disable_api_termination}
   */
-  readonly disableApiTermination?: boolean;
+  readonly disableApiTermination?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#ebs_optimized LaunchTemplate#ebs_optimized}
   */
@@ -62,15 +62,15 @@ export interface LaunchTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#tags LaunchTemplate#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#tags_all LaunchTemplate#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#update_default_version LaunchTemplate#update_default_version}
   */
-  readonly updateDefaultVersion?: boolean;
+  readonly updateDefaultVersion?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#user_data LaunchTemplate#user_data}
   */
@@ -356,7 +356,7 @@ export interface LaunchTemplateEnclaveOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#enabled LaunchTemplate#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
 }
 
 function launchTemplateEnclaveOptionsToTerraform(struct?: LaunchTemplateEnclaveOptions): any {
@@ -370,7 +370,7 @@ export interface LaunchTemplateHibernationOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#configured LaunchTemplate#configured}
   */
-  readonly configured: boolean;
+  readonly configured: boolean | cdktf.IResolvable;
 }
 
 function launchTemplateHibernationOptionsToTerraform(struct?: LaunchTemplateHibernationOptions): any {
@@ -496,7 +496,7 @@ export interface LaunchTemplateMonitoring {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#enabled LaunchTemplate#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
 }
 
 function launchTemplateMonitoringToTerraform(struct?: LaunchTemplateMonitoring): any {
@@ -642,7 +642,7 @@ export interface LaunchTemplateTagSpecifications {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#tags LaunchTemplate#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function launchTemplateTagSpecificationsToTerraform(struct?: LaunchTemplateTagSpecifications): any {
@@ -658,6 +658,11 @@ function launchTemplateTagSpecificationsToTerraform(struct?: LaunchTemplateTagSp
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html aws_launch_template}
 */
 export class LaunchTemplate extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_launch_template";
 
   // ===========
   // INITIALIZER
@@ -759,11 +764,11 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // disable_api_termination - computed: false, optional: true, required: false
-  private _disableApiTermination?: boolean;
+  private _disableApiTermination?: boolean | cdktf.IResolvable;
   public get disableApiTermination() {
     return this.getBooleanAttribute('disable_api_termination');
   }
-  public set disableApiTermination(value: boolean ) {
+  public set disableApiTermination(value: boolean | cdktf.IResolvable ) {
     this._disableApiTermination = value;
   }
   public resetDisableApiTermination() {
@@ -945,11 +950,11 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -961,11 +966,11 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -977,11 +982,11 @@ export class LaunchTemplate extends cdktf.TerraformResource {
   }
 
   // update_default_version - computed: false, optional: true, required: false
-  private _updateDefaultVersion?: boolean;
+  private _updateDefaultVersion?: boolean | cdktf.IResolvable;
   public get updateDefaultVersion() {
     return this.getBooleanAttribute('update_default_version');
   }
-  public set updateDefaultVersion(value: boolean ) {
+  public set updateDefaultVersion(value: boolean | cdktf.IResolvable ) {
     this._updateDefaultVersion = value;
   }
   public resetUpdateDefaultVersion() {

@@ -50,6 +50,11 @@ export interface AutoscalingScheduleConfig extends cdktf.TerraformMetaArguments 
 */
 export class AutoscalingSchedule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_schedule";
+
   // ===========
   // INITIALIZER
   // ===========

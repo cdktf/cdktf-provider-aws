@@ -55,6 +55,11 @@ function acmpcaCertificateValidityToTerraform(struct?: AcmpcaCertificateValidity
 */
 export class AcmpcaCertificate extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_acmpca_certificate";
+
   // ===========
   // INITIALIZER
   // ===========

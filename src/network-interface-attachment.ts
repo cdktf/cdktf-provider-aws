@@ -26,6 +26,11 @@ export interface NetworkInterfaceAttachmentAConfig extends cdktf.TerraformMetaAr
 */
 export class NetworkInterfaceAttachmentA extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_network_interface_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

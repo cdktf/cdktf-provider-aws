@@ -26,6 +26,11 @@ export interface BackupVaultNotificationsConfig extends cdktf.TerraformMetaArgum
 */
 export class BackupVaultNotifications extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_backup_vault_notifications";
+
   // ===========
   // INITIALIZER
   // ===========

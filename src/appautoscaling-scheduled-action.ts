@@ -71,6 +71,11 @@ function appautoscalingScheduledActionScalableTargetActionToTerraform(struct?: A
 */
 export class AppautoscalingScheduledAction extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appautoscaling_scheduled_action";
+
   // ===========
   // INITIALIZER
   // ===========

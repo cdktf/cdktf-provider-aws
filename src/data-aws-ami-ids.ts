@@ -22,7 +22,7 @@ export interface DataAwsAmiIdsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html#sort_ascending DataAwsAmiIds#sort_ascending}
   */
-  readonly sortAscending?: boolean;
+  readonly sortAscending?: boolean | cdktf.IResolvable;
   /**
   * filter block
   * 
@@ -54,6 +54,11 @@ function dataAwsAmiIdsFilterToTerraform(struct?: DataAwsAmiIdsFilter): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/d/ami_ids.html aws_ami_ids}
 */
 export class DataAwsAmiIds extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ami_ids";
 
   // ===========
   // INITIALIZER
@@ -144,11 +149,11 @@ export class DataAwsAmiIds extends cdktf.TerraformDataSource {
   }
 
   // sort_ascending - computed: false, optional: true, required: false
-  private _sortAscending?: boolean;
+  private _sortAscending?: boolean | cdktf.IResolvable;
   public get sortAscending() {
     return this.getBooleanAttribute('sort_ascending');
   }
-  public set sortAscending(value: boolean ) {
+  public set sortAscending(value: boolean | cdktf.IResolvable ) {
     this._sortAscending = value;
   }
   public resetSortAscending() {

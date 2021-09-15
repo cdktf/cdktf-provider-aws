@@ -10,7 +10,7 @@ export interface RamResourceShareConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ram_resource_share.html#allow_external_principals RamResourceShare#allow_external_principals}
   */
-  readonly allowExternalPrincipals?: boolean;
+  readonly allowExternalPrincipals?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ram_resource_share.html#name RamResourceShare#name}
   */
@@ -18,11 +18,11 @@ export interface RamResourceShareConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ram_resource_share.html#tags RamResourceShare#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ram_resource_share.html#tags_all RamResourceShare#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -54,6 +54,11 @@ function ramResourceShareTimeoutsToTerraform(struct?: RamResourceShareTimeouts):
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ram_resource_share.html aws_ram_resource_share}
 */
 export class RamResourceShare extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ram_resource_share";
 
   // ===========
   // INITIALIZER
@@ -89,11 +94,11 @@ export class RamResourceShare extends cdktf.TerraformResource {
   // ==========
 
   // allow_external_principals - computed: false, optional: true, required: false
-  private _allowExternalPrincipals?: boolean;
+  private _allowExternalPrincipals?: boolean | cdktf.IResolvable;
   public get allowExternalPrincipals() {
     return this.getBooleanAttribute('allow_external_principals');
   }
-  public set allowExternalPrincipals(value: boolean ) {
+  public set allowExternalPrincipals(value: boolean | cdktf.IResolvable ) {
     this._allowExternalPrincipals = value;
   }
   public resetAllowExternalPrincipals() {
@@ -128,11 +133,11 @@ export class RamResourceShare extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -144,11 +149,11 @@ export class RamResourceShare extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

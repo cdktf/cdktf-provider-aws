@@ -22,6 +22,11 @@ export interface ElbAttachmentConfig extends cdktf.TerraformMetaArguments {
 */
 export class ElbAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elb_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

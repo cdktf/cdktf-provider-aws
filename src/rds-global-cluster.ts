@@ -14,7 +14,7 @@ export interface RdsGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html#deletion_protection RdsGlobalCluster#deletion_protection}
   */
-  readonly deletionProtection?: boolean;
+  readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html#engine RdsGlobalCluster#engine}
   */
@@ -26,7 +26,7 @@ export interface RdsGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html#force_destroy RdsGlobalCluster#force_destroy}
   */
-  readonly forceDestroy?: boolean;
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html#global_cluster_identifier RdsGlobalCluster#global_cluster_identifier}
   */
@@ -38,7 +38,7 @@ export interface RdsGlobalClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html#storage_encrypted RdsGlobalCluster#storage_encrypted}
   */
-  readonly storageEncrypted?: boolean;
+  readonly storageEncrypted?: boolean | cdktf.IResolvable;
 }
 export class RdsGlobalClusterGlobalClusterMembers extends cdktf.ComplexComputedList {
 
@@ -57,6 +57,11 @@ export class RdsGlobalClusterGlobalClusterMembers extends cdktf.ComplexComputedL
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_global_cluster.html aws_rds_global_cluster}
 */
 export class RdsGlobalCluster extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_rds_global_cluster";
 
   // ===========
   // INITIALIZER
@@ -116,11 +121,11 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean;
+  private _deletionProtection?: boolean | cdktf.IResolvable;
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean ) {
+  public set deletionProtection(value: boolean | cdktf.IResolvable ) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -164,11 +169,11 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean;
+  private _forceDestroy?: boolean | cdktf.IResolvable;
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean ) {
+  public set forceDestroy(value: boolean | cdktf.IResolvable ) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -224,11 +229,11 @@ export class RdsGlobalCluster extends cdktf.TerraformResource {
   }
 
   // storage_encrypted - computed: true, optional: true, required: false
-  private _storageEncrypted?: boolean;
+  private _storageEncrypted?: boolean | cdktf.IResolvable;
   public get storageEncrypted() {
     return this.getBooleanAttribute('storage_encrypted');
   }
-  public set storageEncrypted(value: boolean) {
+  public set storageEncrypted(value: boolean | cdktf.IResolvable) {
     this._storageEncrypted = value;
   }
   public resetStorageEncrypted() {

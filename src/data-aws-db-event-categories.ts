@@ -18,6 +18,11 @@ export interface DataAwsDbEventCategoriesConfig extends cdktf.TerraformMetaArgum
 */
 export class DataAwsDbEventCategories extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_db_event_categories";
+
   // ===========
   // INITIALIZER
   // ===========

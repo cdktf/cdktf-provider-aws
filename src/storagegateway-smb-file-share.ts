@@ -10,7 +10,7 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#access_based_enumeration StoragegatewaySmbFileShare#access_based_enumeration}
   */
-  readonly accessBasedEnumeration?: boolean;
+  readonly accessBasedEnumeration?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#admin_user_list StoragegatewaySmbFileShare#admin_user_list}
   */
@@ -46,7 +46,7 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#guess_mime_type_enabled StoragegatewaySmbFileShare#guess_mime_type_enabled}
   */
-  readonly guessMimeTypeEnabled?: boolean;
+  readonly guessMimeTypeEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#invalid_user_list StoragegatewaySmbFileShare#invalid_user_list}
   */
@@ -54,7 +54,7 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#kms_encrypted StoragegatewaySmbFileShare#kms_encrypted}
   */
-  readonly kmsEncrypted?: boolean;
+  readonly kmsEncrypted?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#kms_key_arn StoragegatewaySmbFileShare#kms_key_arn}
   */
@@ -74,15 +74,15 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#oplocks_enabled StoragegatewaySmbFileShare#oplocks_enabled}
   */
-  readonly oplocksEnabled?: boolean;
+  readonly oplocksEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#read_only StoragegatewaySmbFileShare#read_only}
   */
-  readonly readOnly?: boolean;
+  readonly readOnly?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#requester_pays StoragegatewaySmbFileShare#requester_pays}
   */
-  readonly requesterPays?: boolean;
+  readonly requesterPays?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#role_arn StoragegatewaySmbFileShare#role_arn}
   */
@@ -90,15 +90,15 @@ export interface StoragegatewaySmbFileShareConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#smb_acl_enabled StoragegatewaySmbFileShare#smb_acl_enabled}
   */
-  readonly smbAclEnabled?: boolean;
+  readonly smbAclEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#tags StoragegatewaySmbFileShare#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#tags_all StoragegatewaySmbFileShare#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share.html#valid_user_list StoragegatewaySmbFileShare#valid_user_list}
   */
@@ -164,6 +164,11 @@ function storagegatewaySmbFileShareTimeoutsToTerraform(struct?: StoragegatewaySm
 */
 export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_storagegateway_smb_file_share";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -220,11 +225,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   // ==========
 
   // access_based_enumeration - computed: false, optional: true, required: false
-  private _accessBasedEnumeration?: boolean;
+  private _accessBasedEnumeration?: boolean | cdktf.IResolvable;
   public get accessBasedEnumeration() {
     return this.getBooleanAttribute('access_based_enumeration');
   }
-  public set accessBasedEnumeration(value: boolean ) {
+  public set accessBasedEnumeration(value: boolean | cdktf.IResolvable ) {
     this._accessBasedEnumeration = value;
   }
   public resetAccessBasedEnumeration() {
@@ -371,11 +376,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // guess_mime_type_enabled - computed: false, optional: true, required: false
-  private _guessMimeTypeEnabled?: boolean;
+  private _guessMimeTypeEnabled?: boolean | cdktf.IResolvable;
   public get guessMimeTypeEnabled() {
     return this.getBooleanAttribute('guess_mime_type_enabled');
   }
-  public set guessMimeTypeEnabled(value: boolean ) {
+  public set guessMimeTypeEnabled(value: boolean | cdktf.IResolvable ) {
     this._guessMimeTypeEnabled = value;
   }
   public resetGuessMimeTypeEnabled() {
@@ -408,11 +413,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // kms_encrypted - computed: false, optional: true, required: false
-  private _kmsEncrypted?: boolean;
+  private _kmsEncrypted?: boolean | cdktf.IResolvable;
   public get kmsEncrypted() {
     return this.getBooleanAttribute('kms_encrypted');
   }
-  public set kmsEncrypted(value: boolean ) {
+  public set kmsEncrypted(value: boolean | cdktf.IResolvable ) {
     this._kmsEncrypted = value;
   }
   public resetKmsEncrypted() {
@@ -485,11 +490,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // oplocks_enabled - computed: true, optional: true, required: false
-  private _oplocksEnabled?: boolean;
+  private _oplocksEnabled?: boolean | cdktf.IResolvable;
   public get oplocksEnabled() {
     return this.getBooleanAttribute('oplocks_enabled');
   }
-  public set oplocksEnabled(value: boolean) {
+  public set oplocksEnabled(value: boolean | cdktf.IResolvable) {
     this._oplocksEnabled = value;
   }
   public resetOplocksEnabled() {
@@ -506,11 +511,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean;
+  private _readOnly?: boolean | cdktf.IResolvable;
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean ) {
+  public set readOnly(value: boolean | cdktf.IResolvable ) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -522,11 +527,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // requester_pays - computed: false, optional: true, required: false
-  private _requesterPays?: boolean;
+  private _requesterPays?: boolean | cdktf.IResolvable;
   public get requesterPays() {
     return this.getBooleanAttribute('requester_pays');
   }
-  public set requesterPays(value: boolean ) {
+  public set requesterPays(value: boolean | cdktf.IResolvable ) {
     this._requesterPays = value;
   }
   public resetRequesterPays() {
@@ -551,11 +556,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // smb_acl_enabled - computed: false, optional: true, required: false
-  private _smbAclEnabled?: boolean;
+  private _smbAclEnabled?: boolean | cdktf.IResolvable;
   public get smbAclEnabled() {
     return this.getBooleanAttribute('smb_acl_enabled');
   }
-  public set smbAclEnabled(value: boolean ) {
+  public set smbAclEnabled(value: boolean | cdktf.IResolvable ) {
     this._smbAclEnabled = value;
   }
   public resetSmbAclEnabled() {
@@ -567,11 +572,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -583,11 +588,11 @@ export class StoragegatewaySmbFileShare extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

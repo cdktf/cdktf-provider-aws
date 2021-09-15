@@ -26,6 +26,11 @@ export interface DbInstanceRoleAssociationConfig extends cdktf.TerraformMetaArgu
 */
 export class DbInstanceRoleAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_db_instance_role_association";
+
   // ===========
   // INITIALIZER
   // ===========

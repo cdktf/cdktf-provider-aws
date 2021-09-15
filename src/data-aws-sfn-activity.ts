@@ -18,6 +18,11 @@ export interface DataAwsSfnActivityConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsSfnActivity extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sfn_activity";
+
   // ===========
   // INITIALIZER
   // ===========

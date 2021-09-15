@@ -30,7 +30,7 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#stream_enabled DynamodbTable#stream_enabled}
   */
-  readonly streamEnabled?: boolean;
+  readonly streamEnabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#stream_view_type DynamodbTable#stream_view_type}
   */
@@ -38,11 +38,11 @@ export interface DynamodbTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#tags DynamodbTable#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#tags_all DynamodbTable#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#write_capacity DynamodbTable#write_capacity}
   */
@@ -192,7 +192,7 @@ export interface DynamodbTablePointInTimeRecovery {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#enabled DynamodbTable#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
 }
 
 function dynamodbTablePointInTimeRecoveryToTerraform(struct?: DynamodbTablePointInTimeRecovery): any {
@@ -225,7 +225,7 @@ export interface DynamodbTableServerSideEncryption {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#enabled DynamodbTable#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#kms_key_arn DynamodbTable#kms_key_arn}
   */
@@ -272,7 +272,7 @@ export interface DynamodbTableTtl {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#enabled DynamodbTable#enabled}
   */
-  readonly enabled?: boolean;
+  readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html#kms_key_arn DynamodbTable#kms_key_arn}
   */
@@ -293,6 +293,11 @@ function dynamodbTableTtlToTerraform(struct?: DynamodbTableTtl): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table.html aws_dynamodb_table}
 */
 export class DynamodbTable extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dynamodb_table";
 
   // ===========
   // INITIALIZER
@@ -430,11 +435,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // stream_enabled - computed: false, optional: true, required: false
-  private _streamEnabled?: boolean;
+  private _streamEnabled?: boolean | cdktf.IResolvable;
   public get streamEnabled() {
     return this.getBooleanAttribute('stream_enabled');
   }
-  public set streamEnabled(value: boolean ) {
+  public set streamEnabled(value: boolean | cdktf.IResolvable ) {
     this._streamEnabled = value;
   }
   public resetStreamEnabled() {
@@ -467,11 +472,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -483,11 +488,11 @@ export class DynamodbTable extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

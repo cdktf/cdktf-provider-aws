@@ -96,6 +96,11 @@ function ec2TrafficMirrorFilterRuleSourcePortRangeToTerraform(struct?: Ec2Traffi
 */
 export class Ec2TrafficMirrorFilterRule extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_traffic_mirror_filter_rule";
+
   // ===========
   // INITIALIZER
   // ===========

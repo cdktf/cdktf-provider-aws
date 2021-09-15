@@ -22,6 +22,11 @@ export interface RamResourceAssociationConfig extends cdktf.TerraformMetaArgumen
 */
 export class RamResourceAssociation extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ram_resource_association";
+
   // ===========
   // INITIALIZER
   // ===========

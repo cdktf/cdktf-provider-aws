@@ -54,6 +54,11 @@ export class DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettin
 */
 export class DataAwsGlueDataCatalogEncryptionSettings extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_glue_data_catalog_encryption_settings";
+
   // ===========
   // INITIALIZER
   // ===========

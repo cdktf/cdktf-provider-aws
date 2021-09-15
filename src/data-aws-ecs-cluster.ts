@@ -30,6 +30,11 @@ export class DataAwsEcsClusterSetting extends cdktf.ComplexComputedList {
 */
 export class DataAwsEcsCluster extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecs_cluster";
+
   // ===========
   // INITIALIZER
   // ===========

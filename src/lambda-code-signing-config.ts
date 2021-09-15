@@ -58,6 +58,11 @@ function lambdaCodeSigningConfigPoliciesToTerraform(struct?: LambdaCodeSigningCo
 */
 export class LambdaCodeSigningConfig extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_code_signing_config";
+
   // ===========
   // INITIALIZER
   // ===========

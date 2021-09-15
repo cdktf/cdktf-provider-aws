@@ -79,6 +79,11 @@ export class DataAwsCloudfrontOriginRequestPolicyQueryStringsConfig extends cdkt
 */
 export class DataAwsCloudfrontOriginRequestPolicy extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_origin_request_policy";
+
   // ===========
   // INITIALIZER
   // ===========

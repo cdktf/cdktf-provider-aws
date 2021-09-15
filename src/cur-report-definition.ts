@@ -26,7 +26,7 @@ export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cur_report_definition.html#refresh_closed_reports CurReportDefinition#refresh_closed_reports}
   */
-  readonly refreshClosedReports?: boolean;
+  readonly refreshClosedReports?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cur_report_definition.html#report_name CurReportDefinition#report_name}
   */
@@ -57,6 +57,11 @@ export interface CurReportDefinitionConfig extends cdktf.TerraformMetaArguments 
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cur_report_definition.html aws_cur_report_definition}
 */
 export class CurReportDefinition extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cur_report_definition";
 
   // ===========
   // INITIALIZER
@@ -163,11 +168,11 @@ export class CurReportDefinition extends cdktf.TerraformResource {
   }
 
   // refresh_closed_reports - computed: false, optional: true, required: false
-  private _refreshClosedReports?: boolean;
+  private _refreshClosedReports?: boolean | cdktf.IResolvable;
   public get refreshClosedReports() {
     return this.getBooleanAttribute('refresh_closed_reports');
   }
-  public set refreshClosedReports(value: boolean ) {
+  public set refreshClosedReports(value: boolean | cdktf.IResolvable ) {
     this._refreshClosedReports = value;
   }
   public resetRefreshClosedReports() {

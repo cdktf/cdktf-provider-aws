@@ -10,7 +10,7 @@ export interface SecretsmanagerSecretPolicyConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_policy.html#block_public_policy SecretsmanagerSecretPolicy#block_public_policy}
   */
-  readonly blockPublicPolicy?: boolean;
+  readonly blockPublicPolicy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_policy.html#policy SecretsmanagerSecretPolicy#policy}
   */
@@ -25,6 +25,11 @@ export interface SecretsmanagerSecretPolicyConfig extends cdktf.TerraformMetaArg
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/secretsmanager_secret_policy.html aws_secretsmanager_secret_policy}
 */
 export class SecretsmanagerSecretPolicy extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_secretsmanager_secret_policy";
 
   // ===========
   // INITIALIZER
@@ -58,11 +63,11 @@ export class SecretsmanagerSecretPolicy extends cdktf.TerraformResource {
   // ==========
 
   // block_public_policy - computed: false, optional: true, required: false
-  private _blockPublicPolicy?: boolean;
+  private _blockPublicPolicy?: boolean | cdktf.IResolvable;
   public get blockPublicPolicy() {
     return this.getBooleanAttribute('block_public_policy');
   }
-  public set blockPublicPolicy(value: boolean ) {
+  public set blockPublicPolicy(value: boolean | cdktf.IResolvable ) {
     this._blockPublicPolicy = value;
   }
   public resetBlockPublicPolicy() {

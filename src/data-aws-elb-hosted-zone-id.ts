@@ -18,6 +18,11 @@ export interface DataAwsElbHostedZoneIdConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataAwsElbHostedZoneId extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_elb_hosted_zone_id";
+
   // ===========
   // INITIALIZER
   // ===========

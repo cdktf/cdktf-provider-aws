@@ -22,6 +22,11 @@ export interface SagemakerImageVersionConfig extends cdktf.TerraformMetaArgument
 */
 export class SagemakerImageVersion extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sagemaker_image_version";
+
   // ===========
   // INITIALIZER
   // ===========

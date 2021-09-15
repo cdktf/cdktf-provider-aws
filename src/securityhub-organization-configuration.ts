@@ -10,13 +10,18 @@ export interface SecurityhubOrganizationConfigurationConfig extends cdktf.Terraf
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_configuration.html#auto_enable SecurityhubOrganizationConfiguration#auto_enable}
   */
-  readonly autoEnable: boolean;
+  readonly autoEnable: boolean | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_configuration.html aws_securityhub_organization_configuration}
 */
 export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_securityhub_organization_configuration";
 
   // ===========
   // INITIALIZER
@@ -48,11 +53,11 @@ export class SecurityhubOrganizationConfiguration extends cdktf.TerraformResourc
   // ==========
 
   // auto_enable - computed: false, optional: false, required: true
-  private _autoEnable: boolean;
+  private _autoEnable: boolean | cdktf.IResolvable;
   public get autoEnable() {
     return this.getBooleanAttribute('auto_enable');
   }
-  public set autoEnable(value: boolean) {
+  public set autoEnable(value: boolean | cdktf.IResolvable) {
     this._autoEnable = value;
   }
   // Temporarily expose input value. Use with caution.

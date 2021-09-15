@@ -46,6 +46,11 @@ export interface QuicksightUserConfig extends cdktf.TerraformMetaArguments {
 */
 export class QuicksightUser extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_quicksight_user";
+
   // ===========
   // INITIALIZER
   // ===========

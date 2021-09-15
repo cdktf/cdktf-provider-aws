@@ -30,6 +30,11 @@ export interface IamUserSshKeyConfig extends cdktf.TerraformMetaArguments {
 */
 export class IamUserSshKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_user_ssh_key";
+
   // ===========
   // INITIALIZER
   // ===========

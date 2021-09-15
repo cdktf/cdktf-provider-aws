@@ -39,6 +39,11 @@ function dataAwsAutoscalingGroupsFilterToTerraform(struct?: DataAwsAutoscalingGr
 */
 export class DataAwsAutoscalingGroups extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscaling_groups";
+
   // ===========
   // INITIALIZER
   // ===========

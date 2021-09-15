@@ -30,6 +30,11 @@ export interface DataAwsSagemakerPrebuiltEcrImageConfig extends cdktf.TerraformM
 */
 export class DataAwsSagemakerPrebuiltEcrImage extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sagemaker_prebuilt_ecr_image";
+
   // ===========
   // INITIALIZER
   // ===========

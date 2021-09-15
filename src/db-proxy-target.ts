@@ -30,6 +30,11 @@ export interface DbProxyTargetConfig extends cdktf.TerraformMetaArguments {
 */
 export class DbProxyTarget extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_db_proxy_target";
+
   // ===========
   // INITIALIZER
   // ===========

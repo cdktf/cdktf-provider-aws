@@ -44,7 +44,7 @@ export interface S3ControlBucketLifecycleConfigurationRuleExpiration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket_lifecycle_configuration.html#expired_object_delete_marker S3ControlBucketLifecycleConfiguration#expired_object_delete_marker}
   */
-  readonly expiredObjectDeleteMarker?: boolean;
+  readonly expiredObjectDeleteMarker?: boolean | cdktf.IResolvable;
 }
 
 function s3ControlBucketLifecycleConfigurationRuleExpirationToTerraform(struct?: S3ControlBucketLifecycleConfigurationRuleExpiration): any {
@@ -64,7 +64,7 @@ export interface S3ControlBucketLifecycleConfigurationRuleFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket_lifecycle_configuration.html#tags S3ControlBucketLifecycleConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function s3ControlBucketLifecycleConfigurationRuleFilterToTerraform(struct?: S3ControlBucketLifecycleConfigurationRuleFilter): any {
@@ -120,6 +120,11 @@ function s3ControlBucketLifecycleConfigurationRuleToTerraform(struct?: S3Control
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_bucket_lifecycle_configuration.html aws_s3control_bucket_lifecycle_configuration}
 */
 export class S3ControlBucketLifecycleConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3control_bucket_lifecycle_configuration";
 
   // ===========
   // INITIALIZER

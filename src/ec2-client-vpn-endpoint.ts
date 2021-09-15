@@ -26,15 +26,15 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#split_tunnel Ec2ClientVpnEndpoint#split_tunnel}
   */
-  readonly splitTunnel?: boolean;
+  readonly splitTunnel?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#tags Ec2ClientVpnEndpoint#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#tags_all Ec2ClientVpnEndpoint#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#transport_protocol Ec2ClientVpnEndpoint#transport_protocol}
   */
@@ -93,7 +93,7 @@ export interface Ec2ClientVpnEndpointConnectionLogOptions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#enabled Ec2ClientVpnEndpoint#enabled}
   */
-  readonly enabled: boolean;
+  readonly enabled: boolean | cdktf.IResolvable;
 }
 
 function ec2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: Ec2ClientVpnEndpointConnectionLogOptions): any {
@@ -110,6 +110,11 @@ function ec2ClientVpnEndpointConnectionLogOptionsToTerraform(struct?: Ec2ClientV
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html aws_ec2_client_vpn_endpoint}
 */
 export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_client_vpn_endpoint";
 
   // ===========
   // INITIALIZER
@@ -223,11 +228,11 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // split_tunnel - computed: false, optional: true, required: false
-  private _splitTunnel?: boolean;
+  private _splitTunnel?: boolean | cdktf.IResolvable;
   public get splitTunnel() {
     return this.getBooleanAttribute('split_tunnel');
   }
-  public set splitTunnel(value: boolean ) {
+  public set splitTunnel(value: boolean | cdktf.IResolvable ) {
     this._splitTunnel = value;
   }
   public resetSplitTunnel() {
@@ -244,11 +249,11 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -260,11 +265,11 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {

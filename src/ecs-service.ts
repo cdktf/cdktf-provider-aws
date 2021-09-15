@@ -26,15 +26,15 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#enable_ecs_managed_tags EcsService#enable_ecs_managed_tags}
   */
-  readonly enableEcsManagedTags?: boolean;
+  readonly enableEcsManagedTags?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#enable_execute_command EcsService#enable_execute_command}
   */
-  readonly enableExecuteCommand?: boolean;
+  readonly enableExecuteCommand?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#force_new_deployment EcsService#force_new_deployment}
   */
-  readonly forceNewDeployment?: boolean;
+  readonly forceNewDeployment?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#health_check_grace_period_seconds EcsService#health_check_grace_period_seconds}
   */
@@ -66,11 +66,11 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#tags EcsService#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#tags_all EcsService#tags_all}
   */
-  readonly tagsAll?: { [key: string]: string };
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#task_definition EcsService#task_definition}
   */
@@ -78,7 +78,7 @@ export interface EcsServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#wait_for_steady_state EcsService#wait_for_steady_state}
   */
-  readonly waitForSteadyState?: boolean;
+  readonly waitForSteadyState?: boolean | cdktf.IResolvable;
   /**
   * capacity_provider_strategy block
   * 
@@ -162,11 +162,11 @@ export interface EcsServiceDeploymentCircuitBreaker {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#enable EcsService#enable}
   */
-  readonly enable: boolean;
+  readonly enable: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#rollback EcsService#rollback}
   */
-  readonly rollback: boolean;
+  readonly rollback: boolean | cdktf.IResolvable;
 }
 
 function ecsServiceDeploymentCircuitBreakerToTerraform(struct?: EcsServiceDeploymentCircuitBreaker): any {
@@ -224,7 +224,7 @@ export interface EcsServiceNetworkConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#assign_public_ip EcsService#assign_public_ip}
   */
-  readonly assignPublicIp?: boolean;
+  readonly assignPublicIp?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html#security_groups EcsService#security_groups}
   */
@@ -330,6 +330,11 @@ function ecsServiceTimeoutsToTerraform(struct?: EcsServiceTimeouts): any {
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_service.html aws_ecs_service}
 */
 export class EcsService extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ecs_service";
 
   // ===========
   // INITIALIZER
@@ -451,11 +456,11 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // enable_ecs_managed_tags - computed: false, optional: true, required: false
-  private _enableEcsManagedTags?: boolean;
+  private _enableEcsManagedTags?: boolean | cdktf.IResolvable;
   public get enableEcsManagedTags() {
     return this.getBooleanAttribute('enable_ecs_managed_tags');
   }
-  public set enableEcsManagedTags(value: boolean ) {
+  public set enableEcsManagedTags(value: boolean | cdktf.IResolvable ) {
     this._enableEcsManagedTags = value;
   }
   public resetEnableEcsManagedTags() {
@@ -467,11 +472,11 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // enable_execute_command - computed: false, optional: true, required: false
-  private _enableExecuteCommand?: boolean;
+  private _enableExecuteCommand?: boolean | cdktf.IResolvable;
   public get enableExecuteCommand() {
     return this.getBooleanAttribute('enable_execute_command');
   }
-  public set enableExecuteCommand(value: boolean ) {
+  public set enableExecuteCommand(value: boolean | cdktf.IResolvable ) {
     this._enableExecuteCommand = value;
   }
   public resetEnableExecuteCommand() {
@@ -483,11 +488,11 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // force_new_deployment - computed: false, optional: true, required: false
-  private _forceNewDeployment?: boolean;
+  private _forceNewDeployment?: boolean | cdktf.IResolvable;
   public get forceNewDeployment() {
     return this.getBooleanAttribute('force_new_deployment');
   }
-  public set forceNewDeployment(value: boolean ) {
+  public set forceNewDeployment(value: boolean | cdktf.IResolvable ) {
     this._forceNewDeployment = value;
   }
   public resetForceNewDeployment() {
@@ -613,11 +618,11 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string };
+  private _tags?: { [key: string]: string } | cdktf.IResolvable;
   public get tags() {
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } ) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._tags = value;
   }
   public resetTags() {
@@ -629,11 +634,11 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // tags_all - computed: true, optional: true, required: false
-  private _tagsAll?: { [key: string]: string }
-  public get tagsAll(): { [key: string]: string } {
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable
+  public get tagsAll(): { [key: string]: string } | cdktf.IResolvable {
     return this.interpolationForAttribute('tags_all') as any; // Getting the computed value is not yet implemented
   }
-  public set tagsAll(value: { [key: string]: string }) {
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tagsAll = value;
   }
   public resetTagsAll() {
@@ -661,11 +666,11 @@ export class EcsService extends cdktf.TerraformResource {
   }
 
   // wait_for_steady_state - computed: false, optional: true, required: false
-  private _waitForSteadyState?: boolean;
+  private _waitForSteadyState?: boolean | cdktf.IResolvable;
   public get waitForSteadyState() {
     return this.getBooleanAttribute('wait_for_steady_state');
   }
-  public set waitForSteadyState(value: boolean ) {
+  public set waitForSteadyState(value: boolean | cdktf.IResolvable ) {
     this._waitForSteadyState = value;
   }
   public resetWaitForSteadyState() {

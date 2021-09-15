@@ -18,6 +18,11 @@ export interface SesEmailIdentityConfig extends cdktf.TerraformMetaArguments {
 */
 export class SesEmailIdentity extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ses_email_identity";
+
   // ===========
   // INITIALIZER
   // ===========

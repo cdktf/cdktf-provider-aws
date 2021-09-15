@@ -26,6 +26,11 @@ export interface IotRoleAliasConfig extends cdktf.TerraformMetaArguments {
 */
 export class IotRoleAlias extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iot_role_alias";
+
   // ===========
   // INITIALIZER
   // ===========

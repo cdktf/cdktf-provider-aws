@@ -14,6 +14,11 @@ export interface DataAwsSsoadminInstancesConfig extends cdktf.TerraformMetaArgum
 */
 export class DataAwsSsoadminInstances extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ssoadmin_instances";
+
   // ===========
   // INITIALIZER
   // ===========

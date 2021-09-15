@@ -22,6 +22,11 @@ export interface IotPolicyAttachmentConfig extends cdktf.TerraformMetaArguments 
 */
 export class IotPolicyAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iot_policy_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -26,6 +26,11 @@ export interface CloudwatchQueryDefinitionConfig extends cdktf.TerraformMetaArgu
 */
 export class CloudwatchQueryDefinition extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_query_definition";
+
   // ===========
   // INITIALIZER
   // ===========

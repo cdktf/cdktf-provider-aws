@@ -22,6 +22,11 @@ export interface DynamodbKinesisStreamingDestinationConfig extends cdktf.Terrafo
 */
 export class DynamodbKinesisStreamingDestination extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_dynamodb_kinesis_streaming_destination";
+
   // ===========
   // INITIALIZER
   // ===========

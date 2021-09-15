@@ -64,7 +64,7 @@ export interface AppsyncDatasourceDynamodbConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html#use_caller_credentials AppsyncDatasource#use_caller_credentials}
   */
-  readonly useCallerCredentials?: boolean;
+  readonly useCallerCredentials?: boolean | cdktf.IResolvable;
 }
 
 function appsyncDatasourceDynamodbConfigToTerraform(struct?: AppsyncDatasourceDynamodbConfig): any {
@@ -128,6 +128,11 @@ function appsyncDatasourceLambdaConfigToTerraform(struct?: AppsyncDatasourceLamb
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource.html aws_appsync_datasource}
 */
 export class AppsyncDatasource extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_appsync_datasource";
 
   // ===========
   // INITIALIZER

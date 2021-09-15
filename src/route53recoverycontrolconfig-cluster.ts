@@ -30,6 +30,11 @@ export class Route53RecoverycontrolconfigClusterClusterEndpoints extends cdktf.C
 */
 export class Route53RecoverycontrolconfigCluster extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route53recoverycontrolconfig_cluster";
+
   // ===========
   // INITIALIZER
   // ===========

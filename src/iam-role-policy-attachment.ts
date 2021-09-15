@@ -22,6 +22,11 @@ export interface IamRolePolicyAttachmentConfig extends cdktf.TerraformMetaArgume
 */
 export class IamRolePolicyAttachment extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_iam_role_policy_attachment";
+
   // ===========
   // INITIALIZER
   // ===========

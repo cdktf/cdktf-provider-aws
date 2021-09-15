@@ -22,6 +22,11 @@ export interface DataAwsLambdaAliasConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsLambdaAlias extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_lambda_alias";
+
   // ===========
   // INITIALIZER
   // ===========

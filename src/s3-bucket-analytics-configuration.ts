@@ -36,7 +36,7 @@ export interface S3BucketAnalyticsConfigurationFilter {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html#tags S3BucketAnalyticsConfiguration#tags}
   */
-  readonly tags?: { [key: string]: string };
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 function s3BucketAnalyticsConfigurationFilterToTerraform(struct?: S3BucketAnalyticsConfigurationFilter): any {
@@ -134,6 +134,11 @@ function s3BucketAnalyticsConfigurationStorageClassAnalysisToTerraform(struct?: 
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration.html aws_s3_bucket_analytics_configuration}
 */
 export class S3BucketAnalyticsConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_s3_bucket_analytics_configuration";
 
   // ===========
   // INITIALIZER

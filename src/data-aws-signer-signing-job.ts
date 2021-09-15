@@ -78,6 +78,11 @@ export class DataAwsSignerSigningJobSource extends cdktf.ComplexComputedList {
 */
 export class DataAwsSignerSigningJob extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_signer_signing_job";
+
   // ===========
   // INITIALIZER
   // ===========

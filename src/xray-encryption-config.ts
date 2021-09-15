@@ -22,6 +22,11 @@ export interface XrayEncryptionConfigConfig extends cdktf.TerraformMetaArguments
 */
 export class XrayEncryptionConfig extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_xray_encryption_config";
+
   // ===========
   // INITIALIZER
   // ===========

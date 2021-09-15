@@ -26,6 +26,11 @@ export interface AcmpcaCertificateAuthorityCertificateConfig extends cdktf.Terra
 */
 export class AcmpcaCertificateAuthorityCertificate extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_acmpca_certificate_authority_certificate";
+
   // ===========
   // INITIALIZER
   // ===========

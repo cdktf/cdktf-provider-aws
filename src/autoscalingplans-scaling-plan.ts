@@ -68,7 +68,7 @@ export interface AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html#dimensions AutoscalingplansScalingPlan#dimensions}
   */
-  readonly dimensions?: { [key: string]: string };
+  readonly dimensions?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html#metric_name AutoscalingplansScalingPlan#metric_name}
   */
@@ -121,7 +121,7 @@ export interface AutoscalingplansScalingPlanScalingInstructionTargetTrackingConf
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html#dimensions AutoscalingplansScalingPlan#dimensions}
   */
-  readonly dimensions?: { [key: string]: string };
+  readonly dimensions?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html#metric_name AutoscalingplansScalingPlan#metric_name}
   */
@@ -174,7 +174,7 @@ export interface AutoscalingplansScalingPlanScalingInstructionTargetTrackingConf
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html#disable_scale_in AutoscalingplansScalingPlan#disable_scale_in}
   */
-  readonly disableScaleIn?: boolean;
+  readonly disableScaleIn?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html#estimated_instance_warmup AutoscalingplansScalingPlan#estimated_instance_warmup}
   */
@@ -222,7 +222,7 @@ export interface AutoscalingplansScalingPlanScalingInstruction {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html#disable_dynamic_scaling AutoscalingplansScalingPlan#disable_dynamic_scaling}
   */
-  readonly disableDynamicScaling?: boolean;
+  readonly disableDynamicScaling?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html#max_capacity AutoscalingplansScalingPlan#max_capacity}
   */
@@ -308,6 +308,11 @@ function autoscalingplansScalingPlanScalingInstructionToTerraform(struct?: Autos
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscalingplans_scaling_plan.html aws_autoscalingplans_scaling_plan}
 */
 export class AutoscalingplansScalingPlan extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_autoscalingplans_scaling_plan";
 
   // ===========
   // INITIALIZER

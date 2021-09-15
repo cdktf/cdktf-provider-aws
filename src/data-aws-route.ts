@@ -66,6 +66,11 @@ export interface DataAwsRouteConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataAwsRoute extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_route";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -47,6 +47,11 @@ function dataAwsEc2SpotPriceFilterToTerraform(struct?: DataAwsEc2SpotPriceFilter
 */
 export class DataAwsEc2SpotPrice extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_ec2_spot_price";
+
   // ===========
   // INITIALIZER
   // ===========

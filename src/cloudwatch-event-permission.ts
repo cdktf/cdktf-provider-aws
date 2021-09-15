@@ -60,6 +60,11 @@ function cloudwatchEventPermissionConditionToTerraform(struct?: CloudwatchEventP
 */
 export class CloudwatchEventPermission extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudwatch_event_permission";
+
   // ===========
   // INITIALIZER
   // ===========

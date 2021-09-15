@@ -118,6 +118,11 @@ function sagemakerWorkforceSourceIpConfigToTerraform(struct?: SagemakerWorkforce
 */
 export class SagemakerWorkforce extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_sagemaker_workforce";
+
   // ===========
   // INITIALIZER
   // ===========

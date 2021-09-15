@@ -22,6 +22,11 @@ export interface ProxyProtocolPolicyConfig extends cdktf.TerraformMetaArguments 
 */
 export class ProxyProtocolPolicy extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_proxy_protocol_policy";
+
   // ===========
   // INITIALIZER
   // ===========
