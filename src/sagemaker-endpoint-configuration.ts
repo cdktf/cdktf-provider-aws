@@ -24,6 +24,12 @@ export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMet
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
+  * async_inference_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#async_inference_config SagemakerEndpointConfiguration#async_inference_config}
+  */
+  readonly asyncInferenceConfig?: SagemakerEndpointConfigurationAsyncInferenceConfig[];
+  /**
   * data_capture_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#data_capture_config SagemakerEndpointConfiguration#data_capture_config}
@@ -36,6 +42,88 @@ export interface SagemakerEndpointConfigurationConfig extends cdktf.TerraformMet
   */
   readonly productionVariants: SagemakerEndpointConfigurationProductionVariants[];
 }
+export interface SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#max_concurrent_invocations_per_instance SagemakerEndpointConfiguration#max_concurrent_invocations_per_instance}
+  */
+  readonly maxConcurrentInvocationsPerInstance?: number;
+}
+
+function sagemakerEndpointConfigurationAsyncInferenceConfigClientConfigToTerraform(struct?: SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    max_concurrent_invocations_per_instance: cdktf.numberToTerraform(struct!.maxConcurrentInvocationsPerInstance),
+  }
+}
+
+export interface SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#error_topic SagemakerEndpointConfiguration#error_topic}
+  */
+  readonly errorTopic?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#success_topic SagemakerEndpointConfiguration#success_topic}
+  */
+  readonly successTopic?: string;
+}
+
+function sagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigToTerraform(struct?: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    error_topic: cdktf.stringToTerraform(struct!.errorTopic),
+    success_topic: cdktf.stringToTerraform(struct!.successTopic),
+  }
+}
+
+export interface SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#kms_key_id SagemakerEndpointConfiguration#kms_key_id}
+  */
+  readonly kmsKeyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#s3_output_path SagemakerEndpointConfiguration#s3_output_path}
+  */
+  readonly s3OutputPath: string;
+  /**
+  * notification_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#notification_config SagemakerEndpointConfiguration#notification_config}
+  */
+  readonly notificationConfig?: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig[];
+}
+
+function sagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigToTerraform(struct?: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    kms_key_id: cdktf.stringToTerraform(struct!.kmsKeyId),
+    s3_output_path: cdktf.stringToTerraform(struct!.s3OutputPath),
+    notification_config: cdktf.listMapper(sagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigToTerraform)(struct!.notificationConfig),
+  }
+}
+
+export interface SagemakerEndpointConfigurationAsyncInferenceConfig {
+  /**
+  * client_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#client_config SagemakerEndpointConfiguration#client_config}
+  */
+  readonly clientConfig?: SagemakerEndpointConfigurationAsyncInferenceConfigClientConfig[];
+  /**
+  * output_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#output_config SagemakerEndpointConfiguration#output_config}
+  */
+  readonly outputConfig: SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfig[];
+}
+
+function sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform(struct?: SagemakerEndpointConfigurationAsyncInferenceConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    client_config: cdktf.listMapper(sagemakerEndpointConfigurationAsyncInferenceConfigClientConfigToTerraform)(struct!.clientConfig),
+    output_config: cdktf.listMapper(sagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigToTerraform)(struct!.outputConfig),
+  }
+}
+
 export interface SagemakerEndpointConfigurationDataCaptureConfigCaptureContentTypeHeader {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_endpoint_configuration.html#csv_content_types SagemakerEndpointConfiguration#csv_content_types}
@@ -188,6 +276,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     this._name = config.name;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._asyncInferenceConfig = config.asyncInferenceConfig;
     this._dataCaptureConfig = config.dataCaptureConfig;
     this._productionVariants = config.productionVariants;
   }
@@ -270,6 +359,22 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
     return this._tagsAll
   }
 
+  // async_inference_config - computed: false, optional: true, required: false
+  private _asyncInferenceConfig?: SagemakerEndpointConfigurationAsyncInferenceConfig[];
+  public get asyncInferenceConfig() {
+    return this.interpolationForAttribute('async_inference_config') as any;
+  }
+  public set asyncInferenceConfig(value: SagemakerEndpointConfigurationAsyncInferenceConfig[] ) {
+    this._asyncInferenceConfig = value;
+  }
+  public resetAsyncInferenceConfig() {
+    this._asyncInferenceConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get asyncInferenceConfigInput() {
+    return this._asyncInferenceConfig
+  }
+
   // data_capture_config - computed: false, optional: true, required: false
   private _dataCaptureConfig?: SagemakerEndpointConfigurationDataCaptureConfig[];
   public get dataCaptureConfig() {
@@ -309,6 +414,7 @@ export class SagemakerEndpointConfiguration extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      async_inference_config: cdktf.listMapper(sagemakerEndpointConfigurationAsyncInferenceConfigToTerraform)(this._asyncInferenceConfig),
       data_capture_config: cdktf.listMapper(sagemakerEndpointConfigurationDataCaptureConfigToTerraform)(this._dataCaptureConfig),
       production_variants: cdktf.listMapper(sagemakerEndpointConfigurationProductionVariantsToTerraform)(this._productionVariants),
     };

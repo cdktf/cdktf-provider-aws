@@ -12,6 +12,10 @@ export interface TransferServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly certificate?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server.html#directory_id TransferServer#directory_id}
+  */
+  readonly directoryId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server.html#domain TransferServer#domain}
   */
   readonly domain?: string;
@@ -134,6 +138,7 @@ export class TransferServer extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._certificate = config.certificate;
+    this._directoryId = config.directoryId;
     this._domain = config.domain;
     this._endpointType = config.endpointType;
     this._forceDestroy = config.forceDestroy;
@@ -172,6 +177,22 @@ export class TransferServer extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get certificateInput() {
     return this._certificate
+  }
+
+  // directory_id - computed: false, optional: true, required: false
+  private _directoryId?: string;
+  public get directoryId() {
+    return this.getStringAttribute('directory_id');
+  }
+  public set directoryId(value: string ) {
+    this._directoryId = value;
+  }
+  public resetDirectoryId() {
+    this._directoryId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryIdInput() {
+    return this._directoryId
   }
 
   // domain - computed: false, optional: true, required: false
@@ -404,6 +425,7 @@ export class TransferServer extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       certificate: cdktf.stringToTerraform(this._certificate),
+      directory_id: cdktf.stringToTerraform(this._directoryId),
       domain: cdktf.stringToTerraform(this._domain),
       endpoint_type: cdktf.stringToTerraform(this._endpointType),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
