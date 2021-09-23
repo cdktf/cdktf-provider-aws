@@ -474,6 +474,10 @@ export interface LaunchTemplateMetadataOptions {
   */
   readonly httpEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#http_protocol_ipv6 LaunchTemplate#http_protocol_ipv6}
+  */
+  readonly httpProtocolIpv6?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/launch_template.html#http_put_response_hop_limit LaunchTemplate#http_put_response_hop_limit}
   */
   readonly httpPutResponseHopLimit?: number;
@@ -487,6 +491,7 @@ function launchTemplateMetadataOptionsToTerraform(struct?: LaunchTemplateMetadat
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     http_endpoint: cdktf.stringToTerraform(struct!.httpEndpoint),
+    http_protocol_ipv6: cdktf.stringToTerraform(struct!.httpProtocolIpv6),
     http_put_response_hop_limit: cdktf.numberToTerraform(struct!.httpPutResponseHopLimit),
     http_tokens: cdktf.stringToTerraform(struct!.httpTokens),
   }

@@ -71,13 +71,18 @@ export interface EfsFileSystemLifecyclePolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system.html#transition_to_ia EfsFileSystem#transition_to_ia}
   */
-  readonly transitionToIa: string;
+  readonly transitionToIa?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system.html#transition_to_primary_storage_class EfsFileSystem#transition_to_primary_storage_class}
+  */
+  readonly transitionToPrimaryStorageClass?: string;
 }
 
 function efsFileSystemLifecyclePolicyToTerraform(struct?: EfsFileSystemLifecyclePolicy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     transition_to_ia: cdktf.stringToTerraform(struct!.transitionToIa),
+    transition_to_primary_storage_class: cdktf.stringToTerraform(struct!.transitionToPrimaryStorageClass),
   }
 }
 

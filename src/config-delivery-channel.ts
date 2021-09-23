@@ -20,6 +20,10 @@ export interface ConfigDeliveryChannelConfig extends cdktf.TerraformMetaArgument
   */
   readonly s3KeyPrefix?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_delivery_channel.html#s3_kms_key_arn ConfigDeliveryChannel#s3_kms_key_arn}
+  */
+  readonly s3KmsKeyArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_delivery_channel.html#sns_topic_arn ConfigDeliveryChannel#sns_topic_arn}
   */
   readonly snsTopicArn?: string;
@@ -80,6 +84,7 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
     this._name = config.name;
     this._s3BucketName = config.s3BucketName;
     this._s3KeyPrefix = config.s3KeyPrefix;
+    this._s3KmsKeyArn = config.s3KmsKeyArn;
     this._snsTopicArn = config.snsTopicArn;
     this._snapshotDeliveryProperties = config.snapshotDeliveryProperties;
   }
@@ -138,6 +143,22 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
     return this._s3KeyPrefix
   }
 
+  // s3_kms_key_arn - computed: false, optional: true, required: false
+  private _s3KmsKeyArn?: string;
+  public get s3KmsKeyArn() {
+    return this.getStringAttribute('s3_kms_key_arn');
+  }
+  public set s3KmsKeyArn(value: string ) {
+    this._s3KmsKeyArn = value;
+  }
+  public resetS3KmsKeyArn() {
+    this._s3KmsKeyArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3KmsKeyArnInput() {
+    return this._s3KmsKeyArn
+  }
+
   // sns_topic_arn - computed: false, optional: true, required: false
   private _snsTopicArn?: string;
   public get snsTopicArn() {
@@ -179,6 +200,7 @@ export class ConfigDeliveryChannel extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       s3_bucket_name: cdktf.stringToTerraform(this._s3BucketName),
       s3_key_prefix: cdktf.stringToTerraform(this._s3KeyPrefix),
+      s3_kms_key_arn: cdktf.stringToTerraform(this._s3KmsKeyArn),
       sns_topic_arn: cdktf.stringToTerraform(this._snsTopicArn),
       snapshot_delivery_properties: cdktf.listMapper(configDeliveryChannelSnapshotDeliveryPropertiesToTerraform)(this._snapshotDeliveryProperties),
     };

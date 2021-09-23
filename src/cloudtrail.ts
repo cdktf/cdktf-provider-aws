@@ -64,6 +64,12 @@ export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
   /**
+  * advanced_event_selector block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#advanced_event_selector Cloudtrail#advanced_event_selector}
+  */
+  readonly advancedEventSelector?: CloudtrailAdvancedEventSelector[];
+  /**
   * event_selector block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#event_selector Cloudtrail#event_selector}
@@ -76,6 +82,71 @@ export interface CloudtrailConfig extends cdktf.TerraformMetaArguments {
   */
   readonly insightSelector?: CloudtrailInsightSelector[];
 }
+export interface CloudtrailAdvancedEventSelectorFieldSelector {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#ends_with Cloudtrail#ends_with}
+  */
+  readonly endsWith?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#equals Cloudtrail#equals}
+  */
+  readonly equalTo?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#field Cloudtrail#field}
+  */
+  readonly field: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#not_ends_with Cloudtrail#not_ends_with}
+  */
+  readonly notEndsWith?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#not_equals Cloudtrail#not_equals}
+  */
+  readonly notEquals?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#not_starts_with Cloudtrail#not_starts_with}
+  */
+  readonly notStartsWith?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#starts_with Cloudtrail#starts_with}
+  */
+  readonly startsWith?: string[];
+}
+
+function cloudtrailAdvancedEventSelectorFieldSelectorToTerraform(struct?: CloudtrailAdvancedEventSelectorFieldSelector): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    ends_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.endsWith),
+    equals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.equalTo),
+    field: cdktf.stringToTerraform(struct!.field),
+    not_ends_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notEndsWith),
+    not_equals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notEquals),
+    not_starts_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notStartsWith),
+    starts_with: cdktf.listMapper(cdktf.stringToTerraform)(struct!.startsWith),
+  }
+}
+
+export interface CloudtrailAdvancedEventSelector {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#name Cloudtrail#name}
+  */
+  readonly name?: string;
+  /**
+  * field_selector block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#field_selector Cloudtrail#field_selector}
+  */
+  readonly fieldSelector: CloudtrailAdvancedEventSelectorFieldSelector[];
+}
+
+function cloudtrailAdvancedEventSelectorToTerraform(struct?: CloudtrailAdvancedEventSelector): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    field_selector: cdktf.listMapper(cloudtrailAdvancedEventSelectorFieldSelectorToTerraform)(struct!.fieldSelector),
+  }
+}
+
 export interface CloudtrailEventSelectorDataResource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#type Cloudtrail#type}
@@ -182,6 +253,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
     this._snsTopicName = config.snsTopicName;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._advancedEventSelector = config.advancedEventSelector;
     this._eventSelector = config.eventSelector;
     this._insightSelector = config.insightSelector;
   }
@@ -423,6 +495,22 @@ export class Cloudtrail extends cdktf.TerraformResource {
     return this._tagsAll
   }
 
+  // advanced_event_selector - computed: false, optional: true, required: false
+  private _advancedEventSelector?: CloudtrailAdvancedEventSelector[];
+  public get advancedEventSelector() {
+    return this.interpolationForAttribute('advanced_event_selector') as any;
+  }
+  public set advancedEventSelector(value: CloudtrailAdvancedEventSelector[] ) {
+    this._advancedEventSelector = value;
+  }
+  public resetAdvancedEventSelector() {
+    this._advancedEventSelector = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedEventSelectorInput() {
+    return this._advancedEventSelector
+  }
+
   // event_selector - computed: false, optional: true, required: false
   private _eventSelector?: CloudtrailEventSelector[];
   public get eventSelector() {
@@ -475,6 +563,7 @@ export class Cloudtrail extends cdktf.TerraformResource {
       sns_topic_name: cdktf.stringToTerraform(this._snsTopicName),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      advanced_event_selector: cdktf.listMapper(cloudtrailAdvancedEventSelectorToTerraform)(this._advancedEventSelector),
       event_selector: cdktf.listMapper(cloudtrailEventSelectorToTerraform)(this._eventSelector),
       insight_selector: cdktf.listMapper(cloudtrailInsightSelectorToTerraform)(this._insightSelector),
     };

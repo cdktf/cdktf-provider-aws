@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface EfsFileSystemPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system_policy.html#bypass_policy_lockout_safety_check EfsFileSystemPolicy#bypass_policy_lockout_safety_check}
+  */
+  readonly bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system_policy.html#file_system_id EfsFileSystemPolicy#file_system_id}
   */
   readonly fileSystemId: string;
@@ -49,6 +53,7 @@ export class EfsFileSystemPolicy extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._bypassPolicyLockoutSafetyCheck = config.bypassPolicyLockoutSafetyCheck;
     this._fileSystemId = config.fileSystemId;
     this._policy = config.policy;
   }
@@ -56,6 +61,22 @@ export class EfsFileSystemPolicy extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // bypass_policy_lockout_safety_check - computed: false, optional: true, required: false
+  private _bypassPolicyLockoutSafetyCheck?: boolean | cdktf.IResolvable;
+  public get bypassPolicyLockoutSafetyCheck() {
+    return this.getBooleanAttribute('bypass_policy_lockout_safety_check');
+  }
+  public set bypassPolicyLockoutSafetyCheck(value: boolean | cdktf.IResolvable ) {
+    this._bypassPolicyLockoutSafetyCheck = value;
+  }
+  public resetBypassPolicyLockoutSafetyCheck() {
+    this._bypassPolicyLockoutSafetyCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bypassPolicyLockoutSafetyCheckInput() {
+    return this._bypassPolicyLockoutSafetyCheck
+  }
 
   // file_system_id - computed: false, optional: false, required: true
   private _fileSystemId: string;
@@ -94,6 +115,7 @@ export class EfsFileSystemPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      bypass_policy_lockout_safety_check: cdktf.booleanToTerraform(this._bypassPolicyLockoutSafetyCheck),
       file_system_id: cdktf.stringToTerraform(this._fileSystemId),
       policy: cdktf.stringToTerraform(this._policy),
     };

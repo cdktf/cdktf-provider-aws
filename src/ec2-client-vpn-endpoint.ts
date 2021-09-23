@@ -20,6 +20,10 @@ export interface Ec2ClientVpnEndpointConfig extends cdktf.TerraformMetaArguments
   */
   readonly dnsServers?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#self_service_portal Ec2ClientVpnEndpoint#self_service_portal}
+  */
+  readonly selfServicePortal?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#server_certificate_arn Ec2ClientVpnEndpoint#server_certificate_arn}
   */
   readonly serverCertificateArn: string;
@@ -66,6 +70,10 @@ export interface Ec2ClientVpnEndpointAuthenticationOptions {
   */
   readonly samlProviderArn?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#self_service_saml_provider_arn Ec2ClientVpnEndpoint#self_service_saml_provider_arn}
+  */
+  readonly selfServiceSamlProviderArn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_client_vpn_endpoint.html#type Ec2ClientVpnEndpoint#type}
   */
   readonly type: string;
@@ -77,6 +85,7 @@ function ec2ClientVpnEndpointAuthenticationOptionsToTerraform(struct?: Ec2Client
     active_directory_id: cdktf.stringToTerraform(struct!.activeDirectoryId),
     root_certificate_chain_arn: cdktf.stringToTerraform(struct!.rootCertificateChainArn),
     saml_provider_arn: cdktf.stringToTerraform(struct!.samlProviderArn),
+    self_service_saml_provider_arn: cdktf.stringToTerraform(struct!.selfServiceSamlProviderArn),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -141,6 +150,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
     this._clientCidrBlock = config.clientCidrBlock;
     this._description = config.description;
     this._dnsServers = config.dnsServers;
+    this._selfServicePortal = config.selfServicePortal;
     this._serverCertificateArn = config.serverCertificateArn;
     this._splitTunnel = config.splitTunnel;
     this._tags = config.tags;
@@ -212,6 +222,22 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // self_service_portal - computed: false, optional: true, required: false
+  private _selfServicePortal?: string;
+  public get selfServicePortal() {
+    return this.getStringAttribute('self_service_portal');
+  }
+  public set selfServicePortal(value: string ) {
+    this._selfServicePortal = value;
+  }
+  public resetSelfServicePortal() {
+    this._selfServicePortal = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfServicePortalInput() {
+    return this._selfServicePortal
   }
 
   // server_certificate_arn - computed: false, optional: false, required: true
@@ -331,6 +357,7 @@ export class Ec2ClientVpnEndpoint extends cdktf.TerraformResource {
       client_cidr_block: cdktf.stringToTerraform(this._clientCidrBlock),
       description: cdktf.stringToTerraform(this._description),
       dns_servers: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsServers),
+      self_service_portal: cdktf.stringToTerraform(this._selfServicePortal),
       server_certificate_arn: cdktf.stringToTerraform(this._serverCertificateArn),
       split_tunnel: cdktf.booleanToTerraform(this._splitTunnel),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
