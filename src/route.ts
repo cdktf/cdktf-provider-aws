@@ -79,6 +79,10 @@ export interface RouteTimeouts {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#delete Route#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route.html#update Route#update}
+  */
+  readonly update?: string;
 }
 
 function routeTimeoutsToTerraform(struct?: RouteTimeouts): any {
@@ -86,6 +90,7 @@ function routeTimeoutsToTerraform(struct?: RouteTimeouts): any {
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 

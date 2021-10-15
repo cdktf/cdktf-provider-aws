@@ -112,6 +112,11 @@ export class DataAwsLambdaFunction extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // architectures - computed: true, optional: false, required: false
+  public get architectures() {
+    return this.getListAttribute('architectures');
+  }
+
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');

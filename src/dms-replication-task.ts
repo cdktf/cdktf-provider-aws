@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface DmsReplicationTaskConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_task.html#cdc_start_position DmsReplicationTask#cdc_start_position}
+  */
+  readonly cdcStartPosition?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_replication_task.html#cdc_start_time DmsReplicationTask#cdc_start_time}
   */
   readonly cdcStartTime?: string;
@@ -81,6 +85,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._cdcStartPosition = config.cdcStartPosition;
     this._cdcStartTime = config.cdcStartTime;
     this._migrationType = config.migrationType;
     this._replicationInstanceArn = config.replicationInstanceArn;
@@ -96,6 +101,22 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // cdc_start_position - computed: false, optional: true, required: false
+  private _cdcStartPosition?: string;
+  public get cdcStartPosition() {
+    return this.getStringAttribute('cdc_start_position');
+  }
+  public set cdcStartPosition(value: string ) {
+    this._cdcStartPosition = value;
+  }
+  public resetCdcStartPosition() {
+    this._cdcStartPosition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdcStartPositionInput() {
+    return this._cdcStartPosition
+  }
 
   // cdc_start_time - computed: false, optional: true, required: false
   private _cdcStartTime?: string;
@@ -255,6 +276,7 @@ export class DmsReplicationTask extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      cdc_start_position: cdktf.stringToTerraform(this._cdcStartPosition),
       cdc_start_time: cdktf.stringToTerraform(this._cdcStartTime),
       migration_type: cdktf.stringToTerraform(this._migrationType),
       replication_instance_arn: cdktf.stringToTerraform(this._replicationInstanceArn),

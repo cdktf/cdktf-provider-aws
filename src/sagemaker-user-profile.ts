@@ -59,6 +59,10 @@ function sagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResource
 
 export interface SagemakerUserProfileUserSettingsJupyterServerAppSettings {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile.html#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}
+  */
+  readonly lifecycleConfigArns?: string[];
+  /**
   * default_resource_spec block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile.html#default_resource_spec SagemakerUserProfile#default_resource_spec}
@@ -69,6 +73,7 @@ export interface SagemakerUserProfileUserSettingsJupyterServerAppSettings {
 function sagemakerUserProfileUserSettingsJupyterServerAppSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsJupyterServerAppSettings): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.lifecycleConfigArns),
     default_resource_spec: cdktf.listMapper(sagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecToTerraform)(struct!.defaultResourceSpec),
   }
 }
@@ -118,6 +123,10 @@ function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResource
 
 export interface SagemakerUserProfileUserSettingsKernelGatewayAppSettings {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile.html#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}
+  */
+  readonly lifecycleConfigArns?: string[];
+  /**
   * custom_image block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_user_profile.html#custom_image SagemakerUserProfile#custom_image}
@@ -134,6 +143,7 @@ export interface SagemakerUserProfileUserSettingsKernelGatewayAppSettings {
 function sagemakerUserProfileUserSettingsKernelGatewayAppSettingsToTerraform(struct?: SagemakerUserProfileUserSettingsKernelGatewayAppSettings): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
+    lifecycle_config_arns: cdktf.listMapper(cdktf.stringToTerraform)(struct!.lifecycleConfigArns),
     custom_image: cdktf.listMapper(sagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageToTerraform)(struct!.customImage),
     default_resource_spec: cdktf.listMapper(sagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecToTerraform)(struct!.defaultResourceSpec),
   }
