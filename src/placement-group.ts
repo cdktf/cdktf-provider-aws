@@ -12,6 +12,10 @@ export interface PlacementGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html#partition_count PlacementGroup#partition_count}
+  */
+  readonly partitionCount?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/placement_group.html#strategy PlacementGroup#strategy}
   */
   readonly strategy: string;
@@ -58,6 +62,7 @@ export class PlacementGroup extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._name = config.name;
+    this._partitionCount = config.partitionCount;
     this._strategy = config.strategy;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
@@ -88,6 +93,22 @@ export class PlacementGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name
+  }
+
+  // partition_count - computed: false, optional: true, required: false
+  private _partitionCount?: number;
+  public get partitionCount() {
+    return this.getNumberAttribute('partition_count');
+  }
+  public set partitionCount(value: number ) {
+    this._partitionCount = value;
+  }
+  public resetPartitionCount() {
+    this._partitionCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionCountInput() {
+    return this._partitionCount
   }
 
   // placement_group_id - computed: true, optional: false, required: false
@@ -147,6 +168,7 @@ export class PlacementGroup extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       name: cdktf.stringToTerraform(this._name),
+      partition_count: cdktf.numberToTerraform(this._partitionCount),
       strategy: cdktf.stringToTerraform(this._strategy),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),

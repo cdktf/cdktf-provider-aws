@@ -27,6 +27,12 @@ export interface DefaultRouteTableConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table.html#tags_all DefaultRouteTable#tags_all}
   */
   readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table.html#timeouts DefaultRouteTable#timeouts}
+  */
+  readonly timeouts?: DefaultRouteTableTimeouts;
 }
 export interface DefaultRouteTableRoute {
   /**
@@ -92,6 +98,25 @@ function defaultRouteTableRouteToTerraform(struct?: DefaultRouteTableRoute): any
   }
 }
 
+export interface DefaultRouteTableTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table.html#create DefaultRouteTable#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_route_table.html#update DefaultRouteTable#update}
+  */
+  readonly update?: string;
+}
+
+function defaultRouteTableTimeoutsToTerraform(struct?: DefaultRouteTableTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/default_route_table.html aws_default_route_table}
@@ -130,6 +155,7 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
     this._route = config.route;
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
@@ -233,6 +259,22 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
     return this.getStringAttribute('vpc_id');
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: DefaultRouteTableTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: DefaultRouteTableTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -244,6 +286,7 @@ export class DefaultRouteTable extends cdktf.TerraformResource {
       route: cdktf.listMapper(defaultRouteTableRouteToTerraform)(this._route),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      timeouts: defaultRouteTableTimeoutsToTerraform(this._timeouts),
     };
   }
 }

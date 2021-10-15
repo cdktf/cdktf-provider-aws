@@ -28,12 +28,32 @@ export interface CloudformationStackSetInstanceConfig extends cdktf.TerraformMet
   */
   readonly stackSetName: string;
   /**
+  * deployment_targets block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html#deployment_targets CloudformationStackSetInstance#deployment_targets}
+  */
+  readonly deploymentTargets?: CloudformationStackSetInstanceDeploymentTargets[];
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html#timeouts CloudformationStackSetInstance#timeouts}
   */
   readonly timeouts?: CloudformationStackSetInstanceTimeouts;
 }
+export interface CloudformationStackSetInstanceDeploymentTargets {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html#organizational_unit_ids CloudformationStackSetInstance#organizational_unit_ids}
+  */
+  readonly organizationalUnitIds?: string[];
+}
+
+function cloudformationStackSetInstanceDeploymentTargetsToTerraform(struct?: CloudformationStackSetInstanceDeploymentTargets): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    organizational_unit_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.organizationalUnitIds),
+  }
+}
+
 export interface CloudformationStackSetInstanceTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set_instance.html#create CloudformationStackSetInstance#create}
@@ -96,6 +116,7 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
     this._region = config.region;
     this._retainStack = config.retainStack;
     this._stackSetName = config.stackSetName;
+    this._deploymentTargets = config.deploymentTargets;
     this._timeouts = config.timeouts;
   }
 
@@ -122,6 +143,11 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // organizational_unit_id - computed: true, optional: false, required: false
+  public get organizationalUnitId() {
+    return this.getStringAttribute('organizational_unit_id');
   }
 
   // parameter_overrides - computed: false, optional: true, required: false
@@ -190,6 +216,22 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
     return this._stackSetName
   }
 
+  // deployment_targets - computed: false, optional: true, required: false
+  private _deploymentTargets?: CloudformationStackSetInstanceDeploymentTargets[];
+  public get deploymentTargets() {
+    return this.interpolationForAttribute('deployment_targets') as any;
+  }
+  public set deploymentTargets(value: CloudformationStackSetInstanceDeploymentTargets[] ) {
+    this._deploymentTargets = value;
+  }
+  public resetDeploymentTargets() {
+    this._deploymentTargets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentTargetsInput() {
+    return this._deploymentTargets
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts?: CloudformationStackSetInstanceTimeouts;
   public get timeouts() {
@@ -217,6 +259,7 @@ export class CloudformationStackSetInstance extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       retain_stack: cdktf.booleanToTerraform(this._retainStack),
       stack_set_name: cdktf.stringToTerraform(this._stackSetName),
+      deployment_targets: cdktf.listMapper(cloudformationStackSetInstanceDeploymentTargetsToTerraform)(this._deploymentTargets),
       timeouts: cloudformationStackSetInstanceTimeoutsToTerraform(this._timeouts),
     };
   }

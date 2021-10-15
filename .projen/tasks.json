@@ -120,48 +120,6 @@
         }
       ]
     },
-    "upgrade": {
-      "name": "upgrade",
-      "description": "upgrade dependencies",
-      "env": {
-        "CI": "0"
-      },
-      "steps": [
-        {
-          "exec": "npm-check-updates --upgrade --target=minor --reject='projen'"
-        },
-        {
-          "exec": "yarn install --check-files"
-        },
-        {
-          "exec": "yarn upgrade @cdktf/provider-project @types/node cdktf-cli cdktf constructs dot-prop jsii jsii-diff jsii-docgen jsii-pacmak npm-check-updates standard-version typescript cdktf constructs"
-        },
-        {
-          "exec": "npx projen"
-        }
-      ]
-    },
-    "upgrade-projen": {
-      "name": "upgrade-projen",
-      "description": "upgrade projen",
-      "env": {
-        "CI": "0"
-      },
-      "steps": [
-        {
-          "exec": "npm-check-updates --upgrade --target=minor --filter='projen'"
-        },
-        {
-          "exec": "yarn install --check-files"
-        },
-        {
-          "exec": "yarn upgrade projen"
-        },
-        {
-          "exec": "npx projen"
-        }
-      ]
-    },
     "default": {
       "name": "default",
       "steps": [
@@ -210,6 +168,22 @@
       "steps": [
         {
           "exec": "npx -p jsii-release@latest jsii-release-npm"
+        }
+      ]
+    },
+    "publish:maven": {
+      "name": "publish:maven",
+      "description": "Publish this package to Maven Central",
+      "requiredEnv": [
+        "MAVEN_GPG_PRIVATE_KEY",
+        "MAVEN_GPG_PRIVATE_KEY_PASSPHRASE",
+        "MAVEN_PASSWORD",
+        "MAVEN_USERNAME",
+        "MAVEN_STAGING_PROFILE_ID"
+      ],
+      "steps": [
+        {
+          "exec": "npx -p jsii-release@latest jsii-release-maven"
         }
       ]
     },
@@ -268,6 +242,72 @@
         },
         {
           "exec": "git diff --ignore-space-at-eol --exit-code"
+        }
+      ]
+    },
+    "upgrade": {
+      "name": "upgrade",
+      "description": "upgrade dependencies",
+      "env": {
+        "CI": "0"
+      },
+      "steps": [
+        {
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor --reject='projen'"
+        },
+        {
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor --reject='projen'"
+        },
+        {
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor --reject='projen'"
+        },
+        {
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor --reject='projen'"
+        },
+        {
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --reject='projen'"
+        },
+        {
+          "exec": "yarn install --check-files"
+        },
+        {
+          "exec": "yarn upgrade @cdktf/provider-project @types/node cdktf-cli cdktf constructs dot-prop jsii jsii-diff jsii-docgen jsii-pacmak npm-check-updates standard-version typescript cdktf constructs"
+        },
+        {
+          "exec": "npx projen"
+        }
+      ]
+    },
+    "upgrade-projen": {
+      "name": "upgrade-projen",
+      "description": "upgrade projen",
+      "env": {
+        "CI": "0"
+      },
+      "steps": [
+        {
+          "exec": "npm-check-updates --dep dev --upgrade --target=minor --filter='projen'"
+        },
+        {
+          "exec": "npm-check-updates --dep optional --upgrade --target=minor --filter='projen'"
+        },
+        {
+          "exec": "npm-check-updates --dep peer --upgrade --target=minor --filter='projen'"
+        },
+        {
+          "exec": "npm-check-updates --dep prod --upgrade --target=minor --filter='projen'"
+        },
+        {
+          "exec": "npm-check-updates --dep bundle --upgrade --target=minor --filter='projen'"
+        },
+        {
+          "exec": "yarn install --check-files"
+        },
+        {
+          "exec": "yarn upgrade projen"
+        },
+        {
+          "exec": "npx projen"
         }
       ]
     }

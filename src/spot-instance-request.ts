@@ -96,6 +96,10 @@ export interface SpotInstanceRequestConfig extends cdktf.TerraformMetaArguments 
   */
   readonly placementGroup?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#placement_partition_number SpotInstanceRequest#placement_partition_number}
+  */
+  readonly placementPartitionNumber?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request.html#private_ip SpotInstanceRequest#private_ip}
   */
   readonly privateIp?: string;
@@ -565,6 +569,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
     this._launchGroup = config.launchGroup;
     this._monitoring = config.monitoring;
     this._placementGroup = config.placementGroup;
+    this._placementPartitionNumber = config.placementPartitionNumber;
     this._privateIp = config.privateIp;
     this._secondaryPrivateIps = config.secondaryPrivateIps;
     this._securityGroups = config.securityGroups;
@@ -973,6 +978,22 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get placementGroupInput() {
     return this._placementGroup
+  }
+
+  // placement_partition_number - computed: true, optional: true, required: false
+  private _placementPartitionNumber?: number;
+  public get placementPartitionNumber() {
+    return this.getNumberAttribute('placement_partition_number');
+  }
+  public set placementPartitionNumber(value: number) {
+    this._placementPartitionNumber = value;
+  }
+  public resetPlacementPartitionNumber() {
+    this._placementPartitionNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementPartitionNumberInput() {
+    return this._placementPartitionNumber
   }
 
   // primary_network_interface_id - computed: true, optional: false, required: false
@@ -1470,6 +1491,7 @@ export class SpotInstanceRequest extends cdktf.TerraformResource {
       launch_group: cdktf.stringToTerraform(this._launchGroup),
       monitoring: cdktf.booleanToTerraform(this._monitoring),
       placement_group: cdktf.stringToTerraform(this._placementGroup),
+      placement_partition_number: cdktf.numberToTerraform(this._placementPartitionNumber),
       private_ip: cdktf.stringToTerraform(this._privateIp),
       secondary_private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._secondaryPrivateIps),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),

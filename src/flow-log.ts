@@ -55,7 +55,37 @@ export interface FlowLogConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log.html#vpc_id FlowLog#vpc_id}
   */
   readonly vpcId?: string;
+  /**
+  * destination_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log.html#destination_options FlowLog#destination_options}
+  */
+  readonly destinationOptions?: FlowLogDestinationOptions[];
 }
+export interface FlowLogDestinationOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log.html#file_format FlowLog#file_format}
+  */
+  readonly fileFormat?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log.html#hive_compatible_partitions FlowLog#hive_compatible_partitions}
+  */
+  readonly hiveCompatiblePartitions?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/flow_log.html#per_hour_partition FlowLog#per_hour_partition}
+  */
+  readonly perHourPartition?: boolean | cdktf.IResolvable;
+}
+
+function flowLogDestinationOptionsToTerraform(struct?: FlowLogDestinationOptions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    file_format: cdktf.stringToTerraform(struct!.fileFormat),
+    hive_compatible_partitions: cdktf.booleanToTerraform(struct!.hiveCompatiblePartitions),
+    per_hour_partition: cdktf.booleanToTerraform(struct!.perHourPartition),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/flow_log.html aws_flow_log}
@@ -101,6 +131,7 @@ export class FlowLog extends cdktf.TerraformResource {
     this._tagsAll = config.tagsAll;
     this._trafficType = config.trafficType;
     this._vpcId = config.vpcId;
+    this._destinationOptions = config.destinationOptions;
   }
 
   // ==========
@@ -306,6 +337,22 @@ export class FlowLog extends cdktf.TerraformResource {
     return this._vpcId
   }
 
+  // destination_options - computed: false, optional: true, required: false
+  private _destinationOptions?: FlowLogDestinationOptions[];
+  public get destinationOptions() {
+    return this.interpolationForAttribute('destination_options') as any;
+  }
+  public set destinationOptions(value: FlowLogDestinationOptions[] ) {
+    this._destinationOptions = value;
+  }
+  public resetDestinationOptions() {
+    this._destinationOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationOptionsInput() {
+    return this._destinationOptions
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -324,6 +371,7 @@ export class FlowLog extends cdktf.TerraformResource {
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       traffic_type: cdktf.stringToTerraform(this._trafficType),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
+      destination_options: cdktf.listMapper(flowLogDestinationOptionsToTerraform)(this._destinationOptions),
     };
   }
 }

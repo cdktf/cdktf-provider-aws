@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface DxLagConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_lag.html#connection_id DxLag#connection_id}
+  */
+  readonly connectionId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dx_lag.html#connections_bandwidth DxLag#connections_bandwidth}
   */
   readonly connectionsBandwidth: string;
@@ -69,6 +73,7 @@ export class DxLag extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._connectionId = config.connectionId;
     this._connectionsBandwidth = config.connectionsBandwidth;
     this._forceDestroy = config.forceDestroy;
     this._location = config.location;
@@ -85,6 +90,22 @@ export class DxLag extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // connection_id - computed: false, optional: true, required: false
+  private _connectionId?: string;
+  public get connectionId() {
+    return this.getStringAttribute('connection_id');
+  }
+  public set connectionId(value: string ) {
+    this._connectionId = value;
+  }
+  public resetConnectionId() {
+    this._connectionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionIdInput() {
+    return this._connectionId
   }
 
   // connections_bandwidth - computed: false, optional: false, required: true
@@ -162,12 +183,12 @@ export class DxLag extends cdktf.TerraformResource {
     return this.getStringAttribute('owner_account_id');
   }
 
-  // provider_name - computed: false, optional: true, required: false
+  // provider_name - computed: true, optional: true, required: false
   private _providerName?: string;
   public get providerName() {
     return this.getStringAttribute('provider_name');
   }
-  public set providerName(value: string ) {
+  public set providerName(value: string) {
     this._providerName = value;
   }
   public resetProviderName() {
@@ -216,6 +237,7 @@ export class DxLag extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      connection_id: cdktf.stringToTerraform(this._connectionId),
       connections_bandwidth: cdktf.stringToTerraform(this._connectionsBandwidth),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       location: cdktf.stringToTerraform(this._location),

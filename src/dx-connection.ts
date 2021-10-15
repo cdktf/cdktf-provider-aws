@@ -146,12 +146,12 @@ export class DxConnection extends cdktf.TerraformResource {
     return this.getStringAttribute('owner_account_id');
   }
 
-  // provider_name - computed: false, optional: true, required: false
+  // provider_name - computed: true, optional: true, required: false
   private _providerName?: string;
   public get providerName() {
     return this.getStringAttribute('provider_name');
   }
-  public set providerName(value: string ) {
+  public set providerName(value: string) {
     this._providerName = value;
   }
   public resetProviderName() {
