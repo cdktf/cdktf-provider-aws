@@ -14,17 +14,18 @@
     "bump": "npx projen bump",
     "unbump": "npx projen unbump",
     "publish:github": "npx projen publish:github",
-    "upgrade": "npx projen upgrade",
-    "upgrade-projen": "npx projen upgrade-projen",
     "default": "npx projen default",
     "watch": "npx projen watch",
     "package": "npx projen package",
     "compat": "npx projen compat",
     "publish:npm": "npx projen publish:npm",
+    "publish:maven": "npx projen publish:maven",
     "publish:pypi": "npx projen publish:pypi",
     "publish:nuget": "npx projen publish:nuget",
     "docgen": "npx projen docgen",
     "release": "npx projen release",
+    "upgrade": "npx projen upgrade",
+    "upgrade-projen": "npx projen upgrade-projen",
     "projen": "npx projen",
     "fetch": "mkdir -p src && rm -rf ./src/* && cdktf get && cp -R .gen/providers/aws/* ./src/",
     "commit": "git add -A && git commit -am \"Update provider\" || echo \"No changes to commit\"",
@@ -49,7 +50,7 @@
     "jsii-docgen": "^1.8.110",
     "jsii-pacmak": "^1.34.0",
     "npm-check-updates": "^11",
-    "projen": "^0.28.28",
+    "projen": "^0.30.2",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
@@ -79,6 +80,13 @@
   "jsii": {
     "outdir": "dist",
     "targets": {
+      "java": {
+        "package": "com.hashicorp.cdktf.providers.aws",
+        "maven": {
+          "groupId": "com.hashicorp",
+          "artifactId": "cdktf-provider-aws"
+        }
+      },
       "python": {
         "distName": "cdktf-cdktf-provider-aws",
         "module": "cdktf_cdktf_provider_aws"

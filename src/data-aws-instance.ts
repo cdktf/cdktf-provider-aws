@@ -434,6 +434,11 @@ export class DataAwsInstance extends cdktf.TerraformDataSource {
     return this.getStringAttribute('placement_group');
   }
 
+  // placement_partition_number - computed: true, optional: false, required: false
+  public get placementPartitionNumber() {
+    return this.getNumberAttribute('placement_partition_number');
+  }
+
   // private_dns - computed: true, optional: false, required: false
   public get privateDns() {
     return this.getStringAttribute('private_dns');

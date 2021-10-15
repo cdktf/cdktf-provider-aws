@@ -27,6 +27,12 @@ export interface RouteTableConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route_table.html#vpc_id RouteTable#vpc_id}
   */
   readonly vpcId: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route_table.html#timeouts RouteTable#timeouts}
+  */
+  readonly timeouts?: RouteTableTimeouts;
 }
 export interface RouteTableRoute {
   /**
@@ -102,6 +108,30 @@ function routeTableRouteToTerraform(struct?: RouteTableRoute): any {
   }
 }
 
+export interface RouteTableTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route_table.html#create RouteTable#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route_table.html#delete RouteTable#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route_table.html#update RouteTable#update}
+  */
+  readonly update?: string;
+}
+
+function routeTableTimeoutsToTerraform(struct?: RouteTableTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/route_table.html aws_route_table}
@@ -140,6 +170,7 @@ export class RouteTable extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._vpcId = config.vpcId;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
@@ -238,6 +269,22 @@ export class RouteTable extends cdktf.TerraformResource {
     return this._vpcId
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: RouteTableTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: RouteTableTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -249,6 +296,7 @@ export class RouteTable extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
+      timeouts: routeTableTimeoutsToTerraform(this._timeouts),
     };
   }
 }

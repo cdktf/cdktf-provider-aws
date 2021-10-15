@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface DataAwsLambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_layer_version.html#compatible_architecture DataAwsLambdaLayerVersion#compatible_architecture}
+  */
+  readonly compatibleArchitecture?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/lambda_layer_version.html#compatible_runtime DataAwsLambdaLayerVersion#compatible_runtime}
   */
   readonly compatibleRuntime?: string;
@@ -53,6 +57,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._compatibleArchitecture = config.compatibleArchitecture;
     this._compatibleRuntime = config.compatibleRuntime;
     this._layerName = config.layerName;
     this._version = config.version;
@@ -65,6 +70,27 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // compatible_architecture - computed: false, optional: true, required: false
+  private _compatibleArchitecture?: string;
+  public get compatibleArchitecture() {
+    return this.getStringAttribute('compatible_architecture');
+  }
+  public set compatibleArchitecture(value: string ) {
+    this._compatibleArchitecture = value;
+  }
+  public resetCompatibleArchitecture() {
+    this._compatibleArchitecture = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compatibleArchitectureInput() {
+    return this._compatibleArchitecture
+  }
+
+  // compatible_architectures - computed: true, optional: false, required: false
+  public get compatibleArchitectures() {
+    return this.getListAttribute('compatible_architectures');
   }
 
   // compatible_runtime - computed: false, optional: true, required: false
@@ -168,6 +194,7 @@ export class DataAwsLambdaLayerVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      compatible_architecture: cdktf.stringToTerraform(this._compatibleArchitecture),
       compatible_runtime: cdktf.stringToTerraform(this._compatibleRuntime),
       layer_name: cdktf.stringToTerraform(this._layerName),
       version: cdktf.numberToTerraform(this._version),

@@ -52,6 +52,10 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly dbClusterParameterGroupName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#db_instance_parameter_group_name RdsCluster#db_instance_parameter_group_name}
+  */
+  readonly dbInstanceParameterGroupName?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#db_subnet_group_name RdsCluster#db_subnet_group_name}
   */
   readonly dbSubnetGroupName?: string;
@@ -59,6 +63,10 @@ export interface RdsClusterConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#deletion_protection RdsCluster#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#enable_global_write_forwarding RdsCluster#enable_global_write_forwarding}
+  */
+  readonly enableGlobalWriteForwarding?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster.html#enable_http_endpoint RdsCluster#enable_http_endpoint}
   */
@@ -341,8 +349,10 @@ export class RdsCluster extends cdktf.TerraformResource {
     this._copyTagsToSnapshot = config.copyTagsToSnapshot;
     this._databaseName = config.databaseName;
     this._dbClusterParameterGroupName = config.dbClusterParameterGroupName;
+    this._dbInstanceParameterGroupName = config.dbInstanceParameterGroupName;
     this._dbSubnetGroupName = config.dbSubnetGroupName;
     this._deletionProtection = config.deletionProtection;
+    this._enableGlobalWriteForwarding = config.enableGlobalWriteForwarding;
     this._enableHttpEndpoint = config.enableHttpEndpoint;
     this._enabledCloudwatchLogsExports = config.enabledCloudwatchLogsExports;
     this._engine = config.engine;
@@ -562,6 +572,22 @@ export class RdsCluster extends cdktf.TerraformResource {
     return this._dbClusterParameterGroupName
   }
 
+  // db_instance_parameter_group_name - computed: false, optional: true, required: false
+  private _dbInstanceParameterGroupName?: string;
+  public get dbInstanceParameterGroupName() {
+    return this.getStringAttribute('db_instance_parameter_group_name');
+  }
+  public set dbInstanceParameterGroupName(value: string ) {
+    this._dbInstanceParameterGroupName = value;
+  }
+  public resetDbInstanceParameterGroupName() {
+    this._dbInstanceParameterGroupName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbInstanceParameterGroupNameInput() {
+    return this._dbInstanceParameterGroupName
+  }
+
   // db_subnet_group_name - computed: true, optional: true, required: false
   private _dbSubnetGroupName?: string;
   public get dbSubnetGroupName() {
@@ -592,6 +618,22 @@ export class RdsCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get deletionProtectionInput() {
     return this._deletionProtection
+  }
+
+  // enable_global_write_forwarding - computed: false, optional: true, required: false
+  private _enableGlobalWriteForwarding?: boolean | cdktf.IResolvable;
+  public get enableGlobalWriteForwarding() {
+    return this.getBooleanAttribute('enable_global_write_forwarding');
+  }
+  public set enableGlobalWriteForwarding(value: boolean | cdktf.IResolvable ) {
+    this._enableGlobalWriteForwarding = value;
+  }
+  public resetEnableGlobalWriteForwarding() {
+    this._enableGlobalWriteForwarding = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableGlobalWriteForwardingInput() {
+    return this._enableGlobalWriteForwarding
   }
 
   // enable_http_endpoint - computed: false, optional: true, required: false
@@ -1068,8 +1110,10 @@ export class RdsCluster extends cdktf.TerraformResource {
       copy_tags_to_snapshot: cdktf.booleanToTerraform(this._copyTagsToSnapshot),
       database_name: cdktf.stringToTerraform(this._databaseName),
       db_cluster_parameter_group_name: cdktf.stringToTerraform(this._dbClusterParameterGroupName),
+      db_instance_parameter_group_name: cdktf.stringToTerraform(this._dbInstanceParameterGroupName),
       db_subnet_group_name: cdktf.stringToTerraform(this._dbSubnetGroupName),
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      enable_global_write_forwarding: cdktf.booleanToTerraform(this._enableGlobalWriteForwarding),
       enable_http_endpoint: cdktf.booleanToTerraform(this._enableHttpEndpoint),
       enabled_cloudwatch_logs_exports: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledCloudwatchLogsExports),
       engine: cdktf.stringToTerraform(this._engine),

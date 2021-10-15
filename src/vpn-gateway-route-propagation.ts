@@ -15,7 +15,32 @@ export interface VpnGatewayRoutePropagationConfig extends cdktf.TerraformMetaArg
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_gateway_route_propagation.html#vpn_gateway_id VpnGatewayRoutePropagation#vpn_gateway_id}
   */
   readonly vpnGatewayId: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_gateway_route_propagation.html#timeouts VpnGatewayRoutePropagation#timeouts}
+  */
+  readonly timeouts?: VpnGatewayRoutePropagationTimeouts;
 }
+export interface VpnGatewayRoutePropagationTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_gateway_route_propagation.html#create VpnGatewayRoutePropagation#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_gateway_route_propagation.html#delete VpnGatewayRoutePropagation#delete}
+  */
+  readonly delete?: string;
+}
+
+function vpnGatewayRoutePropagationTimeoutsToTerraform(struct?: VpnGatewayRoutePropagationTimeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpn_gateway_route_propagation.html aws_vpn_gateway_route_propagation}
@@ -51,6 +76,7 @@ export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
     });
     this._routeTableId = config.routeTableId;
     this._vpnGatewayId = config.vpnGatewayId;
+    this._timeouts = config.timeouts;
   }
 
   // ==========
@@ -88,6 +114,22 @@ export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
     return this._vpnGatewayId
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: VpnGatewayRoutePropagationTimeouts;
+  public get timeouts() {
+    return this.interpolationForAttribute('timeouts') as any;
+  }
+  public set timeouts(value: VpnGatewayRoutePropagationTimeouts ) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -96,6 +138,7 @@ export class VpnGatewayRoutePropagation extends cdktf.TerraformResource {
     return {
       route_table_id: cdktf.stringToTerraform(this._routeTableId),
       vpn_gateway_id: cdktf.stringToTerraform(this._vpnGatewayId),
+      timeouts: vpnGatewayRoutePropagationTimeoutsToTerraform(this._timeouts),
     };
   }
 }

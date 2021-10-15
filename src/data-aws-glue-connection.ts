@@ -11,6 +11,10 @@ export interface DataAwsGlueConnectionConfig extends cdktf.TerraformMetaArgument
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_connection.html#id DataAwsGlueConnection#id}
   */
   readonly id: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/glue_connection.html#tags DataAwsGlueConnection#tags}
+  */
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 export class DataAwsGlueConnectionPhysicalConnectionRequirements extends cdktf.ComplexComputedList {
 
@@ -63,6 +67,7 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._id = config.id;
+    this._tags = config.tags;
   }
 
   // ==========
@@ -122,6 +127,22 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
     return new DataAwsGlueConnectionPhysicalConnectionRequirements(this, 'physical_connection_requirements', index);
   }
 
+  // tags - computed: true, optional: true, required: false
+  private _tags?: { [key: string]: string } | cdktf.IResolvable
+  public get tags(): { [key: string]: string } | cdktf.IResolvable {
+    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  }
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -129,6 +150,7 @@ export class DataAwsGlueConnection extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
     };
   }
 }

@@ -601,6 +601,11 @@ export class MskCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('zookeeper_connect_string');
   }
 
+  // zookeeper_connect_string_tls - computed: true, optional: false, required: false
+  public get zookeeperConnectStringTls() {
+    return this.getStringAttribute('zookeeper_connect_string_tls');
+  }
+
   // broker_node_group_info - computed: false, optional: false, required: true
   private _brokerNodeGroupInfo: MskClusterBrokerNodeGroupInfo[];
   public get brokerNodeGroupInfo() {

@@ -23,7 +23,13 @@ from the 'Security & Credentials' section of the AWS console.
   */
   readonly forbiddenAccountIds?: string[];
   /**
-  * Explicitly allow the provider to perform "insecure" SSL requests. If omitted,default value is `false`
+  * The address of an HTTP proxy to use when accessing the AWS API. Can also be configured using the `HTTP_PROXY` or `HTTPS_PROXY` environment variables.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#http_proxy AwsProvider#http_proxy}
+  */
+  readonly httpProxy?: string;
+  /**
+  * Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#insecure AwsProvider#insecure}
   */
@@ -347,6 +353,12 @@ export interface AwsProviderEndpoints {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloud9 AwsProvider#cloud9}
   */
   readonly cloud9?: string;
+  /**
+  * Use this to override the default service endpoint URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudcontrolapi AwsProvider#cloudcontrolapi}
+  */
+  readonly cloudcontrolapi?: string;
   /**
   * Use this to override the default service endpoint URL
   * 
@@ -1213,6 +1225,7 @@ function awsProviderEndpointsToTerraform(struct?: AwsProviderEndpoints): any {
     budgets: cdktf.stringToTerraform(struct!.budgets),
     chime: cdktf.stringToTerraform(struct!.chime),
     cloud9: cdktf.stringToTerraform(struct!.cloud9),
+    cloudcontrolapi: cdktf.stringToTerraform(struct!.cloudcontrolapi),
     cloudformation: cdktf.stringToTerraform(struct!.cloudformation),
     cloudfront: cdktf.stringToTerraform(struct!.cloudfront),
     cloudhsm: cdktf.stringToTerraform(struct!.cloudhsm),
@@ -1413,6 +1426,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
     this._accessKey = config.accessKey;
     this._allowedAccountIds = config.allowedAccountIds;
     this._forbiddenAccountIds = config.forbiddenAccountIds;
+    this._httpProxy = config.httpProxy;
     this._insecure = config.insecure;
     this._maxRetries = config.maxRetries;
     this._profile = config.profile;
@@ -1483,6 +1497,22 @@ export class AwsProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get forbiddenAccountIdsInput() {
     return this._forbiddenAccountIds
+  }
+
+  // http_proxy - computed: false, optional: true, required: false
+  private _httpProxy?: string;
+  public get httpProxy() {
+    return this._httpProxy;
+  }
+  public set httpProxy(value: string  | undefined) {
+    this._httpProxy = value;
+  }
+  public resetHttpProxy() {
+    this._httpProxy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpProxyInput() {
+    return this._httpProxy
   }
 
   // insecure - computed: false, optional: true, required: false
@@ -1779,6 +1809,7 @@ export class AwsProvider extends cdktf.TerraformProvider {
       access_key: cdktf.stringToTerraform(this._accessKey),
       allowed_account_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedAccountIds),
       forbidden_account_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._forbiddenAccountIds),
+      http_proxy: cdktf.stringToTerraform(this._httpProxy),
       insecure: cdktf.booleanToTerraform(this._insecure),
       max_retries: cdktf.numberToTerraform(this._maxRetries),
       profile: cdktf.stringToTerraform(this._profile),

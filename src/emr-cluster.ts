@@ -40,6 +40,10 @@ export interface EmrClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly keepJobFlowAliveWhenNoSteps?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#log_encryption_kms_key_id EmrCluster#log_encryption_kms_key_id}
+  */
+  readonly logEncryptionKmsKeyId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#log_uri EmrCluster#log_uri}
   */
   readonly logUri?: string;
@@ -861,6 +865,7 @@ export class EmrCluster extends cdktf.TerraformResource {
     this._customAmiId = config.customAmiId;
     this._ebsRootVolumeSize = config.ebsRootVolumeSize;
     this._keepJobFlowAliveWhenNoSteps = config.keepJobFlowAliveWhenNoSteps;
+    this._logEncryptionKmsKeyId = config.logEncryptionKmsKeyId;
     this._logUri = config.logUri;
     this._name = config.name;
     this._releaseLabel = config.releaseLabel;
@@ -1027,6 +1032,22 @@ export class EmrCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get keepJobFlowAliveWhenNoStepsInput() {
     return this._keepJobFlowAliveWhenNoSteps
+  }
+
+  // log_encryption_kms_key_id - computed: false, optional: true, required: false
+  private _logEncryptionKmsKeyId?: string;
+  public get logEncryptionKmsKeyId() {
+    return this.getStringAttribute('log_encryption_kms_key_id');
+  }
+  public set logEncryptionKmsKeyId(value: string ) {
+    this._logEncryptionKmsKeyId = value;
+  }
+  public resetLogEncryptionKmsKeyId() {
+    this._logEncryptionKmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logEncryptionKmsKeyIdInput() {
+    return this._logEncryptionKmsKeyId
   }
 
   // log_uri - computed: false, optional: true, required: false
@@ -1343,6 +1364,7 @@ export class EmrCluster extends cdktf.TerraformResource {
       custom_ami_id: cdktf.stringToTerraform(this._customAmiId),
       ebs_root_volume_size: cdktf.numberToTerraform(this._ebsRootVolumeSize),
       keep_job_flow_alive_when_no_steps: cdktf.booleanToTerraform(this._keepJobFlowAliveWhenNoSteps),
+      log_encryption_kms_key_id: cdktf.stringToTerraform(this._logEncryptionKmsKeyId),
       log_uri: cdktf.stringToTerraform(this._logUri),
       name: cdktf.stringToTerraform(this._name),
       release_label: cdktf.stringToTerraform(this._releaseLabel),

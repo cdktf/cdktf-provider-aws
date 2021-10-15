@@ -26,6 +26,11 @@ export class DataAwsEfsFileSystemLifecyclePolicy extends cdktf.ComplexComputedLi
   public get transitionToIa() {
     return this.getStringAttribute('transition_to_ia');
   }
+
+  // transition_to_primary_storage_class - computed: true, optional: false, required: false
+  public get transitionToPrimaryStorageClass() {
+    return this.getStringAttribute('transition_to_primary_storage_class');
+  }
 }
 
 /**

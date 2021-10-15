@@ -103,6 +103,10 @@ export interface FsxLustreFileSystemTimeouts {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#delete FsxLustreFileSystem#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_lustre_file_system.html#update FsxLustreFileSystem#update}
+  */
+  readonly update?: string;
 }
 
 function fsxLustreFileSystemTimeoutsToTerraform(struct?: FsxLustreFileSystemTimeouts): any {
@@ -110,6 +114,7 @@ function fsxLustreFileSystemTimeoutsToTerraform(struct?: FsxLustreFileSystemTime
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
