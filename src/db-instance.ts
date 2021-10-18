@@ -176,6 +176,10 @@ export interface DbInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly publiclyAccessible?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#replica_mode DbInstance#replica_mode}
+  */
+  readonly replicaMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance.html#replicate_source_db DbInstance#replicate_source_db}
   */
   readonly replicateSourceDb?: string;
@@ -400,6 +404,7 @@ export class DbInstance extends cdktf.TerraformResource {
     this._performanceInsightsRetentionPeriod = config.performanceInsightsRetentionPeriod;
     this._port = config.port;
     this._publiclyAccessible = config.publiclyAccessible;
+    this._replicaMode = config.replicaMode;
     this._replicateSourceDb = config.replicateSourceDb;
     this._securityGroupNames = config.securityGroupNames;
     this._skipFinalSnapshot = config.skipFinalSnapshot;
@@ -1124,6 +1129,22 @@ export class DbInstance extends cdktf.TerraformResource {
     return this._publiclyAccessible
   }
 
+  // replica_mode - computed: false, optional: true, required: false
+  private _replicaMode?: string;
+  public get replicaMode() {
+    return this.getStringAttribute('replica_mode');
+  }
+  public set replicaMode(value: string ) {
+    this._replicaMode = value;
+  }
+  public resetReplicaMode() {
+    this._replicaMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicaModeInput() {
+    return this._replicaMode
+  }
+
   // replicas - computed: true, optional: false, required: false
   public get replicas() {
     return this.getListAttribute('replicas');
@@ -1411,6 +1432,7 @@ export class DbInstance extends cdktf.TerraformResource {
       performance_insights_retention_period: cdktf.numberToTerraform(this._performanceInsightsRetentionPeriod),
       port: cdktf.numberToTerraform(this._port),
       publicly_accessible: cdktf.booleanToTerraform(this._publiclyAccessible),
+      replica_mode: cdktf.stringToTerraform(this._replicaMode),
       replicate_source_db: cdktf.stringToTerraform(this._replicateSourceDb),
       security_group_names: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupNames),
       skip_final_snapshot: cdktf.booleanToTerraform(this._skipFinalSnapshot),

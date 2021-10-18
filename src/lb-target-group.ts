@@ -10,7 +10,7 @@ export interface LbTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group.html#deregistration_delay LbTargetGroup#deregistration_delay}
   */
-  readonly deregistrationDelay?: number;
+  readonly deregistrationDelay?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group.html#lambda_multi_value_headers_enabled LbTargetGroup#lambda_multi_value_headers_enabled}
   */
@@ -230,11 +230,11 @@ export class LbTargetGroup extends cdktf.TerraformResource {
   }
 
   // deregistration_delay - computed: false, optional: true, required: false
-  private _deregistrationDelay?: number;
+  private _deregistrationDelay?: string;
   public get deregistrationDelay() {
-    return this.getNumberAttribute('deregistration_delay');
+    return this.getStringAttribute('deregistration_delay');
   }
-  public set deregistrationDelay(value: number ) {
+  public set deregistrationDelay(value: string ) {
     this._deregistrationDelay = value;
   }
   public resetDeregistrationDelay() {
@@ -512,7 +512,7 @@ export class LbTargetGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deregistration_delay: cdktf.numberToTerraform(this._deregistrationDelay),
+      deregistration_delay: cdktf.stringToTerraform(this._deregistrationDelay),
       lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
       load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),
       name: cdktf.stringToTerraform(this._name),

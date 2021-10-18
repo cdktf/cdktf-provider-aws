@@ -28,3 +28,7 @@ jobs:
           title: "chore: upgrade provider"
           body: This PR upgrades provider to the latest version
           labels: automerge
+          token: ${{ secrets.GH_TOKEN }}
+          delete-branch: true
+          committer: team-tf-cdk <github-team-tf-cdk@hashicorp.com>
+          author: Team Terraform CDK <github-team-tf-cdk@hashicorp.com>

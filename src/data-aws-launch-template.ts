@@ -172,6 +172,11 @@ export class DataAwsLaunchTemplateMetadataOptions extends cdktf.ComplexComputedL
     return this.getStringAttribute('http_endpoint');
   }
 
+  // http_protocol_ipv6 - computed: true, optional: false, required: false
+  public get httpProtocolIpv6() {
+    return this.getStringAttribute('http_protocol_ipv6');
+  }
+
   // http_put_response_hop_limit - computed: true, optional: false, required: false
   public get httpPutResponseHopLimit() {
     return this.getNumberAttribute('http_put_response_hop_limit');

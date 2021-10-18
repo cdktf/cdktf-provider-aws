@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface LambdaFunctionConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#architectures LambdaFunction#architectures}
+  */
+  readonly architectures?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function.html#code_signing_config_arn LambdaFunction#code_signing_config_arn}
   */
   readonly codeSigningConfigArn?: string;
@@ -285,6 +289,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._architectures = config.architectures;
     this._codeSigningConfigArn = config.codeSigningConfigArn;
     this._description = config.description;
     this._filename = config.filename;
@@ -318,6 +323,22 @@ export class LambdaFunction extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // architectures - computed: true, optional: true, required: false
+  private _architectures?: string[];
+  public get architectures() {
+    return this.getListAttribute('architectures');
+  }
+  public set architectures(value: string[]) {
+    this._architectures = value;
+  }
+  public resetArchitectures() {
+    this._architectures = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get architecturesInput() {
+    return this._architectures
+  }
 
   // arn - computed: true, optional: false, required: false
   public get arn() {
@@ -812,6 +833,7 @@ export class LambdaFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      architectures: cdktf.listMapper(cdktf.stringToTerraform)(this._architectures),
       code_signing_config_arn: cdktf.stringToTerraform(this._codeSigningConfigArn),
       description: cdktf.stringToTerraform(this._description),
       filename: cdktf.stringToTerraform(this._filename),

@@ -133,6 +133,70 @@ export interface DmsEndpointKafkaSettings {
   */
   readonly broker: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_control_details DmsEndpoint#include_control_details}
+  */
+  readonly includeControlDetails?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_null_and_empty DmsEndpoint#include_null_and_empty}
+  */
+  readonly includeNullAndEmpty?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_partition_value DmsEndpoint#include_partition_value}
+  */
+  readonly includePartitionValue?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_table_alter_operations DmsEndpoint#include_table_alter_operations}
+  */
+  readonly includeTableAlterOperations?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_transaction_details DmsEndpoint#include_transaction_details}
+  */
+  readonly includeTransactionDetails?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#message_format DmsEndpoint#message_format}
+  */
+  readonly messageFormat?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#message_max_bytes DmsEndpoint#message_max_bytes}
+  */
+  readonly messageMaxBytes?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#no_hex_prefix DmsEndpoint#no_hex_prefix}
+  */
+  readonly noHexPrefix?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#partition_include_schema_table DmsEndpoint#partition_include_schema_table}
+  */
+  readonly partitionIncludeSchemaTable?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#sasl_password DmsEndpoint#sasl_password}
+  */
+  readonly saslPassword?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#sasl_username DmsEndpoint#sasl_username}
+  */
+  readonly saslUsername?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#security_protocol DmsEndpoint#security_protocol}
+  */
+  readonly securityProtocol?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#ssl_ca_certificate_arn DmsEndpoint#ssl_ca_certificate_arn}
+  */
+  readonly sslCaCertificateArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#ssl_client_certificate_arn DmsEndpoint#ssl_client_certificate_arn}
+  */
+  readonly sslClientCertificateArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#ssl_client_key_arn DmsEndpoint#ssl_client_key_arn}
+  */
+  readonly sslClientKeyArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#ssl_client_key_password DmsEndpoint#ssl_client_key_password}
+  */
+  readonly sslClientKeyPassword?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#topic DmsEndpoint#topic}
   */
   readonly topic?: string;
@@ -142,6 +206,22 @@ function dmsEndpointKafkaSettingsToTerraform(struct?: DmsEndpointKafkaSettings):
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     broker: cdktf.stringToTerraform(struct!.broker),
+    include_control_details: cdktf.booleanToTerraform(struct!.includeControlDetails),
+    include_null_and_empty: cdktf.booleanToTerraform(struct!.includeNullAndEmpty),
+    include_partition_value: cdktf.booleanToTerraform(struct!.includePartitionValue),
+    include_table_alter_operations: cdktf.booleanToTerraform(struct!.includeTableAlterOperations),
+    include_transaction_details: cdktf.booleanToTerraform(struct!.includeTransactionDetails),
+    message_format: cdktf.stringToTerraform(struct!.messageFormat),
+    message_max_bytes: cdktf.numberToTerraform(struct!.messageMaxBytes),
+    no_hex_prefix: cdktf.booleanToTerraform(struct!.noHexPrefix),
+    partition_include_schema_table: cdktf.booleanToTerraform(struct!.partitionIncludeSchemaTable),
+    sasl_password: cdktf.stringToTerraform(struct!.saslPassword),
+    sasl_username: cdktf.stringToTerraform(struct!.saslUsername),
+    security_protocol: cdktf.stringToTerraform(struct!.securityProtocol),
+    ssl_ca_certificate_arn: cdktf.stringToTerraform(struct!.sslCaCertificateArn),
+    ssl_client_certificate_arn: cdktf.stringToTerraform(struct!.sslClientCertificateArn),
+    ssl_client_key_arn: cdktf.stringToTerraform(struct!.sslClientKeyArn),
+    ssl_client_key_password: cdktf.stringToTerraform(struct!.sslClientKeyPassword),
     topic: cdktf.stringToTerraform(struct!.topic),
   }
 }
