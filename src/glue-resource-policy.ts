@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface GlueResourcePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_resource_policy.html#enable_hybrid GlueResourcePolicy#enable_hybrid}
+  */
+  readonly enableHybrid?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_resource_policy.html#policy GlueResourcePolicy#policy}
   */
   readonly policy: string;
@@ -45,12 +49,29 @@ export class GlueResourcePolicy extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._enableHybrid = config.enableHybrid;
     this._policy = config.policy;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // enable_hybrid - computed: false, optional: true, required: false
+  private _enableHybrid?: string;
+  public get enableHybrid() {
+    return this.getStringAttribute('enable_hybrid');
+  }
+  public set enableHybrid(value: string ) {
+    this._enableHybrid = value;
+  }
+  public resetEnableHybrid() {
+    this._enableHybrid = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableHybridInput() {
+    return this._enableHybrid
+  }
 
   // id - computed: true, optional: true, required: false
   public get id() {
@@ -76,6 +97,7 @@ export class GlueResourcePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enable_hybrid: cdktf.stringToTerraform(this._enableHybrid),
       policy: cdktf.stringToTerraform(this._policy),
     };
   }

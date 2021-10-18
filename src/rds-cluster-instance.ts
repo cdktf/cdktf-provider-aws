@@ -76,6 +76,10 @@ export interface RdsClusterInstanceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly performanceInsightsKmsKeyId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#performance_insights_retention_period RdsClusterInstance#performance_insights_retention_period}
+  */
+  readonly performanceInsightsRetentionPeriod?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster_instance.html#preferred_backup_window RdsClusterInstance#preferred_backup_window}
   */
   readonly preferredBackupWindow?: string;
@@ -180,6 +184,7 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
     this._monitoringRoleArn = config.monitoringRoleArn;
     this._performanceInsightsEnabled = config.performanceInsightsEnabled;
     this._performanceInsightsKmsKeyId = config.performanceInsightsKmsKeyId;
+    this._performanceInsightsRetentionPeriod = config.performanceInsightsRetentionPeriod;
     this._preferredBackupWindow = config.preferredBackupWindow;
     this._preferredMaintenanceWindow = config.preferredMaintenanceWindow;
     this._promotionTier = config.promotionTier;
@@ -489,6 +494,22 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
     return this._performanceInsightsKmsKeyId
   }
 
+  // performance_insights_retention_period - computed: true, optional: true, required: false
+  private _performanceInsightsRetentionPeriod?: number;
+  public get performanceInsightsRetentionPeriod() {
+    return this.getNumberAttribute('performance_insights_retention_period');
+  }
+  public set performanceInsightsRetentionPeriod(value: number) {
+    this._performanceInsightsRetentionPeriod = value;
+  }
+  public resetPerformanceInsightsRetentionPeriod() {
+    this._performanceInsightsRetentionPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get performanceInsightsRetentionPeriodInput() {
+    return this._performanceInsightsRetentionPeriod
+  }
+
   // port - computed: true, optional: false, required: false
   public get port() {
     return this.getNumberAttribute('port');
@@ -639,6 +660,7 @@ export class RdsClusterInstance extends cdktf.TerraformResource {
       monitoring_role_arn: cdktf.stringToTerraform(this._monitoringRoleArn),
       performance_insights_enabled: cdktf.booleanToTerraform(this._performanceInsightsEnabled),
       performance_insights_kms_key_id: cdktf.stringToTerraform(this._performanceInsightsKmsKeyId),
+      performance_insights_retention_period: cdktf.numberToTerraform(this._performanceInsightsRetentionPeriod),
       preferred_backup_window: cdktf.stringToTerraform(this._preferredBackupWindow),
       preferred_maintenance_window: cdktf.stringToTerraform(this._preferredMaintenanceWindow),
       promotion_tier: cdktf.numberToTerraform(this._promotionTier),

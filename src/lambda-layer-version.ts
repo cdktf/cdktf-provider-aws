@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface LambdaLayerVersionConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version.html#compatible_architectures LambdaLayerVersion#compatible_architectures}
+  */
+  readonly compatibleArchitectures?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version.html#compatible_runtimes LambdaLayerVersion#compatible_runtimes}
   */
   readonly compatibleRuntimes?: string[];
@@ -77,6 +81,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._compatibleArchitectures = config.compatibleArchitectures;
     this._compatibleRuntimes = config.compatibleRuntimes;
     this._description = config.description;
     this._filename = config.filename;
@@ -95,6 +100,22 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
   // arn - computed: true, optional: false, required: false
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+
+  // compatible_architectures - computed: false, optional: true, required: false
+  private _compatibleArchitectures?: string[];
+  public get compatibleArchitectures() {
+    return this.getListAttribute('compatible_architectures');
+  }
+  public set compatibleArchitectures(value: string[] ) {
+    this._compatibleArchitectures = value;
+  }
+  public resetCompatibleArchitectures() {
+    this._compatibleArchitectures = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compatibleArchitecturesInput() {
+    return this._compatibleArchitectures
   }
 
   // compatible_runtimes - computed: false, optional: true, required: false
@@ -279,6 +300,7 @@ export class LambdaLayerVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      compatible_architectures: cdktf.listMapper(cdktf.stringToTerraform)(this._compatibleArchitectures),
       compatible_runtimes: cdktf.listMapper(cdktf.stringToTerraform)(this._compatibleRuntimes),
       description: cdktf.stringToTerraform(this._description),
       filename: cdktf.stringToTerraform(this._filename),

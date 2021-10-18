@@ -186,12 +186,12 @@ export class DbEventSubscription extends cdktf.TerraformResource {
     return this._name
   }
 
-  // name_prefix - computed: false, optional: true, required: false
+  // name_prefix - computed: true, optional: true, required: false
   private _namePrefix?: string;
   public get namePrefix() {
     return this.getStringAttribute('name_prefix');
   }
-  public set namePrefix(value: string ) {
+  public set namePrefix(value: string) {
     this._namePrefix = value;
   }
   public resetNamePrefix() {

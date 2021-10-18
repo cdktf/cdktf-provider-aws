@@ -24,6 +24,10 @@ export interface VolumeAttachmentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly skipDestroy?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment.html#stop_instance_before_detaching VolumeAttachment#stop_instance_before_detaching}
+  */
+  readonly stopInstanceBeforeDetaching?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/volume_attachment.html#volume_id VolumeAttachment#volume_id}
   */
   readonly volumeId: string;
@@ -65,6 +69,7 @@ export class VolumeAttachment extends cdktf.TerraformResource {
     this._forceDetach = config.forceDetach;
     this._instanceId = config.instanceId;
     this._skipDestroy = config.skipDestroy;
+    this._stopInstanceBeforeDetaching = config.stopInstanceBeforeDetaching;
     this._volumeId = config.volumeId;
   }
 
@@ -135,6 +140,22 @@ export class VolumeAttachment extends cdktf.TerraformResource {
     return this._skipDestroy
   }
 
+  // stop_instance_before_detaching - computed: false, optional: true, required: false
+  private _stopInstanceBeforeDetaching?: boolean | cdktf.IResolvable;
+  public get stopInstanceBeforeDetaching() {
+    return this.getBooleanAttribute('stop_instance_before_detaching');
+  }
+  public set stopInstanceBeforeDetaching(value: boolean | cdktf.IResolvable ) {
+    this._stopInstanceBeforeDetaching = value;
+  }
+  public resetStopInstanceBeforeDetaching() {
+    this._stopInstanceBeforeDetaching = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stopInstanceBeforeDetachingInput() {
+    return this._stopInstanceBeforeDetaching
+  }
+
   // volume_id - computed: false, optional: false, required: true
   private _volumeId: string;
   public get volumeId() {
@@ -158,6 +179,7 @@ export class VolumeAttachment extends cdktf.TerraformResource {
       force_detach: cdktf.booleanToTerraform(this._forceDetach),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
+      stop_instance_before_detaching: cdktf.booleanToTerraform(this._stopInstanceBeforeDetaching),
       volume_id: cdktf.stringToTerraform(this._volumeId),
     };
   }
