@@ -73,7 +73,7 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
 
   // identifier - computed: false, optional: false, required: true
-  private _identifier: string;
+  private _identifier?: string; 
   public get identifier() {
     return this.getStringAttribute('identifier');
   }
@@ -91,11 +91,11 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
 
   // role_arn - computed: false, optional: true, required: false
-  private _roleArn?: string;
+  private _roleArn?: string | undefined; 
   public get roleArn() {
     return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string ) {
+  public set roleArn(value: string | undefined) {
     this._roleArn = value;
   }
   public resetRoleArn() {
@@ -107,7 +107,7 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
 
   // type_name - computed: false, optional: false, required: true
-  private _typeName: string;
+  private _typeName?: string; 
   public get typeName() {
     return this.getStringAttribute('type_name');
   }
@@ -120,11 +120,11 @@ export class DataAwsCloudcontrolapiResource extends cdktf.TerraformDataSource {
   }
 
   // type_version_id - computed: false, optional: true, required: false
-  private _typeVersionId?: string;
+  private _typeVersionId?: string | undefined; 
   public get typeVersionId() {
     return this.getStringAttribute('type_version_id');
   }
-  public set typeVersionId(value: string ) {
+  public set typeVersionId(value: string | undefined) {
     this._typeVersionId = value;
   }
   public resetTypeVersionId() {

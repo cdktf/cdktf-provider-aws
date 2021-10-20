@@ -35,6 +35,9 @@ export interface DataAwsIdentitystoreGroupFilter {
 
 function dataAwsIdentitystoreGroupFilterToTerraform(struct?: DataAwsIdentitystoreGroupFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     attribute_path: cdktf.stringToTerraform(struct!.attributePath),
     attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
@@ -89,11 +92,11 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
   }
 
   // group_id - computed: true, optional: true, required: false
-  private _groupId?: string;
+  private _groupId?: string | undefined; 
   public get groupId() {
     return this.getStringAttribute('group_id');
   }
-  public set groupId(value: string) {
+  public set groupId(value: string | undefined) {
     this._groupId = value;
   }
   public resetGroupId() {
@@ -110,7 +113,7 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
   }
 
   // identity_store_id - computed: false, optional: false, required: true
-  private _identityStoreId: string;
+  private _identityStoreId?: string; 
   public get identityStoreId() {
     return this.getStringAttribute('identity_store_id');
   }
@@ -123,8 +126,9 @@ export class DataAwsIdentitystoreGroup extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter: DataAwsIdentitystoreGroupFilter[];
+  private _filter?: DataAwsIdentitystoreGroupFilter[]; 
   public get filter() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('filter') as any;
   }
   public set filter(value: DataAwsIdentitystoreGroupFilter[]) {

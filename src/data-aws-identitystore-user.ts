@@ -35,6 +35,9 @@ export interface DataAwsIdentitystoreUserFilter {
 
 function dataAwsIdentitystoreUserFilterToTerraform(struct?: DataAwsIdentitystoreUserFilter): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     attribute_path: cdktf.stringToTerraform(struct!.attributePath),
     attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
@@ -89,7 +92,7 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   }
 
   // identity_store_id - computed: false, optional: false, required: true
-  private _identityStoreId: string;
+  private _identityStoreId?: string; 
   public get identityStoreId() {
     return this.getStringAttribute('identity_store_id');
   }
@@ -102,11 +105,11 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   }
 
   // user_id - computed: true, optional: true, required: false
-  private _userId?: string;
+  private _userId?: string | undefined; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }
-  public set userId(value: string) {
+  public set userId(value: string | undefined) {
     this._userId = value;
   }
   public resetUserId() {
@@ -123,8 +126,9 @@ export class DataAwsIdentitystoreUser extends cdktf.TerraformDataSource {
   }
 
   // filter - computed: false, optional: false, required: true
-  private _filter: DataAwsIdentitystoreUserFilter[];
+  private _filter?: DataAwsIdentitystoreUserFilter[]; 
   public get filter() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('filter') as any;
   }
   public set filter(value: DataAwsIdentitystoreUserFilter[]) {

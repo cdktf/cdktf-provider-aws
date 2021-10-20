@@ -58,11 +58,12 @@ export class DataAwsDefaultTags extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable
-  public get tags(): { [key: string]: string } | cdktf.IResolvable {
-    return this.interpolationForAttribute('tags') as any; // Getting the computed value is not yet implemented
+  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  public get tags() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
     this._tags = value;
   }
   public resetTags() {
