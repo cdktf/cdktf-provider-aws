@@ -38,9 +38,6 @@
       "steps": [
         {
           "exec": "jsii --silence-warnings=reserved-word --no-fix-peer-dependencies"
-        },
-        {
-          "spawn": "docgen"
         }
       ]
     },
@@ -63,6 +60,9 @@
         },
         {
           "spawn": "package"
+        },
+        {
+          "spawn": "docgen"
         }
       ]
     },
@@ -262,7 +262,7 @@
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @cdktf/provider-project @types/node cdktf-cli cdktf constructs dot-prop jsii jsii-diff jsii-docgen jsii-pacmak npm-check-updates standard-version typescript cdktf constructs"
+          "exec": "yarn upgrade @cdktf/provider-project @types/node cdktf-cli cdktf constructs dot-prop jsii-diff jsii-docgen jsii-pacmak jsii npm-check-updates standard-version typescript cdktf constructs"
         },
         {
           "exec": "npx projen"
