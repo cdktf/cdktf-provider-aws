@@ -20,8 +20,8 @@ jobs:
           ref: main
       - name: Set git identity
         run: |-
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "team-tf-cdk"
+          git config user.email "github-team-tf-cdk@hashicorp.com"
       - name: Setup Node.js
         uses: actions/setup-node@v2.2.0
         with:
@@ -60,8 +60,8 @@ jobs:
           ref: main
       - name: Set git identity
         run: |-
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "team-tf-cdk"
+          git config user.email "github-team-tf-cdk@hashicorp.com"
       - name: Download patch
         uses: actions/download-artifact@v2
         with:
@@ -91,6 +91,7 @@ jobs:
             *Automatically created by projen via the "upgrade-main" workflow*
           branch: github-actions/upgrade-main
           title: "chore(deps): upgrade dependencies"
+          labels: automerge
           body: >-
             Upgrades project dependencies. See details in [workflow run].
 
@@ -102,8 +103,8 @@ jobs:
 
 
             *Automatically created by projen via the "upgrade-main" workflow*
-          author: github-actions <github-actions@github.com>
-          committer: github-actions <github-actions@github.com>
+          author: team-tf-cdk <github-team-tf-cdk@hashicorp.com>
+          committer: team-tf-cdk <github-team-tf-cdk@hashicorp.com>
           signoff: true
       - name: Update status check
         if: steps.create-pr.outputs.pull-request-url != ''

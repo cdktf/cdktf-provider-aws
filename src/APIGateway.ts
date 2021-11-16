@@ -4893,6 +4893,33 @@ export namespace APIGateway {
     */
     readonly throttleSettings?: ApiGatewayUsagePlanThrottleSettings;
   }
+  export interface ApiGatewayUsagePlanApiStagesThrottle {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#burst_limit ApiGatewayUsagePlan#burst_limit}
+    */
+    readonly burstLimit?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#path ApiGatewayUsagePlan#path}
+    */
+    readonly path: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#rate_limit ApiGatewayUsagePlan#rate_limit}
+    */
+    readonly rateLimit?: number;
+  }
+
+  function apiGatewayUsagePlanApiStagesThrottleToTerraform(struct?: ApiGatewayUsagePlanApiStagesThrottle): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      burst_limit: cdktf.numberToTerraform(struct!.burstLimit),
+      path: cdktf.stringToTerraform(struct!.path),
+      rate_limit: cdktf.numberToTerraform(struct!.rateLimit),
+    }
+  }
+
   export interface ApiGatewayUsagePlanApiStages {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#api_id ApiGatewayUsagePlan#api_id}
@@ -4902,6 +4929,12 @@ export namespace APIGateway {
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#stage ApiGatewayUsagePlan#stage}
     */
     readonly stage: string;
+    /**
+    * throttle block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_usage_plan.html#throttle ApiGatewayUsagePlan#throttle}
+    */
+    readonly throttle?: ApiGatewayUsagePlanApiStagesThrottle[];
   }
 
   function apiGatewayUsagePlanApiStagesToTerraform(struct?: ApiGatewayUsagePlanApiStages): any {
@@ -4912,6 +4945,7 @@ export namespace APIGateway {
     return {
       api_id: cdktf.stringToTerraform(struct!.apiId),
       stage: cdktf.stringToTerraform(struct!.stage),
+      throttle: cdktf.listMapper(apiGatewayUsagePlanApiStagesThrottleToTerraform)(struct!.throttle),
     }
   }
 

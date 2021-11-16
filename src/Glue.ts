@@ -2599,6 +2599,14 @@ export namespace Glue {
     */
     readonly connectionName?: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#dlq_event_queue_arn GlueCrawler#dlq_event_queue_arn}
+    */
+    readonly dlqEventQueueArn?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#event_queue_arn GlueCrawler#event_queue_arn}
+    */
+    readonly eventQueueArn?: string;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler.html#exclusions GlueCrawler#exclusions}
     */
     readonly exclusions?: string[];
@@ -2619,6 +2627,8 @@ export namespace Glue {
     }
     return {
       connection_name: cdktf.stringToTerraform(struct!.connectionName),
+      dlq_event_queue_arn: cdktf.stringToTerraform(struct!.dlqEventQueueArn),
+      event_queue_arn: cdktf.stringToTerraform(struct!.eventQueueArn),
       exclusions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusions),
       path: cdktf.stringToTerraform(struct!.path),
       sample_size: cdktf.numberToTerraform(struct!.sampleSize),

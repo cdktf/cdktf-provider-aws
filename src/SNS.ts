@@ -320,7 +320,7 @@ export namespace SNS {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_sms_preferences.html#monthly_spend_limit SnsSmsPreferences#monthly_spend_limit}
     */
-    readonly monthlySpendLimit?: string;
+    readonly monthlySpendLimit?: number;
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_sms_preferences.html#usage_report_s3_bucket SnsSmsPreferences#usage_report_s3_bucket}
     */
@@ -440,12 +440,12 @@ export namespace SNS {
       return this.getStringAttribute('id');
     }
 
-    // monthly_spend_limit - computed: false, optional: true, required: false
-    private _monthlySpendLimit?: string | undefined; 
+    // monthly_spend_limit - computed: true, optional: true, required: false
+    private _monthlySpendLimit?: number | undefined; 
     public get monthlySpendLimit() {
-      return this.getStringAttribute('monthly_spend_limit');
+      return this.getNumberAttribute('monthly_spend_limit');
     }
-    public set monthlySpendLimit(value: string | undefined) {
+    public set monthlySpendLimit(value: number | undefined) {
       this._monthlySpendLimit = value;
     }
     public resetMonthlySpendLimit() {
@@ -482,7 +482,7 @@ export namespace SNS {
         default_sms_type: cdktf.stringToTerraform(this._defaultSmsType),
         delivery_status_iam_role_arn: cdktf.stringToTerraform(this._deliveryStatusIamRoleArn),
         delivery_status_success_sampling_rate: cdktf.stringToTerraform(this._deliveryStatusSuccessSamplingRate),
-        monthly_spend_limit: cdktf.stringToTerraform(this._monthlySpendLimit),
+        monthly_spend_limit: cdktf.numberToTerraform(this._monthlySpendLimit),
         usage_report_s3_bucket: cdktf.stringToTerraform(this._usageReportS3Bucket),
       };
     }

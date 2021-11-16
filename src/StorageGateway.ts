@@ -1346,6 +1346,10 @@ export namespace StorageGateway {
   }
   export interface StoragegatewayNfsFileShareConfig extends cdktf.TerraformMetaArguments {
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#audit_destination_arn StoragegatewayNfsFileShare#audit_destination_arn}
+    */
+    readonly auditDestinationArn?: string;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_nfs_file_share.html#client_list StoragegatewayNfsFileShare#client_list}
     */
     readonly clientList: string[];
@@ -1695,6 +1699,7 @@ export namespace StorageGateway {
         count: config.count,
         lifecycle: config.lifecycle
       });
+      this._auditDestinationArn = config.auditDestinationArn;
       this._clientList = config.clientList;
       this._defaultStorageClass = config.defaultStorageClass;
       this._fileShareName = config.fileShareName;
@@ -1723,6 +1728,22 @@ export namespace StorageGateway {
     // arn - computed: true, optional: false, required: false
     public get arn() {
       return this.getStringAttribute('arn');
+    }
+
+    // audit_destination_arn - computed: false, optional: true, required: false
+    private _auditDestinationArn?: string | undefined; 
+    public get auditDestinationArn() {
+      return this.getStringAttribute('audit_destination_arn');
+    }
+    public set auditDestinationArn(value: string | undefined) {
+      this._auditDestinationArn = value;
+    }
+    public resetAuditDestinationArn() {
+      this._auditDestinationArn = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get auditDestinationArnInput() {
+      return this._auditDestinationArn
     }
 
     // client_list - computed: false, optional: false, required: true
@@ -2043,6 +2064,7 @@ export namespace StorageGateway {
 
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
+        audit_destination_arn: cdktf.stringToTerraform(this._auditDestinationArn),
         client_list: cdktf.listMapper(cdktf.stringToTerraform)(this._clientList),
         default_storage_class: cdktf.stringToTerraform(this._defaultStorageClass),
         file_share_name: cdktf.stringToTerraform(this._fileShareName),

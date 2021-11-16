@@ -330,6 +330,14 @@ export namespace AutoScaling {
 
   export interface AutoscalingGroupInstanceRefreshPreferences {
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#checkpoint_delay AutoscalingGroup#checkpoint_delay}
+    */
+    readonly checkpointDelay?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#checkpoint_percentages AutoscalingGroup#checkpoint_percentages}
+    */
+    readonly checkpointPercentages?: number[];
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group.html#instance_warmup AutoscalingGroup#instance_warmup}
     */
     readonly instanceWarmup?: string;
@@ -345,6 +353,8 @@ export namespace AutoScaling {
       throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
     }
     return {
+      checkpoint_delay: cdktf.stringToTerraform(struct!.checkpointDelay),
+      checkpoint_percentages: cdktf.listMapper(cdktf.numberToTerraform)(struct!.checkpointPercentages),
       instance_warmup: cdktf.stringToTerraform(struct!.instanceWarmup),
       min_healthy_percentage: cdktf.numberToTerraform(struct!.minHealthyPercentage),
     }
@@ -358,6 +368,39 @@ export namespace AutoScaling {
     */
     public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
       super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // checkpoint_delay - computed: false, optional: true, required: false
+    private _checkpointDelay?: string | undefined; 
+    public get checkpointDelay() {
+      return this.getStringAttribute('checkpoint_delay');
+    }
+    public set checkpointDelay(value: string | undefined) {
+      this._checkpointDelay = value;
+    }
+    public resetCheckpointDelay() {
+      this._checkpointDelay = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get checkpointDelayInput() {
+      return this._checkpointDelay
+    }
+
+    // checkpoint_percentages - computed: false, optional: true, required: false
+    private _checkpointPercentages?: number[] | undefined; 
+    public get checkpointPercentages() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('checkpoint_percentages') as any;
+    }
+    public set checkpointPercentages(value: number[] | undefined) {
+      this._checkpointPercentages = value;
+    }
+    public resetCheckpointPercentages() {
+      this._checkpointPercentages = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get checkpointPercentagesInput() {
+      return this._checkpointPercentages
     }
 
     // instance_warmup - computed: false, optional: true, required: false
