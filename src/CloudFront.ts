@@ -17,10 +17,6 @@ export namespace CloudFront {
     */
     readonly defaultTtl?: number;
     /**
-    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#etag CloudfrontCachePolicy#etag}
-    */
-    readonly etag?: string;
-    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#max_ttl CloudfrontCachePolicy#max_ttl}
     */
     readonly maxTtl?: number;
@@ -37,7 +33,7 @@ export namespace CloudFront {
     * 
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy.html#parameters_in_cache_key_and_forwarded_to_origin CloudfrontCachePolicy#parameters_in_cache_key_and_forwarded_to_origin}
     */
-    readonly parametersInCacheKeyAndForwardedToOrigin?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin;
+    readonly parametersInCacheKeyAndForwardedToOrigin: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin;
   }
   export interface CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies {
     /**
@@ -525,7 +521,6 @@ export namespace CloudFront {
       });
       this._comment = config.comment;
       this._defaultTtl = config.defaultTtl;
-      this._etag = config.etag;
       this._maxTtl = config.maxTtl;
       this._minTtl = config.minTtl;
       this._name = config.name;
@@ -568,20 +563,9 @@ export namespace CloudFront {
       return this._defaultTtl
     }
 
-    // etag - computed: true, optional: true, required: false
-    private _etag?: string | undefined; 
+    // etag - computed: true, optional: false, required: false
     public get etag() {
       return this.getStringAttribute('etag');
-    }
-    public set etag(value: string | undefined) {
-      this._etag = value;
-    }
-    public resetEtag() {
-      this._etag = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get etagInput() {
-      return this._etag
     }
 
     // id - computed: true, optional: true, required: false
@@ -634,17 +618,14 @@ export namespace CloudFront {
       return this._name
     }
 
-    // parameters_in_cache_key_and_forwarded_to_origin - computed: false, optional: true, required: false
-    private _parametersInCacheKeyAndForwardedToOrigin?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin | undefined; 
+    // parameters_in_cache_key_and_forwarded_to_origin - computed: false, optional: false, required: true
+    private _parametersInCacheKeyAndForwardedToOrigin?: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin; 
     private __parametersInCacheKeyAndForwardedToOriginOutput = new CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginOutputReference(this as any, "parameters_in_cache_key_and_forwarded_to_origin", true);
     public get parametersInCacheKeyAndForwardedToOrigin() {
       return this.__parametersInCacheKeyAndForwardedToOriginOutput;
     }
-    public putParametersInCacheKeyAndForwardedToOrigin(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin | undefined) {
+    public putParametersInCacheKeyAndForwardedToOrigin(value: CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOrigin) {
       this._parametersInCacheKeyAndForwardedToOrigin = value;
-    }
-    public resetParametersInCacheKeyAndForwardedToOrigin() {
-      this._parametersInCacheKeyAndForwardedToOrigin = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get parametersInCacheKeyAndForwardedToOriginInput() {
@@ -659,7 +640,6 @@ export namespace CloudFront {
       return {
         comment: cdktf.stringToTerraform(this._comment),
         default_ttl: cdktf.numberToTerraform(this._defaultTtl),
-        etag: cdktf.stringToTerraform(this._etag),
         max_ttl: cdktf.numberToTerraform(this._maxTtl),
         min_ttl: cdktf.numberToTerraform(this._minTtl),
         name: cdktf.stringToTerraform(this._name),
@@ -1102,6 +1082,10 @@ export namespace CloudFront {
     */
     readonly realtimeLogConfigArn?: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#response_headers_policy_id CloudfrontDistribution#response_headers_policy_id}
+    */
+    readonly responseHeadersPolicyId?: string;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#smooth_streaming CloudfrontDistribution#smooth_streaming}
     */
     readonly smoothStreaming?: boolean | cdktf.IResolvable;
@@ -1157,6 +1141,7 @@ export namespace CloudFront {
       min_ttl: cdktf.numberToTerraform(struct!.minTtl),
       origin_request_policy_id: cdktf.stringToTerraform(struct!.originRequestPolicyId),
       realtime_log_config_arn: cdktf.stringToTerraform(struct!.realtimeLogConfigArn),
+      response_headers_policy_id: cdktf.stringToTerraform(struct!.responseHeadersPolicyId),
       smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
       target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
       trusted_key_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedKeyGroups),
@@ -1330,6 +1315,22 @@ export namespace CloudFront {
     // Temporarily expose input value. Use with caution.
     public get realtimeLogConfigArnInput() {
       return this._realtimeLogConfigArn
+    }
+
+    // response_headers_policy_id - computed: false, optional: true, required: false
+    private _responseHeadersPolicyId?: string | undefined; 
+    public get responseHeadersPolicyId() {
+      return this.getStringAttribute('response_headers_policy_id');
+    }
+    public set responseHeadersPolicyId(value: string | undefined) {
+      this._responseHeadersPolicyId = value;
+    }
+    public resetResponseHeadersPolicyId() {
+      this._responseHeadersPolicyId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get responseHeadersPolicyIdInput() {
+      return this._responseHeadersPolicyId
     }
 
     // smooth_streaming - computed: false, optional: true, required: false
@@ -1798,6 +1799,10 @@ export namespace CloudFront {
     */
     readonly realtimeLogConfigArn?: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#response_headers_policy_id CloudfrontDistribution#response_headers_policy_id}
+    */
+    readonly responseHeadersPolicyId?: string;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html#smooth_streaming CloudfrontDistribution#smooth_streaming}
     */
     readonly smoothStreaming?: boolean | cdktf.IResolvable;
@@ -1854,6 +1859,7 @@ export namespace CloudFront {
       origin_request_policy_id: cdktf.stringToTerraform(struct!.originRequestPolicyId),
       path_pattern: cdktf.stringToTerraform(struct!.pathPattern),
       realtime_log_config_arn: cdktf.stringToTerraform(struct!.realtimeLogConfigArn),
+      response_headers_policy_id: cdktf.stringToTerraform(struct!.responseHeadersPolicyId),
       smooth_streaming: cdktf.booleanToTerraform(struct!.smoothStreaming),
       target_origin_id: cdktf.stringToTerraform(struct!.targetOriginId),
       trusted_key_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.trustedKeyGroups),
@@ -2964,6 +2970,646 @@ export namespace CloudFront {
       };
     }
   }
+  export interface CloudfrontFieldLevelEncryptionConfigConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#comment CloudfrontFieldLevelEncryptionConfig#comment}
+    */
+    readonly comment?: string;
+    /**
+    * content_type_profile_config block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#content_type_profile_config CloudfrontFieldLevelEncryptionConfig#content_type_profile_config}
+    */
+    readonly contentTypeProfileConfig: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig;
+    /**
+    * query_arg_profile_config block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#query_arg_profile_config CloudfrontFieldLevelEncryptionConfig#query_arg_profile_config}
+    */
+    readonly queryArgProfileConfig: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig;
+  }
+  export interface CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItems {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#content_type CloudfrontFieldLevelEncryptionConfig#content_type}
+    */
+    readonly contentType: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#format CloudfrontFieldLevelEncryptionConfig#format}
+    */
+    readonly format: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#profile_id CloudfrontFieldLevelEncryptionConfig#profile_id}
+    */
+    readonly profileId?: string;
+  }
+
+  function cloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsToTerraform(struct?: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItems): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      content_type: cdktf.stringToTerraform(struct!.contentType),
+      format: cdktf.stringToTerraform(struct!.format),
+      profile_id: cdktf.stringToTerraform(struct!.profileId),
+    }
+  }
+
+  export interface CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles {
+    /**
+    * items block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#items CloudfrontFieldLevelEncryptionConfig#items}
+    */
+    readonly items: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItems[];
+  }
+
+  function cloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesToTerraform(struct?: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference | CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItemsToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: false, required: true
+    private _items?: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItems[]; 
+    public get items() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('items') as any;
+    }
+    public set items(value: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesItems[]) {
+      this._items = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+  export interface CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#forward_when_content_type_is_unknown CloudfrontFieldLevelEncryptionConfig#forward_when_content_type_is_unknown}
+    */
+    readonly forwardWhenContentTypeIsUnknown: boolean | cdktf.IResolvable;
+    /**
+    * content_type_profiles block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#content_type_profiles CloudfrontFieldLevelEncryptionConfig#content_type_profiles}
+    */
+    readonly contentTypeProfiles: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles;
+  }
+
+  function cloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigToTerraform(struct?: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference | CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      forward_when_content_type_is_unknown: cdktf.booleanToTerraform(struct!.forwardWhenContentTypeIsUnknown),
+      content_type_profiles: cloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesToTerraform(struct!.contentTypeProfiles),
+    }
+  }
+
+  export class CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // forward_when_content_type_is_unknown - computed: false, optional: false, required: true
+    private _forwardWhenContentTypeIsUnknown?: boolean | cdktf.IResolvable; 
+    public get forwardWhenContentTypeIsUnknown() {
+      return this.getBooleanAttribute('forward_when_content_type_is_unknown') as any;
+    }
+    public set forwardWhenContentTypeIsUnknown(value: boolean | cdktf.IResolvable) {
+      this._forwardWhenContentTypeIsUnknown = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get forwardWhenContentTypeIsUnknownInput() {
+      return this._forwardWhenContentTypeIsUnknown
+    }
+
+    // content_type_profiles - computed: false, optional: false, required: true
+    private _contentTypeProfiles?: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles; 
+    private __contentTypeProfilesOutput = new CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfilesOutputReference(this as any, "content_type_profiles", true);
+    public get contentTypeProfiles() {
+      return this.__contentTypeProfilesOutput;
+    }
+    public putContentTypeProfiles(value: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigContentTypeProfiles) {
+      this._contentTypeProfiles = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get contentTypeProfilesInput() {
+      return this._contentTypeProfiles
+    }
+  }
+  export interface CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItems {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#profile_id CloudfrontFieldLevelEncryptionConfig#profile_id}
+    */
+    readonly profileId: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#query_arg CloudfrontFieldLevelEncryptionConfig#query_arg}
+    */
+    readonly queryArg: string;
+  }
+
+  function cloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsToTerraform(struct?: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItems): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      profile_id: cdktf.stringToTerraform(struct!.profileId),
+      query_arg: cdktf.stringToTerraform(struct!.queryArg),
+    }
+  }
+
+  export interface CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles {
+    /**
+    * items block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#items CloudfrontFieldLevelEncryptionConfig#items}
+    */
+    readonly items?: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItems[];
+  }
+
+  function cloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesToTerraform(struct?: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference | CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: true, required: false
+    private _items?: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItems[] | undefined; 
+    public get items() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('items') as any;
+    }
+    public set items(value: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItems[] | undefined) {
+      this._items = value;
+    }
+    public resetItems() {
+      this._items = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+  export interface CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#forward_when_query_arg_profile_is_unknown CloudfrontFieldLevelEncryptionConfig#forward_when_query_arg_profile_is_unknown}
+    */
+    readonly forwardWhenQueryArgProfileIsUnknown: boolean | cdktf.IResolvable;
+    /**
+    * query_arg_profiles block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html#query_arg_profiles CloudfrontFieldLevelEncryptionConfig#query_arg_profiles}
+    */
+    readonly queryArgProfiles?: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles;
+  }
+
+  function cloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigToTerraform(struct?: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference | CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      forward_when_query_arg_profile_is_unknown: cdktf.booleanToTerraform(struct!.forwardWhenQueryArgProfileIsUnknown),
+      query_arg_profiles: cloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesToTerraform(struct!.queryArgProfiles),
+    }
+  }
+
+  export class CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // forward_when_query_arg_profile_is_unknown - computed: false, optional: false, required: true
+    private _forwardWhenQueryArgProfileIsUnknown?: boolean | cdktf.IResolvable; 
+    public get forwardWhenQueryArgProfileIsUnknown() {
+      return this.getBooleanAttribute('forward_when_query_arg_profile_is_unknown') as any;
+    }
+    public set forwardWhenQueryArgProfileIsUnknown(value: boolean | cdktf.IResolvable) {
+      this._forwardWhenQueryArgProfileIsUnknown = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get forwardWhenQueryArgProfileIsUnknownInput() {
+      return this._forwardWhenQueryArgProfileIsUnknown
+    }
+
+    // query_arg_profiles - computed: false, optional: true, required: false
+    private _queryArgProfiles?: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles | undefined; 
+    private __queryArgProfilesOutput = new CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesOutputReference(this as any, "query_arg_profiles", true);
+    public get queryArgProfiles() {
+      return this.__queryArgProfilesOutput;
+    }
+    public putQueryArgProfiles(value: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfiles | undefined) {
+      this._queryArgProfiles = value;
+    }
+    public resetQueryArgProfiles() {
+      this._queryArgProfiles = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get queryArgProfilesInput() {
+      return this._queryArgProfiles
+    }
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html aws_cloudfront_field_level_encryption_config}
+  */
+  export class CloudfrontFieldLevelEncryptionConfig extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_cloudfront_field_level_encryption_config";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_config.html aws_cloudfront_field_level_encryption_config} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options CloudfrontFieldLevelEncryptionConfigConfig
+    */
+    public constructor(scope: Construct, id: string, config: CloudfrontFieldLevelEncryptionConfigConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_cloudfront_field_level_encryption_config',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._comment = config.comment;
+      this._contentTypeProfileConfig = config.contentTypeProfileConfig;
+      this._queryArgProfileConfig = config.queryArgProfileConfig;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // caller_reference - computed: true, optional: false, required: false
+    public get callerReference() {
+      return this.getStringAttribute('caller_reference');
+    }
+
+    // comment - computed: false, optional: true, required: false
+    private _comment?: string | undefined; 
+    public get comment() {
+      return this.getStringAttribute('comment');
+    }
+    public set comment(value: string | undefined) {
+      this._comment = value;
+    }
+    public resetComment() {
+      this._comment = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get commentInput() {
+      return this._comment
+    }
+
+    // etag - computed: true, optional: false, required: false
+    public get etag() {
+      return this.getStringAttribute('etag');
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // content_type_profile_config - computed: false, optional: false, required: true
+    private _contentTypeProfileConfig?: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig; 
+    private __contentTypeProfileConfigOutput = new CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference(this as any, "content_type_profile_config", true);
+    public get contentTypeProfileConfig() {
+      return this.__contentTypeProfileConfigOutput;
+    }
+    public putContentTypeProfileConfig(value: CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfig) {
+      this._contentTypeProfileConfig = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get contentTypeProfileConfigInput() {
+      return this._contentTypeProfileConfig
+    }
+
+    // query_arg_profile_config - computed: false, optional: false, required: true
+    private _queryArgProfileConfig?: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig; 
+    private __queryArgProfileConfigOutput = new CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigOutputReference(this as any, "query_arg_profile_config", true);
+    public get queryArgProfileConfig() {
+      return this.__queryArgProfileConfigOutput;
+    }
+    public putQueryArgProfileConfig(value: CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfig) {
+      this._queryArgProfileConfig = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get queryArgProfileConfigInput() {
+      return this._queryArgProfileConfig
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        comment: cdktf.stringToTerraform(this._comment),
+        content_type_profile_config: cloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigToTerraform(this._contentTypeProfileConfig),
+        query_arg_profile_config: cloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigToTerraform(this._queryArgProfileConfig),
+      };
+    }
+  }
+  export interface CloudfrontFieldLevelEncryptionProfileConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html#comment CloudfrontFieldLevelEncryptionProfile#comment}
+    */
+    readonly comment?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html#name CloudfrontFieldLevelEncryptionProfile#name}
+    */
+    readonly name: string;
+    /**
+    * encryption_entities block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html#encryption_entities CloudfrontFieldLevelEncryptionProfile#encryption_entities}
+    */
+    readonly encryptionEntities: CloudfrontFieldLevelEncryptionProfileEncryptionEntities;
+  }
+  export interface CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html#items CloudfrontFieldLevelEncryptionProfile#items}
+    */
+    readonly items?: string[];
+  }
+
+  function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsToTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference | CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: true, required: false
+    private _items?: string[] | undefined; 
+    public get items() {
+      return this.getListAttribute('items');
+    }
+    public set items(value: string[] | undefined) {
+      this._items = value;
+    }
+    public resetItems() {
+      this._items = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+  export interface CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html#provider_id CloudfrontFieldLevelEncryptionProfile#provider_id}
+    */
+    readonly providerId: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html#public_key_id CloudfrontFieldLevelEncryptionProfile#public_key_id}
+    */
+    readonly publicKeyId: string;
+    /**
+    * field_patterns block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html#field_patterns CloudfrontFieldLevelEncryptionProfile#field_patterns}
+    */
+    readonly fieldPatterns: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatterns;
+  }
+
+  function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      provider_id: cdktf.stringToTerraform(struct!.providerId),
+      public_key_id: cdktf.stringToTerraform(struct!.publicKeyId),
+      field_patterns: cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsFieldPatternsToTerraform(struct!.fieldPatterns),
+    }
+  }
+
+  export interface CloudfrontFieldLevelEncryptionProfileEncryptionEntities {
+    /**
+    * items block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html#items CloudfrontFieldLevelEncryptionProfile#items}
+    */
+    readonly items?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[];
+  }
+
+  function cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToTerraform(struct?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference | CloudfrontFieldLevelEncryptionProfileEncryptionEntities): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: true, required: false
+    private _items?: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[] | undefined; 
+    public get items() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('items') as any;
+    }
+    public set items(value: CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItems[] | undefined) {
+      this._items = value;
+    }
+    public resetItems() {
+      this._items = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html aws_cloudfront_field_level_encryption_profile}
+  */
+  export class CloudfrontFieldLevelEncryptionProfile extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_cloudfront_field_level_encryption_profile";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_field_level_encryption_profile.html aws_cloudfront_field_level_encryption_profile} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options CloudfrontFieldLevelEncryptionProfileConfig
+    */
+    public constructor(scope: Construct, id: string, config: CloudfrontFieldLevelEncryptionProfileConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_cloudfront_field_level_encryption_profile',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._comment = config.comment;
+      this._name = config.name;
+      this._encryptionEntities = config.encryptionEntities;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // caller_reference - computed: true, optional: false, required: false
+    public get callerReference() {
+      return this.getStringAttribute('caller_reference');
+    }
+
+    // comment - computed: false, optional: true, required: false
+    private _comment?: string | undefined; 
+    public get comment() {
+      return this.getStringAttribute('comment');
+    }
+    public set comment(value: string | undefined) {
+      this._comment = value;
+    }
+    public resetComment() {
+      this._comment = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get commentInput() {
+      return this._comment
+    }
+
+    // etag - computed: true, optional: false, required: false
+    public get etag() {
+      return this.getStringAttribute('etag');
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // name - computed: false, optional: false, required: true
+    private _name?: string; 
+    public get name() {
+      return this.getStringAttribute('name');
+    }
+    public set name(value: string) {
+      this._name = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nameInput() {
+      return this._name
+    }
+
+    // encryption_entities - computed: false, optional: false, required: true
+    private _encryptionEntities?: CloudfrontFieldLevelEncryptionProfileEncryptionEntities; 
+    private __encryptionEntitiesOutput = new CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesOutputReference(this as any, "encryption_entities", true);
+    public get encryptionEntities() {
+      return this.__encryptionEntitiesOutput;
+    }
+    public putEncryptionEntities(value: CloudfrontFieldLevelEncryptionProfileEncryptionEntities) {
+      this._encryptionEntities = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get encryptionEntitiesInput() {
+      return this._encryptionEntities
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        comment: cdktf.stringToTerraform(this._comment),
+        name: cdktf.stringToTerraform(this._name),
+        encryption_entities: cloudfrontFieldLevelEncryptionProfileEncryptionEntitiesToTerraform(this._encryptionEntities),
+      };
+    }
+  }
   export interface CloudfrontFunctionConfig extends cdktf.TerraformMetaArguments {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_function.html#code CloudfrontFunction#code}
@@ -3072,6 +3718,11 @@ export namespace CloudFront {
     // id - computed: true, optional: true, required: false
     public get id() {
       return this.getStringAttribute('id');
+    }
+
+    // live_stage_etag - computed: true, optional: false, required: false
+    public get liveStageEtag() {
+      return this.getStringAttribute('live_stage_etag');
     }
 
     // name - computed: false, optional: false, required: true
@@ -3542,10 +4193,6 @@ export namespace CloudFront {
     */
     readonly comment?: string;
     /**
-    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#etag CloudfrontOriginRequestPolicy#etag}
-    */
-    readonly etag?: string;
-    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_request_policy.html#name CloudfrontOriginRequestPolicy#name}
     */
     readonly name: string;
@@ -3926,7 +4573,6 @@ export namespace CloudFront {
         lifecycle: config.lifecycle
       });
       this._comment = config.comment;
-      this._etag = config.etag;
       this._name = config.name;
       this._cookiesConfig = config.cookiesConfig;
       this._headersConfig = config.headersConfig;
@@ -3953,20 +4599,9 @@ export namespace CloudFront {
       return this._comment
     }
 
-    // etag - computed: true, optional: true, required: false
-    private _etag?: string | undefined; 
+    // etag - computed: true, optional: false, required: false
     public get etag() {
       return this.getStringAttribute('etag');
-    }
-    public set etag(value: string | undefined) {
-      this._etag = value;
-    }
-    public resetEtag() {
-      this._etag = undefined;
-    }
-    // Temporarily expose input value. Use with caution.
-    public get etagInput() {
-      return this._etag
     }
 
     // id - computed: true, optional: true, required: false
@@ -4036,7 +4671,6 @@ export namespace CloudFront {
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
         comment: cdktf.stringToTerraform(this._comment),
-        etag: cdktf.stringToTerraform(this._etag),
         name: cdktf.stringToTerraform(this._name),
         cookies_config: cloudfrontOriginRequestPolicyCookiesConfigToTerraform(this._cookiesConfig),
         headers_config: cloudfrontOriginRequestPolicyHeadersConfigToTerraform(this._headersConfig),
@@ -4449,6 +5083,1190 @@ export namespace CloudFront {
         name: cdktf.stringToTerraform(this._name),
         sampling_rate: cdktf.numberToTerraform(this._samplingRate),
         endpoint: cloudfrontRealtimeLogConfigEndpointToTerraform(this._endpoint),
+      };
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicyConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#comment CloudfrontResponseHeadersPolicy#comment}
+    */
+    readonly comment?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#etag CloudfrontResponseHeadersPolicy#etag}
+    */
+    readonly etag?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#name CloudfrontResponseHeadersPolicy#name}
+    */
+    readonly name: string;
+    /**
+    * cors_config block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#cors_config CloudfrontResponseHeadersPolicy#cors_config}
+    */
+    readonly corsConfig?: CloudfrontResponseHeadersPolicyCorsConfig;
+    /**
+    * custom_headers_config block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#custom_headers_config CloudfrontResponseHeadersPolicy#custom_headers_config}
+    */
+    readonly customHeadersConfig?: CloudfrontResponseHeadersPolicyCustomHeadersConfig;
+    /**
+    * security_headers_config block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#security_headers_config CloudfrontResponseHeadersPolicy#security_headers_config}
+    */
+    readonly securityHeadersConfig?: CloudfrontResponseHeadersPolicySecurityHeadersConfig;
+  }
+  export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#items CloudfrontResponseHeadersPolicy#items}
+    */
+    readonly items?: string[];
+  }
+
+  function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: true, required: false
+    private _items?: string[] | undefined; 
+    public get items() {
+      return this.getListAttribute('items');
+    }
+    public set items(value: string[] | undefined) {
+      this._items = value;
+    }
+    public resetItems() {
+      this._items = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#items CloudfrontResponseHeadersPolicy#items}
+    */
+    readonly items?: string[];
+  }
+
+  function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: true, required: false
+    private _items?: string[] | undefined; 
+    public get items() {
+      return this.getListAttribute('items');
+    }
+    public set items(value: string[] | undefined) {
+      this._items = value;
+    }
+    public resetItems() {
+      this._items = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#items CloudfrontResponseHeadersPolicy#items}
+    */
+    readonly items?: string[];
+  }
+
+  function cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: true, required: false
+    private _items?: string[] | undefined; 
+    public get items() {
+      return this.getListAttribute('items');
+    }
+    public set items(value: string[] | undefined) {
+      this._items = value;
+    }
+    public resetItems() {
+      this._items = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#items CloudfrontResponseHeadersPolicy#items}
+    */
+    readonly items?: string[];
+  }
+
+  function cloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference | CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cdktf.stringToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: true, required: false
+    private _items?: string[] | undefined; 
+    public get items() {
+      return this.getListAttribute('items');
+    }
+    public set items(value: string[] | undefined) {
+      this._items = value;
+    }
+    public resetItems() {
+      this._items = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicyCorsConfig {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#access_control_allow_credentials CloudfrontResponseHeadersPolicy#access_control_allow_credentials}
+    */
+    readonly accessControlAllowCredentials: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#access_control_max_age_sec CloudfrontResponseHeadersPolicy#access_control_max_age_sec}
+    */
+    readonly accessControlMaxAgeSec?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#origin_override CloudfrontResponseHeadersPolicy#origin_override}
+    */
+    readonly originOverride: boolean | cdktf.IResolvable;
+    /**
+    * access_control_allow_headers block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#access_control_allow_headers CloudfrontResponseHeadersPolicy#access_control_allow_headers}
+    */
+    readonly accessControlAllowHeaders: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders;
+    /**
+    * access_control_allow_methods block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#access_control_allow_methods CloudfrontResponseHeadersPolicy#access_control_allow_methods}
+    */
+    readonly accessControlAllowMethods: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods;
+    /**
+    * access_control_allow_origins block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#access_control_allow_origins CloudfrontResponseHeadersPolicy#access_control_allow_origins}
+    */
+    readonly accessControlAllowOrigins: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins;
+    /**
+    * access_control_expose_headers block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#access_control_expose_headers CloudfrontResponseHeadersPolicy#access_control_expose_headers}
+    */
+    readonly accessControlExposeHeaders?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders;
+  }
+
+  function cloudfrontResponseHeadersPolicyCorsConfigToTerraform(struct?: CloudfrontResponseHeadersPolicyCorsConfigOutputReference | CloudfrontResponseHeadersPolicyCorsConfig): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      access_control_allow_credentials: cdktf.booleanToTerraform(struct!.accessControlAllowCredentials),
+      access_control_max_age_sec: cdktf.numberToTerraform(struct!.accessControlMaxAgeSec),
+      origin_override: cdktf.booleanToTerraform(struct!.originOverride),
+      access_control_allow_headers: cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersToTerraform(struct!.accessControlAllowHeaders),
+      access_control_allow_methods: cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsToTerraform(struct!.accessControlAllowMethods),
+      access_control_allow_origins: cloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsToTerraform(struct!.accessControlAllowOrigins),
+      access_control_expose_headers: cloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersToTerraform(struct!.accessControlExposeHeaders),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicyCorsConfigOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // access_control_allow_credentials - computed: false, optional: false, required: true
+    private _accessControlAllowCredentials?: boolean | cdktf.IResolvable; 
+    public get accessControlAllowCredentials() {
+      return this.getBooleanAttribute('access_control_allow_credentials') as any;
+    }
+    public set accessControlAllowCredentials(value: boolean | cdktf.IResolvable) {
+      this._accessControlAllowCredentials = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accessControlAllowCredentialsInput() {
+      return this._accessControlAllowCredentials
+    }
+
+    // access_control_max_age_sec - computed: false, optional: true, required: false
+    private _accessControlMaxAgeSec?: number | undefined; 
+    public get accessControlMaxAgeSec() {
+      return this.getNumberAttribute('access_control_max_age_sec');
+    }
+    public set accessControlMaxAgeSec(value: number | undefined) {
+      this._accessControlMaxAgeSec = value;
+    }
+    public resetAccessControlMaxAgeSec() {
+      this._accessControlMaxAgeSec = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accessControlMaxAgeSecInput() {
+      return this._accessControlMaxAgeSec
+    }
+
+    // origin_override - computed: false, optional: false, required: true
+    private _originOverride?: boolean | cdktf.IResolvable; 
+    public get originOverride() {
+      return this.getBooleanAttribute('origin_override') as any;
+    }
+    public set originOverride(value: boolean | cdktf.IResolvable) {
+      this._originOverride = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get originOverrideInput() {
+      return this._originOverride
+    }
+
+    // access_control_allow_headers - computed: false, optional: false, required: true
+    private _accessControlAllowHeaders?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders; 
+    private __accessControlAllowHeadersOutput = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference(this as any, "access_control_allow_headers", true);
+    public get accessControlAllowHeaders() {
+      return this.__accessControlAllowHeadersOutput;
+    }
+    public putAccessControlAllowHeaders(value: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders) {
+      this._accessControlAllowHeaders = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accessControlAllowHeadersInput() {
+      return this._accessControlAllowHeaders
+    }
+
+    // access_control_allow_methods - computed: false, optional: false, required: true
+    private _accessControlAllowMethods?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods; 
+    private __accessControlAllowMethodsOutput = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethodsOutputReference(this as any, "access_control_allow_methods", true);
+    public get accessControlAllowMethods() {
+      return this.__accessControlAllowMethodsOutput;
+    }
+    public putAccessControlAllowMethods(value: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods) {
+      this._accessControlAllowMethods = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accessControlAllowMethodsInput() {
+      return this._accessControlAllowMethods
+    }
+
+    // access_control_allow_origins - computed: false, optional: false, required: true
+    private _accessControlAllowOrigins?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins; 
+    private __accessControlAllowOriginsOutput = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOriginsOutputReference(this as any, "access_control_allow_origins", true);
+    public get accessControlAllowOrigins() {
+      return this.__accessControlAllowOriginsOutput;
+    }
+    public putAccessControlAllowOrigins(value: CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins) {
+      this._accessControlAllowOrigins = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accessControlAllowOriginsInput() {
+      return this._accessControlAllowOrigins
+    }
+
+    // access_control_expose_headers - computed: false, optional: true, required: false
+    private _accessControlExposeHeaders?: CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders | undefined; 
+    private __accessControlExposeHeadersOutput = new CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeadersOutputReference(this as any, "access_control_expose_headers", true);
+    public get accessControlExposeHeaders() {
+      return this.__accessControlExposeHeadersOutput;
+    }
+    public putAccessControlExposeHeaders(value: CloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders | undefined) {
+      this._accessControlExposeHeaders = value;
+    }
+    public resetAccessControlExposeHeaders() {
+      this._accessControlExposeHeaders = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accessControlExposeHeadersInput() {
+      return this._accessControlExposeHeaders
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicyCustomHeadersConfigItems {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#header CloudfrontResponseHeadersPolicy#header}
+    */
+    readonly header: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#override CloudfrontResponseHeadersPolicy#override}
+    */
+    readonly override: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#value CloudfrontResponseHeadersPolicy#value}
+    */
+    readonly value: string;
+  }
+
+  function cloudfrontResponseHeadersPolicyCustomHeadersConfigItemsToTerraform(struct?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      header: cdktf.stringToTerraform(struct!.header),
+      override: cdktf.booleanToTerraform(struct!.override),
+      value: cdktf.stringToTerraform(struct!.value),
+    }
+  }
+
+  export interface CloudfrontResponseHeadersPolicyCustomHeadersConfig {
+    /**
+    * items block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#items CloudfrontResponseHeadersPolicy#items}
+    */
+    readonly items?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[];
+  }
+
+  function cloudfrontResponseHeadersPolicyCustomHeadersConfigToTerraform(struct?: CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference | CloudfrontResponseHeadersPolicyCustomHeadersConfig): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      items: cdktf.listMapper(cloudfrontResponseHeadersPolicyCustomHeadersConfigItemsToTerraform)(struct!.items),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // items - computed: false, optional: true, required: false
+    private _items?: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | undefined; 
+    public get items() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('items') as any;
+    }
+    public set items(value: CloudfrontResponseHeadersPolicyCustomHeadersConfigItems[] | undefined) {
+      this._items = value;
+    }
+    public resetItems() {
+      this._items = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get itemsInput() {
+      return this._items
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#content_security_policy CloudfrontResponseHeadersPolicy#content_security_policy}
+    */
+    readonly contentSecurityPolicy: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#override CloudfrontResponseHeadersPolicy#override}
+    */
+    readonly override: boolean | cdktf.IResolvable;
+  }
+
+  function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      content_security_policy: cdktf.stringToTerraform(struct!.contentSecurityPolicy),
+      override: cdktf.booleanToTerraform(struct!.override),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // content_security_policy - computed: false, optional: false, required: true
+    private _contentSecurityPolicy?: string; 
+    public get contentSecurityPolicy() {
+      return this.getStringAttribute('content_security_policy');
+    }
+    public set contentSecurityPolicy(value: string) {
+      this._contentSecurityPolicy = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get contentSecurityPolicyInput() {
+      return this._contentSecurityPolicy
+    }
+
+    // override - computed: false, optional: false, required: true
+    private _override?: boolean | cdktf.IResolvable; 
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+    public set override(value: boolean | cdktf.IResolvable) {
+      this._override = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get overrideInput() {
+      return this._override
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#override CloudfrontResponseHeadersPolicy#override}
+    */
+    readonly override: boolean | cdktf.IResolvable;
+  }
+
+  function cloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      override: cdktf.booleanToTerraform(struct!.override),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // override - computed: false, optional: false, required: true
+    private _override?: boolean | cdktf.IResolvable; 
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+    public set override(value: boolean | cdktf.IResolvable) {
+      this._override = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get overrideInput() {
+      return this._override
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#frame_option CloudfrontResponseHeadersPolicy#frame_option}
+    */
+    readonly frameOption: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#override CloudfrontResponseHeadersPolicy#override}
+    */
+    readonly override: boolean | cdktf.IResolvable;
+  }
+
+  function cloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      frame_option: cdktf.stringToTerraform(struct!.frameOption),
+      override: cdktf.booleanToTerraform(struct!.override),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // frame_option - computed: false, optional: false, required: true
+    private _frameOption?: string; 
+    public get frameOption() {
+      return this.getStringAttribute('frame_option');
+    }
+    public set frameOption(value: string) {
+      this._frameOption = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get frameOptionInput() {
+      return this._frameOption
+    }
+
+    // override - computed: false, optional: false, required: true
+    private _override?: boolean | cdktf.IResolvable; 
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+    public set override(value: boolean | cdktf.IResolvable) {
+      this._override = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get overrideInput() {
+      return this._override
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#override CloudfrontResponseHeadersPolicy#override}
+    */
+    readonly override: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#referrer_policy CloudfrontResponseHeadersPolicy#referrer_policy}
+    */
+    readonly referrerPolicy: string;
+  }
+
+  function cloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      override: cdktf.booleanToTerraform(struct!.override),
+      referrer_policy: cdktf.stringToTerraform(struct!.referrerPolicy),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // override - computed: false, optional: false, required: true
+    private _override?: boolean | cdktf.IResolvable; 
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+    public set override(value: boolean | cdktf.IResolvable) {
+      this._override = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get overrideInput() {
+      return this._override
+    }
+
+    // referrer_policy - computed: false, optional: false, required: true
+    private _referrerPolicy?: string; 
+    public get referrerPolicy() {
+      return this.getStringAttribute('referrer_policy');
+    }
+    public set referrerPolicy(value: string) {
+      this._referrerPolicy = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get referrerPolicyInput() {
+      return this._referrerPolicy
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#access_control_max_age_sec CloudfrontResponseHeadersPolicy#access_control_max_age_sec}
+    */
+    readonly accessControlMaxAgeSec: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#include_subdomains CloudfrontResponseHeadersPolicy#include_subdomains}
+    */
+    readonly includeSubdomains?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#override CloudfrontResponseHeadersPolicy#override}
+    */
+    readonly override: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#preload CloudfrontResponseHeadersPolicy#preload}
+    */
+    readonly preload?: boolean | cdktf.IResolvable;
+  }
+
+  function cloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      access_control_max_age_sec: cdktf.numberToTerraform(struct!.accessControlMaxAgeSec),
+      include_subdomains: cdktf.booleanToTerraform(struct!.includeSubdomains),
+      override: cdktf.booleanToTerraform(struct!.override),
+      preload: cdktf.booleanToTerraform(struct!.preload),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // access_control_max_age_sec - computed: false, optional: false, required: true
+    private _accessControlMaxAgeSec?: number; 
+    public get accessControlMaxAgeSec() {
+      return this.getNumberAttribute('access_control_max_age_sec');
+    }
+    public set accessControlMaxAgeSec(value: number) {
+      this._accessControlMaxAgeSec = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accessControlMaxAgeSecInput() {
+      return this._accessControlMaxAgeSec
+    }
+
+    // include_subdomains - computed: false, optional: true, required: false
+    private _includeSubdomains?: boolean | cdktf.IResolvable | undefined; 
+    public get includeSubdomains() {
+      return this.getBooleanAttribute('include_subdomains') as any;
+    }
+    public set includeSubdomains(value: boolean | cdktf.IResolvable | undefined) {
+      this._includeSubdomains = value;
+    }
+    public resetIncludeSubdomains() {
+      this._includeSubdomains = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get includeSubdomainsInput() {
+      return this._includeSubdomains
+    }
+
+    // override - computed: false, optional: false, required: true
+    private _override?: boolean | cdktf.IResolvable; 
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+    public set override(value: boolean | cdktf.IResolvable) {
+      this._override = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get overrideInput() {
+      return this._override
+    }
+
+    // preload - computed: false, optional: true, required: false
+    private _preload?: boolean | cdktf.IResolvable | undefined; 
+    public get preload() {
+      return this.getBooleanAttribute('preload') as any;
+    }
+    public set preload(value: boolean | cdktf.IResolvable | undefined) {
+      this._preload = value;
+    }
+    public resetPreload() {
+      this._preload = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get preloadInput() {
+      return this._preload
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#mode_block CloudfrontResponseHeadersPolicy#mode_block}
+    */
+    readonly modeBlock?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#override CloudfrontResponseHeadersPolicy#override}
+    */
+    readonly override: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#protection CloudfrontResponseHeadersPolicy#protection}
+    */
+    readonly protection: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#report_uri CloudfrontResponseHeadersPolicy#report_uri}
+    */
+    readonly reportUri?: string;
+  }
+
+  function cloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      mode_block: cdktf.booleanToTerraform(struct!.modeBlock),
+      override: cdktf.booleanToTerraform(struct!.override),
+      protection: cdktf.booleanToTerraform(struct!.protection),
+      report_uri: cdktf.stringToTerraform(struct!.reportUri),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // mode_block - computed: false, optional: true, required: false
+    private _modeBlock?: boolean | cdktf.IResolvable | undefined; 
+    public get modeBlock() {
+      return this.getBooleanAttribute('mode_block') as any;
+    }
+    public set modeBlock(value: boolean | cdktf.IResolvable | undefined) {
+      this._modeBlock = value;
+    }
+    public resetModeBlock() {
+      this._modeBlock = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get modeBlockInput() {
+      return this._modeBlock
+    }
+
+    // override - computed: false, optional: false, required: true
+    private _override?: boolean | cdktf.IResolvable; 
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+    public set override(value: boolean | cdktf.IResolvable) {
+      this._override = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get overrideInput() {
+      return this._override
+    }
+
+    // protection - computed: false, optional: false, required: true
+    private _protection?: boolean | cdktf.IResolvable; 
+    public get protection() {
+      return this.getBooleanAttribute('protection') as any;
+    }
+    public set protection(value: boolean | cdktf.IResolvable) {
+      this._protection = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get protectionInput() {
+      return this._protection
+    }
+
+    // report_uri - computed: false, optional: true, required: false
+    private _reportUri?: string | undefined; 
+    public get reportUri() {
+      return this.getStringAttribute('report_uri');
+    }
+    public set reportUri(value: string | undefined) {
+      this._reportUri = value;
+    }
+    public resetReportUri() {
+      this._reportUri = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get reportUriInput() {
+      return this._reportUri
+    }
+  }
+  export interface CloudfrontResponseHeadersPolicySecurityHeadersConfig {
+    /**
+    * content_security_policy block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#content_security_policy CloudfrontResponseHeadersPolicy#content_security_policy}
+    */
+    readonly contentSecurityPolicy?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy;
+    /**
+    * content_type_options block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#content_type_options CloudfrontResponseHeadersPolicy#content_type_options}
+    */
+    readonly contentTypeOptions?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions;
+    /**
+    * frame_options block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#frame_options CloudfrontResponseHeadersPolicy#frame_options}
+    */
+    readonly frameOptions?: CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions;
+    /**
+    * referrer_policy block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#referrer_policy CloudfrontResponseHeadersPolicy#referrer_policy}
+    */
+    readonly referrerPolicy?: CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy;
+    /**
+    * strict_transport_security block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#strict_transport_security CloudfrontResponseHeadersPolicy#strict_transport_security}
+    */
+    readonly strictTransportSecurity?: CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity;
+    /**
+    * xss_protection block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html#xss_protection CloudfrontResponseHeadersPolicy#xss_protection}
+    */
+    readonly xssProtection?: CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection;
+  }
+
+  function cloudfrontResponseHeadersPolicySecurityHeadersConfigToTerraform(struct?: CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference | CloudfrontResponseHeadersPolicySecurityHeadersConfig): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      content_security_policy: cloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyToTerraform(struct!.contentSecurityPolicy),
+      content_type_options: cloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsToTerraform(struct!.contentTypeOptions),
+      frame_options: cloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsToTerraform(struct!.frameOptions),
+      referrer_policy: cloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyToTerraform(struct!.referrerPolicy),
+      strict_transport_security: cloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityToTerraform(struct!.strictTransportSecurity),
+      xss_protection: cloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionToTerraform(struct!.xssProtection),
+    }
+  }
+
+  export class CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // content_security_policy - computed: false, optional: true, required: false
+    private _contentSecurityPolicy?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy | undefined; 
+    private __contentSecurityPolicyOutput = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicyOutputReference(this as any, "content_security_policy", true);
+    public get contentSecurityPolicy() {
+      return this.__contentSecurityPolicyOutput;
+    }
+    public putContentSecurityPolicy(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy | undefined) {
+      this._contentSecurityPolicy = value;
+    }
+    public resetContentSecurityPolicy() {
+      this._contentSecurityPolicy = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get contentSecurityPolicyInput() {
+      return this._contentSecurityPolicy
+    }
+
+    // content_type_options - computed: false, optional: true, required: false
+    private _contentTypeOptions?: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions | undefined; 
+    private __contentTypeOptionsOutput = new CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptionsOutputReference(this as any, "content_type_options", true);
+    public get contentTypeOptions() {
+      return this.__contentTypeOptionsOutput;
+    }
+    public putContentTypeOptions(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions | undefined) {
+      this._contentTypeOptions = value;
+    }
+    public resetContentTypeOptions() {
+      this._contentTypeOptions = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get contentTypeOptionsInput() {
+      return this._contentTypeOptions
+    }
+
+    // frame_options - computed: false, optional: true, required: false
+    private _frameOptions?: CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions | undefined; 
+    private __frameOptionsOutput = new CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference(this as any, "frame_options", true);
+    public get frameOptions() {
+      return this.__frameOptionsOutput;
+    }
+    public putFrameOptions(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions | undefined) {
+      this._frameOptions = value;
+    }
+    public resetFrameOptions() {
+      this._frameOptions = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get frameOptionsInput() {
+      return this._frameOptions
+    }
+
+    // referrer_policy - computed: false, optional: true, required: false
+    private _referrerPolicy?: CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy | undefined; 
+    private __referrerPolicyOutput = new CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicyOutputReference(this as any, "referrer_policy", true);
+    public get referrerPolicy() {
+      return this.__referrerPolicyOutput;
+    }
+    public putReferrerPolicy(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy | undefined) {
+      this._referrerPolicy = value;
+    }
+    public resetReferrerPolicy() {
+      this._referrerPolicy = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get referrerPolicyInput() {
+      return this._referrerPolicy
+    }
+
+    // strict_transport_security - computed: false, optional: true, required: false
+    private _strictTransportSecurity?: CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity | undefined; 
+    private __strictTransportSecurityOutput = new CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityOutputReference(this as any, "strict_transport_security", true);
+    public get strictTransportSecurity() {
+      return this.__strictTransportSecurityOutput;
+    }
+    public putStrictTransportSecurity(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity | undefined) {
+      this._strictTransportSecurity = value;
+    }
+    public resetStrictTransportSecurity() {
+      this._strictTransportSecurity = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get strictTransportSecurityInput() {
+      return this._strictTransportSecurity
+    }
+
+    // xss_protection - computed: false, optional: true, required: false
+    private _xssProtection?: CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection | undefined; 
+    private __xssProtectionOutput = new CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtectionOutputReference(this as any, "xss_protection", true);
+    public get xssProtection() {
+      return this.__xssProtectionOutput;
+    }
+    public putXssProtection(value: CloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection | undefined) {
+      this._xssProtection = value;
+    }
+    public resetXssProtection() {
+      this._xssProtection = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get xssProtectionInput() {
+      return this._xssProtection
+    }
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html aws_cloudfront_response_headers_policy}
+  */
+  export class CloudfrontResponseHeadersPolicy extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_cloudfront_response_headers_policy";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_response_headers_policy.html aws_cloudfront_response_headers_policy} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options CloudfrontResponseHeadersPolicyConfig
+    */
+    public constructor(scope: Construct, id: string, config: CloudfrontResponseHeadersPolicyConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_cloudfront_response_headers_policy',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._comment = config.comment;
+      this._etag = config.etag;
+      this._name = config.name;
+      this._corsConfig = config.corsConfig;
+      this._customHeadersConfig = config.customHeadersConfig;
+      this._securityHeadersConfig = config.securityHeadersConfig;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // comment - computed: false, optional: true, required: false
+    private _comment?: string | undefined; 
+    public get comment() {
+      return this.getStringAttribute('comment');
+    }
+    public set comment(value: string | undefined) {
+      this._comment = value;
+    }
+    public resetComment() {
+      this._comment = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get commentInput() {
+      return this._comment
+    }
+
+    // etag - computed: true, optional: true, required: false
+    private _etag?: string | undefined; 
+    public get etag() {
+      return this.getStringAttribute('etag');
+    }
+    public set etag(value: string | undefined) {
+      this._etag = value;
+    }
+    public resetEtag() {
+      this._etag = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get etagInput() {
+      return this._etag
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // name - computed: false, optional: false, required: true
+    private _name?: string; 
+    public get name() {
+      return this.getStringAttribute('name');
+    }
+    public set name(value: string) {
+      this._name = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nameInput() {
+      return this._name
+    }
+
+    // cors_config - computed: false, optional: true, required: false
+    private _corsConfig?: CloudfrontResponseHeadersPolicyCorsConfig | undefined; 
+    private __corsConfigOutput = new CloudfrontResponseHeadersPolicyCorsConfigOutputReference(this as any, "cors_config", true);
+    public get corsConfig() {
+      return this.__corsConfigOutput;
+    }
+    public putCorsConfig(value: CloudfrontResponseHeadersPolicyCorsConfig | undefined) {
+      this._corsConfig = value;
+    }
+    public resetCorsConfig() {
+      this._corsConfig = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get corsConfigInput() {
+      return this._corsConfig
+    }
+
+    // custom_headers_config - computed: false, optional: true, required: false
+    private _customHeadersConfig?: CloudfrontResponseHeadersPolicyCustomHeadersConfig | undefined; 
+    private __customHeadersConfigOutput = new CloudfrontResponseHeadersPolicyCustomHeadersConfigOutputReference(this as any, "custom_headers_config", true);
+    public get customHeadersConfig() {
+      return this.__customHeadersConfigOutput;
+    }
+    public putCustomHeadersConfig(value: CloudfrontResponseHeadersPolicyCustomHeadersConfig | undefined) {
+      this._customHeadersConfig = value;
+    }
+    public resetCustomHeadersConfig() {
+      this._customHeadersConfig = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get customHeadersConfigInput() {
+      return this._customHeadersConfig
+    }
+
+    // security_headers_config - computed: false, optional: true, required: false
+    private _securityHeadersConfig?: CloudfrontResponseHeadersPolicySecurityHeadersConfig | undefined; 
+    private __securityHeadersConfigOutput = new CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference(this as any, "security_headers_config", true);
+    public get securityHeadersConfig() {
+      return this.__securityHeadersConfigOutput;
+    }
+    public putSecurityHeadersConfig(value: CloudfrontResponseHeadersPolicySecurityHeadersConfig | undefined) {
+      this._securityHeadersConfig = value;
+    }
+    public resetSecurityHeadersConfig() {
+      this._securityHeadersConfig = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get securityHeadersConfigInput() {
+      return this._securityHeadersConfig
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        comment: cdktf.stringToTerraform(this._comment),
+        etag: cdktf.stringToTerraform(this._etag),
+        name: cdktf.stringToTerraform(this._name),
+        cors_config: cloudfrontResponseHeadersPolicyCorsConfigToTerraform(this._corsConfig),
+        custom_headers_config: cloudfrontResponseHeadersPolicyCustomHeadersConfigToTerraform(this._customHeadersConfig),
+        security_headers_config: cloudfrontResponseHeadersPolicySecurityHeadersConfigToTerraform(this._securityHeadersConfig),
       };
     }
   }
@@ -5178,6 +6996,319 @@ export namespace CloudFront {
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
         id: cdktf.stringToTerraform(this._id),
+        name: cdktf.stringToTerraform(this._name),
+      };
+    }
+  }
+  export interface DataAwsCloudfrontResponseHeadersPolicyConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy.html#name DataAwsCloudfrontResponseHeadersPolicy#name}
+    */
+    readonly name?: string;
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeaders extends cdktf.ComplexComputedList {
+
+    // items - computed: true, optional: false, required: false
+    public get items() {
+      return this.getListAttribute('items');
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods extends cdktf.ComplexComputedList {
+
+    // items - computed: true, optional: false, required: false
+    public get items() {
+      return this.getListAttribute('items');
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowOrigins extends cdktf.ComplexComputedList {
+
+    // items - computed: true, optional: false, required: false
+    public get items() {
+      return this.getListAttribute('items');
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlExposeHeaders extends cdktf.ComplexComputedList {
+
+    // items - computed: true, optional: false, required: false
+    public get items() {
+      return this.getListAttribute('items');
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicyCorsConfig extends cdktf.ComplexComputedList {
+
+    // access_control_allow_credentials - computed: true, optional: false, required: false
+    public get accessControlAllowCredentials() {
+      return this.getBooleanAttribute('access_control_allow_credentials') as any;
+    }
+
+    // access_control_allow_headers - computed: true, optional: false, required: false
+    public get accessControlAllowHeaders() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('access_control_allow_headers') as any;
+    }
+
+    // access_control_allow_methods - computed: true, optional: false, required: false
+    public get accessControlAllowMethods() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('access_control_allow_methods') as any;
+    }
+
+    // access_control_allow_origins - computed: true, optional: false, required: false
+    public get accessControlAllowOrigins() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('access_control_allow_origins') as any;
+    }
+
+    // access_control_expose_headers - computed: true, optional: false, required: false
+    public get accessControlExposeHeaders() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('access_control_expose_headers') as any;
+    }
+
+    // access_control_max_age_sec - computed: true, optional: false, required: false
+    public get accessControlMaxAgeSec() {
+      return this.getNumberAttribute('access_control_max_age_sec');
+    }
+
+    // origin_override - computed: true, optional: false, required: false
+    public get originOverride() {
+      return this.getBooleanAttribute('origin_override') as any;
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicyCustomHeadersConfig extends cdktf.ComplexComputedList {
+
+    // header - computed: true, optional: false, required: false
+    public get header() {
+      return this.getStringAttribute('header');
+    }
+
+    // override - computed: true, optional: false, required: false
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+
+    // value - computed: true, optional: false, required: false
+    public get value() {
+      return this.getStringAttribute('value');
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy extends cdktf.ComplexComputedList {
+
+    // content_security_policy - computed: true, optional: false, required: false
+    public get contentSecurityPolicy() {
+      return this.getStringAttribute('content_security_policy');
+    }
+
+    // override - computed: true, optional: false, required: false
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigContentTypeOptions extends cdktf.ComplexComputedList {
+
+    // override - computed: true, optional: false, required: false
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptions extends cdktf.ComplexComputedList {
+
+    // frame_option - computed: true, optional: false, required: false
+    public get frameOption() {
+      return this.getStringAttribute('frame_option');
+    }
+
+    // override - computed: true, optional: false, required: false
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy extends cdktf.ComplexComputedList {
+
+    // override - computed: true, optional: false, required: false
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+
+    // referrer_policy - computed: true, optional: false, required: false
+    public get referrerPolicy() {
+      return this.getStringAttribute('referrer_policy');
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurity extends cdktf.ComplexComputedList {
+
+    // access_control_max_age_sec - computed: true, optional: false, required: false
+    public get accessControlMaxAgeSec() {
+      return this.getNumberAttribute('access_control_max_age_sec');
+    }
+
+    // include_subdomains - computed: true, optional: false, required: false
+    public get includeSubdomains() {
+      return this.getBooleanAttribute('include_subdomains') as any;
+    }
+
+    // override - computed: true, optional: false, required: false
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+
+    // preload - computed: true, optional: false, required: false
+    public get preload() {
+      return this.getBooleanAttribute('preload') as any;
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigXssProtection extends cdktf.ComplexComputedList {
+
+    // mode_block - computed: true, optional: false, required: false
+    public get modeBlock() {
+      return this.getBooleanAttribute('mode_block') as any;
+    }
+
+    // override - computed: true, optional: false, required: false
+    public get override() {
+      return this.getBooleanAttribute('override') as any;
+    }
+
+    // protection - computed: true, optional: false, required: false
+    public get protection() {
+      return this.getBooleanAttribute('protection') as any;
+    }
+
+    // report_uri - computed: true, optional: false, required: false
+    public get reportUri() {
+      return this.getStringAttribute('report_uri');
+    }
+  }
+  export class DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfig extends cdktf.ComplexComputedList {
+
+    // content_security_policy - computed: true, optional: false, required: false
+    public get contentSecurityPolicy() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('content_security_policy') as any;
+    }
+
+    // content_type_options - computed: true, optional: false, required: false
+    public get contentTypeOptions() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('content_type_options') as any;
+    }
+
+    // frame_options - computed: true, optional: false, required: false
+    public get frameOptions() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('frame_options') as any;
+    }
+
+    // referrer_policy - computed: true, optional: false, required: false
+    public get referrerPolicy() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('referrer_policy') as any;
+    }
+
+    // strict_transport_security - computed: true, optional: false, required: false
+    public get strictTransportSecurity() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('strict_transport_security') as any;
+    }
+
+    // xss_protection - computed: true, optional: false, required: false
+    public get xssProtection() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('xss_protection') as any;
+    }
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy.html aws_cloudfront_response_headers_policy}
+  */
+  export class DataAwsCloudfrontResponseHeadersPolicy extends cdktf.TerraformDataSource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_cloudfront_response_headers_policy";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy.html aws_cloudfront_response_headers_policy} Data Source
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options DataAwsCloudfrontResponseHeadersPolicyConfig = {}
+    */
+    public constructor(scope: Construct, id: string, config: DataAwsCloudfrontResponseHeadersPolicyConfig = {}) {
+      super(scope, id, {
+        terraformResourceType: 'aws_cloudfront_response_headers_policy',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._name = config.name;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // comment - computed: true, optional: false, required: false
+    public get comment() {
+      return this.getStringAttribute('comment');
+    }
+
+    // cors_config - computed: true, optional: false, required: false
+    public corsConfig(index: string) {
+      return new DataAwsCloudfrontResponseHeadersPolicyCorsConfig(this, 'cors_config', index);
+    }
+
+    // custom_headers_config - computed: true, optional: false, required: false
+    public customHeadersConfig(index: string) {
+      return new DataAwsCloudfrontResponseHeadersPolicyCustomHeadersConfig(this, 'custom_headers_config', index);
+    }
+
+    // etag - computed: true, optional: false, required: false
+    public get etag() {
+      return this.getStringAttribute('etag');
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // name - computed: true, optional: true, required: false
+    private _name?: string | undefined; 
+    public get name() {
+      return this.getStringAttribute('name');
+    }
+    public set name(value: string | undefined) {
+      this._name = value;
+    }
+    public resetName() {
+      this._name = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nameInput() {
+      return this._name
+    }
+
+    // security_headers_config - computed: true, optional: false, required: false
+    public securityHeadersConfig(index: string) {
+      return new DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfig(this, 'security_headers_config', index);
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
         name: cdktf.stringToTerraform(this._name),
       };
     }

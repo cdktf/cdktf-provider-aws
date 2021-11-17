@@ -43,6 +43,70 @@ export namespace Batch {
     */
     readonly computeResources?: BatchComputeEnvironmentComputeResources;
   }
+  export interface BatchComputeEnvironmentComputeResourcesEc2Configuration {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment.html#image_id_override BatchComputeEnvironment#image_id_override}
+    */
+    readonly imageIdOverride?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment.html#image_type BatchComputeEnvironment#image_type}
+    */
+    readonly imageType?: string;
+  }
+
+  function batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform(struct?: BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference | BatchComputeEnvironmentComputeResourcesEc2Configuration): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      image_id_override: cdktf.stringToTerraform(struct!.imageIdOverride),
+      image_type: cdktf.stringToTerraform(struct!.imageType),
+    }
+  }
+
+  export class BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // image_id_override - computed: true, optional: true, required: false
+    private _imageIdOverride?: string | undefined; 
+    public get imageIdOverride() {
+      return this.getStringAttribute('image_id_override');
+    }
+    public set imageIdOverride(value: string | undefined) {
+      this._imageIdOverride = value;
+    }
+    public resetImageIdOverride() {
+      this._imageIdOverride = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get imageIdOverrideInput() {
+      return this._imageIdOverride
+    }
+
+    // image_type - computed: false, optional: true, required: false
+    private _imageType?: string | undefined; 
+    public get imageType() {
+      return this.getStringAttribute('image_type');
+    }
+    public set imageType(value: string | undefined) {
+      this._imageType = value;
+    }
+    public resetImageType() {
+      this._imageType = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get imageTypeInput() {
+      return this._imageType
+    }
+  }
   export interface BatchComputeEnvironmentComputeResourcesLaunchTemplate {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment.html#launch_template_id BatchComputeEnvironment#launch_template_id}
@@ -186,6 +250,12 @@ export namespace Batch {
     */
     readonly type: string;
     /**
+    * ec2_configuration block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment.html#ec2_configuration BatchComputeEnvironment#ec2_configuration}
+    */
+    readonly ec2Configuration?: BatchComputeEnvironmentComputeResourcesEc2Configuration;
+    /**
     * launch_template block
     * 
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/batch_compute_environment.html#launch_template BatchComputeEnvironment#launch_template}
@@ -213,6 +283,7 @@ export namespace Batch {
       subnets: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnets),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
       type: cdktf.stringToTerraform(struct!.type),
+      ec2_configuration: batchComputeEnvironmentComputeResourcesEc2ConfigurationToTerraform(struct!.ec2Configuration),
       launch_template: batchComputeEnvironmentComputeResourcesLaunchTemplateToTerraform(struct!.launchTemplate),
     }
   }
@@ -438,6 +509,23 @@ export namespace Batch {
     // Temporarily expose input value. Use with caution.
     public get typeInput() {
       return this._type
+    }
+
+    // ec2_configuration - computed: false, optional: true, required: false
+    private _ec2Configuration?: BatchComputeEnvironmentComputeResourcesEc2Configuration | undefined; 
+    private __ec2ConfigurationOutput = new BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference(this as any, "ec2_configuration", true);
+    public get ec2Configuration() {
+      return this.__ec2ConfigurationOutput;
+    }
+    public putEc2Configuration(value: BatchComputeEnvironmentComputeResourcesEc2Configuration | undefined) {
+      this._ec2Configuration = value;
+    }
+    public resetEc2Configuration() {
+      this._ec2Configuration = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ec2ConfigurationInput() {
+      return this._ec2Configuration
     }
 
     // launch_template - computed: false, optional: true, required: false

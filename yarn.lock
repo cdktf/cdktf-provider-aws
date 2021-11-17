@@ -149,9 +149,9 @@
     is-valid-domain "^0.1.2"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.21"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.21.tgz#df64e53f240f06d0931cb91d4ba91d639f73acdf"
-  integrity sha512-wwlznK94BX2S+xXPlimXWfd9y7DbiiboZRc1Ay0q1/CCDdOYqtaZoRJ7tp4wjOs19NBXjSVA4rwEsGUDnAMYPg==
+  version "0.2.23"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.23.tgz#5610eccc0288edf1a9000a7cbbdaca681cd6914e"
+  integrity sha512-g7fGvqm0NPSTDL3I2+B5pa7byMvV5dgTJzycX/hGLQFTLzUplSo7bZpUR7C/jIA7uRQIYANjgKqB6f7R1apgAA==
   dependencies:
     change-case "^4.1.2"
 
@@ -1656,7 +1656,7 @@ conventional-changelog-codemirror@^2.0.8:
   dependencies:
     q "^1.5.1"
 
-conventional-changelog-config-spec@2.1.0:
+conventional-changelog-config-spec@2.1.0, conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/conventional-changelog-config-spec/-/conventional-changelog-config-spec-2.1.0.tgz#874a635287ef8b581fd8558532bf655d4fb59f2d"
   integrity sha512-IpVePh16EbbB02V+UA+HQnnPIohgXvJRxHcS5+Uwk4AT5LjzCZJm5sp/yqs5C6KZJ1jMsV4paEV13BN1pvDuxQ==
@@ -1940,11 +1940,6 @@ decamelize@^1.1.0, decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
-
-decamelize@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-4.0.0.tgz#aa472d7bf660eb15f3494efd531cab7f2a709837"
-  integrity sha512-9iE1PgSik9HeIIw2JO94IidnE3eBoQrFJ3w7sFuzSX4DpmZ3v5sZpUiV5Swcf6mQEF+Y0ru8Neo+p+nyh2J+hQ==
 
 decamelize@^5.0.0:
   version "5.0.0"
@@ -3553,25 +3548,6 @@ jsii@1.37.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii@^1.34.0:
-  version "1.34.0"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.34.0.tgz#d009d7ae36f069819f97dcade4203722a5ec524f"
-  integrity sha512-z/p8cuWdRntQzdZ1Fq/hvXHPjq/HjZhQzTF/GmYrH3s7Wsb14LphHGAENTZwICBaSovoqSRIboOb2FbPLsCjoA==
-  dependencies:
-    "@jsii/check-node" "1.34.0"
-    "@jsii/spec" "^1.34.0"
-    case "^1.6.3"
-    colors "^1.4.0"
-    deep-equal "^2.0.5"
-    fs-extra "^9.1.0"
-    log4js "^6.3.0"
-    semver "^7.3.5"
-    semver-intersect "^1.4.0"
-    sort-json "^2.0.0"
-    spdx-license-list "^6.4.0"
-    typescript "~3.9.10"
-    yargs "^16.2.0"
-
 json-buffer@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/json-buffer/-/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
@@ -4686,14 +4662,15 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.31.0:
-  version "0.31.0"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.31.0.tgz#483d390c9d60e576641dcfc1c1c7de08fec175ba"
-  integrity sha512-27mgy8Bq2rHxLSAHUavnUSHUSTcxD9tpBCPj/EvjyjWQzHwnQV8Z0K31bFdDuAS2EvxSpzrI1M0vBtSM9dWyDQ==
+projen@^0.34.3:
+  version "0.34.3"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.34.3.tgz#49c623e99f9064ce13a7f61cef77295907fc5be5"
+  integrity sha512-SksY4ziIO8VwKiAB7KyMUL5P3zjkUTquAMy9+/Fq9qVjQYu2xOSdEBC6C0SNiy1ibzGLrUkqc2SBc4tQVp7KOA==
   dependencies:
     "@iarna/toml" "^2.2.5"
+    case "^1.6.3"
     chalk "^4.1.2"
-    decamelize "^4.0.0"
+    conventional-changelog-config-spec "^2.1.0"
     fs-extra "^9.1.0"
     glob "^7"
     ini "^2.0.0"

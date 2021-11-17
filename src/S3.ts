@@ -1190,6 +1190,134 @@ export namespace S3 {
       return this._owner
     }
   }
+  export interface S3BucketReplicationConfigurationRulesDestinationMetrics {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#minutes S3Bucket#minutes}
+    */
+    readonly minutes?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#status S3Bucket#status}
+    */
+    readonly status?: string;
+  }
+
+  function s3BucketReplicationConfigurationRulesDestinationMetricsToTerraform(struct?: S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference | S3BucketReplicationConfigurationRulesDestinationMetrics): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      minutes: cdktf.numberToTerraform(struct!.minutes),
+      status: cdktf.stringToTerraform(struct!.status),
+    }
+  }
+
+  export class S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // minutes - computed: false, optional: true, required: false
+    private _minutes?: number | undefined; 
+    public get minutes() {
+      return this.getNumberAttribute('minutes');
+    }
+    public set minutes(value: number | undefined) {
+      this._minutes = value;
+    }
+    public resetMinutes() {
+      this._minutes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get minutesInput() {
+      return this._minutes
+    }
+
+    // status - computed: false, optional: true, required: false
+    private _status?: string | undefined; 
+    public get status() {
+      return this.getStringAttribute('status');
+    }
+    public set status(value: string | undefined) {
+      this._status = value;
+    }
+    public resetStatus() {
+      this._status = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusInput() {
+      return this._status
+    }
+  }
+  export interface S3BucketReplicationConfigurationRulesDestinationReplicationTime {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#minutes S3Bucket#minutes}
+    */
+    readonly minutes?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#status S3Bucket#status}
+    */
+    readonly status?: string;
+  }
+
+  function s3BucketReplicationConfigurationRulesDestinationReplicationTimeToTerraform(struct?: S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference | S3BucketReplicationConfigurationRulesDestinationReplicationTime): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      minutes: cdktf.numberToTerraform(struct!.minutes),
+      status: cdktf.stringToTerraform(struct!.status),
+    }
+  }
+
+  export class S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // minutes - computed: false, optional: true, required: false
+    private _minutes?: number | undefined; 
+    public get minutes() {
+      return this.getNumberAttribute('minutes');
+    }
+    public set minutes(value: number | undefined) {
+      this._minutes = value;
+    }
+    public resetMinutes() {
+      this._minutes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get minutesInput() {
+      return this._minutes
+    }
+
+    // status - computed: false, optional: true, required: false
+    private _status?: string | undefined; 
+    public get status() {
+      return this.getStringAttribute('status');
+    }
+    public set status(value: string | undefined) {
+      this._status = value;
+    }
+    public resetStatus() {
+      this._status = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusInput() {
+      return this._status
+    }
+  }
   export interface S3BucketReplicationConfigurationRulesDestination {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#account_id S3Bucket#account_id}
@@ -1213,6 +1341,18 @@ export namespace S3 {
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#access_control_translation S3Bucket#access_control_translation}
     */
     readonly accessControlTranslation?: S3BucketReplicationConfigurationRulesDestinationAccessControlTranslation;
+    /**
+    * metrics block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#metrics S3Bucket#metrics}
+    */
+    readonly metrics?: S3BucketReplicationConfigurationRulesDestinationMetrics;
+    /**
+    * replication_time block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket.html#replication_time S3Bucket#replication_time}
+    */
+    readonly replicationTime?: S3BucketReplicationConfigurationRulesDestinationReplicationTime;
   }
 
   function s3BucketReplicationConfigurationRulesDestinationToTerraform(struct?: S3BucketReplicationConfigurationRulesDestinationOutputReference | S3BucketReplicationConfigurationRulesDestination): any {
@@ -1226,6 +1366,8 @@ export namespace S3 {
       replica_kms_key_id: cdktf.stringToTerraform(struct!.replicaKmsKeyId),
       storage_class: cdktf.stringToTerraform(struct!.storageClass),
       access_control_translation: s3BucketReplicationConfigurationRulesDestinationAccessControlTranslationToTerraform(struct!.accessControlTranslation),
+      metrics: s3BucketReplicationConfigurationRulesDestinationMetricsToTerraform(struct!.metrics),
+      replication_time: s3BucketReplicationConfigurationRulesDestinationReplicationTimeToTerraform(struct!.replicationTime),
     }
   }
 
@@ -1315,6 +1457,40 @@ export namespace S3 {
     // Temporarily expose input value. Use with caution.
     public get accessControlTranslationInput() {
       return this._accessControlTranslation
+    }
+
+    // metrics - computed: false, optional: true, required: false
+    private _metrics?: S3BucketReplicationConfigurationRulesDestinationMetrics | undefined; 
+    private __metricsOutput = new S3BucketReplicationConfigurationRulesDestinationMetricsOutputReference(this as any, "metrics", true);
+    public get metrics() {
+      return this.__metricsOutput;
+    }
+    public putMetrics(value: S3BucketReplicationConfigurationRulesDestinationMetrics | undefined) {
+      this._metrics = value;
+    }
+    public resetMetrics() {
+      this._metrics = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get metricsInput() {
+      return this._metrics
+    }
+
+    // replication_time - computed: false, optional: true, required: false
+    private _replicationTime?: S3BucketReplicationConfigurationRulesDestinationReplicationTime | undefined; 
+    private __replicationTimeOutput = new S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference(this as any, "replication_time", true);
+    public get replicationTime() {
+      return this.__replicationTimeOutput;
+    }
+    public putReplicationTime(value: S3BucketReplicationConfigurationRulesDestinationReplicationTime | undefined) {
+      this._replicationTime = value;
+    }
+    public resetReplicationTime() {
+      this._replicationTime = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get replicationTimeInput() {
+      return this._replicationTime
     }
   }
   export interface S3BucketReplicationConfigurationRulesFilter {
@@ -2845,6 +3021,255 @@ export namespace S3 {
         name: cdktf.stringToTerraform(this._name),
         filter: s3BucketAnalyticsConfigurationFilterToTerraform(this._filter),
         storage_class_analysis: s3BucketAnalyticsConfigurationStorageClassAnalysisToTerraform(this._storageClassAnalysis),
+      };
+    }
+  }
+  export interface S3BucketIntelligentTieringConfigurationConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#bucket S3BucketIntelligentTieringConfiguration#bucket}
+    */
+    readonly bucket: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#name S3BucketIntelligentTieringConfiguration#name}
+    */
+    readonly name: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#status S3BucketIntelligentTieringConfiguration#status}
+    */
+    readonly status?: string;
+    /**
+    * filter block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#filter S3BucketIntelligentTieringConfiguration#filter}
+    */
+    readonly filter?: S3BucketIntelligentTieringConfigurationFilter;
+    /**
+    * tiering block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#tiering S3BucketIntelligentTieringConfiguration#tiering}
+    */
+    readonly tiering: S3BucketIntelligentTieringConfigurationTiering[];
+  }
+  export interface S3BucketIntelligentTieringConfigurationFilter {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#prefix S3BucketIntelligentTieringConfiguration#prefix}
+    */
+    readonly prefix?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#tags S3BucketIntelligentTieringConfiguration#tags}
+    */
+    readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  }
+
+  function s3BucketIntelligentTieringConfigurationFilterToTerraform(struct?: S3BucketIntelligentTieringConfigurationFilterOutputReference | S3BucketIntelligentTieringConfigurationFilter): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      prefix: cdktf.stringToTerraform(struct!.prefix),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tags),
+    }
+  }
+
+  export class S3BucketIntelligentTieringConfigurationFilterOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // prefix - computed: false, optional: true, required: false
+    private _prefix?: string | undefined; 
+    public get prefix() {
+      return this.getStringAttribute('prefix');
+    }
+    public set prefix(value: string | undefined) {
+      this._prefix = value;
+    }
+    public resetPrefix() {
+      this._prefix = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get prefixInput() {
+      return this._prefix
+    }
+
+    // tags - computed: false, optional: true, required: false
+    private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tags() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags') as any;
+    }
+    public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tags = value;
+    }
+    public resetTags() {
+      this._tags = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsInput() {
+      return this._tags
+    }
+  }
+  export interface S3BucketIntelligentTieringConfigurationTiering {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#access_tier S3BucketIntelligentTieringConfiguration#access_tier}
+    */
+    readonly accessTier: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html#days S3BucketIntelligentTieringConfiguration#days}
+    */
+    readonly days: number;
+  }
+
+  function s3BucketIntelligentTieringConfigurationTieringToTerraform(struct?: S3BucketIntelligentTieringConfigurationTiering): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      access_tier: cdktf.stringToTerraform(struct!.accessTier),
+      days: cdktf.numberToTerraform(struct!.days),
+    }
+  }
+
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html aws_s3_bucket_intelligent_tiering_configuration}
+  */
+  export class S3BucketIntelligentTieringConfiguration extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_s3_bucket_intelligent_tiering_configuration";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_intelligent_tiering_configuration.html aws_s3_bucket_intelligent_tiering_configuration} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options S3BucketIntelligentTieringConfigurationConfig
+    */
+    public constructor(scope: Construct, id: string, config: S3BucketIntelligentTieringConfigurationConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_s3_bucket_intelligent_tiering_configuration',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._bucket = config.bucket;
+      this._name = config.name;
+      this._status = config.status;
+      this._filter = config.filter;
+      this._tiering = config.tiering;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // bucket - computed: false, optional: false, required: true
+    private _bucket?: string; 
+    public get bucket() {
+      return this.getStringAttribute('bucket');
+    }
+    public set bucket(value: string) {
+      this._bucket = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get bucketInput() {
+      return this._bucket
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // name - computed: false, optional: false, required: true
+    private _name?: string; 
+    public get name() {
+      return this.getStringAttribute('name');
+    }
+    public set name(value: string) {
+      this._name = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get nameInput() {
+      return this._name
+    }
+
+    // status - computed: false, optional: true, required: false
+    private _status?: string | undefined; 
+    public get status() {
+      return this.getStringAttribute('status');
+    }
+    public set status(value: string | undefined) {
+      this._status = value;
+    }
+    public resetStatus() {
+      this._status = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statusInput() {
+      return this._status
+    }
+
+    // filter - computed: false, optional: true, required: false
+    private _filter?: S3BucketIntelligentTieringConfigurationFilter | undefined; 
+    private __filterOutput = new S3BucketIntelligentTieringConfigurationFilterOutputReference(this as any, "filter", true);
+    public get filter() {
+      return this.__filterOutput;
+    }
+    public putFilter(value: S3BucketIntelligentTieringConfigurationFilter | undefined) {
+      this._filter = value;
+    }
+    public resetFilter() {
+      this._filter = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get filterInput() {
+      return this._filter
+    }
+
+    // tiering - computed: false, optional: false, required: true
+    private _tiering?: S3BucketIntelligentTieringConfigurationTiering[]; 
+    public get tiering() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tiering') as any;
+    }
+    public set tiering(value: S3BucketIntelligentTieringConfigurationTiering[]) {
+      this._tiering = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tieringInput() {
+      return this._tiering
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        bucket: cdktf.stringToTerraform(this._bucket),
+        name: cdktf.stringToTerraform(this._name),
+        status: cdktf.stringToTerraform(this._status),
+        filter: s3BucketIntelligentTieringConfigurationFilterToTerraform(this._filter),
+        tiering: cdktf.listMapper(s3BucketIntelligentTieringConfigurationTieringToTerraform)(this._tiering),
       };
     }
   }

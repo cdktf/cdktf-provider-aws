@@ -767,9 +767,33 @@ export namespace DMS {
   }
   export interface DmsEndpointKinesisSettings {
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_control_details DmsEndpoint#include_control_details}
+    */
+    readonly includeControlDetails?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_null_and_empty DmsEndpoint#include_null_and_empty}
+    */
+    readonly includeNullAndEmpty?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_partition_value DmsEndpoint#include_partition_value}
+    */
+    readonly includePartitionValue?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_table_alter_operations DmsEndpoint#include_table_alter_operations}
+    */
+    readonly includeTableAlterOperations?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#include_transaction_details DmsEndpoint#include_transaction_details}
+    */
+    readonly includeTransactionDetails?: boolean | cdktf.IResolvable;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#message_format DmsEndpoint#message_format}
     */
     readonly messageFormat?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#partition_include_schema_table DmsEndpoint#partition_include_schema_table}
+    */
+    readonly partitionIncludeSchemaTable?: boolean | cdktf.IResolvable;
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint.html#service_access_role_arn DmsEndpoint#service_access_role_arn}
     */
@@ -786,7 +810,13 @@ export namespace DMS {
       throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
     }
     return {
+      include_control_details: cdktf.booleanToTerraform(struct!.includeControlDetails),
+      include_null_and_empty: cdktf.booleanToTerraform(struct!.includeNullAndEmpty),
+      include_partition_value: cdktf.booleanToTerraform(struct!.includePartitionValue),
+      include_table_alter_operations: cdktf.booleanToTerraform(struct!.includeTableAlterOperations),
+      include_transaction_details: cdktf.booleanToTerraform(struct!.includeTransactionDetails),
       message_format: cdktf.stringToTerraform(struct!.messageFormat),
+      partition_include_schema_table: cdktf.booleanToTerraform(struct!.partitionIncludeSchemaTable),
       service_access_role_arn: cdktf.stringToTerraform(struct!.serviceAccessRoleArn),
       stream_arn: cdktf.stringToTerraform(struct!.streamArn),
     }
@@ -800,6 +830,86 @@ export namespace DMS {
     */
     public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
       super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // include_control_details - computed: false, optional: true, required: false
+    private _includeControlDetails?: boolean | cdktf.IResolvable | undefined; 
+    public get includeControlDetails() {
+      return this.getBooleanAttribute('include_control_details') as any;
+    }
+    public set includeControlDetails(value: boolean | cdktf.IResolvable | undefined) {
+      this._includeControlDetails = value;
+    }
+    public resetIncludeControlDetails() {
+      this._includeControlDetails = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get includeControlDetailsInput() {
+      return this._includeControlDetails
+    }
+
+    // include_null_and_empty - computed: false, optional: true, required: false
+    private _includeNullAndEmpty?: boolean | cdktf.IResolvable | undefined; 
+    public get includeNullAndEmpty() {
+      return this.getBooleanAttribute('include_null_and_empty') as any;
+    }
+    public set includeNullAndEmpty(value: boolean | cdktf.IResolvable | undefined) {
+      this._includeNullAndEmpty = value;
+    }
+    public resetIncludeNullAndEmpty() {
+      this._includeNullAndEmpty = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get includeNullAndEmptyInput() {
+      return this._includeNullAndEmpty
+    }
+
+    // include_partition_value - computed: false, optional: true, required: false
+    private _includePartitionValue?: boolean | cdktf.IResolvable | undefined; 
+    public get includePartitionValue() {
+      return this.getBooleanAttribute('include_partition_value') as any;
+    }
+    public set includePartitionValue(value: boolean | cdktf.IResolvable | undefined) {
+      this._includePartitionValue = value;
+    }
+    public resetIncludePartitionValue() {
+      this._includePartitionValue = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get includePartitionValueInput() {
+      return this._includePartitionValue
+    }
+
+    // include_table_alter_operations - computed: false, optional: true, required: false
+    private _includeTableAlterOperations?: boolean | cdktf.IResolvable | undefined; 
+    public get includeTableAlterOperations() {
+      return this.getBooleanAttribute('include_table_alter_operations') as any;
+    }
+    public set includeTableAlterOperations(value: boolean | cdktf.IResolvable | undefined) {
+      this._includeTableAlterOperations = value;
+    }
+    public resetIncludeTableAlterOperations() {
+      this._includeTableAlterOperations = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get includeTableAlterOperationsInput() {
+      return this._includeTableAlterOperations
+    }
+
+    // include_transaction_details - computed: false, optional: true, required: false
+    private _includeTransactionDetails?: boolean | cdktf.IResolvable | undefined; 
+    public get includeTransactionDetails() {
+      return this.getBooleanAttribute('include_transaction_details') as any;
+    }
+    public set includeTransactionDetails(value: boolean | cdktf.IResolvable | undefined) {
+      this._includeTransactionDetails = value;
+    }
+    public resetIncludeTransactionDetails() {
+      this._includeTransactionDetails = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get includeTransactionDetailsInput() {
+      return this._includeTransactionDetails
     }
 
     // message_format - computed: false, optional: true, required: false
@@ -816,6 +926,22 @@ export namespace DMS {
     // Temporarily expose input value. Use with caution.
     public get messageFormatInput() {
       return this._messageFormat
+    }
+
+    // partition_include_schema_table - computed: false, optional: true, required: false
+    private _partitionIncludeSchemaTable?: boolean | cdktf.IResolvable | undefined; 
+    public get partitionIncludeSchemaTable() {
+      return this.getBooleanAttribute('partition_include_schema_table') as any;
+    }
+    public set partitionIncludeSchemaTable(value: boolean | cdktf.IResolvable | undefined) {
+      this._partitionIncludeSchemaTable = value;
+    }
+    public resetPartitionIncludeSchemaTable() {
+      this._partitionIncludeSchemaTable = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get partitionIncludeSchemaTableInput() {
+      return this._partitionIncludeSchemaTable
     }
 
     // service_access_role_arn - computed: false, optional: true, required: false

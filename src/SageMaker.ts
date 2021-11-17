@@ -647,6 +647,14 @@ export namespace SageMaker {
     */
     readonly codeRepositoryName: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html#tags SagemakerCodeRepository#tags}
+    */
+    readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html#tags_all SagemakerCodeRepository#tags_all}
+    */
+    readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+    /**
     * git_config block
     * 
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_code_repository.html#git_config SagemakerCodeRepository#git_config}
@@ -769,6 +777,8 @@ export namespace SageMaker {
         lifecycle: config.lifecycle
       });
       this._codeRepositoryName = config.codeRepositoryName;
+      this._tags = config.tags;
+      this._tagsAll = config.tagsAll;
       this._gitConfig = config.gitConfig;
     }
 
@@ -799,6 +809,40 @@ export namespace SageMaker {
       return this.getStringAttribute('id');
     }
 
+    // tags - computed: false, optional: true, required: false
+    private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tags() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags') as any;
+    }
+    public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tags = value;
+    }
+    public resetTags() {
+      this._tags = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsInput() {
+      return this._tags
+    }
+
+    // tags_all - computed: true, optional: true, required: false
+    private _tagsAll?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tagsAll() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags_all') as any;
+    }
+    public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tagsAll = value;
+    }
+    public resetTagsAll() {
+      this._tagsAll = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsAllInput() {
+      return this._tagsAll
+    }
+
     // git_config - computed: false, optional: false, required: true
     private _gitConfig?: SagemakerCodeRepositoryGitConfig; 
     private __gitConfigOutput = new SagemakerCodeRepositoryGitConfigOutputReference(this as any, "git_config", true);
@@ -820,6 +864,8 @@ export namespace SageMaker {
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
         code_repository_name: cdktf.stringToTerraform(this._codeRepositoryName),
+        tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+        tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
         git_config: sagemakerCodeRepositoryGitConfigToTerraform(this._gitConfig),
       };
     }
