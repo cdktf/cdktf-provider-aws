@@ -117,6 +117,168 @@ export namespace DLM {
       return this._times
     }
   }
+  export interface DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#interval DlmLifecyclePolicy#interval}
+    */
+    readonly interval: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#interval_unit DlmLifecyclePolicy#interval_unit}
+    */
+    readonly intervalUnit: string;
+  }
+
+  function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      interval: cdktf.numberToTerraform(struct!.interval),
+      interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    }
+  }
+
+  export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // interval - computed: false, optional: false, required: true
+    private _interval?: number; 
+    public get interval() {
+      return this.getNumberAttribute('interval');
+    }
+    public set interval(value: number) {
+      this._interval = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get intervalInput() {
+      return this._interval
+    }
+
+    // interval_unit - computed: false, optional: false, required: true
+    private _intervalUnit?: string; 
+    public get intervalUnit() {
+      return this.getStringAttribute('interval_unit');
+    }
+    public set intervalUnit(value: string) {
+      this._intervalUnit = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get intervalUnitInput() {
+      return this._intervalUnit
+    }
+  }
+  export interface DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#interval DlmLifecyclePolicy#interval}
+    */
+    readonly interval: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#interval_unit DlmLifecyclePolicy#interval_unit}
+    */
+    readonly intervalUnit: string;
+  }
+
+  function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference | DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      interval: cdktf.numberToTerraform(struct!.interval),
+      interval_unit: cdktf.stringToTerraform(struct!.intervalUnit),
+    }
+  }
+
+  export class DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // interval - computed: false, optional: false, required: true
+    private _interval?: number; 
+    public get interval() {
+      return this.getNumberAttribute('interval');
+    }
+    public set interval(value: number) {
+      this._interval = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get intervalInput() {
+      return this._interval
+    }
+
+    // interval_unit - computed: false, optional: false, required: true
+    private _intervalUnit?: string; 
+    public get intervalUnit() {
+      return this.getStringAttribute('interval_unit');
+    }
+    public set intervalUnit(value: string) {
+      this._intervalUnit = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get intervalUnitInput() {
+      return this._intervalUnit
+    }
+  }
+  export interface DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#cmk_arn DlmLifecyclePolicy#cmk_arn}
+    */
+    readonly cmkArn?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#copy_tags DlmLifecyclePolicy#copy_tags}
+    */
+    readonly copyTags?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#encrypted DlmLifecyclePolicy#encrypted}
+    */
+    readonly encrypted: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#target DlmLifecyclePolicy#target}
+    */
+    readonly target: string;
+    /**
+    * deprecate_rule block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#deprecate_rule DlmLifecyclePolicy#deprecate_rule}
+    */
+    readonly deprecateRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRule;
+    /**
+    * retain_rule block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#retain_rule DlmLifecyclePolicy#retain_rule}
+    */
+    readonly retainRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRule;
+  }
+
+  function dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerraform(struct?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      cmk_arn: cdktf.stringToTerraform(struct!.cmkArn),
+      copy_tags: cdktf.booleanToTerraform(struct!.copyTags),
+      encrypted: cdktf.booleanToTerraform(struct!.encrypted),
+      target: cdktf.stringToTerraform(struct!.target),
+      deprecate_rule: dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleDeprecateRuleToTerraform(struct!.deprecateRule),
+      retain_rule: dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleToTerraform(struct!.retainRule),
+    }
+  }
+
   export interface DlmLifecyclePolicyPolicyDetailsScheduleRetainRule {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#count DlmLifecyclePolicy#count}
@@ -177,6 +339,12 @@ export namespace DLM {
     */
     readonly createRule: DlmLifecyclePolicyPolicyDetailsScheduleCreateRule;
     /**
+    * cross_region_copy_rule block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#cross_region_copy_rule DlmLifecyclePolicy#cross_region_copy_rule}
+    */
+    readonly crossRegionCopyRule?: DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRule[];
+    /**
     * retain_rule block
     * 
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dlm_lifecycle_policy.html#retain_rule DlmLifecyclePolicy#retain_rule}
@@ -194,6 +362,7 @@ export namespace DLM {
       name: cdktf.stringToTerraform(struct!.name),
       tags_to_add: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.tagsToAdd),
       create_rule: dlmLifecyclePolicyPolicyDetailsScheduleCreateRuleToTerraform(struct!.createRule),
+      cross_region_copy_rule: cdktf.listMapper(dlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleToTerraform)(struct!.crossRegionCopyRule),
       retain_rule: dlmLifecyclePolicyPolicyDetailsScheduleRetainRuleToTerraform(struct!.retainRule),
     }
   }

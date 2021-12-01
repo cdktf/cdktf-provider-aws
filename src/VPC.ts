@@ -3517,6 +3517,14 @@ export namespace VPC {
     */
     readonly interfaceType?: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}
+    */
+    readonly ipv4PrefixCount?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv4_prefixes NetworkInterface#ipv4_prefixes}
+    */
+    readonly ipv4Prefixes?: string[];
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv6_address_count NetworkInterface#ipv6_address_count}
     */
     readonly ipv6AddressCount?: number;
@@ -3524,6 +3532,14 @@ export namespace VPC {
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv6_addresses NetworkInterface#ipv6_addresses}
     */
     readonly ipv6Addresses?: string[];
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}
+    */
+    readonly ipv6PrefixCount?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv6_prefixes NetworkInterface#ipv6_prefixes}
+    */
+    readonly ipv6Prefixes?: string[];
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#private_ip NetworkInterface#private_ip}
     */
@@ -3620,8 +3636,12 @@ export namespace VPC {
       });
       this._description = config.description;
       this._interfaceType = config.interfaceType;
+      this._ipv4PrefixCount = config.ipv4PrefixCount;
+      this._ipv4Prefixes = config.ipv4Prefixes;
       this._ipv6AddressCount = config.ipv6AddressCount;
       this._ipv6Addresses = config.ipv6Addresses;
+      this._ipv6PrefixCount = config.ipv6PrefixCount;
+      this._ipv6Prefixes = config.ipv6Prefixes;
       this._privateIp = config.privateIp;
       this._privateIps = config.privateIps;
       this._privateIpsCount = config.privateIpsCount;
@@ -3636,6 +3656,11 @@ export namespace VPC {
     // ==========
     // ATTRIBUTES
     // ==========
+
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
 
     // description - computed: false, optional: true, required: false
     private _description?: string | undefined; 
@@ -3674,6 +3699,38 @@ export namespace VPC {
       return this._interfaceType
     }
 
+    // ipv4_prefix_count - computed: true, optional: true, required: false
+    private _ipv4PrefixCount?: number | undefined; 
+    public get ipv4PrefixCount() {
+      return this.getNumberAttribute('ipv4_prefix_count');
+    }
+    public set ipv4PrefixCount(value: number | undefined) {
+      this._ipv4PrefixCount = value;
+    }
+    public resetIpv4PrefixCount() {
+      this._ipv4PrefixCount = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4PrefixCountInput() {
+      return this._ipv4PrefixCount
+    }
+
+    // ipv4_prefixes - computed: true, optional: true, required: false
+    private _ipv4Prefixes?: string[] | undefined; 
+    public get ipv4Prefixes() {
+      return this.getListAttribute('ipv4_prefixes');
+    }
+    public set ipv4Prefixes(value: string[] | undefined) {
+      this._ipv4Prefixes = value;
+    }
+    public resetIpv4Prefixes() {
+      this._ipv4Prefixes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4PrefixesInput() {
+      return this._ipv4Prefixes
+    }
+
     // ipv6_address_count - computed: true, optional: true, required: false
     private _ipv6AddressCount?: number | undefined; 
     public get ipv6AddressCount() {
@@ -3706,6 +3763,38 @@ export namespace VPC {
       return this._ipv6Addresses
     }
 
+    // ipv6_prefix_count - computed: true, optional: true, required: false
+    private _ipv6PrefixCount?: number | undefined; 
+    public get ipv6PrefixCount() {
+      return this.getNumberAttribute('ipv6_prefix_count');
+    }
+    public set ipv6PrefixCount(value: number | undefined) {
+      this._ipv6PrefixCount = value;
+    }
+    public resetIpv6PrefixCount() {
+      this._ipv6PrefixCount = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6PrefixCountInput() {
+      return this._ipv6PrefixCount
+    }
+
+    // ipv6_prefixes - computed: true, optional: true, required: false
+    private _ipv6Prefixes?: string[] | undefined; 
+    public get ipv6Prefixes() {
+      return this.getListAttribute('ipv6_prefixes');
+    }
+    public set ipv6Prefixes(value: string[] | undefined) {
+      this._ipv6Prefixes = value;
+    }
+    public resetIpv6Prefixes() {
+      this._ipv6Prefixes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6PrefixesInput() {
+      return this._ipv6Prefixes
+    }
+
     // mac_address - computed: true, optional: false, required: false
     public get macAddress() {
       return this.getStringAttribute('mac_address');
@@ -3714,6 +3803,11 @@ export namespace VPC {
     // outpost_arn - computed: true, optional: false, required: false
     public get outpostArn() {
       return this.getStringAttribute('outpost_arn');
+    }
+
+    // owner_id - computed: true, optional: false, required: false
+    public get ownerId() {
+      return this.getStringAttribute('owner_id');
     }
 
     // private_dns_name - computed: true, optional: false, required: false
@@ -3873,8 +3967,12 @@ export namespace VPC {
       return {
         description: cdktf.stringToTerraform(this._description),
         interface_type: cdktf.stringToTerraform(this._interfaceType),
+        ipv4_prefix_count: cdktf.numberToTerraform(this._ipv4PrefixCount),
+        ipv4_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv4Prefixes),
         ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
         ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Addresses),
+        ipv6_prefix_count: cdktf.numberToTerraform(this._ipv6PrefixCount),
+        ipv6_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Prefixes),
         private_ip: cdktf.stringToTerraform(this._privateIp),
         private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIps),
         private_ips_count: cdktf.numberToTerraform(this._privateIpsCount),
@@ -12111,6 +12209,11 @@ export namespace VPC {
     // ==========
     // ATTRIBUTES
     // ==========
+
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
 
     // association - computed: true, optional: false, required: false
     public association(index: string) {

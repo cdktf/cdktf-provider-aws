@@ -297,6 +297,10 @@ export namespace SSM {
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association.html#s3_key_prefix SsmAssociation#s3_key_prefix}
     */
     readonly s3KeyPrefix?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssm_association.html#s3_region SsmAssociation#s3_region}
+    */
+    readonly s3Region?: string;
   }
 
   function ssmAssociationOutputLocationToTerraform(struct?: SsmAssociationOutputLocationOutputReference | SsmAssociationOutputLocation): any {
@@ -307,6 +311,7 @@ export namespace SSM {
     return {
       s3_bucket_name: cdktf.stringToTerraform(struct!.s3BucketName),
       s3_key_prefix: cdktf.stringToTerraform(struct!.s3KeyPrefix),
+      s3_region: cdktf.stringToTerraform(struct!.s3Region),
     }
   }
 
@@ -347,6 +352,22 @@ export namespace SSM {
     // Temporarily expose input value. Use with caution.
     public get s3KeyPrefixInput() {
       return this._s3KeyPrefix
+    }
+
+    // s3_region - computed: false, optional: true, required: false
+    private _s3Region?: string | undefined; 
+    public get s3Region() {
+      return this.getStringAttribute('s3_region');
+    }
+    public set s3Region(value: string | undefined) {
+      this._s3Region = value;
+    }
+    public resetS3Region() {
+      this._s3Region = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get s3RegionInput() {
+      return this._s3Region
     }
   }
   export interface SsmAssociationTargets {

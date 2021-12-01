@@ -3614,6 +3614,70 @@ export namespace Kinesis {
       return this._schemaConfiguration
     }
   }
+  export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#enabled KinesisFirehoseDeliveryStream#enabled}
+    */
+    readonly enabled?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#retry_duration KinesisFirehoseDeliveryStream#retry_duration}
+    */
+    readonly retryDuration?: number;
+  }
+
+  function kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationToTerraform(struct?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference | KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      enabled: cdktf.booleanToTerraform(struct!.enabled),
+      retry_duration: cdktf.numberToTerraform(struct!.retryDuration),
+    }
+  }
+
+  export class KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // enabled - computed: false, optional: true, required: false
+    private _enabled?: boolean | cdktf.IResolvable | undefined; 
+    public get enabled() {
+      return this.getBooleanAttribute('enabled') as any;
+    }
+    public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+      this._enabled = value;
+    }
+    public resetEnabled() {
+      this._enabled = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enabledInput() {
+      return this._enabled
+    }
+
+    // retry_duration - computed: false, optional: true, required: false
+    private _retryDuration?: number | undefined; 
+    public get retryDuration() {
+      return this.getNumberAttribute('retry_duration');
+    }
+    public set retryDuration(value: number | undefined) {
+      this._retryDuration = value;
+    }
+    public resetRetryDuration() {
+      this._retryDuration = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get retryDurationInput() {
+      return this._retryDuration
+    }
+  }
   export interface KinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorsParameters {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#parameter_name KinesisFirehoseDeliveryStream#parameter_name}
@@ -4049,6 +4113,12 @@ export namespace Kinesis {
     */
     readonly dataFormatConversionConfiguration?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration;
     /**
+    * dynamic_partitioning_configuration block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#dynamic_partitioning_configuration KinesisFirehoseDeliveryStream#dynamic_partitioning_configuration}
+    */
+    readonly dynamicPartitioningConfiguration?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration;
+    /**
     * processing_configuration block
     * 
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html#processing_configuration KinesisFirehoseDeliveryStream#processing_configuration}
@@ -4079,6 +4149,7 @@ export namespace Kinesis {
       s3_backup_mode: cdktf.stringToTerraform(struct!.s3BackupMode),
       cloudwatch_logging_options: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationCloudwatchLoggingOptionsToTerraform(struct!.cloudwatchLoggingOptions),
       data_format_conversion_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationToTerraform(struct!.dataFormatConversionConfiguration),
+      dynamic_partitioning_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationToTerraform(struct!.dynamicPartitioningConfiguration),
       processing_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationToTerraform(struct!.processingConfiguration),
       s3_backup_configuration: kinesisFirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationToTerraform(struct!.s3BackupConfiguration),
     }
@@ -4264,6 +4335,23 @@ export namespace Kinesis {
     // Temporarily expose input value. Use with caution.
     public get dataFormatConversionConfigurationInput() {
       return this._dataFormatConversionConfiguration
+    }
+
+    // dynamic_partitioning_configuration - computed: false, optional: true, required: false
+    private _dynamicPartitioningConfiguration?: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration | undefined; 
+    private __dynamicPartitioningConfigurationOutput = new KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfigurationOutputReference(this as any, "dynamic_partitioning_configuration", true);
+    public get dynamicPartitioningConfiguration() {
+      return this.__dynamicPartitioningConfigurationOutput;
+    }
+    public putDynamicPartitioningConfiguration(value: KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDynamicPartitioningConfiguration | undefined) {
+      this._dynamicPartitioningConfiguration = value;
+    }
+    public resetDynamicPartitioningConfiguration() {
+      this._dynamicPartitioningConfiguration = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get dynamicPartitioningConfigurationInput() {
+      return this._dynamicPartitioningConfiguration
     }
 
     // processing_configuration - computed: false, optional: true, required: false

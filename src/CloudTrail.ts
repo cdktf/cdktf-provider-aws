@@ -178,6 +178,10 @@ export namespace CloudTrail {
 
   export interface CloudtrailEventSelector {
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#exclude_management_event_sources Cloudtrail#exclude_management_event_sources}
+    */
+    readonly excludeManagementEventSources?: string[];
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudtrail.html#include_management_events Cloudtrail#include_management_events}
     */
     readonly includeManagementEvents?: boolean | cdktf.IResolvable;
@@ -199,6 +203,7 @@ export namespace CloudTrail {
       throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
     }
     return {
+      exclude_management_event_sources: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludeManagementEventSources),
       include_management_events: cdktf.booleanToTerraform(struct!.includeManagementEvents),
       read_write_type: cdktf.stringToTerraform(struct!.readWriteType),
       data_resource: cdktf.listMapper(cloudtrailEventSelectorDataResourceToTerraform)(struct!.dataResource),
