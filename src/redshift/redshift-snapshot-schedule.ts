@@ -1,0 +1,221 @@
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+/**
+* AWS Redshift
+*/
+export interface RedshiftSnapshotScheduleConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html#definitions RedshiftSnapshotSchedule#definitions}
+  */
+  readonly definitions: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html#description RedshiftSnapshotSchedule#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html#force_destroy RedshiftSnapshotSchedule#force_destroy}
+  */
+  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html#identifier RedshiftSnapshotSchedule#identifier}
+  */
+  readonly identifier?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html#identifier_prefix RedshiftSnapshotSchedule#identifier_prefix}
+  */
+  readonly identifierPrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html#tags RedshiftSnapshotSchedule#tags}
+  */
+  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html#tags_all RedshiftSnapshotSchedule#tags_all}
+  */
+  readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html aws_redshift_snapshot_schedule}
+*/
+export class RedshiftSnapshotSchedule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_redshift_snapshot_schedule";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshift_snapshot_schedule.html aws_redshift_snapshot_schedule} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options RedshiftSnapshotScheduleConfig
+  */
+  public constructor(scope: Construct, id: string, config: RedshiftSnapshotScheduleConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_redshift_snapshot_schedule',
+      terraformGeneratorMetadata: {
+        providerName: 'aws'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._definitions = config.definitions;
+    this._description = config.description;
+    this._forceDestroy = config.forceDestroy;
+    this._identifier = config.identifier;
+    this._identifierPrefix = config.identifierPrefix;
+    this._tags = config.tags;
+    this._tagsAll = config.tagsAll;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // definitions - computed: false, optional: false, required: true
+  private _definitions?: string[]; 
+  public get definitions() {
+    return this.getListAttribute('definitions');
+  }
+  public set definitions(value: string[]) {
+    this._definitions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get definitionsInput() {
+    return this._definitions;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // force_destroy - computed: false, optional: true, required: false
+  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  public get forceDestroy() {
+    return this.getBooleanAttribute('force_destroy') as any;
+  }
+  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+    this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // identifier - computed: true, optional: true, required: false
+  private _identifier?: string; 
+  public get identifier() {
+    return this.getStringAttribute('identifier');
+  }
+  public set identifier(value: string) {
+    this._identifier = value;
+  }
+  public resetIdentifier() {
+    this._identifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierInput() {
+    return this._identifier;
+  }
+
+  // identifier_prefix - computed: true, optional: true, required: false
+  private _identifierPrefix?: string; 
+  public get identifierPrefix() {
+    return this.getStringAttribute('identifier_prefix');
+  }
+  public set identifierPrefix(value: string) {
+    this._identifierPrefix = value;
+  }
+  public resetIdentifierPrefix() {
+    this._identifierPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifierPrefixInput() {
+    return this._identifierPrefix;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  public get tags() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags') as any;
+  }
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
+  // tags_all - computed: true, optional: true, required: false
+  private _tagsAll?: { [key: string]: string } | cdktf.IResolvable; 
+  public get tagsAll() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('tags_all') as any;
+  }
+  public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable) {
+    this._tagsAll = value;
+  }
+  public resetTagsAll() {
+    this._tagsAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsAllInput() {
+    return this._tagsAll;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      definitions: cdktf.listMapper(cdktf.stringToTerraform)(this._definitions),
+      description: cdktf.stringToTerraform(this._description),
+      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      identifier: cdktf.stringToTerraform(this._identifier),
+      identifier_prefix: cdktf.stringToTerraform(this._identifierPrefix),
+      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+    };
+  }
+}

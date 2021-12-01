@@ -1,0 +1,314 @@
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+/**
+* AWS CloudFront
+*/
+export interface CloudfrontRealtimeLogConfigConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#fields CloudfrontRealtimeLogConfig#fields}
+  */
+  readonly fields: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#name CloudfrontRealtimeLogConfig#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#sampling_rate CloudfrontRealtimeLogConfig#sampling_rate}
+  */
+  readonly samplingRate: number;
+  /**
+  * endpoint block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#endpoint CloudfrontRealtimeLogConfig#endpoint}
+  */
+  readonly endpoint: CloudfrontRealtimeLogConfigEndpoint;
+}
+export interface CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#role_arn CloudfrontRealtimeLogConfig#role_arn}
+  */
+  readonly roleArn: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#stream_arn CloudfrontRealtimeLogConfig#stream_arn}
+  */
+  readonly streamArn: string;
+}
+
+export function cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerraform(struct?: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference | CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    stream_arn: cdktf.stringToTerraform(struct!.streamArn),
+  }
+}
+
+export class CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._roleArn) {
+      hasAnyValues = true;
+      internalValueResult.roleArn = this._roleArn;
+    }
+    if (this._streamArn) {
+      hasAnyValues = true;
+      internalValueResult.streamArn = this._streamArn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig | undefined) {
+    if (value === undefined) {
+      this._roleArn = undefined;
+      this._streamArn = undefined;
+    }
+    else {
+      this._roleArn = value.roleArn;
+      this._streamArn = value.streamArn;
+    }
+  }
+
+  // role_arn - computed: false, optional: false, required: true
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
+  // stream_arn - computed: false, optional: false, required: true
+  private _streamArn?: string; 
+  public get streamArn() {
+    return this.getStringAttribute('stream_arn');
+  }
+  public set streamArn(value: string) {
+    this._streamArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get streamArnInput() {
+    return this._streamArn;
+  }
+}
+export interface CloudfrontRealtimeLogConfigEndpoint {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#stream_type CloudfrontRealtimeLogConfig#stream_type}
+  */
+  readonly streamType: string;
+  /**
+  * kinesis_stream_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html#kinesis_stream_config CloudfrontRealtimeLogConfig#kinesis_stream_config}
+  */
+  readonly kinesisStreamConfig: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig;
+}
+
+export function cloudfrontRealtimeLogConfigEndpointToTerraform(struct?: CloudfrontRealtimeLogConfigEndpointOutputReference | CloudfrontRealtimeLogConfigEndpoint): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    stream_type: cdktf.stringToTerraform(struct!.streamType),
+    kinesis_stream_config: cloudfrontRealtimeLogConfigEndpointKinesisStreamConfigToTerraform(struct!.kinesisStreamConfig),
+  }
+}
+
+export class CloudfrontRealtimeLogConfigEndpointOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): CloudfrontRealtimeLogConfigEndpoint | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._streamType) {
+      hasAnyValues = true;
+      internalValueResult.streamType = this._streamType;
+    }
+    if (this._kinesisStreamConfig) {
+      hasAnyValues = true;
+      internalValueResult.kinesisStreamConfig = this._kinesisStreamConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudfrontRealtimeLogConfigEndpoint | undefined) {
+    if (value === undefined) {
+      this._streamType = undefined;
+      this._kinesisStreamConfig.internalValue = undefined;
+    }
+    else {
+      this._streamType = value.streamType;
+      this._kinesisStreamConfig.internalValue = value.kinesisStreamConfig;
+    }
+  }
+
+  // stream_type - computed: false, optional: false, required: true
+  private _streamType?: string; 
+  public get streamType() {
+    return this.getStringAttribute('stream_type');
+  }
+  public set streamType(value: string) {
+    this._streamType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get streamTypeInput() {
+    return this._streamType;
+  }
+
+  // kinesis_stream_config - computed: false, optional: false, required: true
+  private _kinesisStreamConfig = new CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference(this as any, "kinesis_stream_config", true);
+  public get kinesisStreamConfig() {
+    return this._kinesisStreamConfig;
+  }
+  public putKinesisStreamConfig(value: CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig) {
+    this._kinesisStreamConfig.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kinesisStreamConfigInput() {
+    return this._kinesisStreamConfig.internalValue;
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html aws_cloudfront_realtime_log_config}
+*/
+export class CloudfrontRealtimeLogConfig extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "aws_cloudfront_realtime_log_config";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config.html aws_cloudfront_realtime_log_config} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options CloudfrontRealtimeLogConfigConfig
+  */
+  public constructor(scope: Construct, id: string, config: CloudfrontRealtimeLogConfigConfig) {
+    super(scope, id, {
+      terraformResourceType: 'aws_cloudfront_realtime_log_config',
+      terraformGeneratorMetadata: {
+        providerName: 'aws'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._fields = config.fields;
+    this._name = config.name;
+    this._samplingRate = config.samplingRate;
+    this._endpoint.internalValue = config.endpoint;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // arn - computed: true, optional: false, required: false
+  public get arn() {
+    return this.getStringAttribute('arn');
+  }
+
+  // fields - computed: false, optional: false, required: true
+  private _fields?: string[]; 
+  public get fields() {
+    return this.getListAttribute('fields');
+  }
+  public set fields(value: string[]) {
+    this._fields = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldsInput() {
+    return this._fields;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // sampling_rate - computed: false, optional: false, required: true
+  private _samplingRate?: number; 
+  public get samplingRate() {
+    return this.getNumberAttribute('sampling_rate');
+  }
+  public set samplingRate(value: number) {
+    this._samplingRate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samplingRateInput() {
+    return this._samplingRate;
+  }
+
+  // endpoint - computed: false, optional: false, required: true
+  private _endpoint = new CloudfrontRealtimeLogConfigEndpointOutputReference(this as any, "endpoint", true);
+  public get endpoint() {
+    return this._endpoint;
+  }
+  public putEndpoint(value: CloudfrontRealtimeLogConfigEndpoint) {
+    this._endpoint.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      fields: cdktf.listMapper(cdktf.stringToTerraform)(this._fields),
+      name: cdktf.stringToTerraform(this._name),
+      sampling_rate: cdktf.numberToTerraform(this._samplingRate),
+      endpoint: cloudfrontRealtimeLogConfigEndpointToTerraform(this._endpoint.internalValue),
+    };
+  }
+}

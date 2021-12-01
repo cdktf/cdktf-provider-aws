@@ -49,7 +49,7 @@ export interface CloudcontrolapiResourceTimeouts {
   readonly update?: string;
 }
 
-function cloudcontrolapiResourceTimeoutsToTerraform(struct?: CloudcontrolapiResourceTimeoutsOutputReference | CloudcontrolapiResourceTimeouts): any {
+export function cloudcontrolapiResourceTimeoutsToTerraform(struct?: CloudcontrolapiResourceTimeoutsOutputReference | CloudcontrolapiResourceTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -71,12 +71,43 @@ export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CloudcontrolapiResourceTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudcontrolapiResourceTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -84,15 +115,15 @@ export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -100,15 +131,15 @@ export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -116,7 +147,7 @@ export class CloudcontrolapiResourceTimeoutsOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -157,7 +188,7 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
     this._schema = config.schema;
     this._typeName = config.typeName;
     this._typeVersionId = config.typeVersionId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -174,7 +205,7 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get desiredStateInput() {
-    return this._desiredState
+    return this._desiredState;
   }
 
   // id - computed: true, optional: true, required: false
@@ -188,11 +219,11 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   }
 
   // role_arn - computed: false, optional: true, required: false
-  private _roleArn?: string | undefined; 
+  private _roleArn?: string; 
   public get roleArn() {
     return this.getStringAttribute('role_arn');
   }
-  public set roleArn(value: string | undefined) {
+  public set roleArn(value: string) {
     this._roleArn = value;
   }
   public resetRoleArn() {
@@ -200,15 +231,15 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleArnInput() {
-    return this._roleArn
+    return this._roleArn;
   }
 
   // schema - computed: true, optional: true, required: false
-  private _schema?: string | undefined; 
+  private _schema?: string; 
   public get schema() {
     return this.getStringAttribute('schema');
   }
-  public set schema(value: string | undefined) {
+  public set schema(value: string) {
     this._schema = value;
   }
   public resetSchema() {
@@ -216,7 +247,7 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get schemaInput() {
-    return this._schema
+    return this._schema;
   }
 
   // type_name - computed: false, optional: false, required: true
@@ -229,15 +260,15 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeNameInput() {
-    return this._typeName
+    return this._typeName;
   }
 
   // type_version_id - computed: false, optional: true, required: false
-  private _typeVersionId?: string | undefined; 
+  private _typeVersionId?: string; 
   public get typeVersionId() {
     return this.getStringAttribute('type_version_id');
   }
-  public set typeVersionId(value: string | undefined) {
+  public set typeVersionId(value: string) {
     this._typeVersionId = value;
   }
   public resetTypeVersionId() {
@@ -245,24 +276,23 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeVersionIdInput() {
-    return this._typeVersionId
+    return this._typeVersionId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: CloudcontrolapiResourceTimeouts | undefined; 
-  private __timeoutsOutput = new CloudcontrolapiResourceTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CloudcontrolapiResourceTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: CloudcontrolapiResourceTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: CloudcontrolapiResourceTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -276,7 +306,7 @@ export class CloudcontrolapiResource extends cdktf.TerraformResource {
       schema: cdktf.stringToTerraform(this._schema),
       type_name: cdktf.stringToTerraform(this._typeName),
       type_version_id: cdktf.stringToTerraform(this._typeVersionId),
-      timeouts: cloudcontrolapiResourceTimeoutsToTerraform(this._timeouts),
+      timeouts: cloudcontrolapiResourceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }
