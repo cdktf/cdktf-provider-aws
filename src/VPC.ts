@@ -1529,6 +1529,26 @@ export namespace VPC {
     */
     readonly enableDnsSupport?: boolean | cdktf.IResolvable;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv4_ipam_pool_id DefaultVpc#ipv4_ipam_pool_id}
+    */
+    readonly ipv4IpamPoolId?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv4_netmask_length DefaultVpc#ipv4_netmask_length}
+    */
+    readonly ipv4NetmaskLength?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv6_cidr_block DefaultVpc#ipv6_cidr_block}
+    */
+    readonly ipv6CidrBlock?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv6_ipam_pool_id DefaultVpc#ipv6_ipam_pool_id}
+    */
+    readonly ipv6IpamPoolId?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#ipv6_netmask_length DefaultVpc#ipv6_netmask_length}
+    */
+    readonly ipv6NetmaskLength?: number;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/default_vpc.html#tags DefaultVpc#tags}
     */
     readonly tags?: { [key: string]: string } | cdktf.IResolvable;
@@ -1574,6 +1594,11 @@ export namespace VPC {
       this._enableClassiclinkDnsSupport = config.enableClassiclinkDnsSupport;
       this._enableDnsHostnames = config.enableDnsHostnames;
       this._enableDnsSupport = config.enableDnsSupport;
+      this._ipv4IpamPoolId = config.ipv4IpamPoolId;
+      this._ipv4NetmaskLength = config.ipv4NetmaskLength;
+      this._ipv6CidrBlock = config.ipv6CidrBlock;
+      this._ipv6IpamPoolId = config.ipv6IpamPoolId;
+      this._ipv6NetmaskLength = config.ipv6NetmaskLength;
       this._tags = config.tags;
       this._tagsAll = config.tagsAll;
     }
@@ -1691,14 +1716,89 @@ export namespace VPC {
       return this.getStringAttribute('instance_tenancy');
     }
 
+    // ipv4_ipam_pool_id - computed: false, optional: true, required: false
+    private _ipv4IpamPoolId?: string | undefined; 
+    public get ipv4IpamPoolId() {
+      return this.getStringAttribute('ipv4_ipam_pool_id');
+    }
+    public set ipv4IpamPoolId(value: string | undefined) {
+      this._ipv4IpamPoolId = value;
+    }
+    public resetIpv4IpamPoolId() {
+      this._ipv4IpamPoolId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4IpamPoolIdInput() {
+      return this._ipv4IpamPoolId
+    }
+
+    // ipv4_netmask_length - computed: false, optional: true, required: false
+    private _ipv4NetmaskLength?: number | undefined; 
+    public get ipv4NetmaskLength() {
+      return this.getNumberAttribute('ipv4_netmask_length');
+    }
+    public set ipv4NetmaskLength(value: number | undefined) {
+      this._ipv4NetmaskLength = value;
+    }
+    public resetIpv4NetmaskLength() {
+      this._ipv4NetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4NetmaskLengthInput() {
+      return this._ipv4NetmaskLength
+    }
+
     // ipv6_association_id - computed: true, optional: false, required: false
     public get ipv6AssociationId() {
       return this.getStringAttribute('ipv6_association_id');
     }
 
-    // ipv6_cidr_block - computed: true, optional: false, required: false
+    // ipv6_cidr_block - computed: true, optional: true, required: false
+    private _ipv6CidrBlock?: string | undefined; 
     public get ipv6CidrBlock() {
       return this.getStringAttribute('ipv6_cidr_block');
+    }
+    public set ipv6CidrBlock(value: string | undefined) {
+      this._ipv6CidrBlock = value;
+    }
+    public resetIpv6CidrBlock() {
+      this._ipv6CidrBlock = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6CidrBlockInput() {
+      return this._ipv6CidrBlock
+    }
+
+    // ipv6_ipam_pool_id - computed: false, optional: true, required: false
+    private _ipv6IpamPoolId?: string | undefined; 
+    public get ipv6IpamPoolId() {
+      return this.getStringAttribute('ipv6_ipam_pool_id');
+    }
+    public set ipv6IpamPoolId(value: string | undefined) {
+      this._ipv6IpamPoolId = value;
+    }
+    public resetIpv6IpamPoolId() {
+      this._ipv6IpamPoolId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6IpamPoolIdInput() {
+      return this._ipv6IpamPoolId
+    }
+
+    // ipv6_netmask_length - computed: false, optional: true, required: false
+    private _ipv6NetmaskLength?: number | undefined; 
+    public get ipv6NetmaskLength() {
+      return this.getNumberAttribute('ipv6_netmask_length');
+    }
+    public set ipv6NetmaskLength(value: number | undefined) {
+      this._ipv6NetmaskLength = value;
+    }
+    public resetIpv6NetmaskLength() {
+      this._ipv6NetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6NetmaskLengthInput() {
+      return this._ipv6NetmaskLength
     }
 
     // main_route_table_id - computed: true, optional: false, required: false
@@ -1755,6 +1855,11 @@ export namespace VPC {
         enable_classiclink_dns_support: cdktf.booleanToTerraform(this._enableClassiclinkDnsSupport),
         enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
         enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
+        ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
+        ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),
+        ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+        ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
+        ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
         tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
         tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       };
@@ -3517,6 +3622,14 @@ export namespace VPC {
     */
     readonly interfaceType?: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv4_prefix_count NetworkInterface#ipv4_prefix_count}
+    */
+    readonly ipv4PrefixCount?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv4_prefixes NetworkInterface#ipv4_prefixes}
+    */
+    readonly ipv4Prefixes?: string[];
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv6_address_count NetworkInterface#ipv6_address_count}
     */
     readonly ipv6AddressCount?: number;
@@ -3524,6 +3637,14 @@ export namespace VPC {
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv6_addresses NetworkInterface#ipv6_addresses}
     */
     readonly ipv6Addresses?: string[];
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv6_prefix_count NetworkInterface#ipv6_prefix_count}
+    */
+    readonly ipv6PrefixCount?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#ipv6_prefixes NetworkInterface#ipv6_prefixes}
+    */
+    readonly ipv6Prefixes?: string[];
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/network_interface.html#private_ip NetworkInterface#private_ip}
     */
@@ -3620,8 +3741,12 @@ export namespace VPC {
       });
       this._description = config.description;
       this._interfaceType = config.interfaceType;
+      this._ipv4PrefixCount = config.ipv4PrefixCount;
+      this._ipv4Prefixes = config.ipv4Prefixes;
       this._ipv6AddressCount = config.ipv6AddressCount;
       this._ipv6Addresses = config.ipv6Addresses;
+      this._ipv6PrefixCount = config.ipv6PrefixCount;
+      this._ipv6Prefixes = config.ipv6Prefixes;
       this._privateIp = config.privateIp;
       this._privateIps = config.privateIps;
       this._privateIpsCount = config.privateIpsCount;
@@ -3636,6 +3761,11 @@ export namespace VPC {
     // ==========
     // ATTRIBUTES
     // ==========
+
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
 
     // description - computed: false, optional: true, required: false
     private _description?: string | undefined; 
@@ -3674,6 +3804,38 @@ export namespace VPC {
       return this._interfaceType
     }
 
+    // ipv4_prefix_count - computed: true, optional: true, required: false
+    private _ipv4PrefixCount?: number | undefined; 
+    public get ipv4PrefixCount() {
+      return this.getNumberAttribute('ipv4_prefix_count');
+    }
+    public set ipv4PrefixCount(value: number | undefined) {
+      this._ipv4PrefixCount = value;
+    }
+    public resetIpv4PrefixCount() {
+      this._ipv4PrefixCount = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4PrefixCountInput() {
+      return this._ipv4PrefixCount
+    }
+
+    // ipv4_prefixes - computed: true, optional: true, required: false
+    private _ipv4Prefixes?: string[] | undefined; 
+    public get ipv4Prefixes() {
+      return this.getListAttribute('ipv4_prefixes');
+    }
+    public set ipv4Prefixes(value: string[] | undefined) {
+      this._ipv4Prefixes = value;
+    }
+    public resetIpv4Prefixes() {
+      this._ipv4Prefixes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4PrefixesInput() {
+      return this._ipv4Prefixes
+    }
+
     // ipv6_address_count - computed: true, optional: true, required: false
     private _ipv6AddressCount?: number | undefined; 
     public get ipv6AddressCount() {
@@ -3706,6 +3868,38 @@ export namespace VPC {
       return this._ipv6Addresses
     }
 
+    // ipv6_prefix_count - computed: true, optional: true, required: false
+    private _ipv6PrefixCount?: number | undefined; 
+    public get ipv6PrefixCount() {
+      return this.getNumberAttribute('ipv6_prefix_count');
+    }
+    public set ipv6PrefixCount(value: number | undefined) {
+      this._ipv6PrefixCount = value;
+    }
+    public resetIpv6PrefixCount() {
+      this._ipv6PrefixCount = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6PrefixCountInput() {
+      return this._ipv6PrefixCount
+    }
+
+    // ipv6_prefixes - computed: true, optional: true, required: false
+    private _ipv6Prefixes?: string[] | undefined; 
+    public get ipv6Prefixes() {
+      return this.getListAttribute('ipv6_prefixes');
+    }
+    public set ipv6Prefixes(value: string[] | undefined) {
+      this._ipv6Prefixes = value;
+    }
+    public resetIpv6Prefixes() {
+      this._ipv6Prefixes = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6PrefixesInput() {
+      return this._ipv6Prefixes
+    }
+
     // mac_address - computed: true, optional: false, required: false
     public get macAddress() {
       return this.getStringAttribute('mac_address');
@@ -3714,6 +3908,11 @@ export namespace VPC {
     // outpost_arn - computed: true, optional: false, required: false
     public get outpostArn() {
       return this.getStringAttribute('outpost_arn');
+    }
+
+    // owner_id - computed: true, optional: false, required: false
+    public get ownerId() {
+      return this.getStringAttribute('owner_id');
     }
 
     // private_dns_name - computed: true, optional: false, required: false
@@ -3873,8 +4072,12 @@ export namespace VPC {
       return {
         description: cdktf.stringToTerraform(this._description),
         interface_type: cdktf.stringToTerraform(this._interfaceType),
+        ipv4_prefix_count: cdktf.numberToTerraform(this._ipv4PrefixCount),
+        ipv4_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv4Prefixes),
         ipv6_address_count: cdktf.numberToTerraform(this._ipv6AddressCount),
         ipv6_addresses: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Addresses),
+        ipv6_prefix_count: cdktf.numberToTerraform(this._ipv6PrefixCount),
+        ipv6_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._ipv6Prefixes),
         private_ip: cdktf.stringToTerraform(this._privateIp),
         private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._privateIps),
         private_ips_count: cdktf.numberToTerraform(this._privateIpsCount),
@@ -6248,7 +6451,7 @@ export namespace VPC {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#cidr_block Vpc#cidr_block}
     */
-    readonly cidrBlock: string;
+    readonly cidrBlock?: string;
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#enable_classiclink Vpc#enable_classiclink}
     */
@@ -6269,6 +6472,26 @@ export namespace VPC {
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#instance_tenancy Vpc#instance_tenancy}
     */
     readonly instanceTenancy?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv4_ipam_pool_id Vpc#ipv4_ipam_pool_id}
+    */
+    readonly ipv4IpamPoolId?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv4_netmask_length Vpc#ipv4_netmask_length}
+    */
+    readonly ipv4NetmaskLength?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv6_cidr_block Vpc#ipv6_cidr_block}
+    */
+    readonly ipv6CidrBlock?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv6_ipam_pool_id Vpc#ipv6_ipam_pool_id}
+    */
+    readonly ipv6IpamPoolId?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#ipv6_netmask_length Vpc#ipv6_netmask_length}
+    */
+    readonly ipv6NetmaskLength?: number;
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc.html#tags Vpc#tags}
     */
@@ -6298,9 +6521,9 @@ export namespace VPC {
     *
     * @param scope The scope in which to define this construct
     * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-    * @param options VpcConfig
+    * @param options VpcConfig = {}
     */
-    public constructor(scope: Construct, id: string, config: VpcConfig) {
+    public constructor(scope: Construct, id: string, config: VpcConfig = {}) {
       super(scope, id, {
         terraformResourceType: 'aws_vpc',
         terraformGeneratorMetadata: {
@@ -6318,6 +6541,11 @@ export namespace VPC {
       this._enableDnsHostnames = config.enableDnsHostnames;
       this._enableDnsSupport = config.enableDnsSupport;
       this._instanceTenancy = config.instanceTenancy;
+      this._ipv4IpamPoolId = config.ipv4IpamPoolId;
+      this._ipv4NetmaskLength = config.ipv4NetmaskLength;
+      this._ipv6CidrBlock = config.ipv6CidrBlock;
+      this._ipv6IpamPoolId = config.ipv6IpamPoolId;
+      this._ipv6NetmaskLength = config.ipv6NetmaskLength;
       this._tags = config.tags;
       this._tagsAll = config.tagsAll;
     }
@@ -6347,13 +6575,16 @@ export namespace VPC {
       return this._assignGeneratedIpv6CidrBlock
     }
 
-    // cidr_block - computed: false, optional: false, required: true
-    private _cidrBlock?: string; 
+    // cidr_block - computed: true, optional: true, required: false
+    private _cidrBlock?: string | undefined; 
     public get cidrBlock() {
       return this.getStringAttribute('cidr_block');
     }
-    public set cidrBlock(value: string) {
+    public set cidrBlock(value: string | undefined) {
       this._cidrBlock = value;
+    }
+    public resetCidrBlock() {
+      this._cidrBlock = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get cidrBlockInput() {
@@ -6465,14 +6696,89 @@ export namespace VPC {
       return this._instanceTenancy
     }
 
+    // ipv4_ipam_pool_id - computed: false, optional: true, required: false
+    private _ipv4IpamPoolId?: string | undefined; 
+    public get ipv4IpamPoolId() {
+      return this.getStringAttribute('ipv4_ipam_pool_id');
+    }
+    public set ipv4IpamPoolId(value: string | undefined) {
+      this._ipv4IpamPoolId = value;
+    }
+    public resetIpv4IpamPoolId() {
+      this._ipv4IpamPoolId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4IpamPoolIdInput() {
+      return this._ipv4IpamPoolId
+    }
+
+    // ipv4_netmask_length - computed: false, optional: true, required: false
+    private _ipv4NetmaskLength?: number | undefined; 
+    public get ipv4NetmaskLength() {
+      return this.getNumberAttribute('ipv4_netmask_length');
+    }
+    public set ipv4NetmaskLength(value: number | undefined) {
+      this._ipv4NetmaskLength = value;
+    }
+    public resetIpv4NetmaskLength() {
+      this._ipv4NetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4NetmaskLengthInput() {
+      return this._ipv4NetmaskLength
+    }
+
     // ipv6_association_id - computed: true, optional: false, required: false
     public get ipv6AssociationId() {
       return this.getStringAttribute('ipv6_association_id');
     }
 
-    // ipv6_cidr_block - computed: true, optional: false, required: false
+    // ipv6_cidr_block - computed: true, optional: true, required: false
+    private _ipv6CidrBlock?: string | undefined; 
     public get ipv6CidrBlock() {
       return this.getStringAttribute('ipv6_cidr_block');
+    }
+    public set ipv6CidrBlock(value: string | undefined) {
+      this._ipv6CidrBlock = value;
+    }
+    public resetIpv6CidrBlock() {
+      this._ipv6CidrBlock = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6CidrBlockInput() {
+      return this._ipv6CidrBlock
+    }
+
+    // ipv6_ipam_pool_id - computed: false, optional: true, required: false
+    private _ipv6IpamPoolId?: string | undefined; 
+    public get ipv6IpamPoolId() {
+      return this.getStringAttribute('ipv6_ipam_pool_id');
+    }
+    public set ipv6IpamPoolId(value: string | undefined) {
+      this._ipv6IpamPoolId = value;
+    }
+    public resetIpv6IpamPoolId() {
+      this._ipv6IpamPoolId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6IpamPoolIdInput() {
+      return this._ipv6IpamPoolId
+    }
+
+    // ipv6_netmask_length - computed: false, optional: true, required: false
+    private _ipv6NetmaskLength?: number | undefined; 
+    public get ipv6NetmaskLength() {
+      return this.getNumberAttribute('ipv6_netmask_length');
+    }
+    public set ipv6NetmaskLength(value: number | undefined) {
+      this._ipv6NetmaskLength = value;
+    }
+    public resetIpv6NetmaskLength() {
+      this._ipv6NetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6NetmaskLengthInput() {
+      return this._ipv6NetmaskLength
     }
 
     // main_route_table_id - computed: true, optional: false, required: false
@@ -6532,6 +6838,11 @@ export namespace VPC {
         enable_dns_hostnames: cdktf.booleanToTerraform(this._enableDnsHostnames),
         enable_dns_support: cdktf.booleanToTerraform(this._enableDnsSupport),
         instance_tenancy: cdktf.stringToTerraform(this._instanceTenancy),
+        ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
+        ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),
+        ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+        ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
+        ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
         tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
         tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
       };
@@ -8091,11 +8402,1093 @@ export namespace VPC {
       };
     }
   }
+  export interface VpcIpamConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#description VpcIpam#description}
+    */
+    readonly description?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#tags VpcIpam#tags}
+    */
+    readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#tags_all VpcIpam#tags_all}
+    */
+    readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+    /**
+    * operating_regions block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#operating_regions VpcIpam#operating_regions}
+    */
+    readonly operatingRegions: VpcIpamOperatingRegions[];
+  }
+  export interface VpcIpamOperatingRegions {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html#region_name VpcIpam#region_name}
+    */
+    readonly regionName: string;
+  }
+
+  function vpcIpamOperatingRegionsToTerraform(struct?: VpcIpamOperatingRegions): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      region_name: cdktf.stringToTerraform(struct!.regionName),
+    }
+  }
+
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html aws_vpc_ipam}
+  */
+  export class VpcIpam extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_vpc_ipam";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam.html aws_vpc_ipam} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options VpcIpamConfig
+    */
+    public constructor(scope: Construct, id: string, config: VpcIpamConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_vpc_ipam',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._description = config.description;
+      this._tags = config.tags;
+      this._tagsAll = config.tagsAll;
+      this._operatingRegions = config.operatingRegions;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
+
+    // description - computed: false, optional: true, required: false
+    private _description?: string | undefined; 
+    public get description() {
+      return this.getStringAttribute('description');
+    }
+    public set description(value: string | undefined) {
+      this._description = value;
+    }
+    public resetDescription() {
+      this._description = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get descriptionInput() {
+      return this._description
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // private_default_scope_id - computed: true, optional: false, required: false
+    public get privateDefaultScopeId() {
+      return this.getStringAttribute('private_default_scope_id');
+    }
+
+    // public_default_scope_id - computed: true, optional: false, required: false
+    public get publicDefaultScopeId() {
+      return this.getStringAttribute('public_default_scope_id');
+    }
+
+    // scope_count - computed: true, optional: false, required: false
+    public get scopeCount() {
+      return this.getNumberAttribute('scope_count');
+    }
+
+    // tags - computed: false, optional: true, required: false
+    private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tags() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags') as any;
+    }
+    public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tags = value;
+    }
+    public resetTags() {
+      this._tags = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsInput() {
+      return this._tags
+    }
+
+    // tags_all - computed: true, optional: true, required: false
+    private _tagsAll?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tagsAll() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags_all') as any;
+    }
+    public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tagsAll = value;
+    }
+    public resetTagsAll() {
+      this._tagsAll = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsAllInput() {
+      return this._tagsAll
+    }
+
+    // operating_regions - computed: false, optional: false, required: true
+    private _operatingRegions?: VpcIpamOperatingRegions[]; 
+    public get operatingRegions() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('operating_regions') as any;
+    }
+    public set operatingRegions(value: VpcIpamOperatingRegions[]) {
+      this._operatingRegions = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get operatingRegionsInput() {
+      return this._operatingRegions
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        description: cdktf.stringToTerraform(this._description),
+        tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+        tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+        operating_regions: cdktf.listMapper(vpcIpamOperatingRegionsToTerraform)(this._operatingRegions),
+      };
+    }
+  }
+  export interface VpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#address_family VpcIpamPool#address_family}
+    */
+    readonly addressFamily: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}
+    */
+    readonly allocationDefaultNetmaskLength?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}
+    */
+    readonly allocationMaxNetmaskLength?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}
+    */
+    readonly allocationMinNetmaskLength?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#allocation_resource_tags VpcIpamPool#allocation_resource_tags}
+    */
+    readonly allocationResourceTags?: { [key: string]: string } | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#auto_import VpcIpamPool#auto_import}
+    */
+    readonly autoImport?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#aws_service VpcIpamPool#aws_service}
+    */
+    readonly awsService?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#description VpcIpamPool#description}
+    */
+    readonly description?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#ipam_scope_id VpcIpamPool#ipam_scope_id}
+    */
+    readonly ipamScopeId: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#locale VpcIpamPool#locale}
+    */
+    readonly locale?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#publicly_advertisable VpcIpamPool#publicly_advertisable}
+    */
+    readonly publiclyAdvertisable?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}
+    */
+    readonly sourceIpamPoolId?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#tags VpcIpamPool#tags}
+    */
+    readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html#tags_all VpcIpamPool#tags_all}
+    */
+    readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html aws_vpc_ipam_pool}
+  */
+  export class VpcIpamPool extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_vpc_ipam_pool";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool.html aws_vpc_ipam_pool} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options VpcIpamPoolConfig
+    */
+    public constructor(scope: Construct, id: string, config: VpcIpamPoolConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_vpc_ipam_pool',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._addressFamily = config.addressFamily;
+      this._allocationDefaultNetmaskLength = config.allocationDefaultNetmaskLength;
+      this._allocationMaxNetmaskLength = config.allocationMaxNetmaskLength;
+      this._allocationMinNetmaskLength = config.allocationMinNetmaskLength;
+      this._allocationResourceTags = config.allocationResourceTags;
+      this._autoImport = config.autoImport;
+      this._awsService = config.awsService;
+      this._description = config.description;
+      this._ipamScopeId = config.ipamScopeId;
+      this._locale = config.locale;
+      this._publiclyAdvertisable = config.publiclyAdvertisable;
+      this._sourceIpamPoolId = config.sourceIpamPoolId;
+      this._tags = config.tags;
+      this._tagsAll = config.tagsAll;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // address_family - computed: false, optional: false, required: true
+    private _addressFamily?: string; 
+    public get addressFamily() {
+      return this.getStringAttribute('address_family');
+    }
+    public set addressFamily(value: string) {
+      this._addressFamily = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get addressFamilyInput() {
+      return this._addressFamily
+    }
+
+    // allocation_default_netmask_length - computed: false, optional: true, required: false
+    private _allocationDefaultNetmaskLength?: number | undefined; 
+    public get allocationDefaultNetmaskLength() {
+      return this.getNumberAttribute('allocation_default_netmask_length');
+    }
+    public set allocationDefaultNetmaskLength(value: number | undefined) {
+      this._allocationDefaultNetmaskLength = value;
+    }
+    public resetAllocationDefaultNetmaskLength() {
+      this._allocationDefaultNetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get allocationDefaultNetmaskLengthInput() {
+      return this._allocationDefaultNetmaskLength
+    }
+
+    // allocation_max_netmask_length - computed: false, optional: true, required: false
+    private _allocationMaxNetmaskLength?: number | undefined; 
+    public get allocationMaxNetmaskLength() {
+      return this.getNumberAttribute('allocation_max_netmask_length');
+    }
+    public set allocationMaxNetmaskLength(value: number | undefined) {
+      this._allocationMaxNetmaskLength = value;
+    }
+    public resetAllocationMaxNetmaskLength() {
+      this._allocationMaxNetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get allocationMaxNetmaskLengthInput() {
+      return this._allocationMaxNetmaskLength
+    }
+
+    // allocation_min_netmask_length - computed: false, optional: true, required: false
+    private _allocationMinNetmaskLength?: number | undefined; 
+    public get allocationMinNetmaskLength() {
+      return this.getNumberAttribute('allocation_min_netmask_length');
+    }
+    public set allocationMinNetmaskLength(value: number | undefined) {
+      this._allocationMinNetmaskLength = value;
+    }
+    public resetAllocationMinNetmaskLength() {
+      this._allocationMinNetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get allocationMinNetmaskLengthInput() {
+      return this._allocationMinNetmaskLength
+    }
+
+    // allocation_resource_tags - computed: false, optional: true, required: false
+    private _allocationResourceTags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get allocationResourceTags() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('allocation_resource_tags') as any;
+    }
+    public set allocationResourceTags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._allocationResourceTags = value;
+    }
+    public resetAllocationResourceTags() {
+      this._allocationResourceTags = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get allocationResourceTagsInput() {
+      return this._allocationResourceTags
+    }
+
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
+
+    // auto_import - computed: false, optional: true, required: false
+    private _autoImport?: boolean | cdktf.IResolvable | undefined; 
+    public get autoImport() {
+      return this.getBooleanAttribute('auto_import') as any;
+    }
+    public set autoImport(value: boolean | cdktf.IResolvable | undefined) {
+      this._autoImport = value;
+    }
+    public resetAutoImport() {
+      this._autoImport = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get autoImportInput() {
+      return this._autoImport
+    }
+
+    // aws_service - computed: false, optional: true, required: false
+    private _awsService?: string | undefined; 
+    public get awsService() {
+      return this.getStringAttribute('aws_service');
+    }
+    public set awsService(value: string | undefined) {
+      this._awsService = value;
+    }
+    public resetAwsService() {
+      this._awsService = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get awsServiceInput() {
+      return this._awsService
+    }
+
+    // description - computed: false, optional: true, required: false
+    private _description?: string | undefined; 
+    public get description() {
+      return this.getStringAttribute('description');
+    }
+    public set description(value: string | undefined) {
+      this._description = value;
+    }
+    public resetDescription() {
+      this._description = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get descriptionInput() {
+      return this._description
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // ipam_scope_id - computed: false, optional: false, required: true
+    private _ipamScopeId?: string; 
+    public get ipamScopeId() {
+      return this.getStringAttribute('ipam_scope_id');
+    }
+    public set ipamScopeId(value: string) {
+      this._ipamScopeId = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipamScopeIdInput() {
+      return this._ipamScopeId
+    }
+
+    // ipam_scope_type - computed: true, optional: false, required: false
+    public get ipamScopeType() {
+      return this.getStringAttribute('ipam_scope_type');
+    }
+
+    // locale - computed: false, optional: true, required: false
+    private _locale?: string | undefined; 
+    public get locale() {
+      return this.getStringAttribute('locale');
+    }
+    public set locale(value: string | undefined) {
+      this._locale = value;
+    }
+    public resetLocale() {
+      this._locale = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get localeInput() {
+      return this._locale
+    }
+
+    // pool_depth - computed: true, optional: false, required: false
+    public get poolDepth() {
+      return this.getNumberAttribute('pool_depth');
+    }
+
+    // publicly_advertisable - computed: false, optional: true, required: false
+    private _publiclyAdvertisable?: boolean | cdktf.IResolvable | undefined; 
+    public get publiclyAdvertisable() {
+      return this.getBooleanAttribute('publicly_advertisable') as any;
+    }
+    public set publiclyAdvertisable(value: boolean | cdktf.IResolvable | undefined) {
+      this._publiclyAdvertisable = value;
+    }
+    public resetPubliclyAdvertisable() {
+      this._publiclyAdvertisable = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get publiclyAdvertisableInput() {
+      return this._publiclyAdvertisable
+    }
+
+    // source_ipam_pool_id - computed: false, optional: true, required: false
+    private _sourceIpamPoolId?: string | undefined; 
+    public get sourceIpamPoolId() {
+      return this.getStringAttribute('source_ipam_pool_id');
+    }
+    public set sourceIpamPoolId(value: string | undefined) {
+      this._sourceIpamPoolId = value;
+    }
+    public resetSourceIpamPoolId() {
+      this._sourceIpamPoolId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get sourceIpamPoolIdInput() {
+      return this._sourceIpamPoolId
+    }
+
+    // state - computed: true, optional: false, required: false
+    public get state() {
+      return this.getStringAttribute('state');
+    }
+
+    // tags - computed: false, optional: true, required: false
+    private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tags() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags') as any;
+    }
+    public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tags = value;
+    }
+    public resetTags() {
+      this._tags = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsInput() {
+      return this._tags
+    }
+
+    // tags_all - computed: true, optional: true, required: false
+    private _tagsAll?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tagsAll() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags_all') as any;
+    }
+    public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tagsAll = value;
+    }
+    public resetTagsAll() {
+      this._tagsAll = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsAllInput() {
+      return this._tagsAll
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        address_family: cdktf.stringToTerraform(this._addressFamily),
+        allocation_default_netmask_length: cdktf.numberToTerraform(this._allocationDefaultNetmaskLength),
+        allocation_max_netmask_length: cdktf.numberToTerraform(this._allocationMaxNetmaskLength),
+        allocation_min_netmask_length: cdktf.numberToTerraform(this._allocationMinNetmaskLength),
+        allocation_resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._allocationResourceTags),
+        auto_import: cdktf.booleanToTerraform(this._autoImport),
+        aws_service: cdktf.stringToTerraform(this._awsService),
+        description: cdktf.stringToTerraform(this._description),
+        ipam_scope_id: cdktf.stringToTerraform(this._ipamScopeId),
+        locale: cdktf.stringToTerraform(this._locale),
+        publicly_advertisable: cdktf.booleanToTerraform(this._publiclyAdvertisable),
+        source_ipam_pool_id: cdktf.stringToTerraform(this._sourceIpamPoolId),
+        tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+        tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      };
+    }
+  }
+  export interface VpcIpamPoolCidrConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#cidr VpcIpamPoolCidr#cidr}
+    */
+    readonly cidr?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#ipam_pool_id VpcIpamPoolCidr#ipam_pool_id}
+    */
+    readonly ipamPoolId: string;
+    /**
+    * cidr_authorization_context block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#cidr_authorization_context VpcIpamPoolCidr#cidr_authorization_context}
+    */
+    readonly cidrAuthorizationContext?: VpcIpamPoolCidrCidrAuthorizationContext;
+  }
+  export interface VpcIpamPoolCidrCidrAuthorizationContext {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#message VpcIpamPoolCidr#message}
+    */
+    readonly message?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html#signature VpcIpamPoolCidr#signature}
+    */
+    readonly signature?: string;
+  }
+
+  function vpcIpamPoolCidrCidrAuthorizationContextToTerraform(struct?: VpcIpamPoolCidrCidrAuthorizationContextOutputReference | VpcIpamPoolCidrCidrAuthorizationContext): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      message: cdktf.stringToTerraform(struct!.message),
+      signature: cdktf.stringToTerraform(struct!.signature),
+    }
+  }
+
+  export class VpcIpamPoolCidrCidrAuthorizationContextOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // message - computed: false, optional: true, required: false
+    private _message?: string | undefined; 
+    public get message() {
+      return this.getStringAttribute('message');
+    }
+    public set message(value: string | undefined) {
+      this._message = value;
+    }
+    public resetMessage() {
+      this._message = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get messageInput() {
+      return this._message
+    }
+
+    // signature - computed: false, optional: true, required: false
+    private _signature?: string | undefined; 
+    public get signature() {
+      return this.getStringAttribute('signature');
+    }
+    public set signature(value: string | undefined) {
+      this._signature = value;
+    }
+    public resetSignature() {
+      this._signature = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get signatureInput() {
+      return this._signature
+    }
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html aws_vpc_ipam_pool_cidr}
+  */
+  export class VpcIpamPoolCidr extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_vpc_ipam_pool_cidr";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr.html aws_vpc_ipam_pool_cidr} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options VpcIpamPoolCidrConfig
+    */
+    public constructor(scope: Construct, id: string, config: VpcIpamPoolCidrConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_vpc_ipam_pool_cidr',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._cidr = config.cidr;
+      this._ipamPoolId = config.ipamPoolId;
+      this._cidrAuthorizationContext = config.cidrAuthorizationContext;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // cidr - computed: true, optional: true, required: false
+    private _cidr?: string | undefined; 
+    public get cidr() {
+      return this.getStringAttribute('cidr');
+    }
+    public set cidr(value: string | undefined) {
+      this._cidr = value;
+    }
+    public resetCidr() {
+      this._cidr = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get cidrInput() {
+      return this._cidr
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // ipam_pool_id - computed: false, optional: false, required: true
+    private _ipamPoolId?: string; 
+    public get ipamPoolId() {
+      return this.getStringAttribute('ipam_pool_id');
+    }
+    public set ipamPoolId(value: string) {
+      this._ipamPoolId = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipamPoolIdInput() {
+      return this._ipamPoolId
+    }
+
+    // cidr_authorization_context - computed: false, optional: true, required: false
+    private _cidrAuthorizationContext?: VpcIpamPoolCidrCidrAuthorizationContext | undefined; 
+    private __cidrAuthorizationContextOutput = new VpcIpamPoolCidrCidrAuthorizationContextOutputReference(this as any, "cidr_authorization_context", true);
+    public get cidrAuthorizationContext() {
+      return this.__cidrAuthorizationContextOutput;
+    }
+    public putCidrAuthorizationContext(value: VpcIpamPoolCidrCidrAuthorizationContext | undefined) {
+      this._cidrAuthorizationContext = value;
+    }
+    public resetCidrAuthorizationContext() {
+      this._cidrAuthorizationContext = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get cidrAuthorizationContextInput() {
+      return this._cidrAuthorizationContext
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        cidr: cdktf.stringToTerraform(this._cidr),
+        ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
+        cidr_authorization_context: vpcIpamPoolCidrCidrAuthorizationContextToTerraform(this._cidrAuthorizationContext),
+      };
+    }
+  }
+  export interface VpcIpamPoolCidrAllocationConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr_allocation.html#cidr VpcIpamPoolCidrAllocation#cidr}
+    */
+    readonly cidr?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr_allocation.html#description VpcIpamPoolCidrAllocation#description}
+    */
+    readonly description?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr_allocation.html#ipam_pool_id VpcIpamPoolCidrAllocation#ipam_pool_id}
+    */
+    readonly ipamPoolId: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr_allocation.html#netmask_length VpcIpamPoolCidrAllocation#netmask_length}
+    */
+    readonly netmaskLength?: number;
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr_allocation.html aws_vpc_ipam_pool_cidr_allocation}
+  */
+  export class VpcIpamPoolCidrAllocation extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_vpc_ipam_pool_cidr_allocation";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr_allocation.html aws_vpc_ipam_pool_cidr_allocation} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options VpcIpamPoolCidrAllocationConfig
+    */
+    public constructor(scope: Construct, id: string, config: VpcIpamPoolCidrAllocationConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_vpc_ipam_pool_cidr_allocation',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._cidr = config.cidr;
+      this._description = config.description;
+      this._ipamPoolId = config.ipamPoolId;
+      this._netmaskLength = config.netmaskLength;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // cidr - computed: true, optional: true, required: false
+    private _cidr?: string | undefined; 
+    public get cidr() {
+      return this.getStringAttribute('cidr');
+    }
+    public set cidr(value: string | undefined) {
+      this._cidr = value;
+    }
+    public resetCidr() {
+      this._cidr = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get cidrInput() {
+      return this._cidr
+    }
+
+    // description - computed: false, optional: true, required: false
+    private _description?: string | undefined; 
+    public get description() {
+      return this.getStringAttribute('description');
+    }
+    public set description(value: string | undefined) {
+      this._description = value;
+    }
+    public resetDescription() {
+      this._description = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get descriptionInput() {
+      return this._description
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // ipam_pool_allocation_id - computed: true, optional: false, required: false
+    public get ipamPoolAllocationId() {
+      return this.getStringAttribute('ipam_pool_allocation_id');
+    }
+
+    // ipam_pool_id - computed: false, optional: false, required: true
+    private _ipamPoolId?: string; 
+    public get ipamPoolId() {
+      return this.getStringAttribute('ipam_pool_id');
+    }
+    public set ipamPoolId(value: string) {
+      this._ipamPoolId = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipamPoolIdInput() {
+      return this._ipamPoolId
+    }
+
+    // netmask_length - computed: false, optional: true, required: false
+    private _netmaskLength?: number | undefined; 
+    public get netmaskLength() {
+      return this.getNumberAttribute('netmask_length');
+    }
+    public set netmaskLength(value: number | undefined) {
+      this._netmaskLength = value;
+    }
+    public resetNetmaskLength() {
+      this._netmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get netmaskLengthInput() {
+      return this._netmaskLength
+    }
+
+    // resource_id - computed: true, optional: false, required: false
+    public get resourceId() {
+      return this.getStringAttribute('resource_id');
+    }
+
+    // resource_owner - computed: true, optional: false, required: false
+    public get resourceOwner() {
+      return this.getStringAttribute('resource_owner');
+    }
+
+    // resource_type - computed: true, optional: false, required: false
+    public get resourceType() {
+      return this.getStringAttribute('resource_type');
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        cidr: cdktf.stringToTerraform(this._cidr),
+        description: cdktf.stringToTerraform(this._description),
+        ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
+        netmask_length: cdktf.numberToTerraform(this._netmaskLength),
+      };
+    }
+  }
+  export interface VpcIpamScopeConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_scope.html#description VpcIpamScope#description}
+    */
+    readonly description?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_scope.html#ipam_id VpcIpamScope#ipam_id}
+    */
+    readonly ipamId: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_scope.html#tags VpcIpamScope#tags}
+    */
+    readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_scope.html#tags_all VpcIpamScope#tags_all}
+    */
+    readonly tagsAll?: { [key: string]: string } | cdktf.IResolvable;
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_scope.html aws_vpc_ipam_scope}
+  */
+  export class VpcIpamScope extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_vpc_ipam_scope";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_scope.html aws_vpc_ipam_scope} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options VpcIpamScopeConfig
+    */
+    public constructor(scope: Construct, id: string, config: VpcIpamScopeConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_vpc_ipam_scope',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._description = config.description;
+      this._ipamId = config.ipamId;
+      this._tags = config.tags;
+      this._tagsAll = config.tagsAll;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
+
+    // description - computed: false, optional: true, required: false
+    private _description?: string | undefined; 
+    public get description() {
+      return this.getStringAttribute('description');
+    }
+    public set description(value: string | undefined) {
+      this._description = value;
+    }
+    public resetDescription() {
+      this._description = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get descriptionInput() {
+      return this._description
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // ipam_arn - computed: true, optional: false, required: false
+    public get ipamArn() {
+      return this.getStringAttribute('ipam_arn');
+    }
+
+    // ipam_id - computed: false, optional: false, required: true
+    private _ipamId?: string; 
+    public get ipamId() {
+      return this.getStringAttribute('ipam_id');
+    }
+    public set ipamId(value: string) {
+      this._ipamId = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipamIdInput() {
+      return this._ipamId
+    }
+
+    // ipam_scope_type - computed: true, optional: false, required: false
+    public get ipamScopeType() {
+      return this.getStringAttribute('ipam_scope_type');
+    }
+
+    // is_default - computed: true, optional: false, required: false
+    public get isDefault() {
+      return this.getBooleanAttribute('is_default') as any;
+    }
+
+    // pool_count - computed: true, optional: false, required: false
+    public get poolCount() {
+      return this.getNumberAttribute('pool_count');
+    }
+
+    // tags - computed: false, optional: true, required: false
+    private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tags() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags') as any;
+    }
+    public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tags = value;
+    }
+    public resetTags() {
+      this._tags = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsInput() {
+      return this._tags
+    }
+
+    // tags_all - computed: true, optional: true, required: false
+    private _tagsAll?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tagsAll() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags_all') as any;
+    }
+    public set tagsAll(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tagsAll = value;
+    }
+    public resetTagsAll() {
+      this._tagsAll = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsAllInput() {
+      return this._tagsAll
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        description: cdktf.stringToTerraform(this._description),
+        ipam_id: cdktf.stringToTerraform(this._ipamId),
+        tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+        tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
+      };
+    }
+  }
   export interface VpcIpv4CidrBlockAssociationConfig extends cdktf.TerraformMetaArguments {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association.html#cidr_block VpcIpv4CidrBlockAssociation#cidr_block}
     */
-    readonly cidrBlock: string;
+    readonly cidrBlock?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association.html#ipv4_ipam_pool_id VpcIpv4CidrBlockAssociation#ipv4_ipam_pool_id}
+    */
+    readonly ipv4IpamPoolId?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association.html#ipv4_netmask_length VpcIpv4CidrBlockAssociation#ipv4_netmask_length}
+    */
+    readonly ipv4NetmaskLength?: number;
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv4_cidr_block_association.html#vpc_id VpcIpv4CidrBlockAssociation#vpc_id}
     */
@@ -8205,6 +9598,8 @@ export namespace VPC {
         lifecycle: config.lifecycle
       });
       this._cidrBlock = config.cidrBlock;
+      this._ipv4IpamPoolId = config.ipv4IpamPoolId;
+      this._ipv4NetmaskLength = config.ipv4NetmaskLength;
       this._vpcId = config.vpcId;
       this._timeouts = config.timeouts;
     }
@@ -8213,13 +9608,16 @@ export namespace VPC {
     // ATTRIBUTES
     // ==========
 
-    // cidr_block - computed: false, optional: false, required: true
-    private _cidrBlock?: string; 
+    // cidr_block - computed: true, optional: true, required: false
+    private _cidrBlock?: string | undefined; 
     public get cidrBlock() {
       return this.getStringAttribute('cidr_block');
     }
-    public set cidrBlock(value: string) {
+    public set cidrBlock(value: string | undefined) {
       this._cidrBlock = value;
+    }
+    public resetCidrBlock() {
+      this._cidrBlock = undefined;
     }
     // Temporarily expose input value. Use with caution.
     public get cidrBlockInput() {
@@ -8229,6 +9627,38 @@ export namespace VPC {
     // id - computed: true, optional: true, required: false
     public get id() {
       return this.getStringAttribute('id');
+    }
+
+    // ipv4_ipam_pool_id - computed: false, optional: true, required: false
+    private _ipv4IpamPoolId?: string | undefined; 
+    public get ipv4IpamPoolId() {
+      return this.getStringAttribute('ipv4_ipam_pool_id');
+    }
+    public set ipv4IpamPoolId(value: string | undefined) {
+      this._ipv4IpamPoolId = value;
+    }
+    public resetIpv4IpamPoolId() {
+      this._ipv4IpamPoolId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4IpamPoolIdInput() {
+      return this._ipv4IpamPoolId
+    }
+
+    // ipv4_netmask_length - computed: false, optional: true, required: false
+    private _ipv4NetmaskLength?: number | undefined; 
+    public get ipv4NetmaskLength() {
+      return this.getNumberAttribute('ipv4_netmask_length');
+    }
+    public set ipv4NetmaskLength(value: number | undefined) {
+      this._ipv4NetmaskLength = value;
+    }
+    public resetIpv4NetmaskLength() {
+      this._ipv4NetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv4NetmaskLengthInput() {
+      return this._ipv4NetmaskLength
     }
 
     // vpc_id - computed: false, optional: false, required: true
@@ -8268,8 +9698,236 @@ export namespace VPC {
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
         cidr_block: cdktf.stringToTerraform(this._cidrBlock),
+        ipv4_ipam_pool_id: cdktf.stringToTerraform(this._ipv4IpamPoolId),
+        ipv4_netmask_length: cdktf.numberToTerraform(this._ipv4NetmaskLength),
         vpc_id: cdktf.stringToTerraform(this._vpcId),
         timeouts: vpcIpv4CidrBlockAssociationTimeoutsToTerraform(this._timeouts),
+      };
+    }
+  }
+  export interface VpcIpv6CidrBlockAssociationConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html#ipv6_cidr_block VpcIpv6CidrBlockAssociation#ipv6_cidr_block}
+    */
+    readonly ipv6CidrBlock?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html#ipv6_ipam_pool_id VpcIpv6CidrBlockAssociation#ipv6_ipam_pool_id}
+    */
+    readonly ipv6IpamPoolId: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html#ipv6_netmask_length VpcIpv6CidrBlockAssociation#ipv6_netmask_length}
+    */
+    readonly ipv6NetmaskLength?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html#vpc_id VpcIpv6CidrBlockAssociation#vpc_id}
+    */
+    readonly vpcId: string;
+    /**
+    * timeouts block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html#timeouts VpcIpv6CidrBlockAssociation#timeouts}
+    */
+    readonly timeouts?: VpcIpv6CidrBlockAssociationTimeouts;
+  }
+  export interface VpcIpv6CidrBlockAssociationTimeouts {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html#create VpcIpv6CidrBlockAssociation#create}
+    */
+    readonly create?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html#delete VpcIpv6CidrBlockAssociation#delete}
+    */
+    readonly delete?: string;
+  }
+
+  function vpcIpv6CidrBlockAssociationTimeoutsToTerraform(struct?: VpcIpv6CidrBlockAssociationTimeoutsOutputReference | VpcIpv6CidrBlockAssociationTimeouts): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      create: cdktf.stringToTerraform(struct!.create),
+      delete: cdktf.stringToTerraform(struct!.delete),
+    }
+  }
+
+  export class VpcIpv6CidrBlockAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // create - computed: false, optional: true, required: false
+    private _create?: string | undefined; 
+    public get create() {
+      return this.getStringAttribute('create');
+    }
+    public set create(value: string | undefined) {
+      this._create = value;
+    }
+    public resetCreate() {
+      this._create = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get createInput() {
+      return this._create
+    }
+
+    // delete - computed: false, optional: true, required: false
+    private _delete?: string | undefined; 
+    public get delete() {
+      return this.getStringAttribute('delete');
+    }
+    public set delete(value: string | undefined) {
+      this._delete = value;
+    }
+    public resetDelete() {
+      this._delete = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get deleteInput() {
+      return this._delete
+    }
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html aws_vpc_ipv6_cidr_block_association}
+  */
+  export class VpcIpv6CidrBlockAssociation extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_vpc_ipv6_cidr_block_association";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipv6_cidr_block_association.html aws_vpc_ipv6_cidr_block_association} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options VpcIpv6CidrBlockAssociationConfig
+    */
+    public constructor(scope: Construct, id: string, config: VpcIpv6CidrBlockAssociationConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_vpc_ipv6_cidr_block_association',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._ipv6CidrBlock = config.ipv6CidrBlock;
+      this._ipv6IpamPoolId = config.ipv6IpamPoolId;
+      this._ipv6NetmaskLength = config.ipv6NetmaskLength;
+      this._vpcId = config.vpcId;
+      this._timeouts = config.timeouts;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // ipv6_cidr_block - computed: true, optional: true, required: false
+    private _ipv6CidrBlock?: string | undefined; 
+    public get ipv6CidrBlock() {
+      return this.getStringAttribute('ipv6_cidr_block');
+    }
+    public set ipv6CidrBlock(value: string | undefined) {
+      this._ipv6CidrBlock = value;
+    }
+    public resetIpv6CidrBlock() {
+      this._ipv6CidrBlock = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6CidrBlockInput() {
+      return this._ipv6CidrBlock
+    }
+
+    // ipv6_ipam_pool_id - computed: false, optional: false, required: true
+    private _ipv6IpamPoolId?: string; 
+    public get ipv6IpamPoolId() {
+      return this.getStringAttribute('ipv6_ipam_pool_id');
+    }
+    public set ipv6IpamPoolId(value: string) {
+      this._ipv6IpamPoolId = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6IpamPoolIdInput() {
+      return this._ipv6IpamPoolId
+    }
+
+    // ipv6_netmask_length - computed: false, optional: true, required: false
+    private _ipv6NetmaskLength?: number | undefined; 
+    public get ipv6NetmaskLength() {
+      return this.getNumberAttribute('ipv6_netmask_length');
+    }
+    public set ipv6NetmaskLength(value: number | undefined) {
+      this._ipv6NetmaskLength = value;
+    }
+    public resetIpv6NetmaskLength() {
+      this._ipv6NetmaskLength = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipv6NetmaskLengthInput() {
+      return this._ipv6NetmaskLength
+    }
+
+    // vpc_id - computed: false, optional: false, required: true
+    private _vpcId?: string; 
+    public get vpcId() {
+      return this.getStringAttribute('vpc_id');
+    }
+    public set vpcId(value: string) {
+      this._vpcId = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get vpcIdInput() {
+      return this._vpcId
+    }
+
+    // timeouts - computed: false, optional: true, required: false
+    private _timeouts?: VpcIpv6CidrBlockAssociationTimeouts | undefined; 
+    private __timeoutsOutput = new VpcIpv6CidrBlockAssociationTimeoutsOutputReference(this as any, "timeouts", true);
+    public get timeouts() {
+      return this.__timeoutsOutput;
+    }
+    public putTimeouts(value: VpcIpv6CidrBlockAssociationTimeouts | undefined) {
+      this._timeouts = value;
+    }
+    public resetTimeouts() {
+      this._timeouts = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get timeoutsInput() {
+      return this._timeouts
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+        ipv6_ipam_pool_id: cdktf.stringToTerraform(this._ipv6IpamPoolId),
+        ipv6_netmask_length: cdktf.numberToTerraform(this._ipv6NetmaskLength),
+        vpc_id: cdktf.stringToTerraform(this._vpcId),
+        timeouts: vpcIpv6CidrBlockAssociationTimeoutsToTerraform(this._timeouts),
       };
     }
   }
@@ -12112,6 +13770,11 @@ export namespace VPC {
     // ATTRIBUTES
     // ==========
 
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
+
     // association - computed: true, optional: false, required: false
     public association(index: string) {
       return new DataAwsNetworkInterfaceAssociation(this, 'association', index);
@@ -15069,6 +16732,268 @@ export namespace VPC {
         service_type: cdktf.stringToTerraform(this._serviceType),
         tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
         filter: cdktf.listMapper(dataAwsVpcEndpointServiceFilterToTerraform)(this._filter),
+      };
+    }
+  }
+  export interface DataAwsVpcIpamPoolConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}
+    */
+    readonly allocationResourceTags?: { [key: string]: string } | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#id DataAwsVpcIpamPool#id}
+    */
+    readonly id?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}
+    */
+    readonly ipamPoolId?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#tags DataAwsVpcIpamPool#tags}
+    */
+    readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+    /**
+    * filter block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#filter DataAwsVpcIpamPool#filter}
+    */
+    readonly filter?: DataAwsVpcIpamPoolFilter[];
+  }
+  export interface DataAwsVpcIpamPoolFilter {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#name DataAwsVpcIpamPool#name}
+    */
+    readonly name: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html#values DataAwsVpcIpamPool#values}
+    */
+    readonly values: string[];
+  }
+
+  function dataAwsVpcIpamPoolFilterToTerraform(struct?: DataAwsVpcIpamPoolFilter): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      name: cdktf.stringToTerraform(struct!.name),
+      values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    }
+  }
+
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html aws_vpc_ipam_pool}
+  */
+  export class DataAwsVpcIpamPool extends cdktf.TerraformDataSource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_vpc_ipam_pool";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool.html aws_vpc_ipam_pool} Data Source
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options DataAwsVpcIpamPoolConfig = {}
+    */
+    public constructor(scope: Construct, id: string, config: DataAwsVpcIpamPoolConfig = {}) {
+      super(scope, id, {
+        terraformResourceType: 'aws_vpc_ipam_pool',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._allocationResourceTags = config.allocationResourceTags;
+      this._id = config.id;
+      this._ipamPoolId = config.ipamPoolId;
+      this._tags = config.tags;
+      this._filter = config.filter;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // address_family - computed: true, optional: false, required: false
+    public get addressFamily() {
+      return this.getStringAttribute('address_family');
+    }
+
+    // allocation_default_netmask_length - computed: true, optional: false, required: false
+    public get allocationDefaultNetmaskLength() {
+      return this.getNumberAttribute('allocation_default_netmask_length');
+    }
+
+    // allocation_max_netmask_length - computed: true, optional: false, required: false
+    public get allocationMaxNetmaskLength() {
+      return this.getNumberAttribute('allocation_max_netmask_length');
+    }
+
+    // allocation_min_netmask_length - computed: true, optional: false, required: false
+    public get allocationMinNetmaskLength() {
+      return this.getNumberAttribute('allocation_min_netmask_length');
+    }
+
+    // allocation_resource_tags - computed: false, optional: true, required: false
+    private _allocationResourceTags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get allocationResourceTags() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('allocation_resource_tags') as any;
+    }
+    public set allocationResourceTags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._allocationResourceTags = value;
+    }
+    public resetAllocationResourceTags() {
+      this._allocationResourceTags = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get allocationResourceTagsInput() {
+      return this._allocationResourceTags
+    }
+
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
+
+    // auto_import - computed: true, optional: false, required: false
+    public get autoImport() {
+      return this.getBooleanAttribute('auto_import') as any;
+    }
+
+    // aws_service - computed: true, optional: false, required: false
+    public get awsService() {
+      return this.getStringAttribute('aws_service');
+    }
+
+    // description - computed: true, optional: false, required: false
+    public get description() {
+      return this.getStringAttribute('description');
+    }
+
+    // id - computed: false, optional: true, required: false
+    private _id?: string | undefined; 
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+    public set id(value: string | undefined) {
+      this._id = value;
+    }
+    public resetId() {
+      this._id = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get idInput() {
+      return this._id
+    }
+
+    // ipam_pool_id - computed: false, optional: true, required: false
+    private _ipamPoolId?: string | undefined; 
+    public get ipamPoolId() {
+      return this.getStringAttribute('ipam_pool_id');
+    }
+    public set ipamPoolId(value: string | undefined) {
+      this._ipamPoolId = value;
+    }
+    public resetIpamPoolId() {
+      this._ipamPoolId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ipamPoolIdInput() {
+      return this._ipamPoolId
+    }
+
+    // ipam_scope_id - computed: true, optional: false, required: false
+    public get ipamScopeId() {
+      return this.getStringAttribute('ipam_scope_id');
+    }
+
+    // ipam_scope_type - computed: true, optional: false, required: false
+    public get ipamScopeType() {
+      return this.getStringAttribute('ipam_scope_type');
+    }
+
+    // locale - computed: true, optional: false, required: false
+    public get locale() {
+      return this.getStringAttribute('locale');
+    }
+
+    // pool_depth - computed: true, optional: false, required: false
+    public get poolDepth() {
+      return this.getNumberAttribute('pool_depth');
+    }
+
+    // publicly_advertisable - computed: true, optional: false, required: false
+    public get publiclyAdvertisable() {
+      return this.getBooleanAttribute('publicly_advertisable') as any;
+    }
+
+    // source_ipam_pool_id - computed: true, optional: false, required: false
+    public get sourceIpamPoolId() {
+      return this.getStringAttribute('source_ipam_pool_id');
+    }
+
+    // state - computed: true, optional: false, required: false
+    public get state() {
+      return this.getStringAttribute('state');
+    }
+
+    // tags - computed: true, optional: true, required: false
+    private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+    public get tags() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('tags') as any;
+    }
+    public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+      this._tags = value;
+    }
+    public resetTags() {
+      this._tags = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get tagsInput() {
+      return this._tags
+    }
+
+    // filter - computed: false, optional: true, required: false
+    private _filter?: DataAwsVpcIpamPoolFilter[] | undefined; 
+    public get filter() {
+      // Getting the computed value is not yet implemented
+      return this.interpolationForAttribute('filter') as any;
+    }
+    public set filter(value: DataAwsVpcIpamPoolFilter[] | undefined) {
+      this._filter = value;
+    }
+    public resetFilter() {
+      this._filter = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get filterInput() {
+      return this._filter
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        allocation_resource_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._allocationResourceTags),
+        id: cdktf.stringToTerraform(this._id),
+        ipam_pool_id: cdktf.stringToTerraform(this._ipamPoolId),
+        tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+        filter: cdktf.listMapper(dataAwsVpcIpamPoolFilterToTerraform)(this._filter),
       };
     }
   }

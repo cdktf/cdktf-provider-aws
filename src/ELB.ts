@@ -13,6 +13,10 @@ export namespace ELB {
     */
     readonly customerOwnedIpv4Pool?: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#desync_mitigation_mode Alb#desync_mitigation_mode}
+    */
+    readonly desyncMitigationMode?: string;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#drop_invalid_header_fields Alb#drop_invalid_header_fields}
     */
     readonly dropInvalidHeaderFields?: boolean | cdktf.IResolvable;
@@ -28,6 +32,10 @@ export namespace ELB {
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#enable_http2 Alb#enable_http2}
     */
     readonly enableHttp2?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#enable_waf_fail_open Alb#enable_waf_fail_open}
+    */
+    readonly enableWafFailOpen?: boolean | cdktf.IResolvable;
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb.html#idle_timeout Alb#idle_timeout}
     */
@@ -320,10 +328,12 @@ export namespace ELB {
         lifecycle: config.lifecycle
       });
       this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
+      this._desyncMitigationMode = config.desyncMitigationMode;
       this._dropInvalidHeaderFields = config.dropInvalidHeaderFields;
       this._enableCrossZoneLoadBalancing = config.enableCrossZoneLoadBalancing;
       this._enableDeletionProtection = config.enableDeletionProtection;
       this._enableHttp2 = config.enableHttp2;
+      this._enableWafFailOpen = config.enableWafFailOpen;
       this._idleTimeout = config.idleTimeout;
       this._internal = config.internal;
       this._ipAddressType = config.ipAddressType;
@@ -367,6 +377,22 @@ export namespace ELB {
     // Temporarily expose input value. Use with caution.
     public get customerOwnedIpv4PoolInput() {
       return this._customerOwnedIpv4Pool
+    }
+
+    // desync_mitigation_mode - computed: false, optional: true, required: false
+    private _desyncMitigationMode?: string | undefined; 
+    public get desyncMitigationMode() {
+      return this.getStringAttribute('desync_mitigation_mode');
+    }
+    public set desyncMitigationMode(value: string | undefined) {
+      this._desyncMitigationMode = value;
+    }
+    public resetDesyncMitigationMode() {
+      this._desyncMitigationMode = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get desyncMitigationModeInput() {
+      return this._desyncMitigationMode
     }
 
     // dns_name - computed: true, optional: false, required: false
@@ -436,6 +462,22 @@ export namespace ELB {
     // Temporarily expose input value. Use with caution.
     public get enableHttp2Input() {
       return this._enableHttp2
+    }
+
+    // enable_waf_fail_open - computed: false, optional: true, required: false
+    private _enableWafFailOpen?: boolean | cdktf.IResolvable | undefined; 
+    public get enableWafFailOpen() {
+      return this.getBooleanAttribute('enable_waf_fail_open') as any;
+    }
+    public set enableWafFailOpen(value: boolean | cdktf.IResolvable | undefined) {
+      this._enableWafFailOpen = value;
+    }
+    public resetEnableWafFailOpen() {
+      this._enableWafFailOpen = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enableWafFailOpenInput() {
+      return this._enableWafFailOpen
     }
 
     // id - computed: true, optional: true, required: false
@@ -673,10 +715,12 @@ export namespace ELB {
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
         customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
+        desync_mitigation_mode: cdktf.stringToTerraform(this._desyncMitigationMode),
         drop_invalid_header_fields: cdktf.booleanToTerraform(this._dropInvalidHeaderFields),
         enable_cross_zone_load_balancing: cdktf.booleanToTerraform(this._enableCrossZoneLoadBalancing),
         enable_deletion_protection: cdktf.booleanToTerraform(this._enableDeletionProtection),
         enable_http2: cdktf.booleanToTerraform(this._enableHttp2),
+        enable_waf_fail_open: cdktf.booleanToTerraform(this._enableWafFailOpen),
         idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
         internal: cdktf.booleanToTerraform(this._internal),
         ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
@@ -3312,6 +3356,10 @@ export namespace ELB {
   }
   export interface AlbTargetGroupConfig extends cdktf.TerraformMetaArguments {
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#connection_termination AlbTargetGroup#connection_termination}
+    */
+    readonly connectionTermination?: boolean | cdktf.IResolvable;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group.html#deregistration_delay AlbTargetGroup#deregistration_delay}
     */
     readonly deregistrationDelay?: string;
@@ -3731,6 +3779,7 @@ export namespace ELB {
         count: config.count,
         lifecycle: config.lifecycle
       });
+      this._connectionTermination = config.connectionTermination;
       this._deregistrationDelay = config.deregistrationDelay;
       this._lambdaMultiValueHeadersEnabled = config.lambdaMultiValueHeadersEnabled;
       this._loadBalancingAlgorithmType = config.loadBalancingAlgorithmType;
@@ -3762,6 +3811,22 @@ export namespace ELB {
     // arn_suffix - computed: true, optional: false, required: false
     public get arnSuffix() {
       return this.getStringAttribute('arn_suffix');
+    }
+
+    // connection_termination - computed: false, optional: true, required: false
+    private _connectionTermination?: boolean | cdktf.IResolvable | undefined; 
+    public get connectionTermination() {
+      return this.getBooleanAttribute('connection_termination') as any;
+    }
+    public set connectionTermination(value: boolean | cdktf.IResolvable | undefined) {
+      this._connectionTermination = value;
+    }
+    public resetConnectionTermination() {
+      this._connectionTermination = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get connectionTerminationInput() {
+      return this._connectionTermination
     }
 
     // deregistration_delay - computed: false, optional: true, required: false
@@ -4051,6 +4116,7 @@ export namespace ELB {
 
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
+        connection_termination: cdktf.booleanToTerraform(this._connectionTermination),
         deregistration_delay: cdktf.stringToTerraform(this._deregistrationDelay),
         lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
         load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),
@@ -4345,6 +4411,10 @@ export namespace ELB {
     */
     readonly customerOwnedIpv4Pool?: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb.html#desync_mitigation_mode Lb#desync_mitigation_mode}
+    */
+    readonly desyncMitigationMode?: string;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb.html#drop_invalid_header_fields Lb#drop_invalid_header_fields}
     */
     readonly dropInvalidHeaderFields?: boolean | cdktf.IResolvable;
@@ -4360,6 +4430,10 @@ export namespace ELB {
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb.html#enable_http2 Lb#enable_http2}
     */
     readonly enableHttp2?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb.html#enable_waf_fail_open Lb#enable_waf_fail_open}
+    */
+    readonly enableWafFailOpen?: boolean | cdktf.IResolvable;
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb.html#idle_timeout Lb#idle_timeout}
     */
@@ -4652,10 +4726,12 @@ export namespace ELB {
         lifecycle: config.lifecycle
       });
       this._customerOwnedIpv4Pool = config.customerOwnedIpv4Pool;
+      this._desyncMitigationMode = config.desyncMitigationMode;
       this._dropInvalidHeaderFields = config.dropInvalidHeaderFields;
       this._enableCrossZoneLoadBalancing = config.enableCrossZoneLoadBalancing;
       this._enableDeletionProtection = config.enableDeletionProtection;
       this._enableHttp2 = config.enableHttp2;
+      this._enableWafFailOpen = config.enableWafFailOpen;
       this._idleTimeout = config.idleTimeout;
       this._internal = config.internal;
       this._ipAddressType = config.ipAddressType;
@@ -4699,6 +4775,22 @@ export namespace ELB {
     // Temporarily expose input value. Use with caution.
     public get customerOwnedIpv4PoolInput() {
       return this._customerOwnedIpv4Pool
+    }
+
+    // desync_mitigation_mode - computed: false, optional: true, required: false
+    private _desyncMitigationMode?: string | undefined; 
+    public get desyncMitigationMode() {
+      return this.getStringAttribute('desync_mitigation_mode');
+    }
+    public set desyncMitigationMode(value: string | undefined) {
+      this._desyncMitigationMode = value;
+    }
+    public resetDesyncMitigationMode() {
+      this._desyncMitigationMode = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get desyncMitigationModeInput() {
+      return this._desyncMitigationMode
     }
 
     // dns_name - computed: true, optional: false, required: false
@@ -4768,6 +4860,22 @@ export namespace ELB {
     // Temporarily expose input value. Use with caution.
     public get enableHttp2Input() {
       return this._enableHttp2
+    }
+
+    // enable_waf_fail_open - computed: false, optional: true, required: false
+    private _enableWafFailOpen?: boolean | cdktf.IResolvable | undefined; 
+    public get enableWafFailOpen() {
+      return this.getBooleanAttribute('enable_waf_fail_open') as any;
+    }
+    public set enableWafFailOpen(value: boolean | cdktf.IResolvable | undefined) {
+      this._enableWafFailOpen = value;
+    }
+    public resetEnableWafFailOpen() {
+      this._enableWafFailOpen = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enableWafFailOpenInput() {
+      return this._enableWafFailOpen
     }
 
     // id - computed: true, optional: true, required: false
@@ -5005,10 +5113,12 @@ export namespace ELB {
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
         customer_owned_ipv4_pool: cdktf.stringToTerraform(this._customerOwnedIpv4Pool),
+        desync_mitigation_mode: cdktf.stringToTerraform(this._desyncMitigationMode),
         drop_invalid_header_fields: cdktf.booleanToTerraform(this._dropInvalidHeaderFields),
         enable_cross_zone_load_balancing: cdktf.booleanToTerraform(this._enableCrossZoneLoadBalancing),
         enable_deletion_protection: cdktf.booleanToTerraform(this._enableDeletionProtection),
         enable_http2: cdktf.booleanToTerraform(this._enableHttp2),
+        enable_waf_fail_open: cdktf.booleanToTerraform(this._enableWafFailOpen),
         idle_timeout: cdktf.numberToTerraform(this._idleTimeout),
         internal: cdktf.booleanToTerraform(this._internal),
         ip_address_type: cdktf.stringToTerraform(this._ipAddressType),
@@ -7937,6 +8047,10 @@ export namespace ELB {
   }
   export interface LbTargetGroupConfig extends cdktf.TerraformMetaArguments {
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group.html#connection_termination LbTargetGroup#connection_termination}
+    */
+    readonly connectionTermination?: boolean | cdktf.IResolvable;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group.html#deregistration_delay LbTargetGroup#deregistration_delay}
     */
     readonly deregistrationDelay?: string;
@@ -8356,6 +8470,7 @@ export namespace ELB {
         count: config.count,
         lifecycle: config.lifecycle
       });
+      this._connectionTermination = config.connectionTermination;
       this._deregistrationDelay = config.deregistrationDelay;
       this._lambdaMultiValueHeadersEnabled = config.lambdaMultiValueHeadersEnabled;
       this._loadBalancingAlgorithmType = config.loadBalancingAlgorithmType;
@@ -8387,6 +8502,22 @@ export namespace ELB {
     // arn_suffix - computed: true, optional: false, required: false
     public get arnSuffix() {
       return this.getStringAttribute('arn_suffix');
+    }
+
+    // connection_termination - computed: false, optional: true, required: false
+    private _connectionTermination?: boolean | cdktf.IResolvable | undefined; 
+    public get connectionTermination() {
+      return this.getBooleanAttribute('connection_termination') as any;
+    }
+    public set connectionTermination(value: boolean | cdktf.IResolvable | undefined) {
+      this._connectionTermination = value;
+    }
+    public resetConnectionTermination() {
+      this._connectionTermination = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get connectionTerminationInput() {
+      return this._connectionTermination
     }
 
     // deregistration_delay - computed: false, optional: true, required: false
@@ -8676,6 +8807,7 @@ export namespace ELB {
 
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
+        connection_termination: cdktf.booleanToTerraform(this._connectionTermination),
         deregistration_delay: cdktf.stringToTerraform(this._deregistrationDelay),
         lambda_multi_value_headers_enabled: cdktf.booleanToTerraform(this._lambdaMultiValueHeadersEnabled),
         load_balancing_algorithm_type: cdktf.stringToTerraform(this._loadBalancingAlgorithmType),
@@ -9430,6 +9562,11 @@ export namespace ELB {
       return this.getStringAttribute('customer_owned_ipv4_pool');
     }
 
+    // desync_mitigation_mode - computed: true, optional: false, required: false
+    public get desyncMitigationMode() {
+      return this.getStringAttribute('desync_mitigation_mode');
+    }
+
     // dns_name - computed: true, optional: false, required: false
     public get dnsName() {
       return this.getStringAttribute('dns_name');
@@ -9448,6 +9585,11 @@ export namespace ELB {
     // enable_http2 - computed: true, optional: false, required: false
     public get enableHttp2() {
       return this.getBooleanAttribute('enable_http2') as any;
+    }
+
+    // enable_waf_fail_open - computed: true, optional: false, required: false
+    public get enableWafFailOpen() {
+      return this.getBooleanAttribute('enable_waf_fail_open') as any;
     }
 
     // id - computed: true, optional: true, required: false
@@ -10061,6 +10203,11 @@ export namespace ELB {
       return this.getStringAttribute('arn_suffix');
     }
 
+    // connection_termination - computed: true, optional: false, required: false
+    public get connectionTermination() {
+      return this.getBooleanAttribute('connection_termination') as any;
+    }
+
     // deregistration_delay - computed: true, optional: false, required: false
     public get deregistrationDelay() {
       return this.getNumberAttribute('deregistration_delay');
@@ -10290,6 +10437,11 @@ export namespace ELB {
       return this.getStringAttribute('customer_owned_ipv4_pool');
     }
 
+    // desync_mitigation_mode - computed: true, optional: false, required: false
+    public get desyncMitigationMode() {
+      return this.getStringAttribute('desync_mitigation_mode');
+    }
+
     // dns_name - computed: true, optional: false, required: false
     public get dnsName() {
       return this.getStringAttribute('dns_name');
@@ -10308,6 +10460,11 @@ export namespace ELB {
     // enable_http2 - computed: true, optional: false, required: false
     public get enableHttp2() {
       return this.getBooleanAttribute('enable_http2') as any;
+    }
+
+    // enable_waf_fail_open - computed: true, optional: false, required: false
+    public get enableWafFailOpen() {
+      return this.getBooleanAttribute('enable_waf_fail_open') as any;
     }
 
     // id - computed: true, optional: true, required: false
@@ -10919,6 +11076,11 @@ export namespace ELB {
     // arn_suffix - computed: true, optional: false, required: false
     public get arnSuffix() {
       return this.getStringAttribute('arn_suffix');
+    }
+
+    // connection_termination - computed: true, optional: false, required: false
+    public get connectionTermination() {
+      return this.getBooleanAttribute('connection_termination') as any;
     }
 
     // deregistration_delay - computed: true, optional: false, required: false

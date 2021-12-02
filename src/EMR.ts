@@ -93,6 +93,12 @@ export namespace EMR {
     */
     readonly visibleToAllUsers?: boolean | cdktf.IResolvable;
     /**
+    * auto_termination_policy block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#auto_termination_policy EmrCluster#auto_termination_policy}
+    */
+    readonly autoTerminationPolicy?: EmrClusterAutoTerminationPolicy;
+    /**
     * bootstrap_action block
     * 
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#bootstrap_action EmrCluster#bootstrap_action}
@@ -194,6 +200,49 @@ export namespace EMR {
     }
   }
 
+  export interface EmrClusterAutoTerminationPolicy {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#idle_timeout EmrCluster#idle_timeout}
+    */
+    readonly idleTimeout?: number;
+  }
+
+  function emrClusterAutoTerminationPolicyToTerraform(struct?: EmrClusterAutoTerminationPolicyOutputReference | EmrClusterAutoTerminationPolicy): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      idle_timeout: cdktf.numberToTerraform(struct!.idleTimeout),
+    }
+  }
+
+  export class EmrClusterAutoTerminationPolicyOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // idle_timeout - computed: false, optional: true, required: false
+    private _idleTimeout?: number | undefined; 
+    public get idleTimeout() {
+      return this.getNumberAttribute('idle_timeout');
+    }
+    public set idleTimeout(value: number | undefined) {
+      this._idleTimeout = value;
+    }
+    public resetIdleTimeout() {
+      this._idleTimeout = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get idleTimeoutInput() {
+      return this._idleTimeout
+    }
+  }
   export interface EmrClusterBootstrapAction {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster.html#args EmrCluster#args}
@@ -1647,6 +1696,7 @@ export namespace EMR {
       this._tagsAll = config.tagsAll;
       this._terminationProtection = config.terminationProtection;
       this._visibleToAllUsers = config.visibleToAllUsers;
+      this._autoTerminationPolicy = config.autoTerminationPolicy;
       this._bootstrapAction = config.bootstrapAction;
       this._coreInstanceFleet = config.coreInstanceFleet;
       this._coreInstanceGroup = config.coreInstanceGroup;
@@ -2010,6 +2060,23 @@ export namespace EMR {
       return this._visibleToAllUsers
     }
 
+    // auto_termination_policy - computed: false, optional: true, required: false
+    private _autoTerminationPolicy?: EmrClusterAutoTerminationPolicy | undefined; 
+    private __autoTerminationPolicyOutput = new EmrClusterAutoTerminationPolicyOutputReference(this as any, "auto_termination_policy", true);
+    public get autoTerminationPolicy() {
+      return this.__autoTerminationPolicyOutput;
+    }
+    public putAutoTerminationPolicy(value: EmrClusterAutoTerminationPolicy | undefined) {
+      this._autoTerminationPolicy = value;
+    }
+    public resetAutoTerminationPolicy() {
+      this._autoTerminationPolicy = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get autoTerminationPolicyInput() {
+      return this._autoTerminationPolicy
+    }
+
     // bootstrap_action - computed: false, optional: true, required: false
     private _bootstrapAction?: EmrClusterBootstrapAction[] | undefined; 
     public get bootstrapAction() {
@@ -2156,6 +2223,7 @@ export namespace EMR {
         tags_all: cdktf.hashMapper(cdktf.anyToTerraform)(this._tagsAll),
         termination_protection: cdktf.booleanToTerraform(this._terminationProtection),
         visible_to_all_users: cdktf.booleanToTerraform(this._visibleToAllUsers),
+        auto_termination_policy: emrClusterAutoTerminationPolicyToTerraform(this._autoTerminationPolicy),
         bootstrap_action: cdktf.listMapper(emrClusterBootstrapActionToTerraform)(this._bootstrapAction),
         core_instance_fleet: emrClusterCoreInstanceFleetToTerraform(this._coreInstanceFleet),
         core_instance_group: emrClusterCoreInstanceGroupToTerraform(this._coreInstanceGroup),
@@ -3130,6 +3198,155 @@ export namespace EMR {
         configuration: cdktf.stringToTerraform(this._configuration),
         name: cdktf.stringToTerraform(this._name),
         name_prefix: cdktf.stringToTerraform(this._namePrefix),
+      };
+    }
+  }
+  export interface DataAwsEmrReleaseLabelsConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * filters block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html#filters DataAwsEmrReleaseLabels#filters}
+    */
+    readonly filters?: DataAwsEmrReleaseLabelsFilters;
+  }
+  export interface DataAwsEmrReleaseLabelsFilters {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html#application DataAwsEmrReleaseLabels#application}
+    */
+    readonly application?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html#prefix DataAwsEmrReleaseLabels#prefix}
+    */
+    readonly prefix?: string;
+  }
+
+  function dataAwsEmrReleaseLabelsFiltersToTerraform(struct?: DataAwsEmrReleaseLabelsFiltersOutputReference | DataAwsEmrReleaseLabelsFilters): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      application: cdktf.stringToTerraform(struct!.application),
+      prefix: cdktf.stringToTerraform(struct!.prefix),
+    }
+  }
+
+  export class DataAwsEmrReleaseLabelsFiltersOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // application - computed: false, optional: true, required: false
+    private _application?: string | undefined; 
+    public get application() {
+      return this.getStringAttribute('application');
+    }
+    public set application(value: string | undefined) {
+      this._application = value;
+    }
+    public resetApplication() {
+      this._application = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get applicationInput() {
+      return this._application
+    }
+
+    // prefix - computed: false, optional: true, required: false
+    private _prefix?: string | undefined; 
+    public get prefix() {
+      return this.getStringAttribute('prefix');
+    }
+    public set prefix(value: string | undefined) {
+      this._prefix = value;
+    }
+    public resetPrefix() {
+      this._prefix = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get prefixInput() {
+      return this._prefix
+    }
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html aws_emr_release_labels}
+  */
+  export class DataAwsEmrReleaseLabels extends cdktf.TerraformDataSource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_emr_release_labels";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/d/emr_release_labels.html aws_emr_release_labels} Data Source
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options DataAwsEmrReleaseLabelsConfig = {}
+    */
+    public constructor(scope: Construct, id: string, config: DataAwsEmrReleaseLabelsConfig = {}) {
+      super(scope, id, {
+        terraformResourceType: 'aws_emr_release_labels',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._filters = config.filters;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // release_labels - computed: true, optional: false, required: false
+    public get releaseLabels() {
+      return this.getListAttribute('release_labels');
+    }
+
+    // filters - computed: false, optional: true, required: false
+    private _filters?: DataAwsEmrReleaseLabelsFilters | undefined; 
+    private __filtersOutput = new DataAwsEmrReleaseLabelsFiltersOutputReference(this as any, "filters", true);
+    public get filters() {
+      return this.__filtersOutput;
+    }
+    public putFilters(value: DataAwsEmrReleaseLabelsFilters | undefined) {
+      this._filters = value;
+    }
+    public resetFilters() {
+      this._filters = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get filtersInput() {
+      return this._filters
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        filters: dataAwsEmrReleaseLabelsFiltersToTerraform(this._filters),
       };
     }
   }

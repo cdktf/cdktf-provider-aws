@@ -2546,6 +2546,10 @@ export namespace LambdaFunction {
     */
     readonly s3ObjectVersion?: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version.html#skip_destroy LambdaLayerVersion#skip_destroy}
+    */
+    readonly skipDestroy?: boolean | cdktf.IResolvable;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version.html#source_code_hash LambdaLayerVersion#source_code_hash}
     */
     readonly sourceCodeHash?: string;
@@ -2592,6 +2596,7 @@ export namespace LambdaFunction {
       this._s3Bucket = config.s3Bucket;
       this._s3Key = config.s3Key;
       this._s3ObjectVersion = config.s3ObjectVersion;
+      this._skipDestroy = config.skipDestroy;
       this._sourceCodeHash = config.sourceCodeHash;
     }
 
@@ -2770,6 +2775,22 @@ export namespace LambdaFunction {
       return this.getStringAttribute('signing_profile_version_arn');
     }
 
+    // skip_destroy - computed: false, optional: true, required: false
+    private _skipDestroy?: boolean | cdktf.IResolvable | undefined; 
+    public get skipDestroy() {
+      return this.getBooleanAttribute('skip_destroy') as any;
+    }
+    public set skipDestroy(value: boolean | cdktf.IResolvable | undefined) {
+      this._skipDestroy = value;
+    }
+    public resetSkipDestroy() {
+      this._skipDestroy = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get skipDestroyInput() {
+      return this._skipDestroy
+    }
+
     // source_code_hash - computed: true, optional: true, required: false
     private _sourceCodeHash?: string | undefined; 
     public get sourceCodeHash() {
@@ -2811,7 +2832,190 @@ export namespace LambdaFunction {
         s3_bucket: cdktf.stringToTerraform(this._s3Bucket),
         s3_key: cdktf.stringToTerraform(this._s3Key),
         s3_object_version: cdktf.stringToTerraform(this._s3ObjectVersion),
+        skip_destroy: cdktf.booleanToTerraform(this._skipDestroy),
         source_code_hash: cdktf.stringToTerraform(this._sourceCodeHash),
+      };
+    }
+  }
+  export interface LambdaLayerVersionPermissionConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#action LambdaLayerVersionPermission#action}
+    */
+    readonly action: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#layer_name LambdaLayerVersionPermission#layer_name}
+    */
+    readonly layerName: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#organization_id LambdaLayerVersionPermission#organization_id}
+    */
+    readonly organizationId?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#principal LambdaLayerVersionPermission#principal}
+    */
+    readonly principal: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#statement_id LambdaLayerVersionPermission#statement_id}
+    */
+    readonly statementId: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html#version_number LambdaLayerVersionPermission#version_number}
+    */
+    readonly versionNumber: number;
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html aws_lambda_layer_version_permission}
+  */
+  export class LambdaLayerVersionPermission extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_lambda_layer_version_permission";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_layer_version_permission.html aws_lambda_layer_version_permission} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options LambdaLayerVersionPermissionConfig
+    */
+    public constructor(scope: Construct, id: string, config: LambdaLayerVersionPermissionConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_lambda_layer_version_permission',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._action = config.action;
+      this._layerName = config.layerName;
+      this._organizationId = config.organizationId;
+      this._principal = config.principal;
+      this._statementId = config.statementId;
+      this._versionNumber = config.versionNumber;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // action - computed: false, optional: false, required: true
+    private _action?: string; 
+    public get action() {
+      return this.getStringAttribute('action');
+    }
+    public set action(value: string) {
+      this._action = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get actionInput() {
+      return this._action
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // layer_name - computed: false, optional: false, required: true
+    private _layerName?: string; 
+    public get layerName() {
+      return this.getStringAttribute('layer_name');
+    }
+    public set layerName(value: string) {
+      this._layerName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get layerNameInput() {
+      return this._layerName
+    }
+
+    // organization_id - computed: false, optional: true, required: false
+    private _organizationId?: string | undefined; 
+    public get organizationId() {
+      return this.getStringAttribute('organization_id');
+    }
+    public set organizationId(value: string | undefined) {
+      this._organizationId = value;
+    }
+    public resetOrganizationId() {
+      this._organizationId = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get organizationIdInput() {
+      return this._organizationId
+    }
+
+    // policy - computed: true, optional: false, required: false
+    public get policy() {
+      return this.getStringAttribute('policy');
+    }
+
+    // principal - computed: false, optional: false, required: true
+    private _principal?: string; 
+    public get principal() {
+      return this.getStringAttribute('principal');
+    }
+    public set principal(value: string) {
+      this._principal = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get principalInput() {
+      return this._principal
+    }
+
+    // revision_id - computed: true, optional: false, required: false
+    public get revisionId() {
+      return this.getStringAttribute('revision_id');
+    }
+
+    // statement_id - computed: false, optional: false, required: true
+    private _statementId?: string; 
+    public get statementId() {
+      return this.getStringAttribute('statement_id');
+    }
+    public set statementId(value: string) {
+      this._statementId = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get statementIdInput() {
+      return this._statementId
+    }
+
+    // version_number - computed: false, optional: false, required: true
+    private _versionNumber?: number; 
+    public get versionNumber() {
+      return this.getNumberAttribute('version_number');
+    }
+    public set versionNumber(value: number) {
+      this._versionNumber = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get versionNumberInput() {
+      return this._versionNumber
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        action: cdktf.stringToTerraform(this._action),
+        layer_name: cdktf.stringToTerraform(this._layerName),
+        organization_id: cdktf.stringToTerraform(this._organizationId),
+        principal: cdktf.stringToTerraform(this._principal),
+        statement_id: cdktf.stringToTerraform(this._statementId),
+        version_number: cdktf.numberToTerraform(this._versionNumber),
       };
     }
   }
@@ -3649,6 +3853,11 @@ export namespace LambdaFunction {
     // id - computed: true, optional: true, required: false
     public get id() {
       return this.getStringAttribute('id');
+    }
+
+    // image_uri - computed: true, optional: false, required: false
+    public get imageUri() {
+      return this.getStringAttribute('image_uri');
     }
 
     // invoke_arn - computed: true, optional: false, required: false

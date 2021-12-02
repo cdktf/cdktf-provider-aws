@@ -2826,13 +2826,25 @@ export namespace Config {
   }
   export interface ConfigRemediationConfigurationConfig extends cdktf.TerraformMetaArguments {
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#automatic ConfigRemediationConfiguration#automatic}
+    */
+    readonly automatic?: boolean | cdktf.IResolvable;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#config_rule_name ConfigRemediationConfiguration#config_rule_name}
     */
     readonly configRuleName: string;
     /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#maximum_automatic_attempts ConfigRemediationConfiguration#maximum_automatic_attempts}
+    */
+    readonly maximumAutomaticAttempts?: number;
+    /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#resource_type ConfigRemediationConfiguration#resource_type}
     */
     readonly resourceType?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#retry_attempt_seconds ConfigRemediationConfiguration#retry_attempt_seconds}
+    */
+    readonly retryAttemptSeconds?: number;
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#target_id ConfigRemediationConfiguration#target_id}
     */
@@ -2846,11 +2858,127 @@ export namespace Config {
     */
     readonly targetVersion?: string;
     /**
+    * execution_controls block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#execution_controls ConfigRemediationConfiguration#execution_controls}
+    */
+    readonly executionControls?: ConfigRemediationConfigurationExecutionControls;
+    /**
     * parameter block
     * 
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#parameter ConfigRemediationConfiguration#parameter}
     */
     readonly parameter?: ConfigRemediationConfigurationParameter[];
+  }
+  export interface ConfigRemediationConfigurationExecutionControlsSsmControls {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#concurrent_execution_rate_percentage ConfigRemediationConfiguration#concurrent_execution_rate_percentage}
+    */
+    readonly concurrentExecutionRatePercentage?: number;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#error_percentage ConfigRemediationConfiguration#error_percentage}
+    */
+    readonly errorPercentage?: number;
+  }
+
+  function configRemediationConfigurationExecutionControlsSsmControlsToTerraform(struct?: ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference | ConfigRemediationConfigurationExecutionControlsSsmControls): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      concurrent_execution_rate_percentage: cdktf.numberToTerraform(struct!.concurrentExecutionRatePercentage),
+      error_percentage: cdktf.numberToTerraform(struct!.errorPercentage),
+    }
+  }
+
+  export class ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // concurrent_execution_rate_percentage - computed: false, optional: true, required: false
+    private _concurrentExecutionRatePercentage?: number | undefined; 
+    public get concurrentExecutionRatePercentage() {
+      return this.getNumberAttribute('concurrent_execution_rate_percentage');
+    }
+    public set concurrentExecutionRatePercentage(value: number | undefined) {
+      this._concurrentExecutionRatePercentage = value;
+    }
+    public resetConcurrentExecutionRatePercentage() {
+      this._concurrentExecutionRatePercentage = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get concurrentExecutionRatePercentageInput() {
+      return this._concurrentExecutionRatePercentage
+    }
+
+    // error_percentage - computed: false, optional: true, required: false
+    private _errorPercentage?: number | undefined; 
+    public get errorPercentage() {
+      return this.getNumberAttribute('error_percentage');
+    }
+    public set errorPercentage(value: number | undefined) {
+      this._errorPercentage = value;
+    }
+    public resetErrorPercentage() {
+      this._errorPercentage = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get errorPercentageInput() {
+      return this._errorPercentage
+    }
+  }
+  export interface ConfigRemediationConfigurationExecutionControls {
+    /**
+    * ssm_controls block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/config_remediation_configuration.html#ssm_controls ConfigRemediationConfiguration#ssm_controls}
+    */
+    readonly ssmControls?: ConfigRemediationConfigurationExecutionControlsSsmControls;
+  }
+
+  function configRemediationConfigurationExecutionControlsToTerraform(struct?: ConfigRemediationConfigurationExecutionControlsOutputReference | ConfigRemediationConfigurationExecutionControls): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      ssm_controls: configRemediationConfigurationExecutionControlsSsmControlsToTerraform(struct!.ssmControls),
+    }
+  }
+
+  export class ConfigRemediationConfigurationExecutionControlsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // ssm_controls - computed: false, optional: true, required: false
+    private _ssmControls?: ConfigRemediationConfigurationExecutionControlsSsmControls | undefined; 
+    private __ssmControlsOutput = new ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference(this as any, "ssm_controls", true);
+    public get ssmControls() {
+      return this.__ssmControlsOutput;
+    }
+    public putSsmControls(value: ConfigRemediationConfigurationExecutionControlsSsmControls | undefined) {
+      this._ssmControls = value;
+    }
+    public resetSsmControls() {
+      this._ssmControls = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get ssmControlsInput() {
+      return this._ssmControls
+    }
   }
   export interface ConfigRemediationConfigurationParameter {
     /**
@@ -2912,11 +3040,15 @@ export namespace Config {
         count: config.count,
         lifecycle: config.lifecycle
       });
+      this._automatic = config.automatic;
       this._configRuleName = config.configRuleName;
+      this._maximumAutomaticAttempts = config.maximumAutomaticAttempts;
       this._resourceType = config.resourceType;
+      this._retryAttemptSeconds = config.retryAttemptSeconds;
       this._targetId = config.targetId;
       this._targetType = config.targetType;
       this._targetVersion = config.targetVersion;
+      this._executionControls = config.executionControls;
       this._parameter = config.parameter;
     }
 
@@ -2927,6 +3059,22 @@ export namespace Config {
     // arn - computed: true, optional: false, required: false
     public get arn() {
       return this.getStringAttribute('arn');
+    }
+
+    // automatic - computed: false, optional: true, required: false
+    private _automatic?: boolean | cdktf.IResolvable | undefined; 
+    public get automatic() {
+      return this.getBooleanAttribute('automatic') as any;
+    }
+    public set automatic(value: boolean | cdktf.IResolvable | undefined) {
+      this._automatic = value;
+    }
+    public resetAutomatic() {
+      this._automatic = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get automaticInput() {
+      return this._automatic
     }
 
     // config_rule_name - computed: false, optional: false, required: true
@@ -2947,6 +3095,22 @@ export namespace Config {
       return this.getStringAttribute('id');
     }
 
+    // maximum_automatic_attempts - computed: false, optional: true, required: false
+    private _maximumAutomaticAttempts?: number | undefined; 
+    public get maximumAutomaticAttempts() {
+      return this.getNumberAttribute('maximum_automatic_attempts');
+    }
+    public set maximumAutomaticAttempts(value: number | undefined) {
+      this._maximumAutomaticAttempts = value;
+    }
+    public resetMaximumAutomaticAttempts() {
+      this._maximumAutomaticAttempts = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get maximumAutomaticAttemptsInput() {
+      return this._maximumAutomaticAttempts
+    }
+
     // resource_type - computed: false, optional: true, required: false
     private _resourceType?: string | undefined; 
     public get resourceType() {
@@ -2961,6 +3125,22 @@ export namespace Config {
     // Temporarily expose input value. Use with caution.
     public get resourceTypeInput() {
       return this._resourceType
+    }
+
+    // retry_attempt_seconds - computed: false, optional: true, required: false
+    private _retryAttemptSeconds?: number | undefined; 
+    public get retryAttemptSeconds() {
+      return this.getNumberAttribute('retry_attempt_seconds');
+    }
+    public set retryAttemptSeconds(value: number | undefined) {
+      this._retryAttemptSeconds = value;
+    }
+    public resetRetryAttemptSeconds() {
+      this._retryAttemptSeconds = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get retryAttemptSecondsInput() {
+      return this._retryAttemptSeconds
     }
 
     // target_id - computed: false, optional: false, required: true
@@ -3005,6 +3185,23 @@ export namespace Config {
       return this._targetVersion
     }
 
+    // execution_controls - computed: false, optional: true, required: false
+    private _executionControls?: ConfigRemediationConfigurationExecutionControls | undefined; 
+    private __executionControlsOutput = new ConfigRemediationConfigurationExecutionControlsOutputReference(this as any, "execution_controls", true);
+    public get executionControls() {
+      return this.__executionControlsOutput;
+    }
+    public putExecutionControls(value: ConfigRemediationConfigurationExecutionControls | undefined) {
+      this._executionControls = value;
+    }
+    public resetExecutionControls() {
+      this._executionControls = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get executionControlsInput() {
+      return this._executionControls
+    }
+
     // parameter - computed: false, optional: true, required: false
     private _parameter?: ConfigRemediationConfigurationParameter[] | undefined; 
     public get parameter() {
@@ -3028,11 +3225,15 @@ export namespace Config {
 
     protected synthesizeAttributes(): { [name: string]: any } {
       return {
+        automatic: cdktf.booleanToTerraform(this._automatic),
         config_rule_name: cdktf.stringToTerraform(this._configRuleName),
+        maximum_automatic_attempts: cdktf.numberToTerraform(this._maximumAutomaticAttempts),
         resource_type: cdktf.stringToTerraform(this._resourceType),
+        retry_attempt_seconds: cdktf.numberToTerraform(this._retryAttemptSeconds),
         target_id: cdktf.stringToTerraform(this._targetId),
         target_type: cdktf.stringToTerraform(this._targetType),
         target_version: cdktf.stringToTerraform(this._targetVersion),
+        execution_controls: configRemediationConfigurationExecutionControlsToTerraform(this._executionControls),
         parameter: cdktf.listMapper(configRemediationConfigurationParameterToTerraform)(this._parameter),
       };
     }

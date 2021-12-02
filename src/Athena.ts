@@ -396,6 +396,49 @@ export namespace Athena {
     */
     readonly configuration?: AthenaWorkgroupConfiguration;
   }
+  export interface AthenaWorkgroupConfigurationEngineVersion {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#selected_engine_version AthenaWorkgroup#selected_engine_version}
+    */
+    readonly selectedEngineVersion?: string;
+  }
+
+  function athenaWorkgroupConfigurationEngineVersionToTerraform(struct?: AthenaWorkgroupConfigurationEngineVersionOutputReference | AthenaWorkgroupConfigurationEngineVersion): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      selected_engine_version: cdktf.stringToTerraform(struct!.selectedEngineVersion),
+    }
+  }
+
+  export class AthenaWorkgroupConfigurationEngineVersionOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // selected_engine_version - computed: false, optional: true, required: false
+    private _selectedEngineVersion?: string | undefined; 
+    public get selectedEngineVersion() {
+      return this.getStringAttribute('selected_engine_version');
+    }
+    public set selectedEngineVersion(value: string | undefined) {
+      this._selectedEngineVersion = value;
+    }
+    public resetSelectedEngineVersion() {
+      this._selectedEngineVersion = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get selectedEngineVersionInput() {
+      return this._selectedEngineVersion
+    }
+  }
   export interface AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#encryption_option AthenaWorkgroup#encryption_option}
@@ -545,6 +588,12 @@ export namespace Athena {
     */
     readonly requesterPaysEnabled?: boolean | cdktf.IResolvable;
     /**
+    * engine_version block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#engine_version AthenaWorkgroup#engine_version}
+    */
+    readonly engineVersion?: AthenaWorkgroupConfigurationEngineVersion;
+    /**
     * result_configuration block
     * 
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/athena_workgroup.html#result_configuration AthenaWorkgroup#result_configuration}
@@ -562,6 +611,7 @@ export namespace Athena {
       enforce_workgroup_configuration: cdktf.booleanToTerraform(struct!.enforceWorkgroupConfiguration),
       publish_cloudwatch_metrics_enabled: cdktf.booleanToTerraform(struct!.publishCloudwatchMetricsEnabled),
       requester_pays_enabled: cdktf.booleanToTerraform(struct!.requesterPaysEnabled),
+      engine_version: athenaWorkgroupConfigurationEngineVersionToTerraform(struct!.engineVersion),
       result_configuration: athenaWorkgroupConfigurationResultConfigurationToTerraform(struct!.resultConfiguration),
     }
   }
@@ -638,6 +688,23 @@ export namespace Athena {
     // Temporarily expose input value. Use with caution.
     public get requesterPaysEnabledInput() {
       return this._requesterPaysEnabled
+    }
+
+    // engine_version - computed: false, optional: true, required: false
+    private _engineVersion?: AthenaWorkgroupConfigurationEngineVersion | undefined; 
+    private __engineVersionOutput = new AthenaWorkgroupConfigurationEngineVersionOutputReference(this as any, "engine_version", true);
+    public get engineVersion() {
+      return this.__engineVersionOutput;
+    }
+    public putEngineVersion(value: AthenaWorkgroupConfigurationEngineVersion | undefined) {
+      this._engineVersion = value;
+    }
+    public resetEngineVersion() {
+      this._engineVersion = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get engineVersionInput() {
+      return this._engineVersion
     }
 
     // result_configuration - computed: false, optional: true, required: false

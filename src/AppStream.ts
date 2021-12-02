@@ -7,6 +7,184 @@ import * as cdktf from 'cdktf';
 * AppStream
 */
 export namespace AppStream {
+  export interface AppstreamDirectoryConfigConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#directory_name AppstreamDirectoryConfig#directory_name}
+    */
+    readonly directoryName: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#organizational_unit_distinguished_names AppstreamDirectoryConfig#organizational_unit_distinguished_names}
+    */
+    readonly organizationalUnitDistinguishedNames: string[];
+    /**
+    * service_account_credentials block
+    * 
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#service_account_credentials AppstreamDirectoryConfig#service_account_credentials}
+    */
+    readonly serviceAccountCredentials: AppstreamDirectoryConfigServiceAccountCredentials;
+  }
+  export interface AppstreamDirectoryConfigServiceAccountCredentials {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#account_name AppstreamDirectoryConfig#account_name}
+    */
+    readonly accountName: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html#account_password AppstreamDirectoryConfig#account_password}
+    */
+    readonly accountPassword: string;
+  }
+
+  function appstreamDirectoryConfigServiceAccountCredentialsToTerraform(struct?: AppstreamDirectoryConfigServiceAccountCredentialsOutputReference | AppstreamDirectoryConfigServiceAccountCredentials): any {
+    if (!cdktf.canInspect(struct)) { return struct; }
+    if (cdktf.isComplexElement(struct)) {
+      throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    }
+    return {
+      account_name: cdktf.stringToTerraform(struct!.accountName),
+      account_password: cdktf.stringToTerraform(struct!.accountPassword),
+    }
+  }
+
+  export class AppstreamDirectoryConfigServiceAccountCredentialsOutputReference extends cdktf.ComplexObject {
+    /**
+    * @param terraformResource The parent resource
+    * @param terraformAttribute The attribute on the parent resource this class is referencing
+    * @param isSingleItem True if this is a block, false if it's a list
+    */
+    public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+      super(terraformResource, terraformAttribute, isSingleItem);
+    }
+
+    // account_name - computed: false, optional: false, required: true
+    private _accountName?: string; 
+    public get accountName() {
+      return this.getStringAttribute('account_name');
+    }
+    public set accountName(value: string) {
+      this._accountName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accountNameInput() {
+      return this._accountName
+    }
+
+    // account_password - computed: false, optional: false, required: true
+    private _accountPassword?: string; 
+    public get accountPassword() {
+      return this.getStringAttribute('account_password');
+    }
+    public set accountPassword(value: string) {
+      this._accountPassword = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get accountPasswordInput() {
+      return this._accountPassword
+    }
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html aws_appstream_directory_config}
+  */
+  export class AppstreamDirectoryConfig extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_appstream_directory_config";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_directory_config.html aws_appstream_directory_config} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options AppstreamDirectoryConfigConfig
+    */
+    public constructor(scope: Construct, id: string, config: AppstreamDirectoryConfigConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_appstream_directory_config',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._directoryName = config.directoryName;
+      this._organizationalUnitDistinguishedNames = config.organizationalUnitDistinguishedNames;
+      this._serviceAccountCredentials = config.serviceAccountCredentials;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // created_time - computed: true, optional: false, required: false
+    public get createdTime() {
+      return this.getStringAttribute('created_time');
+    }
+
+    // directory_name - computed: false, optional: false, required: true
+    private _directoryName?: string; 
+    public get directoryName() {
+      return this.getStringAttribute('directory_name');
+    }
+    public set directoryName(value: string) {
+      this._directoryName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get directoryNameInput() {
+      return this._directoryName
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // organizational_unit_distinguished_names - computed: false, optional: false, required: true
+    private _organizationalUnitDistinguishedNames?: string[]; 
+    public get organizationalUnitDistinguishedNames() {
+      return this.getListAttribute('organizational_unit_distinguished_names');
+    }
+    public set organizationalUnitDistinguishedNames(value: string[]) {
+      this._organizationalUnitDistinguishedNames = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get organizationalUnitDistinguishedNamesInput() {
+      return this._organizationalUnitDistinguishedNames
+    }
+
+    // service_account_credentials - computed: false, optional: false, required: true
+    private _serviceAccountCredentials?: AppstreamDirectoryConfigServiceAccountCredentials; 
+    private __serviceAccountCredentialsOutput = new AppstreamDirectoryConfigServiceAccountCredentialsOutputReference(this as any, "service_account_credentials", true);
+    public get serviceAccountCredentials() {
+      return this.__serviceAccountCredentialsOutput;
+    }
+    public putServiceAccountCredentials(value: AppstreamDirectoryConfigServiceAccountCredentials) {
+      this._serviceAccountCredentials = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get serviceAccountCredentialsInput() {
+      return this._serviceAccountCredentials
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        directory_name: cdktf.stringToTerraform(this._directoryName),
+        organizational_unit_distinguished_names: cdktf.listMapper(cdktf.stringToTerraform)(this._organizationalUnitDistinguishedNames),
+        service_account_credentials: appstreamDirectoryConfigServiceAccountCredentialsToTerraform(this._serviceAccountCredentials),
+      };
+    }
+  }
   export interface AppstreamFleetConfig extends cdktf.TerraformMetaArguments {
     /**
     * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet.html#description AppstreamFleet#description}
@@ -640,6 +818,99 @@ export namespace AppStream {
         compute_capacity: appstreamFleetComputeCapacityToTerraform(this._computeCapacity),
         domain_join_info: appstreamFleetDomainJoinInfoToTerraform(this._domainJoinInfo),
         vpc_config: appstreamFleetVpcConfigToTerraform(this._vpcConfig),
+      };
+    }
+  }
+  export interface AppstreamFleetStackAssociationConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association.html#fleet_name AppstreamFleetStackAssociation#fleet_name}
+    */
+    readonly fleetName: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association.html#stack_name AppstreamFleetStackAssociation#stack_name}
+    */
+    readonly stackName: string;
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association.html aws_appstream_fleet_stack_association}
+  */
+  export class AppstreamFleetStackAssociation extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_appstream_fleet_stack_association";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet_stack_association.html aws_appstream_fleet_stack_association} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options AppstreamFleetStackAssociationConfig
+    */
+    public constructor(scope: Construct, id: string, config: AppstreamFleetStackAssociationConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_appstream_fleet_stack_association',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._fleetName = config.fleetName;
+      this._stackName = config.stackName;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // fleet_name - computed: false, optional: false, required: true
+    private _fleetName?: string; 
+    public get fleetName() {
+      return this.getStringAttribute('fleet_name');
+    }
+    public set fleetName(value: string) {
+      this._fleetName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get fleetNameInput() {
+      return this._fleetName
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // stack_name - computed: false, optional: false, required: true
+    private _stackName?: string; 
+    public get stackName() {
+      return this.getStringAttribute('stack_name');
+    }
+    public set stackName(value: string) {
+      this._stackName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get stackNameInput() {
+      return this._stackName
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        fleet_name: cdktf.stringToTerraform(this._fleetName),
+        stack_name: cdktf.stringToTerraform(this._stackName),
       };
     }
   }
@@ -1648,6 +1919,331 @@ export namespace AppStream {
         application_settings: appstreamStackApplicationSettingsToTerraform(this._applicationSettings),
         storage_connectors: cdktf.listMapper(appstreamStackStorageConnectorsToTerraform)(this._storageConnectors),
         user_settings: cdktf.listMapper(appstreamStackUserSettingsToTerraform)(this._userSettings),
+      };
+    }
+  }
+  export interface AppstreamUserConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user.html#authentication_type AppstreamUser#authentication_type}
+    */
+    readonly authenticationType: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user.html#enabled AppstreamUser#enabled}
+    */
+    readonly enabled?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user.html#first_name AppstreamUser#first_name}
+    */
+    readonly firstName?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user.html#last_name AppstreamUser#last_name}
+    */
+    readonly lastName?: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user.html#send_email_notification AppstreamUser#send_email_notification}
+    */
+    readonly sendEmailNotification?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user.html#user_name AppstreamUser#user_name}
+    */
+    readonly userName: string;
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_user.html aws_appstream_user}
+  */
+  export class AppstreamUser extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_appstream_user";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_user.html aws_appstream_user} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options AppstreamUserConfig
+    */
+    public constructor(scope: Construct, id: string, config: AppstreamUserConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_appstream_user',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._authenticationType = config.authenticationType;
+      this._enabled = config.enabled;
+      this._firstName = config.firstName;
+      this._lastName = config.lastName;
+      this._sendEmailNotification = config.sendEmailNotification;
+      this._userName = config.userName;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // arn - computed: true, optional: false, required: false
+    public get arn() {
+      return this.getStringAttribute('arn');
+    }
+
+    // authentication_type - computed: false, optional: false, required: true
+    private _authenticationType?: string; 
+    public get authenticationType() {
+      return this.getStringAttribute('authentication_type');
+    }
+    public set authenticationType(value: string) {
+      this._authenticationType = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get authenticationTypeInput() {
+      return this._authenticationType
+    }
+
+    // created_time - computed: true, optional: false, required: false
+    public get createdTime() {
+      return this.getStringAttribute('created_time');
+    }
+
+    // enabled - computed: false, optional: true, required: false
+    private _enabled?: boolean | cdktf.IResolvable | undefined; 
+    public get enabled() {
+      return this.getBooleanAttribute('enabled') as any;
+    }
+    public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+      this._enabled = value;
+    }
+    public resetEnabled() {
+      this._enabled = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get enabledInput() {
+      return this._enabled
+    }
+
+    // first_name - computed: false, optional: true, required: false
+    private _firstName?: string | undefined; 
+    public get firstName() {
+      return this.getStringAttribute('first_name');
+    }
+    public set firstName(value: string | undefined) {
+      this._firstName = value;
+    }
+    public resetFirstName() {
+      this._firstName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get firstNameInput() {
+      return this._firstName
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // last_name - computed: false, optional: true, required: false
+    private _lastName?: string | undefined; 
+    public get lastName() {
+      return this.getStringAttribute('last_name');
+    }
+    public set lastName(value: string | undefined) {
+      this._lastName = value;
+    }
+    public resetLastName() {
+      this._lastName = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get lastNameInput() {
+      return this._lastName
+    }
+
+    // send_email_notification - computed: false, optional: true, required: false
+    private _sendEmailNotification?: boolean | cdktf.IResolvable | undefined; 
+    public get sendEmailNotification() {
+      return this.getBooleanAttribute('send_email_notification') as any;
+    }
+    public set sendEmailNotification(value: boolean | cdktf.IResolvable | undefined) {
+      this._sendEmailNotification = value;
+    }
+    public resetSendEmailNotification() {
+      this._sendEmailNotification = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get sendEmailNotificationInput() {
+      return this._sendEmailNotification
+    }
+
+    // user_name - computed: false, optional: false, required: true
+    private _userName?: string; 
+    public get userName() {
+      return this.getStringAttribute('user_name');
+    }
+    public set userName(value: string) {
+      this._userName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get userNameInput() {
+      return this._userName
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        authentication_type: cdktf.stringToTerraform(this._authenticationType),
+        enabled: cdktf.booleanToTerraform(this._enabled),
+        first_name: cdktf.stringToTerraform(this._firstName),
+        last_name: cdktf.stringToTerraform(this._lastName),
+        send_email_notification: cdktf.booleanToTerraform(this._sendEmailNotification),
+        user_name: cdktf.stringToTerraform(this._userName),
+      };
+    }
+  }
+  export interface AppstreamUserStackAssociationConfig extends cdktf.TerraformMetaArguments {
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html#authentication_type AppstreamUserStackAssociation#authentication_type}
+    */
+    readonly authenticationType: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html#send_email_notification AppstreamUserStackAssociation#send_email_notification}
+    */
+    readonly sendEmailNotification?: boolean | cdktf.IResolvable;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html#stack_name AppstreamUserStackAssociation#stack_name}
+    */
+    readonly stackName: string;
+    /**
+    * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html#user_name AppstreamUserStackAssociation#user_name}
+    */
+    readonly userName: string;
+  }
+
+  /**
+  * Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html aws_appstream_user_stack_association}
+  */
+  export class AppstreamUserStackAssociation extends cdktf.TerraformResource {
+
+    // =================
+    // STATIC PROPERTIES
+    // =================
+    public static readonly tfResourceType: string = "aws_appstream_user_stack_association";
+
+    // ===========
+    // INITIALIZER
+    // ===========
+
+    /**
+    * Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_user_stack_association.html aws_appstream_user_stack_association} Resource
+    *
+    * @param scope The scope in which to define this construct
+    * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+    * @param options AppstreamUserStackAssociationConfig
+    */
+    public constructor(scope: Construct, id: string, config: AppstreamUserStackAssociationConfig) {
+      super(scope, id, {
+        terraformResourceType: 'aws_appstream_user_stack_association',
+        terraformGeneratorMetadata: {
+          providerName: 'aws'
+        },
+        provider: config.provider,
+        dependsOn: config.dependsOn,
+        count: config.count,
+        lifecycle: config.lifecycle
+      });
+      this._authenticationType = config.authenticationType;
+      this._sendEmailNotification = config.sendEmailNotification;
+      this._stackName = config.stackName;
+      this._userName = config.userName;
+    }
+
+    // ==========
+    // ATTRIBUTES
+    // ==========
+
+    // authentication_type - computed: false, optional: false, required: true
+    private _authenticationType?: string; 
+    public get authenticationType() {
+      return this.getStringAttribute('authentication_type');
+    }
+    public set authenticationType(value: string) {
+      this._authenticationType = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get authenticationTypeInput() {
+      return this._authenticationType
+    }
+
+    // id - computed: true, optional: true, required: false
+    public get id() {
+      return this.getStringAttribute('id');
+    }
+
+    // send_email_notification - computed: false, optional: true, required: false
+    private _sendEmailNotification?: boolean | cdktf.IResolvable | undefined; 
+    public get sendEmailNotification() {
+      return this.getBooleanAttribute('send_email_notification') as any;
+    }
+    public set sendEmailNotification(value: boolean | cdktf.IResolvable | undefined) {
+      this._sendEmailNotification = value;
+    }
+    public resetSendEmailNotification() {
+      this._sendEmailNotification = undefined;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get sendEmailNotificationInput() {
+      return this._sendEmailNotification
+    }
+
+    // stack_name - computed: false, optional: false, required: true
+    private _stackName?: string; 
+    public get stackName() {
+      return this.getStringAttribute('stack_name');
+    }
+    public set stackName(value: string) {
+      this._stackName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get stackNameInput() {
+      return this._stackName
+    }
+
+    // user_name - computed: false, optional: false, required: true
+    private _userName?: string; 
+    public get userName() {
+      return this.getStringAttribute('user_name');
+    }
+    public set userName(value: string) {
+      this._userName = value;
+    }
+    // Temporarily expose input value. Use with caution.
+    public get userNameInput() {
+      return this._userName
+    }
+
+    // =========
+    // SYNTHESIS
+    // =========
+
+    protected synthesizeAttributes(): { [name: string]: any } {
+      return {
+        authentication_type: cdktf.stringToTerraform(this._authenticationType),
+        send_email_notification: cdktf.booleanToTerraform(this._sendEmailNotification),
+        stack_name: cdktf.stringToTerraform(this._stackName),
+        user_name: cdktf.stringToTerraform(this._userName),
       };
     }
   }
